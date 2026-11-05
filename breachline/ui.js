@@ -1,9 +1,21 @@
 // Board UI. The human is always player 0 and sits at the bottom; every click ends in an Engine.legalMoves entry.
 (function () {
-  var E = Engine, S = null, sel = null, flash = null, runToken = 0;
+  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null;
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue' };
+  var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis' };
+  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment' };
+  var ART = {
+    land_w: 'sunlit-plains', land_r: 'cinder-peaks', land_u: 'lantern-quarter',
+    spearman: 'militia-spearman', cleric: 'temple-cleric', knight: 'oath-knight', lancer: 'sunmane-lancer', warden: 'pride-warden',
+    shield: 'shield-of-dawn', banner: 'blessed-banner',
+    goblin: 'goblin-cutter', raider: 'orc-raider', conjurer: 'street-conjurer', sellsword: 'sellsword', warchief: 'orc-warchief',
+    giant: 'hill-giant', dragon: 'elder-dragon', firebolt: 'firebolt', hex: 'withering-hex'
+  };
+  function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
+  // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
+  var preloaded = Object.keys(ART).map(function (id) { var im = new Image(); im.src = artSrc(id); return im; });
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
@@ -24,7 +36,7 @@
 
   function pips(p) {
     var mana = '<span class="mana">' + p.mana + ' / ' + p.lands.length + ' mana</span>';
-    var list = p.lands.map(function (l) { return '<span class="pip ' + l.colour + '" title="' + COLOUR[l.colour] + ' land">' + l.colour + '</span>'; }).join('');
+    var list = p.lands.map(function (l) { return '<span class="pip ' + l.colour + '" title="' + E.CARDS[l.c].name + '" data-peek="' + l.c + '">' + l.colour + '</span>'; }).join('');
     return mana + (list || 'No lands yet');
   }
 
@@ -50,6 +62,7 @@
       var d = E.CARDS[u.cardId], waiting = u.summonedTurn === S.turn;
       cls.push(u.owner === HUMAN ? 'own' : 'enemy', d.colour);
       if (waiting) cls.push('waiting');
+      else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       var notes = d.keywords.slice();
@@ -57,11 +70,13 @@
       if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
       if (waiting) notes.push('Waiting');
       else if (u.owner === S.active && u.acted) notes.push('Done');
-      inner = '<span class="nm">' + d.name + '</span>' +
-        (notes.length ? '<span class="meta">' + notes.join(', ') + '</span>' : '') +
-        '<span class="st">' + E.attackOf(u) + ' / ' + u.hp + '</span>' +
-        '<span class="bar"><i style="width:' + Math.max(0, Math.round(u.hp / u.maxHp * 100)) + '%"></i></span>';
+      inner = '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">' +
+        '<span class="nm">' + d.name + '</span>' +
+        '<span class="lower">' + (notes.length ? '<span class="meta">' + notes.join(', ') + '</span>' : '') +
+        '<span class="st"><span class="dir" aria-hidden="true">' + (u.owner === HUMAN ? '▲' : '▼') + '</span>' + E.attackOf(u) + '<span class="sl">/</span>' + u.hp + '</span>' +
+        '<span class="bar"><i style="width:' + Math.max(0, Math.round(u.hp / u.maxHp * 100)) + '%"></i></span></span>';
       label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(u) + ', health ' + u.hp;
+      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(u) + ' / ' + u.hp + '"';
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
   }
@@ -88,20 +103,47 @@
     return marks;
   }
 
+  // One frame for the hand and the close-up. o.cost and o.have give the live cost and matching lands; without them the printed card shows.
+  function frameHtml(c, o) {
+    o = o || {};
+    var isLand = c.type === 'land', cost = o.cost === undefined ? c.cost : o.cost, have = o.have === undefined ? c.wants : o.have, syms = '';
+    for (var n = 0; n < c.wants; n++) syms += '<svg class="sym' + (n < have ? '' : ' miss') + '" aria-hidden="true"><use href="#sym-' + c.colour + '"/></svg>';
+    var wantsText = 'Wants ' + c.wants + ' ' + COLOUR[c.colour] + ' land' + (c.wants === 1 ? '' : 's');
+    var costHtml = isLand ? '' : '<span class="cost" title="' + wantsText + '" aria-label="Costs ' + cost + ', ' + wantsText.toLowerCase() + '">' +
+      '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span><span class="wants">' + syms + '</span></span>';
+    var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
+    var foot = c.type === 'unit' ? '<span class="foot"><span class="stat"><span>Attack</span><strong>' + c.atk + '</strong></span><span class="stat hp"><span>Health</span><strong>' + c.hp + '</strong></span></span>' : '';
+    return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
+      '<span class="bar-top">' + c.name + '</span>' +
+      '<span class="art"><img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false"></span>' +
+      '<span class="type">' + TYPES[c.type] + ' · ' + ALIGNMENT[c.colour] + '</span>' +
+      '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
+  }
+
   function cardHtml(i, moves) {
     var c = E.CARDS[i.c], you = S.players[HUMAN];
-    var isLand = c.type === 'land', cost = E.costOf(S, HUMAN, c), extra = cost - c.cost;
+    var have = you.lands.filter(function (l) { return l.colour === c.colour; }).length;
     var playable = moves.some(function (m) { return m.card === i.id && m.type !== 'swapCard'; });
-    var costText = isLand ? '' : '<span class="cost">' + cost + (extra ? ' <em>+' + extra + '</em>' : '') + '</span>';
-    var types = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment' };
-    var wants = isLand ? '' : ', wants ' + c.wants + ' ' + COLOUR[c.colour];
-    var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
-    var cls = 'card ' + c.colour + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim');
-    return '<button type="button" class="' + cls + '" data-card="' + i.id + '">' +
-      '<span class="row"><span class="nm">' + c.name + '</span>' + costText + '</span>' +
-      '<span class="ty">' + types[c.type] + wants + '</span>' +
-      '<span class="tx">' + body + '</span>' +
-      (c.type === 'unit' ? '<span class="st">' + c.atk + ' / ' + c.hp + '</span>' : '') + '</button>';
+    var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim');
+    return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand">' +
+      frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</button>';
+  }
+
+  // The large card beside the board. It only redraws when the card changes, so bot turns don't reset it.
+  function showCard(id, note) {
+    if (peek && peek.id === id && peek.note === (note || '')) return;
+    peek = { id: id, note: note || '' };
+    $('inspect').innerHTML = '<div class="slot">' + frameHtml(E.CARDS[id], { big: true }) + '</div><p class="note">' + peek.note + '</p>';
+    $('peekBtn').setAttribute('aria-label', 'View card: ' + E.CARDS[id].name);
+  }
+  function peekFrom(e) {
+    var t = e.target.closest('[data-peek]');
+    if (t) showCard(t.dataset.peek, t.dataset.note || E.CARDS[t.dataset.peek].name + ' in play');
+  }
+  function closePeek() {
+    if (!$('inspect').classList.contains('open')) return;
+    $('inspect').classList.remove('open');
+    $('peekBtn').focus();
   }
 
   function btn(label, data, primary) {
@@ -201,6 +243,10 @@
   }
 
   function apply(m) {
+    if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'swapCard') {
+      var played = S.players[BOT].hand.filter(function (i) { return i.id === m.card; })[0];
+      if (played) showCard(played.c, 'The enemy played this');
+    }
     if (m.type === 'summon' || m.type === 'move') flash = [m.r, m.c]; else flash = null;
     S = E.applyMove(S, m);
     if (m.type === 'move' && S.units.some(function (u) { return u.uid === m.unit; }) && E.legalMoves(S).some(function (x) { return x.unit === m.unit; })) sel = { kind: 'unit', id: m.unit };
@@ -262,12 +308,18 @@
     render();
   });
   $('newGame').addEventListener('click', function () { start(); });
+  ['mouseover', 'focusin', 'click'].forEach(function (type) { document.querySelector('.field').addEventListener(type, peekFrom); });
+  $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
+  $('inspect').addEventListener('click', closePeek);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePeek(); });
 
   function start(state) {
     runToken++;
     sel = null; flash = null;
     var mine = $('deckPick').value;
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: [mine, mine === 'white' ? 'red' : 'white'], first: Math.random() < 0.5 ? 0 : 1 });
+    var opening = S.players[HUMAN].hand[0];
+    if (opening) showCard(opening.c, 'In your hand');
     render();
     schedule();
   }
