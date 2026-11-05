@@ -1,6 +1,6 @@
 # Breachline flavour text
 
-Lines are tracked here until they go on cards. Cards can have no flavour text, and most lands won't have any.
+Lines are tracked here. As of 2026-11-05 every line with a matching card is on that card, through the `FLAVOUR` list in `ui.js`, so update both when a line changes. Cards can have no flavour text, and most lands won't have any.
 
 ## Kept
 
@@ -17,20 +17,15 @@ Lines are tracked here until they go on cards. Cards can have no flavour text, a
 | Hill giant | Fee fi fo fum. | |
 | Elder dragon | Three cities took its name, hoping to be spared. | |
 | Street conjurer | Two coppers for a sparrow of flame. | |
+| Oath knight | No one ordered her to stay. | |
+| Sunmane lancer | Some mornings, the ride is only a ride. | |
+| Withering hex | She stopped praying before the rust reached the hilt. | |
 
 ## Saved for a future card
 
 | Card | Line |
 | --- | --- |
 | A mercenary captain (not an orc) | We chose him at dawn. We can choose again by dusk. |
-
-## Awaiting a verdict
-
-| Card | Line | Art it leans on |
-| --- | --- | --- |
-| Oath knight | No one ordered her to stay. | Alone on a stone bridge in the rain |
-| Sunmane lancer | Some mornings, the ride is only a ride. | An unhurried ride under a blue sky |
-| Withering hex | She stopped praying before the rust reached the hilt. | A knight watching her sword rust |
 
 ## General style test
 

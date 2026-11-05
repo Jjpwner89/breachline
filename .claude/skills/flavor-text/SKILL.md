@@ -9,7 +9,7 @@ Flavour text makes the world feel old, costly and real. The creator wants the se
 
 ## Status: being worked out
 
-Early lines failed because they were generic and had no grounding in the world. Read `breachline/SETTING.md` first and draw on the setting's own history, places and people. Details marked Proposed there aren't approved, so confirm them before leaning on them. Lines the creator has kept, rejected or not yet judged are in `breachline/FLAVOUR.md`, so check it before writing and add new lines there. Keep flavour text off cards until the creator asks for it. Never reveal the setting's secret truth about the gods outright; a line can only hint at it.
+Early lines failed because they were generic and had no grounding in the world. Read `breachline/SETTING.md` first and draw on the setting's own history, places and people. Details marked Proposed there aren't approved, so confirm them before leaning on them. Lines the creator has kept, rejected or not yet judged are in `breachline/FLAVOUR.md`, so check it before writing and add new lines there. Lines the creator asked to add go on cards through the `FLAVOUR` list in `breachline/ui.js`; other new lines stay off cards until the creator asks. Never reveal the setting's secret truth about the gods outright; a line can only hint at it.
 
 ## Core voice
 

@@ -1,6 +1,6 @@
 # New card proposals
 
-All of these cards are in the prototype as of 2026-11-05, and the numbers will change after playtesting. Each deck now has 24 cards, 11 of them lands. Lines are the ones already saved in `FLAVOUR.md`, and they stay off cards until the creator asks for them.
+All of these cards are in the prototype as of 2026-11-05, and the numbers will change after playtesting. Each deck now has 24 cards, 11 of them lands. Lines are the ones saved in `FLAVOUR.md`, and they are on the cards as of 2026-11-05.
 
 Stats are attack / health. "Wants" is how many lands of the card's colour it wants; each missing land adds 1 to the cost.
 

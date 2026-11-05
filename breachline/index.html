@@ -8,7 +8,7 @@
   color-scheme: dark;
   --table: #12242b; --felt: #1a323a; --tile: #223f48; --tile-back: #28495300; --line: #3b5f69;
   --ink: #f0e9da; --muted: #a8bab6; --you: #4fc3a1; --them: #e5806a;
-  --white: #e8c76c; --red: #e8743b; --blue: #6db4e4; --site: #d7a03f; --good: #8fdc9b; --target: #ffe08a;
+  --white: #e8c76c; --red: #e8743b; --blue: #6db4e4; --black: #b49ad6; --green: #8fc46a; --neutral: #b9b2a3; --site: #d7a03f; --good: #8fdc9b; --target: #ffe08a;
   --you-fill: #1f4f49; --them-fill: #51302c;
   --bronze: #3b2c18; --gold: #d0a448; --parchment: #f5ebd2; --parchment-deep: #e6d6ae; --card-ink: #2a2114; --card-soft: #5d4c31; --ivory: #fbf3df; --crimson-deep: #5f1a17;
   --display: "Alegreya SC", Georgia, serif; --body: "Alegreya Sans", "Gill Sans", "Trebuchet MS", sans-serif; --serif: "Alegreya", Georgia, serif;
@@ -41,14 +41,14 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
 .lands { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; min-height: 26px; padding: 2px 4px; font-size: 13px; color: var(--muted); }
 .mana { font-weight: 700; color: var(--ink); margin-right: 6px; font-variant-numeric: tabular-nums; }
 .pip { width: 18px; height: 18px; border-radius: 3px; border: 1px solid var(--line); font-size: 11px; font-weight: 700; color: #12242b; display: inline-flex; align-items: center; justify-content: center; }
-.pip.W { background: var(--white); } .pip.R { background: var(--red); } .pip.U { background: var(--blue); }
+.pip.W { background: var(--white); } .pip.R { background: var(--red); } .pip.U { background: var(--blue); } .pip.B { background: var(--black); } .pip.G { background: var(--green); }
 #grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(0, 0.95fr); gap: 5px; }
 .tile { position: relative; isolation: isolate; min-height: 106px; background: var(--felt); border: 1px solid var(--line); border-radius: 4px; padding: 5px 6px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; gap: 2px; cursor: default; min-width: 0; overflow: hidden; }
 .tile.back { background: #1e3a43; }
 .tile.front-line { box-shadow: inset 0 -2px 0 var(--line); }
 .tile.own { background: var(--you-fill); border: 2px solid var(--you); cursor: pointer; }
 .tile.enemy { background: var(--them-fill); border: 2px solid var(--them); }
-.tile.W { border-left: 4px solid var(--white); } .tile.R { border-left: 4px solid var(--red); } .tile.U { border-left: 4px solid var(--blue); }
+.tile.W { border-left: 4px solid var(--white); } .tile.R { border-left: 4px solid var(--red); } .tile.U { border-left: 4px solid var(--blue); } .tile.B { border-left: 4px solid var(--black); } .tile.G { border-left: 4px solid var(--green); } .tile.N { border-left: 4px solid var(--neutral); }
 /* Art and scrim sit at negative z so target outlines and floating numbers stay on top of the painting. */
 .tile .tart { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
 .tile.own::after, .tile.enemy::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to bottom, rgba(8, 18, 22, .86), rgba(8, 18, 22, .08) 32%, rgba(8, 18, 22, .08) 48%, rgba(8, 18, 22, .9) 82%); }
@@ -85,23 +85,26 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
 .card.dim .frame { filter: saturate(.5) brightness(.68); }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover, .card.selected { transform: none; } }
 /* Card frame, from card.html: bronze edge, cost and name on a bar at the top, art, then parchment. Sizes use cqw so a card scales as one piece. */
-.frame { --name: 8.6cqw; --bar-left: 20cqw; --coin: 17cqw; --coin-text: 11cqw; --sym: 5cqw; --type: 6cqw; --text: 7.2cqw; --stat: 24cqw; --stat-label: 5.6cqw; --stat-num: 10cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; background: var(--bronze); border-radius: 4.4cqw; padding: 2.6cqw; color: var(--card-ink); font-family: var(--serif); }
-.frame.big { --name: 7.2cqw; --bar-left: 16cqw; --coin: 12.5cqw; --coin-text: 8cqw; --sym: 3.6cqw; --type: 4.2cqw; --text: 5.2cqw; --stat: 16cqw; --stat-label: 3.7cqw; --stat-num: 7cqw; }
-.frame.W { --band: #6f5518; } .frame.R { --band: #8c2a24; } .frame.U { --band: #1f4f7a; }
+.frame { --name: 8.6cqw; --bar-left: 20cqw; --coin: 17cqw; --coin-text: 11cqw; --sym: 5cqw; --type: 6cqw; --text: 7.2cqw; --flav: 6cqw; --stat: 24cqw; --stat-label: 5.6cqw; --stat-num: 10cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; background: var(--bronze); border-radius: 4.4cqw; padding: 2.6cqw; color: var(--card-ink); font-family: var(--serif); }
+.frame.big { --name: 7.2cqw; --bar-left: 16cqw; --coin: 12.5cqw; --coin-text: 8cqw; --sym: 3.6cqw; --type: 4.2cqw; --text: 5.2cqw; --flav: 4.6cqw; --stat: 16cqw; --stat-label: 3.7cqw; --stat-num: 7cqw; }
+.frame.W { --band: #6f5518; } .frame.R { --band: #8c2a24; } .frame.U { --band: #1f4f7a; } .frame.B { --band: #3f2f56; } .frame.G { --band: #2f5a32; } .frame.N { --band: #55514a; }
 .frame .inner { position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; background: var(--parchment); border: 0.5cqw solid var(--gold); border-radius: 2.6cqw; overflow: hidden; }
 .frame .cost { position: absolute; z-index: 1; left: 1.2cqw; top: 1cqw; display: flex; flex-direction: column; align-items: center; gap: 0.8cqw; }
 .frame .coin { width: var(--coin); height: var(--coin); border-radius: 50%; background: var(--gold); border: 0.7cqw solid var(--bronze); display: flex; align-items: center; justify-content: center; font: 700 var(--coin-text)/1 var(--display); font-variant-numeric: lining-nums; color: var(--card-ink); }
 .frame .coin.over { background: #e8743b; }
 .frame .wants { display: flex; gap: 0.7cqw; background: var(--bronze); border-radius: 3cqw; padding: 0.7cqw 1.1cqw; color: var(--white); }
-.frame.R .wants { color: #ff9b66; } .frame.U .wants { color: #8ccaf2; }
+.frame.R .wants { color: #ff9b66; } .frame.U .wants { color: #8ccaf2; } .frame.B .wants { color: #cdb6ec; } .frame.G .wants { color: #a9dc84; }
 .frame .sym { width: var(--sym); height: var(--sym); fill: currentColor; stroke: currentColor; }
 .frame .sym.miss { opacity: .3; }
 .frame .bar-top { flex: none; display: block; padding: 1.9cqw 2cqw 2.1cqw var(--bar-left); background: var(--band); border-bottom: 0.5cqw solid var(--gold); font: 700 var(--name)/1.05 var(--display); letter-spacing: 0.01em; color: var(--ivory); }
 .frame.land .bar-top { padding-left: 3cqw; }
-.frame .art { flex: none; display: block; aspect-ratio: 3 / 2; border-bottom: 0.5cqw solid var(--gold); }
+.frame .art { flex: none; display: block; aspect-ratio: 3 / 2; background: var(--band); border-bottom: 0.5cqw solid var(--gold); }
 .frame .art img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .frame .type { flex: none; display: block; text-align: center; font: 500 var(--type)/1.2 var(--display); letter-spacing: 0.03em; color: var(--card-soft); padding: 1cqw 2cqw 0; }
 .frame .ctext { flex: 1; min-height: 0; display: block; padding: 0.8cqw 3.4cqw 0; font-size: var(--text); line-height: 1.18; }
+.frame .ctext.tight { font-size: 6.2cqw; }
+.frame .flavour { display: block; margin-top: 0.5em; font-style: italic; font-size: var(--flav); line-height: 1.16; color: var(--card-soft); }
+.frame .flavour .credit { display: block; font-style: normal; font-size: 0.86em; text-align: right; }
 .frame .foot { flex: none; display: flex; justify-content: space-between; padding: 0 1.6cqw 1.6cqw; }
 .frame .stat { display: block; width: var(--stat); text-align: center; border-radius: 1.6cqw; padding: 0.5cqw 0 0.8cqw; color: var(--ivory); background: var(--crimson-deep); border: 0.5cqw solid var(--gold); }
 .frame .stat.hp { background: var(--bronze); }
@@ -142,7 +145,7 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
   .tile .st { font-size: 12.5px; white-space: nowrap; }
   .tile .st .dir { display: none; }
   .tile .st .sl { margin: 0 1px; }
-  .tile.W, .tile.R, .tile.U { border-left-width: 3px; }
+  .tile.W, .tile.R, .tile.U, .tile.B, .tile.G, .tile.N { border-left-width: 3px; }
   .town .sign .long { display: none; }
   .town .sign .short { display: inline; }
   .setup { margin-left: 0; }
@@ -152,6 +155,8 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="sym-W" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4M4.2 4.2l2.9 2.9M16.9 16.9l2.9 2.9M4.2 19.8l2.9-2.9M16.9 7.1l2.9-2.9" fill="none" stroke-width="2.4" stroke-linecap="round"/></symbol>
   <symbol id="sym-R" viewBox="0 0 24 24"><path d="M12 1c1 5 7 8 7 14a7 7 0 0 1-14 0c0-3 2-5 3-8 1 1 2 3 2 5 2-2 2-7 2-11z"/></symbol>
+  <symbol id="sym-B" viewBox="0 0 24 24"><path d="M16 2a10 10 0 1 0 6 16 9 9 0 0 1-6-16z"/></symbol>
+  <symbol id="sym-G" viewBox="0 0 24 24"><path d="M4 21C3 10 11 3 22 2c0 11-6 18-16 17l-2 2z"/></symbol>
   <symbol id="sym-U" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" fill="none" stroke-width="2.4"/><circle cx="12" cy="12" r="3.6"/></symbol>
 </svg>
 
@@ -161,7 +166,9 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
     <span id="turnLabel"></span>
     <div class="setup">
       <label for="deckPick">Your deck</label>
-      <select id="deckPick"><option value="white">Oath of the Sunmane</option><option value="red">The Warhorde</option></select>
+      <select id="deckPick"><option value="white">Oath of the Sunmane</option><option value="red">The Warhorde</option><option value="blue">The Lantern Conclave</option><option value="black">The Ashen Court</option><option value="green">The Elder Herd</option></select>
+      <label for="oppPick">Opponent</label>
+      <select id="oppPick"><option value="white">Oath of the Sunmane</option><option value="red" selected>The Warhorde</option><option value="blue">The Lantern Conclave</option><option value="black">The Ashen Court</option><option value="green">The Elder Herd</option></select>
       <button class="btn" id="newGame" type="button">New game</button>
     </div>
   </header>
