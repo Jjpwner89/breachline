@@ -24,12 +24,15 @@ var Bot = (function () {
       case 'pass': case 'endTurn': return 0;
       case 'toCommand': return 1;
       case 'playLand': return 1000;
-      case 'swapCard':
+      case 'redraw': return 0;
+      case 'keepHand':
+        var landCount = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
+        return landCount === 0 || landCount === p.hand.length ? -1 : 1;
+      case 'bottomCard':
         c = E.CARDS[handCard(p, m.card).c];
-        var hasLand = p.hand.some(function (i) { return E.CARDS[i.c].type === 'land'; });
-        if (c.type === 'land') return p.lands.length >= 5 || p.landDropped && p.lands.length >= 4 ? 90 : -1;
-        if (!hasLand && !p.landDropped && p.lands.length < 5) return 500 + (c.cost - p.lands.length) * 10;
-        return -1;
+        var lands = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
+        if (c.type === 'land') return lands > 2 ? 100 : -100;
+        return c.cost;
       case 'summon':
         c = E.CARDS[handCard(p, m.card).c];
         var pull = 0;

@@ -1,7 +1,7 @@
 // Rules engine. Pure state in, state out, with no DOM, so the UI, the scripted
 // bot and a future model-driven player all go through legalMoves and applyMove.
 var Engine = (function () {
-  var ROWS = 4, COLS = 5, START_LIFE = 150, OPENING_HAND = 4, TURN_LIMIT = 60;
+  var ROWS = 4, COLS = 5, START_LIFE = 150, OPENING_HAND = 5, MAX_REDRAWS = 2, TURN_LIMIT = 60;
 
   function land(id, colour, name) { return { id: id, name: name, type: 'land', colour: colour, cost: 0, wants: 0 }; }
   function unit(id, name, colour, cost, wants, atk, hp, extra) {
@@ -32,8 +32,8 @@ var Engine = (function () {
   ].forEach(function (c) { CARDS[c.id] = c; });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['spearman', 2], ['cleric', 2], ['knight', 3], ['lancer', 2], ['warden', 1], ['shield', 1], ['banner', 1]] },
-    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 6], ['land_u', 2], ['goblin', 1], ['raider', 2], ['conjurer', 2], ['sellsword', 2], ['warchief', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] }
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 9], ['spearman', 2], ['cleric', 2], ['knight', 2], ['lancer', 2], ['warden', 1], ['shield', 1], ['banner', 1]] },
+    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 7], ['land_u', 2], ['goblin', 1], ['raider', 2], ['conjurer', 2], ['sellsword', 1], ['warchief', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] }
   };
 
   function rand(s) {
@@ -82,13 +82,22 @@ var Engine = (function () {
       p.index = idx;
     });
     s.firstPlayer = s.active;
-    s.active = 1 - s.active;
-    startTurn(s);
+    s.phase = 'opening';
     return s;
   }
-  function mkPlayer(key) { return { deckKey: key, name: DECKS[key].name, deck: [], hand: [], discard: [], lands: [], mana: 0, life: START_LIFE, landDropped: false, swapped: false }; }
+  function mkPlayer(key) { return { deckKey: key, name: DECKS[key].name, deck: [], hand: [], discard: [], lands: [], mana: 0, life: START_LIFE, landDropped: false, redraws: 0, toBottom: 0, kept: false }; }
 
   function say(s, text) { s.log.push({ turn: s.turn, text: text }); }
+
+  // Each player keeps or redraws in turn, first player first, then turn 1 begins.
+  function finishOpening(s) {
+    var p = s.players[s.active];
+    p.kept = true;
+    say(s, p.name + ' keeps ' + p.hand.length + ' cards.');
+    if (!s.players[1 - s.active].kept) { s.active = 1 - s.active; return; }
+    s.active = 1 - s.firstPlayer;
+    startTurn(s);
+  }
 
   function startTurn(s) {
     s.turn += 1;
@@ -104,7 +113,6 @@ var Engine = (function () {
     var p = s.players[s.active];
     p.mana = p.lands.length;
     p.landDropped = false;
-    p.swapped = false;
     s.units.forEach(function (u) { if (u.owner === s.active) { u.moved = false; u.acted = false; } });
     if (s.turn > 1) draw(s, s.active);
   }
@@ -171,6 +179,12 @@ var Engine = (function () {
       return out;
     }
     var pi = s.active, p = s.players[pi];
+    if (s.phase === 'opening') {
+      if (p.toBottom) return p.hand.map(function (i) { return { type: 'bottomCard', card: i.id }; });
+      out.push({ type: 'keepHand' });
+      if (p.redraws < MAX_REDRAWS) out.push({ type: 'redraw' });
+      return out;
+    }
     if (s.phase === 'play') {
       var hand = p.hand;
       if (dedupe) {
@@ -180,7 +194,6 @@ var Engine = (function () {
       hand.forEach(function (i) {
         var c = card(i);
         if (!p.landDropped && c.type === 'land') out.push({ type: 'playLand', card: i.id });
-        if (!p.swapped) out.push({ type: 'swapCard', card: i.id });
         if (c.type !== 'land' && costOf(s, pi, c) <= p.mana) {
           if (c.type === 'unit') {
             for (var col = 0; col < COLS; col++) if (!unitAt(s, backRow(pi), col)) out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col });
@@ -259,11 +272,14 @@ var Engine = (function () {
       say(s, 'The lance also hits ' + CARDS[b.cardId].name + ' for ' + hitB + '.');
     }
     // Only a survivor strikes back, and only if the attacker is within its range.
-    if (t && t.hp > 0 && dist(a, t) <= range(t)) {
-      var back = attackOf(t);
-      damage(s, a, back);
-      say(s, CARDS[t.cardId].name + ' strikes back for ' + back + '.');
+    if (t && t.hp > 0) {
+      if (dist(a, t) <= range(t)) {
+        var back = attackOf(t);
+        damage(s, a, back);
+        say(s, CARDS[t.cardId].name + ' strikes back for ' + back + '.');
+      } else say(s, CARDS[t.cardId].name + " can't strike back: " + name + ' is out of reach.');
     }
+    if (b && b.hp > 0) say(s, CARDS[b.cardId].name + " can't strike back: only the lance's main target does.");
     [t, b, a].forEach(function (u) { if (u && u.hp <= 0 && s.units.indexOf(u) >= 0) kill(s, u); });
   }
 
@@ -288,12 +304,23 @@ var Engine = (function () {
         p.lands.push({ colour: c.colour, id: i.id, c: i.c }); p.mana += 1; p.landDropped = true;
         say(s, p.name + ' plays ' + c.name + '.');
         break;
-      case 'swapCard':
-        i = takeFromHand(p, m.card);
-        p.discard.push(i);
-        p.swapped = true;
-        say(s, p.name + ' discards ' + card(i).name + ' and draws a new card.');
-        draw(s, pi);
+      // Opening hands work like a London mulligan: every redraw is a full new hand, then one card goes to the bottom on keeping.
+      case 'redraw':
+        p.redraws += 1;
+        p.deck = p.deck.concat(p.hand);
+        p.hand = [];
+        shuffle(s, p.deck);
+        for (var d = 0; d < OPENING_HAND; d++) p.hand.push(p.deck.pop());
+        say(s, p.name + ' redraws their opening hand.');
+        break;
+      case 'keepHand':
+        p.toBottom = p.redraws;
+        if (!p.toBottom) finishOpening(s);
+        break;
+      case 'bottomCard':
+        p.deck.unshift(takeFromHand(p, m.card));
+        p.toBottom -= 1;
+        if (!p.toBottom) finishOpening(s);
         break;
       case 'summon':
         i = takeFromHand(p, m.card); c = card(i);

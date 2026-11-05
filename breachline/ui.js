@@ -123,7 +123,7 @@
   function cardHtml(i, moves) {
     var c = E.CARDS[i.c], you = S.players[HUMAN];
     var have = you.lands.filter(function (l) { return l.colour === c.colour; }).length;
-    var playable = moves.some(function (m) { return m.card === i.id && m.type !== 'swapCard'; });
+    var playable = S.phase === 'opening' || moves.some(function (m) { return m.card === i.id; });
     var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim');
     return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand">' +
       frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</button>';
@@ -162,7 +162,14 @@
       return '<span class="prompt"><b>' + txt + '</b> ' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.</span><span class="btns">' + btn('Play again', { ui: 'new' }, true) + '</span>';
     }
     if (actor() !== HUMAN) {
-      return '<span class="prompt">' + (S.pending ? 'The opponent is deciding on a response.' : 'The opponent is taking their turn.') + '</span>';
+      return '<span class="prompt">' + (S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.') + '</span>';
+    }
+    if (S.phase === 'opening') {
+      if (you.toBottom) return '<span class="prompt">Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.</span>';
+      var redraw = moves.some(function (m) { return m.type === 'redraw'; });
+      var costNote = you.redraws ? ' Keeping this hand means putting ' + (you.redraws > 1 ? you.redraws + ' cards' : '1 card') + ' on the bottom of your deck.' : '';
+      return '<span class="prompt">' + (redraw ? 'Keep this hand, or shuffle it back and draw a new one? Each redraw leaves you one card fewer.' : 'This is your last redraw.') + costNote + '</span><span class="btns">' +
+        (redraw ? btn('Redraw', { move: { type: 'redraw' } }) : '') + btn('Keep hand', { move: { type: 'keepHand' } }, true) + '</span>';
     }
     if (S.pending) {
       var att = S.pending.attack, text;
@@ -186,7 +193,6 @@
         else hint = you.landDropped ? 'You already played a land this turn.' : 'Play this land.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
-          if (m.type === 'swapCard') out.push(btn('Discard and draw', { move: m }));
         });
         out.push(btn('Cancel', { ui: 'clear' }));
       }
@@ -226,8 +232,8 @@
 
   function render() {
     var moves = humanMoves(), marks = computeMarks(moves);
-    var who = S.winner !== null ? 'Game over' : (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + (S.phase === 'command' ? ', command' : ', play');
-    $('turnLabel').textContent = 'Turn ' + S.turn + ' · ' + who;
+    var who = S.winner !== null ? 'Game over' : S.phase === 'opening' ? 'Opening hands' : (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + (S.phase === 'command' ? ', command' : ', play');
+    $('turnLabel').textContent = S.phase === 'opening' ? who : 'Turn ' + S.turn + ' · ' + who;
     $('themStrip').innerHTML = '<div class="lands">' + pips(S.players[BOT]) + '</div>' + summonerHtml(BOT, S.players[BOT].name, marks.summoner);
     $('youStrip').innerHTML = summonerHtml(HUMAN, 'You · ' + S.players[HUMAN].name, false) + '<div class="lands">' + pips(S.players[HUMAN]) + '</div>';
     var g = '';
@@ -243,7 +249,7 @@
   }
 
   function apply(m) {
-    if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'swapCard') {
+    if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'bottomCard') {
       var played = S.players[BOT].hand.filter(function (i) { return i.id === m.card; })[0];
       if (played) showCard(played.c, 'The enemy played this');
     }
@@ -285,8 +291,14 @@
   });
   $('hand').addEventListener('click', function (e) {
     var t = e.target.closest('.card');
-    if (!t || S.winner !== null || actor() !== HUMAN || S.pending || S.phase !== 'play') return;
+    if (!t || S.winner !== null || actor() !== HUMAN || S.pending) return;
     var id = +t.dataset.card;
+    if (S.phase === 'opening') {
+      var bottom = humanMoves().filter(function (m) { return m.type === 'bottomCard' && m.card === id; })[0];
+      if (bottom) apply(bottom);
+      return;
+    }
+    if (S.phase !== 'play') return;
     sel = sel && sel.kind === 'card' && sel.id === id ? null : { kind: 'card', id: id };
     render();
   });
