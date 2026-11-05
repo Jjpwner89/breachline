@@ -1,0 +1,64 @@
+<title>Sunmane Lancer Card</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+/* Card frame: a bronze edge, cost and name on a crimson bar at the top, full art, then parchment for rules. Sizes use cqw so the card scales as one piece. */
+:root {
+  color-scheme: dark;
+  --table: #12242b; --bronze: #3b2c18; --bronze-light: #6a4e25; --gold: #d0a448; --gold-pale: #f0d68c;
+  --parchment: #f5ebd2; --parchment-deep: #e6d6ae; --ink: #2a2114; --ink-soft: #5d4c31; --crimson: #8c2a24; --crimson-deep: #5f1a17; --ivory: #fbf3df;
+  --name: "Alegreya SC", Georgia, serif; --rules: "Alegreya", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { background: var(--table); margin: 0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px; display: flex; justify-content: center; }
+.slot { width: min(100%, 460px); container-type: inline-size; }
+.card { position: relative; aspect-ratio: 5 / 7; background: var(--bronze); border-radius: 4.4cqw; padding: 2.6cqw; color: var(--ink); font-family: var(--rules); display: flex; flex-direction: column; }
+.inner { position: relative; flex: 1; display: flex; flex-direction: column; min-height: 0; background: var(--parchment); border: 0.5cqw solid var(--gold); border-radius: 2.6cqw; overflow: hidden; }
+.art { position: relative; aspect-ratio: 3 / 2; flex: none; border-bottom: 0.5cqw solid var(--gold); }
+.art img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.cost { position: absolute; z-index: 2; left: 1.4cqw; top: 1cqw; display: flex; flex-direction: column; align-items: center; gap: 0.8cqw; }
+.coin { width: 12.5cqw; height: 12.5cqw; border-radius: 50%; background: var(--gold); border: 0.7cqw solid var(--bronze); display: flex; align-items: center; justify-content: center; font: 700 8cqw/1 var(--name); color: var(--ink); }
+.wants { display: flex; gap: 0.7cqw; background: var(--bronze); border-radius: 3cqw; padding: 0.7cqw 1.1cqw; }
+.sun { width: 3.6cqw; height: 3.6cqw; fill: var(--gold-pale); stroke: var(--gold-pale); }
+.ribbon { flex: none; padding: 1.9cqw 3cqw 2.1cqw 16cqw; background: var(--crimson); border-bottom: 0.5cqw solid var(--gold); }
+.ribbon h1 { margin: 0; font: 700 7.2cqw/1.05 var(--name); letter-spacing: 0.01em; color: var(--ivory); }
+.type { flex: none; text-align: center; font: 500 3.5cqw/1.2 var(--name); letter-spacing: 0.03em; color: var(--ink-soft); padding: 1.5cqw 3cqw 0; }
+.rules { flex: 1; min-height: 0; padding: 1.6cqw 5cqw 0; display: flex; flex-direction: column; gap: 1.5cqw; font-size: 4.1cqw; line-height: 1.24; }
+.rules p { margin: 0; }
+.rules b { font-weight: 700; }
+.flavour { font-style: italic; color: var(--ink-soft); font-size: 3.8cqw; border-top: 0.3cqw solid var(--parchment-deep); padding-top: 1.3cqw; }
+.foot { flex: none; display: flex; align-items: flex-end; justify-content: space-between; padding: 0 2cqw 2cqw; }
+.stat { width: 16cqw; text-align: center; border-radius: 1.6cqw; padding: 0.7cqw 0 1cqw; color: var(--ivory); background: var(--crimson-deep); border: 0.5cqw solid var(--gold); }
+.stat.hp { background: var(--bronze); }
+.stat span { display: block; font: 500 2.7cqw/1.1 var(--name); letter-spacing: 0.03em; }
+.stat strong { display: block; font: 700 7cqw/1 var(--name); font-variant-numeric: lining-nums; }
+.mark { flex: 1; text-align: center; font-size: 2.7cqw; color: var(--ink-soft); padding-bottom: 0.6cqw; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4M4.2 4.2l2.9 2.9M16.9 16.9l2.9 2.9M4.2 19.8l2.9-2.9M16.9 7.1l2.9-2.9" fill="none" stroke-width="2.4" stroke-linecap="round"/></symbol></svg>
+
+<main class="slot">
+  <article class="card" aria-label="Sunmane lancer card">
+    <div class="inner">
+      <div class="ribbon"><h1>Sunmane lancer</h1></div>
+      <div class="cost" aria-label="Costs 4 mana, wants 2 white lands">
+        <div class="coin">4</div>
+        <div class="wants"><svg class="sun"><use href="#sun"/></svg><svg class="sun"><use href="#sun"/></svg></div>
+      </div>
+      <div class="art">
+        <img src="art/sunmane-lancer.png" alt="A lion-headed knight in ivory and gold armour with a crimson cape, riding a white warhorse past a stone wall with a long lance levelled.">
+      </div>
+      <div class="type">Unit · Lion folk knight</div>
+      <div class="rules">
+        <p><b>Swift:</b> moves 2 tiles.</p>
+        <p><b>Lance through:</b> instead of attacking, hit an adjacent enemy and the enemy directly behind it.</p>
+      </div>
+      <div class="foot">
+        <div class="stat"><span>Attack</span><strong>45</strong></div>
+        <div class="mark">The Sunmane Oath<br>Prototype set</div>
+        <div class="stat hp"><span>Health</span><strong>65</strong></div>
+      </div>
+    </div>
+  </article>
+</main>
