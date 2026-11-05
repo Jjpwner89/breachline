@@ -11,7 +11,10 @@ Lines are tracked here until they go on cards. Cards can have no flavour text, a
 | Blessed banner | We have rewoven it eleven times. No thread of the first remains. | |
 | Shield of dawn | The blow landed and I stood. | |
 | Goblin cutter | Smaller than you think. Closer than you think. | |
+| Orc raider | We leave when there's nothing left to carry. | |
+| Sellsword | Every side owes him. | |
 | Orc warchief | Forty went up the pass with Grusha. Four hundred came down. | |
+| Hill giant | Fee fi fo fum. | |
 | Elder dragon | Three cities took its name, hoping to be spared. | |
 | Street conjurer | Two coppers for a sparrow of flame. | |
 
@@ -21,21 +24,17 @@ Lines are tracked here until they go on cards. Cards can have no flavour text, a
 | --- | --- |
 | A mercenary captain (not an orc) | We chose him at dawn. We can choose again by dusk. |
 
-## Awaiting a verdict: current cards
+## Awaiting a verdict
 
-| Card | Line |
-| --- | --- |
-| Oath knight | She raises her visor so they know who to surrender to. |
-| Sunmane lancer | The second rank always thinks it's safe. |
-| Pride warden | When he roars, the line stops breaking. |
-| Orc raider | We leave when there's nothing left to carry. |
-| Sellsword | He has fought on every side of this war. Every side owes him. |
-| Hill giant | The village has moved its wall twice. He hasn't noticed. |
-| Withering hex | By noon, he could not lift his own sword. |
+| Card | Line | Art it leans on |
+| --- | --- | --- |
+| Oath knight | No one ordered her to stay. | Alone on a stone bridge in the rain |
+| Sunmane lancer | Some mornings, the ride is only a ride. | An unhurried ride under a blue sky |
+| Withering hex | She stopped praying before the rust reached the hilt. | A knight watching her sword rust |
 
-## Awaiting a verdict: general style test
+## General style test
 
-These aren't tied to current cards. They could suit future ones.
+The creator liked these as a group and didn't object to any. They aren't tied to current cards and could suit future ones.
 
 | Alignment | Possible card | Line |
 | --- | --- | --- |
@@ -55,12 +54,13 @@ These aren't tied to current cards. They could suit future ones.
 ## Rejected
 
 - **Firebolt:** "She said one word. The captain's horse ran on alone." The creator thought it was good but didn't want to keep it.
+- **Pride warden:** none of the drafts worked, so this card has no flavour text.
 - **Sunlit plains, Lantern quarter:** lands don't need much flavour text.
 - **Older drafts** of most cards above, usually for being on the nose, too long or too reliant on named places.
 
 ## Names used so far
 
-These are undefined on purpose and can be normalized later. Use new ones sparingly.
+These are undefined on purpose and can be normalized later. Up to about 4 lines in every 20 to 30 can use one.
 
 - **Places:** Sallow Bridge
 - **People:** Grusha

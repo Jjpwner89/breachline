@@ -16,9 +16,11 @@ Early lines failed because they were generic and had no grounding in the world. 
 Take the world seriously, but vary the mood. Lines can be hopeful, proud, warm or dry as well as somber, and only puns and out-and-out jokes are ruled out. Let the line carry weight through what it implies.
 
 - **Stop early.** End on the first line that lands. The creator cut second sentences that kept explaining, so test every line by deleting its last sentence.
-- **Be about this card's subject.** Write about this character and what they do, including their ability, instead of the setting's big themes.
+- **Be about this card's subject.** Write about who this character is and what their life is like, instead of the setting's big themes. Don't describe their ability, which the rules text already covers.
+- **Lean on the art.** Look at the card's image in `breachline/art/web/` before writing. A very short line can rely on what the picture shows, and the creator likes that approach.
+- **Vary the emotion across a batch.** Mix cold, warm, funny, proud, hopeful and sad lines. The creator especially liked this variety.
 - **Stay off the nose.** Don't have characters talk directly about the Empire or the gods' silence just to show the setting. Let the setting show up sideways, or not at all.
-- **Use names sparingly.** A line can refer to a place or person that isn't defined anywhere, which makes the world feel larger, but the creator found a batch with a name on most lines too much. Keep it to an occasional line, and list each name in `breachline/FLAVOUR.md` so it can be normalized later.
+- **Use names sparingly.** A line can refer to a place or person that isn't defined anywhere, which makes the world feel larger, but the creator found a batch with a name on most lines too much. Aim for up to about 4 lines in every 20 to 30, and list each name in `breachline/FLAVOUR.md` so it can be normalized later.
 - **Go shorter than feels safe.** The creator's favourites are often one short sentence or two very short ones. They also cut a line down to its first sentence more than once.
 - **Vary the structure.** Specific numbers work well, but don't let every line depend on one.
 - **Leave cards blank when nothing is good enough.** Not every card needs a line, and few lands do.
