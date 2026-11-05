@@ -1,8 +1,10 @@
 # New card proposals
 
-All of these are proposals. None are in the game or simulated yet, so the numbers will change after playtesting. Lines are the ones already saved in `FLAVOUR.md`, and they stay off cards until the creator asks for them.
+All of these cards are in the prototype as of 2026-11-05, and the numbers will change after playtesting. Each deck now has 24 cards, 11 of them lands. Lines are the ones already saved in `FLAVOUR.md`, and they stay off cards until the creator asks for them.
 
 Stats are attack / health. "Wants" is how many lands of the card's colour it wants; each missing land adds 1 to the cost.
+
+Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually cross over anything. The Elder dragon no longer needs Swift as a result.
 
 ## New keywords
 
@@ -32,7 +34,7 @@ Stats are attack / health. "Wants" is how many lands of the card's colour it wan
 | --- | --- | --- | --- | --- | --- | --- |
 | Cinder Clan raiders | Unit | 2 | 1 | 30 / 25 | Swift | Last one over the wall buys the drinks. |
 | Cinder berserker | Unit | 3 | 1 | 40 / 30 | Frenzy | Nobody has ever told her to stop twice. |
-| Mercenary captain | Unit | 4 | 2 | 40 / 55 | Ability: an adjacent ally moves 1 tile and can still act | We chose him at dawn. We can choose again by dusk. |
+| Mercenary captain | Unit | 4 | 2 | 40 / 55 | Ability: an adjacent ally that already moved can move again | We chose him at dawn. We can choose again by dusk. |
 | Ember drake | Unit | 4 | 2 | 35 / 30 | Flying | |
 
 ## Gnosis (blue)
@@ -50,11 +52,11 @@ Stats are attack / health. "Wants" is how many lands of the card's colour it wan
 
 | Card | Type | Cost | Wants | Stats | Rules | Line |
 | --- | --- | --- | --- | --- | --- | --- |
-| Gravebound thrall | Unit | 1 | 1 | 25 / 20 | | |
-| Bone harvester | Unit | 2 | 1 | 20 / 30 | Ability: destroy an adjacent ally; this unit gets +25 attack | |
-| Ashen Court noble | Unit | 3 | 1 | 25 / 50 | Drain | She has never raised her voice. No one has needed her to. |
+| Gravebound thrall | Unit | 1 | 1 | 30 / 20 | | |
+| Bone harvester | Unit | 2 | 1 | 25 / 35 | Ability: destroy an adjacent ally; this unit gets +25 attack | |
+| Ashen Court noble | Unit | 3 | 1 | 30 / 55 | Drain | She has never raised her voice. No one has needed her to. |
 | Vashkar, Who Counts the Dead | Unit, Velunn | 6 | 3 | 70 / 85 | Drain. When summoned, you lose 15 life | |
-| Raise the dead | Spell (new type) | 3 | 1 | | Return a unit costing 3 or less from your discard pile to your back row | Get up. You're still useful. |
+| Raise the dead | Spell (new type) | 3 | 1 | | Return a unit costing 3 or less from your discard pile to your back row. It lands on the free tile nearest the centre and waits a turn | Get up. You're still useful. |
 | Death warrant | Enchantment | 5 | 2 | | Enchant an enemy unit: destroy it at the end of your next turn | |
 
 ## Genesis (green)
@@ -66,7 +68,7 @@ Stats are attack / health. "Wants" is how many lands of the card's colour it wan
 | Great owl | Unit | 3 | 1 | 25 / 30 | Flying. Goes against Genesis's tendency, so it costs 1 extra | |
 | Wayfinder druid | Unit | 3 | 1 | 20 / 45 | When summoned: you may play an extra land this turn | |
 | Elder Herd bull | Unit | 5 | 2 | 60 / 95 | Overrun | The herd doesn't go around. |
-| Shifting forest | Instant | 1 | 1 | | At the end of a turn: move an enemy unit 1 tile | The path was here yesterday. |
+| Shifting forest | Instant | 1 | 1 | | At the end of the enemy turn: push an enemy unit 1 tile back toward its side | The path was here yesterday. |
 
 ## Neutral
 

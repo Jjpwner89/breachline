@@ -76,6 +76,22 @@ The creator supplied twelve Magic card images as examples they like and asked fo
 
 Across a batch, check variety in camera distance, facing direction, body gesture, silhouette, mood, background structure and dominant colour. Preserve the subjects, identities and essential story details in the current briefs. These references broaden interpretation; they do not replace the briefs or authorize reproducing an existing illustration.
 
+## Set 2 review feedback (2026-11-05)
+
+Confirmed by the creator during generation:
+
+- The **bone harvester** is a favourite: particularly its violet/grey colour variation and the specific bone-gathering action. Use it as a positive example of mood and purposeful behaviour.
+- The **brass chorister** design is strongly liked. For this card, remove shoulder organ pipes, integrate the mouth opening more subtly, and remove all visible motion/pressure effects from the hand. Do not generalize this into a ban on unusual construct anatomy.
+- The **Cinder Clan raiders** should keep their positive energy but look excited, thrilled and determined rather than broadly laughing. Add practical weapons. Keep their group action.
+- The **water carrier** is liked; remove the supporting arm/hand entering from the foreground.
+- The **Ashen barrows** land is liked. The **Overgrown ruin** vignette is liked in colour and subject, but feels too small for this land. Preserve it as a possible artifact illustration reference and remake this land with a stronger sense of place and grand scale.
+- The Vigil group is broadly liked, but **Oath sentinel** is the least liked in that group; the reason is not specified. Do not invent a general rule from that preference.
+- The initial **Cinder berserker** is disliked and should be redesigned; a more specific reason has been requested.
+- The creator describes the **mercenary captain** as funny; do not remove personality or assume all humour is unwanted.
+- Other named favourites are **Sunmane lancer**, the small **Goblin cutter**, **Withering hex** (rusting sword), and **Lantern quarter** (blue land). These are examples of successful subjects/actions/colour, not templates to repeat their poses.
+
+Use expressions appropriate to the action. For these raiders, enthusiasm should read as exhilaration and resolve; broad laughter is too light. Keep quiet tension, humour, awe and ordinary human feeling available elsewhere.
+
 ## Repetition to watch
 
 Claude noticed these across the first 19 images. The creator hasn't confirmed them yet.

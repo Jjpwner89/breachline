@@ -56,6 +56,10 @@ Some lesser gods remain in the world, diminished, and they no longer speak for t
 
 They are related to the gods, but their existence doesn't prove the gods are real. Some people think they are only races left over from the Age of Gods.
 
+## Vampires
+
+Vampires exist, but they are a subtle, rare part of the world and stay in the shadows. They can belong to Dominion or Fervor. They should never feel common or become a major presence on cards.
+
 ## What people believe about the gods
 
 People disagree about why the gods went quiet:
