@@ -1,21 +1,85 @@
 // Board UI. The human is always player 0 and sits at the bottom; every click ends in an Engine.legalMoves entry.
 (function () {
-  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null;
+  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' };
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   var $ = function (id) { return document.getElementById(id); };
-  var COLOUR = { W: 'white', R: 'red', U: 'blue' };
-  var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis' };
-  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment' };
+  var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
+  var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
+  var DECK_NOTES = {
+    white: 'Healing, protecting allies and standing together.',
+    red: 'High attack, direct damage, speed, giants and fliers.',
+    blue: 'Ranged attacks, moving units, drawing cards and decoys.',
+    black: 'Life drain, destroying units and returning them from the discard pile.',
+    green: 'Very large units, units that grow, extra lands and recovering health.'
+  };
+  var DECK_ART = { white: 'lancer', red: 'warchief', blue: 'conjurer', black: 'harvester', green: 'land_g' };
+  // On wide screens the close-up has its own column, and elsewhere it floats over the map. Same query as the CSS.
+  var DOCKED = window.matchMedia('(min-width: 1280px) and (min-aspect-ratio: 3/2)');
+  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell' };
   var ART = {
     land_w: 'sunlit-plains', land_r: 'cinder-peaks', land_u: 'lantern-quarter',
     spearman: 'militia-spearman', cleric: 'temple-cleric', knight: 'oath-knight', lancer: 'sunmane-lancer', warden: 'pride-warden',
     shield: 'shield-of-dawn', banner: 'blessed-banner',
     goblin: 'goblin-cutter', raider: 'orc-raider', conjurer: 'street-conjurer', sellsword: 'sellsword', warchief: 'orc-warchief',
-    giant: 'hill-giant', dragon: 'elder-dragon', firebolt: 'firebolt', hex: 'withering-hex'
+    giant: 'hill-giant', dragon: 'elder-dragon', firebolt: 'firebolt', hex: 'withering-hex',
+    land_b: 'ashen-barrows', land_g: 'overgrown-ruin',
+    carrier: 'water-carrier', cub: 'pride-cub', sentinel: 'oath-sentinel', maren: 'saint-maren',
+    clanraiders: 'cinder-clan-raiders', berserker: 'cinder-berserker', captain: 'mercenary-captain', drake: 'ember-drake',
+    decoy: 'illusory-decoy', scholar: 'cloistered-scholar', arcanist: 'lantern-arcanist', chorister: 'brass-chorister', displacement: 'displacement', glyph: 'binding-glyph',
+    thrall: 'gravebound-thrall', harvester: 'bone-harvester', noble: 'ashen-court-noble', vashkar: 'vashkar', raise: 'raise-the-dead', warrant: 'death-warrant',
+    sapling: 'walking-sapling', saboteur: 'thornwarden-saboteur', owl: 'great-owl', wayfinder: 'wayfinder-druid', bull: 'elder-herd-bull', shifting: 'shifting-forest',
+    youngsummoner: 'young-summoner'
+  };
+  // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
+  var FLAVOUR = {
+    spearman: { line: 'My mother held this spear at Sallow Bridge. It still pulls left.' },
+    cleric: { line: 'I have closed nine thousand wounds and heard no voice. I will close another tomorrow.', credit: 'Still Flame healer' },
+    knight: { line: 'No one ordered her to stay.' },
+    lancer: { line: 'Some mornings, the ride is only a ride.' },
+    shield: { line: 'The blow landed and I stood.' },
+    banner: { line: 'We have rewoven it eleven times. No thread of the first remains.' },
+    goblin: { line: 'Smaller than you think. Closer than you think.' },
+    raider: { line: "We leave when there's nothing left to carry." },
+    conjurer: { line: 'Two coppers for a sparrow of flame.' },
+    sellsword: { line: 'Every side owes him.' },
+    warchief: { line: 'Forty went up the pass with Grusha. Four hundred came down.' },
+    giant: { line: 'Fee fi fo fum.' },
+    dragon: { line: 'Three cities took its name, hoping to be spared.' },
+    hex: { line: 'She stopped praying before the rust reached the hilt.' },
+    carrier: { line: 'The wounded remember who brought the water.' },
+    cub: { line: 'Every cub learns to roar before learning why.' },
+    clanraiders: { line: 'Last one over the wall buys the drinks.' },
+    berserker: { line: 'Nobody has ever told her to stop twice.' },
+    captain: { line: 'We chose him at dawn. We can choose again by dusk.' },
+    decoy: { line: 'Your aim was perfect.' },
+    scholar: { line: 'She asked for one more candle. That was in the spring.' },
+    noble: { line: 'She has never raised her voice. No one has needed her to.' },
+    raise: { line: "Get up. You're still useful." },
+    bull: { line: "The herd doesn't go around." },
+    shifting: { line: 'The path was here yesterday.' },
+    youngsummoner: { line: 'She has worn long sleeves since she was nine.' },
+    land_g: { line: 'Something green is growing through the throne room floor.' }
   };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
-  var preloaded = Object.keys(ART).map(function (id) { var im = new Image(); im.src = artSrc(id); return im; });
+  // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
+  var noArt = {}, artRedraw = null;
+  var preloaded = Object.keys(ART).map(function (id) {
+    var im = new Image();
+    im.onerror = function () {
+      noArt[id] = true;
+      clearTimeout(artRedraw);
+      artRedraw = setTimeout(function () {
+        if (!S) return renderStart();
+        var open = peek;
+        peek = null;
+        if (open) showCard(open.id, open.note);
+        render();
+      }, 50);
+    };
+    im.src = artSrc(id);
+    return im;
+  });
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
@@ -34,27 +98,31 @@
     });
   }
 
-  function pips(p) {
-    var mana = '<span class="mana">' + p.mana + ' / ' + p.lands.length + ' mana</span>';
-    var list = p.lands.map(function (l) { return '<span class="pip ' + l.colour + '" title="' + E.CARDS[l.c].name + '" data-peek="' + l.c + '">' + l.colour + '</span>'; }).join('');
-    return mana + (list || 'No lands yet');
-  }
+  function sym(colour) { return '<svg aria-hidden="true"><use href="#sym-' + colour + '"/></svg>'; }
 
-  function summonerHtml(pi, label, targetable) {
-    var p = S.players[pi];
-    var counts = pi === HUMAN
-      ? p.deck.length + ' in deck, ' + p.discard.length + ' discarded'
-      : p.hand.length + ' in hand, ' + p.deck.length + ' in deck, ' + p.discard.length + ' discarded';
+  function plateHtml(pi, targetable, threat) {
+    var p = S.players[pi], deck = E.DECKS[p.deckKey], main = deck.colours[0], you = pi === HUMAN;
+    var gems = p.lands.map(function (l, n) {
+      return '<span class="gem ' + l.colour + (n < p.mana ? '' : ' spent') + '" title="' + E.CARDS[l.c].name + '" data-peek="' + l.c + '">' + sym(l.colour) + '</span>';
+    }).join('');
+    var pile = function (label, n) { return '<span class="pile"><small>' + label + '</small><b>' + n + '</b></span>'; };
     var tag = targetable ? 'button type="button" data-summoner="1"' : 'div';
     var close = targetable ? 'button' : 'div';
-    return '<' + tag + ' class="summoner ' + (pi === HUMAN ? 'you' : 'them') + (targetable ? ' target' : '') + '" id="summoner' + pi + '">' +
-      '<b>' + label + '</b><span class="life">' + p.life + '</span><span class="count">' + counts + '</span></' + close + '>';
+    var active = S.winner === null && S.phase !== 'opening' && S.active === pi;
+    return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
+      (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
+      '<span class="crest ' + main + '">' + sym(main) + '</span>' +
+      '<span class="who"><b>' + (you ? 'You' : p.name) + '</b><small>' + (you ? p.name : ALIGNMENT[main]) + '</small></span>' +
+      '<span class="life" title="Summoner life"><strong>' + p.life + '</strong><i><b style="width:' + Math.max(0, Math.min(100, Math.round(p.life / E.START_LIFE * 100))) + '%"></b></i></span>' +
+      '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
+      (targetable ? '<span class="strike">Strike summoner</span>' : '') +
+      '<span class="piles">' + (you ? '' : pile('Hand', p.hand.length)) + pile('Deck', p.deck.length) + pile('Discard', p.discard.length) + '</span>' +
+      '</' + close + '>';
   }
 
   function tileHtml(r, c, marks) {
     var u = S.units.filter(function (x) { return x.r === r && x.c === c; })[0];
     var cls = ['tile'], attrs = 'data-r="' + r + '" data-c="' + c + '"', key = r + ',' + c, inner = '';
-    if (r === 0 || r === E.ROWS - 1) cls.push('back');
     if (marks.tiles[key]) cls.push(marks.tiles[key]);
     if (flash && flash[0] === r && flash[1] === c) cls.push('flash');
     var label = '';
@@ -65,30 +133,40 @@
       else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
-      var notes = d.keywords.slice();
-      u.enchants.forEach(function (e) { notes.push(E.CARDS[e.c].name); });
-      if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
-      if (waiting) notes.push('Waiting');
-      else if (u.owner === S.active && u.acted) notes.push('Done');
-      inner = '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">' +
-        '<span class="nm">' + d.name + '</span>' +
-        '<span class="lower">' + (notes.length ? '<span class="meta">' + notes.join(', ') + '</span>' : '') +
-        '<span class="st"><span class="dir" aria-hidden="true">' + (u.owner === HUMAN ? '▲' : '▼') + '</span>' + E.attackOf(u) + '<span class="sl">/</span>' + u.hp + '</span>' +
-        '<span class="bar"><i style="width:' + Math.max(0, Math.round(u.hp / u.maxHp * 100)) + '%"></i></span></span>';
-      label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(u) + ', health ' + u.hp;
-      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(u) + ' / ' + u.hp + '"';
+      var chips = d.keywords.map(function (k) { return '<span class="chip">' + k + '</span>'; });
+      u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + '</span>'); });
+      if (u.tempAtk) chips.push('<span class="chip">+' + u.tempAtk + ' this turn</span>');
+      if (waiting) chips.push('<span class="chip state">Waiting</span>');
+      else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
+      var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
+      inner = (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
+        '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
+        (chips.length ? '<span class="chips">' + chips.join('') + '</span>' : '') +
+        '<span class="st"><span class="badge atk' + (atk > d.atk ? ' up' : atk < d.atk ? ' down' : '') + '">' + atk + '</span>' +
+        '<span class="bar"><i class="' + (pct <= 25 ? 'crit' : pct <= 50 ? 'low' : '') + '" style="width:' + pct + '%"></i></span>' +
+        '<span class="badge hp' + (u.hp < u.maxHp ? ' hurt' : '') + '">' + u.hp + '</span></span>';
+      label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp;
+      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + '"';
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
   }
 
   // Each town fills two tiles beside its owner's half, so raiders reach it before the summoner. Closed in this version.
   function townHtml(side, label) {
-    return '<div class="town ' + side + '" role="img" aria-label="' + label + ', under construction"><svg viewBox="0 0 100 190" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path class="scaffold" d="M20 100V62L42 44L64 62V100M20 62H64M20 81H64M42 44V100M30 150V116H82V150M30 133H82M47 116V150M64 116V150M64 116V96H84V106"/></svg>' +
+    return '<div class="town ' + side + '" role="img" aria-label="' + label + ', under construction"><svg viewBox="0 0 100 190" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path class="scaffold" d="M20 124V86L42 68L64 86V124M20 86H64M20 105H64M42 68V124M30 170V136H82V170M30 153H82M47 136V170M64 136V170M64 136V116H84V126"/></svg>' +
       '<span class="who">' + label + '</span><span class="sign"><span class="long">Under construction</span><span class="short">Being built</span></span></div>';
   }
+  var RUIN = '<div class="ruin" title="Fortifications, coming later"><svg viewBox="0 0 220 50" aria-hidden="true"><rect x="10" y="38" width="30" height="11"/><rect x="42" y="38" width="30" height="11"/><rect x="74" y="38" width="30" height="11"/><rect x="106" y="38" width="30" height="11"/><rect x="24" y="26" width="30" height="11"/><rect x="56" y="26" width="30" height="11"/><rect x="88" y="26" width="20" height="11"/><rect x="38" y="14" width="30" height="11"/><rect x="70" y="14" width="13" height="11"/><rect x="48" y="2" width="16" height="11"/><rect x="150" y="41" width="15" height="8" transform="rotate(-16 157 45)"/><rect x="178" y="42" width="11" height="7" transform="rotate(14 183 45)"/><rect x="124" y="26" width="10" height="8" transform="rotate(24 129 30)"/></svg>Fortifications, later</div>';
 
   function computeMarks(moves) {
-    var marks = { tiles: {}, units: {}, summoner: false };
+    var marks = { tiles: {}, units: {}, summoner: false, threat: false };
+    // While you decide on a response, the two units in the fight stay marked on the map.
+    if (S.pending && S.pending.attack && actor() === HUMAN) {
+      var fight = S.pending.attack;
+      marks.units[fight.attacker] = 't-threat';
+      if (fight.summoner !== undefined) marks.threat = true;
+      else marks.units[fight.targetUid] = 't-threat';
+    }
     selectedMoves(moves).forEach(function (m) {
       if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
@@ -97,7 +175,7 @@
       else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ab.key === 'heal' ? 't-buff' : 't-attack';
+        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' ? 't-buff' : 't-attack';
       }
     });
     return marks;
@@ -108,15 +186,17 @@
     o = o || {};
     var isLand = c.type === 'land', cost = o.cost === undefined ? c.cost : o.cost, have = o.have === undefined ? c.wants : o.have, syms = '';
     for (var n = 0; n < c.wants; n++) syms += '<svg class="sym' + (n < have ? '' : ' miss') + '" aria-hidden="true"><use href="#sym-' + c.colour + '"/></svg>';
-    var wantsText = 'Wants ' + c.wants + ' ' + COLOUR[c.colour] + ' land' + (c.wants === 1 ? '' : 's');
+    var wantsText = c.wants ? 'Wants ' + c.wants + ' ' + COLOUR[c.colour] + ' land' + (c.wants === 1 ? '' : 's') : 'Any lands';
     var costHtml = isLand ? '' : '<span class="cost" title="' + wantsText + '" aria-label="Costs ' + cost + ', ' + wantsText.toLowerCase() + '">' +
-      '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span><span class="wants">' + syms + '</span></span>';
+      '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
     var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
     var foot = c.type === 'unit' ? '<span class="foot"><span class="stat"><span>Attack</span><strong>' + c.atk + '</strong></span><span class="stat hp"><span>Health</span><strong>' + c.hp + '</strong></span></span>' : '';
+    var fl = FLAVOUR[c.id];
+    if (fl) body += '<span class="flavour">' + fl.line + (fl.credit ? '<span class="credit">' + fl.credit + '</span>' : '') + '</span>';
     return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
       '<span class="bar-top">' + c.name + '</span>' +
-      '<span class="art"><img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false"></span>' +
-      '<span class="type">' + TYPES[c.type] + ' · ' + ALIGNMENT[c.colour] + '</span>' +
+      '<span class="art">' + (noArt[c.id] ? '' : '<img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false">') + '</span>' +
+      '<span class="type">' + TYPES[c.type] + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>' +
       '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
   }
 
@@ -124,21 +204,48 @@
     var c = E.CARDS[i.c], you = S.players[HUMAN];
     var have = you.lands.filter(function (l) { return l.colour === c.colour; }).length;
     var playable = S.phase === 'opening' || moves.some(function (m) { return m.card === i.id; });
-    var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim');
-    return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand">' +
-      frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</button>';
+    var ready = playable && S.phase === 'play' && !S.pending && actor() === HUMAN;
+    var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim') + (ready ? ' ready' : '');
+    return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand"><span class="cslot">' +
+      frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</span></button>';
   }
 
-  // The large card beside the board. It only redraws when the card changes, so bot turns don't reset it.
+  // Hand cards have little room, so a line that doesn't fit is left for the close-up, and rules text that still doesn't fit gets smaller.
+  function fitHand() {
+    Array.prototype.forEach.call($('hand').querySelectorAll('.ctext'), function (t) {
+      var f = t.querySelector('.flavour');
+      if (f && t.scrollHeight > t.clientHeight) t.removeChild(f);
+      if (t.scrollHeight > t.clientHeight) t.classList.add('tight');
+    });
+  }
+
+  // The large card. It only redraws when the card changes, so bot turns don't reset it.
   function showCard(id, note) {
     if (peek && peek.id === id && peek.note === (note || '')) return;
     peek = { id: id, note: note || '' };
     $('inspect').innerHTML = '<div class="slot">' + frameHtml(E.CARDS[id], { big: true }) + '</div><p class="note">' + peek.note + '</p>';
     $('peekBtn').setAttribute('aria-label', 'View card: ' + E.CARDS[id].name);
   }
+  function revealPeek(ms) {
+    clearTimeout(peekTimer);
+    $('inspect').classList.add('show');
+    if (ms) peekTimer = setTimeout(hidePeek, ms);
+  }
+  function hidePeek() { $('inspect').classList.remove('show'); }
   function peekFrom(e) {
     var t = e.target.closest('[data-peek]');
-    if (t) showCard(t.dataset.peek, t.dataset.note || E.CARDS[t.dataset.peek].name + ' in play');
+    if (!t) return;
+    // A hand card zooms itself on hover, so it only needs the close-up when that has its own column.
+    if (t.closest('.card') && !DOCKED.matches) { hidePeek(); return; }
+    var box = t.getBoundingClientRect();
+    $('inspect').classList.toggle('left', box.left + box.width / 2 > window.innerWidth * 0.55);
+    showCard(t.dataset.peek, t.dataset.note || E.CARDS[t.dataset.peek].name + ' in play');
+    revealPeek();
+  }
+  function peekAway(e) {
+    if (!e.target.closest('[data-peek]')) return;
+    clearTimeout(peekTimer);
+    peekTimer = setTimeout(hidePeek, 120);
   }
   function closePeek() {
     if (!$('inspect').classList.contains('open')) return;
@@ -152,23 +259,51 @@
 
   function moveLabel(m) {
     var c = cardOf(m.card), t = m.target ? unitById(m.target) : null;
-    return c.name + (t ? ' on ' + E.CARDS[t.cardId].name : '');
+    var where = '';
+    if (t && m.r !== undefined) where = ', moving ' + (m.r < t.r ? 'up' : m.r > t.r ? 'down' : m.c < t.c ? 'left' : 'right');
+    return c.name + (t ? ' on ' + E.CARDS[t.cardId].name : '') + where;
+  }
+
+  // The latest log line stays beside the prompt, so you can follow the game with the log closed.
+  function promptHtml(text) {
+    var last = S.log[S.log.length - 1];
+    return '<span class="prompt"><span class="ask">' + text + '</span>' + (last ? '<span class="ticker">' + last.text + '</span>' : '') + '</span>';
+  }
+
+  function phaseHtml() {
+    if (S.winner !== null) return '<span class="turn">Game over</span>';
+    if (S.phase === 'opening') return '<span class="turn">Opening hands</span>';
+    var step = function (name, label) { return '<span class="step' + (S.phase === name ? ' on' : '') + '">' + label + '</span>'; };
+    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
+      '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>';
+  }
+
+  function resultHtml() {
+    if (S.winner === null) return '';
+    var txt = S.winner === 'draw' ? 'A draw' : S.winner === HUMAN ? 'You win' : 'You lose';
+    return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.</p><span class="btns">' + btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + '</span></div>';
+  }
+
+  function announceTurn() {
+    var key = S.winner === null && S.phase !== 'opening' ? S.active + ':' + S.turn : null;
+    if (key && key !== lastTurn) {
+      $('turnBanner').className = S.active === HUMAN ? '' : 'enemy';
+      $('turnBanner').innerHTML = '<span>' + (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
+    }
+    lastTurn = key;
   }
 
   function actionsHtml(moves) {
     var you = S.players[HUMAN];
-    if (S.winner !== null) {
-      var txt = S.winner === 'draw' ? 'The game is a draw.' : S.winner === HUMAN ? 'You win.' : 'You lose.';
-      return '<span class="prompt"><b>' + txt + '</b> ' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.</span><span class="btns">' + btn('Play again', { ui: 'new' }, true) + '</span>';
-    }
+    if (S.winner !== null) return promptHtml('The battle is over.');
     if (actor() !== HUMAN) {
-      return '<span class="prompt">' + (S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.') + '</span>';
+      return promptHtml(S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.');
     }
     if (S.phase === 'opening') {
-      if (you.toBottom) return '<span class="prompt">Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.</span>';
+      if (you.toBottom) return promptHtml('Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.');
       var redraw = moves.some(function (m) { return m.type === 'redraw'; });
       var costNote = you.redraws ? ' Keeping this hand means putting ' + (you.redraws > 1 ? you.redraws + ' cards' : '1 card') + ' on the bottom of your deck.' : '';
-      return '<span class="prompt">' + (redraw ? 'Keep this hand, or shuffle it back and draw a new one? Each redraw leaves you one card fewer.' : 'This is your last redraw.') + costNote + '</span><span class="btns">' +
+      return promptHtml((redraw ? 'Keep this hand, or shuffle it back and draw a new one? Each redraw leaves you one card fewer.' : 'This is your last redraw.') + costNote) + '<span class="btns">' +
         (redraw ? btn('Redraw', { move: { type: 'redraw' } }) : '') + btn('Keep hand', { move: { type: 'keepHand' } }, true) + '</span>';
     }
     if (S.pending) {
@@ -176,10 +311,10 @@
       if (att) {
         var a = unitById(att.attacker);
         var target = att.summoner !== undefined ? 'you' : E.CARDS[unitById(att.targetUid).cardId].name;
-        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + E.attackOf(a) + '. Respond?';
+        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + E.attackOf(S, a) + '. Respond?';
       } else text = 'The enemy turn is ending. Use an instant?';
       var opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) { return btn(moveLabel(m), { move: m }); }).join('');
-      return '<span class="prompt">' + text + '</span><span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
+      return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
     }
     var out = [], sm = selectedMoves(moves);
     if (S.phase === 'play') {
@@ -189,16 +324,21 @@
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
         else if (place) hint = 'Choose a highlighted tile in your back row.';
         else if (ench) hint = 'Choose a unit to enchant.';
+        else if (c.type === 'spell') hint = sm.length ? 'Choose a unit to return.' : "You can't cast this right now.";
         else if (c.type !== 'land') hint = 'Not enough mana to play this now.';
         else hint = you.landDropped ? 'You already played a land this turn.' : 'Play this land.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
+          if (m.type === 'cast') {
+            var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
+            out.push(btn('Return ' + E.CARDS[back.c].name, { move: m }, true));
+          }
         });
         out.push(btn('Cancel', { ui: 'clear' }));
       }
       var canCommand = E.legalMoves(E.applyMove(S, { type: 'toCommand' })).length > 1;
       out.push(canCommand ? btn('Command units', { move: { type: 'toCommand' } }, !sel) : btn('End turn', { ui: 'skip' }, !sel));
-      return '<span class="prompt">' + hint + '</span><span class="btns">' + out.join('') + '</span>';
+      return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>';
     }
     var cmdHint = 'Select one of your units. Each can move, then attack or use an ability.';
     if (sel && sel.kind === 'unit') {
@@ -215,33 +355,37 @@
       }
     }
     out.push(btn('End turn', { move: { type: 'endTurn' } }, !sel));
-    return '<span class="prompt">' + cmdHint + '</span><span class="btns">' + out.join('') + '</span>';
+    return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>';
   }
 
   function floats() {
     (S.fx || []).forEach(function (f) {
       var host = f.summoner !== undefined ? $('summoner' + f.summoner) : document.querySelector('.tile[data-r="' + f.r + '"][data-c="' + f.c + '"]');
       if (!host) return;
-      if (f.summoner !== undefined) host.style.position = 'relative';
       var s = document.createElement('span');
       s.className = 'float' + (f.good ? ' good' : '');
       s.textContent = f.text;
       host.appendChild(s);
+      if (!f.good) host.classList.add('hit');
     });
   }
 
   function render() {
     var moves = humanMoves(), marks = computeMarks(moves);
-    var who = S.winner !== null ? 'Game over' : S.phase === 'opening' ? 'Opening hands' : (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + (S.phase === 'command' ? ', command' : ', play');
-    $('turnLabel').textContent = S.phase === 'opening' ? who : 'Turn ' + S.turn + ' · ' + who;
-    $('themStrip').innerHTML = '<div class="lands">' + pips(S.players[BOT]) + '</div>' + summonerHtml(BOT, S.players[BOT].name, marks.summoner);
-    $('youStrip').innerHTML = summonerHtml(HUMAN, 'You · ' + S.players[HUMAN].name, false) + '<div class="lands">' + pips(S.players[HUMAN]) + '</div>';
-    var g = '';
+    $('app').classList.toggle('opening', S.phase === 'opening' && S.winner === null);
+    $('cmd').classList.toggle('enemy', S.winner === null && S.phase !== 'opening' && actor() === BOT);
+    $('phases').innerHTML = phaseHtml();
+    $('themStrip').innerHTML = plateHtml(BOT, marks.summoner, false);
+    $('youStrip').innerHTML = plateHtml(HUMAN, false, marks.threat);
+    var g = '<div class="front" aria-hidden="true"></div>';
     for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += tileHtml(r, c, marks);
-    g += townHtml('them', 'Enemy town') + townHtml('you', 'Your town');
+    g += townHtml('them', 'Enemy town') + townHtml('you', 'Your town') + RUIN;
     $('grid').innerHTML = g;
     $('actions').innerHTML = actionsHtml(moves);
-    $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="prompt">Your hand is empty.</span>';
+    $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="empty">Your hand is empty.</span>';
+    fitHand();
+    $('result').innerHTML = resultHtml();
+    announceTurn();
     var log = $('log'), recent = S.log.slice(-40);
     log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + l.text + '</div>'; }).join('');
     log.scrollTop = log.scrollHeight;
@@ -251,7 +395,11 @@
   function apply(m) {
     if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'bottomCard') {
       var played = S.players[BOT].hand.filter(function (i) { return i.id === m.card; })[0];
-      if (played) showCard(played.c, 'The enemy played this');
+      if (played) {
+        $('inspect').classList.remove('left');
+        showCard(played.c, 'The enemy played this');
+        revealPeek(2200);
+      }
     }
     if (m.type === 'summon' || m.type === 'move') flash = [m.r, m.c]; else flash = null;
     S = E.applyMove(S, m);
@@ -307,38 +455,86 @@
     var m = selectedMoves(humanMoves()).filter(function (x) { return x.type === 'attackSummoner'; })[0];
     if (m) apply(m);
   });
-  $('actions').addEventListener('click', function (e) {
+  document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-do]');
     if (!b) return;
     var d = JSON.parse(b.getAttribute('data-do'));
+    if ($('menu').open) $('menu').close();
     if (d.move) return apply(d.move);
     if (d.ui === 'new') return start();
+    if (d.ui === 'decks') return showStart();
     if (d.ui === 'clear') sel = null;
     if (d.ui === 'ability') sel.ability = true;
     if (d.ui === 'noAbility') sel.ability = false;
     if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
     render();
   });
-  $('newGame').addEventListener('click', function () { start(); });
-  ['mouseover', 'focusin', 'click'].forEach(function (type) { document.querySelector('.field').addEventListener(type, peekFrom); });
+  ['mouseover', 'focusin', 'click'].forEach(function (type) { $('app').addEventListener(type, peekFrom); });
+  ['mouseout', 'focusout'].forEach(function (type) { $('app').addEventListener(type, peekAway); });
+  // One drawer at a time. Clicking the open drawer's button closes it.
+  function setDrawer(id) {
+    document.querySelectorAll('[data-panel]').forEach(function (b) {
+      var on = b.dataset.panel === id;
+      b.setAttribute('aria-expanded', on ? 'true' : 'false');
+      $(b.dataset.panel).classList.toggle('open', on);
+    });
+  }
+  document.querySelector('.tools').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-panel]');
+    if (b) setDrawer(b.getAttribute('aria-expanded') === 'true' ? null : b.dataset.panel);
+  });
+  $('menuBtn').addEventListener('click', function () { $('menu').showModal(); });
+  $('menu').addEventListener('click', function (e) { if (e.target.closest('[data-close]')) $('menu').close(); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
   $('inspect').addEventListener('click', closePeek);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePeek(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
+
+  function deckHtml(key, role) {
+    var d = E.DECKS[key], main = d.colours[0], on = picks[role] === key, count = 0, art = DECK_ART[key];
+    d.list.forEach(function (e) { count += e[1]; });
+    return '<button type="button" class="deck ' + main + '" data-role="' + role + '" data-deck="' + key + '" aria-pressed="' + on + '">' +
+      '<span class="pic">' + (noArt[art] ? '' : '<img src="' + artSrc(art) + '" alt="" draggable="false">') + '</span>' +
+      '<span class="nm">' + d.name + '</span>' +
+      '<span class="ty">' + d.colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + count + ' cards</span>' +
+      '<span class="ds">' + DECK_NOTES[key] + '</span></button>';
+  }
+  function renderStart() {
+    var keys = Object.keys(E.DECKS);
+    $('myDecks').innerHTML = keys.map(function (k) { return deckHtml(k, 'mine'); }).join('');
+    $('oppDecks').innerHTML = keys.map(function (k) { return deckHtml(k, 'opp'); }).join('');
+  }
+  function showStart() {
+    runToken++;
+    S = null;
+    $('app').hidden = true;
+    $('start').hidden = false;
+    renderStart();
+    $('begin').focus();
+  }
+  $('start').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-deck]');
+    if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
+    if (e.target.closest('#begin')) start();
+  });
 
   function start(state) {
     runToken++;
     sel = null; flash = null;
-    var mine = $('deckPick').value;
-    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: [mine, mine === 'white' ? 'red' : 'white'], first: Math.random() < 0.5 ? 0 : 1 });
+    $('start').hidden = true;
+    $('app').hidden = false;
+    lastTurn = null;
+    $('turnBanner').innerHTML = '';
+    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: [picks.mine, picks.opp], first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
     if (opening) showCard(opening.c, 'In your hand');
     render();
     schedule();
   }
 
-  function boot(data) { start(data && data.state); }
+  function boot(data) { if (data && data.state) start(data.state); else showStart(); }
   if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S }; });
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
   window.__game = { get state() { return S; }, load: start };
 })();
