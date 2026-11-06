@@ -28,7 +28,8 @@
     decoy: 'illusory-decoy', scholar: 'cloistered-scholar', arcanist: 'lantern-arcanist', chorister: 'brass-chorister', displacement: 'displacement', glyph: 'binding-glyph',
     thrall: 'gravebound-thrall', harvester: 'bone-harvester', noble: 'ashen-court-noble', vashkar: 'vashkar', raise: 'raise-the-dead', warrant: 'death-warrant',
     sapling: 'walking-sapling', saboteur: 'thornwarden-saboteur', owl: 'great-owl', wayfinder: 'wayfinder-druid', bull: 'elder-herd-bull', shifting: 'shifting-forest',
-    youngsummoner: 'young-summoner'
+    youngsummoner: 'young-summoner',
+    stillflame: 'the-still-flame', lampwright: 'light-without-an-answer', across: 'across-the-silence'
   };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
   var FLAVOUR = {
@@ -58,7 +59,8 @@
     bull: { line: "The herd doesn't go around." },
     shifting: { line: 'The path was here yesterday.' },
     youngsummoner: { line: 'She has worn long sleeves since she was nine.' },
-    land_g: { line: 'Something green is growing through the throne room floor.' }
+    land_g: { line: 'Something green is growing through the throne room floor.' },
+    across: { line: 'It has never once gone slack.' }
   };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
@@ -172,10 +174,10 @@
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
       else if (m.type === 'attack') marks.units[m.target] = 't-attack';
       else if (m.type === 'attackSummoner') marks.summoner = true;
-      else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 ? 't-buff' : 't-attack';
+      else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 || cardOf(sel.id).allyOnly ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' ? 't-buff' : 't-attack';
+        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' || ab.key === 'lens' ? 't-buff' : 't-attack';
       }
     });
     return marks;
@@ -324,14 +326,14 @@
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
         else if (place) hint = 'Choose a highlighted tile in your back row.';
         else if (ench) hint = 'Choose a unit to enchant.';
-        else if (c.type === 'spell') hint = sm.length ? 'Choose a unit to return.' : "You can't cast this right now.";
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.draw ? 'Cast this spell.' : 'Choose a unit to return.';
         else if (c.type !== 'land') hint = 'Not enough mana to play this now.';
         else hint = you.landDropped ? 'You already played a land this turn.' : 'Play this land.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
           if (m.type === 'cast') {
             var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
-            out.push(btn('Return ' + E.CARDS[back.c].name, { move: m }, true));
+            out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : 'Cast', { move: m }, true));
           }
         });
         out.push(btn('Cancel', { ui: 'clear' }));

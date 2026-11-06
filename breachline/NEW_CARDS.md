@@ -76,6 +76,16 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 | --- | --- | --- | --- | --- | --- | --- |
 | Young summoner | Unit | 2 | 0 | 20 / 30 | | She has worn long sleeves since she was nine. |
 
+## Cards made from concept art
+
+These use paintings from `art/concepts/`, which remain concept pieces and don't add to the setting's canon.
+
+| Card | Art | Alignment | Type | Cost | Wants | Stats | Rules |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| The Still Flame | `the-still-flame.png` | Vigil | Enchantment | 2 | 1 | | Enchant one of your units: it recovers 15 health at the start of your turn |
+| Ambrel lampwright | `light-without-an-answer.png` | Gnosis | Unit | 3 | 1 | 20 / 40 | Ability: an adjacent ally can attack up to 2 tiles away this turn |
+| Across the silence | `across-the-silence.png` | Neutral | Spell | 4 | 0 | | Draw two cards |
+
 ## New lands
 
 | Land | Alignment | Line |

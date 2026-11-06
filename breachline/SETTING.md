@@ -122,7 +122,7 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 | Vigil | The Sunmane Oath | Fights to restore the empire, and holds itself to the old oaths |
 | Vigil | The Still Flame | Priests and healers trying to reach the silent gods |
 | Gnosis | The Lantern Conclave | Scholars of magic in the cities |
-| Gnosis | The Brass Choir | Makers and engineers, and the source of Genesis's fear of industry |
+| Gnosis | The Artificers | Makers and engineers, and the source of Genesis's fear of industry |
 | Dominion | The Ashen Court | Those building the new, dark order |
 | Dominion | The Gravebound | Those who want the slide into utter ruin to finish |
 | Fervor | The Warhorde | Goblin, orc and giant bands that follow strength |

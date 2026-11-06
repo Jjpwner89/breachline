@@ -20,12 +20,22 @@ Lines are tracked here. As of 2026-11-05 every line with a matching card is on t
 | Oath knight | No one ordered her to stay. | |
 | Sunmane lancer | Some mornings, the ride is only a ride. | |
 | Withering hex | She stopped praying before the rust reached the hilt. | |
+| Across the silence | It has never once gone slack. | |
 
 ## Saved for a future card
 
 | Card | Line |
 | --- | --- |
 | A mercenary captain (not an orc) | We chose him at dawn. We can choose again by dusk. |
+
+## Awaiting a verdict: concept art cards
+
+These stay off the cards until the creator approves them.
+
+| Card | Line |
+| --- | --- |
+| The Still Flame | No one remembers being asked to keep it lit. |
+| Ambrel lampwright | No one prayed for it. It came on anyway. |
 
 ## General style test
 
@@ -57,5 +67,5 @@ The creator liked these as a group and didn't object to any. They aren't tied to
 
 These are undefined on purpose and can be normalized later. Up to about 4 lines in every 20 to 30 can use one.
 
-- **Places:** Sallow Bridge
+- **Places:** Sallow Bridge, Ambrel (a city, used in the name of Ambrel lampwright)
 - **People:** Grusha
