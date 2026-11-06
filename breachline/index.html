@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Breachline</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -151,6 +155,7 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
   .setup { margin-left: 0; }
 }
 </style>
+<link rel="stylesheet" href="screens.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="sym-W" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4M4.2 4.2l2.9 2.9M16.9 16.9l2.9 2.9M4.2 19.8l2.9-2.9M16.9 7.1l2.9-2.9" fill="none" stroke-width="2.4" stroke-linecap="round"/></symbol>
@@ -160,16 +165,15 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
   <symbol id="sym-U" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" fill="none" stroke-width="2.4"/><circle cx="12" cy="12" r="3.6"/></symbol>
 </svg>
 
-<div class="app">
+<div class="screen" id="screen" hidden></div>
+
+<div class="app" id="app" hidden>
   <header>
     <h1>Breachline</h1>
     <span id="turnLabel"></span>
     <div class="setup">
-      <label for="deckPick">Your deck</label>
-      <select id="deckPick"><option value="white">Oath of the Sunmane</option><option value="red">The Warhorde</option><option value="blue">The Lantern Conclave</option><option value="black">The Ashen Court</option><option value="green">The Elder Herd</option></select>
-      <label for="oppPick">Opponent</label>
-      <select id="oppPick"><option value="white">Oath of the Sunmane</option><option value="red" selected>The Warhorde</option><option value="blue">The Lantern Conclave</option><option value="black">The Ashen Court</option><option value="green">The Elder Herd</option></select>
       <button class="btn" id="newGame" type="button">New game</button>
+      <button class="btn" id="toMenu" type="button">Main menu</button>
     </div>
   </header>
   <div class="table">
@@ -209,4 +213,6 @@ select, .btn { background: var(--felt); border: 1px solid var(--line); border-ra
 
 <script src="engine.js"></script>
 <script src="bot.js"></script>
+<script src="decks.js"></script>
+<script src="screens.js"></script>
 <script src="ui.js"></script>

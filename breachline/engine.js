@@ -66,6 +66,33 @@ var Engine = (function () {
     green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 9], ['land_r', 2], ['sapling', 2], ['saboteur', 2], ['owl', 1], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
   };
 
+  // Draft assignments, from the faction table in SETTING.md and the art briefs. A card that isn't listed has no faction.
+  var FACTIONS = [
+    { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner'] },
+    { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric'] },
+    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph'] },
+    { id: 'brass', name: 'The Brass Choir', colour: 'U', cards: ['chorister'] },
+    { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant'] },
+    { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise'] },
+    { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'sellsword', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex'] },
+    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain'] },
+    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting'] },
+    { id: 'herd', name: 'The Elder Herd', colour: 'G', cards: ['owl', 'bull'] }
+  ];
+  FACTIONS.forEach(function (f) { f.cards.forEach(function (id) { CARDS[id].faction = f.id; }); });
+
+  // 40 is the planned size. 24 stays legal so the current starter decks still count.
+  var DECK_MIN = 24, DECK_MAX = 40, MAX_COPIES = 3;
+  function maxCopies(id) { return CARDS[id].type === 'land' ? Infinity : MAX_COPIES; }
+  function deckSize(list) { return list.reduce(function (n, e) { return n + e[1]; }, 0); }
+  function deckProblems(list) {
+    var size = deckSize(list), out = [];
+    if (size < DECK_MIN) out.push('Needs ' + (DECK_MIN - size) + ' more card' + (DECK_MIN - size === 1 ? '' : 's'));
+    if (size > DECK_MAX) out.push('Has ' + (size - DECK_MAX) + ' too many');
+    list.forEach(function (e) { if (e[1] > maxCopies(e[0])) out.push('Too many copies of ' + CARDS[e[0]].name); });
+    return out;
+  }
+
   function rand(s) {
     s.seed = (s.seed + 0x6D2B79F5) | 0;
     var t = Math.imul(s.seed ^ (s.seed >>> 15), 1 | s.seed);
@@ -114,7 +141,7 @@ var Engine = (function () {
       players: [mkPlayer(opts.decks[0]), mkPlayer(opts.decks[1])]
     };
     s.players.forEach(function (p, idx) {
-      DECKS[p.deckKey].list.forEach(function (e) {
+      deckOf(opts.decks[idx]).list.forEach(function (e) {
         for (var i = 0; i < e[1]; i++) p.deck.push({ id: s.nextId++, c: e[0] });
       });
       shuffle(s, p.deck);
@@ -125,7 +152,9 @@ var Engine = (function () {
     s.phase = 'opening';
     return s;
   }
-  function mkPlayer(key) { return { deckKey: key, name: DECKS[key].name, deck: [], hand: [], discard: [], lands: [], mana: 0, life: START_LIFE, landDropped: false, extraLands: 0, redraws: 0, toBottom: 0, kept: false }; }
+  // A deck is a key into DECKS or a built deck: { name, list }.
+  function deckOf(d) { return typeof d === 'string' ? DECKS[d] : d; }
+  function mkPlayer(d) { return { deckKey: typeof d === 'string' ? d : null, name: deckOf(d).name, deck: [], hand: [], discard: [], lands: [], mana: 0, life: START_LIFE, landDropped: false, extraLands: 0, redraws: 0, toBottom: 0, kept: false }; }
 
   function say(s, text) { s.log.push({ turn: s.turn, text: text }); }
 
@@ -567,7 +596,8 @@ var Engine = (function () {
   }
 
   return {
-    ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS,
+    ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS,
+    DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
     attackOf: attackOf, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
   };

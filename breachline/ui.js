@@ -1,6 +1,6 @@
 // Board UI. The human is always player 0 and sits at the bottom; every click ends in an Engine.legalMoves entry.
 (function () {
-  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null;
+  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, decks = null;
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
@@ -60,6 +60,7 @@
       noArt[id] = true;
       clearTimeout(artRedraw);
       artRedraw = setTimeout(function () {
+        Screens.redraw();
         if (!S) return;
         var open = peek;
         peek = null;
@@ -70,6 +71,8 @@
     im.src = artSrc(id);
     return im;
   });
+
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
@@ -102,7 +105,7 @@
     var tag = targetable ? 'button type="button" data-summoner="1"' : 'div';
     var close = targetable ? 'button' : 'div';
     return '<' + tag + ' class="summoner ' + (pi === HUMAN ? 'you' : 'them') + (targetable ? ' target' : '') + '" id="summoner' + pi + '">' +
-      '<b>' + label + '</b><span class="life">' + p.life + '</span><span class="count">' + counts + '</span></' + close + '>';
+      '<b>' + esc(label) + '</b><span class="life">' + p.life + '</span><span class="count">' + counts + '</span></' + close + '>';
   }
 
   function tileHtml(r, c, marks) {
@@ -185,9 +188,9 @@
       frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</button>';
   }
 
-  // Hand cards have little room, so a line that doesn't fit is left for the close-up, and rules text that still doesn't fit gets smaller.
-  function fitHand() {
-    Array.prototype.forEach.call($('hand').querySelectorAll('.ctext'), function (t) {
+  // Small cards have little room, so a line that doesn't fit is left for the close-up, and rules text that still doesn't fit gets smaller.
+  function fitCards(host) {
+    Array.prototype.forEach.call(host.querySelectorAll('.ctext'), function (t) {
       var f = t.querySelector('.flavour');
       if (f && t.scrollHeight > t.clientHeight) t.removeChild(f);
       if (t.scrollHeight > t.clientHeight) t.classList.add('tight');
@@ -314,9 +317,9 @@
     $('grid').innerHTML = g;
     $('actions').innerHTML = actionsHtml(moves);
     $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="prompt">Your hand is empty.</span>';
-    fitHand();
+    fitCards($('hand'));
     var log = $('log'), recent = S.log.slice(-40);
-    log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + l.text + '</div>'; }).join('');
+    log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + esc(l.text) + '</div>'; }).join('');
     log.scrollTop = log.scrollHeight;
     floats();
   }
@@ -393,6 +396,11 @@
     render();
   });
   $('newGame').addEventListener('click', function () { start(); });
+  $('toMenu').addEventListener('click', function () {
+    runToken++;
+    $('app').hidden = true;
+    Screens.menu();
+  });
   ['mouseover', 'focusin', 'click'].forEach(function (type) { document.querySelector('.field').addEventListener(type, peekFrom); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
   $('inspect').addEventListener('click', closePeek);
@@ -401,18 +409,29 @@
   function start(state) {
     runToken++;
     sel = null; flash = null;
-    var mine = $('deckPick').value;
-    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: [mine, $('oppPick').value], first: Math.random() < 0.5 ? 0 : 1 });
+    if (!state && !decks) { $('app').hidden = true; return Screens.menu(); }
+    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
     if (opening) showCard(opening.c, 'In your hand');
     render();
     schedule();
   }
 
-  function boot(data) { start(data && data.state); }
+  function boot(data) {
+    if (!data || !data.state) return Screens.menu();
+    $('app').hidden = false;
+    start(data.state);
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
+  window.__game = { get state() { return S; }, load: start };
+  window.GameUI = {
+    frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
+    artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
+    play: function (mine, opp) { decks = [mine, opp]; $('app').hidden = false; start(); },
+    inProgress: function () { return !!S && S.winner === null; },
+    resume: function () { $('app').hidden = false; render(); schedule(); }
+  };
   if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S }; });
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(render);
-  window.__game = { get state() { return S; }, load: start };
 })();
