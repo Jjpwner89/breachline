@@ -51,7 +51,7 @@ From 400 simulated runs with the scripted bot on both sides, picking rewards at 
 | The fallow field | 46% | 20.3 |
 | The shrine steps | 24% | 20.9 |
 
-Only 7 of the 400 runs won every battle. No person has played a full run yet, and the bot plays the Vigil deck weakly, so these numbers only compare the chapters. The lower gate is easier than the two before it, and the bot rarely uses sacrifices well, which makes both Dominion chapters easier than they would be under Claude. Claude opponents haven't been tried in a run, only the fallback to the bot.
+Only 7 of the 400 runs won every battle. No person has played a full run yet, and the bot plays the Vigil deck weakly, so these numbers only compare the chapters. The lower gate is easier than the pass before it, and the bot rarely uses sacrifices well, which makes both Dominion chapters easier than they would be under Claude. Claude opponents haven't been tried in a run, only the fallback to the bot.
 
 ## Still to do
 
