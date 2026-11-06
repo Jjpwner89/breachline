@@ -21,9 +21,9 @@ Take the world seriously, but vary the mood. Lines can be hopeful, proud, warm o
 - **Vary the emotion across a batch.** Mix cold, warm, funny, proud, hopeful and sad lines. The creator especially liked this variety.
 - **Stay off the nose.** Don't have characters talk directly about the Empire or the gods' silence just to show the setting. Let the setting show up sideways, or not at all.
 - **Use names sparingly.** A line can refer to a place or person that isn't defined anywhere, which makes the world feel larger, but the creator found a batch with a name on most lines too much. Aim for up to about 4 lines in every 20 to 30, and list each name in `breachline/FLAVOUR.md` so it can be normalized later.
-- **Go shorter than feels safe.** The creator's favourites are often one short sentence or two very short ones. They also cut a line down to its first sentence more than once.
+- **Go shorter than feels safe.** The creator's favourites are often one short sentence or two very short ones. They also cut a line down to its first sentence more than once, and sometimes keep only the second, as with "Six years on this ferry. I still don't know if it likes me." So test deleting the setup as well as the ending.
 - **Vary the structure.** Specific numbers work well, but don't let every line depend on one.
-- **Leave cards blank when nothing is good enough.** Not every card needs a line, and few lands do.
+- **Leave cards blank when nothing is good enough.** Not every card needs a line, and few lands do. In one batch of ten, the creator kept lines for four and left six blank.
 
 - Keep it to one or two sentences, and usually under 18 words, because the card has little room.
 - Add something the art and rules don't already say. Restating the ability wastes the space.

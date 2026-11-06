@@ -66,7 +66,11 @@
     shifting: { line: 'The path was here yesterday.' },
     youngsummoner: { line: 'She has worn long sleeves since she was nine.' },
     land_g: { line: 'Something green is growing through the throne room floor.' },
-    across: { line: 'It has never once gone slack.' }
+    across: { line: 'It has never once gone slack.' },
+    marble: { line: 'Give it time.' },
+    dawnsails: { line: 'My grandfather saw one once.' },
+    mending: { line: "I still don't know if it likes me." },
+    coalback: { line: 'Count your coals.' }
   };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.

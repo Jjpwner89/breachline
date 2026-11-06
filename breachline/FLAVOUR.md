@@ -21,6 +21,10 @@ Lines are tracked here. As of 2026-11-05 every line with a matching card is on t
 | Sunmane lancer | Some mornings, the ride is only a ride. | |
 | Withering hex | She stopped praying before the rust reached the hilt. | |
 | Across the silence | It has never once gone slack. | |
+| Through the marble | Give it time. | |
+| Dawnsails over the harvest | My grandfather saw one once. | |
+| Mending the sail | I still don't know if it likes me. | |
+| Coalback forager | Count your coals. | |
 
 ## Saved for a future card
 
@@ -60,6 +64,7 @@ The creator liked these as a group and didn't object to any. They aren't tied to
 
 - **Firebolt:** "She said one word. The captain's horse ran on alone." The creator thought it was good but didn't want to keep it.
 - **Pride warden:** none of the drafts worked, so this card has no flavour text.
+- **Second concept art batch:** the creator chose no line for Winter shelter, Raincup at first light, Clearing the channel, Dawnsail passage, Slateprowler or Reedcrown grazer, so those cards have no flavour text.
 - **Sunlit plains, Lantern quarter:** lands don't need much flavour text.
 - **Older drafts** of most cards above, usually for being on the nose, too long or too reliant on named places.
 
