@@ -166,7 +166,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 #hand { flex: 1; min-width: 0; display: flex; justify-content: center; gap: 8px; padding-top: 5px; }
 .card { flex: 0 1 var(--cw); min-width: 0; padding: 0; border: 0; background: none; text-align: left; position: relative; color: inherit; }
 .card:last-child { flex-shrink: 0; }
-.cslot { display: block; width: var(--cw); container-type: inline-size; transform-origin: bottom center; transition: transform .13s ease-out; }
+.cslot { display: block; width: var(--cw); container-type: inline-size; transform-origin: bottom center; transition: transform .14s ease-out; }
 .card:first-child .cslot { transform-origin: bottom left; }
 .card:last-child .cslot { transform-origin: bottom right; }
 .card.dim .frame { filter: saturate(.5) brightness(.62); }
@@ -176,7 +176,8 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .card.selected .frame { box-shadow: 0 0 0 3px var(--ivory), 0 0 18px var(--gold-pale); }
 @media (hover: hover) {
   .card:hover, .card:focus-visible { z-index: 6; outline: 0; }
-  .card:hover .cslot, .card:focus-visible .cslot { transform: translateY(-34px) scale(1.5); }
+  /* A short wait before a hand card rises, so sweeping across the hand doesn't set them all off. It drops back quickly. */
+  .card:hover .cslot, .card:focus-visible .cslot { transform: translateY(-34px) scale(1.5); transition: transform .24s ease-out .2s; }
   .card.dim:hover .frame, .card.dim:focus-visible .frame { filter: saturate(.8) brightness(.95); }
 }
 .empty { align-self: center; color: var(--muted); }
@@ -209,7 +210,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .inspect { display: none; position: absolute; z-index: 20; top: 10px; right: 12px; width: min(290px, calc((100cqh - 44px) / 1.42)); opacity: 0; transition: opacity .1s; pointer-events: none; }
 @media (min-width: 821px) { .inspect { display: block; } }
 .inspect.left { right: auto; left: 12px; }
-.inspect.show { opacity: 1; }
+.inspect.show { opacity: 1; transition: opacity .2s ease-out .22s; }
 .inspect .slot { container-type: inline-size; filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .8)); }
 .inspect .note { margin: 6px 0 0; text-align: center; font-size: 13px; line-height: 1.2; color: var(--ink); text-shadow: 0 1px 3px #000; }
 #peekBtn { display: none; }
@@ -325,7 +326,7 @@ dialog .btns { justify-content: flex-start; }
 @media (prefers-reduced-motion: reduce) {
   .tile.flash, .hit, .float, .plate.target, .tile.t-threat, #turnBanner { animation: none; }
   #turnBanner { display: none; }
-  .cslot, .deck, .drawer, .inspect { transition: none; }
+  .cslot, .card:hover .cslot, .card:focus-visible .cslot, .deck, .drawer, .inspect, .inspect.show { transition: none; }
 }
 </style>
 
