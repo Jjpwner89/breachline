@@ -257,6 +257,69 @@ function randomField(r, ids) {
   if (kept === null) localStorage.removeItem(KEY); else localStorage.setItem(KEY, kept);
 })();
 
+// Crafted fights for rules a bot game rarely reaches.
+(function rulesTest() {
+  function arena(decks) {
+    var s = E.newGame({ seed: 5, decks: decks || ['white', 'red'], first: 0 });
+    s.phase = 'command'; s.active = 0; s.pending = null; s.units = []; s.turn = 9;
+    s.players.forEach(function (p) { p.hand = []; p.mana = 9; p.lands = []; });
+    return s;
+  }
+  function put(s, id, owner, r, c) {
+    var d = E.CARDS[id], u = { uid: s.nextId++, inst: 0, cardId: id, owner: owner, r: r, c: c, hp: d.hp, maxHp: d.hp, tempAtk: 0, boost: 0, growth: 0, enchants: [], moved: true, acted: false, summonedTurn: 0 };
+    s.units.push(u);
+    return u;
+  }
+  function byUid(s, u) { return s.units.filter(function (x) { return x.uid === u.uid; })[0]; }
+
+  var s = arena(), knight = put(s, 'knight', 0, 1, 1), target = put(s, 'cleric', 1, 1, 2);
+  check('a plain hit is the attack value', E.hitOn(s, knight, target) === 3);
+  var guard = put(s, 'sentinel', 1, 0, 2);
+  check('Guard shows in the hit', E.hitOn(s, knight, target) === 2);
+  target.enchants.push({ id: 900, c: 'shelter', owner: 1 });
+  check('Winter shelter adds to Guard', E.hitOn(s, knight, target) === 0);
+  s.units = s.units.filter(function (u) { return u !== guard; });
+  target.enchants = [];
+  check('prevented damage comes off first', E.hitOn(s, knight, target, 2) === 1);
+  var fight = E.applyMove(s, { type: 'attack', unit: knight.uid, target: target.uid });
+  check('the hit shown is the hit taken', byUid(fight, target).hp === target.maxHp - E.hitOn(s, knight, target));
+
+  // Overrun carries on past the target at any range, in line with the shot.
+  s = arena(); var bull = put(s, 'bull', 0, 3, 2), goblin = put(s, 'goblin', 1, 1, 2), behind = put(s, 'giant', 1, 0, 2), wrong = put(s, 'giant', 1, 2, 2);
+  s.units = s.units.filter(function (u) { return u !== wrong; });
+  bull.tempRange = true;
+  fight = E.applyMove(s, { type: 'attack', unit: bull.uid, target: goblin.uid });
+  check('Overrun at 2 tiles hits the tile behind the target', byUid(fight, behind).hp === behind.maxHp - (E.CARDS.bull.atk - goblin.hp));
+  s = arena(); bull = put(s, 'bull', 0, 2, 1); goblin = put(s, 'goblin', 1, 1, 2); behind = put(s, 'giant', 1, 0, 2); wrong = put(s, 'giant', 1, 0, 3);
+  bull.tempRange = true;
+  fight = E.applyMove(s, { type: 'attack', unit: bull.uid, target: goblin.uid });
+  check('Overrun on a diagonal shot goes along the row', byUid(fight, behind).hp < behind.maxHp && byUid(fight, wrong).hp === wrong.maxHp);
+
+  // Displacement on the lance's second target only clears that hit.
+  s = arena(['white', 'blue']); var lancer = put(s, 'lancer', 0, 2, 2), front = put(s, 'giant', 1, 1, 2), rear = put(s, 'giant', 1, 0, 2);
+  s.players[1].hand = [{ id: 901, c: 'displacement' }];
+  var pending = E.applyMove(s, { type: 'ability', unit: lancer.uid, target: front.uid });
+  var dodges = E.legalMoves(pending).filter(function (m) { return m.type === 'respond' && m.target === rear.uid; });
+  check('the unit behind the lance can use Displacement', dodges.length > 0);
+  fight = E.applyMove(pending, dodges[0]);
+  check('it escapes while the main target is still hit', byUid(fight, rear).hp === rear.maxHp && byUid(fight, front).hp < front.maxHp && byUid(fight, rear).r === dodges[0].r && byUid(fight, rear).c === dodges[0].c);
+  var mainDodge = E.legalMoves(pending).filter(function (m) { return m.type === 'respond' && m.target === front.uid; })[0];
+  fight = E.applyMove(pending, mainDodge);
+  check('Displacement on the main target still misses the whole attack', byUid(fight, front).hp === front.maxHp && byUid(fight, rear).hp === rear.maxHp);
+
+  // Deck names that match a card, or each other, stay out of unit lines in a prompt.
+  var named = { name: 'Cinder Clan raiders', colours: ['R'], list: E.DECKS.red.list };
+  s = arena([named, named]);
+  var raiders = put(s, 'clanraiders', 1, 1, 2), hitter = put(s, 'dragon', 0, 1, 1);
+  s.players[0].hand = [{ id: 902, c: 'land_r' }]; s.phase = 'play';
+  s = E.applyMove(s, { type: 'playLand', card: 902 });
+  s.phase = 'command';
+  s = E.applyMove(s, { type: 'attack', unit: hitter.uid, target: raiders.uid });
+  var v = E.viewFor(s, 1), prompt = AI.turnPrompt(v, 'normal');
+  check('a unit named like a deck stays a unit in the prompt', prompt.indexOf('Cinder Clan raiders is destroyed') >= 0 && prompt.indexOf('Your side is destroyed') < 0, prompt.split('\n').filter(function (l) { return /destroyed/.test(l); }).join(' / '));
+  check('matching deck names are told apart', prompt.indexOf('The enemy plays Cinder peaks') >= 0 && prompt.indexOf('Your side plays Cinder peaks') < 0);
+})();
+
 document.getElementById('out').textContent = results.join('\n');
 window.__results = results;
 </script>

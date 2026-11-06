@@ -7,12 +7,15 @@ var Bot = (function () {
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
   function attackScore(s, u, t, extra) {
-    var amt = E.attackAgainst(s, u, t), score = 0;
+    var amt = E.hitOn(s, u, t), score = 0;
     if (amt >= t.hp) score += worth(t) + 30;
     else score += worth(t) * (amt / t.maxHp);
-    if (extra) score += amt >= extra.hp ? worth(extra) + 30 : worth(extra) * (amt / extra.maxHp);
+    if (extra) {
+      var side = E.hitOn(s, u, extra);
+      score += side >= extra.hp ? worth(extra) + 30 : worth(extra) * (side / extra.maxHp);
+    }
     if (amt < t.hp && dist(u, t) <= E.range(t)) {
-      var back = E.attackAgainst(s, t, u);
+      var back = E.hitOn(s, t, u);
       score -= back >= u.hp ? worth(u) + 10 : worth(u) * (back / u.maxHp);
     }
     return score + 10;
@@ -105,17 +108,17 @@ var Bot = (function () {
           if (e.owner !== foe) return;
           var d = dist(here, e);
           if (d <= E.range(u)) bonus = Math.max(bonus, attackScore(s, u, e) / 2);
-          if (d === 1 && E.attackOf(s, e) >= u.hp) bonus -= 8;
+          if (d === 1 && E.hitOn(s, e, u) >= u.hp) bonus -= 8;
         });
         return 12 + gain * 12 + bonus;
       case 'respond':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         var att = s.pending.attack;
-        if (c.dodge) return E.attackAgainst(s, unitById(s, att.attacker), t) >= t.hp ? worth(t) : -1;
+        if (c.dodge) return E.hitOn(s, unitById(s, att.attacker), t) >= t.hp ? worth(t) : -1;
         if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
         if (c.prevent) {
-          var hit = E.attackAgainst(s, unitById(s, att.attacker), t);
-          return hit >= t.hp && hit - c.prevent < t.hp ? worth(t) : -1;
+          var striker = unitById(s, att.attacker);
+          return E.hitOn(s, striker, t) >= t.hp && E.hitOn(s, striker, t, c.prevent) < t.hp ? worth(t) : -1;
         }
         if (c.damage >= t.hp) return worth(t) + (att && att.attacker === t.uid ? 30 : 0);
         return att ? -1 : 5;

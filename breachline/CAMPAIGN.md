@@ -45,12 +45,12 @@ From 300 simulated runs on 2026-11-06, after the small-number merge, with the sc
 
 | Chapter | Bot on your side wins | Average turns |
 | --- | --- | --- |
-| The ford | 52% | 21.4 |
-| The closed road | 39% | 20.7 |
-| The pass | 39% | 20.7 |
-| The lower gate | 34% | 23.8 |
-| The fallow field | 41% | 21.4 |
-| The shrine steps | 39% | 21.9 |
+| The ford | 53% | 21.3 |
+| The closed road | 34% | 20.3 |
+| The pass | 37% | 20.4 |
+| The lower gate | 32% | 23.6 |
+| The fallow field | 40% | 21.1 |
+| The shrine steps | 38% | 21.6 |
 
 Only 2 of the 300 runs won every battle. Enemy decks dropped to 8 or 9 lands in that merge, so they play more spells and the first chapter is harder than it was (69% before). The shrine steps also got easier (24% before), so the climb is flatter than intended. No person has played a full run on these numbers, and the bot plays the Vigil deck weakly and rarely uses sacrifices well, so these numbers only compare the chapters.
 

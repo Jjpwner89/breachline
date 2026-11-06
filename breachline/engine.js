@@ -151,6 +151,9 @@ var Engine = (function () {
     return Math.max(0, amt - cover - (safe ? 1 : 0));
   }
 
+  // What an attack would actually take off a target, after Guard, Winter shelter and any instant that prevents damage.
+  function hitOn(s, a, t, prevent) { return guarded(s, t, Math.max(0, attackAgainst(s, a, t) - (prevent || 0))); }
+
   // Soft coloured mana: each land short of what the card wants adds 1 to its cost.
   function costOf(s, p, c) {
     var have = s.players[p].lands.filter(function (l) { return l.colour === c.colour; }).length;
@@ -160,7 +163,7 @@ var Engine = (function () {
   function newGame(opts) {
     var s = {
       seed: (opts.seed === undefined ? 1 : opts.seed) | 0, turn: 0, active: opts.first || 0, phase: 'play',
-      winner: null, pending: null, nextId: 1, units: [], log: [], fx: [],
+      winner: null, pending: null, nextId: 1, units: [], log: [], logMarked: true, fx: [],
       players: [mkPlayer(opts.decks[0]), mkPlayer(opts.decks[1])]
     };
     s.players.forEach(function (p, idx) {
@@ -179,13 +182,19 @@ var Engine = (function () {
   function deckOf(d) { return typeof d === 'string' ? DECKS[d] : d; }
   function mkPlayer(d) { return { deckKey: typeof d === 'string' ? d : null, name: deckOf(d).name, colour: (deckOf(d).colours || deckColours(deckOf(d).list))[0] || 'N', deck: [], hand: [], discard: [], lands: [], mana: 0, life: START_LIFE, landDropped: false, extraLands: 0, redraws: 0, toBottom: 0, bonusMana: 0, kept: false }; }
 
-  function say(s, text) { s.log.push({ turn: s.turn, text: text }); }
+  // A player's name goes into the log marked, so a prompt can swap it reliably even if a deck is named after a card or both decks match.
+  function mark(s, p) { return '\u0001' + s.players.indexOf(p) + '\u0002'; }
+  function say(s, text) {
+    var entry = { turn: s.turn, text: text.replace(/\u0001(\d)\u0002/g, function (x, i) { return s.players[+i].name; }) };
+    if (entry.text !== text) entry.marked = text;
+    s.log.push(entry);
+  }
 
   // Each player keeps or redraws in turn, first player first, then turn 1 begins.
   function finishOpening(s) {
     var p = s.players[s.active];
     p.kept = true;
-    say(s, p.name + ' keeps ' + p.hand.length + ' cards.');
+    say(s, mark(s, p) + ' keeps ' + p.hand.length + ' cards.');
     if (!s.players[1 - s.active].kept) { s.active = 1 - s.active; return; }
     s.active = 1 - s.firstPlayer;
     startTurn(s);
@@ -231,7 +240,7 @@ var Engine = (function () {
     if (!p.deck.length && p.discard.length) {
       p.deck = p.discard; p.discard = [];
       shuffle(s, p.deck);
-      say(s, p.name + ' reshuffled their discards.');
+      say(s, mark(s, p) + ' reshuffled their discards.');
     }
     if (p.deck.length) p.hand.push(p.deck.pop());
   }
@@ -285,11 +294,14 @@ var Engine = (function () {
           if (u.owner === s.active && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
         });
       } else if (c.dodge) {
-        var dodger = kind === 'attack' && attack && attack.targetUid ? unitById(s, attack.targetUid) : null;
-        if (!dodger) return;
-        [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(function (d) {
-          var r = dodger.r + d[0], col = dodger.c + d[1], key = i.c + ':' + r + ',' + col;
-          if (emptyTile(s, r, col) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: dodger.uid, r: r, c: col }); }
+        if (kind !== 'attack' || !attack) return;
+        [attack.targetUid, attack.secondaryUid].forEach(function (uid) {
+          var dodger = uid ? unitById(s, uid) : null;
+          if (!dodger) return;
+          [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(function (d) {
+            var r = dodger.r + d[0], col = dodger.c + d[1], key = i.c + ':' + uid + ':' + r + ',' + col;
+            if (emptyTile(s, r, col) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: uid, r: r, c: col }); }
+          });
         });
       } else if (c.shove && kind === 'end') {
         s.units.forEach(function (u) {
@@ -439,14 +451,14 @@ var Engine = (function () {
       var def = s.players[att.summoner];
       def.life -= amt;
       s.fx.push({ summoner: att.summoner, text: '-' + amt });
-      say(s, name + ' hits ' + def.name + ' for ' + amt + '.');
+      say(s, name + ' hits ' + mark(s, def) + ' for ' + amt + '.');
       drain(s, a, amt);
-      if (def.life <= 0) { def.life = 0; s.winner = a.owner; say(s, s.players[a.owner].name + ' wins.'); }
+      if (def.life <= 0) { def.life = 0; s.winner = a.owner; say(s, mark(s, s.players[a.owner]) + ' wins.'); }
       return;
     }
     var t = unitById(s, att.targetUid), b = att.secondaryUid ? unitById(s, att.secondaryUid) : null, over = null;
     function strike(u, verb) {
-      var hit = guarded(s, u, Math.max(0, attackAgainst(s, a, u) - (att.shield === u.uid ? att.prevent : 0))), before = u.hp;
+      var hit = hitOn(s, a, u, att.shield === u.uid ? att.prevent : 0), before = u.hp;
       damage(s, u, hit);
       say(s, verb + CARDS[u.cardId].name + ' for ' + hit + '.');
       drain(s, a, Math.min(hit, before));
@@ -455,7 +467,9 @@ var Engine = (function () {
     if (t) {
       strike(t, name + ' hits ');
       if (t.hp < 0 && hasKw(a, 'Overrun')) {
-        over = unitAt(s, t.r + (t.r - a.r), t.c + (t.c - a.c));
+        // Behind means one tile on from the target, whatever the range. A diagonal shot counts along the row.
+        var dr = t.r === a.r ? 0 : t.r > a.r ? 1 : -1, dc = dr ? 0 : t.c > a.c ? 1 : -1;
+        over = unitAt(s, t.r + dr, t.c + dc);
         if (over && over.owner !== a.owner) {
           var excess = guarded(s, over, -t.hp);
           damage(s, over, excess);
@@ -468,7 +482,7 @@ var Engine = (function () {
     // Only a survivor strikes back, and only if the attacker is within its range.
     if (t && t.hp > 0) {
       if (dist(a, t) <= range(t)) {
-        var back = guarded(s, a, attackAgainst(s, t, a)), had = a.hp;
+        var back = hitOn(s, t, a), had = a.hp;
         damage(s, a, back);
         say(s, CARDS[t.cardId].name + ' strikes back for ' + back + '.');
         drain(s, t, Math.min(back, had));
@@ -502,7 +516,7 @@ var Engine = (function () {
         i = takeFromHand(p, m.card); c = card(i);
         p.lands.push({ colour: c.colour, id: i.id, c: i.c }); p.mana += 1;
         if (p.landDropped) p.extraLands -= 1; else p.landDropped = true;
-        say(s, p.name + ' plays ' + c.name + '.');
+        say(s, mark(s, p) + ' plays ' + c.name + '.');
         break;
       // Opening hands work like a London mulligan: every redraw is a full new hand, then one card goes to the bottom on keeping.
       case 'redraw':
@@ -511,7 +525,7 @@ var Engine = (function () {
         p.hand = [];
         shuffle(s, p.deck);
         for (var d = 0; d < OPENING_HAND; d++) p.hand.push(p.deck.pop());
-        say(s, p.name + ' redraws their opening hand.');
+        say(s, mark(s, p) + ' redraws their opening hand.');
         break;
       case 'keepHand':
         p.toBottom = p.redraws;
@@ -526,13 +540,13 @@ var Engine = (function () {
         i = takeFromHand(p, m.card); c = card(i);
         p.mana -= costOf(s, pi, c);
         s.units.push(newUnit(s, i.id, i.c, pi, m.r, m.c));
-        say(s, p.name + ' summons ' + c.name + '.');
+        say(s, mark(s, p) + ' summons ' + c.name + '.');
         if (c.extraLand) p.extraLands += 1;
         if (c.lifeCost) {
           p.life -= c.lifeCost;
           s.fx.push({ summoner: pi, text: '-' + c.lifeCost });
-          say(s, p.name + ' pays ' + c.lifeCost + ' life.');
-          if (p.life <= 0) { p.life = 0; s.winner = 1 - pi; say(s, s.players[1 - pi].name + ' wins.'); }
+          say(s, mark(s, p) + ' pays ' + c.lifeCost + ' life.');
+          if (p.life <= 0) { p.life = 0; s.winner = 1 - pi; say(s, mark(s, s.players[1 - pi]) + ' wins.'); }
         }
         break;
       case 'enchant':
@@ -542,7 +556,7 @@ var Engine = (function () {
         if (c.warrant) ench.expires = s.turn + c.warrant;
         u.enchants.push(ench);
         u.maxHp += c.hpBonus; u.hp += c.hpBonus;
-        say(s, p.name + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + '.');
+        say(s, mark(s, p) + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + '.');
         break;
       case 'cast':
         i = takeFromHand(p, m.card); c = card(i);
@@ -550,11 +564,11 @@ var Engine = (function () {
         p.discard.push(i);
         if (c.draw) {
           for (var dn = 0; dn < c.draw; dn++) draw(s, pi);
-          say(s, p.name + ' casts ' + c.name + ' and draws ' + c.draw + ' cards.');
+          say(s, mark(s, p) + ' casts ' + c.name + ' and draws ' + c.draw + ' cards.');
         }
         if (c.extraLand) {
           p.extraLands += 1;
-          say(s, p.name + ' casts ' + c.name + ' and may play an extra land.');
+          say(s, mark(s, p) + ' casts ' + c.name + ' and may play an extra land.');
         }
         if (c.cleanse) {
           u = unitById(s, m.target);
@@ -565,11 +579,11 @@ var Engine = (function () {
           });
           u.enchants = [];
           u.hp = Math.min(u.hp, u.maxHp);
-          say(s, p.name + ' casts ' + c.name + ' and clears the enchantments from ' + CARDS[u.cardId].name + '.');
+          say(s, mark(s, p) + ' casts ' + c.name + ' and clears the enchantments from ' + CARDS[u.cardId].name + '.');
         }
         if (c.mend) {
           u = unitById(s, m.target);
-          say(s, p.name + ' casts ' + c.name + ' and heals ' + CARDS[u.cardId].name + ' for ' + heal(s, u, c.mend) + '.');
+          say(s, mark(s, p) + ' casts ' + c.name + ' and heals ' + CARDS[u.cardId].name + ' for ' + heal(s, u, c.mend) + '.');
         }
         if (c.fortify) {
           s.units.forEach(function (o) {
@@ -577,18 +591,18 @@ var Engine = (function () {
             o.maxHp += c.fortify; o.hp += c.fortify;
             s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+' + c.fortify, good: true });
           });
-          say(s, p.name + ' casts ' + c.name + '.');
+          say(s, mark(s, p) + ' casts ' + c.name + '.');
         }
         if (c.passage) {
           u = unitById(s, m.target);
           u.r = m.r; u.c = m.c; u.noAttack = true;
-          say(s, p.name + ' casts ' + c.name + ' and moves ' + CARDS[u.cardId].name + '.');
+          say(s, mark(s, p) + ' casts ' + c.name + ' and moves ' + CARDS[u.cardId].name + '.');
         }
         for (var di = 0; m.raise && di < p.discard.length; di++) {
           if (p.discard[di].id === m.raise) {
             var back = p.discard.splice(di, 1)[0];
             s.units.push(newUnit(s, back.id, back.c, pi, backRow(pi), backTile(s, pi)));
-            say(s, p.name + ' casts ' + c.name + ' and returns ' + CARDS[back.c].name + '.');
+            say(s, mark(s, p) + ' casts ' + c.name + ' and returns ' + CARDS[back.c].name + '.');
             break;
           }
         }
@@ -635,16 +649,16 @@ var Engine = (function () {
         } else if (ab.key === 'study') {
           u.moved = true;
           draw(s, pi);
-          say(s, CARDS[u.cardId].name + ' studies, and ' + p.name + ' draws a card.');
+          say(s, CARDS[u.cardId].name + ' studies, and ' + mark(s, p) + ' draws a card.');
         } else if (ab.key === 'sift') {
           u.moved = true;
           draw(s, pi);
           if (p.hand.length) p.toBottom = 1;
-          say(s, CARDS[u.cardId].name + ' sifts, and ' + p.name + ' draws a card and puts one on the bottom of their deck.');
+          say(s, CARDS[u.cardId].name + ' sifts, and ' + mark(s, p) + ' draws a card and puts one on the bottom of their deck.');
         } else if (ab.key === 'forage') {
           u.moved = true;
           p.bonusMana = (p.bonusMana || 0) + 1;
-          say(s, CARDS[u.cardId].name + ' forages, and ' + p.name + ' will have 1 extra mana next turn.');
+          say(s, CARDS[u.cardId].name + ' forages, and ' + mark(s, p) + ' will have 1 extra mana next turn.');
         } else if (ab.key === 'push') {
           var pushed = unitById(s, m.target), pr = pushed.r + (pushed.r - u.r), pc = pushed.c + (pushed.c - u.c);
           pushed.r = pr; pushed.c = pc;
@@ -662,11 +676,16 @@ var Engine = (function () {
         rp.mana -= costOf(s, 1 - pi, c);
         rp.discard.push(i);
         var target = unitById(s, m.target);
-        say(s, rp.name + ' responds with ' + c.name + ' on ' + CARDS[target.cardId].name + '.');
+        say(s, mark(s, rp) + ' responds with ' + c.name + ' on ' + CARDS[target.cardId].name + '.');
         var pend = s.pending;
         s.pending = null;
         if (c.prevent) { pend.attack.shield = target.uid; pend.attack.prevent = c.prevent; }
-        if (c.dodge) { target.r = m.r; target.c = m.c; pend.attack.missed = true; }
+        // Dodging the lance's second target clears only that hit. Dodging the main target misses the whole attack.
+        if (c.dodge) {
+          target.r = m.r; target.c = m.c;
+          if (pend.attack.secondaryUid === target.uid) pend.attack.secondaryUid = null;
+          else pend.attack.missed = true;
+        }
         if (c.shove) target.r = shoveRow(target);
         if (c.damage) {
           damage(s, target, c.damage);
@@ -710,7 +729,7 @@ var Engine = (function () {
     ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
     DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
-    attackOf: attackOf, attackAgainst: attackAgainst, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
+    attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
   };
 })();
 if (typeof module !== 'undefined') module.exports = Engine;

@@ -334,7 +334,7 @@
       if (att) {
         var a = unitById(att.attacker);
         var target = att.summoner !== undefined ? 'you' : E.CARDS[unitById(att.targetUid).cardId].name;
-        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + (att.summoner !== undefined ? E.attackOf(S, a) : E.attackAgainst(S, a, unitById(att.targetUid))) + '. Respond?';
+        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + (att.summoner !== undefined ? E.attackOf(S, a) : E.hitOn(S, a, unitById(att.targetUid))) + '. Respond?';
       } else text = 'The enemy turn is ending. Use an instant?';
       var opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) { return btn(moveLabel(m), { move: m }); }).join('');
       return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
@@ -347,9 +347,11 @@
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
         else if (place) hint = 'Choose a highlighted tile in your back row.';
         else if (ench) hint = 'Choose a unit to enchant.';
+        else if (c.type !== 'land' && E.costOf(S, HUMAN, c) > you.mana) hint = 'Not enough mana to play this now.';
         else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
-        else if (c.type !== 'land') hint = 'Not enough mana to play this now.';
-        else hint = you.landDropped ? 'You already played a land this turn.' : 'Play this land.';
+        else if (c.type === 'unit') hint = 'Your back row is full, so there is nowhere to summon this.';
+        else if (c.type === 'enchant') hint = 'There is no unit this can enchant right now.';
+        else hint = sm.length ? 'Play this land.' : 'You already played a land this turn.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
           if (m.type === 'cast' && !m.target) {

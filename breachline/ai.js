@@ -80,15 +80,18 @@ var AI = (function () {
   }
 
   // A built deck's name is typed by a player, so it never goes into a prompt. Log lines get "Your side" and "The enemy" instead.
+  // Lines from a battle saved before names were marked fall back to matching the name as text.
   function deckLabel(p) { return p.deckKey ? E.DECKS[p.deckKey].name : 'a deck of their own'; }
-  function logLine(v, text) {
-    return text.split(v.players[v.viewer].name).join('Your side').split(v.players[1 - v.viewer].name).join('The enemy');
+  function logLine(v, l) {
+    if (l.marked) return l.marked.replace(/\u0001(\d)\u0002/g, function (x, i) { return +i === v.viewer ? 'Your side' : 'The enemy'; });
+    if (v.logMarked) return l.text;
+    return l.text.split(v.players[v.viewer].name).join('Your side').split(v.players[1 - v.viewer].name).join('The enemy');
   }
 
   function stateText(v) {
     var me = v.viewer, you = v.players[me], foe = v.players[1 - me];
     var mine = v.units.filter(function (u) { return u.owner === me; }), theirs = v.units.filter(function (u) { return u.owner !== me; });
-    var recent = v.log.slice(-12).map(function (l) { return 'turn ' + l.turn + ': ' + logLine(v, l.text); });
+    var recent = v.log.slice(-12).map(function (l) { return 'turn ' + l.turn + ': ' + logLine(v, l); });
     return [
       'THE BATTLE',
       'Turn ' + v.turn + '. You play ' + deckLabel(you) + '. Your enemy plays ' + deckLabel(foe) + '.',
@@ -217,7 +220,7 @@ var AI = (function () {
     else if (v.phase === 'opening') ask = 'Choose whether to keep your opening hand.';
     else if (pd && pd.attack) {
       var a = unitBy(v, pd.attack.attacker);
-      ask = named(v, a) + ' is attacking ' + (pd.attack.summoner !== undefined ? 'you, the summoner,' : named(v, unitBy(v, pd.attack.targetUid))) + ' for ' + (pd.attack.summoner !== undefined ? E.attackOf(v, a) : E.attackAgainst(v, a, unitBy(v, pd.attack.targetUid))) + '. Choose whether to respond.';
+      ask = named(v, a) + ' is attacking ' + (pd.attack.summoner !== undefined ? 'you, the summoner,' : named(v, unitBy(v, pd.attack.targetUid))) + ' for ' + (pd.attack.summoner !== undefined ? E.attackOf(v, a) : E.hitOn(v, a, unitBy(v, pd.attack.targetUid))) + '. Choose whether to respond.';
     } else ask = 'The enemy turn is ending. Choose whether to use an instant.';
     return [
       INTRO,
