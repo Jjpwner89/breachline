@@ -55,14 +55,17 @@ var Engine = (function () {
     unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 20, 45, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
     unit('bull', 'Elder Herd bull', 'G', 5, 2, 60, 95, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, text: 'At the end of the enemy turn: push an enemy unit 1 tile back toward its side.' },
-    unit('youngsummoner', 'Young summoner', 'N', 2, 0, 20, 30)
+    unit('youngsummoner', 'Young summoner', 'N', 2, 0, 20, 30),
+    { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 15, text: 'Enchant one of your units: it recovers 15 health at the start of your turn.' },
+    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 20, 40, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
+    { id: 'across', name: 'Across the silence', type: 'spell', colour: 'N', cost: 4, wants: 0, draw: 2, text: 'Draw two cards.' }
   ].forEach(function (c) { CARDS[c.id] = c; });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 11], ['spearman', 2], ['carrier', 1], ['cub', 1], ['cleric', 1], ['sentinel', 1], ['knight', 1], ['lancer', 2], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1]] },
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 11], ['spearman', 1], ['stillflame', 1], ['carrier', 1], ['cub', 1], ['cleric', 1], ['sentinel', 1], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
     red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 9], ['land_u', 2], ['goblin', 1], ['clanraiders', 1], ['raider', 1], ['conjurer', 1], ['berserker', 1], ['sellsword', 1], ['captain', 1], ['warchief', 1], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] },
-    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 9], ['land_w', 2], ['decoy', 2], ['conjurer', 2], ['scholar', 2], ['arcanist', 2], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
-    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 9], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 3], ['vashkar', 1], ['raise', 1], ['warrant', 1], ['sellsword', 2], ['firebolt', 1]] },
+    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 9], ['land_w', 2], ['decoy', 2], ['conjurer', 1], ['lampwright', 1], ['scholar', 2], ['arcanist', 2], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
+    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 9], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 3], ['vashkar', 1], ['raise', 1], ['warrant', 1], ['sellsword', 1], ['across', 1], ['firebolt', 1]] },
     green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 9], ['land_r', 2], ['sapling', 2], ['saboteur', 2], ['owl', 1], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
   };
 
@@ -82,7 +85,7 @@ var Engine = (function () {
   function unitById(s, uid) { for (var i = 0; i < s.units.length; i++) if (s.units[i].uid === uid) return s.units[i]; return null; }
   function hasKw(u, k) { return CARDS[u.cardId].keywords.indexOf(k) >= 0; }
   function speed(u) { return hasKw(u, 'Swift') || hasKw(u, 'Flying') ? 2 : 1; }
-  function range(u) { return hasKw(u, 'Ranged') ? 2 : 1; }
+  function range(u) { return hasKw(u, 'Ranged') || u.tempRange ? 2 : 1; }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
   function nextToAlly(s, u) { return s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1; }); }
@@ -162,6 +165,7 @@ var Engine = (function () {
         s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+15', good: true });
       }
       if (hasKw(u, 'Regrow') && u.hp < u.maxHp) heal(s, u, 10);
+      u.enchants.forEach(function (e) { if (CARDS[e.c].regrow && u.hp < u.maxHp) heal(s, u, CARDS[e.c].regrow); });
     });
     if (s.turn > 1) draw(s, s.active);
   }
@@ -269,7 +273,9 @@ var Engine = (function () {
           if (c.type === 'unit') {
             for (var col = 0; col < COLS; col++) if (!unitAt(s, backRow(pi), col)) out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col });
           } else if (c.type === 'enchant') {
-            s.units.forEach(function (u) { if (!c.enemyOnly || u.owner !== pi) out.push({ type: 'enchant', card: i.id, target: u.uid }); });
+            s.units.forEach(function (u) { if ((!c.enemyOnly || u.owner !== pi) && (!c.allyOnly || u.owner === pi)) out.push({ type: 'enchant', card: i.id, target: u.uid }); });
+          } else if (c.draw) {
+            out.push({ type: 'cast', card: i.id });
           } else if (c.type === 'spell' && backTile(s, pi) !== null) {
             p.discard.forEach(function (d) {
               var dc = CARDS[d.c];
@@ -307,6 +313,8 @@ var Engine = (function () {
             if (b && b.owner !== pi) out.push({ type: 'ability', unit: u.uid, target: e.uid });
           }
         });
+      } else if (ab.key === 'lens') {
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange && range(a) === 1) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'healall') {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && a.hp < a.maxHp; })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'orders') {
@@ -409,7 +417,7 @@ var Engine = (function () {
   }
 
   function finishTurn(s) {
-    s.units.forEach(function (u) { u.tempAtk = 0; });
+    s.units.forEach(function (u) { u.tempAtk = 0; u.tempRange = false; });
     s.units.filter(function (u) { return u.enchants.some(function (e) { return e.expires === s.turn; }); }).forEach(function (u) {
       say(s, 'The warrant on ' + CARDS[u.cardId].name + ' comes due.');
       kill(s, u);
@@ -472,7 +480,11 @@ var Engine = (function () {
         i = takeFromHand(p, m.card); c = card(i);
         p.mana -= costOf(s, pi, c);
         p.discard.push(i);
-        for (var di = 0; di < p.discard.length; di++) {
+        if (c.draw) {
+          for (var dn = 0; dn < c.draw; dn++) draw(s, pi);
+          say(s, p.name + ' casts ' + c.name + ' and draws ' + c.draw + ' cards.');
+        }
+        for (var di = 0; m.raise && di < p.discard.length; di++) {
           if (p.discard[di].id === m.raise) {
             var back = p.discard.splice(di, 1)[0];
             s.units.push(newUnit(s, back.id, back.c, pi, backRow(pi), backTile(s, pi)));
@@ -509,6 +521,10 @@ var Engine = (function () {
         } else if (ab.key === 'lance') {
           var e = unitById(s, m.target), behind = unitAt(s, e.r + (e.r - u.r), e.c + (e.c - u.c));
           beginAttack(s, { attacker: u.uid, targetUid: e.uid, secondaryUid: behind ? behind.uid : null });
+        } else if (ab.key === 'lens') {
+          var lit = unitById(s, m.target);
+          lit.tempRange = true;
+          say(s, CARDS[u.cardId].name + ' extends the reach of ' + CARDS[lit.cardId].name + '.');
         } else if (ab.key === 'healall') {
           s.units.forEach(function (o) { if (o.owner === pi && o !== u && dist(u, o) === 1) heal(s, o, ab.amount); });
           say(s, CARDS[u.cardId].name + ' heals nearby allies.');

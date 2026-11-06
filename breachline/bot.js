@@ -40,10 +40,12 @@ var Bot = (function () {
         s.units.forEach(function (e) { if (e.owner === foe) pull -= Math.abs(e.c - m.c); });
         return 100 + c.cost * 20 + pull - Math.abs(m.c - 2);
       case 'cast':
+        if (!m.raise) return 100 + E.CARDS[handCard(p, m.card).c].cost * 20;
         var raised = p.discard.filter(function (d) { return d.id === m.raise; })[0];
         return 100 + E.CARDS[raised.c].cost * 20;
       case 'enchant':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
+        if (c.regrow) return 40 + worth(t) / 5;
         if (c.warrant) return worth(t) >= 80 ? 40 + worth(t) : -100;
         if (c.atkBonus > 0) return t.owner === pi ? 40 + worth(t) / 5 : -100;
         return t.owner === foe && E.attackOf(s, t) >= 30 ? 40 + E.attackOf(s, t) / 5 : -100;
@@ -60,6 +62,10 @@ var Bot = (function () {
         if (key === 'healall') return 70;
         if (key === 'study') return 70;
         if (key === 'orders') return 15;
+        if (key === 'lens') {
+          t = unitById(s, m.target);
+          return s.units.some(function (e) { return e.owner === foe && dist(t, e) === 2; }) ? 40 : -1;
+        }
         if (key === 'push') return 22;
         if (key === 'harvest') return worth(unitById(s, m.target)) <= 35 ? 35 : -1;
         t = unitById(s, m.target);
