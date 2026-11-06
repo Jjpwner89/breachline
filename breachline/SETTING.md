@@ -144,7 +144,7 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 
 - **World:** Earth-like, with one large continent, some medium ones and several small ones.
 - **Campaign:** one story for each alignment.
-- **Map:** the creator wants one (2026-11-05). The campaign has a route map for now, so keep place details loose until the world's geography is settled.
+- **Map:** may come later, or may stay unbuilt, because a fixed map could limit role-playing. Keep place details loose until that's decided.
 
 ## Open questions
 

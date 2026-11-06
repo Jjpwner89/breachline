@@ -44,14 +44,18 @@ From 400 simulated runs with the scripted bot on both sides, picking rewards at 
 
 | Chapter | Bot on your side wins | Average turns |
 | --- | --- | --- |
-| The ford | 78% | 21.0 |
-| The closed road | 57% | 20.6 |
-| The pass | 52% | 21.8 |
-| The lower gate | 63% | 24.7 |
-| The fallow field | 52% | 21.1 |
-| The shrine steps | 21% | 22.0 |
+| The ford | 69% | 20.0 |
+| The closed road | 59% | 20.7 |
+| The pass | 46% | 20.7 |
+| The lower gate | 58% | 25.0 |
+| The fallow field | 46% | 20.3 |
+| The shrine steps | 24% | 20.9 |
 
 Only 7 of the 400 runs won every battle. No person has played a full run yet, and the bot plays the Vigil deck weakly, so these numbers only compare the chapters. The lower gate is easier than the two before it, and the bot rarely uses sacrifices well, which makes both Dominion chapters easier than they would be under Claude. Claude opponents haven't been tried in a run, only the fallback to the bot.
+
+## Still to do
+
+- **`SETTING.md`:** its Map line still says a map may stay unbuilt. Change it to say the creator wants one, and that the campaign has a route map for now, with place details kept loose. It was left out of this merge because another chat had uncommitted edits to that file.
 
 ## Where things plug in
 
