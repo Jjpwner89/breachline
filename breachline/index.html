@@ -75,9 +75,9 @@ h1, h2 { margin: 0; font-family: var(--display); }
 
 /* The map */
 .arena { grid-row: 2; position: relative; min-height: 0; container-type: size; display: flex; align-items: center; justify-content: center; }
-.board { --bw: min(calc(100cqw - 56px), calc((100cqh - 46px) * 2.12)); flex: none; padding: 9px; background: var(--map) var(--vellum); border-radius: 5px; border: 3px solid var(--bronze); box-shadow: 0 0 0 1px var(--gold), 0 0 0 5px #120c06, 0 0 0 6px var(--edge), 0 12px 30px rgba(0, 0, 0, .7), inset 0 0 44px rgba(78, 54, 18, .55); }
-#grid { position: relative; width: var(--bw); height: min(calc(100cqh - 46px), calc(var(--bw) * .72)); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(0, .85fr); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: 5px; }
-.front { position: absolute; left: 0; top: calc(50% - 1px); width: calc(100% * 5 / 5.85); border-top: 2px dashed var(--map-soft); pointer-events: none; }
+.board { --bw: min(calc(100cqw - 56px), calc((100cqh - 46px) * 1.81)); flex: none; padding: 9px; background: var(--map) var(--vellum); border-radius: 5px; border: 3px solid var(--bronze); box-shadow: 0 0 0 1px var(--gold), 0 0 0 5px #120c06, 0 0 0 6px var(--edge), 0 12px 30px rgba(0, 0, 0, .7), inset 0 0 44px rgba(78, 54, 18, .55); }
+#grid { position: relative; width: var(--bw); height: min(calc(100cqh - 46px), calc(var(--bw) * .72)); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: 5px; }
+.front { position: absolute; left: 0; top: calc(50% - 1px); width: 100%; border-top: 2px dashed var(--map-soft); pointer-events: none; }
 
 .tile { position: relative; isolation: isolate; min-width: 0; min-height: 0; padding: 0; border: 1px solid rgba(78, 60, 28, .5); border-radius: 3px; background: rgba(78, 60, 28, .09); text-align: left; overflow: hidden; cursor: default; color: var(--ivory); }
 .tile[data-r="0"] { background: rgba(120, 40, 20, .17); }
@@ -123,21 +123,6 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .float.good { color: var(--good); -webkit-text-stroke-color: #0e2d17; }
 .plate .float { right: auto; left: 240px; top: 8px; }
 @keyframes rise { from { transform: translateY(12px); } to { transform: translateY(-6px); } }
-
-/* Towns are drawn in ink on the map until they open. The broken wall sits between them. */
-.town { grid-column: 6; position: relative; min-width: 0; min-height: 0; border: 1px dashed var(--map-soft); border-radius: 3px; overflow: hidden; background: repeating-linear-gradient(45deg, rgba(78, 60, 28, .07) 0 7px, rgba(78, 60, 28, .16) 7px 14px); color: var(--map-ink); }
-.town.them { grid-row: 1 / span 2; }
-.town.you { grid-row: 3 / span 2; }
-.town svg { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
-.town .scaffold { fill: none; stroke: var(--map-ink); stroke-width: 1.3; }
-.town .who { position: absolute; left: 6px; right: 4px; font: 700 13px/1.1 var(--display); }
-.town .sign { position: absolute; left: 5px; right: 5px; background: var(--bronze); color: var(--gold-pale); border-radius: 2px; padding: 2px 3px; font-weight: 500; font-size: 11.5px; line-height: 1.1; text-align: center; }
-.town.them .who { top: 5px; } .town.them .sign { top: 22px; }
-.town.you .who { bottom: 5px; } .town.you .sign { bottom: 22px; }
-.town .sign .short { display: none; }
-.ruin { grid-column: 6; grid-row: 2 / span 2; align-self: center; height: 42px; margin: 0 4px; position: relative; z-index: 1; color: var(--map-ink); background: var(--map); border-radius: 3px; padding: 3px 2px 1px; text-align: center; font-size: 10.5px; line-height: 1.05; }
-.ruin svg { display: block; width: 100%; height: 22px; }
-.ruin rect { fill: #8a7a58; stroke: var(--map-ink); stroke-width: 1; }
 
 /* Command strip */
 .cmd { grid-row: 3; display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 6px 12px; background: linear-gradient(#2c2013, #1e160d); border-top: 1px solid var(--edge); border-bottom: 1px solid var(--edge); position: relative; z-index: 6; }
@@ -225,7 +210,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .drawer ul { margin: 8px 0 0; padding-left: 16px; overflow-y: auto; font-size: 14px; line-height: 1.3; display: grid; gap: 5px; color: var(--ink); }
 @media (min-width: 1280px) and (min-aspect-ratio: 3/2) {
   .arena { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); align-items: center; }
-  .board { --bw: min(calc((100cqh - 46px) * 2.12), calc(100cqw - 590px)); grid-column: 2; grid-row: 1; }
+  .board { --bw: min(calc((100cqh - 46px) * 1.81), calc(100cqw - 590px)); grid-column: 2; grid-row: 1; }
   .drawer.log { position: relative; grid-column: 1; grid-row: 1; top: auto; right: auto; bottom: auto; justify-self: end; align-self: stretch; width: calc(100% - 24px); max-width: 300px; min-height: 0; margin: 10px 14px 10px 10px; transform: none; visibility: visible; box-shadow: none; background: rgba(36, 26, 16, .75); }
   #logBtn { display: none; }
   .inspect, .inspect.left { position: relative; grid-column: 3; grid-row: 1; inset: auto; justify-self: start; width: min(calc(100% - 28px), 300px, calc((100cqh - 54px) / 1.42)); margin-left: 14px; opacity: 1; }
@@ -296,12 +281,6 @@ dialog .btns { justify-content: flex-start; }
   .tile .st { left: 1px; right: 1px; bottom: 1px; flex-wrap: wrap; justify-content: space-between; gap: 2px 1px; }
   .tile .bar { order: -1; flex: 1 1 100%; height: 4px; }
   .tile .chips { bottom: 23px; }
-  .town .who { display: none; }
-  .town .sign { left: 2px; right: 2px; font-size: 10px; padding: 1px; }
-  .town.them .sign { top: 3px; } .town.you .sign { bottom: 3px; }
-  .town .sign .long { display: none; }
-  .town .sign .short { display: inline; }
-  .ruin { font-size: 0; height: 26px; margin: 0 1px; }
   .cmd { flex-wrap: wrap; gap: 6px 10px; position: sticky; bottom: 0; z-index: 9; }
   #actions { flex: 1 1 100%; flex-wrap: wrap; }
   .prompt { flex: 1 1 200px; }
@@ -372,7 +351,6 @@ dialog .btns { justify-content: flex-start; }
         <li>Only a unit on the enemy back row can hit the summoner.</li>
         <li>Mana you leave unspent pays for instants on the enemy turn.</li>
         <li>Reduce the enemy summoner from 150 to 0.</li>
-        <li>Towns and fortifications open in a later version.</li>
       </ul>
     </aside>
     <div id="turnBanner" aria-hidden="true"></div>

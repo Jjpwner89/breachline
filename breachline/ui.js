@@ -153,13 +153,6 @@
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
   }
 
-  // Each town fills two tiles beside its owner's half, so raiders reach it before the summoner. Closed in this version.
-  function townHtml(side, label) {
-    return '<div class="town ' + side + '" role="img" aria-label="' + label + ', under construction"><svg viewBox="0 0 100 190" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path class="scaffold" d="M20 124V86L42 68L64 86V124M20 86H64M20 105H64M42 68V124M30 170V136H82V170M30 153H82M47 136V170M64 136V170M64 136V116H84V126"/></svg>' +
-      '<span class="who">' + label + '</span><span class="sign"><span class="long">Under construction</span><span class="short">Being built</span></span></div>';
-  }
-  var RUIN = '<div class="ruin" title="Fortifications, coming later"><svg viewBox="0 0 220 50" aria-hidden="true"><rect x="10" y="38" width="30" height="11"/><rect x="42" y="38" width="30" height="11"/><rect x="74" y="38" width="30" height="11"/><rect x="106" y="38" width="30" height="11"/><rect x="24" y="26" width="30" height="11"/><rect x="56" y="26" width="30" height="11"/><rect x="88" y="26" width="20" height="11"/><rect x="38" y="14" width="30" height="11"/><rect x="70" y="14" width="13" height="11"/><rect x="48" y="2" width="16" height="11"/><rect x="150" y="41" width="15" height="8" transform="rotate(-16 157 45)"/><rect x="178" y="42" width="11" height="7" transform="rotate(14 183 45)"/><rect x="124" y="26" width="10" height="8" transform="rotate(24 129 30)"/></svg>Fortifications, later</div>';
-
   function computeMarks(moves) {
     var marks = { tiles: {}, units: {}, summoner: false, threat: false };
     // While you decide on a response, the two units in the fight stay marked on the map.
@@ -381,7 +374,6 @@
     $('youStrip').innerHTML = plateHtml(HUMAN, false, marks.threat);
     var g = '<div class="front" aria-hidden="true"></div>';
     for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += tileHtml(r, c, marks);
-    g += townHtml('them', 'Enemy town') + townHtml('you', 'Your town') + RUIN;
     $('grid').innerHTML = g;
     $('actions').innerHTML = actionsHtml(moves);
     $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="empty">Your hand is empty.</span>';

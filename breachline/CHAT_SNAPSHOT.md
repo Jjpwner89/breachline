@@ -9,17 +9,16 @@ Each item says whose it is:
 
 ## Where things stand
 
-The new cards and flavour lines are in the prototype, with five 24-card decks and an opponent picker. New paintings are still arriving from ChatGPT: 12 of the 29 exist so far, and the other cards show a plain panel. A war table redesign of the screen is built on its own branch, `claude/ui-redesign-3f7efc`, and you haven't merged it.
+The new cards and flavour lines are in the prototype, with five 24-card decks and an opponent picker. New paintings are still arriving from ChatGPT: 12 of the 29 exist so far, and the other cards show a plain panel. The war table redesign is merged into local `main`.
 
 **Waiting on you:**
 1. Finish the remaining images. Each new batch needs `art/build-web.sh` run and the game republished. That hasn't been done yet for Cinder berserker or the revised Brass chorister, Cinder Clan raiders, Overgrown ruin and Water carrier.
-2. Playtest the war table redesign and decide whether to merge it. It was built from a copy of the five-deck work, so merging will conflict in `index.html` and `ui.js`. The fix is to keep the redesign and re-add anything newer, including the flavour lines. Its preview entry in `.claude/launch.json` was left out of the commit.
-3. Playtest the balance items under "Balance notes".
-4. Answer any questions still open at the bottom of `NEW_CARDS.md`.
-5. Confirm or reject the "Repetition to watch" list in the `art-direction` skill.
-6. Name some touchstones: books, films, games or paintings with the feeling you want. Claude has asked more than once and you haven't answered yet.
+2. Playtest the balance items under "Balance notes".
+3. Answer any questions still open at the bottom of `NEW_CARDS.md`.
+4. Confirm or reject the "Repetition to watch" list in the `art-direction` skill.
+5. Name some touchstones: books, films, games or paintings with the feeling you want. Claude has asked more than once and you haven't answered yet.
 
-**Not started:** the model-driven AI and its chat panel, the exhibition deck builder, the campaign, a playable town and fortifications, and faction buildings in the engine.
+**Not started:** the model-driven AI and its chat panel, and the campaign. The main menu and deck builder are built on `claude/deck-builder-33a8d7`, built on the old layout and not merged.
 
 **Outdated on purpose:** the style block in `art/ART_BRIEFS.md` and the shared art briefs doc still use old wording and ask for too much drama. `ART_BRIEFS.md` now carries a warning, but the shared doc doesn't, so don't reuse it for new briefs.
 
@@ -58,7 +57,6 @@ If that Claude account is a work account, you could lose these pages if you leav
 | Genesis (green) | Life grows and endures, and it outlasts every kingdom | Forest peoples, druids, great beasts, living trees | Very large units, units that grow over time, extra lands, recovering health | Few instants, very few fliers, exposed to fliers and ranged attacks |
 
 - **Going against a tendency:** you approved the higher cost. Claude's starting number is about 1 extra mana, so a Genesis flier with a typical 3-mana flier's stats would cost 4.
-- **Factions sharing an alignment (you liked the idea):** two factions in one alignment share mana but compete for your limited town lots. Example building: a Warhorde card wants its War forge, not just any Fervor building.
 - **Velunn on cards (you liked):** you said "yes that's great" to Claude's idea that they're the game's rarest, biggest cards and that Dominion could bargain with them, adding that they can be good too.
 **Claude proposed:**
 - No counterspells in Gnosis, because disabling enemies does a similar job on the grid.
@@ -66,37 +64,19 @@ If that Claude account is a work account, you could lose these pages if you leav
 - Finish white and red first, then add one alignment at a time. The new card batch spans all five anyway, so this is unsettled.
 - Start Gnosis with ranged attacks, moving units and drawing cards, since illusions and decoys are hardest for the AI.
 
-## Rules drafted for when the town opens
+## Buildings are cut
 
-The town and fortifications aren't playable yet, so none of this has been tested. **Claude proposed** all of it unless marked otherwise, and you haven't objected.
+**You decided, and you're 100% on this:** no town, town buildings, bank, stored mana, fortifications or walls. Total mana cost and land requirements already do that job. Don't spend screen space or compute on them, and don't propose them again. Faction identity should come through card mechanics and art.
 
-**Town**
-- A town has 4 lots with more possible buildings than lots, so you can't build everything. Your rule is 3 to 4 slots.
-- It holds three kinds of building: bank, producer and boost. Examples drawn so far are a Pride hall, a Bank and a War forge.
-- A faction card names one specific building, with about 3 buildings per faction.
-- A raw neutral card beats an unboosted faction card and loses to a boosted one.
-- If a bank is destroyed, the mana stored in it is lost.
-- **You decided:** destroying a building also stops its boost on units already in play. This replaced Claude's idea of locking the boost in.
-- The town wall has its own upgrade spot and doesn't use a lot. It has about 25 health and must be broken before any building can be hit.
-- **Reaching the town:** a unit attacks it from the grid tile next to it, so a raider on that edge can reach the town from the enemy front row, one step before it could reach the summoner. An earlier draft allowed attacks only from the enemy back row.
-- **Still open:** should both towns sit on the same side? Both on the right could make that edge the main battleground, while opposite sides would spread the fighting out.
-
-**Fortifications**
-- They go on your front row only, which keeps your back row free for new units.
-- Attacks hit the fortification first, and a garrisoned unit can still attack and strike back.
-- A wall has about 25 health, which adds one hit against most units. A really good one has 50 or more.
-- **Your reasoning:** a wall usually isn't a great play unless you're attacking elsewhere and can spend on it later to counter an attack.
-
-**Other rules**
-- Enchantments attach to a unit or building on either side and go when their host is destroyed.
+**Rules that remain**
+- Enchantments attach to a unit on either side and go when their host is destroyed.
 - Units can't move onto or through an occupied tile.
-- Buildings don't strike back unless a keyword says so.
 
 **Risks Claude flagged**
-- **Stalled games:** a line of walls could block every route, and reshuffling means nobody runs out of cards. A late-game rule that damages both players may be needed.
-- **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health, and garrisoned units recover more. You haven't answered this.
+- **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed. This hasn't come up in play.
+- **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health. You haven't answered this.
 
-**Board layout from the diagrams:** the summoners and land rows sit outside the grid, above and below it, and the towns sit beside it. The diagrams and clickable town mock-up exist only in the first chat.
+**Board layout:** the summoners and land rows sit outside the grid, above and below it.
 
 ## The AI opponent
 
@@ -141,8 +121,8 @@ The town and fortifications aren't playable yet, so none of this has been tested
 
 **Game design**
 - A party of three heroes on four lanes, with cards locked to a living hero. You chose an unseen summoner.
-- Terrain on the grid, which you replaced with buildings only.
-- Equipment and relics, dropped to keep buildings and enchantments.
+- Terrain on the grid, and equipment and relics.
+- A town with buildings and a bank, and fortifications with garrisons. See "Buildings are cut".
 - Lands or mana buildings on the grid, dropped in favour of the safe land row.
 - Counting faction lands or buildings to lock cards. You want cards always playable.
 - A free land from swapping, then discard and draw, then no swap at all.
