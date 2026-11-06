@@ -1,13 +1,14 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Breachline AI tests</title>
+<title>Breachline tests</title>
 <pre id="out">Running...</pre>
 <script src="engine.js"></script>
 <script src="bot.js"></script>
 <script src="guides.js"></script>
 <script src="ai.js"></script>
+<script src="campaign.js"></script>
 <script>
-// Open this page to check the Claude opponent's safety rules. No model is called.
+// Open this page to check the Claude opponent's safety rules and campaign runs. No model is called.
 var E = Engine, results = [], DECKS = Object.keys(E.DECKS);
 function check(name, ok, detail) { results.push((ok ? 'PASS ' : 'FAIL ') + name + (detail ? ': ' + detail : '')); }
 function who(s) { return s.pending ? s.pending.responder : s.active; }
@@ -177,6 +178,76 @@ function randomField(r, ids) {
   check('an explanation that is not text is ignored', chosen.why === '');
   var dropped = [], q = [{ type: 'winGame' }], m = AI.nextMove(v, q, dropped);
   check('dropped moves are reported', dropped.length === 1 && dropped[0].type === 'winGame' && !!m.type);
+})();
+
+(function campaignRuns() {
+  // These runs use the real save slot, so whatever was there goes back afterwards.
+  var KEY = 'breachline.campaign.v1', kept = localStorage.getItem(KEY), story = Campaign.STORIES.vigil, last = story.chapters.length - 1;
+  var starter = JSON.stringify(E.DECKS.white.list);
+  var bad = story.chapters.filter(function (c) { return E.deckProblems(c.enemy.list).length; });
+  check('every enemy deck is legal', !bad.length, bad.map(function (c) { return c.id; }).join(', '));
+  var offers = 0, wrong = [];
+  for (var seed = 1; seed <= 200; seed++) {
+    var run = Campaign.begin('vigil', 'bot', seed);
+    for (var ch = 0; ch < last; ch++) {
+      var got = Campaign.finish(0), o = got.offer, foe = story.chapters[ch].enemy.colours[0];
+      offers++;
+      if (got.status !== 'reward' || o.cards.length !== 3) wrong.push('offer size ' + o.cards.length);
+      if (o.cards.filter(function (id, i) { return o.cards.indexOf(id) !== i; }).length) wrong.push('repeat in offer');
+      o.cards.forEach(function (id) {
+        var c = E.CARDS[id], have = run.list.filter(function (e) { return e[0] === id; })[0];
+        if (c.type === 'land' || c.sub === 'Velunn') wrong.push(id + ' should not be offered');
+        if (have && have[1] >= E.maxCopies(id)) wrong.push(id + ' is over the copy limit');
+      });
+      if (o.cards.filter(function (id) { return E.CARDS[id].colour === foe; }).length !== 1) wrong.push('no single card from the beaten enemy');
+      run = Campaign.take(o.cards[seed % 3]);
+    }
+    if (run.chapter !== last || E.deckProblems(run.list).length) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join());
+  }
+  check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
+  check('a run never changes the starter deck', JSON.stringify(E.DECKS.white.list) === starter);
+
+  Campaign.begin('vigil', 'bot', 5);
+  var offered = Campaign.finish(0).offer;
+  check('only an offered card can be taken', Campaign.take('dragon') === null && Campaign.current().status === 'reward');
+  var land = Campaign.take(offered.lands[1]);
+  check('a land from the offer can be taken', land.chapter === 1 && land.list.some(function (e) { return e[0] === offered.lands[1]; }));
+  Campaign.finish(0);
+  var size = E.deckSize(Campaign.current().list), none = Campaign.take(null);
+  check('taking nothing moves on with the same deck', none.chapter === 2 && E.deckSize(none.list) === size);
+
+  Campaign.begin('vigil', 'easy', 6);
+  var draw = Campaign.finish('draw');
+  check('a draw refights the same chapter', draw.chapter === 0 && draw.status === 'map' && Campaign.current().player === 'easy');
+  var lost = Campaign.finish(1);
+  check('a loss ends the run for good', lost.status === 'lost' && Campaign.current() === null && Campaign.ended().status === 'lost');
+  Campaign.dismiss();
+
+  Campaign.begin('vigil', 'bot', 7);
+  for (var i = 0; i < last; i++) Campaign.take(Campaign.finish(0).offer.cards[0]);
+  var won = Campaign.finish(0);
+  check('winning the last chapter finishes the run', won.status === 'won' && Campaign.current() === null);
+
+  var run2 = Campaign.begin('vigil', 'bot', 8), s = E.newGame({ seed: 3, decks: Campaign.decks(run2), first: 0 }), moves = 0;
+  while (s.winner === null && moves < 40) { s = E.applyMove(s, Bot.choose(s, Math.random)); moves++; }
+  Campaign.saveBattle(s);
+  var back = Campaign.current().battle;
+  check('a battle saved mid-game comes back the same', JSON.stringify(back) === JSON.stringify(JSON.parse(JSON.stringify(s))));
+  var after = E.applyMove(back, Bot.choose(back, Math.random));
+  check('a saved battle can be played on', !!after.players);
+  var stale = JSON.parse(localStorage.getItem(KEY));
+  stale.battle.players[0].hand[0].c = 'gone_card';
+  stale.list.push(['gone_card', 2]);
+  localStorage.setItem(KEY, JSON.stringify(stale));
+  var read = Campaign.current();
+  check('a save from an older version drops what no longer exists', read && read.battle === null && !read.list.some(function (e) { return e[0] === 'gone_card'; }));
+  localStorage.setItem(KEY, '{not json');
+  check('a damaged save is treated as no run', Campaign.current() === null);
+  localStorage.setItem(KEY, JSON.stringify({ story: 'vigil', chapter: 99, list: [['knight', 1]] }));
+  check('a save with an impossible chapter is treated as no run', Campaign.current() === null);
+
+  Campaign.dismiss();
+  if (kept === null) localStorage.removeItem(KEY); else localStorage.setItem(KEY, kept);
 })();
 
 document.getElementById('out').textContent = results.join('\n');

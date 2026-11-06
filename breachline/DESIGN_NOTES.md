@@ -57,3 +57,9 @@ Planned card unlocks, from the user: campaign unlocks gradually by winning and g
 On the published page, saved decks also go to the viewer's private database area under `data/users/<id>`, so they follow the account (added 2026-11-05 at the user's request). The browser copy stays the working one, so the game still runs offline or as a plain local copy, and the newer copy of a deck wins.
 
 **How to apply:** new modes should add a card pool in `Decks.pool` (`breachline/decks.js`) rather than change the builder. Treat these as my assumptions until the user confirms them: 24-40 card decks, 3 copies of a non-land card, unlimited lands, and the card-to-faction list in `engine.js`.
+
+## Campaign
+
+On 2026-11-05 the user picked a run-based campaign: a loss ends the run, battles come in a fixed order, Vigil comes first, and the player chooses who plays the enemies at the start of a run. They also said there should be a map, and that cutscenes are wanted later but are a future problem. `CAMPAIGN.md` has the draft story lines waiting for verdicts, my unconfirmed assumptions, and the simulated balance. Treat the Shrine Road story as Proposed.
+
+**How to apply:** when publishing, include `campaign.js` with the other scripts.

@@ -1,4 +1,4 @@
-// Saved decks and the card pool. The screens and a future campaign or pack system all go through here.
+// Saved decks and the card pool. The screens and a future pack system all go through here.
 var Decks = (function () {
   var E = typeof Engine !== 'undefined' ? Engine : require('./engine.js');
   var KEY = 'breachline.decks.v1', PICKS = 'breachline.picks.v1', UNTITLED = 'Untitled deck';
@@ -172,7 +172,7 @@ var Decks = (function () {
     return ok;
   }
 
-  // What a deck can be built from. Exhibition is every card; campaign rewards and multiplayer packs will each
+  // What a deck can be built from. Exhibition is every card; multiplayer packs will
   // add a mode here that returns only the cards the player owns, and how many of each.
   function pool(mode) {
     if (mode !== 'exhibition') throw new Error('No card pool for mode: ' + mode);

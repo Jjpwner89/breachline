@@ -421,11 +421,12 @@ dialog .btns { justify-content: flex-start; }
 
 <dialog id="menu" aria-label="Menu">
   <h2>Breachline</h2>
-  <p>If you leave, this battle waits until you begin another.</p>
+  <p id="menuNote">If you leave, this battle waits until you begin another.</p>
   <div class="btns">
     <button class="btn primary" type="button" data-close>Keep playing</button>
-    <button class="btn" type="button" data-do='{"ui":"new"}'>Restart</button>
-    <button class="btn" type="button" data-do='{"ui":"decks"}'>Change decks</button>
+    <button class="btn" id="menuRestart" type="button" data-do='{"ui":"new"}'>Restart</button>
+    <button class="btn" id="menuDecks" type="button" data-do='{"ui":"decks"}'>Change decks</button>
+    <button class="btn" id="menuMap" type="button" data-do='{"ui":"campaign"}' hidden>Campaign map</button>
     <button class="btn" type="button" data-do='{"ui":"menu"}'>Main menu</button>
   </div>
 </dialog>
@@ -436,5 +437,6 @@ dialog .btns { justify-content: flex-start; }
 <script src="ai.js"></script>
 <script src="debug.js"></script>
 <script src="decks.js"></script>
+<script src="campaign.js"></script>
 <script src="screens.js"></script>
 <script src="ui.js"></script>

@@ -1,4 +1,4 @@
-// Main menu and the deck builder. Storage and the card pool come from Decks, card frames and game start from GameUI.
+// Main menu, deck builder and campaign map. Storage and the card pool come from Decks, runs from Campaign, card frames and game start from GameUI.
 var Screens = (function () {
   var E = Engine, root = document.getElementById('screen'), refresh = null, actions = {};
   var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], TYPES = ['unit', 'instant', 'enchant', 'spell', 'land'];
@@ -56,11 +56,13 @@ var Screens = (function () {
     function later(title, sub) {
       return '<div class="mitem off"><b>' + title + '</b><span>' + sub + '</span></div>';
     }
+    var run = Campaign.current();
     show('<main class="menu"><div class="mcol"><h1>Breachline</h1><nav class="mlist" aria-label="Main menu">' +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
-      item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.', !cont) +
+      (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
+        : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
+      item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Every card is open.') +
-      later('Campaign', 'Coming later. Win battles and choose cards to keep.') +
       later('Multiplayer', 'Coming later. Collect cards from packs.') +
       '</nav></div><div class="fan" aria-hidden="true">' + fan + '</div></main>', menu);
   }
@@ -68,6 +70,134 @@ var Screens = (function () {
   actions.resume = function () { hide(); GameUI.resume(); };
 
   actions.exhibition = function () { GameUI.showStart(); };
+
+  // Campaign
+
+  var setupPlayer = 'bot', mapPick = null, confirmAbandon = false;
+
+  function tree(x, y, s) { return 'M' + x + ' ' + y + 'v' + (-5 * s) + 'M' + (x - 6 * s) + ' ' + (y - 5 * s) + 'L' + x + ' ' + (y - 17 * s) + 'L' + (x + 6 * s) + ' ' + (y - 5 * s) + 'Z'; }
+  function peak(x, y, s) { return 'M' + (x - 26 * s) + ' ' + y + 'L' + x + ' ' + (y - 34 * s) + 'L' + (x + 26 * s) + ' ' + y + 'M' + x + ' ' + (y - 34 * s) + 'l6 ' + 14 * s + 'l-7 ' + 3 * s + 'l5 ' + 12 * s; }
+  function many(draw, spots) { return spots.map(function (p) { return draw(p[0], p[1], p[2] || 1); }).join(''); }
+  // The terrain is all drawn here, in the map's ink, and stays loose until the world has a fixed geography.
+  var TERRAIN =
+    '<path class="river" d="M245 0C215 110 110 240 140 350S185 470 160 520S110 590 120 620"/>' +
+    '<path class="ink" d="' + many(tree, [[300, 500], [335, 470], [372, 455], [425, 450], [470, 470], [505, 505], [285, 555], [322, 590, 1.2], [480, 590, 1.2], [525, 560], [365, 600], [440, 605], [545, 610, .9]]) + '"/>' +
+    '<path class="ink" d="' + many(peak, [[455, 345, 1.4], [510, 285], [630, 340, 1.5], [690, 395, 1.1], [420, 280, .9], [705, 290, 1.2], [790, 320, 1.5], [880, 365, 1.1], [920, 250, 1.2], [770, 215, 1], [130, 130, 1.1], [70, 180, .9], [950, 80, 1], [740, 70, 1.1]]) + '"/>' +
+    '<path class="ink" d="M285 190v-34h14v-12h24v12h14v34M305 190v-16a6 6 0 0 1 12 0v16M250 190h122M280 144l-8 -9M342 144l8 -9"/>' +
+    '<path class="ink faint" d="M560 150h90M555 162h110M552 174h120M552 186h110M570 138h70M575 118v12M570 123h10M625 110v12M620 115h10M655 128v12M650 133h10"/>' +
+    '<path class="ink" d="M835 78l25 -20l25 20M840 78v26M880 78v26M852 78v26M868 78v26M830 106h60"/>';
+
+  // Both roads are cut from the same curve, so the walked part stays on the route. stops is how many legs to draw.
+  function roadPath(points, stops) {
+    var d = 'M' + points[0][0] + ' ' + points[0][1];
+    for (var i = 0; i < stops; i++) {
+      var a = points[Math.max(i - 1, 0)], b = points[i], c = points[i + 1], e = points[Math.min(i + 2, points.length - 1)];
+      d += 'C' + (b[0] + (c[0] - a[0]) / 6) + ' ' + (b[1] + (c[1] - a[1]) / 6) + ' ' + (c[0] - (e[0] - b[0]) / 6) + ' ' + (c[1] - (e[1] - b[1]) / 6) + ' ' + c[0] + ' ' + c[1];
+    }
+    return d;
+  }
+  // at is the chapter you stand on, or -1 before the run starts. The road starts at the map's lower left.
+  function mapHtml(story, at, picked) {
+    var points = [[40, 590]].concat(story.chapters.map(function (c) { return [c.x * 10, c.y * 6.2]; }));
+    var nodes = story.chapters.map(function (c, i) {
+      var state = at < 0 || i > at ? 'next' : i < at ? 'done' : 'now';
+      var word = state === 'done' ? 'cleared' : state === 'now' ? 'your next battle' : 'not reached yet';
+      return '<button type="button" class="mnode ' + state + (picked === i ? ' picked' : '') + '" style="left:' + c.x + '%;top:' + c.y + '%" ' + act('mapPick', i) + ' aria-label="Chapter ' + (i + 1) + ', ' + esc(c.title) + ', ' + word + '"' + (at < 0 ? ' disabled' : '') + '>' +
+        '<span class="seal">' + (i + 1) + '</span><span class="mlabel">' + esc(c.title) + '</span></button>';
+    }).join('');
+    return '<div class="cmap"><svg viewBox="0 0 1000 620" aria-hidden="true">' + TERRAIN +
+      '<path class="road" d="' + roadPath(points, points.length - 1) + '"/>' + (at > 0 ? '<path class="walked" d="' + roadPath(points, at + 1) + '"/>' : '') +
+      '</svg>' + nodes + '</div>';
+  }
+  function deckGrid(list) {
+    var cards = list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(function (e) {
+      return '<div class="pcard"><div class="card">' + GameUI.frameHtml(E.CARDS[e[0]]) + '</div>' + (e[1] > 1 ? '<span class="have">× ' + e[1] + '</span>' : '') + '</div>';
+    }).join('');
+    return '<section class="pickset"><h2>Your deck: ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
+  }
+  function opponentName(player) { return player === 'bot' ? 'the scripted bot' : 'Claude, ' + AI.levels[player].label; }
+  function campaignHead(title) {
+    return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + '</h1></header>' +
+      (Campaign.persistent() ? '' : '<p class="warn">This browser is blocking storage, so this run lasts only until you close this tab.</p>');
+  }
+  function fitAll() { GameUI.fitCards(root); }
+
+  function setup() {
+    var story = Campaign.STORIES.vigil, ready = GameUI.modelReady();
+    if (setupPlayer !== 'bot' && !ready) setupPlayer = 'bot';
+    var who = '<button type="button" class="who-plays" ' + act('setPlayer', 'bot') + ' aria-pressed="' + (setupPlayer === 'bot') + '"><b>Scripted bot</b><span>Plays instantly, with fixed habits.</span></button>' +
+      ['easy', 'normal', 'hard'].map(function (k) {
+        return '<button type="button" class="who-plays" ' + act('setPlayer', k) + ' aria-pressed="' + (setupPlayer === k) + '"' + (ready ? '' : ' disabled') + '><b>Claude: ' + AI.levels[k].label + '</b><span>' + AI.levels[k].blurb + '</span></button>';
+      }).join('');
+    var soon = ['U', 'B', 'R', 'G'].map(function (c) { return '<span class="soon">' + symbol(c) + GameUI.ALIGNMENT[c] + '</span>'; }).join('');
+    show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
+      '<aside class="cside"><div class="story"><p class="eyebrow">' + symbol('W') + 'Vigil</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p></div>' +
+      '<div class="soons" aria-label="Campaigns coming later"><span class="hint">Coming later:</span>' + soon + '</div>' +
+      '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
+      '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
+      '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
+      '<button type="button" class="btn primary big" ' + act('beginRun') + '>Begin the run</button></aside></div></div>', setup);
+  }
+  function chapterPanel(run, i) {
+    var story = Campaign.storyOf(run), c = story.chapters[i], head = '<p class="eyebrow">Chapter ' + (i + 1) + ' of ' + story.chapters.length + '</p><h2>' + esc(c.title) + '</h2>';
+    if (i > run.chapter) return '<div class="story">' + head + '<p>You haven\'t reached this yet.</p></div>';
+    var foe = '<p class="foe">' + symbol(c.enemy.colours[0]) + esc(c.enemy.name) + '</p>';
+    if (i < run.chapter) return '<div class="story">' + head + '<p>' + esc(c.text) + '</p>' + foe + '<p class="cleared">Cleared</p></div>';
+    return '<div class="story">' + head + '<p>' + esc(c.text) + '</p>' + foe + '</div>' +
+      '<button type="button" class="btn primary big" ' + act('fight') + '>' + (run.battle ? 'Continue the battle' : 'Fight') + '</button>';
+  }
+  function mapScreen(run) {
+    var story = Campaign.storyOf(run), picked = mapPick === null ? run.chapter : mapPick;
+    var leave = confirmAbandon
+      ? '<span class="dask">End this run for good?</span><button type="button" class="btn danger" ' + act('abandonRun') + '>End run</button><button type="button" class="btn" ' + act('keepRun') + '>Keep going</button>'
+      : '<button type="button" class="btn" ' + act('askAbandon') + '>Abandon run</button>';
+    show('<div class="page">' + campaignHead(story.title) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
+      '<aside class="cside">' + chapterPanel(run, picked) +
+      '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p><div class="cleave">' + leave + '</div></aside></div>' +
+      deckGrid(run.list) + '</div>', campaign);
+    fitAll();
+  }
+  function reward(run) {
+    var offer = run.offer, c = Campaign.chapterOf(run);
+    var cards = offer.cards.map(function (id) {
+      var spoil = E.CARDS[id].colour === offer.spoils;
+      return '<div class="rpick"><span class="rfrom">' + (spoil ? 'Won from ' + esc(c.enemy.name) : 'Joins your side') + '</span>' +
+        '<button type="button" class="card" ' + act('takeCard', id) + ' aria-label="Keep ' + esc(E.CARDS[id].name) + '">' + GameUI.frameHtml(E.CARDS[id], { big: true }) + '</button></div>';
+    }).join('');
+    var lands = offer.lands.map(function (id) { return '<button type="button" class="btn" ' + act('takeCard', id) + '>' + symbol(E.CARDS[id].colour) + ' ' + esc(E.CARDS[id].name) + '</button>'; }).join('');
+    show('<div class="page">' + campaignHead('Choose a card to keep') +
+      '<p class="hint rlead">You beat ' + esc(c.enemy.name) + '. Your deck has ' + plural(E.deckSize(run.list), 'card') + '.</p>' +
+      '<div class="rpicks">' + cards + '</div>' +
+      '<div class="rother"><span class="hint">Or add a land:</span>' + lands + '<button type="button" class="btn" ' + act('takeCard') + '>Take nothing</button></div>' +
+      deckGrid(run.list) + '</div>', campaign);
+    fitAll();
+  }
+  function runEnd(run) {
+    var story = Campaign.storyOf(run), won = run.status === 'won', c = Campaign.chapterOf(run);
+    var taken = run.taken.length ? 'You kept ' + run.taken.map(function (id) { return E.CARDS[id].name; }).join(', ') + '.' : 'You kept no new cards.';
+    show('<div class="page rend"><div class="story"><p class="eyebrow">' + esc(story.title) + '</p><h2>' + (won ? 'The road ends here' : 'The run is over') + '</h2>' +
+      '<p>' + esc(won ? story.ending : story.defeat) + '</p>' +
+      '<p class="hint">' + (won ? 'You cleared all ' + story.chapters.length + ' chapters.' : 'You fell at ' + esc(c.title) + ', chapter ' + (run.chapter + 1) + ' of ' + story.chapters.length + '.') + ' ' + esc(taken) + '</p></div>' +
+      '<div class="cleave"><button type="button" class="btn primary" ' + act('newRun') + '>Start a new run</button><button type="button" class="btn" ' + act('leaveEnd') + '>Main menu</button></div></div>', campaign);
+  }
+  function campaign() {
+    var done = Campaign.ended(), run = Campaign.current();
+    if (done) return runEnd(done);
+    if (!run) return setup();
+    if (run.status === 'reward') return reward(run);
+    mapScreen(run);
+  }
+  actions.campaign = function () { mapPick = null; confirmAbandon = false; campaign(); };
+  actions.setPlayer = function (key) { setupPlayer = key; setup(); };
+  actions.beginRun = function () { Campaign.begin('vigil', setupPlayer); actions.campaign(); };
+  actions.mapPick = function (i) { mapPick = +i; campaign(); };
+  actions.fight = function () { GameUI.playChapter(); };
+  actions.takeCard = function (id) { Campaign.take(id === undefined ? null : id); actions.campaign(); };
+  actions.askAbandon = function () { confirmAbandon = true; campaign(); };
+  actions.keepRun = function () { confirmAbandon = false; campaign(); };
+  actions.abandonRun = function () { Campaign.abandon(); actions.campaign(); };
+  actions.newRun = function () { Campaign.dismiss(); actions.campaign(); };
+  actions.leaveEnd = function () { Campaign.dismiss(); menu(); };
 
   // Deck list
 
@@ -337,5 +467,5 @@ var Screens = (function () {
 
   function hide() { root.hidden = true; refresh = null; }
 
-  return { menu: menu, builder: builder, hide: hide, redraw: redraw, coverArt: coverArt };
+  return { menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt };
 })();

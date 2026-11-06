@@ -4,6 +4,8 @@
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   // Who plays the opponent: the scripted bot, or Claude at a difficulty level from guides.js.
   var oppPlayer = 'bot', debugOn = false;
+  // A campaign battle saves after every move and reports its result to Campaign. The exhibition's opponent pick waits meanwhile.
+  var chapterBattle = false, exhibitionPlayer = 'bot';
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
@@ -92,7 +94,7 @@
   // The Claude opponent needs the page to be running inside Claude. Anywhere else, only the scripted bot is on offer.
   var sample = null, plan = null, thinking = null, modelOff = false, lastThought = null;
   if (window.claude && window.claude.use) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
-  function refreshStart() { if (!$('start').hidden) renderStart(); }
+  function refreshStart() { if (!$('start').hidden) renderStart(); Screens.redraw(); }
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
@@ -287,7 +289,10 @@
   function resultHtml() {
     if (S.winner === null) return '';
     var txt = S.winner === 'draw' ? 'A draw' : S.winner === HUMAN ? 'You win' : 'You lose';
-    return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.</p><span class="btns">' + btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + '</span></div>';
+    var ended = Campaign.ended(), next = !chapterBattle ? '' : S.winner === 'draw' ? 'Fight it again' : S.winner !== HUMAN ? 'Continue' : ended ? 'Continue' : 'Choose a card';
+    var note = chapterBattle && S.winner === 'draw' ? ' Nobody holds the field, so this battle is fought again.' : chapterBattle && S.winner !== HUMAN ? ' Your run ends here.' : '';
+    return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p><span class="btns">' +
+      (chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' })) + '</span></div>';
   }
 
   function announceTurn() {
@@ -409,6 +414,10 @@
     }
     if (m.type === 'summon' || m.type === 'move') flash = [m.r, m.c]; else flash = null;
     S = E.applyMove(S, m);
+    if (chapterBattle) {
+      if (S.winner !== null) Campaign.finish(S.winner);
+      else Campaign.saveBattle(S);
+    }
     if (m.type === 'move' && S.units.some(function (u) { return u.uid === m.unit; }) && E.legalMoves(S).some(function (x) { return x.unit === m.unit; })) sel = { kind: 'unit', id: m.unit };
     else sel = null;
     render();
@@ -570,6 +579,7 @@
     if (d.ui === 'new') return start();
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
+    if (d.ui === 'campaign') return toCampaign();
     if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
     if (d.ui === 'ability') sel.ability = true;
@@ -591,7 +601,12 @@
     var b = e.target.closest('[data-panel]');
     if (b) setDrawer(b.getAttribute('aria-expanded') === 'true' ? null : b.dataset.panel);
   });
-  $('menuBtn').addEventListener('click', function () { $('menu').showModal(); });
+  $('menuBtn').addEventListener('click', function () {
+    $('menuNote').textContent = chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : 'If you leave, this battle waits until you begin another.';
+    $('menuRestart').hidden = $('menuDecks').hidden = chapterBattle;
+    $('menuMap').hidden = !chapterBattle;
+    $('menu').showModal();
+  });
   $('menu').addEventListener('click', function (e) { if (e.target.closest('[data-close]')) $('menu').close(); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
   $('inspect').addEventListener('click', closePeek);
@@ -622,6 +637,7 @@
   function showStart(mine) {
     runToken++;
     stopThinking();
+    if (chapterBattle) oppPlayer = exhibitionPlayer;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var newest = Decks.saved().filter(playable)[0];
     picks = { mine: ready(mine) || ready(last.mine) || (newest ? newest.id : 'white'), opp: ready(last.opp) || 'red' };
@@ -638,6 +654,24 @@
     $('start').hidden = true;
     Screens.menu();
   }
+  function toCampaign() {
+    runToken++;
+    stopThinking();
+    $('app').hidden = true;
+    $('start').hidden = true;
+    Screens.campaign();
+  }
+  // Fights the run's current chapter, picking up a saved battle if there is one.
+  function playChapter() {
+    var run = Campaign.current();
+    if (!chapterBattle) exhibitionPlayer = oppPlayer;
+    chapterBattle = true;
+    oppPlayer = run.player;
+    decks = Campaign.decks(run);
+    Screens.hide();
+    start(run.battle || undefined);
+    if (!run.battle) Campaign.saveBattle(S);
+  }
   function forGame(id) {
     var d = Decks.find(id);
     return d.starter ? id : { name: d.name, list: d.list };
@@ -650,6 +684,7 @@
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
     if (e.target.closest('#begin')) {
       Decks.setPicks(picks);
+      chapterBattle = false;
       decks = [forGame(picks.mine), forGame(picks.opp)];
       start();
     }
@@ -678,15 +713,21 @@
     schedule();
   }
 
-  function boot(data) { if (data && data.state) start(data.state); else Screens.menu(); }
+  function boot(data) {
+    var run = Campaign.current();
+    if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
+    else if (data && data.state) start(data.state);
+    else Screens.menu();
+  }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
-    showStart: showStart,
-    inProgress: function () { return !!S && S.winner === null; },
+    showStart: showStart, playChapter: playChapter,
+    modelReady: function () { return !!sample; },
+    inProgress: function () { return !!S && S.winner === null && !chapterBattle; },
     resume: function () { $('app').hidden = false; render(); schedule(); }
   };
-  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S }; });
+  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S, chapter: chapterBattle }; });
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
