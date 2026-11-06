@@ -13,7 +13,7 @@ var AI = (function () {
 
   var RULES = [
     'THE RULES',
-    '- The map has 4 rows (0-3) and 5 columns (0-4). Each summoner starts with 150 life and loses at 0. At the turn limit of 60, the higher life total wins.',
+    '- The map has 4 rows (0-3) and 5 columns (0-4). Each summoner starts with 15 life and loses at 0. At the turn limit of 60, the higher life total wins.',
     '- Your turn: you draw a card, then the play phase, then the command phase. You cannot go back to the play phase.',
     '- Play phase: play one land (adds 1 mana now and each later turn), and play any cards you can pay for. Mana refills at the start of your turn.',
     '- Each land you lack of a card\'s colour adds 1 to its cost, so a card is never locked out.',

@@ -1,0 +1,261 @@
+# Breachline card art briefs: set 4
+
+26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06. **Status: briefs only, nothing has been generated.** The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
+
+Sellsword, Oath knight, Orc warchief and Hill giant already have paintings, so they have no briefs here. This set is named 4 because `ART_BRIEFS_SET3.md` already exists in the main checkout.
+
+## Instructions for the image generator
+
+1. If you have access to the project, read `.claude/skills/art-direction/SKILL.md` in the main checkout first, along with the peoples catalogue in `breachline/SETTING.md`. The creator's latest feedback there overrides these briefs. A brief's pose or staging can change to serve the direction, but keep its subject and its gameplay idea.
+2. Generate one image per heading, using the shared direction below plus that card's brief. Exact combined prompts are in `ART_PROMPTS_SET4.json`.
+3. Save a 1536 x 1024 landscape PNG in the `art/` folder under the name in the heading, and a 768 x 512 JPEG of the same name in `art/web/`.
+4. Skip any card whose file already exists, and never overwrite existing art. No file name here matches an existing painting.
+5. Use `sunmane-lancer.png` for painted material quality only, not its pose, framing, sky or colour.
+6. If you can't generate images, stop and say so. Don't substitute placeholders or images from the web.
+
+When finished, list the files you created and any cards you couldn't complete.
+
+## Shared direction
+
+Apply this to every image:
+
+```text
+Use case: stylized-concept.
+Create one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.
+
+ART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands and faces, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.
+
+Tell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
+
+Use a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.
+
+SETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power. Fervor prizes passion and freedom. Genesis lives in and defends the wild.
+```
+
+## Alignment palettes
+
+Alignment can be clear without being heavy-handed, and emblems don't need to appear on everything. The black and green rows are still proposals.
+
+| Alignment | Palette and light |
+| --- | --- |
+| Vigil | Gold, ivory, sky blue; warm light |
+| Gnosis | Deep blue, teal, brass, amber; lamplight |
+| Dominion | Ash grey, bone, tarnished silver, deep violet; cold light. Patient, pitiful or ceremonious, rather than defaulting to gore, fangs or gothic castles |
+| Fervor | Ember orange, iron, soot, blood red; firelight and hard sun |
+| Genesis | Moss, bark, deep green, amber; dappled light. Distinct natural silhouettes, not humanoids dressed in leaves |
+
+## Vigil
+
+### Oath shieldbearer: oath-shieldbearer.png
+
+*Unit, cost 2. Guard: adjacent allies take less damage.*
+
+An ordinary Middle Eastern woman of about twenty-five, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.
+
+### Pride huntress: pride-huntress.png
+
+*Unit, cost 2. Stand together: stronger next to an ally.*
+
+A lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears light, undyed leather, not armour. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.
+
+### Pride matriarch: pride-matriarch.png
+
+*Unit, cost 5. Guard and Stand together.*
+
+An old lion folk matriarch, tall and upright with a full mane gone grey and cream, stands knee-deep in the middle of a river ford, seen full-body from a low viewpoint on the water. She faces the far bank off-screen RIGHT, watching it steadily. One arm holds a long plain ash staff planted in the riverbed, and the other rests against a small lion cub pressed to her hip. Behind her, a few loosely painted lion folk wade across with bundles, sheltered by where she has chosen to stand. Her robe is undyed ivory and pale blue, with no ornate armour. Teal water throws moving gold light up onto her. Calm, immense authority, earned by age.
+
+## Gnosis
+
+### Sifting the shallows: sifting-the-shallows.png
+
+*Spell, cost 1. Draw a card, then put a card on the bottom of your deck.*
+
+A close, low view of a pair of pale, weathered forearms, physically connected beyond the crop, holding a flat brass-rimmed sieving pan just under the surface of ankle-deep water at dusk. Grey silt pours slowly through the mesh. Among it lie a few small shards of clear glass, each holding a tiny point of light. One shard has risen a finger's width above the pan by itself, while the others sink back into the water. A single amber lantern stands on the bank, soft and out of focus. Luminous cyan and teal water against one warm light. The whole idea is one small thing answering. No face, beam, runes or lettering.
+
+### Conclave phantasm: conclave-phantasm.png
+
+*Unit, cost 2. Decoy that can also hit.*
+
+A narrow city lane at blue hour. A slim duellist made of lamplight lunges side-on toward the LEFT, full-body, with a light sword aimed at someone off-screen, never at the viewer. The figure looks like a reflection seen in a shop window: faintly transparent, so the lit doorways behind show through its chest, with one trailing edge dissolving into soft brushstrokes. It has no distinct face. Far to the right, a small, ordinary student sits on a doorstep working it, attentive, and painted loosely. Amber and teal only. Avoid gemstone, opal or iridescent skin, and avoid a ghost's wail. It is clever rather than frightening.
+
+### Threshold adept: threshold-adept.png
+
+*Unit, cost 3. Ability: swap places with one of your units.*
+
+A stone quay at dusk, in a wide view showing two whole figures about ten paces apart. A young white man in a plain indigo coat has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad dockhand holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.
+
+### Conclave examiner: conclave-examiner.png
+
+*Unit, cost 4. Ability: an enemy unit cannot move or attack on its next turn.*
+
+A South Asian woman in her sixties, in a long slate-blue coat with her grey hair pinned up, sits on a small folding stool in an empty paved square, in full profile facing LEFT. She holds a pair of brass callipers out at arm's length, one eye narrowed, measuring something off-screen as if it were a specimen. Just in front of her, a narrow band of the air has gone perfectly still: a falling leaf and a thrown-up curl of dust hang motionless in it, while dust elsewhere drifts naturally. She's absorbed and unhurried, with no hostility at all. Quiet greys and teal, with brass as the only warm note. Keep the background to a single pale wall.
+
+### Brass siege-walker: brass-siege-walker.png
+
+*Unit, a construct, cost 5. Longshot: attacks up to 3 tiles away.*
+
+A strange working machine, shown complete in a wide view: a tall, narrow brass frame on three long jointed legs, picking its way across a dry quarry floor. Its entire body is built around one long wooden throwing arm, drawn back and sighted far off-screen RIGHT, past the edge of the image. Its anatomy comes from that job, with no human head or torso, so it reads as a precise instrument that happens to walk. A small artificer sits in a sling seat, loosely painted, adjusting a sighting ring. Leave open gaps through the frame. It stands about two storeys tall. Sparse teal enamel, no organ pipes or smoke. Wide empty sky gives it room.
+
+### Ilvane, Who Asks Twice: ilvane.png
+
+*Unit, a Velunn: a lesser divine being, cost 6. Ranged. Draws a card when it destroys a unit.*
+
+A very tall, thin being with deep brown skin and a long neck, in layered blue-black robes, bends down from a great height in a dim stone colonnade, shown full-body and leaning to the RIGHT. It is listening to a small kneeling scholar, loosely painted, who is mid-answer. Its head is tilted, and one too-long finger is lifted as if about to ask the same question again. Its eyes are pale and gentle, and unnerving because of how closely they attend. A small amber lamp hanging from its other hand lights them both. It is plainly more than human, with no halo, wings, crown or glowing display. Dark, quiet space above it shows its height.
+
+## Dominion
+
+### Barrow rats: barrow-rats.png
+
+*Unit, cost 1. Hunt: stronger against a damaged unit.*
+
+An extremely low viewpoint at ground level on grey ash under cold moonlight. Three lean, ordinary rats move in a line toward the LEFT, noses down, following a long uneven drag mark that continues off-screen. The lead rat has paused with its head raised and whiskers forward, sure of what it's following. They are ordinary animals with no mutation, glowing eyes or exposed bone. There is no blood or body in frame. The unease comes from their patience and the mark's direction. Deep violet and bone grey with soft edges, and one pale leaning stone out of focus. Keep all three rats fully in frame, and let them read clearly at small size.
+
+### Indebted squire: indebted-squire.png
+
+*Unit, cost 1. When summoned, you lose 1 life.*
+
+A white boy of about seventeen stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.
+
+### Hunted: hunted.png
+
+*Enchantment, cost 2. Units attacking the enchanted unit get +1 attack.*
+
+A high, wide view of a pale ash-covered moor at dusk, with a low sun at the far RIGHT of the image. One tiny, lone figure hurries LEFT across the open ground. A dozen bare thorn trees stand scattered around them at different distances, and every tree's long shadow bends across the ground to point at the figure, whichever way the sun should have thrown it. That is the only wrong thing in the painting. No pursuer, eyes, glowing marks or monsters are visible. Broad, quiet shapes with a limited palette of bone white, cold violet and one strip of dull gold. Restrained abstraction is welcome here. Dread comes from how calm the landscape looks.
+
+### Called debt: called-debt.png
+
+*Instant, cost 2. Lose 2 life and destroy a damaged enemy unit.*
+
+A close view of a single gloved hand, physically connected beyond the crop at the lower left, closing around a dark knotted cord that runs taut across the whole image and off-screen to the RIGHT, toward someone we can't see. The cord is parting at the instant shown: one strand has already snapped and is curling back, and a thin thread of deep violet smoke leaves the break. The glove has slipped at the wrist, and the bare skin there has just gone grey, as though the price landed at the same moment. No blood, wounds or lettering. Muted ash and charcoal with one saturated violet. It should feel sudden, and read as a bargain coming due.
+
+### Ashen Court envoy: ashen-court-envoy.png
+
+*Unit, cost 4. Drain.*
+
+A snowbound border post at a pale blue dawn. A composed Black man in his forties, in an immaculate charcoal travelling coat with a thin violet lining and tarnished silver clasps, is seen full-body from behind and to one side, walking LEFT toward two border guards. He holds out a sealed letter without any visible lettering. The guards are loosely painted, huddled, and their breath shows in the cold, as does his horse's. His doesn't. Nothing else is said about him: no fangs, no pallor, no high collar, no cape and no sinister smile. He's courteous, unhurried and a little too comfortable. Keep the post itself to one timber gate and a lot of open snow.
+
+### Barrow priest: barrow-priest.png
+
+*Unit, cost 4. Ability: return a cheap unit from your discard pile to your back row.*
+
+An elderly white priest in layered grey and dull violet vestments kneels on a low burial mound at evening, side-on and facing LEFT. Very gently, he helps a long-dead soldier sit up out of the loose earth, with one arm behind its shoulders and the other steadying its rusted wrist, the way someone helps a frail relative rise from bed. A shallow bowl of bones sits beside him on the ground. The soldier's helmeted head hangs forward, with old bone and dried skin but no gore. The priest's face shows patience and real tenderness, which makes it unsettling. No glowing magic, skulls on staffs or black robes with flames. Ash grey and bone, under a long strip of pale sky.
+
+### Barrow colossus: barrow-colossus.png
+
+*Unit, cost 5. Gathered: stronger for each unit in your discard pile.*
+
+In a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.
+
+## Fervor
+
+### Goblin firepot: goblin-firepot.png
+
+*Unit, cost 2. When summoned, deals 1 damage to an enemy unit.*
+
+A small, wiry goblin stands on a rock on a scrubby hillside under hard noon sun and a clear blue sky, seen full-body from a low angle. He's winding up to lob a smoking clay pot underarm toward someone off-screen RIGHT, with his weight on his back foot, tongue at the corner of his mouth and eyes fixed on his target. Orange glows through a crack in the pot. A second pot hangs from a strap at his hip, wick unlit. Practical soot-brown clothes and a faded red neckcloth. He looks eager and a bit reckless, more an enthusiast than a champion. Simple, readable face without many teeth. The blue sky contrasts with the orange.
+
+### Cinderfall: cinderfall.png
+
+*Spell, cost 4. 3 damage to an enemy unit and 1 to each enemy next to it.*
+
+A high view down into a narrow valley at deep indigo dusk. A single slow column of embers falls from above onto one point on an old road, and where it lands, a bright ring of orange light has opened in the ground. Smaller scatters of sparks are falling on either side of it. A handful of tiny soldiers, only a few strokes each, are spreading away from the ring with raised shields, with no bodies or gore. It's local and human in scale, not a volcano, and not the end of the world. The event is the subject and no caster is visible. Rich indigo and ember orange, with one line of cold river in the valley.
+
+### Giant chieftain: giant-chieftain.png
+
+*Unit, cost 6. Frenzy: stronger while damaged.*
+
+A wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. Grey braids, plain hide and iron, with very little blood. A small orc struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.
+
+## Genesis
+
+### Thicket boar: thicket-boar.png
+
+*Unit, cost 1.*
+
+An ordinary, stocky wild boar is rooting in a fern thicket, shown full-body and side-on, facing LEFT. It has just lifted its head mid-dig with a clod of dark earth still on its snout, ears up, looking at something off-screen with mild suspicion. Coarse bristled hair is simplified into broad painted shapes. No huge tusks, moss armour or glowing eyes: this is a common animal of believable size. Dappled light falls across its back, with deep green and warm brown, and a single patch of yellow leaves as an accent. Keep the forest as soft, implied shapes behind. It should feel solid and a little comic in its attention, without being cartoonish.
+
+### Grove tender: grove-tender-set4.png
+
+*Unit, cost 3. Ability: an adjacent ally permanently grows.*
+
+An alderkin, a living tree person about three metres tall, fights in a churned forest clearing, shown full-body in a wide stance and facing LEFT. Its asymmetrical trunk body is braced on two rootlike legs, and one long branch arm is sweeping sideways toward an enemy off-screen LEFT, with scattered bark and leaves showing the force of the swing. Its other arm stays low behind it, with a few root-fingers resting on a small walking sapling at its side. Under that touch, the sapling's limbs are visibly thickening and throwing out new pale green growth. A head grows naturally from the upper trunk, with quiet knot-like eyes and no carved human face. It's protective and dangerous, with no humans in the scene. Hard shafts of light and deep green shadow.
+
+### Mossback bear: mossback-bear.png
+
+*Unit, cost 4. Regrow: recovers health at the start of your turn.*
+
+A big, believable brown bear, about the size of a horse, wades out of a cold stream at evening toward the RIGHT, seen in a full-body three-quarter view from behind, with water running from its coat. Thick moss and a few small ferns grow along its back and over long-healed scars on its shoulder, as though the wounds had grown over instead of closing. It looks back over its shoulder, unbothered, at something off-screen LEFT. It is not charging, rearing or roaring. Golden light on wet fur, with deep green and cool grey stones, and one bright rim of water. A forest edge is only implied. Believable anatomy, with broad painted fur rather than individual hairs.
+
+### Herd mother: herd-mother.png
+
+*Unit, cost 6. Overrun: excess damage carries through.*
+
+A very wide view of open uplands on a clear frost morning. An ancient, shaggy cow of the same kind as the Elder Herd bull, large as a barn, walks steadily away to the LEFT, seen in three-quarter view from behind. Her vast, sweeping horns are worn, and one has an old broken tip. A young calf walks in her shadow, and a few distant shapes of the herd follow. On a far ridge, two tiny people have stopped and stand watching her, plainly in awe, because this is not something anyone sees often. Her breath shows in the cold. White frost, russet coat and pale blue sky, with a lot of open space. She's unhurried, and nothing is being trampled.
+
+### Orrowen, Who Was Here First: orrowen.png
+
+*Unit, a Velunn: a lesser divine being, cost 7. Grows and Overrun.*
+
+An old paved road curves widely, for no apparent reason, around a long, low green mound in rolling country at deep golden hour. The mound has just lifted its head. It's a very long, quiet face of living wood and stone with a great branching crown like antlers, and its amber eyes are half open, looking toward the RIGHT. Most of its body remains hillside, and it's hard to say where one ends and the other begins. A small traveller with a pack has stopped on the bend of the road, one hand slowly lowering, painted loosely. It is plainly more than an animal and has no ruin, city or building on its back. Deep greens and warm gold, with long shadows and a sense of great age.
+
+## Neutral
+
+### Camp follower: camp-follower.png
+
+*Unit, cost 1.*
+
+A Black woman in her thirties, a cook and laundress travelling with an army's camp, walks along its edge at low sun, shown full-body and heading RIGHT. A bundle of firewood rests on one shoulder and a dented kettle swings from her other hand. She has glanced back over her shoulder at someone calling from the tents, which are only a few loose shapes. Plain, patched dun clothes, an apron and sturdy boots, with no weapon and no alignment emblem. She's capable and wry, an ordinary person with a long day behind her. Warm dust and dove grey, and long evening shadows. No romance, no glamour, and no battlefield in view.
+
+### Scarred summoner: scarred-summoner.png
+
+*Unit, cost 4. When summoned, draws a card.*
+
+A white woman of about fifty-five sits on an upturned bucket beside a small campfire at night, in a medium view turned three-quarters to the LEFT. Her long sleeves are rolled above the elbow without any concern, and she's rinsing her forearm in a dented basin. Along that arm and up her neck runs a golden, scar-like mark, softly glowing, which lights the water and the underside of her chin. She has lived with it for a very long time. Her expression is tired, plain and at peace, and she's looking at nothing in particular. Plain grey travelling clothes. She doesn't hide the mark and doesn't display it. Warm firelight, cool blue night and one line of gold.
+
+## Choices to check
+
+- **Grove tender:** this is an alderkin in a fight, as the creator confirmed alderkin can fight. It has its own file name because Set 3's `grove-tender.png` is being repainted as a lone alderkin climbing a ridge. Whether walking saplings are young alderkin is still undecided, so the brief doesn't say.
+- **Lion folk:** only the two Pride cards use them, following the note to reduce lion repetition.
+- **Ashen Court envoy:** you haven't said yet whether this card is a vampire. The brief leaves it open with one small detail: everyone's breath shows in the cold but his. Remove that line if he stays human.
+- **Barrow colossus, Mossback bear and Ilvane and Orrowen's appearances:** these are new subjects, so they're proposals, as are the placeholder Velunn names.
+- **Scarred summoner:** she's meant to echo Young summoner, who keeps her mark hidden, without being the same person.
+- **Indebted squire and Called debt:** both use a knotted cord, so the two cards quietly answer each other.
+
+## Variety across the batch
+
+| Facing | Cards |
+| --- | --- |
+| Left | 12 |
+| Right | 11 |
+| Lateral | 1 |
+| Down | 1 |
+| Overhead | 1 |
+
+| Card | Framing | Light |
+| --- | --- | --- |
+| Oath shieldbearer | Full body, rear three-quarter | Flat noon sun on pale dust |
+| Pride huntress | Wide, whole figure small in frame | Low dawn light through dry grass |
+| Pride matriarch | Full body, low viewpoint | Late afternoon sun reflected off moving water |
+| Sifting the shallows | Close, hands and forearms only | Single amber lantern against cool dusk water |
+| Conclave phantasm | Full body, side-on, with small figure behind | Shop window lamplight at blue hour |
+| Threshold adept | Wide, two full figures | Two kinds of light in one scene, warm interior and cool dusk |
+| Conclave examiner | Seated full figure, profile | Clear neutral morning daylight |
+| Brass siege-walker | Wide, complete machine with small operator | Clear dry late-day sky |
+| Ilvane, Who Asks Twice | Full body, very tall, wide negative space | Small hanging lamp in a dim colonnade |
+| Barrow rats | Very low close view, several small animals | Cold moonlight |
+| Indebted squire | Three-quarter figure, cropped at mid-thigh | Flat silver overcast in an open courtyard |
+| Hunted | Grand landscape, tiny figure, high viewpoint | Low sun behind the figure, with impossible shadows |
+| Called debt | Close, one hand and a taut cord crossing the frame | Dim neutral light with one violet accent |
+| Ashen Court envoy | Full body, rear three-quarter, small party | Pale blue winter dawn over snow |
+| Barrow priest | Full bodies side-on, kneeling | Low tarnished evening light |
+| Barrow colossus | Wide, full body, rear three-quarter | Flat overcast light on a fallow field |
+| Goblin firepot | Full body, low angle | Hard noon sun and a clear blue sky |
+| Cinderfall | Grand landscape from a high viewpoint | Deep indigo dusk lit by falling embers |
+| Giant chieftain | Full body, wide, side-on, small figures for scale | Bright, windy, cloud-shadowed ridge |
+| Thicket boar | Full body, side-on, close to the ground | Dappled late morning forest light |
+| Grove tender | Full body, wide stance, two figures | Hard shafts of light through a torn canopy |
+| Mossback bear | Full body, three-quarter from behind | Golden evening light on a cold stream |
+| Herd mother | Very wide, rear three-quarter, tiny observers | Clear frost morning |
+| Orrowen, Who Was Here First | Grand landscape, small observer | Deep golden hour under a clearing sky |
+| Camp follower | Full body, walking | Warm low sun at the edge of a camp |
+| Scarred summoner | Seated, medium view | A low campfire against a cool night, with the mark as second light |

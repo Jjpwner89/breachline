@@ -15,11 +15,11 @@ First version: Vigil only. The story lines live in `campaign.js`, and every line
 ## Claude's assumptions, not yet confirmed
 
 - **Length:** 6 battles, so about 1 to 2 hours at 10 to 20 minutes a battle.
-- **Summoner life:** back to 150 at the start of each battle. Life doesn't carry over.
+- **Summoner life:** back to 15 at the start of each battle. Life doesn't carry over.
 - **Rewards:** after each win except the last, choose one of three cards: two from your own side or neutral, one from the enemy you just beat. You can take a land or nothing instead.
 - **Left out of rewards:** Velunn, because they should stay rare, and cards whose cost plus wanted lands is over 7.
 - **Your deck:** no deck building during a run. The deck only grows.
-- **Enemies:** the same rules and 150 life as you. Later enemies are harder only because their decks are stronger, which goes beyond the same-rules difficulty idea for the Claude levels. That idea still applies inside each battle.
+- **Enemies:** the same rules and 15 life as you. Later enemies are harder only because their decks are stronger, which goes beyond the same-rules difficulty idea for the Claude levels. That idea still applies inside each battle.
 - **A draw:** the same battle is fought again.
 - **Saving:** after every move, in this browser only. Runs don't follow the account the way saved decks do.
 
@@ -41,22 +41,18 @@ The story, the shepherd and the shrine are all **Proposed**, and none of it adds
 
 ## Balance so far
 
-From 400 simulated runs with the scripted bot on both sides, picking rewards at random. Each chapter was fought with the deck so far, whatever happened in earlier chapters, so each one got a full sample.
+From 300 simulated runs on 2026-11-06, after the small-number merge, with the scripted bot on both sides and random rewards. Each chapter was fought with the deck so far, whatever happened in earlier chapters, so each one got a full sample.
 
 | Chapter | Bot on your side wins | Average turns |
 | --- | --- | --- |
-| The ford | 69% | 20.0 |
-| The closed road | 59% | 20.7 |
-| The pass | 46% | 20.7 |
-| The lower gate | 58% | 25.0 |
-| The fallow field | 46% | 20.3 |
-| The shrine steps | 24% | 20.9 |
+| The ford | 52% | 21.4 |
+| The closed road | 39% | 20.7 |
+| The pass | 39% | 20.7 |
+| The lower gate | 34% | 23.8 |
+| The fallow field | 41% | 21.4 |
+| The shrine steps | 39% | 21.9 |
 
-Only 7 of the 400 runs won every battle. No person has played a full run yet, and the bot plays the Vigil deck weakly, so these numbers only compare the chapters. The lower gate is easier than the pass before it, and the bot rarely uses sacrifices well, which makes both Dominion chapters easier than they would be under Claude. Claude opponents haven't been tried in a run, only the fallback to the bot.
-
-## Still to do
-
-- **`SETTING.md`:** its Map line still says a map may stay unbuilt. Change it to say the creator wants one, and that the campaign has a route map for now, with place details kept loose. It was left out of this merge because another chat had uncommitted edits to that file.
+Only 2 of the 300 runs won every battle. Enemy decks dropped to 8 or 9 lands in that merge, so they play more spells and the first chapter is harder than it was (69% before). The shrine steps also got easier (24% before), so the climb is flatter than intended. No person has played a full run on these numbers, and the bot plays the Vigil deck weakly and rarely uses sacrifices well, so these numbers only compare the chapters.
 
 ## Maps
 

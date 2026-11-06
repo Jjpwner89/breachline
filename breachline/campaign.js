@@ -23,32 +23,32 @@ var Campaign = (function () {
         {
           id: 'ford', title: 'The ford', x: 16, y: 75,
           text: 'Cinder Clan raiders hold the ford. They took a vote on you before you arrived.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 1], ['raider', 2], ['berserker', 1], ['sellsword', 1], ['hex', 2], ['youngsummoner', 1]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 9], ['goblin', 3], ['clanraiders', 3], ['raider', 2], ['berserker', 2], ['sellsword', 1], ['hex', 2], ['youngsummoner', 2]] }
         },
         {
           id: 'forest', title: 'The closed road', x: 40, y: 81,
           text: 'The old road goes through the forest, or did. The Thornwardens have spent three generations making sure of it.',
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 14], ['sapling', 2], ['saboteur', 1], ['wayfinder', 2], ['owl', 1], ['shifting', 2], ['youngsummoner', 2]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 9], ['sapling', 3], ['saboteur', 3], ['wayfinder', 2], ['owl', 2], ['shifting', 2], ['youngsummoner', 3]] }
         },
         {
           id: 'pass', title: 'The pass', x: 58.5, y: 54,
           text: "The hill bands don't care what answered her. They care that you're carrying grain through their pass.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['raider', 2], ['sellsword', 2], ['warchief', 1], ['giant', 2], ['firebolt', 1]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 8], ['goblin', 3], ['clanraiders', 2], ['raider', 3], ['sellsword', 2], ['warchief', 2], ['giant', 2], ['firebolt', 2]] }
         },
         {
           id: 'gate', title: 'The lower gate', x: 30.5, y: 36,
           text: "The Conclave got here first. They've brought instruments.",
-          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 14], ['decoy', 3], ['conjurer', 1], ['scholar', 3], ['arcanist', 1], ['chorister', 1], ['displacement', 1]] }
+          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 9], ['decoy', 3], ['conjurer', 3], ['scholar', 3], ['arcanist', 2], ['chorister', 2], ['displacement', 2]] }
         },
         {
           id: 'field', title: 'The fallow field', x: 61, y: 26,
           text: 'Nobody has farmed the field below the shrine. Tonight, it stands up.',
-          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 12], ['thrall', 3], ['harvester', 3], ['noble', 2], ['raise', 2], ['sellsword', 2]] }
+          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 8], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 2], ['raise', 2], ['sellsword', 3]] }
         },
         {
           id: 'shrine', title: 'The shrine steps', x: 85, y: 19,
           text: 'Vashkar, Who Counts the Dead, is waiting on the shrine steps. He has already counted you.',
-          enemy: { name: 'Vashkar, Who Counts the Dead', colours: ['B'], list: [['land_b', 13], ['thrall', 2], ['harvester', 2], ['noble', 2], ['vashkar', 2], ['raise', 1], ['warrant', 1], ['firebolt', 1]] }
+          enemy: { name: 'Vashkar, Who Counts the Dead', colours: ['B'], list: [['land_b', 8], ['thrall', 3], ['harvester', 2], ['noble', 3], ['vashkar', 2], ['raise', 2], ['warrant', 2], ['firebolt', 2]] }
         }
       ]
     }
@@ -87,9 +87,10 @@ var Campaign = (function () {
   }
   function save(run) { return write(JSON.stringify(run)); }
 
-  // A battle saved before a card left the game can't be played on, so that battle starts over.
+  // A battle saved before a card left the game, or on the old number scale, can't be played on, so that battle starts over.
   function battleOk(b) {
     if (!b || !b.players || !b.units) return false;
+    if (b.players.some(function (p) { return p.life > E.START_LIFE; })) return false;
     var ok = true, check = function (i) { if (!known(i.c)) ok = false; };
     b.players.forEach(function (p) { [p.deck, p.hand, p.discard, p.lands].forEach(function (pile) { (pile || []).forEach(check); }); });
     b.units.forEach(function (u) { if (!known(u.cardId)) ok = false; (u.enchants || []).forEach(check); });

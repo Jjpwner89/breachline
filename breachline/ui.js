@@ -729,7 +729,7 @@
   function boot(data) {
     var run = Campaign.current();
     if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
-    else if (data && data.state) start(data.state);
+    else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) start(data.state);
     else Screens.menu();
   }
   window.GameUI = {
