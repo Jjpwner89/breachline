@@ -1,7 +1,7 @@
 {
   "set": 4,
   "date": "2026-11-06",
-  "status": "briefs only, not generated",
+  "status": "complete — all 26 images generated; awaiting creator review",
   "sourceBriefs": "ART_BRIEFS_SET4.md",
   "sourceCards": "../CARD_PROPOSALS.md",
   "artDirection": "../../.claude/skills/art-direction/SKILL.md",
@@ -21,7 +21,42 @@
         "reference-library-2026-11-06/equipment/09-vigil-equipment.png: how padded Still Flame gear is constructed"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Oath shieldbearer. Unit, cost 2. Guard: adjacent allies take less damage.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: anatomy and painted treatment\nreference-library-2026-11-06/equipment/09-vigil-equipment.png: how padded Still Flame gear is constructed\n\nBRIEF:\nAn ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
+      "web_sha256": "01b2d06a43a708dd51fb279aaf9be2544d8ae2930cbaa72a43b0eb328e809b70",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-967bee0c-2788-4fa2-884e-2d5b09a89b4f.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Correct the framing and attention in this painting. Pull the camera back to a rear three-quarter, full-body view with BOTH figures' boots fully visible and comfortable space above the shield. Keep this ordinary young woman, her simple ivory padded gear, shield with one spent arrow, and her right hand guiding the wounded soldier by his belt. Turn her head back toward the soldier so she is checking his footing, instead of looking out toward danger. Preserve the believable shield-and-belt action. Dusty roadside with one low bank, blue sky, warm light, simple background; broadly painted, economical faces. No extra limbs. One 1536x1024 landscape illustration, no text.",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-967bee0c-2788-4fa2-884e-2d5b09a89b4f.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "pride-huntress.png",
@@ -36,7 +71,41 @@
         "reference-library-2026-11-06/people/02-lion-folk.png: feline skull, mane, hands and build"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Pride huntress. Unit, cost 2. Stand together: stronger next to an ally.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/02-lion-folk.png: feline skull, mane, hands and build\n\nBRIEF:\nA lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears a plain linen tunic with a single leather guard on her spear arm. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8327f601-9dec-4572-8c06-f768a33fa4df.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "c4528c0093003b1e1c465c3a208ad6ff144957c49487d63886462a4c8f329717",
+      "web_sha256": "ede859fc9b0e8118a2a33d629404a485561e43d151d172d1f6cc98e45ee4b316",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Reframe this painting as a much WIDER dawn view. Keep the same crouching lion folk huntress with braided mane, low signaling hand, plain linen and one low level spear, facing right. Fit her ENTIRE crouched body, feet, tail and whole spear comfortably within the image; the figure occupies about half the height and less than half the width. The other hunter stays a small loose shape well behind her. More quiet pale sky and broad ochre grass shapes, soft violet shadows, fewer detailed grass blades. Preserve the anatomy, purposeful teamwork, warm dawn atmosphere and visible broad brushwork. No added figures or gear. One 1536x1024 landscape painting without text.",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8327f601-9dec-4572-8c06-f768a33fa4df.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "pride-matriarch.png",
@@ -51,7 +120,32 @@
         "reference-library-2026-11-06/people/02-lion-folk.png: feline anatomy, with its grey-maned head as a starting point for age"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Pride matriarch. Unit, cost 5. Guard and Stand together.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/02-lion-folk.png: feline anatomy, with its grey-maned head as a starting point for age\n\nBRIEF:\nAn old lion folk matriarch, tall and upright with a full mane gone grey and cream, stands knee-deep in the middle of a river ford, seen full-body from a low viewpoint on the water. She faces the far bank off-screen RIGHT, watching it steadily. One arm holds a long plain ash staff planted in the riverbed, and the other rests against a small lion cub pressed to her hip. Behind her, a few loosely painted lion folk wade across with bundles, sheltered by where she has chosen to stand. Her robe is undyed ivory and pale blue, with no ornate armour. Teal water throws moving gold light up onto her. Calm, immense authority, earned by age.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f293c76f-5689-46b4-9c76-97159a21cad3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "9b1af767b116566e62c9742143f17ab99bbc61468e628ce9045b33bd200f9a83",
+      "web_sha256": "e281231e171d3af0ec8969a64fca4ffc82732bcf854171d41f19f00d563a4e61",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f293c76f-5689-46b4-9c76-97159a21cad3.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "sifting-the-shallows.png",
@@ -64,7 +158,30 @@
       "brief": "A close, low view of a pair of pale, weathered forearms, physically connected beyond the crop, holding a flat brass-rimmed sieving pan just under the surface of ankle-deep water at dusk. Grey silt pours slowly through the mesh. Among it lie a few small shards of clear glass, each holding a tiny point of light. One shard has risen a finger's width above the pan by itself, while the others sink back into the water. A single amber lantern stands on the bank, soft and out of focus. Luminous cyan and teal water against one warm light. The whole idea is one small thing answering. No face, beam, runes or lettering.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Sifting the shallows. Spell, cost 1. Draw a card, then put a card on the bottom of your deck.\n\nBRIEF:\nA close, low view of a pair of pale, weathered forearms, physically connected beyond the crop, holding a flat brass-rimmed sieving pan just under the surface of ankle-deep water at dusk. Grey silt pours slowly through the mesh. Among it lie a few small shards of clear glass, each holding a tiny point of light. One shard has risen a finger's width above the pan by itself, while the others sink back into the water. A single amber lantern stands on the bank, soft and out of focus. Luminous cyan and teal water against one warm light. The whole idea is one small thing answering. No face, beam, runes or lettering.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-5729fab4-e0b9-45f4-8582-9fb1ed348d93.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "37fbb57b9ba2ff78796e77f270b82918f2a1856bea0d71802c6fa7ec947db00e",
+      "web_sha256": "d8332706c7f71c1bb2851c854d40c83804222cf08771bdb0443c3a1e89e94b66",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-5729fab4-e0b9-45f4-8582-9fb1ed348d93.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "conclave-phantasm.png",
@@ -79,7 +196,32 @@
         "reference-library-2026-11-06/equipment/10-gnosis-equipment.png: the thrusting sword only"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Conclave phantasm. Unit, cost 2. Decoy that can also hit.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/equipment/10-gnosis-equipment.png: the thrusting sword only\n\nBRIEF:\nA narrow city lane at blue hour. A slim duellist made of lamplight lunges side-on toward the LEFT, full-body, with a light sword aimed at someone off-screen, never at the viewer. The figure looks like a reflection seen in a shop window: faintly transparent, so the lit doorways behind show through its chest, with one trailing edge dissolving into soft brushstrokes. It has no distinct face. Far to the right, a small, ordinary student sits on a doorstep working it, attentive, and painted loosely. Amber and teal only. Avoid gemstone, opal or iridescent skin, and avoid a ghost's wail. It is clever rather than frightening.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-3c5e56a6-d2dc-4467-960d-5a7d093f4f53.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "c90bb6990000e6c846d0754406399308242311cf3baa056064c3f2acd90f9cdd",
+      "web_sha256": "063b85dde3717ab53c5c8a9a74feab4f14d009bec9250500333cf2383b65b8aa",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/10-gnosis-equipment.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-3c5e56a6-d2dc-4467-960d-5a7d093f4f53.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "threshold-adept.png",
@@ -94,7 +236,41 @@
         "reference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Threshold adept. Unit, cost 3. Ability: swap places with one of your units.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people\n\nBRIEF:\nAn open market square closing at dusk, in a wide view showing two whole figures about ten paces apart. A young white man with a long, narrow face, in a quilted teal waistcoat over rolled shirtsleeves, has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad porter holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-dabfafd3-921b-4667-9de0-30d5da27f78b.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "9e43463bf282b28dab48b80ac843b6260c4e95fda6bfa0bda6ed6d0363dd8aa1",
+      "web_sha256": "ab7a36862a2002c00276375e8468c03210b1d94c2062db11bc39194f3fb5336f",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-961a6311-9df5-45bf-9db3-3265245e79c4.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Correct the magical storytelling of this scene. Keep the two full-body men, their distinct poses, practical clothing, warm gold light clinging to the young adept at right, and cold blue light wrapped tightly around the startled crate-carrying porter at left. REMOVE the bright window and all nearby lamps or openings that could explain the adept's gold light; replace them with a quiet dark closed market stall. Simplify the background into a few closed stalls and a plain wall, removing the crowd and distant monumental ruins. The square itself is uniformly neutral muted dusk; each man's contradictory illumination travels with him as a softly edged isolated sheet of light. Do not add any beam, portal, rune, energy swirl, magic circle or ghost duplicate. The two have just exchanged places and are wearing each other's light. Preserve natural hands and expressive but simply painted faces. Wide 1536x1024 original oil/acrylic painting, no text.",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-961a6311-9df5-45bf-9db3-3265245e79c4.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-dabfafd3-921b-4667-9de0-30d5da27f78b.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "conclave-examiner.png",
@@ -109,7 +285,32 @@
         "reference-library-2026-11-06/people/08-humans-additional-faces.png: range of ordinary older faces"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Conclave examiner. Unit, cost 4. Ability: an enemy unit cannot move or attack on its next turn.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/08-humans-additional-faces.png: range of ordinary older faces\n\nBRIEF:\nA South Asian woman in her sixties with heavy-lidded eyes and a strong nose, in a long slate-blue coat with her grey hair pinned up, sits on a small folding stool in an empty paved square, in full profile facing LEFT. She holds a pair of brass callipers out at arm's length, one eye narrowed, measuring something off-screen as if it were a specimen. Just in front of her, a narrow band of the air has gone perfectly still: a falling leaf and a thrown-up curl of dust hang motionless in it, while dust elsewhere drifts naturally. She's absorbed and unhurried, with no hostility at all. Quiet greys and teal, with brass as the only warm note. Keep the background to a single pale wall.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-da2a7b9b-4cd3-43d1-b1cc-9e9608746907.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a546557d6d57ac9d767e0c609861979cb8bb77b2f9e49619d0720ee06442b3b2",
+      "web_sha256": "6cafc526bdd01741b5b09f9e917c843434ed744ef91bc86fd38fc5ee15e32737",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-da2a7b9b-4cd3-43d1-b1cc-9e9608746907.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "brass-siege-walker.png",
@@ -124,7 +325,50 @@
         "reference-library-2026-11-06/equipment/10-gnosis-equipment.png: the mechanical crossbow, for brass fittings and winding gear"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Brass siege-walker. Unit, a construct, cost 5. Longshot: attacks up to 3 tiles away.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/equipment/10-gnosis-equipment.png: the mechanical crossbow, for brass fittings and winding gear\n\nBRIEF:\nA strange working machine, shown complete in a wide view: a tall, narrow brass frame on three long jointed legs, picking its way across a dry quarry floor. Its entire body is built around one long wooden throwing arm, drawn back and sighted far off-screen RIGHT, past the edge of the image. Its anatomy comes from that job, with no human head or torso, so it reads as a precise instrument that happens to walk. A small artificer sits in a sling seat, loosely painted, adjusting a sighting ring. Leave open gaps through the frame. It stands about two storeys tall. Sparse teal enamel, no organ pipes or smoke. Wide empty sky gives it room.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cd56b2a4-d8e7-4818-b08e-aa3ba1c2a647.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "31da6d83cc897318927f6abcd4211a2255067ed4e2ac01d4502557391f2164ed",
+      "web_sha256": "b6dacdfd6fae67b921fb4ca8d8a225099781107ec9237607f90bbc223d829284",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/10-gnosis-equipment.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8b164bbb-42ed-4300-85b4-aa4e674e4ab1.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Correct only the framing of this image: pull the camera substantially BACK so the entire three-legged brass siege machine, including every tip of its long wooden weapon and all three feet, fits comfortably within the 1536x1024 landscape with generous open sky and empty quarry space. Keep the precise open brass framework, sparse teal enamel, winding gear, sling-seat artificer adjusting the sight ring, lateral aim to the right, believable weight and joints. The machine is about two storeys high and the operator should feel small, painted with a few economical strokes. Simplify the background into large pale quarry shapes and clear sky; reduce incidental workshop detail. Original oil/acrylic brushwork, no text, no frame.",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8b164bbb-42ed-4300-85b4-aa4e674e4ab1.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-782ec281-f46b-4a7e-9fa8-1504fc97de61.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Brass siege-walker. Unit, a construct, cost 5. Longshot: attacks up to 3 tiles away.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/equipment/10-gnosis-equipment.png: the mechanical crossbow, for brass fittings and winding gear\n\nBRIEF:\nA strange working machine, shown complete in a wide view: a tall, narrow brass frame on three long jointed legs, picking its way across a dry quarry floor. Its entire body is built around one long wooden throwing arm, drawn back and sighted far off-screen RIGHT, past the edge of the image. Its anatomy comes from that job, with no human head or torso, so it reads as a precise instrument that happens to walk. A small artificer sits in a sling seat, loosely painted, adjusting a sighting ring. Leave open gaps through the frame. It stands about two storeys tall. Sparse teal enamel, no organ pipes or smoke. Wide empty sky gives it room.\n\nMECHANICAL CLARIFICATION: This is a walking torsion CATAPULT, NOT a crossbow, rifle, lance or long barrel. Three articulated brass legs support a narrow open triangular frame and a small sling seat. A single sturdy wooden THROWING LEVER pivots visibly on a horizontal axle; its blunt spoon-shaped end holds one stone, drawn BACK and angled UP toward the left, ready to rotate forward to throw the stone far to the RIGHT. A taut winding rope and drum visibly hold the lever under tension. The wooden arm is about the length of one leg, not many times longer than the machine. Show the whole compact silhouette including spoon end and three feet with good breathing room. Mechanically coherent supports, clear negative space, little operator adjusting a sight that points right. Sparse quarry and pale clear sky; broad painterly shapes. Do not draw a narrow endless wooden spike. One complete working scene, not a blueprint.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/10-gnosis-equipment.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cd56b2a4-d8e7-4818-b08e-aa3ba1c2a647.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "ilvane.png",
@@ -137,7 +381,39 @@
       "brief": "A very tall, thin being with deep brown skin and a long neck, in layered blue-black robes, bends down from a great height in a dim stone colonnade, shown full-body and leaning to the RIGHT. It is listening to a small kneeling scholar, loosely painted, who is mid-answer. Its head is tilted, and one too-long finger is lifted as if about to ask the same question again. Its eyes are pale and gentle, and unnerving because of how closely they attend. A small amber lamp hanging from its other hand lights them both. It is plainly more than human, with no halo, wings, crown or glowing display. Dark, quiet space above it shows its height.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Ilvane, Who Asks Twice. Unit, a Velunn: a lesser divine being, cost 6. Ranged. Draws a card when it destroys a unit.\n\nBRIEF:\nA very tall, thin being with deep brown skin and a long neck, in layered blue-black robes, bends down from a great height in a dim stone colonnade, shown full-body and leaning to the RIGHT. It is listening to a small kneeling scholar, loosely painted, who is mid-answer. Its head is tilted, and one too-long finger is lifted as if about to ask the same question again. Its eyes are pale and gentle, and unnerving because of how closely they attend. A small amber lamp hanging from its other hand lights them both. It is plainly more than human, with no halo, wings, crown or glowing display. Dark, quiet space above it shows its height.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-85f8986a-765d-4587-877b-95df99e5b057.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "3a7b098e90c48950a6d0baf554c5a830eadd0dc4567a23851a69ee33767ccd82",
+      "web_sha256": "cda908f66a04e8b231245f33e6db179c51b01335e46cb529cde2274fb8c44fa4",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-0e0fa58e-6903-4900-9f4f-71203646596d.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "prompt": "Anatomical correction only: Ilvane must have EXACTLY TWO ARMS and TWO HANDS, each unambiguously attached to one shoulder. The rightward-reaching hand lifts one long index finger while listening to the scholar. The other hand holds the hanging amber lamp. Remove the extra dangling hand resting by the bent knee/inside the robe, and replace it with ordinary uninterrupted folds of blue-black fabric. No spare fingers or hands inside the robe. Preserve the original long-necked tall being, attentive pale eyes, dark skin, bent listening posture, full-length robes, small kneeling scholar, colonnade, intimate lamplight and dark blue painting. Do not add jewelry, facial microdetail, halos or spectacle. One finished landscape oil/acrylic painting 1536x1024, no text.",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-0e0fa58e-6903-4900-9f4f-71203646596d.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-85f8986a-765d-4587-877b-95df99e5b057.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "barrow-rats.png",
@@ -150,7 +426,30 @@
       "brief": "An extremely low viewpoint at ground level on grey ash under cold moonlight. Three lean, ordinary rats move in a line toward the LEFT, noses down, following a long uneven drag mark that continues off-screen. The lead rat has paused with its head raised and whiskers forward, sure of what it's following. They are ordinary animals with no mutation, glowing eyes or exposed bone. There is no blood or body in frame. The unease comes from their patience and the mark's direction. Deep violet and bone grey with soft edges, and one pale leaning stone out of focus. Keep all three rats fully in frame, and let them read clearly at small size.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Barrow rats. Unit, cost 1. Hunt: stronger against a damaged unit.\n\nBRIEF:\nAn extremely low viewpoint at ground level on grey ash under cold moonlight. Three lean, ordinary rats move in a line toward the LEFT, noses down, following a long uneven drag mark that continues off-screen. The lead rat has paused with its head raised and whiskers forward, sure of what it's following. They are ordinary animals with no mutation, glowing eyes or exposed bone. There is no blood or body in frame. The unease comes from their patience and the mark's direction. Deep violet and bone grey with soft edges, and one pale leaning stone out of focus. Keep all three rats fully in frame, and let them read clearly at small size.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f8e48316-438c-44a8-a506-cf2d4a2d4117.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "86fb041ff2ea3bf530866cf5393f899f0e460e304fcb357cc62f8c1d8828b947",
+      "web_sha256": "dc0f0577e468e444f055a7effc51725086a98164ba5bf34c51bc99616b776151",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f8e48316-438c-44a8-a506-cf2d4a2d4117.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "indebted-squire.png",
@@ -165,7 +464,32 @@
         "reference-library-2026-11-06/people/08-humans-additional-faces.png: an ordinary young adult, as a starting point only"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Indebted squire. Unit, cost 1. When summoned, you lose 1 life.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/08-humans-additional-faces.png: an ordinary young adult, as a starting point only\n\nBRIEF:\nA gangly white young man of about nineteen, with a plain, hopeful face and large ears, stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. Far behind him, a few thin, grey older squires wait in silence along a wall, loosely painted. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
+      "web_sha256": "60880105a69cc2e9073052011e9a5a8f616f378cec6558b764c27668d8fff114",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "hunted.png",
@@ -178,7 +502,30 @@
       "brief": "A high, wide view of a pale ash-covered moor at dusk, with a low sun at the far RIGHT of the image. One tiny, lone figure hurries LEFT across the open ground. A dozen bare thorn trees stand scattered around them at different distances, and every tree's long shadow bends across the ground to point at the figure, whichever way the sun should have thrown it. That is the only wrong thing in the painting. No pursuer, eyes, glowing marks or monsters are visible. Broad, quiet shapes with a limited palette of bone white, cold violet and one strip of dull gold. Restrained abstraction is welcome here. Dread comes from how calm the landscape looks.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Hunted. Enchantment, cost 2. Units attacking the enchanted unit get +1 attack.\n\nBRIEF:\nA high, wide view of a pale ash-covered moor at dusk, with a low sun at the far RIGHT of the image. One tiny, lone figure hurries LEFT across the open ground. A dozen bare thorn trees stand scattered around them at different distances, and every tree's long shadow bends across the ground to point at the figure, whichever way the sun should have thrown it. That is the only wrong thing in the painting. No pursuer, eyes, glowing marks or monsters are visible. Broad, quiet shapes with a limited palette of bone white, cold violet and one strip of dull gold. Restrained abstraction is welcome here. Dread comes from how calm the landscape looks.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-225776fc-483d-4e95-b14b-4294ace6193b.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "b8a77912b3d07f437eb70ce6ea18d55a3994035cebc5ec570de41682a11d6190",
+      "web_sha256": "475c9f96afe7e068a5767b0356ce1ed94be96366188925978325b07c51a4d1be",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-225776fc-483d-4e95-b14b-4294ace6193b.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "called-debt.png",
@@ -191,7 +538,30 @@
       "brief": "A close view of a single gloved hand, physically connected beyond the crop at the lower left, closing around a dark knotted cord that runs taut across the whole image and off-screen to the RIGHT, toward someone we can't see. The cord is parting at the instant shown: one strand has already snapped and is curling back, and a thin thread of deep violet smoke leaves the break. The glove has slipped at the wrist, and the bare skin there has just gone grey, as though the price landed at the same moment. No blood, wounds or lettering. Muted ash and charcoal with one saturated violet. It should feel sudden, and read as a bargain coming due.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Called debt. Instant, cost 2. Lose 2 life and destroy a damaged enemy unit.\n\nBRIEF:\nA close view of a single gloved hand, physically connected beyond the crop at the lower left, closing around a dark knotted cord that runs taut across the whole image and off-screen to the RIGHT, toward someone we can't see. The cord is parting at the instant shown: one strand has already snapped and is curling back, and a thin thread of deep violet smoke leaves the break. The glove has slipped at the wrist, and the bare skin there has just gone grey, as though the price landed at the same moment. No blood, wounds or lettering. Muted ash and charcoal with one saturated violet. It should feel sudden, and read as a bargain coming due.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-daf8dff0-3f6d-4cd3-8b92-8c58428ca89f.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0e58bae9c41e6ebf249c184e26c0fe85febdcd099c51df6e9558525b1865ba76",
+      "web_sha256": "cf29ae9671f3383613b57253d490544633bae428845bf8cff778b69259503144",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-daf8dff0-3f6d-4cd3-8b92-8c58428ca89f.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "ashen-court-envoy.png",
@@ -207,7 +577,33 @@
         "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png: tailored cut, as one character's option"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Ashen Court envoy. Unit, cost 4. Drain.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/08-humans-additional-faces.png: the handsome option, for level of attractiveness only\nreference-library-2026-11-06/equipment/17-dominion-personal-kits.png: tailored cut, as one character's option\n\nBRIEF:\nA snowbound border post at a pale blue dawn. A composed, strikingly handsome Black man in his forties, in an immaculate charcoal travelling coat with a thin violet lining and tarnished silver clasps, is seen full-body from behind and to one side, walking LEFT toward two border guards. He holds out a sealed letter without any visible lettering. The guards are loosely painted, thin and wary, and their breath shows in the cold, as does his horse's. His doesn't. Nothing else is said about him: no fangs, no pallor, no high collar, no cape and no sinister smile. He's courteous, unhurried and a little too comfortable. An empty iron cage hangs from the post's one timber gate, surrounded by a lot of open snow.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c7b405fd-50ab-4e2b-a731-c9fc65f58757.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "eb08854cbe1502f0a8d0f777ef26e360034354e229a36c743c06e02307167897",
+      "web_sha256": "53836daee69a3c221827e964ae516c6d822b102f711955959e104c542b1137c8",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c7b405fd-50ab-4e2b-a731-c9fc65f58757.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "barrow-priest.png",
@@ -222,7 +618,32 @@
         "reference-library-2026-11-06/people/01-humans.png: anatomy and painted treatment"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Barrow priest. Unit, cost 4. Ability: return a cheap unit from your discard pile to your back row.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: anatomy and painted treatment\n\nBRIEF:\nAn elderly white priest in a plain grey cassock with one dull violet stole kneels on a low burial mound at evening, side-on and facing LEFT. Very gently, he helps a long-dead soldier sit up out of the loose earth, with one arm behind its shoulders and the other steadying its rusted wrist, the way someone helps a frail relative rise from bed. A shallow bowl of bones sits beside him on the ground. The soldier's helmeted head hangs forward, with old bone and dried skin but no gore. The priest's face shows patience and real tenderness, which makes it unsettling. No glowing magic, skulls on staffs or black robes with flames. Ash grey and bone, under a long strip of pale sky.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-ee2be0c4-0cab-48a5-86e9-7bebbab0af77.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "67b8a96c64783023e9c456881f9eea55c72e3879ec6c50a58cc01dd10bbc5726",
+      "web_sha256": "94a42aa8958aaffcf5832426be35a6fd34fed9ce64db1bbfd5b94d5c6680d9ae",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-ee2be0c4-0cab-48a5-86e9-7bebbab0af77.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "barrow-colossus.png",
@@ -235,7 +656,30 @@
       "brief": "In a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Barrow colossus. Unit, cost 5. Gathered: stronger for each unit in your discard pile.\n\nBRIEF:\nIn a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
+      "web_sha256": "2d010fca8be458cdbc4a8db337b6b923491ec823a21b7278a26d7b1e8d3b4c75",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "goblin-firepot.png",
@@ -251,7 +695,33 @@
         "reference-library-2026-11-06/equipment/14-raiders-and-berserker.png: scavenged, personal approach to gear, not a kit to copy"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Goblin firepot. Unit, cost 2. When summoned, deals 1 damage to an enemy unit.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/03-goblins.png: ears, nose, build and skin\nreference-library-2026-11-06/equipment/14-raiders-and-berserker.png: scavenged, personal approach to gear, not a kit to copy\n\nBRIEF:\nA small, wiry goblin with long pointed ears and a long nose stands on a rock on a scrubby hillside under hard noon sun and a clear blue sky, seen full-body from a low angle. He's winding up to lob a smoking clay pot underarm toward someone off-screen RIGHT, with his weight on his back foot, tongue at the corner of his mouth and eyes fixed on his target. Orange glows through a crack in the pot. A second pot hangs from a strap at his hip, wick unlit. He wears a scorched leather smith's apron, clearly made for someone bigger, over bare olive arms, with a coil of spare wick at his belt. He looks eager and a bit reckless, more an enthusiast than a champion. Simple, readable face without many teeth. The blue sky contrasts with the orange.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-21729072-2bce-4a81-a2d8-4911495e7b69.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "10ec5a3331ea54874021565da32c5ff75473b0d484975a0f8b810066c5ab1698",
+      "web_sha256": "cb039f27260cc257fca636024d90f9170b1269bf0de91638bbc820d36b786599",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/14-raiders-and-berserker.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-21729072-2bce-4a81-a2d8-4911495e7b69.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "cinderfall.png",
@@ -264,7 +734,30 @@
       "brief": "A high view down into a narrow valley at deep indigo dusk. A single slow column of embers falls from above onto one point on an old road, and where it lands, a bright ring of orange light has opened in the ground. Smaller scatters of sparks are falling on either side of it. A handful of tiny soldiers, only a few strokes each, are spreading away from the ring with raised shields, with no bodies or gore. It's local and human in scale, not a volcano, and not the end of the world. The event is the subject and no caster is visible. Rich indigo and ember orange, with one line of cold river in the valley.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Cinderfall. Spell, cost 4. 3 damage to an enemy unit and 1 to each enemy next to it.\n\nBRIEF:\nA high view down into a narrow valley at deep indigo dusk. A single slow column of embers falls from above onto one point on an old road, and where it lands, a bright ring of orange light has opened in the ground. Smaller scatters of sparks are falling on either side of it. A handful of tiny soldiers, only a few strokes each, are spreading away from the ring with raised shields, with no bodies or gore. It's local and human in scale, not a volcano, and not the end of the world. The event is the subject and no caster is visible. Rich indigo and ember orange, with one line of cold river in the valley.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-82fe24bb-7841-4c76-8363-ac403c8191c6.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "dffad2161ab482f8ccd33ff113e91d69534d0741279e3a6c602858f0b8996e30",
+      "web_sha256": "d7ad2d6b4f608f934896ff4978e15ae390db094b8720be7ba5af61493c446612",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-82fe24bb-7841-4c76-8363-ac403c8191c6.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "giant-chieftain.png",
@@ -280,7 +773,33 @@
         "reference-library-2026-11-06/people/04-orcs.png: the orc's coarse nonhuman face"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Giant chieftain. Unit, cost 6. Frenzy: stronger while damaged.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/05-giants.png: giant face and proportions\nreference-library-2026-11-06/people/04-orcs.png: the orc's coarse nonhuman face\n\nBRIEF:\nA wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. She has grey braids and a heavy, human-like face with a broad nose. An old wagon tarp, belted as a cloak and pinned with a bent plough blade, is her only armour, and there's very little blood. A coarse, heavy-browed orc with irregular tusks struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
+      "web_sha256": "51b49b3952b7f088d4369a16f435630f3184e928135708e9ea89595ada506a46",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/05-giants.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "thicket-boar.png",
@@ -293,7 +812,30 @@
       "brief": "An ordinary, stocky wild boar is rooting in a fern thicket, shown full-body and side-on, facing LEFT. It has just lifted its head mid-dig with a clod of dark earth still on its snout, ears up, looking at something off-screen with mild suspicion. Coarse bristled hair is simplified into broad painted shapes. No huge tusks, moss armour or glowing eyes: this is a common animal of believable size. Dappled light falls across its back, with deep green and warm brown, and a single patch of yellow leaves as an accent. Keep the forest as soft, implied shapes behind. It should feel solid and a little comic in its attention, without being cartoonish.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Thicket boar. Unit, cost 1.\n\nBRIEF:\nAn ordinary, stocky wild boar is rooting in a fern thicket, shown full-body and side-on, facing LEFT. It has just lifted its head mid-dig with a clod of dark earth still on its snout, ears up, looking at something off-screen with mild suspicion. Coarse bristled hair is simplified into broad painted shapes. No huge tusks, moss armour or glowing eyes: this is a common animal of believable size. Dappled light falls across its back, with deep green and warm brown, and a single patch of yellow leaves as an accent. Keep the forest as soft, implied shapes behind. It should feel solid and a little comic in its attention, without being cartoonish.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-afe79ab5-6b47-438d-b8a2-12590e75109e.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "62495342d102e365c781d2fe2af2bbffc59a41332f870640a0805ba631a14adb",
+      "web_sha256": "00f98b6a9d467999faef86fc07911d339cf168dd60139addb0b8e1e0c6ec7c54",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-afe79ab5-6b47-438d-b8a2-12590e75109e.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "grove-tender-set4.png",
@@ -309,7 +851,33 @@
         "web/walking-sapling.jpg: the walking sapling's design, not its setting"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Grove tender. Unit, cost 3. Ability: an adjacent ally permanently grows.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/06-alderkin.png: lean braided anatomy and head\nweb/walking-sapling.jpg: the walking sapling's design, not its setting\n\nBRIEF:\nAn alderkin, a lean living tree person about three metres tall, fights in a churned forest clearing, shown full-body in a wide stance and facing LEFT. Its braided, asymmetrical trunk is braced on two long rootlike legs, and one very long branch arm is sweeping sideways toward an enemy off-screen LEFT, with scattered bark and leaves showing the force of the swing. Its other arm stays low behind it, with a few root-fingers resting on a small walking sapling at its side. Under that touch, the sapling's limbs are visibly thickening and throwing out new pale green growth. A head grows naturally from the upper trunk under a spray of leaves, with quiet knot-like eyes and no carved human face. It wears nothing: no clothes, armour or weapons. It's protective and dangerous, with no humans in the scene. Hard shafts of light and deep green shadow.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-faf33185-7d24-4570-b881-be9eb8e0804b.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "df6b5bd9af7058f52d6a1dae40e9d37b2f7511cec838e93034f488612461e700",
+      "web_sha256": "4f8920a1a5e710dc9e2a285b2f2eb90771f42daae2a15d9f3810b9e68da32a21",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/06-alderkin.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/web/walking-sapling.jpg"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-faf33185-7d24-4570-b881-be9eb8e0804b.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "mossback-bear.png",
@@ -322,7 +890,30 @@
       "brief": "A big, believable brown bear, about the size of a horse, wades out of a cold stream at evening toward the RIGHT, seen in a full-body three-quarter view from behind, with water running from its coat. Thick moss and a few small ferns grow along its back and over long-healed scars on its shoulder, as though the wounds had grown over instead of closing. It looks back over its shoulder, unbothered, at something off-screen LEFT. It is not charging, rearing or roaring. Golden light on wet fur, with deep green and cool grey stones, and one bright rim of water. A forest edge is only implied. Believable anatomy, with broad painted fur rather than individual hairs.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Mossback bear. Unit, cost 4. Regrow: recovers health at the start of your turn.\n\nBRIEF:\nA big, believable brown bear, about the size of a horse, wades out of a cold stream at evening toward the RIGHT, seen in a full-body three-quarter view from behind, with water running from its coat. Thick moss and a few small ferns grow along its back and over long-healed scars on its shoulder, as though the wounds had grown over instead of closing. It looks back over its shoulder, unbothered, at something off-screen LEFT. It is not charging, rearing or roaring. Golden light on wet fur, with deep green and cool grey stones, and one bright rim of water. A forest edge is only implied. Believable anatomy, with broad painted fur rather than individual hairs.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-33641e7a-0b7d-4547-ae7f-4dc5a68d5d78.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a387020c962084688f9d56c88e9f5b2313613ed54d5b4c8476e9ce39e8dd18aa",
+      "web_sha256": "c909d9f837d91faeb58323bafb69537acac9f7d9c34a8bcaf3431b2df2a043b2",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-33641e7a-0b7d-4547-ae7f-4dc5a68d5d78.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "herd-mother.png",
@@ -337,7 +928,32 @@
         "web/elder-herd-bull.jpg: the same kind of animal, not its pose or setting"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Herd mother. Unit, cost 6. Overrun: excess damage carries through.\n\nATTACHED REFERENCES:\nweb/elder-herd-bull.jpg: the same kind of animal, not its pose or setting\n\nBRIEF:\nA very wide view of open uplands on a clear frost morning. An ancient, shaggy cow of the same kind as the Elder Herd bull, large as a barn, walks steadily away to the LEFT, seen in three-quarter view from behind. Her vast, sweeping horns are worn, and one has an old broken tip. A young calf walks in her shadow, and a few distant shapes of the herd follow. On a far ridge, two tiny people have stopped and stand watching her, plainly in awe, because this is not something anyone sees often. Her breath shows in the cold. White frost, russet coat and pale blue sky, with a lot of open space. She's unhurried, and nothing is being trampled.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-63c7baf1-c998-4f49-9d79-12e01a058510.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d63e9ed1c5ce67f63bf294a694cd3973713e5fd73fb1f0bfd4af7830268eb323",
+      "web_sha256": "686776e2cfcd801c578a655e88bcc266647eef0812f423b3ff7c575ebadb858f",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/web/elder-herd-bull.jpg"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-63c7baf1-c998-4f49-9d79-12e01a058510.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "orrowen.png",
@@ -350,7 +966,30 @@
       "brief": "An old paved road curves widely, for no apparent reason, around a long, low green mound in rolling country at deep golden hour. The mound has just lifted its head. It's a very long, quiet face of living wood and stone with a great branching crown like antlers, and its amber eyes are half open, looking toward the RIGHT. Most of its body remains hillside, and it's hard to say where one ends and the other begins. A small traveller with a pack has stopped on the bend of the road, one hand slowly lowering, painted loosely. It is plainly more than an animal and has no ruin, city or building on its back. Deep greens and warm gold, with long shadows and a sense of great age.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Orrowen, Who Was Here First. Unit, a Velunn: a lesser divine being, cost 7. Grows and Overrun.\n\nBRIEF:\nAn old paved road curves widely, for no apparent reason, around a long, low green mound in rolling country at deep golden hour. The mound has just lifted its head. It's a very long, quiet face of living wood and stone with a great branching crown like antlers, and its amber eyes are half open, looking toward the RIGHT. Most of its body remains hillside, and it's hard to say where one ends and the other begins. A small traveller with a pack has stopped on the bend of the road, one hand slowly lowering, painted loosely. It is plainly more than an animal and has no ruin, city or building on its back. Deep greens and warm gold, with long shadows and a sense of great age.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-b014bcb1-a13a-46f7-8423-e0415cf84822.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d1bf3ef7f667fb9bf8a1f9dcca877d4c0f0824ec2e5cca786c4885cdddf3f49f",
+      "web_sha256": "4a374d56f71ac0a163bf737bcc917df2598c81f6367cbbc7eeabe2e5941804c3",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-b014bcb1-a13a-46f7-8423-e0415cf84822.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "camp-follower.png",
@@ -365,7 +1004,32 @@
         "reference-library-2026-11-06/people/08-humans-additional-faces.png: range of ordinary faces"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Camp follower. Unit, cost 1.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/08-humans-additional-faces.png: range of ordinary faces\n\nBRIEF:\nA broad-faced Black woman in her thirties, a cook and laundress travelling with an army's camp, walks along its edge at low sun, shown full-body and heading RIGHT. A bundle of firewood rests on one shoulder and a dented kettle swings from her other hand. She has glanced back over her shoulder at someone calling from the tents, which are only a few loose shapes. Plain, patched dun clothes, an apron and sturdy boots, with no weapon and no alignment emblem. She's capable and wry, an ordinary person with a long day behind her. Warm dust and dove grey, and long evening shadows. No romance, no glamour, and no battlefield in view.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-ce1ac6a2-4eb4-4a2c-a652-5ab87ce8d3d1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "5e44eba7375d2912c9fd58b6de092847983e7bf09c95380197fc6e0d51346c3e",
+      "web_sha256": "748957ff1ea19726a34a400d22b2c2f22702aa5366eca25d9d5219c4331cf059",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-ce1ac6a2-4eb4-4a2c-a652-5ab87ce8d3d1.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     },
     {
       "file": "scarred-summoner.png",
@@ -380,7 +1044,39 @@
         "reference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Scarred summoner. Unit, cost 4. When summoned, draws a card.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people\n\nBRIEF:\nA long-faced, strong-jawed white woman of about fifty-five sits on an upturned bucket beside a small campfire at night, in a medium view turned three-quarters to the LEFT. Her long sleeves are rolled above the elbow without any concern, and she's rinsing her forearm in a dented basin. Along that arm and up her neck runs a golden, scar-like mark, softly glowing, which lights the water and the underside of her chin. She has lived with it for a very long time. Her expression is tired, plain and at peace, and she's looking at nothing in particular. She wears a faded ochre wool shirt. She doesn't hide the mark and doesn't display it. Warm firelight, cool blue night and one line of gold.",
-      "status": "not generated"
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generation_method": "built-in image_gen",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-51d6f2bc-0e57-4a2e-9fe9-b4eec388b2e1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "2a005949de8e247abc6aa385a8f32a1f5662e734a0239b4c213a8e16a99a53da",
+      "web_sha256": "597da48a14d49c4ff8673c6f517afde731361e670ffe54fa8a67b72c700169eb",
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "prompt_reference": "prompt",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+          ],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-51d6f2bc-0e57-4a2e-9fe9-b4eec388b2e1.png",
+          "selected": true
+        }
+      ],
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
     }
-  ]
+  ],
+  "completed": 26,
+  "generation_method": "built-in image_gen",
+  "review_status": "awaiting_creator_review",
+  "generation_attempt_count": 32,
+  "gallery": "SET4_GALLERY.html",
+  "validation_file": "SET4_VALIDATION.json",
+  "selection_note": "One selected PNG and one JPEG per brief. Six superseded generation attempts remain only in the tool cache, not in the project. Add reviewed selections to CARD_ART_FINAL.json after creator approval. Existing finalized artwork is unchanged."
 }

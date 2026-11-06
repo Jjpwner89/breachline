@@ -1,0 +1,389 @@
+{
+  "date": "2026-11-06",
+  "set": 4,
+  "status": "complete",
+  "created_pngs": 26,
+  "created_jpegs": 26,
+  "incomplete_cards": [],
+  "generation_attempts": 32,
+  "project_image_variants_per_card": 1,
+  "preexisting_image_files_verified_unchanged": 221,
+  "all_png_dimensions": [
+    1536,
+    1024
+  ],
+  "all_jpeg_dimensions": [
+    768,
+    512
+  ],
+  "duplicate_selected_pngs": 0,
+  "gallery": "SET4_GALLERY.html",
+  "creator_review": "pending",
+  "final_card_art_index_unchanged": true,
+  "files": [
+    {
+      "file": "oath-shieldbearer.png",
+      "web_file": "web/oath-shieldbearer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
+      "web_sha256": "01b2d06a43a708dd51fb279aaf9be2544d8ae2930cbaa72a43b0eb328e809b70"
+    },
+    {
+      "file": "pride-huntress.png",
+      "web_file": "web/pride-huntress.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "c4528c0093003b1e1c465c3a208ad6ff144957c49487d63886462a4c8f329717",
+      "web_sha256": "ede859fc9b0e8118a2a33d629404a485561e43d151d172d1f6cc98e45ee4b316"
+    },
+    {
+      "file": "pride-matriarch.png",
+      "web_file": "web/pride-matriarch.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "9b1af767b116566e62c9742143f17ab99bbc61468e628ce9045b33bd200f9a83",
+      "web_sha256": "e281231e171d3af0ec8969a64fca4ffc82732bcf854171d41f19f00d563a4e61"
+    },
+    {
+      "file": "sifting-the-shallows.png",
+      "web_file": "web/sifting-the-shallows.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "37fbb57b9ba2ff78796e77f270b82918f2a1856bea0d71802c6fa7ec947db00e",
+      "web_sha256": "d8332706c7f71c1bb2851c854d40c83804222cf08771bdb0443c3a1e89e94b66"
+    },
+    {
+      "file": "conclave-phantasm.png",
+      "web_file": "web/conclave-phantasm.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "c90bb6990000e6c846d0754406399308242311cf3baa056064c3f2acd90f9cdd",
+      "web_sha256": "063b85dde3717ab53c5c8a9a74feab4f14d009bec9250500333cf2383b65b8aa"
+    },
+    {
+      "file": "threshold-adept.png",
+      "web_file": "web/threshold-adept.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "9e43463bf282b28dab48b80ac843b6260c4e95fda6bfa0bda6ed6d0363dd8aa1",
+      "web_sha256": "ab7a36862a2002c00276375e8468c03210b1d94c2062db11bc39194f3fb5336f"
+    },
+    {
+      "file": "conclave-examiner.png",
+      "web_file": "web/conclave-examiner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a546557d6d57ac9d767e0c609861979cb8bb77b2f9e49619d0720ee06442b3b2",
+      "web_sha256": "6cafc526bdd01741b5b09f9e917c843434ed744ef91bc86fd38fc5ee15e32737"
+    },
+    {
+      "file": "brass-siege-walker.png",
+      "web_file": "web/brass-siege-walker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "31da6d83cc897318927f6abcd4211a2255067ed4e2ac01d4502557391f2164ed",
+      "web_sha256": "b6dacdfd6fae67b921fb4ca8d8a225099781107ec9237607f90bbc223d829284"
+    },
+    {
+      "file": "ilvane.png",
+      "web_file": "web/ilvane.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "3a7b098e90c48950a6d0baf554c5a830eadd0dc4567a23851a69ee33767ccd82",
+      "web_sha256": "cda908f66a04e8b231245f33e6db179c51b01335e46cb529cde2274fb8c44fa4"
+    },
+    {
+      "file": "barrow-rats.png",
+      "web_file": "web/barrow-rats.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "86fb041ff2ea3bf530866cf5393f899f0e460e304fcb357cc62f8c1d8828b947",
+      "web_sha256": "dc0f0577e468e444f055a7effc51725086a98164ba5bf34c51bc99616b776151"
+    },
+    {
+      "file": "indebted-squire.png",
+      "web_file": "web/indebted-squire.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
+      "web_sha256": "60880105a69cc2e9073052011e9a5a8f616f378cec6558b764c27668d8fff114"
+    },
+    {
+      "file": "hunted.png",
+      "web_file": "web/hunted.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "b8a77912b3d07f437eb70ce6ea18d55a3994035cebc5ec570de41682a11d6190",
+      "web_sha256": "475c9f96afe7e068a5767b0356ce1ed94be96366188925978325b07c51a4d1be"
+    },
+    {
+      "file": "called-debt.png",
+      "web_file": "web/called-debt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0e58bae9c41e6ebf249c184e26c0fe85febdcd099c51df6e9558525b1865ba76",
+      "web_sha256": "cf29ae9671f3383613b57253d490544633bae428845bf8cff778b69259503144"
+    },
+    {
+      "file": "ashen-court-envoy.png",
+      "web_file": "web/ashen-court-envoy.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "eb08854cbe1502f0a8d0f777ef26e360034354e229a36c743c06e02307167897",
+      "web_sha256": "53836daee69a3c221827e964ae516c6d822b102f711955959e104c542b1137c8"
+    },
+    {
+      "file": "barrow-priest.png",
+      "web_file": "web/barrow-priest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "67b8a96c64783023e9c456881f9eea55c72e3879ec6c50a58cc01dd10bbc5726",
+      "web_sha256": "94a42aa8958aaffcf5832426be35a6fd34fed9ce64db1bbfd5b94d5c6680d9ae"
+    },
+    {
+      "file": "barrow-colossus.png",
+      "web_file": "web/barrow-colossus.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
+      "web_sha256": "2d010fca8be458cdbc4a8db337b6b923491ec823a21b7278a26d7b1e8d3b4c75"
+    },
+    {
+      "file": "goblin-firepot.png",
+      "web_file": "web/goblin-firepot.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "10ec5a3331ea54874021565da32c5ff75473b0d484975a0f8b810066c5ab1698",
+      "web_sha256": "cb039f27260cc257fca636024d90f9170b1269bf0de91638bbc820d36b786599"
+    },
+    {
+      "file": "cinderfall.png",
+      "web_file": "web/cinderfall.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "dffad2161ab482f8ccd33ff113e91d69534d0741279e3a6c602858f0b8996e30",
+      "web_sha256": "d7ad2d6b4f608f934896ff4978e15ae390db094b8720be7ba5af61493c446612"
+    },
+    {
+      "file": "giant-chieftain.png",
+      "web_file": "web/giant-chieftain.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
+      "web_sha256": "51b49b3952b7f088d4369a16f435630f3184e928135708e9ea89595ada506a46"
+    },
+    {
+      "file": "thicket-boar.png",
+      "web_file": "web/thicket-boar.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "62495342d102e365c781d2fe2af2bbffc59a41332f870640a0805ba631a14adb",
+      "web_sha256": "00f98b6a9d467999faef86fc07911d339cf168dd60139addb0b8e1e0c6ec7c54"
+    },
+    {
+      "file": "grove-tender-set4.png",
+      "web_file": "web/grove-tender-set4.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "df6b5bd9af7058f52d6a1dae40e9d37b2f7511cec838e93034f488612461e700",
+      "web_sha256": "4f8920a1a5e710dc9e2a285b2f2eb90771f42daae2a15d9f3810b9e68da32a21"
+    },
+    {
+      "file": "mossback-bear.png",
+      "web_file": "web/mossback-bear.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a387020c962084688f9d56c88e9f5b2313613ed54d5b4c8476e9ce39e8dd18aa",
+      "web_sha256": "c909d9f837d91faeb58323bafb69537acac9f7d9c34a8bcaf3431b2df2a043b2"
+    },
+    {
+      "file": "herd-mother.png",
+      "web_file": "web/herd-mother.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d63e9ed1c5ce67f63bf294a694cd3973713e5fd73fb1f0bfd4af7830268eb323",
+      "web_sha256": "686776e2cfcd801c578a655e88bcc266647eef0812f423b3ff7c575ebadb858f"
+    },
+    {
+      "file": "orrowen.png",
+      "web_file": "web/orrowen.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d1bf3ef7f667fb9bf8a1f9dcca877d4c0f0824ec2e5cca786c4885cdddf3f49f",
+      "web_sha256": "4a374d56f71ac0a163bf737bcc917df2598c81f6367cbbc7eeabe2e5941804c3"
+    },
+    {
+      "file": "camp-follower.png",
+      "web_file": "web/camp-follower.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "5e44eba7375d2912c9fd58b6de092847983e7bf09c95380197fc6e0d51346c3e",
+      "web_sha256": "748957ff1ea19726a34a400d22b2c2f22702aa5366eca25d9d5219c4331cf059"
+    },
+    {
+      "file": "scarred-summoner.png",
+      "web_file": "web/scarred-summoner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "2a005949de8e247abc6aa385a8f32a1f5662e734a0239b4c213a8e16a99a53da",
+      "web_sha256": "597da48a14d49c4ff8673c6f517afde731361e670ffe54fa8a67b72c700169eb"
+    }
+  ]
+}

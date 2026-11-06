@@ -1,6 +1,6 @@
 # Breachline card art briefs: set 4
 
-26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06 and revised the same day against the reference library and the creator's Set 3 and campaign reviews. **Status: briefs only, nothing has been generated.** The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
+26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06 and revised the same day against the reference library and the creator's Set 3 and campaign reviews. **Status: all 26 illustrations generated on 2026-11-06, with 1536 x 1024 PNGs and 768 x 512 JPEGs; awaiting creator review.** See [the complete gallery](SET4_GALLERY.html), [prompts and selected files](ART_PROMPTS_SET4.json), and [file validation](SET4_VALIDATION.json). The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
 
 Sellsword, Oath knight, Orc warchief and Hill giant already have paintings, so they have no briefs here. Add finished images to `CARD_ART_FINAL.json` once approved, since that file is the definitive selection of card art.
 
