@@ -48,16 +48,16 @@ var Bot = (function () {
         if (c.regrow) return 40 + worth(t) / 5;
         if (c.warrant) return worth(t) >= 80 ? 40 + worth(t) : -100;
         if (c.atkBonus > 0) return t.owner === pi ? 40 + worth(t) / 5 : -100;
-        return t.owner === foe && E.attackOf(s, t) >= 30 ? 40 + E.attackOf(s, t) / 5 : -100;
+        return t.owner === foe && E.attackOf(s, t) >= 3 ? 40 + E.attackOf(s, t) * 2 : -100;
       case 'attackSummoner':
         u = unitById(s, m.unit);
-        return E.attackOf(s, u) >= s.players[foe].life ? 100000 : 120 + E.attackOf(s, u);
+        return E.attackOf(s, u) >= s.players[foe].life ? 100000 : 120 + E.attackOf(s, u) * 10;
       case 'attack':
         return attackScore(s, unitById(s, m.unit), unitById(s, m.target));
       case 'ability':
         u = unitById(s, m.unit);
         var key = E.CARDS[u.cardId].ability.key;
-        if (key === 'heal') { t = unitById(s, m.target); return 25 + Math.min(25, t.maxHp - t.hp) + worth(t) / 10; }
+        if (key === 'heal') { t = unitById(s, m.target); return 25 + Math.min(25, (t.maxHp - t.hp) * 10) + worth(t) / 10; }
         if (key === 'rally') return 60;
         if (key === 'healall') return 70;
         if (key === 'study') return 70;

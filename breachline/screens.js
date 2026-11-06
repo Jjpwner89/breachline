@@ -3,7 +3,7 @@ var Screens = (function () {
   var E = Engine, root = document.getElementById('screen'), refresh = null, actions = {};
   var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], TYPES = ['unit', 'instant', 'enchant', 'spell', 'land'];
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
-  var LAND_SHARE = 0.45;
+  var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
   var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '' }, confirmDelete = null;
 

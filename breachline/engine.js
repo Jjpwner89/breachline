@@ -1,7 +1,7 @@
 // Rules engine. Pure state in, state out, with no DOM, so the UI, the scripted
 // bot and a future model-driven player all go through legalMoves and applyMove.
 var Engine = (function () {
-  var ROWS = 4, COLS = 5, START_LIFE = 150, OPENING_HAND = 5, MAX_REDRAWS = 2, TURN_LIMIT = 60;
+  var ROWS = 4, COLS = 5, START_LIFE = 15, OPENING_HAND = 5, MAX_REDRAWS = 2, TURN_LIMIT = 60;
 
   function land(id, colour, name) { return { id: id, name: name, type: 'land', colour: colour, cost: 0, wants: 0 }; }
   function unit(id, name, colour, cost, wants, atk, hp, extra) {
@@ -13,60 +13,60 @@ var Engine = (function () {
   var CARDS = {};
   [
     land('land_w', 'W', 'Sunlit plains'), land('land_r', 'R', 'Cinder peaks'), land('land_u', 'U', 'Lantern quarter'), land('land_b', 'B', 'Ashen barrows'), land('land_g', 'G', 'Overgrown ruin'),
-    unit('spearman', 'Militia spearman', 'W', 1, 1, 20, 25),
-    unit('cleric', 'Temple cleric', 'W', 2, 1, 15, 40, { ability: { key: 'heal', label: 'Heal', amount: 25 }, text: 'Ability: heal an adjacent ally 25.' }),
-    unit('knight', 'Oath knight', 'W', 3, 1, 30, 50),
-    unit('lancer', 'Sunmane lancer', 'W', 4, 2, 45, 65, { keywords: ['Swift'], ability: { key: 'lance', label: 'Lance through' }, text: 'Swift. Ability: hit an adjacent enemy and the enemy directly behind it.' }),
-    unit('warden', 'Pride warden', 'W', 6, 3, 60, 95, { ability: { key: 'rally', label: 'Rally', amount: 10 }, text: 'Ability: adjacent allies get +10 attack this turn.' }),
-    { id: 'shield', name: 'Shield of dawn', type: 'instant', colour: 'W', cost: 1, wants: 1, prevent: 25, text: 'When your unit is attacked: prevent 25 of that damage.' },
-    { id: 'banner', name: 'Blessed banner', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 10, hpBonus: 15, text: 'Enchant a unit: +10 attack and +15 health.' },
-    unit('goblin', 'Goblin cutter', 'R', 1, 1, 25, 15),
-    unit('raider', 'Orc raider', 'R', 2, 1, 35, 30),
-    unit('conjurer', 'Street conjurer', 'U', 2, 1, 25, 30, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
-    unit('sellsword', 'Sellsword', 'R', 3, 1, 35, 45),
-    unit('warchief', 'Orc warchief', 'R', 4, 2, 55, 50),
-    unit('giant', 'Hill giant', 'R', 5, 2, 50, 85),
-    unit('dragon', 'Elder dragon', 'R', 7, 3, 85, 100, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
-    { id: 'firebolt', name: 'Firebolt', type: 'instant', colour: 'R', cost: 2, wants: 1, damage: 25, text: 'On the enemy turn: 25 damage to an enemy unit.' },
-    { id: 'hex', name: 'Withering hex', type: 'enchant', colour: 'R', cost: 2, wants: 1, atkBonus: -15, hpBonus: 0, text: 'Enchant a unit: -15 attack.' },
-    unit('carrier', 'Water carrier', 'W', 1, 1, 10, 25, { ability: { key: 'heal', label: 'Heal', amount: 10 }, text: 'Ability: heal an adjacent ally 10.' }),
-    unit('cub', 'Pride cub', 'W', 1, 1, 15, 20, { keywords: ['Stand together'], text: 'Stand together: +10 attack while next to an ally.' }),
-    unit('sentinel', 'Oath sentinel', 'W', 3, 1, 25, 60, { keywords: ['Guard'], text: 'Guard: adjacent allies take 10 less damage from attacks.' }),
-    unit('maren', 'Saint Maren of the Long Watch', 'W', 6, 3, 50, 110, { sub: 'Velunn', ability: { key: 'healall', label: 'Heal all', amount: 20 }, text: 'Ability: heal all adjacent allies 20.' }),
-    unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 30, 25, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
-    unit('berserker', 'Cinder berserker', 'R', 3, 1, 40, 30, { keywords: ['Frenzy'], text: 'Frenzy: +15 attack while damaged.' }),
-    unit('captain', 'Mercenary captain', 'R', 4, 2, 40, 55, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
-    unit('drake', 'Ember drake', 'R', 4, 2, 35, 30, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
-    unit('decoy', 'Illusory decoy', 'U', 1, 1, 0, 15, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
-    unit('scholar', 'Cloistered scholar', 'U', 2, 1, 10, 30, { ability: { key: 'study', label: 'Study' }, text: 'Instead of moving or attacking: draw a card.' }),
-    unit('arcanist', 'Lantern arcanist', 'U', 3, 1, 30, 35, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
-    unit('chorister', 'Brass chorister', 'U', 4, 2, 35, 70, { sub: 'Construct', ability: { key: 'push', label: 'Push' }, text: 'Ability: push an adjacent enemy 1 tile.' }),
+    unit('spearman', 'Militia spearman', 'W', 1, 1, 2, 2),
+    unit('cleric', 'Temple cleric', 'W', 2, 1, 1, 4, { ability: { key: 'heal', label: 'Heal', amount: 3 }, text: 'Ability: heal an adjacent ally 3.' }),
+    unit('knight', 'Oath knight', 'W', 3, 1, 3, 5),
+    unit('lancer', 'Sunmane lancer', 'W', 4, 2, 5, 6, { keywords: ['Swift'], ability: { key: 'lance', label: 'Lance through' }, text: 'Swift. Ability: hit an adjacent enemy and the enemy directly behind it.' }),
+    unit('warden', 'Pride warden', 'W', 6, 3, 6, 10, { ability: { key: 'rally', label: 'Rally', amount: 1 }, text: 'Ability: adjacent allies get +1 attack this turn.' }),
+    { id: 'shield', name: 'Shield of dawn', type: 'instant', colour: 'W', cost: 1, wants: 1, prevent: 3, text: 'When your unit is attacked: prevent 3 of that damage.' },
+    { id: 'banner', name: 'Blessed banner', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 1, hpBonus: 2, text: 'Enchant a unit: +1 attack and +2 health.' },
+    unit('goblin', 'Goblin cutter', 'R', 1, 1, 2, 1),
+    unit('raider', 'Orc raider', 'R', 2, 1, 4, 2),
+    unit('conjurer', 'Street conjurer', 'U', 2, 1, 2, 2, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
+    unit('sellsword', 'Sellsword', 'R', 3, 1, 4, 4),
+    unit('warchief', 'Orc warchief', 'R', 4, 2, 5, 5),
+    unit('giant', 'Hill giant', 'R', 5, 2, 5, 8),
+    unit('dragon', 'Elder dragon', 'R', 7, 3, 9, 10, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
+    { id: 'firebolt', name: 'Firebolt', type: 'instant', colour: 'R', cost: 2, wants: 1, damage: 2, text: 'On the enemy turn: 2 damage to an enemy unit.' },
+    { id: 'hex', name: 'Withering hex', type: 'enchant', colour: 'R', cost: 2, wants: 1, atkBonus: -2, hpBonus: 0, text: 'Enchant a unit: -2 attack.' },
+    unit('carrier', 'Water carrier', 'W', 1, 1, 1, 2, { ability: { key: 'heal', label: 'Heal', amount: 1 }, text: 'Ability: heal an adjacent ally 1.' }),
+    unit('cub', 'Pride cub', 'W', 1, 1, 1, 2, { keywords: ['Stand together'], text: 'Stand together: +1 attack while next to an ally.' }),
+    unit('sentinel', 'Oath sentinel', 'W', 3, 1, 2, 6, { keywords: ['Guard'], text: 'Guard: adjacent allies take 1 less damage from attacks.' }),
+    unit('maren', 'Saint Maren of the Long Watch', 'W', 6, 3, 4, 12, { sub: 'Velunn', ability: { key: 'healall', label: 'Heal all', amount: 2 }, text: 'Ability: heal all adjacent allies 2.' }),
+    unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 3, 2, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
+    unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
+    unit('captain', 'Mercenary captain', 'R', 4, 2, 4, 5, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
+    unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
+    unit('decoy', 'Illusory decoy', 'U', 1, 1, 0, 1, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
+    unit('scholar', 'Cloistered scholar', 'U', 2, 1, 1, 2, { ability: { key: 'study', label: 'Study' }, text: 'Instead of moving or attacking: draw a card.' }),
+    unit('arcanist', 'Lantern arcanist', 'U', 3, 1, 3, 3, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
+    unit('chorister', 'Brass chorister', 'U', 4, 2, 3, 7, { sub: 'Construct', ability: { key: 'push', label: 'Push' }, text: 'Ability: push an adjacent enemy 1 tile.' }),
     { id: 'displacement', name: 'Displacement', type: 'instant', colour: 'U', cost: 2, wants: 1, dodge: true, text: 'When your unit is attacked: move it 1 tile, and the attack misses.' },
     { id: 'glyph', name: 'Binding glyph', type: 'enchant', colour: 'U', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, enemyOnly: true, bind: true, text: "Enchant an enemy unit: it can't move." },
-    unit('thrall', 'Gravebound thrall', 'B', 1, 1, 30, 20),
-    unit('harvester', 'Bone harvester', 'B', 2, 1, 25, 35, { ability: { key: 'harvest', label: 'Harvest', amount: 25 }, text: 'Ability: destroy an adjacent ally. This unit gets +25 attack.' }),
-    unit('noble', 'Ashen Court noble', 'B', 3, 1, 30, 55, { keywords: ['Drain'], text: 'Drain: heals this unit for the damage it deals.' }),
-    unit('vashkar', 'Vashkar, Who Counts the Dead', 'B', 6, 3, 70, 85, { sub: 'Velunn', keywords: ['Drain'], lifeCost: 15, text: 'Drain: heals for the damage it deals. When summoned, you lose 15 life.' }),
+    unit('thrall', 'Gravebound thrall', 'B', 1, 1, 2, 2),
+    unit('harvester', 'Bone harvester', 'B', 2, 1, 2, 3, { ability: { key: 'harvest', label: 'Harvest', amount: 3 }, text: 'Ability: destroy an adjacent ally. This unit gets +3 attack.' }),
+    unit('noble', 'Ashen Court noble', 'B', 3, 1, 3, 4, { keywords: ['Drain'], text: 'Drain: heals this unit for the damage it deals.' }),
+    unit('vashkar', 'Vashkar, Who Counts the Dead', 'B', 6, 3, 7, 9, { sub: 'Velunn', keywords: ['Drain'], lifeCost: 2, text: 'Drain: heals for the damage it deals. When summoned, you lose 2 life.' }),
     { id: 'raise', name: 'Raise the dead', type: 'spell', colour: 'B', cost: 3, wants: 1, raise: 3, text: 'Return a unit costing 3 or less from your discard pile to your back row.' },
     { id: 'warrant', name: 'Death warrant', type: 'enchant', colour: 'B', cost: 5, wants: 2, atkBonus: 0, hpBonus: 0, enemyOnly: true, warrant: 2, text: 'Enchant an enemy unit: destroy it at the end of your next turn.' },
-    unit('sapling', 'Walking sapling', 'G', 2, 1, 10, 40, { keywords: ['Grows'], text: 'Grows: +10 attack and +15 health at the start of your turn, up to three times.' }),
-    unit('saboteur', 'Thornwarden saboteur', 'G', 2, 1, 30, 35, { keywords: ['Regrow'], text: 'Regrow: recovers 10 health at the start of your turn.' }),
-    unit('owl', 'Great owl', 'G', 3, 1, 25, 30, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
-    unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 20, 45, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
-    unit('bull', 'Elder Herd bull', 'G', 5, 2, 60, 95, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
+    unit('sapling', 'Walking sapling', 'G', 2, 1, 1, 3, { keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
+    unit('saboteur', 'Thornwarden saboteur', 'G', 2, 1, 2, 3, { keywords: ['Regrow'], text: 'Regrow: recovers 1 health at the start of your turn.' }),
+    unit('owl', 'Great owl', 'G', 3, 1, 2, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
+    unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 2, 4, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
+    unit('bull', 'Elder Herd bull', 'G', 5, 2, 6, 9, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, text: 'At the end of the enemy turn: push an enemy unit 1 tile back toward its side.' },
-    unit('youngsummoner', 'Young summoner', 'N', 2, 0, 20, 30),
-    { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 15, text: 'Enchant one of your units: it recovers 15 health at the start of your turn.' },
-    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 20, 40, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
+    unit('youngsummoner', 'Young summoner', 'N', 2, 0, 2, 3),
+    { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 2, text: 'Enchant one of your units: it recovers 2 health at the start of your turn.' },
+    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
     { id: 'across', name: 'Across the silence', type: 'spell', colour: 'N', cost: 4, wants: 0, draw: 2, text: 'Draw two cards.' }
   ].forEach(function (c) { CARDS[c.id] = c; });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 11], ['spearman', 1], ['stillflame', 1], ['carrier', 1], ['cub', 1], ['cleric', 1], ['sentinel', 1], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
-    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 9], ['land_u', 2], ['goblin', 1], ['clanraiders', 1], ['raider', 1], ['conjurer', 1], ['berserker', 1], ['sellsword', 1], ['captain', 1], ['warchief', 1], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] },
-    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 9], ['land_w', 2], ['decoy', 2], ['conjurer', 1], ['lampwright', 1], ['scholar', 2], ['arcanist', 2], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
-    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 9], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 3], ['vashkar', 1], ['raise', 1], ['warrant', 1], ['sellsword', 1], ['across', 1], ['firebolt', 1]] },
-    green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 9], ['land_r', 2], ['sapling', 2], ['saboteur', 2], ['owl', 1], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['spearman', 1], ['stillflame', 1], ['carrier', 1], ['cub', 2], ['cleric', 2], ['sentinel', 2], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
+    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 7], ['land_u', 1], ['goblin', 1], ['clanraiders', 2], ['raider', 2], ['conjurer', 1], ['berserker', 2], ['sellsword', 1], ['captain', 1], ['warchief', 1], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] },
+    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 7], ['land_w', 1], ['decoy', 2], ['conjurer', 2], ['lampwright', 2], ['scholar', 2], ['arcanist', 3], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
+    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 6], ['land_r', 2], ['thrall', 3], ['harvester', 3], ['noble', 3], ['vashkar', 1], ['raise', 2], ['warrant', 1], ['sellsword', 1], ['across', 1], ['firebolt', 1]] },
+    green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 6], ['land_r', 2], ['sapling', 3], ['saboteur', 3], ['owl', 2], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
   };
 
   // Draft assignments, from the faction table in SETTING.md and the art briefs. A card that isn't listed has no faction.
@@ -125,17 +125,17 @@ var Engine = (function () {
   function nextToAlly(s, u) { return s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1; }); }
 
   function attackOf(s, u) {
-    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) * 10;
+    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0);
     u.enchants.forEach(function (e) { a += CARDS[e.c].atkBonus; });
-    if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 10;
-    if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 15;
+    if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 1;
+    if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 2;
     return Math.max(0, a);
   }
 
-  // Guard takes 10 off attack and strike-back damage. Several guards don't stack.
+  // Guard takes 1 off attack and strike-back damage. Several guards don't stack.
   function guarded(s, u, amt) {
     var safe = s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1 && hasKw(o, 'Guard'); });
-    return safe ? Math.max(0, amt - 10) : amt;
+    return safe ? Math.max(0, amt - 1) : amt;
   }
 
   // Soft coloured mana: each land short of what the card wants adds 1 to its cost.
@@ -197,10 +197,10 @@ var Engine = (function () {
       if (u.owner !== s.active) return;
       u.moved = false; u.acted = false;
       if (hasKw(u, 'Grows') && (u.growth || 0) < 3) {
-        u.growth = (u.growth || 0) + 1; u.maxHp += 15; u.hp += 15;
-        s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+15', good: true });
+        u.growth = (u.growth || 0) + 1; u.maxHp += 2; u.hp += 2;
+        s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+2', good: true });
       }
-      if (hasKw(u, 'Regrow') && u.hp < u.maxHp) heal(s, u, 10);
+      if (hasKw(u, 'Regrow') && u.hp < u.maxHp) heal(s, u, 1);
       u.enchants.forEach(function (e) { if (CARDS[e.c].regrow && u.hp < u.maxHp) heal(s, u, CARDS[e.c].regrow); });
     });
     if (s.turn > 1) draw(s, s.active);
