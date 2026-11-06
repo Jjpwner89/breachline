@@ -54,4 +54,6 @@ Planned card unlocks, from the user: campaign unlocks gradually by winning and g
 
 **Why:** the builder has to work with owned cards later, not only the full set.
 
+On the published page, saved decks also go to the viewer's private database area under `data/users/<id>`, so they follow the account (added 2026-11-05 at the user's request). The browser copy stays the working one, so the game still runs offline or as a plain local copy, and the newer copy of a deck wins.
+
 **How to apply:** new modes should add a card pool in `Decks.pool` (`breachline/decks.js`) rather than change the builder. Treat these as my assumptions until the user confirms them: 24-40 card decks, 3 copies of a non-land card, unlimited lands, and the card-to-faction list in `engine.js`.
