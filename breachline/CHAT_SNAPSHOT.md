@@ -9,16 +9,17 @@ Each item says whose it is:
 
 ## Where things stand
 
-The last thing in progress was the next card batch. You asked for new cards in each colour and gave changes on Claude's first draft in `NEW_CARDS.md`. Claude then wrote briefs for all 29 new images in `art/ART_BRIEFS_SET2.md`. The Setting and Flavor chat was still running when this snapshot was taken, so its latest work may be newer than this.
+The new cards and flavour lines are in the prototype, with five 24-card decks and an opponent picker. New paintings are still arriving from ChatGPT: 12 of the 29 exist so far, and the other cards show a plain panel. A war table redesign of the screen is built on its own branch, `claude/ui-redesign-3f7efc`, and you haven't merged it.
 
 **Waiting on you:**
-1. Generate the 29 images from the set 2 briefs. Claude suggested starting with Cloistered scholar, Elder Herd bull and Death warrant as a sample.
-2. Answer the three questions at the bottom of `NEW_CARDS.md`.
-3. Confirm or reject the "Repetition to watch" list in the `art-direction` skill.
-4. Give verdicts on the three flavour lines still waiting in `FLAVOUR.md`.
-5. Name some touchstones: books, films, games or paintings with the feeling you want. Claude has asked more than once and you haven't answered yet.
+1. Finish the remaining images. Each new batch needs `art/build-web.sh` run and the game republished. That hasn't been done yet for Cinder berserker or the revised Brass chorister, Cinder Clan raiders, Overgrown ruin and Water carrier.
+2. Playtest the war table redesign and decide whether to merge it. It was built from a copy of the five-deck work, so merging will conflict in `index.html` and `ui.js`. The fix is to keep the redesign and re-add anything newer, including the flavour lines. Its preview entry in `.claude/launch.json` was left out of the commit.
+3. Playtest the balance items under "Balance notes".
+4. Answer any questions still open at the bottom of `NEW_CARDS.md`.
+5. Confirm or reject the "Repetition to watch" list in the `art-direction` skill.
+6. Name some touchstones: books, films, games or paintings with the feeling you want. Claude has asked more than once and you haven't answered yet.
 
-**Not started:** the model-driven AI and its chat panel, the exhibition deck builder, the campaign, a playable town and fortifications, faction buildings in the engine, new cards in the engine, and flavour text on cards.
+**Not started:** the model-driven AI and its chat panel, the exhibition deck builder, the campaign, a playable town and fortifications, and faction buildings in the engine.
 
 **Outdated on purpose:** the style block in `art/ART_BRIEFS.md` and the shared art briefs doc still use old wording and ask for too much drama. `ART_BRIEFS.md` now carries a warning, but the shared doc doesn't, so don't reuse it for new briefs.
 
@@ -59,8 +60,6 @@ If that Claude account is a work account, you could lose these pages if you leav
 - **Going against a tendency:** you approved the higher cost. Claude's starting number is about 1 extra mana, so a Genesis flier with a typical 3-mana flier's stats would cost 4.
 - **Factions sharing an alignment (you liked the idea):** two factions in one alignment share mana but compete for your limited town lots. Example building: a Warhorde card wants its War forge, not just any Fervor building.
 - **Velunn on cards (you liked):** you said "yes that's great" to Claude's idea that they're the game's rarest, biggest cards and that Dominion could bargain with them, adding that they can be good too.
-- **Vampires (you decided):** Dominion can have vampires, and red could too, but they should be a subtle part of the world, in the shadows and somewhat rare. This changes your earlier dislike of the look. The set 2 Dominion briefs were written before this and rule that look out.
-
 **Claude proposed:**
 - No counterspells in Gnosis, because disabling enemies does a similar job on the grid.
 - No board wipes at first, because they're hard to balance and hard for the AI.
@@ -115,9 +114,9 @@ The town and fortifications aren't playable yet, so none of this has been tested
 
 ## Balance notes
 
-- **Land share:** 45% at 40 cards would be 18 lands. At 10 lands in 20 cards, about a third of players had no spells in hand by their 10th turn, which is why Claude stopped at 9.
-- **Going first:** Claude's suggested first fix for the first player's 40% win rate is to remove the skipped first draw. It hasn't been tried.
-- **White's lead:** it may not be real, since the bot doesn't use the Warhorde's instants or positioning cleverly.
+- **Land share:** 45% at 40 cards would be 18 lands. At 10 lands in 20 cards, about a third of players had no spells in hand by their 10th turn, which is why Claude stopped at 9. The 24-card decks now run 11.
+- **Five-deck results:** in the latest 170 bot-only games, counting 64 games per deck against other decks, Gnosis and Genesis went 36-28, Fervor 33-31, Dominion 30-34 and Vigil 25-39. Vigil's drop could partly be chance, so playtest it before changing anything. The bot also rarely uses sacrifices well, which affects Dominion.
+- **Going first:** the first player now wins about 54%, up from about 40% with the old decks, on a small sample. Claude's earlier idea of removing the skipped first draw hasn't been tried and may no longer be needed.
 - **Summoner life:** Claude tried 200 first, then 150 because 200 looked too long for 10 to 20 minutes.
 - **Cloistered scholar:** you had it draw a card instead of moving or attacking, with no health cost. Claude warned that a card every turn from a 2-mana unit could be very strong, so playtest it first.
 - **Red damage:** you said it looked a little unbalanced, so Claude lowered three new Fervor cards. Existing red cards such as the Orc warchief and Elder dragon haven't been touched, and Claude asked if you meant those too.

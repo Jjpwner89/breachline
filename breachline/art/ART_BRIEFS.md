@@ -1,5 +1,7 @@
 # Breachline card art briefs
 
+**For new images, don't use the style block below.** It asks for more drama than the creator wants. Follow `.claude/skills/art-direction/SKILL.md` and the style block in `ART_BRIEFS_SET2.md`.
+
 This file holds art briefs for all 19 cards in the current set of Breachline, an original fantasy card game.
 
 ## Instructions for the image generator

@@ -19,6 +19,9 @@ Format: landscape, about 3:2, such as 1536 x 1024. One clear subject should read
 
 ## Pose and energy
 
+- Match emotional intensity to the individual subject and the creator's latest request. Do not soften every character into stoic restraint: this berserker should visibly roar with aggressive excitement and bloodlust. That is a card-specific exception, not a requirement for other units.
+- Treat lightly dynamic movement as the default, not a ceiling. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the off-screen-enemy rule.
+- Give gaze and gestures a reason in the scene. A character should attend to a person, object or event; its hands, posture and expression should support that action. A raised hand or combat stance needs a contextual purpose, including indoors. Quiet work, inspection or listening can supply lightly dynamic movement.
 - Make poses lightly dynamic. Characters shouldn't be just standing there, but they shouldn't be over the top or melodramatic either.
 - Vary the poses and facing directions, because they get predictable quickly. Not every character should face right. Vary viewpoint, subject size, posture, silhouette and gesture as well; reversing a familiar pose is not enough. Follow each brief's full-body, wide, rear, profile or detail framing. A thoughtful still pose is appropriate when the brief calls for it.
 - Show combat sometimes, but only against an enemy off-screen. Don't aim an attack straight at the viewer.
@@ -75,6 +78,23 @@ The creator supplied twelve Magic card images as examples they like and asked fo
 - **Distinct colour scripts:** choose a limited, scene-specific palette and one lighting idea. Luminous cyan, cold violet, deep forest green, dry sunlit ochre and quiet neutral daylight can coexist in one set. Alignment identity should survive without putting its emblem on every object.
 
 Across a batch, check variety in camera distance, facing direction, body gesture, silhouette, mood, background structure and dominant colour. Preserve the subjects, identities and essential story details in the current briefs. These references broaden interpretation; they do not replace the briefs or authorize reproducing an existing illustration.
+
+## Set 2 review feedback (2026-11-05)
+
+Confirmed by the creator during generation:
+
+- The **bone harvester** is a favourite: particularly its violet/grey colour variation and the specific bone-gathering action. Use it as a positive example of mood and purposeful behaviour.
+- The **brass chorister** design is strongly liked. For this card, remove shoulder organ pipes, integrate the mouth opening more subtly, and remove all visible motion/pressure effects from the hand. Do not generalize this into a ban on unusual construct anatomy.
+- Follow-up on **brass chorister**: the creator wants it looking at something and rejects an unexplained raised hand in an indoor workshop. Change its pose so its gaze and gesture fit the context. The workshop inspection scene is an interpretation to review, not a newly confirmed preference for all constructs.
+- The **Cinder Clan raiders** should keep their positive energy but look excited, thrilled and determined rather than broadly laughing. Add practical weapons. Keep their group action.
+- The **water carrier** is liked; remove the supporting arm/hand entering from the foreground.
+- The **Ashen barrows** land is liked. The **Overgrown ruin** vignette is liked in colour and subject, but feels too small for this land. Preserve it as a possible artifact illustration reference and remake this land with a stronger sense of place and grand scale.
+- The Vigil group is broadly liked, but **Oath sentinel** is the least liked in that group; the reason is not specified. Do not invent a general rule from that preference.
+- **Cinder berserker override (2026-11-05, latest):** the creator rejected the female designs and the subsequent restrained male fighter. Start with an entirely new male design evoking old-world berserkers: aggressive, LOUD, excited and bloodthirsty, with an open-mouthed battle roar and visible eagerness for combat. Retain painted skin and an active leap over an obstacle toward an off-screen opponent. A calm, stoic, merely focused or closed-mouth expression misses the brief. Long wild hair, a shaggy beard, bare painted torso and an asymmetrical fur mantle are the current design interpretation, pending creator review. This card explicitly overrides the earlier controlled-expression and lightly dynamic defaults.
+- The creator describes the **mercenary captain** as funny; do not remove personality or assume all humour is unwanted.
+- Other named favourites are **Sunmane lancer**, the small **Goblin cutter**, **Withering hex** (rusting sword), and **Lantern quarter** (blue land). These are examples of successful subjects/actions/colour, not templates to repeat their poses.
+
+Use expressions appropriate to the action. For these raiders, enthusiasm should read as exhilaration and resolve; broad laughter is too light. Keep quiet tension, humour, awe and ordinary human feeling available elsewhere.
 
 ## Repetition to watch
 
