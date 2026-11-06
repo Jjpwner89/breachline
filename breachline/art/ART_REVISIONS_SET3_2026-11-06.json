@@ -1,0 +1,360 @@
+{
+  "date": "2026-11-06",
+  "status": "final_for_card_building",
+  "method": "built-in image_gen tool",
+  "scope": "Eight final revised images. Pottery, salvager and all eight superseded image versions deleted from the art folder, including their JPEG copies.",
+  "feedback": {
+    "approved": [
+      "Court Informant is a favourite: dynamic peeking action, contrasting light and attractive courtly character fit together.",
+      "Sanctuary Threshold (arrows on the ground) is liked.",
+      "Unmake the Pattern (tuning fork/light) is strongly liked.",
+      "Shatter the Chain is very good, though not a top-tier favourite.",
+      "The spell/enchantment direction as a whole is substantially closer to the creator's vision."
+    ],
+    "removed": [
+      "Creator rejected the machinery-salvage illustration and requested removal.",
+      "Creator cut the pottery spell after the geometry revisions; do not regenerate or reuse it as active card art."
+    ],
+    "principles": [
+      "Ordinary units should not all have model-perfect faces; youth and attractiveness are separate adjustments.",
+      "Do not erase believable beauty from the courtly informant.",
+      "Orcs should be uglier, coarse and distinctly nonhuman; avoid glamorized human models with tusks.",
+      "Alderkin need independent intentions and activities beyond helping others.",
+      "Reduce repetitive lion-folk appearances.",
+      "Magical changes still require coherent physical geometry."
+    ]
+  },
+  "baseline_sha256": {
+    "sunthread-mantle.png": "8ba445e7d9379ab9ed3646eaff8b63c25cebdd315a2f26a6f4e8f159d6f621c2",
+    "return-to-loam.png": "57c0e33d661958badf158f6b6cd5a2e9b4e86116794048041ab0afc5a9dc9a95",
+    "warband-drum.png": "efda340534ad652b21c512aab269878e7c149d985763ab290a429296ef02c8ac",
+    "street-conjurer.png": "2a417992a1e8187a0aa49b9226deb741415310dbef297b139bf6520bb05bb9ab",
+    "debt-collectors-blade.png": "025bb63d8da89a5a612189fe75efb00109ca92ec3efb77a9183d9e8fdf237fab",
+    "sanctuary-threshold.png": "75b943775b75eb860054c78d063600956efe1b877ba72e870900fe6c1d0f32bc",
+    "grove-tender.png": "0276d40a4e1c9b3aa92f578d6d9661c05a7993d6acb52a38c9ce0426341aea32",
+    "ashen-barrows.png": "24803b4a1d1042247b1e1f502b885461c35ea9d162b32738a9de69e417185c51",
+    "raise-the-dead.png": "bcfc5b8de1e142fc4ef49e4f370cf1648a08f82ddcf51d8cda030fbfa61df01d",
+    "thornwarden-pathguard.png": "a59a2d9a0658c4613b2a31654951d1e62435b11ac183b72381caeaced9211a5c",
+    "death-warrant.png": "579a5c7cc659f7734e8946638504449687386b62c33eb035b52fc8f5feec074e",
+    "cinder-berserker.png": "a642a905325a358cad87c227aea20898d6beba63ce237e1fb0d093472ccb6c5d",
+    "surveyors-lenses.png": "6ff4caeedb7bd6782be90444d4ce2f91f846956558196e516fa40f73de324f03",
+    "ashen-court-noble.png": "d633d23dbcdf574108f87300d2585cf20c4a6042c0772f7180e772b602e90adb",
+    "siphon-vigor.png": "d43c4e2e8b80bb0b0d5c195becce7b508ddefdc21c3b08ae09a622bf8713c4fe",
+    "militia-spearman.png": "fa815135bc6b9e93f5d380a360399c3f7c008cc53268155b63077fb695b29a98",
+    "oath-knight.png": "987d3f968aaadbf8c19d636664a7a6a6fc0eec9a33df7c3f70d9750ca5b5b54c",
+    "roadwardens-shield.png": "d3535cf8aba1056f79d98824a8b8b438e9cf001f8165fdeee13f787f935f71cf",
+    "orc-warchief.png": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+    "lantern-arcanist.png": "1d8b3447c9ff69f154ebfd5e315b14d18d5ac8ec71835b2e477922bac1b5a2ca",
+    "seedheart-vessel.png": "6fbf3a0ffb8e7210b58228309df7037eeb9e2473915f1067a8628ce69f7c18a2",
+    "mourning-veil.png": "7a00be3f0903490d9e903112a39b36e287da7bbcf85a6cd7bec41f41eca2ecd6",
+    "court-informant.png": "76b640eeef07b01348ee06023151b575345051cc12096b783aaf00472f5e14a6",
+    "scatter-the-line.png": "7afff31e585a78d965c91d51757bcbfa3d7a0666aff8e536c72e97ac5ea575b2",
+    "borrowed-moment.png": "df1a868d4a429a928ff6598eae2f0a4bd705f2ae785359b841f8ece75f848ee4",
+    "tideglass-engine.png": "55b13d4c4404e566f43498e6e752fd38d6cfe32c3d62ddb6e91db5d2141f656f",
+    "cinder-peaks.png": "8876fee0a173c8d75682b13a69984e51230cc26d44c85c14c0ace7c88f27f60f",
+    "illusory-decoy.png": "35874afa05c984d302b1f2b9a28bee55ae4b5c0b7749f04c705bd0915ac03d6c",
+    "brass-chorister.png": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+    "binding-glyph.png": "f372392c1b3fed789f5ec80572e0cb700708a2cdbcd89144171efeaa5210f77b",
+    "clan-outrider.png": "88e25d060bdb468d9248a23b21aded3d18ffa70591d22e0854a8a129942923e9",
+    "sudden-canopy.png": "fb1b78086ec0fd12a691fec5d5cd239e18936057f26fb4d2bc4a4852f081011c",
+    "hill-giant.png": "ed7f418e0df6ae1c5852393303b85383dd0bbdf700dda2677b69d6de08bb9288",
+    "goblin-cutter.png": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+    "water-carrier.png": "7be0540e2d7bc538385800ea9fff9fe76483bbd30491c80e9fa0789858e1375c",
+    "folded-observatory.png": "e28a645ff9f9cd3ef0813194b29a18508b72bbd8b3bd6c7622be08c90179c19e",
+    "oath-sentinel.png": "0f7d57ec7c076c64859d4a794184e969689fdef1f4159a6db6faec0375c07c2e",
+    "mercenary-captain.png": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
+    "overgrown-ruin.png": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+    "shifting-forest.png": "8630888042b83ec7d74f89213f0fe0952c32167a375884ea3b3da0415c0ca1c4",
+    "sunlit-plains.png": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+    "pride-cub.png": "0d844df0c5d83a08b0c6e3a9ee0e71f81e3ebf8a63c21c2af742c7a719f7591b",
+    "sunmane-lancer.png": "c0aa40bae2b86f77e500965716cfdc85c5e6121e45149db44979c58be0869061",
+    "ashen-court-bailiff.png": "71777c9bcf2b8adc30d7e093995fa4aece7a93a03e577227400777c2fe61e077",
+    "sepulchral-scale.png": "4dc32bef2df1e2857eb995f6e31b430968e05f2f4432b394720ceb9caf26a178",
+    "wayfinder-druid.png": "dcd309dfe988b2f50fa577b5d5ba06836f6f26f6a3e1efcfa3f5af12653ac12a",
+    "barrow-tender.png": "9ad93d3a5843f00b1050dda1319cacfea3a94185a7bf8cfb643e517390ccc9c3",
+    "thornwarden-saboteur.png": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e",
+    "lantern-quarter.png": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+    "saint-maren.png": "06d13a0ceda5e294c0c06bdd4de3cb4c7e1f6f1b93d4114624ea7208ba8363ac",
+    "cinder-clan-raiders.png": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+    "cinderhook-axe.png": "acc2a767caf71a1fe11555f32778ea355448021b2f9f38128fbcd3a983cf26d2",
+    "conclave-courier.png": "e220fda4c898b253ec4a8e141ca2492bc4e9bed2459f73de21b773de227ff216",
+    "sellsword.png": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+    "elder-herd-bull.png": "ee3715b0f616110bd2aa4609e01292bf5cc10c29c6b37a940ddcffa5ee55d493",
+    "withering-hex.png": "6494f04f3a70b80e59adcc4a7a7fbe6c76c1a4a7e1c16eea789cff4401b77372",
+    "prism-bracer.png": "4c9f234d67cf19002b82a996980fd973ea72d40b0d8db2500055b37de2218a5d",
+    "hour-of-collection.png": "511898db45a644983b8c177ea4a5fd6b0cdaf228933e53b455c1c1de93365e6e",
+    "stand-as-one.png": "c050a57271c46a758a27ca99bb678d3cde6a826ec5aac40d43214130832d9b4c",
+    "great-owl.png": "bc62cc5229d5f2c23b8370b1902329a316daaaa54fd62d0f712432222e2a420a",
+    "orc-raider.png": "09b412a67b3a5b20bf1a07ee9eee7143d49b4d8a9a5dd039efff5d9c647fc8ea",
+    "gravebound-thrall.png": "cb91a69c99c8ec1ebaf6ee96b1fad5e82fe6043bce07d6beab99f7e42504b9d3",
+    "vashkar.png": "b6fd7fa59d267f4c7cf3cd3549d0b82f653ba36b02667bb97bd182caacb81dc5",
+    "firebolt.png": "49c1e0ecba2352548dacca1a911f295590c98b556aa7d7a8f93761fa8ef0c1b5",
+    "bone-harvester.png": "a248eddc5c103db0f8d2a57e7175115bb7ef3facfc0c6f3a54bc6b3254cd7571",
+    "walking-sapling.png": "ee220be0f314304233ff5c0eb259cbf9ade4295eede66707977e629c39866472",
+    "pride-warden.png": "073dcba056cd9f7ca08b98171b72dd45bf837051631851ecab118b3a995c084e",
+    "cloistered-scholar.png": "314f3007a630d3c40a93c45d986fe768b9ec66096d40463ad20e558999d193fd",
+    "reedbank-forager.png": "3349313d131ced5ed5021958950ea1a53a4a8851dcdd37ad8e4750810abe9e96",
+    "young-summoner.png": "075c5f39257dea834df5234ff28a76ee911bda65937daca241b61cc6ebc99e67",
+    "shield-of-dawn.png": "ae54b222d0f4857f0c958490d07a1c051b673c438fa3931f53a79f3503469aad",
+    "oath-road-squire.png": "67b78b2c93f82d6e44df81d813ff01dc835bcbc9eea33932b2724a082f0e3335",
+    "shatter-the-chain.png": "585c98e9950f3097a3a929bceb73c9246292b6f8d457b228d6f4767bf70beb85",
+    "unmake-the-pattern.png": "67f53182127321b49c39c2dbf0e558e43861ffd450cc1fe7633f5aa931c6e48f",
+    "artificer-salvager.png": "5f8171f14d23437c6bee6f76d269c0e0e895f7a797005cc602ee7242742a40c5",
+    "oath-bell.png": "0d997a37b1b4f4a2bb4c976759a8504d0d127f05f40e5ba917a5319771a89428",
+    "elder-dragon.png": "497c6db747e59eb83474d7ce204f59148813840c918f51dcd92bcf1149a233ff",
+    "ember-drake.png": "4602ef3e132c5634e43f821fc88c05fe79320ac35617bd75a1fb6e23b84b71e1",
+    "displacement.png": "527ddcd45b13c55860ed5986acfe217c23aa0f0054680a045c8dcea7cf07510f",
+    "temple-cleric.png": "7758243d0a2b08ebb9207e0f0c7db7202a06b269da7b8a0af75c7f9694a4460d",
+    "pilgrim-reliquary.png": "869e58ccfc2c92f2459418773748eebbc4b60a637e958a88bc3263dd40705e71",
+    "blessed-banner.png": "2785a39b80d6134412219f19c5baaf2c9fcf7160aff94deb8bdf81784a031cdf"
+  },
+  "images": [
+    {
+      "file": "oath-road-squire.png",
+      "title": "Oath-road Squire",
+      "mode": "edit",
+      "reason": "Younger and more ordinary-looking, while retaining the packing action.",
+      "brief": "A younger adult squire, about 18–20, fastens his travelling pack. An ordinary, slightly appealing face with a larger uneven nose, softer jaw and unstyled curls; not a model. Preserve the crouching pose and travel scene.",
+      "prompt": "Edit the supplied illustration. One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Change ONLY the young man's age and facial design: make him a clearly adult novice about 18–20, a little younger than the current figure, ordinary and slightly appealing rather than exceptionally handsome. Give him a slightly longer prominent nose, less sculpted softer chin, modest asymmetry in the brows, somewhat large ears and casually cropped uneven brown curls. Relax the sculpted cheekbones and perfect profile; no model grooming. Do not make him ugly, sick, disfigured, cartoonish or childlike. Preserve his crouching posture, practical ivory clothes, fastening the same backpack, both hands, horse at the edge, sunlight and all other composition. Keep the face broadly painted without extra skin texture.",
+      "input": "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-road-squire.png",
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8eeffc3d-a9e2-4f2c-b812-aca8979c5936.png",
+      "output_file": "oath-road-squire.png",
+      "web_file": "web/oath-road-squire.jpg",
+      "sha256": "1c735bb89c1c6f980a5e4ecdd5b198e00422483729c87d769b8a507fa582350d",
+      "web_sha256": "f4c9eb9baf7fcf23a40821dbba0d2bf559d9f03800d596fdff94c0a4928c309c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "conclave-courier.png",
+      "title": "Conclave Courier",
+      "mode": "edit",
+      "reason": "Keep her age and boat action; slightly reduce idealized beauty.",
+      "brief": "The courier steps off a boat with her message tube. Keep the same adult age, energy and clothes, but use a more ordinary face with a broader nose, subtle asymmetry and less idealized lips and cheekbones.",
+      "prompt": "Edit the supplied illustration. One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Change ONLY the courier's facial design to be slightly less idealized and more ordinary. Keep exactly her current adult age, apparent ancestry, dark hair, focused expression and healthy appearance. A somewhat broader nose with a softly uneven bridge, slightly less sculpted cheekbones, less perfectly shaped lips and a little brow asymmetry. Still pleasant and believable, no aging, wrinkles, ugliness, caricature or facial damage. Do not change her body or clothes. Preserve the purposeful step from the boat, gaze direction, brass message tube, hand positions, satchel, gangplank, golden sail and teal water. Keep the beautiful lighting and broad paint treatment; do not add microdetail.",
+      "input": "/Users/dpuser/Documents/Claude/Games/breachline/art/conclave-courier.png",
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c9de894b-7564-479f-ba1b-12ca0ea4e65c.png",
+      "output_file": "conclave-courier.png",
+      "web_file": "web/conclave-courier.jpg",
+      "sha256": "ca7199bc72bb1c2276c802b1899610e81885022a90fc5ddabc5f688fe77e51a5",
+      "web_sha256": "afe77c8fe12dedd2d12c2d554d40b7d4a91c674a4f805a6bbe06c7dbc30fa71d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "cleanup": {
+        "prompt": "Edit only a tiny cleanup in this exact illustration: remove every faint signature-like, letter-like or watermark mark from the extreme lower-right corner. Fill that tiny area with the surrounding painted boat/wood/stone texture. Preserve absolutely everything else: the revised woman's face and age, pose, clothes, boat, satchel, lighting, colours, framing and brushwork. No text or signature anywhere. 1536x1024 landscape.",
+        "input_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-895149db-d8d5-4767-a609-c00c683bddab.png"
+      },
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "ashen-court-bailiff.png",
+      "title": "Ashen Court Bailiff",
+      "mode": "edit",
+      "reason": "Move the gate scene to a dark, candlelit and oppressive environment.",
+      "brief": "The same bailiff unlocks an iron gate in a dark interior passage. A few low candles illuminate his keys, glove and cheek; almost-black iron and violet-brown masonry imply the Dominion's severity.",
+      "prompt": "Edit this image's setting and lighting. One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Preserve the same ordinary older stocky bailiff, his practical grey-violet livery, three-quarter-back pose, two gloved hands, key turning in the same iron barred gate and full body. Move the scene into a dark enclosed stone passage at night. Remove the sunny outdoor view, bright sky, distant town and greenery entirely. One small cluster of short candles in a wall recess to the left is the only strong light: warm amber illuminates his key hand, cheek edge and a few iron bars, then falls off quickly into deep brown-violet shadows. Very faint cool reflected light helps the silhouette; most of the passage is genuinely dark. Harsh, oppressive Dominion service entrance, not a cosy inn or elaborate Gothic cathedral. The candlelight must visibly belong to the candles. No added people, skeletons, skulls, glow effects or writing.",
+      "input": "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-bailiff.png",
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f00217f0-5439-4f42-ac99-3e6bde75d529.png",
+      "output_file": "ashen-court-bailiff.png",
+      "web_file": "web/ashen-court-bailiff.jpg",
+      "sha256": "604ebccc1179664ed62a1295be49bbb7df978dc5d59872672248592b90c8162a",
+      "web_sha256": "8b00ee97427b29009954c2027163ba0d08c1f403770aa3171b2f0b1289679fd7",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "thornwarden-pathguard.png",
+      "title": "Thornwarden Pathguard",
+      "mode": "edit",
+      "reason": "Redesign the orc as visibly nonhuman, coarse and unattractive.",
+      "brief": "A stocky female orc pauses over a fallen branch to ready an arrow. Her heavy brow, broad flattened nose, projecting jaw and irregular tusks establish a visibly nonhuman, rough face. Covered practical clothing, no beauty-model anatomy.",
+      "prompt": "Substantially redesign the ORC character in this illustration. One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. She must read as a physically rough, distinctly nonhuman female orc, not an attractive human woman with pointed ears. Give her a very heavy low brow ridge, small deep-set eyes, broad flattened nose, wide blunt projecting jaw and uneven two lower tusks, thick short neck and stockier shoulders. Her silhouette and facial proportions are coarse, rugged and unattractive; leathery muted grey-olive skin painted in broad planes. Short rough practical dark hair tied back, no pretty framing strands, delicate chin, glam lips, high-fashion cheekbones, model pose, makeup or sexualized costume. Retain her functional covered travelling leathers, quiver, alert action preparing an arrow over the bow, foot braced on fallen branch, looking toward an off-screen presence at left. Keep her recognizably an orc, not an ape or a human ethnic caricature. Natural, weighty anatomy and sensible bow mechanics, no extra fingers. Reduce busy forest detail into soft cool foliage and warm light on face and hands.",
+      "input": "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-pathguard.png",
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-aaa99568-325e-4fd5-b904-fac91f945f91.png",
+      "output_file": "thornwarden-pathguard.png",
+      "web_file": "web/thornwarden-pathguard.jpg",
+      "sha256": "295fdf3fc71b6351910ba65bd3f3ee5c5881a8b3906bd390a875a4ab9b0c7c3e",
+      "web_sha256": "58f4f81c86d8f10ab0be85bcdb18b0075535d7b8c1419991f2c87c2d9049bfbc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "clan-outrider.png",
+      "title": "Clan Outrider",
+      "mode": "edit",
+      "reason": "Aggressive spear throw while riding toward the foreground, with red behind.",
+      "brief": "The goblin and ordinary-sized donkey/mule advance toward the lower-left foreground. The rider throws a short spear at a target just outside the frame, with an aggressive expression; a broad crimson dusk sky and red dust establish Fervor.",
+      "prompt": "Recompose the supplied goblin-on-mule painting into an active attack. One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Keep the inventive small goblin and ordinary-sized shaggy donkey/mule, worn tack, simple leather travelling clothes and compact spear design. The mount now moves toward the foreground in a strongly readable three-quarter view, angled toward the lower LEFT corner, with convincing foreshortening and four believable legs. The goblin twists in the saddle and THROWS his short spear toward an enemy just outside the lower-left edge, beside rather than at the camera. Catch the instant of release: right arm extended after the throw, hand opening, the entire straight spear just ahead of it on the same throwing trajectory; left hand alone holds reins. Aggressive, hungry and determined expression with a small rough snarl, not laughing or glamorous. Deep CRIMSON and rust-red dusk sky/dust in a few broad shapes behind him, restrained ember-orange light, dark purple ridge; retain some cool highlights to avoid an all-red wash. No visible enemy, impact, gore, extra riders, speed lines or huge explosions. Keep the complete mount, goblin and spear comfortably inside the frame with dynamic breathing room.",
+      "input": "/Users/dpuser/Documents/Claude/Games/breachline/art/clan-outrider.png",
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-826fad5e-6a56-4cd2-95d5-3b13764d8101.png",
+      "output_file": "clan-outrider.png",
+      "web_file": "web/clan-outrider.jpg",
+      "sha256": "daed57ebaad12ecf7e9080ba40f551ff26a1a3b4cbd2424fde505be75a71fc35",
+      "web_sha256": "59924fc7383cd6ac43a094a7b70cf370fd720bf889b2dd5cacf24c942e9df52c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "surveyors-lenses.png",
+      "title": "Surveyor's Glass",
+      "mode": "new",
+      "reason": "Replace the rejected asymmetric spectacles with a simple usable viewing instrument.",
+      "brief": "A compact brass-and-leather collapsible spyglass rests on a ferry's wooden rail. Clear connected telescope construction, one eyepiece and one objective, angled in cool river light; no wearable spectacles.",
+      "prompt": "One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Design a new Gnosis equipment illustration titled Surveyor's Glass. Replace the weird spectacles concept completely with a compact, practical collapsible brass spyglass, only three aligned nested cylindrical sections, leather grip, one small eyepiece and one larger glass objective. It rests diagonally across a plain worn wooden ferry rail, partly drawn from a scuffed indigo leather case; all parts connect sensibly. The objective glass catches a quiet blue-green river reflection and a warm pinpoint of sunlight. Close oblique view, complete instrument comfortably inside frame, clear readable mechanism and understated workmanship, not ornate steampunk. A broad pale-cyan river shape and one blurred russet sail suggest the background; no elaborate town, charts or lettering. Amber brass, cool glass, blue leather and grey wood. No person, hands, spectacles, asymmetric eye frames, floating elements, giant lens or neon magic.",
+      "input": null,
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2a7a580e-53f8-4465-91e9-e1f88fa38418.png",
+      "output_file": "surveyors-lenses.png",
+      "web_file": "web/surveyors-lenses.jpg",
+      "sha256": "d25ec2aa9733c9d4600f76a6d7aded314a636722a9d897d57870942ab4e5ce84",
+      "web_sha256": "d51755e8b3a46dac574b7fc41b8509e02590ac7883896023200f1a148f630d1b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "grove-tender.png",
+      "title": "Grove Wanderer",
+      "mode": "new",
+      "reason": "Give the Alderkin a private journey rather than another helpful task.",
+      "brief": "An Alderkin climbs a broken rocky ridge alone. A root-foot searches for purchase while one branch-hand grips stone; wind catches a few leaves. This is its own difficult journey, with no human being helped.",
+      "prompt": "One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Create a new Genesis ordinary-unit illustration, Grove Wanderer. A living Alderkin tree-person, roughly one and a half human heights, climbs across a broken rocky ridge on its own journey. Clearly organic trunk-and-root anatomy, slender twisted limbs with convincing weight and a subtle non-carved face in the wood. Three-quarter rear/side viewpoint: one long branch-hand grips an upper rock edge while a root-foot searches for a lower foothold; its torso twists with the exertion and its intent gaze follows the route. This is an independent being with its own destination, not a kindly helper. No humans, sapling, gardening, carrying someone, irrigation or waterworks. Wind pulls a few sparse copper-green leaves from one shoulder; not a huge crown of foliage. Broad grey-violet rock planes, a small pale blue opening of sky, late gold light on the climbing hand and bark edge, cooler deep shadows. Keep the full body legible, believable grip and continuous limbs, moderate rather than monumental scale, implied distant moorland in loose shapes. Not a carved wood man, smiling grandfather tree, superhero or monster attack.",
+      "input": null,
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-7a20d795-d410-4a4d-a0a6-f900161d919c.png",
+      "output_file": "grove-tender.png",
+      "web_file": "web/grove-tender.jpg",
+      "sha256": "f8788faee24d607150098cc72895fcb35403b900e8df6fc62a474ed6d93ecc12",
+      "web_sha256": "ee1e52983801dab5eb8d0399d9903f019b8993bf4d2dcd4ddac54df798727e8a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "cleanup": {
+        "prompt": "Edit ONLY the face/head of this climbing living tree-person. Preserve the entire climbing scene, rock, limbs and grasp, windy leaves, colours, light, framing, body and brushwork. Replace the too-human pretty sculpted face with a genuinely organic Alderkin head formed from an asymmetrical fork of living timber: a narrow dark knot serving as an eye, a long tapered broken-bark plane suggesting the front of its head, no human nose, human lips, sculpted cheekbones, smooth skin or beautiful human profile. The direction of its attention is still toward the next handhold. The head remains proportional, alive and non-cartoonish, not a carved mask or hollow skull. Broad subtle painted wood shapes, no intricate grooves or added pores. Keep everything else unchanged. 1536x1024 landscape, no text or signature.",
+        "input_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f89d40a6-5ad7-459d-a3a0-76eda06e96ab.png"
+      },
+      "superseded_image_files_deleted": true
+    },
+    {
+      "file": "stand-as-one.png",
+      "title": "Stand as One",
+      "mode": "new",
+      "reason": "Replace the rejected attractive shield pair and lion with a shared protective action.",
+      "brief": "Three ordinary militia members, mostly shown as arms and partial profiles, brace a splitting wooden door together. Restrained gold light joins the splitting wood at their point of contact; collective protection is the subject.",
+      "prompt": "One original Breachline fantasy-card illustration, landscape 1536x1024, 3:2, no lettering, card frame, watermark or signature. Traditional oil/acrylic painting with economical visible brushwork, convincing weight, selective sharp edges, simplified natural faces and hands. No photorealism, glossy 3D, individual pores, etched veins or excessive hair detail. Keep a clear visual idea at card size and purposeful warm/cool lighting. Background suggested in a few broad shapes, never a fully detailed city. Create a WHITE/Vigil instant-spell illustration, Stand as One, as a specific protective event. Inside a dim modest stone gatehouse, three ordinary militia members brace a thick weathered wooden door together as its planks begin to split. The image focuses closely on their three firmly planted hands and sleeves pressing the same crossbeam: different worn ivory cloth, practical leather, one plain steel cuff; anatomically clear separate arms from the edges. Only one partial plain middle-aged profile is visible at far left, anxious and resolute, softly painted; others are outside frame. At the point where their effort converges, a very restrained gold seam of protective light travels through the split grain and holds the door together. A sliver of cold blue daylight comes through the opening, amber light on the hands, warm/cool tension and real weight. Express cooperation, vulnerability and a small urgent protective magic. No lions, animal people, shields, beautiful young hero faces, ornate armour, glowing forcefield dome, attacking figure, letters or symbols. Clear physical construction and bracing gesture, one story, simple suggested background.",
+      "input": null,
+      "status": "final",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4207dd84-785e-4308-b0a3-59d04dbcd335.png",
+      "output_file": "stand-as-one.png",
+      "web_file": "web/stand-as-one.jpg",
+      "sha256": "c165aed252673fd5055cdd0420e6d2309e05e7c497a417fdd2ff5b1f89e6e6fc",
+      "web_sha256": "c68c693ee6dfc2618ba4edc01ba19d770a2ae37272677e02915f8201f0b23f3d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Reviewed; follows the requested subject, lighting and action changes.",
+      "creator_review": "Finalized for card building by creator request on 2026-11-06.",
+      "superseded_image_files_deleted": true
+    }
+  ],
+  "revised_count": 8,
+  "removed_count": 2,
+  "removed_images": [
+    {
+      "former_file": "borrowed-moment.png",
+      "status": "deleted_by_creator",
+      "reason": "Pottery spell rejected and cut by the creator."
+    },
+    {
+      "former_file": "artificer-salvager.png",
+      "status": "deleted_by_creator",
+      "reason": "Machinery-salvage illustration rejected and cut by the creator."
+    }
+  ],
+  "creator_followup": "These are looking so much better! Good job!",
+  "creator_followup_scope": "Positive response to the revisions visible during generation, not blanket approval of unseen images or lore.",
+  "validation": {
+    "revised_pngs": 8,
+    "revised_jpegs": 8,
+    "removed_active_pngs": 2,
+    "removed_active_jpegs": 2,
+    "named_favourites_unchanged": [
+      "court-informant.png",
+      "sanctuary-threshold.png",
+      "unmake-the-pattern.png",
+      "shatter-the-chain.png"
+    ],
+    "other_original_pngs_unchanged": 72,
+    "rejected_and_superseded_files_deleted": 20
+  },
+  "retention": "Rejected and superseded project image files permanently deleted at the creator's request. Prompt history is informational only; use CARD_ART_FINAL.json for card assets."
+}

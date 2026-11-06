@@ -1,0 +1,1981 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "status": "final_for_card_building",
+  "purpose": "Authoritative image selection for the next Breachline card-building session.",
+  "usage": [
+    "Use only the assets listed here when selecting finished card art.",
+    "Each asset has one canonical full-size PNG and one smaller JPEG used by the game. These are deliberate delivery formats, not alternative designs.",
+    "32 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
+    "61 other images already serve cards in the current prototype; card_ids identify those assignments.",
+    "Do not regenerate or restore the rejected pottery spell, salvager or superseded versions.",
+    "Reference sheets, exploratory concepts, maps, campaign images and works in progress are separate resources and are not part of this card-art selection.",
+    "Artwork finalization does not add new lore canon or change game rules."
+  ],
+  "counts": {
+    "final_images": 93,
+    "new_card_art": 32,
+    "already_used_by_game": 61,
+    "existing_card_ids": 61
+  },
+  "new_art_distribution": {
+    "W": {
+      "objects": 4,
+      "units": 1,
+      "spells": 2,
+      "total": 7
+    },
+    "U": {
+      "objects": 4,
+      "units": 1,
+      "spells": 1,
+      "total": 6
+    },
+    "B": {
+      "objects": 3,
+      "units": 3,
+      "spells": 2,
+      "total": 8
+    },
+    "R": {
+      "objects": 2,
+      "units": 1,
+      "spells": 2,
+      "total": 5
+    },
+    "G": {
+      "objects": 1,
+      "units": 3,
+      "spells": 2,
+      "total": 6
+    }
+  },
+  "excluded": [
+    {
+      "former_file": "borrowed-moment.png",
+      "reason": "Pottery spell rejected and cut by the creator.",
+      "status": "deleted_by_creator"
+    },
+    {
+      "former_file": "artificer-salvager.png",
+      "reason": "Machinery-salvage illustration rejected and cut by the creator.",
+      "status": "deleted_by_creator"
+    }
+  ],
+  "cleanup": {
+    "deleted_image_files": [
+      {
+        "former_path": "archive/set3-review-2026-11-06/grove-tender.png",
+        "sha256": "0276d40a4e1c9b3aa92f578d6d9661c05a7993d6acb52a38c9ce0426341aea32"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/thornwarden-pathguard.png",
+        "sha256": "a59a2d9a0658c4613b2a31654951d1e62435b11ac183b72381caeaced9211a5c"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/surveyors-lenses.png",
+        "sha256": "6ff4caeedb7bd6782be90444d4ce2f91f846956558196e516fa40f73de324f03"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/borrowed-moment.png",
+        "sha256": "df1a868d4a429a928ff6598eae2f0a4bd705f2ae785359b841f8ece75f848ee4"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/clan-outrider.png",
+        "sha256": "88e25d060bdb468d9248a23b21aded3d18ffa70591d22e0854a8a129942923e9"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/ashen-court-bailiff.png",
+        "sha256": "71777c9bcf2b8adc30d7e093995fa4aece7a93a03e577227400777c2fe61e077"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/conclave-courier.png",
+        "sha256": "e220fda4c898b253ec4a8e141ca2492bc4e9bed2459f73de21b773de227ff216"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/stand-as-one.png",
+        "sha256": "c050a57271c46a758a27ca99bb678d3cde6a826ec5aac40d43214130832d9b4c"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/oath-road-squire.png",
+        "sha256": "67b78b2c93f82d6e44df81d813ff01dc835bcbc9eea33932b2724a082f0e3335"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/artificer-salvager.png",
+        "sha256": "5f8171f14d23437c6bee6f76d269c0e0e895f7a797005cc602ee7242742a40c5"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/grove-tender.jpg",
+        "sha256": "e90710613344a33f325146e27fd50caebbd6ba27647414f3b9173e43023463f4"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/thornwarden-pathguard.jpg",
+        "sha256": "434ddbbf23c72474e840227ac7c0aec3143fc73f36143b2901233b3f14727cde"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/surveyors-lenses.jpg",
+        "sha256": "69e11ab5f493f8110e9bdabfb7591bbcbcf7ea4ca8ecd7464f5f21100214603e"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/borrowed-moment.jpg",
+        "sha256": "4cf67fbf834c446f24b4e30ad8b1993820f614097128a21952d67ed5ca8224b4"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/clan-outrider.jpg",
+        "sha256": "b78e32ded4c9820ea107b25eb2c8ba0f7d7efb105cc05358f0054367057e41db"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/ashen-court-bailiff.jpg",
+        "sha256": "e3d923f93caeecbcaae231f8021daf668e3e53c9377c8b2d2bb52f56e0d59dfd"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/conclave-courier.jpg",
+        "sha256": "efd693f31e3ead86a30f9a2a35594dc73690e794620baf5f87b5d30615ca1dea"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/stand-as-one.jpg",
+        "sha256": "970bad42cabf557a9ed9290e3111ac8c4140bcfbac275eb45c5c802d4a4bcbd4"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/oath-road-squire.jpg",
+        "sha256": "1d220dacdd401130411e065d0f7d76b143219b97952de122314655203dd3b281"
+      },
+      {
+        "former_path": "archive/set3-review-2026-11-06/web/artificer-salvager.jpg",
+        "sha256": "02672d2872fbadbe4fbd78e5cfbc87c269886c7b7c6c1381a91a91969eb60c31"
+      }
+    ],
+    "exact_duplicate_pngs_remaining": 0,
+    "retained_image_files_unchanged": 217
+  },
+  "assets": [
+    {
+      "id": "roadwardens-shield",
+      "title": "Roadwarden's Shield",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Equipment",
+      "possible_role": "Protection / guarding an ally",
+      "png": "roadwardens-shield.png",
+      "web_jpeg": "web/roadwardens-shield.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d3535cf8aba1056f79d98824a8b8b438e9cf001f8165fdeee13f787f935f71cf",
+      "web_sha256": "2f63789c5c9105a283859c4010939623401a569b75b68bab8593b9aed5cb48e7",
+      "card_ids": []
+    },
+    {
+      "id": "sunthread-mantle",
+      "title": "Sunthread Mantle",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Equipment",
+      "possible_role": "Resilience / protection for a modest unit",
+      "png": "sunthread-mantle.png",
+      "web_jpeg": "web/sunthread-mantle.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8ba445e7d9379ab9ed3646eaff8b63c25cebdd315a2f26a6f4e8f159d6f621c2",
+      "web_sha256": "e3121e54ca973ed3fdb6897dadcf126727e30eed0330d028434589a654480c11",
+      "card_ids": []
+    },
+    {
+      "id": "oath-bell",
+      "title": "Oath Bell",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Relic",
+      "possible_role": "Rally / a shared protective effect",
+      "png": "oath-bell.png",
+      "web_jpeg": "web/oath-bell.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0d997a37b1b4f4a2bb4c976759a8504d0d127f05f40e5ba917a5319771a89428",
+      "web_sha256": "cf87f6461421893c5361902381faa63a34c13c7376dc4ab6f3de428586e21113",
+      "card_ids": []
+    },
+    {
+      "id": "pilgrim-reliquary",
+      "title": "Pilgrim Reliquary",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Relic",
+      "possible_role": "Restoration / endurance through a journey",
+      "png": "pilgrim-reliquary.png",
+      "web_jpeg": "web/pilgrim-reliquary.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "869e58ccfc2c92f2459418773748eebbc4b60a637e958a88bc3263dd40705e71",
+      "web_sha256": "e66992d3f23ce0e59048479db29609db25f6fa305005985869361ca834be6f8d",
+      "card_ids": []
+    },
+    {
+      "id": "prism-bracer",
+      "title": "Prism Bracer",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Equipment",
+      "possible_role": "Precision / extend a ranged unit's reach",
+      "png": "prism-bracer.png",
+      "web_jpeg": "web/prism-bracer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4c9f234d67cf19002b82a996980fd973ea72d40b0d8db2500055b37de2218a5d",
+      "web_sha256": "91108b930e598fe0b4afd1be627311ee7e62b5129d50ddc029f7948fbcad13dd",
+      "card_ids": []
+    },
+    {
+      "id": "surveyors-lenses",
+      "title": "Surveyor's Glass",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Equipment",
+      "possible_role": "Insight / scouting or finding a useful card",
+      "png": "surveyors-lenses.png",
+      "web_jpeg": "web/surveyors-lenses.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d25ec2aa9733c9d4600f76a6d7aded314a636722a9d897d57870942ab4e5ce84",
+      "web_sha256": "d51755e8b3a46dac574b7fc41b8509e02590ac7883896023200f1a148f630d1b",
+      "card_ids": []
+    },
+    {
+      "id": "tideglass-engine",
+      "title": "Tideglass Engine",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Relic",
+      "possible_role": "Store a resource / convert a small resource into another",
+      "png": "tideglass-engine.png",
+      "web_jpeg": "web/tideglass-engine.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "55b13d4c4404e566f43498e6e752fd38d6cfe32c3d62ddb6e91db5d2141f656f",
+      "web_sha256": "9f1baba8f5f451a5cf4edb3d83fbbce312d34e408e9ff64bdf59eaa574c9e5d0",
+      "card_ids": []
+    },
+    {
+      "id": "folded-observatory",
+      "title": "Folded Observatory",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Relic",
+      "possible_role": "Planning / arrange upcoming draws or actions",
+      "png": "folded-observatory.png",
+      "web_jpeg": "web/folded-observatory.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e28a645ff9f9cd3ef0813194b29a18508b72bbd8b3bd6c7622be08c90179c19e",
+      "web_sha256": "62329717b32f5e79f8f387b9c01b1f9c5237834354a8a926c93e2a80f87636f8",
+      "card_ids": []
+    },
+    {
+      "id": "debt-collectors-blade",
+      "title": "Debt Collector's Blade",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Equipment",
+      "possible_role": "Attrition / recover something when damage is dealt",
+      "png": "debt-collectors-blade.png",
+      "web_jpeg": "web/debt-collectors-blade.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "025bb63d8da89a5a612189fe75efb00109ca92ec3efb77a9183d9e8fdf237fab",
+      "web_sha256": "a292dfc22a9d413c58db45f5519ed6f68ff3a37d81d794ab8b893b4ed80ba630",
+      "card_ids": []
+    },
+    {
+      "id": "mourning-veil",
+      "title": "Mourning Veil",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Equipment",
+      "possible_role": "Evasion / concealment with a cost",
+      "png": "mourning-veil.png",
+      "web_jpeg": "web/mourning-veil.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7a00be3f0903490d9e903112a39b36e287da7bbcf85a6cd7bec41f41eca2ecd6",
+      "web_sha256": "ed75cbeb9389bce0bf592596144bef8dd116f36bf132a4f5a625fd948658f6da",
+      "card_ids": []
+    },
+    {
+      "id": "sepulchral-scale",
+      "title": "Sepulchral Scale",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Relic",
+      "possible_role": "Sacrifice / exchange a loss for a benefit",
+      "png": "sepulchral-scale.png",
+      "web_jpeg": "web/sepulchral-scale.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4dc32bef2df1e2857eb995f6e31b430968e05f2f4432b394720ceb9caf26a178",
+      "web_sha256": "0689ef78d29dd7eacb216ed2576f7dd508996a4b1c2e47bd2360e8a9d9aab84e",
+      "card_ids": []
+    },
+    {
+      "id": "cinderhook-axe",
+      "title": "Cinderhook Axe",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Equipment",
+      "possible_role": "Aggression / press an attack or break a guard",
+      "png": "cinderhook-axe.png",
+      "web_jpeg": "web/cinderhook-axe.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "acc2a767caf71a1fe11555f32778ea355448021b2f9f38128fbcd3a983cf26d2",
+      "web_sha256": "9950cbe4d23a6a12e2893b741c5bc6697ee0d512caa79cf584ef91d3946ff1bf",
+      "card_ids": []
+    },
+    {
+      "id": "warband-drum",
+      "title": "Warband Drum",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Relic",
+      "possible_role": "Muster / a brief rally or burst of movement",
+      "png": "warband-drum.png",
+      "web_jpeg": "web/warband-drum.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "efda340534ad652b21c512aab269878e7c149d985763ab290a429296ef02c8ac",
+      "web_sha256": "0d3643ed594970116ffb499e3fdbae1940eeb3562fce97f54486448bb85cf029",
+      "card_ids": []
+    },
+    {
+      "id": "seedheart-vessel",
+      "title": "Seedheart Vessel",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Relic",
+      "possible_role": "Renewal / store or release growth",
+      "png": "seedheart-vessel.png",
+      "web_jpeg": "web/seedheart-vessel.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6fbf3a0ffb8e7210b58228309df7037eeb9e2473915f1067a8628ce69f7c18a2",
+      "web_sha256": "d33d68497f12db9ea83bf88a4d53017429a36a9d6826d62280cd76dbd85277fb",
+      "card_ids": []
+    },
+    {
+      "id": "oath-road-squire",
+      "title": "Oath-road Squire",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Unit",
+      "possible_role": "Ordinary low-cost support / maintain an ally's equipment",
+      "png": "oath-road-squire.png",
+      "web_jpeg": "web/oath-road-squire.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1c735bb89c1c6f980a5e4ecdd5b198e00422483729c87d769b8a507fa582350d",
+      "web_sha256": "f4c9eb9baf7fcf23a40821dbba0d2bf559d9f03800d596fdff94c0a4928c309c",
+      "card_ids": []
+    },
+    {
+      "id": "conclave-courier",
+      "title": "Conclave Courier",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Unit",
+      "possible_role": "Mobility / deliver information or reposition support",
+      "png": "conclave-courier.png",
+      "web_jpeg": "web/conclave-courier.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ca7199bc72bb1c2276c802b1899610e81885022a90fc5ddabc5f688fe77e51a5",
+      "web_sha256": "afe77c8fe12dedd2d12c2d554d40b7d4a91c674a4f805a6bbe06c7dbc30fa71d",
+      "card_ids": []
+    },
+    {
+      "id": "ashen-court-bailiff",
+      "title": "Ashen Court Bailiff",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Ordinary enforcer / restrict an opposing unit",
+      "png": "ashen-court-bailiff.png",
+      "web_jpeg": "web/ashen-court-bailiff.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "604ebccc1179664ed62a1295be49bbb7df978dc5d59872672248592b90c8162a",
+      "web_sha256": "8b00ee97427b29009954c2027163ba0d08c1f403770aa3171b2f0b1289679fd7",
+      "card_ids": []
+    },
+    {
+      "id": "barrow-tender",
+      "title": "Barrow Tender",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Graveyard utility / prepare or recover a small resource",
+      "png": "barrow-tender.png",
+      "web_jpeg": "web/barrow-tender.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9ad93d3a5843f00b1050dda1319cacfea3a94185a7bf8cfb643e517390ccc9c3",
+      "web_sha256": "13f5b412d0d896e4f69d86cec523f8960a5eb05d5576ecce20a260a59cd85f11",
+      "card_ids": []
+    },
+    {
+      "id": "court-informant",
+      "title": "Court Informant",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Information / disrupt an opponent's plans",
+      "png": "court-informant.png",
+      "web_jpeg": "web/court-informant.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "76b640eeef07b01348ee06023151b575345051cc12096b783aaf00472f5e14a6",
+      "web_sha256": "4b53404a8bb3b9eb8f50f63ef03a23fba1f18fb4c47f6ecffba297db37ce0abc",
+      "card_ids": []
+    },
+    {
+      "id": "thornwarden-pathguard",
+      "title": "Thornwarden Pathguard",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Ordinary defensive scout / watch a route",
+      "png": "thornwarden-pathguard.png",
+      "web_jpeg": "web/thornwarden-pathguard.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "295fdf3fc71b6351910ba65bd3f3ee5c5881a8b3906bd390a875a4ab9b0c7c3e",
+      "web_sha256": "58f4f81c86d8f10ab0be85bcdb18b0075535d7b8c1419991f2c87c2d9049bfbc",
+      "card_ids": []
+    },
+    {
+      "id": "reedbank-forager",
+      "title": "Reedbank Forager",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Ordinary resource support / sustain the group",
+      "png": "reedbank-forager.png",
+      "web_jpeg": "web/reedbank-forager.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3349313d131ced5ed5021958950ea1a53a4a8851dcdd37ad8e4750810abe9e96",
+      "web_sha256": "2b6294614366145d8843f894761674a1340540c2080d7f26c07b51c02ab39c44",
+      "card_ids": []
+    },
+    {
+      "id": "grove-tender",
+      "title": "Grove Wanderer",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Independent Alderkin traveller / movement through difficult ground",
+      "png": "grove-tender.png",
+      "web_jpeg": "web/grove-tender.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f8788faee24d607150098cc72895fcb35403b900e8df6fc62a474ed6d93ecc12",
+      "web_sha256": "ee1e52983801dab5eb8d0399d9903f019b8993bf4d2dcd4ddac54df798727e8a",
+      "card_ids": []
+    },
+    {
+      "id": "clan-outrider",
+      "title": "Clan Outrider",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Unit",
+      "possible_role": "Ordinary fast scout / early pressure",
+      "png": "clan-outrider.png",
+      "web_jpeg": "web/clan-outrider.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "daed57ebaad12ecf7e9080ba40f551ff26a1a3b4cbd2424fde505be75a71fc35",
+      "web_sha256": "59924fc7383cd6ac43a094a7b70cf370fd720bf889b2dd5cacf24c942e9df52c",
+      "card_ids": []
+    },
+    {
+      "id": "stand-as-one",
+      "title": "Stand as One",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Instant",
+      "possible_role": "Protect or strengthen adjacent allies",
+      "png": "stand-as-one.png",
+      "web_jpeg": "web/stand-as-one.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c165aed252673fd5055cdd0420e6d2309e05e7c497a417fdd2ff5b1f89e6e6fc",
+      "web_sha256": "c68c693ee6dfc2618ba4edc01ba19d770a2ae37272677e02915f8201f0b23f3d",
+      "card_ids": []
+    },
+    {
+      "id": "sanctuary-threshold",
+      "title": "Sanctuary Threshold",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Enchantment",
+      "possible_role": "A lasting protected place / damage prevention",
+      "png": "sanctuary-threshold.png",
+      "web_jpeg": "web/sanctuary-threshold.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "75b943775b75eb860054c78d063600956efe1b877ba72e870900fe6c1d0f32bc",
+      "web_sha256": "67f01bb18dacd580b6fe0cd5462e187db0a53cc0a40d8fd2b7f0949102d8b646",
+      "card_ids": []
+    },
+    {
+      "id": "unmake-the-pattern",
+      "title": "Unmake the Pattern",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Spell",
+      "possible_role": "Counter or remove an ongoing magical effect",
+      "png": "unmake-the-pattern.png",
+      "web_jpeg": "web/unmake-the-pattern.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "67f53182127321b49c39c2dbf0e558e43861ffd450cc1fe7633f5aa931c6e48f",
+      "web_sha256": "45f46795ba145170622d4edbe5055c521df8b412ebc323991298e6d9f81cfa55",
+      "card_ids": []
+    },
+    {
+      "id": "siphon-vigor",
+      "title": "Siphon Vigor",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Drain strength / transfer a small benefit",
+      "png": "siphon-vigor.png",
+      "web_jpeg": "web/siphon-vigor.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d43c4e2e8b80bb0b0d5c195becce7b508ddefdc21c3b08ae09a622bf8713c4fe",
+      "web_sha256": "9cc14f8a57d1738b16ae094d1940052159638435c43edf9090bfdd09db7e65b1",
+      "card_ids": []
+    },
+    {
+      "id": "hour-of-collection",
+      "title": "Hour of Collection",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Enchantment",
+      "possible_role": "A delayed consequence / countdown curse",
+      "png": "hour-of-collection.png",
+      "web_jpeg": "web/hour-of-collection.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "511898db45a644983b8c177ea4a5fd6b0cdaf228933e53b455c1c1de93365e6e",
+      "web_sha256": "8ba177128664fe3dd4db2911d22f0f69a960c017b2b7261a7774a1b12f66c053",
+      "card_ids": []
+    },
+    {
+      "id": "scatter-the-line",
+      "title": "Scatter the Line",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Instant",
+      "possible_role": "Disrupt a formation / push units apart",
+      "png": "scatter-the-line.png",
+      "web_jpeg": "web/scatter-the-line.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7afff31e585a78d965c91d51757bcbfa3d7a0666aff8e536c72e97ac5ea575b2",
+      "web_sha256": "f25ee0c83cd974933657e131fc50f8249f4f84a18c657143bc777232621b7278",
+      "card_ids": []
+    },
+    {
+      "id": "shatter-the-chain",
+      "title": "Shatter the Chain",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Spell",
+      "possible_role": "Break a restraint / destroy an oppressive object",
+      "png": "shatter-the-chain.png",
+      "web_jpeg": "web/shatter-the-chain.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "585c98e9950f3097a3a929bceb73c9246292b6f8d457b228d6f4767bf70beb85",
+      "web_sha256": "71fffaee0c905b05574cad061211ddf6c2a5a336d7c78026a220b5d8d8c288cc",
+      "card_ids": []
+    },
+    {
+      "id": "sudden-canopy",
+      "title": "Sudden Canopy",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Instant",
+      "possible_role": "Protect from a ranged attack / rapid defensive growth",
+      "png": "sudden-canopy.png",
+      "web_jpeg": "web/sudden-canopy.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fb1b78086ec0fd12a691fec5d5cd239e18936057f26fb4d2bc4a4852f081011c",
+      "web_sha256": "edd31981ab249d3c40dbb28e0cccc6ffd86d85a411cbd9ecb47477ae322b9ea0",
+      "card_ids": []
+    },
+    {
+      "id": "return-to-loam",
+      "title": "Return to Loam",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Spell",
+      "possible_role": "Reclaim an artifact / turn industry back into growth",
+      "png": "return-to-loam.png",
+      "web_jpeg": "web/return-to-loam.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "57c0e33d661958badf158f6b6cd5a2e9b4e86116794048041ab0afc5a9dc9a95",
+      "web_sha256": "31cff0c1750b9a8f36bb7c123a30b0c42a34969a73a9f0e8d35d1bf563f42110",
+      "card_ids": []
+    },
+    {
+      "id": "sunlit-plains",
+      "title": "Sunlit plains",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Land",
+      "png": "sunlit-plains.png",
+      "web_jpeg": "web/sunlit-plains.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+      "web_sha256": "187e41356d8a28d39f61ce149659806dc5b254fca749409b9e6ed5b2df5d0c75",
+      "card_ids": [
+        "land_w"
+      ]
+    },
+    {
+      "id": "cinder-peaks",
+      "title": "Cinder peaks",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Land",
+      "png": "cinder-peaks.png",
+      "web_jpeg": "web/cinder-peaks.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8876fee0a173c8d75682b13a69984e51230cc26d44c85c14c0ace7c88f27f60f",
+      "web_sha256": "57c2024dfe9ee1f7949346f213868bd4df5b18ff9c17ca9c703f4b41018fb9b3",
+      "card_ids": [
+        "land_r"
+      ]
+    },
+    {
+      "id": "lantern-quarter",
+      "title": "Lantern quarter",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Land",
+      "png": "lantern-quarter.png",
+      "web_jpeg": "web/lantern-quarter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+      "web_sha256": "89fe873a3a80d857cce4bfc6a325fc4aae988c3709c35c677d55af405d77659d",
+      "card_ids": [
+        "land_u"
+      ]
+    },
+    {
+      "id": "militia-spearman",
+      "title": "Militia spearman",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "militia-spearman.png",
+      "web_jpeg": "web/militia-spearman.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fa815135bc6b9e93f5d380a360399c3f7c008cc53268155b63077fb695b29a98",
+      "web_sha256": "874486631edc467cedcb5a3896648e8f971483afeab67d46e5cfb13bf35bd5da",
+      "card_ids": [
+        "spearman"
+      ]
+    },
+    {
+      "id": "temple-cleric",
+      "title": "Temple cleric",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "temple-cleric.png",
+      "web_jpeg": "web/temple-cleric.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7758243d0a2b08ebb9207e0f0c7db7202a06b269da7b8a0af75c7f9694a4460d",
+      "web_sha256": "4923da37a80015f995a57bcc6d7ca5479ca5138201e30f887daa32c5de007286",
+      "card_ids": [
+        "cleric"
+      ]
+    },
+    {
+      "id": "oath-knight",
+      "title": "Oath knight",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "oath-knight.png",
+      "web_jpeg": "web/oath-knight.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "987d3f968aaadbf8c19d636664a7a6a6fc0eec9a33df7c3f70d9750ca5b5b54c",
+      "web_sha256": "40f78ff0dedba61b4ad78f1838bda0bf47621f913223efd290a0262b813a0524",
+      "card_ids": [
+        "knight"
+      ]
+    },
+    {
+      "id": "sunmane-lancer",
+      "title": "Sunmane lancer",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "sunmane-lancer.png",
+      "web_jpeg": "web/sunmane-lancer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c0aa40bae2b86f77e500965716cfdc85c5e6121e45149db44979c58be0869061",
+      "web_sha256": "3acc7a3f99ecc8efa4746cdc54ccfb64f35df93e027a2c01e20ed60330b3f958",
+      "card_ids": [
+        "lancer"
+      ]
+    },
+    {
+      "id": "pride-warden",
+      "title": "Pride warden",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "pride-warden.png",
+      "web_jpeg": "web/pride-warden.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "073dcba056cd9f7ca08b98171b72dd45bf837051631851ecab118b3a995c084e",
+      "web_sha256": "33c5ac50fcbe5279effbac1320bdb4c35b05d0cafe4cfc35c339346310879d22",
+      "card_ids": [
+        "warden"
+      ]
+    },
+    {
+      "id": "shield-of-dawn",
+      "title": "Shield of dawn",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Instant",
+      "png": "shield-of-dawn.png",
+      "web_jpeg": "web/shield-of-dawn.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ae54b222d0f4857f0c958490d07a1c051b673c438fa3931f53a79f3503469aad",
+      "web_sha256": "bb42a2affb9769cc01eca85752286f324975f95e944e2fc034503406c9ad83a9",
+      "card_ids": [
+        "shield"
+      ]
+    },
+    {
+      "id": "blessed-banner",
+      "title": "Blessed banner",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Enchantment",
+      "png": "blessed-banner.png",
+      "web_jpeg": "web/blessed-banner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2785a39b80d6134412219f19c5baaf2c9fcf7160aff94deb8bdf81784a031cdf",
+      "web_sha256": "3f5fea5bf0ac5310e056eb6047700d503237d7d9276c401f185061355ad1ead0",
+      "card_ids": [
+        "banner"
+      ]
+    },
+    {
+      "id": "goblin-cutter",
+      "title": "Goblin cutter",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "goblin-cutter.png",
+      "web_jpeg": "web/goblin-cutter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+      "web_sha256": "934d9a677b3507f91620688db31928f459a1fed0d0812ec2ad369b61fa34c18c",
+      "card_ids": [
+        "goblin"
+      ]
+    },
+    {
+      "id": "orc-raider",
+      "title": "Orc raider",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "orc-raider.png",
+      "web_jpeg": "web/orc-raider.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "09b412a67b3a5b20bf1a07ee9eee7143d49b4d8a9a5dd039efff5d9c647fc8ea",
+      "web_sha256": "92a6042243ced4b87251fbf1ee184be272f620e65871d0d8e89a7f451a0d80ef",
+      "card_ids": [
+        "raider"
+      ]
+    },
+    {
+      "id": "street-conjurer",
+      "title": "Street conjurer",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "street-conjurer.png",
+      "web_jpeg": "web/street-conjurer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2a417992a1e8187a0aa49b9226deb741415310dbef297b139bf6520bb05bb9ab",
+      "web_sha256": "857785c27ef152e5a47e02229dd2c669e2a6cac056a0ee80a4c165ddd1093946",
+      "card_ids": [
+        "conjurer"
+      ]
+    },
+    {
+      "id": "sellsword",
+      "title": "Sellsword",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "sellsword.png",
+      "web_jpeg": "web/sellsword.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+      "web_sha256": "bcbe605c5304df8f9991e903fabf78231ca23026f3c1346d3e4f51c90e80bb54",
+      "card_ids": [
+        "sellsword"
+      ]
+    },
+    {
+      "id": "orc-warchief",
+      "title": "Orc warchief",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "orc-warchief.png",
+      "web_jpeg": "web/orc-warchief.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+      "web_sha256": "e0b47e5b77fb1a746b4443f055fa6853a88e3c3df7fccb9ec25e26253d1396a0",
+      "card_ids": [
+        "warchief"
+      ]
+    },
+    {
+      "id": "hill-giant",
+      "title": "Hill giant",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "hill-giant.png",
+      "web_jpeg": "web/hill-giant.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ed7f418e0df6ae1c5852393303b85383dd0bbdf700dda2677b69d6de08bb9288",
+      "web_sha256": "c4bba8a0f3b6baf16b1450096496bc9d3123d4b911eaa7962b40f9c10ec6e47a",
+      "card_ids": [
+        "giant"
+      ]
+    },
+    {
+      "id": "elder-dragon",
+      "title": "Elder dragon",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "elder-dragon.png",
+      "web_jpeg": "web/elder-dragon.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "497c6db747e59eb83474d7ce204f59148813840c918f51dcd92bcf1149a233ff",
+      "web_sha256": "5ffb2b3ef63a42977e2082d1278211271370aed040f5a44c37e1c443d5951cfe",
+      "card_ids": [
+        "dragon"
+      ]
+    },
+    {
+      "id": "firebolt",
+      "title": "Firebolt",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Instant",
+      "png": "firebolt.png",
+      "web_jpeg": "web/firebolt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "49c1e0ecba2352548dacca1a911f295590c98b556aa7d7a8f93761fa8ef0c1b5",
+      "web_sha256": "b4456a0c95af16521d238f502228d5d7ca0d9c50b9842f1c2bf6b504a6fdc80b",
+      "card_ids": [
+        "firebolt"
+      ]
+    },
+    {
+      "id": "withering-hex",
+      "title": "Withering hex",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Enchantment",
+      "png": "withering-hex.png",
+      "web_jpeg": "web/withering-hex.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6494f04f3a70b80e59adcc4a7a7fbe6c76c1a4a7e1c16eea789cff4401b77372",
+      "web_sha256": "1931f3a803da851c764f893971f3d588664116774daa06e37f6cbc260ee38259",
+      "card_ids": [
+        "hex"
+      ]
+    },
+    {
+      "id": "ashen-barrows",
+      "title": "Ashen barrows",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Land",
+      "png": "ashen-barrows.png",
+      "web_jpeg": "web/ashen-barrows.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "24803b4a1d1042247b1e1f502b885461c35ea9d162b32738a9de69e417185c51",
+      "web_sha256": "80b1601d3086252e3ba1effec50f369731be325075703ef90a7ad37f032e28a8",
+      "card_ids": [
+        "land_b"
+      ]
+    },
+    {
+      "id": "overgrown-ruin",
+      "title": "Overgrown ruin",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Land",
+      "png": "overgrown-ruin.png",
+      "web_jpeg": "web/overgrown-ruin.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+      "web_sha256": "6434025f78d120a36268c27de181e3037102361a494154275e3eeba12351385e",
+      "card_ids": [
+        "land_g"
+      ]
+    },
+    {
+      "id": "water-carrier",
+      "title": "Water carrier",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "water-carrier.png",
+      "web_jpeg": "web/water-carrier.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7be0540e2d7bc538385800ea9fff9fe76483bbd30491c80e9fa0789858e1375c",
+      "web_sha256": "c6cfed86f83643592adcfb3db088b7ea0384e0ef53b9df59c65d838be109bf2c",
+      "card_ids": [
+        "carrier"
+      ]
+    },
+    {
+      "id": "pride-cub",
+      "title": "Pride cub",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "pride-cub.png",
+      "web_jpeg": "web/pride-cub.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0d844df0c5d83a08b0c6e3a9ee0e71f81e3ebf8a63c21c2af742c7a719f7591b",
+      "web_sha256": "a4c4b90c5a30aa166c8d9694a495d58209b1565c13aaa449b017f5002a401e24",
+      "card_ids": [
+        "cub"
+      ]
+    },
+    {
+      "id": "oath-sentinel",
+      "title": "Oath sentinel",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "oath-sentinel.png",
+      "web_jpeg": "web/oath-sentinel.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0f7d57ec7c076c64859d4a794184e969689fdef1f4159a6db6faec0375c07c2e",
+      "web_sha256": "88277b44290487bad52285cbad46875020265001e8244bce5a6248b029d5b133",
+      "card_ids": [
+        "sentinel"
+      ]
+    },
+    {
+      "id": "saint-maren",
+      "title": "Saint Maren of the Long Watch",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Unit",
+      "png": "saint-maren.png",
+      "web_jpeg": "web/saint-maren.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "06d13a0ceda5e294c0c06bdd4de3cb4c7e1f6f1b93d4114624ea7208ba8363ac",
+      "web_sha256": "41b1a0688b0820e43d8ac066f53ed652509f8a39ce6828626a45847ac32dea45",
+      "card_ids": [
+        "maren"
+      ]
+    },
+    {
+      "id": "cinder-clan-raiders",
+      "title": "Cinder Clan raiders",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "cinder-clan-raiders.png",
+      "web_jpeg": "web/cinder-clan-raiders.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+      "web_sha256": "49928d03a78fe5d91b7dbcd5e7a441e5e219a8ab42c7fd2630728f2997953ac4",
+      "card_ids": [
+        "clanraiders"
+      ]
+    },
+    {
+      "id": "cinder-berserker",
+      "title": "Cinder berserker",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "cinder-berserker.png",
+      "web_jpeg": "web/cinder-berserker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a642a905325a358cad87c227aea20898d6beba63ce237e1fb0d093472ccb6c5d",
+      "web_sha256": "78ef401fc180c3394dd6188509dc66107796083e100000a7a2e307a260182a22",
+      "card_ids": [
+        "berserker"
+      ]
+    },
+    {
+      "id": "mercenary-captain",
+      "title": "Mercenary captain",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "mercenary-captain.png",
+      "web_jpeg": "web/mercenary-captain.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
+      "web_sha256": "40c2e388ed416499830e9d1aef45092cf0416cbf0a580d1096e5b3bda687687e",
+      "card_ids": [
+        "captain"
+      ]
+    },
+    {
+      "id": "ember-drake",
+      "title": "Ember drake",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "ember-drake.png",
+      "web_jpeg": "web/ember-drake.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4602ef3e132c5634e43f821fc88c05fe79320ac35617bd75a1fb6e23b84b71e1",
+      "web_sha256": "80b8732883f4815b55e463e5a534e44bcc458729bd44df40044b2dc401c2e4b0",
+      "card_ids": [
+        "drake"
+      ]
+    },
+    {
+      "id": "illusory-decoy",
+      "title": "Illusory decoy",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "illusory-decoy.png",
+      "web_jpeg": "web/illusory-decoy.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "35874afa05c984d302b1f2b9a28bee55ae4b5c0b7749f04c705bd0915ac03d6c",
+      "web_sha256": "ceef428dcf5c986b072aa4ee879e5d0ed6dc91b4d767af05707f49f00a7f7fb5",
+      "card_ids": [
+        "decoy"
+      ]
+    },
+    {
+      "id": "cloistered-scholar",
+      "title": "Cloistered scholar",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "cloistered-scholar.png",
+      "web_jpeg": "web/cloistered-scholar.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "314f3007a630d3c40a93c45d986fe768b9ec66096d40463ad20e558999d193fd",
+      "web_sha256": "d524ffdba98fdf2a29769e332c1d846712bd7b8e18c0f8a4019a2dee7cc80e0f",
+      "card_ids": [
+        "scholar"
+      ]
+    },
+    {
+      "id": "lantern-arcanist",
+      "title": "Lantern arcanist",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "lantern-arcanist.png",
+      "web_jpeg": "web/lantern-arcanist.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1d8b3447c9ff69f154ebfd5e315b14d18d5ac8ec71835b2e477922bac1b5a2ca",
+      "web_sha256": "bd4f905bf8d80b16d49dd61c7a0b9d04a5d2299af7d66319bf508b4f227f9952",
+      "card_ids": [
+        "arcanist"
+      ]
+    },
+    {
+      "id": "brass-chorister",
+      "title": "Brass chorister",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "brass-chorister.png",
+      "web_jpeg": "web/brass-chorister.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+      "web_sha256": "da99ab623df3f60a1e0ecd33d0107d47e4811e0971f958090df00bab29199011",
+      "card_ids": [
+        "chorister"
+      ]
+    },
+    {
+      "id": "displacement",
+      "title": "Displacement",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Instant",
+      "png": "displacement.png",
+      "web_jpeg": "web/displacement.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "527ddcd45b13c55860ed5986acfe217c23aa0f0054680a045c8dcea7cf07510f",
+      "web_sha256": "d0ff534865d9a4381a2d2682081ffc0968619a0545d4a6d89d57f56a73239a2f",
+      "card_ids": [
+        "displacement"
+      ]
+    },
+    {
+      "id": "binding-glyph",
+      "title": "Binding glyph",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Enchantment",
+      "png": "binding-glyph.png",
+      "web_jpeg": "web/binding-glyph.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f372392c1b3fed789f5ec80572e0cb700708a2cdbcd89144171efeaa5210f77b",
+      "web_sha256": "84b7d90868499bf7fb2accb767d604f7090052af3ef9c7dc579b36d66cf9e917",
+      "card_ids": [
+        "glyph"
+      ]
+    },
+    {
+      "id": "gravebound-thrall",
+      "title": "Gravebound thrall",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Unit",
+      "png": "gravebound-thrall.png",
+      "web_jpeg": "web/gravebound-thrall.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cb91a69c99c8ec1ebaf6ee96b1fad5e82fe6043bce07d6beab99f7e42504b9d3",
+      "web_sha256": "11e663261142b08eee0b7d9edf3a0090472a77079f38973a9ff98b500d0a6597",
+      "card_ids": [
+        "thrall"
+      ]
+    },
+    {
+      "id": "bone-harvester",
+      "title": "Bone harvester",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Unit",
+      "png": "bone-harvester.png",
+      "web_jpeg": "web/bone-harvester.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a248eddc5c103db0f8d2a57e7175115bb7ef3facfc0c6f3a54bc6b3254cd7571",
+      "web_sha256": "544a023d04083ecfd08c020ae247503b4a390765d1b293212849582d754a7b70",
+      "card_ids": [
+        "harvester"
+      ]
+    },
+    {
+      "id": "ashen-court-noble",
+      "title": "Ashen Court noble",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Unit",
+      "png": "ashen-court-noble.png",
+      "web_jpeg": "web/ashen-court-noble.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d633d23dbcdf574108f87300d2585cf20c4a6042c0772f7180e772b602e90adb",
+      "web_sha256": "89a35a729b5812c5ecc3816d74c0123e049ac5d9436673a136a661377bce4e4b",
+      "card_ids": [
+        "noble"
+      ]
+    },
+    {
+      "id": "vashkar",
+      "title": "Vashkar, Who Counts the Dead",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Unit",
+      "png": "vashkar.png",
+      "web_jpeg": "web/vashkar.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b6fd7fa59d267f4c7cf3cd3549d0b82f653ba36b02667bb97bd182caacb81dc5",
+      "web_sha256": "fbd236a9338d82c1d27474f489d20eb1a93e75e0cc76a97afea973208b9a56bb",
+      "card_ids": [
+        "vashkar"
+      ]
+    },
+    {
+      "id": "raise-the-dead",
+      "title": "Raise the dead",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Spell",
+      "png": "raise-the-dead.png",
+      "web_jpeg": "web/raise-the-dead.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bcfc5b8de1e142fc4ef49e4f370cf1648a08f82ddcf51d8cda030fbfa61df01d",
+      "web_sha256": "0649f2aa2f72a2a43e95da1876843a9c379aea93f6f5936bf3dbbcce2656242a",
+      "card_ids": [
+        "raise"
+      ]
+    },
+    {
+      "id": "death-warrant",
+      "title": "Death warrant",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Enchantment",
+      "png": "death-warrant.png",
+      "web_jpeg": "web/death-warrant.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "579a5c7cc659f7734e8946638504449687386b62c33eb035b52fc8f5feec074e",
+      "web_sha256": "a32d7c874a1ff96c96274d5619d4fba4f32e9910c6cf61997db00c88f2ba2fb5",
+      "card_ids": [
+        "warrant"
+      ]
+    },
+    {
+      "id": "walking-sapling",
+      "title": "Walking sapling",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "walking-sapling.png",
+      "web_jpeg": "web/walking-sapling.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ee220be0f314304233ff5c0eb259cbf9ade4295eede66707977e629c39866472",
+      "web_sha256": "690ef937c02b447a3ba7e3a2dc009093f725c234435e5333144d8d70cfe61703",
+      "card_ids": [
+        "sapling"
+      ]
+    },
+    {
+      "id": "thornwarden-saboteur",
+      "title": "Thornwarden saboteur",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "thornwarden-saboteur.png",
+      "web_jpeg": "web/thornwarden-saboteur.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e",
+      "web_sha256": "9380f645ae15d42523386faf0f3002d8865c150c8869073fde7baa1f81e3cdf7",
+      "card_ids": [
+        "saboteur"
+      ]
+    },
+    {
+      "id": "great-owl",
+      "title": "Great owl",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "great-owl.png",
+      "web_jpeg": "web/great-owl.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bc62cc5229d5f2c23b8370b1902329a316daaaa54fd62d0f712432222e2a420a",
+      "web_sha256": "bc0185b4e36ab0f9ab58a1dd361ecc34628060e12bdb36114966035dd10ce33a",
+      "card_ids": [
+        "owl"
+      ]
+    },
+    {
+      "id": "wayfinder-druid",
+      "title": "Wayfinder druid",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "wayfinder-druid.png",
+      "web_jpeg": "web/wayfinder-druid.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dcd309dfe988b2f50fa577b5d5ba06836f6f26f6a3e1efcfa3f5af12653ac12a",
+      "web_sha256": "ff17c578cced1c28f1861ea1e2475365c6398a24e77a7cd88da81a8339144ded",
+      "card_ids": [
+        "wayfinder"
+      ]
+    },
+    {
+      "id": "elder-herd-bull",
+      "title": "Elder Herd bull",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "elder-herd-bull.png",
+      "web_jpeg": "web/elder-herd-bull.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ee3715b0f616110bd2aa4609e01292bf5cc10c29c6b37a940ddcffa5ee55d493",
+      "web_sha256": "dfcb30ead95ae81f4b3eaf4c8221e6d31324633c50da47f760f02fb59500db65",
+      "card_ids": [
+        "bull"
+      ]
+    },
+    {
+      "id": "shifting-forest",
+      "title": "Shifting forest",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Instant",
+      "png": "shifting-forest.png",
+      "web_jpeg": "web/shifting-forest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8630888042b83ec7d74f89213f0fe0952c32167a375884ea3b3da0415c0ca1c4",
+      "web_sha256": "b423456e9a58d21e31fecfd641583b93f90cc34f846210a1aecfb3d2a7cc22c7",
+      "card_ids": [
+        "shifting"
+      ]
+    },
+    {
+      "id": "young-summoner",
+      "title": "Young summoner",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "N",
+      "alignment": "Neutral",
+      "type": "Unit",
+      "png": "young-summoner.png",
+      "web_jpeg": "web/young-summoner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "075c5f39257dea834df5234ff28a76ee911bda65937daca241b61cc6ebc99e67",
+      "web_sha256": "c3f90904a409f13c2997a165709db4bd6f85ff5ca9fed8eb4e306aef581fa82d",
+      "card_ids": [
+        "youngsummoner"
+      ]
+    },
+    {
+      "id": "the-still-flame",
+      "title": "The Still Flame",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Enchantment",
+      "png": "concepts/the-still-flame.png",
+      "web_jpeg": "web/the-still-flame.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7cf67ce9c8d271e3829c8f0c1cdc4dcb820f1837fb4e39e6351b5fc433098d68",
+      "web_sha256": "36512e6eb5ac41107b8a428934ddf693cd5c0c89f8c1fe6bd409bb0f44ee9db7",
+      "card_ids": [
+        "stillflame"
+      ]
+    },
+    {
+      "id": "light-without-an-answer",
+      "title": "Ambrel lampwright",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Unit",
+      "png": "concepts/light-without-an-answer.png",
+      "web_jpeg": "web/light-without-an-answer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bb71ac36a4b54223cd7b305acfde81f6de1483622283d2c3dee9c7e6e0623d7f",
+      "web_sha256": "84645b2d30b6f442e5caa835445011ed00dc31a2c30acfa3d260060e1aadf00b",
+      "card_ids": [
+        "lampwright"
+      ]
+    },
+    {
+      "id": "across-the-silence",
+      "title": "Across the silence",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "N",
+      "alignment": "Neutral",
+      "type": "Spell",
+      "png": "concepts/across-the-silence.png",
+      "web_jpeg": "web/across-the-silence.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c30278e759a1ceddecab435af0f27972315f046aa5f433cd3970493792e9f577",
+      "web_sha256": "9603e0a71e124165c3e4d4eadffcc0d91d36f56df9ee53b11a72e0d810f91c0d",
+      "card_ids": [
+        "across"
+      ]
+    },
+    {
+      "id": "alderkin-winter-shelter",
+      "title": "Winter shelter",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Enchantment",
+      "png": "concepts/alderkin-winter-shelter.png",
+      "web_jpeg": "web/alderkin-winter-shelter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3b3fc099c0bf6a15134764dcdc0c499fc2087b873fad2d88b7fca4a81164266f",
+      "web_sha256": "198dfb2b985faa378ea8420e91da83342f76e29c3c479910e50f78605de7ff85",
+      "card_ids": [
+        "shelter"
+      ]
+    },
+    {
+      "id": "overgrown-ruin-vignette",
+      "title": "Through the marble",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Enchantment",
+      "png": "concepts/overgrown-ruin-vignette.png",
+      "web_jpeg": "web/overgrown-ruin-vignette.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e1ec5c08df1857016de8c2c64e8bd66abdfdc8d81aa5e738ec27bfe5d4a07434",
+      "web_sha256": "648eaae8f2d6d7e884271a9b7ebc8efd233257b4689a2fadf6d23af69c43f894",
+      "card_ids": [
+        "marble"
+      ]
+    },
+    {
+      "id": "dawnsails-over-the-harvest",
+      "title": "Dawnsails over the harvest",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "type": "Spell",
+      "png": "concepts/dawnsails-over-the-harvest.png",
+      "web_jpeg": "web/dawnsails-over-the-harvest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "37100ab33c44aa787a2a8444f2757f386872379b184cfe5edd395ac1198500e4",
+      "web_sha256": "158132e913f252687242c6ce08552dbd356c0541f117278c4a88260bbf1f7839",
+      "card_ids": [
+        "dawnsails"
+      ]
+    },
+    {
+      "id": "raincup-at-first-light",
+      "title": "Raincup at first light",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Spell",
+      "png": "concepts/raincup-at-first-light.png",
+      "web_jpeg": "web/raincup-at-first-light.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "18700a497d24e43725ea92665ba556be168a296ad526908076f7c19e23168daa",
+      "web_sha256": "019e4a6afdc057989ff9a785291e4b83e4a69cf4527db93388d1783936f7525c",
+      "card_ids": [
+        "raincup"
+      ]
+    },
+    {
+      "id": "spindlejack-mending-the-sail",
+      "title": "Mending the sail",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "type": "Spell",
+      "png": "concepts/spindlejack-mending-the-sail.png",
+      "web_jpeg": "web/spindlejack-mending-the-sail.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1706a6ff6ee7ca422d33030c50dd0e07ec1d70899570d278657c42fa8436bfb9",
+      "web_sha256": "e86e435e23e0099fa60c0df752d4655365ce769c47ab2534b560e0ab886b61d0",
+      "card_ids": [
+        "mending"
+      ]
+    },
+    {
+      "id": "alderkin-waterkeeper",
+      "title": "Clearing the channel",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Spell",
+      "png": "concepts/alderkin-waterkeeper.png",
+      "web_jpeg": "web/alderkin-waterkeeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "48fbacede2c499171198fca70095b16683004e1743081a4f281165c8227c276f",
+      "web_sha256": "07d85197f35154ecf4743d7db49b5133e861c538b29070f30ac4fe8e87ee73b5",
+      "card_ids": [
+        "channel"
+      ]
+    },
+    {
+      "id": "dawnsail-passage",
+      "title": "Dawnsail passage",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "N",
+      "alignment": "Neutral",
+      "type": "Spell",
+      "png": "concepts/dawnsail-passage.png",
+      "web_jpeg": "web/dawnsail-passage.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1ec8960c9f2054d67673421195705eb1e65f7b256a990b8d07583fc94151bbcc",
+      "web_sha256": "6cd6ba4169799e173caaa141c79d84de878f425a2b340d2de10b1c4d8687729a",
+      "card_ids": [
+        "passage"
+      ]
+    },
+    {
+      "id": "slateprowler-on-the-descent",
+      "title": "Slateprowler",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "type": "Unit",
+      "png": "concepts/slateprowler-on-the-descent.png",
+      "web_jpeg": "web/slateprowler-on-the-descent.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f09f958e0be3b5cafa859d4c28e87c9d0c7886afd080aa52f0028660e0895aa3",
+      "web_sha256": "ab1e3d526967ea26f0d4208fc59a78587224ebce59b8da68b0d497280ac016ea",
+      "card_ids": [
+        "slateprowler"
+      ]
+    },
+    {
+      "id": "reedcrown-grazer",
+      "title": "Reedcrown grazer",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "type": "Unit",
+      "png": "concepts/reedcrown-grazer.png",
+      "web_jpeg": "web/reedcrown-grazer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "67c53184f7bbc66763f57904fb9deec9704a5611b7957522e6fc3dda681edd88",
+      "web_sha256": "8d831c6f80f8dbf6ffc6c3c6b7d9209949ea106439e7f44b1b2dab7815bb38a7",
+      "card_ids": [
+        "reedcrown"
+      ]
+    },
+    {
+      "id": "coalback-forager",
+      "title": "Coalback forager",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "type": "Unit",
+      "png": "concepts/coalback-forager.png",
+      "web_jpeg": "web/coalback-forager.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "158545b0879687e322c2188cb31b5ad8537a42dbf24864d8227973762b350deb",
+      "web_sha256": "469861549d4d1f9a17bc6801cec36a35a695bbcd0701f6bc0e9b7a1bd37dcbed",
+      "card_ids": [
+        "coalback"
+      ]
+    }
+  ]
+}

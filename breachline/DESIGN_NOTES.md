@@ -65,3 +65,9 @@ On the published page, saved decks also go to the viewer's private database area
 On 2026-11-05 the user picked a run-based campaign: a loss ends the run, battles come in a fixed order, Vigil comes first, and the player chooses who plays the enemies at the start of a run. They also said there should be a map, and that cutscenes are wanted later but are a future problem. `CAMPAIGN.md` has the draft story lines waiting for verdicts, my unconfirmed assumptions, and the simulated balance. Treat the Shrine Road story as Proposed.
 
 **How to apply:** when publishing, include `campaign.js` with the other scripts.
+
+## Campaign art review — 2026-11-06
+
+The creator rejected both painted maps and most of the 20-image campaign batch. Only #08 The Last Procession (explicitly identified as “Dominion sacrifice”) and #20 The Unmeasured Distance (gold strand across blue-magenta space) are canon from that batch. The active selection is in art/campaign-2026-11-05/review.html. Removed material and its old ZIP are under archive/campaign-review-2026-11-06 and must not guide current setting or art. Ambrel's disconnected bridge was repaired as requested and saved separately in art/work-in-progress/campaign-review-2026-11-06; the city design remains non-canon.
+
+The correction in SETTING.md and the art-direction skill is authoritative: distinct local populations rather than uniformly cosmopolitan crowds; orcs not Vigil aligned; lion folk generally keep to themselves; much harsher Dominion; attractive but imperfect, individual faces; no repeated water-infrastructure theme or obligatory helpful alderkin. Existing approvals from earlier batches are unaffected.

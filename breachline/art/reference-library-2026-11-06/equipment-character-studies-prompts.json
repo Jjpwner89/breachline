@@ -1,0 +1,254 @@
+{
+  "method": "built-in image_gen",
+  "created": "2026-11-06",
+  "status": "new proposals for review",
+  "images": [
+    {
+      "key": "14-raiders-and-berserker",
+      "title": "Raider and berserker belongings",
+      "sourceNames": [
+        "goblin-cutter",
+        "cinder-clan-raiders",
+        "cinder-berserker"
+      ],
+      "characters": [
+        "Goblin Cutter",
+        "Cinder Clan raider",
+        "Cinder Berserker"
+      ],
+      "items": [
+        [
+          "Single scavenged shoulder plate on a narrow harness",
+          "Broad cleaver",
+          "Simple cloth wrist wraps"
+        ],
+        [
+          "Short stitched leather jacket over linen",
+          "Small raider hatchet",
+          "Faded red sash with plain belt pouch"
+        ],
+        [
+          "Single asymmetrical fur mantle",
+          "Long-handled axe",
+          "Cloth leg wraps"
+        ]
+      ],
+      "inferred": [
+        "Hidden sides and fastenings reconstructed simply; no new standard faction kit."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 GOBLIN CUTTER. Top: one small dented three-segment iron shoulder plate on a narrow practical leather suspension harness, exactly the individually scavenged shoulder protection seen on the goblin; do NOT invent a whole cuirass or symmetrical second shoulder. Middle: the distinctive broad rectangular cleaver with a small round hole near the far top corner and a worn short wood grip, complete blade and handle. Bottom: a pair of simple uneven dirty linen wrist wraps, loosely rolled so material and fastening are clear.\nCENTRE COLUMN, reference 2 CINDER CLAN RAIDERS. Top: the foreground raider's ordinary short dark-brown stitched leather jacket over a little off-white linen at the collar and cuff, simple front opening and ONE belt, soft sleeves, recognizable but simplify excessive lacing to functional seams. No metal breastplate or matching helmet. Middle: her small practical hatchet with short wood handle and a compact bearded steel head, reasonable proportions. Bottom: a single faded red cloth sash with ONE plain small leather belt pouch resting beside it as one accessory group; their fabric/shape matches the wearer, not a formal military badge.\nRIGHT COLUMN, reference 3 CINDER BERSERKER. Top: the asymmetrical shaggy brown fur mantle from ONE hide, simple neck/shoulder tie and no torso armor; show empty garment, not a pelt shaped like human anatomy. Middle: his long-handled iron axe, single compact wedge blade on a slightly irregular wooden haft, wrapped near the head and grip, complete in frame; do not enlarge into a double-headed fantasy axe. Bottom: pair of broad undyed cloth leg wraps loosely bundled; plain, no buckles or metal shin plates.\nVary the browns, greys, iron and natural cloth. Only the raider sash supplies a red accent; no need to paint all pieces red. This board must feel personally assembled and distinct from issued matching army equipment.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/goblin-cutter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-clan-raiders.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-berserker.png"
+      ],
+      "file": "equipment/14-raiders-and-berserker.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-071dc372-75d0-4970-bbd9-6cbb9f8cabb4.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "614f12740dd1317c8a3c4d4e8761b33cab53256695a4b569103b0e14307fc7b2",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/goblin-cutter.png": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-clan-raiders.png": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-berserker.png": "a642a905325a358cad87c227aea20898d6beba63ce237e1fb0d093472ccb6c5d"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "15-heavy-fighters-and-hired-blades",
+      "title": "Heavy fighters and hired blades",
+      "sourceNames": [
+        "orc-warchief",
+        "sellsword",
+        "mercenary-captain"
+      ],
+      "characters": [
+        "Orc Warchief",
+        "Sellsword",
+        "Mercenary Captain"
+      ],
+      "items": [
+        [
+          "Broad salvaged plate cuirass",
+          "Heavy double-ended hammer",
+          "Plain worn leather belt"
+        ],
+        [
+          "Short mail shirt with one reused shoulder plate",
+          "Straight broad sword",
+          "Small drawstring coin pouch"
+        ],
+        [
+          "Simple repaired steel half-cuirass",
+          "Straight sword with plain sheath",
+          "Working belt with utility pouch"
+        ]
+      ],
+      "inferred": [
+        "Warchief weapon's obscured end reconstructed from the visible hammer.",
+        "Captain's mostly sheathed sword blade is a modest inferred straight blade.",
+        "Hidden armor closures simplified; no universal army standard."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 ORC WARCHIEF. Top: his broad rough iron cuirass, short lower overlapping steel lames and mismatched shoulder protection. Preserve the huge blunt workmanlike proportions but simplify to one obvious main breastplate, a few practical shoulder lames and side straps. Remove decorative tooth trophies and repeated studs unrelated to construction. It is one heavily equipped leader, not a standard for all orcs. Middle: the broad-headed brutal iron WAR HAMMER seen across his hands, thick wood shaft with worn wrap, one heavy squared hammer face and a compact opposing head, no new giant spikes; show the complete individual weapon. Bottom: his plain wide worn leather waist belt with one unadorned iron buckle, relaxed natural loop, no fur or skulls.\nCENTRE COLUMN, reference 2 SELLSWORD. Top: a short sleeved mail shirt over a plain padded linen lining, with ONLY ONE battered reused shoulder plate carrying the source's faint worn pale angular paint remnants. Do not turn it into a second full cuirass. Coarse mail suggested with broad painterly texture, not every individual ring. Middle: his straight broad steel sword with uncomplicated crossguard and round pommel, complete and practical. Bottom: a small worn drawstring coin pouch like his, mouth cinched, just two ordinary dull coins beside it; no money floating or written symbols.\nRIGHT COLUMN, reference 3 MERCENARY CAPTAIN. Top: his simple repaired steel half-cuirass over a plain cream rolled-sleeve shirt, fitted but not lavish, one modest shoulder cap and two functional side straps. Do not duplicate the warchief's segmented heavy armor. Middle: a practical straight sword and matching plain leather sheath, grouped together; the hilt must match the source's waist sword, the partly unseen blade is a modest functional extrapolation, not an elaborate new artifact. Bottom: ordinary brown working belt with the single square flap pouch from his waist; a small russet cloth tie may be attached, not a ceremonial sash.\nPreserve meaningful differences between coarse leader's heavy salvage, the sellsword's mail-and-reuse, and the captain's acquired half plate. No faction-wide matching colors, helmets, shields, standard uniforms or trophies.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-warchief.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png"
+      ],
+      "file": "equipment/15-heavy-fighters-and-hired-blades.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c1583093-1698-458a-9740-09ec9bcb08f4.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3ecbd2a962965071431631721979a15ce8b3f63b9909bda7fc9060e73543eefc",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-warchief.png": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "16-woodland-travel-and-field-gear",
+      "title": "Woodland travel and field gear",
+      "sourceNames": [
+        "thornwarden-pathguard",
+        "wayfinder-druid",
+        "thornwarden-saboteur"
+      ],
+      "characters": [
+        "Thornwarden Pathguard",
+        "Wayfinder Druid",
+        "Thornwarden Saboteur"
+      ],
+      "items": [
+        [
+          "Simple leather jack",
+          "Wooden bow",
+          "Quiver with a few arrows"
+        ],
+        [
+          "Single-piece wool travel cloak",
+          "Plain walking staff",
+          "Small plain trail pouch"
+        ],
+        [
+          "Simple hooded field jacket",
+          "Small utility knife",
+          "Worn fingerless gloves"
+        ]
+      ],
+      "inferred": [
+        "Pathguard jack deliberately simplifies the source's numerous leather flaps.",
+        "Druid trail pouch is a new modest accessory proposal.",
+        "Saboteur utility knife is a new modest accessory proposal, not visible in the source."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 THORNWARDEN PATHGUARD. Top: simplify the orc archer's brown torso protection into ONE ordinary sleeveless leather jack, one-piece front panels, side seam and only two useful fastening straps over a glimpse of plain cloth. Keep its robust proportions and dark brown worn material. Intentionally REMOVE the repeated shingled leather/leaf shoulder strips from the source and do not replace them with more panels. No leaf-shaped armor, dangling layers, scales or busy decorative diagonal belts. Middle: the archer's modest wooden bow, its actual gently curved profile and wrapped central grip, complete intact bowstring meeting both tips; no metal fantasy recurve machinery. Bottom: his plain back quiver with three arrows, natural simple fletching; no leaves or ornaments.\nCENTRE COLUMN, reference 2 WAYFINDER DRUID. Top: the loose moss-olive WOOL travel cloak from his back, one continuous main fabric drape, modest attached hood, plain throat tie, visible textile folds not leather plates or a suit of leaves. Let worn hem edges show restrained use. Middle: his ordinary straight walking staff, natural wood, blunt worn end, no crystal, antler, glowing rune or sculpted animal head. Bottom: a small plain cloth trail pouch tied with cord, a deliberately modest NEW proposed accessory; do not claim it was visible in the source.\nRIGHT COLUMN, reference 3 THORNWARDEN SABOTEUR. Top: a simple short hooded dark umber field jacket based on her source garment, soft practical cloth body, minimal shoulder reinforcement, ordinary seams and one front fastening. No decorative leather flakes, layered skirt panels or buckles everywhere. Middle: one small unadorned utility knife with short straight steel blade, simple wood handle and plain sheath beside it; this is a NEW modest proposed tool/sidearm, no invented magic. Bottom: her pair of worn fingerless working gloves, clear simple leather construction with a single wrist closure, empty glove openings.\nThe point is varied useful woodland clothing and equipment, not a green uniform, costume of leaves, fantasy fetish leather, or an obligation for every forest traveler to wear armor. Retain textile, wood and ordinary metal, allowing the source's actual material variety.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-pathguard.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/wayfinder-druid.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png"
+      ],
+      "file": "equipment/16-woodland-travel-and-field-gear.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c3395dcd-ceeb-453d-9a09-b318b91bbe81.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "09a2ce6c2f59a818b8a708ca9bdad7cddb7a93cd6e21abff931189a083ceaeaf",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-pathguard.png": "295fdf3fc71b6351910ba65bd3f3ee5c5881a8b3906bd390a875a4ab9b0c7c3e",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/wayfinder-druid.png": "dcd309dfe988b2f50fa577b5d5ba06836f6f26f6a3e1efcfa3f5af12653ac12a",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "17-dominion-personal-kits",
+      "title": "Dominion belongings across different roles",
+      "sourceNames": [
+        "ashen-court-noble",
+        "ashen-court-bailiff",
+        "bone-harvester"
+      ],
+      "characters": [
+        "Ashen Court Noble",
+        "Ashen Court Bailiff",
+        "Bone Harvester"
+      ],
+      "items": [
+        [
+          "Tailored court overgown",
+          "Small court dagger",
+          "Long cloth gloves"
+        ],
+        [
+          "Plain working coat with leather shoulder yoke",
+          "Wooden baton",
+          "Ring of practical keys"
+        ],
+        [
+          "Worn hooded cloth robe",
+          "Short-handled sickle",
+          "Empty wicker carrying basket"
+        ]
+      ],
+      "inferred": [
+        "Court dagger is a new restrained accessory proposal; it is not visible in the noble portrait.",
+        "Unseen garment closures reconstructed simply.",
+        "These three personal kits do not define all Dominion military equipment."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 ASHEN COURT NOBLE. Top: her tailored ash-grey and muted plum cloth overgown, sober fitted bodice, long broad sleeves and skirt, recognizably the same elegant cut with a few restrained silver-grey embroidered stem shapes at the upper chest; do not reproduce every embroidered detail or invent metal armor. Empty neck and cuffs, no torso. Middle: ONE small refined court dagger with narrow plain blade, modest straight guard, dark plum leather grip and undecorated silver pommel, sheath beside it; this is a NEW restrained possible sidearm, not visible in the portrait and not a faction standard. Bottom: her pair of long grey cloth gloves, natural fingers, small wrist seam, no rings or armor.\nCENTRE COLUMN, reference 2 ASHEN COURT BAILIFF. Top: his workaday charcoal-grey knee-length coat with a single brown leather shoulder yoke and modest padded collar, rolled cuffs showing muted violet lining. Straightforward tailoring, plain belt, minimal protection; no elite black lamellar harness, skulls or giant high collar. Middle: the plain turned dark wood baton carried at his belt, stout practical grip and rounded head, exact modest scale and style of the source. Bottom: a ring of THREE practical old iron keys, distinct plausible bits and simple bows, no giant magical key, words or heraldic symbols.\nRIGHT COLUMN, reference 3 BONE HARVESTER. Top: his worn hooded grey-violet cloth robe, one continuous robe and modest shoulder mantle, softly frayed edges, still a comprehensible sewn garment, not thirty floating scraps. Sparse faded hem edging from reference, no invented armor or antlers. Middle: his short-handled iron sickle, complete curved blade with a plain dark wood grip, restrained old metal. Bottom: his EMPTY rectangular woven carrying basket, two simple leather shoulder straps visible, no contents, bones or human remains.\nVisual variety matters: refined cloth, utilitarian working coat, and weathered ritual/labor clothing, all from individual source characters. A dark military kit can exist elsewhere but must not constrain these roles. No uniform matching black steel, compulsory skull emblems, purple glow, gothic props, dramatic candlelight or background scenes.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-noble.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-bailiff.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png"
+      ],
+      "file": "equipment/17-dominion-personal-kits.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-dfce9f05-9cff-4739-94d6-deb464542a6e.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f5025deac5679ef2e8b34324572d6511d102e9630a74c90ca45a57049ef25832",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-noble.png": "d633d23dbcdf574108f87300d2585cf20c4a6042c0772f7180e772b602e90adb",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-bailiff.png": "604ebccc1179664ed62a1295be49bbb7df978dc5d59872672248592b90c8162a",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png": "a248eddc5c103db0f8d2a57e7175115bb7ef3facfc0c6f3a54bc6b3254cd7571"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    }
+  ],
+  "reference_usage_guidance": {
+    "purpose": "Initial design references that support continued invention, not a closed catalog.",
+    "new_characters": "Create new faces, builds, outfits, armor and weapons beyond these sheets while retaining species-defining anatomy, art direction and setting coherence.",
+    "exact_reuse": "Reserve identity and signature-item matching for the same established character or an explicit reuse request; do not require it for new characters.",
+    "variation": "Vary silhouette, cut, proportion, materials, craft, condition, role and taste; review against recent art for repeated faces and kit. Recoloring and small accessories alone are insufficient.",
+    "construction": "Keep construction coherent and purposeful. Variety need not add layers, straps or ornament.",
+    "scope": "No sample defines an entire people or faction. Historical prompts record sheet generation and do not limit future art.",
+    "updated": "2026-11-06"
+  }
+}

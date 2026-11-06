@@ -1,0 +1,533 @@
+{
+  "project": "Breachline",
+  "created": "2026-11-06",
+  "method": "built-in image_gen",
+  "status": "Active: people studies, two retained first-batch equipment sheets and four new character-based proposals. Removed sheets remain historical records only.",
+  "sheet_count": 14,
+  "head_studies": 50,
+  "equipment_design_slots": 60,
+  "images": [
+    {
+      "key": "01-humans",
+      "title": "Humans \u2014 neutral body and face studies",
+      "status": "existing people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nHUMANS. Turnaround: an ordinary adult woman in her early thirties, average sturdy build and height, olive complexion, short roughly cut dark brown hair, longer nose with a slight bridge bump, broad mouth, slightly uneven brows, calm attentive expression; pleasant but not a model. Six portrait castings from left to right: (1) same woman; (2) a young adult man about 23 with a soft round jaw, wide-set eyes, broad short nose and slightly prominent ears, naturally appealing but unglamorous; (3) a lean man about 52 with a long narrow face, receding hairline, crooked aquiline nose and compressed mouth; (4) a woman about 62 with a strong broad face, deep brown skin, rounded nose, warm eyes and short silver curls, dignified and handsome; (5) an adult woman about 28 who is unusually beautiful but specific, dark straight hair, pronounced nose, slightly uneven smile, no cosmetics or sexualized pose; (6) a broad-faced adult man about 38, medium brown skin, close textured hair, heavy brow, small eyes and soft chin. Range of human backgrounds across this casting sheet is not a single mixed settlement. Keep everyone equally well painted and dressed.",
+      "file": "people/01-humans.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1deddd00-71fa-426d-be24-9485993c690c.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "c9c348790da0609b96f91fd6808e110cc5daf38715b227a37b39c770d5b7b221",
+      "active_reference": true
+    },
+    {
+      "key": "02-lion-folk",
+      "title": "Lion folk \u2014 neutral body and face studies",
+      "status": "existing people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nLION FOLK. Tall upright muscular people with anatomically convincing LION heads, broad feline muzzle, rounded ears, actual lion noses, expressive feline eyes, natural fur, manes and broad grasping clawed hands. Real feline skull structure, not human nose/lips with fur attached. No human breasts emphasized or human glamour faces. Neutral turnaround: adult lion person with tawny fur, modest uneven dark golden mane, broad thick nose, average dignified face, long strong torso. Tunic neck accommodates mane, hands stay fully readable; plain shoes adapted to broad feet. Six distinct heads vary muzzle width and length, nose shape, brow heaviness, ear set, mane density and age: (1) turnaround identity; (2) a broad-muzzled heavy-browed dark-maned adult; (3) a lean long-muzzled older adult with sparse greying mane; (4) a rounded short-muzzled adult with small mane ruff; (5) one exceptionally striking proud face with an elegant but still genuinely feline head and dark red-brown mane; (6) older tawny adult with broad nose, uneven ears and silver ruff. No roaring, teeth displays or repeated regal glamour. Preserve lion anatomy and let appeal arise from feline proportion and presence. No royal gear or Sunmane Oath emblems; being lion folk does not imply a job or faction.",
+      "file": "people/02-lion-folk.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-cca8f6b0-0b9e-41ba-a426-aa204a1507fa.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "d6786e1a7ad8e89a3a38205ebdd59f71569c2ed63367e3837ae6e03c67d6552a",
+      "active_reference": true
+    },
+    {
+      "key": "03-goblins",
+      "title": "Goblins \u2014 neutral body and face studies",
+      "status": "existing people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nGOBLINS. Small wiry adult humanoid people, large long expressive pointed ears, protruding angular noses, strong brow ridges, compressed jaw-to-nose distance, deft long-fingered hands, proportionately broad feet, earthy ochre/olive/grey skin. Substantially nonhuman proportions, expressive resourceful people, not little human models, elves or cute children. Turnaround adult of compact lean build in the plain neutral clothes, hooked nose, asymmetrical upright ears, sparse dark hair and closed wry mouth, no visible equipment. Six adult head castings alternate male- and female-presenting while preserving equally goblin facial structure: (1) turnaround; (2) blunt broad nose, low brow, wide flattened ears and sparse curls; (3) long face and downturned ear tips, older with thinning pale hair; (4) younger adult with round cheek planes, crooked short nose and close-set eyes; (5) one unusually appealing sharp clever face with gracefully shaped large ears and a prominent hooked nose, still unmistakably goblin rather than human beauty; (6) older broad-faced adult with narrow eyelids, lopsided ears and little hair. Do not make attractiveness depend on green versus brown skin. No constant manic grins, rows of shiny teeth, piercings or scars as the sole identity differences.",
+      "file": "people/03-goblins.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-cd4a160e-0a5e-4f57-a4fd-5b6bbf843b49.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "1d120b20c6e7aea3aea4e35e39728e6823b02fbb183e6cd87e53038315c42103",
+      "active_reference": true
+    },
+    {
+      "key": "04-orcs",
+      "title": "Orcs \u2014 rough nonhuman body and face studies",
+      "status": "existing people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nORCS. Creator correction is crucial: genuinely coarse, ugly-to-human-eyes, massively built, thick-necked NONHUMAN people; NOT attractive humans with green skin and little tusks, no romance-cover orc or pretty female counterpart. Broad heavy cranium, low sloping forehead, substantial brow shelf, deep-set small eyes, wide flattened fleshy nose, protruding heavy muzzle/jaw, uneven thick lower tusks, large ears. Earthy olive-grey and umber green skin. Natural slight hunch from shoulder structure, no bodybuilding definition through tunic. Turnaround: very broad stocky adult with short sparse dark hair, asymmetrical tusks, blunt broad nose and strong low brow, closed neutral mouth. Six portrait identities, including male- and female-presenting adults with EQUALLY nonhuman skulls: (1) turnaround; (2) broad female face with flared flattened nose, thick jaw, uneven tusks and small deep eyes; (3) gaunt older male with very projecting lower face, heavy brow and sparse grey hair; (4) younger adult female with broad compact muzzle, big ears, flattened nose bridge, coarse features; (5) one striking charismatic orc with strong readable proportions and imposing presence, still distinctly rough/ugly by human beauty conventions, no chiselled human jaw or seductive eyes; (6) older thick-cheeked adult with low wide cranium, small eyes and one tusk slightly shorter. Vary actual bone structure. No glam hair, pouty lips, model symmetry, armor, red war banners or white/Vigil alignment. Do not imitate any existing franchise's orc designs.",
+      "file": "people/04-orcs.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-56663a50-29a6-4533-a6b4-d5beec472d6b.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "c8a64ef407aac43dd59b9515bc46d57ea63a43076b48b00c5843da5f891b57e6",
+      "active_reference": true
+    },
+    {
+      "key": "05-giants",
+      "title": "Giants \u2014 neutral body and face studies",
+      "status": "existing people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nGIANTS. Towering heavy humanlike people with broad load-bearing skeletons, very thick limbs, large knuckled hands, broad feet, immense torso and slightly small head relative to body. Natural weight-bearing anatomy rather than an enlarged superhero; broad blunt facial planes, deep brow and thick noses. No ogre horns, tusks, pointed ears, stone skin or earth growing on them. Turnaround: mature broad-built male giant with short unstyled brown hair, heavy round nose, uneven brow and calm plain face, plain properly fitted linen tunic and trousers at his own scale. No rocks, clubs, fur costume or skull jewelry. Six giant heads: (1) turnaround; (2) adult woman with broad square face, close-set eyes and broad short nose; (3) older long-faced male with long drooping nose and sparse grey beard; (4) young adult woman with round soft cheeks, heavy brow, uneven ears and tied-back hair, plain but engaging; (5) one exceptionally handsome mature woman with a strong long nose, broad giant skull and warm clear eyes, retain heavy species proportions; (6) a younger adult man with a soft chin, very wide nose, uneven brows and sparse facial hair. All distinct, not a clone army of bearded muscular men. Scale is an anatomical study rather than a canonical height assignment; do not add a person or scenery for scale.",
+      "file": "people/05-giants.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-892f7d6e-cccb-4d09-8de1-33c3bbc3abb7.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "9ffc22d01835a0c90fa469d97dda00265f88e5fd5bc67e742c810a3e0c9fca0f",
+      "active_reference": true
+    },
+    {
+      "key": "06-alderkin",
+      "title": "Alderkin \u2014 neutral anatomy and head variation",
+      "status": "included people; new design proposals",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nALDERKIN living tree people. Preserve the established slender asymmetrical living-tree structure: flexible gently twisted trunk divides into TWO long rootlike legs; TWO long branch arms end in a few graceful grasping root-fingers. The head is a narrow tapered living growth from the upper trunk with TWO small dark knot-like eyes and a slight brow formed by growth, no carved human face, no human mouth or nose, no human musculature wearing wooden armor. A modest crown of sparse drooping leafy branchlets, NOT antlers. Broad warm umber and silver-grey bark planes with restrained moss-green creases. Torso includes some natural gaps. Around three metres is established for the first individual, not a fixed height for all.\nCLOTHING EXCEPTION: show completely unadorned botanical anatomy; this is a tree being with no human sex anatomy and does not require human clothes. No apron, armor, gardening tools, companion humans, birds, pots or foliage environment.\nTurnaround repeats one lean adult with a slight asymmetrical shoulder and narrow tapered head in relaxed upright posture, arms separated. Six head variations use different woody growth and eye placement: (1) matching subject; (2) broad squat weathered head with low knot-eyes; (3) slender young adult growth with lifted asymmetric brow; (4) older split-crowned growth with pale bark and patient low gaze; (5) unusually graceful willowlike head silhouette, beautiful as a TREE and not a human model carved in bark; (6) blunt crooked head with uneven small branchlets and stubborn expression from tilt alone. Keep each a member of one coherent people, not six unrelated tree monster species. Neutral expressions and individual presence, never obligatory helpful gardeners.",
+      "file": "people/06-alderkin.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-d213ddcd-990e-44e5-9e61-3496ca74a642.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "2ab6efa62bfe71f69e6aab018f07d36b66958b84e235ec5d9c0679c624708a41",
+      "active_reference": true
+    },
+    {
+      "key": "07-stonehorn-exploratory",
+      "title": "Stonehorn \u2014 exploratory neutral anatomy and faces",
+      "status": "developing design; exploratory only",
+      "prompt": "Use case: stylized-concept. Create one original Breachline high-fantasy production character reference sheet, landscape 1536x1024. Traditional oil/acrylic/gouache painted realism with confident economical brushwork, broad colour planes and selective crisp anatomy. NOT photography, glossy 3D, anime, cartoon, or hyperreal microtexture.\nBACKGROUND AND LIGHT: entirely flat warm off-white background, uniform soft neutral daylight, no scenery, floor plane, gradient, cast shadows, stage, atmospheric fog, rim light, props or coloured light. Crisp isolated complete silhouettes with generous white space. This is deliberately a neutral design sheet, NOT a scene or card illustration.\nLAYOUT: upper two thirds contain exactly THREE full-body views of ONE SAME adult individual, left FRONT, middle TRUE SIDE PROFILE facing left, right REAR. Same body, hair, garments, proportions and height in all three views. Relaxed standing, feet apart, hands open held a little away from torso; all fingers, feet and top of head visible, no overlapping limbs. No action. Lower third contains exactly SIX evenly spaced head-and-neck portraits of SIX DIFFERENT adults of this same species, facing varied slight three-quarter angles. The first head matches the turnaround subject; five alternate castings thereafter. All complete heads with space around them. No borders, labels, numbers, lettering, signatures, watermark or card UI.\nCLOTHING: unless specified otherwise, plain undyed oatmeal linen long-sleeve pullover tunic, dull brown straight trousers, simple plain soft leather shoes, simple cloth belt. Opaque ordinary practical unisex clothes, modest fit, no ornaments, armor, weapons, jewelry, emblems, capes, goldmark, profession or faction cues.\nFACE DIRECTION: distinguish identities through skull length/width, brow, eyelid shape, nose bridge and tip, mouth and jaw, age and hairline, NOT merely hairstyle, dirt, scars or skin colour. Subtle real asymmetry and natural resting expressions; varied conventional attractiveness, generally appealing but mostly everyday believable faces with just ONE unusually beautiful or striking individual. Avoid six polished fashion models, identical triangular jaws, sculpted lips, seductive gazes or symmetrical beauty filters. Older people need not be unattractive; young people need not be beautiful. Simplify skin/fur/bark into painted forms, no etched pores, bulging shiny eyes or individually highlighted teeth. All figures are adults. An invented fantasy race does not have a universal faction.\nSPECIES AND SPECIFIC CAST:\nSTONEHORN, an exploratory redesign of the developing ibex-inspired people. Genuinely caprine long faces with broad nose pads, side-set natural eyes and horizontal pupils, subtle goat beards, swept-back ribbed ibex horns, rounded-long ears, grasping furred hands and cloven lower legs. No handsome human nose, lips or jaw in a goat mask. Calm adult upright biped with believable athletic sure-footed proportions, tawny and pale grey fur. This is a person, not a demon, satyr pin-up or mountain warrior.\nCLOTHING EXCEPTION: neutral tunic and brown trousers end below the knees to show natural caprine hocks and cloven hooves; no boots. No tools, mountains or bridge. Top views one adult with medium swept horns, a slightly bent nose and an asymmetrical dark muzzle marking, same horn geometry in every angle.\nSix head studies: (1) turnaround; (2) broad short muzzle and stout short horns; (3) older long narrow face, heavy curved horns and greying beard; (4) younger adult long ears, broad nose pad and compact swept horns; (5) one striking elegant caprine face with long arcing horns and strong pale/dark face markings, beauty through coherent animal anatomy rather than human glamour; (6) blunt convex nose, low wide-set ears and uneven horn tips. Both sexes suggested without human facial feminization. Keep horns entirely within frame. This is a proposed refinement, not settled canon.",
+      "file": "people/07-stonehorn-exploratory.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1f17075c-f657-4207-b12f-78a2260a622f.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "a780f723cf6e5e60cf0d425930c1c6adf145753a9f91c74f7cdddde13b561629",
+      "active_reference": true
+    },
+    {
+      "key": "08-humans-additional-faces",
+      "title": "Humans \u2014 additional faces, including glamour options",
+      "status": "additional cast proposals; first human sheet preserved",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1deddd00-71fa-426d-be24-9485993c690c.png"
+      ],
+      "prompt": "Use case: stylized-concept, new human casting sheet based on two supporting references. Create an ADDITIONAL Breachline face study, landscape 1536x1024. Preserve the original human sheet unchanged; this is a separate NEW page with EIGHT human adult head-and-shoulder portraits in TWO rows of FOUR, ample clear gutters. Every face completely visible. No full bodies, captions, borders, text or watermark.\nInput image 1 is the existing Court Informant painting: use ONLY the beautiful dark-haired adult woman's identity for portrait TOP LEFT, reproduce recognizable face shape, delicate nose, high cheekbones, dark eyes, loose dark brunette updo and mature early-thirties appearance. Turn her into a softly lit neutral three-quarter portrait; KEEP HER ATTRACTIVE. Remove ALL curtain, room, shawl, dramatic lighting and narrative action. No environment copying.\nInput image 2 is the first neutral human sheet: match ONLY its economical oil/acrylic/gouache brushwork, flat warm off-white background, neutral soft daylight, simple oatmeal linen collars and presentation quality. Do not repeat its six cast identities. No photographic skin, pores, glossy 3D or waxy finish.\nUser explicitly wants the repertoire to retain some 'AI baddies': meaning exceptionally attractive glamorous fictional adults, not villains. Make at least one unmistakably STUNNING woman with the polished, idealized beautiful face that often appears in AI fantasy art, intentionally more glamorous than the first human sheet. Do NOT tone down all the beautiful characters or turn this into a sheet of only plain faces.\nCAST IN READING ORDER:\nTop 1: the very attractive brunette woman from image 1, recognizable and beautiful, neutral linen neckline.\nTop 2: an unmistakably glamorous adult woman around 27, long wavy black hair pushed behind one shoulder, high sculpted cheekbones, elegantly tapered jaw, full natural lips, long-lashed almond eyes, luminous warm brown complexion, poised confident gaze; exquisite polished fantasy beauty, warm subtly asymmetric mouth, still painterly not cosmetic advertising.\nTop 3: exceptionally handsome adult man around 35, thick dark hair, strongly defined jaw, slightly broken nose, deep-set grey eyes, light stubble, relaxed confident face. This idealized handsome option is deliberate.\nTop 4: appealing but ordinary young adult woman around 24, broad short nose, round face, prominent ears, close-cut reddish hair, pale freckles simplified as a few painted marks, thin upper lip, no sculpted model cheekbones.\nBottom 1: older man about 65, long narrow face, receding silver hair, large hooked nose and soft jowls, perceptive eyes, dignified.\nBottom 2: middle-aged woman about 48, full broad cheeks, deep brown complexion, broad nose, hooded eyes, tightly coiled short hair, strong personality and appealing smile lines.\nBottom 3: plain young adult man about 22, broad jaw with a soft chin, ears slightly prominent, short thin lips, close-set eyes, sandy hair, gently uneven eyebrows. Believable not grotesque.\nBottom 4: adult man around 43, East Asian appearance, long face, short straight hair, narrow hooded eyes, low nose bridge with broad tip, asymmetric upper lip, thoughtful tired expression.\nAll eight wear comparable plain neutral modest linen collars. Equal scale, same flattering-but-neutral light; beauty range should be legible from the faces themselves. Varied resting expressions and gaze directions without performance. No jewelry, armor, faction marks, weapons, scenery, sexy costume or age caricatures. These are art-direction proposals, not assigned factions or characters.",
+      "file": "people/08-humans-additional-faces.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-d4efb803-0306-4ced-a00a-df371cf41968.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373",
+      "project_reference_inputs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "active_reference": true
+    },
+    {
+      "key": "09-vigil-equipment",
+      "title": "Vigil \u2014 Sunmane Oath / Still Flame",
+      "rows": [
+        "The Sunmane Oath",
+        "The Still Flame"
+      ],
+      "status": "proposed faction equipment",
+      "prompt": "Use case: stylized-concept. One original Breachline high-fantasy armor and weapon DESIGN REFERENCE SHEET, landscape 1536x1024. These are physical wearable armors and usable weapons of the setting, not gameplay card illustrations, magic item icons or named artifacts.\nTraditional oil/acrylic/gouache painted realism, broad convincing material planes, restrained crisp hardware, readable designs, economical brushwork. No photo, 3D render, cartoon, uniform engraved microdetail or copied franchise designs.\nCompletely flat warm off-white background and uniform neutral diffuse lighting. Exactly TWELVE separated objects in TWO HORIZONTAL ROWS of SIX, each row belonging to one faction, with generous gutters. Six clear columns. Every object is complete and contained with ample margins, no overlap. Long weapons entirely visible and vertical, sword points downward. Armor means a single wearable torso garment/harness shown in three-quarter view, open neck with interior lining visible, NO body or head inside; functional straps, closures, layered construction and sensible protection. Helmets are separate actual hollow helmets, not heads. Shields are separate.\nAll objects isolated, no scene, table, rack, wall, scenery, stand, human, mannequin, disembodied hands, blood, magic glow or cast shadows. No labels, text, numbers, emblems from real franchises, card borders or UI. Original proposed faction designs; faction identity comes from cut, materials, construction and restrained palette, not symbols stamped on everything. Sober practical weapon proportions and hand grips, no enormous fantasy blades, gratuitous spikes or ornamental clutter. Keep blades clean enough to use, edge bevels legible, armor joints movable. High fantasy present day, not Bronze Age historical costume.\nROW CONTENTS:\nTOP ROW \u2014 SUNMANE OATH, restrained ivory-enamelled steel, small gold borders, warm brown straps, pale sky-blue lining. Six objects left to right: (1) protective articulated plate cuirass with modest layered shoulder guards, tailored broad chest with flared throat/mane clearance, no gigantic pauldrons; (2) lion-folk-compatible open-faced steel helmet with cheek guards shaped around a feline muzzle and flared rear mane channel, hollow with no face; (3) long teardrop shield in ivory over wood, steel rim and ONE small abstract sun boss; (4) elegant functional straight arming sword, modest gold crossguard, brown leather grip; (5) long ash-shafted lance with plain leaf-shaped steel point and narrow ivory grip wrap, no banner; (6) compact six-flanged steel mace, brown grip, restrained gilded collar.\nBOTTOM ROW \u2014 STILL FLAME, practical healer/temple-escort protection, unbleached ivory quilted cloth, dull brass and small steel fittings, softer rounded forms. Six objects left to right: (1) padded knee-length sleeveless protective coat over visible short mail shoulder panels, modest practical torso garment with simple toggles, NOT priest robes on a body; (2) low open-faced steel cap with padded ivory neck protection; (3) simple small round wooden shield with ivory linen cover and brass boss; (4) short straight defensive sword with plain brass crossguard and cream-wrapped grip; (5) long sturdy wooden quarterstaff with protective dull-brass end caps, no lantern or magical ornament; (6) small rounded iron-headed club with plain grip. No red cape or red trim, no giant halo symbols.",
+      "file": "equipment/09-vigil-equipment.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-e833ab2d-b8bd-4f57-9517-0f09b2c0c9ca.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "5d761df7e20bbec0330dd31e9f3e48fab7e833d3f112ae66f2df985cc033e38b",
+      "active_reference": true,
+      "review_status": "retained_by_creator"
+    },
+    {
+      "key": "10-gnosis-equipment",
+      "title": "Gnosis \u2014 Lantern Conclave / Artificers",
+      "rows": [
+        "The Lantern Conclave",
+        "The Artificers"
+      ],
+      "status": "proposed faction equipment",
+      "prompt": "Use case: stylized-concept. One original Breachline high-fantasy armor and weapon DESIGN REFERENCE SHEET, landscape 1536x1024. These are physical wearable armors and usable weapons of the setting, not gameplay card illustrations, magic item icons or named artifacts.\nTraditional oil/acrylic/gouache painted realism, broad convincing material planes, restrained crisp hardware, readable designs, economical brushwork. No photo, 3D render, cartoon, uniform engraved microdetail or copied franchise designs.\nCompletely flat warm off-white background and uniform neutral diffuse lighting. Exactly TWELVE separated objects in TWO HORIZONTAL ROWS of SIX, each row belonging to one faction, with generous gutters. Six clear columns. Every object is complete and contained with ample margins, no overlap. Long weapons entirely visible and vertical, sword points downward. Armor means a single wearable torso garment/harness shown in three-quarter view, open neck with interior lining visible, NO body or head inside; functional straps, closures, layered construction and sensible protection. Helmets are separate actual hollow helmets, not heads. Shields are separate.\nAll objects isolated, no scene, table, rack, wall, scenery, stand, human, mannequin, disembodied hands, blood, magic glow or cast shadows. No labels, text, numbers, emblems from real franchises, card borders or UI. Original proposed faction designs; faction identity comes from cut, materials, construction and restrained palette, not symbols stamped on everything. Sober practical weapon proportions and hand grips, no enormous fantasy blades, gratuitous spikes or ornamental clutter. Keep blades clean enough to use, edge bevels legible, armor joints movable. High fantasy present day, not Bronze Age historical costume.\nROW CONTENTS:\nTOP ROW \u2014 LANTERN CONCLAVE, dark indigo quilted cloth, restrained teal seams, polished modest brass closures, slim carefully balanced forms. Six objects left to right: (1) practical padded traveling coat with overlapping concealed steel torso panels and high but comfortable collar, open neck, no body; (2) fitted smooth open-face light helmet with a narrow brass brow band, no goggles; (3) compact convex steel buckler with understated brass ring; (4) slim functional thrusting sword with a simple curved hand guard, no excessively thin impossible blade; (5) long balanced ash spear with a narrow socketed steel head and a modest teal grip wrap; (6) compact practical wooden crossbow with modest brass fitting accents, correct single bow and bowstring, complete stock and stirrup, no magical glowing lens.\nBOTTOM ROW \u2014 THE ARTIFICERS, dark leather, brass, brushed steel and sparse blue enamel, repairable interchangeable plates, clean functional mechanisms. Six objects left to right: (1) articulated half-plate cuirass of overlapping riveted steel panels over leather, visible replaceable straps, no decorative exposed clock gears; (2) practical segmented metal helmet with hinged cheek pieces and clear face opening, no weird goggles; (3) small sturdy riveted rectangular forearm shield with a broad handle visible along its side; (4) compact engineer's warhammer with balanced blunt steel head and short rear pick, functional grip; (5) precise robust crossbow with layered wood stock and modest winding lever, complete plausible construction, no gun parts; (6) broad short sword with replaceable leather grip and simple brass pommel. No steampunk boiler, firearms, glowing crystals or named game artifacts.",
+      "file": "equipment/10-gnosis-equipment.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-4271c9b2-c7ea-4fdf-8c66-eb46f260ab50.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "90fa3d37180ceae33efdd6d939e40b5837001097d40a62a277fc67e1d6500cf7",
+      "active_reference": true,
+      "review_status": "retained_by_creator"
+    },
+    {
+      "key": "11-dominion-equipment",
+      "title": "Dominion \u2014 Ashen Court / Gravebound",
+      "rows": [
+        "The Ashen Court",
+        "The Gravebound"
+      ],
+      "status": "proposed faction equipment",
+      "prompt": "Use case: stylized-concept. One original Breachline high-fantasy armor and weapon DESIGN REFERENCE SHEET, landscape 1536x1024. These are physical wearable armors and usable weapons of the setting, not gameplay card illustrations, magic item icons or named artifacts.\nTraditional oil/acrylic/gouache painted realism, broad convincing material planes, restrained crisp hardware, readable designs, economical brushwork. No photo, 3D render, cartoon, uniform engraved microdetail or copied franchise designs.\nCompletely flat warm off-white background and uniform neutral diffuse lighting. Exactly TWELVE separated objects in TWO HORIZONTAL ROWS of SIX, each row belonging to one faction, with generous gutters. Six clear columns. Every object is complete and contained with ample margins, no overlap. Long weapons entirely visible and vertical, sword points downward. Armor means a single wearable torso garment/harness shown in three-quarter view, open neck with interior lining visible, NO body or head inside; functional straps, closures, layered construction and sensible protection. Helmets are separate actual hollow helmets, not heads. Shields are separate.\nAll objects isolated, no scene, table, rack, wall, scenery, stand, human, mannequin, disembodied hands, blood, magic glow or cast shadows. No labels, text, numbers, emblems from real franchises, card borders or UI. Original proposed faction designs; faction identity comes from cut, materials, construction and restrained palette, not symbols stamped on everything. Sober practical weapon proportions and hand grips, no enormous fantasy blades, gratuitous spikes or ornamental clutter. Keep blades clean enough to use, edge bevels legible, armor joints movable. High fantasy present day, not Bronze Age historical costume.\nROW CONTENTS:\nTOP ROW \u2014 ASHEN COURT, severe disciplined forms, blackened steel, very dark plum lining and tarnished silver fasteners, intimidating hard geometry. Six objects left to right: (1) heavy close-set lamellar cuirass with a tall protective throat and angular shoulder lames, severe rather than luxurious jewelry; (2) enclosed blackened helmet with a narrow functional sight opening and plain reinforced brow; (3) long blackened rectangular shield with bevelled corners and plain central ridge, no heraldry; (4) long stiff estoc sword, simple austere crossguard and dark grip; (5) functional poleaxe combining compact axe blade, hammer face and short top point on a complete straight shaft; (6) robust long rondel dagger with plain disc guard and pommel.\nBOTTOM ROW \u2014 GRAVEBOUND, salvaged grave iron, worn ash-grey padded linen, stained dull bone-coloured cloth wraps; bleak and materially harsh, not glamorous. Six objects left to right: (1) patched iron scale vest over old grey padding, functional rivets and repairs, absent body; (2) weathered open-faced barbute-like iron helmet with simple cheek openings; (3) stripped dark wooden round shield reinforced with irregular practical iron repair straps; (4) heavy single-edged chopping sword with rough but usable edge and cloth-wrapped grip; (5) long war pick on an old hardwood shaft, one compact pointed pick and small hammer counterweight, no magical scythe; (6) compact iron mace with blunt flanges and worn grip. No human remains, repeated skull ornaments, literal skeleton armor, gore, vampires, glowing necromancy or benign ceremonial luxury. Equipment should feel oppressive or austere through shapes and materials despite clean neutral display.",
+      "file": "equipment/11-dominion-equipment.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f88d8d2b-29a3-444f-971e-becb263fd281.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "934038ee5fead181cac5f0ad613c07e0aa0911b0cb18f9be7e4d311db9467542",
+      "active_reference": false,
+      "review_status": "removed_by_creator",
+      "review_note": "Visually liked, but too specific to define the faction; removed by creator."
+    },
+    {
+      "key": "12-fervor-equipment",
+      "title": "Fervor \u2014 Warhorde / Cinder Clans",
+      "rows": [
+        "The Warhorde",
+        "The Cinder Clans"
+      ],
+      "status": "proposed faction equipment",
+      "prompt": "Use case: stylized-concept. One original Breachline high-fantasy armor and weapon DESIGN REFERENCE SHEET, landscape 1536x1024. These are physical wearable armors and usable weapons of the setting, not gameplay card illustrations, magic item icons or named artifacts.\nTraditional oil/acrylic/gouache painted realism, broad convincing material planes, restrained crisp hardware, readable designs, economical brushwork. No photo, 3D render, cartoon, uniform engraved microdetail or copied franchise designs.\nCompletely flat warm off-white background and uniform neutral diffuse lighting. Exactly TWELVE separated objects in TWO HORIZONTAL ROWS of SIX, each row belonging to one faction, with generous gutters. Six clear columns. Every object is complete and contained with ample margins, no overlap. Long weapons entirely visible and vertical, sword points downward. Armor means a single wearable torso garment/harness shown in three-quarter view, open neck with interior lining visible, NO body or head inside; functional straps, closures, layered construction and sensible protection. Helmets are separate actual hollow helmets, not heads. Shields are separate.\nAll objects isolated, no scene, table, rack, wall, scenery, stand, human, mannequin, disembodied hands, blood, magic glow or cast shadows. No labels, text, numbers, emblems from real franchises, card borders or UI. Original proposed faction designs; faction identity comes from cut, materials, construction and restrained palette, not symbols stamped on everything. Sober practical weapon proportions and hand grips, no enormous fantasy blades, gratuitous spikes or ornamental clutter. Keep blades clean enough to use, edge bevels legible, armor joints movable. High fantasy present day, not Bronze Age historical costume.\nROW CONTENTS:\nTOP ROW \u2014 WARHORDE, broad heavy practical construction for robust bodies, dark hide and rough iron lamellae, spare muted ember-red cloth bindings. Six objects left to right: (1) broad leather-and-iron lamellar torso harness with adjustable straps and modest reinforced shoulders, no body, spikes or trophy skulls; (2) heavy open lower-face helmet with wide jaw clearance for ORC tusks, hollow no face, thick brow; (3) broad rectangular planked shield with hide covering and sturdy iron rim; (4) robust single-bladed battleaxe with realistic weight, broad working edge and thick complete wood handle; (5) long heavy spear with a broad but usable steel point and reinforced socket, full shaft; (6) heavy curved chopping sword with simple protective knuckle bar and rough leather grip.\nBOTTOM ROW \u2014 CINDER CLANS, mobile disciplined raider equipment, russet quilted cloth, brown leather, steel plates, small red binding accents. Six objects left to right: (1) light flexible riveted brigandine torso coat with open neck, comfortable armholes and side lacing, no body; (2) light open-faced nasal helmet with small cheek flaps, no horns; (3) small round wood shield with central steel boss, natural wood and one muted red border; (4) elegant functional curved saber with leather wrapped grip and modest hand guard; (5) a recurved composite bow with an intact taut bowstring and a separate arrow resting parallel without touching, both complete; (6) short useful bearded handaxe with modest steel blade. No fire effects, banners, fur bikinis, giant blades, carnival spikes or named equipment-card recreations. Distinct heavy Warhorde versus light mobile Cinder construction.",
+      "file": "equipment/12-fervor-equipment.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-56fbcd06-eab0-4d3d-be19-445c74e29a81.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "0710973a0008adfc9ef707c7c95fa13505e81f74a2cd0d3d056aa64d8811f814",
+      "active_reference": false,
+      "review_status": "removed_by_creator",
+      "review_note": "Too organized and inconsistent with existing characters; removed by creator."
+    },
+    {
+      "key": "13-genesis-equipment",
+      "title": "Genesis \u2014 Thornwardens / Elder Herd",
+      "rows": [
+        "The Thornwardens",
+        "The Elder Herd"
+      ],
+      "status": "proposed faction equipment",
+      "prompt": "Use case: stylized-concept. One original Breachline high-fantasy armor and weapon DESIGN REFERENCE SHEET, landscape 1536x1024. These are physical wearable armors and usable weapons of the setting, not gameplay card illustrations, magic item icons or named artifacts.\nTraditional oil/acrylic/gouache painted realism, broad convincing material planes, restrained crisp hardware, readable designs, economical brushwork. No photo, 3D render, cartoon, uniform engraved microdetail or copied franchise designs.\nCompletely flat warm off-white background and uniform neutral diffuse lighting. Exactly TWELVE separated objects in TWO HORIZONTAL ROWS of SIX, each row belonging to one faction, with generous gutters. Six clear columns. Every object is complete and contained with ample margins, no overlap. Long weapons entirely visible and vertical, sword points downward. Armor means a single wearable torso garment/harness shown in three-quarter view, open neck with interior lining visible, NO body or head inside; functional straps, closures, layered construction and sensible protection. Helmets are separate actual hollow helmets, not heads. Shields are separate.\nAll objects isolated, no scene, table, rack, wall, scenery, stand, human, mannequin, disembodied hands, blood, magic glow or cast shadows. No labels, text, numbers, emblems from real franchises, card borders or UI. Original proposed faction designs; faction identity comes from cut, materials, construction and restrained palette, not symbols stamped on everything. Sober practical weapon proportions and hand grips, no enormous fantasy blades, gratuitous spikes or ornamental clutter. Keep blades clean enough to use, edge bevels legible, armor joints movable. High fantasy present day, not Bronze Age historical costume.\nROW CONTENTS:\nTOP ROW \u2014 THORNWARDENS, quiet mobile protection, dark bark-brown leather, moss-green cloth, restrained blackened steel and curved organic cuts, manufactured practical objects not living magical growth. Six objects left to right: (1) layered hardened leather torso armor with cloth side gussets and a few slim steel scales at shoulders, no decorative leaf suit; (2) low leather-and-steel cap helmet with open face and unobstructed ears, no antlers; (3) narrow oval wicker-and-hide shield with sturdy wood edge; (4) functional short slightly forward-curved sword with simple wooden grip and dark steel edge; (5) full longbow with a visible intact bowstring, one plain complete arrow separated beside it; (6) compact balanced handaxe with wood handle and ordinary dark steel head.\nBOTTOM ROW \u2014 ELDER HERD, equipment for people who travel with great beasts, generous rounded forms, heavy undyed felt, supple ochre hide, pale wood, rope lacing and modest iron; no animal wearing the equipment and no domestication claims. Six objects left to right: (1) protective layered felt-and-hide torso vest with sturdy laced sides and modest broad shoulder padding, no giant fur cape, no body; (2) simple padded leather helmet reinforced with a few small iron strips and soft nape flap; (3) broad oval hide shield stretched over a bent-wood frame, natural rope lacing; (4) sturdy long-bladed utility/defensive knife with shaped hardwood grip; (5) long leaf-pointed defensive spear with a crossbar under its head and a full pale ash shaft; (6) compact rounded hardwood club with a modest iron collar. No stone-age stereotype, sacred artifact, magic glow, aggressive monster armor, antler crown, teeth necklaces or decorative vines covering the equipment.",
+      "file": "equipment/13-genesis-equipment.png",
+      "generation_status": "generated_for_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-dd104c20-f959-4d4f-9c27-e1474245d468.png",
+      "visual_review": "Reviewed: complete subjects, clean background, readable design and intended layout.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "png_bit_depth": 8,
+      "png_colour_type": 2,
+      "sha256": "c024bdb3ccf941872fcef65bdc62743d8e21c9fb94ac60652161abda7dd4b33b",
+      "active_reference": false,
+      "review_status": "removed_by_creator",
+      "review_note": "Overdesigned leather layering without clear construction; removed by creator."
+    },
+    {
+      "key": "14-raiders-and-berserker",
+      "title": "Raider and berserker belongings",
+      "sourceNames": [
+        "goblin-cutter",
+        "cinder-clan-raiders",
+        "cinder-berserker"
+      ],
+      "characters": [
+        "Goblin Cutter",
+        "Cinder Clan raider",
+        "Cinder Berserker"
+      ],
+      "items": [
+        [
+          "Single scavenged shoulder plate on a narrow harness",
+          "Broad cleaver",
+          "Simple cloth wrist wraps"
+        ],
+        [
+          "Short stitched leather jacket over linen",
+          "Small raider hatchet",
+          "Faded red sash with plain belt pouch"
+        ],
+        [
+          "Single asymmetrical fur mantle",
+          "Long-handled axe",
+          "Cloth leg wraps"
+        ]
+      ],
+      "inferred": [
+        "Hidden sides and fastenings reconstructed simply; no new standard faction kit."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 GOBLIN CUTTER. Top: one small dented three-segment iron shoulder plate on a narrow practical leather suspension harness, exactly the individually scavenged shoulder protection seen on the goblin; do NOT invent a whole cuirass or symmetrical second shoulder. Middle: the distinctive broad rectangular cleaver with a small round hole near the far top corner and a worn short wood grip, complete blade and handle. Bottom: a pair of simple uneven dirty linen wrist wraps, loosely rolled so material and fastening are clear.\nCENTRE COLUMN, reference 2 CINDER CLAN RAIDERS. Top: the foreground raider's ordinary short dark-brown stitched leather jacket over a little off-white linen at the collar and cuff, simple front opening and ONE belt, soft sleeves, recognizable but simplify excessive lacing to functional seams. No metal breastplate or matching helmet. Middle: her small practical hatchet with short wood handle and a compact bearded steel head, reasonable proportions. Bottom: a single faded red cloth sash with ONE plain small leather belt pouch resting beside it as one accessory group; their fabric/shape matches the wearer, not a formal military badge.\nRIGHT COLUMN, reference 3 CINDER BERSERKER. Top: the asymmetrical shaggy brown fur mantle from ONE hide, simple neck/shoulder tie and no torso armor; show empty garment, not a pelt shaped like human anatomy. Middle: his long-handled iron axe, single compact wedge blade on a slightly irregular wooden haft, wrapped near the head and grip, complete in frame; do not enlarge into a double-headed fantasy axe. Bottom: pair of broad undyed cloth leg wraps loosely bundled; plain, no buckles or metal shin plates.\nVary the browns, greys, iron and natural cloth. Only the raider sash supplies a red accent; no need to paint all pieces red. This board must feel personally assembled and distinct from issued matching army equipment.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/goblin-cutter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-clan-raiders.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-berserker.png"
+      ],
+      "file": "equipment/14-raiders-and-berserker.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-071dc372-75d0-4970-bbd9-6cbb9f8cabb4.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "614f12740dd1317c8a3c4d4e8761b33cab53256695a4b569103b0e14307fc7b2",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/goblin-cutter.png": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-clan-raiders.png": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-berserker.png": "a642a905325a358cad87c227aea20898d6beba63ce237e1fb0d093472ccb6c5d"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "15-heavy-fighters-and-hired-blades",
+      "title": "Heavy fighters and hired blades",
+      "sourceNames": [
+        "orc-warchief",
+        "sellsword",
+        "mercenary-captain"
+      ],
+      "characters": [
+        "Orc Warchief",
+        "Sellsword",
+        "Mercenary Captain"
+      ],
+      "items": [
+        [
+          "Broad salvaged plate cuirass",
+          "Heavy double-ended hammer",
+          "Plain worn leather belt"
+        ],
+        [
+          "Short mail shirt with one reused shoulder plate",
+          "Straight broad sword",
+          "Small drawstring coin pouch"
+        ],
+        [
+          "Simple repaired steel half-cuirass",
+          "Straight sword with plain sheath",
+          "Working belt with utility pouch"
+        ]
+      ],
+      "inferred": [
+        "Warchief weapon's obscured end reconstructed from the visible hammer.",
+        "Captain's mostly sheathed sword blade is a modest inferred straight blade.",
+        "Hidden armor closures simplified; no universal army standard."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 ORC WARCHIEF. Top: his broad rough iron cuirass, short lower overlapping steel lames and mismatched shoulder protection. Preserve the huge blunt workmanlike proportions but simplify to one obvious main breastplate, a few practical shoulder lames and side straps. Remove decorative tooth trophies and repeated studs unrelated to construction. It is one heavily equipped leader, not a standard for all orcs. Middle: the broad-headed brutal iron WAR HAMMER seen across his hands, thick wood shaft with worn wrap, one heavy squared hammer face and a compact opposing head, no new giant spikes; show the complete individual weapon. Bottom: his plain wide worn leather waist belt with one unadorned iron buckle, relaxed natural loop, no fur or skulls.\nCENTRE COLUMN, reference 2 SELLSWORD. Top: a short sleeved mail shirt over a plain padded linen lining, with ONLY ONE battered reused shoulder plate carrying the source's faint worn pale angular paint remnants. Do not turn it into a second full cuirass. Coarse mail suggested with broad painterly texture, not every individual ring. Middle: his straight broad steel sword with uncomplicated crossguard and round pommel, complete and practical. Bottom: a small worn drawstring coin pouch like his, mouth cinched, just two ordinary dull coins beside it; no money floating or written symbols.\nRIGHT COLUMN, reference 3 MERCENARY CAPTAIN. Top: his simple repaired steel half-cuirass over a plain cream rolled-sleeve shirt, fitted but not lavish, one modest shoulder cap and two functional side straps. Do not duplicate the warchief's segmented heavy armor. Middle: a practical straight sword and matching plain leather sheath, grouped together; the hilt must match the source's waist sword, the partly unseen blade is a modest functional extrapolation, not an elaborate new artifact. Bottom: ordinary brown working belt with the single square flap pouch from his waist; a small russet cloth tie may be attached, not a ceremonial sash.\nPreserve meaningful differences between coarse leader's heavy salvage, the sellsword's mail-and-reuse, and the captain's acquired half plate. No faction-wide matching colors, helmets, shields, standard uniforms or trophies.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-warchief.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png"
+      ],
+      "file": "equipment/15-heavy-fighters-and-hired-blades.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c1583093-1698-458a-9740-09ec9bcb08f4.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3ecbd2a962965071431631721979a15ce8b3f63b9909bda7fc9060e73543eefc",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-warchief.png": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "16-woodland-travel-and-field-gear",
+      "title": "Woodland travel and field gear",
+      "sourceNames": [
+        "thornwarden-pathguard",
+        "wayfinder-druid",
+        "thornwarden-saboteur"
+      ],
+      "characters": [
+        "Thornwarden Pathguard",
+        "Wayfinder Druid",
+        "Thornwarden Saboteur"
+      ],
+      "items": [
+        [
+          "Simple leather jack",
+          "Wooden bow",
+          "Quiver with a few arrows"
+        ],
+        [
+          "Single-piece wool travel cloak",
+          "Plain walking staff",
+          "Small plain trail pouch"
+        ],
+        [
+          "Simple hooded field jacket",
+          "Small utility knife",
+          "Worn fingerless gloves"
+        ]
+      ],
+      "inferred": [
+        "Pathguard jack deliberately simplifies the source's numerous leather flaps.",
+        "Druid trail pouch is a new modest accessory proposal.",
+        "Saboteur utility knife is a new modest accessory proposal, not visible in the source."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 THORNWARDEN PATHGUARD. Top: simplify the orc archer's brown torso protection into ONE ordinary sleeveless leather jack, one-piece front panels, side seam and only two useful fastening straps over a glimpse of plain cloth. Keep its robust proportions and dark brown worn material. Intentionally REMOVE the repeated shingled leather/leaf shoulder strips from the source and do not replace them with more panels. No leaf-shaped armor, dangling layers, scales or busy decorative diagonal belts. Middle: the archer's modest wooden bow, its actual gently curved profile and wrapped central grip, complete intact bowstring meeting both tips; no metal fantasy recurve machinery. Bottom: his plain back quiver with three arrows, natural simple fletching; no leaves or ornaments.\nCENTRE COLUMN, reference 2 WAYFINDER DRUID. Top: the loose moss-olive WOOL travel cloak from his back, one continuous main fabric drape, modest attached hood, plain throat tie, visible textile folds not leather plates or a suit of leaves. Let worn hem edges show restrained use. Middle: his ordinary straight walking staff, natural wood, blunt worn end, no crystal, antler, glowing rune or sculpted animal head. Bottom: a small plain cloth trail pouch tied with cord, a deliberately modest NEW proposed accessory; do not claim it was visible in the source.\nRIGHT COLUMN, reference 3 THORNWARDEN SABOTEUR. Top: a simple short hooded dark umber field jacket based on her source garment, soft practical cloth body, minimal shoulder reinforcement, ordinary seams and one front fastening. No decorative leather flakes, layered skirt panels or buckles everywhere. Middle: one small unadorned utility knife with short straight steel blade, simple wood handle and plain sheath beside it; this is a NEW modest proposed tool/sidearm, no invented magic. Bottom: her pair of worn fingerless working gloves, clear simple leather construction with a single wrist closure, empty glove openings.\nThe point is varied useful woodland clothing and equipment, not a green uniform, costume of leaves, fantasy fetish leather, or an obligation for every forest traveler to wear armor. Retain textile, wood and ordinary metal, allowing the source's actual material variety.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-pathguard.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/wayfinder-druid.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png"
+      ],
+      "file": "equipment/16-woodland-travel-and-field-gear.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c3395dcd-ceeb-453d-9a09-b318b91bbe81.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "09a2ce6c2f59a818b8a708ca9bdad7cddb7a93cd6e21abff931189a083ceaeaf",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-pathguard.png": "295fdf3fc71b6351910ba65bd3f3ee5c5881a8b3906bd390a875a4ab9b0c7c3e",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/wayfinder-druid.png": "dcd309dfe988b2f50fa577b5d5ba06836f6f26f6a3e1efcfa3f5af12653ac12a",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    },
+    {
+      "key": "17-dominion-personal-kits",
+      "title": "Dominion belongings across different roles",
+      "sourceNames": [
+        "ashen-court-noble",
+        "ashen-court-bailiff",
+        "bone-harvester"
+      ],
+      "characters": [
+        "Ashen Court Noble",
+        "Ashen Court Bailiff",
+        "Bone Harvester"
+      ],
+      "items": [
+        [
+          "Tailored court overgown",
+          "Small court dagger",
+          "Long cloth gloves"
+        ],
+        [
+          "Plain working coat with leather shoulder yoke",
+          "Wooden baton",
+          "Ring of practical keys"
+        ],
+        [
+          "Worn hooded cloth robe",
+          "Short-handled sickle",
+          "Empty wicker carrying basket"
+        ]
+      ],
+      "inferred": [
+        "Court dagger is a new restrained accessory proposal; it is not visible in the noble portrait.",
+        "Unseen garment closures reconstructed simply.",
+        "These three personal kits do not define all Dominion military equipment."
+      ],
+      "prompt": "Use case: stylized-concept. Create a NEW original Breachline physical equipment and wardrobe reference board using the supplied EXISTING CHARACTER PAINTINGS as design sources. Landscape 1536x1024. This is a new equipment-only reference sheet, not an edit of the source paintings.\nMEDIUM: economical traditional oil/acrylic/gouache painted realism, clear brush shapes, believable weight and construction, selective material accents. Less fine surface detail than the old armored images. No photographic finish, glossy 3D, icons or schematic line art.\nPRESENTATION: flat warm off-white background, neutral soft even illumination, no scenery, ground, table, display rack, stands, people, faces, bodies, mannequin, limbs, hands, glowing effects or dramatic light. Each garment is empty, gently opened enough to understand its shape, with a visible hollow neckline and openings, no body inside. Keep garments naturally relaxed rather than a rigid invisible superhero pose.\nLAYOUT: exactly NINE separate equipment studies in THREE COLUMNS and THREE ROWS, with generous clean gutters, all objects whole inside the canvas. Each COLUMN belongs to one source character, as specified below. Top row is the three main garments/protective pieces, occupying about the upper half of the page. Middle row is the three weapons or tools, lower row the three small accessories. A pair of gloves/wraps or a quiver with arrows counts as one grouped study. The three columns must visibly differ in silhouette, protection, construction and materials. No text, captions, numbers, symbols, lines, borders, signatures or watermarks.\nLATEST CREATOR FEEDBACK: the previous matching faction kits were overdesigned and too prescriptive. Base these pieces on the actual character refs, with individual ownership rather than a uniform. Simple real-looking garment construction: few large cut panels, actual seams, useful closures, hardware only at load points. Do not stack layers of decorative leather plates, random straps, leaves or buckles. Worn and repaired where appropriate, but not all torn to ribbons. Do not make a regular uniform and merely dirty it. Full heavy armor is appropriate only where that particular source supports it. Preserve recognizable source cues while simplifying clutter. These are individual proposed options; no one kit defines an entire faction.\nREFERENCE POLICY: Reference image 1 belongs to LEFT column, image 2 to CENTRE, image 3 to RIGHT. Extract ONLY the specified garment and equipment forms. Do not import their pose, face, skin, environment, action, atmosphere or background. Where a source obscures part of an object, reconstruct the unseen part simply and coherently. Do not invent large decorative mechanisms or new faction badges. Specific new accessory proposals are allowed only as listed below.\nCOLUMN CONTENT:\nLEFT COLUMN, reference 1 ASHEN COURT NOBLE. Top: her tailored ash-grey and muted plum cloth overgown, sober fitted bodice, long broad sleeves and skirt, recognizably the same elegant cut with a few restrained silver-grey embroidered stem shapes at the upper chest; do not reproduce every embroidered detail or invent metal armor. Empty neck and cuffs, no torso. Middle: ONE small refined court dagger with narrow plain blade, modest straight guard, dark plum leather grip and undecorated silver pommel, sheath beside it; this is a NEW restrained possible sidearm, not visible in the portrait and not a faction standard. Bottom: her pair of long grey cloth gloves, natural fingers, small wrist seam, no rings or armor.\nCENTRE COLUMN, reference 2 ASHEN COURT BAILIFF. Top: his workaday charcoal-grey knee-length coat with a single brown leather shoulder yoke and modest padded collar, rolled cuffs showing muted violet lining. Straightforward tailoring, plain belt, minimal protection; no elite black lamellar harness, skulls or giant high collar. Middle: the plain turned dark wood baton carried at his belt, stout practical grip and rounded head, exact modest scale and style of the source. Bottom: a ring of THREE practical old iron keys, distinct plausible bits and simple bows, no giant magical key, words or heraldic symbols.\nRIGHT COLUMN, reference 3 BONE HARVESTER. Top: his worn hooded grey-violet cloth robe, one continuous robe and modest shoulder mantle, softly frayed edges, still a comprehensible sewn garment, not thirty floating scraps. Sparse faded hem edging from reference, no invented armor or antlers. Middle: his short-handled iron sickle, complete curved blade with a plain dark wood grip, restrained old metal. Bottom: his EMPTY rectangular woven carrying basket, two simple leather shoulder straps visible, no contents, bones or human remains.\nVisual variety matters: refined cloth, utilitarian working coat, and weathered ritual/labor clothing, all from individual source characters. A dark military kit can exist elsewhere but must not constrain these roles. No uniform matching black steel, compulsory skull emblems, purple glow, gothic props, dramatic candlelight or background scenes.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-noble.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-bailiff.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png"
+      ],
+      "file": "equipment/17-dominion-personal-kits.png",
+      "status": "new_character_based_proposal",
+      "design_slots": 9,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-dfce9f05-9cff-4739-94d6-deb464542a6e.png",
+      "generation_status": "generated_for_review",
+      "review_status": "awaiting_creator_review",
+      "active_reference": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f5025deac5679ef2e8b34324572d6511d102e9630a74c90ca45a57049ef25832",
+      "source_art_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-noble.png": "d633d23dbcdf574108f87300d2585cf20c4a6042c0772f7180e772b602e90adb",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ashen-court-bailiff.png": "604ebccc1179664ed62a1295be49bbb7df978dc5d59872672248592b90c8162a",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png": "a248eddc5c103db0f8d2a57e7175115bb7ef3facfc0c6f3a54bc6b3254cd7571"
+      },
+      "visual_review": "Reviewed: nine clear design groups, three character columns, no bodies or scenery; simpler construction and distinct source-based roles."
+    }
+  ],
+  "inventory_updated": "2026-11-06",
+  "historical_generated_sheet_count": 17,
+  "retained_equipment_slots": 24,
+  "new_equipment_proposal_groups": 36,
+  "current_archive": "../breachline-neutral-reference-library-2026-11-06-reviewed-v2.zip",
+  "reference_usage_guidance": {
+    "purpose": "Initial design references that support continued invention, not a closed catalog.",
+    "new_characters": "Create new faces, builds, outfits, armor and weapons beyond these sheets while retaining species-defining anatomy, art direction and setting coherence.",
+    "exact_reuse": "Reserve identity and signature-item matching for the same established character or an explicit reuse request; do not require it for new characters.",
+    "variation": "Vary silhouette, cut, proportion, materials, craft, condition, role and taste; review against recent art for repeated faces and kit. Recoloring and small accessories alone are insufficient.",
+    "construction": "Keep construction coherent and purposeful. Variety need not add layers, straps or ornament.",
+    "scope": "No sample defines an entire people or faction. Historical prompts record sheet generation and do not limit future art.",
+    "updated": "2026-11-06"
+  }
+}

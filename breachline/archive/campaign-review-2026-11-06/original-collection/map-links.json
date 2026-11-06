@@ -1,0 +1,43 @@
+{
+  "status": "proposed_scene_links_not_fixed_geography",
+  "image": "02-river-road-map.png",
+  "coordinates": "percentage from upper-left",
+  "sites": [
+    {
+      "asset": 3,
+      "label": "Oath Terraces",
+      "x": 19,
+      "y": 64
+    },
+    {
+      "asset": 5,
+      "label": "Ambrel",
+      "x": 62,
+      "y": 66
+    },
+    {
+      "asset": 7,
+      "label": "Ashen Court",
+      "x": 86,
+      "y": 20
+    },
+    {
+      "asset": 9,
+      "label": "Cinder moot",
+      "x": 16,
+      "y": 27
+    },
+    {
+      "asset": 11,
+      "label": "Thornwardens",
+      "x": 82,
+      "y": 45
+    },
+    {
+      "asset": 13,
+      "label": "Ferry",
+      "x": 45,
+      "y": 79
+    }
+  ]
+}
