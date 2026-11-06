@@ -2,6 +2,8 @@
 (function () {
   var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null;
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
+  // Who plays the opponent: the scripted bot, or Claude at a difficulty level from guides.js.
+  var oppPlayer = 'bot', debugOn = false;
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
@@ -87,6 +89,11 @@
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
+  // The Claude opponent needs the page to be running inside Claude. Anywhere else, only the scripted bot is on offer.
+  var sample = null, plan = null, thinking = null, modelOff = false, lastThought = null;
+  if (window.claude && window.claude.use) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
+  function refreshStart() { if (!$('start').hidden) renderStart(); }
+
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
   function unitById(uid) { return S.units.filter(function (u) { return u.uid === uid; })[0]; }
@@ -118,7 +125,7 @@
     return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
       (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
       '<span class="crest ' + main + '">' + sym(main) + '</span>' +
-      '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main]) + '</small></span>' +
+      '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : '')) + '</small></span>' +
       '<span class="life" title="Summoner life"><strong>' + p.life + '</strong><i><b style="width:' + Math.max(0, Math.min(100, Math.round(p.life / E.START_LIFE * 100))) + '%"></b></i></span>' +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
       (targetable ? '<span class="strike">Strike summoner</span>' : '') +
@@ -266,7 +273,7 @@
   // The latest log line stays beside the prompt, so you can follow the game with the log closed.
   function promptHtml(text) {
     var last = S.log[S.log.length - 1];
-    return '<span class="prompt"><span class="ask">' + text + '</span>' + (last ? '<span class="ticker">' + last.text + '</span>' : '') + '</span>';
+    return '<span class="prompt"><span class="ask">' + text + '</span>' + (last ? '<span class="ticker">' + esc(last.text) + '</span>' : '') + '</span>';
   }
 
   function phaseHtml() {
@@ -296,6 +303,7 @@
     var you = S.players[HUMAN];
     if (S.winner !== null) return promptHtml('The battle is over.');
     if (actor() !== HUMAN) {
+      if (thinking) return promptHtml('Claude is thinking.') + '<span class="btns">' + btn('Stop waiting', { ui: 'stopModel' }) + '</span>';
       return promptHtml(S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.');
     }
     if (S.phase === 'opening') {
@@ -410,10 +418,110 @@
   function schedule() {
     if (S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
+    if (modelOn()) modelStep(token);
+    else playNext(token, botMove);
+  }
+
+  function botMove() { return Bot.choose(E.viewFor(S, BOT), Math.random); }
+  function planMove() {
+    var dropped = [], view = E.viewFor(S, BOT), m = AI.nextMove(S, plan.queue, dropped);
+    dropped.forEach(function (d) { Debug.note('Dropped a planned move that is no longer legal: ' + AI.describe(view, d)); });
+    return m;
+  }
+  function playNext(token, pick) {
     setTimeout(function () {
       if (token !== runToken || S.winner !== null || actor() !== BOT) return;
-      apply(Bot.choose(S, Math.random));
+      apply(pick());
     }, BOT_DELAY);
+  }
+
+  function modelOn() { return oppPlayer !== 'bot' && !!sample && !modelOff; }
+
+  // The model makes one call for each of its turns, then the plan plays out a move at a time.
+  // Opening hands and responses are one call each. Any failure hands that decision to the scripted bot, so a game never stalls.
+  function modelStep(token) {
+    var view = E.viewFor(S, BOT);
+    if (S.phase === 'opening' || S.pending) {
+      if (E.legalMoves(view).length < 2) return playNext(token, botMove);
+      return askModel(token, 'Decision', AI.decisionPrompt(view, oppPlayer, debugOn), AI.CALLS.decision, function (reply, entry) {
+        var r = AI.readChoice(view, reply);
+        if (r) {
+          Debug.read(entry, r.say, r.why, [AI.describe(view, r.move)]);
+          speak(r.say);
+          apply(r.move);
+        }
+        return r;
+      });
+    }
+    if (plan && plan.turn === S.turn) return playNext(token, plan.scripted ? botMove : planMove);
+    if (!AI.hasChoice(view)) {
+      plan = { turn: S.turn, queue: [] };
+      return playNext(token, planMove);
+    }
+    askModel(token, 'Turn plan', AI.turnPrompt(view, oppPlayer, debugOn), AI.CALLS.turn, function (reply, entry) {
+      var r = AI.readPlan(view, reply);
+      if (r) {
+        Debug.read(entry, r.say, r.why, r.queue.map(function (m) { return AI.describe(view, m); }));
+        plan = { turn: S.turn, queue: r.queue };
+        speak(r.say);
+        schedule();
+      }
+      return r;
+    });
+  }
+
+  function askModel(token, kind, prompt, call, use) {
+    var began = Date.now(), entry = Debug.begin(S.turn, kind, prompt, call);
+    thinking = new AbortController();
+    $('actions').innerHTML = actionsHtml([]);
+    AI.ask(sample, prompt, call, thinking.signal).then(function (answer) {
+      if (token !== runToken) return;
+      thinking = null;
+      lastThought = Math.round((Date.now() - began) / 1000);
+      Debug.answer(entry, answer);
+      if (!use(answer.reply, entry)) { Debug.fail(entry, 'unusable'); modelFailed(token, 'unusable'); }
+    }, function (e) {
+      if (token !== runToken) return;
+      thinking = null;
+      Debug.fail(entry, e && e.code);
+      modelFailed(token, e && e.code);
+    });
+  }
+
+  function modelFailed(token, code) {
+    if (AI.FATAL[code]) {
+      modelOff = true;
+      addChat(code === 'rate_limited' ? 'Claude has reached a usage limit, so the scripted bot finishes this game.' : "Claude isn't available here, so the scripted bot finishes this game.", true);
+    } else addChat(code === 'cancelled' ? 'You stopped waiting, so the scripted bot plays this decision.' : "Claude's answer wasn't usable, so the scripted bot plays this decision.", true);
+    if (S.phase !== 'opening' && !S.pending) plan = { turn: S.turn, scripted: true };
+    Debug.note('The scripted bot played this decision instead of Claude.');
+    render();
+    playNext(token, botMove);
+  }
+
+  // Model words go in as plain text, never as HTML.
+  function speak(text) {
+    if (!text) return;
+    $('speech').textContent = text;
+    $('speech').hidden = false;
+    addChat(text);
+  }
+  function addChat(text, system) {
+    var line = document.createElement('div');
+    line.textContent = text;
+    if (system) line.className = 'sys';
+    else if (lastThought !== null) {
+      var took = document.createElement('small');
+      took.textContent = ' ' + lastThought + 's';
+      line.appendChild(took);
+    }
+    $('chat').appendChild(line);
+    $('chat').scrollTop = $('chat').scrollHeight;
+    $('chatBox').hidden = false;
+  }
+  function stopThinking() {
+    if (thinking) thinking.abort();
+    thinking = null;
   }
 
   function clickTile(el) {
@@ -462,6 +570,7 @@
     if (d.ui === 'new') return start();
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
+    if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
     if (d.ui === 'ability') sel.ability = true;
     if (d.ui === 'noAbility') sel.ability = false;
@@ -498,14 +607,21 @@
       '<span class="ds">' + (problems.length ? esc(problems[0]) : d.starter ? DECK_NOTES[d.id] : 'One of your decks.') + '</span></button>';
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
+  function playerHtml(key, label, blurb, enabled) {
+    return '<button type="button" class="who-plays" data-player="' + key + '" aria-pressed="' + (oppPlayer === key) + '"' + (enabled ? '' : ' disabled') + '><b>' + label + '</b><span>' + blurb + '</span></button>';
+  }
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
     $('oppDecks').innerHTML = all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
+    $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
+      ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
+    $('playerNote').textContent = sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
   }
   // The start screen is the exhibition setup. A battle in progress waits here until a new one begins.
   function showStart(mine) {
     runToken++;
+    stopThinking();
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var newest = Decks.saved().filter(playable)[0];
     picks = { mine: ready(mine) || ready(last.mine) || (newest ? newest.id : 'white'), opp: ready(last.opp) || 'red' };
@@ -517,6 +633,7 @@
   }
   function toMenu() {
     runToken++;
+    stopThinking();
     $('app').hidden = true;
     $('start').hidden = true;
     Screens.menu();
@@ -528,6 +645,9 @@
   $('start').addEventListener('click', function (e) {
     var b = e.target.closest('[data-deck]');
     if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
+    var who = e.target.closest('[data-player]');
+    if (who) { oppPlayer = who.dataset.player; return renderStart(); }
+    if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
     if (e.target.closest('#begin')) {
       Decks.setPicks(picks);
       decks = [forGame(picks.mine), forGame(picks.opp)];
@@ -539,11 +659,18 @@
 
   function start(state) {
     runToken++;
+    stopThinking();
+    plan = null; modelOff = false; lastThought = null;
+    $('chat').textContent = '';
+    $('chatBox').hidden = true;
+    $('speech').hidden = true;
+    Debug.reset();
     sel = null; flash = null;
     $('start').hidden = true;
     $('app').hidden = false;
     lastTurn = null;
     $('turnBanner').innerHTML = '';
+    $('debugBtn').hidden = !(debugOn && modelOn());
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
     if (opening) showCard(opening.c, 'In your hand');
@@ -563,5 +690,5 @@
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
-  window.__game = { get state() { return S; }, load: start };
+  window.__game = { get state() { return S; }, load: start, setSample: function (fn) { sample = fn; refreshStart(); }, setPlayer: function (key) { oppPlayer = key; refreshStart(); }, setDebug: function (on) { debugOn = on; } };
 })();

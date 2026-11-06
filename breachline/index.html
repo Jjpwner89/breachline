@@ -206,6 +206,30 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .drawer.open { transform: none; visibility: visible; }
 .drawer h2 { font-size: 17px; font-weight: 500; letter-spacing: .03em; color: var(--gold-pale); }
 #log { flex: 1; min-height: 0; overflow-y: auto; margin-top: 6px; font-size: 13.5px; line-height: 1.28; display: flex; flex-direction: column; gap: 3px; }
+#chatBox { flex: none; margin-bottom: 8px; }
+#chatBox[hidden] { display: none; }
+#chat { max-height: 26dvh; overflow-y: auto; margin-top: 4px; font: italic 14px/1.26 var(--serif); color: var(--ink); display: flex; flex-direction: column; gap: 4px; }
+#chat small { font: 400 11.5px var(--body); color: var(--muted); }
+#chat .sys { font: 400 13px/1.25 var(--body); color: var(--muted); }
+.speech { flex: 0 1 30%; min-width: 0; align-self: center; margin: 0; padding: 5px 11px; font: italic 15px/1.2 var(--serif); color: var(--card-ink); background: var(--parchment) var(--vellum); border: 1px solid var(--gold); border-radius: 5px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.speech[hidden] { display: none; }
+.btn[hidden] { display: none; }
+.drawer.debug { width: min(560px, calc(100% - 24px)); }
+#debugSum { flex: none; margin: 4px 0 8px; font-size: 13px; line-height: 1.3; color: var(--muted); }
+#debugLog { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; line-height: 1.3; }
+.dbg { flex: none; padding: 7px 9px; background: rgba(12, 8, 4, .5); border: 1px solid var(--edge); border-radius: 4px; }
+.dbg.bad { border-color: var(--danger); }
+.dbg b { color: var(--gold-pale); }
+.dbg small { display: block; color: var(--muted); }
+.dbg .said { font: italic 14px/1.26 var(--serif); margin-top: 4px; }
+.dbg .why { margin-top: 4px; }
+.dbg ol { margin: 4px 0 0; padding-left: 20px; }
+.dbg details { margin-top: 4px; color: var(--muted); }
+.dbg summary { cursor: pointer; }
+.dbg pre { margin: 4px 0 0; max-height: 260px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.3; color: var(--ink); }
+.dbg.note { font-size: 13px; color: var(--muted); }
+.debug-opt { display: flex; align-items: flex-start; gap: 6px; font-size: 13.5px; line-height: 1.25; color: var(--muted); cursor: pointer; }
+.debug-opt input { flex: none; margin: 2px 0 0; accent-color: var(--gold); }
 #log div { color: var(--muted); }
 #log div:last-child { color: var(--ink); }
 .drawer ul { margin: 8px 0 0; padding-left: 16px; overflow-y: auto; font-size: 14px; line-height: 1.3; display: grid; gap: 5px; color: var(--ink); }
@@ -259,6 +283,14 @@ dialog .btns { justify-content: flex-start; }
 .deck .ty svg { width: 13px; height: 13px; fill: var(--band); stroke: var(--band); }
 .deck .ds { padding: 4px 8px 8px; font: 400 14px/1.22 var(--serif); }
 .decks.small .deck .pic { aspect-ratio: 16 / 7; }
+.players { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.who-plays { display: flex; flex-direction: column; gap: 2px; padding: 7px 10px; text-align: left; color: var(--ink); background: linear-gradient(#3d2e1a, #2a1f11); border: 2px solid var(--edge); border-radius: 5px; }
+.who-plays b { font: 700 16px/1.15 var(--display); color: var(--gold-pale); }
+.who-plays span { font-size: 13.5px; line-height: 1.2; color: var(--muted); }
+.who-plays:hover:not([disabled]) { border-color: var(--gold); }
+.who-plays[aria-pressed="true"] { border-color: var(--gold-pale); box-shadow: 0 0 0 1px var(--gold-pale), 0 0 12px var(--gold); }
+.who-plays[disabled] { opacity: .5; cursor: not-allowed; }
+.player-note { margin: 0; font-size: 13.5px; color: var(--muted); }
 .decks.small .ty, .decks.small .ds { display: none; }
 .decks.small .deck .nm { font-size: 14.5px; }
 
@@ -302,6 +334,8 @@ dialog .btns { justify-content: flex-start; }
   .inspect.open .slot { width: min(100%, 360px); }
   #peekBtn { display: block; position: fixed; right: calc(12px + env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 10; box-shadow: 0 2px 10px rgba(0, 0, 0, .6); }
   .decks { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .players { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .speech { display: none; }
   #begin { position: sticky; bottom: 8px; flex: none; }
   .plate .float { left: 50%; }
 }
@@ -332,6 +366,7 @@ dialog .btns { justify-content: flex-start; }
   </div>
   <div class="picker"><h2>Your deck</h2><div class="decks" id="myDecks"></div></div>
   <div class="picker"><h2>Your opponent</h2><div class="decks small" id="oppDecks"></div></div>
+  <div class="picker"><h2>Who plays your opponent</h2><div class="players" id="oppPlayer"></div><p class="player-note" id="playerNote"></p><label class="debug-opt"><input type="checkbox" id="debugToggle"> Debug mode: see what Claude was sent, its explanation of each decision and its plan. It asks Claude for a little more text each turn, and it shows you Claude's hand.</label></div>
   <button class="btn primary big" id="begin" type="button">Begin battle</button>
 </section>
 
@@ -339,14 +374,16 @@ dialog .btns { justify-content: flex-start; }
   <header class="topbar">
     <h1 class="sr">Breachline</h1>
     <div id="themStrip"></div>
+    <p class="speech" id="speech" aria-live="polite" hidden></p>
     <div class="tools">
       <button class="btn" id="logBtn" type="button" data-panel="logPanel" aria-expanded="false">Log</button>
       <button class="btn" type="button" data-panel="rulesPanel" aria-expanded="false">Rules</button>
+      <button class="btn" id="debugBtn" type="button" data-panel="debugPanel" aria-expanded="false" hidden>Debug</button>
       <button class="btn" id="menuBtn" type="button">Menu</button>
     </div>
   </header>
   <section class="arena field" aria-label="Battlefield">
-    <aside class="drawer log" id="logPanel" aria-label="Battle log"><h2>Battle log</h2><div id="log"></div></aside>
+    <aside class="drawer log" id="logPanel" aria-label="Battle log"><div id="chatBox" hidden><h2>Across the table</h2><div id="chat"></div></div><h2>Battle log</h2><div id="log"></div></aside>
     <div class="board"><div id="grid"></div></div>
     <div class="inspect" id="inspect" tabindex="-1" aria-label="Card close-up"></div>
     <aside class="drawer" id="rulesPanel" aria-label="Working rules">
@@ -362,6 +399,11 @@ dialog .btns { justify-content: flex-start; }
         <li>Mana you leave unspent pays for instants on the enemy turn.</li>
         <li>Reduce the enemy summoner from 150 to 0.</li>
       </ul>
+    </aside>
+    <aside class="drawer debug" id="debugPanel" aria-label="Claude debug">
+      <h2>Debug</h2>
+      <p id="debugSum"></p>
+      <div id="debugLog"></div>
     </aside>
     <div id="turnBanner" aria-hidden="true"></div>
     <div id="result"></div>
@@ -390,6 +432,9 @@ dialog .btns { justify-content: flex-start; }
 
 <script src="engine.js"></script>
 <script src="bot.js"></script>
+<script src="guides.js"></script>
+<script src="ai.js"></script>
+<script src="debug.js"></script>
 <script src="decks.js"></script>
 <script src="screens.js"></script>
 <script src="ui.js"></script>

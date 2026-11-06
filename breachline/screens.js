@@ -58,7 +58,7 @@ var Screens = (function () {
     }
     show('<main class="menu"><div class="mcol"><h1>Breachline</h1><nav class="mlist" aria-label="Main menu">' +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
-      item('exhibition', 'Exhibition', 'Any deck against the scripted opponent.', !cont) +
+      item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.', !cont) +
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Every card is open.') +
       later('Campaign', 'Coming later. Win battles and choose cards to keep.') +
       later('Multiplayer', 'Coming later. Collect cards from packs.') +

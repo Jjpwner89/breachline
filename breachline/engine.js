@@ -618,8 +618,23 @@ var Engine = (function () {
     return s;
   }
 
+  // What one player is allowed to know: no shuffle seed, no deck order and no enemy hand, only their sizes.
+  // Anything that plays on a player's behalf starts from this, never from the full state.
+  function viewFor(prev, pi) {
+    var v = JSON.parse(JSON.stringify(prev));
+    delete v.seed;
+    v.viewer = pi;
+    v.players.forEach(function (p, idx) {
+      p.deckCount = p.deck.length;
+      p.handCount = p.hand.length;
+      p.deck = [];
+      if (idx !== pi) p.hand = [];
+    });
+    return v;
+  }
+
   return {
-    ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS,
+    ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
     DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
     attackOf: attackOf, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
