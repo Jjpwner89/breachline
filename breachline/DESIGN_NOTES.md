@@ -30,6 +30,8 @@ Art direction and all art feedback live in the project's `art-direction` skill. 
 
 On 2026-11-05 three concept paintings in `breachline/art/concepts/` became cards at the user's request: The Still Flame (Vigil enchantment), Ambrel lampwright (Gnosis unit, painting titled Light without an answer) and Across the silence (neutral draw spell). The paintings remain concept pieces, so their details don't add to canon. Their proposed flavour lines are in `breachline/FLAVOUR.md`, off the cards until approved. After adding them, bot simulations showed Genesis at 44 of 64 wins and Vigil at 23 of 64.
 
+A second batch of ten concept art cards was added on 2026-11-05, listed in `breachline/NEW_CARDS.md`. The user chose to make the Spindlejack, alderkin waterkeeper and Dawnsail paintings spells so those creatures don't fight. The four Genesis cards stay out of The Elder Herd until its win rate comes down.
+
 On 2026-11-05 the user replaced "The Brass Choir" with "The Artificers" as the Gnosis makers faction, and chose "Ambrel lampwright" for that card, which makes Ambrel a city. The Across the silence flavour line is approved and on the card.
 
 **Why:** Wants a game unique to them that an AI model (ideally Haiku, probably Sonnet) can play from the rules and general strategies, with a small on-screen chat showing its professed thoughts rather than its full reasoning.

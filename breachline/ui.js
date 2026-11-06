@@ -33,7 +33,9 @@
     thrall: 'gravebound-thrall', harvester: 'bone-harvester', noble: 'ashen-court-noble', vashkar: 'vashkar', raise: 'raise-the-dead', warrant: 'death-warrant',
     sapling: 'walking-sapling', saboteur: 'thornwarden-saboteur', owl: 'great-owl', wayfinder: 'wayfinder-druid', bull: 'elder-herd-bull', shifting: 'shifting-forest',
     youngsummoner: 'young-summoner',
-    stillflame: 'the-still-flame', lampwright: 'light-without-an-answer', across: 'across-the-silence'
+    stillflame: 'the-still-flame', lampwright: 'light-without-an-answer', across: 'across-the-silence',
+    shelter: 'alderkin-winter-shelter', marble: 'overgrown-ruin-vignette', dawnsails: 'dawnsails-over-the-harvest', raincup: 'raincup-at-first-light', mending: 'spindlejack-mending-the-sail',
+    channel: 'alderkin-waterkeeper', passage: 'dawnsail-passage', slateprowler: 'slateprowler-on-the-descent', reedcrown: 'reedcrown-grazer', coalback: 'coalback-forager'
   };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
   var FLAVOUR = {
@@ -180,6 +182,11 @@
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
       else if (m.type === 'attack') marks.units[m.target] = 't-attack';
       else if (m.type === 'attackSummoner') marks.summoner = true;
+      else if (m.type === 'cast' && m.r !== undefined) {
+        if (!sel.castUnit) marks.units[m.target] = 't-buff';
+        else if (m.target === sel.castUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
+      }
+      else if (m.type === 'cast' && m.target) marks.units[m.target] = 't-buff';
       else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 || cardOf(sel.id).allyOnly ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
@@ -311,8 +318,8 @@
       if (thinking) return promptHtml('Claude is thinking.') + '<span class="btns">' + btn('Stop waiting', { ui: 'stopModel' }) + '</span>';
       return promptHtml(S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.');
     }
+    if (you.toBottom) return promptHtml('Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.');
     if (S.phase === 'opening') {
-      if (you.toBottom) return promptHtml('Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.');
       var redraw = moves.some(function (m) { return m.type === 'redraw'; });
       var costNote = you.redraws ? ' Keeping this hand means putting ' + (you.redraws > 1 ? you.redraws + ' cards' : '1 card') + ' on the bottom of your deck.' : '';
       return promptHtml((redraw ? 'Keep this hand, or shuffle it back and draw a new one? Each redraw leaves you one card fewer.' : 'This is your last redraw.') + costNote) + '<span class="btns">' +
@@ -323,7 +330,7 @@
       if (att) {
         var a = unitById(att.attacker);
         var target = att.summoner !== undefined ? 'you' : E.CARDS[unitById(att.targetUid).cardId].name;
-        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + E.attackOf(S, a) + '. Respond?';
+        text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + (att.summoner !== undefined ? E.attackOf(S, a) : E.attackAgainst(S, a, unitById(att.targetUid))) + '. Respond?';
       } else text = 'The enemy turn is ending. Use an instant?';
       var opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) { return btn(moveLabel(m), { move: m }); }).join('');
       return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
@@ -336,12 +343,12 @@
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
         else if (place) hint = 'Choose a highlighted tile in your back row.';
         else if (ench) hint = 'Choose a unit to enchant.';
-        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.draw ? 'Cast this spell.' : 'Choose a unit to return.';
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
         else if (c.type !== 'land') hint = 'Not enough mana to play this now.';
         else hint = you.landDropped ? 'You already played a land this turn.' : 'Play this land.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
-          if (m.type === 'cast') {
+          if (m.type === 'cast' && !m.target) {
             var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
             out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : 'Cast', { move: m }, true));
           }
@@ -412,7 +419,7 @@
         revealPeek(2200);
       }
     }
-    if (m.type === 'summon' || m.type === 'move') flash = [m.r, m.c]; else flash = null;
+    if (m.type === 'summon' || m.type === 'move' || m.r !== undefined) flash = [m.r, m.c]; else flash = null;
     S = E.applyMove(S, m);
     if (chapterBattle) {
       if (S.winner !== null) Campaign.finish(S.winner);
@@ -450,7 +457,7 @@
   // Opening hands and responses are one call each. Any failure hands that decision to the scripted bot, so a game never stalls.
   function modelStep(token) {
     var view = E.viewFor(S, BOT);
-    if (S.phase === 'opening' || S.pending) {
+    if (S.phase === 'opening' || S.pending || S.players[BOT].toBottom) {
       if (E.legalMoves(view).length < 2) return playNext(token, botMove);
       return askModel(token, 'Decision', AI.decisionPrompt(view, oppPlayer, debugOn), AI.CALLS.decision, function (reply, entry) {
         var r = AI.readChoice(view, reply);
@@ -538,12 +545,14 @@
     var u = S.units.filter(function (x) { return x.r === r && x.c === c; })[0], sm = selectedMoves(moves);
     var hit = sm.filter(function (m) {
       if (m.type === 'summon' || (m.type === 'move' && !sel.ability)) return m.r === r && m.c === c;
+      if (m.type === 'cast' && m.r !== undefined) return m.target === sel.castUnit && m.r === r && m.c === c;
       if (!u || m.target !== u.uid) return false;
-      if (m.type === 'enchant' || m.type === 'attack') return true;
+      if (m.type === 'enchant' || m.type === 'attack' || m.type === 'cast') return true;
       return m.type === 'ability' && sel.ability;
     });
     if (sel && sel.ability) hit = hit.filter(function (m) { return m.type === 'ability'; });
     if (hit.length) return apply(hit[0]);
+    if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && S.phase === 'command') { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }
   }
@@ -556,7 +565,7 @@
     var t = e.target.closest('.card');
     if (!t || S.winner !== null || actor() !== HUMAN || S.pending) return;
     var id = +t.dataset.card;
-    if (S.phase === 'opening') {
+    if (S.phase === 'opening' || S.players[HUMAN].toBottom) {
       var bottom = humanMoves().filter(function (m) { return m.type === 'bottomCard' && m.card === id; })[0];
       if (bottom) apply(bottom);
       return;

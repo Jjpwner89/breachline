@@ -155,9 +155,18 @@ var AI = (function () {
     lines.push('Land drop: ' + (p.landDropped && !(p.extraLands > 0) ? 'already used this turn.' : 'available.'));
     lines.push('Free back-row tiles for new units: row ' + E.backRow(me) + ', columns ' + (free.length ? free.join(', ') : 'none') + '.');
     var cast = E.legalMoves(v).filter(function (m) { return m.type === 'enchant' || m.type === 'cast'; });
+    var passage = {};
     cast.forEach(function (m) {
       var c = card(p.hand.filter(function (i) { return i.id === m.card; })[0].c), extra;
+      // Dawnsail passage has too many unit and tile pairs to list, so it gets one line.
+      if (m.type === 'cast' && m.r !== undefined) {
+        if (passage[m.card]) return;
+        passage[m.card] = true;
+        lines.push('Cast ' + c.name + ' on one of your units, to any free tile: {"type":"cast","card":' + m.card + ',"target":UNIT,"r":ROW,"c":COLUMN}');
+        return;
+      }
       if (m.type === 'enchant') extra = 'on ' + named(v, unitBy(v, m.target)) + ' {"type":"enchant","card":' + m.card + ',"target":' + m.target + '}';
+      else if (m.target) extra = 'on ' + named(v, unitBy(v, m.target)) + ' {"type":"cast","card":' + m.card + ',"target":' + m.target + '}';
       else if (m.raise) extra = 'returning ' + card(p.discard.filter(function (d) { return d.id === m.raise; })[0].c).name + ' {"type":"cast","card":' + m.card + ',"raise":' + m.raise + '}';
       else extra = '{"type":"cast","card":' + m.card + '}';
       lines.push('Cast ' + c.name + ' ' + extra);
@@ -204,10 +213,11 @@ var AI = (function () {
 
   function decisionPrompt(v, level, debug) {
     var moves = E.legalMoves(v), ask, pd = v.pending;
-    if (v.phase === 'opening') ask = v.players[v.viewer].toBottom ? 'Choose a card to put on the bottom of your deck.' : 'Choose whether to keep your opening hand.';
+    if (v.players[v.viewer].toBottom) ask = 'Choose a card to put on the bottom of your deck.';
+    else if (v.phase === 'opening') ask = 'Choose whether to keep your opening hand.';
     else if (pd && pd.attack) {
       var a = unitBy(v, pd.attack.attacker);
-      ask = named(v, a) + ' is attacking ' + (pd.attack.summoner !== undefined ? 'you, the summoner,' : named(v, unitBy(v, pd.attack.targetUid))) + ' for ' + E.attackOf(v, a) + '. Choose whether to respond.';
+      ask = named(v, a) + ' is attacking ' + (pd.attack.summoner !== undefined ? 'you, the summoner,' : named(v, unitBy(v, pd.attack.targetUid))) + ' for ' + (pd.attack.summoner !== undefined ? E.attackOf(v, a) : E.attackAgainst(v, a, unitBy(v, pd.attack.targetUid))) + '. Choose whether to respond.';
     } else ask = 'The enemy turn is ending. Choose whether to use an instant.';
     return [
       INTRO,
@@ -250,7 +260,7 @@ var AI = (function () {
       case 'playLand': return 'Play land: ' + name;
       case 'summon': return 'Summon ' + name + ' at ' + at;
       case 'enchant': return 'Cast ' + name + ' on ' + (t ? named(v, t) : 'unit ' + m.target);
-      case 'cast': return 'Cast ' + name;
+      case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' to ' + at : '');
       case 'move': return who + ' moves to ' + at;
       case 'attack': return who + ' attacks ' + (t ? named(v, t) : 'unit ' + m.target);
       case 'attackSummoner': return who + ' attacks the enemy summoner';
@@ -267,6 +277,8 @@ var AI = (function () {
   // The next move of a planned turn. A planned move that has stopped being legal, say because an instant killed the unit, is dropped.
   function nextMove(s, queue, dropped) {
     var moves = E.legalMoves(s);
+    // A card to put on the bottom comes up mid-plan. The rest of the plan waits for it.
+    if (moves[0] && moves[0].type === 'bottomCard') return moves[0];
     while (queue.length) {
       var hit = matchMove(moves, queue[0]);
       if (hit) { queue.shift(); return hit; }

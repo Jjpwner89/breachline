@@ -7,12 +7,12 @@ var Bot = (function () {
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
   function attackScore(s, u, t, extra) {
-    var amt = E.attackOf(s, u), score = 0;
+    var amt = E.attackAgainst(s, u, t), score = 0;
     if (amt >= t.hp) score += worth(t) + 30;
     else score += worth(t) * (amt / t.maxHp);
     if (extra) score += amt >= extra.hp ? worth(extra) + 30 : worth(extra) * (amt / extra.maxHp);
     if (amt < t.hp && dist(u, t) <= E.range(t)) {
-      var back = E.attackOf(s, t);
+      var back = E.attackAgainst(s, t, u);
       score -= back >= u.hp ? worth(u) + 10 : worth(u) * (back / u.maxHp);
     }
     return score + 10;
@@ -31,7 +31,7 @@ var Bot = (function () {
       case 'bottomCard':
         c = E.CARDS[handCard(p, m.card).c];
         var lands = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
-        if (c.type === 'land') return lands > 2 ? 100 : -100;
+        if (c.type === 'land') return lands > 2 || p.lands.length >= 6 ? 100 : -100;
         return c.cost;
       case 'summon':
         c = E.CARDS[handCard(p, m.card).c];
@@ -40,12 +40,37 @@ var Bot = (function () {
         s.units.forEach(function (e) { if (e.owner === foe) pull -= Math.abs(e.c - m.c); });
         return 100 + c.cost * 20 + pull - Math.abs(m.c - 2);
       case 'cast':
-        if (!m.raise) return 100 + E.CARDS[handCard(p, m.card).c].cost * 20;
+        c = E.CARDS[handCard(p, m.card).c];
+        if (c.extraLand) {
+          var spare = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
+          return !p.extraLands && spare >= (p.landDropped ? 1 : 2) ? 900 : -100;
+        }
+        if (c.cleanse) {
+          t = unitById(s, m.target);
+          var harmful = t.enchants.filter(function (e) { return E.CARDS[e.c].enemyOnly || E.CARDS[e.c].atkBonus < 0; });
+          if (t.owner === foe) return !harmful.length ? 30 + worth(t) / 4 : -100;
+          if (!harmful.length) return -100;
+          return harmful.some(function (e) { return E.CARDS[e.c].warrant; }) ? 60 + worth(t) : 40 + worth(t) / 5;
+        }
+        if (c.mend) {
+          t = unitById(s, m.target);
+          return t.maxHp - t.hp >= 15 ? 30 + Math.min(c.mend, t.maxHp - t.hp) + worth(t) / 10 : -1;
+        }
+        if (c.fortify) {
+          var mine = s.units.filter(function (a) { return a.owner === pi; }).length;
+          return mine >= 2 ? 40 + mine * 25 : -1;
+        }
+        if (c.passage) {
+          t = unitById(s, m.target);
+          var open = !s.units.some(function (e) { return e.owner === foe && dist({ r: m.r, c: m.c }, e) === 1; });
+          return m.r === E.backRow(foe) && open && E.attackOf(s, t) >= 25 ? 55 + E.attackOf(s, t) : -1;
+        }
+        if (!m.raise) return 100 + c.cost * 20;
         var raised = p.discard.filter(function (d) { return d.id === m.raise; })[0];
         return 100 + E.CARDS[raised.c].cost * 20;
       case 'enchant':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
-        if (c.regrow) return 40 + worth(t) / 5;
+        if (c.allyOnly) return 40 + worth(t) / 5;
         if (c.warrant) return worth(t) >= 80 ? 40 + worth(t) : -100;
         if (c.atkBonus > 0) return t.owner === pi ? 40 + worth(t) / 5 : -100;
         return t.owner === foe && E.attackOf(s, t) >= 30 ? 40 + E.attackOf(s, t) / 5 : -100;
@@ -61,6 +86,8 @@ var Bot = (function () {
         if (key === 'rally') return 60;
         if (key === 'healall') return 70;
         if (key === 'study') return 70;
+        if (key === 'sift') return 55;
+        if (key === 'forage') return 50;
         if (key === 'orders') return 15;
         if (key === 'lens') {
           t = unitById(s, m.target);
@@ -84,10 +111,10 @@ var Bot = (function () {
       case 'respond':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         var att = s.pending.attack;
-        if (c.dodge) return E.attackOf(s, unitById(s, att.attacker)) >= t.hp ? worth(t) : -1;
+        if (c.dodge) return E.attackAgainst(s, unitById(s, att.attacker), t) >= t.hp ? worth(t) : -1;
         if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
         if (c.prevent) {
-          var hit = E.attackOf(s, unitById(s, att.attacker));
+          var hit = E.attackAgainst(s, unitById(s, att.attacker), t);
           return hit >= t.hp && hit - c.prevent < t.hp ? worth(t) : -1;
         }
         if (c.damage >= t.hp) return worth(t) + (att && att.attacker === t.uid ? 30 : 0);
