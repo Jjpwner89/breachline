@@ -86,6 +86,29 @@ These use paintings from `art/concepts/`, which remain concept pieces and don't 
 | Ambrel lampwright | `light-without-an-answer.png` | Gnosis | Unit | 3 | 1 | 20 / 40 | Ability: an adjacent ally can attack up to 2 tiles away this turn |
 | Across the silence | `across-the-silence.png` | Neutral | Spell | 4 | 0 | | Draw two cards |
 
+## Second concept art batch
+
+These cards use paintings from `art/concepts/`, and they're in the prototype as of 2026-11-05. They have no flavour text yet. Using a painting on a card doesn't add its creature to the setting's canon. The numbers are untested beyond bot simulations.
+
+| Card | Art | Alignment | Type | Cost | Wants | Stats | Rules | Starter deck |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Winter shelter | `alderkin-winter-shelter.png` | Vigil | Enchantment | 2 | 1 | | Enchant one of your units: it takes 15 less damage from attacks. Doesn't stack with itself | Oath of the Sunmane |
+| Dawnsails over the harvest | `dawnsails-over-the-harvest.png` | Vigil | Spell | 1 | 1 | | You may play an extra land this turn | Oath of the Sunmane |
+| Mending the sail | `spindlejack-mending-the-sail.png` | Gnosis | Spell | 2 | 1 | | Heal one of your units 20 | The Lantern Conclave |
+| Dawnsail passage | `dawnsail-passage.png` | Neutral | Spell | 3 | 0 | | Move one of your units to any free tile. It can't attack this turn. A unit under Binding glyph can't be moved | The Warhorde |
+| Coalback forager | `coalback-forager.png` | Fervor | Unit | 2 | 1 | 10 / 30 | Instead of moving or attacking: you have 1 extra mana next turn | The Warhorde |
+| Slateprowler | `slateprowler-on-the-descent.png` | Dominion | Unit | 3 | 1 | 35 / 35 | Hunt: +15 attack against a damaged unit | The Ashen Court |
+| Through the marble | `overgrown-ruin-vignette.png` | Genesis | Enchantment | 3 | 1 | | Enchant one of your units: +10 attack and +15 health at the start of your turn, up to three times | None yet |
+| Raincup at first light | `raincup-at-first-light.png` | Genesis | Spell | 1 | 1 | | Remove all enchantments from a unit | None yet |
+| Clearing the channel | `alderkin-waterkeeper.png` | Genesis | Spell | 4 | 2 | | Each of your units permanently gets +15 health | None yet |
+| Reedcrown grazer | `reedcrown-grazer.png` | Genesis | Unit | 2 | 1 | 15 / 40 | Instead of moving or attacking: draw a card, then put a card on the bottom of your deck | None yet |
+
+To make room, the starter decks lost Militia spearman and Pride cub (Sunmane), Goblin cutter and Sellsword (Warhorde), one Illusory decoy (Conclave) and one Ashen Court noble (Ashen Court). The Genesis cards stay out of The Elder Herd until its win rate comes down.
+
+Set aside until a painting suits them: Hunted (Dominion enchantment, cost 2, wants 1: enchant an enemy unit, and it loses 10 health at the start of its owner's turn) and Sifting the shallows (Gnosis spell, cost 1, wants 1: draw a card, then put a card from your hand on the bottom of your deck).
+
+Left out on purpose: `opaline-window-mender.png` (the Opaline Kin are excluded from the lore), `stonehorn-bridgekeeper.png` (the least liked design, still developing) and `tidevault-at-the-old-harbour.png` (the creature is painted too large).
+
 ## New lands
 
 | Land | Alignment | Line |
