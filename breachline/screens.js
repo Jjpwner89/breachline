@@ -1,16 +1,16 @@
-// Main menu, exhibition setup and the deck builder. Storage and the card pool come from Decks, card frames and game start from GameUI.
+// Main menu and the deck builder. Storage and the card pool come from Decks, card frames and game start from GameUI.
 var Screens = (function () {
   var E = Engine, root = document.getElementById('screen'), refresh = null, actions = {};
   var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], TYPES = ['unit', 'instant', 'enchant', 'spell', 'land'];
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
   var LAND_SHARE = 0.45;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
-  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '' }, confirmDelete = null, picks = {};
+  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '' }, confirmDelete = null;
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
   function byId(id) { return document.getElementById(id); }
   function act(name, arg) { return 'data-act="' + name + '"' + (arg === undefined ? '' : ' data-arg="' + esc(arg) + '"'); }
-  function symbol(c) { return c === 'N' ? '<span class="nsym" aria-hidden="true"></span>' : '<svg class="csym ' + c + '" aria-hidden="true"><use href="#sym-' + c + '"/></svg>'; }
+  function symbol(c) { return '<svg class="csym ' + c + '" aria-hidden="true"><use href="#sym-' + c + '"/></svg>'; }
   function plural(n, word) { return n + ' ' + word + (n === 1 ? '' : 's'); }
   function any(set) { return Object.keys(set).some(function (k) { return set[k]; }); }
 
@@ -34,11 +34,6 @@ var Screens = (function () {
     });
     return best ? GameUI.artUrl(best.id) : null;
   }
-  function coloursOf(list) {
-    var n = {};
-    list.forEach(function (e) { var c = E.CARDS[e[0]].colour; n[c] = (n[c] || 0) + e[1]; });
-    return COLOURS.filter(function (c) { return n[c]; }).sort(function (a, b) { return n[b] - n[a]; });
-  }
   function deckStatus(d) {
     var problems = E.deckProblems(d.list);
     return problems.length ? problems[0] : plural(E.deckSize(d.list), 'card');
@@ -47,7 +42,7 @@ var Screens = (function () {
     var art = coverArt(d.list);
     return '<span class="cover">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="dname">' + esc(d.name) + '</span>' +
-      '<span class="dmeta"><span class="csyms">' + coloursOf(d.list).map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span>';
+      '<span class="dmeta"><span class="csyms">' + E.deckColours(d.list).map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span>';
   }
 
   // Main menu
@@ -70,53 +65,9 @@ var Screens = (function () {
       '</nav></div><div class="fan" aria-hidden="true">' + fan + '</div></main>', menu);
   }
   actions.menu = menu;
-  actions.resume = function () { root.hidden = true; GameUI.resume(); };
+  actions.resume = function () { hide(); GameUI.resume(); };
 
-  // Exhibition setup
-
-  function playable(id) {
-    var d = id && Decks.find(id);
-    return d && !E.deckProblems(d.list).length ? d : null;
-  }
-  function exhibition(mine) {
-    var last = Decks.picks(), saved = Decks.saved();
-    var firstReady = saved.filter(function (d) { return !E.deckProblems(d.list).length; })[0];
-    picks = {
-      mine: mine || (playable(last.mine) ? last.mine : firstReady ? firstReady.id : 'white'),
-      opp: playable(last.opp) ? last.opp : 'red'
-    };
-    drawExhibition();
-  }
-  function pickTile(d, role) {
-    var problems = E.deckProblems(d.list), on = picks[role] === d.id;
-    return '<button type="button" class="dtile' + (on ? ' on' : '') + '" aria-pressed="' + on + '" ' + (problems.length ? 'disabled' : '') + ' ' + act('pick', role + ':' + d.id) + '>' + coverHtml(d) + '</button>';
-  }
-  function pickSection(title, role, decks) {
-    return '<section class="pickset"><h2>' + title + '</h2><div class="dtiles">' + decks.map(function (d) { return pickTile(d, role); }).join('') + '</div></section>';
-  }
-  function drawExhibition() {
-    var all = Decks.saved().concat(Decks.starters()), mine = Decks.find(picks.mine), opp = Decks.find(picks.opp);
-    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Exhibition</h1></header>' +
-      pickSection('Your deck', 'mine', all) + pickSection('Opponent', 'opp', all) +
-      '<footer class="sfoot"><span class="vs"><b>' + esc(mine.name) + '</b> against <b>' + esc(opp.name) + '</b></span>' +
-      '<button type="button" class="btn" ' + act('builder') + '>Deck builder</button>' +
-      '<button type="button" class="btn primary" ' + act('startGame') + '>Start game</button></footer></div>', drawExhibition);
-  }
-  actions.exhibition = function () { exhibition(); };
-  actions.pick = function (arg) {
-    var at = arg.indexOf(':');
-    picks[arg.slice(0, at)] = arg.slice(at + 1);
-    var top = root.scrollTop;
-    drawExhibition();
-    root.scrollTop = top;
-  };
-  actions.startGame = function () {
-    var mine = Decks.find(picks.mine), opp = Decks.find(picks.opp);
-    Decks.setPicks(picks);
-    root.hidden = true;
-    refresh = null;
-    GameUI.play({ name: mine.name, list: mine.list }, { name: opp.name, list: opp.list });
-  };
+  actions.exhibition = function () { GameUI.showStart(); };
 
   // Deck list
 
@@ -359,7 +310,7 @@ var Screens = (function () {
   actions.closeZoom = function () { byId('closeup').classList.remove('open'); };
   actions.openDeck = function () { byId('dpanel').classList.add('open'); };
   actions.closeDeck = function () { byId('dpanel').classList.remove('open'); };
-  actions.playDeck = function () { exhibition(ed.deck.id); };
+  actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
@@ -384,5 +335,7 @@ var Screens = (function () {
   function redraw() { if (refresh && !root.hidden) refresh(); }
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
 
-  return { menu: menu, redraw: redraw };
+  function hide() { root.hidden = true; refresh = null; }
+
+  return { menu: menu, builder: builder, hide: hide, redraw: redraw, coverArt: coverArt };
 })();

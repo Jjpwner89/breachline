@@ -1,12 +1,11 @@
-/* Main menu, exhibition setup and deck builder, in the bronze and gold of the card frames. Rebinding the tokens restyles the shared buttons. */
+/* Main menu and deck builder, on the same dark wood as the war table. */
 [hidden] { display: none !important; }
 .screen {
-  --table: #17110b; --felt: #241a10; --plank: #2c2013; --line: #57421f; --ink: #f3e9d2; --muted: #c0ae8a; --gold-pale: #f0d68c;
-  --you: var(--gold); --you-fill: #6f5518; --danger: #a32a1c;
-  position: fixed; inset: 0; z-index: 30; overflow-y: auto; background: var(--table); color: var(--ink); font: 15px/1.4 var(--body);
+  --felt: #241a10; --line: var(--edge); --you-fill: #6f5518;
+  position: fixed; inset: 0; z-index: 30; overflow-y: auto; background: var(--table) var(--grain); color: var(--ink); font: 15px/1.4 var(--body);
 }
 .screen .btn[disabled] { opacity: .5; cursor: not-allowed; }
-.screen .btn.danger { background: var(--danger); border-color: #ff6a4d; }
+.screen .btn.danger { background: var(--danger-deep); border-color: var(--danger); }
 .screen h1 { color: var(--gold-pale); }
 .screen h2 { font-size: 19px; }
 .screen input { font: inherit; color: var(--ink); background: var(--table); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-height: 36px; min-width: 0; }
@@ -15,13 +14,22 @@
 .hint { margin: 0; color: var(--muted); font-size: 13px; }
 .warn { margin: 0; padding: 8px 12px; border: 1px solid var(--gold); border-radius: 6px; background: var(--plank); }
 .csym { width: 16px; height: 16px; fill: currentColor; stroke: currentColor; flex: none; }
-.csym.W { color: var(--white); } .csym.R { color: var(--red); } .csym.U { color: var(--blue); } .csym.B { color: var(--black); } .csym.G { color: var(--green); }
-.nsym { display: inline-block; width: 12px; height: 12px; margin: 2px; border-radius: 50%; border: 2px solid var(--neutral); flex: none; }
+.csym.W { color: var(--white); } .csym.R { color: var(--red); } .csym.U { color: var(--blue); } .csym.B { color: var(--black); } .csym.G { color: var(--green); } .csym.N { color: var(--neutral); }
+
+/* Exhibition setup, added to the war table's start screen */
+.starthead { width: min(100%, 1180px); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
+.starthead .btn:first-child { justify-self: start; }
+.starthead .btn:last-child { justify-self: end; }
+.start #begin { position: sticky; bottom: 0; flex: none; }
+.deck[disabled] { cursor: not-allowed; }
+.deck[disabled]:hover { transform: none; }
+.deck[disabled] .pic img { filter: grayscale(.8) brightness(.6); }
+.deck[disabled] .ds { font-weight: 700; }
 
 /* Main menu */
 .menu { min-height: 100%; display: flex; align-items: center; justify-content: center; gap: clamp(24px, 6vw, 88px); padding: 24px 16px; }
 .mcol { width: min(100%, 400px); display: flex; flex-direction: column; gap: 22px; }
-.menu h1 { font-size: clamp(44px, 8vh, 72px); line-height: 1; letter-spacing: .03em; }
+.menu h1 { font-size: clamp(36px, min(8vh, 14vw), 72px); line-height: 1; letter-spacing: .03em; }
 .mlist { display: flex; flex-direction: column; gap: 8px; }
 .mitem { display: block; width: 100%; text-align: left; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; }
 .mitem b { display: block; font: 700 21px/1.2 var(--display); letter-spacing: .02em; }
@@ -38,7 +46,7 @@ button.mitem.primary:hover { background: #80631d; }
 .fan .slot:nth-child(2) { transform: translateX(105px) translateY(6px) rotate(11deg); }
 .fan .slot:nth-child(3) { transform: translateY(-16px); }
 
-/* Exhibition setup and deck list */
+/* Deck list */
 .page { max-width: 1200px; margin: 0 auto; padding: 14px 16px 24px; display: flex; flex-direction: column; gap: 18px; min-height: 100%; }
 .shead { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
 .shead h1 { font-size: 28px; }
@@ -48,22 +56,15 @@ button.mitem.primary:hover { background: #80631d; }
 .dcard { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .dtile { display: flex; flex-direction: column; width: 100%; padding: 0; text-align: left; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; min-width: 0; }
 button.dtile:hover:not([disabled]) { border-color: var(--gold); }
-.dtile.on { border: 2px solid var(--gold-pale); background: var(--you-fill); }
-.dtile[disabled] { cursor: not-allowed; }
-.dtile[disabled] .cover img { filter: grayscale(.8) brightness(.6); }
-.dtile[disabled] .dmeta { color: var(--gold-pale); }
 .dtile.static { cursor: default; }
 .cover { display: block; aspect-ratio: 2 / 1; background: var(--plank); overflow: hidden; }
 .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .dname { padding: 7px 10px 0; font: 700 16px/1.15 var(--display); overflow-wrap: anywhere; }
 .dmeta { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 3px 10px 8px; font-size: 13px; color: var(--muted); }
-.dtile.on .dmeta { color: var(--ink); }
 .csyms { display: flex; gap: 3px; align-items: center; }
 .dtools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .dtools .btn { flex: 1 1 auto; min-height: 32px; padding: 3px 10px; }
 .dask { flex: 1 0 100%; font-size: 13px; color: var(--gold-pale); }
-.sfoot { position: sticky; bottom: 0; margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; background: var(--plank); border: 1px solid var(--line); border-radius: 6px; }
-.sfoot .vs { flex: 1 1 220px; min-width: 0; }
 
 /* Deck editor. On a laptop the page itself doesn't scroll: the card grid and deck list do. */
 .editor { height: 100%; display: flex; flex-direction: column; gap: 10px; padding: 10px 16px 12px; }
@@ -87,19 +88,19 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .chip[aria-pressed="true"] { background: var(--parchment); border-color: var(--gold); color: var(--card-ink); font-weight: 700; }
 .chip[aria-pressed="true"] .csym { color: var(--card-ink); }
 .chip .csym { width: 14px; height: 14px; }
-.chip .nsym { width: 10px; height: 10px; margin: 2px; }
 .fdot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
 .fdot.W { background: var(--white); } .fdot.R { background: var(--red); } .fdot.U { background: var(--blue); } .fdot.B { background: var(--black); } .fdot.G { background: var(--green); }
 .chip[aria-pressed="true"] .fdot { box-shadow: 0 0 0 1px var(--card-ink); }
 .cgrid { flex: 1; min-height: 0; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(164px, 1fr)); gap: 8px; align-content: start; padding: 4px 4px 12px 0; }
 .cgrid .none { grid-column: 1 / -1; padding: 24px 0; text-align: center; font-size: 15px; }
 .pcard { position: relative; min-width: 0; }
-.pcard .card { display: block; width: 100%; }
+.pcard .card { display: block; width: 100%; container-type: inline-size; }
+.pcard .card:focus-visible .frame { outline: 2px solid var(--target); outline-offset: 1px; }
 .pcard.maxed .card { cursor: not-allowed; }
 .pcard.maxed .frame { filter: saturate(.6) brightness(.72); }
 .have { position: absolute; right: 5px; top: 5px; min-width: 28px; padding: 1px 7px; text-align: center; background: var(--table); border: 1px solid var(--gold); border-radius: 12px; font-weight: 700; font-size: 13px; font-variant-numeric: tabular-nums; pointer-events: none; }
 .minus { position: absolute; right: 5px; top: 31px; width: 28px; height: 28px; padding: 0; background: var(--table); border: 1px solid var(--gold); border-radius: 50%; font-weight: 700; line-height: 1; }
-.minus:hover { background: var(--danger); }
+.minus:hover { background: var(--danger-deep); }
 .dpanel { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
 .dtop { display: flex; gap: 6px; }
 .dtop input { flex: 1; font: 700 17px var(--display); }
@@ -144,6 +145,8 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 /* Phones stack: cards fill the screen, with the deck and any close-up opening over them. */
 @media (max-width: 820px) {
   .fan { display: none; }
+  .starthead { grid-template-columns: 1fr 1fr; }
+  .start .starthead h1 { grid-row: 2; grid-column: 1 / -1; font-size: 36px; text-align: center; }
   .editor { height: auto; min-height: 100%; padding-bottom: 72px; }
   .ebody { display: block; }
   .cards { display: flex; }
@@ -159,5 +162,4 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
   .rbtn { width: 34px; height: 34px; }
   .drow { min-height: 38px; }
   .rname { cursor: pointer; }
-  .sfoot { bottom: 8px; }
 }
