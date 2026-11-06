@@ -140,13 +140,11 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 
 /* Campaign: a parchment map beside the chapter, then the run's deck */
 .camp { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 14px; align-items: start; }
-.cmap { position: relative; aspect-ratio: 1000 / 620; background: var(--map) var(--vellum); border: 3px solid var(--bronze); outline: 1px solid var(--gold); outline-offset: -7px; border-radius: 6px; overflow: hidden; }
+.cmap { position: relative; aspect-ratio: 3 / 2; background: var(--map) var(--vellum); border: 3px solid var(--bronze); outline: 1px solid var(--gold); outline-offset: -7px; border-radius: 6px; overflow: hidden; }
+.cmap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .cmap svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.cmap .ink { stroke: var(--map-soft); stroke-width: 2; }
-.cmap .ink.faint { opacity: .65; }
-.cmap .river { stroke: #7f9488; stroke-width: 10; opacity: .75; }
-.cmap .road { stroke: var(--map-ink); stroke-width: 3; stroke-dasharray: 3 11; }
-.cmap .walked { stroke: var(--crimson); stroke-width: 5; }
+.cmap .walkedbase { stroke: var(--parchment); stroke-width: 7px; opacity: .55; vector-effect: non-scaling-stroke; }
+.cmap .walked { stroke: var(--crimson); stroke-width: 4px; vector-effect: non-scaling-stroke; }
 .mnode { position: absolute; transform: translate(-50%, -22px); display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 0; background: none; border: 0; color: var(--map-ink); }
 .mnode[disabled] { cursor: default; }
 .mnode .seal { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font: 700 19px var(--display); background: var(--parchment); border: 2px dashed var(--map-ink); }
@@ -169,8 +167,11 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
 .story .csym { color: var(--bronze); }
 .story .foe { display: flex; align-items: center; gap: 6px; font: 700 16px/1.2 var(--display); }
 .story .cleared { font: 500 14px/1.2 var(--display); color: var(--crimson); }
-.soons { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
-.soon { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; color: var(--muted); }
+.astories { display: flex; flex-wrap: wrap; gap: 4px; }
+.astory { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: 2px 9px; background: var(--table); border: 1px solid var(--line); border-radius: 14px; font-size: 13px; }
+.astory:hover { border-color: var(--gold); }
+.astory[aria-pressed="true"] { background: var(--parchment); border-color: var(--gold); color: var(--card-ink); font-weight: 700; }
+.astory[aria-pressed="true"] .csym { color: var(--card-ink); }
 .cwho { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .cleave { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .rdeck { overflow: visible; flex: none; }

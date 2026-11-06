@@ -185,6 +185,13 @@ function randomField(r, ids) {
   var KEY = 'breachline.campaign.v1', kept = localStorage.getItem(KEY), story = Campaign.STORIES.vigil, last = story.chapters.length - 1;
   var starter = JSON.stringify(E.DECKS.white.list);
   var bad = story.chapters.filter(function (c) { return E.deckProblems(c.enemy.list).length; });
+  var roadStops = story.road.map(function (p) { return p[0] + ',' + p[1]; }), lastStop = -1;
+  check('the traced road passes through every stop in order', story.chapters.every(function (c) {
+    var at = roadStops.indexOf(c.x + ',' + c.y), ok = at > lastStop;
+    lastStop = at;
+    return ok;
+  }));
+  check('every unwritten campaign has a map and six stops', Object.keys(Campaign.LATER).length === 4 && Object.keys(Campaign.LATER).every(function (k) { var l = Campaign.LATER[k]; return l.chapters.length === 6 && /map-/.test(l.map); }));
   check('every enemy deck is legal', !bad.length, bad.map(function (c) { return c.id; }).join(', '));
   var offers = 0, wrong = [];
   for (var seed = 1; seed <= 200; seed++) {

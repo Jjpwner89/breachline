@@ -10,46 +10,59 @@ var Campaign = (function () {
     store.removeItem(KEY + '.test');
   } catch (e) { store = null; }
 
-  // x and y place a chapter on the map, as percentages. place picks the terrain drawn around it.
+  // map is the painting under the route. x and y place a chapter on it, as percentages, and road traces the painted road
+  // through every stop, so the walked part can follow it.
   var STORIES = {
     vigil: {
-      id: 'vigil', colour: 'W', title: 'The Shrine Road', starter: 'white',
+      id: 'vigil', colour: 'W', title: 'The Shrine Road', starter: 'white', map: 'art/web/maps/map-vigil.jpg',
+      road: [[0, 99], [3.9, 96], [6.5, 88], [11, 81], [13.3, 77], [16, 75], [21.5, 74.7], [24, 77], [28.6, 80], [34.5, 83], [40, 81], [43, 77], [45.6, 71.3], [50, 62.5], [54, 58.5], [58.5, 54], [59.2, 51.8], [57.3, 50.3], [54, 49.3], [50, 47.5], [46, 45.2], [40, 41.5], [30.5, 36], [34.5, 33.7], [38.4, 32.2], [41.7, 29.3], [47, 27.3], [54, 26.9], [61, 26], [64, 24], [69, 23.2], [75, 22.6], [79, 20.5], [85, 19]],
       premise: 'A shepherd came down from the high country with a story. At the old shrine, after a hundred and fifty years, something answered her. The Oath has heard stories before. It sends you anyway.',
       ending: 'The shrine is one small room with a cold lamp. You light it and wait. Near dawn, with no wind, the flame leans toward you. It might be nothing. You send word anyway.',
       defeat: 'The Oath will send someone else. The road is still there.',
       chapters: [
         {
-          id: 'ford', title: 'The ford', place: 'ford', x: 16, y: 74,
+          id: 'ford', title: 'The ford', x: 16, y: 75,
           text: 'Cinder Clan raiders hold the ford. They took a vote on you before you arrived.',
           enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 1], ['raider', 2], ['berserker', 1], ['sellsword', 1], ['hex', 2], ['youngsummoner', 1]] }
         },
         {
-          id: 'forest', title: 'The closed road', place: 'forest', x: 41, y: 83,
+          id: 'forest', title: 'The closed road', x: 40, y: 81,
           text: 'The old road goes through the forest, or did. The Thornwardens have spent three generations making sure of it.',
           enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 14], ['sapling', 2], ['saboteur', 1], ['wayfinder', 2], ['owl', 1], ['shifting', 2], ['youngsummoner', 2]] }
         },
         {
-          id: 'pass', title: 'The pass', place: 'pass', x: 56, y: 53,
+          id: 'pass', title: 'The pass', x: 58.5, y: 54,
           text: "The hill bands don't care what answered her. They care that you're carrying grain through their pass.",
           enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['raider', 2], ['sellsword', 2], ['warchief', 1], ['giant', 2], ['firebolt', 1]] }
         },
         {
-          id: 'gate', title: 'The lower gate', place: 'gate', x: 31, y: 34,
+          id: 'gate', title: 'The lower gate', x: 30.5, y: 36,
           text: "The Conclave got here first. They've brought instruments.",
           enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 14], ['decoy', 3], ['conjurer', 1], ['scholar', 3], ['arcanist', 1], ['chorister', 1], ['displacement', 1]] }
         },
         {
-          id: 'field', title: 'The fallow field', place: 'field', x: 61, y: 23,
+          id: 'field', title: 'The fallow field', x: 61, y: 26,
           text: 'Nobody has farmed the field below the shrine. Tonight, it stands up.',
           enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 12], ['thrall', 3], ['harvester', 3], ['noble', 2], ['raise', 2], ['sellsword', 2]] }
         },
         {
-          id: 'shrine', title: 'The shrine steps', place: 'shrine', x: 86, y: 17,
+          id: 'shrine', title: 'The shrine steps', x: 85, y: 19,
           text: 'Vashkar, Who Counts the Dead, is waiting on the shrine steps. He has already counted you.',
           enemy: { name: 'Vashkar, Who Counts the Dead', colours: ['B'], list: [['land_b', 13], ['thrall', 2], ['harvester', 2], ['noble', 2], ['vashkar', 2], ['raise', 1], ['warrant', 1], ['firebolt', 1]] }
         }
       ]
     }
+  };
+
+  // The other four campaigns aren't written yet. Their maps exist, so the setup screen can show where each one will go.
+  function later(id, colour, title, stops) {
+    return { id: id, colour: colour, title: title, map: 'art/web/maps/map-' + id + '.jpg', chapters: stops.map(function (s) { return { title: s[0], x: s[1], y: s[2] }; }) };
+  }
+  var LATER = {
+    gnosis: later('gnosis', 'U', 'The Long Survey', [['Ambrel', 86, 76], ['The waterworks', 62, 62], ['The hill farms', 38, 74], ['The checkpoint', 17, 52], ['The dry canal', 40, 30], ['The silent observatory', 15, 18]]),
+    dominion: later('dominion', 'B', 'The Quiet Order', [['The tithe village', 12, 80], ['The barrows', 50, 88], ['The salt causeway', 87, 68], ['The bone orchard', 78, 24], ['The silent town', 34, 18], ['The court of still water', 50, 50]]),
+    fervor: later('fervor', 'R', 'No Throne', [['The moot', 14, 22], ['The moving market', 44, 15], ['The salt pan', 76, 27], ['The red gorge', 52, 50], ['The toll wall', 22, 62], ['The high seat', 70, 80]]),
+    genesis: later('genesis', 'G', 'The Green Return', [['The mother grove', 84, 16], ['The reedways', 58, 24], ["The herd's crossing", 70, 52], ['The cut line', 42, 46], ['The dam', 48, 76], ['The green city', 16, 72]])
   };
 
   function landOf(colour) { return 'land_' + colour.toLowerCase(); }
@@ -176,7 +189,7 @@ var Campaign = (function () {
   function abandon() { ended = null; write(null); }
 
   return {
-    STORIES: STORIES, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
+    STORIES: STORIES, LATER: LATER, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
     finish: finish, take: take, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
     persistent: function () { return !!store; }
   };

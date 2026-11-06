@@ -7,6 +7,7 @@ First version: Vigil only. The story lines live in `campaign.js`, and every line
 - A loss ends the run, and the next run starts over from the starter deck.
 - Battles come in a fixed order.
 - The campaign has a map.
+- Each campaign gets its own region of the world, rather than one shared region (2026-11-06).
 - The player chooses who plays the enemies when a run starts.
 - Vigil comes first.
 - Cutscenes are wanted later. They aren't built yet.
@@ -57,7 +58,11 @@ Only 7 of the 400 runs won every battle. No person has played a full run yet, an
 
 - **`SETTING.md`:** its Map line still says a map may stay unbuilt. Change it to say the creator wants one, and that the campaign has a route map for now, with place details kept loose. It was left out of this merge because another chat had uncommitted edits to that file.
 
+## Maps
+
+Painted by Codex from `art/CAMPAIGN_MAP_BRIEFS.md`, and awaiting the creator's review. The full-size paintings are in `art/maps/` and the game loads `art/web/maps/`, which `art/build-web.sh` makes. The other four maps can be viewed from the campaign setup screen.
+
 ## Where things plug in
 
-- **Another alignment's campaign:** add a story to `STORIES` in `campaign.js`. The setup screen is still hard-wired to Vigil, and the map's terrain in `screens.js` is drawn for this route.
+- **Another alignment's campaign:** add a story to `STORIES` in `campaign.js`. Move it out of `LATER`, write its chapters and enemy decks, and trace its painted road as `road`, as Vigil's is. Only Vigil can be started so far.
 - **Cutscenes:** each chapter's text is plain data, so a cutscene can play from the same place before a battle.

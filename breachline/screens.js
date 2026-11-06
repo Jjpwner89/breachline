@@ -73,21 +73,9 @@ var Screens = (function () {
 
   // Campaign
 
-  var setupPlayer = 'bot', mapPick = null, confirmAbandon = false;
+  var setupPlayer = 'bot', setupStory = 'vigil', mapPick = null, confirmAbandon = false;
 
-  function tree(x, y, s) { return 'M' + x + ' ' + y + 'v' + (-5 * s) + 'M' + (x - 6 * s) + ' ' + (y - 5 * s) + 'L' + x + ' ' + (y - 17 * s) + 'L' + (x + 6 * s) + ' ' + (y - 5 * s) + 'Z'; }
-  function peak(x, y, s) { return 'M' + (x - 26 * s) + ' ' + y + 'L' + x + ' ' + (y - 34 * s) + 'L' + (x + 26 * s) + ' ' + y + 'M' + x + ' ' + (y - 34 * s) + 'l6 ' + 14 * s + 'l-7 ' + 3 * s + 'l5 ' + 12 * s; }
-  function many(draw, spots) { return spots.map(function (p) { return draw(p[0], p[1], p[2] || 1); }).join(''); }
-  // The terrain is all drawn here, in the map's ink, and stays loose until the world has a fixed geography.
-  var TERRAIN =
-    '<path class="river" d="M245 0C215 110 110 240 140 350S185 470 160 520S110 590 120 620"/>' +
-    '<path class="ink" d="' + many(tree, [[300, 500], [335, 470], [372, 455], [425, 450], [470, 470], [505, 505], [285, 555], [322, 590, 1.2], [480, 590, 1.2], [525, 560], [365, 600], [440, 605], [545, 610, .9]]) + '"/>' +
-    '<path class="ink" d="' + many(peak, [[455, 345, 1.4], [510, 285], [630, 340, 1.5], [690, 395, 1.1], [420, 280, .9], [705, 290, 1.2], [790, 320, 1.5], [880, 365, 1.1], [920, 250, 1.2], [770, 215, 1], [130, 130, 1.1], [70, 180, .9], [950, 80, 1], [740, 70, 1.1]]) + '"/>' +
-    '<path class="ink" d="M285 190v-34h14v-12h24v12h14v34M305 190v-16a6 6 0 0 1 12 0v16M250 190h122M280 144l-8 -9M342 144l8 -9"/>' +
-    '<path class="ink faint" d="M560 150h90M555 162h110M552 174h120M552 186h110M570 138h70M575 118v12M570 123h10M625 110v12M620 115h10M655 128v12M650 133h10"/>' +
-    '<path class="ink" d="M835 78l25 -20l25 20M840 78v26M880 78v26M852 78v26M868 78v26M830 106h60"/>';
-
-  // Both roads are cut from the same curve, so the walked part stays on the route. stops is how many legs to draw.
+  // A smooth line through the traced road, as far as stops legs.
   function roadPath(points, stops) {
     var d = 'M' + points[0][0] + ' ' + points[0][1];
     for (var i = 0; i < stops; i++) {
@@ -96,18 +84,20 @@ var Screens = (function () {
     }
     return d;
   }
-  // at is the chapter you stand on, or -1 before the run starts. The road starts at the map's lower left.
+  // at is the chapter you stand on, or -1 before the run starts. The road itself is in the painting, so only the part you've walked is drawn.
   function mapHtml(story, at, picked) {
-    var points = [[40, 590]].concat(story.chapters.map(function (c) { return [c.x * 10, c.y * 6.2]; }));
     var nodes = story.chapters.map(function (c, i) {
       var state = at < 0 || i > at ? 'next' : i < at ? 'done' : 'now';
       var word = state === 'done' ? 'cleared' : state === 'now' ? 'your next battle' : 'not reached yet';
       return '<button type="button" class="mnode ' + state + (picked === i ? ' picked' : '') + '" style="left:' + c.x + '%;top:' + c.y + '%" ' + act('mapPick', i) + ' aria-label="Chapter ' + (i + 1) + ', ' + esc(c.title) + ', ' + word + '"' + (at < 0 ? ' disabled' : '') + '>' +
         '<span class="seal">' + (i + 1) + '</span><span class="mlabel">' + esc(c.title) + '</span></button>';
     }).join('');
-    return '<div class="cmap"><svg viewBox="0 0 1000 620" aria-hidden="true">' + TERRAIN +
-      '<path class="road" d="' + roadPath(points, points.length - 1) + '"/>' + (at > 0 ? '<path class="walked" d="' + roadPath(points, at + 1) + '"/>' : '') +
-      '</svg>' + nodes + '</div>';
+    var walked = '';
+    if (at > 0 && story.road) {
+      var stop = story.chapters[at], legs = story.road.map(function (p) { return p[0] + ',' + p[1]; }).indexOf(stop.x + ',' + stop.y), line = roadPath(story.road, legs);
+      walked = '<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="walkedbase" d="' + line + '"/><path class="walked" d="' + line + '"/></svg>';
+    }
+    return '<div class="cmap"><img src="' + story.map + '" alt="" decoding="sync" draggable="false">' + walked + nodes + '</div>';
   }
   function deckGrid(list) {
     var cards = list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(function (e) {
@@ -123,16 +113,23 @@ var Screens = (function () {
   function fitAll() { GameUI.fitCards(root); }
 
   function setup() {
-    var story = Campaign.STORIES.vigil, ready = GameUI.modelReady();
+    var ready = GameUI.modelReady(), vigil = Campaign.STORIES.vigil, all = [vigil].concat(Object.keys(Campaign.LATER).map(function (k) { return Campaign.LATER[k]; }));
+    var story = setupStory === vigil.id ? vigil : Campaign.LATER[setupStory];
+    var choose = '<div class="astories" role="group" aria-label="Campaigns">' + all.map(function (a) {
+      return '<button type="button" class="astory" ' + act('setStory', a.id) + ' aria-pressed="' + (a === story) + '">' + symbol(a.colour) + GameUI.ALIGNMENT[a.colour] + '</button>';
+    }).join('') + '</div>';
     if (setupPlayer !== 'bot' && !ready) setupPlayer = 'bot';
     var who = '<button type="button" class="who-plays" ' + act('setPlayer', 'bot') + ' aria-pressed="' + (setupPlayer === 'bot') + '"><b>Scripted bot</b><span>Plays instantly, with fixed habits.</span></button>' +
       ['easy', 'normal', 'hard'].map(function (k) {
         return '<button type="button" class="who-plays" ' + act('setPlayer', k) + ' aria-pressed="' + (setupPlayer === k) + '"' + (ready ? '' : ' disabled') + '><b>Claude: ' + AI.levels[k].label + '</b><span>' + AI.levels[k].blurb + '</span></button>';
       }).join('');
-    var soon = ['U', 'B', 'R', 'G'].map(function (c) { return '<span class="soon">' + symbol(c) + GameUI.ALIGNMENT[c] + '</span>'; }).join('');
+    if (story !== vigil) {
+      show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
+        '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>This campaign isn\'t written yet. This is the road it will take.</p></div></aside></div></div>', setup);
+      return;
+    }
     show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
-      '<aside class="cside"><div class="story"><p class="eyebrow">' + symbol('W') + 'Vigil</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p></div>' +
-      '<div class="soons" aria-label="Campaigns coming later"><span class="hint">Coming later:</span>' + soon + '</div>' +
+      '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol('W') + 'Vigil</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p></div>' +
       '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
@@ -189,6 +186,7 @@ var Screens = (function () {
   }
   actions.campaign = function () { mapPick = null; confirmAbandon = false; campaign(); };
   actions.setPlayer = function (key) { setupPlayer = key; setup(); };
+  actions.setStory = function (id) { setupStory = id; setup(); };
   actions.beginRun = function () { Campaign.begin('vigil', setupPlayer); actions.campaign(); };
   actions.mapPick = function (i) { mapPick = +i; campaign(); };
   actions.fight = function () { GameUI.playChapter(); };
