@@ -1,75 +1,189 @@
 # Breachline design notes
 
-A copy of the notes Claude keeps on this project, taken on 2026-11-05 so they travel with the repo. "I", "me" and "my" mean Claude, and "the user" means the game's creator. Claude's own memory stays on the computer it was written on, so on another computer ask Claude to read this file and `CHAT_SNAPSHOT.md` first.
+The one home for Breachline's rules, design decisions and ways of working. "The creator" is the person making the game, and "Claude" is the assistant helping. Claude's own memory stays on the computer it was written on, so on a new computer ask Claude to read this file first.
 
-Original card game (not a rebuild of Card Wars, Magic or anything else). Own names, art and cards. Working title Breachline is mine, not the user's. Prototype code is in the `breachline` folder of the Games project and is published as an artifact.
+Each topic has one home:
+- **The world:** `SETTING.md`
+- **Art:** the `art-direction` skill in `.claude/skills/`
+- **Flavour text:** the `flavor-text` skill, with lines in `FLAVOUR.md`
+- **Campaign:** `CAMPAIGN.md`
+- **Cards:** `NEW_CARDS.md`, `CARD_AUDIT.md` and `CARD_PROPOSALS.md`
 
-User's picks as of 2026-11-05: unseen summoner, one life total per player, 40-card deck built before play, reshuffle discards when deck empties, hand kept with one draw per turn, grid with movement, attacker picks target, targets strike back, damage stays until healed, new units wait a turn and appear only in the back row, units move 1 tile unless a keyword says otherwise, no diagonal movement (Swift can reach a diagonal tile with two steps), attack or ability, whole turns, limited instant responses (weaker than Magic's, some damage, some protection), hidden hand, some random effects, keywords plus short text, enchantments, 10-20 minute matches.
+Keep only current decisions. When one changes, edit or delete the old text instead of adding a correction. Record feedback at the size it was given, so a comment on one card or one batch doesn't become a rule for everything.
 
-Stats: values were written with an added zero until 2026-11-05, when the user dropped it and asked for a card-by-card audit by character and alignment (`CARD_AUDIT.md`). Equal attack and health is fine, because in play bigger attackers one-shot most units anyway. Abilities should play a large role, and they can be passive as well as active. Average time to kill is 1.5-2.5 hits; strong units can one-shot and weak spearmen chew each other up quickly. Sunmane lancer should be a strong unit with good usable abilities.
+## What the game is
 
-Land share (decided 2026-11-06): 35%, so 14 of 40 cards, and the 24-card starter decks run 8. Don't argue for more lands unless playtesting raises it.
+An original fantasy card game on a grid, unique to the creator and not a rebuild of Card Wars, Magic or anything else. It started from remembering the Adventure Time card game and its mix of deck building and a board. Breachline is Claude's working title.
 
-Mana: soft coloured mana approved. Lands have colours, each card wants a number of lands of its colour, and each missing land adds 1 to the cost, so a card is never locked out. Lands sit off-grid below the board and can't be taken or destroyed. The per-turn card swap was removed on 2026-11-05 after playtesting: the user said it was way too powerful and made lands too easy, and prefers Magic's approach of redrawing only at the beginning. The prototype now uses a London-style mulligan (new full hand, then one card per redraw goes on the bottom). The limit of 2 redraws is my assumption. After that playtest the user asked for 5-card opening hands and a larger share of lands, and expects to move to larger decks later. The 20-card prototype decks then ran 9 lands (45%; my pick from simulations, about 7% of players stuck on 2 or fewer lands at the start of their sixth turn, down from 19%). The user was fine with getting a land after a bad first hand and redrawing. In simulations with the scripted bot on both sides, the first player wins only about 40% and the white deck about 59%; neither has been addressed.
+- **What the creator loves in Magic:** the fantastical settings and epic art, especially the generic but detailed fantasy of red, the optimistic feel of white and the urban settings of blue. Favourite images include blue's mages deep in study and red's goblins, orcs and dragons.
+- **Slay the Spire:** a further inspiration, but the creator prefers having multiple characters to one.
+- **Games worth a look:** Duelyst for grid tactics and Faeria for building a board during play, both suggested by Claude.
+- **The goal:** an AI opponent that plays from the rules and general strategies, with a small chat line showing what it professes to think.
 
-Buildings cut (2026-11-05, the user is 100% on this): no town, no town buildings, no bank or stored mana, and no fortifications or walls, now or in future plans. Total mana cost and land requirements already do that job, and the user doesn't want any screen space or compute spent on buildings, so don't propose bringing them back. Stored mana came from Slay the Spire and is less fun here. Neutral cards stay weaker but reliable.
+## Rules
 
-Factions matter less to the user than alignments. Faction identity should come through card mechanics and art.
+From the creator:
+- An unseen summoner and one life total per player, starting at 15.
+- Decks target 40 cards, built before play. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
+- 5-card opening hands. Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
+- One draw per turn, and the hand is hidden.
+- Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
+- New units appear only in the back row and wait a turn.
+- A unit moves, then attacks or uses an ability. The attacker picks the target, and targets strike back.
+- Damage stays until healed.
+- Whole turns, with limited instant responses that are weaker than Magic's.
+- Enchantments attach to a unit on either side and go when their host is destroyed.
+- Keywords plus short text, some random effects, and 10 to 20 minute matches.
+- The summoners and land rows sit outside the grid, above and below it.
 
-Modes: campaign is the main way to play; exhibition with a deck builder should also exist.
+Claude's assumptions, not yet confirmed by the creator:
+- A 5 by 4 grid, and the summoner can be hit only from the enemy back row.
+- Only surviving targets strike back.
+- The play phase comes before the command phase, and the first player skips their first draw.
+- Two response windows with no stack, and a limit of 2 redraws.
+- In the deck builder: decks of 24 to 40 cards, 3 copies of a non-land card and unlimited lands. The starter decks have 24 cards, below the 40-card target.
+- The card-to-faction list in `engine.js`.
 
-Alignments (decided 2026-11-05): five colours sit above factions as alignments, with several factions inside each, so it is not one faction per colour. Colour words are shorthand, and in-world names go on cards. General principles of Magic's five colours are the starting point, to adjust through discussion; the names need not match Magic. Decks are a main colour plus a splash. Rivalries are story only. User-picked features: white healing, protecting allies, standing together; red high attack with low health, direct damage, speed, giants and fliers; blue ranged, moving units, drawing cards, illusions and decoys, disabling enemies. Black and green are in; the user liked the proposed strengths and weaknesses as a start (table in `CHAT_SNAPSHOT.md`). The Tithebound was rejected as a main faction but could be a black/white hybrid later. Humans appear in all colours. User originally disliked vampire flavour but liked the mechanics; on 2026-11-05 they said Dominion can have vampires, and red could too, as long as they stay subtle, in the shadows and somewhat rare. Alignment names chosen: Vigil (white), Gnosis (blue), Dominion (black), Fervor (red, core idea is passion), Genesis (green). Strengths and weaknesses are strong tendencies, never absolutes: alignments can have rare exceptions (very few green fliers rather than none, some higher-health red units but fewer than white). About 1 card in 10 can go against its alignment's tendency, at a higher cost: usable and still reasonably efficient, but not ideal. Lands and mana belong to alignments. Flavour text resumed on 2026-11-05 after the setting work. The user wants lines that are about the card's own character, end early, stay off the nose about the setting's themes, and vary in mood (hopeful is welcome; only puns and out-and-out jokes are out). Undefined place and people names are fine in up to about 4 lines in every 20 to 30, to normalize later. The user likes very short lines that lean on the art and a wide variety of emotions across a batch, and doesn't want lines describing a card's ability. Lands need little flavour text. Lines are tracked in `breachline/FLAVOUR.md`.
+## Stats
 
-Art: the user wants a painted, detailed look with lightly dynamic poses, similar in feel to Magic cards, generated by an outside image tool (ChatGPT or Codex). Briefs for the 19 current cards are in `breachline/art/ART_BRIEFS.md`, with images expected in the same folder. Proposed names: The Sunmane Oath, The Warhorde, The Lantern Conclave; lands Sunlit plains, Cinder peaks, Lantern quarter. The first card frame is built in `breachline/card.html` using the Sunmane lancer art, with title and cost at the top as the user asked. Flavour text preferences live in the project's `flavor-text` skill. As of 2026-11-05 all 19 images are in the prototype (hand cards, board tiles, large close-up), and the game loads the smaller copies in `breachline/art/web/`, so rerun `art/build-web.sh` after replacing any art. In the game the title bar is coloured by alignment (white gold, red crimson, blue navy), which differs from the crimson bar in `card.html`; the user hasn't confirmed that yet. The Games folder became a local git repo on 2026-11-05 (branch `main`), with a private GitHub remote added the same day at github.com/Jjpwner89/breachline, at the user's request; several threads share this checkout, so commit only your own files. First playtest with art, same day: the user found it fun, with a game that went back and forth and mana that eventually came up. Later that day the user asked for flavour text on the cards and new paintings built in as they arrive in `breachline/art`. Lines live in the `FLAVOUR` list in `ui.js`; The user kept the Oath knight, Sunmane lancer and Withering hex lines after seeing them on cards. Hand cards drop a line that doesn't fit, and the close-up always shows it. To add arriving paintings: run `art/build-web.sh` and republish with the new `art/web` files; the game already maps every planned image name and shows a plain panel until one exists.
+- Small numbers: stats like 5 / 6, and summoner life 15. Each card's numbers came from a card-by-card audit in `CARD_AUDIT.md`.
+- Equal attack and health is fine, because bigger attackers one-shot most units anyway. A unit takes 1.5 to 2.5 hits to kill on average. Strong units can one-shot, and weak spearmen chew each other up quickly.
+- Abilities should play a large role, and they can be passive or active. Most cards should have one, but cards costing 1 or 2 can be plain.
+- Some cards can be weaker, as the goblin is. Sunmane lancer should be a strong unit with good, usable abilities.
+- Balance can break during a card build-out. Catalogue the gaps, and fill them with new cards.
+- New cards don't have to go into decks right away. Building a card and putting it in a deck are separate steps.
 
-Setting (from the user, 2026-11-05; draft in `breachline/SETTING.md`, which marks my additions as Proposed): Age of Gods, when gods walked the world and then destroyed their bodies to form its foundation; Age of Empires, with one vast, god-ordained, generally benevolent Empire ("the Empire" or "the Old Empire") whose society needed the gods' direct intervention to survive; degeneration and factions; the Cataclysm (the user prefers that name to "the Unwinding"), when an intertwined, harmonious existence snapped and unwound like a rope pulling away, the gods stopped speaking and the Empire was destroyed almost entirely; the Silence, a brief dark age; now, about 150 years after the Cataclysm, new, mostly stable kingdoms with control undecided, and nobody alive remembers the Empire. The user rejected a drowned empire and a chain of islands: the world is Earth-like, with one large continent, some medium ones and several small ones. The present looks high fantasy, and the Bronze Age is only a historical comparison. A map may come later or may not, because it could limit role-playing. One campaign story per alignment. The world can definitely be saved, but what that means varies by alignment. Lands are gameplay only and don't matter to the setting.
+## Mana and lands
 
-Secret truth, known to nobody in the world: the gods are alive in another realm, separated by primordial chaos (the image is Satan crossing the void in Paradise Lost). The distance isn't infinite, but nobody knows if it can be crossed. The gods are diminished only because of that distance; close to their worshippers they grow strong. What snapped at the Cataclysm is undecided; the user's ideas all have the main god nearly destroyed, by sacrifice to keep the world from breaking, betrayal by another god, the Empire's evil technology or forbidden secrets, or cultists summoning a primordial entity. People variously believe the gods are dead, never existed, or are silent from disappointment or for benevolent reasons. Summoners descend from people touched in the Cataclysm; it works like a new gene across many bloodlines, not one family. Their power comes from a surviving thread into that realm, felt as a connection to chaos and its entities, to goodness, or to evil entities, but they only know they are different. Each has a golden, glowing, scar-like mark; the user wants both names in use, "the gilt scar" and "the goldmark", because not everyone in the world uses the same words for things. Art rule from the user: a summoner hiding the mark really hides it, so it is unseen or barely visible, never glowing through while they frantically cover it. Lesser gods remain, diminished, good or evil at the scale of a saint or a devil, each known by their own name on cards, and collectively called the Velunn, which the user chose because it allows slurs like the Veli or the Vels. They don't prove the gods exist; some think they are races left from the Age of Gods.
+- Soft coloured mana: lands have colours, each card wants a number of lands of its colour, and each missing land adds 1 to its cost, so a card is never locked out.
+- Lands are 35% of a deck: 14 of 40, and 8 in the 24-card starters. Don't argue for more lands unless playtesting raises it.
+- Lands sit off-grid below the board and can't be taken or destroyed.
+- No per-turn card swap. It was far too powerful and made lands too easy.
+- Abilities that generate mana are welcome. The creator likes the idea of decks that build up mana to cast big cards.
+- **Buildings are cut, and the creator is 100% on this:** no town, town buildings, bank, stored mana, fortifications or walls. Total mana cost and land requirements already do that job. Don't spend screen space or compute on them, and don't propose them again.
 
-Alignments in the setting: Vigil restores the Empire and the gods, and suspects Gnosis of causing the fall through dark magic. Gnosis wants a new order and sees magic as science. Dominion wants ruin or a new dark order, and is the only alignment with no democratic streak. Fervor enjoys the freedom of chaos, with small Cossack-style democratic bands. Genesis wants small bands in nature, with an occasional eco-terrorist edge.
+## Alignments
 
-Art direction and all art feedback live in the project's `art-direction` skill. The style block in `breachline/art/ART_BRIEFS.md` predates that feedback and asks for more drama than the user wants, so new briefs must follow the skill. The new cards in `breachline/NEW_CARDS.md` went into the prototype on 2026-11-05 at the user's request, with five 24-card decks (11 lands each) and an opponent picker. The black deck won only about 17-22% in bot-only simulations, so on 2026-11-05 its thrall, harvester and noble got stat boosts and the deck got a third noble and second sellsword, which brought it to about 43%. Rerun `art/build-web.sh` as new art arrives, then republish. Art briefs for them come after approval, and the user sends those to ChatGPT.
+Five colours sit above factions as alignments, with several factions inside each. The colour words are shorthand, and in-world names go on cards. Magic's five colours are the starting point, adjusted through discussion.
 
-On 2026-11-05 three concept paintings in `breachline/art/concepts/` became cards at the user's request: The Still Flame (Vigil enchantment), Ambrel lampwright (Gnosis unit, painting titled Light without an answer) and Across the silence (neutral draw spell). The paintings remain concept pieces, so their details don't add to canon. Their proposed flavour lines are in `breachline/FLAVOUR.md`, off the cards until approved. After adding them, bot simulations showed Genesis at 44 of 64 wins and Vigil at 23 of 64.
+| Alignment | Peoples | Strengths | Weaknesses |
+| --- | --- | --- | --- |
+| Vigil (white) | Lion folk, knights, clerics, righteous soldiers | Healing, protecting allies, bonuses for standing together | Lower damage, slow to reach the summoner |
+| Gnosis (blue) | City mages, scholars, constructs | Ranged attacks, moving units, drawing cards, illusions and decoys, disabling enemies | Small, fragile units |
+| Dominion (black) | Necromancers, undead, bound demons, ruthless nobles | Life drain, destroying units outright, sacrificing units for power, returning units from the discard pile | Pays with its own life and units, little true healing |
+| Fervor (red) | Orcs, goblins, giants, sellswords, dragons | High attack with low health, direct damage, speed, giants and fliers | Very little defence or healing |
+| Genesis (green) | Forest peoples, druids, great beasts, living trees | Very large units, units that grow over time, extra lands, recovering health | Few instants, very few fliers, exposed to fliers and ranged attacks |
 
-A second batch of ten concept art cards was added on 2026-11-05, listed in `breachline/NEW_CARDS.md`. The user chose to make the Spindlejack, alderkin waterkeeper and Dawnsail paintings spells so those creatures don't fight in those cards, though on 2026-11-06 the user said alderkin as a people can fight. The four Genesis cards stay out of The Elder Herd until its win rate comes down.
+- Strengths and weaknesses are strong tendencies, never absolutes. About 1 card in 10 can go against its alignment's tendency, at about 1 extra mana, and stay usable and reasonably efficient.
+- Decks are a main colour plus a splash. Rivalries are story only. Lands and mana belong to alignments.
+- Factions matter less to the creator than alignments. Faction identity should come through card mechanics and art.
+- Humans appear in every alignment. Orcs are never Vigil.
+- Neutral cards stay weaker but reliable.
+- The Velunn are the game's rarest, biggest cards. Dominion can bargain with them, and they can be good too.
+- Vampires can belong to Dominion or Fervor, and stay subtle and rare.
+- The Tithebound could become a black and white hybrid later.
+- Spindlejacks and Dawnsails don't fight. Alderkin can.
 
-On 2026-11-05 the user replaced "The Brass Choir" with "The Artificers" as the Gnosis makers faction, and chose "Ambrel lampwright" for that card, which makes Ambrel a city. The Across the silence flavour line is approved and on the card.
+## Modes
 
-**Why:** Wants a game unique to them that an AI model (ideally Haiku, probably Sonnet) can play from the rules and general strategies, with a small on-screen chat showing its professed thoughts rather than its full reasoning.
+- **Campaign** is the main way to play. Its picks, Claude's assumptions and balance are in `CAMPAIGN.md`. Cutscenes are wanted later, so don't build them until asked.
+- **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by type, colour and faction.
+- **Multiplayer** would get cards from packs. It isn't built.
+- **Unlocks:** the campaign unlocks cards gradually by winning, picking one of several in the style of Slay the Spire. Whether those unlocks carry over to other modes is undecided.
+- New modes add a card pool in `Decks.pool` in `decks.js` rather than changing the builder.
 
-**How to apply:** Planned order is diagrams, small decks and practice games (prototype done, scripted opponent only), then factions and the AI. Prototype assumptions not yet confirmed by the user: 5x4 grid, summoner hit only from enemy back row, 15 summoner life, only surviving targets strike back, play phase before command phase, first player skips first draw, two response windows with no stack.
+## The Claude opponent
 
-## UI redesign
+The creator wanted a real model opponent that faces the same limits they do.
 
-On 2026-11-05 the user chose the "war table" direction for the UI: a no-scroll battle screen in the card frames' bronze, gold and parchment, with paintings filling the tiles and a large hand along the bottom. They also chose a new start screen for picking decks, and laptop first with phones on a simpler stacked layout. The deck builder and campaign stayed out of scope.
+- **How it plays:** the engine lists the legal moves and the model picks from them, so it can't break the rules. One call per AI turn returns a planned list of moves, and opening hands and responses take one call each. Any failure hands that decision to the scripted bot.
+- **Where it runs:** on the published page through the `sample` capability, on the viewer's own usage, with no API key. It works only when the page runs inside Claude. Anywhere else, only the scripted bot is offered.
+- **Difficulty, the creator's idea:** every level gets the same rules and information plus a different strategy guide in `guides.js`. Easy doesn't know the strategies, and Hard knows them all.
+- **The chat line:** a short in-character statement written for the player, not its real reasoning, so it could even bluff.
+- **Debug mode:** shows what the model was sent, its plan, the tier that answered and an explanation it was asked to write. That explanation can differ from what actually drove the move, and the page never returns hidden thinking.
+- **Build rules:** build anything that plays for a side from `Engine.viewFor`, and keep typed text such as deck names out of prompts. The engine asks for a response only when one is possible.
+- **Not proven yet:** real game speed, rate limits over a full game, and whether Easy actually plays weaker. Illusions, decoys and heavy card draw are hardest for the AI. If Easy is too strong, the next knobs are thinking effort or the model tier in `AI.CALLS`.
 
-The redesign was merged into local `main` on 2026-11-05 at `58d6708`, and that merge was not yet pushed to GitHub or published to the online game page at the time. The Deck builder chat's branch (`claude/deck-builder-33a8d7`, commit `2e03eb4`) was built on the old layout and its main menu overlaps the redesign's start screen, so it still has to be connected to the new look.
+The creator's first full game against it was dynamic, and they said it was clearly trying to win.
 
-**Why:** the old layout put the hand below the fold and read like a dashboard.
+## Look and feel
 
-**How to apply:** the user doesn't want to see the old version any more, so keep new UI in the war table style and don't merge work built on the old layout without moving it over first.
+- **The war table:** a no-scroll battle screen in the card frames' bronze, gold and parchment, with paintings filling the tiles and a large hand along the bottom.
+- **Layout:** laptop first, with phones on a simpler stacked layout.
+- **The old layout is gone:** keep new UI in the war table style.
+- **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
+- **Title bars:** in the game they're coloured by alignment (white gold, red crimson, blue navy). `card.html` uses a crimson bar, and the creator hasn't chosen between them.
 
-## Deck builder
+## Balance
 
-On 2026-11-05 the user asked for deck building and a main menu in the game, with saved decks that persist, free mixing across factions, and filters by type, colour and faction. It's merged into `main`, moved over to the war table look. The redesign's start screen is now the exhibition setup, reached from the main menu, and it lists saved decks alongside the starters.
+Latest numbers, from 800 bot-only games on 2026-11-06: the first player wins 43%. By deck, Vigil wins 41%, Fervor 52%, Gnosis 53%, Dominion 39% and Genesis 65%. The scripted bot rarely uses sacrifices well, which hurts Dominion. Campaign numbers are in `CAMPAIGN.md`.
 
-Planned card unlocks, from the user: campaign unlocks gradually by winning and getting a card or picking one of several, in the style of Slay the Spire; multiplayer gets cards from packs; exhibition can use any card.
+Worth playtesting:
+- **Cloistered scholar:** a card every turn from a 2-mana unit could be very strong.
+- **Older red cards:** the creator said red looked a little unbalanced, and Orc warchief and Elder dragon haven't been touched.
+- **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
+- **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
+- **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health.
 
-**Why:** the builder has to work with owned cards later, not only the full set.
+## Open questions for the creator
 
-On the published page, saved decks also go to the viewer's private database area under `data/users/<id>`, so they follow the account (added 2026-11-05 at the user's request). The browser copy stays the working one, so the game still runs offline or as a plain local copy, and the newer copy of a deck wins.
+- **Touchstones:** books, films, games or paintings with the feeling you want.
+- **Title bars:** alignment colours or crimson.
+- **Older red cards:** should they come down too?
+- **Worn-down defenders:** is the resting-unit fix wanted?
+- **Unlocks:** do campaign unlocks carry over?
+- **Campaign map:** Claude drew a fixed route without asking whether you want branching paths.
+- **Cards:** verdicts in `CARD_PROPOSALS.md` and the open questions in `NEW_CARDS.md`.
+- **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
+- **Commit name:** commits show as `DP User`, from the Mac account.
 
-**How to apply:** new modes should add a card pool in `Decks.pool` (`breachline/decks.js`) rather than change the builder. Treat these as my assumptions until the user confirms them: 24-40 card decks, 3 copies of a non-land card, unlimited lands, and the card-to-faction list in `engine.js`.
+## Tried and set aside
 
-## Campaign
+- A party of three heroes on four lanes, with cards locked to a living hero. The creator chose an unseen summoner.
+- Terrain on the grid, and equipment and relics.
+- Lands or mana buildings on the grid, dropped for the safe land row.
+- Counting faction lands or buildings to lock cards. Cards should always be playable.
+- A free land from swapping, then discard and draw, then no swap at all.
+- Diagonal movement for all units, and a diagonal-stepping "Skirmisher" keyword.
 
-On 2026-11-05 the user picked a run-based campaign: a loss ends the run, battles come in a fixed order, Vigil comes first, and the player chooses who plays the enemies at the start of a run. They also said there should be a map, and that cutscenes are wanted later but are a future problem. `CAMPAIGN.md` has the draft story lines waiting for verdicts, my unconfirmed assumptions, and the simulated balance. Treat the Shrine Road story as Proposed.
+## Before any public release
 
-**How to apply:** when publishing, include `campaign.js` with the other scripts.
+- Claude hasn't checked the invented names against existing games or books. Firebolt, Hill giant and Elder dragon may overlap with Magic.
+- Card Wars is still sold, with a 2026 Kickstarter. Copyright generally protects a game's expression, such as names, art and card text, and not its mechanics. Avoid "Card Wars" and "Floop".
+- Claude isn't a lawyer and didn't check patents or trademarks, so get advice before selling the game.
 
-## Campaign art review — 2026-11-06
+## How the creator likes to work
 
-The creator rejected both painted maps and most of the 20-image campaign batch. Only #08 The Last Procession (explicitly identified as “Dominion sacrifice”) and #20 The Unmeasured Distance (gold strand across blue-magenta space) are canon from that batch. The active selection is in art/campaign-2026-11-05/review.html. Removed material and its old ZIP are under archive/campaign-review-2026-11-06 and must not guide current setting or art. Ambrel's disconnected bridge was repaired as requested and saved separately in art/work-in-progress/campaign-review-2026-11-06; the city design remains non-canon.
+- **Numbered batches:** flavour text improved once Claude offered numbered lines and the creator gave quick verdicts. Their cuts teach more than any written guideline.
+- **Forms with a notes box:** these work well for big decisions, and the creator often overrides the options in the notes.
+- **Sessions:** one active dev session and one active story session at a time, plus as many art threads as the creator likes. The art threads include Codex working directly in the main checkout.
 
-The correction in SETTING.md and the art-direction skill is authoritative: distinct local populations rather than uniformly cosmopolitan crowds; orcs not Vigil aligned; lion folk generally keep to themselves; much harsher Dominion; attractive but imperfect, individual faces; no repeated water-infrastructure theme or obligatory helpful alderkin. Existing approvals from earlier batches are unaffected.
+## Working on the project
+
+| What | Where |
+| --- | --- |
+| Playable game | https://claude.ai/artifact/Hr5bV3HfqseB5HwCu6xemH |
+| Sunmane lancer card | https://claude.ai/artifact/Mev6cqP5wfCbnUGvic1Jsu |
+| Early art briefs doc, with wording since replaced by the `art-direction` skill | https://claude.ai/artifact/K4CyZKihSijWBNGoY2YW7y |
+| GitHub repo (private) | https://github.com/Jjpwner89/breachline |
+
+The claude.ai pages are private to the Claude account that made them. The game, card and briefs also exist as files here, so they can be published again from another account.
+
+- **Backup:** nothing reaches GitHub until it's committed and pushed. Push before leaving a computer, and pull before starting on another.
+- **Work computer:** the GitHub sign-in token is saved in this Mac's Keychain, so delete it on GitHub when you stop using this computer. Check your employment agreement and company rules on personal work made on company equipment.
+- **Branches:** Claude sessions work in worktrees under `.claude/worktrees/`, each on its own branch. Merge finished work into `main` promptly so the others stay current.
+- **Testing:** Node isn't installed on this Mac. Run engine simulations with `/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc`, and open `tests.html` in a browser for the checks.
+- **Preview:** Python's web server can't serve directly from the Documents folder, so previews run from a temporary copy. The entries in `.claude/launch.json` point to old temporary folders.
+- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts, `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db` and `user` in its capabilities.
+- **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
+
+## Waiting to apply
+
+Art direction changes from the creator's 2026-11-08 verdicts. These wait until Codex finishes its current art work, then go into the `art-direction` skill, and this section is deleted:
+- **Detail versus resolution:** fine brushwork and a painted look are wanted, but a face rendered at much higher resolution than the brushwork around it looks AI-made. A Monet is detailed and precise without being high resolution. Replace the general "rich detail" wording and the "simplify into broader shapes" wording with this.
+- **Repetition:** delete "avoid red capes", "rain only when briefed", the list of stone, ivy, rain and grey haze in the backgrounds section, and the "Repetition to watch" list. Keep one line: vary weather, clothing and backgrounds across a batch.
+- **Attacks at the viewer:** replace each "don't aim attacks at the viewer" with: keep poses varied, and only rarely aim an attack at the viewer.
+- **Orcs:** the coarse, visibly nonhuman look applies to all orcs, not just the pathguard.
+- **Lion folk:** keep "generally keep to themselves" and the note that they appeared too often.
+- **Correction trails:** keep only current rules. Remove lines about what an earlier rule was, and replace the per-item "don't generalize this" guards with one line: feedback applies to the image or batch it was about unless the creator says otherwise.
+- **The alignment table:** black and green have art now, so their rows are no longer only proposals.

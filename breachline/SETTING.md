@@ -6,7 +6,7 @@ Everything here comes from the creator's premise unless it's marked **Proposed**
 
 The gods built the world, gave up their bodies to make its foundation, and spoke to its people through a vast empire. Then the Cataclysm came, the gods fell silent, and the Empire collapsed into a dark age called the Silence. New kingdoms have since risen across an Earth-like world of continents. They are mostly stable, but nobody has settled who will rule or what the world should become.
 
-The world can be saved. The alignments disagree about what saving it means, so each one's victory would look different.
+The world can be saved. The alignments disagree about what saving it means, so each one's victory would look different. These are hard times, and hope is real but not easy: the creator put hope at 2 out of 5.
 
 ## History
 
@@ -26,9 +26,9 @@ All of existence was once intertwined and harmonious, or that is the ideal peopl
 With the gods gone, a society that depended on them could no longer survive as it was. A brief period of darkness and chaos followed, similar to the Bronze Age collapse.
 
 ### The present
-New kingdoms have been established and are generally stable, with some cracks. Ultimate control is far from decided. About 150 years have passed since the cataclysm, and nobody alive remembers the old empire.
+New kingdoms have been established and are generally stable, with some cracks. Ultimate control is far from decided. About 150 years have passed since the cataclysm, and no mortal alive remembers the old empire. Long-lived beings such as the Velunn or dragons may.
 
-**Community character (creator direction, 2026-11-06):** this is a world emerging from a dark time, with established societies and the possibility of optimism. It is not a uniformly cosmopolitan world. Communities have distinct local populations and identities; ordinary scenes should not automatically mix every people and background. Lion folk generally keep to themselves. Orcs are not Vigil / white aligned. These are setting constraints, not a claim that every society is identical or that every individual lacks a distinct life.
+**Communities:** this is a world emerging from a dark time, with established societies and the possibility of optimism. Most places are not cosmopolitan. Communities have their own local populations and identities, and some mixing is fine. Where different peoples do meet, their differences matter and are part of the setting. Lion folk generally keep to themselves. Orcs are never Vigil.
 
 ## Look
 
@@ -60,7 +60,7 @@ They are related to the gods, but their existence doesn't prove the gods are rea
 
 ## Vampires
 
-Vampires exist, but they are a subtle, rare part of the world and stay in the shadows. They can belong to Dominion or Fervor. They should never feel common or become a major presence on cards.
+Vampires exist, but they are a subtle, rare part of the world and stay in the shadows. They can belong to Dominion or Fervor.
 
 ## Peoples, creatures and constructs
 
@@ -77,7 +77,7 @@ This catalogue brings the selected visual concepts into the setting notes at the
 | Humans | Widespread people with many cultures and allegiances. Humans appear in every alignment; summoner ancestry passes through many bloodlines rather than one royal family. |
 | Lion folk | Tall, upright people with lion heads and manes. The Sunmane Oath provides the best-known visual examples so far: expressive, dignified figures with believable feline anatomy. Their cultures and loyalties are not all defined by that faction. They generally keep to themselves and are not routine residents in every settlement. |
 | Goblins | Small humanoid people already present among the Warhorde and in the Goblin cutter card. Keep individuals expressive and resourceful; the card examples do not establish a single universal goblin culture. |
-| Orcs | Broad, strongly built humanoid people, including raiders and leaders in the existing Fervor cards. Individual roles and philosophies can differ, but orcs are not Vigil / white aligned. |
+| Orcs | Broad, strongly built humanoid people, including raiders and leaders in the existing Fervor cards. Individual roles and philosophies can differ, but orcs are never Vigil. |
 | Giants | Towering humanoid people already represented by the hill giant and Warhorde references. Their societies and relationship with other peoples remain open. |
 | Dragons and drakes | Winged creatures of very different scale. An elder dragon can have an immense presence; the ember drake is a lean, roughly horse-sized flier. Precise taxonomy and intelligence are not yet fixed. |
 | Great owls and great herd beasts | Oversized wild animals, including the great owl and elder herd bull in the current cards. They help establish the wild world's scale without automatically being divine beings. |
@@ -175,7 +175,7 @@ This is for the creator only, and no one in the world knows it.
 
 The gods are alive, in another realm. The rope that pulled away at the Cataclysm is really a great distance in an interdimensional sense, and primordial chaos now fills the gap. The image is Satan crossing the void from Hell in *Paradise Lost* and seeing Heaven in the distance. The distance isn't infinite, but crossing it would take such strength that nobody knows if it can be done.
 
-The gods are diminished only because they are so far away. Close to their worshippers, they grow strong.
+The gods are diminished only because they are so far away. Close to their worshippers, they grow strong. Crossing or closing that distance would make them less diminished, but it may come at a great cost.
 
 Summoners draw their power from this. The thread that once bound them to the gods is somehow still connected, and it really leads into that primordial realm. A summoner might feel a connection to the swirling chaos and the entities within it, to goodness, or to evil entities directly. None of them knows this is what they are feeling.
 
@@ -189,9 +189,13 @@ This isn't decided yet. The creator's ideas so far centre on the main god being 
 - The Empire developed evil technology or forbidden secrets that destroyed him.
 - Cultists summoned a great primordial entity that destroyed him.
 
+**Proposed:** a combined answer. The Empire's forbidden research let cultists reach a primordial entity, another god helped them, and the main god gave himself up to keep the world from breaking. Almost every side would share some blame, and Vigil's suspicion of Gnosis would be partly justified.
+
 ## The alignments
 
 Alignments are outlooks and don't map neatly onto states or factions. Hybrid cards can come later. Humans appear in all of them.
+
+**Proposed:** each alignment is partly right and doesn't know it. Vigil is right that the gods are out there but may never reach them. Gnosis is right that magic follows rules but doesn't know what it's studying. Dominion could learn the most from the evil entities in the chaos. Fervor may be closest to the chaos itself. Each campaign could reveal a different piece of the truth.
 
 ### Vigil (white)
 - **Wants:** to restore the old empire and bring back the gods.
@@ -204,7 +208,7 @@ Alignments are outlooks and don't map neatly onto states or factions. Hybrid car
 - **Believes:** the empire stifled innovation and had stopped moving forward. Magic is a science.
 
 ### Dominion (black)
-- **Environment (creator correction, 2026-11-06):** substantially harsher and worse than the benign, orderly city in the rejected campaign painting, and less cosmopolitan. Its dark order must not read as merely a tidy civic alternative.
+- **Life under it:** harsh and oppressive across the whole alignment. Nobody should expect a good life as a Dominion peasant. Its dark order is not a tidy civic alternative, and its places are less cosmopolitan than most.
 - **Wants:** either for the degeneration to continue into utter ruin, or to build a new, dark order.
 - **Politics:** the one alignment with no democratic streak.
 
@@ -248,13 +252,25 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 
 - **World:** Earth-like, with one large continent, some medium ones and several small ones.
 - **Campaign:** one story for each alignment.
-- **Map:** a campaign map is wanted; the current game has a route map. Both painted world/region studies from the 2026-11-05 art batch were rejected on 2026-11-06 for unconvincing scale. Their geography and place assignments are not canon. Keep wider geography loose while a suitable map direction is developed.
+- **Maps:** each campaign has its own zoomed-in region map, mostly for atmosphere, which doesn't fix the wider geography. A larger world map is still possible. The painted world studies from 2026-11-05 aren't canon.
 
 ## Open questions
 
 1. **Names:** the gods and the continents still need names. They can be longer than one word.
 2. **The snap:** which of the ideas above, if any, is the true cause of the Cataclysm?
 3. **Title:** Breachline is still a working title, and nothing in the setting explains it yet.
+
+## Proposed links between cards
+
+**Proposed:** the Oath knight's stone bridge could be the spearman's Sallow Bridge, quietly connecting the two.
+
+## Set aside
+
+- **Premises:** The Breach, The Empty Throne, The Fading Sun and The Buried Gods, all set aside for the creator's own premise. The Breach would have explained the title.
+- **Alignment names:** Covenant and Root were disliked. Inquiry and Fury were liked before Gnosis and Fervor were picked. Ardor, Zeal, Furor, Frenzy and Rapture were red's other options.
+- **Lesser gods:** the Orethim and the Sethari.
+- **Summoners:** "the Gilded" was left out only because the creator didn't mention it.
+- **Empire and history:** longer formal names, because "the Empire" or "the Old Empire" works. "The Silence" names the dark age after the Cataclysm, not the Cataclysm itself.
 
 ## Campaign art selection (2026-11-06)
 

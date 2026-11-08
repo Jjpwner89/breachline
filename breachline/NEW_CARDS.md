@@ -103,9 +103,9 @@ These cards use paintings from `art/concepts/`, and they're in the prototype as 
 | Clearing the channel | `alderkin-waterkeeper.png` | Genesis | Spell | 4 | 2 | | Each of your units permanently gets +2 health | None yet |
 | Reedcrown grazer | `reedcrown-grazer.png` | Genesis | Unit | 2 | 1 | 1 / 4 | Instead of moving or attacking: draw a card, then put a card on the bottom of your deck | None yet |
 
-To make room, the starter decks lost Militia spearman and Pride cub (Sunmane), Goblin cutter and Sellsword (Warhorde), one Illusory decoy (Conclave) and one Ashen Court noble (Ashen Court). The Genesis cards stay out of The Elder Herd until its win rate comes down.
+To make room, the starter decks lost Militia spearman and Pride cub (Sunmane), Goblin cutter and Sellsword (Warhorde), one Illusory decoy (Conclave) and one Ashen Court noble (Ashen Court).
 
-Set aside until a painting suits them: Hunted (Dominion enchantment, cost 2, wants 1: enchant an enemy unit, and it loses 10 health at the start of its owner's turn) and Sifting the shallows (Gnosis spell, cost 1, wants 1: draw a card, then put a card from your hand on the bottom of your deck).
+Set aside until a painting suits it: Sifting the shallows (Gnosis spell, cost 1, wants 1: draw a card, then put a card from your hand on the bottom of your deck). Hunted, also set aside here at first, is now in `CARD_PROPOSALS.md`.
 
 Left out on purpose: `opaline-window-mender.png` (the Opaline Kin are excluded from the lore), `stonehorn-bridgekeeper.png` (the least liked design, still developing) and `tidevault-at-the-old-harbour.png` (the creature is painted too large).
 

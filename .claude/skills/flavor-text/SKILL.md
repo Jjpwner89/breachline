@@ -5,15 +5,15 @@ description: Writes and reviews flavour text for Breachline cards in the game's 
 
 # Breachline flavour text
 
-Flavour text makes the world feel old, costly and real. The creator wants the setting taken seriously, because puns and jokes on a card break the spell of the painted art around it.
+Flavour text makes the world feel old, costly and real. The creator wants the setting to take itself seriously. Humour has a place, but a line that tries too hard to be funny breaks the spell of the painted art around it.
 
 ## Status: being worked out
 
-Early lines failed because they were generic and had no grounding in the world. Read `breachline/SETTING.md` first and draw on the setting's own history, places and people. Details marked Proposed there aren't approved, so confirm them before leaning on them. Lines the creator has kept, rejected or not yet judged are in `breachline/FLAVOUR.md`, so check it before writing and add new lines there. Lines the creator asked to add go on cards through the `FLAVOUR` list in `breachline/ui.js`; other new lines stay off cards until the creator asks. Never reveal the setting's secret truth about the gods outright; a line can only hint at it.
+Early lines failed because they weren't in the tone the creator intended for the world. Read `breachline/SETTING.md` first and draw on the setting's own history, places and people. Details marked Proposed there aren't approved, so confirm them before leaning on them. Lines the creator has kept, rejected or not yet judged are in `breachline/FLAVOUR.md`, so check it before writing and add new lines there. Lines the creator asked to add go on cards through the `FLAVOUR` list in `breachline/ui.js`; other new lines stay off cards until the creator asks. Never reveal the setting's secret truth about the gods outright; a line can only hint at it.
 
 ## Core voice
 
-Take the world seriously, but vary the mood. Lines can be hopeful, proud, warm or dry as well as somber, and only puns and out-and-out jokes are ruled out. Let the line carry weight through what it implies.
+Take the world seriously, but vary the mood. Lines can be hopeful, proud, warm or dry as well as somber. Jokes and dry humour are welcome, as long as they don't strain for a laugh. Avoid puns. Let the line carry weight through what it implies.
 
 - **Stop early.** End on the first line that lands. The creator cut second sentences that kept explaining, so test every line by deleting its last sentence.
 - **Be about this card's subject.** Write about who this character is and what their life is like, instead of the setting's big themes. Don't describe their ability, which the rules text already covers.
@@ -49,14 +49,14 @@ Use specific details, such as a number, an object or a role, because they're wha
 
 These all make a card feel like it's winking at the reader:
 
-- Puns and out-and-out jokes
-- Irony, sarcasm or a punchline in the second half of the line
+- Puns
+- Humour that strains for a laugh, such as a punchline tacked onto the end
 - Action-hero bravado
 - Lines that would work equally well on any card
 
 ## Tone by colour
 
-Match the line to the colour first, then keep it somber within that colour's energy.
+Match the line to the colour first, then keep it serious within that colour's energy.
 
 | Colour | Alignment | Voice | Emotions to draw on |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ Match the line to the colour first, then keep it somber within that colour's ene
 | Red | Fervor | High energy; short, driving and urgent, with hunger behind it | Fury, exhilaration, defiance, the emptiness after the fire |
 | Blue | Gnosis | Esoteric and strange; speaks of knowledge as a dangerous thing | Curiosity, obsession, unease, awe at what shouldn't be known |
 
-Black and green don't have a voice yet. Ask the creator before writing lines for them.
+Black and green have no voice row yet. Draw on the Dominion and Genesis lines in `breachline/FLAVOUR.md`.
 
 ## Emotion by card type
 
@@ -85,6 +85,10 @@ Read the line aloud and check that:
 
 1. It would still feel right beside a serious oil painting.
 2. It sounds like this colour and card type, and couldn't be moved to another card unchanged.
-3. It has no pun or joke that asks for a laugh, and it doesn't go on after its best moment.
+3. It has no pun, doesn't strain to be funny, and doesn't go on after its best moment.
 
 When offering options, give two or three lines that differ in emotion, not just wording.
+
+## Open question
+
+Should a line ever cite an in-world source, such as a named book? Crediting a role is fine.

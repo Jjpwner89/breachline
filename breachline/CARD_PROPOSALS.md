@@ -2,7 +2,7 @@
 
 Drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. None of these are in the game, and none have been played or simulated. Numbers are small-scale and will move in playtesting.
 
-Give verdicts by number. Art briefs for the 26 new cards are in `art/ART_BRIEFS_SET4.md`, and no images have been generated. Flavour lines come after approval: the flavour rules say to ask before writing black and green lines, and black and green make up about half of this batch.
+Give verdicts by number. Art briefs for the 26 new cards are in `art/ART_BRIEFS_SET4.md`, and all 26 images have been generated and await review. Flavour lines come after approval.
 
 ## How these were built
 
@@ -10,7 +10,7 @@ Give verdicts by number. Art briefs for the 26 new cards are in `art/ART_BRIEFS_
 - Most cards reuse a keyword that was on only one card, so those keywords can start to carry a strategy. "New code" below shows what each card would take to build.
 - Cards costing 1 or 2 can be plain. Almost everything at 3 or more does something, and Sellsword is the exception.
 - Spindlejacks and Dawnsails stay out of combat, as you chose. Alderkin can fight, and Grove tender is one. Opaline Kin, Stonehorns and Tidevaults aren't used.
-- No buildings, walls, stored mana, counterspells or board wipes. Nothing hits the enemy summoner directly, since that would undercut the back-row rule.
+- No buildings, walls or stored mana.
 - Stats follow the existing curve, about 2.5 stat points per mana, with abilities paid for by lower stats. Genesis runs above that and Gnosis below it, matching their tendencies.
 
 ## Vigil (white)
@@ -115,4 +115,3 @@ Each of these appears on only one or two cards, so saying no to one touches litt
 
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
-3. **Coalback forager (already in `main`):** "1 extra mana next turn" is a small form of the stored mana you cut. Is that fine because it only lasts a turn, or should it change?
