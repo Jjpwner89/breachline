@@ -184,15 +184,19 @@ function randomField(r, ids) {
   // These runs use the real save slot, so whatever was there goes back afterwards.
   var KEY = 'breachline.campaign.v1', kept = localStorage.getItem(KEY), story = Campaign.STORIES.vigil, last = story.chapters.length - 1;
   var starter = JSON.stringify(E.DECKS.white.list);
-  var bad = story.chapters.filter(function (c) { return E.deckProblems(c.enemy.list).length; });
-  var roadStops = story.road.map(function (p) { return p[0] + ',' + p[1]; }), lastStop = -1;
-  check('the traced road passes through every stop in order', story.chapters.every(function (c) {
-    var at = roadStops.indexOf(c.x + ',' + c.y), ok = at > lastStop;
-    lastStop = at;
-    return ok;
-  }));
-  check('every unwritten campaign has a map and six stops', Object.keys(Campaign.LATER).length === 4 && Object.keys(Campaign.LATER).every(function (k) { var l = Campaign.LATER[k]; return l.chapters.length === 6 && /map-/.test(l.map); }));
-  check('every enemy deck is legal', !bad.length, bad.map(function (c) { return c.id; }).join(', '));
+  var all = Campaign.ORDER.map(function (k) { return Campaign.STORIES[k]; }), bad = [], offRoad = [];
+  all.forEach(function (s) {
+    var roadStops = s.road.map(function (p) { return p[0] + ',' + p[1]; }), lastStop = -1;
+    s.chapters.forEach(function (c) {
+      var at = roadStops.indexOf(c.x + ',' + c.y);
+      if (at <= lastStop) offRoad.push(s.id + ' ' + c.id);
+      lastStop = at;
+      if (E.deckProblems(c.enemy.list).length) bad.push(s.id + ' ' + c.id);
+    });
+  });
+  check('all five campaigns have six chapters, a starter and a map', all.length === 5 && all.every(function (s) { return s.chapters.length === 6 && E.DECKS[s.starter] && /map-/.test(s.map); }));
+  check('every traced road passes through its stops in order', !offRoad.length, offRoad.join(', '));
+  check('every enemy deck is legal', !bad.length, bad.join(', '));
   var offers = 0, wrong = [];
   for (var seed = 1; seed <= 200; seed++) {
     var run = Campaign.begin('vigil', 'bot', seed);

@@ -113,8 +113,7 @@ var Screens = (function () {
   function fitAll() { GameUI.fitCards(root); }
 
   function setup() {
-    var ready = GameUI.modelReady(), vigil = Campaign.STORIES.vigil, all = [vigil].concat(Object.keys(Campaign.LATER).map(function (k) { return Campaign.LATER[k]; }));
-    var story = setupStory === vigil.id ? vigil : Campaign.LATER[setupStory];
+    var ready = GameUI.modelReady(), all = Campaign.ORDER.map(function (k) { return Campaign.STORIES[k]; }), story = Campaign.STORIES[setupStory];
     var choose = '<div class="astories" role="group" aria-label="Campaigns">' + all.map(function (a) {
       return '<button type="button" class="astory" ' + act('setStory', a.id) + ' aria-pressed="' + (a === story) + '">' + symbol(a.colour) + GameUI.ALIGNMENT[a.colour] + '</button>';
     }).join('') + '</div>';
@@ -123,13 +122,9 @@ var Screens = (function () {
       ['easy', 'normal', 'hard'].map(function (k) {
         return '<button type="button" class="who-plays" ' + act('setPlayer', k) + ' aria-pressed="' + (setupPlayer === k) + '"' + (ready ? '' : ' disabled') + '><b>Claude: ' + AI.levels[k].label + '</b><span>' + AI.levels[k].blurb + '</span></button>';
       }).join('');
-    if (story !== vigil) {
-      show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
-        '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>This campaign isn\'t written yet. This is the road it will take.</p></div></aside></div></div>', setup);
-      return;
-    }
     show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
-      '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol('W') + 'Vigil</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p></div>' +
+      '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p>' +
+      '<p class="hint">You start with ' + esc(E.DECKS[story.starter].name) + '.</p></div>' +
       '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
@@ -187,7 +182,7 @@ var Screens = (function () {
   actions.campaign = function () { mapPick = null; confirmAbandon = false; campaign(); };
   actions.setPlayer = function (key) { setupPlayer = key; setup(); };
   actions.setStory = function (id) { setupStory = id; setup(); };
-  actions.beginRun = function () { Campaign.begin('vigil', setupPlayer); actions.campaign(); };
+  actions.beginRun = function () { Campaign.begin(setupStory, setupPlayer); actions.campaign(); };
   actions.mapPick = function (i) { mapPick = +i; campaign(); };
   actions.fight = function () { GameUI.playChapter(); };
   actions.takeCard = function (id) { Campaign.take(id === undefined ? null : id); actions.campaign(); };
