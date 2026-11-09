@@ -80,6 +80,38 @@ Three of the four plain units costing 3 or more get an ability and keep their st
 | 29 | Orc warchief | 5 / 5 | Warband: adjacent allies get +1 attack | Stops Sunmane lancer outclassing it | Small |
 | 30 | Hill giant | 5 / 8 | Stomp: its attacks also deal 1 to enemies next to the target | Stops Elder Herd bull outclassing it | Small |
 
+## Cards from the reference library
+
+Added on 2026-11-08. You voted on every reference sheet and chose these to become cards, then set their numbers and rules in discussion. Each one depicts the character or item from its accepted sheet. Art briefs are in `art/ART_BRIEFS_SET5.md`, and nothing has been generated yet.
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Source sheet | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 31 | Conclave field scholar | Lantern Conclave | Unit | 3 | 1 | 2 / 3 | Zap: instead of attacking, deal 1 damage to an enemy up to 2 tiles away | Character kit 03 | Small |
+| 32 | Harmonic wardwright | Lantern Conclave | Unit | 4 | 2 | 3 / 4 | Ranged. Resonance: its attacks also deal 1 to each enemy next to the target | Magic and craft 01 | Small |
+| 33 | Brightlance | Lantern Conclave | Spell | 3 | 1 |  | Deal 2 damage to an enemy unit, then push it 1 tile | Magic and craft 01, the same wardwright | Small |
+| 34 | Woven ward | Artificers | Enchantment | 3 | 1 |  | Enchant one of your units: it ignores the next 4 damage, then the ward is used up | Magic and craft 02 | Small |
+| 35 | Enchanter's quench | Artificers | Enchantment | 2 | 1 |  | Enchant one of your units: +1 attack, and its attacks ignore Guard and other damage reduction | Round 04 study 05 | Small |
+| 36 | Rime drake | None, a wild creature | Unit | 4 | 2 | 3 / 4 | Flying. Freeze: the unit it attacks can't move on its next turn | Round 04 study 02 | Small |
+| 37 | Thornwarden goblin scout | Thornwardens | Unit | 1 | 1 | 1 / 1 | Ranged | Character kit 04 | None |
+| 38 | Bronze-harness alderkin | None, its own purposes | Unit | 4 | 2 | 4 / 7 | None | Character kit 07 | None |
+| 39 | Porcelain-visored retainer | Ashen Court | Unit | 3 | 1 | 2 / 5 | Guard. Sworn: permanently +1 attack each time another of your units is destroyed, up to +3 | Character kit 06 | Small |
+| 40 | Veil adept | Ashen Court | Unit | 3 | 1 | 4 / 2 | Veiled: can't be attacked or targeted by enemy cards until it attacks | Round 04 study 01 | Small |
+| 41 | Banked flame blade | Cinder Clans | Equipment | 2 | 1 |  | Equip one of your units: +2 attack | Round 04 study 03 | None |
+| 42 | Stoneward colossus |  | Unit | 6 | 0 | 5 / 8 | Guard. Can't move and can't be pushed | Round 04 study 06 | Small |
+
+Choices made in discussion:
+
+- **Conclave field scholar:** drawing a card was too strong. Zap deals less than her normal attack of 2.
+- **Harmonic wardwright:** Conclave examiner already has its own painting, so the wardwright gets his own cards. He's an attacker. Resonance works the same way as Hill giant's proposed Stomp. Brightlance shows him casting, with a moving blue-violet lance of light.
+- **Woven ward:** raised from 2 to 3.
+- **Rime drake:** blue.
+- **Bronze-harness alderkin:** Genesis, with no ability. Reach was too far and Set spear was cut.
+- **Banked flame blade:** the card is the blade. Equipment plays exactly like an enchantment under a different label, so it needs no new rules. You like the bearer, so he could get his own card later.
+- **Enchanter's quench:** the card is the enchantment.
+- **Stoneward colossus:** raised to 5 / 8. Whether it keeps "can't move" is still open.
+
+This batch adds 6 Gnosis cards, 2 each to Genesis and Dominion, 1 to Fervor and 1 neutral, so the pool below would reach 94. Vigil gets none, and Fervor gets only the blade.
+
 ## What the pool looks like if all of it is approved
 
 | Alignment | Cards now | Added | Total | Units by cost now | Units by cost after |
@@ -110,8 +142,20 @@ Each of these appears on only one or two cards, so saying no to one touches litt
 | Attack boost against one target | Hunted | Each attacker gets it, so it rewards ganging up |
 | Permanent growth for an ally | Grove tender | |
 | Effect when summoned | Goblin firepot, Scarred summoner | Already exists for land drops and life cost |
+| Zap, a ranged ability weaker than the unit's attack | Conclave field scholar | |
+| Splash damage on attack | Harmonic wardwright, Hill giant | Shared by Resonance and Stomp |
+| Direct damage in Gnosis | Brightlance, Conclave field scholar | Direct damage has been a Fervor thing. Push keeps Brightlance feeling like the Conclave |
+| Ignore the next set amount of damage | Woven ward | |
+| Ignore Guard and damage reduction | Enchanter's quench | |
+| Freeze, Binding glyph's rule for one turn | Rime drake | |
+| Grows when your units die | Porcelain-visored retainer | The game's first "when a unit dies" trigger |
+| Veiled, untargetable until it attacks | Veil adept | Strong at 4 attack. The 2 health keeps it fair |
+| Equipment, a label for enchantments that are objects | Banked flame blade | No new rules |
+| Can't move or be pushed | Stoneward colossus | |
 
 ## Questions
 
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
+3. **Stoneward colossus:** keep "can't move", or let it walk as a large neutral unit?
+4. **The next cards:** Vigil and Fervor need the most. Candidates are a Fervor card using lightning, a card that keeps the Cinder-cant drummer's look, and two or three Vigil cards.
