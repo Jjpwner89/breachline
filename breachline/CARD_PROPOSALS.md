@@ -109,7 +109,7 @@ Added on 2026-11-08. You voted on every reference sheet and chose these to becom
 | 39 | Porcelain-visored retainer | Ashen Court | Unit | 3 | 1 | 2 / 5 | Guard. Sworn: permanently +1 attack each time another of your units is destroyed, up to +3 | Character kit 06 | Small |
 | 40 | Veil adept | Ashen Court | Unit | 3 | 1 | 4 / 2 | Veiled: can't be attacked or targeted by enemy cards until it attacks | Round 04 study 01 | Small |
 | 41 | Banked flame blade | Cinder Clans | Equipment | 2 | 1 |  | Equip one of your units: +2 attack | Round 04 study 03 | None |
-| 42 | Stoneward colossus |  | Unit | 6 | 0 | 5 / 8 | Guard. Can't move and can't be pushed | Round 04 study 06 | Small |
+| 42 | Stoneward colossus |  | Unit | 6 | 0 | 4 / 8 | Guard. Holding ground | Round 04 study 06 | Small |
 
 Choices made in discussion:
 
@@ -120,7 +120,7 @@ Choices made in discussion:
 - **Bronze-harness alderkin:** Genesis, with no ability. Reach was too far and Set spear was cut.
 - **Banked flame blade:** the card is the blade. Equipment plays exactly like an enchantment under a different label, so it needs no new rules. You like the bearer, so he could get his own card later.
 - **Enchanter's quench:** the card is the enchantment.
-- **Stoneward colossus:** raised to 5 / 8. Whether it keeps "can't move" is still open.
+- **Stoneward colossus:** it walks after all. Holding ground replaced "can't move or be pushed", and it dropped to 4 / 8 to make it a bit weaker.
 
 This batch adds 6 Gnosis cards, 2 each to Genesis and Dominion, 1 to Fervor and 1 neutral, so the pool below would reach 94. Vigil gets none, and Fervor gets only the blade.
 
@@ -145,7 +145,7 @@ Choices made in discussion:
 - **Scorch and Frost:** given short names.
 - **Stormstrike:** this is the Fervor lightning card you asked for.
 - **Cut:** Goblin torch-runner, which felt contrived, and Moss-walker, which repeated the salamander's idea.
-- **Grave soil:** its thrall appears where the unit died rather than in the back row. This is the only exception to where summons arrive. It summons the existing Gravebound thrall, 2 / 2, to match Gravecaller.
+- **Grave soil:** its thrall appears where the unit died rather than in the back row. This is the only exception to where summons arrive. It summons the existing Gravebound thrall, to match Gravecaller.
 
 ## Summoning, added cards, new keywords and death triggers
 
@@ -156,7 +156,6 @@ Added on 2026-11-09, to give the other new mechanics in `DESIGN_NOTES.md` their 
 | 54 | Muster the levy | Vigil | Spell | 3 | 1 |  | Summon two Militia spearmen | Summoning |
 | 55 | Pride lioness | Sunmane Oath | Unit | 4 | 2 | 3 / 5 | When summoned: summon a Pride cub | Summoning |
 | 56 | Goblin rabble-rouser | Warhorde | Unit | 3 | 1 | 2 / 2 | When summoned: summon a Goblin cutter | Summoning |
-| 57 | Hedge summoner |  | Unit | 3 | 0 | 1 / 3 | Errant. Ability: summon a Camp follower on a random tile in your back row | Errant summons |
 | 58 | Seedfall | Genesis | Spell | 4 | 2 |  | Summon two Walking saplings | Summoning |
 | 59 | Gravecaller | Gravebound | Unit | 4 | 2 | 2 / 4 | When an adjacent ally dies, summon a Gravebound thrall | Summoning, death trigger |
 | 60 | Lantern apprentice | Lantern Conclave | Unit | 2 | 1 | 1 / 2 | When summoned: add a Spark to your hand. Spark costs 1: 1 damage to a unit | Added cards |
@@ -177,7 +176,28 @@ Choices made in discussion:
 - **Court assassin:** renamed from Court cutthroat. It costs more than the 2-cost draft, with two keywords and a harder hit.
 - **Cinder martyr:** sets the tiles around it burning instead of dealing damage directly.
 - **Cinder-cant drummer:** the drummer you liked as a design, now as a card.
-- **Hedge summoner:** the weaker kind of summoner, whose units land on a random back-row tile.
+- **Hedge summoner (#57):** cut. Young summoner becomes the errant summoner instead (#83).
+
+## Loyal
+
+Added on 2026-11-09. Loyal is +1 / +1 while you have another unit of the same sub-faction on the board, or +2 / +2 on a few cards. The rule is in `DESIGN_NOTES.md`. Eight more cheap Loyal units were drafted and cut, because an existing card already covered each one. These two stayed, because Still Flame and Artificers have few units and nothing like them.
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 73 | Still Flame acolyte | Still Flame | Unit | 2 | 1 | 1 / 3 | Loyal: +2 / +2 |
+| 75 | Artificer's journeyman | Artificers | Unit | 2 | 1 | 1 / 3 | Loyal: +2 / +2 |
+
+## More changes to existing cards
+
+Added on 2026-11-09, after checking the built cards against the new mechanics.
+
+| # | Card | Was | Becomes | Why |
+| --- | --- | --- | --- | --- |
+| 82 | Gravebound thrall | 2 / 2, no ability | 1 / 1. Loyal: +1 / +1 | The thralls that Grave soil and Gravecaller summon get stronger together |
+| 83 | Young summoner | 2 / 3, no ability | 1 / 3. Errant. Ability: summon a Camp follower on a random tile in your back row | An inexperienced summoner, and the errant summoner in place of the cut Hedge summoner. It already has art |
+| 84 | Slateprowler | 3 / 3, Hunt | 3 / 3, Hunt and Ambush | A stalking creature, and Dominion's second ambusher |
+| 85 | Thornwarden saboteur | 2 / 3, Regrow | 2 / 3, Ambush | Its name says it sneaks in. Ambush replaces Regrow |
+| 86 | Cinderfall | 3 damage to an enemy unit and 1 to each enemy next to it | Aim at a tile: 3 damage to a unit there and 1 to each enemy next to it, and the tile burns for 2 turns | Red's area spell joins the fire theme |
 
 ## What the pool looks like if all of it is approved
 
@@ -224,5 +244,5 @@ Each of these appears on only one or two cards, so saying no to one touches litt
 
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
-3. **Stoneward colossus:** keep "can't move", or let it walk as a large neutral unit?
+3. **Existing-card changes still waiting on a verdict:** Loyal for Militia spearman and Goblin cutter, Holding ground in place of Oath knight's Steadfast, a card drawn when Camp follower dies, and Ember drake's tile burning when it dies.
 4. **The next cards:** Vigil and Fervor need the most. Candidates are a Fervor card using lightning, a card that keeps the Cinder-cant drummer's look, and two or three Vigil cards.
