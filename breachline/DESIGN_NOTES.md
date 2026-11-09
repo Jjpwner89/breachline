@@ -55,7 +55,12 @@ Decided by the creator on 2026-11-09, to make more of the board. None of these a
 - **Flanking:** +1 attack when an ally stands on the far side of the target.
 - **Holding ground:** an enemy that moves next to this unit must stop there, so it can't slip past.
 - **Death triggers:** effects that happen when a unit dies. Sworn is the first.
-- **Tile effects:** an effect that sits on a tile for a turn or two, like fire or frozen ground. These are temporary, unlike the permanent terrain set aside below.
+- **Tile effects:** an effect that sits on a tile for a turn or two, like fire or frozen ground. These are temporary, unlike the permanent terrain set aside below. Rules:
+  - An effect lasts a set number of its owner's turns, usually 1 to 3, and shows on the tile with a counter. Keep durations short, since the board has only 20 tiles.
+  - One effect per tile, and a new one replaces the old one.
+  - Effects such as fire and thorns hurt your own units too, unless a unit is exempt. Alderkin aren't affected by thorns.
+  - A unit is affected when it moves onto the tile, and again if it starts its owner's turn there. A flier passing over isn't affected, but one that stops on the tile is.
+  - Nothing on the board is hidden, so snares and traps are visible to both players.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Proposed, not yet confirmed:** conjured cards. Summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects.
 
@@ -159,6 +164,7 @@ Worth playtesting:
 - **Starter balance after Set 4:** in 320 bot games on 2026-11-08 the green starter won 87 and lost 41, up from 78 and 50, and black fell from 53 and 75 to 49 and 79. Hill giant's Stomp and the weaker Sellsword are the likely causes.
 - **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
 - **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
+- **A bigger board:** test expanding beyond 5 by 4, since tokens and tile effects both need room on the board.
 - **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health.
 
 ## Open questions for the creator

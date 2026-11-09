@@ -124,6 +124,29 @@ Choices made in discussion:
 
 This batch adds 6 Gnosis cards, 2 each to Genesis and Dominion, 1 to Fervor and 1 neutral, so the pool below would reach 94. Vigil gets none, and Fervor gets only the blade.
 
+## Tile effects
+
+Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen after the focus audit in `CARD_AUDIT.md`. The rules for tile effects are in `DESIGN_NOTES.md`. Numbers 45 and 50 were cut in discussion, so they're skipped here. No art briefs have been written yet.
+
+| # | Card | Colour | Type | Cost | Wants | Stats | Rules | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 43 | Scorch | Fervor | Spell | 2 | 1 |  | Aim at a tile: 2 damage to a unit there, and the tile burns for 2 turns. Burning deals 1 damage | New: tile effects and aimed spells |
+| 44 | Stormstrike | Fervor | Spell | 3 | 1 |  | Aim at a tile: 3 damage to a unit there and 1 to every unit next to it, yours included. The tile stays charged for 1 turn, and the next unit to enter it takes 2 | Small, once tile effects exist |
+| 46 | Ember salamander | Fervor | Unit | 3 | 1 | 3 / 3 | Burning doesn't hurt it. +2 attack while it stands on a burning tile | Small |
+| 47 | Frost | Gnosis | Spell | 3 | 1 |  | Aim at a tile: it and the tiles next to it freeze until the end of your next turn. Units on frozen tiles can't move | Small |
+| 48 | Glyphwright | Gnosis | Unit | 3 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, lasting 3 turns. The first enemy to enter it stops there and can't move on its next turn. Snares are visible to both players | Small |
+| 49 | Thornbrake | Genesis | Spell | 2 | 1 |  | Aim at a tile: thorns for 3 turns. A unit that enters must stop there and takes 1 damage. Alderkin aren't affected | Small |
+| 51 | Grave soil | Dominion | Spell | 2 | 1 |  | Aim at a tile: blighted for 3 turns. Units there have -1 attack. When a unit dies on it, you summon a 1 / 1 thrall on that tile | Small, once summoning exists |
+| 52 | Ash-sower | Dominion | Unit | 3 | 1 | 3 / 3 | Ability: blight a tile next to it for 3 turns | Small |
+| 53 | Consecrated ground | Vigil | Spell | 2 | 1 |  | Aim at a tile: for 3 turns, your unit there takes 1 less damage from attacks and recovers 1 health at the start of your turn | Small |
+
+Choices made in discussion:
+
+- **Scorch and Frost:** given short names.
+- **Stormstrike:** this is the Fervor lightning card you asked for.
+- **Cut:** Goblin torch-runner, which felt contrived, and Moss-walker, which repeated the salamander's idea.
+- **Grave soil:** its thrall appears where the unit died rather than in the back row. This is the only exception to where summons arrive.
+
 ## What the pool looks like if all of it is approved
 
 | Alignment | Cards now | Added | Total | Units by cost now | Units by cost after |
