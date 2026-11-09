@@ -136,7 +136,7 @@ Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen 
 | 47 | Frost | Gnosis | Spell | 3 | 1 |  | Aim at a tile: it and the tiles next to it freeze until the end of your next turn. Units on frozen tiles can't move | Small |
 | 48 | Glyphwright | Gnosis | Unit | 3 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, lasting 3 turns. The first enemy to enter it stops there and can't move on its next turn. Snares are visible to both players | Small |
 | 49 | Thornbrake | Genesis | Spell | 2 | 1 |  | Aim at a tile: thorns for 3 turns. A unit that enters must stop there and takes 1 damage. Alderkin aren't affected | Small |
-| 51 | Grave soil | Dominion | Spell | 2 | 1 |  | Aim at a tile: blighted for 3 turns. Units there have -1 attack. When a unit dies on it, you summon a 1 / 1 thrall on that tile | Small, once summoning exists |
+| 51 | Grave soil | Dominion | Spell | 2 | 1 |  | Aim at a tile: blighted for 3 turns. Units there have -1 attack. When a unit dies on it, you summon a Gravebound thrall on that tile | Small, once summoning exists |
 | 52 | Ash-sower | Dominion | Unit | 3 | 1 | 3 / 3 | Ability: blight a tile next to it for 3 turns | Small |
 | 53 | Consecrated ground | Vigil | Spell | 2 | 1 |  | Aim at a tile: for 3 turns, your unit there takes 1 less damage from attacks and recovers 1 health at the start of your turn | Small |
 
@@ -145,7 +145,39 @@ Choices made in discussion:
 - **Scorch and Frost:** given short names.
 - **Stormstrike:** this is the Fervor lightning card you asked for.
 - **Cut:** Goblin torch-runner, which felt contrived, and Moss-walker, which repeated the salamander's idea.
-- **Grave soil:** its thrall appears where the unit died rather than in the back row. This is the only exception to where summons arrive.
+- **Grave soil:** its thrall appears where the unit died rather than in the back row. This is the only exception to where summons arrive. It summons the existing Gravebound thrall, 2 / 2, to match Gravecaller.
+
+## Summoning, added cards, new keywords and death triggers
+
+Added on 2026-11-09, to give the other new mechanics in `DESIGN_NOTES.md` their first cards. Summoned units and added cards are conjured, and they're copies of existing cheap cards wherever possible, so players already know them and they already have art. New conjured cards (Spark, War-chant and Cursed coin) are described in the rules. No art briefs have been written yet.
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Mechanic |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 54 | Muster the levy | Vigil | Spell | 3 | 1 |  | Summon two Militia spearmen | Summoning |
+| 55 | Pride lioness | Sunmane Oath | Unit | 4 | 2 | 3 / 5 | When summoned: summon a Pride cub | Summoning |
+| 56 | Goblin rabble-rouser | Warhorde | Unit | 3 | 1 | 2 / 2 | When summoned: summon a Goblin cutter | Summoning |
+| 57 | Hedge summoner |  | Unit | 3 | 0 | 1 / 3 | Errant. Ability: summon a Camp follower on a random tile in your back row | Errant summons |
+| 58 | Seedfall | Genesis | Spell | 4 | 2 |  | Summon two Walking saplings | Summoning |
+| 59 | Gravecaller | Gravebound | Unit | 4 | 2 | 2 / 4 | When an adjacent ally dies, summon a Gravebound thrall | Summoning, death trigger |
+| 60 | Lantern apprentice | Lantern Conclave | Unit | 2 | 1 | 1 / 2 | When summoned: add a Spark to your hand. Spark costs 1: 1 damage to a unit | Added cards |
+| 61 | Cinder-cant drummer | Cinder Clans | Unit | 2 | 1 | 1 / 2 | When summoned: add two War-chants to your hand. War-chant costs 1: a unit gets +2 attack this turn | Added cards |
+| 62 | Tithe-keeper | Ashen Court | Unit | 3 | 1 | 2 / 3 | When summoned: put a Cursed coin in the enemy's hand. While it's in their hand, they lose 1 life at the end of each of their turns. Playing it costs them 1 mana and does nothing | Added cards |
+| 63 | Court assassin | Ashen Court | Unit | 4 | 2 | 5 / 2 | Ambush. Hunt: +2 attack against a damaged unit | Ambush |
+| 64 | Cinder skirmisher | Cinder Clans | Unit | 3 | 1 | 3 / 2 | Ambush | Ambush |
+| 65 | Orc pack-hunter | Warhorde | Unit | 3 | 1 | 3 / 3 | Flanking | Flanking |
+| 66 | Ridge wolves | Elder Herd | Unit | 2 | 1 | 2 / 2 | Flanking | Flanking |
+| 67 | Oath outrider | Sunmane Oath | Unit | 3 | 1 | 3 / 3 | Flanking | Flanking |
+| 68 | Shieldline sergeant | Sunmane Oath | Unit | 3 | 1 | 2 / 5 | Holding ground | Holding ground |
+| 69 | Ironbark sentinel | Thornwardens | Unit | 5 | 2 | 3 / 9 | Holding ground. An alderkin | Holding ground |
+| 70 | Cinder martyr | Cinder Clans | Unit | 2 | 1 | 2 / 1 | When it dies: each tile next to it burns for 2 turns | Death trigger, tile effects |
+| 71 | Vigil-keeper | Still Flame | Unit | 2 | 1 | 1 / 3 | When another of your units dies, you gain 1 life | Death trigger |
+
+Choices made in discussion:
+
+- **Court assassin:** renamed from Court cutthroat. It costs more than the 2-cost draft, with two keywords and a harder hit.
+- **Cinder martyr:** sets the tiles around it burning instead of dealing damage directly.
+- **Cinder-cant drummer:** the drummer you liked as a design, now as a card.
+- **Hedge summoner:** the weaker kind of summoner, whose units land on a random back-row tile.
 
 ## What the pool looks like if all of it is approved
 

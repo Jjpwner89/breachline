@@ -62,7 +62,8 @@ Decided by the creator on 2026-11-09, to make more of the board. None of these a
   - A unit is affected when it moves onto the tile, and again if it starts its owner's turn there. A flier passing over isn't affected, but one that stops on the tile is.
   - Nothing on the board is hidden, so snares and traps are visible to both players.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
-- **Proposed, not yet confirmed:** conjured cards. Summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects.
+- **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
+- **Loyal:** a bonus while you have another unit of the same sub-faction on the board, such as Sunmane Oath or Cinder Clans. This is the rule for the faction loyalty focus. Confirmed on 2026-11-09.
 
 ## Stats
 
