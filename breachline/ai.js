@@ -57,6 +57,7 @@ var AI = (function () {
     if (u.summonedTurn === v.turn) bits.push('waiting: just summoned');
     if (u.owner === v.active && u.acted) bits.push('has acted');
     else if (u.owner === v.active && u.moved) bits.push('has moved');
+    if (u.held >= v.turn) bits.push("held: can't move or attack " + (u.held === v.turn ? 'this turn' : 'on its next turn'));
     u.enchants.forEach(function (e) { bits.push('enchanted with ' + card(e.c).name + (card(e.c).text ? ' (' + card(e.c).text + ')' : '')); });
     return named(v, u) + ' at row ' + u.r + ', column ' + u.c + ': attack ' + E.attackOf(v, u) + ', health ' + u.hp + '/' + u.maxHp + '.' +
       (c.text ? ' ' + c.text : '') + (bits.length ? ' [' + bits.join('; ') + ']' : '');
@@ -132,8 +133,9 @@ var AI = (function () {
     var u = unitBy(v, m.unit), c = card(u.cardId);
     if (m.type === 'attack') return 'attack ' + named(v, unitBy(v, m.target)) + ' {"type":"attack","unit":' + m.unit + ',"target":' + m.target + '}: ' + preview(v, m);
     if (m.type === 'attackSummoner') return 'attack the enemy summoner {"type":"attackSummoner","unit":' + m.unit + '}: ' + preview(v, m);
-    var t = m.target ? unitBy(v, m.target) : null;
-    return 'use ' + c.ability.label + (t ? ' on ' + named(v, t) : '') + ' {"type":"ability","unit":' + m.unit + (t ? ',"target":' + m.target : '') + '}: ' + (c.text || '');
+    var t = m.target ? unitBy(v, m.target) : null, back = m.raise ? v.players[v.viewer].discard.filter(function (d) { return d.id === m.raise; })[0] : null;
+    return 'use ' + c.ability.label + (t ? ' on ' + named(v, t) : '') + (back ? ' returning ' + card(back.c).name : '') +
+      ' {"type":"ability","unit":' + m.unit + (t ? ',"target":' + m.target : '') + (back ? ',"raise":' + m.raise : '') + '}: ' + (c.text || '');
   }
 
   function unitOptions(cmd, u) {
@@ -157,6 +159,13 @@ var AI = (function () {
     for (var col = 0; col < E.COLS; col++) if (!v.units.some(function (u) { return u.r === E.backRow(me) && u.c === col; })) free.push(col);
     lines.push('Land drop: ' + (p.landDropped && !(p.extraLands > 0) ? 'already used this turn.' : 'available.'));
     lines.push('Free back-row tiles for new units: row ' + E.backRow(me) + ', columns ' + (free.length ? free.join(', ') : 'none') + '.');
+    var aimed = {};
+    E.legalMoves(v).forEach(function (m) {
+      if (m.type !== 'summon' || !m.target || aimed[m.card]) return;
+      aimed[m.card] = true;
+      var c = card(p.hand.filter(function (i) { return i.id === m.card; })[0].c);
+      lines.push('Summon ' + c.name + ' and name the enemy unit it hits: {"type":"summon","card":' + m.card + ',"r":' + E.backRow(me) + ',"c":COLUMN,"target":ENEMY_UNIT}');
+    });
     var cast = E.legalMoves(v).filter(function (m) { return m.type === 'enchant' || m.type === 'cast'; });
     var passage = {};
     cast.forEach(function (m) {
@@ -209,7 +218,7 @@ var AI = (function () {
       case 'pass': return 'Do nothing';
       case 'respond':
         var t = unitBy(v, m.target);
-        return 'Cast ' + inHand(m.card).name + ' on ' + named(v, t) + (m.r !== undefined ? ', moving it to row ' + m.r + ', column ' + m.c : '') + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
+        return 'Cast ' + inHand(m.card).name + ' on ' + named(v, t) + (m.r !== undefined ? ', moving it to row ' + m.r + ', column ' + m.c : '') + (inHand(m.card).debt ? ', losing ' + inHand(m.card).debt + ' life' : '') + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
     }
     return m.type;
   }
@@ -261,13 +270,13 @@ var AI = (function () {
     var who = u ? named(v, u) : 'unit ' + m.unit, at = 'row ' + m.r + ', column ' + m.c;
     switch (m.type) {
       case 'playLand': return 'Play land: ' + name;
-      case 'summon': return 'Summon ' + name + ' at ' + at;
+      case 'summon': return 'Summon ' + name + ' at ' + at + (t ? ', hitting ' + named(v, t) : '');
       case 'enchant': return 'Cast ' + name + ' on ' + (t ? named(v, t) : 'unit ' + m.target);
       case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' to ' + at : '');
       case 'move': return who + ' moves to ' + at;
       case 'attack': return who + ' attacks ' + (t ? named(v, t) : 'unit ' + m.target);
       case 'attackSummoner': return who + ' attacks the enemy summoner';
-      case 'ability': return who + ' uses its ability' + (t ? ' on ' + named(v, t) : '');
+      case 'ability': return who + ' uses its ability' + (t ? ' on ' + named(v, t) : '') + (m.raise ? ' to return card ' + m.raise : '');
       case 'keepHand': return 'Keep this hand';
       case 'redraw': return 'Redraw';
       case 'pass': return 'Do nothing';

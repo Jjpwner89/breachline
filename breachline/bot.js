@@ -14,8 +14,10 @@ var Bot = (function () {
       var side = E.hitOn(s, u, extra);
       score += side >= extra.hp ? worth(extra) + 30 : worth(extra) * (side / extra.maxHp);
     }
+    if (E.hasKw(u, 'Stomp')) s.units.forEach(function (o) { if (o !== t && o.owner !== u.owner && dist(o, t) === 1) score += o.hp <= 1 ? worth(o) : 5; });
+    if (amt >= t.hp && E.CARDS[u.cardId].drawOnKill) score += 25;
     if (amt < t.hp && dist(u, t) <= E.range(t)) {
-      var back = E.hitOn(s, t, u);
+      var back = E.hitOn(s, t, u, 0, true);
       score -= back >= u.hp ? worth(u) + 10 : worth(u) * (back / u.maxHp);
     }
     return score + 10;
@@ -39,9 +41,14 @@ var Bot = (function () {
       case 'summon':
         c = E.CARDS[handCard(p, m.card).c];
         if (c.lifeCost && p.life <= c.lifeCost * 2) return -100;
-        var pull = 0;
+        var pull = 0, zap = 0;
         s.units.forEach(function (e) { if (e.owner === foe) pull -= Math.abs(e.c - m.c); });
-        return 100 + c.cost * 20 + pull - Math.abs(m.c - 2);
+        if (m.target) {
+          t = unitById(s, m.target);
+          zap = c.zap >= t.hp ? worth(t) + 30 : worth(t) * c.zap / t.maxHp;
+        }
+        if (c.drawOnSummon) zap += 20;
+        return 100 + c.cost * 20 + pull - Math.abs(m.c - 2) + zap;
       case 'cast':
         c = E.CARDS[handCard(p, m.card).c];
         if (c.extraLand) {
@@ -59,6 +66,12 @@ var Bot = (function () {
           t = unitById(s, m.target);
           return t.maxHp - t.hp >= 2 ? 30 + Math.min(c.mend, t.maxHp - t.hp) * 10 + worth(t) / 10 : -1;
         }
+        if (c.blast) {
+          t = unitById(s, m.target);
+          var burn = c.blast >= t.hp ? worth(t) + 30 : worth(t) * c.blast / t.maxHp;
+          s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
+          return burn >= 60 ? 40 + burn : -1;
+        }
         if (c.fortify) {
           var mine = s.units.filter(function (a) { return a.owner === pi; }).length;
           return mine >= 2 ? 40 + mine * 25 : -1;
@@ -74,6 +87,7 @@ var Bot = (function () {
       case 'enchant':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         if (c.allyOnly) return 40 + worth(t) / 5;
+        if (c.hunted) return t.owner === foe && worth(t) >= 65 ? 30 + worth(t) / 5 : -100;
         if (c.warrant) return worth(t) >= 80 ? 40 + worth(t) : -100;
         if (c.atkBonus > 0) return t.owner === pi ? 40 + worth(t) / 5 : -100;
         return t.owner === foe && E.attackOf(s, t) >= 3 ? 40 + E.attackOf(s, t) * 2 : -100;
@@ -98,6 +112,15 @@ var Bot = (function () {
         }
         if (key === 'push') return 22;
         if (key === 'harvest') return worth(unitById(s, m.target)) <= 35 ? 35 : -1;
+        if (key === 'tend') return 45 + worth(unitById(s, m.target)) / 10;
+        if (key === 'hold') return 30 + E.attackOf(s, unitById(s, m.target)) * 5;
+        if (key === 'exhume') return 60 + E.CARDS[p.discard.filter(function (d) { return d.id === m.raise; })[0].c].cost * 15;
+        if (key === 'swap') {
+          // Swap a strong ally forward when that brings it closer to the enemy back row.
+          t = unitById(s, m.target);
+          var ahead = Math.abs(t.r - E.backRow(foe)) - Math.abs(u.r - E.backRow(foe));
+          return ahead > 0 && E.attackOf(s, t) >= 3 ? 10 + ahead * 10 : -1;
+        }
         t = unitById(s, m.target);
         var behind = s.units.filter(function (e) { return e.owner === foe && e.r === t.r + (t.r - u.r) && e.c === t.c + (t.c - u.c); })[0];
         return attackScore(s, u, t, behind);
@@ -120,6 +143,7 @@ var Bot = (function () {
           var striker = unitById(s, att.attacker);
           return E.hitOn(s, striker, t) >= t.hp && E.hitOn(s, striker, t, c.prevent) < t.hp ? worth(t) : -1;
         }
+        if (c.debt) return p.life > c.debt + 4 && worth(t) >= 65 ? worth(t) - 20 + (att && att.attacker === t.uid ? 30 : 0) : -1;
         if (c.damage >= t.hp) return worth(t) + (att && att.attacker === t.uid ? 30 : 0);
         return att ? -1 : 5;
     }

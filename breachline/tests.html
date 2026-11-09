@@ -276,17 +276,17 @@ function randomField(r, ids) {
   }
   function byUid(s, u) { return s.units.filter(function (x) { return x.uid === u.uid; })[0]; }
 
-  var s = arena(), knight = put(s, 'knight', 0, 1, 1), target = put(s, 'cleric', 1, 1, 2);
-  check('a plain hit is the attack value', E.hitOn(s, knight, target) === 3);
+  var s = arena(), striker = put(s, 'sellsword', 0, 1, 1), target = put(s, 'cleric', 1, 1, 2);
+  check('a plain hit is the attack value', E.hitOn(s, striker, target) === 3);
   var guard = put(s, 'sentinel', 1, 0, 2);
-  check('Guard shows in the hit', E.hitOn(s, knight, target) === 2);
+  check('Guard shows in the hit', E.hitOn(s, striker, target) === 2);
   target.enchants.push({ id: 900, c: 'shelter', owner: 1 });
-  check('Winter shelter adds to Guard', E.hitOn(s, knight, target) === 0);
+  check('Winter shelter adds to Guard', E.hitOn(s, striker, target) === 0);
   s.units = s.units.filter(function (u) { return u !== guard; });
   target.enchants = [];
-  check('prevented damage comes off first', E.hitOn(s, knight, target, 2) === 1);
-  var fight = E.applyMove(s, { type: 'attack', unit: knight.uid, target: target.uid });
-  check('the hit shown is the hit taken', byUid(fight, target).hp === target.maxHp - E.hitOn(s, knight, target));
+  check('prevented damage comes off first', E.hitOn(s, striker, target, 2) === 1);
+  var fight = E.applyMove(s, { type: 'attack', unit: striker.uid, target: target.uid });
+  check('the hit shown is the hit taken', byUid(fight, target).hp === target.maxHp - E.hitOn(s, striker, target));
 
   // Overrun carries on past the target at any range, in line with the shot.
   s = arena(); var bull = put(s, 'bull', 0, 3, 2), goblin = put(s, 'goblin', 1, 1, 2), behind = put(s, 'giant', 1, 0, 2), wrong = put(s, 'giant', 1, 2, 2);

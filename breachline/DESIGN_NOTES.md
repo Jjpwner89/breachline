@@ -120,7 +120,8 @@ Latest numbers, from 800 bot-only games on 2026-11-06: the first player wins 43%
 
 Worth playtesting:
 - **Cloistered scholar:** a card every turn from a 2-mana unit could be very strong.
-- **Older red cards:** the creator said red looked a little unbalanced, and Orc warchief and Elder dragon haven't been touched.
+- **Older red cards:** the creator said red looked a little unbalanced, and Elder dragon hasn't been touched.
+- **Starter balance after Set 4:** in 320 bot games on 2026-11-08 the green starter won 87 and lost 41, up from 78 and 50, and black fell from 53 and 75 to 49 and 79. Hill giant's Stomp and the weaker Sellsword are the likely causes.
 - **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
 - **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
 - **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health.
@@ -133,7 +134,7 @@ Worth playtesting:
 - **Worn-down defenders:** is the resting-unit fix wanted?
 - **Unlocks:** do campaign unlocks carry over?
 - **Campaign map:** Claude drew a fixed route without asking whether you want branching paths.
-- **Cards:** verdicts in `CARD_PROPOSALS.md` and the open questions in `NEW_CARDS.md`.
+- **Cards:** the open questions in `NEW_CARDS.md`.
 - **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
 - **Commit name:** commits show as `DP User`, from the Mac account.
 

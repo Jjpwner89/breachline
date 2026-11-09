@@ -35,7 +35,12 @@
     youngsummoner: 'young-summoner',
     stillflame: 'the-still-flame', lampwright: 'light-without-an-answer', across: 'across-the-silence',
     shelter: 'alderkin-winter-shelter', marble: 'overgrown-ruin-vignette', dawnsails: 'dawnsails-over-the-harvest', raincup: 'raincup-at-first-light', mending: 'spindlejack-mending-the-sail',
-    channel: 'alderkin-waterkeeper', passage: 'dawnsail-passage', slateprowler: 'slateprowler-on-the-descent', reedcrown: 'reedcrown-grazer', coalback: 'coalback-forager'
+    channel: 'alderkin-waterkeeper', passage: 'dawnsail-passage', slateprowler: 'slateprowler-on-the-descent', reedcrown: 'reedcrown-grazer', coalback: 'coalback-forager',
+    shieldbearer: 'oath-shieldbearer', huntress: 'pride-huntress', matriarch: 'pride-matriarch', sifting: 'sifting-the-shallows', phantasm: 'conclave-phantasm',
+    adept: 'threshold-adept', examiner: 'conclave-examiner', siegewalker: 'brass-siege-walker', ilvane: 'ilvane', rats: 'barrow-rats', squire: 'indebted-squire',
+    hunted: 'hunted', calleddebt: 'called-debt', envoy: 'ashen-court-envoy', barrowpriest: 'barrow-priest', colossus: 'barrow-colossus', firepot: 'goblin-firepot',
+    cinderfall: 'cinderfall', chieftain: 'giant-chieftain', boar: 'thicket-boar', grovetender: 'grove-tender-set4', mossback: 'mossback-bear', herdmother: 'herd-mother',
+    orrowen: 'orrowen', follower: 'camp-follower', scarred: 'scarred-summoner'
   };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
   var FLAVOUR = {
@@ -157,6 +162,7 @@
       var chips = d.keywords.map(function (k) { return '<span class="chip">' + k + '</span>'; });
       u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + '</span>'); });
       if (u.tempAtk) chips.push('<span class="chip">+' + u.tempAtk + ' this turn</span>');
+      if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
       if (waiting) chips.push('<span class="chip state">Waiting</span>');
       else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
@@ -182,7 +188,12 @@
       else marks.units[fight.targetUid] = 't-threat';
     }
     selectedMoves(moves).forEach(function (m) {
-      if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
+      // A summon that hits an enemy takes a tile first, then a target.
+      if (m.type === 'summon' && m.target !== undefined && sel.summonAt) {
+        marks.tiles[sel.summonAt.r + ',' + sel.summonAt.c] = 't-summon';
+        if (m.r === sel.summonAt.r && m.c === sel.summonAt.c) marks.units[m.target] = 't-attack';
+      }
+      else if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
       else if (m.type === 'attack') marks.units[m.target] = 't-attack';
       else if (m.type === 'attackSummoner') marks.summoner = true;
@@ -190,11 +201,11 @@
         if (!sel.castUnit) marks.units[m.target] = 't-buff';
         else if (m.target === sel.castUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
       }
-      else if (m.type === 'cast' && m.target) marks.units[m.target] = 't-buff';
+      else if (m.type === 'cast' && m.target) marks.units[m.target] = cardOf(sel.id).blast ? 't-attack' : 't-buff';
       else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 || cardOf(sel.id).allyOnly ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' || ab.key === 'lens' ? 't-buff' : 't-attack';
+        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' || ab.key === 'lens' || ab.key === 'tend' || ab.key === 'swap' ? 't-buff' : 't-attack';
       }
     });
     return marks;
@@ -345,10 +356,10 @@
       if (sel && sel.kind === 'card') {
         var c = cardOf(sel.id), place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
-        else if (place) hint = 'Choose a highlighted tile in your back row.';
+        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile in your back row.';
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c) > you.mana) hint = 'Not enough mana to play this now.';
-        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.blast ? 'Choose an enemy unit.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
         else if (c.type === 'unit') hint = 'Your back row is full, so there is nowhere to summon this.';
         else if (c.type === 'enchant') hint = 'There is no unit this can enchant right now.';
         else hint = sm.length ? 'Play this land.' : 'You already played a land this turn.';
@@ -374,7 +385,16 @@
       } else {
         cmdHint = sm.length ? 'Move to a dashed tile or attack a highlighted target.' : 'This unit has nothing it can do right now.';
         var abMoves = sm.filter(function (m) { return m.type === 'ability'; });
-        if (abMoves.length) {
+        if (abMoves.length && abMoves[0].raise) {
+          // One button for each different unit Exhume could return.
+          var offered = {};
+          abMoves.forEach(function (m) {
+            var back = S.players[HUMAN].discard.filter(function (d) { return d.id === m.raise; })[0];
+            if (offered[back.c]) return;
+            offered[back.c] = true;
+            out.push(btn('Return ' + E.CARDS[back.c].name, { move: m }));
+          });
+        } else if (abMoves.length) {
           out.push(abMoves[0].target ? btn(ab.label, { ui: 'ability' }) : btn(ab.label, { move: abMoves[0] }));
         }
       }
@@ -550,6 +570,7 @@
     var r = +el.dataset.r, c = +el.dataset.c, moves = humanMoves();
     var u = S.units.filter(function (x) { return x.r === r && x.c === c; })[0], sm = selectedMoves(moves);
     var hit = sm.filter(function (m) {
+      if (m.type === 'summon' && m.target !== undefined) return !!sel.summonAt && !!u && m.target === u.uid && m.r === sel.summonAt.r && m.c === sel.summonAt.c;
       if (m.type === 'summon' || (m.type === 'move' && !sel.ability)) return m.r === r && m.c === c;
       if (m.type === 'cast' && m.r !== undefined) return m.target === sel.castUnit && m.r === r && m.c === c;
       if (!u || m.target !== u.uid) return false;
@@ -558,6 +579,7 @@
     });
     if (sel && sel.ability) hit = hit.filter(function (m) { return m.type === 'ability'; });
     if (hit.length) return apply(hit[0]);
+    if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && S.phase === 'command') { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }

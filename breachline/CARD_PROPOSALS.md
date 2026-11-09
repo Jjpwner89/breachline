@@ -1,8 +1,20 @@
 # Card proposals: the gap-filling batch
 
-Drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. None of these are in the game, and none have been played or simulated. Numbers are small-scale and will move in playtesting.
+Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far. Cards 31 onward, from the reference library, are still proposals. Numbers are small-scale and will move in playtesting.
 
-Give verdicts by number. Art briefs for the 26 new cards are in `art/ART_BRIEFS_SET4.md`, and all 26 images have been generated and await review. Flavour lines come after approval.
+The starter and campaign decks are unchanged, so cards 1 to 30 show up in the deck builder and in campaign rewards. Their art is in `art/ART_BRIEFS_SET4.md`. Flavour lines are next.
+
+## Rules decided while building
+
+- **Steadfast:** a move or Dawnsail passage counts as moving. Being swapped, pushed or shoved doesn't.
+- **Warband and Hunted:** neither stacks with itself.
+- **Stomp:** Guard and Winter shelter reduce it, as they do any attack damage. Strike-backs don't stomp.
+- **Conclave phantasm:** it strikes back before it vanishes. Illusory decoy, with 0 attack, still just vanishes.
+- **Goblin firepot:** it must hit an enemy unit if there is one.
+- **Called debt:** it can't be cast at 2 life or less.
+- **Conclave examiner:** a held unit can't move or attack, but can still use an ability or strike back.
+- **Ilvane:** draws one card for each unit it destroys, including with a strike-back.
+- **Threshold adept:** neither unit can be bound by a glyph or held.
 
 ## How these were built
 
