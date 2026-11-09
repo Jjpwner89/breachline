@@ -1,8 +1,8 @@
-/* Main menu and deck builder, on the same dark wood as the war table. */
+/* Main menu and deck builder, on the same field-oak table as the war table. */
 [hidden] { display: none !important; }
 .screen {
   --felt: #241a10; --line: var(--edge); --you-fill: #6f5518;
-  position: fixed; inset: 0; z-index: 30; overflow-y: auto; background: var(--table) var(--grain); color: var(--ink); font: 15px/1.4 var(--body);
+  position: fixed; inset: 0; z-index: 30; overflow-y: auto; background: var(--tabletop); color: var(--ink); font: 15px/1.4 var(--body);
 }
 .screen .btn[disabled] { opacity: .5; cursor: not-allowed; }
 .screen .btn.danger { background: var(--danger-deep); border-color: var(--danger); }
