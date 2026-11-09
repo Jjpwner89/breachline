@@ -25,8 +25,12 @@ var AI = (function () {
     '- Damage stays until healed. A target that survives strikes back if the attacker is within its reach. Only the main target strikes back.',
     '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
     '- Instants are cast on the enemy turn, paid from mana you left unspent on your own turn.',
-    '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.'
+    '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
+    '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
+    '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
+    '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.'
   ].join('\n');
+  var TILE_WORDS = { burn: 'burning', thorns: 'thorns', frost: 'frozen', snare: 'snare', blight: 'blighted', holy: 'consecrated', charge: 'charged' };
 
   var VOICE = 'Also write "say": one short sentence, under 15 words, spoken aloud across the table as the opposing summoner, for your opponent to read. Stay serious and grounded in a fantasy war, with no jokes or modern slang. It can boast, needle or bluff, and need not reveal your real thinking. Never mention being an AI, the rules text or this format.';
 
@@ -80,6 +84,15 @@ var AI = (function () {
     return rows;
   }
 
+  function tileLines(v) {
+    var out = [];
+    Object.keys(v.tiles || {}).sort().forEach(function (k) {
+      var t = v.tiles[k], rc = k.split(',');
+      out.push('row ' + rc[0] + ', column ' + rc[1] + ': ' + TILE_WORDS[t.kind] + ', placed by ' + (t.owner === v.viewer ? 'you' : 'the enemy') + ', ' + (t.until - v.turn + 1) + ' more turn' + (t.until - v.turn ? 's' : '') + ' counting this one');
+    });
+    return out;
+  }
+
   function pileNames(pile) {
     return pile.length ? pile.map(function (d) { return card(d.c).name; }).join(', ') : 'empty';
   }
@@ -106,6 +119,9 @@ var AI = (function () {
       '',
       'Map (Y is yours, E is the enemy, and the number is the unit id):',
       mapLines(v).join('\n'),
+      '',
+      'Tile effects:',
+      tileLines(v).length ? tileLines(v).join('\n') : '(none)',
       '',
       'Your units:',
       mine.length ? mine.map(function (u) { return unitLine(v, u); }).join('\n') : '(none)',
@@ -138,8 +154,9 @@ var AI = (function () {
     if (m.type === 'attack') return 'attack ' + named(v, unitBy(v, m.target)) + ' {"type":"attack","unit":' + m.unit + ',"target":' + m.target + '}: ' + preview(v, m);
     if (m.type === 'attackSummoner') return 'attack the enemy summoner {"type":"attackSummoner","unit":' + m.unit + '}: ' + preview(v, m);
     var t = m.target ? unitBy(v, m.target) : null, back = m.raise ? v.players[v.viewer].discard.filter(function (d) { return d.id === m.raise; })[0] : null;
-    return 'use ' + c.ability.label + (t ? ' on ' + named(v, t) : '') + (back ? ' returning ' + card(back.c).name : '') +
-      ' {"type":"ability","unit":' + m.unit + (t ? ',"target":' + m.target : '') + (back ? ',"raise":' + m.raise : '') + '}: ' + (c.text || '');
+    var tile = m.r !== undefined ? ' at row ' + m.r + ', column ' + m.c : '';
+    return 'use ' + c.ability.label + (t ? ' on ' + named(v, t) : '') + tile + (back ? ' returning ' + card(back.c).name : '') +
+      ' {"type":"ability","unit":' + m.unit + (t ? ',"target":' + m.target : '') + (tile ? ',"r":' + m.r + ',"c":' + m.c : '') + (back ? ',"raise":' + m.raise : '') + '}: ' + (c.text || '');
   }
 
   function unitOptions(cmd, u) {
@@ -170,10 +187,31 @@ var AI = (function () {
       var c = card(p.hand.filter(function (i) { return i.id === m.card; })[0].c);
       lines.push('Summon ' + c.name + ' and name the enemy unit it hits: {"type":"summon","card":' + m.card + ',"r":' + E.backRow(me) + ',"c":COLUMN,"target":ENEMY_UNIT}');
     });
+    // Ambush tiles, and units that bring others with them.
+    var entry = {};
+    E.legalMoves(v).forEach(function (m) { if (m.type === 'summon') (entry[m.card] = entry[m.card] || []).push(m); });
+    Object.keys(entry).forEach(function (id) {
+      var c = card(p.hand.filter(function (i) { return i.id === +id; })[0].c), ms = entry[id], spots = {};
+      ms.forEach(function (m) { if (m.r !== E.backRow(me)) spots['row ' + m.r + ', column ' + m.c] = 1; });
+      if (Object.keys(spots).length) lines.push(c.name + ' can also enter from ambush at: ' + Object.keys(spots).join('; ') + '.');
+      if (ms[0].at) lines.push('Summon ' + c.name + ' and list back-row tiles for the units it brings: {"type":"summon","card":' + id + ',"r":ROW,"c":COLUMN,"at":' + JSON.stringify(ms[0].at) + '}');
+    });
     var cast = E.legalMoves(v).filter(function (m) { return m.type === 'enchant' || m.type === 'cast'; });
     var passage = {};
     cast.forEach(function (m) {
       var c = card(p.hand.filter(function (i) { return i.id === m.card; })[0].c), extra;
+      if (m.type === 'cast' && m.r !== undefined && !m.target) {
+        if (passage[m.card]) return;
+        passage[m.card] = true;
+        lines.push('Cast ' + c.name + ' at any tile: {"type":"cast","card":' + m.card + ',"r":ROW,"c":COLUMN}. ' + c.text);
+        return;
+      }
+      if (m.type === 'cast' && m.at) {
+        if (passage[m.card]) return;
+        passage[m.card] = true;
+        lines.push('Cast ' + c.name + ' and list back-row tiles for the units it summons: {"type":"cast","card":' + m.card + ',"at":' + JSON.stringify(m.at) + '}. ' + c.text);
+        return;
+      }
       // Dawnsail passage has too many unit and tile pairs to list, so it gets one line.
       if (m.type === 'cast' && m.r !== undefined) {
         if (passage[m.card]) return;
@@ -248,13 +286,15 @@ var AI = (function () {
   function clean(move) {
     var out = { type: String(move.type) };
     FIELDS.forEach(function (f) { if (move[f] !== undefined && move[f] !== null) out[f] = Number(move[f]); });
+    if (Array.isArray(move.at)) out.at = move.at.slice(0, 4).map(function (t) { return Array.isArray(t) ? [Number(t[0]), Number(t[1])] : [NaN, NaN]; });
     return out;
   }
 
-  // The engine's own move is what gets played, never the model's object.
+  // The engine's own move is what gets played, never the model's object. Summon tiles can be named in any order.
+  function tiles(at) { return at ? at.map(function (t) { return t.join(','); }).sort().join(' ') : ''; }
   function matchMove(moves, m) {
     return moves.filter(function (x) {
-      return x.type === m.type && FIELDS.every(function (f) { return x[f] === undefined || x[f] === m[f]; });
+      return x.type === m.type && FIELDS.every(function (f) { return x[f] === undefined || x[f] === m[f]; }) && (!x.at || tiles(x.at) === tiles(m.at));
     })[0] || null;
   }
 
@@ -274,13 +314,13 @@ var AI = (function () {
     var who = u ? named(v, u) : 'unit ' + m.unit, at = 'row ' + m.r + ', column ' + m.c;
     switch (m.type) {
       case 'playLand': return 'Play land: ' + name;
-      case 'summon': return 'Summon ' + name + ' at ' + at + (t ? ', hitting ' + named(v, t) : '');
+      case 'summon': return 'Summon ' + name + ' at ' + at + (t ? ', hitting ' + named(v, t) : '') + (m.at && m.at.length ? ', bringing units to ' + tiles(m.at) : '');
       case 'enchant': return 'Cast ' + name + ' on ' + (t ? named(v, t) : 'unit ' + m.target);
-      case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' to ' + at : '');
+      case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' to ' + at : '') + (m.at && m.at.length ? ', summoning to ' + tiles(m.at) : '');
       case 'move': return who + ' moves to ' + at;
       case 'attack': return who + ' attacks ' + (t ? named(v, t) : 'unit ' + m.target);
       case 'attackSummoner': return who + ' attacks the enemy summoner';
-      case 'ability': return who + ' uses its ability' + (t ? ' on ' + named(v, t) : '') + (m.raise ? ' to return card ' + m.raise : '');
+      case 'ability': return who + ' uses its ability' + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' at ' + at : '') + (m.raise ? ' to return card ' + m.raise : '');
       case 'keepHand': return 'Keep this hand';
       case 'redraw': return 'Redraw';
       case 'pass': return 'Do nothing';

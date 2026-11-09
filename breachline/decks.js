@@ -176,7 +176,7 @@ var Decks = (function () {
   // add a mode here that returns only the cards the player owns, and how many of each.
   function pool(mode) {
     if (mode !== 'exhibition') throw new Error('No card pool for mode: ' + mode);
-    return { ids: Object.keys(E.CARDS), copies: E.maxCopies };
+    return { ids: Object.keys(E.CARDS).filter(function (id) { return !E.CARDS[id].token; }), copies: E.maxCopies };
   }
 
   function picks() {

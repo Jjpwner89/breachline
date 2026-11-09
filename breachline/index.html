@@ -120,6 +120,22 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .tile.t-move, .tile.t-summon { background: rgba(39, 96, 58, .3); border: 2px dashed var(--good-deep); cursor: pointer; }
 .tile.t-move:hover, .tile.t-summon:hover { background: rgba(39, 96, 58, .55); }
 .tile.t-move::after, .tile.t-summon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 15px; height: 15px; transform: translate(-50%, -50%) rotate(45deg); background: var(--good-deep); }
+/* Tile effects: a tint over the tile and a small label with the turns left. */
+.tile.fx::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.tile.fx-burn::before { background: radial-gradient(ellipse at 50% 100%, rgba(255, 120, 30, .55), rgba(160, 40, 10, .2) 70%); }
+.tile.fx-charge::before { background: radial-gradient(circle, rgba(170, 120, 255, .45), rgba(80, 40, 160, .12) 70%); }
+.tile.fx-frost::before { background: linear-gradient(160deg, rgba(220, 240, 255, .55), rgba(120, 170, 220, .25)); }
+.tile.fx-thorns::before { background: repeating-linear-gradient(45deg, rgba(30, 60, 20, .45) 0 4px, transparent 4px 10px), repeating-linear-gradient(-45deg, rgba(30, 60, 20, .45) 0 4px, transparent 4px 10px); }
+.tile.fx-snare::before { inset: 14%; border: 2px dashed rgba(190, 150, 255, .9); border-radius: 50%; }
+.tile.fx-blight::before { background: radial-gradient(circle, rgba(60, 40, 70, .55), rgba(110, 100, 110, .3)); }
+.tile.fx-holy::before { background: radial-gradient(circle, rgba(255, 220, 120, .5), rgba(255, 220, 120, .1) 70%); }
+.tile .tfx { position: absolute; right: 2px; top: 50%; transform: translateY(-50%); z-index: 1; padding: 0 4px; border-radius: 3px; background: rgba(14, 9, 4, .78); font: 600 11px/1.5 var(--display); white-space: nowrap; pointer-events: none; }
+.tile.own .tfx, .tile.enemy .tfx { top: auto; bottom: 64px; transform: none; }
+.tile.t-aim { z-index: 2; border: 2px dashed var(--gold-pale); cursor: crosshair; }
+.tile.t-aim:hover { box-shadow: 0 0 0 2px var(--gold-pale), 0 0 16px var(--gold-pale); }
+.tile.t-picked { box-shadow: 0 0 0 3px var(--good-deep), 0 0 14px var(--good-deep); }
+#aimArrow { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 30; }
+#aimArrow line { stroke: var(--gold-pale); stroke-width: 4; stroke-linecap: round; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .7)); }
 .tile.t-attack, .tile.t-buff, .tile.t-threat { z-index: 2; }
 .tile.t-attack { border-color: var(--danger); box-shadow: 0 0 0 2px var(--danger), 0 0 16px var(--danger); cursor: crosshair; }
 .tile.t-buff { border-color: var(--good); box-shadow: 0 0 0 2px var(--good), 0 0 16px var(--good); cursor: pointer; }

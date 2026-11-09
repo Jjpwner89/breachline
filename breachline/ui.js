@@ -43,8 +43,15 @@
     orrowen: 'orrowen', follower: 'camp-follower', scarred: 'scarred-summoner',
     fieldscholar: 'conclave-field-scholar', wardwright: 'harmonic-wardwright', brightlance: 'brightlance', wovenward: 'woven-ward', quench: 'enchanters-quench',
     rimedrake: 'rime-drake', goblinscout: 'thornwarden-goblin-scout', alderkin: 'bronze-harness-alderkin', retainer: 'porcelain-visored-retainer', veiladept: 'veil-adept',
-    flameblade: 'banked-flame-blade', stoneward: 'stoneward-colossus'
+    flameblade: 'banked-flame-blade', stoneward: 'stoneward-colossus',
+    scorch: 'scorch', stormstrike: 'stormstrike', salamander: 'ember-salamander', frost: 'frost', glyphwright: 'glyphwright', thornbrake: 'thornbrake',
+    gravesoil: 'grave-soil', ashsower: 'ash-sower', consecrate: 'consecrated-ground', muster: 'muster-the-levy', lioness: 'pride-lioness',
+    rabblerouser: 'goblin-rabble-rouser', seedfall: 'seedfall', gravecaller: 'gravecaller', apprentice: 'lantern-apprentice', drummer: 'cinder-cant-drummer',
+    tithekeeper: 'tithe-keeper', assassin: 'court-assassin', skirmisher: 'cinder-skirmisher', packhunter: 'orc-pack-hunter', ridgewolves: 'ridge-wolves',
+    outrider: 'oath-outrider', sergeant: 'shieldline-sergeant', ironbark: 'ironbark-sentinel', martyr: 'cinder-martyr', vigilkeeper: 'vigil-keeper',
+    acolyte: 'still-flame-acolyte', journeyman: 'artificers-journeyman'
   };
+  var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
   var FLAVOUR = {
     spearman: { line: 'My mother held this spear at Sallow Bridge. It still pulls left.' },
@@ -126,6 +133,21 @@
       return sel.ability ? m.type === 'ability' : true;
     });
   }
+  // A unit that brings others, or a spell that summons, takes its back-row tiles one click at a time.
+  // Returns null until there are tiles to pick: for a unit, once its own tile is chosen.
+  function same(a, b) { return a[0] === b[0] && a[1] === b[1]; }
+  function pickStage(sm) {
+    if (!sel || sel.kind !== 'card') return null;
+    var picks = sel.picks || [];
+    var cands = sm.filter(function (m) {
+      if (!m.at || (m.type === 'summon' && !(sel.summonAt && m.r === sel.summonAt.r && m.c === sel.summonAt.c))) return false;
+      return picks.every(function (p) { return m.at.some(function (t) { return same(t, p); }); });
+    });
+    if (!cands.length || !cands.some(function (m) { return m.at.length; })) return null;
+    var open = {};
+    cands.forEach(function (m) { m.at.forEach(function (t) { if (!picks.some(function (p) { return same(t, p); })) open[t[0] + ',' + t[1]] = true; }); });
+    return { cands: cands, picks: picks, open: open };
+  }
 
   function sym(colour) { return '<svg aria-hidden="true"><use href="#sym-' + colour + '"/></svg>'; }
 
@@ -154,7 +176,15 @@
     var cls = ['tile'], attrs = 'data-r="' + r + '" data-c="' + c + '"', key = r + ',' + c, inner = '';
     if (marks.tiles[key]) cls.push(marks.tiles[key]);
     if (flash && flash[0] === r && flash[1] === c) cls.push('flash');
-    var label = '';
+    var label = '', fx = E.tileAt(S, r, c), fxText = '';
+    if (fx) {
+      var left = fx.until - S.turn + 1;
+      cls.push('fx', 'fx-' + fx.kind);
+      fxText = TILE_NAMES[fx.kind] + ', ' + left + ' turn' + (left === 1 ? '' : 's') + ' left';
+      inner += '<span class="tfx" title="' + fxText + '">' + TILE_NAMES[fx.kind] + ' <b>' + left + '</b></span>';
+    }
+    if (sel && sel.picks && sel.picks.some(function (p) { return p[0] === r && p[1] === c; })) cls.push('t-picked');
+    if (sel && sel.summonAt && sel.picks && sel.summonAt.r === r && sel.summonAt.c === c) cls.push('t-picked');
     if (u) {
       var d = E.CARDS[u.cardId], waiting = u.summonedTurn === S.turn;
       cls.push(u.owner === HUMAN ? 'own' : 'enemy', d.colour);
@@ -172,7 +202,7 @@
       if (waiting) chips.push('<span class="chip state">Waiting</span>');
       else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
-      inner = (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
+      inner += (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
         '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
         (chips.length ? '<span class="chips">' + chips.join('') + '</span>' : '') +
         '<span class="st"><span class="badge atk' + (atk > d.atk ? ' up' : atk < d.atk ? ' down' : '') + '">' + atk + '</span>' +
@@ -181,6 +211,7 @@
       label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp;
       attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + '"';
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
+    if (fxText) label += ', ' + fxText.toLowerCase();
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
   }
 
@@ -193,6 +224,11 @@
       if (fight.summoner !== undefined) marks.threat = true;
       else marks.units[fight.targetUid] = 't-threat';
     }
+    var stage = pickStage(selectedMoves(moves));
+    if (stage) {
+      Object.keys(stage.open).forEach(function (k) { marks.tiles[k] = 't-summon'; });
+      return marks;
+    }
     selectedMoves(moves).forEach(function (m) {
       // A summon that hits an enemy takes a tile first, then a target.
       if (m.type === 'summon' && m.target !== undefined && sel.summonAt) {
@@ -203,6 +239,8 @@
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
       else if (m.type === 'attack') marks.units[m.target] = 't-attack';
       else if (m.type === 'attackSummoner') marks.summoner = true;
+      else if (m.type === 'cast' && m.r !== undefined && !m.target) marks.tiles[m.r + ',' + m.c] = 't-aim';
+      else if (m.type === 'ability' && sel.ability && m.r !== undefined) marks.tiles[m.r + ',' + m.c] = 't-aim';
       else if (m.type === 'cast' && m.r !== undefined) {
         if (!sel.castUnit) marks.units[m.target] = 't-buff';
         else if (m.target === sel.castUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
@@ -362,16 +400,17 @@
       if (sel && sel.kind === 'card') {
         var c = cardOf(sel.id), place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
-        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile in your back row.';
+        else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
+        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c) > you.mana) hint = 'Not enough mana to play this now.';
-        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.blast ? 'Choose an enemy unit.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.blast ? 'Choose an enemy unit.' : c.aim ? 'Choose a tile to aim at.' : c.chant ? 'Choose one of your units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
         else if (c.type === 'unit') hint = 'Your back row is full, so there is nowhere to summon this.';
         else if (c.type === 'enchant') hint = 'There is no unit this can enchant right now.';
         else hint = sm.length ? 'Play this land.' : 'You already played a land this turn.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
-          if (m.type === 'cast' && !m.target) {
+          if (m.type === 'cast' && !m.target && m.r === undefined && !(m.at && m.at.length)) {
             var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
             out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : 'Cast', { move: m }, true));
           }
@@ -401,7 +440,7 @@
             out.push(btn('Return ' + E.CARDS[back.c].name, { move: m }));
           });
         } else if (abMoves.length) {
-          out.push(abMoves[0].target ? btn(ab.label, { ui: 'ability' }) : btn(ab.label, { move: abMoves[0] }));
+          out.push(abMoves[0].target || abMoves[0].r !== undefined ? btn(ab.label, { ui: 'ability' }) : btn(ab.label, { move: abMoves[0] }));
         }
       }
     }
@@ -575,9 +614,24 @@
   function clickTile(el) {
     var r = +el.dataset.r, c = +el.dataset.c, moves = humanMoves();
     var u = S.units.filter(function (x) { return x.r === r && x.c === c; })[0], sm = selectedMoves(moves);
+    var stage = pickStage(sm);
+    if (stage) {
+      if (!stage.open[r + ',' + c]) { sel = null; return render(); }
+      sel.picks = stage.picks.concat([[r, c]]);
+      var done = stage.cands.filter(function (m) {
+        return m.at.length === sel.picks.length && sel.picks.every(function (p) { return m.at.some(function (t) { return same(t, p); }); });
+      })[0];
+      return done ? apply(done) : render();
+    }
+    // A unit that brings others takes its own tile first.
+    if (sel && sel.kind === 'card' && !sel.summonAt && sm.some(function (m) { return m.type === 'summon' && m.at && m.at.length && m.r === r && m.c === c; })) {
+      sel.summonAt = { r: r, c: c }; sel.picks = [];
+      return render();
+    }
     var hit = sm.filter(function (m) {
       if (m.type === 'summon' && m.target !== undefined) return !!sel.summonAt && !!u && m.target === u.uid && m.r === sel.summonAt.r && m.c === sel.summonAt.c;
       if (m.type === 'summon' || (m.type === 'move' && !sel.ability)) return m.r === r && m.c === c;
+      if (m.type === 'ability' && m.r !== undefined) return !!sel.ability && m.r === r && m.c === c;
       if (m.type === 'cast' && m.r !== undefined) return m.target === sel.castUnit && m.r === r && m.c === c;
       if (!u || m.target !== u.uid) return false;
       if (m.type === 'enchant' || m.type === 'attack' || m.type === 'cast') return true;
@@ -591,8 +645,31 @@
     if (sel) { sel = null; render(); }
   }
 
+  // Aiming at a tile draws an arrow from the card, or from the unit using its ability, to the tile under the pointer.
+  var arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  arrow.id = 'aimArrow';
+  arrow.innerHTML = '<defs><marker id="aimHead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f3dc9a"/></marker></defs><line marker-end="url(#aimHead)"/>';
+  arrow.style.display = 'none';
+  document.body.appendChild(arrow);
+  function aimFrom() {
+    if (!sel) return null;
+    if (sel.kind === 'card' && cardOf(sel.id).aim) return document.querySelector('#hand .card[data-card="' + sel.id + '"]');
+    var u = sel.kind === 'unit' && sel.ability ? unitById(sel.id) : null;
+    return u ? document.querySelector('.tile[data-r="' + u.r + '"][data-c="' + u.c + '"]') : null;
+  }
+  $('grid').addEventListener('mouseover', function (e) {
+    var t = e.target.closest('.tile'), from = t && t.classList.contains('t-aim') ? aimFrom() : null;
+    if (!from) { arrow.style.display = 'none'; return; }
+    var a = from.getBoundingClientRect(), b = t.getBoundingClientRect(), line = arrow.querySelector('line');
+    line.setAttribute('x1', a.left + a.width / 2); line.setAttribute('y1', a.top + (from.classList.contains('card') ? 0 : a.height / 2));
+    line.setAttribute('x2', b.left + b.width / 2); line.setAttribute('y2', b.top + b.height / 2);
+    arrow.style.display = '';
+  });
+  $('grid').addEventListener('mouseleave', function () { arrow.style.display = 'none'; });
+
   $('grid').addEventListener('click', function (e) {
     var t = e.target.closest('.tile');
+    arrow.style.display = 'none';
     if (t) clickTile(t);
   });
   $('hand').addEventListener('click', function (e) {

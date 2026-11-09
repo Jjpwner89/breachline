@@ -108,8 +108,55 @@ var Engine = (function () {
     unit('retainer', 'Porcelain-visored retainer', 'B', 3, 1, 2, 5, { keywords: ['Guard', 'Sworn'], text: 'Guard. Sworn: permanently +1 attack when another of your units dies, up to +3.' }),
     unit('veiladept', 'Veil adept', 'B', 3, 1, 4, 2, { keywords: ['Veiled'], text: "Veiled: can't be attacked or targeted by enemy cards until it attacks." }),
     { id: 'flameblade', name: 'Banked flame blade', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 2, hpBonus: 0, allyOnly: true, text: 'Equip one of your units: +2 attack.' },
-    unit('stoneward', 'Stoneward colossus', 'N', 6, 0, 4, 8, { keywords: ['Guard', 'Holding ground'], text: 'Guard. Holding ground: enemies that move next to it must stop.' })
+    unit('stoneward', 'Stoneward colossus', 'N', 6, 0, 4, 8, { keywords: ['Guard', 'Holding ground'], text: 'Guard. Holding ground: enemies that move next to it must stop.' }),
+    // Set 6, cards 43 to 75 in CARD_PROPOSALS.md. aim makes a spell target a tile, and its effect sits there for a number of the caster's turns.
+    { id: 'scorch', name: 'Scorch', type: 'spell', colour: 'R', cost: 2, wants: 1, aim: { hit: 2, tile: 'burn', turns: 2 }, text: 'Aim at a tile: 2 damage to a unit there, and the tile burns for 2 turns.' },
+    { id: 'stormstrike', name: 'Stormstrike', type: 'spell', colour: 'R', cost: 3, wants: 1, aim: { hit: 3, splash: 1, splashAll: true, tile: 'charge' }, text: 'Aim at a tile: 3 damage to a unit there and 1 to every unit next to it, yours included. The tile stays charged until your next turn, and the next unit to enter it takes 2.' },
+    unit('salamander', 'Ember salamander', 'R', 3, 1, 3, 3, { keywords: ['Fireproof'], emberAtk: 2, text: "Fireproof: burning tiles don't hurt it. +2 attack while it stands on a burning tile." }),
+    { id: 'frost', name: 'Frost', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { tile: 'frost', turns: 2, spread: true }, text: "Aim at a tile: it and the tiles next to it freeze until the end of your next turn. Units on frozen tiles can't move." },
+    unit('glyphwright', 'Glyphwright', 'U', 3, 1, 2, 3, { ability: { key: 'snare', label: 'Snare', turns: 3 }, text: "Ability: put a snare on an empty tile within 2 tiles, for 3 turns. The first enemy to enter it stops there and can't move on its next turn." }),
+    { id: 'thornbrake', name: 'Thornbrake', type: 'spell', colour: 'G', cost: 2, wants: 1, aim: { tile: 'thorns', turns: 3 }, text: "Aim at a tile: thorns for 3 turns. A unit that enters must stop there and takes 1 damage. Alderkin aren't affected." },
+    { id: 'gravesoil', name: 'Grave soil', type: 'spell', colour: 'B', cost: 2, wants: 1, aim: { tile: 'blight', turns: 3 }, text: 'Aim at a tile: blighted for 3 turns. Units there have -1 attack. When a unit dies on it, you summon a Gravebound thrall on that tile.' },
+    unit('ashsower', 'Ash-sower', 'B', 3, 1, 3, 3, { ability: { key: 'blight', label: 'Blight', turns: 3 }, text: 'Ability: blight a tile next to it for 3 turns. Units there have -1 attack.' }),
+    { id: 'consecrate', name: 'Consecrated ground', type: 'spell', colour: 'W', cost: 2, wants: 1, aim: { tile: 'holy', turns: 3 }, text: 'Aim at a tile: for 3 turns, your unit there takes 1 less damage from attacks and recovers 1 health at the start of your turn.' },
+    { id: 'muster', name: 'Muster the levy', type: 'spell', colour: 'W', cost: 3, wants: 1, summons: ['spearman', 'spearman'], text: 'Summon two Militia spearmen.' },
+    unit('lioness', 'Pride lioness', 'W', 4, 2, 3, 5, { summons: ['cub'], text: 'When summoned: summon a Pride cub.' }),
+    unit('rabblerouser', 'Goblin rabble-rouser', 'R', 3, 1, 2, 2, { summons: ['goblin'], text: 'When summoned: summon a Goblin cutter.' }),
+    { id: 'seedfall', name: 'Seedfall', type: 'spell', colour: 'G', cost: 4, wants: 2, summons: ['sapling', 'sapling'], text: 'Summon two Walking saplings.' },
+    unit('gravecaller', 'Gravecaller', 'B', 4, 2, 2, 4, { gravecall: true, text: 'When an ally next to it dies, summon a Gravebound thrall.' }),
+    unit('apprentice', 'Lantern apprentice', 'U', 2, 1, 1, 2, { adds: ['spark'], text: 'When summoned: add a Spark to your hand. Spark costs 1: 1 damage to an enemy unit.' }),
+    unit('drummer', 'Cinder-cant drummer', 'R', 2, 1, 1, 2, { adds: ['warchant', 'warchant'], text: 'When summoned: add two War-chants to your hand. War-chant costs 1: one of your units gets +2 attack this turn.' }),
+    unit('tithekeeper', 'Tithe-keeper', 'B', 3, 1, 2, 3, { curse: 'coin', text: "When summoned: put a Cursed coin in the enemy's hand. While it's there, they lose 1 life at the end of each of their turns. Playing it costs them 1 mana and does nothing." }),
+    unit('assassin', 'Court assassin', 'B', 4, 2, 5, 2, { keywords: ['Ambush', 'Hunt'], text: 'Ambush. Hunt: +2 attack against a damaged unit.' }),
+    unit('skirmisher', 'Cinder skirmisher', 'R', 3, 1, 3, 2, { keywords: ['Ambush'], text: 'Ambush: can enter on an empty tile beside or behind one of your units.' }),
+    unit('packhunter', 'Orc pack-hunter', 'R', 3, 1, 3, 3, { keywords: ['Flanking'], text: 'Flanking: +1 attack when one of your units stands on the far side of the target.' }),
+    unit('ridgewolves', 'Ridge wolves', 'G', 2, 1, 2, 2, { keywords: ['Flanking'], text: 'Flanking: +1 attack when one of your units stands on the far side of the target.' }),
+    unit('outrider', 'Oath outrider', 'W', 3, 1, 3, 3, { keywords: ['Flanking'], text: 'Flanking: +1 attack when one of your units stands on the far side of the target.' }),
+    unit('sergeant', 'Shieldline sergeant', 'W', 3, 1, 2, 5, { keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' }),
+    unit('ironbark', 'Ironbark sentinel', 'G', 5, 2, 3, 9, { sub: 'Alderkin', keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' }),
+    unit('martyr', 'Cinder martyr', 'R', 2, 1, 2, 1, { deathBurn: 'around', text: 'When it dies: each tile next to it burns for 2 turns.' }),
+    unit('vigilkeeper', 'Vigil-keeper', 'W', 2, 1, 1, 3, { keeperLife: 1, text: 'When another of your units dies, you gain 1 life.' }),
+    unit('acolyte', 'Still Flame acolyte', 'W', 2, 1, 1, 3, { loyal: 2, text: 'Loyal: +2 attack and +2 health while you have another Still Flame unit.' }),
+    unit('journeyman', "Artificer's journeyman", 'U', 2, 1, 1, 3, { loyal: 2, text: "Loyal: +2 attack and +2 health while you have another Artificers unit." }),
+    // Cards only ever added to a hand by another card. They're conjured, and never go in a deck.
+    { id: 'spark', name: 'Spark', type: 'spell', colour: 'U', cost: 1, wants: 0, blast: 1, token: true, text: '1 damage to an enemy unit.' },
+    { id: 'warchant', name: 'War-chant', type: 'spell', colour: 'R', cost: 1, wants: 0, chant: 2, token: true, text: 'One of your units gets +2 attack this turn.' },
+    { id: 'coin', name: 'Cursed coin', type: 'spell', colour: 'N', cost: 1, wants: 0, coin: true, token: true, text: 'While this is in your hand, you lose 1 life at the end of each of your turns. Playing it does nothing.' }
   ].forEach(function (c) { CARDS[c.id] = c; });
+
+  // Changes to existing cards, 82 to 91 in CARD_PROPOSALS.md.
+  (function (set) { for (var id in set) for (var k in set[id]) CARDS[id][k] = set[id][k]; })({
+    thrall: { atk: 1, hp: 1, loyal: 1, text: 'Loyal: +1 attack and +1 health while you have another Gravebound unit.' },
+    youngsummoner: { atk: 1, hp: 3, keywords: ['Errant'], ability: { key: 'errant', label: 'Summon', summon: 'follower' }, text: 'Errant. Ability: summon a Camp follower on a random tile in your back row.' },
+    slateprowler: { keywords: ['Hunt', 'Ambush'], text: 'Hunt: +2 attack against a damaged unit. Ambush: can enter beside or behind one of your units.' },
+    saboteur: { keywords: ['Ambush'], text: 'Ambush: can enter on an empty tile beside or behind one of your units.' },
+    cinderfall: { blast: 0, splash: 0, aim: { hit: 3, splash: 1, tile: 'burn', turns: 2 }, text: 'Aim at a tile: 3 damage to a unit there and 1 to each enemy next to it, and the tile burns for 2 turns.' },
+    spearman: { loyal: 1, text: 'Loyal: +1 attack and +1 health while you have another Sunmane Oath unit.' },
+    goblin: { loyal: 1, text: 'Loyal: +1 attack and +1 health while you have another Warhorde unit.' },
+    knight: { keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' },
+    follower: { deathDraw: 1, text: 'When it dies: draw a card.' },
+    drake: { deathBurn: 'self', text: 'Flying: moves 2 tiles, over other units. When it dies: its tile burns for 2 turns.' }
+  });
 
   var DECKS = {
     white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['dawnsails', 1], ['stillflame', 1], ['carrier', 2], ['shelter', 1], ['cleric', 2], ['sentinel', 2], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
@@ -121,16 +168,16 @@ var Engine = (function () {
 
   // Draft assignments, from the faction table in SETTING.md and the art briefs. A card that isn't listed has no faction.
   var FACTIONS = [
-    { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch'] },
-    { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric', 'stillflame'] },
-    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance'] },
-    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench'] },
-    { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant', 'squire', 'calleddebt', 'envoy', 'retainer', 'veiladept'] },
-    { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise', 'rats', 'barrowpriest', 'colossus'] },
-    { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex', 'firepot', 'chieftain'] },
-    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall', 'flameblade'] },
-    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender', 'goblinscout'] },
-    { id: 'herd', name: 'The Elder Herd', colour: 'G', cards: ['owl', 'bull', 'boar', 'mossback', 'herdmother'] }
+    { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch', 'lioness', 'outrider', 'sergeant', 'muster'] },
+    { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric', 'stillflame', 'vigilkeeper', 'acolyte', 'consecrate'] },
+    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance', 'glyphwright', 'apprentice', 'frost'] },
+    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench', 'journeyman'] },
+    { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant', 'squire', 'calleddebt', 'envoy', 'retainer', 'veiladept', 'tithekeeper', 'assassin'] },
+    { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise', 'rats', 'barrowpriest', 'colossus', 'gravecaller', 'gravesoil', 'ashsower'] },
+    { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex', 'firepot', 'chieftain', 'rabblerouser', 'packhunter', 'stormstrike'] },
+    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall', 'flameblade', 'drummer', 'skirmisher', 'martyr', 'scorch', 'salamander'] },
+    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender', 'goblinscout', 'ironbark', 'thornbrake', 'seedfall'] },
+    { id: 'herd', name: 'The Elder Herd', colour: 'G', cards: ['owl', 'bull', 'boar', 'mossback', 'herdmother', 'ridgewolves'] }
   ];
   FACTIONS.forEach(function (f) { f.cards.forEach(function (id) { CARDS[id].faction = f.id; }); });
 
@@ -173,9 +220,50 @@ var Engine = (function () {
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
   function nextToAlly(s, u) { return s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1; }); }
+  function onBoard(r, c) { return r >= 0 && c >= 0 && r < ROWS && c < COLS; }
+  var STEPS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+
+  // Tile effects sit in s.tiles under 'r,c' as { kind, owner, until }, and go at the start of the first turn after until.
+  // One effect per tile, and a new one replaces the old.
+  function tileAt(s, r, c) { return (s.tiles && s.tiles[r + ',' + c]) || null; }
+  function tileKind(s, u) { var t = tileAt(s, u.r, u.c); return t ? t.kind : null; }
+  // turns counts the owner's turns, starting with the current one if it's theirs. A charge lasts until its owner's next turn.
+  function setTile(s, r, c, kind, owner, turns) {
+    if (!onBoard(r, c)) return;
+    if (!s.tiles) s.tiles = {};
+    var until = kind === 'charge' ? s.turn + 1 : s.turn + 2 * turns - (s.active === owner ? 2 : 1);
+    s.tiles[r + ',' + c] = { kind: kind, owner: owner, until: until };
+  }
+  // Fire, thorns and charges hurt either side. Fireproof units ignore fire, and alderkin ignore thorns.
+  function harms(u, kind) {
+    if (kind === 'burn') return hasKw(u, 'Fireproof') ? 0 : 1;
+    if (kind === 'thorns') return CARDS[u.cardId].sub === 'Alderkin' ? 0 : 1;
+    return kind === 'charge' ? 2 : 0;
+  }
+  var TILE_SAY = { burn: 'The fire burns ', thorns: 'The thorns cut ', charge: 'The charge strikes ' };
+  // Moving onto a tile triggers it, and so does starting the owner's turn there. A charge goes off only on entering, then is spent.
+  function tileHits(s, u, entering) {
+    var t = tileAt(s, u.r, u.c);
+    if (!t) return;
+    if (t.kind === 'holy' && !entering && u.owner === t.owner && u.hp < u.maxHp) heal(s, u, 1);
+    if (t.kind === 'snare' && entering && u.owner !== t.owner) {
+      u.frozen = s.turn + 2;
+      delete s.tiles[u.r + ',' + u.c];
+      say(s, CARDS[u.cardId].name + " is caught in a snare: it can't move on its next turn.");
+    }
+    if (t.kind === 'charge' && !entering) return;
+    var amt = harms(u, t.kind);
+    if (!amt) return;
+    if (t.kind === 'charge') delete s.tiles[u.r + ',' + u.c];
+    say(s, TILE_SAY[t.kind] + CARDS[u.cardId].name + ' for ' + damage(s, u, amt) + '.');
+    if (u.hp <= 0) kill(s, u);
+  }
 
   function attackOf(s, u) {
-    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.sworn || 0);
+    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.sworn || 0) + (u.loyal || 0);
+    var spot = tileKind(s, u);
+    if (spot === 'blight') a -= 1;
+    if (spot === 'burn') a += CARDS[u.cardId].emberAtk || 0;
     u.enchants.forEach(function (e) { a += CARDS[e.c].atkBonus + (e.growth || 0); });
     if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 1;
     if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 2;
@@ -186,9 +274,20 @@ var Engine = (function () {
     return Math.max(0, a);
   }
   // attackOf plus anything that depends on who is being hit. Hunted adds to attacks only, never to strike-backs, and doesn't stack with itself.
+  // Flanking, like Hunted, adds to attacks only.
   function attackAgainst(s, u, t, back) {
     var hunted = !back && t.enchants.some(function (e) { return CARDS[e.c].hunted; }) ? 1 : 0;
-    return attackOf(s, u) + (hasKw(u, 'Hunt') && t.hp < t.maxHp ? 2 : 0) + hunted;
+    return attackOf(s, u) + (hasKw(u, 'Hunt') && t.hp < t.maxHp ? 2 : 0) + hunted + (!back && flanked(s, u, t) ? 1 : 0);
+  }
+  // The far side is one tile on from the target, away from the attacker. A diagonal shot counts along the row, as with Overrun.
+  function beyond(a, t) {
+    var dr = t.r === a.r ? 0 : t.r > a.r ? 1 : -1, dc = dr ? 0 : t.c > a.c ? 1 : -1;
+    return { r: t.r + dr, c: t.c + dc };
+  }
+  function flanked(s, u, t) {
+    if (!hasKw(u, 'Flanking')) return false;
+    var f = beyond(u, t), o = unitAt(s, f.r, f.c);
+    return !!o && o.owner === u.owner;
   }
 
   // Guard takes 1 off attack and strike-back damage, and Winter shelter takes off 2 more. Neither stacks with itself.
@@ -197,7 +296,8 @@ var Engine = (function () {
     if (pierce) return amt;
     var safe = s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1 && hasKw(o, 'Guard'); });
     var cover = u.enchants.some(function (e) { return CARDS[e.c].shelter; }) ? 2 : 0;
-    return Math.max(0, amt - cover - (safe ? 1 : 0));
+    var spot = tileAt(s, u.r, u.c), holy = spot && spot.kind === 'holy' && spot.owner === u.owner ? 1 : 0;
+    return Math.max(0, amt - cover - (safe ? 1 : 0) - holy);
   }
 
   // What an attack would actually take off a target, after Guard, Winter shelter and any instant that prevents damage.
@@ -214,7 +314,7 @@ var Engine = (function () {
   function newGame(opts) {
     var s = {
       seed: (opts.seed === undefined ? 1 : opts.seed) | 0, turn: 0, active: opts.first || 0, phase: 'play',
-      winner: null, pending: null, nextId: 1, units: [], log: [], logMarked: true, fx: [],
+      winner: null, pending: null, nextId: 1, units: [], tiles: {}, log: [], logMarked: true, fx: [],
       players: [mkPlayer(opts.decks[0]), mkPlayer(opts.decks[1])]
     };
     s.players.forEach(function (p, idx) {
@@ -283,6 +383,9 @@ var Engine = (function () {
         }
       });
     });
+    for (var key in s.tiles || {}) if (s.tiles[key].until < s.turn) delete s.tiles[key];
+    s.units.filter(function (u) { return u.owner === s.active; }).forEach(function (u) { if (s.units.indexOf(u) >= 0) tileHits(s, u, false); });
+    if (s.winner !== null) return;
     if (s.turn > 1) draw(s, s.active);
   }
 
@@ -297,14 +400,19 @@ var Engine = (function () {
   }
 
   function bound(u) { return u.enchants.some(function (e) { return CARDS[e.c].bind; }); }
-  // Bound by a glyph, held this turn by a Conclave examiner, or frozen this turn by a Rime drake.
-  function stuck(s, u) { return bound(u) || u.held === s.turn || u.frozen === s.turn; }
+  // Bound by a glyph, held this turn by a Conclave examiner, frozen this turn by a Rime drake or a snare, or standing on frozen ground.
+  function stuck(s, u) { return bound(u) || u.held === s.turn || u.frozen === s.turn || tileKind(s, u) === 'frost'; }
   // Holding ground: a tile next to an enemy that has it ends the move, so nothing passes through it, fliers included.
+  // Thorns and an enemy snare also end a walker's move. A flier passes over them.
   function reachable(s, u) {
     if (stuck(s, u)) return [];
     var seen = {}, out = [], frontier = [{ r: u.r, c: u.c }], fly = hasKw(u, 'Flying');
     var holders = s.units.filter(function (o) { return o.owner !== u.owner && hasKw(o, 'Holding ground'); });
-    var held = function (r, c) { return holders.some(function (h) { return Math.abs(h.r - r) + Math.abs(h.c - c) === 1; }); };
+    var held = function (r, c) {
+      var t = tileAt(s, r, c);
+      if (!fly && t && ((t.kind === 'thorns' && harms(u, 'thorns')) || (t.kind === 'snare' && t.owner !== u.owner))) return true;
+      return holders.some(function (h) { return Math.abs(h.r - r) + Math.abs(h.c - c) === 1; });
+    };
     seen[u.r + ',' + u.c] = true;
     for (var step = 0; step < speed(u); step++) {
       var next = [];
@@ -405,14 +513,23 @@ var Engine = (function () {
         if (c.type !== 'land' && costOf(s, pi, c) <= p.mana) {
           if (c.type === 'unit') {
             var foes = c.zap ? s.units.filter(function (e) { return e.owner !== pi && !e.veiled; }) : [];
-            for (var col = 0; col < COLS; col++) {
-              if (unitAt(s, backRow(pi), col)) continue;
-              if (!foes.length) out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col });
-              foes.forEach(function (e) { out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col, target: e.uid }); });
-            }
+            entryTiles(s, pi, c).forEach(function (t) {
+              picks(s, pi, (c.summons || []).length, t).forEach(function (at) {
+                var base = { type: 'summon', card: i.id, r: t.r, c: t.c };
+                if (at) base.at = at;
+                if (!foes.length) out.push(base);
+                foes.forEach(function (e) { out.push(withField(base, 'target', e.uid)); });
+              });
+            });
           } else if (c.type === 'enchant') {
             s.units.forEach(function (u) { if ((!c.enemyOnly || u.owner !== pi) && (!c.allyOnly || u.owner === pi) && open(pi, u)) out.push({ type: 'enchant', card: i.id, target: u.uid }); });
-          } else if (c.draw || c.extraLand || c.sift) {
+          } else if (c.aim) {
+            for (var ar = 0; ar < ROWS; ar++) for (var ac = 0; ac < COLS; ac++) out.push({ type: 'cast', card: i.id, r: ar, c: ac });
+          } else if (c.summons) {
+            if (landing(s, pi).length) picks(s, pi, c.summons.length, null).forEach(function (at) { out.push({ type: 'cast', card: i.id, at: at }); });
+          } else if (c.chant) {
+            s.units.forEach(function (a) { if (a.owner === pi) out.push({ type: 'cast', card: i.id, target: a.uid }); });
+          } else if (c.draw || c.extraLand || c.sift || c.coin) {
             out.push({ type: 'cast', card: i.id });
           } else if (c.raise) {
             if (backTile(s, pi) !== null) p.discard.forEach(function (d) {
@@ -488,11 +605,69 @@ var Engine = (function () {
           var dc = CARDS[d.c];
           if (dc.type === 'unit' && dc.cost <= ab.amount) out.push({ type: 'ability', unit: u.uid, raise: d.id });
         });
+      } else if (ab.key === 'snare') {
+        for (var sr = 0; sr < ROWS; sr++) for (var sc = 0; sc < COLS; sc++) {
+          if (emptyTile(s, sr, sc) && dist(u, { r: sr, c: sc }) <= 2) out.push({ type: 'ability', unit: u.uid, r: sr, c: sc });
+        }
+      } else if (ab.key === 'blight') {
+        STEPS.forEach(function (d) { if (onBoard(u.r + d[0], u.c + d[1])) out.push({ type: 'ability', unit: u.uid, r: u.r + d[0], c: u.c + d[1] }); });
+      } else if (ab.key === 'errant') {
+        if (backTile(s, pi) !== null) out.push({ type: 'ability', unit: u.uid });
       }
     });
     out.push({ type: 'endTurn' });
     return out;
   }
+
+  function withField(m, k, v) { var o = {}; for (var f in m) o[f] = m[f]; o[k] = v; return o; }
+
+  // Where a unit from the hand can enter: a free back-row tile, or with Ambush, an empty tile beside or behind one of your units.
+  function entryTiles(s, pi, c) {
+    var out = [], seen = {}, back = backRow(pi) === ROWS - 1 ? 1 : -1;
+    function add(r, col) { if (emptyTile(s, r, col) && !seen[r + ',' + col]) { seen[r + ',' + col] = 1; out.push({ r: r, c: col }); } }
+    for (var col = 0; col < COLS; col++) add(backRow(pi), col);
+    if (c.keywords.indexOf('Ambush') >= 0) s.units.forEach(function (a) {
+      if (a.owner === pi) [[0, 1], [0, -1], [back, 0]].forEach(function (d) { add(a.r + d[0], a.c + d[1]); });
+    });
+    return out;
+  }
+  // Summoned units go to back-row tiles the player picks. Once the back row is full, the rest land in the second row,
+  // from a side column toward the middle.
+  var OVERFLOW = [0, 4, 1, 3, 2];
+  function landing(s, pi) {
+    var out = [], second = backRow(pi) === ROWS - 1 ? ROWS - 2 : 1;
+    for (var col = 0; col < COLS; col++) if (emptyTile(s, backRow(pi), col)) out.push([backRow(pi), col]);
+    OVERFLOW.forEach(function (col) { if (emptyTile(s, second, col)) out.push([second, col]); });
+    return out;
+  }
+  // Every choice of back-row tiles for n summons, leaving out a tile already taken. Returns [null] when nothing is summoned.
+  function picks(s, pi, n, taken) {
+    if (!n) return [null];
+    var free = [];
+    for (var col = 0; col < COLS; col++) if (emptyTile(s, backRow(pi), col) && !(taken && taken.r === backRow(pi) && taken.c === col)) free.push([backRow(pi), col]);
+    var k = Math.min(n, free.length), out = [];
+    (function grow(start, chosen) {
+      if (chosen.length === k) { out.push(chosen); return; }
+      for (var j = start; j < free.length; j++) grow(j + 1, chosen.concat([free[j]]));
+    })(0, []);
+    return out;
+  }
+  // Conjured units vanish when they die, so they never reach a discard pile.
+  function conjure(s, pi, id, r, c, by) {
+    var nu = newUnit(s, null, id, pi, r, c);
+    nu.conjured = true;
+    s.units.push(nu);
+    say(s, (by ? by + ' summons ' : mark(s, s.players[pi]) + ' summons ') + CARDS[id].name + '.');
+    return nu;
+  }
+  // Places summons on the picked tiles, then anywhere landing allows.
+  function summonAll(s, pi, ids, at, by) {
+    ids.forEach(function (id, n) {
+      var spot = at && at[n] && emptyTile(s, at[n][0], at[n][1]) ? at[n] : landing(s, pi)[0];
+      if (spot) conjure(s, pi, id, spot[0], spot[1], by);
+    });
+  }
+  function addToHand(s, pi, id) { s.players[pi].hand.push({ id: s.nextId++, c: id, conjured: true }); }
 
   // Raised units land on the free back-row tile nearest the centre.
   function backTile(s, pi) {
@@ -511,17 +686,59 @@ var Engine = (function () {
   }
 
   function kill(s, u) {
+    var d = CARDS[u.cardId], spot = tileAt(s, u.r, u.c), pl = s.players[u.owner];
     s.units.splice(s.units.indexOf(u), 1);
-    s.players[u.owner].discard.push({ id: u.inst, c: u.cardId });
+    if (!u.conjured) pl.discard.push({ id: u.inst, c: u.cardId });
     u.enchants.forEach(function (e) { s.players[e.owner].discard.push({ id: e.id, c: e.c }); });
-    say(s, CARDS[u.cardId].name + ' is destroyed.');
-    // Sworn counts every other unit of yours that is destroyed, however it happens.
+    say(s, d.name + (u.conjured ? ' is destroyed and vanishes.' : ' is destroyed.'));
+    // Death triggers. Sworn counts every other unit of yours that is destroyed, however it happens, and so do the
+    // Vigil-keeper and, for a unit next to it, the Gravecaller.
+    var callers = [];
     s.units.forEach(function (o) {
-      if (o.owner !== u.owner || !hasKw(o, 'Sworn') || (o.sworn || 0) >= 3) return;
-      o.sworn = (o.sworn || 0) + 1;
-      s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+1', good: true });
-      say(s, CARDS[o.cardId].name + ' gets +1 attack.');
+      if (o.owner !== u.owner) return;
+      var od = CARDS[o.cardId];
+      if (hasKw(o, 'Sworn') && (o.sworn || 0) < 3) {
+        o.sworn = (o.sworn || 0) + 1;
+        s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+1', good: true });
+        say(s, od.name + ' gets +1 attack.');
+      }
+      if (od.keeperLife) {
+        pl.life += od.keeperLife;
+        s.fx.push({ summoner: u.owner, text: '+' + od.keeperLife, good: true });
+        say(s, od.name + ' keeps the vigil, and ' + mark(s, pl) + ' gains ' + od.keeperLife + ' life.');
+      }
+      if (od.gravecall && dist(o, u) === 1) callers.push(o);
     });
+    if (d.deathDraw) {
+      draw(s, u.owner);
+      say(s, mark(s, pl) + ' draws a card.');
+    }
+    if (d.deathBurn === 'self') setTile(s, u.r, u.c, 'burn', u.owner, 2);
+    if (d.deathBurn === 'around') STEPS.forEach(function (st) { setTile(s, u.r + st[0], u.c + st[1], 'burn', u.owner, 2); });
+    if (d.deathBurn) say(s, 'Fire spreads where ' + d.name + ' fell.');
+    callers.forEach(function (o) { summonAll(s, u.owner, ['thrall'], null, CARDS[o.cardId].name); });
+    // Grave soil raises a thrall on its own tile, the one exception to where summons land.
+    if (spot && spot.kind === 'blight' && emptyTile(s, u.r, u.c)) conjure(s, spot.owner, 'thrall', u.r, u.c, 'The grave soil');
+  }
+
+  // Loyal: a stat bonus while another unit of the same faction is on your side. Health comes and goes with it,
+  // so a damaged unit can die when it loses the bonus.
+  function syncLoyal(s) {
+    for (var pass = 0; pass < 4; pass++) {
+      var changed = false;
+      s.units.slice().forEach(function (u) {
+        var d = CARDS[u.cardId];
+        if (!d.loyal || s.units.indexOf(u) < 0) return;
+        var on = d.faction && s.units.some(function (o) { return o !== u && o.owner === u.owner && CARDS[o.cardId].faction === d.faction; }) ? d.loyal : 0;
+        var was = u.loyal || 0;
+        if (on === was) return;
+        changed = true;
+        u.loyal = on; u.maxHp += on - was; u.hp += on - was;
+        s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: (on > was ? '+' : '') + (on - was), good: on > was });
+        if (u.hp <= 0) kill(s, u);
+      });
+      if (!changed) return;
+    }
   }
 
   // Takes damage off a unit and returns how much landed. Woven ward soaks damage of every kind until it is used up.
@@ -626,6 +843,13 @@ var Engine = (function () {
 
   function finishTurn(s) {
     s.units.forEach(function (u) { u.tempAtk = 0; u.tempRange = false; u.noAttack = false; });
+    var p = s.players[s.active], coins = p.hand.filter(function (i) { return CARDS[i.c].coin; }).length;
+    if (coins) {
+      p.life -= coins;
+      s.fx.push({ summoner: s.active, text: '-' + coins });
+      say(s, mark(s, p) + ' loses ' + coins + ' life to the ' + CARDS.coin.name + (coins > 1 ? 's' : '') + '.');
+      if (p.life <= 0) { p.life = 0; s.winner = 1 - s.active; say(s, mark(s, s.players[1 - s.active]) + ' wins.'); return; }
+    }
     s.units.filter(function (u) { return u.enchants.some(function (e) { return e.expires === s.turn; }); }).forEach(function (u) {
       say(s, 'The warrant on ' + CARDS[u.cardId].name + ' comes due.');
       kill(s, u);
@@ -658,7 +882,8 @@ var Engine = (function () {
         if (!p.toBottom) finishOpening(s);
         break;
       case 'bottomCard':
-        p.deck.unshift(takeFromHand(p, m.card));
+        i = takeFromHand(p, m.card);
+        if (!i.conjured) p.deck.unshift(i);
         p.toBottom -= 1;
         if (!p.toBottom && s.phase === 'opening') finishOpening(s);
         break;
@@ -666,7 +891,16 @@ var Engine = (function () {
         i = takeFromHand(p, m.card); c = card(i);
         p.mana -= costOf(s, pi, c);
         s.units.push(newUnit(s, i.id, i.c, pi, m.r, m.c));
-        say(s, mark(s, p) + ' summons ' + c.name + '.');
+        say(s, mark(s, p) + ' summons ' + c.name + (m.r !== backRow(pi) ? ' from ambush.' : '.'));
+        if (c.summons) summonAll(s, pi, c.summons, m.at, c.name);
+        if (c.adds) {
+          c.adds.forEach(function (id) { addToHand(s, pi, id); });
+          say(s, mark(s, p) + ' adds ' + (c.adds.length > 1 ? c.adds.length + ' ' + CARDS[c.adds[0]].name + 's' : 'a ' + CARDS[c.adds[0]].name) + ' to their hand.');
+        }
+        if (c.curse) {
+          addToHand(s, 1 - pi, c.curse);
+          say(s, mark(s, p) + ' puts a ' + CARDS[c.curse].name + " in their enemy's hand.");
+        }
         if (c.extraLand) p.extraLands += 1;
         if (c.drawOnSummon) {
           draw(s, pi);
@@ -697,7 +931,19 @@ var Engine = (function () {
       case 'cast':
         i = takeFromHand(p, m.card); c = card(i);
         p.mana -= costOf(s, pi, c);
-        p.discard.push(i);
+        if (!i.conjured) p.discard.push(i);
+        if (c.aim) castAt(s, pi, c, m.r, m.c);
+        if (c.summons) {
+          say(s, mark(s, p) + ' casts ' + c.name + '.');
+          summonAll(s, pi, c.summons, m.at);
+        }
+        if (c.chant) {
+          u = unitById(s, m.target);
+          u.tempAtk += c.chant;
+          s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+' + c.chant, good: true });
+          say(s, mark(s, p) + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + '.');
+        }
+        if (c.coin) say(s, mark(s, p) + ' plays ' + c.name + ', and it vanishes.');
         if (c.draw) {
           for (var dn = 0; dn < c.draw; dn++) draw(s, pi);
           say(s, mark(s, p) + ' casts ' + c.name + ' and draws ' + c.draw + ' cards.');
@@ -771,6 +1017,7 @@ var Engine = (function () {
         u = unitById(s, m.unit);
         u.r = m.r; u.c = m.c; u.moved = true; u.walked = true;
         say(s, CARDS[u.cardId].name + ' moves.');
+        tileHits(s, u, true);
         break;
       case 'attack':
         u = unitById(s, m.unit); u.acted = true; u.veiled = false;
@@ -850,6 +1097,14 @@ var Engine = (function () {
             say(s, CARDS[u.cardId].name + ' returns ' + CARDS[dug.c].name + '.');
             break;
           }
+        } else if (ab.key === 'snare' || ab.key === 'blight') {
+          setTile(s, m.r, m.c, ab.key, pi, ab.turns);
+          say(s, CARDS[u.cardId].name + (ab.key === 'snare' ? ' sets a snare.' : ' blights the ground.'));
+        } else if (ab.key === 'errant') {
+          // Errant: the summon lands on a random free tile of the back row.
+          var freeCols = [];
+          for (var ec = 0; ec < COLS; ec++) if (emptyTile(s, backRow(pi), ec)) freeCols.push(ec);
+          conjure(s, pi, ab.summon, backRow(pi), freeCols[Math.floor(rand(s) * freeCols.length)], CARDS[u.cardId].name);
         }
         break;
       case 'respond':
@@ -895,7 +1150,26 @@ var Engine = (function () {
       default:
         throw new Error('Unknown move: ' + m.type);
     }
+    syncLoyal(s);
     return s;
+  }
+
+  // A spell aimed at a tile hits whatever stands there, even a veiled unit, since it targets the ground rather than the unit.
+  function castAt(s, pi, c, r, col) {
+    var a = c.aim, here = unitAt(s, r, col), hurt = [];
+    say(s, mark(s, s.players[pi]) + ' casts ' + c.name + ' at row ' + r + ', column ' + col + '.');
+    if (here && a.hit) {
+      say(s, c.name + ' hits ' + CARDS[here.cardId].name + ' for ' + damage(s, here, a.hit) + '.');
+      hurt.push(here);
+    }
+    if (a.splash) s.units.forEach(function (o) {
+      if (o === here || dist(o, { r: r, c: col }) !== 1 || (!a.splashAll && o.owner === pi)) return;
+      say(s, c.name + ' also hits ' + CARDS[o.cardId].name + ' for ' + damage(s, o, a.splash) + '.');
+      hurt.push(o);
+    });
+    setTile(s, r, col, a.tile, pi, a.turns);
+    if (a.spread) STEPS.forEach(function (d) { setTile(s, r + d[0], col + d[1], a.tile, pi, a.turns); });
+    hurt.forEach(function (o) { if (o.hp <= 0 && s.units.indexOf(o) >= 0) kill(s, o); });
   }
 
   // What one player is allowed to know: no shuffle seed, no deck order and no enemy hand, only their sizes.
@@ -917,7 +1191,7 @@ var Engine = (function () {
     ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
     DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
-    attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
+    tileAt: tileAt, attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
   };
 })();
 if (typeof module !== 'undefined') module.exports = Engine;

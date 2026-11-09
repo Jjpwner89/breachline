@@ -2,9 +2,9 @@
 
 Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
-Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 are approved designs that aren't built yet. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
+Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09 and tested by bot simulations and a quick check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-The starter and campaign decks are unchanged, so cards 1 to 42 show up in the deck builder and in campaign rewards. Their art is in `art/ART_BRIEFS_SET4.md` and `art/ART_BRIEFS_SET5.md`. Flavour lines are next.
+The starter and campaign decks are unchanged, so cards 1 to 91 show up in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
 
 ## Rules decided while building
 
@@ -213,9 +213,9 @@ Added on 2026-11-09, after checking the built cards against the new mechanics.
 | 90 | Camp follower | 1 / 2, no ability | 1 / 2. When it dies: draw a card | Gives the weak neutral card a small reason to play it |
 | 91 | Ember drake | 4 / 3, Flying | 4 / 3, Flying. When it dies: its tile burns for 2 turns | A dragon's fire, and a reason not to kill it among your own units |
 
-## What's left to build
+## Set 6 is built
 
-28 new cards and 10 changes to existing cards.
+All 28 new cards and the 10 changes are in the game, with their art. The tile rules decided while building are in `DESIGN_NOTES.md`. Summoned units and added cards (Spark, War-chant, Cursed coin) are tokens, so they don't appear in the deck builder or as rewards.
 
 | Alignment | New cards |
 | --- | --- |
@@ -224,8 +224,6 @@ Added on 2026-11-09, after checking the built cards against the new mechanics.
 | Dominion (black) | 5 |
 | Fervor (red) | 8 |
 | Genesis (green) | 4 |
-
-Most need engine work first: tile effects and aimed spells, summoning and conjured cards, Loyal, Ambush, Flanking, and death triggers other than Sworn. Holding ground is built.
 
 ## Smaller mechanics to approve
 
@@ -240,4 +238,4 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
 3. **Muster the levy:** with Loyal on Militia spearman, it summons two 3 / 3s for 3 mana. Raise it to 4?
-4. **Art and flavour:** cards 43 to 75 have art briefs waiting for review in `art/ART_BRIEFS_SET6.md`. None of the new cards has flavour text yet.
+4. **Flavour:** none of the Set 6 cards has flavour text yet.

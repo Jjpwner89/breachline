@@ -44,9 +44,9 @@ Claude's assumptions, not yet confirmed by the creator:
 - In the deck builder: decks of 24 to 40 cards, 3 copies of a non-land card and unlimited lands. The starter decks have 24 cards, below the 40-card target.
 - The card-to-faction list in `engine.js`.
 
-## Mechanics in development
+## Board mechanics
 
-Decided by the creator on 2026-11-09, to make more of the board. Holding ground and Sworn are built. The rest aren't yet.
+Decided by the creator on 2026-11-09, to make more of the board. All of these are built, with the Set 6 cards in `CARD_PROPOSALS.md`.
 
 - **Summoning units:** a card can summon other units straight onto the board. You pick empty tiles in your back row. If the back row is full, the rest go to your second row, starting from a side column and filling toward the middle unless you choose. Summoned units wait a turn like any new unit.
 - **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row.
@@ -61,6 +61,10 @@ Decided by the creator on 2026-11-09, to make more of the board. Holding ground 
   - Effects such as fire and thorns hurt your own units too, unless a unit is exempt. Alderkin aren't affected by thorns.
   - A unit is affected when it moves onto the tile, and again if it starts its owner's turn there. A flier passing over isn't affected, but one that stops on the tile is.
   - Nothing on the board is hidden, so snares and traps are visible to both players.
+  - Only the tile a unit ends its move on counts. Tiles it walks through don't.
+  - Summoning a unit onto a tile doesn't trigger it. The unit is affected if it starts its owner's turn there.
+  - A snare stops the first enemy to enter it, and it can't move on its next turn. Thorns and snares also block walking through. Fliers ignore both.
+  - Spells aimed at a tile hit a Veiled unit standing there, since they target the tile, not the unit.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
 - **Loyal:** +1 attack and +1 health while you have another unit of the same sub-faction on the board, such as Sunmane Oath or Cinder Clans. A few cards get +2 / +2 instead. Loyal is only ever a stat bonus, never a keyword such as Ranged. This is the rule for the faction loyalty focus. Confirmed on 2026-11-09.

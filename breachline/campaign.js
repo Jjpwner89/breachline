@@ -282,7 +282,7 @@ var Campaign = (function () {
   function rewardable(run, colours) {
     return Object.keys(E.CARDS).filter(function (id) {
       var c = E.CARDS[id];
-      return colours.indexOf(c.colour) >= 0 && c.type !== 'land' && c.sub !== 'Velunn' && c.cost + c.wants <= MAX_REWARD_COST && copiesOf(run, id) < E.maxCopies(id);
+      return colours.indexOf(c.colour) >= 0 && c.type !== 'land' && !c.token && c.sub !== 'Velunn' && c.cost + c.wants <= MAX_REWARD_COST && copiesOf(run, id) < E.maxCopies(id);
     });
   }
   function draw(run, from, out) {
