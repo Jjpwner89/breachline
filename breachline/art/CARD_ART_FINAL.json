@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "status": "final_for_card_building",
   "purpose": "Authoritative image selection for the next Breachline card-building session.",
   "usage": [
     "Use only the assets listed here when selecting finished card art.",
     "Each asset has one canonical full-size PNG and one smaller JPEG used by the game. These are deliberate delivery formats, not alternative designs.",
-    "32 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
+    "33 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
     "61 other images already serve cards in the current prototype; card_ids identify those assignments.",
     "Do not regenerate or restore the rejected pottery spell, salvager or superseded versions.",
     "Reference sheets, exploratory concepts, maps, campaign images and works in progress are separate resources and are not part of this card-art selection.",
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 93,
-    "new_card_art": 32,
+    "final_images": 94,
+    "new_card_art": 33,
     "already_used_by_game": 61,
     "existing_card_ids": 61
   },
@@ -33,9 +33,9 @@
     },
     "B": {
       "objects": 3,
-      "units": 3,
+      "units": 4,
       "spells": 2,
-      "total": 8
+      "total": 9
     },
     "R": {
       "objects": 2,
@@ -1976,6 +1976,28 @@
       "card_ids": [
         "coalback"
       ]
+    },
+    {
+      "id": "porcelain-visored-retainer",
+      "title": "Porcelain-visored Retainer",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Use existing card-design records; this selection does not change mechanics.",
+      "png": "porcelain-visored-retainer.png",
+      "web_jpeg": "web/porcelain-visored-retainer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "985557326991058ede8c865519cd0931dc49d49a0263d0f08fc34bfef9895d70",
+      "web_sha256": "0218f9f4fc9463770aae6788183cc8650e3c22ce566f77e45b8cf55f0fba0934",
+      "card_ids": [],
+      "source_set": 5,
+      "selected_date": "2026-11-09",
+      "selection_note": "Creator selected the second-to-last painting, the full-mask revision before the half visor, as final."
     }
   ]
 }

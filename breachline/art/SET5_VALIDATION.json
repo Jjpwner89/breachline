@@ -4,7 +4,7 @@
   "status": "passed",
   "brief_revision": 2,
   "count": 12,
-  "creator_review": "creator requested commit after three follow-up revisions",
+  "creator_review": "Porcelain retainer explicitly final; other selected Set 5 images unchanged.",
   "generation_method": "built-in image_gen",
   "generation_attempt_count": 30,
   "current_revision_attempt_count": 16,
@@ -23,7 +23,7 @@
   "gallery_image_count": 12,
   "gallery_links_checked": 51,
   "broken_gallery_links": [],
-  "visual_review": "All selected paintings inspected. Latest edits preserve the seated adept while adding veil coverage, center the blade at greater prominence with a complete point and coherent hand, and replace the retainer doll-face mask with a human half-visor presentation. Gallery links, dimensions and recorded hashes checked. Creator requested committing the resulting set.",
+  "visual_review": "Selected paintings inspected. Latest selection restores the exact full-mask porcelain retainer from before the half-visor edit at the creator request and marks it final. The veiled adept and prominent blade remain unchanged. PNG/JPEG hashes, dimensions and gallery links verified.",
   "files": [
     {
       "png": "conclave-field-scholar.png",
@@ -156,9 +156,10 @@
         768,
         512
       ],
-      "sha256": "5056c877fc325e7f887cff56c0f9f5346f826fe1c1b3b261e6fecaffed1fbd9a",
-      "web_sha256": "d45ee17648ededbe73fecc6c6179eca6202c54c6134c414ec113cfaedcc89200",
-      "generation_attempts_this_revision": 2
+      "sha256": "985557326991058ede8c865519cd0931dc49d49a0263d0f08fc34bfef9895d70",
+      "web_sha256": "0218f9f4fc9463770aae6788183cc8650e3c22ce566f77e45b8cf55f0fba0934",
+      "generation_attempts_this_revision": 2,
+      "review_status": "final_for_card_building"
     },
     {
       "png": "veil-adept.png",
@@ -208,5 +209,13 @@
   ],
   "latest_followup_images": 3,
   "latest_followup_untouched_image_files_checked": 243,
-  "latest_followup_untouched_image_files_unchanged": true
+  "latest_followup_untouched_image_files_unchanged": true,
+  "latest_final_selection": {
+    "file": "porcelain-visored-retainer.png",
+    "date": "2026-11-09",
+    "action": "Restored exact second-to-last full-mask painting; no regeneration.",
+    "sha256": "985557326991058ede8c865519cd0931dc49d49a0263d0f08fc34bfef9895d70",
+    "web_sha256": "0218f9f4fc9463770aae6788183cc8650e3c22ce566f77e45b8cf55f0fba0934",
+    "unrelated_image_files_verified": 247
+  }
 }

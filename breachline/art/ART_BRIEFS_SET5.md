@@ -2,7 +2,7 @@
 
 12 illustrations for the proposed subjects numbered 31–42 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md).
 
-**Revision 2 — 2026-11-09. All twelve paintings generated; creator requested the set be committed after three final revisions.** Current files include the angry outdoor Brightlance, more-veiled adept, larger sword composition and less uncanny porcelain half-visored retainer. Card rules are unchanged.
+**Revision 2 — 2026-11-09. All twelve paintings generated; creator requested the set be committed after three final revisions.** Current files include the angry outdoor Brightlance, more-veiled adept, larger sword composition and creator-selected final full-mask porcelain retainer. Card rules are unchanged.
 
 ## What these paintings are for
 
@@ -19,7 +19,7 @@ Each brief below states a visual aim, preserves the accepted subject and propose
 3. Attach the accepted references listed for the subject. Preserve their identity, proportions, kit and material character. The first Set 5 batch is not a composition or style reference for replacements.
 4. The revision 2 pass is complete: each heading has a 1536 × 1024 landscape PNG and a matching 768 × 512 JPEG in the web/ folder. These replace revision 1 under the same filenames. Future changes should follow the creator's next feedback; do not regenerate this completed pass solely because historical prompts remain in the record.
 5. Use sunmane-lancer.png for painted material quality only, not as a pose, palette or setting template. No frames, lettering, logos or watermarks.
-6. Keep [CARD_ART_FINAL.json](CARD_ART_FINAL.json) for creator-approved selections. No current Set 5 image was promoted by this review.
+6. Keep [CARD_ART_FINAL.json](CARD_ART_FINAL.json) for creator-approved selections. The porcelain retainer is explicitly finalized there; this does not promote the other Set 5 paintings.
 
 [SET5_GALLERY.html](SET5_GALLERY.html) shows the twelve current revision 2 paintings with their briefs. [SET5_VALIDATION.json](SET5_VALIDATION.json) records file checks, not artistic approval.
 
@@ -150,15 +150,17 @@ Seen in a full-body three-quarter view, the alderkin is negotiating a shallow st
 
 ### Porcelain-visored retainer: porcelain-visored-retainer.png
 
-**Visual aim:** A believable human retainer in a simple porcelain half visor, with natural eyes and an exposed lower face warmed by restrained gallery light.
+**Final selection — 2026-11-09:** The creator selected the second-to-last painting: the full porcelain mask in the dim gallery. Preserve this exact image; the later half-visor attempt is superseded.
+
+**Visual aim:** An austere, unsettling portrait built around the accepted mask's proportions, fine tailoring and a narrow passage of light.
 
 **Accepted references:** `reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png` (continuity for this character's mask, helmet, coat and estoc)
 
-**Keep:** Porcelain protection, dark plum coat, modest steel breastplate and narrow sword remain. The latest request overrides the old full cracked faceplate: use a plain half visor with visible human eyes and lower face.
+**Keep:** The pale ceramic faceplate with its hairline crack over a steel sallet-like helmet, the dark plum long coat, the half-cuirass and the narrow estoc.
 
-Keep the dim stone gallery, cool window light, plum wool, modest breastplate and lowered sword. Replace the unsettling complete faceplate with a close-fitting ivory porcelain half visor over the brow, upper cheeks and nose bridge. Natural eyes show through comfortable openings, and the real lower face, ordinary mouth, jaw and light stubble remain visible. Use a simple leather fastening, a modest open-faced iron cap and a relaxed collar. The man stands naturally at an angle, looking toward the window. Porcelain, steel and wool should feel worn by a real person, without a doll-face stare or theatrical menace.
+Return closely to the accepted reference's human proportions, understated steel helmet and pale ceramic faceplate. Frame the retainer from about the upper thigh in an empty, dim gallery, with the shoulders turned away slightly and the head angled back toward a strip of cool window light. The dark plum coat hangs with believable weight over the modest half-cuirass; a relaxed hand and the slender estoc can sit low in the composition without becoming a threatening gesture. Light picks out one plane of the mask, its fine existing crack and a small edge of steel, while the opposite side is lost in deep plum and brown shadow. One wall plane and a soft distant warm reflection are sufficient setting. Let the unreadable face, the tilt of the head and the material contrasts create its presence.
 
-**Avoid in this painting:** No full doll-face mask, empty black eye slits, carved mouth, pointed chin, conspicuous crack, towering helmet, mannequin posture, giant armour or theatrical ornament. No guarding scene, noble or spare mask.
+**Avoid in this painting:** No raised stop-hand, guarded noble, blocked doorway, fallen companion, spare mask or broken-mask prop. No toy-like armour, friendly cartoon face or exaggerated theatrical menace.
 
 ### Veil adept: veil-adept.png
 
