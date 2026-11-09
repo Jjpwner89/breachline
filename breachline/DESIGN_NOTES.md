@@ -143,7 +143,7 @@ The creator found the old UI dull: a flat background, and card borders, textures
 - **Board:** a linen war map, with the grid inked over it in code.
 - **Card frames:** blackened iron with gold trim.
 - **Title bars:** crimson on every card, as in `card.html`. The game still colours them by alignment until the card frame phase.
-- **Buttons:** carved wood with a brass edge, the main action gilded.
+- **Buttons:** carved wood with a brass edge, the main action gilded. Every button label is set in Cormorant SC (the `--button` font), chosen from eight fonts on 2026-11-09 after the creator disliked the first lettering.
 - **Extras:** a card back, table props and painted attack and health plaques.
 - **Order:** the table, then the home screen, card frames, buttons and panels, then the extras.
 

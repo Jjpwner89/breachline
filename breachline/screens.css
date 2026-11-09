@@ -49,7 +49,7 @@
 .menu h1 { font-size: clamp(40px, min(9vh, 14vw), 84px); line-height: 1; letter-spacing: .04em; background: linear-gradient(#fbe7a8, #d4a84f 55%, #8c6420); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .85)); }
 .mlist { display: flex; flex-direction: column; gap: 8px; }
 .mitem { display: block; width: 100%; text-align: left; background: none; border: 1px solid transparent; border-image: url("art/web/ui/button.png") 34 66 fill / 12px 26px / 0 stretch; padding: 10px 26px; text-shadow: 0 1px 3px #000; filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)); }
-.mitem b { display: block; font: 700 21px/1.2 var(--display); letter-spacing: .02em; }
+.mitem b { display: block; font: 700 24px/1.15 var(--button); letter-spacing: .04em; }
 .mitem span { display: block; font-size: 13.5px; color: #d9c9a6; }
 button.mitem:hover { filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)) brightness(1.15); }
 .mitem.primary { border-image-source: url("art/web/ui/button-main.png"); }
