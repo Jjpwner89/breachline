@@ -1,6 +1,8 @@
-# Card proposals: the gap-filling batch
+# Card proposals
 
-Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far. Cards 31 onward, from the reference library, are still proposals. Numbers are small-scale and will move in playtesting.
+Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
+
+Cards 31 to 91 are approved designs that aren't built yet. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
 The starter and campaign decks are unchanged, so cards 1 to 30 show up in the deck builder and in campaign rewards. Their art is in `art/ART_BRIEFS_SET4.md`. Flavour lines are next.
 
@@ -81,7 +83,7 @@ The starter and campaign decks are unchanged, so cards 1 to 30 show up in the de
 | 25 | Camp follower |  | Unit | 1 | 0 | 1 / 2 | None | Neutral 1-cost. Weak but reliable | None |
 | 26 | Scarred summoner |  | Unit | 4 | 0 | 3 / 5 | When summoned: draw a card | Neutral top end, and the summoner theme | Small |
 
-## Abilities for existing cards
+## Changes to existing cards, built
 
 Three of the four plain units costing 3 or more get an ability and keep their stats. Sellsword stays plain, moves to neutral and drops to 3 / 4.
 
@@ -121,8 +123,6 @@ Choices made in discussion:
 - **Banked flame blade:** the card is the blade. Equipment plays exactly like an enchantment under a different label, so it needs no new rules. You like the bearer, so he could get his own card later.
 - **Enchanter's quench:** the card is the enchantment.
 - **Stoneward colossus:** it walks after all. Holding ground replaced "can't move or be pushed", and it dropped to 4 / 8 to make it a bit weaker.
-
-This batch adds 6 Gnosis cards, 2 each to Genesis and Dominion, 1 to Fervor and 1 neutral, so the pool below would reach 94. Vigil gets none, and Fervor gets only the blade.
 
 ## Tile effects
 
@@ -187,7 +187,7 @@ Added on 2026-11-09. Loyal is +1 / +1 while you have another unit of the same su
 | 73 | Still Flame acolyte | Still Flame | Unit | 2 | 1 | 1 / 3 | Loyal: +2 / +2 |
 | 75 | Artificer's journeyman | Artificers | Unit | 2 | 1 | 1 / 3 | Loyal: +2 / +2 |
 
-## More changes to existing cards
+## Changes to existing cards, not yet built
 
 Added on 2026-11-09, after checking the built cards against the new mechanics.
 
@@ -198,51 +198,45 @@ Added on 2026-11-09, after checking the built cards against the new mechanics.
 | 84 | Slateprowler | 3 / 3, Hunt | 3 / 3, Hunt and Ambush | A stalking creature, and Dominion's second ambusher |
 | 85 | Thornwarden saboteur | 2 / 3, Regrow | 2 / 3, Ambush | Its name says it sneaks in. Ambush replaces Regrow |
 | 86 | Cinderfall | 3 damage to an enemy unit and 1 to each enemy next to it | Aim at a tile: 3 damage to a unit there and 1 to each enemy next to it, and the tile burns for 2 turns | Red's area spell joins the fire theme |
+| 87 | Militia spearman | 2 / 2, no ability | 2 / 2. Loyal: +1 / +1 | A levy is stronger in numbers |
+| 88 | Goblin cutter | 2 / 1, no ability | 2 / 1. Loyal: +1 / +1 | Weak alone, better in a horde |
+| 89 | Oath knight | 3 / 5, Steadfast | 3 / 5, Holding ground | Fits "No one ordered her to stay" better than a bonus for standing still |
+| 90 | Camp follower | 1 / 2, no ability | 1 / 2. When it dies: draw a card | Gives the weak neutral card a small reason to play it |
+| 91 | Ember drake | 4 / 3, Flying | 4 / 3, Flying. When it dies: its tile burns for 2 turns | A dragon's fire, and a reason not to kill it among your own units |
 
-## What the pool looks like if all of it is approved
+## What's left to build
 
-| Alignment | Cards now | Added | Total | Units by cost now | Units by cost after |
-| --- | --- | --- | --- | --- | --- |
-| Vigil (white) | 14 | 3 | 17 | 1: 3, 2: 1, 3: 2, 4: 1, 6: 2 | 1: 3, 2: 3, 3: 2, 4: 1, 5: 1, 6: 2 |
-| Gnosis (blue) | 9 | 6 | 15 | 1: 1, 2: 2, 3: 2, 4: 1 | 1: 1, 2: 3, 3: 3, 4: 2, 5: 1, 6: 1 |
-| Dominion (black) | 7 | 7 | 14 | 1: 1, 2: 1, 3: 2, 6: 1 | 1: 3, 2: 1, 3: 2, 4: 2, 5: 1, 6: 1 |
-| Fervor (red) | 13 | 3, minus Sellsword | 15 | 1: 1, 2: 3, 3: 2, 4: 3, 5: 1, 7: 1 | 1: 1, 2: 4, 3: 1, 4: 3, 5: 1, 6: 1, 7: 1 |
-| Genesis (green) | 10 | 5 | 15 | 2: 3, 3: 2, 5: 1 | 1: 1, 2: 3, 3: 3, 4: 1, 5: 1, 6: 1, 7: 1 |
-| Neutral | 3 | 2, plus Sellsword | 6 | 2: 1 | 1: 1, 2: 1, 3: 1, 4: 1 |
-| Total | 56 | 26 | 82 | | |
+40 new cards and 10 changes to existing cards.
 
-At 14 lands, a 40-card deck needs 26 non-lands, or at least 9 different cards at 3 copies each. Every alignment would clear that with cards to spare, so one-colour decks would have real choices.
+| Alignment | New cards |
+| --- | --- |
+| Vigil (white) | 7 |
+| Gnosis (blue) | 10 |
+| Dominion (black) | 7 |
+| Fervor (red) | 9 |
+| Genesis (green) | 6 |
+| Neutral | 1 |
 
-These two changes opened small gaps: Dominion is back to one 2-cost unit, and Fervor has only one 3-cost unit.
+Most need engine work first: tile effects and aimed spells, summoning and conjured cards, Loyal, Ambush, Flanking, Holding ground and death triggers.
 
-## New mechanics to approve
+## Smaller mechanics to approve
 
-Each of these appears on only one or two cards, so saying no to one touches little else.
+The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones each appear on only one or two proposed cards, so saying no to one touches little else.
 
 | Mechanic | Card | Note |
 | --- | --- | --- |
-| Longshot, reach of 3 tiles | Brass siege-walker | Reaches most of a 4-row board |
-| Skip a turn | Conclave examiner | Stronger than Binding glyph, but only lasts one turn |
-| Swap places | Threshold adept | |
-| Grows with your discard pile | Barrow colossus | |
-| Destroy at instant speed | Called debt | Needs a damaged target, and costs life |
-| Attack boost against one target | Hunted | Each attacker gets it, so it rewards ganging up |
-| Permanent growth for an ally | Grove tender | |
-| Effect when summoned | Goblin firepot, Scarred summoner | Already exists for land drops and life cost |
 | Zap, a ranged ability weaker than the unit's attack | Conclave field scholar | |
-| Splash damage on attack | Harmonic wardwright, Hill giant | Shared by Resonance and Stomp |
-| Direct damage in Gnosis | Brightlance, Conclave field scholar | Direct damage has been a Fervor thing. Push keeps Brightlance feeling like the Conclave |
+| Splash damage on attack | Harmonic wardwright | Works like Hill giant's Stomp |
+| Direct damage in Gnosis | Brightlance, Conclave field scholar, Lantern apprentice's Spark | Direct damage has been a Fervor thing. Push keeps Brightlance feeling like the Conclave |
 | Ignore the next set amount of damage | Woven ward | |
 | Ignore Guard and damage reduction | Enchanter's quench | |
 | Freeze, Binding glyph's rule for one turn | Rime drake | |
-| Grows when your units die | Porcelain-visored retainer | The game's first "when a unit dies" trigger |
 | Veiled, untargetable until it attacks | Veil adept | Strong at 4 attack. The 2 health keeps it fair |
-| Equipment, a label for enchantments that are objects | Banked flame blade | No new rules |
-| Can't move or be pushed | Stoneward colossus | |
+| A card that hurts the player holding it | Tithe-keeper's Cursed coin | The first card put into the enemy's hand |
 
 ## Questions
 
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
-3. **Existing-card changes still waiting on a verdict:** Loyal for Militia spearman and Goblin cutter, Holding ground in place of Oath knight's Steadfast, a card drawn when Camp follower dies, and Ember drake's tile burning when it dies.
-4. **The next cards:** Vigil and Fervor need the most. Candidates are a Fervor card using lightning, a card that keeps the Cinder-cant drummer's look, and two or three Vigil cards.
+3. **Muster the levy:** with Loyal on Militia spearman, it summons two 3 / 3s for 3 mana. Raise it to 4?
+4. **Art and flavour:** cards 43 onward have no art briefs or flavour lines yet.
