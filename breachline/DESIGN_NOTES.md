@@ -147,7 +147,7 @@ The creator found the old UI dull: a flat background, and card borders, textures
 - **Extras:** a card back, table props and painted attack and health plaques.
 - **Order:** the table, then the home screen, card frames, buttons and panels, then the extras.
 
-Asset briefs are in `art/UI_ART_BRIEFS.md`. Until a painting arrives, the code uses a stand-in texture in the same place.
+Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-11-09 and are in the game, waiting for the creator's review. The home screen drops the old fan of three cards so the scene shows. `card.html` still has the first frame design.
 
 ## Balance
 
@@ -220,6 +220,7 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 - **Preview:** Python's web server can't serve directly from the Documents folder, so previews run from a temporary copy. The entries in `.claude/launch.json` point to old temporary folders.
 - **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts, `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db` and `user` in its capabilities.
 - **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
+- **Interface art:** the paintings live in `art/ui/`. Run `swift art/build-ui.swift` after replacing one; it crops, tiles and resizes them into `art/web/ui/`, which the game uses. Publish `art/web/ui/` with the rest of `art/web/`.
 
 ## Waiting to apply
 

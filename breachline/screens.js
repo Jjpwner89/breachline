@@ -45,11 +45,40 @@ var Screens = (function () {
       '<span class="dmeta"><span class="csyms">' + E.deckColours(d.list).map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span>';
   }
 
-  // Main menu
+  // Main menu, over the home scene
+
+  var HOME = '<div class="home" aria-hidden="true"><div class="layers"><img class="field" src="art/web/ui/battlefield.jpg" alt="">' +
+    '<span class="haze h1"></span><span class="haze h2"></span>' +
+    '<img class="strand" src="art/web/ui/strand.jpg" alt=""><img class="strand glint" src="art/web/ui/strand.jpg" alt=""></div><canvas></canvas></div>';
+
+  // A little ash and the odd ember drifting across the scene. It stops once the menu is gone, and pauses with the tab.
+  function ash(canvas) {
+    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var ctx = canvas.getContext('2d'), flecks = [], last = 0;
+    function size() {
+      var r = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = canvas.clientWidth * r; canvas.height = canvas.clientHeight * r; ctx.setTransform(r, 0, 0, r, 0, 0);
+    }
+    size();
+    for (var i = 0; i < 46; i++) flecks.push({ x: Math.random() * canvas.clientWidth, y: Math.random() * canvas.clientHeight, s: .6 + Math.random() * 1.5, v: 5 + Math.random() * 12, ph: Math.random() * 6, ember: Math.random() < .14 });
+    window.addEventListener('resize', size);
+    (function frame(now) {
+      if (!canvas.isConnected) { window.removeEventListener('resize', size); return; }
+      var dt = Math.min(.05, (now - (last || now)) / 1000), w = canvas.clientWidth, h = canvas.clientHeight, t = now / 1000; last = now;
+      ctx.clearRect(0, 0, w, h);
+      flecks.forEach(function (f) {
+        f.x += f.v * dt; f.y -= f.v * .3 * dt + Math.sin(t + f.ph) * .12;
+        if (f.x > w + 4) { f.x = -4; f.y = Math.random() * h; }
+        if (f.y < -4) f.y = h + 4;
+        ctx.fillStyle = f.ember ? 'rgba(255, 170, 90, ' + (.45 + .35 * Math.sin(t * 2 + f.ph)) + ')' : 'rgba(225, 215, 210, .32)';
+        ctx.fillRect(f.x, f.y, f.s, f.s);
+      });
+      requestAnimationFrame(frame);
+    })(performance.now());
+  }
 
   function menu() {
     var n = Decks.saved().length, cont = GameUI.inProgress();
-    var fan = ['lancer', 'dragon', 'maren'].map(function (id) { return '<span class="slot">' + GameUI.frameHtml(E.CARDS[id], { big: true }) + '</span>'; }).join('');
     function item(a, title, sub, primary) {
       return '<button type="button" class="mitem' + (primary ? ' primary' : '') + '" ' + act(a) + '><b>' + title + '</b><span>' + sub + '</span></button>';
     }
@@ -57,14 +86,15 @@ var Screens = (function () {
       return '<div class="mitem off"><b>' + title + '</b><span>' + sub + '</span></div>';
     }
     var run = Campaign.current();
-    show('<main class="menu"><div class="mcol"><h1>Breachline</h1><nav class="mlist" aria-label="Main menu">' +
+    show(HOME + '<main class="menu"><div class="mcol"><h1>Breachline</h1><nav class="mlist" aria-label="Main menu">' +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
       (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
         : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Every card is open.') +
       later('Multiplayer', 'Coming later. Collect cards from packs.') +
-      '</nav></div><div class="fan" aria-hidden="true">' + fan + '</div></main>', menu);
+      '</nav></div></main>', menu);
+    ash(root.querySelector('.home canvas'));
   }
   actions.menu = menu;
   actions.resume = function () { hide(); GameUI.resume(); };

@@ -131,7 +131,7 @@
     var gems = p.lands.map(function (l, n) {
       return '<span class="gem ' + l.colour + (n < p.mana ? '' : ' spent') + '" title="' + E.CARDS[l.c].name + '" data-peek="' + l.c + '">' + sym(l.colour) + '</span>';
     }).join('');
-    var pile = function (label, n) { return '<span class="pile"><small>' + label + '</small><b>' + n + '</b></span>'; };
+    var pile = function (label, n, back) { return '<span class="pile' + (back ? ' back' : '') + '"><small>' + label + '</small><b>' + n + '</b></span>'; };
     var tag = targetable ? 'button type="button" data-summoner="1"' : 'div';
     var close = targetable ? 'button' : 'div';
     var active = S.winner === null && S.phase !== 'opening' && S.active === pi;
@@ -142,7 +142,7 @@
       '<span class="life" title="Summoner life"><strong>' + p.life + '</strong><i><b style="width:' + Math.max(0, Math.min(100, Math.round(p.life / E.START_LIFE * 100))) + '%"></b></i></span>' +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
       (targetable ? '<span class="strike">Strike summoner</span>' : '') +
-      '<span class="piles">' + (you ? '' : pile('Hand', p.hand.length)) + pile('Deck', p.deck.length) + pile('Discard', p.discard.length) + '</span>' +
+      '<span class="piles">' + (you ? '' : pile('Hand', p.hand.length, true)) + pile('Deck', p.deck.length, true) + pile('Discard', p.discard.length) + '</span>' +
       '</' + close + '>';
   }
 
