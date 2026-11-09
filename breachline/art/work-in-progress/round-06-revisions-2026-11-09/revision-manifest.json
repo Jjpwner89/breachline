@@ -1,0 +1,253 @@
+{
+  "project": "Breachline",
+  "date": "2026-11-09",
+  "method": "Built-in image_gen.imagegen",
+  "status": "Five revisions pending; two accepted components preserved separately",
+  "source_review": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/review-manifest.json",
+  "counts": {
+    "retained_images": 7,
+    "pending_revisions": 5,
+    "accepted_component_preservations": 2
+  },
+  "cut_revision": {
+    "subject": "Glasshouse annealer",
+    "status": "deleted",
+    "note": "The first hand-fix completed before the cut was delivered; it and the original were deleted."
+  },
+  "images": [
+    {
+      "id": "04",
+      "source_id": "04",
+      "key": "dawnward-cavalier-v2",
+      "title": "Dawnward cavalier \u2014 shorter cape",
+      "intent": "Kept the liked lion knight and lance, shortening the cape to a practical length.",
+      "prompt": "Use case: precise-object-edit. Same 1536x1024 landscape Breachline design study. Change ONLY the cream-and-ochre cloak on the main lion knight: shorten it to end around the backs of his knees, with a simple clean hem and natural fabric weight. Remove the entire long trailing fabric train from the steps, restoring believable stone steps and contact shadows beneath. Preserve the exact lion face and mane, silver/ivory armor, tabard, stance, lance and radiant lance magic, proportions, background, warm lighting and all right-side details. Do not shorten the front tabard, redesign equipment, add ornament, or change the painting's style. No text.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/04-dawnward-cavalier.png"
+      ],
+      "file": "04-dawnward-cavalier-v2.png",
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-06aaf570-0886-42e4-9cd7-5047a8c029a7.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/04-dawnward-cavalier.png",
+          "sha256": "6c22cfdbe6e56aaa2256bcba653394690a5d086fcbb362a2597a0efc4df0d343",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/04-dawnward-cavalier-v2.png",
+      "sha256": "c8af00fc11b9477c97eb92b596cacc49597faa2584aa44a5f9ae296bfa529aa6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "05",
+      "source_id": "05",
+      "key": "starwell-scholar-v2",
+      "title": "Starwell scholar \u2014 revised atmosphere",
+      "intent": "Preserved the portal and main gown while replacing the pervasive purple and flowers with a lived-in scholarly setting.",
+      "prompt": "Use case: precise-object-edit. Revise this Breachline scholar concept plate, landscape1536x1024. PRESERVE the woman's exact identity, attractive face, pose and hands; the actual open stellar portal with its dark depth, crescent reflection, hovering fragments and cool magical light; and the beautiful long midnight-indigo main gown with its original cut and embroidery. Preserve the corresponding face and portal detail studies at right. Change the SETTING MOOD and surrounding palette substantially: remove abundant flowers, flowering vines, pastel-purple sky and uniformly romantic fairy-palace atmosphere. Place her on a grounded, lived-in scholarly stone terrace with weathered warm limestone, dark bronze railings, a plain worktable with one closed book, and a few distant substantial city roofs and towers under a blue-gray clouded evening sky. The city's scale feels credible and active, not a ruin postcard or an idyllic garden. Selective amber window light and the richly saturated blue portal organize the color. Keep genuine chromatic richness: indigo gown, subtle warm ochre and bronze, cool blue sky; do NOT turn it gray, sepia, desaturated or uniformly dark. Cream outer robe may remain. Painterly realism with visible confident strokes, not sharper photo skin. Retain the neutral right-side sheet area. Do not replace the portal with a symbolic circle, rune wheel, gadget or beam. No text.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/05-starwell-scholar.png"
+      ],
+      "file": "05-starwell-scholar-v2.png",
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-24d2bb5a-19bc-42e3-b9cc-eb03d97e0139.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/05-starwell-scholar.png",
+          "sha256": "829a8ab2fa4beacdd4be339e6bdadd736a2ec8a2e04517df8b5f8baa51dfb58d",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/05-starwell-scholar-v2.png",
+      "sha256": "93d5974ec05e9927ef75b4c151f7fbc72584e65e09b915f35eed2469ff3fd31a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "12",
+      "source_id": "12",
+      "key": "spellglass-sentinel-v2",
+      "title": "Spellglass sentinel \u2014 metal and crafted head",
+      "intent": "Kept the blue magical core while making the head and armor feel like worked metal.",
+      "prompt": "Use case: precise-object-edit. Revise this original Breachline construct study, same landscape1536x1024. Preserve the tall guardian's overall silhouette and pose, its open bronze-ribbed chest with the same intensely beautiful cobalt magic core, the three-panel forearm guard, the person beside it, urban backdrop and matching details. Change the futuristic sharp triangular wedge head into a small, substantial forged-metal head recalling a CLOSED medieval sallet: rounded crown, short blunt brow, one narrow dark horizontal slit, no pointed beak, screen, LED eyes or space helmet. It is a made being, not a person in armor. Material change: make the former broad white ceramic plates visibly WORKED METAL, mostly gently reflective warm-gray steel with hammered highlights, subtle scratches, peened fasteners and restrained brass edging; retain only a few small ivory enamel accents. Preserve the luminous blue core as the unmistakable power source; no energy cables, scroll fuel or added optics. Update the right head study and chest detail consistently. Ground the angular faceted rendering slightly into confident painted realism with natural reflections; keep rich cobalt, warm bronze and amber light. Do not make it rusted junk or monochrome, and do not redesign the entire robot. No text.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/12-spellglass-sentinel.png"
+      ],
+      "file": "12-spellglass-sentinel-v2.png",
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-865052d8-1301-41e5-99a7-5eb033e8acac.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/12-spellglass-sentinel.png",
+          "sha256": "1e230452acda9ffa4c36d351e3549546b39a71405b995a73ccc84091ec2fe8f2",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/12-spellglass-sentinel-v2.png",
+      "sha256": "ef71cd1559fd1ff3fd66c6f843afbd74e62f1f43df9f914f72743d7dfbd97ee7",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "06",
+      "source_id": "06",
+      "key": "crownroot-hart-v2",
+      "title": "Crownroot hart \u2014 revised atmosphere",
+      "intent": "Tested the creature in a more restrained setting and palette, keeping color and its unusual antlers.",
+      "prompt": "Use case: precise-object-edit. Revise this Breachline enchanted hart plate, landscape1536x1024. Preserve the creature's living anatomy, full silhouette, pale-fawn coat, face, natural pose and translucent branching antlers. Keep only TWO small blossoms among its antlers as rare magical accents; remove the abundant flower carpet and ornamental flowering atmosphere. Rebuild the small setting as a close, slightly overgrown ancient stone passage in a deep mixed woodland, with dark moss, warm ochre leaf litter, damp brown bark and selective rich forest green, a broken patch of daylight on the animal. The hart pauses alertly as it emerges into the passage, partly listening toward the side, not a heroic wildlife trophy portrait overlooking a western mountain range. Its presence should feel uncanny and connected to an inhabited fantasy world. Keep one tiny blue-white bloom near the recent hoofprint as a localized effect. Strong color is welcome but not a uniformly glowing garden, all-purple palette or bright storybook idyll. No washed-out grayscale or generic sepia. Matching right details show antler material with a single blossom and hoof beside the tiny bloom. Painted oil/acrylic texture, no text.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/06-crownroot-hart.png"
+      ],
+      "file": "06-crownroot-hart-v2.png",
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-4065c3db-28e4-4d1e-9a0c-a11e39be0a06.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/06-crownroot-hart.png",
+          "sha256": "a4f9ea18e5c019a83913eee8c38430239b73f6e0a64c51fca22bf946210aebf0",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/06-crownroot-hart-v2.png",
+      "sha256": "91976dbdc0bceaf3dfc92803ddeb03ffb5d88bb6e1b3c36d07fa1b0b48630198",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "09",
+      "source_id": "09",
+      "key": "foundry-strider-v2",
+      "title": "Foundry strider \u2014 rebuilt mechanism",
+      "intent": "Simplified the robot's limbs and load-bearing structure while keeping its forge-work role.",
+      "prompt": "Use case: precise-object-edit. Rebuild the ANATOMY AND MECHANICAL CONNECTIONS of the foundry robot in this Breachline plate, landscape1536x1024. Preserve the concept of a large steam-powered worker handling a hot steel billet, its dark iron/oxblood/brass material palette, the forge setting and ordinary small human helper. Redesign with exceptional clarity: ONE compact upright boiler torso centered above a pelvis; EXACTLY TWO mechanical legs, each visibly attached to its own hip on the pelvis, a short strong upper segment, one knee, one lower segment and one broad flat three-toe foot firmly on the ground. No extra limbs, sideways floating foot, disconnected rods or tail mistaken for an arm. EXACTLY TWO arms connect visibly at the upper torso: the near arm is a robust articulated tong arm gripping the middle of ONE orange-hot horizontal billet; the far arm is a shorter bracing manipulator resting against an adjacent stone work support. Keep arms clearly separate from hip and leg joints. Use one readable cylinder per major joint with sensible hinge axes, fewer pipes, no overlapping mechanical tangles. Stand with torso weight centered between the two planted feet. Billet lies partly on a stone support so the load is credible. One human worker safely guides at a distance with a long ordinary iron pole, coherent attached hands. No cute face, humanoid armor suit, scroll engine, magic beam or floating components. Right details: same tong gripping billet; one complete simple leg from hip to foot, shown as an attached mechanism study with clear silhouette. No labels. Painted material richness and working industrial character.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/09-foundry-strider.png"
+      ],
+      "file": "09-foundry-strider-v2.png",
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c0f71ac8-bde7-4d8b-a034-b1f68dcb010f.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/09-foundry-strider.png",
+          "sha256": "743e78197baff242683360436e1ff7363a6b000823c553e34bcd1f08d3e8a44e",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/09-foundry-strider-v2.png",
+      "sha256": "48eb0ba22c0fcd0fb20d4a365c78540a6669fe76a0c8baac68942a632e4d06aa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "10A",
+      "source_id": "10",
+      "key": "cobalt-rapier-preserved",
+      "title": "Cobalt rapier \u2014 preserved equipment",
+      "intent": "Isolated the liked sword from the rejected character design.",
+      "prompt": "Use case: precise-object-edit / component preservation. Create a faithful equipment-only reference plate from the sword in this supplied Breachline image. Landscape1536x1024, traditional painted realism on warm neutral paper. Preserve the SAME long slim straight steel rapier, its particular sweeping warm brass guard with pointed curved bars, dark wrapped grip, small flush cobalt stone at the guard and the delicate local faceted blue refraction beside the steel edge. Main view: the whole sword alone, clearly readable diagonally across the left two thirds, point and pommel fully visible, natural sword proportions. Right studies: original guard/stone/grip close-up; steel edge and restrained blue magical refraction. Use the supplied MAIN sword and close-up to match this specific accepted design, do not invent a different weapon or make it a giant glowing blade. REMOVE the duelist completely and include no character, body parts or city scene. Keep brushed steel and warm brass tactile, no futuristic technology, lettering or logos.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png"
+      ],
+      "file": "10a-cobalt-rapier-preserved.png",
+      "status": "accepted_component_preservation",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-baab552c-478e-4c6f-a8d6-ed17564b3b34.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png",
+          "sha256": "3e9ce3e03507efc360d215520a973944ec05829f48401dd5e5305d25dd6b06db",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png",
+      "sha256": "e302f652b535fb82a83c3b5c4fdcd2a5485b9345afe426e6eced2b9178d74a09",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09",
+      "approval_scope": "Preserves a liked component from the rejected duelist sheet; reconstructed missing areas are interpretive, not independently established lore."
+    },
+    {
+      "id": "10B",
+      "source_id": "10",
+      "key": "ambrel-city-preserved",
+      "title": "Ambrel \u2014 preserved city direction",
+      "intent": "Preserved the liked city backdrop as an exploratory scale reference for Ambrel.",
+      "prompt": "Use case: precise-object-edit / component preservation. Preserve and reveal the CITY BACKDROP from this supplied Breachline image as a landscape1536x1024 city concept. Remove the foreground duelist, her sword, and BOTH right-side character/weapon detail insets. Extend the existing city painting across the freed space consistently, showing the same strong original visual ideas: a solid foreground stone walkway and bronze/iron balustrade, amber-lit glazed roof arcade, tall closely built stone structures, a few connected high bridges, blue banners and warm windows against cool evening distance. The city is an exploratory visual direction for Ambrel. Preserve the supplied blue/teal-and-amber color relationship, sense of lived-in scale and strong architectural character. Use coherent paths, supports, bridge landings and stairs. This is a great city with local impressive capabilities in a varied world, not a limitless futuristic megacity, city of flying vehicles, uniformly pristine utopia or desolate post-apocalyptic ruin. Keep a few small ordinary human residents for scale, secondary and mostly seen at a distance; no new dominant hero. No character portrait panels, weapon studies, floating platforms, holograms or labels. Keep confident textured painted surfaces and atmospheric depth; do not import the rejected sharply angular human character style. Do not radically enlarge the skyline beyond the source's implied scale.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png"
+      ],
+      "file": "10b-ambrel-city-preserved.png",
+      "status": "accepted_component_preservation",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a7554759-abe0-4e68-bdef-f4ee758a0046.png",
+      "visual_review": "Inspected selected revision: requested changes are visible, accepted subject details retained, and the image is readable as a reference. New scene completion remains interpretive.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png",
+          "sha256": "3e9ce3e03507efc360d215520a973944ec05829f48401dd5e5305d25dd6b06db",
+          "role": "Source image for targeted revision or preservation of accepted components",
+          "source_deleted_after_preserving_revision": true
+        }
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png",
+      "sha256": "c55868e54886c77d12b8a71309c2830820299db0b2ea799789b01485fe669d54",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reviewed": "2026-11-09",
+      "approval_scope": "Preserves the liked city palette, architectural character and scale as an exploratory Ambrel reference. Completed areas and exact city layout are not canon; this is not blanket approval of a prosperous world."
+    }
+  ],
+  "verification": "Seven retained results verified: five pending revisions and two accepted-component references. Both glassworker images and all explicitly rejected images are absent."
+}

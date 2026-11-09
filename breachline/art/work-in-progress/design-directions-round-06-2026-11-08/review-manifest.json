@@ -1,0 +1,829 @@
+{
+  "project": "Breachline",
+  "round": "06",
+  "date": "2026-11-08",
+  "method": "Built-in image_gen.imagegen",
+  "status": "Reviewed by subject: accepted pieces retained; rejects deleted; targeted revisions pending",
+  "scope": "Three studies per approach, six approaches plus three surprises. Original Breachline designs informed by the named broad visual directions. New mechanics, cultures, taxa, technology levels and faction ownership remain proposals.",
+  "reference_usage_guidance": "Accepted images seed further invention; they are never a closed catalog or universal faction rule. Rejected images and generated-source copies are deleted after identification; textual decisions may remain.",
+  "groups": [
+    {
+      "key": "a-current-breachline",
+      "title": "A - Closest to current Breachline",
+      "direction": "Restrained, intimate and useful magic; observed human feeling, simple well-made objects and subject-specific effects.",
+      "style": "STYLE: The closest fit to the recently liked Breachline studies. Economical naturalistic painting, quiet distinctive magic, clear construction, warm/cool light chosen for the scene. Avoid a loud aura or energy-thread vocabulary."
+    },
+    {
+      "key": "b-high-fantasy",
+      "title": "B - High fantasy",
+      "direction": "More openly wondrous, elegant and ceremonial: light, noble silhouettes and magical creatures.",
+      "style": "STYLE: Push toward luminous classical HIGH FANTASY: elegant elongated silhouettes, fine worked metal, rich jewel colors, graceful ceremonial shapes and clearly visible wonder. Magic may be more overt and beautiful than the baseline, while materials and anatomy remain credible. Distinct original designs."
+    },
+    {
+      "key": "c-steampunk",
+      "title": "C - Steampunk",
+      "direction": "A stronger industrial edge: useful boilers, load-bearing mechanisms and larger working machines.",
+      "style": "STYLE: Push toward convincing STEAMPUNK with high-fantasy craft. Dark iron, warm brass, copper, ceramic insulation, rivets where plates join, actual valves, pistons and working mechanisms. Every major component has a readable purpose; fewer large functional forms instead of ornamental gear confetti. Steam stays physical. No flying machine, automatic modern weapon or default goggles."
+    },
+    {
+      "key": "d-arcane",
+      "title": "D - Arcane-inspired",
+      "direction": "Sharper tailoring, angular design, social texture and saturated magical technology.",
+      "style": "STYLE: Explore an ARCANE-INSPIRED direction through angular tailored silhouettes, expressive individually shaped faces, faceted painted planes, rich teal/cobalt/amber contrasts and urban magical craft. It remains an oil/acrylic concept painting with visible brushwork. Translate the design language into original Breachline people and objects; no recognizable Arcane characters, outfits, symbols or copied devices. A stronger color and stylization experiment."
+    },
+    {
+      "key": "e-warcraft",
+      "title": "E - Warcraft-inspired",
+      "direction": "Broad heroic silhouettes, oversized crafted gear, bold color and powerful creature forms.",
+      "style": "STYLE: Explore a WARCRAFT-INSPIRED heroic fantasy edge: broad weighty graphic silhouettes, larger hands and shoulders, monumental armor shapes, thick readable weapons, bold saturated accents and forceful poses. Carry it with painterly material richness, not cartoon outlines or toy-like CGI. Exaggeration is deliberate but construction and weight remain legible. Invent Breachline designs, no copied faction emblems or recognizable game characters."
+    },
+    {
+      "key": "f-lotr",
+      "title": "F - LOTR-inspired",
+      "direction": "Old-world craft, weathered nobility and quiet mythic scale, with magic often suggested.",
+      "style": "STYLE: Explore a LORD OF THE RINGS-INSPIRED direction: patient mythic atmosphere, natural proportions, deep history through materials, exquisite modest craft, weathered cloth and quiet nobility. Grounded medieval fantasy with subtle wonder and a strong sense of place. No copied film costumes, actor likenesses, White Tree, One Ring inscription or established Middle-earth characters. Entirely original Breachline subjects."
+    },
+    {
+      "key": "g-wild-cards",
+      "title": "G - Three wild cards",
+      "direction": "Desert mineral divination, maritime lacquer armor and an uncanny shadow companion.",
+      "style": "STYLE: A deliberate surprise at the edge of Breachline: choose the particular visual language described below. Keep compelling painted materials, clear silhouette and human-scale storytelling. Fresh cultural and magical possibilities, not fixed setting facts."
+    }
+  ],
+  "counts": {
+    "original_studies": 21,
+    "accepted_whole": 4,
+    "accepted_components_from_mixed_sheet": 1,
+    "revised_pending_review": 5,
+    "rejected_deleted": 5,
+    "inspiration_only_not_core": 3,
+    "exploratory_pending": 1,
+    "unreviewed": 2
+  },
+  "images": [
+    {
+      "id": "01",
+      "key": "graveside-listener",
+      "title": "Graveside listener",
+      "group": "a-current-breachline",
+      "approach": "A - Closest to current Breachline",
+      "intent": "A quiet conversation with an uncertain shade builds on the loved necromancy and communal rites.",
+      "boundary": "Tests an intimate spirit encounter; neither the nature of souls nor an afterlife is established.",
+      "brief": "A mature human woman about 52 with a long crooked nose, soft heavy eyelids, tied dark-gray hair and a thoughtful, rather kind face, in a plain dark plum wool coat and slate skirt, kneels beside an empty low stone seat in a sparse burial courtyard. She holds no casting device and is gently speaking, palms resting naturally on her knees. On the seat is a faint incomplete elderly human silhouette, made of soft gray translucent shadow, concentrated around bowed shoulders and a suggested profile; the ground remains visible through it. No skeleton costume, gore, skull jewelry, chains, light strings or spectral beam. A humble sprig laid at the seat and worn stone establish attention and care. The scene feels like patient listening, not a theatrical summoning. Late warm daylight touches the listener while the shade remains cool. Right details: her individual face; her ordinary hands and the boundary where the faint shade meets the seat.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: The closest fit to the recently liked Breachline studies. Economical naturalistic painting, quiet distinctive magic, clear construction, warm/cool light chosen for the scene. Avoid a loud aura or energy-thread vocabulary.\nSUBJECT AND ACTION:\nA mature human woman about 52 with a long crooked nose, soft heavy eyelids, tied dark-gray hair and a thoughtful, rather kind face, in a plain dark plum wool coat and slate skirt, kneels beside an empty low stone seat in a sparse burial courtyard. She holds no casting device and is gently speaking, palms resting naturally on her knees. On the seat is a faint incomplete elderly human silhouette, made of soft gray translucent shadow, concentrated around bowed shoulders and a suggested profile; the ground remains visible through it. No skeleton costume, gore, skull jewelry, chains, light strings or spectral beam. A humble sprig laid at the seat and worn stone establish attention and care. The scene feels like patient listening, not a theatrical summoning. Late warm daylight touches the listener while the shade remains cool. Right details: her individual face; her ordinary hands and the boundary where the faint shade meets the seat.",
+      "file": "01-graveside-listener.png",
+      "refs": [],
+      "status": "accepted",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a1b5e142-4b97-4a48-8839-4c752d2bc5e0.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/01-graveside-listener.png",
+      "visual_review": "Quiet listener and translucent seated shade read clearly; matching face/hand studies.",
+      "sha256": "4087553a3f73b923b73867025650570bccecc66526dd9d2a1bc0a7450d327eb6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Liked, especially the neutral depiction of a spirit. This is one valid presentation, not how all spirits must look.",
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "02",
+      "key": "storm-at-the-ford",
+      "title": "Storm at the ford",
+      "group": "a-current-breachline",
+      "approach": "A - Closest to current Breachline",
+      "intent": "The approved bull gains scene energy through weight, weather, water and startled wildlife.",
+      "boundary": "A scene test using the accepted creature; no larger storm-control power is implied.",
+      "brief": "REFERENCE IMAGE 1 is the approved storm-touched bull design, for anatomy, horns, shaggy coat and tiny static sparks ONLY. Create a NEW active scene and matching details, preserve that creature's recognizable design. The great charcoal-brown bull strides diagonally across a shallow rocky ford toward image-left, one forehoof driving a believable splash sideways. All four limbs are anatomically coherent. A gust lifts the mane and bends a small patch of reeds; three ordinary small birds lift from the bank, making the moment feel alive. Storm clouds break to admit a little warm light. The bull's magic stays small: a few crisp violet-white static snaps in the horn ridges and mane, not giant lightning ropes or a glowing shell. Low viewpoint, wet stones and displaced water show powerful weight; the environment adds energy. No saddle, rider, people, structures or lightning strike at the viewer. Right details on neutral paper: horn/mane static; heavy hoof entering splashing shallow water.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: The closest fit to the recently liked Breachline studies. Economical naturalistic painting, quiet distinctive magic, clear construction, warm/cool light chosen for the scene. Avoid a loud aura or energy-thread vocabulary.\nSUBJECT AND ACTION:\nREFERENCE IMAGE 1 is the approved storm-touched bull design, for anatomy, horns, shaggy coat and tiny static sparks ONLY. Create a NEW active scene and matching details, preserve that creature's recognizable design. The great charcoal-brown bull strides diagonally across a shallow rocky ford toward image-left, one forehoof driving a believable splash sideways. All four limbs are anatomically coherent. A gust lifts the mane and bends a small patch of reeds; three ordinary small birds lift from the bank, making the moment feel alive. Storm clouds break to admit a little warm light. The bull's magic stays small: a few crisp violet-white static snaps in the horn ridges and mane, not giant lightning ropes or a glowing shell. Low viewpoint, wet stones and displaced water show powerful weight; the environment adds energy. No saddle, rider, people, structures or lightning strike at the viewer. Right details on neutral paper: horn/mane static; heavy hoof entering splashing shallow water.",
+      "file": "02-storm-at-the-ford.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-studies-round-05-2026-11-08/02-storm-touched-bull.png"
+      ],
+      "status": "rejected_deleted",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-db3913fe-9129-4c81-9821-5ee815cbb323.png",
+      "saved_path": null,
+      "visual_review": "Approved bull anatomy carried into an energetic ford scene with splashes, wind and birds; subtle static preserved.",
+      "sha256": "6beb028b699bbcf5f5a61b26f11837f1ca93cc0905dd6c8e48bae572f5606ccc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-studies-round-05-2026-11-08/02-storm-touched-bull.png",
+          "role": "Approved bull anatomy, coat and small static accents only; new scene staging",
+          "sha256": "cf2abb951da75303ca6fa1880f39e55973ae1796593043d13de714e009f8cdd3"
+        }
+      ],
+      "creator_feedback": "Rejected: the scene resembles American-West hunting/wildlife painting; the earlier neutral bull design remains accepted.",
+      "reviewed": "2026-11-09",
+      "deleted_image_records": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-db3913fe-9129-4c81-9821-5ee815cbb323.png",
+          "sha256": "6beb028b699bbcf5f5a61b26f11837f1ca93cc0905dd6c8e48bae572f5606ccc"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/02-storm-at-the-ford.png",
+          "sha256": "6beb028b699bbcf5f5a61b26f11837f1ca93cc0905dd6c8e48bae572f5606ccc"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "03",
+      "key": "glasshouse-annealer",
+      "title": "Glasshouse annealer",
+      "group": "a-current-breachline",
+      "approach": "A - Closest to current Breachline",
+      "intent": "A craft specialist controls heat in fresh glass, extending the useful-magic direction.",
+      "boundary": "Tests specialist manufacture, not instant repair, mass production or a required power system.",
+      "brief": "An adult female goblin glass artisan with olive-brown skin, large expressive ears, a broad long nose, narrow eyes and strong adult wiry proportions, graying dark hair in a practical knot. No childlike or glamorous human face. She wears rolled cream linen sleeves and a simple soot-gray apron. At a modest workbench beside an ordinary small furnace she passes a bare hand close to a freshly formed deep green glass vessel held securely by an iron tool in her other hand. The magic changes how heat settles WITHIN the unbroken glass: a warm amber zone moves into cool emerald clarity, with a tiny shimmering optical distortion near the surface. No glowing threads, holograms or magic bracelets. This is finishing new glass, NOT repairing broken pottery or reversing time. A second finished thick glass cup, ordinary glassblowing pipe and wooden shaping tool provide clear craft context. Right details: adult face and hand; the translucent vessel with warm-to-cool depth. Beautiful transmitted light, modest useful work.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: The closest fit to the recently liked Breachline studies. Economical naturalistic painting, quiet distinctive magic, clear construction, warm/cool light chosen for the scene. Avoid a loud aura or energy-thread vocabulary.\nSUBJECT AND ACTION:\nAn adult female goblin glass artisan with olive-brown skin, large expressive ears, a broad long nose, narrow eyes and strong adult wiry proportions, graying dark hair in a practical knot. No childlike or glamorous human face. She wears rolled cream linen sleeves and a simple soot-gray apron. At a modest workbench beside an ordinary small furnace she passes a bare hand close to a freshly formed deep green glass vessel held securely by an iron tool in her other hand. The magic changes how heat settles WITHIN the unbroken glass: a warm amber zone moves into cool emerald clarity, with a tiny shimmering optical distortion near the surface. No glowing threads, holograms or magic bracelets. This is finishing new glass, NOT repairing broken pottery or reversing time. A second finished thick glass cup, ordinary glassblowing pipe and wooden shaping tool provide clear craft context. Right details: adult face and hand; the translucent vessel with warm-to-cool depth. Beautiful transmitted light, modest useful work.",
+      "file": "03-glasshouse-annealer.png",
+      "refs": [],
+      "status": "rejected_deleted",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-77aaeef9-09de-4d6c-b6bd-419a7d699b8d.png",
+      "saved_path": null,
+      "visual_review": "Adult goblin artisan, new unbroken glass and local heat treatment are legible; material detail studies match.",
+      "sha256": "b6f403fa3ae1316e79d82caf03bcc2d7d0fb60f028e937d08e5594fc38671d3c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Cut entirely at the creator's follow-up request, including the hand-fix revision.",
+      "reviewed": "2026-11-09",
+      "deleted_image_records": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-77aaeef9-09de-4d6c-b6bd-419a7d699b8d.png",
+          "sha256": "b6f403fa3ae1316e79d82caf03bcc2d7d0fb60f028e937d08e5594fc38671d3c"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-be1f1c35-4be8-42b0-95ef-63f65eb76af4.png",
+          "sha256": "8810d8886ca97eccf96bf328895c2a24e92bcb0e6bd5d132e8b6a71a1ecc7675"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/03-glasshouse-annealer.png",
+          "sha256": "b6f403fa3ae1316e79d82caf03bcc2d7d0fb60f028e937d08e5594fc38671d3c"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "04",
+      "key": "dawnward-cavalier",
+      "title": "Dawnward cavalier",
+      "group": "b-high-fantasy",
+      "approach": "B - High fantasy",
+      "intent": "An elegant sacred warrior pushes toward brighter ceremonial high fantasy.",
+      "boundary": "Tests a more luminous Vigil reading; no divine intervention or standard uniform is established.",
+      "brief": "A tall dignified male lion-folk oath champion with an unmistakably feline lion head, believable muzzle and ears, dark tawny mane and focused amber eyes. He stands full-length on a worn stone stair after a battle, holding a long slender lance planted beside him; body balanced, not attacking camera. Beautiful fitted high-medieval silver steel plate with small ivory enamel insets and restrained sunlike fluted craftsmanship, tapered pauldrons, one long cream-and-ochre cloak. No giant round shoulders or skin-tight modern suit. The lance's steel point carries a warm dawnlike brilliance that fans softly across the stair, turning drifting dust gold. Sacred magic more overt and elegant than the baseline, no literal god or angel. A distant ruined arch hints at lost grandeur. Right details: feline head and armor collar; luminous worked lancehead and one enamel joint. Nobility and wonder, no matching army.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward luminous classical HIGH FANTASY: elegant elongated silhouettes, fine worked metal, rich jewel colors, graceful ceremonial shapes and clearly visible wonder. Magic may be more overt and beautiful than the baseline, while materials and anatomy remain credible. Distinct original designs.\nSUBJECT AND ACTION:\nA tall dignified male lion-folk oath champion with an unmistakably feline lion head, believable muzzle and ears, dark tawny mane and focused amber eyes. He stands full-length on a worn stone stair after a battle, holding a long slender lance planted beside him; body balanced, not attacking camera. Beautiful fitted high-medieval silver steel plate with small ivory enamel insets and restrained sunlike fluted craftsmanship, tapered pauldrons, one long cream-and-ochre cloak. No giant round shoulders or skin-tight modern suit. The lance's steel point carries a warm dawnlike brilliance that fans softly across the stair, turning drifting dust gold. Sacred magic more overt and elegant than the baseline, no literal god or angel. A distant ruined arch hints at lost grandeur. Right details: feline head and armor collar; luminous worked lancehead and one enamel joint. Nobility and wonder, no matching army.",
+      "file": "04-dawnward-cavalier.png",
+      "refs": [],
+      "status": "revised_pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-15fa85b4-834d-4c99-8092-c37bd8dbaf6f.png",
+      "saved_path": null,
+      "visual_review": "Elegant fitted armor, feline anatomy and luminous lance distinguish the classical high-fantasy direction.",
+      "sha256": "6c22cfdbe6e56aaa2256bcba653394690a5d086fcbb362a2597a0efc4df0d343",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Lion knight liked; shorten the cape. The shortened-cape revision awaits review.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/04-dawnward-cavalier-v2.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-15fa85b4-834d-4c99-8092-c37bd8dbaf6f.png",
+          "sha256": "6c22cfdbe6e56aaa2256bcba653394690a5d086fcbb362a2597a0efc4df0d343"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/04-dawnward-cavalier.png",
+          "sha256": "6c22cfdbe6e56aaa2256bcba653394690a5d086fcbb362a2597a0efc4df0d343"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "05",
+      "key": "starwell-scholar",
+      "title": "Starwell scholar",
+      "group": "b-high-fantasy",
+      "approach": "B - High fantasy",
+      "intent": "Scholarly magic becomes openly wondrous, with an elegant caster and a small impossible night sky.",
+      "boundary": "Tests spectacle and refined courtly styling without requiring an optical device.",
+      "brief": "An exceptionally beautiful yet distinctive human woman scholar around 38, warm brown skin, strong aquiline nose, widely set dark eyes, thick black hair swept into a low twist, one slightly raised eyebrow. A long midnight-blue silk-and-wool gown with a simple silver embroidered collar and structured cream over-robe, dignified and practical enough to move in, not a superhero bodysuit. She stands on a low observatory terrace with her hands apart around a hovering shallow disc of impossible midnight space, about a meter across: a tiny deep starfield with a bright crescent-like reflection, softly lighting her face in blue. It is direct scholarly spellcraft, no telescope, goggles, machine, floating formula or thread network. A few angular stone fragments float immediately above the disc as part of the controlled magical demonstration; no flight vehicle. Two details: her expressive appealing face in reflected starlight; the disc's dark depth beside a plain sleeve and hand. Purple dusk, sapphire and ivory, graceful high fantasy with selective radiant light.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward luminous classical HIGH FANTASY: elegant elongated silhouettes, fine worked metal, rich jewel colors, graceful ceremonial shapes and clearly visible wonder. Magic may be more overt and beautiful than the baseline, while materials and anatomy remain credible. Distinct original designs.\nSUBJECT AND ACTION:\nAn exceptionally beautiful yet distinctive human woman scholar around 38, warm brown skin, strong aquiline nose, widely set dark eyes, thick black hair swept into a low twist, one slightly raised eyebrow. A long midnight-blue silk-and-wool gown with a simple silver embroidered collar and structured cream over-robe, dignified and practical enough to move in, not a superhero bodysuit. She stands on a low observatory terrace with her hands apart around a hovering shallow disc of impossible midnight space, about a meter across: a tiny deep starfield with a bright crescent-like reflection, softly lighting her face in blue. It is direct scholarly spellcraft, no telescope, goggles, machine, floating formula or thread network. A few angular stone fragments float immediately above the disc as part of the controlled magical demonstration; no flight vehicle. Two details: her expressive appealing face in reflected starlight; the disc's dark depth beside a plain sleeve and hand. Purple dusk, sapphire and ivory, graceful high fantasy with selective radiant light.",
+      "file": "05-starwell-scholar.png",
+      "refs": [],
+      "status": "revised_pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-67762bb8-a5ac-4292-b3c9-d43ca3264b91.png",
+      "saved_path": null,
+      "visual_review": "Overt stellar spell, glamorous individual caster and refined robes communicate the intended wonder.",
+      "sha256": "829a8ab2fa4beacdd4be339e6bdadd736a2ec8a2e04517df8b5f8baa51dfb58d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Scholar portal and main gown liked. Background, pervasive purple, abundant flowers and overall idyllic tone are not the preferred default. Keep vibrancy; revised atmosphere awaits review.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/05-starwell-scholar-v2.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-67762bb8-a5ac-4292-b3c9-d43ca3264b91.png",
+          "sha256": "829a8ab2fa4beacdd4be339e6bdadd736a2ec8a2e04517df8b5f8baa51dfb58d"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/05-starwell-scholar.png",
+          "sha256": "829a8ab2fa4beacdd4be339e6bdadd736a2ec8a2e04517df8b5f8baa51dfb58d"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "06",
+      "key": "crownroot-hart",
+      "title": "Crownroot hart",
+      "group": "b-high-fantasy",
+      "approach": "B - High fantasy",
+      "intent": "An enchanted wild creature tests a more overtly faerie direction.",
+      "boundary": "The creature, floral response and size are proposals; it is not declared a god.",
+      "brief": "A magnificent living stag-like creature approximately two meters at the shoulder, long athletic legs, deep chest, soft pale fawn coat, dark intelligent animal eyes and a natural muzzle. Its broad antlers branch into translucent smoky quartz-like tips bearing a few tiny white blossoms, an organic coherent crown rather than a chandelier covered in jewels. It steps through a broken ancient arch in a green forest clearing; a small cluster of blue-white flowers opens at the most recent hoofprint. Only that local bloom suggests its power, while a little soft light passes through the antlers. No humanoid face, saddle, throne, entire forest glowing or compulsory green energy ribbons. Enchanting clear full silhouette with the forest vignette fading to paper. Right details: antler material and blossom; living hoof beside newly opened flowers. Elegant, openly magical high fantasy with a calm independent animal.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward luminous classical HIGH FANTASY: elegant elongated silhouettes, fine worked metal, rich jewel colors, graceful ceremonial shapes and clearly visible wonder. Magic may be more overt and beautiful than the baseline, while materials and anatomy remain credible. Distinct original designs.\nSUBJECT AND ACTION:\nA magnificent living stag-like creature approximately two meters at the shoulder, long athletic legs, deep chest, soft pale fawn coat, dark intelligent animal eyes and a natural muzzle. Its broad antlers branch into translucent smoky quartz-like tips bearing a few tiny white blossoms, an organic coherent crown rather than a chandelier covered in jewels. It steps through a broken ancient arch in a green forest clearing; a small cluster of blue-white flowers opens at the most recent hoofprint. Only that local bloom suggests its power, while a little soft light passes through the antlers. No humanoid face, saddle, throne, entire forest glowing or compulsory green energy ribbons. Enchanting clear full silhouette with the forest vignette fading to paper. Right details: antler material and blossom; living hoof beside newly opened flowers. Elegant, openly magical high fantasy with a calm independent animal.",
+      "file": "06-crownroot-hart.png",
+      "refs": [],
+      "status": "revised_pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-de47aa5c-6b45-490e-9aa4-34a4fb83b283.png",
+      "saved_path": null,
+      "visual_review": "Living hart anatomy, translucent flowering antlers and local bloom are readable.",
+      "sha256": "a4f9ea18e5c019a83913eee8c38430239b73f6e0a64c51fca22bf946210aebf0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Hart has the same saturation/tone concern. Revised setting and palette await review; creature itself is not assumed approved.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/06-crownroot-hart-v2.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/06-crownroot-hart.png",
+          "sha256": "a4f9ea18e5c019a83913eee8c38430239b73f6e0a64c51fca22bf946210aebf0"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-de47aa5c-6b45-490e-9aa4-34a4fb83b283.png",
+          "sha256": "a4f9ea18e5c019a83913eee8c38430239b73f6e0a64c51fca22bf946210aebf0"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "07",
+      "key": "boilerhouse-thaumaturge",
+      "title": "Boilerhouse thaumaturge",
+      "group": "c-steampunk",
+      "approach": "C - Steampunk",
+      "intent": "A scholarly worker supplies heat to a substantial working boiler.",
+      "boundary": "Tests one meeting of magic and steam, not a mandatory caster powering every machine.",
+      "brief": "A broad-shouldered human woman around 55, olive skin, cropped silver hair, expressive heavy brows and a capable lined face. She wears a practical blue-gray wool work coat, plain linen sleeves and one insulated glove. She tends a roughly three-meter iron steam boiler with riveted seams, copper supply pipe, readable pressure gauge, a safety valve and masonry footing. Its open firebox contains a concentrated blue-white magical heat held low in the refractory chamber; her ungloved hand is near the opening in focused concentration, with no beam connecting it. Natural white steam escapes a valve; pipes lead sensibly out of the vignette toward work elsewhere. Large useful industrial craft, no decorative gear clusters, lens apparatus or giant crystal core. Main scene shows her whole body and a coherent compact boiler layout. Right details: the firebox and hand; functioning valve, iron seam and copper fitting. Warm brick, dark iron, cool scholarly blue, controlled industrial power.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward convincing STEAMPUNK with high-fantasy craft. Dark iron, warm brass, copper, ceramic insulation, rivets where plates join, actual valves, pistons and working mechanisms. Every major component has a readable purpose; fewer large functional forms instead of ornamental gear confetti. Steam stays physical. No flying machine, automatic modern weapon or default goggles.\nSUBJECT AND ACTION:\nA broad-shouldered human woman around 55, olive skin, cropped silver hair, expressive heavy brows and a capable lined face. She wears a practical blue-gray wool work coat, plain linen sleeves and one insulated glove. She tends a roughly three-meter iron steam boiler with riveted seams, copper supply pipe, readable pressure gauge, a safety valve and masonry footing. Its open firebox contains a concentrated blue-white magical heat held low in the refractory chamber; her ungloved hand is near the opening in focused concentration, with no beam connecting it. Natural white steam escapes a valve; pipes lead sensibly out of the vignette toward work elsewhere. Large useful industrial craft, no decorative gear clusters, lens apparatus or giant crystal core. Main scene shows her whole body and a coherent compact boiler layout. Right details: the firebox and hand; functioning valve, iron seam and copper fitting. Warm brick, dark iron, cool scholarly blue, controlled industrial power.",
+      "file": "07-boilerhouse-thaumaturge.png",
+      "refs": [],
+      "status": "accepted",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-fc5a28b1-9877-4d18-9c72-83c79459406a.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/07-boilerhouse-thaumaturge.png",
+      "visual_review": "Substantial boiler, local magical heat and worker gesture are clear; machinery is conceptual, not engineering-certified.",
+      "sha256": "9eb5199526673fa3bf6390637189b57d70f92cbcf0af445b35bde232290f538e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Using fire in the oven is cool and liked. Magic supplying heat is one valid application.",
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "08",
+      "key": "lockyard-tug",
+      "title": "Lockyard tug",
+      "group": "c-steampunk",
+      "approach": "C - Steampunk",
+      "intent": "A small steam tug tests heavier practical technology on ordinary waterways.",
+      "boundary": "It floats by its hull in water; this explores technology level without bringing back mechanical flight.",
+      "brief": "A compact eight-meter steam tug maneuvering beside an old masonry canal lock, seen in clear three-quarter view with its entire sturdy timber-and-iron hull visible in WATER. Two small side paddle housings, a squat riveted boiler, short smoke stack, plain wheel station and sensible deck rails. One middle-aged human pilot in ordinary canvas coat and cap stands at the wheel; a second human deckhand handles a tow rope leading to a partially visible work barge. Real coiled rope and functional fittings, a modest amount of steam and a dark puff of smoke, no magical energy strings. Worn dark green painted panels, copper and brown timber, a sturdy original high-fantasy steam craft with useful proportions. Water curls against the bow and paddle wake brings motion. Absolutely no hovering, aerial balloons, wings, futuristic cockpit, decorative clock face or random cog ornament. Right studies: boiler/valve assembly; a section of hull and paddle mechanics above the waterline. This is a larger technological edge test.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward convincing STEAMPUNK with high-fantasy craft. Dark iron, warm brass, copper, ceramic insulation, rivets where plates join, actual valves, pistons and working mechanisms. Every major component has a readable purpose; fewer large functional forms instead of ornamental gear confetti. Steam stays physical. No flying machine, automatic modern weapon or default goggles.\nSUBJECT AND ACTION:\nA compact eight-meter steam tug maneuvering beside an old masonry canal lock, seen in clear three-quarter view with its entire sturdy timber-and-iron hull visible in WATER. Two small side paddle housings, a squat riveted boiler, short smoke stack, plain wheel station and sensible deck rails. One middle-aged human pilot in ordinary canvas coat and cap stands at the wheel; a second human deckhand handles a tow rope leading to a partially visible work barge. Real coiled rope and functional fittings, a modest amount of steam and a dark puff of smoke, no magical energy strings. Worn dark green painted panels, copper and brown timber, a sturdy original high-fantasy steam craft with useful proportions. Water curls against the bow and paddle wake brings motion. Absolutely no hovering, aerial balloons, wings, futuristic cockpit, decorative clock face or random cog ornament. Right studies: boiler/valve assembly; a section of hull and paddle mechanics above the waterline. This is a larger technological edge test.",
+      "file": "08-lockyard-tug.png",
+      "refs": [],
+      "status": "accepted",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-14374b48-9c5c-48c6-8fa0-33c9ef4d252e.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png",
+      "visual_review": "Tug hull visibly floats in ordinary water; boiler, paddle and workers make its practical role clear.",
+      "sha256": "cfcfc62b519bc41f7ed2c693af893463ca2689c00e7b070ef4b6482ed93950df",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Tugboat liked and accepted.",
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "09",
+      "key": "foundry-strider",
+      "title": "Foundry strider",
+      "group": "c-steampunk",
+      "approach": "C - Steampunk",
+      "intent": "A large working automaton makes its mechanical purpose and locomotion visible.",
+      "boundary": "Tests a stronger industrial construct edge; autonomy and prevalence remain open.",
+      "brief": "A three-meter-tall steam-driven foundry automaton shaped for handling heavy hot stock, not a human in armor. An upright short pear-shaped riveted iron boiler body, two powerful reverse-jointed legs ending in wide three-pad feet, a short counterweight tail, one robust articulated tong arm holding a long orange-hot steel billet low and safely, and a shorter bracing arm. Visible pistons and linkages connect meaningful joints, brass valve chest on the side, a short chimney and a small plume of steam. Its head is a small plain downward-facing metal sensor hood without a cute face or giant glowing eye. A human worker about half its height stands well away, guiding the billet toward an ordinary stone support. Weight-bearing stance, all legs and tools readable. Deep iron, restrained oxblood paint and warm brass. Not a walking miniature forge, not a scroll-powered porter, no magical strings or obligatory caster. Right details: working tong and steel grip; foot, piston and load-bearing joint. Industrial but carefully made, a high-fantasy steampunk edge.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Push toward convincing STEAMPUNK with high-fantasy craft. Dark iron, warm brass, copper, ceramic insulation, rivets where plates join, actual valves, pistons and working mechanisms. Every major component has a readable purpose; fewer large functional forms instead of ornamental gear confetti. Steam stays physical. No flying machine, automatic modern weapon or default goggles.\nSUBJECT AND ACTION:\nA three-meter-tall steam-driven foundry automaton shaped for handling heavy hot stock, not a human in armor. An upright short pear-shaped riveted iron boiler body, two powerful reverse-jointed legs ending in wide three-pad feet, a short counterweight tail, one robust articulated tong arm holding a long orange-hot steel billet low and safely, and a shorter bracing arm. Visible pistons and linkages connect meaningful joints, brass valve chest on the side, a short chimney and a small plume of steam. Its head is a small plain downward-facing metal sensor hood without a cute face or giant glowing eye. A human worker about half its height stands well away, guiding the billet toward an ordinary stone support. Weight-bearing stance, all legs and tools readable. Deep iron, restrained oxblood paint and warm brass. Not a walking miniature forge, not a scroll-powered porter, no magical strings or obligatory caster. Right details: working tong and steel grip; foot, piston and load-bearing joint. Industrial but carefully made, a high-fantasy steampunk edge.",
+      "file": "09-foundry-strider.png",
+      "refs": [],
+      "status": "revised_pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1fe0e3c4-3972-4e5e-b777-040869e534ab.png",
+      "saved_path": null,
+      "visual_review": "Large mechanical construct, gripping tool and hot stock show industrial purpose; joints remain concept design.",
+      "sha256": "743e78197baff242683360436e1ff7363a6b000823c553e34bcd1f08d3e8a44e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Forge robot general idea liked; original anatomy is poor. Rebuilt mechanism awaits review.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/09-foundry-strider-v2.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/09-foundry-strider.png",
+          "sha256": "743e78197baff242683360436e1ff7363a6b000823c553e34bcd1f08d3e8a44e"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1fe0e3c4-3972-4e5e-b777-040869e534ab.png",
+          "sha256": "743e78197baff242683360436e1ff7363a6b000823c553e34bcd1f08d3e8a44e"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "10",
+      "key": "cobalt-duelist",
+      "title": "Cobalt duelist",
+      "group": "d-arcane",
+      "approach": "D - Arcane-inspired",
+      "intent": "Sharper fashion and a saturated enchanted weapon push toward urban magical drama.",
+      "boundary": "Tests Arcane-like stylization and confidence, without importing its characters or world.",
+      "brief": "An original glamorous human duelist woman about 32 with a narrow angular face, copper-brown skin, strong nose, short sweeping black hair and a confident crooked smile. She wears a beautifully tailored asymmetric deep teal coat over a cream shirt, fitted dark trousers and practical low boots; one small copper clasp, no belts everywhere, no gauntlets, no Jinx/Vi/Caitlyn resemblance. On a brick-and-iron walkway she turns toward an off-screen opponent to the left, holding a long rapier low and ready, coherent limbs and complete blade. A small smoky cobalt stone set flush into the guard makes the blade cut a single thin faceted patch of blue light in the air immediately around its edge, like refracted glass, not a laser sword or ribbon. Angular shapes, bold cobalt and amber side lighting, urban sophistication with tension. Two right studies: painted expressive face and tailoring; original rapier guard, inset stone and quiet impossible edge. More stylized and vividly colored than the Breachline baseline while clearly painted.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore an ARCANE-INSPIRED direction through angular tailored silhouettes, expressive individually shaped faces, faceted painted planes, rich teal/cobalt/amber contrasts and urban magical craft. It remains an oil/acrylic concept painting with visible brushwork. Translate the design language into original Breachline people and objects; no recognizable Arcane characters, outfits, symbols or copied devices. A stronger color and stylization experiment.\nSUBJECT AND ACTION:\nAn original glamorous human duelist woman about 32 with a narrow angular face, copper-brown skin, strong nose, short sweeping black hair and a confident crooked smile. She wears a beautifully tailored asymmetric deep teal coat over a cream shirt, fitted dark trousers and practical low boots; one small copper clasp, no belts everywhere, no gauntlets, no Jinx/Vi/Caitlyn resemblance. On a brick-and-iron walkway she turns toward an off-screen opponent to the left, holding a long rapier low and ready, coherent limbs and complete blade. A small smoky cobalt stone set flush into the guard makes the blade cut a single thin faceted patch of blue light in the air immediately around its edge, like refracted glass, not a laser sword or ribbon. Angular shapes, bold cobalt and amber side lighting, urban sophistication with tension. Two right studies: painted expressive face and tailoring; original rapier guard, inset stone and quiet impossible edge. More stylized and vividly colored than the Breachline baseline while clearly painted.",
+      "file": "10-cobalt-duelist.png",
+      "refs": [],
+      "status": "components_preserved",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-9e0918b5-c590-4e83-8948-28f2404402af.png",
+      "saved_path": null,
+      "visual_review": "Angular tailoring, faceted paint and cobalt enchanted blade make the Arcane-inspired departure distinct.",
+      "sha256": "3e9ce3e03507efc360d215520a973944ec05829f48401dd5e5305d25dd6b06db",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Reject the angular human character design. Sword and city backdrop liked; preserve them separately. City may inform a larger Ambrel; the world remains large, varied and uneven.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png",
+          "sha256": "3e9ce3e03507efc360d215520a973944ec05829f48401dd5e5305d25dd6b06db"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-9e0918b5-c590-4e83-8948-28f2404402af.png",
+          "sha256": "3e9ce3e03507efc360d215520a973944ec05829f48401dd5e5305d25dd6b06db"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "11",
+      "key": "underbridge-vaporwright",
+      "title": "Underbridge vaporwright",
+      "group": "d-arcane",
+      "approach": "D - Arcane-inspired",
+      "intent": "A vivid urban alchemist brings direct magic into a rough working environment.",
+      "boundary": "Tests bolder color, character and magical chemistry; no mandatory equipment system.",
+      "brief": "An adult male goblin alchemist with a long broad nose, huge uneven ears, olive-brown skin, small heavy-lidded eyes, stubble-like painted chin shadow and thinning dark hair. Wiry mature build, not a child or cute mascot. A single thick patched burgundy apron over a slate shirt and rolled trousers, one sensible pouch. He bends over a small scarred worktable under an old urban brick arch, intently shaping a dense violet vapor above a concave copper vessel with the poised fingers of one bare hand. A flask of vivid chartreuse liquid catches warm light beside it; modest chemistry tools, clay sink and one pipe give industrial texture without a clutter wall. The vapor briefly forms a crisp faceted shape like a mineral flower before softening, no magical strings, gadget glove or floating equations. Strong diagonal composition, intimate face, sour-green/violet accents balanced with dirty warm brick. Right details: specific goblin face; hand, vapor and vessel. Clever, slightly dangerous, resourceful urban fantasy.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore an ARCANE-INSPIRED direction through angular tailored silhouettes, expressive individually shaped faces, faceted painted planes, rich teal/cobalt/amber contrasts and urban magical craft. It remains an oil/acrylic concept painting with visible brushwork. Translate the design language into original Breachline people and objects; no recognizable Arcane characters, outfits, symbols or copied devices. A stronger color and stylization experiment.\nSUBJECT AND ACTION:\nAn adult male goblin alchemist with a long broad nose, huge uneven ears, olive-brown skin, small heavy-lidded eyes, stubble-like painted chin shadow and thinning dark hair. Wiry mature build, not a child or cute mascot. A single thick patched burgundy apron over a slate shirt and rolled trousers, one sensible pouch. He bends over a small scarred worktable under an old urban brick arch, intently shaping a dense violet vapor above a concave copper vessel with the poised fingers of one bare hand. A flask of vivid chartreuse liquid catches warm light beside it; modest chemistry tools, clay sink and one pipe give industrial texture without a clutter wall. The vapor briefly forms a crisp faceted shape like a mineral flower before softening, no magical strings, gadget glove or floating equations. Strong diagonal composition, intimate face, sour-green/violet accents balanced with dirty warm brick. Right details: specific goblin face; hand, vapor and vessel. Clever, slightly dangerous, resourceful urban fantasy.",
+      "file": "11-underbridge-vaporwright.png",
+      "refs": [],
+      "status": "accepted",
+      "generation_status": "complete",
+      "active_reference": true,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-e96312ab-8f4a-4ebf-8329-cdfe381b39a2.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+      "visual_review": "Mature goblin face, vivid chemistry and shaped violet vapor are legible.",
+      "sha256": "de00bd7dc469660e61116ba577b61fb44e5976b96a6a50113aa84b27f8ffc0e0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Love love love love. Strong favorite for the street goblin, magical chemistry and scene.",
+      "reviewed": "2026-11-09",
+      "preference_strength": "Strong favorite"
+    },
+    {
+      "id": "12",
+      "key": "spellglass-sentinel",
+      "title": "Spellglass sentinel",
+      "group": "d-arcane",
+      "approach": "D - Arcane-inspired",
+      "intent": "An elegant constructed guardian tests faceted magical technology and a brighter internal power source.",
+      "boundary": "A deliberate outer-edge comparison with the quieter bronze and stone guardians.",
+      "brief": "An original 2.7-meter constructed guardian in a clear deliberate stance on one small stone landing in an urban scholarly district. An articulated dark-bronze frame, large sharply cut ivory ceramic armor plates, tapered legs, broad flat feet and a narrow faceless wedge head. Asymmetric arms: one ordinary three-finger manipulator and one broad folding forearm guard with a simple fan of three rigid panels. A single faceted cobalt spellglass mineral held deep inside an open ribbed chest lights the adjacent bronze blue; it is an explicit magical-technology experiment, no glowing strings linking every joint. The rest of the body is calm and clean, with restrained amber enamel. A small adult human engineer in a tailored cream coat beside it establishes scale, looking up, not feeding it with a beam. No cartoon robot face, modern gun, robot policeman badge, copied hextech device or cluttered pipes. Right details: the head/shoulder geometry; the contained mineral and ceramic/brass join. Strong sculptural design, cool blue core against warm sunset reflections.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore an ARCANE-INSPIRED direction through angular tailored silhouettes, expressive individually shaped faces, faceted painted planes, rich teal/cobalt/amber contrasts and urban magical craft. It remains an oil/acrylic concept painting with visible brushwork. Translate the design language into original Breachline people and objects; no recognizable Arcane characters, outfits, symbols or copied devices. A stronger color and stylization experiment.\nSUBJECT AND ACTION:\nAn original 2.7-meter constructed guardian in a clear deliberate stance on one small stone landing in an urban scholarly district. An articulated dark-bronze frame, large sharply cut ivory ceramic armor plates, tapered legs, broad flat feet and a narrow faceless wedge head. Asymmetric arms: one ordinary three-finger manipulator and one broad folding forearm guard with a simple fan of three rigid panels. A single faceted cobalt spellglass mineral held deep inside an open ribbed chest lights the adjacent bronze blue; it is an explicit magical-technology experiment, no glowing strings linking every joint. The rest of the body is calm and clean, with restrained amber enamel. A small adult human engineer in a tailored cream coat beside it establishes scale, looking up, not feeding it with a beam. No cartoon robot face, modern gun, robot policeman badge, copied hextech device or cluttered pipes. Right details: the head/shoulder geometry; the contained mineral and ceramic/brass join. Strong sculptural design, cool blue core against warm sunset reflections.",
+      "file": "12-spellglass-sentinel.png",
+      "refs": [],
+      "status": "revised_pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-11754699-1d25-4edc-9d24-e12b10a51299.png",
+      "saved_path": null,
+      "visual_review": "Ceramic/bronze guardian has a clearly contained bright mineral core and consistent detail studies.",
+      "sha256": "1e230452acda9ffa4c36d351e3549546b39a71405b995a73ccc84091ec2fe8f2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Magic core powering items strongly liked. Head too futuristic; make surfaces more visibly metallic. Revision awaits review.",
+      "reviewed": "2026-11-09",
+      "replacement_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/12-spellglass-sentinel-v2.png"
+      ],
+      "deleted_superseded_images": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-11754699-1d25-4edc-9d24-e12b10a51299.png",
+          "sha256": "1e230452acda9ffa4c36d351e3549546b39a71405b995a73ccc84091ec2fe8f2"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/12-spellglass-sentinel.png",
+          "sha256": "1e230452acda9ffa4c36d351e3549546b39a71405b995a73ccc84091ec2fe8f2"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "13",
+      "key": "thundermaul-chieftain",
+      "title": "Thundermaul chieftain",
+      "group": "e-warcraft",
+      "approach": "E - Warcraft-inspired",
+      "intent": "A bolder Fervor fighter tests exaggerated weight, equipment and elemental impact.",
+      "boundary": "The heroic proportions and weapon size are deliberate boundary tests, not a new common orc kit.",
+      "brief": "A massive adult female ORC chieftain, genuinely nonhuman coarse face, huge projecting jaw, heavy brow, broad blunt nose and two irregular thick tusks. Broad muscular neck and heavy powerful build, short dark topknot, no attractive green human-model face. Fervor-compatible personal kit: one large dark iron shoulder plate, a thick useful belt, an ochre wool waistcloth over sturdy trousers, broad boots and restrained old painted skin marks. No matching red army uniform or layers of leather strips. She brings a very large but crafted iron-headed war maul down onto a rocky ridge at image-left, side-on dynamic weight and coherent anatomy; no attack at viewer. A short branching burst of blue-white storm power breaks across the impact stone and lifts dust. The magic belongs to wielder or weapon without gadget explanation, no gauntlet attachment. Heroic broad silhouette, saturated ochre and slate-blue, big readable mass. Right details: distinctly orc head; heavy maul construction with a small lightning accent. Forceful, exciting and deliberately larger-than-life.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a WARCRAFT-INSPIRED heroic fantasy edge: broad weighty graphic silhouettes, larger hands and shoulders, monumental armor shapes, thick readable weapons, bold saturated accents and forceful poses. Carry it with painterly material richness, not cartoon outlines or toy-like CGI. Exaggeration is deliberate but construction and weight remain legible. Invent Breachline designs, no copied faction emblems or recognizable game characters.\nSUBJECT AND ACTION:\nA massive adult female ORC chieftain, genuinely nonhuman coarse face, huge projecting jaw, heavy brow, broad blunt nose and two irregular thick tusks. Broad muscular neck and heavy powerful build, short dark topknot, no attractive green human-model face. Fervor-compatible personal kit: one large dark iron shoulder plate, a thick useful belt, an ochre wool waistcloth over sturdy trousers, broad boots and restrained old painted skin marks. No matching red army uniform or layers of leather strips. She brings a very large but crafted iron-headed war maul down onto a rocky ridge at image-left, side-on dynamic weight and coherent anatomy; no attack at viewer. A short branching burst of blue-white storm power breaks across the impact stone and lifts dust. The magic belongs to wielder or weapon without gadget explanation, no gauntlet attachment. Heroic broad silhouette, saturated ochre and slate-blue, big readable mass. Right details: distinctly orc head; heavy maul construction with a small lightning accent. Forceful, exciting and deliberately larger-than-life.",
+      "file": "13-thundermaul-chieftain.png",
+      "refs": [],
+      "status": "rejected_deleted",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-58aebfa0-2a27-4799-8b63-af36dacda25e.png",
+      "saved_path": null,
+      "visual_review": "Coarse nonhuman orc, heroic mass and oversized storm weapon clearly test a more exaggerated edge.",
+      "sha256": "64995f035c3cff341115a1797be1247f4ba7a4c629422f8dbda238d82c63828e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Rejected with the entire oversized heroic trio the creator called Warhammer.",
+      "reviewed": "2026-11-09",
+      "deleted_image_records": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-58aebfa0-2a27-4799-8b63-af36dacda25e.png",
+          "sha256": "64995f035c3cff341115a1797be1247f4ba7a4c629422f8dbda238d82c63828e"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/13-thundermaul-chieftain.png",
+          "sha256": "64995f035c3cff341115a1797be1247f4ba7a4c629422f8dbda238d82c63828e"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "14",
+      "key": "sunmane-bulwark",
+      "title": "Sunmane bulwark",
+      "group": "e-warcraft",
+      "approach": "E - Warcraft-inspired",
+      "intent": "A monumental sacred defender tests heavier armor and unmistakable protection magic.",
+      "boundary": "Tests the heroic extreme of Vigil; the previous rejected shield effects are not reinstated as references.",
+      "brief": "A male lion-folk defender with a real feline lion skull and muzzle, thick auburn mane, broad powerful body and fiercely focused eyes. Massive but readable high-fantasy armor: broad royal-blue enamel and warm gold-edged steel shoulders, heavy fitted cuirass, thick greaves and a short worn cream cloak. Exaggerated heroic width with sensible elbow and knee freedom, not a stack of random spikes. He braces a large angular physical shield against the ground while covering a retreat along a broken rampart, viewed from the side. His shield-bearing hand is entirely hidden behind the shield. The shield's outer face projects one short solid-looking plane of golden light immediately in front of it, about shield-sized, with a few blunt sparks at its edge; no dome, light threads, glass mirror or floating rune wheel. A fallen spear and distant shadow imply pressure without a crowded battle. Right studies: feline face and shoulder; shield craftsmanship and the simple light-plane edge. A deliberate bold Warcraft-like sacred-armor test, not a copied paladin.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a WARCRAFT-INSPIRED heroic fantasy edge: broad weighty graphic silhouettes, larger hands and shoulders, monumental armor shapes, thick readable weapons, bold saturated accents and forceful poses. Carry it with painterly material richness, not cartoon outlines or toy-like CGI. Exaggeration is deliberate but construction and weight remain legible. Invent Breachline designs, no copied faction emblems or recognizable game characters.\nSUBJECT AND ACTION:\nA male lion-folk defender with a real feline lion skull and muzzle, thick auburn mane, broad powerful body and fiercely focused eyes. Massive but readable high-fantasy armor: broad royal-blue enamel and warm gold-edged steel shoulders, heavy fitted cuirass, thick greaves and a short worn cream cloak. Exaggerated heroic width with sensible elbow and knee freedom, not a stack of random spikes. He braces a large angular physical shield against the ground while covering a retreat along a broken rampart, viewed from the side. His shield-bearing hand is entirely hidden behind the shield. The shield's outer face projects one short solid-looking plane of golden light immediately in front of it, about shield-sized, with a few blunt sparks at its edge; no dome, light threads, glass mirror or floating rune wheel. A fallen spear and distant shadow imply pressure without a crowded battle. Right studies: feline face and shoulder; shield craftsmanship and the simple light-plane edge. A deliberate bold Warcraft-like sacred-armor test, not a copied paladin.",
+      "file": "14-sunmane-bulwark.png",
+      "refs": [],
+      "status": "rejected_deleted",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-59891a1d-35f5-4291-b85d-5ad331dc2576.png",
+      "saved_path": null,
+      "visual_review": "Corrected selected version: ordinary human background civilians and fully hidden shield-bearing hand; free fist unchanged. Bold armor and golden planar ward retained.",
+      "revision_prompt": "Use case: precise-object-edit. Correct this existing Breachline Sunmane bulwark design study with TWO SMALL CHANGES ONLY. (1) The blonde background civilian at far left has an unintended pointed elf ear. Make her an ordinary HUMAN woman with a small rounded natural human ear; preserve her blonde hair, face, blue cloak and position. All three background people are ordinary humans. (2) Hide the lion's shield-carrying hand completely BEHIND the physical shield. Remove any fingers or paw protruding onto the front/right luminous face of the shield. The other clearly visible free fist by his forward knee must stay unchanged. Preserve the lion's exact face, feline anatomy, heavy blue-and-gold armor, crouched stance, warm golden planar protection effect, shield design, spear on ground, background, lighting, painterly heroic style and both detail insets. Do not redesign, crop, add text, add people or alter anything else. Same landscape 1536x1024.",
+      "revision_input": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7a36a1fc-2a63-4eae-bb15-962d80322312.png",
+      "generation_history": [
+        {
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7a36a1fc-2a63-4eae-bb15-962d80322312.png",
+          "status": "superseded_quality_correction",
+          "reason": "Unintended pointed ear on background civilian and exposed shield grip."
+        },
+        {
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-59891a1d-35f5-4291-b85d-5ad331dc2576.png",
+          "status": "selected_pending_review"
+        }
+      ],
+      "sha256": "636d3c3ed6b9efd06c05002526e086839016e89a63083c758ae6b17ae9f9a370",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Rejected with the entire oversized heroic trio the creator called Warhammer.",
+      "reviewed": "2026-11-09",
+      "deleted_image_records": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-59891a1d-35f5-4291-b85d-5ad331dc2576.png",
+          "sha256": "636d3c3ed6b9efd06c05002526e086839016e89a63083c758ae6b17ae9f9a370"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7a36a1fc-2a63-4eae-bb15-962d80322312.png",
+          "sha256": "088e59dc10f8f074c8ece25ff6d9e62c614026c1d138625b87d3e3715fc43ecf"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/14-sunmane-bulwark.png",
+          "sha256": "636d3c3ed6b9efd06c05002526e086839016e89a63083c758ae6b17ae9f9a370"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "15",
+      "key": "briar-colossus",
+      "title": "Briar colossus",
+      "group": "e-warcraft",
+      "approach": "E - Warcraft-inspired",
+      "intent": "Alderkin become a bold, powerful nature presence with a much stronger silhouette.",
+      "boundary": "Tests heroic scale and growth magic while preserving botanical anatomy and independent motives.",
+      "brief": "A roughly six-meter ancient ALDERKIN, a living flexible tree person, not a human whose skin is bark. Broad asymmetrical purple-brown trunk, root legs, thick branching arms with gripping root fingers, an upper trunk head with two dark knot-like eyes and NO sculpted human nose, lips or beard. A great uneven crown of vivid green leaves and a few naturally grown thorn spurs give a powerful graphic silhouette. It braces in a stony woodland pass, one root-foot forward, growing several thick living roots from the earth into a rough barrier in front of its own territory. Strong natural action, not gardening for humans. Rich moss-green and warm bark, lime light between the leaves, no glowing green ropes around every branch or carved rune plates. One tiny ordinary human at a respectful distant edge gives scale without operating or directing it. Right studies: botanical face/knot anatomy; heavy root-fingers and new growth breaking soil. Heroic mass and expressive silhouette, a Warcraft-influenced extreme rendered with tactile painted living wood.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a WARCRAFT-INSPIRED heroic fantasy edge: broad weighty graphic silhouettes, larger hands and shoulders, monumental armor shapes, thick readable weapons, bold saturated accents and forceful poses. Carry it with painterly material richness, not cartoon outlines or toy-like CGI. Exaggeration is deliberate but construction and weight remain legible. Invent Breachline designs, no copied faction emblems or recognizable game characters.\nSUBJECT AND ACTION:\nA roughly six-meter ancient ALDERKIN, a living flexible tree person, not a human whose skin is bark. Broad asymmetrical purple-brown trunk, root legs, thick branching arms with gripping root fingers, an upper trunk head with two dark knot-like eyes and NO sculpted human nose, lips or beard. A great uneven crown of vivid green leaves and a few naturally grown thorn spurs give a powerful graphic silhouette. It braces in a stony woodland pass, one root-foot forward, growing several thick living roots from the earth into a rough barrier in front of its own territory. Strong natural action, not gardening for humans. Rich moss-green and warm bark, lime light between the leaves, no glowing green ropes around every branch or carved rune plates. One tiny ordinary human at a respectful distant edge gives scale without operating or directing it. Right studies: botanical face/knot anatomy; heavy root-fingers and new growth breaking soil. Heroic mass and expressive silhouette, a Warcraft-influenced extreme rendered with tactile painted living wood.",
+      "file": "15-briar-colossus.png",
+      "refs": [],
+      "status": "rejected_deleted",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-2cfb5004-7c1f-46e9-ab83-5e65ce673d33.png",
+      "saved_path": null,
+      "visual_review": "Botanical knot eyes, large tree silhouette and root barrier carry a heroic nature direction.",
+      "sha256": "11bd4f9886cf3a35fd772d4e309287b9666d02554310ac75a0fbc4549de5ae2c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Rejected with the entire oversized heroic trio the creator called Warhammer.",
+      "reviewed": "2026-11-09",
+      "deleted_image_records": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-2cfb5004-7c1f-46e9-ab83-5e65ce673d33.png",
+          "sha256": "11bd4f9886cf3a35fd772d4e309287b9666d02554310ac75a0fbc4549de5ae2c"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/15-briar-colossus.png",
+          "sha256": "11bd4f9886cf3a35fd772d4e309287b9666d02554310ac75a0fbc4549de5ae2c"
+        }
+      ],
+      "generated_source_deleted": true
+    },
+    {
+      "id": "16",
+      "key": "last-road-ranger",
+      "title": "Last-road ranger",
+      "group": "f-lotr",
+      "approach": "F - LOTR-inspired",
+      "intent": "A restrained traveler tests history and character carried by ordinary equipment and landscape.",
+      "boundary": "A quiet contrast to the louder directions; supernatural power is not required in every study.",
+      "brief": "An original older human woman ranger around 58 with a weathered narrow face, slightly bent nose, gray-brown braided hair and steady thoughtful eyes. Full-length in a slate-green wool cloak over a simple brown tunic and a modest short mail shirt, plain boots, one belt pouch and a long ash spear. No actor likeness, famous film costume, dangling arsenal, enormous bow or ornament pile. She pauses at a broken milestone on an ancient hillside road, one hand on the spear and the other resting against the warm flank of a small sturdy pack pony. Both look toward a distant pass; no attack pose. Her practical equipment is cared for and repaired. One old bronze cloak fastening has a subtle seed-shaped design, no glowing symbol. Muted ochre grasses, rain-cleared pale light and old stone convey a world with long memory. Right details: her appealing lived face; mail, wool and bronze clasp construction. Quiet nobility, travel and understated mythic possibility.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a LORD OF THE RINGS-INSPIRED direction: patient mythic atmosphere, natural proportions, deep history through materials, exquisite modest craft, weathered cloth and quiet nobility. Grounded medieval fantasy with subtle wonder and a strong sense of place. No copied film costumes, actor likenesses, White Tree, One Ring inscription or established Middle-earth characters. Entirely original Breachline subjects.\nSUBJECT AND ACTION:\nAn original older human woman ranger around 58 with a weathered narrow face, slightly bent nose, gray-brown braided hair and steady thoughtful eyes. Full-length in a slate-green wool cloak over a simple brown tunic and a modest short mail shirt, plain boots, one belt pouch and a long ash spear. No actor likeness, famous film costume, dangling arsenal, enormous bow or ornament pile. She pauses at a broken milestone on an ancient hillside road, one hand on the spear and the other resting against the warm flank of a small sturdy pack pony. Both look toward a distant pass; no attack pose. Her practical equipment is cared for and repaired. One old bronze cloak fastening has a subtle seed-shaped design, no glowing symbol. Muted ochre grasses, rain-cleared pale light and old stone convey a world with long memory. Right details: her appealing lived face; mail, wool and bronze clasp construction. Quiet nobility, travel and understated mythic possibility.",
+      "file": "16-last-road-ranger.png",
+      "refs": [],
+      "status": "inspiration_only_not_core",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8f75451a-3e26-42bc-8f10-b6bc7db33285.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/inspiration-only/round-06-lotr-2026-11-08/16-last-road-ranger.png",
+      "visual_review": "Older traveler, pony, ordinary cared-for gear and landscape support restrained history and character.",
+      "sha256": "5540d1eb7c1c5d00c3421d00eb7e5002a1b5a0c08d56e914992f6e64b0ce14d6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "reviewed": "2026-11-09",
+      "creator_feedback": "Cool and good inspirations, but not fitting the main direction. Possible baddies or side-faction use remains tentative."
+    },
+    {
+      "id": "17",
+      "key": "twilight-oathkeeper",
+      "title": "Twilight oathkeeper",
+      "group": "f-lotr",
+      "approach": "F - LOTR-inspired",
+      "intent": "Refined armor and inherited craft test a quieter kind of grandeur.",
+      "boundary": "Tests LOTR-like dignity and material history without defining a new bloodline or kingdom.",
+      "brief": "An original human oathkeeper man about 45 with a broad olive-toned face, deep-set gray eyes, close dark beard with a white patch and a modestly crooked nose. He stands full-length beside a broken old statue base at twilight, peacefully resting both hands on the pommel of a plain long sword whose point touches a stone. Elegant fitted steel armor over fine mail, long narrow proportions, slightly leaf-curved plate edges, tiny bronze inlays and a deep midnight-blue wool mantle. No oversized shoulder blocks, copied Gondor or Rohan heraldry, White Tree, crown or actor likeness. A simple open-faced helmet rests on the base beside him; sword and armor show maintenance and inherited wear, beauty without jewels everywhere. No bright aura; a faint cold silver line at the sword's edge could be reflected twilight or an old enchantment. Right details: the original open helmet and fine metal joins; sword hilt and a section of subtly engraved steel. Old-world craftsmanship, reserve and dignity, natural painted materials.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a LORD OF THE RINGS-INSPIRED direction: patient mythic atmosphere, natural proportions, deep history through materials, exquisite modest craft, weathered cloth and quiet nobility. Grounded medieval fantasy with subtle wonder and a strong sense of place. No copied film costumes, actor likenesses, White Tree, One Ring inscription or established Middle-earth characters. Entirely original Breachline subjects.\nSUBJECT AND ACTION:\nAn original human oathkeeper man about 45 with a broad olive-toned face, deep-set gray eyes, close dark beard with a white patch and a modestly crooked nose. He stands full-length beside a broken old statue base at twilight, peacefully resting both hands on the pommel of a plain long sword whose point touches a stone. Elegant fitted steel armor over fine mail, long narrow proportions, slightly leaf-curved plate edges, tiny bronze inlays and a deep midnight-blue wool mantle. No oversized shoulder blocks, copied Gondor or Rohan heraldry, White Tree, crown or actor likeness. A simple open-faced helmet rests on the base beside him; sword and armor show maintenance and inherited wear, beauty without jewels everywhere. No bright aura; a faint cold silver line at the sword's edge could be reflected twilight or an old enchantment. Right details: the original open helmet and fine metal joins; sword hilt and a section of subtly engraved steel. Old-world craftsmanship, reserve and dignity, natural painted materials.",
+      "file": "17-twilight-oathkeeper.png",
+      "refs": [],
+      "status": "inspiration_only_not_core",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-92975739-c764-4bab-baa5-e1073d6daeab.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/inspiration-only/round-06-lotr-2026-11-08/17-twilight-oathkeeper.png",
+      "visual_review": "Refined plate, mail, helmet and sword details emphasize old-world workmanship.",
+      "sha256": "9a4eaa711be8dde4bcf3fa997e54d89888eddb03b65400b1d8105d7353417e96",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "reviewed": "2026-11-09",
+      "creator_feedback": "Cool and good inspirations, but not fitting the main direction. Possible baddies or side-faction use remains tentative."
+    },
+    {
+      "id": "18",
+      "key": "cairnwing-owl",
+      "title": "Cairnwing owl",
+      "group": "f-lotr",
+      "approach": "F - LOTR-inspired",
+      "intent": "A great owl tests mythic presence through scale, place and behavior alone.",
+      "boundary": "No magic effect or domestication is assumed; it remains an independent creature.",
+      "brief": "An immense but believable great owl about three meters tall perched on an ancient weathered cairn in an upland valley, with powerful talons and broad folded wings. Original natural anatomy, rounded facial disk, deep intelligent amber eyes, layered warm-gray and russet feathers painted in broad groups, not each feather individually razor sharp. It turns its head toward a tiny solitary human traveler below, who pauses a respectful distance away. The encounter has gravity and mutual attention, not petting or a mount being saddled. A sweep of distant pale mountains and wind through amber grass establish mythic scale; the scene dissolves into the paper at the margins. No antler costume, glowing eyes, magic ribbons or towers strapped to its back. Right details: the animal's concentrated face; great talon against old carved stone, with believable scale. Quiet wonder, age and an independent wild presence, LOTR-inspired atmosphere without copying a named creature.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: Explore a LORD OF THE RINGS-INSPIRED direction: patient mythic atmosphere, natural proportions, deep history through materials, exquisite modest craft, weathered cloth and quiet nobility. Grounded medieval fantasy with subtle wonder and a strong sense of place. No copied film costumes, actor likenesses, White Tree, One Ring inscription or established Middle-earth characters. Entirely original Breachline subjects.\nSUBJECT AND ACTION:\nAn immense but believable great owl about three meters tall perched on an ancient weathered cairn in an upland valley, with powerful talons and broad folded wings. Original natural anatomy, rounded facial disk, deep intelligent amber eyes, layered warm-gray and russet feathers painted in broad groups, not each feather individually razor sharp. It turns its head toward a tiny solitary human traveler below, who pauses a respectful distance away. The encounter has gravity and mutual attention, not petting or a mount being saddled. A sweep of distant pale mountains and wind through amber grass establish mythic scale; the scene dissolves into the paper at the margins. No antler costume, glowing eyes, magic ribbons or towers strapped to its back. Right details: the animal's concentrated face; great talon against old carved stone, with believable scale. Quiet wonder, age and an independent wild presence, LOTR-inspired atmosphere without copying a named creature.",
+      "file": "18-cairnwing-owl.png",
+      "refs": [],
+      "status": "inspiration_only_not_core",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a8bf8097-85a2-4e0d-9189-1c3ffee907e0.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/inspiration-only/round-06-lotr-2026-11-08/18-cairnwing-owl.png",
+      "visual_review": "Large natural owl, traveler and cairn establish a quiet independent mythic presence.",
+      "sha256": "3417081b1d29d4d2e8df20c025b3679f99ad04ddfe4057e45c1a7cbe145644ca",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "reviewed": "2026-11-09",
+      "creator_feedback": "Cool and good inspirations, but not fitting the main direction. Possible baddies or side-faction use remains tentative."
+    },
+    {
+      "id": "19",
+      "key": "saltwake-diviner",
+      "title": "Saltwake diviner",
+      "group": "g-wild-cards",
+      "approach": "G - Three wild cards",
+      "intent": "Desert mineral magic reveals traces of an unseen passage.",
+      "boundary": "A surprise through materials, climate and investigation rather than louder spell effects.",
+      "brief": "DESIGN DIRECTION: sunlit desert court and mineral divination, a fresh possibility for Breachline. A dignified middle-aged Black human woman with a long strong nose, broad cheekbones and close-cropped hair mostly beneath an indigo linen headwrap. An elegant practical cream wool coat with one brick-red woven border over loose dark trousers, a single bronze fastening and soft boots; no excessive jewelry or borrowed real religious insignia. She crouches on a pale salt-flat roadside by a low carved sandstone threshold. One hand scatters coarse salt just above the ground. Where the grains land, a short trail of otherwise invisible large three-toed creature tracks becomes visible as pale upright crystal ridges and indigo-blue shadow within each depression. She is intently reading the traces, no floating hologram or magical eye device. Hard clean sunlight, ultramarine shade, chalk-white salt and warm sandstone make a very different palette. Right details: her striking thoughtful face; crystalline footprint and fingertips with salt. Fresh material-based divination, no established new race or fixed detective system.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: A deliberate surprise at the edge of Breachline: choose the particular visual language described below. Keep compelling painted materials, clear silhouette and human-scale storytelling. Fresh cultural and magical possibilities, not fixed setting facts.\nSUBJECT AND ACTION:\nDESIGN DIRECTION: sunlit desert court and mineral divination, a fresh possibility for Breachline. A dignified middle-aged Black human woman with a long strong nose, broad cheekbones and close-cropped hair mostly beneath an indigo linen headwrap. An elegant practical cream wool coat with one brick-red woven border over loose dark trousers, a single bronze fastening and soft boots; no excessive jewelry or borrowed real religious insignia. She crouches on a pale salt-flat roadside by a low carved sandstone threshold. One hand scatters coarse salt just above the ground. Where the grains land, a short trail of otherwise invisible large three-toed creature tracks becomes visible as pale upright crystal ridges and indigo-blue shadow within each depression. She is intently reading the traces, no floating hologram or magical eye device. Hard clean sunlight, ultramarine shade, chalk-white salt and warm sandstone make a very different palette. Right details: her striking thoughtful face; crystalline footprint and fingertips with salt. Fresh material-based divination, no established new race or fixed detective system.",
+      "file": "19-saltwake-diviner.png",
+      "refs": [],
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-0707430f-d9c3-4b88-b8bb-4d08d69d1e19.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/19-saltwake-diviner.png",
+      "visual_review": "Salt scattering and crystalline tracks express mineral divination; desert palette and clothing widen the visual range.",
+      "sha256": "1aa5dfe61dfb1b155f2e4e68e987d455712417fc6333cdff7769b5ad78e8cc2e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": []
+    },
+    {
+      "id": "20",
+      "key": "lacquer-tideguard",
+      "title": "Lacquer tideguard",
+      "group": "g-wild-cards",
+      "approach": "G - Three wild cards",
+      "intent": "Maritime armor and brine magic test a direction beyond the usual European fantasy wardrobe.",
+      "boundary": "An original cultural and equipment proposal, not a claim about an established faction.",
+      "brief": "DESIGN DIRECTION: an original maritime high-fantasy culture with lacquer, ceramic and restrained East Asian armor influences. A stocky adult human woman around 40 with East Asian features, a broad individual face, a small eyebrow scar and tied black hair. She wears beautifully built dark oxblood lacquered lamellar torso protection over an indigo textile coat, compact shoulder guards and practical wide trousers, one sensible belt, no enormous leather flaps or copied historical insignia. Her helmet is a simple low broad protective shape with a small salt-glazed ceramic brow tile; face visible. She stands on a storm-wet harbor stair, full-length, bracing a slender dark-wood polearm sideways toward an off-screen threat. The physical weapon has a short crescent steel head; seawater gathers along that edge into one clean translucent hard-looking extension, like a sheet of blue glass. A little spray and wet stone support the effect; no endless water ribbons, anime energy slash or modern gear. Right studies: lacquer and ceramic helmet construction; the ordinary metal edge becoming a small brine blade. Controlled energy, rich materials, a striking new silhouette.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: A deliberate surprise at the edge of Breachline: choose the particular visual language described below. Keep compelling painted materials, clear silhouette and human-scale storytelling. Fresh cultural and magical possibilities, not fixed setting facts.\nSUBJECT AND ACTION:\nDESIGN DIRECTION: an original maritime high-fantasy culture with lacquer, ceramic and restrained East Asian armor influences. A stocky adult human woman around 40 with East Asian features, a broad individual face, a small eyebrow scar and tied black hair. She wears beautifully built dark oxblood lacquered lamellar torso protection over an indigo textile coat, compact shoulder guards and practical wide trousers, one sensible belt, no enormous leather flaps or copied historical insignia. Her helmet is a simple low broad protective shape with a small salt-glazed ceramic brow tile; face visible. She stands on a storm-wet harbor stair, full-length, bracing a slender dark-wood polearm sideways toward an off-screen threat. The physical weapon has a short crescent steel head; seawater gathers along that edge into one clean translucent hard-looking extension, like a sheet of blue glass. A little spray and wet stone support the effect; no endless water ribbons, anime energy slash or modern gear. Right studies: lacquer and ceramic helmet construction; the ordinary metal edge becoming a small brine blade. Controlled energy, rich materials, a striking new silhouette.",
+      "file": "20-lacquer-tideguard.png",
+      "refs": [],
+      "status": "exploratory_pending",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-86e898b2-7957-4b1e-bb53-dbdb36ae4871.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/20-lacquer-tideguard.png",
+      "visual_review": "Lacquered armor, ceramic helmet construction and brine-extended weapon distinguish the maritime experiment.",
+      "sha256": "7cfe4a6eebdbffd1455f2682b315fbae46ba81be09c2302811b9401f8224fb01",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": [],
+      "creator_feedback": "Asian inspiration is interesting; the water pick is not exactly right. No final design approval.",
+      "reviewed": "2026-11-09"
+    },
+    {
+      "id": "21",
+      "key": "second-shadow",
+      "title": "The second shadow",
+      "group": "g-wild-cards",
+      "approach": "G - Three wild cards",
+      "intent": "An ordinary goblin has an impossible second shadow that behaves like a protector.",
+      "boundary": "A folklore-like surprise: the companion's identity and source are left unresolved.",
+      "brief": "DESIGN DIRECTION: uncanny intimate folk fantasy with visual wit, nearly no luminous effects. An ordinary adult goblin ferryman with olive-brown skin, a long blunt nose, broad pointed ears, mature wiry proportions and a gently amused lined face, in a simple ochre wool jacket and patched slate trousers. He stands at ease beside a mooring post on a modest evening quay, holding a short ordinary boat pole with both hands. A single warm lantern low at image-left casts his SMALL NORMAL goblin shadow onto the plaster wall behind him. Beside that shadow is a SECOND, MUCH LARGER impossible shadow shaped like a watchful long-eared wolf-like beast. The beast exists ONLY as a dark flat silhouette on the wall, no physical animal and no glowing outline. Its raised paw and turned head differ unmistakably from the goblin's still posture; it seems to watch the lane for him. Make the two shadows visually distinct and the impossible relationship easy to understand. No threat to viewer, cables, puppetry strings or comic expression. Warm lantern, dusk-blue quay and textured pale wall. Right details: the goblin's ordinary face; the edge of the beast shadow across wall and ground. Quiet humor and strange companionship, an original magical possibility.",
+      "prompt": "Use case: stylized-concept. Original BREACHLINE design exploration, landscape 1536x1024. A beautiful traditionally painted oil/acrylic concept plate with visible, purposeful brushwork, selective detail and consistently painted faces and materials, never photographic or glossy CGI. Main subject in a purposeful small scene occupies roughly the left two thirds; two matching design/material/face details float on warm neutral paper at right. The main vignette has enough setting to explain the action but softens into the paper; no panel frames, lettering, labels or logos. Keep complete important forms legible, avoid cropped feet/weapons. New faces, costumes and silhouettes; anatomy and craft should feel intentional. Ordinary appealing faces with individual features and a few exceptionally beautiful characters. This is a taste test, not settled lore. The world is high fantasy after an old empire's fall; no confirmed god appearing, no gold summoner scar. Magic can be personal, innate, ritual, enchanted or crafted; no compulsory visible power feed. Invent original designs, no existing franchise characters or insignia. STYLE: A deliberate surprise at the edge of Breachline: choose the particular visual language described below. Keep compelling painted materials, clear silhouette and human-scale storytelling. Fresh cultural and magical possibilities, not fixed setting facts.\nSUBJECT AND ACTION:\nDESIGN DIRECTION: uncanny intimate folk fantasy with visual wit, nearly no luminous effects. An ordinary adult goblin ferryman with olive-brown skin, a long blunt nose, broad pointed ears, mature wiry proportions and a gently amused lined face, in a simple ochre wool jacket and patched slate trousers. He stands at ease beside a mooring post on a modest evening quay, holding a short ordinary boat pole with both hands. A single warm lantern low at image-left casts his SMALL NORMAL goblin shadow onto the plaster wall behind him. Beside that shadow is a SECOND, MUCH LARGER impossible shadow shaped like a watchful long-eared wolf-like beast. The beast exists ONLY as a dark flat silhouette on the wall, no physical animal and no glowing outline. Its raised paw and turned head differ unmistakably from the goblin's still posture; it seems to watch the lane for him. Make the two shadows visually distinct and the impossible relationship easy to understand. No threat to viewer, cables, puppetry strings or comic expression. Warm lantern, dusk-blue quay and textured pale wall. Right details: the goblin's ordinary face; the edge of the beast shadow across wall and ground. Quiet humor and strange companionship, an original magical possibility.",
+      "file": "21-second-shadow.png",
+      "refs": [],
+      "status": "pending_review",
+      "generation_status": "complete",
+      "active_reference": false,
+      "method": "Built-in image_gen.imagegen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6bf19023-ee2e-4fdc-8aca-bd910fcd01d6.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/design-directions-round-06-2026-11-08/21-second-shadow.png",
+      "visual_review": "Goblin and two separate shadows read clearly; the larger animal-like shadow supplies the uncanny companion.",
+      "sha256": "6afc12209ee7a56d25bcb14abc41265b7c828c63342437a099d3d44631368119",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_provenance": []
+    }
+  ],
+  "generation_attempt_count": 22,
+  "selected_image_count": 21,
+  "verification": "Reconciled by named subject rather than display order. Original numbered sheets may have moved or been deleted; use saved_path or replacement_paths and status.",
+  "feedback_order_mapping": {
+    "user_04": "05-starwell-scholar",
+    "user_05": "04-dawnward-cavalier",
+    "user_13_to_15": "Warcraft-inspired trio, referred to as Warhammer",
+    "asian_inspiration": "20-lacquer-tideguard"
+  },
+  "revisions_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/revision-manifest.json"
+}

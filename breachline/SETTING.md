@@ -30,6 +30,14 @@ New kingdoms have been established and are generally stable, with some cracks. U
 
 **Communities:** this is a world emerging from a dark time, with established societies and the possibility of optimism. Most places are not cosmopolitan. Communities have their own local populations and identities, and some mixing is fine. Where different peoples do meet, their differences matter and are part of the setting. Lion folk generally keep to themselves. Orcs are never Vigil.
 
+### Scale and uneven capability (creator direction, 2026-11-09)
+
+Keep the setting large and varied. Great cities can coexist with smaller settlements, rural communities and less capable regions. Magic can compensate for inefficiencies in industry, enabling selected achievements that would otherwise seem out of time, including robots or constructs. Their existence does not require a uniformly modern industrial economy or equal capabilities everywhere.
+
+**Exploratory Ambrel direction:** the creator likes the city backdrop from the Cobalt duelist study as a possible larger-scale Ambrel. Its tall urban fabric, bridges, glazed arcade and magical-city character are visual references; the completed city image is not a settled street plan, map or history. Reference: [Ambrel city direction](art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png).
+
+**Tone under exploration:** the creator is interested in greater present-day capability, potentially a world less dominated by the immediate consequences of the old catastrophe and more threatened by powerful forces ahead. Dominion was raised as a possible world-threatening power. Develop these implications gently; the balance of recovery, danger and optimism remains open. The established Cataclysm and approximately 150-year interval remain unchanged by this visual exploration.
+
 ## Look
 
 The present day is high fantasy. The Bronze Age is only a historical comparison, not the look of the world.
@@ -41,6 +49,16 @@ The source of magic is disputed:
 - **Gnosis** treats magic as a science, though some of its people have religious leanings.
 
 Lands exist for gameplay only. They play no part in the setting's history or conflicts.
+
+### Working boundaries of magic and craft (creator direction, 2026-11-08)
+
+Magic is not inherently dependent on physical equipment. People and creatures can wield it, and items can also be imbued with magical energy that users harness. No single method is the default for all magic; a visible caster directly feeding an effect or machine is not required.
+
+Magic and industry can meet in particular crafts and devices, but they are not inseparable throughout the setting. The accepted field loom and harmonic wardwright are positive examples, not a universal production system or equipment standard.
+
+For aerial travel, the creator prefers flying creatures or explicitly magical flight to mechanical/magitech hovering vessels. The floating freight barge concept is rejected; detailed flight abilities and their prevalence remain open.
+
+**Under review:** a large walking crane driven by steam, possibly with magic supplying heat or power for the steam. The exact magical input, operating limits and prevalence are not established.
 
 ## Summoners
 
@@ -217,6 +235,7 @@ Alignments are outlooks and don't map neatly onto states or factions. Hybrid car
 - **Politics:** prefers smaller bands with democratic streaks, closer to a Cossack host than to a modern state.
 
 ### Genesis (green)
+- **Society:** Genesis has societies and settlements, including villages in forests and homes in trees. Its inhabitants are not all tree people or animals; humans, households and community life belong here too. Specific village designs and customs remain open.
 - **Wants:** to live in nature, in small bands, with no return to the empire.
 - **Believes:** Gnosis would destroy the land for industry, Fervor is destructive, and Vigil is on a fool's errand.
 - **At its extreme:** some of its people act as eco-terrorists.

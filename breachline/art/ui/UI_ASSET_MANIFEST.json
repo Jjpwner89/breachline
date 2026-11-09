@@ -1,0 +1,798 @@
+{
+  "project": "Breachline",
+  "created": "2026-11-09",
+  "status": "Generated; awaiting creator review and UI implementation",
+  "generation_mode": "Built-in image_gen",
+  "brief": "../UI_ART_BRIEFS.md",
+  "assets": [
+    {
+      "filename": "ui-table-oak.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-0c52b504-96f1-481d-83c8-759e1647fe35.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: weathered field-oak tabletop. Size 1536 x 1024, landscape 3:2. A tabletop of weathered field oak seen from directly above, filling the whole image edge to edge with no table edge visible. Long planks running left to right, each about a hand wide, with tight seams between them. Grey-brown oak that has stood outdoors on campaign: silvered grain, faint water rings, a few knife nicks, rubbed patches where hands and maps have slid, the odd dark iron nail head. Even, flat light with no hotspot. Muted and low in contrast, so a lighter linen map laid on top stands clearly off it. No map, no objects, no grid.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2698449,
+      "sha256": "bd8884d04b64408e939f4ac15afd09c563392f4770bcaf8ad1046e0de1853872",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-table-linen-map.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-564391d1-c878-4058-aa8f-94865707ba12.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: blank linen war map. Size 1536 x 1024, landscape 3:2. A sheet of unbleached linen stretched flat and tacked down at its edges, seen from directly above, filling the frame with a narrow margin of dark wood showing all round. The linen is a field commander's war map in its blank working state: warm oatmeal cloth with a visible but quiet weave, two very soft fold creases crossing it, faint water and ink stains, and very faint inked hatching suggesting hills and a river near the edges only. The middle 80% stays plain and calm, because a grid and paintings will be placed there. The edges are turned under and held by small iron tacks at even spacing. No grid, no lines across the middle, no compass, no lettering.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 3302112,
+      "sha256": "2a33398a8c53f1f36065149d0f513dce6bee92bb6ca8bf2d52a3b840ba36d738",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-frame-iron.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-87bdb4eb-b9b4-4e38-9af9-5e28ad261093.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: empty card frame PNG, 1024 x 1536 portrait, genuine transparent background. An empty card frame seen straight on: blackened, hand-forged iron with a soft bevel, gently rounded corners and slight wear at the edges where the black has rubbed back to dark metal. A thin line of gold trim runs just inside the iron border all the way round, catching soft light on its upper left. Modest, restrained shaping at the four corners, no faces, creatures, gems or scrollwork. The border is about one fifteenth of the card's width on every side. The entire frame is visible with a small transparent safety margin. Everything inside the gold line is empty transparent alpha, as is everything outside the frame. No interior artwork or paper. Single simple rectangular opening, no internal dividers or bars. Actual transparent pixels, not a painted checkerboard.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1024,
+      "height": 1536,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1307625,
+      "sha256": "2845cec2b108c2d340737e1b7cf942d9a93c4d82363b9be3f6994e570eb8d1e2",
+      "has_alpha": true,
+      "center_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "corner_rgba": [
+        [
+          109,
+          101,
+          88,
+          0
+        ],
+        [
+          56,
+          52,
+          46,
+          0
+        ],
+        [
+          50,
+          43,
+          38,
+          0
+        ],
+        [
+          49,
+          44,
+          38,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 1289174,
+      "transparent_fraction": 0.819635,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 24,
+          "y": 40,
+          "width": 975,
+          "height": 1458
+        }
+      ]
+    },
+    {
+      "filename": "ui-card-paper.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-d00dfdb5-7dde-4c87-9b23-101931f42119.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: blank card rules-paper material, 1024 x 1024 square, opaque edge to edge. A flat sheet of warm, slightly uneven handmade paper filling the frame, seen straight on in even light. Pale cream with very faint fibres and the gentlest mottling, no stains, folds, edges or vignette. Quiet enough that small black text printed on it stays perfectly readable. Nearly even pale value and restrained painted surface; nothing placed on the paper.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2305368,
+      "sha256": "5afe21b203371d3f63a1849deaa5ed0f6a2ca2fcf17128d739657328aa1b5536",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-home-strand.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-a2735ae0-4965-466d-8118-c95706f92abf.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Generate ONE new interface overlay asset, size 1536 x 1024 landscape, on opaque PURE BLACK RGB 0,0,0. The attached painting is a REFERENCE ONLY for the gold strand's delicacy and gentle irregular curvature. Do not reproduce its scenery, figure, colored planes or bright sun. A single fine gold strand of light on pure black background, nothing else. It enters low at the lower left and rises in one long, gentle, slightly wavering curve toward the upper right, where it fades out into nothing. Thin like a thread seen from far away, with a soft narrow warm glow around it and a few places where it brightens and thins. Delicate and calm, not a lightning bolt, rope, beam or swoosh. Only one strand; pure black everywhere else, no stars, clouds, particles, texture, words, logos or watermark. The strand should feel softly painted and natural, not a mechanical vector line.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/campaign-2026-11-05/20-experiment-unmeasured-distance.png"
+      ],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 362773,
+      "sha256": "1011bda6d9743349557c2ad3de4f7a067dcc200b3168f894749e1e0ec0e7eb4c",
+      "has_alpha": false,
+      "center_rgba": [
+        0,
+        0,
+        0
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "near_black_background_fraction": 0.988045
+    },
+    {
+      "filename": "ui-home-battlefield.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-99dda2e8-357d-414b-94f9-7654ee3a62eb.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: full-bleed home screen landscape background, wide 16:9 at 2400 x 1350 or the largest supported landscape shape. A wide, quiet battlefield at dusk, the evening after a battle on open rolling ground. Nobody is in the scene. Broken spears and a few abandoned shields lean in the grass of a low rise in the middle distance; thin smoke rises from a couple of places and thins out; distant hills fade into haze. The battle belongs to no particular side: no banners, emblems or alignment colours. The sky fills the top half and carries the colour: deep blue overhead warming to violet and magenta, with a thin warm glow low on the horizon. Leave a clear, open band of sky running from the lower left up to the upper right, where a single gold strand will later be added; DO NOT paint the strand or any diagonal light streak. Keep the left third of the picture darker and simpler, because the menu sits there. Quiet, melancholy and beautiful rather than grim: aftermath, not carnage, with no bodies. No UI, text, borders or foreground people.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 1878598,
+      "sha256": "579c83dcbc7c1068899730bee65b6d6d8364530e97cc2b0031d6dc582b63f5ff",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-titlebar-crimson.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-c27fa7c9-139e-4c0c-b042-7324a38a7ea4.png",
+      "revision": 1,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: crimson titlebar material. Wide landscape texture. Prefer 1536 x 256; if unsupported use a 1536 x 1024 sheet whose middle can be cropped to a shallow strip. A flat strip of deep crimson lacquer or enamel filling the whole frame edge to edge, seen straight on. Rich, dark red with gentle depth and a soft horizontal highlight along its upper edge, like a polished enamelled bar. Even from left to right so it can repeat. No border, ornament or texture beyond the lacquer itself. Opaque. No margins, bevelled frame, corner ornaments or background objects.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 2172,
+      "height": 724,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 1682211,
+      "sha256": "b0849ea94497f814cad3061979d9e9ce9bd9c9448e52939513c883582072d341",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-cost-coin.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-fe1e365a-0a66-499e-ad1b-afaf6215f445.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: blank cost coin, 1024 x 1024 square transparent PNG. A single struck gold coin seen straight on, centered, filling most of the frame with a clear safety margin. A raised, slightly worn rim and a smooth, blank, gently domed face, where a number will be added later. Warm, slightly aged gold with soft light from the upper left. No emblem, profile, lettering, ring of dots or pattern on the face. Genuine transparent alpha outside the coin. No ground plane or cast shadow.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2441493,
+      "sha256": "2522b16604bee0688bcd1b1c7e337d6207c41d65a1f9f51c1433f06ab1a131ae",
+      "has_alpha": true,
+      "center_rgba": [
+        206,
+        158,
+        58,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 539834,
+      "transparent_fraction": 0.343293,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 49,
+          "y": 44,
+          "width": 1136,
+          "height": 1157
+        }
+      ]
+    },
+    {
+      "filename": "ui-panel-parchment.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-d9bfe927-1239-4358-abf0-625fa7863cd7.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: parchment panel cutout, 1536 x 1024 landscape transparent PNG. A single blank sheet of heavy parchment seen straight on, filling most of the frame with complete edges visible and a transparent safety margin. Softly deckled and slightly torn edges and one corner gently curled. Warm cream in the middle, darkening a little toward the edges with age. No writing, seals, folds across the middle or stains in the centre, which must stay plain for text. Keep the center evenly pale with calm broad brushwork. Genuine alpha transparency outside the parchment, no ground plane or cast shadow.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2692443,
+      "sha256": "cb64b4744959ab9fb1e72d4b9950cac1c89ca5c69c6d8d12b33e80d856c43694",
+      "has_alpha": true,
+      "center_rgba": [
+        240,
+        217,
+        174,
+        253
+      ],
+      "corner_rgba": [
+        [
+          158,
+          123,
+          74,
+          0
+        ],
+        [
+          96,
+          77,
+          45,
+          0
+        ],
+        [
+          163,
+          125,
+          84,
+          0
+        ],
+        [
+          153,
+          119,
+          73,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 159874,
+      "transparent_fraction": 0.101645,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 18,
+          "y": 23,
+          "width": 1498,
+          "height": 976
+        }
+      ]
+    },
+    {
+      "filename": "ui-buttons-wood.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-5e77840a-59f8-4e22-b64d-cb91e64a9e40.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: two blank button sprites on one 1536 x 1024 landscape transparent PNG sheet. Seen straight on and spaced well apart, each a wide rounded rectangle about four times as wide as it is tall. Top: carved dark oak with a shallow bevelled edge and a thin brass rim, the wood grain running lengthwise, matte and worn smooth by hands. Bottom: the same carved oak shape, but with a gilded rim and a thin gilded inner line, catching warm light, for the most important action. Both faces are plain and calm, with no carving in the middle where a word will go. Precisely two buttons stacked with generous transparent space between and around them, matching widths. No other objects. Genuine alpha transparency outside the objects; no floor, cast shadows or checkerboard painted into the image.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2090494,
+      "sha256": "a434e8ac87ad888ec787ef25743406c77f9bd8e38086309a59f0636385e0e2b0",
+      "has_alpha": true,
+      "center_rgba": [
+        119,
+        89,
+        44,
+        0
+      ],
+      "corner_rgba": [
+        [
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 682390,
+      "transparent_fraction": 0.433852,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "standard",
+          "x": 71,
+          "y": 155,
+          "width": 1391,
+          "height": 310
+        },
+        {
+          "name": "primary",
+          "x": 70,
+          "y": 562,
+          "width": 1397,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "filename": "ui-medallion-iron.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-62be04c3-6dab-4fbf-9b80-b9bd2b30d1da.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: blank iron medallion cutout, 1024 x 1024 square transparent PNG. A round medallion of blackened iron seen straight on, centered and filling most of the sheet with a clear safety margin. A raised gold rim and a smooth, slightly recessed, blank centre where an emblem will be added later. Matches a blackened-iron card frame with thin aged gold trim: dark forged metal, soft bevel, slight edge wear, softly brushed material. No emblem, face, engraving, decoration or pattern. Genuine transparent alpha background, no ground plane and no cast shadow.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2026633,
+      "sha256": "dd7a82e3234d1962910da30215b8bf655f132c85d903423b2b7039d904ef5b9a",
+      "has_alpha": true,
+      "center_rgba": [
+        71,
+        69,
+        69,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 491047,
+      "transparent_fraction": 0.312268,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 35,
+          "y": 47,
+          "width": 1163,
+          "height": 1174
+        }
+      ]
+    },
+    {
+      "filename": "ui-turn-banner.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-6778658e-1884-4608-81c2-9ad9788bcc7d.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: blank linen turn banner. Wide 3:1 landscape transparent PNG, preferably 1536 x 512 or largest supported 3:1 size. A long horizontal strip of unbleached linen cloth seen straight on, as if pinned flat across a table: plain in the middle, with frayed, torn ends at left and right and a gentle wave along its length. Warm oatmeal colour matching a linen war map. Calm, softly painted weave; broad blank evenly lit middle for words. No writing, emblem, decorative stitching, tassels, cords or extra objects. Whole cloth visible with generous transparent safety margin on all four sides. Genuine alpha outside the cloth, no floor or cast shadows.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 2172,
+      "height": 724,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1920950,
+      "sha256": "d4b580f6f347e8b137d9dae92aa3b92c1a10b41f3db9eae0424efc2fcd1c3943",
+      "has_alpha": true,
+      "center_rgba": [
+        197,
+        168,
+        128,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 785909,
+      "transparent_fraction": 0.499774,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 43,
+          "y": 147,
+          "width": 2076,
+          "height": 434
+        }
+      ]
+    },
+    {
+      "filename": "ui-mana-gems.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-04a3ac91-cb90-4715-aa7b-552743b6b9e4.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: six separate mana gems on ONE 1536 x 1024 landscape transparent PNG sheet. Precisely SIX small cut gemstones arranged in a SINGLE HORIZONTAL ROW with plenty of space between them and generous transparent margins. All the same size and same rounded cushion cut, straight on in soft upper-left light. Left to right: 1 warm gold topaz; 2 deep sapphire blue; 3 dark violet amethyst; 4 ember red garnet; 5 moss green peridot; 6 smoky grey quartz. Each has gentle inner glow and one soft highlight, controlled broad painted facets. No settings, metal or background objects. Six only, all whole and separate. The numerals are instructions only: never paint labels or numbers. Actual transparent pixels around and between gems, no floor or cast shadows.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1085653,
+      "sha256": "f0c4e379ca91b7cf2199d3b016fed1c137ee7e058d84bedb94926fe5df58e9b5",
+      "has_alpha": true,
+      "center_rgba": [
+        80,
+        44,
+        69,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 1375898,
+      "transparent_fraction": 0.874772,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "topaz",
+          "x": 50,
+          "y": 417,
+          "width": 187,
+          "height": 190
+        },
+        {
+          "name": "sapphire",
+          "x": 299,
+          "y": 417,
+          "width": 187,
+          "height": 190
+        },
+        {
+          "name": "amethyst",
+          "x": 549,
+          "y": 417,
+          "width": 188,
+          "height": 190
+        },
+        {
+          "name": "garnet",
+          "x": 800,
+          "y": 417,
+          "width": 189,
+          "height": 190
+        },
+        {
+          "name": "peridot",
+          "x": 1050,
+          "y": 417,
+          "width": 189,
+          "height": 190
+        },
+        {
+          "name": "quartz",
+          "x": 1299,
+          "y": 417,
+          "width": 188,
+          "height": 190
+        }
+      ]
+    },
+    {
+      "filename": "ui-table-props.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-8f8fb02d-fec5-4f95-aa95-9cdc813a50fe.png",
+      "revision": 2,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: FOUR separate table props on one 1536 x 1024 landscape transparent PNG sheet. A tidy 2 by 2 layout with generous transparent gaps, objects roughly similar footprint. DIRECTLY OVERHEAD, top down, as if lying on a field commander's map table, orthographic with no horizon. Top left: a heavy round iron map weight with a worn ring handle lying low. Top right: a short candle stub in a shallow iron dish, UNLIT, with old drips of wax. Bottom left: a small squat inkwell of dark glass with a plain cork. Bottom right: a second map weight, a rough wedge of dark stone bound with an iron band. Each object casts NO SHADOW on the sheet; the game will add shadows. All FOUR complete objects separated, no table, ground, pen, paper or other props. Genuine alpha background.",
+      "referenced_image_paths": [],
+      "revision_prompt": "Use case: precise-object-edit. Edit this painted transparent table-prop sheet. Preserve its FOUR objects, their materials, softly painted brushwork, relative layout and subdued palette. Correct ONLY their viewing angle to STRICTLY VERTICAL OVERHEAD, camera looking exactly 90 degrees down at a flat table, orthographic. All horizontal circular surfaces must project as circles, never ellipses. The bottle cork is a circle centered concentrically on a short dark glass circular shoulder; no tall front bottle wall visible. The unlit candle top is a circle centered concentrically within its circular shallow dish; do not show a tall front candle wall. The ring-handled round iron map weight remains top left; candle dish top right; corked dark glass inkwell bottom left; iron-bound dark stone weight bottom right. Make the band follow the stone's top surface. Separate objects with ample transparent space and safety margins. True transparent alpha outside and between all four objects, no ground, shadows, smoke or background. No text. Keep 1536 x 1024 landscape.",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2279564,
+      "sha256": "287353fb3b3571bf156a98c0ff9725c561827db0a7521267cbe8b15a9c62a2db",
+      "has_alpha": true,
+      "center_rgba": [
+        39,
+        37,
+        33,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 856009,
+      "transparent_fraction": 0.544236,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "iron_map_weight",
+          "x": 146,
+          "y": 20,
+          "width": 469,
+          "height": 484
+        },
+        {
+          "name": "candle",
+          "x": 811,
+          "y": 26,
+          "width": 570,
+          "height": 471
+        },
+        {
+          "name": "inkwell",
+          "x": 174,
+          "y": 547,
+          "width": 410,
+          "height": 419
+        },
+        {
+          "name": "stone_map_weight",
+          "x": 769,
+          "y": 537,
+          "width": 625,
+          "height": 453
+        }
+      ]
+    },
+    {
+      "filename": "ui-stat-plaques.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-8e5415af-eb55-43df-9b97-5cc5e2c0baed.png",
+      "revision": 1,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: two blank card stat plaques on one 1536 x 1024 landscape transparent PNG sheet. TWO small blank plaques seen straight on and spaced apart left and right with ample margin, each a rounded rectangle slightly wider than tall, approximately 1.25:1. Both have a thin raised gold edge. Left: deep crimson enamel. Right: dark blackened iron. Both faces smooth, blank and calm, where a number will be added later. They match a blackened-iron card frame with gold trim. Same dimensions and corner shaping. No symbols, text or decoration. Actual transparent background all around and between the two objects, no shadows or floor.",
+      "referenced_image_paths": [],
+      "revision_prompt": null,
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1662896,
+      "sha256": "810e0984eafb28d0d3e3eb4ddf1b2927b85809088c48893b37c4c9e1360abe00",
+      "has_alpha": true,
+      "center_rgba": [
+        131,
+        92,
+        45,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 911256,
+      "transparent_fraction": 0.579361,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "crimson",
+          "x": 59,
+          "y": 267,
+          "width": 653,
+          "height": 489
+        },
+        {
+          "name": "iron",
+          "x": 823,
+          "y": 267,
+          "width": 653,
+          "height": 489
+        }
+      ]
+    },
+    {
+      "filename": "ui-card-back.png",
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-04757edf-1718-4c70-ab8f-e8fc8228b47b.png",
+      "revision": 2,
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Create one original production PNG asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings and must look painted in the same hand: visible but quiet, finely controlled directional brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic. Keep it calm, low contrast, a limited palette and no busy detail. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain. Include no text, letters, numbers, runes, logos, watermarks or signatures. Unless specified otherwise, straight on, evenly lit from the upper left, no perspective, vignette or dramatic shadow. This is a blank UI material or furniture asset, not a finished UI mockup.\nAsset: finished playing card back, 1024 x 1536 portrait, opaque edge to edge. The back of a playing card for a high-fantasy card game seen straight on and filling the frame. A blackened iron border with thin gold trim and gently rounded restrained corners, matching the card fronts. Inside a deep night field of blue fading to violet, with a SINGLE fine gold strand crossing it in a long gentle curve from lower left to upper right, faintly glowing. Quiet, elegant and simple enough to read at small size. The border and overall design are balanced for either end up; design the single diagonal curve with calm half-turn balance. Finely controlled quiet oil/acrylic brushwork. No lettering, emblems, faces, extra threads, stars, ornamental scrollwork or gems. No drop shadow or scene outside the card.",
+      "referenced_image_paths": [],
+      "revision_prompt": "Use case: precise-object-edit. Edit this playing-card back image with ONE tiny correction only: remove the small white background wedges at the four extreme corners. Continue the existing blackened-iron material into those corners so the image is an OPAQUE full-bleed rectangle from edge to edge, with NO white or transparent pixels or exterior background. Preserve the thin gold trim, its curved corner line, the deep blue and violet painted interior, the single fine gold strand, current composition, painting texture and all other content exactly. Do not add any objects, symbols, text or decoration. Preserve 1024 x 1536 portrait dimensions.",
+      "width": 1024,
+      "height": 1536,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2126614,
+      "sha256": "9a4d0f24c5ed79679eec66195afc4146f8fe76be64086586d4b56d9b82c38271",
+      "has_alpha": false,
+      "center_rgba": [
+        86,
+        73,
+        87
+      ],
+      "corner_rgba": [
+        [
+          53,
+          54,
+          52
+        ],
+        [
+          43,
+          43,
+          42
+        ],
+        [
+          43,
+          41,
+          43
+        ],
+        [
+          41,
+          41,
+          41
+        ]
+      ]
+    }
+  ],
+  "scope": "16 original source PNGs. No web derivatives, texture seam preparation, sprite crops or game code changes. Integration follows the existing UI art briefs."
+}
