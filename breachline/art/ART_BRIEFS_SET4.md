@@ -1,15 +1,15 @@
 # Breachline card art briefs: set 4
 
-26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06 and revised the same day against the reference library and the creator's Set 3 and campaign reviews. **Status: all 26 illustrations generated on 2026-11-06, with 1536 x 1024 PNGs and 768 x 512 JPEGs; awaiting creator review.** See [the complete gallery](SET4_GALLERY.html), [prompts and selected files](ART_PROMPTS_SET4.json), and [file validation](SET4_VALIDATION.json). The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
+26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06 and revised the same day against the reference library and the creator's Set 3 and campaign reviews. **Status: all 26 illustrations generated on 2026-11-06, with 1536 x 1024 PNGs and 768 x 512 JPEGs; creator review applied through 2026-11-08: the first huntress is restored, the squire and adept reworks are liked, and the latest shieldbearer and giant corrections await feedback.** See [the complete gallery](SET4_GALLERY.html), [prompts and selected files](ART_PROMPTS_SET4.json), and [file validation](SET4_VALIDATION.json). The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
 
 Sellsword, Oath knight, Orc warchief and Hill giant already have paintings, so they have no briefs here. Add finished images to `CARD_ART_FINAL.json` once approved, since that file is the definitive selection of card art.
 
 ## Instructions for the image generator
 
 1. If you have access to the project, read `.claude/skills/art-direction/SKILL.md` first, along with the peoples catalogue in `breachline/SETTING.md` and `reference-library-2026-11-06/README.txt`. The creator's latest feedback overrides these briefs. That skill's "avoid red capes", "rain only when briefed" and "Repetition to watch" notes are not rules for this set: the creator confirmed on 2026-11-06 that they never asked for them. A brief's pose or staging can change to serve the direction, but keep its subject and its gameplay idea.
-2. Generate one image per heading, using the shared direction below plus that card's brief. Attach only the reference sheets listed for that card, with paths relative to this `art/` folder. Exact combined prompts are in `ART_PROMPTS_SET4.json`.
+2. Generate one image per heading, using the shared direction below plus that card's brief. Attach only the reference sheets listed for that card, with paths relative to this `art/` folder. Original generation prompts and subsequent creator-requested revision prompts are in `ART_PROMPTS_SET4.json`; current briefs and feedback override historical prompts.
 3. Save a 1536 x 1024 landscape PNG in the `art/` folder under the name in the heading, and a 768 x 512 JPEG of the same name in `art/web/`.
-4. Skip any card whose file already exists, and never overwrite existing art. No file name here matches an existing painting.
+4. For initial generation, skip existing files. The creator's later revision requests authorize replacing the specifically reviewed images; preserve all unrelated art and keep one selected PNG/JPEG pair per card.
 5. Use `sunmane-lancer.png` for painted material quality only, not its pose, framing, sky or colour.
 6. If you can't generate images, stop and say so. Don't substitute placeholders or images from the web.
 
@@ -25,7 +25,7 @@ Create one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PN
 
 ART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.
 
-Tell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
+Tell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Combat is generally lateral and nothing is aimed at the viewer. Enemies may be on screen occasionally, but remain secondary to the principal action or magical effect. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
 
 Use a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.
 
@@ -54,7 +54,7 @@ Alignment can be clear without being heavy-handed, and emblems don't need to app
 
 **References:** `reference-library-2026-11-06/people/01-humans.png` (anatomy and painted treatment); `reference-library-2026-11-06/equipment/09-vigil-equipment.png` (how padded Still Flame gear is constructed)
 
-An ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.
+An ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, supports a limping soldier as they move together along a dusty road. His nearer arm lies across her shoulders and her right arm supports his waist; her left arm carries a tall plain wooden shield on the outer side of the pair, with one spent arrow in its rim. Use a simple shared walking step, coherent hip and shoulder alignment and a natural head turn. Both figures have two arms and two legs; avoid a backward belt reach, twisted spine or reversed knees. The soldier is secondary and loosely painted. Warm pale dust, ivory, clean blue sky and a single low roadside bank. Her ordinary protective action is the subject. Her shield-carrying hand grips an unseen rear handle and is completely occluded by the wooden shield; no fingers or thumb wrap around its visible edge. Preserve the separate supporting hand at the soldier's waist.
 
 ### Pride huntress: pride-huntress.png
 
@@ -62,7 +62,7 @@ An ordinary white woman of about twenty-five, broad-faced and sunburnt with a cr
 
 **References:** `reference-library-2026-11-06/people/02-lion-folk.png` (feline skull, mane, hands and build)
 
-A lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears a plain linen tunic with a single leather guard on her spear arm. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.
+Use the FIRST Set 4 Pride Huntress painting, which the creator prefers: a closer crouching lion folk huntress in ochre dawn grass, with a dignified lion head, braided full mane, simple linen tunic, one leather forearm guard, a low level spear and an open signaling hand. A second hunter remains loosely painted in the distant grass. Preserve this closer composition and golden/violet painted treatment. Reject the subsequent wide revision with an extra leg. Exactly two legs, with a coherent crouch; do not force another wider framing solely to satisfy the older brief.
 
 ### Pride matriarch: pride-matriarch.png
 
@@ -96,7 +96,7 @@ A narrow city lane at blue hour. A slim duellist made of lamplight lunges side-o
 
 **References:** `reference-library-2026-11-06/people/01-humans.png` (painted treatment of ordinary people)
 
-An open market square closing at dusk, in a wide view showing two whole figures about ten paces apart. A young white man with a long, narrow face, in a quilted teal waistcoat over rolled shirtsleeves, has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad porter holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.
+Rebuild the entire scene as a grounded traditional fantasy painting. The creator rejects its animated-film appearance across staging, lighting, palette and rendering, not merely the adept's face. Use an oblique, asymmetrical view of a sparsely implied closing market with a lean young adult man in a faded teal waistcoat moving diagonally away, his attention turned to a displaced crate-carrying porter several paces behind. Each has brought the other's light along: muted amber indoor light lies in a soft patch on the adept and pavement, while cool slate-blue dusk crosses the porter and crate. Light belongs to surfaces rather than glowing body outlines. Restrained slate, umber, desaturated teal and small amber passages; irregular expressive oil brushwork, lost edges, natural proportions and weight. No jaunty two-person stage pose, toy-like scenery, glossy gradients, neon auras, portals or runes.
 
 ### Conclave examiner: conclave-examiner.png
 
@@ -138,7 +138,7 @@ An extremely low viewpoint at ground level on grey ash under cold moonlight. Thr
 
 **References:** `reference-library-2026-11-06/people/08-humans-additional-faces.png` (an ordinary young adult, as a starting point only)
 
-A gangly white young man of about nineteen, with a plain, hopeful face and large ears, stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. Far behind him, a few thin, grey older squires wait in silence along a wall, loosely painted. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.
+A gangly white young man about nineteen with ginger curls, freckles and an ordinary youthful face has another violet knotted cord tied around his wrist by a grey-gloved clerk. His armour is poor and ill-fitting: a faded padded jack, one small dented iron shoulder plate and a little worn mail, with a plain scuffed belt. No polished engraved breastplate or expensive matched armour. He holds a sword awkwardly and looks toward the wrist with apprehension, slightly hunched shoulders, knitted brows and a tense uncertain mouth. He is visibly more scared, not admiring the bargain. A few thin older squires wait loosely painted against a plain oppressive courtyard wall. Cold grey daylight with violet accents; natural simple hands and economical facial detail.
 
 ### Hunted: hunted.png
 
@@ -178,7 +178,7 @@ An elderly white priest in a plain grey cassock with one dull violet stole kneel
 
 **References:** none needed
 
-In a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.
+A faceless, heavy-shouldered earthen colossus about three adult human heights stands in a quiet fallow field, fitting another ordinary helmet into its shoulder. Human equipment must retain human scale: helmets about 28 cm tall, roughly one twentieth of the colossus's height; human shields about 60 cm across and long bones about 45 cm. The held helmet is small between its broad fingers. Packed earth dominates its body, with small, partly buried pieces at varied depths; no enormous helmets forming shoulder plates. An ordinary crow and a human-sized spade near its foot establish scale on the same ground plane. Medium-wide rear/side view, simple low horizon, rust, bone and grey-brown earth, broad painting and quiet overcast light.
 
 ## Fervor
 
@@ -202,9 +202,9 @@ A high view down into a narrow valley at deep indigo dusk. A single slow column 
 
 *Unit, cost 6. Frenzy: stronger while damaged.*
 
-**References:** `reference-library-2026-11-06/people/05-giants.png` (giant face and proportions); `reference-library-2026-11-06/people/04-orcs.png` (the orc's coarse nonhuman face)
+**References:** `reference-library-2026-11-06/people/05-giants.png` (species anatomy only; use a new composition, never the rejected spear-pulling painting)
 
-A wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. She has grey braids and a heavy, human-like face with a broad nose. An old wagon tarp, belted as a cloak and pinned with a bent plough blade, is her only armour, and there's very little blood. A coarse, heavy-browed orc with irregular tusks struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.
+Use the creator-preferred full-body composition: an older, thickset female giant with a broad weathered face and one grey braid drives uphill toward an off-screen enemy to the right, roaring a rallying cry. She wears a short practical ivory tunic, loose charcoal trousers, worn boots and a patchwork rust-red cloak. A lightly stained upper-arm wrap, small brow cut and torn sleeve convey injury secondarily. No embedded spear, bloody stick or wound-pulling action. Show a coherent side-on three-quarter stance with aligned torso and hips: the leading leg is clearly connected from hip to planted boot on a low stone ledge, and the trailing leg pushes from lower ground; both feet point uphill. Keep the legs separated and both feet fully in frame. Preserve the creator-preferred pose and both arm positions. Her anatomical right hand, the near hand low beside her hip at image-left, holds a slender young tree trunk fashioned into a spear. Its front is shaved into a rough pale wooden point, with retained bark, a few short snapped branch nubs and subtle exposed roots at the butt. No metal spearhead or decoration. Keep the spear below the other raised fist, which remains visible in its original pose. Only adjust the gripping fingers locally; do not change the body, stance, legs, arms or other hand. A low human-built dry-stone breastwork breaks under her step; wind, dust, falling stones and a few distant arrows imply battle. No supporting figures in this new design. Warm light on ivory cloth and face against cool slate shadow, muted olive-grey ground and a small blue sky opening. Broad economical paint, selective detail, natural hands and a clear silhouette. The prior painting and all its local hand/spear corrections are rejected and must not be used as the composition reference.
 
 ## Genesis
 
@@ -290,12 +290,12 @@ These were checked against recent art. The adept moved off a quay, because the C
 
 | Card | Framing | Light |
 | --- | --- | --- |
-| Oath shieldbearer | Full body, rear three-quarter | Flat noon sun on pale dust |
-| Pride huntress | Wide, whole figure small in frame | Low dawn light through dry grass |
+| Oath shieldbearer | Full body, natural shared supporting step | Flat noon sun on pale dust |
+| Pride huntress | Preferred first closer crouch, secondary hunter behind | Low dawn light through dry grass |
 | Pride matriarch | Full body, low viewpoint | Late afternoon sun reflected off moving water |
 | Sifting the shallows | Close, hands and forearms only | Single amber lantern against cool dusk water |
 | Conclave phantasm | Full body, side-on, with small figure behind | Shop window lamplight at blue hour |
-| Threshold adept | Wide, two full figures | Two kinds of light in one scene, warm interior and cool dusk |
+| Threshold adept | Oblique diagonal view, irregular painted staging | Muted amber and slate-blue patches displaced between figures |
 | Conclave examiner | Seated full figure, profile | Clear neutral morning daylight |
 | Brass siege-walker | Wide, complete machine with small operator | Clear dry late-day sky |
 | Ilvane, Who Asks Twice | Full body, very tall, wide negative space | Small hanging lamp in a dim colonnade |
@@ -308,7 +308,7 @@ These were checked against recent art. The adept moved off a quay, because the C
 | Barrow colossus | Wide, full body, rear three-quarter | Flat overcast light on a fallow field |
 | Goblin firepot | Full body, low angle | Hard noon sun and a clear blue sky |
 | Cinderfall | Grand landscape from a high viewpoint | Deep indigo dusk lit by falling embers |
-| Giant chieftain | Full body, wide, side-on, small figures for scale | Bright, windy, cloud-shadowed ridge |
+| Giant chieftain | Preferred full-body uphill pose; held tree spear; no supporting figures | Warm sunlight against cool slate storm shadow |
 | Thicket boar | Full body, side-on, close to the ground | Dappled late morning forest light |
 | Grove tender | Full body, wide stance, two figures | Hard shafts of light through a torn canopy |
 | Mossback bear | Full body, three-quarter from behind | Golden evening light on a cold stream |

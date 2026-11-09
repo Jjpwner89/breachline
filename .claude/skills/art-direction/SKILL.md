@@ -11,7 +11,17 @@ The creator's latest feedback and the approved art direction take precedence ove
 
 Preserve the intended card subject, gameplay idea and established lore unless the creator changes them. Specific creator changes also override those details, as with the Cinder berserker's male redesign. Do not use an old brief or historical prompt to undo later feedback.
 
-Current workflow (2026-11-06): Set 3 added 34 prospective equipment, relic, unit and spell illustrations; apply the creator's review below. Art concepts are separate from implemented game cards. For later completion requests, audit the current card list and available art again rather than trusting historical counts. The creator welcomes the full batch together for review.
+Current workflow (2026-11-08): Set 4 art is generated with creator feedback recorded below; the retained Set 3 collection remains finalized. Set 5 has 12 new briefs in `breachline/art/ART_BRIEFS_SET5.md`. For the next card batch, read this skill first, then the current setting, reference-library selections and that batch's briefs. Audit current cards and available art rather than trusting old counts. The creator welcomes the full batch together for review.
+
+## Applying this direction to new cards
+
+- Use the latest creator feedback and current briefs; original generation prompts and discarded attempts are historical records. A card-specific choice stays specific to that card.
+- Check connected anatomy and physical contact before selecting an image: trace hips through knees and ankles to feet, check the number and connection of limbs and fingers, and make grips, support, shields and object overlaps physically coherent. Judge the whole pose, not isolated body parts.
+- Keep scale consistent through familiar objects and a shared ground plane. Helmets, weapons and secondary people must support the subject's size rather than contradict it.
+- Assess painted style across the whole scene: staging, lighting, palette, edges and detail should belong together. A face-only retouch does not fix an animated-film appearance caused by the full composition.
+- For a requested local edit, preserve the approved pose and unaffected parts. Specify anatomical left/right together with screen position and the hand's role. Fit a new prop to the existing pose, and inspect both hands and legs again afterward. If the creator rejects the underlying composition or concept, replace it rather than accumulating local repairs.
+
+The current Set 4 selections and review status are in `breachline/art/ART_PROMPTS_SET4.json`; exact revision history is in `ART_REVISIONS_SET4_2026-11-07.json` and `ART_REVISIONS_SET4_2026-11-08.json` in the same folder. The liked squire, adept and giant's uphill pose are positive references, not templates for every new card. The giant's tree-spear addition remains the latest review version; liking the base pose is not blanket approval of later edits or new lore.
 
 These instructions, the setting catalogue and saved prompt records are the durable handoff for another account or assistant; do not rely on access to this chat.
 
@@ -20,6 +30,17 @@ The creator fell in love with Magic: The Gathering's painted fantasy art, and th
 The Sunmane lancer image (`breachline/art/sunmane-lancer.png`) was the creator's first approved image. Use it for painted material quality only, not as a template for pose, crop, palette, cape, background or sky. For Set 2 use `breachline/art/ART_BRIEFS_SET2.md`; do not import the superseded style block from `ART_BRIEFS.md`.
 
 For standalone world concept art, use the setting and accumulated preferences without treating the card briefs as composition constraints. Tie each image to a meaningful setting or story idea. Label invented scenes, devices and places as exploratory until approved; a creator-facing visualization of hidden cosmology does not establish a new event known to the characters.
+
+## Set 4 review (current through 2026-11-08)
+
+- **Enemy visibility — latest rule:** enemies may appear on screen occasionally. Keep them secondary to the principal action or magical effect, as with affected people in a spell illustration. This replaces the earlier absolute off-screen-only rule; it does not call for enemies in every scene. Attacks should still not be aimed at the viewer.
+- **Oath shieldbearer:** the woman pulling a soldier's belt is unnaturally twisted. Rebuild a simple, physically believable supporting action with coherent hips, shoulders and steps; the belt-grab pose is expendable. Follow-up on 2026-11-08: her shield-carrying hand must be entirely behind the shield, invisible from the camera; retain her separate supporting hand at the soldier's waist.
+- **Threshold adept:** the creator says the WHOLE scene looks too much like an animated film ("Pixar"), explicitly not just the face. Reconsider composition, staging, light, colour and rendering together. A face-only retouch does not address this feedback. Test a more grounded, irregularly painted atmosphere; do not solve it by adding uncanny skin detail. On 2026-11-08 the creator praised the complete scene repaint as really good; preserve that selected version.
+- **Pride huntress:** the creator prefers the FIRST, closer painting to the subsequent wide version. The wide revision has an extra leg and is rejected. Restore the preferred first composition; do not generalize this into a rejection of wide compositions elsewhere.
+- **Giant chieftain — latest direction, 2026-11-08:** the old spear-pulling composition is rejected for incoherent legs/boots, an apparent extra finger and an unsuccessful bloody-stick idea. Its hand-rotation and spear-insertion instructions are superseded. The creator says the new full-body uphill charge looks much better and explicitly locks that pose: no further changes to stance, limbs, shoulders, face or framing. The latest review version adds a crude spear made from a slender tree to her anatomical right hand (near hand low beside her hip, at image-left). Show an obvious shaved wooden point, retained bark, a few short snapped branch nubs and subtle exposed roots at the butt; keep this restrained. Fit the weapon to her existing grip and preserve the opposite raised fist. This is a held weapon, not an embedded injury. Inspect both hand and leg anatomy before selecting. The general permission for occasional secondary enemies elsewhere is unchanged.
+- **Barrow colossus:** the large creature's helmets look implausibly oversized. Preserve human-sized helmets, shields and bones relative to the larger body; familiar objects should provide consistent scale cues.
+- **Indebted squire:** keep the ginger young squire and knotted-wrist debt idea, but give him worse armour and a more frightened expression. This overrides the original fine-armour and admiring-a-sword direction. On 2026-11-08 the creator said they really like this rework; preserve the selected poorer-armoured, anxious version.
+- **Positive references:** the walking catapult (Brass siege-walker), Cinderfall's large falling fire effect and the Goblin firepot thrower are liked. Preserve those paintings. These comments do not approve unrelated images or new lore.
 
 ## Set 3 card review (2026-11-06)
 
@@ -103,11 +124,11 @@ For new creatures and peoples, test distinct sizes, silhouettes, anatomy, behavi
 ## Pose and energy
 
 - Match emotional intensity to the individual subject and the creator's latest request. Do not soften every character into stoic restraint: this berserker should visibly roar with aggressive excitement and bloodlust. That is a card-specific exception, not a requirement for other units.
-- Treat lightly dynamic movement as the default, not a ceiling. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the off-screen-enemy rule.
+- Treat lightly dynamic movement as the default, not a ceiling. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the current enemy-visibility guidance.
 - Give gaze and gestures a reason in the scene. A character should attend to a person, object or event; its hands, posture and expression should support that action. A raised hand or combat stance needs a contextual purpose, including indoors. Quiet work, inspection or listening can supply lightly dynamic movement.
 - Make poses lightly dynamic. Characters shouldn't be just standing there, but they shouldn't be over the top or melodramatic either.
 - Vary the poses and facing directions, because they get predictable quickly. Not every character should face right. Vary viewpoint, subject size, posture, silhouette and gesture as well; reversing a familiar pose is not enough. Follow each brief's full-body, wide, rear, profile or detail framing. A thoughtful still pose is appropriate when the brief calls for it.
-- Show combat sometimes, but only against an enemy off-screen. Don't aim an attack straight at the viewer.
+- Combat can include enemies on screen occasionally, with those figures secondary to the principal action or effect. Off-screen opponents remain useful. Do not aim attacks straight at the viewer.
 
 ## Backgrounds
 
@@ -129,20 +150,22 @@ The white, red and blue rows come from images the creator has seen. The black an
 
 | Alignment | Peoples and subjects | Palette and light | Emblem |
 | --- | --- | --- | --- |
-| Vigil (white) | Lion folk, knights, clerics, soldiers | Gold, ivory, sky blue; warm light; avoid red capes | Sun |
+| Vigil (white) | Lion folk, knights, clerics, soldiers | Gold, ivory, sky blue; warm light | Sun |
 | Fervor (red) | Goblins, orcs, giants, dragons, sellswords | Ember orange, iron, soot, blood red; firelight | Three spikes |
-| Gnosis (blue) | Scholars, city mages, brass constructs | Deep blue, teal, brass, amber; lamplight; rain only when briefed | Lantern star |
+| Gnosis (blue) | Scholars, city mages, brass constructs | Deep blue, teal, brass, amber; lamplight | Lantern star |
 | Dominion (black) | Nobles, undead, bound devils | Ash grey, bone, tarnished silver, deep violet; cold, overcast light | None yet |
 | Genesis (green) | Forest peoples, druids, great beasts | Moss, bark, deep green, amber; dappled light | None yet |
 
 ## Feedback log
 
-Add each new note from the creator here, then work it into the sections above.
+Add current feedback to the relevant section above; keep superseded attempts in the dated prompt/revision records.
+
+- 2026-11-08, Set 4 consolidation: current card decisions are in the Set 4 review above; anatomy, physical contact, scale, whole-scene painting and preservation of approved poses are carried into the new-card guidance. The old giant spear-pulling concept and intermediate hand fixes are rejected; exact history stays in the revision records.
 
 - 2026-11-06: Reference sheets are initial starting points, not limits. Expand the repertoire with new faces, clothing and equipment; avoid repeatedly reproducing or cycling through the examples. Exact reuse is appropriate for character continuity or an explicit request.
 
 - Too over the top and dramatic: "dynamic" meant lightly dynamic, not static.
-- Combat is only ever against an off-screen enemy, and backgrounds are implied.
+- Historical feedback asked for off-screen enemies only; the Set 4 review now permits occasional secondary enemies on screen. Backgrounds remain implied.
 - Too much power on a character, even when the detail itself was good.
 - Poses were getting predictable and didn't all need to face right. Backgrounds were generally right.
 - Historical feedback: too many humans of one race across the early card set. The 2026-11-06 campaign correction now governs how local populations are composed; do not apply that earlier target to every crowd.
@@ -155,7 +178,7 @@ The creator supplied twelve Magic card images as examples they like and asked fo
 
 - **Inventive silhouettes:** the construct references (`construct.jpeg`, `Solemn-Simulacrum_MTG-733x1024.png`) use elegant asymmetry, unexpected proportions and negative spaces. Design original creatures and mechanisms from their function. A brass chorister should read as an instrument brought to life, not a human knight with metallic skin.
 - **Mood carried by shape and colour:** `creep.jpeg` and `cultist.jpeg` suggest strangeness through long shapes, obscured faces and a few cool tonal masses. Dominion can be patient, pitiful, unsettling or ceremonious without defaulting to gore, fangs, Gothic castles or explosive darkness.
-- **Spells as an event:** `fade.jpg` and `instant.jpg` communicate a change in a body, a gesture or a spatial relationship. Make the card's effect visible through a specific small story; vary beyond a person pointing a generic glowing beam. Keep the existing off-screen-enemy rule and the current brief's explicit exceptions, such as a blade entering from an edge.
+- **Spells as an event:** `fade.jpg` and `instant.jpg` communicate a change in a body, a gesture or a spatial relationship. Make the card's effect visible through a specific small story; vary beyond a person pointing a generic glowing beam. Affected people or enemies may be visible but secondary to the effect; use on-screen opponents occasionally, following the Set 4 review.
 - **Biological invention:** `green.jpg` integrates foliage, growth and creature anatomy into a coherent form. Genesis creatures should have distinctive root, branch, horn or feather silhouettes, rather than all being humanoids dressed in leaves.
 - **Scale and breathing room:** `serra.webp` and `sea.jpeg` let wings, monumental shapes and surrounding space establish scale. Large subjects need not fill every edge; ordinary figures can be small within a selective setting. This does not authorize adding wings, cities or monumental power when absent from the brief.
 - **Ordinary humans with lived gestures:** `human 2.jpeg`, `human 3.jpeg` and `human.jpeg` use practical equipment, asymmetry, weight shifts and group rhythm. Show the action's intention and a specific expression. Supporting figures remain subordinate, and no attack is directed at the viewer.
@@ -184,7 +207,7 @@ Use expressions appropriate to the action. For these raiders, enthusiasm should 
 
 ## Repetition to watch
 
-Claude noticed these across the first 19 images. The creator hasn't confirmed them yet.
+Claude noticed these across the first 19 images. They are Claude's past observations, never creator rules, so none of them is banned. Use them only as a variety check across a batch.
 
 - Streaky, diagonal brushstroke skies in almost every image
 - Ivy on old stone in many images

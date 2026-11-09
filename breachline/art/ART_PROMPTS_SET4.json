@@ -1,7 +1,7 @@
 {
   "set": 4,
   "date": "2026-11-06",
-  "status": "complete — all 26 images generated; awaiting creator review",
+  "status": "complete — preferred Giant Chieftain pose with requested tree-spear addition ready for review",
   "sourceBriefs": "ART_BRIEFS_SET4.md",
   "sourceCards": "../CARD_PROPOSALS.md",
   "artDirection": "../../.claude/skills/art-direction/SKILL.md",
@@ -15,16 +15,16 @@
       "alignment": "Vigil / white",
       "card": "Unit, cost 2. Guard: adjacent allies take less damage.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "An ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.",
+      "brief": "An ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, supports a limping soldier as they move together along a dusty road. His nearer arm lies across her shoulders and her right arm supports his waist; her left arm carries a tall plain wooden shield on the outer side of the pair, with one spent arrow in its rim. Use a simple shared walking step, coherent hip and shoulder alignment and a natural head turn. Both figures have two arms and two legs; avoid a backward belt reach, twisted spine or reversed knees. The soldier is secondary and loosely painted. Warm pale dust, ivory, clean blue sky and a single low roadside bank. Her ordinary protective action is the subject. Her shield-carrying hand grips an unseen rear handle and is completely occluded by the wooden shield; no fingers or thumb wrap around its visible edge. Preserve the separate supporting hand at the soldier's waist.",
       "references": [
         "reference-library-2026-11-06/people/01-humans.png: anatomy and painted treatment",
         "reference-library-2026-11-06/equipment/09-vigil-equipment.png: how padded Still Flame gear is constructed"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Oath shieldbearer. Unit, cost 2. Guard: adjacent allies take less damage.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: anatomy and painted treatment\nreference-library-2026-11-06/equipment/09-vigil-equipment.png: how padded Still Flame gear is constructed\n\nBRIEF:\nAn ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "revised_awaiting_creator_review",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-60133c34-9437-47b9-a4f4-ba92ddd80e15.png",
       "dimensions": [
         1536,
         1024
@@ -33,8 +33,8 @@
         768,
         512
       ],
-      "sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
-      "web_sha256": "01b2d06a43a708dd51fb279aaf9be2544d8ae2930cbaa72a43b0eb328e809b70",
+      "sha256": "3b8975c10c5b253705a7630a9fd48eab160a13e76c2ed964293a7a47b1da88cc",
+      "web_sha256": "bf5c7268cf4deee082bb7393d829db1461dcf4bf3c659408ea5922b1bc9a9ec0",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
@@ -53,10 +53,49 @@
             "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-967bee0c-2788-4fa2-884e-2d5b09a89b4f.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-07",
+          "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRedesign this action completely to fix the unnaturally twisted anatomy. Keep the ordinary broad-faced sunburnt young woman, ivory padded jerkin, tall plain wooden shield with one spent arrow, wounded companion, warm dusty roadside and clean blue sky. Do NOT preserve the original pelvis, legs, backward reach or belt grip. Show the woman and injured soldier moving together to the RIGHT in a natural side-on three-quarter view. His nearer arm lies across her shoulders; her right arm supports his waist. Her left arm carries the shield on the outer side of the pair, protecting them from danger to the left. Both torsos and both pairs of legs face the direction of travel; her neck is only slightly turned toward him. Rebuild the whole pose as a believable shared walking step, neither body facing backward, no corkscrew spine, no backward knees. Keep all feet in frame and the support action clearly readable; exactly two arms and two legs per person. The companion is subdued and loosely painted, not another hero. Simple roadside bank, no additional soldiers.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-shieldbearer.png"
+          ],
+          "reference_image_sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-e785f708-7826-4218-ae4d-bec8fd10836e.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: precise-object-edit.\nAsset: original Breachline fantasy card illustration, landscape PNG 1536 x 1024, opaque.\nImage 1 is the edit target. Make ONE small physical correction: the shieldbearer's shield-carrying hand must be completely hidden BEHIND the wooden shield. Remove the visible fingers and thumb currently wrapped around the shield's near vertical edge. The wooden shield should naturally occlude her entire gripping hand, held by an unseen rear handle. No hand, fingers, thumb or knuckles should be visible on the front face or either side of that shield. Adjust only the local hand/shield-edge overlap as necessary.\nPreserve everything else: both character identities and expressions, natural shared walking step, injured soldier's arm across her shoulders, her OTHER hand supporting his waist, both bodies and all limbs, composition, shield size/shape/wood and spent arrow, ivory quilted jerkin, sunlight, blue sky, dusty bank, palette and original oil/acrylic brushwork. Do not remove the supporting hand at the soldier's waist or his hand across her shoulder. No new people or objects, no text, frame or watermark. Keep the existing painting, not a redesign.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-shieldbearer.png"
+          ],
+          "reference_image_sha256": "7cbf2426280394324eccc80a8429e7ddfe325df1c2f5dd1c4c7fa092305a33e3",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-e785f708-7826-4218-ae4d-bec8fd10836e.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-60133c34-9437-47b9-a4f4-ba92ddd80e15.png",
           "selected": true
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "current_prompt": "Use case: precise-object-edit.\nAsset: original Breachline fantasy card illustration, landscape PNG 1536 x 1024, opaque.\nImage 1 is the edit target. Make ONE small physical correction: the shieldbearer's shield-carrying hand must be completely hidden BEHIND the wooden shield. Remove the visible fingers and thumb currently wrapped around the shield's near vertical edge. The wooden shield should naturally occlude her entire gripping hand, held by an unseen rear handle. No hand, fingers, thumb or knuckles should be visible on the front face or either side of that shield. Adjust only the local hand/shield-edge overlap as necessary.\nPreserve everything else: both character identities and expressions, natural shared walking step, injured soldier's arm across her shoulders, her OTHER hand supporting his waist, both bodies and all limbs, composition, shield size/shape/wood and spent arrow, ivory quilted jerkin, sunlight, blue sky, dusty bank, palette and original oil/acrylic brushwork. Do not remove the supporting hand at the soldier's waist or his hand across her shoulder. No new people or objects, no text, frame or watermark. Keep the existing painting, not a redesign.",
+      "updated_on": "2026-11-08",
+      "original_brief": "An ordinary white woman of about twenty-five, broad-faced and sunburnt with a crooked nose, in a plain padded ivory jerkin and scuffed boots, walks backward along a dusty road, seen from behind and to one side. She holds a tall, plain wooden shield high on her left arm, angled toward danger off-screen LEFT, with one spent arrow stuck in its rim. Her right hand reaches behind her to steer a limping soldier by the belt; he is loosely painted and secondary. Her head is turned to check his footing. She's tired and careful, not heroic. Pale dust, ivory and a clean sky blue, and nothing grand about her gear. A single low roadside bank implies the place.",
+      "creator_feedback": "The shield-carrying hand must be entirely behind the shield and invisible.",
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-07",
+          "feedback": "The belt-grabbing woman's body is unnaturally twisted; rebuild a believable supporting action."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "The shield-carrying hand must be entirely behind the shield and invisible."
+        }
+      ],
+      "reviewed_on": "2026-11-08"
     },
     {
       "file": "pride-huntress.png",
@@ -66,15 +105,15 @@
       "alignment": "Vigil / white",
       "card": "Unit, cost 2. Stand together: stronger next to an ally.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "A lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears a plain linen tunic with a single leather guard on her spear arm. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.",
+      "brief": "Use the FIRST Set 4 Pride Huntress painting, which the creator prefers: a closer crouching lion folk huntress in ochre dawn grass, with a dignified lion head, braided full mane, simple linen tunic, one leather forearm guard, a low level spear and an open signaling hand. A second hunter remains loosely painted in the distant grass. Preserve this closer composition and golden/violet painted treatment. Reject the subsequent wide revision with an extra leg. Exactly two legs, with a coherent crouch; do not force another wider framing solely to satisfy the older brief.",
       "references": [
         "reference-library-2026-11-06/people/02-lion-folk.png: feline skull, mane, hands and build"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Pride huntress. Unit, cost 2. Stand together: stronger next to an ally.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/02-lion-folk.png: feline skull, mane, hands and build\n\nBRIEF:\nA lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears a plain linen tunic with a single leather guard on her spear arm. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "creator_preferred_version",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8327f601-9dec-4572-8c06-f768a33fa4df.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png",
       "dimensions": [
         1536,
         1024
@@ -83,8 +122,8 @@
         768,
         512
       ],
-      "sha256": "c4528c0093003b1e1c465c3a208ad6ff144957c49487d63886462a4c8f329717",
-      "web_sha256": "ede859fc9b0e8118a2a33d629404a485561e43d151d172d1f6cc98e45ee4b316",
+      "sha256": "d13b571c4f5257a98358627cb54de4a157f9727ad47fe4fab2de1f462afd50b7",
+      "web_sha256": "1eb9a320d0f52c4465c870ac5fdb2a32417d3568a3b76c10b5cee1ac72bc56a3",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
@@ -93,7 +132,7 @@
             "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png",
-          "selected": false
+          "selected": true
         },
         {
           "method": "built-in image_gen",
@@ -102,10 +141,13 @@
             "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8327f601-9dec-4572-8c06-f768a33fa4df.png",
-          "selected": true
+          "selected": false
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "updated_on": "2026-11-07",
+      "original_brief": "A lion folk huntress crouches in chest-high ochre grass in a wide dawn view, her whole figure in frame and her dignified lion head and full mane, braided back for the hunt, turned toward the RIGHT. She lifts one open hand low, signalling to a second huntress who is only a loosely painted shape in the grass far behind her. The two are plainly working together. She carries one slim spear held low and level, and wears a plain linen tunic with a single leather guard on her spear arm. Believable feline anatomy, never cartoonish. Dry sunlit ochre, soft violet shadow and a wide, calm pale sky give plenty of breathing room. An ordinary hunter, not a champion.",
+      "creator_feedback": "The wide revision has an extra leg. The creator prefers the first, closer painting."
     },
     {
       "file": "pride-matriarch.png",
@@ -231,15 +273,15 @@
       "alignment": "Gnosis / blue",
       "card": "Unit, cost 3. Ability: swap places with one of your units.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "An open market square closing at dusk, in a wide view showing two whole figures about ten paces apart. A young white man with a long, narrow face, in a quilted teal waistcoat over rolled shirtsleeves, has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad porter holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.",
+      "brief": "Rebuild the entire scene as a grounded traditional fantasy painting. The creator rejects its animated-film appearance across staging, lighting, palette and rendering, not merely the adept's face. Use an oblique, asymmetrical view of a sparsely implied closing market with a lean young adult man in a faded teal waistcoat moving diagonally away, his attention turned to a displaced crate-carrying porter several paces behind. Each has brought the other's light along: muted amber indoor light lies in a soft patch on the adept and pavement, while cool slate-blue dusk crosses the porter and crate. Light belongs to surfaces rather than glowing body outlines. Restrained slate, umber, desaturated teal and small amber passages; irregular expressive oil brushwork, lost edges, natural proportions and weight. No jaunty two-person stage pose, toy-like scenery, glossy gradients, neon auras, portals or runes.",
       "references": [
         "reference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Threshold adept. Unit, cost 3. Ability: swap places with one of your units.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/01-humans.png: painted treatment of ordinary people\n\nBRIEF:\nAn open market square closing at dusk, in a wide view showing two whole figures about ten paces apart. A young white man with a long, narrow face, in a quilted teal waistcoat over rolled shirtsleeves, has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad porter holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "liked_by_creator",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-dabfafd3-921b-4667-9de0-30d5da27f78b.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-7c47bffa-7cb0-4bda-9928-bf9b5114e090.png",
       "dimensions": [
         1536,
         1024
@@ -248,8 +290,8 @@
         768,
         512
       ],
-      "sha256": "9e43463bf282b28dab48b80ac843b6260c4e95fda6bfa0bda6ed6d0363dd8aa1",
-      "web_sha256": "ab7a36862a2002c00276375e8468c03210b1d94c2062db11bc39194f3fb5336f",
+      "sha256": "173810d25527b7286fded46b23bba0e935bea2172f6ed2d777266d01dac7ef2a",
+      "web_sha256": "de44e8b2114fd92de73fef6c3cb49fb33623e35f0bad125746a21c7dd743efa4",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
@@ -267,10 +309,35 @@
             "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-961a6311-9df5-45bf-9db3-3265245e79c4.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-dabfafd3-921b-4667-9de0-30d5da27f78b.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-07",
+          "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nEntirely new composition, design and atmosphere for THRESHOLD ADEPT. This is a magic-user who has exchanged places with a porter, and each has carried the other's illumination along. The WHOLE scene must feel like a traditional painted fantasy illustration, not an animated-film still. Use an oblique elevated view into a narrow, sparsely implied closing market, with an irregular diagonal of a folded awning and one plain plaster wall. A lean white young adult man about twenty-five, small natural eyes, long angular ordinary face and cropped dark hair, wears a plain faded teal quilted waistcoat with rolled linen sleeves and muddy boots. Full figure at the right-middle, moving diagonally away, a weighty unshowy step, attention turned toward the displaced porter; his hand is lowered after finishing a small gesture. Several paces behind at the left is a stout working porter holding a crate, partly in shadow, quietly startled, painted with fewer strokes. The adept carries a soft RECTANGULAR PATCH of muted amber indoor light across his shirt and the pavement, although he stands in cool open dusk; the porter and crate carry a patch of cool slate-blue dusk inside the otherwise warm-toned recess. The light belongs to surfaces and fabric, not outlines around bodies. It is an inexplicable displaced patch of illumination, no glowing skin, no neon blue aura, no halos, no magic circles, no portals. Restrained slate, umber, desaturated teal and small amber passages, unequal value masses, irregular expressive oil brushwork and atmospheric soft edges; selective sharpness at the displaced light and the adept's turned attention. Avoid symmetrical two-character stage blocking, jaunty pose, oversized expressive eyes, inflated boots, rounded toy-like architecture, clean animated-film colour gradients or uniform orange/teal rim lighting. Sparse environment with enough quiet negative space; one small magic event.",
+          "reference_images": [],
+          "reference_image_sha256": null,
+          "reference_source_at_generation": null,
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-7c47bffa-7cb0-4bda-9928-bf9b5114e090.png",
           "selected": true
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "original_brief": "An open market square closing at dusk, in a wide view showing two whole figures about ten paces apart. A young white man with a long, narrow face, in a quilted teal waistcoat over rolled shirtsleeves, has just stepped forward to the RIGHT, calm, with one hand still lifted from the gesture. Warm yellow indoor lamplight clings to him as though he brought it along, though nothing nearby could cast it. Behind him, a broad porter holding a crate stands startled exactly where the adept was a moment ago, wrapped in a sheet of cold blue evening he has no reason to be in. Each figure wears the other's light. That exchange is the whole picture, so keep the setting simple and spare: no beams, portals, runes or swirling energy.",
+      "creator_feedback": "The creator says the whole-scene Threshold Adept rework is really good; preserve this image.",
+      "current_prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nEntirely new composition, design and atmosphere for THRESHOLD ADEPT. This is a magic-user who has exchanged places with a porter, and each has carried the other's illumination along. The WHOLE scene must feel like a traditional painted fantasy illustration, not an animated-film still. Use an oblique elevated view into a narrow, sparsely implied closing market, with an irregular diagonal of a folded awning and one plain plaster wall. A lean white young adult man about twenty-five, small natural eyes, long angular ordinary face and cropped dark hair, wears a plain faded teal quilted waistcoat with rolled linen sleeves and muddy boots. Full figure at the right-middle, moving diagonally away, a weighty unshowy step, attention turned toward the displaced porter; his hand is lowered after finishing a small gesture. Several paces behind at the left is a stout working porter holding a crate, partly in shadow, quietly startled, painted with fewer strokes. The adept carries a soft RECTANGULAR PATCH of muted amber indoor light across his shirt and the pavement, although he stands in cool open dusk; the porter and crate carry a patch of cool slate-blue dusk inside the otherwise warm-toned recess. The light belongs to surfaces and fabric, not outlines around bodies. It is an inexplicable displaced patch of illumination, no glowing skin, no neon blue aura, no halos, no magic circles, no portals. Restrained slate, umber, desaturated teal and small amber passages, unequal value masses, irregular expressive oil brushwork and atmospheric soft edges; selective sharpness at the displaced light and the adept's turned attention. Avoid symmetrical two-character stage blocking, jaunty pose, oversized expressive eyes, inflated boots, rounded toy-like architecture, clean animated-film colour gradients or uniform orange/teal rim lighting. Sparse environment with enough quiet negative space; one small magic event.",
+      "updated_on": "2026-11-07",
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-07",
+          "feedback": "The WHOLE scene looks like Pixar, not just the face. Rebuild staging, lighting, colour and rendering."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "The creator says the whole-scene Threshold Adept rework is really good; preserve this image."
+        }
+      ],
+      "reviewed_on": "2026-11-08"
     },
     {
       "file": "conclave-examiner.png",
@@ -326,7 +393,7 @@
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Brass siege-walker. Unit, a construct, cost 5. Longshot: attacks up to 3 tiles away.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/equipment/10-gnosis-equipment.png: the mechanical crossbow, for brass fittings and winding gear\n\nBRIEF:\nA strange working machine, shown complete in a wide view: a tall, narrow brass frame on three long jointed legs, picking its way across a dry quarry floor. Its entire body is built around one long wooden throwing arm, drawn back and sighted far off-screen RIGHT, past the edge of the image. Its anatomy comes from that job, with no human head or torso, so it reads as a precise instrument that happens to walk. A small artificer sits in a sling seat, loosely painted, adjusting a sighting ring. Leave open gaps through the frame. It stands about two storeys tall. Sparse teal enamel, no organ pipes or smoke. Wide empty sky gives it room.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "liked_by_creator",
       "generation_method": "built-in image_gen",
       "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cd56b2a4-d8e7-4818-b08e-aa3ba1c2a647.png",
       "dimensions": [
@@ -459,15 +526,15 @@
       "alignment": "Dominion / black",
       "card": "Unit, cost 1. When summoned, you lose 1 life.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "A gangly white young man of about nineteen, with a plain, hopeful face and large ears, stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. Far behind him, a few thin, grey older squires wait in silence along a wall, loosely painted. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.",
+      "brief": "A gangly white young man about nineteen with ginger curls, freckles and an ordinary youthful face has another violet knotted cord tied around his wrist by a grey-gloved clerk. His armour is poor and ill-fitting: a faded padded jack, one small dented iron shoulder plate and a little worn mail, with a plain scuffed belt. No polished engraved breastplate or expensive matched armour. He holds a sword awkwardly and looks toward the wrist with apprehension, slightly hunched shoulders, knitted brows and a tense uncertain mouth. He is visibly more scared, not admiring the bargain. A few thin older squires wait loosely painted against a plain oppressive courtyard wall. Cold grey daylight with violet accents; natural simple hands and economical facial detail.",
       "references": [
         "reference-library-2026-11-06/people/08-humans-additional-faces.png: an ordinary young adult, as a starting point only"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Indebted squire. Unit, cost 1. When summoned, you lose 1 life.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/08-humans-additional-faces.png: an ordinary young adult, as a starting point only\n\nBRIEF:\nA gangly white young man of about nineteen, with a plain, hopeful face and large ears, stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. Far behind him, a few thin, grey older squires wait in silence along a wall, loosely painted. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "liked_by_creator",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-876f4f22-1da0-4003-9f15-adb47d946597.png",
       "dimensions": [
         1536,
         1024
@@ -476,8 +543,8 @@
         768,
         512
       ],
-      "sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
-      "web_sha256": "60880105a69cc2e9073052011e9a5a8f616f378cec6558b764c27668d8fff114",
+      "sha256": "cb40c5f9ec5a1aad21e7de1cbe2531e688527a09100581dc1dd0eea4721d4744",
+      "web_sha256": "e9a64fecacaba6192f750646f9cf4c7fef593944b579982394af4a4d80cdf215",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
@@ -486,10 +553,37 @@
             "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-07",
+          "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRevise the same red-haired nineteen-year-old Indebted Squire in the debt-binding scene. Preserve his ginger curls, freckled ordinary youthful face, the grey-gloved clerk tying a violet knotted cord around his extended wrist, the existing older knots, his sword and the waiting older squires loosely behind. Replace ALL the impressive polished engraved plate armour with visibly poorer, ill-fitting secondhand protection: a faded dirty padded grey-brown jack, ONE small dented iron shoulder plate on a simple strap, a short ragged patch of mail at the neckline, plain scuffed belt. No breastplate, elaborate pauldrons, etched ornament, polished silver or noble uniform. His shoulders draw inward slightly and he looks toward the wrist being tied with apprehension: knitted inner brows, tightened uncertain mouth, alert fearful eyes of normal size. He is somewhat scared and realizing the bargain, not awed or triumphant, not a caricature of terror. Keep the sword but lower it a little so it feels awkwardly held by a young novice; no magical glow. An oppressive plain courtyard wall and flat cold daylight, grey/violet palette. Paint the face simply with large shapes; keep hands anatomically sound and clearly connected. No extra equipment or characters.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/indebted-squire.png"
+          ],
+          "reference_image_sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-876f4f22-1da0-4003-9f15-adb47d946597.png",
           "selected": true
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "original_brief": "A gangly white young man of about nineteen, with a plain, hopeful face and large ears, stands in an open stone courtyard under flat, silver cloud, turned to the RIGHT and cropped at mid-thigh. He wears armour too fine and a little too large for him, and is gazing down with awe at the excellent sword he has just been given. He doesn't watch his other arm, held out to the side, where a clerk's grey-gloved hand, physically connected beyond the crop, ties a dark cord around his wrist. Several older knots already circle that wrist. Far behind him, a few thin, grey older squires wait in silence along a wall, loosely painted. His expression is pride with the first trace of doubt. Ash grey, tarnished silver and one violet cord. No skulls, no gore, no paper or writing. He looks young, not powerful.",
+      "creator_feedback": "The creator really likes the poorer-armoured, frightened squire rework; preserve this image.",
+      "current_prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRevise the same red-haired nineteen-year-old Indebted Squire in the debt-binding scene. Preserve his ginger curls, freckled ordinary youthful face, the grey-gloved clerk tying a violet knotted cord around his extended wrist, the existing older knots, his sword and the waiting older squires loosely behind. Replace ALL the impressive polished engraved plate armour with visibly poorer, ill-fitting secondhand protection: a faded dirty padded grey-brown jack, ONE small dented iron shoulder plate on a simple strap, a short ragged patch of mail at the neckline, plain scuffed belt. No breastplate, elaborate pauldrons, etched ornament, polished silver or noble uniform. His shoulders draw inward slightly and he looks toward the wrist being tied with apprehension: knitted inner brows, tightened uncertain mouth, alert fearful eyes of normal size. He is somewhat scared and realizing the bargain, not awed or triumphant, not a caricature of terror. Keep the sword but lower it a little so it feels awkwardly held by a young novice; no magical glow. An oppressive plain courtyard wall and flat cold daylight, grey/violet palette. Paint the face simply with large shapes; keep hands anatomically sound and clearly connected. No extra equipment or characters.",
+      "updated_on": "2026-11-07",
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-07",
+          "feedback": "Keep the ginger squire with the knotted wrist, but give him worse armour and make him look more scared."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "The creator really likes the poorer-armoured, frightened squire rework; preserve this image."
+        }
+      ],
+      "reviewed_on": "2026-11-08"
     },
     {
       "file": "hunted.png",
@@ -653,13 +747,13 @@
       "alignment": "Dominion / black",
       "card": "Unit, cost 5. Gathered: stronger for each unit in your discard pile.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "In a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.",
+      "brief": "A faceless, heavy-shouldered earthen colossus about three adult human heights stands in a quiet fallow field, fitting another ordinary helmet into its shoulder. Human equipment must retain human scale: helmets about 28 cm tall, roughly one twentieth of the colossus's height; human shields about 60 cm across and long bones about 45 cm. The held helmet is small between its broad fingers. Packed earth dominates its body, with small, partly buried pieces at varied depths; no enormous helmets forming shoulder plates. An ordinary crow and a human-sized spade near its foot establish scale on the same ground plane. Medium-wide rear/side view, simple low horizon, rust, bone and grey-brown earth, broad painting and quiet overcast light.",
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Barrow colossus. Unit, cost 5. Gathered: stronger for each unit in your discard pile.\n\nBRIEF:\nIn a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "revised_awaiting_creator_review",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-837cd7bb-33f5-4094-866e-7aeed9cf8d44.png",
       "dimensions": [
         1536,
         1024
@@ -668,18 +762,34 @@
         768,
         512
       ],
-      "sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
-      "web_sha256": "2d010fca8be458cdbc4a8db337b6b923491ec823a21b7278a26d7b1e8d3b4c75",
+      "sha256": "223b66f691775a06d900b02cbeb0fd593d7b0055b12b611f64e0cf1c3d023437",
+      "web_sha256": "4b75690370c719a99c1c4133b50e1e393f217f0749b9bc42e5152f6714efbdef",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
           "prompt_reference": "prompt",
           "reference_images": [],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-07",
+          "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nCorrect the SCALE of the assembled items throughout this colossus illustration. Keep the faceless earth creature's absorbed helmet-fitting action, long arms, heavy hunched silhouette, fallow field and quiet overcast mood. The creature is approximately 5.5 metres tall, THREE ordinary adult human heights, not a mountain-sized titan. Every embedded helmet is an ordinary HUMAN helmet only about 28 centimetres tall: each occupies about ONE TWENTIETH of the colossus's full height, never a huge shoulder plate. The helmet being fitted into its shoulder is likewise a small object pinched between the ends of two broad fingers; it must not fill the whole hand. Reduce all current giant helmets, shields and bones to the same consistent human equipment scale. A human shield is about 60 cm wide; a human thigh bone about 45 cm long. Let packed earth be the dominant mass, with many small partly buried objects at varied depths, not giant helmets composing its anatomy. Add a simple half-sunk human-sized wooden spade, about 1.2 metres long, close to its planted foot on the same ground plane as an unambiguous scale cue. Keep the crow ordinary and small nearby, about 40 cm long. Show the entire body in a medium-wide side/rear view with a low simple horizon; no mountains, monumental barrows or forced perspective enlarging the debris. Earth brown, subdued rust and bone grey. Fewer crisp details; readable object size and weight.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/barrow-colossus.png"
+          ],
+          "reference_image_sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-837cd7bb-33f5-4094-866e-7aeed9cf8d44.png",
           "selected": true
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "original_brief": "In a wide view across a fallow field under flat cloud, a huge, heavy-shouldered shape, about three times the height of a person, stands turned away to the RIGHT. Its body is packed earth bound together with old dented helmets, shield rims, spear shafts and long bones, all worn and ordinary, with no gore or fresh remains. Its arms are too long. It has stooped to pick one more helmet from the furrows, and is fitting it carefully into a gap in its own shoulder, absorbed in the work. It has no real face. A single crow watches from a furrow, giving scale. Bone, rust and grey-brown earth, with plenty of quiet empty field around it.",
+      "creator_feedback": "Creature scale is inconsistent with its oversized helmets. Keep human equipment human-sized.",
+      "current_prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nCorrect the SCALE of the assembled items throughout this colossus illustration. Keep the faceless earth creature's absorbed helmet-fitting action, long arms, heavy hunched silhouette, fallow field and quiet overcast mood. The creature is approximately 5.5 metres tall, THREE ordinary adult human heights, not a mountain-sized titan. Every embedded helmet is an ordinary HUMAN helmet only about 28 centimetres tall: each occupies about ONE TWENTIETH of the colossus's full height, never a huge shoulder plate. The helmet being fitted into its shoulder is likewise a small object pinched between the ends of two broad fingers; it must not fill the whole hand. Reduce all current giant helmets, shields and bones to the same consistent human equipment scale. A human shield is about 60 cm wide; a human thigh bone about 45 cm long. Let packed earth be the dominant mass, with many small partly buried objects at varied depths, not giant helmets composing its anatomy. Add a simple half-sunk human-sized wooden spade, about 1.2 metres long, close to its planted foot on the same ground plane as an unambiguous scale cue. Keep the crow ordinary and small nearby, about 40 cm long. Show the entire body in a medium-wide side/rear view with a low simple horizon; no mountains, monumental barrows or forced perspective enlarging the debris. Earth brown, subdued rust and bone grey. Fewer crisp details; readable object size and weight.",
+      "updated_on": "2026-11-07"
     },
     {
       "file": "goblin-firepot.png",
@@ -696,7 +806,7 @@
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Goblin firepot. Unit, cost 2. When summoned, deals 1 damage to an enemy unit.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/03-goblins.png: ears, nose, build and skin\nreference-library-2026-11-06/equipment/14-raiders-and-berserker.png: scavenged, personal approach to gear, not a kit to copy\n\nBRIEF:\nA small, wiry goblin with long pointed ears and a long nose stands on a rock on a scrubby hillside under hard noon sun and a clear blue sky, seen full-body from a low angle. He's winding up to lob a smoking clay pot underarm toward someone off-screen RIGHT, with his weight on his back foot, tongue at the corner of his mouth and eyes fixed on his target. Orange glows through a crack in the pot. A second pot hangs from a strap at his hip, wick unlit. He wears a scorched leather smith's apron, clearly made for someone bigger, over bare olive arms, with a coil of spare wick at his belt. He looks eager and a bit reckless, more an enthusiast than a champion. Simple, readable face without many teeth. The blue sky contrasts with the orange.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "liked_by_creator",
       "generation_method": "built-in image_gen",
       "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-21729072-2bce-4a81-a2d8-4911495e7b69.png",
       "dimensions": [
@@ -735,7 +845,7 @@
       "references": [],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Cinderfall. Spell, cost 4. 3 damage to an enemy unit and 1 to each enemy next to it.\n\nBRIEF:\nA high view down into a narrow valley at deep indigo dusk. A single slow column of embers falls from above onto one point on an old road, and where it lands, a bright ring of orange light has opened in the ground. Smaller scatters of sparks are falling on either side of it. A handful of tiny soldiers, only a few strokes each, are spreading away from the ring with raised shields, with no bodies or gore. It's local and human in scale, not a volcano, and not the end of the world. The event is the subject and no caster is visible. Rich indigo and ember orange, with one line of cold river in the valley.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "liked_by_creator",
       "generation_method": "built-in image_gen",
       "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-82fe24bb-7841-4c76-8363-ac403c8191c6.png",
       "dimensions": [
@@ -767,16 +877,15 @@
       "alignment": "Fervor / red",
       "card": "Unit, cost 6. Frenzy: stronger while damaged.",
       "lore_status": "Proposed card; name, rules and any new subject are not canon until approved",
-      "brief": "A wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. She has grey braids and a heavy, human-like face with a broad nose. An old wagon tarp, belted as a cloak and pinned with a bent plough blade, is her only armour, and there's very little blood. A coarse, heavy-browed orc with irregular tusks struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.",
+      "brief": "Use the creator-preferred full-body composition: an older, thickset female giant with a broad weathered face and one grey braid drives uphill toward an off-screen enemy to the right, roaring a rallying cry. She wears a short practical ivory tunic, loose charcoal trousers, worn boots and a patchwork rust-red cloak. A lightly stained upper-arm wrap, small brow cut and torn sleeve convey injury secondarily. No embedded spear, bloody stick or wound-pulling action. Show a coherent side-on three-quarter stance with aligned torso and hips: the leading leg is clearly connected from hip to planted boot on a low stone ledge, and the trailing leg pushes from lower ground; both feet point uphill. Keep the legs separated and both feet fully in frame. Preserve the creator-preferred pose and both arm positions. Her anatomical right hand, the near hand low beside her hip at image-left, holds a slender young tree trunk fashioned into a spear. Its front is shaved into a rough pale wooden point, with retained bark, a few short snapped branch nubs and subtle exposed roots at the butt. No metal spearhead or decoration. Keep the spear below the other raised fist, which remains visible in its original pose. Only adjust the gripping fingers locally; do not change the body, stance, legs, arms or other hand. A low human-built dry-stone breastwork breaks under her step; wind, dust, falling stones and a few distant arrows imply battle. No supporting figures in this new design. Warm light on ivory cloth and face against cool slate shadow, muted olive-grey ground and a small blue sky opening. Broad economical paint, selective detail, natural hands and a clear silhouette. The prior painting and all its local hand/spear corrections are rejected and must not be used as the composition reference.",
       "references": [
-        "reference-library-2026-11-06/people/05-giants.png: giant face and proportions",
-        "reference-library-2026-11-06/people/04-orcs.png: the orc's coarse nonhuman face"
+        "reference-library-2026-11-06/people/05-giants.png: species anatomy inspected for context only; no image was attached for this fresh composition"
       ],
       "prompt": "Use case: stylized-concept.\nCreate one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.\n\nTell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Any combat is lateral, against an enemy who stays off-screen, and nothing is aimed at the viewer. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.\n\nUse a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.\n\nREFERENCE USE: any sheets attached are starting points for species anatomy, painted treatment, material and construction, not a fixed cast or wardrobe. Develop a NEW individual with a distinct face, build, silhouette and practical belongings suited to this scene. Designs absent from the sheets are welcome. Keep established species traits and clear construction, with fewer, justified layers. Don't copy a sheet's pose, neutral clothes or plain background, or an old painting's setting. Use fresh staging, camera and light.\n\nSETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.\n\nCARD: Giant chieftain. Unit, cost 6. Frenzy: stronger while damaged.\n\nATTACHED REFERENCES:\nreference-library-2026-11-06/people/05-giants.png: giant face and proportions\nreference-library-2026-11-06/people/04-orcs.png: the orc's coarse nonhuman face\n\nBRIEF:\nA wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. She has grey braids and a heavy, human-like face with a broad nose. An old wagon tarp, belted as a cloak and pinned with a bent plough blade, is her only armour, and there's very little blood. A coarse, heavy-browed orc with irregular tusks struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.",
       "status": "generated",
-      "review_status": "awaiting_creator_review",
+      "review_status": "revised_awaiting_creator_review",
       "generation_method": "built-in image_gen",
-      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-67cd1db3-06d2-4624-9024-4a90d3dd1bd1.png",
       "dimensions": [
         1536,
         1024
@@ -785,8 +894,8 @@
         768,
         512
       ],
-      "sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
-      "web_sha256": "51b49b3952b7f088d4369a16f435630f3184e928135708e9ea89595ada506a46",
+      "sha256": "c8fa0273168e6233158f4c57600a7f18f4fe9d5e534feef209ecf20a558cede3",
+      "web_sha256": "a46063ebe0152feb3c3a31dd0f9f2c93a283445c2c8d10e2660ea5465ae4e587",
       "generation_attempts": [
         {
           "method": "built-in image_gen",
@@ -796,10 +905,128 @@
             "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png"
           ],
           "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
-          "selected": true
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-07",
+          "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRevise this painting into a more chaotic active battle scene while preserving the older giant chieftain's grey braids, broad human-like face, furious yell, large scale, simple tarp cloak and the action of pulling a broken spear shaft from her shoulder. Keep the coarse nonhuman orc standard-bearer small beside her. Replace the placid scenic background with a contested ridge: churned earth, dust billowing through her stride, a torn standard whipping sideways, a few airborne arrows and dislodged stones. At the LEFT edge and lower midground, include two small, loosely painted enemy infantry with shields staggering back from her advance, their faces only suggestions. On-screen enemies are allowed in this scene but must stay secondary to her silhouette and shout. Strong diagonals and overlapping dust shapes suggest the fight continuing outside the frame; no giant detailed crowd. A break of pale blue sky through windblown smoke, dull red cloth and earth, interrupted harsh sun. She presses left through the disorder, loud and engaged; no static hero posing. Little blood, no gore, no detailed teeth. Keep body, spear hand and feet anatomically clear, with exactly two arms, and coherent scale between giant, orc and infantry.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+          ],
+          "reference_image_sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4c693d8b-03d1-4159-8fcd-7684cbf1dc02.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: precise-object-edit.\nAsset: original Breachline fantasy card illustration, landscape PNG 1536 x 1024, opaque.\nImage 1 is the edit target. Rework this battle painting for believable perspective and a physically clear embedded spear.\nKEEP the older, grey-braided female giant chieftain's identity, furious open-mouthed roar, powerful advancing stride toward off-screen left, simple ivory tunic, ragged red wagon-tarp cloak, and expressive economical traditional oil/acrylic painting. Keep the original coarse, tusked orc standard-bearer on the right as a secondary figure behind her, with believable shared ground perspective. Keep the dusty ridge, storm shadow broken by pale blue sky and hard warm light.\nREMOVE BOTH newly added human enemy soldiers in the bottom foreground and lower-left. Replace them with continuous ridge ground, rocks and wind-driven dust matching the scene's perspective. Do not replace them with other figures. Preserve chaos with a few airborne arrows, dust, scattering stones and torn windblown cloth; no miniature people pasted near her feet.\nREBUILD the shoulder/spear/hand relationship. A SHORT broken wooden spear shaft remains firmly EMBEDDED in the giant's outer shoulder on image RIGHT, just below the shoulder cap. Show one continuous straight shaft projecting diagonally upward and outward from that shoulder. Its inner end must disappear into a small dark puncture through the torn ivory sleeve: torn cloth partly overlaps and occludes the shaft's base, with a little localized red staining. The metal spearhead is wholly buried and INVISIBLE. There must be no visible floating bloody tip, no exposed shaft lying across the shoulder surface, no exit wound and no stick crossing behind the neck. Her nearby raised hand grips the exposed shaft just beyond the entry point, beginning to wrench it out; adjust the elbow, wrist and sleeve naturally for a coherent arm. The spear is still lodged, not already pulled out. A small simple contact shadow and cloth tear make this readable at card size; no open flesh or gore. The weapon must read as a real inserted object rather than a stripe painted onto her shoulder.\nUse broad purposeful paint shapes, selective edges, grounded anatomy, ordinary cloth and wood, simplified face and teeth. Avoid glossy 3D, excessive surface detail, added characters, text, border or watermark.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+          ],
+          "reference_image_sha256": "9ebc8e85768f0aadd2d8b58c7118dc7547acc6c85142473894fa9f88b3d7d037",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4c693d8b-03d1-4159-8fcd-7684cbf1dc02.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+          "selected": false
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: precise-object-edit.\nEdit target: the attached Giant Chieftain painting. Keep the 1536 x 1024 landscape illustration.\nMake only this small correction: rotate the giant's EMPTY OUTSTRETCHED HAND ON THE LEFT SIDE OF THE IMAGE so its PALM FACES UP toward the sky. This is the free hand near the lower-left of the giant, NOT the hand gripping the spear near the top. Supinate the wrist and lower forearm naturally, exposing the palm, with relaxed slightly curled fingers pointing outward to image-left. It should be a believable open palm-up gesture, not a downward claw or a backwards-bent wrist. Retain the hand's approximate size and location and the arm's overall extension.\nPreserve the entire remaining painting: exact character identity, roaring expression, grey braids, body and stride, other hand and embedded shoulder spear, clothes, red cloak, original orc standard-bearer, rocks, dust, arrows, lighting, palette, composition and economical oil/acrylic brushwork. No new characters, props, lettering, frame or watermark. Do not redesign the scene or move the spear. Change only the free hand/wrist and the minimum adjacent forearm rotation needed.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+          ],
+          "reference_image_sha256": "5a56fbfbb390d16799d88a9881e413c310466fbb268df1a9bb87e60ea6816ac6",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-146b2407-0a2f-4a60-99d0-2bad26343788.png",
+          "selected": false,
+          "rejection_reason": "Changed the wrong hand; the creator specified the spear-gripping anatomical left hand. This variant was never copied into the project."
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: precise-object-edit.\nThe attached image is the ORIGINAL Giant Chieftain painting before the mistaken free-hand edit. Edit this attached original only. Landscape 1536 x 1024 PNG.\nChange ONLY the giant's SPEAR-GRIPPING LEFT HAND near the TOP CENTER-RIGHT of the image. This is the raised hand clutching the broken stick above the wounded shoulder, NOT the empty hand stretched out toward image-left.\nRotate the spear-gripping wrist/hand to an UNDERHAND, PALM-UP grip. The upturned palm cradles the underside of the same wooden shaft; fingers curl up and around it naturally, thumb closes the grip. Let the palm/inner wrist be legible, replacing the current downward/overhand fist angle. Keep the shaft in the SAME position and direction, its lower end still embedded in the SAME shoulder puncture. Adjust the wrist and minimum adjacent forearm only as needed for natural anatomy. The arm still braces to pull the shaft from the shoulder.\nCRITICAL INVARIANTS: the EMPTY OUTSTRETCHED HAND AT IMAGE-LEFT remains EXACTLY in its original palm-down, fingers-down pose shown here. Do not rotate, raise, reshape or move that free hand or arm. Keep the face, roar, grey braids, identity, body, legs, ragged red cloak, ivory tunic, shoulder wound, orc standard-bearer, banner, battlefield, dust, rocks, sky, all lighting and broad oil/acrylic brushwork unchanged. No new objects or characters, no text or borders. This is one localized hand-grip correction, not a new composition.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+          ],
+          "reference_image_sha256": "5a56fbfbb390d16799d88a9881e413c310466fbb268df1a9bb87e60ea6816ac6",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c46ac2b2-5095-457a-9feb-305be2d7debb.png",
+          "selected": false,
+          "rejection_reason": "The creator rejects the whole Giant Chieftain painting: incoherent hip/leg/boot relationships, an apparent six-fingered hand, and an unconvincing bloody-stick concept. The stick was never compelling. Supersedes the earlier local grip and spear-insertion fixes; rebuild the composition and abandon the embedded-spear idea."
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: stylized-concept.\nCreate a completely NEW original Breachline high-fantasy card painting for GIANT CHIEFTAIN. Landscape 1536 x 1024 PNG, 3:2, illustration only. Do not reproduce any earlier composition. No text, border, watermark or signature.\n\nStory: a wounded chieftain has become furious instead of retreating. A towering, thickset older female giant, about four and a half metres tall, drives uphill toward an enemy outside the frame to the RIGHT, roaring a rallying cry. The moment is a powerful, grounded uphill step. She has a broad weathered giant face, a heavy jaw, blunt nose and grey hair tied in one heavy braid. Practical short ivory tunic, loose charcoal wool trousers, simple worn leather boots and a short patchwork rust-red cloak. Her clothes and wind-tossed braid show battle and movement. One old cloth wrap on the upper arm is lightly bloodstained; a small brow cut and torn sleeve imply damage. Injury is secondary to rage and determination. NO impaled weapon, no broken shaft, no bloody stick, no wound-pulling action.\n\nDesign the entire body anew from coherent anatomy. Full body in a clear side-on three-quarter view, camera level around her waist and far enough away to avoid exaggerated foreshortening. Head, chest and hips all face uphill RIGHT. The nearer leg leads: its thigh joins the near hip, knee bends naturally, and its entire boot is planted on a low stone ledge at the right. The farther leg trails to the left, its toe pushing against lower ground and heel lifted. Exactly two legs, two knees and two boots, separated by readable negative space, both boots pointing in the direction of travel. Show the complete chain from each hip through knee and ankle to its foot. No crossed legs, reversed knees, oversized near shoe or overlapping contradictory footwear. Natural heavy weight over the forward foot.\n\nBoth arms are in simple compact running/charging positions rather than reaching out. Her nearer arm is bent with a firm clenched fist beside her waist; the far arm counterswings slightly behind her. Natural closed fists, four curled fingers and ONE thumb each, economical broad shapes, no fan of fingers, no hand near the head, no item held. Exactly two arms. The fists and forward momentum make her intent clear.\n\nScene: her stride breaks through a low human-built dry-stone breastwork on a dusty upland battlefield. Its ordinary small stone blocks, roughly knee-high to her, help establish her huge scale. A few displaced stones tumble down the slope, her short cloak lashes behind, and drifting smoke and two distant arrows imply battle. NO additional people, soldiers, orcs, bodies or miniature foreground figures. Keep the landscape implied with one long slope, cool storm shadow and an opening of pale blue sky. Chaos comes from wind, dust and motion, not clutter.\n\nPainting: accomplished traditional oil/acrylic fantasy illustration, believable anatomy and materials, loose confident brush shapes of varied size, selective accents on face and planted foot, lost edges in dust. Simplify fingers, teeth, hair and fabric into expressive shapes; do not etch every detail. Broad warm sunlight on the face and ivory tunic against cool slate-blue shadow, restrained rust-red cloth and muted olive-grey ground. Distinct warm/cool colour variation. Clear silhouette and one idea legible at card size. Leave breathing room around the entire figure and feet. This is a serious painted fantasy scene, not glossy 3D, animation, comic or photographic hyperrealism.",
+          "reference_images": [],
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+          "selected": false,
+          "mode": "new composition from scratch",
+          "supersedes_rejected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c46ac2b2-5095-457a-9feb-305be2d7debb.png",
+          "creator_review": "Liked by creator as the base design and pose; preserve pose when adding the requested tree spear."
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: precise-object-edit.\nEdit the attached Giant Chieftain painting. Preserve its exact 1536 x 1024 landscape composition.\n\nONE ADDITION ONLY: put a crude wooden tree-spear in her anatomical RIGHT hand — the NEAR hand low beside her hip, at approximately x540/y490, on the LEFT side of this image. Not the far raised fist at image-right. The existing near fist should close naturally around the shaft at its current location. Preserve the arm, elbow, wrist position, stance and body pose; only the fingers' local contact with the new shaft may change to make the grip convincing.\n\nThe spear is a slender young TREE TRUNK crudely worked into a weapon sized for this giant. The front end has been shaved into a long rough wooden point, with pale freshly cut facets clearly visible: NO metal spearhead. Keep some irregular bark along the shaft, two or three short snapped-off branch nubs, and a small, subtle remnant of exposed roots at the rear butt. It should clearly read as a tree made into a spear, but the roots and stubs must be understated, not a giant root ball or leafy branches. No decoration, rope, magic or blood.\n\nFit the spear to the existing hand, not the figure to the spear. Carry it diagonally forward toward the uphill RIGHT: the small root butt trails down-left behind the grip, the shaved point extends up-right toward the empty space ahead of her. Keep the entire point visible and clear of her face, with believable scale and perspective. The spear is HELD in her hand, never lodged in her body.\n\nEverything else must remain unchanged: exact character face and roar, braid, BOTH legs and boots, hip alignment, other hand, shoulders, arms, tunic, cloak, bandage, rocks, wall, dust, sky, lighting, palette and painted surface. No pose adjustment, reframing, extra fingers, new characters or other additions. Match the existing economical traditional oil/acrylic brushwork. No text, border or watermark.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+          ],
+          "reference_image_sha256": "b28f0d70d824cfa4cff308c02361c3f4af7caedce8c5aac53bc5cd8c301a69d4",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cc5b595a-fb9d-4e53-be9e-baf70b4a31c6.png",
+          "selected": false,
+          "rejection_reason": "Assistant visual QA: the far raised fist was erased/obscured, violating the requested pose preservation. Never saved to the project."
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-08",
+          "prompt": "Use case: compositing, precise-object-edit.\nImage 1 is the APPROVED ORIGINAL PAINTING and the base to edit. Preserve its whole body and BOTH ARM/HAND poses exactly. Image 2 supplies ONLY the rough tree-spear design: bark, shaved wooden point, small roots at butt and short snapped branch nubs. Do not import Image 2's missing far hand.\n\nAdd that tree-spear to Image 1's near RIGHT hand at image coordinates about x540/y490, the low fist beside her hip. Curl only those fingers around the shaft; keep the hand and arm in place. Preserve the giant's pose, body, head, legs, feet and shoulders from Image 1 exactly.\n\nIMPORTANT: keep the OTHER HAND, the raised far fist at x1050/y385, fully present in its ORIGINAL POSE from Image 1. This fist belongs to the far arm in front of her torso. It must not vanish, shrink, shift or be replaced by a branch nub. The spear is held with ONE hand only. Angle the shaft slightly more horizontally than Image 2 so it passes clearly BELOW that raised far fist and does not overlap or conceal it. The shaft goes from the root butt behind and to image-left, through the same near right-hand grip, to the shaved point ahead at image-right. Keep its forward section and point BELOW the raised far hand, roughly around y450, and fully inside the frame. Adjust the spear's orientation to fit the approved pose, never the pose to fit the spear.\n\nMatch Image 2's simple slender whole-tree shaft with retained bark, subtle broken branch stubs, a very small root remnant and clear pale shaved wood facets at the point. No metal spearhead, no decoration or blood. Maintain original expressive oil/acrylic brushwork and all lighting, scenery, clothes and colours from Image 1. No other edits. Landscape PNG 1536 x 1024.",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png",
+            "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cc5b595a-fb9d-4e53-be9e-baf70b4a31c6.png"
+          ],
+          "reference_image_sha256": "b28f0d70d824cfa4cff308c02361c3f4af7caedce8c5aac53bc5cd8c301a69d4",
+          "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+          "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-67cd1db3-06d2-4624-9024-4a90d3dd1bd1.png",
+          "selected": true,
+          "reference_roles": [
+            "Approved pose and base painting",
+            "Tree-spear design only"
+          ]
         }
       ],
-      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified"
+      "technical_validation": "PNG and JPEG dimensions, file signatures and checksums verified",
+      "original_brief": "A wide, side-on view of a tall ridge in bright wind and moving cloud shadow. An older female giant chieftain, shown complete from head to foot and facing LEFT, has one hand gripping a broken spear shaft stuck high in her shoulder and is pulling it out like a splinter, without pausing her stride. Her eyes stay fixed on something off-screen LEFT, and her face is hardening into fury, with a simple open-mouthed shout and no detail in the teeth. She has grey braids and a heavy, human-like face with a broad nose. An old wagon tarp, belted as a cloak and pinned with a bent plough blade, is her only armour, and there's very little blood. A coarse, heavy-browed orc with irregular tusks struggles to keep pace below her, carrying a three-spiked standard that shows her size. Broad painted shapes rather than surface texture.",
+      "creator_feedback": "The creator likes the rebuilt uphill giant and explicitly requests NO further pose changes. Add a wooden spear made from a tree to her anatomical right hand: an obvious shaved wooden point, subtle exposed roots at the butt and a few snapped branch stubs.",
+      "current_prompt": "Use case: compositing, precise-object-edit.\nImage 1 is the APPROVED ORIGINAL PAINTING and the base to edit. Preserve its whole body and BOTH ARM/HAND poses exactly. Image 2 supplies ONLY the rough tree-spear design: bark, shaved wooden point, small roots at butt and short snapped branch nubs. Do not import Image 2's missing far hand.\n\nAdd that tree-spear to Image 1's near RIGHT hand at image coordinates about x540/y490, the low fist beside her hip. Curl only those fingers around the shaft; keep the hand and arm in place. Preserve the giant's pose, body, head, legs, feet and shoulders from Image 1 exactly.\n\nIMPORTANT: keep the OTHER HAND, the raised far fist at x1050/y385, fully present in its ORIGINAL POSE from Image 1. This fist belongs to the far arm in front of her torso. It must not vanish, shrink, shift or be replaced by a branch nub. The spear is held with ONE hand only. Angle the shaft slightly more horizontally than Image 2 so it passes clearly BELOW that raised far fist and does not overlap or conceal it. The shaft goes from the root butt behind and to image-left, through the same near right-hand grip, to the shaved point ahead at image-right. Keep its forward section and point BELOW the raised far hand, roughly around y450, and fully inside the frame. Adjust the spear's orientation to fit the approved pose, never the pose to fit the spear.\n\nMatch Image 2's simple slender whole-tree shaft with retained bark, subtle broken branch stubs, a very small root remnant and clear pale shaved wood facets at the point. No metal spearhead, no decoration or blood. Maintain original expressive oil/acrylic brushwork and all lighting, scenery, clothes and colours from Image 1. No other edits. Landscape PNG 1536 x 1024.",
+      "updated_on": "2026-11-08",
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-07",
+          "feedback": "The yelling spear-wounded giant needs a more chaotic scene. Occasional secondary on-screen enemies are allowed."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "Remove the added foreground soldiers: their perspective is wrong. The bloody stick looks unattached; make the spear clearly embedded in the shoulder."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "Rotate the anatomical left hand holding the broken spear to a palm-up underhand grip. The free hand at image-left was fine and must retain its original palm-down pose. The first attempt changed the wrong hand and is rejected."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "The creator rejects the whole Giant Chieftain painting: incoherent hip/leg/boot relationships, an apparent six-fingered hand, and an unconvincing bloody-stick concept. The stick was never compelling. Supersedes the earlier local grip and spear-insertion fixes; rebuild the composition and abandon the embedded-spear idea."
+        },
+        {
+          "date": "2026-11-08",
+          "feedback": "The creator likes the rebuilt uphill giant and explicitly requests NO further pose changes. Add a wooden spear made from a tree to her anatomical right hand: an obvious shaved wooden point, subtle exposed roots at the butt and a few snapped branch stubs."
+        }
+      ],
+      "reviewed_on": "2026-11-08"
     },
     {
       "file": "thicket-boar.png",
@@ -1074,9 +1301,20 @@
   ],
   "completed": 26,
   "generation_method": "built-in image_gen",
-  "review_status": "awaiting_creator_review",
-  "generation_attempt_count": 32,
+  "review_status": "creator_feedback_applied",
+  "generation_attempt_count": 44,
   "gallery": "SET4_GALLERY.html",
   "validation_file": "SET4_VALIDATION.json",
-  "selection_note": "One selected PNG and one JPEG per brief. Six superseded generation attempts remain only in the tool cache, not in the project. Add reviewed selections to CARD_ART_FINAL.json after creator approval. Existing finalized artwork is unchanged."
+  "selection_note": "One selected PNG and one game JPEG per card. Creator review is recorded per image. Superseded generated variants remain only in tool history/cache; the preferred first huntress is restored. Historical prompts retain their original text and are superseded by current briefs and creator feedback.",
+  "revision_log": "ART_REVISIONS_SET4_2026-11-08.json",
+  "pending_revision_files": [],
+  "prompt_usage_note": "The prompt field records original generation. Use the current brief, creator_feedback and current_prompt when available; current art-direction guidance overrides old off-screen-only and superseded armour/staging instructions.",
+  "completed_creator_revisions": 11,
+  "successful_image_generations": 44,
+  "failed_tool_requests_in_this_review": 0,
+  "revision_logs": [
+    "ART_REVISIONS_SET4_2026-11-07.json",
+    "ART_REVISIONS_SET4_2026-11-08.json"
+  ],
+  "last_updated": "2026-11-08"
 }

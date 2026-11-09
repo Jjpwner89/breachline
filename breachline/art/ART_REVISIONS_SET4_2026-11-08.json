@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-08",
+  "method": "built-in image_gen",
+  "status": "complete",
+  "creator_feedback": {
+    "oath-shieldbearer.png": "The shield-carrying hand must be entirely behind the shield and invisible.",
+    "giant-chieftain.png": "The creator likes the rebuilt uphill giant and explicitly requests NO further pose changes. Add a wooden spear made from a tree to her anatomical right hand: an obvious shaved wooden point, subtle exposed roots at the butt and a few snapped branch stubs.",
+    "indebted-squire.png": "The creator really likes the poorer-armoured, frightened squire rework; preserve this image.",
+    "threshold-adept.png": "The creator says the whole-scene Threshold Adept rework is really good; preserve this image."
+  },
+  "positive_feedback": [
+    "indebted-squire.png",
+    "threshold-adept.png"
+  ],
+  "changes": [
+    {
+      "file": "oath-shieldbearer.png",
+      "web_file": "web/oath-shieldbearer.jpg",
+      "previous": {
+        "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-e785f708-7826-4218-ae4d-bec8fd10836e.png",
+        "sha256": "7cbf2426280394324eccc80a8429e7ddfe325df1c2f5dd1c4c7fa092305a33e3",
+        "web_sha256": "c4e4532a432cc5071d490b1677c064ea4d96455b948ac6831fc7c6db0892548c"
+      },
+      "selected_source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-60133c34-9437-47b9-a4f4-ba92ddd80e15.png",
+      "sha256": "3b8975c10c5b253705a7630a9fd48eab160a13e76c2ed964293a7a47b1da88cc",
+      "web_sha256": "bf5c7268cf4deee082bb7393d829db1461dcf4bf3c659408ea5922b1bc9a9ec0",
+      "prompt": "Use case: precise-object-edit.\nAsset: original Breachline fantasy card illustration, landscape PNG 1536 x 1024, opaque.\nImage 1 is the edit target. Make ONE small physical correction: the shieldbearer's shield-carrying hand must be completely hidden BEHIND the wooden shield. Remove the visible fingers and thumb currently wrapped around the shield's near vertical edge. The wooden shield should naturally occlude her entire gripping hand, held by an unseen rear handle. No hand, fingers, thumb or knuckles should be visible on the front face or either side of that shield. Adjust only the local hand/shield-edge overlap as necessary.\nPreserve everything else: both character identities and expressions, natural shared walking step, injured soldier's arm across her shoulders, her OTHER hand supporting his waist, both bodies and all limbs, composition, shield size/shape/wood and spent arrow, ivory quilted jerkin, sunlight, blue sky, dusty bank, palette and original oil/acrylic brushwork. Do not remove the supporting hand at the soldier's waist or his hand across her shoulder. No new people or objects, no text, frame or watermark. Keep the existing painting, not a redesign.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-shieldbearer.png"
+      ],
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-e785f708-7826-4218-ae4d-bec8fd10836e.png"
+    },
+    {
+      "file": "giant-chieftain.png",
+      "web_file": "web/giant-chieftain.jpg",
+      "previous": {
+        "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4c693d8b-03d1-4159-8fcd-7684cbf1dc02.png",
+        "sha256": "9ebc8e85768f0aadd2d8b58c7118dc7547acc6c85142473894fa9f88b3d7d037",
+        "web_sha256": "f48dd1b0c1c667db65b0b763fd208ecdc93ae798e8645f0df69a2da8e407443d"
+      },
+      "selected_source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+      "sha256": "5a56fbfbb390d16799d88a9881e413c310466fbb268df1a9bb87e60ea6816ac6",
+      "web_sha256": "fcae0de6f0d40349426f57124dcbf057caffa3adfebea14e66014eb5985bd0c9",
+      "prompt": "Use case: precise-object-edit.\nAsset: original Breachline fantasy card illustration, landscape PNG 1536 x 1024, opaque.\nImage 1 is the edit target. Rework this battle painting for believable perspective and a physically clear embedded spear.\nKEEP the older, grey-braided female giant chieftain's identity, furious open-mouthed roar, powerful advancing stride toward off-screen left, simple ivory tunic, ragged red wagon-tarp cloak, and expressive economical traditional oil/acrylic painting. Keep the original coarse, tusked orc standard-bearer on the right as a secondary figure behind her, with believable shared ground perspective. Keep the dusty ridge, storm shadow broken by pale blue sky and hard warm light.\nREMOVE BOTH newly added human enemy soldiers in the bottom foreground and lower-left. Replace them with continuous ridge ground, rocks and wind-driven dust matching the scene's perspective. Do not replace them with other figures. Preserve chaos with a few airborne arrows, dust, scattering stones and torn windblown cloth; no miniature people pasted near her feet.\nREBUILD the shoulder/spear/hand relationship. A SHORT broken wooden spear shaft remains firmly EMBEDDED in the giant's outer shoulder on image RIGHT, just below the shoulder cap. Show one continuous straight shaft projecting diagonally upward and outward from that shoulder. Its inner end must disappear into a small dark puncture through the torn ivory sleeve: torn cloth partly overlaps and occludes the shaft's base, with a little localized red staining. The metal spearhead is wholly buried and INVISIBLE. There must be no visible floating bloody tip, no exposed shaft lying across the shoulder surface, no exit wound and no stick crossing behind the neck. Her nearby raised hand grips the exposed shaft just beyond the entry point, beginning to wrench it out; adjust the elbow, wrist and sleeve naturally for a coherent arm. The spear is still lodged, not already pulled out. A small simple contact shadow and cloth tear make this readable at card size; no open flesh or gore. The weapon must read as a real inserted object rather than a stripe painted onto her shoulder.\nUse broad purposeful paint shapes, selective edges, grounded anatomy, ordinary cloth and wood, simplified face and teeth. Avoid glossy 3D, excessive surface detail, added characters, text, border or watermark.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+      ],
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4c693d8b-03d1-4159-8fcd-7684cbf1dc02.png"
+    },
+    {
+      "file": "giant-chieftain.png",
+      "web_file": "web/giant-chieftain.jpg",
+      "previous": {
+        "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+        "sha256": "5a56fbfbb390d16799d88a9881e413c310466fbb268df1a9bb87e60ea6816ac6",
+        "web_sha256": "fcae0de6f0d40349426f57124dcbf057caffa3adfebea14e66014eb5985bd0c9"
+      },
+      "selected_source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c46ac2b2-5095-457a-9feb-305be2d7debb.png",
+      "sha256": "80f830d208a198afbaa7a7db49c4512cb2d5f182843a4cefe3ad8bc684011e88",
+      "web_sha256": "0dd647085f9917cc3bbb502a1baed37ebb8056377ead13829b19c70134c5c5b3",
+      "prompt": "Use case: precise-object-edit.\nThe attached image is the ORIGINAL Giant Chieftain painting before the mistaken free-hand edit. Edit this attached original only. Landscape 1536 x 1024 PNG.\nChange ONLY the giant's SPEAR-GRIPPING LEFT HAND near the TOP CENTER-RIGHT of the image. This is the raised hand clutching the broken stick above the wounded shoulder, NOT the empty hand stretched out toward image-left.\nRotate the spear-gripping wrist/hand to an UNDERHAND, PALM-UP grip. The upturned palm cradles the underside of the same wooden shaft; fingers curl up and around it naturally, thumb closes the grip. Let the palm/inner wrist be legible, replacing the current downward/overhand fist angle. Keep the shaft in the SAME position and direction, its lower end still embedded in the SAME shoulder puncture. Adjust the wrist and minimum adjacent forearm only as needed for natural anatomy. The arm still braces to pull the shaft from the shoulder.\nCRITICAL INVARIANTS: the EMPTY OUTSTRETCHED HAND AT IMAGE-LEFT remains EXACTLY in its original palm-down, fingers-down pose shown here. Do not rotate, raise, reshape or move that free hand or arm. Keep the face, roar, grey braids, identity, body, legs, ragged red cloak, ivory tunic, shoulder wound, orc standard-bearer, banner, battlefield, dust, rocks, sky, all lighting and broad oil/acrylic brushwork unchanged. No new objects or characters, no text or borders. This is one localized hand-grip correction, not a new composition.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+      ],
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+      "change": "Spear-gripping hand rotated palm-up; free hand remains original."
+    },
+    {
+      "file": "giant-chieftain.png",
+      "web_file": "web/giant-chieftain.jpg",
+      "previous": {
+        "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-c46ac2b2-5095-457a-9feb-305be2d7debb.png",
+        "sha256": "80f830d208a198afbaa7a7db49c4512cb2d5f182843a4cefe3ad8bc684011e88",
+        "web_sha256": "0dd647085f9917cc3bbb502a1baed37ebb8056377ead13829b19c70134c5c5b3"
+      },
+      "previous_rejected": true,
+      "rejection_reason": "The creator rejects the whole Giant Chieftain painting: incoherent hip/leg/boot relationships, an apparent six-fingered hand, and an unconvincing bloody-stick concept. The stick was never compelling. Supersedes the earlier local grip and spear-insertion fixes; rebuild the composition and abandon the embedded-spear idea.",
+      "selected_source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+      "sha256": "b28f0d70d824cfa4cff308c02361c3f4af7caedce8c5aac53bc5cd8c301a69d4",
+      "web_sha256": "6611a7fa42643bce751dbffb50f1b849b4f6fde940d7ab206d5378c2b7df1b5a",
+      "prompt": "Use case: stylized-concept.\nCreate a completely NEW original Breachline high-fantasy card painting for GIANT CHIEFTAIN. Landscape 1536 x 1024 PNG, 3:2, illustration only. Do not reproduce any earlier composition. No text, border, watermark or signature.\n\nStory: a wounded chieftain has become furious instead of retreating. A towering, thickset older female giant, about four and a half metres tall, drives uphill toward an enemy outside the frame to the RIGHT, roaring a rallying cry. The moment is a powerful, grounded uphill step. She has a broad weathered giant face, a heavy jaw, blunt nose and grey hair tied in one heavy braid. Practical short ivory tunic, loose charcoal wool trousers, simple worn leather boots and a short patchwork rust-red cloak. Her clothes and wind-tossed braid show battle and movement. One old cloth wrap on the upper arm is lightly bloodstained; a small brow cut and torn sleeve imply damage. Injury is secondary to rage and determination. NO impaled weapon, no broken shaft, no bloody stick, no wound-pulling action.\n\nDesign the entire body anew from coherent anatomy. Full body in a clear side-on three-quarter view, camera level around her waist and far enough away to avoid exaggerated foreshortening. Head, chest and hips all face uphill RIGHT. The nearer leg leads: its thigh joins the near hip, knee bends naturally, and its entire boot is planted on a low stone ledge at the right. The farther leg trails to the left, its toe pushing against lower ground and heel lifted. Exactly two legs, two knees and two boots, separated by readable negative space, both boots pointing in the direction of travel. Show the complete chain from each hip through knee and ankle to its foot. No crossed legs, reversed knees, oversized near shoe or overlapping contradictory footwear. Natural heavy weight over the forward foot.\n\nBoth arms are in simple compact running/charging positions rather than reaching out. Her nearer arm is bent with a firm clenched fist beside her waist; the far arm counterswings slightly behind her. Natural closed fists, four curled fingers and ONE thumb each, economical broad shapes, no fan of fingers, no hand near the head, no item held. Exactly two arms. The fists and forward momentum make her intent clear.\n\nScene: her stride breaks through a low human-built dry-stone breastwork on a dusty upland battlefield. Its ordinary small stone blocks, roughly knee-high to her, help establish her huge scale. A few displaced stones tumble down the slope, her short cloak lashes behind, and drifting smoke and two distant arrows imply battle. NO additional people, soldiers, orcs, bodies or miniature foreground figures. Keep the landscape implied with one long slope, cool storm shadow and an opening of pale blue sky. Chaos comes from wind, dust and motion, not clutter.\n\nPainting: accomplished traditional oil/acrylic fantasy illustration, believable anatomy and materials, loose confident brush shapes of varied size, selective accents on face and planted foot, lost edges in dust. Simplify fingers, teeth, hair and fabric into expressive shapes; do not etch every detail. Broad warm sunlight on the face and ivory tunic against cool slate-blue shadow, restrained rust-red cloth and muted olive-grey ground. Distinct warm/cool colour variation. Clear silhouette and one idea legible at card size. Leave breathing room around the entire figure and feet. This is a serious painted fantasy scene, not glossy 3D, animation, comic or photographic hyperrealism.",
+      "reference_images": [],
+      "mode": "new composition from scratch",
+      "change": "Rebuilt pose and scene; abandoned embedded spear and old composition."
+    },
+    {
+      "file": "giant-chieftain.png",
+      "web_file": "web/giant-chieftain.jpg",
+      "previous": {
+        "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+        "sha256": "b28f0d70d824cfa4cff308c02361c3f4af7caedce8c5aac53bc5cd8c301a69d4",
+        "web_sha256": "6611a7fa42643bce751dbffb50f1b849b4f6fde940d7ab206d5378c2b7df1b5a"
+      },
+      "previous_liked_base": true,
+      "selected_source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-67cd1db3-06d2-4624-9024-4a90d3dd1bd1.png",
+      "sha256": "c8fa0273168e6233158f4c57600a7f18f4fe9d5e534feef209ecf20a558cede3",
+      "web_sha256": "a46063ebe0152feb3c3a31dd0f9f2c93a283445c2c8d10e2660ea5465ae4e587",
+      "prompt": "Use case: compositing, precise-object-edit.\nImage 1 is the APPROVED ORIGINAL PAINTING and the base to edit. Preserve its whole body and BOTH ARM/HAND poses exactly. Image 2 supplies ONLY the rough tree-spear design: bark, shaved wooden point, small roots at butt and short snapped branch nubs. Do not import Image 2's missing far hand.\n\nAdd that tree-spear to Image 1's near RIGHT hand at image coordinates about x540/y490, the low fist beside her hip. Curl only those fingers around the shaft; keep the hand and arm in place. Preserve the giant's pose, body, head, legs, feet and shoulders from Image 1 exactly.\n\nIMPORTANT: keep the OTHER HAND, the raised far fist at x1050/y385, fully present in its ORIGINAL POSE from Image 1. This fist belongs to the far arm in front of her torso. It must not vanish, shrink, shift or be replaced by a branch nub. The spear is held with ONE hand only. Angle the shaft slightly more horizontally than Image 2 so it passes clearly BELOW that raised far fist and does not overlap or conceal it. The shaft goes from the root butt behind and to image-left, through the same near right-hand grip, to the shaved point ahead at image-right. Keep its forward section and point BELOW the raised far hand, roughly around y450, and fully inside the frame. Adjust the spear's orientation to fit the approved pose, never the pose to fit the spear.\n\nMatch Image 2's simple slender whole-tree shaft with retained bark, subtle broken branch stubs, a very small root remnant and clear pale shaved wood facets at the point. No metal spearhead, no decoration or blood. Maintain original expressive oil/acrylic brushwork and all lighting, scenery, clothes and colours from Image 1. No other edits. Landscape PNG 1536 x 1024.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png",
+        "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cc5b595a-fb9d-4e53-be9e-baf70b4a31c6.png"
+      ],
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+      "change": "Tree-spear added to anatomical right hand while preserving approved pose and opposite fist."
+    }
+  ],
+  "pending": [],
+  "generated_revisions": 5,
+  "validation": {
+    "date": "2026-11-08",
+    "changed_card_images": [
+      "giant-chieftain.png",
+      "oath-shieldbearer.png"
+    ],
+    "other_set4_images_verified_unchanged": 24,
+    "liked_images_preserved": true,
+    "all_pngs": [
+      1536,
+      1024
+    ],
+    "all_jpegs": [
+      768,
+      512
+    ],
+    "gallery_images": 26,
+    "gallery_links_valid": true,
+    "one_selected_image_per_card": true,
+    "final_card_art_index_unchanged": true,
+    "latest_followup": {
+      "changed_card_images": [
+        "giant-chieftain.png"
+      ],
+      "other_set4_images_verified_unchanged": 25,
+      "selected_dimensions": [
+        1536,
+        1024
+      ],
+      "jpeg_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Approved uphill body pose retained; right hand holds a tree-spear with shaved point, subtle roots and branch stubs; opposite raised fist restored and visible. Awaiting creator feedback."
+    }
+  },
+  "discarded_attempts": [
+    {
+      "method": "built-in image_gen",
+      "date": "2026-11-08",
+      "prompt": "Use case: precise-object-edit.\nEdit target: the attached Giant Chieftain painting. Keep the 1536 x 1024 landscape illustration.\nMake only this small correction: rotate the giant's EMPTY OUTSTRETCHED HAND ON THE LEFT SIDE OF THE IMAGE so its PALM FACES UP toward the sky. This is the free hand near the lower-left of the giant, NOT the hand gripping the spear near the top. Supinate the wrist and lower forearm naturally, exposing the palm, with relaxed slightly curled fingers pointing outward to image-left. It should be a believable open palm-up gesture, not a downward claw or a backwards-bent wrist. Retain the hand's approximate size and location and the arm's overall extension.\nPreserve the entire remaining painting: exact character identity, roaring expression, grey braids, body and stride, other hand and embedded shoulder spear, clothes, red cloak, original orc standard-bearer, rocks, dust, arrows, lighting, palette, composition and economical oil/acrylic brushwork. No new characters, props, lettering, frame or watermark. Do not redesign the scene or move the spear. Change only the free hand/wrist and the minimum adjacent forearm rotation needed.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+      ],
+      "reference_image_sha256": "5a56fbfbb390d16799d88a9881e413c310466fbb268df1a9bb87e60ea6816ac6",
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f50f6ab1-916b-4d46-863e-a9212b8b737d.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-146b2407-0a2f-4a60-99d0-2bad26343788.png",
+      "selected": false,
+      "rejection_reason": "Changed the wrong hand; the creator specified the spear-gripping anatomical left hand. This variant was never copied into the project."
+    },
+    {
+      "method": "built-in image_gen",
+      "date": "2026-11-08",
+      "prompt": "Use case: precise-object-edit.\nEdit the attached Giant Chieftain painting. Preserve its exact 1536 x 1024 landscape composition.\n\nONE ADDITION ONLY: put a crude wooden tree-spear in her anatomical RIGHT hand — the NEAR hand low beside her hip, at approximately x540/y490, on the LEFT side of this image. Not the far raised fist at image-right. The existing near fist should close naturally around the shaft at its current location. Preserve the arm, elbow, wrist position, stance and body pose; only the fingers' local contact with the new shaft may change to make the grip convincing.\n\nThe spear is a slender young TREE TRUNK crudely worked into a weapon sized for this giant. The front end has been shaved into a long rough wooden point, with pale freshly cut facets clearly visible: NO metal spearhead. Keep some irregular bark along the shaft, two or three short snapped-off branch nubs, and a small, subtle remnant of exposed roots at the rear butt. It should clearly read as a tree made into a spear, but the roots and stubs must be understated, not a giant root ball or leafy branches. No decoration, rope, magic or blood.\n\nFit the spear to the existing hand, not the figure to the spear. Carry it diagonally forward toward the uphill RIGHT: the small root butt trails down-left behind the grip, the shaved point extends up-right toward the empty space ahead of her. Keep the entire point visible and clear of her face, with believable scale and perspective. The spear is HELD in her hand, never lodged in her body.\n\nEverything else must remain unchanged: exact character face and roar, braid, BOTH legs and boots, hip alignment, other hand, shoulders, arms, tunic, cloak, bandage, rocks, wall, dust, sky, lighting, palette and painted surface. No pose adjustment, reframing, extra fingers, new characters or other additions. Match the existing economical traditional oil/acrylic brushwork. No text, border or watermark.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/giant-chieftain.png"
+      ],
+      "reference_image_sha256": "b28f0d70d824cfa4cff308c02361c3f4af7caedce8c5aac53bc5cd8c301a69d4",
+      "reference_source_at_generation": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-cc5b595a-fb9d-4e53-be9e-baf70b4a31c6.png",
+      "selected": false,
+      "rejection_reason": "Assistant visual QA: the far raised fist was erased/obscured, violating the requested pose preservation. Never saved to the project."
+    }
+  ],
+  "positive_feedback_details": [
+    {
+      "file": "giant-chieftain.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-f2ae9e72-e77e-453d-9ac5-8e8c40ec44ca.png",
+      "feedback": "New uphill design is much better; pose is locked. Tree-spear addition requested."
+    }
+  ]
+}

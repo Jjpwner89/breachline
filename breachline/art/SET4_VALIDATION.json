@@ -5,7 +5,7 @@
   "created_pngs": 26,
   "created_jpegs": 26,
   "incomplete_cards": [],
-  "generation_attempts": 32,
+  "generation_attempts": 44,
   "project_image_variants_per_card": 1,
   "preexisting_image_files_verified_unchanged": 221,
   "all_png_dimensions": [
@@ -18,7 +18,7 @@
   ],
   "duplicate_selected_pngs": 0,
   "gallery": "SET4_GALLERY.html",
-  "creator_review": "pending",
+  "creator_review": "feedback_received",
   "final_card_art_index_unchanged": true,
   "files": [
     {
@@ -32,8 +32,8 @@
         768,
         512
       ],
-      "sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
-      "web_sha256": "01b2d06a43a708dd51fb279aaf9be2544d8ae2930cbaa72a43b0eb328e809b70"
+      "sha256": "3b8975c10c5b253705a7630a9fd48eab160a13e76c2ed964293a7a47b1da88cc",
+      "web_sha256": "bf5c7268cf4deee082bb7393d829db1461dcf4bf3c659408ea5922b1bc9a9ec0"
     },
     {
       "file": "pride-huntress.png",
@@ -46,8 +46,8 @@
         768,
         512
       ],
-      "sha256": "c4528c0093003b1e1c465c3a208ad6ff144957c49487d63886462a4c8f329717",
-      "web_sha256": "ede859fc9b0e8118a2a33d629404a485561e43d151d172d1f6cc98e45ee4b316"
+      "sha256": "d13b571c4f5257a98358627cb54de4a157f9727ad47fe4fab2de1f462afd50b7",
+      "web_sha256": "1eb9a320d0f52c4465c870ac5fdb2a32417d3568a3b76c10b5cee1ac72bc56a3"
     },
     {
       "file": "pride-matriarch.png",
@@ -102,8 +102,8 @@
         768,
         512
       ],
-      "sha256": "9e43463bf282b28dab48b80ac843b6260c4e95fda6bfa0bda6ed6d0363dd8aa1",
-      "web_sha256": "ab7a36862a2002c00276375e8468c03210b1d94c2062db11bc39194f3fb5336f"
+      "sha256": "173810d25527b7286fded46b23bba0e935bea2172f6ed2d777266d01dac7ef2a",
+      "web_sha256": "de44e8b2114fd92de73fef6c3cb49fb33623e35f0bad125746a21c7dd743efa4"
     },
     {
       "file": "conclave-examiner.png",
@@ -172,8 +172,8 @@
         768,
         512
       ],
-      "sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
-      "web_sha256": "60880105a69cc2e9073052011e9a5a8f616f378cec6558b764c27668d8fff114"
+      "sha256": "cb40c5f9ec5a1aad21e7de1cbe2531e688527a09100581dc1dd0eea4721d4744",
+      "web_sha256": "e9a64fecacaba6192f750646f9cf4c7fef593944b579982394af4a4d80cdf215"
     },
     {
       "file": "hunted.png",
@@ -242,8 +242,8 @@
         768,
         512
       ],
-      "sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
-      "web_sha256": "2d010fca8be458cdbc4a8db337b6b923491ec823a21b7278a26d7b1e8d3b4c75"
+      "sha256": "223b66f691775a06d900b02cbeb0fd593d7b0055b12b611f64e0cf1c3d023437",
+      "web_sha256": "4b75690370c719a99c1c4133b50e1e393f217f0749b9bc42e5152f6714efbdef"
     },
     {
       "file": "goblin-firepot.png",
@@ -284,8 +284,8 @@
         768,
         512
       ],
-      "sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
-      "web_sha256": "51b49b3952b7f088d4369a16f435630f3184e928135708e9ea89595ada506a46"
+      "sha256": "c8fa0273168e6233158f4c57600a7f18f4fe9d5e534feef209ecf20a558cede3",
+      "web_sha256": "a46063ebe0152feb3c3a31dd0f9f2c93a283445c2c8d10e2660ea5465ae4e587"
     },
     {
       "file": "thicket-boar.png",
@@ -385,5 +385,51 @@
       "sha256": "2a005949de8e247abc6aa385a8f32a1f5662e734a0239b4c213a8e16a99a53da",
       "web_sha256": "597da48a14d49c4ff8673c6f517afde731361e670ffe54fa8a67b72c700169eb"
     }
-  ]
+  ],
+  "last_updated": "2026-11-08",
+  "pending_revision_files": [],
+  "revision_record": "ART_REVISIONS_SET4_2026-11-08.json",
+  "approved_unchanged_images": [
+    "brass-siege-walker.png",
+    "cinderfall.png",
+    "goblin-firepot.png",
+    "indebted-squire.png",
+    "threshold-adept.png"
+  ],
+  "latest_review_validation": {
+    "date": "2026-11-08",
+    "changed_card_images": [
+      "giant-chieftain.png",
+      "oath-shieldbearer.png"
+    ],
+    "other_set4_images_verified_unchanged": 24,
+    "liked_images_preserved": true,
+    "all_pngs": [
+      1536,
+      1024
+    ],
+    "all_jpegs": [
+      768,
+      512
+    ],
+    "gallery_images": 26,
+    "gallery_links_valid": true,
+    "one_selected_image_per_card": true,
+    "final_card_art_index_unchanged": true,
+    "latest_followup": {
+      "changed_card_images": [
+        "giant-chieftain.png"
+      ],
+      "other_set4_images_verified_unchanged": 25,
+      "selected_dimensions": [
+        1536,
+        1024
+      ],
+      "jpeg_dimensions": [
+        768,
+        512
+      ],
+      "visual_review": "Approved uphill body pose retained; right hand holds a tree-spear with shaved point, subtle roots and branch stubs; opposite raised fist restored and visible. Awaiting creator feedback."
+    }
+  }
 }

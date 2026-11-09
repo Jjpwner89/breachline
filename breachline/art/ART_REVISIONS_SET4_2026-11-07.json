@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-07",
+  "method": "built-in image_gen",
+  "status": "complete",
+  "creator_feedback": {
+    "oath-shieldbearer.png": "The belt-grabbing woman's body is unnaturally twisted; rebuild a believable supporting action.",
+    "threshold-adept.png": "The WHOLE scene looks like Pixar, not just the face. Rebuild staging, lighting, colour and rendering.",
+    "pride-huntress.png": "The wide revision has an extra leg. The creator prefers the first, closer painting.",
+    "giant-chieftain.png": "The yelling spear-wounded giant needs a more chaotic scene. Occasional secondary on-screen enemies are allowed.",
+    "barrow-colossus.png": "Creature scale is inconsistent with its oversized helmets. Keep human equipment human-sized.",
+    "indebted-squire.png": "Keep the ginger squire with the knotted wrist, but give him worse armour and make him look more scared."
+  },
+  "positive_feedback": [
+    "brass-siege-walker.png",
+    "cinderfall.png",
+    "goblin-firepot.png"
+  ],
+  "enemy_visibility": "Occasional on-screen enemies allowed, secondary to the action or effect.",
+  "initial_tool_errors": [
+    {
+      "file": "giant-chieftain.png",
+      "status": "rejected",
+      "error": "image generation failed: connection failed: error sending request"
+    },
+    {
+      "file": "indebted-squire.png",
+      "status": "rejected",
+      "error": "image generation failed: connection failed: error sending request"
+    },
+    {
+      "file": "threshold-adept.png",
+      "status": "rejected",
+      "error": "image generation failed: connection failed: error sending request"
+    },
+    {
+      "file": "barrow-colossus.png",
+      "status": "rejected",
+      "error": "image generation failed: connection failed: error sending request"
+    }
+  ],
+  "changes": [
+    {
+      "file": "oath-shieldbearer.png",
+      "kind": "generated_revision",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-bbb5913d-068b-446c-b823-3634de78e808.png",
+      "previous_sha256": "d4fb64cc153034e4ef13fe1fb5c9d52f01cf846821a6dce9f0bdcabf8fa4d5e9",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-e785f708-7826-4218-ae4d-bec8fd10836e.png",
+      "sha256": "7cbf2426280394324eccc80a8429e7ddfe325df1c2f5dd1c4c7fa092305a33e3",
+      "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRedesign this action completely to fix the unnaturally twisted anatomy. Keep the ordinary broad-faced sunburnt young woman, ivory padded jerkin, tall plain wooden shield with one spent arrow, wounded companion, warm dusty roadside and clean blue sky. Do NOT preserve the original pelvis, legs, backward reach or belt grip. Show the woman and injured soldier moving together to the RIGHT in a natural side-on three-quarter view. His nearer arm lies across her shoulders; her right arm supports his waist. Her left arm carries the shield on the outer side of the pair, protecting them from danger to the left. Both torsos and both pairs of legs face the direction of travel; her neck is only slightly turned toward him. Rebuild the whole pose as a believable shared walking step, neither body facing backward, no corkscrew spine, no backward knees. Keep all feet in frame and the support action clearly readable; exactly two arms and two legs per person. The companion is subdued and loosely painted, not another hero. Simple roadside bank, no additional soldiers.",
+      "review_status": "revised_awaiting_creator_review"
+    },
+    {
+      "file": "pride-huntress.png",
+      "kind": "restore_creator_preferred",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-8327f601-9dec-4572-8c06-f768a33fa4df.png",
+      "previous_sha256": "c4528c0093003b1e1c465c3a208ad6ff144957c49487d63886462a4c8f329717",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-a7b3713c-08a3-4fa3-bf31-a63b94df24a1.png",
+      "sha256": "d13b571c4f5257a98358627cb54de4a157f9727ad47fe4fab2de1f462afd50b7",
+      "prompt": null,
+      "review_status": "creator_preferred_version"
+    },
+    {
+      "file": "threshold-adept.png",
+      "kind": "generated_revision",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-dabfafd3-921b-4667-9de0-30d5da27f78b.png",
+      "previous_sha256": "9e43463bf282b28dab48b80ac843b6260c4e95fda6bfa0bda6ed6d0363dd8aa1",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-7c47bffa-7cb0-4bda-9928-bf9b5114e090.png",
+      "sha256": "173810d25527b7286fded46b23bba0e935bea2172f6ed2d777266d01dac7ef2a",
+      "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nEntirely new composition, design and atmosphere for THRESHOLD ADEPT. This is a magic-user who has exchanged places with a porter, and each has carried the other's illumination along. The WHOLE scene must feel like a traditional painted fantasy illustration, not an animated-film still. Use an oblique elevated view into a narrow, sparsely implied closing market, with an irregular diagonal of a folded awning and one plain plaster wall. A lean white young adult man about twenty-five, small natural eyes, long angular ordinary face and cropped dark hair, wears a plain faded teal quilted waistcoat with rolled linen sleeves and muddy boots. Full figure at the right-middle, moving diagonally away, a weighty unshowy step, attention turned toward the displaced porter; his hand is lowered after finishing a small gesture. Several paces behind at the left is a stout working porter holding a crate, partly in shadow, quietly startled, painted with fewer strokes. The adept carries a soft RECTANGULAR PATCH of muted amber indoor light across his shirt and the pavement, although he stands in cool open dusk; the porter and crate carry a patch of cool slate-blue dusk inside the otherwise warm-toned recess. The light belongs to surfaces and fabric, not outlines around bodies. It is an inexplicable displaced patch of illumination, no glowing skin, no neon blue aura, no halos, no magic circles, no portals. Restrained slate, umber, desaturated teal and small amber passages, unequal value masses, irregular expressive oil brushwork and atmospheric soft edges; selective sharpness at the displaced light and the adept's turned attention. Avoid symmetrical two-character stage blocking, jaunty pose, oversized expressive eyes, inflated boots, rounded toy-like architecture, clean animated-film colour gradients or uniform orange/teal rim lighting. Sparse environment with enough quiet negative space; one small magic event.",
+      "review_status": "revised_awaiting_creator_review"
+    },
+    {
+      "file": "giant-chieftain.png",
+      "kind": "generated_revision",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-468d115c-038b-4d60-bbef-acf72f2cc1c9.png",
+      "previous_sha256": "694befb6641c4994bdef04f0d58c2f45bb6398eb8c2069e38743da4c5042ec43",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-4c693d8b-03d1-4159-8fcd-7684cbf1dc02.png",
+      "sha256": "9ebc8e85768f0aadd2d8b58c7118dc7547acc6c85142473894fa9f88b3d7d037",
+      "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRevise this painting into a more chaotic active battle scene while preserving the older giant chieftain's grey braids, broad human-like face, furious yell, large scale, simple tarp cloak and the action of pulling a broken spear shaft from her shoulder. Keep the coarse nonhuman orc standard-bearer small beside her. Replace the placid scenic background with a contested ridge: churned earth, dust billowing through her stride, a torn standard whipping sideways, a few airborne arrows and dislodged stones. At the LEFT edge and lower midground, include two small, loosely painted enemy infantry with shields staggering back from her advance, their faces only suggestions. On-screen enemies are allowed in this scene but must stay secondary to her silhouette and shout. Strong diagonals and overlapping dust shapes suggest the fight continuing outside the frame; no giant detailed crowd. A break of pale blue sky through windblown smoke, dull red cloth and earth, interrupted harsh sun. She presses left through the disorder, loud and engaged; no static hero posing. Little blood, no gore, no detailed teeth. Keep body, spear hand and feet anatomically clear, with exactly two arms, and coherent scale between giant, orc and infantry.",
+      "review_status": "revised_awaiting_creator_review"
+    },
+    {
+      "file": "barrow-colossus.png",
+      "kind": "generated_revision",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-fe293a4c-9b35-43d0-b316-e8c65b7d0e8a.png",
+      "previous_sha256": "201160e266f6e92186a1bb12241949848b299242ecf7136c19eec51fd6e94ab6",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-837cd7bb-33f5-4094-866e-7aeed9cf8d44.png",
+      "sha256": "223b66f691775a06d900b02cbeb0fd593d7b0055b12b611f64e0cf1c3d023437",
+      "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nCorrect the SCALE of the assembled items throughout this colossus illustration. Keep the faceless earth creature's absorbed helmet-fitting action, long arms, heavy hunched silhouette, fallow field and quiet overcast mood. The creature is approximately 5.5 metres tall, THREE ordinary adult human heights, not a mountain-sized titan. Every embedded helmet is an ordinary HUMAN helmet only about 28 centimetres tall: each occupies about ONE TWENTIETH of the colossus's full height, never a huge shoulder plate. The helmet being fitted into its shoulder is likewise a small object pinched between the ends of two broad fingers; it must not fill the whole hand. Reduce all current giant helmets, shields and bones to the same consistent human equipment scale. A human shield is about 60 cm wide; a human thigh bone about 45 cm long. Let packed earth be the dominant mass, with many small partly buried objects at varied depths, not giant helmets composing its anatomy. Add a simple half-sunk human-sized wooden spade, about 1.2 metres long, close to its planted foot on the same ground plane as an unambiguous scale cue. Keep the crow ordinary and small nearby, about 40 cm long. Show the entire body in a medium-wide side/rear view with a low simple horizon; no mountains, monumental barrows or forced perspective enlarging the debris. Earth brown, subdued rust and bone grey. Fewer crisp details; readable object size and weight.",
+      "review_status": "revised_awaiting_creator_review"
+    },
+    {
+      "file": "indebted-squire.png",
+      "kind": "generated_revision",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-2354dbf4-0e39-4823-9068-db6126329cba.png",
+      "previous_sha256": "66dac37ee50f71b3976a5a6d9899ffaae252748b3d67edb4da32e4449c9f0219",
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1aa39-e211-7381-b098-52e04e700c44/exec-876f4f22-1da0-4003-9f15-adb47d946597.png",
+      "sha256": "cb40c5f9ec5a1aad21e7de1cbe2531e688527a09100581dc1dd0eea4721d4744",
+      "prompt": "Use case: stylized-concept. Original Breachline fantasy card illustration only, 1536 x 1024 landscape PNG. Traditional oil and acrylic painting with decisive visible brushwork, broad interlocking paint shapes, believable weight and materials, selective crisp detail and lost edges. Economical natural faces and hands, no pores or etched hair/teeth. No 3D animation, cute caricature, glossy rendering, text, frame, logo or signature. One clear visual story; supporting figures are loosely painted and secondary.\nRevise the same red-haired nineteen-year-old Indebted Squire in the debt-binding scene. Preserve his ginger curls, freckled ordinary youthful face, the grey-gloved clerk tying a violet knotted cord around his extended wrist, the existing older knots, his sword and the waiting older squires loosely behind. Replace ALL the impressive polished engraved plate armour with visibly poorer, ill-fitting secondhand protection: a faded dirty padded grey-brown jack, ONE small dented iron shoulder plate on a simple strap, a short ragged patch of mail at the neckline, plain scuffed belt. No breastplate, elaborate pauldrons, etched ornament, polished silver or noble uniform. His shoulders draw inward slightly and he looks toward the wrist being tied with apprehension: knitted inner brows, tightened uncertain mouth, alert fearful eyes of normal size. He is somewhat scared and realizing the bargain, not awed or triumphant, not a caricature of terror. Keep the sword but lower it a little so it feels awkwardly held by a young novice; no magical glow. An oppressive plain courtyard wall and flat cold daylight, grey/violet palette. Paint the face simply with large shapes; keep hands anatomically sound and clearly connected. No extra equipment or characters.",
+      "review_status": "revised_awaiting_creator_review"
+    }
+  ],
+  "pending": [],
+  "generated_revisions": 5,
+  "restored_preferred_images": 1,
+  "validation": {
+    "all_pngs": [
+      1536,
+      1024
+    ],
+    "all_jpegs": [
+      768,
+      512
+    ],
+    "changed_card_images": [
+      "oath-shieldbearer.png",
+      "pride-huntress.png",
+      "threshold-adept.png",
+      "indebted-squire.png",
+      "barrow-colossus.png",
+      "giant-chieftain.png"
+    ],
+    "other_set4_images_verified_unchanged": 20,
+    "liked_images_preserved": true,
+    "original_huntress_exactly_restored": true,
+    "gallery_images": 26,
+    "gallery_links_valid": true
+  }
+}
