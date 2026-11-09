@@ -1,11 +1,16 @@
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 
-14 active PNG sheets, all 1536 x 1024.
+44 active PNG sheets, all 1536 x 1024.
 7 species sheets: three body views and six heads each.
 1 additional human sheet: eight heads, preserving the first human sheet.
 2 retained first-batch equipment sheets: Vigil and Gnosis, 12 slots each.
-4 new character-based equipment sheets: 12 characters, 36 design groups.
+4 earlier character-based equipment sheets: 12 characters, 36 design groups.
+8 accepted character-and-kit sheets from the 2026-11-08 review.
+5 accepted magic-and-craft sheets from the subsequent review.
+6 accepted round-04 magic studies.
+5 accepted round-05 magic studies; Wardsteel cuirass remains pending.
+6 round-06 references: four whole sheets and two preserved components.
 Total: 50 head studies (14 human), 24 retained equipment design slots,
 and 36 new equipment design groups awaiting review.
 
@@ -144,6 +149,106 @@ read each character COLUMN top to bottom. Objects are resized to fit their
 slots; do not infer relative dimensions from these boards. These are physical
 world designs, with no gameplay stats or new cards.
 
+ACCEPTED CHARACTER AND KIT REVIEW - 2026-11-08
+Folder: character-kits-2026-11-08/
+01 Oath-road veteran - Vigil; practical maintained brigandine and road kit.
+02 Orc saddle-raider - Fervor; individually assembled mobile protection.
+03 Conclave field scholar - Gnosis; reinforced coat, instruments and a glamorous face.
+04 Thornwarden goblin scout - Genesis; simple felt/canvas woodland kit.
+05 Gnosis foot soldier - MALE; approved blue-enamel breastplate, clothing and sword.
+06 Porcelain-visored retainer - Dominion; one court retainer's ceremonial equipment.
+07 Bronze-harness alderkin - fitted forged protection for a living tree person.
+08 Clayplate giant - accepted visual exploration of large ceramic protection plates.
+The creator liked all eight except the mirror device. Sheet 05 was cleaned to
+remove that device and then recast as a man at the creator's request.
+The rejected mirror sheet and its generated-source image were deleted.
+The blue breastplate is especially liked for its high-medieval, well-built look.
+Specific protection claims, magical functions and cultural traditions remain
+open; visual acceptance does not establish those as lore.
+Each sheet has a character at left and corresponding equipment at right.
+Detailed intentions and provenance are in that folder's README and manifest.
+
+MAGIC AND TECHNOLOGY DIRECTION - 2026-11-08
+Gnosis should include broader steam-era/steampunk craft with a strong
+high-fantasy, scholarly-magic character. Optical devices are one avenue,
+not its whole technological identity. Include more visible magic in Vigil
+through oaths, healing and protection, and in Fervor through forceful,
+instinctive magic. New device/spell studies remain proposals until reviewed.
+These examples continue to seed invention rather than restrict the range.
+
+ACCEPTED MAGIC AND CRAFT REVIEW - 2026-11-08
+Folder: magic-and-craft-2026-11-08/
+01 Harmonic wardwright - strongly liked for an imbued item users can harness.
+02 Field loom - liked for joining industry and magic.
+06 Still Flame censer-healer - liked.
+07 Cinder-cant drummer - liked.
+08 Stormhook channeler - storm magic liked.
+The scriptbound porter and mobile magic forge were rejected and deleted.
+The shieldbearer's magic was rejected; its cleaned physical kit remains pending
+outside this library. Visual approval does not settle detailed mechanics.
+
+LATEST MAGIC BALANCE CLARIFICATION - 2026-11-08
+Magic, physical items and industry were too tightly intertwined in the later
+experiments. Equipment is not required by default, nor is a visible caster
+directly feeding every effect or machine. People and creatures can wield magic;
+items can also hold magical energy that users harness. Keep the range open.
+Do not default to gauntlet augmentations or thread/ribbon effects. The accepted
+field loom, censer-healer and cosmological strand remain specific valid examples.
+Mechanical/magitech hovering boats are rejected. Prefer creatures or explicit
+flight magic for aerial travel, with exact capabilities still open.
+Explore broad limits across scales and alignments before locking faction
+approaches. The steam walking-crane revision and rolling mill remain pending;
+none of the rejected scale studies is added to this library.
+
+ACCEPTED ROUND 04 STUDIES - 2026-11-08
+Folder: magic-studies-round-04-2026-11-08/
+01 Veil adept - restrained shadow concealment and a distinctive human caster.
+02 Rime drake - a creature's cold breath, frost and natural anatomy.
+03 Banked flame blade - magical energy held in an ordinary useful weapon.
+04 Rain gathering - a brief local shower gathered through a shared rite.
+05 Enchanter's quench - specialist craft finishing an enchanted blade.
+06 Stoneward colossus - a monumental made guardian with its power source unseen.
+All six are accepted. The creator praised the restrained treatment and then
+called the remaining studies a much better run. Carry that treatment forward
+while inventing new effects, faces and kit. Detailed powers, costs, prevalence,
+faction ownership and drake taxonomy remain open.
+
+ACCEPTED ROUND 05 STUDIES - 2026-11-08
+Folder: magic-studies-round-05-2026-11-08/
+01 Ashwing keeper - loved; quiet necromancy through an animated bird familiar.
+02 Storm-touched bull - design liked; finished scenes need additional elements
+   to bring energy. Develop purposeful staging and interactions appropriate to
+   each scene; the neutral reference pose is not a finished-art template.
+04 Rite of stillness - strongly liked; a quiet shared rite for the restless dead.
+05 Quarry singer - liked; voice and resonance help with practical stonework.
+06 Brazen gatebeast - liked; a monumental nonhuman bronze construct.
+The creator explicitly likes different types of magic. Carry forward this
+variety of uses and expressions while continuing to invent beyond these sheets.
+03 Wardsteel cuirass remains pending outside the reference library.
+Visual acceptance does not settle detailed mechanics or faction ownership.
+
+ACCEPTED ROUND 06 REFERENCES - REVIEWED 2026-11-09
+Folder: design-directions-round-06-2026-11-08/
+01 Graveside listener - liked neutral spirit depiction; one valid appearance.
+07 Boilerhouse thaumaturge - magical fire supplying a boiler is liked.
+08 Lockyard tug - accepted steam transport design.
+11 Underbridge vaporwright - strong favorite; vivid goblin, chemistry and scene.
+10A Cobalt rapier - accepted sword preserved without the rejected human design.
+10B Ambrel city direction - liked backdrop preserved as a scale/design reference;
+    exact city layout and newly completed portions remain interpretive.
+
+Separate liking an object, magic or costume from liking its surrounding scene.
+Keep vibrancy and varied palettes. Pervasive purple, abundant flowers and idyllic
+brightness are unusual choices, not the default. The vivid street goblin is a
+strong positive counterexample to any blanket reduction in color or energy.
+The angular human duelist is rejected; the goblin is loved. Apply the distinction
+by design rather than banning every angular shape or imposing one painting style.
+Five targeted revisions await review outside this library: the shorter-cape lion,
+scholar atmosphere, hart atmosphere, forge mechanism and metal core-powered sentinel.
+The three LOTR studies are separate inspiration for possible secondary uses.
+The bull scene, glassworker and oversized heroic trio were rejected and deleted.
+The earlier accepted neutral bull reference remains accepted.
+
 USE IN FUTURE ART
 1. Begin with the new character, role, action and scene the illustration needs.
 2. Consult only the sheets useful to that brief, identifying what each teaches:
@@ -193,14 +298,15 @@ Lion folk keep feline skulls; goblins keep their distinct ears and muzzles.
 Alderkin have unadorned botanical anatomy rather than human clothes.
 Stonehorn remains exploratory. Species status otherwise follows SETTING.md.
 Constructs, Velunn, vampires and undead are not added as biological races.
-Opaline Kin remain excluded. Faces and new character-based kit remain proposals; first-batch Vigil and
-Gnosis equipment is retained by the creator.
+Opaline Kin remain excluded. The original face studies and equipment sheets
+14-17 remain proposals; first-batch Vigil and Gnosis equipment is retained.
+The eight sheets in character-kits-2026-11-08/ are accepted visual references.
 Nothing here changes the gameplay files or replaces existing card paintings.
 
-The complete actual generation prompts, source provenance, image dimensions
+Generation prompt records, marked reconstructed briefs, source provenance, dimensions
 and checksums are in prompts-and-manifest.json.
 
 CURRENT PACKAGE
-breachline-neutral-reference-library-2026-11-06-reviewed-v2.zip contains
-only the active images, this guide and prompt records. The original first-batch
+breachline-neutral-reference-library-2026-11-09-reviewed-v8.zip contains
+only the 44 active images, this guide and prompt/review records. The original first-batch
 ZIP predates the removal review and is superseded as a current reference set.

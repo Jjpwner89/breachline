@@ -9,9 +9,21 @@ description: Holds the art direction and accumulated art feedback for Breachline
 
 The creator's latest feedback and the approved art direction take precedence over all art briefs, including their suggested poses, facing directions, framing, compositions and rendering. A brief is a starting point, not a command to preserve an unsuccessful presentation. If its pose or staging conflicts with the direction established here, redesign that presentation to serve the character, story, meaningful action, lighting and variety.
 
-Preserve the intended card subject, gameplay idea and established lore unless the creator changes them. Specific creator changes also override those details, as with the Cinder berserker's male redesign. Do not use an old brief or historical prompt to undo later feedback.
+Preserve the intended subject, established identity and lore unless the creator changes them. Card mechanics remain in the design records; they do not prescribe the scene, pose or visible action. Specific creator changes also override those details, as with the Cinder berserker's male redesign. Do not use an old brief or historical prompt to undo later feedback.
 
-Current workflow (2026-11-08): Set 4 art is generated with creator feedback recorded below; the retained Set 3 collection remains finalized. Set 5 has 12 new briefs in `breachline/art/ART_BRIEFS_SET5.md`. For the next card batch, read this skill first, then the current setting, reference-library selections and that batch's briefs. Audit current cards and available art rather than trusting old counts. The creator welcomes the full batch together for review.
+Current workflow (2026-11-09): Set 4 feedback remains recorded below and the retained Set 3 collection remains finalized. The creator approved all twelve rewritten Set 5 briefs and requested generation. All twelve revision 2 paintings are saved under the existing filenames. The creator requested committing the set after making the adept more veiled, the sword more prominent and the porcelain retainer less weird; those edits and the angrier outdoor Brightlance are now included. The first Set 5 batch is superseded as visual direction. For the next batch, read this skill, the setting, accepted references and current briefs; audit current assets rather than trusting old counts. The creator welcomes a full batch together when generation is requested.
+
+## Visual appeal comes first (creator correction, 2026-11-09)
+
+The goal of a card illustration is an image the creator loves that belongs in this world. Judge it by presentation, imaginative design, light, colour, silhouette, material, atmosphere and character. Appeal can be quiet, severe, unsettling, beautiful or mysterious; it does not mean only exciting or fun.
+
+Card rules are design metadata, not a composition brief. Keep the recognizable subject and established world, but do not make a unit demonstrate its abilities or illustrate every keyword. A scholar can be compelling without zapping; a figure with Guard need not protect somebody; an enchanted material need not be shown being applied. An armoured angel flying in the sky is the creator's example of a strong presentation that needs no explanation of its rules.
+
+- Begin each new brief with the visual appeal being pursued and the relevant accepted references. Choose staging for that appeal. Keep costs, keywords, numerical effects and tactical outcomes out of image-generation prompts; they may remain separately in card-design records.
+- Preserve what was attractive about a reference, beyond its equipment inventory: proportions, attitude, restraint, material character and the particular magical idea. The wardwright's small orbiting stones are more interesting to the creator than the later combat explosion.
+- Purposeful activity remains a positive option, not an obligation to invent a task, victim, bystander, application sequence or before-and-after demonstration. A portrait, presence, material study or creature in its habitat can be sufficient. Movement, combat and dramatic light remain available when they improve the painting.
+- Check a proposed image without its title or rules: what makes it worth looking at? If a prop or secondary figure exists mainly to explain an ability, remove it or find a stronger visual reason for it.
+- Do not overcorrect into uniformly static, subdued or nonmagical pictures. Preserve the range already liked: the lancer's presence, the bone harvester's activity and colour, the court informant's gesture and divided light, the great landscapes and the inventive creatures. Specific card feedback remains specific. Brightlance's off-screen hit does not revoke the general permission for occasional secondary enemies elsewhere.
 
 ## Applying this direction to new cards
 
@@ -30,6 +42,33 @@ The creator fell in love with Magic: The Gathering's painted fantasy art, and th
 The Sunmane lancer image (`breachline/art/sunmane-lancer.png`) was the creator's first approved image. Use it for painted material quality only, not as a template for pose, crop, palette, cape, background or sky. For Set 2 use `breachline/art/ART_BRIEFS_SET2.md`; do not import the superseded style block from `ART_BRIEFS.md`.
 
 For standalone world concept art, use the setting and accumulated preferences without treating the card briefs as composition constraints. Tie each image to a meaningful setting or story idea. Label invented scenes, devices and places as exploratory until approved; a creator-facing visualization of hidden cosmology does not establish a new event known to the characters.
+
+## World-study review (2026-11-08)
+
+- **Second world-study selection:** the three Genesis village scenes in `breachline/art/world-concepts-2026-11-08-set-02/` are liked as decent and honest to the setting, but are not among the creator's strongest favourites. Preserve their portrayal of Genesis society without treating every visual choice as a definitive template.
+- **Brushwork — latest request:** make brushstrokes a little more visible. Keep the scene carefully observed and readable, with varied directional strokes and consistently painted faces, hands, clothing and surroundings. This calls for a modest increase, not blur, a generic texture overlay or uniformly coarse impasto.
+- **The Arena Grown Quiet:** the creator loves its callback to the real-world Colosseum and identifies it as the retained final Vigil scene. Preserve that painting unchanged. The architectural echo and present-day reuse of imperial remains are positive references; the precise location and history remain open.
+
+- **Dominion:** The Price of Morning (`breachline/art/world-concepts-2026-11-08/01-the-price-of-morning.png`) is strongly liked for capturing the Dominion feeling. Its oppressive ordinary life, social imbalance and city atmosphere are positive references.
+- **Vigil and hope:** First Dance Since Winter is liked because people are trying to be happy while not everything is perfect. Keep room for ordinary pleasure amid visible hardship.
+- **Empire and the uncanny:** A Guest with No Shrine and The Road That Outlasted Kings are liked. The creator appreciates callbacks to the old Empire. These are visual and storytelling approvals; proposed identities, powers and exact places remain open.
+- **Genesis society:** Genesis has societies and settlements, including villages in forests and homes in trees. Its people are not all alderkin or animals. Show households, communal spaces, social relationships and ordinary inhabitants as well as wilderness. Specific architecture and customs remain open to exploration.
+- **Painting precision:** apply the latest detail-versus-resolution guidance recorded in DESIGN_NOTES.md: fine, precise brushwork is welcome, but faces must not look rendered at a higher resolution than the surrounding painting. A painted image can be detailed without photographic high-resolution skin. Vary weather, clothing and backgrounds across a batch.
+
+## Set 5 review and rewritten briefs (2026-11-09)
+
+The creator rejects the batch's emphasis on demonstrating abilities. All twelve briefs and their generation prompts have been rewritten in `breachline/art/ART_BRIEFS_SET5.md` and `breachline/art/ART_PROMPTS_SET5.json` before further image generation. The creator subsequently approved these revised briefs and requested the whole batch. All twelve revision 2 paintings are generated. The creator then requested three follow-up edits and a commit of the set; the updated presentations are recorded below. This does not establish new lore. Historical revision 1 prompts remain records of the superseded batch.
+
+- **Conclave field scholar:** no required zap. Her identity and a compelling painting are sufficient.
+- **Harmonic wardwright:** favour the accepted reference's small twirling/orbiting stones over the exaggerated explosion and its victims.
+- **Brightlance — latest follow-up:** the creator wants the caster outside, visibly angrier, with a more aggressive gesture and spell. The lance still travels to an off-screen target; the hit and its consequences remain outside the frame. The outdoor revision is included in the selected set. This card-specific intensity does not change the wardwright unit's quieter orbiting-stone direction.
+- **Woven ward:** do not show the glowing material being put on a person. Its beauty, the loom and the relationship of craft and magic can carry the painting.
+- **Veil adept — latest follow-up:** make her more veiled. The current revision covers her lower face with fine dark fabric merging into the existing shadow while preserving her eyes, seated pose and window light. The fabric treatment is this image's interpretation, not a requirement for all shadow magic. She still need not strut through a crowd to prove concealment.
+- **Porcelain-visored retainer — latest follow-up:** the second portrait is still disliked; make him less weird. Replace the uncanny full doll-face presentation with a simpler porcelain half visor, visible natural eyes and lower face, ordinary human proportions and relaxed bearing. The half visor is the selected design interpretation and overrides the older full cracked-mask continuity. Keep the dim gallery and restrained materials. No staged guarding, noble or discarded companion's mask.
+- **Banked flame blade — latest follow-up:** make the sword even more prominent in frame. Center the full blade close to the picture plane and crop the bearer to a supporting hand, cuff and knee; keep weapon-to-hand scale believable and the point visible.
+- **Bronze-harness alderkin:** the generated painting is cartoonish. Correct the entire scene's form, expression, light and rendering, with believable living-tree anatomy. This does not revoke the earlier permission for alderkin to fight.
+- **Stoneward colossus:** its presence does not require sheltering people or blocking arrows. Choose a composition around its form, material, scale and setting.
+- The remaining briefs also follow the batch-wide visual correction. The creator requested committing the current set after the three edits above; this does not approve unrelated art or new lore.
 
 ## Set 4 review (current through 2026-11-08)
 
@@ -100,7 +139,7 @@ The creator strongly approved `art/concepts/across-the-silence.png`, `the-still-
 
 The creator responded enthusiastically to the six creature/people concepts and then requested their inclusion in the setting notes, with the explicit exception of the Opaline Kin. SETTING.md now distinguishes included concepts, the developing Stonehorn design and new proposals. Preserve uncertainty in biology and culture as noted there.
 
-For new creatures and peoples, test distinct sizes, silhouettes, anatomy, behaviours and relationships with the world. Put each in a purposeful scene. New species names, biology and cultural roles are proposals, and a person's alignment or profession does not define an entire people.
+For new creatures and peoples, test distinct sizes, silhouettes, anatomy, behaviours and relationships with the world. Choose a compelling presentation: presence, habitat, observed behaviour or a specific interaction can each carry the image. New species names, biology and cultural roles are proposals, and a person's alignment or profession does not define an entire people.
 
 ## Creature review and lore inclusion (2026-11-05)
 
@@ -126,22 +165,23 @@ For new creatures and peoples, test distinct sizes, silhouettes, anatomy, behavi
 - Match emotional intensity to the individual subject and the creator's latest request. Do not soften every character into stoic restraint: this berserker should visibly roar with aggressive excitement and bloodlust. That is a card-specific exception, not a requirement for other units.
 - Treat lightly dynamic movement as the default, not a ceiling. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the current enemy-visibility guidance.
 - Give gaze and gestures a reason in the scene. A character should attend to a person, object or event; its hands, posture and expression should support that action. A raised hand or combat stance needs a contextual purpose, including indoors. Quiet work, inspection or listening can supply lightly dynamic movement.
-- Make poses lightly dynamic. Characters shouldn't be just standing there, but they shouldn't be over the top or melodramatic either.
+- Lightly dynamic movement remains useful, but do not manufacture an action to justify every character. A strong still presence, thoughtful head turn or compelling silhouette can be enough. Avoid both generic neutral staging and unnecessary melodrama.
 - Vary the poses and facing directions, because they get predictable quickly. Not every character should face right. Vary viewpoint, subject size, posture, silhouette and gesture as well; reversing a familiar pose is not enough. Follow each brief's full-body, wide, rear, profile or detail framing. A thoughtful still pose is appropriate when the brief calls for it.
 - Combat can include enemies on screen occasionally, with those figures secondary to the principal action or effect. Off-screen opponents remain useful. Do not aim attacks straight at the viewer.
 
 ## Backgrounds
 
-Imply a background instead of fully realizing it. A wall that suggests a city of a certain style works better than a whole city. Other characters can appear, but with far less detail than the subject. Use a few large value shapes and purposeful negative space to separate silhouettes. A landscape or environment spell can make the place itself the focal subject. Keep weather, architecture and light specific to the brief rather than repeating stone, ivy, rain or grey haze.
+Imply a background instead of fully realizing it. A wall that suggests a city of a certain style works better than a whole city. Other characters can appear, but with far less detail than the subject. Use a few large value shapes and purposeful negative space to separate silhouettes. A landscape or environment spell can make the place itself the focal subject. Vary weather, architecture and light across a batch.
 
 ## Power
 
-Match a character's look to the card's power. Detail is welcome, but a cheap, weak unit shouldn't look like a champion.
+Keep stature, equipment and scale believable for the subject and world. Do not inflate an ordinary person into a champion or every animal into a giant. Card cost and statistics do not prescribe the painting's action, drama or amount of detail.
 
 ## People
 
 - **Humans:** they appear in every alignment. Follow the local population, history and social context of a scene. The 2026-11-06 correction supersedes using the earlier US-demographic target to compose these campaign communities; do not turn every crowd into a demographic sampler. Preserve human variety across the world without making every settlement cosmopolitan.
 - **Lion folk:** tall, upright and noble, with lion heads and full manes. They should never look cartoonish. They generally keep to themselves and should not recur as background residents in most scenes.
+- **Alderkin:** they can fight. The creator confirmed this for Grove tender, and the Bronze-harness alderkin is a plain strong fighter.
 - **Summoners:** each has a golden, glowing, scar-like mark called the gilt scar or the goldmark. A summoner who hides the mark really hides it, so it's unseen or barely visible. Never show someone frantically covering a mark that still glows through.
 
 ## Alignments
@@ -151,7 +191,7 @@ The white, red and blue rows come from images the creator has seen. The black an
 | Alignment | Peoples and subjects | Palette and light | Emblem |
 | --- | --- | --- | --- |
 | Vigil (white) | Lion folk, knights, clerics, soldiers | Gold, ivory, sky blue; warm light | Sun |
-| Fervor (red) | Goblins, orcs, giants, dragons, sellswords | Ember orange, iron, soot, blood red; firelight | Three spikes |
+| Fervor (red) | Goblins, orcs, giants, dragons, sellswords | Ember orange, iron, soot, blood red; firelight, lightning and storm light | Three spikes |
 | Gnosis (blue) | Scholars, city mages, brass constructs | Deep blue, teal, brass, amber; lamplight | Lantern star |
 | Dominion (black) | Nobles, undead, bound devils | Ash grey, bone, tarnished silver, deep violet; cold, overcast light | None yet |
 | Genesis (green) | Forest peoples, druids, great beasts | Moss, bark, deep green, amber; dappled light | None yet |
@@ -160,7 +200,17 @@ The white, red and blue rows come from images the creator has seen. The black an
 
 Add current feedback to the relevant section above; keep superseded attempts in the dated prompt/revision records.
 
+- 2026-11-09, Set 5: visual appeal and world fidelity govern card art; abilities do not dictate the scene. All twelve briefs and prompts were rewritten before further generation. See the visual-priority and Set 5 review sections above.
+
 - 2026-11-08, Set 4 consolidation: current card decisions are in the Set 4 review above; anatomy, physical contact, scale, whole-scene painting and preservation of approved poses are carried into the new-card guidance. The old giant spear-pulling concept and intermediate hand fixes are rejected; exact history stays in the revision records.
+
+- 2026-11-08, durability: keep the general feel of the art direction constant, but don't turn minor one-off choices into durable rules. The creator never asked to avoid rain, haze or red capes.
+
+- 2026-11-08, card vote on the reference library: 11 sheets became cards 31–42, briefed in `breachline/art/ART_BRIEFS_SET5.md`; everything else stays reference only. Rain gathering's understated magic is loved because it "looks assumed in the world because it is". Lightning and storm magic suit Fervor alongside fire. The Cinder-cant drummer is liked a lot, and the Banked flame blade's heavyset bearer is liked as a character. Brightlance must read as a fast lance of light in motion. Alderkin can fight.
+
+- 2026-11-08, latest magic review: keep loom, wardwright, healer, drummer and storm caster; delete porter and mobile forge; reject shield magic only. Explore broad magic/industry limits across scales and alignments before locking faction approaches.
+
+- 2026-11-08: Character/kit batch accepted except the folding mirror; retain the well-built high-medieval blue Gnosis breastplate and make its foot soldier male. Broaden Gnosis into scholarly high-fantasy magic and steam-era craft beyond optics. Add more Vigil oath/healing/protection magic and forceful instinctive Fervor magic; test limits in the next set.
 
 - 2026-11-06: Reference sheets are initial starting points, not limits. Expand the repertoire with new faces, clothing and equipment; avoid repeatedly reproducing or cycling through the examples. Exact reuse is appropriate for character continuity or an explicit request.
 
@@ -178,7 +228,7 @@ The creator supplied twelve Magic card images as examples they like and asked fo
 
 - **Inventive silhouettes:** the construct references (`construct.jpeg`, `Solemn-Simulacrum_MTG-733x1024.png`) use elegant asymmetry, unexpected proportions and negative spaces. Design original creatures and mechanisms from their function. A brass chorister should read as an instrument brought to life, not a human knight with metallic skin.
 - **Mood carried by shape and colour:** `creep.jpeg` and `cultist.jpeg` suggest strangeness through long shapes, obscured faces and a few cool tonal masses. Dominion can be patient, pitiful, unsettling or ceremonious without defaulting to gore, fangs, Gothic castles or explosive darkness.
-- **Spells as an event:** `fade.jpg` and `instant.jpg` communicate a change in a body, a gesture or a spatial relationship. Make the card's effect visible through a specific small story; vary beyond a person pointing a generic glowing beam. Affected people or enemies may be visible but secondary to the effect; use on-screen opponents occasionally, following the Set 4 review.
+- **Spells as visual subjects:** `fade.jpg` and `instant.jpg` offer compelling changes of shape, gesture and spatial relationship. Their visual invention is the useful reference. A spell may be an event, a material, a presence or an ambiguous moment; it need not spell out the rules or show every consequence. Secondary affected figures remain an option, not a requirement.
 - **Biological invention:** `green.jpg` integrates foliage, growth and creature anatomy into a coherent form. Genesis creatures should have distinctive root, branch, horn or feather silhouettes, rather than all being humanoids dressed in leaves.
 - **Scale and breathing room:** `serra.webp` and `sea.jpeg` let wings, monumental shapes and surrounding space establish scale. Large subjects need not fill every edge; ordinary figures can be small within a selective setting. This does not authorize adding wings, cities or monumental power when absent from the brief.
 - **Ordinary humans with lived gestures:** `human 2.jpeg`, `human 3.jpeg` and `human.jpeg` use practical equipment, asymmetry, weight shifts and group rhythm. Show the action's intention and a specific expression. Supporting figures remain subordinate, and no attack is directed at the viewer.
@@ -229,7 +279,7 @@ The creator explicitly wants the reference sheets to seed further invention, not
 ## Neutral character and equipment references (2026-11-06)
 
 - The creator reports characters becoming tied to the environments in earlier generated paintings. Use `breachline/art/reference-library-2026-11-06/` to separate species anatomy, individual face identity and faction equipment from scene composition.
-- For reference sheets specifically, static front/side/rear views, neutral light, plain backgrounds and ordinary neutral clothes are intentional. Finished card art still follows purposeful-action direction. Alderkin retain unadorned botanical anatomy.
+- For reference sheets specifically, static front/side/rear views, neutral light, plain backgrounds and ordinary neutral clothes are intentional. Finished card art needs a compelling presentation; purposeful activity, strong presence, light and atmosphere are options rather than a requirement to demonstrate an ability. Alderkin retain unadorned botanical anatomy.
 - The creator requests more distinct faces with varied attractiveness, while keeping an appealing cast and occasional very attractive characters. "Non-AI faces" is interpreted as less repetitive and idealized appearance, not a claim of human authorship.
 - Follow-up: preserve the original human faces and add another layer including at least one earlier glamorous "AI baddie." Exceptional beauty remains an intentional casting option. The additional human sheet includes a Court Informant-based beauty, an overt glamour option and a handsome male option.
 - The library covers six established/included peoples plus exploratory Stonehorn and an additional human face sheet. Of the original five equipment sheets, the creator retained only Vigil and Gnosis; see the later character-based equipment review. New faces and equipment remain proposals until reviewed; existing species status is unchanged. Equal on-page size does not imply equal in-world height.
@@ -242,3 +292,99 @@ The creator explicitly wants the reference sheets to seed further invention, not
 - Dominion's black equipment was visually liked, but felt too specific and risked restricting the whole faction. This is not a rejection of that aesthetic; it can be one character's option, not a universal uniform.
 - Fervor equipment looked too organized and did not match existing characters. Source actual goblin, raider, berserker and other character paintings. Vary materials, amount of armor, silhouettes and personal repairs; do not simply make the same issued kit dirty.
 - For the initial character-based studies, use existing character art and show more variety. Future equipment should expand beyond those examples. Character-specific studies are not canonical standards for a faction. Reconstruct partially hidden gear simply; mark newly inferred pieces as proposals rather than claiming they were visible in source art.
+
+## Character, equipment and magic review (2026-11-08)
+
+- Mix lore-grounded close fits with experimental characters, physical armor, weapons and constructs that challenge the edges of the creator's vision. Explain the intention of each piece briefly in chat. These are design references, not implemented game equipment or automatic new lore.
+- Stage pending batches outside the active reference library. Promote explicitly accepted pieces to the reference folder; delete rejected images and their corresponding generated-source copies instead of archiving them. A review may select an individual item independently of its character or sheet. Preserve the accepted portion before deleting a mixed sheet. Keep textual decisions to prevent accidental restoration.
+- The creator accepted the eight-sheet character/kit batch except the folding mirror device. The Gnosis blue-enamel breastplate is especially liked: high-medieval, well built and convincing. The selected cleaned sheet keeps that armor and sword and recasts its foot soldier as a MAN at the creator's request. The rejected mirror sheet must not return. The other seven character/kit sheets are accepted visual references.
+- Gnosis technology is broader than ocular/optical devices: think steam-era or steampunk-level craft with a strong high-fantasy lean. Optics can exist, but do not make mirrors, goggles, lenses and telescopes the default expression of innovation. Integrate more scholarly magic into its people, tools and constructs; machinery can support the spellcraft. This is not a requirement that every ordinary tool be enchanted.
+- The creator also wants more visible magic in Vigil and Fervor while preserving their distinct character. The creator approved this directional reading: Vigil emphasizes oaths, healing and protection; Fervor emphasizes forceful, instinctive magic. Test those ideas in the next set to establish limits. Fervor magic can be lightning and storm as well as fire; the creator likes this in the Stormhook channeler. Specific devices, spell functions and new traditions remain proposals until reviewed.
+- Accepted references are starting points, not a fixed cast or mandatory faction uniforms. Keep inventing beyond them while maintaining setting coherence. A visual approval does not automatically settle mechanics, biology, cultural universals or the truth about the gods.
+
+## Magic and industry across scales - latest review (2026-11-08)
+
+- **Field loom:** liked for joining industry and magic. Preserve this relationship between craft and spellwork without making every machine a loom.
+- **Harmonic wardwright:** strongly liked. A simple addition visibly gives the character more power; modest purpose-built additions are a promising way to extend capability. Develop that principle beyond the exact bracer, armor and face.
+- **Scriptbound porter:** rejected and deleted. It overemphasizes magic as physical scrolls and similar objects. Written/material spellcraft can remain part of the setting without becoming its dominant operating principle.
+- **Kiln-heart keeper / mobile magic forge:** cute, but cut and deleted. No broader reason was stated; do not infer a ban on all forges or constructs.
+- **Stormhook channeler, Cinder-cant drummer and Still Flame censer-healer:** liked and retained.
+- **Oath-thread shieldbearer:** its magic is rejected, for an unspecified reason. Preserve the physical character and kit separately as pending, with all magical extensions removed. This does not ban all shields, protection magic or Vigil magic.
+- Explore varying scales: personal additions, workshops, vehicles, large constructs, communal activity and major installations. Magic and industry must not default to tiny automatons. Establish scale with consistent human figures and coherent structures.
+- Test the broad limits of magic and industry before locking faction approaches. Move ideas between alignments, allow overlaps, and avoid rigid faction technology trees. The creator likes the emerging faction direction but wants broad setting limits tested now.
+- New capacities, ranges, production rates, autonomy, costs and prevalence remain proposals. Acceptance of an image does not automatically fix those mechanics or make a design commonplace. Keep the library a source of initial references rather than a closed catalogue.
+
+## Magic balance correction - latest clarification (2026-11-08)
+
+The creator's latest correction is about balance, not a mandatory replacement mechanism: the recent designs made physical items, magic and industry too intertwined. Do not replace that with a rule that every effect or machine needs a visible person supplying magic directly. Direct casting, imbued objects and other forms of magic can coexist. Their relationship and presentation remain flexible.
+
+- People and creatures can wield magic without equipment. Existing Dominion spell art offers useful examples of a caster/effect relationship, but no particular gesture, beam or effect shape becomes mandatory.
+- The harmonic wardwright's success supports items imbued with magical energy that users can harness. It does not establish common gauntlet augmentations or a requirement to fit every character with a powered brace. The hammer woman/return-stroke brace is rejected.
+- Stop defaulting to luminous strings, threads, ribbons and connected energy paths. The wood-bending study added too little value and is rejected; the Hush pavilion's thread-like healing is rejected. The earlier approved field loom, censer-healer and cosmological gold strand remain accepted in their own contexts.
+- The hovering freight barge is rejected because mechanical/magitech flight changes the world in unwanted ways. Prefer flying creatures or explicitly magical flight for aerial travel; do not turn that into fixed flight capabilities or prevalence.
+- The far-voice bell is rejected, without a stated broader reason. Do not infer a universal ban on communication magic.
+- The storm installation's appearance is rejected. A person as conduit with a machine enhancing their magic is closer conceptually, but this is one possible relationship, not the required model for all magic or industry.
+- The walking crane is interesting. Revise it toward steam power, perhaps using magic to power the steam. The visible firebox caster in the first steam revision is only one interpretation, not a creator requirement. The revised image is pending.
+- The rolling mill is not yet reviewed. Keep earlier accepted designs and the nonmagical shieldbearer preservation at their recorded statuses; no blanket approval or rejection follows from these comments.
+
+## Round 04 positive references (2026-11-08)
+
+The creator liked the first three round-04 studies - Veil adept, Rime drake and Banked flame blade - as "not too overstated and really cool", and asked to continue. These three are accepted visual references. Their success supports restrained but legible, subject-specific magic across a character, creature and enchanted item. Preserve the distinction between shadow concealment, cold breath and energy within a blade; do not turn any one effect or equipment choice into a mandatory formula.
+
+The creator subsequently called the rest of round 04 lovely and a much better run, accepting Rain gathering, Enchanter's quench and Stoneward colossus as well. All six are now accepted visual references. Prior scale-study decisions are unchanged. Continue to vary scale, subject, face and magical treatment while treating accepted references as starting points; do not infer blanket approval of later unseen work.
+
+The creator loves Rain gathering's understated magic: it "looks assumed in the world because it is". Magic can feel like an ordinary, accepted part of life rather than an overstated event. This holds for magic generally, not only weather. Rain gathering stays reference only and won't become a card.
+
+## Round 05 positive references (2026-11-08)
+
+- **Ashwing keeper:** loved; a strong positive visual reference for the character and animated skeletal familiar.
+- **Storm-touched bull:** the bull design is liked. Finished scenes need additional elements to bring energy. Develop purposeful scene staging and supporting elements; do not inherit the static reference pose as the finished-art composition. Specific action, weather, terrain or interactions are possible interpretations, not creator-mandated elements or newly fixed powers.
+- **Rite of stillness:** strongly liked and accepted.
+- **Quarry singer and Brazen gatebeast:** liked and accepted. The creator explicitly says different types of magic are good. Preserve variety across forms, uses and scales without turning these examples into an exhaustive repertoire or a single visual mechanism.
+- **Wardsteel cuirass:** still pending. These approvals do not imply approval or rejection of that study or other earlier pending work.
+
+The five accepted images are in `breachline/art/reference-library-2026-11-06/magic-studies-round-05-2026-11-08/`. Detailed mechanics, prevalence, taxonomy and faction ownership remain open. These references support further invention.
+
+## Set 5 card vote (2026-11-08)
+
+The creator voted on every sheet in `breachline/art/reference-library-2026-11-06/` and chose 11 to become cards 31–42. Their briefs are in `breachline/art/ART_BRIEFS_SET5.md`.
+
+- **Became cards:** Conclave field scholar, Harmonic wardwright (plus the Brightlance spell), Spellwright's field loom (as the Woven ward enchantment), Enchanter's quench (enchantment only), Rime drake (blue), Thornwarden goblin scout, Bronze-harness alderkin (Genesis, a plain strong fighter), Porcelain-visored retainer, Veil adept, Banked flame blade (equipment) and Stoneward colossus.
+- **Reference only:** everything else in the library, including Oath-road veteran, Orc saddle-raider, Gnosis foot soldier, Clayplate giant, the censer-healer, the drummer, the stormhook, Rain gathering, all species and face sheets and all equipment sheets.
+- **Brightlance:** a blue-violet lance of light pushed out from the harmonic wardwright's open palm. It must look in motion, a fast streak with the air rippling behind it. The 2026-11-09 correction places its target and impact off-screen. It is not held still in the air and is not a thrown stone.
+- **Banked flame blade:** the card is the blade. The creator likes its bearer, the heavyset man in a mail shirt, as a character.
+- **Cinder-cant drummer:** the creator likes the design a lot, though it stays reference only for now.
+
+## Broad design-direction exploration (creator request, 2026-11-08)
+
+The creator requests a broad taste test, moving from the recently successful Breachline direction toward multiple fantasy edges: high fantasy, steampunk, Arcane-inspired, Warcraft-inspired and LOTR-inspired, with at least two or three studies in each approach and three surprising studies. Round 06 supplies three per approach plus three wild cards, 21 in total. Explore meaningful differences in silhouette, material, magic, machinery, scale and atmosphere; do not merely recolor the same designs. The named works inform broad design directions through original Breachline subjects, not copied characters or symbols.
+
+This request explicitly welcomes departures for comparison. Established approvals still stand, and a taste-test image remains a proposal until reviewed. Accepting one does not automatically accept an entire influence, a technology level, fixed magical mechanics or a faction-wide standard. Carry the creator's interest in varied magic and meaningful scene energy into this work. Preserve prior specific world boundaries unless the creator changes them.
+
+Working studies, numbered review notes and exact prompts: `breachline/art/work-in-progress/design-directions-round-06-2026-11-08/`.
+
+## Round 06 review and world tone (2026-11-09)
+
+The creator reviewed images in display order, which differed from the list: their item 4 is Starwell scholar (sheet 05), and item 5 is the Dawnward cavalier (sheet 04). Identify by subject when reconciling feedback.
+
+- **Content versus tone:** liking the magic, equipment, gown or creature does not imply liking the scene's palette, brightness or mood. Keep vibrant color. Pervasive purple, abundant flowers and idyllic storybook brightness should be unusual, not the default. Do not overcorrect into grayscale, blanket desaturation or an entirely bleak world.
+- **Graveside listener:** liked, especially as a neutral spirit depiction. Spirits should have other valid presentations too.
+- **Storm at the ford:** rejected for an American-West hunting/wildlife-painting feeling. Delete this scene; the earlier accepted neutral bull design is unchanged.
+- **Glasshouse annealer:** the isolated hand was confusing. Latest follow-up explicitly cuts the whole goblin glassworker, including the completed correction. Both images are deleted; do not keep regenerating it.
+- **Starwell scholar:** the actual portal and main gown are liked. The setting, all-purple atmosphere and flowers are the problem. The revised atmosphere preserves the liked content and awaits review. Portal appearance is approved visually; travel capabilities and destination rules are not established.
+- **Dawnward cavalier:** lion knight liked with a shorter cape. The shorter-cape revision awaits review.
+- **Crownroot hart:** similar saturation/tone concern. A revised atmosphere awaits review; do not infer full creature approval.
+- **Boilerhouse thaumaturge and Lockyard tug:** liked and retained. Magic supplying heat and practical steam transport are positive examples, not a mandatory mechanism or universal transport network.
+- **Foundry strider:** general idea liked, original anatomy poor. The rebuilt clear two-arm/two-leg mechanism is pending. Do not retain the poor-anatomy original.
+- **Cobalt duelist:** reject the angular human character design. Preserve the liked sword and city backdrop separately. Do not make this a blanket ban on all angular painting: the street goblin is a strong favorite.
+- **Underbridge vaporwright:** love love love love; a strong positive reference for the goblin, magical chemistry, scene and vivid color.
+- **Spellglass sentinel:** magic powering items is strongly liked, including the blue core. The head is too futuristic; make it more visibly worked metal. Revised metal/head study awaits review. Core-powered constructs are one possibility, not a requirement for all made beings or magic.
+- **Oversized heroic trio:** all three Warcraft-inspired studies (called Warhammer in the review) are rejected and deleted, including both shield-study versions. Do not reuse that batch as positive direction.
+- **LOTR trio:** cool and good inspirations but not fitting the main direction. Retain separately as inspiration only; possible baddies or side-faction uses are tentative, not assigned facts.
+- **Lacquer tideguard:** Asian influence is interesting, but the water pick is not exactly right. Still exploratory; no whole-image approval. Saltwake diviner and The second shadow remain unreviewed.
+
+### Ambrel and uneven capability
+
+Keep the world large and varied. The creator likes the duelist's city backdrop as a possible larger Ambrel, with room for both great cities and smaller places. Magic can compensate for inefficiencies in industry and support selective capabilities that seem out of time, including robots/constructs. This need not imply uniform modern industry, universal prosperity or every community having the same power level.
+
+The creator is considering a world that has more present capability and is less defined by immediate post-cataclysmic collapse, while facing powerful new threats; Dominion was raised as a potentially world-threatening power. Allude gently to this direction. The severity of historical catastrophe, degree of recovery, new threat details and overall optimism remain open. Do not silently rewrite the Cataclysm, its timeline or the hidden cosmology. The preserved city is a visual scale/design reference, not a canonical map or a settled new history.

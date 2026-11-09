@@ -1,0 +1,212 @@
+{
+  "set": 5,
+  "date": "2026-11-09",
+  "status": "passed",
+  "brief_revision": 2,
+  "count": 12,
+  "creator_review": "creator requested commit after three follow-up revisions",
+  "generation_method": "built-in image_gen",
+  "generation_attempt_count": 30,
+  "current_revision_attempt_count": 16,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "replaced_png_jpeg_pairs": 12,
+  "unrelated_images_checked": 225,
+  "unrelated_images_unchanged": true,
+  "unique_selected_pngs": 12,
+  "gallery_image_count": 12,
+  "gallery_links_checked": 51,
+  "broken_gallery_links": [],
+  "visual_review": "All selected paintings inspected. Latest edits preserve the seated adept while adding veil coverage, center the blade at greater prominence with a complete point and coherent hand, and replace the retainer doll-face mask with a human half-visor presentation. Gallery links, dimensions and recorded hashes checked. Creator requested committing the resulting set.",
+  "files": [
+    {
+      "png": "conclave-field-scholar.png",
+      "jpeg": "web/conclave-field-scholar.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "157ea3d097eeec4f357364bbec39bc90f0648fffac0688b6370a096dd26064ff",
+      "web_sha256": "bb710ac92ddeec18199ddcc700e2dcff9a55484dfd8bf632e0ff1bc7427fa998",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "harmonic-wardwright.png",
+      "jpeg": "web/harmonic-wardwright.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f9ee73a4551826e0341876351457a299fda95995a4f6c4c667d9926737dfeadd",
+      "web_sha256": "937e0842daf019de3725cd79ec32e6343c63a2b7bcf044b1c186961ed0a8eac6",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "brightlance.png",
+      "jpeg": "web/brightlance.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "bbeffeec4e56aaf6587a54131d6b24ef527a6035b2d9706dcfae88c07d1f1707",
+      "web_sha256": "6ec4af27a46f0f3adb57a5b646bf1af740111fc34f2d4e978e92532b11e1727d",
+      "generation_attempts_this_revision": 2
+    },
+    {
+      "png": "woven-ward.png",
+      "jpeg": "web/woven-ward.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7f00734449f5a9a0b7e302c7dcaeb7f6f2c179a73270979b840ed353769059cc",
+      "web_sha256": "607e2f1cd9beaa9920818f1fdb64b91885391af8f0a1cc2cfbb31260f141f1e8",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "enchanters-quench.png",
+      "jpeg": "web/enchanters-quench.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "df0756dfa9b4f76bd457d944fc03d07ffd3bfac9b8899240c138fe70f088a437",
+      "web_sha256": "6839d9e70e8c19547bdc23bfa2162842619d2b0a68d8b551f83aa2f104b03b95",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "rime-drake.png",
+      "jpeg": "web/rime-drake.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "ba0d8b4a700f59e1ef9bd0a3674f334e76660997f83c99bf91a829198a60d765",
+      "web_sha256": "375ef076fe7daafa5431541ee3b63997ddb0e46c709400fb812425c59c74d258",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "thornwarden-goblin-scout.png",
+      "jpeg": "web/thornwarden-goblin-scout.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e56da6d9287b09f5cecbba976fea8e7ae0249816ce2a85226bf8e11c56e8b2f7",
+      "web_sha256": "ab128a19c41f0bcd27fc860f7fc66c3c53502e04576897e1608bf2de8b2d948f",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "bronze-harness-alderkin.png",
+      "jpeg": "web/bronze-harness-alderkin.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "1099cc386d9fa99e0a34a4955b1cd919c14c18bf2a7e64e8c5a3d3758c6b7dfc",
+      "web_sha256": "dbe728baefd9b3b4ebb04c795e95d089111b165c34515dfa11c6c9663e84114a",
+      "generation_attempts_this_revision": 1
+    },
+    {
+      "png": "porcelain-visored-retainer.png",
+      "jpeg": "web/porcelain-visored-retainer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "5056c877fc325e7f887cff56c0f9f5346f826fe1c1b3b261e6fecaffed1fbd9a",
+      "web_sha256": "d45ee17648ededbe73fecc6c6179eca6202c54c6134c414ec113cfaedcc89200",
+      "generation_attempts_this_revision": 2
+    },
+    {
+      "png": "veil-adept.png",
+      "jpeg": "web/veil-adept.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "5bb710f16b90f4330bc96c87b55055e0f141802019a95cefb6d714f47aa48347",
+      "web_sha256": "1c4d00522568ae0c8a78709f8327e5ebd59f28b168117122845549bb2351938b",
+      "generation_attempts_this_revision": 2
+    },
+    {
+      "png": "banked-flame-blade.png",
+      "jpeg": "web/banked-flame-blade.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "35a6b0c6281ad5ecc23c3827193de7f39cfd9ccb26dc20cb06209430ab4aa476",
+      "web_sha256": "2f303bf1ed318a50342530e26c7994ce55b33caeb47e779bdd0a422552219fec",
+      "generation_attempts_this_revision": 2
+    },
+    {
+      "png": "stoneward-colossus.png",
+      "jpeg": "web/stoneward-colossus.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a13d60ea72a42ac6401d0a6c781cec580422835a9716a4e5739064c3fe989502",
+      "web_sha256": "c65294a726c21138a6e14bea5f5497696da48b353e0f702e14b2128babfcfcc4",
+      "generation_attempts_this_revision": 1
+    }
+  ],
+  "latest_followup_images": 3,
+  "latest_followup_untouched_image_files_checked": 243,
+  "latest_followup_untouched_image_files_unchanged": true
+}

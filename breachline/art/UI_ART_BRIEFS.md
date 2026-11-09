@@ -1,6 +1,6 @@
 # Breachline UI art briefs
 
-16 images for the UI refresh, written on 2026-11-09 from the creator's picks on the [proposal page](https://claude.ai/artifact/WmUf7MW4bpvcirLrs9RpvJ). **Status: briefs only, nothing has been generated.** The decisions behind them are in the "UI refresh" part of `../DESIGN_NOTES.md`. These images are materials, a home screen and furniture for the interface, not card art, so card rules about subjects, poses and stories don't apply to them.
+16 images for the UI refresh, written on 2026-11-09 from the creator's picks on the [proposal page](https://claude.ai/artifact/WmUf7MW4bpvcirLrs9RpvJ). **Status: all 16 source PNGs generated on 2026-11-09 in `art/ui/`; prepared and built into the game with `art/build-ui.swift`, awaiting creator review.** Review [the gallery](ui/UI_GALLERY.html), [handoff notes](ui/README.txt) and [exact prompts and dimensions](ui/UI_ASSET_MANIFEST.json). The decisions behind them are in the "UI refresh" part of `../DESIGN_NOTES.md`. These images are materials, a home screen and furniture for the interface, not card art, so card rules about subjects, poses and stories don't apply to them.
 
 The briefs are grouped in the order the creator chose: the table first, then the home screen, card frames, buttons and panels, and the extras. Generate a group whenever it suits; the game uses a stand-in in each place until the painting arrives.
 

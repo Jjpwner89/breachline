@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-08",
+  "status": "accepted_visual_references",
+  "jobs": [
+    {
+      "id": "01",
+      "key": "01-harmonic-wardwright",
+      "title": "Harmonic wardwright",
+      "alignment": "Gnosis",
+      "category": "close_fit",
+      "type": "Human scholar and equipment",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f69accd9-208b-44aa-8965-3dcc89abe550.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/unmake-the-pattern.png"
+      ],
+      "notes": "A scholar uses a stringed casting gauntlet to hold broken stone in a precise pattern. Tests armored spellcraft and resonance instruments while carrying forward the well-built blue breastplate.",
+      "brief": "Image 1 references blue-enamel armor MATERIAL QUALITY and high-medieval craftsmanship only; create a new male face, build, coat and breastplate silhouette. Image 2 references beautifully painted resonance magic, NOT its scenery, camera or exact tuning fork.\nMain: an adult human man about 40, broad sturdy build, deep brown skin, close-cropped curls, wide nose, slightly uneven beard and thoughtful attentive expression. Standing full body, facing slightly right, wearing a smoothly forged dark-blue enamel half-cuirass with a raised central ridge over a long ink-blue wool scholar's coat, simple amber lining, dark trousers and boots. No flamboyant robe sleeves or decorative gear clutter.\nOne forearm carries a compact brass casting brace like a small open harp: THREE parallel taut silver wires between a wrist mount and a low knuckle arch, three visible tuning pegs. It fits the arm and leaves the hand free. The hand gently shapes a precise cyan-violet standing wave that holds THREE fragments of a palm-sized broken stone together with visible gaps. This is studied, repeatable high fantasy magic, no optics, mirrors, goggles, guns or modern screen.\nThree insets: (1) complete simple blue breastplate with its own distinct ridge and sensible fastenings; (2) removed stringed casting brace showing exactly the same three wires and pegs; (3) small closed working folio with a few loose parchment slips, only abstract non-readable diagram marks. Quiet absorbed posture, not a superhero attack.",
+      "file": "01-harmonic-wardwright.png",
+      "prompt": "Use case: stylized-concept. Create a NEW Breachline high-fantasy design-review sheet, landscape 1536x1024, traditional oil/acrylic/gouache painted realism with economical brushwork and selective luminous passages. Material and anatomical credibility; broad painted shapes instead of microdetail. No photograph, glossy CGI, animated-film aesthetic, anime, game UI, lettering, numbers, watermark or border.\nPlain warm off-white backdrop, neutral light, minimal contact shadow. No environment, horizon, architecture, scenery, furniture or unrequested characters: these are separable reference studies. MAGIC should be unmistakable, beautifully painted and purposeful, with controlled light spilling onto the object or person; it is not an electronic LED, holographic computer interface or decorative generic aura. The effects remain local to the subject and do not become background scenery.\nLAYOUT: large main subject on the left 55 percent, complete and uncropped. Three well-separated corresponding equipment/construction studies on the right 42 percent. Every inset must match the main design. Do not multiply entire characters, scatter unrelated objects, or draw technical arrows.\nThis is a living high-fantasy world after an old empire's collapse. Alignments are philosophies, not mandatory uniforms. Invent a distinctive personal or workshop design, not a universal faction kit. No summoner goldmark. Face casting varies, generally appealing but not all fashion models; ordinary proportion and gentle asymmetry, not uncanny pores. Clear construction with few justified straps and layers. Each device, role and magical explanation is exploratory, not settled canon.\nSpecific design:\nImage 1 references blue-enamel armor MATERIAL QUALITY and high-medieval craftsmanship only; create a new male face, build, coat and breastplate silhouette. Image 2 references beautifully painted resonance magic, NOT its scenery, camera or exact tuning fork.\nMain: an adult human man about 40, broad sturdy build, deep brown skin, close-cropped curls, wide nose, slightly uneven beard and thoughtful attentive expression. Standing full body, facing slightly right, wearing a smoothly forged dark-blue enamel half-cuirass with a raised central ridge over a long ink-blue wool scholar's coat, simple amber lining, dark trousers and boots. No flamboyant robe sleeves or decorative gear clutter.\nOne forearm carries a compact brass casting brace like a small open harp: THREE parallel taut silver wires between a wrist mount and a low knuckle arch, three visible tuning pegs. It fits the arm and leaves the hand free. The hand gently shapes a precise cyan-violet standing wave that holds THREE fragments of a palm-sized broken stone together with visible gaps. This is studied, repeatable high fantasy magic, no optics, mirrors, goggles, guns or modern screen.\nThree insets: (1) complete simple blue breastplate with its own distinct ridge and sensible fastenings; (2) removed stringed casting brace showing exactly the same three wires and pegs; (3) small closed working folio with a few loose parchment slips, only abstract non-readable diagram marks. Quiet absorbed posture, not a superhero attack.",
+      "review": {
+        "overall": "accepted",
+        "character_or_construct": "accepted",
+        "kit_and_magic": "accepted visual direction; mechanics open"
+      },
+      "method": "built-in image_gen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f4b5e32f-8c27-41b2-ad3f-604311266893.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3fecc8f30a5e8acbf727e96eaa62f35cafac9e85950e5ae4961fc1f07b4467ea",
+      "generation_status": "complete",
+      "visual_review": "Inspected: readable primary subject, neutral background, corresponding separate studies, visible proposed magic and intended painted treatment. Creator verdict pending.",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f69accd9-208b-44aa-8965-3dcc89abe550.png",
+          "sha256": "7ea21cb82bebb11c9e90cf9fdacd7379cb931f6bec4d8b8dd978e7705611ae32",
+          "role": "Selected material/anatomy/magical treatment as specified in the exact prompt; not a design or environment template."
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/unmake-the-pattern.png",
+          "sha256": "67f53182127321b49c39c2dbf0e558e43861ffd450cc1fe7633f5aa931c6e48f",
+          "role": "Selected material/anatomy/magical treatment as specified in the exact prompt; not a design or environment template."
+        }
+      ],
+      "creator_feedback": "Strongly liked: a simple addition visibly increases the character's capability.",
+      "active_reference": true
+    },
+    {
+      "id": "02",
+      "key": "02-spellwright-field-loom",
+      "title": "Spellwright's field loom",
+      "alignment": "Gnosis",
+      "category": "experimental",
+      "type": "Portable magical instrument",
+      "refs": [],
+      "notes": "A portable loom draws a temporary ward out of light. Tests scholarly magic stored and shaped through a handmade mechanism, with the spell doing the extraordinary work.",
+      "brief": "One waist-high portable spellcraft instrument, alone, no character: a compact hinged dark hardwood and dull-brass U-shaped frame on two stout folding feet, THREE tensioning spindles and a single small hand crank. A folded blue wool carrying cover sits fitted over the lower housing, no decorative dangling belts. Recognizably handmade fantasy workshop craft, well fitted and robust.\nBetween the two uprights, five fine strands of cyan-violet light are being drawn from the spindles and woven into a small translucent luminous sheet with a clear braided edge. The magical textile is visible and beautiful, an experiment in making a temporary protective ward, not a sci-fi force-screen. The material hangs with a little weight and a curved edge, no letters or grid UI. Magic, not ordinary cloth, is the centre of the design. A short parchment strip with hand-drawn non-readable geometric marks feeds a single guide in the base; avoid making it a modern printer.\nThree insets: (1) instrument folded closed for transport, same structural parts and blue cover; (2) a single spindle and its simple crank/guide assembly with a luminous strand; (3) a softly curling small sample of the woven light showing its braided boundary. No lenses, telescopes, clock-face gauge arrays or endless visible gears. Focus on convincing frame construction and a wonderful magical output.",
+      "file": "02-spellwright-field-loom.png",
+      "prompt": "Use case: stylized-concept. Create a NEW Breachline high-fantasy design-review sheet, landscape 1536x1024, traditional oil/acrylic/gouache painted realism with economical brushwork and selective luminous passages. Material and anatomical credibility; broad painted shapes instead of microdetail. No photograph, glossy CGI, animated-film aesthetic, anime, game UI, lettering, numbers, watermark or border.\nPlain warm off-white backdrop, neutral light, minimal contact shadow. No environment, horizon, architecture, scenery, furniture or unrequested characters: these are separable reference studies. MAGIC should be unmistakable, beautifully painted and purposeful, with controlled light spilling onto the object or person; it is not an electronic LED, holographic computer interface or decorative generic aura. The effects remain local to the subject and do not become background scenery.\nLAYOUT: large main subject on the left 55 percent, complete and uncropped. Three well-separated corresponding equipment/construction studies on the right 42 percent. Every inset must match the main design. Do not multiply entire characters, scatter unrelated objects, or draw technical arrows.\nThis is a living high-fantasy world after an old empire's collapse. Alignments are philosophies, not mandatory uniforms. Invent a distinctive personal or workshop design, not a universal faction kit. No summoner goldmark. Face casting varies, generally appealing but not all fashion models; ordinary proportion and gentle asymmetry, not uncanny pores. Clear construction with few justified straps and layers. Each device, role and magical explanation is exploratory, not settled canon.\nSpecific design:\nOne waist-high portable spellcraft instrument, alone, no character: a compact hinged dark hardwood and dull-brass U-shaped frame on two stout folding feet, THREE tensioning spindles and a single small hand crank. A folded blue wool carrying cover sits fitted over the lower housing, no decorative dangling belts. Recognizably handmade fantasy workshop craft, well fitted and robust.\nBetween the two uprights, five fine strands of cyan-violet light are being drawn from the spindles and woven into a small translucent luminous sheet with a clear braided edge. The magical textile is visible and beautiful, an experiment in making a temporary protective ward, not a sci-fi force-screen. The material hangs with a little weight and a curved edge, no letters or grid UI. Magic, not ordinary cloth, is the centre of the design. A short parchment strip with hand-drawn non-readable geometric marks feeds a single guide in the base; avoid making it a modern printer.\nThree insets: (1) instrument folded closed for transport, same structural parts and blue cover; (2) a single spindle and its simple crank/guide assembly with a luminous strand; (3) a softly curling small sample of the woven light showing its braided boundary. No lenses, telescopes, clock-face gauge arrays or endless visible gears. Focus on convincing frame construction and a wonderful magical output.",
+      "review": {
+        "overall": "accepted",
+        "character_or_construct": "accepted",
+        "kit_and_magic": "accepted visual direction; mechanics open"
+      },
+      "method": "built-in image_gen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8d05c377-82d8-4606-8c32-00d1ef4f961a.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-and-craft-2026-11-08/02-spellwright-field-loom.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d049df1cab4c956d4d54f2844f3266d230eec127c9314af500dfd6d0d37bd42f",
+      "generation_status": "complete",
+      "visual_review": "Inspected: readable primary subject, neutral background, corresponding separate studies, visible proposed magic and intended painted treatment. Creator verdict pending.",
+      "reference_provenance": [],
+      "creator_feedback": "Liked: industry and magic combined in a way that fits the alignment.",
+      "active_reference": true
+    },
+    {
+      "id": "06",
+      "key": "06-still-flame-censer-healer",
+      "title": "Still Flame censer-healer",
+      "alignment": "Vigil / Still Flame",
+      "category": "experimental",
+      "type": "Human healer and ritual kit",
+      "refs": [],
+      "notes": "A traveling healer draws a gentle, luminous bandage from a small censer. Tests tangible healing magic and portable ritual objects; it does not prove the gods are answering.",
+      "brief": "Full-body human male traveling healer about 60, medium olive skin, long slightly crooked nose, thinning grey hair and short silver beard, warm intent ordinary attractive face. A slate-blue wool travel tunic beneath a worn ivory sleeveless overcoat, small mail collar for road danger, plain dark trousers and boots, one belt and cloth satchel. Practical modest protection; no giant priest hat, robes trailing on ground, church crosses, red cape or golden halo.\nIn his left palm he supports a small open bronze censer, a shallow rounded vessel with short feet and a simple handle. A tiny steady pearl-white flame sits inside without visible fuel. Right hand draws from the flame a softly glowing GOLD-WHITE ribbon like a clean linen bandage made partly of light. The ribbon wraps once around his own uninjured forearm, with a few real white cloth fibres at its edge. Magic evokes care, patient concentration and hope, not combat aggression, gold scar markings, rune technology or proof of a visible god. Gently light his fingers and face. No gore, wounds, patient or scenery.\nThree insets: (1) the same small open censer, flame visible; (2) ordinary compact healer's wrap containing folded bandages and two plain ceramic salve pots; (3) a small study of the luminous bandage transitioning from light into fabric over an empty cloth cuff. Clear restrained design; spell imagery can be poetic but objects should be physically convincing.",
+      "file": "06-still-flame-censer-healer.png",
+      "prompt": "Use case: stylized-concept. Create a NEW Breachline high-fantasy design-review sheet, landscape 1536x1024, traditional oil/acrylic/gouache painted realism with economical brushwork and selective luminous passages. Material and anatomical credibility; broad painted shapes instead of microdetail. No photograph, glossy CGI, animated-film aesthetic, anime, game UI, lettering, numbers, watermark or border.\nPlain warm off-white backdrop, neutral light, minimal contact shadow. No environment, horizon, architecture, scenery, furniture or unrequested characters: these are separable reference studies. MAGIC should be unmistakable, beautifully painted and purposeful, with controlled light spilling onto the object or person; it is not an electronic LED, holographic computer interface or decorative generic aura. The effects remain local to the subject and do not become background scenery.\nLAYOUT: large main subject on the left 55 percent, complete and uncropped. Three well-separated corresponding equipment/construction studies on the right 42 percent. Every inset must match the main design. Do not multiply entire characters, scatter unrelated objects, or draw technical arrows.\nThis is a living high-fantasy world after an old empire's collapse. Alignments are philosophies, not mandatory uniforms. Invent a distinctive personal or workshop design, not a universal faction kit. No summoner goldmark. Face casting varies, generally appealing but not all fashion models; ordinary proportion and gentle asymmetry, not uncanny pores. Clear construction with few justified straps and layers. Each device, role and magical explanation is exploratory, not settled canon.\nSpecific design:\nFull-body human male traveling healer about 60, medium olive skin, long slightly crooked nose, thinning grey hair and short silver beard, warm intent ordinary attractive face. A slate-blue wool travel tunic beneath a worn ivory sleeveless overcoat, small mail collar for road danger, plain dark trousers and boots, one belt and cloth satchel. Practical modest protection; no giant priest hat, robes trailing on ground, church crosses, red cape or golden halo.\nIn his left palm he supports a small open bronze censer, a shallow rounded vessel with short feet and a simple handle. A tiny steady pearl-white flame sits inside without visible fuel. Right hand draws from the flame a softly glowing GOLD-WHITE ribbon like a clean linen bandage made partly of light. The ribbon wraps once around his own uninjured forearm, with a few real white cloth fibres at its edge. Magic evokes care, patient concentration and hope, not combat aggression, gold scar markings, rune technology or proof of a visible god. Gently light his fingers and face. No gore, wounds, patient or scenery.\nThree insets: (1) the same small open censer, flame visible; (2) ordinary compact healer's wrap containing folded bandages and two plain ceramic salve pots; (3) a small study of the luminous bandage transitioning from light into fabric over an empty cloth cuff. Clear restrained design; spell imagery can be poetic but objects should be physically convincing.",
+      "review": {
+        "overall": "accepted",
+        "character_or_construct": "accepted",
+        "kit_and_magic": "accepted visual direction; mechanics open"
+      },
+      "method": "built-in image_gen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-e08f6710-16c3-4500-8811-26b367e8caf4.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-and-craft-2026-11-08/06-still-flame-censer-healer.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "eddcd43b31a3e8d2ecf2ff543ab4c757a3f998f15aec26afce0d407cd5c24dfb",
+      "generation_status": "complete",
+      "visual_review": "Inspected: readable primary subject, neutral background, corresponding separate studies, visible proposed magic and intended painted treatment. Creator verdict pending.",
+      "reference_provenance": [],
+      "creator_feedback": "Healer liked.",
+      "active_reference": true
+    },
+    {
+      "id": "07",
+      "key": "07-cinder-cant-drummer",
+      "title": "Cinder-cant drummer",
+      "alignment": "Fervor / Cinder Clans proposal",
+      "category": "close_fit",
+      "type": "Goblin battle-cant caster",
+      "refs": [],
+      "notes": "A goblin channels heat and resolve through a battle rhythm. Tests communal, exuberant magic with personal kit, rather than scholarly apparatus or an organized army uniform.",
+      "brief": "ONE adult goblin man, small wiry build and lively expressive age-lined face, large uneven ears, a bulbous long nose and dark olive skin, short bristly black hair with a silver streak. Genuinely adult goblin, not a human child, elf or comic clown. Thrilled determined expression with closed teeth, no manic grin, ordinary weathered features. Complete standing body in a lively but balanced weight shift. Faded brick-red short wool jacket over a plain ochre shirt, one salvaged iron shoulder cap, loose soot-brown trousers and scuffed boots, personal repaired gear without layered leather flaps.\nA small hand drum hangs at the waist from one broad useful sling. His left hand supports its wood rim while the right strikes the skin with a short wrapped beater, an anatomically simple gesture. From the point of contact, TWO warm red-orange ripples of magic expand like visible heat carried by sound. Small embers travel along the drum's hanging rough red cloth ties, but the drum is not burning or exploding. This is will, rhythm and shared fervor made magical, not a precisely measured apparatus, religious miracle or factory device. No background troop, stage, battlefield or fire wall.\nThree insets: (1) the plain wood-and-hide drum with simple tension ropes, magic absent for clarity; (2) wrapped wooden beater and three loose red cloth ties; (3) the salvaged single shoulder plate and its simple padded attachment. Rough individual ownership; do not establish a faction uniform or all goblins as musicians.",
+      "file": "07-cinder-cant-drummer.png",
+      "prompt": "Use case: stylized-concept. Create a NEW Breachline high-fantasy design-review sheet, landscape 1536x1024, traditional oil/acrylic/gouache painted realism with economical brushwork and selective luminous passages. Material and anatomical credibility; broad painted shapes instead of microdetail. No photograph, glossy CGI, animated-film aesthetic, anime, game UI, lettering, numbers, watermark or border.\nPlain warm off-white backdrop, neutral light, minimal contact shadow. No environment, horizon, architecture, scenery, furniture or unrequested characters: these are separable reference studies. MAGIC should be unmistakable, beautifully painted and purposeful, with controlled light spilling onto the object or person; it is not an electronic LED, holographic computer interface or decorative generic aura. The effects remain local to the subject and do not become background scenery.\nLAYOUT: large main subject on the left 55 percent, complete and uncropped. Three well-separated corresponding equipment/construction studies on the right 42 percent. Every inset must match the main design. Do not multiply entire characters, scatter unrelated objects, or draw technical arrows.\nThis is a living high-fantasy world after an old empire's collapse. Alignments are philosophies, not mandatory uniforms. Invent a distinctive personal or workshop design, not a universal faction kit. No summoner goldmark. Face casting varies, generally appealing but not all fashion models; ordinary proportion and gentle asymmetry, not uncanny pores. Clear construction with few justified straps and layers. Each device, role and magical explanation is exploratory, not settled canon.\nSpecific design:\nONE adult goblin man, small wiry build and lively expressive age-lined face, large uneven ears, a bulbous long nose and dark olive skin, short bristly black hair with a silver streak. Genuinely adult goblin, not a human child, elf or comic clown. Thrilled determined expression with closed teeth, no manic grin, ordinary weathered features. Complete standing body in a lively but balanced weight shift. Faded brick-red short wool jacket over a plain ochre shirt, one salvaged iron shoulder cap, loose soot-brown trousers and scuffed boots, personal repaired gear without layered leather flaps.\nA small hand drum hangs at the waist from one broad useful sling. His left hand supports its wood rim while the right strikes the skin with a short wrapped beater, an anatomically simple gesture. From the point of contact, TWO warm red-orange ripples of magic expand like visible heat carried by sound. Small embers travel along the drum's hanging rough red cloth ties, but the drum is not burning or exploding. This is will, rhythm and shared fervor made magical, not a precisely measured apparatus, religious miracle or factory device. No background troop, stage, battlefield or fire wall.\nThree insets: (1) the plain wood-and-hide drum with simple tension ropes, magic absent for clarity; (2) wrapped wooden beater and three loose red cloth ties; (3) the salvaged single shoulder plate and its simple padded attachment. Rough individual ownership; do not establish a faction uniform or all goblins as musicians.",
+      "review": {
+        "overall": "accepted",
+        "character_or_construct": "accepted",
+        "kit_and_magic": "accepted visual direction; mechanics open"
+      },
+      "method": "built-in image_gen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c6f939a1-4b6d-4a01-b2c2-ca43cb2c9081.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dbbfd1fab4f915b0c7a65ef22a9a37395fb68c4a9af6c650ac0b3baf1d769b5b",
+      "generation_status": "complete",
+      "visual_review": "Inspected: readable primary subject, neutral background, corresponding separate studies, visible proposed magic and intended painted treatment. Creator verdict pending.",
+      "reference_provenance": [],
+      "creator_feedback": "Drummer liked.",
+      "active_reference": true
+    },
+    {
+      "id": "08",
+      "key": "08-stormhook-channeler",
+      "title": "Stormhook channeler",
+      "alignment": "Fervor",
+      "category": "experimental",
+      "type": "Orc storm caster and kit",
+      "refs": [],
+      "notes": "An orc catches unstable storm force on a rough iron hook-spear. Tests Fervor beyond fire: forceful, risky elemental magic shaped through nerve and a simple tool.",
+      "brief": "An adult female orc, broad muscular build, heavy low brow, flattened broad nose, huge projecting jaw and uneven blunt tusks, visibly coarse NONHUMAN face. Deep grey-green skin, short coarse greying side braid, fierce intent expression; not a pretty human fashion model with green skin, not sexualized. Full body balanced in a planted side-on stance facing slightly right. A simple salvaged dark-iron breastplate over ochre linen, faded dark-red loose trousers, one bare forearm and one cloth-wrapped wrist, ordinary heavy boots. Her personal kit is mismatched but maintained, with clear functional closures, no uniform or strap mess.\nHolds a short iron hook-headed spear diagonally across the body with two coherent separated grips. The butt is near the ground and tip points away from the viewer. The single bent iron hook catches a lively fork of WHITE-VIOLET STORM MAGIC. The energy twists into a rough restrained loop near the spearhead, throws a few ember-orange sparks at the iron and lights her tusks and hands. It feels dangerously held by will, no scientific gauges, runic batteries, lightning gun or polished academic apparatus. Neither attacking the viewer nor standing inside a giant storm background.\nThree insets: (1) complete plain hook-spear with no magic, normal hand-forged iron and wooden shaft; (2) coarse iron forearm cuff and cloth lining, no complicated device; (3) modest salvaged breastplate with visible plain fastenings. The spear focuses a personal elemental talent; no claim every orc or Fervor soldier has it.",
+      "file": "08-stormhook-channeler.png",
+      "prompt": "Use case: stylized-concept. Create a NEW Breachline high-fantasy design-review sheet, landscape 1536x1024, traditional oil/acrylic/gouache painted realism with economical brushwork and selective luminous passages. Material and anatomical credibility; broad painted shapes instead of microdetail. No photograph, glossy CGI, animated-film aesthetic, anime, game UI, lettering, numbers, watermark or border.\nPlain warm off-white backdrop, neutral light, minimal contact shadow. No environment, horizon, architecture, scenery, furniture or unrequested characters: these are separable reference studies. MAGIC should be unmistakable, beautifully painted and purposeful, with controlled light spilling onto the object or person; it is not an electronic LED, holographic computer interface or decorative generic aura. The effects remain local to the subject and do not become background scenery.\nLAYOUT: large main subject on the left 55 percent, complete and uncropped. Three well-separated corresponding equipment/construction studies on the right 42 percent. Every inset must match the main design. Do not multiply entire characters, scatter unrelated objects, or draw technical arrows.\nThis is a living high-fantasy world after an old empire's collapse. Alignments are philosophies, not mandatory uniforms. Invent a distinctive personal or workshop design, not a universal faction kit. No summoner goldmark. Face casting varies, generally appealing but not all fashion models; ordinary proportion and gentle asymmetry, not uncanny pores. Clear construction with few justified straps and layers. Each device, role and magical explanation is exploratory, not settled canon.\nSpecific design:\nAn adult female orc, broad muscular build, heavy low brow, flattened broad nose, huge projecting jaw and uneven blunt tusks, visibly coarse NONHUMAN face. Deep grey-green skin, short coarse greying side braid, fierce intent expression; not a pretty human fashion model with green skin, not sexualized. Full body balanced in a planted side-on stance facing slightly right. A simple salvaged dark-iron breastplate over ochre linen, faded dark-red loose trousers, one bare forearm and one cloth-wrapped wrist, ordinary heavy boots. Her personal kit is mismatched but maintained, with clear functional closures, no uniform or strap mess.\nHolds a short iron hook-headed spear diagonally across the body with two coherent separated grips. The butt is near the ground and tip points away from the viewer. The single bent iron hook catches a lively fork of WHITE-VIOLET STORM MAGIC. The energy twists into a rough restrained loop near the spearhead, throws a few ember-orange sparks at the iron and lights her tusks and hands. It feels dangerously held by will, no scientific gauges, runic batteries, lightning gun or polished academic apparatus. Neither attacking the viewer nor standing inside a giant storm background.\nThree insets: (1) complete plain hook-spear with no magic, normal hand-forged iron and wooden shaft; (2) coarse iron forearm cuff and cloth lining, no complicated device; (3) modest salvaged breastplate with visible plain fastenings. The spear focuses a personal elemental talent; no claim every orc or Fervor soldier has it.",
+      "review": {
+        "overall": "accepted",
+        "character_or_construct": "accepted",
+        "kit_and_magic": "accepted visual direction; mechanics open"
+      },
+      "method": "built-in image_gen",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-97c8808d-8c31-4cb5-bb51-778b164e132e.png",
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/magic-and-craft-2026-11-08/08-stormhook-channeler.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "eb7536d570ddbbb5e62ba12c2717267c07310cf93c32081d2ab975428ca90ebe",
+      "generation_status": "complete",
+      "visual_review": "Inspected: readable primary subject, neutral background, corresponding separate studies, visible proposed magic and intended painted treatment. Creator verdict pending.",
+      "reference_provenance": [],
+      "creator_feedback": "Storm magic liked.",
+      "active_reference": true
+    }
+  ]
+}

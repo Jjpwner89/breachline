@@ -1,214 +1,201 @@
 # Breachline card art briefs: set 5
 
-12 images for cards 31 to 42 in `../CARD_PROPOSALS.md`, written on 2026-11-08. **Status: briefs only, nothing has been generated.** Each card comes from a reference sheet the creator voted to turn into a card, so every brief keeps that sheet's character or item and gives it a new scene. The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
+12 illustrations for the proposed subjects numbered 31–42 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md).
 
-Add finished images to `CARD_ART_FINAL.json` once approved, since that file is the definitive selection of card art.
+**Revision 2 — 2026-11-09. All twelve paintings generated; creator requested the set be committed after three final revisions.** Current files include the angry outdoor Brightlance, more-veiled adept, larger sword composition and less uncanny porcelain half-visored retainer. Card rules are unchanged.
 
-## Instructions for the image generator
+## What these paintings are for
 
-1. If you have access to the project, read `.claude/skills/art-direction/SKILL.md` first, along with `breachline/SETTING.md` and `reference-library-2026-11-06/README.txt`. The creator's latest feedback overrides these briefs. That skill's "avoid red capes", "rain only when briefed" and "Repetition to watch" notes are not rules: the creator confirmed they never asked for them. A brief's pose or staging can change to serve the direction, but keep its subject, its gameplay idea and the continuity it lists.
-2. Generate one image per heading, using the shared direction below plus that card's brief. Attach the reference sheets listed for that card, with paths relative to this `art/` folder. Exact combined prompts are in `ART_PROMPTS_SET5.json`.
-3. Save a 1536 x 1024 landscape PNG in the `art/` folder under the name in the heading, and a 768 x 512 JPEG of the same name in `art/web/`.
-4. Skip any card whose file already exists, and never overwrite existing art. No file name here matches an existing painting.
-5. Use `sunmane-lancer.png` for painted material quality only, not its pose, framing, sky or colour.
-6. If you can't generate images, stop and say so. Don't substitute placeholders or images from the web.
+Make images the creator wants to look at, faithful to the setting and the visual taste developed together. Lead with a distinctive silhouette, beautiful light, material, colour, atmosphere, character or an imaginative magical idea. Appeal can be quiet, unsettling, austere or lyrical as well as energetic.
 
-When finished, list the files you created and any cards you couldn't complete.
+A card's abilities do not prescribe its picture. The scholar need not zap. A subject with Guard need not protect somebody. A magical object or material can be compelling without demonstrating its use. A brief may contain action, but only because that action makes a better painting. Do not add victims, companions, props or visual explanations just to account for rules.
 
-## Shared direction
+Each brief below states a visual aim, preserves the accepted subject and proposes a composition. The creator approved the revised briefs for generation; later feedback updates three presentations below. These images do not establish new lore. Exact identity and signature equipment still matter. Revisit the appeal of the accepted reference, not just its inventory of parts.
 
-Apply this to every image:
+## Instructions for the next image pass
+
+1. Read [.claude/skills/art-direction/SKILL.md](../../.claude/skills/art-direction/SKILL.md), the current [setting](../SETTING.md), and the [accepted-reference guide](reference-library-2026-11-06/README.txt). The creator's latest feedback takes precedence.
+2. Use the revision 2 prompts in [ART_PROMPTS_SET5.json](ART_PROMPTS_SET5.json). For follow-up edits, use current_prompt together with the latest direction_updates. Its card-design metadata is separate: do not add costs, keywords, numerical effects or tactical outcomes to the image prompt. The generation-attempt records describe the superseded paintings, not instructions for the next pass.
+3. Attach the accepted references listed for the subject. Preserve their identity, proportions, kit and material character. The first Set 5 batch is not a composition or style reference for replacements.
+4. The revision 2 pass is complete: each heading has a 1536 × 1024 landscape PNG and a matching 768 × 512 JPEG in the web/ folder. These replace revision 1 under the same filenames. Future changes should follow the creator's next feedback; do not regenerate this completed pass solely because historical prompts remain in the record.
+5. Use sunmane-lancer.png for painted material quality only, not as a pose, palette or setting template. No frames, lettering, logos or watermarks.
+6. Keep [CARD_ART_FINAL.json](CARD_ART_FINAL.json) for creator-approved selections. No current Set 5 image was promoted by this review.
+
+[SET5_GALLERY.html](SET5_GALLERY.html) shows the twelve current revision 2 paintings with their briefs. [SET5_VALIDATION.json](SET5_VALIDATION.json) records file checks, not artistic approval.
+
+## Shared painting direction
 
 ```text
 Use case: stylized-concept.
-Create one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.
+Create one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.
 
-ART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale, a little more visible than in earlier sets; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Faces are painted at the same resolution as everything around them, never sharper or more photographic. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.
+PURPOSE: make a beautiful, distinctive image that fits the creator's taste and this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.
 
-Tell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Combat is generally lateral and nothing is aimed at the viewer. Enemies may be on screen occasionally, but remain secondary to the principal action or magical effect. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
+MEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes, creatures and surroundings share the same painted resolution. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Keep attractive, individual faces and lived character.
 
-Magic is restrained, specific and legible, as in the accepted round 04 studies: it can feel assumed in the world rather than overstated. Avoid default luminous threads, ribbons and energy cords except where the brief calls for the field loom's weave.
+COMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.
 
-Use a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.
+MAGIC: subject-specific and visually interesting, sometimes understated and assumed in the world. It can reside in a person, creature, material or object. Preserve the aspects of the accepted reference that made it appealing. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Luminous threads are specific to the accepted loom, not a default for every spell.
 
-CONTINUITY: each card depicts an established character, creature or item from an accepted reference sheet, which is attached. Preserve the identity and signature equipment listed for that card. Everything else is new: pose, action, camera, light, setting and supporting figures. Don't copy the sheet's standing pose, plain background or neutral presentation.
+CONTINUITY: the attached accepted references establish this subject's identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. The first Set 5 batch is superseded as visual direction; do not use it as a composition or rendering reference.
 
-SETTING: high fantasy, about 150 years after the Old Empire collapsed and the gods went silent. Ordinary life and generally stable new kingdoms continue. Vigil values oaths, protection and the gods. Gnosis studies magic as a science, and its Artificers make ingenious mechanisms. Dominion seeks control or ruin and pays for power, and its world is harsh and oppressive rather than tidy. Fervor prizes passion and freedom, with personal, unmatched gear. Genesis lives in and defends the wild. Societies are specific and local, not uniformly cosmopolitan.
+SETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times. Gnosis explores scholarly magic; its Artificers also make ingenious mechanisms. Dominion can feel oppressive, patient and ceremonious. Fervor values passion and freedom. Genesis includes societies as well as wilderness. Maintain the established setting; proposed scenes do not establish new lore.
 ```
 
-## Alignment palettes
+## Composition range
 
-Alignment can be clear without being heavy-handed, and emblems don't need to appear on everything. The black and green rows are still proposals.
-
-| Alignment | Palette and light |
-| --- | --- |
-| Gnosis | Deep blue, teal, brass, amber; lamplight |
-| Dominion | Ash grey, bone, tarnished silver, deep violet; cold light. Patient, pitiful or ceremonious, rather than defaulting to gore, fangs or gothic castles |
-| Fervor | Ember orange, iron, soot, blood red; firelight and hard sun |
-| Genesis | Moss, bark, deep green, amber; dappled light. Distinct natural silhouettes, not humanoids dressed in leaves |
-| Neutral | Whatever the scene needs |
+The set includes an open landscape with a scholar, intimate controlled magic, a decisive light streak, a translucent material study, steel and dark water, a creature in open air, an agile small figure, sculptural living wood, an austere masked portrait, an ambiguous shadow portrait, an ember-lit weapon and a monumental stone presence. Vary distance, pose, light and colour for those individual subjects. This is a set-specific plan, not a mandatory template for later batches.
 
 ## Gnosis
 
 ### Conclave field scholar: conclave-field-scholar.png
 
-*Unit, cost 3. Zap: instead of attacking, deal 1 damage to an enemy 2 tiles away.*
+**Visual aim:** A wind-caught scholar against a luminous depth of landscape; curiosity, distance and the contrast of navy, ochre and pale stone.
 
-**References:** `reference-library-2026-11-06/character-kits-2026-11-08/03-conclave-field-scholar.png` (continuity for this character, her face and her kit)
+**Accepted references:** `reference-library-2026-11-06/character-kits-2026-11-08/03-conclave-field-scholar.png` (continuity for this character, her face and her kit)
 
 **Keep:** Her face, long dark braid and build from the sheet. The navy reinforced short coat with its steel side plates and ochre sleeves, the measuring staff with its three-pronged brass head, and the leather folio.
 
-On a high, windswept survey path above a valley, the scholar has stopped mid-measurement, folio tucked under one arm. Without fully looking up from her notes, she has flicked the brass prongs of her measuring staff toward something off-screen RIGHT, and a small, quick snap of blue-white light has just left them, crossing a short gap and fading. The zap is deliberately modest: a bright crackle about the length of a forearm, not a beam. Her expression is mildly irritated at the interruption, not heroic. Wind pulls at her coat and a loose strand of hair. A few survey stakes and a cairn imply the place. Cool blues and slate greys, with the brass and her ochre sleeves as the warm notes.
+On a narrow survey terrace high above a valley, the scholar has paused beside a flat stone with her folio open on it. One hand rests lightly on the page as she looks up across the distance; the brass-headed staff leans within reach. Her coat and loose braid catch the wind. Place her off-centre in a medium-wide view, with enough of the valley visible to make the space feel expansive, but resolve it into a few layered blue-grey shapes. A low angle of light warms her ochre sleeve and the staff's brass prongs. Her attention and the tension between the small figure and the open air give the painting its life.
+
+**Avoid in this painting:** No zap, target, combat interruption or visible magical demonstration. Do not make her a heroic caster or add a busy survey apparatus.
 
 ### Harmonic wardwright: harmonic-wardwright.png
 
-*Unit, cost 4. Ranged. Resonance: its attacks also deal 1 to each enemy next to the target.*
+**Visual aim:** The intimate strangeness of ordinary stones moving above an open palm, framed by convincing blue enamel, brass and a thoughtful face.
 
-**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png` (continuity for this character, his face, breastplate and gauntlet); `reference-library-2026-11-06/character-kits-2026-11-08/05-gnosis-foot-soldier.png` (the blue-enamel breastplate's construction)
+**Accepted references:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png` (continuity for this character, his face, breastplate and gauntlet); `reference-library-2026-11-06/character-kits-2026-11-08/05-gnosis-foot-soldier.png` (the blue-enamel breastplate's construction)
 
 **Keep:** His face, close-cropped hair and beard, and build from the sheet. The blue-enamel breastplate, the long navy coat, and the brass stringed gauntlet on his right forearm.
 
-An offensive moment. The wardwright stands on a low grassy rise, turned to the LEFT, his gauntleted hand thrust forward with its strings visibly vibrating. Down the slope, where his attack has landed, a ring of blue-violet resonance bursts outward through an old drystone field wall, throwing broken stones aside. Three enemy soldiers at the wall, small, loosely painted and secondary, are knocked off their feet in different directions by the same ring: one attack, several people hit. His stance is braced and certain, a scholar who has become a fighter, not a robed mage posing. Warm amber grass and long shadows, with the cool violet burst as the one strong contrast. Nothing is aimed at the viewer.
+Return to the reference's small orbiting stones. In a three-quarter, roughly hip-up composition, the wardwright watches two or three rough fragments slowly turn above his gauntleted palm. His arm is comfortably bent, his head tilted with absorbed attention; his other hand rests naturally. Let the uneven stones form an elegant, open rhythm beside his face. The magic is a restrained blue-violet glimmer or a few faint interrupted orbital traces, close to the stones. Soft daylight grazes his scratched blue breastplate and warm brass; a shaded plaster wall and one edge of an arch supply a simple, quiet background. Make him feel practiced and curious. The charm lies in the face, the objects' weight and their impossible suspension.
+
+**Avoid in this painting:** No battlefield, shockwave, shattered wall, thrown soldiers or large explosion. Keep the orbit small and particular; do not turn it into a giant glowing energy ring.
 
 ### Brightlance: brightlance.png
 
-*Spell, cost 3. Deal 2 damage to an enemy unit, then push it 1 tile.*
+**Visual aim:** Anger and forward force in an outdoor spellcasting portrait, with a hard blue-violet streak cutting across open dark sky.
 
-**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png` (continuity for this character, his face, breastplate and gauntlet)
+**Accepted references:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png` (continuity for this character, his face, breastplate and gauntlet)
 
 **Keep:** The same harmonic wardwright as the unit card: his face, beard, blue-enamel breastplate, navy coat and brass stringed gauntlet.
 
-Inside a dark stone gatehouse passage at night, the wardwright drives his open right hand forward, the gauntlet's strings pulled taut. From his palm a narrow, solid-looking lance of blue and violet light TEARS forward to the RIGHT in a fast streak: it is clearly in motion, with a bright leading point, a trail breaking into crackling edges, and the air rippling in its wake. It is a lance of light, not a stone and not a lightning fork. At the right edge of the frame, small and secondary, an enemy's raised shield is being shoved backward by the impact, the figure behind it loosely painted and staggering. The spell's cold light falls across his face, beard and breastplate and throws hard shadows up the arch. Deep blue-black, electric blue and violet, with one warm note from a distant torch.
+Outside on an exposed stone terrace beneath a dark, wind-torn sky, the wardwright drives a narrow blue-violet lance of light hard to the RIGHT, toward a target entirely off-screen. Show him from his right side in a medium-close three-quarter view, his torso leaning into the cast, right shoulder and gauntleted arm thrust firmly forward. His face is visibly angry and intent: brows drawn, jaw set or mouth slightly open with the effort, painted simply rather than exaggerated. His free left hand is clenched low beside him. The lance is a bright, compressed streak with sharp, torn trailing edges and a clear forward force; it exits the frame before any impact. Wind pulls at his navy coat. Cold spell-light cuts across his face, blue enamel and brass against the darker open sky; a little weathered stone below establishes the outdoor setting. Make the gesture and expression aggressive while keeping the spell a coherent lance and preserving natural anatomy.
+
+**Avoid in this painting:** No indoor passage, arch or gatehouse. No visible enemy, shield, victim, impact point or on-screen explosion. No attack aimed at the viewer. Do not make his face calm or his casting gesture relaxed; avoid uncanny teeth and facial detail.
 
 ### Woven ward: woven-ward.png
 
-*Enchantment, cost 3. Enchant one of your units: it ignores the next 4 damage, then the ward is used up.*
+**Visual aim:** Light behaving like a delicate fabric: translucent folds against dark wood, worn brass and deep navy.
 
-**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/02-spellwright-field-loom.png` (continuity for the loom and its ward)
+**Accepted references:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/02-spellwright-field-loom.png` (continuity for the loom and its ward)
 
 **Keep:** The field loom's design: dark wooden frame with brass corner fittings, three spools of blue-violet light, the side crank, the navy cloth cover and the paper pattern strip.
 
-In the trampled yard of a camp at first light, the field loom stands on the lowered tailgate of a cart. A young Artificer, sleeves rolled, turns its crank with real effort, watching the work. A sheet of translucent blue-violet weave has just come off the frame and is settling over the shoulders and back of a soldier in a plain gambeson who has stepped up to receive it, turned to the LEFT toward where the line is forming off-screen. He looks down at the ward on his arm, uncertain and impressed. The weave is soft and faintly patterned, like light-made cloth, and fades at its edges. Muted greys and browns of the camp, a few loosely painted tents, with the ward as the brightest thing in the scene.
+A close, slightly oblique still life of the accepted field loom on a worn workbench. A small length of luminous blue-violet weave hangs from its frame, turning softly into a loose fold that reveals its translucency. Let the weave's curved edge and the angular wood create the composition. Three spools, the brass fittings and a partially visible crank establish the familiar device without giving every part equal emphasis. Cool light passes through the weave onto the bench; a quiet warm patch catches the wood and a brass corner. The navy cover and the paper pattern strip recede into softer shadow. The surrounding workshop is only implied.
+
+**Avoid in this painting:** No soldier, wearer, dressing action, armour fitting or demonstration of damage protection. No mannequin or body-shaped ward. The magical material itself is the subject.
 
 ### Enchanter's quench: enchanters-quench.png
 
-*Enchantment, cost 2. Enchant one of your units: +1 attack, and its attacks ignore Guard and other damage reduction.*
+**Visual aim:** An absorbing arrangement of dark water, luminous steel and steam, with the contrast of warm forge spill and deep blue.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/05-enchanters-quench.png` (the trough, tongs and the blade's blue light; a new, closer composition)
+**Accepted references:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/05-enchanters-quench.png` (the trough, tongs and the blade's blue light; a new, closer composition)
 
 **Keep:** The rough-hewn stone quenching trough, the smith's iron tongs, and the plain straight blade whose steel takes on a deep blue inner light as it is quenched.
 
-A close, downward view into a stone quenching trough in a dim workshop. A smith's scarred forearms and leather apron enter from the upper left, his tongs plunging a plain straight blade into the dark water. Where the steel meets the water it flares with a deep blue, crystalline inner light that spreads up the blade as it cools, and a column of steam boils up, lit from below. Ripples and bubbles break the surface. His face is only partly in frame at the top edge, intent, loosely painted. The magic stays inside the steel: no beams, threads or runes. Near-black stone and water, warm forge-orange spill from off-screen, and the cold blue of the blade.
+Look obliquely down into the rough stone quenching trough. A plain straight blade rests partly below the dark water, held steadily by iron tongs entering from the upper edge. The smith is present only as a simply painted hand, a forearm and a small edge of apron. The blade carries a deep blue inner light, broken by a few soft ripples; a thinning veil of steam obscures part of its shape. Keep much of the water nearly black so the steel's colour feels rich. A small reflection of warm forge light catches the trough's worn lip. This is a carefully observed moment in a craft, with room for stillness.
+
+**Avoid in this painting:** No combat demonstration, armour penetration, diagram of an enchantment or oversized flare. Avoid an eruption of steam that hides the composition and avoid excessive hand or surface detail.
 
 ### Rime drake: rime-drake.png
 
-*Unit, cost 4. Flying. Freeze: the unit it attacks can't move on its next turn.*
+**Visual aim:** A lean pale animal in open winter air, with a beautiful wing silhouette and warm light passing through frost.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/02-rime-drake.png` (continuity for the drake's anatomy, scales and frost); `web/ember-drake.jpg` (how the existing drake card is painted, not its pose or setting)
+**Accepted references:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/02-rime-drake.png` (continuity for the drake's anatomy, scales and frost); `web/ember-drake.jpg` (how the existing drake card is painted, not its pose or setting)
 
 **Keep:** The drake's anatomy from the sheet: horse-sized, pale grey and cream scales with darker mottling, backswept horns, frosted wing edges and a lean, long-tailed body.
 
-Over a shallow river ford in deep winter, the rime drake is landing on a snowy bank, wings still half spread, its whole body in frame and its neck stretched LEFT as it exhales a dense, low cloud of freezing breath across the water. Where the breath passes, the ford is freezing solid in a spreading white bloom, locking around the legs of an enemy rider's horse caught mid-crossing. The rider and horse are small, loosely painted and secondary, the horse straining, unhurt but stuck. The drake is a wild animal acting on its own, not anyone's mount. Its breath is condensation, rime and pale crystal, with no glow, apparatus or energy cords. Pale gold sun, blue-white snow and steel-grey water.
+The horse-sized drake skims low over a cold lake, banking gently across the painting toward the right. View it from slightly below and to the side so its long body, backswept horns, tail and two wings form an asymmetric sweep against open air. Its four legs are naturally drawn beneath the body. Low pale-gold sun catches the thin wing membranes and frosted edges while the mottled scales fall into blue-grey shadow. A dark reflection and a few ripples below suggest its closeness to the water. One distant snowy bank supplies context; most of the setting remains broad, quiet shapes. Leave comfortable space around both wings and the tail.
+
+**Avoid in this painting:** No rider, trapped horse, target, freeze attack or demonstrated immobilization. Do not enlarge it into a colossal dragon or replace the reference's four legs and two wings with a different anatomy.
 
 ## Genesis
 
 ### Thornwarden goblin scout: thornwarden-goblin-scout.png
 
-*Unit, cost 1. Ranged.*
+**Visual aim:** A wiry, distinctive little figure caught in an agile weight shift among large green shapes, with a sharp note of rust-red cloth.
 
-**References:** `reference-library-2026-11-06/character-kits-2026-11-08/04-thornwarden-goblin-scout.png` (continuity for this character, his face and his kit); `reference-library-2026-11-06/people/03-goblins.png` (goblin anatomy)
+**Accepted references:** `reference-library-2026-11-06/character-kits-2026-11-08/04-thornwarden-goblin-scout.png` (continuity for this character, his face and his kit); `reference-library-2026-11-06/people/03-goblins.png` (goblin anatomy)
 
 **Keep:** His face, ears and wiry build from the sheet. The quilted felt jack with its rust-red short capelet and hood, the simple self bow, the billhook at his belt and the wicker buckler on his back.
 
-Crouched on a thick oak bough well above the forest floor, the goblin scout has drawn his short bow and leans out to the RIGHT, sighting down at something below and off-screen. One foot is braced against the trunk and his tongue is pressed into his cheek in concentration. The viewpoint looks up at him from below, past ferns and lower branches. He's small, quick and ordinary: a cheap scout, not a champion. Deep greens, mossy bark and patches of warm sunlight, with his rust-red capelet as the one strong colour.
+The goblin is halfway over a low, thick bough, one foot finding a place on the far side while a hand steadies him. He has turned his head to the left, ears alert to something beyond the frame. His short bow is carried low rather than drawn. Use a medium-wide view through broad foreground fern shapes; let the felt jack, wicker buckler and rust-red capelet break up his compact silhouette. Patches of ordinary daylight catch his cheek, knuckles and mossy bark. Keep his expression intent and individual, with a little of the small goblin's character the creator likes. The forest should feel inhabited and tangible without becoming a detailed panorama.
+
+**Avoid in this painting:** No staged archery demonstration, aiming pose or visible target. Avoid a cute mascot face, oversized heroic equipment or a forced comic expression.
 
 ### Bronze-harness alderkin: bronze-harness-alderkin.png
 
-*Unit, cost 4. A strong unit with no ability.*
+**Visual aim:** The sculptural relationship between living wood and fitted bronze, with a tall irregular silhouette emerging from a cool forest interior.
 
-**References:** `reference-library-2026-11-06/character-kits-2026-11-08/07-bronze-harness-alderkin.png` (continuity for this alderkin, its body, harness and spear); `reference-library-2026-11-06/people/06-alderkin.png` (alderkin anatomy)
+**Accepted references:** `reference-library-2026-11-06/character-kits-2026-11-08/07-bronze-harness-alderkin.png` (continuity for this alderkin, its body, harness and spear); `reference-library-2026-11-06/people/06-alderkin.png` (alderkin anatomy)
 
 **Keep:** Its living-tree anatomy from the sheet: braided root legs, twisting trunk body, branching crown of orange autumn leaves. The fitted bronze chest shell on padded straps, the open bronze forearm guard and the long spear.
 
-At the edge of its own grove of young trees, the bronze-harness alderkin is fighting. It lunges to the LEFT with a long, powerful spear thrust, its root-legs dug into the soil and its whole twisting body behind the blow. Its target is just off-screen; a few torn leaves and a splintered branch fly in the air between. Its face is fierce and focused. It defends its grove for its own reasons, not on anyone's behalf. Make it read as strong and dangerous, but not a champion: one hard-hitting fighter. Amber evening light catches the bronze, and the autumn leaves of its crown burn orange against cool shadow.
+Seen in a full-body three-quarter view, the alderkin is negotiating a shallow stone step between trees, its torso turning slightly as one root-foot finds purchase. It carries its long spear loosely on a diagonal, clearly at rest. Preserve the reference's asymmetrical braided root legs, twisting trunk and branching crown; the face is suggested through knots and the direction of the head. Broad, padded straps support the bronze chest shell without cutting into the bark. Soft grey-green woodland light leaves much of the figure in shade, while a few orange leaves and a worn bronze edge catch warmer light. Use substantial, irregular wood forms and varied restrained paint; the weight shift supplies movement without a theatrical lunge.
+
+**Avoid in this painting:** No cartoon scowl, human bodybuilder anatomy, huge expressive eyes or smooth animated wood. No staged spear attack, obligation to defend a grove, or helping-human story. Avoid turning the whole painting saturated orange.
 
 ## Dominion
 
 ### Porcelain-visored retainer: porcelain-visored-retainer.png
 
-*Unit, cost 3. Guard. Sworn: grows stronger each time another of your units is destroyed.*
+**Visual aim:** A believable human retainer in a simple porcelain half visor, with natural eyes and an exposed lower face warmed by restrained gallery light.
 
-**References:** `reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png` (continuity for this character's mask, helmet, coat and estoc)
+**Accepted references:** `reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png` (continuity for this character's mask, helmet, coat and estoc)
 
-**Keep:** The pale ceramic faceplate with its hairline crack over a steel sallet-like helmet, the dark plum long coat, the half-cuirass and the narrow estoc.
+**Keep:** Porcelain protection, dark plum coat, modest steel breastplate and narrow sword remain. The latest request overrides the old full cracked faceplate: use a plain half visor with visible human eyes and lower face.
 
-In a long, cold gallery of an Ashen Court house, the porcelain-visored retainer has stepped into the path of someone entering off-screen LEFT, placing itself between them and a seated noble behind it, who is loosely painted in shadow. Its estoc is lowered but ready, and its free gloved hand is held out flat toward the newcomer, a silent order to come no closer. At its feet lies a second porcelain mask, cracked across, dropped by a fellow retainer who is no longer there: the reason it now stands alone. The mask's blank calm makes it unsettling, with no gore and no monster. Ash grey walls, tarnished silver and plum, and a single candle's warmth against tall, cold windows.
+Keep the dim stone gallery, cool window light, plum wool, modest breastplate and lowered sword. Replace the unsettling complete faceplate with a close-fitting ivory porcelain half visor over the brow, upper cheeks and nose bridge. Natural eyes show through comfortable openings, and the real lower face, ordinary mouth, jaw and light stubble remain visible. Use a simple leather fastening, a modest open-faced iron cap and a relaxed collar. The man stands naturally at an angle, looking toward the window. Porcelain, steel and wool should feel worn by a real person, without a doll-face stare or theatrical menace.
+
+**Avoid in this painting:** No full doll-face mask, empty black eye slits, carved mouth, pointed chin, conspicuous crack, towering helmet, mannequin posture, giant armour or theatrical ornament. No guarding scene, noble or spare mask.
 
 ### Veil adept: veil-adept.png
 
-*Unit, cost 3. Veiled: can't be attacked or targeted until it attacks.*
+**Visual aim:** A seated woman whose expressive eyes emerge above a dark veil, with cloth and shadow merging at the edge of warm window light.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png` (continuity for this character and her shadow magic); `world-concepts-2026-11-08/01-the-price-of-morning.png` (the feel of the Dominion city, not its composition)
+**Accepted references:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png` (continuity for this character and her shadow magic); `world-concepts-2026-11-08/01-the-price-of-morning.png` (the feel of the Dominion city, not its composition)
 
-**Keep:** Her face, short dark curls, angular features and lean build from the sheet. The wine-plum coat, dark shirt and the plain knife at her belt.
+**Keep:** Her short dark curls, angular features, lean build, wine-plum coat, dark shirt and plain belt knife. The latest creator request adds more veiling; do not restore the uncovered lower face.
 
-In a crowded, oppressive Dominion street of soot-stained tenements and toiling people, the veil adept walks to the RIGHT through the crowd, unhurried. Shadow is folded over half of her: one shoulder, arm and the trailing side of her coat dissolve into soft, smoky darkness. A checkpoint guard looks directly past her at the people behind, and no one in the crowd reacts. Her face is calm and faintly amused, her hand resting near the knife but not drawing it. The shadow is restrained and painterly, with no glow, sparkle or device. Dirty greys, soot and bone, with the deep violet of the shadow and her plum coat as the accents.
+Keep the seated window-ledge portrait, short dark curls, wine-plum coat, forearm resting on a raised knee and divided window light. A fine dark gauzy veil covers her nose, mouth and lower face, with restrained folds leading into the collar. Her eyes and brow remain legible. The far edge of the veil and coat merge into the surrounding impossible shadow. Preserve the natural pose and hand, intimate scale and painterly lost edges.
+
+**Avoid in this painting:** No checkpoint, guards, crowd, strutting walk, giant smoke plume, glowing aura or glamour advertising pose.
 
 ## Fervor
 
 ### Banked flame blade: banked-flame-blade.png
 
-*Equipment, cost 2. Equip one of your units: +2 attack.*
+**Visual aim:** A close, dominant curve of ember-edged steel across the center of a cold blue painting; the sword, rather than its bearer, owns the frame.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/03-banked-flame-blade.png` (continuity for the blade and its bearer)
+**Accepted references:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/03-banked-flame-blade.png` (continuity for the blade and its bearer)
 
-**Keep:** The blade's design: a plain, slightly curved single-edged sabre with a simple guard and dark leather grip, the heat banked inside the steel as a molten line along its edge. The bearer's heavyset build, mail shirt and rust-red undersleeves.
+**Keep:** The dark slightly curved single-edged sabre, simple iron crossguard, leather grip and banked ember-orange cutting edge. Preserve the bearer's heavy hand, rust-red sleeve and mail only where they serve the close weapon composition.
 
-The card is the blade. At night, in falling snow, the heavyset bearer sits on a log with the sabre resting across his knee, and the frame is close on the weapon. The heat banked in the steel glows along its edge in a deep orange line, and snowflakes hiss into tiny puffs of steam as they land on it. His thick fingers loosely hold the grip. His face is mostly out of frame, perhaps the edge of his beard at the top, warmed by the blade's light. The magic belongs to the item: no flames leaping off it and no runes. Blue-black night, grey snow, iron mail, and one warm ember-orange line.
+Bring the familiar sabre close to the picture plane, spanning almost the full width through the center from the hilt at left to the complete point at right. Its steel surface should read as a substantial painted shape with a banked orange cutting edge. Keep weapon-to-hand scale plausible. Crop the bearer to the gripping hand, rust-red cuff, a little mail and a subdued knee behind the sword. Keep a clear gap between blade and knee. Deep blue snowy woodland, a few flakes and slight steam support the weapon without competing.
+
+**Avoid in this painting:** No cropped point, giant weapon relative to the hand, blade intersecting the knee, full bearer portrait, equipping sequence, enemy, sparks, rune display or leaping flames.
 
 ## Neutral
 
 ### Stoneward colossus: stoneward-colossus.png
 
-*Unit, cost 6. Guard. Can't move and can't be pushed.*
+**Visual aim:** A monumental but believable five-metre stone figure, with blue air visible through its chest and warm light describing its great irregular planes.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/06-stoneward-colossus.png` (continuity for the colossus's construction and scale)
+**Accepted references:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/06-stoneward-colossus.png` (continuity for the colossus's construction and scale)
 
 **Keep:** The colossus's design: blocky pale stone body about five metres tall, wide bronze bands at the joints, a small narrow head block in a bronze collar, and the arched opening through its chest.
 
-In a narrow mountain pass, the stoneward colossus stands rooted across the road like a gate that chose to be there. Arrows from an unseen force off to the left are snapping and shattering against its stone. In its shadow, three or four ordinary travellers and a soldier crouch tight behind its legs and the arch of its body, sheltering; one peers out through the chest opening. They are small, loosely painted and human-sized, so its five metres read clearly. Nothing shows how it is powered: no glowing core, no engine. Pale ochre stone, aged bronze, and hard noon sun with deep cast shadow.
+The colossus stands alone on an open, weathered stone terrace below a pale hillside, its body set obliquely across the composition rather than squarely blocking a route. Keep the small narrow head in its bronze collar, the heavy stone limbs, broad aged-bronze joint bands and the real arched opening through its torso. Let a patch of blue-grey distance appear through that opening. Hard late-morning light strikes a few pale ochre planes while the cavity and far side fall into deep cool shadow. A modest human-built stair cut into the terrace provides scale without a cast of tiny people. Use a wide view with open space around its silhouette and a slight head turn, so it feels like a made being whose purpose is not being explained.
 
-## Choices to check
-
-- **Harmonic wardwright and Brightlance:** both show the same man, so his face and kit must match across the two cards. The unit card shows his attack landing on several people at once, and Brightlance shows the lance itself. The two use different light, facing and framing.
-- **Banked flame blade:** the card is the blade, so the bearer is cropped to his hands, knee and the edge of his beard. He's kept consistent with the sheet in case he gets his own card later.
-- **Enchanter's quench:** this is a new close view into the trough rather than the sheet's full workshop scene, so the card reads as the enchantment, not the smith.
-- **Woven ward:** this is the only brief in the set with a thread-like effect, since the loom is accepted for exactly this.
-- **Stoneward colossus:** the scene shows it standing still while others shelter. That works whether or not it keeps "can't move".
-- **Porcelain-visored retainer:** the second cracked mask on the floor hints at Sworn without showing a body.
-
-## Variety across the batch
-
-The cards were checked against each other and against Set 4. Any generator should still compare results with recent paintings for repeated faces, outfits, weapons and compositions.
-
-| Facing | Cards |
-| --- | --- |
-| Right | 4 |
-| Left | 4 |
-| Down | 2 |
-| Frontal | 2 |
-
-| Card | Facing | Framing | Light |
-| --- | --- | --- | --- |
-| Conclave field scholar | Right | Full body, three-quarter, figure about two thirds of frame height | Clear, cold upland morning with high thin cloud |
-| Harmonic wardwright | Left | Wide, whole figure at mid-size on a rise, effect below | Late afternoon amber, raking long shadows |
-| Brightlance | Right | Close three-quarter from slightly below, figure cropped at the thigh, lance crossing most of the frame | Night, lit almost entirely by the spell |
-| Woven ward | Left | Medium wide, two figures and the loom, all fully in frame | Soft overcast morning in an open yard |
-| Enchanter's quench | Down | Close detail looking down into the trough, hands and tongs entering from the side | Dim workshop, the blade glowing from under the water |
-| Rime drake | Left | Wide, drake full-body mid-landing, small figures for scale | Low winter sun, long blue shadows on snow |
-| Thornwarden goblin scout | Right | Full body, seen from below, figure smallish in the canopy | Dappled late morning through deep green leaves |
-| Bronze-harness alderkin | Left | Full body, wide, low camera at ground level | Autumn evening, amber light and long shadows |
-| Porcelain-visored retainer | Frontal three-quarter, facing slightly left | Full figure, mid-distance, a seated figure behind | Cold grey window light with one candle |
-| Veil adept | Right | Medium wide, figure in the middle ground of a crowd | Dull overcast late afternoon in a city street |
-| Banked flame blade | Down, the blade diagonal across the frame | Close detail on the blade; the bearer's hands, knee and mail cropped | Night snowfall, the blade the only warm light |
-| Stoneward colossus | Frontal three-quarter, facing slightly right | Wide, colossus full-body, people small at its feet for scale | Hard, high sun in pale dust |
+**Avoid in this painting:** No sheltering travellers, protected soldier, arrow barrage, blocked pass or staged guarding. No glowing core, visible power source or inflation to mountain-sized proportions.

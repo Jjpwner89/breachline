@@ -1,0 +1,331 @@
+{
+  "batch": "Breachline character and kit review",
+  "date": "2026-11-08",
+  "status": "review_complete",
+  "notes": "Four close-fit concepts and four experiments. Only explicitly accepted pieces will enter the reference library. Reference examples seed invention, not a closed catalogue. Rejected pieces are to be deleted after creator identification. Review may distinguish character and individual equipment.",
+  "jobs": [
+    {
+      "id": "01",
+      "key": "01-oath-road-veteran",
+      "title": "Oath-road veteran",
+      "category": "close_fit",
+      "alignment": "Vigil",
+      "people": "Human",
+      "notes": "A practical middle rank between militia and gilded champion: maintained brigandine, useful helmet, narrow shield and a veteran face. The sun is a small personal allegiance cue.",
+      "items": [
+        "Ivory brigandine",
+        "Kettle helmet",
+        "Narrow shield",
+        "Arming sword"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a4daf697-d79a-40eb-b2b8-8af72192425a.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+      ],
+      "brief": "Adult woman about 46, compact strong build, pale freckled skin, square face, bent nose, auburn braid. Ivory-covered brigandine over slate-blue wool, short elbow mail, trousers, kettle helmet, narrow heater shield with a tiny sun, arming sword. Neutral standing pose inspecting a glove. Four isolated equipment studies. Vigil materials referenced without cloning a kit.",
+      "file": "01-oath-road-veteran.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt_record": "reconstructed brief after interrupted turn; exact submitted wording unavailable",
+      "shared_direction": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.",
+      "sha256": "8326cff27ab81e39e6b1e6a3e853b212400ca86108225a1e256501caeb5b52ba",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png",
+      "active_reference": true,
+      "generation_status": "complete",
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "02",
+      "key": "02-orc-saddle-raider",
+      "title": "Orc saddle-raider",
+      "category": "close_fit",
+      "alignment": "Fervor",
+      "people": "Orc",
+      "notes": "An independently equipped raider built for mobility: quilted vest, short mail mantle, compact bow and chopping blade. This tests personal, mixed-source belongings rather than organized red uniforms.",
+      "items": [
+        "Quilted vest and mail mantle",
+        "Short recurve bow",
+        "Chopping blade and sheath",
+        "Open-brow helmet"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-ee9c66e5-0ba4-43b8-b1be-426572681c9f.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png"
+      ],
+      "brief": "Mature female orc shown on foot, no mount. Broad coarse visibly nonhuman projecting jaw, uneven tusks, heavy brow, flat nose, grey-olive skin, short coarse hair and back braid. Ochre quilted vest, short irregular mail mantle, off-white shirt, charcoal trousers, boots, faded brick-red waist cloth, open-brow helmet. Checks the string of a short recurve bow, no arrow drawn; carries heavy chopping blade. Four isolated equipment studies; anatomy reference only, a new individual.",
+      "file": "02-orc-saddle-raider.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt_record": "reconstructed brief after interrupted turn; exact submitted wording unavailable",
+      "shared_direction": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.",
+      "sha256": "570db55d305ba3ed0913626bb8dd4a52a1a20eeaa804e14e9924e6dad5117419",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/02-orc-saddle-raider.png",
+      "active_reference": true,
+      "generation_status": "complete",
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "03",
+      "key": "03-conclave-field-scholar",
+      "title": "Conclave field scholar",
+      "category": "close_fit",
+      "alignment": "Gnosis / Lantern Conclave",
+      "people": "Human",
+      "notes": "A scholar prepared for dangerous travel: a tailored armored coat, modest measuring staff, folio and side sword. Deliberately retains an exceptionally beautiful face in the wider repertoire.",
+      "items": [
+        "Reinforced short coat",
+        "Side sword and sheath",
+        "Measuring staff",
+        "Folio"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-b4e08cb1-f6a5-4362-9780-214b7c348975.png",
+      "refs": [],
+      "brief": "Exceptionally beautiful adult woman about 31, deep brown skin, long narrow nose, black braid and natural asymmetry. Navy short wrap coat with two steel rib plates, amber linen sleeves, charcoal trousers, teal cuff and plain brass clasps. Slim side sword, closed leather folio, walking measuring staff with small three-prong brass head and two sliding collars. Attending to the staff. No tech gadgetry, magic beam or scene. Four isolated gear studies.",
+      "file": "03-conclave-field-scholar.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt_record": "reconstructed brief after interrupted turn; exact submitted wording unavailable",
+      "shared_direction": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.",
+      "sha256": "a447c565dc6b8dd75169fe69d2a91448cc3186f5b0860c7ae182413d07d9475c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/03-conclave-field-scholar.png",
+      "active_reference": true,
+      "generation_status": "complete",
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "04",
+      "key": "04-thornwarden-goblin-scout",
+      "title": "Thornwarden goblin scout",
+      "category": "close_fit",
+      "alignment": "Genesis / Thornwarden proposal",
+      "people": "Goblin",
+      "notes": "A woodland goblin with an ordinary felt-and-canvas jack, simple bow, billhook and wicker buckler. Broadens goblin roles while testing forest equipment without elaborate leather or leaf armor.",
+      "items": [
+        "Quilted jack",
+        "Short self bow and arrow",
+        "Billhook",
+        "Wicker buckler"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-342c2d7c-3f74-4b66-b6b2-956d4b6cf659.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png"
+      ],
+      "brief": "Adult male goblin, wiry with little belly, bulbous crooked nose, large pointed ears, grey-ochre skin, close curls and dignified expression. Warm-grey knee-length felt/canvas quilted jack, rust-brown capelet, green-brown trousers, ordinary boots. One useful buckle/tie, short ash self bow, billhook, small wicker buckler on pack. Quiet stance inspecting sheath. Four isolated gear groups. No leaf armor, leather flap stacks or manic grin.",
+      "file": "04-thornwarden-goblin-scout.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt_record": "reconstructed brief after interrupted turn; exact submitted wording unavailable",
+      "shared_direction": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.",
+      "sha256": "0f0e1ced084a3675657d2f60330defc39120f4eec315221318430f1eed168046",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/04-thornwarden-goblin-scout.png",
+      "active_reference": true,
+      "generation_status": "complete",
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "05",
+      "key": "05-gnosis-foot-soldier",
+      "title": "Gnosis foot soldier",
+      "category": "experimental",
+      "alignment": "Gnosis",
+      "people": "Human",
+      "notes": "Approved high-medieval blue-enamel breastplate, padded clothing and sword. Mirror device removed. Foot soldier recast as a man at the creator's request.",
+      "items": [
+        "Blue-enamel breastplate, front and three-quarter studies",
+        "Thrusting sword and sheath"
+      ],
+      "refs": [],
+      "brief": "An older human woman about 55 with a broad East Asian face, ordinary appealing proportions, short salt-and-pepper hair, slight uneven eyebrows and an experienced attentive expression. Full body, solid grounded stance, looking down as she inspects her shield hinge. Ink-blue padded jack, ONE small smoothly curved blue-enamel breastplate, simple dark trousers and leather ankle boots. A plain thrusting sword sheathed at the hip.\nThe single experimental object: a forearm mirror buckler with exactly TWO elongated slightly convex polished silver-glass panels in narrow dull bronze frames connected by ONE long hinge. The two panels open into a shallow V, together about the length of her forearm, supported by visible plain rear straps. The device is handmade and convincingly wearable. Pale cyan reflection only, no beam, floating fragments, glowing runes, gears, electronics or gun shapes.\nFour separate insets on right: (1) the open two-panel mirror shield, (2) the same shield folded in side/rear profile with hinge and arm straps visible, (3) the simple enamel breastplate, (4) the complete plain thrusting sword. Do not turn it into a multi-panel fan, satellite dish or oversized folding wall.",
+      "file": "05-gnosis-foot-soldier.png",
+      "review": {
+        "character": "accepted with creator-directed male recast",
+        "equipment": "breastplate and sword accepted; mirror rejected and deleted",
+        "overall": "accepted curated revision"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.\nSubject and equipment:\nAn older human woman about 55 with a broad East Asian face, ordinary appealing proportions, short salt-and-pepper hair, slight uneven eyebrows and an experienced attentive expression. Full body, solid grounded stance, looking down as she inspects her shield hinge. Ink-blue padded jack, ONE small smoothly curved blue-enamel breastplate, simple dark trousers and leather ankle boots. A plain thrusting sword sheathed at the hip.\nThe single experimental object: a forearm mirror buckler with exactly TWO elongated slightly convex polished silver-glass panels in narrow dull bronze frames connected by ONE long hinge. The two panels open into a shallow V, together about the length of her forearm, supported by visible plain rear straps. The device is handmade and convincingly wearable. Pale cyan reflection only, no beam, floating fragments, glowing runes, gears, electronics or gun shapes.\nFour separate insets on right: (1) the open two-panel mirror shield, (2) the same shield folded in side/rear profile with hinge and arm straps visible, (3) the simple enamel breastplate, (4) the complete plain thrusting sword. Do not turn it into a multi-panel fan, satellite dish or oversized folding wall.",
+      "prompt_record": "exact",
+      "generation_status": "complete",
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f884927c-ddc8-4549-b4e5-1da83969373e.png",
+      "rejected_history": {
+        "device": "folding mirror buckler",
+        "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-0f61efd0-374c-436e-8525-4bd18ba23b27.png",
+        "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/character-kit-review-2026-11-08/05-hinged-mirror-warder.png",
+        "decision": "rejected by creator; delete images after preserving approved armor and recasting soldier",
+        "images_deleted": true
+      },
+      "edit_prompts": [
+        {
+          "purpose": "Remove rejected mirror while preserving approved armor and kit",
+          "prompt": "Use case: precise-object-edit. Edit this Breachline character/equipment sheet. The creator approves the character, handsome well-built high-medieval blue-enamel steel breastplate, padded blue clothing, plain thrusting sword and painted style, but explicitly REJECTS the folding mirror device.\nRemove EVERY mirror, mirror frame, hinge and mirror strap from the entire image, including from the woman's arm and both top-right insets. Preserve the older woman's exact face, hair, body proportions, clothes, breastplate design, sword design, full-body scale, warm off-white background, painterly realism and neutral lighting. Change only the arms as needed: left arm hangs naturally clear of the torso; right hand calmly rests near the sword belt, anatomically coherent. Show the complete breastplate clearly on the torso.\nRearrange the right half into three useful studies: large front three-quarter view of the SAME blue-enamel breastplate in upper-left of right half; a slightly smaller rear/side view of that SAME breastplate with simple plausible shoulder straps and lining in upper-right; full sword and sheath below with generous negative space. This rear view is a conservative construction study, not a different armor design. Remove the old lower-left duplicate breastplate once it is repositioned. No replacement gadget, no shields or mirror parts, no new weapon, no new accessory. No lettering, numbers, labels, borders or scenery. High-quality 1536x1024 landscape concept painting, broad selective brushwork, no photoreal or 3D gloss."
+        },
+        {
+          "purpose": "Recast the Gnosis foot soldier as male",
+          "prompt": "Use case: precise-object-edit. The creator requests that the blue-armored Gnosis foot soldier in this reference sheet be a MAN.\nChange ONLY the full-body character on the left into an adult human male about 50: recognizably masculine ordinary broad face with East Asian features, short salt-and-pepper hair, mild brow asymmetry, a little beard stubble, solid practical soldier's build. Natural, generally appealing but not a glamorous model. Adapt the head, neck, shoulders and hands coherently to the male casting; keep him a human, not an elf or orc.\nPreserve the exact approved high-medieval blue-enamel steel breastplate design, its blue color and metallic craftsmanship, quilted blue jacket, brown-black trousers, boots, sword and sheath, shoulder straps and belt. Preserve the relaxed standing pose, full-body scale and framing, left arm down and right hand by the belt. ALL equipment-only studies on the right must remain unchanged. Same warm off-white background, neutral light and economical traditional painted realism, 1536x1024 landscape.\nAbsolutely no mirror device, no new magic or equipment, no text, labels, scenery or borders. No stylized heroic muscle exaggeration, beauty-filter face, photorealism or 3D rendering."
+        }
+      ],
+      "sha256": "4af60b741f6e88a23975cbccf505d277108d264ad1e155b7380886066e0284d6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/05-gnosis-foot-soldier.png",
+      "active_reference": true,
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "06",
+      "key": "06-porcelain-visored-retainer",
+      "title": "Porcelain-visored retainer",
+      "category": "experimental",
+      "alignment": "Dominion / Ashen Court proposal",
+      "people": "Human",
+      "notes": "One court retainer's commission: pale ceramic faceplate over steel, dark plum tailoring and a narrow thrusting blade. Tests ceremonial menace without defining the entire Dominion wardrobe.",
+      "items": [
+        "Closed visored helmet",
+        "Side/rear helmet construction",
+        "Coat and half-cuirass",
+        "Estoc and sheath"
+      ],
+      "refs": [],
+      "brief": "An adult human male court retainer about 45, lean long-limbed build, brown skin visible at neck and hands. Still ominous disciplined bearing, three-quarter view facing slightly left; not attacking. Helmet is ordinary forged steel with a detachable pale ivory ceramic faceplate SUPPORTED BY STEEL BACKING. Faceplate has a minimal abstract mask-like human suggestion: two narrow dark eye openings, short bridge and a small breathing slot, one fine glaze crack. NOT a skull, demon, horror monster or decorative human sculpture. No glowing eyes or gold.\nA long charcoal and very dark plum wool coat, modest smooth steel half-cuirass visible beneath the opening, small cream cuffs, plain riding boots, one sober clasp. No cape, bone trophies, spikes or repeated belts. Carries a slender estoc point down beside the body, a coherent normal hand at the grip; empty other hand.\nFour isolated insets: (1) closed front three-quarter helmet showing ivory mask, (2) same helmet side/rear with removable faceplate opened to reveal its steel backing and practical attachment, (3) wool coat opened enough to show simple half-cuirass, (4) complete estoc and plain sheath. Ceramic is a decorative facing over real steel, not claimed to be an invulnerable mask.",
+      "file": "06-porcelain-visored-retainer.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.\nSubject and equipment:\nAn adult human male court retainer about 45, lean long-limbed build, brown skin visible at neck and hands. Still ominous disciplined bearing, three-quarter view facing slightly left; not attacking. Helmet is ordinary forged steel with a detachable pale ivory ceramic faceplate SUPPORTED BY STEEL BACKING. Faceplate has a minimal abstract mask-like human suggestion: two narrow dark eye openings, short bridge and a small breathing slot, one fine glaze crack. NOT a skull, demon, horror monster or decorative human sculpture. No glowing eyes or gold.\nA long charcoal and very dark plum wool coat, modest smooth steel half-cuirass visible beneath the opening, small cream cuffs, plain riding boots, one sober clasp. No cape, bone trophies, spikes or repeated belts. Carries a slender estoc point down beside the body, a coherent normal hand at the grip; empty other hand.\nFour isolated insets: (1) closed front three-quarter helmet showing ivory mask, (2) same helmet side/rear with removable faceplate opened to reveal its steel backing and practical attachment, (3) wool coat opened enough to show simple half-cuirass, (4) complete estoc and plain sheath. Ceramic is a decorative facing over real steel, not claimed to be an invulnerable mask.",
+      "prompt_record": "exact",
+      "generation_status": "complete",
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a6135835-2e19-44ed-9141-aa1a8f74dbe3.png",
+      "sha256": "9342c8d439935d87e3c4c02ef842407ed5055d5022701962ccef260227be4bfc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png",
+      "active_reference": true,
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "07",
+      "key": "07-bronze-harness-alderkin",
+      "title": "Bronze-harness alderkin",
+      "category": "experimental",
+      "alignment": "Unassigned; Genesis-adjacent possibility",
+      "people": "Alderkin",
+      "notes": "An alderkin choosing forged protection and a spear for its own purposes. Tests metal equipment fitted to living tree anatomy, with broad padded supports and no nails through bark. No automatic allegiance or duty to humans.",
+      "items": [
+        "Bronze chest shell and harness",
+        "Padded harness contact detail",
+        "Spear",
+        "Open forearm guard"
+      ],
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/06-alderkin.png"
+      ],
+      "brief": "Input image 1 is a reference for LIVING TREE anatomy and economical painting only. Invent a new broader, older asymmetrical alderkin with pale grey bark, copper autumn leaves and naturally grown knot eyes. A flexible trunk dividing into root legs, irregular branch arms and a few grasping root fingers, head grown out of trunk. No carved human face, human musculature, human trousers or boots. Preserve true tree-person anatomy while changing the individual from the reference.\nThis individual has independently chosen fitted forged gear. ONE smooth asymmetrical bronze chest shell is suspended by exactly TWO broad flax loops with clear soft felt padding at contact points. It rests outside bark without piercing it, constricting growth or binding limbs. Simple open-backed bronze forearm guard on one branch arm, other limbs mostly bare. No layers of leaves, belts, leather flaps or decorative metal foliage. Holds a long plain ash spear with modest iron tip, opposite branch hand checks the shell's fit. No humans, gardening, irrigation or landscape.\nFour isolated insets: (1) the entire simple bronze chest shell with its two broad harness loops, (2) an empty rear contact view showing soft pads and clearance rather than nails, (3) full spear, (4) open padded forearm guard. Equipment should be made for the actual irregular body shown, not standard human armor strapped to a tree.",
+      "file": "07-bronze-harness-alderkin.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.\nSubject and equipment:\nInput image 1 is a reference for LIVING TREE anatomy and economical painting only. Invent a new broader, older asymmetrical alderkin with pale grey bark, copper autumn leaves and naturally grown knot eyes. A flexible trunk dividing into root legs, irregular branch arms and a few grasping root fingers, head grown out of trunk. No carved human face, human musculature, human trousers or boots. Preserve true tree-person anatomy while changing the individual from the reference.\nThis individual has independently chosen fitted forged gear. ONE smooth asymmetrical bronze chest shell is suspended by exactly TWO broad flax loops with clear soft felt padding at contact points. It rests outside bark without piercing it, constricting growth or binding limbs. Simple open-backed bronze forearm guard on one branch arm, other limbs mostly bare. No layers of leaves, belts, leather flaps or decorative metal foliage. Holds a long plain ash spear with modest iron tip, opposite branch hand checks the shell's fit. No humans, gardening, irrigation or landscape.\nFour isolated insets: (1) the entire simple bronze chest shell with its two broad harness loops, (2) an empty rear contact view showing soft pads and clearance rather than nails, (3) full spear, (4) open padded forearm guard. Equipment should be made for the actual irregular body shown, not standard human armor strapped to a tree.",
+      "prompt_record": "exact",
+      "generation_status": "complete",
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-b9c5df8b-4ee0-48c0-bfec-4a62f1ae2a55.png",
+      "sha256": "b0ce10ba4a1368497e01eb721e15bb4d311a7732fb7bd5c140d9005967feee6d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/07-bronze-harness-alderkin.png",
+      "active_reference": true,
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    },
+    {
+      "id": "08",
+      "key": "08-clayplate-giant",
+      "title": "Clayplate giant",
+      "category": "experimental",
+      "alignment": "Fervor-adjacent individual",
+      "people": "Giant",
+      "notes": "The strongest material experiment: three replaceable terracotta plates on heavy padding, with a practical maul. Tests giant-scale local craft. Protection, durability and any cultural tradition remain deliberately unconfirmed.",
+      "items": [
+        "Three-plate padded vest",
+        "Single plate mounting detail",
+        "Capped wooden maul",
+        "Iron forearm guard"
+      ],
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/05-giants.png"
+      ],
+      "brief": "Input image 1 supplies the giants' heavy HUMANOID proportions and broad facial structure only. Invent a NEW mature female giant, barrel-chested and powerfully weight-bearing, warm brown skin, broad face, tightly curled greying hair, ordinary firm appealing features, not a glamorous human model. No ogre tusks, stone skin or caricature. Broad feet and hands appropriate to load-bearing proportions.\nDark charcoal quilted coat over pale rolled-sleeve shirt, plain trousers and practical boots. The single daring experiment is exactly THREE broad curved terracotta protection plates on the torso, two upper chest plates and one abdominal plate. Each hangs securely from modest reinforced edge holes on the padded coat using short simple fasteners. One plate has a muted iron-oxide glaze and a small chip; the others remain intact. Big simple warm red-brown pottery forms, not dozens of tiles, lamellar scales or a leather harness mess. This is an experimental material proposal, not established proven armor. One mismatched plain iron forearm guard. Holds a wooden maul with ONE iron striking cap, sized for an actual wielder rather than a building. Relaxed still pose glancing at a fastening.\nFour isolated insets: (1) complete padded garment with precisely the same three clay plates, (2) the back of one separate plate showing its simple padded mounting, (3) entire capped wooden maul, (4) plain iron forearm guard. Do not add extravagant ornaments or oversized skulls.",
+      "file": "08-clayplate-giant.png",
+      "review": {
+        "character": "accepted",
+        "equipment": "accepted",
+        "overall": "accepted"
+      },
+      "method": "built-in image_gen",
+      "use_case": "stylized-concept",
+      "prompt": "Use case: stylized-concept.\nAsset type: Breachline character and physical equipment review plate, a proposed design, not a game card.\nCreate a landscape 1536x1024 traditional oil/acrylic fantasy concept painting, economical realistic brushwork, broad quiet shapes, selective crisp detail. No photography, glossy 3D, Pixar, anime or uncanny facial microdetail; do not pattern every surface with identical diagonal strokes.\nComposition: ONE full-body character occupying the left 48 percent, fully visible from head to feet, and FOUR separate equipment studies arranged cleanly in two columns on the right 48 percent. Generous margins and negative space. Every inset must depict the SAME design actually worn/carried by the character. Insets show useful construction. All objects fully in frame. The figure and inset equipment must remain isolated from one another.\nBackground: flat warm off-white, soft neutral illumination, minimal contact shadow. No environment, scenery, horizon, room, vegetation, furniture or supporting characters. This is deliberately a still reference that can be reused in entirely new environments.\nThe world is present-day high fantasy after an old empire's collapse. It is not historically Bronze Age. Invent one person's personal kit; neither the outfit nor the profession is a universal race or faction uniform. Favor a few legible materials and load-bearing closures over strap clutter. No text, labels, numbers, border, watermark or signature. No gold summoner marks.\nSubject and equipment:\nInput image 1 supplies the giants' heavy HUMANOID proportions and broad facial structure only. Invent a NEW mature female giant, barrel-chested and powerfully weight-bearing, warm brown skin, broad face, tightly curled greying hair, ordinary firm appealing features, not a glamorous human model. No ogre tusks, stone skin or caricature. Broad feet and hands appropriate to load-bearing proportions.\nDark charcoal quilted coat over pale rolled-sleeve shirt, plain trousers and practical boots. The single daring experiment is exactly THREE broad curved terracotta protection plates on the torso, two upper chest plates and one abdominal plate. Each hangs securely from modest reinforced edge holes on the padded coat using short simple fasteners. One plate has a muted iron-oxide glaze and a small chip; the others remain intact. Big simple warm red-brown pottery forms, not dozens of tiles, lamellar scales or a leather harness mess. This is an experimental material proposal, not established proven armor. One mismatched plain iron forearm guard. Holds a wooden maul with ONE iron striking cap, sized for an actual wielder rather than a building. Relaxed still pose glancing at a fastening.\nFour isolated insets: (1) complete padded garment with precisely the same three clay plates, (2) the back of one separate plate showing its simple padded mounting, (3) entire capped wooden maul, (4) plain iron forearm guard. Do not add extravagant ornaments or oversized skulls.",
+      "prompt_record": "exact",
+      "generation_status": "complete",
+      "source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-72f6bdb3-0318-4dea-9759-2adb295087be.png",
+      "sha256": "0c4720af5c9970c838478f9fdf59dadafb9731d907388a7a4a2a4cdd190feb16",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "saved_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08/08-clayplate-giant.png",
+      "active_reference": true,
+      "visual_review": "Inspected full figure and separate corresponding kit. Approved reference selection, with requested mirror removal and male recast on sheet 05."
+    }
+  ],
+  "review_summary": "Seven original sheets accepted; sheet 05 preserves the accepted blue plate and sword, removes the rejected mirror device, and recasts the foot soldier as a man. All eight selected sheets promoted to the reference library.",
+  "current_folder": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/character-kits-2026-11-08"
+}

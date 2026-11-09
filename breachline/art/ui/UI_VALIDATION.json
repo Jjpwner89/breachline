@@ -1,0 +1,706 @@
+{
+  "date": "2026-11-09",
+  "expected_count": 16,
+  "completed_count": 16,
+  "missing": [],
+  "checks": [
+    "All brief filenames present",
+    "PNG chunk checksums valid",
+    "Workspace copies match generated sources",
+    "Every cutout corner has at most 1/255 opacity",
+    "Frame opening is transparent",
+    "Visually checked every asset; props and card-back corrected"
+  ],
+  "assets": [
+    {
+      "filename": "ui-table-oak.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2698449,
+      "sha256": "bd8884d04b64408e939f4ac15afd09c563392f4770bcaf8ad1046e0de1853872",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-table-linen-map.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 3302112,
+      "sha256": "2a33398a8c53f1f36065149d0f513dce6bee92bb6ca8bf2d52a3b840ba36d738",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-frame-iron.png",
+      "width": 1024,
+      "height": 1536,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1307625,
+      "sha256": "2845cec2b108c2d340737e1b7cf942d9a93c4d82363b9be3f6994e570eb8d1e2",
+      "has_alpha": true,
+      "center_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "corner_rgba": [
+        [
+          109,
+          101,
+          88,
+          0
+        ],
+        [
+          56,
+          52,
+          46,
+          0
+        ],
+        [
+          50,
+          43,
+          38,
+          0
+        ],
+        [
+          49,
+          44,
+          38,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 1289174,
+      "transparent_fraction": 0.819635,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 24,
+          "y": 40,
+          "width": 975,
+          "height": 1458
+        }
+      ]
+    },
+    {
+      "filename": "ui-card-paper.png",
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2305368,
+      "sha256": "5afe21b203371d3f63a1849deaa5ed0f6a2ca2fcf17128d739657328aa1b5536",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-home-strand.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 362773,
+      "sha256": "1011bda6d9743349557c2ad3de4f7a067dcc200b3168f894749e1e0ec0e7eb4c",
+      "has_alpha": false,
+      "center_rgba": [
+        0,
+        0,
+        0
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "near_black_background_fraction": 0.988045
+    },
+    {
+      "filename": "ui-home-battlefield.png",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 1878598,
+      "sha256": "579c83dcbc7c1068899730bee65b6d6d8364530e97cc2b0031d6dc582b63f5ff",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-titlebar-crimson.png",
+      "width": 2172,
+      "height": 724,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 1682211,
+      "sha256": "b0849ea94497f814cad3061979d9e9ce9bd9c9448e52939513c883582072d341",
+      "has_alpha": false
+    },
+    {
+      "filename": "ui-cost-coin.png",
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2441493,
+      "sha256": "2522b16604bee0688bcd1b1c7e337d6207c41d65a1f9f51c1433f06ab1a131ae",
+      "has_alpha": true,
+      "center_rgba": [
+        206,
+        158,
+        58,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 539834,
+      "transparent_fraction": 0.343293,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 49,
+          "y": 44,
+          "width": 1136,
+          "height": 1157
+        }
+      ]
+    },
+    {
+      "filename": "ui-panel-parchment.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2692443,
+      "sha256": "cb64b4744959ab9fb1e72d4b9950cac1c89ca5c69c6d8d12b33e80d856c43694",
+      "has_alpha": true,
+      "center_rgba": [
+        240,
+        217,
+        174,
+        253
+      ],
+      "corner_rgba": [
+        [
+          158,
+          123,
+          74,
+          0
+        ],
+        [
+          96,
+          77,
+          45,
+          0
+        ],
+        [
+          163,
+          125,
+          84,
+          0
+        ],
+        [
+          153,
+          119,
+          73,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 159874,
+      "transparent_fraction": 0.101645,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 18,
+          "y": 23,
+          "width": 1498,
+          "height": 976
+        }
+      ]
+    },
+    {
+      "filename": "ui-buttons-wood.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2090494,
+      "sha256": "a434e8ac87ad888ec787ef25743406c77f9bd8e38086309a59f0636385e0e2b0",
+      "has_alpha": true,
+      "center_rgba": [
+        119,
+        89,
+        44,
+        0
+      ],
+      "corner_rgba": [
+        [
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 682390,
+      "transparent_fraction": 0.433852,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "standard",
+          "x": 71,
+          "y": 155,
+          "width": 1391,
+          "height": 310
+        },
+        {
+          "name": "primary",
+          "x": 70,
+          "y": 562,
+          "width": 1397,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "filename": "ui-medallion-iron.png",
+      "width": 1254,
+      "height": 1254,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2026633,
+      "sha256": "dd7a82e3234d1962910da30215b8bf655f132c85d903423b2b7039d904ef5b9a",
+      "has_alpha": true,
+      "center_rgba": [
+        71,
+        69,
+        69,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 491047,
+      "transparent_fraction": 0.312268,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 35,
+          "y": 47,
+          "width": 1163,
+          "height": 1174
+        }
+      ]
+    },
+    {
+      "filename": "ui-turn-banner.png",
+      "width": 2172,
+      "height": 724,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1920950,
+      "sha256": "d4b580f6f347e8b137d9dae92aa3b92c1a10b41f3db9eae0424efc2fcd1c3943",
+      "has_alpha": true,
+      "center_rgba": [
+        197,
+        168,
+        128,
+        253
+      ],
+      "corner_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 785909,
+      "transparent_fraction": 0.499774,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "asset",
+          "x": 43,
+          "y": 147,
+          "width": 2076,
+          "height": 434
+        }
+      ]
+    },
+    {
+      "filename": "ui-mana-gems.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1085653,
+      "sha256": "f0c4e379ca91b7cf2199d3b016fed1c137ee7e058d84bedb94926fe5df58e9b5",
+      "has_alpha": true,
+      "center_rgba": [
+        80,
+        44,
+        69,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 1375898,
+      "transparent_fraction": 0.874772,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "topaz",
+          "x": 50,
+          "y": 417,
+          "width": 187,
+          "height": 190
+        },
+        {
+          "name": "sapphire",
+          "x": 299,
+          "y": 417,
+          "width": 187,
+          "height": 190
+        },
+        {
+          "name": "amethyst",
+          "x": 549,
+          "y": 417,
+          "width": 188,
+          "height": 190
+        },
+        {
+          "name": "garnet",
+          "x": 800,
+          "y": 417,
+          "width": 189,
+          "height": 190
+        },
+        {
+          "name": "peridot",
+          "x": 1050,
+          "y": 417,
+          "width": 189,
+          "height": 190
+        },
+        {
+          "name": "quartz",
+          "x": 1299,
+          "y": 417,
+          "width": 188,
+          "height": 190
+        }
+      ]
+    },
+    {
+      "filename": "ui-table-props.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 2279564,
+      "sha256": "287353fb3b3571bf156a98c0ff9725c561827db0a7521267cbe8b15a9c62a2db",
+      "has_alpha": true,
+      "center_rgba": [
+        39,
+        37,
+        33,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 856009,
+      "transparent_fraction": 0.544236,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "iron_map_weight",
+          "x": 146,
+          "y": 20,
+          "width": 469,
+          "height": 484
+        },
+        {
+          "name": "candle",
+          "x": 811,
+          "y": 26,
+          "width": 570,
+          "height": 471
+        },
+        {
+          "name": "inkwell",
+          "x": 174,
+          "y": 547,
+          "width": 410,
+          "height": 419
+        },
+        {
+          "name": "stone_map_weight",
+          "x": 769,
+          "y": 537,
+          "width": 625,
+          "height": 453
+        }
+      ]
+    },
+    {
+      "filename": "ui-stat-plaques.png",
+      "width": 1536,
+      "height": 1024,
+      "bit_depth": 8,
+      "color_type": 6,
+      "bytes": 1662896,
+      "sha256": "810e0984eafb28d0d3e3eb4ddf1b2927b85809088c48893b37c4c9e1360abe00",
+      "has_alpha": true,
+      "center_rgba": [
+        131,
+        92,
+        45,
+        0
+      ],
+      "corner_rgba": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ]
+      ],
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 911256,
+      "transparent_fraction": 0.579361,
+      "alpha_bounds_threshold_8": [
+        {
+          "name": "crimson",
+          "x": 59,
+          "y": 267,
+          "width": 653,
+          "height": 489
+        },
+        {
+          "name": "iron",
+          "x": 823,
+          "y": 267,
+          "width": 653,
+          "height": 489
+        }
+      ]
+    },
+    {
+      "filename": "ui-card-back.png",
+      "width": 1024,
+      "height": 1536,
+      "bit_depth": 8,
+      "color_type": 2,
+      "bytes": 2126614,
+      "sha256": "9a4d0f24c5ed79679eec66195afc4146f8fe76be64086586d4b56d9b82c38271",
+      "has_alpha": false,
+      "center_rgba": [
+        86,
+        73,
+        87
+      ],
+      "corner_rgba": [
+        [
+          53,
+          54,
+          52
+        ],
+        [
+          43,
+          43,
+          42
+        ],
+        [
+          43,
+          41,
+          43
+        ],
+        [
+          41,
+          41,
+          41
+        ]
+      ]
+    }
+  ]
+}
