@@ -124,11 +124,24 @@ The creator's first full game against it was dynamic, and they said it was clear
 
 ## Look and feel
 
-- **The war table:** a no-scroll battle screen in the card frames' bronze, gold and parchment, with paintings filling the tiles and a large hand along the bottom.
+- **The war table:** a no-scroll battle screen with paintings filling the tiles and a large hand along the bottom.
 - **Layout:** laptop first, with phones on a simpler stacked layout.
 - **The old layout is gone:** keep new UI in the war table style.
 - **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
-- **Title bars:** in the game they're coloured by alignment (white gold, red crimson, blue navy). `card.html` uses a crimson bar, and the creator hasn't chosen between them.
+
+### UI refresh
+
+The creator found the old UI dull: a flat background, and card borders, textures and colours that weren't good enough. On 2026-11-09 they chose these from the proposal page linked below:
+- **Home screen:** the gold strand at dusk over a battlefield. A still painting, with the strand glinting and smoke and light moving slowly in code.
+- **Table:** a weathered field-oak camp table under one warm light.
+- **Board:** a linen war map, with the grid inked over it in code.
+- **Card frames:** blackened iron with gold trim.
+- **Title bars:** crimson on every card, as in `card.html`. The game still colours them by alignment until the card frame phase.
+- **Buttons:** carved wood with a brass edge, the main action gilded.
+- **Extras:** a card back, table props and painted attack and health plaques.
+- **Order:** the table, then the home screen, card frames, buttons and panels, then the extras.
+
+Asset briefs are in `art/UI_ART_BRIEFS.md`. Until a painting arrives, the code uses a stand-in texture in the same place.
 
 ## Balance
 
@@ -151,7 +164,6 @@ Worth playtesting:
 ## Open questions for the creator
 
 - **Touchstones:** books, films, games or paintings with the feeling you want.
-- **Title bars:** alignment colours or crimson.
 - **Older red cards:** should they come down too?
 - **Worn-down defenders:** is the resting-unit fix wanted?
 - **Unlocks:** do campaign unlocks carry over?
@@ -188,6 +200,7 @@ Worth playtesting:
 | --- | --- |
 | Playable game | https://claude.ai/artifact/Hr5bV3HfqseB5HwCu6xemH |
 | Sunmane lancer card | https://claude.ai/artifact/Mev6cqP5wfCbnUGvic1Jsu |
+| UI refresh proposal and the creator's picks | https://claude.ai/artifact/WmUf7MW4bpvcirLrs9RpvJ |
 | Early art briefs doc, with wording since replaced by the `art-direction` skill | https://claude.ai/artifact/K4CyZKihSijWBNGoY2YW7y |
 | GitHub repo (private) | https://github.com/Jjpwner89/breachline |
 
@@ -211,3 +224,4 @@ Art direction changes from the creator's 2026-11-08 verdicts. These wait until C
 - **Lion folk:** keep "generally keep to themselves" and the note that they appeared too often.
 - **Correction trails:** keep only current rules. Remove lines about what an earlier rule was, and replace the per-item "don't generalize this" guards with one line: feedback applies to the image or batch it was about unless the creator says otherwise.
 - **The alignment table:** black and green have art now, so their rows are no longer only proposals.
+- **Interface art:** add a short section pointing to `art/UI_ART_BRIEFS.md`. Interface art uses the card painting style, kept quiet and low in contrast so cards stay the clearest thing on screen, and the card composition rules don't apply to it.
