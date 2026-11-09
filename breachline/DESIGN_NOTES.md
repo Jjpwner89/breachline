@@ -44,6 +44,21 @@ Claude's assumptions, not yet confirmed by the creator:
 - In the deck builder: decks of 24 to 40 cards, 3 copies of a non-land card and unlimited lands. The starter decks have 24 cards, below the 40-card target.
 - The card-to-faction list in `engine.js`.
 
+## Mechanics in development
+
+Decided by the creator on 2026-11-09, to make more of the board. None of these are built yet.
+
+- **Summoning units:** a card can summon other units straight onto the board. You pick empty tiles in your back row. If the back row is full, the rest go to your second row, starting from a side column and filling toward the middle unless you choose. Summoned units wait a turn like any new unit.
+- **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row.
+- **Adding cards to your hand:** a card can add cards to your hand. They look exactly like a normal draw and are played for their mana cost, so you play a card to get another card.
+- **Ambush:** enters on an empty tile next to one of your units, beside or behind it but never in front. It can match your furthest-forward unit, never get ahead of it.
+- **Flanking:** +1 attack when an ally stands on the far side of the target.
+- **Holding ground:** an enemy that moves next to this unit must stop there, so it can't slip past.
+- **Death triggers:** effects that happen when a unit dies. Sworn is the first.
+- **Tile effects:** an effect that sits on a tile for a turn or two, like fire or frozen ground. These are temporary, unlike the permanent terrain set aside below.
+- **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
+- **Proposed, not yet confirmed:** conjured cards. Summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects.
+
 ## Stats
 
 - Small numbers: stats like 5 / 6, and summoner life 15. Each card's numbers came from a card-by-card audit in `CARD_AUDIT.md`.
@@ -75,6 +90,7 @@ Five colours sit above factions as alignments, with several factions inside each
 | Genesis (green) | Forest peoples, druids, great beasts, living trees | Very large units, units that grow over time, extra lands, recovering health | Few instants, very few fliers, exposed to fliers and ranged attacks |
 
 - Strengths and weaknesses are strong tendencies, never absolutes. About 1 card in 10 can go against its alignment's tendency, at about 1 extra mana, and stay usable and reasonably efficient.
+- Decks are built around focuses, such as tokens, equipment or healing, not around colour pairs. Each colour leans toward several focuses, and each focus spans several colours, so white could be tokens, equipment, standing together, its factions or healing. Some mechanics stay within certain colours. Every focus needs at least one viable deck.
 - Decks are a main colour plus a splash. Rivalries are story only. Lands and mana belong to alignments.
 - Factions matter less to the creator than alignments. Faction identity should come through card mechanics and art.
 - Humans appear in every alignment. Orcs are never Vigil.
@@ -118,6 +134,12 @@ The creator's first full game against it was dynamic, and they said it was clear
 
 Latest numbers, from 800 bot-only games on 2026-11-06: the first player wins 43%. By deck, Vigil wins 41%, Fervor 52%, Gnosis 53%, Dominion 39% and Genesis 65%. The scripted bot rarely uses sacrifices well, which hurts Dominion. Campaign numbers are in `CAMPAIGN.md`.
 
+Approved plan for balance work, 2026-11-09:
+- Play every starter deck against every other, from both seats, aiming for 45% to 55% each.
+- Track a win rate for each card, from games where it was played.
+- Write a cost guide that prices each keyword and ability in mana, like the stat curve.
+- Improve the bot so tokens, positioning and sacrifices aren't judged by how badly it plays them.
+
 Worth playtesting:
 - **Cloistered scholar:** a card every turn from a 2-mana unit could be very strong.
 - **Older red cards:** the creator said red looked a little unbalanced, and Elder dragon hasn't been touched.
@@ -141,7 +163,8 @@ Worth playtesting:
 ## Tried and set aside
 
 - A party of three heroes on four lanes, with cards locked to a living hero. The creator chose an unseen summoner.
-- Terrain on the grid, and equipment and relics.
+- Permanent terrain on the grid, and relics. Temporary tile effects are now wanted, and equipment is a label for enchantments that are objects.
+- Charge, damage from pushing a unit into another, and bonuses for standing in a particular row, all set aside on 2026-11-09.
 - Lands or mana buildings on the grid, dropped for the safe land row.
 - Counting faction lands or buildings to lock cards. Cards should always be playable.
 - A free land from swapping, then discard and draw, then no swap at all.
