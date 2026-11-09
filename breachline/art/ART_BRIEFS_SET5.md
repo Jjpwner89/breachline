@@ -1,6 +1,6 @@
 # Breachline card art briefs: set 5
 
-12 illustrations for the proposed subjects numbered 31–42 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md).
+12 illustrations for cards 31–42 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md), all final and in the game.
 
 **Revision 2 — 2026-11-09. All twelve paintings generated; creator requested the set be committed after three final revisions.** Current files include the angry outdoor Brightlance, more-veiled adept, larger sword composition and creator-selected final full-mask porcelain retainer. Card rules are unchanged.
 
@@ -19,7 +19,7 @@ Each brief below states a visual aim, preserves the accepted subject and propose
 3. Attach the accepted references listed for the subject. Preserve their identity, proportions, kit and material character. The first Set 5 batch is not a composition or style reference for replacements.
 4. The revision 2 pass is complete: each heading has a 1536 × 1024 landscape PNG and a matching 768 × 512 JPEG in the web/ folder. These replace revision 1 under the same filenames. Future changes should follow the creator's next feedback; do not regenerate this completed pass solely because historical prompts remain in the record.
 5. Use sunmane-lancer.png for painted material quality only, not as a pose, palette or setting template. No frames, lettering, logos or watermarks.
-6. Keep [CARD_ART_FINAL.json](CARD_ART_FINAL.json) for creator-approved selections. The porcelain retainer is explicitly finalized there; this does not promote the other Set 5 paintings.
+6. All twelve paintings are final and in [CARD_ART_FINAL.json](CARD_ART_FINAL.json), and the cards are built. The creator approved the set on 2026-11-09 with the full-mask porcelain retainer.
 
 [SET5_GALLERY.html](SET5_GALLERY.html) shows the twelve current revision 2 paintings with their briefs. [SET5_VALIDATION.json](SET5_VALIDATION.json) records file checks, not artistic approval.
 

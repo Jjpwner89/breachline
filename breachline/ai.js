@@ -21,6 +21,7 @@ var AI = (function () {
     '- Command phase: each unit may move once, then either attack or use its ability. A unit that has attacked or used an ability cannot move afterwards.',
     '- Units move 1 tile with no diagonals and cannot pass through other units. Swift and Flying units move 2 tiles, and Flying units pass over other units.',
     '- Attack reach is 1 tile with no diagonals. Ranged units reach 2 tiles, counted in steps across rows and columns.',
+    '- Guard: allies next to a Guard unit take 1 less damage from attacks and strike-backs.',
     '- Damage stays until healed. A target that survives strikes back if the attacker is within its reach. Only the main target strikes back.',
     '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
     '- Instants are cast on the enemy turn, paid from mana you left unspent on your own turn.',
@@ -39,7 +40,7 @@ var AI = (function () {
 
   function cardFacts(c) {
     if (c.type === 'land') return 'Land, ' + c.colour + ' colour. Adds 1 mana each turn.';
-    var kind = { unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell' }[c.type];
+    var kind = c.equipment ? 'Equipment' : { unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell' }[c.type];
     return kind + (c.type === 'unit' ? ' ' + c.atk + ' attack / ' + c.hp + ' health' : '') + (c.text ? '. ' + c.text : '');
   }
 
@@ -58,7 +59,10 @@ var AI = (function () {
     if (u.owner === v.active && u.acted) bits.push('has acted');
     else if (u.owner === v.active && u.moved) bits.push('has moved');
     if (u.held >= v.turn) bits.push("held: can't move or attack " + (u.held === v.turn ? 'this turn' : 'on its next turn'));
-    u.enchants.forEach(function (e) { bits.push('enchanted with ' + card(e.c).name + (card(e.c).text ? ' (' + card(e.c).text + ')' : '')); });
+    if (u.frozen >= v.turn) bits.push("frozen: can't move " + (u.frozen === v.turn ? 'this turn' : 'on its next turn'));
+    if (u.veiled) bits.push("veiled: enemies can't attack or target it until it attacks");
+    if (u.sworn) bits.push('Sworn: +' + u.sworn + ' attack so far');
+    u.enchants.forEach(function (e) { bits.push('enchanted with ' + card(e.c).name + (card(e.c).text ? ' (' + card(e.c).text + ')' : '') + (e.left ? ', ' + e.left + ' damage left to ignore' : '')); });
     return named(v, u) + ' at row ' + u.r + ', column ' + u.c + ': attack ' + E.attackOf(v, u) + ', health ' + u.hp + '/' + u.maxHp + '.' +
       (c.text ? ' ' + c.text : '') + (bits.length ? ' [' + bits.join('; ') + ']' : '');
   }

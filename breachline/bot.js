@@ -14,7 +14,7 @@ var Bot = (function () {
       var side = E.hitOn(s, u, extra);
       score += side >= extra.hp ? worth(extra) + 30 : worth(extra) * (side / extra.maxHp);
     }
-    if (E.hasKw(u, 'Stomp')) s.units.forEach(function (o) { if (o !== t && o.owner !== u.owner && dist(o, t) === 1) score += o.hp <= 1 ? worth(o) : 5; });
+    if (E.hasKw(u, 'Stomp') || E.hasKw(u, 'Resonance')) s.units.forEach(function (o) { if (o !== t && o.owner !== u.owner && dist(o, t) === 1) score += o.hp <= 1 ? worth(o) : 5; });
     if (amt >= t.hp && E.CARDS[u.cardId].drawOnKill) score += 25;
     if (amt < t.hp && dist(u, t) <= E.range(t)) {
       var back = E.hitOn(s, t, u, 0, true);
@@ -69,7 +69,7 @@ var Bot = (function () {
         if (c.blast) {
           t = unitById(s, m.target);
           var burn = c.blast >= t.hp ? worth(t) + 30 : worth(t) * c.blast / t.maxHp;
-          s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
+          if (c.splash) s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
           return burn >= 60 ? 40 + burn : -1;
         }
         if (c.fortify) {
@@ -98,7 +98,7 @@ var Bot = (function () {
         return attackScore(s, unitById(s, m.unit), unitById(s, m.target));
       case 'ability':
         u = unitById(s, m.unit);
-        var key = E.CARDS[u.cardId].ability.key;
+        var ab = E.CARDS[u.cardId].ability, key = ab.key;
         if (key === 'heal') { t = unitById(s, m.target); return 25 + Math.min(25, (t.maxHp - t.hp) * 10) + worth(t) / 10; }
         if (key === 'rally') return 60;
         if (key === 'healall') return 70;
@@ -111,6 +111,7 @@ var Bot = (function () {
           return s.units.some(function (e) { return e.owner === foe && dist(t, e) === 2; }) ? 40 : -1;
         }
         if (key === 'push') return 22;
+        if (key === 'zap') { t = unitById(s, m.target); return ab.amount >= t.hp ? worth(t) + 30 : 12 + worth(t) / 10; }
         if (key === 'harvest') return worth(unitById(s, m.target)) <= 35 ? 35 : -1;
         if (key === 'tend') return 45 + worth(unitById(s, m.target)) / 10;
         if (key === 'hold') return 30 + E.attackOf(s, unitById(s, m.target)) * 5;

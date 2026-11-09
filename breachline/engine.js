@@ -95,7 +95,20 @@ var Engine = (function () {
     unit('herdmother', 'Herd mother', 'G', 6, 3, 7, 11, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('orrowen', 'Orrowen, Who Was Here First', 'G', 7, 3, 6, 12, { sub: 'Velunn', keywords: ['Grows', 'Overrun'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times. Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('follower', 'Camp follower', 'N', 1, 0, 1, 2),
-    unit('scarred', 'Scarred summoner', 'N', 4, 0, 3, 5, { drawOnSummon: 1, text: 'When summoned: draw a card.' })
+    unit('scarred', 'Scarred summoner', 'N', 4, 0, 3, 5, { drawOnSummon: 1, text: 'When summoned: draw a card.' }),
+    // Set 5, cards 31 to 42 in CARD_PROPOSALS.md.
+    unit('fieldscholar', 'Conclave field scholar', 'U', 3, 1, 2, 3, { ability: { key: 'zap', label: 'Zap', amount: 1 }, text: 'Ability, instead of attacking: 1 damage to an enemy unit up to 2 tiles away.' }),
+    unit('wardwright', 'Harmonic wardwright', 'U', 4, 2, 3, 4, { keywords: ['Ranged', 'Resonance'], text: 'Ranged. Resonance: its attacks also deal 1 damage to enemies next to the target.' }),
+    { id: 'brightlance', name: 'Brightlance', type: 'spell', colour: 'U', cost: 3, wants: 1, blast: 2, knock: true, text: '2 damage to an enemy unit, then push it 1 tile back toward its side.' },
+    { id: 'wovenward', name: 'Woven ward', type: 'enchant', colour: 'U', cost: 3, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, ward: 4, text: 'Enchant one of your units: it ignores the next 4 damage, then the ward is used up.' },
+    { id: 'quench', name: "Enchanter's quench", type: 'enchant', colour: 'U', cost: 2, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, pierce: true, text: 'Enchant one of your units: +1 attack, and its attacks ignore Guard and Winter shelter.' },
+    unit('rimedrake', 'Rime drake', 'U', 4, 2, 3, 4, { keywords: ['Flying', 'Freeze'], text: "Flying: moves 2 tiles, over other units. Freeze: the unit it attacks can't move on its next turn." }),
+    unit('goblinscout', 'Thornwarden goblin scout', 'G', 1, 1, 1, 1, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
+    unit('alderkin', 'Bronze-harness alderkin', 'G', 4, 2, 4, 7, { sub: 'Alderkin' }),
+    unit('retainer', 'Porcelain-visored retainer', 'B', 3, 1, 2, 5, { keywords: ['Guard', 'Sworn'], text: 'Guard. Sworn: permanently +1 attack when another of your units dies, up to +3.' }),
+    unit('veiladept', 'Veil adept', 'B', 3, 1, 4, 2, { keywords: ['Veiled'], text: "Veiled: can't be attacked or targeted by enemy cards until it attacks." }),
+    { id: 'flameblade', name: 'Banked flame blade', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 2, hpBonus: 0, allyOnly: true, text: 'Equip one of your units: +2 attack.' },
+    unit('stoneward', 'Stoneward colossus', 'N', 6, 0, 4, 8, { keywords: ['Guard', 'Holding ground'], text: 'Guard. Holding ground: enemies that move next to it must stop.' })
   ].forEach(function (c) { CARDS[c.id] = c; });
 
   var DECKS = {
@@ -110,13 +123,13 @@ var Engine = (function () {
   var FACTIONS = [
     { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch'] },
     { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric', 'stillflame'] },
-    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner'] },
-    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker'] },
-    { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant', 'squire', 'calleddebt', 'envoy'] },
+    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance'] },
+    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench'] },
+    { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant', 'squire', 'calleddebt', 'envoy', 'retainer', 'veiladept'] },
     { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise', 'rats', 'barrowpriest', 'colossus'] },
     { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex', 'firepot', 'chieftain'] },
-    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall'] },
-    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender'] },
+    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall', 'flameblade'] },
+    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender', 'goblinscout'] },
     { id: 'herd', name: 'The Elder Herd', colour: 'G', cards: ['owl', 'bull', 'boar', 'mossback', 'herdmother'] }
   ];
   FACTIONS.forEach(function (f) { f.cards.forEach(function (id) { CARDS[id].faction = f.id; }); });
@@ -162,7 +175,7 @@ var Engine = (function () {
   function nextToAlly(s, u) { return s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1; }); }
 
   function attackOf(s, u) {
-    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0);
+    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.sworn || 0);
     u.enchants.forEach(function (e) { a += CARDS[e.c].atkBonus + (e.growth || 0); });
     if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 1;
     if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 2;
@@ -179,7 +192,9 @@ var Engine = (function () {
   }
 
   // Guard takes 1 off attack and strike-back damage, and Winter shelter takes off 2 more. Neither stacks with itself.
-  function guarded(s, u, amt) {
+  // pierce is true for the attacks of a unit with Enchanter's quench, which ignore both.
+  function guarded(s, u, amt, pierce) {
+    if (pierce) return amt;
     var safe = s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1 && hasKw(o, 'Guard'); });
     var cover = u.enchants.some(function (e) { return CARDS[e.c].shelter; }) ? 2 : 0;
     return Math.max(0, amt - cover - (safe ? 1 : 0));
@@ -187,7 +202,8 @@ var Engine = (function () {
 
   // What an attack would actually take off a target, after Guard, Winter shelter and any instant that prevents damage.
   // back is true for a strike-back.
-  function hitOn(s, a, t, prevent, back) { return guarded(s, t, Math.max(0, attackAgainst(s, a, t, back) - (prevent || 0))); }
+  function hitOn(s, a, t, prevent, back) { return guarded(s, t, Math.max(0, attackAgainst(s, a, t, back) - (prevent || 0)), !back && pierces(a)); }
+  function pierces(u) { return u.enchants.some(function (e) { return CARDS[e.c].pierce; }); }
 
   // Soft coloured mana: each land short of what the card wants adds 1 to its cost.
   function costOf(s, p, c) {
@@ -281,11 +297,14 @@ var Engine = (function () {
   }
 
   function bound(u) { return u.enchants.some(function (e) { return CARDS[e.c].bind; }); }
-  // Bound by a glyph, or held this turn by a Conclave examiner.
-  function stuck(s, u) { return bound(u) || u.held === s.turn; }
+  // Bound by a glyph, held this turn by a Conclave examiner, or frozen this turn by a Rime drake.
+  function stuck(s, u) { return bound(u) || u.held === s.turn || u.frozen === s.turn; }
+  // Holding ground: a tile next to an enemy that has it ends the move, so nothing passes through it, fliers included.
   function reachable(s, u) {
     if (stuck(s, u)) return [];
     var seen = {}, out = [], frontier = [{ r: u.r, c: u.c }], fly = hasKw(u, 'Flying');
+    var holders = s.units.filter(function (o) { return o.owner !== u.owner && hasKw(o, 'Holding ground'); });
+    var held = function (r, c) { return holders.some(function (h) { return Math.abs(h.r - r) + Math.abs(h.c - c) === 1; }); };
     seen[u.r + ',' + u.c] = true;
     for (var step = 0; step < speed(u); step++) {
       var next = [];
@@ -296,7 +315,7 @@ var Engine = (function () {
           var occ = unitAt(s, r, c);
           if (occ && !fly) return;
           seen[key] = true;
-          next.push({ r: r, c: c });
+          if (!held(r, c)) next.push({ r: r, c: c });
           if (!occ) out.push({ r: r, c: c });
         });
       });
@@ -305,6 +324,8 @@ var Engine = (function () {
     return out;
   }
 
+  // Veiled: an enemy unit that hasn't attacked yet can't be attacked or targeted. Splash damage still reaches it.
+  function open(pi, u) { return u.owner === pi || !u.veiled; }
   function emptyTile(s, r, c) { return r >= 0 && c >= 0 && r < ROWS && c < COLS && !unitAt(s, r, c); }
   function shoveRow(u) { return u.r + (u.owner === 0 ? 1 : -1); }
   function heal(s, u, amt) {
@@ -328,13 +349,13 @@ var Engine = (function () {
       } else if (c.damage) {
         s.units.forEach(function (u) {
           var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
+          if (u.owner === s.active && !u.veiled && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
         });
       } else if (c.debt) {
         if (p.life <= c.debt) return;
         s.units.forEach(function (u) {
           var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && u.hp < u.maxHp && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
+          if (u.owner === s.active && !u.veiled && u.hp < u.maxHp && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
         });
       } else if (c.dodge) {
         if (kind !== 'attack' || !attack) return;
@@ -349,7 +370,7 @@ var Engine = (function () {
       } else if (c.shove && kind === 'end') {
         s.units.forEach(function (u) {
           var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && emptyTile(s, shoveRow(u), u.c) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
+          if (u.owner === s.active && !u.veiled && emptyTile(s, shoveRow(u), u.c) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
         });
       }
     });
@@ -383,14 +404,14 @@ var Engine = (function () {
         if ((!p.landDropped || p.extraLands > 0) && c.type === 'land') out.push({ type: 'playLand', card: i.id });
         if (c.type !== 'land' && costOf(s, pi, c) <= p.mana) {
           if (c.type === 'unit') {
-            var foes = c.zap ? s.units.filter(function (e) { return e.owner !== pi; }) : [];
+            var foes = c.zap ? s.units.filter(function (e) { return e.owner !== pi && !e.veiled; }) : [];
             for (var col = 0; col < COLS; col++) {
               if (unitAt(s, backRow(pi), col)) continue;
               if (!foes.length) out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col });
               foes.forEach(function (e) { out.push({ type: 'summon', card: i.id, r: backRow(pi), c: col, target: e.uid }); });
             }
           } else if (c.type === 'enchant') {
-            s.units.forEach(function (u) { if ((!c.enemyOnly || u.owner !== pi) && (!c.allyOnly || u.owner === pi)) out.push({ type: 'enchant', card: i.id, target: u.uid }); });
+            s.units.forEach(function (u) { if ((!c.enemyOnly || u.owner !== pi) && (!c.allyOnly || u.owner === pi) && open(pi, u)) out.push({ type: 'enchant', card: i.id, target: u.uid }); });
           } else if (c.draw || c.extraLand || c.sift) {
             out.push({ type: 'cast', card: i.id });
           } else if (c.raise) {
@@ -399,11 +420,11 @@ var Engine = (function () {
               if (dc.type === 'unit' && dc.cost <= c.raise) out.push({ type: 'cast', card: i.id, raise: d.id });
             });
           } else if (c.cleanse) {
-            s.units.forEach(function (a) { if (a.enchants.length) out.push({ type: 'cast', card: i.id, target: a.uid }); });
+            s.units.forEach(function (a) { if (a.enchants.length && open(pi, a)) out.push({ type: 'cast', card: i.id, target: a.uid }); });
           } else if (c.mend) {
             s.units.forEach(function (a) { if (a.owner === pi && a.hp < a.maxHp) out.push({ type: 'cast', card: i.id, target: a.uid }); });
           } else if (c.blast) {
-            s.units.forEach(function (e) { if (e.owner !== pi) out.push({ type: 'cast', card: i.id, target: e.uid }); });
+            s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled) out.push({ type: 'cast', card: i.id, target: e.uid }); });
           } else if (c.fortify) {
             if (s.units.some(function (a) { return a.owner === pi; })) out.push({ type: 'cast', card: i.id });
           } else if (c.passage) {
@@ -427,7 +448,7 @@ var Engine = (function () {
       var strength = u.noAttack || held ? 0 : attackOf(s, u);
       if (strength > 0) {
         s.units.forEach(function (e) {
-          if (e.owner !== pi && dist(u, e) <= range(u) && mayHit(e)) out.push({ type: 'attack', unit: u.uid, target: e.uid });
+          if (e.owner !== pi && !e.veiled && dist(u, e) <= range(u) && mayHit(e)) out.push({ type: 'attack', unit: u.uid, target: e.uid });
         });
         if (u.r === backRow(1 - pi) && !pinned) out.push({ type: 'attackSummoner', unit: u.uid });
       }
@@ -439,9 +460,9 @@ var Engine = (function () {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1; })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'lance') {
         if (!u.noAttack && !held) s.units.forEach(function (e) {
-          if (e.owner !== pi && dist(u, e) === 1 && mayHit(e)) {
+          if (e.owner !== pi && !e.veiled && dist(u, e) === 1 && mayHit(e)) {
             var b = unitAt(s, e.r + (e.r - u.r), e.c + (e.c - u.c));
-            if (b && b.owner !== pi) out.push({ type: 'ability', unit: u.uid, target: e.uid });
+            if (b && b.owner !== pi && !b.veiled) out.push({ type: 'ability', unit: u.uid, target: e.uid });
           }
         });
       } else if (ab.key === 'lens') {
@@ -453,13 +474,15 @@ var Engine = (function () {
       } else if (ab.key === 'study' || ab.key === 'sift' || ab.key === 'forage') {
         if (!u.moved) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'push') {
-        s.units.forEach(function (e) { if (e.owner !== pi && dist(u, e) === 1 && emptyTile(s, e.r + (e.r - u.r), e.c + (e.c - u.c))) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
+        s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) === 1 && emptyTile(s, e.r + (e.r - u.r), e.c + (e.c - u.c))) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
       } else if (ab.key === 'harvest' || ab.key === 'tend') {
         s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'swap') {
         if (!stuck(s, u)) s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) <= 2 && !stuck(s, a)) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'hold') {
-        s.units.forEach(function (e) { if (e.owner !== pi && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
+        s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
+      } else if (ab.key === 'zap') {
+        if (!u.noAttack && !held) s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
       } else if (ab.key === 'exhume') {
         if (backTile(s, pi) !== null) p.discard.forEach(function (d) {
           var dc = CARDS[d.c];
@@ -479,7 +502,7 @@ var Engine = (function () {
   }
   function newUnit(s, inst, id, pi, r, c) {
     var d = CARDS[id];
-    return { uid: s.nextId++, inst: inst, cardId: id, owner: pi, r: r, c: c, hp: d.hp, maxHp: d.hp, tempAtk: 0, boost: 0, growth: 0, enchants: [], moved: false, acted: false, summonedTurn: s.turn };
+    return { uid: s.nextId++, inst: inst, cardId: id, owner: pi, r: r, c: c, hp: d.hp, maxHp: d.hp, tempAtk: 0, boost: 0, growth: 0, enchants: [], moved: false, acted: false, summonedTurn: s.turn, veiled: d.keywords.indexOf('Veiled') >= 0 };
   }
 
   function takeFromHand(p, id) {
@@ -492,11 +515,31 @@ var Engine = (function () {
     s.players[u.owner].discard.push({ id: u.inst, c: u.cardId });
     u.enchants.forEach(function (e) { s.players[e.owner].discard.push({ id: e.id, c: e.c }); });
     say(s, CARDS[u.cardId].name + ' is destroyed.');
+    // Sworn counts every other unit of yours that is destroyed, however it happens.
+    s.units.forEach(function (o) {
+      if (o.owner !== u.owner || !hasKw(o, 'Sworn') || (o.sworn || 0) >= 3) return;
+      o.sworn = (o.sworn || 0) + 1;
+      s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+1', good: true });
+      say(s, CARDS[o.cardId].name + ' gets +1 attack.');
+    });
   }
 
+  // Takes damage off a unit and returns how much landed. Woven ward soaks damage of every kind until it is used up.
   function damage(s, u, amt) {
+    var w = u.enchants.filter(function (e) { return e.left > 0; })[0];
+    if (w && amt > 0) {
+      var soak = Math.min(amt, w.left);
+      w.left -= soak; amt -= soak;
+      say(s, CARDS[w.c].name + ' takes ' + soak + ' damage for ' + CARDS[u.cardId].name + '.');
+      if (!w.left) {
+        u.enchants.splice(u.enchants.indexOf(w), 1);
+        s.players[w.owner].discard.push({ id: w.id, c: w.c });
+        say(s, CARDS[w.c].name + ' is used up.');
+      }
+    }
     u.hp -= amt;
     s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '-' + amt });
+    return amt;
   }
 
   function drain(s, u, dealt) { if (hasKw(u, 'Drain')) heal(s, u, dealt); }
@@ -518,20 +561,22 @@ var Engine = (function () {
     }
     var t = unitById(s, att.targetUid), b = att.secondaryUid ? unitById(s, att.secondaryUid) : null, over = null;
     function strike(u, verb) {
-      var hit = hitOn(s, a, u, att.shield === u.uid ? att.prevent : 0), before = u.hp;
-      damage(s, u, hit);
+      var before = u.hp, hit = damage(s, u, hitOn(s, a, u, att.shield === u.uid ? att.prevent : 0));
       say(s, verb + CARDS[u.cardId].name + ' for ' + hit + '.');
       drain(s, a, Math.min(hit, before));
     }
     if (t) {
       strike(t, name + ' hits ');
+      if (t.hp > 0 && hasKw(a, 'Freeze')) {
+        t.frozen = s.turn + 1;
+        say(s, CARDS[t.cardId].name + " is frozen: it can't move on its next turn.");
+      }
       if (t.hp < 0 && hasKw(a, 'Overrun')) {
         // Behind means one tile on from the target, whatever the range. A diagonal shot counts along the row.
         var dr = t.r === a.r ? 0 : t.r > a.r ? 1 : -1, dc = dr ? 0 : t.c > a.c ? 1 : -1;
         over = unitAt(s, t.r + dr, t.c + dc);
         if (over && over.owner !== a.owner) {
-          var excess = guarded(s, over, -t.hp);
-          damage(s, over, excess);
+          var excess = damage(s, over, guarded(s, over, -t.hp, pierces(a)));
           say(s, name + ' overruns ' + CARDS[over.cardId].name + ' for ' + excess + '.');
           drain(s, a, excess);
         } else over = null;
@@ -539,19 +584,19 @@ var Engine = (function () {
     }
     if (b) strike(b, 'The lance also hits ');
     var stomped = [];
-    if (t && hasKw(a, 'Stomp')) s.units.forEach(function (o) {
+    // Resonance works exactly like Stomp.
+    var splash = hasKw(a, 'Stomp') ? ' stomps ' : hasKw(a, 'Resonance') ? "'s resonance hits " : null;
+    if (t && splash) s.units.forEach(function (o) {
       if (o === t || o.owner === a.owner || dist(o, t) !== 1) return;
-      var hit = guarded(s, o, 1);
-      damage(s, o, hit);
-      say(s, name + ' stomps ' + CARDS[o.cardId].name + ' for ' + hit + '.');
+      var hit = damage(s, o, guarded(s, o, 1, pierces(a)));
+      say(s, name + splash + CARDS[o.cardId].name + ' for ' + hit + '.');
       stomped.push(o);
     });
     // Only a survivor strikes back, and only if the attacker is within its range. A decoy strikes back before it vanishes.
     var vanish = t && t.hp > 0 && hasKw(t, 'Decoy');
     if (t && t.hp > 0 && !(vanish && attackOf(s, t) === 0)) {
       if (dist(a, t) <= range(t)) {
-        var back = hitOn(s, t, a, 0, true), had = a.hp;
-        damage(s, a, back);
+        var had = a.hp, back = damage(s, a, hitOn(s, t, a, 0, true));
         say(s, CARDS[t.cardId].name + ' strikes back for ' + back + '.');
         drain(s, t, Math.min(back, had));
       } else say(s, CARDS[t.cardId].name + " can't strike back: " + name + ' is out of reach.');
@@ -629,8 +674,7 @@ var Engine = (function () {
         }
         if (c.zap && m.target) {
           u = unitById(s, m.target);
-          damage(s, u, c.zap);
-          say(s, c.name + ' hits ' + CARDS[u.cardId].name + ' for ' + c.zap + '.');
+          say(s, c.name + ' hits ' + CARDS[u.cardId].name + ' for ' + damage(s, u, c.zap) + '.');
           if (u.hp <= 0) kill(s, u);
         }
         if (c.lifeCost) {
@@ -645,6 +689,7 @@ var Engine = (function () {
         p.mana -= costOf(s, pi, c);
         var ench = { id: i.id, c: i.c, owner: pi };
         if (c.warrant) ench.expires = s.turn + c.warrant;
+        if (c.ward) ench.left = c.ward;
         u.enchants.push(ench);
         u.maxHp += c.hpBonus; u.hp += c.hpBonus;
         say(s, mark(s, p) + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + '.');
@@ -669,12 +714,15 @@ var Engine = (function () {
         if (c.blast) {
           u = unitById(s, m.target);
           var burnt = [u];
-          damage(s, u, c.blast);
-          say(s, mark(s, p) + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + ' for ' + c.blast + '.');
-          s.units.forEach(function (o) {
+          say(s, mark(s, p) + ' casts ' + c.name + ' on ' + CARDS[u.cardId].name + ' for ' + damage(s, u, c.blast) + '.');
+          // Brightlance pushes a survivor back toward its owner's side, if that tile is free.
+          if (c.knock && u.hp > 0 && emptyTile(s, shoveRow(u), u.c)) {
+            u.r = shoveRow(u);
+            say(s, CARDS[u.cardId].name + ' is pushed back.');
+          }
+          if (c.splash) s.units.forEach(function (o) {
             if (o.owner === pi || o === u || dist(o, u) !== 1) return;
-            damage(s, o, c.splash);
-            say(s, 'The fire also hits ' + CARDS[o.cardId].name + ' for ' + c.splash + '.');
+            say(s, 'The fire also hits ' + CARDS[o.cardId].name + ' for ' + damage(s, o, c.splash) + '.');
             burnt.push(o);
           });
           burnt.forEach(function (o) { if (o.hp <= 0) kill(s, o); });
@@ -725,11 +773,11 @@ var Engine = (function () {
         say(s, CARDS[u.cardId].name + ' moves.');
         break;
       case 'attack':
-        u = unitById(s, m.unit); u.acted = true;
+        u = unitById(s, m.unit); u.acted = true; u.veiled = false;
         beginAttack(s, { attacker: u.uid, targetUid: m.target });
         break;
       case 'attackSummoner':
-        u = unitById(s, m.unit); u.acted = true;
+        u = unitById(s, m.unit); u.acted = true; u.veiled = false;
         beginAttack(s, { attacker: u.uid, summoner: 1 - pi });
         break;
       case 'ability':
@@ -786,6 +834,10 @@ var Engine = (function () {
           var other = unitById(s, m.target), ur = u.r, uc = u.c;
           u.r = other.r; u.c = other.c; other.r = ur; other.c = uc;
           say(s, CARDS[u.cardId].name + ' swaps places with ' + CARDS[other.cardId].name + '.');
+        } else if (ab.key === 'zap') {
+          var zapped = unitById(s, m.target);
+          say(s, CARDS[u.cardId].name + ' hits ' + CARDS[zapped.cardId].name + ' for ' + damage(s, zapped, ab.amount) + '.');
+          if (zapped.hp <= 0) kill(s, zapped);
         } else if (ab.key === 'hold') {
           var held = unitById(s, m.target);
           held.held = s.turn + 1;

@@ -322,6 +322,66 @@ function randomField(r, ids) {
   var v = E.viewFor(s, 1), prompt = AI.turnPrompt(v, 'normal');
   check('a unit named like a deck stays a unit in the prompt', prompt.indexOf('Cinder Clan raiders is destroyed') >= 0 && prompt.indexOf('Your side is destroyed') < 0, prompt.split('\n').filter(function (l) { return /destroyed/.test(l); }).join(' / '));
   check('matching deck names are told apart', prompt.indexOf('The enemy plays Cinder peaks') >= 0 && prompt.indexOf('Your side plays Cinder peaks') < 0);
+
+  // Set 5.
+  function hand(s, id) { s.phase = 'play'; s.players[0].hand = [{ id: 950, c: id }]; return 950; }
+  function moves(s, type) { return E.legalMoves(s).filter(function (m) { return m.type === type; }); }
+
+  s = arena(); var zapper = put(s, 'fieldscholar', 0, 2, 2), far = put(s, 'goblin', 1, 0, 2);
+  check('Zap reaches 2 tiles', moves(s, 'ability').some(function (m) { return m.target === far.uid; }));
+  fight = E.applyMove(s, { type: 'ability', unit: zapper.uid, target: far.uid });
+  check('Zap deals 1 and the scholar is done', !byUid(fight, far) && byUid(fight, zapper).acted);
+
+  s = arena(); var ww = put(s, 'wardwright', 0, 3, 2), mark1 = put(s, 'cleric', 1, 1, 2), side = put(s, 'cleric', 1, 1, 1), guardian = put(s, 'sentinel', 1, 0, 1);
+  fight = E.applyMove(s, { type: 'attack', unit: ww.uid, target: mark1.uid });
+  check('Resonance hits enemies next to the target, after Guard', byUid(fight, side).hp === side.maxHp - 0 && byUid(fight, mark1).hp === mark1.maxHp - 3);
+  s.units = s.units.filter(function (u) { return u !== guardian; });
+  fight = E.applyMove(s, { type: 'attack', unit: ww.uid, target: mark1.uid });
+  check('Resonance deals 1 without Guard', byUid(fight, side).hp === side.maxHp - 1);
+
+  s = arena(); var pushed = put(s, 'sentinel', 1, 2, 2), id = hand(s, 'brightlance');
+  fight = E.applyMove(s, { type: 'cast', card: id, target: pushed.uid });
+  check('Brightlance deals 2 and pushes toward its side', byUid(fight, pushed).hp === pushed.maxHp - 2 && byUid(fight, pushed).r === 1);
+
+  s = arena(); var warded = put(s, 'cleric', 0, 2, 2), hitter2 = put(s, 'giant', 1, 1, 2); id = hand(s, 'wovenward');
+  s = E.applyMove(s, { type: 'enchant', card: id, target: warded.uid });
+  s.active = 1; s.phase = 'command';
+  fight = E.applyMove(s, { type: 'attack', unit: hitter2.uid, target: warded.uid });
+  check('Woven ward soaks 4 and is used up', byUid(fight, warded).hp === warded.maxHp - 1 && !byUid(fight, warded).enchants.length && fight.players[0].discard.some(function (d) { return d.c === 'wovenward'; }));
+
+  s = arena(); var piercer = put(s, 'sellsword', 0, 1, 1), shielded = put(s, 'cleric', 1, 1, 2); put(s, 'sentinel', 1, 0, 2);
+  shielded.enchants.push({ id: 903, c: 'shelter', owner: 1 });
+  piercer.enchants.push({ id: 904, c: 'quench', owner: 0 });
+  check("Enchanter's quench ignores Guard and Winter shelter", E.hitOn(s, piercer, shielded) === 4);
+  check('but not on a strike-back', E.hitOn(s, shielded, piercer, 0, true) === 1);
+
+  s = arena(); var rime = put(s, 'rimedrake', 0, 2, 2), chilled = put(s, 'giant', 1, 1, 2); put(s, 'sentinel', 0, 1, 3);
+  fight = E.applyMove(s, { type: 'attack', unit: rime.uid, target: chilled.uid });
+  fight = E.applyMove(fight, { type: 'endTurn' });
+  if (fight.pending) fight = E.applyMove(fight, { type: 'pass' });
+  fight.phase = 'command';
+  check('Freeze stops the target moving on its next turn', !E.legalMoves(fight).some(function (m) { return m.type === 'move' && m.unit === chilled.uid; }) && E.legalMoves(fight).some(function (m) { return m.type === 'attack' && m.unit === chilled.uid; }));
+
+  s = arena(); var sworn = put(s, 'retainer', 0, 3, 0), fodder = put(s, 'goblin', 0, 2, 2), fodder2 = put(s, 'goblin', 0, 2, 3), killer = put(s, 'dragon', 1, 1, 2);
+  s.active = 1;
+  fight = E.applyMove(s, { type: 'attack', unit: killer.uid, target: fodder.uid });
+  check('Sworn gains 1 attack when an ally dies', E.attackOf(fight, byUid(fight, sworn)) === 3);
+  byUid(fight, sworn).sworn = 3; fight.units = fight.units.filter(function (u) { return u.uid !== fodder2.uid; });
+  check('Sworn stops at +3', E.attackOf(fight, byUid(fight, sworn)) === 5);
+
+  s = arena(); var veil = put(s, 'veiladept', 1, 1, 2); veil.veiled = true; var seeker = put(s, 'sellsword', 0, 2, 2);
+  check("Veiled can't be attacked", !moves(s, 'attack').length);
+  id = hand(s, 'brightlance');
+  check("Veiled can't be targeted by a spell", !moves(s, 'cast').length);
+  s.active = 1; s.phase = 'command';
+  fight = E.applyMove(s, { type: 'attack', unit: veil.uid, target: seeker.uid });
+  check('Veiled ends when it attacks', !byUid(fight, veil).veiled);
+  check('a summoned Veil adept starts veiled', E.applyMove((function () { var g = arena(); hand(g, 'veiladept'); return g; })(), { type: 'summon', card: 950, r: 3, c: 0 }).units[0].veiled === true);
+
+  s = arena(); put(s, 'stoneward', 1, 1, 1); var runner = put(s, 'clanraiders', 0, 2, 0); runner.moved = false;
+  var dests = moves(s, 'move').filter(function (m) { return m.unit === runner.uid; }).map(function (m) { return m.r + ',' + m.c; }).sort().join(' ');
+  check('a Swift unit that moves next to Holding ground stops there', dests === '1,0 2,1 3,0 3,1', dests);
+  check('Banked flame blade reads as Equipment', E.CARDS.flameblade.equipment && E.CARDS.flameblade.atkBonus === 2);
 })();
 
 document.getElementById('out').textContent = results.join('\n');

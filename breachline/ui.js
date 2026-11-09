@@ -40,7 +40,10 @@
     adept: 'threshold-adept', examiner: 'conclave-examiner', siegewalker: 'brass-siege-walker', ilvane: 'ilvane', rats: 'barrow-rats', squire: 'indebted-squire',
     hunted: 'hunted', calleddebt: 'called-debt', envoy: 'ashen-court-envoy', barrowpriest: 'barrow-priest', colossus: 'barrow-colossus', firepot: 'goblin-firepot',
     cinderfall: 'cinderfall', chieftain: 'giant-chieftain', boar: 'thicket-boar', grovetender: 'grove-tender-set4', mossback: 'mossback-bear', herdmother: 'herd-mother',
-    orrowen: 'orrowen', follower: 'camp-follower', scarred: 'scarred-summoner'
+    orrowen: 'orrowen', follower: 'camp-follower', scarred: 'scarred-summoner',
+    fieldscholar: 'conclave-field-scholar', wardwright: 'harmonic-wardwright', brightlance: 'brightlance', wovenward: 'woven-ward', quench: 'enchanters-quench',
+    rimedrake: 'rime-drake', goblinscout: 'thornwarden-goblin-scout', alderkin: 'bronze-harness-alderkin', retainer: 'porcelain-visored-retainer', veiladept: 'veil-adept',
+    flameblade: 'banked-flame-blade', stoneward: 'stoneward-colossus'
   };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
   var FLAVOUR = {
@@ -160,9 +163,12 @@
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       var chips = d.keywords.map(function (k) { return '<span class="chip">' + k + '</span>'; });
-      u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + '</span>'); });
+      u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + (e.left ? ' ' + e.left : '') + '</span>'); });
       if (u.tempAtk) chips.push('<span class="chip">+' + u.tempAtk + ' this turn</span>');
       if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
+      if (u.frozen >= S.turn) chips.push('<span class="chip state">Frozen</span>');
+      if (u.veiled) chips.push('<span class="chip state">Veiled</span>');
+      if (u.sworn) chips.push('<span class="chip">Sworn +' + u.sworn + '</span>');
       if (waiting) chips.push('<span class="chip state">Waiting</span>');
       else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
@@ -226,7 +232,7 @@
     return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
       '<span class="bar-top">' + c.name + '</span>' +
       '<span class="art">' + (noArt[c.id] ? '' : '<img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false">') + '</span>' +
-      '<span class="type">' + TYPES[c.type] + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>' +
+      '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>' +
       '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
   }
 

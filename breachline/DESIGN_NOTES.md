@@ -46,7 +46,7 @@ Claude's assumptions, not yet confirmed by the creator:
 
 ## Mechanics in development
 
-Decided by the creator on 2026-11-09, to make more of the board. None of these are built yet.
+Decided by the creator on 2026-11-09, to make more of the board. Holding ground and Sworn are built. The rest aren't yet.
 
 - **Summoning units:** a card can summon other units straight onto the board. You pick empty tiles in your back row. If the back row is full, the rest go to your second row, starting from a side column and filling toward the middle unless you choose. Summoned units wait a turn like any new unit.
 - **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row.

@@ -2,9 +2,9 @@
 
 Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
-Cards 31 to 91 are approved designs that aren't built yet. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
+Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 are approved designs that aren't built yet. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-The starter and campaign decks are unchanged, so cards 1 to 30 show up in the deck builder and in campaign rewards. Their art is in `art/ART_BRIEFS_SET4.md`. Flavour lines are next.
+The starter and campaign decks are unchanged, so cards 1 to 42 show up in the deck builder and in campaign rewards. Their art is in `art/ART_BRIEFS_SET4.md` and `art/ART_BRIEFS_SET5.md`. Flavour lines are next.
 
 ## Rules decided while building
 
@@ -17,6 +17,15 @@ The starter and campaign decks are unchanged, so cards 1 to 30 show up in the de
 - **Conclave examiner:** a held unit can't move or attack, but can still use an ability or strike back.
 - **Ilvane:** draws one card for each unit it destroys, including with a strike-back.
 - **Threshold adept:** neither unit can be bound by a glyph or held.
+- **Zap:** it isn't an attack, so Guard doesn't reduce it. A held unit can't zap.
+- **Resonance:** works exactly like Stomp.
+- **Brightlance:** pushes the target 1 tile back toward its owner's side, if that tile is free.
+- **Woven ward:** soaks damage of every kind, after Guard and Winter shelter.
+- **Enchanter's quench:** ignores Guard and Winter shelter, including on Stomp and Overrun damage, but not Shield of dawn. Strike-backs aren't attacks, so they don't ignore anything.
+- **Freeze:** works like Binding glyph for one turn, so the frozen unit also can't be swapped or sent by Dawnsail passage. It can still attack.
+- **Sworn:** counts any of your units destroyed while the retainer is on the board, including by Harvest or a warrant.
+- **Veiled:** blocks attacks, spells, enchantments, instants and abilities aimed at it, and being the unit behind a lance. Splash damage such as Stomp, Resonance, Overrun and Cinderfall still reaches it. It veils again if raised from the discard pile.
+- **Holding ground:** fliers stop too. A unit that starts next to the holder can move away.
 
 ## How these were built
 
@@ -96,7 +105,7 @@ Three of the four plain units costing 3 or more get an ability and keep their st
 
 ## Cards from the reference library
 
-Added on 2026-11-08. You voted on every reference sheet and chose these to become cards, then set their numbers and rules in discussion. Each one depicts the character or item from its accepted sheet. Art briefs are in `art/ART_BRIEFS_SET5.md`, and nothing has been generated yet.
+Added on 2026-11-08 and made final on 2026-11-09. You voted on every reference sheet and chose these to become cards, then set their numbers and rules in discussion. Each one depicts the character or item from its accepted sheet, and all twelve paintings are final.
 
 | # | Card | Faction | Type | Cost | Wants | Stats | Rules | Source sheet | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -206,18 +215,17 @@ Added on 2026-11-09, after checking the built cards against the new mechanics.
 
 ## What's left to build
 
-40 new cards and 10 changes to existing cards.
+28 new cards and 10 changes to existing cards.
 
 | Alignment | New cards |
 | --- | --- |
 | Vigil (white) | 7 |
-| Gnosis (blue) | 10 |
-| Dominion (black) | 7 |
-| Fervor (red) | 9 |
-| Genesis (green) | 6 |
-| Neutral | 1 |
+| Gnosis (blue) | 4 |
+| Dominion (black) | 5 |
+| Fervor (red) | 8 |
+| Genesis (green) | 4 |
 
-Most need engine work first: tile effects and aimed spells, summoning and conjured cards, Loyal, Ambush, Flanking, Holding ground and death triggers.
+Most need engine work first: tile effects and aimed spells, summoning and conjured cards, Loyal, Ambush, Flanking, and death triggers other than Sworn. Holding ground is built.
 
 ## Smaller mechanics to approve
 
@@ -225,13 +233,6 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 
 | Mechanic | Card | Note |
 | --- | --- | --- |
-| Zap, a ranged ability weaker than the unit's attack | Conclave field scholar | |
-| Splash damage on attack | Harmonic wardwright | Works like Hill giant's Stomp |
-| Direct damage in Gnosis | Brightlance, Conclave field scholar, Lantern apprentice's Spark | Direct damage has been a Fervor thing. Push keeps Brightlance feeling like the Conclave |
-| Ignore the next set amount of damage | Woven ward | |
-| Ignore Guard and damage reduction | Enchanter's quench | |
-| Freeze, Binding glyph's rule for one turn | Rime drake | |
-| Veiled, untargetable until it attacks | Veil adept | Strong at 4 attack. The 2 health keeps it fair |
 | A card that hurts the player holding it | Tithe-keeper's Cursed coin | The first card put into the enemy's hand |
 
 ## Questions
