@@ -5,7 +5,7 @@
 <title>Breachline</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Cormorant+SC:wght@600;700&family=Alegreya:wght@400;500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Alegreya:wght@400;500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
 <style>
 /* A war table: a linen war map tacked to a weathered field-oak camp table under one warm light. Single dark look by choice. */
 :root {
@@ -15,7 +15,7 @@
   --white: #e8c76c; --red: #e8743b; --blue: #6db4e4; --black: #b49ad6; --green: #8fc46a; --neutral: #b9b2a3;
   --good: #8fdc9b; --good-deep: #27603a; --danger: #ff6a4d; --danger-deep: #a32a1c; --target: #ffe08a;
   --bronze: #3b2c18; --gold: #d0a448; --gold-pale: #f0d68c; --parchment: #f5ebd2; --parchment-deep: #e6d6ae; --card-ink: #2a2114; --card-soft: #5d4c31; --ivory: #fbf3df; --crimson: #8c2a24; --crimson-deep: #5f1a17;
-  --display: "Alegreya SC", Georgia, serif; --button: "Cormorant SC", Georgia, serif; --body: "Alegreya Sans", "Gill Sans", "Trebuchet MS", sans-serif; --serif: "Alegreya", Georgia, serif;
+  --display: "Cormorant SC", Georgia, serif; --button: var(--display); --body: "Alegreya Sans", "Gill Sans", "Trebuchet MS", sans-serif; --serif: "Alegreya", Georgia, serif;
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='320'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.01 .32' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .02 0 0 0 0 .01 0 0 0 0 0 0 0 0 .7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E");
   --vellum: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='v'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035' numOctaves='4' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .08 0 0 0 .3 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23v)'/%3E%3C/svg%3E");
   /* The interface paintings briefed in art/UI_ART_BRIEFS.md live in art/web/ui/, built by art/build-ui.swift. */
@@ -56,10 +56,10 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .crest { color: var(--hue); }
 .plate.active .crest { box-shadow: 0 0 0 2px #17110b, 0 0 0 4px var(--gold-pale), 0 0 14px var(--gold); }
 .who { min-width: 0; display: flex; flex-direction: column; line-height: 1.12; }
-.who b { font: 700 16px/1.1 var(--display); letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.who b { font: 700 18px/1.1 var(--display); letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .who small { font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .life { flex: none; display: flex; flex-direction: column; gap: 2px; width: 74px; }
-.life strong { font: 700 26px/1 var(--display); font-variant-numeric: lining-nums tabular-nums; color: var(--gold-pale); }
+.life strong { font: 700 29px/1 var(--display); font-variant-numeric: lining-nums tabular-nums; color: var(--gold-pale); }
 .life i { display: block; height: 5px; border-radius: 3px; background: #0d0905; overflow: hidden; }
 .life i b { display: block; height: 100%; background: linear-gradient(90deg, #a32a1c, #e8743b); }
 .manarow { min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 3px; }
@@ -101,7 +101,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .tile .tart { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; z-index: -2; }
 .tile.waiting .tart { filter: grayscale(.8) brightness(.72); }
 .tile.done .tart { filter: saturate(.5) brightness(.62); }
-.tile .nm { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 3px; padding: 1px 5px 2px 4px; background: rgba(14, 9, 4, .78); font: 700 clamp(11.5px, calc(var(--bw) / 5 * .105), 15px)/1.15 var(--display); letter-spacing: .01em; }
+.tile .nm { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 3px; padding: 1px 5px 2px 4px; background: rgba(14, 9, 4, .78); font: 700 clamp(13px, calc(var(--bw) / 5 * .118), 17px)/1.15 var(--display); letter-spacing: .01em; }
 .tile.enemy .nm { background: rgba(70, 16, 12, .88); }
 .tile .nm svg { flex: none; width: 11px; height: 11px; fill: var(--hue); stroke: var(--hue); }
 .tile .nm span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
@@ -109,7 +109,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .chip { max-width: 100%; padding: 0 5px; border-radius: 3px; background: rgba(14, 9, 4, .82); font-size: 11px; line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip.state { background: var(--parchment); color: var(--card-ink); font-weight: 700; }
 .tile .st { position: absolute; left: 2px; right: 2px; bottom: 2px; display: flex; align-items: center; gap: 3px; }
-.badge { flex: none; min-width: 30px; padding: 1px 5px; border-radius: 3px; background: center / 100% 100% no-repeat; text-shadow: 0 1px 2px #000; text-align: center; font: 700 15px/19px var(--display); font-variant-numeric: lining-nums tabular-nums; color: var(--ivory); }
+.badge { flex: none; min-width: 30px; padding: 1px 5px; border-radius: 3px; background: center / 100% 100% no-repeat; text-shadow: 0 1px 2px #000; text-align: center; font: 700 17px/21.5px var(--display); font-variant-numeric: lining-nums tabular-nums; color: var(--ivory); }
 .badge.atk { background-image: url("art/web/ui/plaque-attack.png"); }
 .badge.hp { background-image: url("art/web/ui/plaque-health.png"); }
 .badge.up { color: var(--good); } .badge.down { color: #ffb08a; } .badge.hurt { color: #ff9c86; }
@@ -132,7 +132,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 @keyframes flash { from { filter: brightness(1.7); } to { filter: none; } }
 @keyframes hit { 0%, 100% { transform: none; } 25% { transform: translateX(-3px); } 60% { transform: translateX(3px); } }
 @keyframes pulse { 50% { filter: brightness(1.3); } }
-.float { position: absolute; right: 8px; top: 18px; font: 700 27px/1 var(--display); font-variant-numeric: lining-nums; color: #ffb3a1; -webkit-text-stroke: 1px #2b0d0b; paint-order: stroke fill; text-shadow: 0 1px 4px #000; animation: rise 1s ease-out forwards; pointer-events: none; z-index: 3; }
+.float { position: absolute; right: 8px; top: 18px; font: 700 30px/1 var(--display); font-variant-numeric: lining-nums; color: #ffb3a1; -webkit-text-stroke: 1px #2b0d0b; paint-order: stroke fill; text-shadow: 0 1px 4px #000; animation: rise 1s ease-out forwards; pointer-events: none; z-index: 3; }
 .float.good { color: var(--good); -webkit-text-stroke-color: #0e2d17; }
 .plate .float { right: auto; left: 240px; top: 8px; }
 @keyframes rise { from { transform: translateY(12px); } to { transform: translateY(-6px); } }
@@ -141,10 +141,10 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .cmd { grid-row: 3; display: flex; align-items: center; gap: 14px; min-height: 56px; padding-block: 6px; padding-left: var(--gl); padding-right: var(--gr); background: linear-gradient(rgba(16, 12, 8, .64), rgba(12, 9, 6, .8)), var(--tabletop); box-shadow: inset 0 1px 0 rgba(201, 160, 88, .5), inset 0 -1px 0 rgba(201, 160, 88, .5), 0 -2px 8px rgba(0, 0, 0, .4), 0 2px 8px rgba(0, 0, 0, .4); position: relative; z-index: 6; }
 .cmd.enemy { background: linear-gradient(rgba(78, 18, 12, .74), rgba(48, 12, 8, .86)), var(--tabletop); }
 #phases { flex: none; display: flex; align-items: center; gap: 12px; }
-.turn { display: flex; flex-direction: column; font: 700 17px/1.05 var(--display); white-space: nowrap; }
+.turn { display: flex; flex-direction: column; font: 700 19px/1.05 var(--display); white-space: nowrap; }
 .turn small { font: 400 12.5px/1.1 var(--body); color: var(--muted); }
 .steps { display: flex; }
-.step { padding: 3px 11px; font-size: 13.5px; background: #120c06; border: 1px solid var(--edge); color: var(--muted); }
+.step { padding: 3px 11px; font: 600 16px/1.15 var(--display); letter-spacing: .04em; background: #120c06; border: 1px solid var(--edge); color: var(--muted); }
 .step:first-child { border-radius: 4px 0 0 4px; } .step + .step { border-left: 0; border-radius: 0 4px 4px 0; }
 .step.on { background: var(--gold); color: #241a0c; border-color: var(--gold-pale); font-weight: 700; }
 .cmd.enemy .step.on { background: var(--crimson); color: var(--ivory); border-color: #c8584d; }
@@ -180,7 +180,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 }
 .empty { align-self: center; color: var(--muted); }
 /* Card frame, from card.html: bronze edge, cost and name on a bar at the top, art, then parchment. Sizes use cqw so a card scales as one piece. */
-.frame { --name: 8.6cqw; --bar-left: 20cqw; --coin: 17cqw; --coin-text: 11cqw; --sym: 5cqw; --type: 6cqw; --text: 7.2cqw; --flav: 6cqw; --stat: 24cqw; --stat-label: 5.6cqw; --stat-num: 10cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; border-radius: 5cqw; padding: 3.9cqw; color: var(--card-ink); font-family: var(--serif); }
+.frame { --name: 9.4cqw; --bar-left: 20cqw; --coin: 17cqw; --coin-text: 12cqw; --sym: 5cqw; --type: 6.6cqw; --text: 7.2cqw; --flav: 6cqw; --stat: 24cqw; --stat-label: 6.2cqw; --stat-num: 11cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; border-radius: 5cqw; padding: 3.9cqw; color: var(--card-ink); font-family: var(--serif); }
 .frame::after { content: ""; position: absolute; inset: 0; pointer-events: none; border: 7cqw solid transparent; border-image: url("art/web/ui/frame.png") 60 / 7cqw / 0 stretch; }
 .frame.big { --name: 7.2cqw; --bar-left: 16cqw; --coin: 12.5cqw; --coin-text: 8cqw; --sym: 3.6cqw; --type: 4.2cqw; --text: 5.2cqw; --flav: 4.6cqw; --stat: 16cqw; --stat-label: 3.7cqw; --stat-num: 7cqw; }
 .frame.W { --band: #6f5518; } .frame.R { --band: #8c2a24; } .frame.U { --band: #1f4f7a; } .frame.B { --band: #3f2f56; } .frame.G { --band: #2f5a32; } .frame.N { --band: #55514a; }
@@ -259,7 +259,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 
 /* Overlays */
 #turnBanner { position: absolute; inset: 0; z-index: 12; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-#turnBanner span { position: relative; isolation: isolate; padding: 22px 96px; font: 700 32px var(--display); letter-spacing: .04em; color: var(--card-ink); text-shadow: 0 1px 0 rgba(255, 245, 220, .6); animation: banner 1.05s ease-out forwards; }
+#turnBanner span { position: relative; isolation: isolate; padding: 22px 96px; font: 700 36px var(--display); letter-spacing: .04em; color: var(--card-ink); text-shadow: 0 1px 0 rgba(255, 245, 220, .6); animation: banner 1.05s ease-out forwards; }
 #turnBanner span::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("art/web/ui/banner.png") center / 100% 100% no-repeat; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .6)); }
 #turnBanner.enemy span { color: var(--ivory); text-shadow: 0 1px 3px #000; }
 #turnBanner.enemy span::before { filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .6)) sepia(1) saturate(4.5) hue-rotate(-52deg) brightness(.48); }
@@ -296,8 +296,8 @@ dialog .btns { justify-content: flex-start; }
 .deck[aria-pressed="true"] { border-color: var(--gold-pale); box-shadow: 0 0 0 2px var(--gold), 0 0 22px var(--gold); }
 .deck .pic { display: block; aspect-ratio: 16 / 10; background: var(--band, #3b2c18); }
 .deck .pic img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; }
-.deck .nm { display: block; padding: 4px 8px 5px; background: var(--band); color: var(--ivory); font: 700 16px/1.1 var(--display); }
-.deck .ty { display: flex; align-items: center; gap: 5px; padding: 6px 8px 0; font: 500 13px/1.1 var(--display); color: var(--card-soft); }
+.deck .nm { display: block; padding: 4px 8px 5px; background: var(--band); color: var(--ivory); font: 700 18px/1.1 var(--display); }
+.deck .ty { display: flex; align-items: center; gap: 5px; padding: 6px 8px 0; font: 500 14.5px/1.1 var(--display); color: var(--card-soft); }
 .deck .ty svg { width: 13px; height: 13px; fill: var(--band); stroke: var(--band); }
 .deck .ds { padding: 4px 8px 8px; font: 400 14px/1.22 var(--serif); }
 .decks.small .deck .pic { aspect-ratio: 16 / 7; }
