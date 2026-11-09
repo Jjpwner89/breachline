@@ -3,8 +3,8 @@
 .claude/worktrees/
 *.zip
 
-# Local fal art tooling and private job records
+# Local fal art tooling and private art
 /.env.fal
 /.venv-fal/
-/breachline/art/nsfw/fal-output/
+/breachline/art/nsfw/
 **/__pycache__/
