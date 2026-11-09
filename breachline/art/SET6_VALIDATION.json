@@ -1,0 +1,792 @@
+{
+  "set": 6,
+  "checked_at_utc": "2026-11-09T14:52:25.599659+00:00",
+  "result": "passed",
+  "generation_method": "built-in image_gen",
+  "paintings": 28,
+  "revised_paintings": 19,
+  "retained_paintings": 9,
+  "revision_pass_generations": 21,
+  "total_generation_attempts": 50,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "checks": {
+    "all_files_present": true,
+    "dimensions_correct": true,
+    "selected_sources_match": true,
+    "references_match_recorded_hashes": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_attempt_per_painting": true,
+    "gallery_has_28_images": true,
+    "gallery_links_valid": true,
+    "all_revisions_visually_inspected": true,
+    "unchanged_existing_image_files": 269,
+    "retained_set6_images_unchanged": 9,
+    "prior_porcelain_full_mask_final_unchanged": true,
+    "original_review_versions_archived": 19,
+    "current_briefs_and_metadata_reconciled": true,
+    "frost_followup_other_existing_image_files_unchanged": 305,
+    "frost_followup_previous_version_archived": true
+  },
+  "visual_review_note": "Frost's side-on pose was rejected for duplicated right-arm anatomy. Its replacement was inspected for opposite shoulder-to-hand connections and boot contact on fresh ice. Revised images await creator review. Gallery checked statically; browser rendering was not verified.",
+  "files": [
+    {
+      "file": "consecrated-ground.png",
+      "web_file": "web/consecrated-ground.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "8a015080c5a4ad91df655028a3502849b4bb4eea93230daf6a720d954d55ef26",
+      "web_sha256": "746297dba9dc40a18632b8455e34af5493aa600822f1193504a76e7885a1f7bd",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "muster-the-levy.png",
+      "web_file": "web/muster-the-levy.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "60f3f1dd4ded359dfd81e9cc79d4e753ee21175d51949ccc80120891260b2b0c",
+      "web_sha256": "8458666acac01c931cf91452b31ed74f89164722d961d364dca084134414088c",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "pride-lioness.png",
+      "web_file": "web/pride-lioness.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a29e7b05c1797b2844597a31e0b815874ec52a9b711f7b08860f40c506c86427",
+      "web_sha256": "6c52c01fc8004905c563f7c1a1ed6ba4fb71c38c2f46af888b1243942b9b8e50",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "oath-outrider.png",
+      "web_file": "web/oath-outrider.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "17ae52e7ffc2062816fe86168b4b9ea41c0c389690da476c2641a0a7d302ea42",
+      "web_sha256": "559e3796369ba156eb3abde43e208e73e2bc79210af7029998969d4cf452a512",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "shieldline-sergeant.png",
+      "web_file": "web/shieldline-sergeant.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "fd4d0adb1e7923b377e7bb18c27446c4b5cb7dbd50b966821df61cf739148e66",
+      "web_sha256": "ec2c5d24a7f3a2e965011d2231799009b0786347ba159df36f46e06f26447259",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "vigil-keeper.png",
+      "web_file": "web/vigil-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0bc3015b460289e1ad242d7c6bc487ed9750f4de5a4780c12031b458630d73f8",
+      "web_sha256": "0a5153e6494cf0e6324f180e619849d4f7fb4a1597a0165bdb1b0bc5d4642616",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "still-flame-acolyte.png",
+      "web_file": "web/still-flame-acolyte.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e72a87f582cfcbf2f23893ecca6f670b751adaa3524596a3fb843f5ed4f9a6e2",
+      "web_sha256": "2cf63a4d057681e7fbdd2b2eab80b4a73ce27d183ff779c9a54bafaa45fd836f",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "frost.png",
+      "web_file": "web/frost.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a1c10d968f735a551573f08579be691623e8c59f2fe48f13cc286e7f6ea58651",
+      "web_sha256": "0d2621f41dca09e23e404b2a459e9dc5d1a815bded2eb3a2b36fac81c5c54a8d",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected the complete figure: right shoulder on image-left connects through elbow and wrist to the casting hand; opposite left shoulder connects to the lowered lantern hand at image-right. Two arms total. Two coherent legs, with leading right boot supported by ice and left boot on the low stone step. Lantern hangs from the left hand, clear of the legs. Blue/cold water and amber light retained. Awaiting creator review.",
+      "selected_attempt": 4
+    },
+    {
+      "file": "glyphwright.png",
+      "web_file": "web/glyphwright.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "ac4fdd4cf6850bb431b32e779dc7fdaa7a5efe3af43ce0bb79cab42235073111",
+      "web_sha256": "fffea49151f9cc564ca61eee1814a0901271630357176b07f35e8cf7f0d32187",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "lantern-apprentice.png",
+      "web_file": "web/lantern-apprentice.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f3d38fd58603bd008a82da15fdd9453ca202bfa2a3fff34d0aa8f36bcad368aa",
+      "web_sha256": "b52268593d924208588d1e40e1914676668b6824caaf161b0d27e63e3e629310",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "artificers-journeyman.png",
+      "web_file": "web/artificers-journeyman.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "cb1bed8db511842b197698867c3c088f9621aadcb837fd1cb4bb38fd32043656",
+      "web_sha256": "0d7133b2e9764da236db99097f1686736d8abe45a4bf98f8af2d9c1fd5e59a8b",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "grave-soil.png",
+      "web_file": "web/grave-soil.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "3aad980620333e0ed8af110ed98b5fb70e6cdd8c58624a84bd5bf185332f8a85",
+      "web_sha256": "7a2ec521c6829b19331807d2a2fc6434f711c1dd8becc2c1f1c8243d5d1600e6",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "ash-sower.png",
+      "web_file": "web/ash-sower.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "eb8085159e160b4e5c5251d19f9a2eea7c651ceda6d0cfbd8bba36efaf3e60fe",
+      "web_sha256": "effd0f46b84b80bd1022c3335e574af84c4548f45922bf793a2780700cdbd712",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "gravecaller.png",
+      "web_file": "web/gravecaller.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f33ff3ae1da1921f4d4a8c1567aa6608ea8d3843eb4ab5b50110ea997a072da7",
+      "web_sha256": "d6ef631fe1680048566621de2acbcbb9890386dceaaea228122f19fa294ca24c",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Reviewed the selected second attempt: full raven wing silhouette now fits inside the canvas; keeper identity, glove, pose, connected anatomy and barrow composition retained. Awaiting creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "tithe-keeper.png",
+      "web_file": "web/tithe-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "179026670fbaa3642769134228c48ddf2a3e46468fa3e55df58f10aa822005e1",
+      "web_sha256": "97d4b05d52bec70c60152b9ef32a6fd71aa23558403eb0ca50f6f8216afae870",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "court-assassin.png",
+      "web_file": "web/court-assassin.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "3329dab732331d3a874cb75aeff0a3b99dad657fb6872c8eb034312208e9ab30",
+      "web_sha256": "51199384ebbdf1864157b834d1560dc805ad2b41da2a6bf6b0f80d3f5e61e9fb",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "scorch.png",
+      "web_file": "web/scorch.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "94e95ae904888e8085ae92f182b6aa9cb6575a7048585dfb9d8d43ad8fd1e982",
+      "web_sha256": "be7dcd150ecc1db32e3bd4b6de75a3091e362373f59a6facb5af77aef57562bc",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "stormstrike.png",
+      "web_file": "web/stormstrike.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "885de3ccb24a5a87cb59268408af648ece7194193fe2826946c0127d57db0e70",
+      "web_sha256": "0b67f3a9063ac3d95d3c11eea79be95337a7606e2ee746ce18cee93dc0f98854",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "ember-salamander.png",
+      "web_file": "web/ember-salamander.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0162568899ad8eda3897f3b44d415b128ad3b37f5bc19a40368a0153c1722fea",
+      "web_sha256": "f9cfa5daefb01bd2a1a9f7f392bc277a195c7dab7f6c91245493b97af2017e06",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "goblin-rabble-rouser.png",
+      "web_file": "web/goblin-rabble-rouser.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0eb579a6dcce334d80523ecf9b0b11c7c6d51ab5a6cf3b70bc9f61e2cc89a60b",
+      "web_sha256": "07121403ca0d41d96b36e51956ac30e0f6d98b2e03994c84ad339c6a72bd0064",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "cinder-cant-drummer.png",
+      "web_file": "web/cinder-cant-drummer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7299e5d132ea1076725faf6ac5ed2219fbc9e8ccdd95d20c479bfa5d9cf7a85b",
+      "web_sha256": "da25b120fbb4652867623679a10227544884231bc1e4b907c9a276545eb84540",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "cinder-skirmisher.png",
+      "web_file": "web/cinder-skirmisher.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "037d4403d525a3cea1e388dd000c89f95c7a1e56e46a86e716248af0c0bb54b8",
+      "web_sha256": "3996e8a6a71e95c291d938dfedfaefe4827bc277f21b3b2945e3c5ccc3c6b4c7",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "orc-pack-hunter.png",
+      "web_file": "web/orc-pack-hunter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0fdd82c115840f01bfe81368624774a6db4600e851e35bdd60e37430d13e06d7",
+      "web_sha256": "f7efcd975bf5bda046debca4ad63742bca36b7a4b13dd3de2526d5f4ebc2c7e5",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "cinder-martyr.png",
+      "web_file": "web/cinder-martyr.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0163a4c7abcd5434934829476e1a36711d676c7ceedc9a45236eebe5f34c2c6b",
+      "web_sha256": "f712526e103ab8decb2d90cb0162f017eedd4c0a300617638f2da824e65ca2b7",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    },
+    {
+      "file": "thornbrake.png",
+      "web_file": "web/thornbrake.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7c5cd7ebee77e1be915698b9a175f82e06c1939ed1daaac05f0f8a1df54eebf8",
+      "web_sha256": "55d261aec229a386c6fce121bd010387b0ba398e2f43e6c3027107a5d48eac44",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "seedfall.png",
+      "web_file": "web/seedfall.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7cb0d8fd4027efd716cabfbfc055e9ff87fbab07134772611fface735cd85162",
+      "web_sha256": "14bb747373ebb7ed30d0c1e9ecd225c5dfa9893dfd197d1098c4522c1152d557",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "ridge-wolves.png",
+      "web_file": "web/ridge-wolves.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "9b5149569c53585c048fc23748815346985c5df22f015e58d7f063e3b1943855",
+      "web_sha256": "50fb2e73b341e67a9db17fe431c129c87088925170e78b9c3bc2442f02150e91",
+      "review_status": "retained_after_creator_feedback",
+      "inspection_note": "Inspected subject, composition, visible anatomy, object contacts and style; ready for creator review.",
+      "selected_attempt": 1
+    },
+    {
+      "file": "ironbark-sentinel.png",
+      "web_file": "web/ironbark-sentinel.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "b0c6660eb18a0a19fba901e47f8dead648de1d4c72f823cb52c1cfb17e554f5a",
+      "web_sha256": "5c0217b891d5caeb7bfac47ce976f4ea211a9c1120839bd646cdbf5959ba0537",
+      "review_status": "revision_awaiting_creator_review",
+      "inspection_note": "Inspected requested correction, focal hierarchy, visible anatomy, object contacts and scale; ready for creator review.",
+      "selected_attempt": 2
+    }
+  ],
+  "preserved_image_sha256": {
+    "sunthread-mantle.png": "8ba445e7d9379ab9ed3646eaff8b63c25cebdd315a2f26a6f4e8f159d6f621c2",
+    "return-to-loam.png": "57c0e33d661958badf158f6b6cd5a2e9b4e86116794048041ab0afc5a9dc9a95",
+    "goblin-firepot.png": "10ec5a3331ea54874021565da32c5ff75473b0d484975a0f8b810066c5ab1698",
+    "warband-drum.png": "efda340534ad652b21c512aab269878e7c149d985763ab290a429296ef02c8ac",
+    "street-conjurer.png": "2a417992a1e8187a0aa49b9226deb741415310dbef297b139bf6520bb05bb9ab",
+    "orrowen.png": "d1bf3ef7f667fb9bf8a1f9dcca877d4c0f0824ec2e5cca786c4885cdddf3f49f",
+    "debt-collectors-blade.png": "025bb63d8da89a5a612189fe75efb00109ca92ec3efb77a9183d9e8fdf237fab",
+    "indebted-squire.png": "cb40c5f9ec5a1aad21e7de1cbe2531e688527a09100581dc1dd0eea4721d4744",
+    "sanctuary-threshold.png": "75b943775b75eb860054c78d063600956efe1b877ba72e870900fe6c1d0f32bc",
+    "ash-sower.png": "eb8085159e160b4e5c5251d19f9a2eea7c651ceda6d0cfbd8bba36efaf3e60fe",
+    "grove-tender.png": "f8788faee24d607150098cc72895fcb35403b900e8df6fc62a474ed6d93ecc12",
+    "ashen-barrows.png": "24803b4a1d1042247b1e1f502b885461c35ea9d162b32738a9de69e417185c51",
+    "raise-the-dead.png": "bcfc5b8de1e142fc4ef49e4f370cf1648a08f82ddcf51d8cda030fbfa61df01d",
+    "thornwarden-pathguard.png": "295fdf3fc71b6351910ba65bd3f3ee5c5881a8b3906bd390a875a4ab9b0c7c3e",
+    "brass-siege-walker.png": "31da6d83cc897318927f6abcd4211a2255067ed4e2ac01d4502557391f2164ed",
+    "death-warrant.png": "579a5c7cc659f7734e8946638504449687386b62c33eb035b52fc8f5feec074e",
+    "cinder-berserker.png": "a642a905325a358cad87c227aea20898d6beba63ce237e1fb0d093472ccb6c5d",
+    "barrow-colossus.png": "223b66f691775a06d900b02cbeb0fd593d7b0055b12b611f64e0cf1c3d023437",
+    "cinder-cant-drummer.png": "7299e5d132ea1076725faf6ac5ed2219fbc9e8ccdd95d20c479bfa5d9cf7a85b",
+    "surveyors-lenses.png": "d25ec2aa9733c9d4600f76a6d7aded314a636722a9d897d57870942ab4e5ce84",
+    "ashen-court-noble.png": "d633d23dbcdf574108f87300d2585cf20c4a6042c0772f7180e772b602e90adb",
+    "siphon-vigor.png": "d43c4e2e8b80bb0b0d5c195becce7b508ddefdc21c3b08ae09a622bf8713c4fe",
+    "ilvane.png": "3a7b098e90c48950a6d0baf554c5a830eadd0dc4567a23851a69ee33767ccd82",
+    "camp-follower.png": "5e44eba7375d2912c9fd58b6de092847983e7bf09c95380197fc6e0d51346c3e",
+    "militia-spearman.png": "fa815135bc6b9e93f5d380a360399c3f7c008cc53268155b63077fb695b29a98",
+    "veil-adept.png": "5bb710f16b90f4330bc96c87b55055e0f141802019a95cefb6d714f47aa48347",
+    "oath-knight.png": "987d3f968aaadbf8c19d636664a7a6a6fc0eec9a33df7c3f70d9750ca5b5b54c",
+    "roadwardens-shield.png": "d3535cf8aba1056f79d98824a8b8b438e9cf001f8165fdeee13f787f935f71cf",
+    "thornwarden-goblin-scout.png": "e56da6d9287b09f5cecbba976fea8e7ae0249816ce2a85226bf8e11c56e8b2f7",
+    "hunted.png": "b8a77912b3d07f437eb70ce6ea18d55a3994035cebc5ec570de41682a11d6190",
+    "orc-warchief.png": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+    "lantern-arcanist.png": "1d8b3447c9ff69f154ebfd5e315b14d18d5ac8ec71835b2e477922bac1b5a2ca",
+    "giant-chieftain.png": "c8fa0273168e6233158f4c57600a7f18f4fe9d5e534feef209ecf20a558cede3",
+    "seedheart-vessel.png": "6fbf3a0ffb8e7210b58228309df7037eeb9e2473915f1067a8628ce69f7c18a2",
+    "mourning-veil.png": "7a00be3f0903490d9e903112a39b36e287da7bbcf85a6cd7bec41f41eca2ecd6",
+    "thicket-boar.png": "62495342d102e365c781d2fe2af2bbffc59a41332f870640a0805ba631a14adb",
+    "court-informant.png": "76b640eeef07b01348ee06023151b575345051cc12096b783aaf00472f5e14a6",
+    "scatter-the-line.png": "7afff31e585a78d965c91d51757bcbfa3d7a0666aff8e536c72e97ac5ea575b2",
+    "pride-matriarch.png": "9b1af767b116566e62c9742143f17ab99bbc61468e628ce9045b33bd200f9a83",
+    "tideglass-engine.png": "55b13d4c4404e566f43498e6e752fd38d6cfe32c3d62ddb6e91db5d2141f656f",
+    "cinder-peaks.png": "8876fee0a173c8d75682b13a69984e51230cc26d44c85c14c0ace7c88f27f60f",
+    "ember-salamander.png": "0162568899ad8eda3897f3b44d415b128ad3b37f5bc19a40368a0153c1722fea",
+    "illusory-decoy.png": "35874afa05c984d302b1f2b9a28bee55ae4b5c0b7749f04c705bd0915ac03d6c",
+    "herd-mother.png": "d63e9ed1c5ce67f63bf294a694cd3973713e5fd73fb1f0bfd4af7830268eb323",
+    "ridge-wolves.png": "9b5149569c53585c048fc23748815346985c5df22f015e58d7f063e3b1943855",
+    "ashen-court-envoy.png": "eb08854cbe1502f0a8d0f777ef26e360034354e229a36c743c06e02307167897",
+    "enchanters-quench.png": "df0756dfa9b4f76bd457d944fc03d07ffd3bfac9b8899240c138fe70f088a437",
+    "brass-chorister.png": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+    "binding-glyph.png": "f372392c1b3fed789f5ec80572e0cb700708a2cdbcd89144171efeaa5210f77b",
+    "clan-outrider.png": "daed57ebaad12ecf7e9080ba40f551ff26a1a3b4cbd2424fde505be75a71fc35",
+    "sudden-canopy.png": "fb1b78086ec0fd12a691fec5d5cd239e18936057f26fb4d2bc4a4852f081011c",
+    "called-debt.png": "0e58bae9c41e6ebf249c184e26c0fe85febdcd099c51df6e9558525b1865ba76",
+    "hill-giant.png": "ed7f418e0df6ae1c5852393303b85383dd0bbdf700dda2677b69d6de08bb9288",
+    "goblin-cutter.png": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+    "barrow-priest.png": "67b8a96c64783023e9c456881f9eea55c72e3879ec6c50a58cc01dd10bbc5726",
+    "water-carrier.png": "7be0540e2d7bc538385800ea9fff9fe76483bbd30491c80e9fa0789858e1375c",
+    "folded-observatory.png": "e28a645ff9f9cd3ef0813194b29a18508b72bbd8b3bd6c7622be08c90179c19e",
+    "stoneward-colossus.png": "a13d60ea72a42ac6401d0a6c781cec580422835a9716a4e5739064c3fe989502",
+    "oath-shieldbearer.png": "3b8975c10c5b253705a7630a9fd48eab160a13e76c2ed964293a7a47b1da88cc",
+    "conclave-field-scholar.png": "157ea3d097eeec4f357364bbec39bc90f0648fffac0688b6370a096dd26064ff",
+    "oath-sentinel.png": "0f7d57ec7c076c64859d4a794184e969689fdef1f4159a6db6faec0375c07c2e",
+    "mercenary-captain.png": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
+    "brightlance.png": "bbeffeec4e56aaf6587a54131d6b24ef527a6035b2d9706dcfae88c07d1f1707",
+    "overgrown-ruin.png": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+    "sifting-the-shallows.png": "37fbb57b9ba2ff78796e77f270b82918f2a1856bea0d71802c6fa7ec947db00e",
+    "seedfall.png": "7cb0d8fd4027efd716cabfbfc055e9ff87fbab07134772611fface735cd85162",
+    "banked-flame-blade.png": "35a6b0c6281ad5ecc23c3827193de7f39cfd9ccb26dc20cb06209430ab4aa476",
+    "shifting-forest.png": "8630888042b83ec7d74f89213f0fe0952c32167a375884ea3b3da0415c0ca1c4",
+    "porcelain-visored-retainer.png": "985557326991058ede8c865519cd0931dc49d49a0263d0f08fc34bfef9895d70",
+    "sunlit-plains.png": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+    "cinderfall.png": "dffad2161ab482f8ccd33ff113e91d69534d0741279e3a6c602858f0b8996e30",
+    "pride-cub.png": "0d844df0c5d83a08b0c6e3a9ee0e71f81e3ebf8a63c21c2af742c7a719f7591b",
+    "sunmane-lancer.png": "c0aa40bae2b86f77e500965716cfdc85c5e6121e45149db44979c58be0869061",
+    "ashen-court-bailiff.png": "604ebccc1179664ed62a1295be49bbb7df978dc5d59872672248592b90c8162a",
+    "sepulchral-scale.png": "4dc32bef2df1e2857eb995f6e31b430968e05f2f4432b394720ceb9caf26a178",
+    "wayfinder-druid.png": "dcd309dfe988b2f50fa577b5d5ba06836f6f26f6a3e1efcfa3f5af12653ac12a",
+    "grave-soil.png": "3aad980620333e0ed8af110ed98b5fb70e6cdd8c58624a84bd5bf185332f8a85",
+    "barrow-tender.png": "9ad93d3a5843f00b1050dda1319cacfea3a94185a7bf8cfb643e517390ccc9c3",
+    "mossback-bear.png": "a387020c962084688f9d56c88e9f5b2313613ed54d5b4c8476e9ce39e8dd18aa",
+    "thornwarden-saboteur.png": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e",
+    "thornbrake.png": "7c5cd7ebee77e1be915698b9a175f82e06c1939ed1daaac05f0f8a1df54eebf8",
+    "lantern-quarter.png": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+    "saint-maren.png": "06d13a0ceda5e294c0c06bdd4de3cb4c7e1f6f1b93d4114624ea7208ba8363ac",
+    "cinder-clan-raiders.png": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+    "cobalt-rapier.png": "6c5b9b1b098133b350007d523ef7537da608ce7f7078191112bf7699e4601a04",
+    "cinderhook-axe.png": "acc2a767caf71a1fe11555f32778ea355448021b2f9f38128fbcd3a983cf26d2",
+    "conclave-examiner.png": "a546557d6d57ac9d767e0c609861979cb8bb77b2f9e49619d0720ee06442b3b2",
+    "conclave-courier.png": "ca7199bc72bb1c2276c802b1899610e81885022a90fc5ddabc5f688fe77e51a5",
+    "conclave-phantasm.png": "c90bb6990000e6c846d0754406399308242311cf3baa056064c3f2acd90f9cdd",
+    "sellsword.png": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+    "elder-herd-bull.png": "ee3715b0f616110bd2aa4609e01292bf5cc10c29c6b37a940ddcffa5ee55d493",
+    "tithe-keeper.png": "179026670fbaa3642769134228c48ddf2a3e46468fa3e55df58f10aa822005e1",
+    "withering-hex.png": "6494f04f3a70b80e59adcc4a7a7fbe6c76c1a4a7e1c16eea789cff4401b77372",
+    "prism-bracer.png": "4c9f234d67cf19002b82a996980fd973ea72d40b0d8db2500055b37de2218a5d",
+    "hour-of-collection.png": "511898db45a644983b8c177ea4a5fd6b0cdaf228933e53b455c1c1de93365e6e",
+    "stand-as-one.png": "c165aed252673fd5055cdd0420e6d2309e05e7c497a417fdd2ff5b1f89e6e6fc",
+    "great-owl.png": "bc62cc5229d5f2c23b8370b1902329a316daaaa54fd62d0f712432222e2a420a",
+    "orc-raider.png": "09b412a67b3a5b20bf1a07ee9eee7143d49b4d8a9a5dd039efff5d9c647fc8ea",
+    "pride-huntress.png": "d13b571c4f5257a98358627cb54de4a157f9727ad47fe4fab2de1f462afd50b7",
+    "gravebound-thrall.png": "cb91a69c99c8ec1ebaf6ee96b1fad5e82fe6043bce07d6beab99f7e42504b9d3",
+    "vashkar.png": "b6fd7fa59d267f4c7cf3cd3549d0b82f653ba36b02667bb97bd182caacb81dc5",
+    "grove-tender-set4.png": "df6b5bd9af7058f52d6a1dae40e9d37b2f7511cec838e93034f488612461e700",
+    "barrow-rats.png": "86fb041ff2ea3bf530866cf5393f899f0e460e304fcb357cc62f8c1d8828b947",
+    "firebolt.png": "49c1e0ecba2352548dacca1a911f295590c98b556aa7d7a8f93761fa8ef0c1b5",
+    "bone-harvester.png": "a248eddc5c103db0f8d2a57e7175115bb7ef3facfc0c6f3a54bc6b3254cd7571",
+    "walking-sapling.png": "ee220be0f314304233ff5c0eb259cbf9ade4295eede66707977e629c39866472",
+    "pride-warden.png": "073dcba056cd9f7ca08b98171b72dd45bf837051631851ecab118b3a995c084e",
+    "cloistered-scholar.png": "314f3007a630d3c40a93c45d986fe768b9ec66096d40463ad20e558999d193fd",
+    "gravecaller.png": "f33ff3ae1da1921f4d4a8c1567aa6608ea8d3843eb4ab5b50110ea997a072da7",
+    "reedbank-forager.png": "3349313d131ced5ed5021958950ea1a53a4a8851dcdd37ad8e4750810abe9e96",
+    "young-summoner.png": "075c5f39257dea834df5234ff28a76ee911bda65937daca241b61cc6ebc99e67",
+    "shield-of-dawn.png": "ae54b222d0f4857f0c958490d07a1c051b673c438fa3931f53a79f3503469aad",
+    "oath-road-squire.png": "1c735bb89c1c6f980a5e4ecdd5b198e00422483729c87d769b8a507fa582350d",
+    "shatter-the-chain.png": "585c98e9950f3097a3a929bceb73c9246292b6f8d457b228d6f4767bf70beb85",
+    "unmake-the-pattern.png": "67f53182127321b49c39c2dbf0e558e43861ffd450cc1fe7633f5aa931c6e48f",
+    "bronze-harness-alderkin.png": "1099cc386d9fa99e0a34a4955b1cd919c14c18bf2a7e64e8c5a3d3758c6b7dfc",
+    "oath-bell.png": "0d997a37b1b4f4a2bb4c976759a8504d0d127f05f40e5ba917a5319771a89428",
+    "elder-dragon.png": "497c6db747e59eb83474d7ce204f59148813840c918f51dcd92bcf1149a233ff",
+    "scarred-summoner.png": "2a005949de8e247abc6aa385a8f32a1f5662e734a0239b4c213a8e16a99a53da",
+    "ember-drake.png": "4602ef3e132c5634e43f821fc88c05fe79320ac35617bd75a1fb6e23b84b71e1",
+    "displacement.png": "527ddcd45b13c55860ed5986acfe217c23aa0f0054680a045c8dcea7cf07510f",
+    "woven-ward.png": "7f00734449f5a9a0b7e302c7dcaeb7f6f2c179a73270979b840ed353769059cc",
+    "temple-cleric.png": "7758243d0a2b08ebb9207e0f0c7db7202a06b269da7b8a0af75c7f9694a4460d",
+    "pilgrim-reliquary.png": "869e58ccfc2c92f2459418773748eebbc4b60a637e958a88bc3263dd40705e71",
+    "rime-drake.png": "ba0d8b4a700f59e1ef9bd0a3674f334e76660997f83c99bf91a829198a60d765",
+    "harmonic-wardwright.png": "f9ee73a4551826e0341876351457a299fda95995a4f6c4c667d9926737dfeadd",
+    "blessed-banner.png": "2785a39b80d6134412219f19c5baaf2c9fcf7160aff94deb8bdf81784a031cdf",
+    "threshold-adept.png": "173810d25527b7286fded46b23bba0e935bea2172f6ed2d777266d01dac7ef2a",
+    "web/return-to-loam.jpg": "31cff0c1750b9a8f36bb7c123a30b0c42a34969a73a9f0e8d35d1bf563f42110",
+    "web/sunthread-mantle.jpg": "e3121e54ca973ed3fdb6897dadcf126727e30eed0330d028434589a654480c11",
+    "web/street-conjurer.jpg": "857785c27ef152e5a47e02229dd2c669e2a6cac056a0ee80a4c165ddd1093946",
+    "web/overgrown-ruin-vignette.jpg": "648eaae8f2d6d7e884271a9b7ebc8efd233257b4689a2fadf6d23af69c43f894",
+    "web/warband-drum.jpg": "0d3643ed594970116ffb499e3fdbae1940eeb3562fce97f54486448bb85cf029",
+    "web/goblin-firepot.jpg": "cb039f27260cc257fca636024d90f9170b1269bf0de91638bbc820d36b786599",
+    "web/debt-collectors-blade.jpg": "a292dfc22a9d413c58db45f5519ed6f68ff3a37d81d794ab8b893b4ed80ba630",
+    "web/orrowen.jpg": "4a374d56f71ac0a163bf737bcc917df2598c81f6367cbbc7eeabe2e5941804c3",
+    "web/ash-sower.jpg": "effd0f46b84b80bd1022c3335e574af84c4548f45922bf793a2780700cdbd712",
+    "web/sanctuary-threshold.jpg": "67f01bb18dacd580b6fe0cd5462e187db0a53cc0a40d8fd2b7f0949102d8b646",
+    "web/indebted-squire.jpg": "e9a64fecacaba6192f750646f9cf4c7fef593944b579982394af4a4d80cdf215",
+    "web/grove-tender.jpg": "ee1e52983801dab5eb8d0399d9903f019b8993bf4d2dcd4ddac54df798727e8a",
+    "web/raise-the-dead.jpg": "0649f2aa2f72a2a43e95da1876843a9c379aea93f6f5936bf3dbbcce2656242a",
+    "web/ashen-barrows.jpg": "80b1601d3086252e3ba1effec50f369731be325075703ef90a7ad37f032e28a8",
+    "web/thornwarden-pathguard.jpg": "58f4f81c86d8f10ab0be85bcdb18b0075535d7b8c1419991f2c87c2d9049bfbc",
+    "web/brass-siege-walker.jpg": "b6dacdfd6fae67b921fb4ca8d8a225099781107ec9237607f90bbc223d829284",
+    "web/cinder-berserker.jpg": "78ef401fc180c3394dd6188509dc66107796083e100000a7a2e307a260182a22",
+    "web/barrow-colossus.jpg": "4b75690370c719a99c1c4133b50e1e393f217f0749b9bc42e5152f6714efbdef",
+    "web/cinder-cant-drummer.jpg": "da25b120fbb4652867623679a10227544884231bc1e4b907c9a276545eb84540",
+    "web/death-warrant.jpg": "a32d7c874a1ff96c96274d5619d4fba4f32e9910c6cf61997db00c88f2ba2fb5",
+    "web/siphon-vigor.jpg": "9cc14f8a57d1738b16ae094d1940052159638435c43edf9090bfdd09db7e65b1",
+    "web/ashen-court-noble.jpg": "89a35a729b5812c5ecc3816d74c0123e049ac5d9436673a136a661377bce4e4b",
+    "web/surveyors-lenses.jpg": "d51755e8b3a46dac574b7fc41b8509e02590ac7883896023200f1a148f630d1b",
+    "web/ilvane.jpg": "cda908f66a04e8b231245f33e6db179c51b01335e46cb529cde2274fb8c44fa4",
+    "web/the-still-flame.jpg": "36512e6eb5ac41107b8a428934ddf693cd5c0c89f8c1fe6bd409bb0f44ee9db7",
+    "web/veil-adept.jpg": "1c4d00522568ae0c8a78709f8327e5ebd59f28b168117122845549bb2351938b",
+    "web/militia-spearman.jpg": "874486631edc467cedcb5a3896648e8f971483afeab67d46e5cfb13bf35bd5da",
+    "web/camp-follower.jpg": "748957ff1ea19726a34a400d22b2c2f22702aa5366eca25d9d5219c4331cf059",
+    "web/roadwardens-shield.jpg": "2f63789c5c9105a283859c4010939623401a569b75b68bab8593b9aed5cb48e7",
+    "web/oath-knight.jpg": "40f78ff0dedba61b4ad78f1838bda0bf47621f913223efd290a0262b813a0524",
+    "web/light-without-an-answer.jpg": "84645b2d30b6f442e5caa835445011ed00dc31a2c30acfa3d260060e1aadf00b",
+    "web/giant-chieftain.jpg": "a46063ebe0152feb3c3a31dd0f9f2c93a283445c2c8d10e2660ea5465ae4e587",
+    "web/lantern-arcanist.jpg": "bd4f905bf8d80b16d49dd61c7a0b9d04a5d2299af7d66319bf508b4f227f9952",
+    "web/slateprowler-on-the-descent.jpg": "ab1e3d526967ea26f0d4208fc59a78587224ebce59b8da68b0d497280ac016ea",
+    "web/orc-warchief.jpg": "e0b47e5b77fb1a746b4443f055fa6853a88e3c3df7fccb9ec25e26253d1396a0",
+    "web/hunted.jpg": "475c9f96afe7e068a5767b0356ce1ed94be96366188925978325b07c51a4d1be",
+    "web/thornwarden-goblin-scout.jpg": "ab128a19c41f0bcd27fc860f7fc66c3c53502e04576897e1608bf2de8b2d948f",
+    "web/court-informant.jpg": "4b53404a8bb3b9eb8f50f63ef03a23fba1f18fb4c47f6ecffba297db37ce0abc",
+    "web/thicket-boar.jpg": "00f98b6a9d467999faef86fc07911d339cf168dd60139addb0b8e1e0c6ec7c54",
+    "web/mourning-veil.jpg": "ed75cbeb9389bce0bf592596144bef8dd116f36bf132a4f5a625fd948658f6da",
+    "web/seedheart-vessel.jpg": "d33d68497f12db9ea83bf88a4d53017429a36a9d6826d62280cd76dbd85277fb",
+    "web/tideglass-engine.jpg": "9f1baba8f5f451a5cf4edb3d83fbbce312d34e408e9ff64bdf59eaa574c9e5d0",
+    "web/pride-matriarch.jpg": "e281231e171d3af0ec8969a64fca4ffc82732bcf854171d41f19f00d563a4e61",
+    "web/scatter-the-line.jpg": "f25ee0c83cd974933657e131fc50f8249f4f84a18c657143bc777232621b7278",
+    "web/cinder-peaks.jpg": "57c2024dfe9ee1f7949346f213868bd4df5b18ff9c17ca9c703f4b41018fb9b3",
+    "web/illusory-decoy.jpg": "ceef428dcf5c986b072aa4ee879e5d0ed6dc91b4d767af05707f49f00a7f7fb5",
+    "web/ember-salamander.jpg": "f9cfa5daefb01bd2a1a9f7f392bc277a195c7dab7f6c91245493b97af2017e06",
+    "web/ridge-wolves.jpg": "50fb2e73b341e67a9db17fe431c129c87088925170e78b9c3bc2442f02150e91",
+    "web/enchanters-quench.jpg": "6839d9e70e8c19547bdc23bfa2162842619d2b0a68d8b551f83aa2f104b03b95",
+    "web/ashen-court-envoy.jpg": "53836daee69a3c221827e964ae516c6d822b102f711955959e104c542b1137c8",
+    "web/herd-mother.jpg": "686776e2cfcd801c578a655e88bcc266647eef0812f423b3ff7c575ebadb858f",
+    "web/clan-outrider.jpg": "59924fc7383cd6ac43a094a7b70cf370fd720bf889b2dd5cacf24c942e9df52c",
+    "web/binding-glyph.jpg": "84b7d90868499bf7fb2accb767d604f7090052af3ef9c7dc579b36d66cf9e917",
+    "web/brass-chorister.jpg": "da99ab623df3f60a1e0ecd33d0107d47e4811e0971f958090df00bab29199011",
+    "web/coalback-forager.jpg": "469861549d4d1f9a17bc6801cec36a35a695bbcd0701f6bc0e9b7a1bd37dcbed",
+    "web/raincup-at-first-light.jpg": "019e4a6afdc057989ff9a785291e4b83e4a69cf4527db93388d1783936f7525c",
+    "web/called-debt.jpg": "cf29ae9671f3383613b57253d490544633bae428845bf8cff778b69259503144",
+    "web/sudden-canopy.jpg": "edd31981ab249d3c40dbb28e0cccc6ffd86d85a411cbd9ecb47477ae322b9ea0",
+    "web/goblin-cutter.jpg": "934d9a677b3507f91620688db31928f459a1fed0d0812ec2ad369b61fa34c18c",
+    "web/hill-giant.jpg": "c4bba8a0f3b6baf16b1450096496bc9d3123d4b911eaa7962b40f9c10ec6e47a",
+    "web/barrow-priest.jpg": "94a42aa8958aaffcf5832426be35a6fd34fed9ce64db1bbfd5b94d5c6680d9ae",
+    "web/folded-observatory.jpg": "62329717b32f5e79f8f387b9c01b1f9c5237834354a8a926c93e2a80f87636f8",
+    "web/water-carrier.jpg": "c6cfed86f83643592adcfb3db088b7ea0384e0ef53b9df59c65d838be109bf2c",
+    "web/stoneward-colossus.jpg": "c65294a726c21138a6e14bea5f5497696da48b353e0f702e14b2128babfcfcc4",
+    "web/oath-shieldbearer.jpg": "bf5c7268cf4deee082bb7393d829db1461dcf4bf3c659408ea5922b1bc9a9ec0",
+    "web/mercenary-captain.jpg": "40c2e388ed416499830e9d1aef45092cf0416cbf0a580d1096e5b3bda687687e",
+    "web/oath-sentinel.jpg": "88277b44290487bad52285cbad46875020265001e8244bce5a6248b029d5b133",
+    "web/conclave-field-scholar.jpg": "bb710ac92ddeec18199ddcc700e2dcff9a55484dfd8bf632e0ff1bc7427fa998",
+    "web/overgrown-ruin.jpg": "6434025f78d120a36268c27de181e3037102361a494154275e3eeba12351385e",
+    "web/brightlance.jpg": "6ec4af27a46f0f3adb57a5b646bf1af740111fc34f2d4e978e92532b11e1727d",
+    "web/seedfall.jpg": "14bb747373ebb7ed30d0c1e9ecd225c5dfa9893dfd197d1098c4522c1152d557",
+    "web/sifting-the-shallows.jpg": "d8332706c7f71c1bb2851c854d40c83804222cf08771bdb0443c3a1e89e94b66",
+    "web/cinderfall.jpg": "d7ad2d6b4f608f934896ff4978e15ae390db094b8720be7ba5af61493c446612",
+    "web/sunlit-plains.jpg": "187e41356d8a28d39f61ce149659806dc5b254fca749409b9e6ed5b2df5d0c75",
+    "web/banked-flame-blade.jpg": "2f303bf1ed318a50342530e26c7994ce55b33caeb47e779bdd0a422552219fec",
+    "web/shifting-forest.jpg": "b423456e9a58d21e31fecfd641583b93f90cc34f846210a1aecfb3d2a7cc22c7",
+    "web/porcelain-visored-retainer.jpg": "0218f9f4fc9463770aae6788183cc8650e3c22ce566f77e45b8cf55f0fba0934",
+    "web/sunmane-lancer.jpg": "3acc7a3f99ecc8efa4746cdc54ccfb64f35df93e027a2c01e20ed60330b3f958",
+    "web/pride-cub.jpg": "a4c4b90c5a30aa166c8d9694a495d58209b1565c13aaa449b017f5002a401e24",
+    "web/across-the-silence.jpg": "9603e0a71e124165c3e4d4eadffcc0d91d36f56df9ee53b11a72e0d810f91c0d",
+    "web/sepulchral-scale.jpg": "0689ef78d29dd7eacb216ed2576f7dd508996a4b1c2e47bd2360e8a9d9aab84e",
+    "web/ashen-court-bailiff.jpg": "8b00ee97427b29009954c2027163ba0d08c1f403770aa3171b2f0b1289679fd7",
+    "web/wayfinder-druid.jpg": "ff17c578cced1c28f1861ea1e2475365c6398a24e77a7cd88da81a8339144ded",
+    "web/grave-soil.jpg": "7a2ec521c6829b19331807d2a2fc6434f711c1dd8becc2c1f1c8243d5d1600e6",
+    "web/mossback-bear.jpg": "c909d9f837d91faeb58323bafb69537acac9f7d9c34a8bcaf3431b2df2a043b2",
+    "web/barrow-tender.jpg": "13f5b412d0d896e4f69d86cec523f8960a5eb05d5576ecce20a260a59cd85f11",
+    "web/thornbrake.jpg": "55d261aec229a386c6fce121bd010387b0ba398e2f43e6c3027107a5d48eac44",
+    "web/thornwarden-saboteur.jpg": "9380f645ae15d42523386faf0f3002d8865c150c8869073fde7baa1f81e3cdf7",
+    "web/dawnsail-passage.jpg": "6cd6ba4169799e173caaa141c79d84de878f425a2b340d2de10b1c4d8687729a",
+    "web/alderkin-waterkeeper.jpg": "07d85197f35154ecf4743d7db49b5133e861c538b29070f30ac4fe8e87ee73b5",
+    "web/reedcrown-grazer.jpg": "8d831c6f80f8dbf6ffc6c3c6b7d9209949ea106439e7f44b1b2dab7815bb38a7",
+    "web/lantern-quarter.jpg": "89fe873a3a80d857cce4bfc6a325fc4aae988c3709c35c677d55af405d77659d",
+    "web/saint-maren.jpg": "41b1a0688b0820e43d8ac066f53ed652509f8a39ce6828626a45847ac32dea45",
+    "web/cinderhook-axe.jpg": "9950cbe4d23a6a12e2893b741c5bc6697ee0d512caa79cf584ef91d3946ff1bf",
+    "web/conclave-examiner.jpg": "6cafc526bdd01741b5b09f9e917c843434ed744ef91bc86fd38fc5ee15e32737",
+    "web/cobalt-rapier.jpg": "da5280ef3128e08ef11e01736352d53eca79db18a0316da9d8510f615df5d260",
+    "web/cinder-clan-raiders.jpg": "49928d03a78fe5d91b7dbcd5e7a441e5e219a8ab42c7fd2630728f2997953ac4",
+    "web/sellsword.jpg": "bcbe605c5304df8f9991e903fabf78231ca23026f3c1346d3e4f51c90e80bb54",
+    "web/conclave-phantasm.jpg": "063b85dde3717ab53c5c8a9a74feab4f14d009bec9250500333cf2383b65b8aa",
+    "web/conclave-courier.jpg": "afe77c8fe12dedd2d12c2d554d40b7d4a91c674a4f805a6bbe06c7dbc30fa71d",
+    "web/elder-herd-bull.jpg": "dfcb30ead95ae81f4b3eaf4c8221e6d31324633c50da47f760f02fb59500db65",
+    "web/tithe-keeper.jpg": "97d4b05d52bec70c60152b9ef32a6fd71aa23558403eb0ca50f6f8216afae870",
+    "web/stand-as-one.jpg": "c68c693ee6dfc2618ba4edc01ba19d770a2ae37272677e02915f8201f0b23f3d",
+    "web/hour-of-collection.jpg": "8ba177128664fe3dd4db2911d22f0f69a960c017b2b7261a7774a1b12f66c053",
+    "web/withering-hex.jpg": "1931f3a803da851c764f893971f3d588664116774daa06e37f6cbc260ee38259",
+    "web/prism-bracer.jpg": "91108b930e598fe0b4afd1be627311ee7e62b5129d50ddc029f7948fbcad13dd",
+    "web/great-owl.jpg": "bc0185b4e36ab0f9ab58a1dd361ecc34628060e12bdb36114966035dd10ce33a",
+    "web/orc-raider.jpg": "92a6042243ced4b87251fbf1ee184be272f620e65871d0d8e89a7f451a0d80ef",
+    "web/spindlejack-mending-the-sail.jpg": "e86e435e23e0099fa60c0df752d4655365ce769c47ab2534b560e0ab886b61d0",
+    "web/gravebound-thrall.jpg": "11e663261142b08eee0b7d9edf3a0090472a77079f38973a9ff98b500d0a6597",
+    "web/vashkar.jpg": "fbd236a9338d82c1d27474f489d20eb1a93e75e0cc76a97afea973208b9a56bb",
+    "web/pride-huntress.jpg": "1eb9a320d0f52c4465c870ac5fdb2a32417d3568a3b76c10b5cee1ac72bc56a3",
+    "web/alderkin-winter-shelter.jpg": "198dfb2b985faa378ea8420e91da83342f76e29c3c479910e50f78605de7ff85",
+    "web/barrow-rats.jpg": "dc0f0577e468e444f055a7effc51725086a98164ba5bf34c51bc99616b776151",
+    "web/grove-tender-set4.jpg": "4f8920a1a5e710dc9e2a285b2f2eb90771f42daae2a15d9f3810b9e68da32a21",
+    "web/dawnsails-over-the-harvest.jpg": "158132e913f252687242c6ce08552dbd356c0541f117278c4a88260bbf1f7839",
+    "web/bone-harvester.jpg": "544a023d04083ecfd08c020ae247503b4a390765d1b293212849582d754a7b70",
+    "web/firebolt.jpg": "b4456a0c95af16521d238f502228d5d7ca0d9c50b9842f1c2bf6b504a6fdc80b",
+    "web/pride-warden.jpg": "33c5ac50fcbe5279effbac1320bdb4c35b05d0cafe4cfc35c339346310879d22",
+    "web/walking-sapling.jpg": "690ef937c02b447a3ba7e3a2dc009093f725c234435e5333144d8d70cfe61703",
+    "web/cloistered-scholar.jpg": "d524ffdba98fdf2a29769e332c1d846712bd7b8e18c0f8a4019a2dee7cc80e0f",
+    "web/shield-of-dawn.jpg": "bb42a2affb9769cc01eca85752286f324975f95e944e2fc034503406c9ad83a9",
+    "web/reedbank-forager.jpg": "2b6294614366145d8843f894761674a1340540c2080d7f26c07b51c02ab39c44",
+    "web/young-summoner.jpg": "c3f90904a409f13c2997a165709db4bd6f85ff5ca9fed8eb4e306aef581fa82d",
+    "web/gravecaller.jpg": "d6ef631fe1680048566621de2acbcbb9890386dceaaea228122f19fa294ca24c",
+    "web/unmake-the-pattern.jpg": "45f46795ba145170622d4edbe5055c521df8b412ebc323991298e6d9f81cfa55",
+    "web/shatter-the-chain.jpg": "71fffaee0c905b05574cad061211ddf6c2a5a336d7c78026a220b5d8d8c288cc",
+    "web/oath-road-squire.jpg": "f4c9eb9baf7fcf23a40821dbba0d2bf559d9f03800d596fdff94c0a4928c309c",
+    "web/bronze-harness-alderkin.jpg": "dbe728baefd9b3b4ebb04c795e95d089111b165c34515dfa11c6c9663e84114a",
+    "web/oath-bell.jpg": "cf87f6461421893c5361902381faa63a34c13c7376dc4ab6f3de428586e21113",
+    "web/elder-dragon.jpg": "5ffb2b3ef63a42977e2082d1278211271370aed040f5a44c37e1c443d5951cfe",
+    "web/displacement.jpg": "d0ff534865d9a4381a2d2682081ffc0968619a0545d4a6d89d57f56a73239a2f",
+    "web/ember-drake.jpg": "80b8732883f4815b55e463e5a534e44bcc458729bd44df40044b2dc401c2e4b0",
+    "web/scarred-summoner.jpg": "597da48a14d49c4ff8673c6f517afde731361e670ffe54fa8a67b72c700169eb",
+    "web/harmonic-wardwright.jpg": "937e0842daf019de3725cd79ec32e6343c63a2b7bcf044b1c186961ed0a8eac6",
+    "web/pilgrim-reliquary.jpg": "e66992d3f23ce0e59048479db29609db25f6fa305005985869361ca834be6f8d",
+    "web/rime-drake.jpg": "375ef076fe7daafa5431541ee3b63997ddb0e46c709400fb812425c59c74d258",
+    "web/temple-cleric.jpg": "4923da37a80015f995a57bcc6d7ca5479ca5138201e30f887daa32c5de007286",
+    "web/woven-ward.jpg": "607e2f1cd9beaa9920818f1fdb64b91885391af8f0a1cc2cfbb31260f141f1e8",
+    "web/blessed-banner.jpg": "3f5fea5bf0ac5310e056eb6047700d503237d7d9276c401f185061355ad1ead0",
+    "web/threshold-adept.jpg": "de44e8b2114fd92de73fef6c3cb49fb33623e35f0bad125746a21c7dd743efa4"
+  },
+  "skill_validation": {
+    "frontmatter_preserved": true,
+    "feedback_section_and_record_link_checked": true,
+    "bundled_validator": "Unavailable because this Python environment lacks PyYAML; original frontmatter compared exactly and new section/reference checked directly."
+  }
+}

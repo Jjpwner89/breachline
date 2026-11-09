@@ -1,8 +1,30 @@
 # Breachline card art briefs: set 6
 
+<!-- CURRENT_ART_DIRECTION_BEGIN -->
+**Current direction — confirmed 2026-11-09:** Read the [current art direction](../../.claude/skills/art-direction/SKILL.md) and [accepted-reference guide](reference-library-2026-11-06/README.txt) before using any brief. The following defaults supersede older shared wording; specific approved character identities and explicit local feedback still govern.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+<!-- CURRENT_ART_DIRECTION_END -->
+
 28 illustrations for the new cards numbered 43 to 75 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md). The ten changes to existing cards (82 to 91) keep their current paintings.
 
-**Status, 2026-11-09:** written and waiting for the creator's review. Nothing has been generated yet.
+**Status, 2026-11-09:** 19 paintings revised following the creator's review, including an additional anatomy correction to Frost; nine paintings retained. Revised selections await review. [Open the Set 6 gallery](SET6_GALLERY.html). [Feedback and exact revision prompts](ART_REVISIONS_SET6_2026-11-09.json) · [Complete generation history](ART_PROMPTS_SET6.json) · [File checks](SET6_VALIDATION.json).
+
+## Latest review: selective detail
+
+Rich painting does not mean equal sharpness everywhere. Concentrate detail and edge contrast around the focal idea, then simplify supporting features and figures without lens blur. Faces should show varied observed proportions from the reference library, with matte painted skin rather than waxy cheeks or repeated beauty-model features. The creator said the revisions are generally performing much better, but specifically rejected the first Frost casting revision's anatomy; its next selected version rebuilds the whole stance. New revisions still await review.
 
 ## What these paintings are for
 
@@ -13,7 +35,7 @@ The batch leans into what the creator has loved most: inventive creatures, the o
 ## Instructions for the image pass
 
 1. Read [.claude/skills/art-direction/SKILL.md](../../.claude/skills/art-direction/SKILL.md), the [setting](../SETTING.md) and the [accepted-reference guide](reference-library-2026-11-06/README.txt). The creator's latest feedback takes precedence over these briefs.
-2. Use the prompts in [ART_PROMPTS_SET6.json](ART_PROMPTS_SET6.json), attaching the references listed for each subject. Paths are relative to this folder.
+2. Use the current subject briefs below with the shared direction and the listed references. Consult [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json) for the latest local corrections; [ART_PROMPTS_SET6.json](ART_PROMPTS_SET6.json) preserves generation history. Paths are relative to this folder.
 3. Save each painting as a 1536 × 1024 landscape PNG under the filename in its heading, with a matching 768 × 512 JPEG in web/.
 4. New creatures and constructs here (the Ember salamander, the Ridge wolves' breed and the journeyman's construct) are proposals. A painting doesn't make them canon until the creator approves it.
 5. Check every image for connected anatomy, coherent hands and consistent scale before showing it.
@@ -26,130 +48,134 @@ Create one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024,
 
 PURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.
 
-MEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes, creatures and surroundings share the same painted resolution. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Keep attractive, individual faces and lived character.
+MEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.
 
 COMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.
 
-MAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. No luminous threads or ribbons.
+MAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.
 
-CONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. Where none are attached, invent a fresh character rather than reusing a reference face or kit.
+CONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.
 
 SETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.
 ```
 
 ## Variety across the batch
 
-Light runs from frosty dawn and hard noon to sunset passes, lamp-lit nights and storm. Distance runs from close portraits (the sergeant, the glyphwright, the apprentice, the martyr) to wide landscapes (the outrider, the aqueduct wolves, the Thornbrake road, Grave soil). Facing directions are mixed. Lion folk appear only on the Pride lioness card. Watch for repeated dusk skies and repeated red cloth when generating.
+Light runs from frosty dawn and hard noon to sunset passes, lamp-lit nights and storm. Distance runs from close portraits (the sergeant, the glyphwright, the apprentice, the martyr) to wide landscapes (the outrider, the aqueduct wolves, the Thornbrake road, Grave soil). Facing directions are mixed. Lion folk appear only on the Pride lioness card. Vary weather, clothing and backgrounds across the batch.
 
 ## Vigil
 
 ### 53. Consecrated ground: consecrated-ground.png
 
-**Visual aim:** A pool of warm lamplight in a cold blue dusk, and the relief of tired people allowed to rest inside it.
+**Visual aim:** A worn sacred place rediscovered through warm light: one small traveller entering an old roadside sanctuary.
 
-At the end of a long day on an old imperial road, a ring of small clay oil lamps has been set into the grass around a worn milestone carved with a faded imperial sun. Inside the ring, four or five Sunmane Oath soldiers rest: one asleep against the milestone, one unlacing a boot, one sharing bread. The lamplight inside the circle is warmer and steadier than it has any right to be, and it stops softly at the ring's edge, where the meadow falls into blue evening. A cleric kneels at the circle's rim setting the last lamp. Wide, low view from just outside the ring, so the warm circle sits against a large calm sky with the first stars.
+**Latest creator direction:** Reject the current painting. Replace its busy, idealized group with a quieter, stronger composition.
 
-**Avoid in this painting:** No glowing dome, beam from the sky or visible wound being healed. Not a battlefield. Keep the soldiers ordinary and tired rather than heroic.
+A single small traveller lowers his pack beside a ruined roadside sanctuary at dusk. A clay lamp warms a weathered sun relief, old stone and a quiet patch of paving. The place and its light carry the painting; the traveller remains a subdued scale cue. Broad cool shapes and selected warm edges replace the rejected group scene.
+
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 54. Muster the levy: muster-the-levy.png
 
-**Visual aim:** A whole village answering a call at first light: spears coming down from the rafters, fathers and daughters, mud and resolve.
+**Visual aim:** Two distinctly ordinary villagers answer the levy; their faces and spear handoff lead while the village recedes.
 
-**References:** `militia-spearman.png` (the levy's plain kit and spear, not the pose)
+**Latest creator direction:** Use the face references properly for varied, ordinary faces; simplify competing characters and background detail.
 
-Early morning in a farming village square, frost on the thatch. A bell is still swinging in a squat stone tower. Ordinary people are arming: a young woman hands her father a spear taken down from the rafters of an open barn; a heavyset man pulls a padded jack over his head; a boy too young to go holds a dog back. Two levy spearmen, already armed, stand ready near the centre and are the clearest figures. Faces are individual, tired, a little afraid and determined. Keep the village one community with one local look. Medium-wide view across the square with breath fogging in cold gold sunlight.
+At a frosty village barn, an older long-faced farmer hands an ordinary young male levy a spear. Their distinct faces and the practical handoff are the focal accents. A few villagers and the boy with his dog remain loosely indicated in the background. Keep the village legible through broad shapes, with fewer equally sharp people, stitches and frost marks.
 
-**Avoid in this painting:** Not a parade or polished army. No banners filling the sky, no visible enemy. Avoid a demographic mix of every people; these are local villagers.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 55. Pride lioness: pride-lioness.png
 
-**Visual aim:** Tenderness between a lion-folk mother and her eager young one, high on sunlit rock with the plains below.
+**Visual aim:** The lioness's presence and tenderness lead the painting, with her child smaller and subordinate.
 
-**References:** `reference-library-2026-11-06/people/02-lion-folk.png` (lion-folk anatomy); `pride-cub.png` (the young lion-folk soldier and his white-and-gold armour)
+**Latest creator direction:** Make the mother lioness the central and dominant subject; her child remains secondary.
 
-On a broad sun-warmed rock above dry golden grassland, an adult lion-folk woman kneels to tighten the strap of a young lion-folk's oversized pauldron. The youngster, the Pride cub, fidgets with his spear and stares out at the plains, desperate to go. Her expression is patient and amused; his is all impatience. She wears plainer, well-maintained armour than his gleaming kit. Show both full-body in a medium view from slightly below, with a big clear sky and wind in the manes. Lion folk are tall and noble, never cartoonish; the cub is a young person, not a baby animal.
+The mature lioness sits centrally on a stone ledge, the largest and most resolved figure, leaning down to adjust her child's shoulder strap. Her smaller child stands partly turned away at the lower right. Her face, working hands and tender attention lead; the child's armor and open plains remain secondary.
 
-**Avoid in this painting:** No battle, no army behind them, no roaring. Avoid cute mascot faces and huge eyes.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 67. Oath outrider: oath-outrider.png
 
-**Visual aim:** Speed across open country: a rider and horse at full gallop along a hillside, with cloud shadows racing beside them.
+**Visual aim:** A male outrider in a lively gallop, with matte painted skin and selectively described landscape.
 
-**References:** `reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png` (Sunmane Oath road kit as a starting point, not this character's face)
+**Latest creator direction:** Make the rider a man and reduce waxy rendering.
 
-A Sunmane Oath outrider gallops along the flank of a long green hill on a bright, windy spring morning, crossing the frame from right to LEFT. Horse and rider are fully in frame, the horse's legs in a believable gallop, the rider low and light in the saddle with a short lance held upright and a small sky-blue pennant snapping. Huge cloud shadows race across the hills behind. The rider is a lean, weathered woman in a mail shirt with a plain open helm. Wide view with plenty of sky; the joy is in the speed and the open land.
+A male rider in practical Vigil kit gallops left across open green hills on the existing horse. Give him an individual long face, substantial nose, short hair and stubble. Preserve the riding action, saddle, reins and spear-banner. Reduce waxy skin and fine surface noise, with quieter landscape passages.
 
-**Avoid in this painting:** No charge into enemies or visible battle line. Avoid a red cape. Do not make the horse a giant warhorse.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 68. Shieldline sergeant: shieldline-sergeant.png
 
-**Visual aim:** A wry, weathered character portrait: an old sergeant taking a breath behind the shield he will not move.
+**Visual aim:** A characterful veteran whose uneven teeth and weathered face are suggested with economical paint.
 
-**References:** `reference-library-2026-11-06/equipment/09-vigil-equipment.png` (Vigil shield and armour construction)
+**Latest creator direction:** Less waxy and lower definition; preserve the characterful battered face and bad teeth.
 
-A close, waist-up portrait of a grizzled Sunmane Oath sergeant in a lull between fights. He leans one forearm on the rim of a tall, battered oval shield whose foot is driven into the mud, and drinks from a leather waterskin. Grey stubble, a broken nose, a missing tooth and a wry look at someone off-frame LEFT, as if he has just heard a bad joke. Behind him, loosely painted, a line of younger soldiers sits on their shields. Soft overcast light, muddy greens and the dull gold of the sun painted on his shield.
+Preserve the grizzled sergeant's battered face, amused expression, missing and uneven teeth, waterskin, shield and resting pose. Repaint skin, beard and hands with broader matte colour planes. Keep a few accents around his eyes and tooth gaps; simplify armor scratches and background soldiers without erasing their presence.
 
-**Avoid in this painting:** No attack, no arrows bouncing off, no rousing speech. Keep him plain and likeable, not heroic or glamorous.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 71. Vigil-keeper: vigil-keeper.png
 
-**Visual aim:** Quiet love for the dead: a grey-haired woman's hand resting on a shroud in the gold of a single lamp.
+**Visual aim:** Retain the intimate vigil and character, with matte skin and softer painted transitions.
 
-**References:** `reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png` (continuity for the keeper, her face, shawl and blue dress, and the feel of the rite)
+**Latest creator direction:** Generally liked; make slightly less waxy.
 
-**Keep:** The grey-haired woman from the Rite of stillness: her face, the heavy fringed cream shawl, the blue dress and the small clay oil lamp.
+Retain the old woman's standing vigil beside the covered dead, her hand on the shroud, blue dress, shawl, lamp and sombre arches. Make skin and hair less waxy and overdescribed, using matte planes and selective edges. Preserve her age, expression, anatomy and the gentle warm-to-cool lighting.
 
-In a low stone chapel at night, three shrouded dead lie on plain wooden biers. The keeper moves along the row, and one weathered hand rests on the nearest shroud while she bows her head. A single clay lamp at her feet gives the only light, warm on her face, the shawl and the linen, and lost in the blue dark of the vaults. A faint dust of ash drifts down from the shroud under her hand, as in the rite. Medium view from low and slightly to her side. Calm, grieving and tender.
-
-**Avoid in this painting:** No visible spirits, ghost light or gods answering. No gore or wounds. Keep the magic as small as it was in the reference.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 73. Still Flame acolyte: still-flame-acolyte.png
 
-**Visual aim:** A young acolyte's earnest care, carrying a small fire through a crowded place without spilling it.
+**Visual aim:** Keep the existing acolyte scene; simplify facial planes, eyes and skin into paint.
 
-**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/06-still-flame-censer-healer.png` (the Still Flame censer, satchel and healer's clothing, for a new younger character)
+**Latest creator direction:** Lower the definition of his face.
 
-Dusk in a busy field hospital set up in an old barn. A teenage Still Flame acolyte in a too-long cream overcoat carries a small brass censer in both hands at chest height, walking carefully between pallets toward the camera and a little to the RIGHT. Its gentle flame lights his intent young face from below. Around him, loosely painted, a healer kneels by a patient and lanterns hang from beams. His concentration and the small light moving through the dim room make the picture.
+Retain the boy's walk through the hospital barn, censer, hands, clothing and scene. Reduce only the facial definition and hair transition: simply painted eyes, nose and mouth, broad warm/cool planes and quieter edges near the ear. Preserve his identity, attentive downward gaze and age.
 
-**Avoid in this painting:** No glowing bandages, beams or miracle healing on screen. Avoid a saintly glow around him. He is ordinary-looking, not glamorous.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ## Gnosis
 
 ### 47. Frost: frost.png
 
-**Visual aim:** Scholarly magic as beautiful geometry: frost racing across a city canal in precise crystalline ferns.
+**Visual aim:** A mage makes her own way across the canal, warm lantern in her left hand and frost spreading from her right.
 
-**References:** `reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png` (the feel of Ambrel's architecture, not the composition)
+**Latest creator direction:** One right arm casting, lantern in the left hand; step onto frozen water to get around. The previous pose reads as two right arms and is rejected.
 
-Seen from a stone bridge high above, a still canal in a Gnosis city at early morning. A Lantern Conclave mage kneels at the water steps with one bare hand flat on the surface. From that point, frost spreads across the canal in a bloom of perfectly regular, branching crystalline patterns, like a diagram drawn by nature, catching pale pink light. Two moored boats are already locked in white. The city's tall facades and a glazed arcade are only implied at the edges in cool teal shadow. The pattern itself is the subject.
+The dark-haired female Gnosis mage uses Frost to cross a winter canal. A three-quarter front view makes the anatomy clear: her anatomical right arm, at image-left, casts toward a newly freezing path; her anatomical left arm, at image-right, hangs naturally with the amber lantern held by its handle. Her leading right boot rests on a solid ice shelf while her left foot remains on a low stone step. Two connected arms and two coherent legs, a clear boot-to-ice contact and ordinary human scale take priority. Retain the blue cloak, warm lantern against cold water, moored boat and quietly painted arcade. This replaces the rejected side-on stance and duplicated-right-arm presentation.
 
-**Avoid in this painting:** No ice blast, beam or frozen people. No glowing runes or threads. Do not let the city become a detailed panorama.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 48. Glyphwright: glyphwright.png
 
-**Visual aim:** A face lit from below by a single fading mark of light sinking into old paving stones.
+**Visual aim:** An appealing, individual adult woman at an ordinary human-scale stone work surface; a small glyph lights her attention.
 
-Night in a narrow lane of a Gnosis city. A heavyset, middle-aged Lantern Conclave woman with cropped grey hair and ink-stained fingers crouches on the cobbles. Her fingertip has just finished tracing a small, simple sigil of soft amber light into a paving stone, and it is already sinking into the stone, fading. The glow lights her face, her satisfied half-smile and the underside of her coat from below. The lane recedes into blue-black with one distant lamp. A three-quarter view from low and slightly to her right, close enough to feel her craft.
+**Latest creator direction:** Replace the disliked face and correct the giant-in-a-street scale.
 
-**Avoid in this painting:** No trapped enemy, no ring of runes, no scrolls or books of spells. Keep the mark small and the painting intimate.
+An appealing, individual adult woman stands at a waist-high stone workbench in a covered courtyard, drawing a small amber glyph onto a slate with one fingertip. A normal doorway and familiar masonry establish human scale. Her short dark hair, natural nose, slight facial asymmetry and absorbed gaze replace the rejected face. Resolve eye, finger and glyph selectively; keep wall, lower clothing and other bench objects quieter.
+
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 60. Lantern apprentice: lantern-apprentice.png
 
-**Visual aim:** Pure delight: a young apprentice catching his first spark between cupped hands in a dark library.
+**Visual aim:** A young boy absorbed in a tiny light, with an ordinary unidealized face and the retained library atmosphere.
 
-Late at night in a tall Lantern Conclave library, a gangly boy of about fourteen in a hand-me-down scholar's coat sits on a rolling ladder. Between his cupped hands a tiny, crackling spark of blue-white light dances, and he is grinning at it in disbelief. Its light catches his face, his fingers and the gilt spines of the nearest books; everything else is warm brown dark with a high window of deep blue. A medium view from slightly below, facing LEFT. Wonder and mischief, not mastery.
+**Latest creator direction:** Keep the liked scene and detail hierarchy; make a younger, recognizably male, normal face with less robust jaw and less waxy cheeks.
 
-**Avoid in this painting:** No explosion, no fire in the library, no stern master. Avoid an anime or animated-film face. The spark stays small.
+Preserve the liked library, ladder seat, tiny blue light, hands, clothing and detail hierarchy. Give the apprentice a younger, recognizably male face with ordinary proportions, a natural substantial nose, modest jaw and immature chin. Keep his delight, but simplify the smile and matte cheek planes rather than adding perfect teeth or skin microdetail.
+
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 75. Artificer's journeyman: artificers-journeyman.png
 
-**Visual aim:** Companionship between a young maker and the little machine she built, walking to work through a morning city.
+**Visual aim:** An ordinary male artificer engaged naturally with the small brass walking companion.
 
-**References:** `reference-library-2026-11-06/equipment/10-gnosis-equipment.png` (Artificer clothing and tools); `concepts/spindlejack-mending-the-sail.png` (the charm of a small useful construct, not its anatomy)
+**Latest creator direction:** Change the disliked pose and make the artificer a man; reduce repeated female casting.
 
-Early morning on a steep stepped street in a Gnosis city. A young Artificer journeyman, soot on her cheek and a heavy tool roll over her shoulder, walks down the steps toward the camera. Beside her trots a small construct she plainly built herself: about knee-high, three jointed brass legs, a round riveted body like a lantern housing and one small hooked arm carrying her lunch tin. She is half-turned, saying something to it. Low gold light down the street, pale blue shadows, warm brass. A proposed new construct design, with its own anatomy.
+An ordinary young male artificer sits on a low stone bench at his workshop doorway, both boots grounded and tool satchel beside him. He receives a lunch pail from the familiar knee-high brass companion. Retain the construct's three articulated legs, small arm and blue sensor. The shared handoff and his mildly amused face lead against a quiet wall and a glimpse of Ambrel.
 
-**Avoid in this painting:** Don't reproduce the Spindlejack's design. No goggles. Avoid a cute mascot face on the construct; give it a sensor, not eyes.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ## Dominion
 
@@ -195,35 +221,35 @@ In a muddy village square on a grey morning, an Ashen Court tithe-keeper sits at
 
 ### 63. Court assassin: court-assassin.png
 
-**Visual aim:** Divided light: a figure in cold moonlight on a roof ledge above a warm, glittering masked party.
+**Visual aim:** Retain the liked assassin scene; place a quiet threat under her relaxed right hand.
 
-Night above the inner courtyard of an Ashen Court palace. A lean assassin in dark close-fitting clothes crouches on a high stone ledge, half in moonlight, looking DOWN and to the right at a masked party in the lantern-lit courtyard below. A thin blade lies reversed along her forearm. The party is warm gold, violet silk and small loosely painted dancers; she is cold blue-grey and still. High viewpoint behind and above her shoulder so we share her view.
+**Latest creator direction:** Remove the blade on her anatomical left wrist; a blade rests lightly under her anatomical right hand, no tight grip.
 
-**Avoid in this painting:** No kill, victim or blood. Do not repeat the Court informant's curtain pose. Avoid a sexualised pose.
+Preserve the liked crouching woman and moonlit view over the warm court. Remove the blade from her left wrist, the forearm crossing her raised knee. A single slender dagger lies flat on the stone ledge under her relaxed right hand, its blade extending to screen-right. Keep the loose fingers, exact pose and all other scene elements.
+
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ## Fervor
 
 ### 43. Scorch: scorch.png
 
-**Visual aim:** Instinctive fire answering a hand: flames racing outward through dry grass from a palm pressed to the ground.
+**Visual aim:** A compact violent fireball hits an old timber barricade; the impact and firelight carry the painting.
 
-**References:** `reference-library-2026-11-06/people/04-orcs.png` (orc anatomy)
+**Latest creator direction:** Replace the female orc composition with a fireball hitting something.
 
-A camera low in dry summer grass. An orc woman of the Warhorde has dropped to one knee and slammed her open palm onto the ground, and a ring of fire is racing outward from her hand through the grass, bright orange at its leading edge and black behind. The nearest flames fill the foreground. Her face, lit from below, is fierce and exhilarated. Late afternoon, a hot hazy sky and drifting smoke. Coarse, believable orc anatomy: heavy brow, broad nose, tusks.
+A compact fireball travels diagonally from the upper left into a stout timber barricade in an old ruined fort. Show the contact, matching broken planks, a few flying splinters and fire curling around an intact post. Fierce orange light reflects on wet cobbles against quiet charcoal-blue stone. The impact carries the painting; no foreground caster or orc portrait.
 
-**Avoid in this painting:** No enemy on fire, no beam or fireball. Do not repeat Cinderfall's falling fire. Not an attractive human with tusks.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 44. Stormstrike: stormstrike.png
 
-**Visual aim:** Nerve and violet lightning: an orc dragging a storm down onto an iron hook-spear on an exposed ridge.
+**Visual aim:** A new, ordinary male human storm caster with a strong silhouette and a clean lightning action.
 
-**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/08-stormhook-channeler.png` (continuity for this orc channeler, her face, kit and hook-spear)
+**Latest creator direction:** Replace the disliked character.
 
-**Keep:** Her braided grey hair, coarse orc face and tusks, the dented iron breastplate over a ragged ochre shirt, the red trousers and sash, and the rough iron hook-spear.
+A new ordinary middle-aged male human storm caster braces on a wet rocky slope and drives a plain iron-hook staff to the left. A branching white-blue lightning stroke leaves the hook toward an off-screen target. Give him a weathered individual face, tied black hair and practical charcoal wool with a rust-red sash. Natural effort, coherent grips and matte paint replace the rejected glossy orc presentation.
 
-On a bare ridge under a black-violet storm, the channeler braces her feet wide and raises the hook-spear. A fork of violet-white lightning has come down onto its hook and is arcing off it, out of the frame to the LEFT. Her braid and sash whip in the wind. Her face shows nerve and a fierce grin. Full figure, seen from slightly below, with the storm filling the sky. Hard violet light flashing across rust, iron and wet rock.
-
-**Avoid in this painting:** No target or explosion in frame. Do not aim the strike at the viewer. Keep her anatomy coarse and orcish.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 46. Ember salamander: ember-salamander.png
 
@@ -237,13 +263,13 @@ Inside a collapsed charcoal kiln on a smoky mountainside, a salamander about the
 
 ### 56. Goblin rabble-rouser: goblin-rabble-rouser.png
 
-**Visual aim:** Joyful, rowdy humour: a tiny goblin orator on a toppled imperial statue, whipping a crowd into a roar.
+**Visual aim:** A small band of distinct male goblins rallies on the fallen imperial head, with one clear leader.
 
-**References:** `reference-library-2026-11-06/people/03-goblins.png` (goblin anatomy); `goblin-cutter.png` (the small goblin cutter the creator likes)
+**Latest creator direction:** Only male goblins in this scene; fewer goblins; preserve the enjoyable crazy rally idea.
 
-At midday among the ruins of an old imperial forum, a scrawny goblin in a battered too-big helmet stands on the fallen head of a giant marble emperor's statue, one fist thrown high, mouth wide open, mid-shout. Below him a crowd of goblins roars back, loosely painted, waving knives and pots. The closest, a small goblin cutter, is already scrambling up to join him. Bright hot sunlight, white marble, dusty ochre and rag-red. Seen from the crowd's level looking up.
+Exactly four distinct male goblins rally around the fallen stone emperor's head. The pot-helmeted leader stands highest with a red rag banner and raised fist. Three smaller supporters wield a little knife, hatchet and cooking pot. Keep the thrilled, defiant energy and small goblin scale; simplify supporting faces and the ruined architecture so the leader remains clear.
 
-**Avoid in this painting:** No enemies or violence. Keep the faces expressive but painted, not cartoon. The humour comes from scale and attitude.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 61. Cinder-cant drummer: cinder-cant-drummer.png
 
@@ -259,31 +285,33 @@ In a high mountain pass at sunset, the drummer marches at the head of a Cinder C
 
 ### 64. Cinder skirmisher: cinder-skirmisher.png
 
-**Visual aim:** Movement out of smoke: a lean skirmisher sliding down scree through drifting smoke.
+**Visual aim:** A male skirmisher slides down scree; practical body and ordinary face, with coherent limbs.
 
-**References:** `reference-library-2026-11-06/equipment/14-raiders-and-berserker.png` (Fervor raider kit as a starting point)
+**Latest creator direction:** Make the skirmisher a man.
 
-A young Cinder Clan woman skids down a steep scree slope through drifting smoke from burning heather, moving LEFT. She carries three javelins in one hand and steadies herself on the rocks with the other. Her short dark hair is tied back with a strip of red cloth, her face is soot-streaked and intent, and her kit is light leather and wool. Medium-wide, full figure, with the smoke's soft grey shapes half hiding and half revealing her. Ember-orange glow from below, soot and slate.
+Recast the skirmisher as an ordinary man around thirty with short dark hair, stubble, a broad irregular nose and a determined gaze. Preserve the sliding scree pose, two connected legs, three javelins, hand braced on the rock, smoke and firelight. Matte skin and selective definition should fit the existing painting without making him a glamorous hero.
 
-**Avoid in this painting:** No victim and no attack at the viewer. Avoid a glamour pose. Practical clothing.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 65. Orc pack-hunter: orc-pack-hunter.png
 
-**Visual aim:** Power and partnership: an orc running through tall grass with two great hunting hounds.
+**Visual aim:** Retain the liked running orc, hounds and bright steppe; change only the weapon and appropriate hand contact.
 
-**References:** `reference-library-2026-11-06/people/04-orcs.png` (orc anatomy); `reference-library-2026-11-06/character-kits-2026-11-08/02-orc-saddle-raider.png` (Warhorde kit as a starting point, not this character)
+**Latest creator direction:** Replace weapon with an axe in his anatomical right hand. Keep the setting as it is; the darker-setting suggestion was withdrawn.
 
-Hard bright noon on a yellow steppe. A broad orc hunter runs through waist-high grass with a short spear, flanked by two huge rough-coated hunting hounds, one on each side, all three moving to the RIGHT in a loose, purposeful line. Grass seed flies around them. The orc's face shows the focus of the chase, with a heavy brow and irregular tusks. Wide view with big open sky, so the three silhouettes read clearly.
+Preserve the running orc, two hounds, bright yellow steppe and noon sky. Remove the spear from the forward left hand. Put a practical iron axe in his right hand, the near hand drawn back at screen-left, with a coherent grip and the head clear of the hound. The request for a darker setting was withdrawn.
 
-**Avoid in this painting:** No prey being caught. Avoid an American-West wildlife-painting feel: keep it in a fantasy steppe with the hounds' rough fantastical build. Not an attractive human with tusks.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ### 70. Cinder martyr: cinder-martyr.png
 
-**Visual aim:** A solemn, firelit rite of courage: an older clanswoman painting ash onto a young volunteer's face.
+**Visual aim:** Preserve the solemn rite while giving the young man an ordinary, simply painted face.
 
-Night before a battle, beside a fire in a Cinder Clan camp. A young man with a shaved head sits on a stone, bare-armed, his eyes closed. Faint ember light glows in thin cracks under the skin of his forearms and collarbone. An older clanswoman with a grey braid paints a line of ash across his brow with her thumb. Others, loosely painted, watch in silence. Close medium view, warm firelight against a deep blue night. Passionate, grave and proud.
+**Latest creator direction:** Correct the disliked face toward a more natural individual.
 
-**Avoid in this painting:** No explosion, death or burning body. The fire lives quietly in him. Avoid melodrama.
+Retain the solemn firelit rite, seated shaved-headed young man, elder's thumb on his brow and quiet ember cracks. Make his face a natural young individual with a substantial nose, less sculpted cheeks, modest chin and relaxed lips. Preserve the head position and contact at the ash mark; use matte paint and selective detail.
+
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
 
 ## Genesis
 
@@ -315,10 +343,10 @@ Three large pale-grey wolves of an unfamiliar breed lope single-file along the t
 
 ### 69. Ironbark sentinel: ironbark-sentinel.png
 
-**Visual aim:** Immense, rooted calm: an ancient alderkin standing waist-deep in a river as the current parts around it.
+**Visual aim:** Keep the alderkin and river composition; render water with flowing translucent planes and sparse foam.
 
-**References:** `reference-library-2026-11-06/people/06-alderkin.png` (alderkin anatomy); `bronze-harness-alderkin.png` (how the latest alderkin card is painted, not its harness or pose)
+**Latest creator direction:** Change the disliked water texture.
 
-An ancient alderkin, about four metres tall, stands motionless waist-deep in a fast, clear river, facing upstream. Its bark is iron-grey and deeply ridged, streaked with rust-coloured lichen, and its crown of dark leaves is home to a few small nesting birds. The water piles and parts around its trunk in white folds. Its knot-like eyes are half-shut, attending to nothing human. Seen from the riverbank in a medium-wide view, cool morning light through the trees, and a sparkle on the water.
+Keep the alderkin, birds, forest, rocks and framing. Repaint the river as broad translucent grey-green and blue current planes with broken woodland reflections. A modest bow wave divides around the trunk and trails into eddies; sparse thin foam appears only near obstructions. Avoid the original uniformly scratchy white ridges and sculpted foam.
 
-**Avoid in this painting:** Not guarding anyone and not helping humans. No armour. Avoid a carved human face or smooth animated wood.
+**Revision references and exact prompt:** see this filename in [ART_REVISIONS_SET6_2026-11-09.json](ART_REVISIONS_SET6_2026-11-09.json). Preserve unaffected elements in future local edits; current art direction overrides historical prompts.
