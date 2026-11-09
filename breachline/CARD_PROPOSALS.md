@@ -135,7 +135,7 @@ Choices made in discussion:
 
 ## Tile effects
 
-Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen after the focus audit in `CARD_AUDIT.md`. The rules for tile effects are in `DESIGN_NOTES.md`. Numbers 45 and 50 were cut in discussion, so they're skipped here. No art briefs have been written yet.
+Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen after the focus audit in `CARD_AUDIT.md`. The rules for tile effects are in `DESIGN_NOTES.md`. Numbers 45 and 50 were cut in discussion, so they're skipped here. Art briefs are in `art/ART_BRIEFS_SET6.md`.
 
 | # | Card | Colour | Type | Cost | Wants | Stats | Rules | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -158,7 +158,7 @@ Choices made in discussion:
 
 ## Summoning, added cards, new keywords and death triggers
 
-Added on 2026-11-09, to give the other new mechanics in `DESIGN_NOTES.md` their first cards. Summoned units and added cards are conjured, and they're copies of existing cheap cards wherever possible, so players already know them and they already have art. New conjured cards (Spark, War-chant and Cursed coin) are described in the rules. No art briefs have been written yet.
+Added on 2026-11-09, to give the other new mechanics in `DESIGN_NOTES.md` their first cards. Summoned units and added cards are conjured, and they're copies of existing cheap cards wherever possible, so players already know them and they already have art. New conjured cards (Spark, War-chant and Cursed coin) are described in the rules. Art briefs are in `art/ART_BRIEFS_SET6.md`.
 
 | # | Card | Faction | Type | Cost | Wants | Stats | Rules | Mechanic |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -240,4 +240,4 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 1. **Velunn names:** Ilvane and Orrowen are placeholders, in the style of Saint Maren and Vashkar. Rename or cut them freely. None of the new names has been checked against existing games or books.
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
 3. **Muster the levy:** with Loyal on Militia spearman, it summons two 3 / 3s for 3 mana. Raise it to 4?
-4. **Art and flavour:** cards 43 onward have no art briefs or flavour lines yet.
+4. **Art and flavour:** cards 43 to 75 have art briefs waiting for review in `art/ART_BRIEFS_SET6.md`. None of the new cards has flavour text yet.
