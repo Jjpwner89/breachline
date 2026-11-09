@@ -1,5 +1,23 @@
 # Breachline card art briefs: set 5
 
+<!-- CURRENT_ART_DIRECTION_BEGIN -->
+**Current direction — confirmed 2026-11-09:** Read the [current art direction](../../.claude/skills/art-direction/SKILL.md) and [accepted-reference guide](reference-library-2026-11-06/README.txt) before using any brief. The following defaults supersede older shared wording; specific approved character identities and explicit local feedback still govern.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+<!-- CURRENT_ART_DIRECTION_END -->
+
 12 illustrations for cards 31–42 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md), all final and in the game.
 
 **Revision 2 — 2026-11-09. All twelve paintings generated; creator requested the set be committed after three final revisions.** Current files include the angry outdoor Brightlance, more-veiled adept, larger sword composition and creator-selected final full-mask porcelain retainer. Card rules are unchanged.
@@ -31,7 +49,7 @@ Create one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024,
 
 PURPOSE: make a beautiful, distinctive image that fits the creator's taste and this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.
 
-MEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes, creatures and surroundings share the same painted resolution. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Keep attractive, individual faces and lived character.
+MEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.
 
 COMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.
 

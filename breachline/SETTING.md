@@ -42,6 +42,10 @@ Keep the setting large and varied. Great cities can coexist with smaller settlem
 
 The present day is high fantasy. The Bronze Age is only a historical comparison, not the look of the world.
 
+Visual production follows the [current art direction](../.claude/skills/art-direction/SKILL.md) and [accepted reference guidance](art/reference-library-2026-11-06/README.txt). The approved round-07 work supports ordinary varied faces, material-specific reflection and deliberately varied painted detail. Constructs can use abstract functional anatomy; selected Asian armor details can blend with established kit, and modest curved eaves are a valid architectural option. These are visual possibilities, not mandatory styles or new universal world rules.
+
+**Adult tone (creator direction, 2026-11-09):** The setting has room for more visible adult attraction, flirtation, sensual dress and in-universe glamour or pinup art. The creator wants selected adult characters with fuller busts and visible cleavage as part of a broader range of bodies and presentation. The first variants are collected in art/nsfw; their individual designs and portrait situations remain exploratory until selected.
+
 ## Magic
 
 The source of magic is disputed:
@@ -146,6 +150,14 @@ A small observer in a grand landscape makes its scale and presence meaningful. D
 **Proposed development:** a few dawnsails pass over cultivated valleys at blue hour. This tests migration and coexistence with ordinary farming life; it does not establish a fixed route or map. The creator likes the people pausing in awe: such a sight is exceptional, not routine. For anatomy, the FIRST coastal-passage painting remains the reference; the harvest painting drifts too far from that original design.
 
 Art: [Coastal passage](art/concepts/dawnsail-passage.png), [Over the harvest](art/concepts/dawnsails-over-the-harvest.png).
+
+### Included animal: Roof glider
+
+**Included concept; strongly liked, 2026-11-09.** A small urban gliding animal, roughly crow-sized, with charcoal fur, a copper ruff, a rounded muzzle, a long balancing tail and four grasping limbs. Flexible membranes connect forelimbs, flanks and hind ankles; these are not an extra pair of wings. The accepted study shows one on roof tiles with a fig, placing invented wildlife at an ordinary city scale.
+
+The creator called the design perfect and explicitly requested its inclusion. Exact taxonomy, distribution, temperament and ecological claims beyond the pictured concept remain open.
+
+Art: [Roof glider](art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png).
 
 ### Proposed animal: Raincup
 

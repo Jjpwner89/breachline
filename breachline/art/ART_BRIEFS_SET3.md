@@ -1,5 +1,23 @@
 # Breachline card art briefs: set 3
 
+<!-- CURRENT_ART_DIRECTION_BEGIN -->
+**Current direction — confirmed 2026-11-09:** Read the [current art direction](../../.claude/skills/art-direction/SKILL.md) and [accepted-reference guide](reference-library-2026-11-06/README.txt) before using any brief. The following defaults supersede older shared wording; specific approved character identities and explicit local feedback still govern.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+<!-- CURRENT_ART_DIRECTION_END -->
+
 **Final art — 6 November 2026:** 32 illustrations are ready for new cards, including eight revised images. Artificer Salvager, Borrowed Moment and all superseded versions have been deleted from this art folder. PNG originals and game-sized JPEGs are the final assets; names and mechanics can be developed in the next session.
 
 32 active illustrations from an original batch of 34 for future equipment, relic, ordinary unit and spell cards. Working names, types and gameplay roles are proposals for the creator and Claude to develop; no mechanics or cards are implemented by these assets.

@@ -1,12 +1,30 @@
 # Breachline card art briefs: set 4
 
+<!-- CURRENT_ART_DIRECTION_BEGIN -->
+**Current direction — confirmed 2026-11-09:** Read the [current art direction](../../.claude/skills/art-direction/SKILL.md) and [accepted-reference guide](reference-library-2026-11-06/README.txt) before using any brief. The following defaults supersede older shared wording; specific approved character identities and explicit local feedback still govern.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+<!-- CURRENT_ART_DIRECTION_END -->
+
 26 images for the new cards in `../CARD_PROPOSALS.md`, written on 2026-11-06 and revised the same day against the reference library and the creator's Set 3 and campaign reviews. **Status: all 26 illustrations generated on 2026-11-06, with 1536 x 1024 PNGs and 768 x 512 JPEGs; creator review applied through 2026-11-08: the first huntress is restored, the squire and adept reworks are liked, and the latest shieldbearer and giant corrections await feedback.** See [the complete gallery](SET4_GALLERY.html), [prompts and selected files](ART_PROMPTS_SET4.json), and [file validation](SET4_VALIDATION.json). The cards themselves are proposals, so names and rules may still change. Nothing here adds to canon until the creator approves it.
 
 Sellsword, Oath knight, Orc warchief and Hill giant already have paintings, so they have no briefs here. Add finished images to `CARD_ART_FINAL.json` once approved, since that file is the definitive selection of card art.
 
 ## Instructions for the image generator
 
-1. If you have access to the project, read `.claude/skills/art-direction/SKILL.md` first, along with the peoples catalogue in `breachline/SETTING.md` and `reference-library-2026-11-06/README.txt`. The creator's latest feedback overrides these briefs. That skill's "avoid red capes", "rain only when briefed" and "Repetition to watch" notes are not rules for this set: the creator confirmed on 2026-11-06 that they never asked for them. A brief's pose or staging can change to serve the direction, but keep its subject and its gameplay idea.
+1. If you have access to the project, read `.claude/skills/art-direction/SKILL.md` first, along with the peoples catalogue in `breachline/SETTING.md` and `reference-library-2026-11-06/README.txt`. The creator's latest feedback overrides these briefs. Vary weather, clothing and backgrounds across the batch. A brief's pose or staging can change to serve visual appeal while preserving the subject and established identity; gameplay mechanics do not prescribe its presentation.
 2. Generate one image per heading, using the shared direction below plus that card's brief. Attach only the reference sheets listed for that card, with paths relative to this `art/` folder. Original generation prompts and subsequent creator-requested revision prompts are in `ART_PROMPTS_SET4.json`; current briefs and feedback override historical prompts.
 3. Save a 1536 x 1024 landscape PNG in the `art/` folder under the name in the heading, and a 768 x 512 JPEG of the same name in `art/web/`.
 4. For initial generation, skip existing files. The creator's later revision requests authorize replacing the specifically reviewed images; preserve all unrelated art and keep one selected PNG/JPEG pair per card.
@@ -23,9 +41,9 @@ Apply this to every image:
 Use case: stylized-concept.
 Create one original Breachline high-fantasy card ILLUSTRATION ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.
 
-ART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Faces are somewhat more attractive than real life on average, with individual proportions, age, fatigue and lived character, not uniform model faces. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.
+ART DIRECTION: traditional oil and acrylic fantasy painting, with creative silhouettes, believable weight and materials, and beautiful motivated light. Confident visible brushwork with varied scale; broad coherent light and shadow masses, selective crisp focal accents, softer lost edges and atmospheric glazing. Use varied, ordinary reference-led facial proportions, ages, fatigue and lived character; generally appealing faces and occasional exceptional beauty remain welcome. Natural simple hands, with no uncanny pores, etched veins, individual teeth, every hair, uniform microtexture or glossy 3D. Not a photograph, anime, cartoon, vector art, item icon or character sheet.
 
-Tell one specific small story through attention, movement, an object's use, or an unmistakable magical change. People and creatures have motivated gestures and lightly dynamic poses. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Combat is generally lateral and nothing is aimed at the viewer. Enemies may be on screen occasionally, but remain secondary to the principal action or magical effect. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
+Pursue a compelling image through character, silhouette, atmosphere, material, light or an interesting event. Still presence and action are both available; card rules do not require a demonstration. Keep ordinary subjects ordinary: a subject looks only as powerful as the brief says. Combat framing should vary; only rarely aim an attack at the viewer. Enemies may be on screen occasionally, but remain secondary to the principal action or magical effect. Supporting figures remain few and loosely painted. Keep important anatomy and objects comfortably inside the frame, with one main idea that reads at card size.
 
 Use a scene-specific limited palette with lively warm and cool interplay. Imply the place through a few useful shapes rather than fully realizing it. Follow the facing and framing in the brief, and vary lighting and backdrops from scene to scene.
 
@@ -36,7 +54,7 @@ SETTING: high fantasy, about 150 years after the Old Empire collapsed and the go
 
 ## Alignment palettes
 
-Alignment can be clear without being heavy-handed, and emblems don't need to appear on everything. The black and green rows are still proposals.
+Alignment can be clear without being heavy-handed, and emblems don't need to appear on everything. All five alignments have art; these palettes are options rather than mandatory uniforms.
 
 | Alignment | Palette and light |
 | --- | --- |

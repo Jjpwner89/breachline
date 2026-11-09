@@ -13,6 +13,52 @@ Preserve the intended subject, established identity and lore unless the creator 
 
 Current workflow (2026-11-09): Set 4 feedback remains recorded below and the retained Set 3 collection remains finalized. The creator approved all twelve rewritten Set 5 briefs and requested generation. All twelve revision 2 paintings are saved under the existing filenames. The creator requested committing the set after making the adept more veiled, the sword more prominent and the porcelain retainer less weird. The adept and blade edits and the angrier outdoor Brightlance are retained. The creator subsequently selected the previous full-mask porcelain retainer as final, superseding the half-visor edit. The first Set 5 batch is superseded as visual direction. For the next batch, read this skill, the setting, accepted references and current briefs; audit current assets rather than trusting old counts. The creator welcomes a full batch together when generation is requested.
 
+## Adult character and pinup variants (creator request, 2026-11-09)
+    
+The creator wants a more adult, sensual range in the setting: selected existing adult women with fuller busts and visible cleavage, plus separate in-universe pinup portraits. The first requested subjects are Court assassin, Conclave field scholar, Starwell scholar and the woman in A Door into Snow. Save this exploratory collection in breachline/art/nsfw.
+
+For this collection, the request supersedes the Court assassin brief's earlier restriction against a sexualized pose. Use confident, alluring but non-explicit presentation, clothed adult characters, and the established painted fantasy style. Preserve individual identities, recognizable costume and magical details, believable anatomy, diffuse skin and varied painted attention. This adds a presentation option rather than requiring every woman to have the same build or every scene to be a pinup.
+
+Keep the existing game assets intact while making these separate variants; individual variants await selection. The subsequent swimwear request uses reference-based adult faces in their twenties to early/mid-thirties, fit curvy figures, opaque modern bikini cuts in original costume materials, culture-specific accessories, and varied in-world waterside settings. Golden-hour light, damp skin, direct alluring expressions and softer distant backgrounds are requested for this specific study; they do not replace the general material and painting guidance for unrelated art. The creator's requested tone is direction, while new portrait situations and costumes remain explorations.
+
+Starwell-specific clothing exploration (2026-11-09): the creator requested shorter dresses and more Indian-inspired clothing with more exposed skin. Two separate non-explicit studies explore an asymmetric draped short dress and an embroidered blouse/skirt with an ivory drape, preserving her face, amethyst jewelry and star-filled oval magic. This is a character-costume option, not a new universal dress rule or established culture. Files and exact prompts are in breachline/art/nsfw.
+
+## Current defaults for every new image (confirmed 2026-11-09)
+
+The creator accepted all seventeen round-07 revisions and asked for these updates throughout. Apply the following to new card, equipment, character, creature and world art; interface materials use the same painting principles at quieter contrast. Existing approved identities and unrelated review statuses retain their recorded decisions.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+
+Approved round-07 examples are in `breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/`: 02/13 for ordinary face casting, 09 for quieter distance, 04 for mixed armor, 07 for abstract constructs, and 00/18 for selective material reflections. Consult them for the relevant quality, not to repeat their whole composition.
+
+## Set 6 review: attention, faces and materials (2026-11-09)
+
+Follow-up: the creator says the Set 6 revisions are generally performing much better, but rejects both Frost casting revisions for anatomy. Rebuild the whole figure's shoulder, torso, pelvis, leg and arm connections when the underlying pose is wrong; a hand-only polish is insufficient. Latest Frost direction: exactly one anatomical RIGHT arm casts, and the LEFT arm carries the lantern. She steps onto newly frozen canal water, using frost to get around. The new three-quarter front view puts the right casting arm at image-left and the left lantern arm at image-right; her leading boot must visibly rest on supportive ice. Trace each limb back to its own shoulder or hip rather than relying on isolated hand appearance. This specific crossing scene does not require other spells to demonstrate card mechanics. The replacement is awaiting review; encouragement elsewhere is not blanket approval.
+
+This review supersedes the first Set 6 prompts and any reading of earlier "consistent resolution" guidance as equal detail everywhere.
+
+- **Painted attention:** the creator welcomes rich, high-fidelity painting, but wants deliberate variation in detail within it. A focal nose, eye or object may be finely described while an ear, sleeve, secondary face or distant building is simplified. Keep backgrounds perceptible. Use edge control, grouped values and varied brush size rather than photographic blur. Several equally sharp people and textures made Muster the levy busy and uncomfortable to look at.
+- **Skin and material:** reduce waxy cheeks, polished skin and the uniform shine of rendered surfaces. Paint forms with matte, observed colour planes and selective highlights. Lower facial definition where requested; adding pores, wrinkles or surface noise does not fix artificial rendering.
+- **Face references:** use the human sheets to understand and invent distinct proportions, ages, builds, noses, jaws and asymmetries. Stop defaulting to idealized attractive AI faces. Do not overcorrect by making everyone ugly: the Glyphwright face is also rejected, while the sergeant's battered face and uneven teeth are specifically enjoyed. Beauty remains welcome when it suits the character.
+- **Casting:** vary the cast; this batch overused women and female orcs/goblins. Oath outrider, Artificer's journeyman and Cinder skirmisher are to be men. Lantern apprentice should read as a younger boy with an ordinary face, not a sculpted adult jaw or tiny idealized nose. Goblin rabble-rouser should contain only male goblins, with fewer supporting figures. These scene-specific changes do not prohibit female characters elsewhere.
+- **Scale and focal subjects:** ensure the Glyphwright reads as an ordinary person in coherent architecture. Pride lioness must centre the mother rather than the child. Keep detail, contrast, size and placement working together to establish that hierarchy.
+- **Specific spell requests remain specific:** Frost should visibly be cast, with corrected perspective. Scorch should become a fireball impact instead of an orc portrait. This does not restore the rejected rule that every card must demonstrate its mechanics.
+- **Retain successful work:** the Dominion paintings are generally liked; only Court assassin needs its weapon placement changed. Ember salamander, Cinder-cant drummer, Thornbrake, Ridge wolves and Seedfall are retained (Seedfall's resemblance to Groot was noted but accepted for now). Orc pack-hunter keeps its bright setting; change the weapon to an axe in his right hand. Ironbark sentinel keeps its subject but needs more convincing water.
+- For local corrections preserve the liked scene, pose, identity and light. Simplify the sergeant's rendering while retaining his face and teeth; reduce waxiness on Vigil-keeper; simplify Still Flame acolyte's face; preserve Lantern apprentice's successful hierarchy. Court assassin loses the left wrist blade and receives a blade resting lightly beneath her relaxed right hand.
+- Exact feedback, revised briefs, prompts and selection history for this pass are in `breachline/art/ART_REVISIONS_SET6_2026-11-09.json`. Revised images await review; liking a painting does not add new lore.
+
 ## Visual appeal comes first (creator correction, 2026-11-09)
 
 The goal of a card illustration is an image the creator loves that belongs in this world. Judge it by presentation, imaginative design, light, colour, silhouette, material, atmosphere and character. Appeal can be quiet, severe, unsettling, beautiful or mysterious; it does not mean only exciting or fun.
@@ -46,14 +92,14 @@ For standalone world concept art, use the setting and accumulated preferences wi
 ## World-study review (2026-11-08)
 
 - **Second world-study selection:** the three Genesis village scenes in `breachline/art/world-concepts-2026-11-08-set-02/` are liked as decent and honest to the setting, but are not among the creator's strongest favourites. Preserve their portrayal of Genesis society without treating every visual choice as a definitive template.
-- **Brushwork — latest request:** make brushstrokes a little more visible. Keep the scene carefully observed and readable, with varied directional strokes and consistently painted faces, hands, clothing and surroundings. This calls for a modest increase, not blur, a generic texture overlay or uniformly coarse impasto.
+- **Brushwork — latest request, 2026-11-09:** use measured visible brushwork whose scale matches local detail and edge treatment. Fine or broad strokes are both welcome; avoid thick strokes combined with uniformly tight hairline detail. Let secondary and distant forms be a little simpler and quieter while remaining legible. Do not simulate camera focus blur or overstate the simplification. Materials and faces must belong to the same painting without requiring equal detail everywhere.
 - **The Arena Grown Quiet:** the creator loves its callback to the real-world Colosseum and identifies it as the retained final Vigil scene. Preserve that painting unchanged. The architectural echo and present-day reuse of imperial remains are positive references; the precise location and history remain open.
 
 - **Dominion:** The Price of Morning (`breachline/art/world-concepts-2026-11-08/01-the-price-of-morning.png`) is strongly liked for capturing the Dominion feeling. Its oppressive ordinary life, social imbalance and city atmosphere are positive references.
 - **Vigil and hope:** First Dance Since Winter is liked because people are trying to be happy while not everything is perfect. Keep room for ordinary pleasure amid visible hardship.
 - **Empire and the uncanny:** A Guest with No Shrine and The Road That Outlasted Kings are liked. The creator appreciates callbacks to the old Empire. These are visual and storytelling approvals; proposed identities, powers and exact places remain open.
 - **Genesis society:** Genesis has societies and settlements, including villages in forests and homes in trees. Its people are not all alderkin or animals. Show households, communal spaces, social relationships and ordinary inhabitants as well as wilderness. Specific architecture and customs remain open to exploration.
-- **Painting precision:** apply the latest detail-versus-resolution guidance recorded in DESIGN_NOTES.md: fine, precise brushwork is welcome, but faces must not look rendered at a higher resolution than the surrounding painting. A painted image can be detailed without photographic high-resolution skin. Vary weather, clothing and backgrounds across a batch.
+- **Painting precision:** use the current painted-attention guidance above: fine brushwork is welcome, with coherent painted treatment and deliberate local variation in definition. A painted image can be detailed without photographic high-resolution skin. Vary weather, clothing and backgrounds across a batch.
 
 ## Set 5 review and rewritten briefs (2026-11-09)
 
@@ -72,7 +118,7 @@ The creator rejects the batch's emphasis on demonstrating abilities. All twelve 
 
 ## Set 4 review (current through 2026-11-08)
 
-- **Enemy visibility — latest rule:** enemies may appear on screen occasionally. Keep them secondary to the principal action or magical effect, as with affected people in a spell illustration. This replaces the earlier absolute off-screen-only rule; it does not call for enemies in every scene. Attacks should still not be aimed at the viewer.
+- **Enemy visibility — latest rule:** enemies may appear on screen occasionally. Keep them secondary to the principal action or magical effect, as with affected people in a spell illustration. This replaces the earlier absolute off-screen-only rule; it does not call for enemies in every scene. Keep poses varied and only rarely aim an attack at the viewer.
 - **Oath shieldbearer:** the woman pulling a soldier's belt is unnaturally twisted. Rebuild a simple, physically believable supporting action with coherent hips, shoulders and steps; the belt-grab pose is expendable. Follow-up on 2026-11-08: her shield-carrying hand must be entirely behind the shield, invisible from the camera; retain her separate supporting hand at the soldier's waist.
 - **Threshold adept:** the creator says the WHOLE scene looks too much like an animated film ("Pixar"), explicitly not just the face. Reconsider composition, staging, light, colour and rendering together. A face-only retouch does not address this feedback. Test a more grounded, irregularly painted atmosphere; do not solve it by adding uncanny skin detail. On 2026-11-08 the creator praised the complete scene repaint as really good; preserve that selected version.
 - **Pride huntress:** the creator prefers the FIRST, closer painting to the subsequent wide version. The wide revision has an extra leg and is rejected. Restore the preferred first composition; do not generalize this into a rejection of wide compositions elsewhere.
@@ -106,7 +152,7 @@ This review supersedes conflicting implications of earlier prompts and the cosmo
 - **World and communities:** the setting is emerging from a dark time. New societies are established and can be optimistic, but they are not uniformly cosmopolitan, harmonious or prosperous. The creator says this batch drifted toward an Arcane-like social mix. Establish a specific local population; do not automatically populate each crowd with a representative mixture of human backgrounds and every fantasy people. Variety across the world does not imply identical variety inside every settlement.
 - **Orcs:** they are not Vigil / white aligned. Do not cast them as routine members of Vigil communities or use an orc in a white-aligned scene to signal universal harmony without a specific story reason.
 - **Lion folk:** generally keep to themselves. They were present in far too many campaign images. Reserve their appearances for contexts that support them; they are not generic background residents everywhere.
-- **Faces:** keep the cast somewhat more attractive than real life on average, but give individuals different proportions, asymmetry, age, fatigue and lived character. Avoid uniformly perfect model faces. The creator initially called the problem waxy, then clarified that idealized attractiveness was the main issue. Do not solve this by making everybody ugly or adding uncanny microdetail.
+- **Faces — latest review, 2026-11-09:** use the ordinary reference faces in corrective casting; give individuals different proportions, asymmetry, age and lived character. Generally appealing faces and occasional glamorous characters remain welcome, but repeated model-like beauty is rejected. The latest review identifies BOTH idealized casting and genuinely waxy surface/light treatment as problems. Do not solve these by making everyone ugly, adding uncanny microdetail or smoothing faces into plastic. Avoid habitual red cheeks, especially on heavyset women.
 - **Alderkin and scene variety:** stop repeating irrigation, sluices, pumps and other water-infrastructure stories. Alderkin have their own lives and intentions; they do not always help humans. The earlier Waterkeeper image is not a template for their whole people.
 - **Dominion:** the city was much too benign and socially mixed. Its environment should feel substantially harsher, worse and more oppressive. The second Dominion scene is closer to the desired mood. Do not use tidy civic benevolence as the default expression of a dark order.
 - **Red camp:** its underlying camp/assembly direction is liked, but the population is too mixed. This does not approve the painting as canon.
@@ -116,9 +162,9 @@ This review supersedes conflicting implications of earlier prompts and the cosmo
 
 ## Style
 
-Recent rendering feedback: the roaring berserker's new design and energy were preferred, but its fine detail felt freaky. Keep expressive, believable anatomy while simplifying individual teeth, bulging eye highlights, veins, pores, hair strands and dense surface noise into broader painted shapes. For the current concept-art taste test, explore this more economical painted treatment; do not assume every new concept is approved.
+Keep expressive, believable anatomy with selective facial description. The roaring berserker's face and teeth need simpler treatment at the creator's request. Fine brushwork is welcome elsewhere when it serves the focal idea; pores, etched veins and dense surface noise do not create convincing individuality.
 
-Every image is a traditional oil and acrylic fantasy painting with visible, confident brushwork and rich detail. It must never look like a photograph, 3D render, anime, comic or flat vector art. The world is high fantasy.
+Every image is a traditional oil and acrylic fantasy painting with measured visible brushwork, fine observation and deliberately varied detail. A focal feature may be precise while secondary forms use fewer marks; this is painted attention, not equal definition everywhere. It must never look like a photograph, 3D render, anime, comic or flat vector art. The world is high fantasy.
 
 Concentrate sharp edges and fine detail around the visual idea. Let other edges dissolve into atmosphere, broader strokes or quiet tonal shapes. Painted realism can include smooth translucent passages and selective textured accents; avoid applying the same thick diagonal brush pattern to every surface.
 
@@ -163,11 +209,11 @@ For new creatures and peoples, test distinct sizes, silhouettes, anatomy, behavi
 ## Pose and energy
 
 - Match emotional intensity to the individual subject and the creator's latest request. Do not soften every character into stoic restraint: this berserker should visibly roar with aggressive excitement and bloodlust. That is a card-specific exception, not a requirement for other units.
-- Treat lightly dynamic movement as the default, not a ceiling. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the current enemy-visibility guidance.
+- Choose still presence or movement for the individual painting's appeal. When the creator explicitly requests an attack or a leap, make that action unmistakable while preserving believable weight, anatomy and the current enemy-visibility guidance.
 - Give gaze and gestures a reason in the scene. A character should attend to a person, object or event; its hands, posture and expression should support that action. A raised hand or combat stance needs a contextual purpose, including indoors. Quiet work, inspection or listening can supply lightly dynamic movement.
 - Lightly dynamic movement remains useful, but do not manufacture an action to justify every character. A strong still presence, thoughtful head turn or compelling silhouette can be enough. Avoid both generic neutral staging and unnecessary melodrama.
 - Vary the poses and facing directions, because they get predictable quickly. Not every character should face right. Vary viewpoint, subject size, posture, silhouette and gesture as well; reversing a familiar pose is not enough. Follow each brief's full-body, wide, rear, profile or detail framing. A thoughtful still pose is appropriate when the brief calls for it.
-- Combat can include enemies on screen occasionally, with those figures secondary to the principal action or effect. Off-screen opponents remain useful. Do not aim attacks straight at the viewer.
+- Combat can include enemies on screen occasionally, with those figures secondary to the principal action or effect. Off-screen opponents remain useful. Keep poses varied and only rarely aim an attack at the viewer.
 
 ## Backgrounds
 
@@ -179,14 +225,19 @@ Keep stature, equipment and scale believable for the subject and world. Do not i
 
 ## People
 
+- **Orcs — all individuals:** coarse, visibly nonhuman anatomy: heavy brow, broad blunt nose, substantial projecting jaw and irregular tusks. Do not turn female orcs into attractive green humans.
 - **Humans:** they appear in every alignment. Follow the local population, history and social context of a scene. The 2026-11-06 correction supersedes using the earlier US-demographic target to compose these campaign communities; do not turn every crowd into a demographic sampler. Preserve human variety across the world without making every settlement cosmopolitan.
 - **Lion folk:** tall, upright and noble, with lion heads and full manes. They should never look cartoonish. They generally keep to themselves and should not recur as background residents in most scenes.
 - **Alderkin:** they can fight. The creator confirmed this for Grove tender, and the Bronze-harness alderkin is a plain strong fighter.
 - **Summoners:** each has a golden, glowing, scar-like mark called the gilt scar or the goldmark. A summoner who hides the mark really hides it, so it's unseen or barely visible. Never show someone frantically covering a mark that still glows through.
 
+## Interface art
+
+Use `breachline/art/UI_ART_BRIEFS.md`. Interface art shares the card paintings' material and brushwork treatment, at quieter contrast so cards and text remain clear. Card subject, pose and story directions do not prescribe interface composition.
+
 ## Alignments
 
-The white, red and blue rows come from images the creator has seen. The black and green rows are proposals, because those alignments have no art yet.
+All five alignments now have art. These palettes describe useful established options, not mandatory uniforms or a single lighting scheme.
 
 | Alignment | Peoples and subjects | Palette and light | Emblem |
 | --- | --- | --- | --- |
@@ -231,7 +282,7 @@ The creator supplied twelve Magic card images as examples they like and asked fo
 - **Spells as visual subjects:** `fade.jpg` and `instant.jpg` offer compelling changes of shape, gesture and spatial relationship. Their visual invention is the useful reference. A spell may be an event, a material, a presence or an ambiguous moment; it need not spell out the rules or show every consequence. Secondary affected figures remain an option, not a requirement.
 - **Biological invention:** `green.jpg` integrates foliage, growth and creature anatomy into a coherent form. Genesis creatures should have distinctive root, branch, horn or feather silhouettes, rather than all being humanoids dressed in leaves.
 - **Scale and breathing room:** `serra.webp` and `sea.jpeg` let wings, monumental shapes and surrounding space establish scale. Large subjects need not fill every edge; ordinary figures can be small within a selective setting. This does not authorize adding wings, cities or monumental power when absent from the brief.
-- **Ordinary humans with lived gestures:** `human 2.jpeg`, `human 3.jpeg` and `human.jpeg` use practical equipment, asymmetry, weight shifts and group rhythm. Show the action's intention and a specific expression. Supporting figures remain subordinate, and no attack is directed at the viewer.
+- **Ordinary humans with lived gestures:** `human 2.jpeg`, `human 3.jpeg` and `human.jpeg` use practical equipment, asymmetry, weight shifts and group rhythm. Show the action's intention and a specific expression. Supporting figures remain subordinate; only rarely aim an attack at the viewer.
 - **A wider painted range:** retain believable materials and painted realism, while allowing soft atmospheric glazing, crisp contours at the focal point, restrained expressive distortion in fantastical anatomy and varied brush scale. Do not copy the first batch's identical surface texture, warm ochre cast or close-up hero framing.
 - **Distinct colour scripts:** choose a limited, scene-specific palette and one lighting idea. Luminous cyan, cold violet, deep forest green, dry sunlit ochre and quiet neutral daylight can coexist in one set. Alignment identity should survive without putting its emblem on every object.
 
@@ -255,15 +306,7 @@ Confirmed by the creator during generation:
 
 Use expressions appropriate to the action. For these raiders, enthusiasm should read as exhilaration and resolve; broad laughter is too light. Keep quiet tension, humour, awe and ordinary human feeling available elsewhere.
 
-## Repetition to watch
-
-Claude noticed these across the first 19 images. They are Claude's past observations, never creator rules, so none of them is banned. Use them only as a variety check across a batch.
-
-- Streaky, diagonal brushstroke skies in almost every image
-- Ivy on old stone in many images
-- Rain and grey haze in a large share of images
-- Waist-up framing of one figure, with few full-body or wide shots
-- Red capes and sashes on both Vigil and Fervor, which blurs the two alignments
+Vary weather, clothing and backgrounds across a batch.
 
 ## Reference library as a starting point (creator clarification, 2026-11-06)
 
@@ -388,3 +431,50 @@ The creator reviewed images in display order, which differed from the list: thei
 Keep the world large and varied. The creator likes the duelist's city backdrop as a possible larger Ambrel, with room for both great cities and smaller places. Magic can compensate for inefficiencies in industry and support selective capabilities that seem out of time, including robots/constructs. This need not imply uniform modern industry, universal prosperity or every community having the same power level.
 
 The creator is considering a world that has more present capability and is less defined by immediate post-cataclysmic collapse, while facing powerful new threats; Dominion was raised as a potentially world-threatening power. Allude gently to this direction. The severity of historical catastrophe, degree of recovery, new threat details and overall optimism remain open. Do not silently rewrite the Cataclysm, its timeline or the hidden cosmology. The preserved city is a visual scale/design reference, not a canonical map or a settled new history.
+
+## Cobalt rapier card selection and middle-setting exploration (2026-11-09)
+
+The creator explicitly selected the preserved Cobalt rapier as an **Equipment** card. Its subject and type are decided; the finished painting is approved as exceptional with no notes on 2026-11-09. Alignment, cost and rules remain open. Approved full-size card art: `breachline/art/cobalt-rapier.png`. Preserve the accepted sword's design without restoring its rejected duelist.
+
+The creator asks for a large further concept-art batch that continues exploration while filling out the setting's middle: ordinary and regional life, equipment, people, creatures, direct magic, useful craft, and selected stranger edges. Do not turn this into another mandatory influence checklist or make every scene demonstrate a game ability. Current working batch: `breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/`. Round 07 has now been reviewed as detailed below; earlier rounds retain their recorded statuses. Initial references remain starting points rather than limits.
+
+## Round 07 review — casting, materials and specific corrections (2026-11-09)
+
+### Casting and painted treatment
+
+- For new highly aggressive frontline units, the vast majority should be men. Female soldiers can occur occasionally; women remain welcome as mages, archers and in other roles. This is the creator's visual casting preference, not a ban or an automatic instruction to recast every previously approved female character. Copperlane and Pass-road guard are specifically requested as men; the civilian female giant is not a gender-change request.
+- Use the ordinary human reference faces for the requested corrections, including Wayside healer, Levy hall and Evening lesson. Reference IDs must be explicitly selected in those prompts. Keep occasional very attractive characters in the repertoire, but do not keep recreating the same model-like students, petitioners and workers.
+- Waxy appearance is a whole-painting problem as well as a face problem. Give skin, wool, wood and stone naturally diffuse surfaces; allow selective reflections where appropriate to metal, glass or water. The approved Cobalt rapier and Black enamel field kit show that convincing reflections are welcome.
+- Do not overemphasize red cheeks on women, particularly heavyset women. Body weight does not prescribe rosy or shiny facial coloring.
+- Vary detail moderately with visual importance and distance. The small distant village at the upper right of study 09 is too tightly described. Keep distant forms comprehensible using fewer marks and quieter edges; do not use lens blur, a tunnel-focus effect or extreme abstraction. Brush scale, line tightness and local detail must agree.
+
+### Approved results by numbered subject
+
+- **00 Cobalt rapier:** exceptional, no notes. Approved finished Equipment-card art and reference. Rules, cost and alignment remain open.
+- **01 Copperlane torch-runner:** approved male goblin redesign with reckless energy and an actual torch explaining the burning trail. The rejected civilian courier remains deleted; the cut gameplay rule is not restored.
+- **02 Wayside healer:** approved ordinary reference faces and matte, measured scene repaint.
+- **03 Pass-road guard:** approved male orc with the retained practical kit and nonhuman anatomy.
+- **04 Harbor watch officer:** approved blend of selected Asian lacquer/lamellar accents with shaped steel, mail and ordinary cloth.
+- **05 Cinder roadside supper:** approved corrected faces, material response and measured background treatment.
+- **06 Corewright's bench:** accepted. The practical woman artisan's role and action are liked. The adjacent spoken praise mentioning a woman belongs to this bench scene; **07** is the automaton critique below.
+- **07 Dock tally-keeper:** approved abstract open metal structure and modest core, with a crafted head rather than knight armor or futuristic styling.
+- **08 Ambrel stair market:** accepted overall. Some brisk line quality remains a future refinement note, not a rejection of the city.
+- **09 Town on the old road:** approved quieter distant architecture and corrected material response; no camera blur.
+- **10 Levy hall:** approved ordinary reference casting while retaining oppression and class differences.
+- **11 Roof glider:** perfect / incredible, explicitly included. Accepted reference and setting animal; detailed biology/prevalence remain open.
+- **12 The unwarmed guest:** strongly liked, accepted.
+- **13 Evening lesson:** approved scene and magical representation, now with ordinary reference student faces.
+- **14 Roadwarden's harness:** accepted and strongly liked.
+- **15 Stormbreak raider:** approved slight arm extension and restrained lightning from the hand into the rocks.
+- **16 Alderkin's wager:** approved scene and alderkin with the woman's waxiness and cheek redness corrected.
+- **17 High-road giant:** approved material/facial repaint; she remains a female civilian traveler.
+- **18 Black enamel field kit:** beautiful, accepted; material and reflection treatment especially successful.
+- **19 Cedar threshold:** both original and gently curved-eave variant accepted. The architecture can carry more of this influence than the officer's armor.
+- **20 Unfinished bridge:** approved understated magic/industry scene with corrected surface treatment.
+- **21 Ash-white lanner:** approved dinosaur-like feathering while preserving the liked anatomy. Taxonomy and travel capabilities remain open.
+- **22 Door into snow:** approved summer view through the ordinary left window contrasting with the snowy portal destination; travel rules remain open.
+- **23 Mothwake mourner:** approved white-woman recasting, retaining the coat, moth magic, pose and atmosphere.
+- **24 Peat-road walker:** liked, accepted.
+
+Accepted originals: `breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/`.
+All seventeen revised paintings, including the cedar variant, are approved and now in the same reference directory. The earlier review gallery at `breachline/art/work-in-progress/round-07-revisions-2026-11-09/GALLERY.html` links to those accepted files. The rejected original presentations and their generated sources remain deleted. This approval does not change unrelated pending reviews.

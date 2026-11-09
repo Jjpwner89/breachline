@@ -1,0 +1,625 @@
+{
+  "batch": "Round 07 creator revisions",
+  "date": "2026-11-09",
+  "generator": "Built-in image_gen",
+  "status": "All 17 revisions accepted by the creator on 2026-11-09 and promoted to the active reference library.",
+  "style_correction": "Measured brushwork matching detail, variable edges without lens blur, matte natural skin and material-specific reflectance, reference-led ordinary faces, no systematic red cheeks.",
+  "images": [
+    {
+      "n": 1,
+      "title": "Copperlane torch-runner",
+      "intent": "Replace the rejected courier with a reckless male goblin carrying an unruly torch; a visual study, not restoration of the cut card rules.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png"
+      ],
+      "prompt": "Use case: stylized-concept. The input is a SPECIES AND FACE reference only. Create a NEW full-width 1536x1024 Breachline painting. An adult MALE goblin with the long narrow skull, prominent nose and large ears of bottom-row first face, made younger and wiry, a wild uneven crop of black hair, reckless delighted grin. He hurtles through a rough town lane holding a poorly controlled burning pitch torch down and behind him. A few burning drops and embers fall onto the road from that actual torch; the trail makes physical sense and shows heedlessness. Clear full-body running anatomy, two legs and two attached hands. Plain rust jacket flapping open over an oatmeal shirt, brown trousers and boots, small belt knife; no courier lamp or satchel. Lively danger rather than a calmly lit civilian courier, no abstract magic fire trailing from his feet. Dry cobbles and plaster alley, restrained blue-gray daylight, flame a selective warm accent. No other prominent characters or architecture overload. Keep a small bottom caption strip reading exactly '01  COPPERLANE TORCH-RUNNER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-427604f7-bd4d-4f0c-bd32-5efb1c4365bf.png",
+      "sha256": "3521f1de4229f2162ad6ecc6ec6e6f772ba5c289591e1f809fdd4b22f220a265",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "01-copperlane-torch-runner-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png"
+    },
+    {
+      "n": 2,
+      "title": "Wayside healer",
+      "intent": "Keep the care and composition; cast the main faces from H03 and H01 and repaint skin, cloth and distance without waxy shine.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/02-wayside-healer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "prompt": "Use case: style-transfer and identity-preserve. Image 1 is the scene to revise; image 2 is the approved human casting sheet. Preserve image 1's composition, male healer caring for resting adult woman, clothing colors, bandaged forearm, gentle healing and roadside hospice. Replace the healer's idealized handsome face with human H03: bottom-row THIRD head on image 2, older long narrow face, receding hairline, crooked aquiline nose and compressed mouth, light unstyled stubble rather than glamorous full hair/beard. Cast the patient from H01: bottom-row FIRST head, ordinary adult woman with long nose, uneven brows and broad mouth, short dark hair. No beauty retouch. The foreground relationship remains warm. Repaint the WHOLE scene's material/edge hierarchy, not just apply skin blur; distant hillside is fewer quiet shapes, cloth absorbent, faces naturally colored. Keep small bottom title '02  WAYSIDE HEALER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/02-wayside-healer-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/02-wayside-healer-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c88097c8-2cfa-430b-9c78-1b73de0c29a8.png",
+      "sha256": "d0725f0954d6c9a6e863ee7e15a6d78494a3d03d41b271f1626f6cd38474167d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/02-wayside-healer.png",
+          "status": "historical superseded input removed after revision"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "02-wayside-healer-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/02-wayside-healer-v2.png"
+    },
+    {
+      "n": 3,
+      "title": "Pass-road guard",
+      "intent": "Preserve the successful practical kit and orc anatomy; make this frontline guard a man.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/03-pass-road-guard.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit this exact Breachline character/kit sheet. Recast the guard as an adult MALE orc: broad male facial structure, strong heavy projecting jaw, thick brow, broad blunt nose, irregular tusks, heavy neck and muscular male torso. Maintain recognizably NONHUMAN orc anatomy, moss-gray complexion, braid, thoughtful expression. Keep the indigo quilted vest over short mail, same small single iron shoulder, plain spear, belt, boots and layout, no extra armor or ornaments. All portrait/details should agree with the new male guard. Keep the full figure and equipment construction coherent. Neutral pale background, exact header '03  PASS-ROAD GUARD'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/03-pass-road-guard-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/03-pass-road-guard-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-961dee47-00c5-4d91-9808-3bf2ad69ecd3.png",
+      "sha256": "0a40c8638075be2c882845593f2782aec889e276f4b8a35aa79f7ee9f359d7bd",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/03-pass-road-guard.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "03-pass-road-guard-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/03-pass-road-guard-v2.png"
+    },
+    {
+      "n": 4,
+      "title": "Harbor watch officer",
+      "intent": "Blend a few lacquer and lamellar details into the setting's established mail, shaped steel and ordinary cloth.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/04-harbor-watch-officer.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Rework ONLY the outfit/kit design of this male harbor officer while preserving his face, age, East Asian features, pose and small study layout. Reduce the whole historical-Asian-uniform effect. Give him a simple shaped dark steel breastplate over a short navy wool coat and small mail collar; retain restrained dark-teal lacquered lamellar only on modest shoulder caps, and copper fastening details as the Asian-inspired accents. Normal leather belt replaces broad sash; simple European-influenced open iron cap with no wide turned brim. A plain locally forged straight side-sword with small crossguard and dark scabbard replaces the strong historical saber cues. Blend believable local medieval craft with SELECT Asian details, no ornamental extra layers, giant shoulders or complete samurai outfit. Update inset head/kit consistently. Original pale study background. Exact header '04  HARBOR WATCH OFFICER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/04-harbor-watch-officer-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/04-harbor-watch-officer-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8be9e031-6748-4d5a-bd1b-970d04700fc9.png",
+      "sha256": "83dbaeeac11aecbb0c027108d4bc96127a831ce23ee4b0e19dacfe6ac896ecfa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/04-harbor-watch-officer.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "04-harbor-watch-officer-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/04-harbor-watch-officer-v2.png"
+    },
+    {
+      "n": 5,
+      "title": "Cinder roadside supper",
+      "intent": "Retain the social scene and casual fire magic; correct waxy materials, model faces and noisy background marks.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "prompt": "Use case: style-transfer. Image 1 is the composition to repaint, images 2 and 3 are approved face and painted-treatment references. Preserve all four adult travelers, relaxed companionship, older woman's casual hand-fed cooking fire, awning, food, varied personal garments and scene structure. Give the laughing young man ordinary H13 proportions (image3 bottom row third), the pouring young woman short red hair and everyday H10 facial proportions (image3 top fourth), the fire-casting older woman a naturally lined broad face with quiet neutral cheek color, and the boot-repairer H06 proportions (image2 bottom sixth), dark short textured hair, broad nose/small eyes/soft chin. No identical model casting. Repaint dry cloth and wood as absorbent, skin as matte, food without lacquer shine; only pot metal and water get selective reflections. Simplify distant village and sky with calm measured forms, maintaining legibility and color, not blur. Exact bottom caption '05  CINDER ROADSIDE SUPPER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-458fa2ed-883c-4e77-a39c-e258c147f55d.png",
+      "sha256": "f74a2219356cd72a53730ca0af11205f52a4ba4b65985bcfffcb6b2f0d1791b0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper.png",
+          "status": "historical superseded input removed after revision"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+          "status": "available"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "05-cinder-roadside-supper-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper-v2.png"
+    },
+    {
+      "n": 7,
+      "title": "Dock tally-keeper",
+      "intent": "A more abstract made being with open structure and a magical core, rather than an armored human knight.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/07-dock-tally-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/12-spellglass-sentinel-v2.png"
+      ],
+      "prompt": "Use case: stylized-concept redesign. Image1 supplies only the dock ledger-counting role and neutral study layout; image2 supplies only the appealing blue magical core in open worked-metal structure. Redesign the tally-keeper substantially away from a medieval armored knight. A roughly human-height abstract brass-and-dark-iron made being: an open oval rib frame around a modest faceted blue core, narrow offset central support, two unequal but coherent articulated manipulator arms and TWO long slightly bowed structural legs with broad flat feet. Deliberate negative spaces, unexpected functional proportions, visibly made and metallic. One three-finger clamp cradles a plain ledger, other small precision hand holds chalk. SMALL smooth irregular bronze capsule head set off-center with one recessed dark aperture; no helmet brim, knight visor, pauldrons, cuirass, mail skirt, human boots, cape, LED face or faceted futuristic helmet. Elegant craft and modest personality, no mascot. Large complete design on pale neutral ground with two smaller core/joint details, no extra bodies. Header exactly '07  DOCK TALLY-KEEPER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-0ce2c7f9-f129-4b53-ad9b-7cd38be637f5.png",
+      "sha256": "05de3e747421fb230e4cf4ccb4c327075680393abe1df6ea8a4a4a90f5aa83d8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/07-dock-tally-keeper.png",
+          "status": "historical superseded input removed after revision"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/round-06-revisions-2026-11-09/12-spellglass-sentinel-v2.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "07-dock-tally-keeper-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png"
+    },
+    {
+      "n": 9,
+      "title": "A town on the old road",
+      "intent": "Keep the town but use quieter distant forms and coherent brush scale; remove the wet, waxy treatment.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/09-town-on-the-old-road.png"
+      ],
+      "prompt": "Use case: style-transfer. Repaint the supplied town composition, preserving the old arch, road, cart, foreground garden, watermill, tiled houses and broad countryside. The creator specifically dislikes waxy all-over reflected light and the over-detailed little settlement in the UPPER RIGHT distance. Concentrate selected fine observations on the central arch and nearby street; progressively simplify that distant village to comprehensible roof/wall/field masses with low contrast, fewer windows and edges. NO simulated lens blur, vignette or tunnel focus. Retain a readable large world, not an empty background. Dry rough stone, chalky plaster, absorbent fabric and naturally painted leaves; only river/waterwheel wet surfaces should glint selectively. No thick choppy brush texture paired with tiny sharply outlined architectural detail. Preserve restrained lively colors, sky and sunlight without glitter on every surface. Exact bottom caption '09  A TOWN ON THE OLD ROAD'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/09-town-on-the-old-road-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/09-town-on-the-old-road-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6b04ca6a-33ca-4856-8047-be04328d9ead.png",
+      "sha256": "0b0d1660887865c03be7ece0a0755a2fe7281b120ec419822579e8a00df4f8da",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/09-town-on-the-old-road.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "09-town-on-the-old-road-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/09-town-on-the-old-road-v2.png"
+    },
+    {
+      "n": 10,
+      "title": "The levy hall",
+      "intent": "Use specific ordinary reference faces for the official and petitioners while preserving the oppressive class relationship.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/10-the-levy-hall.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "prompt": "Use case: identity-preserve and style-transfer. Image1 is the scene, images2/3 approved casting sheets. Keep the composition, wealth and oppression, official behind table, two anxious petitioners and distant guard. Recast the official using H03 (image2 bottom THIRD): lean older man with receding hairline, crooked aquiline nose, compressed mouth, not movie-star villain. Recast male petitioner using H06 (image2 bottom SIXTH): broad adult face, small eyes, short dark textured hair, soft chin. Recast female petitioner with H10 (image3 top FOURTH): ordinary adult woman, short red hair, prominent ears, freckles grouped into simple painted suggestions, no symmetrical glamour. The guard is an ordinary older male, secondary and simply painted. Expressions remain tense and hierarchical; do not beautify subjects, add ugly caricature or uncanny skin detail. Low-key diffuse natural skin, strong material differences, quiet background. Exact bottom title '10  THE LEVY HALL'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/10-the-levy-hall-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/10-the-levy-hall-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-49b52c95-8317-4489-95d8-c5c19ba183fa.png",
+      "sha256": "9aea3baebe7c5f81939f1e8d98e5c8ef81a0b6426126b7ad2ccdc0d61b96be97",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/10-the-levy-hall.png",
+          "status": "historical superseded input removed after revision"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+          "status": "available"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "10-the-levy-hall-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/10-the-levy-hall-v2.png"
+    },
+    {
+      "n": 13,
+      "title": "The evening lesson",
+      "intent": "Preserve the liked floating weather phenomenon and teacher; give the students ordinary reference-sheet faces.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/13-the-evening-lesson.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "prompt": "Use case: identity-preserve. Image1 is the much-liked scene to preserve, image2 is the approved human face sheet. Keep the broad-faced older Black woman teacher, her navy/cream gown, seated arrangement, study, and exact palm-sized floating ice containing a tiny cloud. The magical representation is specifically liked; do not change it. Replace the two overly attractive student faces: woman uses H01 (image2 bottom FIRST), ordinary long nose, uneven brows, broad mouth, short dark hair; man uses H02 (image2 bottom SECOND), round jaw, broad short nose, prominent ears, friendly ordinary proportions. They are adult students, not children. Preserve their attentive body poses and notebooks. Teacher remains dignified and appealing, natural matte skin with no added rosy cheeks; students lack beauty-filter symmetry and glossy cheeks. Maintain scene colors while making background quieter and material highlights selective. Exact bottom caption '13  THE EVENING LESSON'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/13-the-evening-lesson-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/13-the-evening-lesson-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-42c00cc1-316f-4b6f-98e0-2e22e2512054.png",
+      "sha256": "a63290e7777a121edf04dba53ce8ad261a3d557a285f6dbc6ffff9e4422455ed",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/13-the-evening-lesson.png",
+          "status": "historical superseded input removed after revision"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+          "status": "available"
+        }
+      ],
+      "staged_file": "13-the-evening-lesson-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/13-the-evening-lesson-v2.png"
+    },
+    {
+      "n": 15,
+      "title": "Stormbreak raider",
+      "intent": "A small lift of the arm links the restrained lightning directly to the orc and lets it fall into the rocks.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/15-stormbreak-raider.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Preserve this exact male orc, clothing, face, stormy landscape, scale, stance and scene. Change only the arm on the viewer's RIGHT (orc's anatomical LEFT) from hanging vertically to a slight natural outward lift around 30–45 degrees from his body, elbow gently bent, relaxed open hand directed down toward the adjacent rocks. The OTHER arm stays relaxed at his side. A restrained thin jagged arc of blue-white lightning now clearly originates at or touches his lowered fingertips and drops away into the rocks, with a short continuation between stones. One coherent small discharge, not a huge combat blast, thread or raised casting pose. Maintain correct shoulder/elbow/wrist/finger anatomy. Local repaint blends naturally with less glossy skin; no added armor. Keep bottom caption '15  STORMBREAK RAIDER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/15-stormbreak-raider-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/15-stormbreak-raider-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8b272086-a8e3-4d3c-9779-636f04f26a15.png",
+      "sha256": "14dc081f0ddf14f5b183e0fa45875f1419cc8ee2e6e035977825adbebe9d2b17",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/15-stormbreak-raider.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "15-stormbreak-raider-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/15-stormbreak-raider-v2.png"
+    },
+    {
+      "n": 16,
+      "title": "The alderkin’s wager",
+      "intent": "Keep the loved alderkin and scene; remove the woman's waxy skin and exaggerated cheek redness.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/16-the-alderkins-wager.png"
+      ],
+      "prompt": "Use case: style-transfer with strict content preservation. Preserve the loved alderkin design, its exact botanical anatomy, knot eyes, game-playing pose, board and composition, as well as the human woman's age, stocky build, warm amused expression, garments and seated pose. Correct the woman's skin painting: natural quiet neutral flesh hues, subtle diffuse light, broad observed planes, no concentrated red circles on cheeks, pink nose, shiny wax or polished highlights. Keep her ordinary face, do not slim or glamourize her. Lightly harmonize surrounding linen, mugs, wood and bark so each material has distinct reflectance; reduce the busy glints in secondary scenery. Preserve joy, color and character. No plastic smoothing or thick texture overlay. Exact bottom caption '16  THE ALDERKIN’S WAGER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/16-the-alderkins-wager-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/16-the-alderkins-wager-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7e1fe8b0-0265-4f2a-8d5c-8b28c8e86c23.png",
+      "sha256": "505bbb804ed6991608d354eeab9a428bf14fea7152a4c7fea7ac92846ead64cb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/16-the-alderkins-wager.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "16-the-alderkins-wager-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/16-the-alderkins-wager-v2.png"
+    },
+    {
+      "n": 17,
+      "title": "High-road giant",
+      "intent": "Preserve the female traveler and scale; repaint her face and materials with restrained, natural light.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/17-high-road-giant.png"
+      ],
+      "prompt": "Use case: style-transfer. Preserve the exact FEMALE giant traveler, broad ordinary face, braid, heavy green patched coat, bundle, staff, posture, full-body composition and human traveler for scale. She is a civilian traveler; do not turn her male or into a warrior. The requested correction is the waxy face and material treatment. Repaint her face and hands in diffuse natural color planes with quiet cheek color, selective restrained light, no greasy sheen, rosy cheek emphasis, photographic pores or glamor. Keep her recognizable and expressive. Absorbent wool, dry stone, textured but not shiny skin; distant town/hills simpler and quieter without camera blur. Match brushwork to the level of description throughout. Exact bottom caption '17  HIGH-ROAD GIANT'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/17-high-road-giant-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/17-high-road-giant-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-9d6f70c3-5ab5-4048-9552-db1cf930d8e8.png",
+      "sha256": "c783fb4e0aee773e095af00bbcbb1a4df45d6c5024cc40980813ee6f0006d5bd",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/17-high-road-giant.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "17-high-road-giant-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/17-high-road-giant-v2.png"
+    },
+    {
+      "n": 19,
+      "title": "The cedar threshold",
+      "intent": "A light architectural variant: subtly curved eaves within the liked practical woodland village.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/19-the-cedar-threshold.png"
+      ],
+      "prompt": "Use case: precise-object-edit. The original village is liked; preserve its layout, human households, kitchens, trees, stairs, domestic objects, grounded timber construction and overall warm green/wood palette. Make only a modest architectural refinement: several roof eaves curve gently upward at their tips, a subtle Asian influence integrated into the existing ordinary woodland houses. NOT full pagodas, huge turned roofs, ornate temple brackets or a wholly different culture. Keep the painting's humane mood, make small faces and distant homes more economical and quietly matte, no heavy glossy texture. This is a minor variant, not a replacement for the accepted overall settlement direction. Exact bottom caption '19  THE CEDAR THRESHOLD'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-4608ac5f-c0e4-4a26-ac1f-660f78789d31.png",
+      "sha256": "a03d476a228723c65e945e08b3cd4ebc2fc4b3ac2b794fe6172db9debce131c3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/19-the-cedar-threshold.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "19-the-cedar-threshold-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold-v2.png"
+    },
+    {
+      "n": 20,
+      "title": "The unfinished bridge",
+      "intent": "Retain the understated cooperation of magic and engineering; correct skin, stone and distant detail.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge.png"
+      ],
+      "prompt": "Use case: style-transfer. Preserve the entire liked scene and magical action: older male geomancer quietly levitates ONE small block just over a sled; ordinary workers, timber centering, stone arch, ropes and steam winch remain in place. Do not enlarge or dramatize the magic, add threads or alter the bridge design. Repaint matte human skin, absorbent blue coat, chalky limestone and dry wood; remove the shared waxy gleam and constant edge highlights. Water and selected metal may reflect. Concentrate modest detail around the geomancer/block and bridge construction; distant settlement, foliage and people become quieter simple painted observations, never lens blur. Keep color and readable craft. Exact bottom caption '20  THE UNFINISHED BRIDGE'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-eab13af8-4487-4324-acce-92ffea58f0ee.png",
+      "sha256": "653453e85d42917bd2ef09b3be00bcc9dc74920056d58d8821503d02a09c67f8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "20-the-unfinished-bridge-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge-v2.png"
+    },
+    {
+      "n": 21,
+      "title": "Ash-white lanner",
+      "intent": "Keep the liked drake anatomy and rider; add dinosaur-like feathering without turning it into an ordinary bird.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/21-ash-white-lanner.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Preserve the liked creature's exact head/neck/body proportions, two hind legs, two forelimb wings, tail, posture, harness, saddle, human rider and composition. Replace the mostly scaled body surface with dinosaur-like feathering: close fine pale ash protofeathers on neck and torso, a little shaggy filamentous fringe at chest and upper thighs, short layered feathers on upper wing arms and along tail base, subtle rust throat feathers. Let fine scales remain on feet and muzzle; preserve readable leathery flight membrane between the wing fingers with sparse feather fringe at its upper edge. It is the SAME inventive drake made feathered like a non-avian dinosaur, not a griffin, chicken, swan, bird beak or fur-covered mammal. No extra limbs or giant feather fans. Keep saddle's fit and two human hands coherent. Reduce waxy glints; selective feather masses, not every barb etched. Exact bottom caption '21  ASH-WHITE LANNER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-3b7edc5c-9af1-4c6c-aa8e-ab3a8adc2ccd.png",
+      "sha256": "51323e8d61367c31397d81d79c7877ac0c5ccc7dbb4f202788ce457648e98278",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/21-ash-white-lanner.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "21-ash-white-lanner-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png"
+    },
+    {
+      "n": 22,
+      "title": "A door into snow",
+      "intent": "Make the portal read clearly by showing a warm, green location through the ordinary left window.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/22-a-door-into-snow.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Preserve the scholar's identity, pose, blue/cream gown, room, books, large magical doorway and its snowy destination exactly. Change the view through the ordinary window at image LEFT: clearly warm green summer setting, sunlit leafy trees, warm terracotta rooftops and a pale golden sky, absolutely no snow or frost in that ordinary window. It must be obvious the room is in a different climate/place from the snow-covered courtyard beyond the magical threshold. Maintain consistent spatial window framing and warm light falling into the room; retain the portal's cold light and subtle refractive edge. Do not add machines, teleport text or extravagant effects; visual juxtaposition does the work. Matte natural skin and painterly materials. Exact bottom caption '22  A DOOR INTO SNOW'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/22-a-door-into-snow-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/22-a-door-into-snow-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-2474313c-e43e-4b8b-901b-88545ec30ed9.png",
+      "sha256": "e14e7fac5154f522fa8617fb21bab64cb90437a1e5e6db567f6c3c741cc6070f",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/22-a-door-into-snow.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "22-a-door-into-snow-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/22-a-door-into-snow-v2.png"
+    },
+    {
+      "n": 23,
+      "title": "Mothwake mourner",
+      "intent": "Recast the mourner as a white woman while preserving the liked coat, moth magic, pose and atmosphere.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/23-mothwake-mourner.png"
+      ],
+      "prompt": "Use case: identity-preserve character recasting. The creator likes this concept and requests that the mourner be a WHITE woman. Recast her as a white adult woman with pale natural ivory skin, a specific long narrow nose, subtly uneven brows, gray-green eyes, dark brown short wavy hair, and an appealing distinctive face. Keep the same age, slender build, exact pose, high-necked ivory coat with charcoal lining, open palm and loose cloud of pale translucent moths, cemetery arch, composition and rich blue-hour atmosphere. No generic beauty-filter symmetry, pink red cheeks or glossy wax skin. Both hands have the same natural pale complexion. No new jewelry, flowers, glow beams or changes to the magic. Same bottom title '23  MOTHWAKE MOURNER'.\nRender as an observed traditional fantasy painting with measured oil/gouache brushwork. Crucial correction: diffuse matte skin, wool, wood and stone; material-specific reflections reserved for actual metal, glass and water. No waxy cheeks, oily skin, blanket golden sparkle, hard rim on every shape or red-cheek beauty filter. Use coherent painted color planes, variable edges and selective detail: quieter distance remains legible through fewer marks, never photographic depth-of-field blur. Match each area's brush size to its detail and edges; no thick impasto overlay with hairline outlines and no uniform diagonal texture. Preserve color and life, not grayscale or flatness. No uncanny pores, individually sparkling teeth, polished model faces or CGI.  Output landscape 1536x1024. Preserve the numbered title, no extra text.",
+      "file": "../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png",
+      "status": "creator_accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5370e407-0d0e-4e95-9f41-1064de5b6351.png",
+      "sha256": "f60798e69e5ca12af785e69bfff036b33d42b8f63a8aba74bfeeb3e5aba30e60",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Inspected: requested changes visible, coherent anatomy and readable numbering. Awaiting creator review.",
+      "reference_image_records": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/23-mothwake-mourner.png",
+          "status": "historical superseded input removed after revision"
+        }
+      ],
+      "staged_file": "23-mothwake-mourner-v2.png",
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "accepted_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png"
+    }
+  ],
+  "review_notes": {
+    "0": "Exceptional, no notes. Finished Equipment card art approved.",
+    "1": "Rejected: wrong character direction. Rebuild as a male goblin with reckless flame-carrying energy. Original was a civilian courier, not the previously cut flame-trailing game card.",
+    "2": "Scene broadly works; generic idealized faces and waxy rendering need correction.",
+    "3": "Kit and orc design work; make the guard a man.",
+    "4": "Liked, but blend selected Asian elements with the setting's existing armor rather than a wholly Asian outfit.",
+    "5": "Waxy reflections and poorly measured background brushwork; repaint material response and detail hierarchy.",
+    "6": "Accepted. Practical woman artisan and her work make sense. Adjacent spoken Dock Tally praise describes this woman at the bench.",
+    "7": "Too medieval / armored-knight-like. More abstract construct anatomy; retain earlier blue-core appeal without futuristic head.",
+    "8": "Accepted overall; brisk lines remain a useful refinement note for future paintings.",
+    "9": "Disliked waxy rendering and excessive distant village detail. Repaint without artificial focus blur.",
+    "10": "Faces too attractive; explicitly use ordinary reference faces.",
+    "11": "Perfect / incredible; explicitly add the animal.",
+    "12": "Strongly liked; accepted.",
+    "13": "Representation strongly liked; replace the overly attractive student faces using references.",
+    "14": "Looks good / really liked; accepted.",
+    "15": "Slightly lift one hand, about 30–45 degrees from body, and connect restrained lightning from hand down into rocks.",
+    "16": "Loved scene/alderkin; correct woman's waxy skin and overemphasized red cheeks.",
+    "17": "Correct waxy facial rendering. No request to change this civilian traveler's gender.",
+    "18": "Beautiful and specifically praised for material/light treatment; accepted.",
+    "19": "Liked woodland town and slight Asian influence. Original accepted; a light curved-eave variant also requested.",
+    "20": "Liked understated magic and industry; correct waxy material treatment.",
+    "21": "Liked inventive animal and anatomy; add dinosaur-like feathering while keeping body plan.",
+    "22": "Keep portal; make ordinary left window show an obviously nonsnowy, different setting.",
+    "23": "Liked concept; recast mourner as a white woman.",
+    "24": "Liked; accepted."
+  },
+  "image_count": 17,
+  "superseded_original_cleanup": {
+    "date": "2026-11-09",
+    "deleted_paths": [
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/01-copperlane-runner.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8cacb1da-a74d-4fff-8233-5178f5f93722.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/02-wayside-healer.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7ba5e343-e1ee-4c5d-a1de-96721fbf6feb.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/03-pass-road-guard.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-021cb485-ed73-478a-8f27-e811fa0b0a95.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/04-harbor-watch-officer.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-eb903505-8dcc-45b4-98cc-07a8ab0bc63b.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-4682a0a0-b7eb-4f95-8652-73903c67e1f9.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/07-dock-tally-keeper.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-330d84d5-2636-40a1-959f-1052f47051a5.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/09-town-on-the-old-road.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8dd18510-b257-4bf5-b46e-baeee5d72172.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/10-the-levy-hall.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-dccb42d5-ab36-4d02-acba-a0b945891585.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/13-the-evening-lesson.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6507162a-7967-4095-8900-4e7c773ddc41.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/15-stormbreak-raider.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5ad42461-5e3a-4243-ab3a-302a6dc2af61.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/16-the-alderkins-wager.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-373bee67-151e-48de-8439-f9944faff138.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/17-high-road-giant.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5dd6227d-b053-4d3e-ba1f-081d142a0d4d.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1dc73770-8dd9-4419-a837-d3d7c629a0b6.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/21-ash-white-lanner.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a25ef5e1-4be3-48e4-add8-3574f208f551.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/22-a-door-into-snow.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-05278145-db0d-4d6b-8344-0f1b8607f064.png",
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/middle-setting-round-07-2026-11-09/23-mothwake-mourner.png",
+      "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-51812e2b-f769-4765-b406-2ca9d8553370.png"
+    ],
+    "count": 32,
+    "accepted_originals_preserved": [
+      0,
+      6,
+      8,
+      11,
+      12,
+      14,
+      18,
+      19,
+      24
+    ]
+  },
+  "gallery": "GALLERY.html",
+  "creator_approval": {
+    "date": "2026-11-09",
+    "quote": "all are better now - good job! let's make sure those updates to direction are incorporated throughout",
+    "scope": "These 17 round-07 revisions; unrelated pending reviews retain their own statuses."
+  },
+  "validation": {
+    "accepted_revision_count": 17,
+    "all_accepted_hashes_verified": true,
+    "canonical_directory": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09"
+  }
+}

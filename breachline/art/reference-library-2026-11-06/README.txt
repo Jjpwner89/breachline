@@ -1,7 +1,7 @@
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 
-44 active PNG sheets, all 1536 x 1024.
+70 active PNG sheets, all 1536 x 1024.
 7 species sheets: three body views and six heads each.
 1 additional human sheet: eight heads, preserving the first human sheet.
 2 retained first-batch equipment sheets: Vigil and Gnosis, 12 slots each.
@@ -11,6 +11,8 @@ BREACHLINE - NEUTRAL REFERENCE LIBRARY
 6 accepted round-04 magic studies.
 5 accepted round-05 magic studies; Wardsteel cuirass remains pending.
 6 round-06 references: four whole sheets and two preserved components.
+26 accepted round-07 paintings across 25 subjects: nine originals and seventeen
+approved revisions, including both cedar-roof variants and the Cobalt rapier card art.
 Total: 50 head studies (14 human), 24 retained equipment design slots,
 and 36 new equipment design groups awaiting review.
 
@@ -39,6 +41,25 @@ Use the setting and latest creator feedback to maintain coherence. A sample
 character's job, clothes or belongings do not define their whole people or
 faction. The library should help new work belong in the world while allowing
 it to go beyond these initial examples.
+
+CURRENT DIRECTION — CONFIRMED 2026-11-09
+Canonical source: ../../../.claude/skills/art-direction/SKILL.md
+These defaults apply to new card, character, equipment, creature and world art.
+Interface paintings use the same material principles with quieter contrast.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 
 PEOPLE (in people/)
 01-humans.png
@@ -274,7 +295,8 @@ equipment appropriate to [role, context and scene]. Explore a distinct face,
 silhouette, clothing cut and practical gear; designs absent from the sheets
 are welcome. Keep established species traits, coherent materials and clear
 construction. The examples are not a fixed cast, wardrobe or equipment list.
-Create this action and scene: [specific scene].
+Choose the presentation for [visual aim, subject and scene]; action is optional.
+Apply the current casting, faces, material and painted-attention defaults above.
 Use fresh staging, camera and lighting. Review against recent art to avoid
 repeating the same faces, outfits, weapons and compositions.
 
@@ -307,6 +329,11 @@ Generation prompt records, marked reconstructed briefs, source provenance, dimen
 and checksums are in prompts-and-manifest.json.
 
 CURRENT PACKAGE
-breachline-neutral-reference-library-2026-11-09-reviewed-v8.zip contains
-only the 44 active images, this guide and prompt/review records. The original first-batch
+breachline-neutral-reference-library-2026-11-09-reviewed-v10.zip contains
+only the 70 active images, this guide and prompt/review records. The original first-batch
 ZIP predates the removal review and is superseded as a current reference set.
+
+ROUND 07 REVIEW — 2026-11-09
+All seventeen revised paintings are accepted and included in middle-setting-round-07-2026-11-09/. Nine earlier approved paintings also remain, for 26 images across 25 subjects; both cedar-roof variants are valid.
+Use 02/13 for ordinary face casting, 09 for quietly simplified distance, 04 for blended armor influences, 07 for abstract functional construct design, and 00/18 for selective material reflections. Consult each for the relevant quality and invent beyond it.
+Cobalt rapier remains approved finished Equipment card art; roof glider is included in the setting. This selection does not approve unrelated pending batches or settle new gameplay, biology, prevalence or faction-wide rules.

@@ -1,8 +1,10 @@
 # Breachline campaign map briefs
 
+**Current direction — 2026-11-09:** Read the [art-direction skill](../../.claude/skills/art-direction/SKILL.md) and [reference guide](reference-library-2026-11-06/README.txt). Use measured brushwork, material-specific reflection and deliberately varied detail; terrain and routes must remain legible. Card casting and portrait composition defaults apply only if people are depicted. The earlier atlas and River Road map were rejected for scale and oversized pictorial symbols; they supply neither approved geography nor a style template. The proposed routes below retain their separate review status.
+
 For: Codex, generating images. Drafted 2026-11-06.
 
-Make five painted campaign maps, one for each alignment. The game draws its route markers and labels on top of each painting, so the paintings must contain no interface elements and must leave room for them.
+These briefs propose five painted campaign maps, one for each alignment. The game draws its route markers and labels on top of each painting, so the paintings must contain no interface elements and must leave room for them.
 
 ## Status of what's here
 
@@ -16,10 +18,7 @@ Make five painted campaign maps, one for each alignment. The game draws its rout
 1. `.claude/skills/art-direction/SKILL.md`. Its latest creator feedback overrides anything here.
 2. `breachline/SETTING.md`, including the peoples and creatures catalogue and its status labels.
 
-Use the main project checkout at `/Users/dpuser/Documents/Claude/Games`, because these files are uncommitted there:
-
-- `breachline/art/campaign-2026-11-05/02-river-road-map.png`: **viewpoint and level of detail only.** Its high angle, miniature settlements, readable terrain and painted handling are the starting point. Don't copy its layout. The creator's response to it isn't recorded, so treat it as a study, not an approved style.
-- `breachline/art/campaign-2026-11-05/01-world-atlas.png`: the rough location of each region. It's provisional, and these maps aren't exact crops of it.
+The earlier atlas and River Road image references are superseded. Consult the current skill for the creator's map feedback; do not restore the rejected images, oversized map symbols or provisional geography. Route coordinates below remain proposals requiring review.
 
 ## Requirements for every map
 

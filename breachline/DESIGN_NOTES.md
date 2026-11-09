@@ -147,7 +147,7 @@ The creator found the old UI dull: a flat background, and card borders, textures
 - **Board:** a linen war map, with the grid inked over it in code.
 - **Card frames:** blackened iron with gold trim.
 - **Title bars:** crimson on every card, as in `card.html`. The game still colours them by alignment until the card frame phase.
-- **Buttons:** carved wood with a brass edge, the main action gilded. Every button label is set in Cormorant SC (the `--button` font), chosen from eight fonts on 2026-11-09 after the creator disliked the first lettering.
+- **Buttons:** carved wood with a brass edge, the main action gilded. Every button label is set in Cormorant SC, chosen from eight fonts on 2026-11-09 after the creator disliked the first lettering. Titles, headings, card names, stats and numbers then moved to it too (`--display`, sizes up 12% because it sets small), so the lettering matches throughout; body and rules text stay in Alegreya.
 - **Extras:** a card back, table props and painted attack and health plaques.
 - **Order:** the table, then the home screen, card frames, buttons and panels, then the extras.
 
@@ -226,14 +226,10 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 - **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
 - **Interface art:** the paintings live in `art/ui/`. Run `swift art/build-ui.swift` after replacing one; it crops, tiles and resizes them into `art/web/ui/`, which the game uses. Publish `art/web/ui/` with the rest of `art/web/`.
 
-## Waiting to apply
+## Art direction handoff
 
-Art direction changes from the creator's 2026-11-08 verdicts. These wait until Codex finishes its current art work, then go into the `art-direction` skill, and this section is deleted:
-- **Detail versus resolution:** fine brushwork and a painted look are wanted, but a face rendered at much higher resolution than the brushwork around it looks AI-made. A Monet is detailed and precise without being high resolution. Replace the general "rich detail" wording and the "simplify into broader shapes" wording with this.
-- **Repetition:** delete "avoid red capes", "rain only when briefed", the list of stone, ivy, rain and grey haze in the backgrounds section, and the "Repetition to watch" list. Keep one line: vary weather, clothing and backgrounds across a batch.
-- **Attacks at the viewer:** replace each "don't aim attacks at the viewer" with: keep poses varied, and only rarely aim an attack at the viewer.
-- **Orcs:** the coarse, visibly nonhuman look applies to all orcs, not just the pathguard.
-- **Lion folk:** keep "generally keep to themselves" and the note that they appeared too often.
-- **Correction trails:** keep only current rules. Remove lines about what an earlier rule was, and replace the per-item "don't generalize this" guards with one line: feedback applies to the image or batch it was about unless the creator says otherwise.
-- **The alignment table:** black and green have art now, so their rows are no longer only proposals.
-- **Interface art:** add a short section pointing to `art/UI_ART_BRIEFS.md`. Interface art uses the card painting style, kept quiet and low in contrast so cards stay the clearest thing on screen, and the card composition rules don't apply to it.
+The creator's 2026-11-08 and 2026-11-09 direction is incorporated in the [art-direction skill](../.claude/skills/art-direction/SKILL.md), the card and interface brief entry points, prompt defaults and the [reference guide](art/reference-library-2026-11-06/README.txt). Consult the current defaults before preparing art; original generation prompts remain provenance.
+
+All seventeen round-07 revisions are accepted, bringing that reference folder to 26 paintings across 25 subjects, including both cedar-roof variants. The accepted revisions demonstrate varied ordinary faces, predominantly male aggressive frontline casting, naturally diffuse skin and cloth, selective reflections, measured brushwork and quieter secondary detail, mixed cultural design influences and more abstract functional constructs. Keep vivid colour, varied magic and continued invention beyond the references.
+
+This approval concerns round 07 only. Other batches retain their own review statuses. Individual visual approvals do not automatically establish lore, gameplay or a universal faction style.

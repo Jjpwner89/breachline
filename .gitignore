@@ -2,3 +2,9 @@
 .claude/settings.local.json
 .claude/worktrees/
 *.zip
+
+# Local fal art tooling and private job records
+/.env.fal
+/.venv-fal/
+/breachline/art/nsfw/fal-output/
+**/__pycache__/

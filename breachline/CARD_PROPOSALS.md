@@ -239,3 +239,15 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 2. **A vampire:** the Ashen Court envoy is a place for one, kept subtle and shown as a court official. Should it be one, or stay human?
 3. **Muster the levy:** with Loyal on Militia spearman, it summons two 3 / 3s for 3 mana. Raise it to 4?
 4. **Flavour:** none of the Set 6 cards has flavour text yet.
+
+## Creator-selected equipment subject — Cobalt rapier
+
+**Selected by the creator, 2026-11-09:** the sword preserved from the Cobalt duelist study becomes an **Equipment** card. Working title: **Cobalt rapier**.
+
+The subject and card type are decided. Card number, alignment/faction, cost, wants and rules remain open for the card-design pass. This entry records the selection without reserving a number in the concurrent proposal batches or implying gameplay implementation.
+
+- Accepted design: [Cobalt rapier reference](art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png).
+- Finished painting approved 2026-11-09, exceptional with no notes: [Cobalt rapier card art](art/cobalt-rapier.png). It is registered in the finished card-art collection; rules and cost remain open.
+- [Card-art brief](art/work-in-progress/middle-setting-round-07-2026-11-09/COBALT_RAPIER_CARD_BRIEF.txt) and [exact prompt / provenance](art/work-in-progress/middle-setting-round-07-2026-11-09/review-manifest.json).
+
+Preserve the accepted brass guard, dark grip, cobalt stone and restrained blue blade refraction. The rejected duelist is not part of this card selection.

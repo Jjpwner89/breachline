@@ -6,15 +6,15 @@
   "usage": [
     "Use only the assets listed here when selecting finished card art.",
     "Each asset has one canonical full-size PNG and one smaller JPEG used by the game. These are deliberate delivery formats, not alternative designs.",
-    "32 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
+    "33 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
     "73 other images already serve cards in the current prototype; card_ids identify those assignments.",
     "Do not regenerate or restore the rejected pottery spell, salvager or superseded versions.",
     "Reference sheets, exploratory concepts, maps, campaign images and works in progress are separate resources and are not part of this card-art selection.",
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 105,
-    "new_card_art": 32,
+    "final_images": 106,
+    "new_card_art": 33,
     "already_used_by_game": 73,
     "existing_card_ids": 73
   },
@@ -48,6 +48,12 @@
       "units": 3,
       "spells": 2,
       "total": 6
+    },
+    "unassigned": {
+      "objects": 1,
+      "units": 0,
+      "spells": 0,
+      "total": 1
     }
   },
   "excluded": [
@@ -2242,6 +2248,26 @@
       ],
       "source_set": 5,
       "selected_date": "2026-11-09"
+    },
+    {
+      "id": "cobalt-rapier",
+      "title": "Cobalt Rapier",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": null,
+      "alignment": "Unassigned — creator selection pending",
+      "suggested_type": "Equipment",
+      "possible_role": "Open; subject and Equipment type selected, rules and cost undecided",
+      "png": "cobalt-rapier.png",
+      "web_jpeg": "web/cobalt-rapier.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6c5b9b1b098133b350007d523ef7537da608ce7f7078191112bf7699e4601a04",
+      "web_sha256": "da5280ef3128e08ef11e01736352d53eca79db18a0316da9d8510f615df5d260",
+      "card_ids": [],
+      "creator_approval": "2026-11-09: exceptional, no notes"
     }
   ]
 }

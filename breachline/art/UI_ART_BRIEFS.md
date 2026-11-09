@@ -1,5 +1,23 @@
 # Breachline UI art briefs
 
+<!-- CURRENT_ART_DIRECTION_BEGIN -->
+**Current direction — confirmed 2026-11-09:** Read the [current art direction](../../.claude/skills/art-direction/SKILL.md) and [accepted-reference guide](reference-library-2026-11-06/README.txt) before using any brief. The following defaults supersede older shared wording; specific approved character identities and explicit local feedback still govern.
+
+CASTING: For new highly aggressive frontline fighters, the vast majority should be men; female soldiers remain occasional. Women remain welcome as mages, archers, civilians and other characters. Preserve specifically approved identities unless the creator requests a change.
+
+FACES: Actively consult the human/species face sheets. Use specific ordinary reference faces for corrective casting, and draw on their varied skulls, noses, jaws, ages and asymmetries when inventing new people. Keep generally appealing faces and occasional exceptional beauty; avoid repeated model faces, compulsory ugliness and uncanny skin detail.
+
+MATERIALS: Skin, wool, wood and stone have naturally diffuse surfaces. Reserve stronger reflections for appropriate metal, glass or water. Avoid waxy faces, uniform surface shine and habitual red cheeks, especially on heavyset women. Keep vibrant color and convincing light.
+
+PAINTED ATTENTION: Match brush size, edge precision and detail locally. Focal features can be precise; secondary people and distant places stay legible with fewer marks and quieter contrast. Do not combine coarse texture with uniformly hairline detail, render everything equally sharply, or substitute camera blur and tunnel focus.
+
+DESIGN RANGE: Constructs may have abstract functional anatomy, asymmetry and open space; they need not resemble armored human knights. Gnosis combines scholarly high fantasy with broader steam-era craft, not an optics uniform. Blend selected Asian armor details into the established kit; modest curved eaves are a valid architectural option. These are examples, not mandatory formulas.
+
+MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and industrial applications can coexist without universal equipment, visible power feeds or glowing threads. Keep grounded steam machinery and creature/direct magical flight distinct from the rejected hovering magitech vessels. Choose a compelling image; card rules do not require an ability demonstration.
+
+REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
+<!-- CURRENT_ART_DIRECTION_END -->
+
 16 images for the UI refresh, written on 2026-11-09 from the creator's picks on the [proposal page](https://claude.ai/artifact/WmUf7MW4bpvcirLrs9RpvJ). **Status: all 16 source PNGs generated on 2026-11-09 in `art/ui/`; prepared and built into the game with `art/build-ui.swift`, awaiting creator review.** Review [the gallery](ui/UI_GALLERY.html), [handoff notes](ui/README.txt) and [exact prompts and dimensions](ui/UI_ASSET_MANIFEST.json). The decisions behind them are in the "UI refresh" part of `../DESIGN_NOTES.md`. These images are materials, a home screen and furniture for the interface, not card art, so card rules about subjects, poses and stories don't apply to them.
 
 The briefs are grouped in the order the creator chose: the table first, then the home screen, card frames, buttons and panels, and the extras. Generate a group whenever it suits; the game uses a stand-in in each place until the painting arrives.
@@ -22,7 +40,7 @@ Apply this to every image:
 ```text
 Create one original asset for the interface of Breachline, a high-fantasy card game whose cards are traditional oil and acrylic fantasy paintings. This asset sits around and behind those paintings, so it must look painted in the same hand: visible but quiet brushwork, broad coherent light, believable materials. Never a photograph, 3D render, game-engine material, vector art or flat graphic.
 
-Keep it calm. Low contrast, a limited palette and no busy detail, because card text, numbers and paintings sit on top of it and must stay the clearest thing on screen. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain.
+Apply casting rules only if people appear. Keep the interface calm. Low contrast, a limited palette and no busy detail, because card text, numbers and paintings sit on top of it and must stay the clearest thing on screen. Detail is fine and precise rather than noisy; no uniform microtexture, glossy highlights or sharpened grain.
 
 Include no text, letters, numbers, runes, logos, watermarks or signatures anywhere. Unless the brief says otherwise, show the object straight on, evenly lit from the upper left, with no perspective, vignette or dramatic shadow.
 ```
