@@ -208,3 +208,59 @@ These are estimates for 40-card decks at other land counts, for the first player
 | 16 of 40 | 40% | 10% |
 | 15 of 40 | 38% | 14% |
 | 14 of 40 | 35% | 18% |
+
+## Build focus coverage
+
+Counted on 2026-11-09 against the build focuses in `DESIGN_NOTES.md`: the 82 built cards, plus proposals 31 to 42 from `CARD_PROPOSALS.md`. A card counts toward a focus only when it actively does that thing or rewards it, and many count toward two. Ten plain cards count toward none, which is fine for cheap units. In the table, "2 +1" means 2 built cards and 1 proposed.
+
+A 40-card deck has 26 non-land cards, about 9 different cards at 3 copies each. So a focus needs about 8 supporting cards within one or two colours before a deck can be built around it.
+
+| Focus | Built | Proposed | White | Blue | Black | Red | Green | Neutral |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Big creatures and extra mana | 15 | 1 | 3 | 1 | 1 | 4 | 6 | · +1 |
+| Holding ground | 8 | 3 | 6 | 2 +1 | · +1 | · | · | · +1 |
+| Control | 9 | 2 | · | 4 +2 | 2 | 1 | 2 | · |
+| Healing and recovery | 10 | 0 | 4 | 1 | 3 | · | 2 | · |
+| Direct damage and racing | 7 | 2 | · | · +2 | 1 | 6 | · | · |
+| Ambush, fliers and movement | 7 | 2 | 1 | 1 +1 | · +1 | 3 | 1 | 1 |
+| Equipment and enchantments | 5 | 3 | 3 | · +2 | · | · +1 | 2 | · |
+| Standing together and flanking | 7 | 0 | 4 | · | 1 | 2 | · | · |
+| Ranged attackers | 5 | 2 | · | 5 +1 | · | · | · +1 | · |
+| Card flow | 6 | 0 | · | 3 | · | · | 1 | 2 |
+| Sacrifice and death triggers | 2 | 1 | · | · | 2 +1 | · | · | · |
+| Raising from the discard pile | 3 | 0 | · | · | 3 | · | · | · |
+| Tile effects and area | 1 | 1 | · | · +1 | · | 1 | · | · |
+| Tokens | 1 | 0 | · | · | · | · | 1 | · |
+| Faction loyalty | 0 | 0 | · | · | · | · | · | · |
+
+Ranged attackers wasn't on the draft focus list. It's added here because it's a listed Gnosis strength.
+
+What the counts show:
+
+- **Ready to build a deck around:** big creatures, mostly in green and red. Holding ground in white. Direct damage and racing in red.
+- **Close:**
+  - Control, healing, ranged attackers, standing together, and ambush and movement each have 5 to 10 cards.
+  - Most of them sit in a single colour, so they don't yet stretch across colours the way the focuses should.
+- **Thin:**
+  - Sacrifice and death triggers, and raising from the discard pile: 2 to 3 black cards each. The only death trigger is the proposed Porcelain-visored retainer.
+  - Card flow: no card yet adds cards to your hand.
+- **Empty or nearly empty:**
+  - Tokens: one payoff, Clearing the channel, and no card that summons units.
+  - Tile effects: Cinderfall's splash only.
+  - Faction loyalty: no card rewards staying within a faction.
+  - Tokens and tile effects are new mechanics and need their first cards. Faction loyalty needs a rule decided before any cards can reward it.
+- **Focuses stuck in one colour:**
+  - Ranged is all blue.
+  - Raising from the discard pile and sacrifice are all black.
+  - Racing is nearly all red.
+  - Standing together has no green herd cards.
+  - Equipment has no built red card.
+
+Suggested priorities for the next card batch:
+
+1. **Tokens:** summoners in white, red, green and black, plus one or two payoffs.
+2. **Sacrifice and death triggers:** in black, red and white.
+3. **Tile effects and spells aimed at a tile:** in blue, red, green and black.
+4. **New keywords seeded into focuses that are close to ready:** Flanking, Holding ground and Ambush.
+
+Vigil and Fervor got the fewest cards in the last batch, and tokens would give both of them cards.
