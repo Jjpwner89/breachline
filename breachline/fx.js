@@ -224,19 +224,32 @@ var SpellFX = (function () {
     } });
   }
 
-  // Painted impact sheets from Codex: 3 x 2 frames on a transparent sheet, played over the procedural burst.
-  // List a family here once its sheet is in art/web/fx/, e.g. fire: 'art/web/fx/impact-fire.png'.
-  var IMPACT_SHEETS = {};
-  var sheets = {};
-  Object.keys(IMPACT_SHEETS).forEach(function (k) { var im = new Image(); im.onload = function () { sheets[k] = im; }; im.src = IMPACT_SHEETS[k]; });
-  function playSheet(family, b, ms) {
+  // Painted impact sheets: 3 x 2 frames on a transparent sheet, played over the procedural burst.
+  // Sources and prompts are in art/fx/; these are the game copies.
+  var IMPACT_SHEETS = {
+    fire: 'art/web/fx/impact-fire.png', storm: 'art/web/fx/impact-storm.png', frost: 'art/web/fx/impact-frost.png',
+    thorns: 'art/web/fx/impact-thorns.png', blight: 'art/web/fx/impact-blight.png', holy: 'art/web/fx/impact-holy.png'
+  };
+  var PROJECTILES = { thorns: 'art/web/fx/projectile-thorns.png' };
+  var sheets = {}, missiles = {};
+  function preload(list, into) { Object.keys(list).forEach(function (k) { var im = new Image(); im.onload = function () { into[k] = im; }; im.src = list[k]; }); }
+  preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles);
+  // Each frame dissolves into the next, so six frames still read as one motion. scale is the frame's width in tiles.
+  function playSheet(family, b, ms, scale) {
     var im = sheets[family];
-    if (!im) return;
-    var fw = im.naturalWidth / 3, fh = im.naturalHeight / 2, size = b.w * 1.7;
+    if (!im) return false;
+    var fw = im.naturalWidth / 3, fh = im.naturalHeight / 2, size = b.w * (scale || 1.7), h = size * fh / fw;
+    function frame(i, a) {
+      if (a <= 0.01) return;
+      ctx.globalAlpha = a;
+      ctx.drawImage(im, (i % 3) * fw, Math.floor(i / 3) * fh, fw, fh, b.x - size / 2, b.y - h / 2, size, h);
+    }
     actor({ ms: ms, over: function () {
-      var i = Math.min(5, Math.floor(this.t / ms * 6));
-      ctx.drawImage(im, (i % 3) * fw, Math.floor(i / 3) * fh, fw, fh, b.x - size / 2, b.y - size * fh / fw / 2, size, size * fh / fw);
+      var p = Math.min(5, this.t / ms * 5.6), i = Math.floor(p), f = p - i;
+      frame(i, 1 - f); if (i < 5) frame(i + 1, f);
+      ctx.globalAlpha = 1;
     } });
+    return true;
   }
 
   // How each tile effect looks: its colours, what it leaves behind in flight, and how it lands.
@@ -310,7 +323,8 @@ var SpellFX = (function () {
         if (!this.p) return;
         var s = L.size * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
         if (kind === 'blight') { ctx.fillStyle = '#140a1c'; ctx.beginPath(); ctx.arc(x, y, s * 0.75, 0, 7); ctx.fill(); }
-        if (kind === 'thorns') bramble(x, y, s * 1.1, this.t / 110);
+        if (kind === 'thorns' && missiles.thorns) { var m = s * 4.4; ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 110); ctx.drawImage(missiles.thorns, -m / 2, -m / 2, m, m); ctx.restore(); }
+        else if (kind === 'thorns') bramble(x, y, s * 1.1, this.t / 110);
         if (kind === 'frost') {
           ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 160); ctx.strokeStyle = 'rgba(255,255,255,.9)'; ctx.lineWidth = 1.4;
           for (var i = 0; i < 3; i++) { ctx.rotate(Math.PI / 3); ctx.beginPath(); ctx.moveTo(-s, 0); ctx.lineTo(s, 0); ctx.stroke(); }
@@ -414,12 +428,13 @@ var SpellFX = (function () {
     var L = LOOK[kind], x = b.x, y = b.y;
     hitStop(kind === 'holy' ? 40 : 75);
     shake(kind === 'charge' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
-    playSheet(L.family, b, 560);
+    // With a painted sheet, the code-drawn centrepiece (vines, rot pool, crystals) steps aside; sparks, debris and light stay.
+    var painted = playSheet(L.family, b, 820);
     if (kind === 'blight') {
       // Blight darkens rather than flashes.
       flash(x, y, b.w * 0.4, L.deep, 260);
       ring(x, y, 8, b.w * 0.8, 'rgba(20,8,30,.9)', 620, 9, 'dark');
-      rot(b);
+      if (!painted) rot(b);
       return;
     }
     flash(x, y, b.w * 0.75, L.glow, 340);
@@ -434,9 +449,9 @@ var SpellFX = (function () {
     } else if (kind === 'frost') {
       burst(x, y, 34, [120, 380], function () { return { kind: 'shard', size: rnd(3, 7), col: Math.random() < .5 ? '#e8f6ff' : '#a9dcff', life: rnd(.5, .9), grav: 520, drag: 1.4 }; });
       burst(x, y, 10, [20, 70], function () { return { kind: 'smoke', size: rnd(8, 13), col: L.smoke, life: rnd(.6, 1), drag: 2, alpha: .45 }; });
-      crystals(x, y, b.w * 0.42, 7);
+      if (!painted) crystals(x, y, b.w * 0.42, 7);
     } else if (kind === 'thorns') {
-      brambles(b);
+      if (!painted) brambles(b);
       burst(x, y, 40, [120, 360], function () { return { kind: 'dirt', size: rnd(2, 4.5), col: Math.random() < .5 ? '#4a3518' : '#6b4f26', life: rnd(.5, .9), grav: 820, drag: 1 }; });
       burst(x, y, 18, [60, 220], function () { return { kind: 'leaf', size: rnd(3, 6), col: Math.random() < .5 ? '#4e7a2a' : '#7aa840', life: rnd(.8, 1.2), grav: 200, drag: 2 }; });
     } else if (kind === 'holy') {
@@ -463,8 +478,10 @@ var SpellFX = (function () {
       } });
     });
   }
-  function land(kind, b) {
+  // A smaller hit on each other tile the spell reaches; the wave's first tile already had the full impact.
+  function land(kind, b, noSheet) {
     var L = LOOK[kind];
+    if (!noSheet) playSheet(L.family, b, 640, 1.15);
     flash(b.x, b.y, b.w * 0.45, L.glow, 260); ring(b.x, b.y, 6, b.w * 0.55, L.core, 380, 4); shake(3);
     if (kind === 'frost') burst(b.x, b.y, 14, [80, 220], function () { return { kind: 'shard', size: rnd(2.5, 5), col: '#e8f6ff', life: rnd(.4, .7), grav: 480 }; });
     else if (kind === 'burn') burst(b.x, b.y, 20, [100, 300], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffd27a' : L.glow, life: rnd(.3, .5), grav: 600 }; });
@@ -479,7 +496,7 @@ var SpellFX = (function () {
         var pos = this.t / ms, i = Math.min(tiles.length - 1, Math.floor(pos));
         var a = centre(tiles[i]), b = centre(tiles[Math.min(tiles.length - 1, i + 1)]), f = pos - i;
         var x = i >= tiles.length - 1 ? a.x : lerp(a.x, b.x, f), y = i >= tiles.length - 1 ? a.y : lerp(a.y, b.y, f);
-        for (var j = 0; j <= i; j++) if (!seen[j]) { seen[j] = 1; land('burn', centre(tiles[j])); }
+        for (var j = 0; j <= i; j++) if (!seen[j]) { seen[j] = 1; land('burn', centre(tiles[j]), j === 0); }
         if (dt) for (var n = 0; n < Math.ceil(dt * 160); n++) spawn({ kind: 'glow', x: x + rnd(-a.w * .48, a.w * .48), y: y + rnd(-6, 10), vx: rnd(-20, 20), vy: rnd(-160, -60), size: rnd(8, 16), col: Math.random() < .5 ? L.glow : L.deep, life: rnd(.3, .55), grav: -100 });
         if (pos >= tiles.length) { ok(); return false; }
         return true;
