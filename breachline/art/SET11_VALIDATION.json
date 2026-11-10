@@ -1,0 +1,439 @@
+{
+  "set": 11,
+  "checked_at_utc": "2026-11-10T20:50:26.359344+00:00",
+  "result": "passed",
+  "generation_method": "built-in image_gen",
+  "paintings": 11,
+  "total_generation_attempts": 13,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "skipped": [],
+  "checks": {
+    "all_files_present": true,
+    "dimensions_correct": true,
+    "formats_correct": true,
+    "pngs_decode": true,
+    "jpegs_decode": true,
+    "selected_sources_match": true,
+    "web_exports_reproduce_exactly": true,
+    "references_match_recorded_hashes": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_attempt_per_painting": true,
+    "requested_card_numbers_match": true,
+    "gallery_links_valid": true,
+    "gallery_ids_unique": true,
+    "all_images_visually_inspected": true,
+    "workspace_writes_confined_to_set11": true,
+    "gallery_has_11_images": true,
+    "card_115_included": true,
+    "other_18_set11_image_exports_unchanged": true,
+    "current_briefs_and_metadata_reconciled": true,
+    "gallery_shows_both_revisions": true,
+    "all_11_current_selections_creator_approved": true,
+    "all_22_image_exports_unchanged_by_finalization": true,
+    "final_gallery_statuses_consistent": true,
+    "outdated_set11_images_removed": true,
+    "deleted_historical_inputs_documented": true,
+    "selected_final_sources_match": true,
+    "all_final_image_exports_unchanged_by_cleanup": true,
+    "gallery_has_no_outdated_version_links": true,
+    "only_set11_files_in_commit_manifest": true
+  },
+  "visual_review_note": "All eleven current paintings are creator-approved final. Both revised spells are selected. Cleanup removed six obsolete archive/source image files while retaining exact prompt history and checksums. All final PNGs, JPEGs and selected sources were rechecked; dimensions, formats, reproducible JPEG exports and gallery links passed. Browser rendering was not verified because the browser tool blocks file URLs.",
+  "files": [
+    {
+      "number": 110,
+      "file": "still-flame-chaplain.png",
+      "web_file": "web/still-flame-chaplain.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "eb24b711e06463358f14b9cae7149fd4674b9a62278973a6935d74ae35e47107",
+      "web_sha256": "7bfc876d185348a6464404df3691554fc2f8845fc9f4d06c20d372aba20b69cf",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected raised arm from shoulder to wrist, censer handle grip, separate resting hand, two supported boots on the wall, secondary soldier scale and warm shoulder light. Robe, smoke and sky share measured paint. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 2717593,
+      "jpeg_bytes": 116851,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-69391750-9be4-411d-a462-033e031439f4.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 115,
+      "file": "white-flier.png",
+      "web_file": "web/white-flier.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f4731b86622321ebfcce7acb4157ddcbdd17794c1566d9d3ad1221305dfc2f85",
+      "web_sha256": "ee8f826ea6466e9df9aee3260c022339b1fd7b1216f3a99f977d78450dd8bbc5",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected the continuous head-to-tail body and shallow undulating spine, repeated vane roots and natural membrane supports, with no detached segments or extra limbs. The small shepherd and four sheep provide a consistent shared-ground scale cue. Whole creature stays inside the frame; transmitted light produces soft coloured shadows. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 2687433,
+      "jpeg_bytes": 151920,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-7ea97169-7a0f-4db9-a055-3019d057caf6.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 141,
+      "file": "humbling-light.png",
+      "web_file": "web/humbling-light.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "c1f080bcedde6d08f51d26276bc000eb04d588d224187f4d0b02207757ac61dd",
+      "web_sha256": "ae5f93e87134b50b8e70a4161417e0830ed5c9c448362ba521b504de735c6cdd",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected two arms, shielding palm, grounded right foot and left kneeling leg; torso and pelvis form a coherent kneel. Five distant soldiers establish scale. Giant is alive and shielding his eyes. Left hand rests on the kneeling thigh rather than the prompted raised knee, an acceptable pose variation. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 2643356,
+      "jpeg_bytes": 145686,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-8d02f1e6-7b0b-4d61-a86e-de07c0eb3fa7.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 133,
+      "file": "unwind-the-step.png",
+      "web_file": "web/unwind-the-step.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e6fad3a3e31fe3473448a74b4304210d91977e2ebdbbe03243a027572d383343",
+      "web_sha256": "d68d8e00b1834ae8b425563f6a2cd3c257e8df057fa37a22cd3623fac07e86c3",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected backward torso recoil, two connected solid arms and legs, front heel scrape and rear-boot support, opposing forward cloth momentum and a separate pale abandoned stride ahead. The solid figure reads as halted rather than charging; axe grip and head identity remain coherent. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 2,
+      "png_bytes": 2799775,
+      "jpeg_bytes": 128310,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-3827f8b6-63ae-4efa-a1c9-e289d5cc1447.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 146,
+      "file": "frostbreak.png",
+      "web_file": "web/frostbreak.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f4f31b23c1f2a6679fa47ca4af754a6d3eb6544c723e02a166abeb924c6c1c05",
+      "web_sha256": "3fcf6aa40f22b73792f5606f9c9af932c37c7b76b2e3be7cc879caab8654d34a",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected staff-to-fracture contact, continuous foreground sleeve and glove, open gap through the frozen torso, large chest/shoulder/forearm/shield fragments and two planted legs. Break surfaces are ice without blood or tissue. The frozen person visibly shatters; three intact soldiers remain behind. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 2,
+      "png_bytes": 3205810,
+      "jpeg_bytes": 217932,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-3dd97fc1-14b4-46b9-893b-06a4a5c13953.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 181,
+      "file": "ossuary-engine.png",
+      "web_file": "web/ossuary-engine.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "681a2a849e0af915abd9e1313b7dbf5949a523755e98ebd5e5d31576daf6a1d0",
+      "web_sha256": "2a55048fbe96e2e29badd988ccfeccc6736be31b5e0f409a954e3b19986b0ef0",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected the low open chassis, rib/bone attachment sockets, eight staggered leg positions and terrain contacts; far-side supports are partly occluded but distinct from near-side legs. Attendants have coherent visible limbs and basket grips. Censer smoke and cold barrow atmosphere retained. New construct remains a proposal. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 2746575,
+      "jpeg_bytes": 131543,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-a86f9e50-e167-42ca-a73f-419ce856bbac.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 161,
+      "file": "cinder-rain.png",
+      "web_file": "web/cinder-rain.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "4d81d01e6f2decdded8d4aa1694bc014f0afd256ec89fcfc5c2fe0e42306bd18",
+      "web_sha256": "b569ad0b8fae284a984fb7c46f07b6ef3eb4cc9cb2cda2da4c0889f946ff2156",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected three separate ember impacts, roof support and street perspective, sheltered foreground pair and doorway figure. Visible hands, shoulders and supporting stances are coherent; the people remain secondary to scattered sparks and blue night. No single giant fall. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 2795428,
+      "jpeg_bytes": 165582,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-653e22a2-719c-4a45-84ed-6ed35ca1650b.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 165,
+      "file": "overgrowth.png",
+      "web_file": "web/overgrowth.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "5660d1651180303ccc66e9d6a0f3840ea02abca309f794783b532309d9cee4c3",
+      "web_sha256": "15cec8b53767c0185b6f664574fd862aac9637a55eff560043f271df8b542a0d",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected coherent branching thorn vines, roots at broken paving, fountain and colonnade scale. The small caster has two grounded legs and a connected raised arm with a readable hand. Stone and foliage retain distinct matte materials, with the large growth as focal subject. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 3448912,
+      "jpeg_bytes": 206430,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-917956d1-f851-40a8-9508-c6ffb7bea02c.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 169,
+      "file": "thornwarden-trapper.png",
+      "web_file": "web/thornwarden-trapper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "41a91561ebd3bc865f580e1922ee85ca44126c71b9871c2836eb7249099f3652",
+      "web_sha256": "56abe038a8f6368579f117dd2c6daf5d98634547398a468968c1979e3eaf5ed2",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected both shoulder-to-glove connections, thumb/finger contacts on the vine, one raised planted leg and one grounded kneeling leg. Vine coil is partly supported by earth; the new growing tip stays small. Plain individual face and practical felt/canvas clothing retained. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 3015293,
+      "jpeg_bytes": 168693,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-0d010c85-890e-4b6b-9788-fa3853e7632c.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 170,
+      "file": "mosshorn-grazer.png",
+      "web_file": "web/mosshorn-grazer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "344041dd7eca73be81c46fd2da8efb06bd3fc9a7eca679a5b004720e11e01f1f",
+      "web_sha256": "7be8c925083d338f92da5186b7484016d6003ea7795b381d8b9a77ce348f483a",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected adult's paired horn roots, continuous head/neck/spine, weight-bearing leg positions and calf's distinct limb silhouette. Some far-side anatomy is naturally occluded by coat and calf. Moss occupies horn grooves; scale is consistent with ruins and calf. New species remains a proposal. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 3320770,
+      "jpeg_bytes": 199187,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-5cdda3ae-84ec-4d26-a1ae-7809ab07505c.png",
+      "finalized_date": "2026-11-10"
+    },
+    {
+      "number": 180,
+      "file": "waystone-golem.png",
+      "web_file": "web/waystone-golem.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "a5187a435cdd7a66847fc03b5a198964f3fd26b5556201e9959dc5f89d1693ad",
+      "web_sha256": "5c4e270ac4319c5259f386a5ca122ed985421fd4b60c2103a5f80207205558da",
+      "review_status": "creator_approved_final",
+      "inspection_note": "Inspected two connected arms and two load-bearing stone legs, supported traveller bundle, stone finger contact, road plane and distant human scale cue. Open torso gaps and carved distance numerals are readable; numerals are integral stone carving requested by the brief, not an overlaid title. New construct remains a proposal. Creator approved this painting as final on 2026-11-10.",
+      "selected_attempt": 1,
+      "png_bytes": 3167077,
+      "jpeg_bytes": 200452,
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-87c0dcc2-c426-4996-8504-967b3bd43be9.png",
+      "finalized_date": "2026-11-10"
+    }
+  ],
+  "records": [
+    {
+      "file": "ART_PROMPTS_SET11.json",
+      "sha256": "41492aa4f6e47f2d8c42c2f30c96534332956e58a971a40e3818fb23b4558dfb"
+    },
+    {
+      "file": "SET11_GALLERY.html",
+      "sha256": "cf02a38d1234bafdb6b507f9517c7d535f9b2759bb20516d88b41fe90c98dae6"
+    },
+    {
+      "file": "ART_BRIEFS_SET11.md",
+      "sha256": "16fe015a7b65c457ebc4d82b88c2af5b4feb571841b6154fe1c5b35506140a00"
+    }
+  ],
+  "workspace_files_written": [
+    "still-flame-chaplain.png",
+    "web/still-flame-chaplain.jpg",
+    "white-flier.png",
+    "web/white-flier.jpg",
+    "humbling-light.png",
+    "web/humbling-light.jpg",
+    "unwind-the-step.png",
+    "web/unwind-the-step.jpg",
+    "frostbreak.png",
+    "web/frostbreak.jpg",
+    "ossuary-engine.png",
+    "web/ossuary-engine.jpg",
+    "cinder-rain.png",
+    "web/cinder-rain.jpg",
+    "overgrowth.png",
+    "web/overgrowth.jpg",
+    "thornwarden-trapper.png",
+    "web/thornwarden-trapper.jpg",
+    "mosshorn-grazer.png",
+    "web/mosshorn-grazer.jpg",
+    "waystone-golem.png",
+    "web/waystone-golem.jpg",
+    "ART_BRIEFS_SET11.md",
+    "ART_PROMPTS_SET11.json",
+    "SET11_GALLERY.html",
+    "SET11_VALIDATION.json"
+  ],
+  "scope_note": "Only Set 11 final paintings, exports, brief, prompt/selection record, gallery and validation are included in the authorized local commit. Superseded Set 11 PNG/JPEG archives and their two generated source copies were deleted at creator request; exact prompts and provenance are retained as text. Shared CARD_ART_FINAL.json, the art-direction skill, card proposals and all other sets are excluded.",
+  "revised_paintings": 2,
+  "review_status": "all_11_creator_approved_final",
+  "final_approval": {
+    "date": "2026-11-10",
+    "recorded_at_utc": "2026-11-10T20:16:46.397561+00:00",
+    "feedback": "better these are final",
+    "scope": "All eleven current Set 11 paintings, including selected attempt 2 for Unwind the step and Frostbreak.",
+    "status": "creator_approved_final",
+    "selection_record_scope": "Set 11 records only; shared CARD_ART_FINAL.json remains untouched under the original scope restriction."
+  },
+  "cleanup": {
+    "date": "2026-11-10",
+    "completed_at_utc": "2026-11-10T20:50:26.359344+00:00",
+    "authorization": "mark all as final and commit. remove outdated versions",
+    "scope": "Superseded Set 11 artwork only; selected final images and exact historical prompts retained.",
+    "removed_files": [
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set11-review-2026-11-10/originals/unwind-the-step.png",
+        "sha256": "a00b46fd8ec5f0284b99950c10ca0c51546d5da3c7c69148b0308a55bd4ecc35",
+        "kind": "superseded archived PNG",
+        "card": 133
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set11-review-2026-11-10/originals/unwind-the-step.jpg",
+        "sha256": "363c5e64b47b1b2c271522ea7894ccbf7d9335dfdc3f42b7af7d050d3e4697d4",
+        "kind": "superseded archived JPEG",
+        "card": 133
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-94342e90-a6c0-4b06-9d2b-68e589e1dd20.png",
+        "sha256": "a00b46fd8ec5f0284b99950c10ca0c51546d5da3c7c69148b0308a55bd4ecc35",
+        "kind": "superseded generated source PNG",
+        "card": 133
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set11-review-2026-11-10/originals/frostbreak.png",
+        "sha256": "e316081708b847a72dcd0426a056cbefdb65edfd75fab83c76394a17b5e63cc9",
+        "kind": "superseded archived PNG",
+        "card": 146
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set11-review-2026-11-10/originals/frostbreak.jpg",
+        "sha256": "16a2b5536b0f6a62cdba3b81b79d5fa550d77991813cf387e0f8f2296741ed45",
+        "kind": "superseded archived JPEG",
+        "card": 146
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-f002-7cb3-a86e-050a71d3bb08/exec-c21b5bad-a661-4366-94a1-7f4faa862a97.png",
+        "sha256": "e316081708b847a72dcd0426a056cbefdb65edfd75fab83c76394a17b5e63cc9",
+        "kind": "superseded generated source PNG",
+        "card": 146
+      }
+    ]
+  },
+  "commit_authorization": {
+    "date": "2026-11-10",
+    "request": "mark all as final and commit. remove outdated versions",
+    "scope": "Set 11 final assets and records only; shared files and other sets excluded."
+  }
+}

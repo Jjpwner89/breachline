@@ -1,0 +1,379 @@
+{
+  "set": 8,
+  "checked_at_utc": "2026-11-10T20:50:48.716244+00:00",
+  "result": "passed",
+  "status": "final_for_card_building",
+  "generation_method": "built-in image_gen",
+  "paintings": 12,
+  "total_generation_attempts": 15,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "checks": {
+    "all_12_final_paintings_creator_approved": true,
+    "all_files_present": true,
+    "all_12_brief_headings_covered": true,
+    "dimensions_correct": true,
+    "formats_correct": true,
+    "images_decodable_by_sips": true,
+    "approved_image_bytes_preserved": true,
+    "selected_sources_match": true,
+    "retained_reference_hashes_verified": true,
+    "deleted_reference_inputs_documented": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_final_attempt_per_painting": true,
+    "unique_png_hashes": true,
+    "gallery_has_12_final_images": true,
+    "gallery_links_valid": true,
+    "no_obsolete_gallery_links": true,
+    "all_superseded_files_removed": true,
+    "all_images_visually_inspected": true,
+    "project_writes_scoped_to_set8": true
+  },
+  "visual_review_note": "All twelve paintings and subsequent revisions were visually inspected during generation; the creator has approved all current paintings as final. Finalization preserved all 24 delivered image hashes.",
+  "files": [
+    {
+      "file": "vow-of-keeping.png",
+      "web_file": "web/vow-of-keeping.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2628902,
+      "web_bytes": 157326,
+      "sha256": "44011c9b7eae40ab4918224994ebbf579d58a0bae2be0b74035e1d540b758b94",
+      "web_sha256": "ea6c461d34be0253c2bb66a14911c73fb49da300c7e410a1510d50332d129bee",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Two priestess hands emerge from separate sleeves and pinch the cord coherently. Cord binds a fully sheathed sword at crossguard and throat; no exposed blade or extra hands. Tired cropped male face stays secondary. Candlelit material hierarchy inspected."
+    },
+    {
+      "file": "still-flame-ash-sweeper.png",
+      "web_file": "web/still-flame-ash-sweeper.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2889431,
+      "web_bytes": 171101,
+      "sha256": "2f5c9c49bc5ca940228beffd1cc1beed93013f0798b9823a5230b44c0ea180f9",
+      "web_sha256": "b2f14d2264cc111bcfdf3a1a40efabbea5af9795dad532282e511063b2d31744",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Two arms connect to separate broom grips, handle remains continuous, two boots are supported by one floor plane. Elderly face is individual and matte; ash and clean flagstones remain legible with quiet temple depth."
+    },
+    {
+      "file": "conclave-rimecaller.png",
+      "web_file": "web/conclave-rimecaller.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2787309,
+      "web_bytes": 169479,
+      "sha256": "796d07363afdacaf669010d4a72cdff44173ffd7922e3a585726cc7323e20a65",
+      "web_sha256": "c79bc9d7c3ec85b7bf3d59c55f0bbd6d7994cc0ebd7667da83a1d1e2973cc77a",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Connected shoulders and two gloved hands rest separately on the rail; rime runs over cuffs and stone. The adult face has ordinary young proportions and cold-red nose. Quiet first-light courtyard, matte cloth and selective frost accents inspected."
+    },
+    {
+      "file": "held-between-moments.png",
+      "web_file": "web/held-between-moments.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2625219,
+      "web_bytes": 194260,
+      "sha256": "a6186c5598731fe546f1080bdc093ebdd3bda38853ca0b9d4f89b3d5b1fe309c",
+      "web_sha256": "73b54b2eae1f47be95e98fa45388b634c7d2124a39adeb2d7756a5e1df06f2ae",
+      "source_matches": true,
+      "selected_attempt": 2,
+      "inspection_note": "Visually inspected the complete revision. The raider has human skin, ears, brow and jaw with no tusks. The raised axe grip follows one continuous shaft, rear arm reaches back, and both airborne legs remain distinct. Suspended droplets, falling outer rain, wet street and blue-gold light preserve the original scene."
+    },
+    {
+      "file": "ledger-of-debts.png",
+      "web_file": "web/ledger-of-debts.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2544013,
+      "web_bytes": 154629,
+      "sha256": "44af1e86bdb02c1ca4ffb02cecbd2babaa094cd3ed48c97adf67d0b05009001a",
+      "web_sha256": "99f80df60d12386d21768a75d6afbec25023512c1e52694f098b59da3f55d77c",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Two hands traced to their sleeves; right quill grip touches the ledger and left hand supports the opposite page with five visible digits. Ledger perspective, candle scale and exhausted face inspected. Painted bookkeeping marks are environmental and not a title or overlay."
+    },
+    {
+      "file": "shutter-window-assassin.png",
+      "web_file": "web/shutter-window-assassin.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2078086,
+      "web_bytes": 118677,
+      "sha256": "e59b3748c46d5381c77ca7f581e56cf1bfbf6a691a8d3ba9dc7778b5dd9b2326",
+      "web_sha256": "835d7ec7eb540274b816cb89b28de615e795658a0a76902beae3d4245a72b258",
+      "source_matches": true,
+      "selected_attempt": 3,
+      "inspection_note": "Inspected the full edited painting. The supporting hand, wrist and reaching forearm at image-right are completely hidden; no residual fingers or empty cuff remain. Stone and shadow fill the vacated area. The crossbow visibly rests on the sill. The trigger hand, face, clothing, kneeling pose, slatted sunlight and exterior square remain consistent."
+    },
+    {
+      "file": "gilt-hall-temptress.png",
+      "web_file": "web/gilt-hall-temptress.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2472902,
+      "web_bytes": 150481,
+      "sha256": "467b2f5ef4f95414e64d0657ed81e8ddb80b29c7464de11d111d1129b46c2b44",
+      "web_sha256": "fd6b73ca7c17de61f3d95b73d78d287e8170b964982b92cd1cf0362e53f170e3",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Adult new courtier identity differs from Court Informant; fuller/slender figure, fine pearl straps, gathered opaque wine-silk bodice and long skirt apply the requested fashion skill. Both shoulder-arm-hand paths are coherent. Extended palm at image-right has five digits; other hand holds skirt. Tiny violet glamour and gilt/shadow hierarchy inspected. Provisional keep; creator review pending."
+    },
+    {
+      "file": "cinder-firebrand.png",
+      "web_file": "web/cinder-firebrand.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2361133,
+      "web_bytes": 145036,
+      "sha256": "ebd502f5188b28e62124085e4456a71662de3e9b4d946027844454bbaae7f595",
+      "web_sha256": "7684a7ffb632e31c4c7990443076e991cae95af51ed86440e5043ddc50a4105f",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Two walking legs trace from pelvis to separate boots, raised hand grips one continuous shoulder-resting axe, opposite hand relaxed. Practical iron/cloth scale, low flames, matte face and strong night silhouette inspected."
+    },
+    {
+      "file": "hurled-brand.png",
+      "web_file": "web/hurled-brand.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2438545,
+      "web_bytes": 156279,
+      "sha256": "0dbe2bf79054f55f88dd2c30d8bad26ced77fbebc9e453c9c4a05438e0428151",
+      "web_sha256": "455f9cbea6d05cb9142cce291cfe22279271f4c281a3704a6adbbb482da40cab",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Throwing arm traced through shoulder and elbow to five-finger release; opposite arm and both legs remain separate and connected. Front boot bears weight, rear foot pivots. Single brand has cleared the hand and palisade, target off-screen. No duplicate weapon or foreground attack."
+    },
+    {
+      "file": "emberward.png",
+      "web_file": "web/emberward.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2705969,
+      "web_bytes": 175645,
+      "sha256": "a5df64288c30e747d7582f8ee47ea50c4b8a68a4daf4a6ed6059009a6df16fa9",
+      "web_sha256": "6bd639e515a204013016705042d36e8853e6e0127bf2b3b9fe37550e35c99ee8",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Four hands total with clear ownership: both young man's forearms rest on his thighs; old woman's brush hand touches the nearer forearm and other hand supports its wrist. Natural shoulder connections, separate knees, subtle painted pigment and distant fire scale inspected."
+    },
+    {
+      "file": "alderkin-elder.png",
+      "web_file": "web/alderkin-elder.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2926183,
+      "web_bytes": 206792,
+      "sha256": "b93634f5cfc423e784ac28917f583c370ba71f721185b24ae753008931a02cd6",
+      "web_sha256": "e3b308840f84ad538a129eecda1f3884d50df57d4567c9992bac5f912d76cc46",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Two main root legs meet a continuous supported aqueduct deck; both branching arms connect to the trunk and the long hand contacts the carved coping. Moss, lichen and small nesting birds support the aged tree anatomy. Distant arches remain secondary. Upper branch tips extend beyond the top edge; main head, hands and feet are readable."
+    },
+    {
+      "file": "buckling-recruit.png",
+      "web_file": "web/buckling-recruit.jpg",
+      "status": "final_for_card_building",
+      "review_status": "creator_approved_final",
+      "format": "PNG",
+      "web_format": "JPEG",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "bytes": 2463457,
+      "web_bytes": 146339,
+      "sha256": "ac5c0d9d2e8d63d1aebdbe212d7bdf12ee63f5811fdfd4dcc9d667354d7ffc6e",
+      "web_sha256": "a907eca8c2e7db00a2d2deaa1504ef0cb9e5e25f121565387b0bf92b0ddebbf5",
+      "source_matches": true,
+      "selected_attempt": 1,
+      "inspection_note": "Both arms connect through elbows to hands working one buckle; strap runs from his mouth toward the fastening. Seated pelvis and two thighs are coherent. Dented helmet and sheathed sword have plausible human scale; ordinary face, mismatched armor and cool dawn loft inspected. Feet are outside this medium crop."
+    }
+  ],
+  "project_write_allowlist": [
+    "vow-of-keeping.png",
+    "web/vow-of-keeping.jpg",
+    "still-flame-ash-sweeper.png",
+    "web/still-flame-ash-sweeper.jpg",
+    "conclave-rimecaller.png",
+    "web/conclave-rimecaller.jpg",
+    "held-between-moments.png",
+    "web/held-between-moments.jpg",
+    "ledger-of-debts.png",
+    "web/ledger-of-debts.jpg",
+    "shutter-window-assassin.png",
+    "web/shutter-window-assassin.jpg",
+    "gilt-hall-temptress.png",
+    "web/gilt-hall-temptress.jpg",
+    "cinder-firebrand.png",
+    "web/cinder-firebrand.jpg",
+    "hurled-brand.png",
+    "web/hurled-brand.jpg",
+    "emberward.png",
+    "web/emberward.jpg",
+    "alderkin-elder.png",
+    "web/alderkin-elder.jpg",
+    "buckling-recruit.png",
+    "web/buckling-recruit.jpg",
+    "ART_BRIEFS_SET8.md",
+    "ART_PROMPTS_SET8.json",
+    "SET8_GALLERY.html",
+    "SET8_VALIDATION.json"
+  ],
+  "scope_note": "Only Set 8 assets and records are included in this commit. Shared CARD_ART_FINAL.json, skills, proposals and other sets are excluded.",
+  "review_summary": {
+    "approved_final": 12,
+    "awaiting_review": 0
+  },
+  "cleanup": {
+    "superseded_paintings_removed": 3,
+    "deleted_project_files": 8,
+    "deleted_generated_sources": 3,
+    "deleted_paths_verified_absent": true,
+    "deleted_reference_occurrences_documented": 3,
+    "prompt_history_retained": true
+  },
+  "gallery_review": {
+    "static_checks": "passed",
+    "browser_layout_verified": false,
+    "note": "Static structure and links verified; no new browser-render verification claimed."
+  },
+  "delivery_records": [
+    {
+      "file": "ART_BRIEFS_SET8.md",
+      "sha256": "c1bc660e0c0761b9d9a095592741e84fad5faf803c9dc61395ce9474520e484a"
+    },
+    {
+      "file": "ART_PROMPTS_SET8.json",
+      "sha256": "bcaf56e310de77d066556aa2fb9de3632d1667b08a88fe96e5b924af26ca32aa"
+    },
+    {
+      "file": "SET8_GALLERY.html",
+      "sha256": "4dd34a374ccd2ff35116084f16ae62c4723d9c1ba26647b0d54a4d7407f93a4e"
+    }
+  ]
+}

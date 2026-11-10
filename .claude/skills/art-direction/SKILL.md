@@ -13,6 +13,20 @@ Preserve the intended subject, established identity and lore unless the creator 
 
 Current workflow (2026-11-09): Set 4 feedback remains recorded below and the retained Set 3 collection remains finalized. The creator approved all twelve rewritten Set 5 briefs and requested generation. All twelve revision 2 paintings are saved under the existing filenames. The creator requested committing the set after making the adept more veiled, the sword more prominent and the porcelain retainer less weird. The adept and blade edits and the angrier outdoor Brightlance are retained. The creator subsequently selected the previous full-mask porcelain retainer as final, superseding the half-visor edit. The first Set 5 batch is superseded as visual direction. For the next batch, read this skill, the setting, accepted references and current briefs; audit current assets rather than trusting old counts. The creator welcomes a full batch together when generation is requested.
 
+## Set 9 final selection and cleanup (2026-11-10)
+
+The creator finalized **all twelve Set 9 paintings**: Line of dawn; Hearth-sworn penitent; Harmonic burst; Field-plate artificer; Collect the tithe; Mortuary priest; Halfshade lynx; Untaught firecaller; The sky falls in; Salamander-hide mantle; Elderwood stag; Rust-hinged warden. Preserve the current canonical PNGs and game JPEGs. The earlier bell, lynx, firecaller and stag images were deleted at the creator's request; their exact prompts and source hashes remain textual history in [ART_PROMPTS_SET9.json](../../../breachline/art/ART_PROMPTS_SET9.json). Do not restore those superseded versions. The [Set 9 gallery](../../../breachline/art/SET9_GALLERY.html) shows the final selections. This approves card art, not additional lore or mechanical changes. The Gnosis sound restriction and preference distinctions below remain in force.
+
+
+## Gnosis sound limit and Harmonic burst final (creator direction, 2026-11-10)
+
+Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
+
+The creator finalized the corrected, properly suspended-bell version of **Harmonic burst** (Set 9), but explicitly says it is not a favorite and that Gnosis has more interesting mechanisms than sound. Keep this approved painting; its approval does not make sound a preferred Gnosis direction. Existing accepted cards are not revoked by the temporary block.
+
+**The sky falls in, Salamander-hide mantle and Collect the tithe** are strongly liked. The creator praised face variation and setting in the Set 9 review.
+
+
 ## Magic and industry clarification (creator direction, 2026-11-10)
 
 Read [the current setting rules](../../../breachline/SETTING.md#magic) and Ambrel's surviving-university account before briefing new work. Magic can be felt broadly, while skilled use is less common and depends on learning and inherited aptitude. Personal capacity varies greatly; expenditure is exertion and severe overuse can kill. Species comparisons, recovery, training effects and exact numerical ranges remain tentative.

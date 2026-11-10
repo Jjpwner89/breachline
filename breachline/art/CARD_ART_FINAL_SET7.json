@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "set": 7,
+  "date": "2026-11-10",
+  "finalized_at_utc": "2026-11-10T20:50:45.180909+00:00",
+  "status": "final_for_card_building",
+  "purpose": "Final image selections for Breachline Set 7.",
+  "usage": [
+    "Use these ten selected images for Set 7 card building.",
+    "Each painting has one full-size PNG and one game JPEG; these are delivery formats of the same final design.",
+    "Preserve the selected White Morning, Hostess and Spring Melt revisions. Do not restore superseded versions.",
+    "This set-specific manifest leaves CARD_ART_FINAL.json unchanged for coordination with concurrent sets.",
+    "Art selection does not infer additional gameplay rules or lore."
+  ],
+  "counts": {
+    "final_images": 10,
+    "new_card_art": 10,
+    "excluded": 1
+  },
+  "source_prompts": "ART_PROMPTS_SET7.json",
+  "validation": "SET7_VALIDATION.json",
+  "creator_authorization": "mark all as final and commit. remove outdated versions",
+  "excluded": [
+    {
+      "proposal_number": 176,
+      "former_file": "bellframe-construct.png",
+      "reason": "Creator rejected Bellframe construct entirely. Images and generated source deleted; do not regenerate.",
+      "status": "deleted_by_creator"
+    }
+  ],
+  "cleanup": {
+    "verified_at_utc": "2026-11-10T20:50:45.180909+00:00",
+    "creator_direction": "mark all as final and commit. remove outdated versions",
+    "deleted_image_files": [
+      {
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-dde403c3-9e24-49e8-bb47-b4514f3e7827.png",
+        "sha256": "4cc09c55b60b01a2cc9ca162e0a54c859d8fbeefee7c6b332f9cc4fb1ad9c6c0",
+        "number": 145,
+        "kind": "generated_source",
+        "deleted_before_finalization": true,
+        "deleted": true
+      },
+      {
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-407805a8-20a7-433a-92a2-fbe43e78450f.png",
+        "sha256": "5d03496f8091f0006b1537079eae664e48069f159d29dabd6f8fdcc646f6b6d1",
+        "number": 152,
+        "kind": "generated_source",
+        "deleted_before_finalization": false,
+        "deleted": true
+      },
+      {
+        "former_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set7-review-2026-11-10/originals/hostess-of-the-late-hour.png",
+        "sha256": "5d03496f8091f0006b1537079eae664e48069f159d29dabd6f8fdcc646f6b6d1",
+        "number": 152,
+        "kind": "superseded_archive",
+        "deleted_before_finalization": false,
+        "deleted": true
+      },
+      {
+        "former_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set7-review-2026-11-10/originals/hostess-of-the-late-hour.jpg",
+        "sha256": "c0ab7cc54805b8886aa104382f5de730223308fc4518a6a3817e9085b3a88550",
+        "number": 152,
+        "kind": "superseded_archive",
+        "deleted_before_finalization": false,
+        "deleted": true
+      },
+      {
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-cdf7f400-d897-466e-bb79-2051a9f0df20.png",
+        "sha256": "86ea21e679b5b914b33d2e732aa3d9f7f10a2e83ac1f4dd866184d84bd5ee2bf",
+        "number": 175,
+        "kind": "generated_source",
+        "deleted_before_finalization": false,
+        "deleted": true
+      },
+      {
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-95d7d361-35ac-4918-a70c-e921cb4698ea.png",
+        "sha256": "2b3f986c6ed26082ee5a947bf21c0b6925de24e49a0574bbaa61ad1c19d2cf57",
+        "number": 176,
+        "kind": "generated_source",
+        "deleted_before_finalization": true,
+        "deleted": true
+      }
+    ],
+    "textual_history_retained": true,
+    "selected_sources_retained": true
+  },
+  "assets": [
+    {
+      "id": "devoted-pilgrim",
+      "proposal_number": 111,
+      "title": "Devoted pilgrim",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil",
+      "png": "devoted-pilgrim.png",
+      "web_jpeg": "web/devoted-pilgrim.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "19a089a6717cae1e622c18c11df32bb718edc4148971a7ae73e6101f49578621",
+      "web_sha256": "6fc1bfaf15a91d15358c2eb6b3b95fd549ec678ac2b7517137e0cd04befc02cc",
+      "selected_attempt": 1
+    },
+    {
+      "id": "rimebolt",
+      "proposal_number": 107,
+      "title": "Rimebolt",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis",
+      "png": "rimebolt.png",
+      "web_jpeg": "web/rimebolt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e12c9b5cf6afd2358fc84950290159d7ec84e2fc51463259216a29092ac8874c",
+      "web_sha256": "f71cb8d5a983fbb590350e9949a8415b75306d4aac881f229aa26455eafce8fc",
+      "selected_attempt": 1
+    },
+    {
+      "id": "borrowed-will",
+      "proposal_number": 128,
+      "title": "Borrowed will",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis",
+      "png": "borrowed-will.png",
+      "web_jpeg": "web/borrowed-will.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f9626e8032a48283d743983162a669efd44c399e665b62601c31e43d90fc4d92",
+      "web_sha256": "6cec25982fe06bf09f8fc90cf9dceb3cd9b19efc9d136aba8801bbb4b12b829c",
+      "selected_attempt": 1
+    },
+    {
+      "id": "focus-rifle-marksman",
+      "proposal_number": 142,
+      "title": "Focus-rifle marksman",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis",
+      "png": "focus-rifle-marksman.png",
+      "web_jpeg": "web/focus-rifle-marksman.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "014e2b10faef0ac6dd5e09d304ddc3bbc6faa0438d1f2ebff1b5f85808d36b23",
+      "web_sha256": "a20b0e82fa5e11fe9a86115ea9dd824baa32f4e033400623d3e93ab2075e74d6",
+      "selected_attempt": 1
+    },
+    {
+      "id": "white-morning",
+      "proposal_number": 145,
+      "title": "White morning",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis",
+      "png": "white-morning.png",
+      "web_jpeg": "web/white-morning.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "fe006fdab37b845d40d5a6a881f9818ce6b6cbd1e65a217b64573a8a62563bdc",
+      "web_sha256": "e4d14054814d033f7f155e7fbedb8bd85bb5ddc4f09b4114c6c4593eb73d4752",
+      "selected_attempt": 2
+    },
+    {
+      "id": "barrow-mark",
+      "proposal_number": 130,
+      "title": "Barrow mark",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion",
+      "png": "barrow-mark.png",
+      "web_jpeg": "web/barrow-mark.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "8d7b9fcf992ced86e166d19bcb97a5d395cdda66b4ccc92f9884d1e29c2b8677",
+      "web_sha256": "7c8966d3442a3232e5abe50894e0c50b5329d4a245d17be441fb148428253606",
+      "selected_attempt": 1
+    },
+    {
+      "id": "hostess-of-the-late-hour",
+      "proposal_number": 152,
+      "title": "Hostess of the late hour",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion",
+      "png": "hostess-of-the-late-hour.png",
+      "web_jpeg": "web/hostess-of-the-late-hour.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "02d1a0698f7968fdf1686fc3b19c3756494a0af0a65de46e9c6523cbd88c869e",
+      "web_sha256": "3f2dfff9d2e297f7cfdfe7463764c849a4584d985fbea5fef1474d230bcb1169",
+      "selected_attempt": 2
+    },
+    {
+      "id": "kindle-the-line",
+      "proposal_number": 104,
+      "title": "Kindle the line",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor",
+      "png": "kindle-the-line.png",
+      "web_jpeg": "web/kindle-the-line.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7620f2777b999e7f5707f09f50feb91b48aebf59b9a3d565c74f5db34c0b1834",
+      "web_sha256": "223f958810b894a7f2f303947aee0dcc8257487987dee80c89541faf2ea96ecd",
+      "selected_attempt": 1
+    },
+    {
+      "id": "slagheart-hulk",
+      "proposal_number": 105,
+      "title": "Slagheart hulk",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor",
+      "png": "slagheart-hulk.png",
+      "web_jpeg": "web/slagheart-hulk.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0f4aee5487ceac2fcc9775327f084afb9cb8f5038242919e29598dbde22d09a5",
+      "web_sha256": "3001d718f4ec21907771cf8c90cf7ef519b3728d8caa663363a45e7f4a27bb76",
+      "selected_attempt": 1
+    },
+    {
+      "id": "spring-melt",
+      "proposal_number": 175,
+      "title": "Spring melt",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis",
+      "png": "spring-melt.png",
+      "web_jpeg": "web/spring-melt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0ccc71373fd93273ec8c1221831ac44fbf3f3b3987b35292000ec86e95b379dc",
+      "web_sha256": "74a90a3c73c0d947c4d9110a5062612080291068294222d6c8760dba0d248b39",
+      "selected_attempt": 2
+    }
+  ]
+}

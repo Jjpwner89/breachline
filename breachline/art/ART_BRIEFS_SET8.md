@@ -18,7 +18,7 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
 12 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 106 Cinder firebrand, 108 Conclave rimecaller, 109 Vow of keeping, 114 Ledger of debts, 118 Hurled brand, 131 Held between moments, 150 Shutter-window assassin, 153 Gilt-hall temptress, 173 Alderkin elder, 177 Buckling recruit, 189 Still Flame ash-sweeper, 190 Emberward.
-**Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
+**Status, 2026-11-10:** all 12 paintings are creator-approved final. Use the PNG/JPEG filenames below; final selections, exact prompt history and checks are recorded in [ART_PROMPTS_SET8.json](ART_PROMPTS_SET8.json), [SET8_GALLERY.html](SET8_GALLERY.html) and [SET8_VALIDATION.json](SET8_VALIDATION.json). Superseded versions were deleted at the creator's request.
 ## What these paintings are for
 
 Each brief begins with what should make the painting worth looking at. Card rules are design records in CARD_PROPOSALS.md and stay out of image prompts: a Longshot unit needn't be shooting, and a spell needn't diagram its effect, unless that's the most beautiful choice. Spells can show a specific event with purposeful activity and restrained, scene-organizing magic, which the creator liked in Set 3. Large dramatic magic is welcome where the brief asks for it, as with Cinderfall.
@@ -86,11 +86,13 @@ A thin young man, an apprentice-ranked Conclave caster with an ordinary face and
 
 ### 131. Held between moments: held-between-moments.png
 
-**Visual aim:** A charging orc caught motionless in mid-leap, raindrops hanging in the air all around him.
+**Visual aim:** A charging human raider caught motionless in mid-leap, raindrops hanging in the air all around him.
 
-**References:** `reference-library-2026-11-06/people/04-orcs.png`; `unmake-the-pattern.png`
+**References:** `reference-library-2026-11-06/people/01-humans.png`; `reference-library-2026-11-06/people/08-humans-additional-faces.png`; `unmake-the-pattern.png`
 
-In a rainy street, a Warhorde orc raider is caught mid-leap, axe raised, completely still. Every raindrop around him hangs in the air, catching a pale blue-gold light; beyond that bubble, the rain still falls. Coarse nonhuman orc anatomy, a believable leap. No pottery, glass or tuning fork; the hanging rain is the idea.
+In a rainy street, a weathered human male raider is caught mid-leap, axe raised, completely still. Every raindrop around him hangs in the air, catching a pale blue-gold light; beyond that area, the rain still falls. Natural human features and anatomy, a believable leap. No pottery, glass or tuning fork; the hanging rain is the idea.
+
+**Final selection:** The creator requested a human instead of an orc. Preserve the approved human raider and suspended-rain composition; superseded orc art was deleted.
 
 ## Dominion
 
@@ -109,6 +111,8 @@ A thin clerk of the Ashen Court sits at a cramped desk heaped with ledgers, sign
 **References:** `court-informant.png`; `reference-library-2026-11-06/equipment/17-dominion-personal-kits.png`; `reference-library-2026-11-06/people/01-humans.png`; `reference-library-2026-11-06/people/08-humans-additional-faces.png`
 
 A lean grey-haired man in dark Ashen Court livery kneels at a half-open shutter in an upper room, a compact crossbow resting on the sill. Bars of light through the slats cross his calm face. The sunlit square below is simplified and out of reach of detail. The divided light the creator liked in Court informant, with a new subject and composition.
+
+**Final selection:** The supporting hand and reaching forearm are completely hidden below the sill. Only the trigger hand remains visible; the crossbow rests directly on the stone. Preserve this approved composition.
 
 ### 153. Gilt-hall temptress: gilt-hall-temptress.png
 

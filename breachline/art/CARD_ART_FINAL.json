@@ -6,54 +6,54 @@
   "usage": [
     "Use only the assets listed here when selecting finished card art.",
     "Each asset has one canonical full-size PNG and one smaller JPEG used by the game. These are deliberate delivery formats, not alternative designs.",
-    "33 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
-    "73 other images already serve cards in the current prototype; card_ids identify those assignments.",
+    "55 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
+    "85 other images already serve cards in the current prototype; card_ids identify those assignments.",
     "Do not regenerate or restore the rejected pottery spell, salvager or superseded versions.",
     "Reference sheets, exploratory concepts, maps, campaign images and works in progress are separate resources and are not part of this card-art selection.",
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 117,
-    "new_card_art": 32,
+    "final_images": 140,
+    "new_card_art": 55,
     "already_used_by_game": 85,
     "existing_card_ids": 85
   },
   "new_art_distribution": {
     "W": {
       "objects": 4,
-      "units": 1,
-      "spells": 2,
-      "total": 7
+      "units": 3,
+      "spells": 3,
+      "total": 10
     },
     "U": {
       "objects": 4,
-      "units": 1,
-      "spells": 1,
-      "total": 6
+      "units": 2,
+      "spells": 4,
+      "total": 10
     },
     "B": {
       "objects": 3,
-      "units": 3,
-      "spells": 2,
-      "total": 8
+      "units": 5,
+      "spells": 6,
+      "total": 14
     },
     "R": {
-      "objects": 2,
-      "units": 1,
-      "spells": 2,
-      "total": 5
+      "objects": 3,
+      "units": 2,
+      "spells": 5,
+      "total": 10
     },
     "G": {
       "objects": 1,
-      "units": 3,
+      "units": 6,
       "spells": 2,
-      "total": 6
+      "total": 9
     },
-    "unassigned": {
-      "objects": 1,
-      "units": 0,
+    "C": {
+      "objects": 0,
+      "units": 2,
       "spells": 0,
-      "total": 1
+      "total": 2
     }
   },
   "excluded": [
@@ -152,7 +152,39 @@
       }
     ],
     "exact_duplicate_pngs_remaining": 0,
-    "retained_image_files_unchanged": 217
+    "retained_image_files_unchanged": 217,
+    "set9_finalization": {
+      "date": "2026-11-10",
+      "deleted_image_files": [
+        {
+          "card": "Harmonic burst",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-57277780-e743-4bac-b94c-9fbb727b4c40.png",
+          "sha256": "dbefee025c532ab949b3aed0cad91767f759a2c110c884a7c1f16008d869fa0f",
+          "reason": "Superseded after creator rejected the implausible bell-on-stones installation. Original generated source retained as exact edit provenance."
+        },
+        {
+          "card": "Halfshade lynx",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-77b171c3-9844-4913-9a59-8bc303f04144.png",
+          "sha256": "fb62a13881993b1ccda5e855b442cf2dd7bcb844fc32f4a29333a07ce5ac0a72",
+          "reason": "Superseded: shorten the overlong furred tail to preserve lynx anatomy."
+        },
+        {
+          "card": "Untaught firecaller",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-71c49de2-8e64-4c0b-8358-d57e6a65f06c.png",
+          "sha256": "ebc16816200c5438148f5dc1b73d11df332ceb0c8487faecccf05c9033d79adc",
+          "reason": "Superseded: overly theatrical wide eyes and broad comic expressions."
+        },
+        {
+          "card": "Elderwood stag",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-45529dbd-b9bc-480f-baea-d13071fadc36.png",
+          "sha256": "b3f6b42902c096dee4ce318abeaec49d9764ca917f12577dd8d48552107dc96b",
+          "reason": "Superseded: antler tips were clipped by the top edge despite otherwise coherent four-leg motion."
+        }
+      ],
+      "final_images_retained": 12,
+      "web_jpegs_retained": 12,
+      "prompt_history": "ART_PROMPTS_SET9.json"
+    }
   },
   "assets": [
     {
@@ -2505,6 +2537,558 @@
       "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png",
       "selected_date": "2026-11-10",
       "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
+    },
+    {
+      "id": "harmonic-burst",
+      "title": "Harmonic burst",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Spell",
+      "possible_role": "Small area damage and outward displacement",
+      "png": "harmonic-burst.png",
+      "web_jpeg": "web/harmonic-burst.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+      "web_sha256": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+      "card_ids": [],
+      "proposal_number": 124,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-3153a0c6-604e-47aa-88d0-ef39f12c6dbf.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "Final art approval does not make this a favorite or a preferred Gnosis direction."
+    },
+    {
+      "id": "line-of-dawn",
+      "title": "Line of dawn",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Spell",
+      "possible_role": "Column damage and friendly healing",
+      "png": "line-of-dawn.png",
+      "web_jpeg": "web/line-of-dawn.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+      "web_sha256": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+      "card_ids": [],
+      "proposal_number": 125,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-b8c2873b-1adc-43a6-b639-1d78c9320a5b.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "hearth-sworn-penitent",
+      "title": "Hearth-sworn penitent",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Unit",
+      "possible_role": "Devotion unit",
+      "png": "hearth-sworn-penitent.png",
+      "web_jpeg": "web/hearth-sworn-penitent.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+      "web_sha256": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+      "card_ids": [],
+      "proposal_number": 139,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-ba624d5a-cfe1-48c2-b7ee-e46965202a39.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "field-plate-artificer",
+      "title": "Field-plate artificer",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Unit",
+      "possible_role": "Armed unit",
+      "png": "field-plate-artificer.png",
+      "web_jpeg": "web/field-plate-artificer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+      "web_sha256": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+      "card_ids": [],
+      "proposal_number": 143,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-f7457a9a-beeb-4be4-afce-8310cfe50fd2.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "collect-the-tithe",
+      "title": "Collect the tithe",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Direct damage with life gain against a summoner",
+      "png": "collect-the-tithe.png",
+      "web_jpeg": "web/collect-the-tithe.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+      "web_sha256": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+      "card_ids": [],
+      "proposal_number": 121,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-534bd130-f65a-4966-b236-bf10c3cb45f1.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "mortuary-priest",
+      "title": "Mortuary priest",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Carrion unit",
+      "png": "mortuary-priest.png",
+      "web_jpeg": "web/mortuary-priest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+      "web_sha256": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+      "card_ids": [],
+      "proposal_number": 151,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-32a815c1-ae5f-4fc8-86d7-05588bc3c791.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "halfshade-lynx",
+      "title": "Halfshade lynx",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Veiled unit",
+      "png": "halfshade-lynx.png",
+      "web_jpeg": "web/halfshade-lynx.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+      "web_sha256": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+      "card_ids": [],
+      "proposal_number": 154,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-a237c856-1d0a-48f5-98db-40eba7cf9ee8.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "untaught-firecaller",
+      "title": "Untaught firecaller",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Unit",
+      "possible_role": "Uncontrolled fire aimed near a chosen tile",
+      "png": "untaught-firecaller.png",
+      "web_jpeg": "web/untaught-firecaller.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+      "web_sha256": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+      "card_ids": [],
+      "proposal_number": 116,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-de7eca66-c226-4947-b95b-0387cdcb5a0b.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "the-sky-falls-in",
+      "title": "The sky falls in",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Spell",
+      "possible_role": "Large direct damage spell",
+      "png": "the-sky-falls-in.png",
+      "web_jpeg": "web/the-sky-falls-in.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+      "web_sha256": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+      "card_ids": [],
+      "proposal_number": 119,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-c02fbad6-99f2-44cc-b3c1-f98c0709ee40.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "salamander-hide-mantle",
+      "title": "Salamander-hide mantle",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Equipment",
+      "possible_role": "Health and Fireproof equipment",
+      "png": "salamander-hide-mantle.png",
+      "web_jpeg": "web/salamander-hide-mantle.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+      "web_sha256": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+      "card_ids": [],
+      "proposal_number": 191,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-7cd73735-4127-4611-93c7-f5632bf3b034.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "elderwood-stag",
+      "title": "Elderwood stag",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Swift, Rootfed creature",
+      "png": "elderwood-stag.png",
+      "web_jpeg": "web/elderwood-stag.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+      "web_sha256": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+      "card_ids": [],
+      "proposal_number": 172,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-00be48a9-5de1-4309-9875-534e2deb8fd2.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "rust-hinged-warden",
+      "title": "Rust-hinged warden",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "C",
+      "alignment": "Neutral / colourless",
+      "suggested_type": "Unit",
+      "possible_role": "Neutral defensive Guard unit",
+      "png": "rust-hinged-warden.png",
+      "web_jpeg": "web/rust-hinged-warden.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+      "web_sha256": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9",
+      "card_ids": [],
+      "proposal_number": 178,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-9136b7a3-1c02-470f-b60b-604b165305cc.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "vowkeeper-of-the-long-road",
+      "title": "Vowkeeper of the long road",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Unit",
+      "possible_role": "Vigil defender",
+      "png": "vowkeeper-of-the-long-road.png",
+      "web_jpeg": "web/vowkeeper-of-the-long-road.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "web_sha256": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+      "card_ids": [],
+      "proposal_number": 140,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-9c6f5af1-1d2b-492c-b9f3-fb05a37d2f72.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "leaden-step",
+      "title": "Leaden step",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Enchantment",
+      "possible_role": "Magic that slows an enemy unit",
+      "png": "leaden-step.png",
+      "web_jpeg": "web/leaden-step.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "web_sha256": "3d812583672e400c86869b39cd70d26cecacd163aff251e54a45fdf7a98013e6",
+      "card_ids": [],
+      "proposal_number": 132,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-62e297c4-31c1-4257-9a72-e5ef46dafdc6.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "glimmer-double",
+      "title": "Glimmer double",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Spell",
+      "possible_role": "Illusory decoy spell",
+      "png": "glimmer-double.png",
+      "web_jpeg": "web/glimmer-double.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "web_sha256": "a6beeff8b5b8a2a79fd35db22b2d364ae3ed739f3df2fbc8240fd8b2ea006d30",
+      "card_ids": [],
+      "proposal_number": 144,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-2677227f-916a-4337-a9d7-6cac63dadedd.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "pall-of-ash",
+      "title": "Pall of ash",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Ash and blight spell",
+      "png": "pall-of-ash.png",
+      "web_jpeg": "web/pall-of-ash.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "web_sha256": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+      "card_ids": [],
+      "proposal_number": 123,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-1d10a263-8669-4f05-b860-73959b18c4fe.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "bought-allegiance",
+      "title": "Bought allegiance",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Control-changing spell",
+      "png": "bought-allegiance.png",
+      "web_jpeg": "web/bought-allegiance.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "web_sha256": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+      "card_ids": [],
+      "proposal_number": 129,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-6c5a5a58-1e1a-4940-bfff-a860ba618db8.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "lots-for-the-gallows",
+      "title": "Lots for the gallows",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Random destruction spell",
+      "png": "lots-for-the-gallows.png",
+      "web_jpeg": "web/lots-for-the-gallows.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "web_sha256": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+      "card_ids": [],
+      "proposal_number": 155,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-98afc531-6883-4923-8307-1a56b3cbd0c5.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "wildfire",
+      "title": "Wildfire",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Spell",
+      "possible_role": "Fire sweeping the battlefield",
+      "png": "wildfire.png",
+      "web_jpeg": "web/wildfire.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "web_sha256": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+      "card_ids": [],
+      "proposal_number": 126,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-d69c2ba1-8752-4345-b270-624adc4d4bbc.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "anoint-with-embers",
+      "title": "Anoint with embers",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Spell",
+      "possible_role": "Fire blessing spell",
+      "png": "anoint-with-embers.png",
+      "web_jpeg": "web/anoint-with-embers.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "web_sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+      "card_ids": [],
+      "proposal_number": 164,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-ace64c9b-3d76-45aa-9ce7-1ac0efb95810.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "earthspeaker",
+      "title": "Earthspeaker",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Genesis earth mage",
+      "png": "earthspeaker.png",
+      "web_jpeg": "web/earthspeaker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "web_sha256": "6c2378ace0929fd89447047ee01a1103c395e063d3bd7c128b19a782c64724d8",
+      "card_ids": [],
+      "proposal_number": 171,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-16d4a848-42de-4a02-b428-d08b0480a96e.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "shell-mountain-tortoise",
+      "title": "Shell-mountain tortoise",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Massive defensive creature",
+      "png": "shell-mountain-tortoise.png",
+      "web_jpeg": "web/shell-mountain-tortoise.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "web_sha256": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+      "card_ids": [],
+      "proposal_number": 174,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-3185bae5-e80e-4b32-a7c9-5aaf84f7049f.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "copper-hound",
+      "title": "Copper hound",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "C",
+      "alignment": "Neutral / colourless",
+      "suggested_type": "Unit",
+      "possible_role": "Swift neutral construct",
+      "png": "copper-hound.png",
+      "web_jpeg": "web/copper-hound.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "web_sha256": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd",
+      "card_ids": [],
+      "proposal_number": 179,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-27c1797f-8944-4587-bc7d-f369a59c5ff9.png",
+      "source_manifest": "ART_PROMPTS_SET10.json",
+      "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
     }
   ]
 }

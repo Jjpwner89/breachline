@@ -1,0 +1,302 @@
+{
+  "set": 7,
+  "checked_at_utc": "2026-11-10T20:50:45.180909+00:00",
+  "result": "passed",
+  "generation_method": "built-in image_gen",
+  "paintings": 10,
+  "total_generation_attempts": 14,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "checks": {
+    "all_25_deliverables_present": true,
+    "png_format_crc_and_decompression_valid": true,
+    "jpeg_format_and_native_dimensions_valid": true,
+    "dimensions_correct": true,
+    "selected_sources_match": true,
+    "references_match_recorded_hashes": true,
+    "exact_prompts_and_tool_arguments_preserved": true,
+    "one_selected_attempt_per_painting": true,
+    "all_10_paintings_final": true,
+    "gallery_has_10_images": true,
+    "gallery_links_valid": true,
+    "gallery_has_only_final_states": true,
+    "unique_painting_hashes": true,
+    "all_paintings_visually_inspected": true,
+    "all_10_active_image_pairs_unchanged": true,
+    "superseded_images_and_sources_deleted": true,
+    "bellframe_assets_remain_deleted": true,
+    "final_manifest_matches_selected_images": true,
+    "protected_files_unchanged_during_finalization": true,
+    "only_set7_deliverables_written": true
+  },
+  "visual_review_note": "All ten selected paintings were visually inspected during generation and are now creator-approved finals. Current image hashes are unchanged. The gallery was statically checked; the recorded browser limitation remains.",
+  "files": [
+    {
+      "number": 111,
+      "title": "Devoted pilgrim",
+      "file": "devoted-pilgrim.png",
+      "web_file": "web/devoted-pilgrim.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "19a089a6717cae1e622c18c11df32bb718edc4148971a7ae73e6101f49578621",
+      "web_sha256": "6fc1bfaf15a91d15358c2eb6b3b95fd549ec678ac2b7517137e0cd04befc02cc",
+      "review_status": "final",
+      "inspection_note": "Inspected supported kneeling posture, two open palms, separate resting staff, ordinary aged face and consistent road/shrine scale; warm illumination remains concentrated on palms and face.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 107,
+      "title": "Rimebolt",
+      "file": "rimebolt.png",
+      "web_file": "web/rimebolt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e12c9b5cf6afd2358fc84950290159d7ec84e2fc51463259216a29092ac8874c",
+      "web_sha256": "f71cb8d5a983fbb590350e9949a8415b75306d4aac881f229aa26455eafce8fc",
+      "review_status": "final",
+      "inspection_note": "Traced both arms from shoulders to hands and both legs to planted boots; checked released ice spear separation, direction and off-screen target; no duplicated limbs.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 128,
+      "title": "Borrowed will",
+      "file": "borrowed-will.png",
+      "web_file": "web/borrowed-will.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "f9626e8032a48283d743983162a669efd44c399e665b62601c31e43d90fc4d92",
+      "web_sha256": "6cec25982fe06bf09f8fc90cf9dceb3cd9b19efc9d136aba8801bbb4b12b829c",
+      "review_status": "final",
+      "inspection_note": "Checked coherent human facial structure and armour collar, emptied expression, broken nose and small blue wisps restricted to the eyes; no large flame effect.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 142,
+      "title": "Focus-rifle marksman",
+      "file": "focus-rifle-marksman.png",
+      "web_file": "web/focus-rifle-marksman.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "014e2b10faef0ac6dd5e09d304ddc3bbc6faa0438d1f2ebff1b5f85808d36b23",
+      "web_sha256": "a20b0e82fa5e11fe9a86115ea9dd824baa32f4e033400623d3e93ab2075e74d6",
+      "review_status": "final",
+      "inspection_note": "Checked continuous shoulder-to-grip and forearm-to-support-hand chains, stock-to-cheek contact, prone torso and two legs, coherent long brass/glass rifle and restrained muzzle crystal.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 145,
+      "title": "White morning",
+      "file": "white-morning.png",
+      "web_file": "web/white-morning.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "fe006fdab37b845d40d5a6a881f9818ce6b6cbd1e65a217b64573a8a62563bdc",
+      "web_sha256": "e4d14054814d033f7f155e7fbedb8bd85bb5ddc4f09b4114c6c4593eb73d4752",
+      "review_status": "final",
+      "inspection_note": "Visually inspected six soldiers at differing depths and sizes, varied halted/moving poses, coherent connected arms and legs, spear grips, planted feet and a separate caster. The broad irregular frost spreads through the field; the evenly spaced horizontal row is gone. Warm dawn and cool landscape remain consistent. The creator approved this revision.",
+      "selected_attempt": 2
+    },
+    {
+      "number": 130,
+      "title": "Barrow mark",
+      "file": "barrow-mark.png",
+      "web_file": "web/barrow-mark.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "8d7b9fcf992ced86e166d19bcb97a5d395cdda66b4ccc92f9884d1e29c2b8677",
+      "web_sha256": "7c8966d3442a3232e5abe50894e0c50b5329d4a245d17be441fb148428253606",
+      "review_status": "final",
+      "inspection_note": "Checked rear-facing walking soldier with connected limbs, visible backplate mark, separate subordinate necromancer and naturally curled raised hand; restrained grey smoulder.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 152,
+      "title": "Hostess of the late hour",
+      "file": "hostess-of-the-late-hour.png",
+      "web_file": "web/hostess-of-the-late-hour.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "02d1a0698f7968fdf1686fc3b19c3756494a0af0a65de46e9c6523cbd88c869e",
+      "web_sha256": "3f2dfff9d2e297f7cfdfe7463764c849a4584d985fbea5fef1474d230bcb1169",
+      "review_status": "final",
+      "inspection_note": "Inspected face and identity against the original, both shoulder-arm-hand connections, unchanged wineglass grip/resting hand, slender frame, opaque gathered gown and lace layering. Table, candles, dark window, chair and lighting remain visually consistent. Minor painterly changes remain beyond the intended edit; approved by the creator.",
+      "selected_attempt": 2
+    },
+    {
+      "number": 104,
+      "title": "Kindle the line",
+      "file": "kindle-the-line.png",
+      "web_file": "web/kindle-the-line.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7620f2777b999e7f5707f09f50feb91b48aebf59b9a3d565c74f5db34c0b1834",
+      "web_sha256": "223f958810b894a7f2f303947aee0dcc8257487987dee80c89541faf2ea96ecd",
+      "review_status": "final",
+      "inspection_note": "Checked singer's two hands gripping one staff, staff head contacting grass, supported stride, five distinct waiting fighters and separated large flame shapes; clothing remains intact.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 105,
+      "title": "Slagheart hulk",
+      "file": "slagheart-hulk.png",
+      "web_file": "web/slagheart-hulk.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0f4aee5487ceac2fcc9775327f084afb9cb8f5038242919e29598dbde22d09a5",
+      "web_sha256": "3001d718f4ec21907771cf8c90cf7ef519b3728d8caa663363a45e7f4a27bb76",
+      "review_status": "final",
+      "inspection_note": "Checked broad nonhumanoid basalt body, connected load-bearing rock limbs and raised forefoot, molten seams and rain steam; goatherd and two goats form consistent small scale cues.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 175,
+      "title": "Spring melt",
+      "file": "spring-melt.png",
+      "web_file": "web/spring-melt.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "0ccc71373fd93273ec8c1221831ac44fbf3f3b3987b35292000ec86e95b379dc",
+      "web_sha256": "74a90a3c73c0d947c4d9110a5062612080291068294222d6c8760dba0d248b39",
+      "review_status": "final",
+      "inspection_note": "Checked shoulder-elbow-forearm-hand chain into transparent pool, other hand resting on raised knee, supported kneeling legs and boot contact. Local follow-up extends bandage below waterline while preserving anatomy, face and scene.",
+      "selected_attempt": 2
+    }
+  ],
+  "protected_file_checks": {
+    "breachline/art/CARD_ART_FINAL.json": true,
+    "breachline/CARD_PROPOSALS.md": true,
+    ".claude/skills/art-direction/SKILL.md": true
+  },
+  "scope_note": "Finalized only Set 7. Removed superseded Set 7 images and their generated sources while preserving exact prompt history. Shared registry, skills, card records and other sets are untouched. Creator authorized a commit limited to these 25 deliverables.",
+  "output_files": [
+    "devoted-pilgrim.png",
+    "web/devoted-pilgrim.jpg",
+    "rimebolt.png",
+    "web/rimebolt.jpg",
+    "borrowed-will.png",
+    "web/borrowed-will.jpg",
+    "focus-rifle-marksman.png",
+    "web/focus-rifle-marksman.jpg",
+    "white-morning.png",
+    "web/white-morning.jpg",
+    "barrow-mark.png",
+    "web/barrow-mark.jpg",
+    "hostess-of-the-late-hour.png",
+    "web/hostess-of-the-late-hour.jpg",
+    "kindle-the-line.png",
+    "web/kindle-the-line.jpg",
+    "slagheart-hulk.png",
+    "web/slagheart-hulk.jpg",
+    "spring-melt.png",
+    "web/spring-melt.jpg",
+    "ART_BRIEFS_SET7.md",
+    "ART_PROMPTS_SET7.json",
+    "SET7_GALLERY.html",
+    "SET7_VALIDATION.json",
+    "CARD_ART_FINAL_SET7.json"
+  ],
+  "metadata_sha256": {
+    "ART_BRIEFS_SET7.md": "33842dae31701986a3aebf81656aa82e545577b771f1d3ce2546dd527b410d43",
+    "ART_PROMPTS_SET7.json": "1f1397a951b2baf8ec9436d4a4b6e54c7265fa1d053c923faebc053038dd29dc",
+    "SET7_GALLERY.html": "30318dc0db95bf244050d62d396611dacda1810072fa0ad9f1fa87f1b968e7c0",
+    "CARD_ART_FINAL_SET7.json": "a4a08893994bc3eb685b2414669a23d4abad6b90fe6f1242037c0f83ae090ade"
+  },
+  "browser_preview": {
+    "verified": false,
+    "reason": "Browser URL policy blocks local file URLs. No workaround attempted. Gallery checked through static HTML, image and link validation."
+  },
+  "revised_paintings": 0,
+  "retained_paintings": 10,
+  "history_files": [],
+  "active_generation_attempts": 13,
+  "removed_paintings": 1,
+  "review_counts": {
+    "approved": 10,
+    "final": 10,
+    "revision_awaiting_creator_review": 0,
+    "awaiting_creator_review": 0,
+    "removed": 1
+  },
+  "protected_file_check_scope": "Finalization pass; concurrent sessions may edit shared files independently.",
+  "deleted_files": [
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/bellframe-construct.png",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/web/bellframe-construct.jpg",
+    "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-95d7d361-35ac-4918-a70c-e921cb4698ea.png",
+    "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-dde403c3-9e24-49e8-bb47-b4514f3e7827.png",
+    "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-407805a8-20a7-433a-92a2-fbe43e78450f.png",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set7-review-2026-11-10/originals/hostess-of-the-late-hour.png",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set7-review-2026-11-10/originals/hostess-of-the-late-hour.jpg",
+    "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-cdf7f400-d897-466e-bb79-2051a9f0df20.png"
+  ],
+  "status": "final_for_card_building",
+  "finalized_at_utc": "2026-11-10T20:50:45.180909+00:00",
+  "final_manifest": "CARD_ART_FINAL_SET7.json",
+  "commit_authorized": true,
+  "commit_scope": "Set 7 deliverables only; see Git history for commit identity."
+}

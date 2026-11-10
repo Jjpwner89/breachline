@@ -6,6 +6,13 @@ Cards 31 to 42, from the reference library, were made final on 2026-11-09 and ar
 
 Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. None of 104 to 188 are built, and most need art. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
 
+## Gnosis sound restriction (creator direction, 2026-11-10)
+
+Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
+
+Harmonic burst (#124) keeps its finalized suspended-bell painting. It is explicitly not a favorite or a model for further Gnosis cards. The temporary block does not revoke already accepted cards. See the [art direction](../.claude/skills/art-direction/SKILL.md#gnosis-sound-limit-and-harmonic-burst-final-creator-direction-2026-11-10).
+
+
 ## Rules decided while building
 
 - **Steadfast:** a move or Dawnsail passage counts as moving. Being swapped, pushed or shoved doesn't.

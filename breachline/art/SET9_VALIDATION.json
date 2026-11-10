@@ -1,0 +1,995 @@
+{
+  "set": 9,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-10T20:50:41.778503+00:00",
+  "result": "passed",
+  "generation_method": "built-in image_gen",
+  "paintings": 12,
+  "web_jpegs": 12,
+  "total_generation_attempts": 16,
+  "quality_refinements": 4,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "count_resolution": "User explicitly confirmed generating all 12 listed cards, including Untaught firecaller.",
+  "checks": {
+    "all_files_present": true,
+    "dimensions_correct": true,
+    "png_integrity_passed": true,
+    "jpeg_format_and_dimensions_passed": true,
+    "selected_sources_match": true,
+    "references_match_recorded_hashes": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_attempt_per_painting": true,
+    "gallery_has_12_images": true,
+    "gallery_links_valid": true,
+    "all_paintings_visually_inspected": true,
+    "confirmed_12_card_scope": true,
+    "all_brief_filenames_match": true,
+    "harmonic_bell_suspension_visually_inspected": true,
+    "latest_review_all_12_paintings_and_jpegs_unchanged": true,
+    "latest_review_existing_final_registry_assets_unchanged": true,
+    "harmonic_final_registry_hashes_match": true,
+    "gnosis_temporary_block_expires_at_250_total_cards": true,
+    "gnosis_one_in_eight_ceiling_retained_after_expiry": true,
+    "all_12_creator_final": true,
+    "all_12_in_final_art_registry": true,
+    "all_12_registry_hashes_match": true,
+    "superseded_images_removed": true,
+    "all_exact_generation_prompts_preserved": true
+  },
+  "files": [
+    {
+      "number": 125,
+      "title": "Line of dawn",
+      "file": "line-of-dawn.png",
+      "web_file": "web/line-of-dawn.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+      "web_sha256": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+      "bytes": 2730436,
+      "web_bytes": 169726,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-b8c2873b-1adc-43a6-b639-1d78c9320a5b.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Wide landscape and gold light retain hierarchy; seven small human soldiers and two subordinate retreating figures are grounded at consistent scale. Visible limbs are connected; no lettering or frame."
+    },
+    {
+      "number": 139,
+      "title": "Hearth-sworn penitent",
+      "file": "hearth-sworn-penitent.png",
+      "web_file": "web/hearth-sworn-penitent.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+      "web_sha256": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+      "bytes": 2704243,
+      "web_bytes": 178168,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-ba624d5a-cfe1-48c2-b7ee-e46965202a39.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Kneeling pose has coherent shoulders, two arms, raised knee and supporting leg; hands contact log and knee. Belt lantern hangs distinctly. Background sleepers are subordinate; no lettering or frame."
+    },
+    {
+      "number": 124,
+      "title": "Harmonic burst",
+      "file": "harmonic-burst.png",
+      "web_file": "web/harmonic-burst.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+      "web_sha256": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+      "bytes": 2840923,
+      "web_bytes": 218384,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-3153a0c6-604e-47aa-88d0-ef39f12c6dbf.png",
+      "selected_attempt": 2,
+      "review_status": "final_by_creator",
+      "inspection_note": "Inspected corrected installation: two grounded timber posts support a braced crossbeam; wrought-iron straps connect the headstock to the crown loops. The bell hangs freely with clear space below its lip and an internal clapper. Previous lip-support stones are removed. Caster's arms, legs and grip remain connected; frame does not intersect the figure. Plaza, scale, pressure wave and secondary figures preserved."
+    },
+    {
+      "number": 143,
+      "title": "Field-plate artificer",
+      "file": "field-plate-artificer.png",
+      "web_file": "web/field-plate-artificer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+      "web_sha256": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+      "bytes": 2749711,
+      "web_bytes": 186976,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-f7457a9a-beeb-4be4-afce-8310cfe50fd2.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Both people have two connected arms and two grounded legs. Apprentice's wrench engages the shoulder bolt while his other hand steadies the plate. Breastplate, shoulder lames and quilted underlayer have clear construction; enamel reflects while cloth remains diffuse."
+    },
+    {
+      "number": 121,
+      "title": "Collect the tithe",
+      "file": "collect-the-tithe.png",
+      "web_file": "web/collect-the-tithe.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+      "web_sha256": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+      "bytes": 2741339,
+      "web_bytes": 157007,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-534bd130-f65a-4966-b236-bf10c3cb45f1.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Both farmers kneel with leg connections and ground contact visible; hands rest on their own thighs. Collector's separate hands hold the purse rim coherently. Two children are subordinate doorway figures. Faint breath-like vapour, muted yard and rich coat accent match the brief."
+    },
+    {
+      "number": 151,
+      "title": "Mortuary priest",
+      "file": "mortuary-priest.png",
+      "web_file": "web/mortuary-priest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+      "web_sha256": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+      "bytes": 2614797,
+      "web_bytes": 147919,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-32a815c1-ae5f-4fc8-86d7-05588bc3c791.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Priest's two arms connect visibly to the torso; one hand supports the bowl and the other dabs ash-oil at the brow. Shroud describes one plausible body. Corpse is intact and non-graphic, bones subordinate, light and expression restrained."
+    },
+    {
+      "number": 154,
+      "title": "Halfshade lynx",
+      "file": "halfshade-lynx.png",
+      "web_file": "web/halfshade-lynx.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+      "web_sha256": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+      "bytes": 2389355,
+      "web_bytes": 137476,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-a237c856-1d0a-48f5-98db-40eba7cf9ee8.png",
+      "selected_attempt": 2,
+      "review_status": "final_by_creator",
+      "inspection_note": "Inspected revision: short bobtail replaces the overlong tail; four crouched feline limbs are connected, two solid front paws support the body on stone, and shadowed hindquarters remain readable. Dissolving edges are restrained. The creature remains a proposal."
+    },
+    {
+      "number": 116,
+      "title": "Untaught firecaller",
+      "file": "untaught-firecaller.png",
+      "web_file": "web/untaught-firecaller.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+      "web_sha256": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+      "bytes": 2807971,
+      "web_bytes": 193803,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-de7eca66-c226-4947-b95b-0387cdcb5a0b.png",
+      "selected_attempt": 2,
+      "review_status": "final_by_creator",
+      "inspection_note": "Inspected revision: main face now has ordinary-sized eyes and restrained surprise; supporting goblins have quieter expressions. Two arms connect to the shoulders and two legs to the pelvis, with boots grounded. Each open hand has a coherent thumb/finger arrangement; unequal fire volumes and cart scale are readable."
+    },
+    {
+      "number": 119,
+      "title": "The sky falls in",
+      "file": "the-sky-falls-in.png",
+      "web_file": "web/the-sky-falls-in.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+      "web_sha256": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+      "bytes": 2684494,
+      "web_bytes": 155540,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-c02fbad6-99f2-44cc-b3c1-f98c0709ee40.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Distant fortress, valley and small foreground orc establish scale; two raised arms and planted legs are connected. Burning rock and lightning dominate the sky with physical volume and a clear pre-impact direction. Composition differs from the Cinderfall reference."
+    },
+    {
+      "number": 191,
+      "title": "Salamander-hide mantle",
+      "file": "salamander-hide-mantle.png",
+      "web_file": "web/salamander-hide-mantle.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+      "web_sha256": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+      "bytes": 2446186,
+      "web_bytes": 153837,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-7cd73735-4127-4611-93c7-f5632bf3b034.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Mantle has a coherent neck opening, clasp, lining, folded hem and support loop on the peg. No animal head, limbs or tail. One cropped forearm connects to a hand gripping tongs; garment remains the focal point. Settled grey embers do not scorch the hide."
+    },
+    {
+      "number": 172,
+      "title": "Elderwood stag",
+      "file": "elderwood-stag.png",
+      "web_file": "web/elderwood-stag.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+      "web_sha256": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+      "bytes": 3038031,
+      "web_bytes": 208694,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-00be48a9-5de1-4309-9875-534e2deb8fd2.png",
+      "selected_attempt": 2,
+      "review_status": "final_by_creator",
+      "inspection_note": "Inspected widened revision: all branch-antler tips fit inside the canvas with clear space above and ahead. Two folded forelegs and two trailing hind legs connect coherently to one deer body, with cloven hooves and a plausible bounding pose. Misty birch setting, motion and scale preserved."
+    },
+    {
+      "number": 178,
+      "title": "Rust-hinged warden",
+      "file": "rust-hinged-warden.png",
+      "web_file": "web/rust-hinged-warden.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "sha256": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+      "web_sha256": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9",
+      "bytes": 3151515,
+      "web_bytes": 201651,
+      "png_integrity": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "format": "PNG",
+        "crc_valid": true,
+        "decoded_scanlines_valid": true,
+        "color_type": 2,
+        "bit_depth": 8
+      },
+      "jpeg_integrity": {
+        "dimensions": [
+          768,
+          512
+        ],
+        "format": "JPEG",
+        "markers_valid": true
+      },
+      "selected_source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-9136b7a3-1c02-470f-b60b-604b165305cc.png",
+      "selected_attempt": 1,
+      "review_status": "final_by_creator",
+      "inspection_note": "Two legs carry the open arch frame on grounded plates; two distinct asymmetrical arms connect through visible hinges. Gripping assembly rests against stone, and two small birds contact the shoulder beam. Crafted head is abstract, with no knight helmet or glowing core. Scale and ordinary masonry read coherently."
+    }
+  ],
+  "gallery": {
+    "file": "SET9_GALLERY.html",
+    "image_count": 12,
+    "card_count": 12,
+    "links_checked": 63,
+    "broken_links": [],
+    "browser_rendering_verified": false,
+    "browser_preview_note": "Optional browser preview was attempted but blocked by browser URL policy because file: URLs are not permitted. No alternate browser surface or workaround was attempted. The HTML structure, 12 image entries, 12 card entries and all 63 links were checked directly."
+  },
+  "write_scope": {
+    "allowed_files": [
+      "line-of-dawn.png",
+      "web/line-of-dawn.jpg",
+      "hearth-sworn-penitent.png",
+      "web/hearth-sworn-penitent.jpg",
+      "harmonic-burst.png",
+      "web/harmonic-burst.jpg",
+      "field-plate-artificer.png",
+      "web/field-plate-artificer.jpg",
+      "collect-the-tithe.png",
+      "web/collect-the-tithe.jpg",
+      "mortuary-priest.png",
+      "web/mortuary-priest.jpg",
+      "halfshade-lynx.png",
+      "web/halfshade-lynx.jpg",
+      "untaught-firecaller.png",
+      "web/untaught-firecaller.jpg",
+      "the-sky-falls-in.png",
+      "web/the-sky-falls-in.jpg",
+      "salamander-hide-mantle.png",
+      "web/salamander-hide-mantle.jpg",
+      "elderwood-stag.png",
+      "web/elderwood-stag.jpg",
+      "rust-hinged-warden.png",
+      "web/rust-hinged-warden.jpg",
+      "ART_PROMPTS_SET9.json",
+      "SET9_GALLERY.html",
+      "SET9_VALIDATION.json",
+      "CARD_ART_FINAL.json",
+      "../../.claude/skills/art-direction/SKILL.md",
+      "../CARD_PROPOSALS.md"
+    ],
+    "repository_files_written": [
+      "line-of-dawn.png",
+      "web/line-of-dawn.jpg",
+      "hearth-sworn-penitent.png",
+      "web/hearth-sworn-penitent.jpg",
+      "harmonic-burst.png",
+      "web/harmonic-burst.jpg",
+      "field-plate-artificer.png",
+      "web/field-plate-artificer.jpg",
+      "collect-the-tithe.png",
+      "web/collect-the-tithe.jpg",
+      "mortuary-priest.png",
+      "web/mortuary-priest.jpg",
+      "halfshade-lynx.png",
+      "web/halfshade-lynx.jpg",
+      "untaught-firecaller.png",
+      "web/untaught-firecaller.jpg",
+      "the-sky-falls-in.png",
+      "web/the-sky-falls-in.jpg",
+      "salamander-hide-mantle.png",
+      "web/salamander-hide-mantle.jpg",
+      "elderwood-stag.png",
+      "web/elderwood-stag.jpg",
+      "rust-hinged-warden.png",
+      "web/rust-hinged-warden.jpg",
+      "ART_PROMPTS_SET9.json",
+      "SET9_GALLERY.html",
+      "SET9_VALIDATION.json",
+      "CARD_ART_FINAL.json",
+      "../../.claude/skills/art-direction/SKILL.md",
+      "../CARD_PROPOSALS.md"
+    ],
+    "scope_note": "Set 9 deliverables and only Set 9 selection/feedback changes in the shared art registry, art-direction skill and card proposals. Other sets and unrelated shared-document edits are excluded from the commit. Cleanup deletes only the four superseded Set 9 generated sources.",
+    "committed": true,
+    "commit_requested": true,
+    "commit_scope": "30 repository paths: 24 final art files, 3 Set 9 records, and only Set 9 changes in 3 shared records."
+  },
+  "visual_review_note": "All 12 selected paintings were visually inspected during generation. Harmonic burst has now been re-inspected after the creator-requested bell suspension correction. Three named paintings are recorded as strongly liked. No final card selection or new lore was written.",
+  "artifact_sha256": {
+    "ART_PROMPTS_SET9.json": "dde796ce3caabd9a44982d06f98c980f209aadf650ba38f2159430c89a13c62c",
+    "SET9_GALLERY.html": "abac3ea42bbc232a8bbffd27f55d3f68419530d8164c12354f9c2823adc00045",
+    "CARD_ART_FINAL.json": "e958620509575c1b6a2a8efddc21c65b9fefdcd4e203fd9e98ec73cb74835ed3"
+  },
+  "review_history": [
+    {
+      "date": "2026-11-10",
+      "changed_painting": "harmonic-burst.png",
+      "liked_paintings": [
+        "the-sky-falls-in.png",
+        "salamander-hide-mantle.png",
+        "collect-the-tithe.png"
+      ],
+      "preservation_checks": {
+        "CARD_ART_FINAL.json": {
+          "before_sha256": "8b78e54da9aa1c669dde2cf1c99106c718b8e89d69d920a1ebb7c7b832df5c47",
+          "after_sha256": "8b78e54da9aa1c669dde2cf1c99106c718b8e89d69d920a1ebb7c7b832df5c47",
+          "unchanged": true
+        },
+        "../../.claude/skills/art-direction/SKILL.md": {
+          "before_sha256": "709b11302d9c2a5086197fa43af70942bad8af2e995520a98c7b35892de2c062",
+          "after_sha256": "709b11302d9c2a5086197fa43af70942bad8af2e995520a98c7b35892de2c062",
+          "unchanged": true
+        },
+        "../CARD_PROPOSALS.md": {
+          "before_sha256": "337d9e1ab58cfe49a3a6c5ea1ec287f3519eea428e56cd648ff02be4970a8188",
+          "after_sha256": "337d9e1ab58cfe49a3a6c5ea1ec287f3519eea428e56cd648ff02be4970a8188",
+          "unchanged": true
+        },
+        "line-of-dawn.png": {
+          "before_sha256": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+          "after_sha256": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+          "unchanged": true
+        },
+        "web/line-of-dawn.jpg": {
+          "before_sha256": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+          "after_sha256": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+          "unchanged": true
+        },
+        "hearth-sworn-penitent.png": {
+          "before_sha256": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+          "after_sha256": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+          "unchanged": true
+        },
+        "web/hearth-sworn-penitent.jpg": {
+          "before_sha256": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+          "after_sha256": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+          "unchanged": true
+        },
+        "field-plate-artificer.png": {
+          "before_sha256": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+          "after_sha256": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+          "unchanged": true
+        },
+        "web/field-plate-artificer.jpg": {
+          "before_sha256": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+          "after_sha256": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+          "unchanged": true
+        },
+        "collect-the-tithe.png": {
+          "before_sha256": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+          "after_sha256": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+          "unchanged": true
+        },
+        "web/collect-the-tithe.jpg": {
+          "before_sha256": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+          "after_sha256": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+          "unchanged": true
+        },
+        "mortuary-priest.png": {
+          "before_sha256": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+          "after_sha256": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+          "unchanged": true
+        },
+        "web/mortuary-priest.jpg": {
+          "before_sha256": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+          "after_sha256": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+          "unchanged": true
+        },
+        "halfshade-lynx.png": {
+          "before_sha256": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+          "after_sha256": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+          "unchanged": true
+        },
+        "web/halfshade-lynx.jpg": {
+          "before_sha256": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+          "after_sha256": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+          "unchanged": true
+        },
+        "untaught-firecaller.png": {
+          "before_sha256": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+          "after_sha256": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+          "unchanged": true
+        },
+        "web/untaught-firecaller.jpg": {
+          "before_sha256": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+          "after_sha256": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+          "unchanged": true
+        },
+        "the-sky-falls-in.png": {
+          "before_sha256": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+          "after_sha256": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+          "unchanged": true
+        },
+        "web/the-sky-falls-in.jpg": {
+          "before_sha256": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+          "after_sha256": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+          "unchanged": true
+        },
+        "salamander-hide-mantle.png": {
+          "before_sha256": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+          "after_sha256": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+          "unchanged": true
+        },
+        "web/salamander-hide-mantle.jpg": {
+          "before_sha256": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+          "after_sha256": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+          "unchanged": true
+        },
+        "elderwood-stag.png": {
+          "before_sha256": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+          "after_sha256": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+          "unchanged": true
+        },
+        "web/elderwood-stag.jpg": {
+          "before_sha256": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+          "after_sha256": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+          "unchanged": true
+        },
+        "rust-hinged-warden.png": {
+          "before_sha256": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+          "after_sha256": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+          "unchanged": true
+        },
+        "web/rust-hinged-warden.jpg": {
+          "before_sha256": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9",
+          "after_sha256": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9",
+          "unchanged": true
+        }
+      },
+      "result": "passed"
+    },
+    {
+      "date": "2026-11-10",
+      "feedback_verbatim": "better - final, but note that this is not my favorite there are more interesting mechanisms than sound for gnosis, it should not be more than 1/8 cards preferrably less. how about no gnosis cards about sound until we reach 250 total cards, then remove that blocker",
+      "action": "Finalize corrected Harmonic burst; record temporary and persistent Gnosis sound restrictions.",
+      "finalized_painting": "harmonic-burst.png",
+      "paintings_modified": [],
+      "preserved_file_sha256": {
+        "line-of-dawn.png": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+        "web/line-of-dawn.jpg": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+        "hearth-sworn-penitent.png": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+        "web/hearth-sworn-penitent.jpg": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+        "harmonic-burst.png": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+        "web/harmonic-burst.jpg": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+        "field-plate-artificer.png": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+        "web/field-plate-artificer.jpg": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+        "collect-the-tithe.png": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+        "web/collect-the-tithe.jpg": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+        "mortuary-priest.png": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+        "web/mortuary-priest.jpg": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+        "halfshade-lynx.png": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+        "web/halfshade-lynx.jpg": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+        "untaught-firecaller.png": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+        "web/untaught-firecaller.jpg": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+        "the-sky-falls-in.png": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+        "web/the-sky-falls-in.jpg": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+        "salamander-hide-mantle.png": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+        "web/salamander-hide-mantle.jpg": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+        "elderwood-stag.png": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+        "web/elderwood-stag.jpg": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+        "rust-hinged-warden.png": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+        "web/rust-hinged-warden.jpg": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9"
+      },
+      "shared_changes": {
+        "CARD_ART_FINAL.json": "Append Harmonic burst and increment its counts; all prior asset records preserved.",
+        "../../.claude/skills/art-direction/SKILL.md": "Add creator feedback and conditional Gnosis sound restriction.",
+        "../CARD_PROPOSALS.md": "Add the same planning restriction without changing proposed mechanics."
+      },
+      "result": "passed"
+    },
+    {
+      "date": "2026-11-10",
+      "feedback_verbatim": "mark all as final and commit. remove outdated versions",
+      "finalized_paintings": [
+        "line-of-dawn.png",
+        "hearth-sworn-penitent.png",
+        "harmonic-burst.png",
+        "field-plate-artificer.png",
+        "collect-the-tithe.png",
+        "mortuary-priest.png",
+        "halfshade-lynx.png",
+        "untaught-firecaller.png",
+        "the-sky-falls-in.png",
+        "salamander-hide-mantle.png",
+        "elderwood-stag.png",
+        "rust-hinged-warden.png"
+      ],
+      "deleted_image_files": [
+        {
+          "card": "Harmonic burst",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-57277780-e743-4bac-b94c-9fbb727b4c40.png",
+          "sha256": "dbefee025c532ab949b3aed0cad91767f759a2c110c884a7c1f16008d869fa0f",
+          "reason": "Superseded after creator rejected the implausible bell-on-stones installation. Original generated source retained as exact edit provenance."
+        },
+        {
+          "card": "Halfshade lynx",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-77b171c3-9844-4913-9a59-8bc303f04144.png",
+          "sha256": "fb62a13881993b1ccda5e855b442cf2dd7bcb844fc32f4a29333a07ce5ac0a72",
+          "reason": "Superseded: shorten the overlong furred tail to preserve lynx anatomy."
+        },
+        {
+          "card": "Untaught firecaller",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-71c49de2-8e64-4c0b-8358-d57e6a65f06c.png",
+          "sha256": "ebc16816200c5438148f5dc1b73d11df332ceb0c8487faecccf05c9033d79adc",
+          "reason": "Superseded: overly theatrical wide eyes and broad comic expressions."
+        },
+        {
+          "card": "Elderwood stag",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-45529dbd-b9bc-480f-baea-d13071fadc36.png",
+          "sha256": "b3f6b42902c096dee4ce318abeaec49d9764ca917f12577dd8d48552107dc96b",
+          "reason": "Superseded: antler tips were clipped by the top edge despite otherwise coherent four-leg motion."
+        }
+      ],
+      "preserved_file_sha256": {
+        "line-of-dawn.png": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+        "web/line-of-dawn.jpg": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+        "hearth-sworn-penitent.png": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+        "web/hearth-sworn-penitent.jpg": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+        "harmonic-burst.png": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+        "web/harmonic-burst.jpg": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+        "field-plate-artificer.png": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+        "web/field-plate-artificer.jpg": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+        "collect-the-tithe.png": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+        "web/collect-the-tithe.jpg": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+        "mortuary-priest.png": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+        "web/mortuary-priest.jpg": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+        "halfshade-lynx.png": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+        "web/halfshade-lynx.jpg": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+        "untaught-firecaller.png": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+        "web/untaught-firecaller.jpg": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+        "the-sky-falls-in.png": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+        "web/the-sky-falls-in.jpg": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+        "salamander-hide-mantle.png": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+        "web/salamander-hide-mantle.jpg": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+        "elderwood-stag.png": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+        "web/elderwood-stag.jpg": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+        "rust-hinged-warden.png": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+        "web/rust-hinged-warden.jpg": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9"
+      },
+      "result": "passed"
+    }
+  ],
+  "latest_review_files_written": [
+    "ART_PROMPTS_SET9.json",
+    "SET9_GALLERY.html",
+    "SET9_VALIDATION.json",
+    "CARD_ART_FINAL.json",
+    "../../.claude/skills/art-direction/SKILL.md"
+  ],
+  "historical_checks": [
+    {
+      "scope": "Generation and prior bell-correction review, before the later finalization/policy instruction",
+      "checks": {
+        "protected_inputs_unchanged": true,
+        "latest_review_other_11_paintings_and_jpegs_unchanged": true,
+        "latest_review_protected_files_unchanged": true
+      }
+    },
+    {
+      "scope": "Earlier Harmonic burst-only finalization, before approval of the whole set",
+      "checks": {
+        "latest_review_other_11_manifest_entries_unchanged": true,
+        "latest_review_exact_prompts_and_attempt_history_unchanged": true
+      }
+    }
+  ],
+  "generation_protected_inputs": {
+    "CARD_ART_FINAL.json": {
+      "before_sha256": "8b78e54da9aa1c669dde2cf1c99106c718b8e89d69d920a1ebb7c7b832df5c47",
+      "after_sha256": "8b78e54da9aa1c669dde2cf1c99106c718b8e89d69d920a1ebb7c7b832df5c47",
+      "unchanged": true
+    },
+    "../../.claude/skills/art-direction/SKILL.md": {
+      "before_sha256": "709b11302d9c2a5086197fa43af70942bad8af2e995520a98c7b35892de2c062",
+      "after_sha256": "709b11302d9c2a5086197fa43af70942bad8af2e995520a98c7b35892de2c062",
+      "unchanged": true
+    },
+    "../CARD_PROPOSALS.md": {
+      "before_sha256": "337d9e1ab58cfe49a3a6c5ea1ec287f3519eea428e56cd648ff02be4970a8188",
+      "after_sha256": "337d9e1ab58cfe49a3a6c5ea1ec287f3519eea428e56cd648ff02be4970a8188",
+      "unchanged": true
+    },
+    "ART_BRIEFS_SET9.md": {
+      "before_sha256": "ce9d389fb46ee4f1a4ef161a479f636b240a8a0de5aa99822d917b7967796336",
+      "after_sha256": "ce9d389fb46ee4f1a4ef161a479f636b240a8a0de5aa99822d917b7967796336",
+      "unchanged": true
+    },
+    "ART_PROMPTS_SET6.json": {
+      "before_sha256": "b302ae8d817b85da6c3f18a912f47b929e0bd6807a8ef803743fbb949242b5c5",
+      "after_sha256": "b302ae8d817b85da6c3f18a912f47b929e0bd6807a8ef803743fbb949242b5c5",
+      "unchanged": true
+    },
+    "SET6_GALLERY.html": {
+      "before_sha256": "ed1b8edbafcc110f61b4f18e174915e9dbc8c834c47c935d7ddb911df1d4dc29",
+      "after_sha256": "ed1b8edbafcc110f61b4f18e174915e9dbc8c834c47c935d7ddb911df1d4dc29",
+      "unchanged": true
+    },
+    "SET6_VALIDATION.json": {
+      "before_sha256": "fe6299fde5646d904d077150529508cbe3afe8a32f096361624ff090f8139208",
+      "after_sha256": "fe6299fde5646d904d077150529508cbe3afe8a32f096361624ff090f8139208",
+      "unchanged": true
+    }
+  },
+  "generation_protected_inputs_note": "Historical generation audit; shared policy and selection files changed only during the subsequent creator finalization recorded below.",
+  "finalization_file_changes": {
+    "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md": {
+      "before_sha256": "13c8cdd2ec263a0d525ca7c9d25ba78d4014dd853f1014dff335d3ac09cdc4d6",
+      "after_sha256": "afbada95ef498017b705093d4e283fc32fa1a3640e8980d535e1b6a9a75d8620"
+    },
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/CARD_ART_FINAL.json": {
+      "before_sha256": "4ec96620e329bd005a4d7eef3243054c9e39d0676203b88ea17836f5bbfc6b85",
+      "after_sha256": "e958620509575c1b6a2a8efddc21c65b9fefdcd4e203fd9e98ec73cb74835ed3"
+    },
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/ART_PROMPTS_SET9.json": {
+      "before_sha256": "f60db4fc831bfac5784ed98ea622f6560d4c87fa188f17ed5a37b824c28773af",
+      "after_sha256": "dde796ce3caabd9a44982d06f98c980f209aadf650ba38f2159430c89a13c62c"
+    },
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/SET9_GALLERY.html": {
+      "before_sha256": "10f85a9865c7b57af8e3c0759cf99468ef06c5172f1f104336748d82b4e97ea7",
+      "after_sha256": "abac3ea42bbc232a8bbffd27f55d3f68419530d8164c12354f9c2823adc00045"
+    }
+  },
+  "finalized_paintings": 12,
+  "cleanup": {
+    "date": "2026-11-10",
+    "request": "mark all as final and commit. remove outdated versions",
+    "deleted_image_files": [
+      {
+        "card": "Harmonic burst",
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-57277780-e743-4bac-b94c-9fbb727b4c40.png",
+        "sha256": "dbefee025c532ab949b3aed0cad91767f759a2c110c884a7c1f16008d869fa0f",
+        "reason": "Superseded after creator rejected the implausible bell-on-stones installation. Original generated source retained as exact edit provenance."
+      },
+      {
+        "card": "Halfshade lynx",
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-77b171c3-9844-4913-9a59-8bc303f04144.png",
+        "sha256": "fb62a13881993b1ccda5e855b442cf2dd7bcb844fc32f4a29333a07ce5ac0a72",
+        "reason": "Superseded: shorten the overlong furred tail to preserve lynx anatomy."
+      },
+      {
+        "card": "Untaught firecaller",
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-71c49de2-8e64-4c0b-8358-d57e6a65f06c.png",
+        "sha256": "ebc16816200c5438148f5dc1b73d11df332ceb0c8487faecccf05c9033d79adc",
+        "reason": "Superseded: overly theatrical wide eyes and broad comic expressions."
+      },
+      {
+        "card": "Elderwood stag",
+        "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-45529dbd-b9bc-480f-baea-d13071fadc36.png",
+        "sha256": "b3f6b42902c096dee4ce318abeaec49d9764ca917f12577dd8d48552107dc96b",
+        "reason": "Superseded: antler tips were clipped by the top edge despite otherwise coherent four-leg motion."
+      }
+    ],
+    "retained_final_images": 12,
+    "retained_web_jpegs": 12,
+    "exact_prompt_history_retained": true,
+    "scope": "Only the four unselected Set 9 generated images were deleted; current final art and all reference images are preserved."
+  },
+  "shared_document_hash_note": "Shared-document change hashes are snapshots of the working files; unrelated concurrent edits are not included in the Set 9 commit.",
+  "commit_record": {
+    "message": "Finalize Breachline Set 9 card art",
+    "scope": "Only the 30 Set 9 art and metadata paths; shared documents contain only Set 9 additions.",
+    "superseded_images_deleted": 4
+  }
+}

@@ -17,8 +17,10 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
-11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 104 Kindle the line, 105 Slagheart hulk, 107 Rimebolt, 111 Devoted pilgrim, 128 Borrowed will, 130 Barrow mark, 142 Focus-rifle marksman, 145 White morning, 152 Hostess of the late hour, 175 Spring melt, 176 Bellframe construct.
-**Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
+10 retained illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 104 Kindle the line, 105 Slagheart hulk, 107 Rimebolt, 111 Devoted pilgrim, 128 Borrowed will, 130 Barrow mark, 142 Focus-rifle marksman, 145 White morning, 152 Hostess of the late hour, 175 Spring melt.
+**Status, 2026-11-10:** all ten retained paintings are final for card building. The selected revisions of White morning, Hostess of the late hour and Spring melt are final. Borrowed will remains a creator favorite. Superseded image files and sources are deleted. Selections are recorded in [CARD_ART_FINAL_SET7.json](CARD_ART_FINAL_SET7.json).
+
+**Removal:** Bellframe construct is rejected and removed from Set 7. Do not regenerate it. Exact historical prompts and the rejection decision remain in ART_PROMPTS_SET7.json; its images are deleted. Shared card records are outside this set-only edit.
 ## What these paintings are for
 
 Each brief begins with what should make the painting worth looking at. Card rules are design records in CARD_PROPOSALS.md and stay out of image prompts: a Longshot unit needn't be shooting, and a spell needn't diagram its effect, unless that's the most beautiful choice. Spells can show a specific event with purposeful activity and restrained, scene-organizing magic, which the creator liked in Set 3. Large dramatic magic is welcome where the brief asks for it, as with Cinderfall.
@@ -29,7 +31,7 @@ Each brief begins with what should make the painting worth looking at. Card rule
 2. Use each brief with the shared direction below and its listed references. Reference paths are relative to this folder. The references guide anatomy, materials and taste; don't copy their compositions.
 3. Save each painting as a 1536 × 1024 landscape PNG under the filename in its heading, in this folder, with a matching 768 × 512 JPEG in `web/`.
 4. Record exact prompts in `ART_PROMPTS_SET7.json`, a review page in `SET7_GALLERY.html` and file checks in `SET7_VALIDATION.json`, following Set 6's files.
-5. Other sets are being generated at the same time. Write only this set's paintings and files. Don't edit `CARD_ART_FINAL.json`, the art-direction skill, `CARD_PROPOSALS.md` or another set's files; selections are recorded after the creator's review.
+5. Other sets are being generated at the same time. Write only this set's paintings and files. Don't edit `CARD_ART_FINAL.json`, the art-direction skill, `CARD_PROPOSALS.md` or another set's files; final selections are recorded in CARD_ART_FINAL_SET7.json after the creator's review.
 6. New creatures and constructs here are proposals. A painting doesn't make them canon until the creator approves it.
 7. Check every image for connected anatomy, coherent hands and consistent scale before showing it.
 
@@ -54,7 +56,7 @@ SETTING: high fantasy about 150 years after the Old Empire collapsed and the god
 
 ## Variety across the batch
 
-Light runs from dusk fire and winter rooftops to a pink dawn field, a midnight supper and bright spring melt. Distance runs from the close Borrowed will portrait to the wide White morning field. Two constructs and creatures (the hulk and the bellframe) sit beside six people. No lion folk.
+Light runs from dusk fire and winter rooftops to a pink dawn field, a midnight supper and bright spring melt. Distance runs from the close Borrowed will portrait to the wide White morning field. The monumental Slagheart hulk contrasts with human portraits and wider scenes. No lion folk.
 
 ## Vigil
 
@@ -94,11 +96,13 @@ A male Artificer marksman lies prone along a slate roof ridge above Ambrel's mis
 
 ### 145. White morning: white-morning.png
 
-**Visual aim:** A frozen field at dawn, a straight line of rime racing across it and rooting a whole row of distant soldiers in place.
+**Visual aim:** A broad winter field at pink-gold dawn, an irregular advance caught as branching rime spreads through the soldiers' path.
 
 **References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/02-rime-drake.png`; `frost.png`
 
-Wide dawn landscape: across a flat field, a straight band of white frost has raced from one edge to the other, and a row of small distant soldiers stands rooted in it, their legs rimed white. A tiny Conclave caster stands at one end of the line. Pink-gold dawn sky over blue-white ground. Large, clear landscape shapes.
+A wide winter field under a pink-gold dawn sky. Six soldiers advance in a loose irregular group at different depths, with uneven spacing and varied orientations. A nearer soldier twists down toward a boot caught by frost; farther men brace, turn to warn each other or halt mid-step. A separate small Conclave caster directs a low fan of feathered rime through furrows and stubble, catching their legs where they were walking. Large blue-white landscape shapes, natural perspective and clear ground contact. No posed row, repeated stance or ruler-straight frost strip.
+
+**Review:** The original evenly spaced row was rejected as implausible. This direction supersedes the straight-line staging. The creator approved the revised painting: “that's better on the frost one”.
 
 ## Dominion
 
@@ -118,6 +122,8 @@ A soldier marches away across a misty barrow field at evening, unaware of a sigi
 
 At the head of a long table after midnight, a striking Ashen Court noblewoman sits with a wine glass, the other chairs empty and the candles low. She is glamorous and confident. Small signs are all that tell what she is: the candlelight doesn't warm her skin, and the dark window behind her shows no reflection. No fangs, no blood. Vampires are rare and subtle in this world.
 
+**Approved revision:** Preserve the original hostess's face, pose, wineglass and midnight supper scene. Apply the NSFW skill's fuller-bust/slender-frame balance with a low lace-edged gathered garnet-silk bodice, fine straps and lowered velvet sleeves, retaining her long gown and subtle vampire cues. The creator approved this updated painting on 2026-11-10.
+
 ## Fervor
 
 ### 104. Kindle the line: kindle-the-line.png
@@ -134,7 +140,7 @@ A Cinder Clans fire-singer, an older man with a soot-dark beard, drags the burni
 
 **References:** `reference-library-2026-11-06/magic-studies-round-05-2026-11-08/06-brazen-gatebeast.png`; `reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png`; `cinderfall.png`
 
-A huge creature of black cooling crust and orange molten seams walks a cinder pass, its body broad and unhuman: no knightly armour, no human face, more boulder and lava flow than person. Where the crust cracks, molten light shows; steam rises where drizzle meets it. A goatherd and two goats on the far slope give its scale. Hot interior light against cool grey rain and stone. This creature is a proposal, not canon, until the creator approves it.
+A huge creature of black cooling crust and orange molten seams walks a cinder pass, its body broad and unhuman: no knightly armour, no human face, more boulder and lava flow than person. Where the crust cracks, molten light shows; steam rises where drizzle meets it. A goatherd and two goats on the far slope give its scale. Hot interior light against cool grey rain and stone. The creator approved this creature painting as final card art; further lore and mechanics are not inferred.
 
 ## Genesis
 
@@ -146,12 +152,4 @@ A huge creature of black cooling crust and orange molten seams walks a cinder pa
 
 Early spring in a Genesis forest village: meltwater runs over stones under shafts of sunlight. A young hunter kneels at a clear pool, soaking a bandaged arm, while green shoots break through the last snow around him. Fresh, hopeful, bright.
 
-## Neutral
-
-### 176. Bellframe construct: bellframe-construct.png
-
-**Visual aim:** A walking open frame of bronze bells of every size, humming softly along an old Empire road.
-
-**References:** `reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png`; `reference-library-2026-11-06/magic-studies-round-05-2026-11-08/05-quarry-singer.png`; `reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png`
-
-A construct made of an open bronze frame hung with bells of many sizes walks on three jointed legs along an overgrown Old Empire road. The air shivers faintly around the largest bell. It needn't look like a person or a knight: abstract, functional and a little strange. Late golden light on the bronze. A proposal, not canon.
+**Finalization:** The creator requested “mark all as final and commit. remove outdated versions”. Commit only the Set 7 files; keep shared records and other sets untouched. Exact historical prompts and rejection decisions remain as text.
