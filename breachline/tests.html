@@ -453,9 +453,15 @@ function randomField(r, ids) {
     s = arena(); var shoved = put(s, 'giant', 1, 1, 2); put(s, 'conjurer', 1, 0, 3); give(s, 'scatter');
     s.active = 1; s.phase = 'command';
     s = E.applyMove(s, { type: 'endTurn' });
-    var rows = E.legalMoves(s).filter(function (m) { return m.type === 'respond'; }).map(function (m) { return m.row; }).sort().join();
-    s = E.applyMove(s, find(s, { type: 'respond', row: 1 }));
-    check('Scatter the line picks a row with enemies, hits and pushes them', rows === '0,1' && by(s, shoved).r === 0 && by(s, shoved).hp === 7);
+    var rows = {}; E.legalMoves(s).forEach(function (m) { if (m.type === 'respond') rows[m.r] = 1; });
+    s = E.applyMove(s, find(s, { type: 'respond', r: 1, c: 0 }));
+    check('Scatter the line aims at a row with enemies, hits and pushes them', Object.keys(rows).join() === '0,1' && by(s, shoved).r === 0 && by(s, shoved).hp === 7);
+
+    s = arena(); var burnt = put(s, 'raider', 1, 1, 2), soothed = give(s, 'shield');
+    var bolt0 = give(s, 'firebolt');
+    check('instants with no trigger can be cast on your own turn', !!find(s, { type: 'cast', card: bolt0, target: burnt.uid }) && !find(s, { type: 'cast', card: soothed }));
+    s = play(s, { type: 'cast', card: bolt0, target: burnt.uid });
+    check('and work as they do on the enemy turn', !by(s, burnt));
 
     s = arena(); var bell = give(s, 'oathbell'); put(s, 'sentinel', 0, 3, 2); put(s, 'knight', 0, 3, 3);
     s = play(s, { type: 'cast', card: bell });

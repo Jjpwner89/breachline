@@ -79,7 +79,7 @@
     chaplain: 'still-flame-chaplain', ribbonvane: 'white-flier', unwind: 'unwind-the-step', humbling: 'humbling-light', frostbreak: 'frostbreak', cinderrain: 'cinder-rain',
     overgrowth: 'overgrowth', trapper: 'thornwarden-trapper', mosshorn: 'mosshorn-grazer', waystone: 'waystone-golem', ossuary: 'ossuary-engine',
     debtblade: 'debt-collectors-blade', reedbank: 'reedbank-forager', siphon: 'siphon-vigor', scatter: 'scatter-the-line', hour: 'hour-of-collection',
-    roadshield: 'roadwardens-shield', sunthread: 'sunthread-mantle', roadsquire: 'oath-road-squire', standasone: 'stand-as-one', sanctuary: 'sanctuary-threshold',
+    roadshield: 'roadwardens-shield', glaive: 'stormglass-glaive', sunthread: 'sunthread-mantle', roadsquire: 'oath-road-squire', standasone: 'stand-as-one', sanctuary: 'sanctuary-threshold',
     prism: 'prism-bracer', courier: 'conclave-courier', unmake: 'unmake-the-pattern', informant: 'court-informant', bailiff: 'ashen-court-bailiff', tender: 'barrow-tender',
     mourningveil: 'mourning-veil', cinderhook: 'cinderhook-axe', clanoutrider: 'clan-outrider', shatter: 'shatter-the-chain', pathguard: 'thornwarden-pathguard',
     canopy: 'sudden-canopy', returnloam: 'return-to-loam',
@@ -299,7 +299,7 @@
         if (!sel.abUnit) marks.units[m.target] = 't-buff';
         else if (m.target === sel.abUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
       }
-      else if (m.type === 'cast' && m.r !== undefined && !m.target) marks.tiles[m.r + ',' + m.c] = 't-aim';
+      else if ((m.type === 'cast' || m.type === 'respond') && m.r !== undefined && !m.target) marks.tiles[m.r + ',' + m.c] = 't-aim';
       else if (m.type === 'ability' && sel.ability && m.r !== undefined) marks.tiles[m.r + ',' + m.c] = 't-aim';
       else if (m.type === 'cast' && m.r !== undefined) {
         if (!sel.castUnit) marks.units[m.target] = 't-buff';
@@ -338,7 +338,7 @@
     var c = E.CARDS[i.c], you = S.players[HUMAN];
     var have = you.lands.filter(function (l) { return l.colour === c.colour; }).length;
     var playable = S.phase === 'opening' || moves.some(function (m) { return m.card === i.id; });
-    var ready = playable && S.phase === 'play' && !S.pending && actor() === HUMAN;
+    var ready = playable && actor() === HUMAN && ((S.phase === 'play' && !S.pending) || aimable(moves, i.id));
     var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim') + (ready ? ' ready' : '');
     return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand"><span class="cslot">' +
       frameHtml(c, { cost: E.costOf(S, HUMAN, c, i), have: have }) + '</span></button>';
@@ -398,7 +398,6 @@
     var c = cardOf(m.card), t = m.target ? unitById(m.target) : null;
     var where = '';
     if (t && m.r !== undefined) where = ', moving ' + (m.r < t.r ? 'up' : m.r > t.r ? 'down' : m.c < t.c ? 'left' : 'right');
-    if (m.row !== undefined) where = ' on ' + E.rowOf(S, 1 - actor(), m.row);
     return c.name + (t ? ' on ' + E.CARDS[t.cardId].name : '') + where;
   }
 
@@ -456,7 +455,14 @@
         text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + (att.summoner !== undefined ? E.attackOf(S, a) : E.hitOn(S, a, unitById(att.targetUid))) + '. Respond?';
       } else if (S.pending.kind === 'move') text = E.CARDS[unitById(S.pending.step.uid).cardId].name + ' has moved. Respond?';
       else text = 'The enemy turn is ending. Use an instant?';
-      var opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) { return btn(moveLabel(m), { move: m }); }).join('');
+      if (sel && sel.kind === 'card') return promptHtml('Choose a tile to aim ' + cardOf(sel.id).name + ' at.') + '<span class="btns">' + btn('Cancel', { ui: 'clear' }) + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
+      // An aimed instant gets one button that picks it up, then the board takes the aim.
+      var aimed = {}, opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) {
+        if (m.r === undefined || m.target !== undefined) return btn(moveLabel(m), { move: m });
+        if (aimed[m.card]) return '';
+        aimed[m.card] = true;
+        return btn('Aim ' + cardOf(m.card).name, { ui: 'pick', id: m.card });
+      }).join('');
       return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
     }
     var out = [], sm = selectedMoves(moves);
@@ -468,7 +474,7 @@
       }
       if (sel && sel.kind === 'card') {
         var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
-        if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
+        if (c.type === 'instant') hint = instantHint(c, sm);
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
         else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
@@ -495,7 +501,10 @@
       return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>';
     }
     var cmdHint = 'Select one of your units. Each can move, then attack or use an ability.';
-    if (sel && sel.kind === 'relic') {
+    if (sel && sel.kind === 'card') {
+      cmdHint = instantHint(cardOf(sel.id), sm);
+      out.push(btn('Cancel', { ui: 'clear' }));
+    } else if (sel && sel.kind === 'relic') {
       cmdHint = 'Choose one of your units.';
       out.push(btn('Back', { ui: 'clear' }));
     } else if (!sel) out = out.concat(relicButtons(moves));
@@ -523,6 +532,15 @@
     }
     out.push(btn('End turn', { move: { type: 'endTurn' } }, !sel));
     return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>';
+  }
+
+  // Instants such as Scatter the line, aimed at a tile on either turn, or Firebolt picking a unit on your own turn.
+  function aimable(moves, id) {
+    return moves.some(function (m) { return m.card === id && (m.type === 'cast' || (m.type === 'respond' && m.r !== undefined && m.target === undefined)); });
+  }
+  function instantHint(c, sm) {
+    if (!sm.length) return c.damage || c.debt || c.shove || c.aim ? "You can't cast this right now." : 'This answers an enemy move, so it waits for the enemy turn.';
+    return c.aim ? 'Choose a tile to aim at.' : c.shove ? 'Choose an enemy unit to push back.' : c.debt ? 'Choose a damaged enemy unit.' : 'Choose an enemy unit.';
   }
 
   function relicName(id) {
@@ -776,6 +794,7 @@
       if (m.type === 'summon' || (m.type === 'move' && !sel.ability)) return m.r === r && m.c === c;
       if (m.type === 'ability' && m.r !== undefined) return !!sel.ability && (m.target === undefined || m.target === sel.abUnit) && m.r === r && m.c === c;
       if (m.type === 'relic') return !!u && m.target === u.uid;
+      if (m.type === 'respond') return m.target === undefined && m.r === r && m.c === c;
       if (m.type === 'cast' && m.r !== undefined) return m.target === sel.castUnit && m.r === r && m.c === c;
       if (!u || m.target !== u.uid) return false;
       if (m.type === 'enchant' || m.type === 'attack' || m.type === 'cast') return true;
@@ -821,8 +840,14 @@
   });
   $('hand').addEventListener('click', function (e) {
     var t = e.target.closest('.card');
-    if (!t || casting || S.winner !== null || actor() !== HUMAN || S.pending) return;
+    if (!t || casting || S.winner !== null || actor() !== HUMAN) return;
     var id = +t.dataset.card;
+    // During a response window, or in the command phase, only a card with somewhere to aim can be picked up.
+    if (S.pending || S.phase === 'command') {
+      if (!aimable(humanMoves(), id)) return;
+      sel = sel && sel.kind === 'card' && sel.id === id ? null : { kind: 'card', id: id };
+      return render();
+    }
     if (S.phase === 'opening' || S.players[HUMAN].toBottom) {
       var bottom = humanMoves().filter(function (m) { return m.type === 'bottomCard' && m.card === id; })[0];
       if (bottom) apply(bottom);
@@ -852,6 +877,7 @@
     if (d.ui === 'ability') sel.ability = true;
     if (d.ui === 'noAbility') { sel.ability = false; sel.abUnit = null; }
     if (d.ui === 'relic') sel = { kind: 'relic', id: d.id };
+    if (d.ui === 'pick') sel = { kind: 'card', id: d.id };
     if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
     render();
   });

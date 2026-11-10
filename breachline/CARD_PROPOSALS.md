@@ -4,22 +4,20 @@ Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. Th
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. All of 104 to 191 except #113 and #176 were built on 2026-11-10, after Codex finished their art; see "Cards 104 to 191 are built" below. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
+Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. All of 104 to 191 were built on 2026-11-10, after Codex finished their art; see "Cards 104 to 191 are built" below. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
 
 ## Cards 104 to 191 are built
 
-Built on 2026-11-10, with the final art from `art/CARD_ART_FINAL.json` and the Set 7 to 11 files, and checked by 158 rules checks, 600 bot games of random decks weighted to the new cards (every card played, no errors), the browser tests and a look at each card in the browser. None of them are in a starter deck, so the starters play exactly as before. Flavour lines aren't written yet.
+Built on 2026-11-10, with the final art from `art/CARD_ART_FINAL.json` and the Set 7 to 11 files, and checked by 165 rules checks, 600 bot games of random decks weighted to the new cards (every card played, no errors), the browser tests and a look at each card in the browser. None of them are in a starter deck, so the starters play exactly as before. Flavour lines aren't written yet.
 
-Not built:
-- **#113 Stormglass glaive:** its painting isn't final or committed.
-- **#176 Bellframe construct:** you rejected its painting and asked that it not be regenerated, so Resonance stays on the Harmonic wardwright alone for now.
-- **Grove wanderer:** its painting has no card assigned.
+#113 Stormglass glaive followed later the same day, once you called its round-10 painting final; the painting is now in `art/CARD_ART_FINAL.json`. #176 Bellframe construct was removed entirely. The Grove wanderer painting has no card yet.
 
-Where the build reads a card differently from its proposal, so say if any should change:
-- **#115** is named Ribbonvane for now, with the white-flier painting, until you pick a name.
+Where the build reads a card differently from its proposal. You approved the first four on 2026-11-10:
+- **#115** is named Ribbonvane, with the white-flier painting.
 - **Reedbank forager:** its land comes on your next turn, since abilities are used after the play phase.
 - **Sanctuary threshold:** an enchantment on one of your units for 3 of your turns, rather than a tile, which matches its painting and needs no new tile art.
 - **Sepulchral scale:** draws automatically, and skips when you have 2 life or less.
+- **Scatter the line:** aimed at a row, like the other aimed spells, by your direction.
 - **Folded observatory:** you can always see your top 2 cards, and once a turn you may swap them.
 - **Shatter the chain and Return to loam:** remove the most recently added enchantment or equipment from a unit, or break a relic.
 - **Unmake the pattern:** can break any relic, yours included.
@@ -97,7 +95,7 @@ Harmonic burst (#124) keeps its finalized suspended-bell painting. It is explici
 | 10 | Barrow rats | Gravebound | Unit | 1 | 1 | 1 / 2 | Hunt | Second 1-cost unit, Hunt on a second card | None |
 | 11 | Indebted squire | Ashen Court | Unit | 1 | 1 | 3 / 3 | When summoned, you lose 1 life | A strong cheap unit, paying with life. Cost lowered from 2 at your request | None |
 | 12 | Hunted | Dominion | Enchantment | 2 | 1 |  | Enchant an enemy unit: units attacking it get +1 attack | Set-aside card, redesigned at your request. Applies to attacks, not strike-backs | Small |
-| 13 | Called debt | Ashen Court | Instant | 2 | 1 |  | On the enemy turn: lose 2 life and destroy a damaged enemy unit | First Dominion instant, destroying and paying | Small |
+| 13 | Called debt | Ashen Court | Instant | 2 | 1 |  | Lose 2 life and destroy a damaged enemy unit | First Dominion instant, destroying and paying | Small |
 | 14 | Ashen Court envoy | Ashen Court | Unit | 4 | 2 | 4 / 5 | Drain | The missing 4-cost. A quiet place for a subtle vampire | None |
 | 15 | Barrow priest | Gravebound | Unit | 4 | 2 | 2 / 4 | Ability: return a unit costing 2 or less from your discard pile to your back row | Returning units on a body, not only a spell | Small |
 | 16 | Barrow colossus | Gravebound | Unit | 5 | 2 | 4 / 7 | Gathered: +1 attack for each unit in your discard pile, up to 4 | The missing 5-cost unit, and a payoff for losses | Small |
@@ -327,7 +325,7 @@ Approved after the 2026-11-10 balance review. Starter decks won between 38% and 
 
 ## Proposals from the 2026-11-10 balance review
 
-Built on 2026-11-10, except #113. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.
+Built on 2026-11-10. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.
 
 | # | Card | Faction | Type | Cost | Wants | Stats | Rules | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -342,7 +340,7 @@ Built on 2026-11-10, except #113. Draft decks built around focuses show four tha
 | 112 | Debt Collector's Blade | Ashen Court | Equipment | 2 | 1 |  | Equip one of your units: +1 attack and Drain (heals the bearer for the damage it deals) | None |
 | 113 | Stormglass glaive | Sunmane Oath | Equipment | 3 | 1 |  | Equip one of your units: +1 attack and Resonance (its attacks also hit the enemy directly behind the target) | None, now that Resonance does this |
 | 114 | Ledger of debts | Ashen Court | Spell | 2 | 1 |  | Lose 2 life. Draw two cards | Small |
-| 115 | Name to come: a ribbon glider over the plains | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
+| 115 | Ribbonvane | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
 | 116 | Untaught firecaller | Warhorde | Unit | 3 | 1 | 2 / 2 | Ability, instead of attacking: pick a tile within 3 tiles. The fire lands on a random tile among it and the tiles next to it: 3 damage to any unit there, yours included, and the tile burns for 2 turns | Small |
 | 117 | Reedbank forager | Elder Herd | Unit | 2 | 1 | 1 / 3 | Instead of moving or attacking: you may play an extra land this turn | Small |
 
@@ -383,7 +381,7 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | --- | --- | --- | --- |
 | Warband | Adjacent allies get +1 attack | Orc warchief, Cinder-cant drummer, Giant chieftain | Built. The drummer keeps its War-chants, and the chieftain loses Frenzy |
 | Stomp | Its attacks also deal 1 damage to enemies next to the target | Hill giant, Giant chieftain | Built. The alderkin stays plain |
-| Resonance | Its attacks also hit the enemy directly behind the target, for the full attack | Harmonic wardwright, plus #113 Stormglass glaive and #176 Bellframe construct | Rule built. It used to splash 1 damage to every side, like Stomp |
+| Resonance | Its attacks also hit the enemy directly behind the target, for the full attack | Harmonic wardwright and #113 Stormglass glaive | Built. It used to splash 1 damage to every side, like Stomp |
 | Longshot | Attacks up to 3 tiles away if it hasn't moved this turn. Once it moves, melee only | Brass siege-walker, Ilvane, plus #142 Focus-rifle marksman and #150 Shutter-window assassin | Rule built, and Ilvane changed from Ranged |
 | Regrow | Removed as too strong | None | Built. The Mossback bear takes Frenzy instead, the extra Frenzy card you allowed. Say if you'd rather it stayed plain |
 | Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
@@ -414,7 +412,7 @@ Proposed on 2026-11-10 from your notes, and approved the same day with the chang
 | 119 | The sky falls in | Warhorde | Spell | 6 | 2 | 4 damage to a unit or to the enemy summoner |  | Small, after 118 |
 | 120 | Siphon vigor | Ashen Court | Spell | 4 | 1 | 2 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 2 life | [Card art](art/siphon-vigor.png) | Small, after 118 |
 | 121 | Collect the tithe | Ashen Court | Spell | 6 | 2 | 3 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 3 life |  | Small, after 118 |
-| 122 | Scatter the line | Cinder Clans | Instant | 3 | 1 | On the enemy turn: each enemy in one row takes 1 damage and is pushed 1 tile back toward its side. Row | [Card art](art/scatter-the-line.png) | New: rows |
+| 122 | Scatter the line | Cinder Clans | Instant | 3 | 1 | Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side | [Card art](art/scatter-the-line.png) | New: rows |
 | 123 | Pall of ash | Gravebound | Spell | 4 | 2 | Aim at a tile: 1 damage to every unit in the square around it, yours included, and those tiles are blighted for 2 turns. Square | | New: squares |
 | 124 | Harmonic burst | Lantern Conclave | Spell | 3 | 1 | Aim at a tile: 1 damage to every unit there and next to it, and each enemy hit is pushed 1 tile away from the centre. Cross | | Small |
 | 125 | Line of dawn | Still Flame | Spell | 3 | 1 | Aim at a column: each enemy in it takes 1 damage, and each of your units in it recovers 2 health. Column | | Small |
@@ -448,7 +446,7 @@ Why each card is the way it is:
 
 ## Proposals to fill out the roster
 
-Proposed on 2026-11-10, and built the same day except #176. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
+Proposed on 2026-11-10, and built the same day. #176 was removed. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
 
 Art briefs for the 57 cards from #104 to #191 without a painting are in five sets of 11 or 12, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
 
@@ -537,7 +535,6 @@ The ash-sweeper is Vigil's one tile-clearing card, as asked on 2026-11-10. Ember
 
 | # | Card | Type | Cost | Wants | Stats | Rules | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 176 | Bellframe construct | Unit | 4 | 0 | 2 / 5 | Resonance | None |
 | 177 | Buckling recruit | Unit | 2 | 0 | 2 / 2 | Armed | None |
 | 178 | Rust-hinged warden | Unit | 3 | 0 | 1 / 6 | Guard | None |
 | 179 | Copper hound | Unit | 2 | 0 | 2 / 2 | Swift | None |
@@ -584,5 +581,5 @@ Why each card is the way it is:
 - **Alderkin elder and the tortoise:** big Genesis bodies for the one-big-creature plan, one that grows and one that holds the line.
 - **Sudden canopy and Return to loam:** unused Genesis paintings. Canopy covers green's weakness to ranged attacks.
 - **Emberward and the Salamander-hide mantle:** Fireproof from an enchantment and from equipment, alongside lighting spells and innate Fireproof. Both are cheap, so a fire deck pays a card and a little mana to keep a unit safe from its own all-units fire.
-- **Neutral constructs (176, 178–180) and the Ossuary engine:** the construct batch, mostly neutral as you said, with one Dominion construct. The Bellframe construct is Resonance's third card.
+- **Neutral constructs (178–180) and the Ossuary engine:** the construct batch, mostly neutral as you said, with one Dominion construct.
 - **Buckling recruit:** a neutral Armed unit, painted mid-buckle.

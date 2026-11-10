@@ -36,6 +36,7 @@ From the creator:
 - A unit moves, then attacks or uses an ability. The attacker picks the target, and targets strike back.
 - Damage stays until healed.
 - Whole turns, with limited instant responses that are weaker than Magic's.
+- Instants can be played whenever, on your own turn as well as the opponent's (decided 2026-11-10). On your own turn they're cast like spells. Instants that answer an event, such as an attack or a move, still wait for it, so they only come up on the enemy turn.
 - Enchantments attach to a unit on either side and go when their host is destroyed.
 - Keywords plus short text, some random effects, and 10 to 20 minute matches.
 - The summoners and land rows sit outside the grid, above and below it.

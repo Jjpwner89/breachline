@@ -27,7 +27,7 @@ var Guides = {
       '- A Ranged unit attacking from 2 tiles takes no strike back from a melee unit.',
       '- Keep healers and Ranged units behind the units that take the hits.',
       '- A unit on your back row can hit you every turn. Deal with it quickly.',
-      '- Instants need spare mana on the enemy turn, so leave some when one in your hand matters.'
+      '- Instants can be cast on your own turn, but on the enemy turn they need spare mana, so leave some when one in your hand matters.'
     ].join('\n'),
     decks: {}
   },

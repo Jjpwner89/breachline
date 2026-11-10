@@ -27,7 +27,7 @@ var Engine = (function () {
     unit('warchief', 'Orc warchief', 'R', 4, 2, 5, 5, { keywords: ['Warband'], text: 'Warband: adjacent allies get +1 attack.' }),
     unit('giant', 'Hill giant', 'R', 5, 2, 5, 8, { keywords: ['Stomp'], text: 'Stomp: its attacks also deal 1 damage to enemies next to the target.' }),
     unit('dragon', 'Elder dragon', 'R', 7, 3, 9, 10, { keywords: ['Flying', 'Fireproof'], text: "Flying: moves 2 tiles, over other units. Fireproof: burning tiles don't hurt it." }),
-    { id: 'firebolt', name: 'Firebolt', type: 'instant', colour: 'R', cost: 2, wants: 1, damage: 2, text: 'On the enemy turn: 2 damage to an enemy unit.' },
+    { id: 'firebolt', name: 'Firebolt', type: 'instant', colour: 'R', cost: 2, wants: 1, damage: 2, text: '2 damage to an enemy unit.' },
     { id: 'hex', name: 'Withering hex', type: 'enchant', colour: 'R', cost: 2, wants: 1, atkBonus: -2, hpBonus: 0, text: 'Enchant a unit: -2 attack.' },
     unit('carrier', 'Water carrier', 'W', 1, 1, 1, 2, { ability: { key: 'heal', label: 'Heal', amount: 1 }, text: 'Ability: heal an adjacent ally 1.' }),
     unit('cub', 'Pride cub', 'W', 1, 1, 1, 2, { keywords: ['Stand together'], text: 'Stand together: +1 attack while next to an ally.' }),
@@ -54,7 +54,7 @@ var Engine = (function () {
     unit('owl', 'Great owl', 'G', 3, 1, 2, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
     unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 2, 4, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
     unit('bull', 'Elder Herd bull', 'G', 5, 2, 6, 8, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
-    { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, text: 'At the end of the enemy turn: push an enemy unit 1 tile back toward its side.' },
+    { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, text: 'Push an enemy unit 1 tile back toward its side.' },
     unit('youngsummoner', 'Young summoner', 'N', 2, 0, 2, 3),
     { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 2, text: 'Enchant one of your units: it recovers 2 health at the start of your turn.' },
     unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
@@ -82,7 +82,7 @@ var Engine = (function () {
     unit('rats', 'Barrow rats', 'B', 1, 1, 1, 2, { keywords: ['Hunt'], text: 'Hunt: +2 attack against a damaged unit.' }),
     unit('squire', 'Indebted squire', 'B', 1, 1, 3, 3, { lifeCost: 1, text: 'When summoned, you lose 1 life.' }),
     { id: 'hunted', name: 'Hunted', type: 'enchant', colour: 'B', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, enemyOnly: true, hunted: 1, text: 'Enchant an enemy unit: units attacking it get +1 attack.' },
-    { id: 'calleddebt', name: 'Called debt', type: 'instant', colour: 'B', cost: 2, wants: 1, debt: 2, text: 'On the enemy turn: lose 2 life and destroy a damaged enemy unit.' },
+    { id: 'calleddebt', name: 'Called debt', type: 'instant', colour: 'B', cost: 2, wants: 1, debt: 2, text: 'Lose 2 life and destroy a damaged enemy unit.' },
     unit('envoy', 'Ashen Court envoy', 'B', 4, 2, 4, 5, { keywords: ['Drain'], text: 'Drain: heals this unit for the damage it deals.' }),
     unit('barrowpriest', 'Barrow priest', 'B', 4, 2, 2, 4, { ability: { key: 'exhume', label: 'Exhume', amount: 2 }, text: 'Ability: return a unit costing 2 or less from your discard pile to your back row.' }),
     unit('colossus', 'Barrow colossus', 'B', 5, 2, 4, 7, { keywords: ['Carrion'], text: "Carrion: permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3." }),
@@ -158,6 +158,7 @@ var Engine = (function () {
     unit('chaplain', 'Still Flame chaplain', 'W', 3, 1, 1, 4, { ability: { key: 'farheal', label: 'Heal', amount: 2 }, text: 'Ability: an ally within 2 tiles recovers 2 health.' }),
     unit('ribbonvane', 'Ribbonvane', 'W', 4, 2, 3, 4, { keywords: ['Flying', 'Guard'], text: 'Flying: moves 2 tiles, over other units. Guard: adjacent allies take 1 less damage from attacks.' }),
     { id: 'lineofdawn', name: 'Line of dawn', type: 'spell', colour: 'W', cost: 3, wants: 1, aim: { column: true, foes: 1, mend: 2 }, text: 'Aim at a column: each enemy in it takes 1 damage, and each of your units in it recovers 2 health.' },
+    { id: 'glaive', name: 'Stormglass glaive', type: 'enchant', equipment: true, colour: 'W', cost: 3, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, grants: ['Resonance'], text: 'Equip one of your units: +1 attack and Resonance (its attacks also hit the enemy directly behind the target).' },
     { id: 'roadshield', name: "Roadwarden's shield", type: 'enchant', equipment: true, colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 2, allyOnly: true, grants: ['Guard'], text: 'Equip one of your units: +2 health and Guard (adjacent allies take 1 less damage from attacks).' },
     { id: 'sunthread', name: 'Sunthread mantle', type: 'enchant', equipment: true, colour: 'W', cost: 1, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, shelter: 1, text: 'Equip one of your units: it takes 1 less damage from attacks.' },
     unit('roadsquire', 'Oath-road squire', 'W', 1, 1, 1, 2, { ability: { key: 'refit', label: 'Refit' }, text: 'Ability: move an equipment card from an ally next to it to another ally next to it, or to itself.' }),
@@ -214,7 +215,7 @@ var Engine = (function () {
     unit('firebrand', 'Cinder firebrand', 'R', 3, 1, 3, 3, { burnHunt: 2, text: '+2 attack against a unit on a burning tile.' }),
     { id: 'hurledbrand', name: 'Hurled brand', type: 'spell', colour: 'R', cost: 3, wants: 1, bolt: 2, text: '2 damage to an enemy unit or the enemy summoner.' },
     { id: 'skyfalls', name: 'The sky falls in', type: 'spell', colour: 'R', cost: 6, wants: 2, bolt: 4, text: '4 damage to an enemy unit or the enemy summoner.' },
-    { id: 'scatter', name: 'Scatter the line', type: 'instant', colour: 'R', cost: 3, wants: 1, scatter: 1, text: 'On the enemy turn: each enemy in one row takes 1 damage and is pushed 1 tile back toward its side.' },
+    { id: 'scatter', name: 'Scatter the line', type: 'instant', colour: 'R', cost: 3, wants: 1, aim: { row: true, foes: 1, back: true }, text: 'Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side.' },
     { id: 'wildfire', name: 'Wildfire', type: 'spell', colour: 'R', cost: 6, wants: 2, sweep: 2, text: '2 damage to every unit, yours included. Lit and Fireproof units are unhurt.' },
     unit('firecaller', 'Untaught firecaller', 'R', 3, 1, 2, 2, { ability: { key: 'wildcast', label: 'Call fire', amount: 3, turns: 2 }, text: 'Ability: pick a tile within 3. Fire lands there or on a tile next to it, at random: 3 damage, and it burns for 2 turns.' }),
     { id: 'cinderhook', name: 'Cinderhook axe', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 2, hpBonus: 0, allyOnly: true, pierce: 'guard', text: 'Equip one of your units: +2 attack, and its attacks ignore Guard.' },
@@ -274,7 +275,7 @@ var Engine = (function () {
 
   // Draft assignments, from the faction table in SETTING.md and the art briefs. A card that isn't listed has no faction.
   var FACTIONS = [
-    { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch', 'lioness', 'outrider', 'sergeant', 'muster', 'roadshield', 'roadsquire', 'standasone', 'oathbell'] },
+    { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch', 'lioness', 'outrider', 'sergeant', 'muster', 'roadshield', 'glaive', 'roadsquire', 'standasone', 'oathbell'] },
     { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric', 'stillflame', 'vigilkeeper', 'acolyte', 'consecrate', 'pilgrim', 'vow', 'chaplain', 'lineofdawn', 'sunthread', 'sanctuary', 'penitent', 'vowkeeper', 'humbling', 'ashsweeper', 'reliquary'] },
     { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance', 'glyphwright', 'apprentice', 'frost', 'rainreader', 'winterdoor', 'rimebolt', 'rimecaller', 'borrowedwill', 'heldmoments', 'leaden', 'unwind', 'glimmer', 'whitemorning', 'harmonic', 'frostbreak', 'courier', 'unmake', 'observatory'] },
     { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench', 'journeyman', 'rapier', 'corewright', 'marksman', 'fieldplate', 'prism', 'tideglass'] },
@@ -606,56 +607,74 @@ var Engine = (function () {
     return healed;
   }
 
+  // Where an instant can go, as partial moves. kind is the window: 'attack', 'move' or 'end' on the enemy turn, or 'own' on your own turn.
+  // Instants that answer an event wait for it. The rest can be cast in any window, or on your own turn like a spell.
+  function instantTargets(s, pi, c, kind, attack) {
+    var p = s.players[pi], foe = 1 - pi, out = [];
+    // A move gives a window only to Unwind the step, so other instants don't interrupt every step.
+    if ((kind === 'move') !== !!c.unwind) return out;
+    if (c.unwind) {
+      if (unitById(s, attack.uid)) out.push({ target: attack.uid });
+    } else if (c.brace || c.canopy) {
+      if (kind !== 'attack' || !attack || attack.summoner !== undefined) return out;
+      var hit = unitById(s, attack.targetUid), from = unitById(s, attack.attacker);
+      if (hit && (c.brace || (from && dist(from, hit) >= 2))) out.push({ target: hit.uid });
+    } else if (c.prevent) {
+      if (kind !== 'attack' || !attack) return out;
+      [attack.targetUid, attack.secondaryUid].forEach(function (uid) { if (uid && unitById(s, uid)) out.push({ target: uid }); });
+    } else if (c.dodge) {
+      if (kind !== 'attack' || !attack) return out;
+      [attack.targetUid, attack.secondaryUid].forEach(function (uid) {
+        var dodger = uid ? unitById(s, uid) : null;
+        if (!dodger) return;
+        [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(function (d) {
+          if (emptyTile(s, dodger.r + d[0], dodger.c + d[1])) out.push({ target: uid, r: dodger.r + d[0], c: dodger.c + d[1] });
+        });
+      });
+    } else if (c.aim) {
+      // Scatter the line: any tile of a row that holds an enemy.
+      for (var row = 0; row < ROWS; row++) {
+        if (s.units.some(function (u) { return u.owner === foe && u.r === row; })) for (var col = 0; col < COLS; col++) out.push({ r: row, c: col });
+      }
+    } else if (c.damage) {
+      s.units.forEach(function (u) { if (u.owner === foe && spellTarget(s, pi, u)) out.push({ target: u.uid }); });
+    } else if (c.debt) {
+      if (p.life <= c.debt) return out;
+      s.units.forEach(function (u) { if (u.owner === foe && spellTarget(s, pi, u) && u.hp < u.maxHp) out.push({ target: u.uid }); });
+    } else if (c.shove) {
+      s.units.forEach(function (u) { if (u.owner === foe && spellTarget(s, pi, u) && emptyTile(s, shoveRow(u), u.c)) out.push({ target: u.uid }); });
+    }
+    return out;
+  }
+
+  // The responder's instants, one move per card and target.
   function responses(s, kind, attack) {
     var pi = 1 - s.active, p = s.players[pi], out = [], seen = {};
     p.hand.forEach(function (i) {
       var c = card(i);
       if (c.type !== 'instant' || costOf(s, pi, c, i) > p.mana) return;
-      // A move gives a window only to Unwind the step, so other instants don't interrupt every step.
-      if ((kind === 'move') !== !!c.unwind) return;
-      if (c.unwind) {
-        if (unitById(s, attack.uid)) out.push({ type: 'respond', card: i.id, target: attack.uid });
-      } else if (c.brace || c.canopy) {
-        if (kind !== 'attack' || !attack || attack.summoner !== undefined) return;
-        var hit = unitById(s, attack.targetUid), from = unitById(s, attack.attacker);
-        if (hit && (c.brace || (from && dist(from, hit) >= 2)) && !seen[i.c]) { seen[i.c] = 1; out.push({ type: 'respond', card: i.id, target: hit.uid }); }
-      } else if (c.scatter) {
-        for (var row = 0; row < ROWS; row++) {
-          if (!seen[i.c + ':' + row] && s.units.some(function (u) { return u.owner === s.active && u.r === row; })) { seen[i.c + ':' + row] = 1; out.push({ type: 'respond', card: i.id, row: row }); }
-        }
-      } else if (c.prevent) {
-        if (kind !== 'attack' || !attack) return;
-        [attack.targetUid, attack.secondaryUid].forEach(function (uid) {
-          var key = i.c + ':' + uid;
-          if (uid && !seen[key] && unitById(s, uid)) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: uid }); }
-        });
-      } else if (c.damage) {
-        s.units.forEach(function (u) {
-          var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && spellTarget(s, pi, u) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
-        });
-      } else if (c.debt) {
-        if (p.life <= c.debt) return;
-        s.units.forEach(function (u) {
-          var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && spellTarget(s, pi, u) && u.hp < u.maxHp && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
-        });
-      } else if (c.dodge) {
-        if (kind !== 'attack' || !attack) return;
-        [attack.targetUid, attack.secondaryUid].forEach(function (uid) {
-          var dodger = uid ? unitById(s, uid) : null;
-          if (!dodger) return;
-          [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(function (d) {
-            var r = dodger.r + d[0], col = dodger.c + d[1], key = i.c + ':' + uid + ':' + r + ',' + col;
-            if (emptyTile(s, r, col) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: uid, r: r, c: col }); }
-          });
-        });
-      } else if (c.shove && kind === 'end') {
-        s.units.forEach(function (u) {
-          var key = i.c + ':' + u.uid;
-          if (u.owner === s.active && spellTarget(s, pi, u) && emptyTile(s, shoveRow(u), u.c) && !seen[key]) { seen[key] = 1; out.push({ type: 'respond', card: i.id, target: u.uid }); }
-        });
-      }
+      instantTargets(s, pi, c, kind, attack).forEach(function (t) {
+        var key = i.c + ':' + t.target + ':' + t.r + ',' + t.c;
+        if (seen[key]) return;
+        seen[key] = 1;
+        out.push(withField(withField(withField({ type: 'respond', card: i.id }, 'target', t.target), 'r', t.r), 'c', t.c));
+      });
+    });
+    return out.map(function (m) { var o = {}; for (var k in m) if (m[k] !== undefined) o[k] = m[k]; return o; });
+  }
+
+  // Instants on your own turn are cast like spells.
+  function ownInstants(s, pi) {
+    var p = s.players[pi], out = [];
+    p.hand.forEach(function (i) {
+      var c = card(i);
+      if (c.type !== 'instant' || costOf(s, pi, c, i) > p.mana) return;
+      instantTargets(s, pi, c, 'own').forEach(function (t) {
+        var m = { type: 'cast', card: i.id };
+        if (t.target !== undefined) m.target = t.target;
+        if (t.r !== undefined) { m.r = t.r; m.c = t.c; }
+        out.push(m);
+      });
     });
     return out;
   }
@@ -753,11 +772,11 @@ var Engine = (function () {
           if (c.unrelic) s.players.forEach(function (o) { o.relics.forEach(function (r) { out.push({ type: 'cast', card: i.id, relic: r.id }); }); });
         }
       });
-      out = out.concat(relicMoves(s, pi));
+      out = out.concat(relicMoves(s, pi), ownInstants(s, pi));
       out.push({ type: 'toCommand' });
       return out;
     }
-    out = out.concat(relicMoves(s, pi));
+    out = out.concat(relicMoves(s, pi), ownInstants(s, pi));
     s.units.forEach(function (u) {
       if (u.owner !== pi || u.summonedTurn === s.turn || u.acted || stilled(s, u)) return;
       // Leaden step: a unit that has moved can't attack this turn.
@@ -1308,6 +1327,12 @@ var Engine = (function () {
           break;
         }
         if (!i.conjured) p.discard.push(i);
+        if (c.type === 'instant') {
+          var aimed = unitById(s, m.target);
+          say(s, mark(s, p) + ' casts ' + c.name + (aimed ? ' on ' + CARDS[aimed.cardId].name : '') + '.');
+          instantEffect(s, pi, c, m, aimed);
+          break;
+        }
         if (m.relic) {
           breakRelic(s, m.relic, c);
           if (c.loam) p.extraLands += 1;
@@ -1674,7 +1699,7 @@ var Engine = (function () {
         rp.mana -= costOf(s, 1 - pi, c, i);
         rp.discard.push(i);
         var target = unitById(s, m.target);
-        say(s, mark(s, rp) + ' responds with ' + c.name + (target ? ' on ' + CARDS[target.cardId].name : m.row !== undefined ? ' on ' + rowOf(s, 1 - rp, m.row) : '') + '.');
+        say(s, mark(s, rp) + ' responds with ' + c.name + (target ? ' on ' + CARDS[target.cardId].name : '') + '.');
         var pend = s.pending;
         s.pending = null;
         if (c.prevent) { pend.attack.shield = target.uid; pend.attack.prevent = c.prevent; }
@@ -1685,30 +1710,13 @@ var Engine = (function () {
           target.r = pend.step.r; target.c = pend.step.c; target.unwound = s.turn;
           say(s, CARDS[target.cardId].name + ' is unwound to where it started.');
         }
-        // Scatter the line: the whole row moves back together, so no unit in it blocks another.
-        if (c.scatter) {
-          var line = s.units.filter(function (o) { return o.owner === pi && o.r === m.row; });
-          line.forEach(function (o) { say(s, c.name + ' hits ' + CARDS[o.cardId].name + ' for ' + damage(s, o, c.scatter) + '.'); });
-          line.forEach(function (o) { if (o.hp > 0 && emptyTile(s, shoveRow(o), o.c)) o.r = shoveRow(o); });
-          line.forEach(function (o) { if (o.hp <= 0 && s.units.indexOf(o) >= 0) kill(s, o); });
-        }
         // Dodging the lance's second target clears only that hit. Dodging the main target misses the whole attack.
         if (c.dodge) {
           target.r = m.r; target.c = m.c;
           if (pend.attack.secondaryUid === target.uid) pend.attack.secondaryUid = null;
           else pend.attack.missed = true;
         }
-        if (c.shove) target.r = shoveRow(target);
-        if (c.damage) {
-          damage(s, target, c.damage);
-          if (target.hp <= 0) kill(s, target);
-        }
-        if (c.debt) {
-          rp.life -= c.debt;
-          s.fx.push({ summoner: 1 - pi, text: '-' + c.debt });
-          say(s, mark(s, rp) + ' pays ' + c.debt + ' life.');
-          kill(s, target);
-        }
+        instantEffect(s, 1 - pi, c, m, target);
         if (pend.kind === 'attack') resolveAttack(s, pend.attack);
         else if (pend.kind === 'end') finishTurn(s);
         break;
@@ -1730,10 +1738,21 @@ var Engine = (function () {
   }
 
   // Attacking ends Veiled, except under a Mourning veil, whose wearer's owner pays 1 life instead.
-  // A row named by the units in it, as the player sees it, rather than by number.
-  function rowOf(s, pi, row) {
-    var names = s.units.filter(function (o) { return o.owner === pi && o.r === row; }).sort(function (x, y) { return x.c - y.c; }).map(function (o) { return CARDS[o.cardId].name; });
-    return 'the row of ' + (names.length > 2 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : names.join(' and '));
+  // What an instant that needs no trigger does, on either turn. pi is the caster.
+  function instantEffect(s, pi, c, m, target) {
+    var p = s.players[pi];
+    if (c.aim) castAt(s, pi, c, m.r, m.c);
+    if (c.shove) target.r = shoveRow(target);
+    if (c.damage) {
+      damage(s, target, c.damage);
+      if (target.hp <= 0) kill(s, target);
+    }
+    if (c.debt) {
+      p.life -= c.debt;
+      s.fx.push({ summoner: pi, text: '-' + c.debt });
+      say(s, mark(s, p) + ' pays ' + c.debt + ' life.');
+      kill(s, target);
+    }
   }
 
   function unveil(s, u) {
@@ -1836,6 +1855,11 @@ var Engine = (function () {
         say(s, CARDS[o.cardId].name + " is frozen: it can't move on its next turn.");
       }
     });
+    // Scatter the line: the enemies in the row move back together, so none blocks another.
+    if (a.back) inArea.forEach(function (o) {
+      if (o.owner === pi || o.hp <= 0) return;
+      if (emptyTile(s, shoveRow(o), o.c)) { o.r = shoveRow(o); say(s, CARDS[o.cardId].name + ' is pushed back.'); }
+    });
     // Harmonic burst pushes each enemy it hit beside the centre 1 tile further out, if that tile is free.
     if (a.push) hurt.forEach(function (o) {
       if (o.owner === pi || o.hp <= 0 || o === here) return;
@@ -1872,7 +1896,7 @@ var Engine = (function () {
 
   return {
     ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
-    rowOf: rowOf, DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
+    DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
     tileAt: tileAt, attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw,
     placeUnit: placeUnit, aimArea: aimArea, gear: gear

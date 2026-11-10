@@ -13,8 +13,8 @@
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 140,
-    "new_card_art": 55,
+    "final_images": 141,
+    "new_card_art": 56,
     "already_used_by_game": 85,
     "existing_card_ids": 85
   },
@@ -3089,6 +3089,32 @@
       "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-27c1797f-8944-4587-bc7d-f369a59c5ff9.png",
       "source_manifest": "ART_PROMPTS_SET10.json",
       "selection_note": "All Set 10 paintings finalized by the creator on 2026-11-10; latest Earthspeaker, Glimmer Double and Leaden Step revisions selected."
+    },
+    {
+      "id": "stormglass-glaive",
+      "title": "Stormglass glaive",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Equipment",
+      "possible_role": "Polearm that gives Resonance",
+      "png": "stormglass-glaive.png",
+      "web_jpeg": "web/stormglass-glaive.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ce6c2669edb0cd6b678ce23faa5429c75843ca279eadf826ec434b6463c181c9",
+      "web_sha256": "a7aef7eb3b770d682613c32667e5eed87b6e911a7d27573ff899303cbdafa6d8",
+      "card_ids": [
+        "glaive"
+      ],
+      "proposal_number": 113,
+      "selected_date": "2026-11-10",
+      "source": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/01-stormglass-glaive.png in the main checkout",
+      "source_manifest": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/review-manifest.json",
+      "selection_note": "The creator accepted this round-10 painting and on 2026-11-10 said it can be considered final for card #113."
     }
   ]
 }

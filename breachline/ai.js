@@ -5,7 +5,7 @@ var AI = (function () {
   var G = typeof Guides !== 'undefined' ? Guides : require('./guides.js');
   var MAX_PLAN = 40, MAX_SAY = 140, MAX_WHY = 900;
   var COMMAND = { move: 1, attack: 1, attackSummoner: 1, ability: 1 };
-  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise', 'relic', 'summoner', 'row'];
+  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise', 'relic', 'summoner'];
   // One call per turn takes longer than a choice made while the player waits on a response, so those use the fast model.
   var CALLS = { turn: { modelTier: 'default', effort: 'low' }, decision: { modelTier: 'quick' } };
   // These won't clear up by asking again, so the scripted bot finishes the game.
@@ -24,7 +24,7 @@ var AI = (function () {
     '- Guard: allies next to a Guard unit take 1 less damage from attacks and strike-backs.',
     '- Damage stays until healed. A target that survives strikes back if the attacker is within its reach. Only the main target strikes back.',
     '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
-    '- Instants are cast on the enemy turn, paid from mana you left unspent on your own turn.',
+    '- Instants can be cast on your own turn like spells, or on the enemy turn from mana you left unspent. Those that answer an event, such as an attack, wait for it.',
     '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
     '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
     '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
@@ -284,7 +284,7 @@ var AI = (function () {
       case 'pass': return 'Do nothing';
       case 'respond':
         var t = unitBy(v, m.target);
-        if (m.row !== undefined) return 'Cast ' + inHand(m.card).name + ' on row ' + m.row + ', ' + E.rowOf(v, 1 - v.viewer, m.row) + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
+        if (!t && m.r !== undefined) return 'Cast ' + inHand(m.card).name + ' aimed at row ' + m.r + ', column ' + m.c + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
         return 'Cast ' + inHand(m.card).name + ' on ' + named(v, t) + (m.r !== undefined ? ', moving it to row ' + m.r + ', column ' + m.c : '') + (inHand(m.card).debt ? ', losing ' + inHand(m.card).debt + ' life' : '') + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
     }
     return m.type;
@@ -351,7 +351,7 @@ var AI = (function () {
       case 'redraw': return 'Redraw';
       case 'pass': return 'Do nothing';
       case 'bottomCard': return 'Put ' + name + ' on the bottom of the deck';
-      case 'respond': return 'Cast ' + name + (m.row !== undefined ? ' on row ' + m.row : ' on ' + (t ? named(v, t) : 'unit ' + m.target));
+      case 'respond': return 'Cast ' + name + (t ? ' on ' + named(v, t) : m.r !== undefined ? ' at ' + at : ' on unit ' + m.target);
       case 'relic': return 'Use relic ' + relicName(v, m.relic) + (t ? ' on ' + named(v, t) : '');
     }
     return JSON.stringify(m);

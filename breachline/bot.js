@@ -123,6 +123,8 @@ var Bot = (function () {
         return 100 + c.cost * 20 + pull - Math.abs(m.c - 2) + zap + ahead - hurt;
       case 'cast':
         c = E.CARDS[handCard(p, m.card).c];
+        // On its own turn the bot casts an instant only for a clear gain, since it could wait for the enemy turn.
+        if (c.type === 'instant') return instantScore(s, pi, c, m, null);
         if (c.type === 'relic') return 70 + c.cost * 10;
         if (m.relic) return p.relics.some(function (r) { return r.id === m.relic; }) ? -100 : 55;
         if (c.bolt) {
@@ -339,11 +341,6 @@ var Bot = (function () {
       case 'respond':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         var att = s.pending.attack;
-        if (c.scatter) {
-          var rowV = 0;
-          s.units.forEach(function (e) { if (e.owner === s.active && e.r === m.row) rowV += hurtScore(e, c.scatter) + (e.r === E.backRow(pi) || dist(e, { r: E.backRow(pi), c: e.c }) === 1 ? 15 : 3); });
-          return rowV >= 35 ? rowV : -1;
-        }
         if (c.unwind) {
           var close = t.r === E.backRow(pi) || s.units.some(function (o) { return o.owner === pi && dist(o, t) <= E.range(t); });
           return close && E.attackOf(s, t) >= 3 ? 25 + E.attackOf(s, t) * 5 : -1;
@@ -354,16 +351,28 @@ var Bot = (function () {
           return blow >= t.hp && blow - saved < t.hp ? worth(t) : saved >= 3 ? 15 + saved * 4 : -1;
         }
         if (c.dodge) return E.hitOn(s, unitById(s, att.attacker), t) >= t.hp ? worth(t) : -1;
-        if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
         if (c.prevent) {
           var striker = unitById(s, att.attacker);
           return E.hitOn(s, striker, t) >= t.hp && E.hitOn(s, striker, t, c.prevent) < t.hp ? worth(t) : -1;
         }
-        if (c.debt) return p.life > c.debt + 4 && worth(t) >= 65 ? worth(t) - 20 + (att && att.attacker === t.uid ? 30 : 0) : -1;
-        if (c.damage >= t.hp) return worth(t) + (att && att.attacker === t.uid ? 30 : 0);
-        return att ? -1 : 5;
+        return instantScore(s, pi, c, m, att);
     }
     return 0;
+  }
+
+  // Instants that need no trigger, cast on either turn. att is the attack being answered, if any.
+  function instantScore(s, pi, c, m, att) {
+    var p = s.players[pi], t = m.target !== undefined ? unitById(s, m.target) : null;
+    // Scatter the line: worth it when it hurts several enemies or pushes them off your back row.
+    if (c.aim) {
+      var rowV = 0;
+      s.units.forEach(function (e) { if (e.owner !== pi && e.r === m.r) rowV += hurtScore(e, c.aim.foes) + (e.r === E.backRow(pi) || dist(e, { r: E.backRow(pi), c: e.c }) === 1 ? 15 : 3); });
+      return rowV >= 35 && m.c === 2 ? rowV : -1;
+    }
+    if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
+    if (c.debt) return p.life > c.debt + 4 && worth(t) >= 65 ? worth(t) - 20 + (att && att.attacker === t.uid ? 30 : 0) : -1;
+    if (c.damage >= t.hp) return worth(t) + (att && att.attacker === t.uid ? 30 : 0);
+    return att || !s.pending ? -1 : 5;
   }
 
   function choose(s, jitter) {
