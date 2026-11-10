@@ -89,6 +89,16 @@ Read the line aloud and check that:
 
 When offering options, give two or three lines that differ in emotion, not just wording.
 
+## From the cards 104 to 191 review (2026-11-10)
+
+The creator kept about half of 84 drafts. Their verdicts are in `breachline/FLAVOUR.md`.
+
+- **Read it cold.** Several lines were cut because they didn't make sense without knowing the writer's intent, such as a line about painting that read as painting a picture.
+- **Don't caption the art.** A line that only retells what the painting shows was cut as too literal.
+- **Trim again.** Four kept lines lost their second half or their setup, for example "One shot." and "He takes what comes."
+- **Light religious allegory is welcome,** as with the creator's rewrite "Return to dust." for Pall of ash.
+- **A short exclamation can work,** like "Catch!" for a thrown brand.
+
 ## Open question
 
 Should a line ever cite an in-world source, such as a named book? Crediting a role is fine.
