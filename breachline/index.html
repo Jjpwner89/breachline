@@ -278,6 +278,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 #testMsg { min-height: 1.3em; color: var(--gold-pale); }
 .ttools { display: flex; flex-wrap: wrap; gap: 6px; }
 .tside { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; color: var(--ink); }
+.tside .steps.wrap { flex-wrap: wrap; row-gap: 4px; }
 #testSearch { width: 100%; padding: 6px 10px; border: 1px solid var(--edge); border-radius: 4px; background: #120c06; color: var(--ink); font: inherit; }
 .tcards { flex: 1; min-height: 0; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; align-content: start; padding: 2px 2px 8px; }
 .tcards .card { display: block; container-type: inline-size; padding: 0; border: 0; background: none; cursor: copy; }
@@ -491,6 +492,7 @@ dialog .btns { justify-content: flex-start; }
       </div>
       <p class="tnote" id="testMsg" aria-live="polite"></p>
       <div class="tside"><span>Add cards to</span><span class="steps" id="testSides"></span></div>
+      <div class="tside"><span>Show</span><span class="steps wrap" id="testKinds"></span></div>
       <input type="search" id="testSearch" placeholder="Search by name, text, type or alignment" aria-label="Search cards">
       <div class="tcards" id="testCards"></div>
     </aside>

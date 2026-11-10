@@ -234,22 +234,89 @@ var SpellFX = (function () {
   var sheets = {}, missiles = {};
   function preload(list, into) { Object.keys(list).forEach(function (k) { var im = new Image(); im.onload = function () { into[k] = im; }; im.src = list[k]; }); }
   preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles);
-  // Each frame dissolves into the next, so six frames still read as one motion. scale is the frame's width in tiles.
-  function playSheet(family, b, ms, scale) {
+  // How each sheet plays: its length, and how much of each step is spent dissolving into the next (1 = the whole step).
+  // Fire plays its frames in order but never stands still: the whole blast turns slowly, each frame swells as it
+  // dissolves into the next, the widest frame churns into its own mirror image, and the edges feather into flame.
+  var SHEET_TIME = { fire: { ms: 820, blend: 0.65, soft: true, churn: true, drift: 0.3, swell: 0.1 }, thorns: { ms: 660, blend: 0.6 } }, SHEET_DEFAULT = { ms: 820, blend: 1 };
+  function sequence(T) {
+    // With churn, the widest frame dissolves into its mirror image, turned a little, and the blast stays mirrored to the end.
+    var order = T.churn ? [0, 1, 2, 3, -3, -4, -5] : [0, 1, 2, 3, 4, 5];
+    return order.map(function (n, j) { return { i: Math.abs(n), rot: j > 3 && T.churn ? 0.5 : 0, flip: j > 3 && T.churn ? -1 : 1 }; });
+  }
+  var soft = document.createElement('canvas'), sctx = soft.getContext('2d');
+  // scale is the frame's width in tiles; a smaller hit on a reached tile plays a little quicker.
+  function playSheet(family, b, scale, quick) {
     var im = sheets[family];
     if (!im) return false;
-    var fw = im.naturalWidth / 3, fh = im.naturalHeight / 2, size = b.w * (scale || 1.7), h = size * fh / fw;
-    function frame(i, a) {
-      if (a <= 0.01) return;
-      ctx.globalAlpha = a;
-      ctx.drawImage(im, (i % 3) * fw, Math.floor(i / 3) * fh, fw, fh, b.x - size / 2, b.y - h / 2, size, h);
+    var T = SHEET_TIME[family] || SHEET_DEFAULT, ms = T.ms * (quick ? 0.78 : 1), seq = sequence(T), step = ms / (seq.length - 0.4);
+    var fw = im.naturalWidth / 3, fh = im.naturalHeight / 2, size = b.w * (scale || 1.7);
+    // j is the frame's place in the sequence; it grows a little over the time it's on screen.
+    function frame(g, j, p, cx, cy, a, turn) {
+      var fr = seq[j];
+      if (!fr || a <= 0.01) return;
+      var sc = 1 + (T.swell || 0) * (Math.max(0, Math.min(1, (p - j + T.blend) / (1 + T.blend))) - 0.5);
+      g.save(); g.globalAlpha = a; g.translate(cx, cy); g.rotate(fr.rot + turn); g.scale(fr.flip * sc, sc);
+      g.drawImage(im, (fr.i % 3) * fw, Math.floor(fr.i / 3) * fh, fw, fh, -size / 2, -size / 2, size, size);
+      g.restore();
     }
+    if (T.soft) flames(b, size, ms);
     actor({ ms: ms, over: function () {
-      var p = Math.min(5, this.t / ms * 5.6), i = Math.floor(p), f = p - i;
-      frame(i, 1 - f); if (i < 5) frame(i + 1, f);
-      ctx.globalAlpha = 1;
+      var p = Math.min(seq.length - 1, this.t / step), i = Math.floor(p), f = Math.max(0, (p - i - (1 - T.blend)) / T.blend);
+      var turn = (T.drift || 0) * this.t / ms;
+      f = f * f * (3 - 2 * f);
+      if (!T.soft) { frame(ctx, i, p, b.x, b.y, 1 - f, turn); frame(ctx, i + 1, p, b.x, b.y, f, turn); return; }
+      // Drawn off to the side first, then faded toward its rim so no hard silhouette shows.
+      var px = Math.ceil(size * dpr);
+      if (soft.width < px) { soft.width = soft.height = px; }
+      sctx.setTransform(dpr, 0, 0, dpr, 0, 0); sctx.clearRect(0, 0, size, size);
+      frame(sctx, i, p, size / 2, size / 2, 1 - f, turn); frame(sctx, i + 1, p, size / 2, size / 2, f, turn);
+      var g = sctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+      g.addColorStop(0, '#000'); g.addColorStop(0.42, '#000'); g.addColorStop(0.7, 'rgba(0,0,0,.55)'); g.addColorStop(0.9, 'rgba(0,0,0,0)');
+      sctx.globalCompositeOperation = 'destination-in'; sctx.fillStyle = g; sctx.fillRect(0, 0, size, size); sctx.globalCompositeOperation = 'source-over';
+      ctx.drawImage(soft, 0, 0, px, px, b.x - size / 2, b.y - size / 2, size, size);
     } });
     return true;
+  }
+  // Tongues of flame licking out round the painted fire, each its own length, lean and flicker, over a warm halo.
+  function flames(b, size, ms) {
+    var licks = [];
+    for (var i = 0; i < 18; i++) licks.push({ a: i / 18 * 6.28 + rnd(-0.15, 0.15), ph: rnd(0, 6.28), sp: rnd(0.009, 0.016), len: rnd(0.1, 0.2), w: rnd(0.03, 0.055), sway: rnd(0.12, 0.3) });
+    var rolls = [];
+    for (var j = 0; j < 9; j++) rolls.push({ a: j / 9 * 6.28, ph: rnd(0, 6.28), r: rnd(0.16, 0.24) });
+    function shape(t) {
+      var k = t / ms;
+      return { env: k < 0.1 ? k / 0.1 : k > 0.55 ? Math.max(0, 1 - (k - 0.55) / 0.45) : 1, R: size * 0.5 * (0.2 + 0.42 * Math.min(1, k / 0.4)) };
+    }
+    // The halo adds light; the tongues are painted normally so they still read as flame on the pale map.
+    actor({ ms: ms, light: function () {
+      var f = shape(this.t);
+      glow(b.x, b.y, f.R * 1.35, '#ff7a2a', 0.5 * f.env); glow(b.x, b.y, f.R * 0.8, '#ffb347', 0.35 * f.env);
+    }, over: function () {
+      var t = this.t, f = shape(t), env = f.env, R = f.R, x = b.x, y = b.y;
+      // A slowly rolling body of flame under the painting, so its frames always dissolve into fire, never into nothing.
+      rolls.forEach(function (o) {
+        var a = o.a + t * 0.0007, rr = size * o.r * (0.85 + 0.15 * Math.sin(t * 0.008 + o.ph)), cx = x + Math.cos(a) * R * 0.62, cy = y + Math.sin(a) * R * 0.62;
+        var g = ctx.createRadialGradient(cx, cy, 0, cx, cy, rr);
+        g.addColorStop(0, 'rgba(255,190,90,' + (0.55 * env).toFixed(2) + ')'); g.addColorStop(0.5, 'rgba(225,80,20,' + (0.4 * env).toFixed(2) + ')'); g.addColorStop(1, 'rgba(120,24,6,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, rr, 0, 7); ctx.fill();
+      });
+      licks.forEach(function (l) {
+        var fl = 0.55 + 0.35 * Math.sin(t * l.sp + l.ph) + 0.15 * Math.sin(t * l.sp * 2.3 + l.ph * 1.7);
+        var L = size * l.len * fl * env, w = size * l.w * (0.7 + 0.3 * fl);
+        if (L < 2) return;
+        var bx = x + Math.cos(l.a) * R * 0.82, by = y + Math.sin(l.a) * R * 0.82;
+        var dx = Math.cos(l.a), dy = Math.sin(l.a) - 0.45, s = Math.sin(t * 0.006 + l.ph) * l.sway, m = Math.hypot(dx, dy);
+        dx /= m; dy /= m;
+        var ux = dx * Math.cos(s) - dy * Math.sin(s), uy = dx * Math.sin(s) + dy * Math.cos(s), nx = -uy, ny = ux;
+        var g = ctx.createRadialGradient(bx, by, 0, bx, by, L);
+        g.addColorStop(0, 'rgba(255,214,120,' + (0.9 * env).toFixed(2) + ')'); g.addColorStop(0.45, 'rgba(240,96,24,' + (0.7 * env).toFixed(2) + ')'); g.addColorStop(1, 'rgba(160,30,6,0)');
+        ctx.fillStyle = g; ctx.beginPath();
+        ctx.moveTo(bx + nx * w, by + ny * w);
+        ctx.quadraticCurveTo(bx + ux * L * 0.5 + nx * w * 0.9, by + uy * L * 0.5 + ny * w * 0.9, bx + ux * L, by + uy * L);
+        ctx.quadraticCurveTo(bx + ux * L * 0.5 - nx * w * 0.9, by + uy * L * 0.5 - ny * w * 0.9, bx - nx * w, by - ny * w);
+        ctx.closePath(); ctx.fill();
+      });
+    } });
   }
 
   // How each tile effect looks: its colours, what it leaves behind in flight, and how it lands.
@@ -299,29 +366,31 @@ var SpellFX = (function () {
   }
 
   // The throw: a high lob, shown as height above a shadow sliding across the table, so it reads as heavy.
-  function flight(src, dst, kind) {
-    var L = LOOK[kind], dist = Math.hypot(dst.x - src.x, dst.y - src.y), ms = 420 + dist * 0.5, H = 50 + dist * 0.28;
+  // o (optional): lift scales the arc's height, size the projectile, pace its flight time.
+  function flight(src, dst, kind, o) {
+    o = o || {};
+    var L = LOOK[kind], dist = Math.hypot(dst.x - src.x, dst.y - src.y), ms = (420 + dist * 0.5) * (o.pace || 1), H = (50 + dist * 0.28) * (o.lift || 1), sc = o.size || 1;
     return new Promise(function (ok) {
       actor({ update: function (dt) {
         this.t += dt * 1000;
         var k = Math.min(1, this.t / ms), e = Math.pow(k, 1.55);
         this.g = { x: lerp(src.x, dst.x, e), y: lerp(src.y, dst.y, e) };
         this.h = H * 4 * e * (1 - e); this.p = { x: this.g.x, y: this.g.y - this.h };
-        if (dt) trail(kind, this.p.x, this.p.y, L, dt);
+        if (dt) trail(kind, this.p.x, this.p.y, L, dt * sc);
         if (k >= 1) { ok(); return false; }
         return true;
       }, under: function () {
         if (!this.g) return;
-        var hk = 1 - this.h / H, r = 9 + 10 * hk;
+        var hk = 1 - this.h / H, r = (9 + 10 * hk) * sc;
         ctx.fillStyle = 'rgba(10,6,2,' + f1(0.22 + 0.3 * hk) + ')'; ctx.beginPath(); ctx.ellipse(this.g.x, this.g.y + 4, r, r * 0.45, 0, 0, 7); ctx.fill();
       }, light: function () {
         if (!this.p) return;
-        var s = L.size * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
+        var s = L.size * sc * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
         glow(x, y, s * 3.4, L.glow, 0.85); glow(x, y, s * 1.7, L.deep, 0.9); glow(x, y, s * (kind === 'thorns' ? 0.7 : 1.05), L.core, 1);
         if (kind === 'charge' && Math.random() < .6) bolt({ x: x, y: y }, { x: x + rnd(-28, 28), y: y + rnd(-28, 28) }, L.glow, 90, 7);
       }, over: function () {
         if (!this.p) return;
-        var s = L.size * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
+        var s = L.size * sc * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
         if (kind === 'blight') { ctx.fillStyle = '#140a1c'; ctx.beginPath(); ctx.arc(x, y, s * 0.75, 0, 7); ctx.fill(); }
         if (kind === 'thorns' && missiles.thorns) { var m = s * 4.4; ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 110); ctx.drawImage(missiles.thorns, -m / 2, -m / 2, m, m); ctx.restore(); }
         else if (kind === 'thorns') bramble(x, y, s * 1.1, this.t / 110);
@@ -429,7 +498,7 @@ var SpellFX = (function () {
     hitStop(kind === 'holy' ? 40 : 75);
     shake(kind === 'charge' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
     // With a painted sheet, the code-drawn centrepiece (vines, rot pool, crystals) steps aside; sparks, debris and light stay.
-    var painted = playSheet(L.family, b, 820);
+    var painted = playSheet(L.family, b);
     if (kind === 'blight') {
       // Blight darkens rather than flashes.
       flash(x, y, b.w * 0.4, L.deep, 260);
@@ -481,7 +550,7 @@ var SpellFX = (function () {
   // A smaller hit on each other tile the spell reaches; the wave's first tile already had the full impact.
   function land(kind, b, noSheet) {
     var L = LOOK[kind];
-    if (!noSheet) playSheet(L.family, b, 640, 1.15);
+    if (!noSheet) playSheet(L.family, b, 1.15, true);
     flash(b.x, b.y, b.w * 0.45, L.glow, 260); ring(b.x, b.y, 6, b.w * 0.55, L.core, 380, 4); shake(3);
     if (kind === 'frost') burst(b.x, b.y, 14, [80, 220], function () { return { kind: 'shard', size: rnd(2.5, 5), col: '#e8f6ff', life: rnd(.4, .7), grav: 480 }; });
     else if (kind === 'burn') burst(b.x, b.y, 20, [100, 300], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffd27a' : L.glow, life: rnd(.3, .5), grav: 600 }; });
@@ -509,6 +578,20 @@ var SpellFX = (function () {
   // Resolves when the animation is done, so the caller can apply the move. Animation frames stop while the page is hidden,
   // so it also gives up after a few seconds rather than hold the game.
   function cast(o) { return Promise.race([play(o), new Promise(function (ok) { setTimeout(ok, 7000); })]); }
+  // Cinderfall: a volley thrown from the card. The heavy shot goes to the target and a lighter one to each other
+  // tile it reaches; with few of those, stray cinders rain round the target so it always reads as a volley.
+  function volley(src, o) {
+    var dst = centre(o.target), shots = [{ to: dst, hit: 'main' }];
+    (o.reach || []).filter(Boolean).forEach(function (el) { shots.push({ to: centre(el), hit: 'reach' }); });
+    while (shots.length < 4) shots.push({ to: { x: dst.x + rnd(-0.32, 0.32) * dst.w, y: dst.y + rnd(-0.3, 0.3) * dst.h, w: dst.w * 0.5, h: dst.h * 0.5 }, hit: 'cinder' });
+    return Promise.all(shots.map(function (s, i) {
+      var from = { x: src.x + (i % 2 ? 1 : -1) * Math.ceil(i / 2) * 14, y: src.y };
+      var how = s.hit === 'main' ? { lift: 1.15 } : { lift: rnd(0.65, 1.35), size: s.hit === 'reach' ? 0.8 : 0.6, pace: rnd(0.85, 1.05) };
+      return wait(i * 95).then(function () { return flight(from, s.to, o.kind, how); }).then(function () {
+        if (s.hit === 'main') impact(o.kind, s.to); else land(o.kind, s.to, s.hit === 'cinder');
+      });
+    }));
+  }
   async function play(o) {
     if (reduced || !LOOK[o.kind] || !o.target) return;
     shakeEl = o.shake || null;
@@ -516,6 +599,7 @@ var SpellFX = (function () {
     gather(src, o.kind, 300);
     await wait(300);
     if (o.onLaunch) o.onLaunch();
+    if (o.volley) { await volley(src, o); await wait(180); return; }
     await flight(src, centre(o.target), o.kind);
     var dst = centre(o.target);
     impact(o.kind, dst);

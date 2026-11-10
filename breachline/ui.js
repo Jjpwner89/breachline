@@ -8,7 +8,18 @@
   var chapterBattle = false, exhibitionPlayer = 'bot';
   // The test table: no bot, you play whichever side is acting from that side's hand, and both sides always have mana.
   // HUMAN and BOT follow whoever is acting, so the board marks that side's units as yours. Picked cards go to seat 0 or 1.
-  var sandbox = false, testSide = 0, TEST_MANA = 99;
+  var sandbox = false, testSide = 0, testKind = '', TEST_MANA = 99;
+  // The test table's card-type filter: label and which cards it keeps.
+  var TEST_KINDS = [
+    ['', 'All', function () { return true; }],
+    ['unit', 'Units', function (c) { return c.type === 'unit'; }],
+    ['spell', 'Spells', function (c) { return c.type === 'spell'; }],
+    ['aimed', 'Aimed spells', function (c) { return !!c.aim; }],
+    ['instant', 'Instants', function (c) { return c.type === 'instant'; }],
+    ['enchant', 'Enchantments', function (c) { return c.type === 'enchant' && !c.equipment; }],
+    ['equipment', 'Equipment', function (c) { return !!c.equipment; }],
+    ['land', 'Lands', function (c) { return c.type === 'land'; }]
+  ];
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
@@ -595,7 +606,7 @@
       showReach();
       if (from && from.classList.contains('card')) from.classList.add('casting');
       SpellFX.cast({
-        kind: spell.aim.tile, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, shake: document.querySelector('.board'),
+        kind: spell.aim.tile, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
         onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
       }).then(function () {
@@ -997,9 +1008,13 @@
       return '<button type="button" class="step' + (testSide === pi ? ' on' : '') + '" data-side="' + pi + '" aria-pressed="' + (testSide === pi) + '">' +
         (pi === 0 ? 'You (bottom)' : 'Opponent (top)') + '</button>';
     }).join('');
+    $('testKinds').innerHTML = TEST_KINDS.map(function (k) {
+      return '<button type="button" class="step' + (testKind === k[0] ? ' on' : '') + '" data-kind="' + k[0] + '" aria-pressed="' + (testKind === k[0]) + '">' + k[1] + '</button>';
+    }).join('');
+    var keep = TEST_KINDS.filter(function (k) { return k[0] === testKind; })[0][2];
     var ids = Object.keys(E.CARDS).filter(function (id) {
       var c = E.CARDS[id];
-      return !c.token && (!q || (c.name + ' ' + (c.text || '') + ' ' + (TYPES[c.type] || c.type) + ' ' + (ALIGNMENT[c.colour] || '') + ' ' + (c.keywords || []).join(' ')).toLowerCase().indexOf(q) >= 0);
+      return !c.token && keep(c) && (!q || (c.name + ' ' + (c.text || '') + ' ' + (TYPES[c.type] || c.type) + ' ' + (ALIGNMENT[c.colour] || '') + ' ' + (c.keywords || []).join(' ')).toLowerCase().indexOf(q) >= 0);
     }).sort(function (a, b) {
       var x = E.CARDS[a], y = E.CARDS[b];
       return ORDER.indexOf(x.colour) - ORDER.indexOf(y.colour) || x.cost - y.cost || x.name.localeCompare(y.name);
@@ -1021,9 +1036,10 @@
     testNote(names.length ? 'placed ' + names.join(', ') + ' for the opponent.' : 'the enemy half is full.');
   }
   $('testPanel').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-add], [data-side], [data-test]');
+    var b = e.target.closest('[data-add], [data-side], [data-kind], [data-test]');
     if (!b || !S) return;
     if (b.dataset.side) { testSide = +b.dataset.side; return renderPicker(); }
+    if (b.dataset.kind !== undefined) { testKind = b.dataset.kind; return renderPicker(); }
     if (b.dataset.add) {
       S.players[testSide].hand.push({ id: S.nextId++, c: b.dataset.add });
       testNote('added ' + E.CARDS[b.dataset.add].name + ' to ' + (testSide === 0 ? 'your' : "the opponent's") + ' hand.');
