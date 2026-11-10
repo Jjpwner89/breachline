@@ -1,10 +1,14 @@
 # Card proposals
 
+<!-- CARD_ART_HANDOFF_2026_11_10_BEGIN -->
+**Temporary card-art task — 2026-11-10:** Read [Selected art for the next cards](CARD_ART_HANDOFF_2026-11-10.md) before proposing or integrating the next Breachline cards. It records twelve creator-selected subjects, exact PNGs and a separate black-enamel wearer follow-up. Continue card writing with the creator. The subsequently requested concept-art batch is separate from these twelve selections. Keep the handoff until the creator explicitly confirms all selected cards are in the game, then follow its cleanup instructions and remove this temporary block.
+<!-- CARD_ART_HANDOFF_2026_11_10_END -->
+
 Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
-Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09 and tested by bot simulations and a quick check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
+Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-The starter and campaign decks are unchanged, so cards 1 to 91 show up in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
+The starter and campaign decks are unchanged, so cards 1 to 103 show up in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
 
 ## Rules decided while building
 
@@ -26,6 +30,12 @@ The starter and campaign decks are unchanged, so cards 1 to 91 show up in the de
 - **Sworn:** counts any of your units destroyed while the retainer is on the board, including by Harvest or a warrant.
 - **Veiled:** blocks attacks, spells, enchantments, instants and abilities aimed at it, and being the unit behind a lance. Splash damage such as Stomp, Resonance, Overrun and Cinderfall still reaches it. It veils again if raised from the discard pile.
 - **Holding ground:** fliers stop too. A unit that starts next to the holder can move away.
+- **Armed:** +1 / +1 once, however many pieces of equipment the unit carries.
+- **Corewright:** two corewrights still take off only 1.
+- **Copperlane torch-runner:** its trail burns until your next turn, so it lasts through the enemy's turn. Only the tile it starts from burns.
+- **Winterdoor keeper:** it can't target a Veiled unit. The frozen unit can still attack.
+- **Rain-reader:** it can target any tile within 2 that has an effect, or one of your damaged units.
+- **Cinderwake:** it hits only enemies, but every tile it crosses burns, yours included.
 
 ## How these were built
 
@@ -240,14 +250,39 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 3. **Muster the levy:** with Loyal on Militia spearman, it summons two 3 / 3s for 3 mana. Raise it to 4?
 4. **Flavour:** none of the Set 6 cards has flavour text yet.
 
-## Creator-selected equipment subject — Cobalt rapier
+## Cards from the selected paintings
 
-**Selected by the creator, 2026-11-09:** the sword preserved from the Cobalt duelist study becomes an **Equipment** card. Working title: **Cobalt rapier**.
+Proposed and built on 2026-11-10, with Cinderwake lowered to 3. You chose these twelve paintings to become cards, recorded in `CARD_ART_HANDOFF_2026-11-10.md`. Each card uses the exact painting you chose. The four round-07 paintings had their title strip cropped off for the game, and the full paintings are unchanged.
 
-The subject and card type are decided. Card number, alignment/faction, cost, wants and rules remain open for the card-design pass. This entry records the selection without reserving a number in the concurrent proposal batches or implying gameplay implementation.
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 92 | Cinderline veteran | Cinder Clans | Unit | 3 | 1 | 3 / 4 | Armed: +1 attack and +1 health while it carries equipment | [06](art/reference-library-2026-11-06/concept-round-08-2026-11-09/06-cinderline-veteran.png) | New: Armed |
+| 93 | Redglass falchion | Cinder Clans | Equipment | 2 | 1 |  | Equip one of your units: +1 attack and Hunt (+2 attack against a damaged unit) | [07](art/reference-library-2026-11-06/concept-round-08-2026-11-09/07-redglass-falchion.png) | Small |
+| 94 | Rain-reader | Lantern Conclave | Unit | 2 | 1 | 1 / 3 | Ability: clear the effect from a tile within 2 tiles, and your unit there recovers 1 health | [08](art/reference-library-2026-11-06/concept-round-08-2026-11-09/08-weather-at-her-elbow.png) | Small |
+| 95 | The Mountain's Lung | Neutral | Spell | 2 | 0 |  | You have 3 extra mana next turn | [11](art/reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png) | Small |
+| 96 | Cinderwake | Cinder Clans | Spell | 3 | 1 |  | Aim at a tile: a wave of fire rolls from it toward the enemy's side, dealing 2 damage to each enemy in its path. Every tile it crosses burns for 2 turns | [13](art/reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png) | Small |
+| 97 | The stone opens | Thornwardens | Spell | 3 | 1 |  | Each of your units can move 1 extra tile this turn | [14](art/reference-library-2026-11-06/concept-round-08-2026-11-09/14-the-stone-opens.png) | Small |
+| 98 | Copperlane torch-runner | Warhorde | Unit | 2 | 1 | 2 / 1 | Swift. When it moves, the tile it leaves burns until your next turn | [01](art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png) | Small |
+| 99 | Ash-white lanner | None, a tamed creature (Fervor) | Unit | 3 | 1 | 2 / 3 | Flying. Hunt: +2 attack against a damaged unit | [21](art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png) | None |
+| 100 | Winterdoor keeper | Lantern Conclave | Unit | 3 | 1 | 2 / 3 | Ability: an enemy's tile within 2 tiles freezes until the end of your next turn | [Door into snow](art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png) | Small |
+| 101 | Mothwake mourner | Gravebound | Unit | 3 | 1 | 2 / 3 | When another of your units dies, the enemy loses 1 life | [23](art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png) | Small |
+| 102 | Cobalt rapier | Artificers | Equipment | 3 | 1 |  | Equip one of your units: +1 attack and Ranged (attacks up to 2 tiles away) | [Card art](art/cobalt-rapier.png) | Small |
+| 103 | Corewright | Artificers | Unit | 3 | 1 | 2 / 3 | Your equipment costs 1 less | [06](art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png) | New: cost reduction |
 
-- Accepted design: [Cobalt rapier reference](art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png).
-- Finished painting approved 2026-11-09, exceptional with no notes: [Cobalt rapier card art](art/cobalt-rapier.png). It is registered in the finished card-art collection; rules and cost remain open.
-- [Card-art brief](art/work-in-progress/middle-setting-round-07-2026-11-09/COBALT_RAPIER_CARD_BRIEF.txt) and [exact prompt / provenance](art/work-in-progress/middle-setting-round-07-2026-11-09/review-manifest.json).
+Why each card is the way it is:
 
-Preserve the accepted brass guard, dark grip, cobalt stone and restrained blue blade refraction. The rejected duelist is not part of this card selection.
+- **An equipment focus:** the two blades, the veteran and the corewright give equipment its first real cards beyond Banked flame blade. The veteran wants a blade, and the corewright makes blades cheaper. Equipment still plays as an enchantment with a different label.
+- **Cinderline veteran:** sturdier than most Fervor units, because he's a survivor, with a reason to carry the falchion or the flame blade.
+- **Redglass falchion:** a hunter's blade, so it's better against a wounded target. It costs the same as Banked flame blade with a different job.
+- **Rain-reader:** the woman from "The weather at her elbow". Everyday water magic puts out fires and washes away blight, so she's the first answer to tile effects.
+- **The Mountain's Lung:** your idea of extra mana. It's a one-turn burst for casting something big a turn early, not a building or stored mana. It's neutral so any big-card deck can use it.
+- **Cinderwake:** separate from Cinderfall. Cinderfall hits one spot hard, while Cinderwake sweeps a whole column. Aiming it near your own side covers more tiles but leaves fire close to your units.
+- **The stone opens:** Genesis is slow, so this is its breakout turn: everything moves further at once.
+- **Copperlane torch-runner:** the sparks behind him in the painting become a trail of fire. A Goblin torch-runner was cut on 2026-11-09 as contrived. This one comes from your chosen painting, but say if the idea still feels forced.
+- **Ash-white lanner:** a raptor that dives on wounded prey. The card is the creature, with the handler as the picture.
+- **Winterdoor keeper:** the woman from "A door into snow". Her door lets winter through onto one enemy, using the Frost tile rules.
+- **Mothwake mourner:** grief turned outward. It's Dominion's version of Vigil-keeper, draining the enemy instead of healing you.
+- **Cobalt rapier:** selected on 2026-11-09 and reused here, not a second entry. Its painting is already finished and in `art/CARD_ART_FINAL.json`. A duellist's reach gives Gnosis an equipment card that fits its ranged strength.
+- **Corewright:** the artisan at her bench, not the automaton from the next painting.
+
+Still to do: flavour text. The black-enamel field kit still needs a wearer painted, in a later art discussion. It isn't one of these cards.

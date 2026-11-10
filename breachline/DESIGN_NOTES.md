@@ -1,5 +1,9 @@
 # Breachline design notes
 
+<!-- CARD_ART_HANDOFF_2026_11_10_BEGIN -->
+**Temporary card-art task — 2026-11-10:** Read [Selected art for the next cards](CARD_ART_HANDOFF_2026-11-10.md) before proposing or integrating the next Breachline cards. It records twelve creator-selected subjects, exact PNGs and a separate black-enamel wearer follow-up. Continue card writing with the creator. The subsequently requested concept-art batch is separate from these twelve selections. Keep the handoff until the creator explicitly confirms all selected cards are in the game, then follow its cleanup instructions and remove this temporary block.
+<!-- CARD_ART_HANDOFF_2026_11_10_END -->
+
 The one home for Breachline's rules, design decisions and ways of working. "The creator" is the person making the game, and "Claude" is the assistant helping. Claude's own memory stays on the computer it was written on, so on a new computer ask Claude to read this file first.
 
 Each topic has one home:
@@ -10,6 +14,10 @@ Each topic has one home:
 - **Cards:** `NEW_CARDS.md`, `CARD_AUDIT.md` and `CARD_PROPOSALS.md`
 
 Keep only current decisions. When one changes, edit or delete the old text instead of adding a correction. Record feedback at the size it was given, so a comment on one card or one batch doesn't become a rule for everything.
+
+## Setting update (2026-11-10)
+
+The creator clarified attunement, learned magic, personal energy and overexertion, magical industry, rare portals, healing and spirits, and Ambrel's surviving university. The current account and remaining uncertainties are in [SETTING.md](SETTING.md#magic); consult it for new cards and art. The Mountain's Lung burns stored mana from stones to provide energy. Stored energy in the setting does not change the gameplay decision against buildings or a player mana bank.
 
 ## What the game is
 
@@ -67,6 +75,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
   - Spells aimed at a tile hit a Veiled unit standing there, since they target the tile, not the unit.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
+- **Equipment:** an enchantment that is an object. Equipment can also give its bearer a keyword, as the Redglass falchion gives Hunt. Armed units get +1 / +1 while they carry any equipment. Built on 2026-11-10.
 - **Loyal:** +1 attack and +1 health while you have another unit of the same sub-faction on the board, such as Sunmane Oath or Cinder Clans. A few cards get +2 / +2 instead. Loyal is only ever a stat bonus, never a keyword such as Ranged. This is the rule for the faction loyalty focus. Confirmed on 2026-11-09.
 
 ## Stats
