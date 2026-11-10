@@ -17,7 +17,7 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
-11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 110 Still Flame chaplain, 115 White flier (look to be chosen), 133 Unwind the step, 141 Humbling light, 146 Frostbreak, 161 Cinder rain, 165 Overgrowth, 169 Thornwarden trapper, 170 Mosshorn grazer, 180 Waystone golem, 181 Ossuary engine.
+11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 110 Still Flame chaplain, 115 White flier, 133 Unwind the step, 141 Humbling light, 146 Frostbreak, 161 Cinder rain, 165 Overgrowth, 169 Thornwarden trapper, 170 Mosshorn grazer, 180 Waystone golem, 181 Ossuary engine.
 **Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
 ## What these paintings are for
 
@@ -54,7 +54,7 @@ SETTING: high fantasy about 150 years after the Old Empire collapsed and the god
 
 ## Variety across the batch
 
-Light runs from overcast afternoon and grey snow to broken-cloud morning, winter sun, a night village and soft rain. Three constructs and two creatures sit beside the people. The white flier waits for the creator's choice. No lion folk.
+Light runs from overcast afternoon and grey snow to broken-cloud morning, winter sun, a night village and soft rain. Three constructs and two creatures sit beside the people. The white flier is the ribbon glider the creator chose. No lion folk.
 
 ## Vigil
 
@@ -66,11 +66,13 @@ Light runs from overcast afternoon and grey snow to broken-cloud morning, winter
 
 A middle-aged woman chaplain stands on a crumbling field wall, raising a small brass censer; its soft warm light falls across the backs of a shield line below her, not as a beam but as warmth arriving on their shoulders. The soldiers are secondary and simply painted. Overcast afternoon, wind in her robe and the smoke. Her face is plain and resolute.
 
-### 115. White flier (look to be chosen): white-flier.png
+### 115. White flier: white-flier.png
 
-**Visual aim:** Wait for the creator to choose the creature's look before painting.
+**Visual aim:** A long ribbon-bodied glider with rows of translucent vanes, riding warm air low over the grass of the open plains.
 
-Vigil's first flier is a new creature that flies over the plains. The creator is choosing between four looks offered on 2026-11-10. Do not paint this card until its look is added to this brief.
+**References:** `reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png`
+
+Creator's choice, 2026-11-10: a long ribbon-bodied glider with rows of translucent vanes, riding warm air low over the grass. It is a new creature unlike anything in the setting so far, Vigil's first flier. Paint it rippling a few feet above wind-combed summer grassland under a high bright sky, its body many times a person's length, light shining through the vanes and casting soft coloured shadows on the grass. A distant shepherd or a line of grazing animals gives its scale. Believable living anatomy: a coherent head, a spine that undulates, vanes rooted along the body. The card's name will follow from the painting. A proposal, not canon, until the creator approves it.
 
 ### 141. Humbling light: humbling-light.png
 

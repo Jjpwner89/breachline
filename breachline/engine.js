@@ -26,7 +26,7 @@ var Engine = (function () {
     unit('sellsword', 'Sellsword', 'N', 3, 0, 3, 4),
     unit('warchief', 'Orc warchief', 'R', 4, 2, 5, 5, { keywords: ['Warband'], text: 'Warband: adjacent allies get +1 attack.' }),
     unit('giant', 'Hill giant', 'R', 5, 2, 5, 8, { keywords: ['Stomp'], text: 'Stomp: its attacks also deal 1 damage to enemies next to the target.' }),
-    unit('dragon', 'Elder dragon', 'R', 7, 3, 9, 10, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
+    unit('dragon', 'Elder dragon', 'R', 7, 3, 9, 10, { keywords: ['Flying', 'Fireproof'], text: "Flying: moves 2 tiles, over other units. Fireproof: burning tiles don't hurt it." }),
     { id: 'firebolt', name: 'Firebolt', type: 'instant', colour: 'R', cost: 2, wants: 1, damage: 2, text: 'On the enemy turn: 2 damage to an enemy unit.' },
     { id: 'hex', name: 'Withering hex', type: 'enchant', colour: 'R', cost: 2, wants: 1, atkBonus: -2, hpBonus: 0, text: 'Enchant a unit: -2 attack.' },
     unit('carrier', 'Water carrier', 'W', 1, 1, 1, 2, { ability: { key: 'heal', label: 'Heal', amount: 1 }, text: 'Ability: heal an adjacent ally 1.' }),
@@ -36,7 +36,7 @@ var Engine = (function () {
     unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 3, 2, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
     unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
     unit('captain', 'Mercenary captain', 'R', 4, 2, 4, 5, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
-    unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
+    unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying', 'Fireproof'], text: 'Flying: moves 2 tiles, over other units.' }),
     unit('decoy', 'Illusory decoy', 'U', 1, 1, 0, 1, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
     unit('scholar', 'Cloistered scholar', 'U', 2, 1, 1, 2, { ability: { key: 'study', label: 'Study' }, text: 'Instead of moving or attacking: draw a card.' }),
     unit('arcanist', 'Lantern arcanist', 'U', 3, 1, 3, 3, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
@@ -145,7 +145,7 @@ var Engine = (function () {
     { id: 'mountainlung', name: "The Mountain's Lung", type: 'spell', colour: 'N', cost: 2, wants: 0, bonusNext: 3, text: 'You have 3 extra mana next turn.' },
     { id: 'cinderwake', name: 'Cinderwake', type: 'spell', colour: 'R', cost: 3, wants: 1, aim: { wave: 2, tile: 'burn', turns: 2 }, text: "Aim at a tile: a wave of fire rolls from it toward the enemy's side, dealing 2 damage to each enemy in its path. Every tile it crosses burns for 2 turns." },
     { id: 'stoneopens', name: 'The stone opens', type: 'spell', colour: 'G', cost: 3, wants: 1, stride: 1, text: 'Each of your units can move 1 extra tile this turn.' },
-    unit('torchrunner', 'Copperlane torch-runner', 'R', 2, 1, 2, 1, { keywords: ['Swift'], trail: true, text: 'Swift. When it moves, the tile it leaves burns until your next turn.' }),
+    unit('torchrunner', 'Copperlane torch-runner', 'R', 2, 1, 2, 1, { keywords: ['Swift', 'Fireproof'], trail: true, text: "Swift. Fireproof: burning tiles don't hurt it. When it moves, the tile it leaves burns until your next turn." }),
     unit('lanner', 'Ash-white lanner', 'R', 3, 1, 2, 3, { keywords: ['Flying', 'Hunt'], text: 'Flying: moves 2 tiles, over other units. Hunt: +2 attack against a damaged unit.' }),
     unit('winterdoor', 'Winterdoor keeper', 'U', 3, 1, 2, 3, { keywords: ['Freeze'], ability: { key: 'winterdoor', label: 'Open the door', turns: 2 }, text: "Freeze: the unit it attacks can't move on its next turn. Ability: an enemy's tile within 2 tiles freezes until the end of your next turn. Units on frozen tiles can't move." }),
     unit('mourner', 'Mothwake mourner', 'B', 3, 1, 2, 3, { mournLife: 1, text: 'When another of your units dies, the enemy loses 1 life.' }),
@@ -168,7 +168,7 @@ var Engine = (function () {
     goblin: { loyal: 1, text: 'Loyal: +1 attack and +1 health while you have another Warhorde unit.' },
     knight: { keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' },
     follower: { deathDraw: 1, text: 'When it dies: draw a card.' },
-    drake: { deathBurn: 'self', text: 'Flying: moves 2 tiles, over other units. When it dies: its tile burns for 2 turns.' }
+    drake: { deathBurn: 'self', text: "Flying: moves 2 tiles, over other units. Fireproof: burning tiles don't hurt it. When it dies: its tile burns for 2 turns." }
   });
 
   var DECKS = {

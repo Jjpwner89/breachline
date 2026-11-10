@@ -313,7 +313,7 @@ None of these are built. Draft decks built around focuses show four that don't w
 | 112 | Debt Collector's Blade | Ashen Court | Equipment | 2 | 1 |  | Equip one of your units: +1 attack and Drain (heals the bearer for the damage it deals) | None |
 | 113 | Stormglass glaive | Sunmane Oath | Equipment | 3 | 1 |  | Equip one of your units: +1 attack and Resonance (its attacks also hit the enemy directly behind the target) | None, now that Resonance does this |
 | 114 | Ledger of debts | Ashen Court | Spell | 2 | 1 |  | Lose 2 life. Draw two cards | Small |
-| 115 | Name to come: a flier over the plains | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
+| 115 | Name to come: a ribbon glider over the plains | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
 | 116 | Untaught firecaller | Warhorde | Unit | 3 | 1 | 2 / 2 | Ability, instead of attacking: pick a tile within 3 tiles. The fire lands on a random tile among it and the tiles next to it: 3 damage to any unit there, yours included, and the tile burns for 2 turns | Small |
 | 117 | Reedbank forager | Elder Herd | Unit | 2 | 1 | 1 / 3 | Instead of moving or attacking: you may play an extra land this turn | Small |
 
@@ -337,7 +337,7 @@ Why each card is the way it is:
 - **Debt Collector's Blade:** the finished painting in `art/CARD_ART_FINAL.json`, whose suggested role was recovering something when damage is dealt. Drain does exactly that.
 - **Stormglass glaive:** the accepted round-10 painting, a polearm whose faction was left unassigned. Vigil has no true equipment yet, and a long blade that reaches the second rank suits the Sunmane Oath and its lancer. It could just as well be Gnosis, for the spark trapped in its blade.
 - **Ledger of debts:** card draw paid for with life, which you liked for Dominion.
-- **The flier:** white's first flier, a new creature unlike anything in the setting so far. Guard keeps it in Vigil's protective role. Three possible looks: a long ribbon-bodied glider with rows of translucent vanes, riding warm air over the grass; a great pale moth-like grazer with soft banded wings; or a kite-shaped animal with one broad wing membrane and long trailing tail streamers. Pick one, or describe your own, and the name will follow it.
+- **The flier:** white's first flier, a new creature unlike anything in the setting so far. Guard keeps it in Vigil's protective role. Three possible looks: a long ribbon-bodied glider with rows of translucent vanes, riding warm air over the grass; a great pale moth-like grazer with soft banded wings; or a kite-shaped animal with one broad wing membrane and long trailing tail streamers. The creator chose the ribbon-bodied glider on 2026-11-10; its name is still to come.
 - **Untaught firecaller:** your random landing spot within an area. Raw power with little training, as the setting describes: the fire goes roughly where it's aimed. Round 11's "More Fire Than Hands" could become its art if you accept that painting.
 - **Reedbank forager:** green's second card for extra lands, a strength the design notes give Genesis. It uses the finished painting with that name in `art/CARD_ART_FINAL.json`.
 
@@ -359,7 +359,7 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | Regrow | Removed as too strong | None | Built. The Mossback bear takes Frenzy instead, the extra Frenzy card you allowed. Say if you'd rather it stayed plain |
 | Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
 | Frenzy | +2 attack while damaged | Cinder berserker, Orc raider, Mossback bear | Built |
-| Fireproof | Burning tiles don't hurt it | Ember salamander, and your units lit by #104 Kindle the line or #164 Anoint with embers | Your units get it only when a lighting spell hits them, which costs extra. Other fire spells hurt your own units, so you weigh the risk against the cost. It was added to the Ember drake, Elder dragon and torch-runner and then taken off again, all on 2026-11-10 |
+| Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built. It can be an innate trait or come from a lighting spell. No other fire spell protects your units, so a fire deck weighs the risk of burning its own side against the cost of lighting them first |
 | Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Not built. Only the shadow animal is proposed |
 | Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Not built. No existing card changes. The new ones look armoured or are putting armour on, and Armed isn't tied to a colour |
 | Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Not built. The spell places a decoy that lasts one turn |
@@ -421,7 +421,7 @@ Why each card is the way it is:
 
 Proposed on 2026-11-10. None are built. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
 
-Art briefs for the 55 cards from #104 to #189 without a painting are in five sets of 11, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11 and waits for its look to be chosen.
+Art briefs for the 55 cards from #104 to #189 without a painting are in five sets of 11, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
 
 New rules these cards use:
 
@@ -546,7 +546,7 @@ Why each card is the way it is:
 - **Cinderhook axe:** pressing an attack, as its painting suggested. Ignoring Guard is its edge.
 - **Clan outrider:** the goblin on a donkey throwing a spear.
 - **Shatter the chain:** red breaking restraints. It removes Leaden step, Barrow mark or a Death warrant from your unit, or an enemy's equipment.
-- **Anoint with embers:** a cheaper way to light one unit, since Fireproof comes only from a spell. It replaces the Kindled zealot, which was Lit without one.
+- **Anoint with embers:** a cheaper way to light a single unit. Only lighting spells protect your units from your own fire. It replaces the Kindled zealot.
 - **Overgrowth and the trapper:** Genesis's square and more thorns, so the thorn deck controls ground.
 - **Rootfed (170–172):** a payoff for extra lands, which green has plenty of and no reward for.
 - **Alderkin elder and the tortoise:** big Genesis bodies for the one-big-creature plan, one that grows and one that holds the line.

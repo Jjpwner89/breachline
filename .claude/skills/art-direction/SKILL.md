@@ -116,6 +116,7 @@ These cards are proposed in `breachline/CARD_PROPOSALS.md` and need briefs befor
 - **Armed units:** they look armoured or are putting armour on.
 - **The vampire (Hostess of the late hour):** glamorous, but vampires stay subtle and rare in this world.
 - **Halfshade lynx:** an animal partly made of shadow.
+- **White flier (#115):** the creator chose a long ribbon-bodied glider with rows of translucent vanes, riding warm air low over the grass.
 
 ## Applying this direction to new cards
 
