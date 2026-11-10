@@ -30,6 +30,10 @@ Balance changes after the first balance run, 2026-11-10 (numbers in `DESIGN_NOTE
 - **Cinder firebrand** 3 / 3 to 3 / 4, and **Untaught firecaller** 2 / 2 to 2 / 3. Fire did too little for its cost: in an all-fire deck, burning tiles, explosions and called fire together dealt the enemy about 5 damage a game. With both changes the fire theme deck went from 41% to 47% against the starters.
 - **The sky falls in** costs 5, down from 6. It won 33% of the games it was played in, the lowest of red's reach spells.
 
+Changes you asked for after that run, 2026-11-10:
+- **Devotion:** any heal counts, even on a unit at full health, so a healer can grow a Devotion unit every turn. It used to trigger about once a game and now about 5 times; the Devotion theme deck went from 35% to 50% against the starters. Card text: "when it or an ally next to it is healed".
+- **Frost and White morning** now deal 1 damage to each enemy they freeze, then hold them as before. The freezing theme deck went from 38% to 42%.
+
 ## Gnosis sound restriction (creator direction, 2026-11-10)
 
 Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
@@ -364,7 +368,7 @@ Why each card is the way it is:
 - **Conclave rimecaller:** your ranged freezer. It's fragile, as you said it could be, and uses the Rime drake's Freeze.
 - **Vow of keeping:** your enchantment that protects a unit's life at the cost of attack. Say if you meant something different, such as a large health or damage-reduction bonus.
 - **Still Flame chaplain:** healing at range, so a healer can stand behind the line.
-- **Devoted pilgrim:** your Devotion idea, a unit you build up over the game. Only real health gained counts, so healing a unit already at full health does nothing. The Still Flame counts, so it may need a limit after playtesting. #139 and #140 make Devotion three cards.
+- **Devoted pilgrim:** your Devotion idea, a unit you build up over the game. Any heal counts, even on a unit at full health (changed from real health only, 2026-11-10). The Still Flame counts, so it may need a limit after playtesting. #139 and #140 make Devotion three cards.
 - **Debt Collector's Blade:** the finished painting in `art/CARD_ART_FINAL.json`, whose suggested role was recovering something when damage is dealt. Drain does exactly that.
 - **Stormglass glaive:** the accepted round-10 painting, a polearm whose faction was left unassigned. Vigil has no true equipment yet, and a long blade that reaches the second rank suits the Sunmane Oath and its lancer. It could just as well be Gnosis, for the spark trapped in its blade.
 - **Ledger of debts:** card draw paid for with life, which you liked for Dominion.
@@ -483,7 +487,7 @@ New rules these cards use:
 | 142 | Focus-rifle marksman | Artificers | Unit | 4 | 2 | 3 / 3 | Longshot |  | None |
 | 143 | Field-plate artificer | Artificers | Unit | 3 | 1 | 2 / 4 | Armed |  | None |
 | 144 | Glimmer double | Lantern Conclave | Spell | 1 | 0 |  | Summon an Illusory decoy on any empty tile outside the back rows. It vanishes at the start of your next turn |  | Small |
-| 145 | White morning | Lantern Conclave | Spell | 3 | 1 |  | Aim at a row: each enemy in it can't move on its next turn. Row |  | Small, after #122 |
+| 145 | White morning | Lantern Conclave | Spell | 3 | 1 |  | Aim at a row: each enemy in it takes 1 damage and can't move on its next turn. Row |  | Small, after #122 |
 | 146 | Frostbreak | Lantern Conclave | Spell | 3 | 1 |  | 3 damage to an enemy unit that is frozen or stands on a frozen tile. Otherwise 1 |  | Small |
 | 147 | Prism bracer | Artificers | Equipment | 2 | 1 |  | Equip one of your units: it attacks 1 tile further | prism-bracer | Small |
 | 148 | Conclave courier | Lantern Conclave | Unit | 2 | 1 | 1 / 2 | Swift. Ability: move an adjacent ally 1 tile | conclave-courier | Small |

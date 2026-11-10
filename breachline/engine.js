@@ -113,7 +113,7 @@ var Engine = (function () {
     { id: 'scorch', name: 'Scorch', type: 'spell', colour: 'R', cost: 2, wants: 1, aim: { hit: 2, tile: 'burn', turns: 2 }, text: 'Aim at a tile: 2 damage to a unit there, and the tile burns for 2 turns.' },
     { id: 'stormstrike', name: 'Stormstrike', type: 'spell', colour: 'R', cost: 3, wants: 1, aim: { hit: 3, splash: 1, splashAll: true, tile: 'charge' }, text: 'Aim at a tile: 3 damage to a unit there and 1 to every unit next to it, yours included. The tile stays charged until your next turn, and the next unit to enter it takes 2.' },
     unit('salamander', 'Ember salamander', 'R', 3, 1, 3, 3, { keywords: ['Fireproof'], emberAtk: 2, text: "Fireproof: burning tiles don't hurt it. +2 attack while it stands on a burning tile." }),
-    { id: 'frost', name: 'Frost', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { tile: 'frost', turns: 2, spread: true }, text: "Aim at a tile: it and the tiles next to it freeze until the end of your next turn. Units on frozen tiles can't move." },
+    { id: 'frost', name: 'Frost', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { tile: 'frost', turns: 2, spread: true, foes: 1 }, text: "Aim at a tile: it and the tiles next to it freeze until the end of your next turn, and each enemy there takes 1 damage. Units on frozen tiles can't move." },
     unit('glyphwright', 'Glyphwright', 'U', 3, 1, 2, 3, { ability: { key: 'snare', label: 'Snare', turns: 3 }, text: "Ability: put a snare on an empty tile within 2 tiles, for 3 turns. The first enemy to enter it stops there and can't move on its next turn." }),
     { id: 'thornbrake', name: 'Thornbrake', type: 'spell', colour: 'G', cost: 2, wants: 1, aim: { tile: 'thorns', turns: 3 }, text: "Aim at a tile: thorns for 3 turns. A unit that enters must stop there and takes 1 damage. Alderkin aren't affected." },
     { id: 'gravesoil', name: 'Grave soil', type: 'spell', colour: 'B', cost: 2, wants: 1, aim: { tile: 'blight', turns: 3 }, text: 'Aim at a tile: blighted for 3 turns. Units there have -1 attack. When a unit dies on it, you summon a Gravebound thrall on that tile.' },
@@ -153,7 +153,7 @@ var Engine = (function () {
     unit('corewright', 'Corewright', 'U', 3, 1, 2, 3, { equipDiscount: 1, text: 'Your equipment costs 1 less.' }),
     // The 2026-11-10 roster, cards 104 to 191 in CARD_PROPOSALS.md. Relics stay in play beside the summoner, off the grid.
     // Vigil.
-    unit('pilgrim', 'Devoted pilgrim', 'W', 2, 1, 1, 3, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it recovers health, it gets +1 / +1 for good.' }),
+    unit('pilgrim', 'Devoted pilgrim', 'W', 2, 1, 1, 3, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
     { id: 'vow', name: 'Vow of keeping', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: -1, hpBonus: 0, allyOnly: true, vow: true, text: "Enchant one of your units: -1 attack. The first time it would die, it's left at 1 health instead, and the vow ends." },
     unit('chaplain', 'Still Flame chaplain', 'W', 3, 1, 1, 4, { ability: { key: 'farheal', label: 'Heal', amount: 2 }, text: 'Ability: an ally within 2 tiles recovers 2 health.' }),
     unit('ribbonvane', 'Ribbonvane', 'W', 4, 2, 3, 4, { keywords: ['Flying', 'Guard'], text: 'Flying: moves 2 tiles, over other units. Guard: adjacent allies take 1 less damage from attacks.' }),
@@ -164,8 +164,8 @@ var Engine = (function () {
     unit('roadsquire', 'Oath-road squire', 'W', 1, 1, 1, 2, { ability: { key: 'refit', label: 'Refit' }, text: 'Ability: move an equipment card from an ally next to it to another ally next to it, or to itself.' }),
     { id: 'standasone', name: 'Stand as one', type: 'instant', colour: 'W', cost: 2, wants: 1, brace: 2, text: 'When an enemy attacks one of your units: it and each ally next to it take 2 less damage from attacks this turn.' },
     { id: 'sanctuary', name: 'Sanctuary threshold', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, sanctuary: 3, text: "Enchant one of your units for 3 turns: it can't be attacked from more than 1 tile away or targeted by enemy spells." },
-    unit('penitent', 'Hearth-sworn penitent', 'W', 3, 1, 2, 4, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it recovers health, it gets +1 / +1 for good.' }),
-    unit('vowkeeper', 'Vowkeeper of the long road', 'W', 5, 2, 3, 7, { keywords: ['Guard', 'Devotion'], text: 'Guard. Devotion: when it or an ally next to it recovers health, it gets +1 / +1 for good.' }),
+    unit('penitent', 'Hearth-sworn penitent', 'W', 3, 1, 2, 4, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
+    unit('vowkeeper', 'Vowkeeper of the long road', 'W', 5, 2, 3, 7, { keywords: ['Guard', 'Devotion'], text: 'Guard. Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
     { id: 'humbling', name: 'Humbling light', type: 'spell', colour: 'W', cost: 4, wants: 2, humble: { atk: 5, hit: 3 }, text: 'Each unit with 5 or more attack takes 3 damage, yours included.' },
     unit('ashsweeper', 'Still Flame ash-sweeper', 'W', 2, 1, 1, 3, { ability: { key: 'sweep', label: 'Sweep' }, text: 'Ability: clear every tile effect on its tile and the tiles next to it.' }),
     { id: 'oathbell', name: 'Oath bell', type: 'relic', colour: 'W', cost: 3, wants: 1, relic: 'bell', text: 'Once on each of your turns, pay 1: each of your units next to an ally gets +1 attack this turn.' },
@@ -180,7 +180,7 @@ var Engine = (function () {
     unit('marksman', 'Focus-rifle marksman', 'U', 4, 2, 3, 3, { keywords: ['Longshot'], text: "Longshot: attacks up to 3 tiles away if it hasn't moved this turn." }),
     unit('fieldplate', 'Field-plate artificer', 'U', 3, 1, 2, 4, { keywords: ['Armed'], armed: 1, text: 'Armed: +1 attack and +1 health while it carries equipment.' }),
     { id: 'glimmer', name: 'Glimmer double', type: 'spell', colour: 'U', cost: 1, wants: 0, place: 'decoy', text: 'Summon an Illusory decoy on any empty tile outside the back rows. It vanishes at the start of your next turn.' },
-    { id: 'whitemorning', name: 'White morning', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { row: true, chill: true }, text: "Aim at a row: each enemy in it can't move on its next turn." },
+    { id: 'whitemorning', name: 'White morning', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { row: true, chill: true, foes: 1 }, text: "Aim at a row: each enemy in it takes 1 damage and can't move on its next turn." },
     { id: 'harmonic', name: 'Harmonic burst', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { hit: 1, splash: 1, splashAll: true, push: true }, text: 'Aim at a tile: 1 damage to every unit there and next to it, yours included. Each enemy hit beside it is pushed 1 tile away.' },
     { id: 'frostbreak', name: 'Frostbreak', type: 'spell', colour: 'U', cost: 3, wants: 1, blast: 1, iceBlast: 3, text: '3 damage to an enemy unit that is frozen or stands on frozen ground. Otherwise 1.' },
     { id: 'prism', name: 'Prism bracer', type: 'enchant', equipment: true, colour: 'U', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, reach: 1, text: 'Equip one of your units: it attacks 1 tile further.' },
@@ -592,12 +592,14 @@ var Engine = (function () {
   function open(pi, u) { return u.owner === pi || !u.veiled; }
   function emptyTile(s, r, c) { return r >= 0 && c >= 0 && r < ROWS && c < COLS && !unitAt(s, r, c); }
   function shoveRow(u) { return u.r + (u.owner === 0 ? 1 : -1); }
+  // Whether healing t would grow a Devotion unit: t itself, or an ally next to it.
+  function devoNear(s, t) { return s.units.some(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && hasKw(o, 'Devotion'); }); }
   function heal(s, u, amt) {
     var healed = Math.min(amt, u.maxHp - u.hp);
     u.hp += healed;
-    if (healed <= 0) return 0;
-    s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+' + healed, good: true });
-    // Devotion grows when it, or an ally next to it, recovers real health.
+    if (amt <= 0) return 0;
+    if (healed > 0) s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+' + healed, good: true });
+    // Devotion grows when it, or an ally next to it, is healed, even at full health (creator, 2026-11-10).
     s.units.forEach(function (o) {
       if (o.owner !== u.owner || (o !== u && dist(o, u) !== 1) || !hasKw(o, 'Devotion')) return;
       o.boost = (o.boost || 0) + 1; o.maxHp += 1; o.hp += 1;
@@ -757,8 +759,8 @@ var Engine = (function () {
           } else if (c.cleanse) {
             s.units.forEach(function (a) { if (a.enchants.length && open(pi, a)) out.push({ type: 'cast', card: i.id, target: a.uid }); });
           } else if (c.mend) {
-            // Spring melt also gives attack, so it can go on an unhurt unit.
-            s.units.forEach(function (a) { if (a.owner === pi && (a.hp < a.maxHp || c.temper)) out.push({ type: 'cast', card: i.id, target: a.uid }); });
+            // Spring melt also gives attack, so it can go on an unhurt unit, and so can any heal that grows Devotion.
+            s.units.forEach(function (a) { if (a.owner === pi && (a.hp < a.maxHp || c.temper || devoNear(s, a))) out.push({ type: 'cast', card: i.id, target: a.uid }); });
           } else if (c.blast) {
             s.units.forEach(function (e) { if (e.owner !== pi && spellTarget(s, pi, e)) out.push({ type: 'cast', card: i.id, target: e.uid }); });
           } else if (c.fortify || c.stride) {
@@ -797,7 +799,7 @@ var Engine = (function () {
       var ab = CARDS[u.cardId].ability;
       if (!ab) return;
       if (ab.key === 'heal') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && a.hp < a.maxHp) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && (a.hp < a.maxHp || devoNear(s, a))) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'rally') {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1; })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'lance') {
@@ -810,7 +812,7 @@ var Engine = (function () {
       } else if (ab.key === 'lens') {
         s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange && range(a) === 1) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'healall') {
-        if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && a.hp < a.maxHp; })) out.push({ type: 'ability', unit: u.uid });
+        if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && (a.hp < a.maxHp || devoNear(s, a)); })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'orders') {
         s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && a.moved && !a.acted && reachable(s, a).length) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'study' || ab.key === 'sift' || ab.key === 'forage') {
@@ -846,7 +848,7 @@ var Engine = (function () {
       } else if (ab.key === 'winterdoor') {
         s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, r: e.r, c: e.c }); });
       } else if (ab.key === 'farheal') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) <= 2 && a.hp < a.maxHp) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) <= 2 && (a.hp < a.maxHp || devoNear(s, a))) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'refit') {
         // From an ally next to the squire, to another ally next to it or to the squire itself.
         s.units.forEach(function (from) {

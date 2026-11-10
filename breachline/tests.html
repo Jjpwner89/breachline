@@ -463,6 +463,17 @@ function randomField(r, ids) {
     s = play(s, { type: 'cast', card: bolt0, target: burnt.uid });
     check('and work as they do on the enemy turn', !by(s, burnt));
 
+    s = arena(); var devout = put(s, 'pilgrim', 0, 2, 2), healer = put(s, 'cleric', 0, 2, 3);
+    s = play(E.applyMove(s, { type: 'toCommand' }), { type: 'ability', unit: healer.uid, target: devout.uid });
+    check('Devotion grows from a heal even at full health', E.attackOf(s, by(s, devout)) === 2 && by(s, devout).hp === 4);
+
+    s = arena(); var chilled = put(s, 'raider', 1, 1, 2);
+    s = play(s, { type: 'cast', card: give(s, 'frost'), r: 1, c: 2 });
+    check('Frost hits each enemy it freezes', by(s, chilled).hp === 1 && E.tileAt(s, 1, 2).kind === 'frost');
+    s = arena(); var dawn = put(s, 'giant', 1, 1, 1);
+    s = play(s, { type: 'cast', card: give(s, 'whitemorning'), r: 1, c: 4 });
+    check('White morning hits and holds each enemy in the row', by(s, dawn).hp === 7 && by(s, dawn).frozen > s.turn);
+
     s = arena(); var bell = give(s, 'oathbell'); put(s, 'sentinel', 0, 3, 2); put(s, 'knight', 0, 3, 3);
     s = play(s, { type: 'cast', card: bell });
     var rid = s.players[0].relics[0] && s.players[0].relics[0].id;

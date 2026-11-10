@@ -192,12 +192,12 @@ Theme decks, one per new mechanic, are in the exhibition picker and the deck bui
 | The Thornwardens | Thorns, Holding ground | 50% |
 | Cinder and slag | Lit, burning ground | 47% |
 | The long throw | Spells at the summoner | 46% |
-| Winter glyphs | Freezing | 38% |
-| Hearth and vow | Devotion | 35% |
+| Winter glyphs | Freezing | 42% |
+| Hearth and vow | Devotion | 50% |
 
 - **Rootfed and Carrion run hot.** Both are mono-colour decks in the two strongest colours. Alderkin elder, Shell-mountain tortoise and Elderwood stag win over 75% of the games they're played in. Worth watching, not yet worth changing.
-- **Devotion rarely triggers:** about once a game, because it needs real healing and units seldom survive damaged next to a healer. If healing a unit at full health also counted, it would trigger about 6 times a game and the deck would win 51%. That's a rules change to the creator's mechanic, so it's waiting for a decision.
-- **Freezing is the weakest theme.** It is blue's weakness again: the starters beat a deck that stops units without killing them.
+- **Devotion** triggered only about once a game when it needed real healing, and its deck won 35%. The creator decided any heal counts, even at full health; it now triggers about 5 times a game.
+- **Freezing is the weakest theme.** It is blue's weakness again: the starters beat a deck that stops units without killing them. Frost and White morning now deal 1 damage as they freeze (creator, 2026-11-10), which took the deck from 38% to 42%.
 - **Spell-heavy first drafts lose badly:** 6% to 19% for winter, burn, fire and Devotion with 6 to 8 units. Every theme deck now plays 11 to 15 units.
 
 Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.
