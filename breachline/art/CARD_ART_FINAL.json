@@ -6,52 +6,52 @@
   "usage": [
     "Use only the assets listed here when selecting finished card art.",
     "Each asset has one canonical full-size PNG and one smaller JPEG used by the game. These are deliberate delivery formats, not alternative designs.",
-    "33 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
-    "73 other images already serve cards in the current prototype; card_ids identify those assignments.",
+    "44 new art assets are ready for new card designs; names, suggested types and possible roles remain design inputs, not implemented mechanics.",
+    "85 other images already serve cards in the current prototype; card_ids identify those assignments.",
     "Do not regenerate or restore the rejected pottery spell, salvager or superseded versions.",
     "Reference sheets, exploratory concepts, maps, campaign images and works in progress are separate resources and are not part of this card-art selection.",
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 117,
-    "new_card_art": 32,
+    "final_images": 129,
+    "new_card_art": 44,
     "already_used_by_game": 85,
     "existing_card_ids": 85
   },
   "new_art_distribution": {
     "W": {
       "objects": 4,
-      "units": 1,
-      "spells": 2,
-      "total": 7
+      "units": 2,
+      "spells": 3,
+      "total": 9
     },
     "U": {
       "objects": 4,
-      "units": 1,
-      "spells": 1,
-      "total": 6
-    },
-    "B": {
-      "objects": 3,
-      "units": 3,
+      "units": 2,
       "spells": 2,
       "total": 8
     },
+    "B": {
+      "objects": 3,
+      "units": 5,
+      "spells": 3,
+      "total": 11
+    },
     "R": {
-      "objects": 2,
-      "units": 1,
-      "spells": 2,
-      "total": 5
+      "objects": 3,
+      "units": 2,
+      "spells": 3,
+      "total": 8
     },
     "G": {
       "objects": 1,
-      "units": 3,
+      "units": 4,
       "spells": 2,
-      "total": 6
+      "total": 7
     },
-    "unassigned": {
-      "objects": 1,
-      "units": 0,
+    "C": {
+      "objects": 0,
+      "units": 1,
       "spells": 0,
       "total": 1
     }
@@ -152,7 +152,39 @@
       }
     ],
     "exact_duplicate_pngs_remaining": 0,
-    "retained_image_files_unchanged": 217
+    "retained_image_files_unchanged": 217,
+    "set9_finalization": {
+      "date": "2026-11-10",
+      "deleted_image_files": [
+        {
+          "card": "Harmonic burst",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-57277780-e743-4bac-b94c-9fbb727b4c40.png",
+          "sha256": "dbefee025c532ab949b3aed0cad91767f759a2c110c884a7c1f16008d869fa0f",
+          "reason": "Superseded after creator rejected the implausible bell-on-stones installation. Original generated source retained as exact edit provenance."
+        },
+        {
+          "card": "Halfshade lynx",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-77b171c3-9844-4913-9a59-8bc303f04144.png",
+          "sha256": "fb62a13881993b1ccda5e855b442cf2dd7bcb844fc32f4a29333a07ce5ac0a72",
+          "reason": "Superseded: shorten the overlong furred tail to preserve lynx anatomy."
+        },
+        {
+          "card": "Untaught firecaller",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-71c49de2-8e64-4c0b-8358-d57e6a65f06c.png",
+          "sha256": "ebc16816200c5438148f5dc1b73d11df332ceb0c8487faecccf05c9033d79adc",
+          "reason": "Superseded: overly theatrical wide eyes and broad comic expressions."
+        },
+        {
+          "card": "Elderwood stag",
+          "former_path": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-45529dbd-b9bc-480f-baea-d13071fadc36.png",
+          "sha256": "b3f6b42902c096dee4ce318abeaec49d9764ca917f12577dd8d48552107dc96b",
+          "reason": "Superseded: antler tips were clipped by the top edge despite otherwise coherent four-leg motion."
+        }
+      ],
+      "final_images_retained": 12,
+      "web_jpegs_retained": 12,
+      "prompt_history": "ART_PROMPTS_SET9.json"
+    }
   },
   "assets": [
     {
@@ -2505,6 +2537,294 @@
       "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png",
       "selected_date": "2026-11-10",
       "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
+    },
+    {
+      "id": "harmonic-burst",
+      "title": "Harmonic burst",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Spell",
+      "possible_role": "Small area damage and outward displacement",
+      "png": "harmonic-burst.png",
+      "web_jpeg": "web/harmonic-burst.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+      "web_sha256": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+      "card_ids": [],
+      "proposal_number": 124,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-3153a0c6-604e-47aa-88d0-ef39f12c6dbf.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "Final art approval does not make this a favorite or a preferred Gnosis direction."
+    },
+    {
+      "id": "line-of-dawn",
+      "title": "Line of dawn",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Spell",
+      "possible_role": "Column damage and friendly healing",
+      "png": "line-of-dawn.png",
+      "web_jpeg": "web/line-of-dawn.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7c7ff5c0a28f0ca99981805a5033176cd2a7210688056784a436af338fc17c4a",
+      "web_sha256": "0a4dd209634f2901fb7b4d32da3019349f7aa299153d2ffaa9eb1c1b5a0b11dd",
+      "card_ids": [],
+      "proposal_number": 125,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-b8c2873b-1adc-43a6-b639-1d78c9320a5b.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "hearth-sworn-penitent",
+      "title": "Hearth-sworn penitent",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "W",
+      "alignment": "Vigil / white",
+      "suggested_type": "Unit",
+      "possible_role": "Devotion unit",
+      "png": "hearth-sworn-penitent.png",
+      "web_jpeg": "web/hearth-sworn-penitent.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d0efe9b76b2551e3a9e7716f0326c978063693c650d5c99c76214677cd391644",
+      "web_sha256": "41985e70fa5824e856800a782e057c52491013bed1404be3864e5c9b9e1e3fbe",
+      "card_ids": [],
+      "proposal_number": 139,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-ba624d5a-cfe1-48c2-b7ee-e46965202a39.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "field-plate-artificer",
+      "title": "Field-plate artificer",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Unit",
+      "possible_role": "Armed unit",
+      "png": "field-plate-artificer.png",
+      "web_jpeg": "web/field-plate-artificer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "72c1bea6585a05c23f5b090196366c5b1ac6407c4d03830aef860c086ffd4da4",
+      "web_sha256": "890676f9c994344195a834a1389540c307172636578af359fe102d693bf5f503",
+      "card_ids": [],
+      "proposal_number": 143,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-f7457a9a-beeb-4be4-afce-8310cfe50fd2.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "collect-the-tithe",
+      "title": "Collect the tithe",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Spell",
+      "possible_role": "Direct damage with life gain against a summoner",
+      "png": "collect-the-tithe.png",
+      "web_jpeg": "web/collect-the-tithe.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b1d2ad3af657a65a7f4cf7ba88f3c4eb300b39d3e7aa14bb2a778dffbc25070d",
+      "web_sha256": "1ffdbdf3e44fba2d0fef615d9c58b3175b44593f61f4dc554ed3bf5c59fdacd1",
+      "card_ids": [],
+      "proposal_number": 121,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-534bd130-f65a-4966-b236-bf10c3cb45f1.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "mortuary-priest",
+      "title": "Mortuary priest",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Carrion unit",
+      "png": "mortuary-priest.png",
+      "web_jpeg": "web/mortuary-priest.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2fccedc0012f00963e5b6d21cb911d06ae25321b81ddd74e4a8ee23e95ac82f3",
+      "web_sha256": "c8cda0748bb7463d780bfbede24291255e93186fffc76bebf1dc7bb7cbf231e6",
+      "card_ids": [],
+      "proposal_number": 151,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-32a815c1-ae5f-4fc8-86d7-05588bc3c791.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "halfshade-lynx",
+      "title": "Halfshade lynx",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "suggested_type": "Unit",
+      "possible_role": "Veiled unit",
+      "png": "halfshade-lynx.png",
+      "web_jpeg": "web/halfshade-lynx.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "35a6c52cf05dc4cd290850a875df55bb1bdfbf34c0d26f87378262b5e62cb221",
+      "web_sha256": "e3f9980a37913396f50f30ce20399addadb751b5055d8598de29ec698ea64211",
+      "card_ids": [],
+      "proposal_number": 154,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-a237c856-1d0a-48f5-98db-40eba7cf9ee8.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "untaught-firecaller",
+      "title": "Untaught firecaller",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Unit",
+      "possible_role": "Uncontrolled fire aimed near a chosen tile",
+      "png": "untaught-firecaller.png",
+      "web_jpeg": "web/untaught-firecaller.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1a8fa9442987c9c7f77ebb6af1fadeb3bf5556b712cdddd4bb8ef46d376e8e42",
+      "web_sha256": "ce62fa5e83875a064e17d3098e0450f26e9da51e09ef72394099c5ee3febd6e2",
+      "card_ids": [],
+      "proposal_number": 116,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-de7eca66-c226-4947-b95b-0387cdcb5a0b.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "the-sky-falls-in",
+      "title": "The sky falls in",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Spell",
+      "possible_role": "Large direct damage spell",
+      "png": "the-sky-falls-in.png",
+      "web_jpeg": "web/the-sky-falls-in.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e90547e2068d80277a304bf51bbacf0654e540e35b402b0e7c3740bbd2facd85",
+      "web_sha256": "bea6375b5c7452b68324c5b5a8ebeed9b1768d5d6b3d6e70e924e5382489ebf9",
+      "card_ids": [],
+      "proposal_number": 119,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-c02fbad6-99f2-44cc-b3c1-f98c0709ee40.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "salamander-hide-mantle",
+      "title": "Salamander-hide mantle",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "suggested_type": "Equipment",
+      "possible_role": "Health and Fireproof equipment",
+      "png": "salamander-hide-mantle.png",
+      "web_jpeg": "web/salamander-hide-mantle.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8c77cafd8f807831c371a8833129784dc41d4c6ec07b4adbe27685b8dfbfda47",
+      "web_sha256": "c7e6e4dccb28f9e295dc627a85372798125a65c74317bda09a713ce25eb9637a",
+      "card_ids": [],
+      "proposal_number": 191,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-7cd73735-4127-4611-93c7-f5632bf3b034.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "elderwood-stag",
+      "title": "Elderwood stag",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "suggested_type": "Unit",
+      "possible_role": "Swift, Rootfed creature",
+      "png": "elderwood-stag.png",
+      "web_jpeg": "web/elderwood-stag.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cb2aa79345814e87484012e2df423c2774136dfcd5d5757acdce7082e494c325",
+      "web_sha256": "d0488d60510919fd5d5ad266a1d6f9b460c70bd2e55bfeaddd9b3ae66a174767",
+      "card_ids": [],
+      "proposal_number": 172,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-00be48a9-5de1-4309-9875-534e2deb8fd2.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
+    },
+    {
+      "id": "rust-hinged-warden",
+      "title": "Rust-hinged warden",
+      "status": "final_for_card_building",
+      "availability": "new_card_art",
+      "colour": "C",
+      "alignment": "Neutral / colourless",
+      "suggested_type": "Unit",
+      "possible_role": "Neutral defensive Guard unit",
+      "png": "rust-hinged-warden.png",
+      "web_jpeg": "web/rust-hinged-warden.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "adf87e1c1ef6fb99af1d315be21b818da568044d178f812f6b127e834e849d7e",
+      "web_sha256": "6a7a8d8a3f8eeaf62cff0f52a12442a7cfa572e373ef771dc48d1a88b80db4f9",
+      "card_ids": [],
+      "proposal_number": 178,
+      "selected_date": "2026-11-10",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-9136b7a3-1c02-470f-b60b-604b165305cc.png",
+      "source_manifest": "ART_PROMPTS_SET9.json",
+      "selection_note": "All Set 9 paintings finalized by the creator on 2026-11-10."
     }
   ]
 }
