@@ -17,7 +17,7 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
-11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 106 Cinder firebrand, 108 Conclave rimecaller, 109 Vow of keeping, 114 Ledger of debts, 118 Hurled brand, 131 Held between moments, 150 Shutter-window assassin, 153 Gilt-hall temptress, 173 Alderkin elder, 177 Buckling recruit, 189 Still Flame ash-sweeper.
+12 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 106 Cinder firebrand, 108 Conclave rimecaller, 109 Vow of keeping, 114 Ledger of debts, 118 Hurled brand, 131 Held between moments, 150 Shutter-window assassin, 153 Gilt-hall temptress, 173 Alderkin elder, 177 Buckling recruit, 189 Still Flame ash-sweeper, 190 Emberward.
 **Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
 ## What these paintings are for
 
@@ -135,6 +135,14 @@ A broad male Cinder Clans fighter strides through a field of low burning grass a
 **References:** `cinderfall.png`; `clan-outrider.png`; `reference-library-2026-11-06/people/01-humans.png`; `reference-library-2026-11-06/people/08-humans-additional-faces.png`
 
 A male Cinder Clans fighter at full stretch hurls a burning brand over a timber palisade; sparks trail from it in an arc toward the frame edge. Red dusk behind him, smoke drifting. The target and impact are off-screen, and the throw is not aimed at the viewer. Trace the throwing arm and planted leg through the body.
+
+### 190. Emberward: emberward.png
+
+**Visual aim:** A young man's forearms painted with fine ember-red warding lines by an old Cinder Clans woman, a distant fire glowing beyond the tent flap.
+
+**References:** `reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png`; `reference-library-2026-11-06/people/08-humans-additional-faces.png`
+
+Inside a hide tent at night, an old Cinder Clans woman paints fine ember-red lines along a young man's forearms with a reed brush, the pigment faintly warm. Through the open flap a distant fire glows orange, and he watches it without fear. Close, intimate, warm firelight against blue night. Matte skin, individual faces, simple coherent hands.
 
 ## Genesis
 

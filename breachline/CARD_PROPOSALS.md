@@ -359,7 +359,7 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | Regrow | Removed as too strong | None | Built. The Mossback bear takes Frenzy instead, the extra Frenzy card you allowed. Say if you'd rather it stayed plain |
 | Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
 | Frenzy | +2 attack while damaged | Cinder berserker, Orc raider, Mossback bear | Built |
-| Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built. It can be an innate trait or come from a lighting spell. No other fire spell protects your units, so a fire deck weighs the risk of burning its own side against the cost of lighting them first |
+| Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built for the four with it innately. It can also come from a spell, an enchantment (#190) or equipment (#191). No card already in the game gives it, and lightning never does |
 | Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Not built. Only the shadow animal is proposed |
 | Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Not built. No existing card changes. The new ones look armoured or are putting armour on, and Armed isn't tied to a colour |
 | Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Not built. The spell places a decoy that lasts one turn |
@@ -421,9 +421,11 @@ Why each card is the way it is:
 
 Proposed on 2026-11-10. None are built. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
 
-Art briefs for the 55 cards from #104 to #189 without a painting are in five sets of 11, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
+Art briefs for the 57 cards from #104 to #191 without a painting are in five sets of 11 or 12, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
 
 New rules these cards use:
+
+- **Fire spells come in two kinds** (creator, 2026-11-10): some damage only enemy units and some damage every unit, yours included. Cost and damage balance the two: enemy-only fire costs more or hits less. Of the current cards, Cinderfall and Cinderwake hit only enemies, and Stormstrike, a lightning spell, hits everyone. Burning tiles hurt anyone without Fireproof.
 
 - **Carrion:** the merged Gathered and Sworn keyword above, now built.
 - **Rootfed:** permanently +1 attack and +1 health whenever you play an Overgrown ruin (a Genesis land), up to +3. It's a payoff for Genesis's extra lands. Approved 2026-11-10.
@@ -496,10 +498,11 @@ New rules these cards use:
 | 173 | Alderkin elder | None (Genesis) | Unit | 6 | 3 | 5 / 8 | Grows |  | None |
 | 174 | Shell-mountain tortoise | Elder Herd | Unit | 5 | 2 | 2 / 12 | Guard |  | None |
 | 175 | Spring melt | None (Genesis) | Spell | 2 | 1 |  | One of your units recovers 4 health and permanently gets +1 attack |  | Small |
-
 | 189 | Still Flame ash-sweeper | Still Flame | Unit | 2 | 1 | 1 / 3 | Ability: clear every tile effect on its tile and the tiles next to it |  | Small |
+| 190 | Emberward | Cinder Clans | Enchantment | 1 | 1 |  | Enchant one of your units: Fireproof |  | None |
+| 191 | Salamander-hide mantle | Cinder Clans | Equipment | 2 | 1 |  | Equip one of your units: +1 health and Fireproof |  | None |
 
-The ash-sweeper is Vigil's one tile-clearing card, as asked on 2026-11-10. It's listed here, after the green cards, so the numbers before it stay the same.
+The ash-sweeper is Vigil's one tile-clearing card, as asked on 2026-11-10. Emberward and the Salamander-hide mantle let Fireproof come from an enchantment and from equipment as well as being innate or lit by a spell. They're listed here, after the green cards, so the numbers before them stay the same.
 
 ### Neutral
 
@@ -551,5 +554,6 @@ Why each card is the way it is:
 - **Rootfed (170–172):** a payoff for extra lands, which green has plenty of and no reward for.
 - **Alderkin elder and the tortoise:** big Genesis bodies for the one-big-creature plan, one that grows and one that holds the line.
 - **Sudden canopy and Return to loam:** unused Genesis paintings. Canopy covers green's weakness to ranged attacks.
+- **Emberward and the Salamander-hide mantle:** Fireproof from an enchantment and from equipment, alongside lighting spells and innate Fireproof. Both are cheap, so a fire deck pays a card and a little mana to keep a unit safe from its own all-units fire.
 - **Neutral constructs (176, 178–180) and the Ossuary engine:** the construct batch, mostly neutral as you said, with one Dominion construct. The Bellframe construct is Resonance's third card.
 - **Buckling recruit:** a neutral Armed unit, painted mid-buckle.

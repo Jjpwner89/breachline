@@ -17,7 +17,7 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
-11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 116 Untaught firecaller, 119 The sky falls in, 121 Collect the tithe, 124 Harmonic burst, 125 Line of dawn, 139 Hearth-sworn penitent, 143 Field-plate artificer, 151 Mortuary priest, 154 Halfshade lynx, 172 Elderwood stag, 178 Rust-hinged warden.
+12 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 116 Untaught firecaller, 119 The sky falls in, 121 Collect the tithe, 124 Harmonic burst, 125 Line of dawn, 139 Hearth-sworn penitent, 143 Field-plate artificer, 151 Mortuary priest, 154 Halfshade lynx, 172 Elderwood stag, 178 Rust-hinged warden, 191 Salamander-hide mantle.
 **Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
 ## What these paintings are for
 
@@ -135,6 +135,14 @@ At a Warhorde camp at night, a young male goblin stares at his own hands as fire
 **References:** `cinderfall.png`; `reference-library-2026-11-06/magic-and-craft-2026-11-08/08-stormhook-channeler.png`
 
 On a hill far from a stone fortress, a Warhorde orc storm-caller with heavy coarse features stands small in the lower corner, arms raised. Above the fortress the storm clouds tear open and a burning mass of rock and lightning falls toward it. The sky, the falling fire and the hot-cool light carry the painting, as Cinderfall did, without repeating its composition. Keep the orc's anatomy coarse and nonhuman.
+
+### 191. Salamander-hide mantle: salamander-hide-mantle.png
+
+**Visual aim:** A short mantle of mottled salamander hide hung on a peg by a forge, embers settling on it without leaving a mark.
+
+**References:** `ember-salamander.png`; `reference-library-2026-11-06/concept-round-08-2026-11-09/07-redglass-falchion.png`
+
+A short shoulder mantle of mottled red-and-black salamander hide hangs on a wooden peg beside a clan forge. Sparks from the anvil land on it and cool to grey without scorching it. The hide's texture and colour are the subject, displayed with the care the creator liked in the Redglass falchion painting. Warm forge light, deep shadow, a working hand at the edge of the frame.
 
 ## Genesis
 
