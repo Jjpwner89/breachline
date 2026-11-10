@@ -18,7 +18,7 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
 11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 110 Still Flame chaplain, 115 White flier, 133 Unwind the step, 141 Humbling light, 146 Frostbreak, 161 Cinder rain, 165 Overgrowth, 169 Thornwarden trapper, 170 Mosshorn grazer, 180 Waystone golem, 181 Ossuary engine.
-**Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
+**Status, 2026-11-10:** all 11 current paintings approved as final by the creator, including the revised Unwind the step and Frostbreak. Exact selected versions and approval are recorded in ART_PROMPTS_SET11.json. This visual approval does not automatically establish new lore.
 ## What these paintings are for
 
 Each brief begins with what should make the painting worth looking at. Card rules are design records in CARD_PROPOSALS.md and stay out of image prompts: a Longshot unit needn't be shooting, and a spell needn't diagram its effect, unless that's the most beautiful choice. Spells can show a specific event with purposeful activity and restrained, scene-organizing magic, which the creator liked in Set 3. Large dramatic magic is welcome where the brief asks for it, as with Cinderfall.
@@ -86,19 +86,23 @@ On a wet battlefield, a Fervor hill giant sinks to one knee as a shaft of mornin
 
 ### 133. Unwind the step: unwind-the-step.png
 
-**Visual aim:** An orc warrior pulled back along his own snowy footprints, a pale afterimage of his stride stretching behind him.
+**Visual aim:** An orc's charge abruptly recoils backward: heels skid in the snow while his abandoned forward stride fades ahead of him.
 
 **References:** `reference-library-2026-11-06/people/04-orcs.png`
 
-In fresh snow, an orc warrior lunges forward, but a translucent pale afterimage of his own body is dragging him backward toward his earlier footprints. Snow lifts back into the prints. Restrained blue-white motion, grey morning light. Keep his anatomy coherent and coarse, and the effect subtle enough to puzzle over.
+**Creator correction, 2026-11-10:** unwind the step isn't great, it's not clear that he is being stopped.
+
+The same coarse male orc is visibly arrested mid-charge, leaning backward with both heels dragging through snow and his rust sash still flying forward. A pale abandoned lunge hangs ahead of him while snow lifts back into earlier footprints. Keep the whole connected body readable and the rewind effect subordinate to the unmistakable halt.
 
 ### 146. Frostbreak: frostbreak.png
 
-**Visual aim:** A rime-locked shield wall shattering into glittering shards in hard winter sunlight.
+**Visual aim:** A staff strike breaks a frozen soldier's torso and shield into large icy fragments in hard winter sunlight.
 
 **References:** `reference-library-2026-11-06/magic-studies-round-04-2026-11-08/02-rime-drake.png`
 
-A Conclave mage's gloved hand and staff tip in the foreground strike a rime-crusted shield held by a frozen enemy; the ice shatters outward in glittering shards that catch hard winter sunlight. Behind, the rest of the frozen line is still white and motionless. Bright, cold and crisp; do not repeat Frost's canal.
+**Creator correction, 2026-11-10:** frostbreak doesn't have anyone breaking
+
+The nearest enemy is frozen solid and visibly shatters through torso, shoulder and shield under a Conclave mage's staff strike. Large angular ice pieces open a clear gap in the human silhouette while his legs remain planted for an instant. Three intact frozen soldiers stand behind. Keep the action non-graphic, with ice fracture surfaces and no blood or exposed tissue.
 
 ## Dominion
 
