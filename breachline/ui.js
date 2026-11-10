@@ -18,6 +18,7 @@
     ['instant', 'Instants', function (c) { return c.type === 'instant'; }],
     ['enchant', 'Enchantments', function (c) { return c.type === 'enchant' && !c.equipment; }],
     ['equipment', 'Equipment', function (c) { return !!c.equipment; }],
+    ['relic', 'Relics', function (c) { return c.type === 'relic'; }],
     ['land', 'Lands', function (c) { return c.type === 'land'; }]
   ];
   var $ = function (id) { return document.getElementById(id); };
