@@ -1,0 +1,631 @@
+{
+  "project": "Breachline",
+  "created": "2026-11-10",
+  "status": "Generated and integrated into the game in cd5b7d4; pending creator review",
+  "generation_mode": "Built-in image_gen",
+  "brief": "../TILE_ART_BRIEFS.md",
+  "scope": "Seven tile overlays, one seven-emblem sheet, and seven additional border-only overlays for affected landscape unit cards on the board.",
+  "emblem_order": [
+    "burn",
+    "frost",
+    "thorns",
+    "blight",
+    "holy",
+    "snare",
+    "charge"
+  ],
+  "assets": [
+    {
+      "filename": "ui-tile-burn.png",
+      "kind": "burn",
+      "label": "Burning",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nBurning ground. The rectangle's edges are singed: a band of brown-black char, as if the map had been scorched from beneath, with thin cracks of glowing orange ember running through it and a few low tongues of flame curling up at the corners. A few flecks of grey ash and one or two tiny embers drift toward the middle. Hot orange and deep red against black char. No smoke clouds and no bright white.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-9c835ad9-ba2a-4657-a7d5-5153bef708a0.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "03bc18ae67045f685b56e8397eafe861dc5faf3019438e6163cf6d1967be3f9a",
+        "bytes": 1696713,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.543477,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.977319,
+          "mean_alpha": 1.311815
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999996,
+          "mean_alpha": 0.06438
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-frost.png",
+      "kind": "frost",
+      "label": "Frozen",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nFrozen ground. Feathery hoarfrost and fine ice crystals grow inward from all four edges, packed thickest at the corners in a crust of white and pale blue, with fern-like frost patterns reaching a little way in. A thin, nearly invisible veil of rime crosses the middle, at extremely low opacity. Cold white, pale blue and a touch of steel grey; crisp and delicate. No snowdrifts or icicles.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-96e6bc6c-8d87-4a7e-9bd2-7a94dc9e35d9.png",
+      "revision": 2,
+      "revision_prompt": "Use case: background-extraction. Correct ONLY the transparency in the FIRST attached painted frost UI tile asset. Preserve the exact existing four-corner hoarfrost and fine ice crystals, their pale blue and white colors, delicate fern-like brushwork, rectangular arrangement and 1536 x 1024 canvas. Remove ALL white solid fill and milky haze across the interior. The central 70% must be entirely clear transparent alpha=0 with nothing painted on it. Keep only the actual frost crystals and a few semi-transparent fine crystal branches near the perimeter. Also remove the white backdrop outside the crystals. This is a CUT-OUT overlay to lay over a linen map and a unit painting; neither background may be obscured. Genuine alpha transparency, NOT white or gray or checkerboard. The SECOND attached linen image is reference only for what will show through; NEVER paint the linen or any wood/tacks. No additional embellishment, snowdrifts, icicles, broad glow, text or symbols.",
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "62a744e3e466f622e55991cb9db7de1068d6dcc5f02d319d6d549d52cb99f5e8",
+        "bytes": 1960254,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.624132,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.953365,
+          "mean_alpha": 2.461259
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999929,
+          "mean_alpha": 0.030624
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-thorns.png",
+      "kind": "thorns",
+      "label": "Thorns",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nA thornbrake. Dark, woody bramble stems with long sharp thorns weave along all four edges and knot into a dense tangle at each corner, with a few small dark leaves and one or two thin shoots creeping toward the middle. Deep green, bark brown and the pale tips of the thorns; living and hostile but not monstrous. No flowers, berries or faces in the wood.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-5529fcc7-40c5-432f-a4ad-7d82fe048012.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "ea459083d825a446b5d137346cd61edf2f5cd0ac08582992adcad9357198f18b",
+        "bytes": 1829806,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.492194,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.962792,
+          "mean_alpha": 1.034226
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999942,
+          "mean_alpha": 0.046415
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-blight.png",
+      "kind": "blight",
+      "label": "Blighted",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nBlighted ground. A damp, dark stain of grave soil and rot seeps in from all four edges: crumbling black-brown earth, threads of grey-violet mould, and fine pale root hairs reaching inward, heaviest at the corners. A few loose crumbs of soil lie toward the middle. Black, bruised violet and ashen grey; quietly wrong rather than gory. No bones, skulls, insects or faces.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-61b9ccf3-300e-48e9-959c-4cfb9e0c56f3.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "08f7e40adc3297db48553a75f7182df1bb09f42d94d234a00315cf2cda5dbbb7",
+        "bytes": 1652677,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.708694,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.978213,
+          "mean_alpha": 1.41014
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.007353
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-holy.png",
+      "kind": "holy",
+      "label": "Consecrated",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nConsecrated ground. A fine line of pale gold leaf runs round the rectangle just inside its edges, softly catching the light, with small pools of white candle wax and scattered white petals gathered at the four corners. A faint warm sheen lies inside the gold line, with two or three single petals toward the middle. Warm gold, ivory and white; calm, reverent and simple. No symbols, halos, crosses or sun shapes.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-3bf43544-f33b-4016-824d-9d57d664348b.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "ecf948d34bccc14f9ec7cde2707b888fcc4f2dc1cd4ac3a154dcfe3117ec8406",
+        "bytes": 1664686,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.588924,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.968693,
+          "mean_alpha": 0.589012
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999998,
+          "mean_alpha": 0.050315
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-snare.png",
+      "kind": "snare",
+      "label": "Snare",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nA spellwright's snare. A single fine thread of pale blue light, ruled as straight and exact as a draughtsman's line, is stretched taut round the rectangle just inside its edges. At each corner it is held by a small dark iron map pin pushed into the unseen map, looping once round the pin. A fainter second line runs parallel just inside the first. Pale blue-white light and dark iron; precise, quiet and slightly menacing. No letters, runes, diagrams or knots of rope. SECOND reference is ONLY for precise, hand-drawn light line quality; use cool blue instead of its warm light. Do not reproduce the person, hand, table, architecture or scene.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/glyphwright.jpg"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-dc260e79-8117-47c2-9824-f2c03569056e.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "fccb165bffaa9bcc705589288a6616b548cb24ed67ef319d3874752a3eb5d82a",
+        "bytes": 1370094,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.461687,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.996256,
+          "mean_alpha": 0.312564
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999755,
+          "mean_alpha": 0.163514
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-charge.png",
+      "kind": "charge",
+      "label": "Charged",
+      "variant": "tile",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, 3:2. A single tile overlay arranged as a rectangular perimeter matching this canvas aspect ratio, not a circle or square in the middle. Effect band follows ALL FOUR outer edges, about 100 pixels deep, strongest at the four corners, thinning toward a nearly empty central region. Keep complete perimeter within frame with only a tiny transparent margin. Central 60% of the image area stays almost entirely clear transparent alpha, for unit art. Sides remain even with no single bulky motif in the middle of an edge; four corners have similar weight but natural differences. No artificial enclosing box outline except the material lines explicitly requested. No scene or character.\nA charged rectangle. Fine branching filaments of violet-white lightning crawl along all four edges and gather into small bright knots at the corners, leaving thin scorched traces behind them. One or two faint filaments reach toward the middle. Violet, white and storm blue against dark scorch lines; tense, like the moment before a strike. No clouds, rain or bolt from above. SECOND reference is ONLY for lightning color and irregular branching, not for its person or landscape.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/stormstrike.jpg"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-7780345c-3dc9-441d-807a-1d41111c71d1.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "91bf1d513d5277ae51276fdef3e30e7b032f9af153a711628f4b6e491e83b946",
+        "bytes": 1649624,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.638611,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.978734,
+          "mean_alpha": 0.648293
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.996607,
+          "mean_alpha": 0.103188
+        }
+      }
+    },
+    {
+      "filename": "ui-tile-emblems.png",
+      "variant": "emblems",
+      "prompt": "Use case: stylized-concept. Create ONE original painted UI effect asset for Breachline, a high-fantasy card game. The board is a linen war map over an oak camp table, viewed vertically from above. The attached linen image is REFERENCE ONLY for the material and palette the effect will be composited onto. DO NOT reproduce any cloth, wood, tacks, map, paper or solid background from that reference. Paint ONLY the requested effect on genuine transparent alpha. Traditional oil/acrylic painted realism: visible but quiet measured brushwork, believable materials, precise selectively resolved detail, never uniform noise. Not a photo, CGI, vector graphic or particle effect. Even upper-left lighting, exact top-down orthographic view, no perspective or cast shadow, no broad glow haze; software adds glow and motion later. No text, letters, numbers, runes, sigils, logos, watermarks, signatures, labels, diagrams or other UI. Semi-transparent delicate effect edges rather than a solid-color matte.\nCanvas 1536 x 1024 landscape, genuine transparent PNG. This is an EMBLEM SHEET, not a tile perimeter. Exactly SEVEN small painted emblems in ONE horizontal row, all centered vertically and at the centers of seven equal-width columns, generously separated, same apparent size. Each must fit inside its own column with clear transparent margins. Simple bold silhouettes readable at 20 pixels. Left-to-right order is crucial: (1) tongue of orange flame rising from one glowing coal; (2) six-armed ice crystal white and pale blue; (3) short curved woody bramble sprig with exactly three sharp thorns; (4) withered black-violet leaf curling at its tip; (5) short white candle with small still gold flame; (6) dark iron map pin with pale blue thread looped round it; (7) jagged violet-white spark. Paint each in the same traditional hand as the tile materials, soft upper-left light and calm limited detailing. These numerals are instructions ONLY: never draw any numbers or text. No discs, frames, badges, backgrounds, labels, floor or cast shadows. Exactly seven emblems; never repeat or merge them.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-ed06ec37-c612-437d-a2a7-0dafba88226a.png",
+      "revision": 2,
+      "revision_prompt": "Use case: precise-object-edit. Correct ONLY the spacing and scale of this existing seven-emblem transparent sprite sheet. Keep the same seven designs, exact order, colors and hand-painted materials. Canvas exactly 1536 x 1024 landscape. It will be cut into SEVEN EQUAL VERTICAL COLUMNS, so no part of any icon may enter a neighboring column. Place their horizontal CENTERS at x=109,329,548,768,987,1207,1426, all vertically centered at y=512. Shrink each complete icon to fit a box NO MORE THAN 140 pixels wide and 210 pixels tall. Place ALL nontransparent pixels for each icon within its own centered box, including antialiased tips, spark ends, flame tips and blue-thread tails. Keep at least 38 pixels of entirely transparent space to either side within each column. No aura or glow haze outside the silhouettes. Preserve EXACTLY these seven, one per column left to right: orange flame and coal; six-armed white pale-blue ice crystal; curved bramble with three sharp thorns; black-violet curled leaf; short ivory candle with small gold flame; dark iron pin with blue thread; violet-white zigzag spark. NO labels, numbers, guides, column dividers, boxes or new objects. Entire background genuine transparent alpha=0. Do not paint a checkerboard or linen. This is a careful sprite spacing correction, not a redesign.",
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "60ec9737bbf7d34706466ee03861bea6c3881b17f14eb98e34b5114883c0a269",
+        "bytes": 1098389,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.931391,
+        "center_pixel_alpha": 253,
+        "central_60_percent_area": {
+          "clear_fraction": 0.923782,
+          "mean_alpha": 15.523809
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.890826,
+          "mean_alpha": 23.125548
+        },
+        "emblem_columns": [
+          {
+            "kind": "burn",
+            "column": 0,
+            "cell_x": 0,
+            "cell_width": 219,
+            "content_bounds_alpha_gt_8": {
+              "x": 88,
+              "y": 379,
+              "width": 95,
+              "height": 244
+            }
+          },
+          {
+            "kind": "frost",
+            "column": 1,
+            "cell_x": 219,
+            "cell_width": 219,
+            "content_bounds_alpha_gt_8": {
+              "x": 262,
+              "y": 418,
+              "width": 165,
+              "height": 195
+            }
+          },
+          {
+            "kind": "thorns",
+            "column": 2,
+            "cell_x": 438,
+            "cell_width": 220,
+            "content_bounds_alpha_gt_8": {
+              "x": 496,
+              "y": 421,
+              "width": 133,
+              "height": 199
+            }
+          },
+          {
+            "kind": "blight",
+            "column": 3,
+            "cell_x": 658,
+            "cell_width": 219,
+            "content_bounds_alpha_gt_8": {
+              "x": 692,
+              "y": 423,
+              "width": 139,
+              "height": 198
+            }
+          },
+          {
+            "kind": "holy",
+            "column": 4,
+            "cell_x": 877,
+            "cell_width": 220,
+            "content_bounds_alpha_gt_8": {
+              "x": 925,
+              "y": 408,
+              "width": 102,
+              "height": 212
+            }
+          },
+          {
+            "kind": "snare",
+            "column": 5,
+            "cell_x": 1097,
+            "cell_width": 219,
+            "content_bounds_alpha_gt_8": {
+              "x": 1140,
+              "y": 420,
+              "width": 122,
+              "height": 201
+            }
+          },
+          {
+            "kind": "charge",
+            "column": 6,
+            "cell_x": 1316,
+            "cell_width": 220,
+            "content_bounds_alpha_gt_8": {
+              "x": 1334,
+              "y": 405,
+              "width": 141,
+              "height": 227
+            }
+          }
+        ]
+      },
+      "prior_project_version": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ui-effects-2026-11-10/ui-tile-emblems-spacing-v1.png"
+    },
+    {
+      "filename": "ui-unit-border-burn.png",
+      "kind": "burn",
+      "label": "Burning",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Burning tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Burning material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. ",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-9c835ad9-ba2a-4657-a7d5-5153bef708a0.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-5a7517b5-6f40-477c-b629-5756911e02bb.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "9a3da8b84ac9886c71954262af4085942e79f8d68931b8c9d51338403dce17ee",
+        "bytes": 1218239,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.916684,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.001447
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.001665
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-thorns.png",
+      "kind": "thorns",
+      "label": "Thorns",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Thorns tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Thorns material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. ",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-5529fcc7-40c5-432f-a4ad-7d82fe048012.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-6a5b420e-acd8-4831-b369-55b3534a1fc1.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "e8c50f675305ac6c691bbd1a99f11dc5c338dc9bfdd99a9aceadf2eebe52c8c2",
+        "bytes": 1312869,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.886909,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.008362
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.003851
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-blight.png",
+      "kind": "blight",
+      "label": "Blighted",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Blighted tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Blighted material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. ",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-61b9ccf3-300e-48e9-959c-4cfb9e0c56f3.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-48266b2b-33fd-4a58-a24c-73886f50e154.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "4bd7637493f93bad4be91c4ae051c949fd0baf4022448f32f8c0cdcdf1856130",
+        "bytes": 1259264,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.891878,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.005865
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.004428
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-holy.png",
+      "kind": "holy",
+      "label": "Consecrated",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Consecrated tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Consecrated material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. Retain a fine gold-leaf edge and tiny ivory wax/petal corners.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-3bf43544-f33b-4016-824d-9d57d664348b.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-fc6d2808-12e7-444c-b840-4bfc82c2530a.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "04dd8fa47ded4b6730fdd0ced694df3e70c1d49acdbb7d9243343fa790c80583",
+        "bytes": 1207740,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.924444,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.001196
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.001193
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-snare.png",
+      "kind": "snare",
+      "label": "Snare",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Snare tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Snare material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. Retain four dark iron pins and precise straight cool-blue double threads.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-dc260e79-8117-47c2-9824-f2c03569056e.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-89985482-452f-47aa-96cd-c8ca73124efc.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "9fff6784440ccc2acfd9a36587090567757e32ebb734cf83adb08d546f4ec874",
+        "bytes": 1224366,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.759326,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.030248
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.026931
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-charge.png",
+      "kind": "charge",
+      "label": "Charged",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Charged tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Charged material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha. Keep irregular violet-white branching lightning contained strictly to the thin perimeter.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-7780345c-3dc9-441d-807a-1d41111c71d1.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-b829a059-0e41-4e98-a6a1-99553d5eddeb.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "ba54bdfc47ad618fbd33094ee0bb99aa49fce7285c18feb31aaf3f8c69d79132",
+        "bytes": 1313764,
+        "alpha_min": 0,
+        "alpha_max": 252,
+        "fully_transparent_fraction": 0.825696,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.999998,
+          "mean_alpha": 0.007212
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 1.0,
+          "mean_alpha": 0.00083
+        }
+      }
+    },
+    {
+      "filename": "ui-unit-border-frost.png",
+      "kind": "frost",
+      "label": "Frozen",
+      "variant": "unit-border",
+      "prompt": "Use case: precise-object-edit. Convert the FIRST attached painted Frozen tile effect into a matching NARROW BORDER-ONLY OVERLAY for an occupied landscape unit card. Keep its recognizable Frozen material, colors and hand-painted oil/acrylic treatment. SECOND image is only the linen background it will sit on; do not copy any cloth, wood or tacks. Canvas exactly 1536 x 1024, landscape 3:2. Keep the effect in a slim uninterrupted rectangular perimeter, approximately 40\u201360 pixels deep, all four sides, with modest equal-weight corner accents no deeper than 80 pixels. Reduce bulky corner clusters. The ENTIRE central rectangle from x=110 to1426 and y=110 to914 MUST be completely empty alpha=0: no tint, fog, glimmer, fleck, branch, petal, frost or texture crosses it. No opaque background, no gray matte, no painted checkerboard; real transparent pixels both inside and outside the perimeter. Remove all isolated inward-reaching details. Preserve the four-sided outer layout, similar strength on each side, upper-left painted light and no cast shadows. This is ONLY the effect itself, not an iron card frame and not a card illustration. No text, numbers, symbols or extra icons. Fully preserve alpha.  Preserve the pale-blue and white fern-shaped hoarfrost, with no icicles. Absolutely no white sheet, rime veil or milky fill in the opening.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-96e6bc6c-8d87-4a7e-9bd2-7a94dc9e35d9.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-633369a4-cbfa-401d-879f-b17c8919e6ab.png",
+      "revision": 1,
+      "revision_prompt": null,
+      "validation": {
+        "width": 1536,
+        "height": 1024,
+        "format": "RGBA PNG",
+        "sha256": "050180be185a2f3fb6aa693c665592c25c7f64367529f28f0a30ab2d5eca3c51",
+        "bytes": 1451808,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_fraction": 0.804393,
+        "center_pixel_alpha": 0,
+        "central_60_percent_area": {
+          "clear_fraction": 0.999999,
+          "mean_alpha": 0.014968
+        },
+        "central_60_percent_each_dimension": {
+          "clear_fraction": 0.999998,
+          "mean_alpha": 0.018629
+        }
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "filename": "ui-tile-frost.png",
+      "revision": 2,
+      "prompt": "Use case: background-extraction. Correct ONLY the transparency in the FIRST attached painted frost UI tile asset. Preserve the exact existing four-corner hoarfrost and fine ice crystals, their pale blue and white colors, delicate fern-like brushwork, rectangular arrangement and 1536 x 1024 canvas. Remove ALL white solid fill and milky haze across the interior. The central 70% must be entirely clear transparent alpha=0 with nothing painted on it. Keep only the actual frost crystals and a few semi-transparent fine crystal branches near the perimeter. Also remove the white backdrop outside the crystals. This is a CUT-OUT overlay to lay over a linen map and a unit painting; neither background may be obscured. Genuine alpha transparency, NOT white or gray or checkerboard. The SECOND attached linen image is reference only for what will show through; NEVER paint the linen or any wood/tacks. No additional embellishment, snowdrifts, icicles, broad glow, text or symbols.",
+      "referenced_image_paths": [
+        "/Users/dpuser/.codex/generated_images/01a1becc-4eb4-7600-bdf5-1c8de23aaf99/exec-b76b9f59-1619-4e4b-83c7-11f94b8ed7ce.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ]
+    },
+    {
+      "filename": "ui-tile-emblems.png",
+      "revision": 2,
+      "prompt": "Use case: precise-object-edit. Correct ONLY the spacing and scale of this existing seven-emblem transparent sprite sheet. Keep the same seven designs, exact order, colors and hand-painted materials. Canvas exactly 1536 x 1024 landscape. It will be cut into SEVEN EQUAL VERTICAL COLUMNS, so no part of any icon may enter a neighboring column. Place their horizontal CENTERS at x=109,329,548,768,987,1207,1426, all vertically centered at y=512. Shrink each complete icon to fit a box NO MORE THAN 140 pixels wide and 210 pixels tall. Place ALL nontransparent pixels for each icon within its own centered box, including antialiased tips, spark ends, flame tips and blue-thread tails. Keep at least 38 pixels of entirely transparent space to either side within each column. No aura or glow haze outside the silhouettes. Preserve EXACTLY these seven, one per column left to right: orange flame and coal; six-armed white pale-blue ice crystal; curved bramble with three sharp thorns; black-violet curled leaf; short ivory candle with small gold flame; dark iron pin with blue thread; violet-white zigzag spark. NO labels, numbers, guides, column dividers, boxes or new objects. Entire background genuine transparent alpha=0. Do not paint a checkerboard or linen. This is a careful sprite spacing correction, not a redesign.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-tile-emblems.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ]
+    }
+  ],
+  "revision_reference_note": "The emblem revision used the previous project file; that exact prior input is preserved at /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ui-effects-2026-11-10/ui-tile-emblems-spacing-v1.png.",
+  "integration_commit": "cd5b7d4dbdcb04a9d5c4989df1b685537b764e33",
+  "integration_build_script": "../build-ui.swift"
+}
