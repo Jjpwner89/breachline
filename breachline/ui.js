@@ -275,14 +275,15 @@
     var costHtml = isLand ? '' : '<span class="cost" title="' + wantsText + '" aria-label="Costs ' + cost + ', ' + wantsText.toLowerCase() + '">' +
       '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
     var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
-    var foot = c.type === 'unit' ? '<span class="foot"><span class="stat"><span>Attack</span><strong>' + c.atk + '</strong></span><span class="stat hp"><span>Health</span><strong>' + c.hp + '</strong></span></span>' : '';
+    var type = '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>';
+    // A unit's type line goes between its plaques, so the rules text gets that line back.
+    var foot = c.type === 'unit' ? '<span class="foot"><span class="stat"><span>Attack</span><strong>' + c.atk + '</strong></span>' + type + '<span class="stat hp"><span>Health</span><strong>' + c.hp + '</strong></span></span>' : '';
     var fl = FLAVOUR[c.id];
     if (fl) body += '<span class="flavour">' + fl.line + (fl.credit ? '<span class="credit">' + fl.credit + '</span>' : '') + '</span>';
     return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
       '<span class="bar-top">' + c.name + '</span>' +
       '<span class="art">' + (noArt[c.id] ? '' : '<img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false">') + '</span>' +
-      '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>' +
-      '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
+      (foot ? '' : type) + '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
   }
 
   function cardHtml(i, moves) {
@@ -295,12 +296,15 @@
       frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</span></button>';
   }
 
-  // Small cards have little room, so a line that doesn't fit is left for the close-up, and rules text that still doesn't fit gets smaller.
+  // Small cards have little room, so a line that doesn't fit is left for the close-up. Rules text that still doesn't fit gets smaller,
+  // then the name, then the rules text once more. The art is never cropped.
   function fitCards(host) {
     Array.prototype.forEach.call(host.querySelectorAll('.ctext'), function (t) {
-      var f = t.querySelector('.flavour');
-      if (f && t.scrollHeight > t.clientHeight) t.removeChild(f);
-      if (t.scrollHeight > t.clientHeight) t.classList.add('tight');
+      var over = function () { return t.scrollHeight > t.clientHeight; }, f = t.querySelector('.flavour');
+      if (f && over()) t.removeChild(f);
+      if (over()) t.classList.add('tight');
+      if (over()) t.parentNode.querySelector('.bar-top').classList.add('long');
+      if (over()) t.classList.add('tighter');
     });
   }
 
@@ -496,7 +500,58 @@
     floats();
   }
 
+  // Which other tiles a spell aimed at (r, c) reaches, as the engine's castAt resolves it.
+  var STEPS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+  function reachOf(card, pi, r, c) {
+    var a = card.aim, out = [];
+    if (a.wave) {
+      for (var wr = r + (pi === 0 ? -1 : 1); wr >= 0 && wr < E.ROWS; wr += pi === 0 ? -1 : 1) out.push([wr, c]);
+      return out;
+    }
+    if (!a.spread && !a.splash) return out;
+    STEPS.forEach(function (d) {
+      var rr = r + d[0], cc = c + d[1];
+      if (rr < 0 || cc < 0 || rr >= E.ROWS || cc >= E.COLS) return;
+      var u = S.units.filter(function (x) { return x.r === rr && x.c === cc; })[0];
+      if (a.spread || (u && (a.splashAll || u.owner !== pi))) out.push([rr, cc]);
+    });
+    return out;
+  }
+  function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
+
+  // A spell aimed at a tile plays its animation first, then the move resolves and the board redraws.
+  var casting = false;
   function apply(m) {
+    if (casting) return;
+    var who = actor(), inHand = m.type === 'cast' && m.r !== undefined && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    var spell = inHand && E.CARDS[inHand.c];
+    if (spell && spell.aim && spell.aim.tile && SpellFX.enabled()) {
+      var from = who === HUMAN ? document.querySelector('#hand .card[data-card="' + m.card + '"]') : $('themStrip');
+      var reach = reachOf(spell, who, m.r, m.c);
+      if (who === BOT) announce(m);
+      var before = S;
+      casting = true;
+      sel = null;
+      SpellFX.unaim(true);
+      showReach();
+      if (from && from.classList.contains('card')) from.classList.add('casting');
+      SpellFX.cast({
+        kind: spell.aim.tile, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, shake: document.querySelector('.board'),
+        reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
+        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
+      }).then(function () {
+        casting = false;
+        // A new game started while the spell was in the air: drop this move.
+        if (S !== before) return;
+        resolve(m);
+        [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
+      });
+      return;
+    }
+    if (who === BOT) announce(m);
+    resolve(m);
+  }
+  function announce(m) {
     if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'bottomCard') {
       var played = S.players[BOT].hand.filter(function (i) { return i.id === m.card; })[0];
       if (played) {
@@ -505,6 +560,8 @@
         revealPeek(2200);
       }
     }
+  }
+  function resolve(m) {
     if (m.type === 'summon' || m.type === 'move' || m.r !== undefined) flash = [m.r, m.c]; else flash = null;
     S = E.applyMove(S, m);
     if (chapterBattle) {
@@ -660,36 +717,38 @@
     if (sel) { sel = null; render(); }
   }
 
-  // Aiming at a tile draws an arrow from the card, or from the unit using its ability, to the tile under the pointer.
-  var arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  arrow.id = 'aimArrow';
-  arrow.innerHTML = '<defs><marker id="aimHead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f3dc9a"/></marker></defs><line marker-end="url(#aimHead)"/>';
-  arrow.style.display = 'none';
-  document.body.appendChild(arrow);
+  // Aiming at a tile draws an arrow from the card, or from the unit using its ability, to the tile under the pointer,
+  // and marks the other tiles the spell would reach from there.
   function aimFrom() {
     if (!sel) return null;
     if (sel.kind === 'card' && cardOf(sel.id).aim) return document.querySelector('#hand .card[data-card="' + sel.id + '"]');
     var u = sel.kind === 'unit' && sel.ability ? unitById(sel.id) : null;
     return u ? document.querySelector('.tile[data-r="' + u.r + '"][data-c="' + u.c + '"]') : null;
   }
+  function showReach(r, c) {
+    Array.prototype.forEach.call(document.querySelectorAll('#grid .t-reach'), function (t) { t.classList.remove('t-reach'); });
+    var card = sel && sel.kind === 'card' ? cardOf(sel.id) : null;
+    if (r === undefined || !card || !card.aim) return;
+    reachOf(card, HUMAN, r, c).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t) t.classList.add('t-reach'); });
+  }
   $('grid').addEventListener('mouseover', function (e) {
+    if (casting) return;
     var t = e.target.closest('.tile'), from = t && t.classList.contains('t-aim') ? aimFrom() : null;
-    if (!from) { arrow.style.display = 'none'; return; }
-    var a = from.getBoundingClientRect(), b = t.getBoundingClientRect(), line = arrow.querySelector('line');
-    line.setAttribute('x1', a.left + a.width / 2); line.setAttribute('y1', a.top + (from.classList.contains('card') ? 0 : a.height / 2));
-    line.setAttribute('x2', b.left + b.width / 2); line.setAttribute('y2', b.top + b.height / 2);
-    arrow.style.display = '';
+    if (!from) { SpellFX.unaim(); showReach(); return; }
+    SpellFX.aim(from, t);
+    showReach(+t.dataset.r, +t.dataset.c);
   });
-  $('grid').addEventListener('mouseleave', function () { arrow.style.display = 'none'; });
+  $('grid').addEventListener('mouseleave', function () { SpellFX.unaim(); showReach(); });
 
   $('grid').addEventListener('click', function (e) {
     var t = e.target.closest('.tile');
-    arrow.style.display = 'none';
+    if (casting) return;
+    SpellFX.unaim(true);
     if (t) clickTile(t);
   });
   $('hand').addEventListener('click', function (e) {
     var t = e.target.closest('.card');
-    if (!t || S.winner !== null || actor() !== HUMAN || S.pending) return;
+    if (!t || casting || S.winner !== null || actor() !== HUMAN || S.pending) return;
     var id = +t.dataset.card;
     if (S.phase === 'opening' || S.players[HUMAN].toBottom) {
       var bottom = humanMoves().filter(function (m) { return m.type === 'bottomCard' && m.card === id; })[0];

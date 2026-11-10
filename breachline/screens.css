@@ -82,6 +82,19 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .ebody { flex: 1; min-height: 0; display: grid; grid-template-columns: 250px minmax(0, 1fr) 310px; gap: 14px; }
 .closeup { overflow-y: auto; min-width: 0; }
 .closeup .slot { container-type: inline-size; margin-bottom: 6px; }
+.closeup .slot.viewable { cursor: zoom-in; }
+.closeup .artbtn { display: block; margin: 2px auto 6px; }
+/* Full painting view from the deck builder. */
+.artview { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 20px 16px; background: rgba(8, 6, 3, .94); cursor: zoom-out; animation: art-in .22s ease-out; }
+.artview[hidden] { display: none; }
+.artview figure { margin: 0; width: 100%; display: flex; flex-direction: column; align-items: center; }
+.artview img { display: block; width: min(100%, 1400px, calc((100dvh - 150px) * 1.5)); height: auto; border-radius: 3px; box-shadow: 0 0 0 1px rgba(208, 164, 72, .5), 0 18px 50px rgba(0, 0, 0, .8); animation: art-zoom .32s cubic-bezier(.2, .9, .3, 1); }
+.artview figcaption { margin-top: 12px; text-align: center; }
+.artview figcaption b { display: block; font: 700 24px/1.1 var(--display); color: var(--gold-pale); }
+.artview figcaption span { font-size: 14px; color: var(--muted); }
+@keyframes art-in { from { opacity: 0; } }
+@keyframes art-zoom { from { transform: scale(.86); opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .artview, .artview img { animation: none; } }
 .cards { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .filters { flex: none; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
 .filters summary { cursor: pointer; display: flex; align-items: center; gap: 12px; min-height: 26px; font: 500 17px var(--display); }

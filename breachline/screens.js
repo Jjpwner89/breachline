@@ -421,8 +421,34 @@ var Screens = (function () {
     if (!id || ed.peek === id) return;
     ed.peek = id;
     var c = E.CARDS[id], f = E.FACTIONS.filter(function (x) { return x.id === c.faction; })[0];
-    byId('closeup').innerHTML = '<div class="slot">' + GameUI.frameHtml(c, { big: true }) + '</div><p class="hint">' + (f ? f.name : 'No faction') + '</p>';
+    var art = GameUI.artUrl(id) ? ' ' + act('viewArt', id) : '';
+    byId('closeup').innerHTML = '<div class="slot' + (art ? ' viewable' : '') + '"' + art + ' title="' + (art ? 'View the full painting' : '') + '">' + GameUI.frameHtml(c, { big: true }) + '</div>' +
+      (art ? '<button type="button" class="btn artbtn"' + art + '>View full art</button>' : '') +
+      '<p class="hint">' + (f ? f.name : 'No faction') + '</p>';
   }
+
+  // The full painting, large, over everything. It shows the game's copy at once, then the full-size original if this copy of the game has it.
+  actions.viewArt = function (id) {
+    var c = E.CARDS[id], src = GameUI.artUrl(id);
+    if (!src) return;
+    var v = byId('artView');
+    if (!v) { v = document.createElement('div'); v.id = 'artView'; v.className = 'artview'; root.appendChild(v); }
+    v.setAttribute('data-act', 'closeArt');
+    v.innerHTML = '<figure><img src="' + src + '" alt="' + esc(c.name) + ' artwork"><figcaption><b>' + esc(c.name) + '</b><span>' +
+      (c.equipment ? 'Equipment' : GameUI.TYPES[c.type]) + (c.sub ? ', ' + esc(c.sub) : '') + ' · ' + GameUI.ALIGNMENT[c.colour] + '</span></figcaption></figure>' +
+      '<button type="button" class="btn" ' + act('closeArt') + '>Close</button>';
+    v.hidden = false;
+    // Finished card art sits in art/, earlier concept paintings in art/concepts/.
+    var img = v.querySelector('img'), name = src.replace('art/web/', '').replace(/\.jpg$/, '.png');
+    (function tryFull(dirs) {
+      if (!dirs.length) return;
+      var full = new Image();
+      full.onload = function () { if (img.isConnected) img.src = full.src; };
+      full.onerror = function () { tryFull(dirs.slice(1)); };
+      full.src = dirs[0] + name;
+    })(['art/', 'art/concepts/']);
+  };
+  actions.closeArt = function () { var v = byId('artView'); if (v) v.hidden = true; };
 
   actions.filter = function (arg) {
     var at = arg.indexOf(':'), group = arg.slice(0, at), key = arg.slice(at + 1);
@@ -484,7 +510,10 @@ var Screens = (function () {
     });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && byId('closeup')) actions.closeZoom();
+    if (e.key !== 'Escape') return;
+    var v = byId('artView');
+    if (v && !v.hidden) actions.closeArt();
+    else if (byId('closeup')) actions.closeZoom();
   });
 
   function redraw() { if (refresh && !root.hidden) refresh(); }
