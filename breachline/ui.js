@@ -112,6 +112,10 @@
     im.src = artSrc(id);
     return im;
   });
+  // The tile effect paintings too, so a new effect shows at once rather than a frame later.
+  Object.keys(TILE_NAMES).forEach(function (k) {
+    ['tile-', 'border-', 'emblem-'].forEach(function (p) { var im = new Image(); im.src = 'art/web/ui/' + p + k + '.png'; preloaded.push(im); });
+  });
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -184,7 +188,7 @@
       var left = fx.until - S.turn + 1;
       cls.push('fx', 'fx-' + fx.kind);
       fxText = TILE_NAMES[fx.kind] + ', ' + left + ' turn' + (left === 1 ? '' : 's') + ' left';
-      inner += '<span class="tfx" title="' + fxText + '">' + TILE_NAMES[fx.kind] + ' <b>' + left + '</b></span>';
+      inner += '<span class="tfx" title="' + fxText + '"><i></i><b>' + left + '</b></span>';
     }
     if (sel && sel.picks && sel.picks.some(function (p) { return p[0] === r && p[1] === c; })) cls.push('t-picked');
     if (sel && sel.summonAt && sel.picks && sel.summonAt.r === r && sel.summonAt.c === c) cls.push('t-picked');

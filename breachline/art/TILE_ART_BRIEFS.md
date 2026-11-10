@@ -1,11 +1,11 @@
 # Breachline tile effect art briefs
 
-8 images for the tile effects, written on 2026-11-10. **Status: briefs only, nothing has been generated.** The rules for tile effects are in the "Tile effects" entry of `../DESIGN_NOTES.md`. Until the paintings arrive, the board shows each effect as a flat tint with a text label. Like the [UI briefs](UI_ART_BRIEFS.md), these are materials for the interface, not card art, so card rules about subjects, poses and stories don't apply.
+8 images for the tile effects, written on 2026-11-10. **Status: all 8 briefed source PNGs generated on 2026-11-10, plus 7 affected-unit border companions requested by the creator, and all 15 built into the game; waiting for the creator's review.** See [the review gallery](ui/TILE_GALLERY.html), [file list and handoff](ui/TILE_README.txt), and [prompts and manifest](ui/TILE_ASSET_MANIFEST.json). To replace one, save the new painting under the same name and run `swift art/build-ui.swift`. The rules for tile effects are in the "Tile effects" entry of `../DESIGN_NOTES.md`. Like the [UI briefs](UI_ART_BRIEFS.md), these are materials for the interface, not card art, so card rules about subjects, poses and stories don't apply.
 
 ## How the game uses them
 
 - Each tile is a square of the linen war map, about 3:2 and roughly 145 x 95 pixels on a laptop, smaller on a phone.
-- Each effect painting does two jobs. On an empty tile the whole image shows. When a unit stands on the tile, its card painting covers the middle and only the outer band of the effect shows, as a border round the card. So the effect has to live mostly in a band round the edges, with the middle nearly clear.
+- On an empty tile the whole effect painting shows. When a unit stands on the tile, its card painting covers the middle and the matching unit border (below) frames it, with a thin line in the effect's colour inside the owner's gold or crimson edge. So the effect has to live mostly in a band round the edges, with the middle nearly clear.
 - The game adds the glow, the motion (flicker, glint, crackle), shadows and the turns-left counter in code, so the paintings carry none of these.
 - The counter shows a small emblem from the emblem sheet with the turns left, at about 20 pixels, so the emblems must read at a tiny size.
 
@@ -132,3 +132,17 @@ No discs, frames, badges or background behind them.
 ```
 
 The order matters: Claude cuts the sheet into seven equal columns in this order.
+
+## Affected-unit border companions — 2026-11-10
+
+The creator additionally requested card borders for affected units. Seven narrow transparent overlays were generated for the current landscape board cards at 1536 x 1024. They match the tile effects while leaving the middle clear. These are source art for review; implementation should follow the existing ownership and immunity rules.
+
+| Effect | Border file |
+|---|---|
+| Burning | `ui-unit-border-burn.png` |
+| Frozen | `ui-unit-border-frost.png` |
+| Thorns | `ui-unit-border-thorns.png` |
+| Blighted | `ui-unit-border-blight.png` |
+| Consecrated | `ui-unit-border-holy.png` |
+| Snare | `ui-unit-border-snare.png` |
+| Charged | `ui-unit-border-charge.png` |
