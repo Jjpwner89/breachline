@@ -69,6 +69,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
   - Summoning a unit onto a tile doesn't trigger it. The unit is affected if it starts its owner's turn there.
   - A snare stops the first enemy to enter it, and it can't move on its next turn. Thorns and snares also block walking through. Fliers ignore both.
   - Spells aimed at a tile hit a Veiled unit standing there, since they target the tile, not the unit.
+  - Art: each effect has a painting for an empty tile, a narrower border round a unit's card, and a counter emblem with the turns left. Briefs are in `art/TILE_ART_BRIEFS.md`; Codex painted them on 2026-11-10 and they're in the game, waiting for the creator's review.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
 - **Equipment:** an enchantment that is an object. Equipment can also give its bearer a keyword, as the Redglass falchion gives Hunt. Armed units get +1 / +1 while they carry any equipment. Built on 2026-11-10.

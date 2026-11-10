@@ -1,0 +1,421 @@
+{
+  "date": "2026-11-10",
+  "asset_count": 15,
+  "tiles": 7,
+  "unit_borders": 7,
+  "emblem_sheets": 1,
+  "missing": [],
+  "checks": [
+    "PNG chunk checksums valid",
+    "All 15 are 1536 x 1024 RGBA",
+    "Copies match generated originals",
+    "All have fully transparent pixels",
+    "All 14 effect overlays have transparent center pixels and over 99.5% near-clear inner core",
+    "Seven occupied emblem columns in the specified order",
+    "All artwork visually inspected during generation; frost transparency corrected",
+    "Final emblem silhouettes have at least 8 source pixels of clear margin inside every equal-width column"
+  ],
+  "assets": [
+    {
+      "filename": "ui-tile-burn.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "03bc18ae67045f685b56e8397eafe861dc5faf3019438e6163cf6d1967be3f9a",
+      "bytes": 1696713,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.543477,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.977319,
+        "mean_alpha": 1.311815
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999996,
+        "mean_alpha": 0.06438
+      }
+    },
+    {
+      "filename": "ui-tile-frost.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "62a744e3e466f622e55991cb9db7de1068d6dcc5f02d319d6d549d52cb99f5e8",
+      "bytes": 1960254,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.624132,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.953365,
+        "mean_alpha": 2.461259
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999929,
+        "mean_alpha": 0.030624
+      }
+    },
+    {
+      "filename": "ui-tile-thorns.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "ea459083d825a446b5d137346cd61edf2f5cd0ac08582992adcad9357198f18b",
+      "bytes": 1829806,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.492194,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.962792,
+        "mean_alpha": 1.034226
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999942,
+        "mean_alpha": 0.046415
+      }
+    },
+    {
+      "filename": "ui-tile-blight.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "08f7e40adc3297db48553a75f7182df1bb09f42d94d234a00315cf2cda5dbbb7",
+      "bytes": 1652677,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.708694,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.978213,
+        "mean_alpha": 1.41014
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.007353
+      }
+    },
+    {
+      "filename": "ui-tile-holy.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "ecf948d34bccc14f9ec7cde2707b888fcc4f2dc1cd4ac3a154dcfe3117ec8406",
+      "bytes": 1664686,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.588924,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.968693,
+        "mean_alpha": 0.589012
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999998,
+        "mean_alpha": 0.050315
+      }
+    },
+    {
+      "filename": "ui-tile-snare.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "fccb165bffaa9bcc705589288a6616b548cb24ed67ef319d3874752a3eb5d82a",
+      "bytes": 1370094,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.461687,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.996256,
+        "mean_alpha": 0.312564
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999755,
+        "mean_alpha": 0.163514
+      }
+    },
+    {
+      "filename": "ui-tile-charge.png",
+      "variant": "tile",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "91bf1d513d5277ae51276fdef3e30e7b032f9af153a711628f4b6e491e83b946",
+      "bytes": 1649624,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.638611,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.978734,
+        "mean_alpha": 0.648293
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.996607,
+        "mean_alpha": 0.103188
+      }
+    },
+    {
+      "filename": "ui-tile-emblems.png",
+      "variant": "emblems",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "60ec9737bbf7d34706466ee03861bea6c3881b17f14eb98e34b5114883c0a269",
+      "bytes": 1098389,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.931391,
+      "center_pixel_alpha": 253,
+      "central_60_percent_area": {
+        "clear_fraction": 0.923782,
+        "mean_alpha": 15.523809
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.890826,
+        "mean_alpha": 23.125548
+      },
+      "emblem_columns": [
+        {
+          "kind": "burn",
+          "column": 0,
+          "cell_x": 0,
+          "cell_width": 219,
+          "content_bounds_alpha_gt_8": {
+            "x": 88,
+            "y": 379,
+            "width": 95,
+            "height": 244
+          }
+        },
+        {
+          "kind": "frost",
+          "column": 1,
+          "cell_x": 219,
+          "cell_width": 219,
+          "content_bounds_alpha_gt_8": {
+            "x": 262,
+            "y": 418,
+            "width": 165,
+            "height": 195
+          }
+        },
+        {
+          "kind": "thorns",
+          "column": 2,
+          "cell_x": 438,
+          "cell_width": 220,
+          "content_bounds_alpha_gt_8": {
+            "x": 496,
+            "y": 421,
+            "width": 133,
+            "height": 199
+          }
+        },
+        {
+          "kind": "blight",
+          "column": 3,
+          "cell_x": 658,
+          "cell_width": 219,
+          "content_bounds_alpha_gt_8": {
+            "x": 692,
+            "y": 423,
+            "width": 139,
+            "height": 198
+          }
+        },
+        {
+          "kind": "holy",
+          "column": 4,
+          "cell_x": 877,
+          "cell_width": 220,
+          "content_bounds_alpha_gt_8": {
+            "x": 925,
+            "y": 408,
+            "width": 102,
+            "height": 212
+          }
+        },
+        {
+          "kind": "snare",
+          "column": 5,
+          "cell_x": 1097,
+          "cell_width": 219,
+          "content_bounds_alpha_gt_8": {
+            "x": 1140,
+            "y": 420,
+            "width": 122,
+            "height": 201
+          }
+        },
+        {
+          "kind": "charge",
+          "column": 6,
+          "cell_x": 1316,
+          "cell_width": 220,
+          "content_bounds_alpha_gt_8": {
+            "x": 1334,
+            "y": 405,
+            "width": 141,
+            "height": 227
+          }
+        }
+      ]
+    },
+    {
+      "filename": "ui-unit-border-burn.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "9a3da8b84ac9886c71954262af4085942e79f8d68931b8c9d51338403dce17ee",
+      "bytes": 1218239,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.916684,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.001447
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.001665
+      }
+    },
+    {
+      "filename": "ui-unit-border-thorns.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "e8c50f675305ac6c691bbd1a99f11dc5c338dc9bfdd99a9aceadf2eebe52c8c2",
+      "bytes": 1312869,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.886909,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.008362
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.003851
+      }
+    },
+    {
+      "filename": "ui-unit-border-blight.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "4bd7637493f93bad4be91c4ae051c949fd0baf4022448f32f8c0cdcdf1856130",
+      "bytes": 1259264,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.891878,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.005865
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.004428
+      }
+    },
+    {
+      "filename": "ui-unit-border-holy.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "04dd8fa47ded4b6730fdd0ced694df3e70c1d49acdbb7d9243343fa790c80583",
+      "bytes": 1207740,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_fraction": 0.924444,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.001196
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.001193
+      }
+    },
+    {
+      "filename": "ui-unit-border-snare.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "9fff6784440ccc2acfd9a36587090567757e32ebb734cf83adb08d546f4ec874",
+      "bytes": 1224366,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.759326,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.030248
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.026931
+      }
+    },
+    {
+      "filename": "ui-unit-border-charge.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "ba54bdfc47ad618fbd33094ee0bb99aa49fce7285c18feb31aaf3f8c69d79132",
+      "bytes": 1313764,
+      "alpha_min": 0,
+      "alpha_max": 252,
+      "fully_transparent_fraction": 0.825696,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.999998,
+        "mean_alpha": 0.007212
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 1.0,
+        "mean_alpha": 0.00083
+      }
+    },
+    {
+      "filename": "ui-unit-border-frost.png",
+      "variant": "unit-border",
+      "width": 1536,
+      "height": 1024,
+      "format": "RGBA PNG",
+      "sha256": "050180be185a2f3fb6aa693c665592c25c7f64367529f28f0a30ab2d5eca3c51",
+      "bytes": 1451808,
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "fully_transparent_fraction": 0.804393,
+      "center_pixel_alpha": 0,
+      "central_60_percent_area": {
+        "clear_fraction": 0.999999,
+        "mean_alpha": 0.014968
+      },
+      "central_60_percent_each_dimension": {
+        "clear_fraction": 0.999998,
+        "mean_alpha": 0.018629
+      }
+    }
+  ]
+}

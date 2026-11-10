@@ -696,6 +696,14 @@ var Engine = (function () {
     });
   }
   function addToHand(s, pi, id) { s.players[pi].hand.push({ id: s.nextId++, c: id, conjured: true }); }
+  // For the test table: a unit placed straight onto the board, ready to act this turn. It vanishes when it dies, like a summon.
+  function placeUnit(s, pi, id, r, c) {
+    var nu = newUnit(s, null, id, pi, r, c);
+    nu.conjured = true;
+    nu.summonedTurn = s.turn - 1;
+    s.units.push(nu);
+    return nu;
+  }
 
   // Raised units land on the free back-row tile nearest the centre.
   function backTile(s, pi) {
@@ -1266,7 +1274,8 @@ var Engine = (function () {
     ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
     DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
-    tileAt: tileAt, attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw
+    tileAt: tileAt, attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw,
+    placeUnit: placeUnit
   };
 })();
 if (typeof module !== 'undefined') module.exports = Engine;

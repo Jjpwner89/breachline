@@ -120,17 +120,26 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .tile.t-move, .tile.t-summon { background: rgba(39, 96, 58, .3); border: 2px dashed var(--good-deep); cursor: pointer; }
 .tile.t-move:hover, .tile.t-summon:hover { background: rgba(39, 96, 58, .55); }
 .tile.t-move::after, .tile.t-summon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 15px; height: 15px; transform: translate(-50%, -50%) rotate(45deg); background: var(--good-deep); }
-/* Tile effects: a tint over the tile and a small label with the turns left. */
-.tile.fx::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-.tile.fx-burn::before { background: radial-gradient(ellipse at 50% 100%, rgba(255, 120, 30, .55), rgba(160, 40, 10, .2) 70%); }
-.tile.fx-charge::before { background: radial-gradient(circle, rgba(170, 120, 255, .45), rgba(80, 40, 160, .12) 70%); }
-.tile.fx-frost::before { background: linear-gradient(160deg, rgba(220, 240, 255, .55), rgba(120, 170, 220, .25)); }
-.tile.fx-thorns::before { background: repeating-linear-gradient(45deg, rgba(30, 60, 20, .45) 0 4px, transparent 4px 10px), repeating-linear-gradient(-45deg, rgba(30, 60, 20, .45) 0 4px, transparent 4px 10px); }
-.tile.fx-snare::before { inset: 14%; border: 2px dashed rgba(190, 150, 255, .9); border-radius: 50%; }
-.tile.fx-blight::before { background: radial-gradient(circle, rgba(60, 40, 70, .55), rgba(110, 100, 110, .3)); }
-.tile.fx-holy::before { background: radial-gradient(circle, rgba(255, 220, 120, .5), rgba(255, 220, 120, .1) 70%); }
-.tile .tfx { position: absolute; right: 2px; top: 50%; transform: translateY(-50%); z-index: 1; padding: 0 4px; border-radius: 3px; background: rgba(14, 9, 4, .78); font: 600 11px/1.5 var(--display); white-space: nowrap; pointer-events: none; }
-.tile.own .tfx, .tile.enemy .tfx { top: auto; bottom: 64px; transform: none; }
+/* Tile effects: a painting over an empty tile, a narrower painted border round a unit's card, and a counter with an emblem and the turns left. */
+.tile.fx::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--fx-tile) 0 0 / 100% 100% no-repeat, var(--fx-tint); }
+.tile.fx.own::before, .tile.fx.enemy::before { background: var(--fx-border) 0 0 / 100% 100% no-repeat; box-shadow: inset 0 0 0 2px var(--fx-ring), inset 0 0 14px 2px var(--fx-ring); }
+.tile.fx-burn { --fx-tile: url("art/web/ui/tile-burn.png"); --fx-border: url("art/web/ui/border-burn.png"); --fx-em: url("art/web/ui/emblem-burn.png"); --fx-tint: radial-gradient(ellipse at 50% 100%, rgba(255, 120, 30, .34), rgba(160, 40, 10, .1) 75%); --fx-glow: rgba(255, 130, 40, .5); --fx-ring: rgba(255, 120, 30, .8); }
+.tile.fx-frost { --fx-tile: url("art/web/ui/tile-frost.png"); --fx-border: url("art/web/ui/border-frost.png"); --fx-em: url("art/web/ui/emblem-frost.png"); --fx-tint: linear-gradient(160deg, rgba(225, 242, 255, .38), rgba(120, 170, 220, .16)); --fx-ring: rgba(200, 232, 255, .85); }
+.tile.fx-thorns { --fx-tile: url("art/web/ui/tile-thorns.png"); --fx-border: url("art/web/ui/border-thorns.png"); --fx-em: url("art/web/ui/emblem-thorns.png"); --fx-tint: radial-gradient(circle, rgba(40, 70, 25, .16), rgba(40, 70, 25, .34)); --fx-ring: rgba(80, 120, 45, .85); }
+.tile.fx-blight { --fx-tile: url("art/web/ui/tile-blight.png"); --fx-border: url("art/web/ui/border-blight.png"); --fx-em: url("art/web/ui/emblem-blight.png"); --fx-tint: radial-gradient(circle, rgba(60, 40, 70, .26), rgba(60, 40, 70, .42)); --fx-ring: rgba(120, 80, 140, .85); }
+.tile.fx-holy { --fx-tile: url("art/web/ui/tile-holy.png"); --fx-border: url("art/web/ui/border-holy.png"); --fx-em: url("art/web/ui/emblem-holy.png"); --fx-tint: radial-gradient(circle, rgba(255, 228, 150, .4), rgba(255, 228, 150, .12) 75%); --fx-glow: rgba(255, 220, 140, .45); --fx-ring: rgba(255, 222, 140, .85); }
+.tile.fx-snare { --fx-tile: url("art/web/ui/tile-snare.png"); --fx-border: url("art/web/ui/border-snare.png"); --fx-em: url("art/web/ui/emblem-snare.png"); --fx-tint: radial-gradient(circle, rgba(150, 200, 255, .14), rgba(150, 200, 255, .06) 75%); --fx-glow: rgba(150, 200, 255, .5); --fx-ring: rgba(150, 200, 255, .85); }
+.tile.fx-charge { --fx-tile: url("art/web/ui/tile-charge.png"); --fx-border: url("art/web/ui/border-charge.png"); --fx-em: url("art/web/ui/emblem-charge.png"); --fx-tint: radial-gradient(circle, rgba(170, 120, 255, .3), rgba(80, 40, 160, .1) 75%); --fx-ring: rgba(185, 140, 255, .85); }
+.tile.fx-burn::before { animation: smoulder 2.6s ease-in-out infinite alternate; }
+.tile.fx-holy::before { animation: breathe-fx 5s ease-in-out infinite alternate; }
+.tile.fx-snare::before { animation: breathe-fx 3.4s ease-in-out infinite alternate; }
+.tile.fx-charge::before { animation: crackle 2.2s linear infinite; }
+@keyframes smoulder { from { filter: brightness(.9); } to { filter: brightness(1.18) saturate(1.2) drop-shadow(0 0 4px var(--fx-glow)); } }
+@keyframes breathe-fx { from { filter: brightness(.95); } to { filter: brightness(1.12) drop-shadow(0 0 5px var(--fx-glow)); } }
+@keyframes crackle { 0%, 30%, 34%, 62%, 100% { opacity: 1; filter: none; } 32% { opacity: .55; } 64% { opacity: .75; filter: brightness(1.5); } 66% { opacity: 1; } }
+.tile .tfx { position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); z-index: 1; display: flex; align-items: center; gap: 2px; padding: 1px 7px 1px 4px; border-radius: 10px; background: rgba(14, 9, 4, .8); box-shadow: 0 0 0 1px rgba(208, 164, 72, .45); font: 700 15px/1 var(--display); font-variant-numeric: lining-nums; color: var(--ivory); white-space: nowrap; pointer-events: none; }
+.tile .tfx i { width: 16px; height: 21px; background: var(--fx-em) center / contain no-repeat; filter: drop-shadow(0 0 1px rgba(255, 244, 220, .95)) drop-shadow(0 0 2px rgba(255, 244, 220, .45)); }
+.tile.own .tfx, .tile.enemy .tfx { left: auto; right: 4px; bottom: auto; top: 24px; transform: none; }
 .tile.t-aim { z-index: 2; border: 2px dashed var(--gold-pale); cursor: crosshair; }
 .tile.t-aim:hover { box-shadow: 0 0 0 2px var(--gold-pale), 0 0 16px var(--gold-pale); }
 .tile.t-picked { box-shadow: 0 0 0 3px var(--good-deep), 0 0 14px var(--good-deep); }
@@ -244,6 +253,16 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .speech[hidden] { display: none; }
 .btn[hidden] { display: none; }
 .drawer.debug { width: min(560px, calc(100% - 24px)); }
+/* The test table's card picker. */
+.drawer.test { width: min(600px, calc(100% - 24px)); gap: 8px; }
+.tnote { margin: 0; font-size: 13.5px; line-height: 1.3; color: var(--muted); }
+#testMsg { min-height: 1.3em; color: var(--gold-pale); }
+.ttools { display: flex; flex-wrap: wrap; gap: 6px; }
+.tside { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; color: var(--ink); }
+#testSearch { width: 100%; padding: 6px 10px; border: 1px solid var(--edge); border-radius: 4px; background: #120c06; color: var(--ink); font: inherit; }
+.tcards { flex: 1; min-height: 0; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; align-content: start; padding: 2px 2px 8px; }
+.tcards .card { display: block; container-type: inline-size; padding: 0; border: 0; background: none; cursor: copy; }
+.tcards .card:hover, .tcards .card:focus-visible { filter: brightness(1.12); outline: 2px solid var(--gold-pale); outline-offset: 1px; }
 #debugSum { flex: none; margin: 4px 0 8px; font-size: 13px; line-height: 1.3; color: var(--muted); }
 #debugLog { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; line-height: 1.3; }
 .dbg { flex: none; padding: 7px 9px; background: rgba(12, 8, 4, .5); border: 1px solid var(--edge); border-radius: 4px; }
@@ -353,6 +372,8 @@ dialog .btns { justify-content: flex-start; }
   #actions { flex: 1 1 100%; flex-wrap: wrap; }
   .prompt { flex: 1 1 200px; }
   .prompt .ticker { white-space: normal; }
+  .btns { flex: 1 1 100%; justify-content: flex-start; }
+  .btn.big { padding: 8px 18px; font-size: 19px; }
   .tray { height: auto; flex-direction: column; gap: 8px; padding-top: 8px; }
   #youStrip { width: auto; }
   #youStrip .who { flex: 1 1 auto; }
@@ -375,7 +396,7 @@ dialog .btns { justify-content: flex-start; }
   .plate .float { left: 50%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .tile.flash, .hit, .float, .plate.target, .tile.t-threat, #turnBanner { animation: none; }
+  .tile.flash, .hit, .float, .plate.target, .tile.t-threat, #turnBanner, .tile.fx::before { animation: none; }
   #turnBanner { display: none; }
   .cslot, .card:hover .cslot, .card:focus-visible .cslot, .deck, .drawer, .inspect, .inspect.show { transition: none; }
 }
@@ -414,6 +435,7 @@ dialog .btns { justify-content: flex-start; }
       <button class="btn" id="logBtn" type="button" data-panel="logPanel" aria-expanded="false">Log</button>
       <button class="btn" type="button" data-panel="rulesPanel" aria-expanded="false">Rules</button>
       <button class="btn" id="debugBtn" type="button" data-panel="debugPanel" aria-expanded="false" hidden>Debug</button>
+      <button class="btn" id="testBtn" type="button" data-panel="testPanel" aria-expanded="false" hidden>Cards</button>
       <button class="btn" id="menuBtn" type="button">Menu</button>
     </div>
   </header>
@@ -439,6 +461,19 @@ dialog .btns { justify-content: flex-start; }
       <h2>Debug</h2>
       <p id="debugSum"></p>
       <div id="debugLog"></div>
+    </aside>
+    <aside class="drawer test" id="testPanel" aria-label="Test table">
+      <h2>Test table</h2>
+      <p class="tnote">Both sides have unlimited mana and nobody plays for you. End your turn to play the other side.</p>
+      <div class="ttools">
+        <button class="btn" type="button" data-test="populate">Populate board</button>
+        <button class="btn" type="button" data-test="clear">Clear board</button>
+        <button class="btn" type="button" data-test="life">Reset life</button>
+      </div>
+      <p class="tnote" id="testMsg" aria-live="polite"></p>
+      <div class="tside"><span>Add cards to</span><span class="steps" id="testSides"></span></div>
+      <input type="search" id="testSearch" placeholder="Search by name, text, type or alignment" aria-label="Search cards">
+      <div class="tcards" id="testCards"></div>
     </aside>
     <div id="turnBanner" aria-hidden="true"></div>
     <div id="result"></div>
