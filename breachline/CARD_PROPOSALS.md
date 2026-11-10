@@ -4,7 +4,7 @@ Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. Th
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-The starter and campaign decks are unchanged, so cards 1 to 103 show up in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
+Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. None of 104 to 188 are built, and most need art. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
 
 ## Rules decided while building
 
@@ -282,3 +282,278 @@ Why each card is the way it is:
 - **Corewright:** the artisan at her bench, not the automaton from the next painting.
 
 Still to do: flavour text. The black-enamel field kit still needs a wearer painted, in a later art discussion. It isn't one of these cards.
+
+## Balance changes, built 2026-11-10
+
+Approved after the 2026-11-10 balance review. Starter decks won between 38% and 73% before these changes, and between 43% and 57% after (2,000 bot games).
+
+| Card or deck | Was | Becomes | Why |
+| --- | --- | --- | --- |
+| Elder Herd bull | 6 / 9 | 6 / 8 | Green won 73% as a starter, and won more than any other colour in random decks |
+| Walking sapling | 1 / 3 | 1 / 2, so it reaches 4 / 8 | Same |
+| Bronze-harness alderkin | 4 / 7 | 4 / 6 | A plain 4-cost unit that won 69% of the games it was played in |
+| Death warrant | 5 mana | 4 mana | Black's weakest card, winning 37% of the games it was played in |
+| Oath of the Sunmane starter | 2 Water carrier, Dawnsails over the harvest | Pride lioness, Pride matriarch, Oath outrider | The starter predated the newer Sunmane cards. White's cards were the strongest in random decks while its starter was the weakest |
+| The Ashen Court starter | 3 Gravebound thrall, 3 Bone harvester, 2 Raise the dead, Sellsword, Across the silence | 2 thrall, 2 harvester, 1 Raise the dead, plus Ashen Court envoy, Porcelain-visored retainer, 2 Indebted squire and Barrow colossus | Black fell to 30% once white improved. Not part of the approved list, so say if you'd rather undo it |
+
+## Proposals from the 2026-11-10 balance review
+
+None of these are built. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 104 | Kindle the line | Cinder Clans | Spell | 4 | 2 |  | Aim at a tile: it and the tiles next to it burn for 2 turns. Each enemy there takes 1 damage. Your units there aren't hurt; they become Lit instead | New: Lit |
+| 105 | Slagheart hulk | None (Fervor) | Unit | 5 | 2 | 4 / 7 | Lit from the moment it's summoned | Small, once Lit exists |
+| 106 | Cinder firebrand | Cinder Clans | Unit | 3 | 1 | 3 / 3 | +2 attack against a unit on a burning tile | Small |
+| 107 | Rimebolt | Lantern Conclave | Spell | 3 | 1 |  | 2 damage to an enemy unit, and it can't move on its next turn | Small |
+| 108 | Conclave rimecaller | Lantern Conclave | Unit | 3 | 1 | 2 / 2 | Ranged. Freeze: the unit it attacks can't move on its next turn | None |
+| 109 | Vow of keeping | Still Flame | Enchantment | 2 | 1 |  | Enchant one of your units: -1 attack. The first time it would die, it's left at 1 health instead, and the vow ends | Small |
+| 110 | Still Flame chaplain | Still Flame | Unit | 3 | 1 | 1 / 4 | Ability: heal an ally within 2 tiles 2 | Small |
+| 111 | Devoted pilgrim | Still Flame | Unit | 2 | 1 | 1 / 3 | Devotion: when it or an adjacent ally recovers health, it permanently gets +1 attack and +1 health | New: Devotion |
+| 112 | Debt Collector's Blade | Ashen Court | Equipment | 2 | 1 |  | Equip one of your units: +1 attack and Drain (heals the bearer for the damage it deals) | None |
+| 113 | Stormglass glaive | Sunmane Oath | Equipment | 3 | 1 |  | Equip one of your units: +1 attack and Resonance (its attacks also hit the enemy directly behind the target) | None, now that Resonance does this |
+| 114 | Ledger of debts | Ashen Court | Spell | 2 | 1 |  | Lose 2 life. Draw two cards | Small |
+| 115 | Name to come: a ribbon glider over the plains | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
+| 116 | Untaught firecaller | Warhorde | Unit | 3 | 1 | 2 / 2 | Ability, instead of attacking: pick a tile within 3 tiles. The fire lands on a random tile among it and the tiles next to it: 3 damage to any unit there, yours included, and the tile burns for 2 turns | Small |
+| 117 | Reedbank forager | Elder Herd | Unit | 2 | 1 | 1 / 3 | Instead of moving or attacking: you may play an extra land this turn | Small |
+
+**Lit**, the new rule behind 104 and 105:
+
+- A Lit unit has Fireproof, given by the spell: burning tiles and explosions don't hurt it. Explosions are fire, so Fireproof units such as the Ember salamander ignore them too.
+- When a Lit unit dies, it explodes: 2 damage to each unit next to it that isn't Lit or Fireproof, yours included. Its tile and the tiles next to it burn for 2 turns.
+- A unit stays Lit until it dies.
+- Your units caught in the spell become Lit and are immune to it. Your other units take the explosions and burns like anyone else. A deck can set the whole board alight without killing its own side, as long as it lights its units first.
+
+Why each card is the way it is:
+
+- **Kindle the line:** your design. It lights your units and burns the area, and the enemies caught in it take a little damage on the way.
+- **Slagheart hulk:** your sturdy fireproof heavy, a body of rock and magma. Fervor's constructs would be elemental, so whether it was made or simply exists is open. It explodes when it finally dies.
+- **Cinder firebrand:** your idea of hitting burning enemies harder, and a reason to burn tiles near the enemy rather than your own side.
+- **Rimebolt:** your damage-and-freeze card. It costs 1 more than Firebolt for the freeze.
+- **Conclave rimecaller:** your ranged freezer. It's fragile, as you said it could be, and uses the Rime drake's Freeze.
+- **Vow of keeping:** your enchantment that protects a unit's life at the cost of attack. Say if you meant something different, such as a large health or damage-reduction bonus.
+- **Still Flame chaplain:** healing at range, so a healer can stand behind the line.
+- **Devoted pilgrim:** your Devotion idea, a unit you build up over the game. Only real health gained counts, so healing a unit already at full health does nothing. The Still Flame counts, so it may need a limit after playtesting. #139 and #140 make Devotion three cards.
+- **Debt Collector's Blade:** the finished painting in `art/CARD_ART_FINAL.json`, whose suggested role was recovering something when damage is dealt. Drain does exactly that.
+- **Stormglass glaive:** the accepted round-10 painting, a polearm whose faction was left unassigned. Vigil has no true equipment yet, and a long blade that reaches the second rank suits the Sunmane Oath and its lancer. It could just as well be Gnosis, for the spark trapped in its blade.
+- **Ledger of debts:** card draw paid for with life, which you liked for Dominion.
+- **The flier:** white's first flier, a new creature unlike anything in the setting so far. Guard keeps it in Vigil's protective role. Three possible looks: a long ribbon-bodied glider with rows of translucent vanes, riding warm air over the grass; a great pale moth-like grazer with soft banded wings; or a kite-shaped animal with one broad wing membrane and long trailing tail streamers. The creator chose the ribbon-bodied glider on 2026-11-10; its name is still to come.
+- **Untaught firecaller:** your random landing spot within an area. Raw power with little training, as the setting describes: the fire goes roughly where it's aimed. Round 11's "More Fire Than Hands" could become its art if you accept that painting.
+- **Reedbank forager:** green's second card for extra lands, a strength the design notes give Genesis. It uses the finished painting with that name in `art/CARD_ART_FINAL.json`.
+
+Still open:
+
+1. **Sacrifice:** the Gravebound deck still wins only about 38%. It needs a different kind of payoff from the ones you turned down.
+2. **Constructs:** these stay ordinary cards, mostly neutral and Gnosis, some Dominion, with Fervor's being elemental. The Slagheart hulk is the first of the elemental kind. A small batch of the others can come next.
+
+## Keywords decided on 2026-11-10
+
+The aim is at least three cards for each keyword that's a core capability. Built in this session unless marked.
+
+| Keyword | What it does now | Cards | Decided |
+| --- | --- | --- | --- |
+| Warband | Adjacent allies get +1 attack | Orc warchief, Cinder-cant drummer, Giant chieftain | Built. The drummer keeps its War-chants, and the chieftain loses Frenzy |
+| Stomp | Its attacks also deal 1 damage to enemies next to the target | Hill giant, Giant chieftain | Built. The alderkin stays plain |
+| Resonance | Its attacks also hit the enemy directly behind the target, for the full attack | Harmonic wardwright, plus #113 Stormglass glaive and #176 Bellframe construct | Rule built. It used to splash 1 damage to every side, like Stomp |
+| Longshot | Attacks up to 3 tiles away if it hasn't moved this turn. Once it moves, melee only | Brass siege-walker, Ilvane, plus #142 Focus-rifle marksman and #150 Shutter-window assassin | Rule built, and Ilvane changed from Ranged |
+| Regrow | Removed as too strong | None | Built. The Mossback bear takes Frenzy instead, the extra Frenzy card you allowed. Say if you'd rather it stayed plain |
+| Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
+| Frenzy | +2 attack while damaged | Cinder berserker, Orc raider, Mossback bear | Built |
+| Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built for the four with it innately. It can also come from a spell, an enchantment (#190) or equipment (#191). No card already in the game gives it, and lightning never does |
+| Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Not built. Only the shadow animal is proposed |
+| Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Not built. No existing card changes. The new ones look armoured or are putting armour on, and Armed isn't tied to a colour |
+| Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Not built. The spell places a decoy that lasts one turn |
+| Errant | The Young summoner's Camp follower appears on a random tile of your back row | Young summoner | Unchanged. It already summons a creature: "land" in the old wording meant where the follower appears |
+| Carrion | Permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3 | Barrow colossus, Porcelain-visored retainer, plus #151 Mortuary priest, #152 Hostess of the late hour and #181 Ossuary engine | Built. It replaces Gathered and Sworn, and you chose the name |
+
+## Proposals: hitting the summoner, area spells, control and stasis
+
+Proposed on 2026-11-10 from your notes, and approved the same day with the changes below. None are built.
+
+- Siphon vigor and Collect the tithe cost 1 more each, and gain life only when they hit the summoner.
+- Bought allegiance can't take a Loyal unit.
+- Borrowed will's painting: someone's eyes filling with what looks like blue flame, cold, small and flickering, wisping into the eyes.
+
+**Rules for this group:**
+- A spell that can hit the summoner is aimed at a unit or at the summoner, and it does less damage per mana than spells that hit only units. Firebolt and Scorch deal 1 damage per mana. These deal about 0.6 to 0.7.
+- Area spells never reach the summoner. Their shapes stay on the grid, so nothing hits over the back row.
+- Area shapes: a square is a tile and the 8 around it, a cross is a tile and the 4 next to it, and a row or a column is a whole line of the grid. Cinderfall, Stormstrike and Frost already cover the cross, and Cinderwake covers a column.
+
+| # | Card | Faction | Type | Cost | Wants | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 118 | Hurled brand | Cinder Clans | Spell | 3 | 1 | 2 damage to a unit or to the enemy summoner |  | New: aiming at the summoner |
+| 119 | The sky falls in | Warhorde | Spell | 6 | 2 | 4 damage to a unit or to the enemy summoner |  | Small, after 118 |
+| 120 | Siphon vigor | Ashen Court | Spell | 4 | 1 | 2 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 2 life | [Card art](art/siphon-vigor.png) | Small, after 118 |
+| 121 | Collect the tithe | Ashen Court | Spell | 6 | 2 | 3 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 3 life |  | Small, after 118 |
+| 122 | Scatter the line | Cinder Clans | Instant | 3 | 1 | On the enemy turn: each enemy in one row takes 1 damage and is pushed 1 tile back toward its side. Row | [Card art](art/scatter-the-line.png) | New: rows |
+| 123 | Pall of ash | Gravebound | Spell | 4 | 2 | Aim at a tile: 1 damage to every unit in the square around it, yours included, and those tiles are blighted for 2 turns. Square | | New: squares |
+| 124 | Harmonic burst | Lantern Conclave | Spell | 3 | 1 | Aim at a tile: 1 damage to every unit there and next to it, and each enemy hit is pushed 1 tile away from the centre. Cross | | Small |
+| 125 | Line of dawn | Still Flame | Spell | 3 | 1 | Aim at a column: each enemy in it takes 1 damage, and each of your units in it recovers 2 health. Column | | Small |
+| 126 | Wildfire | Cinder Clans | Spell | 6 | 2 | Sweeper: 2 damage to every unit, yours included. Fireproof and Lit units are unhurt | | Small |
+| 127 | Hour of collection | Ashen Court | Spell | 5 | 2 | Sweeper: at the end of your next turn, every unit with 2 or less health is destroyed, yours included | [Card art](art/hour-of-collection.png) | Small |
+| 128 | Borrowed will | Lantern Conclave | Spell | 4 | 2 | Take control of an enemy unit until the end of this turn. It can move and attack, even if it has already acted, but it can't attack a summoner. Then it returns | | New: control |
+| 129 | Bought allegiance | Ashen Court | Spell | 6 | 2 | Take control of an enemy unit costing 4 or less for good. Loyal units refuse. It stays on its tile and can act from your next turn | | Small, after 128 |
+| 130 | Barrow mark | Gravebound | Enchantment | 2 | 1 | Enchant an enemy unit: when it dies, you summon a Gravebound thrall on its tile | | Small |
+| 131 | Held between moments | Lantern Conclave | Spell | 3 | 1 | Until the end of your next turn, an enemy unit can't move, attack or use abilities, and it can't be attacked | | Small |
+| 132 | Leaden step | Lantern Conclave | Enchantment | 2 | 1 | Enchant an enemy unit: it loses Swift and Flying, and it can't move and attack in the same turn | | Small |
+| 133 | Unwind the step | Lantern Conclave | Instant | 2 | 1 | When an enemy unit moves: it goes back to where it started and can't move again this turn | | New: a trigger on enemy moves |
+
+Why each card is the way it is:
+
+- **Hurled brand and The sky falls in:** red's reach. A cheap one to finish a close race and an expensive one that can end a game, both weaker against units than Firebolt or Cinderfall.
+- **Siphon vigor and Collect the tithe:** black's version, draining life from the summoner, as you suggested. At 4 and 6 mana they deal 0.5 damage per mana, below red's, since the life gain is worth something. Siphon vigor uses the finished painting with that name, whose suggested role was draining strength.
+- **Scatter the line:** a row of enemies knocked back, using the finished painting of that name. It answers a wide line of weak units without wiping it out.
+- **Pall of ash:** Dominion's square, hurting its own units too, as Dominion pays with its own side.
+- **Harmonic burst:** Gnosis's cross, pushing enemies apart. It's damage and disruption in one.
+- **Line of dawn:** white's column, which heals more than it harms, to suit Vigil's low damage.
+- **Wildfire:** a true sweeper. A fire deck whose units are Lit or Fireproof can cast it and keep its own board.
+- **Hour of collection:** a delayed sweeper that clears small units, with a turn's warning. That fits the painting's countdown. It's the natural counter to flooding the board, and it hits your own small units too.
+- **Borrowed will:** Gnosis takes control briefly, turning an enemy unit against its neighbours. It can't strike a summoner, so it can't end a game outright.
+- **Bought allegiance:** Dominion takes control for good, at a high price.
+- **Barrow mark:** your idea. A cursed enemy comes back as your thrall when it dies.
+- **Held between moments:** Gnosis stasis. It stops a unit completely, which can also protect it, so it's a tool both ways.
+- **Leaden step:** your idea of slowing a unit down. A fast unit loses its speed, and the unit can't move and attack in the same turn.
+- **Unwind the step:** a response that undoes an enemy's move. It's the first instant triggered by a move.
+
+**Champions:** no new mechanic. Paying for a big unit and the turns spent upgrading it are the risk. A unit that turns out too strong gets weaker or more expensive.
+
+## Proposals to fill out the roster
+
+Proposed on 2026-11-10. None are built. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
+
+Art briefs for the 57 cards from #104 to #191 without a painting are in five sets of 11 or 12, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
+
+New rules these cards use:
+
+- **Fire spells come in two kinds** (creator, 2026-11-10): some damage only enemy units and some damage every unit, yours included. Cost and damage balance the two: enemy-only fire costs more or hits less. Of the current cards, Cinderfall and Cinderwake hit only enemies, and Stormstrike, a lightning spell, hits everyone. Burning tiles hurt anyone without Fireproof.
+
+- **Carrion:** the merged Gathered and Sworn keyword above, now built.
+- **Rootfed:** permanently +1 attack and +1 health whenever you play an Overgrown ruin (a Genesis land), up to +3. It's a payoff for Genesis's extra lands. Approved 2026-11-10.
+- **Charm:** an enemy unit is yours while the unit that charmed it lives, then goes back. A unit can hold one charm at a time. Loyal units refuse, as with Bought allegiance.
+- **Random spots in a square:** each spot is picked at random among the 9 tiles, and the same tile can be picked twice.
+
+### Vigil (white)
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 134 | Roadwarden's shield | Sunmane Oath | Equipment | 2 | 1 |  | Equip one of your units: +2 health and Guard | roadwardens-shield | None |
+| 135 | Sunthread mantle | Still Flame | Equipment | 1 | 1 |  | Equip one of your units: it takes 1 less damage from attacks | sunthread-mantle | None |
+| 136 | Oath-road squire | Sunmane Oath | Unit | 1 | 1 | 1 / 2 | Ability: move an equipment card from one adjacent ally to another, or to itself | oath-road-squire | Small |
+| 137 | Stand as one | Sunmane Oath | Instant | 2 | 1 |  | When an enemy attacks one of your units: it and each ally next to it take 2 less damage this turn | stand-as-one | Small |
+| 138 | Sanctuary threshold | Still Flame | Spell | 2 | 1 |  | Aim at a tile: for 3 turns, your unit there can't be attacked from more than 1 tile away or targeted by enemy spells | sanctuary-threshold | Small |
+| 139 | Hearth-sworn penitent | Still Flame | Unit | 3 | 1 | 2 / 4 | Devotion |  | After #111 |
+| 140 | Vowkeeper of the long road | Still Flame | Unit | 5 | 2 | 3 / 7 | Guard. Devotion |  | After #111 |
+| 141 | Humbling light | Still Flame | Spell | 4 | 2 |  | Each unit with 5 or more attack takes 3 damage, yours included |  | Small |
+
+### Gnosis (blue)
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 142 | Focus-rifle marksman | Artificers | Unit | 4 | 2 | 3 / 3 | Longshot |  | None |
+| 143 | Field-plate artificer | Artificers | Unit | 3 | 1 | 2 / 4 | Armed |  | None |
+| 144 | Glimmer double | Lantern Conclave | Spell | 1 | 0 |  | Summon an Illusory decoy on any empty tile outside the back rows. It vanishes at the start of your next turn |  | Small |
+| 145 | White morning | Lantern Conclave | Spell | 3 | 1 |  | Aim at a row: each enemy in it can't move on its next turn. Row |  | Small, after #122 |
+| 146 | Frostbreak | Lantern Conclave | Spell | 3 | 1 |  | 3 damage to an enemy unit that is frozen or stands on a frozen tile. Otherwise 1 |  | Small |
+| 147 | Prism bracer | Artificers | Equipment | 2 | 1 |  | Equip one of your units: it attacks 1 tile further | prism-bracer | Small |
+| 148 | Conclave courier | Lantern Conclave | Unit | 2 | 1 | 1 / 2 | Swift. Ability: move an adjacent ally 1 tile | conclave-courier | Small |
+| 149 | Unmake the pattern | Lantern Conclave | Spell | 2 | 1 |  | Aim at a tile: remove every enchantment, equipment and tile effect there and next to it. Cross. Or destroy a relic | unmake-the-pattern | Small |
+
+### Dominion (black)
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 150 | Shutter-window assassin | Ashen Court | Unit | 4 | 2 | 3 / 2 | Longshot. Hunt |  | None |
+| 151 | Mortuary priest | Gravebound | Unit | 3 | 1 | 2 / 4 | Carrion |  | After Carrion |
+| 152 | Hostess of the late hour | Ashen Court | Unit | 5 | 2 | 4 / 5 | Drain. Carrion |  | After Carrion |
+| 153 | Gilt-hall temptress | Ashen Court | Unit | 4 | 2 | 2 / 3 | Ability, instead of attacking: charm an enemy unit costing 3 or less within 2 tiles |  | New: charm, after #128 |
+| 154 | Halfshade lynx | None (Dominion) | Unit | 3 | 1 | 3 / 2 | Veiled |  | None |
+| 155 | Lots for the gallows | Ashen Court | Spell | 5 | 2 |  | Aim at a tile: one random unit in the square around it is destroyed, yours included. Square, random |  | Small, after #123 |
+| 156 | Court informant | Ashen Court | Unit | 2 | 1 | 1 / 2 | When summoned: a random card in the enemy's hand costs 1 more until it's played | court-informant | Small |
+| 157 | Ashen Court bailiff | Ashen Court | Unit | 3 | 1 | 2 / 4 | Ability: an adjacent enemy unit has -2 attack until the end of its next turn | ashen-court-bailiff | Small |
+| 158 | Barrow tender | Gravebound | Unit | 2 | 1 | 1 / 3 | Once each turn, when another of your units dies next to it: you have 1 extra mana next turn | barrow-tender | Small |
+| 159 | Mourning veil | Ashen Court | Equipment | 2 | 1 |  | Equip one of your units: it becomes Veiled, and attacking doesn't end that. Each time it attacks, you lose 1 life | mourning-veil | Small |
+
+### Fervor (red)
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 160 | Cinderhook axe | Warhorde | Equipment | 2 | 1 |  | Equip one of your units: +2 attack, and its attacks ignore Guard | cinderhook-axe | Small |
+| 161 | Cinder rain | Cinder Clans | Spell | 4 | 2 |  | Aim at a tile: three embers land on random spots in the square around it. Each deals 2 damage to any unit there, yours included, and burns the tile for 1 turn. Lit and Fireproof units are unhurt. Square, random |  | Small, after #123 |
+| 162 | Clan outrider | Cinder Clans | Unit | 2 | 1 | 2 / 1 | Swift. When summoned: 1 damage to an enemy unit within 2 tiles | clan-outrider | Small |
+| 163 | Shatter the chain | Cinder Clans | Spell | 2 | 1 |  | Remove an enchantment or equipment from any unit, or destroy a relic. If it was on an enemy unit, that unit takes 2 damage | shatter-the-chain | Small |
+| 164 | Anoint with embers | Cinder Clans | Spell | 2 | 1 |  | One of your units becomes Lit |  | After #104 |
+
+### Genesis (green)
+
+| # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 165 | Overgrowth | Thornwardens | Spell | 4 | 2 |  | Aim at a tile: the square around it fills with thorns for 2 turns. Square |  | Small, after #123 |
+| 166 | Thornwarden pathguard | Thornwardens | Unit | 3 | 1 | 3 / 4 | Holding ground | thornwarden-pathguard | None |
+| 167 | Sudden canopy | Thornwardens | Instant | 2 | 1 |  | When an enemy attacks one of your units from 2 or more tiles away: prevent all of that damage | sudden-canopy | Small |
+| 168 | Return to loam | None (Genesis) | Spell | 2 | 1 |  | Destroy an equipment card or a relic. You may play an extra land this turn | return-to-loam | Small |
+| 169 | Thornwarden trapper | Thornwardens | Unit | 2 | 1 | 2 / 2 | Ability: an adjacent empty tile fills with thorns for 2 turns |  | Small |
+| 170 | Mosshorn grazer | Elder Herd | Unit | 2 | 1 | 1 / 3 | Rootfed |  | New: Rootfed |
+| 171 | Earthspeaker | Thornwardens | Unit | 4 | 2 | 2 / 5 | Rootfed. When summoned: you may play an extra land this turn |  | After #170 |
+| 172 | Elderwood stag | Elder Herd | Unit | 5 | 2 | 4 / 6 | Swift. Rootfed |  | After #170 |
+| 173 | Alderkin elder | None (Genesis) | Unit | 6 | 3 | 5 / 8 | Grows |  | None |
+| 174 | Shell-mountain tortoise | Elder Herd | Unit | 5 | 2 | 2 / 12 | Guard |  | None |
+| 175 | Spring melt | None (Genesis) | Spell | 2 | 1 |  | One of your units recovers 4 health and permanently gets +1 attack |  | Small |
+| 189 | Still Flame ash-sweeper | Still Flame | Unit | 2 | 1 | 1 / 3 | Ability: clear every tile effect on its tile and the tiles next to it |  | Small |
+| 190 | Emberward | Cinder Clans | Enchantment | 1 | 1 |  | Enchant one of your units: Fireproof |  | None |
+| 191 | Salamander-hide mantle | Cinder Clans | Equipment | 2 | 1 |  | Equip one of your units: +1 health and Fireproof |  | None |
+
+The ash-sweeper is Vigil's one tile-clearing card, as asked on 2026-11-10. Emberward and the Salamander-hide mantle let Fireproof come from an enchantment and from equipment as well as being innate or lit by a spell. They're listed here, after the green cards, so the numbers before them stay the same.
+
+### Neutral
+
+| # | Card | Type | Cost | Wants | Stats | Rules | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 176 | Bellframe construct | Unit | 4 | 0 | 2 / 5 | Resonance | None |
+| 177 | Buckling recruit | Unit | 2 | 0 | 2 / 2 | Armed | None |
+| 178 | Rust-hinged warden | Unit | 3 | 0 | 1 / 6 | Guard | None |
+| 179 | Copper hound | Unit | 2 | 0 | 2 / 2 | Swift | None |
+| 180 | Waystone golem | Unit | 5 | 0 | 5 / 7 | None | None |
+| 181 | Ossuary engine | Unit, Gravebound (Dominion) | 4 | 2 | 3 / 5 | Carrion | After Carrion |
+
+### Relics
+
+Approved as a new card type on 2026-11-10. A relic stays in play beside your summoner, off the grid, with an ongoing effect. Seven finished paintings were drawn as relics, and this type uses them. Return to loam, Shatter the chain and Unmake the pattern can remove relics as well as equipment.
+
+| # | Card | Faction | Cost | Wants | Rules | Painting |
+| --- | --- | --- | --- | --- | --- | --- |
+| 182 | Oath bell | Sunmane Oath | 3 | 1 | Pay 1 on your turn: each of your units next to an ally gets +1 attack this turn | oath-bell |
+| 183 | Pilgrim reliquary | Still Flame | 2 | 1 | At the start of your turn, your most damaged unit recovers 1 health | pilgrim-reliquary |
+| 184 | Tideglass engine | Artificers | 2 | 1 | At the end of your turn, 1 unspent mana is stored in it, up to 3. On your turn, release it all as extra mana | tideglass-engine |
+| 185 | Folded observatory | Lantern Conclave | 3 | 1 | At the start of your turn, look at the top 2 cards of your deck and put them back in any order | folded-observatory |
+| 186 | Sepulchral scale | Gravebound | 2 | 1 | Once each turn, when one of your units dies: you may lose 1 life to draw a card | sepulchral-scale |
+| 187 | Warband drum | Warhorde | 3 | 1 | Pay 1 on your turn: each of your units can move 1 extra tile this turn | warband-drum |
+| 188 | Seedheart vessel | Thornwardens | 3 | 1 | Each land you play stores 1 growth in it, up to 3. On your turn, release it: one of your units permanently gets +1 attack and +1 health for each | seedheart-vessel |
+
+Why each card is the way it is:
+
+- **Equipment (134, 135, 147, 159, 160) and the Oath-road squire:** five unused equipment paintings, which also give the three Armed units something to carry. The squire's painting suggested maintaining an ally's equipment, so it hands gear down the line.
+- **Stand as one and Sanctuary threshold:** Vigil's protection, and the threshold is its answer to Longshot and ranged units.
+- **Penitent and Vowkeeper:** Devotion's second and third cards, so a healing deck has more than one thing to build up.
+- **Humbling light:** Vigil's answer to the one-big-creature plan, the counterweight you described.
+- **Focus-rifle marksman:** your sniper with a magic rifle. The rifle is a focus for lantern energy rather than a gun, so guns stay rare.
+- **Shutter-window assassin:** your Dominion assassin with a crossbow. Longshot and Hunt make it a finisher that has to stay still to work.
+- **Glimmer double:** your one-turn decoy placed anywhere. It can pull an attacker off its target or block a lane for a turn.
+- **White morning and Frostbreak:** more freeze spells, and a payoff, since the winter deck won only 29% for lack of one.
+- **Courier and Unmake the pattern:** Gnosis moving units and removing magic, both from finished paintings, the second one you liked.
+- **Mortuary priest and the Hostess of the late hour:** your dark priest and glamorous vampire. She drinks with Drain and grows with Carrion, and stays subtle in the art, as vampires are rare.
+- **Gilt-hall temptress:** your seduction card with magic. Charm keeps the enemy unit only while she lives, so the enemy's answer is to kill her.
+- **Halfshade lynx:** the animal partly made of shadow, the second Veiled card.
+- **Lots for the gallows and Cinder rain:** your random spots in a square. Dominion's destroys one unit outright but might take yours. Fervor's throws three embers.
+- **Court informant, bailiff and Barrow tender:** three unused Dominion paintings. The bailiff weakens a unit, as its painting suggested restraint; it no longer chains, since Chain was turned down. The tender turns deaths into mana, the sacrifice payoff you approved.
+- **Mourning veil:** the concealment-with-a-cost painting. It can make any unit Veiled, so say if Veiled should stay rarer.
+- **Cinderhook axe:** pressing an attack, as its painting suggested. Ignoring Guard is its edge.
+- **Clan outrider:** the goblin on a donkey throwing a spear.
+- **Shatter the chain:** red breaking restraints. It removes Leaden step, Barrow mark or a Death warrant from your unit, or an enemy's equipment.
+- **Anoint with embers:** a cheaper way to light a single unit. Only lighting spells protect your units from your own fire. It replaces the Kindled zealot.
+- **Overgrowth and the trapper:** Genesis's square and more thorns, so the thorn deck controls ground.
+- **Rootfed (170–172):** a payoff for extra lands, which green has plenty of and no reward for.
+- **Alderkin elder and the tortoise:** big Genesis bodies for the one-big-creature plan, one that grows and one that holds the line.
+- **Sudden canopy and Return to loam:** unused Genesis paintings. Canopy covers green's weakness to ranged attacks.
+- **Emberward and the Salamander-hide mantle:** Fireproof from an enchantment and from equipment, alongside lighting spells and innate Fireproof. Both are cheap, so a fire deck pays a card and a little mana to keep a unit safe from its own all-units fire.
+- **Neutral constructs (176, 178–180) and the Ossuary engine:** the construct batch, mostly neutral as you said, with one Dominion construct. The Bellframe construct is Resonance's third card.
+- **Buckling recruit:** a neutral Armed unit, painted mid-buckle.

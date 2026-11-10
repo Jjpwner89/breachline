@@ -107,6 +107,17 @@ Card rules are design metadata, not a composition brief. Keep the recognizable s
 - Check a proposed image without its title or rules: what makes it worth looking at? If a prop or secondary figure exists mainly to explain an ability, remove it or find a stronger visual reason for it.
 - Do not overcorrect into uniformly static, subdued or nonmagical pictures. Preserve the range already liked: the lancer's presence, the bone harvester's activity and colour, the court informant's gesture and divided light, the great landscapes and the inventive creatures. Specific card feedback remains specific. Brightlance's off-screen hit does not revoke the general permission for occasional secondary enemies elsewhere.
 
+## Notes for proposed cards (creator, 2026-11-10)
+
+These cards are proposed in `breachline/CARD_PROPOSALS.md` and need briefs before any painting.
+
+- **Borrowed will:** someone's eyes filling with what looks like blue flame: cold, small and flickering, wisping into the eyes.
+- **Guns:** rare. The Focus-rifle marksman's rifle is a focus for magical energy, not ordinary gunpowder.
+- **Armed units:** they look armoured or are putting armour on.
+- **The vampire (Hostess of the late hour):** glamorous, but vampires stay subtle and rare in this world.
+- **Halfshade lynx:** an animal partly made of shadow.
+- **White flier (#115):** the creator chose a long ribbon-bodied glider with rows of translucent vanes, riding warm air low over the grass.
+
 ## Applying this direction to new cards
 
 - Use the latest creator feedback and current briefs; original generation prompts and discarded attempts are historical records. A card-specific choice stays specific to that card.

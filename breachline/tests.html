@@ -332,12 +332,16 @@ function randomField(r, ids) {
   fight = E.applyMove(s, { type: 'ability', unit: zapper.uid, target: far.uid });
   check('Zap deals 1 and the scholar is done', !byUid(fight, far) && byUid(fight, zapper).acted);
 
-  s = arena(); var ww = put(s, 'wardwright', 0, 3, 2), mark1 = put(s, 'cleric', 1, 1, 2), side = put(s, 'cleric', 1, 1, 1), guardian = put(s, 'sentinel', 1, 0, 1);
+  s = arena(); var ww = put(s, 'wardwright', 0, 3, 2), mark1 = put(s, 'cleric', 1, 1, 2), behind = put(s, 'cleric', 1, 0, 2), side = put(s, 'cleric', 1, 1, 1);
   fight = E.applyMove(s, { type: 'attack', unit: ww.uid, target: mark1.uid });
-  check('Resonance hits enemies next to the target, after Guard', byUid(fight, side).hp === side.maxHp - 0 && byUid(fight, mark1).hp === mark1.maxHp - 3);
-  s.units = s.units.filter(function (u) { return u !== guardian; });
-  fight = E.applyMove(s, { type: 'attack', unit: ww.uid, target: mark1.uid });
-  check('Resonance deals 1 without Guard', byUid(fight, side).hp === side.maxHp - 1);
+  check('Resonance hits the target and the enemy behind it in full', byUid(fight, mark1).hp === mark1.maxHp - 3 && byUid(fight, behind).hp === behind.maxHp - 3);
+  check('Resonance leaves enemies beside the target alone', byUid(fight, side).hp === side.maxHp);
+
+  s = arena(); var walker = put(s, 'siegewalker', 0, 4, 2), distant = put(s, 'cleric', 1, 1, 2); walker.moved = false;
+  check('Longshot reaches 3 tiles from a standstill', moves(s, 'attack').some(function (m) { return m.target === distant.uid; }));
+  var step = E.legalMoves(s).filter(function (m) { return m.type === 'move' && m.unit === walker.uid && m.r === 3 && m.c === 2; })[0];
+  fight = step ? E.applyMove(s, step) : s;
+  check('Longshot is melee only after moving', step && !moves(fight, 'attack').some(function (m) { return m.target === distant.uid; }));
 
   s = arena(); var pushed = put(s, 'sentinel', 1, 2, 2), id = hand(s, 'brightlance');
   fight = E.applyMove(s, { type: 'cast', card: id, target: pushed.uid });
@@ -362,12 +366,15 @@ function randomField(r, ids) {
   fight.phase = 'command';
   check('Freeze stops the target moving on its next turn', !E.legalMoves(fight).some(function (m) { return m.type === 'move' && m.unit === chilled.uid; }) && E.legalMoves(fight).some(function (m) { return m.type === 'attack' && m.unit === chilled.uid; }));
 
-  s = arena(); var sworn = put(s, 'retainer', 0, 3, 0), fodder = put(s, 'goblin', 0, 2, 2), fodder2 = put(s, 'goblin', 0, 2, 3), killer = put(s, 'dragon', 1, 1, 2);
+  s = arena(); var carrion = put(s, 'retainer', 0, 3, 0), fodder = put(s, 'goblin', 0, 2, 2), fodder2 = put(s, 'goblin', 0, 2, 3), killer = put(s, 'dragon', 1, 1, 2);
   s.active = 1;
   fight = E.applyMove(s, { type: 'attack', unit: killer.uid, target: fodder.uid });
-  check('Sworn gains 1 attack when an ally dies', E.attackOf(fight, byUid(fight, sworn)) === 3);
-  byUid(fight, sworn).sworn = 3; fight.units = fight.units.filter(function (u) { return u.uid !== fodder2.uid; });
-  check('Sworn stops at +3', E.attackOf(fight, byUid(fight, sworn)) === 5);
+  check('Carrion gains 1 attack when an ally dies', E.attackOf(fight, byUid(fight, carrion)) === 3);
+  byUid(fight, carrion).carrion = 3; fight.units = fight.units.filter(function (u) { return u.uid !== fodder2.uid; });
+  check('Carrion stops at +3', E.attackOf(fight, byUid(fight, carrion)) === 5);
+  s = arena(); carrion = put(s, 'retainer', 0, 3, 0); var hitter = put(s, 'dragon', 0, 2, 2), prey = put(s, 'goblin', 1, 1, 2);
+  fight = E.applyMove(s, { type: 'attack', unit: hitter.uid, target: prey.uid });
+  check('Carrion gains 1 attack when an enemy dies', E.attackOf(fight, byUid(fight, carrion)) === 3);
 
   s = arena(); var veil = put(s, 'veiladept', 1, 1, 2); veil.veiled = true; var seeker = put(s, 'sellsword', 0, 2, 2);
   check("Veiled can't be attacked", !moves(s, 'attack').length);

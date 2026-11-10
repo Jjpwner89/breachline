@@ -57,7 +57,15 @@ var Bot = (function () {
       var side = E.hitOn(s, u, extra);
       score += side >= extra.hp ? worth(extra) + 30 : worth(extra) * (side / extra.maxHp);
     }
-    if (E.hasKw(u, 'Stomp') || E.hasKw(u, 'Resonance')) s.units.forEach(function (o) { if (o !== t && o.owner !== u.owner && dist(o, t) === 1) score += o.hp <= 1 ? worth(o) : 5; });
+    if (E.hasKw(u, 'Stomp')) s.units.forEach(function (o) { if (o !== t && o.owner !== u.owner && dist(o, t) === 1) score += o.hp <= 1 ? worth(o) : 5; });
+    if (E.hasKw(u, 'Resonance')) {
+      var rr = t.r === u.r ? 0 : t.r > u.r ? 1 : -1, rc = rr ? 0 : t.c > u.c ? 1 : -1;
+      s.units.forEach(function (o) {
+        if (o.owner === u.owner || o.r !== t.r + rr || o.c !== t.c + rc) return;
+        var rung = E.hitOn(s, u, o);
+        score += rung >= o.hp ? worth(o) + 30 : worth(o) * (rung / o.maxHp);
+      });
+    }
     if (amt >= t.hp && E.CARDS[u.cardId].drawOnKill) score += 25;
     if (amt < t.hp && dist(u, t) <= E.range(t)) {
       var back = E.hitOn(s, t, u, 0, true);
