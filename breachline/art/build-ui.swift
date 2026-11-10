@@ -121,3 +121,8 @@ if let b = load("ui-stat-plaques") {
 }
 // Four props in a 2 by 2 grid: ring weight, candle, inkwell, stone weight.
 if let b = load("ui-table-props") { let cw = b.w / 2, ch = b.h / 2; for i in 0..<4 { save(resize(trim(crop(b, (i % 2) * cw, (i / 2) * ch, cw, ch)), width: 200), "prop-\(i + 1).png") } }
+// Tile effects, briefed in TILE_ART_BRIEFS.md. Each painting fills an empty tile and frames a unit's tile, so it keeps its whole rectangle untrimmed.
+let tileKinds = ["burn", "frost", "thorns", "blight", "holy", "snare", "charge"]
+for k in tileKinds { if let b = load("ui-tile-\(k)") { save(resize(b, width: 480), "tile-\(k).png") } }
+// Seven counter emblems in a row, in the same order as tileKinds.
+if let b = load("ui-tile-emblems") { let cw = b.w / 7; for (i, k) in tileKinds.enumerated() { save(resize(trim(crop(b, i * cw, 0, cw, b.h)), width: 64), "emblem-\(k).png") } }
