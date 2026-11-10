@@ -1,4 +1,4 @@
-// Board UI. The human is always player 0 and sits at the bottom; every click ends in an Engine.legalMoves entry.
+// Board UI. The human is player 0 and sits at the bottom, except on the test table; every click ends in an Engine.legalMoves entry.
 (function () {
   var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null;
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
@@ -6,6 +6,9 @@
   var oppPlayer = 'bot', debugOn = false;
   // A campaign battle saves after every move and reports its result to Campaign. The exhibition's opponent pick waits meanwhile.
   var chapterBattle = false, exhibitionPlayer = 'bot';
+  // The test table: no bot, you play whichever side is acting from that side's hand, and both sides always have mana.
+  // HUMAN and BOT follow whoever is acting, so the board marks that side's units as yours. Picked cards go to seat 0 or 1.
+  var sandbox = false, testSide = 0, TEST_MANA = 99;
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
@@ -356,7 +359,7 @@
     if (S.winner !== null) return '<span class="turn">Game over</span>';
     if (S.phase === 'opening') return '<span class="turn">Opening hands</span>';
     var step = function (name, label) { return '<span class="step' + (S.phase === name ? ' on' : '') + '">' + label + '</span>'; };
-    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
+    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
       '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>';
   }
 
@@ -373,7 +376,7 @@
     var key = S.winner === null && S.phase !== 'opening' ? S.active + ':' + S.turn : null;
     if (key && key !== lastTurn) {
       $('turnBanner').className = S.active === HUMAN ? '' : 'enemy';
-      $('turnBanner').innerHTML = '<span>' + (S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
+      $('turnBanner').innerHTML = '<span>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
     }
     lastTurn = key;
   }
@@ -469,6 +472,10 @@
   }
 
   function render() {
+    if (sandbox) {
+      S.players.forEach(function (p) { p.mana = TEST_MANA; });
+      if (S.winner === null) { HUMAN = actor(); BOT = 1 - HUMAN; }
+    }
     var moves = humanMoves(), marks = computeMarks(moves);
     $('app').classList.toggle('opening', S.phase === 'opening' && S.winner === null);
     $('cmd').classList.toggle('enemy', S.winner === null && S.phase !== 'opening' && actor() === BOT);
@@ -511,7 +518,7 @@
   }
 
   function schedule() {
-    if (S.winner !== null || actor() !== BOT) return;
+    if (sandbox || S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
     if (modelOn()) modelStep(token);
     else playNext(token, botMove);
@@ -704,7 +711,7 @@
     var d = JSON.parse(b.getAttribute('data-do'));
     if ($('menu').open) $('menu').close();
     if (d.move) return apply(d.move);
-    if (d.ui === 'new') return start();
+    if (d.ui === 'new') return sandbox ? startSandbox() : start();
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
     if (d.ui === 'campaign') return toCampaign();
@@ -794,6 +801,7 @@
     var run = Campaign.current();
     if (!chapterBattle) exhibitionPlayer = oppPlayer;
     chapterBattle = true;
+    sandbox = false;
     oppPlayer = run.player;
     decks = Campaign.decks(run);
     Screens.hide();
@@ -813,6 +821,7 @@
     if (e.target.closest('#begin')) {
       Decks.setPicks(picks);
       chapterBattle = false;
+      sandbox = false;
       decks = [forGame(picks.mine), forGame(picks.opp)];
       start();
     }
@@ -829,6 +838,9 @@
     $('speech').hidden = true;
     Debug.reset();
     sel = null; flash = null;
+    HUMAN = 0; BOT = 1;
+    $('testBtn').hidden = !sandbox;
+    setDrawer(null);
     $('start').hidden = true;
     $('app').hidden = false;
     lastTurn = null;
@@ -841,21 +853,82 @@
     schedule();
   }
 
+  // The test table starts from the last exhibition decks with both opening hands kept, then opens the card picker.
+  function startSandbox() {
+    var last = Decks.picks(), ok = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
+    sandbox = true;
+    chapterBattle = false;
+    decks = [forGame(ok(last.mine) || 'white'), forGame(ok(last.opp) || 'red')];
+    start(E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: 0 }));
+    while (S.phase === 'opening' && S.winner === null) S = E.applyMove(S, { type: 'keepHand' });
+    hidePeek();
+    render();
+    renderPicker();
+    setDrawer('testPanel');
+  }
+  function testNote(text) {
+    S.log.push({ turn: S.turn, text: 'Test table: ' + text });
+    $('testMsg').textContent = text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  function renderPicker() {
+    var q = $('testSearch').value.trim().toLowerCase(), ORDER = 'WURBGN';
+    $('testSides').innerHTML = [0, 1].map(function (pi) {
+      return '<button type="button" class="step' + (testSide === pi ? ' on' : '') + '" data-side="' + pi + '" aria-pressed="' + (testSide === pi) + '">' +
+        (pi === 0 ? 'You (bottom)' : 'Opponent (top)') + '</button>';
+    }).join('');
+    var ids = Object.keys(E.CARDS).filter(function (id) {
+      var c = E.CARDS[id];
+      return !c.token && (!q || (c.name + ' ' + (c.text || '') + ' ' + (TYPES[c.type] || c.type) + ' ' + (ALIGNMENT[c.colour] || '') + ' ' + (c.keywords || []).join(' ')).toLowerCase().indexOf(q) >= 0);
+    }).sort(function (a, b) {
+      var x = E.CARDS[a], y = E.CARDS[b];
+      return ORDER.indexOf(x.colour) - ORDER.indexOf(y.colour) || x.cost - y.cost || x.name.localeCompare(y.name);
+    });
+    $('testCards').innerHTML = ids.map(function (id) {
+      return '<button type="button" class="card" data-add="' + id + '" data-peek="' + id + '" data-note="Click to add to a hand" aria-label="Add ' + esc(E.CARDS[id].name) + '">' + frameHtml(E.CARDS[id]) + '</button>';
+    }).join('') || '<p class="tnote">No cards match.</p>';
+    fitCards($('testCards'));
+  }
+  // Fills up to three empty tiles on the enemy half with random units, ready to act.
+  function populate() {
+    var pool = Object.keys(E.CARDS).filter(function (id) { return E.CARDS[id].type === 'unit' && !E.CARDS[id].token; }), open = [], names = [];
+    for (var r = 0; r < E.ROWS / 2; r++) for (var c = 0; c < E.COLS; c++) if (!S.units.some(function (u) { return u.r === r && u.c === c; })) open.push([r, c]);
+    open.sort(function () { return Math.random() - 0.5; }).slice(0, 3).forEach(function (t) {
+      var id = pool[Math.floor(Math.random() * pool.length)];
+      E.placeUnit(S, 1, id, t[0], t[1]);
+      names.push(E.CARDS[id].name);
+    });
+    testNote(names.length ? 'placed ' + names.join(', ') + ' for the opponent.' : 'the enemy half is full.');
+  }
+  $('testPanel').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-add], [data-side], [data-test]');
+    if (!b || !S) return;
+    if (b.dataset.side) { testSide = +b.dataset.side; return renderPicker(); }
+    if (b.dataset.add) {
+      S.players[testSide].hand.push({ id: S.nextId++, c: b.dataset.add });
+      testNote('added ' + E.CARDS[b.dataset.add].name + ' to ' + (testSide === 0 ? 'your' : "the opponent's") + ' hand.');
+    }
+    if (b.dataset.test === 'populate') populate();
+    if (b.dataset.test === 'clear') { S.units = []; S.tiles = {}; sel = null; testNote('cleared the board.'); }
+    if (b.dataset.test === 'life') { S.players.forEach(function (p) { p.life = E.START_LIFE; }); testNote('both sides are back to ' + E.START_LIFE + ' life.'); }
+    render();
+  });
+  $('testSearch').addEventListener('input', renderPicker);
+
   function boot(data) {
     var run = Campaign.current();
     if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
-    else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) start(data.state);
+    else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
     else Screens.menu();
   }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
-    showStart: showStart, playChapter: playChapter,
+    showStart: showStart, playChapter: playChapter, sandbox: startSandbox,
     modelReady: function () { return !!sample; },
     inProgress: function () { return !!S && S.winner === null && !chapterBattle; },
     resume: function () { $('app').hidden = false; render(); schedule(); }
   };
-  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S, chapter: chapterBattle }; });
+  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S, chapter: chapterBattle, sandbox: sandbox }; });
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });

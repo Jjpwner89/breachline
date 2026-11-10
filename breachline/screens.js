@@ -92,6 +92,7 @@ var Screens = (function () {
         : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Every card is open.') +
+      item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
       later('Multiplayer', 'Coming later. Collect cards from packs.') +
       '</nav></div></main>', menu);
     ash(root.querySelector('.home canvas'));
@@ -100,6 +101,7 @@ var Screens = (function () {
   actions.resume = function () { hide(); GameUI.resume(); };
 
   actions.exhibition = function () { GameUI.showStart(); };
+  actions.testTable = function () { hide(); GameUI.sandbox(); };
 
   // Campaign
 
