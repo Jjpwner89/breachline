@@ -2,8 +2,8 @@
   "project": "Breachline",
   "created": "2026-11-06",
   "method": "built-in image_gen",
-  "status": "70 active reference images, including all 26 accepted round-07 paintings and variants.",
-  "sheet_count": 70,
+  "status": "84 active reference images, including 13 accepted round-08 paintings and the selected first Door into Snow character variant.",
+  "sheet_count": 84,
   "head_studies": 50,
   "equipment_design_slots": 60,
   "images": [
@@ -227,7 +227,8 @@
       "sha256": "934038ee5fead181cac5f0ad613c07e0aa0911b0cb18f9be7e4d311db9467542",
       "active_reference": false,
       "review_status": "removed_by_creator",
-      "review_note": "Visually liked, but too specific to define the faction; removed by creator."
+      "review_note": "Visually liked, but too specific to define the faction; removed by creator.",
+      "removal_reconciled": "2026-11-10: exact previously removed image reappeared; removed again to honor the existing selection."
     },
     {
       "key": "12-fervor-equipment",
@@ -251,7 +252,8 @@
       "sha256": "0710973a0008adfc9ef707c7c95fa13505e81f74a2cd0d3d056aa64d8811f814",
       "active_reference": false,
       "review_status": "removed_by_creator",
-      "review_note": "Too organized and inconsistent with existing characters; removed by creator."
+      "review_note": "Too organized and inconsistent with existing characters; removed by creator.",
+      "removal_reconciled": "2026-11-10: exact previously removed image reappeared; removed again to honor the existing selection."
     },
     {
       "key": "13-genesis-equipment",
@@ -275,7 +277,8 @@
       "sha256": "c024bdb3ccf941872fcef65bdc62743d8e21c9fb94ac60652161abda7dd4b33b",
       "active_reference": false,
       "review_status": "removed_by_creator",
-      "review_note": "Overdesigned leather layering without clear construction; removed by creator."
+      "review_note": "Overdesigned leather layering without clear construction; removed by creator.",
+      "removal_reconciled": "2026-11-10: exact previously removed image reappeared; removed again to honor the existing selection."
     },
     {
       "key": "14-raiders-and-berserker",
@@ -1507,7 +1510,9 @@
         1024
       ],
       "active_reference": true,
-      "review_note": "Exceptional, no notes. Finished Equipment card art approved."
+      "review_note": "Exceptional, no notes. Finished Equipment card art approved.",
+      "selected_for_card": true,
+      "card_selection_date": "2026-11-10"
     },
     {
       "key": "round07-06",
@@ -1522,7 +1527,9 @@
         1024
       ],
       "active_reference": true,
-      "review_note": "Accepted. Practical woman artisan and her work make sense. Adjacent spoken Dock Tally praise describes this woman at the bench."
+      "review_note": "Accepted. Practical woman artisan and her work make sense. Adjacent spoken Dock Tally praise describes this woman at the bench.",
+      "selected_for_card": true,
+      "card_selection_date": "2026-11-10"
     },
     {
       "key": "round07-08",
@@ -1597,7 +1604,8 @@
         1024
       ],
       "active_reference": true,
-      "review_note": "Beautiful and specifically praised for material/light treatment; accepted."
+      "review_note": "Beautiful and specifically praised for material/light treatment; accepted.",
+      "creator_followup": "2026-11-10: put this kit on a character in future art. No new art generation requested now; wearer and card design remain open."
     },
     {
       "key": "round07-19",
@@ -1643,7 +1651,9 @@
       ],
       "active_reference": true,
       "review_note": "Replace the rejected courier with a reckless male goblin carrying an unruly torch; a visual study, not restoration of the cut card rules.",
-      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout."
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "selected_for_card": true,
+      "card_selection_date": "2026-11-10"
     },
     {
       "key": "round07-v2-02",
@@ -1867,7 +1877,9 @@
       ],
       "active_reference": true,
       "review_note": "Keep the liked drake anatomy and rider; add dinosaur-like feathering without turning it into an ordinary bird.",
-      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout."
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "selected_for_card": true,
+      "card_selection_date": "2026-11-10"
     },
     {
       "key": "round07-v2-22",
@@ -1883,7 +1895,8 @@
       ],
       "active_reference": true,
       "review_note": "Make the portal read clearly by showing a warm, green location through the ordinary left window.",
-      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout."
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "card_subject_selection": "Subject selected; use selected-card-variants-2026-11-10/door-into-snow-character.png for the card."
     },
     {
       "key": "round07-v2-23",
@@ -1899,14 +1912,255 @@
       ],
       "active_reference": true,
       "review_note": "Recast the mourner as a white woman while preserving the liked coat, moth magic, pose and atmosphere.",
-      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout."
+      "creator_approval": "2026-11-09: all are better now; incorporate direction throughout.",
+      "selected_for_card": true,
+      "card_selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-01",
+      "title": "Ashwing at the Window",
+      "file": "concept-round-08-2026-11-09/01-ashwing-at-the-window.png",
+      "sha256": "e8a83f545312d4d10e5df86d28c9b3e208e41976fdbe50c488fb26cf797b86cf",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Liked; great character portrait of the existing Ashwing keeper.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nTransform the attached character reference into an entirely new full-scene painting. Preserve the Ashwing keeper's recognizable adult male identity, wavy sandy hair, lean face, dark plum wool coat and small animated skeletal crow with charcoal feathers. Remove all sheet layout and portrait insets. In an old attic room with a deep green open shutter, the keeper sits sideways beside the window; his gloved left forearm rests naturally on the sill. The little bone-and-feather crow has just landed on that glove and is folding its wings, one loose black feather drifting below. The keeper looks at it with quiet amusement, not a theatrical smile. A clear pale autumn sky and a few copper roofs beyond; the dark interior holds the figure in broad plum and umber shapes. Medium-close three-quarter composition from inside, character looking left, crow and his ordinary expressive face are the selected focal accents. A narrow stripe of cool daylight picks out tiny bird bones, a worn coat seam and his cheek; the rest is quiet soft paint. Life, character and a hint of darkness. No magic beam, green glow, skull decorations or extra birds.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-224f5b72-412f-499c-983f-57b4a36296ef.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-02",
+      "title": "Copper Street Locksmith",
+      "file": "concept-round-08-2026-11-09/02-copper-street-locksmith.png",
+      "sha256": "f03f1a1b1ce2ee21ae4f61102dc80b0ec75dde277da77e43788b7e87384790bc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Loved; levitation as part of someone's job is especially liked.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nAt goblin eye level beside an old teal-painted street door, an older MALE goblin locksmith works in a patch of clear afternoon sunlight. Small wiry body, a broad hooked nose, tremendous triangular ears, uneven lower teeth, tired amused amber eyes, thinning black hair tied at the back. Distinctly nonhuman and individual, not cute animation design. He wears a simple ochre wool waistcoat over rolled grey linen sleeves, a red neckerchief and one practical tool pouch. His left hand cups the removed palm-sized brass lock on a low workbox. Above his relaxed right palm, THREE tiny brass tumblers hover a few centimetres apart, held by a modest direct spell while he studies them; no strings, diagram, gauntlet or visible power device. Five plainly connected fingers on each hand, simple natural posture. A half-eaten pear sits at the edge of the workbox. Strong warm ochre and copper against teal wood; the street behind is only several sunlit masonry shapes and a soft burgundy awning. A characterful face and convincing little mechanical parts are focal; lower clothes and street fall into broader quiet strokes. The pleasure is his unhurried expertise and slightly mischievous expression.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-cafb6835-3aab-4555-8737-c15e8e4680d6.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-03",
+      "title": "Engine at Rest",
+      "file": "concept-round-08-2026-11-09/03-engine-at-rest.png",
+      "sha256": "15477034f50c3ccfc8b841579f46b99d2c5b95dbb8a11c2883ccc7e9fabe370f",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Incredible piece; accepted.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nA Gnosis freight construct rests under a brick loading arcade beside a canal. It is about the size of a small horse, LOWER and wider than a human: four stout articulated legs, a broad open brass-and-black-iron cradle for a torso, an offset small rounded bronze sensor hood integrated into the front beam, and one folded simple lifting arm tucked alongside the body. No humanoid shoulders, armored knight body or futuristic robot face. An irregular blue mineral heart sits within three broad bronze ribs in the open body, quietly illuminating a few nearby bolts and the inside of its frame. Visible material thickness, pinned joints, hammered metal, believable bearing points and a stable four-foot stance. The creature-like machine inclines its small hood toward an ordinary older male mechanic sitting on a low step with a cup, secondary and loosely painted; a tender hint of companionship without cartoon eyes. Three-quarter low view, whole construct visible with clear negative space between legs and ribs. Dry warm brick, chalky mortar, muted verdigris and blue core, soft late morning reflected canal light. Machinery reads through a few large functional parts rather than hundreds of pipes, exposed gears or gratuitous straps. Industrial craft with a scholarly magical heart.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-b8901fb1-89f1-4bd4-aeb6-ae7fc9610a92.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-04",
+      "title": "A Coalback’s First Frost",
+      "file": "concept-round-08-2026-11-09/04-coalbacks-first-frost.png",
+      "sha256": "14afe4aeea65f2f768b7374318b62b5408ae65d1b17d263e89f25ee8b6e576ab",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Incredible; accepted.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nRecompose the attached coalback painting into a completely new intimate creature scene while preserving the original coalback anatomy: a small roughly forty-centimetre-long supple brown-furred animal with soft pointed muzzle, small ears, strong digging forepaws, thick furry tail and broad rust-colored overlapping keratin plates on its back. It is NOT a pangolin, dragon or mascot. Now one adult and one much smaller juvenile are tucked beneath the roots of a roadside tree at first frost. The adult lies curled along the root hollow, its muzzle close to one softly glowing piece of charcoal; the juvenile sleeps against its flank with its nose under the adult's thick tail. Their four-limbed mammalian bodies must be coherent even where partially hidden. Hoarfrost covers only the outer dry leaves and root tips. The nest's brown grasses and fur take a little ember warmth, surrounded by muted blue early-morning frost. Low close view, the faces, one forepaw and three or four back plates most resolved; the root hollow and distant verge quiet grouped paint. Gentle delight and observed animal intimacy, not saccharine cartoon eyes, human smiles, magical flame breath or an epic wildlife-hunting print. No humans or cookpot in the composition.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1f8c631d-7dda-46ff-94c1-66b1e2c13972.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-05",
+      "title": "Last Light in the Barracks",
+      "file": "concept-round-08-2026-11-09/05-last-light-in-the-barracks.png",
+      "sha256": "197a69216e4d1284910410d5e4dc8e81d01bd97e269f2ac75c3dfdb8e1d379c4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Strongly liked; subtle magic and light coming from different directions are appreciated.",
+      "prompt": "Edit this Breachline painting locally; keep the entire scene, characters, ages, face shapes, all limbs and hand contact, costume, lighting composition and subtle healing effect unchanged. Repaint ONLY the two faces and exposed hands into more economical matte oil-paint color planes. Reduce the older woman's strongly pink/red cheek and nose saturation toward her natural neutral ochre skin tone. Remove tiny wrinkles, granular skin texture, specular forehead/nose spots and etched hairs, especially on the secondary man's face. Keep their individuality and readable eyes and expressions; use selected crisp accents with softer cheek/ear edges rather than smearing or blurring. A few broader deliberate brush marks should replace microdetail. Preserve warm window light and the blue/ivory/russet palette. No new elements, no changed pose, no text. Output 1536 x 1024 landscape.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-ab56a00f-ea56-4fb1-bde3-fd4941df9461.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-06",
+      "title": "The Cinderline Veteran",
+      "file": "concept-round-08-2026-11-09/06-cinderline-veteran.png",
+      "sha256": "6bb354c5a9053663f76273d80f3e8a1c2e29a80e9604dfced664af3b0ce0c073",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Sick; selected to become a card.",
+      "prompt": "Make ONE local correction to this painting: remove the entire unrequested steamboat and its smoke from the lower-right distant river valley. Fill its place with the natural continuous river, banks and distant hills, described with quiet economical painterly strokes. Keep ALL of the male warrior, his face, pose, limbs, grip, longsword, ember, clothing, red sash, near stone steps, storm sky, architecture and overall lighting exactly unchanged. Do not move or resize anything else. No boats, flying machines, new figures or text. Output 1536 x 1024 landscape.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-27b54cc6-395b-404b-a39a-66585929261e.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-07",
+      "title": "Redglass Falchion",
+      "file": "concept-round-08-2026-11-09/07-redglass-falchion.png",
+      "sha256": "0d1076f0f475b6e425f775fa8e78d5a94b85e8dc4cd340cac4f83871b43576fa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Really good; equipment display is liked. Selected to become a card.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nA beautiful full-size practical single-edged falchion and its plain dark red leather scabbard, arranged with breathing space across a folded charcoal wool cloth on pale workshop limestone. The complete sword lies diagonally, hilt at lower left, tip at upper right. Proportions are believable for one-handed use: broad steel blade tapering toward a clipped point, subtly curved cutting edge, small simple recurved crossguard in darkened bronze, dark walnut grip and compact oval pommel. A single slender recessed strip of smoky translucent ember-red mineral lies along the blade's blunt spine near the hilt, like an inclusion in forged steel; it has quiet inner red-gold light, not a neon tube or an all-glass blade. The functional steel cutting edge is uninterrupted and substantial. Scabbard lies parallel below, one sensible belt attachment, no dense ornamental filigree or jewels. Close material study with restrained bright steel accents, soft waxed leather, matte woven cloth and chalky stone; finely observed at the guard and mineral, quieter toward peripheral cloth. One strong oblique daylight source and a rich charcoal, iron, walnut and ember palette. Sophisticated high-fantasy craft, not sci-fi, an inventory icon, collage or text-labelled reference sheet. The object alone should be worth looking at.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-4bbb48ee-e708-4c36-9953-e375f0ef6fae.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-08",
+      "title": "The Weather at Her Elbow",
+      "file": "concept-round-08-2026-11-09/08-weather-at-her-elbow.png",
+      "sha256": "749805ea2abf42fd692b3feafef67f53f4dc97e4494e4918d6c43a82edba6424",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Good; selected to become a card.",
+      "prompt": "Edit the supplied painting locally. Remove the entire airship/zeppelin, its balloon, suspended gondola, mooring frame and smoke from the left background. Replace that area with ordinary coherent rooflines, a few quiet stone buildings and the same grey rainy sky. NO flying machine, balloon, vehicle or magical aircraft anywhere. Preserve the woman's identity, face, hair, body, pose, BOTH arms and hands, book, little suspended water lens, green mantle, russet dress, balustrade, rain, lighting and full composition unchanged. Keep the newly painted distant roofs simpler and quieter than the focal woman; no added architectural microdetail. One finished 1536x1024 landscape painting, no text or border.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-8bf3f17b-e7ab-444e-9ccb-8c5d765e0db6.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-09",
+      "title": "The Third Arch of Ambrel",
+      "file": "concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
+      "sha256": "441f5e330a4b4bb1fb5ab9a548eaa2f82cc30fdee8f7bc56f565eec6cf740854",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Very good; the small crane in the distance is especially liked.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy in a world recovering from a fallen empire. Include industry only where the subject brief calls for it. No airships, zeppelins, balloons, floating boats or flying machines anywhere in any background. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nAn arresting wide architectural painting of exploratory Ambrel, a great high-fantasy city of uneven inherited capability. View from a shaded lower riverside stair, looking upward through one enormous ancient pale-stone imperial arch. Within its span rises a tightly built city of warm ochre masonry, steep slate roofs, a few copper domes and a high blue-glazed arcade. A newer narrow iron pedestrian bridge crosses the middle distance on visibly anchored stone bearings. Clear connected stair runs link the river landing, bridge and inhabited terraces; no disconnected paths, impossible cantilevers or buildings hanging in space. Three or four small ordinary citizens provide scale, with a lone woman carrying folded cloth on the nearest step. A stationary bronze lifting frame at a warehouse has a small blue core lamp, a minor hint of selective magical industry; no flying machinery. Bright late afternoon on upper masonry contrasts with deep cool blue shade below. A few scarlet washing lines and green shutters give controlled lively color. The ancient arch and glowing arcade are focal, distant building windows merge into quiet painted rhythms rather than every brick being equally sharp. No enormous billboard, towers of generic fantasy spires, prosperity everywhere or futuristic city. The world feels large, inhabited and layered.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-bced4221-385c-463b-be1b-1fc39dd6aee8.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-10",
+      "title": "The Unclaimed Saint",
+      "file": "concept-round-08-2026-11-09/10-the-unclaimed-saint.png",
+      "sha256": "1139ca0a65a295f9cd2d6a2b4dff64b8d4e28d4f4f9d0299df0d0c9e4a8c2038",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Very good; accepted as visual exploration.",
+      "prompt": "One original high-fantasy painting: a rare uncanny encounter inside a roofless old imperial chapel by the sea. A very tall adult male stranger, about twice an ordinary person's height, stands motionless on a worn mosaic floor. He is COMPLETELY CLOTHED in a substantial opaque ivory full-length long-sleeved tunic and a heavy ochre mantle, covering him continuously from the neck to the ankles. Only his long calm chalk-grey face and relaxed hands are visible; plain shoes beneath the robe. Exactly two arms and two legs, believable anatomy and weight. His closed eyes, broad flat nose and long quiet face feel ancient without being grotesque. A narrow vertical seam of warm light glows within the FOLDS OF THE OPAQUE CLOTH at his chest, illuminating just a small area of fabric; the clothes remain fully solid and opaque. No exposed torso or transparent clothing. At the doorway, a small ordinary adult traveller in a dark coat has paused and looks up, simply painted, giving immediate scale. Wide composition: the giant stranger occupies one side, open sea blue through a missing wall on the other. Clean afternoon sunlight on old chalk stone, restrained warm ivory, ochre and cobalt sea. The wonder is the still stranger's presence and the disproportion between him and the familiar human doorway. Keep the ruin simple and dignified. No halo, wings, crown, machinery, flowers or spectacle of beams. A finished traditional oil-and-acrylic fantasy painting, matte observed materials, varied painted edges, a few resolved focal features and quiet broader secondary marks. Not a photo, glossy render or animation still. 1536 x 1024 landscape, full bleed, no text or border.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-ec7e9951-63fc-4bac-993a-5c0e0802c8d4.png",
+      "selected_for_card": false,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-11",
+      "title": "The Mountain’s Lung",
+      "file": "concept-round-08-2026-11-09/11-the-mountains-lung.png",
+      "sha256": "d2f9d156e351c6e4795a9d5ed5b06bb6cb48876f080449564e26caa849996ca6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Very good; selected to become a card, possibly extra mana/resource support.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy in a world recovering from a fallen empire. Include industry only where the subject brief calls for it. No airships, zeppelins, balloons, floating boats or flying machines anywhere in any background. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nA grand but grounded fantasy industrial interior cut into a mountainside: a stationary steam pumping hall built from heavy timber beams, brick, dark iron and massive bronze fittings. One large reciprocating beam engine dominates, with a readable pivoted overhead beam, one vertical piston cylinder, a connecting rod and a broad flywheel on a solid masonry foundation. Real load paths and a coherent floor. Pipes are few, thick and purposeful, with a modest curl of white steam at a relief valve. In a low firebox at the back, pale blue-white magical heat burns behind an open brick arch; a small adult male stoker in a dark work apron stands beside it, secondary and without luminous connecting threads. Two other small workers along a clearly connected iron-railed gallery establish scale. Warm shafted daylight from one tall slit in the rock lights the brass rim of the flywheel and a work-worn stair; deep mineral-blue shadow, orange brick and warm ochre timber carry the scene. Strong diagonal upward composition with the engine's heavy mechanism as the focal subject, quiet wall passages and economical people. Steam-era workshop cathedral, not a modern power plant, sci-fi factory, gigantic combat robot or floating vessel. A rare ambitious installation within an otherwise uneven world, no ocean of gratuitous gears.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-515dd735-d933-4ef8-9907-2d795b632a2a.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-13",
+      "title": "Cinderwake",
+      "file": "concept-round-08-2026-11-09/13-cinderwake.png",
+      "sha256": "7210959ffa16f9a3c21096aa5e626915dc6a131763b689ed20a8f550a075592c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Good; selected to become a card.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy with uneven steam-era craft in a world recovering from a fallen empire. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nA spectacular original Breachline spell painting, viewed wide from a low ridge above an old fortified road at dusk. A vast advancing CURL of magical fire rolls laterally across the abandoned middle span of a stone causeway, like a breaking wave of molten amber and white-hot cinders, not a falling meteor or a thin energy ribbon. Its heavy luminous body occupies about a third of the canvas; the underside throws fierce orange light across worn paving and the dark faces of the bridge piers. At the near end, a small male fire-caster in a short dark coat braces on two clearly grounded legs, one arm extended naturally toward the curling fire. He is only a few percent of the image, a strong unadorned silhouette; three small male shield-bearers are scrambling toward a stair at the far end, secondary and physically coherent. No gore or burning bodies. Broad coherent violet-blue mountain slopes and a silver river descend beyond the road. A dull rose band of sunset holds the upper distance. The fire has an intensely bright compact centre, generous dark breathing room around it and readable direction of motion. Sparks only near the effect, not uniform particle noise. Paint the landscape in broad, rich shapes, the flame with selected sharp hot accents. Awe and danger, a big event localized to this crossing, not destruction of the world. No caption, no magical circles drawn on the ground, no symmetric fireball.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c2b16632-7389-403b-9333-7c0f0620ad6e.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "round08-14",
+      "title": "The Stone Opens",
+      "file": "concept-round-08-2026-11-09/14-the-stone-opens.png",
+      "sha256": "332035798332179af18de2fadc9464caec7f91cabbc6c25792575bcf20195ba1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator accepted 2026-11-10",
+      "creator_approval": "Really good; selected to become a card.",
+      "prompt": "Use case: stylized-concept. Create ONE finished original Breachline fantasy oil-and-acrylic painting, 1536 x 1024 landscape, full bleed. No text, title, captions, border, inset, collage, logo or signature. High fantasy in a world recovering from a fallen empire. Include industry only where the subject brief calls for it. No airships, zeppelins, balloons, floating boats or flying machines anywhere in any background. Make a compelling painting, not a game-mechanics demonstration. Measured, varied, intentional brushwork describes solid forms. Resolve a few focal accents beautifully; secondary forms remain readable with fewer quieter marks and softer edges, never photographic depth-of-field blur. Brush size and detail belong together. Naturally diffuse painted skin, wool, wood and stone; selective physically appropriate metal, glass and water highlights. No waxy faces, uniform rosy cheeks, pores or all-over scratchy/impasto texture. Keep rich, specific color relationships without flooding everything with one magic color. Believable weight and connected anatomy; each hand or foot traces cleanly to its limb. No generic model faces except where explicitly requested. Keep the scene economical and its imaginative idea clear.\n\nA breathtaking high-fantasy earth-magic scene at the blocked entrance to an ancient mountain road. Two immense slabs of pale sedimentary stone are being eased APART by an unseen force, splitting the old rockfall along believable layers. Their upper edges tower above the few human figures, but the bases remain grounded and pivot on rubble; nothing flies away as a magic vehicle. Through the newly opening tall crooked gap pours brilliant honey-colored late-afternoon sunlight, cutting across cool slate-purple dust and revealing the continuation of the road and a remote green valley. A small ordinary adult woman caster in a plain dark green travelling coat stands to one side in the foreground, feet firmly planted, both hands calmly held out about waist height, shoulders and torso connected; she is small against the stone, not an idealized heroine portrait. Three travellers with one pack mule wait farther back. The caster and a few falling pebbles establish that this is a living event, not a static landscape. Magic appears as a few warm mineral seams briefly brightening deep inside the separating rock, and very localized suspended dust; no luminous strings, glyph diagrams, machinery or crystals glued onto clothing. Low wide viewpoint, enormous readable stone masses, clear gap of light, active falling dust and tiny people. The focal opening is precisely shaped; the near rock's broad planes and distant valley are painterly and selectively simplified. Monumental wonder with weight and believable geology, no explosive fireworks.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-fe14e82f-8fc9-4a74-9a87-6d24744685cb.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
+    },
+    {
+      "key": "selected-card-variant-door-first",
+      "title": "A Door into Snow — first character variant",
+      "file": "selected-card-variants-2026-11-10/door-into-snow-character.png",
+      "sha256": "ecd4f85188942a459e4075734642a3af10bee9fa8e07d809cf3b8b28172571ef",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "active_reference": true,
+      "status": "creator selected for card 2026-11-10",
+      "creator_approval": "Use the first fuller-bust character variant from the NSFW collection, not later variants.",
+      "prompt": "Original Breachline high-fantasy artwork featuring ONE CLEARLY ADULT FICTIONAL WOMAN, late twenties to thirties, matching the supplied reference character's adult facial identity, skin tone, hair and recognizable costume vocabulary. The reference is painted fictional character art, not a real person.\nTraditional oil-and-acrylic illustration with measured visible brushwork, matte natural skin, convincing cloth and metal, locally varied edges and detail. Faces expressive and individual, attractive without replacing the source face with a generic model. No waxy gloss, photographic finish, 3D rendering, anime, doll-like faces or uniform microdetail. In-world fantasy costume, architecture and personal objects; no modern studio, camera, contemporary lingerie or modern items.\nThe requested design is noticeably fuller-busted than the reference, with a naturally curvy adult silhouette and visible tasteful cleavage in a well-constructed low neckline. Retain plausible support, torso and shoulder proportions; no extreme anatomy, balloon proportions or implausibly tiny waist. All intimate areas remain fully covered by opaque clothing. No nudity, sheer bodice, nipples, exposed buttocks or genitals, sexual acts, fetish accessories, bodily fluids, injury or coercion. Whole person and atmosphere are the visual focus, not a cropped body-part study. Clear anatomically connected hands, arms and legs. One finished full-bleed painting; no writing, labels, reference-sheet panels, borders, logo or watermark. This explores a more adult, alluring range within Breachline while remaining non-explicit.\n\nUse the supplied painting as EDIT TARGET. Make a 1536x1024 landscape fuller-busted CHARACTER VARIANT of the same clearly adult woman with olive/light skin, strong dark eyebrows, loose dark low bun, pearl drop earring, deep teal gown with worn gold embroidery and flowing cream sleeves. Preserve her adult face and attentive backward glance, one hand resting on the doorjamb, other holding the brown book against her waist, warm brick study and WINTER PORTAL. Change the gown's torso tailoring to a noticeably fuller natural bust and a broad low neckline showing tasteful visible cleavage with opaque well-supported fabric. Keep the rest of her proportions credible. Her book stays BELOW the bust rather than covering the neckline. CRITICAL CONTINUITY: ordinary LEFT WINDOW still looks out at a warm sunny green SUMMER town; the enchanted doorway at RIGHT opens onto a clearly SNOW-COVERED stone courtyard, bare winter tree and blue banner. These are two different destinations/weather conditions, not a snowstorm entering the warm room. Preserve the portal's thin prismatic edge, correctly connected fingers, books and subdued brass globe. REMOVE the beige caption strip and lettering at bottom: extend original painting naturally to full bleed. No added text, no pinup pose here, keep the moment of poised exploration.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-3a053634-40cb-48ec-9fb9-b5792dc6f808.png",
+      "original_collection_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/door-into-snow-character.png",
+      "selected_for_card": true,
+      "selection_date": "2026-11-10"
     }
   ],
-  "inventory_updated": "2026-11-09",
+  "inventory_updated": "2026-11-10",
   "historical_generated_sheet_count": 17,
   "retained_equipment_slots": 24,
   "new_equipment_proposal_groups": 36,
-  "current_archive": "../breachline-neutral-reference-library-2026-11-09-reviewed-v10.zip",
+  "current_archive": "../breachline-neutral-reference-library-2026-11-10-reviewed-v11.zip",
   "reference_usage_guidance": {
     "purpose": "Initial design references that support continued invention, not a closed catalog.",
     "new_characters": "Create new faces, builds, outfits, armor and weapons beyond these sheets while retaining species-defining anatomy, art direction and setting coherence.",
@@ -1939,5 +2193,7 @@
   "accepted_round4_sheets": 6,
   "accepted_round5_sheets": 5,
   "accepted_round6_sheets": 6,
-  "accepted_round7_sheets": 26
+  "accepted_round7_sheets": 26,
+  "accepted_round8_sheets": 13,
+  "selected_card_variant_sheets": 1
 }

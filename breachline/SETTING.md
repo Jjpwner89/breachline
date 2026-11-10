@@ -34,9 +34,15 @@ New kingdoms have been established and are generally stable, with some cracks. U
 
 Keep the setting large and varied. Great cities can coexist with smaller settlements, rural communities and less capable regions. Magic can compensate for inefficiencies in industry, enabling selected achievements that would otherwise seem out of time, including robots or constructs. Their existence does not require a uniformly modern industrial economy or equal capabilities everywhere.
 
-**Exploratory Ambrel direction:** the creator likes the city backdrop from the Cobalt duelist study as a possible larger-scale Ambrel. Its tall urban fabric, bridges, glazed arcade and magical-city character are visual references; the completed city image is not a settled street plan, map or history. Reference: [Ambrel city direction](art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png).
+**Exploratory Ambrel direction:** the creator likes the city backdrop from the Cobalt duelist study as a possible larger-scale Ambrel. Its tall urban fabric, bridges, glazed arcade and magical-city character are visual references; the completed city image is not a settled street plan or map. Reference: [Ambrel city direction](art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png).
 
 **Tone under exploration:** the creator is interested in greater present-day capability, potentially a world less dominated by the immediate consequences of the old catastrophe and more threatened by powerful forces ahead. Dominion was raised as a possible world-threatening power. Develop these implications gently; the balance of recovery, danger and optimism remains open. The established Cataclysm and approximately 150-year interval remain unchanged by this visual exploration.
+
+### Ambrel and the surviving university (creator direction, 2026-11-10)
+
+Ambrel is a centre of learning and magic. Its university survived the fall of the Empire, preserving a concentration of teaching, practitioners and refined magical technique. Magic is learned, and its practice is especially developed and optimized here. Mages and magical tinkerers also work elsewhere; Ambrel concentrates them rather than monopolizing magic.
+
+The creator compares this advantage to a society where broader education makes minor practical magic more accessible. This is an analogy for the relationship between learning, capability and prosperity, not a one-to-one equation between literacy and magical power. Personal aptitude still matters. Magical industry need not spread in the same way as ordinary industry, and Ambrel's advantages do not make every resident a mage or give every other settlement the same capabilities.
 
 ## Look
 
@@ -53,6 +59,38 @@ The source of magic is disputed:
 - **Gnosis** treats magic as a science, though some of its people have religious leanings.
 
 Lands exist for gameplay only. They play no part in the setting's history or conflicts.
+
+### Attunement, learning and personal energy (creator direction, 2026-11-10)
+
+Magic is present but its skilled use is not very common. The creator's comparison is reading in the Middle Ages, with a stronger inherited component: learning matters, and so does natural aptitude. Most people can feel magic in some way. Sensing it and being able to use it well are different capabilities.
+
+Humans are generally normally attuned. **Tentative:** some species may be unattuned, probably rarely; elves might be more attuned and goblins a little less. These are possible tendencies, not fixed species rankings, numerical modifiers or limits on particular individuals.
+
+**Working model:** people have individual levels of magical energy or capacity. The comparison is muscular strength, but with much wider variation between individuals; the creator's “10–20× as much variation” is a rough sense of scale rather than a fixed numerical power distribution. Learning and technique matter alongside this capacity. How training changes reserves or efficiency, and how energy replenishes, remain open.
+
+Using magic entails exertion, like using muscles. Severe overexertion or exhausting one's magical energy can be fatal. Treat this as a real limit on effort rather than a universal visual effect; exact warning signs, injury thresholds and recovery times are not yet fixed.
+
+### Magical energy and industry (creator direction, 2026-11-10)
+
+Magical energy powers magical machinery. Some magical energy also exists in the world, and magical beings create or sustain varying amounts, often small. Some industries rely on imbued items, charged by mages or using magical stones and materials. A practitioner need not stand beside a device continually feeding it.
+
+**The Mountain's Lung burns stored mana from stones to provide energy.** This is the creator's explanation of the selected engine painting. What happens to the stones afterward, whether they can be recharged, and the wider supply of such material remain undecided. This established example does not require all machinery to use the same source.
+
+Art: [The Mountain's Lung](art/reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png).
+
+Stored mana in the fiction is distinct from the game's mana rules. This lore does not introduce a player mana bank, a building system or a new card type. The selected painting's possible extra-mana card effect remains for the card-design conversation.
+
+### Portals (creator direction, 2026-11-10)
+
+Portals are possible but generally rare. Their range, energy demands, destination requirements and the reason for their rarity remain open. An approved portal painting establishes an instance, not a widespread transport network.
+
+### Healing, revival and spirits (creator direction, 2026-11-10)
+
+Healing has substantial capabilities but real limits. The creator's comparison is modern medicine: much can be done, yet people still die despite treatment. Healing does not make death inconsequential.
+
+**Tentative:** some ways of bringing people back may exist, at a cost. Approaches to revival should reflect the factions' morality. Dominion is willing to accept someone returning diminished. What that diminishment entails, the costs and methods of revival, and the other factions' specific positions remain open.
+
+Spirits can be conscious, but are generally distant, weak, less present or diffuse. Think of low magical energy or a weaker presence in the world; do not assume every spirit is a fully vigorous person who merely happens to be transparent. Individual appearances and degrees of presence can vary.
 
 ### Working boundaries of magic and craft (creator direction, 2026-11-08)
 
@@ -290,6 +328,10 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 1. **Names:** the gods and the continents still need names. They can be longer than one word.
 2. **The snap:** which of the ideas above, if any, is the true cause of the Cataclysm?
 3. **Title:** Breachline is still a working title, and nothing in the setting explains it yet.
+4. **Personal magic:** how energy replenishes, what training changes, and the limits and warning signs of overexertion. Species differences remain tentative.
+5. **Stored energy:** the origin and availability of magical materials, and whether spent mana-stones are consumed, permanently exhausted or rechargeable. The Mountain's Lung's use of stored mana is established.
+6. **Portals:** what makes them rare, where they can connect and what they cost.
+7. **Revival and spirits:** the costs of return, what being diminished means, and each faction's moral limits; the extent of a spirit's agency remains open.
 
 ## Proposed links between cards
 

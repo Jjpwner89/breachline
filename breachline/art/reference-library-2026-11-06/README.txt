@@ -1,7 +1,7 @@
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 
-70 active PNG sheets, all 1536 x 1024.
+84 active PNG sheets, all 1536 x 1024.
 7 species sheets: three body views and six heads each.
 1 additional human sheet: eight heads, preserving the first human sheet.
 2 retained first-batch equipment sheets: Vigil and Gnosis, 12 slots each.
@@ -13,6 +13,8 @@ BREACHLINE - NEUTRAL REFERENCE LIBRARY
 6 round-06 references: four whole sheets and two preserved components.
 26 accepted round-07 paintings across 25 subjects: nine originals and seventeen
 approved revisions, including both cedar-roof variants and the Cobalt rapier card art.
+13 accepted round-08 paintings; Night Embassy remains outside the library.
+1 selected first Door into Snow character variant for card art.
 Total: 50 head studies (14 human), 24 retained equipment design slots,
 and 36 new equipment design groups awaiting review.
 
@@ -329,11 +331,15 @@ Generation prompt records, marked reconstructed briefs, source provenance, dimen
 and checksums are in prompts-and-manifest.json.
 
 CURRENT PACKAGE
-breachline-neutral-reference-library-2026-11-09-reviewed-v10.zip contains
-only the 70 active images, this guide and prompt/review records. The original first-batch
+breachline-neutral-reference-library-2026-11-10-reviewed-v11.zip contains
+only the 84 active images, this guide and prompt/review records. The original first-batch
 ZIP predates the removal review and is superseded as a current reference set.
 
 ROUND 07 REVIEW — 2026-11-09
 All seventeen revised paintings are accepted and included in middle-setting-round-07-2026-11-09/. Nine earlier approved paintings also remain, for 26 images across 25 subjects; both cedar-roof variants are valid.
 Use 02/13 for ordinary face casting, 09 for quietly simplified distance, 04 for blended armor influences, 07 for abstract functional construct design, and 00/18 for selective material reflections. Consult each for the relevant quality and invent beyond it.
 Cobalt rapier remains approved finished Equipment card art; roof glider is included in the setting. This selection does not approve unrelated pending batches or settle new gameplay, biology, prevalence or faction-wide rules.
+
+ROUND 08 REVIEW — 2026-11-10
+Thirteen paintings accepted in concept-round-08-2026-11-09/. Especially liked: the Ashwing portrait, the locksmith's occupational levitation, Engine at Rest, Coalback's First Frost, subtle healing light, the falchion display and Ambrel's small crane. Night Embassy is not selected.
+Card-selected round-08 subjects: 06, 07, 08, 11, 13, 14. The first Door into Snow character variant in selected-card-variants-2026-11-10/ is also selected, along with recorded round-07 subjects. These selections do not assign rules, statistics or implementation.
