@@ -49,7 +49,10 @@
     rabblerouser: 'goblin-rabble-rouser', seedfall: 'seedfall', gravecaller: 'gravecaller', apprentice: 'lantern-apprentice', drummer: 'cinder-cant-drummer',
     tithekeeper: 'tithe-keeper', assassin: 'court-assassin', skirmisher: 'cinder-skirmisher', packhunter: 'orc-pack-hunter', ridgewolves: 'ridge-wolves',
     outrider: 'oath-outrider', sergeant: 'shieldline-sergeant', ironbark: 'ironbark-sentinel', martyr: 'cinder-martyr', vigilkeeper: 'vigil-keeper',
-    acolyte: 'still-flame-acolyte', journeyman: 'artificers-journeyman'
+    acolyte: 'still-flame-acolyte', journeyman: 'artificers-journeyman',
+    veteran: 'cinderline-veteran', falchion: 'redglass-falchion', rainreader: 'rain-reader', mountainlung: 'the-mountains-lung', cinderwake: 'cinderwake',
+    stoneopens: 'the-stone-opens', torchrunner: 'copperlane-torch-runner', lanner: 'ash-white-lanner', winterdoor: 'winterdoor-keeper',
+    mourner: 'mothwake-mourner', rapier: 'cobalt-rapier', corewright: 'corewright'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -195,6 +198,7 @@
       var chips = d.keywords.map(function (k) { return '<span class="chip">' + k + '</span>'; });
       u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + (e.left ? ' ' + e.left : '') + '</span>'); });
       if (u.tempAtk) chips.push('<span class="chip">+' + u.tempAtk + ' this turn</span>');
+      if (u.stride && u.owner === S.active) chips.push('<span class="chip">+' + u.stride + ' move</span>');
       if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
       if (u.frozen >= S.turn) chips.push('<span class="chip state">Frozen</span>');
       if (u.veiled) chips.push('<span class="chip state">Veiled</span>');

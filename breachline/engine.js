@@ -138,6 +138,19 @@ var Engine = (function () {
     unit('vigilkeeper', 'Vigil-keeper', 'W', 2, 1, 1, 3, { keeperLife: 1, text: 'When another of your units dies, you gain 1 life.' }),
     unit('acolyte', 'Still Flame acolyte', 'W', 2, 1, 1, 3, { loyal: 2, text: 'Loyal: +2 attack and +2 health while you have another Still Flame unit.' }),
     unit('journeyman', "Artificer's journeyman", 'U', 2, 1, 1, 3, { loyal: 2, text: "Loyal: +2 attack and +2 health while you have another Artificers unit." }),
+    // Cards from the selected paintings, 92 to 103 in CARD_PROPOSALS.md.
+    unit('veteran', 'Cinderline veteran', 'R', 3, 1, 3, 4, { keywords: ['Armed'], armed: 1, text: 'Armed: +1 attack and +1 health while it carries equipment.' }),
+    { id: 'falchion', name: 'Redglass falchion', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, grants: ['Hunt'], text: 'Equip one of your units: +1 attack and Hunt (+2 attack against a damaged unit).' },
+    unit('rainreader', 'Rain-reader', 'U', 2, 1, 1, 3, { ability: { key: 'rain', label: 'Clear' }, text: 'Ability: clear the effect from a tile within 2 tiles, and your unit there recovers 1 health.' }),
+    { id: 'mountainlung', name: "The Mountain's Lung", type: 'spell', colour: 'N', cost: 2, wants: 0, bonusNext: 3, text: 'You have 3 extra mana next turn.' },
+    { id: 'cinderwake', name: 'Cinderwake', type: 'spell', colour: 'R', cost: 3, wants: 1, aim: { wave: 2, tile: 'burn', turns: 2 }, text: "Aim at a tile: a wave of fire rolls from it toward the enemy's side, dealing 2 damage to each enemy in its path. Every tile it crosses burns for 2 turns." },
+    { id: 'stoneopens', name: 'The stone opens', type: 'spell', colour: 'G', cost: 3, wants: 1, stride: 1, text: 'Each of your units can move 1 extra tile this turn.' },
+    unit('torchrunner', 'Copperlane torch-runner', 'R', 2, 1, 2, 1, { keywords: ['Swift'], trail: true, text: 'Swift. When it moves, the tile it leaves burns until your next turn.' }),
+    unit('lanner', 'Ash-white lanner', 'R', 3, 1, 2, 3, { keywords: ['Flying', 'Hunt'], text: 'Flying: moves 2 tiles, over other units. Hunt: +2 attack against a damaged unit.' }),
+    unit('winterdoor', 'Winterdoor keeper', 'U', 3, 1, 2, 3, { ability: { key: 'winterdoor', label: 'Open the door', turns: 2 }, text: "Ability: an enemy's tile within 2 tiles freezes until the end of your next turn. Units on frozen tiles can't move." }),
+    unit('mourner', 'Mothwake mourner', 'B', 3, 1, 2, 3, { mournLife: 1, text: 'When another of your units dies, the enemy loses 1 life.' }),
+    { id: 'rapier', name: 'Cobalt rapier', type: 'enchant', equipment: true, colour: 'U', cost: 3, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, grants: ['Ranged'], text: 'Equip one of your units: +1 attack and Ranged (attacks up to 2 tiles away).' },
+    unit('corewright', 'Corewright', 'U', 3, 1, 2, 3, { equipDiscount: 1, text: 'Your equipment costs 1 less.' }),
     // Cards only ever added to a hand by another card. They're conjured, and never go in a deck.
     { id: 'spark', name: 'Spark', type: 'spell', colour: 'U', cost: 1, wants: 0, blast: 1, token: true, text: '1 damage to an enemy unit.' },
     { id: 'warchant', name: 'War-chant', type: 'spell', colour: 'R', cost: 1, wants: 0, chant: 2, token: true, text: 'One of your units gets +2 attack this turn.' },
@@ -170,13 +183,13 @@ var Engine = (function () {
   var FACTIONS = [
     { id: 'sunmane', name: 'The Sunmane Oath', colour: 'W', cards: ['spearman', 'cub', 'knight', 'sentinel', 'lancer', 'warden', 'shield', 'banner', 'shieldbearer', 'huntress', 'matriarch', 'lioness', 'outrider', 'sergeant', 'muster'] },
     { id: 'stillflame', name: 'The Still Flame', colour: 'W', cards: ['carrier', 'cleric', 'stillflame', 'vigilkeeper', 'acolyte', 'consecrate'] },
-    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance', 'glyphwright', 'apprentice', 'frost'] },
-    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench', 'journeyman'] },
+    { id: 'conclave', name: 'The Lantern Conclave', colour: 'U', cards: ['decoy', 'conjurer', 'scholar', 'arcanist', 'displacement', 'glyph', 'sifting', 'phantasm', 'adept', 'examiner', 'fieldscholar', 'wardwright', 'brightlance', 'glyphwright', 'apprentice', 'frost', 'rainreader', 'winterdoor'] },
+    { id: 'artificers', name: 'The Artificers', colour: 'U', cards: ['lampwright', 'chorister', 'mending', 'siegewalker', 'wovenward', 'quench', 'journeyman', 'rapier', 'corewright'] },
     { id: 'ashen', name: 'The Ashen Court', colour: 'B', cards: ['noble', 'warrant', 'squire', 'calleddebt', 'envoy', 'retainer', 'veiladept', 'tithekeeper', 'assassin'] },
-    { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise', 'rats', 'barrowpriest', 'colossus', 'gravecaller', 'gravesoil', 'ashsower'] },
-    { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex', 'firepot', 'chieftain', 'rabblerouser', 'packhunter', 'stormstrike'] },
-    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall', 'flameblade', 'drummer', 'skirmisher', 'martyr', 'scorch', 'salamander'] },
-    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender', 'goblinscout', 'ironbark', 'thornbrake', 'seedfall'] },
+    { id: 'gravebound', name: 'The Gravebound', colour: 'B', cards: ['thrall', 'harvester', 'raise', 'rats', 'barrowpriest', 'colossus', 'gravecaller', 'gravesoil', 'ashsower', 'mourner'] },
+    { id: 'warhorde', name: 'The Warhorde', colour: 'R', cards: ['goblin', 'raider', 'warchief', 'drake', 'giant', 'dragon', 'firebolt', 'hex', 'firepot', 'chieftain', 'rabblerouser', 'packhunter', 'stormstrike', 'torchrunner'] },
+    { id: 'cinder', name: 'The Cinder Clans', colour: 'R', cards: ['clanraiders', 'berserker', 'captain', 'cinderfall', 'flameblade', 'drummer', 'skirmisher', 'martyr', 'scorch', 'salamander', 'veteran', 'falchion', 'cinderwake'] },
+    { id: 'thornwardens', name: 'The Thornwardens', colour: 'G', cards: ['sapling', 'saboteur', 'wayfinder', 'shifting', 'grovetender', 'goblinscout', 'ironbark', 'thornbrake', 'seedfall', 'stoneopens'] },
     { id: 'herd', name: 'The Elder Herd', colour: 'G', cards: ['owl', 'bull', 'boar', 'mossback', 'herdmother', 'ridgewolves'] }
   ];
   FACTIONS.forEach(function (f) { f.cards.forEach(function (id) { CARDS[id].faction = f.id; }); });
@@ -214,8 +227,11 @@ var Engine = (function () {
   function card(i) { return CARDS[i.c]; }
   function unitAt(s, r, c) { for (var i = 0; i < s.units.length; i++) if (s.units[i].r === r && s.units[i].c === c) return s.units[i]; return null; }
   function unitById(s, uid) { for (var i = 0; i < s.units.length; i++) if (s.units[i].uid === uid) return s.units[i]; return null; }
-  function hasKw(u, k) { return CARDS[u.cardId].keywords.indexOf(k) >= 0; }
-  function speed(u) { return hasKw(u, 'Swift') || hasKw(u, 'Flying') ? 2 : 1; }
+  // Equipment such as the Redglass falchion can grant a keyword to the unit carrying it.
+  function hasKw(u, k) {
+    return CARDS[u.cardId].keywords.indexOf(k) >= 0 || (u.enchants || []).some(function (e) { return (CARDS[e.c].grants || []).indexOf(k) >= 0; });
+  }
+  function speed(u) { return (hasKw(u, 'Swift') || hasKw(u, 'Flying') ? 2 : 1) + (u.stride || 0); }
   function range(u) { return hasKw(u, 'Longshot') ? 3 : hasKw(u, 'Ranged') || u.tempRange ? 2 : 1; }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
@@ -308,7 +324,8 @@ var Engine = (function () {
   // Soft coloured mana: each land short of what the card wants adds 1 to its cost.
   function costOf(s, p, c) {
     var have = s.players[p].lands.filter(function (l) { return l.colour === c.colour; }).length;
-    return c.cost + Math.max(0, c.wants - have);
+    var cheaper = c.equipment && s.units.some(function (o) { return o.owner === p && CARDS[o.cardId].equipDiscount; }) ? 1 : 0;
+    return Math.max(0, c.cost + Math.max(0, c.wants - have) - cheaper);
   }
 
   function newGame(opts) {
@@ -529,7 +546,7 @@ var Engine = (function () {
             if (landing(s, pi).length) picks(s, pi, c.summons.length, null).forEach(function (at) { out.push({ type: 'cast', card: i.id, at: at }); });
           } else if (c.chant) {
             s.units.forEach(function (a) { if (a.owner === pi) out.push({ type: 'cast', card: i.id, target: a.uid }); });
-          } else if (c.draw || c.extraLand || c.sift || c.coin) {
+          } else if (c.draw || c.extraLand || c.sift || c.coin || c.bonusNext) {
             out.push({ type: 'cast', card: i.id });
           } else if (c.raise) {
             if (backTile(s, pi) !== null) p.discard.forEach(function (d) {
@@ -542,7 +559,7 @@ var Engine = (function () {
             s.units.forEach(function (a) { if (a.owner === pi && a.hp < a.maxHp) out.push({ type: 'cast', card: i.id, target: a.uid }); });
           } else if (c.blast) {
             s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled) out.push({ type: 'cast', card: i.id, target: e.uid }); });
-          } else if (c.fortify) {
+          } else if (c.fortify || c.stride) {
             if (s.units.some(function (a) { return a.owner === pi; })) out.push({ type: 'cast', card: i.id });
           } else if (c.passage) {
             s.units.forEach(function (a) {
@@ -613,6 +630,13 @@ var Engine = (function () {
         STEPS.forEach(function (d) { if (onBoard(u.r + d[0], u.c + d[1])) out.push({ type: 'ability', unit: u.uid, r: u.r + d[0], c: u.c + d[1] }); });
       } else if (ab.key === 'errant') {
         if (backTile(s, pi) !== null) out.push({ type: 'ability', unit: u.uid });
+      } else if (ab.key === 'rain') {
+        for (var wr = 0; wr < ROWS; wr++) for (var wc = 0; wc < COLS; wc++) {
+          var wet = unitAt(s, wr, wc);
+          if (dist(u, { r: wr, c: wc }) <= 2 && (tileAt(s, wr, wc) || (wet && wet.owner === pi && wet.hp < wet.maxHp))) out.push({ type: 'ability', unit: u.uid, r: wr, c: wc });
+        }
+      } else if (ab.key === 'winterdoor') {
+        s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, r: e.r, c: e.c }); });
       }
     });
     out.push({ type: 'endTurn' });
@@ -708,6 +732,13 @@ var Engine = (function () {
         say(s, od.name + ' keeps the vigil, and ' + mark(s, pl) + ' gains ' + od.keeperLife + ' life.');
       }
       if (od.gravecall && dist(o, u) === 1) callers.push(o);
+      if (od.mournLife && s.winner === null) {
+        var foe = s.players[1 - u.owner];
+        foe.life -= od.mournLife;
+        s.fx.push({ summoner: 1 - u.owner, text: '-' + od.mournLife });
+        say(s, od.name + ' mourns, and ' + mark(s, foe) + ' loses ' + od.mournLife + ' life.');
+        if (foe.life <= 0) { foe.life = 0; s.winner = u.owner; say(s, mark(s, pl) + ' wins.'); }
+      }
     });
     if (d.deathDraw) {
       draw(s, u.owner);
@@ -721,15 +752,16 @@ var Engine = (function () {
     if (spot && spot.kind === 'blight' && emptyTile(s, u.r, u.c)) conjure(s, spot.owner, 'thrall', u.r, u.c, 'The grave soil');
   }
 
-  // Loyal: a stat bonus while another unit of the same faction is on your side. Health comes and goes with it,
+  // Loyal: a stat bonus while another unit of the same faction is on your side. Armed works the same way while the unit carries equipment. Health comes and goes with it,
   // so a damaged unit can die when it loses the bonus.
   function syncLoyal(s) {
     for (var pass = 0; pass < 4; pass++) {
       var changed = false;
       s.units.slice().forEach(function (u) {
         var d = CARDS[u.cardId];
-        if (!d.loyal || s.units.indexOf(u) < 0) return;
-        var on = d.faction && s.units.some(function (o) { return o !== u && o.owner === u.owner && CARDS[o.cardId].faction === d.faction; }) ? d.loyal : 0;
+        if ((!d.loyal && !d.armed) || s.units.indexOf(u) < 0) return;
+        var on = d.armed ? (u.enchants.some(function (e) { return CARDS[e.c].equipment; }) ? d.armed : 0)
+          : d.faction && s.units.some(function (o) { return o !== u && o.owner === u.owner && CARDS[o.cardId].faction === d.faction; }) ? d.loyal : 0;
         var was = u.loyal || 0;
         if (on === was) return;
         changed = true;
@@ -842,7 +874,7 @@ var Engine = (function () {
   }
 
   function finishTurn(s) {
-    s.units.forEach(function (u) { u.tempAtk = 0; u.tempRange = false; u.noAttack = false; });
+    s.units.forEach(function (u) { u.tempAtk = 0; u.tempRange = false; u.noAttack = false; u.stride = 0; });
     var p = s.players[s.active], coins = p.hand.filter(function (i) { return CARDS[i.c].coin; }).length;
     if (coins) {
       p.life -= coins;
@@ -948,6 +980,14 @@ var Engine = (function () {
           for (var dn = 0; dn < c.draw; dn++) draw(s, pi);
           say(s, mark(s, p) + ' casts ' + c.name + ' and draws ' + c.draw + ' cards.');
         }
+        if (c.bonusNext) {
+          p.bonusMana = (p.bonusMana || 0) + c.bonusNext;
+          say(s, mark(s, p) + ' casts ' + c.name + ' and will have ' + c.bonusNext + ' extra mana next turn.');
+        }
+        if (c.stride) {
+          s.units.forEach(function (a) { if (a.owner === pi) a.stride = c.stride; });
+          say(s, mark(s, p) + ' casts ' + c.name + ', and their units can move further this turn.');
+        }
         if (c.extraLand) {
           p.extraLands += 1;
           say(s, mark(s, p) + ' casts ' + c.name + ' and may play an extra land.');
@@ -1015,8 +1055,14 @@ var Engine = (function () {
         break;
       case 'move':
         u = unitById(s, m.unit);
+        var left = { r: u.r, c: u.c };
         u.r = m.r; u.c = m.c; u.moved = true; u.walked = true;
         say(s, CARDS[u.cardId].name + ' moves.');
+        // The torch-runner's trail burns until its owner's next turn, so it lasts through the enemy's turn.
+        if (CARDS[u.cardId].trail) {
+          setTile(s, left.r, left.c, 'burn', pi, 1);
+          s.tiles[left.r + ',' + left.c].until = s.turn + 1;
+        }
         tileHits(s, u, true);
         break;
       case 'attack':
@@ -1100,6 +1146,14 @@ var Engine = (function () {
         } else if (ab.key === 'snare' || ab.key === 'blight') {
           setTile(s, m.r, m.c, ab.key, pi, ab.turns);
           say(s, CARDS[u.cardId].name + (ab.key === 'snare' ? ' sets a snare.' : ' blights the ground.'));
+        } else if (ab.key === 'rain') {
+          var dry = tileAt(s, m.r, m.c), wet = unitAt(s, m.r, m.c);
+          if (dry) delete s.tiles[m.r + ',' + m.c];
+          say(s, CARDS[u.cardId].name + (dry ? ' washes the tile clean.' : ' calls the rain.'));
+          if (wet && wet.owner === pi && wet.hp < wet.maxHp) heal(s, wet, 1);
+        } else if (ab.key === 'winterdoor') {
+          setTile(s, m.r, m.c, 'frost', pi, ab.turns);
+          say(s, CARDS[u.cardId].name + ' opens a door to winter.');
         } else if (ab.key === 'errant') {
           // Errant: the summon lands on a random free tile of the back row.
           var freeCols = [];
@@ -1158,6 +1212,20 @@ var Engine = (function () {
   function castAt(s, pi, c, r, col) {
     var a = c.aim, here = unitAt(s, r, col), hurt = [];
     say(s, mark(s, s.players[pi]) + ' casts ' + c.name + ' at row ' + r + ', column ' + col + '.');
+    // Cinderwake rolls from the tile toward the enemy's back row, hitting each enemy on the way and setting every tile it crosses alight.
+    if (a.wave) {
+      var dir = pi === 0 ? -1 : 1;
+      for (var wr = r; wr >= 0 && wr < ROWS; wr += dir) {
+        var o = unitAt(s, wr, col);
+        if (o && o.owner !== pi) {
+          say(s, c.name + ' hits ' + CARDS[o.cardId].name + ' for ' + damage(s, o, a.wave) + '.');
+          hurt.push(o);
+        }
+        setTile(s, wr, col, a.tile, pi, a.turns);
+      }
+      hurt.forEach(function (o) { if (o.hp <= 0 && s.units.indexOf(o) >= 0) kill(s, o); });
+      return;
+    }
     if (here && a.hit) {
       say(s, c.name + ' hits ' + CARDS[here.cardId].name + ' for ' + damage(s, here, a.hit) + '.');
       hurt.push(here);

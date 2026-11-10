@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "status": "final_for_card_building",
   "purpose": "Authoritative image selection for the next Breachline card-building session.",
   "usage": [
@@ -13,10 +13,10 @@
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 106,
-    "new_card_art": 33,
-    "already_used_by_game": 73,
-    "existing_card_ids": 73
+    "final_images": 117,
+    "new_card_art": 32,
+    "already_used_by_game": 85,
+    "existing_card_ids": 85
   },
   "new_art_distribution": {
     "W": {
@@ -2253,11 +2253,11 @@
       "id": "cobalt-rapier",
       "title": "Cobalt Rapier",
       "status": "final_for_card_building",
-      "availability": "new_card_art",
-      "colour": null,
-      "alignment": "Unassigned — creator selection pending",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
       "suggested_type": "Equipment",
-      "possible_role": "Open; subject and Equipment type selected, rules and cost undecided",
+      "possible_role": "Equipment: +1 attack and Ranged",
       "png": "cobalt-rapier.png",
       "web_jpeg": "web/cobalt-rapier.jpg",
       "dimensions": [
@@ -2266,8 +2266,245 @@
       ],
       "sha256": "6c5b9b1b098133b350007d523ef7537da608ce7f7078191112bf7699e4601a04",
       "web_sha256": "da5280ef3128e08ef11e01736352d53eca79db18a0316da9d8510f615df5d260",
-      "card_ids": [],
+      "card_ids": [
+        "rapier"
+      ],
       "creator_approval": "2026-11-09: exceptional, no notes"
+    },
+    {
+      "id": "cinderline-veteran",
+      "title": "Cinderline Veteran",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "png": "cinderline-veteran.png",
+      "web_jpeg": "web/cinderline-veteran.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6bb354c5a9053663f76273d80f3e8a1c2e29a80e9604dfced664af3b0ce0c073",
+      "web_sha256": "fa4484f29c6d8ed34f09b51e8b74a9b277c4c1262b07a504ed7cf0bc131c6488",
+      "card_ids": [
+        "veteran"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/06-cinderline-veteran.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "redglass-falchion",
+      "title": "Redglass Falchion",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "png": "redglass-falchion.png",
+      "web_jpeg": "web/redglass-falchion.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0d1076f0f475b6e425f775fa8e78d5a94b85e8dc4cd340cac4f83871b43576fa",
+      "web_sha256": "3bc157bdc9250a87719b968b1ceacf6fe4781208353cc9d6b3f2e6d3751d9763",
+      "card_ids": [
+        "falchion"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/07-redglass-falchion.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "rain-reader",
+      "title": "The Weather at Her Elbow",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "png": "rain-reader.png",
+      "web_jpeg": "web/rain-reader.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "749805ea2abf42fd692b3feafef67f53f4dc97e4494e4918d6c43a82edba6424",
+      "web_sha256": "1852c2099a1991d185b0d7ecef02e508c18e731a224ca5998a4e006277ce5e02",
+      "card_ids": [
+        "rainreader"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/08-weather-at-her-elbow.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "the-mountains-lung",
+      "title": "The Mountain's Lung",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "N",
+      "alignment": "Neutral",
+      "png": "the-mountains-lung.png",
+      "web_jpeg": "web/the-mountains-lung.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d2f9d156e351c6e4795a9d5ed5b06bb6cb48876f080449564e26caa849996ca6",
+      "web_sha256": "7ebddc44482cbf7a027664af06e328601781c2244958ee7ec755b5107c27a685",
+      "card_ids": [
+        "mountainlung"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "cinderwake",
+      "title": "Cinderwake",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "png": "cinderwake.png",
+      "web_jpeg": "web/cinderwake.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7210959ffa16f9a3c21096aa5e626915dc6a131763b689ed20a8f550a075592c",
+      "web_sha256": "1fbe1124f7f89d1d3a86d475a2f4f8a8744809dec2df909c31913e17d5ea4aa6",
+      "card_ids": [
+        "cinderwake"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "the-stone-opens",
+      "title": "The Stone Opens",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "G",
+      "alignment": "Genesis / green",
+      "png": "the-stone-opens.png",
+      "web_jpeg": "web/the-stone-opens.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "332035798332179af18de2fadc9464caec7f91cabbc6c25792575bcf20195ba1",
+      "web_sha256": "14262f01d783fe981a4dfc23b5c41d4096a64c0c4fc781df5366407a57174a5a",
+      "card_ids": [
+        "stoneopens"
+      ],
+      "source": "reference-library-2026-11-06/concept-round-08-2026-11-09/14-the-stone-opens.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "copperlane-torch-runner",
+      "title": "Copperlane Torch-runner",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "png": "copperlane-torch-runner.png",
+      "web_jpeg": "web/copperlane-torch-runner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4baa502fbe614dcd35c4f07479e85deee883bb452cd56aee9cf4c7399775ea34",
+      "web_sha256": "8c21c456c05d1e971eaaad75ce7750173d95ac16965cd4deff92dc70843ebbc9",
+      "card_ids": [
+        "torchrunner"
+      ],
+      "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png",
+      "selected_date": "2026-11-10",
+      "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
+    },
+    {
+      "id": "ash-white-lanner",
+      "title": "Ash-white Lanner",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "R",
+      "alignment": "Fervor / red",
+      "png": "ash-white-lanner.png",
+      "web_jpeg": "web/ash-white-lanner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "716f81c2f45324cf0824cf2cb3d3a1c234897ee2b3730600d90b0f773b1bc7b3",
+      "web_sha256": "a6afcb5ace0d6b90834746c0d6696fac6a6a19ce2334dbcfa3d08acbdefb00e1",
+      "card_ids": [
+        "lanner"
+      ],
+      "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png",
+      "selected_date": "2026-11-10",
+      "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
+    },
+    {
+      "id": "winterdoor-keeper",
+      "title": "A Door into Snow",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "png": "winterdoor-keeper.png",
+      "web_jpeg": "web/winterdoor-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ecd4f85188942a459e4075734642a3af10bee9fa8e07d809cf3b8b28172571ef",
+      "web_sha256": "6df473e76f609ce49e65436568af2e27e929282668ad55f8bf3b730e55d52b79",
+      "card_ids": [
+        "winterdoor"
+      ],
+      "source": "reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png",
+      "selected_date": "2026-11-10"
+    },
+    {
+      "id": "mothwake-mourner",
+      "title": "Mothwake Mourner",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "B",
+      "alignment": "Dominion / black",
+      "png": "mothwake-mourner.png",
+      "web_jpeg": "web/mothwake-mourner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4f36fc073dab4446f893f5b81621a2cec2d8f9135277e58e18a3e1fe92486f20",
+      "web_sha256": "ce26b8d35f8d6b15c04a845540f25e5566ddfe72e2dc40e7fea72f0d2bd52a45",
+      "card_ids": [
+        "mourner"
+      ],
+      "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png",
+      "selected_date": "2026-11-10",
+      "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
+    },
+    {
+      "id": "corewright",
+      "title": "Corewright's Bench",
+      "status": "final_for_card_building",
+      "availability": "already_used_by_game",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "png": "corewright.png",
+      "web_jpeg": "web/corewright.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "32c7f3e233ccc61d5d745526fe21bc682889287614dbfb95f793a0b128cdb1fa",
+      "web_sha256": "b54e39f563ddc907c5e7b6a9bd4cc505fdf0ba7ff7c235d0e0b03d097858e42a",
+      "card_ids": [
+        "corewright"
+      ],
+      "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png",
+      "selected_date": "2026-11-10",
+      "game_crop": "Title strip removed: source crop x 55, y 0, 1425 x 950, scaled to 1536 x 1024. The full reference PNG is unchanged."
     }
   ]
 }

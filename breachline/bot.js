@@ -16,6 +16,15 @@ var Bot = (function () {
       if (o !== here && dist(o, { r: r, c: col }) === 1 && (a.splashAll || o.owner !== pi)) v += sign(o) * (a.splash >= o.hp ? worth(o) + 30 : 5);
     });
     var spots = [{ r: r, c: col }];
+    // Cinderwake: every tile from the aimed one to the enemy back row, hurting only enemies.
+    if (a.wave) {
+      spots = [];
+      for (var wr = r; wr >= 0 && wr < E.ROWS; wr += pi === 0 ? -1 : 1) {
+        spots.push({ r: wr, c: col });
+        var w = unitAt(s, wr, col);
+        if (w && w.owner !== pi) v += hurtScore(w, a.wave);
+      }
+    }
     if (a.spread) spots = spots.concat([[1, 0], [-1, 0], [0, 1], [0, -1]].map(function (d) { return { r: r + d[0], c: col + d[1] }; }));
     spots.forEach(function (t) {
       var u = unitAt(s, t.r, t.c), near = s.units.filter(function (e) { return e.owner !== pi && dist(e, t) === 1; }).length;
@@ -121,6 +130,15 @@ var Bot = (function () {
         }
         if (c.summons) return 100 + c.cost * 20;
         if (c.coin) return 60;
+        if (c.bonusNext) {
+          // Worth it only with a card in hand that the extra mana would bring within reach next turn.
+          var next = p.lands.length + 1 + c.bonusNext;
+          return p.hand.some(function (h) { var hc = E.CARDS[h.c]; return hc.type !== 'land' && E.costOf(s, pi, hc) > p.lands.length + 1 && E.costOf(s, pi, hc) <= next; }) ? 45 : -1;
+        }
+        if (c.stride) {
+          var ready = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.moved; }).length;
+          return ready >= 3 ? 20 + ready * 12 : -1;
+        }
         if (c.chant) {
           t = unitById(s, m.target);
           var ready = t.summonedTurn !== s.turn && !t.acted && !t.noAttack;
@@ -167,6 +185,15 @@ var Bot = (function () {
         if (key === 'tend') return 45 + worth(unitById(s, m.target)) / 10;
         if (key === 'hold') return 30 + E.attackOf(s, unitById(s, m.target)) * 5;
         if (key === 'errant') return 55;
+        if (key === 'rain') {
+          var wet = E.tileAt(s, m.r, m.c), there = unitAt(s, m.r, m.c), rv = -1;
+          if (there && there.owner === pi && there.hp < there.maxHp) rv = 15;
+          if (wet && there && there.owner === pi && tileHarm(s, there, m.r, m.c) > 0) rv = 45;
+          else if (wet && wet.owner === foe && wet.kind !== 'frost') rv = Math.max(rv, 12);
+          else if (wet && wet.kind === 'frost' && there && there.owner === pi) rv = 40;
+          return rv;
+        }
+        if (key === 'winterdoor') return 25 + E.attackOf(s, unitAt(s, m.r, m.c)) * 4;
         if (key === 'snare') {
           var near = s.units.filter(function (e) { return e.owner === foe; }).map(function (e) { return dist(e, m); });
           return near.length ? 30 - Math.min.apply(null, near) * 6 : -1;
