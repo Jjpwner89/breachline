@@ -4,7 +4,29 @@ Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. Th
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
-Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. None of 104 to 188 are built, and most need art. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
+Cards 104 to 133 were proposed on 2026-11-10, after a balance review, and approved with changes the same day. Cards 134 to 188, which fill out the roster, were proposed later that day. All of 104 to 191 except #113 and #176 were built on 2026-11-10, after Codex finished their art; see "Cards 104 to 191 are built" below. Keyword changes to existing cards were built the same day, in "Keywords decided on 2026-11-10". The white and black starters were refreshed the same day; the other starters and the campaign enemy decks are unchanged, so most of cards 1 to 103 show up only in the deck builder and in campaign rewards. Their art briefs are in `art/ART_BRIEFS_SET4.md`, `art/ART_BRIEFS_SET5.md` and `art/ART_BRIEFS_SET6.md`. Flavour lines are next.
+
+## Cards 104 to 191 are built
+
+Built on 2026-11-10, with the final art from `art/CARD_ART_FINAL.json` and the Set 7 to 11 files, and checked by 158 rules checks, 600 bot games of random decks weighted to the new cards (every card played, no errors), the browser tests and a look at each card in the browser. None of them are in a starter deck, so the starters play exactly as before. Flavour lines aren't written yet.
+
+Not built:
+- **#113 Stormglass glaive:** its painting isn't final or committed.
+- **#176 Bellframe construct:** you rejected its painting and asked that it not be regenerated, so Resonance stays on the Harmonic wardwright alone for now.
+- **Grove wanderer:** its painting has no card assigned.
+
+Where the build reads a card differently from its proposal, so say if any should change:
+- **#115** is named Ribbonvane for now, with the white-flier painting, until you pick a name.
+- **Reedbank forager:** its land comes on your next turn, since abilities are used after the play phase.
+- **Sanctuary threshold:** an enchantment on one of your units for 3 of your turns, rather than a tile, which matches its painting and needs no new tile art.
+- **Sepulchral scale:** draws automatically, and skips when you have 2 life or less.
+- **Folded observatory:** you can always see your top 2 cards, and once a turn you may swap them.
+- **Shatter the chain and Return to loam:** remove the most recently added enchantment or equipment from a unit, or break a relic.
+- **Unmake the pattern:** can break any relic, yours included.
+- **Hurled brand, Siphon vigor, Collect the tithe and The sky falls in:** hit an enemy unit or the enemy summoner.
+- **Oath bell and Warband drum:** once on each of your turns.
+- **Gilt-hall temptress:** a charmed unit can act from your next turn, and goes back if she dies. She charms one unit at a time.
+- **Devotion, Carrion, Longshot and the Untaught firecaller:** shortened so they fit a card in the hand.
 
 ## Gnosis sound restriction (creator direction, 2026-11-10)
 
@@ -305,7 +327,7 @@ Approved after the 2026-11-10 balance review. Starter decks won between 38% and 
 
 ## Proposals from the 2026-11-10 balance review
 
-None of these are built. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.
+Built on 2026-11-10, except #113. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.
 
 | # | Card | Faction | Type | Cost | Wants | Stats | Rules | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -367,15 +389,15 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
 | Frenzy | +2 attack while damaged | Cinder berserker, Orc raider, Mossback bear | Built |
 | Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built for the four with it innately. It can also come from a spell, an enchantment (#190) or equipment (#191). No card already in the game gives it, and lightning never does |
-| Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Not built. Only the shadow animal is proposed |
-| Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Not built. No existing card changes. The new ones look armoured or are putting armour on, and Armed isn't tied to a colour |
-| Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Not built. The spell places a decoy that lasts one turn |
+| Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Built |
+| Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Built. Armed isn't tied to a colour |
+| Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Built. The spell places a decoy that lasts until the start of your next turn |
 | Errant | The Young summoner's Camp follower appears on a random tile of your back row | Young summoner | Unchanged. It already summons a creature: "land" in the old wording meant where the follower appears |
 | Carrion | Permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3 | Barrow colossus, Porcelain-visored retainer, plus #151 Mortuary priest, #152 Hostess of the late hour and #181 Ossuary engine | Built. It replaces Gathered and Sworn, and you chose the name |
 
 ## Proposals: hitting the summoner, area spells, control and stasis
 
-Proposed on 2026-11-10 from your notes, and approved the same day with the changes below. None are built.
+Proposed on 2026-11-10 from your notes, and approved the same day with the changes below. Built on 2026-11-10.
 
 - Siphon vigor and Collect the tithe cost 1 more each, and gain life only when they hit the summoner.
 - Bought allegiance can't take a Loyal unit.
@@ -426,7 +448,7 @@ Why each card is the way it is:
 
 ## Proposals to fill out the roster
 
-Proposed on 2026-11-10. None are built. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
+Proposed on 2026-11-10, and built the same day except #176. With #104–133 they bring the pool from 134 cards to about 220, aiming for roughly 36 to 45 for each colour and a stronger neutral set. Cards marked with a painting use finished art in `art/CARD_ART_FINAL.json` that has no card yet. The rest need art from Codex. "New code" is the engine work each one needs.
 
 Art briefs for the 57 cards from #104 to #191 without a painting are in five sets of 11 or 12, written on 2026-11-10 so they can be generated in parallel: `art/ART_BRIEFS_SET7.md` to `art/ART_BRIEFS_SET11.md`. The white flier (#115) is in set 11, as the ribbon-bodied glider the creator chose.
 

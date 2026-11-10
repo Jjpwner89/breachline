@@ -73,6 +73,8 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
 - **Equipment:** an enchantment that is an object. Equipment can also give its bearer a keyword, as the Redglass falchion gives Hunt. Armed units get +1 / +1 while they carry any equipment. Built on 2026-11-10.
+- **Relics:** a card type that stays in play beside its summoner, off the grid, with an ongoing effect. Some can be used once on each of your turns. Return to loam, Shatter the chain and Unmake the pattern break them. Approved and built on 2026-11-10.
+- **Cards 104 to 191:** their new rules, such as Lit, Devotion, Rootfed, spells that hit the summoner, borrowing and charming units, stasis, responses to a move, and row and square spells, are in `CARD_PROPOSALS.md`. Built on 2026-11-10.
 - **Loyal:** +1 attack and +1 health while you have another unit of the same sub-faction on the board, such as Sunmane Oath or Cinder Clans. A few cards get +2 / +2 instead. Loyal is only ever a stat bonus, never a keyword such as Ranged. This is the rule for the faction loyalty focus. Confirmed on 2026-11-09.
 
 ## Stats
@@ -168,6 +170,8 @@ Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-1
 ## Balance
 
 Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
+
+Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged. They have been played only in random bot decks so far, not in balance runs.
 
 Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.
 

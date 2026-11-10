@@ -22,7 +22,7 @@
   var DECK_ART = { white: 'lancer', red: 'warchief', blue: 'conjurer', black: 'harvester', green: 'land_g' };
   // On wide screens the close-up has its own column, and elsewhere it floats over the map. Same query as the CSS.
   var DOCKED = window.matchMedia('(min-width: 1280px) and (min-aspect-ratio: 3/2)');
-  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell' };
+  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell', relic: 'Relic' };
   var ART = {
     land_w: 'sunlit-plains', land_r: 'cinder-peaks', land_u: 'lantern-quarter',
     spearman: 'militia-spearman', cleric: 'temple-cleric', knight: 'oath-knight', lancer: 'sunmane-lancer', warden: 'pride-warden',
@@ -55,7 +55,23 @@
     acolyte: 'still-flame-acolyte', journeyman: 'artificers-journeyman',
     veteran: 'cinderline-veteran', falchion: 'redglass-falchion', rainreader: 'rain-reader', mountainlung: 'the-mountains-lung', cinderwake: 'cinderwake',
     stoneopens: 'the-stone-opens', torchrunner: 'copperlane-torch-runner', lanner: 'ash-white-lanner', winterdoor: 'winterdoor-keeper',
-    mourner: 'mothwake-mourner', rapier: 'cobalt-rapier', corewright: 'corewright'
+    mourner: 'mothwake-mourner', rapier: 'cobalt-rapier', corewright: 'corewright',
+    kindle: 'kindle-the-line', slagheart: 'slagheart-hulk', rimebolt: 'rimebolt', pilgrim: 'devoted-pilgrim', borrowedwill: 'borrowed-will', barrowmark: 'barrow-mark',
+    marksman: 'focus-rifle-marksman', whitemorning: 'white-morning', hostess: 'hostess-of-the-late-hour', springmelt: 'spring-melt',
+    firebrand: 'cinder-firebrand', rimecaller: 'conclave-rimecaller', vow: 'vow-of-keeping', ledger: 'ledger-of-debts', hurledbrand: 'hurled-brand', heldmoments: 'held-between-moments',
+    shutterassassin: 'shutter-window-assassin', temptress: 'gilt-hall-temptress', alderelder: 'alderkin-elder', recruit: 'buckling-recruit', ashsweeper: 'still-flame-ash-sweeper', emberward: 'emberward',
+    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'harmonic-burst', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
+    fieldplate: 'field-plate-artificer', mortuary: 'mortuary-priest', lynx: 'halfshade-lynx', stag: 'elderwood-stag', rusthinged: 'rust-hinged-warden', salmantle: 'salamander-hide-mantle',
+    pallofash: 'pall-of-ash', wildfire: 'wildfire', bought: 'bought-allegiance', leaden: 'leaden-step', vowkeeper: 'vowkeeper-of-the-long-road', glimmer: 'glimmer-double',
+    gallows: 'lots-for-the-gallows', anoint: 'anoint-with-embers', earthspeaker: 'earthspeaker', tortoise: 'shell-mountain-tortoise', hound: 'copper-hound',
+    chaplain: 'still-flame-chaplain', ribbonvane: 'white-flier', unwind: 'unwind-the-step', humbling: 'humbling-light', frostbreak: 'frostbreak', cinderrain: 'cinder-rain',
+    overgrowth: 'overgrowth', trapper: 'thornwarden-trapper', mosshorn: 'mosshorn-grazer', waystone: 'waystone-golem', ossuary: 'ossuary-engine',
+    debtblade: 'debt-collectors-blade', reedbank: 'reedbank-forager', siphon: 'siphon-vigor', scatter: 'scatter-the-line', hour: 'hour-of-collection',
+    roadshield: 'roadwardens-shield', sunthread: 'sunthread-mantle', roadsquire: 'oath-road-squire', standasone: 'stand-as-one', sanctuary: 'sanctuary-threshold',
+    prism: 'prism-bracer', courier: 'conclave-courier', unmake: 'unmake-the-pattern', informant: 'court-informant', bailiff: 'ashen-court-bailiff', tender: 'barrow-tender',
+    mourningveil: 'mourning-veil', cinderhook: 'cinderhook-axe', clanoutrider: 'clan-outrider', shatter: 'shatter-the-chain', pathguard: 'thornwarden-pathguard',
+    canopy: 'sudden-canopy', returnloam: 'return-to-loam',
+    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -138,6 +154,7 @@
   function selectedMoves(moves) {
     if (!sel) return [];
     if (sel.kind === 'card') return moves.filter(function (m) { return m.card === sel.id; });
+    if (sel.kind === 'relic') return moves.filter(function (m) { return m.type === 'relic' && m.relic === sel.id; });
     return moves.filter(function (m) {
       if (m.unit !== sel.id) return false;
       return sel.ability ? m.type === 'ability' : true;
@@ -170,13 +187,20 @@
     var tag = targetable ? 'button type="button" data-summoner="1"' : 'div';
     var close = targetable ? 'button' : 'div';
     var active = S.winner === null && S.phase !== 'opening' && S.active === pi;
+    // Relics sit beside the summoner. The Folded observatory shows its owner the top two cards of the deck.
+    var relics = (p.relics || []).map(function (r) {
+      var rc = E.CARDS[r.c], top = '';
+      if (rc.relic === 'stars' && you && p.deck.length >= 2) top = ': next ' + p.deck.slice(-2).reverse().map(function (i) { return E.CARDS[i.c].name; }).join(', then ');
+      return '<span class="relic ' + rc.colour + '" data-peek="' + r.c + '">' + sym(rc.colour) + esc(rc.name) + (r.store ? ' <b>' + r.store + '</b>' : '') + esc(top) + '</span>';
+    }).join('');
     return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
       (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
       '<span class="crest ' + main + '">' + sym(main) + '</span>' +
       '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : '')) + '</small></span>' +
       '<span class="life" title="Summoner life"><strong>' + p.life + '</strong><i><b style="width:' + Math.max(0, Math.min(100, Math.round(p.life / E.START_LIFE * 100))) + '%"></b></i></span>' +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
-      (targetable ? '<span class="strike">Strike summoner</span>' : '') +
+      (relics ? '<span class="relics">' + relics + '</span>' : '') +
+      (targetable ? '<span class="strike">' + (sel && sel.kind === 'card' ? 'Target summoner' : 'Strike summoner') + '</span>' : '') +
       '<span class="piles">' + (you ? '' : pile('Hand', p.hand.length, true)) + pile('Deck', p.deck.length, true) + pile('Discard', p.discard.length) + '</span>' +
       '</' + close + '>';
   }
@@ -209,6 +233,13 @@
       if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
       if (u.frozen >= S.turn) chips.push('<span class="chip state">Frozen</span>');
       if (u.veiled) chips.push('<span class="chip state">Veiled</span>');
+      if (u.lit && d.keywords.indexOf('Lit') < 0) chips.push('<span class="chip state">Lit</span>');
+      if (u.stasis >= S.turn) chips.push('<span class="chip state">Between moments</span>');
+      if (u.sapped >= S.turn) chips.push('<span class="chip state">Restrained</span>');
+      if (u.braced === S.turn) chips.push('<span class="chip state">Braced</span>');
+      if (u.from !== undefined && u.from !== u.owner) chips.push('<span class="chip state">' + (u.charmedBy ? 'Charmed' : 'Borrowed') + '</span>');
+      if (u.fleeting) chips.push('<span class="chip state">Fades</span>');
+      if (u.rootfed) chips.push('<span class="chip">Rootfed +' + u.rootfed + '</span>');
       if (u.carrion) chips.push('<span class="chip">Carrion +' + u.carrion + '</span>');
       if (waiting) chips.push('<span class="chip state">Waiting</span>');
       else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
@@ -249,18 +280,23 @@
       else if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
       else if (m.type === 'attack') marks.units[m.target] = 't-attack';
-      else if (m.type === 'attackSummoner') marks.summoner = true;
+      else if (m.type === 'attackSummoner' || (m.type === 'cast' && m.summoner !== undefined)) marks.summoner = true;
+      else if (m.type === 'relic' && m.target) marks.units[m.target] = 't-buff';
+      // Abilities that take a unit and then a tile, like the Oath-road squire's, pick the unit first.
+      else if (m.type === 'ability' && sel.ability && m.r !== undefined && m.target) {
+        if (!sel.abUnit) marks.units[m.target] = 't-buff';
+        else if (m.target === sel.abUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
+      }
       else if (m.type === 'cast' && m.r !== undefined && !m.target) marks.tiles[m.r + ',' + m.c] = 't-aim';
       else if (m.type === 'ability' && sel.ability && m.r !== undefined) marks.tiles[m.r + ',' + m.c] = 't-aim';
       else if (m.type === 'cast' && m.r !== undefined) {
         if (!sel.castUnit) marks.units[m.target] = 't-buff';
         else if (m.target === sel.castUnit) marks.tiles[m.r + ',' + m.c] = 't-move';
       }
-      else if (m.type === 'cast' && m.target) marks.units[m.target] = cardOf(sel.id).blast ? 't-attack' : 't-buff';
-      else if (m.type === 'enchant') marks.units[m.target] = cardOf(sel.id).atkBonus > 0 || cardOf(sel.id).allyOnly ? 't-buff' : 't-attack';
+      else if ((m.type === 'cast' || m.type === 'enchant') && m.target) marks.units[m.target] = unitById(m.target).owner === HUMAN ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ab.key === 'heal' || ab.key === 'orders' || ab.key === 'harvest' || ab.key === 'lens' || ab.key === 'tend' || ab.key === 'swap' ? 't-buff' : 't-attack';
+        marks.units[m.target] = ['heal', 'farheal', 'orders', 'harvest', 'lens', 'tend', 'swap'].indexOf(ab.key) >= 0 ? 't-buff' : 't-attack';
       }
     });
     return marks;
@@ -293,7 +329,7 @@
     var ready = playable && S.phase === 'play' && !S.pending && actor() === HUMAN;
     var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim') + (ready ? ' ready' : '');
     return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand"><span class="cslot">' +
-      frameHtml(c, { cost: E.costOf(S, HUMAN, c), have: have }) + '</span></button>';
+      frameHtml(c, { cost: E.costOf(S, HUMAN, c, i), have: have }) + '</span></button>';
   }
 
   // Small cards have little room, so a line that doesn't fit is left for the close-up. Rules text that still doesn't fit gets smaller,
@@ -350,6 +386,7 @@
     var c = cardOf(m.card), t = m.target ? unitById(m.target) : null;
     var where = '';
     if (t && m.r !== undefined) where = ', moving ' + (m.r < t.r ? 'up' : m.r > t.r ? 'down' : m.c < t.c ? 'left' : 'right');
+    if (m.row !== undefined) where = ' on ' + E.rowOf(S, 1 - actor(), m.row);
     return c.name + (t ? ' on ' + E.CARDS[t.cardId].name : '') + where;
   }
 
@@ -405,42 +442,55 @@
         var a = unitById(att.attacker);
         var target = att.summoner !== undefined ? 'you' : E.CARDS[unitById(att.targetUid).cardId].name;
         text = E.CARDS[a.cardId].name + ' is attacking ' + target + ' for ' + (att.summoner !== undefined ? E.attackOf(S, a) : E.hitOn(S, a, unitById(att.targetUid))) + '. Respond?';
-      } else text = 'The enemy turn is ending. Use an instant?';
+      } else if (S.pending.kind === 'move') text = E.CARDS[unitById(S.pending.step.uid).cardId].name + ' has moved. Respond?';
+      else text = 'The enemy turn is ending. Use an instant?';
       var opts = moves.filter(function (m) { return m.type === 'respond'; }).map(function (m) { return btn(moveLabel(m), { move: m }); }).join('');
       return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
     }
     var out = [], sm = selectedMoves(moves);
     if (S.phase === 'play') {
       var hint = 'Pick a card from your hand, then move on to your units.';
+      if (sel && sel.kind === 'relic') {
+        hint = 'Choose one of your units.';
+        out.push(btn('Back', { ui: 'clear' }));
+      }
       if (sel && sel.kind === 'card') {
-        var c = cardOf(sel.id), place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
+        var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = 'Instants are cast during the enemy turn.';
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
         else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
-        else if (c.type !== 'land' && E.costOf(S, HUMAN, c) > you.mana) hint = 'Not enough mana to play this now.';
-        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse ? 'Choose a unit with enchantments.' : c.mend ? 'Choose one of your wounded units.' : c.blast ? 'Choose an enemy unit.' : c.aim ? 'Choose a tile to aim at.' : c.chant ? 'Choose one of your units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
+        else if (c.type !== 'land' && E.costOf(S, HUMAN, c, inst) > you.mana) hint = 'Not enough mana to play this now.';
+        else if (c.type === 'relic') hint = 'Put this relic into play beside you.';
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse || c.unchain || c.loam ? 'Choose a unit with enchantments' + (c.unrelic ? ', or break a relic.' : '.') : c.mend ? 'Choose one of your units.' : c.bolt ? 'Choose an enemy unit or the enemy summoner.' : c.blast || c.borrow || c.stasis || c.buy ? 'Choose an enemy unit.' : c.place ? 'Choose an empty tile in the middle rows.' : c.aim ? 'Choose a tile to aim at' + (c.unrelic ? ', or break a relic.' : '.') : c.chant || c.light ? 'Choose one of your units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
         else if (c.type === 'unit') hint = 'Your back row is full, so there is nowhere to summon this.';
         else if (c.type === 'enchant') hint = 'There is no unit this can enchant right now.';
         else hint = sm.length ? 'Play this land.' : 'You already played a land this turn.';
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
-          if (m.type === 'cast' && !m.target && m.r === undefined && !(m.at && m.at.length)) {
+          if (m.type === 'cast' && m.relic !== undefined) out.push(btn('Break ' + relicName(m.relic), { move: m }));
+          else if (m.type === 'cast' && m.summoner !== undefined) out.push(btn('Hit the enemy summoner', { move: m }));
+          else if (m.type === 'cast' && !m.target && m.r === undefined && !(m.at && m.at.length)) {
             var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
-            out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : 'Cast', { move: m }, true));
+            out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : c.type === 'relic' ? 'Play relic' : 'Cast', { move: m }, true));
           }
         });
         out.push(btn('Cancel', { ui: 'clear' }));
       }
+      if (!sel) out = out.concat(relicButtons(moves));
       var canCommand = E.legalMoves(E.applyMove(S, { type: 'toCommand' })).length > 1;
       out.push(canCommand ? btn('Command units', { move: { type: 'toCommand' } }, !sel) : btn('End turn', { ui: 'skip' }, !sel));
       return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>';
     }
     var cmdHint = 'Select one of your units. Each can move, then attack or use an ability.';
+    if (sel && sel.kind === 'relic') {
+      cmdHint = 'Choose one of your units.';
+      out.push(btn('Back', { ui: 'clear' }));
+    } else if (!sel) out = out.concat(relicButtons(moves));
     if (sel && sel.kind === 'unit') {
       var u = unitById(sel.id), ab = u ? E.CARDS[u.cardId].ability : null;
       if (sel.ability) {
-        cmdHint = 'Choose a target for ' + ab.label + '.';
+        cmdHint = sel.abUnit ? 'Choose where it goes.' : 'Choose a target for ' + ab.label + '.';
         out.push(btn('Back', { ui: 'noAbility' }));
       } else {
         cmdHint = sm.length ? 'Move to a dashed tile or attack a highlighted target.' : 'This unit has nothing it can do right now.';
@@ -461,6 +511,23 @@
     }
     out.push(btn('End turn', { move: { type: 'endTurn' } }, !sel));
     return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>';
+  }
+
+  function relicName(id) {
+    var r = [].concat(S.players[0].relics, S.players[1].relics).filter(function (x) { return x.id === id; })[0];
+    return r ? (S.players[HUMAN].relics.indexOf(r) >= 0 ? 'your ' : 'the enemy ') + E.CARDS[r.c].name : 'relic';
+  }
+  // One button per relic you can use now. The Seedheart vessel needs a unit, so its button selects it first.
+  function relicButtons(moves) {
+    var out = [], seen = {};
+    moves.forEach(function (m) {
+      if (m.type !== 'relic' || seen[m.relic]) return;
+      seen[m.relic] = true;
+      var r = S.players[HUMAN].relics.filter(function (x) { return x.id === m.relic; })[0], rc = E.CARDS[r.c];
+      var label = rc.relic === 'tide' ? 'Release ' + r.store + ' mana' : rc.relic === 'stars' ? 'Swap the top two cards' : rc.relic === 'seed' ? 'Release the ' + rc.name : rc.name + ' (1 mana)';
+      out.push(m.target ? btn(label, { ui: 'relic', id: m.relic }) : btn(label, { move: m }));
+    });
+    return out;
   }
 
   function floats() {
@@ -501,22 +568,14 @@
   }
 
   // Which other tiles a spell aimed at (r, c) reaches, as the engine's castAt resolves it.
-  var STEPS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
   function reachOf(card, pi, r, c) {
-    var a = card.aim, out = [];
-    if (a.wave) {
-      for (var wr = r + (pi === 0 ? -1 : 1); wr >= 0 && wr < E.ROWS; wr += pi === 0 ? -1 : 1) out.push([wr, c]);
-      return out;
-    }
-    if (!a.spread && !a.splash) return out;
-    STEPS.forEach(function (d) {
-      var rr = r + d[0], cc = c + d[1];
-      if (rr < 0 || cc < 0 || rr >= E.ROWS || cc >= E.COLS) return;
-      var u = S.units.filter(function (x) { return x.r === rr && x.c === cc; })[0];
-      if (a.spread || (u && (a.splashAll || u.owner !== pi))) out.push([rr, cc]);
-    });
-    return out;
+    var a = card.aim;
+    return E.aimArea(a, pi, r, c).slice(1).filter(function (p) {
+      var u = S.units.filter(function (x) { return x.r === p.r && x.c === p.c; })[0];
+      return !a.splash || a.spread || (u && (a.splashAll || u.owner !== pi));
+    }).map(function (p) { return [p.r, p.c]; });
   }
+
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
 
   // A spell aimed at a tile plays its animation first, then the move resolves and the board redraws.
@@ -703,7 +762,8 @@
     var hit = sm.filter(function (m) {
       if (m.type === 'summon' && m.target !== undefined) return !!sel.summonAt && !!u && m.target === u.uid && m.r === sel.summonAt.r && m.c === sel.summonAt.c;
       if (m.type === 'summon' || (m.type === 'move' && !sel.ability)) return m.r === r && m.c === c;
-      if (m.type === 'ability' && m.r !== undefined) return !!sel.ability && m.r === r && m.c === c;
+      if (m.type === 'ability' && m.r !== undefined) return !!sel.ability && (m.target === undefined || m.target === sel.abUnit) && m.r === r && m.c === c;
+      if (m.type === 'relic') return !!u && m.target === u.uid;
       if (m.type === 'cast' && m.r !== undefined) return m.target === sel.castUnit && m.r === r && m.c === c;
       if (!u || m.target !== u.uid) return false;
       if (m.type === 'enchant' || m.type === 'attack' || m.type === 'cast') return true;
@@ -713,6 +773,7 @@
     if (hit.length) return apply(hit[0]);
     if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
+    if (u && sel && sel.ability && sm.some(function (m) { return m.type === 'ability' && m.r !== undefined && m.target === u.uid; })) { sel.abUnit = u.uid; return render(); }
     if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && S.phase === 'command') { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }
   }
@@ -761,7 +822,7 @@
   });
   $('themStrip').addEventListener('click', function (e) {
     if (!e.target.closest('[data-summoner]')) return;
-    var m = selectedMoves(humanMoves()).filter(function (x) { return x.type === 'attackSummoner'; })[0];
+    var m = selectedMoves(humanMoves()).filter(function (x) { return x.type === 'attackSummoner' || (x.type === 'cast' && x.summoner !== undefined); })[0];
     if (m) apply(m);
   });
   document.addEventListener('click', function (e) {
@@ -777,7 +838,8 @@
     if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
     if (d.ui === 'ability') sel.ability = true;
-    if (d.ui === 'noAbility') sel.ability = false;
+    if (d.ui === 'noAbility') { sel.ability = false; sel.abUnit = null; }
+    if (d.ui === 'relic') sel = { kind: 'relic', id: d.id };
     if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
     render();
   });

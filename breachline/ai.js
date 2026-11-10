@@ -5,7 +5,7 @@ var AI = (function () {
   var G = typeof Guides !== 'undefined' ? Guides : require('./guides.js');
   var MAX_PLAN = 40, MAX_SAY = 140, MAX_WHY = 900;
   var COMMAND = { move: 1, attack: 1, attackSummoner: 1, ability: 1 };
-  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise'];
+  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise', 'relic', 'summoner', 'row'];
   // One call per turn takes longer than a choice made while the player waits on a response, so those use the fast model.
   var CALLS = { turn: { modelTier: 'default', effort: 'low' }, decision: { modelTier: 'quick' } };
   // These won't clear up by asking again, so the scripted bot finishes the game.
@@ -28,7 +28,8 @@ var AI = (function () {
     '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
     '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
     '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
-    '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.'
+    '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.',
+    '- Relics stay in play beside their summoner once cast. Some can be used once on each of your turns.'
   ].join('\n');
   var TILE_WORDS = { burn: 'burning', thorns: 'thorns', frost: 'frozen', snare: 'snare', blight: 'blighted', holy: 'consecrated', charge: 'charged' };
 
@@ -44,7 +45,7 @@ var AI = (function () {
 
   function cardFacts(c) {
     if (c.type === 'land') return 'Land, ' + c.colour + ' colour. Adds 1 mana each turn.';
-    var kind = c.equipment ? 'Equipment' : { unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell' }[c.type];
+    var kind = c.equipment ? 'Equipment' : { unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell', relic: 'Relic' }[c.type];
     return kind + (c.type === 'unit' ? ' ' + c.atk + ' attack / ' + c.hp + ' health' : '') + (c.text ? '. ' + c.text : '');
   }
 
@@ -53,7 +54,7 @@ var AI = (function () {
     if (!p.hand.length) return ['(empty)'];
     return p.hand.map(function (i) {
       var c = card(i.c);
-      return 'card ' + i.id + ': ' + c.name + (c.type === 'land' ? '' : ', costs ' + E.costOf(v, me, c) + ' now') + '. ' + cardFacts(c);
+      return 'card ' + i.id + ': ' + c.name + (c.type === 'land' ? '' : ', costs ' + E.costOf(v, me, c, i) + ' now') + '. ' + cardFacts(c);
     });
   }
 
@@ -66,6 +67,12 @@ var AI = (function () {
     if (u.frozen >= v.turn) bits.push("frozen: can't move " + (u.frozen === v.turn ? 'this turn' : 'on its next turn'));
     if (u.veiled) bits.push("veiled: enemies can't attack or target it until it attacks");
     if (u.carrion) bits.push('Carrion: +' + u.carrion + ' attack so far');
+    if (u.lit && c.keywords.indexOf('Lit') < 0) bits.push('Lit: Fireproof, and explodes when it dies');
+    if (u.stasis >= v.turn) bits.push("held between moments: can't act or be attacked");
+    if (u.sapped >= v.turn) bits.push('restrained: -2 attack');
+    if (u.rootfed) bits.push('Rootfed: +' + u.rootfed + ' / +' + u.rootfed + ' so far');
+    if (u.fleeting) bits.push('fades at the start of its owner\'s next turn');
+    if (u.from !== undefined && u.from !== u.owner) bits.push((u.charmedBy ? 'charmed: goes back if the charmer dies' : 'borrowed: goes back at the end of this turn'));
     u.enchants.forEach(function (e) { bits.push('enchanted with ' + card(e.c).name + (card(e.c).text ? ' (' + card(e.c).text + ')' : '') + (e.left ? ', ' + e.left + ' damage left to ignore' : '')); });
     return named(v, u) + ' at row ' + u.r + ', column ' + u.c + ': attack ' + E.attackOf(v, u) + ', health ' + u.hp + '/' + u.maxHp + '.' +
       (c.text ? ' ' + c.text : '') + (bits.length ? ' [' + bits.join('; ') + ']' : '');
@@ -106,6 +113,11 @@ var AI = (function () {
     return l.text.split(v.players[v.viewer].name).join('Your side').split(v.players[1 - v.viewer].name).join('The enemy');
   }
 
+  function relicText(p) {
+    if (!p.relics || !p.relics.length) return '';
+    return ' Relics: ' + p.relics.map(function (r) { return card(r.c).name + ' (relic ' + r.id + (r.store ? ', ' + r.store + ' stored' : '') + ': ' + card(r.c).text + ')'; }).join('; ') + '.';
+  }
+
   function stateText(v) {
     var me = v.viewer, you = v.players[me], foe = v.players[1 - me];
     var mine = v.units.filter(function (u) { return u.owner === me; }), theirs = v.units.filter(function (u) { return u.owner !== me; });
@@ -113,8 +125,8 @@ var AI = (function () {
     return [
       'THE BATTLE',
       'Turn ' + v.turn + '. You play ' + deckLabel(you) + '. Your enemy plays ' + deckLabel(foe) + '.',
-      'You: ' + you.life + ' life, ' + you.mana + ' mana available from ' + you.lands.length + ' lands, deck ' + you.deckCount + ', discard: ' + pileNames(you.discard) + '.',
-      'Enemy: ' + foe.life + ' life, ' + foe.mana + ' unspent mana from ' + foe.lands.length + ' lands, ' + foe.handCount + ' hidden cards in hand, deck ' + foe.deckCount + ', discard: ' + pileNames(foe.discard) + '.',
+      'You: ' + you.life + ' life, ' + you.mana + ' mana available from ' + you.lands.length + ' lands, deck ' + you.deckCount + ', discard: ' + pileNames(you.discard) + '.' + relicText(you) + (you.top ? ' The top of your deck: ' + you.top.map(function (id) { return card(id).name; }).join(', then ') + '.' : ''),
+      'Enemy: ' + foe.life + ' life, ' + foe.mana + ' unspent mana from ' + foe.lands.length + ' lands, ' + foe.handCount + ' hidden cards in hand, deck ' + foe.deckCount + ', discard: ' + pileNames(foe.discard) + '.' + relicText(foe),
       'Your back row is row ' + E.backRow(me) + '. The enemy back row is row ' + E.backRow(1 - me) + '.',
       '',
       'Map (Y is yours, E is the enemy, and the number is the unit id):',
@@ -203,7 +215,8 @@ var AI = (function () {
       if (m.type === 'cast' && m.r !== undefined && !m.target) {
         if (passage[m.card]) return;
         passage[m.card] = true;
-        lines.push('Cast ' + c.name + ' at any tile: {"type":"cast","card":' + m.card + ',"r":ROW,"c":COLUMN}. ' + c.text);
+        var spots = cast.filter(function (x) { return x.card === m.card && x.r !== undefined && !x.target; });
+        lines.push('Cast ' + c.name + (spots.length < E.ROWS * E.COLS ? ' at one of these tiles (row,column): ' + spots.map(function (x) { return x.r + ',' + x.c; }).join(' ') : ' at any tile') + ': {"type":"cast","card":' + m.card + ',"r":ROW,"c":COLUMN}. ' + c.text);
         return;
       }
       if (m.type === 'cast' && m.at) {
@@ -221,15 +234,26 @@ var AI = (function () {
       }
       if (m.type === 'enchant') extra = 'on ' + named(v, unitBy(v, m.target)) + ' {"type":"enchant","card":' + m.card + ',"target":' + m.target + '}';
       else if (m.target) extra = 'on ' + named(v, unitBy(v, m.target)) + ' {"type":"cast","card":' + m.card + ',"target":' + m.target + '}';
+      else if (m.summoner !== undefined) extra = 'at the enemy summoner {"type":"cast","card":' + m.card + ',"summoner":' + m.summoner + '}';
+      else if (m.relic !== undefined) extra = 'to break the relic ' + relicName(v, m.relic) + ' {"type":"cast","card":' + m.card + ',"relic":' + m.relic + '}';
       else if (m.raise) extra = 'returning ' + card(p.discard.filter(function (d) { return d.id === m.raise; })[0].c).name + ' {"type":"cast","card":' + m.card + ',"raise":' + m.raise + '}';
       else extra = '{"type":"cast","card":' + m.card + '}';
       lines.push('Cast ' + c.name + ' ' + extra);
+    });
+    E.legalMoves(v).filter(function (m) { return m.type === 'relic'; }).forEach(function (m) {
+      var r = p.relics.filter(function (x) { return x.id === m.relic; })[0];
+      lines.push('Use the relic ' + card(r.c).name + (m.target ? ' on ' + named(v, unitBy(v, m.target)) : '') + ' {"type":"relic","relic":' + m.relic + (m.target ? ',"target":' + m.target : '') + '}');
     });
     var cmd = v.phase === 'play' ? E.applyMove(v, { type: 'toCommand' }) : v;
     v.units.filter(function (u) { return u.owner === me; }).forEach(function (u) {
       lines = lines.concat(unitOptions(cmd, unitBy(cmd, u.uid)));
     });
     return lines.join('\n');
+  }
+
+  function relicName(v, id) {
+    var mine = v.players[v.viewer].relics.filter(function (x) { return x.id === id; })[0], theirs = v.players[1 - v.viewer].relics.filter(function (x) { return x.id === id; })[0];
+    return mine ? 'your ' + card(mine.c).name : theirs ? 'the enemy ' + card(theirs.c).name : 'relic ' + id;
   }
 
   function guideText(v, level) {
@@ -260,6 +284,7 @@ var AI = (function () {
       case 'pass': return 'Do nothing';
       case 'respond':
         var t = unitBy(v, m.target);
+        if (m.row !== undefined) return 'Cast ' + inHand(m.card).name + ' on row ' + m.row + ', ' + E.rowOf(v, 1 - v.viewer, m.row) + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
         return 'Cast ' + inHand(m.card).name + ' on ' + named(v, t) + (m.r !== undefined ? ', moving it to row ' + m.r + ', column ' + m.c : '') + (inHand(m.card).debt ? ', losing ' + inHand(m.card).debt + ' life' : '') + ' (costs ' + E.costOf(v, v.viewer, inHand(m.card)) + ')';
     }
     return m.type;
@@ -272,7 +297,8 @@ var AI = (function () {
     else if (pd && pd.attack) {
       var a = unitBy(v, pd.attack.attacker);
       ask = named(v, a) + ' is attacking ' + (pd.attack.summoner !== undefined ? 'you, the summoner,' : named(v, unitBy(v, pd.attack.targetUid))) + ' for ' + (pd.attack.summoner !== undefined ? E.attackOf(v, a) : E.hitOn(v, a, unitBy(v, pd.attack.targetUid))) + '. Choose whether to respond.';
-    } else ask = 'The enemy turn is ending. Choose whether to use an instant.';
+    } else if (pd && pd.kind === 'move') ask = named(v, unitBy(v, pd.step.uid)) + ' has just moved. Choose whether to respond.';
+    else ask = 'The enemy turn is ending. Choose whether to use an instant.';
     return [
       INTRO,
       RULES,
@@ -316,7 +342,7 @@ var AI = (function () {
       case 'playLand': return 'Play land: ' + name;
       case 'summon': return 'Summon ' + name + ' at ' + at + (t ? ', hitting ' + named(v, t) : '') + (m.at && m.at.length ? ', bringing units to ' + tiles(m.at) : '');
       case 'enchant': return 'Cast ' + name + ' on ' + (t ? named(v, t) : 'unit ' + m.target);
-      case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.r !== undefined ? ' to ' + at : '') + (m.at && m.at.length ? ', summoning to ' + tiles(m.at) : '');
+      case 'cast': return 'Cast ' + name + (t ? ' on ' + named(v, t) : '') + (m.summoner !== undefined ? ' at the enemy summoner' : '') + (m.relic !== undefined ? ' to break ' + relicName(v, m.relic) : '') + (m.r !== undefined ? ' to ' + at : '') + (m.at && m.at.length ? ', summoning to ' + tiles(m.at) : '');
       case 'move': return who + ' moves to ' + at;
       case 'attack': return who + ' attacks ' + (t ? named(v, t) : 'unit ' + m.target);
       case 'attackSummoner': return who + ' attacks the enemy summoner';
@@ -325,7 +351,8 @@ var AI = (function () {
       case 'redraw': return 'Redraw';
       case 'pass': return 'Do nothing';
       case 'bottomCard': return 'Put ' + name + ' on the bottom of the deck';
-      case 'respond': return 'Cast ' + name + ' on ' + (t ? named(v, t) : 'unit ' + m.target);
+      case 'respond': return 'Cast ' + name + (m.row !== undefined ? ' on row ' + m.row : ' on ' + (t ? named(v, t) : 'unit ' + m.target));
+      case 'relic': return 'Use relic ' + relicName(v, m.relic) + (t ? ' on ' + named(v, t) : '');
     }
     return JSON.stringify(m);
   }

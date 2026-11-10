@@ -11,11 +11,27 @@ var Bot = (function () {
   // What a spell aimed at a tile is worth: damage to enemies, minus damage to its own side, plus the effect left behind.
   function aimScore(s, pi, c, r, col) {
     var a = c.aim, here = unitAt(s, r, col), v = 0, sign = function (u) { return u.owner === pi ? -1.5 : 1; };
+    var area = E.aimArea(a, pi, r, col), inArea = area.map(function (t) { return unitAt(s, t.r, t.c); }).filter(Boolean);
     if (here && a.hit) v += sign(here) * hurtScore(here, a.hit);
     if (a.splash) s.units.forEach(function (o) {
       if (o !== here && dist(o, { r: r, c: col }) === 1 && (a.splashAll || o.owner !== pi)) v += sign(o) * (a.splash >= o.hp ? worth(o) + 30 : 5);
     });
-    var spots = [{ r: r, c: col }];
+    // Area damage, healing and freezing, and the random spells at their average.
+    inArea.forEach(function (o) {
+      if (a.all) v += sign(o) * hurtScore(o, a.all);
+      if (a.foes && o.owner !== pi) v += hurtScore(o, a.foes);
+      if (a.mend && o.owner === pi) v += Math.min(a.mend, o.maxHp - o.hp) * 8;
+      if (a.chill && o.owner !== pi) v += 6 + E.attackOf(s, o) * 2;
+      if (a.light && o.owner === pi && !o.lit) v += 12;
+      if (a.lots) v += sign(o) * (worth(o) + 30) / inArea.length;
+      if (a.embers && !E.hasKw(o, 'Fireproof')) v += sign(o) * hurtScore(o, a.ember) * a.embers / area.length;
+      if (a.unmake) o.enchants.forEach(function (e) {
+        var bad = E.CARDS[e.c].enemyOnly || E.CARDS[e.c].atkBonus < 0;
+        v += (o.owner === pi) === bad ? 25 : -25;
+      });
+    });
+    if (a.unmake) area.forEach(function (t) { var fx = E.tileAt(s, t.r, t.c); if (fx) v += fx.owner === pi ? -8 : 8; });
+    var spots = a.spread || a.square || a.row || a.column ? area : [{ r: r, c: col }];
     // Cinderwake: every tile from the aimed one to the enemy back row, hurting only enemies.
     if (a.wave) {
       spots = [];
@@ -25,11 +41,11 @@ var Bot = (function () {
         if (w && w.owner !== pi) v += hurtScore(w, a.wave);
       }
     }
-    if (a.spread) spots = spots.concat([[1, 0], [-1, 0], [0, 1], [0, -1]].map(function (d) { return { r: r + d[0], c: col + d[1] }; }));
+    if (!a.tile || a.embers) spots = [];
     spots.forEach(function (t) {
       var u = unitAt(s, t.r, t.c), near = s.units.filter(function (e) { return e.owner !== pi && dist(e, t) === 1; }).length;
       if (a.tile === 'frost' && u) v += u.owner === pi ? -12 : 15;
-      if (a.tile === 'burn' && u && !E.hasKw(u, 'Fireproof')) v += u.owner === pi ? -15 : 10;
+      if (a.tile === 'burn' && u && !E.hasKw(u, 'Fireproof') && !(a.light && u.owner === pi)) v += u.owner === pi ? -15 : 10;
       if (a.tile === 'thorns') v += u ? (u.owner === pi ? -10 : 12) : near * 8;
       if (a.tile === 'blight' && u) v += u.owner === pi ? -10 : 10 + E.attackOf(s, u) * 3;
       if (a.tile === 'holy' && u) v += u.owner === pi ? 20 + worth(u) / 8 : -10;
@@ -100,13 +116,53 @@ var Bot = (function () {
         }
         if (c.drawOnSummon) zap += 20;
         (c.summons || []).forEach(function (id) { zap += 30 + E.CARDS[id].cost * 20; });
-        zap += (c.adds || []).length * 15 + (c.curse ? 25 : 0);
+        zap += (c.adds || []).length * 15 + (c.curse ? 25 : 0) + (c.tax ? 15 : 0);
         // An ambush pays off the further forward it lands.
         var ahead = Math.abs(m.r - E.backRow(pi)) * (c.atk >= 3 ? 12 : 4);
         var spot = E.tileAt(s, m.r, m.c), hurt = spot && (spot.kind === 'burn' || spot.kind === 'thorns') && !(c.keywords.indexOf('Fireproof') >= 0 && spot.kind === 'burn') ? 30 : 0;
         return 100 + c.cost * 20 + pull - Math.abs(m.c - 2) + zap + ahead - hurt;
       case 'cast':
         c = E.CARDS[handCard(p, m.card).c];
+        if (c.type === 'relic') return 70 + c.cost * 10;
+        if (m.relic) return p.relics.some(function (r) { return r.id === m.relic; }) ? -100 : 55;
+        if (c.bolt) {
+          if (m.summoner !== undefined) return c.bolt >= s.players[foe].life ? 100000 : s.players[foe].life <= 8 ? 30 + c.bolt * 10 : -1;
+          t = unitById(s, m.target);
+          var zap = hurtScore(t, c.bolt);
+          return zap >= 50 ? 30 + zap : -1;
+        }
+        if (c.selfLife) return p.life >= 8 ? 60 : -1;
+        if (c.sweep || c.humble || c.hour) {
+          var net = 0;
+          s.units.forEach(function (o) {
+            var hit = c.sweep ? (E.hasKw(o, 'Fireproof') ? 0 : c.sweep) : c.humble ? (E.attackOf(s, o) >= c.humble.atk ? c.humble.hit : 0) : (o.hp <= 2 ? o.hp : 0);
+            if (hit) net += (o.owner === pi ? -1.3 : 1) * hurtScore(o, hit);
+          });
+          return net >= 60 ? net : -1;
+        }
+        if (c.borrow) {
+          t = unitById(s, m.target);
+          var prey = s.units.some(function (e) { return e.owner === t.owner && e !== t && dist(e, t) <= E.range(t) + E.speed(t); });
+          return prey && E.attackOf(s, t) >= 3 ? 30 + E.attackOf(s, t) * 8 : -1;
+        }
+        if (c.buy) return 40 + worth(unitById(s, m.target));
+        if (c.stasis) { t = unitById(s, m.target); return E.attackOf(s, t) >= 4 ? 20 + E.attackOf(s, t) * 6 : -1; }
+        if (c.place) {
+          var pinned = s.units.filter(function (e) { return e.owner === foe && dist(e, m) === 1 && E.attackOf(s, e) >= 2; }).length;
+          return pinned ? 20 + pinned * 15 : -1;
+        }
+        if (c.light) {
+          t = unitById(s, m.target);
+          return s.units.some(function (e) { return e.owner === foe && dist(e, t) <= 2; }) ? 30 + worth(t) / 10 : -1;
+        }
+        if (c.unchain || c.loam) {
+          t = unitById(s, m.target);
+          var piece = E.CARDS[t.enchants[t.enchants.length - 1].c];
+          if (c.loam) for (var g = t.enchants.length - 1; g >= 0; g--) if (E.CARDS[t.enchants[g].c].equipment) { piece = E.CARDS[t.enchants[g].c]; break; }
+          var harmful = piece.enemyOnly || piece.atkBonus < 0;
+          if (t.owner === pi) return harmful ? 40 + worth(t) / 5 : -100;
+          return harmful ? -100 : 30 + worth(t) / 5 + (c.unchain ? hurtScore(t, c.unchain) / 2 : 0);
+        }
         if (c.extraLand) {
           var spare = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
           return !p.extraLands && spare >= (p.landDropped ? 1 : 2) ? 900 : -100;
@@ -120,11 +176,13 @@ var Bot = (function () {
         }
         if (c.mend) {
           t = unitById(s, m.target);
+          if (c.temper) return 25 + Math.min(c.mend, t.maxHp - t.hp) * 8 + worth(t) / 10;
           return t.maxHp - t.hp >= 2 ? 30 + Math.min(c.mend, t.maxHp - t.hp) * 10 + worth(t) / 10 : -1;
         }
         if (c.blast) {
           t = unitById(s, m.target);
-          var burn = c.blast >= t.hp ? worth(t) + 30 : worth(t) * c.blast / t.maxHp;
+          var cold = t.frozen >= s.turn || (E.tileAt(s, t.r, t.c) || {}).kind === 'frost', bolt = c.iceBlast && cold ? c.iceBlast : c.blast;
+          var burn = bolt >= t.hp ? worth(t) + 30 : worth(t) * bolt / t.maxHp + (c.chill ? 10 : 0);
           if (c.splash) s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
           return burn >= 60 ? 40 + burn : -1;
         }
@@ -211,6 +269,40 @@ var Bot = (function () {
           return t && t.owner === foe ? 25 + E.attackOf(s, t) * 4 : t ? -10 : -1;
         }
         if (key === 'exhume') return 60 + E.CARDS[p.discard.filter(function (d) { return d.id === m.raise; })[0].c].cost * 15;
+        if (key === 'farheal') { t = unitById(s, m.target); return 25 + Math.min(20, (t.maxHp - t.hp) * 10) + worth(t) / 10; }
+        if (key === 'refit') {
+          // Hand equipment on only to a stronger ally that carries none.
+          t = unitById(s, m.target);
+          var to = unitAt(s, m.r, m.c);
+          return !to.enchants.some(function (e) { return E.CARDS[e.c].equipment; }) && E.attackOf(s, to) > E.attackOf(s, t) + 1 ? 20 : -1;
+        }
+        if (key === 'ferry') {
+          t = unitById(s, m.target);
+          var fwd = Math.abs(t.r - E.backRow(foe)) - Math.abs(m.r - E.backRow(foe));
+          return fwd > 0 && !t.moved && E.attackOf(s, t) >= 3 ? 8 + fwd * 8 : -1;
+        }
+        if (key === 'sweep') {
+          var swept = 0;
+          [[0, 0], [1, 0], [-1, 0], [0, 1], [0, -1]].forEach(function (d) {
+            var fx = E.tileAt(s, u.r + d[0], u.c + d[1]), on = unitAt(s, u.r + d[0], u.c + d[1]);
+            if (fx && on && on.owner === pi && tileHarm(s, on, on.r, on.c) > 0) swept += 25;
+            else if (fx && fx.owner === foe) swept += 8;
+          });
+          return swept ? swept : -1;
+        }
+        if (key === 'trap') {
+          var close = s.units.filter(function (e) { return e.owner === foe; }).map(function (e) { return dist(e, m); });
+          return close.length ? 24 - Math.min.apply(null, close) * 6 : -1;
+        }
+        if (key === 'wildcast') {
+          var spots = [[0, 0], [1, 0], [-1, 0], [0, 1], [0, -1]].map(function (d) { return { r: m.r + d[0], c: m.c + d[1] }; }).filter(function (q) { return q.r >= 0 && q.c >= 0 && q.r < E.ROWS && q.c < E.COLS; });
+          var avg = 0;
+          spots.forEach(function (q) { var o = unitAt(s, q.r, q.c); if (o) avg += (o.owner === pi ? -1.5 : 1) * hurtScore(o, ab.amount) / spots.length; });
+          return avg >= 15 ? avg : -1;
+        }
+        if (key === 'charm') return 40 + worth(unitById(s, m.target));
+        if (key === 'sap') { t = unitById(s, m.target); return E.attackOf(s, t) >= 3 ? 15 + E.attackOf(s, t) * 4 : -1; }
+        if (key === 'reed') return p.hand.some(function (h) { return E.CARDS[h.c].type === 'land'; }) && p.lands.length < 7 ? 45 : -1;
         if (key === 'swap') {
           // Swap a strong ally forward when that brings it closer to the enemy back row.
           t = unitById(s, m.target);
@@ -230,9 +322,37 @@ var Bot = (function () {
           if (d === 1 && E.hitOn(s, e, u) >= u.hp) bonus -= 8;
         });
         return 12 + gain * 12 + bonus - tileHarm(s, u, m.r, m.c) * 15;
+      case 'relic':
+        var rel = p.relics.filter(function (r) { return r.id === m.relic; })[0], rk = E.CARDS[rel.c].relic;
+        var fresh = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.acted; });
+        if (rk === 'bell') return s.phase === 'command' && fresh.filter(function (a) { return s.units.some(function (o) { return o !== a && o.owner === pi && dist(o, a) === 1; }); }).length >= 2 ? 30 : -1;
+        if (rk === 'drum') return s.phase === 'command' && fresh.filter(function (a) { return !a.moved; }).length >= 3 ? 25 : -1;
+        if (rk === 'tide') return s.phase === 'play' && p.hand.some(function (h) { var hc = E.CARDS[h.c], cost = E.costOf(s, pi, hc, h); return hc.type !== 'land' && cost > p.mana && cost <= p.mana + rel.store; }) ? 80 : -1;
+        if (rk === 'seed') return rel.store >= 2 ? 30 + rel.store * 10 + worth(unitById(s, m.target)) / 10 : -1;
+        if (rk === 'stars') {
+          // Swap when the second card suits the hand better: a land when short of them, otherwise a spell or unit.
+          var top = p.top || p.deck.slice(-2).reverse().map(function (i) { return i.c; }), short = p.lands.length < 5;
+          var want = function (id) { return (E.CARDS[id].type === 'land') === short ? 1 : 0; };
+          return top.length === 2 && want(top[1]) > want(top[0]) ? 15 : -1;
+        }
+        return -1;
       case 'respond':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         var att = s.pending.attack;
+        if (c.scatter) {
+          var rowV = 0;
+          s.units.forEach(function (e) { if (e.owner === s.active && e.r === m.row) rowV += hurtScore(e, c.scatter) + (e.r === E.backRow(pi) || dist(e, { r: E.backRow(pi), c: e.c }) === 1 ? 15 : 3); });
+          return rowV >= 35 ? rowV : -1;
+        }
+        if (c.unwind) {
+          var close = t.r === E.backRow(pi) || s.units.some(function (o) { return o.owner === pi && dist(o, t) <= E.range(t); });
+          return close && E.attackOf(s, t) >= 3 ? 25 + E.attackOf(s, t) * 5 : -1;
+        }
+        if (c.brace || c.canopy) {
+          var hitter = unitById(s, att.attacker), blow = E.hitOn(s, hitter, t);
+          var saved = c.canopy ? blow : Math.min(2, blow);
+          return blow >= t.hp && blow - saved < t.hp ? worth(t) : saved >= 3 ? 15 + saved * 4 : -1;
+        }
         if (c.dodge) return E.hitOn(s, unitById(s, att.attacker), t) >= t.hp ? worth(t) : -1;
         if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
         if (c.prevent) {

@@ -72,6 +72,10 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .piles { flex: none; margin-left: auto; display: flex; gap: 12px; }
 .pile { display: flex; flex-direction: column; align-items: center; line-height: 1.05; }
 .pile small { font-size: 11.5px; color: var(--muted); }
+.relics { min-width: 0; display: flex; flex-wrap: wrap; gap: 3px 5px; }
+.relic { display: inline-flex; align-items: center; gap: 3px; padding: 1px 6px 1px 3px; border-radius: 3px; background: rgba(14, 9, 4, .7); border: 1px solid rgba(214, 178, 106, .35); font-size: 12px; line-height: 17px; white-space: nowrap; cursor: help; }
+.relic svg { width: 13px; height: 13px; }
+.relic b { color: var(--gold-pale); font-variant-numeric: tabular-nums; }
 .pile b { font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }
 .pile.back b { width: 24px; height: 34px; margin-top: 2px; display: grid; place-items: center; background: url("art/web/ui/card-back.jpg") center / cover; border-radius: 3px; color: var(--ivory); text-shadow: 0 1px 2px #000, 0 0 4px #000; box-shadow: 1px 1px 0 #15110d, 2px 2px 0 #2a241e, 3px 3px 5px rgba(0, 0, 0, .55); }
 .plate.target { cursor: crosshair; background: rgba(163, 42, 28, .35); outline: 2px solid var(--danger); animation: pulse 1.2s ease-in-out infinite; }
