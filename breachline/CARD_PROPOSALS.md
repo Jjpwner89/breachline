@@ -1,9 +1,5 @@
 # Card proposals
 
-<!-- CARD_ART_HANDOFF_2026_11_10_BEGIN -->
-**Temporary card-art task — 2026-11-10:** Read [Selected art for the next cards](CARD_ART_HANDOFF_2026-11-10.md) before proposing or integrating the next Breachline cards. It records twelve creator-selected subjects, exact PNGs and a separate black-enamel wearer follow-up. Continue card writing with the creator. The subsequently requested concept-art batch is separate from these twelve selections. Keep the handoff until the creator explicitly confirms all selected cards are in the game, then follow its cleanup instructions and remove this temporary block.
-<!-- CARD_ART_HANDOFF_2026_11_10_END -->
-
 Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
@@ -252,7 +248,7 @@ The main new mechanics are approved in `DESIGN_NOTES.md`. These smaller ones eac
 
 ## Cards from the selected paintings
 
-Proposed and built on 2026-11-10, with Cinderwake lowered to 3. You chose these twelve paintings to become cards, recorded in `CARD_ART_HANDOFF_2026-11-10.md`. Each card uses the exact painting you chose. The four round-07 paintings had their title strip cropped off for the game, and the full paintings are unchanged.
+Proposed and built on 2026-11-10, with Cinderwake lowered to 3. You chose these twelve paintings to become cards on 2026-11-10. Each card's painting, game crop and source are recorded in `art/CARD_ART_FINAL.json`. Each card uses the exact painting you chose. The four round-07 paintings had their title strip cropped off for the game, and the full paintings are unchanged.
 
 | # | Card | Faction | Type | Cost | Wants | Stats | Rules | Painting | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

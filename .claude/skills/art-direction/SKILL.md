@@ -5,10 +5,6 @@ description: Holds the art direction and accumulated art feedback for Breachline
 
 # Breachline art direction
 
-<!-- CARD_ART_HANDOFF_2026_11_10_BEGIN -->
-**Temporary card-art task — 2026-11-10:** Read [Selected art for the next cards](../../../breachline/CARD_ART_HANDOFF_2026-11-10.md) before proposing or integrating the next Breachline cards. It records twelve creator-selected subjects, exact PNGs and a separate black-enamel wearer follow-up. Continue card writing with the creator. The subsequently requested concept-art batch is separate from these twelve selections. Keep the handoff until the creator explicitly confirms all selected cards are in the game, then follow its cleanup instructions and remove this temporary block.
-<!-- CARD_ART_HANDOFF_2026_11_10_END -->
-
 ## Direction takes precedence
 
 The creator's latest feedback and the approved art direction take precedence over all art briefs, including their suggested poses, facing directions, framing, compositions and rendering. A brief is a starting point, not a command to preserve an unsuccessful presentation. If its pose or staging conflicts with the direction established here, redesign that presentation to serve the character, story, meaningful action, lighting and variety.
@@ -25,7 +21,7 @@ Magical energy can power industry through imbued items, mages' charging work and
 
 Ambrel concentrates learned and highly developed magical practice because its university survived the Empire's fall. Other places still have mages and tinkerers. This supports uneven capability without making all Ambrel residents casters or all everyday scenes displays of magic. Keep the earlier range from modest useful magic to exceptional large events; rarity does not mean every illustration must be small or quiet.
 
-The creator requested a new concept-art batch informed by these rules, alongside questions about the remaining gaps. New paintings are studies awaiting review, not additions to the twelve-card handoff or automatic canon.
+The creator requested a new concept-art batch informed by these rules, alongside questions about the remaining gaps. New paintings are studies awaiting review, not additions to the twelve selected cards or automatic canon.
 
 ## Round 08 review and card selections (2026-11-10)
 
