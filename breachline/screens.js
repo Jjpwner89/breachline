@@ -234,13 +234,15 @@ var Screens = (function () {
         : '<button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
       return '<div class="dcard"><button type="button" class="dtile" ' + act('edit', d.id) + ' aria-label="Edit ' + esc(d.name) + '">' + coverHtml(d) + '</button><div class="dtools">' + tools + '</div></div>';
     }).join('');
-    var starters = Decks.starters().map(function (d) {
+    var fixed = function (d) {
       return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
-    }).join('');
+    };
+    var starters = Decks.starters().map(fixed).join(''), themes = Decks.themes().map(fixed).join('');
     show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><button type="button" class="btn primary push" ' + act('newDeck') + '>New deck</button></header>' +
       (Decks.persistent() ? '' : '<p class="warn">This browser is blocking storage, so decks last only until you close this tab.</p>') +
       '<section class="pickset"><h2>Your decks</h2>' + (mine ? '<div class="dtiles">' + mine + '</div>' : '<p class="hint">Nothing saved yet. Start a new deck, or copy a starter below and change it.</p>') + '</section>' +
-      '<section class="pickset"><h2>Starter decks</h2><div class="dtiles">' + starters + '</div></section></div>', builder);
+      '<section class="pickset"><h2>Starter decks</h2><div class="dtiles">' + starters + '</div></section>' +
+      '<section class="pickset"><h2>Theme decks</h2><p class="hint">One for each newer mechanic, built and tested against the starters.</p><div class="dtiles">' + themes + '</div></section></div>', builder);
   }
   actions.builder = function () { confirmDelete = null; builder(); };
   actions.newDeck = function () { editor(Decks.create('New deck')); };

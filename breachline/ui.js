@@ -612,9 +612,11 @@
   var casting = false;
   function apply(m) {
     if (casting) return;
-    var who = actor(), inHand = m.type === 'cast' && m.r !== undefined && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
-    var spell = inHand && E.CARDS[inHand.c];
-    if (spell && spell.aim && spell.aim.tile && SpellFX.enabled()) {
+    // An instant aimed at a tile (a response with a tile and no unit target) animates like a cast spell.
+    var aimed = (m.type === 'cast' || m.type === 'respond' && m.target === undefined) && m.r !== undefined;
+    var who = actor(), inHand = aimed && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    var spell = inHand && E.CARDS[inHand.c], look = spell && spell.aim && (spell.aim.fx || spell.aim.tile);
+    if (look && SpellFX.enabled()) {
       var from = who === HUMAN ? document.querySelector('#hand .card[data-card="' + m.card + '"]') : $('themStrip');
       var reach = reachOf(spell, who, m.r, m.c);
       if (who === BOT) announce(m);
@@ -625,7 +627,8 @@
       showReach();
       if (from && from.classList.contains('card')) from.classList.add('casting');
       SpellFX.cast({
-        kind: spell.aim.tile, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
+        kind: look, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
+        push: who === 0 ? -1 : 1,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
         onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
       }).then(function () {
@@ -913,14 +916,14 @@
       '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="nm">' + esc(d.name) + '</span>' +
       '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + (problems.length ? esc(problems[0]) : d.starter ? DECK_NOTES[d.id] : 'One of your decks.') + '</span></button>';
+      '<span class="ds">' + (problems.length ? esc(problems[0]) : d.starter ? DECK_NOTES[d.id] : d.theme ? esc(d.note) : 'One of your decks.') + '</span></button>';
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
     return '<button type="button" class="who-plays" data-player="' + key + '" aria-pressed="' + (oppPlayer === key) + '"' + (enabled ? '' : ' disabled') + '><b>' + label + '</b><span>' + blurb + '</span></button>';
   }
   function renderStart() {
-    var all = Decks.saved().concat(Decks.starters());
+    var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
     $('oppDecks').innerHTML = all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +

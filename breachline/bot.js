@@ -5,6 +5,11 @@ var Bot = (function () {
   function worth(u) { return E.CARDS[u.cardId].cost * 15 + 20; }
   function handCard(p, id) { for (var i = 0; i < p.hand.length; i++) if (p.hand[i].id === id) return p.hand[i]; return null; }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
+  // What healing t is worth to Devotion: each Devotion unit that grows, t itself or an ally next to it. Only real healing counts.
+  function devotion(s, t) {
+    if (t.hp >= t.maxHp) return 0;
+    return 25 * s.units.filter(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && E.hasKw(o, 'Devotion'); }).length;
+  }
   function unitAt(s, r, c) { return s.units.filter(function (u) { return u.r === r && u.c === c; })[0] || null; }
   function hurtScore(t, amt) { return amt >= t.hp ? worth(t) + 30 : worth(t) * amt / t.maxHp; }
 
@@ -179,7 +184,7 @@ var Bot = (function () {
         if (c.mend) {
           t = unitById(s, m.target);
           if (c.temper) return 25 + Math.min(c.mend, t.maxHp - t.hp) * 8 + worth(t) / 10;
-          return t.maxHp - t.hp >= 2 ? 30 + Math.min(c.mend, t.maxHp - t.hp) * 10 + worth(t) / 10 : -1;
+          return t.maxHp - t.hp >= 2 || devotion(s, t) ? 30 + Math.min(c.mend, t.maxHp - t.hp) * 10 + worth(t) / 10 + devotion(s, t) : -1;
         }
         if (c.blast) {
           t = unitById(s, m.target);
@@ -236,7 +241,7 @@ var Bot = (function () {
       case 'ability':
         u = unitById(s, m.unit);
         var ab = E.CARDS[u.cardId].ability, key = ab.key;
-        if (key === 'heal') { t = unitById(s, m.target); return 25 + Math.min(25, (t.maxHp - t.hp) * 10) + worth(t) / 10; }
+        if (key === 'heal') { t = unitById(s, m.target); return 25 + Math.min(25, (t.maxHp - t.hp) * 10) + worth(t) / 10 + devotion(s, t); }
         if (key === 'rally') return 60;
         if (key === 'healall') return 70;
         if (key === 'study') return 70;
@@ -271,7 +276,7 @@ var Bot = (function () {
           return t && t.owner === foe ? 25 + E.attackOf(s, t) * 4 : t ? -10 : -1;
         }
         if (key === 'exhume') return 60 + E.CARDS[p.discard.filter(function (d) { return d.id === m.raise; })[0].c].cost * 15;
-        if (key === 'farheal') { t = unitById(s, m.target); return 25 + Math.min(20, (t.maxHp - t.hp) * 10) + worth(t) / 10; }
+        if (key === 'farheal') { t = unitById(s, m.target); return 25 + Math.min(20, (t.maxHp - t.hp) * 10) + worth(t) / 10 + devotion(s, t); }
         if (key === 'refit') {
           // Hand equipment on only to a stronger ally that carries none.
           t = unitById(s, m.target);

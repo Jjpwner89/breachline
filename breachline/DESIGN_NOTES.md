@@ -172,7 +172,33 @@ Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-1
 
 Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
 
-Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged. They have been played only in random bot decks so far, not in balance runs.
+Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged (re-run that day: 49%, 46%, 45%, 55% and 55%).
+
+Balance run for cards 104 to 191, 2026-11-10, from 3,000 games of random one-colour decks and 5,000 games of theme decks:
+- **No new card stands above the best old ones.** Within its colour, the strongest new cards are Slagheart hulk, Cinderhook axe, Elderwood stag and Stormglass glaive, at 8 to 11 points above their colour's average; the best old cards sit at 15 to 17.
+- **Weakest in random decks:** Hour of collection, Barrow mark, Wildfire, Cinder rain, Humbling light and Unwind the step, 14 to 21 points below average. Most are sweepers or answers, which get cast when the bot is already losing, so this overstates the problem. Barrow mark is plainly weak for 2 mana.
+- **Gnosis (blue) is the weakest colour in random decks (33%).** Its new cards are mostly control spells, so random blue decks end up short of units. Its theme decks hold up better.
+- **Three cards changed:** Cinder firebrand, Untaught firecaller and The sky falls in. See "Balance changes after the first balance run" in `CARD_PROPOSALS.md`.
+
+Theme decks, one per new mechanic, are in the exhibition picker and the deck builder (`THEMES` in `decks.js`). Each was rebuilt once with a proper curve of units, then played 500 games against the starters:
+
+| Theme deck | Mechanic | vs starters |
+| --- | --- | --- |
+| Rootfed herd | Rootfed, extra lands | 62% |
+| The barrow feast | Carrion, sacrifice | 61% |
+| The court's favour | Charm, buying units, Veiled | 55% |
+| The armed road | Equipment, Armed | 53% |
+| Long sights | Longshot | 50% |
+| The Thornwardens | Thorns, Holding ground | 50% |
+| Cinder and slag | Lit, burning ground | 47% |
+| The long throw | Spells at the summoner | 46% |
+| Winter glyphs | Freezing | 38% |
+| Hearth and vow | Devotion | 35% |
+
+- **Rootfed and Carrion run hot.** Both are mono-colour decks in the two strongest colours. Alderkin elder, Shell-mountain tortoise and Elderwood stag win over 75% of the games they're played in. Worth watching, not yet worth changing.
+- **Devotion rarely triggers:** about once a game, because it needs real healing and units seldom survive damaged next to a healer. If healing a unit at full health also counted, it would trigger about 6 times a game and the deck would win 51%. That's a rules change to the creator's mechanic, so it's waiting for a decision.
+- **Freezing is the weakest theme.** It is blue's weakness again: the starters beat a deck that stops units without killing them.
+- **Spell-heavy first drafts lose badly:** 6% to 19% for winter, burn, fire and Devotion with 6 to 8 units. Every theme deck now plays 11 to 15 units.
 
 Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.
 

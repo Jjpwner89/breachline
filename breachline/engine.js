@@ -212,12 +212,12 @@ var Engine = (function () {
     // Fervor.
     { id: 'kindle', name: 'Kindle the line', type: 'spell', colour: 'R', cost: 4, wants: 2, aim: { spread: true, foes: 1, light: true, tile: 'burn', turns: 2 }, text: 'Aim at a tile: it and the tiles next to it burn for 2 turns. Each enemy there takes 1 damage, and each of your units there becomes Lit.' },
     unit('slagheart', 'Slagheart hulk', 'R', 5, 2, 4, 7, { keywords: ['Lit'], text: "Lit: Fireproof. When it dies, it explodes: 2 damage to each unit next to it that isn't Fireproof, and the ground around it burns for 2 turns." }),
-    unit('firebrand', 'Cinder firebrand', 'R', 3, 1, 3, 3, { burnHunt: 2, text: '+2 attack against a unit on a burning tile.' }),
+    unit('firebrand', 'Cinder firebrand', 'R', 3, 1, 3, 4, { burnHunt: 2, text: '+2 attack against a unit on a burning tile.' }),
     { id: 'hurledbrand', name: 'Hurled brand', type: 'spell', colour: 'R', cost: 3, wants: 1, bolt: 2, text: '2 damage to an enemy unit or the enemy summoner.' },
-    { id: 'skyfalls', name: 'The sky falls in', type: 'spell', colour: 'R', cost: 6, wants: 2, bolt: 4, text: '4 damage to an enemy unit or the enemy summoner.' },
-    { id: 'scatter', name: 'Scatter the line', type: 'instant', colour: 'R', cost: 3, wants: 1, aim: { row: true, foes: 1, back: true }, text: 'Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side.' },
+    { id: 'skyfalls', name: 'The sky falls in', type: 'spell', colour: 'R', cost: 5, wants: 2, bolt: 4, text: '4 damage to an enemy unit or the enemy summoner.' },
+    { id: 'scatter', name: 'Scatter the line', type: 'instant', colour: 'R', cost: 3, wants: 1, aim: { row: true, foes: 1, back: true, fx: 'gale' }, text: 'Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side.' },
     { id: 'wildfire', name: 'Wildfire', type: 'spell', colour: 'R', cost: 6, wants: 2, sweep: 2, text: '2 damage to every unit, yours included. Lit and Fireproof units are unhurt.' },
-    unit('firecaller', 'Untaught firecaller', 'R', 3, 1, 2, 2, { ability: { key: 'wildcast', label: 'Call fire', amount: 3, turns: 2 }, text: 'Ability: pick a tile within 3. Fire lands there or on a tile next to it, at random: 3 damage, and it burns for 2 turns.' }),
+    unit('firecaller', 'Untaught firecaller', 'R', 3, 1, 2, 3, { ability: { key: 'wildcast', label: 'Call fire', amount: 3, turns: 2 }, text: 'Ability: pick a tile within 3. Fire lands there or on a tile next to it, at random: 3 damage, and it burns for 2 turns.' }),
     { id: 'cinderhook', name: 'Cinderhook axe', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 2, hpBonus: 0, allyOnly: true, pierce: 'guard', text: 'Equip one of your units: +2 attack, and its attacks ignore Guard.' },
     { id: 'cinderrain', name: 'Cinder rain', type: 'spell', colour: 'R', cost: 4, wants: 2, aim: { square: true, embers: 3, ember: 2, tile: 'burn', turns: 1 }, text: 'Aim at a tile: three embers land on random tiles in the square around it. Each deals 2 damage to any unit there and burns the tile for 1 turn. Lit and Fireproof units are unhurt.' },
     unit('clanoutrider', 'Clan outrider', 'R', 2, 1, 2, 1, { keywords: ['Swift'], zap: 1, zapRange: 2, text: 'Swift. When summoned: 1 damage to an enemy unit within 2 tiles.' }),
@@ -704,7 +704,8 @@ var Engine = (function () {
       hand.forEach(function (i) {
         var c = card(i);
         if ((!p.landDropped || p.extraLands > 0) && c.type === 'land') out.push({ type: 'playLand', card: i.id });
-        if (c.type !== 'land' && costOf(s, pi, c, i) <= p.mana) {
+        // Instants come from ownInstants, which aims them only where they can matter.
+        if (c.type !== 'land' && c.type !== 'instant' && costOf(s, pi, c, i) <= p.mana) {
           if (c.type === 'unit') {
             var foes = c.zap ? s.units.filter(function (e) { return e.owner !== pi && !e.veiled; }) : [];
             entryTiles(s, pi, c).forEach(function (t) {

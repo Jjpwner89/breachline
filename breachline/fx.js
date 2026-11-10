@@ -234,6 +234,36 @@ var SpellFX = (function () {
   var sheets = {}, missiles = {};
   function preload(list, into) { Object.keys(list).forEach(function (k) { var im = new Image(); im.onload = function () { into[k] = im; }; im.src = list[k]; }); }
   preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles);
+  // Recoloured copies of painted sheets, for a spell that borrows another family's look: each pixel's brightness is
+  // repainted along a ramp of colours, darkest first, keeping the sheet's own transparency.
+  var TINTS = {
+    'gale-storm': ['storm', ['#2a0410', '#9c1230', '#ff3d3a', '#ff9a52', '#fff3e0']],
+    'gale-frost': ['frost', ['#3a1206', '#b8461a', '#ff9a3c', '#ffd27a', '#fffaf0']]
+  };
+  function tinted(name) {
+    var t = TINTS[name], im = t && sheets[t[0]];
+    if (!im) return null;
+    var c = document.createElement('canvas'), g = c.getContext('2d');
+    c.width = im.naturalWidth; c.height = im.naturalHeight; g.drawImage(im, 0, 0);
+    try {
+      var d = g.getImageData(0, 0, c.width, c.height), px = d.data, lut = ramp(t[1]);
+      for (var i = 0; i < px.length; i += 4) {
+        var l = Math.round(0.299 * px[i] + 0.587 * px[i + 1] + 0.114 * px[i + 2]) * 3;
+        px[i] = lut[l]; px[i + 1] = lut[l + 1]; px[i + 2] = lut[l + 2];
+      }
+      g.putImageData(d, 0, 0);
+    } catch (e) { return (sheets[name] = im); } // Pixels unreadable (opened from disk): play the source colours.
+    return (sheets[name] = c);
+  }
+  // 256 brightness steps spread evenly across the ramp's colours, as r, g, b triples.
+  function ramp(cols) {
+    var rgb = cols.map(function (h) { var n = parseInt(h.slice(1), 16); return [n >> 16, (n >> 8) & 255, n & 255]; }), out = [];
+    for (var i = 0; i < 256; i++) {
+      var p = i / 255 * (rgb.length - 1), j = Math.min(rgb.length - 2, Math.floor(p)), f = p - j;
+      for (var k = 0; k < 3; k++) out.push(Math.round(lerp(rgb[j][k], rgb[j + 1][k], f)));
+    }
+    return out;
+  }
   // How each sheet plays: its length, and how much of each step is spent dissolving into the next (1 = the whole step).
   // Fire plays its frames in order but never stands still: the whole blast turns slowly, each frame swells as it
   // dissolves into the next, the widest frame churns into its own mirror image, and the edges feather into flame.
@@ -246,10 +276,10 @@ var SpellFX = (function () {
   var soft = document.createElement('canvas'), sctx = soft.getContext('2d');
   // scale is the frame's width in tiles; a smaller hit on a reached tile plays a little quicker.
   function playSheet(family, b, scale, quick) {
-    var im = sheets[family];
+    var im = sheets[family] || tinted(family);
     if (!im) return false;
     var T = SHEET_TIME[family] || SHEET_DEFAULT, ms = T.ms * (quick ? 0.78 : 1), seq = sequence(T), step = ms / (seq.length - 0.4);
-    var fw = im.naturalWidth / 3, fh = im.naturalHeight / 2, size = b.w * (scale || 1.7);
+    var fw = im.width / 3, fh = im.height / 2, size = b.w * (scale || 1.7);
     // j is the frame's place in the sequence; it grows a little over the time it's on screen.
     function frame(g, j, p, cx, cy, a, turn) {
       var fr = seq[j];
@@ -326,8 +356,18 @@ var SpellFX = (function () {
     frost: { family: 'frost', core: '#f4fbff', glow: '#8fd0ff', deep: '#4ea6e8', smoke: '#cfe8ff', size: 11 },
     thorns: { family: 'thorns', core: '#e6f4b4', glow: '#86c24a', deep: '#4f8a26', smoke: '#3a2a16', size: 12 },
     blight: { family: 'blight', core: '#e2ccff', glow: '#8a5bb5', deep: '#5a2f80', smoke: '#140a1c', size: 11 },
-    holy: { family: 'holy', core: '#fffaf0', glow: '#ffd77a', deep: '#ffb53d', smoke: '#fff0c8', size: 11 }
+    holy: { family: 'holy', core: '#fffaf0', glow: '#ffd77a', deep: '#ffb53d', smoke: '#fff0c8', size: 11 },
+    // Scatter the line: the storm and frost bursts turned scarlet and amber, with a gust that drives the row back.
+    gale: { family: 'gale-storm', also: 'gale-frost', core: '#fff0e0', glow: '#ff5a3c', deep: '#d01e3a', smoke: '#2a0e12', size: 11 }
   };
+  // The painted sheet for a look, and its second sheet layered a little smaller when it has one.
+  function paint(L, b, scale, quick) {
+    var done = playSheet(L.family, b, scale, quick);
+    if (L.also) playSheet(L.also, b, (scale || 1.7) * 0.8, quick);
+    return done;
+  }
+  // Which way, down the screen, the cast spell pushes enemies: -1 up, 1 down.
+  var push = -1;
 
   function trail(kind, x, y, L, dt) {
     for (var i = 0; i < Math.ceil(dt * 90); i++) {
@@ -345,6 +385,9 @@ var SpellFX = (function () {
       } else if (kind === 'blight') {
         spawn({ kind: 'smoke', x: x + rnd(-4, 4), y: y + rnd(-4, 4), vx: rnd(-15, 15), vy: rnd(10, 40), size: rnd(5, 9), col: L.smoke, life: rnd(.6, 1), alpha: .9 });
         if (Math.random() < .4) spawn({ kind: 'glow', x: x, y: y, vx: rnd(-20, 20), vy: rnd(-30, 10), size: rnd(4, 7), col: L.glow, life: .4 });
+      } else if (kind === 'gale') {
+        spawn({ kind: 'spark', x: x, y: y, vx: rnd(-140, 140), vy: rnd(-140, 140), size: 1.5, col: Math.random() < .5 ? '#ffd9a0' : L.glow, life: rnd(.12, .25), drag: 4 });
+        if (Math.random() < .35) spawn({ kind: 'shard', x: x + rnd(-4, 4), y: y + rnd(-4, 4), vx: rnd(-30, 30), vy: rnd(-10, 30), size: rnd(2, 3.5), col: '#ffb36b', life: rnd(.3, .5), grav: 60 });
       } else if (kind === 'holy') spawn({ kind: 'glow', x: x + rnd(-6, 6), y: y + rnd(-6, 6), vx: rnd(-15, 15), vy: rnd(-25, 5), size: rnd(3, 6), col: Math.random() < .5 ? L.glow : '#ffffff', life: rnd(.4, .8), drag: 2 });
     }
   }
@@ -484,6 +527,28 @@ var SpellFX = (function () {
       return this.t < 1500;
     } });
   }
+  // Scatter the line: tapered crescents of wind sweep off the tile the way the enemies are pushed, trailing streaks.
+  function gust(b, L) {
+    var dir = push;
+    [0, 70, 150].forEach(function (delay, i) {
+      var dx = rnd(-.12, .12) * b.w, wide = rnd(.75, .95) - i * .12;
+      actor({ ms: 560 + delay, over: function () {
+        var k = (this.t - delay) / 560;
+        if (k <= 0) return;
+        var e = 1 - Math.pow(1 - k, 2), x = b.x + dx * e, y = b.y + dir * b.h * (0.9 * e - 0.1), w = b.w * wide * (1 + e * 0.2);
+        var bow = dir * b.h * 0.26, th = dir * b.h * (0.13 - i * 0.025) * (1 - k * 0.5);
+        ctx.globalAlpha = Math.min(1, (1 - k) * 1.5);
+        crescent(x, y, w, bow, th, L.deep); crescent(x, y, w * 0.86, bow, th * 0.45, L.glow); crescent(x, y, w * 0.6, bow, th * 0.15, '#fff3e0');
+        ctx.globalAlpha = 1;
+      } });
+    });
+    for (var n = 0; n < 26; n++) spawn({ kind: 'spark', x: b.x + rnd(-.42, .42) * b.w, y: b.y + rnd(-.25, .25) * b.h, vx: rnd(-30, 30), vy: dir * rnd(380, 820), size: rnd(1.6, 3), col: Math.random() < .5 ? '#ffd9a0' : L.glow, life: rnd(.3, .5), drag: 2.5 });
+  }
+  // A crescent bulging bow from its ends, th thick at its middle and sharp at both tips.
+  function crescent(x, y, w, bow, th, col) {
+    ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x - w / 2, y);
+    ctx.quadraticCurveTo(x, y + bow * 2, x + w / 2, y); ctx.quadraticCurveTo(x, y + (bow - th) * 2, x - w / 2, y); ctx.fill();
+  }
   function pillar(b, ms) {
     actor({ ms: ms, light: function () {
       var k = this.t / ms, a = k < .2 ? k / .2 : 1 - (k - .2) / .8, w = b.w * 0.55 * (1 + k * .3);
@@ -496,9 +561,9 @@ var SpellFX = (function () {
   function impact(kind, b) {
     var L = LOOK[kind], x = b.x, y = b.y;
     hitStop(kind === 'holy' ? 40 : 75);
-    shake(kind === 'charge' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
+    shake(kind === 'charge' || kind === 'gale' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
     // With a painted sheet, the code-drawn centrepiece (vines, rot pool, crystals) steps aside; sparks, debris and light stay.
-    var painted = playSheet(L.family, b);
+    var painted = paint(L, b);
     if (kind === 'blight') {
       // Blight darkens rather than flashes.
       flash(x, y, b.w * 0.4, L.deep, 260);
@@ -523,6 +588,11 @@ var SpellFX = (function () {
       if (!painted) brambles(b);
       burst(x, y, 40, [120, 360], function () { return { kind: 'dirt', size: rnd(2, 4.5), col: Math.random() < .5 ? '#4a3518' : '#6b4f26', life: rnd(.5, .9), grav: 820, drag: 1 }; });
       burst(x, y, 18, [60, 220], function () { return { kind: 'leaf', size: rnd(3, 6), col: Math.random() < .5 ? '#4e7a2a' : '#7aa840', life: rnd(.8, 1.2), grav: 200, drag: 2 }; });
+    } else if (kind === 'gale') {
+      for (var j = 0; j < 3; j++) bolt({ x: x + rnd(-b.w * .4, b.w * .4), y: b.t - rnd(30, 90) }, { x: x + rnd(-8, 8), y: y + rnd(-8, 8) }, L.deep, 320, 18);
+      burst(x, y, 30, [140, 460], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffd9a0' : L.glow, life: rnd(.2, .45), drag: 3 }; });
+      burst(x, y, 16, [100, 300], function () { return { kind: 'shard', size: rnd(2.5, 5), col: Math.random() < .5 ? '#ffc58a' : '#ff8a5c', life: rnd(.4, .7), grav: 420, drag: 1.4 }; });
+      gust(b, L);
     } else if (kind === 'holy') {
       pillar(b, 900);
       burst(x, y, 30, [40, 160], function () { return { kind: 'glow', size: rnd(3, 6), col: Math.random() < .5 ? L.glow : '#ffffff', life: rnd(.8, 1.4), grav: -70, drag: 1.5 }; });
@@ -531,7 +601,7 @@ var SpellFX = (function () {
   // The spell carries on from where it landed to each other tile it affects.
   function travel(from, to, kind, ms) {
     var L = LOOK[kind];
-    if (kind === 'charge') { bolt(from, to, L.glow, 340, 16); return wait(80); }
+    if (kind === 'charge' || kind === 'gale') { bolt(from, to, L.glow, 340, 16); return wait(80); }
     return new Promise(function (ok) {
       actor({ update: function (dt) {
         this.t += dt * 1000;
@@ -550,8 +620,9 @@ var SpellFX = (function () {
   // A smaller hit on each other tile the spell reaches; the wave's first tile already had the full impact.
   function land(kind, b, noSheet) {
     var L = LOOK[kind];
-    if (!noSheet) playSheet(L.family, b, 1.15, true);
+    if (!noSheet) paint(L, b, 1.15, true);
     flash(b.x, b.y, b.w * 0.45, L.glow, 260); ring(b.x, b.y, 6, b.w * 0.55, L.core, 380, 4); shake(3);
+    if (kind === 'gale') gust(b, L);
     if (kind === 'frost') burst(b.x, b.y, 14, [80, 220], function () { return { kind: 'shard', size: rnd(2.5, 5), col: '#e8f6ff', life: rnd(.4, .7), grav: 480 }; });
     else if (kind === 'burn') burst(b.x, b.y, 20, [100, 300], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffd27a' : L.glow, life: rnd(.3, .5), grav: 600 }; });
     else burst(b.x, b.y, 18, [100, 300], function () { return { kind: 'spark', size: 1.4, col: Math.random() < .5 ? '#ffffff' : L.glow, life: rnd(.2, .35), drag: 3 }; });
@@ -574,7 +645,8 @@ var SpellFX = (function () {
   }
 
   // Plays a spell aimed at a tile. o: { kind: tile effect, from: element it's thrown from, target: tile element,
-  // reach: other tile elements it reaches, wave: true for Cinderwake, shake: element to shake, onLaunch: called as it leaves the source }.
+  // reach: other tile elements it reaches, wave: true for Cinderwake, shake: element to shake, push: -1 or 1, the screen direction
+  // enemies are driven, onLaunch: called as it leaves the source }.
   // Resolves when the animation is done, so the caller can apply the move. Animation frames stop while the page is hidden,
   // so it also gives up after a few seconds rather than hold the game.
   function cast(o) { return Promise.race([play(o), new Promise(function (ok) { setTimeout(ok, 7000); })]); }
@@ -595,6 +667,7 @@ var SpellFX = (function () {
   async function play(o) {
     if (reduced || !LOOK[o.kind] || !o.target) return;
     shakeEl = o.shake || null;
+    push = o.push || -1;
     var src = origin(o.from);
     gather(src, o.kind, 300);
     await wait(300);
@@ -604,6 +677,8 @@ var SpellFX = (function () {
     var dst = centre(o.target);
     impact(o.kind, dst);
     var reach = (o.reach || []).filter(Boolean);
+    // A gale spreads outward from where it lands, nearest tiles first.
+    if (o.kind === 'gale') reach.sort(function (p, q) { var a = centre(p), b = centre(q); return Math.abs(a.x - dst.x) - Math.abs(b.x - dst.x); });
     if (o.wave) { await wait(120); await wave([o.target].concat(reach), 190); }
     else {
       await wait(o.kind === 'frost' ? 140 : 90);

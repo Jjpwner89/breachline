@@ -26,6 +26,10 @@ Where the build reads a card differently from its proposal. You approved the fir
 - **Gilt-hall temptress:** a charmed unit can act from your next turn, and goes back if she dies. She charms one unit at a time.
 - **Devotion, Carrion, Longshot and the Untaught firecaller:** shortened so they fit a card in the hand.
 
+Balance changes after the first balance run, 2026-11-10 (numbers in `DESIGN_NOTES.md` under Balance):
+- **Cinder firebrand** 3 / 3 to 3 / 4, and **Untaught firecaller** 2 / 2 to 2 / 3. Fire did too little for its cost: in an all-fire deck, burning tiles, explosions and called fire together dealt the enemy about 5 damage a game. With both changes the fire theme deck went from 41% to 47% against the starters.
+- **The sky falls in** costs 5, down from 6. It won 33% of the games it was played in, the lowest of red's reach spells.
+
 ## Gnosis sound restriction (creator direction, 2026-11-10)
 
 Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
@@ -331,7 +335,7 @@ Built on 2026-11-10. Draft decks built around focuses show four that don't win y
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 104 | Kindle the line | Cinder Clans | Spell | 4 | 2 |  | Aim at a tile: it and the tiles next to it burn for 2 turns. Each enemy there takes 1 damage. Your units there aren't hurt; they become Lit instead | New: Lit |
 | 105 | Slagheart hulk | None (Fervor) | Unit | 5 | 2 | 4 / 7 | Lit from the moment it's summoned | Small, once Lit exists |
-| 106 | Cinder firebrand | Cinder Clans | Unit | 3 | 1 | 3 / 3 | +2 attack against a unit on a burning tile | Small |
+| 106 | Cinder firebrand | Cinder Clans | Unit | 3 | 1 | 3 / 4 | +2 attack against a unit on a burning tile | Small |
 | 107 | Rimebolt | Lantern Conclave | Spell | 3 | 1 |  | 2 damage to an enemy unit, and it can't move on its next turn | Small |
 | 108 | Conclave rimecaller | Lantern Conclave | Unit | 3 | 1 | 2 / 2 | Ranged. Freeze: the unit it attacks can't move on its next turn | None |
 | 109 | Vow of keeping | Still Flame | Enchantment | 2 | 1 |  | Enchant one of your units: -1 attack. The first time it would die, it's left at 1 health instead, and the vow ends | Small |
@@ -341,7 +345,7 @@ Built on 2026-11-10. Draft decks built around focuses show four that don't win y
 | 113 | Stormglass glaive | Sunmane Oath | Equipment | 3 | 1 |  | Equip one of your units: +1 attack and Resonance (its attacks also hit the enemy directly behind the target) | None, now that Resonance does this |
 | 114 | Ledger of debts | Ashen Court | Spell | 2 | 1 |  | Lose 2 life. Draw two cards | Small |
 | 115 | Ribbonvane | None (Vigil) | Unit | 4 | 2 | 3 / 4 | Flying. Guard | None |
-| 116 | Untaught firecaller | Warhorde | Unit | 3 | 1 | 2 / 2 | Ability, instead of attacking: pick a tile within 3 tiles. The fire lands on a random tile among it and the tiles next to it: 3 damage to any unit there, yours included, and the tile burns for 2 turns | Small |
+| 116 | Untaught firecaller | Warhorde | Unit | 3 | 1 | 2 / 3 | Ability, instead of attacking: pick a tile within 3 tiles. The fire lands on a random tile among it and the tiles next to it: 3 damage to any unit there, yours included, and the tile burns for 2 turns | Small |
 | 117 | Reedbank forager | Elder Herd | Unit | 2 | 1 | 1 / 3 | Instead of moving or attacking: you may play an extra land this turn | Small |
 
 **Lit**, the new rule behind 104 and 105:
@@ -409,7 +413,7 @@ Proposed on 2026-11-10 from your notes, and approved the same day with the chang
 | # | Card | Faction | Type | Cost | Wants | Rules | Painting | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 118 | Hurled brand | Cinder Clans | Spell | 3 | 1 | 2 damage to a unit or to the enemy summoner |  | New: aiming at the summoner |
-| 119 | The sky falls in | Warhorde | Spell | 6 | 2 | 4 damage to a unit or to the enemy summoner |  | Small, after 118 |
+| 119 | The sky falls in | Warhorde | Spell | 5 | 2 | 4 damage to a unit or to the enemy summoner |  | Small, after 118 |
 | 120 | Siphon vigor | Ashen Court | Spell | 4 | 1 | 2 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 2 life | [Card art](art/siphon-vigor.png) | Small, after 118 |
 | 121 | Collect the tithe | Ashen Court | Spell | 6 | 2 | 3 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 3 life |  | Small, after 118 |
 | 122 | Scatter the line | Cinder Clans | Instant | 3 | 1 | Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side | [Card art](art/scatter-the-line.png) | New: rows |
