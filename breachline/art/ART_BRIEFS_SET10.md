@@ -18,7 +18,9 @@ MAGIC AND PRESENTATION: Direct personal and creature magic, imbued objects and i
 REFERENCE USE: Accepted references guide anatomy, materials, individual continuity and taste; they do not limit new faces, clothes, kit, settings or magic to a repeating catalog. Preserve accepted content and vary presentation. Feedback applies at the image or batch scope given unless the creator makes it general.
 <!-- CURRENT_ART_DIRECTION_END -->
 11 illustrations for new cards proposed on 2026-11-10 in [CARD_PROPOSALS.md](../CARD_PROPOSALS.md): 123 Pall of ash, 126 Wildfire, 129 Bought allegiance, 132 Leaden step, 140 Vowkeeper of the long road, 144 Glimmer double, 155 Lots for the gallows, 164 Anoint with embers, 171 Earthspeaker, 174 Shell-mountain tortoise, 179 Copper hound.
-**Status, 2026-11-10:** briefs written, no paintings yet. Sets 7 to 11 are meant to be generated at the same time in separate Codex sessions.
+**Status, 2026-11-10:** all eleven paintings are approved and final. The current selections are in [SET10_GALLERY.html](SET10_GALLERY.html) and [CARD_ART_FINAL.json](CARD_ART_FINAL.json). The creator requested finalization, removal of superseded versions and a commit.
+
+**Final review changes:** Earthspeaker is white and ginger; Glimmer Double stands pressed against the wall; Leaden Step stands nearly still on dry stone with visible magical restraint. These approved changes override the original briefs below. Earlier versions, including the Copper Hound before its lettering cleanup, have been deleted; exact prompts remain in [ART_PROMPTS_SET10.json](ART_PROMPTS_SET10.json).
 ## What these paintings are for
 
 Each brief begins with what should make the painting worth looking at. Card rules are design records in CARD_PROPOSALS.md and stay out of image prompts: a Longshot unit needn't be shooting, and a spell needn't diagram its effect, unless that's the most beautiful choice. Spells can show a specific event with purposeful activity and restrained, scene-organizing magic, which the creator liked in Set 3. Large dramatic magic is welcome where the brief asks for it, as with Cinderfall.

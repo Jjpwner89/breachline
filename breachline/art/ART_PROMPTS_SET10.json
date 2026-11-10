@@ -1,0 +1,1193 @@
+{
+  "set": 10,
+  "date": "2026-11-10",
+  "status": "approved and final",
+  "sourceBriefs": "ART_BRIEFS_SET10.md",
+  "sourceCards": "../CARD_PROPOSALS.md",
+  "artDirection": "../../.claude/skills/art-direction/SKILL.md",
+  "count": 11,
+  "shared_direction": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n",
+  "generation_method": "built-in image_gen",
+  "prompt_usage": "Top-level prompt is the selected attempt. generation_attempts preserves exact original/edit prompts, original tool arguments, historical input paths and hashes. Superseded image sources and edit-input snapshots were deleted at the creator's request; reference_availability records missing historical inputs. Final selected sources and all delivery files are retained.",
+  "images": [
+    {
+      "number": 140,
+      "name": "Vowkeeper of the long road",
+      "file": "vowkeeper-of-the-long-road.png",
+      "aim": "A veteran in heavy plate and pilgrim's cloak at a road shrine at dusk, sword planted, ribbons of old vows tied to his armour.",
+      "refs": [
+        "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png",
+        "reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "brief": "An older knight with a grey beard stands at a weathered road shrine at dusk, hands on the pommel of a planted sword. Dozens of faded cloth ribbons, each a vow, are tied to his pauldrons and belt and lift in the wind; they are plain cloth, not glowing threads. Warm sky behind, his face in cool shade. A calm, immovable presence.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A veteran in heavy plate and pilgrim's cloak at a road shrine at dusk, sword planted, ribbons of old vows tied to his armour.\nSCENE: An older knight with a grey beard stands at a weathered road shrine at dusk, hands on the pommel of a planted sword. Dozens of faded cloth ribbons, each a vow, are tied to his pauldrons and belt and lift in the wind; they are plain cloth, not glowing threads. Warm sky behind, his face in cool shade. A calm, immovable presence.\nREFERENCE ROLES: Images 1 and 2 inform maintained road equipment, plain steel and modest ivory/gold details; do not copy the female veteran, sheet layout or neutral backdrop. Images 3 and 4 inform ordinary human proportions and matte painted faces. Invent a distinct older human man, drawing on H11's long face and substantial nose, with a short greying beard. He wears heavy articulated plate and a weathered pilgrim's cloak. No helmet on his head. Full standing figure at the left third, three-quarter view with head turned slightly toward the distant road. His two gauntleted hands rest simply one above the other on the sword pommel; a single straight blade meets the ground between two firmly planted feet. Keep the small roadside shrine secondary to his calm presence. Faded physical cloth ties attached clearly to pauldrons and belt, irregular lengths lifting in one wind. Warm copper dusk over the open road, cool slate shadows on face and steel. Avoid a heroic battle pose, magical ribbon effects or copied reference composition.",
+      "reference_roles": "Road equipment/materials, ordinary face anatomy; new male character and fresh scene.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-9c6f5af1-1d2b-492c-b9f3-fb05a37d2f72.png",
+      "inspection_note": "Inspected full image: two connected legs and grounded feet; two gauntleted hands stacked on a single sword pommel, blade contacts ground; plain cloth ribbons; matte face and coherent steel reflection. Fresh dusk shrine scene.",
+      "title": "Vowkeeper of the long road",
+      "web_file": "web/vowkeeper-of-the-long-road.jpg",
+      "references": [
+        "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png",
+        "reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "colour": "W",
+      "alignment": "Vigil",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "web_sha256": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+      "source_sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "reference_hashes": {
+        "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png": "8326cff27ab81e39e6b1e6a3e853b212400ca86108225a1e256501caeb5b52ba",
+        "reference-library-2026-11-06/equipment/09-vigil-equipment.png": "5d761df7e20bbec0330dd31e9f3e48fab7e833d3f112ae66f2df985cc033e38b",
+        "reference-library-2026-11-06/people/01-humans.png": "c9c348790da0609b96f91fd6808e110cc5daf38715b227a37b39c770d5b7b221",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A veteran in heavy plate and pilgrim's cloak at a road shrine at dusk, sword planted, ribbons of old vows tied to his armour.\nSCENE: An older knight with a grey beard stands at a weathered road shrine at dusk, hands on the pommel of a planted sword. Dozens of faded cloth ribbons, each a vow, are tied to his pauldrons and belt and lift in the wind; they are plain cloth, not glowing threads. Warm sky behind, his face in cool shade. A calm, immovable presence.\nREFERENCE ROLES: Images 1 and 2 inform maintained road equipment, plain steel and modest ivory/gold details; do not copy the female veteran, sheet layout or neutral backdrop. Images 3 and 4 inform ordinary human proportions and matte painted faces. Invent a distinct older human man, drawing on H11's long face and substantial nose, with a short greying beard. He wears heavy articulated plate and a weathered pilgrim's cloak. No helmet on his head. Full standing figure at the left third, three-quarter view with head turned slightly toward the distant road. His two gauntleted hands rest simply one above the other on the sword pommel; a single straight blade meets the ground between two firmly planted feet. Keep the small roadside shrine secondary to his calm presence. Faded physical cloth ties attached clearly to pauldrons and belt, irregular lengths lifting in one wind. Warm copper dusk over the open road, cool slate shadows on face and steel. Avoid a heroic battle pose, magical ribbon effects or copied reference composition.",
+          "references": [
+            "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png",
+            "reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+            "reference-library-2026-11-06/people/01-humans.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-9c6f5af1-1d2b-492c-b9f3-fb05a37d2f72.png",
+          "source_sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png": "available",
+            "reference-library-2026-11-06/equipment/09-vigil-equipment.png": "available",
+            "reference-library-2026-11-06/people/01-humans.png": "available",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png": "available",
+        "reference-library-2026-11-06/equipment/09-vigil-equipment.png": "available",
+        "reference-library-2026-11-06/people/01-humans.png": "available",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+      }
+    },
+    {
+      "number": 132,
+      "name": "Leaden step",
+      "file": "leaden-step.png",
+      "aim": "A goblin held nearly still on dry stone by a clearly visible blue-violet magical weight around his legs.",
+      "refs": [
+        "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png"
+      ],
+      "brief": "Preserve the male goblin, practical clothes, travel pouch and vermilion scarf. Replace all mud and puddles with firm dry stone. He stands almost upright with both soles planted, arms low and little forward motion, looking down in puzzled strain. Lead-grey weight and a compact blue-violet glow cling to boots and calves, visibly causing the restraint.",
+      "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this Leaden Step painting to clarify that MAGIC is stopping the goblin. Preserve the same male goblin's identity, long ears, hooked nose, unruly hair, wiry small body, grey practical clothes, travel pouch, vermilion scarf and cool overcast rural-road setting. Replace ALL mud and puddles anywhere in frame with a firm DRY pale-grey stone road: old cobbles or flat compacted stone, dry grasses at the margins, no wet shine, churned soil, boot holes or sinking footprints. Clean the brown mud off his boots, legs and clothes so it cannot explain the restraint.\n\nRebuild his pose from a running lunge into a nearly stationary, visibly arrested effort. Torso almost upright with only a slight forward lean; pelvis directly under torso; both feet close to shoulder-width on the firm road with both soles planted. Exactly two coherent legs, knees only slightly bent. He is trying and failing to raise one heavy foot, but it remains planted: no broad stride, running, jumping or trailing stretched leg. Arms are low near his sides, slightly bent for balance, hands relaxed but tense, not thrust out in a sprint. His expression is puzzled strain, mouth mostly closed, looking down toward his legs. Scarf hangs with a small natural lift, not streaming backward. Retain full-body framing and subject scale.\n\nMake the restraint unmistakably magical but contained: lead-grey weight coats boots and lower legs to the knees, interpenetrated by a visible cold blue-violet glow and a few short irregular flickers of concentrated magical vapor hugging the calves and ankles. The luminous aura softly lights the nearby dry stone and the edges of his boots. This localized magical field, contrasted with his red scarf, should instantly explain why he is held still. No literal chains, roots, rocks trapping his feet, mud, sinking, runes, diagram circles, long energy ribbons, caster, attack explosion, motion trails or speed effects. Preserve measured painted texture and the quiet distant fence/fields; the restrained goblin and compact energy are the focus.",
+      "reference_roles": "Existing Leaden Step painting supplies goblin identity, clothes and landscape. Rebuild the pose, ground and contained magical effect according to creator feedback.",
+      "title": "Leaden step",
+      "web_file": "web/leaden-step.jpg",
+      "references": [
+        "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png"
+      ],
+      "colour": "U",
+      "alignment": "Gnosis",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-62e297c4-31c1-4257-9a72-e5ef46dafdc6.png",
+      "inspection_note": "Inspected nearly stationary stance: two feet planted on firm dry stone, coherent hips/knees/ankles, arms low and naturally connected hands. No mud, puddles or sunken footprints. Local blue-violet glow visibly restrains boots and calves; scarf and gaze support arrested movement.",
+      "sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "web_sha256": "3d812583672e400c86869b39cd70d26cecacd163aff251e54a45fdf7a98013e6",
+      "source_sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "reference_hashes": {
+        "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A fast runner slowed to a crawl, a dull lead-grey sheen creeping up his legs and each footprint sinking deep.\nSCENE: A wiry goblin runner pushes forward along a muddy road, but a dull lead-grey sheen creeps up from his boots to his knees, and each step sinks deep into the mud. His face strains with effort and surprise. Grey overcast day, wet reflective mud, his bright scarf the one warm colour.\nREFERENCE ROLES: Image 1 supplies goblin anatomy: adult small stature, long expressive ears, projecting hooked nose, wiry limbs and varied nonhuman faces. Image 2 supplies practical goblin travel clothing and bodily energy only; no mount, spear attack or red sky. Invent a distinct male goblin courier with cropped unruly hair, a long nose and narrow jaw, grey canvas tunic, patched trousers and a vermilion wool scarf. Ground-level three-quarter side view as he strains toward image-left, torso pulled ahead but both heavy legs slow. Exactly two legs: near knee bent forward over its sunk boot, rear leg stretched back with boot caught in a deep separate footprint. Exactly two arms balance the effort naturally. Dull lead-grey metal-like film progresses unevenly from boots to knees, distinct from wet dark mud. A sequence of unnaturally deep boot impressions shows his path. Quiet rain-grey road and fields, minimal distant fence, pale overcast reflection in puddles. The red scarf is the sole vivid warm color. No broad grin, cartoon stretching, motion streaks or magical energy ribbons.",
+          "references": [
+            "reference-library-2026-11-06/people/03-goblins.png",
+            "clan-outrider.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-298a2509-ad18-43c2-be36-07fdd3243a9b.png",
+          "source_sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+          "selected": false,
+          "source_status": "deleted_superseded",
+          "reference_availability": {
+            "reference-library-2026-11-06/people/03-goblins.png": "available",
+            "clan-outrider.png": "available"
+          }
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this Leaden Step painting to clarify that MAGIC is stopping the goblin. Preserve the same male goblin's identity, long ears, hooked nose, unruly hair, wiry small body, grey practical clothes, travel pouch, vermilion scarf and cool overcast rural-road setting. Replace ALL mud and puddles anywhere in frame with a firm DRY pale-grey stone road: old cobbles or flat compacted stone, dry grasses at the margins, no wet shine, churned soil, boot holes or sinking footprints. Clean the brown mud off his boots, legs and clothes so it cannot explain the restraint.\n\nRebuild his pose from a running lunge into a nearly stationary, visibly arrested effort. Torso almost upright with only a slight forward lean; pelvis directly under torso; both feet close to shoulder-width on the firm road with both soles planted. Exactly two coherent legs, knees only slightly bent. He is trying and failing to raise one heavy foot, but it remains planted: no broad stride, running, jumping or trailing stretched leg. Arms are low near his sides, slightly bent for balance, hands relaxed but tense, not thrust out in a sprint. His expression is puzzled strain, mouth mostly closed, looking down toward his legs. Scarf hangs with a small natural lift, not streaming backward. Retain full-body framing and subject scale.\n\nMake the restraint unmistakably magical but contained: lead-grey weight coats boots and lower legs to the knees, interpenetrated by a visible cold blue-violet glow and a few short irregular flickers of concentrated magical vapor hugging the calves and ankles. The luminous aura softly lights the nearby dry stone and the edges of his boots. This localized magical field, contrasted with his red scarf, should instantly explain why he is held still. No literal chains, roots, rocks trapping his feet, mud, sinking, runes, diagram circles, long energy ribbons, caster, attack explosion, motion trails or speed effects. Preserve measured painted texture and the quiet distant fence/fields; the restrained goblin and compact energy are the focus.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/leaden-step.png"
+          ],
+          "tool_arguments": {
+            "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this Leaden Step painting to clarify that MAGIC is stopping the goblin. Preserve the same male goblin's identity, long ears, hooked nose, unruly hair, wiry small body, grey practical clothes, travel pouch, vermilion scarf and cool overcast rural-road setting. Replace ALL mud and puddles anywhere in frame with a firm DRY pale-grey stone road: old cobbles or flat compacted stone, dry grasses at the margins, no wet shine, churned soil, boot holes or sinking footprints. Clean the brown mud off his boots, legs and clothes so it cannot explain the restraint.\n\nRebuild his pose from a running lunge into a nearly stationary, visibly arrested effort. Torso almost upright with only a slight forward lean; pelvis directly under torso; both feet close to shoulder-width on the firm road with both soles planted. Exactly two coherent legs, knees only slightly bent. He is trying and failing to raise one heavy foot, but it remains planted: no broad stride, running, jumping or trailing stretched leg. Arms are low near his sides, slightly bent for balance, hands relaxed but tense, not thrust out in a sprint. His expression is puzzled strain, mouth mostly closed, looking down toward his legs. Scarf hangs with a small natural lift, not streaming backward. Retain full-body framing and subject scale.\n\nMake the restraint unmistakably magical but contained: lead-grey weight coats boots and lower legs to the knees, interpenetrated by a visible cold blue-violet glow and a few short irregular flickers of concentrated magical vapor hugging the calves and ankles. The luminous aura softly lights the nearby dry stone and the edges of his boots. This localized magical field, contrasted with his red scarf, should instantly explain why he is held still. No literal chains, roots, rocks trapping his feet, mud, sinking, runes, diagram circles, long energy ribbons, caster, attack explosion, motion trails or speed effects. Preserve measured painted texture and the quiet distant fence/fields; the restrained goblin and compact energy are the focus.",
+            "referenced_image_paths": [
+              "/Users/dpuser/Documents/Claude/Games/breachline/art/leaden-step.png"
+            ],
+            "transparent_background": false
+          },
+          "reference_snapshot_note": "The superseded input snapshot was deleted at the creator's request. Historical paths and hashes are retained for provenance; this edit cannot be replayed from the deleted input.",
+          "reference_hashes": {
+            "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3"
+          },
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-62e297c4-31c1-4257-9a72-e5ef46dafdc6.png",
+          "source_sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+          "selected": true,
+          "creator_feedback": "leaden step should have magical energy a little more obvious and not mud in frame. that confuses meaning of being stopped. also shouldn't look like in that much motion.",
+          "inspection_note": "Inspected nearly stationary stance: two feet planted on firm dry stone, coherent hips/knees/ankles, arms low and naturally connected hands. No mud, puddles or sunken footprints. Local blue-violet glow visibly restrains boots and calves; scarf and gaze support arrested movement.",
+          "source_status": "retained_final",
+          "historical_replay_references": [
+            "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png"
+          ],
+          "reference_availability": {
+            "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png": "deleted_superseded"
+          }
+        }
+      ],
+      "selected_attempt": 2,
+      "status": "approved and final",
+      "original_brief": "A wiry goblin runner pushes forward along a muddy road, but a dull lead-grey sheen creeps up from his boots to his knees, and each step sinks deep into the mud. His face strains with effort and surprise. Grey overcast day, wet reflective mud, his bright scarf the one warm colour.",
+      "original_visual_aim": "A fast runner slowed to a crawl, a dull lead-grey sheen creeping up his legs and each footprint sinking deep.",
+      "original_references": [
+        "reference-library-2026-11-06/people/03-goblins.png",
+        "clan-outrider.png"
+      ],
+      "current_prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this Leaden Step painting to clarify that MAGIC is stopping the goblin. Preserve the same male goblin's identity, long ears, hooked nose, unruly hair, wiry small body, grey practical clothes, travel pouch, vermilion scarf and cool overcast rural-road setting. Replace ALL mud and puddles anywhere in frame with a firm DRY pale-grey stone road: old cobbles or flat compacted stone, dry grasses at the margins, no wet shine, churned soil, boot holes or sinking footprints. Clean the brown mud off his boots, legs and clothes so it cannot explain the restraint.\n\nRebuild his pose from a running lunge into a nearly stationary, visibly arrested effort. Torso almost upright with only a slight forward lean; pelvis directly under torso; both feet close to shoulder-width on the firm road with both soles planted. Exactly two coherent legs, knees only slightly bent. He is trying and failing to raise one heavy foot, but it remains planted: no broad stride, running, jumping or trailing stretched leg. Arms are low near his sides, slightly bent for balance, hands relaxed but tense, not thrust out in a sprint. His expression is puzzled strain, mouth mostly closed, looking down toward his legs. Scarf hangs with a small natural lift, not streaming backward. Retain full-body framing and subject scale.\n\nMake the restraint unmistakably magical but contained: lead-grey weight coats boots and lower legs to the knees, interpenetrated by a visible cold blue-violet glow and a few short irregular flickers of concentrated magical vapor hugging the calves and ankles. The luminous aura softly lights the nearby dry stone and the edges of his boots. This localized magical field, contrasted with his red scarf, should instantly explain why he is held still. No literal chains, roots, rocks trapping his feet, mud, sinking, runes, diagram circles, long energy ribbons, caster, attack explosion, motion trails or speed effects. Preserve measured painted texture and the quiet distant fence/fields; the restrained goblin and compact energy are the focus.",
+      "current_references": [
+        "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png"
+      ],
+      "visual_aim": "A goblin held nearly still on dry stone by a clearly visible blue-violet magical weight around his legs.",
+      "creator_feedback": {
+        "date": "2026-11-10",
+        "text": "leaden step should have magical energy a little more obvious and not mud in frame. that confuses meaning of being stopped. also shouldn't look like in that much motion."
+      },
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "deleted_previous_version": {
+        "path": "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+        "sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+        "deleted_at_utc": "2026-11-10T20:55:54.600717+00:00"
+      },
+      "reference_availability": {
+        "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png": "deleted_superseded"
+      }
+    },
+    {
+      "number": 144,
+      "name": "Glimmer double",
+      "file": "glimmer-double.png",
+      "aim": "The real illusionist stands pressed against a wall while her shimmering double walks down the lamplit alley.",
+      "refs": [
+        "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png"
+      ],
+      "brief": "Preserve the liked illusionist identity, plum coat, night alley, moonlight, lamp, pursuing shadows and walking double. The solid woman stands upright, shoulders and back against the side-passage wall, with hips beneath her torso and both boots planted. Her arms stay close and her near hand rests lightly against the stone.",
+      "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this exact Glimmer Double painting locally. The creator likes the scene and wants only the solid woman at image-left to look clearly STANDING UPRIGHT, PRESSED FLAT AGAINST THE WALL while hiding. Preserve her mature face, short waved black hair, dark plum coat, clothes, dagger, adult body proportions, gaze toward the main alley, and the entire night scene. Rebuild her pose anatomically: near-vertical torso, shoulders and upper back resting in real contact against the stone face immediately LEFT of the central corner; hips beneath ribcage and also near the wall. She has exactly two connected legs, nearly straight with a little relaxed bend, BOTH boot soles securely on the small level landing at the foot of the side-passage stairs. Feet close together, no long stride, no lifted knee, no crouch, no sitting, no sliding or suspended posture. Both arms rest naturally close to her sides, elbows softly bent; her anatomical left hand, at image-right next to the corner, lies lightly against the stone at hip level with a coherent wrist and five fingers. Her other hand stays quietly low beside her thigh. Her head can turn toward the corner to listen/look while she holds still against the wall. Make the physical wall contact and full standing silhouette unmistakable. Keep her at the existing left-third position and similar full-figure scale; do not move her into the main alley. Preserve the distant translucent double at right, its walking pose, shimmer, lamp, moon, pursuer shadows, architecture, cobbles, perspective and light exactly. Alter only the real woman's pose and the small necessary occlusion/contact areas around it.",
+      "reference_roles": "Existing Glimmer Double painting is the edit target; preserve all scene elements and the double, changing only the real woman's standing pose and necessary contact areas.",
+      "title": "Glimmer double",
+      "web_file": "web/glimmer-double.jpg",
+      "references": [
+        "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png"
+      ],
+      "colour": "U",
+      "alignment": "Gnosis",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-2677227f-916a-4337-a9d7-6cac63dadedd.png",
+      "inspection_note": "Inspected upright full-body pose: both straightened legs connect to hips and both boot soles rest on the landing; upper back and shoulder meet the stone wall. Arms and hands connect naturally, one hand lightly touching stone. Face, coat, double, alley, lamp and pursuer shadows preserved.",
+      "sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "web_sha256": "a6beeff8b5b8a2a79fd35db22b2d364ae3ed739f3df2fbc8240fd8b2ea006d30",
+      "source_sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "reference_hashes": {
+        "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: An illusionist stepping one way down an alley while a shimmering copy of her steps the other.\nSCENE: In a narrow Ambrel alley at night, a Conclave illusionist in a dark coat slips into a side passage. A slightly translucent copy of her, edges shimmering, walks on down the main alley under a lamp. The shadows of pursuers fall across the cobbles from the frame edge. Moody lamp and moon light. Do not repeat the existing decoy paintings.\nREFERENCE ROLES: Image 1 supplies the accepted adept's short waved black hair, long angular nose, mature olive-toned face, dark plum coat and restrained shadow magic. Images 2 and 3 guide human anatomy and ordinary matte facial description. Preserve the adept identity as the illusionist, but build an entirely new scene. An elevated oblique view into a fork in a narrow Ambrel lane: the solid woman occupies the near left passage, seen in three-quarter profile quietly rounding a thick stone corner to the left; her matching translucent double farther away at right continues down the main lane, walking away under one small amber street lamp. Exactly one woman plus exactly one copy, matching coat, hair and proportions. Shimmer is confined to broken pale-blue edges; a few cobbles show through the copy, which is not a glowing blue skeleton. Two long pursuer shadows enter from the bottom edge, their owners offscreen. Clear connected paving and intersecting alley geometry. Cool moonlit walls against a restrained patch of amber light. The illusionist is attentive and purposeful, one hand brushing the corner as she steps. No arrow, no giant frontal decoy, no repeated existing decoy composition, no added crowd.",
+          "references": [
+            "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png",
+            "reference-library-2026-11-06/people/01-humans.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-e6e8b65f-2285-4761-9232-b7ec16926aee.png",
+          "source_sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+          "selected": false,
+          "source_status": "deleted_superseded",
+          "reference_availability": {
+            "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png": "available",
+            "reference-library-2026-11-06/people/01-humans.png": "available",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this exact Glimmer Double painting locally. The creator likes the scene and wants only the solid woman at image-left to look clearly STANDING UPRIGHT, PRESSED FLAT AGAINST THE WALL while hiding. Preserve her mature face, short waved black hair, dark plum coat, clothes, dagger, adult body proportions, gaze toward the main alley, and the entire night scene. Rebuild her pose anatomically: near-vertical torso, shoulders and upper back resting in real contact against the stone face immediately LEFT of the central corner; hips beneath ribcage and also near the wall. She has exactly two connected legs, nearly straight with a little relaxed bend, BOTH boot soles securely on the small level landing at the foot of the side-passage stairs. Feet close together, no long stride, no lifted knee, no crouch, no sitting, no sliding or suspended posture. Both arms rest naturally close to her sides, elbows softly bent; her anatomical left hand, at image-right next to the corner, lies lightly against the stone at hip level with a coherent wrist and five fingers. Her other hand stays quietly low beside her thigh. Her head can turn toward the corner to listen/look while she holds still against the wall. Make the physical wall contact and full standing silhouette unmistakable. Keep her at the existing left-third position and similar full-figure scale; do not move her into the main alley. Preserve the distant translucent double at right, its walking pose, shimmer, lamp, moon, pursuer shadows, architecture, cobbles, perspective and light exactly. Alter only the real woman's pose and the small necessary occlusion/contact areas around it.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/glimmer-double.png"
+          ],
+          "tool_arguments": {
+            "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this exact Glimmer Double painting locally. The creator likes the scene and wants only the solid woman at image-left to look clearly STANDING UPRIGHT, PRESSED FLAT AGAINST THE WALL while hiding. Preserve her mature face, short waved black hair, dark plum coat, clothes, dagger, adult body proportions, gaze toward the main alley, and the entire night scene. Rebuild her pose anatomically: near-vertical torso, shoulders and upper back resting in real contact against the stone face immediately LEFT of the central corner; hips beneath ribcage and also near the wall. She has exactly two connected legs, nearly straight with a little relaxed bend, BOTH boot soles securely on the small level landing at the foot of the side-passage stairs. Feet close together, no long stride, no lifted knee, no crouch, no sitting, no sliding or suspended posture. Both arms rest naturally close to her sides, elbows softly bent; her anatomical left hand, at image-right next to the corner, lies lightly against the stone at hip level with a coherent wrist and five fingers. Her other hand stays quietly low beside her thigh. Her head can turn toward the corner to listen/look while she holds still against the wall. Make the physical wall contact and full standing silhouette unmistakable. Keep her at the existing left-third position and similar full-figure scale; do not move her into the main alley. Preserve the distant translucent double at right, its walking pose, shimmer, lamp, moon, pursuer shadows, architecture, cobbles, perspective and light exactly. Alter only the real woman's pose and the small necessary occlusion/contact areas around it.",
+            "referenced_image_paths": [
+              "/Users/dpuser/Documents/Claude/Games/breachline/art/glimmer-double.png"
+            ],
+            "transparent_background": false
+          },
+          "reference_snapshot_note": "The superseded input snapshot was deleted at the creator's request. Historical paths and hashes are retained for provenance; this edit cannot be replayed from the deleted input.",
+          "reference_hashes": {
+            "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae"
+          },
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-2677227f-916a-4337-a9d7-6cac63dadedd.png",
+          "source_sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+          "selected": true,
+          "creator_feedback": "glimmer double is good, but she should look llike she is pressed against the wall, standing.",
+          "inspection_note": "Inspected upright full-body pose: both straightened legs connect to hips and both boot soles rest on the landing; upper back and shoulder meet the stone wall. Arms and hands connect naturally, one hand lightly touching stone. Face, coat, double, alley, lamp and pursuer shadows preserved.",
+          "source_status": "retained_final",
+          "historical_replay_references": [
+            "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png"
+          ],
+          "reference_availability": {
+            "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png": "deleted_superseded"
+          }
+        }
+      ],
+      "selected_attempt": 2,
+      "status": "approved and final",
+      "original_brief": "In a narrow Ambrel alley at night, a Conclave illusionist in a dark coat slips into a side passage. A slightly translucent copy of her, edges shimmering, walks on down the main alley under a lamp. The shadows of pursuers fall across the cobbles from the frame edge. Moody lamp and moon light. Do not repeat the existing decoy paintings.",
+      "original_visual_aim": "An illusionist stepping one way down an alley while a shimmering copy of her steps the other.",
+      "original_references": [
+        "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "current_prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nRevise this exact Glimmer Double painting locally. The creator likes the scene and wants only the solid woman at image-left to look clearly STANDING UPRIGHT, PRESSED FLAT AGAINST THE WALL while hiding. Preserve her mature face, short waved black hair, dark plum coat, clothes, dagger, adult body proportions, gaze toward the main alley, and the entire night scene. Rebuild her pose anatomically: near-vertical torso, shoulders and upper back resting in real contact against the stone face immediately LEFT of the central corner; hips beneath ribcage and also near the wall. She has exactly two connected legs, nearly straight with a little relaxed bend, BOTH boot soles securely on the small level landing at the foot of the side-passage stairs. Feet close together, no long stride, no lifted knee, no crouch, no sitting, no sliding or suspended posture. Both arms rest naturally close to her sides, elbows softly bent; her anatomical left hand, at image-right next to the corner, lies lightly against the stone at hip level with a coherent wrist and five fingers. Her other hand stays quietly low beside her thigh. Her head can turn toward the corner to listen/look while she holds still against the wall. Make the physical wall contact and full standing silhouette unmistakable. Keep her at the existing left-third position and similar full-figure scale; do not move her into the main alley. Preserve the distant translucent double at right, its walking pose, shimmer, lamp, moon, pursuer shadows, architecture, cobbles, perspective and light exactly. Alter only the real woman's pose and the small necessary occlusion/contact areas around it.",
+      "current_references": [
+        "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png"
+      ],
+      "visual_aim": "The real illusionist stands pressed against a wall while her shimmering double walks down the lamplit alley.",
+      "creator_feedback": {
+        "date": "2026-11-10",
+        "text": "glimmer double is good, but she should look llike she is pressed against the wall, standing."
+      },
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "deleted_previous_version": {
+        "path": "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+        "sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+        "deleted_at_utc": "2026-11-10T20:55:54.600717+00:00"
+      },
+      "reference_availability": {
+        "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png": "deleted_superseded"
+      }
+    },
+    {
+      "number": 123,
+      "name": "Pall of ash",
+      "file": "pall-of-ash.png",
+      "aim": "Grey ash falling like snow on a battlefield, draining the colour from everyone beneath it.",
+      "refs": [
+        "grave-soil.png",
+        "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png"
+      ],
+      "brief": "On a small rise, a Gravebound sower swings a censer and a heavy grey ash spreads from it, falling like snow over a skirmish below. Soldiers of both sides cough and shield their faces, their colours drained to grey wherever it settles. Low sun through the ash makes a muted silver light. Keep the sower small and the falling ash the subject; don't repeat the Ash-sower's own painting.",
+      "title": "Pall of ash",
+      "web_file": "web/pall-of-ash.jpg",
+      "references": [
+        "grave-soil.png",
+        "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png"
+      ],
+      "colour": "B",
+      "alignment": "Dominion",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: Grey ash falling like snow on a battlefield, draining the colour from everyone beneath it.\nSCENE: On a small rise, a Gravebound sower swings a censer and a heavy grey ash spreads from it, falling like snow over a skirmish below. Soldiers of both sides cough and shield their faces, their colours drained to grey wherever it settles. Low sun through the ash makes a muted silver light. Keep the sower small and the falling ash the subject; don't repeat the Ash-sower's own painting.\nREFERENCE ROLES: Image 1 supplies oppressive agricultural land, cold violet-grey distances and selectively described earth; Image 2 supplies ordinary Gravebound ritual material and restrained ash, not the deathbed or sheet layout. Compose a new wide elevated landscape. A small hooded Gravebound woman occupies a low ridge at far image-right, no more than one sixth of image height, one clearly connected arm swinging a single chained iron censer. A dense broad veil of falling grey ash fans left across the valley, illuminated as dull silver by a low obscured sun. The sky and falling ash occupy most of the painting. Below, two small groups of ordinary human male soldiers have halted a skirmish; several stoop with sleeves over their mouths or turn away shielding faces. Their rusty red and muted blue scraps of cloth lose color under the ash. Figures are sparse, legible small shapes with simple coherent limbs; no precise miniature crowd, no foreground hero, no gore. Ground and ridges fade into large charcoal and tarnished silver masses. The censer releases ash, not a fire explosion. Avoid repeating Ash-sower's full-body sower gesture or plough scene.",
+      "reference_roles": "Oppressive landscape palette and restrained Gravebound ritual/ash materials; fresh distant-scale staging.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-1d10a263-8669-4f05-b860-73959b18c4fe.png",
+      "inspection_note": "Ash veil is primary, caster remains small; chained censer connects to extended hand; foreground and middle-distance soldiers have readable bowed/shielding gestures with no obvious extra limbs. Human scale remains consistent through valley depth.",
+      "sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "web_sha256": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+      "source_sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "reference_hashes": {
+        "grave-soil.png": "3aad980620333e0ed8af110ed98b5fb70e6cdd8c58624a84bd5bf185332f8a85",
+        "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png": "e74fe8b3e90784cdbd5af762cd33a4d8401caa9a0adeb6a69a8cfa0fdb2c5e0b"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: Grey ash falling like snow on a battlefield, draining the colour from everyone beneath it.\nSCENE: On a small rise, a Gravebound sower swings a censer and a heavy grey ash spreads from it, falling like snow over a skirmish below. Soldiers of both sides cough and shield their faces, their colours drained to grey wherever it settles. Low sun through the ash makes a muted silver light. Keep the sower small and the falling ash the subject; don't repeat the Ash-sower's own painting.\nREFERENCE ROLES: Image 1 supplies oppressive agricultural land, cold violet-grey distances and selectively described earth; Image 2 supplies ordinary Gravebound ritual material and restrained ash, not the deathbed or sheet layout. Compose a new wide elevated landscape. A small hooded Gravebound woman occupies a low ridge at far image-right, no more than one sixth of image height, one clearly connected arm swinging a single chained iron censer. A dense broad veil of falling grey ash fans left across the valley, illuminated as dull silver by a low obscured sun. The sky and falling ash occupy most of the painting. Below, two small groups of ordinary human male soldiers have halted a skirmish; several stoop with sleeves over their mouths or turn away shielding faces. Their rusty red and muted blue scraps of cloth lose color under the ash. Figures are sparse, legible small shapes with simple coherent limbs; no precise miniature crowd, no foreground hero, no gore. Ground and ridges fade into large charcoal and tarnished silver masses. The censer releases ash, not a fire explosion. Avoid repeating Ash-sower's full-body sower gesture or plough scene.",
+          "references": [
+            "grave-soil.png",
+            "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-1d10a263-8669-4f05-b860-73959b18c4fe.png",
+          "source_sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "grave-soil.png": "available",
+            "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "grave-soil.png": "available",
+        "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png": "available"
+      }
+    },
+    {
+      "number": 129,
+      "name": "Bought allegiance",
+      "file": "bought-allegiance.png",
+      "aim": "A heavy purse of black coins pushed across a table into a sellsword's hand, his old company's banner on the floor.",
+      "refs": [
+        "sellsword.png",
+        "mercenary-captain.png",
+        "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+      ],
+      "brief": "In a lamp-lit back room, a gloved Ashen Court hand slides a heavy purse of black coins across a table to a scarred sellsword, who closes his fingers on it without looking up. His former company's banner lies trampled on the floor. The noble is mostly out of frame. Hands, coins and the sellsword's guilty face carry it.",
+      "title": "Bought allegiance",
+      "web_file": "web/bought-allegiance.jpg",
+      "references": [
+        "sellsword.png",
+        "mercenary-captain.png",
+        "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+      ],
+      "colour": "B",
+      "alignment": "Dominion",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A heavy purse of black coins pushed across a table into a sellsword's hand, his old company's banner on the floor.\nSCENE: In a lamp-lit back room, a gloved Ashen Court hand slides a heavy purse of black coins across a table to a scarred sellsword, who closes his fingers on it without looking up. His former company's banner lies trampled on the floor. The noble is mostly out of frame. Hands, coins and the sellsword's guilty face carry it.\nREFERENCE ROLES: Images 1 and 2 guide believable hired-fighter mail, mismatched plate and lived male character, not their hero poses or outdoor backgrounds. Image 3 guides only the court noble's tailored plum cuff and fine long glove. Close horizontal composition across a scarred wooden table in a dim back room. At center-right an adult male sellsword with a broad broken nose, asymmetric brow, dark greying stubble and one healed cheek scar sits hunched in patched mail and a single worn shoulder plate. His guilty downcast face is above the focal hands. From frame-left the noble's forearm enters with a rich plum cuff and one dark cloth-gloved hand, pushing the heavy open leather purse at its base. From the sellsword's anatomically right shoulder, elbow on the table, a single bare right forearm leads to his hand closing on the purse neck from the opposite side. Keep the two hands separate and readable, each five natural digits with proper wrist attachment, touching the same grounded purse. A few black metal coins spill from its loosened mouth and take tiny lamplight glints. His other hand is out of view. At lower right beneath the table, a slumped old ochre company banner with a faded simple geometric device lies under his boot, partly shadowed. One amber lamp throws a shallow pool of light over purse, knuckles and lowered eyes; dark plum-grey room recedes. No lettering, big grins or added characters.",
+      "reference_roles": "Hired-soldier materials and ordinary male presence; noble cuff and glove construction. New face and close interior composition.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-6c5a5a58-1e1a-4940-bfff-a860ba618db8.png",
+      "inspection_note": "Noble's gloved hand and sellsword's bare hand meet the same grounded purse with distinct wrists and readable fingers. Lowered face, black coins and trampled banner are clear. Visible boot and shoulder/forearm contacts checked; remainder of seated body is intentionally occluded by table.",
+      "sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "web_sha256": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+      "source_sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "reference_hashes": {
+        "sellsword.png": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+        "mercenary-captain.png": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
+        "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png": "f5025deac5679ef2e8b34324572d6511d102e9630a74c90ca45a57049ef25832"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A heavy purse of black coins pushed across a table into a sellsword's hand, his old company's banner on the floor.\nSCENE: In a lamp-lit back room, a gloved Ashen Court hand slides a heavy purse of black coins across a table to a scarred sellsword, who closes his fingers on it without looking up. His former company's banner lies trampled on the floor. The noble is mostly out of frame. Hands, coins and the sellsword's guilty face carry it.\nREFERENCE ROLES: Images 1 and 2 guide believable hired-fighter mail, mismatched plate and lived male character, not their hero poses or outdoor backgrounds. Image 3 guides only the court noble's tailored plum cuff and fine long glove. Close horizontal composition across a scarred wooden table in a dim back room. At center-right an adult male sellsword with a broad broken nose, asymmetric brow, dark greying stubble and one healed cheek scar sits hunched in patched mail and a single worn shoulder plate. His guilty downcast face is above the focal hands. From frame-left the noble's forearm enters with a rich plum cuff and one dark cloth-gloved hand, pushing the heavy open leather purse at its base. From the sellsword's anatomically right shoulder, elbow on the table, a single bare right forearm leads to his hand closing on the purse neck from the opposite side. Keep the two hands separate and readable, each five natural digits with proper wrist attachment, touching the same grounded purse. A few black metal coins spill from its loosened mouth and take tiny lamplight glints. His other hand is out of view. At lower right beneath the table, a slumped old ochre company banner with a faded simple geometric device lies under his boot, partly shadowed. One amber lamp throws a shallow pool of light over purse, knuckles and lowered eyes; dark plum-grey room recedes. No lettering, big grins or added characters.",
+          "references": [
+            "sellsword.png",
+            "mercenary-captain.png",
+            "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-6c5a5a58-1e1a-4940-bfff-a860ba618db8.png",
+          "source_sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "sellsword.png": "available",
+            "mercenary-captain.png": "available",
+            "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "mercenary-captain.png": "available",
+        "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png": "available",
+        "sellsword.png": "available"
+      }
+    },
+    {
+      "number": 155,
+      "name": "Lots for the gallows",
+      "file": "lots-for-the-gallows.png",
+      "aim": "A hooded official drawing a black lot from a bowl before a line of prisoners, a gallows in the fog.",
+      "refs": [
+        "world-concepts-2026-11-08/01-the-price-of-morning.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "brief": "In a grim Dominion courtyard at foggy dawn, a hooded official draws a black stone from a bronze bowl in front of a line of ragged prisoners. One prisoner's face shows the terrible wait. A gallows stands as a dim silhouette in the fog behind. Oppressive, cold and quiet.",
+      "title": "Lots for the gallows",
+      "web_file": "web/lots-for-the-gallows.jpg",
+      "references": [
+        "world-concepts-2026-11-08/01-the-price-of-morning.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "colour": "B",
+      "alignment": "Dominion",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A hooded official drawing a black lot from a bowl before a line of prisoners, a gallows in the fog.\nSCENE: In a grim Dominion courtyard at foggy dawn, a hooded official draws a black stone from a bronze bowl in front of a line of ragged prisoners. One prisoner's face shows the terrible wait. A gallows stands as a dim silhouette in the fog behind. Oppressive, cold and quiet.\nREFERENCE ROLES: Image 1 guides harsh Dominion social atmosphere, austere masonry and class imbalance, not the street layout or tithe transaction. Images 2 and 3 guide varied ordinary human faces, specifically H03/H11 long-faced older men and H13's ordinary youthful proportions; invent distinct people. Mid-close view at the prisoners' eye level across a bronze bowl set on a plain low stone ledge. The hooded official occupies the right third, one forearm clearly extending from his dark wool sleeve and one hand lifting a single flat black stone between thumb and first two fingers above the bowl. Keep the hand and stone sharply readable but naturally painted; the other hand rests on the ledge beside the bowl. At left, the nearest ragged middle-aged male prisoner has a narrow tired face, uneven nose and lips pressed together as he watches the stone, shoulders bowed, wrists quietly bound in front. Behind him exactly three quieter human prisoner silhouettes recede into fog, each at consistent ordinary scale. The gallows is an empty angular timber silhouette in the distant center, no body. Blue-grey dawn, cold damp stone, muted bronze and a tiny warm skin note. Silence, waiting and institutional cruelty, no execution in progress, no gore, no theatrical expressions. Maintain connected hands, sleeve contacts and believable bowl scale.",
+      "reference_roles": "Dominion oppression and architecture; ordinary varied human face proportions; new ritual composition.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-98afc531-6883-4923-8307-1a56b3cbd0c5.png",
+      "inspection_note": "Official's two arms and wrists connect coherently: one hand pinches the black stone, other rests on the ledge. Bowl has credible scale and grounded base. Four distinct prisoners recede in scale into fog; nearest prisoner's bound forearms connect clearly. Empty gallows remains subordinate.",
+      "sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "web_sha256": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+      "source_sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "reference_hashes": {
+        "world-concepts-2026-11-08/01-the-price-of-morning.png": "225998df1c22981edbe74f727881c1cd3273494b8c41409e3b0801d1611bcead",
+        "reference-library-2026-11-06/people/01-humans.png": "c9c348790da0609b96f91fd6808e110cc5daf38715b227a37b39c770d5b7b221",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A hooded official drawing a black lot from a bowl before a line of prisoners, a gallows in the fog.\nSCENE: In a grim Dominion courtyard at foggy dawn, a hooded official draws a black stone from a bronze bowl in front of a line of ragged prisoners. One prisoner's face shows the terrible wait. A gallows stands as a dim silhouette in the fog behind. Oppressive, cold and quiet.\nREFERENCE ROLES: Image 1 guides harsh Dominion social atmosphere, austere masonry and class imbalance, not the street layout or tithe transaction. Images 2 and 3 guide varied ordinary human faces, specifically H03/H11 long-faced older men and H13's ordinary youthful proportions; invent distinct people. Mid-close view at the prisoners' eye level across a bronze bowl set on a plain low stone ledge. The hooded official occupies the right third, one forearm clearly extending from his dark wool sleeve and one hand lifting a single flat black stone between thumb and first two fingers above the bowl. Keep the hand and stone sharply readable but naturally painted; the other hand rests on the ledge beside the bowl. At left, the nearest ragged middle-aged male prisoner has a narrow tired face, uneven nose and lips pressed together as he watches the stone, shoulders bowed, wrists quietly bound in front. Behind him exactly three quieter human prisoner silhouettes recede into fog, each at consistent ordinary scale. The gallows is an empty angular timber silhouette in the distant center, no body. Blue-grey dawn, cold damp stone, muted bronze and a tiny warm skin note. Silence, waiting and institutional cruelty, no execution in progress, no gore, no theatrical expressions. Maintain connected hands, sleeve contacts and believable bowl scale.",
+          "references": [
+            "world-concepts-2026-11-08/01-the-price-of-morning.png",
+            "reference-library-2026-11-06/people/01-humans.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-98afc531-6883-4923-8307-1a56b3cbd0c5.png",
+          "source_sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "world-concepts-2026-11-08/01-the-price-of-morning.png": "available",
+            "reference-library-2026-11-06/people/01-humans.png": "available",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "reference-library-2026-11-06/people/01-humans.png": "available",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available",
+        "world-concepts-2026-11-08/01-the-price-of-morning.png": "available"
+      }
+    },
+    {
+      "number": 126,
+      "name": "Wildfire",
+      "file": "wildfire.png",
+      "aim": "A whole country of hills ablaze at night under a red sky, one ember-lit figure walking unharmed inside it.",
+      "refs": [
+        "cinderfall.png",
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png"
+      ],
+      "brief": "Wide view of rolling hill country burning end to end at night; the sky glows red over black ridges. Tiny figures flee along a road in the foreground. Inside the flames, a single Cinder Clans figure walks calmly, glowing from within. Big, dramatic fire with large readable shapes and a dark cool sky for contrast.",
+      "title": "Wildfire",
+      "web_file": "web/wildfire.jpg",
+      "references": [
+        "cinderfall.png",
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png"
+      ],
+      "colour": "R",
+      "alignment": "Fervor",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A whole country of hills ablaze at night under a red sky, one ember-lit figure walking unharmed inside it.\nSCENE: Wide view of rolling hill country burning end to end at night; the sky glows red over black ridges. Tiny figures flee along a road in the foreground. Inside the flames, a single Cinder Clans figure walks calmly, glowing from within. Big, dramatic fire with large readable shapes and a dark cool sky for contrast.\nREFERENCE ROLES: Both images supply convincing painted fire, large light shapes, small-scale people and cool distant atmosphere. Do not copy either bridge, architecture, meteor or wave-shaped spell. Make an expansive nocturnal landscape of rolling hills, layered diagonal black ridges with great low fronts of orange flame burning across their slopes. Crimson firelight fills the lower clouds while the top of the sky stays deep cool indigo-black; smoke groups into broad legible masses rather than uniform flecks. In the foreground, a curved road leads four tiny human silhouettes away from the danger. Mid-distance within a gap in the fire, a single small Cinder Clans man walks calmly across the slope, his body and simple coat ember-lit from within, undamaged and distinct against darker smoke. Keep his human scale consistent with the hills, no towering fire god or giant face. Fire and the country are the primary subject, figure is a rewarding small discovery. Large readable value shapes, exceptionally strong orange-crimson against blue-black; sparse precise accents at the nearest fire edge. No meteor shower, falling fire pillar, city, lava river or giant magic sphere.",
+      "reference_roles": "Large-scale painted fire, organizing light and human scale; original burning hill-country scene.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-d69c2ba1-8752-4345-b270-624adc4d4bbc.png",
+      "inspection_note": "Inspected figure silhouettes and scale against the hills; one ember-lit walker amid the fire and four fleeing foreground people. Their two-leg gestures read clearly at the intended small size. Large fire fronts and cool dark sky organize the image; no bodies or gore.",
+      "sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "web_sha256": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+      "source_sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "reference_hashes": {
+        "cinderfall.png": "dffad2161ab482f8ccd33ff113e91d69534d0741279e3a6c602858f0b8996e30",
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png": "7210959ffa16f9a3c21096aa5e626915dc6a131763b689ed20a8f550a075592c"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A whole country of hills ablaze at night under a red sky, one ember-lit figure walking unharmed inside it.\nSCENE: Wide view of rolling hill country burning end to end at night; the sky glows red over black ridges. Tiny figures flee along a road in the foreground. Inside the flames, a single Cinder Clans figure walks calmly, glowing from within. Big, dramatic fire with large readable shapes and a dark cool sky for contrast.\nREFERENCE ROLES: Both images supply convincing painted fire, large light shapes, small-scale people and cool distant atmosphere. Do not copy either bridge, architecture, meteor or wave-shaped spell. Make an expansive nocturnal landscape of rolling hills, layered diagonal black ridges with great low fronts of orange flame burning across their slopes. Crimson firelight fills the lower clouds while the top of the sky stays deep cool indigo-black; smoke groups into broad legible masses rather than uniform flecks. In the foreground, a curved road leads four tiny human silhouettes away from the danger. Mid-distance within a gap in the fire, a single small Cinder Clans man walks calmly across the slope, his body and simple coat ember-lit from within, undamaged and distinct against darker smoke. Keep his human scale consistent with the hills, no towering fire god or giant face. Fire and the country are the primary subject, figure is a rewarding small discovery. Large readable value shapes, exceptionally strong orange-crimson against blue-black; sparse precise accents at the nearest fire edge. No meteor shower, falling fire pillar, city, lava river or giant magic sphere.",
+          "references": [
+            "cinderfall.png",
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-d69c2ba1-8752-4345-b270-624adc4d4bbc.png",
+          "source_sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "cinderfall.png": "available",
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "cinderfall.png": "available",
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/13-cinderwake.png": "available"
+      }
+    },
+    {
+      "number": 164,
+      "name": "Anoint with embers",
+      "file": "anoint-with-embers.png",
+      "aim": "A Cinder Clan elder marking a young warrior's brow with glowing ember-ash, firelight in the warrior's eyes.",
+      "refs": [
+        "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "brief": "By a night fire, an old Cinder Clans woman presses a thumb of glowing ember-ash to a young male warrior's forehead. Faint lines of glow trace from the mark along his skin like cooling cracks, and his eyes catch the fire. Intimate, warm, close. Matte skin, individual faces.",
+      "title": "Anoint with embers",
+      "web_file": "web/anoint-with-embers.jpg",
+      "references": [
+        "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+        "reference-library-2026-11-06/people/01-humans.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "colour": "R",
+      "alignment": "Fervor",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A Cinder Clan elder marking a young warrior's brow with glowing ember-ash, firelight in the warrior's eyes.\nSCENE: By a night fire, an old Cinder Clans woman presses a thumb of glowing ember-ash to a young male warrior's forehead. Faint lines of glow trace from the mark along his skin like cooling cracks, and his eyes catch the fire. Intimate, warm, close. Matte skin, individual faces.\nREFERENCE ROLES: Image 1 informs the Cinder Clans' rough red cloth, practical iron and modest embodied ember magic, not goblin casting or drum. Human face sheets supply ordinary diverse proportions; invent two distinct adult humans. Tight chest-up two-person painting, deliberately different from the wider Cinder martyr scene. An old dark-brown-skinned human woman at image-right in near profile, grey tightly curled hair bound in a plain rust-red cloth, broad face and substantial nose inspired by H04, leans toward a young adult male warrior at image-left. He has medium-brown skin, short cropped curls, broad ordinary nose, uneven eyebrows and quiet apprehension, with the straightforward proportions of H06 adapted younger. His worn iron shoulder plate and simple charcoal linen are partly visible. Her anatomical right arm rises from her visible near shoulder in a natural bent elbow; her thumb pad gently touches his brow, four other fingers softly curled away from his eye and plainly connected to that hand. A tiny glowing ember-ash mark sits at the thumb contact, sending only two or three faint cooling-crack lines along his temple. His eyes remain open, small natural fire reflections in them, looking toward the elder. No other person. The actual fire is mostly below frame, its light shaping the two matte faces against a quiet umber and midnight-blue background. No large bowl, shaved-head martyr, copied pose, molten face, wounds or excessive ornament. The warmth and simple thumb-to-skin contact carry the image.",
+      "reference_roles": "Cinder cloth, iron and restrained ember magic; human H04/H06 proportions adapted into distinct elder and younger adult male. Existing Cinder martyr inspected for composition avoidance only.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-ace64c9b-3d76-45aa-9ce7-1ac0efb95810.png",
+      "inspection_note": "Elder's raised hand connects through wrist and forearm; thumb contacts warrior's brow, remaining fingers curl naturally. Both head/neck/shoulder connections and small magical mark inspected. Matte painted skin, individual adult faces, restrained ember traces; distinct tight composition.",
+      "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "web_sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+      "source_sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "reference_hashes": {
+        "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png": "dbbfd1fab4f915b0c7a65ef22a9a37395fb68c4a9af6c650ac0b3baf1d769b5b",
+        "reference-library-2026-11-06/people/01-humans.png": "c9c348790da0609b96f91fd6808e110cc5daf38715b227a37b39c770d5b7b221",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A Cinder Clan elder marking a young warrior's brow with glowing ember-ash, firelight in the warrior's eyes.\nSCENE: By a night fire, an old Cinder Clans woman presses a thumb of glowing ember-ash to a young male warrior's forehead. Faint lines of glow trace from the mark along his skin like cooling cracks, and his eyes catch the fire. Intimate, warm, close. Matte skin, individual faces.\nREFERENCE ROLES: Image 1 informs the Cinder Clans' rough red cloth, practical iron and modest embodied ember magic, not goblin casting or drum. Human face sheets supply ordinary diverse proportions; invent two distinct adult humans. Tight chest-up two-person painting, deliberately different from the wider Cinder martyr scene. An old dark-brown-skinned human woman at image-right in near profile, grey tightly curled hair bound in a plain rust-red cloth, broad face and substantial nose inspired by H04, leans toward a young adult male warrior at image-left. He has medium-brown skin, short cropped curls, broad ordinary nose, uneven eyebrows and quiet apprehension, with the straightforward proportions of H06 adapted younger. His worn iron shoulder plate and simple charcoal linen are partly visible. Her anatomical right arm rises from her visible near shoulder in a natural bent elbow; her thumb pad gently touches his brow, four other fingers softly curled away from his eye and plainly connected to that hand. A tiny glowing ember-ash mark sits at the thumb contact, sending only two or three faint cooling-crack lines along his temple. His eyes remain open, small natural fire reflections in them, looking toward the elder. No other person. The actual fire is mostly below frame, its light shaping the two matte faces against a quiet umber and midnight-blue background. No large bowl, shaved-head martyr, copied pose, molten face, wounds or excessive ornament. The warmth and simple thumb-to-skin contact carry the image.",
+          "references": [
+            "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+            "reference-library-2026-11-06/people/01-humans.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-ace64c9b-3d76-45aa-9ce7-1ac0efb95810.png",
+          "source_sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png": "available",
+            "reference-library-2026-11-06/people/01-humans.png": "available",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "creator_feedback": {
+        "date": "2026-11-10",
+        "text": "annoint with embers is really good."
+      },
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png": "available",
+        "reference-library-2026-11-06/people/01-humans.png": "available",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+      }
+    },
+    {
+      "number": 171,
+      "name": "Earthspeaker",
+      "file": "earthspeaker.png",
+      "aim": "A white, ginger-haired Thornwarden druid kneels among shifting roots and stones beside her tree village.",
+      "refs": [
+        "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "brief": "Preserve the tree-village clearing, grounded kneeling pose, ivory blouse, green skirt and subtle earth magic. Recast the middle-aged druid as a white woman with fair skin and natural copper-ginger braided hair; ordinary reference-led features and matte painted skin.",
+      "title": "Earthspeaker",
+      "web_file": "web/earthspeaker.jpg",
+      "references": [
+        "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "colour": "G",
+      "alignment": "Genesis",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nImage 1 is the exact Earthspeaker painting to revise. Image 2 is a supporting face reference only: H10, the ginger white woman at TOP RIGHT of that sheet. Change the principal druid into a WHITE, fair-skinned, GINGER-HAIRED middle-aged human woman. Develop her ordinary natural facial proportions from H10, aged into her forties with a substantial nose, gently lived face, light freckles and green-grey eyes. Make her hair a rich natural copper-ginger, still in the source painting's practical long braid and pinned-back arrangement, with a few subtly greying strands appropriate to her age. Paint fair skin consistently on face, neck, forearms and both hands, with natural warm afternoon light and cool shadows; no artificially red cheeks or glossy skin. This is a change of casting and hair, not merely a global color filter. Preserve the exact kneeling pose, body build, flat right palm on earth at image-left, five natural digits and wrist connection, left hand on raised knee at image-right, planted boot, ivory blouse, moss-green skirt, earth magic, floating stones, roots, tree village, all three background villagers, lighting and composition. Keep her mature and grounded, not a young fashion-model face. Do not import the sheet's short haircut, neutral background or other faces. Everything outside the principal woman's skin, face and hair remains as close as possible to Image 1.",
+      "reference_roles": "Existing Earthspeaker scene is the edit target. Human reference H10 supplies fair-skinned ginger casting, adapted to a mature woman; pose, clothing and village remain.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-16d4a848-42de-4a02-b428-d08b0480a96e.png",
+      "inspection_note": "Inspected revised casting: fair skin consistently across face, neck, forearms and hands; natural copper-ginger hair and braid, mature ordinary features. Kneeling hips, knees, planted boot and five-digit palm contact preserved. Floating stones, roots, clothing and village remain coherent.",
+      "sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "web_sha256": "6c2378ace0929fd89447047ee01a1103c395e063d3bd7c128b19a782c64724d8",
+      "source_sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "reference_hashes": {
+        "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A Thornwarden druid kneeling with her palm on bare earth, roots and stones shifting, her tree village behind.\nSCENE: In a clearing outside a Genesis village of tree homes, a middle-aged woman druid kneels with her palm flat on the ground; roots lift and stones turn slowly around her hand. Villagers carry on behind her. Late afternoon light through leaves. A village and its people, not only wilderness.\nREFERENCE ROLES: Image 1 informs the physical feel of earth magic and matte stone, but not its enormous feat or split cliff. Image 2 informs Genesis tree homes and ordinary village life, not its busy composition or all-over detail. Image 3 supplies ordinary human face proportions: draw on H12's middle-aged broad face for a new woman, matte warm-brown skin and greying braided hair. A medium-wide low three-quarter view of a woman druid kneeling at image-right in a clearing. Her near right knee rests on earth, opposite foot plants ahead with bent knee; her anatomical left palm rests fully flat on bare ground near the center, fingers naturally spread and wrist connected through a single bent arm to her shoulder. Her other hand rests simply on her thigh. Moss-green wool skirt split for movement, plain undyed underlayer, one simple waist tie, no elaborate layered leather armor. Beside the grounded palm, one thick root arches only a few inches above the soil and three fist-sized stones turn and hover just above disturbed earth. No neon markings, beams, luminous threads or eruption. Sunlight through late-afternoon leaves isolates her hand and the roots. Behind her, two understated timber homes nestle into large trees, with connected steps and walkways; three small ordinary villagers carry baskets or talk by a doorway, not casting spells or gawking. Meaningful local village life beyond the forest. Deep leaf greens, warm ochre earth and a calm blue shadow; legible village reduced to fewer quiet marks.",
+          "references": [
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/14-the-stone-opens.png",
+            "world-concepts-2026-11-08-set-02/01-houses-above-the-ferns-brushwork-v2.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-b4568250-bc0e-4d7d-ade3-c72c1f6e0387.png",
+          "source_sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+          "selected": false,
+          "source_status": "deleted_superseded",
+          "reference_availability": {
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/14-the-stone-opens.png": "available",
+            "world-concepts-2026-11-08-set-02/01-houses-above-the-ferns-brushwork-v2.png": "available",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nImage 1 is the exact Earthspeaker painting to revise. Image 2 is a supporting face reference only: H10, the ginger white woman at TOP RIGHT of that sheet. Change the principal druid into a WHITE, fair-skinned, GINGER-HAIRED middle-aged human woman. Develop her ordinary natural facial proportions from H10, aged into her forties with a substantial nose, gently lived face, light freckles and green-grey eyes. Make her hair a rich natural copper-ginger, still in the source painting's practical long braid and pinned-back arrangement, with a few subtly greying strands appropriate to her age. Paint fair skin consistently on face, neck, forearms and both hands, with natural warm afternoon light and cool shadows; no artificially red cheeks or glossy skin. This is a change of casting and hair, not merely a global color filter. Preserve the exact kneeling pose, body build, flat right palm on earth at image-left, five natural digits and wrist connection, left hand on raised knee at image-right, planted boot, ivory blouse, moss-green skirt, earth magic, floating stones, roots, tree village, all three background villagers, lighting and composition. Keep her mature and grounded, not a young fashion-model face. Do not import the sheet's short haircut, neutral background or other faces. Everything outside the principal woman's skin, face and hair remains as close as possible to Image 1.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/earthspeaker.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "tool_arguments": {
+            "prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nImage 1 is the exact Earthspeaker painting to revise. Image 2 is a supporting face reference only: H10, the ginger white woman at TOP RIGHT of that sheet. Change the principal druid into a WHITE, fair-skinned, GINGER-HAIRED middle-aged human woman. Develop her ordinary natural facial proportions from H10, aged into her forties with a substantial nose, gently lived face, light freckles and green-grey eyes. Make her hair a rich natural copper-ginger, still in the source painting's practical long braid and pinned-back arrangement, with a few subtly greying strands appropriate to her age. Paint fair skin consistently on face, neck, forearms and both hands, with natural warm afternoon light and cool shadows; no artificially red cheeks or glossy skin. This is a change of casting and hair, not merely a global color filter. Preserve the exact kneeling pose, body build, flat right palm on earth at image-left, five natural digits and wrist connection, left hand on raised knee at image-right, planted boot, ivory blouse, moss-green skirt, earth magic, floating stones, roots, tree village, all three background villagers, lighting and composition. Keep her mature and grounded, not a young fashion-model face. Do not import the sheet's short haircut, neutral background or other faces. Everything outside the principal woman's skin, face and hair remains as close as possible to Image 1.",
+            "referenced_image_paths": [
+              "/Users/dpuser/Documents/Claude/Games/breachline/art/earthspeaker.png",
+              "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+            ],
+            "transparent_background": false
+          },
+          "reference_snapshot_note": "The superseded input snapshot was deleted at the creator's request. Historical paths and hashes are retained for provenance; this edit cannot be replayed from the deleted input.",
+          "reference_hashes": {
+            "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "1368571de5b2e04074af4820278b2def9d5bc3aa57076340a9d4119658ad8373"
+          },
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-16d4a848-42de-4a02-b428-d08b0480a96e.png",
+          "source_sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+          "selected": true,
+          "creator_feedback": "i don't like earth speaker make her white and ginger.",
+          "inspection_note": "Inspected revised casting: fair skin consistently across face, neck, forearms and hands; natural copper-ginger hair and braid, mature ordinary features. Kneeling hips, knees, planted boot and five-digit palm contact preserved. Floating stones, roots, clothing and village remain coherent.",
+          "source_status": "retained_final",
+          "historical_replay_references": [
+            "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+          ],
+          "reference_availability": {
+            "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png": "deleted_superseded",
+            "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 2,
+      "status": "approved and final",
+      "original_brief": "In a clearing outside a Genesis village of tree homes, a middle-aged woman druid kneels with her palm flat on the ground; roots lift and stones turn slowly around her hand. Villagers carry on behind her. Late afternoon light through leaves. A village and its people, not only wilderness.",
+      "original_visual_aim": "A Thornwarden druid kneeling with her palm on bare earth, roots and stones shifting, her tree village behind.",
+      "original_references": [
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/14-the-stone-opens.png",
+        "world-concepts-2026-11-08-set-02/01-houses-above-the-ferns-brushwork-v2.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "current_prompt": "Use case: precise-object-edit. Produce one finished Breachline traditional oil/acrylic fantasy painting, 1536 x 1024 landscape PNG. Varied deliberate brushwork, selective precise accents and quieter secondary detail, matte skin and cloth, material-specific reflections. No lettering, frame, logo, signature or watermark. Keep coherent connected anatomy and natural hands.\n\nImage 1 is the exact Earthspeaker painting to revise. Image 2 is a supporting face reference only: H10, the ginger white woman at TOP RIGHT of that sheet. Change the principal druid into a WHITE, fair-skinned, GINGER-HAIRED middle-aged human woman. Develop her ordinary natural facial proportions from H10, aged into her forties with a substantial nose, gently lived face, light freckles and green-grey eyes. Make her hair a rich natural copper-ginger, still in the source painting's practical long braid and pinned-back arrangement, with a few subtly greying strands appropriate to her age. Paint fair skin consistently on face, neck, forearms and both hands, with natural warm afternoon light and cool shadows; no artificially red cheeks or glossy skin. This is a change of casting and hair, not merely a global color filter. Preserve the exact kneeling pose, body build, flat right palm on earth at image-left, five natural digits and wrist connection, left hand on raised knee at image-right, planted boot, ivory blouse, moss-green skirt, earth magic, floating stones, roots, tree village, all three background villagers, lighting and composition. Keep her mature and grounded, not a young fashion-model face. Do not import the sheet's short haircut, neutral background or other faces. Everything outside the principal woman's skin, face and hair remains as close as possible to Image 1.",
+      "current_references": [
+        "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "visual_aim": "A white, ginger-haired Thornwarden druid kneels among shifting roots and stones beside her tree village.",
+      "creator_feedback": {
+        "date": "2026-11-10",
+        "text": "i don't like earth speaker make her white and ginger."
+      },
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "deleted_previous_version": {
+        "path": "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "deleted_at_utc": "2026-11-10T20:55:54.600717+00:00"
+      },
+      "reference_availability": {
+        "reference-library-2026-11-06/people/08-humans-additional-faces.png": "available",
+        "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png": "deleted_superseded"
+      }
+    },
+    {
+      "number": 174,
+      "name": "Shell-mountain tortoise",
+      "file": "shell-mountain-tortoise.png",
+      "aim": "A colossal tortoise whose shell is a mossy hill with trees and a small shrine, people walking beside it.",
+      "refs": [
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png"
+      ],
+      "brief": "An immense tortoise lumbers along a valley path; its shell is a mossy hill with a few trees and a small wooden shrine on top. Villagers walk beside its feet for scale, unafraid. Bright morning, long shadows. Believable reptile anatomy and weight. A proposal, not canon.",
+      "title": "Shell-mountain tortoise",
+      "web_file": "web/shell-mountain-tortoise.jpg",
+      "references": [
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png"
+      ],
+      "colour": "G",
+      "alignment": "Genesis",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A colossal tortoise whose shell is a mossy hill with trees and a small shrine, people walking beside it.\nSCENE: An immense tortoise lumbers along a valley path; its shell is a mossy hill with a few trees and a small wooden shrine on top. Villagers walk beside its feet for scale, unafraid. Bright morning, long shadows. Believable reptile anatomy and weight. A proposal, not canon.\nREFERENCE ROLE: Image 1 supplies affectionate but believable creature observation, layered natural shell material, weight, painted atmosphere and habitat integration ONLY. The new animal is a true colossal tortoise, not a scaled-up coalback, furry mammal or armadillo. Wide three-quarter side view of one immense land tortoise moving toward image-left on a valley path in brilliant clear morning. Its high domed carapace is a continuous biological shell with large worn scutes; a deep mantle of earth and moss forms a small hill over the top, bearing three modest wind-shaped trees and one little wooden shrine, never a town. Long strong wrinkled neck joins through the front shell opening; broad beaked reptile head with small attentive eye. Exactly four enormous columnar reptile legs connect inside the shell openings: near foreleg planted weightily at image-left, near hindleg advancing at image-right, far pair naturally partly occluded but distinct; short tail behind. Stout clawed feet compress the path, modest dust at a single footfall. Two small adult villagers walk safely beside the animal at a consistent shared ground level, while a third pauses and looks up in quiet awe. Their full height is about one quarter of the shell height, making this an extraordinary rare creature but not a continent-sized monster. Trees and shrine on shell are consistent with people, the shrine the size of a modest wayside shelter. Low raking sunlight makes long shadows, warm stone ochre against fresh valley greens and far blue slopes. The animal's head, leg weight, layered shell and open air are the focus; no human face, smile, armor, glowing eyes or floating island.",
+      "reference_roles": "Creature weight, natural material and habitat integration; original tortoise anatomy, extraordinary scale and village relationship.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-3185bae5-e80e-4b32-a7c9-5aaf84f7049f.png",
+      "inspection_note": "One biological shell, connected neck and beaked reptile head, exactly four weight-bearing legs with natural near/far occlusion. Three human figures provide consistent shared ground-plane scale; trees and a small shrine sit physically on the shell. This immense creature remains a proposal.",
+      "sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "web_sha256": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+      "source_sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "reference_hashes": {
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png": "14afe4aeea65f2f768b7374318b62b5408ae65d1b17d263e89f25ee8b6e576ab"
+      },
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A colossal tortoise whose shell is a mossy hill with trees and a small shrine, people walking beside it.\nSCENE: An immense tortoise lumbers along a valley path; its shell is a mossy hill with a few trees and a small wooden shrine on top. Villagers walk beside its feet for scale, unafraid. Bright morning, long shadows. Believable reptile anatomy and weight. A proposal, not canon.\nREFERENCE ROLE: Image 1 supplies affectionate but believable creature observation, layered natural shell material, weight, painted atmosphere and habitat integration ONLY. The new animal is a true colossal tortoise, not a scaled-up coalback, furry mammal or armadillo. Wide three-quarter side view of one immense land tortoise moving toward image-left on a valley path in brilliant clear morning. Its high domed carapace is a continuous biological shell with large worn scutes; a deep mantle of earth and moss forms a small hill over the top, bearing three modest wind-shaped trees and one little wooden shrine, never a town. Long strong wrinkled neck joins through the front shell opening; broad beaked reptile head with small attentive eye. Exactly four enormous columnar reptile legs connect inside the shell openings: near foreleg planted weightily at image-left, near hindleg advancing at image-right, far pair naturally partly occluded but distinct; short tail behind. Stout clawed feet compress the path, modest dust at a single footfall. Two small adult villagers walk safely beside the animal at a consistent shared ground level, while a third pauses and looks up in quiet awe. Their full height is about one quarter of the shell height, making this an extraordinary rare creature but not a continent-sized monster. Trees and shrine on shell are consistent with people, the shrine the size of a modest wayside shelter. Low raking sunlight makes long shadows, warm stone ochre against fresh valley greens and far blue slopes. The animal's head, leg weight, layered shell and open air are the focus; no human face, smile, armor, glowing eyes or floating island.",
+          "references": [
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-3185bae5-e80e-4b32-a7c9-5aaf84f7049f.png",
+          "source_sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+          "selected": true,
+          "source_status": "retained_final",
+          "reference_availability": {
+            "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png": "available"
+          }
+        }
+      ],
+      "selected_attempt": 1,
+      "status": "approved and final",
+      "review_status": "final",
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png": "available"
+      }
+    },
+    {
+      "number": 179,
+      "name": "Copper hound",
+      "file": "copper-hound.png",
+      "aim": "A lean copper construct hound running beside a courier's cart, steam at its open ribs.",
+      "refs": [
+        "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png",
+        "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png"
+      ],
+      "brief": "A lean construct hound with an open ribbed frame of copper runs alongside a courier's cart on a cobbled road; steam puffs from its chest. The courier, small and secondary, glances down at it fondly. Crisp morning light on copper and wet stone. A proposal, not canon.",
+      "title": "Copper hound",
+      "web_file": "web/copper-hound.jpg",
+      "references": [
+        "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png",
+        "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png"
+      ],
+      "colour": "C",
+      "alignment": "Neutral",
+      "lore_status": "New scenes, creatures and constructs are proposals until creator approval.",
+      "prompt": "Use case: precise-object-edit. Edit this exact Breachline copper-hound painting. Remove only the tiny pale illegible lettering/signature-like marks along the extreme lower-left edge (roughly x=60 to 240, y=965 to 995 in the 1536 by 1024 painting). Replace those marks with a seamless continuation of the existing painted wet cobblestone, reflected light and shadow from directly around them. Preserve absolutely everything else: the copper hound's exact four connected legs, gait, open ribs, muzzle, steam, tail, copper highlights, courier identity and pose, reins, donkey, cart, architecture, plants, painting texture, framing and colors. No added text, watermark, signature or logo anywhere. Keep the finished output 1536 x 1024 landscape PNG.",
+      "reference_roles": "Practical steam materials and open functional construct anatomy; original canine mechanism and roadside scene.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-27c1797f-8944-4587-bc7d-f369a59c5ff9.png",
+      "current_prompt": "Use case: precise-object-edit. Edit this exact Breachline copper-hound painting. Remove only the tiny pale illegible lettering/signature-like marks along the extreme lower-left edge (roughly x=60 to 240, y=965 to 995 in the 1536 by 1024 painting). Replace those marks with a seamless continuation of the existing painted wet cobblestone, reflected light and shadow from directly around them. Preserve absolutely everything else: the copper hound's exact four connected legs, gait, open ribs, muzzle, steam, tail, copper highlights, courier identity and pose, reins, donkey, cart, architecture, plants, painting texture, framing and colors. No added text, watermark, signature or logo anywhere. Keep the finished output 1536 x 1024 landscape PNG.",
+      "original_prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A lean copper construct hound running beside a courier's cart, steam at its open ribs.\nSCENE: A lean construct hound with an open ribbed frame of copper runs alongside a courier's cart on a cobbled road; steam puffs from its chest. The courier, small and secondary, glances down at it fondly. Crisp morning light on copper and wet stone. A proposal, not canon.\nREFERENCE ROLES: Image 1 guides practical riveted steam machinery, copper pipes and a believable moving device, not a boat or industrial landscape. Image 2 supplies crafted open-frame anatomy with clear negative space and articulated structural connections, not humanoid proportions, blue core or lettering. Invent a lean dog-sized copper construct hound in profile, trotting toward image-right in the near foreground. Long low open rib cage, arched copper spine, tucked abdomen, deep chest with one small pressure vessel, simple elongated worked-metal muzzle and two modest folded metal ears. Exactly four slender articulated canine legs: two connected at the shoulder axle, two at the hip axle, each with visible logical elbow or hock and a small segmented paw; use a diagonal trot with one near forepaw reaching forward and opposite rear paw pushing, remaining legs naturally offset. A narrow jointed tail extends behind for balance. No extra floating limbs or humanoid hands. A tiny white steam puff exits a chest vent and trails behind; copper carries selective sharp warm glints and darker oxidized recesses. Behind it at left a small plain wooden two-wheel courier cart rolls on wet cobbles, pulled by a single modest donkey; courier sits on the bench, body and reins coherent, glancing down fondly at the hound. Cart and courier stay secondary and partly cropped by the left edge, enough to read their companionship. Morning blue shadows and amber copper; a few pale roadside building shapes only, simple wet stone reflections, no futuristic robot shell, neon eyes, large smokestack or textual markings. The hound's purposeful gait can suggest personality without implying a human mind.",
+      "current_references": [
+        "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png"
+      ],
+      "generation_attempts": [
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy PAINTING ONLY, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nVISUAL AIM: A lean copper construct hound running beside a courier's cart, steam at its open ribs.\nSCENE: A lean construct hound with an open ribbed frame of copper runs alongside a courier's cart on a cobbled road; steam puffs from its chest. The courier, small and secondary, glances down at it fondly. Crisp morning light on copper and wet stone. A proposal, not canon.\nREFERENCE ROLES: Image 1 guides practical riveted steam machinery, copper pipes and a believable moving device, not a boat or industrial landscape. Image 2 supplies crafted open-frame anatomy with clear negative space and articulated structural connections, not humanoid proportions, blue core or lettering. Invent a lean dog-sized copper construct hound in profile, trotting toward image-right in the near foreground. Long low open rib cage, arched copper spine, tucked abdomen, deep chest with one small pressure vessel, simple elongated worked-metal muzzle and two modest folded metal ears. Exactly four slender articulated canine legs: two connected at the shoulder axle, two at the hip axle, each with visible logical elbow or hock and a small segmented paw; use a diagonal trot with one near forepaw reaching forward and opposite rear paw pushing, remaining legs naturally offset. A narrow jointed tail extends behind for balance. No extra floating limbs or humanoid hands. A tiny white steam puff exits a chest vent and trails behind; copper carries selective sharp warm glints and darker oxidized recesses. Behind it at left a small plain wooden two-wheel courier cart rolls on wet cobbles, pulled by a single modest donkey; courier sits on the bench, body and reins coherent, glancing down fondly at the hound. Cart and courier stay secondary and partly cropped by the left edge, enough to read their companionship. Morning blue shadows and amber copper; a few pale roadside building shapes only, simple wet stone reflections, no futuristic robot shell, neon eyes, large smokestack or textual markings. The hound's purposeful gait can suggest personality without implying a human mind.",
+          "references": [
+            "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png",
+            "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png",
+          "selected": false,
+          "inspection_note": "Anatomy and scene accepted for review; small unwanted lettering at lower-left required cleanup.",
+          "source_sha256": "0e3268b0509e79c5f12b14660cbf120dde15cf1ae60aa8a0f4a09c5ab8c82a8b",
+          "source_status": "deleted_superseded",
+          "reference_availability": {
+            "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png": "available",
+            "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png": "available"
+          }
+        },
+        {
+          "method": "built-in image_gen",
+          "date": "2026-11-10",
+          "prompt": "Use case: precise-object-edit. Edit this exact Breachline copper-hound painting. Remove only the tiny pale illegible lettering/signature-like marks along the extreme lower-left edge (roughly x=60 to 240, y=965 to 995 in the 1536 by 1024 painting). Replace those marks with a seamless continuation of the existing painted wet cobblestone, reflected light and shadow from directly around them. Preserve absolutely everything else: the copper hound's exact four connected legs, gait, open ribs, muzzle, steam, tail, copper highlights, courier identity and pose, reins, donkey, cart, architecture, plants, painting texture, framing and colors. No added text, watermark, signature or logo anywhere. Keep the finished output 1536 x 1024 landscape PNG.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-27c1797f-8944-4587-bc7d-f369a59c5ff9.png",
+          "selected": true,
+          "change": "Removed unwanted lower-left lettering; preserved hound and scene.",
+          "source_sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+          "source_status": "retained_final",
+          "reference_availability": {
+            "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png": "deleted_superseded"
+          }
+        }
+      ],
+      "inspection_note": "Final revision inspected: unwanted lower-left lettering removed. Four articulated canine legs connect at shoulder/hip mechanisms, with coherent paw contacts and gait. Open ribs, pressure vessel, neck and tail are connected. Courier, reins, cart and donkey remain legible and secondary; road and reflected light preserved.",
+      "sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "web_sha256": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd",
+      "source_sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "reference_hashes": {
+        "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png": "cfcfc62b519bc41f7ed2c693af893463ca2689c00e7b070ef4b6482ed93950df",
+        "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png": "05de3e747421fb230e4cf4ccb4c327075680393abe1df6ea8a4a4a90f5aa83d8"
+      },
+      "selected_attempt": 2,
+      "status": "approved and final",
+      "review_status": "final",
+      "creator_feedback": {
+        "date": "2026-11-10",
+        "text": "copper hound is sick!"
+      },
+      "finalized_date": "2026-11-10",
+      "final_approval": {
+        "creator_feedback": "better - final",
+        "scope": "Set 10 final selection",
+        "date": "2026-11-10"
+      },
+      "reference_availability": {
+        "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png": "deleted_superseded",
+        "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png": "available",
+        "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png": "available"
+      }
+    }
+  ],
+  "export": {
+    "png_dimensions": [
+      1536,
+      1024
+    ],
+    "jpeg_dimensions": [
+      768,
+      512
+    ],
+    "jpeg_quality": 90,
+    "method": "Native PNG copy when source dimensions match; macOS sips JPEG conversion and resize."
+  },
+  "additional_inspected_references": {
+    "illusory-decoy.png": "Viewed to avoid repeating its staging; not attached to generation.",
+    "cinder-martyr.png": "Viewed to avoid repeating its staging; not attached to generation."
+  },
+  "write_scope": [
+    "vowkeeper-of-the-long-road.png",
+    "web/vowkeeper-of-the-long-road.jpg",
+    "leaden-step.png",
+    "web/leaden-step.jpg",
+    "glimmer-double.png",
+    "web/glimmer-double.jpg",
+    "pall-of-ash.png",
+    "web/pall-of-ash.jpg",
+    "bought-allegiance.png",
+    "web/bought-allegiance.jpg",
+    "lots-for-the-gallows.png",
+    "web/lots-for-the-gallows.jpg",
+    "wildfire.png",
+    "web/wildfire.jpg",
+    "anoint-with-embers.png",
+    "web/anoint-with-embers.jpg",
+    "earthspeaker.png",
+    "web/earthspeaker.jpg",
+    "shell-mountain-tortoise.png",
+    "web/shell-mountain-tortoise.jpg",
+    "copper-hound.png",
+    "web/copper-hound.jpg",
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "ART_BRIEFS_SET10.md",
+    "CARD_ART_FINAL.json"
+  ],
+  "reviews": [
+    {
+      "date": "2026-11-10",
+      "scope": "Set 10 only",
+      "creator_feedback": "copper hound is sick! i don't like earth speaker make her white and ginger. annoint with embers is really good. glimmer double is good, but she should look llike she is pressed against the wall, standing. leaden step should have magical energy a little more obvious and not mud in frame. that confuses meaning of being stopped. also shouldn't look like in that much motion. updated gallery with these",
+      "approved_unchanged": [
+        179,
+        164
+      ],
+      "revised_pending_review": [
+        171,
+        144,
+        132
+      ],
+      "other_paintings": "No new decision inferred.",
+      "protected_scope": "Keep shared art direction, CARD_ART_FINAL.json, CARD_PROPOSALS.md and other sets unchanged. No commit."
+    },
+    {
+      "date": "2026-11-10",
+      "recorded_at_utc": "2026-11-10T20:39:44.368699+00:00",
+      "creator_feedback": "better - final",
+      "scope": "All 11 current Set 10 paintings, including the revised Earthspeaker, Glimmer Double and Leaden Step.",
+      "status": "approved and final",
+      "shared_manifest_updated": false,
+      "committed": false
+    },
+    {
+      "date": "2026-11-10",
+      "recorded_at_utc": "2026-11-10T20:55:54.600717+00:00",
+      "creator_feedback": "mark all as final and commit. remove outdated versions",
+      "status": "all 11 final; superseded images removed; commit authorized"
+    }
+  ],
+  "latest_revision": {
+    "date": "2026-11-10",
+    "paintings": [
+      "earthspeaker.png",
+      "glimmer-double.png",
+      "leaden-step.png"
+    ],
+    "approved_unchanged": [
+      "copper-hound.png",
+      "anoint-with-embers.png"
+    ],
+    "shared_files_modified": false,
+    "committed": false
+  },
+  "finalized_date": "2026-11-10",
+  "final_approval": {
+    "date": "2026-11-10",
+    "recorded_at_utc": "2026-11-10T20:39:44.368699+00:00",
+    "creator_feedback": "better - final",
+    "scope": "All 11 current Set 10 paintings, including the revised Earthspeaker, Glimmer Double and Leaden Step.",
+    "status": "approved and final",
+    "shared_manifest_updated": true,
+    "commit_authorized": true,
+    "finalization_request": "mark all as final and commit. remove outdated versions"
+  },
+  "final_selection": [
+    {
+      "number": 140,
+      "file": "vowkeeper-of-the-long-road.png",
+      "web_file": "web/vowkeeper-of-the-long-road.jpg",
+      "sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "web_sha256": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+      "selected_attempt": 1
+    },
+    {
+      "number": 132,
+      "file": "leaden-step.png",
+      "web_file": "web/leaden-step.jpg",
+      "sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "web_sha256": "3d812583672e400c86869b39cd70d26cecacd163aff251e54a45fdf7a98013e6",
+      "selected_attempt": 2
+    },
+    {
+      "number": 144,
+      "file": "glimmer-double.png",
+      "web_file": "web/glimmer-double.jpg",
+      "sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "web_sha256": "a6beeff8b5b8a2a79fd35db22b2d364ae3ed739f3df2fbc8240fd8b2ea006d30",
+      "selected_attempt": 2
+    },
+    {
+      "number": 123,
+      "file": "pall-of-ash.png",
+      "web_file": "web/pall-of-ash.jpg",
+      "sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "web_sha256": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+      "selected_attempt": 1
+    },
+    {
+      "number": 129,
+      "file": "bought-allegiance.png",
+      "web_file": "web/bought-allegiance.jpg",
+      "sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "web_sha256": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+      "selected_attempt": 1
+    },
+    {
+      "number": 155,
+      "file": "lots-for-the-gallows.png",
+      "web_file": "web/lots-for-the-gallows.jpg",
+      "sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "web_sha256": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+      "selected_attempt": 1
+    },
+    {
+      "number": 126,
+      "file": "wildfire.png",
+      "web_file": "web/wildfire.jpg",
+      "sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "web_sha256": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+      "selected_attempt": 1
+    },
+    {
+      "number": 164,
+      "file": "anoint-with-embers.png",
+      "web_file": "web/anoint-with-embers.jpg",
+      "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "web_sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+      "selected_attempt": 1
+    },
+    {
+      "number": 171,
+      "file": "earthspeaker.png",
+      "web_file": "web/earthspeaker.jpg",
+      "sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "web_sha256": "6c2378ace0929fd89447047ee01a1103c395e063d3bd7c128b19a782c64724d8",
+      "selected_attempt": 2
+    },
+    {
+      "number": 174,
+      "file": "shell-mountain-tortoise.png",
+      "web_file": "web/shell-mountain-tortoise.jpg",
+      "sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "web_sha256": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+      "selected_attempt": 1
+    },
+    {
+      "number": 179,
+      "file": "copper-hound.png",
+      "web_file": "web/copper-hound.jpg",
+      "sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "web_sha256": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd",
+      "selected_attempt": 2
+    }
+  ],
+  "cleanup": {
+    "recorded_at_utc": "2026-11-10T20:55:54.600717+00:00",
+    "creator_request": "mark all as final and commit. remove outdated versions",
+    "superseded_versions": 4,
+    "removed_files": 7,
+    "files": [
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-298a2509-ad18-43c2-be36-07fdd3243a9b.png",
+        "sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+        "painting": "leaden-step.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+        "sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+        "painting": "leaden-step.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-e6e8b65f-2285-4761-9232-b7ec16926aee.png",
+        "sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+        "painting": "glimmer-double.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+        "sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+        "painting": "glimmer-double.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-b4568250-bc0e-4d7d-ade3-c72c1f6e0387.png",
+        "sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "painting": "earthspeaker.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "painting": "earthspeaker.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png",
+        "sha256": "0e3268b0509e79c5f12b14660cbf120dde15cf1ae60aa8a0f4a09c5ab8c82a8b",
+        "painting": "copper-hound.png",
+        "kind": "superseded_generated_source"
+      }
+    ],
+    "note": "Superseded images removed at the creator's request. Exact prompts, tool arguments and historical hashes are retained as text; do not restore deleted versions."
+  },
+  "prior_write_scope": [
+    "vowkeeper-of-the-long-road.png",
+    "web/vowkeeper-of-the-long-road.jpg",
+    "leaden-step.png",
+    "web/leaden-step.jpg",
+    "glimmer-double.png",
+    "web/glimmer-double.jpg",
+    "pall-of-ash.png",
+    "web/pall-of-ash.jpg",
+    "bought-allegiance.png",
+    "web/bought-allegiance.jpg",
+    "lots-for-the-gallows.png",
+    "web/lots-for-the-gallows.jpg",
+    "wildfire.png",
+    "web/wildfire.jpg",
+    "anoint-with-embers.png",
+    "web/anoint-with-embers.jpg",
+    "earthspeaker.png",
+    "web/earthspeaker.jpg",
+    "shell-mountain-tortoise.png",
+    "web/shell-mountain-tortoise.jpg",
+    "copper-hound.png",
+    "web/copper-hound.jpg",
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+    "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+    "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png"
+  ]
+}

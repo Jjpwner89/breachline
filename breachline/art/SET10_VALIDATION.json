@@ -1,0 +1,557 @@
+{
+  "set": 10,
+  "checked_at_utc": "2026-11-10T20:55:54.600717+00:00",
+  "result": "passed",
+  "generation_method": "built-in image_gen",
+  "paintings": 11,
+  "revised_paintings": 3,
+  "revision_pass_generations": 3,
+  "total_generation_attempts": 15,
+  "png_dimensions": [
+    1536,
+    1024
+  ],
+  "jpeg_dimensions": [
+    768,
+    512
+  ],
+  "checks": {
+    "all_files_present": true,
+    "dimensions_correct": true,
+    "png_signatures_crc_and_decompression_valid": true,
+    "jpeg_signatures_dimensions_and_formats_valid": true,
+    "selected_sources_match": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_attempt_per_painting": true,
+    "gallery_has_11_images": true,
+    "gallery_links_valid": true,
+    "gallery_unique_ids": true,
+    "heading_filenames_match": true,
+    "all_revisions_visually_inspected": true,
+    "eight_unchanged_image_pairs_verified": true,
+    "copper_hound_and_anoint_with_embers_unchanged": true,
+    "gallery_browser_render_verified": false,
+    "gallery_has_11_final_labels": true,
+    "all_11_current_selections_final": true,
+    "all_22_image_files_unchanged_during_finalization": true,
+    "no_pending_review_labels_in_gallery": true,
+    "available_references_match_recorded_hashes": true,
+    "deleted_historical_references_documented": true,
+    "all_seven_superseded_files_removed": true,
+    "all_final_image_files_unchanged": true,
+    "unrelated_final_manifest_assets_preserved": true,
+    "protected_design_files_unchanged": true,
+    "only_set10_delivery_and_final_manifest_updated": true,
+    "final_manifest_has_all_11_set10_entries": true
+  },
+  "visual_review_note": "Earthspeaker's fair skin and ginger braid, Glimmer Double's upright wall-contact pose, and Leaden Step's dry ground, stationary stance and leg magic were visually inspected. Existing subjects, connected anatomy, hand contacts and unaffected scene elements were checked. The creator approved all 11 current paintings as final on November 10, 2026. The gallery was validated statically; browser rendering remains unverified because local file URLs were blocked by browser policy in the initial pass.",
+  "gallery_browser_preview": {
+    "status": "blocked_by_browser_url_policy",
+    "reason": "The browser tool disallows file: URLs. No workaround attempted. Static HTML structure, local links and all image files passed validation."
+  },
+  "files": [
+    {
+      "number": 140,
+      "file": "vowkeeper-of-the-long-road.png",
+      "web_file": "web/vowkeeper-of-the-long-road.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2816479,
+      "web_bytes": 186244,
+      "sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "web_sha256": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+      "source_sha256": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Inspected full image: two connected legs and grounded feet; two gauntleted hands stacked on a single sword pommel, blade contacts ground; plain cloth ribbons; matte face and coherent steel reflection. Fresh dusk shrine scene.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 132,
+      "file": "leaden-step.png",
+      "web_file": "web/leaden-step.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2714164,
+      "web_bytes": 158746,
+      "sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "web_sha256": "3d812583672e400c86869b39cd70d26cecacd163aff251e54a45fdf7a98013e6",
+      "source_sha256": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Inspected nearly stationary stance: two feet planted on firm dry stone, coherent hips/knees/ankles, arms low and naturally connected hands. No mud, puddles or sunken footprints. Local blue-violet glow visibly restrains boots and calves; scarf and gaze support arrested movement.",
+      "selected_attempt": 2
+    },
+    {
+      "number": 144,
+      "file": "glimmer-double.png",
+      "web_file": "web/glimmer-double.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2462586,
+      "web_bytes": 147962,
+      "sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "web_sha256": "a6beeff8b5b8a2a79fd35db22b2d364ae3ed739f3df2fbc8240fd8b2ea006d30",
+      "source_sha256": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Inspected upright full-body pose: both straightened legs connect to hips and both boot soles rest on the landing; upper back and shoulder meet the stone wall. Arms and hands connect naturally, one hand lightly touching stone. Face, coat, double, alley, lamp and pursuer shadows preserved.",
+      "selected_attempt": 2
+    },
+    {
+      "number": 123,
+      "file": "pall-of-ash.png",
+      "web_file": "web/pall-of-ash.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2877350,
+      "web_bytes": 158107,
+      "sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "web_sha256": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+      "source_sha256": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Ash veil is primary, caster remains small; chained censer connects to extended hand; foreground and middle-distance soldiers have readable bowed/shielding gestures with no obvious extra limbs. Human scale remains consistent through valley depth.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 129,
+      "file": "bought-allegiance.png",
+      "web_file": "web/bought-allegiance.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2397754,
+      "web_bytes": 151982,
+      "sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "web_sha256": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+      "source_sha256": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Noble's gloved hand and sellsword's bare hand meet the same grounded purse with distinct wrists and readable fingers. Lowered face, black coins and trampled banner are clear. Visible boot and shoulder/forearm contacts checked; remainder of seated body is intentionally occluded by table.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 155,
+      "file": "lots-for-the-gallows.png",
+      "web_file": "web/lots-for-the-gallows.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2421909,
+      "web_bytes": 137705,
+      "sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "web_sha256": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+      "source_sha256": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Official's two arms and wrists connect coherently: one hand pinches the black stone, other rests on the ledge. Bowl has credible scale and grounded base. Four distinct prisoners recede in scale into fog; nearest prisoner's bound forearms connect clearly. Empty gallows remains subordinate.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 126,
+      "file": "wildfire.png",
+      "web_file": "web/wildfire.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2629573,
+      "web_bytes": 177154,
+      "sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "web_sha256": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+      "source_sha256": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Inspected figure silhouettes and scale against the hills; one ember-lit walker amid the fire and four fleeing foreground people. Their two-leg gestures read clearly at the intended small size. Large fire fronts and cool dark sky organize the image; no bodies or gore.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 164,
+      "file": "anoint-with-embers.png",
+      "web_file": "web/anoint-with-embers.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2639160,
+      "web_bytes": 154250,
+      "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "web_sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+      "source_sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Elder's raised hand connects through wrist and forearm; thumb contacts warrior's brow, remaining fingers curl naturally. Both head/neck/shoulder connections and small magical mark inspected. Matte painted skin, individual adult faces, restrained ember traces; distinct tight composition.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 171,
+      "file": "earthspeaker.png",
+      "web_file": "web/earthspeaker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2966074,
+      "web_bytes": 242286,
+      "sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "web_sha256": "6c2378ace0929fd89447047ee01a1103c395e063d3bd7c128b19a782c64724d8",
+      "source_sha256": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Inspected revised casting: fair skin consistently across face, neck, forearms and hands; natural copper-ginger hair and braid, mature ordinary features. Kneeling hips, knees, planted boot and five-digit palm contact preserved. Floating stones, roots, clothing and village remain coherent.",
+      "selected_attempt": 2
+    },
+    {
+      "number": 174,
+      "file": "shell-mountain-tortoise.png",
+      "web_file": "web/shell-mountain-tortoise.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 3045986,
+      "web_bytes": 234660,
+      "sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "web_sha256": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+      "source_sha256": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "One biological shell, connected neck and beaked reptile head, exactly four weight-bearing legs with natural near/far occlusion. Three human figures provide consistent shared ground-plane scale; trees and a small shrine sit physically on the shell. This immense creature remains a proposal.",
+      "selected_attempt": 1
+    },
+    {
+      "number": 179,
+      "file": "copper-hound.png",
+      "web_file": "web/copper-hound.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "web_dimensions": [
+        768,
+        512
+      ],
+      "format": "PNG",
+      "web_format": "JPEG",
+      "bytes": 2816054,
+      "web_bytes": 219249,
+      "sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "web_sha256": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd",
+      "source_sha256": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+      "selected_source_matches_png": true,
+      "review_status": "final",
+      "inspection_note": "Final revision inspected: unwanted lower-left lettering removed. Four articulated canine legs connect at shoulder/hip mechanisms, with coherent paw contacts and gait. Open ribs, pressure vessel, neck and tail are connected. Courier, reins, cart and donkey remain legible and secondary; road and reflected light preserved.",
+      "selected_attempt": 2
+    }
+  ],
+  "metadata_sha256": {
+    "ART_PROMPTS_SET10.json": "ff7abbc19424ee95ec392b3b35d3590f5bcf32e22d6508873e44aa94b8be0cbc",
+    "SET10_GALLERY.html": "a5477ccf12dfac4dd7c14113a87b18f7b93ef42d51e020b91ee68666710898fc",
+    "ART_BRIEFS_SET10.md": "a10cc35fc0b4d3a7c8da97b21284a7804d1e26ed4094577c59b06bc38146556d"
+  },
+  "write_scope": [
+    "vowkeeper-of-the-long-road.png",
+    "web/vowkeeper-of-the-long-road.jpg",
+    "leaden-step.png",
+    "web/leaden-step.jpg",
+    "glimmer-double.png",
+    "web/glimmer-double.jpg",
+    "pall-of-ash.png",
+    "web/pall-of-ash.jpg",
+    "bought-allegiance.png",
+    "web/bought-allegiance.jpg",
+    "lots-for-the-gallows.png",
+    "web/lots-for-the-gallows.jpg",
+    "wildfire.png",
+    "web/wildfire.jpg",
+    "anoint-with-embers.png",
+    "web/anoint-with-embers.jpg",
+    "earthspeaker.png",
+    "web/earthspeaker.jpg",
+    "shell-mountain-tortoise.png",
+    "web/shell-mountain-tortoise.jpg",
+    "copper-hound.png",
+    "web/copper-hound.jpg",
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "ART_BRIEFS_SET10.md",
+    "CARD_ART_FINAL.json"
+  ],
+  "latest_revision_write_scope": [
+    "leaden-step.png",
+    "web/leaden-step.jpg",
+    "glimmer-double.png",
+    "web/glimmer-double.jpg",
+    "earthspeaker.png",
+    "web/earthspeaker.jpg",
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+    "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+    "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png"
+  ],
+  "scope_note": "All 11 current paintings are final and registered in CARD_ART_FINAL.json. Four superseded versions (seven files including duplicate review copies) were removed at the creator's request. Exact prompt history remains. Final images and unrelated final-manifest entries are preserved. Commit authorized by the creator.",
+  "unchanged_pre_revision_sha256": {
+    ".claude/skills/art-direction/SKILL.md": "709b11302d9c2a5086197fa43af70942bad8af2e995520a98c7b35892de2c062",
+    "breachline/CARD_PROPOSALS.md": "337d9e1ab58cfe49a3a6c5ea1ec287f3519eea428e56cd648ff02be4970a8188",
+    "breachline/art/CARD_ART_FINAL.json": "8b78e54da9aa1c669dde2cf1c99106c718b8e89d69d920a1ebb7c7b832df5c47",
+    "breachline/SETTING.md": "7f5cfba75ebd7a4ed9b1d6e8b36e7d5de040150083accb653276d187f098eadd",
+    "breachline/art/ART_BRIEFS_SET10.md": "b09d2dd167172adb4b885d0dcfa5f14e487f896ca736a8c97ca8ec1b7ea16524",
+    "breachline/art/vowkeeper-of-the-long-road.png": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+    "breachline/art/web/vowkeeper-of-the-long-road.jpg": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+    "breachline/art/pall-of-ash.png": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+    "breachline/art/web/pall-of-ash.jpg": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+    "breachline/art/bought-allegiance.png": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+    "breachline/art/web/bought-allegiance.jpg": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+    "breachline/art/lots-for-the-gallows.png": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+    "breachline/art/web/lots-for-the-gallows.jpg": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+    "breachline/art/wildfire.png": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+    "breachline/art/web/wildfire.jpg": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+    "breachline/art/anoint-with-embers.png": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+    "breachline/art/web/anoint-with-embers.jpg": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+    "breachline/art/shell-mountain-tortoise.png": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+    "breachline/art/web/shell-mountain-tortoise.jpg": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+    "breachline/art/copper-hound.png": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+    "breachline/art/web/copper-hound.jpg": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd"
+  },
+  "status": "approved and final",
+  "final_paintings": 11,
+  "approved_paintings": 11,
+  "paintings_awaiting_review": 0,
+  "final_approval": {
+    "date": "2026-11-10",
+    "recorded_at_utc": "2026-11-10T20:39:44.368699+00:00",
+    "creator_feedback": "better - final",
+    "scope": "All 11 current Set 10 paintings, including the revised Earthspeaker, Glimmer Double and Leaden Step.",
+    "status": "approved and final",
+    "shared_manifest_updated": true,
+    "commit_authorized": true,
+    "finalization_request": "mark all as final and commit. remove outdated versions"
+  },
+  "review_history": [
+    {
+      "date": "2026-11-10",
+      "prior_status": "3 revised paintings awaiting review; 2 approved and 6 awaiting review",
+      "finalized_by": "better - final"
+    }
+  ],
+  "finalization_write_scope": [
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "ART_BRIEFS_SET10.md",
+    "CARD_ART_FINAL.json"
+  ],
+  "finalization_preserved_image_sha256": {
+    "vowkeeper-of-the-long-road.png": "21071a4af12f9e3b903c4f3b2500edee9cee0e804ab24477d39c34d56c696cdf",
+    "web/vowkeeper-of-the-long-road.jpg": "104aa3c5d68eef29498b9cc29c30b9e0ff93c06389f3e138af85ea93d6dcd9b8",
+    "leaden-step.png": "28de91777e20b004afd19ed840a93423f1b57d90db75ee57b36b18e622703c45",
+    "web/leaden-step.jpg": "3d812583672e400c86869b39cd70d26cecacd163aff251e54a45fdf7a98013e6",
+    "glimmer-double.png": "9ec84c461d81ad35316112ff8a1d3b211c8df34e0433e1f9c696fffe66b71a92",
+    "web/glimmer-double.jpg": "a6beeff8b5b8a2a79fd35db22b2d364ae3ed739f3df2fbc8240fd8b2ea006d30",
+    "pall-of-ash.png": "356203a40d4ade7995196328806ac9b7016be523973ead2903d4e68fe9974184",
+    "web/pall-of-ash.jpg": "0a2998deb640867042a159fa340779801143070d917decf163386118d90a0ab3",
+    "bought-allegiance.png": "6004daef45cde9d7be6336cfe25c0ea266ae1e294c26623b09dc33ed1ed20500",
+    "web/bought-allegiance.jpg": "2e04c4593fbd1308b5bec2f9038a94c78a983fb74f24d60f49e993d53ada1edf",
+    "lots-for-the-gallows.png": "c093f530f0de5e2bcf711cfd900a057e5369cefbe9680f8b18d235074d836dd2",
+    "web/lots-for-the-gallows.jpg": "fd757c29c9e7e956ff0788618ff1420870a88927a7854ca3dc2308343d15476a",
+    "wildfire.png": "7ff75e566a182455f6f89a7d5af392f51b16f6182f6e6890b624b92fdb9c4ca3",
+    "web/wildfire.jpg": "b7a40c5abb6d7dff46d96913a4c06f24b3bfea9f520655af3a618e15eb3da1d7",
+    "anoint-with-embers.png": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+    "web/anoint-with-embers.jpg": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+    "earthspeaker.png": "dddb5d48694ded7abaf88285d86f89ab5a7682a384a61ed0614885272f008d50",
+    "web/earthspeaker.jpg": "6c2378ace0929fd89447047ee01a1103c395e063d3bd7c128b19a782c64724d8",
+    "shell-mountain-tortoise.png": "1e5c71bc3fe0a8a05a85755e45db4bc878fe1f928025ad4e5aa1edf0781b3a4d",
+    "web/shell-mountain-tortoise.jpg": "ac6b297d09942bc729b62109e4e57848f1a1dfe8d94890e08b3e00ed29a130b3",
+    "copper-hound.png": "45a0af5b425a2617b4badb961d530162d6b7b59e88567b81e8ff94a2d3bba004",
+    "web/copper-hound.jpg": "4e3d96e46c5eac61759173f3d906180d913756c2b4473d98043eff10da7251fd"
+  },
+  "previous_review_checks": {
+    "all_files_present": true,
+    "dimensions_correct": true,
+    "png_signatures_crc_and_decompression_valid": true,
+    "jpeg_signatures_dimensions_and_formats_valid": true,
+    "selected_sources_match": true,
+    "references_match_recorded_hashes": true,
+    "exact_prompts_and_history_saved": true,
+    "one_selected_attempt_per_painting": true,
+    "gallery_has_11_images": true,
+    "gallery_links_valid": true,
+    "gallery_unique_ids": true,
+    "gallery_has_three_previous_version_links": true,
+    "heading_filenames_match": true,
+    "all_revisions_visually_inspected": true,
+    "eight_unchanged_image_pairs_verified": true,
+    "copper_hound_and_anoint_with_embers_unchanged": true,
+    "protected_shared_files_unchanged": true,
+    "three_prior_paintings_preserved": true,
+    "only_set10_files_written": true,
+    "gallery_browser_render_verified": false,
+    "gallery_has_11_final_labels": true,
+    "all_11_current_selections_final": true,
+    "all_22_image_files_unchanged_during_finalization": true,
+    "no_pending_review_labels_in_gallery": true
+  },
+  "cleanup": {
+    "recorded_at_utc": "2026-11-10T20:55:54.600717+00:00",
+    "creator_request": "mark all as final and commit. remove outdated versions",
+    "superseded_versions": 4,
+    "removed_files": 7,
+    "files": [
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-298a2509-ad18-43c2-be36-07fdd3243a9b.png",
+        "sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+        "painting": "leaden-step.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+        "sha256": "b3378179343f012830db25a70924ca8ba76b9c4aef0a6353a54c19a74a6efbd3",
+        "painting": "leaden-step.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-e6e8b65f-2285-4761-9232-b7ec16926aee.png",
+        "sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+        "painting": "glimmer-double.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+        "sha256": "5f2cc78fa1688d31625bf69968372be7f6b6c5242c9237dfaa951dc5ae1386ae",
+        "painting": "glimmer-double.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-b4568250-bc0e-4d7d-ade3-c72c1f6e0387.png",
+        "sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "painting": "earthspeaker.png",
+        "kind": "superseded_generated_source"
+      },
+      {
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png",
+        "sha256": "63c8deffb46da4150bcbcdc55a0030c5f09b6dac56098188faae6e163ffdc270",
+        "painting": "earthspeaker.png",
+        "kind": "superseded_review_copy"
+      },
+      {
+        "path": "/Users/dpuser/.codex/generated_images/01a1c6ff-d1cc-7f00-b52a-ed9371abc547/exec-0c307271-6ba3-48b9-b44b-5ce6b74b1dab.png",
+        "sha256": "0e3268b0509e79c5f12b14660cbf120dde15cf1ae60aa8a0f4a09c5ab8c82a8b",
+        "painting": "copper-hound.png",
+        "kind": "superseded_generated_source"
+      }
+    ],
+    "note": "Superseded images removed at the creator's request. Exact prompts, tool arguments and historical hashes are retained as text; do not restore deleted versions."
+  },
+  "prior_write_scope": [
+    "vowkeeper-of-the-long-road.png",
+    "web/vowkeeper-of-the-long-road.jpg",
+    "leaden-step.png",
+    "web/leaden-step.jpg",
+    "glimmer-double.png",
+    "web/glimmer-double.jpg",
+    "pall-of-ash.png",
+    "web/pall-of-ash.jpg",
+    "bought-allegiance.png",
+    "web/bought-allegiance.jpg",
+    "lots-for-the-gallows.png",
+    "web/lots-for-the-gallows.jpg",
+    "wildfire.png",
+    "web/wildfire.jpg",
+    "anoint-with-embers.png",
+    "web/anoint-with-embers.jpg",
+    "earthspeaker.png",
+    "web/earthspeaker.jpg",
+    "shell-mountain-tortoise.png",
+    "web/shell-mountain-tortoise.jpg",
+    "copper-hound.png",
+    "web/copper-hound.jpg",
+    "ART_PROMPTS_SET10.json",
+    "SET10_GALLERY.html",
+    "SET10_VALIDATION.json",
+    "work-in-progress/set10-review-2026-11-10/originals/leaden-step.png",
+    "work-in-progress/set10-review-2026-11-10/originals/glimmer-double.png",
+    "work-in-progress/set10-review-2026-11-10/originals/earthspeaker.png"
+  ],
+  "protected_files_before_final_commit": {
+    ".claude/skills/art-direction/SKILL.md": "afbada95ef498017b705093d4e283fc32fa1a3640e8980d535e1b6a9a75d8620",
+    "breachline/CARD_PROPOSALS.md": "4590b912564f2940dd885a079131e75593bd78062a3d1d5723e40a57d0c471a9",
+    "breachline/SETTING.md": "7f5cfba75ebd7a4ed9b1d6e8b36e7d5de040150083accb653276d187f098eadd",
+    "breachline/DESIGN_NOTES.md": "ccaaede92fddb49319c85b8c0f8e60b4a099a1844de65606842c139488a83ac9",
+    "breachline/art/reference-library-2026-11-06/README.txt": "d2222d7a8112e0dea63755e9bea390da421f62e9f82f6f23d1e97e91ce0f0d75",
+    "breachline/art/reference-library-2026-11-06/prompts-and-manifest.json": "62550f1308a36a7d9fb73c3e1fc57e098fb51a7da6fff681127a3c25b9a6967f"
+  }
+}
