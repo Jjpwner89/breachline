@@ -98,9 +98,42 @@ The creator reviewed the first drafts and the kept lines are on the cards. Lines
 | Copper hound | It has never learned to sit. |
 | Waystone golem | Every day to the thirteenth milestone, and back. No one remembers why. |
 
-### Rejected, so these cards have no line
+### Second drafts, kept
+
+Drafted on 2026-11-10 for cards whose first line was rejected, after studying how serious Magic flavour text is built (turns, paradoxes, sayings, plain terrible facts, a speaker in the moment). No wording was borrowed. The creator called them way better than the first drafts and kept all 25; they're on the cards.
+
+| Card | Line | Credit |
+| --- | --- | --- |
+| Line of dawn | The light goes first. | |
+| Oath bell | Once for the hour. Twice for the dead. Three times for the oath. | Sunmane custom |
+| Vowkeeper of the long road | He swore to walk the road until it ended. It hasn't. | |
+| Stand as one | Three hands on the bar. Then six. Then everyone's. | |
+| Hearth-sworn penitent | No one asks why he takes the night watch. | |
+| Rimebolt | Cold is not a thing. It is the absence of one. | Lantern Conclave lecture |
+| Conclave rimecaller | His mother still sends him wool socks. | |
+| Field-plate artificer | His armour has never failed. Some of the men inside it have. | |
+| Shutter-window assassin | Nobody in a crowd looks up. | |
+| Ashen Court bailiff | Your hearing is set for next spring. | |
+| Hour of collection | Nobody remembers turning it over. | |
+| Slagheart hulk | When the mountain walks, walk the other way. | Cinder Clan saying |
+| Cinder firebrand | They burned his fields once. Now he burns everyone's. | |
+| The sky falls in | The keep had stood for six hundred years. It stood for one more evening. | |
+| Scatter the line | The line broke before the shields did. | |
+| Wildfire | Nobody won the valley that summer. | |
+| Emberward | Hold still. A crooked line lets the fire in. | |
+| Reedbank forager | Take half. The river will want the rest. | |
+| Overgrowth | Not every army marches. | |
+| Thornwarden pathguard | Turn back. You'll only be asked once. | |
+| Sudden canopy | The forest takes sides. | |
+| Elderwood stag | It has never been found by anyone who was looking. | |
+| Alderkin elder | It does not hurry. It has outlived everyone who did. | |
+| Shell-mountain tortoise | The village moved twice last year. Nobody packed. | |
+| Buckling recruit | He has already written the letter home, in case. | |
+
+### First drafts that were rejected
 
 - **Ribbonvane:** the creator wants no line on this card.
+- **Most cards below now carry a kept second draft.** Those still without a line: Harmonic burst, Leaden step, Cinderhook axe, Cinder rain, Shatter the chain, Warband drum, Spring melt and Rust-hinged warden.
 - **Too literal to the image:** Hearth-sworn penitent ("He keeps the fire because he once set one").
 - **Didn't make sense read cold:** Hurled brand ("Every wall has a roof behind it"), Wildfire ("By morning, no one could say whose fields they had been"), Emberward ("She painted her own when her hands were steadier", which read as painting a picture).
 - **Not horrible, but no:** Stand as one ("No one remembers whose hand was whose").

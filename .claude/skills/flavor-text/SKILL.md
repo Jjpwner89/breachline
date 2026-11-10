@@ -99,6 +99,14 @@ The creator kept about half of 84 drafts. Their verdicts are in `breachline/FLAV
 - **Light religious allegory is welcome,** as with the creator's rewrite "Return to dust." for Pall of ash.
 - **A short exclamation can work,** like "Catch!" for a thrown brand.
 
+The second drafts, written after studying Magic's best lines, were kept in full; the creator called them way better. What they did:
+
+- **A turn in the second half:** "His armour has never failed. Some of the men inside it have."
+- **A tiny story in two or three beats:** "They burned his fields once. Now he burns everyone's."
+- **Something from the world itself,** credited to a people or a custom instead of a named person: a saying, a lecture, a custom.
+- **A plain, dry consequence:** "Your hearing is set for next spring." "Nobody won the valley that summer."
+- **A small human detail beside the power:** "His mother still sends him wool socks."
+
 ## Open question
 
 Should a line ever cite an in-world source, such as a named book? Crediting a role is fine.

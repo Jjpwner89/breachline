@@ -169,7 +169,32 @@
     mosshorn: { line: 'They graze the old roads.' },
     earthspeaker: { line: 'The ground is talking.' },
     hound: { line: 'It has never learned to sit.' },
-    waystone: { line: 'Every day to the thirteenth milestone, and back. No one remembers why.' }
+    waystone: { line: 'Every day to the thirteenth milestone, and back. No one remembers why.' },
+    lineofdawn: { line: 'The light goes first.' },
+    oathbell: { line: 'Once for the hour. Twice for the dead. Three times for the oath.', credit: 'Sunmane custom' },
+    vowkeeper: { line: "He swore to walk the road until it ended. It hasn't." },
+    standasone: { line: "Three hands on the bar. Then six. Then everyone's." },
+    penitent: { line: 'No one asks why he takes the night watch.' },
+    rimebolt: { line: 'Cold is not a thing. It is the absence of one.', credit: 'Lantern Conclave lecture' },
+    rimecaller: { line: 'His mother still sends him wool socks.' },
+    fieldplate: { line: 'His armour has never failed. Some of the men inside it have.' },
+    shutterassassin: { line: 'Nobody in a crowd looks up.' },
+    bailiff: { line: 'Your hearing is set for next spring.' },
+    hour: { line: 'Nobody remembers turning it over.' },
+    slagheart: { line: 'When the mountain walks, walk the other way.', credit: 'Cinder Clan saying' },
+    firebrand: { line: "They burned his fields once. Now he burns everyone's." },
+    skyfalls: { line: 'The keep had stood for six hundred years. It stood for one more evening.' },
+    scatter: { line: 'The line broke before the shields did.' },
+    wildfire: { line: 'Nobody won the valley that summer.' },
+    emberward: { line: 'Hold still. A crooked line lets the fire in.' },
+    reedbank: { line: 'Take half. The river will want the rest.' },
+    overgrowth: { line: 'Not every army marches.' },
+    pathguard: { line: "Turn back. You'll only be asked once." },
+    canopy: { line: 'The forest takes sides.' },
+    stag: { line: 'It has never been found by anyone who was looking.' },
+    alderelder: { line: 'It does not hurry. It has outlived everyone who did.' },
+    tortoise: { line: 'The village moved twice last year. Nobody packed.' },
+    recruit: { line: 'He has already written the letter home, in case.' }
   };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
