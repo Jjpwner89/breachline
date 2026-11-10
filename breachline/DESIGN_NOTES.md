@@ -17,7 +17,7 @@ The creator clarified attunement, learned magic, personal energy and overexertio
 
 ## What the game is
 
-An original fantasy card game on a grid, unique to the creator and not a rebuild of Card Wars, Magic or anything else. It started from remembering the Adventure Time card game and its mix of deck building and a board. Breachline is Claude's working title.
+An original fantasy card game on a grid, unique to the creator and not a rebuild of Card Wars, Magic or anything else. It started from remembering the Adventure Time card game and its mix of deck building and a board. Breachline is Claude's working title, and the creator doesn't like it much (2026-11-10), so a new one is welcome.
 
 - **What the creator loves in Magic:** the fantastical settings and epic art, especially the generic but detailed fantasy of red, the optimistic feel of white and the urban settings of blue. Favourite images include blue's mages deep in study and red's goblins, orcs and dragons.
 - **Slay the Spire:** a further inspiration, but the creator prefers having multiple characters to one.
@@ -110,10 +110,16 @@ Five colours sit above factions as alignments, with several factions inside each
 - Factions matter less to the creator than alignments. Faction identity should come through card mechanics and art.
 - Humans appear in every alignment. Orcs are never Vigil.
 - Neutral cards stay weaker but reliable.
+- **Ways to win (creator, 2026-11-10):** varied abilities and ways to win are crucial, so a deck can be built around one plan. Examples: getting one big creature across the board, with the price and time spent upgrading it as the risk; flooding the board with weak units and summons, which leaves you exposed to area attacks and strong creatures; and spells that hit the summoner directly, mainly in Fervor and Dominion (Dominion drains). Those spells can also hit units, at lower damage per mana than unit-only spells. Area spells never reach the summoner. Area shapes can be squares, crosses, rows and columns, and sweepers are wanted.
+- **Keywords:** a keyword that is a core capability should be on at least three cards. Spread it to existing cards first, with the creator approving each, then fill gaps with new cards.
+- **Keyword decisions (creator, 2026-11-10):** Regrow is gone as too strong. Longshot (3 tiles) works only if the unit hasn't moved that turn; after moving it fights in melee. Resonance hits the target and the enemy directly behind it. Gathered and Sworn became one keyword, Carrion: +1 attack whenever another unit dies on either side. Fireproof comes only from a spell that lights your own units, at extra cost; other fire spells hurt your units, so a fire deck weighs risk against cost. Vigil gets one tile-clearing card for now. Rootfed counts only Genesis lands. Relics are approved as a new card type. Chain, Throng and Intercept were turned down. Armed belongs on units that look armoured or are putting armour on, in any colour. Veiled stays rare. The full table is in `CARD_PROPOSALS.md`.
+- **Guns** stay rare. A rifle makes sense only as a focus for magical energy (creator, 2026-11-10).
+- **Not wanted for now:** effects for reaching the enemy back row (hitting the summoner is already the reward, and more would snowball), Velunn bargains (too hard to balance), and a special champion mechanic.
 - The Velunn are the game's rarest, biggest cards. Dominion can bargain with them, and they can be good too.
 - Vampires can belong to Dominion or Fervor, and stay subtle and rare.
 - The Tithebound could become a black and white hybrid later.
 - Spindlejacks and Dawnsails don't fight. Alderkin can.
+- Constructs are ordinary cards, with no rules of their own for being constructs. Most are neutral or Gnosis, with some Dominion. Fervor's would be elemental, such as a body of rock and magma (creator, 2026-11-10).
 
 ## Modes
 
@@ -160,7 +166,9 @@ Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-1
 
 ## Balance
 
-Latest numbers, from 800 bot-only games on 2026-11-06: the first player wins 43%. By deck, Vigil wins 41%, Fervor 52%, Gnosis 53%, Dominion 39% and Genesis 65%. The scripted bot rarely uses sacrifices well, which hurts Dominion. Campaign numbers are in `CAMPAIGN.md`.
+Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
+
+Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.
 
 Approved plan for balance work, 2026-11-09:
 - Play every starter deck against every other, from both seats, aiming for 45% to 55% each.
@@ -171,7 +179,6 @@ Approved plan for balance work, 2026-11-09:
 Worth playtesting:
 - **Cloistered scholar:** a card every turn from a 2-mana unit could be very strong.
 - **Older red cards:** the creator said red looked a little unbalanced, and Elder dragon hasn't been touched.
-- **Starter balance after Set 4:** in 320 bot games on 2026-11-08 the green starter won 87 and lost 41, up from 78 and 50, and black fell from 53 and 75 to 49 and 79. Hill giant's Stomp and the weaker Sellsword are the likely causes.
 - **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
 - **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
 - **A bigger board:** test expanding beyond 5 by 4, since tokens and tile effects both need room on the board.

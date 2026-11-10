@@ -21,7 +21,7 @@ var Engine = (function () {
     { id: 'shield', name: 'Shield of dawn', type: 'instant', colour: 'W', cost: 1, wants: 1, prevent: 3, text: 'When your unit is attacked: prevent 3 of that damage.' },
     { id: 'banner', name: 'Blessed banner', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 1, hpBonus: 2, text: 'Enchant a unit: +1 attack and +2 health.' },
     unit('goblin', 'Goblin cutter', 'R', 1, 1, 2, 1),
-    unit('raider', 'Orc raider', 'R', 2, 1, 4, 2),
+    unit('raider', 'Orc raider', 'R', 2, 1, 4, 2, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
     unit('conjurer', 'Street conjurer', 'U', 2, 1, 2, 2, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
     unit('sellsword', 'Sellsword', 'N', 3, 0, 3, 4),
     unit('warchief', 'Orc warchief', 'R', 4, 2, 5, 5, { keywords: ['Warband'], text: 'Warband: adjacent allies get +1 attack.' }),
@@ -48,12 +48,12 @@ var Engine = (function () {
     unit('noble', 'Ashen Court noble', 'B', 3, 1, 3, 4, { keywords: ['Drain'], text: 'Drain: heals this unit for the damage it deals.' }),
     unit('vashkar', 'Vashkar, Who Counts the Dead', 'B', 6, 3, 7, 9, { sub: 'Velunn', keywords: ['Drain'], lifeCost: 2, text: 'Drain: heals for the damage it deals. When summoned, you lose 2 life.' }),
     { id: 'raise', name: 'Raise the dead', type: 'spell', colour: 'B', cost: 3, wants: 1, raise: 3, text: 'Return a unit costing 3 or less from your discard pile to your back row.' },
-    { id: 'warrant', name: 'Death warrant', type: 'enchant', colour: 'B', cost: 5, wants: 2, atkBonus: 0, hpBonus: 0, enemyOnly: true, warrant: 2, text: 'Enchant an enemy unit: destroy it at the end of your next turn.' },
-    unit('sapling', 'Walking sapling', 'G', 2, 1, 1, 3, { keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
-    unit('saboteur', 'Thornwarden saboteur', 'G', 2, 1, 2, 3, { keywords: ['Regrow'], text: 'Regrow: recovers 1 health at the start of your turn.' }),
+    { id: 'warrant', name: 'Death warrant', type: 'enchant', colour: 'B', cost: 4, wants: 2, atkBonus: 0, hpBonus: 0, enemyOnly: true, warrant: 2, text: 'Enchant an enemy unit: destroy it at the end of your next turn.' },
+    unit('sapling', 'Walking sapling', 'G', 2, 1, 1, 2, { keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
+    unit('saboteur', 'Thornwarden saboteur', 'G', 2, 1, 2, 3),
     unit('owl', 'Great owl', 'G', 3, 1, 2, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
     unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 2, 4, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
-    unit('bull', 'Elder Herd bull', 'G', 5, 2, 6, 9, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
+    unit('bull', 'Elder Herd bull', 'G', 5, 2, 6, 8, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, text: 'At the end of the enemy turn: push an enemy unit 1 tile back toward its side.' },
     unit('youngsummoner', 'Young summoner', 'N', 2, 0, 2, 3),
     { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 2, text: 'Enchant one of your units: it recovers 2 health at the start of your turn.' },
@@ -77,35 +77,35 @@ var Engine = (function () {
     unit('phantasm', 'Conclave phantasm', 'U', 2, 1, 2, 1, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
     unit('adept', 'Threshold adept', 'U', 3, 1, 2, 3, { ability: { key: 'swap', label: 'Swap' }, text: 'Ability: swap places with one of your units within 2 tiles.' }),
     unit('examiner', 'Conclave examiner', 'U', 4, 2, 2, 4, { ability: { key: 'hold', label: 'Hold' }, text: "Ability: an enemy unit within 2 tiles can't move or attack on its next turn." }),
-    unit('siegewalker', 'Brass siege-walker', 'U', 5, 2, 4, 5, { sub: 'Construct', keywords: ['Longshot'], text: 'Longshot: attacks up to 3 tiles away.' }),
-    unit('ilvane', 'Ilvane, Who Asks Twice', 'U', 6, 3, 5, 8, { sub: 'Velunn', keywords: ['Ranged'], drawOnKill: true, text: 'Ranged: attacks up to 2 tiles away. Draw a card when this destroys a unit.' }),
+    unit('siegewalker', 'Brass siege-walker', 'U', 5, 2, 4, 5, { sub: 'Construct', keywords: ['Longshot'], text: "Longshot: attacks up to 3 tiles away if it hasn't moved this turn." }),
+    unit('ilvane', 'Ilvane, Who Asks Twice', 'U', 6, 3, 5, 8, { sub: 'Velunn', keywords: ['Longshot'], drawOnKill: true, text: "Longshot: attacks up to 3 tiles away if it hasn't moved this turn. Draw a card when this destroys a unit." }),
     unit('rats', 'Barrow rats', 'B', 1, 1, 1, 2, { keywords: ['Hunt'], text: 'Hunt: +2 attack against a damaged unit.' }),
     unit('squire', 'Indebted squire', 'B', 1, 1, 3, 3, { lifeCost: 1, text: 'When summoned, you lose 1 life.' }),
     { id: 'hunted', name: 'Hunted', type: 'enchant', colour: 'B', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, enemyOnly: true, hunted: 1, text: 'Enchant an enemy unit: units attacking it get +1 attack.' },
     { id: 'calleddebt', name: 'Called debt', type: 'instant', colour: 'B', cost: 2, wants: 1, debt: 2, text: 'On the enemy turn: lose 2 life and destroy a damaged enemy unit.' },
     unit('envoy', 'Ashen Court envoy', 'B', 4, 2, 4, 5, { keywords: ['Drain'], text: 'Drain: heals this unit for the damage it deals.' }),
     unit('barrowpriest', 'Barrow priest', 'B', 4, 2, 2, 4, { ability: { key: 'exhume', label: 'Exhume', amount: 2 }, text: 'Ability: return a unit costing 2 or less from your discard pile to your back row.' }),
-    unit('colossus', 'Barrow colossus', 'B', 5, 2, 4, 7, { keywords: ['Gathered'], text: 'Gathered: +1 attack for each unit in your discard pile, up to 4.' }),
+    unit('colossus', 'Barrow colossus', 'B', 5, 2, 4, 7, { keywords: ['Carrion'], text: "Carrion: permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3." }),
     unit('firepot', 'Goblin firepot', 'R', 2, 1, 2, 1, { zap: 1, text: 'When summoned: 1 damage to an enemy unit.' }),
     { id: 'cinderfall', name: 'Cinderfall', type: 'spell', colour: 'R', cost: 4, wants: 2, blast: 3, splash: 1, text: '3 damage to an enemy unit, and 1 to each enemy next to it.' },
-    unit('chieftain', 'Giant chieftain', 'R', 6, 3, 7, 8, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
+    unit('chieftain', 'Giant chieftain', 'R', 6, 3, 7, 8, { keywords: ['Warband', 'Stomp'], text: 'Warband: adjacent allies get +1 attack. Stomp: its attacks also deal 1 damage to enemies next to the target.' }),
     unit('boar', 'Thicket boar', 'G', 1, 1, 1, 3),
     unit('grovetender', 'Grove tender', 'G', 3, 1, 1, 4, { ability: { key: 'tend', label: 'Tend' }, text: 'Ability: an adjacent ally permanently gets +1 attack and +1 health.' }),
-    unit('mossback', 'Mossback bear', 'G', 4, 2, 4, 6, { keywords: ['Regrow'], text: 'Regrow: recovers 1 health at the start of your turn.' }),
+    unit('mossback', 'Mossback bear', 'G', 4, 2, 4, 6, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
     unit('herdmother', 'Herd mother', 'G', 6, 3, 7, 11, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('orrowen', 'Orrowen, Who Was Here First', 'G', 7, 3, 6, 12, { sub: 'Velunn', keywords: ['Grows', 'Overrun'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times. Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('follower', 'Camp follower', 'N', 1, 0, 1, 2),
     unit('scarred', 'Scarred summoner', 'N', 4, 0, 3, 5, { drawOnSummon: 1, text: 'When summoned: draw a card.' }),
     // Set 5, cards 31 to 42 in CARD_PROPOSALS.md.
     unit('fieldscholar', 'Conclave field scholar', 'U', 3, 1, 2, 3, { ability: { key: 'zap', label: 'Zap', amount: 1 }, text: 'Ability, instead of attacking: 1 damage to an enemy unit up to 2 tiles away.' }),
-    unit('wardwright', 'Harmonic wardwright', 'U', 4, 2, 3, 4, { keywords: ['Ranged', 'Resonance'], text: 'Ranged. Resonance: its attacks also deal 1 damage to enemies next to the target.' }),
+    unit('wardwright', 'Harmonic wardwright', 'U', 4, 2, 3, 4, { keywords: ['Ranged', 'Resonance'], text: 'Ranged. Resonance: its attacks also hit the enemy directly behind the target.' }),
     { id: 'brightlance', name: 'Brightlance', type: 'spell', colour: 'U', cost: 3, wants: 1, blast: 2, knock: true, text: '2 damage to an enemy unit, then push it 1 tile back toward its side.' },
     { id: 'wovenward', name: 'Woven ward', type: 'enchant', colour: 'U', cost: 3, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, ward: 4, text: 'Enchant one of your units: it ignores the next 4 damage, then the ward is used up.' },
     { id: 'quench', name: "Enchanter's quench", type: 'enchant', colour: 'U', cost: 2, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, pierce: true, text: 'Enchant one of your units: +1 attack, and its attacks ignore Guard and Winter shelter.' },
     unit('rimedrake', 'Rime drake', 'U', 4, 2, 3, 4, { keywords: ['Flying', 'Freeze'], text: "Flying: moves 2 tiles, over other units. Freeze: the unit it attacks can't move on its next turn." }),
     unit('goblinscout', 'Thornwarden goblin scout', 'G', 1, 1, 1, 1, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
-    unit('alderkin', 'Bronze-harness alderkin', 'G', 4, 2, 4, 7, { sub: 'Alderkin' }),
-    unit('retainer', 'Porcelain-visored retainer', 'B', 3, 1, 2, 5, { keywords: ['Guard', 'Sworn'], text: 'Guard. Sworn: permanently +1 attack when another of your units dies, up to +3.' }),
+    unit('alderkin', 'Bronze-harness alderkin', 'G', 4, 2, 4, 6, { sub: 'Alderkin' }),
+    unit('retainer', 'Porcelain-visored retainer', 'B', 3, 1, 2, 5, { keywords: ['Guard', 'Carrion'], text: "Guard. Carrion: permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3." }),
     unit('veiladept', 'Veil adept', 'B', 3, 1, 4, 2, { keywords: ['Veiled'], text: "Veiled: can't be attacked or targeted by enemy cards until it attacks." }),
     { id: 'flameblade', name: 'Banked flame blade', type: 'enchant', equipment: true, colour: 'R', cost: 2, wants: 1, atkBonus: 2, hpBonus: 0, allyOnly: true, text: 'Equip one of your units: +2 attack.' },
     unit('stoneward', 'Stoneward colossus', 'N', 6, 0, 4, 8, { keywords: ['Guard', 'Holding ground'], text: 'Guard. Holding ground: enemies that move next to it must stop.' }),
@@ -125,7 +125,7 @@ var Engine = (function () {
     { id: 'seedfall', name: 'Seedfall', type: 'spell', colour: 'G', cost: 4, wants: 2, summons: ['sapling', 'sapling'], text: 'Summon two Walking saplings.' },
     unit('gravecaller', 'Gravecaller', 'B', 4, 2, 2, 4, { gravecall: true, text: 'When an ally next to it dies, summon a Gravebound thrall.' }),
     unit('apprentice', 'Lantern apprentice', 'U', 2, 1, 1, 2, { adds: ['spark'], text: 'When summoned: add a Spark to your hand. Spark costs 1: 1 damage to an enemy unit.' }),
-    unit('drummer', 'Cinder-cant drummer', 'R', 2, 1, 1, 2, { adds: ['warchant', 'warchant'], text: 'When summoned: add two War-chants to your hand. War-chant costs 1: one of your units gets +2 attack this turn.' }),
+    unit('drummer', 'Cinder-cant drummer', 'R', 2, 1, 1, 2, { keywords: ['Warband'], adds: ['warchant', 'warchant'], text: 'Warband: adjacent allies get +1 attack. When summoned: add two War-chants to your hand. War-chant costs 1: one of your units gets +2 attack this turn.' }),
     unit('tithekeeper', 'Tithe-keeper', 'B', 3, 1, 2, 3, { curse: 'coin', text: "When summoned: put a Cursed coin in the enemy's hand. While it's there, they lose 1 life at the end of each of their turns. Playing it costs them 1 mana and does nothing." }),
     unit('assassin', 'Court assassin', 'B', 4, 2, 5, 2, { keywords: ['Ambush', 'Hunt'], text: 'Ambush. Hunt: +2 attack against a damaged unit.' }),
     unit('skirmisher', 'Cinder skirmisher', 'R', 3, 1, 3, 2, { keywords: ['Ambush'], text: 'Ambush: can enter on an empty tile beside or behind one of your units.' }),
@@ -147,7 +147,7 @@ var Engine = (function () {
     { id: 'stoneopens', name: 'The stone opens', type: 'spell', colour: 'G', cost: 3, wants: 1, stride: 1, text: 'Each of your units can move 1 extra tile this turn.' },
     unit('torchrunner', 'Copperlane torch-runner', 'R', 2, 1, 2, 1, { keywords: ['Swift'], trail: true, text: 'Swift. When it moves, the tile it leaves burns until your next turn.' }),
     unit('lanner', 'Ash-white lanner', 'R', 3, 1, 2, 3, { keywords: ['Flying', 'Hunt'], text: 'Flying: moves 2 tiles, over other units. Hunt: +2 attack against a damaged unit.' }),
-    unit('winterdoor', 'Winterdoor keeper', 'U', 3, 1, 2, 3, { ability: { key: 'winterdoor', label: 'Open the door', turns: 2 }, text: "Ability: an enemy's tile within 2 tiles freezes until the end of your next turn. Units on frozen tiles can't move." }),
+    unit('winterdoor', 'Winterdoor keeper', 'U', 3, 1, 2, 3, { keywords: ['Freeze'], ability: { key: 'winterdoor', label: 'Open the door', turns: 2 }, text: "Freeze: the unit it attacks can't move on its next turn. Ability: an enemy's tile within 2 tiles freezes until the end of your next turn. Units on frozen tiles can't move." }),
     unit('mourner', 'Mothwake mourner', 'B', 3, 1, 2, 3, { mournLife: 1, text: 'When another of your units dies, the enemy loses 1 life.' }),
     { id: 'rapier', name: 'Cobalt rapier', type: 'enchant', equipment: true, colour: 'U', cost: 3, wants: 1, atkBonus: 1, hpBonus: 0, allyOnly: true, grants: ['Ranged'], text: 'Equip one of your units: +1 attack and Ranged (attacks up to 2 tiles away).' },
     unit('corewright', 'Corewright', 'U', 3, 1, 2, 3, { equipDiscount: 1, text: 'Your equipment costs 1 less.' }),
@@ -172,10 +172,10 @@ var Engine = (function () {
   });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['dawnsails', 1], ['stillflame', 1], ['carrier', 2], ['shelter', 1], ['cleric', 2], ['sentinel', 2], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['matriarch', 1], ['stillflame', 1], ['lioness', 1], ['outrider', 1], ['shelter', 1], ['cleric', 2], ['sentinel', 2], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
     red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 7], ['land_u', 1], ['coalback', 1], ['clanraiders', 2], ['raider', 2], ['conjurer', 1], ['berserker', 2], ['passage', 1], ['captain', 1], ['warchief', 1], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] },
     blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 7], ['land_w', 1], ['decoy', 1], ['mending', 1], ['conjurer', 2], ['lampwright', 2], ['scholar', 2], ['arcanist', 3], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
-    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 6], ['land_r', 2], ['thrall', 3], ['harvester', 3], ['noble', 2], ['slateprowler', 1], ['vashkar', 1], ['raise', 2], ['warrant', 1], ['sellsword', 1], ['across', 1], ['firebolt', 1]] },
+    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 6], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 2], ['envoy', 1], ['retainer', 1], ['squire', 2], ['slateprowler', 1], ['vashkar', 1], ['raise', 1], ['warrant', 1], ['colossus', 1], ['firebolt', 1]] },
     green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 6], ['land_r', 2], ['sapling', 3], ['saboteur', 3], ['owl', 2], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
   };
 
@@ -232,7 +232,11 @@ var Engine = (function () {
     return CARDS[u.cardId].keywords.indexOf(k) >= 0 || (u.enchants || []).some(function (e) { return (CARDS[e.c].grants || []).indexOf(k) >= 0; });
   }
   function speed(u) { return (hasKw(u, 'Swift') || hasKw(u, 'Flying') ? 2 : 1) + (u.stride || 0); }
-  function range(u) { return hasKw(u, 'Longshot') ? 3 : hasKw(u, 'Ranged') || u.tempRange ? 2 : 1; }
+  // Longshot fires only from a standstill. Once it has moved on its own turn it fights in melee.
+  function range(u) {
+    if (hasKw(u, 'Longshot')) return u.walked ? 1 : 3;
+    return hasKw(u, 'Ranged') || u.tempRange ? 2 : 1;
+  }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
   function nextToAlly(s, u) { return s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1; }); }
@@ -276,7 +280,7 @@ var Engine = (function () {
   }
 
   function attackOf(s, u) {
-    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.sworn || 0) + (u.loyal || 0);
+    var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.carrion || 0) + (u.loyal || 0);
     var spot = tileKind(s, u);
     if (spot === 'blight') a -= 1;
     if (spot === 'burn') a += CARDS[u.cardId].emberAtk || 0;
@@ -284,7 +288,6 @@ var Engine = (function () {
     if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 1;
     if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 2;
     if (hasKw(u, 'Steadfast') && !(u.owner === s.active && u.walked)) a += 1;
-    if (hasKw(u, 'Gathered')) a += Math.min(4, s.players[u.owner].discard.filter(function (d) { return CARDS[d.c].type === 'unit'; }).length);
     // Warband doesn't stack with itself.
     if (s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1 && hasKw(o, 'Warband'); })) a += 1;
     return Math.max(0, a);
@@ -385,13 +388,14 @@ var Engine = (function () {
     p.landDropped = false;
     p.extraLands = 0;
     s.units.forEach(function (u) {
+      // Walking only counts on the turn it happens, so a Longshot unit that moved last turn can strike back at full range.
+      u.walked = false;
       if (u.owner !== s.active) return;
-      u.moved = false; u.acted = false; u.walked = false;
+      u.moved = false; u.acted = false;
       if (hasKw(u, 'Grows') && (u.growth || 0) < 3) {
         u.growth = (u.growth || 0) + 1; u.maxHp += 2; u.hp += 2;
         s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+2', good: true });
       }
-      if (hasKw(u, 'Regrow') && u.hp < u.maxHp) heal(s, u, 1);
       u.enchants.forEach(function (e) {
         if (CARDS[e.c].regrow && u.hp < u.maxHp) heal(s, u, CARDS[e.c].regrow);
         if (CARDS[e.c].grows && (e.growth || 0) < 3) {
@@ -715,17 +719,17 @@ var Engine = (function () {
     if (!u.conjured) pl.discard.push({ id: u.inst, c: u.cardId });
     u.enchants.forEach(function (e) { s.players[e.owner].discard.push({ id: e.id, c: e.c }); });
     say(s, d.name + (u.conjured ? ' is destroyed and vanishes.' : ' is destroyed.'));
-    // Death triggers. Sworn counts every other unit of yours that is destroyed, however it happens, and so do the
-    // Vigil-keeper and, for a unit next to it, the Gravecaller.
+    // Death triggers. Carrion counts every other unit destroyed on either side, however it happens. The
+    // Vigil-keeper and, for a unit next to it, the Gravecaller count only their own side's.
     var callers = [];
     s.units.forEach(function (o) {
-      if (o.owner !== u.owner) return;
       var od = CARDS[o.cardId];
-      if (hasKw(o, 'Sworn') && (o.sworn || 0) < 3) {
-        o.sworn = (o.sworn || 0) + 1;
+      if (o !== u && hasKw(o, 'Carrion') && (o.carrion || 0) < 3) {
+        o.carrion = (o.carrion || 0) + 1;
         s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+1', good: true });
         say(s, od.name + ' gets +1 attack.');
       }
+      if (o.owner !== u.owner) return;
       if (od.keeperLife) {
         pl.life += od.keeperLife;
         s.fx.push({ summoner: u.owner, text: '+' + od.keeperLife, good: true });
@@ -833,14 +837,17 @@ var Engine = (function () {
     }
     if (b) strike(b, 'The lance also hits ');
     var stomped = [];
-    // Resonance works exactly like Stomp.
-    var splash = hasKw(a, 'Stomp') ? ' stomps ' : hasKw(a, 'Resonance') ? "'s resonance hits " : null;
-    if (t && splash) s.units.forEach(function (o) {
+    if (t && hasKw(a, 'Stomp')) s.units.forEach(function (o) {
       if (o === t || o.owner === a.owner || dist(o, t) !== 1) return;
       var hit = damage(s, o, guarded(s, o, 1, pierces(a)));
-      say(s, name + splash + CARDS[o.cardId].name + ' for ' + hit + '.');
+      say(s, name + ' stomps ' + CARDS[o.cardId].name + ' for ' + hit + '.');
       stomped.push(o);
     });
+    // Resonance carries the full attack on to the enemy directly behind the target, measured as for Overrun. That enemy doesn't strike back.
+    if (t && hasKw(a, 'Resonance')) {
+      var rr = t.r === a.r ? 0 : t.r > a.r ? 1 : -1, rc = rr ? 0 : t.c > a.c ? 1 : -1, rung = unitAt(s, t.r + rr, t.c + rc);
+      if (rung && rung.owner !== a.owner && rung !== b && rung !== over) { strike(rung, name + "'s resonance also hits "); stomped.push(rung); }
+    }
     // Only a survivor strikes back, and only if the attacker is within its range. A decoy strikes back before it vanishes.
     var vanish = t && t.hp > 0 && hasKw(t, 'Decoy');
     if (t && t.hp > 0 && !(vanish && attackOf(s, t) === 0)) {

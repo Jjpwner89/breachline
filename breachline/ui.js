@@ -202,7 +202,7 @@
       if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
       if (u.frozen >= S.turn) chips.push('<span class="chip state">Frozen</span>');
       if (u.veiled) chips.push('<span class="chip state">Veiled</span>');
-      if (u.sworn) chips.push('<span class="chip">Sworn +' + u.sworn + '</span>');
+      if (u.carrion) chips.push('<span class="chip">Carrion +' + u.carrion + '</span>');
       if (waiting) chips.push('<span class="chip state">Waiting</span>');
       else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));

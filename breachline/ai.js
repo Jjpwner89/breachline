@@ -65,7 +65,7 @@ var AI = (function () {
     if (u.held >= v.turn) bits.push("held: can't move or attack " + (u.held === v.turn ? 'this turn' : 'on its next turn'));
     if (u.frozen >= v.turn) bits.push("frozen: can't move " + (u.frozen === v.turn ? 'this turn' : 'on its next turn'));
     if (u.veiled) bits.push("veiled: enemies can't attack or target it until it attacks");
-    if (u.sworn) bits.push('Sworn: +' + u.sworn + ' attack so far');
+    if (u.carrion) bits.push('Carrion: +' + u.carrion + ' attack so far');
     u.enchants.forEach(function (e) { bits.push('enchanted with ' + card(e.c).name + (card(e.c).text ? ' (' + card(e.c).text + ')' : '') + (e.left ? ', ' + e.left + ' damage left to ignore' : '')); });
     return named(v, u) + ' at row ' + u.r + ', column ' + u.c + ': attack ' + E.attackOf(v, u) + ', health ' + u.hp + '/' + u.maxHp + '.' +
       (c.text ? ' ' + c.text : '') + (bits.length ? ' [' + bits.join('; ') + ']' : '');

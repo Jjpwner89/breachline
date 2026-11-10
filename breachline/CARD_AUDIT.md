@@ -61,11 +61,11 @@ Old stats are shown at the old scale. Ability numbers are in the next table.
 
 | Card | Cost | Old | New | Why |
 | --- | --- | --- | --- | --- |
-| Walking sapling | 2 | 10 / 40 | 1 / 3 | Starts as a sapling and reaches 4 / 9 |
+| Walking sapling | 2 | 10 / 40 | 1 / 2 | Starts as a sapling and reaches 4 / 8. Was 1 / 3 until the 2026-11-10 balance changes |
 | Thornwarden saboteur | 2 | 30 / 35 | 2 / 3 | A saboteur, not a bruiser. Regrow is the point |
 | Great owl | 3 | 25 / 30 | 2 / 3 | It's an owl |
 | Wayfinder druid | 3 | 20 / 45 | 2 / 4 | Worth playing for the extra land |
-| Elder Herd bull | 5 | 60 / 95 | 6 / 9 | Attack feeds Overrun. Health dropped so it no longer copies the Pride warden |
+| Elder Herd bull | 5 | 60 / 95 | 6 / 8 | Attack feeds Overrun. Health dropped so it no longer copies the Pride warden, and again on 2026-11-10 |
 
 ### Neutral
 
