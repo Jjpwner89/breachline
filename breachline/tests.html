@@ -213,18 +213,26 @@ function randomField(r, ids) {
       if (o.cards.filter(function (id) { return E.CARDS[id].colour === foe; }).length !== 1) wrong.push('no single card from the beaten enemy');
       run = Campaign.take(o.cards[seed % 3]);
     }
-    // Rewards grow a campaign deck past 30, so only the copy limit applies to it.
-    var overCopies = E.deckProblems(run.list).filter(function (p) { return /^Too many copies/.test(p); });
-    if (run.chapter !== last || E.deckSize(run.list) !== E.DECK_MAX + last || overCopies.length) wrong.push('deck after rewards: ' + E.deckSize(run.list) + ' cards ' + overCopies.join());
+    // Rewards go to the reserve, so the deck itself stays legal at 30.
+    if (run.chapter !== last || E.deckProblems(run.list).length || E.deckSize(run.spare) !== last) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join() + ', reserve ' + E.deckSize(run.spare));
   }
   check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
   check('a run never changes the starter deck', JSON.stringify(E.DECKS.white.list) === starter);
+  (function () {
+    Campaign.begin('vigil', 'bot', 7);
+    Campaign.finish(0);
+    var won = Campaign.take(Campaign.current().offer.cards[0]), inId = won.spare[0][0], outId = won.list.filter(function (e) { return e[0] !== inId; })[0][0];
+    var before = E.deckSize(won.list), after = Campaign.swap(inId, outId);
+    check('a reserve card swaps into the deck, which keeps its size', after && E.deckSize(after.list) === before && after.spare.some(function (e) { return e[0] === outId; }) &&
+      after.list.some(function (e) { return e[0] === inId; }));
+    Campaign.abandon();
+  })();
 
   Campaign.begin('vigil', 'bot', 5);
   var offered = Campaign.finish(0).offer;
   check('only an offered card can be taken', Campaign.take('dragon') === null && Campaign.current().status === 'reward');
   var land = Campaign.take(offered.lands[1]);
-  check('a land from the offer can be taken', land.chapter === 1 && land.list.some(function (e) { return e[0] === offered.lands[1]; }));
+  check('a land from the offer can be taken, into the reserve', land.chapter === 1 && land.spare.some(function (e) { return e[0] === offered.lands[1]; }) && E.deckSize(land.list) === E.DECK_MAX);
   Campaign.finish(0);
   var size = E.deckSize(Campaign.current().list), none = Campaign.take(null);
   check('taking nothing moves on with the same deck', none.chapter === 2 && E.deckSize(none.list) === size);

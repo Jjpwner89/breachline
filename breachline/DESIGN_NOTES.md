@@ -46,7 +46,7 @@ Claude's assumptions, not yet confirmed by the creator:
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
-- In the deck builder: exactly 30 cards, 3 copies of a non-land card and unlimited lands. The starter, theme and campaign enemy decks are all 30. A campaign deck grows past 30 as it takes rewards.
+- In the deck builder: exactly 30 cards, 3 copies of a non-land card and unlimited lands. The starter, theme and campaign enemy decks are all 30. A campaign deck stays at 30: rewards go to a reserve that can be swapped in between battles.
 - The card-to-faction list in `engine.js`.
 
 ## Board mechanics

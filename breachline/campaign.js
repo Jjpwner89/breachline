@@ -1,5 +1,5 @@
 // Campaign runs, with no DOM. A run is one attempt at an alignment's story: a starter deck, a fixed route of battles on
-// the map and a card after each win. A loss ends it. The story text is draft, tracked in CAMPAIGN.md.
+// the map and a card after each win, kept in a reserve that can be swapped into the deck between battles. A loss ends it. The story text is draft, tracked in CAMPAIGN.md.
 var Campaign = (function () {
   var E = typeof Engine !== 'undefined' ? Engine : require('./engine.js');
   var KEY = 'breachline.campaign.v1', OFFER = 3, MAX_REWARD_COST = 7, store = null, mem = null, ended = null;
@@ -248,6 +248,7 @@ var Campaign = (function () {
     if (!story || !Array.isArray(run.list) || run.chapter !== (run.chapter | 0) || run.chapter < 0 || run.chapter >= story.chapters.length) return null;
     run.list = run.list.filter(function (e) { return known(e[0]); });
     if (!run.list.length) return null;
+    run.spare = (Array.isArray(run.spare) ? run.spare : []).filter(function (e) { return known(e[0]) && e[1] > 0; });
     if (!battleOk(run.battle)) run.battle = null;
     if (run.status === 'reward' && !(run.offer && run.offer.cards.concat(run.offer.lands).every(known))) run.offer = makeOffer(run);
     return run;
@@ -262,7 +263,7 @@ var Campaign = (function () {
     var story = STORIES[storyId];
     ended = null;
     var run = {
-      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [],
+      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [], spare: [],
       seed: (seed === undefined ? Math.floor(Math.random() * 2147483647) : seed) | 0,
       list: E.DECKS[story.starter].list.map(function (e) { return e.slice(); })
     };
@@ -275,10 +276,17 @@ var Campaign = (function () {
     return [{ name: E.DECKS[storyOf(run).starter].name, colours: [storyOf(run).colour], list: run.list }, chapterOf(run).enemy];
   }
 
-  function copiesOf(run, id) {
-    var e = run.list.filter(function (x) { return x[0] === id; })[0];
+  function countIn(list, id) {
+    var e = list.filter(function (x) { return x[0] === id; })[0];
     return e ? e[1] : 0;
   }
+  function addTo(list, id, n) {
+    var e = list.filter(function (x) { return x[0] === id; })[0];
+    if (e) e[1] += n; else list.push([id, n]);
+    for (var i = list.length - 1; i >= 0; i--) if (list[i][1] <= 0) list.splice(i, 1);
+  }
+  // The reserve counts too, so a run can't stockpile more copies than a deck could hold.
+  function copiesOf(run, id) { return countIn(run.list, id) + countIn(run.spare || [], id); }
   function rewardable(run, colours) {
     return Object.keys(E.CARDS).filter(function (id) {
       var c = E.CARDS[id];
@@ -317,14 +325,13 @@ var Campaign = (function () {
     else { ended = run; write(null); }
     return run;
   }
-  // id is a card or land from the offer. Null takes nothing, which keeps the deck as tight as it is.
+  // id is a card or land from the offer, and it goes to the reserve. Null takes nothing.
   function take(id) {
     var run = current();
     if (!run || run.status !== 'reward' || !run.offer) return null;
     if (id !== null) {
       if (run.offer.cards.concat(run.offer.lands).indexOf(id) < 0) return null;
-      var e = run.list.filter(function (x) { return x[0] === id; })[0];
-      if (e) e[1] += 1; else run.list.push([id, 1]);
+      addTo(run.spare, id, 1);
       run.taken.push(id);
     }
     run.offer = null;
@@ -333,11 +340,24 @@ var Campaign = (function () {
     save(run);
     return run;
   }
+  // Swaps a reserve card into the deck for one of the deck's cards, so the deck keeps its size. Not during a battle,
+  // since the battle already holds the deck.
+  function swap(inId, outId) {
+    var run = current();
+    if (!run || run.status !== 'map' || run.battle || inId === outId) return null;
+    if (!countIn(run.spare, inId) || !countIn(run.list, outId) || countIn(run.list, inId) >= E.maxCopies(inId)) return null;
+    addTo(run.spare, inId, -1);
+    addTo(run.list, inId, 1);
+    addTo(run.list, outId, -1);
+    addTo(run.spare, outId, 1);
+    save(run);
+    return run;
+  }
   function abandon() { ended = null; write(null); }
 
   return {
     ORDER: ORDER, STORIES: STORIES, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
-    finish: finish, take: take, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
+    finish: finish, take: take, swap: swap, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
     persistent: function () { return !!store; }
   };
 })();

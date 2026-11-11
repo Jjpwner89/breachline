@@ -6,6 +6,8 @@ var Screens = (function () {
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
   var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '' }, confirmDelete = null;
+  // The reserve card picked to swap into a campaign deck.
+  var swapIn = null;
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
   function byId(id) { return document.getElementById(id); }
@@ -137,6 +139,32 @@ var Screens = (function () {
     }).join('');
     return '<section class="pickset"><h2>Your deck: ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
   }
+  // The campaign deck and its reserve. Pick a reserve card, then the deck card it replaces; the deck keeps its size.
+  function runDeck(run) {
+    var locked = !!run.battle, spare = run.spare || [];
+    if (swapIn && !spare.some(function (e) { return e[0] === swapIn; })) swapIn = null;
+    var inDeck = function (id) { var e = run.list.filter(function (x) { return x[0] === id; })[0]; return e ? e[1] : 0; };
+    var grid = function (list, tile) { return list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(tile).join(''); };
+    var tile = function (e, cls, attrs, label) {
+      var c = E.CARDS[e[0]];
+      return '<div class="pcard' + cls + '">' + (attrs ? '<button type="button" class="card" ' + attrs + ' aria-label="' + esc(label + c.name) + '">' : '<div class="card">') +
+        GameUI.frameHtml(c) + (attrs ? '</button>' : '</div>') + (e[1] > 1 ? '<span class="have">× ' + e[1] + '</span>' : '') + '</div>';
+    };
+    var deck = grid(run.list, function (e) { return tile(e, '', swapIn && !locked ? act('swapOut', e[0]) : '', 'Swap out '); });
+    var reserve = grid(spare, function (e) {
+      var full = inDeck(e[0]) >= E.maxCopies(e[0]);
+      return tile(e, (e[0] === swapIn ? ' chosen' : '') + (full ? ' maxed' : ''), locked || full ? '' : act('pickSpare', e[0]), 'Swap in ');
+    });
+    var hint = locked ? 'Finish this battle before changing your deck.'
+      : swapIn ? 'Choose a card in your deck to swap out for ' + esc(E.CARDS[swapIn].name) + '. <button type="button" class="linkbtn" ' + act('pickSpare') + '>Cancel</button>'
+      : spare.length ? 'Choose a card in your reserve to swap into your deck.'
+      : 'Cards you win go to your reserve, and you can swap them into your deck here between battles.';
+    // The reserve comes first, since a swap starts there.
+    var note = '<p class="hint" role="status">' + hint + '</p>';
+    return (spare.length ? '<section class="pickset"><h2>Reserve: ' + plural(E.deckSize(spare), 'card') + '</h2>' + note + '<div class="cgrid rdeck">' + reserve + '</div></section>' : '') +
+      '<section class="pickset"><h2>Your deck: ' + plural(E.deckSize(run.list), 'card') + '</h2>' + (spare.length ? '' : note) +
+      '<div class="cgrid rdeck' + (swapIn && !locked ? ' swapping' : '') + '">' + deck + '</div></section>';
+  }
   function opponentName(player) { return player === 'bot' ? 'the scripted bot' : 'Claude, ' + AI.levels[player].label; }
   function campaignHead(title) {
     return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + '</h1></header>' +
@@ -178,7 +206,7 @@ var Screens = (function () {
     show('<div class="page">' + campaignHead(story.title) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
       '<aside class="cside">' + chapterPanel(run, picked) +
       '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p><div class="cleave">' + leave + '</div></aside></div>' +
-      deckGrid(run.list) + '</div>', campaign);
+      runDeck(run) + '</div>', campaign);
     fitAll();
   }
   function reward(run) {
@@ -190,7 +218,7 @@ var Screens = (function () {
     }).join('');
     var lands = offer.lands.map(function (id) { return '<button type="button" class="btn" ' + act('takeCard', id) + '>' + symbol(E.CARDS[id].colour) + ' ' + esc(E.CARDS[id].name) + '</button>'; }).join('');
     show('<div class="page">' + campaignHead('Choose a card to keep') +
-      '<p class="hint rlead">You beat ' + esc(c.enemy.name) + '. Your deck has ' + plural(E.deckSize(run.list), 'card') + '.</p>' +
+      '<p class="hint rlead">You beat ' + esc(c.enemy.name) + '. The card you keep goes to your reserve, and you can swap it into your deck on the map.</p>' +
       '<div class="rpicks">' + cards + '</div>' +
       '<div class="rother"><span class="hint">Or add a land:</span>' + lands + '<button type="button" class="btn" ' + act('takeCard') + '>Take nothing</button></div>' +
       deckGrid(run.list) + '</div>', campaign);
@@ -211,13 +239,16 @@ var Screens = (function () {
     if (run.status === 'reward') return reward(run);
     mapScreen(run);
   }
-  actions.campaign = function () { mapPick = null; confirmAbandon = false; campaign(); };
+  actions.campaign = function () { mapPick = null; confirmAbandon = false; swapIn = null; campaign(); };
   actions.setPlayer = function (key) { setupPlayer = key; setup(); };
   actions.setStory = function (id) { setupStory = id; setup(); };
   actions.beginRun = function () { Campaign.begin(setupStory, setupPlayer); actions.campaign(); };
   actions.mapPick = function (i) { mapPick = +i; campaign(); };
   actions.fight = function () { GameUI.playChapter(); };
-  actions.takeCard = function (id) { Campaign.take(id === undefined ? null : id); actions.campaign(); };
+  // A card just won comes back already picked, ready to swap in.
+  actions.takeCard = function (id) { Campaign.take(id === undefined ? null : id); actions.campaign(); if (id !== undefined && Campaign.current()) { swapIn = id; campaign(); } };
+  actions.pickSpare = function (id) { swapIn = id === undefined || id === swapIn ? null : id; campaign(); };
+  actions.swapOut = function (id) { if (swapIn) Campaign.swap(swapIn, id); swapIn = null; campaign(); };
   actions.askAbandon = function () { confirmAbandon = true; campaign(); };
   actions.keepRun = function () { confirmAbandon = false; campaign(); };
   actions.abandonRun = function () { Campaign.abandon(); actions.campaign(); };

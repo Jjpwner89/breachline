@@ -16,7 +16,7 @@ All five campaigns can be played. The story lines live in `campaign.js`, and eve
 
 - **Length:** 6 battles, so about 1 to 2 hours at 10 to 20 minutes a battle.
 - **Summoner life:** back to 15 at the start of each battle. Life doesn't carry over.
-- **Rewards:** after each win except the last, choose one of three cards: two from your own side or neutral, one from the enemy you just beat. You can take a land or nothing instead. Your deck starts at 30 cards, so a run that takes a card every time ends at 35.
+- **Rewards:** after each win except the last, choose one of three cards: two from your own side or neutral, one from the enemy you just beat. You can take a land or nothing instead. The card goes to your reserve, and between battles you can swap any reserve card into your deck for one of its cards, which goes to the reserve in turn. The deck stays at 30 (creator, 2026-11-10).
 - **Left out of rewards:** Velunn, because they should stay rare, and cards whose cost plus wanted lands is over 7.
 - **Your deck:** no deck building during a run. The deck only grows.
 - **Enemies:** the same rules and 15 life as you. Later enemies are harder only because their decks are stronger, which goes beyond the same-rules difficulty idea for the Claude levels. That idea still applies inside each battle.
