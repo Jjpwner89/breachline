@@ -419,7 +419,7 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | Longshot | Attacks up to 3 tiles away if it hasn't moved this turn. Once it moves, melee only | Brass siege-walker, Ilvane, plus #142 Focus-rifle marksman and #150 Shutter-window assassin | Rule built, and Ilvane changed from Ranged |
 | Regrow | Removed as too strong | None | Built. The Mossback bear takes Frenzy instead, the extra Frenzy card you allowed. Say if you'd rather it stayed plain |
 | Freeze | The unit it attacks can't move on its next turn | Rime drake, Winterdoor keeper, plus #108 Conclave rimecaller | Built for the keeper. #107, #145 and #146 are freeze spells |
-| Frenzy | +2 attack while damaged | Cinder berserker, Orc raider, Mossback bear | Built |
+| Frenzy | +2 attack on its first attack | Cinder berserker, Orc raider, Mossback bear | Built. Until 2026-11-11 it was +2 attack while damaged |
 | Fireproof | Burning tiles don't hurt it | Ember salamander, Ember drake, Elder dragon, Copperlane torch-runner, and your units lit by #104 Kindle the line or #164 Anoint with embers | Built for the four with it innately. It can also come from a spell, an enchantment (#190) or equipment (#191). No card already in the game gives it, and lightning never does |
 | Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Built |
 | Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Built. Armed isn't tied to a colour |

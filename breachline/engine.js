@@ -22,7 +22,7 @@ var Engine = (function () {
     { id: 'shield', name: 'Shield of dawn', type: 'instant', colour: 'W', cost: 1, wants: 1, prevent: 3, text: 'When your unit is attacked: prevent 3 of that damage.' },
     { id: 'banner', name: 'Blessed banner', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 1, hpBonus: 2, text: 'Enchant a unit: +1 attack and +2 health.' },
     unit('goblin', 'Goblin cutter', 'R', 1, 1, 2, 1),
-    unit('raider', 'Orc raider', 'R', 2, 1, 4, 2, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
+    unit('raider', 'Orc raider', 'R', 2, 1, 4, 2, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack on its first attack.' }),
     unit('conjurer', 'Street conjurer', 'U', 2, 1, 2, 2, { keywords: ['Ranged'], text: 'Ranged: attacks up to 2 tiles away.' }),
     unit('sellsword', 'Sellsword', 'N', 3, 0, 3, 4),
     unit('warchief', 'Orc warchief', 'R', 4, 2, 5, 5, { keywords: ['Warband'], text: 'Warband: adjacent allies get +1 attack.' }),
@@ -35,7 +35,7 @@ var Engine = (function () {
     unit('sentinel', 'Oath sentinel', 'W', 3, 1, 2, 6, { keywords: ['Guard'], text: 'Guard: adjacent allies take 1 less damage from attacks.' }),
     unit('maren', 'Saint Maren of the Long Watch', 'W', 6, 3, 4, 12, { sub: 'Velunn', ability: { key: 'healall', label: 'Heal all', amount: 2 }, text: 'Ability: heal all adjacent allies 2.' }),
     unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 3, 2, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
-    unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
+    unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack on its first attack.' }),
     unit('captain', 'Mercenary captain', 'R', 4, 2, 4, 5, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
     unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying', 'Fireproof'], text: 'Flying: moves 2 tiles, over other units.' }),
     unit('decoy', 'Illusory decoy', 'U', 1, 1, 0, 1, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
@@ -92,7 +92,7 @@ var Engine = (function () {
     unit('chieftain', 'Giant chieftain', 'R', 6, 3, 7, 8, { keywords: ['Warband', 'Stomp'], text: 'Warband: adjacent allies get +1 attack. Stomp: its attacks also deal 1 damage to enemies next to the target.' }),
     unit('boar', 'Thicket boar', 'G', 1, 1, 1, 3),
     unit('grovetender', 'Grove tender', 'G', 3, 1, 1, 4, { ability: { key: 'tend', label: 'Tend' }, text: 'Ability: an adjacent ally permanently gets +1 attack and +1 health.' }),
-    unit('mossback', 'Mossback bear', 'G', 4, 2, 4, 6, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
+    unit('mossback', 'Mossback bear', 'G', 4, 2, 4, 6, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack on its first attack.' }),
     unit('herdmother', 'Herd mother', 'G', 7, 3, 7, 11, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('orrowen', 'Orrowen, Who Was Here First', 'G', 7, 3, 6, 12, { sub: 'Velunn', keywords: ['Grows', 'Overrun'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times. Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('follower', 'Camp follower', 'N', 1, 0, 1, 2),
@@ -380,7 +380,8 @@ var Engine = (function () {
     if (u.hp <= 0) kill(s, u);
   }
 
-  function attackOf(s, u) {
+  // back is true for a strike-back, which never gets Frenzy.
+  function attackOf(s, u, back) {
     var a = CARDS[u.cardId].atk + u.tempAtk + (u.boost || 0) + (u.growth || 0) + (u.carrion || 0) + (u.loyal || 0);
     var spot = tileKind(s, u);
     if (spot === 'blight') a -= 1;
@@ -389,7 +390,8 @@ var Engine = (function () {
     if (spot === 'burn') a += CARDS[u.cardId].emberAtk || 0;
     u.enchants.forEach(function (e) { a += CARDS[e.c].atkBonus + (e.growth || 0); });
     if (hasKw(u, 'Stand together') && nextToAlly(s, u)) a += 1;
-    if (hasKw(u, 'Frenzy') && u.hp < u.maxHp) a += 2;
+    // Frenzy is a charge: +2 on the unit's first attack, at a unit or a summoner, then it's spent for good.
+    if (hasKw(u, 'Frenzy') && !u.frenzySpent && !back) a += 2;
     if (hasKw(u, 'Steadfast') && !(u.owner === s.active && u.walked)) a += 1;
     // Warband doesn't stack with itself.
     if (s.units.some(function (o) { return o !== u && o.owner === u.owner && dist(o, u) === 1 && hasKw(o, 'Warband'); })) a += 1;
@@ -400,7 +402,7 @@ var Engine = (function () {
   function attackAgainst(s, u, t, back) {
     var hunted = !back && t.enchants.some(function (e) { return CARDS[e.c].hunted; }) ? 1 : 0;
     var kindling = tileKind(s, t) === 'burn' ? CARDS[u.cardId].burnHunt || 0 : 0;
-    return attackOf(s, u) + (hasKw(u, 'Hunt') && t.hp < t.maxHp ? 2 : 0) + hunted + (!back && flanked(s, u, t) ? 1 : 0) + kindling;
+    return attackOf(s, u, back) + (hasKw(u, 'Hunt') && t.hp < t.maxHp ? 2 : 0) + hunted + (!back && flanked(s, u, t) ? 1 : 0) + kindling;
   }
   // The far side is one tile on from the target, away from the attacker. A diagonal shot counts along the row, as with Overrun.
   function beyond(a, t) {
@@ -1119,9 +1121,10 @@ var Engine = (function () {
     var a = unitById(s, att.attacker);
     if (!a) { say(s, 'The attack fizzles.'); return; }
     var name = CARDS[a.cardId].name;
-    if (att.missed) { say(s, name + ' misses.'); return; }
+    if (att.missed) { say(s, name + ' misses.'); a.frenzySpent = true; return; }
     var amt = attackOf(s, a);
     if (att.summoner !== undefined) {
+      a.frenzySpent = true;
       var def = s.players[att.summoner];
       def.life -= amt;
       s.fx.push({ summoner: att.summoner, text: '-' + amt });
@@ -1166,6 +1169,8 @@ var Engine = (function () {
       var rr = t.r === a.r ? 0 : t.r > a.r ? 1 : -1, rc = rr ? 0 : t.c > a.c ? 1 : -1, rung = unitAt(s, t.r + rr, t.c + rc);
       if (rung && rung.owner !== a.owner && rung !== b && rung !== over) { strike(rung, name + "'s resonance also hits "); stomped.push(rung); }
     }
+    // Every hit of this attack has had the Frenzy bonus, so it's spent now.
+    a.frenzySpent = true;
     // Only a survivor strikes back, and only if the attacker is within its range. A decoy strikes back before it vanishes.
     var vanish = t && t.hp > 0 && hasKw(t, 'Decoy');
     if (t && t.hp > 0 && !(vanish && attackOf(s, t) === 0)) {

@@ -12,7 +12,7 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 | --- | --- |
 | Stand together | +1 attack while next to an ally |
 | Guard | Adjacent allies take 1 less damage from attacks |
-| Frenzy | +2 attack while damaged |
+| Frenzy | +2 attack on its first attack |
 | Decoy | Adjacent enemies must attack this first; it's removed after one hit |
 | Drain | Heals this unit for the damage it deals |
 | Overrun | Damage beyond what kills a target hits the enemy behind it |

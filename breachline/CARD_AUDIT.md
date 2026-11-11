@@ -83,7 +83,7 @@ Old stats are shown at the old scale. Ability numbers are in the next table.
 | Pride warden Rally | +10 | +1 | |
 | Stand together | +10 | +1 | |
 | Guard | -10 | -1 | |
-| Frenzy | +15 | +2 | |
+| Frenzy | +15 | +2 | Priced as +2 while damaged. Since 2026-11-11 it's +2 on the first attack only |
 | Drain | | | Unchanged, heals what it deals |
 | Grows | +10 / +15 | +1 / +2 | |
 | Regrow | 10 | 1 | |

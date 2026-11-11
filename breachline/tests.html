@@ -311,6 +311,19 @@ function randomField(r, ids) {
   fight = E.applyMove(s, { type: 'attack', unit: bull.uid, target: goblin.uid });
   check('Overrun on a diagonal shot goes along the row', byUid(fight, behind).hp < behind.maxHp && byUid(fight, wrong).hp === wrong.maxHp);
 
+  // Frenzy adds 2 to a unit's first attack only, and never to a strike-back.
+  s = arena(); var raider = put(s, 'raider', 0, 2, 2), sword = put(s, 'sellsword', 1, 1, 2);
+  check('Frenzy hits 2 harder on the first attack', E.hitOn(s, raider, sword) === E.CARDS.raider.atk + 2);
+  fight = E.applyMove(s, { type: 'attack', unit: raider.uid, target: sword.uid });
+  check('Frenzy is spent after that attack', !byUid(fight, sword) && E.attackOf(fight, byUid(fight, raider)) === E.CARDS.raider.atk);
+  s = arena(); var bear = put(s, 'mossback', 1, 1, 2); sword = put(s, 'sellsword', 0, 2, 2);
+  check('a strike-back gets no Frenzy', E.hitOn(s, bear, sword, 0, true) === E.CARDS.mossback.atk);
+  fight = E.applyMove(s, { type: 'attack', unit: sword.uid, target: bear.uid });
+  check('striking back leaves Frenzy unspent', E.attackOf(fight, byUid(fight, bear)) === E.CARDS.mossback.atk + 2);
+  s = arena(); raider = put(s, 'raider', 0, E.backRow(1), 2);
+  fight = E.applyMove(s, { type: 'attackSummoner', unit: raider.uid });
+  check('Frenzy counts against the summoner', fight.players[1].life === E.START_LIFE - E.CARDS.raider.atk - 2 && byUid(fight, raider).frenzySpent);
+
   // Displacement on the lance's second target only clears that hit.
   s = arena(['white', 'blue']); var lancer = put(s, 'lancer', 0, 2, 2), front = put(s, 'giant', 1, 1, 2), rear = put(s, 'giant', 1, 0, 2);
   s.players[1].hand = [{ id: 901, c: 'displacement' }];
