@@ -75,6 +75,14 @@ var Polish = (function () {
     if (LIGHTNING.indexOf(card.id) >= 0) return 'spell-lightning';
     return { W: Math.random() < .5 ? 'spell-vigil' : 'spell-vigil-bell', U: 'spell-gnosis', B: 'spell-dominion', R: 'spell-fire', G: 'spell-genesis' }[card.colour] || null;
   }
+  // The element a thrown spell sounds and looks like, by the same split as its cast sound.
+  function element(card) {
+    if (ICE.indexOf(card.id) >= 0) return 'ice';
+    if (LIGHTNING.indexOf(card.id) >= 0) return 'lightning';
+    return { W: 'vigil', U: 'gnosis', B: 'dominion', R: 'fire', G: 'genesis' }[card.colour] || null;
+  }
+  // A spell that was thrown across the table already made its card sound when it left the hand.
+  var thrown = false;
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
   function unitIn(s, uid) { return s.units.filter(function (u) { return u.uid === uid; })[0]; }
   function lunge(el, dx, dy) {
@@ -99,11 +107,12 @@ var Polish = (function () {
     if (m.type === 'endTurn' && who === human) Sfx.play('end-turn');
     if (m.type === 'move') Sfx.play('unit-move', { gap: 80 });
     if (played && played.type !== 'unit') {
-      Sfx.play('card-play');
+      if (!thrown) Sfx.play('card-play');
       var on = m.target !== undefined ? unitIn(prev, m.target) : null;
       var cast = castOf(played, on && on.owner !== who);
-      if (cast) Sfx.play(cast, { delay: .06 });
+      if (cast) Sfx.play(cast, { delay: thrown ? 0 : .06 });
     }
+    thrown = false;
     // New units arrive in a swirl of light.
     next.units.forEach(function (u) {
       if (unitIn(prev, u.uid)) return;
@@ -287,5 +296,5 @@ var Polish = (function () {
     if (c && !document.querySelector('.app.opening')) Sfx.play('not-allowed', { gap: 120 });
   }, true);
 
-  return { lamp: lamp, sprite: sprite, moved: moved, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
+  return { lamp: lamp, sprite: sprite, moved: moved, element: element, thrown: function () { thrown = true; }, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
 })();

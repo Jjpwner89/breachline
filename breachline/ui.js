@@ -779,17 +779,21 @@
 
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
 
-  // A spell aimed at a tile plays its animation first, then the move resolves and the board redraws.
+  // A spell or instant aimed at a tile, a unit or a summoner is thrown there first, then the move resolves and the board
+  // redraws. A tile spell with its own tile effect looks like that effect; any other takes the look of its element.
+  var LOOK_OF = { fire: 'burn', ice: 'frost', lightning: 'charge', vigil: 'holy', gnosis: 'arcane', dominion: 'blight', genesis: 'thorns' };
   var casting = false;
   function apply(m) {
     if (casting) return;
-    // An instant aimed at a tile (a response with a tile and no unit target) animates like a cast spell.
-    var aimed = (m.type === 'cast' || m.type === 'respond' && m.target === undefined) && m.r !== undefined;
-    var who = actor(), inHand = aimed && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
-    var spell = inHand && E.CARDS[inHand.c], look = spell && spell.aim && (spell.aim.fx || spell.aim.tile);
-    if (look && SpellFX.enabled()) {
+    var who = actor(), thrown = (m.type === 'cast' || m.type === 'respond') && (m.r !== undefined || m.target !== undefined || m.summoner !== undefined);
+    var inHand = thrown && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    var spell = inHand && E.CARDS[inHand.c], el = spell && Polish.element(spell);
+    var look = spell && (spell.type === 'spell' || spell.type === 'instant') && (spell.aim && (spell.aim.fx || spell.aim.tile) || LOOK_OF[el] || 'arcane');
+    var unit = m.target !== undefined ? S.units.filter(function (u) { return u.uid === m.target; })[0] : null;
+    var target = unit ? tileEl(unit.r, unit.c) : m.summoner !== undefined ? $(m.summoner === HUMAN ? 'youStrip' : 'themStrip') : m.r !== undefined ? tileEl(m.r, m.c) : null;
+    if (look && target && SpellFX.enabled()) {
       var from = who === HUMAN ? document.querySelector('#hand .card[data-card="' + m.card + '"]') : $('themStrip');
-      var reach = reachOf(spell, who, m.r, m.c);
+      var onTile = !unit && m.summoner === undefined, reach = onTile && spell.aim ? reachOf(spell, who, m.r, m.c) : [];
       if (who === BOT) announce(m);
       var before = S;
       casting = true;
@@ -797,17 +801,20 @@
       SpellFX.unaim(true);
       showReach();
       if (from && from.classList.contains('card')) from.classList.add('casting');
+      Sfx.play('card-play');
       SpellFX.cast({
-        kind: look, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
-        push: who === 0 ? -1 : 1,
+        kind: look, from: from || $('themStrip'), target: target, wave: !!(spell.aim && spell.aim.wave), volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
+        push: who === 0 ? -1 : 1, gentle: !!unit && unit.owner === who,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
-        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
+        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } },
+        onStage: function (stage, ms) { Sfx.spell(stage, el, ms / 1000); }
       }).then(function () {
         casting = false;
         // A new game started while the spell was in the air: drop this move.
         if (S !== before) return;
+        Polish.thrown();
         resolve(m);
-        [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
+        if (onTile) [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
       });
       return;
     }

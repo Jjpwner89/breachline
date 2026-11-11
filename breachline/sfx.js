@@ -14,6 +14,13 @@ var Sfx = (function () {
     'unit-move': 'unit-move.ogg', 'end-turn': 'end-turn.mp4', 'not-allowed': 'not-allowed.ogg',
     'music-tower-inn': 'music-tower-inn.mp4', 'music-kings-feast': 'music-kings-feast.mp4'
   };
+  // A thrown spell's three stages each have an air layer every spell shares and, for most elements, a sound of its own.
+  var ELEMENTS = ['fire', 'ice', 'lightning', 'vigil', 'gnosis', 'dominion', 'genesis'], STAGES = [];
+  ['charge', 'launch', 'flight'].forEach(function (stage) {
+    ['air'].concat(ELEMENTS).forEach(function (el) { STAGES.push(stage + '-' + el); FILES[stage + '-' + el] = stage + '-' + el + (stage === 'launch' && el === 'fire' ? '.ogg' : '.mp4'); });
+  });
+  // No charge fitted Vigil or Gnosis, nor a launch Gnosis: those stages play the air alone.
+  ['charge-vigil', 'charge-gnosis', 'launch-gnosis'].forEach(function (name) { delete FILES[name]; });
   // How each is played: volume, pitch (playback rate), and a length in seconds after which it fades out.
   var HOW = {
     // Card sounds sit under the combat: hovering a card is a light touch of card on card, drawing a soft slide.
@@ -26,8 +33,12 @@ var Sfx = (function () {
     'spell-vigil': { vol: .55 }, 'spell-vigil-bell': { vol: .45, len: 2.6 }, 'spell-gnosis': { vol: .55 }, 'spell-ice': { vol: .55 }, 'spell-lightning': { vol: .5 },
     'spell-fire': { vol: .55 }, 'spell-dominion': { vol: .9, rate: .55 }, 'spell-genesis': { vol: .6 }, enchant: { vol: .5, rate: .72 },
     equip: { vol: .5 }, curse: { vol: .5 }, heal: { vol: .5 }, 'hit-unit': { vol: .55 }, ward: { vol: .5 },
-    'unit-move': { vol: .5 }, 'end-turn': { vol: .55 }, 'not-allowed': { vol: .6 }
+    'unit-move': { vol: .5 }, 'end-turn': { vol: .55 }, 'not-allowed': { vol: .6 },
+    // The spell stages were levelled alike on the sound board and sit at the impact's volume; the rushing air of a
+    // flight stays under the element.
+    'flight-air': { vol: .38 }
   };
+  STAGES.forEach(function (name) { if (!HOW[name]) HOW[name] = { vol: .55 }; });
   // The two tavern tunes take turns under everything, quietly, from the first click in this page. Some browsers allow
   // sound before any click, so waiting for one keeps a page left open in the background silent. Only one open copy of
   // the game plays music: starting it tells the others to stop.
@@ -52,7 +63,8 @@ var Sfx = (function () {
     }).then(function (buf) { buffers[name] = buf; return buf; }, function () { return null; });
     return loading[name];
   }
-  // A sound asked for again within gap ms is dropped, so a sweep across the hand doesn't stutter.
+  // A sound asked for again within gap ms is dropped, so a sweep across the hand doesn't stutter. o.fadeIn swells it in over
+  // that many seconds; o.fromEnd plays only the file's last seconds, so a sound that builds peaks when it stops.
   function play(name, o) {
     o = o || {};
     if (muted || !FILES[name]) return;
@@ -68,10 +80,13 @@ var Sfx = (function () {
       var vol = (how.vol || 1) * (o.vol === undefined ? 1 : o.vol), len = o.len || how.len;
       src.buffer = buf;
       src.playbackRate.value = (how.rate || 1) * (o.rate || 1);
-      gain.gain.setValueAtTime(vol, t);
-      if (len) { gain.gain.setValueAtTime(vol, t + len * .7); gain.gain.linearRampToValueAtTime(0.0001, t + len); src.stop(t + len + .02); }
+      var from = o.fromEnd ? Math.max(0, buf.duration - o.fromEnd) : 0;
+      if (o.fadeIn) { gain.gain.setValueAtTime(0.0001, t); gain.gain.linearRampToValueAtTime(vol, t + o.fadeIn); }
+      else gain.gain.setValueAtTime(vol, t);
+      if (len) { gain.gain.setValueAtTime(vol, t + len * .7); gain.gain.linearRampToValueAtTime(0.0001, t + len); }
       src.connect(gain).connect(c.destination);
-      src.start(t);
+      src.start(t, from);
+      if (len) src.stop(t + len + .02);
     };
     if (buffers[name]) go(buffers[name]);
     else { var p = load(name); if (p) p.then(go); }
@@ -81,7 +96,7 @@ var Sfx = (function () {
   function warm() {
     if (warmed || muted) return;
     warmed = true;
-    ['button-press', 'button-hover', 'card-hover', 'card-draw', 'card-play', 'page-turn', 'slash', 'unit-summon', 'hit-unit'].forEach(load);
+    ['button-press', 'button-hover', 'card-hover', 'card-draw', 'card-play', 'page-turn', 'slash', 'unit-summon', 'hit-unit'].concat(STAGES).forEach(load);
   }
   document.addEventListener('pointerdown', function () { clicked = true; warm(); music(); }, { once: false, passive: true });
 
@@ -117,11 +132,27 @@ var Sfx = (function () {
     if (musicGain) { musicGain.disconnect(); musicGain = null; }
   }
 
+  // One stage of a thrown spell, layered and overlapping the next: the air drawn in swells to its peak at the launch while
+  // the element's charge rings on past it; the flight's sounds last as long as the throw, plus a little tail into the hit.
+  // el is an element from ELEMENTS, or null for the air alone; secs is the charge's or the flight's length.
+  function spell(stage, el, secs) {
+    if (stage === 'charge') {
+      play('charge-air', { fromEnd: secs + .09, len: secs + .04, gap: 0 });
+      if (el) play('charge-' + el, { len: secs + .15, fadeIn: .08, gap: 0 });
+    } else if (stage === 'launch') {
+      play('launch-air', { len: .7, gap: 0 });
+      if (el) play('launch-' + el, { len: .6, gap: 0 });
+    } else if (stage === 'flight') {
+      play('flight-air', { delay: .05, len: secs + .1, fadeIn: .06, gap: 0 });
+      if (el) play('flight-' + el, { delay: .02, len: secs + .15, fadeIn: .05, gap: 0 });
+    }
+  }
+
   function setMuted(on) {
     muted = !!on;
     try { localStorage.setItem(KEY, muted ? '1' : '0'); } catch (e) {}
     if (!muted) { warm(); music(); } else stopMusic();
     document.querySelectorAll('[data-sound]').forEach(function (b) { b.setAttribute('aria-pressed', muted ? 'false' : 'true'); b.title = muted ? 'Sound is off' : 'Sound is on'; });
   }
-  return { play: play, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
+  return { play: play, spell: spell, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
 })();
