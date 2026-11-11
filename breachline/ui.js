@@ -1118,8 +1118,23 @@
   $('menuBtn').addEventListener('click', function () {
     $('menuNote').textContent = chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : 'If you leave, this battle waits until you begin another.';
     $('menuRestart').hidden = $('menuDecks').hidden = chapterBattle;
-    $('menuMap').hidden = !chapterBattle;
+    $('menuMap').hidden = $('menuQuit').hidden = !chapterBattle;
+    $('menuQuit').textContent = 'Quit the run';
+    $('menuQuit').classList.remove('danger');
     $('menu').showModal();
+  });
+  // Quitting a campaign battle ends the run, so the first press only asks.
+  $('menuQuit').addEventListener('click', function () {
+    var b = $('menuQuit');
+    if (!b.classList.contains('danger')) {
+      b.classList.add('danger');
+      b.textContent = 'End the run for good';
+      $('menuNote').textContent = 'Quitting ends this run, the same as losing this battle.';
+      return;
+    }
+    $('menu').close();
+    Campaign.abandon();
+    Polish.lamp(toCampaign);
   });
   $('menu').addEventListener('click', function (e) { if (e.target.closest('[data-close]')) $('menu').close(); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
