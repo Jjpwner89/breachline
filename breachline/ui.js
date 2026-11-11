@@ -814,7 +814,12 @@
         push: who === 0 ? -1 : 1, gentle: !!unit && unit.owner === who,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
         onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } },
-        onStage: function (stage, ms) { Sfx.spell(stage, el, ms / 1000); }
+        onStage: function (stage, ms) {
+          if (stage !== 'impact') return Sfx.spell(stage, el, ms / 1000);
+          // The spell's own sound lands with it; the board catches up a moment later.
+          var hit = Polish.castOf(spell, !!unit && unit.owner !== who);
+          if (hit) Sfx.play(hit);
+        }
       }).then(function () {
         casting = false;
         // A new game started while the spell was in the air: drop this move.

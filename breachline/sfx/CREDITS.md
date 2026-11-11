@@ -33,7 +33,6 @@ Most sounds here are CC0 (public domain): credit isn't required and is given as 
 | music-tower-inn | RandomMind - Medieval: The Old Tower Inn | Loop_The_Old_Tower_Inn.wav |
 | music-kings-feast | RandomMind - Medieval: King's Feast | Loop_Kings_Feast.wav |
 | spell-vigil | lentikula - Healing Spell Impacts (itch.io) | Healing Spell Impact 1.wav |
-| spell-vigil-bell | VCSL - Tubular Bells 1 | chimes_A#3_pp_rr1.wav |
 | spell-gnosis | VCSL - Wine Glasses | glass1_D#4_Fast_1_Decay.wav |
 | spell-ice | lentikula - Basic Spell Impacts (itch.io) | Ice Spell Impact 3.wav |
 | spell-lightning | LEGIT Audio - Fire Staff Sound Effects | LEGIT_FIR_Fire_Staff 20-Audio.wav |

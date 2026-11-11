@@ -668,15 +668,15 @@ var SpellFX = (function () {
   // Plays a thrown spell. o: { kind: its look, from: element it's thrown from, target: the tile, unit or summoner plate it's
   // aimed at, reach: other tile elements it reaches, wave: true for Cinderwake, shake: element to shake, push: -1 or 1, the
   // screen direction enemies are driven, gentle: true when it lands on the caster's own, onLaunch: called as it leaves the
-  // source, onStage(stage, ms): called as it starts to charge, launches and starts to fly, with the charge's and the
-  // flight's length, for the sound }.
+  // source, onStage(stage, ms): called as it starts to charge, launches, starts to fly (with the charge's and the
+  // flight's length) and hits, for the sound }.
   // Resolves when the animation is done, so the caller can apply the move. Animation frames stop while the page is hidden,
   // so it also gives up after a few seconds rather than hold the game.
   var CHARGE = 600;
   function cast(o) { return Promise.race([play(o), new Promise(function (ok) { setTimeout(ok, 7000); })]); }
   // Cinderfall: a volley thrown from the card. The heavy shot goes to the target and a lighter one to each other
   // tile it reaches; with few of those, stray cinders rain round the target so it always reads as a volley.
-  function volley(src, o) {
+  function volley(src, o, stage) {
     var dst = centre(o.target), shots = [{ to: dst, hit: 'main' }];
     (o.reach || []).filter(Boolean).forEach(function (el) { shots.push({ to: centre(el), hit: 'reach' }); });
     while (shots.length < 4) shots.push({ to: { x: dst.x + rnd(-0.32, 0.32) * dst.w, y: dst.y + rnd(-0.3, 0.3) * dst.h, w: dst.w * 0.5, h: dst.h * 0.5 }, hit: 'cinder' });
@@ -684,7 +684,7 @@ var SpellFX = (function () {
       var from = { x: src.x + (i % 2 ? 1 : -1) * Math.ceil(i / 2) * 14, y: src.y };
       var how = s.hit === 'main' ? { lift: 1.15 } : { lift: rnd(0.65, 1.35), size: s.hit === 'reach' ? 0.8 : 0.6, pace: rnd(0.85, 1.05) };
       return wait(i * 95).then(function () { return flight(from, s.to, o.kind, how); }).then(function () {
-        if (s.hit === 'main') impact(o.kind, s.to); else land(o.kind, s.to, s.hit === 'cinder');
+        if (s.hit === 'main') { stage('impact'); impact(o.kind, s.to); } else land(o.kind, s.to, s.hit === 'cinder');
       });
     }));
   }
@@ -700,9 +700,10 @@ var SpellFX = (function () {
     if (o.onLaunch) o.onLaunch();
     stage('launch');
     stage('flight', flightMs(src, centre(o.target)));
-    if (o.volley) { await volley(src, o); await wait(180); return; }
+    if (o.volley) { await volley(src, o, stage); await wait(180); return; }
     await flight(src, centre(o.target), o.kind);
     var dst = centre(o.target);
+    stage('impact');
     if (o.gentle) { bless(o.kind, dst); await wait(320); return; }
     impact(o.kind, dst);
     var reach = (o.reach || []).filter(Boolean);

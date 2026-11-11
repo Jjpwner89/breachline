@@ -8,7 +8,7 @@ var Sfx = (function () {
     'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.ogg', 'enemy-turn': 'enemy-turn.ogg',
     'button-press': 'button-press.mp4', 'button-hover': 'button-hover.mp4', 'page-turn': 'page-turn.ogg', 'map-step': 'map-step.ogg',
     stamp: 'seal-stamp.ogg', 'coin-drop': 'coin-drop.ogg', 'coin-pile': 'coin-pile.mp4', victory: 'victory.mp4', defeat: 'defeat.mp4', 'defeat-run': 'defeat-run.mp4',
-    'spell-vigil': 'spell-vigil.mp4', 'spell-vigil-bell': 'spell-vigil-bell.mp4', 'spell-gnosis': 'spell-gnosis.mp4', 'spell-ice': 'spell-ice.mp4',
+    'spell-vigil': 'spell-vigil.mp4', 'spell-gnosis': 'spell-gnosis.mp4', 'spell-ice': 'spell-ice.mp4',
     'spell-lightning': 'spell-lightning.mp4', 'spell-fire': 'spell-fire.mp4', 'spell-dominion': 'spell-dominion.ogg', 'spell-genesis': 'spell-genesis.mp4',
     enchant: 'enchant.mp4', equip: 'equip.mp4', curse: 'curse.mp4', heal: 'heal.mp4', 'hit-unit': 'hit-unit.mp4', ward: 'ward.mp4',
     'unit-move': 'unit-move.ogg', 'end-turn': 'end-turn.mp4', 'not-allowed': 'not-allowed.ogg',
@@ -30,7 +30,7 @@ var Sfx = (function () {
     victory: { vol: .6 }, defeat: { vol: .32 }, 'defeat-run': { vol: .55 }, 'coin-drop': { vol: .7 }, 'map-step': { vol: .6 }, 'enemy-turn': { vol: .55 },
     // The spell sounds were levelled alike on the sound board, so they share a volume. Dominion's is a catching flame pitched
     // down into something darker, and an enchantment's finger cymbal is pitched down too.
-    'spell-vigil': { vol: .55 }, 'spell-vigil-bell': { vol: .45, len: 2.6 }, 'spell-gnosis': { vol: .55 }, 'spell-ice': { vol: .55 }, 'spell-lightning': { vol: .5 },
+    'spell-vigil': { vol: .55 }, 'spell-gnosis': { vol: .55 }, 'spell-ice': { vol: .55 }, 'spell-lightning': { vol: .5 },
     'spell-fire': { vol: .55 }, 'spell-dominion': { vol: .9, rate: .55 }, 'spell-genesis': { vol: .6 }, enchant: { vol: .5, rate: .72 },
     equip: { vol: .5 }, curse: { vol: .5 }, heal: { vol: .5 }, 'hit-unit': { vol: .55 }, ward: { vol: .5 },
     'unit-move': { vol: .5 }, 'end-turn': { vol: .55 }, 'not-allowed': { vol: .6 },

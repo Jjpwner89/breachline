@@ -71,14 +71,15 @@ var Polish = (function () {
     if (card.type === 'land' || card.type === 'unit') return null;
     if (card.equipment) return 'equip';
     if (card.type === 'enchant') return card.enemyOnly || onEnemy ? 'curse' : 'enchant';
-    if (ICE.indexOf(card.id) >= 0) return 'spell-ice';
-    if (LIGHTNING.indexOf(card.id) >= 0) return 'spell-lightning';
-    return { W: Math.random() < .5 ? 'spell-vigil' : 'spell-vigil-bell', U: 'spell-gnosis', B: 'spell-dominion', R: 'spell-fire', G: 'spell-genesis' }[card.colour] || null;
+    var el = element(card);
+    return el ? 'spell-' + el : null;
   }
-  // The element a thrown spell sounds and looks like, by the same split as its cast sound.
+  // The element a spell sounds and looks like. Gnosis's spells that deal damage strike like lightning; its control
+  // spells keep the crystal sounds.
   function element(card) {
     if (ICE.indexOf(card.id) >= 0) return 'ice';
     if (LIGHTNING.indexOf(card.id) >= 0) return 'lightning';
+    if (card.colour === 'U' && (card.blast || card.aim && card.aim.hit)) return 'lightning';
     return { W: 'vigil', U: 'gnosis', B: 'dominion', R: 'fire', G: 'genesis' }[card.colour] || null;
   }
   // A spell that was thrown across the table already made its card sound when it left the hand.
@@ -109,8 +110,9 @@ var Polish = (function () {
     if (played && played.type !== 'unit') {
       if (!thrown) Sfx.play('card-play');
       var on = m.target !== undefined ? unitIn(prev, m.target) : null;
-      var cast = castOf(played, on && on.owner !== who);
-      if (cast) Sfx.play(cast, { delay: thrown ? 0 : .06 });
+      // A thrown spell already sounded as it hit.
+      var cast = !thrown && castOf(played, on && on.owner !== who);
+      if (cast) Sfx.play(cast, { delay: .06 });
     }
     thrown = false;
     // New units arrive in a swirl of light.
@@ -296,5 +298,5 @@ var Polish = (function () {
     if (c && !document.querySelector('.app.opening')) Sfx.play('not-allowed', { gap: 120 });
   }, true);
 
-  return { lamp: lamp, sprite: sprite, moved: moved, element: element, thrown: function () { thrown = true; }, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
+  return { lamp: lamp, sprite: sprite, moved: moved, element: element, castOf: castOf, thrown: function () { thrown = true; }, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
 })();
