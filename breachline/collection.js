@@ -40,6 +40,7 @@ var Collection = (function () {
         '<p>' + GameUI.deckNote(pickStarter) + '</p>' +
         '<p class="hint">' + E.deckSize(d.list) + ' cards, ' + units + ' of them units. Its best cards: ' + best.map(function (e) { return esc(E.CARDS[e[0]].name) + ' (' + RNAME[Rarity.of(e[0])].toLowerCase() + ')'; }).join(', ') + '.</p>' +
         '<button type="button" class="btn primary big" ' + act('takeStarter', pickStarter) + '>Take ' + esc(d.name) + '</button></div>' +
+      '<p class="hint">New to the game? <button type="button" class="linkbtn" ' + act('tutorial') + '>Learn how to play</button> first.</p>' +
       '<p class="hint">Played before? <button type="button" class="linkbtn" ' + act('collection', 'save') + '>Load a save file</button> instead.</p></div>', starter);
   }
   K.actions.pickStarter = function (k) { pickStarter = k; starter(); };

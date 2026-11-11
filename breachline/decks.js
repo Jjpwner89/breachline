@@ -167,7 +167,7 @@ var Decks = (function () {
     { id: 'theme-rootfed', name: 'Rootfed herd', note: 'Extra lands, and Rootfed beasts that grow with every Overgrown ruin.',
       list: [['land_g', 11], ['mosshorn', 2], ['earthspeaker', 3], ['stag', 1], ['reedbank', 2], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1], ['boar', 1], ['alderkin', 1], ['owl', 1]] },
     { id: 'theme-thorns', name: 'The Thornwardens', note: 'Thorns, Holding ground and ambushers that control where enemies can go.',
-      list: [['land_g', 10], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 2], ['thornbrake', 1], ['saboteur', 3], ['sapling', 2], ['ironbark', 2], ['grovetender', 1], ['alderkin', 1], ['seedfall', 1]] }
+      list: [['land_g', 10], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 1], ['thornbrake', 1], ['saboteur', 2], ['sapling', 2], ['ironbark', 2], ['grovetender', 2], ['alderkin', 2], ['seedfall', 1]] }
   ];
   function themes() {
     return THEMES.map(function (t) { return { id: t.id, name: t.name, note: t.note, list: t.list.map(function (e) { return e.slice(); }), theme: true }; });

@@ -50,7 +50,7 @@ var Engine = (function () {
     unit('vashkar', 'Vashkar, Who Counts the Dead', 'B', 6, 3, 7, 9, { sub: 'Velunn', keywords: ['Drain'], lifeCost: 2, text: 'Drain: heals for the damage it deals. When summoned, you lose 2 life.' }),
     { id: 'raise', name: 'Raise the dead', type: 'spell', colour: 'B', cost: 3, wants: 1, raise: 3, text: 'Return a unit costing 3 or less from your discard pile to your back row.' },
     { id: 'warrant', name: 'Death warrant', type: 'enchant', colour: 'B', cost: 4, wants: 2, atkBonus: 0, hpBonus: 0, enemyOnly: true, warrant: 2, text: 'Enchant an enemy unit: destroy it at the end of your next turn.' },
-    unit('sapling', 'Walking sapling', 'G', 2, 1, 1, 2, { keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
+    unit('sapling', 'Walking sapling', 'G', 2, 1, 1, 2, { keywords: ['Grows'], growMax: 2, text: 'Grows: +1 attack and +2 health at the start of your turn, up to twice.' }),
     unit('saboteur', 'Thornwarden saboteur', 'G', 2, 1, 2, 3),
     unit('owl', 'Great owl', 'G', 3, 1, 2, 3, { keywords: ['Flying'], text: 'Flying: moves 2 tiles, over other units.' }),
     unit('wayfinder', 'Wayfinder druid', 'G', 3, 1, 2, 4, { extraLand: true, text: 'When summoned: you may play an extra land this turn.' }),
@@ -517,7 +517,8 @@ var Engine = (function () {
       u.walked = false;
       if (u.owner !== s.active) return;
       u.moved = false; u.acted = false;
-      if (hasKw(u, 'Grows') && (u.growth || 0) < 3) {
+      // Grows stops at three unless the card sets a lower limit, as the Walking sapling does.
+      if (hasKw(u, 'Grows') && (u.growth || 0) < (CARDS[u.cardId].growMax || 3)) {
         u.growth = (u.growth || 0) + 1; u.maxHp += 2; u.hp += 2;
         s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+2', good: true });
       }

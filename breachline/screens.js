@@ -89,18 +89,20 @@ var Screens = (function () {
     function later(title, sub) {
       return '<div class="mitem off"><b>' + title + '</b><span>' + sub + '</span></div>';
     }
-    var run = Campaign.current();
+    var run = Campaign.current(), learn = !Tutorial.seen() && !st.battles.length;
     var embs = '<div class="memb">' + Campaign.ORDER.map(function (id) {
       var st = Campaign.STORIES[id], won = Progress.cleared(id);
       return '<img src="art/web/ui/emblem-' + st.colour + '.png" alt="' + esc(st.title) + (won ? ', beaten' : ', not beaten yet') + '" title="' + esc(st.title) + (won ? ': beaten' : '') + '"' + (won ? ' class="won"' : '') + '>';
     }).join('') + '</div>';
     show(HOME + '<button type="button" class="btn snd msnd" data-sound aria-pressed="' + !Sfx.muted() + '" aria-label="Sound"></button><main class="menu"><div class="mcol"><h1>Breachline</h1>' + embs + '<nav class="mlist" aria-label="Main menu">' +
+      (learn ? item('tutorial', 'How to play', 'New here? Tour the table, then win a short battle.', !cont) : '') +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
       (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
-        : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
+        : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont && !learn)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
       item('collection', 'Collection', st.gold + ' gold. Open packs, craft cards and see your record.') +
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Build from the cards you own.') +
+      (learn ? '' : item('tutorial', 'How to play', 'A tour of the table and a short practice battle.')) +
       item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
       later('Multiplayer', 'Coming later.') +
       '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your Claude account for saved progress…</p>') + '</div></main>', menu);
@@ -111,6 +113,7 @@ var Screens = (function () {
 
   actions.exhibition = function () { GameUI.showStart(); };
   actions.testTable = function () { hide(); GameUI.sandbox(); };
+  actions.tutorial = function () { hide(); GameUI.tutorial(); };
 
   // Campaign
 
@@ -655,7 +658,7 @@ var Screens = (function () {
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
-  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
   var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');

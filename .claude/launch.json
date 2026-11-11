@@ -27,6 +27,34 @@
         "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-campaign-a100b8/8f7b2aee-dfe4-4e88-935a-526bf35c065a/scratchpad/site && exec python3 -m http.server 8779 --bind 127.0.0.1"
       ],
       "port": 8779
+    },
+    {
+      "name": "core-dev",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-core-dev-53963d/6469f0be-da82-4af2-bde9-3be528f128b5/scratchpad/site && exec python3 -m http.server 8771 --bind 127.0.0.1"
+      ],
+      "port": 8771
+    },
+    {
+      "name": "breachline-main",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-deck-builder-33a8d7/40e2a450-cdd5-46bc-aa19-726a580be4d8/scratchpad/site && exec python3 -m http.server 8768 --bind 127.0.0.1"
+      ],
+      "port": 8768,
+      "autoPort": false
+    },
+    {
+      "name": "breachline-ui",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-ui-redesign-3f7efc/fd0d4a8a-0a5b-4c85-a184-e95648643d01/scratchpad/site && exec python3 -m http.server 8771 --bind 127.0.0.1"
+      ],
+      "port": 8771
     }
   ]
 }

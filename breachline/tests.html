@@ -324,6 +324,12 @@ function randomField(r, ids) {
   fight = E.applyMove(s, { type: 'attackSummoner', unit: raider.uid });
   check('Frenzy counts against the summoner', fight.players[1].life === E.START_LIFE - E.CARDS.raider.atk - 2 && byUid(fight, raider).frenzySpent);
 
+  // The Walking sapling grows twice; other Grows units still grow three times.
+  s = arena(['green', 'red']); var sapling = put(s, 'sapling', 0, 3, 0), elder = put(s, 'alderelder', 0, 3, 5);
+  for (var k = 0; k < 8 && s.winner === null; k++) s = E.applyMove(s, { type: 'endTurn' });
+  check('a Walking sapling stops at 3 / 6', E.attackOf(s, byUid(s, sapling)) === 3 && byUid(s, sapling).maxHp === 6, E.attackOf(s, byUid(s, sapling)) + ' / ' + byUid(s, sapling).maxHp);
+  check('other Grows units still grow three times', byUid(s, elder).growth === 3);
+
   // Displacement on the lance's second target only clears that hit.
   s = arena(['white', 'blue']); var lancer = put(s, 'lancer', 0, 2, 2), front = put(s, 'giant', 1, 1, 2), rear = put(s, 'giant', 1, 0, 2);
   s.players[1].hand = [{ id: 901, c: 'displacement' }];

@@ -44,6 +44,16 @@ Ambrel is a centre of learning and magic. Its university survived the fall of th
 
 The creator compares this advantage to a society where broader education makes minor practical magic more accessible. This is an analogy for the relationship between learning, capability and prosperity, not a one-to-one equation between literacy and magical power. Personal aptitude still matters. Magical industry need not spread in the same way as ordinary industry, and Ambrel's advantages do not make every resident a mage or give every other settlement the same capabilities.
 
+### Imperial remnants (creator direction, 2026-11-10)
+
+Surviving imperial infrastructure is mostly ordinary remnants: roads, buildings and similar works. This is the baseline for the Empire's physical legacy, rather than widespread remarkable systems still operating beyond present understanding. Exceptional relics remain possible, but are not established by this direction.
+
+### Distant places and surviving knowledge (creator direction, 2026-11-10)
+
+Distant oceans and remote regions can contain creatures and places that present-day educated people regard as sailors' stories. The Empire knew more of these things. Some of that knowledge may survive in an obscure book in Ambrel, but it is not common knowledge now. A surviving record can exist without its contents being widely known or accepted.
+
+This leaves room for both exploration and rediscovery: an encounter may reveal something once documented, while the relevant text remains little known. A specific book, expedition or creature is not established merely by this general direction.
+
 ## Look
 
 The present day is high fantasy. The Bronze Age is only a historical comparison, not the look of the world.
@@ -64,31 +74,79 @@ Lands exist for gameplay only. They play no part in the setting's history or con
 
 Magic is present but its skilled use is not very common. The creator's comparison is reading in the Middle Ages, with a stronger inherited component: learning matters, and so does natural aptitude. Most people can feel magic in some way. Sensing it and being able to use it well are different capabilities.
 
+A person with normal attunement could technically learn a small, ordinary spell, but for most people even this would be very hard. Broad sensitivity to magic therefore coexists with uncommon practical spellcasting. The creator compares this gap between theoretical learnability and practical accomplishment to a highly demanding intellectual discipline. The illustrative “1%” is not a fixed population statistic or a universal intelligence-to-magical-power formula.
+
+Magical practice requires a connection to a non-physical magical plane. The muscle analogy extends to this connection: training develops a capability on that plane. Different beings and orders have different cadences or ways of developing it. This does not yet define the plane's relationship to the gods' realm or settle the disputed ultimate source of magic.
+
+Formal education is the prototypical learning route, with family traditions, apprenticeships, teachers and religious orders also having a place. Vigil and, to some extent, Dominion can teach through religious orders. Self-taught practitioners exist but are less common; learning is not chiefly unguided experimentation. Natural talent can be evident early in childhood, while training still develops capacity and efficiency.
+
 Humans are generally normally attuned. **Tentative:** some species may be unattuned, probably rarely; elves might be more attuned and goblins a little less. These are possible tendencies, not fixed species rankings, numerical modifiers or limits on particular individuals.
 
-**Working model:** people have individual levels of magical energy or capacity. The comparison is muscular strength, but with much wider variation between individuals; the creator's “10–20× as much variation” is a rough sense of scale rather than a fixed numerical power distribution. Learning and technique matter alongside this capacity. How training changes reserves or efficiency, and how energy replenishes, remain open.
+**Working model:** people have individual levels of magical energy or capacity. The comparison is muscular strength, but with much wider variation between individuals; the creator's “10–20× as much variation” is a rough sense of scale rather than a fixed numerical power distribution. Learning and technique matter alongside this capacity. **Training increases both capacity and efficiency.** Food and rest replenish personal magical energy in part. External magic can also be drawn on; the creator's latest practical examples emphasize channeling from a magical stone, an amulet, a wand or a stone set in a wand. A person need not first absorb all that energy into their own reserve. The exact relationship between absorption, replenishment and immediate channeling, and their rates, remains open.
 
-Using magic entails exertion, like using muscles. Severe overexertion or exhausting one's magical energy can be fatal. Treat this as a real limit on effort rather than a universal visual effect; exact warning signs, injury thresholds and recovery times are not yet fixed.
+Using magic entails exertion, like using muscles. Severe overexertion or exhausting one's magical energy can be fatal.
+
+**Typical exhaustion progression:** slight loss of control, then difficulty concentrating, then physical fatigue, then near-complete loss of control. This is a typical progression, not an inevitable sequence for every practitioner. A highly trained mage can maintain control as exhaustion develops, like an athlete maintaining form as their body tires. Training can preserve technique under strain without removing the underlying exertion or the danger of overuse. Exact injury thresholds and recovery times remain open; exhaustion has no mandatory visual effect.
+
+**When control fails:** spells most often fizzle or go astray, but dangerously unpredictable outcomes are also possible. The danger depends in part on the individual's latent power and training. Someone with substantial raw power and little training can become dangerous when control slips; a person with less raw magical aptitude is more likely to have their spell simply fizzle out. These are typical tendencies rather than a fixed outcome for every failed spell.
+
+### Training different kinds of magic (creator direction, 2026-11-10)
+
+The creator's preferred working analogy is different muscles: different kinds of magic can be exercised, and someone can become good at several or all of them. The variation is more extreme than ordinary muscle training. Scholarly technique and more instinctual kinds of magic both have room in the world.
+
+**Exploratory:** alignment, emotional disposition, behaviour and magical affinity may reinforce one another. The creator considered intelligence and moral alignment as explanations, then favoured the different-muscles analogy; neither a direct intelligence-to-power rule nor a universal evilness-to-power rule is established. Soul absorption was raised as a possible way to gain Dominion power, not as a required act or a settled general mechanism. Preserve the emotional and personal dimension while leaving the precise relationship to alignment and nurture open. This discussion does not settle the disputed ultimate source of magic or make divine approval a requirement.
 
 ### Magical energy and industry (creator direction, 2026-11-10)
 
 Magical energy powers magical machinery. Some magical energy also exists in the world, and magical beings create or sustain varying amounts, often small. Some industries rely on imbued items, charged by mages or using magical stones and materials. A practitioner need not stand beside a device continually feeding it.
 
-**The Mountain's Lung burns stored mana from stones to provide energy.** This is the creator's explanation of the selected engine painting. What happens to the stones afterward, whether they can be recharged, and the wider supply of such material remain undecided. This established example does not require all machinery to use the same source.
+**Enchanted possessions are a significant luxury.** The existence of magical industry does not make personally owned enchanted equipment commonplace.
+
+**Using enchanted items:** ordinary people can use enchanted objects without being skilled spellcasters. A magical key or an enhanced sword can be usable by almost anyone. How well someone wields an item, and whether they can control a strongly enchanted one, can depend on their ability. An exceptionally powerful staff may be difficult even for a less powerful mage to control properly. Requirements vary with the item; basic use does not imply mastery of its capabilities.
+
+**Enchantment duration and fuel:** these vary by item. Some enchantments persist indefinitely, such as a permanently enhanced blade; other items consume stored energy and need replenishing, such as a staff using a finite reserve. These are possible designs, not universal rules for all blades or staves. An item's energy source and replenishment method should be established for that item. Replenishing an item does not make the Mountain's Lung's permanently spent mana-stones rechargeable.
+
+**Enduring enchanted places (creator direction, 2026-11-10):** rare places can retain an enchantment for years without an active caster maintaining it. This establishes enduring place enchantments as possible, while leaving an individual site's origin, energy source and limits open.
+
+Living beings generally convert or channel energy into magical work more efficiently than machines. Efficiency is distinct from total output: a large material-fuelled device can still provide more power than a person. The creator's fuel and wattage comparisons describe this shared capacity to do work, not literal coal-to-magic chemistry or fixed conversion rates. Magical energy can support heat and fire, movement, transformation and other workings; it is not exclusively heat or industrial fuel.
+
+**The Mountain's Lung burns stored mana from stones to provide energy.** This is the creator's explanation of the selected engine painting. **After use, these mana-stones are permanently spent.** Their material appearance afterward and their origin remain open; do not turn them into rechargeable batteries. This established example does not require all machinery to use the same source.
+
+Mana-stones are accessible. **Tentative supply influence (creator direction, 2026-11-10):** Ambrel may try to exert some control over them. The extent and means of that control remain undecided; exclusive ownership or a complete monopoly has not been established.
 
 Art: [The Mountain's Lung](art/reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png).
 
-Stored mana in the fiction is distinct from the game's mana rules. This lore does not introduce a player mana bank, a building system or a new card type. The selected painting's possible extra-mana card effect remains for the card-design conversation.
+Stored mana in the fiction is distinct from the game's mana rules. This lore does not introduce a player mana bank, a building system or a new card type. Its gameplay effect belongs in the card-design records.
+
+### Dangerous magic and enforcement (creator direction, 2026-11-10)
+
+Harmful uses of magic are mostly treated like other violence. Special enforcement may be needed to pursue particularly powerful rogue mages; its institutions and methods are not yet defined. Individuals in this world can have more extraordinary capabilities than people in ours. That scope for exceptional personal power does not establish unlimited magic or immunity from consequences.
 
 ### Portals (creator direction, 2026-11-10)
 
-Portals are possible but generally rare. Their range, energy demands, destination requirements and the reason for their rarity remain open. An approved portal painting establishes an instance, not a widespread transport network.
+Portals are possible but generally rare because they require **unusual talent and difficult learned technique**. Their range, energy demands and destination requirements remain open; high energy costs or prepared endpoints have not been established as the reason for their rarity. An approved portal painting establishes an instance, not a widespread transport network.
 
 ### Healing, revival and spirits (creator direction, 2026-11-10)
 
 Healing has substantial capabilities but real limits. The creator's comparison is modern medicine: much can be done, yet people still die despite treatment. Healing does not make death inconsequential.
 
-**Tentative:** some ways of bringing people back may exist, at a cost. Approaches to revival should reflect the factions' morality. Dominion is willing to accept someone returning diminished. What that diminishment entails, the costs and methods of revival, and the other factions' specific positions remain open.
+**Revival and soul loss:** when someone dies, their soul begins to leak away. An almost immediate revival can leave them mostly intact, and an exceptionally skilled healer may restore some lost soul. Time since death matters: the creator expects revival after a day or several days to leave the person diminished.
+
+That loss can affect memory, emotion, independence and bodily integrity or function, in varying degrees. Someone may still be able to participate in life while living with lasting changes. The creator compares that changed functioning to the effects of a traumatic brain injury; this is a character-development analogy, not a fixed set of symptoms for every revived person.
+
+**Soul and body:** they are separate but related, and the body contains some portion of the soul. Bodily recovery and soul recovery are connected aspects of healing; restoring one does not establish that the other is whole. Lost soul can be partially regained, with scarring possible after healing. The exact forms and limits of that scarring remain open. A zombie has both a partial soul and a partial body.
+
+The prospect of a diminished return explains the different approaches to revival. Vigil distinguishes that from immediate rescue: it would attempt an immediate revival, but only if the healer were strong enough to perform it.
+
+| Alignment | Approach to diminished revival |
+| --- | --- |
+| Vigil | Would attempt an immediate revival only if the healer were sufficiently strong. Values the soul and otherwise prefers to let it rest rather than bring the person back diminished. |
+| Gnosis | Experiments with soul magic. **Tentative Ambrel direction:** restoring someone and using magical energy to sustain them. This is an experimental possibility, not established routine treatment. |
+| Dominion | Accepts a diminished return. It would not generally bother adding magical energy to sustain fuller functioning, but may add energy to imbue strength. |
+| Fervor | Would probably not bother with revival; this is a tendency, not an absolute prohibition. |
+| Genesis | Wants death to reclaim the body. |
+
+Exact time thresholds, how far soul restoration can go after a longer delay, the requirements for repairing fatal bodily damage and the other costs of revival remain open. Soul leakage has no established visual form. The possibility of magical energy sustaining a restored person does not establish that every revived person needs an ongoing external supply.
 
 Spirits can be conscious, but are generally distant, weak, less present or diffuse. Think of low magical energy or a weaker presence in the world; do not assume every spirit is a fully vigorous person who merely happens to be transparent. Individual appearances and degrees of presence can vary.
 
@@ -130,6 +188,8 @@ This catalogue brings the selected visual concepts into the setting notes at the
 
 **Scale and rarity (creator direction, 2026-11-05):** truly enormous animals are rare. Their appearance should feel extraordinary and can cause people to stop in awe; they are not commonplace scenery. Ordinary and moderately large wildlife should remain available at believable scales.
 
+**Tentative deep-ocean possibility (creator direction, 2026-11-10):** the immense sea-creature concept shown beside an abbey is too large for that shoreline encounter, and the depiction is rejected. A creature of that scale might belong far out in the ocean as something possibly true but unconfirmed. Its actual existence, nature and scale are not settled; preserve it as a possible rumour or mystery rather than a confirmed coastal species. The wider direction allows old imperial knowledge of distant creatures to survive in an obscure Ambrel text without being common knowledge; no particular record of this creature is established yet.
+
 ### Existing inhabitants
 
 | Kind | Description and place in the world |
@@ -139,11 +199,21 @@ This catalogue brings the selected visual concepts into the setting notes at the
 | Goblins | Small humanoid people already present among the Warhorde and in the Goblin cutter card. Keep individuals expressive and resourceful; the card examples do not establish a single universal goblin culture. |
 | Orcs | Broad, strongly built humanoid people, including raiders and leaders in the existing Fervor cards. Individual roles and philosophies can differ, but orcs are never Vigil. |
 | Giants | Towering humanoid people already represented by the hill giant and Warhorde references. Their societies and relationship with other peoples remain open. |
-| Dragons and drakes | Winged creatures of very different scale. An elder dragon can have an immense presence; the ember drake is a lean, roughly horse-sized flier. Precise taxonomy and intelligence are not yet fixed. |
+| Dragons and drakes | Winged creatures of very different scale. An elder dragon can have an immense presence; the ember drake is a lean, roughly horse-sized flier. Dragons are intelligent, primal beings; see their communication guidance below. Precise taxonomy and whether drakes share that intelligence remain open. |
 | Great owls and great herd beasts | Oversized wild animals, including the great owl and elder herd bull in the current cards. They help establish the wild world's scale without automatically being divine beings. |
 | Walking saplings | Small mobile tree creatures in the current cards. Whether they are young alderkin or a separate form of life is undecided. |
-| Constructs | Made beings rather than a biological people. The Artificers create brass constructs with anatomy shaped by their work; the chorister and the little helper in the lighting experiment are visual references. Personhood and the full range of construction methods remain open. |
+| Constructs | Made beings rather than a biological people. The Artificers create brass constructs with anatomy shaped by their work; the chorister and the little helper in the lighting experiment are visual references. Most follow narrow instructions; adaptability is possible but rare. Personality does not require consciousness. See the construct behaviour guidance below; the full range of construction methods remains open. |
 | Velunn, vampires and undead | Keep these distinct from an ordinary species list. Velunn are the diminished lesser divine beings described above; vampires are rare and subtle; undead are a condition or form of existence, not automatically a separate living race. |
+
+### Dragon intelligence and communication (creator direction, 2026-11-10)
+
+Dragons are certainly intelligent while remaining deeply primal beings. Communication is possible through a connection on a magical or non-physical level; someone must establish that connection rather than assume a dragon can simply be addressed and understood. A successful connection can carry complex ideas, but communicating them is difficult. Intelligence does not make their minds human-like or their behaviour tame. Ordinary speech, the method of connection and whether any bond persists are not established. This direction concerns dragons; the capabilities of all drakes are not yet settled.
+
+### Construct behaviour (creator direction, 2026-11-10)
+
+Most constructs follow narrow instructions. Adaptability is possible but rare. A construct can have some personality while remaining limited to those instructions and without being conscious; personality, adaptability and consciousness are distinct qualities.
+
+The most advanced constructs can be meaningful to a human, while still functioning and relating in ways distinctly unlike a human mind. Do not assume human-equivalent understanding or personhood from an appealing personality. Whether any construct is truly conscious, and the precise limits of the most advanced examples, remain open.
 
 ### Included people: Alderkin
 
@@ -225,7 +295,7 @@ Art: [At the old harbour](art/concepts/tidevault-at-the-old-harbour.png).
 
 **Proposed Artificer design.** A compact repair construct with an open spool-shaped body, a visible thread reel, four bracing legs, two fine manipulators and a small shaded glass sensor. Brass ribs and sparse enamel panels leave functional negative spaces. It is a made tool or being, not a new biological people.
 
-The first scene shows one repairing a ferry sail while a human holds the torn edges steady. Its useful action should explain its anatomy. The creator strongly likes this compact sewing construct and its appealing design. Whether all such constructs are self-directed or conscious remains undecided.
+The first scene shows one repairing a ferry sail while a human holds the torn edges steady. Its useful action should explain its anatomy. The creator strongly likes this compact sewing construct and its appealing design. Apply the general construct guidance: narrow instructions are the norm, adaptability is rare, and an appealing personality does not establish consciousness. This design has not been assigned an exceptional level of autonomy.
 
 Art: [Mending the sail](art/concepts/spindlejack-mending-the-sail.png).
 
@@ -328,10 +398,10 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 1. **Names:** the gods and the continents still need names. They can be longer than one word.
 2. **The snap:** which of the ideas above, if any, is the true cause of the Cataclysm?
 3. **Title:** Breachline is still a working title, and nothing in the setting explains it yet.
-4. **Personal magic:** how energy replenishes, what training changes, and the limits and warning signs of overexertion. Species differences remain tentative.
-5. **Stored energy:** the origin and availability of magical materials, and whether spent mana-stones are consumed, permanently exhausted or rechargeable. The Mountain's Lung's use of stored mana is established.
-6. **Portals:** what makes them rare, where they can connect and what they cost.
-7. **Revival and spirits:** the costs of return, what being diminished means, and each faction's moral limits; the extent of a spirit's agency remains open.
+4. **Personal magic:** recovery rates, the relationship between replenishment and external channeling, and the injury thresholds of overexertion. The typical exhaustion progression, the ability of highly trained mages to maintain control, and the greater danger of uncontrolled raw power are established above. Training increases capacity and efficiency; species differences and the precise relationship between magic and alignment remain tentative.
+5. **Stored energy:** the origin of magical materials, the details of their trade and Ambrel's possible partial control, and the behaviour of materials other than the Mountain's Lung's permanently spent mana-stones. Mana-stones remain accessible.
+6. **Portals:** where they can connect and what they cost. Their rarity comes from unusual talent and difficult learned technique.
+7. **Revival and spirits:** exact time thresholds and limits of partial soul restoration, the relationship between bodily repair and soul recovery, and the forms of lasting scarring. The alignments' approaches to diminished revival are established above, with Ambrel's sustaining experiments tentative. Vigil permits an immediate revival attempt only by a sufficiently strong healer. Costs, requirements, the extent of a spirit's agency and its relationship to soul loss also remain open.
 
 ## Proposed links between cards
 
