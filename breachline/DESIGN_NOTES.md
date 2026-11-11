@@ -134,6 +134,7 @@ Five colours sit above factions as alignments, with several factions inside each
 - **Campaign** is the main way to play. Its picks, Claude's assumptions and balance are in `CAMPAIGN.md`. Cutscenes are wanted later, so don't build them until asked.
 - **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by type, colour and faction.
 - **Multiplayer** isn't built.
+- **How to play (2026-11-11):** a tutorial in `tutorial.js` and `tutorial.css`. Part 1 tours the battle table; part 2 is a set battle on turn 3 where the player plays a land, summons a Temple cleric, attacks, moves the Sunmane lancer, ends the turn, and strikes the summoner to win. Each step allows only the move it teaches, and the enemy's one turn is scripted. It never pays gold or saves. New players see it first on the main menu and as a link on the starter pick; once finished or left, it moves down the menu. Whether it's been seen is kept in the browser, per viewer.
 - **Progression:** a free starter, packs, a collection with counts, crafting and prestige replays, decided on 2026-11-10 and waiting for the new board. Cards picked in a campaign carry over only if you win it. All of it is in `PROGRESSION.md`.
 - New modes add a card pool in `Decks.pool` in `decks.js` rather than changing the builder.
 
@@ -292,7 +293,7 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 - **Branches:** Claude sessions work in worktrees under `.claude/worktrees/`, each on its own branch. Merge finished work into `main` promptly so the others stay current.
 - **Testing:** Node isn't installed on this Mac. Run engine simulations with `/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc`, and open `tests.html` in a browser for the checks.
 - **Preview:** Python's web server can't serve directly from the Documents folder, so previews run from a temporary copy. The entries in `.claude/launch.json` point to old temporary folders.
-- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts, `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db`, `user` and `downloads` in its capabilities, and always publish to the same page: players' collections live in that page's database.
+- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts and stylesheets (`tutorial.js` and `tutorial.css` among them), `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db`, `user` and `downloads` in its capabilities, and always publish to the same page: players' collections live in that page's database.
 - **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
 - **Interface art:** the paintings live in `art/ui/`. Run `swift art/build-ui.swift` after replacing one; it crops, tiles and resizes them into `art/web/ui/`, which the game uses. Publish `art/web/ui/` with the rest of `art/web/`.
 

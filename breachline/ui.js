@@ -231,7 +231,11 @@
   function refreshStart() { if (!$('start').hidden) renderStart(); Screens.redraw(); }
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
-  function humanMoves() { return S.winner === null && actor() === HUMAN ? E.legalMoves(S) : []; }
+  function humanMoves() {
+    var ms = S.winner === null && actor() === HUMAN ? E.legalMoves(S) : [];
+    // The tutorial offers only the move its current step teaches.
+    return S.tutorial ? ms.filter(Tutorial.allows) : ms;
+  }
   function unitById(uid) { return S.units.filter(function (u) { return u.uid === uid; })[0]; }
   function cardOf(id) {
     var h = S.players[HUMAN].hand.filter(function (i) { return i.id === id; })[0];
@@ -545,7 +549,8 @@
   }
 
   function resultHtml() {
-    if (S.winner === null) return '';
+    // The tutorial's coach says its own goodbye.
+    if (S.winner === null || S.tutorial) return '';
     var txt = S.winner === 'draw' ? 'A draw' : S.winner === HUMAN ? 'You win' : 'You lose';
     var ended = Campaign.ended(), next = !chapterBattle ? '' : S.winner === 'draw' ? 'Fight it again' : S.winner !== HUMAN ? 'Continue' : ended ? 'Continue' : 'Choose a card';
     var note = chapterBattle && S.winner === 'draw' ? ' Nobody holds the field, so this battle is fought again.' : chapterBattle && S.winner !== HUMAN ? ' Your run ends here.' : '';
@@ -766,6 +771,7 @@
     log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + esc(l.text) + '</div>'; }).join('');
     log.scrollTop = log.scrollHeight;
     floats();
+    if (S.tutorial) Tutorial.sync();
   }
 
   // Which other tiles a spell aimed at (r, c) reaches, as the engine's castAt resolves it.
@@ -783,6 +789,7 @@
   var casting = false;
   function apply(m) {
     if (casting) return;
+    if (S.tutorial && actor() === HUMAN && !Tutorial.allows(m)) { Sfx.play('not-allowed', { gap: 120 }); return render(); }
     // An instant aimed at a tile (a response with a tile and no unit target) animates like a cast spell.
     var aimed = (m.type === 'cast' || m.type === 'respond' && m.target === undefined) && m.r !== undefined;
     var who = actor(), inHand = aimed && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
@@ -839,7 +846,7 @@
   // A battle pays once, when it ends. The key rides on the state, so reloading a finished battle doesn't pay it again.
   var payout = null;
   function reward() {
-    if (sandbox || !S || S.winner === null) return null;
+    if (sandbox || !S || S.winner === null || S.tutorial) return null;
     var run = chapterBattle ? Campaign.current() : null, story = run ? run.story : null;
     S.payKey = S.payKey || S.seed + '.' + S.firstPlayer;
     payout = Progress.battle({
@@ -855,7 +862,7 @@
     if (m.type === 'summon' || m.type === 'move' || m.r !== undefined) flash = [m.r, m.c]; else flash = null;
     var prev = S;
     S = E.applyMove(S, m);
-    if (!sandbox) tally(prev, m);
+    if (!sandbox && !S.tutorial) tally(prev, m);
     if (S.winner !== null && prev.winner === null) reward();
     if (chapterBattle) {
       if (S.winner !== null) {
@@ -875,7 +882,8 @@
   function schedule() {
     if (sandbox || S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
-    if (modelOn()) modelStep(token);
+    if (S.tutorial) playNext(token, function () { return Tutorial.enemyMove(S); });
+    else if (modelOn()) modelStep(token);
     else playNext(token, botMove);
   }
 
@@ -892,7 +900,7 @@
     }, BOT_DELAY);
   }
 
-  function modelOn() { return oppPlayer !== 'bot' && !!sample && !modelOff; }
+  function modelOn() { return oppPlayer !== 'bot' && !!sample && !modelOff && !(S && S.tutorial); }
 
   // The model makes one call for each of its turns, then the plan plays out a move at a time.
   // Opening hands and responses are one call each. Any failure hands that decision to the scripted bot, so a game never stalls.
@@ -1087,7 +1095,7 @@
   });
   function doAction(d) {
     if (d.move) return apply(d.move);
-    if (d.ui === 'new') return sandbox ? startSandbox() : start();
+    if (d.ui === 'new') return S && S.tutorial ? startTutorial() : sandbox ? startSandbox() : start();
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
     if (d.ui === 'campaign') return toCampaign();
@@ -1098,6 +1106,7 @@
     if (d.ui === 'noAbility') { sel.ability = false; sel.abUnit = null; }
     if (d.ui === 'relic') sel = { kind: 'relic', id: d.id };
     if (d.ui === 'pick') sel = { kind: 'card', id: d.id };
+    if (d.ui === 'skip' && S.tutorial && !Tutorial.allows({ type: 'endTurn' })) { Sfx.play('not-allowed', { gap: 120 }); return render(); }
     if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
     render();
   }
@@ -1116,8 +1125,9 @@
     if (b) setDrawer(b.getAttribute('aria-expanded') === 'true' ? null : b.dataset.panel);
   });
   $('menuBtn').addEventListener('click', function () {
-    $('menuNote').textContent = chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : 'If you leave, this battle waits until you begin another.';
-    $('menuRestart').hidden = $('menuDecks').hidden = chapterBattle;
+    $('menuNote').textContent = chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : S.tutorial ? 'Restart begins the tutorial again. You can also find it on the main menu.' : 'If you leave, this battle waits until you begin another.';
+    $('menuRestart').hidden = chapterBattle;
+    $('menuDecks').hidden = chapterBattle || !!S.tutorial;
     $('menuMap').hidden = $('menuQuit').hidden = !chapterBattle;
     $('menuQuit').textContent = 'Quit the run';
     $('menuQuit').classList.remove('danger');
@@ -1166,6 +1176,7 @@
   }
   // The start screen is the exhibition setup. A battle in progress waits here until a new one begins.
   function showStart(mine) {
+    leaveTutorial();
     runToken++;
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
@@ -1180,6 +1191,7 @@
     $('begin').focus();
   }
   function toMenu() {
+    leaveTutorial();
     runToken++;
     stopThinking();
     $('app').hidden = true;
@@ -1187,6 +1199,7 @@
     Screens.menu();
   }
   function toCampaign() {
+    leaveTutorial();
     runToken++;
     stopThinking();
     $('app').hidden = true;
@@ -1250,11 +1263,28 @@
     $('turnBanner').innerHTML = '';
     $('debugBtn').hidden = !(debugOn && modelOn());
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
+    if (!S.tutorial) Tutorial.stop();
     var opening = S.players[HUMAN].hand[0];
     if (opening && S.winner === null) showCard(opening.c, 'In your hand');
     if (!state) Sfx.play('shuffle');
     render();
     schedule();
+  }
+
+  // The tutorial is a set battle that never pays or saves. Leaving it drops the battle, so the menu has nothing to continue.
+  function startTutorial() {
+    chapterBattle = false;
+    sandbox = false;
+    start(Tutorial.build());
+    Tutorial.begin({
+      state: function () { return S; }, sel: function () { return sel; }, render: render,
+      restart: function () { Polish.lamp(startTutorial); }, leave: function () { Polish.lamp(toMenu); }
+    });
+  }
+  function leaveTutorial() {
+    if (!S || !S.tutorial) return;
+    Tutorial.stop();
+    S = null;
   }
 
   // The test table starts from the last exhibition decks with both opening hands kept, then opens the card picker.
@@ -1333,12 +1363,12 @@
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
     deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return DECK_NOTES[k]; },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
-    showStart: showStart, playChapter: playChapter, sandbox: startSandbox,
+    showStart: showStart, playChapter: playChapter, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },
-    inProgress: function () { return !!S && S.winner === null && !chapterBattle; },
+    inProgress: function () { return !!S && S.winner === null && !chapterBattle && !S.tutorial; },
     resume: function () { $('app').hidden = false; render(); schedule(); }
   };
-  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S, chapter: chapterBattle, sandbox: sandbox }; });
+  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S && S.tutorial ? null : S, chapter: chapterBattle, sandbox: sandbox }; });
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
