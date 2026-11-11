@@ -105,7 +105,7 @@
     carrier: { line: 'The wounded remember who brought the water.' },
     cub: { line: 'Every cub learns to roar before learning why.' },
     clanraiders: { line: 'Last one over the wall buys the drinks.' },
-    berserker: { line: 'Nobody has ever told her to stop twice.' },
+    berserker: { line: 'Nobody has ever told him to stop twice.' },
     captain: { line: 'We chose him at dawn. We can choose again by dusk.' },
     decoy: { line: 'Your aim was perfect.' },
     scholar: { line: 'She asked for one more candle. That was in the spring.' },

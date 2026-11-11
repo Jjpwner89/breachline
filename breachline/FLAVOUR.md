@@ -158,7 +158,7 @@ The creator liked these as a group and didn't object to any. They aren't tied to
 | Dominion | Ashen Court noble | She has never raised her voice. No one has needed her to. |
 | Dominion | Raise the dead | Get up. You're still useful. |
 | Fervor | Cinder Clan raiders | Last one over the wall buys the drinks. |
-| Fervor | Berserker | Nobody has ever told her to stop twice. |
+| Fervor | Berserker | Nobody has ever told him to stop twice. |
 | Genesis | Elder Herd beast | The herd doesn't go around. |
 | Genesis | Shifting forest | The path was here yesterday. |
 | Genesis | Overgrown ruin | Something green is growing through the throne room floor. |
