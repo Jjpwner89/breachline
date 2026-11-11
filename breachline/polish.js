@@ -55,15 +55,18 @@ var Polish = (function () {
   // Combat. Which painting and sound a blow gets depends on who struck it.
   var BEASTS = ['cub', 'owl', 'bull', 'boar', 'mossback', 'herdmother', 'ridgewolves', 'lynx', 'stag', 'tortoise', 'salamander', 'drake', 'rimedrake', 'dragon', 'rats',
     'reedcrown', 'coalback', 'slateprowler', 'mosshorn', 'lanner', 'lioness'];
+  // Ranged casters and the focus-rifle marksman shoot magic, a heavy shot rather than a bowstring.
+  var MAGIC = ['conjurer', 'arcanist', 'ilvane', 'wardwright', 'rimecaller', 'marksman'];
   function blowOf(card) {
     if (!card) return 'slash';
     var kw = card.keywords || [];
+    if (MAGIC.indexOf(card.id) >= 0) return 'magic';
     if (kw.indexOf('Ranged') >= 0 || kw.indexOf('Longshot') >= 0) return 'arrow';
     if (/spear|lance|pike|glaive|hunter|outrider/i.test(card.name)) return 'spear';
     if (kw.indexOf('Stomp') >= 0 || /giant|colossus|bull|hulk|tortoise|golem|walker|chieftain|bear/i.test(card.name) || card.atk >= 6) return 'crush';
     return 'slash';
   }
-  var SHEET_OF = { slash: 'slash', spear: 'pierce', arrow: 'pierce', crush: 'crush' };
+  var SHEET_OF = { slash: 'slash', spear: 'pierce', arrow: 'pierce', magic: 'pierce', crush: 'crush' };
   // A card's cast sound: spells sound like their alignment, with Gnosis's cold spells and the lightning spells set apart.
   // Equipment has its own; an enchantment chimes on your own unit and turns cold on an enemy's.
   var ICE = ['frost', 'rimebolt', 'frostbreak', 'whitemorning'], LIGHTNING = ['stormstrike', 'brightlance', 'harmonic'];
@@ -151,7 +154,7 @@ var Polish = (function () {
           return;
         }
         var t = tileEl(f.r, f.c);
-        if (t) { var b = box(t); sprite(SHEET_OF[blow], b.x, b.y, Math.max(b.w, b.h) * 1.35, { rot: blow === 'arrow' ? (f.r < (src ? src.r : f.r) ? -90 : 90) : 0 }); }
+        if (t) { var b = box(t); sprite(SHEET_OF[blow], b.x, b.y, Math.max(b.w, b.h) * 1.35, { rot: blow === 'arrow' || blow === 'magic' ? (f.r < (src ? src.r : f.r) ? -90 : 90) : 0 }); }
         // A blow lands with the weapon's sound and a thud under it; when Guard, a ward or an instant took some of it, an anvil
         // rings instead of the thud. Damage from a spell is just the thud.
         var tgt = att && f.uid === att.target ? unitIn(prev, att.target) : null;

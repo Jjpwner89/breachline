@@ -1,17 +1,19 @@
 // Sound. Each moment has one file in sfx/, listed in sfx/CREDITS.md. Sounds load on first use and play through Web Audio,
-// so the summoner hit can be pitched down and long files trimmed. Two tavern tunes play quietly underneath. A muted table
+// so a sound can be pitched, layered and long files trimmed. Two tavern tunes play quietly underneath. A muted table
 // stays muted between visits.
 var Sfx = (function () {
   var FILES = {
     'card-draw': 'card-draw.ogg', 'card-hover': 'card-hover.mp4', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
-    'unit-summon': 'unit-summon.ogg', slash: 'attack-slash.mp4', spear: 'attack-spear.ogg', arrow: 'attack-arrow.mp4', crush: 'attack-crush.ogg',
-    'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.ogg', 'enemy-turn': 'enemy-turn.ogg',
+    'unit-summon': 'unit-summon.mp4', slash: 'attack-slash.mp4', spear: 'attack-spear.mp4', arrow: 'attack-arrow.mp4', magic: 'attack-magic.mp4',
+    crush: 'attack-crush.ogg',
+    'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.mp4', 'enemy-turn': 'enemy-turn.ogg',
     'button-press': 'button-press.mp4', 'button-hover': 'button-hover.mp4', 'page-turn': 'page-turn.ogg', 'map-step': 'map-step.ogg',
-    stamp: 'seal-stamp.ogg', 'coin-drop': 'coin-drop.ogg', 'coin-pile': 'coin-pile.mp4', victory: 'victory.mp4', defeat: 'defeat.mp4', 'defeat-run': 'defeat-run.mp4',
+    stamp: 'seal-stamp.ogg', 'coin-drop': 'coin-drop.mp4', 'coin-pile': 'coin-pile.mp4', victory: 'victory.mp4', 'level-up': 'level-up.mp4', defeat: 'defeat.mp4', 'defeat-run': 'defeat-run.mp4',
     'spell-vigil': 'spell-vigil.mp4', 'spell-gnosis': 'spell-gnosis.mp4', 'spell-ice': 'spell-ice.mp4',
     'spell-lightning': 'spell-lightning.mp4', 'spell-fire': 'spell-fire.mp4', 'spell-dominion': 'spell-dominion.ogg', 'spell-genesis': 'spell-genesis.mp4',
+    'impact-fire': 'impact-fire.mp4', 'impact-lightning': 'impact-lightning.mp4', 'impact-genesis': 'impact-genesis.mp4',
     enchant: 'enchant.mp4', equip: 'equip.mp4', curse: 'curse.mp4', heal: 'heal.mp4', 'hit-unit': 'hit-unit.mp4', ward: 'ward.mp4',
-    'unit-move': 'unit-move.ogg', 'end-turn': 'end-turn.mp4', 'not-allowed': 'not-allowed.ogg',
+    'unit-move': 'unit-move.mp4', 'end-turn': 'end-turn.mp4', 'not-allowed': 'not-allowed.ogg',
     'music-tower-inn': 'music-tower-inn.mp4', 'music-kings-feast': 'music-kings-feast.mp4'
   };
   // A thrown spell's three stages each have an air layer every spell shares and, for most elements, a sound of its own.
@@ -25,9 +27,10 @@ var Sfx = (function () {
   var HOW = {
     // Card sounds sit under the combat: hovering a card is a light touch of card on card, drawing a soft slide.
     'card-hover': { vol: .22 }, 'card-draw': { vol: .4 }, 'card-play': { vol: .5 }, 'card-flip': { vol: .5 }, shuffle: { vol: .5 },
-    'button-hover': { vol: .3 }, 'button-press': { vol: .6 }, slash: { len: .7 }, 'summoner-hit': { rate: .88 },
-    // Victory is a full gong; a lost battle is a sad phrase, quieter outside the campaign, where the run ends with it.
-    victory: { vol: .6 }, defeat: { vol: .32 }, 'defeat-run': { vol: .55 }, 'coin-drop': { vol: .7 }, 'map-step': { vol: .6 }, 'enemy-turn': { vol: .55 },
+    'button-hover': { vol: .3 }, 'button-press': { vol: .6 }, slash: { len: .7 }, magic: { vol: .8 },
+    // Victory is a win jingle and a level-up (none yet) an achievement jingle. A battle lost outside the campaign is a
+    // quiet lose jingle; a lost campaign battle, which ends the run, a sad phrase.
+    victory: { vol: .6 }, 'level-up': { vol: .6 }, defeat: { vol: .32 }, 'defeat-run': { vol: .55 }, 'coin-drop': { vol: .7 }, 'map-step': { vol: .6 }, 'enemy-turn': { vol: .55 },
     // The spell sounds were levelled alike on the sound board, so they share a volume. Dominion's is a catching flame pitched
     // down into something darker, and an enchantment's finger cymbal is pitched down too.
     'spell-vigil': { vol: .55 }, 'spell-gnosis': { vol: .55 }, 'spell-ice': { vol: .55 }, 'spell-lightning': { vol: .5 },
@@ -36,8 +39,12 @@ var Sfx = (function () {
     'unit-move': { vol: .5 }, 'end-turn': { vol: .55 }, 'not-allowed': { vol: .6 },
     // The spell stages were levelled alike on the sound board and sit at the impact's volume; the rushing air of a
     // flight stays under the element.
-    'flight-air': { vol: .38 }
+    'flight-air': { vol: .38 },
+    'impact-fire': { vol: .55 }, 'impact-lightning': { vol: .5 }, 'impact-genesis': { vol: .55 }
   };
+  // Fire, lightning and Genesis land with a blow under the spell's own sound; lightning's crackle comes just after the
+  // strike.
+  var LAYERS = { 'spell-fire': ['impact-fire', 0], 'spell-lightning': ['impact-lightning', .25], 'spell-genesis': ['impact-genesis', 0] };
   STAGES.forEach(function (name) { if (!HOW[name]) HOW[name] = { vol: .55 }; });
   // The two tavern tunes take turns under everything, quietly, from the first click in this page. Some browsers allow
   // sound before any click, so waiting for one keeps a page left open in the background silent. Only one open copy of
@@ -90,13 +97,15 @@ var Sfx = (function () {
     };
     if (buffers[name]) go(buffers[name]);
     else { var p = load(name); if (p) p.then(go); }
+    var layer = LAYERS[name];
+    if (layer) play(layer[0], { delay: (o.delay || 0) + layer[1], vol: o.vol, gap: 0 });
   }
   // Browsers only allow sound after a click, so the common sounds are fetched then.
   var warmed = false;
   function warm() {
     if (warmed || muted) return;
     warmed = true;
-    ['button-press', 'button-hover', 'card-hover', 'card-draw', 'card-play', 'page-turn', 'slash', 'unit-summon', 'hit-unit'].concat(STAGES).forEach(load);
+    ['button-press', 'button-hover', 'card-hover', 'card-draw', 'card-play', 'page-turn', 'slash', 'unit-summon', 'hit-unit', 'impact-fire', 'impact-lightning', 'impact-genesis'].concat(STAGES).forEach(load);
   }
   document.addEventListener('pointerdown', function () { clicked = true; warm(); music(); }, { once: false, passive: true });
 
