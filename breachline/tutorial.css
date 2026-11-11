@@ -1,0 +1,24 @@
+/* The tutorial coach: a parchment note pinned over the table, and a gold ring round whatever it's talking about. */
+.cring { position: fixed; z-index: 35; pointer-events: none; border: 2px solid var(--gold-pale); border-radius: 8px; box-shadow: 0 0 0 3px rgba(208, 164, 72, .45), 0 0 18px 4px rgba(240, 214, 140, .45); transition: left .25s, top .25s, width .25s, height .25s; }
+.cring.none { display: none; }
+.cshade { position: fixed; z-index: 35; pointer-events: none; background: rgba(10, 6, 3, .5); transition: left .25s, top .25s, width .25s, height .25s; }
+.cring[hidden], .coach[hidden], .cshade[hidden] { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .cring:not(.none) { animation: cring 1.6s ease-in-out infinite alternate; }
+  @keyframes cring { to { border-color: #fff4d0; box-shadow: 0 0 0 3px rgba(208, 164, 72, .7), 0 0 26px 7px rgba(240, 214, 140, .6); } }
+}
+.coach { position: fixed; z-index: 36; width: min(360px, calc(100vw - 32px)); padding: 16px 20px 14px; color: var(--card-ink); background: none; border: 1px solid transparent; border-image: url("art/web/ui/panel.png") 60 fill / 22px / 0 stretch; filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .75)); transition: left .25s, top .25s; }
+.coach .ceyebrow { margin: 0 0 2px; display: flex; justify-content: space-between; gap: 10px; font: 600 13px/1.2 var(--display); letter-spacing: .06em; color: var(--card-soft); }
+.coach h2 { font-size: 23px; line-height: 1.1; margin: 0 0 6px; color: var(--crimson-deep); }
+.coach .ctext { margin: 0 0 10px; font: 15px/1.38 var(--serif); }
+.coach .cbtns { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.coach .cbtns .btn { min-height: 34px; padding: 4px 16px; font-size: 16px; }
+.coach .linkbtn { margin-left: auto; color: var(--card-soft); }
+.coach .cdo { margin: 0; position: absolute; left: 20px; bottom: 15px; font: italic 600 14px/34px var(--serif); color: var(--crimson); }
+.coach.doing .cbtns { min-height: 34px; }
+.coach.last h2 { font-size: 28px; }
+@media (max-width: 820px) {
+  .coach { padding: 12px 16px 10px; }
+  .coach h2 { font-size: 20px; }
+  .coach .ctext { font-size: 14px; }
+}
