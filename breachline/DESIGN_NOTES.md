@@ -7,6 +7,7 @@ Each topic has one home:
 - **Art:** the `art-direction` skill in `.claude/skills/`
 - **Flavour text:** the `flavor-text` skill, with lines in `FLAVOUR.md`
 - **Campaign:** `CAMPAIGN.md`
+- **Progression:** `PROGRESSION.md`, for rarity, packs, the collection, currency and saving
 - **Cards:** `NEW_CARDS.md`, `CARD_AUDIT.md` and `CARD_PROPOSALS.md`
 
 Keep only current decisions. When one changes, edit or delete the old text instead of adding a correction. Record feedback at the size it was given, so a comment on one card or one batch doesn't become a rule for everything.
@@ -129,8 +130,8 @@ Five colours sit above factions as alignments, with several factions inside each
 
 - **Campaign** is the main way to play. Its picks, Claude's assumptions and balance are in `CAMPAIGN.md`. Cutscenes are wanted later, so don't build them until asked.
 - **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by type, colour and faction.
-- **Multiplayer** would get cards from packs. It isn't built.
-- **Unlocks:** the campaign unlocks cards gradually by winning, picking one of several in the style of Slay the Spire. Whether those unlocks carry over to other modes is undecided.
+- **Multiplayer** isn't built.
+- **Progression:** a free starter, packs, a collection with counts, crafting and prestige replays, decided on 2026-11-10 and waiting for the new board. Cards picked in a campaign carry over only if you win it. All of it is in `PROGRESSION.md`.
 - New modes add a card pool in `Decks.pool` in `decks.js` rather than changing the builder.
 
 ## The Claude opponent
@@ -175,7 +176,9 @@ Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balanc
 
 After the move to 30-card decks, 2026-11-10, from 6,000 starter games and 750 games per theme deck against the starters: Vigil 53%, Fervor 45%, Gnosis 47%, Dominion 53% and Genesis 52%. Gnosis needed a third Street conjurer and Cloistered scholar to stay above 45%. Theme decks moved within a few points of their 24-card results, and Winter glyphs is still the weakest at 41%. Players run out of cards in 0.4% of games, down from 2%. Campaign chapters moved by up to 10 points either way, and Vigil's early chapters got easier.
 
-Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged (re-run that day: 49%, 46%, 45%, 55% and 55%).
+Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged.
+
+Starter round-robin for progression, 2026-11-10, from 20,000 games (1,000 per pairing from each seat): Vigil 54%, Fervor 46%, Gnosis 47%, Dominion 53% and Genesis 50%, all inside the target, and the first player wins 48%. The most lopsided pairings are Dominion over Gnosis (59%), Gnosis over Fervor (58%) and Vigil over Gnosis (58%). None is a trap as a free first pick.
 
 Balance run for cards 104 to 191, 2026-11-10, from 3,000 games of random one-colour decks and 5,000 games of theme decks:
 - **No new card stands above the best old ones.** Within its colour, the strongest new cards are Slagheart hulk, Cinderhook axe, Elderwood stag and Stormglass glaive, at 8 to 11 points above their colour's average; the best old cards sit at 15 to 17.
@@ -224,7 +227,6 @@ Worth playtesting:
 - **Touchstones:** books, films, games or paintings with the feeling you want.
 - **Older red cards:** should they come down too?
 - **Worn-down defenders:** is the resting-unit fix wanted?
-- **Unlocks:** do campaign unlocks carry over?
 - **Campaign map:** Claude drew a fixed route without asking whether you want branching paths.
 - **Cards:** the open questions in `NEW_CARDS.md`.
 - **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
