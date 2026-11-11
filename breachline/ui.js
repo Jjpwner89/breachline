@@ -265,6 +265,16 @@
 
   function sym(colour) { return '<svg aria-hidden="true"><use href="#sym-' + colour + '"/></svg>'; }
 
+  // Each summoner's medallion shows a painting from their alignment inside a bronze ring.
+  var PORTRAIT = { W: 'lancer', R: 'warchief', U: 'conjurer', B: 'noble', G: 'wayfinder', N: 'youngsummoner' };
+  // Life is a wax seal with the number and a rail of nails, one per point. A nail lost since the last redraw is pulled out.
+  var lifeSeen = {};
+  function lifeHtml(pi, p) {
+    var was = lifeSeen[pi] === undefined ? p.life : lifeSeen[pi], n = Math.max(E.START_LIFE, p.life, was), nails = '';
+    for (var i = 0; i < n; i++) nails += '<i class="' + (i < p.life ? (i >= was ? 'back' : '') : i < was ? 'out pull' : 'out') + '"' + (i < p.life && i >= was ? ' style="--k:' + (i - was) + '"' : i >= p.life && i < was ? ' style="--k:' + (was - 1 - i) + '"' : '') + '></i>';
+    return '<span class="life' + (p.life < was ? ' hurt' : p.life > was ? ' healed' : '') + '" title="Summoner life ' + p.life + '"><span class="lseal"><b>' + p.life + '</b></span><span class="lrail" style="--n:' + n + '">' + nails + '</span></span>';
+  }
+
   function plateHtml(pi, targetable, threat) {
     var p = S.players[pi], main = p.colour, you = pi === HUMAN;
     var gems = p.lands.map(function (l, n) {
@@ -282,9 +292,9 @@
     }).join('');
     return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
       (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
-      '<span class="crest ' + main + '">' + sym(main) + '</span>' +
+      '<span class="crest ' + main + (you ? ' you' : ' foe') + '">' + (noArt[PORTRAIT[main]] ? '' : '<img src="' + artSrc(PORTRAIT[main]) + '" alt="" draggable="false">') + '<span class="emb">' + sym(main) + '</span></span>' +
       '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : '')) + '</small></span>' +
-      '<span class="life" title="Summoner life"><strong>' + p.life + '</strong><i><b style="width:' + Math.max(0, Math.min(100, Math.round(p.life / E.START_LIFE * 100))) + '%"></b></i></span>' +
+      lifeHtml(pi, p) +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
       (relics ? '<span class="relics">' + relics + '</span>' : '') +
       (targetable ? '<span class="strike">' + (sel && sel.kind === 'card' ? 'Target summoner' : 'Strike summoner') + '</span>' : '') +
@@ -332,7 +342,12 @@
       if (u.devotion) notes.push('Devotion +' + u.devotion);
       if (waiting) states.push('Waiting');
       else if (u.owner === S.active && u.acted) states.push('Done');
-      var all = states.concat(notes), chips = all.map(function (t, k) { return '<span class="chip' + (k < states.length ? ' state' : '') + '">' + t + '</span>'; });
+      // Each label is a small enamel shield with its first letter; the tile's title and the close-up note spell them out.
+      // Waiting and Done show in the painting's dimming instead.
+      var all = states.concat(notes), chips = all.filter(function (t) { return t !== 'Waiting' && t !== 'Done'; }).map(function (t) {
+        return '<i class="shd ' + shieldKind(t) + '">' + (/^\+/.test(t) ? '+' : t.charAt(0).toUpperCase()) + '</i>';
+      });
+      if (chips.length > 5) chips = chips.slice(0, 4).concat(['<i class="shd n more">+' + (chips.length - 4) + '</i>']);
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
       inner += (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
         '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
@@ -345,6 +360,19 @@
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
     if (fxText) label += ', ' + fxText.toLowerCase();
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
+  }
+
+  // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
+  var SHIELD = {
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed'],
+    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
+    g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
+  };
+  function shieldKind(t) {
+    if (/this turn$/.test(t)) return 'r';
+    if (/move$/.test(t)) return 'u';
+    var word = t.replace(/ [+\d].*$/, '');
+    return SHIELD.r.indexOf(word) >= 0 ? 'r' : SHIELD.u.indexOf(word) >= 0 ? 'u' : SHIELD.g.indexOf(word) >= 0 ? 'g' : 'n';
   }
 
   function computeMarks(moves) {
@@ -414,13 +442,14 @@
       '<span class="band">' + band + '</span><span class="ctext">' + body + '</span></span></span>';
   }
 
-  function cardHtml(i, moves) {
-    var c = E.CARDS[i.c], you = S.players[HUMAN];
+  // The hand fans out from its middle: each card turns a little and drops a little further from the centre.
+  function cardHtml(i, moves, k, n) {
+    var c = E.CARDS[i.c], you = S.players[HUMAN], off = k === undefined ? 0 : k - (n - 1) / 2;
     var have = you.lands.filter(function (l) { return l.colour === c.colour; }).length;
     var playable = S.phase === 'opening' || moves.some(function (m) { return m.card === i.id; });
     var ready = playable && actor() === HUMAN && ((S.phase === 'play' && !S.pending) || aimable(moves, i.id));
     var cls = 'card' + (sel && sel.kind === 'card' && sel.id === i.id ? ' selected' : '') + (playable ? '' : ' dim') + (ready ? ' ready' : '');
-    return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand"><span class="cslot">' +
+    return '<button type="button" class="' + cls + '" data-card="' + i.id + '" data-peek="' + c.id + '" data-note="In your hand" style="--rot:' + (off * 2.6).toFixed(1) + 'deg;--dy:' + Math.round(off * off * 2.4) + 'px"><span class="cslot">' +
       frameHtml(c, { cost: E.costOf(S, HUMAN, c, i), have: have }) + '</span></button>';
   }
 
@@ -521,49 +550,46 @@
     var note = chapterBattle && S.winner === 'draw' ? ' Nobody holds the field, so this battle is fought again.' : chapterBattle && S.winner !== HUMAN ? ' Your run ends here.' : '';
     var btns = '<span class="btns">' + (chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + (sandbox ? '' : btn('Open packs', { ui: 'packs' }))) + '</span>';
     if (sandbox) return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' + btns + '</div>';
-    var pay = payout || reward(), lines = pay.pay.lines.filter(function (l) { return l.length < 3 || l[2]; }), d = 0;
+    var pay = payout || reward(), lines = pay.pay.lines.filter(function (l) { return l.length < 3 || l[2]; });
     var who = { bot: 'the scripted bot', easy: 'Claude, Easy', normal: 'Claude, Normal', hard: 'Claude, Hard' };
+    // Each line of the ledger is stamped in turn and pays its coins into the purse; Polish.payout plays it.
     var rows = lines.map(function (l) {
-      return '<li style="--d:' + (d++) + '"><span>' + l[0] + (l[2] ? ' <small>' + l[2] + '</small>' : '') + '</span><b>+' + l[1] + '</b></li>';
+      var each = l[2] ? l[1] / l[2] : 0;
+      return '<li data-gold="' + l[1] + '"><span>' + l[0] + '</span><small>' + (l[2] && each !== l[1] ? l[2] + ' × ' + (Math.round(each * 10) / 10) : '') + '</small><b>+' + l[1] + '</b></li>';
     }).join('');
-    if ((Progress.VS[pay.vs] || 1) > 1) rows += '<li class="mult" style="--d:' + (d++) + '"><span>Against ' + who[pay.vs] + '</span><b>× ' + Progress.VS[pay.vs] + '</b></li>';
-    if (pay.entry && pay.entry.boost > 1) rows += '<li class="mult" style="--d:' + (d++) + '"><span>A campaign you\'ve already beaten</span><b>× ' + pay.entry.boost + '</b></li>';
+    var mults = [];
+    if ((Progress.VS[pay.vs] || 1) > 1) mults.push(['Against ' + who[pay.vs], Progress.VS[pay.vs]]);
+    if (pay.entry && pay.entry.boost > 1) mults.push(['A campaign you\'ve already beaten', pay.entry.boost]);
+    rows += mults.map(function (m) { return '<li class="mult" data-mult="' + m[1] + '"><span>' + m[0] + '</span><small></small><b>× ' + m[1] + '</b></li>'; }).join('');
     var result = S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss';
-    return '<div class="plaque summary ' + result + '" style="--n:' + d + '"><p class="seyebrow">Battle summary</p><h2>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</h2>' +
-      '<p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' +
+    return '<div class="plaque summary ' + result + '"><div class="screst"><b>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</b></div>' +
+      '<p class="ssub">' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' +
       '<ol class="stally">' + rows + '</ol>' +
-      '<div class="earned"><span>Gold earned</span><strong data-count="' + pay.pay.total + '">' + pay.pay.total + '</strong></div>' +
+      '<div class="earned"><span class="purse" aria-hidden="true"></span><span>Gold earned</span><strong data-count="' + pay.pay.total + '">' + pay.pay.total + '</strong></div>' +
       '<p class="hint">You have ' + Progress.state().gold + ' gold.</p>' + btns + '</div>';
   }
 
-  // The gold total rolls up once the summary's lines have landed.
   var lastResult = null;
-  function countUp() {
-    var el = document.querySelector('#result [data-count]');
-    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var to = +el.dataset.count, wait = 450 + (+el.closest('.summary').style.getPropertyValue('--n') || 0) * 140, t0 = null;
-    el.textContent = '0';
-    setTimeout(function () {
-      (function step(now) {
-        if (!el.isConnected) return;
-        t0 = t0 || now;
-        var k = Math.min(1, (now - t0) / 700);
-        el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
-        if (k < 1) requestAnimationFrame(step); else el.classList.add('landed');
-      })(performance.now());
-    }, wait);
-  }
-
   function announceTurn() {
     var key = S.winner === null && S.phase !== 'opening' ? S.active + ':' + S.turn : null;
     if (key && key !== lastTurn) {
+      if (lastTurn && S.active === BOT && !sandbox) Sfx.play('enemy-turn');
       $('turnBanner').className = S.active === HUMAN ? '' : 'enemy';
       $('turnBanner').innerHTML = '<span>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
     }
     lastTurn = key;
   }
 
+  // End turn is a bronze press. It sinks when pressed, and the enemy's dark press stands in its place until your turn comes back.
+  function pressHtml(data, glow) {
+    return '<button type="button" class="press' + (glow ? ' glow' : '') + '" data-do=\'' + JSON.stringify(data) + '\' aria-label="End turn">End<br>turn</button>';
+  }
+  var FOE_PRESS = '<span class="press foe" aria-hidden="true">Enemy<br>turn</span>';
   function actionsHtml(moves) {
+    var html = actionsInner(moves);
+    return S.winner === null && S.phase !== 'opening' && S.active === BOT && !sandbox ? html + FOE_PRESS : html;
+  }
+  function actionsInner(moves) {
     var you = S.players[HUMAN];
     if (S.winner !== null) return promptHtml('The battle is over.');
     if (actor() !== HUMAN) {
@@ -627,8 +653,8 @@
       }
       if (!sel) out = out.concat(relicButtons(moves));
       var canCommand = E.legalMoves(E.applyMove(S, { type: 'toCommand' })).length > 1;
-      out.push(canCommand ? btn('Command units', { move: { type: 'toCommand' } }, !sel) : btn('End turn', { ui: 'skip' }, !sel));
-      return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>';
+      if (canCommand) out.push(btn('Command units', { move: { type: 'toCommand' } }, !sel));
+      return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>' + pressHtml({ ui: 'skip' }, !canCommand && !sel && !moves.some(function (m) { return m.card !== undefined && m.type !== 'bottomCard'; }));
     }
     var cmdHint = 'Select one of your units. Each can move, then attack or use an ability.';
     if (sel && sel.kind === 'card') {
@@ -660,8 +686,7 @@
         }
       }
     }
-    out.push(btn('End turn', { move: { type: 'endTurn' } }, !sel));
-    return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>';
+    return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>' + pressHtml({ move: { type: 'endTurn' } }, !sel && moves.every(function (m) { return m.type === 'endTurn'; }));
   }
 
   // Instants such as Scatter the line, aimed at a tile on either turn, or Firebolt picking a unit on your own turn.
@@ -702,6 +727,7 @@
     });
   }
 
+  var handSeen = null;
   function render() {
     if (sandbox) {
       S.players.forEach(function (p) { p.mana = TEST_MANA; });
@@ -713,6 +739,7 @@
     $('phases').innerHTML = phaseHtml();
     $('themStrip').innerHTML = plateHtml(BOT, marks.summoner, false);
     $('youStrip').innerHTML = plateHtml(HUMAN, false, marks.threat);
+    lifeSeen[BOT] = S.players[BOT].life; lifeSeen[HUMAN] = S.players[HUMAN].life;
     var g = '<div class="front" aria-hidden="true"></div>';
     for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += tileHtml(r, c, marks);
     $('grid').innerHTML = g;
@@ -724,10 +751,15 @@
     $('grid').style.setProperty('--grat', ratio.toFixed(3));
     $('grid').parentNode.style.setProperty('--bwr', (big ? 1 / ratio : 1.81).toFixed(3));
     $('actions').innerHTML = actionsHtml(moves);
-    $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="empty">Your hand is empty.</span>';
+    var hand = S.players[HUMAN].hand;
+    $('hand').innerHTML = hand.map(function (i, k) { return cardHtml(i, moves, k, hand.length); }).join('') || '<span class="empty">Your hand is empty.</span>';
     fitCards($('hand'));
+    // Cards that weren't in the hand last time are dealt in from the deck.
+    var ids = hand.map(function (i) { return i.id; }), fresh = handSeen ? ids.filter(function (id) { return handSeen.indexOf(id) < 0; }) : [];
+    handSeen = ids;
+    if (fresh.length && S.phase !== 'opening') Polish.drawn(fresh);
     var rh = resultHtml();
-    if (rh !== lastResult) { lastResult = rh; $('result').innerHTML = rh; countUp(); }
+    if (rh !== lastResult) { lastResult = rh; $('result').innerHTML = rh; if (rh) Polish.payout($('result').querySelector('.plaque')); }
     announceTurn();
     var log = $('log'), recent = S.log.slice(-40);
     log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + esc(l.text) + '</div>'; }).join('');
@@ -835,6 +867,7 @@
     if (m.type === 'move' && S.units.some(function (u) { return u.uid === m.unit; }) && E.legalMoves(S).some(function (x) { return x.unit === m.unit; })) sel = { kind: 'unit', id: m.unit };
     else sel = null;
     render();
+    Polish.moved(prev, S, m, HUMAN);
     schedule();
   }
 
@@ -1042,6 +1075,16 @@
     if (!b) return;
     var d = JSON.parse(b.getAttribute('data-do'));
     if ($('menu').open) $('menu').close();
+    if (b.classList.contains('press')) {
+      if (b.classList.contains('down')) return;
+      b.classList.add('down');
+      Sfx.play('button-press');
+      return setTimeout(function () { if (b.isConnected) doAction(d); }, 170);
+    }
+    if (d.ui === 'new' || d.ui === 'decks' || d.ui === 'menu' || d.ui === 'campaign' || d.ui === 'packs') return Polish.lamp(function () { doAction(d); });
+    doAction(d);
+  });
+  function doAction(d) {
     if (d.move) return apply(d.move);
     if (d.ui === 'new') return sandbox ? startSandbox() : start();
     if (d.ui === 'decks') return showStart();
@@ -1056,7 +1099,7 @@
     if (d.ui === 'pick') sel = { kind: 'card', id: d.id };
     if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
     render();
-  });
+  }
   ['mouseover', 'focusin', 'click'].forEach(function (type) { $('app').addEventListener(type, peekFrom); });
   ['mouseout', 'focusout'].forEach(function (type) { $('app').addEventListener(type, peekAway); });
   // One drawer at a time. Clicking the open drawer's button closes it.
@@ -1167,10 +1210,10 @@
       chapterBattle = false;
       sandbox = false;
       decks = [forGame(picks.mine), forGame(picks.opp)];
-      start();
+      Polish.lamp(function () { start(); });
     }
-    if (e.target.closest('#startBack')) toMenu();
-    if (e.target.closest('#startBuilder')) { $('start').hidden = true; Screens.builder(); }
+    if (e.target.closest('#startBack')) Polish.lamp(toMenu);
+    if (e.target.closest('#startBuilder')) Polish.lamp(function () { $('start').hidden = true; Screens.builder(); });
   });
 
   function start(state) {
@@ -1181,7 +1224,7 @@
     $('chatBox').hidden = true;
     $('speech').hidden = true;
     Debug.reset();
-    sel = null; flash = null;
+    sel = null; flash = null; lifeSeen = {}; handSeen = null;
     HUMAN = 0; BOT = 1;
     $('testBtn').hidden = !sandbox;
     setDrawer(null);
@@ -1193,6 +1236,7 @@
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
     if (opening && S.winner === null) showCard(opening.c, 'In your hand');
+    if (!state) Sfx.play('shuffle');
     render();
     schedule();
   }

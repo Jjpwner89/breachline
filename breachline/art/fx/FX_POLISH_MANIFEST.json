@@ -1,0 +1,2197 @@
+{
+  "set": "Breachline UI polish",
+  "date": "2026-11-11",
+  "generation": "Built-in image_gen",
+  "source_brief": "../UI_POLISH_BRIEFS.md",
+  "authorization": "User requested the ready assets plus ALL Group 2 options for Claude to implement and test.",
+  "source_policy": "Original PNG bytes and alpha preserved; no resizing or pixel editing.",
+  "assets": [
+    {
+      "name": "fx-slash.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA blade strike. A bright curved arc of cut air sweeps from the left of each frame to the right, with a scatter of steel sparks and a few torn threads of cloth flung along its path. Warm white at the arc's edge, pale gold sparks, no blood. Frame 1 a small curved first-contact glint at centre, frame 2 broad bright arc, frame 3 arc sweeps right with sparks, frame 4 thin breaking arc, frame 5 a few fine fading sparks and cloth threads, frame 6 only two or three faint traces. Painted physical substance with controlled bloom; no weapon or visible target.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-d6987c3c-ba6b-4ee1-a12b-ac5e3f748ffa.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "5cce9c2b72e2d0c655e945d84a583522e60022017922364000a21bdaa746d169",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 1197032,
+        "partially_transparent_pixels": 375832,
+        "content_bounds_alpha_gt_8": [
+          69,
+          120,
+          1490,
+          880
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              135,
+              201,
+              368,
+              352
+            ],
+            "margins": [
+              135,
+              201,
+              144,
+              160
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              34,
+              137,
+              451,
+              409
+            ],
+            "margins": [
+              34,
+              137,
+              61,
+              103
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              35,
+              120,
+              466,
+              406
+            ],
+            "margins": [
+              35,
+              120,
+              46,
+              106
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              69,
+              110,
+              472,
+              365
+            ],
+            "margins": [
+              69,
+              110,
+              40,
+              147
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              81,
+              144,
+              426,
+              367
+            ],
+            "margins": [
+              81,
+              144,
+              86,
+              145
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              89,
+              183,
+              370,
+              368
+            ],
+            "margins": [
+              89,
+              183,
+              142,
+              144
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_alpha_mass": [
+          5244,
+          39423,
+          29488,
+          12722,
+          3066,
+          813
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-slash.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            135,
+            201,
+            368,
+            352
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            546,
+            137,
+            963,
+            409
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1059,
+            120,
+            1490,
+            406
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            69,
+            622,
+            472,
+            877
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            593,
+            656,
+            938,
+            879
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1113,
+            695,
+            1394,
+            880
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-pierce.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA thrust from a spear or arrow, travelling toward the top of EACH frame. A tight cone of splinters, dust and sparks bursts away from a single point, with a thin streak of light behind it. Narrow and fast, pale gold and grey, no blood. Frame 1 central contact point and short streak below, frame 2 compact bright cone spreading upward, frame 3 splinters and sparks extend up, frame 4 fragments spread and dim, frame 5 sparse dust and sparks, frame 6 barely visible traces. Direction stays toward the top, wholly inside each cell's safe area. No actual spear or arrow painted.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-4d51a044-283a-4412-92d9-56a5062e5101.png",
+      "superseded_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-02c14763-19d4-49d0-ae66-4a4ef12858de.png"
+      ],
+      "revisions": [
+        {
+          "prompt": "Use case: precise-object-edit.\nPreserve this painted six-frame piercing-impact effect and its sequence. Fix ONLY the atlas spacing: shrink every frame's effect, including every splinter, light streak and dust fragment, to 65% of its current size, placing its composition centre at the exact centre of its 512x512 cell. EXACT 1536 x 1024 canvas, 3 columns by 2 rows of 512px cells. All six complete effects confined to the CENTRAL 300 x 300 pixels of their cell, with at least 106px true zero-alpha empty padding at each edge. Direction remains UPWARD. No spark or dust in the padding. No weapons or targets. Alpha transparency outside the painted effect and partial alpha for soft edges, no opaque background. Frame6 only faint traces. Do not enlarge the sprites to fill the canvas.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-4d51a044-283a-4412-92d9-56a5062e5101.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-02c14763-19d4-49d0-ae66-4a4ef12858de.png",
+          "status": "not selected: introduced unwanted low-alpha background haze"
+        }
+      ],
+      "current_prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA thrust from a spear or arrow, travelling toward the top of EACH frame. A tight cone of splinters, dust and sparks bursts away from a single point, with a thin streak of light behind it. Narrow and fast, pale gold and grey, no blood. Frame 1 central contact point and short streak below, frame 2 compact bright cone spreading upward, frame 3 splinters and sparks extend up, frame 4 fragments spread and dim, frame 5 sparse dust and sparks, frame 6 barely visible traces. Direction stays toward the top, wholly inside each cell's safe area. No actual spear or arrow painted.",
+      "selection_note": "Selected the cleaner first generation. Some upper/lower tips approach the frame edge; fixed 512px crops contain the painted content. Preserve source frame placement and pad derivatives if needed.",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "d31f7ea6e5606dcab4a58df6577f547db4bed452072f1e1bd54b6ff70b296ad9",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 997302,
+        "partially_transparent_pixels": 575562,
+        "content_bounds_alpha_gt_8": [
+          141,
+          2,
+          1384,
+          980
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              227,
+              209,
+              308,
+              456
+            ],
+            "margins": [
+              227,
+              209,
+              204,
+              56
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              171,
+              48,
+              346,
+              474
+            ],
+            "margins": [
+              171,
+              48,
+              166,
+              38
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              139,
+              2,
+              360,
+              482
+            ],
+            "margins": [
+              139,
+              2,
+              152,
+              30
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              141,
+              1,
+              384,
+              468
+            ],
+            "margins": [
+              141,
+              1,
+              128,
+              44
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              152,
+              31,
+              371,
+              416
+            ],
+            "margins": [
+              152,
+              31,
+              141,
+              96
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              173,
+              49,
+              306,
+              380
+            ],
+            "margins": [
+              173,
+              49,
+              206,
+              132
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          3,
+          1,
+          7,
+          5,
+          1,
+          1
+        ],
+        "frame_alpha_mass": [
+          4047,
+          17788,
+          27217,
+          27179,
+          15104,
+          4139
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-pierce.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            227,
+            209,
+            308,
+            456
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            683,
+            48,
+            858,
+            474
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1163,
+            2,
+            1384,
+            482
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            141,
+            513,
+            384,
+            980
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            664,
+            543,
+            883,
+            928
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1197,
+            561,
+            1330,
+            892
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-crush.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA heavy blow from above. A ring of cracked shockwave and thrown dust spreads from the centre, with chips of stone and a dull orange flash at the core. Heavy and blunt, earth brown, grey and dull orange, no blood. Direct overhead circular impact, not a side-on mushroom cloud. First contact is tiny, frame 2 is strongest and brightest, frame 3 expands, frame 4 reaches its widest and breaks up, frame 5 has sparse fading dust, frame 6 only faint residue. Paint only debris and shockwave, no solid ground disk.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-5929eeb2-fb73-45cc-b4f7-df4f125ca9fa.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "88b251f23bcfbbacdf741916fc886c4d6e8bfcc75f36294e2ebf4523791c0800",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 673623,
+        "partially_transparent_pixels": 899241,
+        "content_bounds_alpha_gt_8": [
+          27,
+          34,
+          1488,
+          994
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              193,
+              185,
+              334,
+              322
+            ],
+            "margins": [
+              193,
+              185,
+              178,
+              190
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              68,
+              55,
+              439,
+              448
+            ],
+            "margins": [
+              68,
+              55,
+              73,
+              64
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              32,
+              34,
+              464,
+              463
+            ],
+            "margins": [
+              32,
+              34,
+              48,
+              49
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              27,
+              32,
+              479,
+              482
+            ],
+            "margins": [
+              27,
+              32,
+              33,
+              30
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              32,
+              32,
+              472,
+              461
+            ],
+            "margins": [
+              32,
+              32,
+              40,
+              51
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              62,
+              46,
+              450,
+              439
+            ],
+            "margins": [
+              62,
+              46,
+              62,
+              73
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "frame_alpha_mass": [
+          5660,
+          76923,
+          97114,
+          104410,
+          67007,
+          17234
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-crush.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            193,
+            185,
+            334,
+            322
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            580,
+            55,
+            951,
+            448
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1056,
+            34,
+            1488,
+            463
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            27,
+            544,
+            479,
+            994
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            544,
+            544,
+            984,
+            973
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1086,
+            558,
+            1474,
+            951
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-death.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA card burning away. A ragged edge of glowing orange ember rises up through each frame as if eating upward through a sheet of paper, throwing up curling grey ash flakes and a few bright sparks, then thinning to drifting ash in the last frames. Seen straight on. Warm orange, grey ash and black char; quiet and final rather than explosive. No intact card or paper rectangle: only the advancing ragged ember edge and ash. Frame 1 ember at lower-centre, frame 2 stronger rising ragged edge, frame 3 edge crosses middle, frame 4 higher broken edge, frame 5 thin upper ash, frame 6 last faint ash. This upward progression intentionally moves inside the fixed cell rather than changing framing. Reference is for char/ember materials only; do not copy its rectangular border.\nCRITICAL COMPOSITION: deliberately small sprite artwork occupying only the central 300 x 300 pixels of each 512px cell. This is a technical atlas with very large empty transparent gutters, not a full-frame illustration. Zero-alpha padding surrounds all effects. No secondary particle may escape this 300px box.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-tile-burn.png"
+      ],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-578963b5-64e0-49e2-b760-3a7e02311975.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "d952d10d1642dc81ad2cce8b797b2ac6b334dc422594e90805a7301744e390fe",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 1351367,
+        "partially_transparent_pixels": 221497,
+        "content_bounds_alpha_gt_8": [
+          114,
+          147,
+          1420,
+          881
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              149,
+              290,
+              390,
+              447
+            ],
+            "margins": [
+              149,
+              290,
+              122,
+              65
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              102,
+              224,
+              401,
+              437
+            ],
+            "margins": [
+              102,
+              224,
+              111,
+              75
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              76,
+              147,
+              396,
+              413
+            ],
+            "margins": [
+              76,
+              147,
+              116,
+              99
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              114,
+              103,
+              417,
+              355
+            ],
+            "margins": [
+              114,
+              103,
+              95,
+              157
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              109,
+              105,
+              397,
+              369
+            ],
+            "margins": [
+              109,
+              105,
+              115,
+              143
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              100,
+              128,
+              363,
+              333
+            ],
+            "margins": [
+              100,
+              128,
+              149,
+              179
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_alpha_mass": [
+          8571,
+          15102,
+          17678,
+          10642,
+          2966,
+          714
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-death.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            149,
+            290,
+            390,
+            447
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            614,
+            224,
+            913,
+            437
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1100,
+            147,
+            1420,
+            413
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            114,
+            615,
+            417,
+            867
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            621,
+            617,
+            909,
+            881
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1124,
+            640,
+            1387,
+            845
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-summon.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA summoning circle drawn in ink on the war map. A single ring of dark sepia ink spreads outward from the centre as if poured, with fine splatters and a faint warm glow catching inside it, then the ink sinks into the cloth and fades in the last frames. Seen from directly above. Sepia, dark brown and a little gold light; no symbols or runes inside the ring. First a tiny central ink contact, then strong dark small ring, then a wider ring, then a thin broken wide ring, then fading ink fragments, finally faint traces. The ring's interior is transparent. Reference shows the cloth beneath the effect for colour context ONLY: DO NOT paint cloth or weave.\nCRITICAL COMPOSITION: deliberately small sprite artwork occupying only the central 300 x 300 pixels of each 512px cell. This is a technical atlas with very large empty transparent gutters, not a full-frame illustration. Zero-alpha padding surrounds all effects. No secondary particle may escape this 300px box.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-table-linen-map.png"
+      ],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-f9b7319a-d415-4d40-96a8-c6013c363da3.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "43e6704b5f6f72b6f48bf7a5e86a761df521e756e7204e5c69452e631fe05431",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 1412143,
+        "partially_transparent_pixels": 160721,
+        "content_bounds_alpha_gt_8": [
+          123,
+          128,
+          1405,
+          907
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              227,
+              230,
+              298,
+              291
+            ],
+            "margins": [
+              227,
+              230,
+              214,
+              221
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              155,
+              151,
+              343,
+              360
+            ],
+            "margins": [
+              155,
+              151,
+              169,
+              152
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              129,
+              128,
+              381,
+              380
+            ],
+            "margins": [
+              129,
+              128,
+              131,
+              132
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              123,
+              117,
+              400,
+              395
+            ],
+            "margins": [
+              123,
+              117,
+              112,
+              117
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              128,
+              126,
+              392,
+              384
+            ],
+            "margins": [
+              128,
+              126,
+              120,
+              128
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              132,
+              134,
+              371,
+              374
+            ],
+            "margins": [
+              132,
+              134,
+              141,
+              138
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "frame_alpha_mass": [
+          400,
+          9066,
+          13832,
+          6552,
+          1230,
+          146
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-summon.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            227,
+            230,
+            298,
+            291
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            667,
+            151,
+            855,
+            360
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1153,
+            128,
+            1405,
+            380
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            123,
+            629,
+            400,
+            907
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            640,
+            638,
+            904,
+            896
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1156,
+            646,
+            1395,
+            886
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-heal.png",
+      "folder": "fx",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nSoft warm motes of light drawn inward from all around each frame, spiralling gently into a small glow at the centre, which brightens and then settles into a few drifting motes. Warm gold and soft white, gentle and calm. No petals, candles or wax, so it does not repeat consecrated ground. Frame 1 sparse inward-drawn motes, frame 2 small warm luminous central bloom at peak force, frames 3\u20134 settle and soften with short spiralling painted streaks, frame 5 a few drifting motes, frame 6 only two faint specks. Soft transparency, restrained bloom, no large opaque white ball.\nCRITICAL COMPOSITION: deliberately small sprite artwork occupying only the central 300 x 300 pixels of each 512px cell. This is a technical atlas with very large empty transparent gutters, not a full-frame illustration. Zero-alpha padding surrounds all effects. No secondary particle may escape this 300px box.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-056cabde-69ef-400f-a161-902bcd68fd93.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "c4a7342bb3b9e81f875a94b6ceae7586c7ddd7e7201164e75cdce7f56e8958f4",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 1172431,
+        "partially_transparent_pixels": 400433,
+        "content_bounds_alpha_gt_8": [
+          131,
+          129,
+          1392,
+          893
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              169,
+              159,
+              354,
+              349
+            ],
+            "margins": [
+              169,
+              159,
+              158,
+              163
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              125,
+              137,
+              376,
+              382
+            ],
+            "margins": [
+              125,
+              137,
+              136,
+              130
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              99,
+              129,
+              368,
+              392
+            ],
+            "margins": [
+              99,
+              129,
+              144,
+              120
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              131,
+              91,
+              395,
+              381
+            ],
+            "margins": [
+              131,
+              91,
+              117,
+              131
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              155,
+              134,
+              368,
+              347
+            ],
+            "margins": [
+              155,
+              134,
+              144,
+              165
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              169,
+              201,
+              292,
+              308
+            ],
+            "margins": [
+              169,
+              201,
+              220,
+              204
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_alpha_mass": [
+          6483,
+          22152,
+          24761,
+          22643,
+          8477,
+          629
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-heal.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            169,
+            159,
+            354,
+            349
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            637,
+            137,
+            888,
+            382
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1123,
+            129,
+            1392,
+            392
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            131,
+            603,
+            395,
+            893
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            667,
+            646,
+            880,
+            859
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1193,
+            713,
+            1316,
+            820
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-rare-burst.png",
+      "folder": "fx",
+      "grid": [
+        3,
+        2
+      ],
+      "group": 3,
+      "references": [],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA RARE card reveal: a ring of warm golden light bursting outward from BEHIND a card-sized space, throwing fine gold sparks, fading to a few drifting motes. The central vertical card-shaped opening stays fully TRANSPARENT in every frame, about120px wide by180px tall at cell centre. Surround it with a painted gold ring, no actual card. Frame1 a small thin ring around the opening; frame2 bright strong burst; frame3 expanding rays and sparks; frame4 broken outer ring; frame5 sparse motes; frame6 faint traces. All light/rays contained within central360x360 of each512px cell. This is an isolated overlay without opaque background, centre must never fill with light.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-20e2cf1e-92b6-4996-bcec-7657529b2cb7.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "25e995e3a67a53ec4d2daff2331d4a32f0f292643bc621b85b407bee90158a8b",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 253,
+        "fully_transparent_pixels": 152028,
+        "partially_transparent_pixels": 1420836,
+        "content_bounds_alpha_gt_8": [
+          51,
+          47,
+          1502,
+          948
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              143,
+              128,
+              409,
+              408
+            ],
+            "margins": [
+              143,
+              128,
+              103,
+              104
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              26,
+              47,
+              512,
+              485
+            ],
+            "margins": [
+              26,
+              47,
+              0,
+              27
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              48,
+              478,
+              490
+            ],
+            "margins": [
+              0,
+              48,
+              34,
+              22
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              51,
+              30,
+              495,
+              436
+            ],
+            "margins": [
+              51,
+              30,
+              17,
+              76
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              54,
+              34,
+              444,
+              414
+            ],
+            "margins": [
+              54,
+              34,
+              68,
+              98
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              71,
+              75,
+              368,
+              410
+            ],
+            "margins": [
+              71,
+              75,
+              144,
+              102
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          3,
+          12,
+          13,
+          3,
+          3,
+          2
+        ],
+        "frame_alpha_mass": [
+          20154,
+          85634,
+          81179,
+          51157,
+          17390,
+          3736
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-rare-burst.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            143,
+            128,
+            409,
+            408
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            538,
+            47,
+            1024,
+            485
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1024,
+            48,
+            1502,
+            490
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            51,
+            542,
+            495,
+            948
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            566,
+            546,
+            956,
+            926
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1095,
+            587,
+            1392,
+            922
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "fx-legendary-burst.png",
+      "folder": "fx",
+      "grid": [
+        3,
+        2
+      ],
+      "group": 3,
+      "references": [],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nEXACT 1536 x 1024 PNG sprite sheet of six square animation frames, each 512 x 512, in two rows of three with no gaps, borders, labels or dividing lines. Read the frames left to right along the top row, then the bottom row. These are six moments of ONE continuous impact at each frame centre, first contact in frame 1, greatest force in frame 2, outward development in frames 3 and 4, fading in frame 5, last faint traces in frame 6. Keep the effect centred, at the same scale and in the same light. Local cell centres (256,256); absolute centres (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Confine all paint, sparks and haze to the inner 400 x 400 pixels of each cell: at least 56 entirely transparent pixels at every cell edge. Partly transparent painted effect edges, not background haze. No effect may touch or cross its frame edge. No weapons, people, cards or scenery. The game adds shake, flash and damage numbers.\nA LEGENDARY card reveal: a stronger burst of fire-orange light with deep violet at its edges, long rays reaching toward the frame edges, sparks and embers, then a slow fade to a violet glow. The central vertical card-shaped opening stays fully TRANSPARENT in every frame, about120px wide by180px tall at each cell centre. Rays radiate from BEHIND this opening, no actual card. Frame1 a compact orange-violet rim; frame2 strongest bright burst; frame3 long spreading rays; frame4 widest rays breaking into sparks; frame5 dim violet afterglow; frame6 very faint violet traces. Interpret rays toward edges while respecting sprite padding: all effects confined to central380x380 of each512px cell, minimum66px clear padding. No beam or particle touches a cell boundary.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-7f6eeebe-5706-47f7-8224-6475f41df60f.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "f1f11099731f5dff7b0b49ba0d2ea0090dee983fcdd9a1b1d77f89eac7927fb0",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 252,
+        "fully_transparent_pixels": 21407,
+        "partially_transparent_pixels": 1551457,
+        "content_bounds_alpha_gt_8": [
+          13,
+          0,
+          1536,
+          1024
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              122,
+              112,
+              398,
+              406
+            ],
+            "margins": [
+              122,
+              112,
+              114,
+              106
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              37,
+              30,
+              479,
+              471
+            ],
+            "margins": [
+              37,
+              30,
+              33,
+              41
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              17,
+              0,
+              512,
+              481
+            ],
+            "margins": [
+              17,
+              0,
+              0,
+              31
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              13,
+              11,
+              512,
+              512
+            ],
+            "margins": [
+              13,
+              11,
+              0,
+              0
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              1,
+              33,
+              462,
+              462
+            ],
+            "margins": [
+              1,
+              33,
+              50,
+              50
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              65,
+              62,
+              434,
+              442
+            ],
+            "margins": [
+              65,
+              62,
+              78,
+              70
+            ]
+          }
+        ],
+        "all_requested_dimensions": true,
+        "frame_border_alpha_max": [
+          5,
+          6,
+          10,
+          9,
+          8,
+          4
+        ],
+        "frame_alpha_mass": [
+          31525,
+          87172,
+          101589,
+          105567,
+          68516,
+          38180
+        ]
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/fx/fx-legendary-burst.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            122,
+            112,
+            398,
+            406
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            549,
+            30,
+            991,
+            471
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1041,
+            0,
+            1536,
+            481
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            13,
+            523,
+            512,
+            1024
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            513,
+            545,
+            974,
+            974
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1089,
+            574,
+            1458,
+            954
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    }
+  ]
+}

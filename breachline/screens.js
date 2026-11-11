@@ -90,7 +90,11 @@ var Screens = (function () {
       return '<div class="mitem off"><b>' + title + '</b><span>' + sub + '</span></div>';
     }
     var run = Campaign.current();
-    show(HOME + '<main class="menu"><div class="mcol"><h1>Breachline</h1><nav class="mlist" aria-label="Main menu">' +
+    var embs = '<div class="memb">' + Campaign.ORDER.map(function (id) {
+      var st = Campaign.STORIES[id], won = Progress.cleared(id);
+      return '<img src="art/web/ui/emblem-' + st.colour + '.png" alt="' + esc(st.title) + (won ? ', beaten' : ', not beaten yet') + '" title="' + esc(st.title) + (won ? ': beaten' : '') + '"' + (won ? ' class="won"' : '') + '>';
+    }).join('') + '</div>';
+    show(HOME + '<button type="button" class="btn snd msnd" data-sound aria-pressed="' + !Sfx.muted() + '" aria-label="Sound"></button><main class="menu"><div class="mcol"><h1>Breachline</h1>' + embs + '<nav class="mlist" aria-label="Main menu">' +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
       (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
         : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
@@ -126,7 +130,7 @@ var Screens = (function () {
     var nodes = story.chapters.map(function (c, i) {
       var state = at < 0 || i > at ? 'next' : i < at ? 'done' : 'now';
       var word = state === 'done' ? 'cleared' : state === 'now' ? 'your next battle' : 'not reached yet';
-      return '<button type="button" class="mnode ' + state + (picked === i ? ' picked' : '') + '" style="left:' + c.x + '%;top:' + c.y + '%" ' + act('mapPick', i) + ' aria-label="Chapter ' + (i + 1) + ', ' + esc(c.title) + ', ' + word + '"' + (at < 0 ? ' disabled' : '') + '>' +
+      return '<button type="button" class="mnode ' + state + (i === story.chapters.length - 1 ? ' last' : '') + (picked === i ? ' picked' : '') + '" style="left:' + c.x + '%;top:' + c.y + '%" ' + act('mapPick', i) + ' aria-label="Chapter ' + (i + 1) + ', ' + esc(c.title) + ', ' + word + '"' + (at < 0 ? ' disabled' : '') + '>' +
         '<span class="seal">' + (i + 1) + '</span><span class="mlabel">' + esc(c.title) + '</span></button>';
     }).join('');
     var walked = '';
@@ -134,7 +138,51 @@ var Screens = (function () {
       var stop = story.chapters[at], legs = story.road.map(function (p) { return p[0] + ',' + p[1]; }).indexOf(stop.x + ',' + stop.y), line = roadPath(story.road, legs);
       walked = '<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="walkedbase" d="' + line + '"/><path class="walked" d="' + line + '"/></svg>';
     }
-    return '<div class="cmap"><img src="' + story.map + '" alt="" decoding="sync" draggable="false">' + walked + nodes + '</div>';
+    var here = at >= 0 ? story.chapters[at] : null;
+    var army = here ? '<span class="army ' + story.colour + '" style="left:' + here.x + '%;top:' + here.y + '%"></span>' : '';
+    return '<div class="cmap"><img src="' + story.map + '" alt="" decoding="sync" draggable="false">' + walked + nodes + army + '</div>';
+  }
+  // After a win the army marches from the chapter it took to the next, along the painted road, a step at a time.
+  var standing = {};
+  function march(run) {
+    var story = Campaign.storyOf(run), key = run.story + ':' + run.seed, from = standing[key], to = run.chapter;
+    standing[key] = to;
+    var army = root.querySelector('.cmap .army');
+    if (!army || from === undefined || from >= to || !Polish.enabled()) return;
+    var a = story.chapters[from], b = story.chapters[to], pts = null;
+    if (story.road) {
+      var ids = story.road.map(function (p) { return p[0] + ',' + p[1]; }), i0 = ids.indexOf(a.x + ',' + a.y), i1 = ids.indexOf(b.x + ',' + b.y);
+      if (i0 >= 0 && i1 > i0) {
+        // Measured with the map's 3:2 shape, so the pace is even across the painting.
+        var path = document.createElementNS('http://www.w3.org/2000/svg', 'path'), wide = story.road.map(function (p) { return [p[0] * 1.5, p[1]]; });
+        var whole = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        whole.setAttribute('style', 'position:absolute;width:0;height:0');
+        whole.appendChild(path);
+        document.body.appendChild(whole);
+        path.setAttribute('d', roadPath(wide, i0));
+        var l0 = i0 ? path.getTotalLength() : 0;
+        path.setAttribute('d', roadPath(wide, i1));
+        var l1 = path.getTotalLength();
+        pts = function (k) { var q = path.getPointAtLength(l0 + (l1 - l0) * k); return [q.x / 1.5, q.y]; };
+        pts.done = function () { whole.remove(); };
+        pts.len = l1 - l0;
+      }
+    }
+    if (!pts) { pts = function (k) { return [a.x + (b.x - a.x) * k, a.y + (b.y - a.y) * k]; }; pts.len = Math.hypot((b.x - a.x) * 1.5, b.y - a.y); }
+    var ms = Math.max(1800, pts.len * 70), t0 = null, steps = 0;
+    army.style.left = a.x + '%'; army.style.top = a.y + '%';
+    (function step(now) {
+      if (!army.isConnected) { if (pts.done) pts.done(); return; }
+      t0 = t0 || now;
+      var k = Math.min(1, (now - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2, p = pts(e), stride = (now - t0) / 380;
+      army.style.left = p[0] + '%';
+      army.style.top = p[1] + '%';
+      // A soft bob and sway each stride, fading out as it arrives.
+      army.style.transform = 'translate(-50%, -100%) translateY(' + (-Math.abs(Math.sin(stride * Math.PI)) * 3 * (1 - k * k)) + 'px) rotate(' + (Math.sin(stride * Math.PI) * 2.5 * (1 - k)) + 'deg)';
+      if (Math.floor(stride) > steps && k < .97) { steps = Math.floor(stride); Sfx.play('map-step', { gap: 0, vol: .8 }); }
+      if (k < 1) requestAnimationFrame(step);
+      else { army.style.transform = ''; if (pts.done) pts.done(); }
+    })(performance.now());
   }
   function deckGrid(list) {
     var cards = list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(function (e) {
@@ -213,13 +261,14 @@ var Screens = (function () {
       '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p><div class="cleave">' + leave + '</div></aside></div>' +
       runDeck(run) + '</div>', campaign);
     fitAll();
+    march(run);
   }
   function reward(run) {
     var offer = run.offer, c = Campaign.chapterOf(run);
     var cards = offer.cards.map(function (id) {
       var spoil = E.CARDS[id].colour === offer.spoils;
-      return '<div class="rpick"><span class="rfrom">' + (spoil ? 'Won from ' + esc(c.enemy.name) : 'Joins your side') + '</span>' +
-        '<button type="button" class="card" ' + act('takeCard', id) + ' aria-label="Keep ' + esc(E.CARDS[id].name) + '">' + GameUI.frameHtml(E.CARDS[id], { big: true }) + '</button></div>';
+      return '<div class="rpick"><span class="rfrom' + (spoil ? ' spoil' : '') + '">' + (spoil ? 'Won from ' + esc(c.enemy.name) : 'Joins your side') + '</span>' +
+        '<button type="button" class="card" ' + act('takeCard', id) + ' aria-label="Keep ' + esc(E.CARDS[id].name) + '"><span class="rflip">' + GameUI.frameHtml(E.CARDS[id], { big: true }) + '<span class="rback"></span></span></button></div>';
     }).join('');
     var lands = offer.lands.map(function (id) { return '<button type="button" class="btn" ' + act('takeCard', id) + '>' + symbol(E.CARDS[id].colour) + ' ' + esc(E.CARDS[id].name) + '</button>'; }).join('');
     show('<div class="page">' + campaignHead('Choose a card to keep') +
@@ -229,6 +278,13 @@ var Screens = (function () {
       '<div class="rother"><span class="hint">Or add a land:</span>' + lands + '<button type="button" class="btn" ' + act('takeCard') + '>Take nothing</button></div>' +
       deckGrid(run.list) + '</div>', campaign);
     fitAll();
+    // The offered cards are dealt face down, then turn over one by one.
+    if (!Polish.enabled()) return;
+    Array.prototype.forEach.call(root.querySelectorAll('.rpick .rflip'), function (f, i) {
+      f.animate([{ transform: 'translateY(-50px) rotateY(180deg)', opacity: 0 }, { transform: 'rotateY(180deg)', opacity: 1, offset: .3 }, { transform: 'rotateY(180deg)', offset: .5 }, { transform: 'rotateY(0deg) scale(1.04)', offset: .85 }, { transform: 'none' }],
+        { duration: 1300, delay: 200 + i * 380, easing: 'cubic-bezier(.3,.7,.4,1)', fill: 'backwards' });
+      Sfx.play('card-flip', { delay: .85 + i * .38, gap: 0 });
+    });
   }
   function runEnd(run) {
     var story = Campaign.storyOf(run), won = run.status === 'won', c = Campaign.chapterOf(run);
@@ -372,7 +428,7 @@ var Screens = (function () {
     var c = E.CARDS[id];
     return '<div class="pcard" data-card-id="' + id + '">' +
       '<button type="button" class="card" ' + act('add', id) + ' data-peek="' + id + '" aria-label="Add ' + esc(c.name) + ' to deck">' + GameUI.frameHtml(c) + '</button>' +
-      '<span class="have" hidden></span><span class="nown" hidden>Not owned</span>' +
+      '<span class="have" hidden></span><span class="qty" aria-hidden="true"></span><span class="nown" hidden>Not owned</span>' +
       '<button type="button" class="minus" ' + act('remove', id) + ' aria-label="Take ' + esc(c.name) + ' out of deck" hidden>&minus;</button></div>';
   }
   function drawGrid() {
@@ -385,9 +441,12 @@ var Screens = (function () {
   }
   function drawBadges() {
     Array.prototype.forEach.call(byId('cgrid').querySelectorAll('.pcard'), function (el) {
-      var id = el.dataset.cardId, have = countOf(id), limit = ed.pool.copies(id), badge = el.querySelector('.have');
-      badge.hidden = !have;
+      var id = el.dataset.cardId, have = countOf(id), limit = ed.pool.copies(id), badge = el.querySelector('.have'), cap = Math.min(limit, E.maxCopies(id));
+      // Up to four copies show as pips under the card; lands and other open-ended cards keep a count.
+      var pips = cap <= 4 && cap > 0;
+      badge.hidden = !have || pips;
       badge.textContent = limit === Infinity ? have : have + ' / ' + limit;
+      el.querySelector('.qty').innerHTML = pips ? Array.apply(null, Array(cap)).map(function (x, j) { return '<i' + (j < have ? ' class="on"' : '') + '></i>'; }).join('') : '';
       el.querySelector('.minus').hidden = !have;
       el.querySelector('.nown').hidden = !!limit || !!have;
       el.classList.toggle('maxed', have >= limit);
@@ -418,17 +477,24 @@ var Screens = (function () {
     }
     return out;
   }
+  // The bars grow from their last heights to the new ones.
   function curveHtml(curve) {
-    var top = Math.max.apply(null, curve.concat(1));
+    var top = Math.max.apply(null, curve.concat(4)), was = ed.curveH || [];
+    ed.curveH = curve.map(function (n) { return Math.round(n / top * 100); });
     return '<div class="curve" role="img" aria-label="Cards by cost: ' + curve.map(function (n, i) { return (i === 7 ? '7 or more' : i) + ': ' + n; }).join(', ') + '">' + curve.map(function (n, i) {
-      return '<span class="cbar"><em>' + (n || '') + '</em><i style="height:' + Math.round(n / top * 100) + '%"></i><small>' + (i === 7 ? '7+' : i) + '</small></span>';
+      return '<span class="cbar"><em>' + (n || '') + '</em><i style="height:' + (was[i] === undefined ? ed.curveH[i] : was[i]) + '%" data-h="' + ed.curveH[i] + '"></i><small>' + (i === 7 ? '7+' : i) + '</small></span>';
     }).join('') + '</div>';
+  }
+  function growCurve() {
+    requestAnimationFrame(function () { Array.prototype.forEach.call(root.querySelectorAll('.curve i[data-h]'), function (b) { b.style.height = b.dataset.h + '%'; }); });
   }
   function rowHtml(e) {
     var c = E.CARDS[e[0]], own = ed.pool.copies(c.id), full = e[1] >= own || E.deckSize(ed.deck.list) >= E.DECK_MAX;
-    return '<div class="drow ' + c.colour + (e[1] > own ? ' short" title="You own ' + (own || 'none') : '') + '"><span class="rcost">' + (c.type === 'land' ? '' : c.cost) + '</span>' +
+    var art = GameUI.artUrl(c.id);
+    return '<div class="drow ' + c.colour + (e[1] > own ? ' short" title="You own ' + (own || 'none') : '') + '" data-row="' + c.id + '">' + (art ? '<img class="rart" src="' + art + '" alt="" draggable="false">' : '') +
+      '<span class="rcost' + (c.type === 'land' ? ' land' : '') + '">' + (c.type === 'land' ? '' : c.cost) + '</span>' +
       '<button type="button" class="rname" data-peek="' + c.id + '" ' + act('zoom', c.id) + '>' + esc(c.name) + '</button>' +
-      '<span class="rn">' + e[1] + '</span>' +
+      '<span class="rn">×' + e[1] + '</span>' +
       '<button type="button" class="rbtn" ' + act('remove', c.id) + ' aria-label="One fewer ' + esc(c.name) + '">&minus;</button>' +
       '<button type="button" class="rbtn" ' + (full ? 'disabled ' : '') + act('add', c.id) + ' aria-label="One more ' + esc(c.name) + '">+</button></div>';
   }
@@ -459,6 +525,7 @@ var Screens = (function () {
       curveHtml(st.curve) +
       advice.map(function (a) { return '<p class="advice">' + a + '</p>'; }).join('') +
       '<p class="dmsg" id="dmsg" role="status">' + esc(ed.msg) + '</p>';
+    growCurve();
     keepFocus(function () { byId('dlist').innerHTML = listHtml(list); });
     byId('dfoot').innerHTML = '<span class="dsaved' + (ed.saveFailed || !Decks.persistent() ? ' bad' : '') + '">' + saveNote + '</span>' +
       '<button type="button" class="btn primary" ' + (problems.length ? 'disabled ' : '') + act('playDeck') + '>Play this deck</button>';
@@ -524,11 +591,52 @@ var Screens = (function () {
       var e = ed.deck.list.filter(function (x) { return x[0] === id; })[0];
       if (e) e[1] += 1; else ed.deck.list.push([id, 1]);
       store();
+      var from = lastAct && lastAct.closest && lastAct.closest('#cgrid .card');
+      Sfx.play('card-play', { gap: 0 });
     }
     drawDeck();
     drawBadges();
+    if (from) flyToList(from, id);
+    else if (!ed.msg) glowRow(id);
   };
+  // An added card flies from the grid into its row in the deck list, which lights up as it lands.
+  function glowRow(id) {
+    var row = byId('dlist') && byId('dlist').querySelector('[data-row="' + id + '"]');
+    if (!row || !Polish.enabled()) return;
+    row.scrollIntoView({ block: 'nearest' });
+    row.animate([{ boxShadow: '0 0 0 2px #f0d68c, 0 0 16px #f0d68c', transform: 'scale(1.04)' }, { boxShadow: '0 0 0 0 transparent', transform: 'none' }], { duration: 650 });
+  }
+  function flyToList(from, id) {
+    var row = byId('dlist').querySelector('[data-row="' + id + '"]'), list = byId('dpanel');
+    if (!Polish.enabled() || !row || !list.offsetWidth) return glowRow(id);
+    row.scrollIntoView({ block: 'nearest' });
+    var a = from.getBoundingClientRect(), b = row.getBoundingClientRect(), ghost = from.querySelector('.frame').cloneNode(true);
+    ghost.style.cssText = 'position:fixed;z-index:90;left:' + a.left + 'px;top:' + a.top + 'px;width:' + a.width + 'px;pointer-events:none;container-type:inline-size';
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'position:fixed;left:0;top:0;width:' + a.width + 'px;container-type:inline-size;z-index:90;pointer-events:none';
+    ghost.style.position = 'static';
+    wrap.appendChild(ghost);
+    document.body.appendChild(wrap);
+    var dx = b.left + b.width * .3 - a.left, dy = b.top + b.height / 2 - a.top - a.height * .2;
+    wrap.animate([{ transform: 'translate(' + a.left + 'px,' + a.top + 'px)', opacity: 1 }, { transform: 'translate(' + (a.left + dx * .5) + 'px,' + (a.top + dy * .5 - 30) + 'px) scale(.85) rotate(-4deg)', opacity: 1, offset: .5 }, { transform: 'translate(' + (a.left + dx) + 'px,' + (a.top + dy) + 'px) scale(.22)', opacity: 0 }],
+      { duration: 520, easing: 'cubic-bezier(.4,0,.6,1)', fill: 'forwards' });
+    setTimeout(function () { wrap.remove(); glowRow(id); }, 520);
+  }
   actions.remove = function (id) {
+    var e = ed.deck.list.filter(function (x) { return x[0] === id; })[0];
+    if (!e || ed.leaving === id) return;
+    Sfx.play('card-draw', { gap: 0 });
+    // The last copy slides its row out of the list before it goes.
+    var row = e[1] === 1 && byId('dlist') && byId('dlist').querySelector('[data-row="' + id + '"]');
+    if (row && Polish.enabled()) {
+      ed.leaving = id;
+      row.animate([{ transform: 'none', opacity: 1 }, { transform: 'translateX(40%)', opacity: 0 }], { duration: 240, easing: 'ease-in', fill: 'forwards' });
+      setTimeout(function () { ed.leaving = null; takeOut(id); }, 240);
+      return;
+    }
+    takeOut(id);
+  };
+  function takeOut(id) {
     var e = ed.deck.list.filter(function (x) { return x[0] === id; })[0];
     if (!e) return;
     e[1] -= 1;
@@ -537,16 +645,23 @@ var Screens = (function () {
     store();
     drawDeck();
     drawBadges();
-  };
+  }
   actions.zoom = function (id) { peek(id); byId('closeup').classList.add('open'); };
   actions.closeZoom = function () { byId('closeup').classList.remove('open'); };
   actions.openDeck = function () { byId('dpanel').classList.add('open'); };
   actions.closeDeck = function () { byId('dpanel').classList.remove('open'); };
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
+  // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
-    if (b && !b.disabled) actions[b.dataset.act](b.dataset.arg);
+    if (!b || b.disabled) return;
+    var name = b.dataset.act, arg = b.dataset.arg;
+    lastAct = b;
+    if (NAV[name] || (name === 'collection' && arg === undefined)) return Polish.lamp(function () { actions[name](arg); }, NAV[name] === 2);
+    actions[name](arg);
   });
   root.addEventListener('contextmenu', function (e) {
     var b = e.target.closest('.pcard');

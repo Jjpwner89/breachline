@@ -1,0 +1,4102 @@
+{
+  "set": "Breachline UI polish",
+  "date": "2026-11-11",
+  "generation": "Built-in image_gen",
+  "source_brief": "../UI_POLISH_BRIEFS.md",
+  "authorization": "User requested the ready assets plus ALL Group 2 options for Claude to implement and test.",
+  "source_policy": "Original PNG bytes and alpha preserved; no resizing or pixel editing.",
+  "assets": [
+    {
+      "name": "ui-medallion-rings.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nAsset type: two summoner portrait rings, 2 pieces side by side in a 2-column, 1-row grid. Each cell 768 x 1024. Centres at (384,512) and (1152,512). Two round portrait rings, each a thick band of blackened iron with a fine gold inner edge and small gold studs at the four quarters. The centre of each ring is completely empty and transparent, as is the outside.\nLeft: the player's ring, its gold edge bright and warm.\nRight: the enemy's ring, with a thin band of deep crimson enamel inside the gold edge.\nEach outer diameter about 570 pixels, with a generous round portrait opening about 440 pixels. Straight-on circular shapes, no perspective, no solid disc inside. Use the supplied existing medallion ONLY as an iron/gold material reference; remove its solid centre. No cast shadow outside objects.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-medallion-iron.png"
+      ],
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-eb83ff57-2cdf-4683-a02a-4fc8156037d8.png",
+      "grid": [
+        2,
+        1
+      ],
+      "superseded_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-232a61d4-53cd-4302-931d-d09676dc6bd3.png"
+      ],
+      "revisions": [
+        {
+          "prompt": "Use case: precise-object-edit.\nPreserve the two iron-and-gold rings exactly in design and finish. Change ONLY their layout: SHRINK each to 70% of its current size and centre at (384,512) and (1152,512). Outer diameters each about 480 pixels. Large fully transparent margin all round each ring. Centre holes must be completely transparent with no grey or gold haze, outside also alpha zero. Canvas remains EXACTLY 1536 x 1024 PNG. Do not zoom to fill. No background. Same four gold studs, warm player inner edge left and crimson enemy inset right.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-232a61d4-53cd-4302-931d-d09676dc6bd3.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-eb83ff57-2cdf-4683-a02a-4fc8156037d8.png"
+        }
+      ],
+      "current_prompt": "Use case: precise-object-edit.\nPreserve the two iron-and-gold rings exactly in design and finish. Change ONLY their layout: SHRINK each to 70% of its current size and centre at (384,512) and (1152,512). Outer diameters each about 480 pixels. Large fully transparent margin all round each ring. Centre holes must be completely transparent with no grey or gold haze, outside also alpha zero. Canvas remains EXACTLY 1536 x 1024 PNG. Do not zoom to fill. No background. Same four gold studs, warm player inner edge left and crimson enemy inset right.",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "7522d026946b34440ee48d3b032eb12142faa9a7621bf903de7c7f12f10c9e21",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1436798,
+        "partially_transparent_pixels": 136066,
+        "content_bounds_alpha_gt_8": [
+          218,
+          293,
+          1315,
+          730
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              768,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              218,
+              293,
+              644,
+              730
+            ],
+            "margins": [
+              218,
+              293,
+              124,
+              294
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              768,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              122,
+              293,
+              547,
+              730
+            ],
+            "margins": [
+              122,
+              293,
+              221,
+              294
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-medallion-rings.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            206,
+            281,
+            656,
+            742
+          ],
+          "visible_bounds_alpha_gt_8": [
+            218,
+            293,
+            644,
+            730
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            878,
+            281,
+            1327,
+            742
+          ],
+          "visible_bounds_alpha_gt_8": [
+            890,
+            293,
+            1315,
+            730
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-victory-crest.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\n\nA victory crest: a broad, softly folded ribbon of cream silk with swallowtail ends stretched across the middle, its face blank and smooth. Behind it, a wreath of gilded laurel leaves and two crossed spears with small crimson pennons. Fine, ceremonial and warm, as if just lifted from a commander's chest. One balanced unified heraldic assemblage, front-on. Broad calm ribbon face to hold a large word later. Fully contain all spear points, ribbon tails and leaves within canvas with 110px horizontal and 100px vertical transparent margins. No shields, crowns or added symbols.",
+      "references": [],
+      "grid": null,
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-543ea79f-d3d0-4eff-aa1d-5b19e3f938e3.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "4677da24efe951a51e9724edaed030b12f86d7a2688cd5f8c2ae270b480f2391",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 893924,
+        "partially_transparent_pixels": 678940,
+        "content_bounds_alpha_gt_8": [
+          49,
+          64,
+          1486,
+          955
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-victory-crest.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            37,
+            52,
+            1498,
+            967
+          ],
+          "visible_bounds_alpha_gt_8": [
+            49,
+            64,
+            1486,
+            955
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-defeat-crest.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\n\nThe same crest as the attached victory crest, fallen: the cream silk ribbon is torn through one end and stained with soot, its face still blank and readable; the laurel is scorched and missing leaves; one spear is snapped and its pennon burnt. Tilted slightly, as if it has dropped onto the table. Muted and sombre, not gory. Preserve the reference crest's exact component design, broad blank central ribbon area, overall size and materials. No table or background. Keep the full damaged crest and attached broken spear within generous transparent margins.",
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-543ea79f-d3d0-4eff-aa1d-5b19e3f938e3.png"
+      ],
+      "grid": null,
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-3dfdc1b9-308f-451d-8a3c-4a294c986cbc.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "e6e9b563c575af0ebbda25fd9d216d987c2a0842f06e4418412fdffc03bed151",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 933634,
+        "partially_transparent_pixels": 639230,
+        "content_bounds_alpha_gt_8": [
+          30,
+          42,
+          1495,
+          985
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-defeat-crest.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            18,
+            30,
+            1507,
+            997
+          ],
+          "visible_bounds_alpha_gt_8": [
+            30,
+            42,
+            1495,
+            985
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-spoils-ribbon.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\n\nA length of deep crimson silk ribbon draped diagonally, as if tied round the corner of a card, with a small tag of red wax pressed on it where the ends cross. The wax is blank and smooth. Rich and slightly worn. One isolated diagonal corner dressing with two silk ends crossing beneath a small plain wax tag. No actual card, tag lettering, heraldic device or bow rosette. Gentle silk folds and selective highlights, diffuse shadows contained within the ribbon. Entire piece comfortably inside transparent margins.",
+      "references": [],
+      "grid": null,
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-5bb72c9e-8300-4b73-a194-d74ca21ef69d.png",
+      "superseded_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-c182f895-b628-4e4f-b11b-275690efb8d4.png"
+      ],
+      "revisions": [
+        {
+          "prompt": "Use case: precise-object-edit.\nRecompose the attached crimson silk corner ribbon as a COMPLETE isolated object, no part cropped. Zoom out substantially so the ENTIRE ribbon, both diagonal strap ends, short swallowtail ends and plain red wax tag all fit inside the CENTRAL 1050 x 650 area of a 1536 x 1024 canvas. Shorten the long diagonal strap into a finite ribbon with neatly cut finished ends visible at both ends. It remains draped diagonally rising from lower-left to upper-right with small plain red wax where ends cross. Preserve the painted crimson silk, thin worn gold edging and material finish. No card, table or background. All exterior pixels truly transparent, every ribbon end at least 150 pixels away from any canvas edge. Do NOT output an edge-to-edge diagonal banner. EXACT 1536 x1024 PNG.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-c182f895-b628-4e4f-b11b-275690efb8d4.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-5bb72c9e-8300-4b73-a194-d74ca21ef69d.png"
+        }
+      ],
+      "current_prompt": "Use case: precise-object-edit.\nRecompose the attached crimson silk corner ribbon as a COMPLETE isolated object, no part cropped. Zoom out substantially so the ENTIRE ribbon, both diagonal strap ends, short swallowtail ends and plain red wax tag all fit inside the CENTRAL 1050 x 650 area of a 1536 x 1024 canvas. Shorten the long diagonal strap into a finite ribbon with neatly cut finished ends visible at both ends. It remains draped diagonally rising from lower-left to upper-right with small plain red wax where ends cross. Preserve the painted crimson silk, thin worn gold edging and material finish. No card, table or background. All exterior pixels truly transparent, every ribbon end at least 150 pixels away from any canvas edge. Do NOT output an edge-to-edge diagonal banner. EXACT 1536 x1024 PNG.",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "5ed2262cc639a881079a3f21b5ada37eda32b4e69d1b95a7078f581e572d8683",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1390484,
+        "partially_transparent_pixels": 182380,
+        "content_bounds_alpha_gt_8": [
+          227,
+          193,
+          1313,
+          837
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-spoils-ribbon.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            215,
+            181,
+            1325,
+            849
+          ],
+          "visible_bounds_alpha_gt_8": [
+            227,
+            193,
+            1313,
+            837
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-map-seals.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nFour round wax seals, each with a slightly irregular edge and a smooth, blank pressed face, seen from directly above. Four equal cells, 384px wide by 1024px tall, all centred at y=512.\n1. Not yet reached: dull, cool grey-brown wax, slightly dusty.\n2. The next battle: fresh, glossy crimson wax.\n3. Won: crimson wax covered in worn gold leaf.\n4. The final battle: a larger seal of black wax with a thin crimson rim.\nThe first three about 250px diameter, last about 290px; preserve at least 40px clear at each cell side. Do not engrave any mark or letter. Reference campaign map is ONLY scale/material context; no map, landscape or parchment behind the seals.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png"
+      ],
+      "grid": [
+        4,
+        1
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-dd29fe4a-4336-44c0-a5bc-440ae74c5676.png",
+      "superseded_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-3e1c440b-2841-4eee-a5ab-afe09b93ac49.png"
+      ],
+      "revisions": [
+        {
+          "prompt": "Use case: precise-object-edit.\nPreserve the FOUR wax seal designs exactly. Change the CANVAS and arrangement to EXACTLY 1536 x 1024 pixels, 3:2 landscape, NOT 3:1. Do NOT crop empty vertical canvas. Place all four in one horizontal row at y=512 with centres x=192,576,960,1344. First three seals only 230px diameter, final black seal 270px diameter. This means a very large EMPTY transparent band above and below the row, about 380 pixels tall each. All seals fully separate; at least 55px empty space to each equal 384px cell boundary. Original grey-brown, crimson, gold-leaf-covered crimson, black-with-crimson-rim order. All faces blank. Transparent background, zero alpha between pieces, no table or map. Keep the art small on the page, do NOT zoom to fit.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-3e1c440b-2841-4eee-a5ab-afe09b93ac49.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-dd29fe4a-4336-44c0-a5bc-440ae74c5676.png"
+        }
+      ],
+      "current_prompt": "Use case: precise-object-edit.\nPreserve the FOUR wax seal designs exactly. Change the CANVAS and arrangement to EXACTLY 1536 x 1024 pixels, 3:2 landscape, NOT 3:1. Do NOT crop empty vertical canvas. Place all four in one horizontal row at y=512 with centres x=192,576,960,1344. First three seals only 230px diameter, final black seal 270px diameter. This means a very large EMPTY transparent band above and below the row, about 380 pixels tall each. All seals fully separate; at least 55px empty space to each equal 384px cell boundary. Original grey-brown, crimson, gold-leaf-covered crimson, black-with-crimson-rim order. All faces blank. Transparent background, zero alpha between pieces, no table or map. Keep the art small on the page, do NOT zoom to fit.",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "08863ce55ed73e932bbe00326e73a626e4b262852e39ced27d967c0e12860c74",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1389342,
+        "partially_transparent_pixels": 183522,
+        "content_bounds_alpha_gt_8": [
+          109,
+          378,
+          1442,
+          654
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              384,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              109,
+              404,
+              335,
+              626
+            ],
+            "margins": [
+              109,
+              404,
+              49,
+              398
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              384,
+              0,
+              768,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              76,
+              400,
+              308,
+              630
+            ],
+            "margins": [
+              76,
+              400,
+              76,
+              394
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              768,
+              0,
+              1152,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              50,
+              400,
+              281,
+              628
+            ],
+            "margins": [
+              50,
+              400,
+              103,
+              396
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              1152,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              11,
+              378,
+              290,
+              654
+            ],
+            "margins": [
+              11,
+              378,
+              94,
+              370
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-map-seals.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            97,
+            392,
+            347,
+            638
+          ],
+          "visible_bounds_alpha_gt_8": [
+            109,
+            404,
+            335,
+            626
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            448,
+            388,
+            704,
+            642
+          ],
+          "visible_bounds_alpha_gt_8": [
+            460,
+            400,
+            692,
+            630
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            806,
+            388,
+            1061,
+            640
+          ],
+          "visible_bounds_alpha_gt_8": [
+            818,
+            400,
+            1049,
+            628
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            1151,
+            366,
+            1454,
+            666
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1163,
+            378,
+            1442,
+            654
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-army-figures.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nFive small tabletop miniatures, each a single figure on a round brass base, cast in brass and pewter and lightly painted at the edges, like pieces on a general's campaign map. Each is a clear silhouette standing still, facing the viewer. Seen from slightly above and in front, intended to read at about 60 pixels tall. Five equal cells in one row, each 307.2px wide by 1024px tall; centres x=153.6,460.8,768,1075.2,1382.4, y=512. All bases same size, maximum figure width 230px, overall silhouette height about 600px, with generous transparent gaps.\n1. A male knight carrying a tall ivory-and-gold pennon, using reference 1 Sunmane lancer's armour.\n2. A robed scholar holding up a lantern, using reference 2 Conclave field scholar's blue-and-ochre kit.\n3. A cloaked court bailiff with a tall staff of office, using reference 3's severe dark/violet court costume.\n4. A broad male orc warrior carrying a rust-red war banner, coarse and clearly not human, using reference 4 warchief's anatomy and kit.\n5. A great shaggy bison, using reference 5 Elder Herd bull's anatomy.\nTransform these card subjects into restrained metal tabletop miniatures, not tiny full-color living people; no scenes, written symbols, extra figures or secondary objects. Clear connected anatomy, two arms/two legs on each humanoid, four legs on bison. Pennons blank.\nFINAL OUTPUT REQUIREMENT: the full canvas is exactly 1536 pixels wide by 1024 pixels high, aspect ratio 3:2. Do NOT crop the canvas around the row of objects and do NOT make a panoramic image. Keep the spacious unused transparent canvas above and below.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/sunmane-lancer.jpg",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/conclave-field-scholar.jpg",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/ashen-court-bailiff.jpg",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/orc-warchief.jpg",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/elder-herd-bull.jpg"
+      ],
+      "grid": [
+        5,
+        1
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-98244550-2c70-4e79-914f-13d90df37c9d.png",
+      "superseded_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-ffb63138-14db-4a7d-bb34-e8387397703b.png"
+      ],
+      "revisions": [
+        {
+          "prompt": "Use case: precise-object-edit.\nPreserve ALL FIVE miniature designs, faces, costumes, species, banners, round brass bases, order and painted metal finish from this sheet. Change ONLY layout and scale: shrink EACH entire figure including its pennon/banner and base to 70% of its current size, preserving proportions. Place each in its own nonoverlapping equal-width cell on an EXACT 1536 x1024 PNG, ONE ROW of FIVE. Each cell width307.2px, centres x=153.6,460.8,768,1075.2,1382.4 and y=512. Each COMPLETE silhouette must be at most 200px wide including flags and cape. At least 50px entirely empty transparent space on both sides inside each cell. All base bottoms near y=700. Especially keep the orc's banner ENTIRELY inside cell4 and away from the bison. Make tall pennons narrower as necessary rather than crossing cell boundaries. No details outside the figure's allotted cell. Large empty transparent top and bottom bands, no ground or scene. All five separate isolated tabletop pieces.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-ffb63138-14db-4a7d-bb34-e8387397703b.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-98244550-2c70-4e79-914f-13d90df37c9d.png"
+        }
+      ],
+      "current_prompt": "Use case: precise-object-edit.\nPreserve ALL FIVE miniature designs, faces, costumes, species, banners, round brass bases, order and painted metal finish from this sheet. Change ONLY layout and scale: shrink EACH entire figure including its pennon/banner and base to 70% of its current size, preserving proportions. Place each in its own nonoverlapping equal-width cell on an EXACT 1536 x1024 PNG, ONE ROW of FIVE. Each cell width307.2px, centres x=153.6,460.8,768,1075.2,1382.4 and y=512. Each COMPLETE silhouette must be at most 200px wide including flags and cape. At least 50px entirely empty transparent space on both sides inside each cell. All base bottoms near y=700. Especially keep the orc's banner ENTIRELY inside cell4 and away from the bison. Make tall pennons narrower as necessary rather than crossing cell boundaries. No details outside the figure's allotted cell. Large empty transparent top and bottom bands, no ground or scene. All five separate isolated tabletop pieces.",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "b06253ed72e4608b5ab5f1dcaa86505b871e2d9783928f57cf27e2cd1520b692",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1344957,
+        "partially_transparent_pixels": 227907,
+        "content_bounds_alpha_gt_8": [
+          61,
+          325,
+          1473,
+          719
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              307,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              61,
+              325,
+              262,
+              718
+            ],
+            "margins": [
+              61,
+              325,
+              45,
+              306
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              307,
+              0,
+              614,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              84,
+              407,
+              247,
+              718
+            ],
+            "margins": [
+              84,
+              407,
+              60,
+              306
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              614,
+              0,
+              922,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              70,
+              367,
+              229,
+              718
+            ],
+            "margins": [
+              70,
+              367,
+              79,
+              306
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              922,
+              0,
+              1229,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              27,
+              328,
+              274,
+              718
+            ],
+            "margins": [
+              27,
+              328,
+              33,
+              306
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              1229,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              49,
+              435,
+              244,
+              719
+            ],
+            "margins": [
+              49,
+              435,
+              63,
+              305
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-army-figures.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            49,
+            313,
+            274,
+            730
+          ],
+          "visible_bounds_alpha_gt_8": [
+            61,
+            325,
+            262,
+            718
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            379,
+            395,
+            566,
+            730
+          ],
+          "visible_bounds_alpha_gt_8": [
+            391,
+            407,
+            554,
+            718
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            672,
+            355,
+            855,
+            730
+          ],
+          "visible_bounds_alpha_gt_8": [
+            684,
+            367,
+            843,
+            718
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            937,
+            316,
+            1208,
+            730
+          ],
+          "visible_bounds_alpha_gt_8": [
+            949,
+            328,
+            1196,
+            718
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            1266,
+            423,
+            1485,
+            731
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1278,
+            435,
+            1473,
+            719
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-gilt-ornaments.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nSix ornaments in raised, slightly worn gold leaf, fine and restrained, arranged 3 columns by 2 rows, each equal cell 512px square:\n1. Top left: a long horizontal divider, a thin line with a small leaf flourish at the centre, about 390px wide.\n2. Top middle: a short horizontal divider, about 240px wide.\n3. Top right: a corner flourish for the top-left corner of a panel, filling only an L-shaped corner, not a whole frame.\n4. Bottom left: a small flourish to sit under a heading.\n5. Bottom middle: a small plain diamond bullet.\n6. Bottom right: a closing mark for the end of a section, a petite symmetrical leaf finial.\nEvery ornament independently centred in its cell, generous transparent space. Delicate but legible gold with shallow raised texture; no letters, typographic characters or decorative background.\nFINAL OUTPUT REQUIREMENT: the full canvas is exactly 1536 pixels wide by 1024 pixels high, aspect ratio 3:2. Do NOT crop the canvas around the row of objects and do NOT make a panoramic image. Keep the spacious unused transparent canvas above and below.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": null,
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-49b23cd4-3746-4800-99b2-6309138b4b3a.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "42ad865e53e80eacd988b8be78ff2522ce9d0098d2754727b9f43f03caea290a",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1479066,
+        "partially_transparent_pixels": 93798,
+        "content_bounds_alpha_gt_8": [
+          34,
+          112,
+          1449,
+          814
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              34,
+              226,
+              492,
+              287
+            ],
+            "margins": [
+              34,
+              226,
+              20,
+              225
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              108,
+              241,
+              403,
+              291
+            ],
+            "margins": [
+              108,
+              241,
+              109,
+              221
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              80,
+              112,
+              425,
+              426
+            ],
+            "margins": [
+              80,
+              112,
+              87,
+              86
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              100,
+              207,
+              428,
+              282
+            ],
+            "margins": [
+              100,
+              207,
+              84,
+              230
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              223,
+              204,
+              290,
+              285
+            ],
+            "margins": [
+              223,
+              204,
+              222,
+              227
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              131,
+              191,
+              367,
+              302
+            ],
+            "margins": [
+              131,
+              191,
+              145,
+              210
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-gilt-ornaments.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            22,
+            214,
+            504,
+            299
+          ],
+          "visible_bounds_alpha_gt_8": [
+            34,
+            226,
+            492,
+            287
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            608,
+            229,
+            927,
+            303
+          ],
+          "visible_bounds_alpha_gt_8": [
+            620,
+            241,
+            915,
+            291
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1092,
+            100,
+            1461,
+            438
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1104,
+            112,
+            1449,
+            426
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            88,
+            707,
+            440,
+            806
+          ],
+          "visible_bounds_alpha_gt_8": [
+            100,
+            719,
+            428,
+            794
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            723,
+            704,
+            814,
+            809
+          ],
+          "visible_bounds_alpha_gt_8": [
+            735,
+            716,
+            802,
+            797
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1143,
+            691,
+            1403,
+            826
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1155,
+            703,
+            1391,
+            814
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-life-wax.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nLife counter OPTION A: seal and nail rail. Four separate pieces in one row in equal 384 x 1024 cells centred at x=192,576,960,1344 and y=512. Keep ALL paint within central 270px of each cell width and leave completely transparent gaps.\n1. A large, thick crimson wax seal, like a seal on a royal letter but deeper: raised rolled rim, smooth blank pressed face slightly sunk below the rim, one fat drip spilling over lower right edge, visible thickness at its side, soft compact cast shadow beneath. It must have weight, not look like a sticker.\n2. One round brass nail head polished and catching the light; include only a minute wood collar if needed, no board.\n3. The empty hole left where such a nail was pulled out, dark, with a small irregular splintered wood collar as a standalone cutout.\n4. A short straight length of dark oak rail, flat top face and uniform straight ends to repeat end to end, horizontal, blank wood grain. No nails in this rail.\nPainted overhead view with side thickness at lower edges. These are four separate interface components, no table background.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Do not trim the empty transparent top and bottom. Small isolated components, not oversized full-frame objects.",
+      "references": [],
+      "grid": [
+        4,
+        1
+      ],
+      "option": "life / A / seal and nail rail",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-a3d2e892-3479-468e-9a14-457eb56a7f9d.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "b4beee2accf990ed162137759453cc658a6255e419c63c4088286dcb05c179df",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1356111,
+        "partially_transparent_pixels": 216753,
+        "content_bounds_alpha_gt_8": [
+          33,
+          337,
+          1501,
+          709
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              384,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              33,
+              337,
+              384,
+              709
+            ],
+            "margins": [
+              33,
+              337,
+              0,
+              315
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              384,
+              0,
+              768,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              431,
+              296,
+              615
+            ],
+            "margins": [
+              0,
+              431,
+              88,
+              409
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              768,
+              0,
+              1152,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              65,
+              448,
+              384,
+              592
+            ],
+            "margins": [
+              65,
+              448,
+              0,
+              432
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              1152,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              456,
+              349,
+              592
+            ],
+            "margins": [
+              0,
+              456,
+              35,
+              432
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-life-wax.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            21,
+            325,
+            398,
+            721
+          ],
+          "visible_bounds_alpha_gt_8": [
+            33,
+            337,
+            386,
+            709
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            495,
+            419,
+            692,
+            627
+          ],
+          "visible_bounds_alpha_gt_8": [
+            507,
+            431,
+            680,
+            615
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            821,
+            436,
+            984,
+            594
+          ],
+          "visible_bounds_alpha_gt_8": [
+            833,
+            448,
+            972,
+            582
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            1075,
+            444,
+            1513,
+            604
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1087,
+            456,
+            1501,
+            592
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-life-wax-brass-cup.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nLife counter OPTION B: seal in a brass cup. Three separate pieces in one row in equal 512px-wide cells centred on y=512; each fully contained with at least 100px empty space on either side.\n1. A large thick crimson wax seal with raised rolled rim, blank smooth pressed face sunk beneath the rim and a single fat drip at lower right, set into a heavy round brass bezel like a signet or shallow brass cup. It looks heavy and three-dimensional with visible lower side and soft compact shadow. Straight-on from just slightly above.\n2. A polished upright brass notch, a short substantial metal tally peg viewed consistently from just above, bright upper-left highlight.\n3. The exact same brass notch filed down and blackened, shorter/dull but same width and base.\nBlank surfaces, no engravings or numbers. No wooden rail or other backdrop.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Do not trim the empty transparent top and bottom. Small isolated components, not oversized full-frame objects.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "life / B / brass cup",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-3670709c-5dec-4fd9-9796-2ba5cc0a5508.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "61a161044e61089d5e966ad0a0890c67193b1ec1e0bf4bf9587be0c6bfbb5772",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1239815,
+        "partially_transparent_pixels": 333049,
+        "content_bounds_alpha_gt_8": [
+          81,
+          296,
+          1408,
+          803
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              81,
+              296,
+              512,
+              803
+            ],
+            "margins": [
+              81,
+              296,
+              0,
+              221
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              366,
+              456,
+              744
+            ],
+            "margins": [
+              0,
+              366,
+              56,
+              280
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              149,
+              452,
+              384,
+              723
+            ],
+            "margins": [
+              149,
+              452,
+              128,
+              301
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-life-wax-brass-cup.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            69,
+            284,
+            566,
+            815
+          ],
+          "visible_bounds_alpha_gt_8": [
+            81,
+            296,
+            554,
+            803
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            722,
+            354,
+            980,
+            738
+          ],
+          "visible_bounds_alpha_gt_8": [
+            734,
+            366,
+            968,
+            726
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1161,
+            440,
+            1420,
+            735
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1173,
+            452,
+            1408,
+            723
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-end-turn.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nEnd turn OPTION A: bronze press. Two pieces side by side in equal 768 x 1024 cells, centres (384,512),(1152,512), each outer diameter about 520px including shadow and no larger than 570px.\nA heavy bronze seal-press seen from directly above, like the top of a great desk seal: thick disc of cast bronze, deep bevelled edge, raised outer ring with a band of small rivets, smooth flat blank centre where words will be written. Thickness shows at lower edge; rests with a soft compact cast shadow, no table.\nLeft: player's turn, warm bronze with bright worn highlights on raised ring.\nRight: enemy's turn, exact same press dark and tarnished, light gone dull.\nMake the large blank centre readily usable for two words; no handle, emblem, letters or numeral.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Do not trim the empty transparent top and bottom. Small isolated components with very generous empty space.",
+      "references": [],
+      "grid": [
+        2,
+        1
+      ],
+      "option": "end turn / A / bronze press",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-4f6b17f0-8602-44fc-abf0-cbed61d8c73e.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "4a8fd4bda75280befe749f995d9971bf1ecce5903fa413e21c21ae9eea561976",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 822741,
+        "partially_transparent_pixels": 750123,
+        "content_bounds_alpha_gt_8": [
+          89,
+          200,
+          1444,
+          883
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              768,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              89,
+              201,
+              710,
+              878
+            ],
+            "margins": [
+              89,
+              201,
+              58,
+              146
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              768,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              53,
+              200,
+              676,
+              883
+            ],
+            "margins": [
+              53,
+              200,
+              92,
+              141
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-end-turn.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            77,
+            189,
+            722,
+            890
+          ],
+          "visible_bounds_alpha_gt_8": [
+            89,
+            201,
+            710,
+            878
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            809,
+            188,
+            1456,
+            895
+          ],
+          "visible_bounds_alpha_gt_8": [
+            821,
+            200,
+            1444,
+            883
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-end-turn-hourglass.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nEnd turn OPTION B: hourglass. THREE separate pieces in a single row, equal 512px-wide cells, centres y=512. First cell holds one tall brass-framed hourglass with turned posts and clear glass, seen from the front, EMPTY of sand. Second cell holds one isolated TOP heap of warm pale sand for that same hourglass. Third cell holds one isolated BOTTOM heap of the same sand. Top heap has a shallow upper surface and narrows down to the neck; bottom heap is a low conical pile. The sand shapes fit inside the exact glass-bulb contours without painting any glass or brass onto the sand pieces. Hourglass max 300px wide and 650px tall, generous clear margins. Glass background stays truly transparent with only delicate painted contour reflections. No clock face, text, symbols or floating sand elsewhere.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Do not trim the empty transparent top and bottom. Small isolated components with very generous empty space.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "end turn / B / hourglass",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-10f9cad9-cc90-4de6-8789-f99192336266.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "6606f745f14d27c8dcc52590bd47d155bd0f5f4915d66859c1feb84f3715e65e",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 783397,
+        "partially_transparent_pixels": 789467,
+        "content_bounds_alpha_gt_8": [
+          59,
+          158,
+          1410,
+          854
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              59,
+              158,
+              447,
+              854
+            ],
+            "margins": [
+              59,
+              158,
+              65,
+              170
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              123,
+              369,
+              392,
+              622
+            ],
+            "margins": [
+              123,
+              369,
+              120,
+              402
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              113,
+              666,
+              386,
+              818
+            ],
+            "margins": [
+              113,
+              666,
+              126,
+              206
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-end-turn-hourglass.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            47,
+            146,
+            459,
+            866
+          ],
+          "visible_bounds_alpha_gt_8": [
+            59,
+            158,
+            447,
+            854
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            623,
+            357,
+            916,
+            634
+          ],
+          "visible_bounds_alpha_gt_8": [
+            635,
+            369,
+            904,
+            622
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1125,
+            654,
+            1422,
+            830
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1137,
+            666,
+            1410,
+            818
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-end-turn-camp-bell.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nEnd turn OPTION C: camp bell. One brass hand bell hanging from a short dark iron bracket, seen from the front. Thick warm worn brass bell, clear open lower lip and a modest visible clapper, attached by its top eye to a compact blackened-iron bracket with a flat mounting foot. One unified fully readable physical object, no hand, rope, table, wall or scenery. Modest selective brass highlights and matte black iron. Centred in the canvas with large transparent margins; about 700px wide by 720px tall.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Do not trim the empty transparent top and bottom. Small isolated components with very generous empty space.",
+      "references": [],
+      "grid": [
+        1,
+        1
+      ],
+      "option": "end turn / C / camp bell",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-26dba83d-40f7-45e0-a59a-c6a210babcf5.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "34987fd1dda672d56f9311e417f9ace759051b8a2bb61cc0677d40a0366680e4",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1356822,
+        "partially_transparent_pixels": 216042,
+        "content_bounds_alpha_gt_8": [
+          505,
+          112,
+          1030,
+          929
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              505,
+              112,
+              1030,
+              929
+            ],
+            "margins": [
+              505,
+              112,
+              506,
+              95
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-end-turn-camp-bell.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            493,
+            100,
+            1042,
+            941
+          ],
+          "visible_bounds_alpha_gt_8": [
+            505,
+            112,
+            1030,
+            929
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-status-grounds.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nStatus letter grounds OPTION 1: illuminated initials. Three separate small square grounds for an illuminated capital letter, as at start of a medieval manuscript. ONE ROW, three equal 512px-wide cells, centred y=512, each square about 300px across. Each has a deep colour field framed by a fine raised gold border, delicate gold vine curling into each corner. The centre of each square is plain and blank, large enough for ONE bold letter added by code. Left deep ultramarine blue, middle deep vermilion red, right deep green. Painted dimensional materials, restrained detail that will read at 18 pixels, not ornate filigree. No letters painted.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Retain generous transparent canvas above and below the row.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "status / 1 / illuminated initials",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-6a1bb302-377c-400c-ba2b-2efe576391ac.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "149ba2e747384f6ca31dab64c91e780a737e23ddfe7625b6fcf64e9ef97ce441",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 998149,
+        "partially_transparent_pixels": 574715,
+        "content_bounds_alpha_gt_8": [
+          61,
+          291,
+          1474,
+          716
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              61,
+              291,
+              493,
+              715
+            ],
+            "margins": [
+              61,
+              291,
+              19,
+              309
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              41,
+              291,
+              473,
+              716
+            ],
+            "margins": [
+              41,
+              291,
+              39,
+              308
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              20,
+              291,
+              450,
+              716
+            ],
+            "margins": [
+              20,
+              291,
+              62,
+              308
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-status-grounds.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            49,
+            279,
+            505,
+            727
+          ],
+          "visible_bounds_alpha_gt_8": [
+            61,
+            291,
+            493,
+            715
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            541,
+            279,
+            997,
+            728
+          ],
+          "visible_bounds_alpha_gt_8": [
+            553,
+            291,
+            985,
+            716
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1032,
+            279,
+            1486,
+            728
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1044,
+            291,
+            1474,
+            716
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-status-grounds-enamel-shields.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nStatus letter grounds OPTION 2: enamel shields. THREE small heater shields in ONE ROW, equal 512px-wide cells, centred y=512, same size about 300px wide and 350px high, generous transparent margins. Gold rims and blank fields of enamel: LEFT deep blue, MIDDLE deep red, RIGHT deep green. Restrained worn metal edge, softly rounded bevel and selective highlight, front-on. Large plain uncluttered field for one capital letter to be added by code. No painted letters, charges, emblems or decorative objects. Readable silhouette at 18 pixels.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2, never panoramic. Retain generous transparent canvas above and below the row.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "status / 2 / enamel shields",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-73846f84-6966-4b73-ab1e-5ecaa8db627d.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "55890139fb55e51c43f120d90b151f71c8c36de11ed1c58b3298273cf7e5dc2d",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1119652,
+        "partially_transparent_pixels": 453212,
+        "content_bounds_alpha_gt_8": [
+          82,
+          268,
+          1455,
+          757
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              82,
+              268,
+              492,
+              757
+            ],
+            "margins": [
+              82,
+              268,
+              20,
+              267
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              51,
+              269,
+              461,
+              757
+            ],
+            "margins": [
+              51,
+              269,
+              51,
+              267
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              23,
+              268,
+              431,
+              757
+            ],
+            "margins": [
+              23,
+              268,
+              81,
+              267
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-status-grounds-enamel-shields.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            70,
+            256,
+            504,
+            769
+          ],
+          "visible_bounds_alpha_gt_8": [
+            82,
+            268,
+            492,
+            757
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            551,
+            257,
+            985,
+            769
+          ],
+          "visible_bounds_alpha_gt_8": [
+            563,
+            269,
+            973,
+            757
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1035,
+            256,
+            1467,
+            769
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1047,
+            268,
+            1455,
+            757
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-status-grounds-brass-bar.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nStatus letter grounds OPTION 3: engraved brass bar. THREE separate components in ONE ROW, equal 512px-wide cells centred at y=512. Left one horizontal brass plate with rounded ends, brushed and blank, about 350px wide by 100px high. Middle its LEFT rounded end cap as a separate piece; right its RIGHT rounded end cap as a separate piece. Both caps match the bar's exact 100px height and bevel; their inner sides are flat vertical cuts for stretching. Warm subtly worn brass, quiet flat central face, no actual engraving, writing or symbols: the game adds status letters. Keep scale identical and broad transparent margins.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Retain generous transparent canvas and gaps; do not crop around the row.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "status / 3 / brass bar",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-398834f4-2225-4b9e-a7bb-979e9970e8c8.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "678b1a4118bdc99569bf191b9647d059250daab007f84bf2e485a69f6af42939",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1420479,
+        "partially_transparent_pixels": 152385,
+        "content_bounds_alpha_gt_8": [
+          39,
+          434,
+          1442,
+          609
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              39,
+              434,
+              512,
+              609
+            ],
+            "margins": [
+              39,
+              434,
+              0,
+              415
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              434,
+              435,
+              609
+            ],
+            "margins": [
+              0,
+              434,
+              77,
+              415
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              271,
+              434,
+              418,
+              609
+            ],
+            "margins": [
+              271,
+              434,
+              94,
+              415
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-status-grounds-brass-bar.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            27,
+            422,
+            650,
+            621
+          ],
+          "visible_bounds_alpha_gt_8": [
+            39,
+            434,
+            638,
+            609
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            786,
+            422,
+            959,
+            621
+          ],
+          "visible_bounds_alpha_gt_8": [
+            798,
+            434,
+            947,
+            609
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1283,
+            422,
+            1454,
+            621
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1295,
+            434,
+            1442,
+            609
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-status-grounds-wax-tabs.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nStatus letter grounds OPTION 4: wax tabs. THREE small thick wax drops with smooth blank pressed faces, in ONE ROW, equal 512px-wide cells centred y=512, each about 280px across. LEFT deep blue wax, MIDDLE deep red wax, RIGHT deep green wax. Slightly irregular circular outlines, visible thick lower side and compact rim, modest wax highlights. Blank faces large enough for a bold capital letter to be added later. Readable at 18 pixels, no seals impressed into wax, no letters, no symbols, no thread.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Retain generous transparent canvas and gaps; do not crop around the row.",
+      "references": [],
+      "grid": [
+        3,
+        1
+      ],
+      "option": "status / 4 / wax tabs",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-6efcc708-6d54-4b97-88f0-157aceca9e20.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "66ea78321571cbcdb701786f86246fa2f22653c856074c7a0a066ab0e13b4c8d",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1141467,
+        "partially_transparent_pixels": 431397,
+        "content_bounds_alpha_gt_8": [
+          58,
+          294,
+          1490,
+          729
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              58,
+              297,
+              476,
+              724
+            ],
+            "margins": [
+              58,
+              297,
+              36,
+              300
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              45,
+              294,
+              467,
+              724
+            ],
+            "margins": [
+              45,
+              294,
+              45,
+              300
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              39,
+              298,
+              466,
+              729
+            ],
+            "margins": [
+              39,
+              298,
+              46,
+              295
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-status-grounds-wax-tabs.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            46,
+            285,
+            488,
+            736
+          ],
+          "visible_bounds_alpha_gt_8": [
+            58,
+            297,
+            476,
+            724
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            545,
+            282,
+            991,
+            736
+          ],
+          "visible_bounds_alpha_gt_8": [
+            557,
+            294,
+            979,
+            724
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1051,
+            286,
+            1502,
+            741
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1063,
+            298,
+            1490,
+            729
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-buttons.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nButton material OPTION 1 / blackened iron and gold. THREE separate pieces in ONE COLUMN, three equal cells 1536px wide by 341.33px high, centres y=170.67,512,853.33 at x=768. Top: one wide main action button plate, about five times as wide as tall, approximately 1000px by 180px, with strongest finish and trim. Middle: exact same shape/size with quieter finish for ordinary actions. Bottom: one small ROUND icon button, same 180px height. All pieces seen straight-on, upper-left light, fronts blank. Middle portion of each wide plate must be plain, flat and even for sideways stretching; ornament at edges/ends only. No text, letters, glyphs or icons.\nMaterial: Forged blackened dark iron with a fine inlaid gold line round the edge and a small gold rivet at each end; ordinary version has a bronze line. Quiet matte forged surfaces with selective raised metal highlights.\nPreserve at least 70px of fully transparent vertical space in each cell above and below the main body, and 200px horizontal margins. No wooden backing or scene.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        1,
+        3
+      ],
+      "option": "buttons / 1 / blackened iron and gold",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-71bb84b7-b7b0-43ae-951a-a367c23a75cd.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "8529baf5ca67c8689f484c0080b1067fa0187ccf937007cc2ad45f94711341a5",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 971919,
+        "partially_transparent_pixels": 600945,
+        "content_bounds_alpha_gt_8": [
+          129,
+          113,
+          1407,
+          981
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              341
+            ],
+            "bounds_alpha_gt_8": [
+              129,
+              113,
+              1407,
+              341
+            ],
+            "margins": [
+              129,
+              113,
+              129,
+              0
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              0,
+              341,
+              1536,
+              683
+            ],
+            "bounds_alpha_gt_8": [
+              129,
+              0,
+              1407,
+              337
+            ],
+            "margins": [
+              129,
+              0,
+              129,
+              5
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              0,
+              683,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              661,
+              87,
+              870,
+              298
+            ],
+            "margins": [
+              661,
+              87,
+              666,
+              43
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-buttons.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            117,
+            101,
+            1419,
+            358
+          ],
+          "visible_bounds_alpha_gt_8": [
+            129,
+            113,
+            1407,
+            346
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            117,
+            436,
+            1419,
+            690
+          ],
+          "visible_bounds_alpha_gt_8": [
+            129,
+            448,
+            1407,
+            678
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            649,
+            758,
+            882,
+            993
+          ],
+          "visible_bounds_alpha_gt_8": [
+            661,
+            770,
+            870,
+            981
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-buttons-crimson-lacquer.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nButton material OPTION 2 / crimson lacquer. THREE separate pieces in ONE COLUMN, three equal cells 1536px wide by 341.33px high, centres y=170.67,512,853.33 at x=768. Top: one wide main action button plate, about five times as wide as tall, approximately 1000px by 180px, with strongest finish and trim. Middle: exact same shape/size with quieter finish for ordinary actions. Bottom: one small ROUND icon button, same 180px height. All pieces seen straight-on, upper-left light, fronts blank. Middle portion of each wide plate must be plain, flat and even for sideways stretching; ornament at edges/ends only. No text, letters, glyphs or icons.\nMaterial: Glossy deep red enamel with a thin gold rim; ordinary version is dark near-black lacquer with a gold rim. Selective soft enamel reflection, avoid mirror glare across the label area.\nPreserve at least 70px of fully transparent vertical space in each cell above and below the main body, and 200px horizontal margins. No wooden backing or scene.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        1,
+        3
+      ],
+      "option": "buttons / 2 / crimson lacquer",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-e305c5e8-bab4-476a-b643-389b9720b56c.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "9f2f6c4bed33aa70f113da4796503f1a9b38beac10fdf7874c1ac37613c07f3e",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1017692,
+        "partially_transparent_pixels": 555172,
+        "content_bounds_alpha_gt_8": [
+          158,
+          109,
+          1377,
+          957
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              341
+            ],
+            "bounds_alpha_gt_8": [
+              158,
+              109,
+              1377,
+              329
+            ],
+            "margins": [
+              158,
+              109,
+              159,
+              12
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              0,
+              341,
+              1536,
+              683
+            ],
+            "bounds_alpha_gt_8": [
+              158,
+              78,
+              1377,
+              296
+            ],
+            "margins": [
+              158,
+              78,
+              159,
+              46
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              0,
+              683,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              657,
+              51,
+              878,
+              274
+            ],
+            "margins": [
+              657,
+              51,
+              658,
+              67
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-buttons-crimson-lacquer.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            146,
+            97,
+            1389,
+            341
+          ],
+          "visible_bounds_alpha_gt_8": [
+            158,
+            109,
+            1377,
+            329
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            146,
+            407,
+            1389,
+            649
+          ],
+          "visible_bounds_alpha_gt_8": [
+            158,
+            419,
+            1377,
+            637
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            645,
+            722,
+            890,
+            969
+          ],
+          "visible_bounds_alpha_gt_8": [
+            657,
+            734,
+            878,
+            957
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-buttons-engraved-brass.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nButton material OPTION 3 / engraved brass. THREE separate pieces in ONE COLUMN, three equal cells 1536px wide by 341.33px high, centres y=170.67,512,853.33 at x=768. Top: one wide main action button plate, about five times as wide as tall, approximately 1000px by 180px, with strongest finish and trim. Middle: exact same shape/size with quieter finish for ordinary actions. Bottom: one small ROUND icon button, same 180px height. All pieces seen straight-on, upper-left light, fronts blank. Middle portion of each wide plate must be plain, flat and even for sideways stretching; ornament at edges/ends only. No text, letters, glyphs or icons.\nMaterial: Brushed warm brass with a bevelled edge; ordinary version is cool pewter. Restrained engraving may appear along edges only; no marks or lettering on the smooth central face.\nPreserve at least 70px of fully transparent vertical space in each cell above and below the main body, and 200px horizontal margins. No wooden backing or scene.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        1,
+        3
+      ],
+      "option": "buttons / 3 / engraved brass",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-35ef0c55-b122-449a-99c1-8a1b6534fc47.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "63ce94a237f43c37059e4575e465297c7ce6f3930bb9f94b7ff27dd639bdcf25",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 966156,
+        "partially_transparent_pixels": 606708,
+        "content_bounds_alpha_gt_8": [
+          107,
+          95,
+          1430,
+          973
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              341
+            ],
+            "bounds_alpha_gt_8": [
+              107,
+              95,
+              1429,
+              319
+            ],
+            "margins": [
+              107,
+              95,
+              107,
+              22
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              0,
+              341,
+              1536,
+              683
+            ],
+            "bounds_alpha_gt_8": [
+              107,
+              76,
+              1430,
+              300
+            ],
+            "margins": [
+              107,
+              76,
+              106,
+              42
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              0,
+              683,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              649,
+              50,
+              886,
+              290
+            ],
+            "margins": [
+              649,
+              50,
+              650,
+              51
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-buttons-engraved-brass.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            95,
+            83,
+            1441,
+            331
+          ],
+          "visible_bounds_alpha_gt_8": [
+            107,
+            95,
+            1429,
+            319
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            95,
+            405,
+            1442,
+            653
+          ],
+          "visible_bounds_alpha_gt_8": [
+            107,
+            417,
+            1430,
+            641
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            637,
+            721,
+            898,
+            985
+          ],
+          "visible_bounds_alpha_gt_8": [
+            649,
+            733,
+            886,
+            973
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-buttons-tooled-leather.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nButton material OPTION 4 / tooled leather. THREE separate pieces in ONE COLUMN, three equal cells 1536px wide by 341.33px high, centres y=170.67,512,853.33 at x=768. Top: one wide main action button plate, about five times as wide as tall, approximately 1000px by 180px, with strongest finish and trim. Middle: exact same shape/size with quieter finish for ordinary actions. Bottom: one small ROUND icon button, same 180px height. All pieces seen straight-on, upper-left light, fronts blank. Middle portion of each wide plate must be plain, flat and even for sideways stretching; ornament at edges/ends only. No text, letters, glyphs or icons.\nMaterial: Dark brown tooled leather with stitched border and small brass corner caps; ordinary version is darker and plainer leather. Matte natural leather with quiet grain; tooling only near outer border, no pattern in centre.\nPreserve at least 70px of fully transparent vertical space in each cell above and below the main body, and 200px horizontal margins. No wooden backing or scene.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        1,
+        3
+      ],
+      "option": "buttons / 4 / tooled leather",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-4ee53e70-f9f3-4e7a-9701-dbdc5efe7b57.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "85f3ea12752e6eb3d2ee347af72cbdbb5aa45b2b1ab64159827201482637a032",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 962614,
+        "partially_transparent_pixels": 610250,
+        "content_bounds_alpha_gt_8": [
+          149,
+          92,
+          1387,
+          962
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              341
+            ],
+            "bounds_alpha_gt_8": [
+              149,
+              92,
+              1387,
+              324
+            ],
+            "margins": [
+              149,
+              92,
+              149,
+              17
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              0,
+              341,
+              1536,
+              683
+            ],
+            "bounds_alpha_gt_8": [
+              151,
+              73,
+              1387,
+              300
+            ],
+            "margins": [
+              151,
+              73,
+              149,
+              42
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              0,
+              683,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              649,
+              41,
+              885,
+              279
+            ],
+            "margins": [
+              649,
+              41,
+              651,
+              62
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-buttons-tooled-leather.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            137,
+            80,
+            1399,
+            336
+          ],
+          "visible_bounds_alpha_gt_8": [
+            149,
+            92,
+            1387,
+            324
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            139,
+            402,
+            1399,
+            653
+          ],
+          "visible_bounds_alpha_gt_8": [
+            151,
+            414,
+            1387,
+            641
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            637,
+            712,
+            897,
+            974
+          ],
+          "visible_bounds_alpha_gt_8": [
+            649,
+            724,
+            885,
+            962
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-buttons-parchment-wax.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nButton material OPTION 5 / parchment and wax. THREE separate pieces in ONE COLUMN, three equal cells 1536px wide by 341.33px high, centres y=170.67,512,853.33 at x=768. Top: one wide main action button plate, about five times as wide as tall, approximately 1000px by 180px, with strongest finish and trim. Middle: exact same shape/size with quieter finish for ordinary actions. Bottom: one small ROUND icon button, same 180px height. All pieces seen straight-on, upper-left light, fronts blank. Middle portion of each wide plate must be plain, flat and even for sideways stretching; ornament at edges/ends only. No text, letters, glyphs or icons.\nMaterial: Stiff warm cream parchment label with a pressed edge and a small crimson wax seal at its left end; ordinary version has no seal. Round icon button is a small stiff round parchment token with matching pressed edge. The left wax seal is smooth and blank. Calm text areas, no handwriting.\nPreserve at least 70px of fully transparent vertical space in each cell above and below the main body, and 200px horizontal margins. No wooden backing or scene.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        1,
+        3
+      ],
+      "option": "buttons / 5 / parchment and wax",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-e350a2cd-7afb-464c-b12c-d505864ace3c.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "af474e6c8493c0998b285703662f11ce4d86d2af6584ac06cb6220014c2d0a6b",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1026878,
+        "partially_transparent_pixels": 545986,
+        "content_bounds_alpha_gt_8": [
+          146,
+          83,
+          1386,
+          965
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              1536,
+              341
+            ],
+            "bounds_alpha_gt_8": [
+              146,
+              83,
+              1386,
+              341
+            ],
+            "margins": [
+              146,
+              83,
+              150,
+              0
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              0,
+              341,
+              1536,
+              683
+            ],
+            "bounds_alpha_gt_8": [
+              159,
+              0,
+              1375,
+              301
+            ],
+            "margins": [
+              159,
+              0,
+              161,
+              41
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              0,
+              683,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              657,
+              62,
+              875,
+              282
+            ],
+            "margins": [
+              657,
+              62,
+              661,
+              59
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-buttons-parchment-wax.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            134,
+            71,
+            1398,
+            375
+          ],
+          "visible_bounds_alpha_gt_8": [
+            146,
+            83,
+            1386,
+            363
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            147,
+            436,
+            1387,
+            654
+          ],
+          "visible_bounds_alpha_gt_8": [
+            159,
+            448,
+            1375,
+            642
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            645,
+            733,
+            887,
+            977
+          ],
+          "visible_bounds_alpha_gt_8": [
+            657,
+            745,
+            875,
+            965
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-alignment-emblems.png",
+      "folder": "ui",
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nSIX round heraldic emblems in 3 columns by 2 rows, each 512px square cell, each disc about 300px diameter, huge fully transparent gaps. Each a thick struck-metal disc with a raised rim bearing ONE bold simple raised device. These must read as bold silhouettes at 18 pixels. Order:\n1. TOP LEFT Vigil, ivory and gold: a sun half risen over a straight horizon line.\n2. TOP MIDDLE Gnosis, deep blue and silver: an open eye inside a thin measuring ring marked with sparse fine ticks, like an astrolabe; ticks are plain marks, NO numerals.\n3. TOP RIGHT Dominion, black iron and violet: a crescent moon closing round a plain iron shackle ring.\n4. BOTTOM LEFT Fervor, red and dark gold: a flame rising through a broken crown.\n5. BOTTOM MIDDLE Genesis, green and bronze: a broad leaf whose stem turns into roots wrapped round a seed.\n6. BOTTOM RIGHT Neutral, grey stone and iron: a single rough uncut stone.\nSame scale and consistent struck-metal relief, modest bevel, worn materials and light. Keep devices simple, visually distinct and uncluttered. No letters, text or new motifs.\nFINAL OUTPUT: exactly 1536 x 1024, aspect ratio 3:2. Maintain large blank transparent margins, no cropping.",
+      "references": [],
+      "grid": [
+        3,
+        2
+      ],
+      "option": "alignment / proposed motifs",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-38ec88b5-3cc2-4b26-a7f4-89c63d153326.png",
+      "creator_review": {
+        "date": "2026-11-11",
+        "quote": "dominion seal is the worst, all other are really good",
+        "approved_cells": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "rejected_cell": 3,
+        "note": "Five other alignment designs retained unchanged. Dominion replacement proposals in a separate sheet; none selected yet.",
+        "replacement": {
+          "source": "ui-alignment-dominion-options.png",
+          "cell": 1,
+          "design": "Iron crown",
+          "status": "creator selected"
+        }
+      },
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "d4f12c483197f8ec8ba7d6de1e7e14f5b7566b30a4954516506b129e7b4c25b0",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 728907,
+        "partially_transparent_pixels": 843957,
+        "content_bounds_alpha_gt_8": [
+          65,
+          52,
+          1467,
+          971
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              71,
+              52,
+              476,
+              468
+            ],
+            "margins": [
+              71,
+              52,
+              36,
+              44
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              50,
+              52,
+              459,
+              470
+            ],
+            "margins": [
+              50,
+              52,
+              53,
+              42
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              512
+            ],
+            "bounds_alpha_gt_8": [
+              29,
+              53,
+              443,
+              472
+            ],
+            "margins": [
+              29,
+              53,
+              69,
+              40
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              0,
+              512,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              65,
+              31,
+              481,
+              458
+            ],
+            "margins": [
+              65,
+              31,
+              31,
+              54
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              512,
+              512,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              44,
+              31,
+              459,
+              459
+            ],
+            "margins": [
+              44,
+              31,
+              53,
+              53
+            ]
+          },
+          {
+            "cell": 6,
+            "rect": [
+              1024,
+              512,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              25,
+              31,
+              443,
+              457
+            ],
+            "margins": [
+              25,
+              31,
+              69,
+              55
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-alignment-emblems.png",
+      "review_status": "creator selection recorded",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            59,
+            40,
+            488,
+            480
+          ],
+          "visible_bounds_alpha_gt_8": [
+            71,
+            52,
+            476,
+            468
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            550,
+            40,
+            983,
+            482
+          ],
+          "visible_bounds_alpha_gt_8": [
+            562,
+            52,
+            971,
+            470
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1041,
+            41,
+            1479,
+            484
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1053,
+            53,
+            1467,
+            472
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            53,
+            531,
+            493,
+            982
+          ],
+          "visible_bounds_alpha_gt_8": [
+            65,
+            543,
+            481,
+            970
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            544,
+            531,
+            983,
+            983
+          ],
+          "visible_bounds_alpha_gt_8": [
+            556,
+            543,
+            971,
+            971
+          ]
+        },
+        {
+          "piece": 6,
+          "source_rect_xyxy": [
+            1037,
+            531,
+            1479,
+            981
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1049,
+            543,
+            1467,
+            969
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-alignment-dominion-options.png",
+      "folder": "ui",
+      "grid": [
+        3,
+        1
+      ],
+      "option": "Dominion replacement / three proposals",
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-38ec88b5-3cc2-4b26-a7f4-89c63d153326.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nCreate THREE NEW alternative heraldic emblems for Dominion, each on its own round struck-metal disc, in one row of three equal cells on an EXACT 1536 x1024 canvas. Centres (256,512),(768,512),(1280,512); each complete disc about 330px diameter, ample empty transparent space above and below, no crop.\nThe attached six-emblem sheet is a STYLE/MATERIAL reference only. Its Dominion crescent and loose ring design was disliked: do not repeat the crescent, dangling ring, eye or sun. The other five emblems are approved and must NOT be regenerated or included in this new sheet.\nDominion should feel severe, aristocratic, controlled, imposing and elegant: blackened iron, deep restrained violet enamel, pale tarnished silver relief, with sharper purposeful silhouettes and strong contrast. No skulls, gore, bats or cartoon villain styling. Match the other emblems' physical struck-metal depth, painted finish and bold simplicity. One device per disc, readable at 18 pixels.\nLEFT \u2014 The iron crown: one stark high three-point crown of pale tarnished silver, solid unbroken heavy construction, against deep violet enamel, thick blackened iron rim. Crown is broad and architectural, no jewels or filigree.\nMIDDLE \u2014 The binding hand: one frontal CLOSED armored fist of pale iron gripping a short vertical length of heavy chain, exactly three large links beneath it. Strong compact blocky silhouette on deep violet enamel with black iron rim. No forearm or other objects.\nRIGHT \u2014 The closed court: one severe narrow barred gate, plain pale silver upright bars beneath a simple heavy lintel, against deep violet enamel with black iron rim. Emphasize an imposing closed entrance with simple clean structure, no castle scenery, bricks, text or tiny ornament.\nThese are distinct proposed icon designs, not changes to lore. Each shares the same circular base and lighting. All artwork confined within its cell, true transparent exterior, absolutely no letters, labels or numbers.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-c84a1fd8-c3ac-4563-9868-256ae6764bb4.png",
+      "creator_review": {
+        "date": "2026-11-11",
+        "selected_cell": 1,
+        "selected_design": "Iron crown",
+        "quote": "Iron crown (left)",
+        "other_cells": "Unselected alternatives"
+      },
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "6fa211f8cc837c032a6881ec98c212cc3a1b57c3c0ceedf5c6e05cb657da5618",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1089686,
+        "partially_transparent_pixels": 483178,
+        "content_bounds_alpha_gt_8": [
+          35,
+          284,
+          1500,
+          739
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              35,
+              284,
+              480,
+              738
+            ],
+            "margins": [
+              35,
+              284,
+              32,
+              286
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              31,
+              285,
+              478,
+              739
+            ],
+            "margins": [
+              31,
+              285,
+              34,
+              285
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              29,
+              285,
+              476,
+              739
+            ],
+            "margins": [
+              29,
+              285,
+              36,
+              285
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-alignment-dominion-options.png",
+      "review_status": "creator selection recorded",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            23,
+            272,
+            492,
+            750
+          ],
+          "visible_bounds_alpha_gt_8": [
+            35,
+            284,
+            480,
+            738
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            531,
+            273,
+            1002,
+            751
+          ],
+          "visible_bounds_alpha_gt_8": [
+            543,
+            285,
+            990,
+            739
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1041,
+            273,
+            1512,
+            751
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1053,
+            285,
+            1500,
+            739
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-currency.png",
+      "folder": "ui",
+      "grid": [
+        5,
+        1
+      ],
+      "group": 3,
+      "references": [],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nFIVE separate currency pieces in ONE ROW, equal 307.2px-wide cells, centres x=153.6,460.8,768,1075.2,1382.4 y=512. Every full object including scattered coins or shards confined to a maximum 220px width; large transparent gaps. Painted physical objects:\n1. Single thick gold coin seen straight on, worn and slightly uneven, its face struck with a plain raised ring and a SMALL RAYED SUN at centre; bold and legible down to18px.\n2. Small loose heap of the SAME coins.\n3. Brown leather drawstring purse, open at top, plump with the SAME coins.\n4. Single shard: long narrow splinter of pale blue crystal with a broken end, faint inner glow.\n5. Small heap of the SAME pale blue shards.\nThe coin and shard designs are consistent across singles and heaps. No other marks, writing or numbers. No surface beneath objects. Coin diameter~150px, heap~200px wide, purse~220px wide and300px high, shard~75px wide and230px high. Same lighting and painted scale.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-93b1ff5b-ae46-4a06-b508-274b38456a67.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "f6b6e6fd6dd59cb5d18e6dce677b64325aa2f6a1557ea45cbff774dbe182e269",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1336384,
+        "partially_transparent_pixels": 236480,
+        "content_bounds_alpha_gt_8": [
+          26,
+          339,
+          1507,
+          689
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              307,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              26,
+              397,
+              280,
+              660
+            ],
+            "margins": [
+              26,
+              397,
+              27,
+              364
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              307,
+              0,
+              614,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              21,
+              438,
+              275,
+              613
+            ],
+            "margins": [
+              21,
+              438,
+              32,
+              411
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              614,
+              0,
+              922,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              4,
+              339,
+              297,
+              689
+            ],
+            "margins": [
+              4,
+              339,
+              11,
+              335
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              922,
+              0,
+              1229,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              80,
+              385,
+              214,
+              657
+            ],
+            "margins": [
+              80,
+              385,
+              93,
+              367
+            ]
+          },
+          {
+            "cell": 5,
+            "rect": [
+              1229,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              14,
+              419,
+              278,
+              615
+            ],
+            "margins": [
+              14,
+              419,
+              29,
+              409
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-currency.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            14,
+            385,
+            292,
+            672
+          ],
+          "visible_bounds_alpha_gt_8": [
+            26,
+            397,
+            280,
+            660
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            316,
+            426,
+            594,
+            625
+          ],
+          "visible_bounds_alpha_gt_8": [
+            328,
+            438,
+            582,
+            613
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            606,
+            327,
+            923,
+            701
+          ],
+          "visible_bounds_alpha_gt_8": [
+            618,
+            339,
+            911,
+            689
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            990,
+            373,
+            1148,
+            669
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1002,
+            385,
+            1136,
+            657
+          ]
+        },
+        {
+          "piece": 5,
+          "source_rect_xyxy": [
+            1231,
+            407,
+            1519,
+            627
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1243,
+            419,
+            1507,
+            615
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-pack-wrappers.png",
+      "folder": "ui",
+      "grid": [
+        3,
+        1
+      ],
+      "group": 3,
+      "references": [],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nTHREE CLOSED collectible pack containers in ONE ROW, equal 512px-wide cells, at centres (256,512),(768,512),(1280,512). Seen from the FRONT and slightly ABOVE, standing upright. Every object complete and isolated, maximum 340px wide, 400px high, plenty of transparent canvas. Each carries a blank round wax seal on its FRONT where the game places an alignment emblem.\n1. Field pack: a bundle of muted grey-olive oilcloth folded like a parcel, tied with rough twine, plain and well travelled, a round blank crimson wax seal over the knot.\n2. Strongbox: a small wooden strongbox bound with dark iron bands and corner plates, heavy iron hasp at front, round blank crimson wax seal over hasp.\n3. War chest: a rich chest of dark red lacquer with gilded corners, gilt bands and small gilt feet, large round blank crimson wax seal over gold clasp.\nStrong distinct silhouettes and increasing richness. No cards, gold coins or contents visible. No lettering, insignia or other emblems. Preserve clear fronts and practical construction.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-aa99c91f-62ce-45cc-a52d-40caef139f4d.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "49a619829ab686fb1498ef8e74222915bb1a27e7ab8bf11389e46ca21a797382",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 956314,
+        "partially_transparent_pixels": 616550,
+        "content_bounds_alpha_gt_8": [
+          44,
+          271,
+          1496,
+          775
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              44,
+              271,
+              470,
+              775
+            ],
+            "margins": [
+              44,
+              271,
+              42,
+              249
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              12,
+              280,
+              476,
+              756
+            ],
+            "margins": [
+              12,
+              280,
+              36,
+              268
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              8,
+              285,
+              472,
+              775
+            ],
+            "margins": [
+              8,
+              285,
+              40,
+              249
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-pack-wrappers.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            32,
+            259,
+            482,
+            787
+          ],
+          "visible_bounds_alpha_gt_8": [
+            44,
+            271,
+            470,
+            775
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            512,
+            268,
+            1000,
+            768
+          ],
+          "visible_bounds_alpha_gt_8": [
+            524,
+            280,
+            988,
+            756
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1020,
+            273,
+            1508,
+            787
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1032,
+            285,
+            1496,
+            775
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-pack-open.png",
+      "folder": "ui",
+      "grid": [
+        3,
+        1
+      ],
+      "group": 3,
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-aa99c91f-62ce-45cc-a52d-40caef139f4d.png"
+      ],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nTHREE OPENED versions of the attached closed collectible packs, same exact materials, body widths, ornament, perspective and base positions. ONE ROW, three equal512px-wide cells, centres x256,768,1280. Bases align at same y as reference; expanding lids and cloth stay within each cell.\n1. The Field pack with twine cut, oilcloth falling open, warm glow rising from inside.\n2. The wooden iron-bound Strongbox with its lid thrown back, hasp hanging loose, warm light spilling up from inside.\n3. The red-lacquer gilt War chest with lid thrown back, golden light pouring out, few gold motes rising.\nNo cards or coins visible inside; the game deals them out. Retain distinctive closed-pack component design so open can swap into the same UI position. Broken wax fragments may stay attached, no random scattered props. All lids, cloth and light entirely within cells; transparent background, no floor.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-0490ffe6-4caa-453f-b3b8-5f8608ecaa78.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "810aac7e4337ff15197b0679f0c2df130391b457c27ec49b9e353c342da5fdb7",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 863219,
+        "partially_transparent_pixels": 709645,
+        "content_bounds_alpha_gt_8": [
+          34,
+          200,
+          1486,
+          821
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              34,
+              251,
+              480,
+              804
+            ],
+            "margins": [
+              34,
+              251,
+              32,
+              220
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              512,
+              0,
+              1024,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              19,
+              200,
+              512,
+              821
+            ],
+            "margins": [
+              19,
+              200,
+              0,
+              203
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              1024,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              219,
+              462,
+              805
+            ],
+            "margins": [
+              0,
+              219,
+              50,
+              219
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-pack-open.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            22,
+            239,
+            492,
+            816
+          ],
+          "visible_bounds_alpha_gt_8": [
+            34,
+            251,
+            480,
+            804
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            519,
+            188,
+            977,
+            833
+          ],
+          "visible_bounds_alpha_gt_8": [
+            531,
+            200,
+            965,
+            821
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            1005,
+            207,
+            1498,
+            817
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1017,
+            219,
+            1486,
+            805
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    },
+    {
+      "name": "ui-rarity-gems.png",
+      "folder": "ui",
+      "grid": [
+        4,
+        1
+      ],
+      "group": 3,
+      "references": [],
+      "prompt": "Use case: stylized-concept.\nCreate one original interface asset for Breachline, a high-fantasy card game played on a linen war map stretched over a weathered oak camp table, lit by one warm lamp. The interface is made of real objects a field commander would have on that table: blackened iron, worn brass, gold leaf, wax, silk, parchment and ink.\nPaint it in the same hand as the game's traditional oil and acrylic fantasy paintings: visible but quiet brushwork, believable materials, precise rather than noisy detail. Never a photograph, 3D render, vector art, flat icon, emoji or cartoon. Evenly lit from the upper left. Match brush scale to local detail; diffuse surfaces for cloth, wood and paper, selective metal reflections.\nOutput one 1536 x 1024 landscape PNG with true alpha transparency. Paint only the object or effect itself: no table, cloth, map, hands or scenery unless specifically requested. No text, letters, numbers, runes, logos, watermarks or signatures. Blank areas stay plain and smooth so the game can write on them. All empty pixels genuinely transparent, no painted checkerboard or background color.\nA sprite sheet of separate pieces on one transparent image, arranged in the grid specified, every piece centred in its own equal cell with clear empty space around it. No piece may touch or cross its cell's edge; leave at least a tenth of the cell clear all round. All pieces share the same scale, light and finish. No borders, frames or dividing lines between cells.\nFOUR small faceted rarity gems in ONE ROW, four equal384px-wide cells, centres x192,576,960,1344 y512. Same rounded cushion-cut silhouette about210px wide, generous transparent margins. Front-on; visibly different colours and brightness at12\u201316px.\n1. COMMON: dull grey-brown stone, polished but plain, DARK IRON bezel.\n2. UNCOMMON: clear pale silver-white crystal in SILVER bezel.\n3. RARE: bright golden topaz in GOLD bezel, catching light.\n4. LEGENDARY: blazing gem shading from fiery orange to deep violet in RICH GOLD bezel, faint glow.\nBezel shapes simple, no filigree or extra ornaments. Paint crystalline material with selective crisp facets and modest highlights, no photorealistic product rendering. No labels or written numbers.\nFINAL OUTPUT EXACTLY 1536 x1024, 3:2 landscape. Do not crop empty transparent margins or output a panoramic canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1c8fc-0bca-7b62-a46f-e9dc72e43de7/exec-9bead0a7-c7cf-486d-8457-73a2bcd66cc4.png",
+      "qa": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "sha256": "a48b172937be91d6b2777a900e3ca586aff1597eed7e8e411481b1df0f6b089f",
+        "source_pixels_preserved": true,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1161002,
+        "partially_transparent_pixels": 411862,
+        "content_bounds_alpha_gt_8": [
+          50,
+          331,
+          1526,
+          729
+        ],
+        "cells": [
+          {
+            "cell": 1,
+            "rect": [
+              0,
+              0,
+              384,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              50,
+              375,
+              354,
+              686
+            ],
+            "margins": [
+              50,
+              375,
+              30,
+              338
+            ]
+          },
+          {
+            "cell": 2,
+            "rect": [
+              384,
+              0,
+              768,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              41,
+              375,
+              350,
+              685
+            ],
+            "margins": [
+              41,
+              375,
+              34,
+              339
+            ]
+          },
+          {
+            "cell": 3,
+            "rect": [
+              768,
+              0,
+              1152,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              35,
+              375,
+              384,
+              685
+            ],
+            "margins": [
+              35,
+              375,
+              0,
+              339
+            ]
+          },
+          {
+            "cell": 4,
+            "rect": [
+              1152,
+              0,
+              1536,
+              1024
+            ],
+            "bounds_alpha_gt_8": [
+              0,
+              331,
+              374,
+              729
+            ],
+            "margins": [
+              0,
+              331,
+              10,
+              295
+            ]
+          }
+        ],
+        "all_requested_dimensions": true
+      },
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ui/ui-rarity-gems.png",
+      "review_status": "generated; awaiting creator review",
+      "sprites": [
+        {
+          "piece": 1,
+          "source_rect_xyxy": [
+            38,
+            363,
+            366,
+            698
+          ],
+          "visible_bounds_alpha_gt_8": [
+            50,
+            375,
+            354,
+            686
+          ]
+        },
+        {
+          "piece": 2,
+          "source_rect_xyxy": [
+            413,
+            363,
+            746,
+            697
+          ],
+          "visible_bounds_alpha_gt_8": [
+            425,
+            375,
+            734,
+            685
+          ]
+        },
+        {
+          "piece": 3,
+          "source_rect_xyxy": [
+            791,
+            363,
+            1123,
+            697
+          ],
+          "visible_bounds_alpha_gt_8": [
+            803,
+            375,
+            1111,
+            685
+          ]
+        },
+        {
+          "piece": 4,
+          "source_rect_xyxy": [
+            1127,
+            319,
+            1536,
+            741
+          ],
+          "visible_bounds_alpha_gt_8": [
+            1139,
+            331,
+            1526,
+            729
+          ]
+        }
+      ],
+      "extraction_note": "Use explicit source_rect_xyxy; static object spacing is not always an equal grid. Rectangles include 12px padding around alpha>8 content. Original low-alpha pixels are preserved. For FX, always use fixed 512px frames."
+    }
+  ]
+}

@@ -4,8 +4,8 @@ var Collection = (function () {
   var E = Engine, P = Progress, K = Screens.kit, act = K.act, esc = K.esc, symbol = K.symbol, plural = K.plural;
   var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], RNAME = Rarity.NAMES;
   var tab = 'cards', view = { colour: {}, rarity: {}, own: 'all' }, focus = null, packColour = null, note = '', pickStarter = null;
-  var COIN = '<svg class="coin-i" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.5"/><circle cx="10" cy="10" r="5.6"/></svg>';
-  var SHARD = '<svg class="shard-i" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5 16.5 8 10 18.5 3.5 8Z"/><path d="M3.5 8h13M10 1.5 7.5 8 10 18.5 12.5 8Z"/></svg>';
+  var COIN = '<img class="coin-i" src="art/web/ui/coin.png" alt="">';
+  var SHARD = '<img class="shard-i" src="art/web/ui/shard.png" alt="">';
 
   function gold(n) { return '<span class="money gold">' + COIN + '<b>' + n + '</b><span class="sr"> gold</span></span>'; }
   function shards(n) { return '<span class="money shards">' + SHARD + '<b>' + n + '</b><span class="sr"> shards</span></span>'; }
@@ -128,8 +128,9 @@ var Collection = (function () {
 
   // Packs
 
+  // The painted wrappers, with an aligned pack's emblem pressed into the wax.
   function packArt(tier, colour) {
-    return '<span class="pack ' + tier + (colour ? ' ' + colour : '') + '" aria-hidden="true"><span class="pseal">' + (colour ? symbol(colour) : '') + '</span></span>';
+    return '<span class="pack painted ' + tier + (colour ? ' ' + colour : '') + '" aria-hidden="true"><img src="art/web/ui/pack-' + tier + '.png" alt="" draggable="false"><span class="pseal">' + (colour ? symbol(colour) : '') + '</span></span>';
   }
   function packs() {
     var st = P.state(), cols = [null, 'W', 'U', 'B', 'R', 'G'];
@@ -177,9 +178,21 @@ var Collection = (function () {
     if (what === 'again') { var t = pending.e.tier; close(); return K.actions.buyPack(t); }
     if (what === 'done') return close();
   }
+  // The wrapper falls open first, then the cards come out.
   function tear() {
-    if (!ov.classList.contains('sealed')) return;
+    if (!ov.classList.contains('sealed') || ov.classList.contains('opening')) return;
+    var img = ov.querySelector('.ptear img');
+    Sfx.play('card-flip');
+    if (img && Polish.enabled()) {
+      img.src = 'art/web/ui/pack-' + pending.e.tier + '-open.png';
+      ov.classList.add('opening');
+      return setTimeout(function () { if (pending) { ov.classList.remove('opening'); dealOut(); } }, 480);
+    }
+    dealOut();
+  }
+  function dealOut() {
     var e = pending.e;
+    Sfx.play('shuffle');
     ov.classList.remove('sealed');
     ov.classList.add('torn');
     ov.querySelector('.prow').innerHTML = e.cards.map(function (id, i) {
@@ -194,6 +207,10 @@ var Collection = (function () {
   function flip(card) {
     if (card.classList.contains('up')) return;
     card.classList.add('up');
+    Sfx.play('card-flip', { gap: 30 });
+    // Rares and legendaries burst behind the card as it turns.
+    var rare = card.classList.contains('l') ? 'legendary-burst' : card.classList.contains('r') ? 'rare-burst' : null;
+    if (rare) { var b = card.getBoundingClientRect(); Polish.sprite(rare, b.left + b.width / 2, b.top + b.height / 2, b.width * (rare === 'legendary-burst' ? 3 : 2.4), { host: ov }); }
     card.setAttribute('aria-label', E.CARDS[pending.e.cards[+card.style.getPropertyValue('--i')]].name);
     if (card.classList.contains('l')) { ov.classList.remove('quake'); void ov.offsetWidth; ov.classList.add('quake'); }
     pending.turned += 1;
