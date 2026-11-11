@@ -199,11 +199,26 @@ var Decks = (function () {
     return ok;
   }
 
-  // What a deck can be built from. Exhibition is every card; multiplayer packs will
-  // add a mode here that returns only the cards the player owns, and how many of each.
+  // What a deck can be built from. Every card shows, but a deck can hold only the copies you own, up to the usual limit.
   function pool(mode) {
     if (mode !== 'exhibition') throw new Error('No card pool for mode: ' + mode);
-    return { ids: Object.keys(E.CARDS).filter(function (id) { return !E.CARDS[id].token; }), copies: E.maxCopies };
+    var owned = typeof Progress !== 'undefined' ? Progress.usable : E.maxCopies;
+    return { ids: Object.keys(E.CARDS).filter(function (id) { return !E.CARDS[id].token; }), copies: function (id) { return Math.min(E.maxCopies(id), owned(id)); }, limit: E.maxCopies };
+  }
+  // Decks from a save file. One that's new here, or newer than the copy here, is kept with its own updated time.
+  function adopt(list) {
+    var all = readAll(), n = 0;
+    list.forEach(function (d) {
+      if (!d || !d.id || !Array.isArray(d.list)) return;
+      var r = clean(d), mine = all.filter(function (x) { return x && x.id === r.id; })[0];
+      if (mine && (mine.updated || 0) >= r.updated) return;
+      all = all.filter(function (x) { return x && x.id !== r.id; });
+      all.push({ id: r.id, name: r.name, mode: r.mode, list: r.list, updated: r.updated || Date.now(), synced: mine && mine.synced });
+      dirty[r.id] = true;
+      n++;
+    });
+    if (n && writeAll(all)) { push(); changed(); }
+    return n;
   }
 
   function picks() {
@@ -218,7 +233,7 @@ var Decks = (function () {
   connect();
 
   return {
-    saved: saved, starters: starters, themes: themes, find: find, create: create, save: save, remove: remove, pool: pool,
+    saved: saved, starters: starters, themes: themes, find: find, create: create, save: save, remove: remove, pool: pool, adopt: adopt,
     picks: picks, setPicks: setPicks, persistent: function () { return !!store || !!remote; }
   };
 })();

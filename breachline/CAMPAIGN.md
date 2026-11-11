@@ -9,7 +9,8 @@ All five campaigns can be played. The story lines live in `campaign.js`, and eve
 - The campaign has a map.
 - Each campaign gets its own region of the world, rather than one shared region (2026-11-06).
 - The player chooses who plays the enemies when a run starts.
-- Vigil comes first.
+- Any campaign can be played first (2026-11-10).
+- Cards picked during a run are kept after it only if you win the campaign. The rest of progression is in `PROGRESSION.md`.
 - Cutscenes are wanted later. They aren't built yet.
 
 ## Claude's assumptions, not yet confirmed
@@ -22,6 +23,7 @@ All five campaigns can be played. The story lines live in `campaign.js`, and eve
 - **Enemies:** the same rules and 15 life as you. Later enemies are harder only because their decks are stronger, which goes beyond the same-rules difficulty idea for the Claude levels. That idea still applies inside each battle.
 - **A draw:** the same battle is fought again.
 - **Saving:** after every move, in this browser only. Runs don't follow the account the way saved decks do.
+- **Preset enemy units:** some chapters start with an enemy unit already on the board, as a difficulty knob separate from deck strength and a bit of story ("the raiders already hold the ford"). Mostly for later chapters and prestige tiers. Proposed rules: the unit starts in the enemy's back row, isn't drawn from its deck, and acts from the enemy's first turn.
 
 ## Draft lines, for verdicts
 
@@ -99,33 +101,20 @@ You start with The Elder Herd.
 
 ## Balance so far
 
-### The four new campaigns (2026-11-08)
-
-From 500 simulated runs each, with the scripted bot on both sides and random rewards. Each chapter was fought with the deck so far, whatever happened in earlier chapters. Enemy decks were tuned so each campaign gets harder as it goes.
+From 400 simulated runs per campaign on 2026-11-10, after the move to 30-card decks, with the scripted bot on both sides. Each chapter was fought with the starter deck, whatever happened in earlier chapters, so each got a full sample. The sim takes rewards but doesn't swap them in, so these numbers measure the starter alone.
 
 | Campaign | 1 | 2 | 3 | 4 | 5 | 6 | Full clears |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Gnosis | 71% | 59% | 54% | 46% | 49% | 30% | 11 of 500 |
-| Dominion | 74% | 53% | 47% | 45% | 45% | 29% | 6 of 500 |
-| Fervor | 70% | 54% | 58% | 45% | 39% | 27% | 6 of 500 |
-| Genesis | 73% | 68% | 54% | 53% | 56% | 48% | 19 of 500 |
+| Vigil | 54% | 53% | 57% | 50% | 65% | 69% | 12 of 400 |
+| Gnosis | 63% | 66% | 51% | 35% | 56% | 28% | 3 of 400 |
+| Dominion | 69% | 56% | 72% | 67% | 77% | 52% | 29 of 400 |
+| Fervor | 59% | 56% | 70% | 60% | 36% | 41% | 4 of 400 |
+| Genesis | 61% | 68% | 47% | 43% | 63% | 62% | 19 of 400 |
 
-Genesis is the gentlest, because its starter deck is the strongest of the five against the bot. Black enemy decks struggled against it however they were built. Some chapters are within a few points of each other, which is about the noise in a sample this size.
-
-### Vigil
-
-From 300 simulated runs on 2026-11-06, after the small-number merge, with the scripted bot on both sides and random rewards. Each chapter was fought with the deck so far, whatever happened in earlier chapters, so each one got a full sample.
-
-| Chapter | Bot on your side wins | Average turns |
-| --- | --- | --- |
-| The ford | 53% | 21.3 |
-| The closed road | 34% | 20.3 |
-| The pass | 37% | 20.4 |
-| The lower gate | 32% | 23.6 |
-| The fallow field | 40% | 21.1 |
-| The shrine steps | 38% | 21.6 |
-
-Only 2 of the 300 runs won every battle. Enemy decks dropped to 8 or 9 lands in that merge, so they play more spells and the first chapter is harder than it was (69% before). The shrine steps also got easier (24% before), so the climb is flatter than intended. No person has played a full run on these numbers, and the bot plays the Vigil deck weakly and rarely uses sacrifices well, so these numbers only compare the chapters.
+- **Clear rates differ about tenfold**, from Gnosis to Dominion. That matters now that a clear unlocks the campaign's starter.
+- **Several climbs run the wrong way.** Vigil's last two chapters are its easiest, and Dominion's fifth is its easiest. They drifted when the white and black starters changed and decks moved to 30 cards.
+- **The retune the creator asked for (2026-11-10):** each campaign should climb steadily and the five should end up with similar clear rates. Difficulty scaling matters most. Enemy decks can lean further into their faction where that helps. It waits for the new board, since a bigger grid, hand or life total would move every number here.
+- The bot plays some decks weakly and rarely uses sacrifices well, so these numbers compare chapters and campaigns rather than predict a person's results.
 
 ## Maps
 
