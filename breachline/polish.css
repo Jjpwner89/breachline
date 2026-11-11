@@ -92,6 +92,8 @@
 /* Units show Attack and Health as numbers; the health bar is gone. */
 .tile .st { justify-content: space-between; }
 .tile .bar { display: none; }
+/* More of each painting shows: the name sits on a fade instead of a solid band. */
+.tile .nm, .app.big .tile .nm { padding-bottom: 6px; background: linear-gradient(rgba(14, 9, 4, .84), rgba(14, 9, 4, .55) 62%, rgba(14, 9, 4, 0)); text-shadow: 0 1px 2px #000, 0 0 4px rgba(0, 0, 0, .7); }
 /* A deck's picture keeps its shape whatever the image, so a tall card back can't stretch its row. */
 .deck .pic { position: relative; overflow: hidden; }
 .deck .pic img { position: absolute; inset: 0; }
@@ -111,7 +113,10 @@
 
 /* The hand: a fan of up to seven cards resting low on the table. A card lifts clear when pointed at. */
 @media (min-width: 821px) and (min-height: 471px) {
-  .app, .app.big { --cw: clamp(132px, calc(30dvh / 1.42), 192px); --tray-h: max(150px, calc(var(--cw) * 1.42 * .74 + 10px)); }
+  .app, .app.big { --cw: clamp(124px, calc(27dvh / 1.42), 172px); --tray-h: max(150px, calc(var(--cw) * 1.42 * .74 + 10px)); }
+  /* The board takes nearly all of its row: a thinner linen border and tighter gaps make every tile, and its painting, larger. */
+  .board { padding: 9px; --bw: min(calc(100cqw - 50px), calc((100cqh - 34px) * var(--bwr, 1.81))); }
+  #grid { height: min(calc(100cqh - 34px), calc(var(--bw) * var(--grat, .72))); gap: 4px; }
   .tray { overflow: visible; }
   #hand { gap: 0; padding-top: 10px; align-items: flex-start; }
   #hand .card + .card { margin-left: calc(var(--cw) * -.16); }
@@ -136,7 +141,7 @@
 #chat, #chat small, #chat .sys { color: var(--card-ink); }
 @media (min-width: 1280px) and (min-aspect-ratio: 3/2) {
   .arena { grid-template-columns: minmax(0, 1fr) auto; }
-  .board { grid-column: 1; justify-self: center; --bw: min(calc((100cqh - 46px) * var(--bwr, 1.81)), calc(100cqw - var(--side, 380px))); }
+  .board { grid-column: 1; justify-self: center; --bw: min(calc((100cqh - 34px) * var(--bwr, 1.81)), calc(100cqw - var(--side, 380px))); }
   .app.big { --side: 360px; }
   .drawer.log { position: absolute; grid-column: auto; grid-row: auto; top: 8px; bottom: 8px; left: 8px; right: auto; justify-self: auto; align-self: auto; width: min(320px, calc(100% - 24px)); max-width: none; margin: 0; transform: translateX(calc(-100% - 16px)); visibility: hidden; background: none; box-shadow: none; }
   .drawer.log.open { transform: none; visibility: visible; }
