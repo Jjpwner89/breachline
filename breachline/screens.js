@@ -5,7 +5,7 @@ var Screens = (function () {
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
-  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '' }, confirmDelete = null;
+  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null;
   // The reserve card picked to swap into a campaign deck.
   var swapIn = null;
 
@@ -37,8 +37,8 @@ var Screens = (function () {
     return best ? GameUI.artUrl(best.id) : null;
   }
   function deckStatus(d) {
-    var problems = E.deckProblems(d.list);
-    return problems.length ? problems[0] : plural(E.deckSize(d.list), 'card');
+    var problems = E.deckProblems(d.list), short = Progress.missing(d.list);
+    return problems.length ? problems[0] : short ? 'Missing ' + plural(short, 'card') : plural(E.deckSize(d.list), 'card');
   }
   function coverHtml(d) {
     var art = coverArt(d.list);
@@ -80,7 +80,9 @@ var Screens = (function () {
   }
 
   function menu() {
-    var n = Decks.saved().length, cont = GameUI.inProgress();
+    // The free starter comes first, once the account has had its chance to say one was already chosen.
+    if (Progress.ready() && !Progress.state().starter) return Collection.starter();
+    var n = Decks.saved().length, cont = GameUI.inProgress(), st = Progress.state();
     function item(a, title, sub, primary) {
       return '<button type="button" class="mitem' + (primary ? ' primary' : '') + '" ' + act(a) + '><b>' + title + '</b><span>' + sub + '</span></button>';
     }
@@ -93,10 +95,11 @@ var Screens = (function () {
       (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
         : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
-      item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Every card is open.') +
+      item('collection', 'Collection', st.gold + ' gold. Open packs, craft cards and see your record.') +
+      item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Build from the cards you own.') +
       item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
-      later('Multiplayer', 'Coming later. Collect cards from packs.') +
-      '</nav></div></main>', menu);
+      later('Multiplayer', 'Coming later.') +
+      '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your Claude account for saved progress…</p>') + '</div></main>', menu);
     ash(root.querySelector('.home canvas'));
   }
   actions.menu = menu;
@@ -188,6 +191,8 @@ var Screens = (function () {
       '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
+      '<p class="hint">' + (Progress.cleared(story.id) ? 'You\'ve beaten this campaign, so the cards you pick stay with the run, and its battles pay half again as much gold.'
+        : 'Beat it to win ' + esc(E.DECKS[story.starter].name) + ' for your collection, along with every card you pick on the way.') + '</p>' +
       '<button type="button" class="btn primary big" ' + act('beginRun') + '>Begin the run</button></aside></div></div>', setup);
   }
   function chapterPanel(run, i) {
@@ -218,7 +223,8 @@ var Screens = (function () {
     }).join('');
     var lands = offer.lands.map(function (id) { return '<button type="button" class="btn" ' + act('takeCard', id) + '>' + symbol(E.CARDS[id].colour) + ' ' + esc(E.CARDS[id].name) + '</button>'; }).join('');
     show('<div class="page">' + campaignHead('Choose a card to keep') +
-      '<p class="hint rlead">You beat ' + esc(c.enemy.name) + '. The card you keep goes to your reserve, and you can swap it into your deck on the map.</p>' +
+      '<p class="hint rlead">You beat ' + esc(c.enemy.name) + '. The card you keep goes to your reserve, and you can swap it into your deck on the map.' +
+        (Progress.cleared(run.story) ? '' : ' Win the campaign and it joins your collection.') + '</p>' +
       '<div class="rpicks">' + cards + '</div>' +
       '<div class="rother"><span class="hint">Or add a land:</span>' + lands + '<button type="button" class="btn" ' + act('takeCard') + '>Take nothing</button></div>' +
       deckGrid(run.list) + '</div>', campaign);
@@ -226,7 +232,10 @@ var Screens = (function () {
   }
   function runEnd(run) {
     var story = Campaign.storyOf(run), won = run.status === 'won', c = Campaign.chapterOf(run);
-    var taken = run.taken.length ? 'You kept ' + run.taken.map(function (id) { return E.CARDS[id].name; }).join(', ') + '.' : 'You kept no new cards.';
+    var cards = run.taken.filter(function (id) { return E.CARDS[id].type !== 'land'; }).map(function (id) { return E.CARDS[id].name; }), prize = run.prize;
+    var taken = !won ? (cards.length ? 'The cards you picked on this run are lost with it.' : '')
+      : prize && prize.t === 'clear' ? E.DECKS[story.starter].name + (cards.length ? ', ' + cards.join(', ') : '') + ' and ' + prize.gold + ' gold join your collection.'
+      : prize ? 'You\'d beaten this campaign before, so it paid ' + prize.gold + ' gold instead of cards.' : '';
     show('<div class="page rend"><div class="story"><p class="eyebrow">' + esc(story.title) + '</p><h2>' + (won ? 'The road ends here' : 'The run is over') + '</h2>' +
       '<p>' + esc(won ? story.ending : story.defeat) + '</p>' +
       '<p class="hint">' + (won ? 'You cleared all ' + story.chapters.length + ' chapters.' : 'You fell at ' + esc(c.title) + ', chapter ' + (run.chapter + 1) + ' of ' + story.chapters.length + '.') + ' ' + esc(taken) + '</p></div>' +
@@ -268,7 +277,12 @@ var Screens = (function () {
     var fixed = function (d) {
       return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
     };
-    var starters = Decks.starters().map(fixed).join(''), themes = Decks.themes().map(fixed).join('');
+    var owns = Progress.state().starters, story = function (k) { return Campaign.ORDER.map(function (id) { return Campaign.STORIES[id]; }).filter(function (x) { return x.starter === k; })[0]; };
+    var starters = Decks.starters().map(function (d) {
+      if (owns.indexOf(d.id) >= 0 || Progress.state().unlocked) return fixed(d);
+      var s = story(d.id);
+      return '<div class="dcard locked"><div class="dtile static">' + coverHtml(d) + '</div><p class="hint">' + (s ? 'Beat ' + esc(s.title) + ' to win this deck.' : 'Not yours yet.') + '</p><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
+    }).join(''), themes = Decks.themes().map(fixed).join('');
     show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><button type="button" class="btn primary push" ' + act('newDeck') + '>New deck</button></header>' +
       (Decks.persistent() ? '' : '<p class="warn">This browser is blocking storage, so decks last only until you close this tab.</p>') +
       '<section class="pickset"><h2>Your decks</h2>' + (mine ? '<div class="dtiles">' + mine + '</div>' : '<p class="hint">Nothing saved yet. Start a new deck, or copy a starter below and change it.</p>') + '</section>' +
@@ -302,13 +316,14 @@ var Screens = (function () {
     if (any(filters.type) && !filters.type[c.type]) return false;
     if (any(filters.colour) && !filters.colour[c.colour]) return false;
     if (any(filters.faction) && !filters.faction[c.faction || 'none']) return false;
+    if (filters.own === 'owned' && !ed.pool.copies(c.id)) return false;
     return !q || c.name.toLowerCase().indexOf(q) >= 0 || (c.text || '').toLowerCase().indexOf(q) >= 0;
   }
 
   function editor(deck) {
     ed = { deck: deck, pool: Decks.pool(deck.mode), peek: null, saved: deck.updated > 0, msg: '' };
     if (deck.missing) ed.msg = plural(deck.missing, 'card') + ' in this deck no longer exist' + (deck.missing === 1 ? 's' : '') + ' and were taken out.';
-    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">Exhibition: every card is open, in any mix of colours.</span></header>' +
+    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span></header>' +
       '<div class="ebody">' +
       '<aside class="closeup" id="closeup" ' + act('closeZoom') + ' aria-label="Card close-up"></aside>' +
       '<section class="cards" aria-label="Cards">' +
@@ -344,19 +359,20 @@ var Screens = (function () {
     byId('fchips').innerHTML =
       '<div class="frow"><span class="flabel">Type</span><div class="chips">' + types + '</div></div>' +
       '<div class="frow"><span class="flabel">Colour</span><div class="chips">' + colours + '</div></div>' +
-      '<div class="frow"><span class="flabel">Faction</span><div class="chips">' + factions + '</div></div>';
+      '<div class="frow"><span class="flabel">Faction</span><div class="chips">' + factions + '</div></div>' +
+      '<div class="frow"><span class="flabel">Show</span><div class="chips">' + chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned') + '</div></div>';
   }
   function activeFilters() {
     return ['type', 'colour', 'faction'].reduce(function (n, g) {
       return n + Object.keys(filters[g]).filter(function (k) { return filters[g][k]; }).length;
-    }, 0) + (filters.q.trim() ? 1 : 0);
+    }, 0) + (filters.q.trim() ? 1 : 0) + (filters.own === 'owned' ? 1 : 0);
   }
 
   function pickHtml(id) {
     var c = E.CARDS[id];
     return '<div class="pcard" data-card-id="' + id + '">' +
       '<button type="button" class="card" ' + act('add', id) + ' data-peek="' + id + '" aria-label="Add ' + esc(c.name) + ' to deck">' + GameUI.frameHtml(c) + '</button>' +
-      '<span class="have" hidden></span>' +
+      '<span class="have" hidden></span><span class="nown" hidden>Not owned</span>' +
       '<button type="button" class="minus" ' + act('remove', id) + ' aria-label="Take ' + esc(c.name) + ' out of deck" hidden>&minus;</button></div>';
   }
   function drawGrid() {
@@ -373,7 +389,9 @@ var Screens = (function () {
       badge.hidden = !have;
       badge.textContent = limit === Infinity ? have : have + ' / ' + limit;
       el.querySelector('.minus').hidden = !have;
+      el.querySelector('.nown').hidden = !!limit || !!have;
       el.classList.toggle('maxed', have >= limit);
+      el.classList.toggle('unowned', !limit);
     });
   }
 
@@ -407,8 +425,8 @@ var Screens = (function () {
     }).join('') + '</div>';
   }
   function rowHtml(e) {
-    var c = E.CARDS[e[0]], full = e[1] >= ed.pool.copies(c.id) || E.deckSize(ed.deck.list) >= E.DECK_MAX;
-    return '<div class="drow ' + c.colour + '"><span class="rcost">' + (c.type === 'land' ? '' : c.cost) + '</span>' +
+    var c = E.CARDS[e[0]], own = ed.pool.copies(c.id), full = e[1] >= own || E.deckSize(ed.deck.list) >= E.DECK_MAX;
+    return '<div class="drow ' + c.colour + (e[1] > own ? ' short" title="You own ' + (own || 'none') : '') + '"><span class="rcost">' + (c.type === 'land' ? '' : c.cost) + '</span>' +
       '<button type="button" class="rname" data-peek="' + c.id + '" ' + act('zoom', c.id) + '>' + esc(c.name) + '</button>' +
       '<span class="rn">' + e[1] + '</span>' +
       '<button type="button" class="rbtn" ' + act('remove', c.id) + ' aria-label="One fewer ' + esc(c.name) + '">&minus;</button>' +
@@ -432,7 +450,7 @@ var Screens = (function () {
     if (again) again.focus();
   }
   function drawDeck() {
-    var list = ed.deck.list, size = E.deckSize(list), st = statsOf(list), problems = E.deckProblems(list), advice = deckAdvice(st, size);
+    var list = ed.deck.list, size = E.deckSize(list), st = statsOf(list), short = Progress.missing(list), problems = E.deckProblems(list).concat(short ? ["You're missing " + plural(short, 'card') + ' you don\'t own'] : []), advice = deckAdvice(st, size);
     var saveNote = !Decks.persistent() ? 'This browser is blocking storage, so this deck lasts only until you close this tab.' : ed.saveFailed ? "Couldn't save the last change." : ed.saved ? 'Saved' : '';
     byId('dsum').innerHTML =
       '<div class="dcount"><b>' + size + '</b><span> of ' + (E.DECK_MIN === E.DECK_MAX ? E.DECK_MAX : E.DECK_MIN + '–' + E.DECK_MAX) + ' cards</span><span class="dready' + (problems.length ? '' : ' ok') + '">' + (problems.length ? esc(problems[0]) : 'Ready to play') + '</span></div>' +
@@ -485,14 +503,14 @@ var Screens = (function () {
 
   actions.filter = function (arg) {
     var at = arg.indexOf(':'), group = arg.slice(0, at), key = arg.slice(at + 1);
-    filters[group][key] = !filters[group][key];
+    if (group === 'own') filters.own = key; else filters[group][key] = !filters[group][key];
     // A faction hidden by the colour filter can't stay on, or it would quietly empty the grid.
     if (group === 'colour') E.FACTIONS.forEach(function (f) { if (!factionShown(f)) filters.faction[f.id] = false; });
     keepFocus(drawFilters);
     drawGrid();
   };
   actions.clearFilters = function () {
-    filters = { type: {}, colour: {}, faction: {}, q: '' };
+    filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' };
     byId('fq').value = '';
     drawFilters();
     drawGrid();
@@ -501,7 +519,7 @@ var Screens = (function () {
     var c = E.CARDS[id], have = countOf(id), limit = ed.pool.copies(id);
     ed.msg = '';
     if (E.deckSize(ed.deck.list) >= E.DECK_MAX) ed.msg = 'A deck can hold ' + E.DECK_MAX + ' cards at most.';
-    else if (have >= limit) ed.msg = 'A deck can hold ' + limit + ' copies of ' + c.name + '.';
+    else if (have >= limit) ed.msg = limit < ed.pool.limit(id) ? (limit ? 'You own ' + limit + ' of ' + c.name + '.' : "You don't own " + c.name + ' yet. Win it in packs, or craft it in your collection.') : 'A deck can hold ' + limit + ' copies of ' + c.name + '.';
     else {
       var e = ed.deck.list.filter(function (x) { return x[0] === id; })[0];
       if (e) e[1] += 1; else ed.deck.list.push([id, 1]);
@@ -554,5 +572,10 @@ var Screens = (function () {
 
   function hide() { root.hidden = true; refresh = null; }
 
-  return { menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt };
+  Progress.onChange(redraw);
+  return {
+    menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt,
+    // For collection.js, whose screens share this page and its click handling.
+    kit: { show: show, act: act, esc: esc, symbol: symbol, plural: plural, actions: actions, root: root }
+  };
 })();

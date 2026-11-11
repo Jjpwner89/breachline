@@ -331,6 +331,32 @@ Approved after the 2026-11-10 balance review. Starter decks won between 38% and 
 | Oath of the Sunmane starter | 2 Water carrier, Dawnsails over the harvest | Pride lioness, Pride matriarch, Oath outrider | The starter predated the newer Sunmane cards. White's cards were the strongest in random decks while its starter was the weakest |
 | The Ashen Court starter | 3 Gravebound thrall, 3 Bone harvester, 2 Raise the dead, Sellsword, Across the silence | 2 thrall, 2 harvester, 1 Raise the dead, plus Ashen Court envoy, Porcelain-visored retainer, 2 Indebted squire and Barrow colossus | Black fell to 30% once white improved. Not part of the approved list, so say if you'd rather undo it |
 
+## Proposals for the 6 by 5 board, 2026-11-10
+
+Built on 2026-11-10, when 6 by 5 with a 7-card hand and 15 life became Standard. In bot games on it, Rootfed herd and Hearth and vow jump from about 52% to 67%, while The long throw drops to 35%. Every card in the two slow decks gains 12 to 19 points of win rate when drawn, so the cause is the deck plans, not one card: the fifth row gives building-up decks more turns before the fighting starts. A fifth row alone does most of it, and the 7-card hand adds a few points.
+
+Each line was tested alone in 3,600 bot games of the 10 theme decks and 5 starters, with Devotion capped first.
+
+| Card or rule | Was | Becomes | Result in bot games |
+| --- | --- | --- | --- |
+| Devotion | +1 / +1 for good each time, with no limit | Up to +3, like Rootfed and Grows | Hearth and vow 67% to 59%. Nothing else moves more than 1 point |
+| Herd mother, Alderkin elder | 6 mana | 7 mana | Rootfed herd 68% to 64%. The gap between the best and worst deck shrinks from 33 to 29 points |
+| Shell-mountain tortoise | 5 mana | 6 mana | Tested with the line above |
+
+Tried and not worth it: Herd mother at 7 / 9 or 6 / 10, Alderkin elder at 4 / 7 or 4 / 6, Saint Maren at 4 / 9 or healing 1, Rootfed capped at +2, and Earthspeaker without its extra land. Each moved its deck by 2 points or less. Saint Maren still wins well above her deck, so she's worth watching in play, but the numbers don't single her out once the deck is accounted for.
+
+Then the creator asked to cut back the really good cards in the strongest decks rather than change the cards themselves. Tested over 5,400 games:
+
+| Deck | Was | Becomes | Win rate |
+| --- | --- | --- | --- |
+| Hearth and vow | 1 Sunmane lancer | 1 Pride huntress | 60% to 54% |
+| Rootfed herd | 12 Overgrown ruin, 3 Mosshorn grazer, 2 Elderwood stag | 11 ruin, 2 Mosshorn grazer, 1 stag, plus Thicket boar, Bronze-harness alderkin and Great owl | 63% to 52% |
+| Oath of the Sunmane starter | 2 Sunmane lancer | 1 lancer, 1 Pride huntress | 61% to 55% |
+
+The best deck now wins 60% and the worst 39%, a gap of 21 points instead of 28. Cutting Pride matriarch from Hearth and vow as well took it to 47%, too far. For Rootfed herd the twelfth land mattered more than any single beast. The Elder Herd starter is now on top at 60% and is the next to look at.
+
+Still open: the fast decks. The long throw (35%), The Thornwardens (44%) and The armed road (44%) need something that reaches the summoner before a slow deck is ready, such as cheaper burn, more Swift units or Ambush.
+
 ## Proposals from the 2026-11-10 balance review
 
 Built on 2026-11-10. Draft decks built around focuses show four that don't win yet: burning ground, freezing, healing and sacrifice. Each has plenty of cards that set up its effect and almost none that turn it into a win. These cards are mostly the payoffs, shaped by your feedback on 2026-11-10. Sacrifice is left open, since you didn't like the first ideas.

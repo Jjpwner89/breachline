@@ -149,7 +149,7 @@ var Decks = (function () {
   // They aren't starters, so the campaign and the balance runs leave them out. Copy one to change it.
   var THEMES = [
     { id: 'theme-devotion', name: 'Hearth and vow', note: 'Healers, and Devotion units that grow when an ally next to them recovers health.',
-      list: [['land_w', 10], ['pilgrim', 3], ['penitent', 3], ['vowkeeper', 2], ['chaplain', 3], ['cleric', 3], ['maren', 1], ['matriarch', 1], ['lancer', 1], ['reliquary', 2], ['consecrate', 1]] },
+      list: [['land_w', 10], ['pilgrim', 3], ['penitent', 3], ['vowkeeper', 2], ['chaplain', 3], ['cleric', 3], ['maren', 1], ['matriarch', 1], ['huntress', 1], ['reliquary', 2], ['consecrate', 1]] },
     { id: 'theme-armed', name: 'The armed road', note: 'Equipment, and Armed units that hit harder while they carry it.',
       list: [['land_w', 10], ['recruit', 3], ['glaive', 3], ['roadshield', 2], ['roadsquire', 2], ['spearman', 3], ['knight', 1], ['lancer', 1], ['matriarch', 1], ['lioness', 1], ['sentinel', 1], ['muster', 1], ['oathbell', 1]] },
     { id: 'theme-lit', name: 'Cinder and slag', note: 'Lit units that explode when they die, burning ground and heavy hitters.',
@@ -165,7 +165,7 @@ var Decks = (function () {
     { id: 'theme-charm', name: "The court's favour", note: 'Charming and buying enemy units, Veiled killers and Drain.',
       list: [['land_b', 10], ['temptress', 2], ['bought', 2], ['bailiff', 2], ['informant', 2], ['shutterassassin', 2], ['lynx', 2], ['noble', 2], ['envoy', 2], ['vashkar', 1], ['mourningveil', 1], ['squire', 2]] },
     { id: 'theme-rootfed', name: 'Rootfed herd', note: 'Extra lands, and Rootfed beasts that grow with every Overgrown ruin.',
-      list: [['land_g', 12], ['mosshorn', 3], ['earthspeaker', 3], ['stag', 2], ['reedbank', 2], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1]] },
+      list: [['land_g', 11], ['mosshorn', 2], ['earthspeaker', 3], ['stag', 1], ['reedbank', 2], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1], ['boar', 1], ['alderkin', 1], ['owl', 1]] },
     { id: 'theme-thorns', name: 'The Thornwardens', note: 'Thorns, Holding ground and ambushers that control where enemies can go.',
       list: [['land_g', 10], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 2], ['thornbrake', 1], ['saboteur', 3], ['sapling', 2], ['ironbark', 2], ['grovetender', 1], ['alderkin', 1], ['seedfall', 1]] }
   ];
@@ -199,11 +199,26 @@ var Decks = (function () {
     return ok;
   }
 
-  // What a deck can be built from. Exhibition is every card; multiplayer packs will
-  // add a mode here that returns only the cards the player owns, and how many of each.
+  // What a deck can be built from. Every card shows, but a deck can hold only the copies you own, up to the usual limit.
   function pool(mode) {
     if (mode !== 'exhibition') throw new Error('No card pool for mode: ' + mode);
-    return { ids: Object.keys(E.CARDS).filter(function (id) { return !E.CARDS[id].token; }), copies: E.maxCopies };
+    var owned = typeof Progress !== 'undefined' ? Progress.usable : E.maxCopies;
+    return { ids: Object.keys(E.CARDS).filter(function (id) { return !E.CARDS[id].token; }), copies: function (id) { return Math.min(E.maxCopies(id), owned(id)); }, limit: E.maxCopies };
+  }
+  // Decks from a save file. One that's new here, or newer than the copy here, is kept with its own updated time.
+  function adopt(list) {
+    var all = readAll(), n = 0;
+    list.forEach(function (d) {
+      if (!d || !d.id || !Array.isArray(d.list)) return;
+      var r = clean(d), mine = all.filter(function (x) { return x && x.id === r.id; })[0];
+      if (mine && (mine.updated || 0) >= r.updated) return;
+      all = all.filter(function (x) { return x && x.id !== r.id; });
+      all.push({ id: r.id, name: r.name, mode: r.mode, list: r.list, updated: r.updated || Date.now(), synced: mine && mine.synced });
+      dirty[r.id] = true;
+      n++;
+    });
+    if (n && writeAll(all)) { push(); changed(); }
+    return n;
   }
 
   function picks() {
@@ -218,7 +233,7 @@ var Decks = (function () {
   connect();
 
   return {
-    saved: saved, starters: starters, themes: themes, find: find, create: create, save: save, remove: remove, pool: pool,
+    saved: saved, starters: starters, themes: themes, find: find, create: create, save: save, remove: remove, pool: pool, adopt: adopt,
     picks: picks, setPicks: setPicks, persistent: function () { return !!store || !!remote; }
   };
 })();

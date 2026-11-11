@@ -7,6 +7,7 @@ Each topic has one home:
 - **Art:** the `art-direction` skill in `.claude/skills/`
 - **Flavour text:** the `flavor-text` skill, with lines in `FLAVOUR.md`
 - **Campaign:** `CAMPAIGN.md`
+- **Progression:** `PROGRESSION.md`, for rarity, packs, the collection, currency and saving
 - **Cards:** `NEW_CARDS.md`, `CARD_AUDIT.md` and `CARD_PROPOSALS.md`
 
 Keep only current decisions. When one changes, edit or delete the old text instead of adding a correction. Record feedback at the size it was given, so a comment on one card or one batch doesn't become a rule for everything.
@@ -29,7 +30,7 @@ An original fantasy card game on a grid, unique to the creator and not a rebuild
 From the creator:
 - An unseen summoner and one life total per player, starting at 15.
 - Decks are 30 cards, built before play (creator, 2026-11-10, replacing the earlier 40-card target). A player sees about 15 cards in a game, so about half the deck: copies matter, but games don't all play the same. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
-- 5-card opening hands. Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
+- 7-card opening hands (creator, 2026-11-10, replacing 5). Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
 - One draw per turn, and the hand is hidden.
 - Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
 - New units appear only in the back row and wait a turn.
@@ -42,7 +43,8 @@ From the creator:
 - The summoners and land rows sit outside the grid, above and below it.
 
 Claude's assumptions, not yet confirmed by the creator:
-- A 5 by 4 grid, and the summoner can be hit only from the enemy back row.
+- A 6 by 5 grid: 6 columns, and 5 rows between the two players (creator, 2026-11-10, replacing 5 by 4).
+- The summoner can be hit only from the enemy back row.
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
@@ -61,7 +63,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 - **Holding ground:** an enemy that moves next to this unit must stop there, so it can't slip past.
 - **Death triggers:** effects that happen when a unit dies. Sworn is the first.
 - **Tile effects:** an effect that sits on a tile for a turn or two, like fire or frozen ground. These are temporary, unlike the permanent terrain set aside below. Rules:
-  - An effect lasts a set number of its owner's turns, usually 1 to 3, and shows on the tile with a counter. Keep durations short, since the board has only 20 tiles.
+  - An effect lasts a set number of its owner's turns, usually 1 to 3, and shows on the tile with a counter. Keep durations short, since the board has only 30 tiles.
   - One effect per tile, and a new one replaces the old one.
   - Effects such as fire and thorns hurt your own units too, unless a unit is exempt. Alderkin aren't affected by thorns.
   - A unit is affected when it moves onto the tile, and again if it starts its owner's turn there. A flier passing over isn't affected, but one that stops on the tile is.
@@ -129,8 +131,8 @@ Five colours sit above factions as alignments, with several factions inside each
 
 - **Campaign** is the main way to play. Its picks, Claude's assumptions and balance are in `CAMPAIGN.md`. Cutscenes are wanted later, so don't build them until asked.
 - **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by type, colour and faction.
-- **Multiplayer** would get cards from packs. It isn't built.
-- **Unlocks:** the campaign unlocks cards gradually by winning, picking one of several in the style of Slay the Spire. Whether those unlocks carry over to other modes is undecided.
+- **Multiplayer** isn't built.
+- **Progression:** a free starter, packs, a collection with counts, crafting and prestige replays, decided on 2026-11-10 and waiting for the new board. Cards picked in a campaign carry over only if you win it. All of it is in `PROGRESSION.md`.
 - New modes add a card pool in `Decks.pool` in `decks.js` rather than changing the builder.
 
 ## The Claude opponent
@@ -175,7 +177,9 @@ Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balanc
 
 After the move to 30-card decks, 2026-11-10, from 6,000 starter games and 750 games per theme deck against the starters: Vigil 53%, Fervor 45%, Gnosis 47%, Dominion 53% and Genesis 52%. Gnosis needed a third Street conjurer and Cloistered scholar to stay above 45%. Theme decks moved within a few points of their 24-card results, and Winter glyphs is still the weakest at 41%. Players run out of cards in 0.4% of games, down from 2%. Campaign chapters moved by up to 10 points either way, and Vigil's early chapters got easier.
 
-Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged (re-run that day: 49%, 46%, 45%, 55% and 55%).
+Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged.
+
+Starter round-robin for progression, 2026-11-10, from 20,000 games (1,000 per pairing from each seat): Vigil 54%, Fervor 46%, Gnosis 47%, Dominion 53% and Genesis 50%, all inside the target, and the first player wins 48%. The most lopsided pairings are Dominion over Gnosis (59%), Gnosis over Fervor (58%) and Vigil over Gnosis (58%). None is a trap as a free first pick.
 
 Balance run for cards 104 to 191, 2026-11-10, from 3,000 games of random one-colour decks and 5,000 games of theme decks:
 - **No new card stands above the best old ones.** Within its colour, the strongest new cards are Slagheart hulk, Cinderhook axe, Elderwood stag and Stormglass glaive, at 8 to 11 points above their colour's average; the best old cards sit at 15 to 17.
@@ -216,7 +220,7 @@ Worth playtesting:
 - **Older red cards:** the creator said red looked a little unbalanced, and Elder dragon hasn't been touched.
 - **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
 - **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
-- **A bigger board:** test expanding beyond 5 by 4, since tokens and tile effects both need room on the board.
+- **The board size (creator, 2026-11-10):** Standard is now 6 by 5 with a 7-card hand and 15 life, after the creator played it and found 7 by 5 a little too big; 6 by 5 felt connected. The creator then settled on it and the Rules picker was removed. Long war (7 by 5, 7-card hand, 20 life) was dropped because it could leave a player losing for a long time. The old 5 by 4 rules are gone too, so a game saved mid-battle before the change won't load properly; the creator accepted that. The fifth row favoured the decks that build up, so Devotion was capped, three big green units cost more and the three strongest decks lost a few of their best cards; see the card proposals for the numbers. In bot games the player who hits the enemy summoner first still wins about 71%, and The long throw is still the weakest deck at 39%.
 - **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health.
 
 ## Open questions for the creator
@@ -224,7 +228,6 @@ Worth playtesting:
 - **Touchstones:** books, films, games or paintings with the feeling you want.
 - **Older red cards:** should they come down too?
 - **Worn-down defenders:** is the resting-unit fix wanted?
-- **Unlocks:** do campaign unlocks carry over?
 - **Campaign map:** Claude drew a fixed route without asking whether you want branching paths.
 - **Cards:** the open questions in `NEW_CARDS.md`.
 - **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
@@ -269,7 +272,7 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 - **Branches:** Claude sessions work in worktrees under `.claude/worktrees/`, each on its own branch. Merge finished work into `main` promptly so the others stay current.
 - **Testing:** Node isn't installed on this Mac. Run engine simulations with `/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc`, and open `tests.html` in a browser for the checks.
 - **Preview:** Python's web server can't serve directly from the Documents folder, so previews run from a temporary copy. The entries in `.claude/launch.json` point to old temporary folders.
-- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts, `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db` and `user` in its capabilities.
+- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts, `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db`, `user` and `downloads` in its capabilities, and always publish to the same page: players' collections live in that page's database.
 - **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
 - **Interface art:** the paintings live in `art/ui/`. Run `swift art/build-ui.swift` after replacing one; it crops, tiles and resizes them into `art/web/ui/`, which the game uses. Publish `art/web/ui/` with the rest of `art/web/`.
 

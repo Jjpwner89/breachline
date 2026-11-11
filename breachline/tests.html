@@ -7,6 +7,8 @@
 <script src="guides.js"></script>
 <script src="ai.js"></script>
 <script src="campaign.js"></script>
+<script src="rarity.js"></script>
+<script src="progress.js"></script>
 <script>
 // Open this page to check the Claude opponent's safety rules and campaign runs. No model is called.
 var E = Engine, results = [], DECKS = Object.keys(E.DECKS);
@@ -397,7 +399,7 @@ function randomField(r, ids) {
 
   s = arena(); put(s, 'stoneward', 1, 1, 1); var runner = put(s, 'clanraiders', 0, 2, 0); runner.moved = false;
   var dests = moves(s, 'move').filter(function (m) { return m.unit === runner.uid; }).map(function (m) { return m.r + ',' + m.c; }).sort().join(' ');
-  check('a Swift unit that moves next to Holding ground stops there', dests === '1,0 2,1 3,0 3,1', dests);
+  check('a Swift unit that moves next to Holding ground stops there', dests === '1,0 2,1 3,0 3,1 4,0', dests);
   check('Banked flame blade reads as Equipment', E.CARDS.flameblade.equipment && E.CARDS.flameblade.atkBonus === 2);
 })();
 
@@ -514,6 +516,34 @@ function randomField(r, ids) {
     s = endTurn(s);
     check('then destroys every unit at 2 health or less', !by(s, hurt) && !by(s, raider2));
   } catch (e) { check('sets 7 to 11 ran without errors', false, e.message); }
+})();
+
+// Progression: these run on Progress's fold and pack drawing, so they leave this browser's real collection alone.
+(function () {
+  var P = Progress, all = P.allCards();
+  check('every card has a rarity', all.every(function (id) { return Rarity.OF[id]; }) && !Object.keys(Rarity.OF).some(function (id) { return all.indexOf(id) < 0; }));
+  var e = function (id, t, at, extra) { var x = { id: id, t: t, at: at }; for (var k in extra) x[k] = extra[k]; return x; };
+  var st = P.fold([e('start', 'start', 1, { deck: 'white' }), e('start', 'start', 2, { deck: 'red' })]);
+  check('the free starter is given once, whole', st.starter === 'white' && st.cards.cleric === 3 && st.cards.maren === 1 && !st.cards.raider);
+  st = P.fold([e('b:1', 'battle', 1, { gold: 90, result: 'win' }), e('b:1', 'battle', 2, { gold: 90, result: 'win' }), e('p', 'pack', 3, { cost: 50, cards: ['dragon'] })]);
+  check('a battle pays once, and a pack costs gold and adds its cards', st.gold === 40 && st.cards.dragon === 1 && st.battles.length === 1);
+  st = P.fold([e('x', 'pack', 1, { cost: 0, cards: ['goblin', 'goblin', 'goblin', 'goblin', 'gone_card'] }), e('y', 'break', 2, { cards: { goblin: 1 }, shards: 5 }), e('z', 'craft', 3, { card: 'dragon', shards: 5 })]);
+  check('breaking down and crafting move cards and shards', st.cards.goblin === 3 && st.cards.dragon === 1 && st.shards === 0 && !('gone_card' in st.cards));
+  st = P.fold([e('clear:fervor', 'clear', 1, { story: 'fervor', deck: 'red', cards: ['dragon'], gold: 300 }), e('cw:fervor:2', 'campaign', 2, { story: 'fervor', cards: [], gold: 300 })]);
+  check('a first campaign win gives its starter and cards, a later one gold', st.starters.indexOf('red') >= 0 && st.cards.dragon === 2 && st.gold === 600 && st.cleared.fervor === 2);
+  st = P.fold([e('u1', 'unlock', 1, { on: true }), e('u2', 'unlock', 2, { on: false })]);
+  check('the password flag can be switched off again', st.unlocked === false);
+  var tiers = { c: 0, u: 0, r: 0, l: 0 }, sizes = true, repeats = false, green = true;
+  for (var i = 0; i < 300; i++) P.PACK_ORDER.forEach(function (t) {
+    var cards = P.draw(t, i % 2 ? 'G' : null);
+    sizes = sizes && cards.length === 8;
+    repeats = repeats || cards.some(function (id, k) { return cards.indexOf(id) !== k; });
+    if (i % 2) green = green && cards.every(function (id) { return Engine.CARDS[id].colour === 'G'; });
+    cards.forEach(function (id) { tiers[Rarity.of(id)]++; });
+  });
+  check('packs hold 8 different cards of the chosen alignment', sizes && !repeats && green, JSON.stringify(tiers));
+  var pay = P.rewardLines({ result: 'win', vs: 'hard', tally: { units: 2, spells: 1, lands: 3, kills: 1, damage: 4 } });
+  check('the battle summary adds up to what it pays', pay.total === Math.round((10 + 40 + 2 + 1 + 3 + 2 + 4) * 1.5));
 })();
 
 document.getElementById('out').textContent = results.join('\n');

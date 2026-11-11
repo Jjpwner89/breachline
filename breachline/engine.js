@@ -1,7 +1,8 @@
 // Rules engine. Pure state in, state out, with no DOM, so the UI, the scripted
 // bot and a future model-driven player all go through legalMoves and applyMove.
 var Engine = (function () {
-  var ROWS = 4, COLS = 5, START_LIFE = 15, OPENING_HAND = 5, MAX_REDRAWS = 2, TURN_LIMIT = 60;
+  // 6 by 5 with a 7-card hand since 2026-11-10 (creator), replacing 5 by 4 with 5 cards.
+  var ROWS = 5, COLS = 6, START_LIFE = 15, OPENING_HAND = 7, MAX_REDRAWS = 2, TURN_LIMIT = 60, DEVOTION_MAX = 3;
 
   function land(id, colour, name) { return { id: id, name: name, type: 'land', colour: colour, cost: 0, wants: 0 }; }
   function unit(id, name, colour, cost, wants, atk, hp, extra) {
@@ -92,7 +93,7 @@ var Engine = (function () {
     unit('boar', 'Thicket boar', 'G', 1, 1, 1, 3),
     unit('grovetender', 'Grove tender', 'G', 3, 1, 1, 4, { ability: { key: 'tend', label: 'Tend' }, text: 'Ability: an adjacent ally permanently gets +1 attack and +1 health.' }),
     unit('mossback', 'Mossback bear', 'G', 4, 2, 4, 6, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack while damaged.' }),
-    unit('herdmother', 'Herd mother', 'G', 6, 3, 7, 11, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
+    unit('herdmother', 'Herd mother', 'G', 7, 3, 7, 11, { keywords: ['Overrun'], text: 'Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('orrowen', 'Orrowen, Who Was Here First', 'G', 7, 3, 6, 12, { sub: 'Velunn', keywords: ['Grows', 'Overrun'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times. Overrun: damage beyond what kills a target hits the enemy behind it.' }),
     unit('follower', 'Camp follower', 'N', 1, 0, 1, 2),
     unit('scarred', 'Scarred summoner', 'N', 4, 0, 3, 5, { drawOnSummon: 1, text: 'When summoned: draw a card.' }),
@@ -153,7 +154,7 @@ var Engine = (function () {
     unit('corewright', 'Corewright', 'U', 3, 1, 2, 3, { equipDiscount: 1, text: 'Your equipment costs 1 less.' }),
     // The 2026-11-10 roster, cards 104 to 191 in CARD_PROPOSALS.md. Relics stay in play beside the summoner, off the grid.
     // Vigil.
-    unit('pilgrim', 'Devoted pilgrim', 'W', 2, 1, 1, 3, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
+    unit('pilgrim', 'Devoted pilgrim', 'W', 2, 1, 1, 3, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good, up to +3.' }),
     { id: 'vow', name: 'Vow of keeping', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: -1, hpBonus: 0, allyOnly: true, vow: true, text: "Enchant one of your units: -1 attack. The first time it would die, it's left at 1 health instead, and the vow ends." },
     unit('chaplain', 'Still Flame chaplain', 'W', 3, 1, 1, 4, { ability: { key: 'farheal', label: 'Heal', amount: 2 }, text: 'Ability: an ally within 2 tiles recovers 2 health.' }),
     unit('ribbonvane', 'Ribbonvane', 'W', 4, 2, 3, 4, { keywords: ['Flying', 'Guard'], text: 'Flying: moves 2 tiles, over other units. Guard: adjacent allies take 1 less damage from attacks.' }),
@@ -164,8 +165,8 @@ var Engine = (function () {
     unit('roadsquire', 'Oath-road squire', 'W', 1, 1, 1, 2, { ability: { key: 'refit', label: 'Refit' }, text: 'Ability: move an equipment card from an ally next to it to another ally next to it, or to itself.' }),
     { id: 'standasone', name: 'Stand as one', type: 'instant', colour: 'W', cost: 2, wants: 1, brace: 2, text: 'When an enemy attacks one of your units: it and each ally next to it take 2 less damage from attacks this turn.' },
     { id: 'sanctuary', name: 'Sanctuary threshold', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, sanctuary: 3, text: "Enchant one of your units for 3 turns: it can't be attacked from more than 1 tile away or targeted by enemy spells." },
-    unit('penitent', 'Hearth-sworn penitent', 'W', 3, 1, 2, 4, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
-    unit('vowkeeper', 'Vowkeeper of the long road', 'W', 5, 2, 3, 7, { keywords: ['Guard', 'Devotion'], text: 'Guard. Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good.' }),
+    unit('penitent', 'Hearth-sworn penitent', 'W', 3, 1, 2, 4, { keywords: ['Devotion'], text: 'Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good, up to +3.' }),
+    unit('vowkeeper', 'Vowkeeper of the long road', 'W', 5, 2, 3, 7, { keywords: ['Guard', 'Devotion'], text: 'Guard. Devotion: when it or an ally next to it is healed, it gets +1 / +1 for good, up to +3.' }),
     { id: 'humbling', name: 'Humbling light', type: 'spell', colour: 'W', cost: 4, wants: 2, humble: { atk: 5, hit: 3 }, text: 'Each unit with 5 or more attack takes 3 damage, yours included.' },
     unit('ashsweeper', 'Still Flame ash-sweeper', 'W', 2, 1, 1, 3, { ability: { key: 'sweep', label: 'Sweep' }, text: 'Ability: clear every tile effect on its tile and the tiles next to it.' }),
     { id: 'oathbell', name: 'Oath bell', type: 'relic', colour: 'W', cost: 3, wants: 1, relic: 'bell', text: 'Once on each of your turns, pay 1: each of your units next to an ally gets +1 attack this turn.' },
@@ -228,7 +229,7 @@ var Engine = (function () {
     { id: 'warbanddrum', name: 'Warband drum', type: 'relic', colour: 'R', cost: 3, wants: 1, relic: 'drum', text: 'Once on each of your turns, pay 1: each of your units can move 1 extra tile this turn.' },
     // Genesis.
     { id: 'springmelt', name: 'Spring melt', type: 'spell', colour: 'G', cost: 2, wants: 1, mend: 4, temper: 1, text: 'One of your units recovers 4 health and permanently gets +1 attack.' },
-    unit('alderelder', 'Alderkin elder', 'G', 6, 3, 5, 8, { sub: 'Alderkin', keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
+    unit('alderelder', 'Alderkin elder', 'G', 7, 3, 5, 8, { sub: 'Alderkin', keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
     unit('reedbank', 'Reedbank forager', 'G', 2, 1, 1, 3, { ability: { key: 'reed', label: 'Forage' }, text: 'Instead of moving or attacking: you may play an extra land next turn.' }),
     { id: 'overgrowth', name: 'Overgrowth', type: 'spell', colour: 'G', cost: 4, wants: 2, aim: { square: true, tile: 'thorns', turns: 2 }, text: 'Aim at a tile: the square around it fills with thorns for 2 turns.' },
     unit('pathguard', 'Thornwarden pathguard', 'G', 3, 1, 3, 4, { keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' }),
@@ -238,7 +239,7 @@ var Engine = (function () {
     unit('mosshorn', 'Mosshorn grazer', 'G', 2, 1, 1, 3, { keywords: ['Rootfed'], text: 'Rootfed: permanently +1 attack and +1 health whenever you play an Overgrown ruin, up to +3.' }),
     unit('earthspeaker', 'Earthspeaker', 'G', 4, 2, 2, 5, { keywords: ['Rootfed'], extraLand: true, text: 'Rootfed: permanently +1 / +1 whenever you play an Overgrown ruin, up to +3. When summoned: you may play an extra land this turn.' }),
     unit('stag', 'Elderwood stag', 'G', 5, 2, 4, 6, { keywords: ['Swift', 'Rootfed'], text: 'Swift. Rootfed: permanently +1 attack and +1 health whenever you play an Overgrown ruin, up to +3.' }),
-    unit('tortoise', 'Shell-mountain tortoise', 'G', 5, 2, 2, 12, { keywords: ['Guard'], text: 'Guard: adjacent allies take 1 less damage from attacks.' }),
+    unit('tortoise', 'Shell-mountain tortoise', 'G', 6, 2, 2, 12, { keywords: ['Guard'], text: 'Guard: adjacent allies take 1 less damage from attacks.' }),
     { id: 'seedheart', name: 'Seedheart vessel', type: 'relic', colour: 'G', cost: 3, wants: 1, relic: 'seed', text: 'Each land you play stores 1 growth in it, up to 3. On your turn, release it: one of your units permanently gets +1 / +1 for each.' },
     // Neutral.
     unit('recruit', 'Buckling recruit', 'N', 2, 0, 2, 2, { keywords: ['Armed'], armed: 1, text: 'Armed: +1 attack and +1 health while it carries equipment.' }),
@@ -266,7 +267,7 @@ var Engine = (function () {
   });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 10], ['matriarch', 1], ['stillflame', 1], ['lioness', 1], ['outrider', 1], ['shelter', 1], ['cleric', 3], ['sentinel', 3], ['knight', 2], ['lancer', 2], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 10], ['matriarch', 1], ['stillflame', 1], ['lioness', 1], ['outrider', 1], ['shelter', 1], ['cleric', 3], ['sentinel', 3], ['knight', 2], ['lancer', 1], ['huntress', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
     red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 9], ['land_u', 1], ['coalback', 1], ['clanraiders', 3], ['raider', 3], ['conjurer', 1], ['berserker', 2], ['passage', 1], ['captain', 1], ['warchief', 2], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 2], ['hex', 1]] },
     blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 9], ['land_w', 1], ['decoy', 1], ['mending', 1], ['conjurer', 3], ['lampwright', 3], ['scholar', 3], ['arcanist', 3], ['chorister', 3], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
     black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 8], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 2], ['envoy', 2], ['retainer', 2], ['squire', 2], ['slateprowler', 2], ['vashkar', 1], ['raise', 2], ['warrant', 1], ['colossus', 1], ['firebolt', 1]] },
@@ -593,16 +594,16 @@ var Engine = (function () {
   function emptyTile(s, r, c) { return r >= 0 && c >= 0 && r < ROWS && c < COLS && !unitAt(s, r, c); }
   function shoveRow(u) { return u.r + (u.owner === 0 ? 1 : -1); }
   // Whether healing t would grow a Devotion unit: t itself, or an ally next to it.
-  function devoNear(s, t) { return s.units.some(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && hasKw(o, 'Devotion'); }); }
+  function devoNear(s, t) { return s.units.some(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && hasKw(o, 'Devotion') && (o.devotion || 0) < DEVOTION_MAX; }); }
   function heal(s, u, amt) {
     var healed = Math.min(amt, u.maxHp - u.hp);
     u.hp += healed;
     if (amt <= 0) return 0;
     if (healed > 0) s.fx.push({ uid: u.uid, r: u.r, c: u.c, text: '+' + healed, good: true });
-    // Devotion grows when it, or an ally next to it, is healed, even at full health (creator, 2026-11-10).
+    // Devotion grows when it, or an ally next to it, is healed, even at full health (creator, 2026-11-10), up to +3.
     s.units.forEach(function (o) {
-      if (o.owner !== u.owner || (o !== u && dist(o, u) !== 1) || !hasKw(o, 'Devotion')) return;
-      o.boost = (o.boost || 0) + 1; o.maxHp += 1; o.hp += 1;
+      if (o.owner !== u.owner || (o !== u && dist(o, u) !== 1) || !hasKw(o, 'Devotion') || (o.devotion || 0) >= DEVOTION_MAX) return;
+      o.devotion = (o.devotion || 0) + 1; o.boost = (o.boost || 0) + 1; o.maxHp += 1; o.hp += 1;
       s.fx.push({ uid: o.uid, r: o.r, c: o.c, text: '+1', good: true });
       say(s, CARDS[o.cardId].name + "'s devotion grows.");
     });
@@ -964,7 +965,7 @@ var Engine = (function () {
   // Raised units land on the free back-row tile nearest the centre.
   function backTile(s, pi) {
     var best = null;
-    for (var col = 0; col < COLS; col++) if (!unitAt(s, backRow(pi), col) && (best === null || Math.abs(col - 2) < Math.abs(best - 2))) best = col;
+    for (var col = 0; col < COLS; col++) if (!unitAt(s, backRow(pi), col) && (best === null || Math.abs(col - (COLS - 1) / 2) < Math.abs(best - (COLS - 1) / 2))) best = col;
     return best;
   }
   function newUnit(s, inst, id, pi, r, c) {
