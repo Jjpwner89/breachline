@@ -28,8 +28,12 @@ var Sfx = (function () {
     equip: { vol: .5 }, curse: { vol: .5 }, heal: { vol: .5 }, 'hit-unit': { vol: .55 }, ward: { vol: .5 },
     'unit-move': { vol: .5 }, 'end-turn': { vol: .55 }, 'not-allowed': { vol: .6 }
   };
-  // The two tavern tunes take turns under everything, quietly, from the first click.
-  var TUNES = ['music-tower-inn', 'music-kings-feast'], MUSIC_VOL = .16, tune = 0, musicSrc = null, musicGain = null;
+  // The two tavern tunes take turns under everything, quietly, from the first click in this page. Some browsers allow
+  // sound before any click, so waiting for one keeps a page left open in the background silent. Only one open copy of
+  // the game plays music: starting it tells the others to stop.
+  var TUNES = ['music-tower-inn', 'music-kings-feast'], MUSIC_VOL = .16, tune = 0, musicSrc = null, musicGain = null, clicked = false;
+  var tavern = null;
+  try { tavern = new BroadcastChannel('breachline-music'); tavern.onmessage = function () { stopMusic(); }; } catch (e) {}
   var KEY = 'breachline.muted', ctx = null, buffers = {}, loading = {}, last = {};
   var muted = false;
   try { muted = localStorage.getItem(KEY) === '1'; } catch (e) {}
@@ -79,11 +83,11 @@ var Sfx = (function () {
     warmed = true;
     ['button-press', 'button-hover', 'card-hover', 'card-draw', 'card-play', 'page-turn', 'slash', 'unit-summon', 'hit-unit'].forEach(load);
   }
-  document.addEventListener('pointerdown', function () { warm(); music(); }, { once: false, passive: true });
+  document.addEventListener('pointerdown', function () { clicked = true; warm(); music(); }, { once: false, passive: true });
 
   // Each tune plays through once, then the other begins. The first one fades in; muting stops it.
   function music() {
-    if (muted || musicSrc || !context()) return;
+    if (muted || musicSrc || !clicked || !context()) return;
     var c = ctx, name = TUNES[tune % TUNES.length], p = load(name);
     if (!p) return;
     musicSrc = 'loading';
@@ -103,6 +107,7 @@ var Sfx = (function () {
       src.onended = function () { if (musicSrc === src) { musicSrc = null; tune++; music(); } };
       musicSrc = src;
       src.start();
+      if (tavern) tavern.postMessage('playing');
     });
   }
   function stopMusic() {
