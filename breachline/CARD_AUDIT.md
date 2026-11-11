@@ -31,7 +31,7 @@ Old stats are shown at the old scale. Ability numbers are in the next table.
 | Cloistered scholar | 2 | 10 / 30 | 1 / 2 | Hasn't left the library since spring |
 | Lantern arcanist | 3 | 30 / 35 | 3 / 3 | Real damage in a fragile body |
 | Ambrel lampwright | 3 | 20 / 40 | 2 / 4 | Already clean |
-| Brass chorister | 4 | 35 / 70 | 3 / 7 | A heavy construct, not a brawler. The rare sturdy blue unit |
+| Brass chorister | 4 | 35 / 70 | 3 / 5 | A heavy construct, not a brawler. The rare sturdy blue unit. Was 3 / 7 until 2026-11-11, which got Push for free |
 
 ### Dominion (black): strong for a price
 

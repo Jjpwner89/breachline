@@ -157,7 +157,7 @@ var Decks = (function () {
     { id: 'theme-burn', name: 'The long throw', note: 'Fast units, and spells that hit the enemy summoner directly.',
       list: [['land_r', 8], ['land_b', 2], ['hurledbrand', 3], ['siphon', 2], ['skyfalls', 2], ['clanoutrider', 3], ['raider', 2], ['berserker', 2], ['clanraiders', 2], ['warchief', 2], ['squire', 2]] },
     { id: 'theme-winter', name: 'Winter glyphs', note: 'Freezing, snares and ranged attackers that hold the enemy in place.',
-      list: [['land_u', 10], ['rimecaller', 2], ['rimedrake', 2], ['winterdoor', 3], ['wardwright', 3], ['frostbreak', 1], ['rimebolt', 1], ['frost', 1], ['whitemorning', 1], ['examiner', 1], ['chorister', 3], ['arcanist', 2]] },
+      list: [['land_u', 10], ['rimecaller', 2], ['rimedrake', 2], ['winterdoor', 2], ['wardwright', 3], ['siegewalker', 1], ['rimebolt', 1], ['frost', 1], ['whitemorning', 1], ['examiner', 2], ['chorister', 3], ['arcanist', 2]] },
     { id: 'theme-longshot', name: 'Long sights', note: 'Longshot attackers and Artificers\' gear that strike from the back.',
       list: [['land_u', 10], ['marksman', 3], ['siegewalker', 2], ['ilvane', 1], ['fieldplate', 2], ['prism', 2], ['recruit', 1], ['chorister', 2], ['lampwright', 2], ['arcanist', 2], ['journeyman', 2], ['tideglass', 1]] },
     { id: 'theme-carrion', name: 'The barrow feast', note: 'Sacrifice, and Carrion units that grow each time a unit dies.',

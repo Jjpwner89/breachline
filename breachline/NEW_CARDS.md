@@ -44,7 +44,7 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 | Cloistered scholar | Unit | 2 | 1 | 1 / 2 | Instead of moving or attacking: draw a card | She asked for one more candle. That was in the spring. |
 | Illusory decoy | Unit | 1 | 1 | 0 / 1 | Decoy | Your aim was perfect. |
 | Lantern arcanist | Unit | 3 | 1 | 3 / 3 | Ranged | |
-| Brass chorister | Unit, construct | 4 | 2 | 3 / 7 | Ability: push an adjacent enemy 1 tile | |
+| Brass chorister | Unit, construct | 4 | 2 | 3 / 5 | Ability: push an adjacent enemy 1 tile | |
 | Displacement | Instant | 2 | 1 | | When your unit is attacked: move it 1 tile, and the attack misses | |
 | Binding glyph | Enchantment | 2 | 1 | | Enchant an enemy unit: it can't move | |
 
