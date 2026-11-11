@@ -217,8 +217,9 @@ var Screens = (function () {
       '<div class="cgrid rdeck' + (swapIn && !locked ? ' swapping' : '') + '">' + deck + '</div></section>';
   }
   function opponentName(player) { return player === 'bot' ? 'the scripted bot' : 'Claude, ' + AI.levels[player].label; }
-  function campaignHead(title) {
-    return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + '</h1></header>' +
+  function campaignHead(title, extra) {
+    return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + '</h1>' +
+      (extra ? '<div class="push cleave">' + extra + '</div>' : '') + '</header>' +
       (Campaign.persistent() ? '' : '<p class="warn">This browser is blocking storage, so this run lasts only until you close this tab.</p>');
   }
   function fitAll() { GameUI.fitCards(root); }
@@ -256,9 +257,10 @@ var Screens = (function () {
     var leave = confirmAbandon
       ? '<span class="dask">End this run for good?</span><button type="button" class="btn danger" ' + act('abandonRun') + '>End run</button><button type="button" class="btn" ' + act('keepRun') + '>Keep going</button>'
       : '<button type="button" class="btn" ' + act('askAbandon') + '>Abandon run</button>';
-    show('<div class="page">' + campaignHead(story.title) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
+    // Abandoning sits in the header, where it can't fall below the fold.
+    show('<div class="page">' + campaignHead(story.title, leave) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
       '<aside class="cside">' + chapterPanel(run, picked) +
-      '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p><div class="cleave">' + leave + '</div></aside></div>' +
+      '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p></aside></div>' +
       runDeck(run) + '</div>', campaign);
     fitAll();
     march(run);
