@@ -201,6 +201,10 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
 .cleave { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .rdeck { overflow: visible; flex: none; }
 .rdeck .card { flex: none; }
+/* Swapping in the campaign: the picked reserve card is ringed, and deck cards light up as they're pointed at. */
+.pcard.chosen .frame { outline: 3px solid var(--gold-pale); outline-offset: 2px; }
+.rdeck.swapping .card:hover .frame, .rdeck.swapping .card:focus-visible .frame { outline: 3px solid var(--target); outline-offset: 2px; }
+.rdeck button.card { cursor: pointer; }
 .rdeck .have { top: auto; right: auto; left: 50%; bottom: 6px; transform: translateX(-50%); }
 .rlead { font-size: 15px; }
 .rpicks { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
