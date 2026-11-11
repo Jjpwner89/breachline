@@ -117,13 +117,14 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .chip[aria-pressed="true"] .fdot { box-shadow: 0 0 0 1px var(--card-ink); }
 .cgrid { flex: 1; min-height: 0; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(164px, 1fr)); gap: 8px; align-content: start; padding: 4px 4px 12px 0; }
 .cgrid .none { grid-column: 1 / -1; padding: 24px 0; text-align: center; font-size: 15px; }
-.pcard { position: relative; min-width: 0; }
+.pcard { position: relative; min-width: 0; container-type: inline-size; }
 .pcard .card { display: block; width: 100%; container-type: inline-size; }
 .pcard .card:focus-visible .frame { outline: 2px solid var(--target); outline-offset: 1px; }
 .pcard.maxed .card { cursor: not-allowed; }
 .pcard.maxed .frame { filter: saturate(.6) brightness(.72); }
-.have { position: absolute; right: 5px; top: 5px; min-width: 28px; padding: 1px 7px; text-align: center; background: var(--table); border: 1px solid var(--gold); border-radius: 12px; font-weight: 700; font-size: 13px; font-variant-numeric: tabular-nums; pointer-events: none; }
-.minus { position: absolute; right: 5px; top: 31px; width: 28px; height: 28px; padding: 0; background: var(--table); border: 1px solid var(--gold); border-radius: 50%; font-weight: 700; line-height: 1; }
+/* The count and minus sit on the painting's top-right corner, clear of the name. */
+.have { position: absolute; right: 5.5cqw; top: 19.5cqw; min-width: 28px; padding: 1px 7px; text-align: center; background: var(--table); border: 1px solid var(--gold); border-radius: 12px; font-weight: 700; font-size: 13px; font-variant-numeric: tabular-nums; pointer-events: none; }
+.minus { position: absolute; right: 5.5cqw; top: calc(19.5cqw + 26px); width: 28px; height: 28px; padding: 0; background: var(--table); border: 1px solid var(--gold); border-radius: 50%; font-weight: 700; line-height: 1; }
 .minus:hover { background: var(--danger-deep); }
 .dpanel { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
 .dtop { display: flex; gap: 6px; }

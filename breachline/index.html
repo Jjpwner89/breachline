@@ -216,40 +216,37 @@ h1, h2 { margin: 0; font-family: var(--display); }
   .card.dim:hover .frame, .card.dim:focus-visible .frame { filter: saturate(.8) brightness(.95); }
 }
 .empty { align-self: center; color: var(--muted); }
-/* Card frame, from card.html: bronze edge, cost and name on a bar at the top, art, then parchment. Sizes use cqw so a card scales as one piece. */
-.frame { --name: 9.4cqw; --bar-left: 20cqw; --coin: 17cqw; --coin-text: 12cqw; --sym: 5cqw; --type: 6.6cqw; --text: 7.2cqw; --flav: 6cqw; --stat: 24cqw; --stat-label: 6.2cqw; --stat-num: 11cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; border-radius: 5cqw; padding: 3.9cqw; color: var(--card-ink); font-family: var(--serif); }
+/* Card frame: bronze edge, the name on one line at the top, art with the cost on its corner, the type band, then parchment. Sizes use cqw so a card scales as one piece. */
+.frame { --name: 9.4cqw; --bar-h: 13.6cqw; --band-h: 11cqw; --band-text: 4.8cqw; --num-w: 17cqw; --num-h: 10cqw; --num: 7.6cqw; --coin: 17cqw; --coin-text: 12cqw; --sym: 5cqw; --text: 7.2cqw; --flav: 6cqw; position: relative; display: flex; aspect-ratio: 5 / 7.1; border-radius: 5cqw; padding: 3.9cqw; color: var(--card-ink); font-family: var(--serif); }
 .frame::after { content: ""; position: absolute; inset: 0; pointer-events: none; border: 7cqw solid transparent; border-image: url("art/web/ui/frame.png") 60 / 7cqw / 0 stretch; }
-.frame.big { --name: 7.2cqw; --bar-left: 16cqw; --coin: 12.5cqw; --coin-text: 8cqw; --sym: 3.6cqw; --type: 4.2cqw; --text: 5.2cqw; --flav: 4.6cqw; --stat: 16cqw; --stat-label: 3.7cqw; --stat-num: 7cqw; }
+.frame.big { --name: 7.2cqw; --bar-h: 10.4cqw; --band-h: 8.4cqw; --band-text: 3.7cqw; --num-w: 13cqw; --num-h: 7.6cqw; --num: 5.8cqw; --coin: 12.5cqw; --coin-text: 8cqw; --sym: 3.6cqw; --text: 5.2cqw; --flav: 4.6cqw; }
 .frame.W { --band: #6f5518; --lac: #c99a2e; } .frame.R { --band: #8c2a24; } .frame.U { --band: #1f4f7a; --lac: #2f78c4; } .frame.B { --band: #3f2f56; --lac: #6a46a0; } .frame.G { --band: #2f5a32; --lac: #3f8a36; } .frame.N { --band: #55514a; --lac: #6b665c; }
 .frame .inner { position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; background: url("art/web/ui/paper.jpg") center / cover, var(--parchment); border-radius: 1cqw; overflow: hidden; }
-.frame .cost { position: absolute; z-index: 1; left: 1.2cqw; top: 1cqw; display: flex; flex-direction: column; align-items: center; gap: 0.8cqw; }
+/* The cost sits on the painting's top-left corner, leaving the whole bar to the name. */
+.frame .cost { position: absolute; z-index: 1; left: 1.6cqw; top: calc(var(--bar-h) + 1.6cqw); display: flex; flex-direction: column; align-items: center; gap: 0.8cqw; }
 .frame .coin { width: var(--coin); height: var(--coin); border-radius: 50%; background: url("art/web/ui/coin.png") center / contain no-repeat; filter: drop-shadow(0 0.5cqw 0.6cqw rgba(0, 0, 0, .55)); display: flex; align-items: center; justify-content: center; font: 700 var(--coin-text)/1 var(--display); font-variant-numeric: lining-nums; color: var(--card-ink); text-shadow: 0 0.3cqw 0 rgba(255, 240, 200, .5); }
 .frame .coin.over { filter: drop-shadow(0 0.5cqw 0.6cqw rgba(0, 0, 0, .55)) sepia(.4) hue-rotate(-28deg) saturate(2.2); }
 .frame .wants { display: flex; gap: 0.7cqw; background: #1e1b18; box-shadow: 0 0 0 0.4cqw #b48a3c; border-radius: 3cqw; padding: 0.7cqw 1.1cqw; color: var(--white); }
 .frame.R .wants { color: #ff9b66; } .frame.U .wants { color: #8ccaf2; } .frame.B .wants { color: #cdb6ec; } .frame.G .wants { color: #a9dc84; }
 .frame .sym { width: var(--sym); height: var(--sym); fill: currentColor; stroke: currentColor; }
 .frame .sym.miss { opacity: .3; }
-.frame .bar-top { flex: none; display: block; padding: 1.9cqw 2cqw 2.1cqw var(--bar-left); background: url("art/web/ui/titlebar.jpg") center top / cover, var(--crimson); border-bottom: 0.5cqw solid var(--gold); font: 700 var(--name)/1.05 var(--display); letter-spacing: 0.01em; color: var(--ivory); text-shadow: 0 0.4cqw 0.8cqw rgba(0, 0, 0, .6); }
-.frame.land .bar-top { padding-left: 3cqw; }
+/* The name is always one line; fitCards shrinks long ones. */
+.frame .bar-top { flex: none; display: block; height: var(--bar-h); padding: 0 3cqw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background: url("art/web/ui/titlebar.jpg") center top / cover, var(--crimson); border-bottom: 0.5cqw solid var(--gold); font: 700 var(--name)/calc(var(--bar-h) - 0.5cqw) var(--display); letter-spacing: 0.01em; color: var(--ivory); text-shadow: 0 0.4cqw 0.8cqw rgba(0, 0, 0, .6); }
 /* Each alignment recolours the crimson lacquer; Fervor keeps it as painted. */
 .frame:not(.R) .bar-top { background: linear-gradient(var(--lac), var(--lac)), url("art/web/ui/titlebar.jpg") center top / cover, var(--crimson); background-blend-mode: color, normal, normal; }
 .frame.W .bar-top { background: linear-gradient(rgba(255, 220, 140, .18), rgba(255, 220, 140, .18)), linear-gradient(var(--lac), var(--lac)), url("art/web/ui/titlebar.jpg") center top / cover, var(--crimson); background-blend-mode: screen, color, normal, normal; }
-.frame .bar-top.long { font-size: 7.4cqw; }
 .frame .art { flex: none; display: block; aspect-ratio: 3 / 2; background: var(--band); border-bottom: 0.5cqw solid var(--gold); }
 .frame .art img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.frame .type { flex: none; display: block; text-align: center; font: 500 var(--type)/1.2 var(--display); letter-spacing: 0.03em; color: var(--card-soft); padding: 1cqw 2cqw 0; }
-.frame .ctext { flex: 1; min-height: 0; display: block; padding: 0.8cqw 3.4cqw 0; font-size: var(--text); line-height: 1.18; }
+.frame .band { flex: none; display: flex; align-items: center; gap: 1.5cqw; height: var(--band-h); padding: 0 1.2cqw; background: linear-gradient(rgba(0, 0, 0, .18), rgba(0, 0, 0, .32)), var(--band); border-bottom: 0.5cqw solid var(--gold); color: var(--ivory); text-shadow: 0 0.3cqw 0.6cqw #000; }
+.frame .type { flex: 1; min-width: 0; text-align: center; font: 600 var(--band-text)/1 var(--display); letter-spacing: 0.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* A unit's Attack and Health flank the type in the band. */
+.frame .num { flex: none; display: grid; place-items: center; width: var(--num-w); height: var(--num-h); background: url("art/web/ui/plaque-attack.png") center / 100% 100% no-repeat; font: 700 var(--num)/1 var(--display); font-variant-numeric: lining-nums; }
+.frame .num.hp { background-image: url("art/web/ui/plaque-health.png"); }
+.frame .ctext { flex: 1; min-height: 0; display: block; padding: 2cqw 3.4cqw 2cqw; font-size: var(--text); line-height: 1.18; }
 .frame .ctext.tight { font-size: 6.2cqw; }
 .frame .ctext.tighter { font-size: 5.6cqw; }
 .frame .flavour { display: block; margin-top: 0.5em; font-style: italic; font-size: var(--flav); line-height: 1.16; color: var(--card-soft); }
 .frame .flavour .credit { display: block; font-style: normal; font-size: 0.86em; text-align: right; }
-.frame .foot { flex: none; display: flex; justify-content: space-between; align-items: center; padding: 0 1.6cqw 1.6cqw; }
-/* On a unit the type line sits between the Attack and Health plaques, leaving its line to the rules text. */
-.frame .foot .type { flex: 1; min-width: 0; padding: 0 0.8cqw; font-size: 5.2cqw; line-height: 1.12; }
-.frame .stat { display: block; width: var(--stat); text-align: center; padding: 1.2cqw 0 1.6cqw; color: var(--ivory); text-shadow: 0 0.3cqw 0.6cqw #000; background: url("art/web/ui/plaque-attack.png") center / 100% 100% no-repeat; }
-.frame .stat.hp { background-image: url("art/web/ui/plaque-health.png"); }
-.frame .stat span { display: block; font: 500 var(--stat-label)/1.1 var(--display); letter-spacing: 0.03em; }
-.frame .stat strong { display: block; font: 700 var(--stat-num)/1 var(--display); font-variant-numeric: lining-nums; }
 .inspect { display: none; position: absolute; z-index: 20; top: 10px; right: 12px; width: min(290px, calc((100cqh - 44px) / 1.42)); opacity: 0; transition: opacity .1s; pointer-events: none; }
 @media (min-width: 821px) { .inspect { display: block; } }
 .inspect.left { right: auto; left: 12px; }

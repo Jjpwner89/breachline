@@ -153,6 +153,7 @@ The creator's first full game against it was dynamic, and they said it was clear
 - **Layout:** laptop first, with phones on a simpler stacked layout.
 - **The old layout is gone:** keep new UI in the war table style.
 - **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
+- **Same layout on every card (2026-11-10):** the creator chose this from three mockups. The name is always one line and shrinks to fit, the cost coin sits on the painting's top-left corner, and a band in the alignment colour runs under the art with the type and alignment. On units, Attack and Health sit at the band's ends. Every card has the same art, band and text box sizes.
 
 ### UI refresh
 

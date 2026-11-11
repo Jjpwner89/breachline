@@ -399,14 +399,15 @@
       '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
     var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
     var type = '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>';
-    // A unit's type line goes between its plaques, so the rules text gets that line back.
-    var foot = c.type === 'unit' ? '<span class="foot"><span class="stat"><span>Attack</span><strong>' + c.atk + '</strong></span>' + type + '<span class="stat hp"><span>Health</span><strong>' + c.hp + '</strong></span></span>' : '';
+    // Every card has the same band under the art, so every card is laid out the same; a unit's Attack and Health sit at its ends.
+    var band = c.type === 'unit' ? '<span class="num" title="Attack" aria-label="Attack ' + c.atk + '">' + c.atk + '</span>' + type +
+      '<span class="num hp" title="Health" aria-label="Health ' + c.hp + '">' + c.hp + '</span>' : type;
     var fl = FLAVOUR[c.id];
     if (fl) body += '<span class="flavour">' + fl.line + (fl.credit ? '<span class="credit">' + fl.credit + '</span>' : '') + '</span>';
     return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
       '<span class="bar-top">' + c.name + '</span>' +
       '<span class="art">' + (noArt[c.id] ? '' : '<img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false">') + '</span>' +
-      (foot ? '' : type) + '<span class="ctext">' + body + '</span>' + foot + '</span></span>';
+      '<span class="band">' + band + '</span><span class="ctext">' + body + '</span></span></span>';
   }
 
   function cardHtml(i, moves) {
@@ -419,23 +420,42 @@
       frameHtml(c, { cost: E.costOf(S, HUMAN, c, i), have: have }) + '</span></button>';
   }
 
-  // Small cards have little room, so a line that doesn't fit is left for the close-up. Rules text that still doesn't fit gets smaller,
-  // then the name, then the rules text once more. The art is never cropped.
-  function fitCards(host) {
-    Array.prototype.forEach.call(host.querySelectorAll('.ctext'), function (t) {
-      var over = function () { return t.scrollHeight > t.clientHeight; }, f = t.querySelector('.flavour');
-      if (f && over()) t.removeChild(f);
-      if (over()) t.classList.add('tight');
-      if (over()) t.parentNode.querySelector('.bar-top').classList.add('long');
-      if (over()) t.classList.add('tighter');
-    });
+  // Shrinks one line of text until it fits its width, down to a floor, measured in the card's cqw.
+  function shrinkToFit(el, floor) {
+    var cqw = el.closest('.frame').offsetWidth / 100;
+    if (!cqw) return;
+    el.style.fontSize = '';
+    var size = parseFloat(getComputedStyle(el).fontSize) / cqw;
+    while (el.scrollWidth > el.clientWidth && size > floor) { size -= 0.2; el.style.fontSize = size + 'cqw'; }
   }
+
+  // Names and the band stay on one line, shrinking for long ones. Small cards have little room, so a line that doesn't fit is
+  // left for the close-up, and rules text that still doesn't fit gets smaller twice. The art is never cropped.
+  // A card drawn while hidden can't be measured, so it fits itself when it first appears.
+  var unsized = window.ResizeObserver ? new ResizeObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.target.isConnected) unsized.unobserve(e.target);
+      else if (e.target.offsetWidth) { unsized.unobserve(e.target); fitFrame(e.target); }
+    });
+  }) : null;
+  function fitFrame(fr) {
+    if (!fr.offsetWidth) { if (unsized) unsized.observe(fr); return; }
+    var big = fr.classList.contains('big'), t = fr.querySelector('.ctext'), f = t.querySelector('.flavour');
+    shrinkToFit(fr.querySelector('.bar-top'), big ? 4 : 5.2);
+    shrinkToFit(fr.querySelector('.band .type'), big ? 2.6 : 3.4);
+    var over = function () { return t.scrollHeight > t.clientHeight; };
+    if (f && over()) t.removeChild(f);
+    if (over()) t.classList.add('tight');
+    if (over()) t.classList.add('tighter');
+  }
+  function fitCards(host) { Array.prototype.forEach.call(host.querySelectorAll('.frame'), fitFrame); }
 
   // The large card. It only redraws when the card changes, so bot turns don't reset it.
   function showCard(id, note) {
     if (peek && peek.id === id && peek.note === (note || '')) return;
     peek = { id: id, note: note || '' };
     $('inspect').innerHTML = '<div class="slot">' + frameHtml(E.CARDS[id], { big: true }) + '</div><p class="note">' + peek.note + '</p>';
+    fitCards($('inspect'));
     $('peekBtn').setAttribute('aria-label', 'View card: ' + E.CARDS[id].name);
   }
   function revealPeek(ms) {
@@ -1174,5 +1194,7 @@
   if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
   else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
+  // Card names are measured, so every card on the page fits again once a font arrives.
+  if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', function () { fitCards(document); });
   window.__game = { get state() { return S; }, load: start, setSample: function (fn) { sample = fn; refreshStart(); }, setPlayer: function (key) { oppPlayer = key; refreshStart(); }, setDebug: function (on) { debugOn = on; } };
 })();
