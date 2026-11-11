@@ -63,7 +63,7 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 
 | Card | Type | Cost | Wants | Stats | Rules | Line |
 | --- | --- | --- | --- | --- | --- | --- |
-| Walking sapling | Unit | 2 | 1 | 1 / 3 | Grows | |
+| Walking sapling | Unit | 2 | 1 | 1 / 2 | Grows, twice only | |
 | Thornwarden saboteur | Unit | 2 | 1 | 2 / 3 | Regrow | |
 | Great owl | Unit | 3 | 1 | 2 / 3 | Flying. Goes against Genesis's tendency, so it costs 1 extra | |
 | Wayfinder druid | Unit | 3 | 1 | 2 / 4 | When summoned: you may play an extra land this turn | |

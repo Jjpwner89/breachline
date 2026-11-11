@@ -325,7 +325,7 @@ Approved after the 2026-11-10 balance review. Starter decks won between 38% and 
 | Card or deck | Was | Becomes | Why |
 | --- | --- | --- | --- |
 | Elder Herd bull | 6 / 9 | 6 / 8 | Green won 73% as a starter, and won more than any other colour in random decks |
-| Walking sapling | 1 / 3 | 1 / 2, so it reaches 4 / 8 | Same |
+| Walking sapling | 1 / 3 | 1 / 2, so it reaches 4 / 8. Since 2026-11-11 it grows only twice, to 3 / 6 | Same |
 | Bronze-harness alderkin | 4 / 7 | 4 / 6 | A plain 4-cost unit that won 69% of the games it was played in |
 | Death warrant | 5 mana | 4 mana | Black's weakest card, winning 37% of the games it was played in |
 | Oath of the Sunmane starter | 2 Water carrier, Dawnsails over the harvest | Pride lioness, Pride matriarch, Oath outrider | The starter predated the newer Sunmane cards. White's cards were the strongest in random decks while its starter was the weakest |
