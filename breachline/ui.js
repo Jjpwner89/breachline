@@ -563,7 +563,7 @@
     if (pay.entry && pay.entry.boost > 1) mults.push(['A campaign you\'ve already beaten', pay.entry.boost]);
     rows += mults.map(function (m) { return '<li class="mult" data-mult="' + m[1] + '"><span>' + m[0] + '</span><small></small><b>× ' + m[1] + '</b></li>'; }).join('');
     var result = S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss';
-    return '<div class="plaque summary ' + result + '"><div class="screst"><b>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</b></div>' +
+    return '<div class="plaque summary ' + result + (chapterBattle ? ' campaign' : '') + '"><div class="screst"><b>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</b></div>' +
       '<p class="ssub">' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' +
       '<ol class="stally">' + rows + '</ol>' +
       '<div class="earned"><span class="purse" aria-hidden="true"></span><span>Gold earned</span><strong data-count="' + pay.pay.total + '">' + pay.pay.total + '</strong></div>' +

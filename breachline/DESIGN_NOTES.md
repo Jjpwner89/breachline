@@ -187,7 +187,7 @@ Earlier approvals:
 - **Rewards and map:** reward cards are dealt face down and turned over. The army marches along the campaign road.
 - **Victory and defeat:** the crest drops and the payout is stamped line by line, with coins flying into the purse.
 
-Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. Not yet sourced: a heal, an end-turn sound, a defeat sting and a unit-hit sound.
+Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2026-11-11 the creator picked spell and effect sounds from a sound board: Vigil spells get a healing impact or a tubular bell, Gnosis spells a low wine glass, with ice impact 3 for the cold spells and fire staff 20 for lightning; Fervor spells fire impact 3; Dominion spells a catching flame pitched down; Genesis spells a leaf rustle. Enchantments on your units get a pitched-down finger cymbal, enchantments on enemies (curses) ice impact 5, equipment healing 3, heals healing 9, damage hit 1, and a blocked blow anvil 2. The same day: footstep 6 when a unit moves, a card touch for hovering a card and card slide 6 for drawing one, a wood knock when a greyed-out card is clicked, a timpani for end turn, a full gong for victory, sad ending 1 for losing a campaign battle and sad ending 3, quiet, for losing any other, and the Old Tower Inn and King's Feast tunes taking turns as quiet background music. The mute button stops it all.
 
 ## Balance
 

@@ -1,10 +1,11 @@
 # Sound credits
 
-Every sound here is CC0 (public domain), from OpenGameArt.org, downloaded on 2026-11-10. Credit isn't required; it's given as a courtesy. The creator picked each one on 2026-11-11 from the candidates on the polish page. Sources ending .wav were converted to AAC (.mp4).
+Every sound here is CC0 (public domain). Credit isn't required; it's given as a courtesy. The first set came from OpenGameArt.org, downloaded on 2026-11-10 and picked on the polish page. The spell, heal, ward and curse sounds were downloaded and picked on 2026-11-11 from the sound board: they come from OpenGameArt.org, lentikula's packs on itch.io and the Versilian Community Sample Library (VCSL, github.com/sgossner/VCSL). Those were trimmed, faded and levelled. Sources in .wav, .flac or .mp3 were converted to AAC (.mp4).
 
 | File | Pack | Original file |
 |---|---|---|
-| card-draw | Kenney - Interface Sounds | scratch_001.ogg |
+| card-draw | Kenney - Casino Audio | card-slide-6.ogg |
+| card-hover | BMacZero - Playing card sounds | contact1.wav |
 | card-play | Kenney - Casino Audio | card-place-2.ogg |
 | card-flip | Kenney - Casino Audio | cards-pack-open-2.ogg |
 | shuffle | Kenney - Casino Audio | card-shuffle.ogg |
@@ -17,12 +18,33 @@ Every sound here is CC0 (public domain), from OpenGameArt.org, downloaded on 202
 | summoner-hit | rubberduck - 100 CC0 metal and wood SFX | metal_slam_01.ogg |
 | enemy-turn | rubberduck - 80 CC0 RPG SFX | chain_03.ogg |
 | button-press | Kenney - UI Audio | click1.wav |
-| button-hover | Kenney - UI Audio | rollover2.wav (also card hover, softer and pitched down) |
+| button-hover | Kenney - UI Audio | rollover2.wav |
 | page-turn | Kenney - RPG Audio | bookFlip1.ogg |
 | map-step | Kenney - RPG Audio | footstep05.ogg |
 | seal-stamp | Kenney - RPG Audio | dropLeather.ogg |
 | coin-drop | Kenney - RPG Audio | handleCoins.ogg |
 | coin-pile | vehicle - Fantasy Accessory SFX Library | coins-shake-05.wav |
-| victory | fvcalderan - Classic fanfare lick | fanfare_3.ogg |
+| victory | VCSL - Gong 2 | hit_full1.mp3 |
+| defeat | Robin Lamb - Game Over Sad Short Music Clips | sadending3.wav |
+| defeat-run | Robin Lamb - Game Over Sad Short Music Clips | sadending1.wav |
+| end-turn | VCSL - Timpani 1 | Timpani1_Hit_v4_rr1_Sum.wav |
+| unit-move | Kenney - RPG Audio | footstep06.ogg |
+| not-allowed | rubberduck - 100 CC0 metal and wood SFX | wood_hit_03.ogg |
+| music-tower-inn | RandomMind - Medieval: The Old Tower Inn | Loop_The_Old_Tower_Inn.wav |
+| music-kings-feast | RandomMind - Medieval: King's Feast | Loop_Kings_Feast.wav |
+| spell-vigil | lentikula - Healing Spell Impacts (itch.io) | Healing Spell Impact 1.wav |
+| spell-vigil-bell | VCSL - Tubular Bells 1 | chimes_A#3_pp_rr1.wav |
+| spell-gnosis | VCSL - Wine Glasses | glass1_D#4_Fast_1_Decay.wav |
+| spell-ice | lentikula - Basic Spell Impacts (itch.io) | Ice Spell Impact 3.wav |
+| spell-lightning | LEGIT Audio - Fire Staff Sound Effects | LEGIT_FIR_Fire_Staff 20-Audio.wav |
+| spell-fire | lentikula - Basic Spell Impacts (itch.io) | Fire Spell Impact 3.wav |
+| spell-dominion | Catching fire (OpenGameArt) | flame.ogg (played pitched down) |
+| spell-genesis | qubodup - 20 rustles of dry leaves | rustle03.flac |
+| enchant | VCSL - Finger Cymbals | Fing_Cymb.wav (played pitched down) |
+| equip | lentikula - Healing Spell Impacts (itch.io) | Healing Spell Impact 3.wav |
+| heal | lentikula - Healing Spell Impacts (itch.io) | Healing Spell Impact 9.wav |
+| hit-unit | 37 hits and punches (OpenGameArt) | hit01.mp3 |
+| ward | VCSL - Anvil | Anvil_Hit2_v2_rr1_Mid.wav |
+| curse | lentikula - Basic Spell Impacts (itch.io) | Ice Spell Impact 5.wav |
 
-Still wanted: a heal (a short choir or instrument), a brass end-turn press, a defeat sting, and a hit on a unit. Kenney's packs are by Kenney Vleugels (www.kenney.nl).
+Every moment the game asks for now has a sound. Kenney's packs are by Kenney Vleugels (www.kenney.nl).

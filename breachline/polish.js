@@ -64,6 +64,17 @@ var Polish = (function () {
     return 'slash';
   }
   var SHEET_OF = { slash: 'slash', spear: 'pierce', arrow: 'pierce', crush: 'crush' };
+  // A card's cast sound: spells sound like their alignment, with Gnosis's cold spells and the lightning spells set apart.
+  // Equipment has its own; an enchantment chimes on your own unit and turns cold on an enemy's.
+  var ICE = ['frost', 'rimebolt', 'frostbreak', 'whitemorning'], LIGHTNING = ['stormstrike', 'brightlance', 'harmonic'];
+  function castOf(card, onEnemy) {
+    if (card.type === 'land' || card.type === 'unit') return null;
+    if (card.equipment) return 'equip';
+    if (card.type === 'enchant') return card.enemyOnly || onEnemy ? 'curse' : 'enchant';
+    if (ICE.indexOf(card.id) >= 0) return 'spell-ice';
+    if (LIGHTNING.indexOf(card.id) >= 0) return 'spell-lightning';
+    return { W: Math.random() < .5 ? 'spell-vigil' : 'spell-vigil-bell', U: 'spell-gnosis', B: 'spell-dominion', R: 'spell-fire', G: 'spell-genesis' }[card.colour] || null;
+  }
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
   function unitIn(s, uid) { return s.units.filter(function (u) { return u.uid === uid; })[0]; }
   function lunge(el, dx, dy) {
@@ -85,7 +96,14 @@ var Polish = (function () {
       if (inst && !next.players[who].hand.some(function (i) { return i.id === m.card; })) played = E.CARDS[inst.c];
     }
     if (m.type === 'redraw') Sfx.play('shuffle');
-    if (played && played.type !== 'unit') Sfx.play('card-play');
+    if (m.type === 'endTurn' && who === human) Sfx.play('end-turn');
+    if (m.type === 'move') Sfx.play('unit-move', { gap: 80 });
+    if (played && played.type !== 'unit') {
+      Sfx.play('card-play');
+      var on = m.target !== undefined ? unitIn(prev, m.target) : null;
+      var cast = castOf(played, on && on.owner !== who);
+      if (cast) Sfx.play(cast, { delay: .06 });
+    }
     // New units arrive in a swirl of light.
     next.units.forEach(function (u) {
       if (unitIn(prev, u.uid)) return;
@@ -123,9 +141,20 @@ var Polish = (function () {
         }
         var t = tileEl(f.r, f.c);
         if (t) { var b = box(t); sprite(SHEET_OF[blow], b.x, b.y, Math.max(b.w, b.h) * 1.35, { rot: blow === 'arrow' ? (f.r < (src ? src.r : f.r) ? -90 : 90) : 0 }); }
-        if (!sounded[blow]) Sfx.play(blow);
+        // A blow lands with the weapon's sound and a thud under it; when Guard, a ward or an instant took some of it, an anvil
+        // rings instead of the thud. Damage from a spell is just the thud.
+        var tgt = att && f.uid === att.target ? unitIn(prev, att.target) : null;
+        var blocked = tgt && striker && -parseInt(f.text, 10) < E.attackAgainst(prev, striker, tgt);
+        if (att && !sounded[blow]) Sfx.play(blow);
+        if (blocked && !sounded.ward) Sfx.play('ward', { delay: .04 });
+        else if (!sounded.hit) Sfx.play('hit-unit', { delay: att ? .05 : 0, vol: att ? .6 : 1 });
         sounded[blow] = true;
+        sounded[blocked ? 'ward' : 'hit'] = true;
       });
+      // Health coming back, to a unit or a summoner, beyond what a permanent health boost adds.
+      var healed = next.units.some(function (u) { var o = unitIn(prev, u.uid); return o && u.hp - o.hp > u.maxHp - o.maxHp; }) ||
+        next.players.some(function (p, i) { return p.life > prev.players[i].life; });
+      if (healed) Sfx.play('heal', { delay: .1 });
       // The fallen leave a dark burst on their tile. Only beasts cry out.
       prev.units.forEach(function (u) {
         if (unitIn(next, u.uid)) return;
@@ -160,6 +189,7 @@ var Polish = (function () {
     var crest = pl.querySelector('.screst'), rows = pl.querySelectorAll('.stally li'), total = pl.querySelector('.earned strong'), purse = pl.querySelector('.purse');
     var win = pl.classList.contains('win');
     if (win) Sfx.play('victory');
+    else if (pl.classList.contains('loss')) Sfx.play(pl.classList.contains('campaign') ? 'defeat-run' : 'defeat');
     if (reduced || !pl.animate) return;
     var to = +total.dataset.count, shown = 0, sum = 0;
     pl.classList.add('playing');
@@ -250,6 +280,12 @@ var Polish = (function () {
   // The sound toggle, in the battle's tools and on the main menu.
   document.addEventListener('click', function (e) { if (e.target.closest('[data-sound]')) Sfx.toggle(); });
   Sfx.setMuted(Sfx.muted());
+
+  // A card that can't be played right now gives a dull knock of wood when it's clicked.
+  document.addEventListener('click', function (e) {
+    var c = e.target.closest && e.target.closest('#hand .card.dim');
+    if (c && !document.querySelector('.app.opening')) Sfx.play('not-allowed', { gap: 120 });
+  }, true);
 
   return { lamp: lamp, sprite: sprite, moved: moved, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
 })();
