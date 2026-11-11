@@ -213,7 +213,9 @@ function randomField(r, ids) {
       if (o.cards.filter(function (id) { return E.CARDS[id].colour === foe; }).length !== 1) wrong.push('no single card from the beaten enemy');
       run = Campaign.take(o.cards[seed % 3]);
     }
-    if (run.chapter !== last || E.deckProblems(run.list).length) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join());
+    // Rewards grow a campaign deck past 30, so only the copy limit applies to it.
+    var overCopies = E.deckProblems(run.list).filter(function (p) { return /^Too many copies/.test(p); });
+    if (run.chapter !== last || E.deckSize(run.list) !== E.DECK_MAX + last || overCopies.length) wrong.push('deck after rewards: ' + E.deckSize(run.list) + ' cards ' + overCopies.join());
   }
   check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
   check('a run never changes the starter deck', JSON.stringify(E.DECKS.white.list) === starter);

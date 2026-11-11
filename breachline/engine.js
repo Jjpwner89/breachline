@@ -266,11 +266,11 @@ var Engine = (function () {
   });
 
   var DECKS = {
-    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 8], ['matriarch', 1], ['stillflame', 1], ['lioness', 1], ['outrider', 1], ['shelter', 1], ['cleric', 2], ['sentinel', 2], ['knight', 1], ['lancer', 1], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
-    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 7], ['land_u', 1], ['coalback', 1], ['clanraiders', 2], ['raider', 2], ['conjurer', 1], ['berserker', 2], ['passage', 1], ['captain', 1], ['warchief', 1], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 1], ['hex', 1]] },
-    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 7], ['land_w', 1], ['decoy', 1], ['mending', 1], ['conjurer', 2], ['lampwright', 2], ['scholar', 2], ['arcanist', 3], ['chorister', 2], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
-    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 6], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 2], ['envoy', 1], ['retainer', 1], ['squire', 2], ['slateprowler', 1], ['vashkar', 1], ['raise', 1], ['warrant', 1], ['colossus', 1], ['firebolt', 1]] },
-    green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 6], ['land_r', 2], ['sapling', 3], ['saboteur', 3], ['owl', 2], ['wayfinder', 2], ['bull', 2], ['shifting', 1], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
+    white: { name: 'Oath of the Sunmane', colours: ['W'], list: [['land_w', 10], ['matriarch', 1], ['stillflame', 1], ['lioness', 1], ['outrider', 1], ['shelter', 1], ['cleric', 3], ['sentinel', 3], ['knight', 2], ['lancer', 2], ['warden', 1], ['maren', 1], ['shield', 1], ['banner', 1], ['across', 1]] },
+    red: { name: 'The Warhorde', colours: ['R', 'U'], list: [['land_r', 9], ['land_u', 1], ['coalback', 1], ['clanraiders', 3], ['raider', 3], ['conjurer', 1], ['berserker', 2], ['passage', 1], ['captain', 1], ['warchief', 2], ['drake', 1], ['giant', 1], ['dragon', 1], ['firebolt', 2], ['hex', 1]] },
+    blue: { name: 'The Lantern Conclave', colours: ['U', 'W'], list: [['land_u', 9], ['land_w', 1], ['decoy', 1], ['mending', 1], ['conjurer', 3], ['lampwright', 3], ['scholar', 3], ['arcanist', 3], ['chorister', 3], ['displacement', 1], ['glyph', 1], ['cleric', 1]] },
+    black: { name: 'The Ashen Court', colours: ['B', 'R'], list: [['land_b', 8], ['land_r', 2], ['thrall', 2], ['harvester', 2], ['noble', 2], ['envoy', 2], ['retainer', 2], ['squire', 2], ['slateprowler', 2], ['vashkar', 1], ['raise', 2], ['warrant', 1], ['colossus', 1], ['firebolt', 1]] },
+    green: { name: 'The Elder Herd', colours: ['G', 'R'], list: [['land_g', 8], ['land_r', 2], ['sapling', 3], ['saboteur', 3], ['owl', 3], ['wayfinder', 3], ['bull', 3], ['shifting', 2], ['youngsummoner', 1], ['giant', 1], ['raider', 1]] }
   };
 
   // Draft assignments, from the faction table in SETTING.md and the art briefs. A card that isn't listed has no faction.
@@ -288,8 +288,8 @@ var Engine = (function () {
   ];
   FACTIONS.forEach(function (f) { f.cards.forEach(function (id) { CARDS[id].faction = f.id; }); });
 
-  // 40 is the planned size. 24 stays legal so the current starter decks still count.
-  var DECK_MIN = 24, DECK_MAX = 40, MAX_COPIES = 3;
+  // Every deck is 30 cards. A player sees about half of it in a game, so copies matter without every game playing the same.
+  var DECK_MIN = 30, DECK_MAX = 30, MAX_COPIES = 3;
   function maxCopies(id) { return CARDS[id].type === 'land' ? Infinity : MAX_COPIES; }
   function deckSize(list) { return list.reduce(function (n, e) { return n + e[1]; }, 0); }
   function deckProblems(list) {

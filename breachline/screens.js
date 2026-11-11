@@ -404,7 +404,7 @@ var Screens = (function () {
     var list = ed.deck.list, size = E.deckSize(list), st = statsOf(list), problems = E.deckProblems(list), advice = deckAdvice(st, size);
     var saveNote = !Decks.persistent() ? 'This browser is blocking storage, so this deck lasts only until you close this tab.' : ed.saveFailed ? "Couldn't save the last change." : ed.saved ? 'Saved' : '';
     byId('dsum').innerHTML =
-      '<div class="dcount"><b>' + size + '</b><span> of ' + E.DECK_MIN + '–' + E.DECK_MAX + ' cards</span><span class="dready' + (problems.length ? '' : ' ok') + '">' + (problems.length ? esc(problems[0]) : 'Ready to play') + '</span></div>' +
+      '<div class="dcount"><b>' + size + '</b><span> of ' + (E.DECK_MIN === E.DECK_MAX ? E.DECK_MAX : E.DECK_MIN + '–' + E.DECK_MAX) + ' cards</span><span class="dready' + (problems.length ? '' : ' ok') + '">' + (problems.length ? esc(problems[0]) : 'Ready to play') + '</span></div>' +
       '<div class="dprog"><i style="width:' + Math.min(100, Math.round(size / E.DECK_MIN * 100)) + '%"></i></div>' +
       '<p class="dline">Lands ' + st.lands + (size ? ' (' + Math.round(st.lands / size * 100) + '%)' : '') + TYPES.slice(0, 5).map(function (t) { return st.types[t] ? ' · ' + GameUI.TYPES[t] + 's ' + st.types[t] : ''; }).join('') + '</p>' +
       curveHtml(st.curve) +

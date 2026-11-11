@@ -28,7 +28,7 @@ An original fantasy card game on a grid, unique to the creator and not a rebuild
 
 From the creator:
 - An unseen summoner and one life total per player, starting at 15.
-- Decks target 40 cards, built before play. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
+- Decks are 30 cards, built before play (creator, 2026-11-10, replacing the earlier 40-card target). A player sees about 15 cards in a game, so about half the deck: copies matter, but games don't all play the same. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
 - 5-card opening hands. Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
 - One draw per turn, and the hand is hidden.
 - Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
@@ -46,7 +46,7 @@ Claude's assumptions, not yet confirmed by the creator:
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
-- In the deck builder: decks of 24 to 40 cards, 3 copies of a non-land card and unlimited lands. The starter decks have 24 cards, below the 40-card target.
+- In the deck builder: exactly 30 cards, 3 copies of a non-land card and unlimited lands. The starter, theme and campaign enemy decks are all 30. A campaign deck grows past 30 as it takes rewards.
 - The card-to-faction list in `engine.js`.
 
 ## Board mechanics
@@ -90,7 +90,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 ## Mana and lands
 
 - Soft coloured mana: lands have colours, each card wants a number of lands of its colour, and each missing land adds 1 to its cost, so a card is never locked out.
-- Lands are 35% of a deck: 14 of 40, and 8 in the 24-card starters. Don't argue for more lands unless playtesting raises it.
+- Lands are 35% of a deck: 10 or 11 of 30. Don't argue for more lands unless playtesting raises it.
 - Lands sit off-grid below the board and can't be taken or destroyed.
 - No per-turn card swap. It was far too powerful and made lands too easy.
 - Abilities that generate mana are welcome. The creator likes the idea of decks that build up mana to cast big cards.
@@ -172,6 +172,8 @@ Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-1
 ## Balance
 
 Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
+
+After the move to 30-card decks, 2026-11-10, from 6,000 starter games and 750 games per theme deck against the starters: Vigil 53%, Fervor 45%, Gnosis 47%, Dominion 53% and Genesis 52%. Gnosis needed a third Street conjurer and Cloistered scholar to stay above 45%. Theme decks moved within a few points of their 24-card results, and Winter glyphs is still the weakest at 41%. Players run out of cards in 0.4% of games, down from 2%. Campaign chapters moved by up to 10 points either way, and Vigil's early chapters got easier.
 
 Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged (re-run that day: 49%, 46%, 45%, 55% and 55%).
 
