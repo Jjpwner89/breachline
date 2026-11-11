@@ -207,8 +207,9 @@ img.coin-i, img.shard-i { width: 22px; height: 22px; object-fit: contain; filter
 /* Campaign map: painted wax seals, and your army standing at its chapter. */
 .mnode .seal { width: 50px; height: 50px; border: 0; border-radius: 0; background: url("art/web/ui/seal-unreached.png") center / contain no-repeat; color: #f4e3c0; text-shadow: 0 1px 2px #000; filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .5)); }
 .mnode.next.last .seal { background-image: url("art/web/ui/seal-final.png"); width: 58px; height: 58px; }
-.mnode.now .seal { background-image: url("art/web/ui/seal-next.png"); background-color: transparent; border: 0; box-shadow: none; color: #fff0d8; }
-.mnode.done .seal { background-image: url("art/web/ui/seal-won.png"); background-color: transparent; border: 0; color: #fff0d8; }
+/* The full shorthand, because screens.css sets these two with one and would leave the painting at its natural size. */
+.mnode.now .seal { background: url("art/web/ui/seal-next.png") center / contain no-repeat; border: 0; box-shadow: none; color: #fff0d8; }
+.mnode.done .seal { background: url("art/web/ui/seal-won.png") center / contain no-repeat; border: 0; color: #fff0d8; }
 .mnode.picked .seal { outline: 0; filter: drop-shadow(0 0 3px #fff3d0) drop-shadow(0 0 10px var(--gold)); }
 @media (prefers-reduced-motion: no-preference) {
   .mnode.now .seal { animation: sealglow 2.4s ease-in-out infinite; }
