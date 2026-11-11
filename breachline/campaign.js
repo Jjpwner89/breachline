@@ -236,7 +236,7 @@ var Campaign = (function () {
   // A battle saved before a card left the game, or on the old number scale, can't be played on, so that battle starts over.
   function battleOk(b) {
     if (!b || !b.players || !b.units) return false;
-    if (b.players.some(function (p) { return p.life > E.RULES.standard.life; })) return false;
+    if (b.players.some(function (p) { return p.life > E.START_LIFE; })) return false;
     var ok = true, check = function (i) { if (!known(i.c)) ok = false; };
     b.players.forEach(function (p) { [p.deck, p.hand, p.discard, p.lands].forEach(function (pile) { (pile || []).forEach(check); }); });
     b.units.forEach(function (u) { if (!known(u.cardId)) ok = false; (u.enchants || []).forEach(check); });

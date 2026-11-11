@@ -1,22 +1,8 @@
 // Rules engine. Pure state in, state out, with no DOM, so the UI, the scripted
 // bot and a future model-driven player all go through legalMoves and applyMove.
 var Engine = (function () {
-  var ROWS = 4, COLS = 5, START_LIFE = 15, OPENING_HAND = 5, MAX_REDRAWS = 2, TURN_LIMIT = 60, DEVOTION_MAX = 3;
-  // Rule sets. A game keeps its key in state.rules, and the engine switches to it whenever it handles that state.
-  // Standard became 6 by 5 with a 7-card hand on 2026-11-10; a game saved before then has no key and is Classic.
-  var RULES = {
-    standard: { name: 'Standard', blurb: '6 by 5 map, 7-card hand, 15 life.', rows: 5, cols: 6, life: 15, hand: 7 },
-    classic: { name: 'Classic', blurb: 'The old 5 by 4 map, 5-card hand, 15 life.', rows: 4, cols: 5, life: 15, hand: 5 },
-    long: { name: 'Long war', blurb: '7 by 5 map, 7-card hand, 20 life.', rows: 5, cols: 7, life: 20, hand: 7 }
-  }, rulesKey = 'classic', api;
-  function useRules(key) {
-    if (key === undefined) key = 'classic';
-    if (!RULES[key]) key = 'standard';
-    if (key === rulesKey) return;
-    var r = RULES[key];
-    rulesKey = key; ROWS = r.rows; COLS = r.cols; START_LIFE = r.life; OPENING_HAND = r.hand;
-    api.ROWS = ROWS; api.COLS = COLS; api.START_LIFE = START_LIFE;
-  }
+  // 6 by 5 with a 7-card hand since 2026-11-10 (creator), replacing 5 by 4 with 5 cards.
+  var ROWS = 5, COLS = 6, START_LIFE = 15, OPENING_HAND = 7, MAX_REDRAWS = 2, TURN_LIMIT = 60, DEVOTION_MAX = 3;
 
   function land(id, colour, name) { return { id: id, name: name, type: 'land', colour: colour, cost: 0, wants: 0 }; }
   function unit(id, name, colour, cost, wants, atk, hp, extra) {
@@ -455,10 +441,7 @@ var Engine = (function () {
   }
 
   function newGame(opts) {
-    rulesKey = null;
-    useRules(opts.rules || 'standard');
     var s = {
-      rules: rulesKey,
       seed: (opts.seed === undefined ? 1 : opts.seed) | 0, turn: 0, active: opts.first || 0, phase: 'play',
       winner: null, pending: null, nextId: 1, units: [], tiles: {}, log: [], logMarked: true, fx: [],
       players: [mkPlayer(opts.decks[0]), mkPlayer(opts.decks[1])]
@@ -701,7 +684,6 @@ var Engine = (function () {
 
   // dedupe lists one copy of each identical card, which keeps the list short for players that aren't clicking a specific copy.
   function legalMoves(s, opts) {
-    useRules(s.rules);
     var dedupe = opts && opts.dedupe, out = [];
     if (s.winner !== null) return out;
     if (s.pending) {
@@ -1249,7 +1231,6 @@ var Engine = (function () {
   }
 
   function applyMove(prev, m) {
-    useRules(prev.rules);
     var s = JSON.parse(JSON.stringify(prev));
     s.fx = [];
     var pi = s.active, p = s.players[pi], i, c, u;
@@ -1917,13 +1898,12 @@ var Engine = (function () {
     return v;
   }
 
-  api = {
-    RULES: RULES, useRules: useRules, ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
+  return {
+    ROWS: ROWS, COLS: COLS, START_LIFE: START_LIFE, CARDS: CARDS, DECKS: DECKS, FACTIONS: FACTIONS, viewFor: viewFor,
     DECK_MIN: DECK_MIN, DECK_MAX: DECK_MAX, maxCopies: maxCopies, deckSize: deckSize, deckProblems: deckProblems, deckColours: deckColours,
     newGame: newGame, legalMoves: legalMoves, applyMove: applyMove,
     tileAt: tileAt, attackOf: attackOf, attackAgainst: attackAgainst, hitOn: hitOn, costOf: costOf, backRow: backRow, range: range, speed: speed, hasKw: hasKw,
     placeUnit: placeUnit, aimArea: aimArea, gear: gear
   };
-  return api;
 })();
 if (typeof module !== 'undefined') module.exports = Engine;

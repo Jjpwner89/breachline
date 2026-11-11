@@ -1,6 +1,6 @@
 // Board UI. The human is player 0 and sits at the bottom, except on the test table; every click ends in an Engine.legalMoves entry.
 (function () {
-  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null, rulesPick = 'standard';
+  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null;
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   // Who plays the opponent: the scripted bot, or Claude at a difficulty level from guides.js.
   var oppPlayer = 'bot', debugOn = false;
@@ -1101,9 +1101,6 @@
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
-    $('rulesPick').innerHTML = Object.keys(E.RULES).map(function (k) {
-      return '<button type="button" class="who-plays" data-rules="' + k + '" aria-pressed="' + (rulesPick === k) + '"><b>' + E.RULES[k].name + '</b><span>' + E.RULES[k].blurb + '</span></button>';
-    }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
     $('playerNote').textContent = sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
@@ -1162,8 +1159,6 @@
     if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
-    var rb = e.target.closest('[data-rules]');
-    if (rb) { rulesPick = rb.dataset.rules; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
     if (e.target.closest('#begin')) {
       var mine = Decks.find(picks.mine);
@@ -1195,8 +1190,7 @@
     lastTurn = null;
     $('turnBanner').innerHTML = '';
     $('debugBtn').hidden = !(debugOn && modelOn());
-    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1, rules: chapterBattle ? 'standard' : rulesPick });
-    E.useRules(S.rules);
+    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
     if (opening && S.winner === null) showCard(opening.c, 'In your hand');
     render();
@@ -1209,7 +1203,7 @@
     sandbox = true;
     chapterBattle = false;
     decks = [forGame(ok(last.mine) || 'white'), forGame(ok(last.opp) || 'red')];
-    start(E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: 0, rules: rulesPick }));
+    start(E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: 0 }));
     while (S.phase === 'opening' && S.winner === null) S = E.applyMove(S, { type: 'keepHand' });
     hidePeek();
     render();
@@ -1272,7 +1266,7 @@
   function boot(data) {
     var run = Campaign.current();
     if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
-    else if (data && data.state && data.state.players.every(function (p) { return p.life <= (E.RULES[data.state.rules] || E.RULES.standard).life; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
+    else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
     else Screens.menu();
   }
   window.GameUI = {
