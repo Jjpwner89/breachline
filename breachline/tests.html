@@ -389,7 +389,7 @@ function randomField(r, ids) {
 
   s = arena(); put(s, 'stoneward', 1, 1, 1); var runner = put(s, 'clanraiders', 0, 2, 0); runner.moved = false;
   var dests = moves(s, 'move').filter(function (m) { return m.unit === runner.uid; }).map(function (m) { return m.r + ',' + m.c; }).sort().join(' ');
-  check('a Swift unit that moves next to Holding ground stops there', dests === '1,0 2,1 3,0 3,1', dests);
+  check('a Swift unit that moves next to Holding ground stops there', dests === '1,0 2,1 3,0 3,1 4,0', dests);
   check('Banked flame blade reads as Equipment', E.CARDS.flameblade.equipment && E.CARDS.flameblade.atkBonus === 2);
 })();
 

@@ -1,6 +1,6 @@
 // Board UI. The human is player 0 and sits at the bottom, except on the test table; every click ends in an Engine.legalMoves entry.
 (function () {
-  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null;
+  var E = Engine, S = null, sel = null, flash = null, runToken = 0, peek = null, lastTurn = null, peekTimer = null, picks = { mine: 'white', opp: 'red' }, decks = null, rulesPick = 'standard';
   var HUMAN = 0, BOT = 1, BOT_DELAY = 750;
   // Who plays the opponent: the scripted bot, or Claude at a difficulty level from guides.js.
   var oppPlayer = 'bot', debugOn = false;
@@ -313,32 +313,35 @@
       else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
-      var chips = d.keywords.map(function (k) { return '<span class="chip">' + k + '</span>'; });
-      u.enchants.forEach(function (e) { chips.push('<span class="chip">' + E.CARDS[e.c].name + (e.left ? ' ' + e.left : '') + '</span>'); });
-      if (u.tempAtk) chips.push('<span class="chip">+' + u.tempAtk + ' this turn</span>');
-      if (u.stride && u.owner === S.active) chips.push('<span class="chip">+' + u.stride + ' move</span>');
-      if (u.held >= S.turn) chips.push('<span class="chip state">Held</span>');
-      if (u.frozen >= S.turn) chips.push('<span class="chip state">Frozen</span>');
-      if (u.veiled) chips.push('<span class="chip state">Veiled</span>');
-      if (u.lit && d.keywords.indexOf('Lit') < 0) chips.push('<span class="chip state">Lit</span>');
-      if (u.stasis >= S.turn) chips.push('<span class="chip state">Between moments</span>');
-      if (u.sapped >= S.turn) chips.push('<span class="chip state">Restrained</span>');
-      if (u.braced === S.turn) chips.push('<span class="chip state">Braced</span>');
-      if (u.from !== undefined && u.from !== u.owner) chips.push('<span class="chip state">' + (u.charmedBy ? 'Charmed' : 'Borrowed') + '</span>');
-      if (u.fleeting) chips.push('<span class="chip state">Fades</span>');
-      if (u.rootfed) chips.push('<span class="chip">Rootfed +' + u.rootfed + '</span>');
-      if (u.carrion) chips.push('<span class="chip">Carrion +' + u.carrion + '</span>');
-      if (waiting) chips.push('<span class="chip state">Waiting</span>');
-      else if (u.owner === S.active && u.acted) chips.push('<span class="chip state">Done</span>');
+      // Conditions come first. Every label shows, kept small; the close-up note and the tile's label repeat them.
+      var states = [], notes = d.keywords.slice();
+      u.enchants.forEach(function (e) { notes.push(E.CARDS[e.c].name + (e.left ? ' ' + e.left : '')); });
+      if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
+      if (u.stride && u.owner === S.active) notes.push('+' + u.stride + ' move');
+      if (u.held >= S.turn) states.push('Held');
+      if (u.frozen >= S.turn) states.push('Frozen');
+      if (u.veiled) states.push('Veiled');
+      if (u.lit && d.keywords.indexOf('Lit') < 0) states.push('Lit');
+      if (u.stasis >= S.turn) states.push('Between moments');
+      if (u.sapped >= S.turn) states.push('Restrained');
+      if (u.braced === S.turn) states.push('Braced');
+      if (u.from !== undefined && u.from !== u.owner) states.push(u.charmedBy ? 'Charmed' : 'Borrowed');
+      if (u.fleeting) states.push('Fades');
+      if (u.rootfed) notes.push('Rootfed +' + u.rootfed);
+      if (u.carrion) notes.push('Carrion +' + u.carrion);
+      if (u.devotion) notes.push('Devotion +' + u.devotion);
+      if (waiting) states.push('Waiting');
+      else if (u.owner === S.active && u.acted) states.push('Done');
+      var all = states.concat(notes), chips = all.map(function (t, k) { return '<span class="chip' + (k < states.length ? ' state' : '') + '">' + t + '</span>'; });
       var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
       inner += (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
         '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
-        (chips.length ? '<span class="chips">' + chips.join('') + '</span>' : '') +
+        (chips.length ? '<span class="chips" title="' + all.join(', ') + '">' + chips.join('') + '</span>' : '') +
         '<span class="st"><span class="badge atk' + (atk > d.atk ? ' up' : atk < d.atk ? ' down' : '') + '">' + atk + '</span>' +
         '<span class="bar"><i class="' + (pct <= 25 ? 'crit' : pct <= 50 ? 'low' : '') + '" style="width:' + pct + '%"></i></span>' +
         '<span class="badge hp' + (u.hp < u.maxHp ? ' hurt' : '') + '">' + u.hp + '</span></span>';
-      label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp;
-      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + '"';
+      label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp + (all.length ? ', ' + all.join(', ') : '');
+      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + (all.length ? '. ' + all.join(', ') : '') + '"';
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
     if (fxText) label += ', ' + fxText.toLowerCase();
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
@@ -681,6 +684,13 @@
     var g = '<div class="front" aria-hidden="true"></div>';
     for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += tileHtml(r, c, marks);
     $('grid').innerHTML = g;
+    $('grid').style.gridTemplateColumns = 'repeat(' + E.COLS + ', minmax(0, 1fr))';
+    $('grid').style.gridTemplateRows = 'repeat(' + E.ROWS + ', minmax(0, 1fr))';
+    // Bigger test maps get wider tiles, slimmer side panels and a smaller hand so units stay readable.
+    var big = E.ROWS * E.COLS > 20, ratio = big ? E.ROWS / E.COLS / 1.45 : 0.72;
+    $('app').classList.toggle('big', big);
+    $('grid').style.setProperty('--grat', ratio.toFixed(3));
+    $('grid').parentNode.style.setProperty('--bwr', (big ? 1 / ratio : 1.81).toFixed(3));
     $('actions').innerHTML = actionsHtml(moves);
     $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="empty">Your hand is empty.</span>';
     fitCards($('hand'));
@@ -1021,6 +1031,9 @@
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
     $('oppDecks').innerHTML = all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
+    $('rulesPick').innerHTML = Object.keys(E.RULES).map(function (k) {
+      return '<button type="button" class="who-plays" data-rules="' + k + '" aria-pressed="' + (rulesPick === k) + '"><b>' + E.RULES[k].name + '</b><span>' + E.RULES[k].blurb + '</span></button>';
+    }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
     $('playerNote').textContent = sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
@@ -1074,6 +1087,8 @@
     if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
+    var rb = e.target.closest('[data-rules]');
+    if (rb) { rulesPick = rb.dataset.rules; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
     if (e.target.closest('#begin')) {
       Decks.setPicks(picks);
@@ -1103,7 +1118,8 @@
     lastTurn = null;
     $('turnBanner').innerHTML = '';
     $('debugBtn').hidden = !(debugOn && modelOn());
-    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
+    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1, rules: chapterBattle ? 'standard' : rulesPick });
+    E.useRules(S.rules);
     var opening = S.players[HUMAN].hand[0];
     if (opening) showCard(opening.c, 'In your hand');
     render();
@@ -1116,7 +1132,7 @@
     sandbox = true;
     chapterBattle = false;
     decks = [forGame(ok(last.mine) || 'white'), forGame(ok(last.opp) || 'red')];
-    start(E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: 0 }));
+    start(E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks, first: 0, rules: rulesPick }));
     while (S.phase === 'opening' && S.winner === null) S = E.applyMove(S, { type: 'keepHand' });
     hidePeek();
     render();
@@ -1179,7 +1195,7 @@
   function boot(data) {
     var run = Campaign.current();
     if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
-    else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
+    else if (data && data.state && data.state.players.every(function (p) { return p.life <= (E.RULES[data.state.rules] || E.RULES.standard).life; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
     else Screens.menu();
   }
   window.GameUI = {

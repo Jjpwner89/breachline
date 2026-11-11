@@ -29,7 +29,7 @@ An original fantasy card game on a grid, unique to the creator and not a rebuild
 From the creator:
 - An unseen summoner and one life total per player, starting at 15.
 - Decks are 30 cards, built before play (creator, 2026-11-10, replacing the earlier 40-card target). A player sees about 15 cards in a game, so about half the deck: copies matter, but games don't all play the same. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
-- 5-card opening hands. Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
+- 7-card opening hands (creator, 2026-11-10, replacing 5). Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
 - One draw per turn, and the hand is hidden.
 - Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
 - New units appear only in the back row and wait a turn.
@@ -42,7 +42,8 @@ From the creator:
 - The summoners and land rows sit outside the grid, above and below it.
 
 Claude's assumptions, not yet confirmed by the creator:
-- A 5 by 4 grid, and the summoner can be hit only from the enemy back row.
+- A 6 by 5 grid: 6 columns, and 5 rows between the two players (creator, 2026-11-10, replacing 5 by 4).
+- The summoner can be hit only from the enemy back row.
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
@@ -61,7 +62,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 - **Holding ground:** an enemy that moves next to this unit must stop there, so it can't slip past.
 - **Death triggers:** effects that happen when a unit dies. Sworn is the first.
 - **Tile effects:** an effect that sits on a tile for a turn or two, like fire or frozen ground. These are temporary, unlike the permanent terrain set aside below. Rules:
-  - An effect lasts a set number of its owner's turns, usually 1 to 3, and shows on the tile with a counter. Keep durations short, since the board has only 20 tiles.
+  - An effect lasts a set number of its owner's turns, usually 1 to 3, and shows on the tile with a counter. Keep durations short, since the board has only 30 tiles.
   - One effect per tile, and a new one replaces the old one.
   - Effects such as fire and thorns hurt your own units too, unless a unit is exempt. Alderkin aren't affected by thorns.
   - A unit is affected when it moves onto the tile, and again if it starts its owner's turn there. A flier passing over isn't affected, but one that stops on the tile is.
@@ -216,7 +217,7 @@ Worth playtesting:
 - **Older red cards:** the creator said red looked a little unbalanced, and Elder dragon hasn't been touched.
 - **Strike-backs:** a target that fails to strike back, with no battle log line explaining why, is a real bug. An earlier report of this was never diagnosed.
 - **Stalled games:** reshuffling means nobody runs out of cards, so a late-game rule that damages both players may be needed.
-- **A bigger board:** test expanding beyond 5 by 4, since tokens and tile effects both need room on the board.
+- **The board size (creator, 2026-11-10):** Standard is now 6 by 5 with a 7-card hand and 15 life, after the creator played it and found 7 by 5 a little too big; 6 by 5 felt connected. The Exhibition Rules picker keeps Classic (the old 5 by 4, 5-card hand, 15 life) and Long war (7 by 5, 7, 20), though Long war risks leaving a player losing for a long time. The fifth row favoured the decks that build up, so Devotion was capped, three big green units cost more and the three strongest decks lost a few of their best cards; see the card proposals for the numbers. In bot games the player who hits the enemy summoner first still wins about 71%, and The long throw is still the weakest deck at 39%.
 - **Worn-down defenders:** with persistent damage, defenders can be ground down with no way back. One fix is that a unit that neither moves nor attacks recovers a little health.
 
 ## Open questions for the creator

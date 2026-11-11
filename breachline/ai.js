@@ -11,26 +11,30 @@ var AI = (function () {
   // These won't clear up by asking again, so the scripted bot finishes the game.
   var FATAL = { not_granted: 1, sampling_disabled: 1, not_declared: 1, capability_disabled: 1, capability_removed: 1, session_expired: 1, rate_limited: 1 };
 
-  var RULES = [
-    'THE RULES',
-    '- The map has 4 rows (0-3) and 5 columns (0-4). Each summoner starts with 15 life and loses at 0. At the turn limit of 60, the higher life total wins.',
-    '- Your turn: you draw a card, then the play phase, then the command phase. You cannot go back to the play phase.',
-    '- Play phase: play one land (adds 1 mana now and each later turn), and play any cards you can pay for. Mana refills at the start of your turn.',
-    '- Each land you lack of a card\'s colour adds 1 to its cost, so a card is never locked out.',
-    '- New units appear only on free tiles of your back row, and cannot move or act until your next turn.',
-    '- Command phase: each unit may move once, then either attack or use its ability. A unit that has attacked or used an ability cannot move afterwards.',
-    '- Units move 1 tile with no diagonals and cannot pass through other units. Swift and Flying units move 2 tiles, and Flying units pass over other units.',
-    '- Attack reach is 1 tile with no diagonals. Ranged units reach 2 tiles, counted in steps across rows and columns.',
-    '- Guard: allies next to a Guard unit take 1 less damage from attacks and strike-backs.',
-    '- Damage stays until healed. A target that survives strikes back if the attacker is within its reach. Only the main target strikes back.',
-    '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
-    '- Instants can be cast on your own turn like spells, or on the enemy turn from mana you left unspent. Those that answer an event, such as an attack, wait for it.',
-    '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
-    '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
-    '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
-    '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.',
-    '- Relics stay in play beside their summoner once cast. Some can be used once on each of your turns.'
-  ].join('\n');
+  // Built per prompt, since the map size and life depend on the game's rule set.
+  function rules(v) {
+    E.useRules(v.rules);
+    return [
+      'THE RULES',
+      '- The map has ' + E.ROWS + ' rows (0-' + (E.ROWS - 1) + ') and ' + E.COLS + ' columns (0-' + (E.COLS - 1) + '). Each summoner starts with ' + E.START_LIFE + ' life and loses at 0. At the turn limit of 60, the higher life total wins.',
+      '- Your turn: you draw a card, then the play phase, then the command phase. You cannot go back to the play phase.',
+      '- Play phase: play one land (adds 1 mana now and each later turn), and play any cards you can pay for. Mana refills at the start of your turn.',
+      '- Each land you lack of a card\'s colour adds 1 to its cost, so a card is never locked out.',
+      '- New units appear only on free tiles of your back row, and cannot move or act until your next turn.',
+      '- Command phase: each unit may move once, then either attack or use its ability. A unit that has attacked or used an ability cannot move afterwards.',
+      '- Units move 1 tile with no diagonals and cannot pass through other units. Swift and Flying units move 2 tiles, and Flying units pass over other units.',
+      '- Attack reach is 1 tile with no diagonals. Ranged units reach 2 tiles, counted in steps across rows and columns.',
+      '- Guard: allies next to a Guard unit take 1 less damage from attacks and strike-backs.',
+      '- Damage stays until healed. A target that survives strikes back if the attacker is within its reach. Only the main target strikes back.',
+      '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
+      '- Instants can be cast on your own turn like spells, or on the enemy turn from mana you left unspent. Those that answer an event, such as an attack, wait for it.',
+      '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
+      '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
+      '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
+      '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.',
+      '- Relics stay in play beside their summoner once cast. Some can be used once on each of your turns.'
+    ].join('\n');
+  }
   var TILE_WORDS = { burn: 'burning', thorns: 'thorns', frost: 'frozen', snare: 'snare', blight: 'blighted', holy: 'consecrated', charge: 'charged' };
 
   var VOICE = 'Also write "say": one short sentence, under 15 words, spoken aloud across the table as the opposing summoner, for your opponent to read. Stay serious and grounded in a fantasy war, with no jokes or modern slang. It can boast, needle or bluff, and need not reveal your real thinking. Never mention being an AI, the rules text or this format.';
@@ -266,7 +270,7 @@ var AI = (function () {
   function turnPrompt(v, level, debug) {
     return [
       INTRO,
-      RULES,
+      rules(v),
       'WHAT YOU KNOW ABOUT STRATEGY\n' + guideText(v, level),
       stateText(v),
       turnOptions(v),
@@ -301,7 +305,7 @@ var AI = (function () {
     else ask = 'The enemy turn is ending. Choose whether to use an instant.';
     return [
       INTRO,
-      RULES,
+      rules(v),
       'WHAT YOU KNOW ABOUT STRATEGY\n' + guideText(v, level),
       stateText(v),
       'YOUR DECISION\n' + ask + '\n' + moves.map(function (m, n) { return n + ': ' + menuLabel(v, m); }).join('\n'),

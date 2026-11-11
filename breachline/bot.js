@@ -7,7 +7,7 @@ var Bot = (function () {
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
   // What healing t is worth to Devotion: each Devotion unit that grows, t itself or an ally next to it. Any heal counts.
   function devotion(s, t) {
-    return 25 * s.units.filter(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && E.hasKw(o, 'Devotion'); }).length;
+    return 25 * s.units.filter(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && E.hasKw(o, 'Devotion') && (o.devotion || 0) < 3; }).length;
   }
   function unitAt(s, r, c) { return s.units.filter(function (u) { return u.r === r && u.c === c; })[0] || null; }
   function hurtScore(t, amt) { return amt >= t.hp ? worth(t) + 30 : worth(t) * amt / t.maxHp; }
@@ -124,7 +124,7 @@ var Bot = (function () {
         // An ambush pays off the further forward it lands.
         var ahead = Math.abs(m.r - E.backRow(pi)) * (c.atk >= 3 ? 12 : 4);
         var spot = E.tileAt(s, m.r, m.c), hurt = spot && (spot.kind === 'burn' || spot.kind === 'thorns') && !(c.keywords.indexOf('Fireproof') >= 0 && spot.kind === 'burn') ? 30 : 0;
-        return 100 + c.cost * 20 + pull - Math.abs(m.c - 2) + zap + ahead - hurt;
+        return 100 + c.cost * 20 + pull - Math.abs(m.c - (E.COLS - 1) / 2) + zap + ahead - hurt;
       case 'cast':
         c = E.CARDS[handCard(p, m.card).c];
         // On its own turn the bot casts an instant only for a clear gain, since it could wait for the enemy turn.
@@ -132,7 +132,13 @@ var Bot = (function () {
         if (c.type === 'relic') return 70 + c.cost * 10;
         if (m.relic) return p.relics.some(function (r) { return r.id === m.relic; }) ? -100 : 55;
         if (c.bolt) {
-          if (m.summoner !== undefined) return c.bolt >= s.players[foe].life ? 100000 : s.players[foe].life <= 8 ? 30 + c.bolt * 10 : -1;
+          if (m.summoner !== undefined) {
+            // Burn reaches the summoner however far away the units are, so it goes there unless it can kill a unit worth more.
+            // Once the burn in hand nearly finishes them off, it all goes to the summoner.
+            var life = s.players[foe].life, reach = p.hand.reduce(function (n, h) { return n + (E.CARDS[h.c].bolt || 0); }, 0);
+            if (c.bolt >= life) return 100000;
+            return reach + 3 >= life ? 200 + c.bolt * 10 : 45 + c.bolt * 12 + (c.leech ? 15 : 0) + Math.max(0, 15 - life) * 4;
+          }
           t = unitById(s, m.target);
           var zap = hurtScore(t, c.bolt);
           return zap >= 50 ? 30 + zap : -1;
@@ -371,7 +377,7 @@ var Bot = (function () {
     if (c.aim) {
       var rowV = 0;
       s.units.forEach(function (e) { if (e.owner !== pi && e.r === m.r) rowV += hurtScore(e, c.aim.foes) + (e.r === E.backRow(pi) || dist(e, { r: E.backRow(pi), c: e.c }) === 1 ? 15 : 3); });
-      return rowV >= 35 && m.c === 2 ? rowV : -1;
+      return rowV >= 35 && m.c === Math.floor((E.COLS - 1) / 2) ? rowV : -1;
     }
     if (c.shove) return t.r === E.backRow(pi) ? 40 : -1;
     if (c.debt) return p.life > c.debt + 4 && worth(t) >= 65 ? worth(t) - 20 + (att && att.attacker === t.uid ? 30 : 0) : -1;
