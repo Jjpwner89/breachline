@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-11",
+  "asset_count": 35,
+  "all_1536x1024": true,
+  "all_rgba": true,
+  "all_have_true_transparency": true,
+  "source_pixels_preserved": true,
+  "selected_alignment_sources": [
+    {
+      "alignment": "Vigil",
+      "file": "ui-alignment-emblems.png",
+      "piece": 1,
+      "source_rect_xyxy": [
+        59,
+        40,
+        488,
+        480
+      ],
+      "creator_selected": true
+    },
+    {
+      "alignment": "Gnosis",
+      "file": "ui-alignment-emblems.png",
+      "piece": 2,
+      "source_rect_xyxy": [
+        550,
+        40,
+        983,
+        482
+      ],
+      "creator_selected": true
+    },
+    {
+      "alignment": "Dominion",
+      "file": "ui-alignment-dominion-options.png",
+      "piece": 1,
+      "source_rect_xyxy": [
+        23,
+        272,
+        492,
+        750
+      ],
+      "creator_selected": true
+    },
+    {
+      "alignment": "Fervor",
+      "file": "ui-alignment-emblems.png",
+      "piece": 4,
+      "source_rect_xyxy": [
+        53,
+        531,
+        493,
+        982
+      ],
+      "creator_selected": true
+    },
+    {
+      "alignment": "Genesis",
+      "file": "ui-alignment-emblems.png",
+      "piece": 5,
+      "source_rect_xyxy": [
+        544,
+        531,
+        983,
+        983
+      ],
+      "creator_selected": true
+    },
+    {
+      "alignment": "Neutral",
+      "file": "ui-alignment-emblems.png",
+      "piece": 6,
+      "source_rect_xyxy": [
+        1037,
+        531,
+        1479,
+        981
+      ],
+      "creator_selected": true
+    }
+  ],
+  "static_extraction": "Measured rectangles; some source layouts do not meet exact equal-cell centering or the brief's full tenth-cell padding. Use supplied crop rectangles and pad derivatives during integration.",
+  "fx_frame_border_alpha_max": {
+    "fx-slash.png": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fx-pierce.png": [
+      3,
+      1,
+      7,
+      5,
+      1,
+      1
+    ],
+    "fx-crush.png": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "fx-death.png": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fx-summon.png": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "fx-heal.png": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fx-rare-burst.png": [
+      3,
+      12,
+      13,
+      3,
+      3,
+      2
+    ],
+    "fx-legendary-burst.png": [
+      5,
+      6,
+      10,
+      9,
+      8,
+      4
+    ]
+  },
+  "creator_review": "The five non-Dominion emblems plus replacement crown are approved. Remaining assets await review.",
+  "in_game_testing": "Not performed; gallery plays source frames only."
+}

@@ -460,14 +460,15 @@ dialog .btns { justify-content: flex-start; }
 }
 </style>
 <link rel="stylesheet" href="screens.css">
+<link rel="stylesheet" href="polish.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="sym-W" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4M4.2 4.2l2.9 2.9M16.9 16.9l2.9 2.9M4.2 19.8l2.9-2.9M16.9 7.1l2.9-2.9" fill="none" stroke-width="2.4" stroke-linecap="round"/></symbol>
-  <symbol id="sym-R" viewBox="0 0 24 24"><path d="M12 1c1 5 7 8 7 14a7 7 0 0 1-14 0c0-3 2-5 3-8 1 1 2 3 2 5 2-2 2-7 2-11z"/></symbol>
-  <symbol id="sym-B" viewBox="0 0 24 24"><path d="M16 2a10 10 0 1 0 6 16 9 9 0 0 1-6-16z"/></symbol>
-  <symbol id="sym-G" viewBox="0 0 24 24"><path d="M4 21C3 10 11 3 22 2c0 11-6 18-16 17l-2 2z"/></symbol>
-  <symbol id="sym-U" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" fill="none" stroke-width="2.4"/><circle cx="12" cy="12" r="3.6"/></symbol>
-  <symbol id="sym-N" viewBox="0 0 24 24"><path d="M12 2l10 10-10 10L2 12z"/></symbol>
+  <symbol id="sym-W" viewBox="0 0 24 24"><image href="art/web/ui/emblem-W.png" width="24" height="24"/></symbol>
+  <symbol id="sym-R" viewBox="0 0 24 24"><image href="art/web/ui/emblem-R.png" width="24" height="24"/></symbol>
+  <symbol id="sym-B" viewBox="0 0 24 24"><image href="art/web/ui/emblem-B.png" width="24" height="24"/></symbol>
+  <symbol id="sym-G" viewBox="0 0 24 24"><image href="art/web/ui/emblem-G.png" width="24" height="24"/></symbol>
+  <symbol id="sym-U" viewBox="0 0 24 24"><image href="art/web/ui/emblem-U.png" width="24" height="24"/></symbol>
+  <symbol id="sym-N" viewBox="0 0 24 24"><image href="art/web/ui/emblem-N.png" width="24" height="24"/></symbol>
 </svg>
 
 <div class="screen" id="screen" hidden></div>
@@ -490,7 +491,8 @@ dialog .btns { justify-content: flex-start; }
     <div id="themStrip"></div>
     <p class="speech" id="speech" aria-live="polite" hidden></p>
     <div class="tools">
-      <button class="btn" id="logBtn" type="button" data-panel="logPanel" aria-expanded="false">Log</button>
+      <button class="btn snd" type="button" data-sound aria-pressed="true" aria-label="Sound"></button>
+      <button class="btn" id="logBtn" type="button" data-panel="logPanel" aria-expanded="false">Chronicle</button>
       <button class="btn" type="button" data-panel="rulesPanel" aria-expanded="false">Rules</button>
       <button class="btn" id="debugBtn" type="button" data-panel="debugPanel" aria-expanded="false" hidden>Debug</button>
       <button class="btn" id="testBtn" type="button" data-panel="testPanel" aria-expanded="false" hidden>Cards</button>
@@ -498,7 +500,7 @@ dialog .btns { justify-content: flex-start; }
     </div>
   </header>
   <section class="arena field" aria-label="Battlefield">
-    <aside class="drawer log" id="logPanel" aria-label="Battle log"><div id="chatBox" hidden><h2>Across the table</h2><div id="chat"></div></div><h2>Battle log</h2><div id="log"></div></aside>
+    <aside class="drawer log" id="logPanel" aria-label="Battle log"><div id="chatBox" hidden><h2>Across the table</h2><div id="chat"></div></div><h2>Chronicle</h2><div id="log"></div></aside>
     <div class="board"><span class="prop p1" aria-hidden="true"></span><span class="prop p2" aria-hidden="true"></span><span class="prop p3" aria-hidden="true"></span><span class="prop p4" aria-hidden="true"></span><div id="grid"></div></div>
     <div class="inspect" id="inspect" tabindex="-1" aria-label="Card close-up"></div>
     <aside class="drawer" id="rulesPanel" aria-label="Working rules">
@@ -572,4 +574,6 @@ dialog .btns { justify-content: flex-start; }
 <script src="screens.js"></script>
 <script src="collection.js"></script>
 <script src="fx.js"></script>
+<script src="sfx.js"></script>
+<script src="polish.js"></script>
 <script src="ui.js"></script>

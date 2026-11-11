@@ -1,0 +1,285 @@
+/* The polish pass (art/UI_POLISH_BRIEFS.md): parchment-and-wax buttons, portrait medallions, the wax seal and nail rail, the
+   bronze press, enamel shields on units, a fanned hand, the chronicle drawer, the summary's crest and ledger, painted packs,
+   seals and rarity gems. Loaded last, so it overrides the base sheets. */
+
+/* Buttons: parchment with a gilt frame. The main button carries a red wax seal on its left end. */
+.btn { position: relative; overflow: hidden; border-style: solid; border-width: 0 24px; border-image: url("art/web/ui/btn-quiet.png") 0 84 fill / 0 24px / 0 stretch; padding: 3px 2px 5px; min-height: 38px; color: #3a2a18; text-shadow: 0 1px 0 rgba(255, 250, 235, .7); filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .55)); transition: transform .07s, filter .12s; }
+.btn.primary { border-width: 0 26px 0 36px; border-image: url("art/web/ui/btn-main.png") 0 150 0 194 fill / 0 26px 0 36px / 0 stretch; padding-left: 4px; color: #4a160c; }
+.btn.big { min-height: 48px; border-width: 0 30px; padding: 4px 6px 7px; }
+.btn.primary.big { border-width: 0 34px 0 46px; border-image-width: 0 34px 0 46px; padding-left: 6px; }
+.btn::after { content: ""; position: absolute; inset: 12% -40%; pointer-events: none; background: linear-gradient(105deg, transparent 38%, rgba(255, 245, 215, .45) 50%, transparent 62%); mix-blend-mode: screen; transform: translateX(-120%); transition: transform .55s; }
+.btn:hover::after { transform: translateX(120%); }
+.btn:hover { filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .6)) brightness(1.06); }
+.btn:active { transform: translateY(2px) scale(.985); filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .7)) brightness(.9); }
+.plaque .btn:not(.primary), .screen .btn, .start .btn { color: #3a2a18; }
+.tools .btn { min-height: 34px; padding: 2px 2px 4px; font-size: 16px; border-width: 0 20px; border-image-width: 0 20px; }
+.tools .btn[aria-expanded="true"] { color: #6d1a10; filter: drop-shadow(0 0 5px var(--gold)); }
+.screen .btn.danger { background: none; color: #8c1a10; border-image-source: url("art/web/ui/btn-quiet.png"); }
+.btn[disabled] { filter: grayscale(.6) brightness(.8); }
+.btn.snd { width: 34px; min-width: 0; padding: 0; border-width: 0; border-image: none; background: url("art/web/ui/btn-round.png") center / contain no-repeat; }
+.btn.snd::before { content: ""; position: absolute; inset: 24%; background: #3a2a18; -webkit-mask: var(--snd) center / contain no-repeat; mask: var(--snd) center / contain no-repeat;
+  --snd: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 9h4l5-4v14l-5-4H3zM15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.btn.snd[aria-pressed="false"]::before { --snd: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 9h4l5-4v14l-5-4H3z' fill='%23000'/%3E%3Cpath d='M16 9l6 6M22 9l-6 6' stroke='%23000' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.mitem, .who-plays { border-style: solid; border-width: 0 28px; border-image: url("art/web/ui/btn-quiet.png") 0 84 fill / 0 28px / 0 stretch; padding: 9px 10px 11px; color: #3a2a18; text-shadow: 0 1px 0 rgba(255, 250, 235, .6); transition: transform .07s, filter .12s; }
+.mitem.primary, .who-plays[aria-pressed="true"] { border-width: 0 34px 0 52px; border-image: url("art/web/ui/btn-main.png") 0 150 0 194 fill / 0 34px 0 52px / 0 stretch; padding-left: 8px; }
+.mitem span, .who-plays span { color: #5d4c31; }
+.mitem.primary b, .who-plays b { color: #4a160c; }
+.mitem b { color: #3a2a18; }
+.mitem:active, .who-plays:active { transform: translateY(2px) scale(.99); }
+.mitem.off { border-width: 1px; }
+.mitem .money { color: #6d4f17; }
+
+/* Alignment emblems are painted coins now, so the old tinted symbols lose their tint and keep their size. */
+.gem svg { display: none; }
+.frame .wants { background: rgba(20, 16, 12, .85); padding: 0.5cqw 0.8cqw; gap: 0.5cqw; }
+.frame .sym { width: calc(var(--sym) * 1.2); height: calc(var(--sym) * 1.2); filter: drop-shadow(0 .3cqw .3cqw rgba(0, 0, 0, .6)); }
+.frame .sym.miss { opacity: .35; filter: grayscale(.8); }
+.csym { filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .55)); }
+.tile .nm svg { width: 14px; height: 14px; }
+
+/* Summoner medallions: a portrait inside a bronze ring, your ring warmer than the enemy's, with the alignment's emblem below. */
+.crest { position: relative; width: 56px; height: 56px; background: none; border-radius: 50%; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .65)); }
+.crest img { position: absolute; inset: 12%; width: 76%; height: 76%; border-radius: 50%; object-fit: cover; object-position: center 22%; }
+.crest::after { content: ""; position: absolute; inset: 0; background: url("art/web/ui/ring-you.png") center / contain no-repeat; pointer-events: none; }
+.crest.foe::after { background-image: url("art/web/ui/ring-foe.png"); }
+.crest .emb { position: absolute; z-index: 1; right: -5px; bottom: -4px; width: 22px; height: 22px; }
+.crest .emb svg { width: 100%; height: 100%; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .8)); }
+.plate.active .crest { box-shadow: none; filter: drop-shadow(0 0 2px var(--gold-pale)) drop-shadow(0 0 10px var(--gold)); }
+
+/* Life: the wax seal holds the number; the rail beside it holds a nail for each point. A lost point pulls its nail out. */
+.life { width: auto; flex-direction: row; align-items: center; gap: 2px; }
+.lseal { flex: none; width: 46px; height: 48px; display: grid; place-items: center; background: url("art/web/ui/life-seal.png") center / contain no-repeat; filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .5)); }
+.lseal b { margin: -5px 0 0 -3px; font: 700 21px/1 var(--display); font-variant-numeric: lining-nums tabular-nums; color: #ffe9d0; text-shadow: 0 2px 0 #4a0c06, 0 0 6px rgba(0, 0, 0, .5); }
+.lrail { display: grid; grid-template-columns: repeat(var(--n), 1fr); align-items: center; width: calc(var(--n) * 10px + 12px); height: 21px; padding: 0 6px; background: url("art/web/ui/life-rail.png") center / 100% 100% no-repeat; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .5)); }
+.lrail i { position: relative; width: 100%; aspect-ratio: 1; background: url("art/web/ui/life-nail.png") center / 96% no-repeat; }
+.lrail i.out { background-image: url("art/web/ui/life-hole.png"); background-size: 66%; }
+@media (prefers-reduced-motion: no-preference) {
+  .lrail i.pull::after { content: ""; position: absolute; inset: 0; background: url("art/web/ui/life-nail.png") center / 96% no-repeat; animation: nailpull .8s ease-out both; animation-delay: calc(var(--k, 0) * 110ms + 120ms); }
+  .lrail i.back { animation: nailback .5s cubic-bezier(.3, 1.6, .5, 1) both; animation-delay: calc(var(--k, 0) * 90ms); }
+  .life.hurt .lseal { animation: sealhit .5s ease-out; }
+  .life.healed .lseal { animation: sealheal .7s ease-out; }
+  @keyframes nailpull { 0% { transform: none; opacity: 1; } 35% { transform: translateY(-9px) rotate(18deg); opacity: 1; } 100% { transform: translate(7px, -26px) rotate(70deg); opacity: 0; } }
+  @keyframes nailback { from { transform: translateY(-10px) scale(1.5); opacity: 0; } }
+  @keyframes sealhit { 0% { transform: none; } 30% { transform: translate(-3px, 2px) rotate(-7deg) scale(1.12); filter: drop-shadow(0 5px 6px rgba(0, 0, 0, .5)) brightness(1.5); } 60% { transform: translate(2px, -1px) rotate(3deg); } 100% { transform: none; } }
+  @keyframes sealheal { 40% { filter: drop-shadow(0 0 10px rgba(143, 220, 155, .9)) brightness(1.25); transform: scale(1.08); } }
+}
+.plate .float { left: 64px; top: 4px; }
+#youStrip { width: 250px; }
+/* Your plate in the tray: medallion, name and piles across the top, then life, then mana. */
+#youStrip .plate { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; align-content: center; gap: 3px 8px; }
+#youStrip .crest { grid-row: 1; grid-column: 1; }
+#youStrip .who { grid-row: 1; grid-column: 2; }
+#youStrip .piles { grid-row: 1; grid-column: 3; gap: 8px; }
+#youStrip .life, #youStrip .manarow, #youStrip .relics { grid-column: 1 / -1; }
+#youStrip .pile.back b { width: 21px; height: 30px; }
+
+/* Unit labels: small enamel shields under the name, with the first letter. Red attacks, blue moves or reaches, green grows or heals. */
+.tile .chips { top: calc(clamp(13px, calc(var(--bw) / 5 * .118), 17px) * 1.15 + 5px); left: 3px; right: auto; bottom: auto; max-height: none; flex-wrap: nowrap; gap: 2px; pointer-events: auto; }
+.tile .shd { position: relative; isolation: isolate; flex: none; width: 17px; height: 20px; padding-bottom: 4px; display: grid; place-items: center; clip-path: polygon(0 0, 100% 0, 100% 56%, 50% 100%, 0 56%); background: linear-gradient(135deg, #f0d68c, #7a5420); font: 700 11.5px/1 var(--display); font-style: normal; color: #fbe8c4; text-shadow: 0 1px 1px #000, 0 0 3px rgba(0, 0, 0, .8); }
+.tile .shd::before { content: ""; position: absolute; inset: 1.5px; z-index: -1; clip-path: polygon(0 0, 100% 0, 100% 56%, 50% 100%, 0 56%); background: radial-gradient(circle at 40% 30%, #6a5434, #2c2114); }
+.tile .shd.r::before { background: radial-gradient(circle at 40% 30%, #b0301f, #4e0f09); }
+.tile .shd.u::before { background: radial-gradient(circle at 40% 30%, #3a62a2, #142546); }
+.tile .shd.g::before { background: radial-gradient(circle at 40% 30%, #4c8a3e, #17300f); }
+.tile .shd.more { width: 20px; font-size: 10px; }
+.app.big .tile .shd { width: 15px; height: 18px; font-size: 10.5px; }
+/* Several labels stack like coins, the first on top and each later one peeking out to its right, so they cover little of the
+   painting. Pointing at the unit fans them out, one after another. */
+.tile .chips.stack .shd { z-index: calc(8 - var(--i, 0)); filter: drop-shadow(1px 0 1px rgba(0, 0, 0, .7)); transition: margin-left .26s cubic-bezier(.3, 1.5, .5, 1) calc(var(--i, 0) * 28ms), transform .26s cubic-bezier(.3, 1.6, .5, 1) calc(var(--i, 0) * 28ms); }
+.tile .chips.stack .shd + .shd { margin-left: -12px; color: transparent; text-shadow: none; }
+.app.big .tile .chips.stack .shd + .shd { margin-left: -11px; }
+.tile:is(:hover, :focus-visible) .chips.stack .shd + .shd { margin-left: 2px; color: #fbe8c4; text-shadow: 0 1px 1px #000, 0 0 3px rgba(0, 0, 0, .8); }
+.tile:is(:hover, :focus-visible) .chips.stack .shd { transform: translateY(-1px) scale(1.12); }
+/* Units show Attack and Health as numbers; the health bar is gone. */
+.tile .st { justify-content: space-between; }
+.tile .bar { display: none; }
+/* More of each painting shows: the name sits on a fade instead of a solid band. */
+.tile .nm, .app.big .tile .nm { padding-bottom: 6px; background: linear-gradient(rgba(14, 9, 4, .84), rgba(14, 9, 4, .55) 62%, rgba(14, 9, 4, 0)); text-shadow: 0 1px 2px #000, 0 0 4px rgba(0, 0, 0, .7); }
+/* A deck's picture keeps its shape whatever the image, so a tall card back can't stretch its row. */
+.deck .pic { position: relative; overflow: hidden; }
+.deck .pic img { position: absolute; inset: 0; }
+.tile.own .tfx, .tile.enemy .tfx { top: auto; bottom: 26px; }
+
+/* End turn: a bronze press. */
+.press { flex: none; position: relative; z-index: 2; width: 76px; height: 76px; margin: -16px 0 -16px 2px; padding: 0 0 6px; border: 0; display: grid; place-items: center; text-align: center; background: url("art/web/ui/press-you.png") center / contain no-repeat; font: 700 14.5px/1 var(--display); letter-spacing: .05em; color: #3a220a; text-shadow: 0 1px 0 rgba(255, 236, 190, .6); filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .55)); transition: transform .1s, filter .12s; }
+.press:hover { filter: drop-shadow(0 7px 7px rgba(0, 0, 0, .6)) brightness(1.08); }
+.press.down { transform: translateY(4px) scale(.94); filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .7)) brightness(.86); }
+.press.foe { background-image: url("art/web/ui/press-foe.png"); color: #b7a58a; text-shadow: 0 1px 2px #000; cursor: default; }
+@media (prefers-reduced-motion: no-preference) {
+  .press.glow { animation: pressglow 1.8s ease-in-out infinite; }
+  .press.foe { animation: pressrise .5s cubic-bezier(.3, 1.5, .5, 1); }
+  @keyframes pressglow { 50% { filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .55)) drop-shadow(0 0 12px rgba(255, 200, 90, .9)) brightness(1.12); } }
+  @keyframes pressrise { from { transform: translateY(10px) scale(.86); opacity: 0; } }
+}
+
+/* The hand: a fan of up to seven cards resting low on the table. A card lifts clear when pointed at. */
+@media (min-width: 821px) and (min-height: 471px) {
+  .app, .app.big { --cw: clamp(124px, calc(27dvh / 1.42), 172px); --tray-h: max(150px, calc(var(--cw) * 1.42 * .74 + 10px)); }
+  /* The board takes nearly all of its row: a thinner linen border and tighter gaps make every tile, and its painting, larger. */
+  .board { padding: 9px; --bw: min(calc(100cqw - 50px), calc((100cqh - 34px) * var(--bwr, 1.81))); }
+  #grid { height: min(calc(100cqh - 34px), calc(var(--bw) * var(--grat, .72))); gap: 4px; }
+  .tray { overflow: visible; }
+  #hand { gap: 0; padding-top: 10px; align-items: flex-start; }
+  #hand .card + .card { margin-left: calc(var(--cw) * -.16); }
+  #hand .cslot { transform: translateY(var(--dy, 0)) rotate(var(--rot, 0)); transition: transform .18s ease-out; }
+  #hand .card.selected .cslot { transform: translateY(calc(var(--dy, 0) - 22px)) rotate(var(--rot, 0)); }
+  #hand .card.casting .cslot { transform: translateY(-40px) scale(1.07); }
+  .app.opening #hand { align-items: center; padding-top: 0; }
+  .app.opening #hand .card + .card { margin-left: 10px; }
+  .app.opening #hand .cslot { transform: none; }
+}
+@media (min-width: 821px) and (min-height: 471px) and (hover: hover) {
+  #hand .card:hover .cslot, #hand .card:focus-visible .cslot { transform: translateY(calc(var(--cw) * -.4 - 16px)) scale(1.45) rotate(0deg); transition: transform .22s cubic-bezier(.3, 1.3, .5, 1) .12s; }
+  .app.opening #hand .card:hover .cslot, .app.opening #hand .card:focus-visible .cslot { transform: translateY(-6px) scale(1.04); }
+}
+
+/* The chronicle: the battle log stays in a drawer until it's opened, on every screen size, so the board gets the room. */
+.drawer.log { left: 8px; right: auto; transform: translateX(calc(-100% - 16px)); background: none; border: 1px solid transparent; border-image: url("art/web/ui/panel.png") 60 fill / 22px / 0 stretch; padding: 20px 22px; filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .7)); box-shadow: none; }
+.drawer.log.open { transform: none; }
+.drawer.log h2 { color: var(--card-ink); font-weight: 700; }
+#log div { color: var(--card-soft); font-family: var(--serif); }
+#log div:last-child { color: var(--card-ink); }
+#chat, #chat small, #chat .sys { color: var(--card-ink); }
+@media (min-width: 1280px) and (min-aspect-ratio: 3/2) {
+  .arena { grid-template-columns: minmax(0, 1fr) auto; }
+  .board { grid-column: 1; justify-self: center; --bw: min(calc((100cqh - 34px) * var(--bwr, 1.81)), calc(100cqw - var(--side, 380px))); }
+  .app.big { --side: 360px; }
+  .drawer.log { position: absolute; grid-column: auto; grid-row: auto; top: 8px; bottom: 8px; left: 8px; right: auto; justify-self: auto; align-self: auto; width: min(320px, calc(100% - 24px)); max-width: none; margin: 0; transform: translateX(calc(-100% - 16px)); visibility: hidden; background: none; box-shadow: none; }
+  .drawer.log.open { transform: none; visibility: visible; }
+  .app.big .drawer.log { max-width: none; }
+  #logBtn { display: inline-block; }
+  .inspect, .inspect.left { grid-column: 2; margin-right: 14px; width: min(300px, calc((100cqh - 54px) / 1.42)); }
+  .app.big .inspect { width: min(280px, calc((100cqh - 54px) / 1.42)); }
+}
+
+/* Painted effects and flying coins sit above everything. */
+.fxpaint { position: fixed; inset: 0; z-index: 90; pointer-events: none; }
+.fxs { position: absolute; pointer-events: none; background-size: 300% 200%; background-repeat: no-repeat; transform: translate(-50%, -50%); mix-blend-mode: screen; }
+.fxs.norm { mix-blend-mode: normal; }
+.flycoin { position: absolute; width: 28px; height: 28px; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .6)); }
+.lamp { position: fixed; inset: 0; z-index: 200; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at 50% 42%, rgba(40, 22, 8, .7), #050302 72%); }
+
+/* Battle summary: the crest over the plaque, a ledger, and the purse. */
+.plaque.summary { padding: 0 44px 22px; overflow: visible; max-height: none; }
+.screst { position: relative; container-type: inline-size; width: min(430px, 86vw); aspect-ratio: 900 / 563; margin: -96px 0 -14px; background: url("art/web/ui/crest-victory.png") center / contain no-repeat; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .55)); }
+.loss .screst { aspect-ratio: 900 / 584; background-image: url("art/web/ui/crest-defeat.png"); }
+.screst b { position: absolute; left: 0; right: 0; top: 54%; transform: translateY(-50%); text-align: center; font: 700 8.6cqw/1 var(--display); letter-spacing: .1em; color: #5a160c; text-shadow: 0 .3cqw 0 rgba(255, 240, 210, .6); }
+.loss .screst b { top: 54.5%; transform: translateY(-50%) rotate(4deg); color: #3a2a20; }
+.ssub { margin: 0 0 4px; font: 500 16px/1.3 var(--serif); color: var(--card-soft); }
+.stally { gap: 3px; }
+.stally li { display: grid; grid-template-columns: minmax(0, 1fr) auto 56px; align-items: baseline; gap: 12px; padding: 3px 8px; border-radius: 3px; background: rgba(93, 76, 49, .08); }
+.stally li small { text-align: right; font: 500 13px var(--body); color: var(--card-soft); font-variant-numeric: tabular-nums; }
+.stally li b { text-align: right; }
+.stally li.mult { background: rgba(140, 42, 36, .12); }
+.earned { align-items: center; gap: 10px; justify-content: flex-start; }
+.earned span:not(.purse) { flex: 1; text-align: left; }
+.earned .purse { flex: none; width: 46px; height: 54px; background: url("art/web/ui/purse.png") center / contain no-repeat; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .45)); transform-origin: 50% 90%; }
+.earned .purse.full { animation: pursefull .5s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes pursefull { 40% { transform: scale(1.18, .88); } 70% { transform: scale(.95, 1.06); } }
+@media (prefers-reduced-motion: no-preference) {
+  .plaque.summary { animation: slam .8s cubic-bezier(.2, 1.3, .4, 1) both; }
+  .stally li, .earned { animation: none; }
+  .plaque.summary.playing .stally li:not(.in) { opacity: 0; }
+}
+
+/* Rarity gems are painted. */
+.frame .rar { transform: none; border: 0; box-shadow: none; width: 4.6cqw; height: 4.6cqw; vertical-align: -0.6cqw; background: url("art/web/ui/rarity-c.png") center / contain no-repeat; }
+.frame .rar.u { background-image: url("art/web/ui/rarity-u.png"); }
+.frame .rar.r { background-image: url("art/web/ui/rarity-r.png"); }
+.frame .rar.l { background-image: url("art/web/ui/rarity-l.png"); filter: drop-shadow(0 0 1cqw #ff9a5a); }
+.rdot { transform: none; width: 14px; height: 14px; background: url("art/web/ui/rarity-c.png") center / contain no-repeat !important; }
+.rdot.u { background-image: url("art/web/ui/rarity-u.png") !important; } .rdot.r { background-image: url("art/web/ui/rarity-r.png") !important; } .rdot.l { background-image: url("art/web/ui/rarity-l.png") !important; }
+
+/* Gold and shards. */
+img.coin-i, img.shard-i { width: 22px; height: 22px; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .6)); }
+
+/* Packs: painted wrappers, with the alignment's emblem pressed into the wax. */
+.pack.painted { width: 150px; aspect-ratio: auto; background: none; border: 0; border-radius: 0; box-shadow: none; }
+.pack.painted::before { display: none; }
+.pack.painted img { display: block; width: 100%; height: auto; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .6)); }
+.pack.painted .pseal { top: 52%; width: 22%; background: none; box-shadow: none; }
+.pack.painted .pseal:empty { display: none; }
+.pack.painted .pseal .csym { width: 100%; height: 100%; }
+.ptear .pack.painted { width: min(260px, 52vw); }
+.popen.opening .ptear .pack { animation: packopen .5s ease-out both; }
+@keyframes packopen { 0% { transform: scale(1); } 30% { transform: scale(1.08) rotate(-2deg); filter: brightness(1.4); } 100% { transform: scale(1.12); opacity: 0; } }
+.ocard.up.l::after, .ocard.up.r::after { display: none; }
+
+/* Campaign map: painted wax seals, and your army standing at its chapter. */
+.mnode .seal { width: 50px; height: 50px; border: 0; border-radius: 0; background: url("art/web/ui/seal-unreached.png") center / contain no-repeat; color: #f4e3c0; text-shadow: 0 1px 2px #000; filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .5)); }
+.mnode.next.last .seal { background-image: url("art/web/ui/seal-final.png"); width: 58px; height: 58px; }
+/* The full shorthand, because screens.css sets these two with one and would leave the painting at its natural size. */
+.mnode.now .seal { background: url("art/web/ui/seal-next.png") center / contain no-repeat; border: 0; box-shadow: none; color: #fff0d8; }
+.mnode.done .seal { background: url("art/web/ui/seal-won.png") center / contain no-repeat; border: 0; color: #fff0d8; }
+.mnode.picked .seal { outline: 0; filter: drop-shadow(0 0 3px #fff3d0) drop-shadow(0 0 10px var(--gold)); }
+@media (prefers-reduced-motion: no-preference) {
+  .mnode.now .seal { animation: sealglow 2.4s ease-in-out infinite; }
+  @keyframes sealglow { 50% { filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .5)) drop-shadow(0 0 12px rgba(255, 210, 120, .9)); } }
+}
+.army { position: absolute; z-index: 2; width: 5.2%; aspect-ratio: 118 / 220; transform: translate(-50%, -100%); pointer-events: none; background: center bottom / contain no-repeat; filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, .55)); }
+.army.W { background-image: url("art/web/ui/army-oath.png"); } .army.U { background-image: url("art/web/ui/army-lantern.png"); } .army.B { background-image: url("art/web/ui/army-ashen.png"); }
+.army.R { background-image: url("art/web/ui/army-warhorde.png"); } .army.G, .army.N { background-image: url("art/web/ui/army-herd.png"); }
+
+/* Rewards: the cards are dealt face down and turn over; the enemy's spoils carry a ribbon. */
+.rpick .card { perspective: 1000px; }
+.rpick .rflip { position: relative; display: block; transform-style: preserve-3d; }
+.rpick .rflip .frame { backface-visibility: hidden; }
+.rpick .rback { position: absolute; inset: 0; border-radius: 5cqw; background: url("art/web/ui/card-back.jpg") center / cover, #2a1d10; box-shadow: inset 0 0 0 2px rgba(208, 164, 72, .55); transform: rotateY(180deg); backface-visibility: hidden; }
+.rfrom.spoil { position: relative; z-index: 2; width: 112%; margin: 0 -6% -18px; padding: 16px 14% 22px; white-space: nowrap; text-align: center; background: url("art/web/ui/spoils-ribbon.png") center / 100% 100% no-repeat; font: 700 15px/1.1 var(--display); color: #fff0d6; text-shadow: 0 1px 2px #3a0a04; }
+
+/* The home screen: one emblem per campaign, lit once you've beaten it. */
+.memb { display: flex; gap: 8px; margin-top: -10px; }
+.memb img { width: 30px; height: 30px; filter: grayscale(1) brightness(.62) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); transition: filter .3s; }
+.memb img.won { filter: drop-shadow(0 0 6px rgba(255, 210, 120, .8)) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); }
+.msnd { position: absolute; top: 14px; right: calc(16px + env(safe-area-inset-right, 0px)); }
+
+@media (max-width: 820px), (max-height: 470px) {
+  /* The engine sets the row count inline, so the phone board takes its height from its width: tiles a little taller than wide. */
+  .arena { flex: none; }
+  #grid { height: calc(var(--bw) * var(--grat, .72) * 2.1); }
+  .crest { width: 44px; height: 44px; }
+  .lrail { width: calc(var(--n) * 7px + 10px); height: 16px; }
+  .lseal { width: 38px; height: 40px; }
+  .lseal b { font-size: 17px; }
+  .press { width: 62px; height: 62px; margin: -8px 0; font-size: 12.5px; }
+  .tile .shd { width: 13px; height: 15px; font-size: 9px; padding-bottom: 3px; }
+  .tile .chips.stack .shd + .shd, .app.big .tile .chips.stack .shd + .shd { margin-left: -9px; }
+  .tile .chips { top: 16px; }
+  .screst { margin-top: -60px; }
+  .plaque.summary { padding: 0 22px 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn::after { display: none; }
+}
+
+/* Deck editor: a five-across card grid with copy pips, filter chips, and a deck list of art strips over a growing mana curve. */
+.editor .chip { min-height: 28px; padding: 2px 11px; border-radius: 99px; background: rgba(20, 13, 8, .82); border: 1px solid #5a4530; color: #d8c6a2; }
+.editor .chip[aria-pressed="true"] { background: #6d4f17; border-color: #f0d68c; color: #fff3d6; font-weight: 700; }
+.editor .chip[aria-pressed="true"] .csym { color: inherit; }
+.editor .filters { background: rgba(16, 10, 6, .7); border-color: #5a4530; }
+.editor .cgrid { gap: 18px 12px; padding: 6px 6px 18px 2px; }
+.editor .pcard .card { transition: transform .15s ease-out, filter .15s; }
+.editor .pcard .card:hover { transform: translateY(-4px) scale(1.03); filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .55)); }
+.qty { position: absolute; left: 50%; bottom: -11px; transform: translateX(-50%); display: flex; gap: 4px; pointer-events: none; }
+.qty i { width: 9px; height: 9px; transform: rotate(45deg); background: #3a2c1f; border: 1px solid #8c7656; }
+.qty i.on { background: #f0d68c; border-color: #fff3d6; box-shadow: 0 0 5px rgba(240, 214, 140, .7); }
+.dpanel { background: rgba(16, 10, 6, .9); border-color: #6b5132; border-radius: 8px; box-shadow: inset 0 0 0 1px rgba(201, 160, 88, .18), 0 8px 20px rgba(0, 0, 0, .5); }
+.curve { height: 70px; }
+.cbar i { background: linear-gradient(#f0d68c, #a8802d); transition: height .4s cubic-bezier(.3, 1.6, .5, 1); }
+.dlist h3 { color: #c9b48c; }
+.drow { position: relative; overflow: hidden; gap: 6px; min-height: 34px; margin-bottom: 4px; padding: 0 3px 0 4px; background: #1e150e; border: 1px solid #5a4530; border-left-width: 4px; border-radius: 4px; }
+.drow .rart { position: absolute; right: 0; top: 0; width: 62%; height: 100%; object-fit: cover; object-position: 50% 28%; opacity: .75; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 65%); mask-image: linear-gradient(90deg, transparent, #000 65%); }
+.drow > :not(.rart) { position: relative; z-index: 1; }
+.rcost { flex: 0 0 24px; height: 24px; display: grid; place-items: center; background: url("art/web/ui/coin.png") center / contain no-repeat; color: #2a1a0a; font: 700 13.5px/1 var(--display); text-shadow: none; }
+.rcost.land { background: none; }
+.rname { font: 700 15px/1.1 var(--display); color: #f2e2bf; text-shadow: 0 1px 3px #000; }
+.rn { padding: 2px 6px; border-radius: 3px; background: rgba(0, 0, 0, .62); color: var(--gold-pale); font: 700 14px/1 var(--display); text-shadow: 0 1px 3px #000; }
+.rbtn { background: rgba(20, 13, 8, .85); color: #f2e2bf; }
+@media (min-width: 1100px) { .editor .cgrid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (min-width: 1081px) and (max-width: 1439px) { .ebody { grid-template-columns: minmax(0, 1fr) 330px; } .closeup { display: none; } }
+@media (min-width: 1440px) { .ebody { grid-template-columns: 240px minmax(0, 1fr) 340px; } }
+.popen .ocard { z-index: 1; }
+.popen > .fxs { z-index: 0; }
+.menu h1 { width: max-content; }
+#result { position: fixed; inset: 0; z-index: 40; overflow-y: auto; padding: 110px 16px 24px; align-items: safe center; background: radial-gradient(ellipse at 50% 40%, rgba(20, 12, 6, .55), rgba(10, 6, 3, .9) 75%); }
+@media (max-width: 820px), (max-height: 470px) { #result { padding-top: 70px; } }
+.stally li > span { text-align: left; }

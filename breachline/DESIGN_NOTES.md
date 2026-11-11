@@ -172,6 +172,24 @@ The creator found the old UI dull: a flat background, and card borders, textures
 
 Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-11-09 and are in the game, waiting for the creator's review. The home screen drops the old fan of three cards so the scene shows. `card.html` still has the first frame design.
 
+**Polish pass, 2026-11-11.** The second pass (briefs in `art/UI_POLISH_BRIEFS.md`) is in the game. It lives in `polish.css`, `polish.js` and `sfx.js` on top of the earlier layers. The creator's picks:
+- **Buttons:** parchment and wax.
+- **Life:** a wax seal holding the number, with a rail of nails that are pulled as life is lost.
+- **End turn:** the bronze press.
+- **Status letters:** code-drawn enamel shields, not the painted grounds.
+- **Dominion emblem:** the iron crown.
+- **Screen changes:** a lamp dim.
+- **Deck editor:** mockup I, with copy pips, art-strip rows and a growing curve.
+- **Units:** the full painting on the board.
+
+Earlier approvals:
+- **Battle layout 1A:** portrait medallions, a bigger board and a fanned hand of up to seven that lifts on hover. The Chronicle is a drawer.
+- **Feedback:** painted strike, death, heal and summon effects, with the blow type taken from the unit. The summoner hit goes straight up.
+- **Rewards and map:** reward cards are dealt face down and turned over. The army marches along the campaign road.
+- **Victory and defeat:** the crest drops and the payout is stamped line by line, with coins flying into the purse.
+
+Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2026-11-11 the creator picked spell and effect sounds from a sound board: Vigil spells get a healing impact or a tubular bell, Gnosis spells a low wine glass, with ice impact 3 for the cold spells and fire staff 20 for lightning; Fervor spells fire impact 3; Dominion spells a catching flame pitched down; Genesis spells a leaf rustle. Enchantments on your units get a pitched-down finger cymbal, enchantments on enemies (curses) ice impact 5, equipment healing 3, heals healing 9, damage hit 1, and a blocked blow anvil 2. The same day: footstep 6 when a unit moves, a card touch for hovering a card and card slide 6 for drawing one, a wood knock when a greyed-out card is clicked, a timpani for end turn, a full gong for victory, sad ending 1 for losing a campaign battle and sad ending 3, quiet, for losing any other, and the Old Tower Inn and King's Feast tunes taking turns as quiet background music. The mute button stops it all.
+
 ## Balance
 
 Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.

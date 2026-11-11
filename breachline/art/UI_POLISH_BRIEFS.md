@@ -1,6 +1,9 @@
 # Breachline UI polish briefs
 
-19 images for the second interface pass, from Claude's audit on the [polish pass page](https://claude.ai/artifact/WhNJqiYHKZM63JVuwWYfBF). Written on 2026-11-10 and revised on 2026-11-11 after the creator's first review. **Status: briefed, not generated.** Group 1 (13 images) is needed whichever options the creator picks, so it can be generated now. Group 2 (5 images) waits for the creator's round-2 picks on the page; generate only the option they choose. Group 3 (1 image) waits for the progression work to settle the currency. The first review dropped three briefs: the keyword studs (replaced by status letters), the brass turn seal (replaced by a heavier end-turn piece) and the campaign medals (replaced by alignment emblems).
+<!-- CODEX_UI_POLISH_HANDOFF_2026_11_11 -->
+**Generation handoff — 2026-11-11:** All core assets, every Group 2 option and all six Group 3 assets are generated: **35 source sheets** including the Dominion comparison. See [gallery](ui/UI_POLISH_GALLERY.html), [Claude handoff](ui/UI_POLISH_README.txt), [UI manifest](ui/UI_POLISH_MANIFEST.json), [FX manifest](fx/FX_POLISH_MANIFEST.json) and [selected emblem crops](ui/UI_POLISH_SELECTIONS.json). The creator approved five original alignment emblems and selected the **iron crown** from the separate Dominion options sheet; the original crescent-and-ring is rejected. Other choices remain available for testing. This dated handoff supersedes older generation-status wording below.
+
+24 images for the second interface pass, from Claude's audit on the [polish pass page](https://claude.ai/artifact/WhNJqiYHKZM63JVuwWYfBF). Written on 2026-11-10 and revised on 2026-11-11 after the creator's first review. **Status:** group 1 (13 images) was generated on 2026-11-11. For group 2 (5 images) the creator asked for every option to be painted, so they can be compared in the mockups before choosing; save each option as its own file, such as `ui-end-turn-a.png`. Group 3 (6 images), added later the same day, covers collecting and gold for the progression work. The first review dropped three briefs: the keyword studs (replaced by status letters), the brass turn seal (replaced by a heavier end-turn piece) and the campaign medals (replaced by alignment emblems).
 
 Like the [UI briefs](UI_ART_BRIEFS.md) and [tile briefs](TILE_ART_BRIEFS.md), these are materials for the interface, not card art, so card rules about subjects, poses and stories don't apply. Keywords are shown as their first letter on a painted ground, so a new keyword needs no new art.
 
@@ -252,12 +255,59 @@ Six round heraldic emblems, each a thick struck-metal disc with a raised rim, be
 6. Neutral, grey stone and iron: a single rough uncut stone.
 ```
 
-## Group 3: waits for the progression thread
+## Group 3: collecting and gold
+
+Added on 2026-11-11 for the progression work: gold from battles, packs, shards from duplicates and four rarities. "Gold" and "shards" are placeholder names, but the objects work whatever they end up called. These replace the shapes the game draws in code for now. Generate them after group 2.
 
 ### ui-currency.png
 
-1536 x 1024, cut-out, 3 pieces in a row. For the victory payout, where each battle stat turns into currency and coins pour into a purse. The progression thread decides the currency and its name; this brief waits until then, and its coin design should follow whatever they choose.
+1536 x 1024, cut-out, 5 pieces in a row. Gold pays for packs; shards come from breaking down spare cards and craft new ones. The coin also flies into the purse in the battle payout and sits beside every price, down to 18 pixels, so it must read as a coin at that size.
 
 ```text
-1. A single coin of the game's currency, seen straight on, thick and worn; 2. a small loose heap of the same coins; 3. a leather drawstring purse, open at the top, plump with coins.
+1. A single thick gold coin seen straight on, worn and slightly uneven, its face struck with a plain raised ring and a small rayed sun at the centre;
+2. a small loose heap of the same coins;
+3. a leather drawstring purse, open at the top, plump with the same coins;
+4. a single shard: a long, narrow splinter of pale blue crystal with a broken end, faintly glowing from inside;
+5. a small heap of the same shards.
+```
+
+### ui-pack-wrappers.png
+
+1536 x 1024, cut-out, 3 pieces in a row, closed. The three packs you buy. Each carries a blank round wax seal on its front where the game places an alignment emblem. Seen from the front and slightly above, standing upright.
+
+```text
+1. Field pack: a bundle of oilcloth folded like a parcel, tied with rough twine, plain and well travelled, with a round blank wax seal over the knot;
+2. Strongbox: a small wooden strongbox bound with dark iron bands and corner plates, a heavy iron hasp at the front, and a round blank wax seal over the hasp;
+3. War chest: a rich chest of dark red lacquer with gilded corners, gilt bands and small gilt feet, and a large round blank wax seal over its gold clasp.
+```
+
+### ui-pack-open.png
+
+1536 x 1024, cut-out, 3 pieces in a row: the same three packs opened, for the moment the cards come out. Seen from the same angle as ui-pack-wrappers.png, so one can replace the other.
+
+```text
+1. The Field pack with its twine cut and the oilcloth falling open, a warm glow rising from inside;
+2. the Strongbox with its lid thrown back and the hasp hanging loose, warm light spilling up from inside;
+3. the War chest with its lid thrown back, golden light pouring out and a few motes of gold rising.
+No cards are visible inside; the game deals them out.
+```
+
+### ui-rarity-gems.png
+
+1536 x 1024, cut-out, 4 pieces in a row. Shown on every card at about 12 to 16 pixels, and larger in the collection. Each is a small faceted gem in a plain gold bezel, seen straight on, so they must differ by colour and brightness at a glance.
+
+```text
+1. Common: a dull grey-brown stone, polished but plain, in a dark iron bezel;
+2. uncommon: a clear pale silver-white crystal in a silver bezel;
+3. rare: a bright golden topaz in a gold bezel, catching the light;
+4. legendary: a blazing gem shading from fiery orange to deep violet in a rich gold bezel, glowing faintly.
+```
+
+### fx-rare-burst.png and fx-legendary-burst.png
+
+Effect sheets in the frame layout from `EFFECT_SPRITE_BRIEFS.md`: six 512 x 512 frames in two rows of three, read left to right, top row first, on one transparent 1536 x 1024 image. They play behind a card as it turns over in a pack, so the centre of each frame stays clear where the card covers it.
+
+```text
+fx-rare-burst: a ring of warm golden light bursting outward from behind a card-sized space, throwing fine gold sparks, then fading to a few drifting motes.
+fx-legendary-burst: a stronger burst of fire-orange light with deep violet at its edges, long rays reaching to the frame edges, sparks and embers, then a slow fade to a violet glow.
 ```
