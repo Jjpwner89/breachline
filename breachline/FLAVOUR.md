@@ -10,7 +10,7 @@ Lines are tracked here. As of 2026-11-05 every line with a matching card is on t
 | Militia spearman | My mother held this spear at Sallow Bridge. It still pulls left. | |
 | Blessed banner | We have rewoven it eleven times. No thread of the first remains. | |
 | Shield of dawn | The blow landed and I stood. | |
-| Goblin cutter | Smaller than you think. Closer than you think. | |
+| Goblin cutter | The sentry was watching the treeline. | |
 | Orc raider | We leave when there's nothing left to carry. | |
 | Sellsword | Every side owes him. | |
 | Orc warchief | Forty went up the pass with Grusha. Four hundred came down. | |
@@ -51,7 +51,7 @@ The creator reviewed the first drafts and the kept lines are on the cards. Lines
 | Still Flame chaplain | She never asks which ones will come back. |
 | Devoted pilgrim | No answer yet. There is more road. |
 | Roadwarden's shield | Every dent is somebody who walked home. |
-| Sunthread mantle | Left by the door, so she'd have to come back for it. |
+| Sunthread mantle | It has kept three generations warm. (the creator's trim) |
 | Oath-road squire | Her saddlebags first. His own, if there's time. |
 | Sanctuary threshold | The door has never been shut. |
 | Humbling light | Even giants look away. |
@@ -66,19 +66,19 @@ The creator reviewed the first drafts and the kept lines are on the cards. Lines
 | Frostbreak | Everything is brittle at the right temperature. |
 | Prism bracer | Light bends, if you ask it properly. |
 | Conclave courier | The seal is unbroken. She has read it anyway. |
-| Unmake the pattern | Every working has a loose end. |
+| Unmake the pattern | Taking things apart is how we learned to make them. |
 | Tideglass engine | Nobody has found where the water comes back in. |
 | Folded observatory | Some nights it shows more stars than the sky does. |
-| Ledger of debts | Every name is still open. |
+| Ledger of debts | He has yet to write "paid in full." |
 | Siphon vigor | You weren't using all of it. |
 | Collect the tithe | The children are counted too. |
 | Pall of ash | Return to dust. (the creator's rewrite) |
 | Bought allegiance | Everyone has a number. His was lower than he'd hoped. |
 | Barrow mark | Walk on. You'll come back. |
-| Mortuary priest | He is always gentle. They have long days ahead. (not bad, not a favourite; on the card until a better one comes) |
+| Mortuary priest | He closes their eyes for the last time. Usually. |
 | Hostess of the late hour | Stay. The night is young, and so are you. |
 | Gilt-hall temptress | You came to arrest her. Remember? |
-| Halfshade lynx | Only the eyes catch the light. (fine, not the best) |
+| Halfshade lynx | The guards count the cats each night. There is always one too many. |
 | Lots for the gallows | There have never been many white stones. |
 | Court informant | Never invited. Never missed a word. |
 | Mourning veil | She wore it to every funeral, and arranged most of them. |
@@ -87,7 +87,7 @@ The creator reviewed the first drafts and the kept lines are on the cards. Lines
 | Debt Collector's Blade | He took the coat as well. (second draft) |
 | Barrow tender | Smooth at dusk. He checks them at dawn. (second draft) |
 | Kindle the line | Nobody stepped back. (trimmed) |
-| Untaught firecaller | The wagons park further from his tent each night. (kind of good) |
+| Untaught firecaller | He was meant to be the camp cook. |
 | Hurled brand | Catch! (the creator's rewrite) |
 | Clan outrider | Brakka always votes first. |
 | Anoint with embers | It only burns if you're afraid. |
@@ -96,7 +96,7 @@ The creator reviewed the first drafts and the kept lines are on the cards. Lines
 | Mosshorn grazer | They graze the old roads. (trimmed) |
 | Earthspeaker | The ground is talking. (trimmed) |
 | Copper hound | It has never learned to sit. |
-| Waystone golem | Every day to the thirteenth milestone, and back. No one remembers why. |
+| Waystone golem | It still walks to the thirteenth milestone and back. |
 
 ### Second drafts, kept
 
@@ -129,6 +129,10 @@ Drafted on 2026-11-10 for cards whose first line was rejected, after studying ho
 | Alderkin elder | It does not hurry. It has outlived everyone who did. | |
 | Shell-mountain tortoise | The village moved twice last year. Nobody packed. | |
 | Buckling recruit | He has already written the letter home, in case. | |
+
+### Review of all lines, 2026-11-10
+
+A review of every line on cards replaced eight weak ones; the tables above show the new lines. The creator chose to keep Hill giant, Hostess of the late hour and Cinder Clan raiders as they were. Watch for habits across a batch: before this review, nine lines started with Nobody or No one and ten used "never".
 
 ### First drafts that were rejected
 
