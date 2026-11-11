@@ -398,7 +398,8 @@
     var costHtml = isLand ? '' : '<span class="cost" title="' + wantsText + '" aria-label="Costs ' + cost + ', ' + wantsText.toLowerCase() + '">' +
       '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
     var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
-    var type = '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + '</span>';
+    var rar = isLand || c.token ? '' : '<i class="rar ' + Rarity.of(c.id) + '" title="' + Rarity.name(c.id) + '"><span class="sr">, ' + Rarity.name(c.id).toLowerCase() + '</span></i>';
+    var type = '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + rar + '</span>';
     // Every card has the same band under the art, so every card is laid out the same; a unit's Attack and Health sit at its ends.
     var band = c.type === 'unit' ? '<span class="num" title="Attack" aria-label="Attack ' + c.atk + '">' + c.atk + '</span>' + type +
       '<span class="num hp" title="Health" aria-label="Health ' + c.hp + '">' + c.hp + '</span>' : type;
@@ -515,8 +516,39 @@
     var txt = S.winner === 'draw' ? 'A draw' : S.winner === HUMAN ? 'You win' : 'You lose';
     var ended = Campaign.ended(), next = !chapterBattle ? '' : S.winner === 'draw' ? 'Fight it again' : S.winner !== HUMAN ? 'Continue' : ended ? 'Continue' : 'Choose a card';
     var note = chapterBattle && S.winner === 'draw' ? ' Nobody holds the field, so this battle is fought again.' : chapterBattle && S.winner !== HUMAN ? ' Your run ends here.' : '';
-    return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p><span class="btns">' +
-      (chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' })) + '</span></div>';
+    var btns = '<span class="btns">' + (chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + (sandbox ? '' : btn('Open packs', { ui: 'packs' }))) + '</span>';
+    if (sandbox) return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' + btns + '</div>';
+    var pay = payout || reward(), lines = pay.pay.lines.filter(function (l) { return l.length < 3 || l[2]; }), d = 0;
+    var who = { bot: 'the scripted bot', easy: 'Claude, Easy', normal: 'Claude, Normal', hard: 'Claude, Hard' };
+    var rows = lines.map(function (l) {
+      return '<li style="--d:' + (d++) + '"><span>' + l[0] + (l[2] ? ' <small>' + l[2] + '</small>' : '') + '</span><b>+' + l[1] + '</b></li>';
+    }).join('');
+    if ((Progress.VS[pay.vs] || 1) > 1) rows += '<li class="mult" style="--d:' + (d++) + '"><span>Against ' + who[pay.vs] + '</span><b>× ' + Progress.VS[pay.vs] + '</b></li>';
+    if (pay.entry && pay.entry.boost > 1) rows += '<li class="mult" style="--d:' + (d++) + '"><span>A campaign you\'ve already beaten</span><b>× ' + pay.entry.boost + '</b></li>';
+    var result = S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss';
+    return '<div class="plaque summary ' + result + '" style="--n:' + d + '"><p class="seyebrow">Battle summary</p><h2>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</h2>' +
+      '<p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' +
+      '<ol class="stally">' + rows + '</ol>' +
+      '<div class="earned"><span>Gold earned</span><strong data-count="' + pay.pay.total + '">' + pay.pay.total + '</strong></div>' +
+      '<p class="hint">You have ' + Progress.state().gold + ' gold.</p>' + btns + '</div>';
+  }
+
+  // The gold total rolls up once the summary's lines have landed.
+  var lastResult = null;
+  function countUp() {
+    var el = document.querySelector('#result [data-count]');
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var to = +el.dataset.count, wait = 450 + (+el.closest('.summary').style.getPropertyValue('--n') || 0) * 140, t0 = null;
+    el.textContent = '0';
+    setTimeout(function () {
+      (function step(now) {
+        if (!el.isConnected) return;
+        t0 = t0 || now;
+        var k = Math.min(1, (now - t0) / 700);
+        el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(step); else el.classList.add('landed');
+      })(performance.now());
+    }, wait);
   }
 
   function announceTurn() {
@@ -684,7 +716,8 @@
     $('actions').innerHTML = actionsHtml(moves);
     $('hand').innerHTML = S.players[HUMAN].hand.map(function (i) { return cardHtml(i, moves); }).join('') || '<span class="empty">Your hand is empty.</span>';
     fitCards($('hand'));
-    $('result').innerHTML = resultHtml();
+    var rh = resultHtml();
+    if (rh !== lastResult) { lastResult = rh; $('result').innerHTML = rh; countUp(); }
     announceTurn();
     var log = $('log'), recent = S.log.slice(-40);
     log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + esc(l.text) + '</div>'; }).join('');
@@ -748,11 +781,45 @@
       }
     }
   }
+  // What each side did this battle, for the summary. It rides on the state, so a saved campaign battle keeps it.
+  function tally(prev, m) {
+    var t = S.tally = S.tally || [{}, {}], bump = function (side, k, n) { side[k] = (side[k] || 0) + (n === undefined ? 1 : n); };
+    var who = prev.pending ? prev.pending.responder : prev.active;
+    var played = m.card !== undefined && m.type !== 'bottomCard' && prev.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    if (played && !S.players[who].hand.some(function (i) { return i.id === m.card; })) {
+      var type = E.CARDS[played.c].type;
+      bump(t[who], type === 'land' ? 'lands' : type === 'unit' ? 'units' : 'spells');
+    }
+    prev.units.forEach(function (u) { if (!S.units.some(function (x) { return x.uid === u.uid; })) bump(t[1 - u.owner], 'kills'); });
+    [0, 1].forEach(function (pi) { var lost = prev.players[pi].life - S.players[pi].life; if (lost > 0) bump(t[1 - pi], 'damage', lost); });
+  }
+  // A battle pays once, when it ends. The key rides on the state, so reloading a finished battle doesn't pay it again.
+  var payout = null;
+  function reward() {
+    if (sandbox || !S || S.winner === null) return null;
+    var run = chapterBattle ? Campaign.current() : null, story = run ? run.story : null;
+    S.payKey = S.payKey || S.seed + '.' + S.firstPlayer;
+    payout = Progress.battle({
+      key: S.payKey, result: S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss', vs: chapterBattle ? (run ? run.player : 'bot') : oppPlayer,
+      boost: story && Progress.cleared(story) ? 1.5 : 1, story: story, deck: S.players[HUMAN].name, opp: S.players[BOT].name, turns: S.turn,
+      life: S.players[HUMAN].life, tally: (S.tally || [{}, {}])[HUMAN]
+    });
+    payout.vs = chapterBattle ? (run ? run.player : 'bot') : oppPlayer;
+    payout.cleared = !!(story && Progress.cleared(story));
+    return payout;
+  }
   function resolve(m) {
     if (m.type === 'summon' || m.type === 'move' || m.r !== undefined) flash = [m.r, m.c]; else flash = null;
+    var prev = S;
     S = E.applyMove(S, m);
+    if (!sandbox) tally(prev, m);
+    if (S.winner !== null && prev.winner === null) reward();
     if (chapterBattle) {
-      if (S.winner !== null) Campaign.finish(S.winner);
+      if (S.winner !== null) {
+        // Beating the last chapter wins the campaign: its starter and picked cards the first time, gold after that.
+        var done = Campaign.finish(S.winner);
+        if (done && done.status === 'won') done.prize = Progress.campaignWon(done.story, Campaign.STORIES[done.story].starter, done.taken, done.seed);
+      }
       else Campaign.saveBattle(S);
     }
     if (m.type === 'move' && S.units.some(function (u) { return u.uid === m.unit; }) && E.legalMoves(S).some(function (x) { return x.unit === m.unit; })) sel = { kind: 'unit', id: m.unit };
@@ -970,6 +1037,7 @@
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
     if (d.ui === 'campaign') return toCampaign();
+    if (d.ui === 'packs') { toMenu(); return Collection.page('packs'); }
     if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
     if (d.ui === 'ability') sel.ability = true;
@@ -1005,7 +1073,9 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
 
   function deckHtml(d, role) {
-    var problems = E.deckProblems(d.list), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
+    if (d.id === 'random') return '<button type="button" class="deck N random" data-role="opp" data-deck="random" aria-pressed="' + (picks.opp === 'random') + '"><span class="pic"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
+      '<span class="nm">Random deck</span><span class="ty">Any alignment</span><span class="ds">A different starter, theme or saved deck each game.</span></button>';
+    var short = role === 'mine' ? Progress.missing(d.list) : 0, problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
     var art = d.starter ? (noArt[DECK_ART[d.id]] ? null : artSrc(DECK_ART[d.id])) : Screens.coverArt(d.list);
     return '<button type="button" class="deck ' + main + '" data-role="' + role + '" data-deck="' + esc(d.id) + '" aria-pressed="' + on + '"' + (problems.length ? ' disabled' : '') + '>' +
       '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
@@ -1020,7 +1090,7 @@
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
-    $('oppDecks').innerHTML = all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
+    $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
     $('playerNote').textContent = sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
@@ -1031,8 +1101,9 @@
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
-    var newest = Decks.saved().filter(playable)[0];
-    picks = { mine: ready(mine) || ready(last.mine) || (newest ? newest.id : 'white'), opp: ready(last.opp) || 'red' };
+    var yours = function (id) { var d = ready(id) && Decks.find(id); return d && !Progress.missing(d.list) ? id : null; };
+    var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
+    picks = { mine: yours(mine) || yours(last.mine) || (newest ? newest.id : yours(Progress.state().starter) || 'white'), opp: last.opp === 'random' ? 'random' : ready(last.opp) || 'red' };
     Screens.hide();
     $('app').hidden = true;
     $('start').hidden = false;
@@ -1066,6 +1137,10 @@
     if (!run.battle) Campaign.saveBattle(S);
   }
   function forGame(id) {
+    if (id === 'random') {
+      var any = Decks.saved().concat(Decks.starters(), Decks.themes()).filter(playable);
+      id = any[Math.floor(Math.random() * any.length)].id;
+    }
     var d = Decks.find(id);
     return d.starter ? id : { name: d.name, list: d.list };
   }
@@ -1076,6 +1151,8 @@
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
     if (e.target.closest('#begin')) {
+      var mine = Decks.find(picks.mine);
+      if (!mine || Progress.missing(mine.list)) return;
       Decks.setPicks(picks);
       chapterBattle = false;
       sandbox = false;
@@ -1089,7 +1166,7 @@
   function start(state) {
     runToken++;
     stopThinking();
-    plan = null; modelOff = false; lastThought = null;
+    plan = null; modelOff = false; lastThought = null; payout = null; lastResult = null;
     $('chat').textContent = '';
     $('chatBox').hidden = true;
     $('speech').hidden = true;
@@ -1105,7 +1182,7 @@
     $('debugBtn').hidden = !(debugOn && modelOn());
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
     var opening = S.players[HUMAN].hand[0];
-    if (opening) showCard(opening.c, 'In your hand');
+    if (opening && S.winner === null) showCard(opening.c, 'In your hand');
     render();
     schedule();
   }
@@ -1184,6 +1261,7 @@
   }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
+    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return DECK_NOTES[k]; },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
     showStart: showStart, playChapter: playChapter, sandbox: startSandbox,
     modelReady: function () { return !!sample; },

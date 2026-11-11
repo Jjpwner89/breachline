@@ -4,14 +4,29 @@
     {
       "name": "breachline",
       "runtimeExecutable": "/bin/sh",
-      "runtimeArgs": ["-c", "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/5d9a8a8b-6782-4860-b00b-c8ca6d7ca706/scratchpad/site && exec python3 -m http.server 8765 --bind 127.0.0.1"],
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/5d9a8a8b-6782-4860-b00b-c8ca6d7ca706/scratchpad/site && exec python3 -m http.server 8765 --bind 127.0.0.1"
+      ],
       "port": 8765
     },
     {
       "name": "breachline-art",
       "runtimeExecutable": "/bin/sh",
-      "runtimeArgs": ["-c", "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/3b27456e-b4a8-4c1d-8164-c1acab029078/scratchpad/site && exec python3 -m http.server 8766 --bind 127.0.0.1"],
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/3b27456e-b4a8-4c1d-8164-c1acab029078/scratchpad/site && exec python3 -m http.server 8766 --bind 127.0.0.1"
+      ],
       "port": 8766
+    },
+    {
+      "name": "breachline-progress",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-campaign-a100b8/8f7b2aee-dfe4-4e88-935a-526bf35c065a/scratchpad/site && exec python3 -m http.server 8779 --bind 127.0.0.1"
+      ],
+      "port": 8779
     }
   ]
 }
