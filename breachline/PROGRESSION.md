@@ -27,7 +27,7 @@ How players collect cards and move through the game. Nothing here is built yet. 
 
 ## Claude's proposals, not yet confirmed
 
-- **Campaign decks:** each campaign is played with its own starter, lent for the run, so a big collection can't make it easy and the campaign balance holds. Beating the campaign of the starter you already own adds a second copy of its cards.
+- **Campaign decks:** each campaign is played with its own starter, lent for the run, so a big collection can't make it easy and the campaign balance holds.
 - **Card mastery:** playing a card enough times unlocks its alternate art. The unchosen paintings in `archive/` could supply some.
 
 ## Saving progress
