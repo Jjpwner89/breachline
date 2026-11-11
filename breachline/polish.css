@@ -82,6 +82,19 @@
 .tile .shd.g::before { background: radial-gradient(circle at 40% 30%, #4c8a3e, #17300f); }
 .tile .shd.more { width: 20px; font-size: 10px; }
 .app.big .tile .shd { width: 15px; height: 18px; font-size: 10.5px; }
+/* Several labels stack like coins, the first on top and each later one peeking out to its right, so they cover little of the
+   painting. Pointing at the unit fans them out, one after another. */
+.tile .chips.stack .shd { z-index: calc(8 - var(--i, 0)); filter: drop-shadow(1px 0 1px rgba(0, 0, 0, .7)); transition: margin-left .26s cubic-bezier(.3, 1.5, .5, 1) calc(var(--i, 0) * 28ms), transform .26s cubic-bezier(.3, 1.6, .5, 1) calc(var(--i, 0) * 28ms); }
+.tile .chips.stack .shd + .shd { margin-left: -12px; color: transparent; text-shadow: none; }
+.app.big .tile .chips.stack .shd + .shd { margin-left: -11px; }
+.tile:is(:hover, :focus-visible) .chips.stack .shd + .shd { margin-left: 2px; color: #fbe8c4; text-shadow: 0 1px 1px #000, 0 0 3px rgba(0, 0, 0, .8); }
+.tile:is(:hover, :focus-visible) .chips.stack .shd { transform: translateY(-1px) scale(1.12); }
+/* Units show Attack and Health as numbers; the health bar is gone. */
+.tile .st { justify-content: space-between; }
+.tile .bar { display: none; }
+/* A deck's picture keeps its shape whatever the image, so a tall card back can't stretch its row. */
+.deck .pic { position: relative; overflow: hidden; }
+.deck .pic img { position: absolute; inset: 0; }
 .tile.own .tfx, .tile.enemy .tfx { top: auto; bottom: 26px; }
 
 /* End turn: a bronze press. */
@@ -98,7 +111,7 @@
 
 /* The hand: a fan of up to seven cards resting low on the table. A card lifts clear when pointed at. */
 @media (min-width: 821px) and (min-height: 471px) {
-  .app, .app.big { --cw: clamp(124px, calc(27dvh / 1.42), 172px); --tray-h: max(150px, calc(var(--cw) * 1.42 * .74 + 10px)); }
+  .app, .app.big { --cw: clamp(132px, calc(30dvh / 1.42), 192px); --tray-h: max(150px, calc(var(--cw) * 1.42 * .74 + 10px)); }
   .tray { overflow: visible; }
   #hand { gap: 0; padding-top: 10px; align-items: flex-start; }
   #hand .card + .card { margin-left: calc(var(--cw) * -.16); }
@@ -223,6 +236,7 @@ img.coin-i, img.shard-i { width: 22px; height: 22px; object-fit: contain; filter
   .lseal b { font-size: 17px; }
   .press { width: 62px; height: 62px; margin: -8px 0; font-size: 12.5px; }
   .tile .shd { width: 13px; height: 15px; font-size: 9px; padding-bottom: 3px; }
+  .tile .chips.stack .shd + .shd, .app.big .tile .chips.stack .shd + .shd { margin-left: -9px; }
   .tile .chips { top: 16px; }
   .screst { margin-top: -60px; }
   .plaque.summary { padding: 0 22px 18px; }

@@ -2,7 +2,7 @@
 // so the summoner hit can be pitched down and long files trimmed. A muted table stays muted between visits.
 var Sfx = (function () {
   var FILES = {
-    'card-draw': 'card-draw.ogg', 'card-hover': 'card-hover.ogg', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
+    'card-draw': 'card-draw.ogg', 'card-hover': 'button-hover.mp4', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
     'unit-summon': 'unit-summon.ogg', slash: 'attack-slash.mp4', spear: 'attack-spear.ogg', arrow: 'attack-arrow.mp4', crush: 'attack-crush.ogg',
     'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.ogg', 'enemy-turn': 'enemy-turn.ogg',
     'button-press': 'button-press.mp4', 'button-hover': 'button-hover.mp4', 'page-turn': 'page-turn.ogg', 'map-step': 'map-step.ogg',
@@ -10,7 +10,9 @@ var Sfx = (function () {
   };
   // How each is played: volume, pitch (playback rate), and a length in seconds after which it fades out.
   var HOW = {
-    'card-hover': { vol: .35 }, 'button-hover': { vol: .3 }, 'button-press': { vol: .6 }, slash: { len: .7 }, 'summoner-hit': { rate: .88 },
+    // Card sounds sit under the combat: hovering a card is the button hover, softer and a little lower; drawing is pitched down.
+    'card-hover': { vol: .16, rate: .86 }, 'card-draw': { vol: .3, rate: .74 }, 'card-play': { vol: .5 }, 'card-flip': { vol: .5 }, shuffle: { vol: .5 },
+    'button-hover': { vol: .3 }, 'button-press': { vol: .6 }, slash: { len: .7 }, 'summoner-hit': { rate: .88 },
     victory: { len: 1.5, vol: .8 }, 'coin-drop': { vol: .7 }, 'map-step': { vol: .6 }, 'enemy-turn': { vol: .55 }
   };
   var KEY = 'breachline.muted', ctx = null, buffers = {}, loading = {}, last = {};

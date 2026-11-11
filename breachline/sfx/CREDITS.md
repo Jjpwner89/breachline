@@ -5,7 +5,6 @@ Every sound here is CC0 (public domain), from OpenGameArt.org, downloaded on 202
 | File | Pack | Original file |
 |---|---|---|
 | card-draw | Kenney - Interface Sounds | scratch_001.ogg |
-| card-hover | Kenney - Casino Audio | card-slide-4.ogg |
 | card-play | Kenney - Casino Audio | card-place-2.ogg |
 | card-flip | Kenney - Casino Audio | cards-pack-open-2.ogg |
 | shuffle | Kenney - Casino Audio | card-shuffle.ogg |
@@ -18,7 +17,7 @@ Every sound here is CC0 (public domain), from OpenGameArt.org, downloaded on 202
 | summoner-hit | rubberduck - 100 CC0 metal and wood SFX | metal_slam_01.ogg |
 | enemy-turn | rubberduck - 80 CC0 RPG SFX | chain_03.ogg |
 | button-press | Kenney - UI Audio | click1.wav |
-| button-hover | Kenney - UI Audio | rollover2.wav |
+| button-hover | Kenney - UI Audio | rollover2.wav (also card hover, softer and pitched down) |
 | page-turn | Kenney - RPG Audio | bookFlip1.ogg |
 | map-step | Kenney - RPG Audio | footstep05.ogg |
 | seal-stamp | Kenney - RPG Audio | dropLeather.ogg |

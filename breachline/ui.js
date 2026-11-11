@@ -342,18 +342,19 @@
       if (u.devotion) notes.push('Devotion +' + u.devotion);
       if (waiting) states.push('Waiting');
       else if (u.owner === S.active && u.acted) states.push('Done');
-      // Each label is a small enamel shield with its first letter; the tile's title and the close-up note spell them out.
-      // Waiting and Done show in the painting's dimming instead.
-      var all = states.concat(notes), chips = all.filter(function (t) { return t !== 'Waiting' && t !== 'Done'; }).map(function (t) {
-        return '<i class="shd ' + shieldKind(t) + '">' + (/^\+/.test(t) ? '+' : t.charAt(0).toUpperCase()) + '</i>';
+      // Each label is a small enamel shield with its first letter, stacked in a corner and fanned out on hover; the tile's
+      // title and the close-up note spell them out. Waiting and Done show in the painting's dimming instead.
+      var all = states.concat(notes).filter(function (t, k, a) { return a.indexOf(t) === k; });
+      var shown = all.filter(function (t) { return t !== 'Waiting' && t !== 'Done'; });
+      var chips = shown.slice(0, shown.length > 6 ? 5 : 6).map(function (t, k) {
+        return '<i class="shd ' + shieldKind(t) + '" style="--i:' + k + '" data-t="' + t + '">' + (/^\+/.test(t) ? '+' : t.charAt(0).toUpperCase()) + '</i>';
       });
-      if (chips.length > 5) chips = chips.slice(0, 4).concat(['<i class="shd n more">+' + (chips.length - 4) + '</i>']);
-      var atk = E.attackOf(S, u), pct = Math.max(0, Math.round(u.hp / u.maxHp * 100));
+      if (shown.length > 6) chips.push('<i class="shd n more" style="--i:5" data-t="' + shown.slice(5).join(', ') + '">+' + (shown.length - 5) + '</i>');
+      var atk = E.attackOf(S, u);
       inner += (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
         '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
-        (chips.length ? '<span class="chips" title="' + all.join(', ') + '">' + chips.join('') + '</span>' : '') +
+        (chips.length ? '<span class="chips' + (chips.length > 1 ? ' stack' : '') + '" style="--n:' + chips.length + '" title="' + all.join(', ') + '">' + chips.join('') + '</span>' : '') +
         '<span class="st"><span class="badge atk' + (atk > d.atk ? ' up' : atk < d.atk ? ' down' : '') + '">' + atk + '</span>' +
-        '<span class="bar"><i class="' + (pct <= 25 ? 'crit' : pct <= 50 ? 'low' : '') + '" style="width:' + pct + '%"></i></span>' +
         '<span class="badge hp' + (u.hp < u.maxHp ? ' hurt' : '') + '">' + u.hp + '</span></span>';
       label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp + (all.length ? ', ' + all.join(', ') : '');
       attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + (all.length ? '. ' + all.join(', ') : '') + '"';
