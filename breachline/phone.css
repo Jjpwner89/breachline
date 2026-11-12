@@ -108,7 +108,7 @@
   #grid { height: min(calc(100cqh - 30px), calc(var(--bw) * var(--rc, .8) * 1.2)); }
   #youStrip { grid-area: you; align-self: center; padding: 6px 0 6px var(--gl); }
   #phases { grid-area: phases; padding: 0 4px; }
-  .press { grid-area: press; width: 84px; height: 84px; margin: 4px var(--gr) 4px 4px; font-size: 16px; }
+  .press { grid-area: press; width: 68px; height: 68px; margin: 3px var(--gr) 3px 4px; font-size: 13.5px; }
   .btns { grid-area: btns; }
   .prompt { grid-area: btns; }
   #hand { grid-area: hand; padding: 0 20px calc(34px + env(safe-area-inset-bottom, 0px)); }
