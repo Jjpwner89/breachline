@@ -102,8 +102,9 @@
   /* The enemy bar keeps its own row, so the pieces under the board don't set its widths. */
   .topbar { grid-area: top; display: flex; align-items: center; gap: 6px; padding: 8px var(--gr) 8px var(--gl); }
   #themStrip { flex: 1; }
-  .arena { grid-area: arena; padding: 8px 0 6px; overflow: visible; }
-  .board { --bw: calc(100cqw - 34px); padding: 7px; }
+  /* A size container, so the board fits the height left by the browser's bars; on a short screen it narrows before its tiles get flat. */
+  .arena { grid-area: arena; container-type: size; padding: 8px 0 6px; overflow: visible; }
+  .board { --bw: min(calc(100cqw - 34px), calc((100cqh - 30px) / var(--rc, .8) / .95)); padding: 7px; }
   #grid { height: min(calc(100cqh - 30px), calc(var(--bw) * var(--rc, .8) * 1.2)); }
   #youStrip { grid-area: you; align-self: center; padding: 6px 0 6px var(--gl); }
   #phases { grid-area: phases; padding: 0 4px; }
