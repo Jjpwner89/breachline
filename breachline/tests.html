@@ -9,6 +9,8 @@
 <script src="campaign.js"></script>
 <script src="rarity.js"></script>
 <script src="progress.js"></script>
+<script src="decks.js"></script>
+<script src="help.js"></script>
 <script>
 // Open this page to check the Claude opponent's safety rules and campaign runs. No model is called.
 var E = Engine, results = [], DECKS = Object.keys(E.DECKS);
@@ -557,6 +559,21 @@ function randomField(r, ids) {
   check('packs hold 8 different cards of the chosen alignment', sizes && !repeats && green, JSON.stringify(tiers));
   var pay = P.rewardLines({ result: 'win', vs: 'hard', tally: { units: 2, spells: 1, lands: 3, kills: 1, damage: 4 } });
   check('the battle summary adds up to what it pays', pay.total === Math.round((10 + 40 + 2 + 1 + 3 + 2 + 4) * 1.5));
+})();
+
+// Every deck a player can pick has a sentence on its plan, and every alignment, faction and keyword has an explanation.
+(function () {
+  var decks = Object.keys(E.DECKS).map(function (k) { return { id: k }; }).concat(Decks.themes());
+  var missing = decks.filter(function (d) { return !Help.DECKS[d.id]; }).map(function (d) { return d.id; });
+  check('every starter and theme deck has a sentence on its plan', !missing.length, missing.join(', '));
+  check('every alignment has a line on its strengths', ['W', 'U', 'B', 'R', 'G'].every(function (c) { return Help.alignment(c); }));
+  var noLine = E.FACTIONS.filter(function (f) { return !Help.faction(f.id); }).map(function (f) { return f.id; });
+  check('every faction has a line', !noLine.length, noLine.join(', '));
+  var kws = {};
+  Object.keys(E.CARDS).forEach(function (id) { (E.CARDS[id].keywords || []).forEach(function (k) { kws[k] = kws[k] || id; }); });
+  var unexplained = Object.keys(kws).filter(function (k) { return !Help.keyword(k, kws[k]); });
+  check('every keyword on a card has a tip', !unexplained.length, unexplained.join(', '));
+  check('a saved deck shows its alignment', Help.deck({ id: 'mine', list: [['land_g', 10], ['owl', 3]] }) === Help.alignment('G'));
 })();
 
 document.getElementById('out').textContent = results.join('\n');

@@ -24,13 +24,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
-  var DECK_NOTES = {
-    white: 'Healing, protecting allies and standing together.',
-    red: 'High attack, direct damage, speed, giants and fliers.',
-    blue: 'Ranged attacks, moving units, drawing cards and decoys.',
-    black: 'Life drain, destroying units and returning them from the discard pile.',
-    green: 'Very large units, units that grow, extra lands and recovering health.'
-  };
+  // Each deck's one-line plan and each alignment's strengths are in help.js.
   var DECK_ART = { white: 'lancer', red: 'warchief', blue: 'conjurer', black: 'harvester', green: 'land_g' };
   // On wide screens the close-up has its own column, and elsewhere it floats over the map. Same query as the CSS.
   var DOCKED = window.matchMedia('(min-width: 1280px) and (min-aspect-ratio: 3/2)');
@@ -1160,7 +1154,7 @@
       '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="nm">' + esc(d.name) + '</span>' +
       '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + (problems.length ? esc(problems[0]) : d.starter ? DECK_NOTES[d.id] : d.theme ? esc(d.note) : 'One of your decks.') + '</span></button>';
+      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
@@ -1169,6 +1163,8 @@
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
+    var mine = Decks.find(picks.mine), main = mine ? (mine.starter ? E.DECKS[mine.id].colours : E.deckColours(mine.list))[0] || 'N' : null;
+    $('myNote').innerHTML = main ? sym(main) + '<b>' + ALIGNMENT[main] + '.</b> ' + esc(Help.alignment(main)) : '';
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
@@ -1361,7 +1357,7 @@
   }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
-    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return DECK_NOTES[k]; },
+    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return Help.deck({ id: k }); },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
     showStart: showStart, playChapter: playChapter, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },

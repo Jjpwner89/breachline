@@ -26,6 +26,23 @@ Lines are tracked here. As of 2026-11-05 every line with a matching card is on t
 | Mending the sail | I still don't know if it likes me. | |
 | Coalback forager | Count your coals. | |
 
+## Faction lines, awaiting a verdict
+
+Written on 2026-11-12 for the deck builder, where each faction shows one line from inside it. The creator asked for in-world flavour here, not a description of mechanics. Two options each; the game shows the first until the creator picks.
+
+| Faction | Option a | Option b |
+| --- | --- | --- |
+| Sunmane Oath | Every oath here was sworn to someone long dead. Every one is kept. | Stand where the line is thinnest. (Sunmane saying) |
+| Still Flame | She has prayed every dawn for forty years. She heals the sick in between. | We keep the lamp lit, so there is light to answer by. (Still Flame rite) |
+| Lantern Conclave | Every answer we have was once forbidden. (Conclave lecture) | The reading-hall lamps burn all night. So do the arguments. |
+| Artificers | Built to lift stone. Then to lift more. Then to throw it. | Brass doesn't tire, doesn't pray, and doesn't ask what it's for. (Artificers' saying) |
+| Ashen Court | Your debts have been transferred to the Court. So have you. | Every road is safe now. Everyone on it is paying for that. |
+| Gravebound | They carry the bones down. Nothing is carried up. | Let it fall. It has been falling long enough. |
+| Warhorde | The chief is whoever stood up last. (Warhorde custom) | Follow the biggest. When he falls, follow the next. |
+| Cinder Clans | We chose her at the fire. We can unchoose her at the next. (Cinder Clan saying) | No throne. Only a fire, and a vote around it. |
+| Thornwardens | They plant two for every one you cut. Then they find you. | The forest gives one warning. We are it. |
+| Elder Herd | The herd decides where the village is this year. | You don't lead the herd. You go where it goes, and you're grateful. |
+
 ## Saved for a future card
 
 | Card | Line |

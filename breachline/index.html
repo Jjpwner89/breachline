@@ -462,6 +462,7 @@ dialog .btns { justify-content: flex-start; }
 <link rel="stylesheet" href="screens.css">
 <link rel="stylesheet" href="polish.css">
 <link rel="stylesheet" href="tutorial.css">
+<link rel="stylesheet" href="help.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="sym-W" viewBox="0 0 24 24"><image href="art/web/ui/emblem-W.png" width="24" height="24"/></symbol>
@@ -480,7 +481,7 @@ dialog .btns { justify-content: flex-start; }
     <h1>Exhibition</h1>
     <button class="btn" id="startBuilder" type="button">Deck builder</button>
   </div>
-  <div class="picker"><h2>Your deck</h2><div class="decks" id="myDecks"></div></div>
+  <div class="picker"><h2>Your deck</h2><p class="pick-note" id="myNote"></p><div class="decks" id="myDecks"></div></div>
   <div class="picker"><h2>Your opponent</h2><div class="decks small" id="oppDecks"></div></div>
   <div class="picker"><h2>Who plays your opponent</h2><div class="players" id="oppPlayer"></div><p class="player-note" id="playerNote"></p><label class="debug-opt"><input type="checkbox" id="debugToggle"> Debug mode: see what Claude was sent, its explanation of each decision and its plan. It asks Claude for a little more text each turn, and it shows you Claude's hand.</label></div>
   <button class="btn primary big" id="begin" type="button">Begin battle</button>
@@ -516,6 +517,18 @@ dialog .btns { justify-content: flex-start; }
         <li>Only a unit on the enemy back row can hit the summoner.</li>
         <li>Mana you leave unspent pays for instants on the enemy turn.</li>
         <li>Reduce the enemy summoner from 15 to 0.</li>
+      </ul>
+      <h2>The table</h2>
+      <ul>
+        <li>The wax seal and its nails are a summoner's life.</li>
+        <li>Each gem is a land. Bright gems are mana left this turn.</li>
+        <li>A turn has a play step, then a command step.</li>
+        <li>A dimmed unit is waiting to act or has acted.</li>
+        <li>Small shields on a unit are its keywords and conditions.</li>
+        <li>The left plaque is attack, the right is health.</li>
+        <li>The bottom row is your back row, and the top row is the enemy's.</li>
+        <li>The discard pile is shuffled back in when your deck runs out.</li>
+        <li>Turn on Help to point at anything for a short explanation.</li>
       </ul>
     </aside>
     <aside class="drawer debug" id="debugPanel" aria-label="Claude debug">
@@ -579,4 +592,5 @@ dialog .btns { justify-content: flex-start; }
 <script src="sfx.js"></script>
 <script src="polish.js"></script>
 <script src="tutorial.js"></script>
+<script src="help.js"></script>
 <script src="ui.js"></script>

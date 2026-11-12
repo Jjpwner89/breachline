@@ -40,6 +40,7 @@ var Screens = (function () {
     var problems = E.deckProblems(d.list), short = Progress.missing(d.list);
     return problems.length ? problems[0] : short ? 'Missing ' + plural(short, 'card') : plural(E.deckSize(d.list), 'card');
   }
+  function deckNote(d) { return '<p class="dnote">' + esc(Help.deck(d)) + '</p>'; }
   function coverHtml(d) {
     var art = coverArt(d.list);
     return '<span class="cover">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
@@ -239,7 +240,8 @@ var Screens = (function () {
       }).join('');
     show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
       '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p>' +
-      '<p class="hint">You start with ' + esc(E.DECKS[story.starter].name) + '.</p></div>' +
+      '<p class="hint">You start with <b>' + esc(E.DECKS[story.starter].name) + '</b>. ' + esc(Help.deck({ id: story.starter })) + '</p>' +
+      '<p class="hint"><b>' + GameUI.ALIGNMENT[story.colour] + '.</b> ' + esc(Help.alignment(story.colour)) + '</p></div>' +
       '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
@@ -333,18 +335,18 @@ var Screens = (function () {
       var tools = confirmDelete === d.id
         ? '<span class="dask">Delete this deck?</span><button type="button" class="btn danger" ' + act('deleteDeck', d.id) + '>Delete</button><button type="button" class="btn" ' + act('keepDeck') + '>Keep</button>'
         : '<button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
-      return '<div class="dcard"><button type="button" class="dtile" ' + act('edit', d.id) + ' aria-label="Edit ' + esc(d.name) + '">' + coverHtml(d) + '</button><div class="dtools">' + tools + '</div></div>';
+      return '<div class="dcard"><button type="button" class="dtile" ' + act('edit', d.id) + ' aria-label="Edit ' + esc(d.name) + '">' + coverHtml(d) + '</button>' + deckNote(d) + '<div class="dtools">' + tools + '</div></div>';
     }).join('');
     var fixed = function (d) {
-      return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
+      return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div>' + deckNote(d) + '<div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
     };
     var owns = Progress.state().starters, story = function (k) { return Campaign.ORDER.map(function (id) { return Campaign.STORIES[id]; }).filter(function (x) { return x.starter === k; })[0]; };
     var starters = Decks.starters().map(function (d) {
       if (owns.indexOf(d.id) >= 0 || Progress.state().unlocked) return fixed(d);
       var s = story(d.id);
-      return '<div class="dcard locked"><div class="dtile static">' + coverHtml(d) + '</div><p class="hint">' + (s ? 'Beat ' + esc(s.title) + ' to win this deck.' : 'Not yours yet.') + '</p><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
+      return '<div class="dcard locked"><div class="dtile static">' + coverHtml(d) + '</div>' + deckNote(d) + '<p class="hint">' + (s ? 'Beat ' + esc(s.title) + ' to win this deck.' : 'Not yours yet.') + '</p><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
     }).join(''), themes = Decks.themes().map(fixed).join('');
-    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><button type="button" class="btn primary push" ' + act('newDeck') + '>New deck</button></header>' +
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><span class="push">' + Help.button() + '</span><button type="button" class="btn primary" ' + act('newDeck') + '>New deck</button></header>' +
       (Decks.persistent() ? '' : '<p class="warn">This browser is blocking storage, so decks last only until you close this tab.</p>') +
       '<section class="pickset"><h2>Your decks</h2>' + (mine ? '<div class="dtiles">' + mine + '</div>' : '<p class="hint">Nothing saved yet. Start a new deck, or copy a starter below and change it.</p>') + '</section>' +
       '<section class="pickset"><h2>Starter decks</h2><div class="dtiles">' + starters + '</div></section>' +
@@ -384,7 +386,7 @@ var Screens = (function () {
   function editor(deck) {
     ed = { deck: deck, pool: Decks.pool(deck.mode), peek: null, saved: deck.updated > 0, msg: '' };
     if (deck.missing) ed.msg = plural(deck.missing, 'card') + ' in this deck no longer exist' + (deck.missing === 1 ? 's' : '') + ' and were taken out.';
-    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span></header>' +
+    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span>' + Help.button() + '</header>' +
       '<div class="ebody">' +
       '<aside class="closeup" id="closeup" ' + act('closeZoom') + ' aria-label="Card close-up"></aside>' +
       '<section class="cards" aria-label="Cards">' +
@@ -421,7 +423,16 @@ var Screens = (function () {
       '<div class="frow"><span class="flabel">Type</span><div class="chips">' + types + '</div></div>' +
       '<div class="frow"><span class="flabel">Colour</span><div class="chips">' + colours + '</div></div>' +
       '<div class="frow"><span class="flabel">Faction</span><div class="chips">' + factions + '</div></div>' +
-      '<div class="frow"><span class="flabel">Show</span><div class="chips">' + chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned') + '</div></div>';
+      '<div class="frow"><span class="flabel">Show</span><div class="chips">' + chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned') + '</div></div>' +
+      filterNote();
+  }
+  // With one colour or one faction picked, a line under the filters says what it's good at, or a word from inside it.
+  function filterNote() {
+    var on = function (g) { return Object.keys(filters[g]).filter(function (k) { return filters[g][k]; }); };
+    var cs = on('colour'), fs = on('faction').filter(function (k) { return k !== 'none'; });
+    if (fs.length === 1) return '<p class="fnote">' + Help.factionHtml(fs[0]) + '</p>';
+    if (cs.length === 1 && cs[0] !== 'N') return '<p class="fnote"><b>' + GameUI.ALIGNMENT[cs[0]] + '.</b> ' + esc(Help.alignment(cs[0])) + '</p>';
+    return '';
   }
   function activeFilters() {
     return ['type', 'colour', 'faction'].reduce(function (n, g) {
@@ -547,7 +558,7 @@ var Screens = (function () {
     var art = GameUI.artUrl(id) ? ' ' + act('viewArt', id) : '';
     byId('closeup').innerHTML = '<div class="slot' + (art ? ' viewable' : '') + '"' + art + ' title="' + (art ? 'View the full painting' : '') + '">' + GameUI.frameHtml(c, { big: true }) + '</div>' +
       (art ? '<button type="button" class="btn artbtn"' + art + '>View full art</button>' : '') +
-      '<p class="hint">' + (f ? f.name : 'No faction') + '</p>';
+      '<p class="hint">' + (f ? Help.factionHtml(f.id) : 'No faction') + '</p>';
   }
 
   // The full painting, large, over everything. It shows the game's copy at once, then the full-size original if this copy of the game has it.
