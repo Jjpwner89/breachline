@@ -102,7 +102,8 @@ var Screens = (function () {
       (learn ? '' : item('tutorial', 'How to play', 'A tour of the table and a short practice battle.')) +
       item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
       item('online', 'Multiplayer', Net.saved() ? 'Your online match is waiting for you.' : 'Play another person online. Each of you brings a deck.') +
-      '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your Claude account for saved progress…</p>') + '</div></main>', menu);
+      (Accounts.available() ? item('account', Accounts.name() ? 'Account' : 'Sign in', Accounts.name() ? 'Signed in as ' + esc(Accounts.name()) + '. Your progress follows you to other devices.' : 'Keep your progress and decks on every device.') : '') +
+      '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your ' + (Accounts.available() ? '' : 'Claude ') + 'account for saved progress…</p>') + '</div></main>', menu);
     ash(root.querySelector('.home canvas'));
   }
   actions.menu = menu;
@@ -186,6 +187,46 @@ var Screens = (function () {
     online();
   };
   actions.netCancel = function () { Net.forget(); online(); };
+
+  // Accounts, on the copy hosted outside Claude (accounts.js). Signing in or out reloads the page, so progress and decks
+  // start again from the right copy.
+  var acctBusy = false;
+  function account() {
+    var name = Accounts.name(), body;
+    if (name) body = '<section class="pickset acct"><h2>Signed in as ' + esc(name) + '</h2>' +
+      '<p class="hint">Your progress and decks are saved to this account, so they follow you to any device where you sign in.</p>' +
+      '<div class="dtools"><button type="button" class="btn" ' + act('acctLeave') + '>Sign out</button></div>' +
+      '<p class="hint" id="acctMsg" role="status">Signing out takes your progress off this browser. It stays in your account.</p></section>';
+    else body = '<section class="pickset acct"><h2>Sign in</h2>' +
+      '<p class="hint">Keep your progress and decks on every device. An account is just a name and a password, with no email.</p>' +
+      '<div class="acctform"><label><span>Name</span><input id="acctName" type="text" autocomplete="username" autocapitalize="off" spellcheck="false" maxlength="24"></label>' +
+      '<label><span>Password</span><input id="acctPass" type="password" autocomplete="current-password" maxlength="100"></label></div>' +
+      '<div class="dtools"><button type="button" class="btn primary" ' + act('acctEnter') + '>Sign in</button><button type="button" class="btn" ' + act('acctCreate') + '>Create account</button></div>' +
+      '<p class="hint" id="acctMsg" role="status"></p>' +
+      '<p class="hint">There\'s no way to reset a password, so choose one you\'ll remember. If the account already has progress, it replaces what this browser has. A new account keeps it.</p></section>';
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Account</h1></header>' + body + '</div>', account);
+    var pass = byId('acctPass');
+    if (pass) pass.addEventListener('keydown', function (e) { if (e.key === 'Enter') actions.acctEnter(); });
+  }
+  function acctGo(create) {
+    var n = byId('acctName'), p = byId('acctPass'), msg = byId('acctMsg');
+    if (!n || acctBusy) return;
+    acctBusy = true;
+    msg.textContent = create ? 'Creating your account…' : 'Signing in…';
+    Accounts.enter(n.value, p.value, create).then(function () { location.reload(); }, function (e) {
+      acctBusy = false;
+      msg.textContent = Accounts.problem(e.code);
+    });
+  }
+  actions.account = account;
+  actions.acctEnter = function () { acctGo(false); };
+  actions.acctCreate = function () { acctGo(true); };
+  actions.acctLeave = function () {
+    if (acctBusy) return;
+    acctBusy = true;
+    byId('acctMsg').textContent = 'Signing out…';
+    Accounts.leave().then(function () { location.reload(); });
+  };
   actions.netRejoin = function () {
     if (GameUI.inOnline()) { hide(); return GameUI.resume(); }
     var m = Net.resume();
@@ -843,7 +884,7 @@ var Screens = (function () {
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
-  var NAV = { menu: 1, campaign: 1, exhibition: 1, online: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, online: 1, account: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
   var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');

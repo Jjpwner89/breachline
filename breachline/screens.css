@@ -420,3 +420,9 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
   .cfclose { display: block; }
   .ocard { width: calc(25vw - 14px); }
 }
+
+/* The account screen, on the copy hosted outside Claude. */
+.acctform { display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 10px; }
+.acctform label { flex: 1 1 12em; max-width: 18em; min-width: 0; display: flex; flex-direction: column; gap: 3px; font-size: 13px; color: var(--muted); }
+.acctform input { width: 100%; box-sizing: border-box; padding: 7px 10px; font: 17px var(--body); color: var(--ivory); background: var(--felt); border: 1px solid var(--line); border-radius: 6px; }
+.acctform input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }

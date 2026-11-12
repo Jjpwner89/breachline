@@ -247,7 +247,10 @@
 
   // The Claude opponent needs the page to be running inside Claude. Anywhere else, only the scripted bot is on offer.
   var sample = null, plan = null, thinking = null, modelOff = false, lastThought = null;
-  if (window.claude && window.claude.use) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
+  // Inside Claude the page asks Claude itself. A copy hosted elsewhere uses the player's own API key when one is saved.
+  var hosted = !(window.claude && window.claude.use);
+  if (!hosted) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
+  else if (OwnKey.has()) sample = OwnKey.sample;
   function refreshStart() { if (!$('start').hidden) renderStart(); Screens.redraw(); }
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
@@ -1056,7 +1059,10 @@
   function modelFailed(token, code) {
     if (AI.FATAL[code]) {
       modelOff = true;
-      addChat(code === 'rate_limited' ? 'Claude has reached a usage limit, so the scripted bot finishes this game.' : "Claude isn't available here, so the scripted bot finishes this game.", true);
+      addChat(code === 'rate_limited' ? 'Claude has reached a usage limit, so the scripted bot finishes this game.' :
+        code === 'key_rejected' ? 'Anthropic turned down the saved API key, so the scripted bot finishes this game.' :
+        code === 'request_rejected' ? 'Anthropic turned down the request, often because the account is out of credit, so the scripted bot finishes this game.' :
+        "Claude isn't available here, so the scripted bot finishes this game.", true);
     } else addChat(code === 'cancelled' ? 'You stopped waiting, so the scripted bot plays this decision.' : "Claude's answer wasn't usable, so the scripted bot plays this decision.", true);
     if (S.phase !== 'opening' && !S.pending) plan = { turn: S.turn, scripted: true };
     Debug.note('The scripted bot played this decision instead of Claude.');
@@ -1334,7 +1340,36 @@
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
-    $('playerNote').textContent = sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
+    $('playerNote').textContent = hosted ? (sample ? 'Claude opponents use your API key, about a dozen requests a game, and take a little while to think.' : '') :
+      sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
+    $('keyBox').hidden = !hosted;
+    if (hosted) $('keyBox').innerHTML = keyHtml();
+  }
+  function keyHtml() {
+    if (!OwnKey.has()) return '<p class="player-note">To play Claude here, add your own Anthropic API key. It stays in this browser and is sent only to Anthropic. A key made just for this game, with a monthly spend limit set in the Anthropic console, is safest.</p>' +
+      '<div class="keyrow"><input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-..." aria-label="Anthropic API key">' +
+      '<button type="button" class="btn" id="keySave">Use this key</button></div><p class="player-note" id="keyMsg"></p>';
+    var m = OwnKey.model();
+    return '<div class="keyrow"><label>Claude model <select id="keyModel">' + OwnKey.MODELS.map(function (o) {
+      return '<option value="' + o.id + '"' + (o.id === m.id ? ' selected' : '') + '>' + o.label + '</option>';
+    }).join('') + '</select></label><button type="button" class="btn" id="keyForget">Forget key</button></div>' +
+      '<p class="player-note">' + esc(m.note) + ' Spent in this browser so far: about $' + OwnKey.spent().toFixed(2) + '. The Anthropic console has the exact figure.</p>';
+  }
+  function saveKey() {
+    var input = $('apiKey'), k = input && input.value.trim();
+    if (!k) return;
+    $('keySave').disabled = true;
+    $('keyMsg').textContent = 'Checking the key with Anthropic...';
+    OwnKey.check(k).then(function () {
+      OwnKey.save(k);
+      sample = OwnKey.sample;
+      modelOff = false;
+      refreshStart();
+    }, function (e) {
+      input.value = '';
+      $('keySave').disabled = false;
+      $('keyMsg').textContent = e.code === 'key_rejected' ? "Anthropic didn't accept that key." : e.code === 'connection' ? "Couldn't reach Anthropic. Check the connection and try again." : "That didn't work (" + e.code + '). Try again in a moment.';
+    });
   }
   // The start screen is the exhibition setup. A battle in progress waits here until a new one begins.
   function showStart(mine) {
@@ -1394,6 +1429,13 @@
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
+    if (e.target.closest('#keySave')) return saveKey();
+    if (e.target.closest('#keyForget')) {
+      OwnKey.forget();
+      sample = null;
+      if (oppPlayer !== 'bot') oppPlayer = 'bot';
+      return refreshStart();
+    }
     if (e.target.closest('#begin')) {
       var mine = Decks.find(picks.mine);
       if (!mine || Progress.missing(mine.list)) return;
@@ -1405,6 +1447,12 @@
     }
     if (e.target.closest('#startBack')) Polish.lamp(toMenu);
     if (e.target.closest('#startBuilder')) Polish.lamp(function () { $('start').hidden = true; Screens.builder(); });
+  });
+  $('start').addEventListener('change', function (e) {
+    if (e.target.id === 'keyModel') { OwnKey.setModel(e.target.value); renderStart(); }
+  });
+  $('start').addEventListener('keydown', function (e) {
+    if (e.target.id === 'apiKey' && e.key === 'Enter') saveKey();
   });
 
   function start(state, match) {

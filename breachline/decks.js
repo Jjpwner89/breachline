@@ -114,8 +114,9 @@ var Decks = (function () {
     });
   }
   function connect() {
-    var host = typeof window !== 'undefined' && window.claude;
-    if (!host || !host.use) return;
+    // Inside Claude the page's own account holds the copy. On the hosted copy a signed-in account does (accounts.js).
+    var host = typeof window === 'undefined' ? null : window.claude && window.claude.use ? window.claude : typeof Accounts !== 'undefined' ? Accounts.host() : null;
+    if (!host) return;
     Promise.all([host.use('db'), host.use('user')]).then(function (got) {
       if (!got[0] || !got[1]) return null;
       return got[1].id().then(function (id) {

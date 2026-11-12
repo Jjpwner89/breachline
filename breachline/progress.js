@@ -336,8 +336,9 @@ var Progress = (function () {
     changed();
   }
   function connect() {
-    var host = typeof window !== 'undefined' && window.claude;
-    if (!host || !host.use) return becomeReady('local');
+    // Inside Claude the page's own account holds the copy. On the hosted copy a signed-in account does (accounts.js).
+    var host = typeof window === 'undefined' ? null : window.claude && window.claude.use ? window.claude : typeof Accounts !== 'undefined' ? Accounts.host() : null;
+    if (!host) return becomeReady('local');
     status = 'loading';
     var timer = setTimeout(function () { becomeReady('offline'); }, 10000);
     Promise.all([host.use('db'), host.use('user')]).then(function (got) {

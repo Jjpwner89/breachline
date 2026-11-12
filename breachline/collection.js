@@ -11,12 +11,13 @@ var Collection = (function () {
   function shards(n) { return '<span class="money shards">' + SHARD + '<b>' + n + '</b><span class="sr"> shards</span></span>'; }
   function rarityTag(id) { var r = Rarity.of(id); return '<span class="rtag ' + r + '">' + RNAME[r] + '</span>'; }
   function savingNote() {
-    var s = P.status();
-    if (s === 'synced') return 'Saved to your Claude account and in this browser.';
-    if (s === 'loading') return 'Checking your Claude account for saved progress…';
-    if (s === 'offline') return "Saved in this browser. Your Claude account can't be reached right now, so it will catch up later.";
-    if (s === 'full') return "Saved in this browser. Your Claude account's storage for this game is full.";
-    return P.persistent() ? 'Saved in this browser only. Open the game inside Claude to save to your account too, or keep a save file.' : 'This browser is blocking storage, so progress lasts only until you close this tab. Save a file to keep it.';
+    var s = P.status(), acct = Accounts.available() ? 'your account' : 'your Claude account';
+    if (s === 'synced') return 'Saved to ' + acct + ' and in this browser.';
+    if (s === 'loading') return 'Checking ' + acct + ' for saved progress…';
+    if (s === 'offline') return 'Saved in this browser. ' + acct.charAt(0).toUpperCase() + acct.slice(1) + " can't be reached right now, so it will catch up later.";
+    if (s === 'full') return 'Saved in this browser. The storage for this game in ' + acct + ' is full.';
+    if (!P.persistent()) return 'This browser is blocking storage, so progress lasts only until you close this tab. Save a file to keep it.';
+    return Accounts.available() ? 'Saved in this browser only. Sign in from the main menu to keep it on every device, or keep a save file.' : 'Saved in this browser only. Open the game inside Claude to save to your account too, or keep a save file.';
   }
 
   // The free starter, shown once before anything else.
@@ -35,6 +36,7 @@ var Collection = (function () {
     var best = d.list.filter(function (e) { return E.CARDS[e[0]].type !== 'land'; }).sort(function (a, b) { return Rarity.ORDER.indexOf(Rarity.of(b[0])) - Rarity.ORDER.indexOf(Rarity.of(a[0])) || E.CARDS[b[0]].cost - E.CARDS[a[0]].cost; }).slice(0, 3);
     K.show('<div class="page starter"><header class="shead"><h1>Choose your first deck</h1></header>' +
       '<p class="lead">It\'s yours to keep. Win more cards in battles and packs, and beat a campaign to win that campaign\'s deck too.</p>' +
+      (Accounts.available() ? '<p class="hint">Have an account? <button type="button" class="linkbtn" ' + act('account') + '>Sign in</button> to bring your progress here.</p>' : '') +
       '<div class="dtiles">' + tiles + '</div>' +
       '<div class="story spick"><p class="eyebrow">' + symbol(d.colours[0]) + GameUI.ALIGNMENT[d.colours[0]] + '</p><h2>' + esc(d.name) + '</h2>' +
         '<p>' + esc(GameUI.deckNote(pickStarter)) + '</p>' +
