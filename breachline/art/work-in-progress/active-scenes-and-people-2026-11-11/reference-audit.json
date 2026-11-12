@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-11",
+  "scope": "Normal art; original Songweaver and Cloud-silk scenes inspected only for face-identity transfer at creator request.",
+  "creator_direction": [
+    "Keep the improved painted finish and coherent variable detail.",
+    "Add active scenes and both familiar and distinctive people.",
+    "Keep Songweaver and Cloud-silk as shown; avoid an excessive matte correction to reference sheets.",
+    "Still audit references for sheen that could transfer.",
+    "The red-coated action mage is the main current shiny-skin concern."
+  ],
+  "findings": [
+    {
+      "source": "nsfw/countryside-and-city-scenes-2026-11-09/01-a-wager-in-the-meadow.png",
+      "finding": "Strong sunlit skin sheen and small bright highlights. Useful Songweaver identity, unsuitable as a general normal-art surface/light standard.",
+      "action": "Face proportions, hair and identity only; do not transfer sheen, wardrobe or lighting."
+    },
+    {
+      "source": "nsfw/countryside-and-city-scenes-2026-11-09/04-a-trick-above-the-silk-market.png",
+      "finding": "Warm directional cheek/forehead highlights. Useful Cloud-silk identity, not a skin-finish benchmark.",
+      "action": "Face identity only. Keep new Cloud-silk sheet face unchanged."
+    },
+    {
+      "source": "reference-library-2026-11-06/people/08-humans-additional-faces.png",
+      "finding": "Small high-value cheek/nose strokes can read as shine when intensified; most are discrete painted planes. No blanket destructive edit justified.",
+      "action": "Retain sheet; use for anatomy, face diversity and layout. Do not amplify its skin highlight contrast."
+    },
+    {
+      "source": "reference-library-2026-11-06/people/01-humans.png",
+      "finding": "Diffuse overall lighting with limited bright planar strokes; suitable anatomy reference, not a reason to add specular skin.",
+      "action": "Retain unchanged."
+    },
+    {
+      "source": "work-in-progress/alignment-character-studies-2026-11-11/04-before-the-thunder-breaks.png",
+      "finding": "This was the sole attached source for the red-coated active scene. New human sheets were not attached. Surface drift intensified in the action image; cannot attribute it causally to the new sheets.",
+      "action": "Use for identity and clothing, not shiny skin. Make a restrained local skin-light correction in the action painting."
+    },
+    {
+      "source": "Current H1–H3 sheets",
+      "finding": "Creator clarified they were not the main problem and asked to keep Weaver and Silk as shown.",
+      "action": "Preserve all three originals. In-progress whole-sheet matte passes were terminated and are not promoted."
+    }
+  ],
+  "future_generation_rule": "Declare face/species identity and surface/lighting roles separately. Use broad diffuse skin lights with restrained contrast; preserve small eye lights and material-specific metal reflections. Do not fix sheen with blur, flat faces, chalky scratches or extra wrinkle detail.",
+  "promotion_rule": "All ten new sheets remain provisional. After explicit creator selection, promote only selected sheets/individuals into the normal reference library, link exact files and permitted roles in art direction and manifest, retain rejected or unselected tests outside active references. New species require separate lore confirmation; visual selection alone does not assign culture, alignment or origin."
+}

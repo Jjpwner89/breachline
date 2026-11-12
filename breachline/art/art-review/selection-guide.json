@@ -1,0 +1,4352 @@
+{
+  "updatedAt": "2026-11-11T05:45:10.907755+00:00",
+  "revision": 182,
+  "instructions": "Consult this file with the art-direction skill before selecting references. Honor excluded=true. References with requiresCreatorConfirmation=true are proposals, not active generation references; favorites or comparison rank do not approve them. Positive votes and favorites guide selection; rankings alone never approve a reference. Alignment overrides are reference-selection labels, not lore changes. Unassigned sheets can serve multiple alignments. Existing source art and historical approvals are unchanged.",
+  "references": [
+    {
+      "id": "0aef6595afb757746e58",
+      "title": "Humans — neutral body and face studies",
+      "path": "reference-library-2026-11-06/people/01-humans.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "af29b666e4aa932b89ae",
+      "title": "Humans — additional faces, including glamour options",
+      "path": "reference-library-2026-11-06/people/08-humans-additional-faces.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "e8aabfae6518b6d8bf0c",
+      "title": "Sunmane lancer",
+      "path": "sunmane-lancer.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "855eaa73299d6e3678e7",
+      "title": "Court Informant",
+      "path": "court-informant.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "287539f58b99f1da110f",
+      "title": "Lion folk — neutral body and face studies",
+      "path": "reference-library-2026-11-06/people/02-lion-folk.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2d90c807c2f7384ce44c",
+      "title": "Bone harvester",
+      "path": "bone-harvester.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "447c58bfa4338b91f682",
+      "title": "Goblins — neutral body and face studies",
+      "path": "reference-library-2026-11-06/people/03-goblins.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "712bd81e494c8feb6454",
+      "title": "Orcs — rough nonhuman body and face studies",
+      "path": "reference-library-2026-11-06/people/04-orcs.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "122f498104ec9bb91fe4",
+      "title": "Underbridge vaporwright",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A vivid urban alchemist brings direct magic into a rough working environment."
+    },
+    {
+      "id": "62c093fdcb341602631e",
+      "title": "Cinderfall",
+      "path": "cinderfall.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "0fd3dd3bc36db7001152",
+      "title": "Alderkin — neutral anatomy and head variation",
+      "path": "reference-library-2026-11-06/people/06-alderkin.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "91d8565b99851fd75f05",
+      "title": "Still Flame censer-healer",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/06-still-flame-censer-healer.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "5f989dc74116954ef450",
+      "title": "Still Flame chaplain",
+      "path": "still-flame-chaplain.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "fe431f44dd70cf83a65b",
+      "title": "Harmonic wardwright",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "611f531ab8e67adf8c7a",
+      "title": "Rime drake",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/02-rime-drake.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "404f5ed0a679aa51ed56",
+      "title": "The Price of Morning",
+      "path": "world-concepts-2026-11-08/01-the-price-of-morning.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "353f725c4fb0fed77ada",
+      "title": "A Coalback’s First Frost",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3ea135f77ea0023914f3",
+      "title": "Ashwing keeper",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/01-ashwing-keeper.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Quiet necromancy through an animated bird familiar, with the means of animation left unseen."
+    },
+    {
+      "id": "ce79c5853ecb44aa0642",
+      "title": "Cinder-cant drummer",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "7d9f3fdf06aec6353ecc",
+      "title": "Dominion belongings across different roles",
+      "path": "reference-library-2026-11-06/equipment/17-dominion-personal-kits.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "7bcaf790a44b60bfed53",
+      "title": "Gnosis — Lantern Conclave / Artificers",
+      "path": "reference-library-2026-11-06/equipment/10-gnosis-equipment.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "a2418037ce18cc371228",
+      "title": "Last Light in the Barracks",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/05-last-light-in-the-barracks.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "10846b916e9732cb63b5",
+      "title": "Rite of stillness",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/04-rite-of-stillness.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A shared sacred rite offers a quiet response to the restless dead."
+    },
+    {
+      "id": "4f7564b07b8f11e9ebc0",
+      "title": "Vigil — Sunmane Oath / Still Flame",
+      "path": "reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "99760e3557a5fe9a514e",
+      "title": "Brazen gatebeast",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/06-brazen-gatebeast.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A large bronze guardian explores the presence and anatomy of a nonhuman construct."
+    },
+    {
+      "id": "f5ac545a56ff65c11124",
+      "title": "Giants — neutral body and face studies",
+      "path": "reference-library-2026-11-06/people/05-giants.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "ee83028c90b3559a77a5",
+      "title": "Gnosis foot soldier",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/05-gnosis-foot-soldier.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "87c1059b1ee7b4441ae8",
+      "title": "Human",
+      "path": "/Users/dpuser/Downloads/human.jpeg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "0be7833333a25819645e",
+      "title": "Oath-road veteran",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/01-oath-road-veteran.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "6741bd1e039c4b245565",
+      "title": "Raider and berserker belongings",
+      "path": "reference-library-2026-11-06/equipment/14-raiders-and-berserker.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2cea9450dadb2a9c458b",
+      "title": "Stoneward colossus",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/06-stoneward-colossus.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "abbd91564c29224a34ba",
+      "title": "Stormhook channeler",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/08-stormhook-channeler.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "d9d6d3fb22b5ac1fc7b2",
+      "title": "The Still Flame",
+      "path": "concepts/the-still-flame.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "cf9a099f6bc3afabc9f4",
+      "title": "Veil adept",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "835c56a902afbe55c1f0",
+      "title": "10 Cobalt Duelist",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/10-cobalt-duelist.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3332ac6756b6605b4796",
+      "title": "Ashen Court Bailiff",
+      "path": "ashen-court-bailiff.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "77114559ef2afb9c4324",
+      "title": "Bronze-harness alderkin",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/07-bronze-harness-alderkin.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "30b8c16006ca2c23c21f",
+      "title": "Cinderwake",
+      "path": "cinderwake.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "d612242914b7ba194356",
+      "title": "Clan Outrider",
+      "path": "clan-outrider.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "e9617e759008b74513c5",
+      "title": "Coalback Forager",
+      "path": "concepts/coalback-forager.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "0ccbebe39667506107fc",
+      "title": "Conclave field scholar",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/03-conclave-field-scholar.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "67338133487f4a6f1fbe",
+      "title": "Cultist",
+      "path": "/Users/dpuser/Downloads/cultist.jpeg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "1267a7cc0a0253c0eea9",
+      "title": "Dock tally-keeper",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A more abstract made being with open structure and a magical core, rather than an armored human knight."
+    },
+    {
+      "id": "56fa4476dea9ced114c2",
+      "title": "Goblin cutter",
+      "path": "goblin-cutter.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "7c6ead4ab1a7eefe6756",
+      "title": "Houses Above the Ferns",
+      "path": "world-concepts-2026-11-08-set-02/01-houses-above-the-ferns-brushwork-v2.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "8fa4fb41aa2f7a179d3d",
+      "title": "Human 2",
+      "path": "/Users/dpuser/Downloads/human 2.jpeg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "9740318d69920856a782",
+      "title": "Human 3",
+      "path": "/Users/dpuser/Downloads/human 3.jpeg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "05023cf3b53fd644539b",
+      "title": "Mercenary captain",
+      "path": "mercenary-captain.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "9d18e497e3c17ce7c509",
+      "title": "Quarry singer",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/05-quarry-singer.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A goblin specialist uses voice and resonance to help ordinary quarry workers split stone."
+    },
+    {
+      "id": "94a14de7f85cbe6c5724",
+      "title": "Sellsword",
+      "path": "sellsword.png",
+      "alignment": "Neutral",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "c02b3da8af0d90bd7c66",
+      "title": "Serra",
+      "path": "/Users/dpuser/Downloads/serra.webp",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "561012a1043db91c15f1",
+      "title": "Spellwright's field loom",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/02-spellwright-field-loom.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b0c6bb5f0d8ec8268afa",
+      "title": "Storm-touched bull",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/02-storm-touched-bull.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A creature carries a modest storm charge as part of its presence and behavior."
+    },
+    {
+      "id": "3ebdc3ab9c9097c50f2e",
+      "title": "Unmake the Pattern",
+      "path": "unmake-the-pattern.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "07f05b62194491de31e7",
+      "title": "Voices in the Commons",
+      "path": "world-concepts-2026-11-08-set-02/02-voices-in-the-commons-brushwork-v2.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b15dff8beac4814ef278",
+      "title": "02 The Glasswind Rider",
+      "path": "work-in-progress/world-edges-round-10-2026-11-10/02-the-glasswind-rider.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3c5131f84da2d06cd4fb",
+      "title": "04 Dawnward Cavalier",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/04-dawnward-cavalier.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "22e7d240ae85acda87fe",
+      "title": "05 Starwell Scholar",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/05-starwell-scholar.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2b19eb2fbe9ca08a9f15",
+      "title": "06 Crownroot Hart",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/06-crownroot-hart.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "297040ae0f6793f24b9c",
+      "title": "07 The Velvet Stair",
+      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b9d48fcef4e907da2422",
+      "title": "09 Foundry Strider",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/09-foundry-strider.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2dc08a8274e21fa79263",
+      "title": "12 Spellglass Sentinel",
+      "path": "work-in-progress/design-directions-round-06-2026-11-08/12-spellglass-sentinel.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "93629fbd9abd30f244cb",
+      "title": "A Room in the Boughs",
+      "path": "world-concepts-2026-11-08-set-02/03-a-room-in-the-boughs-brushwork-v2.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "434c72d64f086950edfa",
+      "title": "A door into snow",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/22-a-door-into-snow.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Keep the actual portal and elegant gown you liked, while grounding the color and setting. This explores appearance, not travel rules."
+    },
+    {
+      "id": "8c49e78220feb66989ff",
+      "title": "A town on the old road",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/09-town-on-the-old-road-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Keep the town but use quieter distant forms and coherent brush scale; remove the wet, waxy treatment."
+    },
+    {
+      "id": "696ad3e8cc7ae51ba782",
+      "title": "A town on the old road",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/09-town-on-the-old-road.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A prosperous but ordinary regional town between village and metropolis, reusing older stonework without living entirely in ruins."
+    },
+    {
+      "id": "0e89f52af06c89ce3125",
+      "title": "Ambrel — preserved city direction",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Preserved the liked city backdrop as an exploratory scale reference for Ambrel."
+    },
+    {
+      "id": "6a9fd599d0a2386dd7f5",
+      "title": "Ash-white lanner",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/21-ash-white-lanner.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A more adventurous edge: short-range travel imagined around a living flying creature, with the animal and its relationship to the rider carrying the image."
+    },
+    {
+      "id": "8983f9d3c05a6edc2f3c",
+      "title": "Ashen Court noble",
+      "path": "ashen-court-noble.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "65eae46d426d71111bcf",
+      "title": "Banked flame blade",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/03-banked-flame-blade.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "5a946b691f5406433039",
+      "title": "Before the Thunder Breaks",
+      "path": "work-in-progress/alignment-character-studies-2026-11-11/04-before-the-thunder-breaks.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Unrestrained magical confidence, with wind and weather carrying the energy."
+    },
+    {
+      "id": "75e612dfe70e5ed61bbf",
+      "title": "Black enamel field kit",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Revisit the black equipment you liked as one officer’s choice, with fewer layers and no claim that all Dominion wears it."
+    },
+    {
+      "id": "bf5677d67e61100aba7b",
+      "title": "Brightlance",
+      "path": "brightlance.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "915aefad73865b885d28",
+      "title": "Bronze-harness alderkin",
+      "path": "bronze-harness-alderkin.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "425ec65683b279faeb70",
+      "title": "Cinder Clan raiders",
+      "path": "cinder-clan-raiders.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "8b01bad8ddf417f0d637",
+      "title": "Cinder berserker",
+      "path": "cinder-berserker.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "d3d1c4c257c54299f708",
+      "title": "Cinder roadside supper",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Fervor outside battle: an informal human band, shared food, and casually useful fire magic. Warmth without an organized red army."
+    },
+    {
+      "id": "9da628d2389007b30124",
+      "title": "Cobalt rapier — preserved equipment",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Isolated the liked sword from the rejected character design."
+    },
+    {
+      "id": "6759ac82dec558121e92",
+      "title": "Construct",
+      "path": "/Users/dpuser/Downloads/construct.jpeg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "93413fb239531a4898c3",
+      "title": "Corewright’s bench",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "An intimate study of magic-powered craft: an amber core and worked metal, useful and beautiful without becoming a universal power system."
+    },
+    {
+      "id": "29bb325051bbc168cb3d",
+      "title": "Dock tally-keeper",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/07-dock-tally-keeper.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A working construct at human scale, with a clearly crafted metal head and a quiet occupational identity."
+    },
+    {
+      "id": "1e0edb6bebf690234824",
+      "title": "Elder Herd Bull",
+      "path": "web/elder-herd-bull.jpg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "8fa9d8a3ec3a0e9592fa",
+      "title": "Ember Drake",
+      "path": "web/ember-drake.jpg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "84707371f86e8d205155",
+      "title": "Ember drake",
+      "path": "ember-drake.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "19a007e59d254a0b4969",
+      "title": "Ember salamander",
+      "path": "ember-salamander.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "d983eebdb902dbd4cc67",
+      "title": "Enchanter's quench",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/05-enchanters-quench.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "32aedf686de19ee54f09",
+      "title": "Frost",
+      "path": "frost.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "e262a62a87b82f260484",
+      "title": "Frost Revision 3",
+      "path": "work-in-progress/set6-review-2026-11-09/frost-revision-3.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3df7aff64ef2adb66ccf",
+      "title": "Grave soil",
+      "path": "grave-soil.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "498a5f33f10e76a9ea92",
+      "title": "Green",
+      "path": "/Users/dpuser/Downloads/green.jpg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "720f26941d41fcce2e65",
+      "title": "Harbor watch officer",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/04-harbor-watch-officer.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A restrained test of Asian-influenced materials and silhouette, with an ordinary blade instead of the water weapon you disliked."
+    },
+    {
+      "id": "60abffe4498737f9574a",
+      "title": "High-road giant",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/17-high-road-giant-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Preserve the female traveler and scale; repaint her face and materials with restrained, natural light."
+    },
+    {
+      "id": "fc02ddf8bcd80f6c5404",
+      "title": "High-road giant",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/17-high-road-giant.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A giant traveler whose scale changes ordinary clothing and roadside space, without making every scene a monster encounter."
+    },
+    {
+      "id": "6d612dece25c816f76c0",
+      "title": "Lockyard tug",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A small steam tug tests heavier practical technology on ordinary waterways."
+    },
+    {
+      "id": "21e21d57530eaf9d0900",
+      "title": "Militia spearman",
+      "path": "militia-spearman.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "a42dfcff2344076c2a93",
+      "title": "Mothwake mourner",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/23-mothwake-mourner.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A stranger magic direction carried by an elegant, unsettling person and living forms. Its meaning stays open rather than becoming another device."
+    },
+    {
+      "id": "ed5296a7318e36c1deae",
+      "title": "Orc saddle-raider",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/02-orc-saddle-raider.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "8b4844b00780c7998bb7",
+      "title": "Orc warchief",
+      "path": "orc-warchief.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "e2d36a8192683994cce5",
+      "title": "Pass-road guard",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/03-pass-road-guard.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A female orc whose equipment is practical and personal. Strong nonhuman anatomy and restrained protection carry the design."
+    },
+    {
+      "id": "42bda9f57f438d500050",
+      "title": "Porcelain-visored retainer",
+      "path": "porcelain-visored-retainer.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "a53da3506b188929d320",
+      "title": "Porcelain-visored retainer",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "5a8eda4164ba40172e64",
+      "title": "Pride cub",
+      "path": "pride-cub.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "85089814c585e2bb7b62",
+      "title": "Rain gathering",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/04-rain-gathering.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "5453b7b3b547be5e259d",
+      "title": "Redglass Falchion",
+      "path": "redglass-falchion.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "a080cd4f9fc8dec18a40",
+      "title": "Ridge wolves",
+      "path": "ridge-wolves.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "ebc1d8c5905c384e3ea6",
+      "title": "Roadwarden’s harness",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/14-roadwardens-harness.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A clean Vigil equipment direction built from good steel, cloth and useful proportions, with one small imbued object."
+    },
+    {
+      "id": "ba591698943b5800461f",
+      "title": "Shutter Window Assassin Before Removal",
+      "path": "work-in-progress/set8-review-2026-11-10/assassin-hand-removal/shutter-window-assassin-before-removal.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "35747d006c6f74287104",
+      "title": "Solemn Simulacrum Mtg 733X1024",
+      "path": "/Users/dpuser/Downloads/Solemn-Simulacrum_MTG-733x1024.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b33a7a0fa2596ec2ffd0",
+      "title": "Spellglass sentinel — metal and crafted head",
+      "path": "work-in-progress/round-06-revisions-2026-11-09/12-spellglass-sentinel-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Kept the blue magical core while making the head and armor feel like worked metal."
+    },
+    {
+      "id": "60fdecc01ecb22d8beff",
+      "title": "Spindlejack Mending the Sail",
+      "path": "concepts/spindlejack-mending-the-sail.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "78a0854d71df5f8d23cc",
+      "title": "Stormbreak raider",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/15-stormbreak-raider.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Fervor magic carried directly by a person: pressure, static and storm, with a personal silhouette rather than an issued uniform."
+    },
+    {
+      "id": "820dcb46d898f947b29a",
+      "title": "The Arena Grown Quiet",
+      "path": "world-concepts-2026-11-08-set-02/07-the-arena-grown-quiet.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "993640b617240c1cf0f6",
+      "title": "The Cinderline Veteran",
+      "path": "cinderline-veteran.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "755c5251dd38f79cf9bd",
+      "title": "The Last Watchfire",
+      "path": "work-in-progress/alignment-character-studies-2026-11-11/05-the-last-watchfire.png",
+      "alignment": "Vigil",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Weathered conviction and restrained warmth rather than polished heroic posing."
+    },
+    {
+      "id": "500572629439af22db71",
+      "title": "The Road That Outlasted Kings",
+      "path": "world-concepts-2026-11-08/08-the-road-that-outlasted-kings.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3fa6a4b73a8dac90ebda",
+      "title": "The Stone Opens",
+      "path": "the-stone-opens.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b22eb661b59a63ffe05e",
+      "title": "The alderkin’s wager",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/16-the-alderkins-wager-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Keep the loved alderkin and scene; remove the woman's waxy skin and exaggerated cheek redness."
+    },
+    {
+      "id": "caf7470f374dbed61ed8",
+      "title": "The alderkin’s wager",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/16-the-alderkins-wager.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "An alderkin with interests beyond helping humans or tending plants: a social encounter with a little humor and independent character."
+    },
+    {
+      "id": "e2dd222620265147a97a",
+      "title": "The cedar threshold",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Genesis as a place where people live: kitchens, stairs and homes among trees, rather than only sacred groves and wild beasts."
+    },
+    {
+      "id": "0d675dbe905b1a44f3c6",
+      "title": "The evening lesson",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/13-the-evening-lesson.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Scholarly magic with a living teacher at its center. The students are learning a phenomenon, not operating a magical machine."
+    },
+    {
+      "id": "cb4075ec9b2398e51c3c",
+      "title": "The levy hall",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/10-the-levy-hall-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Use specific ordinary reference faces for the official and petitioners while preserving the oppressive class relationship."
+    },
+    {
+      "id": "28bb4bc4df5c81c16852",
+      "title": "The levy hall",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/10-the-levy-hall.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Dominion’s power expressed through class and architecture: comfortable officials and people who cannot afford the demands placed on them."
+    },
+    {
+      "id": "824f8a830a517fe54fd2",
+      "title": "The unfinished bridge",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A middle-scale meeting of craft and magic: ordinary engineering remains visible, while a specialist can make a difficult step possible."
+    },
+    {
+      "id": "5e316be18e13cbab617c",
+      "title": "The unwarmed guest",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/12-the-unwarmed-guest.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A quieter spirit idea: absence and a small physical impossibility, rather than repeating the same visible ghost silhouette."
+    },
+    {
+      "id": "07e00b3df956c5871934",
+      "title": "Thornbrake",
+      "path": "thornbrake.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2f5f4c9a054dad99abab",
+      "title": "Thornwarden Pathguard",
+      "path": "thornwarden-pathguard.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "d5702a741941888d9aa0",
+      "title": "Thornwarden goblin scout",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/04-thornwarden-goblin-scout.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "24ec3ac8a6f4794581d9",
+      "title": "Thornwarden saboteur",
+      "path": "thornwarden-saboteur.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "c8f2acd03f9cb7688cdf",
+      "title": "Walking Sapling",
+      "path": "web/walking-sapling.jpg",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "0acc9618825914794424",
+      "title": "Walking sapling",
+      "path": "walking-sapling.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "2d98c67fdc0b4dd10f2e",
+      "title": "Wayfinder druid",
+      "path": "wayfinder-druid.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "23cc8090d6ea83f27d0b",
+      "title": "Wayside healer",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/02-wayside-healer-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Keep the care and composition; cast the main faces from H03 and H01 and repaint skin, cloth and distance without waxy shine."
+    },
+    {
+      "id": "372d4834b97dbf7dd1f0",
+      "title": "Wayside healer",
+      "path": "work-in-progress/middle-setting-round-07-2026-11-09/02-wayside-healer.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Vigil-adjacent healing as a quiet human practice. The magic is modest warmth and recovery, without threads or a special apparatus."
+    },
+    {
+      "id": "1dee5d3fe26a804ee2fa",
+      "title": "Willow at the Waterline",
+      "path": "work-in-progress/alignment-character-studies-2026-11-11/02-willow-at-the-waterline.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Unreviewed",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "An independent, uncanny tree person with graceful weight and broad, readable bark forms."
+    },
+    {
+      "id": "dfe38fe457e753a3ff90",
+      "title": "Woodland travel and field gear",
+      "path": "reference-library-2026-11-06/equipment/16-woodland-travel-and-field-gear.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "1e6c5b408b4ff1a8dedd",
+      "title": "A door into snow",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/22-a-door-into-snow-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Make the portal read clearly by showing a warm, green location through the ordinary left window."
+    },
+    {
+      "id": "7939e973577766a070c7",
+      "title": "Ambrel stair market",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/08-ambrel-stair-market.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "The middle of a great city: a neighborhood people actually inhabit, with larger Ambrel glimpsed beyond it."
+    },
+    {
+      "id": "90228b8a6b7e0bce04a1",
+      "title": "Ash-white lanner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Keep the liked drake anatomy and rider; add dinosaur-like feathering without turning it into an ordinary bird."
+    },
+    {
+      "id": "222cbab15e38d9898670",
+      "title": "Ashwing at the Window",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/01-ashwing-at-the-window.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "681cc26e28fe6f8d51c5",
+      "title": "Boilerhouse thaumaturge",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/07-boilerhouse-thaumaturge.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A scholarly worker supplies heat to a substantial working boiler."
+    },
+    {
+      "id": "9eed716bf6aa286fff3b",
+      "title": "C1 · Creature test · Ravenfolk",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/07-ravenfolk-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A familiar bird-human hybrid: alert corvid faces and usable hands; no faction assigned."
+    },
+    {
+      "id": "c2fa88770dd46d2dfa30",
+      "title": "C2 · Creature test · Badgerfolk",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/08-badgerfolk-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A grounded mammal hybrid with sturdy adult proportions and ordinary expressions."
+    },
+    {
+      "id": "8e6f46a6a8272375f874",
+      "title": "C3 · Creature test · Mothfolk",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/09-mothfolk-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "An intelligent insect people with nonhuman anatomy; readable variation without ornamental clutter."
+    },
+    {
+      "id": "edfe1635b783e0e47f0c",
+      "title": "C4 · Creature test · Mineral tripod",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/10-mineral-tripod-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A distinctly nonhuman intelligent form: three-legged mineral anatomy, without assumed origin or construct lore."
+    },
+    {
+      "id": "a01061177dd0f7c1efc6",
+      "title": "C5 · Creature test · Dwarves",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A familiar fantasy option with ordinary adult faces and credible compact proportions."
+    },
+    {
+      "id": "f327fd71ebc20e8b31e9",
+      "title": "C6 · Creature test · Riverfolk",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A familiar amphibious people, with subtle aquatic anatomy and varied faces."
+    },
+    {
+      "id": "8f8dc122f44c5c0af428",
+      "title": "C7 · Creature test · Rhinoceros folk",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/13-rhinoceros-folk-exploration.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "A substantial, readable animal-human hybrid with varied rhino faces and quiet personality."
+    },
+    {
+      "id": "0c784db35b77337d4a47",
+      "title": "Cinder roadside supper",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Retain the social scene and casual fire magic; correct waxy materials, model faces and noisy background marks."
+    },
+    {
+      "id": "9114e63e474e5ff5549c",
+      "title": "Clayplate giant",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/08-clayplate-giant.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "5c3ee76de1ee50a2ac11",
+      "title": "Cobalt rapier — equipment card",
+      "path": "cobalt-rapier.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "The accepted sword becomes an Equipment card subject. Its brass guard, cobalt stone and restrained blue edge remain the design; the painting presents the object as desirable in its own right."
+    },
+    {
+      "id": "736bed4d738516a15810",
+      "title": "Copper Street Locksmith",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/02-copper-street-locksmith.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "83785837aebb92001142",
+      "title": "Copperlane torch-runner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Replace the rejected courier with a reckless male goblin carrying an unruly torch; a visual study, not restoration of the cut card rules."
+    },
+    {
+      "id": "879a8544848b1a122fd3",
+      "title": "Dominion — Ashen Court / Gravebound",
+      "path": "reference-library-2026-11-06/equipment/11-dominion-equipment.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "ec0bd9ef332328db5652",
+      "title": "Engine at Rest",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/03-engine-at-rest.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "202366be2a13357b0ec1",
+      "title": "Fervor — Warhorde / Cinder Clans",
+      "path": "reference-library-2026-11-06/equipment/12-fervor-equipment.png",
+      "alignment": "Fervor",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b9a4d46e7d2566898d55",
+      "title": "Genesis — Thornwardens / Elder Herd",
+      "path": "reference-library-2026-11-06/equipment/13-genesis-equipment.png",
+      "alignment": "Genesis",
+      "vote": 0,
+      "excluded": true,
+      "available": false,
+      "note": "",
+      "historicalStatus": "Excluded",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "3693c34b8a4267782efe",
+      "title": "Graveside listener",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/01-graveside-listener.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A quiet conversation with an uncertain shade builds on the loved necromancy and communal rites."
+    },
+    {
+      "id": "0db98d51866363a9d9be",
+      "title": "H1 · Human faces A · Songweaver and new people",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "Songweaver's original identity in the ordinary face-sheet finish, plus seven varied adult faces."
+    },
+    {
+      "id": "424027016a07d9ae2e78",
+      "title": "H2 · Human faces B · Cloud-silk and new people",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "Cloud-silk's original identity in the ordinary face-sheet finish, plus seven additional adult faces."
+    },
+    {
+      "id": "d6c70ed4e1d3fa1e3aba",
+      "title": "H3 · Human faces C · White men",
+      "path": "work-in-progress/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Pending review",
+      "requiresCreatorConfirmation": true,
+      "referenceRole": "Eight white adult men with clearly different ages, face shapes and expressions."
+    },
+    {
+      "id": "346be7df574a96885a23",
+      "title": "Harbor watch officer",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/04-harbor-watch-officer-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Blend a few lacquer and lamellar details into the setting's established mail, shaped steel and ordinary cloth."
+    },
+    {
+      "id": "4a04e6d692b6461a0b77",
+      "title": "Heavy fighters and hired blades",
+      "path": "reference-library-2026-11-06/equipment/15-heavy-fighters-and-hired-blades.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "6e0249ee64d6c14a62a3",
+      "title": "Mothwake mourner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Recast the mourner as a white woman while preserving the liked coat, moth magic, pose and atmosphere."
+    },
+    {
+      "id": "572edd11cd70ee9fd686",
+      "title": "Opaline Kin — The Window Mender",
+      "path": "concepts/opaline-window-mender.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Style only",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "75b11455cd868818b516",
+      "title": "Pass-road guard",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/03-pass-road-guard-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Preserve the successful practical kit and orc anatomy; make this frontline guard a man."
+    },
+    {
+      "id": "2af1b468e387b9d1bd93",
+      "title": "Roof glider",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A small new city animal: strange enough to belong here, modest enough to share roofs with ordinary people."
+    },
+    {
+      "id": "96f0503ca9628964c67d",
+      "title": "Stonehorn — exploratory neutral anatomy and faces",
+      "path": "reference-library-2026-11-06/people/07-stonehorn-exploratory.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "e4572fb35965b5615446",
+      "title": "Stormbreak raider",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/15-stormbreak-raider-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A small lift of the arm links the restrained lightning directly to the orc and lets it fall into the rocks."
+    },
+    {
+      "id": "0c5d3b125151641125ae",
+      "title": "Stormglass Glaive",
+      "path": "stormglass-glaive.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A new weapon silhouette with restrained imbued material, using the physical equipment presentation you liked. Its power and faction are unassigned."
+    },
+    {
+      "id": "94e662f5356328dd8c77",
+      "title": "The Garden That Still Opens",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/06-the-garden-that-still-opens.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "An old, large construct carrying out a modest routine. Tests personality through posture and persistent purpose, without assuming consciousness."
+    },
+    {
+      "id": "21c07d921d6350c0cbbd",
+      "title": "The Ivory-Mantle Envoy",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/05-the-ivory-mantle-envoy.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A lion-folk presence outside battlefield armor, exploring dignity, diplomacy and material culture. This individual does not define all lion-folk dress or politics."
+    },
+    {
+      "id": "9ec1a4111e4118db66e1",
+      "title": "The Mountain’s Lung",
+      "path": "the-mountains-lung.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "b6bfd8d2838757cf2335",
+      "title": "The Rain That Rises",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/08-the-rain-that-rises.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A rare, unexplained magical landscape event: water ascending from a valley. Tests wonder at a large scale without deciding who caused it or how it works."
+    },
+    {
+      "id": "67e5085b15f7532a011d",
+      "title": "The Rootbound Quarter",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "An inhabited forest settlement with architecture, domestic life and trade. Tests a richer built environment for woodland societies without making everyone a druid."
+    },
+    {
+      "id": "3924b88d579d75ed047d",
+      "title": "The Third Arch of Ambrel",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "83e018e8f7ab40eae5eb",
+      "title": "The Unclaimed Saint",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/10-the-unclaimed-saint.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "cd36f5a37922b1f3199e",
+      "title": "The Weather at Her Elbow",
+      "path": "rain-reader.png",
+      "alignment": "Gnosis",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": ""
+    },
+    {
+      "id": "a82b53dfdcdc7e5c40f0",
+      "title": "The cedar threshold",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "A light architectural variant: subtly curved eaves within the liked practical woodland village."
+    },
+    {
+      "id": "a36b9488bd1f10394222",
+      "title": "The evening lesson",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/13-the-evening-lesson-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Preserve the liked floating weather phenomenon and teacher; give the students ordinary reference-sheet faces."
+    },
+    {
+      "id": "7908a44b9a75b165490f",
+      "title": "The peat-road walker",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/24-the-peat-road-walker.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "The larger industrial edge: a rare steam walking carrier, grounded in weight and maintenance. A test of how far useful machinery can go without flight."
+    },
+    {
+      "id": "8b6fac2cd0e94591289b",
+      "title": "The unfinished bridge",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Retain the understated cooperation of magic and engineering; correct skin, stone and distant detail."
+    }
+  ],
+  "favorites": [
+    {
+      "id": "855eaa73299d6e3678e7",
+      "title": "Court Informant",
+      "path": "court-informant.png"
+    },
+    {
+      "id": "1267a7cc0a0253c0eea9",
+      "title": "Dock tally-keeper",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png"
+    },
+    {
+      "id": "c02b3da8af0d90bd7c66",
+      "title": "Serra",
+      "path": "/Users/dpuser/Downloads/serra.webp"
+    },
+    {
+      "id": "3ebdc3ab9c9097c50f2e",
+      "title": "Unmake the Pattern",
+      "path": "unmake-the-pattern.png"
+    },
+    {
+      "id": "122f498104ec9bb91fe4",
+      "title": "Underbridge vaporwright",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png"
+    },
+    {
+      "id": "c3f077883f446c1e3320",
+      "title": "Woven ward",
+      "path": "woven-ward.png"
+    },
+    {
+      "id": "6865a5d3c03cd0d31d42",
+      "title": "Scatter the Line",
+      "path": "scatter-the-line.png"
+    },
+    {
+      "id": "b14448590b6e6c571740",
+      "title": "Hour of Collection",
+      "path": "hour-of-collection.png"
+    },
+    {
+      "id": "7aeda4645f274dbb9aa6",
+      "title": "Gravebound thrall",
+      "path": "gravebound-thrall.png"
+    },
+    {
+      "id": "bcfdd4e5edb23dc5b099",
+      "title": "Raise the dead",
+      "path": "raise-the-dead.png"
+    },
+    {
+      "id": "3e0e185c2881a5579b3a",
+      "title": "The Velvet Stair",
+      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png"
+    },
+    {
+      "id": "35747d006c6f74287104",
+      "title": "Solemn Simulacrum Mtg 733X1024",
+      "path": "/Users/dpuser/Downloads/Solemn-Simulacrum_MTG-733x1024.png"
+    },
+    {
+      "id": "e73bcc3e5ec5f3f0fb3b",
+      "title": "Ledger of debts",
+      "path": "ledger-of-debts.png"
+    },
+    {
+      "id": "62c093fdcb341602631e",
+      "title": "Cinderfall",
+      "path": "cinderfall.png"
+    },
+    {
+      "id": "2d90c807c2f7384ce44c",
+      "title": "Bone harvester",
+      "path": "bone-harvester.png"
+    },
+    {
+      "id": "e9617e759008b74513c5",
+      "title": "Coalback Forager",
+      "path": "concepts/coalback-forager.png"
+    },
+    {
+      "id": "42bda9f57f438d500050",
+      "title": "Porcelain-visored retainer",
+      "path": "porcelain-visored-retainer.png"
+    },
+    {
+      "id": "5453b7b3b547be5e259d",
+      "title": "Redglass Falchion",
+      "path": "redglass-falchion.png"
+    },
+    {
+      "id": "820dcb46d898f947b29a",
+      "title": "The Arena Grown Quiet",
+      "path": "world-concepts-2026-11-08-set-02/07-the-arena-grown-quiet.png"
+    },
+    {
+      "id": "60fdecc01ecb22d8beff",
+      "title": "Spindlejack Mending the Sail",
+      "path": "concepts/spindlejack-mending-the-sail.png"
+    },
+    {
+      "id": "500572629439af22db71",
+      "title": "The Road That Outlasted Kings",
+      "path": "world-concepts-2026-11-08/08-the-road-that-outlasted-kings.png"
+    },
+    {
+      "id": "736fc84e8cad219ebb5f",
+      "title": "Across the Silence",
+      "path": "concepts/across-the-silence.png"
+    },
+    {
+      "id": "c987b5f3c86a1d24fd53",
+      "title": "Barrow mark",
+      "path": "barrow-mark.png"
+    },
+    {
+      "id": "a812a84afc1ce5003128",
+      "title": "Barrow priest",
+      "path": "barrow-priest.png"
+    },
+    {
+      "id": "1433bd1c731807509511",
+      "title": "Binding glyph",
+      "path": "binding-glyph.png"
+    },
+    {
+      "id": "337b99ea936be5999820",
+      "title": "Borrowed will",
+      "path": "borrowed-will.png"
+    },
+    {
+      "id": "aa7bb5aed8997d91c01c",
+      "title": "Collect the tithe",
+      "path": "collect-the-tithe.png"
+    },
+    {
+      "id": "8dcf1c862c1103ce36c3",
+      "title": "Copper hound",
+      "path": "copper-hound.png"
+    },
+    {
+      "id": "a60ad746c2bce05b5c78",
+      "title": "Court assassin",
+      "path": "court-assassin.png"
+    },
+    {
+      "id": "7c20c57d76eec702e3b7",
+      "title": "Dawnsail Passage",
+      "path": "concepts/dawnsail-passage.png"
+    },
+    {
+      "id": "e05f92a9d78cdcc71adc",
+      "title": "Death warrant",
+      "path": "death-warrant.png"
+    },
+    {
+      "id": "68482f0bd33764b9c6cf",
+      "title": "Gilt-hall temptress",
+      "path": "gilt-hall-temptress.png"
+    },
+    {
+      "id": "a8a84acad36f6888c7c1",
+      "title": "Hostess of the late hour",
+      "path": "hostess-of-the-late-hour.png"
+    },
+    {
+      "id": "20087d2bcd55885a4084",
+      "title": "Hunted",
+      "path": "hunted.png"
+    },
+    {
+      "id": "b7dafe3cfca2b20a3023",
+      "title": "Ilvane, Who Asks Twice",
+      "path": "ilvane.png"
+    },
+    {
+      "id": "762f1ff90c4544c093e6",
+      "title": "Illusory decoy",
+      "path": "illusory-decoy.png"
+    },
+    {
+      "id": "f2da62da00ecfdc9ba1a",
+      "title": "Lots for the gallows",
+      "path": "lots-for-the-gallows.png"
+    },
+    {
+      "id": "6bc01e310afb08a69ba7",
+      "title": "Salamander-hide mantle",
+      "path": "salamander-hide-mantle.png"
+    },
+    {
+      "id": "80659f1db504f2c1eb50",
+      "title": "Sepulchral Scale",
+      "path": "sepulchral-scale.png"
+    },
+    {
+      "id": "9298a106f9c32ee8e140",
+      "title": "Siphon Vigor",
+      "path": "siphon-vigor.png"
+    },
+    {
+      "id": "b95284085f5ca186beef",
+      "title": "Slateprowler on the Descent",
+      "path": "concepts/slateprowler-on-the-descent.png"
+    },
+    {
+      "id": "5f989dc74116954ef450",
+      "title": "Still Flame chaplain",
+      "path": "still-flame-chaplain.png"
+    },
+    {
+      "id": "f4f3ac9a47325298cbe9",
+      "title": "The Ashwood Reserve",
+      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png"
+    },
+    {
+      "id": "21c07d921d6350c0cbbd",
+      "title": "The Ivory-Mantle Envoy",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/05-the-ivory-mantle-envoy.png"
+    },
+    {
+      "id": "daf10db4535657263df4",
+      "title": "The Unmeasured Distance",
+      "path": "campaign-2026-11-05/20-experiment-unmeasured-distance.png"
+    },
+    {
+      "id": "0dc2513d397fc0afd6d7",
+      "title": "Threshold adept",
+      "path": "threshold-adept.png"
+    },
+    {
+      "id": "f67e74ad9069be8028af",
+      "title": "Vashkar, Who Counts the Dead",
+      "path": "vashkar.png"
+    }
+  ],
+  "rankings": [
+    {
+      "id": "122f498104ec9bb91fe4",
+      "title": "Underbridge vaporwright",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+      "rating": 1035.9856905714691,
+      "comparisons": 3,
+      "wins": 3
+    },
+    {
+      "id": "8dcf1c862c1103ce36c3",
+      "title": "Copper hound",
+      "path": "copper-hound.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "62c093fdcb341602631e",
+      "title": "Cinderfall",
+      "path": "cinderfall.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "5c3ee76de1ee50a2ac11",
+      "title": "Cobalt rapier — equipment card",
+      "path": "cobalt-rapier.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "736fc84e8cad219ebb5f",
+      "title": "Across the Silence",
+      "path": "concepts/across-the-silence.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "21c07d921d6350c0cbbd",
+      "title": "The Ivory-Mantle Envoy",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/05-the-ivory-mantle-envoy.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "337b99ea936be5999820",
+      "title": "Borrowed will",
+      "path": "borrowed-will.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "d9d6d3fb22b5ac1fc7b2",
+      "title": "The Still Flame",
+      "path": "concepts/the-still-flame.png",
+      "rating": 1024.0,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "3ebdc3ab9c9097c50f2e",
+      "title": "Unmake the Pattern",
+      "path": "unmake-the-pattern.png",
+      "rating": 1023.5856994136229,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "f9e80b6869a97c372757",
+      "title": "Withering hex",
+      "path": "withering-hex.png",
+      "rating": 1023.1723853265561,
+      "comparisons": 2,
+      "wins": 2
+    },
+    {
+      "id": "7c20c57d76eec702e3b7",
+      "title": "Dawnsail Passage",
+      "path": "concepts/dawnsail-passage.png",
+      "rating": 1012.0,
+      "comparisons": 3,
+      "wins": 2
+    },
+    {
+      "id": "68482f0bd33764b9c6cf",
+      "title": "Gilt-hall temptress",
+      "path": "gilt-hall-temptress.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "f2da62da00ecfdc9ba1a",
+      "title": "Lots for the gallows",
+      "path": "lots-for-the-gallows.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "8983f9d3c05a6edc2f3c",
+      "title": "Ashen Court noble",
+      "path": "ashen-court-noble.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e05f92a9d78cdcc71adc",
+      "title": "Death warrant",
+      "path": "death-warrant.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c02b3da8af0d90bd7c66",
+      "title": "Serra",
+      "path": "/Users/dpuser/Downloads/serra.webp",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "527eecb8daf788980a76",
+      "title": "Ash-sower",
+      "path": "ash-sower.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e5e82c93f268453ca126",
+      "title": "Thornwarden goblin scout",
+      "path": "thornwarden-goblin-scout.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "98a286b06e137c529fc7",
+      "title": "A Voice in the Reeds",
+      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9f7075b5b27b5b9c54a7",
+      "title": "Pride huntress",
+      "path": "pride-huntress.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "0dc2513d397fc0afd6d7",
+      "title": "Threshold adept",
+      "path": "threshold-adept.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c3f077883f446c1e3320",
+      "title": "Woven ward",
+      "path": "woven-ward.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "d1dd69ed2c9059a2b6e7",
+      "title": "Focus-rifle marksman",
+      "path": "focus-rifle-marksman.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "1267a7cc0a0253c0eea9",
+      "title": "Dock tally-keeper",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "5ccd20423a81a606412a",
+      "title": "Veil adept",
+      "path": "veil-adept.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "b14448590b6e6c571740",
+      "title": "Hour of Collection",
+      "path": "hour-of-collection.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "b94cc991a02d667d5286",
+      "title": "Barrow colossus",
+      "path": "barrow-colossus.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "820dcb46d898f947b29a",
+      "title": "The Arena Grown Quiet",
+      "path": "world-concepts-2026-11-08-set-02/07-the-arena-grown-quiet.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "7aeda4645f274dbb9aa6",
+      "title": "Gravebound thrall",
+      "path": "gravebound-thrall.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "915aefad73865b885d28",
+      "title": "Bronze-harness alderkin",
+      "path": "bronze-harness-alderkin.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "aa73dba77d81276d4faa",
+      "title": "Tideglass Engine",
+      "path": "tideglass-engine.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "170b6f3135e3a1c87cc4",
+      "title": "Slagheart hulk",
+      "path": "slagheart-hulk.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "0f37a795532ab5e1d4d7",
+      "title": "Prism Bracer",
+      "path": "prism-bracer.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "bcfdd4e5edb23dc5b099",
+      "title": "Raise the dead",
+      "path": "raise-the-dead.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9043b201b808cf020b59",
+      "title": "Sudden Canopy",
+      "path": "sudden-canopy.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "6e0249ee64d6c14a62a3",
+      "title": "Mothwake mourner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/23-mothwake-mourner-v2.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "cd36f5a37922b1f3199e",
+      "title": "The Weather at Her Elbow",
+      "path": "rain-reader.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "ab8d05443b4a600ec5d2",
+      "title": "Copperlane torch-runner",
+      "path": "copperlane-torch-runner.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "0c5d3b125151641125ae",
+      "title": "Stormglass Glaive",
+      "path": "stormglass-glaive.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "b95284085f5ca186beef",
+      "title": "Slateprowler on the Descent",
+      "path": "concepts/slateprowler-on-the-descent.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "3fa6a4b73a8dac90ebda",
+      "title": "The Stone Opens",
+      "path": "the-stone-opens.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "ce79c5853ecb44aa0642",
+      "title": "Cinder-cant drummer",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/07-cinder-cant-drummer.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "2d98c67fdc0b4dd10f2e",
+      "title": "Wayfinder druid",
+      "path": "wayfinder-druid.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "d043efc8ddc5b0fd435e",
+      "title": "Ashen barrows",
+      "path": "ashen-barrows.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9c54d656488020a502ba",
+      "title": "Debt Collector's Blade",
+      "path": "debt-collectors-blade.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "94e662f5356328dd8c77",
+      "title": "The Garden That Still Opens",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/06-the-garden-that-still-opens.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "615df28c36201634277e",
+      "title": "Brass siege-walker",
+      "path": "brass-siege-walker.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e09e46e9a89eb2607972",
+      "title": "Oath Bell",
+      "path": "oath-bell.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "177172e77598d0e4d9d4",
+      "title": "Shutter-window assassin",
+      "path": "shutter-window-assassin.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "fe431f44dd70cf83a65b",
+      "title": "Harmonic wardwright",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/01-harmonic-wardwright.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "984072c2ebb35a8216b2",
+      "title": "The Last Procession — Dominion sacrifice",
+      "path": "campaign-2026-11-05/08-gravebound-ossuary.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e682cd534734e4510644",
+      "title": "Devoted pilgrim",
+      "path": "devoted-pilgrim.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "5453b7b3b547be5e259d",
+      "title": "Redglass Falchion",
+      "path": "redglass-falchion.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "5e57977a1c593c0a8bff",
+      "title": "A Guest with No Shrine",
+      "path": "world-concepts-2026-11-08/07-a-guest-with-no-shrine.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "cb4075ec9b2398e51c3c",
+      "title": "The levy hall",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/10-the-levy-hall-v2.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9298a106f9c32ee8e140",
+      "title": "Siphon Vigor",
+      "path": "siphon-vigor.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "428c94a3fdd87e3a4c1f",
+      "title": "Mothwake mourner",
+      "path": "mothwake-mourner.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "85089814c585e2bb7b62",
+      "title": "Rain gathering",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/04-rain-gathering.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "3e0e185c2881a5579b3a",
+      "title": "The Velvet Stair",
+      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "8fa9d8a3ec3a0e9592fa",
+      "title": "Ember Drake",
+      "path": "web/ember-drake.jpg",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "44760c8f53d5458da66d",
+      "title": "Dawnsails over the Harvest",
+      "path": "concepts/dawnsails-over-the-harvest.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "500572629439af22db71",
+      "title": "The Road That Outlasted Kings",
+      "path": "world-concepts-2026-11-08/08-the-road-that-outlasted-kings.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c5c647c080bcf38ad4f8",
+      "title": "Overgrown ruin",
+      "path": "overgrown-ruin.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "6a01b4812053f28cb50b",
+      "title": "Pride warden",
+      "path": "pride-warden.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "bdbd782c861439ad47de",
+      "title": "Rime drake",
+      "path": "rime-drake.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "243b9de455aff06eaeea",
+      "title": "Shieldline sergeant",
+      "path": "shieldline-sergeant.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "1e7551bf368e1215bd11",
+      "title": "Saint Maren of the Long Watch",
+      "path": "saint-maren.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "06b4f5d040703804f186",
+      "title": "Called debt",
+      "path": "called-debt.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "404f5ed0a679aa51ed56",
+      "title": "The Price of Morning",
+      "path": "world-concepts-2026-11-08/01-the-price-of-morning.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c46586c12dad0fc1bd78",
+      "title": "Kindle the line",
+      "path": "kindle-the-line.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "7246373214ae9a4f185b",
+      "title": "Return to Loam",
+      "path": "return-to-loam.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "5ac89e96cc1aed766856",
+      "title": "Unwind the step",
+      "path": "unwind-the-step.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "d3ca4475da619ff9530f",
+      "title": "Barrow rats",
+      "path": "barrow-rats.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "7318ffec07eec708e6be",
+      "title": "The Cost of the Flame",
+      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/04-the-cost-of-the-flame.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "f1d12712d41f1ce393f6",
+      "title": "Ash-white lanner",
+      "path": "ash-white-lanner.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "daf10db4535657263df4",
+      "title": "The Unmeasured Distance",
+      "path": "campaign-2026-11-05/20-experiment-unmeasured-distance.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "a896df5fb05ac7df943e",
+      "title": "Harmonic wardwright",
+      "path": "harmonic-wardwright.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "1b087de8edf0d0f0d4a9",
+      "title": "Pride matriarch",
+      "path": "pride-matriarch.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "ed6907f8e7c39789df88",
+      "title": "Firebolt",
+      "path": "firebolt.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9bcc1f9b8c34c1195d66",
+      "title": "Winterdoor keeper",
+      "path": "winterdoor-keeper.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "bba14719559e41eb15f4",
+      "title": "Conclave phantasm",
+      "path": "conclave-phantasm.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e4781620adf74571835d",
+      "title": "Indebted squire",
+      "path": "indebted-squire.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "90a240c039ded703fac0",
+      "title": "Conclave examiner",
+      "path": "conclave-examiner.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "cdee522eac46552b952e",
+      "title": "Corewright",
+      "path": "corewright.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "238a99e4f64b27f21c40",
+      "title": "Cinder rain",
+      "path": "cinder-rain.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "a812a84afc1ce5003128",
+      "title": "Barrow priest",
+      "path": "barrow-priest.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "7a6af09d2c86230f3d89",
+      "title": "Elder dragon",
+      "path": "elder-dragon.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "3d61889453a5d8ec61a7",
+      "title": "Warband Drum",
+      "path": "warband-drum.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "6f36f8fc0f1da2fb89c5",
+      "title": "Ashen Court envoy",
+      "path": "ashen-court-envoy.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "35747d006c6f74287104",
+      "title": "Solemn Simulacrum Mtg 733X1024",
+      "path": "/Users/dpuser/Downloads/Solemn-Simulacrum_MTG-733x1024.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "9da628d2389007b30124",
+      "title": "Cobalt rapier — preserved equipment",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/10a-cobalt-rapier-preserved.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "6759ac82dec558121e92",
+      "title": "Construct",
+      "path": "/Users/dpuser/Downloads/construct.jpeg",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "e73bcc3e5ec5f3f0fb3b",
+      "title": "Ledger of debts",
+      "path": "ledger-of-debts.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "06ca7ea1aaf57948e934",
+      "title": "Displacement",
+      "path": "displacement.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "dac6b86f01ee4bd2f23f",
+      "title": "Muster the levy",
+      "path": "muster-the-levy.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "af5197ed098e98229975",
+      "title": "Cinderhook Axe",
+      "path": "cinderhook-axe.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "80659f1db504f2c1eb50",
+      "title": "Sepulchral Scale",
+      "path": "sepulchral-scale.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "0718c9c593dd71dbb494",
+      "title": "Lantern arcanist",
+      "path": "lantern-arcanist.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c4fcfca41bec1010b4a9",
+      "title": "Lantern apprentice",
+      "path": "lantern-apprentice.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "6af4dd756a79c744de69",
+      "title": "Mourning Veil",
+      "path": "mourning-veil.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
+    },
+    {
+      "id": "c987b5f3c86a1d24fd53",
+      "title": "Barrow mark",
+      "path": "barrow-mark.png",
+      "rating": 1011.6000088421537,
+      "comparisons": 3,
+      "wins": 2
+    },
+    {
+      "id": "572edd11cd70ee9fd686",
+      "title": "Opaline Kin — The Window Mender",
+      "path": "concepts/opaline-window-mender.png",
+      "rating": 1000.4143005863771,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "75e612dfe70e5ed61bbf",
+      "title": "Black enamel field kit",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png",
+      "rating": 1000.4143005863771,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "a8a84acad36f6888c7c1",
+      "title": "Hostess of the late hour",
+      "path": "hostess-of-the-late-hour.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "e8aabfae6518b6d8bf0c",
+      "title": "Sunmane lancer",
+      "path": "sunmane-lancer.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "ec0bd9ef332328db5652",
+      "title": "Engine at Rest",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/03-engine-at-rest.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "02baae80989e953a84ab",
+      "title": "Lantern quarter",
+      "path": "lantern-quarter.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "855eaa73299d6e3678e7",
+      "title": "Court Informant",
+      "path": "court-informant.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "913a0beb4658edadb8be",
+      "title": "Shatter the Chain",
+      "path": "shatter-the-chain.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "56fa4476dea9ced114c2",
+      "title": "Goblin cutter",
+      "path": "goblin-cutter.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "15b5183620cc59e0294d",
+      "title": "The sky falls in",
+      "path": "the-sky-falls-in.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "b6bfd8d2838757cf2335",
+      "title": "The Rain That Rises",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/08-the-rain-that-rises.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "81ad90a4c8c73faccf35",
+      "title": "Buckling recruit",
+      "path": "buckling-recruit.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "aa7bb5aed8997d91c01c",
+      "title": "Collect the tithe",
+      "path": "collect-the-tithe.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "2af1b468e387b9d1bd93",
+      "title": "Roof glider",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "736bed4d738516a15810",
+      "title": "Copper Street Locksmith",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/02-copper-street-locksmith.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "2d90c807c2f7384ce44c",
+      "title": "Bone harvester",
+      "path": "bone-harvester.png",
+      "rating": 1000.0,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "5397c44020727e5d6626",
+      "title": "Glimmer double",
+      "path": "glimmer-double.png",
+      "rating": 999.6000088421537,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "6bc01e310afb08a69ba7",
+      "title": "Salamander-hide mantle",
+      "path": "salamander-hide-mantle.png",
+      "rating": 999.5856994136229,
+      "comparisons": 2,
+      "wins": 1
+    },
+    {
+      "id": "abf313191f71aecd4081",
+      "title": "Light Without an Answer",
+      "path": "concepts/light-without-an-answer.png",
+      "rating": 988.0,
+      "comparisons": 3,
+      "wins": 1
+    },
+    {
+      "id": "cff485636a9ffb745d3f",
+      "title": "Artificer's journeyman",
+      "path": "artificers-journeyman.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "31834c7b823264ed6b79",
+      "title": "Humbling light",
+      "path": "humbling-light.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "e6d9649b2d736c8d7108",
+      "title": "Line of dawn",
+      "path": "line-of-dawn.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "225cfd1cebd9422bd7e4",
+      "title": "Folded Observatory",
+      "path": "folded-observatory.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3df7aff64ef2adb66ccf",
+      "title": "Grave soil",
+      "path": "grave-soil.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "d612242914b7ba194356",
+      "title": "Clan Outrider",
+      "path": "clan-outrider.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "bf5677d67e61100aba7b",
+      "title": "Brightlance",
+      "path": "brightlance.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "228d17ed6debb53a82dd",
+      "title": "Mossback bear",
+      "path": "mossback-bear.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3ddcb8adaa9f92de9139",
+      "title": "Reedbank Forager",
+      "path": "reedbank-forager.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "cca5fe6b7a3ce4d4cf69",
+      "title": "Mortuary priest",
+      "path": "mortuary-priest.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "51c0b58aed6145a6d659",
+      "title": "The Glasswind Rider",
+      "path": "work-in-progress/world-edges-round-10-2026-11-10/02-the-glasswind-rider-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "6865a5d3c03cd0d31d42",
+      "title": "Scatter the Line",
+      "path": "scatter-the-line.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "d1c729fbb2ef77d2315a",
+      "title": "Cinder-cant drummer",
+      "path": "cinder-cant-drummer.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "93413fb239531a4898c3",
+      "title": "Corewright’s bench",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/06-corewrights-bench.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "a36b9488bd1f10394222",
+      "title": "The evening lesson",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/13-the-evening-lesson-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "d983eebdb902dbd4cc67",
+      "title": "Enchanter's quench",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/05-enchanters-quench.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "873e77dd1583206a1d0b",
+      "title": "Oath shieldbearer",
+      "path": "oath-shieldbearer.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "8b6fac2cd0e94591289b",
+      "title": "The unfinished bridge",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/20-the-unfinished-bridge-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "9114e63e474e5ff5549c",
+      "title": "Clayplate giant",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/08-clayplate-giant.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "90228b8a6b7e0bce04a1",
+      "title": "Ash-white lanner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/21-ash-white-lanner-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "6d549e16f11ebae7cfa2",
+      "title": "Rimebolt",
+      "path": "rimebolt.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "36dcf1dc4d1799a36eea",
+      "title": "Enchanter's quench",
+      "path": "enchanters-quench.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "89ee010c2a8bfe75a2cc",
+      "title": "Roadwarden's Shield",
+      "path": "roadwardens-shield.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "de2306ce1a1e720fa003",
+      "title": "Cinder peaks",
+      "path": "cinder-peaks.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3332ac6756b6605b4796",
+      "title": "Ashen Court Bailiff",
+      "path": "ashen-court-bailiff.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "2d8a246337c96baafe9f",
+      "title": "Cinder skirmisher",
+      "path": "cinder-skirmisher.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "4fa212953804e3495afa",
+      "title": "Earthspeaker",
+      "path": "earthspeaker.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "23cc8090d6ea83f27d0b",
+      "title": "Wayside healer",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/02-wayside-healer-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "19a007e59d254a0b4969",
+      "title": "Ember salamander",
+      "path": "ember-salamander.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "ee83028c90b3559a77a5",
+      "title": "Gnosis foot soldier",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/05-gnosis-foot-soldier.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "81dc32ea253226c16558",
+      "title": "Herd mother",
+      "path": "herd-mother.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "6f496e392c0e5563e309",
+      "title": "Still Flame acolyte",
+      "path": "still-flame-acolyte.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "f70e70f2d10507637ffa",
+      "title": "Oath sentinel",
+      "path": "oath-sentinel.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "5e7bebb9b08c23e3bb4d",
+      "title": "Surveyor's Glass",
+      "path": "surveyors-lenses.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "a4e11289a034d94a338f",
+      "title": "More Fire Than Hands",
+      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/06-more-fire-than-hands.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "973f56d6377e955c098b",
+      "title": "Oath knight",
+      "path": "oath-knight.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "07f05b62194491de31e7",
+      "title": "Voices in the Commons",
+      "path": "world-concepts-2026-11-08-set-02/02-voices-in-the-commons-brushwork-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "65eae46d426d71111bcf",
+      "title": "Banked flame blade",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/03-banked-flame-blade.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "73af0096cff67ed9ec0c",
+      "title": "Banked flame blade",
+      "path": "banked-flame-blade.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "abbd91564c29224a34ba",
+      "title": "Stormhook channeler",
+      "path": "reference-library-2026-11-06/magic-and-craft-2026-11-08/08-stormhook-channeler.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3b36b3ba9b18ad635f61",
+      "title": "Cinder martyr",
+      "path": "cinder-martyr.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "9d18e497e3c17ce7c509",
+      "title": "Quarry singer",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/05-quarry-singer.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "e4572fb35965b5615446",
+      "title": "Stormbreak raider",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/15-stormbreak-raider-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "de844b959aeec7b28b9c",
+      "title": "Conclave Courier",
+      "path": "conclave-courier.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "6f6085b376048abd0a95",
+      "title": "Mosshorn grazer",
+      "path": "mosshorn-grazer.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "7bf47f69c2030cb9b92d",
+      "title": "Harmonic burst",
+      "path": "harmonic-burst.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "2dbf250f82e19b5768c1",
+      "title": "Bought allegiance",
+      "path": "bought-allegiance.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "77114559ef2afb9c4324",
+      "title": "Bronze-harness alderkin",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/07-bronze-harness-alderkin.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "f522784e5804f0cd67e1",
+      "title": "Vigil-keeper",
+      "path": "vigil-keeper.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "1869269059fab6f6b9d0",
+      "title": "Stonehorn Bridgekeeper",
+      "path": "concepts/stonehorn-bridgekeeper.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "7908a44b9a75b165490f",
+      "title": "The peat-road walker",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/24-the-peat-road-walker.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "0c784db35b77337d4a47",
+      "title": "Cinder roadside supper",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/05-cinder-roadside-supper-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "e2dd222620265147a97a",
+      "title": "The cedar threshold",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/19-the-cedar-threshold.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "ab84c760f24ee3ce8682",
+      "title": "Vow of keeping",
+      "path": "vow-of-keeping.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "cdd1add7f5f9ac145e0c",
+      "title": "Elder Herd bull",
+      "path": "elder-herd-bull.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "15c7b683025953e36ddc",
+      "title": "Conclave rimecaller",
+      "path": "conclave-rimecaller.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "0ccbebe39667506107fc",
+      "title": "Conclave field scholar",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/03-conclave-field-scholar.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "ab9b8b6cbd77528295a3",
+      "title": "Hill giant",
+      "path": "hill-giant.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "05023cf3b53fd644539b",
+      "title": "Mercenary captain",
+      "path": "mercenary-captain.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "55b9713993c664aa0071",
+      "title": "Thicket boar",
+      "path": "thicket-boar.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "4e6ea2eb8205df844ce3",
+      "title": "Water carrier",
+      "path": "water-carrier.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "669afb5ba40641727c66",
+      "title": "The Blade He Inherited",
+      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/01-the-blade-he-inherited.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "253bfc6ac429fe45eb57",
+      "title": "Shell-mountain tortoise",
+      "path": "shell-mountain-tortoise.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "75b11455cd868818b516",
+      "title": "Pass-road guard",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/03-pass-road-guard-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "cf9a099f6bc3afabc9f4",
+      "title": "Veil adept",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/01-veil-adept.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "2cea9450dadb2a9c458b",
+      "title": "Stoneward colossus",
+      "path": "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/06-stoneward-colossus.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "682f885578ac254becfb",
+      "title": "The Stonefire Shift",
+      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "0e89f52af06c89ce3125",
+      "title": "Ambrel — preserved city direction",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/10b-ambrel-city-preserved.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "d96f656c5462f4c0fedb",
+      "title": "Rust-hinged warden",
+      "path": "rust-hinged-warden.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "4affd4f4391ac702a156",
+      "title": "Shifting forest",
+      "path": "shifting-forest.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "4a13ce7f8c95826b42cd",
+      "title": "Alderkin Winter Shelter",
+      "path": "concepts/alderkin-winter-shelter.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "9740318d69920856a782",
+      "title": "Human 3",
+      "path": "/Users/dpuser/Downloads/human 3.jpeg",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "0a2fae717fddfd460df3",
+      "title": "Scorch",
+      "path": "scorch.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "83785837aebb92001142",
+      "title": "Copperlane torch-runner",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/01-copperlane-torch-runner-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "a53da3506b188929d320",
+      "title": "Porcelain-visored retainer",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/06-porcelain-visored-retainer.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "5f989dc74116954ef450",
+      "title": "Still Flame chaplain",
+      "path": "still-flame-chaplain.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "83e018e8f7ab40eae5eb",
+      "title": "The Unclaimed Saint",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/10-the-unclaimed-saint.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "6c16b4ac51bb1e8a48f2",
+      "title": "Ossuary engine",
+      "path": "ossuary-engine.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3693c34b8a4267782efe",
+      "title": "Graveside listener",
+      "path": "reference-library-2026-11-06/design-directions-round-06-2026-11-08/01-graveside-listener.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "44b828e498c00ec2b77a",
+      "title": "Alderkin Waterkeeper",
+      "path": "concepts/alderkin-waterkeeper.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "d5702a741941888d9aa0",
+      "title": "Thornwarden goblin scout",
+      "path": "reference-library-2026-11-06/character-kits-2026-11-08/04-thornwarden-goblin-scout.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "7926554f18ce4129fb50",
+      "title": "Orc raider",
+      "path": "orc-raider.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "b22eb661b59a63ffe05e",
+      "title": "The alderkin’s wager",
+      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/16-the-alderkins-wager-v2.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "23e161625975c17a0dea",
+      "title": "Conclave field scholar",
+      "path": "conclave-field-scholar.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "deffd966bbbd742ec2a8",
+      "title": "The Copperback Carrier",
+      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/04-the-copperback-carrier.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "7e574778b0ad5d22b4d2",
+      "title": "Hearth-sworn penitent",
+      "path": "hearth-sworn-penitent.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "bc45c21abaa825297305",
+      "title": "Seedfall",
+      "path": "seedfall.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "33a2a37a8225afcb674f",
+      "title": "Stand as One",
+      "path": "stand-as-one.png",
+      "rating": 988.0,
+      "comparisons": 1,
+      "wins": 0
+    },
+    {
+      "id": "3763d14becc274182af8",
+      "title": "Emberward",
+      "path": "emberward.png",
+      "rating": 976.8276146734439,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "c65f201bb328c773c22b",
+      "title": "Alderkin elder",
+      "path": "alderkin-elder.png",
+      "rating": 976.4143005863771,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "9aae9de1824eafbd2017",
+      "title": "Cinder firebrand",
+      "path": "cinder-firebrand.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "15f05c9cea48a4afbf45",
+      "title": "Anoint with embers",
+      "path": "anoint-with-embers.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "4dbf0132003586450549",
+      "title": "Sanctuary Threshold",
+      "path": "sanctuary-threshold.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "a2418037ce18cc371228",
+      "title": "Last Light in the Barracks",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/05-last-light-in-the-barracks.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "353f725c4fb0fed77ada",
+      "title": "A Coalback’s First Frost",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/04-coalbacks-first-frost.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "3ea135f77ea0023914f3",
+      "title": "Ashwing keeper",
+      "path": "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/01-ashwing-keeper.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "213ad1baa1c560ec5d55",
+      "title": "Hurled brand",
+      "path": "hurled-brand.png",
+      "rating": 976.0,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "222cbab15e38d9898670",
+      "title": "Ashwing at the Window",
+      "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/01-ashwing-at-the-window.png",
+      "rating": 975.9856905714693,
+      "comparisons": 2,
+      "wins": 0
+    },
+    {
+      "id": "67e5085b15f7532a011d",
+      "title": "The Rootbound Quarter",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png",
+      "rating": 964.4143005863771,
+      "comparisons": 3,
+      "wins": 0
+    }
+  ],
+  "comparisons": 133
+}

@@ -40,7 +40,6 @@ Sound should account for **at most one in eight Gnosis cards, preferably fewer**
 
 Harmonic burst (#124) keeps its finalized suspended-bell painting. It is explicitly not a favorite or a model for further Gnosis cards. The temporary block does not revoke already accepted cards. See the [art direction](../.claude/skills/art-direction/SKILL.md#gnosis-sound-limit-and-harmonic-burst-final-creator-direction-2026-11-10).
 
-
 ## Rules decided while building
 
 - **Steadfast:** a move or Dawnsail passage counts as moving. Being swapped, pushed or shoved doesn't.
@@ -306,7 +305,7 @@ Why each card is the way it is:
 - **Cinderline veteran:** sturdier than most Fervor units, because he's a survivor, with a reason to carry the falchion or the flame blade.
 - **Redglass falchion:** a hunter's blade, so it's better against a wounded target. It costs the same as Banked flame blade with a different job.
 - **Rain-reader:** the woman from "The weather at her elbow". Everyday water magic puts out fires and washes away blight, so she's the first answer to tile effects.
-- **The Mountain's Lung:** your idea of extra mana. It's a one-turn burst for casting something big a turn early, not a building or stored mana. It's neutral so any big-card deck can use it.
+- **The Mountain's Lung:** your idea of extra mana. The gameplay effect is a one-turn burst for casting something big a turn early, with no building or player mana bank. It's neutral so any big-card deck can use it. In the setting, the engine burns stored mana from stones, leaving them permanently spent (creator clarification, 2026-11-10).
 - **Cinderwake:** separate from Cinderfall. Cinderfall hits one spot hard, while Cinderwake sweeps a whole column. Aiming it near your own side covers more tiles but leaves fire close to your units.
 - **The stone opens:** Genesis is slow, so this is its breakout turn: everything moves further at once.
 - **Copperlane torch-runner:** the sparks behind him in the painting become a trail of fire. A Goblin torch-runner was cut on 2026-11-09 as contrived. This one comes from your chosen painting, but say if the idea still feels forced.
@@ -316,7 +315,7 @@ Why each card is the way it is:
 - **Cobalt rapier:** selected on 2026-11-09 and reused here, not a second entry. Its painting is already finished and in `art/CARD_ART_FINAL.json`. A duellist's reach gives Gnosis an equipment card that fits its ranged strength.
 - **Corewright:** the artisan at her bench, not the automaton from the next painting.
 
-Still to do: flavour text. The black-enamel field kit still needs a wearer painted, in a later art discussion. It isn't one of these cards.
+Still to do: flavour text. The black-enamel kit now has a [male wearer study](art/work-in-progress/magic-and-industry-round-09-2026-11-10/03-black-enamel-open-road.png), awaiting creator review. It isn't one of these cards.
 
 ## Balance changes, built 2026-11-10
 

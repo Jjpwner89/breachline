@@ -1,0 +1,9 @@
+Verified 10 November 2026:
+- 46 normal-art manifest files audited.
+- 56 surviving Set 7–11 paintings in the recent praise comparison.
+- Reference-use totals equal distinct artwork edges and alignment subtotals.
+- NSFW paths and selected-card variants are absent from the catalogue.
+- Night Embassy remains excluded; Opaline Kin remains style-only.
+- Browser tests: alignment filter, search, full-size detail, upvote, exclusion, favorite, note, reload persistence, undo, head-to-head choice, ranking.
+- Isolated service tests: ties, rating conservation, undo, invalid IDs, self-comparison rejection and concurrent/stale write rejection.
+- Test votes were saved separately outside the project. The user gallery begins with zero new votes, favorites and comparisons.

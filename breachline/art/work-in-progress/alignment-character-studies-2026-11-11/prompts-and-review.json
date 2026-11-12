@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-11",
+  "scope": "Normal character art only",
+  "feedback_source": "/Users/dpuser/Downloads/breachline-art-feedback-2026-11-11.json",
+  "feedback_revision": 182,
+  "comparison_count": 133,
+  "cross_alignment_results": {
+    "Dominion": {
+      "wins": 30,
+      "comparisons": 39,
+      "favorites": 20
+    },
+    "Vigil": {
+      "wins": 10,
+      "comparisons": 24,
+      "favorites": 2
+    },
+    "Fervor": {
+      "wins": 11,
+      "comparisons": 29,
+      "favorites": 4
+    },
+    "Neutral": {
+      "wins": 7,
+      "comparisons": 10,
+      "favorites": 3
+    },
+    "Unassigned": {
+      "wins": 20,
+      "comparisons": 55,
+      "favorites": 10
+    },
+    "Gnosis": {
+      "wins": 24,
+      "comparisons": 39,
+      "favorites": 8
+    },
+    "Genesis": {
+      "wins": 6,
+      "comparisons": 20,
+      "favorites": 0
+    }
+  },
+  "limitations": "Sparse per-painting comparisons, unequal opponents; not a definitive quality ranking. Comparison losses do not exclude references.",
+  "creator_batch_feedback": "Creator likes the painted look and says variable detail is much better. Alderkin looks too pensive; activity is a little too low across this character-focused batch. Test more active scenes while keeping this finish. No individual reference promotion has been requested.",
+  "images": [
+    {
+      "n": 1,
+      "slug": "thornwarden-at-the-boundary",
+      "title": "Thornwarden at the Boundary",
+      "alignment": "Genesis",
+      "intent": "Firm, watchful woodland independence; matte human skin and quiet, coherent foliage.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: A human Thornwarden man in his late forties pauses at the boundary of an old beech forest, regarding someone beyond the image with patient, immovable resolve. Genesis here feels independent, territorial and deeply at home in the living world. A long narrow face, slightly crooked broad-bridged nose, close brown beard streaked with grey, deep-set hazel eyes; ordinary memorable features. Moss-green heavy wool coat over an undyed linen collar, one rust-red scarf, a plain dark belt. Clothes are practical woven garments rather than leaf armor. His relaxed near hand rests around the lower part of a straight ash spear held upright; the small steel point is visible above his shoulder. The other arm rests naturally at his side.\nCOMPOSITION: medium figure portrait from mid-thigh upward, slightly left of center, three-quarter view turned toward the open right side. One strong vertical silhouette. Behind him, three broad pale beech trunks and a dark fern bank form a simple connected setting; distant foliage reads as calm green masses, with only a few leaves near the figure. Soft cool forest daylight, a restrained warm patch on the cheek. Deep bottle green, pale limestone bark, warm earth and the small red scarf. Calm tension and lived experience, not a heroic poster or an idyllic fairy glade. No magical aura. Avoid a mosaic of equally sharp foliage or bark marks.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-68c3a269-d343-4ef0-ab08-8a115cc588e9.png",
+      "file": "01-thornwarden-at-the-boundary.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    },
+    {
+      "n": 2,
+      "slug": "willow-at-the-waterline",
+      "title": "Willow at the Waterline",
+      "alignment": "Genesis",
+      "intent": "An independent, uncanny tree person with graceful weight and broad, readable bark forms.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: A solitary adult alderkin, an actual living tree person, stands at a quiet marsh waterline in late autumn. Its character is ancient, self-possessed and faintly unsettling, with a long willow-like head tilted to listen toward the far shore. It has an asymmetric, naturally grown trunk torso with open spaces between a few major twisting woody members, two rooted weight-bearing legs, and two long branch arms ending in simple articulated root fingers. The eyes are small dark knots recessed in the wood, the mouth a subtle seam, not a carved human mask. A small trailing crown of russet leaves belongs to its head; no human muscle shapes, clothing, bark armor, magical green eyes or cute mascot expression. The near hand hangs open; the other rests lightly on its own upper trunk, an introspective gesture.\nCOMPOSITION: the complete standing silhouette occupies the right half of the landscape. Leave breathing room above the branches and around both feet. The left half is a still, dark malachite pool with a broad sky reflection; a few reeds establish the edge. A low horizontal bank and one simple pale opening of evening sky. Dry grey-brown bark painted in large turning forms with only a handful of structural splits. Muted teal water, pewter sky, warm copper leaves. One coherent soft sidelight defines the head and near limb. Convey a powerful presence through form and stillness. Keep bark, reeds and water quiet and legible; no field of individual glittering strokes and no elaborate scenic architecture.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-b8744687-eef4-4fab-bfe7-0ae789a9a5b7.png",
+      "file": "02-willow-at-the-waterline.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/06-alderkin.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    },
+    {
+      "n": 3,
+      "slug": "red-sash-open-road",
+      "title": "Red Sash, Open Road",
+      "alignment": "Fervor",
+      "intent": "Defiant freedom and rough warmth, without relying on a wall of fire.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: An adult male orc of a free Fervor warband sits sideways on a low roadside stone, looking back over his shoulder at someone out of frame with a small crooked, challenging grin. His freedom and rough warmth are the point of the portrait. Clearly nonhuman orc anatomy: heavy low brow, broad flattened nose, substantial projecting jaw, two irregular short lower tusks, small deep-set eyes and a strong thick neck. Ash-olive skin, swept-back dark hair tied with one simple cord, weathered but not covered in pores or scars. A charcoal wool tunic with an open dull-ivory linen neck, a single worn steel shoulder plate and a broad scarlet sash. One broad hand rests naturally over the hilt of a sheathed curved sword across his lap; the other supports his weight on the stone. Hands, hips and shoulders connect naturally.\nCOMPOSITION: an intimate waist-up oblique portrait, figure to the right, torso turning gently to the left. His head is bare against a wide blue-grey sky. Behind, open ochre grassland and a low dark ridge are painted in broad sweeping masses; no tiny army, banners or buildings. Late slanting sunlight briefly touches brow, cheek and the shoulder plate. Strong red cloth against slate sky and matte olive skin. Wind lightly lifts the sash end. Spirited, dangerous and appealing, not monstrous, comic, regal or smug. Keep subtle facial planes and body weight; no glossy videogame hero finish and no flames.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-3a9bbf3f-65e9-405a-81ad-6b70cba05d7e.png",
+      "file": "03-red-sash-open-road.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    },
+    {
+      "n": 4,
+      "slug": "before-the-thunder-breaks",
+      "title": "Before the Thunder Breaks",
+      "alignment": "Fervor",
+      "intent": "Unrestrained magical confidence, with wind and weather carrying the energy.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: A Fervor storm mage, a human woman about forty, turns into a rising wind on an exposed ridge. She has a broad face with a strong straight nose, close-set grey eyes, short loose copper-brown hair, and a quick fierce smile of exhilaration, not a theatrical open-mouthed laugh. Her ordinary individual beauty comes from presence. An opaque dark brick-red wool coat, an indigo dress visible beneath it, simple boots and one plain belt. No jewelry, armor, elaborate buckles or costume ornament. Her body has a natural grounded counterbalance to the wind. One arm is extended outward at waist height with the hand relaxed and palm slightly up; the other holds her coat closed near the ribs. A very small, irregular cold-blue corona catches just two fingertips, as if storm power is gathering almost accidentally; no beam, ribbons, energy threads, spell circle or explosion.\nCOMPOSITION: three-quarter figure from knees upward, character to the left with generous dark sky to the right. Her face turns toward the right horizon. Hair and one broad fold of coat move in the same wind. Violet-grey storm clouds and a narrow band of pale ochre hill make a spare, powerful setting. A cool break in the cloud lights her forehead and the planes of her red coat. Keep her skin matte and the smile specific; controlled broad brushwork in the cloud, clear anatomy and clothing folds. The image should feel alive, free and charged without a dense effects display.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-ebc77d54-ef97-44e3-a193-d90c6aa3c8e1.png",
+      "file": "04-before-the-thunder-breaks.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    },
+    {
+      "n": 5,
+      "slug": "the-last-watchfire",
+      "title": "The Last Watchfire",
+      "alignment": "Vigil",
+      "intent": "Weathered conviction and restrained warmth rather than polished heroic posing.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: An older human man of the Sunmane Oath sits at a broken roadside parapet at dusk, bareheaded, watching the long empty road with exhausted but unbroken resolve. About sixty, thin grey hair, a long hooked nose, uneven heavy eyebrows, brown eyes and a short greying beard. His expression is humane and private, not a scowl or a heroic stare at the viewer. Serviceable steel breastplate over a dull ivory quilted coat, faded blue wool cloak. One small worn sun mark on the breastplate is sufficient. His plain steel helmet lies securely in his lap with one hand resting loosely on top; the other hand is out of view under the cloak. Hands and armor have convincing simple construction.\nCOMPOSITION: seated waist-up portrait seen from slightly above and in three-quarter profile. He occupies the left-center, with his gaze directed into open space on the right. The parapet is one calm stone shape, the road a single pale turn through a blue-violet evening valley. A low unseen watchfire adds a small amber light to one cheek and the edge of his hand; most of the light is cool evening sky. Dignity, duty, loneliness and a little hope, not gleaming idealized chivalry. Broad folds, matte face, steel reflected with two or three deliberate touches. Keep the distant world spacious and comprehensible, and the entire painting in one unforced brushed language.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-b839caec-e408-47b4-8c01-af2131c55b68.png",
+      "file": "05-the-last-watchfire.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    },
+    {
+      "n": 6,
+      "slug": "a-voice-in-the-empty-chapel",
+      "title": "A Voice in the Empty Chapel",
+      "alignment": "Vigil",
+      "intent": "Sincere faith in the gods’ silence, expressed through an individual face and a simple light pattern.",
+      "prompt": "Use case: stylized-concept. Create one original Breachline fantasy CHARACTER PAINTING, landscape 1536 x 1024, 3:2. A complete finished painting, no text, border, card frame, signature, or reference-sheet panels. New character study, not a remake of an existing image.\nMEDIUM: a quietly assured traditional oil illustration, with the figure and environment built together from painted masses. Believable anatomy and weight. Use large connected shapes of light and shadow, rich observed color, thin shadow passages and a few solid opaque light strokes. Skin and cloth are naturally matte; metal has only a few selective reflections. The face belongs to the same painting as the coat and setting. Shapes remain intelligible all across the image; let definition soften modestly with distance and shadow, with a gradual transition. The surface feels brushed into existence, without a pasted-on texture, repeated dashes, palette-knife confetti, scratchy outlines, camera blur, glossy rendered skin or rubbery sculpted forms. Keep the focal face expressive and simply painted instead of tracing every wrinkle. The emotional presence and silhouette should be compelling at thumbnail size.\nSETTING: high fantasy about 150 years after the old Empire collapsed. The gods are silent. This is a lived-in, varied world with real but hard-won hope. Keep the subject specific and the surroundings selective. One main character.\nSUBJECT AND MOOD: A Still Flame priest, a human woman in her late fifties, stands alone in the roofless apse of an old modest chapel. She is quietly singing or speaking a prayer toward the absent roof; her lips are only slightly parted, and her expression is steady and searching. Deep warm-brown skin, a broad softly squared face, a wide rounded nose, heavy eyelids and tightly curled silver hair cut short. An individual ordinary face with dignity. Plain warm-ivory wool robe, a faded clay-red stole, simple opaque high linen collar. She holds one small closed clothbound prayer book naturally at waist height, both hands supporting its lower corners with relaxed fingers. No displayed writing or symbols, glowing eyes, halo or magical light threads.\nCOMPOSITION: three-quarter standing portrait framed from mid-thigh up. The woman occupies the right third, looking upward and left into a broad opening of soft blue-grey sky. One old arch and a simple wall enclose the scene with large quiet shapes. Morning sunlight falls obliquely across her forehead, one cheek, the book edge and a fold of ivory cloth; the rest stays in translucent warm and cool shadow. Quiet courage, compassion and unanswered faith. Keep the face, fingers, fabric and stone consistently painted, detail concentrated gently rather than sharply cut out. No shiny skin, densely scratched masonry, artificial impasto filter or photorealistic face pasted onto a sketch.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-3db25b2b-d720-4a83-9919-d567b726ceb9.png",
+      "file": "06-a-voice-in-the-empty-chapel.png",
+      "status": "pending_individual_selection",
+      "active_reference": false,
+      "tool": "Built-in image_gen",
+      "references_consulted_files": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/court-informant.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/bone-harvester.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/still-flame-chaplain.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/11-underbridge-vaporwright.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png"
+      ],
+      "reference_input_mode": "Visually consulted and described in prompt; no images attached to generation."
+    }
+  ]
+}

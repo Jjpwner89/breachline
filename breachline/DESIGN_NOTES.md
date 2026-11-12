@@ -14,7 +14,7 @@ Keep only current decisions. When one changes, edit or delete the old text inste
 
 ## Setting update (2026-11-10)
 
-The creator clarified attunement, learned magic, personal energy and overexertion, magical industry, rare portals, healing and spirits, and Ambrel's surviving university. The current account and remaining uncertainties are in [SETTING.md](SETTING.md#magic); consult it for new cards and art. The Mountain's Lung burns stored mana from stones to provide energy. Stored energy in the setting does not change the gameplay decision against buildings or a player mana bank.
+The creator clarified attunement, learned magic, personal energy and overexertion, magical industry, rare portals, healing, revival and spirits, and Ambrel's surviving university. Further clarifications cover routes of magical learning, the connection to a non-physical magical plane, enchanted possessions as a luxury, enforcement of harmful magic, ordinary imperial remnants and dragon communication. The current account and remaining uncertainties are in [SETTING.md](SETTING.md#magic); consult it for new cards and art. The Mountain's Lung burns stored mana from stones to provide energy; the stones are permanently spent afterward. Training increases magical capacity and efficiency; portals require unusual talent and difficult learned technique. Stored energy in the setting does not change the gameplay decision against buildings or a player mana bank.
 
 ## What the game is
 
