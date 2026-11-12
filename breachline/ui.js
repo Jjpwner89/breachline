@@ -223,20 +223,22 @@
     Object.keys(TILE_NAMES).forEach(function (k) {
       ['tile-', 'border-', 'emblem-'].forEach(function (p) { warmed[p + k] = new Image(); warmed[p + k].src = 'art/web/ui/' + p + k + '.png'; });
     });
-    var rest = Object.keys(ART), running = 0;
-    function next() {
-      while (running < 3 && rest.length) {
-        var id = rest.shift();
-        if (warmed[id]) continue;
-        running++;
-        var im = warmArt(id);
-        im.addEventListener('load', done);
-        im.addEventListener('error', done);
-      }
-    }
-    function done() { running--; next(); }
-    setTimeout(next, 3000);
+    setTimeout(trickle, 3000);
   });
+  // The deck list hurries the rest along, so the editor's full card pool is ready by the time it opens.
+  var rest = Object.keys(ART), running = 0, lanes = 3;
+  function trickle(more) {
+    if (more) lanes = Math.max(lanes, more);
+    while (running < lanes && rest.length) {
+      var id = rest.shift();
+      if (warmed[id]) continue;
+      running++;
+      var im = warmArt(id);
+      im.addEventListener('load', landed);
+      im.addEventListener('error', landed);
+    }
+  }
+  function landed() { running--; trickle(); }
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -1456,6 +1458,7 @@
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
     deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return Help.deck({ id: k }); },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
+    warmAllArt: function () { trickle(6); },
     showStart: showStart, playChapter: playChapter, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },
     inProgress: function () { return !!S && S.winner === null && !chapterBattle && !S.tutorial; },

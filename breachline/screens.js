@@ -326,6 +326,7 @@ var Screens = (function () {
   // Deck list
 
   function builder() {
+    GameUI.warmAllArt();
     var saved = Decks.saved();
     var mine = saved.map(function (d) {
       var tools = confirmDelete === d.id
