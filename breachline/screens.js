@@ -5,7 +5,10 @@ var Screens = (function () {
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
-  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null;
+  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null, flipped = null;
+  // The filter panel starts folded; whether it and each of its rows is open is remembered on this device.
+  var FOLD_KEY = 'breachline.filterFolds', folds = { panel: true };
+  try { folds = JSON.parse(localStorage.getItem(FOLD_KEY)) || folds; } catch (e) {}
   // The reserve card picked to swap into a campaign deck.
   var swapIn = null;
 
@@ -39,12 +42,6 @@ var Screens = (function () {
   function deckStatus(d) {
     var problems = E.deckProblems(d.list), short = Progress.missing(d.list);
     return problems.length ? problems[0] : short ? 'Missing ' + plural(short, 'card') : plural(E.deckSize(d.list), 'card');
-  }
-  function coverHtml(d) {
-    var art = coverArt(d.list);
-    return '<span class="cover">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
-      '<span class="dname">' + esc(d.name) + '</span>' +
-      '<span class="dmeta"><span class="csyms">' + E.deckColours(d.list).map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span>';
   }
 
   // Main menu, over the home scene
@@ -187,11 +184,11 @@ var Screens = (function () {
       else { army.style.transform = ''; if (pts.done) pts.done(); }
     })(performance.now());
   }
-  function deckGrid(list) {
+  function deckGrid(list, title) {
     var cards = list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(function (e) {
       return '<div class="pcard"><div class="card">' + GameUI.frameHtml(E.CARDS[e[0]]) + '</div>' + (e[1] > 1 ? '<span class="have">× ' + e[1] + '</span>' : '') + '</div>';
     }).join('');
-    return '<section class="pickset"><h2>Your deck: ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
+    return '<section class="pickset"><h2>' + (title || 'Your deck') + ': ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
   }
   // The campaign deck and its reserve. Pick a reserve card, then the deck card it replaces; the deck keeps its size.
   function runDeck(run) {
@@ -239,7 +236,8 @@ var Screens = (function () {
       }).join('');
     show('<div class="page">' + campaignHead('Campaign') + '<div class="camp">' + mapHtml(story, -1) +
       '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p>' +
-      '<p class="hint">You start with ' + esc(E.DECKS[story.starter].name) + '.</p></div>' +
+      '<p class="hint">You start with <b>' + esc(E.DECKS[story.starter].name) + '</b>. ' + esc(Help.deck({ id: story.starter })) + '</p>' +
+      '<p class="hint"><b>' + GameUI.ALIGNMENT[story.colour] + '.</b> ' + esc(Help.alignment(story.colour)) + '</p></div>' +
       '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
@@ -332,25 +330,64 @@ var Screens = (function () {
     var mine = saved.map(function (d) {
       var tools = confirmDelete === d.id
         ? '<span class="dask">Delete this deck?</span><button type="button" class="btn danger" ' + act('deleteDeck', d.id) + '>Delete</button><button type="button" class="btn" ' + act('keepDeck') + '>Keep</button>'
-        : '<button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
-      return '<div class="dcard"><button type="button" class="dtile" ' + act('edit', d.id) + ' aria-label="Edit ' + esc(d.name) + '">' + coverHtml(d) + '</button><div class="dtools">' + tools + '</div></div>';
+        : '<button type="button" class="btn primary" ' + act('edit', d.id) + '>Edit</button><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
+      return deckCard(d, '', tools);
     }).join('');
-    var fixed = function (d) {
-      return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
+    var fixed = function (d, hint) {
+      return deckCard(d, hint, '<button type="button" class="btn" ' + act('viewDeck', d.id) + '>View</button><button type="button" class="btn" ' + act('copyDeck', d.id) + ' aria-label="Copy to edit">Copy</button>');
     };
     var owns = Progress.state().starters, story = function (k) { return Campaign.ORDER.map(function (id) { return Campaign.STORIES[id]; }).filter(function (x) { return x.starter === k; })[0]; };
     var starters = Decks.starters().map(function (d) {
       if (owns.indexOf(d.id) >= 0 || Progress.state().unlocked) return fixed(d);
       var s = story(d.id);
-      return '<div class="dcard locked"><div class="dtile static">' + coverHtml(d) + '</div><p class="hint">' + (s ? 'Beat ' + esc(s.title) + ' to win this deck.' : 'Not yours yet.') + '</p><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
-    }).join(''), themes = Decks.themes().map(fixed).join('');
-    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><button type="button" class="btn primary push" ' + act('newDeck') + '>New deck</button></header>' +
+      return fixed(d, s ? 'Beat ' + s.title + ' to win this deck.' : 'Not yours yet.');
+    }).join(''), themes = Decks.themes().map(function (d) { return fixed(d); }).join('');
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><span class="push">' + Help.button() + '</span><button type="button" class="btn primary" ' + act('newDeck') + '>New deck</button></header>' +
       (Decks.persistent() ? '' : '<p class="warn">This browser is blocking storage, so decks last only until you close this tab.</p>') +
       '<section class="pickset"><h2>Your decks</h2>' + (mine ? '<div class="dtiles">' + mine + '</div>' : '<p class="hint">Nothing saved yet. Start a new deck, or copy a starter below and change it.</p>') + '</section>' +
       '<section class="pickset"><h2>Starter decks</h2><div class="dtiles">' + starters + '</div></section>' +
       '<section class="pickset"><h2>Theme decks</h2><p class="hint">One for each newer mechanic, built and tested against the starters.</p><div class="dtiles">' + themes + '</div></section></div>', builder);
+    fitAll();
   }
-  actions.builder = function () { confirmDelete = null; builder(); };
+  // A deck is a card: its painting and name on the front, and on the back its plan and what you can do with it. Selecting one turns it over.
+  function deckCard(d, hint, tools) {
+    var cols = E.deckColours(d.list), c = cols[0] || 'N', art = coverArt(d.list), open = flipped === d.id;
+    var front = '<button type="button" class="dface dfront" ' + act('flipDeck', d.id) + ' aria-label="' + esc(d.name) + ', turn over"' + (open ? ' inert' : '') + '>' +
+      '<span class="frame ' + c + '"><span class="inner"><span class="bar-top">' + esc(d.name) + '</span>' +
+      '<span class="art">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
+      '<span class="band"><span class="type">' + (cols.length ? cols.map(function (k) { return GameUI.ALIGNMENT[k]; }).join(' · ') : 'Empty') + '</span></span>' +
+      '<span class="ctext"><span class="csyms">' + cols.map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span></span></span></button>';
+    var back = '<div class="dface dback" ' + act('flipDeck', d.id) + (open ? '' : ' inert') + '><b class="dbname">' + esc(d.name) + '</b>' +
+      '<p class="dnote">' + esc(Help.deck(d)) + '</p>' + (hint ? '<p class="dlock">' + esc(hint) + '</p>' : '') +
+      '<div class="dtools">' + tools + '</div></div>';
+    return '<div class="dcard' + (hint ? ' locked' : '') + (open ? ' flipped' : '') + '" data-deck="' + esc(d.id) + '"><div class="dflip">' + front + back + '</div></div>';
+  }
+  // Turn a deck over, or back. Only one deck shows its back at a time.
+  function turnDeck(el, open) {
+    el.classList.toggle('flipped', open);
+    el.querySelector('.dfront').inert = open;
+    el.querySelector('.dback').inert = !open;
+  }
+  actions.flipDeck = function (id) {
+    var was = flipped && root.querySelector('.dcard.flipped');
+    if (was) turnDeck(was, false);
+    flipped = flipped === id ? null : id;
+    var el = flipped && root.querySelector('.dcard[data-deck="' + flipped + '"]');
+    if (el) { turnDeck(el, true); el.querySelector('.dback .btn').focus({ preventScroll: true }); }
+    else if (was) was.querySelector('.dfront').focus({ preventScroll: true });
+    Sfx.play('card-flip', { gap: 0 });
+  };
+  // A starter or theme deck, card by card. Copy it to change it.
+  function viewDeck(d) {
+    var c = E.deckColours(d.list)[0];
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>' + esc(d.name) + '</h1>' +
+      '<span class="push"></span><button type="button" class="btn primary" ' + act('copyDeck', d.id) + '>Copy to edit</button></header>' +
+      '<p class="lead dview">' + esc(Help.deck(d)) + (c ? ' <span class="hint">' + symbol(c) + '<b>' + GameUI.ALIGNMENT[c] + '.</b> ' + esc(Help.alignment(c)) + '</span>' : '') + '</p>' +
+      deckGrid(d.list, 'Cards') + '</div>', function () { viewDeck(d); });
+    fitAll();
+  }
+  actions.viewDeck = function (id) { viewDeck(Decks.find(id)); };
+  actions.builder = function () { confirmDelete = null; flipped = null; builder(); };
   actions.newDeck = function () { editor(Decks.create('New deck')); };
   actions.edit = function (id) { editor(Decks.find(id)); };
   actions.copyDeck = function (id) {
@@ -360,7 +397,7 @@ var Screens = (function () {
   };
   actions.askDelete = function (id) { confirmDelete = id; builder(); };
   actions.keepDeck = function () { confirmDelete = null; builder(); };
-  actions.deleteDeck = function (id) { Decks.remove(id); confirmDelete = null; builder(); };
+  actions.deleteDeck = function (id) { Decks.remove(id); confirmDelete = null; flipped = null; builder(); };
 
   // Deck editor
 
@@ -384,19 +421,20 @@ var Screens = (function () {
   function editor(deck) {
     ed = { deck: deck, pool: Decks.pool(deck.mode), peek: null, saved: deck.updated > 0, msg: '' };
     if (deck.missing) ed.msg = plural(deck.missing, 'card') + ' in this deck no longer exist' + (deck.missing === 1 ? 's' : '') + ' and were taken out.';
-    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span></header>' +
+    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span>' + Help.button() + '</header>' +
       '<div class="ebody">' +
       '<aside class="closeup" id="closeup" ' + act('closeZoom') + ' aria-label="Card close-up"></aside>' +
       '<section class="cards" aria-label="Cards">' +
-        '<details class="filters" id="filters"><summary><span id="filterSum"></span><span class="fcount" id="fcount"></span></summary>' +
-          '<label class="fsearch"><span>Search</span><input type="search" id="fq" autocomplete="off" placeholder="Name or rules text" value="' + esc(filters.q) + '"></label><div id="fchips"></div></details>' +
+        '<div class="filters" id="filters"><div class="fhead"><button type="button" class="ftoggle" id="ftoggle" aria-controls="fchips" ' + act('foldFilter', 'panel') + '>Filters</button>' +
+          '<span class="fpicked" id="filterSum"></span>' +
+          '<label class="fsearch"><span class="sr">Search</span><input type="search" id="fq" autocomplete="off" placeholder="Search name or rules text" value="' + esc(filters.q) + '"></label>' +
+          '<span class="fcount" id="fcount"></span></div><div class="fbody" id="fchips"></div></div>' +
         '<div class="cgrid" id="cgrid"></div></section>' +
       '<aside class="dpanel" id="dpanel" aria-label="Your deck">' +
         '<div class="dtop"><label class="sr" for="dname">Deck name</label><input type="text" id="dname" maxlength="40" value="' + esc(deck.name) + '"><button type="button" class="btn dclose" ' + act('closeDeck') + '>Back to cards</button></div>' +
         '<div id="dsum"></div><div class="dlist" id="dlist"></div><div class="dfoot" id="dfoot"></div></aside>' +
       '<button type="button" class="btn primary dopen" id="dopen" ' + act('openDeck') + '></button>' +
-      '</div></div>', function () { drawGrid(); });
-    byId('filters').open = !window.matchMedia('(max-width: 820px)').matches;
+      '</div></div>', function () { drawGrid(true); });
     drawFilters();
     drawGrid();
     drawDeck();
@@ -417,11 +455,46 @@ var Screens = (function () {
     var factions = E.FACTIONS.filter(factionShown).map(function (f) {
       return chip('faction', f.id, '<span class="fdot ' + f.colour + '" aria-hidden="true"></span>' + f.name.replace(/^The /, ''), filters.faction[f.id]);
     }).join('') + chip('faction', 'none', 'No faction', filters.faction.none);
-    byId('fchips').innerHTML =
-      '<div class="frow"><span class="flabel">Type</span><div class="chips">' + types + '</div></div>' +
-      '<div class="frow"><span class="flabel">Colour</span><div class="chips">' + colours + '</div></div>' +
-      '<div class="frow"><span class="flabel">Faction</span><div class="chips">' + factions + '</div></div>' +
-      '<div class="frow"><span class="flabel">Show</span><div class="chips">' + chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned') + '</div></div>';
+    var own = chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned');
+    var picked = pickedNames();
+    byId('fchips').innerHTML = filterRow('own', 'Show', own, picked.own) + filterRow('colour', 'Colour', colours, picked.colour) +
+      filterRow('type', 'Type', types, picked.type) + filterRow('faction', 'Faction', factions, picked.faction) + filterNote();
+    var shut = !!folds.panel;
+    byId('filters').classList.toggle('shut', shut);
+    byId('fchips').hidden = shut;
+    byId('ftoggle').setAttribute('aria-expanded', !shut);
+    drawPicked();
+  }
+  // A folded row keeps its label and says what is picked in it.
+  function filterRow(group, label, chips, picked) {
+    var shut = !!folds[group];
+    return '<div class="frow' + (shut ? ' shut' : '') + '"><button type="button" class="flabel" aria-expanded="' + !shut + '" ' + act('foldFilter', group) + '>' + label + '</button>' +
+      (shut ? '<span class="fpick">' + esc(picked.join(', ') || 'Any') + '</span>' : '<div class="chips">' + chips + '</div>') + '</div>';
+  }
+  function pickedNames() {
+    var on = function (g) { return Object.keys(filters[g]).filter(function (k) { return filters[g][k]; }); };
+    return {
+      own: [filters.own === 'owned' ? 'Cards I own' : 'Every card'],
+      colour: on('colour').map(function (c) { return GameUI.ALIGNMENT[c]; }),
+      type: on('type').map(function (t) { return GameUI.TYPES[t]; }),
+      faction: on('faction').map(function (k) {
+        var f = E.FACTIONS.filter(function (x) { return x.id === k; })[0];
+        return f ? f.name.replace(/^The /, '') : 'No faction';
+      })
+    };
+  }
+  // With the panel folded, its bar lists what is filtered.
+  function drawPicked() {
+    var p = pickedNames(), list = (filters.own === 'owned' ? p.own : []).concat(p.colour, p.type, p.faction);
+    byId('filterSum').textContent = folds.panel ? list.join(' · ') : '';
+  }
+  // With one colour or one faction picked, a line under the filters says what it's good at, or a word from inside it.
+  function filterNote() {
+    var on = function (g) { return Object.keys(filters[g]).filter(function (k) { return filters[g][k]; }); };
+    var cs = on('colour'), fs = on('faction').filter(function (k) { return k !== 'none'; });
+    if (fs.length === 1) return '<p class="fnote">' + Help.factionHtml(fs[0]) + '</p>';
+    if (cs.length === 1 && cs[0] !== 'N') return '<p class="fnote"><b>' + GameUI.ALIGNMENT[cs[0]] + '.</b> ' + esc(Help.alignment(cs[0])) + '</p>';
+    return '';
   }
   function activeFilters() {
     return ['type', 'colour', 'faction'].reduce(function (n, g) {
@@ -436,12 +509,19 @@ var Screens = (function () {
       '<span class="have" hidden></span><span class="qty" aria-hidden="true"></span><span class="nown" hidden>Not owned</span>' +
       '<button type="button" class="minus" ' + act('remove', id) + ' aria-label="Take ' + esc(c.name) + ' out of deck" hidden>&minus;</button></div>';
   }
-  function drawGrid() {
-    var ids = ed.pool.ids.filter(function (id) { return matches(E.CARDS[id]); }).sort(cardOrder), n = activeFilters();
-    byId('cgrid').innerHTML = ids.length ? ids.map(pickHtml).join('') : '<p class="hint none">No cards match these filters.</p>';
-    GameUI.fitCards(byId('cgrid'));
-    byId('filterSum').textContent = n ? 'Filters (' + n + ')' : 'Filters';
-    byId('fcount').innerHTML = ids.length + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
+  // Every card is drawn once; a filter only hides and shows them, so turning one off doesn't redraw and refit the whole pool.
+  // A hidden card is fitted when it first shows.
+  function drawGrid(rebuild) {
+    var grid = byId('cgrid'), n = activeFilters(), shown = 0, fit = rebuild || !grid.querySelector('.pcard');
+    if (fit) grid.innerHTML = ed.pool.ids.slice().sort(cardOrder).map(pickHtml).join('') + '<p class="hint none">No cards match these filters.</p>';
+    Array.prototype.forEach.call(grid.querySelectorAll('.pcard'), function (el) {
+      var on = matches(E.CARDS[el.dataset.cardId]);
+      el.hidden = !on;
+      shown += on;
+    });
+    grid.querySelector('.none').hidden = !!shown;
+    if (fit) GameUI.fitCards(grid);
+    byId('fcount').innerHTML = shown + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
     drawBadges();
   }
   function drawBadges() {
@@ -547,7 +627,7 @@ var Screens = (function () {
     var art = GameUI.artUrl(id) ? ' ' + act('viewArt', id) : '';
     byId('closeup').innerHTML = '<div class="slot' + (art ? ' viewable' : '') + '"' + art + ' title="' + (art ? 'View the full painting' : '') + '">' + GameUI.frameHtml(c, { big: true }) + '</div>' +
       (art ? '<button type="button" class="btn artbtn"' + art + '>View full art</button>' : '') +
-      '<p class="hint">' + (f ? f.name : 'No faction') + '</p>';
+      '<p class="hint">' + (f ? Help.factionHtml(f.id) : 'No faction') + '</p>';
   }
 
   // The full painting, large, over everything. It shows the game's copy at once, then the full-size original if this copy of the game has it.
@@ -580,6 +660,11 @@ var Screens = (function () {
     if (group === 'colour') E.FACTIONS.forEach(function (f) { if (!factionShown(f)) filters.faction[f.id] = false; });
     keepFocus(drawFilters);
     drawGrid();
+  };
+  actions.foldFilter = function (group) {
+    folds[group] = !folds[group];
+    try { localStorage.setItem(FOLD_KEY, JSON.stringify(folds)); } catch (e) {}
+    keepFocus(drawFilters);
   };
   actions.clearFilters = function () {
     filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' };
@@ -658,10 +743,11 @@ var Screens = (function () {
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
-  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
   var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
+    if (!b && flipped && !e.target.closest('.dcard')) return actions.flipDeck(flipped);
     if (!b || b.disabled) return;
     var name = b.dataset.act, arg = b.dataset.arg;
     lastAct = b;
@@ -685,6 +771,7 @@ var Screens = (function () {
     var v = byId('artView');
     if (v && !v.hidden) actions.closeArt();
     else if (byId('closeup')) actions.closeZoom();
+    else if (flipped && root.querySelector('.dcard.flipped')) actions.flipDeck(flipped);
   });
 
   function redraw() { if (refresh && !root.hidden) refresh(); }

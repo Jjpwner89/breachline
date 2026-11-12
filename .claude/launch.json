@@ -55,6 +55,15 @@
         "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-ui-redesign-3f7efc/fd0d4a8a-0a5b-4c85-a184-e95648643d01/scratchpad/site && exec python3 -m http.server 8771 --bind 127.0.0.1"
       ],
       "port": 8771
+    },
+    {
+      "name": "new-player-help",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/98895e85-5fc5-47e2-a64c-538a6d570f7e/scratchpad/site && exec python3 -m http.server 8787 --bind 127.0.0.1"
+      ],
+      "port": 8787
     }
   ]
 }
