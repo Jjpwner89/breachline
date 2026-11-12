@@ -255,6 +255,10 @@ Worth playtesting:
 - **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
 - **Commit name:** commits show as `DP User`, from the Mac account.
 
+## Parked for later
+
+Card features, keywords and gameplay ideas waiting for a future expansion are in `FUTURE_FEATURES.md`. Check it when designing new cards, and add none of them without the creator's approval.
+
 ## Tried and set aside
 
 - A party of three heroes on four lanes, with cards locked to a living hero. The creator chose an unseen summoner.
