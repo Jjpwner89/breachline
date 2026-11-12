@@ -1,25 +1,25 @@
 // Sound. Each moment has one file in sfx/, listed in sfx/CREDITS.md. Sounds load on first use and play through Web Audio,
 // so a sound can be pitched, layered and long files trimmed. Two tavern tunes play quietly underneath. A muted table
-// stays muted between visits.
+// stays muted between visits. Sounds are .ogg or .wav: the published page can't serve .mp4 audio to other viewers.
 var Sfx = (function () {
   var FILES = {
-    'card-draw': 'card-draw.ogg', 'card-hover': 'card-hover.mp4', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
-    'unit-summon': 'unit-summon.mp4', slash: 'attack-slash.mp4', spear: 'attack-spear.mp4', arrow: 'attack-arrow.mp4', magic: 'attack-magic.mp4',
+    'card-draw': 'card-draw.ogg', 'card-hover': 'card-hover.wav', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
+    'unit-summon': 'unit-summon.wav', slash: 'attack-slash.wav', spear: 'attack-spear.wav', arrow: 'attack-arrow.wav', magic: 'attack-magic.wav',
     crush: 'attack-crush.ogg',
-    'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.mp4', 'enemy-turn': 'enemy-turn.ogg',
-    'button-press': 'button-press.mp4', 'button-hover': 'button-hover.mp4', 'page-turn': 'page-turn.ogg', 'map-step': 'map-step.ogg',
-    stamp: 'seal-stamp.ogg', 'coin-drop': 'coin-drop.mp4', 'coin-pile': 'coin-pile.mp4', victory: 'victory.mp4', 'level-up': 'level-up.mp4', defeat: 'defeat.mp4', 'defeat-run': 'defeat-run.mp4',
-    'spell-vigil': 'spell-vigil.mp4', 'spell-gnosis': 'spell-gnosis.mp4', 'spell-ice': 'spell-ice.mp4',
-    'spell-lightning': 'spell-lightning.mp4', 'spell-fire': 'spell-fire.mp4', 'spell-dominion': 'spell-dominion.ogg', 'spell-genesis': 'spell-genesis.mp4',
-    'impact-fire': 'impact-fire.mp4', 'impact-lightning': 'impact-lightning.mp4', 'impact-genesis': 'impact-genesis.mp4',
-    enchant: 'enchant.mp4', equip: 'equip.mp4', curse: 'curse.mp4', heal: 'heal.mp4', 'hit-unit': 'hit-unit.mp4', ward: 'ward.mp4',
-    'unit-move': 'unit-move.mp4', 'end-turn': 'end-turn.mp4', 'not-allowed': 'not-allowed.ogg',
-    'music-tower-inn': 'music-tower-inn.mp4', 'music-kings-feast': 'music-kings-feast.mp4'
+    'beast-death': 'beast-death.ogg', 'summoner-hit': 'summoner-hit.wav', 'enemy-turn': 'enemy-turn.ogg',
+    'button-press': 'button-press.wav', 'button-hover': 'button-hover.wav', 'page-turn': 'page-turn.ogg', 'map-step': 'map-step.ogg',
+    stamp: 'seal-stamp.ogg', 'coin-drop': 'coin-drop.wav', 'coin-pile': 'coin-pile.wav', victory: 'victory.wav', 'level-up': 'level-up.wav', defeat: 'defeat.wav', 'defeat-run': 'defeat-run.wav',
+    'spell-vigil': 'spell-vigil.wav', 'spell-gnosis': 'spell-gnosis.wav', 'spell-ice': 'spell-ice.wav',
+    'spell-lightning': 'spell-lightning.wav', 'spell-fire': 'spell-fire.wav', 'spell-dominion': 'spell-dominion.ogg', 'spell-genesis': 'spell-genesis.wav',
+    'impact-fire': 'impact-fire.wav', 'impact-lightning': 'impact-lightning.wav', 'impact-genesis': 'impact-genesis.wav',
+    enchant: 'enchant.wav', equip: 'equip.wav', curse: 'curse.wav', heal: 'heal.wav', 'hit-unit': 'hit-unit.wav', ward: 'ward.wav',
+    'unit-move': 'unit-move.wav', 'end-turn': 'end-turn.wav', 'not-allowed': 'not-allowed.ogg',
+    'music-tower-inn': 'music-tower-inn.wav', 'music-kings-feast': 'music-kings-feast.wav'
   };
   // A thrown spell's three stages each have an air layer every spell shares and, for most elements, a sound of its own.
   var ELEMENTS = ['fire', 'ice', 'lightning', 'vigil', 'gnosis', 'dominion', 'genesis'], STAGES = [];
   ['charge', 'launch', 'flight'].forEach(function (stage) {
-    ['air'].concat(ELEMENTS).forEach(function (el) { STAGES.push(stage + '-' + el); FILES[stage + '-' + el] = stage + '-' + el + (stage === 'launch' && el === 'fire' ? '.ogg' : '.mp4'); });
+    ['air'].concat(ELEMENTS).forEach(function (el) { STAGES.push(stage + '-' + el); FILES[stage + '-' + el] = stage + '-' + el + (stage === 'launch' && el === 'fire' ? '.ogg' : '.wav'); });
   });
   // No charge fitted Vigil or Gnosis, nor a launch Gnosis: those stages play the air alone.
   ['charge-vigil', 'charge-gnosis', 'launch-gnosis'].forEach(function (name) { delete FILES[name]; });
