@@ -477,15 +477,6 @@
       frameHtml(c, { cost: E.costOf(S, HUMAN, c, i), have: have }) + '</span></button>';
   }
 
-  // Shrinks one line of text until it fits its width, down to a floor, measured in the card's cqw.
-  function shrinkToFit(el, floor) {
-    var cqw = el.closest('.frame').offsetWidth / 100;
-    if (!cqw) return;
-    el.style.fontSize = '';
-    var size = parseFloat(getComputedStyle(el).fontSize) / cqw;
-    while (el.scrollWidth > el.clientWidth && size > floor) { size -= 0.2; el.style.fontSize = size + 'cqw'; }
-  }
-
   // Names and the band stay on one line, shrinking for long ones. Small cards have little room, so a line that doesn't fit is
   // left for the close-up, and rules text that still doesn't fit gets smaller twice. The art is never cropped.
   // A card drawn while hidden can't be measured, so it fits itself when it first appears.
@@ -495,17 +486,45 @@
       else if (e.target.offsetWidth) { unsized.unobserve(e.target); fitFrame(e.target); }
     });
   }) : null;
-  function fitFrame(fr) {
-    if (!fr.offsetWidth) { if (unsized) unsized.observe(fr); return; }
-    var big = fr.classList.contains('big'), t = fr.querySelector('.ctext'), f = t.querySelector('.flavour');
-    shrinkToFit(fr.querySelector('.bar-top'), big ? 4 : 5.2);
-    shrinkToFit(fr.querySelector('.band .type'), big ? 2.6 : 3.4);
-    var over = function () { return t.scrollHeight > t.clientHeight; };
-    if (f && over()) t.removeChild(f);
-    if (over()) t.classList.add('tight');
-    if (over()) t.classList.add('tighter');
+  // Every card is measured in the same pass and changed in the next, since each measurement after a change makes the page lay
+  // itself out again. A long line's size comes from one measurement, as text narrows in step with its size.
+  function fitFrames(frames) {
+    var cards = [], lines = [];
+    frames.forEach(function (fr) { var w = fr.offsetWidth; if (w) cards.push({ fr: fr, cqw: w / 100 }); else if (unsized) unsized.observe(fr); });
+    cards.forEach(function (k) {
+      var big = k.fr.classList.contains('big');
+      [[k.fr.querySelector('.bar-top'), big ? 4 : 5.2], [k.fr.querySelector('.band .type'), big ? 2.6 : 3.4]].forEach(function (l) {
+        if (!l[0]) return;
+        l[0].style.fontSize = '';
+        lines.push({ el: l[0], floor: l[1], cqw: k.cqw });
+      });
+    });
+    lines.forEach(function (l) {
+      var cs = getComputedStyle(l.el), pad = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight);
+      l.size = parseFloat(cs.fontSize) / l.cqw;
+      l.over = l.el.scrollWidth > l.el.clientWidth;
+      if (l.over) l.to = Math.max(l.floor, Math.floor(l.size * (l.el.clientWidth - pad) / (l.el.scrollWidth - pad) * 10) / 10);
+    });
+    lines = lines.filter(function (l) { return l.over && l.to < l.size; });
+    lines.forEach(function (l) { l.el.style.fontSize = l.to + 'cqw'; });
+    // Rounding can leave a line a hair too wide; those few step down the old way.
+    lines.filter(function (l) { return l.el.scrollWidth > l.el.clientWidth; }).forEach(function (l) {
+      var size = l.to;
+      while (l.el.scrollWidth > l.el.clientWidth && size > l.floor) { size -= 0.2; l.el.style.fontSize = size + 'cqw'; }
+    });
+    var texts = cards.map(function (k) { var t = k.fr.querySelector('.ctext'); return { t: t, f: t.querySelector('.flavour') }; });
+    var over = function (x) { return x.t.scrollHeight > x.t.clientHeight; };
+    texts.filter(function (x) { return x.f && over(x); }).forEach(function (x) { x.t.removeChild(x.f); });
+    texts.filter(over).forEach(function (x) { x.t.classList.add('tight'); });
+    texts.filter(over).forEach(function (x) { x.t.classList.add('tighter'); });
   }
-  function fitCards(host) { Array.prototype.forEach.call(host.querySelectorAll('.frame'), fitFrame); }
+  function fitFrame(fr) { fitFrames([fr]); }
+  // Takes one element, or a list of them to fit in the same pass.
+  function fitCards(hosts) {
+    var frames = [];
+    Array.prototype.forEach.call(hosts.nodeType ? [hosts] : hosts, function (h) { frames.push.apply(frames, h.querySelectorAll('.frame')); });
+    fitFrames(frames);
+  }
 
   // The large card. It only redraws when the card changes, so bot turns don't reset it.
   function showCard(id, note) {

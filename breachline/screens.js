@@ -511,22 +511,34 @@ var Screens = (function () {
       '<button type="button" class="minus" ' + act('remove', id) + ' aria-label="Take ' + esc(c.name) + ' out of deck" hidden>&minus;</button></div>';
   }
   // Every card is drawn once; a filter only hides and shows them, so turning one off doesn't redraw and refit the whole pool.
-  // A hidden card is fitted when it first shows.
+  // A hidden card is fitted when it first shows. A fresh grid draws the first screenful of matching cards at once and adds
+  // the rest a batch at a time, so the editor opens straight away instead of waiting for the whole pool to be laid out.
+  var gridRun = 0;
   function drawGrid(rebuild) {
-    var grid = byId('cgrid'), n = activeFilters(), shown = 0, fit = rebuild || !grid.querySelector('.pcard');
-    if (fit) grid.innerHTML = ed.pool.ids.slice().sort(cardOrder).map(pickHtml).join('') + '<p class="hint none">No cards match these filters.</p>';
-    Array.prototype.forEach.call(grid.querySelectorAll('.pcard'), function (el) {
-      var on = matches(E.CARDS[el.dataset.cardId]);
-      el.hidden = !on;
-      shown += on;
-    });
+    var grid = byId('cgrid'), n = activeFilters();
+    var shown = ed.pool.ids.filter(function (id) { return matches(E.CARDS[id]); }).length;
+    if (rebuild || !grid.querySelector('.pcard, .none')) {
+      var run = ++gridRun, left = ed.pool.ids.slice().sort(cardOrder);
+      grid.innerHTML = '<p class="hint none">No cards match these filters.</p>';
+      var more = function () {
+        if (run !== gridRun || !grid.isConnected) return;
+        var box = document.createElement('div'), took = 0, html = '';
+        while (left.length && took < 24) { var id = left.shift(); html += pickHtml(id); took += matches(E.CARDS[id]); }
+        box.innerHTML = html;
+        var els = Array.prototype.slice.call(box.children), none = grid.querySelector('.none');
+        els.forEach(function (el) { el.hidden = !matches(E.CARDS[el.dataset.cardId]); grid.insertBefore(el, none); });
+        drawBadges(els);
+        GameUI.fitCards(els);
+        if (left.length) setTimeout(more, 0);
+      };
+      more();
+    } else Array.prototype.forEach.call(grid.querySelectorAll('.pcard'), function (el) { el.hidden = !matches(E.CARDS[el.dataset.cardId]); });
     grid.querySelector('.none').hidden = !!shown;
-    if (fit) GameUI.fitCards(grid);
     byId('fcount').innerHTML = shown + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
     drawBadges();
   }
-  function drawBadges() {
-    Array.prototype.forEach.call(byId('cgrid').querySelectorAll('.pcard'), function (el) {
+  function drawBadges(els) {
+    Array.prototype.forEach.call(els || byId('cgrid').querySelectorAll('.pcard'), function (el) {
       var id = el.dataset.cardId, have = countOf(id), limit = ed.pool.copies(id), badge = el.querySelector('.have'), cap = Math.min(limit, E.maxCopies(id));
       // Up to four copies show as pips under the card; lands and other open-ended cards keep a count.
       var pips = cap <= 4 && cap > 0;
