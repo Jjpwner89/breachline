@@ -5,7 +5,7 @@ var Screens = (function () {
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
-  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null;
+  var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null, flipped = null;
   // The reserve card picked to swap into a campaign deck.
   var swapIn = null;
 
@@ -39,13 +39,6 @@ var Screens = (function () {
   function deckStatus(d) {
     var problems = E.deckProblems(d.list), short = Progress.missing(d.list);
     return problems.length ? problems[0] : short ? 'Missing ' + plural(short, 'card') : plural(E.deckSize(d.list), 'card');
-  }
-  function deckNote(d) { return '<p class="dnote">' + esc(Help.deck(d)) + '</p>'; }
-  function coverHtml(d) {
-    var art = coverArt(d.list);
-    return '<span class="cover">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
-      '<span class="dname">' + esc(d.name) + '</span>' +
-      '<span class="dmeta"><span class="csyms">' + E.deckColours(d.list).map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span>';
   }
 
   // Main menu, over the home scene
@@ -188,11 +181,11 @@ var Screens = (function () {
       else { army.style.transform = ''; if (pts.done) pts.done(); }
     })(performance.now());
   }
-  function deckGrid(list) {
+  function deckGrid(list, title) {
     var cards = list.slice().sort(function (a, b) { return cardOrder(a[0], b[0]); }).map(function (e) {
       return '<div class="pcard"><div class="card">' + GameUI.frameHtml(E.CARDS[e[0]]) + '</div>' + (e[1] > 1 ? '<span class="have">× ' + e[1] + '</span>' : '') + '</div>';
     }).join('');
-    return '<section class="pickset"><h2>Your deck: ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
+    return '<section class="pickset"><h2>' + (title || 'Your deck') + ': ' + plural(E.deckSize(list), 'card') + '</h2><div class="cgrid rdeck">' + cards + '</div></section>';
   }
   // The campaign deck and its reserve. Pick a reserve card, then the deck card it replaces; the deck keeps its size.
   function runDeck(run) {
@@ -334,25 +327,64 @@ var Screens = (function () {
     var mine = saved.map(function (d) {
       var tools = confirmDelete === d.id
         ? '<span class="dask">Delete this deck?</span><button type="button" class="btn danger" ' + act('deleteDeck', d.id) + '>Delete</button><button type="button" class="btn" ' + act('keepDeck') + '>Keep</button>'
-        : '<button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
-      return '<div class="dcard"><button type="button" class="dtile" ' + act('edit', d.id) + ' aria-label="Edit ' + esc(d.name) + '">' + coverHtml(d) + '</button>' + deckNote(d) + '<div class="dtools">' + tools + '</div></div>';
+        : '<button type="button" class="btn primary" ' + act('edit', d.id) + '>Edit</button><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy</button><button type="button" class="btn" ' + act('askDelete', d.id) + '>Delete</button>';
+      return deckCard(d, '', tools);
     }).join('');
-    var fixed = function (d) {
-      return '<div class="dcard"><div class="dtile static">' + coverHtml(d) + '</div>' + deckNote(d) + '<div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
+    var fixed = function (d, hint) {
+      return deckCard(d, hint, '<button type="button" class="btn" ' + act('viewDeck', d.id) + '>View</button><button type="button" class="btn" ' + act('copyDeck', d.id) + ' aria-label="Copy to edit">Copy</button>');
     };
     var owns = Progress.state().starters, story = function (k) { return Campaign.ORDER.map(function (id) { return Campaign.STORIES[id]; }).filter(function (x) { return x.starter === k; })[0]; };
     var starters = Decks.starters().map(function (d) {
       if (owns.indexOf(d.id) >= 0 || Progress.state().unlocked) return fixed(d);
       var s = story(d.id);
-      return '<div class="dcard locked"><div class="dtile static">' + coverHtml(d) + '</div>' + deckNote(d) + '<p class="hint">' + (s ? 'Beat ' + esc(s.title) + ' to win this deck.' : 'Not yours yet.') + '</p><div class="dtools"><button type="button" class="btn" ' + act('copyDeck', d.id) + '>Copy to edit</button></div></div>';
-    }).join(''), themes = Decks.themes().map(fixed).join('');
+      return fixed(d, s ? 'Beat ' + s.title + ' to win this deck.' : 'Not yours yet.');
+    }).join(''), themes = Decks.themes().map(function (d) { return fixed(d); }).join('');
     show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Deck builder</h1><span class="push">' + Help.button() + '</span><button type="button" class="btn primary" ' + act('newDeck') + '>New deck</button></header>' +
       (Decks.persistent() ? '' : '<p class="warn">This browser is blocking storage, so decks last only until you close this tab.</p>') +
       '<section class="pickset"><h2>Your decks</h2>' + (mine ? '<div class="dtiles">' + mine + '</div>' : '<p class="hint">Nothing saved yet. Start a new deck, or copy a starter below and change it.</p>') + '</section>' +
       '<section class="pickset"><h2>Starter decks</h2><div class="dtiles">' + starters + '</div></section>' +
       '<section class="pickset"><h2>Theme decks</h2><p class="hint">One for each newer mechanic, built and tested against the starters.</p><div class="dtiles">' + themes + '</div></section></div>', builder);
+    fitAll();
   }
-  actions.builder = function () { confirmDelete = null; builder(); };
+  // A deck is a card: its painting and name on the front, and on the back its plan and what you can do with it. Selecting one turns it over.
+  function deckCard(d, hint, tools) {
+    var cols = E.deckColours(d.list), c = cols[0] || 'N', art = coverArt(d.list), open = flipped === d.id;
+    var front = '<button type="button" class="dface dfront" ' + act('flipDeck', d.id) + ' aria-label="' + esc(d.name) + ', turn over"' + (open ? ' inert' : '') + '>' +
+      '<span class="frame ' + c + '"><span class="inner"><span class="bar-top">' + esc(d.name) + '</span>' +
+      '<span class="art">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
+      '<span class="band"><span class="type">' + (cols.length ? cols.map(function (k) { return GameUI.ALIGNMENT[k]; }).join(' · ') : 'Empty') + '</span></span>' +
+      '<span class="ctext"><span class="csyms">' + cols.map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span></span></span></button>';
+    var back = '<div class="dface dback" ' + act('flipDeck', d.id) + (open ? '' : ' inert') + '><b class="dbname">' + esc(d.name) + '</b>' +
+      '<p class="dnote">' + esc(Help.deck(d)) + '</p>' + (hint ? '<p class="dlock">' + esc(hint) + '</p>' : '') +
+      '<div class="dtools">' + tools + '</div></div>';
+    return '<div class="dcard' + (hint ? ' locked' : '') + (open ? ' flipped' : '') + '" data-deck="' + esc(d.id) + '"><div class="dflip">' + front + back + '</div></div>';
+  }
+  // Turn a deck over, or back. Only one deck shows its back at a time.
+  function turnDeck(el, open) {
+    el.classList.toggle('flipped', open);
+    el.querySelector('.dfront').inert = open;
+    el.querySelector('.dback').inert = !open;
+  }
+  actions.flipDeck = function (id) {
+    var was = flipped && root.querySelector('.dcard.flipped');
+    if (was) turnDeck(was, false);
+    flipped = flipped === id ? null : id;
+    var el = flipped && root.querySelector('.dcard[data-deck="' + flipped + '"]');
+    if (el) { turnDeck(el, true); el.querySelector('.dback .btn').focus({ preventScroll: true }); }
+    else if (was) was.querySelector('.dfront').focus({ preventScroll: true });
+    Sfx.play('card-flip', { gap: 0 });
+  };
+  // A starter or theme deck, card by card. Copy it to change it.
+  function viewDeck(d) {
+    var c = E.deckColours(d.list)[0];
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>' + esc(d.name) + '</h1>' +
+      '<span class="push"></span><button type="button" class="btn primary" ' + act('copyDeck', d.id) + '>Copy to edit</button></header>' +
+      '<p class="lead dview">' + esc(Help.deck(d)) + (c ? ' <span class="hint">' + symbol(c) + '<b>' + GameUI.ALIGNMENT[c] + '.</b> ' + esc(Help.alignment(c)) + '</span>' : '') + '</p>' +
+      deckGrid(d.list, 'Cards') + '</div>', function () { viewDeck(d); });
+    fitAll();
+  }
+  actions.viewDeck = function (id) { viewDeck(Decks.find(id)); };
+  actions.builder = function () { confirmDelete = null; flipped = null; builder(); };
   actions.newDeck = function () { editor(Decks.create('New deck')); };
   actions.edit = function (id) { editor(Decks.find(id)); };
   actions.copyDeck = function (id) {
@@ -362,7 +394,7 @@ var Screens = (function () {
   };
   actions.askDelete = function (id) { confirmDelete = id; builder(); };
   actions.keepDeck = function () { confirmDelete = null; builder(); };
-  actions.deleteDeck = function (id) { Decks.remove(id); confirmDelete = null; builder(); };
+  actions.deleteDeck = function (id) { Decks.remove(id); confirmDelete = null; flipped = null; builder(); };
 
   // Deck editor
 
@@ -669,10 +701,11 @@ var Screens = (function () {
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
-  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
   var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
+    if (!b && flipped && !e.target.closest('.dcard')) return actions.flipDeck(flipped);
     if (!b || b.disabled) return;
     var name = b.dataset.act, arg = b.dataset.arg;
     lastAct = b;
@@ -696,6 +729,7 @@ var Screens = (function () {
     var v = byId('artView');
     if (v && !v.hidden) actions.closeArt();
     else if (byId('closeup')) actions.closeZoom();
+    else if (flipped && root.querySelector('.dcard.flipped')) actions.flipDeck(flipped);
   });
 
   function redraw() { if (refresh && !root.hidden) refresh(); }

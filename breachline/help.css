@@ -1,7 +1,9 @@
 /* Explanations for new players (help.js): deck and alignment captions, the help mode button, its tips and the back-row captions. */
 
-/* The help button reads as pressed while help mode is on. */
-.helpbtn[aria-pressed="true"] { border-image-source: url("art/web/ui/button-main.png"); color: var(--gold-pale); }
+/* The help button sits darkened and pressed in while help mode is off, and lights up like any other button while it's on. */
+.helpbtn[aria-pressed="false"] { transform: translateY(1px); filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .6)) brightness(.62) saturate(.8); }
+.helpbtn[aria-pressed="false"]:hover { filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .6)) brightness(.76) saturate(.9); }
+.helpbtn[aria-pressed="false"]:active { transform: translateY(2px) scale(.985); filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .7)) brightness(.56) saturate(.8); }
 
 /* A tip: small, near what it explains, and never in the way of a click. */
 .helptip { position: fixed; z-index: 400; max-width: min(280px, calc(100vw - 16px)); padding: 7px 10px; border-radius: 4px; pointer-events: none;
@@ -40,10 +42,6 @@
 .pick-note { margin: -2px 0 8px; color: var(--muted); font-size: 14px; }
 .pick-note svg { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
 .pick-note b { color: var(--ink); font-weight: 700; }
-
-/* A deck's plan under its tile in the deck builder. */
-.dnote { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.3; }
-.dcard:has(.dnote) .dtools { margin-top: auto; }
 
 /* A faction's own words, in the card close-up and under the filters. */
 .hfac q { font-family: var(--serif); font-style: italic; quotes: "\201C" "\201D"; }
