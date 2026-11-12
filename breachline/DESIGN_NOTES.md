@@ -158,7 +158,7 @@ The creator's first full game against it was dynamic, and they said it was clear
 ## Look and feel
 
 - **The war table:** a no-scroll battle screen with paintings filling the tiles and a large hand along the bottom.
-- **Layout:** laptop first, with phones on a simpler stacked layout.
+- **Layout:** laptop first. Phones get their own one-screen battle in `phone.css` (2026-11-12, from the mockup canvas the creator picked): upright, the enemy bar, the board, your row (life, mana, phase, End turn) and then your hand at the bottom; sideways, the plates and hand on the left, the board in the middle, and the menu, phase and End turn on the right. The help text under the board is left out on phones. The hand is the same card as on desktop, held as a fan. A tap lifts a card the way hovering does on desktop, a little lower, and lights where it can go; another tap puts it back. Holding anything with a card behind it shows that card large on the left until you let go, which is how you read a card on a phone. Rules and sound move into the phone's menu.
 - **The old layout is gone:** keep new UI in the war table style.
 - **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
 - **Same layout on every card (2026-11-10):** the creator chose this from three mockups. The name is always one line and shrinks to fit, the cost coin sits on the painting's top-left corner, and a band in the alignment colour runs under the art with the type and alignment. On units, Attack and Health sit at the band's ends. Every card has the same art, band and text box sizes.

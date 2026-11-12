@@ -753,6 +753,7 @@
     var big = E.ROWS * E.COLS > 20, ratio = big ? E.ROWS / E.COLS / 1.45 : 0.72;
     $('app').classList.toggle('big', big);
     $('grid').style.setProperty('--grat', ratio.toFixed(3));
+    $('app').style.setProperty('--rc', (E.ROWS / E.COLS).toFixed(3));
     $('grid').parentNode.style.setProperty('--bwr', (big ? 1 / ratio : 1.81).toFixed(3));
     $('actions').innerHTML = actionsHtml(moves);
     var hand = S.players[HUMAN].hand;
@@ -1168,6 +1169,44 @@
   $('menu').addEventListener('click', function (e) { if (e.target.closest('[data-close]')) $('menu').close(); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
   $('inspect').addEventListener('click', closePeek);
+  // On a phone (phone.css), holding anything with a card behind it brings that card up large on the left until you let go.
+  // The tap that ends a hold does nothing else, and a finger that slides away first is not a hold.
+  var PHONE = window.matchMedia('(max-width: 820px) and (orientation: portrait), (max-height: 470px) and (orientation: landscape)');
+  var holdTimer = null, holdAt = null, holding = false, swallow = false, heldEl = document.createElement('div');
+  heldEl.className = 'held';
+  heldEl.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(heldEl);
+  function endHold() {
+    clearTimeout(holdTimer);
+    holdAt = null;
+    if (!holding) return;
+    holding = false;
+    swallow = true;
+    setTimeout(function () { swallow = false; }, 400);
+    heldEl.classList.remove('on');
+  }
+  $('app').addEventListener('pointerdown', function (e) {
+    var t = e.target.closest('[data-peek]');
+    // With Help on, a hold shows that thing's tip instead (help.js).
+    if (!PHONE.matches || !t || e.button > 0 || (Help.on() && Help.tipFor(e.target))) return;
+    holdAt = [e.clientX, e.clientY];
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(function () {
+      holding = true;
+      heldEl.innerHTML = '<div class="slot">' + frameHtml(E.CARDS[t.dataset.peek], { big: true }) + '</div>';
+      heldEl.classList.add('on');
+      fitCards(heldEl);
+    }, 380);
+  });
+  $('app').addEventListener('pointermove', function (e) {
+    if (holdAt && !holding && Math.abs(e.clientX - holdAt[0]) + Math.abs(e.clientY - holdAt[1]) > 14) { clearTimeout(holdTimer); holdAt = null; }
+  });
+  ['pointerup', 'pointercancel'].forEach(function (type) { document.addEventListener(type, endHold); });
+  document.addEventListener('click', function (e) { if (swallow) { swallow = false; e.preventDefault(); e.stopPropagation(); } }, true);
+  $('app').addEventListener('contextmenu', function (e) { if (PHONE.matches && e.target.closest('[data-peek]')) e.preventDefault(); });
+  // The phone's menu also holds the rules, which close with a tap.
+  $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
+  $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
 
   function deckHtml(d, role) {
