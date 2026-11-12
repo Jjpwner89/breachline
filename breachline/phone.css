@@ -77,6 +77,12 @@
   #hand .card.casting .cslot { transform: translateY(calc(var(--cw) * -.3)) scale(1.5); }
   #hand .empty { align-self: center; color: var(--muted); }
   #hand .card, .tile, .plate .gem { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; touch-action: none; }
+  /* A unit's tile is mostly its art: no name bar (holding the tile shows the card), small attack and health in the bottom corners. */
+  .tile .nm { display: none; }
+  .tile.own, .tile.enemy { border-width: 2px; }
+  .tile .chips, .tile.own .tfx, .tile.enemy .tfx { top: 2px; }
+  .tile .st { left: 1px; right: 1px; bottom: 1px; flex-wrap: nowrap; gap: 0; }
+  .app .tile .badge { min-width: 0; padding: 0 3px; font-size: 11px; line-height: 13px; }
 
   /* Opening hands spread over the board, large enough to read. */
   .app.opening #hand { grid-area: 2 / 1 / -1 / -1; z-index: 14; flex-wrap: wrap; align-content: flex-start; align-items: flex-start; gap: 8px; padding: 10px 8px 150px; overflow-y: auto; background: rgba(12, 8, 4, .82); }
