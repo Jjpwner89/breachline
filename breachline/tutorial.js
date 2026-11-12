@@ -9,7 +9,7 @@ var Tutorial = (function () {
   function markSeen() { try { localStorage.setItem(KEY, 'done'); } catch (e) {} }
 
   // Turn 3, your third turn. You hold a land, a Temple cleric and a Pride warden you can't afford yet; a Sellsword faces the
-  // enemy's across the middle and a Sunmane lancer waits on the right. The enemy is down to 5 life.
+  // enemy's across the middle and a Sunmane lancer waits on the right. The enemy is down to 4 life.
   function build() {
     at = -1;
     var s = E.newGame({ seed: 7, decks: [{ name: 'Oath of the Sunmane', list: [['land_w', 30]] }, { name: 'Warhorde scouts', list: [['land_r', 30]] }], first: ME });
@@ -23,7 +23,7 @@ var Tutorial = (function () {
     you.life = 13; you.lands = [land('land_w'), land('land_w')]; you.mana = 2;
     you.hand = [card('land_w'), card('cleric'), card('warden')];
     for (var i = 0; i < 6; i++) you.deck.push(card('land_w'));
-    foe.life = 5; foe.lands = [land('land_r'), land('land_r')];
+    foe.life = 4; foe.lands = [land('land_r'), land('land_r')];
     foe.hand = [card('goblin')];
     for (i = 0; i < 6; i++) foe.deck.push(card('land_r'));
     ids = {
@@ -123,9 +123,9 @@ var Tutorial = (function () {
       target: function () { return '#themStrip .plate'; },
       allow: function (m) { return m.type === 'attackSummoner' && m.unit === ids.lancer; },
       done: function (s) { return s.winner !== null; },
-      text: 'The enemy has 5 life and your lancer hits for 5. Click the enemy\'s plate to strike.' },
+      text: 'The enemy has 4 life and your lancer hits for 4. Click the enemy\'s plate to strike.' },
     { part: 2, title: 'Victory', last: true,
-      text: 'In a full battle each summoner starts with 15 life and a 30-card deck, and draws 7 cards to start, with up to two redraws. Instants can be played on either turn, even in answer to an enemy attack, with the mana you leave unspent. Point at any card to read its rules.',
+      text: 'In a full battle each summoner starts with 15 life and a 40-card deck, and draws 7 cards to start, with up to two redraws. Instants can be played on either turn, even in answer to an enemy attack, with the mana you leave unspent. Point at any card to read its rules.',
       after: function () { return Progress.state().starter ? ' Next, try the campaign or an exhibition battle.' : ' Next, choose your first deck, then try the campaign.'; } }
   ];
   var PARTS = { 1: 'The table', 2: 'Your first battle' };

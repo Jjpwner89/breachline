@@ -193,8 +193,10 @@
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
-  var noArt = {}, artRedraw = null;
-  var preloaded = Object.keys(ART).map(function (id) {
+  // They wait for the first screen to finish loading, so a first visit isn't held up by every painting in the game.
+  var noArt = {}, artRedraw = null, preloaded = [];
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { preloaded = Object.keys(ART).map(function (id) {
     var im = new Image();
     im.onerror = function () {
       noArt[id] = true;
@@ -215,7 +217,7 @@
   // The tile effect paintings too, so a new effect shows at once rather than a frame later.
   Object.keys(TILE_NAMES).forEach(function (k) {
     ['tile-', 'border-', 'emblem-'].forEach(function (p) { var im = new Image(); im.src = 'art/web/ui/' + p + k + '.png'; preloaded.push(im); });
-  });
+  }); });
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -320,6 +322,7 @@
       if (waiting) cls.push('waiting');
       else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
+      if (fanAt === u.uid) cls.push('fanned');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       // Conditions come first. Every label shows, kept small; the close-up note and the tile's label repeat them.
       var states = [], notes = d.keywords.slice();
@@ -329,6 +332,7 @@
       if (u.held >= S.turn) states.push('Held');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
+      if (u.watching) states.push('Watching');
       if (u.lit && d.keywords.indexOf('Lit') < 0) states.push('Lit');
       if (u.stasis >= S.turn) states.push('Between moments');
       if (u.sapped >= S.turn) states.push('Restrained');
@@ -363,7 +367,7 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
     u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
@@ -779,18 +783,22 @@
 
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
 
-  // A spell aimed at a tile plays its animation first, then the move resolves and the board redraws.
+  // A spell or instant aimed at a tile, a unit or a summoner is thrown there first, then the move resolves and the board
+  // redraws. A tile spell with its own tile effect looks like that effect; any other takes the look of its element.
+  var LOOK_OF = { fire: 'burn', ice: 'frost', lightning: 'charge', vigil: 'holy', gnosis: 'arcane', dominion: 'blight', genesis: 'thorns' };
   var casting = false;
   function apply(m) {
     if (casting) return;
     if (S.tutorial && actor() === HUMAN && !Tutorial.allows(m)) { Sfx.play('not-allowed', { gap: 120 }); return render(); }
-    // An instant aimed at a tile (a response with a tile and no unit target) animates like a cast spell.
-    var aimed = (m.type === 'cast' || m.type === 'respond' && m.target === undefined) && m.r !== undefined;
-    var who = actor(), inHand = aimed && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
-    var spell = inHand && E.CARDS[inHand.c], look = spell && spell.aim && (spell.aim.fx || spell.aim.tile);
-    if (look && SpellFX.enabled()) {
+    var who = actor(), thrown = (m.type === 'cast' || m.type === 'respond') && (m.r !== undefined || m.target !== undefined || m.summoner !== undefined);
+    var inHand = thrown && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    var spell = inHand && E.CARDS[inHand.c], el = spell && Polish.element(spell);
+    var look = spell && (spell.type === 'spell' || spell.type === 'instant') && (spell.aim && (spell.aim.fx || spell.aim.tile) || LOOK_OF[el] || 'arcane');
+    var unit = m.target !== undefined ? S.units.filter(function (u) { return u.uid === m.target; })[0] : null;
+    var target = unit ? tileEl(unit.r, unit.c) : m.summoner !== undefined ? $(m.summoner === HUMAN ? 'youStrip' : 'themStrip') : m.r !== undefined ? tileEl(m.r, m.c) : null;
+    if (look && target && SpellFX.enabled()) {
       var from = who === HUMAN ? document.querySelector('#hand .card[data-card="' + m.card + '"]') : $('themStrip');
-      var reach = reachOf(spell, who, m.r, m.c);
+      var onTile = !unit && m.summoner === undefined, reach = onTile && spell.aim ? reachOf(spell, who, m.r, m.c) : [];
       if (who === BOT) announce(m);
       var before = S;
       casting = true;
@@ -798,17 +806,25 @@
       SpellFX.unaim(true);
       showReach();
       if (from && from.classList.contains('card')) from.classList.add('casting');
+      Sfx.play('card-play');
       SpellFX.cast({
-        kind: look, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
-        push: who === 0 ? -1 : 1,
+        kind: look, from: from || $('themStrip'), target: target, wave: !!(spell.aim && spell.aim.wave), volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
+        push: who === 0 ? -1 : 1, gentle: !!unit && unit.owner === who,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
-        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
+        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } },
+        onStage: function (stage, ms) {
+          if (stage !== 'impact') return Sfx.spell(stage, el, ms / 1000);
+          // The spell's own sound lands with it; the board catches up a moment later.
+          var hit = Polish.castOf(spell, !!unit && unit.owner !== who);
+          if (hit) Sfx.play(hit);
+        }
       }).then(function () {
         casting = false;
         // A new game started while the spell was in the air: drop this move.
         if (S !== before) return;
+        Polish.thrown();
         resolve(m);
-        [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
+        if (onTile) [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
       });
       return;
     }
@@ -1043,8 +1059,17 @@
   });
   $('grid').addEventListener('mouseleave', function () { SpellFX.unaim(); showReach(); });
 
+  // Clicking a unit's stacked shields fans them out and keeps them open through redraws; a second click stacks them again.
+  // It only reads the shields, so the click goes no further.
+  var fanAt = null;
   $('grid').addEventListener('click', function (e) {
     var t = e.target.closest('.tile');
+    if (t && e.target.closest('.chips.stack')) {
+      var fu = S.units.filter(function (x) { return x.r === +t.dataset.r && x.c === +t.dataset.c; })[0];
+      fanAt = fu && fanAt !== fu.uid ? fu.uid : null;
+      t.classList.toggle('fanned', fanAt !== null);
+      return;
+    }
     if (casting) return;
     SpellFX.unaim(true);
     if (t) clickTile(t);
