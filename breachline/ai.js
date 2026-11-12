@@ -26,7 +26,7 @@ var AI = (function () {
     '- Only a unit on the enemy back row can attack the enemy summoner, and the summoner does not strike back.',
     '- Instants can be cast on your own turn like spells, or on the enemy turn from mana you left unspent. Those that answer an event, such as an attack, wait for it.',
     '- Hands are hidden. When a deck runs out, its discard pile is shuffled back in.',
-    '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected.',
+    '- Some spells aim at a tile and leave an effect there for a few turns: burning (1 damage to a unit entering or starting its turn there), thorns (stops a walker and deals 1), frozen (units there cannot move), a snare (the first enemy to enter stops and cannot move next turn), blighted (units there have -1 attack), consecrated (its owner\'s unit there takes 1 less damage and heals 1) or charged (the next unit to enter takes 2). Fire, thorns and charges hurt both sides. Fliers passing over are not affected. A unit pushed onto one of these tiles is affected as if it had walked there.',
     '- Units summoned by other cards, and cards added to a hand, vanish instead of going to the discard pile.',
     '- Ambush units may also enter on an empty tile beside or behind one of your units, never in front of it.',
     '- Relics stay in play beside their summoner once cast. Some can be used once on each of your turns.'
@@ -66,6 +66,7 @@ var AI = (function () {
     if (u.held >= v.turn) bits.push("held: can't move or attack " + (u.held === v.turn ? 'this turn' : 'on its next turn'));
     if (u.frozen >= v.turn) bits.push("frozen: can't move " + (u.frozen === v.turn ? 'this turn' : 'on its next turn'));
     if (u.veiled) bits.push("veiled: enemies can't attack or target it until it attacks");
+    if (u.watching) bits.push('watching: strikes the first enemy to end a move within its reach this turn');
     if (u.carrion) bits.push('Carrion: +' + u.carrion + ' attack so far');
     if (u.lit && c.keywords.indexOf('Lit') < 0) bits.push('Lit: Fireproof, and explodes when it dies');
     if (u.stasis >= v.turn) bits.push("held between moments: can't act or be attacked");

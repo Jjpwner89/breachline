@@ -74,7 +74,7 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 
 | Card | Type | Cost | Wants | Stats | Rules | Line |
 | --- | --- | --- | --- | --- | --- | --- |
-| Young summoner | Unit | 2 | 0 | 2 / 3 | | She has worn long sleeves since she was nine. |
+| Young summoner | Unit | 2 | 0 | 1 / 3 | Errant. When summoned: summon a Camp follower on a random tile in your back row | She has worn long sleeves since she was nine. |
 
 ## Cards made from concept art
 

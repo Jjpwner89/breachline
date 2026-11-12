@@ -233,7 +233,9 @@ var SpellFX = (function () {
   var PROJECTILES = { thorns: 'art/web/fx/projectile-thorns.png' };
   var sheets = {}, missiles = {};
   function preload(list, into) { Object.keys(list).forEach(function (k) { var im = new Image(); im.onload = function () { into[k] = im; }; im.src = list[k]; }); }
-  preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles);
+  // After the first screen has loaded, so a first visit isn't held up by them.
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles); });
   // Recoloured copies of painted sheets, for a spell that borrows another family's look: each pixel's brightness is
   // repainted along a ramp of colours, darkest first, keeping the sheet's own transparency.
   var TINTS = {

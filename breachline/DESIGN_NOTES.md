@@ -29,7 +29,7 @@ An original fantasy card game on a grid, unique to the creator and not a rebuild
 
 From the creator:
 - An unseen summoner and one life total per player, starting at 15.
-- Decks are 30 cards, built before play (creator, 2026-11-10, replacing the earlier 40-card target). A player sees about 15 cards in a game, so about half the deck: copies matter, but games don't all play the same. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
+- Decks are 40 cards, built before play (creator, 2026-11-11, replacing 30). Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
 - 7-card opening hands (creator, 2026-11-10, replacing 5). Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
 - One draw per turn, and the hand is hidden.
 - Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
@@ -48,7 +48,7 @@ Claude's assumptions, not yet confirmed by the creator:
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
-- In the deck builder: exactly 30 cards, 3 copies of a non-land card and unlimited lands. The starter, theme and campaign enemy decks are all 30. A campaign deck stays at 30: rewards go to a reserve that can be swapped in between battles.
+- In the deck builder: exactly 40 cards, at most 3 copies of any non-land card whatever its rarity, and unlimited lands (creator, 2026-11-11). Limits by rarity were tried and felt too contrived. A legendary that proves too strong gets a higher cost, not a lower limit; legendaries are hard to unlock, so few players can stack them, and a deck full of expensive cards limits itself through mana. The starter, theme and campaign enemy decks are all 40. A campaign deck stays at 40: rewards go to a reserve that can be swapped in between battles.
 - The card-to-faction list in `engine.js`.
 
 ## Board mechanics
@@ -56,7 +56,7 @@ Claude's assumptions, not yet confirmed by the creator:
 Decided by the creator on 2026-11-09, to make more of the board. All of these are built, with the Set 6 cards in `CARD_PROPOSALS.md`.
 
 - **Summoning units:** a card can summon other units straight onto the board. You pick empty tiles in your back row. If the back row is full, the rest go to your second row, starting from a side column and filling toward the middle unless you choose. Summoned units wait a turn like any new unit.
-- **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row.
+- **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row. The Young summoner summons its Camp follower once, when it arrives (2026-11-11); a repeating summon made it the strongest card for its cost.
 - **Adding cards to your hand:** a card can add cards to your hand. They look exactly like a normal draw and are played for their mana cost, so you play a card to get another card.
 - **Ambush:** enters on an empty tile next to one of your units, beside or behind it but never in front. It can match your furthest-forward unit, never get ahead of it.
 - **Flanking:** +1 attack when an ally stands on the far side of the target.
@@ -92,7 +92,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 ## Mana and lands
 
 - Soft coloured mana: lands have colours, each card wants a number of lands of its colour, and each missing land adds 1 to its cost, so a card is never locked out.
-- Lands are 35% of a deck: 10 or 11 of 30. Don't argue for more lands unless playtesting raises it.
+- Lands are about a third of a deck: 13 of 40, or 15 in a ramping green deck. Don't argue for more lands unless playtesting raises it.
 - Lands sit off-grid below the board and can't be taken or destroyed.
 - No per-turn card swap. It was far too powerful and made lands too easy.
 - Abilities that generate mana are welcome. The creator likes the idea of decks that build up mana to cast big cards.
@@ -122,6 +122,7 @@ Five colours sit above factions as alignments, with several factions inside each
 - **Frenzy (creator, 2026-11-11):** +2 attack on the unit's first attack, then it's spent for good, like a berserker's charge. It counts whether that attack hits a unit or the summoner, and a miss still spends it. Strike-backs never get it and don't spend it. It replaced +2 attack while damaged, which most units never used.
 - **Brass chorister (creator, 2026-11-11):** 3 / 5, down from 3 / 7, which got Push for free against the cost curve. The blue starter swapped a Cloistered scholar and a Street conjurer for a Harmonic wardwright and a Brass siege-walker, and Winter glyphs swapped its Frostbreak and a Winterdoor keeper for a Brass siege-walker and a second Conclave examiner. In 5,400 simulated games they win 49% and 46%, close to before.
 - **Walking sapling (creator, 2026-11-11):** Grows only twice, so it stops at 3 / 6. At 4 / 8 it was a 5-mana body for 2 mana and carried The Elder Herd to 61%; now it wins 53%. The Thornwardens swapped a saboteur and a Sudden canopy for a second Bronze-harness alderkin and a second Grove tender, which keeps them at 47%. Other Grows cards still grow three times.
+- **Sunmane lancer and Young summoner (creator, 2026-11-11):** the lancer is 4 / 5, down from 5 / 6, and the Young summoner's Camp follower comes once, when it's summoned, instead of every turn. In random decks the lancer's lift fell from 13.5 to 8.7 points and the Young summoner's from 11.1 to 3.1. Oath of the Sunmane went from 56% to 53%; The armed road, which leaned on the lancer, from 43% to 38%. The tutorial's last enemy now has 4 life, so the lancer still finishes it.
 - **Guns** stay rare. A rifle makes sense only as a focus for magical energy (creator, 2026-11-10).
 - **Not wanted for now:** effects for reaching the enemy back row (hitting the summoner is already the reward, and more would snowball), Velunn bargains (too hard to balance), and a special champion mechanic.
 - The Velunn are the game's rarest, biggest cards. Dominion can bargain with them, and they can be good too.
@@ -195,38 +196,33 @@ Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2
 
 ## Balance
 
-Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
+Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any card and the card changes reviewed that day (card by card in `BALANCE_AUDIT.md` and `CARD_PROPOSALS.md`). A round robin of all 15 decks, the five starters and ten theme decks, played about 1,000 games per deck (each within about 1.6 points), with the scripted bot on both sides:
 
-After the move to 30-card decks, 2026-11-10, from 6,000 starter games and 750 games per theme deck against the starters: Vigil 53%, Fervor 45%, Gnosis 47%, Dominion 53% and Genesis 52%. Gnosis needed a third Street conjurer and Cloistered scholar to stay above 45%. Theme decks moved within a few points of their 24-card results, and Winter glyphs is still the weakest at 41%. Players run out of cards in 0.4% of games, down from 2%. Campaign chapters moved by up to 10 points either way, and Vigil's early chapters got easier.
-
-Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged.
-
-Starter round-robin for progression, 2026-11-10, from 20,000 games (1,000 per pairing from each seat): Vigil 54%, Fervor 46%, Gnosis 47%, Dominion 53% and Genesis 50%, all inside the target, and the first player wins 48%. The most lopsided pairings are Dominion over Gnosis (59%), Gnosis over Fervor (58%) and Vigil over Gnosis (58%). None is a trap as a free first pick.
-
-Balance run for cards 104 to 191, 2026-11-10, from 3,000 games of random one-colour decks and 5,000 games of theme decks:
-- **No new card stands above the best old ones.** Within its colour, the strongest new cards are Slagheart hulk, Cinderhook axe, Elderwood stag and Stormglass glaive, at 8 to 11 points above their colour's average; the best old cards sit at 15 to 17.
-- **Weakest in random decks:** Hour of collection, Barrow mark, Wildfire, Cinder rain, Humbling light and Unwind the step, 14 to 21 points below average. Most are sweepers or answers, which get cast when the bot is already losing, so this overstates the problem. Barrow mark is plainly weak for 2 mana.
-- **Gnosis (blue) is the weakest colour in random decks (33%).** Its new cards are mostly control spells, so random blue decks end up short of units. Its theme decks hold up better.
-- **Three cards changed:** Cinder firebrand, Untaught firecaller and The sky falls in. See "Balance changes after the first balance run" in `CARD_PROPOSALS.md`.
-
-Theme decks, one per new mechanic, are in the exhibition picker and the deck builder (`THEMES` in `decks.js`). Each was rebuilt once with a proper curve of units, then played 500 games against the starters:
-
-| Theme deck | Mechanic | vs starters |
+| Deck | Kind | Win rate |
 | --- | --- | --- |
-| Rootfed herd | Rootfed, extra lands | 62% |
-| The barrow feast | Carrion, sacrifice | 61% |
-| The court's favour | Charm, buying units, Veiled | 55% |
-| The armed road | Equipment, Armed | 53% |
-| Long sights | Longshot | 50% |
-| The Thornwardens | Thorns, Holding ground | 50% |
-| Cinder and slag | Lit, burning ground | 47% |
-| The long throw | Spells at the summoner | 46% |
-| Winter glyphs | Freezing | 42% |
-| Hearth and vow | Devotion | 50% |
+| Hearth and vow | Devotion theme | 58% |
+| Winter glyphs | Freezing theme | 57% |
+| Rootfed herd | Rootfed theme | 56% |
+| The armed road | Equipment theme | 54% |
+| Oath of the Sunmane | Vigil starter | 53% |
+| The Elder Herd | Genesis starter | 52% |
+| The court's favour | Charm theme | 50% |
+| Cinder and slag | Lit theme | 50% |
+| Long sights | Longshot theme | 49% |
+| The Warhorde | Fervor starter | 48% |
+| The Ashen Court | Dominion starter | 46% |
+| The Thornwardens | Thorns theme | 45% |
+| The Lantern Conclave | Gnosis starter | 45% |
+| The long throw | Burn theme | 44% |
+| The barrow feast | Carrion theme | 44% |
 
-- **Rootfed and Carrion run hot.** Both are mono-colour decks in the two strongest colours. Alderkin elder, Shell-mountain tortoise and Elderwood stag win over 75% of the games they're played in. Worth watching, not yet worth changing.
-- **Devotion** triggered only about once a game when it needed real healing, and its deck won 35%. The creator decided any heal counts, even at full health; it now triggers about 5 times a game.
-- **Freezing is the weakest theme.** It is blue's weakness again: the starters beat a deck that stops units without killing them. Frost and White morning now deal 1 damage as they freeze (creator, 2026-11-10), which took the deck from 38% to 42%.
+- **The field is much tighter:** 14 points from best to worst, down from 34 when the decks first went to 40 cards.
+- **The starters are one colour each**, chosen for steady draws. Each shows as many of its colour's mechanics as stay on theme and keeps plenty of plain commons. Green, black and blue were retuned on paired tests against the other 14 decks.
+- **Theme decks were moved toward the middle without leaving their plan.** Hearth and vow and The armed road swapped the Pride matriarch for commons; The barrow feast added a Barrow colossus, a retainer and a barrow priest; and The long throw went mono-red with Cinderfall, more raiders and berserkers, keeping 9 burn spells. Decks don't have to be the strongest possible, and every one keeps some simple commons.
+- **Greedy decks** (15 lands and every rare and legendary at 3 copies) win about 61%. The creator judged that acceptable, so expensive decks are left to limit themselves through mana.
+- **Devotion** counts any heal, even at full health (creator, 2026-11-10). **Frost and White morning** deal damage as they freeze (creator, 2026-11-10).
+- Campaign numbers are in `CAMPAIGN.md`.
+
 - **Spell-heavy first drafts lose badly:** 6% to 19% for winter, burn, fire and Devotion with 6 to 8 units. Every theme deck now plays 11 to 15 units.
 
 Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.

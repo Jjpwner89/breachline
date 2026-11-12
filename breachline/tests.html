@@ -43,8 +43,10 @@ function promptFor(v, level) {
       s.players.forEach(function (p) { p.discard.forEach(function (d) { seen[d.c] = 1; }); p.lands.forEach(function (l) { seen[l.c] = 1; }); });
       s.players[pi].hand.forEach(function (i) { seen[i.c] = 1; });
       s.log.forEach(function (l) { Object.keys(E.CARDS).forEach(function (id) { if (l.text.indexOf(E.CARDS[id].name) >= 0) seen[id] = 1; }); });
+      // A visible card's rules can name another card, as Rootfed names the green land.
+      var named = Object.keys(seen).map(function (id) { return E.CARDS[id] ? E.CARDS[id].text || '' : ''; }).join(' ');
       foe.hand.forEach(function (i) {
-        if (!seen[i.c] && prompt.indexOf(E.CARDS[i.c].name) >= 0) fails.push('enemy hand card "' + E.CARDS[i.c].name + '" named in prompt on turn ' + s.turn);
+        if (!seen[i.c] && named.indexOf(E.CARDS[i.c].name) < 0 && prompt.indexOf(E.CARDS[i.c].name) >= 0) fails.push('enemy hand card "' + E.CARDS[i.c].name + '" named in prompt on turn ' + s.turn);
       });
       s = E.applyMove(s, Bot.choose(s, Math.random));
     }
@@ -215,7 +217,7 @@ function randomField(r, ids) {
       if (o.cards.filter(function (id) { return E.CARDS[id].colour === foe; }).length !== 1) wrong.push('no single card from the beaten enemy');
       run = Campaign.take(o.cards[seed % 3]);
     }
-    // Rewards go to the reserve, so the deck itself stays legal at 30.
+    // Rewards go to the reserve, so the deck itself stays legal at 40.
     if (run.chapter !== last || E.deckProblems(run.list).length || E.deckSize(run.spare) !== last) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join() + ', reserve ' + E.deckSize(run.spare));
   }
   check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
@@ -327,7 +329,7 @@ function randomField(r, ids) {
   // The Walking sapling grows twice; other Grows units still grow three times.
   s = arena(['green', 'red']); var sapling = put(s, 'sapling', 0, 3, 0), elder = put(s, 'alderelder', 0, 3, 5);
   for (var k = 0; k < 8 && s.winner === null; k++) s = E.applyMove(s, { type: 'endTurn' });
-  check('a Walking sapling stops at 3 / 6', E.attackOf(s, byUid(s, sapling)) === 3 && byUid(s, sapling).maxHp === 6, E.attackOf(s, byUid(s, sapling)) + ' / ' + byUid(s, sapling).maxHp);
+  check('a Walking sapling stops at 3 / 3', E.attackOf(s, byUid(s, sapling)) === 3 && byUid(s, sapling).maxHp === 3, E.attackOf(s, byUid(s, sapling)) + ' / ' + byUid(s, sapling).maxHp);
   check('other Grows units still grow three times', byUid(s, elder).growth === 3);
 
   // Displacement on the lance's second target only clears that hit.
@@ -365,7 +367,7 @@ function randomField(r, ids) {
 
   s = arena(); var ww = put(s, 'wardwright', 0, 3, 2), mark1 = put(s, 'cleric', 1, 1, 2), behind = put(s, 'cleric', 1, 0, 2), side = put(s, 'cleric', 1, 1, 1);
   fight = E.applyMove(s, { type: 'attack', unit: ww.uid, target: mark1.uid });
-  check('Resonance hits the target and the enemy behind it in full', byUid(fight, mark1).hp === mark1.maxHp - 3 && byUid(fight, behind).hp === behind.maxHp - 3);
+  check('Resonance hits the target and the enemy behind it in full', byUid(fight, mark1).hp === mark1.maxHp - E.CARDS.wardwright.atk && byUid(fight, behind).hp === behind.maxHp - E.CARDS.wardwright.atk);
   check('Resonance leaves enemies beside the target alone', byUid(fight, side).hp === side.maxHp);
 
   s = arena(); var walker = put(s, 'siegewalker', 0, 4, 2), distant = put(s, 'cleric', 1, 1, 2); walker.moved = false;
@@ -376,18 +378,20 @@ function randomField(r, ids) {
 
   s = arena(); var pushed = put(s, 'sentinel', 1, 2, 2), id = hand(s, 'brightlance');
   fight = E.applyMove(s, { type: 'cast', card: id, target: pushed.uid });
-  check('Brightlance deals 2 and pushes toward its side', byUid(fight, pushed).hp === pushed.maxHp - 2 && byUid(fight, pushed).r === 1);
+  check('Brightlance deals 3 and pushes toward its side', byUid(fight, pushed).hp === pushed.maxHp - 3 && byUid(fight, pushed).r === 1);
 
-  s = arena(); var warded = put(s, 'cleric', 0, 2, 2), hitter2 = put(s, 'giant', 1, 1, 2); id = hand(s, 'wovenward');
+  s = arena(); var warded = put(s, 'sentinel', 0, 2, 2), hitter2 = put(s, 'giant', 1, 1, 2), hitter3 = put(s, 'giant', 1, 2, 1); id = hand(s, 'wovenward');
   s = E.applyMove(s, { type: 'enchant', card: id, target: warded.uid });
   s.active = 1; s.phase = 'command';
   fight = E.applyMove(s, { type: 'attack', unit: hitter2.uid, target: warded.uid });
-  check('Woven ward soaks 4 and is used up', byUid(fight, warded).hp === warded.maxHp - 1 && !byUid(fight, warded).enchants.length && fight.players[0].discard.some(function (d) { return d.c === 'wovenward'; }));
+  check('Woven ward soaks a first blow whole', byUid(fight, warded).hp === warded.maxHp && byUid(fight, warded).enchants.length === 1);
+  fight = E.applyMove(fight, { type: 'attack', unit: hitter3.uid, target: warded.uid });
+  check('Woven ward soaks 6 in all and is used up', byUid(fight, warded).hp === warded.maxHp - (2 * E.CARDS.giant.atk - 6) && !byUid(fight, warded).enchants.length && fight.players[0].discard.some(function (d) { return d.c === 'wovenward'; }));
 
   s = arena(); var piercer = put(s, 'sellsword', 0, 1, 1), shielded = put(s, 'cleric', 1, 1, 2); put(s, 'sentinel', 1, 0, 2);
   shielded.enchants.push({ id: 903, c: 'shelter', owner: 1 });
   piercer.enchants.push({ id: 904, c: 'quench', owner: 0 });
-  check("Enchanter's quench ignores Guard and Winter shelter", E.hitOn(s, piercer, shielded) === 4);
+  check("Enchanter's quench ignores Guard and Winter shelter", E.hitOn(s, piercer, shielded) === E.CARDS.sellsword.atk + E.CARDS.quench.atkBonus);
   check('but not on a strike-back', E.hitOn(s, shielded, piercer, 0, true) === 1);
 
   s = arena(); var rime = put(s, 'rimedrake', 0, 2, 2), chilled = put(s, 'giant', 1, 1, 2); put(s, 'sentinel', 0, 1, 3);
@@ -395,7 +399,7 @@ function randomField(r, ids) {
   fight = E.applyMove(fight, { type: 'endTurn' });
   if (fight.pending) fight = E.applyMove(fight, { type: 'pass' });
   fight.phase = 'command';
-  check('Freeze stops the target moving on its next turn', !E.legalMoves(fight).some(function (m) { return m.type === 'move' && m.unit === chilled.uid; }) && E.legalMoves(fight).some(function (m) { return m.type === 'attack' && m.unit === chilled.uid; }));
+  check('Freeze stops the target moving or attacking on its next turn', !E.legalMoves(fight).some(function (m) { return (m.type === 'move' || m.type === 'attack') && m.unit === chilled.uid; }));
 
   s = arena(); var carrion = put(s, 'retainer', 0, 3, 0), fodder = put(s, 'goblin', 0, 2, 2), fodder2 = put(s, 'goblin', 0, 2, 3), killer = put(s, 'dragon', 1, 1, 2);
   s.active = 1;
@@ -444,12 +448,19 @@ function randomField(r, ids) {
   try {
     var s = arena(), mine = put(s, 'sentinel', 0, 2, 2), foe = put(s, 'raider', 1, 1, 2), kindle = give(s, 'kindle');
     s = play(s, { type: 'cast', card: kindle, r: 2, c: 2 });
-    check('Kindle the line lights your units and burns the cross', by(s, mine).lit && by(s, mine).hp === 6 && by(s, foe).hp === 1 && E.tileAt(s, 1, 2).kind === 'burn');
+    check('Kindle the line lights your units and burns the cross', by(s, mine).lit && by(s, mine).hp === E.CARDS.sentinel.hp && by(s, foe).hp === 1 && E.tileAt(s, 1, 2).kind === 'burn');
 
     s = arena(); var hulk = put(s, 'slagheart', 0, 2, 2), near = put(s, 'sentinel', 0, 3, 2), proof = put(s, 'salamander', 1, 2, 3), killer = put(s, 'lancer', 1, 1, 2);
     hulk.hp = 1; s.active = 1; s.phase = 'command';
     s = pass(play(s, { type: 'attack', unit: killer.uid, target: hulk.uid }));
-    check('a Lit unit explodes when it dies, sparing Fireproof units', !by(s, hulk) && by(s, near).hp === 4 && by(s, proof).hp === 3 && by(s, killer).hp === 4);
+    check('a Lit unit explodes when it dies, sparing Fireproof units', !by(s, hulk) && by(s, near).hp === E.CARDS.sentinel.hp - 2 && by(s, proof).hp === 3 && by(s, killer).hp === E.CARDS.lancer.hp - 2);
+
+    s = arena(); var young = give(s, 'youngsummoner');
+    s = play(s, { type: 'summon', card: young });
+    var followers = function (s) { return s.units.filter(function (u) { return u.cardId === 'follower' && u.owner === 0; }); };
+    check('a Young summoner brings one Camp follower to your back row', followers(s).length === 1 && followers(s)[0].r === E.backRow(0), JSON.stringify(followers(s)));
+    s = endTurn(endTurn(s));
+    check('and has no ability to summon more', followers(s).length === 1 && !E.legalMoves(s).some(function (m) { return m.type === 'ability'; }));
 
     s = arena(); var brand = give(s, 'hurledbrand'), siphon = give(s, 'siphon');
     s = play(s, { type: 'cast', card: brand, summoner: 1 });
@@ -466,11 +477,13 @@ function randomField(r, ids) {
     s = E.applyMove(play(s, { type: 'cast', card: give(s, 'borrowedwill'), target: lent.uid }), { type: 'toCommand' });
     check('a borrowed unit may attack its own side, never a summoner', !!find(s, { type: 'attack', unit: lent.uid, target: ally.uid }) && !find(s, { type: 'attackSummoner' }));
     s = endTurn(s);
-    check('a borrowed unit goes back at the end of the turn', by(s, lent).owner === 1);
+    check('a borrowed unit stays through the enemy turn', by(s, lent).owner === 0);
+    s = endTurn(endTurn(s));
+    check('and goes back at the end of your next turn', by(s, lent).owner === 1);
 
     s = arena(); var still = put(s, 'giant', 1, 1, 2); put(s, 'sentinel', 0, 2, 2);
     s = E.applyMove(play(s, { type: 'cast', card: give(s, 'heldmoments'), target: still.uid }), { type: 'toCommand' });
-    check("a unit held between moments can't be attacked", !E.legalMoves(s).some(function (m) { return m.type === 'attack'; }));
+    check('a unit held between moments takes 2 and can still be attacked', by(s, still).hp === E.CARDS.giant.hp - 2 && E.legalMoves(s).some(function (m) { return m.type === 'attack' && m.target === still.uid; }));
     s = endTurn(s); s = E.applyMove(s, { type: 'toCommand' });
     check("and can't act on its turn", !E.legalMoves(s).some(function (m) { return m.unit === still.uid; }));
 
@@ -486,7 +499,7 @@ function randomField(r, ids) {
     s = E.applyMove(s, { type: 'endTurn' });
     var rows = {}; E.legalMoves(s).forEach(function (m) { if (m.type === 'respond') rows[m.r] = 1; });
     s = E.applyMove(s, find(s, { type: 'respond', r: 1, c: 0 }));
-    check('Scatter the line aims at a row with enemies, hits and pushes them', Object.keys(rows).join() === '0,1' && by(s, shoved).r === 0 && by(s, shoved).hp === 7);
+    check('Scatter the line aims at a row with enemies, hits and pushes them', Object.keys(rows).join() === '0,1' && by(s, shoved).r === 0 && by(s, shoved).hp === E.CARDS.giant.hp - 1);
 
     s = arena(); var burnt = put(s, 'raider', 1, 1, 2), soothed = give(s, 'shield');
     var bolt0 = give(s, 'firebolt');
@@ -498,19 +511,20 @@ function randomField(r, ids) {
     s = play(E.applyMove(s, { type: 'toCommand' }), { type: 'ability', unit: healer.uid, target: devout.uid });
     check('Devotion grows from a heal even at full health', E.attackOf(s, by(s, devout)) === 2 && by(s, devout).hp === 4);
 
-    s = arena(); var chilled = put(s, 'raider', 1, 1, 2);
+    s = arena(); var chilled = put(s, 'sentinel', 1, 1, 2);
     s = play(s, { type: 'cast', card: give(s, 'frost'), r: 1, c: 2 });
-    check('Frost hits each enemy it freezes', by(s, chilled).hp === 1 && E.tileAt(s, 1, 2).kind === 'frost');
+    check('Frost hits each enemy it freezes', by(s, chilled).hp === E.CARDS.sentinel.hp - 2 && E.tileAt(s, 1, 2).kind === 'frost');
     s = arena(); var dawn = put(s, 'giant', 1, 1, 1);
     s = play(s, { type: 'cast', card: give(s, 'whitemorning'), r: 1, c: 4 });
-    check('White morning hits and holds each enemy in the row', by(s, dawn).hp === 7 && by(s, dawn).frozen > s.turn);
+    check('White morning hits and holds each enemy in the row', by(s, dawn).hp === E.CARDS.giant.hp - 1 && by(s, dawn).frozen > s.turn);
 
-    s = arena(); var bell = give(s, 'oathbell'); put(s, 'sentinel', 0, 3, 2); put(s, 'knight', 0, 3, 3);
+    s = arena(); var bell = give(s, 'oathbell'), rung = put(s, 'sentinel', 0, 3, 2); put(s, 'knight', 0, 3, 3);
     s = play(s, { type: 'cast', card: bell });
     var rid = s.players[0].relics[0] && s.players[0].relics[0].id;
     check('a relic stays in play beside its summoner', !!rid && !s.players[0].discard.length);
-    s = play(s, { type: 'relic', relic: rid });
-    check('Oath bell works once a turn', s.units.every(function (u) { return u.tempAtk === 1; }) && !find(s, { type: 'relic', relic: rid }));
+    s = play(s, { type: 'relic', relic: rid, target: rung.uid });
+    check('Oath bell gives one unit +1 attack for good, once a turn', E.attackOf(s, by(s, rung)) === E.CARDS.sentinel.atk + 1 && !find(s, { type: 'relic', relic: rid }));
+    check('and the +1 lasts, as a boost rather than a bonus for the turn', by(s, rung).boost === 1 && !by(s, rung).tempAtk);
     var unmake = give(s, 'unmake', 1); s.active = 1; s.turn++;
     check('Unmake the pattern can break a relic', !!find(s, { type: 'cast', card: unmake, relic: rid }));
 
@@ -527,23 +541,79 @@ function randomField(r, ids) {
     var bolt = give(s, 'firebolt', 1); s.active = 1; s.phase = 'command'; s.turn++;
     check("Sanctuary threshold stops ranged attacks and enemy spells", !E.legalMoves(s).some(function (m) { return m.type === 'attack'; }) && (s.phase = 'play', !find(s, { type: 'cast', card: bolt })));
 
-    s = arena(); var hurt = put(s, 'sentinel', 0, 3, 2); hurt.hp = 2;
+    s = arena(); var hurt = put(s, 'sentinel', 0, 3, 2), raider2 = put(s, 'raider', 1, 1, 1), worn = put(s, 'sentinel', 1, 1, 3), big = put(s, 'giant', 1, 1, 4); hurt.hp = 2; worn.hp = 3;
     s = play(s, { type: 'cast', card: give(s, 'hour') });
-    var raider2 = put(s, 'raider', 1, 1, 1);
-    s = endTurn(endTurn(s));
-    check('Hour of collection waits for your next turn', !!by(s, hurt) && !!by(s, raider2));
-    s = endTurn(s);
-    check('then destroys every unit at 2 health or less', !by(s, hurt) && !by(s, raider2));
+    check('Hour of collection destroys every enemy unit at 3 health or less, now', !by(s, raider2) && !by(s, worn) && !!by(s, big));
+    check('and spares your own', !!by(s, hurt));
   } catch (e) { check('sets 7 to 11 ran without errors', false, e.message); }
 })();
 
 // Progression: these run on Progress's fold and pack drawing, so they leave this browser's real collection alone.
+(function newMechanics() {
+  // Venom, Overwatch and pushes onto hazards (2026-11-11). The keywords are lent to cards here, so these checks don't
+  // depend on which cards carry them.
+  function arena() {
+    var s = E.newGame({ seed: 7, decks: ['white', 'red'], first: 0 });
+    s.phase = 'command'; s.active = 0; s.pending = null; s.units = []; s.tiles = {}; s.turn = 9;
+    s.players.forEach(function (p) { p.hand = []; p.mana = 20; p.lands = []; p.relics = []; });
+    return s;
+  }
+  function put(s, id, owner, r, c) {
+    var d = E.CARDS[id], u = { uid: s.nextId++, inst: 0, cardId: id, owner: owner, r: r, c: c, hp: d.hp, maxHp: d.hp, tempAtk: 0, boost: 0, growth: 0, enchants: [], moved: false, acted: false, summonedTurn: 0, lit: false };
+    s.units.push(u);
+    return u;
+  }
+  function give(s, id, pi) { var i = { id: s.nextId++, c: id }; s.players[pi || 0].hand.push(i); return i.id; }
+  function find(s, m) { return E.legalMoves(s).filter(function (x) { for (var k in m) if (x[k] !== m[k]) return false; return true; })[0]; }
+  function play(s, m) { var x = find(s, m); if (!x) throw new Error('not legal: ' + JSON.stringify(m)); return E.applyMove(s, x); }
+  function by(s, u) { return s.units.filter(function (x) { return x.uid === u.uid; })[0]; }
+  function pass(s) { return s.pending ? E.applyMove(s, { type: 'pass' }) : s; }
+  function endTurn(s) { if (s.phase === 'play') s = E.applyMove(s, { type: 'toCommand' }); return pass(E.applyMove(s, { type: 'endTurn' })); }
+  function lend(id, kw, fn) { var k = E.CARDS[id].keywords; E.CARDS[id].keywords = k.concat([kw]); try { fn(); } finally { E.CARDS[id].keywords = k; } }
+  try {
+    lend('sellsword', 'Venom', function () {
+      var s = arena(), v = put(s, 'sellsword', 0, 2, 2), big = put(s, 'stoneward', 1, 1, 2);
+      s = pass(play(s, { type: 'attack', unit: v.uid, target: big.uid }));
+      check('Venom destroys a unit it damages, whatever its health', !by(s, big));
+      s = arena(); v = put(s, 'sellsword', 0, 2, 2); big = put(s, 'giant', 1, 1, 2); v.hp = 9; v.maxHp = 9;
+      s.active = 1;
+      s = pass(play(s, { type: 'attack', unit: big.uid, target: v.uid }));
+      check('and works when it strikes back', !by(s, big) && by(s, v));
+    });
+    lend('sentinel', 'Overwatch', function () {
+      var s = arena(), w = put(s, 'sentinel', 0, 3, 2), a = put(s, 'sellsword', 1, 1, 2), b = put(s, 'sellsword', 1, 1, 3);
+      a.summonedTurn = b.summonedTurn = 0;
+      s = endTurn(s);
+      check('a unit with Overwatch that stayed still keeps watch', by(s, w).watching === true);
+      s = play(s, { type: 'toCommand' });
+      s = pass(play(s, { type: 'move', unit: a.uid, r: 2, c: 2 }));
+      check('it strikes the first enemy to move into its reach', by(s, a).hp === E.CARDS.sellsword.hp - E.CARDS.sentinel.atk && !by(s, w).watching);
+      s = pass(play(s, { type: 'move', unit: b.uid, r: 2, c: 3 }));
+      check('only once each enemy turn', by(s, b).hp === E.CARDS.sellsword.hp);
+      s = arena(); w = put(s, 'sentinel', 0, 3, 2); var m = put(s, 'sellsword', 1, 1, 2);
+      s = pass(play(s, { type: 'move', unit: w.uid, r: 3, c: 1 }));
+      s = endTurn(s);
+      check('a unit that moved keeps no watch', !by(s, w).watching);
+    });
+    var s = arena(), t = put(s, 'stoneward', 1, 2, 2), lance = give(s, 'brightlance');
+    s.phase = 'play';
+    s.tiles['1,2'] = { kind: 'thorns', owner: 0, until: 99, dmg: 2 };
+    s = play(s, { type: 'cast', card: lance, target: t.uid });
+    check('a unit pushed onto thorns is cut by them', by(s, t).r === 1 && by(s, t).hp === E.CARDS.stoneward.hp - E.CARDS.brightlance.blast - 2);
+    s = arena(); var c = put(s, 'chorister', 0, 3, 2), f = put(s, 'sellsword', 1, 2, 2);
+    s.tiles['1,2'] = { kind: 'burn', owner: 0, until: 99 };
+    f.hp = 1;
+    s = play(s, { type: 'ability', unit: c.uid, target: f.uid });
+    check('and one pushed into fire can burn to death', !by(s, f));
+  } catch (err) { check('new mechanics ran', false, String(err && err.stack || err)); }
+})();
+
 (function () {
   var P = Progress, all = P.allCards();
   check('every card has a rarity', all.every(function (id) { return Rarity.OF[id]; }) && !Object.keys(Rarity.OF).some(function (id) { return all.indexOf(id) < 0; }));
   var e = function (id, t, at, extra) { var x = { id: id, t: t, at: at }; for (var k in extra) x[k] = extra[k]; return x; };
   var st = P.fold([e('start', 'start', 1, { deck: 'white' }), e('start', 'start', 2, { deck: 'red' })]);
-  check('the free starter is given once, whole', st.starter === 'white' && st.cards.cleric === 3 && st.cards.maren === 1 && !st.cards.raider);
+  check('the free starter is given once, whole', st.starter === 'white' && st.cards.cleric === 3 && st.cards.matriarch === 1 && !st.cards.raider);
   st = P.fold([e('b:1', 'battle', 1, { gold: 90, result: 'win' }), e('b:1', 'battle', 2, { gold: 90, result: 'win' }), e('p', 'pack', 3, { cost: 50, cards: ['dragon'] })]);
   check('a battle pays once, and a pack costs gold and adds its cards', st.gold === 40 && st.cards.dragon === 1 && st.battles.length === 1);
   st = P.fold([e('x', 'pack', 1, { cost: 0, cards: ['goblin', 'goblin', 'goblin', 'goblin', 'gone_card'] }), e('y', 'break', 2, { cards: { goblin: 1 }, shards: 5 }), e('z', 'craft', 3, { card: 'dragon', shards: 5 })]);

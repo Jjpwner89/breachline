@@ -127,12 +127,12 @@ var Decks = (function () {
     }).catch(function (e) { console.warn('Decks are staying in this browser for now:', e && e.code); });
   }
 
-  // Cards can leave the game between versions, so a saved list is only trusted after this. missing counts what was dropped.
+  // Cards can leave the game between versions, or become conjured-only tokens, so a saved list is only trusted after this. missing counts what was dropped.
   function clean(r) {
     var seen = {}, list = [], missing = 0;
     (Array.isArray(r.list) ? r.list : []).forEach(function (e) {
       if (!Array.isArray(e) || !(e[1] > 0)) return;
-      if (!E.CARDS[e[0]]) { missing += e[1]; return; }
+      if (!E.CARDS[e[0]] || E.CARDS[e[0]].token) { missing += e[1]; return; }
       if (seen[e[0]]) seen[e[0]][1] += Math.floor(e[1]);
       else { seen[e[0]] = [e[0], Math.floor(e[1])]; list.push(seen[e[0]]); }
     });
@@ -149,25 +149,39 @@ var Decks = (function () {
   // They aren't starters, so the campaign and the balance runs leave them out. Copy one to change it.
   var THEMES = [
     { id: 'theme-devotion', name: 'Hearth and vow', note: 'Healers, and Devotion units that grow when an ally next to them recovers health.',
-      list: [['land_w', 10], ['pilgrim', 3], ['penitent', 3], ['vowkeeper', 2], ['chaplain', 3], ['cleric', 3], ['maren', 1], ['matriarch', 1], ['huntress', 1], ['reliquary', 2], ['consecrate', 1]] },
+      list: [['land_w', 13], ['pilgrim', 3], ['penitent', 3], ['vowkeeper', 1], ['chaplain', 3], ['cleric', 3], ['maren', 1], ['huntress', 2], ['reliquary', 3], ['consecrate', 2], ['vigilkeeper', 3], ['carrier', 2], ['acolyte', 1]] },
     { id: 'theme-armed', name: 'The armed road', note: 'Equipment, and Armed units that hit harder while they carry it.',
-      list: [['land_w', 10], ['recruit', 3], ['glaive', 3], ['roadshield', 2], ['roadsquire', 2], ['spearman', 3], ['knight', 1], ['lancer', 1], ['matriarch', 1], ['lioness', 1], ['sentinel', 1], ['muster', 1], ['oathbell', 1]] },
+      list: [['land_w', 13], ['recruit', 3], ['glaive', 1], ['roadshield', 3], ['roadsquire', 3], ['spearman', 3], ['knight', 2], ['lioness', 1], ['sentinel', 3], ['muster', 2], ['oathbell', 1], ['shield', 3], ['sergeant', 1], ['cub', 1]] },
     { id: 'theme-lit', name: 'Cinder and slag', note: 'Lit units that explode when they die, burning ground and heavy hitters.',
-      list: [['land_r', 10], ['anoint', 2], ['slagheart', 2], ['firebrand', 2], ['kindle', 2], ['firecaller', 2], ['cinderhook', 2], ['raider', 2], ['berserker', 2], ['warchief', 2], ['giant', 1], ['captain', 1]] },
+      list: [['land_r', 13], ['anoint', 3], ['slagheart', 2], ['firebrand', 3], ['kindle', 2], ['firecaller', 3], ['cinderhook', 3], ['raider', 2], ['berserker', 3], ['warchief', 2], ['giant', 1], ['captain', 1], ['martyr', 1], ['scorch', 1]] },
     { id: 'theme-burn', name: 'The long throw', note: 'Fast units, and spells that hit the enemy summoner directly.',
-      list: [['land_r', 8], ['land_b', 2], ['hurledbrand', 3], ['siphon', 2], ['skyfalls', 2], ['clanoutrider', 3], ['raider', 2], ['berserker', 2], ['clanraiders', 2], ['warchief', 2], ['squire', 2]] },
+      list: [['land_r', 13], ['hurledbrand', 2], ['skyfalls', 2], ['clanoutrider', 2], ['raider', 3], ['berserker', 3], ['clanraiders', 3], ['warchief', 2], ['firebolt', 3], ['goblin', 3], ['firepot', 2], ['cinderfall', 2]] },
     { id: 'theme-winter', name: 'Winter glyphs', note: 'Freezing, snares and ranged attackers that hold the enemy in place.',
-      list: [['land_u', 10], ['rimecaller', 2], ['rimedrake', 2], ['winterdoor', 2], ['wardwright', 3], ['siegewalker', 1], ['rimebolt', 1], ['frost', 1], ['whitemorning', 1], ['examiner', 2], ['chorister', 3], ['arcanist', 2]] },
+      list: [['land_u', 13], ['rimecaller', 2], ['rimedrake', 2], ['winterdoor', 2], ['wardwright', 2], ['siegewalker', 2], ['rimebolt', 3], ['frost', 2], ['whitemorning', 2], ['examiner', 3], ['chorister', 3], ['arcanist', 3], ['frostbreak', 1]] },
     { id: 'theme-longshot', name: 'Long sights', note: 'Longshot attackers and Artificers\' gear that strike from the back.',
-      list: [['land_u', 10], ['marksman', 3], ['siegewalker', 2], ['ilvane', 1], ['fieldplate', 2], ['prism', 2], ['recruit', 1], ['chorister', 2], ['lampwright', 2], ['arcanist', 2], ['journeyman', 2], ['tideglass', 1]] },
+      list: [['land_u', 13], ['marksman', 3], ['siegewalker', 2], ['ilvane', 1], ['fieldplate', 3], ['prism', 2], ['recruit', 2], ['chorister', 2], ['lampwright', 3], ['arcanist', 2], ['journeyman', 3], ['tideglass', 2], ['corewright', 2]] },
     { id: 'theme-carrion', name: 'The barrow feast', note: 'Sacrifice, and Carrion units that grow each time a unit dies.',
-      list: [['land_b', 10], ['mortuary', 2], ['ossuary', 2], ['hostess', 2], ['tender', 2], ['retainer', 1], ['colossus', 1], ['thrall', 3], ['harvester', 2], ['gravecaller', 2], ['scale', 1], ['squire', 2]] },
+      list: [['land_b', 13], ['mortuary', 3], ['ossuary', 2], ['hostess', 2], ['tender', 3], ['retainer', 2], ['colossus', 2], ['thrall', 3], ['harvester', 3], ['gravecaller', 2], ['rats', 2], ['raise', 2], ['barrowpriest', 1]] },
     { id: 'theme-charm', name: "The court's favour", note: 'Charming and buying enemy units, Veiled killers and Drain.',
-      list: [['land_b', 10], ['temptress', 2], ['bought', 2], ['bailiff', 2], ['informant', 2], ['shutterassassin', 2], ['lynx', 2], ['noble', 2], ['envoy', 2], ['vashkar', 1], ['mourningveil', 1], ['squire', 2]] },
+      list: [['land_b', 13], ['temptress', 2], ['bought', 1], ['bailiff', 3], ['informant', 3], ['shutterassassin', 2], ['lynx', 3], ['noble', 3], ['envoy', 3], ['vashkar', 1], ['mourningveil', 3], ['squire', 3]] },
     { id: 'theme-rootfed', name: 'Rootfed herd', note: 'Extra lands, and Rootfed beasts that grow with every Overgrown ruin.',
-      list: [['land_g', 11], ['mosshorn', 2], ['earthspeaker', 3], ['stag', 1], ['reedbank', 2], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1], ['boar', 1], ['alderkin', 1], ['owl', 1]] },
+      list: [['land_g', 15], ['mosshorn', 3], ['earthspeaker', 2], ['stag', 2], ['reedbank', 3], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1], ['boar', 3], ['alderkin', 1], ['owl', 3]] },
     { id: 'theme-thorns', name: 'The Thornwardens', note: 'Thorns, Holding ground and ambushers that control where enemies can go.',
-      list: [['land_g', 10], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 1], ['thornbrake', 1], ['saboteur', 2], ['sapling', 2], ['ironbark', 2], ['grovetender', 2], ['alderkin', 2], ['seedfall', 1]] }
+      list: [['land_g', 13], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 3], ['thornbrake', 3], ['saboteur', 3], ['sapling', 2], ['ironbark', 2], ['grovetender', 2], ['alderkin', 2], ['seedfall', 1], ['goblinscout', 2]] },
+    // Six more from 2026-11-12, built around a theme first and then tuned to win 48% to 55% against the starters and themes
+    // above. NEW_DECKS.md has how each one started and what changed.
+    { id: 'theme-giants', name: "Giants' road", note: 'Green and red. Extra lands into hill giants, chieftains and the Elder dragon.',
+      list: [['land_g', 7], ['land_r', 7], ['coalback', 3], ['reedbank', 3], ['wayfinder', 3], ['mountainlung', 1], ['earthspeaker', 1], ['boar', 1], ['mossback', 2], ['giant', 3], ['chieftain', 2], ['bull', 2], ['herdmother', 2], ['dragon', 1], ['firebolt', 2]] },
+    { id: 'theme-levy', name: 'Levy and warband', note: 'White and red. A wide, cheap army of militia, prides and goblins, with drummers behind them.',
+      list: [['land_w', 7], ['land_r', 6], ['muster', 2], ['spearman', 3], ['lioness', 3], ['cub', 3], ['huntress', 3], ['rabblerouser', 3], ['goblin', 2], ['youngsummoner', 2], ['warchief', 2], ['drummer', 2], ['chieftain', 1], ['warden', 1]] },
+    { id: 'theme-firstblood', name: 'First blood', note: 'Red and black. Fast raiders and hunters, and Court assassins whose Venom kills whatever they wound.',
+      list: [['land_r', 7], ['land_b', 7], ['slateprowler', 3], ['lanner', 3], ['assassin', 2], ['lynx', 3], ['raider', 3], ['drummer', 2], ['goblin', 3], ['squire', 2], ['rabblerouser', 2], ['berserker', 3]] },
+    { id: 'theme-funeral', name: 'Funeral procession', note: 'Cheap followers and mourners that feed the harvesters, colossi and the Ossuary engine when they fall.',
+      list: [['land_b', 13], ['follower', 3], ['youngsummoner', 3], ['harvester', 3], ['mourner', 3], ['tender', 2], ['scale', 2], ['gravecaller', 2], ['thrall', 2], ['hostess', 1], ['colossus', 2], ['envoy', 1], ['ossuary', 2], ['retainer', 1]] },
+    { id: 'theme-overwall', name: 'Over the wall', note: 'Fliers and fast raiders that go over the front line and straight for the summoner.',
+      list: [['land_r', 13], ['clanraiders', 3], ['torchrunner', 3], ['lanner', 3], ['captain', 2], ['drake', 3], ['dragon', 1], ['raider', 3], ['goblin', 3], ['clanoutrider', 3], ['drummer', 3]] },
+    { id: 'theme-intofire', name: 'Into the fire', note: 'Red and blue. Set the ground burning, then push enemies into it with Brightlance and the choristers.',
+      list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 3], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 2], ['wildfire', 2]] }
   ];
   function themes() {
     return THEMES.map(function (t) { return { id: t.id, name: t.name, note: t.note, list: t.list.map(function (e) { return e.slice(); }), theme: true }; });

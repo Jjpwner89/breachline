@@ -199,8 +199,10 @@
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
-  var noArt = {}, artRedraw = null;
-  var preloaded = Object.keys(ART).map(function (id) {
+  // They wait for the first screen to finish loading, so a first visit isn't held up by every painting in the game.
+  var noArt = {}, artRedraw = null, preloaded = [];
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { preloaded = Object.keys(ART).map(function (id) {
     var im = new Image();
     im.onerror = function () {
       noArt[id] = true;
@@ -221,7 +223,7 @@
   // The tile effect paintings too, so a new effect shows at once rather than a frame later.
   Object.keys(TILE_NAMES).forEach(function (k) {
     ['tile-', 'border-', 'emblem-'].forEach(function (p) { var im = new Image(); im.src = 'art/web/ui/' + p + k + '.png'; preloaded.push(im); });
-  });
+  }); });
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -326,6 +328,7 @@
       if (waiting) cls.push('waiting');
       else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
+      if (fanAt === u.uid) cls.push('fanned');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       // Conditions come first. Every label shows, kept small; the close-up note and the tile's label repeat them.
       var states = [], notes = d.keywords.slice();
@@ -335,6 +338,7 @@
       if (u.held >= S.turn) states.push('Held');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
+      if (u.watching) states.push('Watching');
       if (u.lit && d.keywords.indexOf('Lit') < 0) states.push('Lit');
       if (u.stasis >= S.turn) states.push('Between moments');
       if (u.sapped >= S.turn) states.push('Restrained');
@@ -369,7 +373,7 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
     u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
@@ -1049,8 +1053,17 @@
   });
   $('grid').addEventListener('mouseleave', function () { SpellFX.unaim(); showReach(); });
 
+  // Clicking a unit's stacked shields fans them out and keeps them open through redraws; a second click stacks them again.
+  // It only reads the shields, so the click goes no further.
+  var fanAt = null;
   $('grid').addEventListener('click', function (e) {
     var t = e.target.closest('.tile');
+    if (t && e.target.closest('.chips.stack')) {
+      var fu = S.units.filter(function (x) { return x.r === +t.dataset.r && x.c === +t.dataset.c; })[0];
+      fanAt = fu && fanAt !== fu.uid ? fu.uid : null;
+      t.classList.toggle('fanned', fanAt !== null);
+      return;
+    }
     if (casting) return;
     SpellFX.unaim(true);
     if (t) clickTile(t);

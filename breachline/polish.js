@@ -35,7 +35,9 @@ var Polish = (function () {
 
   // Painted effects: each sheet is six frames, three across and two down, played over the spot at about 16 frames a second.
   var SHEETS = { slash: 1, pierce: 0, crush: 0, death: 0, summon: 1, heal: 1, 'rare-burst': 1, 'legendary-burst': 1 };
-  Object.keys(SHEETS).forEach(function (k) { var im = new Image(); im.src = 'art/web/fx/' + k + '.png'; });
+  // Loaded after the first screen, so a first visit isn't held up by them.
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { Object.keys(SHEETS).forEach(function (k) { var im = new Image(); im.src = 'art/web/fx/' + k + '.png'; }); });
   function sprite(name, x, y, size, o) {
     o = o || {};
     if (reduced) return;

@@ -18,7 +18,7 @@ Old stats are shown at the old scale. Ability numbers are in the next table.
 | Temple cleric | 2 | 15 / 40 | 1 / 4 | Closes wounds and doesn't open them |
 | Oath knight | 3 | 30 / 50 | 3 / 5 | Already clean |
 | Oath sentinel | 3 | 25 / 60 | 2 / 6 | A wall that barely hits back |
-| Sunmane lancer | 4 | 45 / 65 | 5 / 6 | Meant to be a strong unit, and the attack is the point of a lance |
+| Sunmane lancer | 4 | 45 / 65 | 4 / 5 | Meant to be a strong unit, and the attack is the point of a lance. Was 5 / 6 until 2026-11-11, when it lifted wins by 13.5 points |
 | Pride warden | 6 | 60 / 95 | 6 / 10 | The biggest soldier in white |
 | Saint Maren | 6 | 50 / 110 | 4 / 12 | She watches and outlasts. Health over attack |
 
@@ -71,7 +71,7 @@ Old stats are shown at the old scale. Ability numbers are in the next table.
 
 | Card | Cost | Old | New | Why |
 | --- | --- | --- | --- | --- |
-| Young summoner | 2 | 20 / 30 | 2 / 3 | Neutral cards stay weaker but reliable |
+| Young summoner | 2 | 20 / 30 | 1 / 3 | Neutral cards stay weaker but reliable. Errant: one Camp follower when summoned |
 
 ## Abilities and effects
 
@@ -165,7 +165,7 @@ Three plain units costing 3 or more are where abilities can add the most. Sellsw
 Same or lower cost, at least the same stats, and more going for it:
 
 - **Goblin cutter (2 / 1)** by Militia spearman and Gravebound thrall (both 2 / 2).
-- **Orc warchief (5 / 5)** by Sunmane lancer (5 / 6, with Swift and an ability).
+- **Orc warchief (5 / 5)** by Sunmane lancer (5 / 6, with Swift and an ability). The lancer is 4 / 5 since 2026-11-11.
 - **Hill giant (5 / 8)** by Elder Herd bull (6 / 9, with Overrun).
 
 ### Matching stat lines
