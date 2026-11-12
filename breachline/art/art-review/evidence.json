@@ -1,0 +1,363 @@
+{
+  "analysis": [
+    {
+      "alignment": "Fervor",
+      "headline": "Strongest recent run",
+      "body": "Six of eleven current Set 7\u201311 paintings received explicit praise: all three Set 8 Fervor cards, The Sky Falls In, Salamander-hide Mantle, and Anoint with Embers. Earlier favorites include Goblin Cutter, Cinderfall and the firepot thrower. Energy, varied fire/storm magic, and distinctive creatures are working."
+    },
+    {
+      "alignment": "Dominion",
+      "headline": "Most consistent established identity",
+      "body": "The Set 6 review broadly liked the Dominion paintings, with a local blade correction for Court Assassin. Court Informant, Bone Harvester, Withering Hex and the Ashwing studies anchor the longer history. Four of twelve recent cards received explicit praise. Courtly atmosphere and eerie, purposeful activity are strong; Night Embassy shows glamour alone is not enough."
+    },
+    {
+      "alignment": "Gnosis",
+      "headline": "High ceiling; uneven execution",
+      "body": "Borrowed Will is an explicit strong favorite. The inventor scene, Underbridge Vaporwright, Engine at Rest and practical craft also stand out. Recent stopping/ice spells needed clearer actions, and Harmonic Burst is final but explicitly not a favorite. Vary mechanisms and make the magical idea readable; preserve the existing limit on sound themes."
+    },
+    {
+      "alignment": "Vigil",
+      "headline": "Quiet care and warm light work",
+      "body": "The Still Flame, Sunmane Lancer, Rite of Stillness and Last Light in the Barracks are positive anchors. Earlier busy group scenes, waxy faces and staged poses drew corrections. Recent final approvals are encouraging, but sparse specific praise makes a numerical placement unreliable."
+    },
+    {
+      "alignment": "Genesis",
+      "headline": "Creature and woodland promise",
+      "body": "The Alderkin Elder is explicitly liked in the recent cards; earlier wolves, Thornbrake and living-tree studies also work. Casting, water rendering and cartoonish anatomy have needed correction. Creature studies without an assigned alignment are kept in Unassigned rather than silently counted as Genesis."
+    },
+    {
+      "alignment": "Neutral",
+      "headline": "Favorites outside the five alignments",
+      "body": "Copper Hound is a recent standout and Buckling Recruit is liked. The Cobalt Rapier, Roof Glider and Dawnsail show strong taste signals, but not every creature or equipment study has a settled alignment. Bellframe Construct was rejected and deleted."
+    }
+  ],
+  "pieces": [
+    {
+      "file": "court-informant.png",
+      "note": "A favorite: dynamic pose, contrasting lighting and believable courtly beauty.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "bone-harvester.png",
+      "note": "A favorite, especially violet/grey variation and the bone-gathering action.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "withering-hex.png",
+      "note": "Named among the creator\u2019s favorites.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "sunmane-lancer.png",
+      "note": "Named among the creator\u2019s favorites.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "goblin-cutter.png",
+      "note": "Named among the creator\u2019s favorites.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "lantern-quarter.png",
+      "note": "Named among the creator\u2019s favorites.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "unmake-the-pattern.png",
+      "note": "Strongly liked: the tuning fork and light.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "sanctuary-threshold.png",
+      "note": "Liked, including the arrows on the ground.",
+      "praise": true,
+      "strong": false
+    },
+    {
+      "file": "shatter-the-chain.png",
+      "note": "Very good, explicitly not a top-tier favorite.",
+      "praise": true,
+      "strong": false
+    },
+    {
+      "file": "cinderfall.png",
+      "note": "Liked: the large falling fire effect.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "goblin-firepot-thrower.png",
+      "note": "Named as a positive reference.",
+      "praise": true,
+      "strong": false
+    },
+    {
+      "file": "the-still-flame.png",
+      "note": "Strongly approved; dynamic warm light, visible brushwork and integrated characters are loved.",
+      "praise": true,
+      "strong": true,
+      "source": "../../../.claude/skills/art-direction/SKILL.md",
+      "alignment": "Vigil"
+    },
+    {
+      "file": "light-without-an-answer.png",
+      "note": "Strongly approved; absorbed inventor and useful little construct, clear Gnosis identity.",
+      "praise": true,
+      "strong": true,
+      "source": "../../../.claude/skills/art-direction/SKILL.md",
+      "alignment": "Gnosis"
+    },
+    {
+      "file": "across-the-silence.png",
+      "note": "Strongly approved visual direction: figure, gold strand, distance and light.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "dawnsail-passage.png",
+      "note": "Favorite of the creature batch; this FIRST depiction remains the anatomy reference.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "01-ashwing-keeper.png",
+      "note": "Loved: character and animated skeletal familiar.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "11-underbridge-vaporwright.png",
+      "note": "Love love love love: goblin, magical chemistry, scene and vivid color.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "00-cobalt-rapier-card-art.png",
+      "note": "Exceptional, no notes. Approved finished equipment painting.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "cobalt-rapier.png",
+      "note": "Exceptional, no notes. Approved finished equipment painting.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "11-roof-glider.png",
+      "note": "Perfect / incredible; explicitly included.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "18-black-enamel-field-kit.png",
+      "note": "Beautiful; materials and reflections particularly successful.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "01-ashwing-at-the-window.png",
+      "note": "Great character portrait of the established keeper.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "02-copper-street-locksmith.png",
+      "note": "Loved, especially levitation as part of the person\u2019s job.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "03-engine-at-rest.png",
+      "note": "Called incredible.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "04-coalbacks-first-frost.png",
+      "note": "Called incredible.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "05-last-light-in-the-barracks.png",
+      "note": "Strongly liked for subtle magic and light arriving from different directions.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "07-redglass-falchion.png",
+      "note": "Equipment presentation especially liked.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "12-the-night-embassy.png",
+      "note": "Worst of the bunch; not selected as a reference.",
+      "praise": false,
+      "strong": false,
+      "status": "Excluded"
+    },
+    {
+      "file": "03-the-rootbound-quarter.png",
+      "note": "Very good; approved wooden village.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "05-the-ivory-mantle-envoy.png",
+      "note": "Lion-folk concept strongly liked; approved.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "08-the-rain-that-rises.png",
+      "note": "Very cool; strongly liked and approved.",
+      "praise": true,
+      "strong": true
+    },
+    {
+      "file": "borrowed-will.png",
+      "note": "Love Borrowed Will, incredible painting.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET7.json",
+      "batch": 7
+    },
+    {
+      "file": "barrow-mark.png",
+      "note": "Barrow Mark is good.",
+      "praise": true,
+      "strong": false,
+      "source": "ART_PROMPTS_SET7.json",
+      "batch": 7
+    },
+    {
+      "file": "hostess-of-the-late-hour.png",
+      "note": "Updated hostess is really good too.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET7.json",
+      "batch": 7
+    },
+    {
+      "file": "gilt-hall-temptress.png",
+      "note": "Gilt-hall Temptress is really good.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "cinder-firebrand.png",
+      "note": "All Fervor cards in Set 8 are really good.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "hurled-brand.png",
+      "note": "All Fervor cards in Set 8 are really good.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "emberward.png",
+      "note": "All Fervor cards in Set 8 are really good.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "alderkin-elder.png",
+      "note": "The Alderkin Elder is good too.",
+      "praise": true,
+      "strong": false,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "buckling-recruit.png",
+      "note": "I like the Buckling Recruit.",
+      "praise": true,
+      "strong": false,
+      "source": "ART_PROMPTS_SET8.json",
+      "batch": 8
+    },
+    {
+      "file": "collect-the-tithe.png",
+      "note": "Really like Collect the Tithe; good face variation and setting.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET9.json",
+      "batch": 9
+    },
+    {
+      "file": "the-sky-falls-in.png",
+      "note": "Really like The Sky Falls In; good face variation and setting.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET9.json",
+      "batch": 9
+    },
+    {
+      "file": "salamander-hide-mantle.png",
+      "note": "Really like Salamander-hide Mantle.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET9.json",
+      "batch": 9
+    },
+    {
+      "file": "harmonic-burst.png",
+      "note": "Final, but explicitly not a favorite. Prefer other mechanisms over sound.",
+      "praise": false,
+      "strong": false,
+      "source": "ART_PROMPTS_SET9.json",
+      "batch": 9
+    },
+    {
+      "file": "copper-hound.png",
+      "note": "Copper Hound is sick!",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET10.json",
+      "batch": 10
+    },
+    {
+      "file": "anoint-with-embers.png",
+      "note": "Anoint with Embers is really good.",
+      "praise": true,
+      "strong": true,
+      "source": "ART_PROMPTS_SET10.json",
+      "batch": 10
+    },
+    {
+      "file": "glimmer-double.png",
+      "note": "Glimmer Double is good; requested a standing pose pressed against the wall, then finalized.",
+      "praise": true,
+      "strong": false,
+      "source": "ART_PROMPTS_SET10.json",
+      "batch": 10
+    },
+    {
+      "file": "opaline-window-mender.png",
+      "note": "Artwork and appearance liked, but the people are explicitly excluded from the lore. STYLE REFERENCE ONLY; do not reuse as a race or card subject.",
+      "praise": true,
+      "strong": false,
+      "status": "Style only",
+      "reference": true
+    }
+  ]
+}

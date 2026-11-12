@@ -1,7 +1,7 @@
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 
-84 active PNG sheets, all 1536 x 1024.
+89 active PNG sheets, all 1536 x 1024.
 7 species sheets: three body views and six heads each.
 1 additional human sheet: eight heads, preserving the first human sheet.
 2 retained first-batch equipment sheets: Vigil and Gnosis, 12 slots each.
@@ -15,6 +15,8 @@ BREACHLINE - NEUTRAL REFERENCE LIBRARY
 approved revisions, including both cedar-roof variants and the Cobalt rapier card art.
 13 accepted round-08 paintings; Night Embassy remains outside the library.
 1 selected first Door into Snow character variant for card art.
+5 accepted round-10 paintings: glaive, root village, lion-folk envoy, garden
+construct and rising rain.
 Total: 50 head studies (14 human), 24 retained equipment design slots,
 and 36 new equipment design groups awaiting review.
 
@@ -331,8 +333,8 @@ Generation prompt records, marked reconstructed briefs, source provenance, dimen
 and checksums are in prompts-and-manifest.json.
 
 CURRENT PACKAGE
-breachline-neutral-reference-library-2026-11-10-reviewed-v11.zip contains
-only the 84 active images, this guide and prompt/review records. The original first-batch
+breachline-neutral-reference-library-2026-11-10-reviewed-v12.zip contains
+only the 89 active images, this guide and prompt/review records. The original first-batch
 ZIP predates the removal review and is superseded as a current reference set.
 
 ROUND 07 REVIEW — 2026-11-09
@@ -343,3 +345,11 @@ Cobalt rapier remains approved finished Equipment card art; roof glider is inclu
 ROUND 08 REVIEW — 2026-11-10
 Thirteen paintings accepted in concept-round-08-2026-11-09/. Especially liked: the Ashwing portrait, the locksmith's occupational levitation, Engine at Rest, Coalback's First Frost, subtle healing light, the falchion display and Ambrel's small crane. Night Embassy is not selected.
 Card-selected round-08 subjects: 06, 07, 08, 11, 13, 14. The first Door into Snow character variant in selected-card-variants-2026-11-10/ is also selected, along with recorded round-07 subjects. These selections do not assign rules, statistics or implementation.
+
+ROUND 10 REVIEW — 2026-11-10
+Accepted: Stormglass Glaive; The Rootbound Quarter; The Ivory-Mantle Envoy;
+The Garden That Still Opens; The Rain That Rises. These are visual references,
+not automatic card selections or exhaustive faction designs.
+The goblin rider and restrained Velvet Stair bodice revisions await review.
+The rejected enormous creature at the shoreline is removed. A creature of
+that scale far out at sea remains a tentative, unconfirmed possibility.

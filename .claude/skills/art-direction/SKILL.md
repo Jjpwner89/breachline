@@ -5,6 +5,30 @@ description: Holds the art direction and accumulated art feedback for Breachline
 
 # Breachline art direction
 
+## Reference role audit and new people awaiting selection (2026-11-11)
+
+The creator wants both ordinary/familiar and distinctive faces and species, including new familiar fantasy options and Magic-inspired breadth without importing lore. Three human sheets (24 adult faces, including a sheet entirely of white men), three active scenes and seven creature tests are saved in breachline/art/work-in-progress/active-scenes-and-people-2026-11-11/review.html. All new sheets remain pending creator selection; do not promote the whole batch automatically. On confirmation, add only selected exact files/individuals and their permitted reference roles to the accepted library manifest and this skill. A selected species design does not establish its culture, morality, alignment or origin.
+
+Latest sheen clarification: the new reference sheets are not the main problem; keep Songweaver and Cloud-silk exactly as shown. The red-coated Through the Squall action mage is the specific weaker skin treatment. A restrained matte skin correction is pending review, with the earlier version retained. Do not overcorrect every portrait. Continue auditing references.
+
+The original Songweaver and Cloud-silk scenes are FACE IDENTITY ONLY, never normal-art skin-lighting or wardrobe benchmarks. Their bright cheeks and forehead sheen must not transfer. Human sheets define face anatomy/diversity and presentation; isolated bright planar strokes are not an instruction to amplify specular light. Specify identity and surface/lighting roles separately. Use broad diffuse skin lights and coherent form; avoid wax, blur, chalky dashes or forced microdetail as fixes. Audit: breachline/art/work-in-progress/active-scenes-and-people-2026-11-11/reference-audit.json.
+
+
+## Normal-art painted finish and active-scene follow-up (2026-11-11)
+
+Creator likes the painted look and says variable detail is much better. Alderkin looks too pensive; activity is a little too low across this character-focused batch. Test more active scenes while keeping this finish. No individual reference promotion has been requested. The creator specifically rejects waxy surface treatment and contrived additions of painterly texture; simplify connected forms and vary detail gradually. The six studies are in breachline/art/work-in-progress/alignment-character-studies-2026-11-11/.
+
+The 133 normal-art pairwise choices and 47 favorites suggest Genesis, Fervor and Vigil need the next mood tests. Cross-alignment wins are Genesis 6/20, Fervor 11/29, Vigil 10/24, Gnosis 24/39 and Dominion 30/39. These sparse, unequal comparisons guide exploration; they are not blanket rejection of an alignment or its references.
+
+The creator requested active scenes, two additional human face sheets including Songweaver and Cloudsilt identities translated into ordinary reference-sheet presentation, and tests of hybrid peoples and more exotic intelligent creatures. All new reference sheets require creator confirmation before promotion into the accepted library or art-direction reference roster.
+
+
+## Normal-art reference review (2026-11-10)
+
+The creator requested a normal-art reference gallery with usage counts, explicit up/down votes, favorite paintings and repeated pairwise comparisons. The local gallery is breachline/art/art-review/; it excludes the NSFW collection.
+
+Before selecting references for a new normal-art batch, read breachline/art/art-review/selection-guide.json if present, alongside the established direction here. Honor explicit reference exclusions; use positive votes, saved notes, alignment labels and favorites to guide selection. A comparison loss alone is not exclusion, and high reference usage is not approval. New organizational alignment labels do not establish lore. Shared face/species sheets may serve several alignments. Do not convert earlier comments into invented numeric scores or seed the creator's votes. Existing decisions remain authoritative until the creator explicitly changes them.
+
 ## Direction takes precedence
 
 The creator's latest feedback and the approved art direction take precedence over all art briefs, including their suggested poses, facing directions, framing, compositions and rendering. A brief is a starting point, not a command to preserve an unsuccessful presentation. If its pose or staging conflicts with the direction established here, redesign that presentation to serve the character, story, meaningful action, lighting and variety.
@@ -17,7 +41,6 @@ Current workflow (2026-11-09): Set 4 feedback remains recorded below and the ret
 
 The creator finalized **all twelve Set 9 paintings**: Line of dawn; Hearth-sworn penitent; Harmonic burst; Field-plate artificer; Collect the tithe; Mortuary priest; Halfshade lynx; Untaught firecaller; The sky falls in; Salamander-hide mantle; Elderwood stag; Rust-hinged warden. Preserve the current canonical PNGs and game JPEGs. The earlier bell, lynx, firecaller and stag images were deleted at the creator's request; their exact prompts and source hashes remain textual history in [ART_PROMPTS_SET9.json](../../../breachline/art/ART_PROMPTS_SET9.json). Do not restore those superseded versions. The [Set 9 gallery](../../../breachline/art/SET9_GALLERY.html) shows the final selections. This approves card art, not additional lore or mechanical changes. The Gnosis sound restriction and preference distinctions below remain in force.
 
-
 ## Gnosis sound limit and Harmonic burst final (creator direction, 2026-11-10)
 
 Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
@@ -25,7 +48,6 @@ Sound should account for **at most one in eight Gnosis cards, preferably fewer**
 The creator finalized the corrected, properly suspended-bell version of **Harmonic burst** (Set 9), but explicitly says it is not a favorite and that Gnosis has more interesting mechanisms than sound. Keep this approved painting; its approval does not make sound a preferred Gnosis direction. Existing accepted cards are not revoked by the temporary block.
 
 **The sky falls in, Salamander-hide mantle and Collect the tithe** are strongly liked. The creator praised face variation and setting in the Set 9 review.
-
 
 ## Magic and industry clarification (creator direction, 2026-11-10)
 
@@ -45,17 +67,41 @@ Ambrel concentrates learned and highly developed magical practice because its un
 
 The creator requested a new concept-art batch informed by these rules, alongside questions about the remaining gaps. New paintings are studies awaiting review, not additions to the twelve selected cards or automatic canon.
 
+## Round 11 power and wonder studies (2026-11-10)
+
+Eight new paintings await review in `breachline/art/work-in-progress/power-and-wonder-round-11-2026-11-10/`: The Blade He Inherited; A Key Worth a House; The Last Steady Hand; The Copperback Carrier; The Ashwood Reserve; More Fire Than Hands; A Dragon Listening; The Orchard Under the River. Five close-fit designs are followed by three edge studies. The gallery preserves review numbers and intent notes; `prompts-and-review.json` records exact generation/edit prompts, sources and quality revisions. All eight remain outside the accepted reference library, with no new cards created.
+
+During generation the creator confirmed that dragon connections can carry complex ideas with difficulty, and that rare places can hold enchantments for years without an active caster. Those general setting decisions do not approve the paintings or establish the river garden's particular history, mechanism or location. The goblin's large accidental fire tests an exceptional untrained talent, not the ordinary result of spell failure.
+
+## Round 10 review and revisions (2026-11-10)
+
+The creator accepted **Stormglass Glaive, The Rootbound Quarter, The Ivory-Mantle Envoy, The Garden That Still Opens and The Rain That Rises**. These five images are in `breachline/art/reference-library-2026-11-06/world-edges-round-10-2026-11-10/`. The wooden village and lion-folk concept are strongly liked; rising rain is especially praised. The garden construct's appealing, somewhat impractical use of magic is a positive option for further art, not a demand that all magic be economically useful or all constructs be decorative.
+
+**The Glasswind Rider:** replace the original orc with a somewhat larger, stronger male goblin who remains recognizably goblin-like. The spear points forward, toward image-right in this composition. Preserve the liked mount and landscape. The original orc version is rejected and deleted; the completed v2 awaits review.
+
+**The Velvet Stair:** the court-intrigue scene is liked. Preserve the long dress, identity, pose, letter and lighting. Use the established clothed fuller-bust/neckline direction more restrainedly for this character. The completed v2 uses the first Door into Snow character variant as a proportion/costume reference only; it does not replace this woman's face or import the other setting. The previous liked scene is preserved as a prior version. V2 awaits review.
+
+**Something Beneath the Abbey:** the enormous creature is too large for that shoreline encounter. The image and its generated source are removed. A creature that large might exist far out in the ocean as something possibly true but unconfirmed; this remains a tentative idea, not confirmed biology or a shoreline visitor. The creator also confirms that distant places and creatures can be known to the old Empire yet treated as sailors’ stories today. Knowledge may survive in an obscure Ambrel book, but it is not common knowledge. A specific surviving account remains an option for future development.
+
+The current review gallery, exact prompts and full review history remain in `breachline/art/work-in-progress/world-edges-round-10-2026-11-10/`. New revisions are not accepted references until reviewed. These decisions do not approve the still-pending round-09 batch or automatically select new cards.
+
+## Round 09 studies awaiting review (2026-11-10)
+
+Six new paintings and their numbered gallery are saved in `breachline/art/work-in-progress/magic-and-industry-round-09-2026-11-10/`: Lessons of Brass; The Stonefire Shift; Black Enamel, Open Road; The Cost of the Flame; Between Two Breaths; A Voice in the Reeds. Exact prompts and source paths are in `prompts-and-review.json`. All six await the creator's review and remain outside the accepted reference library. The fire-working and spirit are deliberate edge studies; their exact feats and appearances are proposals.
+
+The black-enamel study supplies the requested kit-on-a-character exploration, with a male roadwarden. It does not add a thirteenth card to the twelve selected cards or establish a faction uniform.
+
 ## Round 08 review and card selections (2026-11-10)
 
 The creator accepted thirteen of the fourteen round-08 paintings: all except **The Night Embassy**, which they called the worst of the bunch. Night Embassy is not selected and remains outside the reference library; this wording did not explicitly request deletion. Accepted images are in `breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/`, with their original numbers preserved.
 
 Positive direction: Ashwing at the Window is a great character portrait; Copper Street Locksmith is loved, especially levitation as part of a person's job; Engine at Rest and Coalback's First Frost are called incredible. Last Light in the Barracks is strongly liked for subtle magic, including the light arriving from different directions. Redglass Falchion's equipment presentation is especially liked. Third Arch of Ambrel and its small crane are liked. The veteran, weather scholar, saint, large engine, Cinderwake and Stone Opens are also approved. These examples support both everyday magic and larger magical events without requiring either scale everywhere.
 
-Twelve subjects are selected to become cards: **Cinderline Veteran; Redglass Falchion; The Weather at Her Elbow; The Mountain's Lung; Cinderwake; The Stone Opens; Copperlane Torch-runner; Ash-white Lanner; A Door into Snow; Mothwake Mourner; Cobalt Rapier; Corewright's Bench.** The Mountain's Lung burns stored mana from stones to provide energy. Its proposed extra-mana/resource card effect remains open for Claude and the creator. Cobalt Rapier's prior selection is reaffirmed, not duplicated.
+Twelve subjects are selected to become cards: **Cinderline Veteran; Redglass Falchion; The Weather at Her Elbow; The Mountain's Lung; Cinderwake; The Stone Opens; Copperlane Torch-runner; Ash-white Lanner; A Door into Snow; Mothwake Mourner; Cobalt Rapier; Corewright's Bench.** The Mountain's Lung burns stored mana from stones to provide energy, leaving the stones permanently spent. Its gameplay effect is tracked in the card records. Cobalt Rapier's prior selection is reaffirmed, not duplicated.
 
 For **A Door into Snow**, use the FIRST fuller-bust in-scene character variant: `breachline/art/nsfw/door-into-snow-character.png`. An unchanged accepted copy is in `breachline/art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png`. This explicit card selection supersedes collection-wide separation for that one image only. Do not substitute later FAL, pinup, swimwear or summer-scene versions.
 
-The creator also wants **Black Enamel Field Kit put on a character**. Preserve the liked kit; wearer identity and final card remain open. The creator initially paused generation to clarify the setting, then requested a new concept-art batch using those answers. The wearer can be explored in that batch; it is not an additional finalized card selection.
+The creator also wants **Black Enamel Field Kit put on a character**. Preserve the liked kit; wearer identity and final card remain open. The creator initially paused generation to clarify the setting, then requested a new concept-art batch using those answers. The male wearer is now painted in round-09 image 03, awaiting review; it is not an additional finalized card selection.
 
 ## Adult character and pinup variants (creator request, 2026-11-09)
     
@@ -118,6 +164,9 @@ This review supersedes the first Set 6 prompts and any reading of earlier "consi
 - Exact feedback, revised briefs, prompts and selection history for this pass are in `breachline/art/ART_REVISIONS_SET6_2026-11-09.json`. Revised images await review; liking a painting does not add new lore.
 
 ## Visual appeal comes first (creator correction, 2026-11-09)
+
+**Independent concept exploration (creator clarification, 2026-11-10):** new concept art can pursue fresh characters, creatures, places, equipment and strange events independently of the current worldbuilding discussion. Use the established setting, taste and latest boundaries as foundations; do not make a batch a checklist of the rules just discussed. The creator explicitly says it does not have to be the same thing as the worldbuilding conversation. Let visual discoveries suggest future questions without declaring their lore settled.
+
 
 The goal of a card illustration is an image the creator loves that belongs in this world. Judge it by presentation, imaginative design, light, colour, silhouette, material, atmosphere and character. Appeal can be quiet, severe, unsettling, beautiful or mysterious; it does not mean only exciting or fun.
 
@@ -583,3 +632,6 @@ In art/nsfw, A Cherry for the Answer is a leading favorite: playful counterpart,
 ## Personal fashion collection: leading wardrobe sets and face fidelity (2026-11-10)
 
 The creator names thin-halter-wardrobe-2026-11-10 and clothing-library-2026-11-10 among the highest-quality personal fashion sets. Fine straps, gathered soft fabric, open sides, layered blouse/bralette and vest/top combinations, peasant crops and lace bodysuits are strongly liked. Trousers are welcome with low/open necklines; close-fitting outfits are an accepted variation. Extend lace through a bodysuit variant. The fuller songweaver revision is approved. Faces have drifted: use original character references for identity and latest paintings only for clothing/fit/finish. Exact references and confidence-aware spoken mapping are in breachline/art/nsfw/SKILL.md and calibration-log.md. This does not change canonical game art.
+## UI polish alignment emblems — creator selection (2026-11-11)
+
+The creator reviewed the six interface alignment emblems and said: “dominion seal is the worst, all other are really good.” Preserve the original Vigil, Gnosis, Fervor, Genesis and Neutral artwork in breachline/art/ui/ui-alignment-emblems.png unchanged. The original Dominion crescent-and-shackle design is rejected. After seeing three replacement proposals, the creator explicitly selected “Iron crown (left)” in breachline/art/ui/ui-alignment-dominion-options.png. Use its leftmost crown for Dominion; the binding hand and closed gate are unselected alternatives. Exact crop mappings are in breachline/art/ui/UI_POLISH_SELECTIONS.json. This is an interface-emblem decision, not a new faction lore requirement or a preference for reusing these motifs in card scenes. All control options were requested for implementation and testing; that request does not choose a button material or other control option.

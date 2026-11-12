@@ -1,0 +1,242 @@
+{
+  "created": "2026-11-10",
+  "project": "Breachline",
+  "batch": "World edges round 10",
+  "status": "Reviewed: five accepted references, two completed revisions awaiting review, one rejected shoreline depiction removed.",
+  "image_count": 8,
+  "generation_method": "built-in image_gen",
+  "canonical_setting": "../../../SETTING.md",
+  "creative_direction": "The creator explicitly allows new art to explore ideas independently of the current worldbuilding discussion. Use established setting and taste as foundations; new images do not have to illustrate recently discussed rules.",
+  "review_scope": "These are visual proposals, not automatic lore, accepted references or card selections. Character names, locations, cultures, creature biology, magical effects and faction assignments remain unconfirmed.",
+  "consulted_references": [
+    "../../reference-library-2026-11-06/people/04-orcs.png",
+    "../../reference-library-2026-11-06/people/02-lion-folk.png",
+    "../../court-informant.png",
+    "../../concepts/dawnsail-passage.png",
+    "../../cinderfall.png"
+  ],
+  "input_image_mode": "New paintings generated from prompts; reference images were inspected for art direction and described in the prompts, not passed as edit targets.",
+  "images": [
+    {
+      "id": "01",
+      "slug": "stormglass-glaive",
+      "title": "Stormglass Glaive",
+      "intent": "A new weapon silhouette with restrained imbued material, using the physical equipment presentation you liked. Its power and faction are unassigned.",
+      "direction": "Equipment",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: an exceptionally well-built polearm, long clean steel curves and a small intriguing material detail, presented as a beautiful tangible object. Paint a single elegant medieval glaive lying diagonally across a dark weathered stone bench and a loosely folded deep petrol-green wool cloth. The entire weapon is visible, with generous breathing space around the blade. A dark ash-wood shaft extends from lower left toward upper right; it has ONE continuous functional socket joining it to a long slender steel blade with a slightly convex cutting edge and sturdy thick back. Good weapon balance and real construction, not enormous fantasy proportions. A narrow cloudy blue-grey mineral strip is seated securely in a short recess along the thick blade spine near the socket; one faint warm-white branching spark is trapped INSIDE that material, with no exterior lightning beam. Most of the weapon is sound steel and wood. Two small iron langets secure the socket to the shaft, a simple dark grip and small plain buttcap; minimal decoration. Soft afternoon side-light reveals worked metal, the blade's crisp edge, ash grain and woven cloth. Warm limestone, cool steel and subdued blue-green cloth; the mineral's internal fleck is a restrained accent. No other weapons, character, diagram, hanging labels or decorative clutter. A physical painted equipment portrait rather than a product render.",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/01-stormglass-glaive.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5e13e4da-3e5c-4bcc-be03-e582dbf89ebd.png",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ce6c2669edb0cd6b678ce23faa5429c75843ca279eadf826ec434b6463c181c9",
+      "creator_feedback": "Liked; approved equipment reference.",
+      "review_date": "2026-11-10",
+      "staged_file": "01-stormglass-glaive.png"
+    },
+    {
+      "id": "02",
+      "slug": "the-glasswind-rider",
+      "title": "The Glasswind Rider",
+      "intent": "A desert orc traveller and a new terrestrial mount: another possible culture and way of life beyond the familiar warband. Neither species biology nor faction is settled.",
+      "direction": "Character and creature",
+      "prompt": "Use case: identity-preserve and precise-object-edit. Edit IMAGE 1, the painted desert rider scene. IMAGE 2 is a goblin SPECIES REFERENCE ONLY. Deliver one finished 1536 x 1024 full-bleed painting. The creator requests two changes: replace the male orc rider with a male GOBLIN, somewhat larger and more muscular than an ordinary goblin; and turn his spear FORWARD in the direction the bird is travelling, toward IMAGE-RIGHT.\n\nKeep the feathered bird's identity, plumage, beak, two-leg anatomy, pose, body scale and position exactly as in image 1. Preserve the pink salt flats, mesas, dramatic sky, original light and painted style. Rebuild the rider as a compact strong ADULT male goblin with the species anatomy of image 2: long prominently pointed ears, a narrow projecting nose, lively slightly hooded eyes, olive-ochre skin, a small angular chin and jaw, no orc underbite or tusks. Draw especially on the sturdy second head from the left in the bottom row of image 2. He is noticeably shorter and lighter than the original orc while broad and strong for a goblin, not a small orc, human or cartoon. Keep his indigo wrap, sand-coloured tunic and simple beaten-metal chest protection fitted to the new body. Maintain secure saddle contact and naturally connected hips, legs, boots, shoulders and hands. One hand holds the rein; the other firmly grips a single ordinary wooden spear.\n\nThe spear blade must point toward the RIGHT, ahead of the rider and bird, at a modest upward angle. Show the spearhead clearly in the open sky at image-right, fully within the canvas; the shaft should pass naturally through the gripping hand, not through his face or the bird. No second backward-pointing spear, duplicate weapon or extra hand. Preserve the wide composition and keep the scene recognizably the same. No added text, border, glow, armor spikes or equipment. Matte painted face; do not exaggerate pores or make a grotesque goblin caricature.",
+      "file": "02-the-glasswind-rider-v2.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f048848f-6c88-44e0-bfd8-820542430969.png",
+      "review_status": "revision_awaiting_creator_review",
+      "active_reference": false,
+      "assistant_visual_review": "Inspected: requested subject/costume correction is visible; principal anatomy, pose and scene remain coherent. Awaiting creator acceptance.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2a59e4c4aaa6460726537f3fc969d6282aff67d74a698007bc901830937e3c6f",
+      "creator_feedback": "Revise this rider into a somewhat larger, stronger male goblin, still clearly goblin-like rather than orc-like. Point the spear forward. The completed revision awaits creator review.",
+      "review_date": "2026-11-10",
+      "previous_versions": [
+        {
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5089b91a-1d1b-4fab-adfd-bc808cbe81fc.png",
+          "sha256": "8d0ecdb7e1242a56094dd2a4c2fc1f1fa0625aa587bb968b2333d25d40db5323",
+          "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a rugged orc rider and a startling feathered desert mount crossing luminous salt country, with proud clear silhouettes and enormous sky. A mature MALE orc rides a tall flightless bird along a broken ridge above pale pink salt flats and red sandstone mesas. His anatomy is broad and powerful, olive-brown skin, low strong brow, wide flat nose, projecting lower jaw with two modest upward tusks, large blunt ears and sparse close-cropped black hair with grey at the temples. An individual, not a monster or cartoon. He wears a weather-faded indigo shoulder wrap over a simple sand-coloured tunic, modest beaten iron chest protection, ordinary trousers and a single practical belt; no elaborate leather stacks or spiked armor. His simple travelling spear points back over his shoulder in one hand; the other holds a loose plain rein. The mount is an original terrestrial bird about the size of a large riding horse, with TWO long muscular legs and clearly grounded three-toed feet, a deep feathered body, tiny folded wings against its sides, long tapering feathered tail and a narrow slightly down-curved beak. Copper-grey feathers are short and shaggy along its neck like a feathered dinosaur, with longer charcoal tail feathers and a small pale crest. Coherent bird anatomy, no extra legs, horns, giant saddle platform or mechanical parts. A small well-fitted riding pad and girth, no excess harness. Low viewpoint, one powerful walking step, distant heat-haze expressed through quiet paint, not lens blur. Sharp sun against an approaching blue storm. No levitating sand or floating crystals.",
+          "review_status": "rejected_orc_version_deleted",
+          "deleted_file": "02-the-glasswind-rider.png"
+        }
+      ],
+      "original_generation_prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a rugged orc rider and a startling feathered desert mount crossing luminous salt country, with proud clear silhouettes and enormous sky. A mature MALE orc rides a tall flightless bird along a broken ridge above pale pink salt flats and red sandstone mesas. His anatomy is broad and powerful, olive-brown skin, low strong brow, wide flat nose, projecting lower jaw with two modest upward tusks, large blunt ears and sparse close-cropped black hair with grey at the temples. An individual, not a monster or cartoon. He wears a weather-faded indigo shoulder wrap over a simple sand-coloured tunic, modest beaten iron chest protection, ordinary trousers and a single practical belt; no elaborate leather stacks or spiked armor. His simple travelling spear points back over his shoulder in one hand; the other holds a loose plain rein. The mount is an original terrestrial bird about the size of a large riding horse, with TWO long muscular legs and clearly grounded three-toed feet, a deep feathered body, tiny folded wings against its sides, long tapering feathered tail and a narrow slightly down-curved beak. Copper-grey feathers are short and shaggy along its neck like a feathered dinosaur, with longer charcoal tail feathers and a small pale crest. Coherent bird anatomy, no extra legs, horns, giant saddle platform or mechanical parts. A small well-fitted riding pad and girth, no excess harness. Low viewpoint, one powerful walking step, distant heat-haze expressed through quiet paint, not lens blur. Sharp sun against an approaching blue storm. No levitating sand or floating crystals.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/world-edges-round-10-2026-11-10/02-the-glasswind-rider.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png"
+      ],
+      "revision": 2
+    },
+    {
+      "id": "03",
+      "slug": "the-rootbound-quarter",
+      "title": "The Rootbound Quarter",
+      "intent": "An inhabited forest settlement with architecture, domestic life and trade. Tests a richer built environment for woodland societies without making everyone a druid.",
+      "direction": "Place and society",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a beautiful, believable settlement tucked beneath living roots, where practical human architecture and immense woodland forms meet. Show a small inhabited quarter at the base of an ancient tree on a steep green hillside. Great gnarled roots arch naturally above limewashed stone rooms, timber balconies and red-brown tiled roofs; the tree is rooted solidly in the hill, not a floating island or giant humanoid. Buildings are built carefully around roots rather than resembling mushroom houses. A narrow cobbled stair curves through the foreground past an open kitchen window, an awning with two baskets of ordinary produce and a low communal water trough. Four or five ordinary human residents, differently aged and clothed in simple warm earth-coloured fabrics, carry the scene's life: a mature woman sits at a doorway, two neighbours converse on a landing, a man climbs the stair. Faces secondary and broadly painted, no crowd of idealized elves or people all casting spells. A glimpse of a distant forest bridge and lower roofs establishes a real settlement, not one picturesque hut. Warm late sun enters from the canopy on one beautifully shaped ochre plaster wall, balanced by deep green leaf shade and terracotta. Only modest foliage flowers, no purple magic wash, no glowing vines. The root's immense curved mass and the intimate lit doorway make the composition; surrounding leaves and distant timberwork use quieter grouped marks. High fantasy inhabited by households with their own culture, not an idyllic theme park.",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f307e1b0-0078-4eea-bcc1-be85c3dd2966.png",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2deae59c67c4cc9a0c730fece7068136a2e4cb6167c634411dca895890327a08",
+      "creator_feedback": "The new wooden village is very good; approved.",
+      "review_date": "2026-11-10",
+      "staged_file": "03-the-rootbound-quarter.png"
+    },
+    {
+      "id": "04",
+      "slug": "something-beneath-the-abbey",
+      "title": "Something Beneath the Abbey",
+      "intent": "An exceptionally large coastal creature encountered beside human architecture. Its intelligence, origin and relationship to the abbey are deliberately unexplained.",
+      "direction": "Far-edge creature",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: an unforgettable encounter between a tiny coastal abbey and a beautiful, unsettling immense animal emerging beside it. Paint a storm-dark sea below an old limestone abbey built on a rocky headland. A single extraordinary marine creature has raised its head from the water just beneath the terrace: a long broad shovel-like snout, one visible small amber eye set low, a smooth pearl-grey hide with broad organic folds, and a paired ridge of thin ivory crest plates sweeping backward from the skull like the plates of a strange marine reptile. No antlers, dragon horns, human face, exposed teeth or tentacle clutter. Its huge head is about as long as the abbey's lower building; a heavy serpentine neck curves down into the deep teal water, with just a dark curve of body farther away. One coherent animal, most of it submerged. Water pours in heavy ordinary sheets from the snout. Two small adult human figures in plain dark coats stand on the stone terrace, one hand on the parapet, still in awe rather than fighting or worshipping. Their human proportions and the doorway give reliable scale. A break in the steel-blue cloud lights the pale head and cream abbey wall, while warm amber shows in a single narrow window. Strong diagonal of cliff and creature, formidable natural weight, churning sea painted in broad substantial masses. No boats flying, no hunters, no scene covered in magical glow. A rare visitation with ambiguous intention, high fantasy rather than a wildlife trophy painting.",
+      "file": null,
+      "review_status": "rejected_shoreline_depiction_deleted",
+      "active_reference": false,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d1c57b75c101afeee2ca65739f3a66a190564eedeff837f84bd5cf749cbb3240",
+      "creator_feedback": "The immense creature is too large for this shoreline encounter. A creature of this scale might belong far out in the ocean as something possibly true but unconfirmed. Reject this depiction; preserve the tentative idea in writing.",
+      "review_date": "2026-11-10",
+      "deleted_file": "04-something-beneath-the-abbey.png",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-564abd18-cde5-4985-a3f5-07524b901248.png",
+      "deletion_date": "2026-11-10"
+    },
+    {
+      "id": "05",
+      "slug": "the-ivory-mantle-envoy",
+      "title": "The Ivory-Mantle Envoy",
+      "intent": "A lion-folk presence outside battlefield armor, exploring dignity, diplomacy and material culture. This individual does not define all lion-folk dress or politics.",
+      "direction": "Character and culture",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a dignified older lion-folk envoy whose powerful feline face and beautifully cut cloth carry the portrait. In a quiet reception chamber near a tall open balcony, a tall upright male lion-person stands in three-quarter view, leaning a little on a plain dark wooden walking staff. He has a fully LION head, broad muzzle, amber feline eyes, rounded ears mostly within a deep tawny mane streaked with silver; no human nose, human face under a lion helmet, cartoon cat or exaggerated snarl. Calm wary intelligence, one old notch in an ear. His body is broad but natural, with furred hands capable of grasping; the staff hand clearly has a connected wrist and sensible grip. He wears a tailored charcoal-blue long coat and an ivory wool mantle held by one modest engraved bronze clasp, with a small band of muted madder embroidery at the hem. Excellent cloth construction, ordinary folds, a few personal ornaments, no giant pauldrons, elaborate crown, sun logos everywhere or trailing enormous cape. The free hand rests naturally against a folded document case at his hip. Late afternoon light from the balcony catches silver strands of mane and the mantle's shoulder; warm reddish stone courtyard architecture and a tiny human attendant remain secondary. Deep blue, ivory, tawny gold and warm terracotta balanced across the frame. A compelling individual with authority, not a species reference sheet or battle pose.",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/05-the-ivory-mantle-envoy.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-edc037c3-a155-4709-a7b8-3892087f263b.png",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a1d32d711fc264f29737b951226fd3821ab59086bbaa2366eb14dc85208b6e39",
+      "creator_feedback": "The lion-folk concept is strongly liked; approved.",
+      "review_date": "2026-11-10",
+      "staged_file": "05-the-ivory-mantle-envoy.png"
+    },
+    {
+      "id": "06",
+      "slug": "the-garden-that-still-opens",
+      "title": "The Garden That Still Opens",
+      "intent": "An old, large construct carrying out a modest routine. Tests personality through posture and persistent purpose, without assuming consciousness.",
+      "direction": "Strange craft",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a large peculiar antique construct in a neglected walled garden, both imposing and oddly tender, with beautiful worked metal against living greenery. A roughly three-metre-tall gatekeeping construct is opening one heavy wooden garden gate in the early morning. Its silhouette is distinctly functional rather than human: a broad arched bronze upper frame with three overlapping curved metal back plates; two substantial bent supporting legs end in wide iron feet on the path; TWO long jointed work arms attach visibly to the sides of the frame, one simple padded gripper resting against the gate and the other folded close to its own body. Exactly two support legs and two arms, coherent joints and weight. A small downward-tilting bronze hood at the front suggests where it attends, without a futuristic robot face, bright eye or knight's helmet. A modest deep red ceramic insert is recessed into the chest frame, not a giant glowing reactor. Hammered bronze, rubbed edges, old verdigris in seams, clear air through parts of the frame; a few cables concealed with the joints, no decorative gear forest. The gate opens onto an empty avenue of old pear trees and a faded stone fountain. One living elderly gardener, small by comparison, passes the gate with a basket and briefly touches the wooden door, not hugging the machine or explaining it to us. Slanting spring light, pale grass, rusty red roof glimpsed behind the wall. The construct's slightly inclined hood and patient heavy posture create character through a narrow familiar routine. No flowers sprouting from its brain, no floating parts, no claim of human consciousness.",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/06-the-garden-that-still-opens.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-b5b9c58c-2970-4397-ba79-df74c9ab78aa.png",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dde19b65b53ee11a5b98d4b9351866f5cd8b64d7773b59eb181a00b0a038dfa9",
+      "creator_feedback": "Liked; its appealing, somewhat impractical use of magic is a positive direction. Approved.",
+      "review_date": "2026-11-10",
+      "staged_file": "06-the-garden-that-still-opens.png"
+    },
+    {
+      "id": "07",
+      "slug": "the-velvet-stair",
+      "title": "The Velvet Stair",
+      "intent": "Court intrigue built around a strong human presence, gesture and divided light. A fresh character study rather than an explanation of a magical ability.",
+      "direction": "Character and intrigue",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1, The Velvet Stair, only in the adult woman's upper dress bodice and bust silhouette. IMAGE 2 is a clothed costume/proportion reference ONLY, showing the creator's existing fuller-bust character direction; do not copy its person, face, dress colour or setting. Deliver one finished 1536 x 1024 painting with the same composition and virtually everything preserved.\n\nThe creator likes image 1 and asks for a slightly fuller bust and a moderately lower, flattering square neckline with a little visible cleavage, in the same direction as image 2 but distinctly MORE RESTRAINED. Use tasteful believable tailoring in the existing opaque bronze silk bodice; a modest increase in volume and neckline openness, proportionate and supported, not the deeper cut or fuller proportions of image 2. Keep the red velvet coat, sleeves and gold embroidered edges, the same waist, shoulders, torso orientation, and the LONG floor-length bronze dress with its existing folds and coverage. Do not shorten the skirt or turn it into a pinup, swimsuit, cropped top or transparent garment.\n\nPreserve the original adult woman in her late thirties: identical distinctive aquiline nose, eyes, expression, age, skin tone, hairstyle and facial structure. Preserve her exact stair-stepping pose, both arms and hands, the letter, railing contact, foot placement, architecture, secondary figures, windows, warm candlelight and cool daylight. Ensure the adjusted bodice fits the existing shoulders, clavicles and ribcage naturally; no distorted torso or disconnected limbs. Keep skin matte and softly painted without more shine or red cheeks. Change no face or background details, add no text, border or new objects.",
+      "file": "07-the-velvet-stair-v2.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c362ef63-40d3-4f6b-b7e2-3a4c3bf81739.png",
+      "review_status": "revision_awaiting_creator_review",
+      "active_reference": false,
+      "assistant_visual_review": "Inspected: requested subject/costume correction is visible; principal anatomy, pose and scene remain coherent. Awaiting creator acceptance.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "afd06e3be68a584ebdfa1b12a6e139bf85eed0539ef160d6938d371b39583673",
+      "creator_feedback": "The court-intrigue scene is liked. Keep the long dress and apply a more restrained version of the existing fuller-bust/neckline direction. The completed revision awaits creator review.",
+      "review_date": "2026-11-10",
+      "previous_versions": [
+        {
+          "file": "prior-versions/07-the-velvet-stair.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-fabe8608-6f00-42a9-b529-9af07c43d59f.png",
+          "sha256": "557e41d7b9acda67113d9962dd2ea284c6270fbc6c96b76d895e74e84f3851f5",
+          "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a striking adult woman caught at the turn of a palace stair, rich cloth and divided light conveying danger and intention. A woman in her late thirties has just paused halfway down a worn limestone spiral stair, turning her head back toward an open door above. She is attractive in a distinctive individual way: long slightly aquiline nose, dark close-set eyes, angular cheekbones, a small asymmetry at her mouth and dark brown hair braided into a practical low knot with one loose strand. Matte painted skin, no doll face or beauty-filter cheeks. She wears a beautifully cut wine-red velvet short coat over a simple bronze silk gown, fitted at the waist with believable fabric structure and a modest square neckline, no armour and no excessive straps. Her left hand rests lightly on the curved stone balustrade; her right hand holds a small folded cream letter low beside her skirt. Two connected arms and a stable stepping pose, one foot clearly resting on the lower tread. No weapon, magic beam, glowing letter or hovering mask. Warm candlelight from the doorway grazes the red velvet and one cheek; cool morning light from a slit window defines the stair's broader curve and quiet blue-grey shadows. Two very small indistinct court figures occupy the far upper landing, a suggestion of the life she has just left. Strong diagonal stair composition and psychologically alert gesture, not a frontal fashion portrait. The door, cloth and hand are precisely placed; distant masonry has fewer quieter brush marks. Keep the scene tense and alive without assigning a definite plot.",
+          "review_status": "liked_scene_before_requested_bodice_revision"
+        }
+      ],
+      "original_generation_prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a striking adult woman caught at the turn of a palace stair, rich cloth and divided light conveying danger and intention. A woman in her late thirties has just paused halfway down a worn limestone spiral stair, turning her head back toward an open door above. She is attractive in a distinctive individual way: long slightly aquiline nose, dark close-set eyes, angular cheekbones, a small asymmetry at her mouth and dark brown hair braided into a practical low knot with one loose strand. Matte painted skin, no doll face or beauty-filter cheeks. She wears a beautifully cut wine-red velvet short coat over a simple bronze silk gown, fitted at the waist with believable fabric structure and a modest square neckline, no armour and no excessive straps. Her left hand rests lightly on the curved stone balustrade; her right hand holds a small folded cream letter low beside her skirt. Two connected arms and a stable stepping pose, one foot clearly resting on the lower tread. No weapon, magic beam, glowing letter or hovering mask. Warm candlelight from the doorway grazes the red velvet and one cheek; cool morning light from a slit window defines the stair's broader curve and quiet blue-grey shadows. Two very small indistinct court figures occupy the far upper landing, a suggestion of the life she has just left. Strong diagonal stair composition and psychologically alert gesture, not a frontal fashion portrait. The door, cloth and hand are precisely placed; distant masonry has fewer quieter brush marks. Keep the scene tense and alive without assigning a definite plot.",
+      "reference_images": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/door-into-snow-character.png"
+      ],
+      "revision": 2
+    },
+    {
+      "id": "08",
+      "slug": "the-rain-that-rises",
+      "title": "The Rain That Rises",
+      "intent": "A rare, unexplained magical landscape event: water ascending from a valley. Tests wonder at a large scale without deciding who caused it or how it works.",
+      "direction": "Far-edge phenomenon",
+      "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a monumental luminous column of RISING RAIN in a green mountain valley, astonishing but painted with physical weight and restraint. A deep still lake fills the valley floor beneath dark layered cliffs. Over one limited area of water, thousands of distinct droplets and several rounded suspended masses of water are ascending into a sunlit cloud opening, like rain travelling upward. The column fans slightly as it rises; small lifted beads have visible gaps between them, with tiny splashes drawing UP from the lake's surface below, so the event is visually unusual rather than simply rain falling. Do not make luminous strings, ribbons, geometric diagrams, smooth sci-fi tractor beams, a tornado, or a solid waterfall. Water itself catches pale gold sun and cool silver sky; no saturated magic-color flood. Three tiny travellers and a sturdy pack mule stand on a near ridge path, their still silhouettes providing scale and attention, no visible caster or energy machine and no implied cause. A modest old stone watchtower stands well away across the valley, marking human habitation without a detailed city. Deep olive slopes, copper autumn leaves on one near tree, blue-grey shadowed rock, bright cream cloud and luminous water. Compose the broad valley and rising weather as the principal forms, with the observers small but readable. The image feels exceptional and mysterious, not an everyday transport system or apocalyptic explosion. Paint foreground rock with clear planes and the far ridges with quiet broad marks, preserving a believable inhabited world beneath the wonder.",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/08-the-rain-that-rises.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-1d7fbe51-856f-4dc4-9694-3b293bdfdb20.png",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "assistant_visual_review": "Inspected the generated painting for readable subject, connected principal anatomy and coherent materials; ready for creator review.",
+      "generation_method": "built-in image_gen",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3e73abde15d7361d095b98fd106501cb4ee1e842bc319f948d47e99e6170a8ca",
+      "creator_feedback": "Strongly liked: very cool. Approved.",
+      "review_date": "2026-11-10",
+      "staged_file": "08-the-rain-that-rises.png"
+    }
+  ],
+  "review_date": "2026-11-10",
+  "accepted_image_ids": [
+    "01",
+    "03",
+    "05",
+    "06",
+    "08"
+  ],
+  "pending_revision_ids": [
+    "02",
+    "07"
+  ],
+  "rejected_image_ids": [
+    "04"
+  ],
+  "additional_spoken_feedback": "Creator also praised a “precarial home concept”; no separate matching title was identified. Rootbound Quarter was explicitly approved independently."
+}

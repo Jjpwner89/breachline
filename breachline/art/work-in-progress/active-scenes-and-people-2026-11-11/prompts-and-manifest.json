@@ -1,0 +1,452 @@
+{
+  "date": "2026-11-11",
+  "scope": "Normal art and proposed character/species references",
+  "status": "pending_creator_selection",
+  "source_feedback": "Prior export plus current chat corrections; images are not votes or lore decisions.",
+  "images": [
+    {
+      "n": 1,
+      "slug": "human-faces-songweaver-and-new-neighbors",
+      "title": "H1 · Human faces A · Songweaver and new people",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/countryside-and-city-scenes-2026-11-09/01-a-wager-in-the-meadow.png"
+      ],
+      "intent": "Songweaver's original identity in the ordinary face-sheet finish, plus seven varied adult faces.",
+      "prompt": "Transform the supplied face and style references into ONE new Breachline human reference sheet, landscape 1536x1024, exactly EIGHT separate head-and-shoulder portraits in two rows of four on a clean warm ivory background. Reference image 1 defines the existing reference-sheet presentation: hand-painted oil studies with connected planar brushwork, matte skin, natural asymmetry, strong anatomy, modest gradual changes of detail, loose simple linen collars. Match that unified painted visual language, do not copy its eight faces. Reference image 2 supplies ONLY the specifically named woman's FACE, not its scene or outfits. Every portrait is a different clearly adult human; keep spacing generous, heads equal useful scale, complete hair and chin within canvas, no overlap, simple opaque ivory linen shirts to base of neck, no hands. Real observed faces, recognizable distinctions in eyes/noses/jaws/mouths, a range of age and complexion. Some attractive, some ordinary, all individualized; no repeated model-face or caricatures. Matte faces, restrained small eye accents, no waxy digital sculpting, no pore-level photorealism, no filter texture or random scratchy marks. No title, labels, text, frames or panels.\nTOP ROW LEFT TO RIGHT:\n1. Jade-ribbon Songweaver, woman27, exact identity of the RIGHT woman in reference image2: Korean-inspired heart-shaped face, almond eyes, soft distinctive nose and lips, low braided black knot, small jade pin and jade drops. Preserve face geometry and likeness from that reference; a natural faint smile with lips together, three-quarter view. Her original lightly elegant beauty remains without beautifying all other faces.\n2. Man52, very dark brown skin, long rectangular face, strong round broad nose, deeply set wide-spaced eyes, receding tightly curled hair, narrow graying moustache, alert attentive expression, slight three-quarter left.\n3. Woman38, fair freckled skin, broad square jaw, heavy straight eyebrows, slightly crooked hooked nose, cropped auburn hair with uneven fringe, serious intent, almost frontal.\n4. Man24, warm brown skin, thin long face, prominent convex nose, large ears, black close curls, short sparse beard, amused side glance.\nBOTTOM ROW LEFT TO RIGHT:\n5. Woman68, olive skin, heavy-lidded green-brown eyes, long strong nose, soft sagging cheeks, graying brown hair braided across crown, dignified slightly weary expression.\n6. Man43, East Asian-inspired rounded broad face, narrow eyes and wide flat-bridged nose, short straight black hair, clean shaven, gentle lopsided grin.\n7. Woman31, deep brown skin, narrow angular face, high broad cheekbones, rounded full nose, short natural coiled hair, dark thoughtful eyes, calm.\n8. Man72, pale weathered skin, compact face, broad broken nose, thinning white hair and blunt beard, kind stern brow, thin lips.\nAll eight have distinct plausible proportions and the same coherent painting finish.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-dcc63aae-18c7-4e25-a267-90fe8d2b5a30.png",
+      "file": "01-human-faces-songweaver-and-new-neighbors.png",
+      "review_code": "H1",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Eight distinct adults; Songweaver retained at top left. Creator asked to keep this identity as shown; sheet remains pending overall selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/countryside-and-city-scenes-2026-11-09/01-a-wager-in-the-meadow.png",
+          "role": "Named face identity only; do not inherit scene lighting or wardrobe"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "0db98d51866363a9d9be"
+    },
+    {
+      "n": 2,
+      "slug": "human-faces-cloud-silk-and-new-neighbors",
+      "title": "H2 · Human faces B · Cloud-silk and new people",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/countryside-and-city-scenes-2026-11-09/04-a-trick-above-the-silk-market.png"
+      ],
+      "intent": "Cloud-silk's original identity in the ordinary face-sheet finish, plus seven additional adult faces.",
+      "prompt": "Transform the supplied face and style references into ONE new Breachline human reference sheet, landscape 1536x1024, exactly EIGHT separate head-and-shoulder portraits in two rows of four on a clean warm ivory background. Reference image 1 defines the existing reference-sheet presentation: hand-painted oil studies with connected planar brushwork, matte skin, natural asymmetry, strong anatomy, modest gradual changes of detail, loose simple linen collars. Match that unified painted visual language, do not copy its eight faces. Reference image 2 supplies ONLY the specifically named woman's FACE, not its scene or outfits. Every portrait is a different clearly adult human; keep spacing generous, heads equal useful scale, complete hair and chin within canvas, no overlap, simple opaque ivory linen shirts to base of neck, no hands. Real observed faces, recognizable distinctions in eyes/noses/jaws/mouths, a range of age and complexion. Some attractive, some ordinary, all individualized; no repeated model-face or caricatures. Matte faces, restrained small eye accents, no waxy digital sculpting, no pore-level photorealism, no filter texture or random scratchy marks. No title, labels, text, frames or panels.\nTOP ROW LEFT TO RIGHT:\n1. Cloud-silk illusionist, woman29, exact identity of the RIGHT woman in reference image2: Chinese-inspired long oval face, gently bridged slender nose, original almond eyes and full shaped lips, long black hair half-up with a small jade pin. Preserve her reference's distinctive face proportions, a small knowing closed-mouth smile, three-quarter facing left. Do not blend her with the left-hand woman or substitute Songweaver's shorter heart-shaped face.\n2. Man35, warm olive skin, broad high cheekbones, large slightly projecting ears, close-set amber eyes, long beaked nose, thick wavy chestnut hair, stubble, reserved.\n3. Woman56, dark warm brown skin, broad soft square face, blunt round nose, hooded eyes, silver-black short tight curls, purposeful direct gaze, unsmiling.\n4. Man21, pale skin with subtle freckles, very long face and thin lips, wide-set gray eyes, curly straw-blond hair, small pointed chin, shy curiosity.\nBOTTOM ROW LEFT TO RIGHT:\n5. Woman44, medium golden brown skin, very broad cheekbones and compact jaw, dark straight eyebrows, flat broad nose, straight black hair in two simple braids, slightly narrowed amused eyes.\n6. Man64, medium-brown skin, deep-set dark eyes, long drooping nose, strong receding chin, thinning straight gray hair and sparse gray beard, searching gaze.\n7. Woman25, pale warm skin, elongated asymmetric face, prominent slightly convex nose, full lower lip, hazel eyes, shoulder-length dark-blond waves loosely tied, open friendly expression, not glamour posing.\n8. Man47, dark brown skin, round full face, a gap visible in a small easy smile, wide blunt nose, shaved head, short salt-and-pepper beard, very distinctive.\nNo repeated face or age template; exactly eight portraits.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a2587e01-7a94-4b64-b3f9-08ef15893e32.png",
+      "file": "02-human-faces-cloud-silk-and-new-neighbors.png",
+      "review_code": "H2",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Eight distinct adults; Cloud-silk retained at top left. Creator asked to keep this identity as shown; sheet remains pending overall selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/countryside-and-city-scenes-2026-11-09/04-a-trick-above-the-silk-market.png",
+          "role": "Named face identity only; do not inherit scene lighting or wardrobe"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "424027016a07d9ae2e78"
+    },
+    {
+      "n": 3,
+      "slug": "human-faces-white-men",
+      "title": "H3 · Human faces C · White men",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "intent": "Eight white adult men with clearly different ages, face shapes and expressions.",
+      "prompt": "Use the attached existing Breachline human face sheet as the painting and layout template only. Replace ALL eight people with EIGHT DIFFERENT WHITE ADULT MEN, head-and-shoulder portraits, 2 rows of 4, landscape1536x1024. Clean warm ivory background, equal large heads, full hair/chin visible, generous spaces, plain opaque ivory linen necklines. Painted oil realism, the same confident connected planes and matte finish as the supplied sheet, simple shadows with restrained small eye lights, naturally resolved faces and progressively simpler collars. No camera blur, waxy gloss, random scratch texture, pore rendering or repeated faces. Do not recreate faces already on the reference. A credible varied cast rather than eight models or eight warriors. No text labels border panels or hands.\nTop left to right: \n1. A 22-year-old slim pale man, long face, prominent ears, slightly crooked narrow nose, dark hazel eyes, untidy short chestnut curls, clean shaven, eager open smile with naturally irregular teeth.\n2. A 38-year-old broad heavyset fair man, round cheek planes, small alert blue eyes, wide broken boxer nose, straight thinning dark-blond hair, short bristly moustache, sober attentive expression. Weight visible in neck and face, without caricature.\n3. A 56-year-old ruddy weathered man, long narrow bony face, hooked nose, pale green eyes, deep temples, shoulder-length graying black hair tied back, unshaven beard shadow, skeptical half-raised brow.\n4. A 70-year-old white-haired man with pale olive skin, asymmetric heavy eyelids, deep-set brown eyes, wide high forehead, short blunt nose, clean shaven with loose cheeks, quiet amused expression.\nBottom left to right:\n5. A 29-year-old very fair red-haired man, dense freckles, angular jaw, thick eyebrows, blue-gray eyes, broad upper nose, sparse short red beard, restrained crooked smile.\n6. A 45-year-old fair bald man, sturdy square face, large convex nose, gray eyes, dark stubble, lips slightly compressed in concentration, a subtle old eyebrow scar.\n7. A 61-year-old stocky white man with warm fair complexion, full white moustache but no beard, short curly gray hair, wide-set green eyes, large rounded nose, warm grin, thick neck.\n8. A 33-year-old white man with light olive complexion, slim oval face, long straight brown hair tucked behind ears, full lower lip, gentle brown eyes, distinctive slightly receding chin, a composed listening expression.\nVary front and three-quarter views with readable anatomy, modest asymmetry, and unified natural brushwork.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-5cee0937-2187-45b9-bdf4-cd3218dd2ba1.png",
+      "file": "03-human-faces-white-men.png",
+      "review_code": "H3",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Eight adult white men with varied ages, face shapes and builds. Pending selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "d6c70ed4e1d3fa1e3aba"
+    },
+    {
+      "n": 4,
+      "slug": "genesis-over-the-fallen-beech",
+      "title": "A1 · Genesis · Over the Fallen Beech",
+      "kind": "Study",
+      "alignment": "Genesis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/02-willow-at-the-waterline.png"
+      ],
+      "intent": "An alderkin moving decisively through its territory; test action without losing broad readable bark forms.",
+      "prompt": "Create a new active scene by transforming the supplied Breachline character painting. Preserve the successful coherent painted finish and the character's recognizable design, but completely replace the pose and composition with the described action. ONE finished landscape painting1536x1024, no sheet, no panels/text/signature. Traditional oil painting, clear large connected value masses, richly observed restrained color, matte skin cloth and bark, gradual modest changes in detail, clear silhouettes and weight-bearing anatomy. Detail follows form; no scratchy contour tracing, dashes scattered on top, palette-knife confetti, photoreal face pasted on loose surroundings, digital wax or game-render gloss. Background remains plainly intelligible without camera blur. The motion must come from a clear physical action and balance, not ribbons of visual effects. Breachline high fantasy150years after imperial collapse.\nThe same willow alderkin now reacts decisively to an intruder beyond frame. It is bounding left-to-right across a massive mossy fallen beech in a dark woodland clearing, three-quarter side view, body occupying middle two thirds. One root-foot plants solidly on top of the trunk; the other root-leg is bent and driving through the stride, clearly separated. The near long branch-hand grips one simple straight wooden staff/spear held forward at a slight upward angle; the far arm sweeps back for balance. Upright open trunk leans toward its destination; head looks sharply forward, not down or contemplatively away. Dark knot eyes intent, angular head purposeful without cartoon rage. No hand on chest.\nPreserve naturally grown asymmetric treelike anatomy: a few major woody uprights forming an OPEN trunk, branch arms, root legs, spare russet leaf crown; no human torso muscles, rubber bark suit or human face. Make the trunk openings legible against a quiet pale green distant gap. Main branches and legs fully inside frame; some minor foliage movement. Cool deep bottle green woodland, a narrow warm overcast light patch catching one shoulder and the staff. Broad readable bark, few quiet ferns, 3 major trunks; reduce little leaf marks. A credible instant of momentum and independent territorial purpose. No other figure, no water infrastructure, no sleepy idyll.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-22c3d264-df8b-41dc-9821-f78414650259.png",
+      "file": "04-genesis-over-the-fallen-beech.png",
+      "review_code": "A1",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": false,
+      "assistant_review": "Clear forward movement and territorial intent; open trunk and root-leg contact remain readable. Pending review.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/02-willow-at-the-waterline.png",
+          "role": "Same character and coherent paint; do not inherit shiny skin"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "29ad105a023c79784dc6"
+    },
+    {
+      "n": 5,
+      "slug": "fervor-through-the-squall",
+      "title": "A2 · Fervor · Through the Squall",
+      "kind": "Study",
+      "alignment": "Fervor",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/04-before-the-thunder-breaks.png"
+      ],
+      "intent": "The storm mage drives forward through weather; energy from stride, cloth and displaced rain.",
+      "prompt": "Create a new active scene by transforming the supplied Breachline character painting. Preserve the successful coherent painted finish and the character's recognizable design, but completely replace the pose and composition with the described action. ONE finished landscape painting1536x1024, no sheet, no panels/text/signature. Traditional oil painting, clear large connected value masses, richly observed restrained color, matte skin cloth and bark, gradual modest changes in detail, clear silhouettes and weight-bearing anatomy. Detail follows form; no scratchy contour tracing, dashes scattered on top, palette-knife confetti, photoreal face pasted on loose surroundings, digital wax or game-render gloss. Background remains plainly intelligible without camera blur. The motion must come from a clear physical action and balance, not ribbons of visual effects. Breachline high fantasy150years after imperial collapse.\nThe SAME adult stormmage in the supplied painting, original broad face strong nose gray eyes short copper-brown hair and brick-red coat over indigo opaque clothes, now striding forcefully diagonally from left back toward foreground right across a broken upland causeway. Show her full body including both feet. Front boot planted solid on stone, rear heel lifts in a long committed stride. Torso twists slightly, leading arm reaches forward shoulder-height with palm facing into the wind; other hand holds the loose coat edge at her hip. Head aligned with action, fierce delighted grin, eyes on the obstacle ahead, no viewer posing.\nShe is shoving a squall aside to clear her own road: one broad curved SHEET of pale rain pushed obliquely away at the right edge, a few restrained blue-white sparks close to the forward fingers. No looping energy ribbons, circular sigils, explosions or piles of effects. The red coat streams back and the stone road visible under her feet anchors the motion. Just one person. Big violet-gray cloud mass, ochre roadside grass in wind, cool light across cheek and one coat fold. Freely confident and bold, an ordinary individual claiming room in the world. Compose a strong readable diagonal with open space ahead of her gesture. Consistent painted forms across face, hands, coat and clouds; matte face not glossy. Clear five-finger hand silhouette and naturally aligned shoulders.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-54a3e6fb-5c76-4dde-9cd0-13d19a27ca9f.png",
+      "file": "05-fervor-through-the-squall.png",
+      "review_code": "A2",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": false,
+      "assistant_review": "Original action had overly shiny skin per creator. Restrained matte correction is the current candidate; anatomy and scene preserved, awaiting review.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/04-before-the-thunder-breaks.png",
+          "role": "Same character and coherent paint; do not inherit shiny skin"
+        }
+      ],
+      "previous_version": {
+        "file": "originals/05-through-the-squall-before-skin-review.png",
+        "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a08f27e8-a38d-40cf-9e33-0a5bf77ea394.png",
+        "creator_feedback": "Face too shiny; one of the weaker surface treatments in this round.",
+        "status": "superseded_for_skin_review"
+      },
+      "revision_prompt": "Make one small, restrained surface-lighting correction to this exact Breachline action painting. The creator likes the coherent painted finish but finds the red-coated woman's face too shiny. Preserve the exact woman, recognizable face geometry, age, expression, hair, all anatomy including both hands, action pose, red coat and indigo clothes, composition, rain magic, background and original dimensions. Correct only the skin's specular appearance on face/neck and extended arm. Remove oily pinpoint highlights and hot peach-white streaks on forehead, nose, upper cheeks and chin. Bring those small hotspots down into the adjacent naturally colored light planes, with softly diffused overhead light and gentle transitions. Retain natural cheek color and the lively expression; no beautification or facial redesign. Keep a little small eye catchlight. Maintain broad confident painted facial forms, an ordinary human with dry matte skin. Do not flatten the face, darken it overall, blur, add wrinkles or gritty paint texture, make every brushstroke conspicuous, or turn this into a stylized cartoon. Very restrained revision; no other change.",
+      "revision_reference": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a08f27e8-a38d-40cf-9e33-0a5bf77ea394.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "8d3634f95e619458149b"
+    },
+    {
+      "n": 6,
+      "slug": "vigil-the-road-still-holds",
+      "title": "A3 · Vigil · The Road Still Holds",
+      "kind": "Study",
+      "alignment": "Vigil",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/05-the-last-watchfire.png"
+      ],
+      "intent": "The weary knight becomes protective and decisive, with clear shielding action.",
+      "prompt": "Create a new active scene by transforming the supplied Breachline character painting. Preserve the successful coherent painted finish and the character's recognizable design, but completely replace the pose and composition with the described action. ONE finished landscape painting1536x1024, no sheet, no panels/text/signature. Traditional oil painting, clear large connected value masses, richly observed restrained color, matte skin cloth and bark, gradual modest changes in detail, clear silhouettes and weight-bearing anatomy. Detail follows form; no scratchy contour tracing, dashes scattered on top, palette-knife confetti, photoreal face pasted on loose surroundings, digital wax or game-render gloss. Background remains plainly intelligible without camera blur. The motion must come from a clear physical action and balance, not ribbons of visual effects. Breachline high fantasy150years after imperial collapse.\nThe SAME older Sunmane Oath knight from the reference, gray hair, hooked nose, short gray beard, humble steel breastplate with worn sunmark, dull ivory quilt and blue wool cloak. Now a moment of protective decisive action in cold daylight on an old narrow stone mountain road. Full body, 3/4 view facing right. He steps into a deep grounded forward stance, left boot well ahead with bent knee and right leg stretched back for support. His left forearm supports a large plain worn round wooden shield with an iron rim held forward and slightly up, a natural shoulder-to-elbow connection; one ordinary arrow is embedded in the OUTER face of the shield. No arrows through any body and no blood. His right arm extends back with an open low hand telling the person behind to stay back. No sword in that hand.\nA single adult human courier, male mid20s in simple ochre travel clothes with plain satchel, crouches low behind and to the knight's left, sufficiently separated so his head shoulders and bent legs are readable. He is moving toward shelter behind a stone outcrop, not posing. Faces intent and human; knight's brows knit in focused resolve, no superhero roar.\nShield and planted front leg create a clean protective diagonal; blue cloak swept behind catches a little wind. Ruined roadside marker, broad cool mountain backdrop, broken cloud light on the knight's head and shoulder. One knight and one courier only, threat outside frame. Duty and courage have a physical cost. Keep scene uncluttered, two clearly distinct silhouettes and limb ownership, plain terrain readable without texture noise. Do not copy the seated composition or warm watchfire.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-1a733ecc-a01a-4883-8c3b-d4d33170c8cd.png",
+      "file": "06-vigil-the-road-still-holds.png",
+      "review_code": "A3",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": false,
+      "assistant_review": "Grounded protective stance with separate courier silhouette, clear shield action. Pending review.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/alignment-character-studies-2026-11-11/05-the-last-watchfire.png",
+          "role": "Same character and coherent paint; do not inherit shiny skin"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "160ce430bf31307f1009"
+    },
+    {
+      "n": 7,
+      "slug": "ravenfolk-exploration",
+      "title": "C1 · Creature test · Ravenfolk",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A familiar bird-human hybrid: alert corvid faces and usable hands; no faction assigned.",
+      "inspiration": "Magic's aven suggest bird peoples as varied characters. This original test uses a wingless raven-derived anatomy and ordinary clothing.",
+      "inspiration_urls": [
+        "https://magic.wizards.com/en/news/making-magic/heres-looking-you-squid-2002-02-04"
+      ],
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nRAVEN-HUMAN HYBRID, about human height. Lean upright biped with a genuine raven head, long slightly curved black beak, subtle angular brow, small expressive dark eyes, short throat feathers. TWO feather-covered arms with dexterous dark three-finger hands and opposing thumb, TWO slender birdlike legs with scaled feet and short sturdy talons. No extra wings: forearm feathering gives a clear taper but the arm is a working arm. Short neat tail. Feather coverage in large black charcoal and desaturated blue planes with very restrained sheen, not hundreds of outlined feathers. Ivory work tunic with simple belt, short brown trousers ending above hocks, feet bare. Natural believable shoulder and neck transitions. Intelligent, alert, ordinary adults who can be curious or impatient, not plague doctors or horror monsters.\nFour head studies: younger sleek black individual with narrow beak; heavy-browed broad-beaked middle-aged individual; older individual with a little silver-gray at temples/throat; narrow face with subtle warm charcoal plumage. Small asymmetries and different beak shapes, not four clones. Use proper avian eyes and beaks with no human lips, eyelashes or wigs. Familiar grounded fantasy folk with a strong legible silhouette.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-4faaa41a-d9ee-49df-a1dd-5e3f32f8af9e.png",
+      "file": "07-ravenfolk-exploration.png",
+      "review_code": "C1",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Consistent wingless raven-derived anatomy in three views, varied faces. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "9eed716bf6aa286fff3b"
+    },
+    {
+      "n": 8,
+      "slug": "badgerfolk-exploration",
+      "title": "C2 · Creature test · Badgerfolk",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A grounded mammal hybrid with sturdy adult proportions and ordinary expressions.",
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nBADGER-HUMAN HYBRID, upright adult about1.45meters tall. Broad low center of gravity, substantial torso, strong shoulders and forearms, shorter sturdy legs, anatomically adult head proportion not cute oversized head. Genuine European-badger face: a tapered muzzle, small dark nose, recognizable cream face with two dark charcoal eye stripes, rounded low-set ears. Small observant dark eyes. Short coarse gray-brown fur in coherent broad painted masses, humanlike usable hands with restrained thick claws and a compact short tail. Ivory linen work shirt, plain brown trousers and soft simple boots made to fit broad feet. Neutral unarmed stance, not threatening and not a storybook mascot.\nFour varied portraits show an older wide-muzzled adult with graying brow, a narrower-faced alert young adult, a stocky female adult with short ears and broad nose, an angular older individual with one slightly folded ear. Keep muzzle lengths and markings plausibly diverse. Serious, warm, skeptical, attentive everyday expressions through eyes and subtle mouth planes. No fixed trade, culture or morality inferred from anatomy. No exaggerated toothy grins.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-fdb2405e-27eb-4790-b9ae-6c9a488ce584.png",
+      "file": "08-badgerfolk-exploration.png",
+      "review_code": "C2",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Grounded adult proportions and readable facial marking variations. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "c2fa88770dd46d2dfa30"
+    },
+    {
+      "n": 9,
+      "slug": "mothfolk-exploration",
+      "title": "C3 · Creature test · Mothfolk",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "An intelligent insect people with nonhuman anatomy; readable variation without ornamental clutter.",
+      "inspiration": "Magic's insect peoples are inspiration for broadening intelligent silhouettes, not a borrowed character or culture.",
+      "inspiration_urls": [
+        "https://magic.wizards.com/en/news/making-magic/onslaught-machine-2007-08-20"
+      ],
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nAn original intelligent MOTH PEOPLE, roughlyhumanheight, upright with an unmistakably insect body rather than a human in a mask. Compact furry thorax and tapered covered abdomen, TWO main long dexterous arms, TWO shorter secondary working arms folded low at the abdomen, TWO strong walking legs: SIX limbs total, plus a pair of modest closed wings folded down the back. Make the limb attachments distinct and consistent across three views. Head has TWO large dark lateral eyes, small quiet mouthparts, TWO gently branched antennae; no human lips/nose, no frightening teeth. Feathery cream-gray neck ruff is a broad simple mass, not frothy doodles. Soft brown and muted silver wing panels with sparse quiet markings, naturally matte. The representative wears one simple sleeveless ivory waistcoat with four distinct armholes and a practical brown woven hip-wrap; clothing makes intentional personhood legible.\nFour lower head studies: ash gray narrow head and pale antennae; warm cinnamon broad face; older speckled brown with one blunted antenna tip; almost ivory with dark gentle eyes. Different antenna angles and subtle posture convey attentive social intelligence. Not cute fuzzy toy, not seductive fairy, not sci-fi insect alien. Plausible restrained fantasy physiology, consciously organized limbs and generous negative space.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-25c0710c-3146-4b0a-a84a-e3af760d8053.png",
+      "file": "09-mothfolk-exploration.png",
+      "review_code": "C3",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Four working arms, two walking legs and folded wings read coherently. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "8e6f46a6a8272375f874"
+    },
+    {
+      "n": 10,
+      "slug": "mineral-tripod-exploration",
+      "title": "C4 · Creature test · Mineral tripod",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A distinctly nonhuman intelligent form: three-legged mineral anatomy, without assumed origin or construct lore.",
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nAn original speculative INTELLIGENT MINERAL BEING, more exotic than a humanoid, aroundhumanheight. A low rounded core of warm gray sedimentary stone and smoky translucent quartz grows on THREE jointed walking limbs arranged as a stable tripod. THREE thin articulate upper limbs emerge around the upper core, each ending in a simple three-pronged tactile grasper. Above core, a small asymmetric faceted head with a narrow dark sensory seam, no human nose/lips or eyes painted on. Fully connected flexible dark mineral joints, an organically grown body not floating shards, no hovering parts, no humanoid muscle silhouette. Limit structure to a few large stone/quartz plates; subtle amber-gray translucency only at thin outer tips, mainly dry matte surfaces. No glowing eyes, energy core or sci-fi armor. A simple cloth band across the core holds a small plain pouch, suggesting intentional everyday use but no established culture or origin. All three supporting limbs fully visible in at least front and side views. Three views consistently the same anatomical design, a threefold body seen from different angles.\nInstead of humanlike lower portraits, four lower studies show upper core/head variations of adults: rounded pale chalk with smokey seams; narrow dark slate and clear quartz; older warm ochre chipped edge with smooth natural repair; low wide gray body with pale translucent rim. Keep them recognizably one proposed life form, varying silhouette modestly. Contemplative attention through tilt and hand placement, no magical fireworks. Origin and consciousness remain a proposal, not a confirmed construct or species in lore.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-8d572137-fe47-445b-83f3-81c627a4d4eb.png",
+      "file": "10-mineral-tripod-exploration.png",
+      "review_code": "C4",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Result consistently uses FOUR upper arms and THREE walking legs, rather than the prompt’s three arms. Retained as an exploration with that visible anatomy; no lore or origin confirmed.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "edfe1635b783e0e47f0c"
+    },
+    {
+      "n": 11,
+      "slug": "dwarf-people-exploration",
+      "title": "C5 · Creature test · Dwarves",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A familiar fantasy option with ordinary adult faces and credible compact proportions.",
+      "inspiration": "Familiar fantasy dwarves, considered alongside Magic's varied everyday peoples; no named character, culture, costume or world details borrowed.",
+      "inspiration_urls": [
+        "https://magic.wizards.com/en/news/feature/planeswalkers-guide-eldraine-2019-10-31"
+      ],
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nA straightforward original DWARF PEOPLE, adult height about1.3meters, compact strong bodies, broad ribcage and pelvis, short stout legs, forearms and hands substantial. Heads only modestly larger relative to body, normal adult facial structures rather than caricature, no gigantic noses or child proportions. Humanlike ears and intelligent humanlike faces. Representative is a middle-aged adult male with fair weathered skin, short chestnut hair, practical trimmed beard, ordinary strong nose and calm eyes, ivory shirt, brown trousers, plain brown boots, no oversized tools or ornaments. Show credible compact proportion in all three top views. Neutral ordinary stance.\nFour lower portraits: a young adult man with a broad clean-shaven face and pale freckles; a middle-aged woman with warm olive skin, a strong square jaw, small deep-set brown eyes and simple dark plait; an older man with brown skin, short gray curls and an unbraided salt-and-pepper beard; an older woman with fair complexion, broad blunt nose, white hair simply tied back and an amused asymmetrical expression. These are ordinary people of varied appearance, not a universal beard joke, metalworking profession, armor style or mountain culture. Dignified with believable flaws and everyday warmth. Skin MATTE under soft daylight, restrained cheek lights, no wet noses or glistening foreheads. Proposed physical design only.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-816538f5-9967-42a0-8b7f-dc7524549ef5.png",
+      "file": "11-dwarf-people-exploration.png",
+      "review_code": "C5",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Familiar compact adult anatomy and ordinary faces. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "a01061177dd0f7c1efc6"
+    },
+    {
+      "n": 12,
+      "slug": "riverfolk-exploration",
+      "title": "C6 · Creature test · Riverfolk",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A familiar amphibious people, with subtle aquatic anatomy and varied faces.",
+      "inspiration": "Magic's merfolk inspire a familiar aquatic people category; original understated freshwater anatomy and neutral presentation.",
+      "inspiration_urls": [
+        "https://magic.wizards.com/en/news/feature/planeswalkers-guide-to-the-lost-caverns-of-ixalan"
+      ],
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nAn original straightforward intelligent freshwater RIVER PEOPLE, a restrained merfolk-like design that can walk on land. Lean human-height upright adults with TWO ordinary arms, TWO long legs and slightly broad webbed feet, dexterous five-finger webbed hands. Humanoid head structure with high cheeks, blunt soft nose bridge, calm dark eyes and small finlike ears, small natural gill folds at sides of neck. Short slicked-back sparse dark hair rather than a huge crest. Skin muted gray-olive with faint mottled warm brown and a small amount of very fine scaled structure at temples/forearms. Skin dry matte under diffuse sheet lighting, not wet shine or shiny fish scales. Quiet strangeness, everyday dignity and believable faces, not blue human beauty models.\nSimple ivory sleeveless tunic, plain knee-length brown wrap trousers, webbed feet bare, no shell jewelry, coral crowns or stereotypical trident. Four lower portraits: a younger narrow-faced gray-green adult, broad round-faced warm-brown adult with subtly darker mottling, older pale olive individual with gentle neckfolds, dark slate-green angular-faced adult with shorter fin-ears. Vary jaws/noses/eye spacing naturally while keeping coherent species anatomy. No tail instead of legs, no exaggerated fins or monstrous teeth. Neither occupation, alignment, social structure nor exact ecology is settled.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-beb4b849-ce4d-4a83-9202-f3cab7e83679.png",
+      "file": "12-riverfolk-exploration.png",
+      "review_code": "C6",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Understated amphibious anatomy, walking legs and gill folds; variation remains subtle. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "f327fd71ebc20e8b31e9"
+    },
+    {
+      "n": 13,
+      "slug": "rhinoceros-folk-exploration",
+      "title": "C7 · Creature test · Rhinoceros folk",
+      "kind": "People / face sheet",
+      "alignment": "Unassigned",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png"
+      ],
+      "intent": "A substantial, readable animal-human hybrid with varied rhino faces and quiet personality.",
+      "inspiration": "Magic's rhox supplied the broad rhinoceros-person idea; this is an original neutral design with no borrowed Bant lore or costume.",
+      "inspiration_urls": [
+        "https://magic.wizards.com/en/news/feature/worlds-magic-origins-2015-07-09"
+      ],
+      "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nAn original RHINOCEROS-HUMAN HYBRID intelligent people, tall2meters, sturdy naturally heavy skeleton and broad torso without bodybuilder muscles. Genuine rhinoceros head with wide blunt muzzle, two modest nose horns, small flexible ears and thoughtful little eyes, thick neck transitioning naturally to shoulders. TWO arms with broad useful four-digit hands including thumb, TWO weight-bearing legs with compact broad three-toed feet. Skin dusty warm slate-gray, a few broad natural thick skinfolds at neck/wrists, mostly smooth MATTE painted planes, not armor scales or deeply cracked dried mud. No oily shine or plastic sheen. Ivory linen short-sleeved shirt, simple brown trousers, bare feet, no jewelry, armor or huge weapon. Ordinary neutral stance showing balanced weight, not hulking rage.\nFour lower faces: younger adult with a short blunt front horn and narrow muzzle; broad older adult with rounded worn horn and deep-set kind eyes; female adult with narrower brow and very small paired horns, no human eyelashes or lips; older heavy-browed individual with one naturally chipped horn and some pale gray at muzzle. Show different mouth corners and attention subtly, serious or gentle, not cute and not perpetually furious. Original design and color relationships, no copying any named card character or elaborate costume, no specific alignment or culture assumed.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-0b319c47-37c9-403e-9a24-adfd9c60104b.png",
+      "file": "13-rhinoceros-folk-exploration.png",
+      "review_code": "C7",
+      "status": "pending_creator_review",
+      "active_reference": false,
+      "reference_candidate": true,
+      "assistant_review": "Rhino-derived head/body with useful hands and natural weight; varied faces. Pending species selection.",
+      "generation_mode": "Built-in image_gen",
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/02-lion-folk.png",
+          "role": "Layout and painted presentation; no source identity copied"
+        }
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "catalog_id": "8f8dc122f44c5c0af428"
+    }
+  ],
+  "reference_audit": "reference-audit.json",
+  "cancelled_work": "Three blanket human-sheet matte passes were terminated after creator clarification. Original sheets retained.",
+  "tool": "Built-in image_gen"
+}
