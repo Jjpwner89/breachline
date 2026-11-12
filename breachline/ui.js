@@ -194,13 +194,14 @@
     recruit: { line: 'He has already written the letter home, in case.' }
   };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
-  // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
+  // The board rebuilds on every render, so a battle holds both decks' paintings decoded from its start to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
-  // They wait for the first screen to finish loading, so a first visit isn't held up by every painting in the game.
-  var noArt = {}, artRedraw = null, preloaded = [];
+  // The other paintings trickle in a few at a time after the first screen, so a first visit isn't held up by every painting in the game.
+  var noArt = {}, artRedraw = null, warmed = {};
   function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
-  afterLoad(function () { preloaded = Object.keys(ART).map(function (id) {
-    var im = new Image();
+  function warmArt(id) {
+    if (warmed[id] || !ART[id]) return warmed[id];
+    var im = warmed[id] = new Image();
     im.onerror = function () {
       noArt[id] = true;
       clearTimeout(artRedraw);
@@ -216,11 +217,26 @@
     };
     im.src = artSrc(id);
     return im;
+  }
+  afterLoad(function () {
+    // The tile effect paintings too, so a new effect shows at once rather than a frame later.
+    Object.keys(TILE_NAMES).forEach(function (k) {
+      ['tile-', 'border-', 'emblem-'].forEach(function (p) { warmed[p + k] = new Image(); warmed[p + k].src = 'art/web/ui/' + p + k + '.png'; });
+    });
+    var rest = Object.keys(ART), running = 0;
+    function next() {
+      while (running < 3 && rest.length) {
+        var id = rest.shift();
+        if (warmed[id]) continue;
+        running++;
+        var im = warmArt(id);
+        im.addEventListener('load', done);
+        im.addEventListener('error', done);
+      }
+    }
+    function done() { running--; next(); }
+    setTimeout(next, 3000);
   });
-  // The tile effect paintings too, so a new effect shows at once rather than a frame later.
-  Object.keys(TILE_NAMES).forEach(function (k) {
-    ['tile-', 'border-', 'emblem-'].forEach(function (p) { var im = new Image(); im.src = 'art/web/ui/' + p + k + '.png'; preloaded.push(im); });
-  }); });
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -1327,6 +1343,7 @@
     $('debugBtn').hidden = !(debugOn && modelOn());
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
     if (!S.tutorial) Tutorial.stop();
+    S.players.forEach(function (p) { p.hand.concat(p.deck).forEach(function (k) { warmArt(k.c); }); });
     var opening = S.players[HUMAN].hand[0];
     if (opening && S.winner === null) showCard(opening.c, 'In your hand');
     if (!state) Sfx.play('shuffle');
@@ -1444,9 +1461,11 @@
     inProgress: function () { return !!S && S.winner === null && !chapterBattle && !S.tutorial; },
     resume: function () { $('app').hidden = false; render(); schedule(); }
   };
-  if (window.claude && window.claude.hot) window.claude.hot.snapshot(function () { return { state: S && S.tutorial ? null : S, chapter: chapterBattle, sandbox: sandbox }; });
-  if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
-  else boot(window.claude && window.claude.hot && window.claude.hot.data || {});
+  var hot = window.claude && window.claude.hot;
+  if (hot) hot.snapshot(function () { return { state: S && S.tutorial ? null : S, chapter: chapterBattle, sandbox: sandbox }; });
+  // Only a page reopened on a new version has a battle to carry over. Waiting on hot.ready otherwise keeps a first visit dark for five seconds.
+  if (hot && hot.ready && hot.from) hot.ready(boot);
+  else boot({});
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (S) render(); });
   // Card names are measured, so every card on the page fits again once a font arrives.
   if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', function () { fitCards(document); });
