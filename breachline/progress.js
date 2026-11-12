@@ -23,7 +23,7 @@ var Progress = (function () {
   var SHARDS = { gain: { c: 5, u: 15, r: 50, l: 200 }, craft: { c: 40, u: 100, r: 300, l: 1200 } };
   // Battle rewards. Finishing pays, winning pays more, and each line of the battle summary adds a little.
   var GOLD = { finish: 10, win: 40, unit: 1, spell: 1, land: 1, kill: 2, damage: 1 };
-  var VS = { bot: 1, easy: 1, normal: 1.25, hard: 1.5 };
+  var VS = { bot: 1, easy: 1, normal: 1.25, hard: 1.5, human: 1.5 };
   var MILESTONE = { set: 150, full: 400 };
   var COMPLETE = 300;
 

@@ -101,7 +101,7 @@ var Screens = (function () {
       item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Build from the cards you own.') +
       (learn ? '' : item('tutorial', 'How to play', 'A tour of the table and a short practice battle.')) +
       item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
-      later('Multiplayer', 'Coming later.') +
+      item('online', 'Multiplayer', Net.saved() ? 'Your online match is waiting for you.' : 'Play another person online. Each of you brings a deck.') +
       '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your Claude account for saved progress…</p>') + '</div></main>', menu);
     ash(root.querySelector('.home canvas'));
   }
@@ -111,6 +111,86 @@ var Screens = (function () {
   actions.exhibition = function () { GameUI.showStart(); };
   actions.testTable = function () { hide(); GameUI.sandbox(); };
   actions.tutorial = function () { hide(); GameUI.tutorial(); };
+
+  // Multiplayer. One player starts a match and sends its code, the other enters it, and the battle begins once both are in.
+  // Your own decks need cards you own; starter and theme decks are open to everyone, so a new player has a fair choice.
+  var netDeck = null, netCode = '';
+  function netDecks() {
+    var mine = Decks.saved().filter(function (d) { return !E.deckProblems(d.list).length && !Progress.missing(d.list); });
+    return { mine: mine, open: Decks.starters().concat(Decks.themes()) };
+  }
+  function online() {
+    GameUI.warmAllArt();
+    var m = Net.current(), saved = Net.saved(), how = Net.transport(), body;
+    if (m && !m.screenHeard) {
+      m.screenHeard = true;
+      m.on(function (what) {
+        if (m !== Net.current()) return;
+        if (what === 'setup') return Polish.lamp(function () { GameUI.online(m); });
+        if (refresh === online) online();
+      });
+    }
+    var all = netDecks(), pool = all.mine.concat(all.open);
+    if (!pool.some(function (d) { return d.id === netDeck; })) netDeck = (all.mine[0] || Decks.find(Progress.state().starter) || pool[0]).id;
+    var inClaude = how === 'claude';
+    var note = '<p class="hint">' + (inClaude ? 'Both of you need this page open in Claude. If your opponent isn\'t in your organization, invite them by email from the Share menu first.'
+      : 'Your opponent opens this same page in their own browser. The two browsers connect to each other directly, which a few strict work or school networks block.') + '</p>';
+    if (!how) body = '<p class="warn">Online play works on the published page inside Claude.</p>';
+    else if (m && !m.setup) {
+      var why = m.status === 'failed' ? (inClaude ? 'The match room couldn\'t be reached. You need to be signed in to Claude, and invited to this page if you\'re outside its organization.' : 'The connection service couldn\'t be reached. Check your internet connection, then try again.')
+        : m.problem === 'full' ? 'That match already has two players. Check the code.'
+        : m.problem === 'version' ? 'Your opponent has a different version of the game open. Both of you reload the page, then try again.'
+        : m.seat === 0 ? 'Send this code to your opponent. The battle starts as soon as they join.' : 'Looking for the match. It starts once the player who made it is here.';
+      body = '<section class="pickset netwait"><h2>' + (m.seat === 0 ? 'Your match code' : 'Joining') + '</h2><p class="netcode">' + esc(m.code) + '</p>' +
+        '<p class="hint" role="status">' + why + '</p><p class="hint netroom">' + esc(roomLine(m)) + '</p><div class="dtools"><button type="button" class="btn" ' + act('netCancel') + '>Cancel</button></div></section>' + note;
+    } else if (saved) {
+      body = '<section class="pickset netwait"><h2>Your match</h2><p class="hint">' + esc(deckName(saved.setup.decks[saved.seat])) + ' against ' + esc(deckName(saved.setup.decks[1 - saved.seat])) + ', code ' + esc(saved.code) + '. ' +
+        (GameUI.inOnline() ? 'It\'s still going.' : 'It carries on where it stopped once you\'re both back.') + '</p>' +
+        '<div class="dtools"><button type="button" class="btn primary" ' + act('netRejoin') + '>' + (GameUI.inOnline() ? 'Back to the battle' : 'Rejoin') + '</button></div></section>' + note;
+    } else {
+      var tiles = function (list) { return '<div class="dtiles">' + list.map(function (d) { return deckPick(d, d.id === netDeck); }).join('') + '</div>'; };
+      body = '<section class="pickset netplay"><h2>Play</h2><div class="netrow"><button type="button" class="btn primary" ' + act('netHost') + '>Start a match</button>' +
+        '<span class="netor">or</span><label class="netjoin"><span>Match code</span><input id="netCode" type="text" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="12" value="' + esc(netCode) + '" placeholder="abc23"></label>' +
+        '<button type="button" class="btn" ' + act('netJoin') + '>Join</button></div><p class="hint">Choose your deck below first. Start a match and send its code, or enter the code you were sent.</p></section>' + note +
+        (all.mine.length ? '<section class="pickset"><h2>Your decks</h2>' + tiles(all.mine) + '</section>' : '') +
+        '<section class="pickset"><h2>Starter and theme decks</h2>' + tiles(all.open) + '</section>';
+    }
+    show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Multiplayer</h1></header>' + body + '</div>', online);
+    var input = byId('netCode');
+    if (input) input.addEventListener('input', function () { netCode = input.value; });
+    if (input) input.addEventListener('keydown', function (e) { if (e.key === 'Enter') actions.netJoin(); });
+    fitAll();
+  }
+  // What the match room looks like from here, so a match that never starts says where it stopped.
+  function roomLine(m) {
+    var r = m.room, s;
+    if (m.status === 'connecting') return 'Connecting to the match room…';
+    if (m.status === 'failed' || m.status === 'lost') return 'The match room turned this page away' + (r.error ? ' (' + r.error + ').' : '.');
+    s = m.status === 'down' ? 'Reconnecting to the match room.' : 'Connected to the match room.';
+    s += !r.pages ? ' No other page is here yet.' : ' ' + (r.pages === 1 ? 'One other page is' : r.pages + ' other pages are') + ' here' +
+      (r.players < r.pages ? (r.players ? ', ' + r.players + ' of them in this match' : ', not in this match') : '') + '.';
+    if (r.error) s += ' This page\'s last message was refused (' + r.error + ').';
+    // The platform's own counts, this page included, for when a match never starts.
+    if (r.raw) s += ' [match room ' + (r.raw.named < 0 ? 'not joined' : r.raw.named) + ', lobby ' + r.raw.lobby + ']';
+    return s;
+  }
+  function deckName(d) { return typeof d === 'string' ? E.DECKS[d].name : d.name; }
+  function netForGame(id) { var d = Decks.find(id); return d.starter ? id : { name: d.name, list: d.list }; }
+  actions.online = online;
+  actions.netDeck = function (id) { netDeck = id; online(); };
+  actions.netHost = function () { Net.host(netForGame(netDeck)); online(); };
+  actions.netJoin = function () {
+    var c = Net.cleanCode(netCode);
+    if (!c) { var i = byId('netCode'); if (i) i.focus(); return; }
+    Net.join(c, netForGame(netDeck));
+    online();
+  };
+  actions.netCancel = function () { Net.forget(); online(); };
+  actions.netRejoin = function () {
+    if (GameUI.inOnline()) { hide(); return GameUI.resume(); }
+    var m = Net.resume();
+    if (m) Polish.lamp(function () { GameUI.online(m); });
+  };
 
   // Campaign
 
@@ -351,13 +431,20 @@ var Screens = (function () {
     fitAll();
   }
   // A deck is a card: its painting and name on the front, and on the back its plan and what you can do with it. Selecting one turns it over.
-  function deckCard(d, hint, tools) {
-    var cols = E.deckColours(d.list), c = cols[0] || 'N', art = coverArt(d.list), open = flipped === d.id;
-    var front = '<button type="button" class="dface dfront" ' + act('flipDeck', d.id) + ' aria-label="' + esc(d.name) + ', turn over"' + (open ? ' inert' : '') + '>' +
-      '<span class="frame ' + c + '"><span class="inner"><span class="bar-top">' + esc(d.name) + '</span>' +
+  function deckFace(d, line) {
+    var cols = E.deckColours(d.list), c = cols[0] || 'N', art = coverArt(d.list);
+    return '<span class="frame ' + c + '"><span class="inner"><span class="bar-top">' + esc(d.name) + '</span>' +
       '<span class="art">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="band"><span class="type">' + (cols.length ? cols.map(function (k) { return GameUI.ALIGNMENT[k]; }).join(' · ') : 'Empty') + '</span></span>' +
-      '<span class="ctext"><span class="csyms">' + cols.map(symbol).join('') + '</span><span>' + esc(deckStatus(d)) + '</span></span></span></span></button>';
+      '<span class="ctext"><span class="csyms">' + cols.map(symbol).join('') + '</span><span>' + esc(line || deckStatus(d)) + '</span></span></span></span>';
+  }
+  // A deck to choose for a match: just the front, lit while chosen.
+  function deckPick(d, on) {
+    return '<div class="dcard pick' + (on ? ' on' : '') + '" data-deck="' + esc(d.id) + '"><div class="dflip"><button type="button" class="dface dfront" ' + act('netDeck', d.id) + ' aria-pressed="' + on + '" title="' + esc(Help.deck(d)) + '">' + deckFace(d, plural(E.deckSize(d.list), 'card')) + '</button></div></div>';
+  }
+  function deckCard(d, hint, tools) {
+    var open = flipped === d.id;
+    var front = '<button type="button" class="dface dfront" ' + act('flipDeck', d.id) + ' aria-label="' + esc(d.name) + ', turn over"' + (open ? ' inert' : '') + '>' + deckFace(d) + '</button>';
     var back = '<div class="dface dback" ' + act('flipDeck', d.id) + (open ? '' : ' inert') + '><b class="dbname">' + esc(d.name) + '</b>' +
       '<p class="dnote">' + esc(Help.deck(d)) + '</p>' + (hint ? '<p class="dlock">' + esc(hint) + '</p>' : '') +
       '<div class="dtools">' + tools + '</div></div>';
@@ -756,7 +843,7 @@ var Screens = (function () {
   actions.playDeck = function () { GameUI.showStart(ed.deck.id); };
 
   // Moving between screens dims the lamp; going into a battle shuffles instead of turning a page.
-  var NAV = { menu: 1, campaign: 1, exhibition: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
+  var NAV = { menu: 1, campaign: 1, exhibition: 1, online: 1, builder: 1, testTable: 2, tutorial: 2, resume: 2, edit: 1, newDeck: 1, copyDeck: 1, viewDeck: 1, fight: 2, beginRun: 1, newRun: 1, leaveEnd: 1, playDeck: 1, takeCard: 1 };
   var lastAct = null;
   root.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
@@ -794,7 +881,7 @@ var Screens = (function () {
 
   Progress.onChange(redraw);
   return {
-    menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt,
+    menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt, online: online,
     // For collection.js, whose screens share this page and its click handling.
     kit: { show: show, act: act, esc: esc, symbol: symbol, plural: plural, actions: actions, root: root }
   };

@@ -12,6 +12,9 @@
   // The test table's top side is played by you or by the scripted bot.
   var testBot = false;
   function bothHands() { return sandbox && !testBot; }
+  // An online match from Net, or null. You play its seat, and the guest sees the board turned round so their side is at the bottom.
+  var online = null;
+  function turned() { return !!online && HUMAN === 1; }
   // The test table's card-type filter: label and which cards it keeps.
   var TEST_KINDS = [
     ['', 'All', function () { return true; }],
@@ -314,7 +317,7 @@
     return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
       (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
       '<span class="crest ' + main + (you ? ' you' : ' foe') + '">' + (noArt[PORTRAIT[main]] ? '' : '<img src="' + artSrc(PORTRAIT[main]) + '" alt="" draggable="false">') + '<span class="emb">' + sym(main) + '</span></span>' +
-      '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : '')) + '</small></span>' +
+      '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : online ? ' · Online' : '')) + '</small></span>' +
       lifeHtml(pi, p) +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
       (relics ? '<span class="relics">' + relics + '</span>' : '') +
@@ -592,10 +595,11 @@
     var txt = S.winner === 'draw' ? 'A draw' : S.winner === HUMAN ? 'You win' : 'You lose';
     var ended = Campaign.ended(), next = !chapterBattle ? '' : S.winner === 'draw' ? 'Fight it again' : S.winner !== HUMAN ? 'Continue' : ended ? 'Continue' : 'Choose a card';
     var note = chapterBattle && S.winner === 'draw' ? ' Nobody holds the field, so this battle is fought again.' : chapterBattle && S.winner !== HUMAN ? ' Your run ends here.' : '';
-    var btns = '<span class="btns">' + (chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + (sandbox ? '' : btn('Open packs', { ui: 'packs' }))) + '</span>';
+    if (S.resigned !== undefined) note = S.resigned === HUMAN ? ' You resigned.' : ' Your opponent resigned.';
+    var btns = '<span class="btns">' + (online ? btn('Multiplayer', { ui: 'online' }, true) + btn('Open packs', { ui: 'packs' }) : chapterBattle ? btn(next, { ui: 'campaign' }, true) : btn('Play again', { ui: 'new' }, true) + btn('Change decks', { ui: 'decks' }) + (sandbox ? '' : btn('Open packs', { ui: 'packs' }))) + '</span>';
     if (sandbox) return '<div class="plaque"><h2>' + txt + '</h2><p>' + S.players[HUMAN].life + ' to ' + S.players[BOT].life + ' after ' + S.turn + ' turns.' + note + '</p>' + btns + '</div>';
     var pay = payout || reward(), lines = pay.pay.lines.filter(function (l) { return l.length < 3 || l[2]; });
-    var who = { bot: 'the scripted bot', easy: 'Claude, Easy', normal: 'Claude, Normal', hard: 'Claude, Hard' };
+    var who = { bot: 'the scripted bot', easy: 'Claude, Easy', normal: 'Claude, Normal', hard: 'Claude, Hard', human: 'a person' };
     // Each line of the ledger is stamped in turn and pays its coins into the purse; Polish.payout plays it.
     var rows = lines.map(function (l) {
       var each = l[2] ? l[1] / l[2] : 0;
@@ -636,7 +640,9 @@
   function actionsInner(moves) {
     var you = S.players[HUMAN];
     if (S.winner !== null) return promptHtml('The battle is over.');
+    if (online && online.problem === 'drift') return promptHtml('The two games no longer match, so this battle can\'t go on. Resign it from the menu and start another.');
     if (actor() !== HUMAN) {
+      if (online && !online.oppHere) return promptHtml('Your opponent has left the match. It carries on when they come back.');
       if (thinking) return promptHtml('Claude is thinking.') + '<span class="btns">' + btn('Stop waiting', { ui: 'stopModel' }) + '</span>';
       return promptHtml(S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.');
     }
@@ -785,7 +791,7 @@
     $('youStrip').innerHTML = plateHtml(HUMAN, false, marks.threat);
     lifeSeen[BOT] = S.players[BOT].life; lifeSeen[HUMAN] = S.players[HUMAN].life;
     var g = '<div class="front" aria-hidden="true"></div>';
-    for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += tileHtml(r, c, marks);
+    for (var r = 0; r < E.ROWS; r++) for (var c = 0; c < E.COLS; c++) g += turned() ? tileHtml(E.ROWS - 1 - r, E.COLS - 1 - c, marks) : tileHtml(r, c, marks);
     $('grid').innerHTML = g;
     $('grid').style.gridTemplateColumns = 'repeat(' + E.COLS + ', minmax(0, 1fr))';
     $('grid').style.gridTemplateRows = 'repeat(' + E.ROWS + ', minmax(0, 1fr))';
@@ -850,7 +856,7 @@
       Sfx.play('card-play');
       SpellFX.cast({
         kind: look, from: from || $('themStrip'), target: target, wave: !!(spell.aim && spell.aim.wave), volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
-        push: who === 0 ? -1 : 1, gentle: !!unit && unit.owner === who,
+        push: who === (turned() ? 1 : 0) ? -1 : 1, gentle: !!unit && unit.owner === who,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
         onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } },
         onStage: function (stage, ms) {
@@ -901,11 +907,11 @@
     var run = chapterBattle ? Campaign.current() : null, story = run ? run.story : null;
     S.payKey = S.payKey || S.seed + '.' + S.firstPlayer;
     payout = Progress.battle({
-      key: S.payKey, result: S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss', vs: chapterBattle ? (run ? run.player : 'bot') : oppPlayer,
+      key: S.payKey, result: S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss', vs: chapterBattle ? (run ? run.player : 'bot') : online ? 'human' : oppPlayer,
       boost: story && Progress.cleared(story) ? 1.5 : 1, story: story, deck: S.players[HUMAN].name, opp: S.players[BOT].name, turns: S.turn,
       life: S.players[HUMAN].life, tally: (S.tally || [{}, {}])[HUMAN]
     });
-    payout.vs = chapterBattle ? (run ? run.player : 'bot') : oppPlayer;
+    payout.vs = chapterBattle ? (run ? run.player : 'bot') : online ? 'human' : oppPlayer;
     payout.cleared = !!(story && Progress.cleared(story));
     return payout;
   }
@@ -913,8 +919,9 @@
     if (m.type === 'summon' || m.type === 'move' || m.r !== undefined) flash = [m.r, m.c]; else flash = null;
     var prev = S;
     S = E.applyMove(S, m);
+    if (online) online.record(m, Net.stateHash(S));
     if (!sandbox && !S.tutorial) tally(prev, m);
-    if (S.winner !== null && prev.winner === null) reward();
+    if (S.winner !== null && prev.winner === null) { reward(); if (online) online.finished(); }
     if (chapterBattle) {
       if (S.winner !== null) {
         // Beating the last chapter wins the campaign: its starter and picked cards the first time, gold after that.
@@ -931,6 +938,7 @@
   }
 
   function schedule() {
+    if (online) return pump();
     if (bothHands() || S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
     if (S.tutorial) playNext(token, function () { return Tutorial.enemyMove(S); });
@@ -951,7 +959,48 @@
     }, BOT_DELAY);
   }
 
-  function modelOn() { return oppPlayer !== 'bot' && !!sample && !modelOff && !(S && S.tutorial); }
+  // The opponent's moves play out one at a time, like the bot's but quicker. Nothing plays while the battle is off screen.
+  var pumpTimer = null;
+  function pump() {
+    if (!online || pumpTimer || casting || !S || S.winner !== null || $('app').hidden || actor() === HUMAN || !online.incoming()) return;
+    var match = online;
+    pumpTimer = setTimeout(function () {
+      pumpTimer = null;
+      var m = match === online && online.incoming();
+      if (m && !casting && S.winner === null && actor() === BOT && !$('app').hidden) apply(m);
+    }, 350);
+  }
+  // An online battle is rebuilt from its setup and every move so far, so a reloaded page picks up where it left off.
+  function startOnline(match) {
+    var st = match.setup;
+    S = E.newGame({ seed: st.seed, decks: st.decks, first: st.first });
+    // Each seat is paid under its own key, so two tabs of one account can play each other.
+    S.payKey = 'o.' + st.mid + '.' + match.seat;
+    match.log.forEach(function (m) { var prev = S; S = E.applyMove(S, m); tally(prev, m); });
+    leaveTutorial();
+    sandbox = false; chapterBattle = false;
+    Screens.hide();
+    start(S, match);
+    resigned();
+    if (match.battleHeard) return;
+    match.battleHeard = true;
+    match.on(function (what) {
+      if (match !== online || !S) return;
+      if (what === 'moves') return pump();
+      if (what === 'over') resigned();
+      if (!casting && !$('app').hidden) render();
+    });
+  }
+  // A resignation ends the battle where it stands. Only the board can say who won otherwise.
+  function resigned() {
+    var o = online.over;
+    if (!o || o.resigned === undefined || S.winner !== null) return;
+    S.winner = 1 - o.resigned;
+    S.resigned = o.resigned;
+    reward();
+  }
+
+  function modelOn() { return !online && oppPlayer !== 'bot' && !!sample && !modelOff && !(S && S.tutorial); }
 
   // The model makes one call for each of its turns, then the plan plays out a move at a time.
   // Opening hands and responses are one call each. Any failure hands that decision to the scripted bot, so a game never stalls.
@@ -1150,7 +1199,7 @@
       Sfx.play('button-press');
       return setTimeout(function () { if (b.isConnected) doAction(d); }, 170);
     }
-    if (d.ui === 'new' || d.ui === 'decks' || d.ui === 'menu' || d.ui === 'campaign' || d.ui === 'packs') return Polish.lamp(function () { doAction(d); });
+    if (d.ui === 'new' || d.ui === 'decks' || d.ui === 'menu' || d.ui === 'campaign' || d.ui === 'packs' || d.ui === 'online') return Polish.lamp(function () { doAction(d); });
     doAction(d);
   });
   function doAction(d) {
@@ -1159,6 +1208,7 @@
     if (d.ui === 'decks') return showStart();
     if (d.ui === 'menu') return toMenu();
     if (d.ui === 'campaign') return toCampaign();
+    if (d.ui === 'online') { toMenu(); return Screens.online(); }
     if (d.ui === 'packs') { toMenu(); return Collection.page('packs'); }
     if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
@@ -1167,7 +1217,7 @@
     if (d.ui === 'relic') sel = { kind: 'relic', id: d.id };
     if (d.ui === 'pick') sel = { kind: 'card', id: d.id };
     if (d.ui === 'skip' && S.tutorial && !Tutorial.allows({ type: 'endTurn' })) { Sfx.play('not-allowed', { gap: 120 }); return render(); }
-    if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); sel = null; return apply({ type: 'endTurn' }); }
+    if (d.ui === 'skip') { S = E.applyMove(S, { type: 'toCommand' }); if (online) online.record({ type: 'toCommand' }, Net.stateHash(S)); sel = null; return apply({ type: 'endTurn' }); }
     render();
   }
   ['mouseover', 'focusin', 'click'].forEach(function (type) { $('app').addEventListener(type, peekFrom); });
@@ -1185,17 +1235,29 @@
     if (b) setDrawer(b.getAttribute('aria-expanded') === 'true' ? null : b.dataset.panel);
   });
   $('menuBtn').addEventListener('click', function () {
-    $('menuNote').textContent = chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : S.tutorial ? 'Restart begins the tutorial again. You can also find it on the main menu.' : 'If you leave, this battle waits until you begin another.';
-    $('menuRestart').hidden = chapterBattle;
-    $('menuDecks').hidden = chapterBattle || !!S.tutorial;
-    $('menuMap').hidden = $('menuQuit').hidden = !chapterBattle;
-    $('menuQuit').textContent = 'Quit the run';
+    $('menuNote').textContent = online ? 'If you leave, the match waits for you under Multiplayer. Resigning ends it as a loss.' : chapterBattle ? 'Your run is saved after every move, so this battle waits on the map.' : S.tutorial ? 'Restart begins the tutorial again. You can also find it on the main menu.' : 'If you leave, this battle waits until you begin another.';
+    $('menuRestart').hidden = chapterBattle || !!online;
+    $('menuDecks').hidden = chapterBattle || !!S.tutorial || !!online;
+    $('menuMap').hidden = !chapterBattle;
+    $('menuQuit').hidden = !chapterBattle && !(online && S.winner === null);
+    $('menuQuit').textContent = online ? 'Resign' : 'Quit the run';
     $('menuQuit').classList.remove('danger');
     $('menu').showModal();
   });
   // Quitting a campaign battle ends the run, so the first press only asks.
   $('menuQuit').addEventListener('click', function () {
     var b = $('menuQuit');
+    if (online) {
+      if (!b.classList.contains('danger')) {
+        b.classList.add('danger');
+        b.textContent = 'Resign for good';
+        return;
+      }
+      $('menu').close();
+      online.resign();
+      resigned();
+      return render();
+    }
     if (!b.classList.contains('danger')) {
       b.classList.add('danger');
       b.textContent = 'End the run for good';
@@ -1345,8 +1407,10 @@
     if (e.target.closest('#startBuilder')) Polish.lamp(function () { $('start').hidden = true; Screens.builder(); });
   });
 
-  function start(state) {
+  function start(state, match) {
     runToken++;
+    if (online && online !== match) online.close();
+    online = match || null;
     stopThinking();
     plan = null; modelOff = false; lastThought = null; payout = null; lastResult = null;
     $('chat').textContent = '';
@@ -1354,7 +1418,7 @@
     $('speech').hidden = true;
     Debug.reset();
     sel = null; flash = null; lifeSeen = {}; handSeen = null;
-    HUMAN = 0; BOT = 1;
+    HUMAN = online ? online.seat : 0; BOT = 1 - HUMAN;
     $('testBtn').hidden = !sandbox;
     setDrawer(null);
     $('start').hidden = true;
@@ -1470,6 +1534,7 @@
   function boot(data) {
     var run = Campaign.current();
     if (data && data.chapter) { if (run && run.battle) playChapter(); else Screens.menu(); }
+    else if (data && data.online && Net.saved()) startOnline(Net.resume());
     else if (data && data.state && data.state.players.every(function (p) { return p.life <= E.START_LIFE; })) { sandbox = !!data.sandbox; start(data.state); if (sandbox) renderPicker(); }
     else Screens.menu();
   }
@@ -1478,13 +1543,13 @@
     deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return Help.deck({ id: k }); },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
     warmAllArt: function () { trickle(6); },
-    showStart: showStart, playChapter: playChapter, sandbox: startSandbox, tutorial: startTutorial,
+    showStart: showStart, playChapter: playChapter, online: startOnline, inOnline: function () { return !!online && !!S && S.winner === null; }, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },
     inProgress: function () { return !!S && S.winner === null && !chapterBattle && !S.tutorial; },
     resume: function () { $('app').hidden = false; render(); schedule(); }
   };
   var hot = window.claude && window.claude.hot;
-  if (hot) hot.snapshot(function () { return { state: S && S.tutorial ? null : S, chapter: chapterBattle, sandbox: sandbox }; });
+  if (hot) hot.snapshot(function () { return { state: S && (S.tutorial || online) ? null : S, chapter: chapterBattle, sandbox: sandbox, online: !!online && S.winner === null }; });
   // Only a page reopened on a new version has a battle to carry over. Waiting on hot.ready otherwise keeps a first visit dark for five seconds.
   if (hot && hot.ready && hot.from) hot.ready(boot);
   else boot({});
