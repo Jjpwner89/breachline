@@ -9,6 +9,9 @@
   // The test table: no bot, you play whichever side is acting from that side's hand, and both sides always have mana.
   // HUMAN and BOT follow whoever is acting, so the board marks that side's units as yours. Picked cards go to seat 0 or 1.
   var sandbox = false, testSide = 0, testKind = '', TEST_MANA = 99;
+  // The test table's top side is played by you or by the scripted bot.
+  var testBot = false;
+  function bothHands() { return sandbox && !testBot; }
   // The test table's card-type filter: label and which cards it keeps.
   var TEST_KINDS = [
     ['', 'All', function () { return true; }],
@@ -542,7 +545,7 @@
     if (S.winner !== null) return '<span class="turn">Game over</span>';
     if (S.phase === 'opening') return '<span class="turn">Opening hands</span>';
     var step = function (name, label) { return '<span class="step' + (S.phase === name ? ' on' : '') + '">' + label + '</span>'; };
-    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
+    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (bothHands() ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
       '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>';
   }
 
@@ -577,9 +580,9 @@
   function announceTurn() {
     var key = S.winner === null && S.phase !== 'opening' ? S.active + ':' + S.turn : null;
     if (key && key !== lastTurn) {
-      if (lastTurn && S.active === BOT && !sandbox) Sfx.play('enemy-turn');
+      if (lastTurn && S.active === BOT && !bothHands()) Sfx.play('enemy-turn');
       $('turnBanner').className = S.active === HUMAN ? '' : 'enemy';
-      $('turnBanner').innerHTML = '<span>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
+      $('turnBanner').innerHTML = '<span>' + (bothHands() ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
     }
     lastTurn = key;
   }
@@ -591,7 +594,7 @@
   var FOE_PRESS = '<span class="press foe" aria-hidden="true">Enemy<br>turn</span>';
   function actionsHtml(moves) {
     var html = actionsInner(moves);
-    return S.winner === null && S.phase !== 'opening' && S.active === BOT && !sandbox ? html + FOE_PRESS : html;
+    return S.winner === null && S.phase !== 'opening' && S.active === BOT && !bothHands() ? html + FOE_PRESS : html;
   }
   function actionsInner(moves) {
     var you = S.players[HUMAN];
@@ -735,7 +738,7 @@
   function render() {
     if (sandbox) {
       S.players.forEach(function (p) { p.mana = TEST_MANA; });
-      if (S.winner === null) { HUMAN = actor(); BOT = 1 - HUMAN; }
+      if (S.winner === null && !testBot) { HUMAN = actor(); BOT = 1 - HUMAN; }
     }
     var moves = humanMoves(), marks = computeMarks(moves);
     $('app').classList.toggle('opening', S.phase === 'opening' && S.winner === null);
@@ -891,10 +894,10 @@
   }
 
   function schedule() {
-    if (sandbox || S.winner !== null || actor() !== BOT) return;
+    if (bothHands() || S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
     if (S.tutorial) playNext(token, function () { return Tutorial.enemyMove(S); });
-    else if (modelOn()) modelStep(token);
+    else if (modelOn() && !sandbox) modelStep(token);
     else playNext(token, botMove);
   }
 
@@ -1366,6 +1369,9 @@
   }
   function renderPicker() {
     var q = $('testSearch').value.trim().toLowerCase(), ORDER = 'WURBGN';
+    $('testOpp').innerHTML = [[false, 'You play both'], [true, 'Scripted bot']].map(function (o) {
+      return '<button type="button" class="step' + (testBot === o[0] ? ' on' : '') + '" data-bot="' + o[0] + '" aria-pressed="' + (testBot === o[0]) + '">' + o[1] + '</button>';
+    }).join('');
     $('testSides').innerHTML = [0, 1].map(function (pi) {
       return '<button type="button" class="step' + (testSide === pi ? ' on' : '') + '" data-side="' + pi + '" aria-pressed="' + (testSide === pi) + '">' +
         (pi === 0 ? 'You (bottom)' : 'Opponent (top)') + '</button>';
@@ -1398,8 +1404,18 @@
     testNote(names.length ? 'placed ' + names.join(', ') + ' for the opponent.' : 'the enemy half is full.');
   }
   $('testPanel').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-add], [data-side], [data-kind], [data-test]');
+    var b = e.target.closest('[data-add], [data-side], [data-kind], [data-test], [data-bot]');
     if (!b || !S) return;
+    if (b.dataset.test === 'close') return setDrawer(null);
+    if (b.dataset.bot) {
+      // With the bot on you keep the bottom side; it takes over the top, mid-turn if need be.
+      testBot = b.dataset.bot === 'true';
+      if (testBot) { HUMAN = 0; BOT = 1; sel = null; }
+      testNote(testBot ? 'the scripted bot plays the top side.' : 'you play both sides.');
+      renderPicker();
+      render();
+      return schedule();
+    }
     if (b.dataset.side) { testSide = +b.dataset.side; return renderPicker(); }
     if (b.dataset.kind !== undefined) { testKind = b.dataset.kind; return renderPicker(); }
     if (b.dataset.add) {

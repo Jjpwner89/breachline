@@ -281,6 +281,7 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .tnote { margin: 0; font-size: 13.5px; line-height: 1.3; color: var(--muted); }
 #testMsg { min-height: 1.3em; color: var(--gold-pale); }
 .ttools { display: flex; flex-wrap: wrap; gap: 6px; }
+.thead { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .tside { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; color: var(--ink); }
 .tside .steps.wrap { flex-wrap: wrap; row-gap: 4px; }
 #testSearch { width: 100%; padding: 6px 10px; border: 1px solid var(--edge); border-radius: 4px; background: #120c06; color: var(--ink); font: inherit; }
@@ -538,8 +539,9 @@ dialog .btns { justify-content: flex-start; }
       <div id="debugLog"></div>
     </aside>
     <aside class="drawer test" id="testPanel" aria-label="Test table">
-      <h2>Test table</h2>
-      <p class="tnote">Both sides have unlimited mana and nobody plays for you. End your turn to play the other side.</p>
+      <div class="thead"><h2>Test table</h2><button class="btn" type="button" data-test="close">Done</button></div>
+      <p class="tnote">Both sides have unlimited mana. Play the top side yourself after ending your turn, or let the scripted bot play it.</p>
+      <div class="tside"><span>Opponent</span><span class="steps" id="testOpp"></span></div>
       <div class="ttools">
         <button class="btn" type="button" data-test="populate">Populate board</button>
         <button class="btn" type="button" data-test="clear">Clear board</button>

@@ -6,6 +6,9 @@ var Screens = (function () {
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
   var ed = null, filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' }, confirmDelete = null, flipped = null;
+  // The filter panel starts folded; whether it and each of its rows is open is remembered on this device.
+  var FOLD_KEY = 'breachline.filterFolds', folds = { panel: true };
+  try { folds = JSON.parse(localStorage.getItem(FOLD_KEY)) || folds; } catch (e) {}
   // The reserve card picked to swap into a campaign deck.
   var swapIn = null;
 
@@ -422,15 +425,16 @@ var Screens = (function () {
       '<div class="ebody">' +
       '<aside class="closeup" id="closeup" ' + act('closeZoom') + ' aria-label="Card close-up"></aside>' +
       '<section class="cards" aria-label="Cards">' +
-        '<details class="filters" id="filters"><summary><span id="filterSum"></span><span class="fcount" id="fcount"></span></summary>' +
-          '<label class="fsearch"><span>Search</span><input type="search" id="fq" autocomplete="off" placeholder="Name or rules text" value="' + esc(filters.q) + '"></label><div id="fchips"></div></details>' +
+        '<div class="filters" id="filters"><div class="fhead"><button type="button" class="ftoggle" id="ftoggle" aria-controls="fchips" ' + act('foldFilter', 'panel') + '>Filters</button>' +
+          '<span class="fpicked" id="filterSum"></span>' +
+          '<label class="fsearch"><span class="sr">Search</span><input type="search" id="fq" autocomplete="off" placeholder="Search name or rules text" value="' + esc(filters.q) + '"></label>' +
+          '<span class="fcount" id="fcount"></span></div><div class="fbody" id="fchips"></div></div>' +
         '<div class="cgrid" id="cgrid"></div></section>' +
       '<aside class="dpanel" id="dpanel" aria-label="Your deck">' +
         '<div class="dtop"><label class="sr" for="dname">Deck name</label><input type="text" id="dname" maxlength="40" value="' + esc(deck.name) + '"><button type="button" class="btn dclose" ' + act('closeDeck') + '>Back to cards</button></div>' +
         '<div id="dsum"></div><div class="dlist" id="dlist"></div><div class="dfoot" id="dfoot"></div></aside>' +
       '<button type="button" class="btn primary dopen" id="dopen" ' + act('openDeck') + '></button>' +
       '</div></div>', function () { drawGrid(); });
-    byId('filters').open = !window.matchMedia('(max-width: 820px)').matches;
     drawFilters();
     drawGrid();
     drawDeck();
@@ -451,12 +455,38 @@ var Screens = (function () {
     var factions = E.FACTIONS.filter(factionShown).map(function (f) {
       return chip('faction', f.id, '<span class="fdot ' + f.colour + '" aria-hidden="true"></span>' + f.name.replace(/^The /, ''), filters.faction[f.id]);
     }).join('') + chip('faction', 'none', 'No faction', filters.faction.none);
-    byId('fchips').innerHTML =
-      '<div class="frow"><span class="flabel">Type</span><div class="chips">' + types + '</div></div>' +
-      '<div class="frow"><span class="flabel">Colour</span><div class="chips">' + colours + '</div></div>' +
-      '<div class="frow"><span class="flabel">Faction</span><div class="chips">' + factions + '</div></div>' +
-      '<div class="frow"><span class="flabel">Show</span><div class="chips">' + chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned') + '</div></div>' +
-      filterNote();
+    var own = chip('own', 'all', 'Every card', filters.own !== 'owned') + chip('own', 'owned', 'Cards I own', filters.own === 'owned');
+    var picked = pickedNames();
+    byId('fchips').innerHTML = filterRow('own', 'Show', own, picked.own) + filterRow('colour', 'Colour', colours, picked.colour) +
+      filterRow('type', 'Type', types, picked.type) + filterRow('faction', 'Faction', factions, picked.faction) + filterNote();
+    var shut = !!folds.panel;
+    byId('filters').classList.toggle('shut', shut);
+    byId('fchips').hidden = shut;
+    byId('ftoggle').setAttribute('aria-expanded', !shut);
+    drawPicked();
+  }
+  // A folded row keeps its label and says what is picked in it.
+  function filterRow(group, label, chips, picked) {
+    var shut = !!folds[group];
+    return '<div class="frow' + (shut ? ' shut' : '') + '"><button type="button" class="flabel" aria-expanded="' + !shut + '" ' + act('foldFilter', group) + '>' + label + '</button>' +
+      (shut ? '<span class="fpick">' + esc(picked.join(', ') || 'Any') + '</span>' : '<div class="chips">' + chips + '</div>') + '</div>';
+  }
+  function pickedNames() {
+    var on = function (g) { return Object.keys(filters[g]).filter(function (k) { return filters[g][k]; }); };
+    return {
+      own: [filters.own === 'owned' ? 'Cards I own' : 'Every card'],
+      colour: on('colour').map(function (c) { return GameUI.ALIGNMENT[c]; }),
+      type: on('type').map(function (t) { return GameUI.TYPES[t]; }),
+      faction: on('faction').map(function (k) {
+        var f = E.FACTIONS.filter(function (x) { return x.id === k; })[0];
+        return f ? f.name.replace(/^The /, '') : 'No faction';
+      })
+    };
+  }
+  // With the panel folded, its bar lists what is filtered.
+  function drawPicked() {
+    var p = pickedNames(), list = (filters.own === 'owned' ? p.own : []).concat(p.colour, p.type, p.faction);
+    byId('filterSum').textContent = folds.panel ? list.join(' · ') : '';
   }
   // With one colour or one faction picked, a line under the filters says what it's good at, or a word from inside it.
   function filterNote() {
@@ -483,7 +513,6 @@ var Screens = (function () {
     var ids = ed.pool.ids.filter(function (id) { return matches(E.CARDS[id]); }).sort(cardOrder), n = activeFilters();
     byId('cgrid').innerHTML = ids.length ? ids.map(pickHtml).join('') : '<p class="hint none">No cards match these filters.</p>';
     GameUI.fitCards(byId('cgrid'));
-    byId('filterSum').textContent = n ? 'Filters (' + n + ')' : 'Filters';
     byId('fcount').innerHTML = ids.length + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
     drawBadges();
   }
@@ -623,6 +652,11 @@ var Screens = (function () {
     if (group === 'colour') E.FACTIONS.forEach(function (f) { if (!factionShown(f)) filters.faction[f.id] = false; });
     keepFocus(drawFilters);
     drawGrid();
+  };
+  actions.foldFilter = function (group) {
+    folds[group] = !folds[group];
+    try { localStorage.setItem(FOLD_KEY, JSON.stringify(folds)); } catch (e) {}
+    keepFocus(drawFilters);
   };
   actions.clearFilters = function () {
     filters = { type: {}, colour: {}, faction: {}, q: '', own: 'all' };

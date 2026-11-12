@@ -129,15 +129,24 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 @media (prefers-reduced-motion: reduce) { .artview, .artview img { animation: none; } }
 .cards { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .filters { flex: none; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
-.filters summary { cursor: pointer; display: flex; align-items: center; gap: 12px; min-height: 26px; font: 500 17px var(--display); }
-.filters summary::before { content: "▸"; font-size: 12px; color: var(--muted); }
-.filters[open] summary::before { content: "▾"; }
+/* The bar always shows the fold toggle, search and count; folded, it lists what is filtered. Each row folds on its own too. */
+.fhead { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; }
+.ftoggle, .flabel { display: inline-flex; align-items: center; gap: 7px; padding: 0; background: none; border: 0; color: inherit; cursor: pointer; text-align: left; }
+.ftoggle { min-height: 32px; padding: 0 12px 0 8px; border: 1px solid var(--line); border-radius: 99px; font: 500 17px var(--display); }
+.ftoggle:hover, .flabel:hover { color: var(--gold-pale); }
+.ftoggle::before, .flabel::before { content: ""; width: 7px; height: 7px; flex: none; border: solid currentColor; border-width: 0 2px 2px 0; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.filters.shut .ftoggle::before, .frow.shut .flabel::before { transform: rotate(-45deg); }
+.fpicked { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 13px; color: var(--gold-pale); }
+.fpicked:empty { display: none; }
 .fcount { margin-left: auto; font: 13px var(--body); color: var(--muted); font-variant-numeric: tabular-nums; }
 .linkbtn { background: none; border: 0; padding: 0 2px; color: var(--gold-pale); text-decoration: underline; font-size: 13px; }
-.fsearch { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
-.fsearch span, .flabel { flex: 0 0 52px; font-size: 13px; color: var(--muted); }
-.fsearch input { flex: 1; max-width: 340px; min-height: 30px; padding: 3px 8px; }
-.frow { display: flex; align-items: baseline; gap: 8px; margin-top: 5px; }
+.fsearch { display: flex; flex: 1 1 200px; max-width: 340px; }
+.fsearch input { flex: 1; min-width: 0; min-height: 30px; padding: 3px 8px; }
+.fbody { padding-top: 4px; }
+.flabel { flex: 0 0 74px; min-height: 28px; font-size: 13px; color: var(--muted); }
+.flabel::before { width: 5px; height: 5px; border-width: 0 1.5px 1.5px 0; }
+.fpick { align-self: center; font-size: 13px; color: var(--ink); }
+.frow { display: flex; align-items: flex-start; gap: 8px; margin-top: 5px; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
 .chip { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; padding: 2px 9px; background: var(--table); border: 1px solid var(--line); border-radius: 14px; font-size: 13px; }
 .chip:hover { border-color: var(--gold); }
@@ -266,7 +275,8 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
   .ebody { display: block; }
   .cards { display: flex; }
   .cgrid { overflow: visible; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-  .frow { flex-direction: column; gap: 2px; }
+  .frow { flex-wrap: wrap; gap: 2px 8px; }
+  .frow:not(.shut) .chips { flex-basis: 100%; }
   .flabel { flex: none; }
   .closeup.open { display: flex; flex-direction: column; align-items: center; justify-content: center; position: fixed; inset: 0; z-index: 40; padding: 16px; background: rgba(8, 6, 3, .96); }
   .closeup.open .slot { width: min(100%, 360px); }

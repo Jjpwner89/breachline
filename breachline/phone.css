@@ -49,7 +49,8 @@
   #logBtn { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6'/%3E%3Cpath d='M6 3a2 2 0 0 0-2 2v1h4V5a2 2 0 0 0-2-2zM9 8h7M9 12h7M9 16h4'/%3E%3C/svg%3E"); }
   #menuBtn { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M4 7h16M4 12h16M4 17h16'/%3E%3C/svg%3E"); }
   .topbar .helpbtn { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M9 9a3 3 0 1 1 4 2.8c-.8.4-1 1-1 2V15'/%3E%3Ccircle cx='12' cy='19' r='.6' fill='%23000'/%3E%3C/svg%3E"); }
-  #debugBtn, #testBtn { display: none; }
+  #testBtn { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linejoin='round'%3E%3Crect x='3' y='7' width='11' height='14' rx='2'/%3E%3Cpath d='M8 3h11a2 2 0 0 1 2 2v12'/%3E%3C/svg%3E"); }
+  #debugBtn { display: none; }
   #menu .phone { display: block; }
   #menuSound::before { content: "Sound off"; }
   #menuSound[aria-pressed="true"]::before { content: "Sound on"; }
@@ -134,7 +135,7 @@
   :is(#themStrip, #youStrip) .life { justify-self: center; }
   .plate { padding: 4px 6px; border-radius: 8px; }
   .plate.target { background: rgba(163, 42, 28, .45); }
-  .tools { grid-area: tools; justify-self: end; align-self: start; flex-wrap: nowrap; justify-content: flex-end; gap: 6px; }
+  .tools { grid-area: tools; justify-self: end; align-self: start; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
   .tools .btn, .topbar .helpbtn { width: 40px; height: 40px; }
   /* The board fills the height; the arena is sized from it because a size container has no width of its own. */
   .arena { --bw: calc((100dvh - 50px) / var(--rc, .8) / 1.06); grid-area: arena; align-self: start; width: calc(var(--bw) + 14px); height: calc(100dvh - 6px); padding: 0; overflow: visible; }
