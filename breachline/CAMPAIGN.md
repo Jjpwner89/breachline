@@ -101,20 +101,20 @@ You start with The Elder Herd.
 
 ## Balance so far
 
-From 400 simulated runs per campaign on 2026-11-10, after the move to 30-card decks, with the scripted bot on both sides. Each chapter was fought with the starter deck, whatever happened in earlier chapters, so each got a full sample. The sim takes rewards but doesn't swap them in, so these numbers measure the starter alone.
+Retuned for 40-card decks on 2026-11-11, from 400 simulated games per chapter with the scripted bot on both sides. Each chapter was fought with the campaign's starter deck alone, so rewards aren't counted. The targets climb from 80% in chapter 1 to 55% in chapter 6, 5 points a chapter, as the creator asked: each campaign climbs steadily and all five end up with similar clear rates.
 
-| Campaign | 1 | 2 | 3 | 4 | 5 | 6 | Full clears |
+| Campaign | 1 | 2 | 3 | 4 | 5 | 6 | One-try clear |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Vigil | 54% | 53% | 57% | 50% | 65% | 69% | 12 of 400 |
-| Gnosis | 63% | 66% | 51% | 35% | 56% | 28% | 3 of 400 |
-| Dominion | 69% | 56% | 72% | 67% | 77% | 52% | 29 of 400 |
-| Fervor | 59% | 56% | 70% | 60% | 36% | 41% | 4 of 400 |
-| Genesis | 61% | 68% | 47% | 43% | 63% | 62% | 19 of 400 |
+| Vigil | 82% | 74% | 69% | 60% | 60% | 56% | 8% |
+| Gnosis | 81% | 76% | 72% | 71% | 64% | 52% | 10% |
+| Dominion | 79% | 72% | 62% | 67% | 56% | 53% | 7% |
+| Fervor | 79% | 71% | 68% | 64% | 62% | 55% | 8% |
+| Genesis | 80% | 80% | 70% | 65% | 65% | 55% | 10% |
 
-- **Clear rates differ about tenfold**, from Gnosis to Dominion. That matters now that a clear unlocks the campaign's starter.
-- **Several climbs run the wrong way.** Vigil's last two chapters are its easiest, and Dominion's fifth is its easiest. They drifted when the white and black starters changed and decks moved to 30 cards.
-- **The retune the creator asked for (2026-11-10):** each campaign should climb steadily and the five should end up with similar clear rates. Difficulty scaling matters most. Enemy decks can lean further into their faction where that helps. It waits for the new board, since a bigger grid, hand or life total would move every number here.
-- The bot plays some decks weakly and rarely uses sacrifices well, so these numbers compare chapters and campaigns rather than predict a person's results.
+- **How the enemy decks were tuned.** Each enemy deck was first scaled from 30 to 40 cards, keeping its share of lands. Then a tuner moved it toward its target one or two copies at a time. It stayed inside the deck's own colours and factions and never touched a legendary. A chapter that was too easy lost its weakest copy for a strong faction card; one that was too hard lost its strongest copy for a plain common. Each chapter kept the list that came closest over six rounds.
+- **The one-try clear** is every chapter won in a row with no retries, so it understates a real run. Before the retune it ran from under 1% (Genesis) to 13% (Vigil).
+- **Dominion's third chapter** (the salt causeway) is 8 points under its target and a little harder than its fourth.
+- **A person beats the bot by a wide margin.** The creator cleared Fervor on the old 30-card setup without the enemy ever damaging their summoner. The scripted bot trades on the board and rarely pushes through to the summoner, so these numbers compare chapters and campaigns rather than predict a person's results. It also rarely uses sacrifices well.
 
 ## Maps
 

@@ -16,7 +16,7 @@ var Bot = (function () {
   function aimScore(s, pi, c, r, col) {
     var a = c.aim, here = unitAt(s, r, col), v = 0, sign = function (u) { return u.owner === pi ? -1.5 : 1; };
     var area = E.aimArea(a, pi, r, col), inArea = area.map(function (t) { return unitAt(s, t.r, t.c); }).filter(Boolean);
-    if (here && a.hit) v += sign(here) * hurtScore(here, a.hit);
+    if (here && a.hit && !(a.foesOnly && here.owner === pi)) v += sign(here) * hurtScore(here, a.hit);
     if (a.splash) s.units.forEach(function (o) {
       if (o !== here && dist(o, { r: r, c: col }) === 1 && (a.splashAll || o.owner !== pi)) v += sign(o) * (a.splash >= o.hp ? worth(o) + 30 : 5);
     });
@@ -35,7 +35,7 @@ var Bot = (function () {
       });
     });
     if (a.unmake) area.forEach(function (t) { var fx = E.tileAt(s, t.r, t.c); if (fx) v += fx.owner === pi ? -8 : 8; });
-    var spots = a.spread || a.square || a.row || a.column ? area : [{ r: r, c: col }];
+    var spots = a.spread || a.square || a.block || a.row || a.column ? area : [{ r: r, c: col }];
     // Cinderwake: every tile from the aimed one to the enemy back row, hurting only enemies.
     if (a.wave) {
       spots = [];
@@ -51,11 +51,27 @@ var Bot = (function () {
       if (a.tile === 'frost' && u) v += u.owner === pi ? -12 : 15;
       if (a.tile === 'burn' && u && !E.hasKw(u, 'Fireproof') && !(a.light && u.owner === pi)) v += u.owner === pi ? -15 : 10;
       if (a.tile === 'thorns') v += u ? (u.owner === pi ? -10 : 12) : near * 8;
-      if (a.tile === 'blight' && u) v += u.owner === pi ? -10 : 10 + E.attackOf(s, u) * 3;
-      if (a.tile === 'holy' && u) v += u.owner === pi ? 20 + worth(u) / 8 : -10;
+      if (a.tile === 'blight' && u) v += (u.owner === pi ? -10 : 10 + E.attackOf(s, u) * 3) + (doomed(s, u) ? 35 : 0);
+      if (a.tile === 'holy' && u) v += u.owner === pi ? 20 + worth(u) / 8 + (near ? 15 + near * 5 : 0) : -10;
+      if (a.tile === 'holy' && !u) v += near * 3;
       if (a.tile === 'charge' && !u) v += near * 5;
     });
     return v;
+  }
+  // A unit likely to die soon: an enemy that units of the other side next to it could finish, or the reverse.
+  function doomed(s, u) {
+    var hits = s.units.filter(function (o) { return o.owner !== u.owner && dist(o, u) <= E.range(o) + 1; }).reduce(function (n, o) { return n + E.attackOf(s, o); }, 0);
+    return hits >= u.hp;
+  }
+  // The most an enemy unit could do to one of pi's units next turn: the worth of the unit it would kill, if any.
+  function threat(s, pi, t, less) {
+    var best = 0, reach = E.range(t) + E.speed(t), atk = E.attackOf(s, t);
+    s.units.forEach(function (u) {
+      if (u.owner !== pi || dist(u, t) > reach || atk < u.hp) return;
+      // less: what the curse takes off its attack. Worth most when that saves the unit.
+      best = Math.max(best, atk - less < u.hp ? worth(u) : worth(u) / 4);
+    });
+    return best;
   }
   // A tile effect that would hurt a unit standing on it.
   function tileHarm(s, u, r, c) {
@@ -69,9 +85,11 @@ var Bot = (function () {
     return 0;
   }
 
+  // Whether amt damage from u finishes t: enough of it, or any at all with Venom.
+  function fells(u, t, amt) { return amt >= t.hp || (amt > 0 && E.hasKw(u, 'Venom')); }
   function attackScore(s, u, t, extra) {
     var amt = E.hitOn(s, u, t), score = 0;
-    if (amt >= t.hp) score += worth(t) + 30;
+    if (fells(u, t, amt)) score += worth(t) + 30;
     else score += worth(t) * (amt / t.maxHp);
     if (extra) {
       var side = E.hitOn(s, u, extra);
@@ -86,10 +104,10 @@ var Bot = (function () {
         score += rung >= o.hp ? worth(o) + 30 : worth(o) * (rung / o.maxHp);
       });
     }
-    if (amt >= t.hp && E.CARDS[u.cardId].drawOnKill) score += 25;
-    if (amt < t.hp && dist(u, t) <= E.range(t)) {
+    if (fells(u, t, amt) && E.CARDS[u.cardId].drawOnKill) score += 25;
+    if (!fells(u, t, amt) && dist(u, t) <= E.range(t)) {
       var back = E.hitOn(s, t, u, 0, true);
-      score -= back >= u.hp ? worth(u) + 10 : worth(u) * (back / u.maxHp);
+      score -= fells(t, u, back) ? worth(u) + 10 : worth(u) * (back / u.maxHp);
     }
     return score + 10;
   }
@@ -109,6 +127,11 @@ var Bot = (function () {
         var lands = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
         if (c.type === 'land') return lands > 2 || p.lands.length >= 6 ? 100 : -100;
         return c.cost;
+      case 'scry':
+        var keep = wanted(s, p, p.scrying.cards[0].c);
+        return (m.bottom ? -1 : 1) * (keep ? 10 : -10);
+      case 'pick':
+        return cardValue(s, p, p.picking.cards.filter(function (i) { return i.id === m.card; })[0].c);
       case 'summon':
         c = E.CARDS[handCard(p, m.card).c];
         if (c.lifeCost && p.life <= c.lifeCost * 2) return -100;
@@ -120,6 +143,7 @@ var Bot = (function () {
         }
         if (c.drawOnSummon) zap += 20;
         (c.summons || []).forEach(function (id) { zap += 30 + E.CARDS[id].cost * 20; });
+        if (c.errant) zap += 30 + E.CARDS[c.errant].cost * 20;
         zap += (c.adds || []).length * 15 + (c.curse ? 25 : 0) + (c.tax ? 15 : 0);
         // An ambush pays off the further forward it lands.
         var ahead = Math.abs(m.r - E.backRow(pi)) * (c.atk >= 3 ? 12 : 4);
@@ -144,10 +168,12 @@ var Bot = (function () {
           return zap >= 50 ? 30 + zap : -1;
         }
         if (c.selfLife) return p.life >= 8 ? 60 : -1;
-        if (c.sweep || c.humble || c.hour) {
+        if (c.sweep || c.humble || c.hour || c.cull) {
           var net = 0;
           s.units.forEach(function (o) {
-            var hit = c.sweep ? (E.hasKw(o, 'Fireproof') ? 0 : c.sweep) : c.humble ? (E.attackOf(s, o) >= c.humble.atk ? c.humble.hit : 0) : (o.hp <= 2 ? o.hp : 0);
+            var hit = c.sweep ? (E.hasKw(o, 'Fireproof') ? 0 : o.owner === pi && c.sweepOwn !== undefined ? c.sweepOwn : c.sweep)
+              : c.humble ? (E.attackOf(s, o) >= c.humble.atk && !(c.humble.foesOnly && o.owner === pi) ? c.humble.hit : 0)
+              : c.cull ? (o.owner !== pi && o.hp <= c.cull ? o.hp : 0) : (o.hp <= 2 ? o.hp : 0);
             if (hit) net += (o.owner === pi ? -1.3 : 1) * hurtScore(o, hit);
           });
           return net >= 60 ? net : -1;
@@ -165,14 +191,17 @@ var Bot = (function () {
         }
         if (c.light) {
           t = unitById(s, m.target);
-          return s.units.some(function (e) { return e.owner === foe && dist(e, t) <= 2; }) ? 30 + worth(t) / 10 : -1;
+          return s.units.some(function (e) { return e.owner === foe && dist(e, t) <= 2; }) ? 30 + worth(t) / 10 + ((c.lightAtk || 0) + (c.lightHp || 0)) * 12 : -1;
         }
         if (c.unchain || c.loam) {
           t = unitById(s, m.target);
-          var piece = E.CARDS[t.enchants[t.enchants.length - 1].c];
+          var piece = t.enchants.length ? E.CARDS[t.enchants[t.enchants.length - 1].c] : null;
           if (c.loam) for (var g = t.enchants.length - 1; g >= 0; g--) if (E.CARDS[t.enchants[g].c].equipment) { piece = E.CARDS[t.enchants[g].c]; break; }
-          var harmful = piece.enemyOnly || piece.atkBonus < 0;
+          var harmful = piece && (piece.enemyOnly || piece.atkBonus < 0);
           if (t.owner === pi) return harmful ? 40 + worth(t) / 5 : -100;
+          if (c.unchainAny && t.hp <= c.unchain) return worth(t) + 30;
+          // With nothing to remove, an always-playable Shatter is a small burn spell.
+          if (!piece) return c.unchainAny ? 15 + hurtScore(t, c.unchain) / 2 : -100;
           return harmful ? -100 : 30 + worth(t) / 5 + (c.unchain ? hurtScore(t, c.unchain) / 2 : 0);
         }
         if (c.extraLand) {
@@ -195,6 +224,8 @@ var Bot = (function () {
           t = unitById(s, m.target);
           var cold = t.frozen >= s.turn || (E.tileAt(s, t.r, t.c) || {}).kind === 'frost', bolt = c.iceBlast && cold ? c.iceBlast : c.blast;
           var burn = bolt >= t.hp ? worth(t) + 30 : worth(t) * bolt / t.maxHp + (c.chill ? 10 : 0);
+          // Brightlance's push back onto a hazard hurts as well.
+          if (c.knock && bolt < t.hp) burn += tileHarm(s, t, t.r + (t.owner === 0 ? 1 : -1), t.c) * 25;
           if (c.splash) s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
           return burn >= 60 ? 40 + burn : -1;
         }
@@ -210,8 +241,9 @@ var Bot = (function () {
         if (c.coin) return 60;
         if (c.bonusNext) {
           // Worth it only with a card in hand that the extra mana would bring within reach next turn.
-          var next = p.lands.length + 1 + c.bonusNext;
-          return p.hand.some(function (h) { var hc = E.CARDS[h.c]; return hc.type !== 'land' && E.costOf(s, pi, hc) > p.lands.length + 1 && E.costOf(s, pi, hc) <= next; }) ? 45 : -1;
+          var next = p.lands.length + 1 + c.bonusNext, big = 0;
+          p.hand.forEach(function (h) { var hc = E.CARDS[h.c], hcost = E.costOf(s, pi, hc); if (hc.type !== 'land' && hcost > p.lands.length + 1 && hcost <= next) big = Math.max(big, hcost); });
+          return big ? 70 + big * 15 : -1;
         }
         if (c.stride) {
           var ready = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.moved; }).length;
@@ -225,6 +257,14 @@ var Bot = (function () {
         }
         if (c.passage) {
           t = unitById(s, m.target);
+          // A passage that lets the unit attack: land it next to an enemy it can kill, or on the back row to hit the summoner.
+          if (c.passageAttack) {
+            if (t.acted || t.summonedTurn === s.turn || E.attackOf(s, t) < 1) return -1;
+            var dest = { r: m.r, c: m.c }, gain = 0;
+            if (m.r === E.backRow(foe)) gain = 80 + E.attackOf(s, t) * 10;
+            s.units.forEach(function (e) { if (e.owner === foe && dist(e, dest) === 1 && E.attackOf(s, t) >= e.hp) gain = Math.max(gain, worth(e) + 20); });
+            return gain >= 50 ? gain : -1;
+          }
           var open = !s.units.some(function (e) { return e.owner === foe && dist({ r: m.r, c: m.c }, e) === 1; });
           return m.r === E.backRow(foe) && open && E.attackOf(s, t) >= 3 ? 55 + E.attackOf(s, t) * 10 : -1;
         }
@@ -233,11 +273,18 @@ var Bot = (function () {
         return 100 + E.CARDS[raised.c].cost * 20;
       case 'enchant':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
-        if (c.allyOnly) return 40 + worth(t) / 5;
+        if (c.allyOnly) return 40 + worth(t) / 5 + (c.castDraw ? 20 : 0);
         if (c.hunted) return t.owner === foe && worth(t) >= 65 ? 30 + worth(t) / 5 : -100;
-        if (c.warrant) return worth(t) >= 80 ? 40 + worth(t) : -100;
+        if (c.warrant) return t.owner === foe && worth(t) >= 50 ? 40 + worth(t) + E.attackOf(s, t) * 5 : -100;
+        if (c.atkBonus < 0 && t.owner === foe) {
+          var saves = threat(s, pi, t, -c.atkBonus);
+          return E.attackOf(s, t) >= 2 || saves ? 30 + saves + E.attackOf(s, t) * 3 + (c.enchantHit ? hurtScore(t, c.enchantHit) : 0) : -100;
+        }
+        if (c.bind && t.owner === foe) return E.attackOf(s, t) >= 2 ? 30 + threat(s, pi, t, 99) + E.attackOf(s, t) * 6 + worth(t) / 5 : -100;
+        if (c.hpBonus < 0 && t.owner === foe) return t.hp <= -c.hpBonus ? worth(t) + 30 : 30 + worth(t) / 5 + (doomed(s, t) ? 25 : 0);
         if (c.atkBonus > 0) return t.owner === pi ? 40 + worth(t) / 5 : -100;
-        return t.owner === foe && E.attackOf(s, t) >= 3 ? 40 + E.attackOf(s, t) * 2 : -100;
+        if (c.enchantHit && t.owner === foe && c.enchantHit >= t.hp) return worth(t) + 30;
+        return t.owner === foe && E.attackOf(s, t) >= 3 ? 40 + E.attackOf(s, t) * 2 + (c.enchantHit ? hurtScore(t, c.enchantHit) : 0) : -100;
       case 'attackSummoner':
         u = unitById(s, m.unit);
         return E.attackOf(s, u) >= s.players[foe].life ? 100000 : 120 + E.attackOf(s, u) * 10;
@@ -257,12 +304,16 @@ var Bot = (function () {
           t = unitById(s, m.target);
           return s.units.some(function (e) { return e.owner === foe && dist(t, e) === 2; }) ? 40 : -1;
         }
-        if (key === 'push') return 22;
+        if (key === 'push') {
+          // Worth more when it shoves the enemy onto fire, thorns or a snare.
+          t = unitById(s, m.target);
+          if (!t || t.owner !== foe) return 22;
+          return 22 + tileHarm(s, t, t.r + (t.r - u.r), t.c + (t.c - u.c)) * 25;
+        }
         if (key === 'zap') { t = unitById(s, m.target); return ab.amount >= t.hp ? worth(t) + 30 : 12 + worth(t) / 10; }
         if (key === 'harvest') return worth(unitById(s, m.target)) <= 35 ? 35 : -1;
         if (key === 'tend') return 45 + worth(unitById(s, m.target)) / 10;
         if (key === 'hold') return 30 + E.attackOf(s, unitById(s, m.target)) * 5;
-        if (key === 'errant') return 55;
         if (key === 'rain') {
           var wet = E.tileAt(s, m.r, m.c), there = unitAt(s, m.r, m.c), rv = -1;
           if (there && there.owner === pi && there.hp < there.maxHp) rv = 15;
@@ -331,13 +382,30 @@ var Bot = (function () {
           if (e.owner !== foe) return;
           var d = dist(here, e);
           if (d <= E.range(u)) bonus = Math.max(bonus, attackScore(s, u, e) / 2);
-          if (d === 1 && E.hitOn(s, e, u) >= u.hp) bonus -= 8;
+          if (d === 1 && fells(e, u, E.hitOn(s, e, u))) bonus -= 8;
+        });
+        // An enemy on overwatch strikes the first unit to end a move in its reach.
+        var watch = 0;
+        s.units.forEach(function (e) {
+          if (e.owner !== foe || !e.watching || dist(here, e) > E.range(e)) return;
+          var hit = E.hitOn(s, e, u, 0, true);
+          watch = Math.max(watch, fells(e, u, hit) ? worth(u) + 10 : worth(u) * hit / u.maxHp);
+        });
+        bonus -= watch;
+        // A unit with Overwatch gives up its watch by moving, so it moves only to fight.
+        if (E.hasKw(u, 'Overwatch') && bonus <= 0) bonus -= 15;
+        // Dropped equipment on the tile is worth walking onto.
+        (s.drops || []).forEach(function (d) {
+          if (d.r === m.r && d.col === m.c && (E.CONFIG.gearDrop === 'anyone' || d.owner === u.owner)) bonus += 30 + (E.CARDS[d.c].atkBonus || 0) * 10;
         });
         return 12 + gain * 12 + bonus - tileHarm(s, u, m.r, m.c) * 15;
       case 'relic':
         var rel = p.relics.filter(function (r) { return r.id === m.relic; })[0], rk = E.CARDS[rel.c].relic;
         var fresh = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.acted; });
         if (rk === 'bell') return s.phase === 'command' && fresh.filter(function (a) { return s.units.some(function (o) { return o !== a && o.owner === pi && dist(o, a) === 1; }); }).length >= 2 ? 30 : -1;
+        if (rk === 'bellgrow') { t = unitById(s, m.target); return 35 + E.attackOf(s, t) * 2 + worth(t) / 10 + (t.summonedTurn !== s.turn && !t.acted ? 10 : 0); }
+        if (rk === 'pick') return 50;
+        if (rk === 'scry') return 40;
         if (rk === 'drum') return s.phase === 'command' && fresh.filter(function (a) { return !a.moved; }).length >= 3 ? 25 : -1;
         if (rk === 'tide') return s.phase === 'play' && p.hand.some(function (h) { var hc = E.CARDS[h.c], cost = E.costOf(s, pi, hc, h); return hc.type !== 'land' && cost > p.mana && cost <= p.mana + rel.store; }) ? 80 : -1;
         if (rk === 'seed') return rel.store >= 2 ? 30 + rel.store * 10 + worth(unitById(s, m.target)) / 10 : -1;
@@ -385,14 +453,96 @@ var Bot = (function () {
     return att || !s.pending ? -1 : 5;
   }
 
-  function choose(s, jitter) {
-    var moves = E.legalMoves(s, { dedupe: true }), best = null, top = -Infinity;
-    moves.forEach(function (m) {
-      var v = score(s, m) + (jitter ? jitter() * 3 : 0);
-      if (v > top) { top = v; best = m; }
+  // Scry and pick: a land is wanted while short of them, anything else while it's castable soon.
+  function landsAhead(p) { return p.lands.length + p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length; }
+  function wanted(s, p, id) {
+    var c = E.CARDS[id];
+    return c.type === 'land' ? landsAhead(p) < 6 : c.cost <= p.lands.length + 2;
+  }
+  function cardValue(s, p, id) {
+    var c = E.CARDS[id];
+    if (c.type === 'land') return landsAhead(p) < 5 ? 60 : 5;
+    return c.cost <= p.lands.length + 1 ? 40 + c.cost * 5 : 25 - (c.cost - p.lands.length) * 5;
+  }
+
+  // The board as one number for player pi: life, units weighted by health, attack and how far forward they stand,
+  // cards in hand and relics. Only what pi may know goes in.
+  function evaluate(x, pi) {
+    if (x.winner === pi) return 1e6;
+    if (x.winner === 1 - pi) return -1e6;
+    var v = (x.players[pi].life - x.players[1 - pi].life) * LOOK.life;
+    x.units.forEach(function (u) {
+      var sign = u.owner === pi ? 1 : -1, atk = E.attackOf(x, u);
+      var val = worth(u) * (0.4 + 0.6 * u.hp / u.maxHp) + atk * 6 + u.maxHp * 2;
+      val += (E.ROWS - 1 - Math.abs(u.r - E.backRow(1 - u.owner))) * LOOK.ahead;
+      // Lasting effects. Attack and health bonuses are already in the numbers above; this counts what they don't show.
+      // A curse on a unit counts against its owner, and a blessing for them.
+      u.enchants.forEach(function (e) {
+        var c = E.CARDS[e.c];
+        if (c.enemyOnly) { val -= 8 + (c.leaden ? atk * 3 : 0); return; }
+        val += 8;
+        if (c.vow) val += worth(u) * 0.4;
+        if (c.sanctuary) val += worth(u) * 0.25;
+      });
+      if (u.stasisOpen && u.owner !== pi) val -= atk * 2;
+      // A unit with Overwatch that stayed still guards the ground in front of it through the enemy's turn.
+      if (E.hasKw(u, 'Overwatch') && !u.moved && !u.acted && u.owner === x.active) val += atk * 4;
+      (x.hours || []).forEach(function () { if (u.hp <= 2) val -= worth(u) * 0.7; });
+      // A frozen, held or stilled enemy loses its next turn's attack.
+      if (u.owner !== pi && (u.frozen >= x.turn || u.held >= x.turn || u.stasis >= x.turn || u.sapped >= x.turn)) val -= atk * 4;
+      v += sign * val;
     });
+    v += x.players[pi].hand.length * LOOK.hand + x.players[pi].relics.length * 25 + (x.players[pi].bonusMana || 0) * 10
+      + x.players[pi].relics.reduce(function (n, r) { return n + (r.store || 0) * 6; }, 0);
+    return v;
+  }
+  function greedy(s) {
+    var moves = E.legalMoves(s, { dedupe: true }), best = null, top = -Infinity;
+    moves.forEach(function (m) { var v = score(s, m); if (v > top) { top = v; best = m; } });
     return best;
   }
-  return { choose: choose, score: score };
+  // Plays the rest of pi's turn greedily and scores where it ends. The copy hides what pi can't know: the enemy's
+  // hand is emptied, so no answer is assumed, and pi's own deck and the shuffle seed are scrambled.
+  function rollout(s, m, pi, r) {
+    var x = JSON.parse(JSON.stringify(s));
+    x.players[1 - pi].hand = [];
+    x.seed = Math.floor(r() * 2147483647);
+    var deck = x.players[pi].deck;
+    for (var k = deck.length - 1; k > 0; k--) { var j = Math.floor(r() * (k + 1)), tmp = deck[k]; deck[k] = deck[j]; deck[j] = tmp; }
+    x = E.applyMove(x, m);
+    for (var steps = 0; steps < 40 && x.winner === null; steps++) {
+      if (x.pending ? x.pending.responder !== pi : x.active !== pi) break;
+      if (x.phase !== 'play' && x.phase !== 'command') break;
+      var next = greedy(x);
+      if (!next || next.type === 'endTurn') break;
+      x = E.applyMove(x, next);
+    }
+    return evaluate(x, pi);
+  }
+
+  // Weights for the lookahead: life point, row forward, card in hand.
+  var LOOK = { on: true, width: 4, life: 14, ahead: 3, hand: 12 };
+  function choose(s, jitter) {
+    var moves = E.legalMoves(s, { dedupe: true }), best = null, top = -Infinity, scored = [];
+    moves.forEach(function (m) {
+      var v = score(s, m) + (jitter ? jitter() * 3 : 0);
+      scored.push({ m: m, v: v });
+      if (v > top) { top = v; best = m; }
+    });
+    // A little lookahead on the bot's own turn: the few best-looking moves are each played out to the end of the turn,
+    // and the one that leaves the best board wins. Lands and winning blows need no lookahead.
+    var pi = s.active, p = s.players[pi];
+    if (!LOOK.on || s.pending || (s.phase !== 'play' && s.phase !== 'command') || p.toBottom || p.scrying || p.picking || top >= 1000) return best;
+    var cands = scored.filter(function (x) { return x.v >= 0; }).sort(function (a, b) { return b.v - a.v; }).slice(0, LOOK.width);
+    if (cands.length < 2) return best;
+    var r = jitter || Math.random, pickBest = null, pickV = -Infinity;
+    cands.forEach(function (x) {
+      var v = x.m.type === 'endTurn' ? evaluate(s, pi) : rollout(s, x.m, pi, r);
+      v += x.v * 0.05;
+      if (v > pickV) { pickV = v; pickBest = x.m; }
+    });
+    return pickBest;
+  }
+  return { choose: choose, score: score, evaluate: evaluate, LOOK: LOOK };
 })();
 if (typeof module !== 'undefined') module.exports = Bot;

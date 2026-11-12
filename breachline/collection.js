@@ -37,7 +37,8 @@ var Collection = (function () {
       '<p class="lead">It\'s yours to keep. Win more cards in battles and packs, and beat a campaign to win that campaign\'s deck too.</p>' +
       '<div class="dtiles">' + tiles + '</div>' +
       '<div class="story spick"><p class="eyebrow">' + symbol(d.colours[0]) + GameUI.ALIGNMENT[d.colours[0]] + '</p><h2>' + esc(d.name) + '</h2>' +
-        '<p>' + GameUI.deckNote(pickStarter) + '</p>' +
+        '<p>' + esc(GameUI.deckNote(pickStarter)) + '</p>' +
+        '<p class="hint"><b>' + GameUI.ALIGNMENT[d.colours[0]] + '.</b> ' + esc(Help.alignment(d.colours[0])) + '</p>' +
         '<p class="hint">' + E.deckSize(d.list) + ' cards, ' + units + ' of them units. Its best cards: ' + best.map(function (e) { return esc(E.CARDS[e[0]].name) + ' (' + RNAME[Rarity.of(e[0])].toLowerCase() + ')'; }).join(', ') + '.</p>' +
         '<button type="button" class="btn primary big" ' + act('takeStarter', pickStarter) + '>Take ' + esc(d.name) + '</button></div>' +
       '<p class="hint">New to the game? <button type="button" class="linkbtn" ' + act('tutorial') + '>Learn how to play</button> first.</p>' +

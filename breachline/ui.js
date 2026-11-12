@@ -9,6 +9,9 @@
   // The test table: no bot, you play whichever side is acting from that side's hand, and both sides always have mana.
   // HUMAN and BOT follow whoever is acting, so the board marks that side's units as yours. Picked cards go to seat 0 or 1.
   var sandbox = false, testSide = 0, testKind = '', TEST_MANA = 99;
+  // The test table's top side is played by you or by the scripted bot.
+  var testBot = false;
+  function bothHands() { return sandbox && !testBot; }
   // The test table's card-type filter: label and which cards it keeps.
   var TEST_KINDS = [
     ['', 'All', function () { return true; }],
@@ -24,13 +27,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var COLOUR = { W: 'white', R: 'red', U: 'blue', B: 'black', G: 'green' };
   var ALIGNMENT = { W: 'Vigil', R: 'Fervor', U: 'Gnosis', B: 'Dominion', G: 'Genesis', N: 'Neutral' };
-  var DECK_NOTES = {
-    white: 'Healing, protecting allies and standing together.',
-    red: 'High attack, direct damage, speed, giants and fliers.',
-    blue: 'Ranged attacks, moving units, drawing cards and decoys.',
-    black: 'Life drain, destroying units and returning them from the discard pile.',
-    green: 'Very large units, units that grow, extra lands and recovering health.'
-  };
+  // Each deck's one-line plan and each alignment's strengths are in help.js.
   var DECK_ART = { white: 'lancer', red: 'warchief', blue: 'conjurer', black: 'harvester', green: 'land_g' };
   // On wide screens the close-up has its own column, and elsewhere it floats over the map. Same query as the CSS.
   var DOCKED = window.matchMedia('(min-width: 1280px) and (min-aspect-ratio: 3/2)');
@@ -199,8 +196,10 @@
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
   // The board rebuilds on every render, so hold every image decoded up front to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
-  var noArt = {}, artRedraw = null;
-  var preloaded = Object.keys(ART).map(function (id) {
+  // They wait for the first screen to finish loading, so a first visit isn't held up by every painting in the game.
+  var noArt = {}, artRedraw = null, preloaded = [];
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { preloaded = Object.keys(ART).map(function (id) {
     var im = new Image();
     im.onerror = function () {
       noArt[id] = true;
@@ -221,7 +220,7 @@
   // The tile effect paintings too, so a new effect shows at once rather than a frame later.
   Object.keys(TILE_NAMES).forEach(function (k) {
     ['tile-', 'border-', 'emblem-'].forEach(function (p) { var im = new Image(); im.src = 'art/web/ui/' + p + k + '.png'; preloaded.push(im); });
-  });
+  }); });
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
 
@@ -326,6 +325,7 @@
       if (waiting) cls.push('waiting');
       else if (u.owner === S.active && u.acted) cls.push('done');
       if (sel && sel.kind === 'unit' && sel.id === u.uid) cls.push('selected');
+      if (fanAt === u.uid) cls.push('fanned');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       // Conditions come first. Every label shows, kept small; the close-up note and the tile's label repeat them.
       var states = [], notes = d.keywords.slice();
@@ -335,6 +335,7 @@
       if (u.held >= S.turn) states.push('Held');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
+      if (u.watching) states.push('Watching');
       if (u.lit && d.keywords.indexOf('Lit') < 0) states.push('Lit');
       if (u.stasis >= S.turn) states.push('Between moments');
       if (u.sapped >= S.turn) states.push('Restrained');
@@ -369,7 +370,7 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
     u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
@@ -544,7 +545,7 @@
     if (S.winner !== null) return '<span class="turn">Game over</span>';
     if (S.phase === 'opening') return '<span class="turn">Opening hands</span>';
     var step = function (name, label) { return '<span class="step' + (S.phase === name ? ' on' : '') + '">' + label + '</span>'; };
-    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
+    return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (bothHands() ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
       '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>';
   }
 
@@ -579,9 +580,9 @@
   function announceTurn() {
     var key = S.winner === null && S.phase !== 'opening' ? S.active + ':' + S.turn : null;
     if (key && key !== lastTurn) {
-      if (lastTurn && S.active === BOT && !sandbox) Sfx.play('enemy-turn');
+      if (lastTurn && S.active === BOT && !bothHands()) Sfx.play('enemy-turn');
       $('turnBanner').className = S.active === HUMAN ? '' : 'enemy';
-      $('turnBanner').innerHTML = '<span>' + (sandbox ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
+      $('turnBanner').innerHTML = '<span>' + (bothHands() ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>';
     }
     lastTurn = key;
   }
@@ -593,7 +594,7 @@
   var FOE_PRESS = '<span class="press foe" aria-hidden="true">Enemy<br>turn</span>';
   function actionsHtml(moves) {
     var html = actionsInner(moves);
-    return S.winner === null && S.phase !== 'opening' && S.active === BOT && !sandbox ? html + FOE_PRESS : html;
+    return S.winner === null && S.phase !== 'opening' && S.active === BOT && !bothHands() ? html + FOE_PRESS : html;
   }
   function actionsInner(moves) {
     var you = S.players[HUMAN];
@@ -737,7 +738,7 @@
   function render() {
     if (sandbox) {
       S.players.forEach(function (p) { p.mana = TEST_MANA; });
-      if (S.winner === null) { HUMAN = actor(); BOT = 1 - HUMAN; }
+      if (S.winner === null && !testBot) { HUMAN = actor(); BOT = 1 - HUMAN; }
     }
     var moves = humanMoves(), marks = computeMarks(moves);
     $('app').classList.toggle('opening', S.phase === 'opening' && S.winner === null);
@@ -755,6 +756,7 @@
     var big = E.ROWS * E.COLS > 20, ratio = big ? E.ROWS / E.COLS / 1.45 : 0.72;
     $('app').classList.toggle('big', big);
     $('grid').style.setProperty('--grat', ratio.toFixed(3));
+    $('app').style.setProperty('--rc', (E.ROWS / E.COLS).toFixed(3));
     $('grid').parentNode.style.setProperty('--bwr', (big ? 1 / ratio : 1.81).toFixed(3));
     $('actions').innerHTML = actionsHtml(moves);
     var hand = S.players[HUMAN].hand;
@@ -785,18 +787,22 @@
 
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
 
-  // A spell aimed at a tile plays its animation first, then the move resolves and the board redraws.
+  // A spell or instant aimed at a tile, a unit or a summoner is thrown there first, then the move resolves and the board
+  // redraws. A tile spell with its own tile effect looks like that effect; any other takes the look of its element.
+  var LOOK_OF = { fire: 'burn', ice: 'frost', lightning: 'charge', vigil: 'holy', gnosis: 'arcane', dominion: 'blight', genesis: 'thorns' };
   var casting = false;
   function apply(m) {
     if (casting) return;
     if (S.tutorial && actor() === HUMAN && !Tutorial.allows(m)) { Sfx.play('not-allowed', { gap: 120 }); return render(); }
-    // An instant aimed at a tile (a response with a tile and no unit target) animates like a cast spell.
-    var aimed = (m.type === 'cast' || m.type === 'respond' && m.target === undefined) && m.r !== undefined;
-    var who = actor(), inHand = aimed && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
-    var spell = inHand && E.CARDS[inHand.c], look = spell && spell.aim && (spell.aim.fx || spell.aim.tile);
-    if (look && SpellFX.enabled()) {
+    var who = actor(), thrown = (m.type === 'cast' || m.type === 'respond') && (m.r !== undefined || m.target !== undefined || m.summoner !== undefined);
+    var inHand = thrown && S.players[who].hand.filter(function (i) { return i.id === m.card; })[0];
+    var spell = inHand && E.CARDS[inHand.c], el = spell && Polish.element(spell);
+    var look = spell && (spell.type === 'spell' || spell.type === 'instant') && (spell.aim && (spell.aim.fx || spell.aim.tile) || LOOK_OF[el] || 'arcane');
+    var unit = m.target !== undefined ? S.units.filter(function (u) { return u.uid === m.target; })[0] : null;
+    var target = unit ? tileEl(unit.r, unit.c) : m.summoner !== undefined ? $(m.summoner === HUMAN ? 'youStrip' : 'themStrip') : m.r !== undefined ? tileEl(m.r, m.c) : null;
+    if (look && target && SpellFX.enabled()) {
       var from = who === HUMAN ? document.querySelector('#hand .card[data-card="' + m.card + '"]') : $('themStrip');
-      var reach = reachOf(spell, who, m.r, m.c);
+      var onTile = !unit && m.summoner === undefined, reach = onTile && spell.aim ? reachOf(spell, who, m.r, m.c) : [];
       if (who === BOT) announce(m);
       var before = S;
       casting = true;
@@ -804,17 +810,25 @@
       SpellFX.unaim(true);
       showReach();
       if (from && from.classList.contains('card')) from.classList.add('casting');
+      Sfx.play('card-play');
       SpellFX.cast({
-        kind: look, from: from || $('themStrip'), target: tileEl(m.r, m.c), wave: !!spell.aim.wave, volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
-        push: who === 0 ? -1 : 1,
+        kind: look, from: from || $('themStrip'), target: target, wave: !!(spell.aim && spell.aim.wave), volley: spell.id === 'cinderfall', shake: document.querySelector('.board'),
+        push: who === 0 ? -1 : 1, gentle: !!unit && unit.owner === who,
         reach: reach.map(function (p) { return tileEl(p[0], p[1]); }),
-        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } }
+        onLaunch: function () { if (from) { from.classList.remove('casting'); from.classList.add('spent'); } },
+        onStage: function (stage, ms) {
+          if (stage !== 'impact') return Sfx.spell(stage, el, ms / 1000);
+          // The spell's own sound lands with it; the board catches up a moment later.
+          var hit = Polish.castOf(spell, !!unit && unit.owner !== who);
+          if (hit) Sfx.play(hit);
+        }
       }).then(function () {
         casting = false;
         // A new game started while the spell was in the air: drop this move.
         if (S !== before) return;
+        Polish.thrown();
         resolve(m);
-        [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
+        if (onTile) [[m.r, m.c]].concat(reach).forEach(function (p) { var t = tileEl(p[0], p[1]); if (t && t.classList.contains('fx')) t.classList.add('bloom'); });
       });
       return;
     }
@@ -880,10 +894,10 @@
   }
 
   function schedule() {
-    if (sandbox || S.winner !== null || actor() !== BOT) return;
+    if (bothHands() || S.winner !== null || actor() !== BOT) return;
     var token = ++runToken;
     if (S.tutorial) playNext(token, function () { return Tutorial.enemyMove(S); });
-    else if (modelOn()) modelStep(token);
+    else if (modelOn() && !sandbox) modelStep(token);
     else playNext(token, botMove);
   }
 
@@ -1049,8 +1063,17 @@
   });
   $('grid').addEventListener('mouseleave', function () { SpellFX.unaim(); showReach(); });
 
+  // Clicking a unit's stacked shields fans them out and keeps them open through redraws; a second click stacks them again.
+  // It only reads the shields, so the click goes no further.
+  var fanAt = null;
   $('grid').addEventListener('click', function (e) {
     var t = e.target.closest('.tile');
+    if (t && e.target.closest('.chips.stack')) {
+      var fu = S.units.filter(function (x) { return x.r === +t.dataset.r && x.c === +t.dataset.c; })[0];
+      fanAt = fu && fanAt !== fu.uid ? fu.uid : null;
+      t.classList.toggle('fanned', fanAt !== null);
+      return;
+    }
     if (casting) return;
     SpellFX.unaim(true);
     if (t) clickTile(t);
@@ -1149,6 +1172,44 @@
   $('menu').addEventListener('click', function (e) { if (e.target.closest('[data-close]')) $('menu').close(); });
   $('peekBtn').addEventListener('click', function () { $('inspect').classList.add('open'); $('inspect').focus(); });
   $('inspect').addEventListener('click', closePeek);
+  // On a phone (phone.css), holding anything with a card behind it brings that card up large on the left until you let go.
+  // The tap that ends a hold does nothing else, and a finger that slides away first is not a hold.
+  var PHONE = window.matchMedia('(max-width: 820px) and (orientation: portrait), (max-height: 470px) and (orientation: landscape)');
+  var holdTimer = null, holdAt = null, holding = false, swallow = false, heldEl = document.createElement('div');
+  heldEl.className = 'held';
+  heldEl.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(heldEl);
+  function endHold() {
+    clearTimeout(holdTimer);
+    holdAt = null;
+    if (!holding) return;
+    holding = false;
+    swallow = true;
+    setTimeout(function () { swallow = false; }, 400);
+    heldEl.classList.remove('on');
+  }
+  $('app').addEventListener('pointerdown', function (e) {
+    var t = e.target.closest('[data-peek]');
+    // With Help on, a hold shows that thing's tip instead (help.js).
+    if (!PHONE.matches || !t || e.button > 0 || (Help.on() && Help.tipFor(e.target))) return;
+    holdAt = [e.clientX, e.clientY];
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(function () {
+      holding = true;
+      heldEl.innerHTML = '<div class="slot">' + frameHtml(E.CARDS[t.dataset.peek], { big: true }) + '</div>';
+      heldEl.classList.add('on');
+      fitCards(heldEl);
+    }, 380);
+  });
+  $('app').addEventListener('pointermove', function (e) {
+    if (holdAt && !holding && Math.abs(e.clientX - holdAt[0]) + Math.abs(e.clientY - holdAt[1]) > 14) { clearTimeout(holdTimer); holdAt = null; }
+  });
+  ['pointerup', 'pointercancel'].forEach(function (type) { document.addEventListener(type, endHold); });
+  document.addEventListener('click', function (e) { if (swallow) { swallow = false; e.preventDefault(); e.stopPropagation(); } }, true);
+  $('app').addEventListener('contextmenu', function (e) { if (PHONE.matches && e.target.closest('[data-peek]')) e.preventDefault(); });
+  // The phone's menu also holds the rules, which close with a tap.
+  $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
+  $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
 
   function deckHtml(d, role) {
@@ -1160,7 +1221,7 @@
       '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="nm">' + esc(d.name) + '</span>' +
       '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + (problems.length ? esc(problems[0]) : d.starter ? DECK_NOTES[d.id] : d.theme ? esc(d.note) : 'One of your decks.') + '</span></button>';
+      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
@@ -1169,6 +1230,8 @@
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
     $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
+    var mine = Decks.find(picks.mine), main = mine ? (mine.starter ? E.DECKS[mine.id].colours : E.deckColours(mine.list))[0] || 'N' : null;
+    $('myNote').innerHTML = main ? sym(main) + '<b>' + ALIGNMENT[main] + '.</b> ' + esc(Help.alignment(main)) : '';
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
@@ -1306,6 +1369,9 @@
   }
   function renderPicker() {
     var q = $('testSearch').value.trim().toLowerCase(), ORDER = 'WURBGN';
+    $('testOpp').innerHTML = [[false, 'You play both'], [true, 'Scripted bot']].map(function (o) {
+      return '<button type="button" class="step' + (testBot === o[0] ? ' on' : '') + '" data-bot="' + o[0] + '" aria-pressed="' + (testBot === o[0]) + '">' + o[1] + '</button>';
+    }).join('');
     $('testSides').innerHTML = [0, 1].map(function (pi) {
       return '<button type="button" class="step' + (testSide === pi ? ' on' : '') + '" data-side="' + pi + '" aria-pressed="' + (testSide === pi) + '">' +
         (pi === 0 ? 'You (bottom)' : 'Opponent (top)') + '</button>';
@@ -1338,8 +1404,18 @@
     testNote(names.length ? 'placed ' + names.join(', ') + ' for the opponent.' : 'the enemy half is full.');
   }
   $('testPanel').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-add], [data-side], [data-kind], [data-test]');
+    var b = e.target.closest('[data-add], [data-side], [data-kind], [data-test], [data-bot]');
     if (!b || !S) return;
+    if (b.dataset.test === 'close') return setDrawer(null);
+    if (b.dataset.bot) {
+      // With the bot on you keep the bottom side; it takes over the top, mid-turn if need be.
+      testBot = b.dataset.bot === 'true';
+      if (testBot) { HUMAN = 0; BOT = 1; sel = null; }
+      testNote(testBot ? 'the scripted bot plays the top side.' : 'you play both sides.');
+      renderPicker();
+      render();
+      return schedule();
+    }
     if (b.dataset.side) { testSide = +b.dataset.side; return renderPicker(); }
     if (b.dataset.kind !== undefined) { testKind = b.dataset.kind; return renderPicker(); }
     if (b.dataset.add) {
@@ -1361,7 +1437,7 @@
   }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
-    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return DECK_NOTES[k]; },
+    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return Help.deck({ id: k }); },
     artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
     showStart: showStart, playChapter: playChapter, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },

@@ -24,32 +24,32 @@ var Campaign = (function () {
         {
           id: 'ford', title: 'The ford', x: 16, y: 75,
           text: 'Cinder Clan raiders hold the ford. They took a vote on you before you arrived.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 11], ['goblin', 3], ['clanraiders', 3], ['raider', 3], ['berserker', 3], ['sellsword', 1], ['hex', 3], ['youngsummoner', 3]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 15], ['goblin', 3], ['clanraiders', 3], ['raider', 1], ['sellsword', 3], ['hex', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 2]] }
         },
         {
           id: 'forest', title: 'The closed road', x: 40, y: 81,
           text: 'The old road goes through the forest, or did. The Thornwardens have spent three generations making sure of it.',
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 11], ['sapling', 3], ['saboteur', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 3], ['youngsummoner', 3], ['reedcrown', 1]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['saboteur', 3], ['wayfinder', 3], ['owl', 3], ['youngsummoner', 3], ['goblinscout', 3], ['canopy', 1], ['springmelt', 3], ['reedbank', 1], ['stag', 2]] }
         },
         {
           id: 'pass', title: 'The pass', x: 58.5, y: 54,
           text: "The hill bands don't care what answered her. They care that you're carrying grain through their pass.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 10], ['goblin', 3], ['clanraiders', 3], ['raider', 3], ['sellsword', 3], ['warchief', 3], ['giant', 3], ['firebolt', 2]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3]] }
         },
         {
           id: 'gate', title: 'The lower gate', x: 30.5, y: 36,
           text: "The Conclave got here first. They've brought instruments.",
-          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 11], ['decoy', 3], ['conjurer', 3], ['scholar', 3], ['arcanist', 3], ['chorister', 3], ['displacement', 3], ['lampwright', 1]] }
+          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 15], ['conjurer', 3], ['scholar', 3], ['arcanist', 3], ['lampwright', 3], ['glimmer', 3], ['apprentice', 3], ['fieldscholar', 3], ['chorister', 1], ['sifting', 2], ['siegewalker', 1]] }
         },
         {
           id: 'field', title: 'The fallow field', x: 61, y: 26,
           text: 'Nobody has farmed the field below the shrine. Tonight, it stands up.',
-          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 10], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['raise', 3], ['sellsword', 3], ['colossus', 1], ['retainer', 1]] }
+          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 13], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['raise', 1], ['sellsword', 3], ['colossus', 3], ['retainer', 3], ['rats', 3], ['hour', 2]] }
         },
         {
           id: 'shrine', title: 'The shrine steps', x: 85, y: 19,
           text: 'Vashkar, Who Counts the Dead, is waiting on the shrine steps. He has already counted you.',
-          enemy: { name: 'Vashkar, Who Counts the Dead', colours: ['B'], list: [['land_b', 10], ['thrall', 3], ['harvester', 3], ['noble', 3], ['vashkar', 3], ['raise', 3], ['warrant', 3], ['firebolt', 2]] }
+          enemy: { name: 'Vashkar, Who Counts the Dead', colours: ['B'], list: [['land_b', 13], ['thrall', 3], ['harvester', 3], ['noble', 3], ['vashkar', 3], ['warrant', 3], ['rats', 3], ['colossus', 2], ['hour', 1], ['informant', 2], ['squire', 3], ['retainer', 1]] }
         }
       ]
     },
@@ -63,32 +63,32 @@ var Campaign = (function () {
         {
           id: 'ambrel', title: 'Ambrel', x: 86, y: 76,
           text: "Someone sold the survey's instruments on the docks before dawn. The buyers are still there, and they've grown attached.",
-          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 12], ['goblin', 3], ['raider', 3], ['coalback', 3], ['sellsword', 2], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 1]] }
+          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 16], ['goblin', 1], ['coalback', 2], ['sellsword', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 2], ['wildfire', 1]] }
         },
         {
           id: 'waterworks', title: 'The waterworks', x: 62, y: 62,
           text: "The Thornwardens have opened every sluice. The lower ward is flooding, and they're waiting to see who comes.",
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 12], ['sapling', 3], ['saboteur', 3], ['reedcrown', 3], ['wayfinder', 3], ['owl', 1], ['shifting', 3], ['raincup', 2]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 16], ['sapling', 3], ['saboteur', 3], ['reedcrown', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 2], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 1]] }
         },
         {
           id: 'farms', title: 'The hill farms', x: 38, y: 74,
           text: 'The new channels watered the hill farms for the first time in years. The Ashen Court has come to collect for the water.',
-          enemy: { name: 'Ashen Court collectors', colours: ['B'], list: [['land_b', 11], ['thrall', 3], ['harvester', 3], ['noble', 2], ['slateprowler', 2], ['sellsword', 3], ['raise', 3], ['youngsummoner', 3]] }
+          enemy: { name: 'Ashen Court collectors', colours: ['B'], list: [['land_b', 15], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['sellsword', 3], ['raise', 1], ['youngsummoner', 1], ['rats', 3], ['gravesoil', 1], ['informant', 3], ['squire', 1]] }
         },
         {
           id: 'checkpoint', title: 'The checkpoint', x: 17, y: 52,
           text: "The Oath has built a gate across the only road into the high country. They've heard what the Conclave studies.",
-          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 11], ['spearman', 3], ['cub', 3], ['carrier', 3], ['knight', 3], ['sentinel', 3], ['lancer', 2], ['cleric', 1], ['shield', 1]] }
+          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 15], ['spearman', 3], ['cub', 3], ['carrier', 3], ['knight', 1], ['sentinel', 3], ['cleric', 3], ['shield', 3], ['roadsquire', 1], ['chaplain', 3], ['acolyte', 2]] }
         },
         {
           id: 'canal', title: 'The dry canal', x: 40, y: 30,
           text: 'The canal has been dry for a hundred and fifty years. The Gravebound have been using it as a road for nearly as long.',
-          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 10], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['raise', 3], ['warrant', 2], ['youngsummoner', 3]] }
+          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 13], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['warrant', 3], ['youngsummoner', 3], ['rats', 3], ['gravesoil', 2], ['retainer', 2], ['informant', 2]] }
         },
         {
           id: 'observatory', title: 'The silent observatory', x: 15, y: 18,
           text: 'Saint Maren of the Long Watch is sitting at the observatory door. She believes some doors stay shut for a reason.',
-          enemy: { name: 'Saint Maren of the Long Watch', colours: ['W'], list: [['land_w', 10], ['warden', 1], ['lancer', 3], ['knight', 3], ['sentinel', 3], ['cleric', 3], ['stillflame', 1], ['shield', 2], ['spearman', 3], ['maren', 1]] }
+          enemy: { name: 'Saint Maren of the Long Watch', colours: ['W'], list: [['land_w', 13], ['cleric', 2], ['shield', 3], ['spearman', 3], ['maren', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['shieldbearer', 3], ['pilgrim', 3], ['dawnsails', 1]] }
         }
       ]
     },
@@ -102,32 +102,32 @@ var Campaign = (function () {
         {
           id: 'village', title: 'The tithe village', x: 12, y: 80,
           text: 'The tithe village has hired Cinder Clan raiders to say no on its behalf.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 12], ['goblin', 3], ['clanraiders', 3], ['raider', 3], ['berserker', 2], ['coalback', 3], ['youngsummoner', 3], ['hex', 1]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 1]] }
         },
         {
           id: 'barrows', title: 'The barrows', x: 50, y: 88,
           text: "The Gravebound tend these barrows, and they don't want them counted.",
-          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 11], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['raise', 3], ['youngsummoner', 3], ['colossus', 1]] }
+          enemy: { name: 'The Gravebound', colours: ['B'], list: [['land_b', 15], ['thrall', 3], ['harvester', 3], ['noble', 3], ['slateprowler', 3], ['youngsummoner', 3], ['rats', 3], ['informant', 3], ['squire', 2], ['retainer', 2]] }
         },
         {
           id: 'causeway', title: 'The salt causeway', x: 87, y: 68,
           text: 'The Thornwardens have cut the causeway in three places. The marsh was theirs first.',
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 12], ['sapling', 3], ['saboteur', 3], ['reedcrown', 3], ['owl', 1], ['wayfinder', 3], ['shifting', 3], ['raincup', 2]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 16], ['sapling', 3], ['saboteur', 3], ['reedcrown', 1], ['owl', 3], ['wayfinder', 3], ['goblinscout', 3], ['mosshorn', 2], ['springmelt', 3], ['reedbank', 2], ['stag', 1]] }
         },
         {
           id: 'orchard', title: 'The bone orchard', x: 78, y: 24,
           text: "Conclave scholars are taking cuttings from the bone orchard. They haven't asked.",
-          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 11], ['decoy', 3], ['conjurer', 3], ['scholar', 3], ['arcanist', 3], ['lampwright', 3], ['displacement', 2], ['mending', 2]] }
+          enemy: { name: 'The Lantern Conclave', colours: ['U'], list: [['land_u', 15], ['conjurer', 3], ['scholar', 2], ['arcanist', 3], ['lampwright', 3], ['displacement', 3], ['wovenward', 1], ['glimmer', 3], ['phantasm', 1], ['sifting', 3], ['apprentice', 3]] }
         },
         {
           id: 'town', title: 'The silent town', x: 34, y: 18,
           text: 'Someone has lit a lamp in the silent town. The Still Flame has come to keep it lit.',
-          enemy: { name: 'The Still Flame', colours: ['W'], list: [['land_w', 10], ['carrier', 3], ['cleric', 3], ['sentinel', 3], ['knight', 3], ['stillflame', 3], ['shelter', 2], ['maren', 2], ['shield', 1]] }
+          enemy: { name: 'The Still Flame', colours: ['W'], list: [['land_w', 13], ['carrier', 1], ['cleric', 3], ['sentinel', 3], ['knight', 2], ['maren', 3], ['shield', 3], ['acolyte', 3], ['cub', 3], ['spearman', 3], ['chaplain', 2], ['lancer', 1]] }
         },
         {
           id: 'court', title: 'The court of still water', x: 50, y: 50,
           text: "An elder dragon has slept on the island for longer than anyone has kept records. It doesn't recognise the Court.",
-          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 11], ['dragon', 2], ['goblin', 3], ['coalback', 3], ['raider', 3], ['clanraiders', 3], ['youngsummoner', 1], ['drake', 3], ['giant', 1]] }
+          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 15], ['dragon', 3], ['goblin', 1], ['coalback', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
         }
       ]
     },
@@ -141,32 +141,32 @@ var Campaign = (function () {
         {
           id: 'moot', title: 'The moot', x: 14, y: 22,
           text: 'Not every band voted the same way. The ones who lost would like a rematch.',
-          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 12], ['goblin', 3], ['clanraiders', 3], ['raider', 3], ['sellsword', 2], ['coalback', 3], ['youngsummoner', 3], ['hex', 1]] }
+          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 1]] }
         },
         {
           id: 'market', title: 'The moving market', x: 44, y: 15,
           text: 'The market has new guards with brass on their gloves. Someone paid the Artificers well.',
-          enemy: { name: 'The Artificers', colours: ['U'], list: [['land_u', 11], ['chorister', 3], ['lampwright', 3], ['conjurer', 3], ['scholar', 3], ['mending', 3], ['decoy', 3], ['glyph', 1]] }
+          enemy: { name: 'The Artificers', colours: ['U'], list: [['land_u', 15], ['lampwright', 3], ['conjurer', 3], ['scholar', 2], ['wovenward', 3], ['decoy', 2], ['glyph', 3], ['corewright', 3], ['tideglass', 1], ['sifting', 3], ['apprentice', 1], ['siegewalker', 1]] }
         },
         {
           id: 'saltpan', title: 'The salt pan', x: 76, y: 27,
           text: 'The salt was free last year. The Ashen Court has put a price on it.',
-          enemy: { name: 'The Ashen Court', colours: ['B'], list: [['land_b', 10], ['thrall', 3], ['noble', 3], ['harvester', 3], ['slateprowler', 3], ['sellsword', 3], ['raise', 3], ['warrant', 2]] }
+          enemy: { name: 'The Ashen Court', colours: ['B'], list: [['land_b', 13], ['thrall', 3], ['noble', 3], ['harvester', 3], ['slateprowler', 3], ['sellsword', 3], ['raise', 1], ['warrant', 3], ['rats', 3], ['gravesoil', 3], ['retainer', 1], ['informant', 1]] }
         },
         {
           id: 'gorge', title: 'The red gorge', x: 47, y: 46,
           text: "The herd crosses the gorge every autumn. It doesn't stop for bridges, or for you.",
-          enemy: { name: 'The Elder Herd', colours: ['G'], list: [['land_g', 11], ['reedcrown', 3], ['sapling', 3], ['owl', 3], ['wayfinder', 3], ['saboteur', 3], ['marble', 2], ['shifting', 2]] }
+          enemy: { name: 'The Elder Herd', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['owl', 3], ['wayfinder', 2], ['saboteur', 3], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 3], ['mosshorn', 3], ['stag', 1], ['reedcrown', 1]] }
         },
         {
           id: 'toll', title: 'The toll wall', x: 22, y: 62,
           text: 'The new kingdom built its wall with Oath money. Oath knights stand on it.',
-          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 11], ['spearman', 3], ['cub', 3], ['carrier', 3], ['knight', 3], ['sentinel', 3], ['lancer', 2], ['cleric', 1], ['shield', 1]] }
+          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 15], ['spearman', 3], ['cub', 3], ['sentinel', 3], ['cleric', 3], ['shield', 3], ['chaplain', 3], ['acolyte', 3], ['warden', 1], ['shieldbearer', 3]] }
         },
         {
           id: 'seat', title: 'The high seat', x: 70, y: 80,
           text: 'The claimant sits on the high seat in borrowed armour. He has promised everyone something.',
-          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 8], ['land_u', 2], ['knight', 3], ['lancer', 1], ['cleric', 1], ['arcanist', 3], ['chorister', 3], ['shield', 1], ['glyph', 1], ['banner', 1], ['spearman', 3], ['cub', 3]] }
+          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 10], ['land_u', 3], ['knight', 2], ['cleric', 3], ['shield', 3], ['glyph', 2], ['banner', 2], ['spearman', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['sifting', 2], ['lancer', 1]] }
         }
       ]
     },
@@ -180,32 +180,32 @@ var Campaign = (function () {
         {
           id: 'grove', title: 'The mother grove', x: 84, y: 16,
           text: "Sellswords have camped in the mother grove for the firewood. They've started on the old trees.",
-          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 11], ['sellsword', 3], ['goblin', 3], ['raider', 3], ['berserker', 2], ['coalback', 3], ['youngsummoner', 2], ['hex', 3]] }
+          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 15], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
         },
         {
           id: 'reedways', title: 'The reedways', x: 58, y: 24,
           text: 'Conclave surveyors are mapping the reedways. Everything they map, someone builds on.',
-          enemy: { name: 'Conclave surveyors', colours: ['U'], list: [['land_u', 11], ['conjurer', 3], ['scholar', 3], ['decoy', 3], ['arcanist', 3], ['lampwright', 3], ['displacement', 3], ['mending', 1]] }
+          enemy: { name: 'Conclave surveyors', colours: ['U'], list: [['land_u', 15], ['conjurer', 3], ['scholar', 3], ['decoy', 3], ['arcanist', 3], ['lampwright', 3], ['displacement', 3], ['wovenward', 3], ['glimmer', 3], ['phantasm', 1]] }
         },
         {
           id: 'crossing', title: "The herd's crossing", x: 70, y: 52,
           text: "The Warhorde follows the herd for meat. This year they've brought giants.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 10], ['goblin', 3], ['raider', 3], ['warchief', 3], ['giant', 3], ['sellsword', 3], ['berserker', 3], ['firebolt', 2]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['anoint', 3], ['clanraiders', 3]] }
         },
         {
           id: 'cutline', title: 'The cut line', x: 39.2, y: 41.3,
           text: "The timber goes to the Oath's new fortress. The Oath sent knights to guard it.",
-          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 11], ['knight', 3], ['sentinel', 3], ['lancer', 2], ['spearman', 3], ['cub', 3], ['cleric', 3], ['banner', 1], ['shield', 1]] }
+          enemy: { name: 'The Sunmane Oath', colours: ['W'], list: [['land_w', 15], ['spearman', 3], ['cub', 3], ['cleric', 3], ['banner', 3], ['shield', 3], ['chaplain', 3], ['acolyte', 3], ['shieldbearer', 3], ['pilgrim', 1]] }
         },
         {
           id: 'dam', title: 'The dam', x: 48, y: 76,
           text: "The dam is the finest thing anyone has built in a century. The Artificers won't let you near it.",
-          enemy: { name: 'The Artificers', colours: ['U'], list: [['land_u', 10], ['chorister', 3], ['lampwright', 3], ['arcanist', 3], ['conjurer', 3], ['glyph', 3], ['displacement', 3], ['decoy', 2]] }
+          enemy: { name: 'The Artificers', colours: ['U'], list: [['land_u', 13], ['chorister', 2], ['lampwright', 3], ['arcanist', 3], ['conjurer', 3], ['glyph', 3], ['displacement', 3], ['decoy', 1], ['glimmer', 3], ['phantasm', 3], ['sifting', 3]] }
         },
         {
           id: 'city', title: 'The green city', x: 16, y: 72,
           text: 'The Ashen Court has claimed the old city below the dam. It means to drain the ground and build.',
-          enemy: { name: 'The Ashen Court', colours: ['B'], list: [['land_b', 8], ['land_r', 2], ['vashkar', 3], ['noble', 3], ['thrall', 3], ['slateprowler', 3], ['sellsword', 3], ['firebolt', 3], ['raider', 2]] }
+          enemy: { name: 'The Ashen Court', colours: ['B'], list: [['land_b', 10], ['land_r', 3], ['vashkar', 3], ['noble', 3], ['thrall', 3], ['slateprowler', 3], ['sellsword', 3], ['firebolt', 2], ['raider', 3], ['goblin', 3], ['hex', 3], ['giant', 1]] }
         }
       ]
     }

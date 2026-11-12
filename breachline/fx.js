@@ -233,7 +233,9 @@ var SpellFX = (function () {
   var PROJECTILES = { thorns: 'art/web/fx/projectile-thorns.png' };
   var sheets = {}, missiles = {};
   function preload(list, into) { Object.keys(list).forEach(function (k) { var im = new Image(); im.onload = function () { into[k] = im; }; im.src = list[k]; }); }
-  preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles);
+  // After the first screen has loaded, so a first visit isn't held up by them.
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { preload(IMPACT_SHEETS, sheets); preload(PROJECTILES, missiles); });
   // Recoloured copies of painted sheets, for a spell that borrows another family's look: each pixel's brightness is
   // repainted along a ramp of colours, darkest first, keeping the sheet's own transparency.
   var TINTS = {
@@ -358,7 +360,9 @@ var SpellFX = (function () {
     blight: { family: 'blight', core: '#e2ccff', glow: '#8a5bb5', deep: '#5a2f80', smoke: '#140a1c', size: 11 },
     holy: { family: 'holy', core: '#fffaf0', glow: '#ffd77a', deep: '#ffb53d', smoke: '#fff0c8', size: 11 },
     // Scatter the line: the storm and frost bursts turned scarlet and amber, with a gust that drives the row back.
-    gale: { family: 'gale-storm', also: 'gale-frost', core: '#fff0e0', glow: '#ff5a3c', deep: '#d01e3a', smoke: '#2a0e12', size: 11 }
+    gale: { family: 'gale-storm', also: 'gale-frost', core: '#fff0e0', glow: '#ff5a3c', deep: '#d01e3a', smoke: '#2a0e12', size: 11 },
+    // Gnosis has no painted sheet: a cold sea-blue light with a turning sigil, that lands in rings.
+    arcane: { core: '#e8ffff', glow: '#3fd6e0', deep: '#1a7fb8', smoke: '#06222c', size: 11 }
   };
   // The painted sheet for a look, and its second sheet layered a little smaller when it has one.
   function paint(L, b, scale, quick) {
@@ -388,6 +392,9 @@ var SpellFX = (function () {
       } else if (kind === 'gale') {
         spawn({ kind: 'spark', x: x, y: y, vx: rnd(-140, 140), vy: rnd(-140, 140), size: 1.5, col: Math.random() < .5 ? '#ffd9a0' : L.glow, life: rnd(.12, .25), drag: 4 });
         if (Math.random() < .35) spawn({ kind: 'shard', x: x + rnd(-4, 4), y: y + rnd(-4, 4), vx: rnd(-30, 30), vy: rnd(-10, 30), size: rnd(2, 3.5), col: '#ffb36b', life: rnd(.3, .5), grav: 60 });
+      } else if (kind === 'arcane') {
+        spawn({ kind: 'glow', x: x + rnd(-5, 5), y: y + rnd(-5, 5), vx: rnd(-20, 20), vy: rnd(-20, 20), size: rnd(4, 8), col: Math.random() < .5 ? L.glow : L.deep, life: rnd(.3, .5), drag: 2 });
+        if (Math.random() < .3) spawn({ kind: 'spark', x: x, y: y, vx: rnd(-70, 70), vy: rnd(-70, 70), size: 1.3, col: '#ffffff', life: rnd(.15, .3), drag: 3 });
       } else if (kind === 'holy') spawn({ kind: 'glow', x: x + rnd(-6, 6), y: y + rnd(-6, 6), vx: rnd(-15, 15), vy: rnd(-25, 5), size: rnd(3, 6), col: Math.random() < .5 ? L.glow : '#ffffff', life: rnd(.4, .8), drag: 2 });
     }
   }
@@ -410,9 +417,10 @@ var SpellFX = (function () {
 
   // The throw: a high lob, shown as height above a shadow sliding across the table, so it reads as heavy.
   // o (optional): lift scales the arc's height, size the projectile, pace its flight time.
+  function flightMs(src, dst, pace) { return (420 + Math.hypot(dst.x - src.x, dst.y - src.y) * 0.5) * (pace || 1); }
   function flight(src, dst, kind, o) {
     o = o || {};
-    var L = LOOK[kind], dist = Math.hypot(dst.x - src.x, dst.y - src.y), ms = (420 + dist * 0.5) * (o.pace || 1), H = (50 + dist * 0.28) * (o.lift || 1), sc = o.size || 1;
+    var L = LOOK[kind], dist = Math.hypot(dst.x - src.x, dst.y - src.y), ms = flightMs(src, dst, o.pace), H = (50 + dist * 0.28) * (o.lift || 1), sc = o.size || 1;
     return new Promise(function (ok) {
       actor({ update: function (dt) {
         this.t += dt * 1000;
@@ -437,6 +445,11 @@ var SpellFX = (function () {
         if (kind === 'blight') { ctx.fillStyle = '#140a1c'; ctx.beginPath(); ctx.arc(x, y, s * 0.75, 0, 7); ctx.fill(); }
         if (kind === 'thorns' && missiles.thorns) { var m = s * 4.4; ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 110); ctx.drawImage(missiles.thorns, -m / 2, -m / 2, m, m); ctx.restore(); }
         else if (kind === 'thorns') bramble(x, y, s * 1.1, this.t / 110);
+        if (kind === 'arcane') {
+          ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 240); ctx.strokeStyle = 'rgba(220,255,255,.85)'; ctx.lineWidth = 1.3;
+          ctx.strokeRect(-s * 0.9, -s * 0.9, s * 1.8, s * 1.8); ctx.rotate(Math.PI / 4); ctx.strokeRect(-s * 0.9, -s * 0.9, s * 1.8, s * 1.8);
+          ctx.restore();
+        }
         if (kind === 'frost') {
           ctx.save(); ctx.translate(x, y); ctx.rotate(this.t / 160); ctx.strokeStyle = 'rgba(255,255,255,.9)'; ctx.lineWidth = 1.4;
           for (var i = 0; i < 3; i++) { ctx.rotate(Math.PI / 3); ctx.beginPath(); ctx.moveTo(-s, 0); ctx.lineTo(s, 0); ctx.stroke(); }
@@ -593,10 +606,20 @@ var SpellFX = (function () {
       burst(x, y, 30, [140, 460], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffd9a0' : L.glow, life: rnd(.2, .45), drag: 3 }; });
       burst(x, y, 16, [100, 300], function () { return { kind: 'shard', size: rnd(2.5, 5), col: Math.random() < .5 ? '#ffc58a' : '#ff8a5c', life: rnd(.4, .7), grav: 420, drag: 1.4 }; });
       gust(b, L);
+    } else if (kind === 'arcane') {
+      ring(x, y, 4, b.w * 0.6, L.glow, 700, 3);
+      burst(x, y, 28, [60, 240], function () { return { kind: 'glow', size: rnd(3, 6), col: Math.random() < .5 ? L.glow : '#ffffff', life: rnd(.5, .9), drag: 2.5 }; });
+      burst(x, y, 24, [140, 420], function () { return { kind: 'spark', size: rnd(1.2, 2), col: Math.random() < .5 ? '#ffffff' : L.glow, life: rnd(.2, .4), drag: 3 }; });
     } else if (kind === 'holy') {
       pillar(b, 900);
       burst(x, y, 30, [40, 160], function () { return { kind: 'glow', size: rnd(3, 6), col: Math.random() < .5 ? L.glow : '#ffffff', life: rnd(.8, 1.4), grav: -70, drag: 1.5 }; });
     }
+  }
+  // A spell on one of the caster's own: it settles rather than strikes, with no stop or shake.
+  function bless(kind, b) {
+    var L = LOOK[kind];
+    flash(b.x, b.y, b.w * 0.5, L.glow, 320); ring(b.x, b.y, 6, b.w * 0.6, L.core, 480, 4);
+    burst(b.x, b.y, 22, [20, 90], function () { return { kind: 'glow', size: rnd(3, 6), col: Math.random() < .5 ? L.glow : L.core, life: rnd(.6, 1.1), grav: -90, drag: 1.5 }; });
   }
   // The spell carries on from where it landed to each other tile it affects.
   function travel(from, to, kind, ms) {
@@ -644,15 +667,18 @@ var SpellFX = (function () {
     });
   }
 
-  // Plays a spell aimed at a tile. o: { kind: tile effect, from: element it's thrown from, target: tile element,
-  // reach: other tile elements it reaches, wave: true for Cinderwake, shake: element to shake, push: -1 or 1, the screen direction
-  // enemies are driven, onLaunch: called as it leaves the source }.
+  // Plays a thrown spell. o: { kind: its look, from: element it's thrown from, target: the tile, unit or summoner plate it's
+  // aimed at, reach: other tile elements it reaches, wave: true for Cinderwake, shake: element to shake, push: -1 or 1, the
+  // screen direction enemies are driven, gentle: true when it lands on the caster's own, onLaunch: called as it leaves the
+  // source, onStage(stage, ms): called as it starts to charge, launches, starts to fly (with the charge's and the
+  // flight's length) and hits, for the sound }.
   // Resolves when the animation is done, so the caller can apply the move. Animation frames stop while the page is hidden,
   // so it also gives up after a few seconds rather than hold the game.
+  var CHARGE = 600;
   function cast(o) { return Promise.race([play(o), new Promise(function (ok) { setTimeout(ok, 7000); })]); }
   // Cinderfall: a volley thrown from the card. The heavy shot goes to the target and a lighter one to each other
   // tile it reaches; with few of those, stray cinders rain round the target so it always reads as a volley.
-  function volley(src, o) {
+  function volley(src, o, stage) {
     var dst = centre(o.target), shots = [{ to: dst, hit: 'main' }];
     (o.reach || []).filter(Boolean).forEach(function (el) { shots.push({ to: centre(el), hit: 'reach' }); });
     while (shots.length < 4) shots.push({ to: { x: dst.x + rnd(-0.32, 0.32) * dst.w, y: dst.y + rnd(-0.3, 0.3) * dst.h, w: dst.w * 0.5, h: dst.h * 0.5 }, hit: 'cinder' });
@@ -660,7 +686,7 @@ var SpellFX = (function () {
       var from = { x: src.x + (i % 2 ? 1 : -1) * Math.ceil(i / 2) * 14, y: src.y };
       var how = s.hit === 'main' ? { lift: 1.15 } : { lift: rnd(0.65, 1.35), size: s.hit === 'reach' ? 0.8 : 0.6, pace: rnd(0.85, 1.05) };
       return wait(i * 95).then(function () { return flight(from, s.to, o.kind, how); }).then(function () {
-        if (s.hit === 'main') impact(o.kind, s.to); else land(o.kind, s.to, s.hit === 'cinder');
+        if (s.hit === 'main') { stage('impact'); impact(o.kind, s.to); } else land(o.kind, s.to, s.hit === 'cinder');
       });
     }));
   }
@@ -668,13 +694,19 @@ var SpellFX = (function () {
     if (reduced || !LOOK[o.kind] || !o.target) return;
     shakeEl = o.shake || null;
     push = o.push || -1;
-    var src = origin(o.from);
-    gather(src, o.kind, 300);
-    await wait(300);
+    var src = origin(o.from), stage = function (name, ms) { try { if (o.onStage) o.onStage(name, ms); } catch (e) {} };
+    // The charge is long enough to hear the air drawn into it.
+    gather(src, o.kind, CHARGE);
+    stage('charge', CHARGE);
+    await wait(CHARGE);
     if (o.onLaunch) o.onLaunch();
-    if (o.volley) { await volley(src, o); await wait(180); return; }
+    stage('launch');
+    stage('flight', flightMs(src, centre(o.target)));
+    if (o.volley) { await volley(src, o, stage); await wait(180); return; }
     await flight(src, centre(o.target), o.kind);
     var dst = centre(o.target);
+    stage('impact');
+    if (o.gentle) { bless(o.kind, dst); await wait(320); return; }
     impact(o.kind, dst);
     var reach = (o.reach || []).filter(Boolean);
     // A gale spreads outward from where it lands, nearest tiles first.

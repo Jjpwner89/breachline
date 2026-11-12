@@ -243,7 +243,7 @@ Added on 2026-11-09, after checking the built cards against the new mechanics.
 | # | Card | Was | Becomes | Why |
 | --- | --- | --- | --- | --- |
 | 82 | Gravebound thrall | 2 / 2, no ability | 1 / 1. Loyal: +1 / +1 | The thralls that Grave soil and Gravecaller summon get stronger together |
-| 83 | Young summoner | 2 / 3, no ability | 1 / 3. Errant. Ability: summon a Camp follower on a random tile in your back row | An inexperienced summoner, and the errant summoner in place of the cut Hedge summoner. It already has art |
+| 83 | Young summoner | 2 / 3, no ability | 1 / 3. Errant. When summoned: summon a Camp follower on a random tile in your back row | An inexperienced summoner, and the errant summoner in place of the cut Hedge summoner. It already has art. It was an ability usable every turn until 2026-11-11, which made it the strongest card for its cost |
 | 84 | Slateprowler | 3 / 3, Hunt | 3 / 3, Hunt and Ambush | A stalking creature, and Dominion's second ambusher |
 | 85 | Thornwarden saboteur | 2 / 3, Regrow | 2 / 3, Ambush | Its name says it sneaks in. Ambush replaces Regrow |
 | 86 | Cinderfall | 3 damage to an enemy unit and 1 to each enemy next to it | Aim at a tile: 3 damage to a unit there and 1 to each enemy next to it, and the tile burns for 2 turns | Red's area spell joins the fire theme |
@@ -324,7 +324,7 @@ Approved after the 2026-11-10 balance review. Starter decks won between 38% and 
 | Card or deck | Was | Becomes | Why |
 | --- | --- | --- | --- |
 | Elder Herd bull | 6 / 9 | 6 / 8 | Green won 73% as a starter, and won more than any other colour in random decks |
-| Walking sapling | 1 / 3 | 1 / 2, so it reaches 4 / 8 | Same |
+| Walking sapling | 1 / 3 | 1 / 2, so it reaches 4 / 8. Since 2026-11-11 it grows only twice, to 3 / 6 | Same |
 | Bronze-harness alderkin | 4 / 7 | 4 / 6 | A plain 4-cost unit that won 69% of the games it was played in |
 | Death warrant | 5 mana | 4 mana | Black's weakest card, winning 37% of the games it was played in |
 | Oath of the Sunmane starter | 2 Water carrier, Dawnsails over the harvest | Pride lioness, Pride matriarch, Oath outrider | The starter predated the newer Sunmane cards. White's cards were the strongest in random decks while its starter was the weakest |
@@ -423,7 +423,7 @@ The aim is at least three cards for each keyword that's a core capability. Built
 | Veiled | Can't be attacked or targeted by enemy cards until it attacks | Veil adept, plus #154 Halfshade lynx | Built |
 | Armed | +1 attack and +1 health while it carries equipment | Cinderline veteran, plus #143 Field-plate artificer and #177 Buckling recruit | Built. Armed isn't tied to a colour |
 | Decoy | Adjacent enemies must attack it first; removed after one hit | Illusory decoy, Conclave phantasm, plus #144 Glimmer double | Built. The spell places a decoy that lasts until the start of your next turn |
-| Errant | The Young summoner's Camp follower appears on a random tile of your back row | Young summoner | Unchanged. It already summons a creature: "land" in the old wording meant where the follower appears |
+| Errant | The Young summoner's Camp follower appears on a random tile of your back row | Young summoner | Unchanged. It already summons a creature: "land" in the old wording meant where the follower appears. Since 2026-11-11 it happens once, when the summoner is summoned |
 | Carrion | Permanently +1 attack whenever another unit dies, yours or the enemy's, up to +3 | Barrow colossus, Porcelain-visored retainer, plus #151 Mortuary priest, #152 Hostess of the late hour and #181 Ossuary engine | Built. It replaces Gathered and Sworn, and you chose the name |
 
 ## Proposals: hitting the summoner, area spells, control and stasis

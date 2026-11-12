@@ -35,7 +35,9 @@ var Polish = (function () {
 
   // Painted effects: each sheet is six frames, three across and two down, played over the spot at about 16 frames a second.
   var SHEETS = { slash: 1, pierce: 0, crush: 0, death: 0, summon: 1, heal: 1, 'rare-burst': 1, 'legendary-burst': 1 };
-  Object.keys(SHEETS).forEach(function (k) { var im = new Image(); im.src = 'art/web/fx/' + k + '.png'; });
+  // Loaded after the first screen, so a first visit isn't held up by them.
+  function afterLoad(fn) { if (document.readyState === 'complete') setTimeout(fn, 0); else window.addEventListener('load', function () { setTimeout(fn, 0); }); }
+  afterLoad(function () { Object.keys(SHEETS).forEach(function (k) { var im = new Image(); im.src = 'art/web/fx/' + k + '.png'; }); });
   function sprite(name, x, y, size, o) {
     o = o || {};
     if (reduced) return;
@@ -55,15 +57,18 @@ var Polish = (function () {
   // Combat. Which painting and sound a blow gets depends on who struck it.
   var BEASTS = ['cub', 'owl', 'bull', 'boar', 'mossback', 'herdmother', 'ridgewolves', 'lynx', 'stag', 'tortoise', 'salamander', 'drake', 'rimedrake', 'dragon', 'rats',
     'reedcrown', 'coalback', 'slateprowler', 'mosshorn', 'lanner', 'lioness'];
+  // Ranged casters and the focus-rifle marksman shoot magic, a heavy shot rather than a bowstring.
+  var MAGIC = ['conjurer', 'arcanist', 'ilvane', 'wardwright', 'rimecaller', 'marksman'];
   function blowOf(card) {
     if (!card) return 'slash';
     var kw = card.keywords || [];
+    if (MAGIC.indexOf(card.id) >= 0) return 'magic';
     if (kw.indexOf('Ranged') >= 0 || kw.indexOf('Longshot') >= 0) return 'arrow';
     if (/spear|lance|pike|glaive|hunter|outrider/i.test(card.name)) return 'spear';
     if (kw.indexOf('Stomp') >= 0 || /giant|colossus|bull|hulk|tortoise|golem|walker|chieftain|bear/i.test(card.name) || card.atk >= 6) return 'crush';
     return 'slash';
   }
-  var SHEET_OF = { slash: 'slash', spear: 'pierce', arrow: 'pierce', crush: 'crush' };
+  var SHEET_OF = { slash: 'slash', spear: 'pierce', arrow: 'pierce', magic: 'pierce', crush: 'crush' };
   // A card's cast sound: spells sound like their alignment, with Gnosis's cold spells and the lightning spells set apart.
   // Equipment has its own; an enchantment chimes on your own unit and turns cold on an enemy's.
   var ICE = ['frost', 'rimebolt', 'frostbreak', 'whitemorning'], LIGHTNING = ['stormstrike', 'brightlance', 'harmonic'];
@@ -71,10 +76,19 @@ var Polish = (function () {
     if (card.type === 'land' || card.type === 'unit') return null;
     if (card.equipment) return 'equip';
     if (card.type === 'enchant') return card.enemyOnly || onEnemy ? 'curse' : 'enchant';
-    if (ICE.indexOf(card.id) >= 0) return 'spell-ice';
-    if (LIGHTNING.indexOf(card.id) >= 0) return 'spell-lightning';
-    return { W: Math.random() < .5 ? 'spell-vigil' : 'spell-vigil-bell', U: 'spell-gnosis', B: 'spell-dominion', R: 'spell-fire', G: 'spell-genesis' }[card.colour] || null;
+    var el = element(card);
+    return el ? 'spell-' + el : null;
   }
+  // The element a spell sounds and looks like. Gnosis's spells that deal damage strike like lightning; its control
+  // spells keep the crystal sounds.
+  function element(card) {
+    if (ICE.indexOf(card.id) >= 0) return 'ice';
+    if (LIGHTNING.indexOf(card.id) >= 0) return 'lightning';
+    if (card.colour === 'U' && (card.blast || card.aim && card.aim.hit)) return 'lightning';
+    return { W: 'vigil', U: 'gnosis', B: 'dominion', R: 'fire', G: 'genesis' }[card.colour] || null;
+  }
+  // A spell that was thrown across the table already made its card sound when it left the hand.
+  var thrown = false;
   function tileEl(r, c) { return document.querySelector('#grid .tile[data-r="' + r + '"][data-c="' + c + '"]'); }
   function unitIn(s, uid) { return s.units.filter(function (u) { return u.uid === uid; })[0]; }
   function lunge(el, dx, dy) {
@@ -99,11 +113,13 @@ var Polish = (function () {
     if (m.type === 'endTurn' && who === human) Sfx.play('end-turn');
     if (m.type === 'move') Sfx.play('unit-move', { gap: 80 });
     if (played && played.type !== 'unit') {
-      Sfx.play('card-play');
+      if (!thrown) Sfx.play('card-play');
       var on = m.target !== undefined ? unitIn(prev, m.target) : null;
-      var cast = castOf(played, on && on.owner !== who);
+      // A thrown spell already sounded as it hit.
+      var cast = !thrown && castOf(played, on && on.owner !== who);
       if (cast) Sfx.play(cast, { delay: .06 });
     }
+    thrown = false;
     // New units arrive in a swirl of light.
     next.units.forEach(function (u) {
       if (unitIn(prev, u.uid)) return;
@@ -140,7 +156,7 @@ var Polish = (function () {
           return;
         }
         var t = tileEl(f.r, f.c);
-        if (t) { var b = box(t); sprite(SHEET_OF[blow], b.x, b.y, Math.max(b.w, b.h) * 1.35, { rot: blow === 'arrow' ? (f.r < (src ? src.r : f.r) ? -90 : 90) : 0 }); }
+        if (t) { var b = box(t); sprite(SHEET_OF[blow], b.x, b.y, Math.max(b.w, b.h) * 1.35, { rot: blow === 'arrow' || blow === 'magic' ? (f.r < (src ? src.r : f.r) ? -90 : 90) : 0 }); }
         // A blow lands with the weapon's sound and a thud under it; when Guard, a ward or an instant took some of it, an anvil
         // rings instead of the thud. Damage from a spell is just the thud.
         var tgt = att && f.uid === att.target ? unitIn(prev, att.target) : null;
@@ -287,5 +303,5 @@ var Polish = (function () {
     if (c && !document.querySelector('.app.opening')) Sfx.play('not-allowed', { gap: 120 });
   }, true);
 
-  return { lamp: lamp, sprite: sprite, moved: moved, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
+  return { lamp: lamp, sprite: sprite, moved: moved, element: element, castOf: castOf, thrown: function () { thrown = true; }, drawn: drawn, payout: payout, enabled: function () { return !reduced; } };
 })();

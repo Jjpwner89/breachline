@@ -29,7 +29,7 @@ An original fantasy card game on a grid, unique to the creator and not a rebuild
 
 From the creator:
 - An unseen summoner and one life total per player, starting at 15.
-- Decks are 30 cards, built before play (creator, 2026-11-10, replacing the earlier 40-card target). A player sees about 15 cards in a game, so about half the deck: copies matter, but games don't all play the same. Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
+- Decks are 40 cards, built before play (creator, 2026-11-11, replacing 30). Ideally a game ends before a deck runs out. A deck that does run out reshuffles its discards.
 - 7-card opening hands (creator, 2026-11-10, replacing 5). Redraws use a London-style mulligan: a new full hand, then one card per redraw goes on the bottom.
 - One draw per turn, and the hand is hidden.
 - Units sit on a grid and move 1 tile unless a keyword says otherwise. There's no diagonal movement, though Swift can reach a diagonal tile in two steps. Units can't move onto or through an occupied tile.
@@ -48,7 +48,7 @@ Claude's assumptions, not yet confirmed by the creator:
 - Only surviving targets strike back.
 - The play phase comes before the command phase, and the first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
-- In the deck builder: exactly 30 cards, 3 copies of a non-land card and unlimited lands. The starter, theme and campaign enemy decks are all 30. A campaign deck stays at 30: rewards go to a reserve that can be swapped in between battles.
+- In the deck builder: exactly 40 cards, at most 3 copies of any non-land card whatever its rarity, and unlimited lands (creator, 2026-11-11). Limits by rarity were tried and felt too contrived. A legendary that proves too strong gets a higher cost, not a lower limit; legendaries are hard to unlock, so few players can stack them, and a deck full of expensive cards limits itself through mana. The starter, theme and campaign enemy decks are all 40. A campaign deck stays at 40: rewards go to a reserve that can be swapped in between battles.
 - The card-to-faction list in `engine.js`.
 
 ## Board mechanics
@@ -56,7 +56,7 @@ Claude's assumptions, not yet confirmed by the creator:
 Decided by the creator on 2026-11-09, to make more of the board. All of these are built, with the Set 6 cards in `CARD_PROPOSALS.md`.
 
 - **Summoning units:** a card can summon other units straight onto the board. You pick empty tiles in your back row. If the back row is full, the rest go to your second row, starting from a side column and filling toward the middle unless you choose. Summoned units wait a turn like any new unit.
-- **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row.
+- **Errant summons:** a rarer, weaker kind of summoner. Its units always land on a random tile in your back row. The Young summoner summons its Camp follower once, when it arrives (2026-11-11); a repeating summon made it the strongest card for its cost.
 - **Adding cards to your hand:** a card can add cards to your hand. They look exactly like a normal draw and are played for their mana cost, so you play a card to get another card.
 - **Ambush:** enters on an empty tile next to one of your units, beside or behind it but never in front. It can match your furthest-forward unit, never get ahead of it.
 - **Flanking:** +1 attack when an ally stands on the far side of the target.
@@ -92,7 +92,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 ## Mana and lands
 
 - Soft coloured mana: lands have colours, each card wants a number of lands of its colour, and each missing land adds 1 to its cost, so a card is never locked out.
-- Lands are 35% of a deck: 10 or 11 of 30. Don't argue for more lands unless playtesting raises it.
+- Lands are about a third of a deck: 13 of 40, or 15 in a ramping green deck. Don't argue for more lands unless playtesting raises it.
 - Lands sit off-grid below the board and can't be taken or destroyed.
 - No per-turn card swap. It was far too powerful and made lands too easy.
 - Abilities that generate mana are welcome. The creator likes the idea of decks that build up mana to cast big cards.
@@ -121,6 +121,8 @@ Five colours sit above factions as alignments, with several factions inside each
 - **Keyword decisions (creator, 2026-11-10):** Regrow is gone as too strong. Longshot (3 tiles) works only if the unit hasn't moved that turn; after moving it fights in melee. Resonance hits the target and the enemy directly behind it. Gathered and Sworn became one keyword, Carrion: +1 attack whenever another unit dies on either side. Fireproof can be innate or come from a spell, an enchantment or equipment, but never from lightning, and no current card grants it. Fire spells come in two kinds: some damage only enemies and some damage every unit, balanced by cost and damage. Vigil gets one tile-clearing card for now. Rootfed counts only Genesis lands. Relics are approved as a new card type. Chain, Throng and Intercept were turned down. Armed belongs on units that look armoured or are putting armour on, in any colour. Veiled stays rare. The full table is in `CARD_PROPOSALS.md`.
 - **Frenzy (creator, 2026-11-11):** +2 attack on the unit's first attack, then it's spent for good, like a berserker's charge. It counts whether that attack hits a unit or the summoner, and a miss still spends it. Strike-backs never get it and don't spend it. It replaced +2 attack while damaged, which most units never used.
 - **Brass chorister (creator, 2026-11-11):** 3 / 5, down from 3 / 7, which got Push for free against the cost curve. The blue starter swapped a Cloistered scholar and a Street conjurer for a Harmonic wardwright and a Brass siege-walker, and Winter glyphs swapped its Frostbreak and a Winterdoor keeper for a Brass siege-walker and a second Conclave examiner. In 5,400 simulated games they win 49% and 46%, close to before.
+- **Walking sapling (creator, 2026-11-11):** Grows only twice, so it stops at 3 / 6. At 4 / 8 it was a 5-mana body for 2 mana and carried The Elder Herd to 61%; now it wins 53%. The Thornwardens swapped a saboteur and a Sudden canopy for a second Bronze-harness alderkin and a second Grove tender, which keeps them at 47%. Other Grows cards still grow three times.
+- **Sunmane lancer and Young summoner (creator, 2026-11-11):** the lancer is 4 / 5, down from 5 / 6, and the Young summoner's Camp follower comes once, when it's summoned, instead of every turn. In random decks the lancer's lift fell from 13.5 to 8.7 points and the Young summoner's from 11.1 to 3.1. Oath of the Sunmane went from 56% to 53%; The armed road, which leaned on the lancer, from 43% to 38%. The tutorial's last enemy now has 4 life, so the lancer still finishes it.
 - **Guns** stay rare. A rifle makes sense only as a focus for magical energy (creator, 2026-11-10).
 - **Not wanted for now:** effects for reaching the enemy back row (hitting the summoner is already the reward, and more would snowball), Velunn bargains (too hard to balance), and a special champion mechanic.
 - The Velunn are the game's rarest, biggest cards. Dominion can bargain with them, and they can be good too.
@@ -132,9 +134,10 @@ Five colours sit above factions as alignments, with several factions inside each
 ## Modes
 
 - **Campaign** is the main way to play. Its picks, Claude's assumptions and balance are in `CAMPAIGN.md`. Cutscenes are wanted later, so don't build them until asked.
-- **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by type, colour and faction.
+- **Exhibition** uses a deck builder with any card. Saved decks persist and sync to the viewer's account on the published page, mixing is free across factions, and the builder filters by owned or every card, colour, type and faction, in that order (creator, 2026-11-12). The filter panel starts folded and each of its rows folds too; folded, they say what is picked. The test table can hand the top side to the scripted bot instead of having you play both. In the deck list each deck is a card (creator, 2026-11-12): its painting, name, alignments and card count on the front. Selecting it turns it over to show its plan and what can be done with it: Edit, Copy and Delete for your own decks, and View and Copy for starter and theme decks. View lists a fixed deck card by card. Only one deck is turned over at a time; selecting it again, another deck, an empty spot or Escape turns it back.
 - **Multiplayer** isn't built.
 - **How to play (2026-11-11):** a tutorial in `tutorial.js` and `tutorial.css`. Part 1 tours the battle table; part 2 is a set battle on turn 3 where the player plays a land, summons a Temple cleric, attacks, moves the Sunmane lancer, ends the turn, and strikes the summoner to win. Each step allows only the move it teaches, and the enemy's one turn is scripted. It never pays gold or saves. New players see it first on the main menu and as a link on the starter pick; once finished or left, it moves down the menu. Whether it's been seen is kept in the browser, per viewer.
+- **New-player help (2026-11-12):** the creator's brother couldn't tell what each deck did or what the table showed, so `help.js` and `help.css` explain both. Each starter and theme deck has a one-sentence plan, shown on its tile in Exhibition, on the back of its card in the deck builder, on the first-deck pick and in the campaign setup. Each alignment has a line on its strengths and weakness, shown beside the chosen deck and under the builder's filters when one colour is picked. Each faction has an in-world line, shown in the builder's close-up and under the filters (the lines are in `FLAVOUR.md`). A **Help** button on the battle table, the Exhibition screen and the deck builder turns help mode on and off: while it's on, pointing at anything shows a short tip, or on a phone a press and hold does, and a tap on a plain label shows its tip too. A tip never blocks a move. Both back rows get a small tag on the map's edge, and the Rules drawer has a short legend of the table. Keyword tips are read from the cards' own rules text, so new keywords need no extra work unless their text lacks a "Keyword: meaning" sentence. New starter or theme decks need a sentence in `Help.DECKS`; `tests.html` checks for it.
 - **Progression:** a free starter, packs, a collection with counts, crafting and prestige replays, decided on 2026-11-10 and waiting for the new board. Cards picked in a campaign carry over only if you win it. All of it is in `PROGRESSION.md`.
 - New modes add a card pool in `Decks.pool` in `decks.js` rather than changing the builder.
 
@@ -155,7 +158,7 @@ The creator's first full game against it was dynamic, and they said it was clear
 ## Look and feel
 
 - **The war table:** a no-scroll battle screen with paintings filling the tiles and a large hand along the bottom.
-- **Layout:** laptop first, with phones on a simpler stacked layout.
+- **Layout:** laptop first. Phones get their own one-screen battle in `phone.css` (2026-11-12, from the mockup canvas the creator picked): upright, the enemy bar, the board, your row (life, mana, phase, End turn) and then your hand at the bottom; sideways, the plates and hand on the left, the board in the middle, and the menu, phase and End turn on the right. The help text under the board is left out on phones. Upright, buttons such as Command units float over the top of the hand so the board never gives up height to them; sideways, the plates sit on the table without boxes. The hand is the same card as on desktop, held as a fan. A tap lifts a card the way hovering does on desktop, a little lower, and lights where it can go; another tap puts it back. Holding anything with a card behind it shows that card large on the left until you let go, which is how you read a card on a phone. A unit's tile on a phone is mostly its art: no name bar, with small attack and health in the bottom corners. Rules and sound move into the phone's menu.
 - **The old layout is gone:** keep new UI in the war table style.
 - **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
 - **Same layout on every card (2026-11-10):** the creator chose this from three mockups. The name is always one line and shrinks to fit, the cost coin sits on the painting's top-left corner, and a band in the alignment colour runs under the art with the type and alignment. On units, Attack and Health sit at the band's ends. Every card has the same art, band and text box sizes.
@@ -190,42 +193,41 @@ Earlier approvals:
 - **Rewards and map:** reward cards are dealt face down and turned over. The army marches along the campaign road.
 - **Victory and defeat:** the crest drops and the payout is stamped line by line, with coins flying into the purse.
 
-Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2026-11-11 the creator picked spell and effect sounds from a sound board: Vigil spells get a healing impact or a tubular bell, Gnosis spells a low wine glass, with ice impact 3 for the cold spells and fire staff 20 for lightning; Fervor spells fire impact 3; Dominion spells a catching flame pitched down; Genesis spells a leaf rustle. Enchantments on your units get a pitched-down finger cymbal, enchantments on enemies (curses) ice impact 5, equipment healing 3, heals healing 9, damage hit 1, and a blocked blow anvil 2. The same day: footstep 6 when a unit moves, a card touch for hovering a card and card slide 6 for drawing one, a wood knock when a greyed-out card is clicked, a timpani for end turn, a full gong for victory, sad ending 1 for losing a campaign battle and sad ending 3, quiet, for losing any other, and the Old Tower Inn and King's Feast tunes taking turns as quiet background music. The mute button stops it all.
+Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2026-11-11 the creator picked spell and effect sounds from a sound board: Vigil spells get a healing impact (the tubular bell was dropped later the same day), Gnosis spells a low wine glass (its damaging spells later moved to lightning), with ice impact 3 for the cold spells and fire staff 20 for lightning; Fervor spells fire impact 3; Dominion spells a catching flame pitched down; Genesis spells a leaf rustle. Enchantments on your units get a pitched-down finger cymbal, enchantments on enemies (curses) ice impact 5, equipment healing 3, heals healing 9, damage hit 1, and a blocked blow anvil 2. The same day: footstep 6 when a unit moves, a card touch for hovering a card and card slide 6 for drawing one, a wood knock when a greyed-out card is clicked, a timpani for end turn, a full gong for victory, sad ending 1 for losing a campaign battle and sad ending 3, quiet, for losing any other, and the Old Tower Inn and King's Feast tunes taking turns as quiet background music. The mute button stops it all.
+
+**Thrown spells, 2026-11-11.** Every spell or instant aimed at a tile, a unit or a summoner is thrown there before it resolves: it charges at the card for 0.6 seconds, launches, flies in an arc and lands. A tile spell with its own tile effect keeps that look; any other takes its element's look (fire, frost, storm for the lightning spells, holy, blight, thorns, and a new sea-blue arcane look with a turning sigil for Gnosis). A spell on one of the caster's own units settles gently, without the stop and shake of a hit. Enchantments and equipment still settle on their unit without a throw. Each stage has sound the creator picked on the spell sound board, layered and overlapping: a shared air layer (wind drawn in, a heavy whoosh, a torch whoosh) under the element's own (fire crackle, freeze, electric build-up, mana drain, tree creak; catching fire, ice shard, spark crack, hand chime, drain release, leaf burst; fireball roar, freezing hiss, spark crack, shimmering chime, crystal hum, power drain, rustling leaves). No charge fitted Vigil or Gnosis and no launch Gnosis, so those play the air alone. Some of these are CC-BY and credited in `sfx/CREDITS.md`. A thrown spell's own sound plays the moment it hits, not when the board catches up.
+
+**Impacts, combat and rewards, 2026-11-11.** From the impact sound board the creator layered a weightier landing under three elements: fireball impact 1 under fire, a spark crack a quarter second after lightning as a crackle to finish, and earth impact 1 under Genesis. Ranged casters (street conjurer, lantern arcanist, Ilvane, harmonic wardwright, rimecaller) and the focus-rifle marksman shoot with a heavy shot; bow units keep a bow shot. Sword and claw attacks are a dagger swing, spears a quick thrust, a summoner hit a heavy impact, heals a healing chime, a ward or Guard block a magic shield, equipment a blade ring, a unit arriving spell 2, gold paid out gold 1, a unit moving dirt step 2, and a won and lost battle a win and a lose jingle (sad ending 1 still ends a campaign run). Damage on a unit, curses, enchantments and the heavy crush stay as they were; no new crush fitted. The achievement jingle (Little Robot Sound Factory, Jingle_Achievement_00) is reserved for level-ups: it is in `sfx/` as `level-up`, ready for `Sfx.play('level-up')` when those are added.
 
 ## Balance
 
-Latest numbers, from 2,000 bot-only games on 2026-11-10, after that day's balance changes in `CARD_PROPOSALS.md`: the first player wins 50%. By starter, Vigil wins 49%, Gnosis 44%, Dominion 57%, Fervor 45% and Genesis 56%. Before the changes the range was 38% to 73%, with Genesis on top. In random decks drawn from every card, Gnosis's cards are the weakest (43%) and Vigil's the strongest (56%). The scripted bot rarely uses sacrifices well, which hurts Dominion. The campaign hasn't been re-run since the white and black starters changed. Campaign numbers are in `CAMPAIGN.md`.
+Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any card and the card changes reviewed that day (card by card in `BALANCE_AUDIT.md` and `CARD_PROPOSALS.md`). A round robin of all 15 decks, the five starters and ten theme decks, played about 1,000 games per deck (each within about 1.6 points), with the scripted bot on both sides:
 
-After the move to 30-card decks, 2026-11-10, from 6,000 starter games and 750 games per theme deck against the starters: Vigil 53%, Fervor 45%, Gnosis 47%, Dominion 53% and Genesis 52%. Gnosis needed a third Street conjurer and Cloistered scholar to stay above 45%. Theme decks moved within a few points of their 24-card results, and Winter glyphs is still the weakest at 41%. Players run out of cards in 0.4% of games, down from 2%. Campaign chapters moved by up to 10 points either way, and Vigil's early chapters got easier.
-
-Cards 104 to 191, built on 2026-11-10, aren't in any starter, so the starter numbers above are unchanged.
-
-Starter round-robin for progression, 2026-11-10, from 20,000 games (1,000 per pairing from each seat): Vigil 54%, Fervor 46%, Gnosis 47%, Dominion 53% and Genesis 50%, all inside the target, and the first player wins 48%. The most lopsided pairings are Dominion over Gnosis (59%), Gnosis over Fervor (58%) and Vigil over Gnosis (58%). None is a trap as a free first pick.
-
-Balance run for cards 104 to 191, 2026-11-10, from 3,000 games of random one-colour decks and 5,000 games of theme decks:
-- **No new card stands above the best old ones.** Within its colour, the strongest new cards are Slagheart hulk, Cinderhook axe, Elderwood stag and Stormglass glaive, at 8 to 11 points above their colour's average; the best old cards sit at 15 to 17.
-- **Weakest in random decks:** Hour of collection, Barrow mark, Wildfire, Cinder rain, Humbling light and Unwind the step, 14 to 21 points below average. Most are sweepers or answers, which get cast when the bot is already losing, so this overstates the problem. Barrow mark is plainly weak for 2 mana.
-- **Gnosis (blue) is the weakest colour in random decks (33%).** Its new cards are mostly control spells, so random blue decks end up short of units. Its theme decks hold up better.
-- **Three cards changed:** Cinder firebrand, Untaught firecaller and The sky falls in. See "Balance changes after the first balance run" in `CARD_PROPOSALS.md`.
-
-Theme decks, one per new mechanic, are in the exhibition picker and the deck builder (`THEMES` in `decks.js`). Each was rebuilt once with a proper curve of units, then played 500 games against the starters:
-
-| Theme deck | Mechanic | vs starters |
+| Deck | Kind | Win rate |
 | --- | --- | --- |
-| Rootfed herd | Rootfed, extra lands | 62% |
-| The barrow feast | Carrion, sacrifice | 61% |
-| The court's favour | Charm, buying units, Veiled | 55% |
-| The armed road | Equipment, Armed | 53% |
-| Long sights | Longshot | 50% |
-| The Thornwardens | Thorns, Holding ground | 50% |
-| Cinder and slag | Lit, burning ground | 47% |
-| The long throw | Spells at the summoner | 46% |
-| Winter glyphs | Freezing | 42% |
-| Hearth and vow | Devotion | 50% |
+| Hearth and vow | Devotion theme | 58% |
+| Winter glyphs | Freezing theme | 57% |
+| Rootfed herd | Rootfed theme | 56% |
+| The armed road | Equipment theme | 54% |
+| Oath of the Sunmane | Vigil starter | 53% |
+| The Elder Herd | Genesis starter | 52% |
+| The court's favour | Charm theme | 50% |
+| Cinder and slag | Lit theme | 50% |
+| Long sights | Longshot theme | 49% |
+| The Warhorde | Fervor starter | 48% |
+| The Ashen Court | Dominion starter | 46% |
+| The Thornwardens | Thorns theme | 45% |
+| The Lantern Conclave | Gnosis starter | 45% |
+| The long throw | Burn theme | 44% |
+| The barrow feast | Carrion theme | 44% |
 
-- **Rootfed and Carrion run hot.** Both are mono-colour decks in the two strongest colours. Alderkin elder, Shell-mountain tortoise and Elderwood stag win over 75% of the games they're played in. Worth watching, not yet worth changing.
-- **Devotion** triggered only about once a game when it needed real healing, and its deck won 35%. The creator decided any heal counts, even at full health; it now triggers about 5 times a game.
-- **Freezing is the weakest theme.** It is blue's weakness again: the starters beat a deck that stops units without killing them. Frost and White morning now deal 1 damage as they freeze (creator, 2026-11-10), which took the deck from 38% to 42%.
+- **The field is much tighter:** 14 points from best to worst, down from 34 when the decks first went to 40 cards.
+- **The starters are one colour each**, chosen for steady draws. Each shows as many of its colour's mechanics as stay on theme and keeps plenty of plain commons. Green, black and blue were retuned on paired tests against the other 14 decks.
+- **Theme decks were moved toward the middle without leaving their plan.** Hearth and vow and The armed road swapped the Pride matriarch for commons; The barrow feast added a Barrow colossus, a retainer and a barrow priest; and The long throw went mono-red with Cinderfall, more raiders and berserkers, keeping 9 burn spells. Decks don't have to be the strongest possible, and every one keeps some simple commons.
+- **Greedy decks** (15 lands and every rare and legendary at 3 copies) win about 61%. The creator judged that acceptable, so expensive decks are left to limit themselves through mana.
+- **Devotion** counts any heal, even at full health (creator, 2026-11-10). **Frost and White morning** deal damage as they freeze (creator, 2026-11-10).
+- Campaign numbers are in `CAMPAIGN.md`.
+
 - **Spell-heavy first drafts lose badly:** 6% to 19% for winter, burn, fire and Devotion with 6 to 8 units. Every theme deck now plays 11 to 15 units.
 
 Draft decks built around focuses, 2026-11-10, each 24 cards and tested against the starters and each other: the Sunmane levy (going wide), the Thornwardens, an Artificers' workshop, a Mountain's Lung ramp deck and a Cinder Clans armoury all win 54% to 66%. Burning ground, freezing control, Still Flame healing and Gravebound sacrifice win 29% to 39%, because they have the setup cards but almost no payoffs. Cards 104 to 117 in `CARD_PROPOSALS.md` are aimed at that. The drafts aren't in the game yet.
@@ -293,7 +295,7 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 - **Branches:** Claude sessions work in worktrees under `.claude/worktrees/`, each on its own branch. Merge finished work into `main` promptly so the others stay current.
 - **Testing:** Node isn't installed on this Mac. Run engine simulations with `/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc`, and open `tests.html` in a browser for the checks.
 - **Preview:** Python's web server can't serve directly from the Documents folder, so previews run from a temporary copy. The entries in `.claude/launch.json` point to old temporary folders.
-- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts and stylesheets (`tutorial.js` and `tutorial.css` among them), `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db`, `user` and `downloads` in its capabilities, and always publish to the same page: players' collections live in that page's database.
+- **Publishing:** publish `breachline/index.html` with `breachline` as the root, and include the scripts and stylesheets (`tutorial.js`, `tutorial.css`, `help.js` and `help.css` among them), `campaign.js` and the `art/web/` images. Leave out the full-size art. Other sessions publish to the same page, so read the live version first. Keep `sample`, `db`, `user` and `downloads` in its capabilities, and always publish to the same page: players' collections live in that page's database.
 - **New art:** run `art/build-web.sh` after adding or replacing a painting, then republish. `art/CARD_ART_FINAL.json` is the definitive selection of card art.
 - **Interface art:** the paintings live in `art/ui/`. Run `swift art/build-ui.swift` after replacing one; it crops, tiles and resizes them into `art/web/ui/`, which the game uses. Publish `art/web/ui/` with the rest of `art/web/`.
 
