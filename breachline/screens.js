@@ -434,7 +434,7 @@ var Screens = (function () {
         '<div class="dtop"><label class="sr" for="dname">Deck name</label><input type="text" id="dname" maxlength="40" value="' + esc(deck.name) + '"><button type="button" class="btn dclose" ' + act('closeDeck') + '>Back to cards</button></div>' +
         '<div id="dsum"></div><div class="dlist" id="dlist"></div><div class="dfoot" id="dfoot"></div></aside>' +
       '<button type="button" class="btn primary dopen" id="dopen" ' + act('openDeck') + '></button>' +
-      '</div></div>', function () { drawGrid(); });
+      '</div></div>', function () { drawGrid(true); });
     drawFilters();
     drawGrid();
     drawDeck();
@@ -509,11 +509,19 @@ var Screens = (function () {
       '<span class="have" hidden></span><span class="qty" aria-hidden="true"></span><span class="nown" hidden>Not owned</span>' +
       '<button type="button" class="minus" ' + act('remove', id) + ' aria-label="Take ' + esc(c.name) + ' out of deck" hidden>&minus;</button></div>';
   }
-  function drawGrid() {
-    var ids = ed.pool.ids.filter(function (id) { return matches(E.CARDS[id]); }).sort(cardOrder), n = activeFilters();
-    byId('cgrid').innerHTML = ids.length ? ids.map(pickHtml).join('') : '<p class="hint none">No cards match these filters.</p>';
-    GameUI.fitCards(byId('cgrid'));
-    byId('fcount').innerHTML = ids.length + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
+  // Every card is drawn once; a filter only hides and shows them, so turning one off doesn't redraw and refit the whole pool.
+  // A hidden card is fitted when it first shows.
+  function drawGrid(rebuild) {
+    var grid = byId('cgrid'), n = activeFilters(), shown = 0, fit = rebuild || !grid.querySelector('.pcard');
+    if (fit) grid.innerHTML = ed.pool.ids.slice().sort(cardOrder).map(pickHtml).join('') + '<p class="hint none">No cards match these filters.</p>';
+    Array.prototype.forEach.call(grid.querySelectorAll('.pcard'), function (el) {
+      var on = matches(E.CARDS[el.dataset.cardId]);
+      el.hidden = !on;
+      shown += on;
+    });
+    grid.querySelector('.none').hidden = !!shown;
+    if (fit) GameUI.fitCards(grid);
+    byId('fcount').innerHTML = shown + ' of ' + ed.pool.ids.length + ' cards' + (n ? ' <button type="button" class="linkbtn" ' + act('clearFilters') + '>Clear</button>' : '');
     drawBadges();
   }
   function drawBadges() {

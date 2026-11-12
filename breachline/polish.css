@@ -260,8 +260,10 @@ img.coin-i, img.shard-i { width: 22px; height: 22px; object-fit: contain; filter
 .editor .chip[aria-pressed="true"] .csym { color: inherit; }
 .editor .filters { background: rgba(16, 10, 6, .7); border-color: #5a4530; }
 .editor .cgrid { gap: 18px 12px; padding: 6px 6px 18px 2px; }
+/* Cards off screen skip layout, so turning a filter off shows the whole pool at once instead of laying out every card first. */
+.editor .pcard { content-visibility: auto; contain-intrinsic-size: auto 300px; }
 .editor .pcard .card { transition: transform .15s ease-out, filter .15s; }
-.editor .pcard .card:hover { transform: translateY(-4px) scale(1.03); filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .55)); }
+@media (hover: hover) { .editor .pcard .card:hover { transform: translateY(-4px) scale(1.03); filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .55)); } }
 .qty { position: absolute; left: 50%; bottom: -11px; transform: translateX(-50%); display: flex; gap: 4px; pointer-events: none; }
 .qty i { width: 9px; height: 9px; transform: rotate(45deg); background: #3a2c1f; border: 1px solid #8c7656; }
 .qty i.on { background: #f0d68c; border-color: #fff3d6; box-shadow: 0 0 5px rgba(240, 214, 140, .7); }

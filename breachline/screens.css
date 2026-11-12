@@ -83,8 +83,8 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .dface { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .dfront { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; color: inherit; transition: transform .14s ease-out; }
 .dfront .frame { filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); }
-.dcard:not(.flipped) .dfront:hover { transform: translateY(-3px); }
-.dfront:hover .frame, .dfront:focus-visible .frame { box-shadow: 0 0 0 2px var(--gold-pale), 0 0 14px var(--gold); }
+@media (hover: hover) { .dcard:not(.flipped) .dfront:hover { transform: translateY(-3px); } .dfront:hover .frame { box-shadow: 0 0 0 2px var(--gold-pale), 0 0 14px var(--gold); } }
+.dfront:focus-visible .frame { box-shadow: 0 0 0 2px var(--gold-pale), 0 0 14px var(--gold); }
 /* A name shrunk to fit can still be a fraction of a pixel wide, which would cost it its last letters to an ellipsis. */
 .dfront .bar-top { text-overflow: clip; }
 .dfront .art { flex: 1 1 0; min-height: 0; aspect-ratio: auto; }
@@ -149,7 +149,8 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .frow { display: flex; align-items: flex-start; gap: 8px; margin-top: 5px; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
 .chip { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; padding: 2px 9px; background: var(--table); border: 1px solid var(--line); border-radius: 14px; font-size: 13px; }
-.chip:hover { border-color: var(--gold); }
+/* Hover looks are for pointers: on a touch screen they stick to the last thing tapped and make it look still picked. */
+@media (hover: hover) { .chip:hover { border-color: var(--gold); } }
 .chip[aria-pressed="true"] { background: var(--parchment); border-color: var(--gold); color: var(--card-ink); font-weight: 700; }
 .chip[aria-pressed="true"] .csym { color: var(--card-ink); }
 .chip .csym { width: 14px; height: 14px; }
@@ -321,7 +322,7 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
 .collbody { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 14px; align-items: start; }
 .cgrid.coll { overflow: visible; }
 .pcard.unowned .frame { filter: grayscale(1) brightness(.5) contrast(.9); }
-.pcard.unowned .card:hover .frame { filter: grayscale(.6) brightness(.75); }
+@media (hover: hover) { .pcard.unowned .card:hover .frame { filter: grayscale(.6) brightness(.75); } }
 .nown { position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%); padding: 2px 10px; border-radius: 12px; background: rgba(14, 9, 4, .85); border: 1px solid var(--line); font: 700 13px var(--body); color: var(--muted); white-space: nowrap; pointer-events: none; }
 .cfocus { position: sticky; top: 10px; display: flex; flex-direction: column; gap: 8px; padding: 10px; background: var(--felt); border: 1px solid var(--line); border-radius: 6px; }
 .cfocus .slot { container-type: inline-size; }
