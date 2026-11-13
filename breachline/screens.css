@@ -252,6 +252,9 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
 .astory:hover { border-color: var(--gold); }
 .astory[aria-pressed="true"] { background: var(--parchment); border-color: var(--gold); color: var(--card-ink); font-weight: 700; }
 .astory[aria-pressed="true"] .csym { color: var(--card-ink); }
+/* Prestige: a gold tag on a prestige run's title, and a small gold gem on a campaign beaten on prestige. */
+.pmark { display: inline-block; margin-left: 8px; padding: 1px 9px; vertical-align: 4px; border: 1px solid var(--gold-pale); border-radius: 3px; background: linear-gradient(#6f5518, #3b2c18); color: var(--gold-pale); font: 700 14px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; }
+.pbadge { display: inline-block; width: 8px; height: 8px; margin-left: 5px; transform: rotate(45deg); background: linear-gradient(135deg, #ffe7a0, #c08a2a); border: 1px solid rgba(0, 0, 0, .6); box-shadow: 0 0 4px rgba(255, 210, 120, .8); }
 .cwho { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .cleave { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .rdeck { overflow: visible; flex: none; }

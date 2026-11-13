@@ -23,7 +23,7 @@ All five campaigns can be played. The story lines live in `campaign.js`, and eve
 - **Enemies:** the same rules and 15 life as you. Later enemies are harder only because their decks are stronger, which goes beyond the same-rules difficulty idea for the Claude levels. That idea still applies inside each battle.
 - **A draw:** the same battle is fought again.
 - **Saving:** after every move, in this browser only. Runs don't follow the account the way saved decks do.
-- **Preset enemy units:** some chapters start with an enemy unit already on the board, as a difficulty knob separate from deck strength and a bit of story ("the raiders already hold the ford"). Mostly for later chapters and prestige tiers. Proposed rules: the unit starts in the enemy's back row, isn't drawn from its deck, and acts from the enemy's first turn.
+- **Preset enemy units:** built for prestige only (creator, 2026-11-13); see Prestige below. The unit starts in the enemy's back row, isn't drawn from its deck, acts from the enemy's first turn, and is gone when it dies.
 
 ## Reward lists (creator, 2026-11-13)
 
@@ -36,6 +36,29 @@ Doubles down makes the starter's own plan stronger. New direction opens a side t
 | Dominion | Debts called in: Withering hex, Court informant, Ledger of debts, Debt Collector's blade, Tithe-keeper, Siphon vigor, Hostess of the late hour | The barrow feast, hinted by the harvester, Raise the dead and the Carrion units: Barrow tender, Barrow mark, Sepulchral scale, Mothwake mourner, Gravecaller, Barrow priest, Ossuary engine |
 | Fervor | Charge them down: Goblin firepot, Cinder-cant drummer, Cinderhook axe, Redglass falchion, Orc pack-hunter, Goblin rabble-rouser, Mercenary captain | Burning ground, hinted by Scorch, the torch-runner, the martyr and the firebrand: Emberward, Anoint with embers, Ember salamander, Untaught firecaller, Cinderwake, Kindle the line, Cinderfall |
 | Genesis | The herd grows: Ridge wolves, Reedcrown grazer, Spring melt, Seedheart vessel, Bronze-harness alderkin, Clearing the channel, Through the marble | Thornwardens, hinted by the trapper and Shifting forest: Thornwarden goblin scout, Sudden canopy, Thornbrake, The stone opens, Overgrowth, Seedfall, Ironbark sentinel |
+
+## Prestige (creator, 2026-11-13)
+
+Built as drafted. Prestige opens for a campaign once you've beaten it, and every run of that campaign picks **Normal** or **Prestige** on the campaign screen.
+
+- **Stronger enemies:** in chapters 1 to 5 the enemy swaps two to ten of its weaker cards for stronger ones in its own colours: Barrow rats for Shutter-window assassins, Militia spearmen for Oath outriders, and so on. The decks stay 40 cards. The swaps are `PRESTIGE` in `campaign.js`.
+- **Units on the field:** chapters 4 and 5 start with one cheap enemy unit in the enemy back row, and chapter 6 with two and no swaps. The chapter's panel on the map names them before you fight. They have to be cheap: a unit ready on turn 1 is worth far more than its cost. In testing, one Brass chorister alone cost the starter 40 points in chapter 4, while that chapter's six card swaps cost under 10.
+- **Gold:** prestige battles pay double, against half again for a normal replay, and a prestige clear pays 600 gold instead of 300.
+- **Badge:** a prestige clear puts a gold ring round the campaign's emblem on the main menu and a gold gem by its name on the campaign screen.
+- **Rewards:** both list slots draw from all of the campaign's colour rather than its reward lists, and rare and legendary cards come up more often.
+- **One tier for now.** Stacking tiers (Prestige I, II, III) are parked in `FUTURE_FEATURES.md`.
+
+Balance (2026-11-13): the bot with the starter deck and no rewards, 400 games a chapter, normal → prestige. Every chapter is 8 to 20 points harder, 13 on average; Saint Maren's chapter is the hardest at 20, since even a single extra unit beside her costs 7.
+
+| Campaign | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 | Ch6 | One-try clear |
+|---|---|---|---|---|---|---|---|
+| Vigil | 81 → 66 | 74 → 60 | 68 → 57 | 62 → 46 | 56 → 44 | 56 → 41 | 8% → 1.9% |
+| Gnosis | 79 → 68 | 78 → 66 | 72 → 62 | 64 → 53 | 66 → 50 | 53 → 33 | 10% → 2.5% |
+| Dominion | 80 → 65 | 71 → 60 | 69 → 53 | 58 → 48 | 55 → 43 | 56 → 48 | 7% → 2.1% |
+| Fervor | 77 → 62 | 68 → 56 | 64 → 52 | 59 → 46 | 57 → 43 | 59 → 42 | 7% → 1.6% |
+| Genesis | 80 → 68 | 70 → 56 | 66 → 55 | 62 → 50 | 60 → 43 | 60 → 43 | 8% → 1.9% |
+
+A real player on prestige has already beaten the campaign and carries the cards they pick on the way, so they fare far better than these bare-starter numbers.
 
 ## Draft lines, for verdicts
 

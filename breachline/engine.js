@@ -457,6 +457,8 @@ var Engine = (function () {
       for (var i = 0; i < OPENING_HAND; i++) p.hand.push(p.deck.pop());
       p.index = idx;
     });
+    // Units a battle starts with already on the board, as [player, card, row, column], such as a prestige chapter's garrison.
+    (opts.units || []).forEach(function (u) { placeUnit(s, u[0], u[1], u[2], u[3]); });
     s.firstPlayer = s.active;
     s.phase = 'opening';
     return s;

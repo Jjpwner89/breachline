@@ -88,13 +88,13 @@ var Screens = (function () {
     }
     var run = Campaign.current(), learn = !Tutorial.seen() && !st.battles.length;
     var embs = '<div class="memb">' + Campaign.ORDER.map(function (id) {
-      var st = Campaign.STORIES[id], won = Progress.cleared(id);
-      return '<img src="art/web/ui/emblem-' + st.colour + '.png" alt="' + esc(st.title) + (won ? ', beaten' : ', not beaten yet') + '" title="' + esc(st.title) + (won ? ': beaten' : '') + '"' + (won ? ' class="won"' : '') + '>';
+      var st = Campaign.STORIES[id], won = Progress.cleared(id), pres = Progress.prestiged(id), said = pres ? 'beaten on prestige' : won ? 'beaten' : '';
+      return '<img src="art/web/ui/emblem-' + st.colour + '.png" alt="' + esc(st.title) + ', ' + (said || 'not beaten yet') + '" title="' + esc(st.title) + (said ? ': ' + said : '') + '"' + (won ? ' class="won' + (pres ? ' prestige' : '') + '"' : '') + '>';
     }).join('') + '</div>';
     show(HOME + '<button type="button" class="btn snd msnd" data-sound aria-pressed="' + !Sfx.muted() + '" aria-label="Sound"></button><main class="menu"><div class="mcol"><h1>Breachline</h1>' + embs + '<nav class="mlist" aria-label="Main menu">' +
       (learn ? item('tutorial', 'How to play', 'New here? Tour the table, then win a short battle.', !cont) : '') +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
-      (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
+      (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + (run.prestige ? ' on prestige' : '') + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
         : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont && !learn)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
       item('collection', 'Collection', st.gold + ' gold. Open packs, craft cards and see your record.') +
@@ -237,7 +237,7 @@ var Screens = (function () {
 
   // Campaign
 
-  var setupPlayer = 'bot', setupStory = 'vigil', mapPick = null, confirmAbandon = false;
+  var setupPlayer = 'bot', setupStory = 'vigil', setupPrestige = false, mapPick = null, confirmAbandon = false;
 
   // A smooth line through the traced road, as far as stops legs.
   function roadPath(points, stops) {
@@ -340,8 +340,8 @@ var Screens = (function () {
       '<div class="cgrid rdeck' + (swapIn && !locked ? ' swapping' : '') + '">' + deck + '</div></section>';
   }
   function opponentName(player) { return player === 'bot' ? 'the scripted bot' : 'Claude, ' + AI.levels[player].label; }
-  function campaignHead(title, extra) {
-    return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + '</h1>' +
+  function campaignHead(title, extra, prestige) {
+    return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>' + esc(title) + (prestige ? ' <span class="pmark">Prestige</span>' : '') + '</h1>' +
       (extra ? '<div class="push cleave">' + extra + '</div>' : '') + '</header>' +
       (Campaign.persistent() ? '' : '<p class="warn">This browser is blocking storage, so this run lasts only until you close this tab.</p>');
   }
@@ -350,8 +350,14 @@ var Screens = (function () {
   function setup() {
     var ready = GameUI.modelReady(), all = Campaign.ORDER.map(function (k) { return Campaign.STORIES[k]; }), story = Campaign.STORIES[setupStory];
     var choose = '<div class="astories" role="group" aria-label="Campaigns">' + all.map(function (a) {
-      return '<button type="button" class="astory" ' + act('setStory', a.id) + ' aria-pressed="' + (a === story) + '">' + symbol(a.colour) + GameUI.ALIGNMENT[a.colour] + '</button>';
+      var badge = Progress.prestiged(a.id) ? '<span class="pbadge" title="Beaten on prestige"><span class="sr">, beaten on prestige</span></span>' : '';
+      return '<button type="button" class="astory" ' + act('setStory', a.id) + ' aria-pressed="' + (a === story) + '">' + symbol(a.colour) + GameUI.ALIGNMENT[a.colour] + badge + '</button>';
     }).join('') + '</div>';
+    // Prestige opens once a campaign is beaten, and each run picks normal or prestige (creator, 2026-11-13).
+    var beaten = !!Progress.cleared(story.id), pres = beaten && setupPrestige;
+    var level = !beaten ? '' : '<h2>Difficulty</h2><div class="cwho">' +
+      '<button type="button" class="who-plays" ' + act('setPrestige', '') + ' aria-pressed="' + !pres + '"><b>Normal</b><span>The campaign as you beat it.</span></button>' +
+      '<button type="button" class="who-plays" ' + act('setPrestige', '1') + ' aria-pressed="' + pres + '"><b>Prestige</b><span>Stronger enemies, some already on the field. Double gold.</span></button></div>';
     if (setupPlayer !== 'bot' && !ready) setupPlayer = 'bot';
     var who = '<button type="button" class="who-plays" ' + act('setPlayer', 'bot') + ' aria-pressed="' + (setupPlayer === 'bot') + '"><b>Scripted bot</b><span>Plays instantly, with fixed habits.</span></button>' +
       ['easy', 'normal', 'hard'].map(function (k) {
@@ -361,17 +367,19 @@ var Screens = (function () {
       '<aside class="cside">' + choose + '<div class="story"><p class="eyebrow">' + symbol(story.colour) + GameUI.ALIGNMENT[story.colour] + '</p><h2>' + esc(story.title) + '</h2><p>' + esc(story.premise) + '</p>' +
       '<p class="hint">You start with <b>' + esc(E.DECKS[story.starter].name) + '</b>. ' + esc(Help.deck({ id: story.starter })) + '</p>' +
       '<p class="hint"><b>' + GameUI.ALIGNMENT[story.colour] + '.</b> ' + esc(Help.alignment(story.colour)) + '</p></div>' +
-      '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
+      level + '<h2>Who plays your enemies</h2><div class="cwho">' + who + '</div>' +
       '<p class="hint">' + (ready ? 'Stays the same for the whole run. Claude uses your own Claude usage, about a dozen requests a battle.' : 'Stays the same for the whole run. Claude opponents work only on the published page inside Claude.') + '</p>' +
       '<p class="hint">' + story.chapters.length + ' battles, with a card to choose between them. If you lose one, the run is over.</p>' +
-      '<p class="hint">' + (Progress.cleared(story.id) ? 'You\'ve beaten this campaign, so the cards you pick stay with the run, and its battles pay half again as much gold.'
+      '<p class="hint">' + (pres ? 'Prestige battles pay double gold, and beating every chapter pays double too and earns this campaign its prestige badge. Your card choices lean toward rarer cards.'
+        : beaten ? 'You\'ve beaten this campaign, so the cards you pick stay with the run, and its battles pay half again as much gold.'
         : 'Beat it to win ' + esc(E.DECKS[story.starter].name) + ' for your collection, along with every card you pick on the way.') + '</p>' +
       '<button type="button" class="btn primary big" ' + act('beginRun') + '>Begin the run</button></aside></div></div>', setup);
   }
   function chapterPanel(run, i) {
     var story = Campaign.storyOf(run), c = story.chapters[i], head = '<p class="eyebrow">Chapter ' + (i + 1) + ' of ' + story.chapters.length + '</p><h2>' + esc(c.title) + '</h2>';
     if (i > run.chapter) return '<div class="story">' + head + '<p>You haven\'t reached this yet.</p></div>';
-    var foe = '<p class="foe">' + symbol(c.enemy.colours[0]) + esc(c.enemy.name) + '</p>';
+    var foe = '<p class="foe">' + symbol(c.enemy.colours[0]) + esc(c.enemy.name) + '</p>', held = Campaign.unitsOf(run.story, i, run.prestige);
+    if (held.length && i >= run.chapter) foe += '<p class="hint">Already on the field: ' + esc(held.map(function (u) { return E.CARDS[u[1]].name; }).join(' and ')) + '.</p>';
     if (i < run.chapter) return '<div class="story">' + head + '<p>' + esc(c.text) + '</p>' + foe + '<p class="cleared">Cleared</p></div>';
     return '<div class="story">' + head + '<p>' + esc(c.text) + '</p>' + foe + '</div>' +
       '<button type="button" class="btn primary big" ' + act('fight') + '>' + (run.battle ? 'Continue the battle' : 'Fight') + '</button>';
@@ -382,7 +390,7 @@ var Screens = (function () {
       ? '<span class="dask">End this run for good?</span><button type="button" class="btn danger" ' + act('abandonRun') + '>End run</button><button type="button" class="btn" ' + act('keepRun') + '>Keep going</button>'
       : '<button type="button" class="btn" ' + act('askAbandon') + '>Abandon run</button>';
     // Abandoning sits in the header, where it can't fall below the fold.
-    show('<div class="page">' + campaignHead(story.title, leave) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
+    show('<div class="page">' + campaignHead(story.title, leave, run.prestige) + '<div class="camp">' + mapHtml(story, run.chapter, picked) +
       '<aside class="cside">' + chapterPanel(run, picked) +
       '<p class="hint">Your enemies are played by ' + opponentName(run.player) + '.</p></aside></div>' +
       runDeck(run) + '</div>', campaign);
@@ -417,8 +425,9 @@ var Screens = (function () {
     var cards = run.taken.filter(function (id) { return E.CARDS[id].type !== 'land'; }).map(function (id) { return E.CARDS[id].name; }), prize = run.prize;
     var taken = !won ? (cards.length ? 'The cards you picked on this run are lost with it.' : '')
       : prize && prize.t === 'clear' ? E.DECKS[story.starter].name + (cards.length ? ', ' + cards.join(', ') : '') + ' and ' + prize.gold + ' gold join your collection.'
+      : prize && prize.prestige ? 'You beat it on prestige: it paid ' + prize.gold + ' gold, and the campaign now wears its prestige badge.'
       : prize ? 'You\'d beaten this campaign before, so it paid ' + prize.gold + ' gold instead of cards.' : '';
-    show('<div class="page rend"><div class="story"><p class="eyebrow">' + esc(story.title) + '</p><h2>' + (won ? 'The road ends here' : 'The run is over') + '</h2>' +
+    show('<div class="page rend"><div class="story"><p class="eyebrow">' + esc(story.title) + (run.prestige ? ' · Prestige' : '') + '</p><h2>' + (won ? 'The road ends here' : 'The run is over') + '</h2>' +
       '<p>' + esc(won ? story.ending : story.defeat) + '</p>' +
       '<p class="hint">' + (won ? 'You cleared all ' + story.chapters.length + ' chapters.' : 'You fell at ' + esc(c.title) + ', chapter ' + (run.chapter + 1) + ' of ' + story.chapters.length + '.') + ' ' + esc(taken) + '</p></div>' +
       '<div class="cleave"><button type="button" class="btn primary" ' + act('newRun') + '>Start a new run</button><button type="button" class="btn" ' + act('leaveEnd') + '>Main menu</button></div></div>', campaign);
@@ -433,7 +442,8 @@ var Screens = (function () {
   actions.campaign = function () { mapPick = null; confirmAbandon = false; swapIn = null; campaign(); };
   actions.setPlayer = function (key) { setupPlayer = key; setup(); };
   actions.setStory = function (id) { setupStory = id; setup(); };
-  actions.beginRun = function () { Campaign.begin(setupStory, setupPlayer); actions.campaign(); };
+  actions.setPrestige = function (on) { setupPrestige = !!on; setup(); };
+  actions.beginRun = function () { Campaign.begin(setupStory, setupPlayer, undefined, setupPrestige && !!Progress.cleared(setupStory)); actions.campaign(); };
   actions.mapPick = function (i) { mapPick = +i; campaign(); };
   actions.fight = function () { GameUI.playChapter(); };
   // A card just won comes back already picked, ready to swap in.

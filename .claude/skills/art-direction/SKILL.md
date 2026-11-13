@@ -92,7 +92,7 @@ The current review gallery, exact prompts and full review history remain in `bre
 
 **Lessons of Brass; The Cost of the Flame; Between Two Breaths** are rejected paintings and deleted with their generated sources. The creator nevertheless likes **Ambrel teaching magic as a practical trade** as a setting idea; preserve that direction.
 
-**Black Enamel, Open Road** received no verdict and stays pending in the original work-in-progress folder. It supplies the requested male kit-wearer study, but is not an additional selected card or a faction uniform. These review decisions select no cards and do not finalize other batches.
+**Black Enamel, Open Road** was dropped (creator, 2026-11-13); the painting and its generated source are deleted. These review decisions select no cards and do not finalize other batches.
 
 ## Round 08 review and card selections (2026-11-10)
 
@@ -104,7 +104,7 @@ Twelve subjects are selected to become cards: **Cinderline Veteran; Redglass Fal
 
 For **A Door into Snow**, use the FIRST fuller-bust in-scene character variant: `breachline/art/nsfw/door-into-snow-character.png`. An unchanged accepted copy is in `breachline/art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png`. This explicit card selection supersedes collection-wide separation for that one image only. Do not substitute later FAL, pinup, swimwear or summer-scene versions.
 
-The creator also wants **Black Enamel Field Kit put on a character**. Preserve the liked kit; wearer identity and final card remain open. The creator initially paused generation to clarify the setting, then requested a new concept-art batch using those answers. The male wearer is now painted in round-09 image 03, awaiting review; it is not an additional finalized card selection.
+The creator also wants **Black Enamel Field Kit put on a character**. Preserve the liked kit; wearer identity and final card remain open. The creator initially paused generation to clarify the setting, then requested a new concept-art batch using those answers. The round-09 male-wearer study (image 03) was dropped (creator, 2026-11-13), so the kit's wearer is still open.
 
 ## Adult character and pinup variants (creator request, 2026-11-09)
     

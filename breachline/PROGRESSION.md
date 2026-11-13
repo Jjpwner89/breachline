@@ -21,7 +21,7 @@ How players collect cards and move through the game. Built on 2026-11-10 in `rar
 - **Crafting:** duplicates break down into shards, which craft the cards you choose.
 - **Collection milestones:** completing a faction's set earns a card back or a title.
 - **Exhibition:** your decks are built from cards you own. The opponent can use any deck, or a random one.
-- **Prestige difficulty:** harder replays of a campaign you've cleared. A replay doesn't have to be prestige: the player chooses normal or prestige each time (creator, 2026-11-13). Built in the dev thread.
+- **Prestige difficulty (built 2026-11-13):** harder replays of a campaign you've cleared. A replay doesn't have to be prestige: the player chooses normal or prestige each time. Stronger enemy decks, enemy units already on the field from chapter 4, double gold and a badge for a prestige clear. Details in `CAMPAIGN.md`.
 - **Lore codex:** wanted. The creator builds it in the setting thread, not the dev thread (2026-11-13).
 - **Sealed mode:** wanted later.
 - **Save file:** you can save your whole progress to a file and load it back.
@@ -50,9 +50,7 @@ Everything below is drawn in code for now, so it can be tested. Codex paintings 
 
 ## Campaign work left
 
-- Retune the enemy decks so each campaign climbs steadily and the five clear at similar rates (numbers in `CAMPAIGN.md`). Waits for the balance thread.
-- Prestige difficulty for campaigns you've beaten, with better gold.
-- Preset enemy units, the proposal in `CAMPAIGN.md`, on prestige difficulty only: normal campaigns are hard enough (creator, 2026-11-13).
+- Retuning the enemy decks is done (2026-11-13): each campaign climbs steadily and the five clear at similar rates, numbers in `CAMPAIGN.md`.
 - Saving a campaign run to the account, not just this browser.
 
 ## Claude's proposals, not yet confirmed

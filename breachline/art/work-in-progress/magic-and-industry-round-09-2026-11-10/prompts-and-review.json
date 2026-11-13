@@ -2,7 +2,7 @@
   "created": "2026-11-10",
   "project": "Breachline",
   "batch": "Magic and industry round 09",
-  "status": "Reviewed: two accepted references, three rejected paintings deleted; Black Enamel, Open Road remains pending.",
+  "status": "Reviewed: two accepted references, four rejected paintings deleted.",
   "image_count": 6,
   "generation_method": "built-in image_gen",
   "canonical_setting": "../../../SETTING.md",
@@ -98,7 +98,7 @@
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. A compelling three-quarter-length portrait of a male roadwarden standing on a hillside road just after rain, dark clouds breaking over green fields and a quiet stone bridge. He is a solid practical adult man around forty-five, broad uneven face, pronounced nose, slightly heavy eyelids, short dark hair going grey, close beard and one imperfect eyebrow; appealing through character, not a model. His posture is relaxed but ready, one shoulder angled forward as he looks down the road past us. He wears the specific BLACK ENAMEL FIELD KIT: beautifully fitted late-medieval blackened steel breastplate with a narrow standing collar, strongly shaped waist, subtle raised sweeping curved flutes meeting at the sternum and along the lower ribs, a small tapered point at the bottom, worn bright steel on selected ridges and small brass rivets down the sides. Burgundy quilted cloth appears at neck and upper arms; modest mail at elbows. This is simple excellent construction, not many leather layers. His helmet is a black rounded steel cap with a modest swept brim and separate curved cheek plates lined dark red, hanging securely at his belt rather than covering his face. A slim curved single-edged steel saber with a black curved grip and simple silver S-like guard remains sheathed at his other hip; a small plain field knife sits beside it. Both arms visible and natural: one hand rests on a milestone, the other loosely holds his ordinary gloves. A short dark moss-green shoulder cloak ends around the hip. Afternoon pale gold catches the breastplate edge; the rest is convincing dark painted metal, not mirror chrome. Focal face and beautiful plate forms, less detail in distant farms. Equipment belongs to an individual. No glowing armor, enormous shoulder plates, medals, extra straps or gadget gauntlets.",
       "file": "03-black-enamel-open-road.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6dcd8712-edab-484a-8e45-93d3a1f61ff2.png",
-      "review_status": "awaiting_creator_review",
+      "review_status": "rejected_deleted",
       "active_reference": false,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
@@ -106,7 +106,8 @@
         1536,
         1024
       ],
-      "sha256": "8dbef03f49564b1c3ef00e85f7303bd2171e3b63e4c3abd2542c7bc4b824f402"
+      "sha256": "8dbef03f49564b1c3ef00e85f7303bd2171e3b63e4c3abd2542c7bc4b824f402",
+      "creator_review": "2026-11-13: dropped with the other unwanted concept art; image and generated source deleted."
     },
     {
       "id": "04",
@@ -216,10 +217,9 @@
   ],
   "rejected_image_ids": [
     1,
+    3,
     4,
     5
   ],
-  "pending_revision_ids": [
-    3
-  ]
+  "pending_revision_ids": []
 }

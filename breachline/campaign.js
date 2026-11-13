@@ -211,6 +211,69 @@ var Campaign = (function () {
     }
   };
 
+  // Prestige (creator, 2026-11-13): a harder replay of a campaign you've cleared, chosen instead of normal each time.
+  // Each chapter's enemy swaps some of its weaker cards for stronger ones in its colours, as [out, in, copies], and
+  // chapters 4 to 6 start with cheap enemy units already on the board: a unit ready on turn 1 is worth far more than its
+  // cost, so chapter 6 gets two of them and no swaps. Each chapter is tuned to be about 12-15 points harder for the
+  // starter deck than on normal; CAMPAIGN.md has the numbers.
+  var PRESTIGE = {
+    vigil: [
+      { swap: [['goblin', 'raider', 2], ['goblin', 'berserker', 1], ['scorch', 'berserker', 2], ['youngsummoner', 'packhunter', 1], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['sapling', 'pathguard', 2], ['goblinscout', 'mossback', 2]] },
+      { swap: [['goblin', 'berserker', 3], ['clanraiders', 'packhunter', 3], ['scorch', 'cinderfall', 2], ['firepot', 'drake', 2]] },
+      { swap: [['glimmer', 'rimebolt', 3], ['apprentice', 'marksman', 2], ['sifting', 'brightlance', 1], ['lampwright', 'chorister', 2]], units: ['apprentice'] },
+      { swap: [['rats', 'shutterassassin', 3], ['thrall', 'envoy', 2], ['raise', 'siphon', 1]], units: ['harvester'] },
+      { swap: [], units: ['thrall', 'rats'] }
+    ],
+    gnosis: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 1], ['scorch', 'berserker', 2], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'alderkin', 2], ['shifting', 'overgrowth', 1]] },
+      { swap: [['rats', 'shutterassassin', 3], ['youngsummoner', 'envoy', 1], ['thrall', 'envoy', 2], ['informant', 'hostess', 2], ['raise', 'siphon', 1], ['gravesoil', 'siphon', 1]] },
+      { swap: [['spearman', 'huntress', 2], ['carrier', 'outrider', 2]], units: ['carrier'] },
+      { swap: [['rats', 'assassin', 3], ['youngsummoner', 'envoy', 3]], units: ['rats'] },
+      { swap: [], units: ['carrier', 'vigilkeeper'] }
+    ],
+    dominion: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 2], ['scorch', 'berserker', 1], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['youngsummoner', 'envoy', 3], ['rats', 'shutterassassin', 3]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'pathguard', 3]] },
+      { swap: [['glimmer', 'rimebolt', 3]], units: ['apprentice'] },
+      { swap: [['spearman', 'outrider', 3], ['carrier', 'huntress', 1], ['acolyte', 'knight', 1], ['acolyte', 'lioness', 1]], units: ['cub'] },
+      { swap: [], units: ['youngsummoner', 'youngsummoner'] }
+    ],
+    fervor: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 3], ['coalback', 'packhunter', 3]] },
+      { swap: [['decoy', 'rimebolt', 2], ['sifting', 'brightlance', 2]] },
+      { swap: [['rats', 'shutterassassin', 3], ['gravesoil', 'siphon', 2], ['informant', 'envoy', 1], ['thrall', 'envoy', 2], ['noble', 'hostess', 2]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'alderkin', 3]], units: ['goblinscout'] },
+      { swap: [['spearman', 'outrider', 3]], units: ['spearman'] },
+      { swap: [], units: ['carrier', 'cub'] }
+    ],
+    genesis: [
+      { swap: [['goblin', 'berserker', 1], ['scorch', 'raider', 3], ['youngsummoner', 'berserker', 2]] },
+      { swap: [['decoy', 'rimebolt', 3], ['glimmer', 'marksman', 2], ['phantasm', 'chorister', 1]] },
+      { swap: [['goblin', 'berserker', 3], ['anoint', 'raider', 3], ['clanraiders', 'packhunter', 3]] },
+      { swap: [['spearman', 'outrider', 3], ['pilgrim', 'knight', 1], ['banner', 'knight', 2]], units: ['cub'] },
+      { swap: [['phantasm', 'marksman', 2]], units: ['apprentice'] },
+      { swap: [], units: ['informant', 'informant'] }
+    ]
+  };
+  // Starting units stand in the enemy's back row, from the middle out.
+  var GARRISON = [2, 1, 3, 0, 4];
+  // Prestige pays double gold where a normal replay pays half again, and its rewards lean further toward rare cards.
+  var PRESTIGE_GOLD = 2;
+  function enemyOf(storyId, i, prestige) {
+    var foe = STORIES[storyId].chapters[i].enemy, hard = prestige && PRESTIGE[storyId] && PRESTIGE[storyId][i];
+    if (!hard) return foe;
+    var list = foe.list.map(function (e) { return e.slice(); });
+    hard.swap.forEach(function (x) { addTo(list, x[0], -x[2]); addTo(list, x[1], x[2]); });
+    return { name: foe.name, colours: foe.colours, list: list };
+  }
+  function unitsOf(storyId, i, prestige) {
+    var hard = prestige && PRESTIGE[storyId] && PRESTIGE[storyId][i];
+    return ((hard && hard.units) || []).map(function (id, n) { return [1, id, 0, GARRISON[n]]; });
+  }
+
   function landOf(colour) { return 'land_' + colour.toLowerCase(); }
   function known(id) { return Object.prototype.hasOwnProperty.call(E.CARDS, id); }
   function rand(run) {
@@ -248,6 +311,7 @@ var Campaign = (function () {
     if (!story || !Array.isArray(run.list) || run.chapter !== (run.chapter | 0) || run.chapter < 0 || run.chapter >= story.chapters.length) return null;
     run.list = run.list.filter(function (e) { return known(e[0]); });
     if (!run.list.length) return null;
+    run.prestige = run.prestige === true;
     run.spare = (Array.isArray(run.spare) ? run.spare : []).filter(function (e) { return known(e[0]) && e[1] > 0; });
     if (!battleOk(run.battle)) run.battle = null;
     if (run.status === 'reward' && !(run.offer && run.offer.cards.concat(run.offer.lands).every(known))) run.offer = makeOffer(run);
@@ -259,11 +323,11 @@ var Campaign = (function () {
     try { return checked(JSON.parse(raw)); } catch (e) { return null; }
   }
 
-  function begin(storyId, player, seed) {
+  function begin(storyId, player, seed, prestige) {
     var story = STORIES[storyId];
     ended = null;
     var run = {
-      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [], spare: [],
+      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [], spare: [], prestige: !!prestige,
       seed: (seed === undefined ? Math.floor(Math.random() * 2147483647) : seed) | 0,
       list: E.DECKS[story.starter].list.map(function (e) { return e.slice(); })
     };
@@ -273,8 +337,9 @@ var Campaign = (function () {
   function storyOf(run) { return STORIES[run.story]; }
   function chapterOf(run) { return storyOf(run).chapters[run.chapter]; }
   function decks(run) {
-    return [{ name: E.DECKS[storyOf(run).starter].name, colours: [storyOf(run).colour], list: run.list }, chapterOf(run).enemy];
+    return [{ name: E.DECKS[storyOf(run).starter].name, colours: [storyOf(run).colour], list: run.list }, enemyOf(run.story, run.chapter, run.prestige)];
   }
+  function units(run) { return unitsOf(run.story, run.chapter, run.prestige); }
 
   function countIn(list, id) {
     var e = list.filter(function (x) { return x[0] === id; })[0];
@@ -296,7 +361,7 @@ var Campaign = (function () {
   // Rare and legendary cards turn up more often as a campaign goes on; commons and uncommons stay steady.
   function weight(run, id) {
     var r = typeof Rarity !== 'undefined' ? Rarity.of(id) : 'c';
-    return r === 'c' ? 3 : r === 'u' ? 2 : 0.5 + 0.3 * run.chapter;
+    return r === 'c' ? 3 : r === 'u' ? 2 : run.prestige ? 1 + 0.5 * run.chapter : 0.5 + 0.3 * run.chapter;
   }
   function draw(run, from, out) {
     var left = from.filter(function (id) { return out.indexOf(id) < 0; });
@@ -317,11 +382,11 @@ var Campaign = (function () {
   // Each list's slot goes to any card of your colour instead 30% of the time, so runs still surprise.
   var WILD = 0.3;
   // One card from each of the campaign's two lists and one from the enemy you just beat, or a land for either, so a
-  // deck can keep up its mana. No neutral cards (creator, 2026-11-13).
+  // deck can keep up its mana. No neutral cards (creator, 2026-11-13). A prestige run draws both from all of your colour.
   function makeOffer(run) {
     var story = storyOf(run), foe = chapterOf(run).enemy.colours[0], cards = [], own = rewardable(run, [story.colour]), lists = REWARDS[run.story] || {};
     [lists.double, lists.fresh].forEach(function (list) {
-      var pick = rand(run) < WILD ? own : own.filter(function (id) { return (list || []).indexOf(id) >= 0; });
+      var pick = run.prestige || rand(run) < WILD ? own : own.filter(function (id) { return (list || []).indexOf(id) >= 0; });
       if (!draw(run, pick, cards)) draw(run, own, cards);
     });
     if (foe === story.colour || !draw(run, rewardable(run, [foe]), cards)) draw(run, own, cards);
@@ -378,7 +443,8 @@ var Campaign = (function () {
   function abandon() { ended = null; write(null); }
 
   return {
-    ORDER: ORDER, STORIES: STORIES, REWARDS: REWARDS, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
+    ORDER: ORDER, STORIES: STORIES, REWARDS: REWARDS, PRESTIGE: PRESTIGE, PRESTIGE_GOLD: PRESTIGE_GOLD, enemyOf: enemyOf, unitsOf: unitsOf,
+    current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, units: units, saveBattle: saveBattle,
     finish: finish, take: take, swap: swap, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
     persistent: function () { return !!store; }
   };

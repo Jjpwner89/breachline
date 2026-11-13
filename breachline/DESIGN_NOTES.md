@@ -320,7 +320,7 @@ The claude.ai pages are private to the Claude account that made them. The game, 
 
 ## Art direction handoff
 
-The creator's 2026-11-13 concept review is applied: ten references accepted, eighteen studies and two superseded versions cut. See [the reference decisions](art/reference-library-2026-11-06/review-decisions-2026-11-13.json) and updated art-direction skill. Black Enamel, Open Road remains pending. These selections choose no cards; Ambrel's practical magical teaching is retained in SETTING.md despite cutting its painting. Claude's temporary verdict handoff is consumed and removed.
+The creator's 2026-11-13 concept review is applied: ten references accepted, eighteen studies and two superseded versions cut. See [the reference decisions](art/reference-library-2026-11-06/review-decisions-2026-11-13.json) and updated art-direction skill. Black Enamel, Open Road was dropped afterwards (creator, 2026-11-13). These selections choose no cards; Ambrel's practical magical teaching is retained in SETTING.md despite cutting its painting. Claude's temporary verdict handoff is consumed and removed.
 
 The creator's 2026-11-08 and 2026-11-09 direction is incorporated in the [art-direction skill](../.claude/skills/art-direction/SKILL.md), the card and interface brief entry points, prompt defaults and the [reference guide](art/reference-library-2026-11-06/README.txt). Consult the current defaults before preparing art; original generation prompts remain provenance.
 

@@ -19,6 +19,7 @@ When an idea is built, delete it from this list.
 
 - **Shrines on the map.** Middle tiles that give a card or mana each turn you hold them, so both sides have a reason to push forward. Campaign chapters could each have their own.
 - **Hidden traps.** A face-down trap on a tile that the enemy can't see.
+- **Stacking prestige tiers.** Prestige II, III and on, each a little harder than the last, unlocked by clearing the one before. Prestige has one tier for now (2026-11-13).
 
 ## Where these came from
 
