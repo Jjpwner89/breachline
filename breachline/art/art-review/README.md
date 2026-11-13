@@ -23,3 +23,5 @@ Run this from this folder, then restart the server. Rebuilding preserves feedbac
 Data scope: Set 7–11 praise audit contains 56 surviving paintings. Final approval is not the same as explicit praise. No comment is not a negative. Unassigned concepts are not silently counted as Genesis or Gnosis. The title, reference role and assigned alignment remain separate from an artwork’s canon status.
 
 External reference originals can retain provenance paths outside the repository. Their cached previews are included; the review server uses those previews when an original is unavailable on another computer.
+
+The 2026-11-13 review is applied. `path-aliases.json` preserves artwork IDs and saved choices when accepted paintings move into the reference library. Cut images have no cached preview; their records remain only as textual history. The ten keepers are accepted references, while Black Enamel, Open Road is still pending.

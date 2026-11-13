@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "scope": "Normal art and proposed character/species references",
-  "status": "pending_creator_selection",
+  "status": "Finalized: five accepted sheets; eight rejected studies and the earlier Squall version deleted.",
   "source_feedback": "Prior export plus current chat corrections; images are not votes or lore decisions.",
   "images": [
     {
@@ -17,11 +17,11 @@
       "intent": "Songweaver's original identity in the ordinary face-sheet finish, plus seven varied adult faces.",
       "prompt": "Transform the supplied face and style references into ONE new Breachline human reference sheet, landscape 1536x1024, exactly EIGHT separate head-and-shoulder portraits in two rows of four on a clean warm ivory background. Reference image 1 defines the existing reference-sheet presentation: hand-painted oil studies with connected planar brushwork, matte skin, natural asymmetry, strong anatomy, modest gradual changes of detail, loose simple linen collars. Match that unified painted visual language, do not copy its eight faces. Reference image 2 supplies ONLY the specifically named woman's FACE, not its scene or outfits. Every portrait is a different clearly adult human; keep spacing generous, heads equal useful scale, complete hair and chin within canvas, no overlap, simple opaque ivory linen shirts to base of neck, no hands. Real observed faces, recognizable distinctions in eyes/noses/jaws/mouths, a range of age and complexion. Some attractive, some ordinary, all individualized; no repeated model-face or caricatures. Matte faces, restrained small eye accents, no waxy digital sculpting, no pore-level photorealism, no filter texture or random scratchy marks. No title, labels, text, frames or panels.\nTOP ROW LEFT TO RIGHT:\n1. Jade-ribbon Songweaver, woman27, exact identity of the RIGHT woman in reference image2: Korean-inspired heart-shaped face, almond eyes, soft distinctive nose and lips, low braided black knot, small jade pin and jade drops. Preserve face geometry and likeness from that reference; a natural faint smile with lips together, three-quarter view. Her original lightly elegant beauty remains without beautifying all other faces.\n2. Man52, very dark brown skin, long rectangular face, strong round broad nose, deeply set wide-spaced eyes, receding tightly curled hair, narrow graying moustache, alert attentive expression, slight three-quarter left.\n3. Woman38, fair freckled skin, broad square jaw, heavy straight eyebrows, slightly crooked hooked nose, cropped auburn hair with uneven fringe, serious intent, almost frontal.\n4. Man24, warm brown skin, thin long face, prominent convex nose, large ears, black close curls, short sparse beard, amused side glance.\nBOTTOM ROW LEFT TO RIGHT:\n5. Woman68, olive skin, heavy-lidded green-brown eyes, long strong nose, soft sagging cheeks, graying brown hair braided across crown, dignified slightly weary expression.\n6. Man43, East Asian-inspired rounded broad face, narrow eyes and wide flat-bridged nose, short straight black hair, clean shaven, gentle lopsided grin.\n7. Woman31, deep brown skin, narrow angular face, high broad cheekbones, rounded full nose, short natural coiled hair, dark thoughtful eyes, calm.\n8. Man72, pale weathered skin, compact face, broad broken nose, thinning white hair and blunt beard, kind stern brow, thin lips.\nAll eight have distinct plausible proportions and the same coherent painting finish.",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-dcc63aae-18c7-4e25-a267-90fe8d2b5a30.png",
-      "file": "01-human-faces-songweaver-and-new-neighbors.png",
+      "file": "../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
       "review_code": "H1",
-      "status": "pending_creator_review",
-      "active_reference": false,
-      "reference_candidate": true,
+      "status": "creator_accepted",
+      "active_reference": true,
+      "reference_candidate": false,
       "assistant_review": "Eight distinct adults; Songweaver retained at top left. Creator asked to keep this identity as shown; sheet remains pending overall selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -38,7 +38,19 @@
         1536,
         1024
       ],
-      "catalog_id": "0db98d51866363a9d9be"
+      "catalog_id": "0db98d51866363a9d9be",
+      "review_status": "creator_accepted",
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "staged_file": "01-human-faces-songweaver-and-new-neighbors.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen."
+        }
+      ]
     },
     {
       "n": 2,
@@ -53,11 +65,11 @@
       "intent": "Cloud-silk's original identity in the ordinary face-sheet finish, plus seven additional adult faces.",
       "prompt": "Transform the supplied face and style references into ONE new Breachline human reference sheet, landscape 1536x1024, exactly EIGHT separate head-and-shoulder portraits in two rows of four on a clean warm ivory background. Reference image 1 defines the existing reference-sheet presentation: hand-painted oil studies with connected planar brushwork, matte skin, natural asymmetry, strong anatomy, modest gradual changes of detail, loose simple linen collars. Match that unified painted visual language, do not copy its eight faces. Reference image 2 supplies ONLY the specifically named woman's FACE, not its scene or outfits. Every portrait is a different clearly adult human; keep spacing generous, heads equal useful scale, complete hair and chin within canvas, no overlap, simple opaque ivory linen shirts to base of neck, no hands. Real observed faces, recognizable distinctions in eyes/noses/jaws/mouths, a range of age and complexion. Some attractive, some ordinary, all individualized; no repeated model-face or caricatures. Matte faces, restrained small eye accents, no waxy digital sculpting, no pore-level photorealism, no filter texture or random scratchy marks. No title, labels, text, frames or panels.\nTOP ROW LEFT TO RIGHT:\n1. Cloud-silk illusionist, woman29, exact identity of the RIGHT woman in reference image2: Chinese-inspired long oval face, gently bridged slender nose, original almond eyes and full shaped lips, long black hair half-up with a small jade pin. Preserve her reference's distinctive face proportions, a small knowing closed-mouth smile, three-quarter facing left. Do not blend her with the left-hand woman or substitute Songweaver's shorter heart-shaped face.\n2. Man35, warm olive skin, broad high cheekbones, large slightly projecting ears, close-set amber eyes, long beaked nose, thick wavy chestnut hair, stubble, reserved.\n3. Woman56, dark warm brown skin, broad soft square face, blunt round nose, hooded eyes, silver-black short tight curls, purposeful direct gaze, unsmiling.\n4. Man21, pale skin with subtle freckles, very long face and thin lips, wide-set gray eyes, curly straw-blond hair, small pointed chin, shy curiosity.\nBOTTOM ROW LEFT TO RIGHT:\n5. Woman44, medium golden brown skin, very broad cheekbones and compact jaw, dark straight eyebrows, flat broad nose, straight black hair in two simple braids, slightly narrowed amused eyes.\n6. Man64, medium-brown skin, deep-set dark eyes, long drooping nose, strong receding chin, thinning straight gray hair and sparse gray beard, searching gaze.\n7. Woman25, pale warm skin, elongated asymmetric face, prominent slightly convex nose, full lower lip, hazel eyes, shoulder-length dark-blond waves loosely tied, open friendly expression, not glamour posing.\n8. Man47, dark brown skin, round full face, a gap visible in a small easy smile, wide blunt nose, shaved head, short salt-and-pepper beard, very distinctive.\nNo repeated face or age template; exactly eight portraits.",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a2587e01-7a94-4b64-b3f9-08ef15893e32.png",
-      "file": "02-human-faces-cloud-silk-and-new-neighbors.png",
+      "file": "../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
       "review_code": "H2",
-      "status": "pending_creator_review",
-      "active_reference": false,
-      "reference_candidate": true,
+      "status": "creator_accepted",
+      "active_reference": true,
+      "reference_candidate": false,
       "assistant_review": "Eight distinct adults; Cloud-silk retained at top left. Creator asked to keep this identity as shown; sheet remains pending overall selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -74,7 +86,19 @@
         1536,
         1024
       ],
-      "catalog_id": "424027016a07d9ae2e78"
+      "catalog_id": "424027016a07d9ae2e78",
+      "review_status": "creator_accepted",
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "staged_file": "02-human-faces-cloud-silk-and-new-neighbors.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen."
+        }
+      ]
     },
     {
       "n": 3,
@@ -88,11 +112,11 @@
       "intent": "Eight white adult men with clearly different ages, face shapes and expressions.",
       "prompt": "Use the attached existing Breachline human face sheet as the painting and layout template only. Replace ALL eight people with EIGHT DIFFERENT WHITE ADULT MEN, head-and-shoulder portraits, 2 rows of 4, landscape1536x1024. Clean warm ivory background, equal large heads, full hair/chin visible, generous spaces, plain opaque ivory linen necklines. Painted oil realism, the same confident connected planes and matte finish as the supplied sheet, simple shadows with restrained small eye lights, naturally resolved faces and progressively simpler collars. No camera blur, waxy gloss, random scratch texture, pore rendering or repeated faces. Do not recreate faces already on the reference. A credible varied cast rather than eight models or eight warriors. No text labels border panels or hands.\nTop left to right: \n1. A 22-year-old slim pale man, long face, prominent ears, slightly crooked narrow nose, dark hazel eyes, untidy short chestnut curls, clean shaven, eager open smile with naturally irregular teeth.\n2. A 38-year-old broad heavyset fair man, round cheek planes, small alert blue eyes, wide broken boxer nose, straight thinning dark-blond hair, short bristly moustache, sober attentive expression. Weight visible in neck and face, without caricature.\n3. A 56-year-old ruddy weathered man, long narrow bony face, hooked nose, pale green eyes, deep temples, shoulder-length graying black hair tied back, unshaven beard shadow, skeptical half-raised brow.\n4. A 70-year-old white-haired man with pale olive skin, asymmetric heavy eyelids, deep-set brown eyes, wide high forehead, short blunt nose, clean shaven with loose cheeks, quiet amused expression.\nBottom left to right:\n5. A 29-year-old very fair red-haired man, dense freckles, angular jaw, thick eyebrows, blue-gray eyes, broad upper nose, sparse short red beard, restrained crooked smile.\n6. A 45-year-old fair bald man, sturdy square face, large convex nose, gray eyes, dark stubble, lips slightly compressed in concentration, a subtle old eyebrow scar.\n7. A 61-year-old stocky white man with warm fair complexion, full white moustache but no beard, short curly gray hair, wide-set green eyes, large rounded nose, warm grin, thick neck.\n8. A 33-year-old white man with light olive complexion, slim oval face, long straight brown hair tucked behind ears, full lower lip, gentle brown eyes, distinctive slightly receding chin, a composed listening expression.\nVary front and three-quarter views with readable anatomy, modest asymmetry, and unified natural brushwork.",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-5cee0937-2187-45b9-bdf4-cd3218dd2ba1.png",
-      "file": "03-human-faces-white-men.png",
+      "file": "../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
       "review_code": "H3",
-      "status": "pending_creator_review",
-      "active_reference": false,
-      "reference_candidate": true,
+      "status": "creator_accepted",
+      "active_reference": true,
+      "reference_candidate": false,
       "assistant_review": "Eight adult white men with varied ages, face shapes and builds. Pending selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -105,7 +129,19 @@
         1536,
         1024
       ],
-      "catalog_id": "d6c70ed4e1d3fa1e3aba"
+      "catalog_id": "d6c70ed4e1d3fa1e3aba",
+      "review_status": "creator_accepted",
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets.",
+      "staged_file": "03-human-faces-white-men.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets."
+        }
+      ]
     },
     {
       "n": 4,
@@ -121,7 +157,7 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-22c3d264-df8b-41dc-9821-f78414650259.png",
       "file": "04-genesis-over-the-fallen-beech.png",
       "review_code": "A1",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
       "reference_candidate": false,
       "assistant_review": "Clear forward movement and territorial intent; open trunk and root-leg contact remain readable. Pending review.",
@@ -136,7 +172,21 @@
         1536,
         1024
       ],
-      "catalog_id": "29ad105a023c79784dc6"
+      "catalog_id": "29ad105a023c79784dc6",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "04-genesis-over-the-fallen-beech.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-22c3d264-df8b-41dc-9821-f78414650259.png"
+      ]
     },
     {
       "n": 5,
@@ -152,7 +202,7 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-54a3e6fb-5c76-4dde-9cd0-13d19a27ca9f.png",
       "file": "05-fervor-through-the-squall.png",
       "review_code": "A2",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
       "reference_candidate": false,
       "assistant_review": "Original action had overly shiny skin per creator. Restrained matte correction is the current candidate; anatomy and scene preserved, awaiting review.",
@@ -164,10 +214,14 @@
         }
       ],
       "previous_version": {
-        "file": "originals/05-through-the-squall-before-skin-review.png",
+        "file": null,
         "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a08f27e8-a38d-40cf-9e33-0a5bf77ea394.png",
         "creator_feedback": "Face too shiny; one of the weaker surface treatments in this round.",
-        "status": "superseded_for_skin_review"
+        "status": "superseded_deleted",
+        "review_status": "superseded_deleted",
+        "deletion_date": "2026-11-13",
+        "deleted_file": "originals/05-through-the-squall-before-skin-review.png",
+        "creator_review_note": "Creator requested removal on 2026-11-13."
       },
       "revision_prompt": "Make one small, restrained surface-lighting correction to this exact Breachline action painting. The creator likes the coherent painted finish but finds the red-coated woman's face too shiny. Preserve the exact woman, recognizable face geometry, age, expression, hair, all anatomy including both hands, action pose, red coat and indigo clothes, composition, rain magic, background and original dimensions. Correct only the skin's specular appearance on face/neck and extended arm. Remove oily pinpoint highlights and hot peach-white streaks on forehead, nose, upper cheeks and chin. Bring those small hotspots down into the adjacent naturally colored light planes, with softly diffused overhead light and gentle transitions. Retain natural cheek color and the lively expression; no beautification or facial redesign. Keep a little small eye catchlight. Maintain broad confident painted facial forms, an ordinary human with dry matte skin. Do not flatten the face, darken it overall, blur, add wrinkles or gritty paint texture, make every brushstroke conspicuous, or turn this into a stylized cartoon. Very restrained revision; no other change.",
       "revision_reference": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a08f27e8-a38d-40cf-9e33-0a5bf77ea394.png",
@@ -175,7 +229,22 @@
         1536,
         1024
       ],
-      "catalog_id": "8d3634f95e619458149b"
+      "catalog_id": "8d3634f95e619458149b",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "05-fervor-through-the-squall.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-54a3e6fb-5c76-4dde-9cd0-13d19a27ca9f.png",
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a08f27e8-a38d-40cf-9e33-0a5bf77ea394.png"
+      ]
     },
     {
       "n": 6,
@@ -191,7 +260,7 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-1a733ecc-a01a-4883-8c3b-d4d33170c8cd.png",
       "file": "06-vigil-the-road-still-holds.png",
       "review_code": "A3",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
       "reference_candidate": false,
       "assistant_review": "Grounded protective stance with separate courier silhouette, clear shield action. Pending review.",
@@ -206,7 +275,21 @@
         1536,
         1024
       ],
-      "catalog_id": "160ce430bf31307f1009"
+      "catalog_id": "160ce430bf31307f1009",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "06-vigil-the-road-still-holds.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-1a733ecc-a01a-4883-8c3b-d4d33170c8cd.png"
+      ]
     },
     {
       "n": 7,
@@ -226,9 +309,9 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-4faaa41a-d9ee-49df-a1dd-5e3f32f8af9e.png",
       "file": "07-ravenfolk-exploration.png",
       "review_code": "C1",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
-      "reference_candidate": true,
+      "reference_candidate": false,
       "assistant_review": "Consistent wingless raven-derived anatomy in three views, varied faces. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -241,7 +324,22 @@
         1536,
         1024
       ],
-      "catalog_id": "9eed716bf6aa286fff3b"
+      "catalog_id": "9eed716bf6aa286fff3b",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "07-ravenfolk-exploration.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-4faaa41a-d9ee-49df-a1dd-5e3f32f8af9e.png"
+      ],
+      "lore_scope": "Painting rejected; existence of this people was not discussed."
     },
     {
       "n": 8,
@@ -257,9 +355,9 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-fdb2405e-27eb-4790-b9ae-6c9a488ce584.png",
       "file": "08-badgerfolk-exploration.png",
       "review_code": "C2",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
-      "reference_candidate": true,
+      "reference_candidate": false,
       "assistant_review": "Grounded adult proportions and readable facial marking variations. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -272,7 +370,22 @@
         1536,
         1024
       ],
-      "catalog_id": "c2fa88770dd46d2dfa30"
+      "catalog_id": "c2fa88770dd46d2dfa30",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "08-badgerfolk-exploration.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-fdb2405e-27eb-4790-b9ae-6c9a488ce584.png"
+      ],
+      "lore_scope": "Painting rejected; existence of this people was not discussed."
     },
     {
       "n": 9,
@@ -292,9 +405,9 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-25c0710c-3146-4b0a-a84a-e3af760d8053.png",
       "file": "09-mothfolk-exploration.png",
       "review_code": "C3",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
-      "reference_candidate": true,
+      "reference_candidate": false,
       "assistant_review": "Four working arms, two walking legs and folded wings read coherently. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -307,7 +420,22 @@
         1536,
         1024
       ],
-      "catalog_id": "8e6f46a6a8272375f874"
+      "catalog_id": "8e6f46a6a8272375f874",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "09-mothfolk-exploration.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-25c0710c-3146-4b0a-a84a-e3af760d8053.png"
+      ],
+      "lore_scope": "Painting rejected; existence of this people was not discussed."
     },
     {
       "n": 10,
@@ -323,9 +451,9 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-8d572137-fe47-445b-83f3-81c627a4d4eb.png",
       "file": "10-mineral-tripod-exploration.png",
       "review_code": "C4",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
-      "reference_candidate": true,
+      "reference_candidate": false,
       "assistant_review": "Result consistently uses FOUR upper arms and THREE walking legs, rather than the prompt’s three arms. Retained as an exploration with that visible anatomy; no lore or origin confirmed.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -338,7 +466,22 @@
         1536,
         1024
       ],
-      "catalog_id": "edfe1635b783e0e47f0c"
+      "catalog_id": "edfe1635b783e0e47f0c",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "10-mineral-tripod-exploration.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-8d572137-fe47-445b-83f3-81c627a4d4eb.png"
+      ],
+      "lore_scope": "Painting rejected; existence of this people was not discussed."
     },
     {
       "n": 11,
@@ -356,11 +499,11 @@
       ],
       "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nA straightforward original DWARF PEOPLE, adult height about1.3meters, compact strong bodies, broad ribcage and pelvis, short stout legs, forearms and hands substantial. Heads only modestly larger relative to body, normal adult facial structures rather than caricature, no gigantic noses or child proportions. Humanlike ears and intelligent humanlike faces. Representative is a middle-aged adult male with fair weathered skin, short chestnut hair, practical trimmed beard, ordinary strong nose and calm eyes, ivory shirt, brown trousers, plain brown boots, no oversized tools or ornaments. Show credible compact proportion in all three top views. Neutral ordinary stance.\nFour lower portraits: a young adult man with a broad clean-shaven face and pale freckles; a middle-aged woman with warm olive skin, a strong square jaw, small deep-set brown eyes and simple dark plait; an older man with brown skin, short gray curls and an unbraided salt-and-pepper beard; an older woman with fair complexion, broad blunt nose, white hair simply tied back and an amused asymmetrical expression. These are ordinary people of varied appearance, not a universal beard joke, metalworking profession, armor style or mountain culture. Dignified with believable flaws and everyday warmth. Skin MATTE under soft daylight, restrained cheek lights, no wet noses or glistening foreheads. Proposed physical design only.",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-816538f5-9967-42a0-8b7f-dc7524549ef5.png",
-      "file": "11-dwarf-people-exploration.png",
+      "file": "../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
       "review_code": "C5",
-      "status": "pending_creator_review",
-      "active_reference": false,
-      "reference_candidate": true,
+      "status": "creator_accepted",
+      "active_reference": true,
+      "reference_candidate": false,
       "assistant_review": "Familiar compact adult anatomy and ordinary faces. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -373,7 +516,19 @@
         1536,
         1024
       ],
-      "catalog_id": "a01061177dd0f7c1efc6"
+      "catalog_id": "a01061177dd0f7c1efc6",
+      "review_status": "creator_accepted",
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "staged_file": "11-dwarf-people-exploration.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation."
+        }
+      ]
     },
     {
       "n": 12,
@@ -391,11 +546,11 @@
       ],
       "prompt": "Transform the supplied Breachline species sheet into a NEW proposed intelligent people, using the image ONLY as a format and painted-style reference. No lion features. Landscape1536x1024. Warm ivory empty background. Top two thirds: THREE full-body studies of the SAME representative adult, front/side/back, head to feet fully visible, consistent anatomy and ordinary neutral relaxed stance. Lower third: FOUR larger portraits of DIFFERENT adult individuals of that same species, varied age and face proportions, expressing intelligence subtly. Leave clean margins and white space, no overlap. Simple practical neutral ivory cloth where described, no armor or faction symbols. This is a visual option, not confirmed lore. Traditional painted realism, restrained connected broad planes, matte natural material, soft diffuse daylight, quiet natural skin and fur highlights. Form through coherent light/shadow shapes, never wet glittering skin, plastic gloss, fur-by-fur hyperdetail, tiny white skin streaks, uniform sharpness, noisy scratch marks or camera blur. Colorfully observed but muted natural palette. No labels/text/borders/frame/scale bars.\nAn original straightforward intelligent freshwater RIVER PEOPLE, a restrained merfolk-like design that can walk on land. Lean human-height upright adults with TWO ordinary arms, TWO long legs and slightly broad webbed feet, dexterous five-finger webbed hands. Humanoid head structure with high cheeks, blunt soft nose bridge, calm dark eyes and small finlike ears, small natural gill folds at sides of neck. Short slicked-back sparse dark hair rather than a huge crest. Skin muted gray-olive with faint mottled warm brown and a small amount of very fine scaled structure at temples/forearms. Skin dry matte under diffuse sheet lighting, not wet shine or shiny fish scales. Quiet strangeness, everyday dignity and believable faces, not blue human beauty models.\nSimple ivory sleeveless tunic, plain knee-length brown wrap trousers, webbed feet bare, no shell jewelry, coral crowns or stereotypical trident. Four lower portraits: a younger narrow-faced gray-green adult, broad round-faced warm-brown adult with subtly darker mottling, older pale olive individual with gentle neckfolds, dark slate-green angular-faced adult with shorter fin-ears. Vary jaws/noses/eye spacing naturally while keeping coherent species anatomy. No tail instead of legs, no exaggerated fins or monstrous teeth. Neither occupation, alignment, social structure nor exact ecology is settled.",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-beb4b849-ce4d-4a83-9202-f3cab7e83679.png",
-      "file": "12-riverfolk-exploration.png",
+      "file": "../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
       "review_code": "C6",
-      "status": "pending_creator_review",
-      "active_reference": false,
-      "reference_candidate": true,
+      "status": "creator_accepted",
+      "active_reference": true,
+      "reference_candidate": false,
       "assistant_review": "Understated amphibious anatomy, walking legs and gill folds; variation remains subtle. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -408,7 +563,19 @@
         1536,
         1024
       ],
-      "catalog_id": "f327fd71ebc20e8b31e9"
+      "catalog_id": "f327fd71ebc20e8b31e9",
+      "review_status": "creator_accepted",
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "staged_file": "12-riverfolk-exploration.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation."
+        }
+      ]
     },
     {
       "n": 13,
@@ -428,9 +595,9 @@
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-0b319c47-37c9-403e-9a24-adfd9c60104b.png",
       "file": "13-rhinoceros-folk-exploration.png",
       "review_code": "C7",
-      "status": "pending_creator_review",
+      "status": "creator_rejected_deleted",
       "active_reference": false,
-      "reference_candidate": true,
+      "reference_candidate": false,
       "assistant_review": "Rhino-derived head/body with useful hands and natural weight; varied faces. Pending species selection.",
       "generation_mode": "Built-in image_gen",
       "reference_roles": [
@@ -443,10 +610,44 @@
         1536,
         1024
       ],
-      "catalog_id": "8f8dc122f44c5c0af428"
+      "catalog_id": "8f8dc122f44c5c0af428",
+      "review_status": "creator_rejected_deleted",
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "13-rhinoceros-folk-exploration.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-0b319c47-37c9-403e-9a24-adfd9c60104b.png"
+      ],
+      "lore_scope": "Painting rejected; existence of this people was not discussed."
     }
   ],
   "reference_audit": "reference-audit.json",
   "cancelled_work": "Three blanket human-sheet matte passes were terminated after creator clarification. Original sheets retained.",
-  "tool": "Built-in image_gen"
+  "tool": "Built-in image_gen",
+  "review_date": "2026-11-13",
+  "accepted_image_ids": [
+    1,
+    2,
+    3,
+    11,
+    12
+  ],
+  "rejected_image_ids": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13
+  ],
+  "pending_revision_ids": []
 }

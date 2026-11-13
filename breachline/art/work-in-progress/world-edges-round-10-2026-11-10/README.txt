@@ -1,6 +1,6 @@
-BREACHLINE — WORLD EDGES ROUND 10
-Reviewed 2026-11-10
+WORLD EDGES — ROUND 10
+Review applied 2026-11-13
 
-Five accepted paintings are now in the reference library. Goblin rider v2 and Velvet Stair v2 await review here. The rejected orc version and shoreline sea-creature image, including their generated sources, have been deleted under the creator’s standing review instructions. The liked pre-edit Velvet Stair is preserved in prior-versions.
+Finalized: six accepted references including Velvet Stair v2; both rider versions, earlier Velvet Stair and shoreline creature deleted.
 
-Open GALLERY.html for the current numbered review. Exact prompts, references, hashes and historical decisions are in prompts-and-review.json. A possible immense creature far out at sea remains unconfirmed in the setting notes.
+The gallery links accepted images from the reference library. Cut pictures and their generated sources are deleted; textual provenance remains. No cards selected. Other batches retain their own status.

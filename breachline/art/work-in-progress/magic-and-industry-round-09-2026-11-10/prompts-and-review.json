@@ -2,7 +2,7 @@
   "created": "2026-11-10",
   "project": "Breachline",
   "batch": "Magic and industry round 09",
-  "status": "Six exploratory paintings awaiting creator review",
+  "status": "Reviewed: two accepted references, three rejected paintings deleted; Black Enamel, Open Road remains pending.",
   "image_count": 6,
   "generation_method": "built-in image_gen",
   "canonical_setting": "../../../SETTING.md",
@@ -31,7 +31,7 @@
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. A richly lived-in university repair arcade in Ambrel, at clear morning light. The principal subject is an older male artisan-teacher with a long slightly crooked nose, receding grey hair, lean lined face and an ochre wool coat, watching an adult apprentice with short auburn hair and a broad ordinary face. She is repairing a heavy iron window hinge on a low stone workbench: one hand steadies the detached hinge while her other relaxed open hand guides a SINGLE small brass pin hanging a few centimeters above its socket. No visible luminous tether; a tiny glint on the pin and the purposeful alignment make levitation legible. One opened book with indistinct diagram marks lies off to the side, a practical aid rather than magic physically coming out of writing. Hands simply posed and anatomically connected. The teacher points with one hand at the socket without crowding hers. They wear plain well-made cloth, leather apron and rolled cuffs, no ornate wizard uniforms. Through the broad arcade is a glimpse of Ambrel's warm stone university, narrow green waterway, red roofs and a small grounded service crane. Only a couple distant ordinary passersby, no crowd of casters. Main composition is the human triangle of faces and poised pin; background quietly painted. Cream stone, ochre and muted green with small copper highlights. A sense of hard-won skill, intelligence and affection, not a magical school spectacle.",
       "file": "01-lessons-of-brass.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a1ef362a-d69a-49ac-a2b4-fc00e1432739.png",
-      "review_status": "awaiting_creator_review",
+      "review_status": "creator_rejected_deleted",
       "active_reference": false,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
@@ -39,7 +39,23 @@
         1536,
         1024
       ],
-      "sha256": "6bf94b551f0c6206ea19d7a46dd1e12fe57fd51246bcbe7c10e2ecc2eae357f4"
+      "sha256": "6bf94b551f0c6206ea19d7a46dd1e12fe57fd51246bcbe7c10e2ecc2eae357f4",
+      "status": "creator_rejected_deleted",
+      "reference_candidate": false,
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "01-lessons-of-brass.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-a1ef362a-d69a-49ac-a2b4-fc00e1432739.png"
+      ],
+      "setting_direction_retained": "Ambrel teaching magic as a practical trade is liked; this painting is rejected."
     },
     {
       "id": "02",
@@ -48,17 +64,30 @@
       "intent": "Stored mana in stones supplying a substantial steam installation. The creator has confirmed that these mana-stones become permanently spent after use.",
       "edge": "Close fit",
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. A magnificent cutaway-like VIEW INTO, but not a technical diagram of, a working high-fantasy engine hall built into a rocky hillside. Low three-quarter viewpoint from beside an open brick fire chamber toward a huge dark iron flywheel and heavy timber beam overhead. The furnace holds a shallow iron cradle of fist-sized rough grey stones with mineral-blue veins; their STORED MAGICAL ENERGY burns as compact intense blue-white fire above the stones, powering the adjoining riveted boiler. The stones are clearly recognizable inside the glow, not giant cut crystals. A middle-aged male attendant in a sturdy rolled-sleeve cream shirt and muted brick-red apron watches the burn while holding an ordinary long iron tending tool; he is not casting and no energy comes out of his body. Two smaller ordinary workers high on a stair supply human scale. Solid masonry foundations, purposeful pipe routes, a few gauges, warm bronze bearings, no endless decorative gears. Strong cool daylight enters through a tall narrow opening onto a green mountain valley, meeting the localized cool flame and amber bounce from stone. Compose around one immense elliptical flywheel, the precise furnace rectangle and the tiny attendant. Awe at a capable, believable world. Dry floor with no excessive reflections; atmospheric steam softens upper rafters without obscuring construction. No spent-stone pile, recharge machine, magical threads or floating parts. This scene explores the same established idea as the Mountain's Lung, with fresh staging rather than duplicating its exact machine.",
-      "file": "02-the-stonefire-shift.png",
+      "file": "../../reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5530f677-e67d-4ca8-bdc4-a282008c883a.png",
-      "review_status": "awaiting_creator_review",
-      "active_reference": false,
+      "review_status": "creator_accepted",
+      "active_reference": true,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
       "dimensions": [
         1536,
         1024
       ],
-      "sha256": "9da32c88a3984d878d01469c84d72dc542f671013f56ea13ddc4e793051a852c"
+      "sha256": "9da32c88a3984d878d01469c84d72dc542f671013f56ea13ddc4e793051a852c",
+      "status": "creator_accepted",
+      "reference_candidate": false,
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Magic and practical industrial work; one scene, not a compulsory model for industry.",
+      "staged_file": "02-the-stonefire-shift.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Magic and practical industrial work; one scene, not a compulsory model for industry."
+        }
+      ]
     },
     {
       "id": "03",
@@ -88,7 +117,7 @@
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. An extraordinary high-fantasy painting of a direct fire-working at a ruined mountain aqueduct at blue dusk. Across the broad midground ravine a huge sheet of orange fire curls UP along the jagged stone embankment, like one great wind-caught wave, illuminating ancient arches, slate mountains and a thin silver river far below. This is a rare powerful magical event, not ordinary scenery or a machine. In the near foreground at the left, a small but clearly legible older adult male caster in a plain soot-grey travelling coat braces himself against a broken stone parapet with his LEFT forearm; his RIGHT arm reaches modestly toward the fire, hand open at waist height. Show exactly two arms connected to his torso, both legs planted, a tired hunched shoulder and deeply focused long face, cheeks matte not sweaty. A companion behind him has just reached toward his upper arm in concern. The spell is powerful and his bodily effort matters; avoid an effortless superhero pose. His silhouette is illuminated by the fire with a muted blue sky rim. The person is dwarfed by the curving hot/cool landscape, retaining scale and grandeur like great painted fantasy spell art. No magical weapon, gauntlet, fuel machine, beam from his hand, strings or diagram. The air between hand and distant event remains mostly clear; visual alignment establishes intent without a literal cable. Fine falling embers, grounded stone masses, no gore, exploding bodies or modern destruction. Keep the sweeping composition and fire beautiful, the human drama economical and the background intelligently simplified.",
       "file": "04-the-cost-of-the-flame.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-22a28ba5-eb6a-4ec0-825e-8d25903a3e4c.png",
-      "review_status": "awaiting_creator_review",
+      "review_status": "creator_rejected_deleted",
       "active_reference": false,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
@@ -96,7 +125,22 @@
         1536,
         1024
       ],
-      "sha256": "3f078faa5956677fc092400708197b2429a2b4f498463f6d79cdc7a522cfe685"
+      "sha256": "3f078faa5956677fc092400708197b2429a2b4f498463f6d79cdc7a522cfe685",
+      "status": "creator_rejected_deleted",
+      "reference_candidate": false,
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "04-the-cost-of-the-flame.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-22a28ba5-eb6a-4ec0-825e-8d25903a3e4c.png"
+      ]
     },
     {
       "id": "05",
@@ -107,7 +151,7 @@
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. An intimate quietly powerful fantasy painting inside a small roadside infirmary on a bright overcast day. An older female healer with brown skin, broad nose, substantial jaw, silver-streaked short tight curls and an ordinary kind, concentrated face sits beside a tired adult male carter propped on a simple bed. She wears a plain ivory linen gown under a faded blue-green sleeveless wool overcoat, no elaborate ornament or glowing apparatus. Her nearer hand rests gently on his bandaged forearm while her other hand lies open close above it; a small soft warmth of pale gold under the cloth and a barely perceptible change in air is the entire magical effect. No threads, ribbons, floating glyphs, exposed gore or miraculous whole-body glow. He is awake and still weak, eyes on her face rather than instantly springing up. A basin, folded clean linen and an ordinary jug belong naturally nearby, not as a display of props. The pair's beautifully observed matte faces and simple connected hands carry the image. Daylight through an open window reveals a small roadside orchard in lightly grouped green shapes; inside are warm lime-plaster walls, muted blue cloth and amber wood. The healer's measured, slightly tired posture suggests expertise and effort. Compassion without sugary sentiment, understated magic assumed in the world, human stakes without a death tableau. Paint secondary objects more broadly, preserve form and rich localized color, no polished skin or photoreal pores.",
       "file": "05-between-two-breaths.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6bc1ccdf-87ae-4b4d-9534-553b2ab0115f.png",
-      "review_status": "awaiting_creator_review",
+      "review_status": "creator_rejected_deleted",
       "active_reference": false,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
@@ -115,7 +159,22 @@
         1536,
         1024
       ],
-      "sha256": "54864c4076140f902e7ff4d0033f329d3b781431b19bdf44da10ce14c90b469e"
+      "sha256": "54864c4076140f902e7ff4d0033f329d3b781431b19bdf44da10ce14c90b469e",
+      "status": "creator_rejected_deleted",
+      "reference_candidate": false,
+      "review_date": "2026-11-13",
+      "deletion_date": "2026-11-13",
+      "deleted_file": "05-between-two-breaths.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-6bc1ccdf-87ae-4b4d-9534-553b2ab0115f.png"
+      ]
     },
     {
       "id": "06",
@@ -124,17 +183,43 @@
       "intent": "A conscious spirit whose presence is weak and incomplete. Tests how little physical definition can still convey a person and an encounter.",
       "edge": "Edge study",
       "prompt": "Use case: stylized-concept. Create ONE finished original Breachline high-fantasy oil-and-acrylic painting, landscape 1536 x 1024, full bleed. No text, titles, border, UI, collage or signature. Grounded invented world with medieval clothing and selective early steam craft. Hand-painted solid forms, vibrant specific color relationships, sensitive edge control. A few focal accents are finely resolved; secondary forms use quieter, broader coherent brushwork, never camera blur. Matte naturally diffuse skin, wool, wood and stone; selective appropriate metal and glass highlights. Avoid waxy or plastic faces, uniform rosy cheeks, all-over scratchy texture, uniformly sharp detail, cartoon/animation shapes, generic model faces. Believable connected hands and limbs. Direct magic, imbued objects and industry are distinct possibilities; no default glowing strings or ribbons, no ubiquitous eye motifs, no hovering vehicles. This is a compelling painting, not a mechanics diagram. A haunting but beautiful high-fantasy painting at a disused stone ferry landing beneath a late evening emerald-blue sky. A living adult woman traveller in a simple dark russet cloak sits sideways on a low mooring stone in the near right foreground, ordinary long face in profile, one hand still on her bundled coat. She has turned her head toward a QUIET CONSCIOUS SPIRIT standing a few paces away at the water's edge. The spirit is an older male figure only intermittently present: a listening face and the suggestion of one shoulder and coat collar are discernible in pale grey-blue air, while the lower torso dissolves gradually into the visible reeds and water behind. The spirit is not a glowing solid human, not a skeleton, not a smoky monster; absence and incomplete paint form convey weakness and distance. A faint directed gaze toward the traveller makes the presence feel conscious. Its one partly visible hand remains near its own chest, no detached floating hands. A small warm lantern stands physically on the stone between them, lighting the LIVING woman's sleeve and the landing but not magically powering the spirit. Dark pines, a modest ruined river arch and still water create restrained depth; no flower fantasy or wildlife-painting aesthetic. Muted jade water, deep ultramarine sky, copper reeds and one amber light. Spacious negative areas, strongly designed silhouettes, subtle mystery and sadness with no definite story of resurrection. This is one experimental spirit depiction, not a required appearance for all spirits.",
-      "file": "06-a-voice-in-the-reeds.png",
+      "file": "../../reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-486c3d1c-7b70-4202-9349-173900c280c7.png",
-      "review_status": "awaiting_creator_review",
-      "active_reference": false,
+      "review_status": "creator_accepted",
+      "active_reference": true,
       "assistant_visual_review": "Inspected the generated painting: coherent main anatomy and readable intended scene; ready for creator review.",
       "generation_method": "built-in image_gen",
       "dimensions": [
         1536,
         1024
       ],
-      "sha256": "c2ddb7c07dd5c21f0178f19e33dc1cf493ca09d07708d88563599d68f414224e"
+      "sha256": "c2ddb7c07dd5c21f0178f19e33dc1cf493ca09d07708d88563599d68f414224e",
+      "status": "creator_accepted",
+      "reference_candidate": false,
+      "review_date": "2026-11-13",
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Spirit presence and atmosphere; one visual example, not the only form spirits can take.",
+      "staged_file": "06-a-voice-in-the-reeds.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Spirit presence and atmosphere; one visual example, not the only form spirits can take."
+        }
+      ]
     }
+  ],
+  "review_date": "2026-11-13",
+  "accepted_image_ids": [
+    2,
+    6
+  ],
+  "rejected_image_ids": [
+    1,
+    4,
+    5
+  ],
+  "pending_revision_ids": [
+    3
   ]
 }

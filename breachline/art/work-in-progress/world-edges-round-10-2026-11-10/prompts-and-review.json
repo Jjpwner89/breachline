@@ -2,7 +2,7 @@
   "created": "2026-11-10",
   "project": "Breachline",
   "batch": "World edges round 10",
-  "status": "Reviewed: five accepted references, two completed revisions awaiting review, one rejected shoreline depiction removed.",
+  "status": "Finalized: six accepted references including Velvet Stair v2; both rider versions, earlier Velvet Stair and shoreline creature deleted.",
   "image_count": 8,
   "generation_method": "built-in image_gen",
   "canonical_setting": "../../../SETTING.md",
@@ -48,7 +48,7 @@
       "prompt": "Use case: identity-preserve and precise-object-edit. Edit IMAGE 1, the painted desert rider scene. IMAGE 2 is a goblin SPECIES REFERENCE ONLY. Deliver one finished 1536 x 1024 full-bleed painting. The creator requests two changes: replace the male orc rider with a male GOBLIN, somewhat larger and more muscular than an ordinary goblin; and turn his spear FORWARD in the direction the bird is travelling, toward IMAGE-RIGHT.\n\nKeep the feathered bird's identity, plumage, beak, two-leg anatomy, pose, body scale and position exactly as in image 1. Preserve the pink salt flats, mesas, dramatic sky, original light and painted style. Rebuild the rider as a compact strong ADULT male goblin with the species anatomy of image 2: long prominently pointed ears, a narrow projecting nose, lively slightly hooded eyes, olive-ochre skin, a small angular chin and jaw, no orc underbite or tusks. Draw especially on the sturdy second head from the left in the bottom row of image 2. He is noticeably shorter and lighter than the original orc while broad and strong for a goblin, not a small orc, human or cartoon. Keep his indigo wrap, sand-coloured tunic and simple beaten-metal chest protection fitted to the new body. Maintain secure saddle contact and naturally connected hips, legs, boots, shoulders and hands. One hand holds the rein; the other firmly grips a single ordinary wooden spear.\n\nThe spear blade must point toward the RIGHT, ahead of the rider and bird, at a modest upward angle. Show the spearhead clearly in the open sky at image-right, fully within the canvas; the shaft should pass naturally through the gripping hand, not through his face or the bird. No second backward-pointing spear, duplicate weapon or extra hand. Preserve the wide composition and keep the scene recognizably the same. No added text, border, glow, armor spikes or equipment. Matte painted face; do not exaggerate pores or make a grotesque goblin caricature.",
       "file": "02-the-glasswind-rider-v2.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f048848f-6c88-44e0-bfd8-820542430969.png",
-      "review_status": "revision_awaiting_creator_review",
+      "review_status": "creator_rejected_deleted",
       "active_reference": false,
       "assistant_visual_review": "Inspected: requested subject/costume correction is visible; principal anatomy, pose and scene remain coherent. Awaiting creator acceptance.",
       "generation_method": "built-in image_gen",
@@ -58,7 +58,7 @@
       ],
       "sha256": "2a59e4c4aaa6460726537f3fc969d6282aff67d74a698007bc901830937e3c6f",
       "creator_feedback": "Revise this rider into a somewhat larger, stronger male goblin, still clearly goblin-like rather than orc-like. Point the spear forward. The completed revision awaits creator review.",
-      "review_date": "2026-11-10",
+      "review_date": "2026-11-13",
       "previous_versions": [
         {
           "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5089b91a-1d1b-4fab-adfd-bc808cbe81fc.png",
@@ -73,7 +73,22 @@
         "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/world-edges-round-10-2026-11-10/02-the-glasswind-rider.png",
         "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png"
       ],
-      "revision": 2
+      "revision": 2,
+      "status": "creator_rejected_deleted",
+      "reference_candidate": false,
+      "deletion_date": "2026-11-13",
+      "deleted_file": "02-the-glasswind-rider-v2.png",
+      "creator_review_note": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "rejected_deleted"
+        }
+      ],
+      "deleted_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5089b91a-1d1b-4fab-adfd-bc808cbe81fc.png",
+        "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-f048848f-6c88-44e0-bfd8-820542430969.png"
+      ]
     },
     {
       "id": "03",
@@ -171,10 +186,10 @@
       "intent": "Court intrigue built around a strong human presence, gesture and divided light. A fresh character study rather than an explanation of a magical ability.",
       "direction": "Character and intrigue",
       "prompt": "Use case: precise-object-edit. Edit IMAGE 1, The Velvet Stair, only in the adult woman's upper dress bodice and bust silhouette. IMAGE 2 is a clothed costume/proportion reference ONLY, showing the creator's existing fuller-bust character direction; do not copy its person, face, dress colour or setting. Deliver one finished 1536 x 1024 painting with the same composition and virtually everything preserved.\n\nThe creator likes image 1 and asks for a slightly fuller bust and a moderately lower, flattering square neckline with a little visible cleavage, in the same direction as image 2 but distinctly MORE RESTRAINED. Use tasteful believable tailoring in the existing opaque bronze silk bodice; a modest increase in volume and neckline openness, proportionate and supported, not the deeper cut or fuller proportions of image 2. Keep the red velvet coat, sleeves and gold embroidered edges, the same waist, shoulders, torso orientation, and the LONG floor-length bronze dress with its existing folds and coverage. Do not shorten the skirt or turn it into a pinup, swimsuit, cropped top or transparent garment.\n\nPreserve the original adult woman in her late thirties: identical distinctive aquiline nose, eyes, expression, age, skin tone, hairstyle and facial structure. Preserve her exact stair-stepping pose, both arms and hands, the letter, railing contact, foot placement, architecture, secondary figures, windows, warm candlelight and cool daylight. Ensure the adjusted bodice fits the existing shoulders, clavicles and ribcage naturally; no distorted torso or disconnected limbs. Keep skin matte and softly painted without more shine or red cheeks. Change no face or background details, add no text, border or new objects.",
-      "file": "07-the-velvet-stair-v2.png",
+      "file": "../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
       "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c362ef63-40d3-4f6b-b7e2-3a4c3bf81739.png",
-      "review_status": "revision_awaiting_creator_review",
-      "active_reference": false,
+      "review_status": "creator_accepted",
+      "active_reference": true,
       "assistant_visual_review": "Inspected: requested subject/costume correction is visible; principal anatomy, pose and scene remain coherent. Awaiting creator acceptance.",
       "generation_method": "built-in image_gen",
       "dimensions": [
@@ -183,14 +198,18 @@
       ],
       "sha256": "afd06e3be68a584ebdfa1b12a6e139bf85eed0539ef160d6938d371b39583673",
       "creator_feedback": "The court-intrigue scene is liked. Keep the long dress and apply a more restrained version of the existing fuller-bust/neckline direction. The completed revision awaits creator review.",
-      "review_date": "2026-11-10",
+      "review_date": "2026-11-13",
       "previous_versions": [
         {
-          "file": "prior-versions/07-the-velvet-stair.png",
+          "file": null,
           "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-fabe8608-6f00-42a9-b529-9af07c43d59f.png",
           "sha256": "557e41d7b9acda67113d9962dd2ea284c6270fbc6c96b76d895e74e84f3851f5",
           "prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a striking adult woman caught at the turn of a palace stair, rich cloth and divided light conveying danger and intention. A woman in her late thirties has just paused halfway down a worn limestone spiral stair, turning her head back toward an open door above. She is attractive in a distinctive individual way: long slightly aquiline nose, dark close-set eyes, angular cheekbones, a small asymmetry at her mouth and dark brown hair braided into a practical low knot with one loose strand. Matte painted skin, no doll face or beauty-filter cheeks. She wears a beautifully cut wine-red velvet short coat over a simple bronze silk gown, fitted at the waist with believable fabric structure and a modest square neckline, no armour and no excessive straps. Her left hand rests lightly on the curved stone balustrade; her right hand holds a small folded cream letter low beside her skirt. Two connected arms and a stable stepping pose, one foot clearly resting on the lower tread. No weapon, magic beam, glowing letter or hovering mask. Warm candlelight from the doorway grazes the red velvet and one cheek; cool morning light from a slit window defines the stair's broader curve and quiet blue-grey shadows. Two very small indistinct court figures occupy the far upper landing, a suggestion of the life she has just left. Strong diagonal stair composition and psychologically alert gesture, not a frontal fashion portrait. The door, cloth and hand are precisely placed; distant masonry has fewer quieter brush marks. Keep the scene tense and alive without assigning a definite plot.",
-          "review_status": "liked_scene_before_requested_bodice_revision"
+          "review_status": "superseded_deleted",
+          "status": "superseded_deleted",
+          "deletion_date": "2026-11-13",
+          "deleted_file": "prior-versions/07-the-velvet-stair.png",
+          "creator_review_note": "Creator requested removal on 2026-11-13."
         }
       ],
       "original_generation_prompt": "Use case: stylized-concept. ONE finished original Breachline high-fantasy painting, landscape 1536 x 1024, full bleed, no text, border, title, collage, signature or UI. Visual appeal and imaginative composition come first. Grounded fantasy oil/acrylic illustration: believable solid forms, expressive silhouettes, rich specific color relationships and deliberate variation in painted attention. Fine focal edges and broader quieter secondary brushwork; never photographic depth-of-field blur. Naturally diffuse painted skin, wool, wood and stone. Selective physically appropriate metal, glass and water reflections. No waxy faces, uniform rosy cheeks, photoreal pores, uniformly sharp backgrounds, excessive impasto or cartoon/animated-film design. Correct connected anatomy and convincing weight. Magic has diverse forms, without default strings, ribbons or glowing diagrams. No hovering magitech vehicles or flying machines. No oversized spiky Warcraft armor. Visual appeal: a striking adult woman caught at the turn of a palace stair, rich cloth and divided light conveying danger and intention. A woman in her late thirties has just paused halfway down a worn limestone spiral stair, turning her head back toward an open door above. She is attractive in a distinctive individual way: long slightly aquiline nose, dark close-set eyes, angular cheekbones, a small asymmetry at her mouth and dark brown hair braided into a practical low knot with one loose strand. Matte painted skin, no doll face or beauty-filter cheeks. She wears a beautifully cut wine-red velvet short coat over a simple bronze silk gown, fitted at the waist with believable fabric structure and a modest square neckline, no armour and no excessive straps. Her left hand rests lightly on the curved stone balustrade; her right hand holds a small folded cream letter low beside her skirt. Two connected arms and a stable stepping pose, one foot clearly resting on the lower tread. No weapon, magic beam, glowing letter or hovering mask. Warm candlelight from the doorway grazes the red velvet and one cheek; cool morning light from a slit window defines the stair's broader curve and quiet blue-grey shadows. Two very small indistinct court figures occupy the far upper landing, a suggestion of the life she has just left. Strong diagonal stair composition and psychologically alert gesture, not a frontal fashion portrait. The door, cloth and hand are precisely placed; distant masonry has fewer quieter brush marks. Keep the scene tense and alive without assigning a definite plot.",
@@ -198,7 +217,19 @@
         "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair.png",
         "/Users/dpuser/Documents/Claude/Games/breachline/art/nsfw/door-into-snow-character.png"
       ],
-      "revision": 2
+      "revision": 2,
+      "status": "creator_accepted",
+      "reference_candidate": false,
+      "creator_review_note": "Kept in the creator's 2026-11-13 review.",
+      "permitted_reference_roles": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted.",
+      "staged_file": "07-the-velvet-stair-v2.png",
+      "review_history": [
+        {
+          "date": "2026-11-13",
+          "decision": "accepted_reference",
+          "note": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted."
+        }
+      ]
     },
     {
       "id": "08",
@@ -223,20 +254,19 @@
       "staged_file": "08-the-rain-that-rises.png"
     }
   ],
-  "review_date": "2026-11-10",
+  "review_date": "2026-11-13",
   "accepted_image_ids": [
-    "01",
-    "03",
-    "05",
-    "06",
-    "08"
+    1,
+    3,
+    5,
+    6,
+    7,
+    8
   ],
-  "pending_revision_ids": [
-    "02",
-    "07"
-  ],
+  "pending_revision_ids": [],
   "rejected_image_ids": [
-    "04"
+    2,
+    4
   ],
   "additional_spoken_feedback": "Creator also praised a “precarial home concept”; no separate matching title was identified. Rootbound Quarter was explicitly approved independently."
 }

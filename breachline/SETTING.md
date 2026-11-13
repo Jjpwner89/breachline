@@ -44,6 +44,8 @@ Ambrel is a centre of learning and magic. Its university survived the fall of th
 
 The creator compares this advantage to a society where broader education makes minor practical magic more accessible. This is an analogy for the relationship between learning, capability and prosperity, not a one-to-one equation between literacy and magical power. Personal aptitude still matters. Magical industry need not spread in the same way as ordinary industry, and Ambrel's advantages do not make every resident a mage or give every other settlement the same capabilities.
 
+**Practical magical education (creator direction, 2026-11-13):** Ambrel teaches magic as a practical trade as well as a scholarly discipline. The creator retained this worldbuilding idea while rejecting the Lessons of Brass painting; no specific school, curriculum or pictured apparatus is established by it. Learning still depends on aptitude and training.
+
 ### Imperial remnants (creator direction, 2026-11-10)
 
 Surviving imperial infrastructure is mostly ordinary remnants: roads, buildings and similar works. This is the baseline for the Empire's physical legacy, rather than widespread remarkable systems still operating beyond present understanding. Exceptional relics remain possible, but are not established by this direction.
