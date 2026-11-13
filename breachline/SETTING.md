@@ -253,7 +253,7 @@ Art: [Bridgekeeper](art/concepts/stonehorn-bridgekeeper.png).
 **Proposed; the creator picked this concept.** A people bred or shaped by the Empire for war, tied to its forbidden research. The creator described them as like Dominion's undead but more substantive: whole living bodies and minds rather than partial souls in partial bodies.
 
 - **Alignment (creator, 2026-11-13):** Dominion only, always. None of them belong to any other alignment, and they carry a bad reputation everywhere else.
-- **Name:** Graftborn was close but not final. Two takes are being tested in art as Scions (refined) and Graftkin (rougher), in `art/work-in-progress/peoples-round-12-2026-11-13/`.
+- **Name:** Graftborn was close but not final. The first art tests, Scions (too human) and Graftkin, were both rejected on 2026-11-13; a lineup sheet of very different takes comes next. The look needs a clearly made silhouette.
 - **Open:** their final name, look, numbers, how much of the Empire's shaping still shows, and whether any of the old research survives.
 
 No art yet.
