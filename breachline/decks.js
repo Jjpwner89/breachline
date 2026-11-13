@@ -181,7 +181,10 @@ var Decks = (function () {
     { id: 'theme-overwall', name: 'Over the wall', note: 'Fliers and fast raiders that go over the front line and straight for the summoner.',
       list: [['land_r', 13], ['clanraiders', 3], ['torchrunner', 3], ['lanner', 3], ['captain', 2], ['drake', 3], ['dragon', 1], ['raider', 3], ['goblin', 3], ['clanoutrider', 3], ['drummer', 3]] },
     { id: 'theme-intofire', name: 'Into the fire', note: 'Red and blue. Set the ground burning, then push enemies into it with Brightlance and the choristers.',
-      list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 3], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 2], ['wildfire', 2]] }
+      list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 3], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 2], ['wildfire', 2]] },
+    // Built 2026-11-12 for the creator's brother to play against them online: strong and simple first, then fun aimed spells.
+    { id: 'theme-suncinder', name: 'Sun and cinder', note: 'White and red. A sturdy front line holds while aimed fire and light clear the way.',
+      list: [['land_w', 7], ['land_r', 7], ['firepot', 2], ['huntress', 3], ['scorch', 3], ['sentinel', 3], ['berserker', 3], ['stormstrike', 3], ['lineofdawn', 2], ['knight', 2], ['lancer', 2], ['cinderfall', 2], ['giant', 1]] }
   ];
   function themes() {
     return THEMES.map(function (t) { return { id: t.id, name: t.name, note: t.note, list: t.list.map(function (e) { return e.slice(); }), theme: true }; });

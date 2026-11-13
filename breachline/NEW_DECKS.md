@@ -69,3 +69,11 @@ Older theme decks that use the changed cards, from 1,400 games each: Long sights
 All six are now between 48% and 54%. Over the wall ended up mono red, and Funeral procession mono black. Both lost their second colour to the mana cost, and their themes come from the red fliers and the black dying-pays-off units.
 
 That was with all seven lent keywords; the creator's picks came next.
+
+## Sun and cinder, for the creator's brother (2026-11-12)
+
+The creator asked for a deck their brother can play against them online and have a shot: pretty strong and fairly easy to use first, then fun, especially aimed spells with effects. It's a theme deck so anyone can pick it without owning the cards.
+
+- **Plan:** white and red, 7 lands of each. Tough white units with simple rules hold the middle (Oath sentinel, Pride huntress, Oath knight, Sunmane lancer), red hitters push forward (Cinder berserker, Goblin firepot, one Hill giant), and 10 aimed spells clear the way: Scorch, Stormstrike, Cinderfall and Line of dawn.
+- **Kept simple on purpose:** no Lit, pushes, equipment, sacrifice or Devotion. Most cards cost 2 to 4, and every spell is "aim it at enemies".
+- **Strength:** 62% ± 2.6 over 1,400 games against the other 21 decks, the strongest deck in the game, above the usual 45% to 55% target on purpose, since it's meant to give a new player a chance against an experienced one. Best against The Lantern Conclave (83%), worst against Giants' road (38%) and Hearth and vow (42%).

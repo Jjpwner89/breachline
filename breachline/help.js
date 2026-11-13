@@ -27,7 +27,8 @@ var Help = (function () {
     'theme-firstblood': 'Fast raiders and hunters land the first wounds, and Venom from the Court\'s assassins kills whatever they wound.',
     'theme-funeral': 'Let cheap followers die on purpose, because every death feeds your harvesters, colossi and the Ossuary engine.',
     'theme-overwall': 'Fliers and fast raiders skip the front line and go straight for the enemy back row and summoner.',
-    'theme-intofire': 'Set the ground burning, then push enemies into it with Brightlance and the choristers.'
+    'theme-intofire': 'Set the ground burning, then push enemies into it with Brightlance and the choristers.',
+    'theme-suncinder': 'Hold the middle with tough white units, then aim fire and light at whatever gets close.'
   };
 
   // Strengths, then the weakness.
