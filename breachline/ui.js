@@ -1062,6 +1062,8 @@
       addChat(code === 'rate_limited' ? 'Claude has reached a usage limit, so the scripted bot finishes this game.' :
         code === 'key_rejected' ? 'Anthropic turned down the saved API key, so the scripted bot finishes this game.' :
         code === 'request_rejected' ? 'Anthropic turned down the request, often because the account is out of credit, so the scripted bot finishes this game.' :
+        code === 'sign_in_needed' ? 'Your sign-in needs refreshing, so the scripted bot finishes this game. Sign out and in again from the main menu.' :
+        code === 'not_invited' ? "This account isn't on the list for Claude opponents yet, so the scripted bot finishes this game." :
         "Claude isn't available here, so the scripted bot finishes this game.", true);
     } else addChat(code === 'cancelled' ? 'You stopped waiting, so the scripted bot plays this decision.' : "Claude's answer wasn't usable, so the scripted bot plays this decision.", true);
     if (S.phase !== 'opening' && !S.pending) plan = { turn: S.turn, scripted: true };
@@ -1340,20 +1342,22 @@
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
-    $('playerNote').textContent = hosted ? (sample ? 'Claude opponents use your API key, about a dozen requests a game, and take a little while to think.' : '') :
+    $('playerNote').textContent = hosted ? (sample ? 'Claude opponents make about a dozen requests a game and take a little while to think.' : '') :
       sample ? 'Claude opponents use your own Claude usage, about a dozen requests a game, and take a little while to think.' : 'Claude opponents work only on the published page inside Claude.';
     $('keyBox').hidden = !hosted;
     if (hosted) $('keyBox').innerHTML = keyHtml();
   }
   function keyHtml() {
-    if (!OwnKey.has()) return '<p class="player-note">To play Claude here, add your own Anthropic API key. It stays in this browser and is sent only to Anthropic. A key made just for this game, with a monthly spend limit set in the Anthropic console, is safest.</p>' +
+    if (!OwnKey.has()) return (OwnKey.proxy() ? '<p class="player-note"><b>Sign in from the main menu to play Claude here.</b> Or use your own Anthropic API key:</p>' : '') +
+      '<p class="player-note">' + (OwnKey.proxy() ? '' : 'To play Claude here, add your own Anthropic API key. ') + 'A key stays in this browser and is sent only to Anthropic. One made just for this game, with a monthly spend limit set in the Anthropic console, is safest.</p>' +
       '<div class="keyrow"><input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-..." aria-label="Anthropic API key">' +
       '<button type="button" class="btn" id="keySave">Use this key</button></div><p class="player-note" id="keyMsg"></p>';
     var m = OwnKey.model();
     return '<div class="keyrow"><label>Claude model <select id="keyModel">' + OwnKey.MODELS.map(function (o) {
       return '<option value="' + o.id + '"' + (o.id === m.id ? ' selected' : '') + '>' + o.label + '</option>';
-    }).join('') + '</select></label><button type="button" class="btn" id="keyForget">Forget key</button></div>' +
-      '<p class="player-note">' + esc(m.note) + ' Spent in this browser so far: about $' + OwnKey.spent().toFixed(2) + '. The Anthropic console has the exact figure.</p>';
+    }).join('') + '</select></label>' + (OwnKey.ownKey() ? '<button type="button" class="btn" id="keyForget">Forget key</button>' : '') + '</div>' +
+      '<p class="player-note">' + (OwnKey.shared() ? "Claude plays on the game's shared key while you're signed in. " : '') + esc(m.note) +
+      ' Spent in this browser so far: about $' + OwnKey.spent().toFixed(2) + (OwnKey.shared() ? '.' : '. The Anthropic console has the exact figure.') + '</p>';
   }
   function saveKey() {
     var input = $('apiKey'), k = input && input.value.trim();
@@ -1432,8 +1436,8 @@
     if (e.target.closest('#keySave')) return saveKey();
     if (e.target.closest('#keyForget')) {
       OwnKey.forget();
-      sample = null;
-      if (oppPlayer !== 'bot') oppPlayer = 'bot';
+      sample = OwnKey.has() ? OwnKey.sample : null;
+      if (!sample && oppPlayer !== 'bot') oppPlayer = 'bot';
       return refreshStart();
     }
     if (e.target.closest('#begin')) {
