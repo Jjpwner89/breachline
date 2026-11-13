@@ -70,7 +70,7 @@ var Progress = (function () {
 
   // Works the whole state out from the ledger. Unknown card ids are kept in the ledger but don't count until the card exists.
   function fold(list) {
-    var st = { cards: {}, gold: 0, shards: 0, starters: [], starter: null, cleared: {}, unlocked: false, battles: [], milestones: {}, packs: 0, ids: {} };
+    var st = { cards: {}, gold: 0, shards: 0, starters: [], starter: null, cleared: {}, prestiged: {}, unlocked: false, battles: [], milestones: {}, packs: 0, ids: {} };
     list.forEach(function (e) {
       if (st.ids[e.id]) return;
       st.ids[e.id] = true;
@@ -85,6 +85,7 @@ var Progress = (function () {
       if (e.t === 'clear' || e.t === 'campaign') {
         (e.cards || []).forEach(function (id) { add(st.cards, id, 1); });
         st.cleared[e.story] = (st.cleared[e.story] || 0) + 1;
+        if (e.prestige) st.prestiged[e.story] = (st.prestiged[e.story] || 0) + 1;
         st.gold += e.gold || 0;
       }
       if (e.t === 'pack') { st.gold -= e.cost || 0; st.packs += 1; (e.cards || []).forEach(function (id) { add(st.cards, id, 1); }); }
@@ -253,16 +254,20 @@ var Progress = (function () {
     return { all: all, decks: Object.keys(by).map(function (k) { return by[k]; }).sort(function (a, b) { return b.last - a.last; }), recent: state().battles.slice(-40).reverse() };
   }
 
-  // Campaigns. The first clear unlocks the campaign's starter and keeps the cards picked on the way; later clears pay gold instead.
-  function campaignWon(story, starter, taken, key) {
+  // Campaigns. The first clear unlocks the campaign's starter and keeps the cards picked on the way; later clears pay gold
+  // instead, and a prestige clear pays double and earns the campaign its prestige badge.
+  function campaignWon(story, starter, taken, key, prestige) {
     var first = !state().cleared[story];
     var e = first
       ? append({ id: 'clear:' + story, t: 'clear', story: story, deck: starter, cards: (taken || []).filter(eligible), gold: COMPLETE })
-      : append({ id: 'cw:' + story + ':' + key, t: 'campaign', story: story, cards: [], gold: COMPLETE });
+      : prestige
+        ? append({ id: 'cw:' + story + ':' + key, t: 'campaign', story: story, cards: [], gold: COMPLETE * 2, prestige: true })
+        : append({ id: 'cw:' + story + ':' + key, t: 'campaign', story: story, cards: [], gold: COMPLETE });
     if (e) milestones();
     return e;
   }
   function cleared(story) { return state().cleared[story] || 0; }
+  function prestiged(story) { return state().prestiged[story] || 0; }
 
   // The password sets a flag rather than adding cards, so switching it off leaves the real counts untouched.
   function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join(''); }
@@ -379,7 +384,7 @@ var Progress = (function () {
     state: state, count: count, usable: usable, missing: missing, allCards: allCards, spare: spare,
     chooseStarter: chooseStarter, packCost: packCost, draw: draw, buyPack: buyPack,
     breakDown: breakDown, craft: craft, craftCost: craftCost, factionProgress: factionProgress,
-    rewardLines: rewardLines, battle: battle, record: record, campaignWon: campaignWon, cleared: cleared,
+    rewardLines: rewardLines, battle: battle, record: record, campaignWon: campaignWon, cleared: cleared, prestiged: prestiged,
     unlock: unlock, lock: lock, redeem: redeem, exportText: exportText, importText: importText,
     ready: function () { return ready; }, whenReady: function (fn) { if (ready) fn(); else readyFns.push(fn); },
     status: function () { return status; }, persistent: function () { return !!store || !!remote; },

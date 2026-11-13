@@ -223,7 +223,53 @@ function randomField(r, ids) {
     if (run.chapter !== last || E.deckProblems(run.list).length || E.deckSize(run.spare) !== last) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join() + ', reserve ' + E.deckSize(run.spare));
   }
   check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
+  // Each campaign's first two slots come from its two reward lists, or 30% of the time from anywhere in its colour.
+  // Never a neutral card.
+  var slots = 0, listed = 0, odd = [];
+  Campaign.ORDER.forEach(function (sid) {
+    var st = Campaign.STORIES[sid], lists = Campaign.REWARDS[sid];
+    if (!lists) { odd.push(sid + ' has no reward lists'); return; }
+    lists.double.concat(lists.fresh).forEach(function (id) { var c = E.CARDS[id]; if (!c || c.colour !== st.colour) odd.push(sid + ' list has ' + id); });
+    for (var seed = 1; seed <= 150; seed++) {
+      Campaign.begin(sid, 'bot', seed);
+      for (var ch = 0; ch < last; ch++) {
+        var o = Campaign.finish(0).offer;
+        o.cards.forEach(function (id) { if (E.CARDS[id].colour === 'N') odd.push(id + ' is neutral'); });
+        [lists.double, lists.fresh].forEach(function (list, i) {
+          slots++;
+          if (E.CARDS[o.cards[i]].colour !== st.colour) odd.push(sid + ' slot ' + i + ' is ' + o.cards[i]);
+          if (list.indexOf(o.cards[i]) >= 0) listed++;
+        });
+        Campaign.take(o.cards[seed % 3]);
+      }
+    }
+  });
+  check('reward slots come from the campaign\'s lists about 70% of the time, never neutral', !odd.length && listed / slots > 0.62 && listed / slots < 0.8, odd.length ? odd[0] : Math.round(100 * listed / slots) + '% of ' + slots + ' slots');
   check('a run never changes the starter deck', JSON.stringify(E.DECKS.white.list) === starter);
+  // Prestige (creator, 2026-11-13): stronger enemy decks of the same size and colours, and units already on the field from chapter 4.
+  // Chapter 6 gets its two units instead of swaps.
+  (function () {
+    var bad = [];
+    Campaign.ORDER.forEach(function (sid) {
+      Campaign.STORIES[sid].chapters.forEach(function (ch, i) {
+        var foe = Campaign.enemyOf(sid, i, true), held = Campaign.unitsOf(sid, i, true);
+        if (E.deckSize(foe.list) !== 40) bad.push(sid + ' ' + ch.id + ' has ' + E.deckSize(foe.list) + ' cards');
+        if (JSON.stringify(foe.list) === JSON.stringify(ch.enemy.list) && !held.length) bad.push(sid + ' ' + ch.id + ' is no harder');
+        foe.list.forEach(function (e) { if (e[1] < 1 || e[1] > E.maxCopies(e[0])) bad.push(sid + ' ' + ch.id + ' has ' + e[1] + ' ' + e[0]); });
+        Campaign.PRESTIGE[sid][i].swap.forEach(function (x) { if (ch.enemy.colours.indexOf(E.CARDS[x[1]].colour) < 0) bad.push(sid + ' ' + ch.id + ' adds ' + x[1]); });
+        if ((held.length > 0) !== (i >= 3)) bad.push(sid + ' ' + ch.id + ' starts with ' + held.length + ' units');
+        if (Campaign.unitsOf(sid, i, false).length || Campaign.enemyOf(sid, i, false) !== ch.enemy) bad.push(sid + ' ' + ch.id + ' normal changed');
+      });
+    });
+    check('prestige enemy decks are 40 legal cards in their colours, with units on the field from chapter 4', !bad.length, bad[0] || '30 chapters');
+    var g = E.newGame({ seed: 3, decks: ['white', 'black'], units: Campaign.unitsOf('vigil', 5, true) });
+    check('a prestige chapter\'s units start in the enemy back row, ready to act', g.units.length === 2 && g.units.every(function (u) { return u.owner === 1 && u.r === 0 && u.summonedTurn < 1; }) &&
+      g.players[1].deck.length + g.players[1].hand.length === 40);
+    var run = Campaign.begin('vigil', 'bot', 4, true);
+    check('a prestige run fights the prestige decks; a normal run doesn\'t', Campaign.current().prestige === true && Campaign.decks(run)[1] !== Campaign.chapterOf(run).enemy &&
+      Campaign.decks(Campaign.begin('vigil', 'bot', 4))[1] === Campaign.chapterOf(run).enemy && Campaign.current().prestige === false);
+    Campaign.abandon();
+  })();
   (function () {
     Campaign.begin('vigil', 'bot', 7);
     Campaign.finish(0);

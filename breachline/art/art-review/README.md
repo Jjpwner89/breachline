@@ -24,4 +24,4 @@ Data scope: Set 7–11 praise audit contains 56 surviving paintings. Final appro
 
 External reference originals can retain provenance paths outside the repository. Their cached previews are included; the review server uses those previews when an original is unavailable on another computer.
 
-The 2026-11-13 review is applied. `path-aliases.json` preserves artwork IDs and saved choices when accepted paintings move into the reference library. Cut images have no cached preview; their records remain only as textual history. The ten keepers are accepted references, while Black Enamel, Open Road is still pending.
+The 2026-11-13 review is applied. `path-aliases.json` preserves artwork IDs and saved choices when accepted paintings move into the reference library. Cut images have no cached preview; their records remain only as textual history. The ten keepers are accepted references; Black Enamel, Open Road was dropped afterwards (creator, 2026-11-13).

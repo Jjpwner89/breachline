@@ -490,10 +490,11 @@ Round 13's 16 rejects may come back once this approach works.
 
 **Made people:**
 - PL3D is final: preserve the original six-variation sheet unchanged. The stronger-scarring PL3E revision is rejected.
-- Dominion allegiance is established; the name, origin and possible weak or absent soul remain open.
+- Now named the **Ashborn**. Their lore is settled in SETTING.md (2026-11-13): Dominion's raised dead, with a weak soul.
+
+**Black Enamel, Open Road** was dropped (creator, 2026-11-13); the painting and its generated source are deleted. The Black Enamel Field Kit is still liked, and who wears it is still open.
 
 **Older studies still marked pending in HISTORY.md:** these may be stale; ask the creator before relying on them.
-- Black Enamel, Open Road
 - the Wardsteel cuirass
 - the rolling mill
 - Saltwake diviner and The second shadow

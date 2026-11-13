@@ -118,6 +118,4 @@ Left out on purpose: `opaline-window-mender.png` (the Opaline Kin are excluded f
 
 ## Open questions
 
-1. Should Withering hex move from Fervor to Dominion? Its curse and its line about losing hope fit Dominion better.
-2. Is a new play-phase spell type acceptable for Raise the dead, or should it be redesigned as a unit ability?
-3. Are the Velunn names Saint Maren and Vashkar right?
+1. Is a new play-phase spell type acceptable for Raise the dead, or should it be redesigned as a unit ability?

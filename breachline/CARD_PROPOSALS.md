@@ -315,7 +315,7 @@ Why each card is the way it is:
 - **Cobalt rapier:** selected on 2026-11-09 and reused here, not a second entry. Its painting is already finished and in `art/CARD_ART_FINAL.json`. A duellist's reach gives Gnosis an equipment card that fits its ranged strength.
 - **Corewright:** the artisan at her bench, not the automaton from the next painting.
 
-Still to do: flavour text. The black-enamel kit now has a [male wearer study](art/work-in-progress/magic-and-industry-round-09-2026-11-10/03-black-enamel-open-road.png), awaiting creator review. It isn't one of these cards.
+Still to do: flavour text. The black-enamel kit's male wearer study was dropped (creator, 2026-11-13), so its wearer is still open. It isn't one of these cards.
 
 ## Balance changes, built 2026-11-10
 

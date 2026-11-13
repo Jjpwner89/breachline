@@ -231,6 +231,7 @@ img.coin-i, img.shard-i { width: 22px; height: 22px; object-fit: contain; filter
 .memb { display: flex; gap: 8px; margin-top: -10px; }
 .memb img { width: 30px; height: 30px; filter: grayscale(1) brightness(.62) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); transition: filter .3s; }
 .memb img.won { filter: drop-shadow(0 0 6px rgba(255, 210, 120, .8)) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); }
+.memb img.prestige { border-radius: 50%; box-shadow: 0 0 0 2px var(--gold-pale), 0 0 12px var(--gold); }
 /* Above the menu, which comes after it and would otherwise take its clicks. */
 .msnd { position: absolute; z-index: 2; top: 14px; right: calc(16px + env(safe-area-inset-right, 0px)); }
 

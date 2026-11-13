@@ -5,7 +5,7 @@
   // Who plays the opponent: the scripted bot, or Claude at a difficulty level from guides.js.
   var oppPlayer = 'bot', debugOn = false;
   // A campaign battle saves after every move and reports its result to Campaign. The exhibition's opponent pick waits meanwhile.
-  var chapterBattle = false, exhibitionPlayer = 'bot';
+  var chapterBattle = false, exhibitionPlayer = 'bot', garrison = null;
   // The test table: no bot, you play whichever side is acting from that side's hand, and both sides always have mana.
   // HUMAN and BOT follow whoever is acting, so the board marks that side's units as yours. Picked cards go to seat 0 or 1.
   var sandbox = false, testSide = 0, testKind = '', TEST_MANA = 99;
@@ -612,7 +612,7 @@
     }).join('');
     var mults = [];
     if ((Progress.VS[pay.vs] || 1) > 1) mults.push(['Against ' + who[pay.vs], Progress.VS[pay.vs]]);
-    if (pay.entry && pay.entry.boost > 1) mults.push(['A campaign you\'ve already beaten', pay.entry.boost]);
+    if (pay.entry && pay.entry.boost > 1) mults.push([pay.entry.boost >= Campaign.PRESTIGE_GOLD ? 'Prestige' : 'A campaign you\'ve already beaten', pay.entry.boost]);
     rows += mults.map(function (m) { return '<li class="mult" data-mult="' + m[1] + '"><span>' + m[0] + '</span><small></small><b>× ' + m[1] + '</b></li>'; }).join('');
     var result = S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss';
     return '<div class="plaque summary ' + result + (chapterBattle ? ' campaign' : '') + '"><div class="screst"><b>' + (result === 'win' ? 'Victory' : result === 'loss' ? 'Defeat' : 'A draw') + '</b></div>' +
@@ -915,7 +915,7 @@
     S.payKey = S.payKey || S.seed + '.' + S.firstPlayer;
     payout = Progress.battle({
       key: S.payKey, result: S.winner === 'draw' ? 'draw' : S.winner === HUMAN ? 'win' : 'loss', vs: chapterBattle ? (run ? run.player : 'bot') : online ? 'human' : oppPlayer,
-      boost: story && Progress.cleared(story) ? 1.5 : 1, story: story, deck: S.players[HUMAN].name, opp: S.players[BOT].name, turns: S.turn,
+      boost: run && run.prestige ? Campaign.PRESTIGE_GOLD : story && Progress.cleared(story) ? 1.5 : 1, story: story, deck: S.players[HUMAN].name, opp: S.players[BOT].name, turns: S.turn,
       life: S.players[HUMAN].life, tally: (S.tally || [{}, {}])[HUMAN]
     });
     payout.vs = chapterBattle ? (run ? run.player : 'bot') : online ? 'human' : oppPlayer;
@@ -933,7 +933,7 @@
       if (S.winner !== null) {
         // Beating the last chapter wins the campaign: its starter and picked cards the first time, gold after that.
         var done = Campaign.finish(S.winner);
-        if (done && done.status === 'won') done.prize = Progress.campaignWon(done.story, Campaign.STORIES[done.story].starter, done.taken, done.seed);
+        if (done && done.status === 'won') done.prize = Progress.campaignWon(done.story, Campaign.STORIES[done.story].starter, done.taken, done.seed, done.prestige);
       }
       else Campaign.saveBattle(S);
     }
@@ -1397,6 +1397,7 @@
     sandbox = false;
     oppPlayer = run.player;
     decks = Campaign.decks(run);
+    garrison = Campaign.units(run);
     Screens.hide();
     start(run.battle || undefined);
     if (!run.battle) Campaign.saveBattle(S);
@@ -1450,7 +1451,7 @@
     lastTurn = null;
     $('turnBanner').innerHTML = '';
     $('debugBtn').hidden = !(debugOn && modelOn());
-    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1 });
+    S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1, units: chapterBattle ? garrison : null });
     if (!S.tutorial) Tutorial.stop();
     S.players.forEach(function (p) { p.hand.concat(p.deck).forEach(function (k) { warmArt(k.c); }); });
     var opening = S.players[HUMAN].hand[0];

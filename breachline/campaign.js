@@ -24,7 +24,7 @@ var Campaign = (function () {
         {
           id: 'ford', title: 'The ford', x: 16, y: 75,
           text: 'Cinder Clan raiders hold the ford. They took a vote on you before you arrived.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 15], ['goblin', 3], ['clanraiders', 3], ['raider', 1], ['sellsword', 3], ['hex', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 2]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 15], ['goblin', 3], ['clanraiders', 3], ['raider', 1], ['sellsword', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 2], ['clanoutrider', 1]] }
         },
         {
           id: 'forest', title: 'The closed road', x: 40, y: 81,
@@ -34,7 +34,7 @@ var Campaign = (function () {
         {
           id: 'pass', title: 'The pass', x: 58.5, y: 54,
           text: "The hill bands don't care what answered her. They care that you're carrying grain through their pass.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['warchief', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['raider', 3]] }
         },
         {
           id: 'gate', title: 'The lower gate', x: 30.5, y: 36,
@@ -63,12 +63,12 @@ var Campaign = (function () {
         {
           id: 'ambrel', title: 'Ambrel', x: 86, y: 76,
           text: "Someone sold the survey's instruments on the docks before dawn. The buyers are still there, and they've grown attached.",
-          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 16], ['goblin', 1], ['coalback', 2], ['sellsword', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 2], ['wildfire', 1]] }
+          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 16], ['goblin', 1], ['coalback', 2], ['sellsword', 3], ['clanraiders', 3], ['youngsummoner', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 2], ['wildfire', 1], ['firepot', 3]] }
         },
         {
           id: 'waterworks', title: 'The waterworks', x: 62, y: 62,
           text: "The Thornwardens have opened every sluice. The lower ward is flooding, and they're waiting to see who comes.",
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 16], ['sapling', 3], ['saboteur', 3], ['reedcrown', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 2], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 1]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['saboteur', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 2], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 1], ['pathguard', 2], ['thornbrake', 1], ['trapper', 1]] }
         },
         {
           id: 'farms', title: 'The hill farms', x: 38, y: 74,
@@ -102,7 +102,7 @@ var Campaign = (function () {
         {
           id: 'village', title: 'The tithe village', x: 12, y: 80,
           text: 'The tithe village has hired Cinder Clan raiders to say no on its behalf.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 1]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 1], ['firepot', 3]] }
         },
         {
           id: 'barrows', title: 'The barrows', x: 50, y: 88,
@@ -127,7 +127,7 @@ var Campaign = (function () {
         {
           id: 'court', title: 'The court of still water', x: 50, y: 50,
           text: "An elder dragon has slept on the island for longer than anyone has kept records. It doesn't recognise the Court.",
-          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 15], ['dragon', 3], ['goblin', 1], ['coalback', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
+          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 15], ['dragon', 3], ['goblin', 1], ['coalback', 3], ['clanraiders', 3], ['youngsummoner', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['firepot', 3]] }
         }
       ]
     },
@@ -141,7 +141,7 @@ var Campaign = (function () {
         {
           id: 'moot', title: 'The moot', x: 14, y: 22,
           text: 'Not every band voted the same way. The ones who lost would like a rematch.',
-          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 1]] }
+          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 18], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 2], ['flameblade', 1], ['scorch', 1], ['firepot', 1], ['martyr', 2]] }
         },
         {
           id: 'market', title: 'The moving market', x: 44, y: 15,
@@ -166,7 +166,7 @@ var Campaign = (function () {
         {
           id: 'seat', title: 'The high seat', x: 70, y: 80,
           text: 'The claimant sits on the high seat in borrowed armour. He has promised everyone something.',
-          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 10], ['land_u', 3], ['knight', 2], ['cleric', 3], ['shield', 3], ['glyph', 2], ['banner', 2], ['spearman', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['sifting', 2], ['lancer', 1]] }
+          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 14], ['land_u', 3], ['knight', 2], ['cleric', 3], ['shield', 1], ['glyph', 1], ['banner', 1], ['spearman', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['sifting', 2], ['lancer', 1]] }
         }
       ]
     },
@@ -180,7 +180,7 @@ var Campaign = (function () {
         {
           id: 'grove', title: 'The mother grove', x: 84, y: 16,
           text: "Sellswords have camped in the mother grove for the firewood. They've started on the old trees.",
-          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 15], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
+          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 15], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['goblin', 1]] }
         },
         {
           id: 'reedways', title: 'The reedways', x: 58, y: 24,
@@ -190,7 +190,7 @@ var Campaign = (function () {
         {
           id: 'crossing', title: "The herd's crossing", x: 70, y: 52,
           text: "The Warhorde follows the herd for meat. This year they've brought giants.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['anoint', 3], ['clanraiders', 3]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['warchief', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['anoint', 3], ['clanraiders', 3], ['goblin', 3]] }
         },
         {
           id: 'cutline', title: 'The cut line', x: 39.2, y: 41.3,
@@ -210,6 +210,69 @@ var Campaign = (function () {
       ]
     }
   };
+
+  // Prestige (creator, 2026-11-13): a harder replay of a campaign you've cleared, chosen instead of normal each time.
+  // Each chapter's enemy swaps some of its weaker cards for stronger ones in its colours, as [out, in, copies], and
+  // chapters 4 to 6 start with cheap enemy units already on the board: a unit ready on turn 1 is worth far more than its
+  // cost, so chapter 6 gets two of them and no swaps. Each chapter is tuned to be about 12-15 points harder for the
+  // starter deck than on normal; CAMPAIGN.md has the numbers.
+  var PRESTIGE = {
+    vigil: [
+      { swap: [['goblin', 'raider', 2], ['goblin', 'berserker', 1], ['scorch', 'berserker', 2], ['youngsummoner', 'packhunter', 1], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['sapling', 'pathguard', 2], ['goblinscout', 'mossback', 2]] },
+      { swap: [['goblin', 'berserker', 3], ['clanraiders', 'packhunter', 3], ['scorch', 'cinderfall', 2], ['firepot', 'drake', 2]] },
+      { swap: [['glimmer', 'rimebolt', 3], ['apprentice', 'marksman', 2], ['sifting', 'brightlance', 1], ['lampwright', 'chorister', 2]], units: ['apprentice'] },
+      { swap: [['rats', 'shutterassassin', 3], ['thrall', 'envoy', 2], ['raise', 'siphon', 1]], units: ['harvester'] },
+      { swap: [], units: ['thrall', 'rats'] }
+    ],
+    gnosis: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 1], ['scorch', 'berserker', 2], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'alderkin', 2], ['shifting', 'overgrowth', 1]] },
+      { swap: [['rats', 'shutterassassin', 3], ['youngsummoner', 'envoy', 1], ['thrall', 'envoy', 2], ['informant', 'hostess', 2], ['raise', 'siphon', 1], ['gravesoil', 'siphon', 1]] },
+      { swap: [['spearman', 'huntress', 2], ['carrier', 'outrider', 2]], units: ['carrier'] },
+      { swap: [['rats', 'assassin', 3], ['youngsummoner', 'envoy', 3]], units: ['rats'] },
+      { swap: [], units: ['carrier', 'vigilkeeper'] }
+    ],
+    dominion: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 2], ['scorch', 'berserker', 1], ['clanraiders', 'packhunter', 2]] },
+      { swap: [['youngsummoner', 'envoy', 3], ['rats', 'shutterassassin', 3]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'pathguard', 3]] },
+      { swap: [['glimmer', 'rimebolt', 3]], units: ['apprentice'] },
+      { swap: [['spearman', 'outrider', 3], ['carrier', 'huntress', 1], ['acolyte', 'knight', 1], ['acolyte', 'lioness', 1]], units: ['cub'] },
+      { swap: [], units: ['youngsummoner', 'youngsummoner'] }
+    ],
+    fervor: [
+      { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 3], ['coalback', 'packhunter', 3]] },
+      { swap: [['decoy', 'rimebolt', 2], ['sifting', 'brightlance', 2]] },
+      { swap: [['rats', 'shutterassassin', 3], ['gravesoil', 'siphon', 2], ['informant', 'envoy', 1], ['thrall', 'envoy', 2], ['noble', 'hostess', 2]] },
+      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'alderkin', 3]], units: ['goblinscout'] },
+      { swap: [['spearman', 'outrider', 3]], units: ['spearman'] },
+      { swap: [], units: ['carrier', 'cub'] }
+    ],
+    genesis: [
+      { swap: [['goblin', 'berserker', 1], ['scorch', 'raider', 3], ['youngsummoner', 'berserker', 2]] },
+      { swap: [['decoy', 'rimebolt', 3], ['glimmer', 'marksman', 2], ['phantasm', 'chorister', 1]] },
+      { swap: [['goblin', 'berserker', 3], ['anoint', 'raider', 3], ['clanraiders', 'packhunter', 3]] },
+      { swap: [['spearman', 'outrider', 3], ['pilgrim', 'knight', 1], ['banner', 'knight', 2]], units: ['cub'] },
+      { swap: [['phantasm', 'marksman', 2]], units: ['apprentice'] },
+      { swap: [], units: ['informant', 'informant'] }
+    ]
+  };
+  // Starting units stand in the enemy's back row, from the middle out.
+  var GARRISON = [2, 1, 3, 0, 4];
+  // Prestige pays double gold where a normal replay pays half again, and its rewards lean further toward rare cards.
+  var PRESTIGE_GOLD = 2;
+  function enemyOf(storyId, i, prestige) {
+    var foe = STORIES[storyId].chapters[i].enemy, hard = prestige && PRESTIGE[storyId] && PRESTIGE[storyId][i];
+    if (!hard) return foe;
+    var list = foe.list.map(function (e) { return e.slice(); });
+    hard.swap.forEach(function (x) { addTo(list, x[0], -x[2]); addTo(list, x[1], x[2]); });
+    return { name: foe.name, colours: foe.colours, list: list };
+  }
+  function unitsOf(storyId, i, prestige) {
+    var hard = prestige && PRESTIGE[storyId] && PRESTIGE[storyId][i];
+    return ((hard && hard.units) || []).map(function (id, n) { return [1, id, 0, GARRISON[n]]; });
+  }
 
   function landOf(colour) { return 'land_' + colour.toLowerCase(); }
   function known(id) { return Object.prototype.hasOwnProperty.call(E.CARDS, id); }
@@ -248,6 +311,7 @@ var Campaign = (function () {
     if (!story || !Array.isArray(run.list) || run.chapter !== (run.chapter | 0) || run.chapter < 0 || run.chapter >= story.chapters.length) return null;
     run.list = run.list.filter(function (e) { return known(e[0]); });
     if (!run.list.length) return null;
+    run.prestige = run.prestige === true;
     run.spare = (Array.isArray(run.spare) ? run.spare : []).filter(function (e) { return known(e[0]) && e[1] > 0; });
     if (!battleOk(run.battle)) run.battle = null;
     if (run.status === 'reward' && !(run.offer && run.offer.cards.concat(run.offer.lands).every(known))) run.offer = makeOffer(run);
@@ -259,11 +323,11 @@ var Campaign = (function () {
     try { return checked(JSON.parse(raw)); } catch (e) { return null; }
   }
 
-  function begin(storyId, player, seed) {
+  function begin(storyId, player, seed, prestige) {
     var story = STORIES[storyId];
     ended = null;
     var run = {
-      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [], spare: [],
+      story: storyId, player: player, chapter: 0, status: 'map', battle: null, offer: null, taken: [], spare: [], prestige: !!prestige,
       seed: (seed === undefined ? Math.floor(Math.random() * 2147483647) : seed) | 0,
       list: E.DECKS[story.starter].list.map(function (e) { return e.slice(); })
     };
@@ -273,8 +337,9 @@ var Campaign = (function () {
   function storyOf(run) { return STORIES[run.story]; }
   function chapterOf(run) { return storyOf(run).chapters[run.chapter]; }
   function decks(run) {
-    return [{ name: E.DECKS[storyOf(run).starter].name, colours: [storyOf(run).colour], list: run.list }, chapterOf(run).enemy];
+    return [{ name: E.DECKS[storyOf(run).starter].name, colours: [storyOf(run).colour], list: run.list }, enemyOf(run.story, run.chapter, run.prestige)];
   }
+  function units(run) { return unitsOf(run.story, run.chapter, run.prestige); }
 
   function countIn(list, id) {
     var e = list.filter(function (x) { return x[0] === id; })[0];
@@ -293,16 +358,38 @@ var Campaign = (function () {
       return colours.indexOf(c.colour) >= 0 && c.type !== 'land' && !c.token && c.sub !== 'Velunn' && c.cost + c.wants <= MAX_REWARD_COST && copiesOf(run, id) < E.maxCopies(id);
     });
   }
+  // Rare and legendary cards turn up more often as a campaign goes on; commons and uncommons stay steady.
+  function weight(run, id) {
+    var r = typeof Rarity !== 'undefined' ? Rarity.of(id) : 'c';
+    return r === 'c' ? 3 : r === 'u' ? 2 : run.prestige ? 1 + 0.5 * run.chapter : 0.5 + 0.3 * run.chapter;
+  }
   function draw(run, from, out) {
     var left = from.filter(function (id) { return out.indexOf(id) < 0; });
-    if (left.length) out.push(left[Math.floor(rand(run) * left.length)]);
+    if (!left.length) return false;
+    var total = left.reduce(function (n, id) { return n + weight(run, id); }, 0), x = rand(run) * total;
+    for (var i = 0; i < left.length; i++) if ((x -= weight(run, left[i])) < 0 || i === left.length - 1) { out.push(left[i]); return true; }
   }
-  // Two cards from your own side and one from the enemy you just beat, or a land for either, so a deck can keep up its mana.
+  // Each campaign's own reward lists (creator, 2026-11-13): cards that double down on its starter's plan, and cards that
+  // open a direction the starter already hints at, so nothing needs a mechanic the deck can't use. The lists and why
+  // each card is there are in CAMPAIGN.md.
+  var REWARDS = {
+    vigil: { double: ['sergeant', 'standasone', 'muster', 'roadsquire', 'glaive', 'oathbell', 'ribbonvane'], fresh: ['carrier', 'chaplain', 'penitent', 'reliquary', 'consecrate', 'lineofdawn', 'vowkeeper'] },
+    gnosis: { double: ['fieldscholar', 'rapier', 'rimecaller', 'wardwright', 'brightlance', 'heldmoments', 'harmonic'], fresh: ['unwind', 'leaden', 'glyphwright', 'frost', 'frostbreak', 'rimedrake'] },
+    dominion: { double: ['hex', 'informant', 'ledger', 'debtblade', 'tithekeeper', 'siphon', 'hostess'], fresh: ['tender', 'barrowmark', 'scale', 'mourner', 'gravecaller', 'barrowpriest', 'ossuary'] },
+    fervor: { double: ['firepot', 'drummer', 'cinderhook', 'falchion', 'packhunter', 'rabblerouser', 'captain'], fresh: ['emberward', 'anoint', 'salamander', 'firecaller', 'cinderwake', 'kindle', 'cinderfall'] },
+    genesis: { double: ['ridgewolves', 'reedcrown', 'springmelt', 'seedheart', 'alderkin', 'channel', 'marble'], fresh: ['goblinscout', 'canopy', 'thornbrake', 'stoneopens', 'overgrowth', 'seedfall', 'ironbark'] }
+  };
+  // Each list's slot goes to any card of your colour instead 30% of the time, so runs still surprise.
+  var WILD = 0.3;
+  // One card from each of the campaign's two lists and one from the enemy you just beat, or a land for either, so a
+  // deck can keep up its mana. No neutral cards (creator, 2026-11-13). A prestige run draws both from all of your colour.
   function makeOffer(run) {
-    var story = storyOf(run), foe = chapterOf(run).enemy.colours[0], cards = [], own = rewardable(run, [story.colour, 'N']);
-    draw(run, rewardable(run, foe === story.colour ? [] : [foe]), cards);
-    while (cards.length < OFFER && own.some(function (id) { return cards.indexOf(id) < 0; })) draw(run, own, cards);
-    cards.reverse();
+    var story = storyOf(run), foe = chapterOf(run).enemy.colours[0], cards = [], own = rewardable(run, [story.colour]), lists = REWARDS[run.story] || {};
+    [lists.double, lists.fresh].forEach(function (list) {
+      var pick = run.prestige || rand(run) < WILD ? own : own.filter(function (id) { return (list || []).indexOf(id) >= 0; });
+      if (!draw(run, pick, cards)) draw(run, own, cards);
+    });
+    if (foe === story.colour || !draw(run, rewardable(run, [foe]), cards)) draw(run, own, cards);
     return { cards: cards, spoils: foe === story.colour ? null : foe, lands: foe === story.colour ? [landOf(story.colour)] : [landOf(story.colour), landOf(foe)] };
   }
 
@@ -356,7 +443,8 @@ var Campaign = (function () {
   function abandon() { ended = null; write(null); }
 
   return {
-    ORDER: ORDER, STORIES: STORIES, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
+    ORDER: ORDER, STORIES: STORIES, REWARDS: REWARDS, PRESTIGE: PRESTIGE, PRESTIGE_GOLD: PRESTIGE_GOLD, enemyOf: enemyOf, unitsOf: unitsOf,
+    current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, units: units, saveBattle: saveBattle,
     finish: finish, take: take, swap: swap, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
     persistent: function () { return !!store; }
   };
