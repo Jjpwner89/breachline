@@ -117,7 +117,7 @@ var Engine = (function () {
     unit('salamander', 'Ember salamander', 'R', 3, 1, 3, 3, { keywords: ['Fireproof'], emberAtk: 2, text: "Fireproof: burning tiles don't hurt it. +2 attack while it stands on a burning tile." }),
     { id: 'frost', name: 'Frost', type: 'spell', colour: 'U', cost: 3, wants: 1, aim: { tile: 'frost', turns: 2, spread: true, foes: 2 }, text: "Aim at a tile: it and the tiles next to it freeze until the end of your next turn, and each enemy there takes 2 damage. Units on frozen tiles can't move or attack." },
     unit('glyphwright', 'Glyphwright', 'U', 3, 1, 2, 3, { ability: { key: 'snare', label: 'Snare', turns: 3 }, text: "Ability: put a snare on an empty tile within 2 tiles, for 3 turns. The first enemy to enter it stops there and can't move or attack on its next turn." }),
-    { id: 'thornbrake', name: 'Thornbrake', type: 'spell', colour: 'G', cost: 2, wants: 1, aim: { tile: 'thorns', turns: 3, block: true, tileDmg: 2 }, text: "Aim at a 2 × 2 square of tiles: thorns for 3 turns. A unit that enters must stop there and takes 2 damage. Alderkin aren't affected." },
+    { id: 'thornbrake', name: 'Thornbrake', type: 'spell', colour: 'G', cost: 2, wants: 1, aim: { tile: 'thorns', turns: 3, block: true, tileDmg: 2, foes: 1 }, text: "Aim at a 2 × 2 square of tiles: 1 damage to each enemy there, and thorns for 3 turns. A unit that enters must stop there and takes 2 damage. Alderkin ignore the thorns." },
     { id: 'gravesoil', name: 'Grave soil', type: 'spell', colour: 'B', cost: 2, wants: 1, aim: { tile: 'blight', turns: 3, block: true }, text: 'Aim at a 2 × 2 square of tiles: blighted for 3 turns. Units there have -1 attack. When a unit dies on one, you summon a Gravebound thrall on that tile.' },
     unit('ashsower', 'Ash-sower', 'B', 3, 1, 3, 3, { ability: { key: 'blight', label: 'Blight', turns: 3 }, text: 'Ability: blight a tile next to it for 3 turns. Units there have -1 attack.' }),
     { id: 'consecrate', name: 'Consecrated ground', type: 'spell', colour: 'W', cost: 2, wants: 1, aim: { tile: 'holy', turns: 3, block: true, tileAtk: 1 }, text: 'Aim at a 2 × 2 square of tiles: for 3 turns, your units there have +1 attack, take 1 less damage from attacks and recover 1 health at the start of your turn.' },
@@ -232,7 +232,7 @@ var Engine = (function () {
     { id: 'springmelt', name: 'Spring melt', type: 'spell', colour: 'G', cost: 2, wants: 1, mend: 4, temper: 1, text: 'One of your units recovers 4 health and permanently gets +1 attack.' },
     unit('alderelder', 'Alderkin elder', 'G', 7, 3, 5, 8, { sub: 'Alderkin', keywords: ['Grows'], text: 'Grows: +1 attack and +2 health at the start of your turn, up to three times.' }),
     unit('reedbank', 'Reedbank forager', 'G', 2, 1, 1, 3, { ability: { key: 'reed', label: 'Forage' }, text: 'Instead of moving or attacking: you may play an extra land next turn.' }),
-    { id: 'overgrowth', name: 'Overgrowth', type: 'spell', colour: 'G', cost: 3, wants: 2, aim: { square: true, tile: 'thorns', turns: 2, tileDmg: 2 }, text: "Aim at a tile: the square around it fills with thorns for 2 turns. A unit that enters thorns must stop there and takes 2 damage. Alderkin aren't affected." },
+    { id: 'overgrowth', name: 'Overgrowth', type: 'spell', colour: 'G', cost: 3, wants: 2, aim: { square: true, tile: 'thorns', turns: 2, tileDmg: 2, foes: 1 }, text: "Aim at a tile: 1 damage to each enemy in the square around it, which fills with thorns for 2 turns. A unit that enters thorns must stop there and takes 2 damage. Alderkin ignore the thorns." },
     unit('pathguard', 'Thornwarden pathguard', 'G', 3, 1, 3, 4, { keywords: ['Holding ground'], text: 'Holding ground: enemies that move next to it must stop.' }),
     { id: 'canopy', name: 'Sudden canopy', type: 'instant', colour: 'G', cost: 2, wants: 1, canopy: true, canopyAll: true, text: 'When an enemy attacks one of your units: prevent all of that damage.' },
     { id: 'returnloam', name: 'Return to loam', type: 'spell', colour: 'G', cost: 2, wants: 1, loam: true, unrelic: true, text: 'Destroy an equipment card or a relic. You may play an extra land this turn.' },
@@ -354,18 +354,20 @@ var Engine = (function () {
     return kind === 'charge' ? 2 : 0;
   }
   var TILE_SAY = { burn: 'The fire burns ', thorns: 'The thorns cut ', charge: 'The charge strikes ' };
-  // Moving onto a tile triggers it, and so does starting the owner's turn there. A charge goes off only on entering, then is spent.
+  // Moving onto a tile triggers it, and so does ending the owner's turn there, so a unit caught by fire or thorns can step off first.
+  // Consecrated ground heals at the start of its owner's turn instead. A charge goes off only on entering, then is spent.
   // Being pushed onto one counts as entering it, so fire, thorns, snares and charges catch pushed units too.
-  function tileHits(s, u, entering) {
-    var t = tileAt(s, u.r, u.c);
+  // when is true on entering, or 'start' or 'end' of the unit's own turn.
+  function tileHits(s, u, when) {
+    var t = tileAt(s, u.r, u.c), entering = when === true;
     if (!t) return;
-    if (t.kind === 'holy' && !entering && u.owner === t.owner && u.hp < u.maxHp) heal(s, u, 1);
+    if (t.kind === 'holy' && when === 'start' && u.owner === t.owner && u.hp < u.maxHp) heal(s, u, 1);
     if (t.kind === 'snare' && entering && u.owner !== t.owner) {
       u.frozen = s.turn + 2;
       delete s.tiles[u.r + ',' + u.c];
       say(s, CARDS[u.cardId].name + " is caught in a snare: it can't move or attack on its next turn.");
     }
-    if (t.kind === 'charge' && !entering) return;
+    if (when === 'start' || (t.kind === 'charge' && !entering)) return;
     var amt = harms(u, t.kind);
     if (!amt) return;
     if (t.dmg) amt = t.dmg;
@@ -533,7 +535,7 @@ var Engine = (function () {
       });
     });
     for (var key in s.tiles || {}) if (s.tiles[key].until < s.turn) delete s.tiles[key];
-    s.units.filter(function (u) { return u.owner === s.active; }).forEach(function (u) { if (s.units.indexOf(u) >= 0) tileHits(s, u, false); });
+    s.units.filter(function (u) { return u.owner === s.active; }).forEach(function (u) { if (s.units.indexOf(u) >= 0) tileHits(s, u, 'start'); });
     if (s.winner !== null) return;
     // The Pilgrim reliquary mends whichever of your units is missing the most health.
     p.relics.forEach(function (r) {
@@ -1288,6 +1290,7 @@ var Engine = (function () {
   }
 
   function finishTurn(s) {
+    s.units.filter(function (u) { return u.owner === s.active; }).forEach(function (u) { if (s.units.indexOf(u) >= 0) tileHits(s, u, 'end'); });
     s.units.forEach(function (u) { u.tempAtk = 0; u.tempRange = false; u.noAttack = false; u.stride = 0; });
     var p = s.players[s.active], coins = p.hand.filter(function (i) { return CARDS[i.c].coin; }).length;
     if (coins) {

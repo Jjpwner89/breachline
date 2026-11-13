@@ -398,7 +398,8 @@ var Bot = (function () {
         (s.drops || []).forEach(function (d) {
           if (d.r === m.r && d.col === m.c && (E.CONFIG.gearDrop === 'anyone' || d.owner === u.owner)) bonus += 30 + (E.CARDS[d.c].atkBonus || 0) * 10;
         });
-        return 12 + gain * 12 + bonus - tileHarm(s, u, m.r, m.c) * 15;
+        // Fire and thorns hurt a unit that ends its turn on them, so stepping off is worth as much as not stepping on.
+        return 12 + gain * 12 + bonus - (tileHarm(s, u, m.r, m.c) - Math.max(0, tileHarm(s, u, u.r, u.c))) * 15;
       case 'relic':
         var rel = p.relics.filter(function (r) { return r.id === m.relic; })[0], rk = E.CARDS[rel.c].relic;
         var fresh = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.acted; });

@@ -452,6 +452,16 @@ function randomField(r, ids) {
     s = play(s, { type: 'cast', card: kindle, r: 2, c: 2 });
     check('Kindle the line lights your units and burns the cross', by(s, mine).lit && by(s, mine).hp === E.CARDS.sentinel.hp && by(s, foe).hp === 1 && E.tileAt(s, 1, 2).kind === 'burn');
 
+    s = arena(); var stays = put(s, 'giant', 1, 1, 2), full = E.CARDS.giant.hp;
+    s = endTurn(play(s, { type: 'cast', card: give(s, 'scorch'), r: 1, c: 2 }));
+    var atStart = by(s, stays).hp;
+    s = endTurn(s);
+    check('burning ground hurts a unit at the end of its own turn, not the start', atStart === full - 2 && by(s, stays).hp === full - 3, atStart + ' then ' + by(s, stays).hp);
+    s = arena(); var steps = put(s, 'giant', 1, 1, 2);
+    s = endTurn(play(s, { type: 'cast', card: give(s, 'scorch'), r: 1, c: 2 }));
+    s = endTurn(play(E.applyMove(s, { type: 'toCommand' }), { type: 'move', unit: steps.uid, r: 0, c: 2 }));
+    check('so a unit that steps off it takes only the hit', by(s, steps).hp === full - 2, String(by(s, steps).hp));
+
     s = arena(); var hulk = put(s, 'slagheart', 0, 2, 2), near = put(s, 'sentinel', 0, 3, 2), proof = put(s, 'salamander', 1, 2, 3), killer = put(s, 'lancer', 1, 1, 2);
     hulk.hp = 1; s.active = 1; s.phase = 'command';
     s = pass(play(s, { type: 'attack', unit: killer.uid, target: hulk.uid }));

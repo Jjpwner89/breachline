@@ -87,8 +87,8 @@ var Help = (function () {
     Errant: 'Errant: the units it summons land on a random tile of your back row.'
   };
   var TILES = {
-    burn: 'Burning ground: 1 damage to a unit that ends a move here or starts its turn here, unless it\'s Fireproof.',
-    thorns: 'Thorns: a unit that enters must stop and takes 1 damage. Alderkin aren\'t affected.',
+    burn: 'Burning ground: 1 damage to a unit that ends a move here or ends its turn here, unless it\'s Fireproof.',
+    thorns: 'Thorns: a unit that enters must stop and takes 1 damage, and so does one that ends its turn here. Alderkin aren\'t affected.',
     frost: 'Frozen ground: a unit standing here can\'t move.',
     snare: 'Snare: the first enemy to enter is caught and can\'t move on its next turn.',
     blight: 'Blighted ground: units here have -1 attack.',
