@@ -46,10 +46,19 @@ Claude's assumptions, not yet confirmed by the creator:
 - A 6 by 5 grid: 6 columns, and 5 rows between the two players (creator, 2026-11-10, replacing 5 by 4).
 - The summoner can be hit only from the enemy back row.
 - Only surviving targets strike back.
-- The play phase comes before the command phase, and the first player skips their first draw.
+- The first player skips their first draw.
 - Two response windows with no stack, and a limit of 2 redraws.
 - In the deck builder: exactly 40 cards, at most 3 copies of any non-land card whatever its rarity, and unlimited lands (creator, 2026-11-11). Limits by rarity were tried and felt too contrived. A legendary that proves too strong gets a higher cost, not a lower limit; legendaries are hard to unlock, so few players can stack them, and a deck full of expensive cards limits itself through mana. The starter, theme and campaign enemy decks are all 40. A campaign deck stays at 40: rewards go to a reserve that can be swapped in between battles.
 - The card-to-faction list in `engine.js`.
+
+## Free-order turns (2026-11-12)
+
+The creator asked why a turn split into playing cards and then commanding units, and there was no reason: the split was one of Claude's early assumptions above. Now a player plays cards and commands units in any order during their turn, so they can attack first and then summon into the tile it cleared, or finish a wounded unit with a spell. The creator wanted it easy to undo if it plays oddly.
+
+- **To revert:** set `freeTurn: false` in `CONFIG` in engine.js. Everything else follows that one setting: the engine, the bot, the Claude opponent's rules, the battle screen (the Play and Command steps and the Command units button come back), the tutorial and the help tips. Nothing else needs changing.
+- Each game records the rule it began with (`s.free`), so a battle saved under the other rule finishes under its own.
+- The scripted bot was taught to use it: the best unit action is always among the moves it plays out, and each is played out twice, once as scored and once with units first. It plays a card after a unit has acted in about 1 in 6 of the turns where it does both, against 1 in 9 before the lesson. The Oath bell and the War drum, which it used only in the command step, now count all turn.
+- Balance, 1,400 games for each deck against every starter and theme deck (split turn, then free order with the taught bot): Oath of the Sunmane 51.7 to 54.1%, the Warhorde 47.8 to 45.8, the Lantern Conclave 47.2 to 48.1, the Ashen Court 44.0 to 44.8, the Elder Herd 50.8 to 49.7, Sun and cinder 61.9 to 64.3. All within noise (±2.7 each), and game length unchanged, so the run stopped there as the creator asked. People will use the freedom more than the bot does, which may favour aggressive decks.
 
 ## Board mechanics
 

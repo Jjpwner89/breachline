@@ -14,11 +14,13 @@ var AI = (function () {
   var RULES = [
     'THE RULES',
     '- The map has ' + E.ROWS + ' rows (0-' + (E.ROWS - 1) + ') and ' + E.COLS + ' columns (0-' + (E.COLS - 1) + '). Each summoner starts with ' + E.START_LIFE + ' life and loses at 0. At the turn limit of 60, the higher life total wins.',
-    '- Your turn: you draw a card, then the play phase, then the command phase. You cannot go back to the play phase.',
-    '- Play phase: play one land (adds 1 mana now and each later turn), and play any cards you can pay for. Mana refills at the start of your turn.',
+    // With free turns (Engine.CONFIG.freeTurn) cards and unit commands mix in any order; otherwise the turn has two phases.
+    E.CONFIG.freeTurn ? '- Your turn: you draw a card, then play cards and command your units in any order. You can attack first and play cards afterwards, for example to summon into a tile an attack cleared or to finish a wounded unit with a spell.'
+      : '- Your turn: you draw a card, then the play phase, then the command phase. You cannot go back to the play phase.',
+    (E.CONFIG.freeTurn ? '- Each turn you may play one land' : '- Play phase: play one land') + ' (adds 1 mana now and each later turn), and play any cards you can pay for. Mana refills at the start of your turn.',
     '- Each land you lack of a card\'s colour adds 1 to its cost, so a card is never locked out.',
     '- New units appear only on free tiles of your back row, and cannot move or act until your next turn.',
-    '- Command phase: each unit may move once, then either attack or use its ability. A unit that has attacked or used an ability cannot move afterwards.',
+    (E.CONFIG.freeTurn ? '- Each unit' : '- Command phase: each unit') + ' may move once, then either attack or use its ability. A unit that has attacked or used an ability cannot move afterwards.',
     '- Units move 1 tile with no diagonals and cannot pass through other units. Swift and Flying units move 2 tiles, and Flying units pass over other units.',
     '- Attack reach is 1 tile with no diagonals. Ranged units reach 2 tiles, counted in steps across rows and columns.',
     '- Guard: allies next to a Guard unit take 1 less damage from attacks and strike-backs.',
@@ -245,7 +247,7 @@ var AI = (function () {
       var r = p.relics.filter(function (x) { return x.id === m.relic; })[0];
       lines.push('Use the relic ' + card(r.c).name + (m.target ? ' on ' + named(v, unitBy(v, m.target)) : '') + ' {"type":"relic","relic":' + m.relic + (m.target ? ',"target":' + m.target : '') + '}');
     });
-    var cmd = v.phase === 'play' ? E.applyMove(v, { type: 'toCommand' }) : v;
+    var cmd = v.phase === 'play' && !v.free ? E.applyMove(v, { type: 'toCommand' }) : v;
     v.units.filter(function (u) { return u.owner === me; }).forEach(function (u) {
       lines = lines.concat(unitOptions(cmd, unitBy(cmd, u.uid)));
     });
@@ -366,11 +368,11 @@ var AI = (function () {
     while (queue.length) {
       var hit = matchMove(moves, queue[0]);
       if (hit) { queue.shift(); return hit; }
-      if (s.phase === 'play' && COMMAND[queue[0].type]) return { type: 'toCommand' };
+      if (s.phase === 'play' && !s.free && COMMAND[queue[0].type]) return { type: 'toCommand' };
       var gone = queue.shift();
       if (dropped) dropped.push(gone);
     }
-    return { type: s.phase === 'play' ? 'toCommand' : 'endTurn' };
+    return { type: s.phase === 'play' && !s.free ? 'toCommand' : 'endTurn' };
   }
 
   // Returns null when the reply is unusable: not a plan, or a plan with nothing in it the engine would accept.
@@ -397,7 +399,7 @@ var AI = (function () {
   // Whether this turn holds anything to decide. With nothing to play or command, no model call is needed.
   function hasChoice(v) {
     if (E.legalMoves(v).length > 1) return true;
-    return v.phase === 'play' && E.legalMoves(E.applyMove(v, { type: 'toCommand' })).length > 1;
+    return v.phase === 'play' && !v.free && E.legalMoves(E.applyMove(v, { type: 'toCommand' })).length > 1;
   }
 
   // Reads JSON from a reply: the whole text, a fenced block, or the text from the first brace to the last.

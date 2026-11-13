@@ -279,8 +279,9 @@ var Engine = (function () {
   // Every deck is 40 cards, with at most 3 copies of a card and as many lands as you like (creator, 2026-11-11).
   var DECK_MIN = 40, DECK_MAX = 40, MAX_COPIES = 3;
   // Rules still being tested. gearDrop: 'destroy' (equipment dies with its wearer), 'allies' (it drops on the tile for an
-  // ally to pick up) or 'anyone' (either side can pick it up).
-  var CONFIG = { gearDrop: 'allies', frozenSolid: true };
+  // ally to pick up) or 'anyone' (either side can pick it up). freeTurn: cards and unit commands in any order within a
+  // turn, with no switch from playing cards to commanding units (2026-11-12). Set it to false to bring back the two steps.
+  var CONFIG = { gearDrop: 'allies', frozenSolid: true, freeTurn: true };
   function maxCopies(id) { return CARDS[id].type === 'land' ? Infinity : MAX_COPIES; }
   function deckSize(list) { return list.reduce(function (n, e) { return n + e[1]; }, 0); }
   function deckProblems(list) {
@@ -444,6 +445,8 @@ var Engine = (function () {
       winner: null, pending: null, nextId: 1, units: [], tiles: {}, log: [], logMarked: true, fx: [],
       players: [mkPlayer(opts.decks[0]), mkPlayer(opts.decks[1])]
     };
+    // A game keeps the turn rule it began with, so a battle saved before a change finishes under its own rule.
+    if (CONFIG.freeTurn) s.free = true;
     s.players.forEach(function (p, idx) {
       deckOf(opts.decks[idx]).list.forEach(function (e) {
         for (var i = 0; i < e[1]; i++) p.deck.push({ id: s.nextId++, c: e[0] });
@@ -785,10 +788,11 @@ var Engine = (function () {
         }
       });
       out = out.concat(relicMoves(s, pi), ownInstants(s, pi));
-      out.push({ type: 'toCommand' });
-      return out;
-    }
-    out = out.concat(relicMoves(s, pi), ownInstants(s, pi));
+      if (!s.free) {
+        out.push({ type: 'toCommand' });
+        return out;
+      }
+    } else out = out.concat(relicMoves(s, pi), ownInstants(s, pi));
     s.units.forEach(function (u) {
       if (u.owner !== pi || u.summonedTurn === s.turn || u.acted || stilled(s, u)) return;
       // Frozen solid: a bound or frozen unit, or one on frozen ground, can't move, attack or use its ability.

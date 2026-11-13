@@ -63,7 +63,7 @@ var Tutorial = (function () {
     { part: 1, title: 'Your hand', target: function () { return '#hand'; },
       text: 'Bright cards can be played now and dimmed ones can\'t. The coin on a card is its cost in mana. Point at a card to see it close up, or use View card on a phone.' },
     { part: 1, title: 'The turn', target: function () { return '#phases'; },
-      text: 'Every turn has two steps. In Play you play cards from your hand. In Command you move your units and attack.' },
+      text: E.CONFIG.freeTurn ? 'This strip shows whose turn it is, and which turn of the battle.' : 'Every turn has two steps. In Play you play cards from your hand. In Command you move your units and attack.' },
     { part: 1, title: 'What to do next', target: function () { return '#actions .prompt'; },
       text: 'This line always says what you can do next, and the line under it shows the last thing that happened.' },
     { part: 1, title: 'End turn', target: function () { return PRESS; },
@@ -83,7 +83,7 @@ var Tutorial = (function () {
     { part: 2, title: 'New units wait',
       target: function (s) { return tile(s.units.filter(function (u) { return u.owner === ME && u.cardId === 'cleric'; })[0]); },
       text: 'The cleric is greyed out and marked Waiting: a unit can\'t act on the turn it arrives. Next turn it can use its ability, Heal, on an ally beside it.' },
-    { part: 2, title: 'Command your units', target: function () { return COMMAND; },
+    { part: 2, title: 'Command your units', split: true, target: function () { return COMMAND; },
       allow: function (m) { return m.type === 'toCommand'; },
       done: function (s) { return s.phase === 'command'; },
       text: 'That\'s your cards played. Press Command units to move on to your units. After this, the only cards you can play are instants.' },
@@ -110,7 +110,7 @@ var Tutorial = (function () {
     { part: 2, title: 'Your turn again',
       target: function (s) { return tile(s.units.filter(function (u) { return u.owner === FOE && u.cardId === 'goblin'; })[0]) || '#themStrip .plate'; },
       text: 'The enemy played a land and summoned a Goblin cutter into its back row. It has to wait a turn, like your cleric did. Your turn began with a fresh card, and your units are ready again.' },
-    { part: 2, title: 'Command again', target: function () { return COMMAND; },
+    { part: 2, title: 'Command again', split: true, target: function () { return COMMAND; },
       allow: function (m) { return m.type === 'toCommand' || m.type === 'playLand'; },
       done: function (s) { return s.phase === 'command'; },
       text: 'You drew another Sunlit plains. Play it if you like, then press Command units.' },
@@ -128,6 +128,8 @@ var Tutorial = (function () {
       text: 'In a full battle each summoner starts with 15 life and a 40-card deck, and draws 7 cards to start, with up to two redraws. Instants can be played on either turn, even in answer to an enemy attack, with the mana you leave unspent. Point at any card to read its rules.',
       after: function () { return Progress.state().starter ? ' Next, try the campaign or an exhibition battle.' : ' Next, choose your first deck, then try the campaign.'; } }
   ];
+  // With free turns there's no Command units button to press, so the steps about it are left out.
+  if (E.CONFIG.freeTurn) STEPS = STEPS.filter(function (st) { return !st.split; });
   var PARTS = { 1: 'The table', 2: 'Your first battle' };
 
   function current() { return at >= 0 ? STEPS[at] : null; }

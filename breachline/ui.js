@@ -252,6 +252,8 @@
   if (!hosted) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
   else if (OwnKey.has()) sample = OwnKey.sample;
   function refreshStart() { if (!$('start').hidden) renderStart(); Screens.redraw(); }
+  // With free turns there's nothing to say about the order of a turn.
+  if (E.CONFIG.freeTurn) $('turnRule').remove();
 
   function actor() { return S.pending ? S.pending.responder : S.active; }
   function humanMoves() {
@@ -589,7 +591,7 @@
     if (S.phase === 'opening') return '<span class="turn">Opening hands</span>';
     var step = function (name, label) { return '<span class="step' + (S.phase === name ? ' on' : '') + '">' + label + '</span>'; };
     return '<span class="turn"><small>Turn ' + S.turn + '</small>' + (bothHands() ? (S.active === 0 ? 'Bottom' : 'Top') + "'s turn" : S.active === HUMAN ? 'Your turn' : 'Enemy turn') + '</span>' +
-      '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>';
+      (S.free ? '' : '<span class="steps">' + step('play', 'Play') + step('command', 'Command') + '</span>');
   }
 
   function resultHtml() {
@@ -675,8 +677,8 @@
       return promptHtml(text) + '<span class="btns">' + opts + btn('Pass', { move: { type: 'pass' } }, true) + '</span>';
     }
     var out = [], sm = selectedMoves(moves);
-    if (S.phase === 'play') {
-      var hint = 'Pick a card from your hand, then move on to your units.';
+    if (S.phase === 'play' && !(S.free && sel && sel.kind === 'unit')) {
+      var hint = S.free ? 'Pick a card from your hand or one of your units.' : 'Pick a card from your hand, then move on to your units.';
       if (sel && sel.kind === 'relic') {
         hint = 'Choose one of your units.';
         out.push(btn('Back', { ui: 'clear' }));
@@ -705,8 +707,10 @@
         out.push(btn('Cancel', { ui: 'clear' }));
       }
       if (!sel) out = out.concat(relicButtons(moves));
-      var canCommand = E.legalMoves(E.applyMove(S, { type: 'toCommand' })).length > 1;
+      // With free turns there's no step to move on to: units are picked straight from the map.
+      var canCommand = !S.free && E.legalMoves(E.applyMove(S, { type: 'toCommand' })).length > 1;
       if (canCommand) out.push(btn('Command units', { move: { type: 'toCommand' } }, !sel));
+      if (S.free) return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>' + pressHtml({ move: { type: 'endTurn' } }, !sel && moves.every(function (m) { return m.type === 'endTurn'; }));
       return promptHtml(hint) + '<span class="btns">' + out.join('') + '</span>' + pressHtml({ ui: 'skip' }, !canCommand && !sel && !moves.some(function (m) { return m.card !== undefined && m.type !== 'bottomCard'; }));
     }
     var cmdHint = 'Select one of your units. Each can move, then attack or use an ability.';
@@ -1129,7 +1133,7 @@
     if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && sel && sel.ability && sm.some(function (m) { return m.type === 'ability' && m.r !== undefined && m.target === u.uid; })) { sel.abUnit = u.uid; return render(); }
-    if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && S.phase === 'command') { sel = { kind: 'unit', id: u.uid }; return render(); }
+    if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && (S.phase === 'command' || (S.free && S.phase === 'play'))) { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }
   }
 

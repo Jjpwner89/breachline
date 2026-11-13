@@ -587,7 +587,7 @@ function randomField(r, ids) {
       a.summonedTurn = b.summonedTurn = 0;
       s = endTurn(s);
       check('a unit with Overwatch that stayed still keeps watch', by(s, w).watching === true);
-      s = play(s, { type: 'toCommand' });
+      if (!s.free) s = play(s, { type: 'toCommand' });
       s = pass(play(s, { type: 'move', unit: a.uid, r: 2, c: 2 }));
       check('it strikes the first enemy to move into its reach', by(s, a).hp === E.CARDS.sellsword.hp - E.CARDS.sentinel.atk && !by(s, w).watching);
       s = pass(play(s, { type: 'move', unit: b.uid, r: 2, c: 3 }));

@@ -402,11 +402,11 @@ var Bot = (function () {
       case 'relic':
         var rel = p.relics.filter(function (r) { return r.id === m.relic; })[0], rk = E.CARDS[rel.c].relic;
         var fresh = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.acted; });
-        if (rk === 'bell') return s.phase === 'command' && fresh.filter(function (a) { return s.units.some(function (o) { return o !== a && o.owner === pi && dist(o, a) === 1; }); }).length >= 2 ? 30 : -1;
+        if (rk === 'bell') return (s.phase === 'command' || s.free) && fresh.filter(function (a) { return s.units.some(function (o) { return o !== a && o.owner === pi && dist(o, a) === 1; }); }).length >= 2 ? 30 : -1;
         if (rk === 'bellgrow') { t = unitById(s, m.target); return 35 + E.attackOf(s, t) * 2 + worth(t) / 10 + (t.summonedTurn !== s.turn && !t.acted ? 10 : 0); }
         if (rk === 'pick') return 50;
         if (rk === 'scry') return 40;
-        if (rk === 'drum') return s.phase === 'command' && fresh.filter(function (a) { return !a.moved; }).length >= 3 ? 25 : -1;
+        if (rk === 'drum') return (s.phase === 'command' || s.free) && fresh.filter(function (a) { return !a.moved; }).length >= 3 ? 25 : -1;
         if (rk === 'tide') return s.phase === 'play' && p.hand.some(function (h) { var hc = E.CARDS[h.c], cost = E.costOf(s, pi, hc, h); return hc.type !== 'land' && cost > p.mana && cost <= p.mana + rel.store; }) ? 80 : -1;
         if (rk === 'seed') return rel.store >= 2 ? 30 + rel.store * 10 + worth(unitById(s, m.target)) / 10 : -1;
         if (rk === 'stars') {
@@ -496,14 +496,22 @@ var Bot = (function () {
       + x.players[pi].relics.reduce(function (n, r) { return n + (r.store || 0) * 6; }, 0);
     return v;
   }
-  function greedy(s) {
-    var moves = E.legalMoves(s, { dedupe: true }), best = null, top = -Infinity;
-    moves.forEach(function (m) { var v = score(s, m); if (v > top) { top = v; best = m; } });
-    return best;
+  // With free turns (s.free), units can act before cards are played. unitsFirst plays the rest of the turn
+  // that way: any unit move worth making goes before the cards, so an attack can clear a tile to summon into or leave
+  // a target for a spell to finish.
+  var COMMANDS = { move: 1, attack: 1, ability: 1 };
+  function greedy(s, unitsFirst) {
+    var moves = E.legalMoves(s, { dedupe: true }), best = null, top = -Infinity, unit = null, unitTop = 0;
+    moves.forEach(function (m) {
+      var v = score(s, m);
+      if (v > top) { top = v; best = m; }
+      if (unitsFirst && COMMANDS[m.type] && v > unitTop) { unitTop = v; unit = m; }
+    });
+    return unit && best.type !== 'playLand' && top < 1000 ? unit : best;
   }
   // Plays the rest of pi's turn greedily and scores where it ends. The copy hides what pi can't know: the enemy's
   // hand is emptied, so no answer is assumed, and pi's own deck and the shuffle seed are scrambled.
-  function rollout(s, m, pi, r) {
+  function rollout(s, m, pi, r, unitsFirst) {
     var x = JSON.parse(JSON.stringify(s));
     x.players[1 - pi].hand = [];
     x.seed = Math.floor(r() * 2147483647);
@@ -513,7 +521,7 @@ var Bot = (function () {
     for (var steps = 0; steps < 40 && x.winner === null; steps++) {
       if (x.pending ? x.pending.responder !== pi : x.active !== pi) break;
       if (x.phase !== 'play' && x.phase !== 'command') break;
-      var next = greedy(x);
+      var next = greedy(x, unitsFirst);
       if (!next || next.type === 'endTurn') break;
       x = E.applyMove(x, next);
     }
@@ -533,11 +541,16 @@ var Bot = (function () {
     // and the one that leaves the best board wins. Lands and winning blows need no lookahead.
     var pi = s.active, p = s.players[pi];
     if (!LOOK.on || s.pending || (s.phase !== 'play' && s.phase !== 'command') || p.toBottom || p.scrying || p.picking || top >= 1000) return best;
-    var cands = scored.filter(function (x) { return x.v >= 0; }).sort(function (a, b) { return b.v - a.v; }).slice(0, LOOK.width);
+    var cands = scored.filter(function (x) { return x.v >= 0; }).sort(function (a, b) { return b.v - a.v; }), free = !!s.free;
+    // With free turns the best unit action is always tried as well, and each move is played out both ways: the rest of
+    // the turn as scored, and with units first.
+    var unit = free && cands.filter(function (x) { return COMMANDS[x.m.type]; })[0];
+    cands = cands.slice(0, LOOK.width);
+    if (unit && cands.indexOf(unit) < 0) cands.push(unit);
     if (cands.length < 2) return best;
     var r = jitter || Math.random, pickBest = null, pickV = -Infinity;
     cands.forEach(function (x) {
-      var v = x.m.type === 'endTurn' ? evaluate(s, pi) : rollout(s, x.m, pi, r);
+      var v = x.m.type === 'endTurn' ? evaluate(s, pi) : free ? Math.max(rollout(s, x.m, pi, r), rollout(s, x.m, pi, r, true)) : rollout(s, x.m, pi, r);
       v += x.v * 0.05;
       if (v > pickV) { pickV = v; pickBest = x.m; }
     });

@@ -58,7 +58,7 @@ var Help = (function () {
   var TYPES = {
     land: 'Land: play one a turn. Each gives 1 mana every turn, in its alignment\'s colour.',
     unit: 'Unit: fights on the grid. It enters on your back row and waits a turn.',
-    spell: 'Spell: cast in your play step, then it\'s gone.',
+    spell: Engine.CONFIG.freeTurn ? 'Spell: cast it on your turn, then it\'s gone.' : 'Spell: cast in your play step, then it\'s gone.',
     instant: 'Instant: cast it any time, even on the enemy\'s turn, if you kept the mana.',
     enchant: 'Enchantment: attaches to a unit on either side, and goes when that unit dies. Equipment is the kind that\'s an object.',
     relic: 'Relic: stays beside your summoner, off the grid, with a lasting effect.'
@@ -186,7 +186,7 @@ var Help = (function () {
       return /Play/.test(el.textContent) ? 'Play step: play one land, then cast spells and summon units with your mana.'
         : 'Command step: each unit can move, then attack or use an ability. Only instants can be cast now.';
     }],
-    ['#phases .turn', function () { return 'Whose turn it is. Each turn has a play step, then a command step.'; }],
+    ['#phases .turn', function () { return 'Whose turn it is.' + (document.querySelector('#phases .steps') ? ' Each turn has a play step, then a command step.' : ''); }],
     ['#actions .press', function (el) { return el.classList.contains('foe') ? 'The enemy is taking its turn. You can answer some of its moves with instants.' : 'End your turn. Mana you leave unspent can pay for instants during the enemy\'s turn.'; }],
     ['#actions [data-do*="toCommand"]', function () { return 'Finish playing cards and start commanding your units.'; }],
     ['.tile .shd', function (el) {
