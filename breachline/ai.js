@@ -9,7 +9,7 @@ var AI = (function () {
   // One call per turn takes longer than a choice made while the player waits on a response, so those use the fast model.
   var CALLS = { turn: { modelTier: 'default', effort: 'low' }, decision: { modelTier: 'quick' } };
   // These won't clear up by asking again, so the scripted bot finishes the game.
-  var FATAL = { not_granted: 1, sampling_disabled: 1, not_declared: 1, capability_disabled: 1, capability_removed: 1, session_expired: 1, rate_limited: 1, key_rejected: 1, request_rejected: 1, sign_in_needed: 1, not_invited: 1 };
+  var FATAL = { not_granted: 1, sampling_disabled: 1, not_declared: 1, capability_disabled: 1, capability_removed: 1, session_expired: 1, rate_limited: 1, request_rejected: 1, sign_in_needed: 1, not_invited: 1 };
 
   var RULES = [
     'THE RULES',

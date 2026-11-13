@@ -184,12 +184,15 @@ var Decks = (function () {
     { id: 'theme-intofire', name: 'Into the fire', note: 'Red and blue. Set the ground burning, then push enemies into it with Brightlance and the choristers.',
       list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 3], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 2], ['wildfire', 2]] },
     // Built 2026-11-12 for the creator's brother to play against them online: strong and simple first, then fun aimed spells.
-    { id: 'theme-suncinder', name: 'Sun and cinder', note: 'White and red. A sturdy front line holds while aimed fire and light clear the way.',
+    // It's open: anyone can play it in Exhibition and Multiplayer without owning its cards, which it doesn't give them.
+    { id: 'theme-suncinder', open: true, name: 'Sun and cinder', note: 'White and red. A sturdy front line holds while aimed fire and light clear the way.',
       list: [['land_w', 7], ['land_r', 7], ['firepot', 2], ['huntress', 3], ['scorch', 3], ['sentinel', 3], ['berserker', 3], ['stormstrike', 3], ['lineofdawn', 2], ['knight', 2], ['lancer', 2], ['cinderfall', 2], ['giant', 1]] }
   ];
   function themes() {
-    return THEMES.map(function (t) { return { id: t.id, name: t.name, note: t.note, list: t.list.map(function (e) { return e.slice(); }), theme: true }; });
+    return THEMES.map(function (t) { return { id: t.id, name: t.name, note: t.note, list: t.list.map(function (e) { return e.slice(); }), theme: true, open: !!t.open }; });
   }
+  // Whether you may play a deck: an open one always, any other only with the cards it needs.
+  function yours(d) { return !!d.open || typeof Progress === 'undefined' || !Progress.missing(d.list); }
   function find(id) {
     return saved().concat(starters(), themes()).filter(function (d) { return d.id === id; })[0] || null;
   }
@@ -251,7 +254,7 @@ var Decks = (function () {
   connect();
 
   return {
-    saved: saved, starters: starters, themes: themes, find: find, create: create, save: save, remove: remove, pool: pool, adopt: adopt,
+    saved: saved, starters: starters, themes: themes, find: find, yours: yours, create: create, save: save, remove: remove, pool: pool, adopt: adopt,
     picks: picks, setPicks: setPicks, persistent: function () { return !!store || !!remote; }
   };
 })();

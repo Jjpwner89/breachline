@@ -114,11 +114,12 @@ var Screens = (function () {
   actions.tutorial = function () { hide(); GameUI.tutorial(); };
 
   // Multiplayer. One player starts a match and sends its code, the other enters it, and the battle begins once both are in.
-  // Your own decks need cards you own; starter and theme decks are open to everyone, so a new player has a fair choice.
+  // Any deck needs the cards you own, the same as in Exhibition. Open decks are the exception: anyone can bring one,
+  // so a new player still has a fair choice, without its cards joining their collection.
   var netDeck = null, netCode = '';
   function netDecks() {
-    var mine = Decks.saved().filter(function (d) { return !E.deckProblems(d.list).length && !Progress.missing(d.list); });
-    return { mine: mine, open: Decks.starters().concat(Decks.themes()) };
+    var ok = function (d) { return !E.deckProblems(d.list).length && !d.open && Decks.yours(d); };
+    return { mine: Decks.saved().filter(ok), fixed: Decks.starters().concat(Decks.themes()).filter(ok), open: Decks.themes().filter(function (d) { return d.open; }) };
   }
   function online() {
     GameUI.warmAllArt();
@@ -131,7 +132,7 @@ var Screens = (function () {
         if (refresh === online) online();
       });
     }
-    var all = netDecks(), pool = all.mine.concat(all.open);
+    var all = netDecks(), pool = all.mine.concat(all.fixed, all.open);
     if (!pool.some(function (d) { return d.id === netDeck; })) netDeck = (all.mine[0] || Decks.find(Progress.state().starter) || pool[0]).id;
     var inClaude = how === 'claude';
     var note = '<p class="hint">' + (inClaude ? 'Both of you need this page open in Claude. If your opponent isn\'t in your organization, invite them by email from the Share menu first.'
@@ -154,7 +155,8 @@ var Screens = (function () {
         '<span class="netor">or</span><label class="netjoin"><span>Match code</span><input id="netCode" type="text" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="12" value="' + esc(netCode) + '" placeholder="abc23"></label>' +
         '<button type="button" class="btn" ' + act('netJoin') + '>Join</button></div><p class="hint">Choose your deck below first. Start a match and send its code, or enter the code you were sent.</p></section>' + note +
         (all.mine.length ? '<section class="pickset"><h2>Your decks</h2>' + tiles(all.mine) + '</section>' : '') +
-        '<section class="pickset"><h2>Starter and theme decks</h2>' + tiles(all.open) + '</section>';
+        (all.fixed.length ? '<section class="pickset"><h2>Starter and theme decks</h2>' + tiles(all.fixed) + '</section>' : '') +
+        '<section class="pickset"><h2>Open to everyone</h2><p class="hint">Anyone can bring these, whatever they own. Playing one doesn\'t add its cards to your collection.</p>' + tiles(all.open) + '</section>';
     }
     show('<div class="page"><header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Multiplayer</h1></header>' + body + '</div>', online);
     var input = byId('netCode');

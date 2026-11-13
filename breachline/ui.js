@@ -247,7 +247,7 @@
 
   // The Claude opponent needs the page to be running inside Claude. Anywhere else, only the scripted bot is on offer.
   var sample = null, plan = null, thinking = null, modelOff = false, lastThought = null;
-  // Inside Claude the page asks Claude itself. A copy hosted elsewhere uses the player's own API key when one is saved.
+  // Inside Claude the page asks Claude itself. A copy hosted elsewhere plays on the owner's key once the player signs in.
   var hosted = !(window.claude && window.claude.use);
   if (!hosted) window.claude.use('sample').then(function (fn) { sample = fn; refreshStart(); });
   else if (OwnKey.has()) sample = OwnKey.sample;
@@ -1060,7 +1060,6 @@
     if (AI.FATAL[code]) {
       modelOff = true;
       addChat(code === 'rate_limited' ? 'Claude has reached a usage limit, so the scripted bot finishes this game.' :
-        code === 'key_rejected' ? 'Anthropic turned down the saved API key, so the scripted bot finishes this game.' :
         code === 'request_rejected' ? 'Anthropic turned down the request, often because the account is out of credit, so the scripted bot finishes this game.' :
         code === 'sign_in_needed' ? 'Your sign-in needs refreshing, so the scripted bot finishes this game. Sign out and in again from the main menu.' :
         code === 'not_invited' ? "This account isn't on the list for Claude opponents yet, so the scripted bot finishes this game." :
@@ -1322,13 +1321,13 @@
   function deckHtml(d, role) {
     if (d.id === 'random') return '<button type="button" class="deck N random" data-role="opp" data-deck="random" aria-pressed="' + (picks.opp === 'random') + '"><span class="pic"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
       '<span class="nm">Random deck</span><span class="ty">Any alignment</span><span class="ds">A different starter, theme or saved deck each game.</span></button>';
-    var short = role === 'mine' ? Progress.missing(d.list) : 0, problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
+    var short = role === 'mine' && !d.open ? Progress.missing(d.list) : 0, problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
     var art = d.starter ? (noArt[DECK_ART[d.id]] ? null : artSrc(DECK_ART[d.id])) : Screens.coverArt(d.list);
     return '<button type="button" class="deck ' + main + '" data-role="' + role + '" data-deck="' + esc(d.id) + '" aria-pressed="' + on + '"' + (problems.length ? ' disabled' : '') + '>' +
       '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
       '<span class="nm">' + esc(d.name) + '</span>' +
       '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
+      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (d.open && role === 'mine' ? '<span class="ds">Open to everyone. Playing it doesn\'t add its cards to your collection.</span>' : '') + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
@@ -1348,32 +1347,11 @@
     if (hosted) $('keyBox').innerHTML = keyHtml();
   }
   function keyHtml() {
-    if (!OwnKey.has()) return (OwnKey.proxy() ? '<p class="player-note"><b>Sign in from the main menu to play Claude here.</b> Or use your own Anthropic API key:</p>' : '') +
-      '<p class="player-note">' + (OwnKey.proxy() ? '' : 'To play Claude here, add your own Anthropic API key. ') + 'A key stays in this browser and is sent only to Anthropic. One made just for this game, with a monthly spend limit set in the Anthropic console, is safest.</p>' +
-      '<div class="keyrow"><input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-..." aria-label="Anthropic API key">' +
-      '<button type="button" class="btn" id="keySave">Use this key</button></div><p class="player-note" id="keyMsg"></p>';
+    if (!OwnKey.has()) return '<p class="player-note"><b>Sign in from the main menu to play Claude here.</b></p>';
     var m = OwnKey.model();
     return '<div class="keyrow"><label>Claude model <select id="keyModel">' + OwnKey.MODELS.map(function (o) {
       return '<option value="' + o.id + '"' + (o.id === m.id ? ' selected' : '') + '>' + o.label + '</option>';
-    }).join('') + '</select></label>' + (OwnKey.ownKey() ? '<button type="button" class="btn" id="keyForget">Forget key</button>' : '') + '</div>' +
-      '<p class="player-note">' + (OwnKey.shared() ? "Claude plays on the game's shared key while you're signed in. " : '') + esc(m.note) +
-      ' Spent in this browser so far: about $' + OwnKey.spent().toFixed(2) + (OwnKey.shared() ? '.' : '. The Anthropic console has the exact figure.') + '</p>';
-  }
-  function saveKey() {
-    var input = $('apiKey'), k = input && input.value.trim();
-    if (!k) return;
-    $('keySave').disabled = true;
-    $('keyMsg').textContent = 'Checking the key with Anthropic...';
-    OwnKey.check(k).then(function () {
-      OwnKey.save(k);
-      sample = OwnKey.sample;
-      modelOff = false;
-      refreshStart();
-    }, function (e) {
-      input.value = '';
-      $('keySave').disabled = false;
-      $('keyMsg').textContent = e.code === 'key_rejected' ? "Anthropic didn't accept that key." : e.code === 'connection' ? "Couldn't reach Anthropic. Check the connection and try again." : "That didn't work (" + e.code + '). Try again in a moment.';
-    });
+    }).join('') + '</select></label></div><p class="player-note">' + esc(m.note) + ' Spent in this browser so far: about $' + OwnKey.spent().toFixed(2) + '.</p>';
   }
   // The start screen is the exhibition setup. A battle in progress waits here until a new one begins.
   function showStart(mine) {
@@ -1382,7 +1360,7 @@
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
-    var yours = function (id) { var d = ready(id) && Decks.find(id); return d && !Progress.missing(d.list) ? id : null; };
+    var yours = function (id) { var d = ready(id) && Decks.find(id); return d && Decks.yours(d) ? id : null; };
     var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
     picks = { mine: yours(mine) || yours(last.mine) || (newest ? newest.id : yours(Progress.state().starter) || 'white'), opp: last.opp === 'random' ? 'random' : ready(last.opp) || 'red' };
     Screens.hide();
@@ -1433,16 +1411,9 @@
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
-    if (e.target.closest('#keySave')) return saveKey();
-    if (e.target.closest('#keyForget')) {
-      OwnKey.forget();
-      sample = OwnKey.has() ? OwnKey.sample : null;
-      if (!sample && oppPlayer !== 'bot') oppPlayer = 'bot';
-      return refreshStart();
-    }
     if (e.target.closest('#begin')) {
       var mine = Decks.find(picks.mine);
-      if (!mine || Progress.missing(mine.list)) return;
+      if (!mine || !Decks.yours(mine)) return;
       Decks.setPicks(picks);
       chapterBattle = false;
       sandbox = false;
@@ -1454,9 +1425,6 @@
   });
   $('start').addEventListener('change', function (e) {
     if (e.target.id === 'keyModel') { OwnKey.setModel(e.target.value); renderStart(); }
-  });
-  $('start').addEventListener('keydown', function (e) {
-    if (e.target.id === 'apiKey' && e.key === 'Enter') saveKey();
   });
 
   function start(state, match) {
