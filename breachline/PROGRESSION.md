@@ -26,6 +26,7 @@ How players collect cards and move through the game. Built on 2026-11-10 in `rar
 - **Sealed mode:** wanted later.
 - **Save file:** you can save your whole progress to a file and load it back.
 - **Unlock everything:** a password sets an "everything unlocked" flag rather than adding cards, so it can be switched off without touching your real counts. The creator knows the password; the code stores only its SHA-256 hash, `ddacf85d8604913b6b0fed3a41a18bb2a84858b58c9a0c2b1b7295692a9e6408`.
+- **Gift codes (2026-11-12):** Collection, Save and unlock has a box for gift codes. Each code gives a set amount of gold once per player: the entry has a fixed id, so using it again, on any device of the same account, adds nothing. Another player who knew the code could still use it once. The first code gives 500 gold, for the creator's brother; the creator has it, and `GIFTS` in `progress.js` stores only its hash. Codes are matched in capitals, so case doesn't matter. Add a code by putting the SHA-256 of its capitalised text in `GIFTS` with its gold.
 
 ## As built
 

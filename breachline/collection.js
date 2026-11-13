@@ -253,7 +253,8 @@ var Collection = (function () {
       '<p class="hint">A save file holds your whole collection, record and saved decks. Loading one adds whatever it has that this game doesn\'t, so an old file never takes anything away.</p></section>' +
       '<section class="pickset"><h2>Unlock everything</h2>' + (st.unlocked
         ? '<p>Every card is unlocked, so any deck can use three of anything. Your real collection is unchanged underneath.</p><div class="cleave"><button type="button" class="btn" ' + act('lockAll') + '>Lock again</button></div>'
-        : '<form class="pwform" id="pwForm"><label class="sr" for="pw">Password</label><input type="password" id="pw" autocomplete="off" placeholder="Password"><button type="submit" class="btn">Unlock</button></form>') + '</section>';
+        : '<form class="pwform" id="pwForm"><label class="sr" for="pw">Password</label><input type="password" id="pw" autocomplete="off" placeholder="Password"><button type="submit" class="btn">Unlock</button></form>') + '</section>' +
+      '<section class="pickset"><h2>Gift code</h2><form class="pwform" id="giftForm"><label class="sr" for="gift">Gift code</label><input type="text" id="gift" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Code"><button type="submit" class="btn">Redeem</button></form></section>';
   }
   function download(name, text) {
     var fallback = function () {
@@ -284,6 +285,14 @@ var Collection = (function () {
     r.readAsText(e.target.files[0]);
   });
   K.root.addEventListener('submit', function (e) {
+    if (e.target.id === 'giftForm') {
+      e.preventDefault();
+      P.redeem(document.getElementById('gift').value).then(function (r) {
+        note = r.ok ? 'Redeemed: ' + r.gold + ' gold.' : r.why === 'used' ? "You've already used that code." : r.why === 'unsaved' ? "Couldn't save that here. Try again." : "That isn't a code.";
+        page();
+      });
+      return;
+    }
     if (e.target.id !== 'pwForm') return;
     e.preventDefault();
     P.unlock(document.getElementById('pw').value).then(function (ok) { note = ok ? 'Everything is unlocked.' : "That isn't the password."; page(); });

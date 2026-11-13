@@ -10,6 +10,8 @@ var Progress = (function () {
   var R = typeof Rarity !== 'undefined' ? Rarity : require('./rarity.js');
   var KEY = 'breachline.progress.v1', CHUNK = 400, MAX = 3;
   var UNLOCK_HASH = 'ddacf85d8604913b6b0fed3a41a18bb2a84858b58c9a0c2b1b7295692a9e6408';
+  // Gift codes, by the hash of the code in capitals, and the gold each gives. The code itself isn't kept anywhere in the game.
+  var GIFTS = { '0d9909cf0bca89d9f27f1f215d5218364915bb1b094f72206c75b7fef47a52ec': 500 };
 
   // Pack slots: c, u and r are that rarity; R is rare with a 1 in 8 chance of legendary; L is legendary half the time, else rare.
   var PACKS = {
@@ -91,6 +93,7 @@ var Progress = (function () {
       if (e.t === 'craft') { add(st.cards, e.card, 1); st.shards -= e.shards || 0; }
       if (e.t === 'milestone') { st.milestones[e.key] = e; st.gold += e.gold || 0; }
       if (e.t === 'unlock') st.unlocked = !!e.on;
+      if (e.t === 'gift') st.gold += e.gold || 0;
     });
     Object.keys(st.cards).forEach(function (id) { if (st.cards[id] < 0) st.cards[id] = 0; });
     return st;
@@ -273,6 +276,18 @@ var Progress = (function () {
   }
   function lock() { return !!append({ t: 'unlock', on: false }); }
 
+  // A gift code pays once per player: its entry has a fixed id, so a second use, on this device or another, adds nothing.
+  function redeem(code) {
+    var subtle = typeof crypto !== 'undefined' && crypto.subtle;
+    if (!subtle) return Promise.resolve({ ok: false, why: 'wrong' });
+    return subtle.digest('SHA-256', new TextEncoder().encode(String(code).trim().toUpperCase())).then(function (buf) {
+      var h = hex(buf), id = 'gift:' + h.slice(0, 16);
+      if (!GIFTS[h]) return { ok: false, why: 'wrong' };
+      if (state().ids[id]) return { ok: false, why: 'used' };
+      return append({ id: id, t: 'gift', gold: GIFTS[h] }) ? { ok: true, gold: GIFTS[h] } : { ok: false, why: 'unsaved' };
+    });
+  }
+
   // The save file holds the whole ledger and the saved decks. Loading merges, so an old file can't take away anything newer.
   function exportText() {
     var d = load();
@@ -365,7 +380,7 @@ var Progress = (function () {
     chooseStarter: chooseStarter, packCost: packCost, draw: draw, buyPack: buyPack,
     breakDown: breakDown, craft: craft, craftCost: craftCost, factionProgress: factionProgress,
     rewardLines: rewardLines, battle: battle, record: record, campaignWon: campaignWon, cleared: cleared,
-    unlock: unlock, lock: lock, exportText: exportText, importText: importText,
+    unlock: unlock, lock: lock, redeem: redeem, exportText: exportText, importText: importText,
     ready: function () { return ready; }, whenReady: function (fn) { if (ready) fn(); else readyFns.push(fn); },
     status: function () { return status; }, persistent: function () { return !!store || !!remote; },
     onChange: function (fn) { listeners.push(fn); }, fold: fold
