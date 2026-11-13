@@ -403,6 +403,13 @@ dialog .btns { justify-content: flex-start; }
 .who-plays[aria-pressed="true"] { border-image-source: url("art/web/ui/button-main.png"); filter: drop-shadow(0 0 8px rgba(208, 164, 72, .7)); }
 .who-plays[disabled] { opacity: .5; cursor: not-allowed; }
 .player-note { margin: 0; font-size: 13.5px; color: var(--muted); }
+.keybox { display: flex; flex-direction: column; gap: 6px; }
+.keyrow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); }
+.keyrow input, .keyrow select { padding: 7px 10px; font: 15px var(--body); color: var(--ivory); background: var(--felt, #241a10); border: 1px solid var(--line, var(--edge)); border-radius: 6px; }
+.keyrow input { flex: 1 1 16em; min-width: 0; max-width: 28em; }
+.keyrow select { margin-left: 6px; }
+.keyrow input:focus, .keyrow select:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.keyrow .btn { padding-left: 10px; padding-right: 10px; }
 .decks.small .ty, .decks.small .ds { display: none; }
 .decks.small .deck .nm { font-size: 14.5px; }
 
@@ -485,7 +492,7 @@ dialog .btns { justify-content: flex-start; }
   </div>
   <div class="picker"><h2>Your deck</h2><p class="pick-note" id="myNote"></p><div class="decks" id="myDecks"></div></div>
   <div class="picker"><h2>Your opponent</h2><div class="decks small" id="oppDecks"></div></div>
-  <div class="picker"><h2>Who plays your opponent</h2><div class="players" id="oppPlayer"></div><p class="player-note" id="playerNote"></p><label class="debug-opt"><input type="checkbox" id="debugToggle"> Debug mode: see what Claude was sent, its explanation of each decision and its plan. It asks Claude for a little more text each turn, and it shows you Claude's hand.</label></div>
+  <div class="picker"><h2>Who plays your opponent</h2><div class="players" id="oppPlayer"></div><p class="player-note" id="playerNote"></p><div class="keybox" id="keyBox" hidden></div><label class="debug-opt"><input type="checkbox" id="debugToggle"> Debug mode: see what Claude was sent, its explanation of each decision and its plan. It asks Claude for a little more text each turn, and it shows you Claude's hand.</label></div>
   <button class="btn primary big" id="begin" type="button">Begin battle</button>
 </section>
 
@@ -586,11 +593,15 @@ dialog .btns { justify-content: flex-start; }
 <script src="bot.js"></script>
 <script src="guides.js"></script>
 <script src="ai.js"></script>
+<script src="ownkey.js"></script>
 <script src="debug.js"></script>
 <script src="rarity.js"></script>
+<script src="firebase-config.js"></script>
+<script src="accounts.js"></script>
 <script src="progress.js"></script>
 <script src="decks.js"></script>
 <script src="campaign.js"></script>
+<script src="net.js"></script>
 <script src="screens.js"></script>
 <script src="collection.js"></script>
 <script src="fx.js"></script>
