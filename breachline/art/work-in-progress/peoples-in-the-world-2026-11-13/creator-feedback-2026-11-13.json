@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-13",
+  "scope": "Peoples in the world catalogue, 7 scenes and 10 card-art proposals",
+  "creator_message": "can we try to understand why the dominion cards always have the best art? interesetingly i prefer the general art designs you made over the card art, especially in this set.\n\nof the general, my ranking is 4, 2, 3, 5, 7, 6, 1 from favorite to least favorite.\n\ncard art is 5, 6, 7, 9, and a little of 10, but i dont like 10 or the other very much. the dominion ones always look more painted and i kind okf like that the colors aren't overstated. let's see if we can figure it out",
+  "explicit_feedback": {
+    "scene_order_favourite_to_least": [
+      "S4",
+      "S2",
+      "S3",
+      "S5",
+      "S7",
+      "S6",
+      "S1"
+    ],
+    "preferred_cards_in_given_order": [
+      "C5",
+      "C6",
+      "C7",
+      "C9"
+    ],
+    "partial_but_low_preference": [
+      "C10"
+    ],
+    "other_cards_not_liked_much": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8"
+    ],
+    "general": "General scene designs preferred over card art, especially in this set. Dominion images repeatedly feel more painted to the creator, who likes their less overstated colour.",
+    "approval_scope": "Comparative preference and art-direction investigation only. No new final selection, deletion, species rejection, commit or game implementation authorized by this feedback."
+  },
+  "inspection": {
+    "basis": "All 17 standalone PNGs visually inspected and compared with the exact saved prompts.",
+    "observations": [
+      {
+        "images": [
+          "S4",
+          "C5",
+          "C6"
+        ],
+        "finding": "Dominion uses closely related grey, brown, green-grey and iron tones, with small warm accents. Focal faces, hands and plate carry more definition; much surrounding cloth, smoke and stone merges into broad shadow or visibly broken strokes. Reflections are concentrated on metal."
+      },
+      {
+        "images": [
+          "S2",
+          "C3"
+        ],
+        "finding": "The same Glimmerfolk design succeeds more strongly for the creator in the lamplit workshop. S2 has saturated blue and amber, a specific fitting gesture and a lived-in courtyard. C3 loses that interaction for a tight lantern-in-doorway portrait, with stronger luminous dots and orange/blue skin accents and a smoother-looking face."
+      },
+      {
+        "images": [
+          "S3",
+          "C9",
+          "C10"
+        ],
+        "finding": "Hessa's household scene retains room, weather and quiet character. C9 remains a liked grounded armed figure. C10 spreads golden highlights across fur, wet roots, reeds and ground, giving the spell obstruction and shiny surfaces much of the image's attention."
+      },
+      {
+        "images": [
+          "S6",
+          "C4"
+        ],
+        "finding": "Both Crest images have visibly coarse strokes but bright peach-gold skin, crisply highlighted ridges and a sunlit stone setting. This separates the presence of brush texture from the creator's preference for a painted result."
+      },
+      {
+        "images": [
+          "S7",
+          "C2"
+        ],
+        "finding": "The ferry scene's physical interaction becomes a shield-and-wave display in C2; the luminous ward and spray occupy a large portion of the composition."
+      },
+      {
+        "images": [
+          "C7",
+          "C8"
+        ],
+        "finding": "C7 is bright and dynamic but liked. C8 is comparatively muted yet not liked much. Neither action nor average saturation alone explains the ranking."
+      }
+    ],
+    "prompt_evidence": [
+      {
+        "scope": "All cards",
+        "quote": "Invent a clearly different dramatic composition.",
+        "interpretation": "Possible pressure to escalate staging when translating an existing scene into card art; not proof of a causal mechanism."
+      },
+      {
+        "scope": "C5",
+        "quote": "Ordinary-sized soldier, oppressive service not glorious champion.",
+        "interpretation": "Specific restrained character direction counterbalances generic dramatic-card instructions."
+      },
+      {
+        "scope": "C6",
+        "quote": "The supernatural event is the unsettling return of a person, not a bright visual soul.",
+        "interpretation": "Magic is carried by the character's state and another person's gesture, preserving a quiet figure painting."
+      },
+      {
+        "scope": "C1/C2/C4/C10",
+        "evidence": "Golden storm-break sunlight; a warm golden ward and breaking spray; an enormous stone wedge opening a sunlit path; roots and an open/blocked passage as the main event.",
+        "interpretation": "These briefs place strong effects, warm spectacle or a demonstrated action at the center even though literal rules/stat text was excluded."
+      }
+    ]
+  },
+  "working_hypotheses_not_creator_rules": [
+    "Dominion's selected subjects and specific briefs jointly encourage a cohesive palette, restrained highlights, material differences and contained staging; these may explain the painted quality better than faction identity alone.",
+    "Several translations into card art lost the specific human-scale interaction or sense of an inhabited place and emphasized an ability or heroic presentation instead.",
+    "Visible brush texture alone does not guarantee the desired painted impression; the handling of form, reflection, colour and edges appears important.",
+    "Made people are more human-faced than the other subjects, so subject familiarity and design preference remain confounds. This comparison cannot establish the cause of an 'always' pattern across all historical art.",
+    "The scenes and cards differ in framing, subject action, light and sometimes reference inputs; rankings alone cannot isolate one causal variable."
+  ],
+  "proposed_test_not_executed": {
+    "subject": "C3 Glimmerfolk, fixed identity, pose, composition and scene",
+    "control": "Existing C3, unchanged",
+    "colour_variant": "Change only the colour/light brief toward quieter related tones and smaller high-saturation accents, preserving the blue glimmers and current composition.",
+    "paint_handling_variant": "Retain the current colour families and lighting direction, but use broader matte facial planes, selective edges and highlights, quieter secondary surfaces, and materially distinct skin, wool and stone.",
+    "interpretation": "Compare with the existing control before combining changes; generative editing can still introduce incidental differences. Study scene/story changes separately after testing rendering.",
+    "status": "Not executed. The creator next requested the S1/S5/S6 consistent-lighting test, recorded in lighting-prompts-and-manifest.json."
+  },
+  "preservation": "All existing PNGs, catalogue review controls and final-reference approvals preserved. No commit created.",
+  "image_sha256": {
+    "S1": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
+    "S2": "f10493419255713e6bf84f3e96672f8835186195fdf73c2e1769613f5d87acf5",
+    "S3": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9",
+    "S4": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87",
+    "S5": "fe6890a8891afd82b2ba242d36eeb5b0fc6b7f6289bde21ac3ce9066809df427",
+    "S6": "210ea153448ead9332fcc31941f1529d8b1bc78bc8ab66333956dd7ecb32e570",
+    "S7": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab",
+    "C1": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
+    "C2": "7761e0aa5f210ed6f2212427d5e9777d2a894caa53042260594ebf056cb56257",
+    "C3": "b09d763c022a41b33df87617a9e75d9f415e55f8e6061db23d4e43cf1d969294",
+    "C4": "5795783720dadccb0b603e32ce89c8c00dbbeeec44ee93371756633664d2bcad",
+    "C5": "dd29b19829863d9c8e0ad73819e56ef18a1b74618cadd33759044dce90ced6f4",
+    "C6": "9949ab223e29c3a38a0c26e174954221eaff2b675421d89dacadb77d52d0aa7f",
+    "C7": "8bb638610dcf9ed9287110c80ffe432ce9f55ea1b4bfcd0dbe2b027f1b856ef0",
+    "C8": "9e822cd3ded9f494d3c9d44ba067926da71b808c2cc810ccd7a54129c66a0181",
+    "C9": "5a4cb17231a517acadd5ad53a1f84cd34fcb7cce373a1f15a4087aed8d50e14c",
+    "C10": "c0143db02b502da6fef0671aa492c814d8d3e09bb00081f49bdace7a0eeddd59"
+  },
+  "followup_lighting_review": "lighting-review.html"
+}

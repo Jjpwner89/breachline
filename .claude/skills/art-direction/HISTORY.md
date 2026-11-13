@@ -652,3 +652,30 @@ All seventeen revised paintings, including the cedar variant, are approved and n
 ## UI polish alignment emblems — creator selection (2026-11-11)
 
 The creator reviewed the six interface alignment emblems and said: “dominion seal is the worst, all other are really good.” Preserve the original Vigil, Gnosis, Fervor, Genesis and Neutral artwork in breachline/art/ui/ui-alignment-emblems.png unchanged. The original Dominion crescent-and-shackle design is rejected. After seeing three replacement proposals, the creator explicitly selected “Iron crown (left)” in breachline/art/ui/ui-alignment-dominion-options.png. Use its leftmost crown for Dominion; the binding hand and closed gate are unselected alternatives. Exact crop mappings are in breachline/art/ui/UI_POLISH_SELECTIONS.json. This is an interface-emblem decision, not a new faction lore requirement or a preference for reusing these motifs in card scenes. All control options were requested for implementation and testing; that request does not choose a button material or other control option.
+
+## Fresh peoples painting style accepted and local corrections (creator, 2026-11-13)
+
+- K1/K2, G1/G2, D1/D2, S1/S2, R1/R2 and N1/N3/N4 are liked; preserve them. The Banded folk working together is particularly liked. Use the current names Ashborn, Banded folk and Greyhides.
+- M1: correct feet. M2: correct the man's left hand and make the background a little darker. Keep both scenes' character and readable figures.
+- O1/O2: keep the liked people and social/working moments, but move them to their cold northern coastal habitat.
+- N2: remove the modern-looking toll apparatus. This is a local prop/scene correction, not a rewrite of all tolls in the setting.
+- N5 is a strong positive example of dynamic lighting that supports the image and varied, clear brushwork/detail. Enlarge and correct the bow; preserve the rest.
+- H1 is not wanted for Harmonic Burst, though it is not condemned as a bad painting. Develop a different image and fictional spell. Stonewake is the new proposed title/concept, with existing gameplay unchanged; it still needs review.
+- Stage these revisions and card proposals without applying or committing them to the live game. Accepting the painting approach does not finalize new cards, characters, open species sheets, or revised images.
+- Full review, exact prompts, current gallery and Codex handoff: `breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/`. The accepted general lessons are incorporated into Painting, Settings and Physical checks above.
+
+
+The creator described the lighting as dynamic without overtaking the painting and particularly liked N5's variation in brushwork and detail. This accepts the shared painting approach, not a general dark/grey treatment. Glimmerfolk settings must follow current lore; Crest warmth was a question, not a declared habitat. See the structured creator-review-accepted-style.json in the linked work folder for each verdict. No live card updates or commits were requested in this review.
+
+## Peoples paintings final acceptance, Stonewake gaze and cleanup (2026-11-13)
+
+**Peoples paintings finalized and cleaned (creator, 2026-11-13; latest):**
+- The current 22 paintings are accepted. Stonewake H2-R1 completes the only requested final change: the caster looks toward the armoured man's face. M1/M2 anatomy, northern O1/O2, barrier-free N2, full-sized N5, and E1/E2 are retained as reviewed.
+- Keep the 13 earlier favourites, all final/current reference sheets and useful mixed/open reference studies. Oath Sentinel remains undecided; both views stay. Species-sheet approval boundaries in SETTING.md are unchanged.
+- Rejected and superseded art from this conversation's five peoples/comparison batches, and matching generated-source copies, were deleted at the creator's request. Preserve their prompts and decision records; do not restore deleted images from historical entries.
+- Canonical collection: `breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/index.html`. The collection manifest and cleanup record identify what remains.
+- The creator explicitly authorized commit, merge and push of this art collection and guidance. This does not install the images into live cards or establish new card mechanics.
+- Full handoff: `breachline/ART_DIRECTION_HANDOFF.txt`. The accepted painting approach is incorporated into the shared rules above; round-specific history remains in HISTORY.md and the review records.
+
+
+The creator subsequently asked whether Claude's briefs should be pared down. The assistant recommended concise identity/lore/narrative constraints from Claude, mechanics kept as separate context, and composition/light/paint handling owned by the art agent through the shared direction. This is a recommendation under discussion, not a unilateral change to Claude's skill. Some earlier overdirection came from the art agent's own dramatic-composition prompt expansion.

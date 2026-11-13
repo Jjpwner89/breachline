@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "date": "2026-11-13",
+  "new_images": 22,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "scenes_per_people": {
+    "Kitefolk": 2,
+    "Glimmerfolk": 2,
+    "Moor folk": 2,
+    "Made people": 2,
+    "Salt–silt folk": 2,
+    "Crest folk": 2,
+    "Coast folk": 2
+  },
+  "alignment_card_count": 5,
+  "requested_edits": 2,
+  "replacement_concept_count": 1,
+  "image_hashes_verified": true,
+  "refs_exist": true,
+  "unique_gallery_ids": true,
+  "local_links_checked": 94,
+  "javascript": "parsed with V8 Function constructor",
+  "visual_qa": "All 22 selected paintings inspected in image tool output; N4 local framing correction re-inspected. No browser render inspection performed.",
+  "live_originals_and_game_mapping": "unchanged from previous comparison audit",
+  "reference_handoff_commit": "5a7e61e",
+  "new_paintings_committed": false
+}

@@ -1,0 +1,46 @@
+{
+  "generation_mode": "built-in image_gen",
+  "images": [
+    {
+      "code": "CR3",
+      "kind": "reference",
+      "title": "Crest folk · arm and body crests",
+      "filename": "24-crest-folk-arms-and-body-reference.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png"
+      ],
+      "sourceCodes": [
+        "CR1",
+        "PL9.4"
+      ],
+      "summary": "Tries smaller swept crests on the shoulders, upper chest, upper arms and forearms, echoing the selected head crest. These body structures are an exploratory interpretation of the clarification, with the original individual and slender build retained.",
+      "takes": [
+        {
+          "code": "CR3",
+          "position": 1,
+          "title": "Arm and torso crests",
+          "text": "Modest bony sweeps extend the head-crest form onto the shoulders, clavicles, upper arms and forearms.",
+          "status": "proposed",
+          "handoff": "The creator clarified that the crest form could also occur on the arms and body. This reference tests modest swept growths on the upper torso and arms while retaining the selected face, head crest and body; these additions and their function remain proposals."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset type: Breachline Crest folk anatomy reference, 1536 x 1024 landscape PNG.\nInput image 1 is the EDIT TARGET: CR1, the selected Crest folk woman. The creator clarified that \"integrate the sweep\" meant trying ACTUAL CREST STRUCTURES ON THE ARMS AND BODY, not only changing the head-to-neck attachment.\n\nPreserve this individual's facial identity, original swept fluted head crest, russet cheek marks, chalk-tan skin, slender strong body proportions, ordinary size, hands, feet and simple short grey-brown tunic. Keep the same three full-body front/three-quarter, side and rear views at left, large portrait at upper right, and profile at lower right. Warm ivory empty background, traditional matte oil/acrylic fantasy painting with measured visible brushwork, quiet diffuse light, no printed text.\n\nThe NEW ANATOMY must be clearly visible: carry a smaller restrained version of the head crest's material and backward sweep onto BOTH ARMS and the UPPER TORSO. These are shallow organic bony crests growing smoothly out of the body, in the same pale warm-tan material as the head; not clothing, jewelry, tattoos or a suit of armor.\nARMS: two or three low elongated fluted ridges along the outer upper arm, leading into a small swept crest on the outer/back surface of the forearm. Keep the inner elbow, wrist and fingers free, with believable flexible joints. At least one modest crest should visibly change each arm's silhouette in the full-body views. These growths are much smaller than the head crest, elegant and streamlined, never giant spikes, fins or shoulder pauldrons.\nTORSO: a pair of modest swept crests rooted in the upper back/shoulder-blade region and small related shallow clavicular ridges at the upper chest. Make the torso growths visible ABOVE the tunic neckline/shoulder openings and in the rear and profile body views, anatomically continuous with the shoulder area. Let the plain existing garment sit naturally around the growths with only small practical neckline/armhole adjustments; retain modest coverage and its existing overall cut. Do not turn the shirt itself into a crest.\nKeep the rest of the torso and legs smooth, so the head, shoulder/back and arm crests form one restrained family of shapes. Do not cover her in repeated folds, scales, ribs or jagged plating. Preserve the head crest itself; no need to make it bigger or add a new neck fan. No tail, extra limbs or new species features.\nReplace only the existing isolated hand detail at lower right with a clear enlarged shoulder/upper-arm and forearm anatomy detail, showing how these new crests arise from the skin and leave joints functional. Keep enough hand visible to connect the forearm study. All views must agree about the new crest locations.\nThis is a modest species-design experiment for review, not an armored warrior transformation. Preserve the selected calm fantasy person. No weapons, accessories, sci-fi alien styling, text, numbers, borders, logos or watermark.",
+      "status": "pending_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-0a6aefd6-3624-4356-9d0d-11295df765f6.png",
+      "file": "24-crest-folk-arms-and-body-reference.png",
+      "review_code": "CR3",
+      "revision": 3,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png"
+      ],
+      "creator_note": "Clarified direction · actual crests on arms and body; awaiting review",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png": "fb76c4caeae2c3af801b851248f6fdb3cab44111f5063b6b0a0bb2ce0b954287"
+      }
+    }
+  ]
+}

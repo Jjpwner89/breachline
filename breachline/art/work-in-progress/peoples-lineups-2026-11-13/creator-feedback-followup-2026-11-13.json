@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-13",
+  "verbatim": "pl1 - 3 is best, want even more extremem face\n\npl2 - 6 is best, with denser glimmers added like #4, keep the line work going up the arm, but just spread out at the bottom. made people #6 could be the atart of an ogre, so make less human and keep the proportions. none of these fit the made people though. should look a little undeady,\n\nnew people - interesting, dont finalize any of these but do two more sheets, dont reject these either",
+  "decisions": [
+    {
+      "code": "PL1.3",
+      "decision": "selected_for_reference_refinement",
+      "instruction": "Preserve body and gliding anatomy; push the face further."
+    },
+    {
+      "code": "PL2.6",
+      "decision": "selected_for_reference_refinement",
+      "instruction": "Keep body and dotted arm line structure; increase density like PL2.4, with spread toward lower arms/hands.",
+      "secondary_reference": "PL2.4"
+    },
+    {
+      "code": "PL3.6",
+      "decision": "repurpose_as_ogre_study",
+      "instruction": "Make less human; preserve body proportions. No longer a candidate for made people."
+    },
+    {
+      "code": "PL3",
+      "decision": "unsuitable_for_made_people",
+      "instruction": "None fits made people; try a slightly undead-looking direction. Preserve original sheet as the ogre source and comparison record."
+    },
+    {
+      "code": "PL4",
+      "decision": "retained_open_exploration",
+      "instruction": "Neither finalized nor rejected. Generate two additional new-peoples lineups."
+    }
+  ]
+}

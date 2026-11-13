@@ -1,0 +1,74 @@
+ANIMAL REFERENCES FOR WORLD ART — 2026-11-13
+For animal cards, especially Genesis, and wildlife in other paintings, consult ANIMAL_REFERENCE_HANDOFF.txt and art/accepted-animals-2026-11-13/animal-reference-index.json first. The selected collection and ecology groupings are approved for world use. Crested bird is a mobile predator; Fanback and the preferred Undertow revision are kept.
+
+BREACHLINE — KEPT PEOPLES ART AND ART-DIRECTION HANDOFF
+13 November 2026 · final review and cleanup
+
+Current collection
+art/reference-library-2026-11-06/peoples-paintings-2026-11-13/index.html
+This is the canonical kept collection: 22 accepted final paintings, 13 earlier favourites, links to the seven current reference sheets, earlier useful/mixed reference studies, and the unresolved Oath Sentinel comparison.
+
+Latest creator instructions
+“For Stonewake, she should be looking at the guy; otherwise these are good.”
+“Keep the finals and reference sheets and the ones I really liked. Delete the chaff and rejections.”
+“Then commit, merge, push.”
+
+Stonewake H2-R1 completes the requested local correction: the Crest woman raises her gaze toward the nearest armoured man's face. The kneeling pose, planted palm, paving wave, other figures, colour and light are retained. The accepted final image is final/h2-stonewake-final.png in the collection. Other current final paintings are retained exactly from the reviewed versions.
+
+Publication scope
+Commit and push the kept paintings, supporting reference studies, updated art direction, prompt/decision history, handoff and cleanup record. This repository publication does not install new art into live cards or add new card mechanics. The existing Harmonic Burst id, name, gameplay and live asset mapping are unchanged. Stonewake remains the accepted painting/title proposal to use when the creator requests its live implementation.
+
+Accepted painting approach
+Read ../.claude/skills/art-direction/SKILL.md from the game folder's parent repository, and SETTING.md before briefing. The skill contains the reusable rules; HISTORY.md contains past decisions.
+
+Use coherent directional lighting, readable faces and figures, lively colour and deliberately varied brushwork/detail. Light and magic should support the painting without taking over. Do not make every alignment dark, grey or low-contrast to imitate Dominion. Keep matte skin, cloth, wood and stone; reserve stronger reflections for metal, glass and water. Use selective sharpness and broader, quieter secondary forms.
+
+The scene should make sense without its title or rules. Gaze, gesture, object contact, equipment and location should fit together. A still compelling person needs no invented task. Work should look practical rather than heroic. Check connected hands/feet and ground support. Bows need credible scale, grip, string and nocked-arrow geometry.
+
+Reference and lore boundaries
+- Kitefolk: final KR1, mountain/cliff villages, gliders rather than fliers, mostly Vigil/Fervor.
+- Glimmerfolk: final GR1. Developed, decent undercity districts, not cave camps by default. G1/G2 are liked; future home scenes should reflect that context. Their glimmers vary with mood and flare when casting; eyes do not glow.
+- Moor folk: final PL7 six-person range, cold wet uplands, mostly Genesis.
+- Ashborn: final PL3D, formerly “made people.” Dominion's raised dead: ordinary scale, repaired bodies apart from old scars, weak souls rather than no souls. No giant bodies, stitches or excess scars.
+- Banded folk: one species with salt/silt variants; trade and mixed families bring them together. Cooperation in S1/S2 is especially liked. Their developed PL8B sheet remains under visual review.
+- Crest folk: limestone valleys and quarry towns; warmth is not fixed in lore. R1/R2 are liked. CR3 is the current developed body-crest reference; its sheet review remains open.
+- Greyhides: formerly Coast folk, cold northern coasts and tidal islands, thick insulated bodies. Both northern scene corrections are accepted. CO1 sheet review remains open.
+
+All four final reference ranges and all three current working sheets are retained. Older mixed/open lineups also remain where they contain selected or unresolved designs. Their retention is not approval of every cell.
+
+Kept paintings
+The final 22 comprise K1/K2, G1/G2, corrected M1/M2, D1/D2, S1/S2, R1/R2, northern O1/O2, N1, corrected N2, N3, N4, corrected N5, corrected Stonewake H2-R1, Cinder Firebrand E1 and Alderkin Elder E2. “Otherwise these are good” accepts the reviewed round; the gaze fix completes Stonewake.
+
+Thirteen earlier favourites are kept separately: old S2/S3/S4/S5/S7, the explicitly preferred S5-L1 lighting revision, C5/C6/C7/C9, A4 Veyr, the preferred Emberward revision, and original N5 as a strongly liked lighting/brushwork touchstone. Keeping original N5 does not restore its undersized bow as equipment guidance.
+
+Oath Sentinel was undecided: keep both original and revision. Original Anoint with Embers, Sanctuary Threshold and Hurled Brand remain untouched in the live art library. Do not infer dislike from pairwise ranking losses.
+
+Cleanup
+The five batches covered by this chat were cleaned. Rejected/superseded PNGs and matching generated-source copies were deleted; redundant comparison snapshots were deleted only after confirming their live originals were identical. All current live artwork, reference-library artwork, handoff reference sheets and game code were hash-protected during cleanup.
+
+Prompts and decision history remain as text, including records with null output paths and explicit deletion status. Never restore removed images just because an old prompt or earlier approval record mentions them. The precise paths, hashes, reasons and counts are in the collection's cleanup-plan.json. Unrelated animal work was outside this cleanup.
+
+Records
+- Collection manifest.json: authoritative current images, hashes, favourites and references.
+- Collection cleanup-plan.json: executed cleanup record and protected hashes.
+- Collection validation.json: asset/link checks and publication preparation.
+- art/work-in-progress/peoples-fresh-scenes-2026-11-13/creator-review-final-cleanup.json: latest instructions and gaze prompt.
+- That folder's prompts-and-manifest.json: original prompts, current images, revision history.
+- That folder's card-proposals.json: five card concepts and Stonewake presentation proposal.
+- Previous batch folders: historical prompts, feedback and cleaned galleries.
+
+Card implementation boundary
+The five new alignment cards are art/character concepts. Their costs, abilities and roster inclusion are not established by accepting the paintings.
+Harmonic Burst remains id 'harmonic', type 'spell', colour 'U', cost 3, wants 1, aim {hit:2, splash:1, push:true, foesOnly:true}. Exact rules:
+Aim at a tile: 2 damage to an enemy there and 1 to each enemy next to it. Each enemy hit beside it is pushed 1 tile away.
+The proposed Stonewake definition changes its display name only; no gameplay change is proposed. No new flavour text is approved here.
+
+Recommended brief division — assistant recommendation, discussed with creator
+The creator asked whether Claude's briefs should be pared down. My recommendation is a lighter brief, not mechanics alone. Claude should supply the card's identity, lore, role in the game, one concise narrative/emotional idea, and any non-negotiable visual constraints or references. Keep mechanics separately as context, without demanding literal visualization.
+
+The art agent should choose composition, viewpoint, lighting and paint handling using the shared art direction. Avoid duplicating style prescriptions in every card brief or letting mechanics dictate the action. Habitat, anatomy, identity and required equipment are useful constraints; a forced pose, magical effect or heroic spectacle usually is not.
+
+Some earlier overdirection came from this art agent's own expansion—particularly “a clearly different dramatic composition” for every card—rather than necessarily from Claude. The workflow recommendation is not a unilateral change to Claude's brief-writing instructions. A future fresh-chat test should check whether the shared art rules transfer without attaching finished paintings merely as style examples.
+
+Workspace coordination
+Other chats have unrelated animal-art and flavour changes. Preserve them and exclude them from this art publication. No live gameplay files were edited by this task.

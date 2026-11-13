@@ -58,6 +58,7 @@ Read [SETTING.md](../../../breachline/SETTING.md) for the world behind the image
 - **Painted attention:**
   - Vary detail on purpose. The focal feature can be precise, while secondary people and distant places get fewer marks, quieter edges and less contrast.
   - Brush size, edge sharpness and detail should agree locally.
+  - The fresh peoples round confirmed this direction: visible, clearly varied brushwork and detail are part of the appeal. Keep the focal form readable without making the whole image crisp.
   - Don't render everything equally sharp, and don't pair coarse strokes with hairline detail everywhere.
   - Backgrounds are implied with a few large value shapes rather than fully built. A landscape spell can make the place itself the subject.
 - **Materials:**
@@ -67,6 +68,8 @@ Read [SETTING.md](../../../breachline/SETTING.md) for the world behind the image
   - Don't fix artificial skin with pores, wrinkles or surface noise. Simplify the forms instead.
 - **Colour and light:**
   - Use vibrant colour and light that organises the scene and links its subjects, with one lighting idea and a limited palette per scene.
+  - Dynamic light is welcome when its direction makes sense across the scene and it doesn't overtake the painting. Preserve readable faces, bodies and hands in shadow through plausible reflected light; don't hide the subject to make the light dramatic.
+  - Consistency does not mean flattening the contrast or dimming every painting. The creator likes lively colour and some bright scenes; carry the coherent light and selective paint handling across alignments, without imposing Dominion's palette on them all.
   - Pervasive purple, abundant flowers and idyllic storybook brightness should be unusual.
   - Don't overcorrect into grey or bleak.
 - **Variety within a batch:** vary camera distance, facing direction, gesture, silhouette, mood, weather, time of day, architecture and dominant colour.
@@ -95,6 +98,7 @@ To undo it, delete this subsection.
   - Highly aggressive frontline fighters are mostly men, with occasional women soldiers.
   - Women are welcome as mages, archers, workers, scholars, civilians and anything else.
   - Keep approved identities unless the creator changes them.
+- **Settings belong to the people and the moment.** Check the latest homes, climate, architecture and social context in SETTING.md before briefing. An individual's travel can differ from their home; don't let a liked scene silently redefine the whole people's habitat. Glimmerfolk's developed undercity is the default home context for future paintings.
 - **Local populations:**
   - A settlement has its own local population. Don't fill every crowd with one of every people.
   - The world is varied, but a single town isn't cosmopolitan by default.
@@ -121,7 +125,8 @@ To undo it, delete this subsection.
   - Paint to that lore. For example:
     - Kitefolk glide but don't fly.
     - Glimmerfolk glimmers brighten with mood and flare when they cast, and their undercity is developed and decent, not caves.
-    - Greyhides are large but easygoing.
+    - Greyhides are large, easygoing and insulated for cold northern coasts and tidal islands; show that climate in shore, settlement and clothing.
+    - Crest folk live in limestone valleys and quarry towns; the lore does not specify a universal warm climate.
   - Their final reference sheets and short handoffs live in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`. These accept the designs, not universal jobs, cultures or allegiance.
   - **Riverfolk:** fin ears, neck gills, subdued scales. They work in waterworks and live in small settlements. They're generally less privileged, and they never dive for mana-stones.
   - **Saltreach:** a human coastal culture, with rugged, weathered, mildly sunburnt skin, oiled wool and practical sea gear.
@@ -200,7 +205,7 @@ To undo it, delete this subsection.
 - **Work scenes look like work.** Ordinary labour gets tired, practical expressions and plain staging, never heroic faces or theatrical lighting. That was the R1 lesson.
 - **Physical checks:**
   - Check connected anatomy before selecting an image: trace hips to feet and shoulders to hands, and count limbs and fingers.
-  - Grips, shields and supports must make physical sense.
+  - Grips, shields and supports must make physical sense. Check feet against shins and the ground, and hands against their task. Bows need adult-appropriate scale, a continuous string, a nocked arrow and convincing grip/draw contact.
   - Scale stays consistent through helmets, weapons and people on a shared ground plane.
 - **Local edits:**
   - Keep the approved pose and untouched parts.
@@ -287,6 +292,14 @@ Every alignment uses the same painting and material rules above. These are estab
 
 ## Open work
 
+**Peoples paintings finalized and cleaned (creator, 2026-11-13; latest):**
+- The current 22 paintings are accepted. Stonewake H2-R1 completes the only requested final change: the caster looks toward the armoured man's face. M1/M2 anatomy, northern O1/O2, barrier-free N2, full-sized N5, and E1/E2 are retained as reviewed.
+- Keep the 13 earlier favourites, all final/current reference sheets and useful mixed/open reference studies. Oath Sentinel remains undecided; both views stay. Species-sheet approval boundaries in SETTING.md are unchanged.
+- Rejected and superseded art from this conversation's five peoples/comparison batches, and matching generated-source copies, were deleted at the creator's request. Preserve their prompts and decision records; do not restore deleted images from historical entries.
+- Canonical collection: `breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/index.html`. The collection manifest and cleanup record identify what remains.
+- The creator explicitly authorized commit, merge and push of this art collection and guidance. This does not install the images into live cards or establish new card mechanics.
+- Full handoff: `breachline/ART_DIRECTION_HANDOFF.txt`. The accepted painting approach is incorporated into the shared rules above; round-specific history remains in HISTORY.md and the review records.
+
 **Great-animal selections and final exploration (creator, 2026-11-13; latest):**
 - G1–1 Cragwool is liked with a slightly more predatory, less stub-nosed face. Keep the body, plates and wool; no exaggerated aggression.
 - G1–2 Reedstrider is liked. Extend its copper mohawk-like fibrous covering across the body, not just the back ridge. This is a local covering edit, not a new motif for every animal.
@@ -321,7 +334,7 @@ Every alignment uses the same painting and material rules above. These are estab
 - Preserve original Anoint with Embers (strongly liked), Sanctuary Threshold (its particular brightness is liked; the revision feels too crisp/detailed), and Hurled Brand (revision too dark). This does not establish a universal bright or dark palette.
 - IG7 Alderkin Elder: retain the improved distant background with original stonework. IG8 Emberward: the revision is preferred.
 - Keep Veyr's Dominion character. The woman described as rising from a chair is interpreted as C6 Another Service; preserve her design too. Other individual cast designs need not carry forward, while established species designs still do. Unmentioned art is not automatically rejected.
-- Develop fresh scenes and a new card painting for each alignment. Do not keep extrapolating from edits of the same old scenes. The creator confirmed two scenes per people: the completed follow-up stages 14 scenes, 5 new card paintings, 2 targeted edits and 1 replacement concept. All are pending review. Full feedback and this round's records: `breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/`. Fresh paintings remain proposals until reviewed.
+- Develop fresh scenes and a new card painting for each alignment. Do not keep extrapolating from edits of the same old scenes. The creator confirmed two scenes per people: the completed follow-up stages 14 scenes, 5 new card paintings, 2 targeted edits and 1 replacement concept. The fresh-scenes review above supersedes their initial pending status; E1/E2 remain unreviewed in that response. Full feedback and this round's records: `breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/`. Fresh paintings remain proposals until reviewed.
 
 
 

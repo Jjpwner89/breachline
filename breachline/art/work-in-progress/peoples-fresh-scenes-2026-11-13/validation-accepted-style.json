@@ -1,0 +1,40 @@
+{
+  "current_images": 22,
+  "revision_outputs": 9,
+  "selected_new_review_candidates": 7,
+  "gallery": {
+    "review.html": {
+      "broken_links": [],
+      "duplicate_ids": [],
+      "image_tags": 52,
+      "review_controls": 22
+    },
+    "review-initial.html": {
+      "broken_links": [],
+      "duplicate_ids": [],
+      "image_tags": 49,
+      "review_controls": 22
+    }
+  },
+  "revision_hashes_and_dimensions": "All nine outputs match their records; seven are current review candidates.",
+  "original_paintings_preserved": 22,
+  "live_files_checked": 446,
+  "unchanged_art_and_final_selection_files": 444,
+  "changed_live_files_from_external_merge": [
+    "breachline/engine.js",
+    "breachline/ui.js"
+  ],
+  "external_merge_note": "HEAD advanced through 781e985, merging origin/main during generation. engine.js and ui.js match that committed HEAD exactly. Harmonic Burst definition and art mapping are unchanged. This art task did not write either file or create the merge.",
+  "head_before": "a47baa7c1bda3395a84449d3ebbda8e84ad40b80",
+  "head_after": "781e985627d9286f4e063040887d72f442bb9195",
+  "commits_created_by_this_task": false,
+  "staged_files": [],
+  "skill_validation": {
+    "standard_validator": "Unavailable: Python environment lacks PyYAML.",
+    "fallback": "Unchanged two-field frontmatter checked against HEAD; name/description constraints valid, no unfinished placeholders, local links resolve, and new review guidance appears once."
+  },
+  "card_checks": "Five alignment concepts; proposed harmonic definition changes name only; live harmonic rules, mapping and assets unchanged.",
+  "javascript_syntax": "review.js parsed successfully with JavaScript new Function; not executed.",
+  "visual_qa": "All selected generated images inspected. Two local follow-ups addressed modern-looking boots and clipped bow tip.",
+  "browser_qa": "Static gallery/link/control checks only; no browser-rendering verification performed."
+}

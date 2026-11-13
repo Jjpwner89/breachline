@@ -1,0 +1,1004 @@
+{
+  "date": "2026-11-13",
+  "status": "Accepted paintings and retained favourites; repository publication authorized",
+  "live_game_changes": false,
+  "final_paintings": [
+    {
+      "code": "E1",
+      "category": "Requested edit",
+      "title": "Cinder Firebrand — readable firelight",
+      "alignment": "Fervor",
+      "people": "Human",
+      "file": "final/e1-cinder-firebrand-readable-light.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/revisions/cinder-firebrand-r1.png"
+      ],
+      "summary": "The same fighter and revised light direction, with a modest lift in readable midtones. This is a targeted exposure and paint adjustment, not a new scene.",
+      "prompt": "Use case: lighting-weather. Edit the supplied Cinder Firebrand painting at 1536 x 1024 landscape. The creator really likes THIS light direction but the character is too difficult to see. Preserve exact composition, face and identity, pose, anatomy, axe, clothing, low fire, deep blue night and red sash. One exact source image, the edit target.\nKeep the warm firelight directional from lower image-left. Modestly lift the figure's shadow midtones through believable soft reflected light from the burning ground and low surrounding haze: reveal the eyes, nose, beard, chest, relaxed hand, trousers and rear boot clearly at small size. The face remains in shadow relative to the flames but should no longer disappear. Raise the dark cloth one modest tonal step, keeping it darker than the sky-adjacent fire and highlighted sleeve. Do NOT add a new spotlight, white face highlight, frontal studio lamp, full rimlight, higher flame brightness or flatter all-over exposure. Preserve warm/cool relationships and night atmosphere. Keep some dark accents inside folds and under axe for depth; burnished iron, matte skin and cloth, selective broad oil/acrylic brushwork. Do not increase texture, pores, edge sharpness or background detail. No changed pose, equipment or extra people. No text, border or watermark. The requested change is a noticeably more visible character with the SAME preferred lighting direction.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-0255f06f-62a1-4473-9736-96711e9a09c6.png",
+      "status": "accepted final painting",
+      "sha256": "34a237a79acbf2e3bc0a8103e432638760b906582bb67253f4f8ee6e8faecae0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Preferred firelight direction retained; face, chest, trousers and relaxed hand lifted into more readable midtones. Axe and limb continuity preserved.",
+      "original_code": "E1",
+      "creator_feedback": {
+        "codes": [
+          "E1",
+          "E2"
+        ],
+        "verdict": "not reviewed in this message; pending"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "e1-cinder-firebrand-readable-light.png"
+    },
+    {
+      "code": "E2",
+      "category": "Requested edit",
+      "title": "Alderkin Elder — original stone, revised distance",
+      "alignment": "Genesis",
+      "people": "Alderkin",
+      "file": "final/e2-alderkin-elder-stone-and-distance.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/alderkin-elder.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/revisions/alderkin-elder-r1.png"
+      ],
+      "summary": "Restore the original aqueduct and its stone colour while keeping the newer, simpler distant valley. The elder’s original anatomy, quiet movement and connection to the coping remain.",
+      "prompt": "Use case: compositing. Make one careful edited Breachline oil/acrylic painting, landscape 1536 x1024. Image 1 is the ORIGINAL and primary edit target. Image 2 is a previous revision; use ONLY its softer and simpler distant valley and background landscape treatment. The creator liked that updated background but preferred the stones in Image 1.\nPreserve the original Image 1 elder exactly: branching body, head, two root legs, contact of long hand with carved coping, birds and crown. Preserve ALL original aqueduct architecture, original carved coping relief, pale warm-grey limestone colour, quiet original lighting on the stone, joints, arches, moss and foreground pavement. Do not substitute the revision's more orange stones or coarser stone planes. Transplant the atmospheric simplicity and blue-green value masses of the distant valley behind the aqueduct from Image 2, with its calm readable separation; keep the original pale evening sky's restrained brightness and avoid making it hotter. The aqueduct remains a coherent continuous structure; the background no longer has hundreds of equally distinct little trees. Match brush scale and soften transitions at distant edges. This is a narrowly scoped hybrid, no added character, task, action, magic, extra detail, camera blur or anatomical redesign. No text, labels, frames or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-b64f5484-3160-44f6-b34c-6657f06d7982.png",
+      "status": "accepted final painting",
+      "sha256": "be78aacd63abce51d15efb313487c3e5fae527e1e5e87c935a43b81aa219e484",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Original elder and stonework retained, distant valley simplified into broad atmospheric planes.",
+      "original_code": "E2",
+      "creator_feedback": {
+        "codes": [
+          "E1",
+          "E2"
+        ],
+        "verdict": "not reviewed in this message; pending"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "e2-alderkin-elder-stone-and-distance.png"
+    },
+    {
+      "code": "K1",
+      "category": "Fresh scene",
+      "people": "Kitefolk",
+      "alignment": "Neutral",
+      "title": "Above the Washing Lines",
+      "file": "final/k1-above-the-washing-lines.png",
+      "summary": "A young adult Kitefolk woman glides between two close roofs above a narrow town street. This proposes an ordinary urban moment, using the accepted membranes and face without preserving Oren’s individual design.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nA new adult Kitefolk woman with cropped dark hair, copper-brown skin, strong long pointed nose and angular cheek planes, gliding a short distance between nearby terracotta rooftops above a narrow street. Wide oblique view from the receiving roof; her entire slender body and finger-braced mottled membranes fit in frame with breathing room, legs reaching gently toward the ledge. The wings are the sheet's skin membranes connected along the arms and flanks, no extra limbs or feather wings. Practical sleeveless cream vest, fitted dark trousers and a small securely belted pouch; nothing blocks the membranes. Look at the landing ledge. Below, a simple diagonal of pale laundry between roofs indicates domestic scale, no crowd. Bright cloud-filtered morning light from upper left, warm tiles and membrane ochres against airy blue-grey roof shadows. Her face and body are clearly visible; soft transmitted colour in thin membrane edges without dramatic backlight. Light agile movement, not superhero flight.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-d265a736-67e0-42a8-aa2c-ae5a4c4fcc38.png",
+      "sha256": "8c9fe45fd885fa5f85d8824601486992c2a9c673ac97684a402450780a68e063",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Two arms and two legs, continuous membranes along arms/flanks, landing ledge and gaze coherent. Full figure and leading hands visible.",
+      "original_code": "K1",
+      "creator_feedback": {
+        "codes": [
+          "K1",
+          "K2"
+        ],
+        "verdict": "liked; retain"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "k1-above-the-washing-lines.png"
+    },
+    {
+      "code": "K2",
+      "category": "Fresh scene",
+      "people": "Kitefolk",
+      "alignment": "Neutral",
+      "title": "The High Room",
+      "file": "final/k2-the-high-room.png",
+      "summary": "An older Kitefolk man pauses at the open window of a high lodging, holding a cup while looking across the roofs. The personal interior and folded membranes explore quiet life rather than assigning the whole people to courier work.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nAn older Kitefolk man, distinct from the sheet's individual: dark umber skin, receding close black-grey hair, very long hawkish nose and slim neck, seated sideways on a wide window bench in a modest high room. One long hand cradles a plain clay cup while his other rests on the sill; folded mottled arm-to-flank membranes hang naturally without turning into a cape. Practical soft ochre sleeveless tunic and loose short trousers. Intimate waist-up three-quarter view, subject at right looking out image-left across a few soft sunlit roofs; window sill, curtain and one folded blanket establish a real room. Open sky supplies broad cool light to his face, with a warm cream wall gently reflecting it; readable skin planes, amber cup glaze, muted teal cloth, no yellow filter. A quiet, curious presence, relaxed connected hands, no required magic or tools.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-38798203-964a-4aa3-9970-ea18c2b85abd.png",
+      "sha256": "38723c57df392cc181df8a2f782c8b1735c13ea1fb2d08ae615a38e780a197b9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Both hands connected; cup grip and seated posture coherent. Folded membranes visible; quiet daylight keeps the face legible.",
+      "original_code": "K2",
+      "creator_feedback": {
+        "codes": [
+          "K1",
+          "K2"
+        ],
+        "verdict": "liked; retain"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "k2-the-high-room.png"
+    },
+    {
+      "code": "G1",
+      "category": "Fresh scene",
+      "people": "Glimmerfolk",
+      "alignment": "Neutral",
+      "title": "The Copper Clasp",
+      "file": "final/g1-the-copper-clasp.png",
+      "summary": "A Glimmerfolk woman tries a copper cloak clasp at a small market stall. The scene uses the accepted ear-fans and glimmers as visible anatomy while keeping her individual taste and surroundings provisional.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nA new adult Glimmerfolk woman with deep walnut-brown matte skin, a broad serious nose, long neck, broad soft ear-fans and the exact dense blue facial freckles and dotted arm lines from the reference. Mid-torso close scene at a little outdoor cloth-and-copper stall. She holds a plain warm copper clasp against the throat of a deep teal cloak with one hand and feels its fastening with the other, looking down at the actual clasp. The arm dots remain visible on exposed wrists and spread toward hands. Soft ivory awning above casts open bright shade; warm sunlight on one far hanging rust-red textile, background stall only suggested. Dense blue glimmers are small clear lights, never neon beams lighting the face. Distinctive readable face, simple human-scale clasp, two connected hands, no extra jewellery devices. A moment of personal choice and tactile material beauty, no merchant required in frame.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-7a2f71bf-6c52-49a2-acd5-159fd2bb1e3f.png",
+      "sha256": "b2decb879e6b9ccf4cd294f586276afeabbbd9ef7c1c36fa7ed6abffc73d9532",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Clasp contact and both hands inspected; facial glimmers and arm lines remain visible with natural material highlights.",
+      "original_code": "G1",
+      "creator_feedback": {
+        "codes": [
+          "G1",
+          "G2"
+        ],
+        "verdict": "strongly liked; retain",
+        "note": "Future settings must respect Glimmerfolk lore: developed undercity districts, not generic cave dwellers. Individual surface visits remain possible."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "The painting is liked and retained. Future home scenes should use developed undercity districts; a surface visit is an individual situation.",
+      "former_file": "g1-the-copper-clasp.png"
+    },
+    {
+      "code": "G2",
+      "category": "Fresh scene",
+      "people": "Glimmerfolk",
+      "alignment": "Neutral",
+      "title": "A Door Left Open",
+      "file": "final/g2-a-door-left-open.png",
+      "summary": "A Glimmerfolk man arrives with a covered basket at an older neighbour’s door. The two figures’ attention and handoff carry the scene, without establishing a universal custom or magical occupation.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nExactly two Glimmerfolk adults in a small dusk courtyard: a tall slender younger man with long neck, muted dark-bronze skin and modest ear-fans stands at left offering a linen-covered basket to an older shorter woman seated beside an open household door at right. Both have visible dense blue facial glimmers and dotted lines along bare forearms, spreading toward hands; preserve species anatomy. Their eyes meet; the basket is shared between their hands at natural waist height. Worn olive shirt on the man, faded plum and cream household clothes on the woman. Medium-wide level view, one ochre wall and quiet stone steps. Open evening sky is the dominant soft light, clear medium tones on both faces; a modest warm doorway glow stays local. Vivid little blue glimmers, copper-brown skin and plum fabric, natural colour without darkness. No grand heroism, ritual, floating object or elaborate city.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-1a3c012b-f041-4054-879c-85a086bacaa5.png",
+      "sha256": "8750528712f7267d9419baeaafddf5e40bef15f5d282f34e33a5503e88b7f9cd",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Basket supported by both figures, hand ownership and eyelines coherent; two people only.",
+      "original_code": "G2",
+      "creator_feedback": {
+        "codes": [
+          "G1",
+          "G2"
+        ],
+        "verdict": "strongly liked; retain",
+        "note": "Future settings must respect Glimmerfolk lore: developed undercity districts, not generic cave dwellers. Individual surface visits remain possible."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "The painting is liked and retained. Glimmerfolk home districts are developed parts of the undercity, not cave camps.",
+      "former_file": "g2-a-door-left-open.png"
+    },
+    {
+      "code": "M1-R2",
+      "parent": "M1",
+      "title": "Through the Heather — corrected footing",
+      "file": "final/m1-through-the-heather-v3.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-e622f6dc-0b55-4391-b280-0e4f7c268386.png"
+      ],
+      "summary": "Corrected ankle alignment and foot placement, with simple sewn leather boots suited to the setting.",
+      "prompt": "Local edit to supplied painting. Keep EVERYTHING identical except the two boots. The foot and ankle alignment is now good; preserve those angles, planted forward anatomical RIGHT boot at lower centre-left and lifted rear anatomical LEFT heel at lower right. Replace the conspicuously modern lace-up hiking work boots with plain hand-sewn brown leather ankle boots: soft turned leather uppers, one simple overlapping cuff and leather thong fastening, thin layered leather soles with NO black rubber, NO chunky lug tread, NO separate industrial heel block, NO rows of metal eyelets, NO modern factory stitching. Feet should be normally sized with one clear toe and heel each, not pointy fantasy shoes. Paint the leather with the same broad soft-edged brushwork as the old tunic. Preserve face, hands, body, clothing above ankles, stride, staff, ground contact, path, heather, sky, colour, light and composition. 1536 x 1024 landscape; no text or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-6749f9b7-1b08-4267-b699-fc2e1e03def1.png",
+      "visual_qa": "Two continuous legs and normally oriented feet; forward sole supported on path, rear heel lifted; simpler leather boots replace modern lugged soles. Identity, stride and landscape remain recognisable; generative repaint introduces some texture drift.",
+      "status": "accepted final painting",
+      "sha256": "72b277fe016bd35b5fcded1da6492637d4be1ad70e4281e26766289ce39d3a23",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "Fresh scene",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "original_code": "M1",
+      "creator_feedback": {
+        "codes": [
+          "M1"
+        ],
+        "verdict": "liked with edit",
+        "edit": "Correct strange feet and ankle/boot relationship; preserve scene."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "m1-through-the-heather-v3.png"
+    },
+    {
+      "code": "M2-R1",
+      "parent": "M2",
+      "title": "A Story by the Stove — hand and background",
+      "file": "final/m2-a-story-by-the-stove-v2.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/m2-a-story-by-the-stove.png"
+      ],
+      "summary": "Corrects the man's raised left hand and lowers the background values a little, keeping both faces readable.",
+      "prompt": "Use case: precise-object-edit and lighting-weather. Image 1 is the edit target. Make only two requested changes. First correct the man's anatomical LEFT hand, the raised open gesturing palm at centre of the image between the faces, attached to the forearm rising from the far side of the man on image-left. Give it natural hand structure, one thumb and four fingers with clear bases and believable foreshortening, a relaxed conversational open palm and a continuous wrist; retain the species' long fingers. Keep that hand in the same region and gesture, without fanning fingers unnaturally or adding knuckles. His near resting RIGHT hand at lower left remains unchanged, as do all the woman's hands. Second make the background a little darker: a modest value reduction on plaster, beam, distant window view and rear room, so the two people separate more clearly. Preserve the window as the actual source of warm daylight, keep readable expressive faces, current warm/cool balance and existing stove. Do not darken the people or remove the liveliness. Keep their exact identities, positions, conversation, cup, clothes and overall composition. Landscape 1536 x 1024. Preserve the original's traditional oil/acrylic painting, visible varied brushwork, matte skin and cloth, vivid natural colour, coherent directional illumination, readable subject and quiet background shapes. No sharpening, pore noise, new glow, text, border or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-7bc1d80b-1dba-4242-b0d8-f73c72ca5b2a.png",
+      "visual_qa": "Raised anatomical left hand has a coherent wrist, thumb and four fingers. Rear plaster and window values are lower; faces remain readable. Cup, resting hands and conversation preserved.",
+      "status": "accepted final painting",
+      "sha256": "24ae1dae7298169da1d07c1c282e1209639f59fa9f4cbf809c2bfe93b6518f5a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "Fresh scene",
+      "people": "Moor folk",
+      "alignment": "Neutral",
+      "original_code": "M2",
+      "creator_feedback": {
+        "codes": [
+          "M2"
+        ],
+        "verdict": "liked with edits",
+        "edit": "Correct his left hand and darken background a little; preserve readable figures.",
+        "interpretation": "Raised conversational hand at image centre is the man's anatomical left hand."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "m2-a-story-by-the-stove-v2.png"
+    },
+    {
+      "code": "D1",
+      "category": "Fresh scene",
+      "people": "Ashborn",
+      "alignment": "Dominion",
+      "title": "A Door He Knows",
+      "file": "final/d1-a-door-he-knows.png",
+      "summary": "Veyr pauses at the latch of an ordinary shuttered house, still wearing his issued armour. The scene proposes a moment of uncertain recognition, leaving his memories and soul state unresolved.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-alignment-paintings-2026-11-13/a4-dominion-the-watch-continues.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nThe attached finished painting identifies VEYR ONLY: preserve this exact adult male face, pale grey-brown skin, short dark hair, hollow tired eyes, modest healed diagonal throat scar, ordinary strong build, worn dark quilted coat and practical iron breastplate. Completely new scene and camera: medium close side view outside a plain shuttered house in an old lane, Veyr at right turned toward image-left. His lowered gloved hand rests on a real iron door latch at waist height, head tilted slightly toward the door as if unsure whether to knock. His halberd leans securely against the nearby jamb, one continuous shaft, secondary. No living soldiers, revived bodies, ghost memories or magical aura. One small sprig growing from the mortar near the threshold, a faded ochre shutter: ordinary life in a hard place. Soft bright cold afternoon cloud light from the lane shows his face clearly; weathered green wood and natural pale skin have colour, not a grey filter. Tension in stillness and expression; no heroic stance, no gore. Do not copy the original gatehouse composition.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-9121cea1-89a0-47bf-b889-f0e98009bda5.png",
+      "sha256": "b19b961634837ce3e90f8f00be7eaa9b7a23f75cdb59e8eb93dbf9732ea32f9b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Veyr's identity and restrained scars retained; glove meets latch and halberd leans against jamb. Scene remains a proposed memory moment.",
+      "original_code": "D1",
+      "creator_feedback": {
+        "codes": [
+          "D1",
+          "D2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Use current species name Ashborn."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Veyr's recognition of this door remains an individual story proposal. Ashborn have fully repaired bodies, old scars and weak souls; their remaining memories vary.",
+      "former_file": "d1-a-door-he-knows.png"
+    },
+    {
+      "code": "D2",
+      "category": "Fresh scene",
+      "people": "Ashborn",
+      "alignment": "Dominion",
+      "title": "Bread before Muster",
+      "file": "final/d2-bread-before-muster.png",
+      "summary": "The returned woman from Another Service sits with a piece of bread in a bare garrison refectory. Her pause suggests the cost of return without making an inability to eat, a missing soul or any particular symptom universal lore.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c6-another-service.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nThe attached finished painting identifies the returned adult WOMAN ONLY. Preserve her specific pale mottled face, short untidy brown hair, one clouded eye, ordinary lean scale and restrained old healed injuries; do not deepen scarring. New scene: medium close portrait at an ordinary long garrison table, seated with a small torn piece of dark bread in one hand and the other hand laid flat beside a wooden bowl. She looks at the bread with distant, concentrated attention, not posing at viewer. No practitioner or resurrection performance. A rough charcoal shift, modest worn grey shawl, plain spoon on table, window behind to image-left. The morning window and pale tabletop create a coherent gentle light with enough ambient bounce to read her face, clouded eye and hands. Colours of raw linen, oatmeal bread, pale blue-grey and a small muted russet jug; no black void or glowing eyes. Secondary empty benches dissolve into large painted shapes. Quiet unease and dignity, evidence of a real meal and compulsory communal life, no blood or stitches.",
+      "status": "accepted final painting",
+      "lore_status": "Accepted visual species; scene, occupation and culture are proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-5b977b43-d552-4488-b2a4-1c0d2c8a70ea.png",
+      "sha256": "a937debd3d119dca14cf95a4098d7b013babbf1f5e1d23d584657dc486a2a72c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Returned woman's identity and clouded eye retained; bread grip and tabletop hand connected. Does not establish an inability to eat.",
+      "original_code": "D2",
+      "creator_feedback": {
+        "codes": [
+          "D1",
+          "D2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Use current species name Ashborn."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Her quiet meal is an individual proposed moment. Ashborn are Dominion's raised dead, with weak rather than absent souls.",
+      "former_file": "d2-bread-before-muster.png"
+    },
+    {
+      "code": "S1",
+      "category": "Fresh scene",
+      "people": "Banded folk",
+      "alignment": "Neutral",
+      "title": "Across the White Flats",
+      "file": "final/s1-across-the-white-flats.png",
+      "summary": "Salt and silt variants cross a broad flat together with a small handcart and water. The shared anatomy stays visible through their different colouring; their journey proposes no fixed homeland or profession.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/18-salt-silt-unified-lineup.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nExactly two adults of the ONE salt–silt species shown in the sheet. A salt-variant woman with orange-ochre skin and pale mineral-like body markings, and a silt-variant man with olive-brown mottled skin; both share the sheet's broad swept brow, low crown, broad cheek structure, ordinary stocky/slim variation and five-finger hands. Wide midday landscape of pale mineral flats with low brown hills. Woman at near left pauses to drink from a plain leather waterskin while man behind pulls a modest two-wheeled wooden handcart with two cloth bundles. Human-scale effort; small enough loads and visible wheel-ground contact. Faded red sleeveless travel vest on her, dusty blue-grey shirt and rolled trousers on him, no repeated ornamental wraps or universal armor. High bright cloud-filtered sun, pale ground provides generous soft bounce on faces, muted turquoise distance. Their unusual faces and markings stay readable without glossy skin. Large calm sky and clear composition, no desert science-fiction suits, tails, energy storms or ancient spaceship ruins.",
+      "status": "accepted final painting",
+      "lore_status": "Selected direction; developed visual details remain proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-0061e553-03f9-4974-9309-3d14d093c587.png",
+      "sha256": "ac837afe5c2f1b7e810ce7de6acadfae61c75a1f850fc5041afd8dfdd138613f",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Shared species structure remains across both variants; waterskin mouth contact, cart grip and wheels inspected.",
+      "original_code": "S1",
+      "creator_feedback": {
+        "codes": [
+          "S1",
+          "S2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Creator particularly likes salt and silt variants working together. One species, current name Banded folk."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Salt and silt Banded folk travel together on a salt road, consistent with their accepted trade and mixed families. This particular pair and journey remain proposals.",
+      "former_file": "s1-across-the-white-flats.png"
+    },
+    {
+      "code": "S2",
+      "category": "Fresh scene",
+      "people": "Banded folk",
+      "alignment": "Fervor",
+      "title": "Behind the Windbreak",
+      "file": "final/s2-behind-the-windbreak.png",
+      "summary": "A silt-variant woman turns a flatbread while a salt-variant companion shelters beside a low wall. This is one travelling pair’s evening, with shared anatomy and personal equipment carrying the scene.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/18-salt-silt-unified-lineup.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nA new silt-variant adult woman foreground right and salt-variant older man secondary left, retaining the sheet's shared low broad skull, thick swept brow, cheek structure and nonhuman nose. She has olive umber skin, he has warm ochre skin with pale bands; neither is Tavra or Korr. Close camp scene behind a low dry-stone windbreak in open grassland. Woman turns a thin flatbread on a small black iron pan over low coals using a short flat wooden paddle; her gaze and hand align with the pan, wrist naturally connected. Man sits against wall fixing the simple buckle of his weathered red belt, no complex extra fingers. Practical charcoal and rust wool, unarmoured. Early evening still has generous soft sky light: faces and bodies easy to see. Local warm coals light nearby hands only; orange in coal, rust cloth and cool blue-green grass retain colour. No huge campfire, glowing cracks or alien garments. Restrained tactile brushwork, soft distant grass, believable quiet life.",
+      "status": "accepted final painting",
+      "lore_status": "Selected direction; developed visual details remain proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-81e6aecd-d0b1-4438-bad2-b63a9c7e1026.png",
+      "sha256": "150d27708f5c60396fb57dedaf14c862f6a4862f0555e2d0847c135cf7b53724",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Brush/paddle contact with bread and pan, hand ownership and seated bodies inspected; warm coals remain local.",
+      "original_code": "S2",
+      "creator_feedback": {
+        "codes": [
+          "S1",
+          "S2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Creator particularly likes salt and silt variants working together. One species, current name Banded folk."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "A silt-variant woman cooks while her salt-variant companion tends equipment; their shared caravan life fits Banded folk lore. The creator particularly likes their cooperation.",
+      "former_file": "s2-behind-the-windbreak.png"
+    },
+    {
+      "code": "R1",
+      "category": "Fresh scene",
+      "people": "Crest folk",
+      "alignment": "Neutral",
+      "title": "The Red Stair",
+      "file": "final/r1-the-red-stair.png",
+      "summary": "A Crest folk woman descends a town stair carrying a wrapped parcel, with head, arm and shoulder crests visible through practical clothing. The scene tests the proposed body crests in everyday movement rather than making her another sculptor.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/24-crest-folk-arms-and-body-reference.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nA new mature Crest folk woman with the reference's sweeping layered head crest and modest actual crests along shoulders, upper arms and forearms. Preserve the slender ordinary body and sculptural but setting-appropriate face; warm clay-brown skin, broad nose and a small older-eye asymmetry distinguish her from the sheet's individual. Three-quarter full-figure view as she descends a red-plastered exterior stair in a compact town, carrying a small folded indigo cloth parcel against one hip with one hand and resting the other on the wooden railing. Practical deep olive sleeveless tunic, cream trousers, soft shoes; exposed arms and neckline accommodate the crests without clumsy armor cutouts. A few ochre walls and a distant blue awning suggest the street below. Soft bright afternoon light across one side of the stair, abundant warm wall bounce leaves her face readable. Rich red plaster, olive cloth, blue parcel; not an orange blanket. Feet connect to separate stair treads, rail continuous. No sculpture, vague stone-touching, magical glow or biological folds added beyond the reference.",
+      "status": "accepted final painting",
+      "lore_status": "Selected direction; developed visual details remain proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-eb365941-417c-428d-9d61-d3a5cd75df15.png",
+      "sha256": "ae57ae233815ecd36a623a6f99faad6f83f9fc5906ab0f5173ba9b19191be7ea",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Crests visible on arms and shoulder; separate feet meet stair treads, rail continuous and parcel supported.",
+      "original_code": "R1",
+      "creator_feedback": {
+        "codes": [
+          "R1",
+          "R2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Creator asked whether their homes are warm. SETTING.md specifies limestone valleys and quarry towns but does not specify climate; do not canonize a universal warm habitat."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Crest folk live in limestone valleys and quarry towns. This warm-lit town is compatible; a universal warm climate is not established.",
+      "former_file": "r1-the-red-stair.png"
+    },
+    {
+      "code": "R2",
+      "category": "Fresh scene",
+      "people": "Crest folk",
+      "alignment": "Neutral",
+      "title": "The Painted Bowl",
+      "file": "final/r2-the-painted-bowl.png",
+      "summary": "An older Crest folk artisan adds a blue band to a bowl beside an open window. His focused gaze and brush contact make the action clear, while age, occupation and crest variation remain individual proposals.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/24-crest-folk-arms-and-body-reference.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nSCENE:\nA new older male Crest folk potter, warm russet-brown skin, strong square jaw and the reference's swept head lamellae adapted modestly broader; modest shoulder and forearm crests remain anatomically integrated. Close half-body seated at a low pottery bench facing image-right. He rotates ONE glazed cream bowl in his left hand while a simple reed brush in his right touches its blue-painted rim. Gaze directly at the actual brush contact; two natural connected hands, bowl held plausibly. Sleeveless worn slate-blue work tunic and canvas apron, arms bare enough to show crests. No wheel or floating bowl. Open north window at right gives broad light, pale wall bounces enough onto the face; pottery is slightly glazed, skin and plaster matte. Cream, muted cobalt and warm reddish clay; brushes and a few bowls at rear only soft shapes. Finished oil painting with selected crisp accents on eye, brush tip and glazed rim. No glowing sculpture, metal horns, sci-fi anatomy or dense props.",
+      "status": "accepted final painting",
+      "lore_status": "Selected direction; developed visual details remain proposals",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-a8e3b1f4-9259-4010-9f60-249bec8da829.png",
+      "sha256": "90a124e7158fa191bbf4f3eff3340e90fcbd21d08381f0dec12c25ba286d7e92",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Bowl supported, brush reaches rim, gaze at contact; crests and clothing fit coherently.",
+      "original_code": "R2",
+      "creator_feedback": {
+        "codes": [
+          "R1",
+          "R2"
+        ],
+        "verdict": "liked; retain",
+        "note": "Creator asked whether their homes are warm. SETTING.md specifies limestone valleys and quarry towns but does not specify climate; do not canonize a universal warm habitat."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Crest folk live in limestone valleys and quarry towns. This individual potter and interior remain proposals; the lore does not restrict every individual to masonry.",
+      "former_file": "r2-the-painted-bowl.png"
+    },
+    {
+      "code": "O1-R1",
+      "parent": "O1",
+      "title": "After the Tide — northern shore",
+      "file": "final/o1-after-the-tide-v2.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/o1-after-the-tide.png"
+      ],
+      "summary": "Moves the Greyhide's tide-pool work to a cold northern coast, keeping her basket and ordinary task.",
+      "prompt": "Use case: lighting-weather and background correction. Image 1 is the edit target. This woman is a GREYHIDE, a large, kind northern coastal people with naturally thick insulated bodies, comfortable wading cold water. Keep her exact identity, face, massive rounded body, kneeling pose, both hands lifting the wicker crab basket, basket contents, blue wool tunic, rolled trousers and bare feet in the tidal pool. Change the surroundings from a golden Mediterranean shore to a recognisably COLD NORTHERN rocky tidal coast: slate-grey wet bedrock and brown bladderwrack in foreground, cold blue-green sea, distant low dark treeless island headlands and a cool cloud bank with a slim pale sun break. It is a brisk day, not a snowstorm; no icebergs or polar fantasy. Retain some warm ochre in wet kelp, crab shells and thin sunlight catching her face and basket. Paint believable cool skylight and warmer reflected accents, with the subject clearly visible; avoid bleaching or blanket grey. Northern habitat is the requested change, not a redesign of this liked creature or scene. A thick short wool shoulder cape may rest behind her shoulders if needed, but leave both working arms and the silhouette clear. Landscape 1536 x 1024. Preserve the original's traditional oil/acrylic painting, visible varied brushwork, matte skin and cloth, vivid natural colour, coherent directional illumination, readable subject and quiet background shapes. No sharpening, pore noise, new glow, text, border or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c8b31f33-670b-46ee-a258-5a0eaf1ab396.png",
+      "visual_qa": "Cold rocky northern tidal coast, kelp and low dark islands replace golden southern shore. Thick Greyhide body and basket-lifting action retained; bare feet are compatible with accepted cold-water insulation.",
+      "status": "accepted final painting",
+      "sha256": "c0af8502be31e082a75cc74a1e22b164e21237872dcaf1ce93a4a140aaf4fcef",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "Fresh scene",
+      "people": "Greyhides",
+      "alignment": "Neutral",
+      "original_code": "O1",
+      "creator_feedback": {
+        "codes": [
+          "O1",
+          "O2"
+        ],
+        "verdict": "generally liked with setting correction",
+        "edit": "Use cold northern coastal settings. Current species name Greyhides."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "o1-after-the-tide-v2.png"
+    },
+    {
+      "code": "O2-R1",
+      "parent": "O2",
+      "title": "An Argument at Lunch — northern harbour",
+      "file": "final/o2-an-argument-at-lunch-v2.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/o2-an-argument-at-lunch.png"
+      ],
+      "summary": "Preserves the shared meal and personalities, now at a sheltered cold northern harbour.",
+      "prompt": "Use case: background and climate edit. Image 1 is the edit target. Preserve the two GREYHIDES exactly: faces, expressions, large rounded bodies, left woman's open gesturing hand and bread, right man's cup and relaxed posture, shared fish/onion lunch, pottery and foreground table. Move this liked conversation from the sunny Mediterranean harbour to a COLD NORTHERN COASTAL village. Replace white terraced background city with low timber-and-fieldstone longhouses, steep turf or shingle roofs and a sheltered rough stone quay, simple working wooden boats with furled sails, distant windswept dark headlands. They sit in the lee of a longhouse under a low weathered timber lean-to, with some existing canvas as a wind shelter instead of a glowing summer awning. Preserve mustard, indigo and russet clothing colours but make layers read as thick wool; sleeves can be uncuffed to wrists without covering the hands. Cool blue-grey daylight on the water and a modest low warm sunbreak from image-left across faces and food; lively restrained colours, not all grey or all dark. The locality is cold and northern, not necessarily snowy. Keep the meal readable and welcoming and all silhouettes and body anatomy unchanged. Landscape 1536 x 1024. Preserve the original's traditional oil/acrylic painting, visible varied brushwork, matte skin and cloth, vivid natural colour, coherent directional illumination, readable subject and quiet background shapes. No sharpening, pore noise, new glow, text, border or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-ce927a50-dffd-4d89-820e-806830a5e7f5.png",
+      "visual_qa": "Timber/stone/turf harbour and cooler sea/sky establish northern setting; thicker wool, meal, faces and gestures retained.",
+      "status": "accepted final painting",
+      "sha256": "7fcc2084fc5485a2895f64f6ad506eff4da0180e84ae422cacd79b3152b79c6a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "Fresh scene",
+      "people": "Greyhides",
+      "alignment": "Neutral",
+      "original_code": "O2",
+      "creator_feedback": {
+        "codes": [
+          "O1",
+          "O2"
+        ],
+        "verdict": "generally liked with setting correction",
+        "edit": "Use cold northern coastal settings. Current species name Greyhides."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "o2-an-argument-at-lunch-v2.png"
+    },
+    {
+      "code": "H2-R1",
+      "parent": "H1",
+      "title": "Stonewake",
+      "file": "final/h2-stonewake-final.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/h2-stonewake.png"
+      ],
+      "summary": "A Crest folk mason-mage heaves a short wave through an old stone causeway to stop an armed advance. Stonewake proposes a new fictional spell and name for Harmonic Burst while preserving its gameplay.",
+      "prompt": "Use case: precise local identity-preserving edit. Image 1 is the edit target. Change ONLY the Crest woman's head angle, eyes and minimal connecting neck anatomy so she looks unmistakably UP and RIGHT at the FACE of the closest armoured man she is toppling, in the upper-right of the painting. Her current face looks too horizontally forward. Lift her chin modestly, turn her gaze toward his face rather than toward the stones or the distant companion; her sightline should meet his face. Retain her focused serious expression, age, exact distinctive head crest and cheek marks. Keep BOTH hands in their current places, particularly her anatomical left palm planted on the causeway; keep her kneeling body, clothes and scale unchanged. Preserve the exact man's pose, all other people, wave of paving, architecture, ravine, framing, palette, readable directional light, material handling and varied oil/acrylic brushwork. No new effects, extra details, crop or global repaint. Landscape 1536 x 1024. No text, border or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-e89ad48e-c348-4fed-82ad-0479365bda52.png",
+      "visual_qa": "Chin and eyes turned up toward the closest armoured man's face; planted hand, kneeling pose, paving wave, lighting and scene retained.",
+      "status": "accepted final painting",
+      "sha256": "329f076a7b50fd32ca440109a75fb1cbad87fcd17b0f89896d6f1630c63029ef",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "Replacement concept",
+      "people": "Crest folk",
+      "alignment": "Gnosis",
+      "original_code": "H1",
+      "creator_feedback": {
+        "codes": [
+          "H1"
+        ],
+        "verdict": "not selected for Harmonic Burst",
+        "note": "Creator explicitly clarified that the image is not simply bad, but does not want it for this spell. Preserve as an unselected concept; do not use as a style failure or global rejection.",
+        "next": "Develop a new art and fictional spell proposal, preserving existing gameplay."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Stonewake proposes a Crest folk mason-mage defending a causeway by heaving a short wave through its paving. The fiction and title are new; Harmonic Burst's existing gameplay is preserved.",
+      "deleted_file": "h2-stonewake.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-1163a725-263a-4081-a5a9-7655b3c3fad5.png",
+      "previous_code": "H2"
+    },
+    {
+      "code": "N1",
+      "category": "New card painting",
+      "alignment": "Vigil",
+      "people": "Kitefolk",
+      "title": "Neris, Roofwatch",
+      "file": "final/n1-vigil-neris-roofwatch.png",
+      "type": "Unit concept",
+      "summary": "Neris watches the approach to a town from a high parapet, her folded membranes accommodated by light protective gear. Her vigilance is a personal alignment choice; neither the name nor a universal Kitefolk occupation is established.",
+      "source_scene": "K1",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/k1-above-the-washing-lines.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nCARD PAINTING: image only; no game rules, text or frame.\nUse the attached K1 scene ONLY to preserve this specific adult Kitefolk woman's face, short dark hair, copper-brown skin, long pointed nose, slim proportions and mottled finger-braced membranes. New composition: medium-close three-quarter seated view on a broad stone parapet above a town gate, looking attentively down the road toward image-left. Membranes folded safely behind and beside arms, both feet securely braced on the masonry. A modest short wooden crossbow rests horizontally across her knees, one hand on the stock well clear of trigger and the other on the fore-end; bowstring, limbs and stock connected, no impossible grip through membrane. Practical light ivory padded sleeveless vest, narrow steel collar panel, single tiny gold sun pin, dark trousers and soft boots, no cape or giant armor. Vigil through alert protection, no spell shield required. Warm morning light from image-left illuminates face and hands in a coherent large shape; sky and pale stone bounce maintain visible shadows. Clear gold/ivory/blue relationships, dark roof line behind sets off her silhouette, distant road and small gate implied with broad paint. Calm competence with tension in the watchful gaze, not a flying action reprise.",
+      "status": "accepted final painting",
+      "lore_status": "Proposed individual, title, role and scene. No gameplay implementation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-3edb4aa5-d1a8-41d3-8d6e-983831358f31.png",
+      "sha256": "3ccf0a926970fd9175d935166734513d5b3a19a077d50b6f5915e36601672d4d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Seated feet supported, crossbow rests across knees with connected grip; membranes and practical armour coexist.",
+      "original_code": "N1",
+      "creator_feedback": {
+        "codes": [
+          "N1"
+        ],
+        "verdict": "liked; retain"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "former_file": "n1-vigil-neris-roofwatch.png"
+    },
+    {
+      "code": "N2-R1",
+      "parent": "N2",
+      "title": "Rusk, Saltroad Guard — without the barrier",
+      "file": "final/n2-fervor-rusk-saltroad-guard-v2.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/n2-fervor-rusk-roadbreaker.png"
+      ],
+      "summary": "Removes the entire toll apparatus. Rusk pauses with one boot on a natural roadside rock, watching the salt road.",
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Remove the ENTIRE toll installation: red-white diagonal striped boom, upright post, bell, hanging rag, broken fence rails and fence stumps. Fill their space with the same open road, hills, sky and ordinary natural rock. Preserve the liked Banded folk warrior's exact face, head ridges, body bands, muscular ordinary scale, quilted red vest, iron shoulder armour, sword, boots, golden directional light and the entire landscape's character. Keep his anatomical LEFT leg, knee and raised boot at lower image-right planted on the existing NATURAL rock (make the rock support continuous where fence was). Keep his anatomical RIGHT arm on image-left and lowered chopping sword unchanged. His anatomical LEFT arm was raised toward the boom at upper-right: lower this now-free arm so its hand rests naturally on his own raised left knee, with a believable relaxed elbow and five fingers, no ghost grip in the air. He is alertly watching the open route, not smashing or charging anything. No toll, signage, fences, boom gates, roadblocks, dangling bell, substitute pole or new object. Preserve the strong character silhouette and painted colour; do not redesign other equipment. Landscape 1536 x 1024. Preserve the original's traditional oil/acrylic painting, visible varied brushwork, matte skin and cloth, vivid natural colour, coherent directional illumination, readable subject and quiet background shapes. No sharpening, pore noise, new glow, text, border or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-4073dd0e-c0d6-46ef-8a77-874727f9fdf7.png",
+      "visual_qa": "Striped boom, bell, posts and broken fence are absent. Free left hand now rests on left knee; raised boot rests on natural rock, sword and character lighting retained.",
+      "status": "accepted final painting",
+      "sha256": "c271ad05bc67234fec3834fd0d1c108274a50f7501ab5a144e5e279a96a573fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "New card painting",
+      "people": "Banded folk",
+      "alignment": "Fervor",
+      "original_code": "N2",
+      "creator_feedback": {
+        "codes": [
+          "N2"
+        ],
+        "verdict": "liked with edit",
+        "edit": "Remove the toll apparatus, which feels modern and does not fit this scene.",
+        "scope": "This is a local image/prop rejection, not permission to erase tolls from established Kitefolk lore."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Rusk is a steady Banded folk guard watching a salt road, with one boot supported on natural rock and his free hand on his knee. The barrier-breaking premise is removed; Saltroad Guard is a proposed replacement epithet.",
+      "type": "Unit concept",
+      "former_file": "n2-fervor-rusk-saltroad-guard-v2.png"
+    },
+    {
+      "code": "N3",
+      "category": "New card painting",
+      "alignment": "Gnosis",
+      "people": "Glimmerfolk",
+      "title": "Quiet Unfastening",
+      "file": "final/n3-gnosis-quiet-unfastening.png",
+      "type": "Spell concept",
+      "summary": "The Glimmerfolk woman from the clasp scene opens a locked archive door through a small act of learned magic. The floating key and turning lock have a clear physical relationship, while the magic remains an individual skill.",
+      "source_scene": "G1",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/g1-the-copper-clasp.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nCARD PAINTING: image only; no game rules, text or frame.\nUse the attached G1 scene ONLY for the same adult Glimmerfolk woman's face, long neck, broad ear-fans, walnut skin and dense blue glimmer pattern. New half-body oblique view from slightly inside a shadowed archive doorway. She stands outside in a deep teal practical scholarly coat with rolled sleeves, cream underlayer and simple brass pin; she looks directly at a small ordinary brass KEY turning within a plainly visible iron door lock. One hand hovers just below the key, palm up, without touching it: the key turns by direct learned magic, connected to the actual keyhole. Other hand gently holds the door edge to open it, clear fingers and natural arm. No magic ribbons, glowing interface or optical gadget. A narrow warm line of daylight appears as the heavy wooden door opens inward toward viewer; the woman and her hands are lit by broad cool courtyard light with soft reflected warmth from pale masonry, all comfortably readable. A quiet interior shelf is just a few shapes. Brass highlight, matte walnut skin, small blue glimmers and teal cloth provide restrained colour. A subtle intriguing moment, physically comprehensible, no sprawling city, magical explosion, random hovering objects or repeated clasp pose.",
+      "status": "accepted final painting",
+      "lore_status": "Proposed individual, title, role and scene. No gameplay implementation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-eb66c7c6-959e-42f2-b0d5-c81524f9878d.png",
+      "sha256": "af648771255a353a97b768f16b2afccbb7defd43027299b494c6dde59b93782b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_qa": "Key visibly enters actual lock, two hands have clear roles, gaze follows key; magic expressed without spectacle.",
+      "original_code": "N3",
+      "creator_feedback": {
+        "codes": [
+          "N3"
+        ],
+        "verdict": "strongly liked; retain"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "A Glimmerfolk mage quietly works a key in an archive lock. It is learned personal magic in an urban setting; neither spell mechanics nor a universal Glimmerfolk power is established.",
+      "former_file": "n3-gnosis-quiet-unfastening.png"
+    },
+    {
+      "code": "N4",
+      "category": "New card painting",
+      "alignment": "Dominion",
+      "people": "Ashborn",
+      "title": "Veyr, Recalled",
+      "file": "final/n4-dominion-veyr-recalled.png",
+      "type": "Unit concept",
+      "summary": "Veyr turns from a familiar doorway as an officer calls him back to duty. His maintained identity and interrupted private moment express Dominion’s claim over him; no soul condition or new universal mechanism is declared.",
+      "source_scene": "D1",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/d1-a-door-he-knows.png"
+      ],
+      "prompt": "Create ONE original Breachline high-fantasy oil/acrylic painting, landscape 1536 x 1024, full bleed, no text, letters, numbers, border, watermark or signature. This is a fresh composition, not a variation of an earlier finished scene.\nREFERENCE: attached reference sheets establish species anatomy only, not the sheet pose, clothes, lighting, age or individual. Invent a distinct believable adult unless exact identity is explicitly requested. Where an attached finished painting identifies Veyr or the returned woman, preserve that person but invent the new composition below. Keep unusual species traits clearly visible, easing facial exaggeration only a little; no generic humans, sci-fi aliens or toy-like faces.\nPAINT: measured visible oil/acrylic strokes, broad linked colour and value shapes, selective focal detail. Faces, hands and cloth should be painted forms, not photographs coated with noise. Matte skin and wool, selected reflections on metal/glass/water. Backgrounds suggested with a few atmospheric masses and soft painted edges, not crisp microdetail.\nLIGHT: the scene has one coherent dominant light idea with credible ambient bounce. Keep faces, eyes and important hands comfortably readable in middle values at card size, including in shade. Preserve luminous colour and warmth where natural; don't darken everything, apply a grey wash, add artificial face spotlights or outline every edge with glow. Avoid extreme black shadows, waxy highlights and uniform sharpness.\nWORLD: lived-in high fantasy about 150 years after an empire fell. Ordinary people and convincing material culture coexist with magic. Clothing and tools must work with the anatomy. Gestures, gazes and object contacts have clear purpose; stillness can carry a painting. Simple connected anatomy, plausible grips, consistent scale. No gratuitous explosions, magic ribbons, compulsory hero poses or elaborate scenery competing with the subject. The image must be interesting without a title.\n\nCARD PAINTING: image only; no game rules, text or frame.\nUse the attached D1 painting ONLY as exact VEYR identity and equipment reference: short dark hair, pale hollow face, restrained healed throat scar, ordinary strong build, worn iron breastplate and dark quilted kit. New composition seen from ahead along the lane, Veyr in foreground left in a three-quarter turning pose, head looking toward a distant officer to image-right while his near hand has just left the latch of a plain shuttered house. One halberd is now naturally carried upright in his other gloved hand; complete continuous shaft and modest head inside frame, no extra weapon or limbs. The officer is a SMALL secondary human silhouette at the far right under a simple stone arch, one restrained beckoning gesture, no detailed costume. Veyr's expression has a trace of recognition interrupted by obligation, no heroic rage. Cold bright cloud light with gentle warm reflection from muted ochre plaster gives medium-value visibility to face and breastplate; clothing shadows remain readable. Ash, weathered green, tarnished iron, subdued ochre, no purple fog or black void. Selective brush detail around face and letting-go hand, quiet background. Harsh service and individual cost conveyed by a plain interrupted moment, not a necromancy spectacle or smiling civic kindness. Do not repeat the source's side-on door portrait.",
+      "status": "accepted final painting",
+      "lore_status": "Proposed individual, title, role and scene. No gameplay implementation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-147b02e8-a65f-452b-9017-57bb36011930.png",
+      "sha256": "296674d7b066668cd399ed6253c1d011e7ca874b78957fb2bcca00e3604eb3c1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "initial_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-80a33f13-20b3-4da2-8e3f-9c396e94eb99.png",
+      "local_correction": "Use case: precise-object-edit. The supplied painting is the exact edit target. Make ONE local correction and preserve everything else unchanged: lower/shorten only the upper visible portion of Veyr's upright halberd so its COMPLETE iron axe-and-spike head fits comfortably inside the top of the picture, with roughly a palm-width of sky above its highest tip. Preserve one continuous straight wooden shaft through the existing gloved grip and the same small practical weapon design. Do not change hand position, face, expression, scars, armour, body, doorway, officer, setting, camera, colour, light or brushwork. No new object or text. Same 1536 x1024 landscape painting.",
+      "visual_qa": "Exact retained Veyr identity inspected; local second pass brings full halberd head within frame while preserving hand and composition.",
+      "original_code": "N4",
+      "creator_feedback": {
+        "codes": [
+          "N4"
+        ],
+        "verdict": "liked; retain"
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Veyr is an Ashborn soldier recalled from a familiar doorway to Dominion duty. His private recognition is an individual story proposal; Ashborn's weak souls and Dominion allegiance are already established lore.",
+      "former_file": "n4-dominion-veyr-recalled.png"
+    },
+    {
+      "code": "N5-R2",
+      "parent": "N5",
+      "title": "Dessa, Heathwatch — full-sized bow",
+      "file": "final/n5-genesis-dessa-heathwatch-v3.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-a32b38eb-23ca-44e1-8010-e8f7310a9ee1.png"
+      ],
+      "summary": "A full-sized practical bow, now with both tips inside the frame and the liked pose and light preserved.",
+      "prompt": "Local edit of the supplied painting: fix only the bow's upper tip which currently clips the top edge. Preserve the adult-sized bow, which is now properly large. Shorten only the uppermost stretch of the upper limb enough that the COMPLETE pointed wood tip and its string nock terminate about 65 pixels below the top edge, giving clear sky margin. Maintain a believable balanced ash-wood bow curve and a single string connected at upper tip, drawn lightly at arrow nock in her anatomical RIGHT hand at centre-left, and attached to lower tip. Keep lower limb and its tip unchanged, keep grip in her anatomical LEFT hand at centre-right unchanged, keep arrow, fingers, arms, entire figure, exact face, expression, fur, clothing, boots, wall, grasses, village, sky, lovely lighting, colours and brushwork unchanged. Do not shrink back to the tiny original bow or crop/zoom/reframe the painting. No added details or glow. Landscape 1536 x 1024, no text or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-083b799d-3ab5-4cee-99f6-1e79180e2073.png",
+      "visual_qa": "Full adult bow with both tips inside frame, continuous string attached at both nocks and arrow held at partial draw. Character, composition, weather and colour remain recognisable; some painterly surface drift from the generative edit.",
+      "status": "accepted final painting",
+      "sha256": "25e8e7139a645fcd8584ad926c26cc853176e779967921d73745028ed8da5892",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "category": "New card painting",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "original_code": "N5",
+      "creator_feedback": {
+        "codes": [
+          "N5"
+        ],
+        "verdict": "strongly liked with equipment edit",
+        "edit": "Make the bow bigger and properly functional; preserve light, brushwork, character, pose and setting.",
+        "quote": "I really like how the detail and brushwork varies and is clear."
+      },
+      "current_review_status": "Final painting retained by creator",
+      "current_context": "Dessa keeps her low position behind a moorland boundary wall, watching the approach with a nocked arrow and partial draw. The practical full-sized bow replaces the undersized original; this individual role and card are proposals.",
+      "type": "Unit concept",
+      "former_file": "n5-genesis-dessa-heathwatch-v3.png"
+    }
+  ],
+  "earlier_favourites": [
+    {
+      "source": "breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/n5-genesis-dessa-heathwatch.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/n5-genesis-dessa-heathwatch.png",
+      "sha256": "0362f3a0b616abde47eaee80b1d7ce49e4d9e43d24d922e3b0064876e8ca57bf",
+      "group": "favourites",
+      "code": "N5-original",
+      "title": "Dessa — original painted-light touchstone",
+      "reason": "Strongly liked brushwork/light; keep despite superseded small bow",
+      "file": "favourites/n5-genesis-dessa-heathwatch.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c7-tavra-salt-road-duelist.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/c7-tavra-salt-road-duelist.png",
+      "sha256": "8bb638610dcf9ed9287110c80ffe432ce9f55ea1b4bfcd0dbe2b027f1b856ef0",
+      "group": "favourites",
+      "code": "C7",
+      "title": "Tavra, Salt-Road Duelist",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/c7-tavra-salt-road-duelist.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s7-brann-at-the-low-tide-road.png",
+      "sha256": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab",
+      "group": "favourites",
+      "code": "S7",
+      "title": "Brann at the Low-Tide Road",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/s7-brann-at-the-low-tide-road.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s2-sera-in-the-lamplit-court.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s2-sera-in-the-lamplit-court.png",
+      "sha256": "f10493419255713e6bf84f3e96672f8835186195fdf73c2e1769613f5d87acf5",
+      "group": "favourites",
+      "code": "S2",
+      "title": "Sera in the Lamplit Court",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/s2-sera-in-the-lamplit-court.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s5-a-camp-before-rain-lighting-v2.png",
+      "sha256": "27d7a9d6ec2ea79184d9e4214b57aaa7707b2ce562e0696b79f70e5f98a2cf28",
+      "group": "favourites",
+      "code": "S5-L1",
+      "title": "A Camp before Rain — preferred light",
+      "reason": "Explicitly preferred lighting revision",
+      "file": "favourites/s5-a-camp-before-rain-lighting-v2.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c6-another-service.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/c6-another-service.png",
+      "sha256": "9949ab223e29c3a38a0c26e174954221eaff2b675421d89dacadb77d52d0aa7f",
+      "group": "favourites",
+      "code": "C6",
+      "title": "Another Service",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/c6-another-service.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c9-hessa-doorwarden.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/c9-hessa-doorwarden.png",
+      "sha256": "5a4cb17231a517acadd5ad53a1f84cd34fcb7cce373a1f15a4087aed8d50e14c",
+      "group": "favourites",
+      "code": "C9",
+      "title": "Hessa, Doorwarden",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/c9-hessa-doorwarden.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s5-a-camp-before-rain.png",
+      "sha256": "fe6890a8891afd82b2ba242d36eeb5b0fc6b7f6289bde21ac3ce9066809df427",
+      "group": "favourites",
+      "code": "S5",
+      "title": "A Camp before Rain",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/s5-a-camp-before-rain.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s4-the-second-muster.png",
+      "sha256": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87",
+      "group": "favourites",
+      "code": "S4",
+      "title": "The Second Muster",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/s4-the-second-muster.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c5-veyr-twice-mustered.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/c5-veyr-twice-mustered.png",
+      "sha256": "dd29b19829863d9c8e0ad73819e56ef18a1b74618cadd33759044dce90ced6f4",
+      "group": "favourites",
+      "code": "C5",
+      "title": "Veyr, Twice Mustered",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/c5-veyr-twice-mustered.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/s3-hessas-winter-door.png",
+      "sha256": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9",
+      "group": "favourites",
+      "code": "S3",
+      "title": "Hessa’s Winter Door",
+      "reason": "Creator's earlier liked scene/card; preserve original",
+      "file": "favourites/s3-hessas-winter-door.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/peoples-alignment-paintings-2026-11-13/a4-dominion-the-watch-continues.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/a4-dominion-the-watch-continues.png",
+      "sha256": "659ed5c45107c5b905a826ac8c1ae5cea8948b0fc3f5011bfa9add2227e0a53b",
+      "group": "favourites",
+      "code": "A4",
+      "title": "The Watch Continues",
+      "reason": "Veyr explicitly retained",
+      "file": "favourites/a4-dominion-the-watch-continues.png"
+    },
+    {
+      "source": "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/revisions/emberward-r1.png",
+      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/emberward-r1.png",
+      "sha256": "fac942a97546ef75ada506c6ad435c31df3c428a10006d3c77405fa30845bf74",
+      "group": "favourites",
+      "code": "IG8",
+      "title": "Emberward — preferred revision",
+      "reason": "Explicitly preferred revision",
+      "file": "favourites/emberward-r1.png"
+    }
+  ],
+  "reference_sheets": [
+    {
+      "title": "Kitefolk",
+      "code": "KR1",
+      "file": "../peoples-final-2026-11-13/01-kitefolk-final.png",
+      "status": "Final visual reference",
+      "sha256": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089"
+    },
+    {
+      "title": "Glimmerfolk",
+      "code": "GR1",
+      "file": "../peoples-final-2026-11-13/02-glimmerfolk-final.png",
+      "status": "Final visual reference",
+      "sha256": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea"
+    },
+    {
+      "title": "Moor folk",
+      "code": "PL7",
+      "file": "../peoples-final-2026-11-13/03-moor-folk-final-lineup.png",
+      "status": "Final visual range",
+      "sha256": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159"
+    },
+    {
+      "title": "Ashborn",
+      "code": "PL3D",
+      "file": "../peoples-final-2026-11-13/04-made-people-final-lineup.png",
+      "status": "Final visual range",
+      "sha256": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920"
+    },
+    {
+      "title": "Banded folk",
+      "code": "PL8B",
+      "file": "../../peoples-lore-handoff-2026-11-13/05-salt-silt-working-reference.png",
+      "status": "Current reference; developed sheet remains under visual review",
+      "sha256": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8"
+    },
+    {
+      "title": "Crest folk",
+      "code": "CR3",
+      "file": "../../peoples-lore-handoff-2026-11-13/06-crest-working-reference.png",
+      "status": "Current reference; developed sheet remains under visual review",
+      "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28"
+    },
+    {
+      "title": "Greyhides",
+      "code": "CO1",
+      "file": "../../peoples-lore-handoff-2026-11-13/07-coast-working-reference.png",
+      "status": "Current reference; developed sheet remains under visual review",
+      "sha256": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f"
+    }
+  ],
+  "other_retained": [
+    {
+      "path": "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/revisions/oath-sentinel-r1.png",
+      "sha256": "25c5ca2507e88551266af2110e586af2eaadd4b2f98453c81b86b3632b09b6b6",
+      "reason": "Creator undecided; preserve Oath Sentinel comparison"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png",
+      "sha256": "fb76c4caeae2c3af801b851248f6fdb3cab44111f5063b6b0a0bb2ce0b954287",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/09-new-peoples-lineup-2.png",
+      "sha256": "ff52bfee693b56a4cfea9611749d74fafcd04308c91e880eee39a88c2d6ace08",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/18-salt-silt-unified-lineup.png",
+      "sha256": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/12-salt-and-silt-focused-lineup.png",
+      "sha256": "d7ca351fd3e577a14226727fb365594d616e18c4e8964cd87eeafcb88ef8bdea",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/23-crest-folk-integrated-sweep-reference.png",
+      "sha256": "84b24d5b068737f02bd34df803d69b04e453764247befbbf03ff8a6a0ac6c218",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/20-coast-folk-reference-v1.png",
+      "sha256": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/04-new-peoples-lineup.png",
+      "sha256": "bc63c32c139190604282fb8a4c29513ab13833ab779f4f503c3def6e3d06754c",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/10-new-peoples-lineup-3.png",
+      "sha256": "9e681e950ac869b1799cfd7dd02d1303af07e60ef1c7c65a74c22eb42b3216f5",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png",
+      "sha256": "73258a7f879e75499302b3eb5abbcb1a88e78a4bbf7680f65cc73e30ef5232ef",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/24-crest-folk-arms-and-body-reference.png",
+      "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/13-broadface-and-crest-lineup.png",
+      "sha256": "bbfb383840bf3b2e8790c1a98c1ae1abfd2ca5bf9d0c3201122b85b74e79827f",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/02-glimmerfolk-lineup.png",
+      "sha256": "5152df8b92671b4e638638b2777328824e2d0496e13af760574e9e2ce00b2eaf",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    },
+    {
+      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/14-coast-and-nose-studies.png",
+      "sha256": "823d81c6598607f6f3aee9964c248496672f2419fb45f4e75c441e03d8391648",
+      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
+    }
+  ],
+  "cleanup_record": "cleanup-plan.json",
+  "card_proposals": "../../work-in-progress/peoples-fresh-scenes-2026-11-13/card-proposals.json"
+}

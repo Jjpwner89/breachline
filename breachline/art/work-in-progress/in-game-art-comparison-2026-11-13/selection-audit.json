@@ -1,0 +1,560 @@
+{
+  "rows": [
+    {
+      "code": "IG1",
+      "slug": "oath-sentinel",
+      "title": "Oath sentinel",
+      "alignment": "Vigil",
+      "card_ids": [
+        "sentinel"
+      ],
+      "rank": {
+        "id": "f70e70f2d10507637ffa",
+        "title": "Oath sentinel",
+        "path": "oath-sentinel.png",
+        "rating": 988,
+        "comparisons": 1,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "The Vigil group is broadly liked, but Oath sentinel is the least liked in that group; the reason is not specified. Do not invent a general rule from that preference.",
+          "source": ".claude/skills/art-direction/HISTORY.md:472",
+          "praise": false,
+          "strong": false
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "110a0f0f-ca11-4d54-874b-939250fea0b1",
+          "at": "2026-11-11T04:54:01.118711+00:00",
+          "opponent": "Debt Collector's Blade",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-sentinel.png",
+          "sha256": "0f7d57ec7c076c64859d4a794184e969689fdef1f4159a6db6faec0375c07c2e",
+          "bytes": 2663957
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/oath-sentinel.jpg",
+          "sha256": "88277b44290487bad52285cbad46875020265001e8244bce5a6248b029d5b133",
+          "bytes": 147415
+        }
+      },
+      "category": "Explicit reservation",
+      "selection_note": "Least-liked in its Vigil group; no reason recorded.",
+      "revision_aim": "Keep his calm presence and equipment. Test simpler paint, a clearer light direction and fewer competing highlights.",
+      "original": "../../oath-sentinel.png",
+      "live_snapshot": "../../web/oath-sentinel.jpg",
+      "revised": "revisions/oath-sentinel-r1.png",
+      "former_original": "originals/oath-sentinel.png",
+      "former_live_snapshot": "originals/oath-sentinel-live.jpg"
+    },
+    {
+      "code": "IG2",
+      "slug": "harmonic-burst",
+      "title": "Harmonic burst",
+      "alignment": "Gnosis",
+      "card_ids": [
+        "harmonic"
+      ],
+      "rank": {
+        "id": "7bf47f69c2030cb9b92d",
+        "title": "Harmonic burst",
+        "path": "harmonic-burst.png",
+        "rating": 988,
+        "comparisons": 1,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Final, but explicitly not a favorite. Prefer other mechanisms over sound.",
+          "praise": false,
+          "strong": false,
+          "source": "ART_PROMPTS_SET9.json",
+          "batch": 9
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "c9eb7f25-8529-4505-9c6b-a3ccb1d76e41",
+          "at": "2026-11-11T04:54:41.460502+00:00",
+          "opponent": "Rain gathering",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/harmonic-burst.png",
+          "sha256": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+          "bytes": 2840923
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/harmonic-burst.jpg",
+          "sha256": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+          "bytes": 218384
+        }
+      },
+      "category": "Explicit reservation",
+      "selection_note": "Finalized, but explicitly “not a favorite.” You preferred other Gnosis mechanisms to sound.",
+      "revision_aim": "Keep the correctly suspended bell. Test a subtler pressure wave and a clearer strike, with a quieter plaza.",
+      "original": "../../harmonic-burst.png",
+      "live_snapshot": "../../web/harmonic-burst.jpg",
+      "revised": null,
+      "former_original": "originals/harmonic-burst.png",
+      "former_live_snapshot": "originals/harmonic-burst-live.jpg",
+      "deleted_revised": "revisions/harmonic-burst-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG3",
+      "slug": "cinder-firebrand",
+      "title": "Cinder firebrand",
+      "alignment": "Fervor",
+      "card_ids": [
+        "firebrand"
+      ],
+      "rank": {
+        "id": "9aae9de1824eafbd2017",
+        "title": "Cinder firebrand",
+        "path": "cinder-firebrand.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "321f1746-575f-48cd-862c-639992a943e3",
+          "at": "2026-11-11T04:49:23.626975+00:00",
+          "opponent": "Cinderfall",
+          "won": false
+        },
+        {
+          "event_id": "74829bbf-1677-4b69-b9d4-64a46069ece6",
+          "at": "2026-11-11T04:51:09.940066+00:00",
+          "opponent": "The Rain That Rises",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-firebrand.png",
+          "sha256": "ebd502f5188b28e62124085e4456a71662de3e9b4d946027844454bbaae7f595",
+          "bytes": 2361133
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/cinder-firebrand.jpg",
+          "sha256": "7684a7ffb632e31c4c7990443076e991cae95af51ed86440e5043ddc50a4105f",
+          "bytes": 145036
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep the confident stride, orange fire and indigo night. Test a unified shadow shape and less surface detail.",
+      "original": "../../cinder-firebrand.png",
+      "live_snapshot": "../../web/cinder-firebrand.jpg",
+      "revised": null,
+      "former_original": "originals/cinder-firebrand.png",
+      "former_live_snapshot": "originals/cinder-firebrand-live.jpg",
+      "deleted_revised": "revisions/cinder-firebrand-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG4",
+      "slug": "anoint-with-embers",
+      "title": "Anoint with embers",
+      "alignment": "Fervor",
+      "card_ids": [
+        "anoint"
+      ],
+      "rank": {
+        "id": "15f05c9cea48a4afbf45",
+        "title": "Anoint with embers",
+        "path": "anoint-with-embers.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Anoint with Embers is really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET10.json",
+          "batch": 10
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "2c5220df-0baf-4c64-a231-70a8cf883981",
+          "at": "2026-11-11T04:49:34.878319+00:00",
+          "opponent": "Cobalt rapier — equipment card",
+          "won": false
+        },
+        {
+          "event_id": "cde3ebb7-78f0-4bc3-b7d3-b760981480e2",
+          "at": "2026-11-11T04:50:21.590638+00:00",
+          "opponent": "Dawnsail Passage",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/anoint-with-embers.png",
+          "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+          "bytes": 2639160
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/anoint-with-embers.jpg",
+          "sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+          "bytes": 154250
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier called “really good.”",
+      "revision_aim": "Keep the intimate brow contact. Test matte facial planes, natural fire reflections in the eyes and smaller magical accents.",
+      "original": "../../anoint-with-embers.png",
+      "live_snapshot": "../../web/anoint-with-embers.jpg",
+      "revised": null,
+      "former_original": "originals/anoint-with-embers.png",
+      "former_live_snapshot": "originals/anoint-with-embers-live.jpg",
+      "deleted_revised": "revisions/anoint-with-embers-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG5",
+      "slug": "sanctuary-threshold",
+      "title": "Sanctuary Threshold",
+      "alignment": "Vigil",
+      "card_ids": [
+        "sanctuary"
+      ],
+      "rank": {
+        "id": "4dbf0132003586450549",
+        "title": "Sanctuary Threshold",
+        "path": "sanctuary-threshold.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Liked, including the arrows on the ground.",
+          "praise": true,
+          "strong": false,
+          "source": null,
+          "batch": null
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "855b1f3b-28e2-4860-8875-0b431fd48d03",
+          "at": "2026-11-11T04:49:37.038932+00:00",
+          "opponent": "Unmake the Pattern",
+          "won": false
+        },
+        {
+          "event_id": "6f46c4ee-5cdb-4661-a001-deb9f89f9c6b",
+          "at": "2026-11-11T04:50:45.435497+00:00",
+          "opponent": "Copper Street Locksmith",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/sanctuary-threshold.png",
+          "sha256": "75b943775b75eb860054c78d063600956efe1b877ba72e870900fe6c1d0f32bc",
+          "bytes": 2833131
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/sanctuary-threshold.jpg",
+          "sha256": "67f01bb18dacd580b6fe0cd5462e187db0a53cc0a40d8fd2b7f0949102d8b646",
+          "bytes": 147029
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier liked, specifically including its fallen arrows.",
+      "revision_aim": "Keep the refuge, blanket, copper bowl and arrows. Test a localized lantern pool and quieter wet-stone reflections.",
+      "original": "../../sanctuary-threshold.png",
+      "live_snapshot": "../../web/sanctuary-threshold.jpg",
+      "revised": null,
+      "former_original": "originals/sanctuary-threshold.png",
+      "former_live_snapshot": "originals/sanctuary-threshold-live.jpg",
+      "deleted_revised": "revisions/sanctuary-threshold-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG6",
+      "slug": "hurled-brand",
+      "title": "Hurled brand",
+      "alignment": "Fervor",
+      "card_ids": [
+        "hurledbrand"
+      ],
+      "rank": {
+        "id": "213ad1baa1c560ec5d55",
+        "title": "Hurled brand",
+        "path": "hurled-brand.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "648b17ad-9ee8-4c20-8857-41865b922a4c",
+          "at": "2026-11-11T04:50:04.372742+00:00",
+          "opponent": "Roof glider",
+          "won": false
+        },
+        {
+          "event_id": "325a16ab-65c3-4e2b-84a4-f5ba6066b59b",
+          "at": "2026-11-11T04:50:43.932610+00:00",
+          "opponent": "Collect the tithe",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/hurled-brand.png",
+          "sha256": "0dbe2bf79054f55f88dd2c30d8bad26ced77fbebc9e453c9c4a05438e0428151",
+          "bytes": 2438545
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/hurled-brand.jpg",
+          "sha256": "455f9cbea6d05cb9142cce291cfe22279271f4c281a3704a6adbbb482da40cab",
+          "bytes": 156279
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep the forceful throw and red dusk. Test a darker figure against the sky and fire limited to the brand.",
+      "original": "../../hurled-brand.png",
+      "live_snapshot": "../../web/hurled-brand.jpg",
+      "revised": null,
+      "former_original": "originals/hurled-brand.png",
+      "former_live_snapshot": "originals/hurled-brand-live.jpg",
+      "deleted_revised": "revisions/hurled-brand-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG7",
+      "slug": "alderkin-elder",
+      "title": "Alderkin elder",
+      "alignment": "Genesis",
+      "card_ids": [
+        "alderelder"
+      ],
+      "rank": {
+        "id": "c65f201bb328c773c22b",
+        "title": "Alderkin elder",
+        "path": "alderkin-elder.png",
+        "rating": 976.4143005863771,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "The Alderkin Elder is good too.",
+          "praise": true,
+          "strong": false,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "78fefe4e-1a8c-413c-a0d9-89d34a575fa2",
+          "at": "2026-11-11T04:50:09.112781+00:00",
+          "opponent": "Barrow mark",
+          "won": false
+        },
+        {
+          "event_id": "dbe50a0c-0f0e-4057-81d4-05db3640e872",
+          "at": "2026-11-11T04:51:06.147353+00:00",
+          "opponent": "Black enamel field kit",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/alderkin-elder.png",
+          "sha256": "b93634f5cfc423e784ac28917f583c370ba71f721185b24ae753008931a02cd6",
+          "bytes": 2926183
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/alderkin-elder.jpg",
+          "sha256": "e3b308840f84ad538a129eecda1f3884d50df57d4567c9992bac5f912d76cc46",
+          "bytes": 206792
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier called good.",
+      "revision_aim": "Keep the huge elder, aqueduct and nesting birds. Test simpler bark planes and a clearer gaze toward the stone beneath its hand.",
+      "original": "../../alderkin-elder.png",
+      "live_snapshot": "../../web/alderkin-elder.jpg",
+      "revised": null,
+      "former_original": "originals/alderkin-elder.png",
+      "former_live_snapshot": "originals/alderkin-elder-live.jpg",
+      "deleted_revised": "revisions/alderkin-elder-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
+    },
+    {
+      "code": "IG8",
+      "slug": "emberward",
+      "title": "Emberward",
+      "alignment": "Fervor",
+      "card_ids": [
+        "emberward"
+      ],
+      "rank": {
+        "id": "3763d14becc274182af8",
+        "title": "Emberward",
+        "path": "emberward.png",
+        "rating": 976.8276146734439,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "8a117019-0e9e-49f0-9658-3d2aa0dc244d",
+          "at": "2026-11-11T04:49:44.655758+00:00",
+          "opponent": "Court Informant",
+          "won": false
+        },
+        {
+          "event_id": "0b67c8c2-f3fe-4da6-98cb-3b751f334415",
+          "at": "2026-11-11T04:51:07.853677+00:00",
+          "opponent": "Withering hex",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/emberward.png",
+          "sha256": "a5df64288c30e747d7582f8ee47ea50c4b8a68a4daf4a6ed6059009a6df16fa9",
+          "bytes": 2705969
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/emberward.jpg",
+          "sha256": "6bd639e515a204013016705042d36e8853e6e0127bf2b3b9fe37550e35c99ee8",
+          "bytes": 175645
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep both people, the ward painting and the young man's distant attention. Test coherent firelight and less detailed skin and cloth.",
+      "original": "../../emberward.png",
+      "live_snapshot": "../../web/emberward.jpg",
+      "revised": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/emberward-r1.png",
+      "former_original": "originals/emberward.png",
+      "former_live_snapshot": "originals/emberward-live.jpg",
+      "former_revised": "revisions/emberward-r1.png"
+    }
+  ],
+  "current_mapping_count": 226,
+  "ranked_current_count": 150,
+  "lowest_six": [
+    {
+      "id": "15f05c9cea48a4afbf45",
+      "title": "Anoint with embers",
+      "path": "anoint-with-embers.png",
+      "rating": 976,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "anoint",
+      "slug": "anoint-with-embers"
+    },
+    {
+      "id": "9aae9de1824eafbd2017",
+      "title": "Cinder firebrand",
+      "path": "cinder-firebrand.png",
+      "rating": 976,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "firebrand",
+      "slug": "cinder-firebrand"
+    },
+    {
+      "id": "213ad1baa1c560ec5d55",
+      "title": "Hurled brand",
+      "path": "hurled-brand.png",
+      "rating": 976,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "hurledbrand",
+      "slug": "hurled-brand"
+    },
+    {
+      "id": "4dbf0132003586450549",
+      "title": "Sanctuary Threshold",
+      "path": "sanctuary-threshold.png",
+      "rating": 976,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "sanctuary",
+      "slug": "sanctuary-threshold"
+    },
+    {
+      "id": "c65f201bb328c773c22b",
+      "title": "Alderkin elder",
+      "path": "alderkin-elder.png",
+      "rating": 976.4143005863771,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "alderelder",
+      "slug": "alderkin-elder"
+    },
+    {
+      "id": "3763d14becc274182af8",
+      "title": "Emberward",
+      "path": "emberward.png",
+      "rating": 976.8276146734439,
+      "comparisons": 2,
+      "wins": 0,
+      "card_id": "emberward",
+      "slug": "emberward"
+    }
+  ],
+  "review_revision": 185,
+  "sources": {
+    "/Users/dpuser/Documents/Claude/Games/breachline/ui.js": "534ff41e0357f41490bc91e5b7986611983e2ab0922a4d8289a4e140b4fa3d73",
+    "/Users/dpuser/Documents/Claude/Games/breachline/engine.js": "8c671b9fabf418fa72742ef7ceccf0ad1b4501d918a0c92fd56fe0c29e9730df",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/feedback.json": "e411caf0d4fc8e1442ca62ac3f2f5454ca5dc4afa03defd5c43d7fbcb5939d73",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/selection-guide.json": "8b291a08b93a6f5cb023c08ed7c2e3384f6aede7172c1bdb3774ab900844addb",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/catalog.json": "a0b8fdf067b8f2d61e140d11f2f14b7d84221aace0bfb00f8f7c1d3449df4f4d",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/evidence.json": "a3d44d1449929f27ea5a41a8917be2f12a086a801aa5ce3fdef47f1fba4ff483"
+  },
+  "date": "2026-11-13",
+  "status": "Eight revisions complete; awaiting creator review",
+  "method": "First two: explicit written reservations. Remaining six: lowest pairwise-ranked art mapped to cards in the current engine. Sparse comparisons and earlier praise do not establish rejection."
+}

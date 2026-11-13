@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-13",
+  "summary": "Finalize KR1 and GR1; reject OG1; made people too big/bulky; reduce sci-fi/alien feel and repeated anatomical folds while preserving unique bodies and exaggerated faces.",
+  "clarification_verbatim": "facial structures can still be exagerated, but ease a little bit so it fits in setting, just a tad",
+  "decisions": [
+    {
+      "code": "KR1",
+      "decision": "accepted_final_visual_reference",
+      "note": "Kitefolk design final; strongly liked."
+    },
+    {
+      "code": "GR1",
+      "decision": "accepted_final_visual_reference",
+      "note": "Glimmerfolk design final; strongly liked."
+    },
+    {
+      "code": "OG1",
+      "decision": "rejected",
+      "note": "Ogre: no."
+    },
+    {
+      "code": "PL3B",
+      "decision": "revise",
+      "note": "Too big and bulky. Keep mildly undead-looking living made people at ordinary scale."
+    },
+    {
+      "code": "PL5.1",
+      "decision": "retain_and_explore",
+      "note": "Head shape and body stripes interesting but somewhat too much; ease a little, preserve exaggeration."
+    },
+    {
+      "code": "PL5.2",
+      "decision": "retain_and_explore",
+      "note": "Interesting; keep alongside PL5.1 and develop in a combined lineup."
+    },
+    {
+      "code": "PL5.4",
+      "decision": "focused_lineup_requested",
+      "note": "Closer to setting, less foldy; six related variations requested."
+    },
+    {
+      "code": "PL5.6",
+      "decision": "develop_without_tail",
+      "note": "Pretty good, less foldy; tail not needed."
+    },
+    {
+      "code": "PL6.1",
+      "decision": "retain_nose_as_detail_reference",
+      "note": "Whole design not liked; scaled nose is an interesting feature."
+    },
+    {
+      "code": "PL6.2",
+      "decision": "develop",
+      "note": "Unique anatomy and broad slightly froggy face liked; remove ankle coils/wraps."
+    },
+    {
+      "code": "PL6.3",
+      "decision": "rejected_direction",
+      "note": "Prototypical alien appearance does not fit."
+    },
+    {
+      "code": "PL6.4",
+      "decision": "develop",
+      "note": "Looks really cool; explore this crest direction."
+    },
+    {
+      "code": "PL6.6",
+      "decision": "do_not_prioritize",
+      "note": "Could look cool but overlaps with existing Riverfolk."
+    },
+    {
+      "code": "PL4",
+      "decision": "retain_open",
+      "note": "Earlier explicit instruction remains: neither finalize nor reject."
+    }
+  ],
+  "general_direction": "Difference and uniqueness were what mattered about Cairnfold, not folds or a particular anatomy. Preserve unusual body plans and exaggerated faces; reduce facial exaggeration only a touch. Strong painted fantasy character, fewer repeated folds, and less stereotypical science-fiction alien appearance."
+}
