@@ -722,7 +722,7 @@ var Screens = (function () {
     return '<div class="drow ' + c.colour + (e[1] > own ? ' short" title="You own ' + (own || 'none') : '') + '" data-row="' + c.id + '">' + (art ? '<img class="rart" src="' + art + '" alt="" draggable="false">' : '') +
       '<span class="rcost' + (c.type === 'land' ? ' land' : '') + '">' + (c.type === 'land' ? '' : c.cost) + '</span>' +
       '<button type="button" class="rname" data-peek="' + c.id + '" ' + act('zoom', c.id) + '>' + esc(c.name) + '</button>' +
-      '<span class="rn">×' + e[1] + '</span>' +
+      '<span class="rn">×' + e[1] + '</span>' + (e[1] > own ? '<span class="rmiss">' + (e[1] - own) + ' missing</span>' : '') +
       '<button type="button" class="rbtn" ' + act('remove', c.id) + ' aria-label="One fewer ' + esc(c.name) + '">&minus;</button>' +
       '<button type="button" class="rbtn" ' + (full ? 'disabled ' : '') + act('add', c.id) + ' aria-label="One more ' + esc(c.name) + '">+</button></div>';
   }
@@ -751,6 +751,7 @@ var Screens = (function () {
       '<div class="dprog"><i style="width:' + Math.min(100, Math.round(size / E.DECK_MIN * 100)) + '%"></i></div>' +
       '<p class="dline">Lands ' + st.lands + (size ? ' (' + Math.round(st.lands / size * 100) + '%)' : '') + TYPES.slice(0, 5).map(function (t) { return st.types[t] ? ' · ' + GameUI.TYPES[t] + 's ' + st.types[t] : ''; }).join('') + '</p>' +
       curveHtml(st.curve) +
+      missingHtml(list) +
       advice.map(function (a) { return '<p class="advice">' + a + '</p>'; }).join('') +
       '<p class="dmsg" id="dmsg" role="status">' + esc(ed.msg) + '</p>';
     growCurve();
@@ -759,6 +760,33 @@ var Screens = (function () {
       '<button type="button" class="btn primary" ' + (problems.length ? 'disabled ' : '') + act('playDeck') + '>Play this deck</button>';
     byId('dopen').textContent = 'View deck: ' + size + ' cards';
   }
+  // The copies in the deck beyond what the player owns, by name, with one press to take them all out. A copied starter or
+  // theme deck can then be filled back up with cards the player has.
+  function unowned(list) {
+    return list.map(function (e) { return [e[0], e[1] - Math.min(e[1], ed.pool.copies(e[0]))]; }).filter(function (e) { return e[1] > 0; });
+  }
+  function missingHtml(list) {
+    var gone = unowned(list);
+    if (!gone.length) return '';
+    var n = gone.reduce(function (a, e) { return a + e[1]; }, 0);
+    return '<div class="dmissing"><p><b>You don\'t own ' + n + ' of these cards' + '.</b> ' +
+      gone.map(function (e) { return esc(E.CARDS[e[0]].name) + (e[1] > 1 ? ' ×' + e[1] : ''); }).join(', ') + '</p>' +
+      '<button type="button" class="btn" ' + act('trimUnowned') + '>Take out the cards I don\'t own</button></div>';
+  }
+  actions.trimUnowned = function () {
+    var gone = unowned(ed.deck.list), n = gone.reduce(function (a, e) { return a + e[1]; }, 0);
+    if (!n) return;
+    gone.forEach(function (g) {
+      var e = ed.deck.list.filter(function (x) { return x[0] === g[0]; })[0];
+      e[1] -= g[1];
+      if (!e[1]) ed.deck.list.splice(ed.deck.list.indexOf(e), 1);
+    });
+    Sfx.play('card-draw', { gap: 0 });
+    ed.msg = 'Took out ' + plural(n, 'card') + '. Add ' + (n === 1 ? 'one' : n) + ' of your own to fill the deck.';
+    store();
+    drawDeck();
+    drawBadges();
+  };
   function store() {
     ed.saveFailed = !Decks.save(ed.deck);
     ed.saved = !ed.saveFailed;
