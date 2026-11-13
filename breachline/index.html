@@ -607,3 +607,7 @@ dialog .btns { justify-content: flex-start; }
 <script src="tutorial.js"></script>
 <script src="help.js"></script>
 <script src="ui.js"></script>
+<script>
+// Outside Claude, sw.js makes the browser check for a newer version of the game's files on every visit.
+if ('serviceWorker' in navigator && !(window.claude && window.claude.use)) navigator.serviceWorker.register('sw.js').catch(function () {});
+</script>
