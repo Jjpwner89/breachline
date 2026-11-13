@@ -223,6 +223,28 @@ function randomField(r, ids) {
     if (run.chapter !== last || E.deckProblems(run.list).length || E.deckSize(run.spare) !== last) wrong.push('deck after rewards: ' + E.deckProblems(run.list).join() + ', reserve ' + E.deckSize(run.spare));
   }
   check('rewards offer three legal cards, one from the beaten enemy', !wrong.length, wrong.length ? wrong[0] : offers + ' offers');
+  // Each campaign's first two slots come from its two reward lists, or 30% of the time from anywhere in its colour.
+  // Never a neutral card.
+  var slots = 0, listed = 0, odd = [];
+  Campaign.ORDER.forEach(function (sid) {
+    var st = Campaign.STORIES[sid], lists = Campaign.REWARDS[sid];
+    if (!lists) { odd.push(sid + ' has no reward lists'); return; }
+    lists.double.concat(lists.fresh).forEach(function (id) { var c = E.CARDS[id]; if (!c || c.colour !== st.colour) odd.push(sid + ' list has ' + id); });
+    for (var seed = 1; seed <= 150; seed++) {
+      Campaign.begin(sid, 'bot', seed);
+      for (var ch = 0; ch < last; ch++) {
+        var o = Campaign.finish(0).offer;
+        o.cards.forEach(function (id) { if (E.CARDS[id].colour === 'N') odd.push(id + ' is neutral'); });
+        [lists.double, lists.fresh].forEach(function (list, i) {
+          slots++;
+          if (E.CARDS[o.cards[i]].colour !== st.colour) odd.push(sid + ' slot ' + i + ' is ' + o.cards[i]);
+          if (list.indexOf(o.cards[i]) >= 0) listed++;
+        });
+        Campaign.take(o.cards[seed % 3]);
+      }
+    }
+  });
+  check('reward slots come from the campaign\'s lists about 70% of the time, never neutral', !odd.length && listed / slots > 0.62 && listed / slots < 0.8, odd.length ? odd[0] : Math.round(100 * listed / slots) + '% of ' + slots + ' slots');
   check('a run never changes the starter deck', JSON.stringify(E.DECKS.white.list) === starter);
   (function () {
     Campaign.begin('vigil', 'bot', 7);

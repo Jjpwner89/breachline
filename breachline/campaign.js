@@ -24,7 +24,7 @@ var Campaign = (function () {
         {
           id: 'ford', title: 'The ford', x: 16, y: 75,
           text: 'Cinder Clan raiders hold the ford. They took a vote on you before you arrived.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 15], ['goblin', 3], ['clanraiders', 3], ['raider', 1], ['sellsword', 3], ['hex', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 2]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 15], ['goblin', 3], ['clanraiders', 3], ['raider', 1], ['sellsword', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 2], ['clanoutrider', 1]] }
         },
         {
           id: 'forest', title: 'The closed road', x: 40, y: 81,
@@ -34,7 +34,7 @@ var Campaign = (function () {
         {
           id: 'pass', title: 'The pass', x: 58.5, y: 54,
           text: "The hill bands don't care what answered her. They care that you're carrying grain through their pass.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['warchief', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['raider', 3]] }
         },
         {
           id: 'gate', title: 'The lower gate', x: 30.5, y: 36,
@@ -63,12 +63,12 @@ var Campaign = (function () {
         {
           id: 'ambrel', title: 'Ambrel', x: 86, y: 76,
           text: "Someone sold the survey's instruments on the docks before dawn. The buyers are still there, and they've grown attached.",
-          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 16], ['goblin', 1], ['coalback', 2], ['sellsword', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 2], ['wildfire', 1]] }
+          enemy: { name: 'Dockside sellswords', colours: ['R'], list: [['land_r', 16], ['goblin', 1], ['coalback', 2], ['sellsword', 3], ['clanraiders', 3], ['youngsummoner', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 2], ['wildfire', 1], ['firepot', 3]] }
         },
         {
           id: 'waterworks', title: 'The waterworks', x: 62, y: 62,
           text: "The Thornwardens have opened every sluice. The lower ward is flooding, and they're waiting to see who comes.",
-          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 16], ['sapling', 3], ['saboteur', 3], ['reedcrown', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 2], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 1]] }
+          enemy: { name: 'The Thornwardens', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['saboteur', 3], ['wayfinder', 3], ['owl', 3], ['shifting', 2], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 1], ['pathguard', 2], ['thornbrake', 1], ['trapper', 1]] }
         },
         {
           id: 'farms', title: 'The hill farms', x: 38, y: 74,
@@ -102,7 +102,7 @@ var Campaign = (function () {
         {
           id: 'village', title: 'The tithe village', x: 12, y: 80,
           text: 'The tithe village has hired Cinder Clan raiders to say no on its behalf.',
-          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 1]] }
+          enemy: { name: 'Cinder Clan raiders', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 1], ['firepot', 3]] }
         },
         {
           id: 'barrows', title: 'The barrows', x: 50, y: 88,
@@ -127,7 +127,7 @@ var Campaign = (function () {
         {
           id: 'court', title: 'The court of still water', x: 50, y: 50,
           text: "An elder dragon has slept on the island for longer than anyone has kept records. It doesn't recognise the Court.",
-          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 15], ['dragon', 3], ['goblin', 1], ['coalback', 3], ['clanraiders', 3], ['youngsummoner', 3], ['hex', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
+          enemy: { name: 'The elder dragon', colours: ['R'], list: [['land_r', 15], ['dragon', 3], ['goblin', 1], ['coalback', 3], ['clanraiders', 3], ['youngsummoner', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['firepot', 3]] }
         }
       ]
     },
@@ -141,7 +141,7 @@ var Campaign = (function () {
         {
           id: 'moot', title: 'The moot', x: 14, y: 22,
           text: 'Not every band voted the same way. The ones who lost would like a rematch.',
-          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 16], ['goblin', 2], ['clanraiders', 3], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['flameblade', 3], ['scorch', 1]] }
+          enemy: { name: 'The losing bands', colours: ['R'], list: [['land_r', 18], ['goblin', 3], ['clanraiders', 3], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 2], ['flameblade', 1], ['scorch', 1], ['firepot', 1], ['martyr', 2]] }
         },
         {
           id: 'market', title: 'The moving market', x: 44, y: 15,
@@ -166,7 +166,7 @@ var Campaign = (function () {
         {
           id: 'seat', title: 'The high seat', x: 70, y: 80,
           text: 'The claimant sits on the high seat in borrowed armour. He has promised everyone something.',
-          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 10], ['land_u', 3], ['knight', 2], ['cleric', 3], ['shield', 3], ['glyph', 2], ['banner', 2], ['spearman', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['sifting', 2], ['lancer', 1]] }
+          enemy: { name: "The claimant's host", colours: ['W', 'U'], list: [['land_w', 14], ['land_u', 3], ['knight', 2], ['cleric', 3], ['shield', 1], ['glyph', 1], ['banner', 1], ['spearman', 3], ['cub', 3], ['chaplain', 3], ['acolyte', 3], ['sifting', 2], ['lancer', 1]] }
         }
       ]
     },
@@ -180,7 +180,7 @@ var Campaign = (function () {
         {
           id: 'grove', title: 'The mother grove', x: 84, y: 16,
           text: "Sellswords have camped in the mother grove for the firewood. They've started on the old trees.",
-          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 15], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['hex', 3], ['firebolt', 3], ['firepot', 1], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3]] }
+          enemy: { name: 'Sellswords', colours: ['R'], list: [['land_r', 15], ['sellsword', 3], ['coalback', 3], ['youngsummoner', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['goblin', 1]] }
         },
         {
           id: 'reedways', title: 'The reedways', x: 58, y: 24,
@@ -190,7 +190,7 @@ var Campaign = (function () {
         {
           id: 'crossing', title: "The herd's crossing", x: 70, y: 52,
           text: "The Warhorde follows the herd for meat. This year they've brought giants.",
-          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['warchief', 3], ['firebolt', 3], ['hex', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['anoint', 3], ['clanraiders', 3]] }
+          enemy: { name: 'The Warhorde', colours: ['R'], list: [['land_r', 13], ['warchief', 3], ['firebolt', 3], ['firepot', 3], ['flameblade', 3], ['scorch', 3], ['clanoutrider', 3], ['anoint', 3], ['clanraiders', 3], ['goblin', 3]] }
         },
         {
           id: 'cutline', title: 'The cut line', x: 39.2, y: 41.3,
@@ -293,16 +293,38 @@ var Campaign = (function () {
       return colours.indexOf(c.colour) >= 0 && c.type !== 'land' && !c.token && c.sub !== 'Velunn' && c.cost + c.wants <= MAX_REWARD_COST && copiesOf(run, id) < E.maxCopies(id);
     });
   }
+  // Rare and legendary cards turn up more often as a campaign goes on; commons and uncommons stay steady.
+  function weight(run, id) {
+    var r = typeof Rarity !== 'undefined' ? Rarity.of(id) : 'c';
+    return r === 'c' ? 3 : r === 'u' ? 2 : 0.5 + 0.3 * run.chapter;
+  }
   function draw(run, from, out) {
     var left = from.filter(function (id) { return out.indexOf(id) < 0; });
-    if (left.length) out.push(left[Math.floor(rand(run) * left.length)]);
+    if (!left.length) return false;
+    var total = left.reduce(function (n, id) { return n + weight(run, id); }, 0), x = rand(run) * total;
+    for (var i = 0; i < left.length; i++) if ((x -= weight(run, left[i])) < 0 || i === left.length - 1) { out.push(left[i]); return true; }
   }
-  // Two cards from your own side and one from the enemy you just beat, or a land for either, so a deck can keep up its mana.
+  // Each campaign's own reward lists (creator, 2026-11-13): cards that double down on its starter's plan, and cards that
+  // open a direction the starter already hints at, so nothing needs a mechanic the deck can't use. The lists and why
+  // each card is there are in CAMPAIGN.md.
+  var REWARDS = {
+    vigil: { double: ['sergeant', 'standasone', 'muster', 'roadsquire', 'glaive', 'oathbell', 'ribbonvane'], fresh: ['carrier', 'chaplain', 'penitent', 'reliquary', 'consecrate', 'lineofdawn', 'vowkeeper'] },
+    gnosis: { double: ['fieldscholar', 'rapier', 'rimecaller', 'wardwright', 'brightlance', 'heldmoments', 'harmonic'], fresh: ['unwind', 'leaden', 'glyphwright', 'frost', 'frostbreak', 'rimedrake'] },
+    dominion: { double: ['hex', 'informant', 'ledger', 'debtblade', 'tithekeeper', 'siphon', 'hostess'], fresh: ['tender', 'barrowmark', 'scale', 'mourner', 'gravecaller', 'barrowpriest', 'ossuary'] },
+    fervor: { double: ['firepot', 'drummer', 'cinderhook', 'falchion', 'packhunter', 'rabblerouser', 'captain'], fresh: ['emberward', 'anoint', 'salamander', 'firecaller', 'cinderwake', 'kindle', 'cinderfall'] },
+    genesis: { double: ['ridgewolves', 'reedcrown', 'springmelt', 'seedheart', 'alderkin', 'channel', 'marble'], fresh: ['goblinscout', 'canopy', 'thornbrake', 'stoneopens', 'overgrowth', 'seedfall', 'ironbark'] }
+  };
+  // Each list's slot goes to any card of your colour instead 30% of the time, so runs still surprise.
+  var WILD = 0.3;
+  // One card from each of the campaign's two lists and one from the enemy you just beat, or a land for either, so a
+  // deck can keep up its mana. No neutral cards (creator, 2026-11-13).
   function makeOffer(run) {
-    var story = storyOf(run), foe = chapterOf(run).enemy.colours[0], cards = [], own = rewardable(run, [story.colour, 'N']);
-    draw(run, rewardable(run, foe === story.colour ? [] : [foe]), cards);
-    while (cards.length < OFFER && own.some(function (id) { return cards.indexOf(id) < 0; })) draw(run, own, cards);
-    cards.reverse();
+    var story = storyOf(run), foe = chapterOf(run).enemy.colours[0], cards = [], own = rewardable(run, [story.colour]), lists = REWARDS[run.story] || {};
+    [lists.double, lists.fresh].forEach(function (list) {
+      var pick = rand(run) < WILD ? own : own.filter(function (id) { return (list || []).indexOf(id) >= 0; });
+      if (!draw(run, pick, cards)) draw(run, own, cards);
+    });
+    if (foe === story.colour || !draw(run, rewardable(run, [foe]), cards)) draw(run, own, cards);
     return { cards: cards, spoils: foe === story.colour ? null : foe, lands: foe === story.colour ? [landOf(story.colour)] : [landOf(story.colour), landOf(foe)] };
   }
 
@@ -356,7 +378,7 @@ var Campaign = (function () {
   function abandon() { ended = null; write(null); }
 
   return {
-    ORDER: ORDER, STORIES: STORIES, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
+    ORDER: ORDER, STORIES: STORIES, REWARDS: REWARDS, current: current, begin: begin, storyOf: storyOf, chapterOf: chapterOf, decks: decks, saveBattle: saveBattle,
     finish: finish, take: take, swap: swap, abandon: abandon, ended: function () { return ended; }, dismiss: function () { ended = null; },
     persistent: function () { return !!store; }
   };
