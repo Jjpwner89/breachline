@@ -78,7 +78,7 @@ var Engine = (function () {
     { id: 'sifting', name: 'Sifting the shallows', type: 'spell', colour: 'U', cost: 1, wants: 1, scry: 3, scryDraw: 1, text: 'Look at the top 3 cards of your deck and put each on the top or the bottom. Then draw a card.' },
     unit('phantasm', 'Conclave phantasm', 'U', 1, 1, 2, 2, { keywords: ['Decoy'], text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
     unit('adept', 'Threshold adept', 'U', 3, 1, 2, 3, { ability: { key: 'swap', label: 'Swap' }, text: 'Ability: swap places with one of your units within 2 tiles.' }),
-    unit('examiner', 'Conclave examiner', 'U', 4, 2, 2, 4, { ability: { key: 'hold', label: 'Hold' }, text: "Ability: an enemy unit within 2 tiles can't move or attack on its next turn." }),
+    unit('examiner', 'Conclave examiner', 'U', 4, 2, 2, 3, { ability: { key: 'hold', label: 'Hold' }, text: "Ability: an enemy unit within 3 tiles can't move or attack on its next turn." }),
     unit('siegewalker', 'Brass siege-walker', 'U', 5, 2, 4, 3, { keywords: ['Longshot'], sub: 'Construct', text: "Longshot: attacks up to 3 tiles away if it hasn't moved this turn." }),
     unit('ilvane', 'Ilvane, Who Asks Twice', 'U', 7, 3, 4, 6, { keywords: ['Longshot'], sub: 'Velunn', text: "Longshot: attacks up to 3 tiles away if it hasn't moved this turn." }),
     unit('rats', 'Barrow rats', 'B', 1, 1, 1, 3, { keywords: ['Hunt'], text: 'Hunt: +2 attack against a damaged unit.' }),
@@ -839,7 +839,7 @@ var Engine = (function () {
       } else if (ab.key === 'swap') {
         if (!stuck(s, u)) s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) <= 2 && !stuck(s, a)) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'hold') {
-        s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
+        s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 3) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
       } else if (ab.key === 'zap') {
         if (!u.noAttack && !held) s.units.forEach(function (e) { if (e.owner !== pi && !e.veiled && dist(u, e) <= 2) out.push({ type: 'ability', unit: u.uid, target: e.uid }); });
       } else if (ab.key === 'exhume') {
