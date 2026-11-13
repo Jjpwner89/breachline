@@ -895,35 +895,35 @@
       "title": "Moor folk",
       "code": "PL7",
       "file": "../peoples-final-2026-11-13/03-moor-folk-final-lineup.png",
-      "status": "Final visual range",
+      "status": "Final visual reference",
       "sha256": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159"
     },
     {
       "title": "Ashborn",
       "code": "PL3D",
       "file": "../peoples-final-2026-11-13/04-made-people-final-lineup.png",
-      "status": "Final visual range",
+      "status": "Final visual reference",
       "sha256": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920"
     },
     {
       "title": "Banded folk",
       "code": "PL8B",
-      "file": "../../peoples-lore-handoff-2026-11-13/05-salt-silt-working-reference.png",
-      "status": "Current reference; developed sheet remains under visual review",
+      "file": "../peoples-final-2026-11-13/05-banded-folk-final.png",
+      "status": "Final visual reference",
       "sha256": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8"
     },
     {
       "title": "Crest folk",
       "code": "CR3",
-      "file": "../../peoples-lore-handoff-2026-11-13/06-crest-working-reference.png",
-      "status": "Current reference; developed sheet remains under visual review",
+      "file": "../peoples-final-2026-11-13/06-crest-folk-final.png",
+      "status": "Final visual reference",
       "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28"
     },
     {
       "title": "Greyhides",
       "code": "CO1",
-      "file": "../../peoples-lore-handoff-2026-11-13/07-coast-working-reference.png",
-      "status": "Current reference; developed sheet remains under visual review",
+      "file": "../peoples-final-2026-11-13/07-greyhides-final.png",
+      "status": "Final visual reference",
       "sha256": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f"
     }
   ],
@@ -1000,5 +1000,6 @@
     }
   ],
   "cleanup_record": "cleanup-plan.json",
-  "card_proposals": "../../work-in-progress/peoples-fresh-scenes-2026-11-13/card-proposals.json"
+  "card_proposals": "../../work-in-progress/peoples-fresh-scenes-2026-11-13/card-proposals.json",
+  "reference_status": "All seven current people designs finalized by creator: all final"
 }

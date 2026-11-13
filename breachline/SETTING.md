@@ -316,9 +316,9 @@ Art: [Final Moor folk lineup](art/reference-library-2026-11-06/peoples-final-202
 
 Art: [Final made-people visual range](art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png).
 
-### Developing people: Banded folk, salt and silt variants (lore 2026-11-13; art under review)
+### Included people: Banded folk, salt and silt variants (final visual design and lore, 2026-11-13)
 
-**Lore approved; visual design still under review.** One species with two variants. The creator directed that the salt and silt designs be brought closer, so a shared brow, cheeks, nose and body show the relationship, while colour, markings and modest build differences keep the variants apart. PL8B is the revised sheet and isn't final yet.
+**Accepted final visual design and lore.** One species with two variants. The shared brow, cheek, nose and body show their relationship, while colour, markings and modest build differences distinguish the variants. The creator finalized PL8B unchanged with “all final” on 2026-11-13.
 
 - **Name:** Banded folk, because both variants carry bands. The name also avoids confusion with the Saltreach, a human coastal culture.
 - **Variants:** the salt variant lives on salt flats and dry pans, and the silt variant on floodplains and river deltas. Children take their family's variant, and moving doesn't change it.
@@ -332,11 +332,11 @@ Art: [Final made-people visual range](art/reference-library-2026-11-06/peoples-f
 - **Individuals:** some hire out as guards in the cities, where their steadiness is prized.
 - **Story fit:** the Fervor campaign's salt pan ("The salt was free last year") is their land, and the Ashen Court's new price is on their salt.
 
-Art: [Working reference, PL8B](art/peoples-lore-handoff-2026-11-13/05-salt-silt-working-reference.png).
+Art: [Final reference, PL8B](art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png).
 
-### Developing people: Crest folk (lore 2026-11-13; art under review)
+### Included people: Crest folk (final visual design and lore, 2026-11-13)
 
-**Lore approved; visual design still under review.** The selected PL9.4 identity has chalk-tan skin, a swept fluted crest of bone and russet cheek marks. The creator asked for crests on the arms and body too; CR3 tests that, and the added structures are still proposals.
+**Accepted final visual design and lore.** The selected PL9.4 identity has chalk-tan skin, a swept fluted crest of bone and russet cheek marks. CR3 is the final reference, including the crests integrated into the shoulders, upper chest, upper arms and forearms. The creator finalized it unchanged with “all final” on 2026-11-13.
 
 - **Home:** limestone valleys and quarry towns.
 - **Work:** builders and stoneworkers. Many repair the old imperial roads and bridges, which are the most common imperial remains.
@@ -347,11 +347,11 @@ Art: [Working reference, PL8B](art/peoples-lore-handoff-2026-11-13/05-salt-silt-
 - **Magic:** many masons know a little practical stone magic as part of the trade. Some can be quite strong, but Crest folk aren't meaningfully more gifted than other peoples.
 - **Story fit:** Sallow Bridge could be one of their crossings.
 
-Art: [Working reference, CR3](art/peoples-lore-handoff-2026-11-13/06-crest-working-reference.png).
+Art: [Final reference, CR3](art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png).
 
-### Developing people: Greyhides (lore 2026-11-13; art under review)
+### Included people: Greyhides (final visual design and lore, 2026-11-13)
 
-**Lore approved; visual design still under review.** The creator named them Greyhides, replacing the working name Coast folk. The selected PL10.1 design has a rounded body, smooth grey hide, a broad calm face, short sturdy legs and fine hands, and no tail. CO1 is the reference sheet and isn't final yet.
+**Accepted final visual design and lore.** The creator named them Greyhides, replacing Coast folk. The selected PL10.1 design has a rounded body, smooth grey hide, a broad calm face, short sturdy legs and fine hands, with no tail. CO1 is the final reference, finalized unchanged with “all final” on 2026-11-13.
 
 - **Home:** cold northern coasts and tidal islands. They're friendly with their neighbours the Saltreach, and the two trade.
 - **Body:** large, with thick, insulated bodies for cold water. They wade and swim the tides.
@@ -364,7 +364,7 @@ Art: [Working reference, CR3](art/peoples-lore-handoff-2026-11-13/06-crest-worki
 - **Individuals:** they're rarely angry, which makes one who does lose their temper frightening at their size.
 - **Not:** divers like the Riverfolk.
 
-Art: [Working reference, CO1](art/peoples-lore-handoff-2026-11-13/07-coast-working-reference.png).
+Art: [Final reference, CO1](art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png).
 
 ### Developing people: Stonehorn
 

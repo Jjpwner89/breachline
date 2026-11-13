@@ -679,3 +679,11 @@ The creator described the lighting as dynamic without overtaking the painting an
 
 
 The creator subsequently asked whether Claude's briefs should be pared down. The assistant recommended concise identity/lore/narrative constraints from Claude, mechanics kept as separate context, and composition/light/paint handling owned by the art agent through the shared direction. This is a recommendation under discussion, not a unilateral change to Claude's skill. Some earlier overdirection came from the art agent's own dramatic-composition prompt expansion.
+
+## All current peoples reference sheets finalized (creator, 2026-11-13)
+
+The creator said “all final” after reviewing the kept collection. This finalizes Banded folk PL8B, Crest folk CR3 and Greyhides CO1 unchanged, joining KR1, GR1, PL7 and PL3D. All seven current peoples visual designs are final. The 22 paintings and 13 earlier favourites remain kept; earlier exploratory cells are not restored, and no new live card mechanics or asset replacement is inferred. The three sheets were moved unchanged into the final-peoples reference library; lore, galleries and handoffs now agree.
+
+## Shared brief-writing and art-agent workflow — 2026-11-13
+
+The creator explicitly asked to normalize how Claude writes future art briefs and how Codex responds, with the incoming additions as the next test. BRIEF_WORKFLOW.md now holds the compact format and paired responsibilities, linked from project CLAUDE.md, AGENTS.md and the current art-direction skill. Briefs keep subject, lore, intent and essential constraints; mechanics are separate context. The art agent owns composition/light and must not add compulsory spectacle or literal ability diagrams. Current rules and exact accepted selections take precedence over copied historical boilerplate. The prior handoff recommendation is now an active instruction, not merely a suggestion. This changes future workflow without rewriting finalized old briefs or installing new live card art.

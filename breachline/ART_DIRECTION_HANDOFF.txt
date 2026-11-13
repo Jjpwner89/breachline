@@ -6,7 +6,7 @@ BREACHLINE — KEPT PEOPLES ART AND ART-DIRECTION HANDOFF
 
 Current collection
 art/reference-library-2026-11-06/peoples-paintings-2026-11-13/index.html
-This is the canonical kept collection: 22 accepted final paintings, 13 earlier favourites, links to the seven current reference sheets, earlier useful/mixed reference studies, and the unresolved Oath Sentinel comparison.
+This is the canonical kept collection: 22 accepted final paintings, 13 earlier favourites, links to the seven current reference sheets, earlier useful/mixed reference studies, and the archived Oath Sentinel comparison.
 
 Latest creator instructions
 “For Stonewake, she should be looking at the guy; otherwise these are good.”
@@ -30,18 +30,18 @@ Reference and lore boundaries
 - Glimmerfolk: final GR1. Developed, decent undercity districts, not cave camps by default. G1/G2 are liked; future home scenes should reflect that context. Their glimmers vary with mood and flare when casting; eyes do not glow.
 - Moor folk: final PL7 six-person range, cold wet uplands, mostly Genesis.
 - Ashborn: final PL3D, formerly “made people.” Dominion's raised dead: ordinary scale, repaired bodies apart from old scars, weak souls rather than no souls. No giant bodies, stitches or excess scars.
-- Banded folk: one species with salt/silt variants; trade and mixed families bring them together. Cooperation in S1/S2 is especially liked. Their developed PL8B sheet remains under visual review.
-- Crest folk: limestone valleys and quarry towns; warmth is not fixed in lore. R1/R2 are liked. CR3 is the current developed body-crest reference; its sheet review remains open.
-- Greyhides: formerly Coast folk, cold northern coasts and tidal islands, thick insulated bodies. Both northern scene corrections are accepted. CO1 sheet review remains open.
+- Banded folk: one species with salt/silt variants; trade and mixed families bring them together. Cooperation in S1/S2 is especially liked. PL8B is the final visual reference.
+- Crest folk: limestone valleys and quarry towns; warmth is not fixed in lore. R1/R2 are liked. CR3 is the final body-crest reference.
+- Greyhides: formerly Coast folk, cold northern coasts and tidal islands, thick insulated bodies. Both northern scene corrections are accepted. CO1 is the final visual reference.
 
-All four final reference ranges and all three current working sheets are retained. Older mixed/open lineups also remain where they contain selected or unresolved designs. Their retention is not approval of every cell.
+All seven current people reference designs are final and retained. Older mixed/open lineups also remain where they contain selected or unresolved designs. Their retention is not approval of every cell.
 
 Kept paintings
 The final 22 comprise K1/K2, G1/G2, corrected M1/M2, D1/D2, S1/S2, R1/R2, northern O1/O2, N1, corrected N2, N3, N4, corrected N5, corrected Stonewake H2-R1, Cinder Firebrand E1 and Alderkin Elder E2. “Otherwise these are good” accepts the reviewed round; the gaze fix completes Stonewake.
 
 Thirteen earlier favourites are kept separately: old S2/S3/S4/S5/S7, the explicitly preferred S5-L1 lighting revision, C5/C6/C7/C9, A4 Veyr, the preferred Emberward revision, and original N5 as a strongly liked lighting/brushwork touchstone. Keeping original N5 does not restore its undersized bow as equipment guidance.
 
-Oath Sentinel was undecided: keep both original and revision. Original Anoint with Embers, Sanctuary Threshold and Hurled Brand remain untouched in the live art library. Do not infer dislike from pairwise ranking losses.
+Oath Sentinel's earlier original/revision comparison is retained in the archive; no new live image is selected. Original Anoint with Embers, Sanctuary Threshold and Hurled Brand remain untouched in the live art library. Do not infer dislike from pairwise ranking losses.
 
 Cleanup
 The five batches covered by this chat were cleaned. Rejected/superseded PNGs and matching generated-source copies were deleted; redundant comparison snapshots were deleted only after confirming their live originals were identical. All current live artwork, reference-library artwork, handoff reference sheets and game code were hash-protected during cleanup.
@@ -63,12 +63,15 @@ Harmonic Burst remains id 'harmonic', type 'spell', colour 'U', cost 3, wants 1,
 Aim at a tile: 2 damage to an enemy there and 1 to each enemy next to it. Each enemy hit beside it is pushed 1 tile away.
 The proposed Stonewake definition changes its display name only; no gameplay change is proposed. No new flavour text is approved here.
 
-Recommended brief division — assistant recommendation, discussed with creator
-The creator asked whether Claude's briefs should be pared down. My recommendation is a lighter brief, not mechanics alone. Claude should supply the card's identity, lore, role in the game, one concise narrative/emotional idea, and any non-negotiable visual constraints or references. Keep mechanics separately as context, without demanding literal visualization.
+Shared brief workflow — creator-authorized, 2026-11-13
+The creator requested that the lighter brief division become the standard for Claude and Codex. The canonical process and compact template are in ../.claude/skills/art-direction/BRIEF_WORKFLOW.md. Repository CLAUDE.md and AGENTS.md route fresh chats there; the art-direction skill also links it.
 
-The art agent should choose composition, viewpoint, lighting and paint handling using the shared art direction. Avoid duplicating style prescriptions in every card brief or letting mechanics dictate the action. Habitat, anatomy, identity and required equipment are useful constraints; a forced pose, magical effect or heroic spectacle usually is not.
+Claude supplies identity, relevant lore/setting, game role, one concise visual or emotional idea, essential constraints and exact reference paths. Mechanics stay in a separate context field. Codex resolves the latest requested unfinished briefs, reads current rules and selections, and chooses composition, viewpoint, lighting and paint handling. Both preserve the distinction between accepted facts and proposals.
 
-Some earlier overdirection came from this art agent's own expansion—particularly “a clearly different dramatic composition” for every card—rather than necessarily from Claude. The workflow recommendation is not a unilateral change to Claude's brief-writing instructions. A future fresh-chat test should check whether the shared art rules transfer without attaching finished paintings merely as style examples.
+Some earlier overdirection came from this art agent's own expansion, not necessarily Claude's briefs. Avoid turning each card into a more dramatic ability demonstration. The next incoming batch tests whether the shared lighting, colour, brushwork, setting sense and appeal transfer in a fresh chat. This workflow is now active; old set briefs remain historical records.
 
 Workspace coordination
 Other chats have unrelated animal-art and flavour changes. Preserve them and exclude them from this art publication. No live gameplay files were edited by this task.
+
+Final confirmation
+The creator subsequently said “all final”. All seven current peoples reference designs are finalized, including Banded folk PL8B, Crest folk CR3 and Greyhides CO1. Their sheets now live unchanged in art/reference-library-2026-11-06/peoples-final-2026-11-13/. This settles the remaining reference-sheet reviews.

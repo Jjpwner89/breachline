@@ -16,6 +16,8 @@ Read [SETTING.md](../../../breachline/SETTING.md) for the world behind the image
 
 ## How briefs and feedback work
 
+Read [BRIEF_WORKFLOW.md](BRIEF_WORKFLOW.md) whenever writing briefs or turning them into images. It defines the shared Claude/Codex process: compact subject, lore and intent; mechanics kept separately as context; composition and lighting chosen by the art agent using these current rules. Follow its batch intake, template, reference checks and review records. Do not copy historical style boilerplate into new briefs or prompts.
+
 - The creator's latest feedback overrides every brief, old prompt and earlier rule. A brief is a starting point:
   - If its pose, framing or staging works against the direction here, redesign the presentation.
   - Keep the subject, identity and lore.
@@ -121,6 +123,7 @@ To undo it, delete this subsection.
   - **Glimmerfolk:** GR1 is the final visual design: long neck, broad ear-fans, blue face glimmers and dotted arm lines spreading toward the hands.
   - **Moor folk:** PL7 is the final visual range: long limbs and hands, furred neck/shoulder ruffs and strongly shaped faces, with all six variations retained. The original sheet is preserved unchanged; no single individual was selected.
   - **Made people:** PL3D is the final visual range, before the stronger-scarring revision. Preserve its cold pallor, ordinary scale, diminished gaze and restrained old scars; Dominion allegiance is already established.
+  - **Banded folk, Crest folk and Greyhides:** PL8B, CR3 and CO1 are now final visual references, explicitly finalized by the creator's “all final” on 2026-11-13. Preserve the unified salt/silt species, integrated head/arm/body crests, and tail-free Greyhide proportions. All seven current people references live in the final-peoples library.
   - The new peoples' homes, alignments and lore are in `breachline/SETTING.md` (2026-11-13). The creator's names: the made people are the **Ashborn**, the salt–silt folk are the **Banded folk**, and the Coast folk (CO1) are the **Greyhides**. Older records keep the old names.
   - Paint to that lore. For example:
     - Kitefolk glide but don't fly.
@@ -294,7 +297,7 @@ Every alignment uses the same painting and material rules above. These are estab
 
 **Peoples paintings finalized and cleaned (creator, 2026-11-13; latest):**
 - The current 22 paintings are accepted. Stonewake H2-R1 completes the only requested final change: the caster looks toward the armoured man's face. M1/M2 anatomy, northern O1/O2, barrier-free N2, full-sized N5, and E1/E2 are retained as reviewed.
-- Keep the 13 earlier favourites, all final/current reference sheets and useful mixed/open reference studies. Oath Sentinel remains undecided; both views stay. Species-sheet approval boundaries in SETTING.md are unchanged.
+- Keep the 13 earlier favourites and useful mixed/open reference studies. The creator's subsequent “all final” finalizes all seven current peoples reference designs, including Banded folk PL8B, Crest folk CR3 and Greyhides CO1. Oath Sentinel's earlier comparison stays archived; no new live variant is selected.
 - Rejected and superseded art from this conversation's five peoples/comparison batches, and matching generated-source copies, were deleted at the creator's request. Preserve their prompts and decision records; do not restore deleted images from historical entries.
 - Canonical collection: `breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/index.html`. The collection manifest and cleanup record identify what remains.
 - The creator explicitly authorized commit, merge and push of this art collection and guidance. This does not install the images into live cards or establish new card mechanics.
