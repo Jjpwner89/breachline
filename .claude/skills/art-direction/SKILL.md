@@ -110,15 +110,22 @@ To undo it, delete this subsection.
   - Animal-headed peoples are allowed. Don't mention head type to the image model either way.
   - A profession or alignment shown in one image does not define a whole people.
 - **Accepted peoples:**
+  - **Kitefolk:** KR1 is the final visual design: slender finger-braced gliders with mottled membranes, an extreme angular face and long pointed nose.
+  - **Glimmerfolk:** GR1 is the final visual design: long neck, broad ear-fans, blue face glimmers and dotted arm lines spreading toward the hands.
+  - **Moor folk:** PL7 is the final visual range: long limbs and hands, furred neck/shoulder ruffs and strongly shaped faces, with all six variations retained. The original sheet is preserved unchanged; no single individual was selected.
+  - **Made people:** PL3D is the final visual range, before the stronger-scarring revision. Preserve its cold pallor, ordinary scale, diminished gaze and restrained old scars; Dominion allegiance is already established.
+  - Their final reference sheets and short handoffs live in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`. These accept the designs, not universal jobs, cultures or allegiance.
   - **Riverfolk:** fin ears, neck gills, subdued scales. They work in waterworks and live in small settlements. They're generally less privileged, and they never dive for mana-stones.
   - **Saltreach:** a human coastal culture, with rugged, weathered, mildly sunburnt skin, oiled wool and practical sea gear.
 
-  Both live in `breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/`, with short descriptions.
-- **The made people:** always Dominion, whole and alive, and not undead. Their joins healed long ago: no thread stitches, bolts, rot or lab clichés. They need a clearly made silhouette. Their look and name are still open.
+  Riverfolk and Saltreach live in `breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/`, with short descriptions.
+- **The made people:** PL3D is the final visual design, explicitly finalized on 2026-11-13. Preserve its ordinary adult scale, lean or average bodies, cold pallor, hollow facial planes, diminished gaze and restrained old scars unchanged. PL3E’s stronger scarring went too far and is rejected. They are always Dominion, with a raised-from-death appearance informed by the cost of diminished revival. No soul or a weak soul remain possibilities, not settled lore; the final name and relationship to earlier Imperial shaping remain open. No thread stitches, bolts or laboratory clichés.
 - **Rejected people concepts:** don't restore these without a new request.
   - Scions (too human)
   - Graftkin and both made-people tests
-  - Glimmerfolk, Kitefolk and Cairnfold
+  - Cairnfold
+  - the old round 12 Glimmerfolk and Kitefolk paintings (superseded by final KR1 and GR1 visual references)
+  - PL3E made-people scarring revision; too much scarring, superseded by final PL3D
   - Mourncaps and Lichenkin
   - ravenfolk, badgerfolk, mothfolk, the mineral tripod and rhinoceros folk
   - Opaline Kin (style reference only, never a people)
@@ -273,8 +280,8 @@ These are established palette options, not uniforms.
 Round 13's 16 rejects may come back once this approach works.
 
 **Made people:**
-- Run a lineup sheet next.
-- Lessons so far: Scions were too human, while G4 (four arms) and G5 (beast parts) were closer but not right.
+- PL3D is final: preserve the original six-variation sheet unchanged. The stronger-scarring PL3E revision is rejected.
+- Dominion allegiance is established; the name, origin and possible weak or absent soul remain open.
 
 **Older studies still marked pending in HISTORY.md:** these may be stale; ask the creator before relying on them.
 - Black Enamel, Open Road

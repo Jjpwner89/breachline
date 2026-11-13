@@ -1,3 +1,6 @@
+LATEST FINAL PEOPLES REFERENCES — 2026-11-13
+KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk and PL3D made people are final visual designs. Their unchanged PNGs, exact prompts and handoffs are in peoples-final-2026-11-13/. PL3D is the original before extra scarring; PL3E is rejected. Made people are Dominion; soul state and precise origin remain open. Other depicted clothing, jobs and cultures are examples, not universal rules.
+
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 

@@ -240,6 +240,30 @@ Their culture, faith and history beyond this remain open.
 
 Art: [Exploration sheet](art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png).
 
+### Included people: Kitefolk (final visual design, 2026-11-13)
+
+**Accepted visual design; working name.** KR1 is the creator's final Kitefolk reference. It shows slender, long-limbed people with mottled gliding membranes supported by elongated outer fingers, sharply angular faces and a long pointed nose.
+
+The highland gliding concept and this visual anatomy are the design basis. The pictured individual's age, clothing and hair are examples, not universal traits; culture, allegiance and detailed biology remain open.
+
+Art: [Final Kitefolk reference](art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png).
+
+### Included people: Glimmerfolk (final visual design, 2026-11-13)
+
+**Accepted visual design; working name.** GR1 is the creator's final Glimmerfolk reference. It shows very slender bodies, long necks, broad soft ear-fans and blue luminous freckles on matte dark skin; dotted lines along the arms spread into denser clusters toward wrists and hands.
+
+The tunnel-dwelling concept and this visual anatomy are the design basis. The eyes do not glow; pictured clothing, occupations, culture, allegiance and further biological rules remain open.
+
+Art: [Final Glimmerfolk reference](art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png).
+
+### Included people: Moor folk (final visual design, 2026-11-13)
+
+**Accepted visual design; working name.** The creator finalized PL7, the six-variation Moor folk sheet. It shows long limbs and hands, furred neck and shoulder ruffs, and strongly shaped yet setting-appropriate faces, with variation in build, age, fur coverage and facial planes.
+
+The existing sheet is preserved unchanged as the accepted visual range; the creator did not pick one individual as the sole template. Clothing, occupation, culture, allegiance and detailed biology remain open.
+
+Art: [Final Moor folk lineup](art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png).
+
 ### Developing people: Stonehorn
 
 **Developing.** An ibex-inspired people with genuinely caprine faces, swept-back horns, grasping hands and sure-footed cloven lower legs. The bridgekeeper wears practical clothes and repairs a crossing, suggesting a person with a place in everyday society.
@@ -248,15 +272,16 @@ The creator liked this design least in the first creature batch. Retain the entr
 
 Art: [Bridgekeeper](art/concepts/stonehorn-bridgekeeper.png).
 
-### Proposed people: the made people (name to be decided, 2026-11-13)
+### Included people: the made people (final visual design; name to be decided, 2026-11-13)
 
-**Proposed; the creator picked this concept.** A people bred or shaped by the Empire for war, tied to its forbidden research. The creator described them as like Dominion's undead but more substantive: whole living bodies and minds rather than partial souls in partial bodies.
+**Accepted visual design.** The creator finalized PL3D, the original six-person raised-dead lineup, before the added-scarring revision. Preserve that sheet unchanged: ordinary adult scale, lean or average bodies, cold pallor, hollow facial planes, diminished gazes and restrained old healed scars. The whole visual range is accepted; no individual was singled out.
 
-- **Alignment (creator, 2026-11-13):** Dominion only, always. None of them belong to any other alignment, and they carry a bad reputation everywhere else.
-- **Name:** Graftborn was close but not final. The first art tests, Scions (too human) and Graftkin, were both rejected on 2026-11-13; a lineup sheet of very different takes comes next. The look needs a clearly made silhouette.
-- **Open:** their final name, look, numbers, how much of the Empire's shaping still shows, and whether any of the old research survives.
+- **Alignment:** Dominion only, always, with a bad reputation elsewhere. The appearance draws on Dominion's willingness to accept diminished revival despite its cost.
+- **Scarring:** PL3E went too far. Use the restraint of PL3D, not the later stronger scars.
+- **Soul:** no soul or a weak soul remain the creator's tentative possibilities, not established metaphysics. This design does not prescribe the soul state or appearance of every revived person.
+- **Name and origin:** Graftborn was close but not final. Numbers, precise origin, relationship to the earlier Imperial shaping concept and survival of old research remain open. Clothing and individual ages on the sheet are examples, not universal requirements.
 
-No art yet.
+Art: [Final made-people visual range](art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png).
 
 ### Included animal: Coalback
 

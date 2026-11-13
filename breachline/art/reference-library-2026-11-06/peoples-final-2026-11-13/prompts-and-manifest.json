@@ -1,0 +1,248 @@
+{
+  "collection": "Final Kitefolk, Glimmerfolk, Moor folk and made-people visual designs",
+  "accepted_date": "2026-11-13",
+  "scope": "Final visual references, not universal occupations, culture or new alignment assignments.",
+  "images": [
+    {
+      "code": "KR1",
+      "kind": "reference",
+      "title": "Kitefolk · sharper face",
+      "filename": "05-kitefolk-reference-v1.png",
+      "sourceCodes": [
+        "PL1.3"
+      ],
+      "summary": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules.",
+      "takes": [
+        {
+          "code": "KR1",
+          "title": "Finger-braced Kitefolk",
+          "text": "PL1.3 anatomy, with a much longer, sharper nose and more severe facial planes.",
+          "handoff": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules.",
+          "position": 1,
+          "status": "accepted_final_visual_reference"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Breachline high-fantasy painted reference art, landscape PNG 1536 x 1024. Warm ivory EMPTY background. Traditional oil/acrylic painting with measured visible brushwork, matte skin and cloth, diffuse neutral daylight. Coherent large light/shadow shapes and precise focal anatomy; no pore-noise, waxy sheen, photography, CGI, anime, glossy animated-film or cute toy treatment. All figures adults, intelligent and clothed in plain practical neutral garments. No printed text, letters, numbers, labels, frames, border, signatures, logos or watermarks. Keep all anatomy inside the page with breathing room; hands and limb connections physically coherent. No scenery or camera blur.\nCreate ONE CHARACTER REFERENCE SHEET of a single consistent design. Left two thirds: three FULL BODY views at the same scale, front three-quarter, side and rear, complete head to feet, standing relaxed. Right third: a large three-quarter head-and-shoulders portrait above a smaller profile head and a close hand/forearm anatomy study. Do not repeat the source's six-cell lineup. Exactly the same anatomy, clothing and individual in every view.\nThe attached sheet is a design reference. Use ONLY TAKE THREE, TOP RIGHT: the older thin olive/tan man with grey swept-back hair, pointed nose, elongated outer fingers and mottled rust-tan gliding membranes. Do not borrow any other cell. The creator chose this take and requests an EVEN MORE EXTREME FACE.\nPreserve his slender wiry body proportions, long limbs, ordinary two legs and exactly two arms, the mottled membranes supported by elongated outer fingers, and plain sleeveless stone-grey vest and knee breeches. The main shape of the membrane runs from wrist/outer finger to flank/hip, folding naturally along his sides; gripping fingers remain free. In the front three-quarter full body, relax both arms slightly away from the torso so the thin membranes and supporting outer finger are clear. In the side and rear views show folded membranes.\nPush his facial BONES decisively beyond an ordinary human: noticeably elongated narrow skull, longer very sharp projecting aquiline nose like a narrow blade, high knife-edged cheekbones, deeply cut planes under cheeks and temples, narrow lower jaw and long pointed chin. Retain calm intelligent older-person character and actual skin, not a skull or mask. The face must read as strikingly nonhuman and severe in ALL views. Grey hair swept back and short grey beard can remain, but simplify them enough that the new jaw is legible. No tusks, horns, huge ears, glowing features, wounds or added accessories. Keep skin matte, parchment-olive and weathered through painted form. Preserve the selected anatomy rather than inventing a new glider.",
+      "status": "accepted_final_visual_reference",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-ecd469b8-d70d-4fb4-81af-5aaf7d0a9e8f.png",
+      "file": "01-kitefolk-final.png",
+      "review_code": "KR1",
+      "revision": 1,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png"
+      ],
+      "creator_note": "Final visual design · accepted by the creator",
+      "sha256": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
+      "width": 1536,
+      "height": 1024,
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png": "73258a7f879e75499302b3eb5abbcb1a88e78a4bbf7680f65cc73e30ef5232ef"
+      },
+      "accepted_date": "2026-11-13",
+      "handoff": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules.",
+      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/prompts-and-manifest.json"
+    },
+    {
+      "code": "GR1",
+      "kind": "reference",
+      "title": "Glimmerfolk · denser light",
+      "filename": "06-glimmerfolk-reference-v1.png",
+      "sourceCodes": [
+        "PL2.6",
+        "PL2.4"
+      ],
+      "summary": "Final Glimmerfolk visual design: extremely slender bodies, long necks, broad soft ear-fans and blue luminous freckles over matte dark skin. Ordered dots run along the arms and spread into dense clusters toward the wrists and hands; occupations, culture and detailed biology beyond the accepted visual direction remain open.",
+      "takes": [
+        {
+          "code": "GR1",
+          "title": "Deep-listener Glimmerfolk",
+          "text": "PL2.6 proportions, denser face glimmers, dotted arm lines that spread toward hands.",
+          "handoff": "Final Glimmerfolk visual design: extremely slender bodies, long necks, broad soft ear-fans and blue luminous freckles over matte dark skin. Ordered dots run along the arms and spread into dense clusters toward the wrists and hands; occupations, culture and detailed biology beyond the accepted visual direction remain open.",
+          "position": 1,
+          "status": "accepted_final_visual_reference"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Breachline high-fantasy painted reference art, landscape PNG 1536 x 1024. Warm ivory EMPTY background. Traditional oil/acrylic painting with measured visible brushwork, matte skin and cloth, diffuse neutral daylight. Coherent large light/shadow shapes and precise focal anatomy; no pore-noise, waxy sheen, photography, CGI, anime, glossy animated-film or cute toy treatment. All figures adults, intelligent and clothed in plain practical neutral garments. No printed text, letters, numbers, labels, frames, border, signatures, logos or watermarks. Keep all anatomy inside the page with breathing room; hands and limb connections physically coherent. No scenery or camera blur.\nCreate ONE CHARACTER REFERENCE SHEET of a single consistent design. Left two thirds: three FULL BODY views at the same scale, front three-quarter, side and rear, complete head to feet, standing relaxed. Right third: a large three-quarter head-and-shoulders portrait above a smaller profile head and a close hand/forearm anatomy study. Do not repeat the source's six-cell lineup. Exactly the same anatomy, clothing and individual in every view.\nThe attached sheet is a design reference. Select TAKE SIX, BOTTOM RIGHT ONLY for the person: very tall extremely narrow adult, long neck, long hands and arms, dark slate-brown skin, large soft ear-fans, small ordinary nonluminous eyes, no hair. Preserve precisely this individual, facial structure, ear shapes, extreme slender body proportions and the simple sleeveless neutral wrap tunic and cropped trousers. Do NOT import the enlarged eyes or human face of take four.\nThe creator wants denser luminous freckles LIKE TAKE FOUR (BOTTOM LEFT), but keep SIX's BLUE colour and recognizable vertical dotted lines. Add a clearly visible dense constellation/mask of small blue-white light points across cheeks, brow, nose and temples, at a comparable density to take four. Repeat a few groups on the ear bases and shoulders. Preserve the paired vertical dotted light trails down the long neck.\nMost important arm pattern: orderly visible dotted LINES continue DOWN the upper arm and elbow. On each lower forearm, the dots gradually BRANCH and SPREAD OUT laterally; toward the wrist and back of the hand they become a broad dense constellation rather than a single line. Maintain a readable linear spine up the arm, with scattered smaller satellite points, and denser spread at the BOTTOM of the arms. The forearm close-up must demonstrate that ordered-line-to-spreading-cluster transition. Keep luminosity unmistakable on the ivory background, each dot distinct with modest luminous edges. Skin itself stays matte and nonluminous; eyes never glow. No neon circuits, solid luminous ribbons, jewelry, tattoos or decorative costume. No stars floating off the skin. Preserve two arms, two legs and existing long fine fingers.",
+      "status": "accepted_final_visual_reference",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-ce1a0ebf-f981-4e48-aada-ec2e26d38ea2.png",
+      "file": "02-glimmerfolk-final.png",
+      "review_code": "GR1",
+      "revision": 1,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/02-glimmerfolk-lineup.png"
+      ],
+      "creator_note": "Final visual design · accepted by the creator",
+      "sha256": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea",
+      "width": 1536,
+      "height": 1024,
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/02-glimmerfolk-lineup.png": "5152df8b92671b4e638638b2777328824e2d0496e13af760574e9e2ce00b2eaf"
+      },
+      "accepted_date": "2026-11-13",
+      "handoff": "Final Glimmerfolk visual design: extremely slender bodies, long necks, broad soft ear-fans and blue luminous freckles over matte dark skin. Ordered dots run along the arms and spread into dense clusters toward the wrists and hands; occupations, culture and detailed biology beyond the accepted visual direction remain open.",
+      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/prompts-and-manifest.json"
+    },
+    {
+      "code": "PL7",
+      "title": "Moor folk · final visual range",
+      "filename": "03-moor-folk-final-lineup.png",
+      "sourceCodes": [
+        "PL5.4"
+      ],
+      "summary": "Final Moor folk visual range: long limbs and hands, furred neck and shoulder ruffs, and strongly shaped faces with variation in build, age and fur coverage. The creator accepted the existing sheet unchanged; no single individual, universal occupation, culture or alignment was selected.",
+      "takes": [
+        {
+          "code": "PL7.1",
+          "position": 1,
+          "title": "Long-shanked",
+          "text": "Closest to PL5.4: tall narrow body, dark shoulder ruff, long fingers and spreading feet.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Closest to PL5.4: tall narrow body, dark shoulder ruff, long fingers and spreading feet. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        },
+        {
+          "code": "PL7.2",
+          "position": 2,
+          "title": "Weathered brow",
+          "text": "Middle-aged woman with a shorter ruff, broad expressive brow and strong cheek planes.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Middle-aged woman with a shorter ruff, broad expressive brow and strong cheek planes. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        },
+        {
+          "code": "PL7.3",
+          "position": 3,
+          "title": "Compact moorlander",
+          "text": "Shorter deep-chested man, long forearms, dense neck fur and a calm blunt face.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Shorter deep-chested man, long forearms, dense neck fur and a calm blunt face. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        },
+        {
+          "code": "PL7.4",
+          "position": 4,
+          "title": "High cheek",
+          "text": "Lean woman with high cheekbones, a narrow projecting nose and tawny-grey cheek fur.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Lean woman with high cheekbones, a narrow projecting nose and tawny-grey cheek fur. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        },
+        {
+          "code": "PL7.5",
+          "position": 5,
+          "title": "Winter mantle",
+          "text": "Older man with pale-tipped grey ruff, longer neck and lightly furred hands.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Older man with pale-tipped grey ruff, longer neck and lightly furred hands. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        },
+        {
+          "code": "PL7.6",
+          "position": 6,
+          "title": "Smooth-faced",
+          "text": "Younger adult with a clean-faced appearance, short crown fur and a smaller continuous shoulder ruff.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "Younger adult with a clean-faced appearance, short crown fur and a smaller continuous shoulder ruff. This belongs to the accepted Moor folk visual range; clothing, culture and allegiance are not universal rules."
+        }
+      ],
+      "kind": "lineup",
+      "status": "accepted_final_visual_reference",
+      "prompt": "Use case: stylized-concept. Breachline high-fantasy painted PEOPLE design sheet. Landscape PNG 1536 x 1024, plain warm ivory empty background. SIX invisible cells in two rows of three, each with one complete adult full body plus a larger matching head-and-shoulders portrait beside it. Same scale for full bodies; varied mature personalities, ages and sexes; simple relaxed standing poses. Clear bodily proportions, visible feet and functional hands. No text, numerals, lettering, boxes, frames or signatures.\nTraditional oil/acrylic fantasy illustration, measured visible brushwork and nuanced matte colour. Soft neutral daylight. Natural wool, linen and leather clothing with simple medieval-fantasy closures, modest and practical; anatomy rather than equipment carries variation. Quiet character and worldly intelligence.\nLATEST CREATOR DIRECTION: keep exaggerated facial structures and unusual bodies, easing exaggeration only A LITTLE to fit grounded painted fantasy. Do NOT normalize everyone into humans. Uniqueness matters, not folding anatomy. Avoid repeated fan-like flesh folds, ridges all over bodies, science-fiction alien archetypes, black featureless oval eyes, slick bald extraterrestrial heads, rubber suits and grotesque overdesign. Features should form a coherent living person. No photorealism, CGI, anime, cute animation, glossy skin, clinical diagrams or camera blur.\n\nThe attachment is a source sheet: use ONLY BOTTOM LEFT TAKE FOUR as design continuity. Preserve its organic fur, long limbs, intelligent slightly nonhuman face and simple woven clothes. IGNORE every other cell; this is six variations around ONE people, not six unrelated species. Maintain a restrained recognisably related family of skulls and bodies. Two arms and two legs each, no tails, scales, skin pleats or gliding features. Exaggerated cheekbones, brow, nose and mouth shapes may remain, eased only slightly from the source.\nTOP LEFT: closest to source, adult man with long slim legs and arms, thick charcoal-grey shoulder/neck ruff, subtle face fur, long narrow face and long splayed toes; knee-length plain wool tunic.\nTOP MIDDLE: adult woman, slightly shorter build, cropped ruff down to upper chest, broad expressive brow and squarish cheekbones, tapered chin, tawny charcoal fur; plain tunic and woven belt.\nTOP RIGHT: middle-aged man, compact deep-chested build, long forearms and hands, a broad blunt face with small perceptive eyes, dense short dark neck fur; simple grey sleeveless tunic over naturally furred shoulders.\nBOTTOM LEFT: lean adult woman, high cheekbones, long narrow nose and alert mouth, longer legs, tawny-grey cheek fur merging into short ruff; plain fitted but practical wool tunic.\nBOTTOM MIDDLE: elderly man, longer neck and pale-tipped grey ruff, slightly bowed upper back, matte exposed facial skin with strong serene planes, lightly furred backs of hands; unadorned woven clothes.\nBOTTOM RIGHT: younger adult of mature age with minimal facial fur, short close crown fur, smooth strong expressive face and a smaller continuous shoulder ruff, average build with slightly long hands and shins; practical linen tunic.\nEach variation must remain clearly PL5.4-related, with fur treated in broad painted locks, not individual hair detail everywhere. No new giant size, claws or fangs.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-3800bbbf-be56-4939-9cbb-7706fce1b99f.png",
+      "file": "03-moor-folk-final-lineup.png",
+      "review_code": "PL7",
+      "revision": 1,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/09-new-peoples-lineup-2.png"
+      ],
+      "creator_note": "Final visual design · accepted by the creator",
+      "sha256": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159",
+      "width": 1536,
+      "height": 1024,
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/09-new-peoples-lineup-2.png": "ff52bfee693b56a4cfea9611749d74fafcd04308c91e880eee39a88c2d6ace08"
+      },
+      "staging_file": "11-moor-folk-focused-lineup.png",
+      "accepted_date": "2026-11-13",
+      "handoff": "Final Moor folk visual range: long limbs and hands, furred neck and shoulder ruffs, and strongly shaped faces with variation in build, age and fur coverage. The creator accepted the existing sheet unchanged; no single individual, universal occupation, culture or alignment was selected.",
+      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/prompts-and-manifest.json"
+    },
+    {
+      "code": "PL3D",
+      "kind": "lineup",
+      "title": "Made people · final visual range",
+      "filename": "04-made-people-final-lineup.png",
+      "refs": [],
+      "sourceCodes": [
+        "latest_creator_direction",
+        "SETTING.md revival and soul loss"
+      ],
+      "summary": "Final made-people visual range: ordinary adult scale, cold pallor, hollow facial planes, diminished presence and restrained old scars. The original PL3D sheet is preserved unchanged; weak or absent soul and precise origin remain open.",
+      "takes": [
+        {
+          "code": "PL3D.1",
+          "position": 1,
+          "title": "Cold return",
+          "text": "A lean man with drained grey-olive skin, blue-grey lips and a fixed distant gaze.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "A lean man with drained grey-olive skin, blue-grey lips and a fixed distant gaze. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        },
+        {
+          "code": "PL3D.2",
+          "position": 2,
+          "title": "After the wound",
+          "text": "A compact man with a closed old throat scar, sunken face and uneven bodily tension.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "A compact man with a closed old throat scar, sunken face and uneven bodily tension. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        },
+        {
+          "code": "PL3D.3",
+          "position": 3,
+          "title": "Thin remnant",
+          "text": "A spare older man with taut ash-brown skin and the stillness of an incompletely restored body.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "A spare older man with taut ash-brown skin and the stillness of an incompletely restored body. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        },
+        {
+          "code": "PL3D.4",
+          "position": 4,
+          "title": "Diminished return",
+          "text": "An adult woman with cold mottled pallor, a faintly clouded eye and an impassive expression.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "An adult woman with cold mottled pallor, a faintly clouded eye and an impassive expression. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        },
+        {
+          "code": "PL3D.5",
+          "position": 5,
+          "title": "Restored frame",
+          "text": "An average-built man with healed marks, muted lividity and a heavy, unresponsive posture.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "An average-built man with healed marks, muted lividity and a heavy, unresponsive posture. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        },
+        {
+          "code": "PL3D.6",
+          "position": 6,
+          "title": "Late return",
+          "text": "A thin man with dark fingertips, hollow cheeks and a quiet gaze that seems barely present.",
+          "status": "accepted_final_visual_reference",
+          "handoff": "A thin man with dark fingertips, hollow cheeks and a quiet gaze that seems barely present. This is part of the accepted PL3D visual range for Dominion; the possible weak or absent soul remains unresolved."
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Breachline fantasy painted concept/reference sheet, 1536 x 1024 landscape PNG. Warm ivory EMPTY backdrop. Traditional oil and acrylic fantasy painting with measured visible brushwork, matte skin and cloth, coherent diffuse daylight, sharp thoughtful facial detail, simpler secondary marks. Not photography, CGI, animation, cartoon, anime or glossy plastic. Keep exaggerated interesting facial planes and coherent bodies; avoid sci-fi extraterrestrial archetypes and repetitive skin folds. No writing, text, labels, numbers, borders, signatures or watermarks. All people adults, clothed simply and modestly in practical handmade neutral fantasy garments. Complete heads, hands and feet inside the composition.\nExactly SIX invisible cells, TWO ROWS of THREE. Each cell contains one full-body adult standing calmly and one larger matching head-and-shoulders portrait of that individual beside it. All full bodies at common scale. Keep clean breathing room and no drawn grid.\nSubject: six design studies for Dominion's MADE PEOPLE, now imagined visually as PEOPLE RAISED FROM THE DEAD AT A COST. The creator specifically asks for a stronger revived-dead appearance. The old constraint that they must merely look pale while wholly alive is superseded for this exploration. They may have little or no soul, but that is uncertain; express diminished presence through embodied detail, never show a soul orb or magical diagram.\nThey are ordinary adult human scale and mass, 1.55–1.9m, lean or average, five men and one woman, two arms and two legs each. No giants, superhuman bodybuilder bulk, broad hulking shoulders or enormous hands. Keep bodily integrity substantial: upright clothed bodies, recognizable individual faces and purposeful but subdued presence. They should read clearly as returned from death rather than handsome tired people or regular gothic citizens.\nVISUAL VOCABULARY: matte cold bloodless skin with subtle dependent blue-grey/violet lividity, dry grey lips, hollow cheeks, faint old CLOSED injuries, diminished warmth in gaze, one or two lightly clouded eyes, hesitant asymmetry or unusual stillness. No fluorescent eyes, no luminous veins, no rot, dripping wounds, exposed organs, skeletons, thread stitches, bolts, necromancer props or lab clichés. These are reserved painted fantasy revenants, with traces of their former personhood; avoid theatrical zombie snarls. Diffuse neutral light and plain dark Dominion clothing.\nTOP LEFT: lean adult man, long angular face, distinctly drained grey-olive skin, dark hollow eye sockets and blue-grey dry lips, intact natural eyes staring a little past the viewer, short thin dark hair. Hands hang slightly differently, simple open-neck charcoal tunic.\nTOP MIDDLE: compact ordinary-built man with a broad face, a single long CLOSED pale scar across the side of his throat suggesting a past fatal wound, sunken cheeks and muted bruised colour low on neck. Entire throat and skin intact; no wound opening. Plain dark vest; body standing stiffly, calm watchful but diminished.\nTOP RIGHT: spare older man with taut ash-brown skin, sparse hair, hollow temples, slightly collapsed chest and long bony ordinary hands; a still gaze and subtly slack lower face suggest a late return. Dark modest sleeveless tunic and trousers, no exposed bones.\nBOTTOM LEFT: adult woman, average lean body, matte cold brown-grey skin mottled by subtle violet lividity at temples and forearms, one lightly clouded but nonluminous eye, short uneven dark hair. Faint old closed marks at collarbone. Impassive slightly distant expression, plain dark long-sleeved tunic with sleeves pushed back.\nBOTTOM MIDDLE: average-built middle-aged man, entire body intact but patchy muted lividity at jaw and hands, two fine long-healed scars at cheek and chest, dull greyed skin with no healthy blush. Heavy unresponsive shoulders without bulk, slow reserved gaze, simple charcoal clothes.\nBOTTOM RIGHT: young-adult man, thin but not emaciated, ash-tan skin, darkened fingertips and lips, very hollow cheeks, old healed mark at brow, mismatched tension between left and right side of face, quiet nearly absent gaze, plain dark belted tunic.\nDifferent faces, ages and histories; shared unmistakable death-and-return appearance. Preserve dignity and unsettling fantasy atmosphere. Ordinary relaxed lineup stance, no combat or graveyard scene.",
+      "status": "accepted_final_visual_reference",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-33ac0e9d-9f4f-446d-b2c7-7fe1889068ea.png",
+      "file": "04-made-people-final-lineup.png",
+      "review_code": "PL3D",
+      "revision": 1,
+      "generation_mode": "built-in image_gen",
+      "references": [],
+      "creator_note": "FINAL · original restrained-scarring design accepted",
+      "sha256": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920",
+      "width": 1536,
+      "height": 1024,
+      "reference_sha256": {},
+      "staging_file": "21-made-people-returned-lineup.png",
+      "accepted_date": "2026-11-13",
+      "handoff": "Final made-people visual design, aligned with Dominion: ordinary-scale bodies visibly returned from death, with cold pallor, hollow facial planes, distant gazes and restrained old healed injuries. PL3D is accepted unchanged; no individual is singled out, and the name, precise origin and possible weak or absent soul remain open.",
+      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/prompts-and-manifest.json"
+    }
+  ]
+}

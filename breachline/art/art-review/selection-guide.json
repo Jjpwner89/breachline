@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T14:35:50.346179+00:00",
-  "revision": 182,
+  "updatedAt": "2026-11-13T19:18:47.363239Z",
+  "revision": 185,
   "instructions": "Consult this file with the art-direction skill before selecting references. Honor excluded=true. References with requiresCreatorConfirmation=true are proposals, not active generation references; favorites or comparison rank do not approve them. Positive votes and favorites guide selection; rankings alone never approve a reference. Alignment overrides are reference-selection labels, not lore changes. Unassigned sheets can serve multiple alignments. Existing source art and historical approvals are unchanged.",
   "references": [
     {
@@ -2355,6 +2355,58 @@
       "historicalStatus": "Accepted",
       "requiresCreatorConfirmation": false,
       "referenceRole": "Retain the understated cooperation of magic and engineering; correct skin, stone and distant detail."
+    },
+    {
+      "id": "59d28d3a443d421e9cab",
+      "title": "KR1 · Kitefolk · final visual reference",
+      "path": "reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "Explicitly finalized by the creator on 2026-11-13.",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules."
+    },
+    {
+      "id": "1cc817b6762a19c6f033",
+      "title": "GR1 · Glimmerfolk · final visual reference",
+      "path": "reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "Explicitly finalized by the creator on 2026-11-13.",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Final Glimmerfolk visual design: extremely slender bodies, long necks, broad soft ear-fans and blue luminous freckles over matte dark skin. Ordered dots run along the arms and spread into dense clusters toward the wrists and hands; occupations, culture and detailed biology beyond the accepted visual direction remain open."
+    },
+    {
+      "id": "dee70eb40d5628b0c17e",
+      "title": "PL7 · Moor folk · final visual range",
+      "path": "reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "Explicitly finalized by the creator on 2026-11-13. Entire variation sheet accepted; no single individual selected.",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Final Moor folk visual range: long limbs and hands, furred neck and shoulder ruffs, and strongly shaped faces with variation in build, age and fur coverage. The creator accepted the existing sheet unchanged; no single individual, universal occupation, culture or alignment was selected."
+    },
+    {
+      "id": "3948c418f06fb0b0a22a",
+      "title": "PL3D · Made people · final visual range",
+      "path": "reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png",
+      "alignment": "Dominion",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "Creator finalized the original PL3D sheet before the excessive-scarring revision on 2026-11-13. Entire variation sheet accepted; no individual singled out.",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Final made-people visual design, aligned with Dominion: ordinary-scale bodies visibly returned from death, with cold pallor, hollow facial planes, distant gazes and restrained old healed injuries. PL3D is accepted unchanged; no individual is singled out, and the name, precise origin and possible weak or absent soul remain open."
     }
   ],
   "favorites": [
