@@ -205,7 +205,7 @@ This catalogue brings the selected visual concepts into the setting notes at the
 | Great owls and great herd beasts | Oversized wild animals, including the great owl and elder herd bull in the current cards. They help establish the wild world's scale without automatically being divine beings. |
 | Walking saplings | Small mobile tree creatures in the current cards. Whether they are young alderkin or a separate form of life is undecided. |
 | Constructs | Made beings rather than a biological people. The Artificers create brass constructs with anatomy shaped by their work; the chorister and the little helper in the lighting experiment are visual references. Most follow narrow instructions; adaptability is possible but rare. Personality does not require consciousness. See the construct behaviour guidance below; the full range of construction methods remains open. |
-| Velunn, vampires and undead | Keep these distinct from an ordinary species list. Velunn are the diminished lesser divine beings described above; vampires are rare and subtle; undead are a condition or form of existence, not automatically a separate living race. |
+| Velunn, vampires and undead | Keep these distinct from an ordinary species list. Velunn are the diminished lesser divine beings described above; vampires are rare and subtle; undead are a condition or form of existence, not automatically a separate living race. Dominion's Ashborn are raised dead with fully repaired bodies; see their entry below. |
 
 ### Dragon intelligence and communication (creator direction, 2026-11-10)
 
@@ -240,29 +240,131 @@ Their culture, faith and history beyond this remain open.
 
 Art: [Exploration sheet](art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png).
 
-### Included people: Kitefolk (final visual design, 2026-11-13)
+### The new peoples (creator direction, 2026-11-13)
 
-**Accepted visual design; working name.** KR1 is the creator's final Kitefolk reference. It shows slender, long-limbed people with mottled gliding membranes supported by elongated outer fingers, sharply angular faces and a long pointed nose.
+The creator approved this lore on 2026-11-13, building on Codex's lore handoff (`PEOPLES_LORE_HANDOFF.txt`). Each new people is local, like the Riverfolk: they have a home region and appear only in small numbers anywhere else, which keeps most places from being cosmopolitan. Each entry gives alignments, standing, numbers and places, and a **Not** line. Any alignment or job shown on a sample character belongs to that person, not the whole people. Names are working names unless marked otherwise.
 
-The highland gliding concept and this visual anatomy are the design basis. The pictured individual's age, clothing and hair are examples, not universal traits; culture, allegiance and detailed biology remain open.
+### Included people: Kitefolk (final visual design and lore, 2026-11-13)
+
+**Accepted visual design; working name.** KR1 is the creator's final Kitefolk reference. It shows slender, long-limbed people with mottled gliding membranes supported by elongated outer fingers, sharply angular faces and a long pointed nose. The pictured individual's age, clothing and hair are examples, not universal traits.
+
+- **Home:** high mountain villages built at cliff edges, where a launch is a short walk from the door.
+- **Alignments:** mostly Vigil, around high shrines and the old imperial passes, and Fervor, in free mountain bands.
+- **Gliding:** they glide but can't fly. They need height and wind, and they walk back up. Gliding is how they travel, not how they fight.
+- **Work:** courier is one common job; most Kitefolk herd and farm terraces.
+- **Not:** fliers, or a people of messengers.
+- **Village life:** small clan villages where each family keeps its own launch ledge. A child's first long glide marks growing up.
+- **Conflict:** Vigil Kitefolk guard the high shrines while Fervor Kitefolk bands charge tolls on the same passes, so one people stands on both sides of a road.
+- **Magic:** no special gift. Their wind-working is a learned tradition, not biology.
+- **Individuals:** some can't glide well, from injury or build, and live below. Others leave for the lowlands.
+- **Story:** keep them out of the current campaign stories (creator, 2026-11-13).
 
 Art: [Final Kitefolk reference](art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png).
 
-### Included people: Glimmerfolk (final visual design, 2026-11-13)
+### Included people: Glimmerfolk (final visual design and lore, 2026-11-13)
 
-**Accepted visual design; working name.** GR1 is the creator's final Glimmerfolk reference. It shows very slender bodies, long necks, broad soft ear-fans and blue luminous freckles on matte dark skin; dotted lines along the arms spread into denser clusters toward wrists and hands.
+**Accepted visual design; working name.** GR1 is the creator's final Glimmerfolk reference. It shows very slender bodies, long necks, broad soft ear-fans and blue luminous freckles on matte dark skin; dotted lines along the arms spread into denser clusters toward wrists and hands. The eyes don't glow.
 
-The tunnel-dwelling concept and this visual anatomy are the design basis. The eyes do not glow; pictured clothing, occupations, culture, allegiance and further biological rules remain open.
+- **Home:** the undercity, the old city that a newer one was built over, the way Paris sits on its catacombs. They live in certain districts of Ambrel and of a few other cities. Their undercity is developed and decent, not a place to hide in caves.
+- **Alignments:** mostly Gnosis, with some Genesis in wild caves.
+- **Standing:** they live a little apart, but they aren't looked down on the way the Riverfolk are. Most people are at ease meeting one.
+- **Numbers:** they live long lives and have few children, so there are far fewer of them than humans and not many are seen around.
+- **Community:** tight-knit and fairly conservative. Some of the young are precocious and restless.
+- **Conflict:** at the undercity's edges, where it gives way to sewers and stranger, unsafe places underground. They have no quarrel with the city above.
+- **Built for the dark:** their glow and their very sharp hearing both come from living underground, and together they make Glimmerfolk excellent at finding their way through it.
+- **The glimmers:** brighten and dim with mood, and they can signal to each other by light in the dark. This is their biology, not a spell. Every pattern is unique, and Glimmerfolk recognise each other by it.
+- **Magic:** they have some attunement, and some study at Ambrel's university. Their glimmers flare when they cast, so a Glimmerfolk mage can't hide their spellcasting.
+- **Not:** a sound-magic people. Their hearing is biology, so it shouldn't become a way around Gnosis's limit on sound cards.
+- **Glimmer double:** the Lantern Conclave spell keeps its name. The creator isn't worried about it implying anything about Glimmerfolk.
 
 Art: [Final Glimmerfolk reference](art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png).
 
-### Included people: Moor folk (final visual design, 2026-11-13)
+### Included people: Moor folk (final visual design and lore, 2026-11-13)
 
-**Accepted visual design; working name.** The creator finalized PL7, the six-variation Moor folk sheet. It shows long limbs and hands, furred neck and shoulder ruffs, and strongly shaped yet setting-appropriate faces, with variation in build, age, fur coverage and facial planes.
+**Accepted visual design; working name.** The creator finalized PL7, the six-variation Moor folk sheet. It shows long limbs and hands, furred neck and shoulder ruffs, and strongly shaped yet setting-appropriate faces, with variation in build, age, fur coverage and facial planes. The sheet is preserved unchanged as the accepted visual range, and no one individual is the sole template.
 
-The existing sheet is preserved unchanged as the accepted visual range; the creator did not pick one individual as the sole template. Clothing, occupation, culture, allegiance and detailed biology remain open.
+- **Home:** cold, wet uplands of peat moor and heath. This keeps them apart from the Riverfolk, who live on lowland rivers and marshes.
+- **Alignments:** mostly Genesis.
+- **Standing:** they keep to their own communities and are wary of outsiders, much as lion folk keep to themselves.
+- **The moor:** only locals know the safe paths across the bog.
+- **Life:** a simpler people living in scattered steadings, cutting peat. Families gather at seasonal moots.
+- **Conflict:** lowlanders want to drain the moors for farmland, and Moor folk refuse.
+- **Magic:** little formal schooling. Their mages are apprenticed or self-taught bog-workers.
+- **Individuals:** young Moor folk who leave often become paid guides, since they're the only people who can cross the moor safely.
+- **Story fit:** no current campaign chapter needs them.
 
 Art: [Final Moor folk lineup](art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png).
+
+### Included people: the Ashborn (final visual design and lore, 2026-11-13)
+
+**Accepted visual design; name chosen by the creator.** The Ashborn are the people earlier called the made people. The creator finalized PL3D, the original six-person raised-dead lineup, before the added-scarring revision. Preserve that sheet unchanged: ordinary adult scale, lean or average bodies, cold pallor, hollow facial planes, diminished gazes and restrained old healed scars. The whole visual range is accepted; no individual was singled out. PL3E's stronger scarring went too far.
+
+- **What they are:** Dominion's dead, raised long after death and given magical energy for strength. They are made from the dead, not born. This replaces the earlier idea of a people bred by the Old Empire. Dominion's method traces back to forbidden imperial research.
+- **Body and soul:** their bodies are fully repaired, apart from old scars, and only the soul is diminished. That makes them more substantial than the Gravebound's zombies, which are partial in both body and soul.
+- **Soul:** a weak soul, not no soul. The setting already says that even a zombie keeps part of its soul. How much is lost can differ from person to person.
+- **Who they were:** anyone Dominion can claim, including its own soldiers, executed prisoners and village dead. Dominion doesn't ask.
+- **Numbers:** they can't have children, so there are only as many as Dominion makes.
+- **Drawing life:** some Ashborn are made so they can draw life force from others, in a vampiric way. This isn't common, and most Ashborn are in a wretched position, but such an Ashborn can steal life. It's one of the many ways Dominion spends the souls and life it tithes.
+- **Standing:** usually low. Dominion is cruel to its own, and the Ashborn are spent like any other resource. Very rarely one rises to real power, the way some enslaved people rose high in the Ottoman Empire, but nobody would choose to be Ashborn.
+- **Life:** they have no community of their own. They're kept in barracks and listed in ledgers as the Court's property. Some keep scraps of their old lives, such as a habit or a name.
+- **How much survives:** depends on how long they were dead before being raised. Raised early, they're mostly themselves; raised late, they're nearly blank.
+- **Conflict:** families under Dominion sometimes recognise their dead among the Ashborn. Vigil and Genesis both see them as dead who should be put to rest: Vigil because souls should rest, Genesis because death should reclaim the body.
+- **Magic:** a weak soul makes ordinary spellcasting hard. Their power is whatever Dominion put into them.
+- **Alignment:** Dominion only, always. They serve the Ashen Court. Outside Dominion, people treat them as walking dead.
+- **Not:** stitched laboratory constructs or giant ogres.
+- **Name:** Ashborn (creator, 2026-11-13), chosen over Graftborn, Afterborn, Twiceborn, the Returned and the Mustered.
+
+Art: [Final made-people visual range](art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png).
+
+### Developing people: Banded folk, salt and silt variants (lore 2026-11-13; art under review)
+
+**Lore approved; visual design still under review.** One species with two variants. The creator directed that the salt and silt designs be brought closer, so a shared brow, cheeks, nose and body show the relationship, while colour, markings and modest build differences keep the variants apart. PL8B is the revised sheet and isn't final yet.
+
+- **Name:** Banded folk, because both variants carry bands. The name also avoids confusion with the Saltreach, a human coastal culture.
+- **Variants:** the salt variant lives on salt flats and dry pans, and the silt variant on floodplains and river deltas. Children take their family's variant, and moving doesn't change it.
+- **Alignments:** mostly Fervor, in free caravan bands on the salt roads, with some Genesis on the floodplains.
+- **Temperament:** very independent, strong, hardy and aggressive, but never reckless. An orc or goblin might fly into a rage and wreck things for the joy of it; Banded folk don't.
+- **Trade:** salt off the pans and grain off the floodplains bring the two variants together on the salt roads.
+- **Caravans:** each is a family band, and they elect the head of the caravan.
+- **Mixed families:** a salt–silt couple's children can be either variant, so siblings can differ.
+- **Conflict:** Warhorde bands raid their caravans, and Banded folk look down on the Warhorde's rages.
+- **Magic:** their casters are practical and travel with the caravans, reading and turning the weather. This is learned.
+- **Individuals:** some hire out as guards in the cities, where their steadiness is prized.
+- **Story fit:** the Fervor campaign's salt pan ("The salt was free last year") is their land, and the Ashen Court's new price is on their salt.
+
+Art: [Working reference, PL8B](art/peoples-lore-handoff-2026-11-13/05-salt-silt-working-reference.png).
+
+### Developing people: Crest folk (lore 2026-11-13; art under review)
+
+**Lore approved; visual design still under review.** The selected PL9.4 identity has chalk-tan skin, a swept fluted crest of bone and russet cheek marks. The creator asked for crests on the arms and body too; CR3 tests that, and the added structures are still proposals.
+
+- **Home:** limestone valleys and quarry towns.
+- **Work:** builders and stoneworkers. Many repair the old imperial roads and bridges, which are the most common imperial remains.
+- **Alignments:** Vigil, as keepers of imperial stonework, and Gnosis, as masons who use learned magic.
+- **The crest:** gains ridges with age, so elders have fuller crests.
+- **Towns:** quarry towns are organised around masons' guilds, and the trade passes down through families. Their russet cheek marks are painted on as guild or family marks.
+- **Conflict:** Vigil Crest folk restore imperial works exactly as they were, while Gnosis Crest folk want to improve them. It's a split within one people.
+- **Magic:** many masons know a little practical stone magic as part of the trade. Some can be quite strong, but Crest folk aren't meaningfully more gifted than other peoples.
+- **Story fit:** Sallow Bridge could be one of their crossings.
+
+Art: [Working reference, CR3](art/peoples-lore-handoff-2026-11-13/06-crest-working-reference.png).
+
+### Developing people: Greyhides (lore 2026-11-13; art under review)
+
+**Lore approved; visual design still under review.** The creator named them Greyhides, replacing the working name Coast folk. The selected PL10.1 design has a rounded body, smooth grey hide, a broad calm face, short sturdy legs and fine hands, and no tail. CO1 is the reference sheet and isn't final yet.
+
+- **Home:** cold northern coasts and tidal islands. They're friendly with their neighbours the Saltreach, and the two trade.
+- **Body:** large, with thick, insulated bodies for cold water. They wade and swim the tides.
+- **Temperament:** hardy, simple and kind, and generally easygoing despite their size.
+- **Alignments:** Vigil and Genesis.
+- **Work:** ferry crossings and keeping the tide roads are one trade.
+- **Longhouses:** big shared longhouses where hospitality is a duty. Their friendship with the Saltreach began with taking in shipwrecked Saltreach sailors.
+- **Conflict:** their generosity gets exploited by traders and worse.
+- **Magic:** healing is the craft they value most, so the Vigil among them lean toward the Still Flame.
+- **Individuals:** they're rarely angry, which makes one who does lose their temper frightening at their size.
+- **Not:** divers like the Riverfolk.
+
+Art: [Working reference, CO1](art/peoples-lore-handoff-2026-11-13/07-coast-working-reference.png).
 
 ### Developing people: Stonehorn
 
@@ -271,17 +373,6 @@ Art: [Final Moor folk lineup](art/reference-library-2026-11-06/peoples-final-202
 The creator liked this design least in the first creature batch. Retain the entry as a working option to revisit rather than treating its current appearance as settled. That response is not a general rejection of animal-inspired peoples. No universal mountain culture, profession or alignment has been established.
 
 Art: [Bridgekeeper](art/concepts/stonehorn-bridgekeeper.png).
-
-### Included people: the made people (final visual design; name to be decided, 2026-11-13)
-
-**Accepted visual design.** The creator finalized PL3D, the original six-person raised-dead lineup, before the added-scarring revision. Preserve that sheet unchanged: ordinary adult scale, lean or average bodies, cold pallor, hollow facial planes, diminished gazes and restrained old healed scars. The whole visual range is accepted; no individual was singled out.
-
-- **Alignment:** Dominion only, always, with a bad reputation elsewhere. The appearance draws on Dominion's willingness to accept diminished revival despite its cost.
-- **Scarring:** PL3E went too far. Use the restraint of PL3D, not the later stronger scars.
-- **Soul:** no soul or a weak soul remain the creator's tentative possibilities, not established metaphysics. This design does not prescribe the soul state or appearance of every revived person.
-- **Name and origin:** Graftborn was close but not final. Numbers, precise origin, relationship to the earlier Imperial shaping concept and survival of old research remain open. Clothing and individual ages on the sheet are examples, not universal requirements.
-
-Art: [Final made-people visual range](art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png).
 
 ### Included animal: Coalback
 
