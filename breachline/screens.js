@@ -552,7 +552,7 @@ var Screens = (function () {
   function editor(deck) {
     ed = { deck: deck, pool: Decks.pool(deck.mode), peek: null, saved: deck.updated > 0, msg: '' };
     if (deck.missing) ed.msg = plural(deck.missing, 'card') + ' in this deck no longer exist' + (deck.missing === 1 ? 's' : '') + ' and were taken out.';
-    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span>' + Help.button() + '</header>' +
+    show('<div class="editor"><header class="shead"><button type="button" class="btn" ' + act('builder') + '>All decks</button><h1>Deck builder</h1><span class="hint">' + (Progress.state().unlocked ? 'Everything is unlocked, in any mix of colours.' : 'Build from the cards you own, in any mix of colours. Greyed cards are ones you don\'t have yet.') + '</span>' + DeckHelp.button() + Help.button() + '</header>' +
       '<div class="ebody">' +
       '<aside class="closeup" id="closeup" ' + act('closeZoom') + ' aria-label="Card close-up"></aside>' +
       '<section class="cards" aria-label="Cards">' +
@@ -565,7 +565,7 @@ var Screens = (function () {
         '<div class="dtop"><label class="sr" for="dname">Deck name</label><input type="text" id="dname" maxlength="40" value="' + esc(deck.name) + '"><button type="button" class="btn dclose" ' + act('closeDeck') + '>Back to cards</button></div>' +
         '<div id="dsum"></div><div class="dlist" id="dlist"></div><div class="dfoot" id="dfoot"></div></aside>' +
       '<button type="button" class="btn primary dopen" id="dopen" ' + act('openDeck') + '></button>' +
-      '</div></div>', function () { drawGrid(true); });
+      '</div>' + DeckHelp.panelHtml() + '</div>', function () { drawGrid(true); });
     drawFilters();
     drawGrid();
     drawDeck();
@@ -953,6 +953,8 @@ var Screens = (function () {
   Progress.onChange(redraw);
   return {
     menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt, online: online,
+    // For deckhelp.js: the deck being edited and its card pool, or null away from the deck builder.
+    editing: function () { return ed && byId('qm') ? ed : null; },
     // For collection.js, whose screens share this page and its click handling.
     kit: { show: show, act: act, esc: esc, symbol: symbol, plural: plural, actions: actions, root: root }
   };
