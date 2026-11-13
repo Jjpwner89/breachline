@@ -1,7 +1,7 @@
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 
-89 active PNG sheets, all 1536 x 1024.
+99 active PNG sheets, all 1536 x 1024.
 7 species sheets: three body views and six heads each.
 1 additional human sheet: eight heads, preserving the first human sheet.
 2 retained first-batch equipment sheets: Vigil and Gnosis, 12 slots each.
@@ -15,9 +15,12 @@ BREACHLINE - NEUTRAL REFERENCE LIBRARY
 approved revisions, including both cedar-roof variants and the Cobalt rapier card art.
 13 accepted round-08 paintings; Night Embassy remains outside the library.
 1 selected first Door into Snow character variant for card art.
-5 accepted round-10 paintings: glaive, root village, lion-folk envoy, garden
-construct and rising rain.
-Total: 50 head studies (14 human), 24 retained equipment design slots,
+6 accepted round-10 paintings: glaive, root village, lion-folk envoy, garden
+construct, rising rain and Velvet Stair v2.
+5 accepted people sheets from 11 November: H1-H3 human faces, dwarves and riverfolk.
+2 accepted round-09 paintings: Stonefire Shift and A Voice in the Reeds.
+2 accepted round-11 paintings: Ashwood Reserve and A Dragon Listening.
+Total: 74 head studies (38 human; creature-test portraits not counted), 24 retained equipment design slots,
 and 36 new equipment design groups awaiting review.
 
 REFERENCE USE - STARTING POINTS FOR FURTHER DESIGN
@@ -333,8 +336,8 @@ Generation prompt records, marked reconstructed briefs, source provenance, dimen
 and checksums are in prompts-and-manifest.json.
 
 CURRENT PACKAGE
-breachline-neutral-reference-library-2026-11-10-reviewed-v12.zip contains
-only the 89 active images, this guide and prompt/review records. The original first-batch
+breachline-neutral-reference-library-2026-11-13-reviewed-v13.zip contains
+only the 99 active images, this guide and prompt/review records. The original first-batch
 ZIP predates the removal review and is superseded as a current reference set.
 
 ROUND 07 REVIEW — 2026-11-09
@@ -350,6 +353,21 @@ ROUND 10 REVIEW — 2026-11-10
 Accepted: Stormglass Glaive; The Rootbound Quarter; The Ivory-Mantle Envoy;
 The Garden That Still Opens; The Rain That Rises. These are visual references,
 not automatic card selections or exhaustive faction designs.
-The goblin rider and restrained Velvet Stair bodice revisions await review.
+The 2026-11-13 review accepts Velvet Stair v2 and deletes the earlier version.
+The goblin rider revision is rejected and deleted as well.
 The rejected enormous creature at the shoreline is removed. A creature of
 that scale far out at sea remains a tentative, unconfirmed possibility.
+
+REVIEW APPLIED — 2026-11-13
+Ten additional references are accepted; 18 studies and two earlier versions are cut.
+Exact selections and permitted roles: review-decisions-2026-11-13.json.
+Gallery: REVIEW_2026-11-13.html.
+H1-H3 add 24 human faces without replacing earlier sheets. Keep Songweaver and
+Cloud-silk identities as shown; separate identity from surface-lighting references.
+Dwarves and riverfolk are accepted visual designs, not established cultures or
+alignment assignments. Rejected species paintings do not settle species existence.
+Black Enamel, Open Road remains pending in work-in-progress. Other unreviewed
+batches retain their prior statuses. No cards were chosen in this review.
+Lessons of Brass is cut as a painting; Ambrel teaching magic as a practical trade
+is retained as setting direction. Rare enduring enchantments remain possible
+despite rejection of the river-orchard painting.

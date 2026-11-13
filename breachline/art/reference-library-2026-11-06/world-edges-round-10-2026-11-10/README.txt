@@ -1,6 +1,11 @@
-BREACHLINE — ACCEPTED ROUND 10 REFERENCES
-2026-11-10
+WORLD EDGES — ROUND 10 — ACCEPTED REFERENCES
+Reviewed 2026-11-13
 
-Stormglass Glaive; The Rootbound Quarter; The Ivory-Mantle Envoy; The Garden That Still Opens; The Rain That Rises.
+Stormglass Glaive — Earlier approval retained.
+The Rootbound Quarter — Earlier approval retained.
+The Ivory-Mantle Envoy — Earlier approval retained.
+The Garden That Still Opens — Earlier approval retained.
+The Rain That Rises — Earlier approval retained.
+The Velvet Stair — Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted.
 
-These five creator-approved paintings are starting references, not exclusive designs or automatic card selections. Rider and Velvet Stair revisions remain pending outside this directory.
+Starting points for further design, not a fixed cast, faction uniform or new card selection. Exact source records: review-manifest.json.

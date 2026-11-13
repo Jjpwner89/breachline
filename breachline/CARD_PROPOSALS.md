@@ -450,7 +450,7 @@ Proposed on 2026-11-10 from your notes, and approved the same day with the chang
 | 124 | Harmonic burst | Lantern Conclave | Spell | 3 | 1 | Aim at a tile: 1 damage to every unit there and next to it, and each enemy hit is pushed 1 tile away from the centre. Cross | | Small |
 | 125 | Line of dawn | Still Flame | Spell | 3 | 1 | Aim at a column: each enemy in it takes 1 damage, and each of your units in it recovers 2 health. Column | | Small |
 | 126 | Wildfire | Cinder Clans | Spell | 6 | 2 | Sweeper: 2 damage to every unit, yours included. Fireproof and Lit units are unhurt | | Small |
-| 127 | Hour of collection | Ashen Court | Spell | 5 | 2 | Sweeper: at the end of your next turn, every unit with 2 or less health is destroyed, yours included | [Card art](art/hour-of-collection.png) | Small |
+| 127 | Hour of collection | Ashen Court | Spell | 5 | 2 | Sweeper: destroy every enemy unit with 3 or less health | [Card art](art/hour-of-collection.png) | Small |
 | 128 | Borrowed will | Lantern Conclave | Spell | 4 | 2 | Take control of an enemy unit until the end of this turn. It can move and attack, even if it has already acted, but it can't attack a summoner. Then it returns | | New: control |
 | 129 | Bought allegiance | Ashen Court | Spell | 6 | 2 | Take control of an enemy unit costing 4 or less for good. Loyal units refuse. It stays on its tile and can act from your next turn | | Small, after 128 |
 | 130 | Barrow mark | Gravebound | Enchantment | 2 | 1 | Enchant an enemy unit: when it dies, you summon a Gravebound thrall on its tile | | Small |
@@ -467,7 +467,7 @@ Why each card is the way it is:
 - **Harmonic burst:** Gnosis's cross, pushing enemies apart. It's damage and disruption in one.
 - **Line of dawn:** white's column, which heals more than it harms, to suit Vigil's low damage.
 - **Wildfire:** a true sweeper. A fire deck whose units are Lit or Fireproof can cast it and keep its own board.
-- **Hour of collection:** a delayed sweeper that clears small units, with a turn's warning. That fits the painting's countdown. It's the natural counter to flooding the board, and it hits your own small units too.
+- **Hour of collection:** a sweeper that clears every small enemy unit at once. It's the natural counter to flooding the board, and does nothing against tough units.
 - **Borrowed will:** Gnosis takes control briefly, turning an enemy unit against its neighbours. It can't strike a summoner, so it can't end a game outright.
 - **Bought allegiance:** Dominion takes control for good, at a high price.
 - **Barrow mark:** your idea. A cursed enemy comes back as your thrall when it dies.

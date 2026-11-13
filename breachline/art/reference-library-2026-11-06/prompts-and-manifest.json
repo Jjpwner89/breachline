@@ -2,9 +2,9 @@
   "project": "Breachline",
   "created": "2026-11-06",
   "method": "built-in image_gen",
-  "status": "89 active reference images, including five accepted round-10 paintings; round-10 revisions remain pending.",
-  "sheet_count": 89,
-  "head_studies": 50,
+  "status": "99 active reference images; ten newly accepted on 2026-11-13. Black Enamel, Open Road remains pending outside the library.",
+  "sheet_count": 99,
+  "head_studies": 74,
   "equipment_design_slots": 60,
   "images": [
     {
@@ -2274,13 +2274,203 @@
       "staged_file": "08-the-rain-that-rises.png",
       "key": "round10-08",
       "status": "creator accepted 2026-11-10"
+    },
+    {
+      "key": "active-scenes-and-people-2026-11-11-01",
+      "title": "H1 · Human faces A · Songweaver and new people",
+      "file": "active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "intent": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "kind": "People / face sheet",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-dcc63aae-18c7-4e25-a267-90fe8d2b5a30.png",
+      "sha256": "f81041996f4d3d76bba15cb6df0df6b15576ae1a6bfe91458a4a95fc6e572238",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
+    },
+    {
+      "key": "active-scenes-and-people-2026-11-11-02",
+      "title": "H2 · Human faces B · Cloud-silk and new people",
+      "file": "active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "intent": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
+      "kind": "People / face sheet",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-a2587e01-7a94-4b64-b3f9-08ef15893e32.png",
+      "sha256": "37cd98319b2d341fb4443121990bcf12d94be6d1cd8b87b56dda33262c9beaa0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
+    },
+    {
+      "key": "active-scenes-and-people-2026-11-11-03",
+      "title": "H3 · Human faces C · White men",
+      "file": "active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets.",
+      "intent": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets.",
+      "kind": "People / face sheet",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-5cee0937-2187-45b9-bdf4-cd3218dd2ba1.png",
+      "sha256": "486b769d52fab3197ed834ee1a0f8e35d75fe4abd189e22c5ec1477ebf44fc4a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
+    },
+    {
+      "key": "active-scenes-and-people-2026-11-11-11",
+      "title": "C5 · Creature test · Dwarves",
+      "file": "active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "intent": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "kind": "People / face sheet",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-816538f5-9967-42a0-8b7f-dc7524549ef5.png",
+      "sha256": "0226cef9e7a88ec8cafa10501d1f77a52ccf1a7319bd7df6bfca10a462833046",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
+    },
+    {
+      "key": "active-scenes-and-people-2026-11-11-12",
+      "title": "C6 · Creature test · Riverfolk",
+      "file": "active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "intent": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
+      "kind": "People / face sheet",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1c8d5-a3b4-7cb1-b59b-ef9c47130cd7/exec-beb4b849-ce4d-4a83-9202-f3cab7e83679.png",
+      "sha256": "b23cbdc5c8371f4c5a0f5b51416494b0717403960250f03f8a3320b7c38123f3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
+    },
+    {
+      "key": "power-and-wonder-round-11-2026-11-10-05",
+      "title": "The Ashwood Reserve",
+      "file": "power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Equipment construction, materials and staff still-life presentation; no card or universal item-power rule selected.",
+      "intent": "Equipment construction, materials and staff still-life presentation; no card or universal item-power rule selected.",
+      "kind": "Study",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-478df52f-de86-4364-b2df-97528528631f.png",
+      "sha256": "2508038c496aa2bbc37ec6ab22651a95cd4b9d1d27130268d26a103df2d4b6d2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
+    },
+    {
+      "key": "power-and-wonder-round-11-2026-11-10-07",
+      "title": "A Dragon Listening",
+      "file": "power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Primal intelligent dragon encounter and restrained magical communication; no new dragon taxonomy or named characters established.",
+      "intent": "Primal intelligent dragon encounter and restrained magical communication; no new dragon taxonomy or named characters established.",
+      "kind": "Study",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-7c5cb2c3-69c7-4eae-9fe9-ce612242acbe.png",
+      "sha256": "6f715f364b8fd823dfd8a4823df84fd5a8f95d7c3b4ce56f29669269f9bdff0d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
+    },
+    {
+      "key": "magic-and-industry-round-09-2026-11-10-02",
+      "title": "The Stonefire Shift",
+      "file": "magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Magic and practical industrial work; one scene, not a compulsory model for industry.",
+      "intent": "Magic and practical industrial work; one scene, not a compulsory model for industry.",
+      "kind": "Study",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-5530f677-e67d-4ca8-bdc4-a282008c883a.png",
+      "sha256": "9da32c88a3984d878d01469c84d72dc542f671013f56ea13ddc4e793051a852c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
+    },
+    {
+      "key": "magic-and-industry-round-09-2026-11-10-06",
+      "title": "A Voice in the Reeds",
+      "file": "magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Spirit presence and atmosphere; one visual example, not the only form spirits can take.",
+      "intent": "Spirit presence and atmosphere; one visual example, not the only form spirits can take.",
+      "kind": "Study",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-486c3d1c-7b70-4202-9349-173900c280c7.png",
+      "sha256": "c2ddb7c07dd5c21f0178f19e33dc1cf493ca09d07708d88563599d68f414224e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
+    },
+    {
+      "key": "world-edges-round-10-2026-11-10-07",
+      "title": "The Velvet Stair",
+      "file": "world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
+      "status": "creator_accepted",
+      "review_status": "creator_accepted",
+      "active_reference": true,
+      "review_date": "2026-11-13",
+      "permitted_reference_roles": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted.",
+      "intent": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted.",
+      "kind": "Study",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1b131-c56d-7951-93ea-a8a199e00f34/exec-c362ef63-40d3-4f6b-b7e2-3a4c3bf81739.png",
+      "sha256": "afd06e3be68a584ebdfa1b12a6e139bf85eed0539ef160d6938d371b39583673",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "provenance_manifest": "../work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json"
     }
   ],
-  "inventory_updated": "2026-11-10",
+  "inventory_updated": "2026-11-13",
   "historical_generated_sheet_count": 17,
   "retained_equipment_slots": 24,
   "new_equipment_proposal_groups": 36,
-  "current_archive": "../breachline-neutral-reference-library-2026-11-10-reviewed-v12.zip",
+  "current_archive": "../breachline-neutral-reference-library-2026-11-13-reviewed-v13.zip",
   "reference_usage_guidance": {
     "purpose": "Initial design references that support continued invention, not a closed catalog.",
     "new_characters": "Create new faces, builds, outfits, armor and weapons beyond these sheets while retaining species-defining anatomy, art direction and setting coherence.",
@@ -2316,5 +2506,9 @@
   "accepted_round7_sheets": 26,
   "accepted_round8_sheets": 13,
   "selected_card_variant_sheets": 1,
-  "accepted_round10_sheets": 5
+  "accepted_round10_sheets": 6,
+  "accepted_round9_sheets": 2,
+  "accepted_round11_sheets": 2,
+  "accepted_people_sheets_2026_11_11": 5,
+  "head_studies_scope": "Original 50 plus 24 adult human faces in H1–H3; creature-test portraits not counted."
 }

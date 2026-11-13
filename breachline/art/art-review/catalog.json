@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T05:44:30.084069+00:00",
+  "generatedAt": "2026-11-13T14:35:02.052990+00:00",
   "alignments": [
     "Vigil",
     "Gnosis",
@@ -132,11 +132,11 @@
         "81ad90a4c8c73faccf35",
         "7e574778b0ad5d22b4d2",
         "aa7bb5aed8997d91c01c",
-        "0c784db35b77337d4a47",
-        "cb4075ec9b2398e51c3c",
         "0db98d51866363a9d9be",
         "424027016a07d9ae2e78",
-        "d6c70ed4e1d3fa1e3aba"
+        "d6c70ed4e1d3fa1e3aba",
+        "0c784db35b77337d4a47",
+        "cb4075ec9b2398e51c3c"
       ],
       "usesByAlignment": {
         "Vigil": 6,
@@ -275,12 +275,12 @@
         "9f7075b5b27b5b9c54a7",
         "1b087de8edf0d0f0d4a9",
         "4f10e954fe4eb35a2c86",
+        "a01061177dd0f7c1efc6",
+        "f327fd71ebc20e8b31e9",
         "9eed716bf6aa286fff3b",
         "c2fa88770dd46d2dfa30",
         "8e6f46a6a8272375f874",
         "edfe1635b783e0e47f0c",
-        "a01061177dd0f7c1efc6",
-        "f327fd71ebc20e8b31e9",
         "8f8dc122f44c5c0af428"
       ],
       "usesByAlignment": {
@@ -5703,23 +5703,31 @@
     },
     {
       "id": "44426e13fa15295f6791",
-      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png",
+      "path": "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png",
       "title": "A Dragon Listening",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
-      "reference": false,
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
+      "reference": true,
       "refs": [],
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Communication as an encounter with a powerful, nonhuman intelligence. The connection is suggested through attention, not speech bubbles, a tame pet pose or a mandatory visible magical tether.",
+      "intent": "Primal intelligent dragon encounter and restrained magical communication; no new dragon taxonomy or named characters established.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -5732,7 +5740,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/44426e13fa15295f6791.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png"
+      "image": "../reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png"
     },
     {
       "id": "5e57977a1c593c0a8bff",
@@ -5773,12 +5781,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -5795,9 +5809,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/985f1e55a133b24f91f3.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/02-a-key-worth-a-house.png"
+      "uses": 0
     },
     {
       "id": "80d29fd1334c06692448",
@@ -5840,23 +5852,31 @@
     },
     {
       "id": "98a286b06e137c529fc7",
-      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
       "title": "A Voice in the Reeds",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
-      "reference": false,
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
+      "reference": true,
       "refs": [],
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "A conscious spirit whose presence is weak and incomplete. Tests how little physical definition can still convey a person and an encounter.",
+      "intent": "Spirit presence and atmosphere; one visual example, not the only form spirits can take.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -5869,7 +5889,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/98a286b06e137c529fc7.jpg",
-      "image": "../work-in-progress/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png"
+      "image": "../reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png"
     },
     {
       "id": "1e6c5b408b4ff1a8dedd",
@@ -5921,12 +5941,18 @@
       "alignment": "Genesis",
       "alignmentBasis": "Recorded in manifest",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [
         "1dee5d3fe26a804ee2fa"
@@ -5945,9 +5971,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/29ad105a023c79784dc6.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/04-genesis-over-the-fallen-beech.png"
+      "uses": 0
     },
     {
       "id": "8d3634f95e619458149b",
@@ -5956,12 +5980,18 @@
       "alignment": "Fervor",
       "alignmentBasis": "Recorded in manifest",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [
         "5a946b691f5406433039"
@@ -5980,9 +6010,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/8d3634f95e619458149b.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/05-fervor-through-the-squall.png"
+      "uses": 0
     },
     {
       "id": "160ce430bf31307f1009",
@@ -5991,12 +6019,18 @@
       "alignment": "Vigil",
       "alignmentBasis": "Recorded in manifest",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [
         "755c5251dd38f79cf9bd"
@@ -6015,9 +6049,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/160ce430bf31307f1009.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/06-vigil-the-road-still-holds.png"
+      "uses": 0
     },
     {
       "id": "736fc84e8cad219ebb5f",
@@ -6840,12 +6872,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -6862,9 +6900,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/31a9772f00df47890d9f.jpg",
-      "image": "../work-in-progress/magic-and-industry-round-09-2026-11-10/05-between-two-breaths.png"
+      "uses": 0
     },
     {
       "id": "1433bd1c731807509511",
@@ -7266,13 +7302,19 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
-      "reference": true,
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
+      "reference": false,
       "refs": [
         "287539f58b99f1da110f"
       ],
@@ -7280,7 +7322,6 @@
       "praise": false,
       "strong": false,
       "intent": "A familiar bird-human hybrid: alert corvid faces and usable hands; no faction assigned.",
-      "referenceCandidate": true,
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7291,9 +7332,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/9eed716bf6aa286fff3b.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/07-ravenfolk-exploration.png"
+      "uses": 0
     },
     {
       "id": "c2fa88770dd46d2dfa30",
@@ -7302,13 +7341,19 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
-      "reference": true,
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
+      "reference": false,
       "refs": [
         "287539f58b99f1da110f"
       ],
@@ -7316,7 +7361,6 @@
       "praise": false,
       "strong": false,
       "intent": "A grounded mammal hybrid with sturdy adult proportions and ordinary expressions.",
-      "referenceCandidate": true,
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7327,9 +7371,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/c2fa88770dd46d2dfa30.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/08-badgerfolk-exploration.png"
+      "uses": 0
     },
     {
       "id": "8e6f46a6a8272375f874",
@@ -7338,13 +7380,19 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
-      "reference": true,
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
+      "reference": false,
       "refs": [
         "287539f58b99f1da110f"
       ],
@@ -7352,7 +7400,6 @@
       "praise": false,
       "strong": false,
       "intent": "An intelligent insect people with nonhuman anatomy; readable variation without ornamental clutter.",
-      "referenceCandidate": true,
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7363,9 +7410,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/8e6f46a6a8272375f874.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/09-mothfolk-exploration.png"
+      "uses": 0
     },
     {
       "id": "edfe1635b783e0e47f0c",
@@ -7374,13 +7419,19 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
-      "reference": true,
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
+      "reference": false,
       "refs": [
         "287539f58b99f1da110f"
       ],
@@ -7388,7 +7439,6 @@
       "praise": false,
       "strong": false,
       "intent": "A distinctly nonhuman intelligent form: three-legged mineral anatomy, without assumed origin or construct lore.",
-      "referenceCandidate": true,
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7399,23 +7449,29 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/edfe1635b783e0e47f0c.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/10-mineral-tripod-exploration.png"
+      "uses": 0
     },
     {
       "id": "a01061177dd0f7c1efc6",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
       "title": "C5 · Creature test · Dwarves",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
       "reference": true,
       "refs": [
         "287539f58b99f1da110f"
@@ -7423,8 +7479,7 @@
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "A familiar fantasy option with ordinary adult faces and credible compact proportions.",
-      "referenceCandidate": true,
+      "intent": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7437,21 +7492,29 @@
       },
       "uses": 0,
       "thumb": "thumbs/a01061177dd0f7c1efc6.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png"
+      "image": "../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png"
     },
     {
       "id": "f327fd71ebc20e8b31e9",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
       "title": "C6 · Creature test · Riverfolk",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
       "reference": true,
       "refs": [
         "287539f58b99f1da110f"
@@ -7459,8 +7522,7 @@
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "A familiar amphibious people, with subtle aquatic anatomy and varied faces.",
-      "referenceCandidate": true,
+      "intent": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7473,7 +7535,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/f327fd71ebc20e8b31e9.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png"
+      "image": "../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png"
     },
     {
       "id": "8f8dc122f44c5c0af428",
@@ -7482,13 +7544,19 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
-      "reference": true,
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
+      "reference": false,
       "refs": [
         "287539f58b99f1da110f"
       ],
@@ -7496,7 +7564,6 @@
       "praise": false,
       "strong": false,
       "intent": "A substantial, readable animal-human hybrid with varied rhino faces and quiet personality.",
-      "referenceCandidate": true,
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -7507,9 +7574,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/8f8dc122f44c5c0af428.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/13-rhinoceros-folk-exploration.png"
+      "uses": 0
     },
     {
       "id": "2f19c6727ab846cd6c72",
@@ -10111,17 +10176,25 @@
     },
     {
       "id": "0db98d51866363a9d9be",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
       "title": "H1 · Human faces A · Songweaver and new people",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
       "reference": true,
       "refs": [
         "af29b666e4aa932b89ae"
@@ -10129,8 +10202,7 @@
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Songweaver's original identity in the ordinary face-sheet finish, plus seven varied adult faces.",
-      "referenceCandidate": true,
+      "intent": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -10143,21 +10215,29 @@
       },
       "uses": 0,
       "thumb": "thumbs/0db98d51866363a9d9be.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png"
+      "image": "../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png"
     },
     {
       "id": "424027016a07d9ae2e78",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
       "title": "H2 · Human faces B · Cloud-silk and new people",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
       "reference": true,
       "refs": [
         "af29b666e4aa932b89ae"
@@ -10165,8 +10245,7 @@
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Cloud-silk's original identity in the ordinary face-sheet finish, plus seven additional adult faces.",
-      "referenceCandidate": true,
+      "intent": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -10179,21 +10258,29 @@
       },
       "uses": 0,
       "thumb": "thumbs/424027016a07d9ae2e78.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png"
+      "image": "../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png"
     },
     {
       "id": "d6c70ed4e1d3fa1e3aba",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
       "title": "H3 · Human faces C · White men",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "People / face sheet",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json"
       ],
-      "feedback": [],
-      "status": "Pending review",
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
       "reference": true,
       "refs": [
         "af29b666e4aa932b89ae"
@@ -10201,8 +10288,7 @@
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Eight white adult men with clearly different ages, face shapes and expressions.",
-      "referenceCandidate": true,
+      "intent": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -10215,7 +10301,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/d6c70ed4e1d3fa1e3aba.jpg",
-      "image": "../work-in-progress/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png"
+      "image": "../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png"
     },
     {
       "id": "3c6d00de2f8afd3cb77f",
@@ -11282,12 +11368,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -11304,9 +11396,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/e6ad3c7498ecb6151d09.jpg",
-      "image": "../work-in-progress/magic-and-industry-round-09-2026-11-10/01-lessons-of-brass.png"
+      "uses": 0
     },
     {
       "id": "abf313191f71aecd4081",
@@ -11477,12 +11567,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -11499,9 +11595,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/a4e11289a034d94a338f.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/06-more-fire-than-hands.png"
+      "uses": 0
     },
     {
       "id": "cca5fe6b7a3ce4d4cf69",
@@ -14536,23 +14630,31 @@
     },
     {
       "id": "f4f3ac9a47325298cbe9",
-      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png",
+      "path": "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png",
       "title": "The Ashwood Reserve",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
-      "reference": false,
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
+      "reference": true,
       "refs": [],
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "A scholarly staff with replaceable stored-mana fuel. The staff is an elegant crafted object, and the spent stone is expendable; it is not a rechargeable-stone rule.",
+      "intent": "Equipment construction, materials and staff still-life presentation; no card or universal item-power rule selected.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -14565,7 +14667,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/f4f3ac9a47325298cbe9.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png"
+      "image": "../reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png"
     },
     {
       "id": "669afb5ba40641727c66",
@@ -14574,12 +14676,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -14596,9 +14704,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/669afb5ba40641727c66.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/01-the-blade-he-inherited.png"
+      "uses": 0
     },
     {
       "id": "deffd966bbbd742ec2a8",
@@ -14607,12 +14713,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -14629,9 +14741,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/deffd966bbbd742ec2a8.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/04-the-copperback-carrier.png"
+      "uses": 0
     },
     {
       "id": "7318ffec07eec708e6be",
@@ -14640,12 +14750,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -14662,9 +14778,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/7318ffec07eec708e6be.jpg",
-      "image": "../work-in-progress/magic-and-industry-round-09-2026-11-10/04-the-cost-of-the-flame.png"
+      "uses": 0
     },
     {
       "id": "94e662f5356328dd8c77",
@@ -14724,7 +14838,7 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json"
       ],
@@ -14733,9 +14847,14 @@
           "text": "Revise this rider into a somewhat larger, stronger male goblin, still clearly goblin-like rather than orc-like. Point the spear forward. The completed revision awaits creator review.",
           "source": "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json",
           "context": "Recorded feedback; may refer to an earlier version"
+        },
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
         }
       ],
-      "status": "Unreviewed",
+      "status": "Excluded",
       "reference": false,
       "refs": [
         "447c58bfa4338b91f682",
@@ -14755,9 +14874,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/51c0b58aed6145a6d659.jpg",
-      "image": "../work-in-progress/world-edges-round-10-2026-11-10/02-the-glasswind-rider-v2.png"
+      "uses": 0
     },
     {
       "id": "21c07d921d6350c0cbbd",
@@ -14860,12 +14977,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -14882,9 +15005,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/71ccfc0367db0be6bb3e.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/03-the-last-steady-hand.png"
+      "uses": 0
     },
     {
       "id": "9ec1a4111e4118db66e1",
@@ -14982,12 +15103,18 @@
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
-      "exists": true,
+      "exists": false,
       "sources": [
         "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
+      "feedback": [
+        {
+          "text": "Dropped in the creator's 2026-11-13 review. Do not restore this painting.",
+          "source": "work-in-progress/power-and-wonder-round-11-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Excluded",
       "reference": false,
       "refs": [],
       "batch": null,
@@ -15004,9 +15131,7 @@
         "Neutral": 0,
         "Unassigned": 0
       },
-      "uses": 0,
-      "thumb": "thumbs/77a21cc3e3f7f5374d5d.jpg",
-      "image": "../work-in-progress/power-and-wonder-round-11-2026-11-10/08-the-orchard-under-the-river.png"
+      "uses": 0
     },
     {
       "id": "b6bfd8d2838757cf2335",
@@ -15122,23 +15247,31 @@
     },
     {
       "id": "682f885578ac254becfb",
-      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
       "title": "The Stonefire Shift",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/review-manifest.json",
+        "reference-library-2026-11-06/prompts-and-manifest.json",
         "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json"
       ],
-      "feedback": [],
-      "status": "Unreviewed",
-      "reference": false,
+      "feedback": [
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/magic-and-industry-round-09-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
+        }
+      ],
+      "status": "Accepted",
+      "reference": true,
       "refs": [],
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Stored mana in stones supplying a substantial steam installation. The creator has confirmed that these mana-stones become permanently spent after use.",
+      "intent": "Magic and practical industrial work; one scene, not a compulsory model for industry.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -15151,7 +15284,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/682f885578ac254becfb.jpg",
-      "image": "../work-in-progress/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png"
+      "image": "../reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png"
     },
     {
       "id": "3924b88d579d75ed047d",
@@ -15283,13 +15416,15 @@
     },
     {
       "id": "3e0e185c2881a5579b3a",
-      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
       "title": "The Velvet Stair",
       "alignment": "Unassigned",
       "alignmentBasis": "No recorded alignment",
       "kind": "Study",
       "exists": true,
       "sources": [
+        "reference-library-2026-11-06/prompts-and-manifest.json",
+        "reference-library-2026-11-06/world-edges-round-10-2026-11-10/review-manifest.json",
         "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json"
       ],
       "feedback": [
@@ -15297,17 +15432,22 @@
           "text": "The court-intrigue scene is liked. Keep the long dress and apply a more restrained version of the existing fuller-bust/neckline direction. The completed revision awaits creator review.",
           "source": "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json",
           "context": "Recorded feedback; may refer to an earlier version"
+        },
+        {
+          "text": "Kept in the creator's 2026-11-13 review.",
+          "source": "work-in-progress/world-edges-round-10-2026-11-10/prompts-and-review.json",
+          "context": "Recorded feedback; may refer to an earlier version"
         }
       ],
-      "status": "Unreviewed",
-      "reference": false,
+      "status": "Accepted",
+      "reference": true,
       "refs": [
         "297040ae0f6793f24b9c"
       ],
       "batch": null,
       "praise": false,
       "strong": false,
-      "intent": "Court intrigue built around a strong human presence, gesture and divided light. A fresh character study rather than an explanation of a magical ability.",
+      "intent": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted.",
       "usedBy": [],
       "usesByAlignment": {
         "Vigil": 0,
@@ -15320,7 +15460,7 @@
       },
       "uses": 0,
       "thumb": "thumbs/3e0e185c2881a5579b3a.jpg",
-      "image": "../work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png"
+      "image": "../reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png"
     },
     {
       "id": "cd36f5a37922b1f3199e",
@@ -16826,14 +16966,17 @@
     "concepts/CONCEPT_BRIEFS_EXPANSION_2026-11-05.json",
     "concepts/CONCEPT_PROMPTS_2026-11-05.json",
     "inspiration-only/round-06-lotr-2026-11-08/review-manifest.json",
+    "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/review-manifest.json",
     "reference-library-2026-11-06/character-kits-2026-11-08/review-manifest.json",
     "reference-library-2026-11-06/concept-round-08-2026-11-09/review-manifest.json",
     "reference-library-2026-11-06/design-directions-round-06-2026-11-08/review-manifest.json",
     "reference-library-2026-11-06/equipment-character-studies-prompts.json",
     "reference-library-2026-11-06/magic-and-craft-2026-11-08/review-manifest.json",
+    "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/review-manifest.json",
     "reference-library-2026-11-06/magic-studies-round-04-2026-11-08/review-manifest.json",
     "reference-library-2026-11-06/magic-studies-round-05-2026-11-08/review-manifest.json",
     "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/review-manifest.json",
+    "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/review-manifest.json",
     "reference-library-2026-11-06/prompts-and-manifest.json",
     "reference-library-2026-11-06/world-edges-round-10-2026-11-10/review-manifest.json",
     "work-in-progress/active-scenes-and-people-2026-11-11/prompts-and-manifest.json",
