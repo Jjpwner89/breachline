@@ -13,6 +13,8 @@ The creator made the Sunmane lancer 4 / 5 and the Young summoner's Camp follower
 
 The strongest cards now are Ilvane (+17.0), Brass siege-walker (+11.0), Hill giant (+10.4), Elder dragon (+9.5), Harmonic wardwright (+8.8) and the lancer (+8.7). The weakest is still Vow of keeping (-6.9).
 
+Hour of collection was reworked into an immediate sweeper of enemy units with 3 or less health. On 2026-11-13 it lifts its games by +2.4 ± 1.1 over 3,000 paired games, at the top of the Rare band, and is played in 60% of the games it's drawn in. It does best against blue and red and nothing against white.
+
 Deck win rates moved from a range of 40% to 56% to a range of 38% to 56%. Oath of the Sunmane fell from 56% to 53%. The armed road fell from 43% to 38%, since the lancer was the only card carrying it, and it's now the weakest deck. Hearth and vow (56%) and The barrow feast (56%) lead.
 
 ## Land count experiment
@@ -92,7 +94,6 @@ Lift is from the random-deck run.
 | Sanctuary threshold | Rare, 2 | -5.0 |
 | Folded observatory | Legendary, 3 | -4.6 |
 | Oath bell | Rare, 3 | -4.5 |
-| Hour of collection | Rare, 5 | -4.2 |
 | Cinder rain | Rare, 4 | -4.0 |
 | Wildfire | Rare, 6 | -2.6 |
 | Borrowed will | Rare, 4 | -2.5 |
@@ -107,7 +108,6 @@ The share of games a card was played in, out of games it was drawn in. Most card
 | --- | --- |
 | Sudden canopy | 21% |
 | Humbling light | 39% |
-| Hour of collection | 41% |
 | Called debt | 43% |
 | Return to loam | 43% |
 | Mending the sail | 44% |
