@@ -8,6 +8,12 @@ GAME=ART.parent
 ALIGN=['Vigil','Gnosis','Dominion','Fervor','Genesis','Neutral','Unassigned']
 COLORS=dict(W='Vigil',U='Gnosis',B='Dominion',R='Fervor',G='Genesis',N='Neutral',C='Neutral')
 SKILL=GAME.parent/'.claude/skills/art-direction/SKILL.md'
+ALIASES=json.loads((BASE/'path-aliases.json').read_text()) if (BASE/'path-aliases.json').exists() else {}
+ORIGINAL_PATHS={new:old for old,new in ALIASES.items()}
+def relocated(p):
+    try:key=str(p.resolve().relative_to(ART))
+    except ValueError:return p.resolve()
+    return (ART/ALIASES[key]).resolve() if key in ALIASES else p.resolve()
 def excluded(p):
     s=str(p).lower()
     return any(t in s for t in ['/nsfw/','/selected-card-variants-','/art-review/','/originals/','/archive/','/ui/','/fx/','/maps/','before-review'])
@@ -15,15 +21,17 @@ def norm(s):return re.sub(r'[^a-z0-9]','',str(s).lower())
 def resolve(s,source):
     if not isinstance(s,str) or not re.search(r'\.(png|jpg|jpeg|webp)$',s,re.I):return None
     p=pathlib.Path(s)
-    if p.is_absolute():return p.resolve()
+    if p.is_absolute():return relocated(p)
     candidates=[source.parent/p,ART/p,GAME/p,GAME.parent/p]
     for c in candidates:
-        if c.exists():return c.resolve()
-    return candidates[0].resolve()
+        if relocated(c).exists():return relocated(c)
+    return relocated(candidates[0])
 def keypath(p):
     try:return str(p.relative_to(ART))
     except ValueError:return str(p)
-def idfor(p):return hashlib.sha256(keypath(p).encode()).hexdigest()[:20]
+def idfor(p):
+    key=keypath(p)
+    return hashlib.sha256(ORIGINAL_PATHS.get(key,key).encode()).hexdigest()[:20]
 # Card alignment is taken from the game roster, not inferred from image colour.
 engine=(GAME/'engine.js').read_text()
 ui=(GAME/'ui.js').read_text()
@@ -115,6 +123,7 @@ for pp,src,row,doc in records:
     it=items[rid]
     if row.get('kind') in ['People / face sheet','Equipment sheet','Study']:it['kind']=row['kind']
     if row.get('intent'):it['intent']=row['intent']
+    if row.get('permitted_reference_roles'):it['intent']=row['permitted_reference_roles']
     if row.get('reference_candidate') is True:
         it['reference']=True;it['status']='Pending review';it['referenceCandidate']=True
     if 'reference-library' in str(pp):it['reference']=True

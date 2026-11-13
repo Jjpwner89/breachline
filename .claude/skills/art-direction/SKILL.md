@@ -5,14 +5,13 @@ description: Holds the art direction and accumulated art feedback for Breachline
 
 # Breachline art direction
 
-## Reference role audit and new people awaiting selection (2026-11-11)
+## People reference selection and role audit (2026-11-13)
 
-The creator wants both ordinary/familiar and distinctive faces and species, including new familiar fantasy options and Magic-inspired breadth without importing lore. Three human sheets (24 adult faces, including a sheet entirely of white men), three active scenes and seven creature tests are saved in breachline/art/work-in-progress/active-scenes-and-people-2026-11-11/review.html. All new sheets remain pending creator selection; do not promote the whole batch automatically. On confirmation, add only selected exact files/individuals and their permitted reference roles to the accepted library manifest and this skill. A selected species design does not establish its culture, morality, alignment or origin.
+The creator accepted the complete H1, H2 and H3 human sheets, C5 Dwarves and C6 Riverfolk in `breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/`. H1–H3 add 24 adult faces and retain Songweaver and Cloud-silk as shown. Use them for identity, anatomy, variety and ordinary reference presentation; keep earlier human sheets too. Dwarves and riverfolk are accepted visual anatomy/design references, not automatically established cultures, alignments, origins or species canon.
 
-Latest sheen clarification: the new reference sheets are not the main problem; keep Songweaver and Cloud-silk exactly as shown. The red-coated Through the Squall action mage is the specific weaker skin treatment. A restrained matte skin correction is pending review, with the earlier version retained. Do not overcorrect every portrait. Continue auditing references.
+The creator cut A1 Over the Fallen Beech, A2 Through the Squall (both versions), A3 The Road Still Holds, C1 Ravenfolk, C2 Badgerfolk, C3 Mothfolk, C4 Mineral tripod and C7 Rhinoceros folk. Their paintings and generated sources are deleted. These species-test rejections do not decide whether those peoples exist in the setting. Do not restore the cut images or keep refining Squall without a new request.
 
-The original Songweaver and Cloud-silk scenes are FACE IDENTITY ONLY, never normal-art skin-lighting or wardrobe benchmarks. Their bright cheeks and forehead sheen must not transfer. Human sheets define face anatomy/diversity and presentation; isolated bright planar strokes are not an instruction to amplify specular light. Specify identity and surface/lighting roles separately. Use broad diffuse skin lights and coherent form; avoid wax, blur, chalky dashes or forced microdetail as fixes. Audit: breachline/art/work-in-progress/active-scenes-and-people-2026-11-11/reference-audit.json.
-
+The original Songweaver and Cloud-silk scenes remain FACE IDENTITY ONLY, never normal-art skin-lighting or wardrobe benchmarks. Keep identity and surface/lighting roles separate. Use broad diffuse skin lights and coherent form; avoid wax, blur, chalky dashes or forced microdetail as fixes. The historical sheen audit remains in the original work-in-progress directory, with pending statuses superseded by this review. Exact selections and roles are in `breachline/art/reference-library-2026-11-06/review-decisions-2026-11-13.json`. This review selects no cards.
 
 ## Normal-art painted finish and active-scene follow-up (2026-11-11)
 
@@ -20,7 +19,7 @@ Creator likes the painted look and says variable detail is much better. Alderkin
 
 The 133 normal-art pairwise choices and 47 favorites suggest Genesis, Fervor and Vigil need the next mood tests. Cross-alignment wins are Genesis 6/20, Fervor 11/29, Vigil 10/24, Gnosis 24/39 and Dominion 30/39. These sparse, unequal comparisons guide exploration; they are not blanket rejection of an alignment or its references.
 
-The creator requested active scenes, two additional human face sheets including Songweaver and Cloudsilt identities translated into ordinary reference-sheet presentation, and tests of hybrid peoples and more exotic intelligent creatures. All new reference sheets require creator confirmation before promotion into the accepted library or art-direction reference roster.
+The creator requested active scenes, two additional human face sheets including Songweaver and Cloudsilt identities translated into ordinary reference-sheet presentation, and tests of hybrid peoples and more exotic intelligent creatures. H1–H3, dwarves and riverfolk were explicitly selected on 2026-11-13; the other resulting tests were cut as recorded above. Future new sheets still require creator confirmation.
 
 
 ## Normal-art reference review (2026-11-10)
@@ -67,29 +66,33 @@ Ambrel concentrates learned and highly developed magical practice because its un
 
 The creator requested a new concept-art batch informed by these rules, alongside questions about the remaining gaps. New paintings are studies awaiting review, not additions to the twelve selected cards or automatic canon.
 
-## Round 11 power and wonder studies (2026-11-10)
+## Round 11 power and wonder review (2026-11-13)
 
-Eight new paintings await review in `breachline/art/work-in-progress/power-and-wonder-round-11-2026-11-10/`: The Blade He Inherited; A Key Worth a House; The Last Steady Hand; The Copperback Carrier; The Ashwood Reserve; More Fire Than Hands; A Dragon Listening; The Orchard Under the River. Five close-fit designs are followed by three edge studies. The gallery preserves review numbers and intent notes; `prompts-and-review.json` records exact generation/edit prompts, sources and quality revisions. All eight remain outside the accepted reference library, with no new cards created.
+**The Ashwood Reserve** and **A Dragon Listening** are accepted visual references in `breachline/art/reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/`. Use the former for crafted equipment and still-life presentation, the latter for a primal intelligent dragon encounter and restrained magical communication.
 
-During generation the creator confirmed that dragon connections can carry complex ideas with difficulty, and that rare places can hold enchantments for years without an active caster. Those general setting decisions do not approve the paintings or establish the river garden's particular history, mechanism or location. The goblin's large accidental fire tests an exceptional untrained talent, not the ordinary result of spell failure.
+**The Blade He Inherited; A Key Worth a House; The Last Steady Hand; The Copperback Carrier; More Fire Than Hands; The Orchard Under the River** are rejected and deleted, including their earlier generated attempts. Exact prompts and textual review history remain in the original work-in-progress manifest. No cards were selected.
+
+The established setting decisions remain: dragon connections can convey complex ideas with difficulty, and rare places can retain enchantments for years without an active caster. Cutting the river-orchard painting does not revoke the latter rule or establish that place.
 
 ## Round 10 review and revisions (2026-11-10)
 
 The creator accepted **Stormglass Glaive, The Rootbound Quarter, The Ivory-Mantle Envoy, The Garden That Still Opens and The Rain That Rises**. These five images are in `breachline/art/reference-library-2026-11-06/world-edges-round-10-2026-11-10/`. The wooden village and lion-folk concept are strongly liked; rising rain is especially praised. The garden construct's appealing, somewhat impractical use of magic is a positive option for further art, not a demand that all magic be economically useful or all constructs be decorative.
 
-**The Glasswind Rider:** replace the original orc with a somewhat larger, stronger male goblin who remains recognizably goblin-like. The spear points forward, toward image-right in this composition. Preserve the liked mount and landscape. The original orc version is rejected and deleted; the completed v2 awaits review.
+**The Glasswind Rider:** the earlier revision request used a somewhat larger, stronger male goblin with the spear pointing forward. That request is superseded by the final cut. The original orc version was rejected and deleted; the creator also rejected goblin v2 on 2026-11-13. Both depictions and generated sources are deleted.
 
-**The Velvet Stair:** the court-intrigue scene is liked. Preserve the long dress, identity, pose, letter and lighting. Use the established clothed fuller-bust/neckline direction more restrainedly for this character. The completed v2 uses the first Door into Snow character variant as a proportion/costume reference only; it does not replace this woman's face or import the other setting. The previous liked scene is preserved as a prior version. V2 awaits review.
+**The Velvet Stair:** the court-intrigue scene is liked. Preserve the long dress, identity, pose, letter and lighting. Use the established clothed fuller-bust/neckline direction more restrainedly for this character. The completed v2 uses the first Door into Snow character variant as a proportion/costume reference only; it does not replace this woman's face or import the other setting. On 2026-11-13 the creator selected v2 as the accepted reference and requested deletion of the earlier version. V2 is now in the accepted round-10 folder; the earlier painting and generated source are deleted.
 
 **Something Beneath the Abbey:** the enormous creature is too large for that shoreline encounter. The image and its generated source are removed. A creature that large might exist far out in the ocean as something possibly true but unconfirmed; this remains a tentative idea, not confirmed biology or a shoreline visitor. The creator also confirms that distant places and creatures can be known to the old Empire yet treated as sailors’ stories today. Knowledge may survive in an obscure Ambrel book, but it is not common knowledge. A specific surviving account remains an option for future development.
 
-The current review gallery, exact prompts and full review history remain in `breachline/art/work-in-progress/world-edges-round-10-2026-11-10/`. New revisions are not accepted references until reviewed. These decisions do not approve the still-pending round-09 batch or automatically select new cards.
+The current review gallery, exact prompts and full review history remain in `breachline/art/work-in-progress/world-edges-round-10-2026-11-10/`. The follow-up review is finalized: six round-10 references in total, no pending revisions. It does not select new cards; round 09 has its separate verdicts below.
 
-## Round 09 studies awaiting review (2026-11-10)
+## Round 09 review and remaining pending study (2026-11-13)
 
-Six new paintings and their numbered gallery are saved in `breachline/art/work-in-progress/magic-and-industry-round-09-2026-11-10/`: Lessons of Brass; The Stonefire Shift; Black Enamel, Open Road; The Cost of the Flame; Between Two Breaths; A Voice in the Reeds. Exact prompts and source paths are in `prompts-and-review.json`. All six await the creator's review and remain outside the accepted reference library. The fire-working and spirit are deliberate edge studies; their exact feats and appearances are proposals.
+**The Stonefire Shift** and **A Voice in the Reeds** are accepted visual references in `breachline/art/reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/`. Their industrial spellwork and spirit presence are individual examples, not universal visual requirements.
 
-The black-enamel study supplies the requested kit-on-a-character exploration, with a male roadwarden. It does not add a thirteenth card to the twelve selected cards or establish a faction uniform.
+**Lessons of Brass; The Cost of the Flame; Between Two Breaths** are rejected paintings and deleted with their generated sources. The creator nevertheless likes **Ambrel teaching magic as a practical trade** as a setting idea; preserve that direction.
+
+**Black Enamel, Open Road** received no verdict and stays pending in the original work-in-progress folder. It supplies the requested male kit-wearer study, but is not an additional selected card or a faction uniform. These review decisions select no cards and do not finalize other batches.
 
 ## Round 08 review and card selections (2026-11-10)
 

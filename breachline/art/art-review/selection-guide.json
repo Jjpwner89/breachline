@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T05:45:10.907755+00:00",
+  "updatedAt": "2026-11-13T14:35:50.346179+00:00",
   "revision": 182,
   "instructions": "Consult this file with the art-direction skill before selecting references. Honor excluded=true. References with requiresCreatorConfirmation=true are proposals, not active generation references; favorites or comparison rank do not approve them. Positive votes and favorites guide selection; rankings alone never approve a reference. Alignment overrides are reference-selection labels, not lore changes. Unassigned sheets can serve multiple alignments. Existing source art and historical approvals are unchanged.",
   "references": [
@@ -1759,6 +1759,32 @@
       "referenceRole": ""
     },
     {
+      "id": "44426e13fa15295f6791",
+      "title": "A Dragon Listening",
+      "path": "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/07-a-dragon-listening.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Primal intelligent dragon encounter and restrained magical communication; no new dragon taxonomy or named characters established."
+    },
+    {
+      "id": "98a286b06e137c529fc7",
+      "title": "A Voice in the Reeds",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Spirit presence and atmosphere; one visual example, not the only form spirits can take."
+    },
+    {
       "id": "1e6c5b408b4ff1a8dedd",
       "title": "A door into snow",
       "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/22-a-door-into-snow-v2.png",
@@ -1824,95 +1850,30 @@
       "referenceRole": "A scholarly worker supplies heat to a substantial working boiler."
     },
     {
-      "id": "9eed716bf6aa286fff3b",
-      "title": "C1 · Creature test · Ravenfolk",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/07-ravenfolk-exploration.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A familiar bird-human hybrid: alert corvid faces and usable hands; no faction assigned."
-    },
-    {
-      "id": "c2fa88770dd46d2dfa30",
-      "title": "C2 · Creature test · Badgerfolk",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/08-badgerfolk-exploration.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A grounded mammal hybrid with sturdy adult proportions and ordinary expressions."
-    },
-    {
-      "id": "8e6f46a6a8272375f874",
-      "title": "C3 · Creature test · Mothfolk",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/09-mothfolk-exploration.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "An intelligent insect people with nonhuman anatomy; readable variation without ornamental clutter."
-    },
-    {
-      "id": "edfe1635b783e0e47f0c",
-      "title": "C4 · Creature test · Mineral tripod",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/10-mineral-tripod-exploration.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A distinctly nonhuman intelligent form: three-legged mineral anatomy, without assumed origin or construct lore."
-    },
-    {
       "id": "a01061177dd0f7c1efc6",
       "title": "C5 · Creature test · Dwarves",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/11-dwarf-people-exploration.png",
       "alignment": "Unassigned",
       "vote": 0,
       "excluded": false,
       "available": true,
       "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A familiar fantasy option with ordinary adult faces and credible compact proportions."
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation."
     },
     {
       "id": "f327fd71ebc20e8b31e9",
       "title": "C6 · Creature test · Riverfolk",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
       "alignment": "Unassigned",
       "vote": 0,
       "excluded": false,
       "available": true,
       "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A familiar amphibious people, with subtle aquatic anatomy and varied faces."
-    },
-    {
-      "id": "8f8dc122f44c5c0af428",
-      "title": "C7 · Creature test · Rhinoceros folk",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/13-rhinoceros-folk-exploration.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "A substantial, readable animal-human hybrid with varied rhino faces and quiet personality."
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Accepted visual anatomy and design exploration. Culture, alignment, origin and species status require separate setting confirmation."
     },
     {
       "id": "0c784db35b77337d4a47",
@@ -2047,41 +2008,41 @@
     {
       "id": "0db98d51866363a9d9be",
       "title": "H1 · Human faces A · Songweaver and new people",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
       "alignment": "Unassigned",
       "vote": 0,
       "excluded": false,
       "available": true,
       "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "Songweaver's original identity in the ordinary face-sheet finish, plus seven varied adult faces."
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Adult human face identity, anatomy and diversity; Songweaver continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen."
     },
     {
       "id": "424027016a07d9ae2e78",
       "title": "H2 · Human faces B · Cloud-silk and new people",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
       "alignment": "Unassigned",
       "vote": 0,
       "excluded": false,
       "available": true,
       "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "Cloud-silk's original identity in the ordinary face-sheet finish, plus seven additional adult faces."
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Adult human face identity, anatomy and diversity; Cloud-silk continuity. Ordinary reference presentation; do not inherit the source scene's wardrobe or skin sheen."
     },
     {
       "id": "d6c70ed4e1d3fa1e3aba",
       "title": "H3 · Human faces C · White men",
-      "path": "work-in-progress/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
+      "path": "reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
       "alignment": "Unassigned",
       "vote": 0,
       "excluded": false,
       "available": true,
       "note": "",
-      "historicalStatus": "Pending review",
-      "requiresCreatorConfirmation": true,
-      "referenceRole": "Eight white adult men with clearly different ages, face shapes and expressions."
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Eight adult white male face options with varied ages and anatomy; expands the cast without replacing other human sheets."
     },
     {
       "id": "346be7df574a96885a23",
@@ -2201,6 +2162,19 @@
       "referenceRole": "A new weapon silhouette with restrained imbued material, using the physical equipment presentation you liked. Its power and faction are unassigned."
     },
     {
+      "id": "f4f3ac9a47325298cbe9",
+      "title": "The Ashwood Reserve",
+      "path": "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Equipment construction, materials and staff still-life presentation; no card or universal item-power rule selected."
+    },
+    {
       "id": "94e662f5356328dd8c77",
       "title": "The Garden That Still Opens",
       "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/06-the-garden-that-still-opens.png",
@@ -2266,6 +2240,19 @@
       "referenceRole": "An inhabited forest settlement with architecture, domestic life and trade. Tests a richer built environment for woodland societies without making everyone a druid."
     },
     {
+      "id": "682f885578ac254becfb",
+      "title": "The Stonefire Shift",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Magic and practical industrial work; one scene, not a compulsory model for industry."
+    },
+    {
       "id": "3924b88d579d75ed047d",
       "title": "The Third Arch of Ambrel",
       "path": "reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
@@ -2290,6 +2277,19 @@
       "historicalStatus": "Accepted",
       "requiresCreatorConfirmation": false,
       "referenceRole": ""
+    },
+    {
+      "id": "3e0e185c2881a5579b3a",
+      "title": "The Velvet Stair",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
+      "alignment": "Unassigned",
+      "vote": 0,
+      "excluded": false,
+      "available": true,
+      "note": "",
+      "historicalStatus": "Accepted",
+      "requiresCreatorConfirmation": false,
+      "referenceRole": "Selected court-intrigue character, long gown, pose and divided lighting. The earlier version is superseded and deleted."
     },
     {
       "id": "cd36f5a37922b1f3199e",
@@ -2411,7 +2411,7 @@
     {
       "id": "3e0e185c2881a5579b3a",
       "title": "The Velvet Stair",
-      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png"
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png"
     },
     {
       "id": "35747d006c6f74287104",
@@ -2571,7 +2571,7 @@
     {
       "id": "f4f3ac9a47325298cbe9",
       "title": "The Ashwood Reserve",
-      "path": "work-in-progress/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png"
+      "path": "reference-library-2026-11-06/power-and-wonder-round-11-2026-11-10/05-the-ashwood-reserve.png"
     },
     {
       "id": "21c07d921d6350c0cbbd",
@@ -2742,7 +2742,7 @@
     {
       "id": "98a286b06e137c529fc7",
       "title": "A Voice in the Reeds",
-      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/06-a-voice-in-the-reeds.png",
       "rating": 1012.0,
       "comparisons": 1,
       "wins": 1
@@ -3062,7 +3062,7 @@
     {
       "id": "3e0e185c2881a5579b3a",
       "title": "The Velvet Stair",
-      "path": "work-in-progress/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
+      "path": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/07-the-velvet-stair-v2.png",
       "rating": 1012.0,
       "comparisons": 1,
       "wins": 1
@@ -4086,7 +4086,7 @@
     {
       "id": "682f885578ac254becfb",
       "title": "The Stonefire Shift",
-      "path": "work-in-progress/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
+      "path": "reference-library-2026-11-06/magic-and-industry-round-09-2026-11-10/02-the-stonefire-shift.png",
       "rating": 988.0,
       "comparisons": 1,
       "wins": 0
