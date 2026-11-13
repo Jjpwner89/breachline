@@ -227,6 +227,19 @@ The first scene shows an alderkin clearing an old irrigation channel while a hum
 
 Art: [Waterkeeper](art/concepts/alderkin-waterkeeper.png), [Winter shelter](art/concepts/alderkin-winter-shelter.png).
 
+### Included people: Riverfolk (creator direction, 2026-11-13)
+
+**Included concept; working name.** A people of human proportions with fin-like ears, gill folds along the neck and patches of scale on the skin. They are at home in water and on land.
+
+- **Alignments:** split between Gnosis and Genesis. In Ambrel and other Gnosis places they work on the waterworks. They dive to clear and repair canals, sluices and channels, and some of them do hydrology and charting. Elsewhere they live in marsh and riverside villages closer to Genesis ways of life.
+- **Standing:** generally in a less privileged place in society. Their skills are needed, but they rarely hold the better positions.
+- **Numbers and places:** not very rare, but there is no riverfolk city or even a large town. They live in small villages, or in small numbers on the edges of cities, usually near the water.
+- **Not:** they don't dive for mana-stones. Their diving is maintenance of canals and similar works.
+
+Their culture, faith and history beyond this remain open.
+
+Art: [Exploration sheet](art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png).
+
 ### Developing people: Stonehorn
 
 **Developing.** An ibex-inspired people with genuinely caprine faces, swept-back horns, grasping hands and sure-footed cloven lower legs. The bridgekeeper wears practical clothes and repairs a crossing, suggesting a person with a place in everyday society.
@@ -234,6 +247,16 @@ Art: [Waterkeeper](art/concepts/alderkin-waterkeeper.png), [Winter shelter](art/
 The creator liked this design least in the first creature batch. Retain the entry as a working option to revisit rather than treating its current appearance as settled. That response is not a general rejection of animal-inspired peoples. No universal mountain culture, profession or alignment has been established.
 
 Art: [Bridgekeeper](art/concepts/stonehorn-bridgekeeper.png).
+
+### Proposed people: the made people (name to be decided, 2026-11-13)
+
+**Proposed; the creator picked this concept.** A people bred or shaped by the Empire for war, tied to its forbidden research. The creator described them as like Dominion's undead but more substantive: whole living bodies and minds rather than partial souls in partial bodies.
+
+- **Alignment (creator, 2026-11-13):** Dominion only, always. None of them belong to any other alignment, and they carry a bad reputation everywhere else.
+- **Name:** Graftborn was close but not final. Two takes are being tested in art as Scions (refined) and Graftkin (rougher), in `art/work-in-progress/peoples-round-12-2026-11-13/`.
+- **Open:** their final name, look, numbers, how much of the Empire's shaping still shows, and whether any of the old research survives.
+
+No art yet.
 
 ### Included animal: Coalback
 
@@ -351,6 +374,7 @@ Alignments are outlooks and don't map neatly onto states or factions. Hybrid car
 - **Life under it:** harsh and oppressive across the whole alignment. Nobody should expect a good life as a Dominion peasant. Its dark order is not a tidy civic alternative, and its places are less cosmopolitan than most.
 - **Wants:** either for the degeneration to continue into utter ruin, or to build a new, dark order.
 - **Politics:** the one alignment with no democratic streak.
+- **Why people join (creator direction, 2026-11-13):** never for good reasons. Either they hold a religious belief that the world should be destroyed, or they have power over the weak in their society and enjoy it. Dominion is cruel, including to its own, and it is no refuge for outcasts.
 
 ### Fervor (red)
 - **Wants:** to keep the freedom it has found in the chaos, and to prevent the empire's return.
@@ -366,6 +390,8 @@ Alignments are outlooks and don't map neatly onto states or factions. Hybrid car
 
 These names were approved as a start. **Proposed:** how each one fits the premise.
 
+**Creator direction (2026-11-13):** keep these ten names. Each is a broad umbrella: specific bands, houses, orders and guilds sit under them, and many groups and people in the world belong to none of them. The lore codex can describe those smaller groups.
+
 | Alignment | Faction | Proposed role |
 | --- | --- | --- |
 | Vigil | The Sunmane Oath | Fights to restore the empire, and holds itself to the old oaths |
@@ -374,7 +400,7 @@ These names were approved as a start. **Proposed:** how each one fits the premis
 | Gnosis | The Artificers | Makers and engineers, and the source of Genesis's fear of industry |
 | Dominion | The Ashen Court | Those building the new, dark order |
 | Dominion | The Gravebound | Those who want the slide into utter ruin to finish |
-| Fervor | The Warhorde | Goblin, orc and giant bands that follow strength |
+| Fervor | The Warhorde | Bands that follow the strongest. Mostly orcs, goblins and giants, but open to anyone who can earn a place (creator, 2026-11-13) |
 | Fervor | The Cinder Clans | Bands that elect their leaders and can remove them |
 | Genesis | The Thornwardens | Defenders of the wild, including its militant edge |
 | Genesis | The Elder Herd | Great beasts and those who live among them |

@@ -5,6 +5,31 @@ description: Holds the art direction and accumulated art feedback for Breachline
 
 # Breachline art direction
 
+## Creatures round 13 briefs (2026-11-13)
+
+The creator approved 20 creature concept paintings for generation. Briefs: `breachline/art/work-in-progress/creatures-round-13-2026-11-13/BRIEFS.md`.
+
+- **What the creator likes:** dynamic, interesting creatures. Ribbonvane (`breachline/art/white-flier.png`) and the Slateprowler are the bar.
+- **Genesis:** the existing Genesis creatures are too recognisable as real animals. Invent bodies that don't read as a known animal with a twist.
+- **Scavengers Reign:** the creator's favourite piece of world-building. Borrow its principles, not its creatures:
+  - creatures that depend on each other
+  - life cycles that transform bodies
+  - living things used as tools
+  - beauty that is also danger
+
+  Don't name the show in image prompts. Don't recreate any of its creatures or designs.
+- **Status:** these studies await review, and none of them is canon yet.
+
+## Peoples round 12 briefs (2026-11-13)
+
+The creator approved 22 concept studies for generation. Briefs: `breachline/art/work-in-progress/peoples-round-12-2026-11-13/BRIEFS.md`. They cover the made people in two takes (refined Scions and rougher Graftkin, a name and look still undecided), Riverfolk at work, and six tests of possible new peoples. The creator cut three other ideas: storm-born lineages, tortoise-like road-keepers and god-marked families.
+
+- The made people are always Dominion. They are whole and alive, not undead. Graftkin are closer to Frankenstein's creature than Scions are, but their grafts healed long ago, with no thread stitches or bolts.
+- Riverfolk never dive for mana-stones. Their diving maintains canals and waterworks, and they're generally less privileged.
+- No elves and no dwarves as peoples. The accepted dwarf sheet stays a visual reference only.
+- Animal-headed peoples are allowed. Don't tell the image model either way: don't ask for them, and don't rule them out.
+- The creator refines ideas by seeing them, so experiment within briefs. These studies await review, and none of them is canon yet.
+
 ## People reference selection and role audit (2026-11-13)
 
 The creator accepted the complete H1, H2 and H3 human sheets, C5 Dwarves and C6 Riverfolk in `breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/`. H1–H3 add 24 adult faces and retain Songweaver and Cloud-silk as shown. Use them for identity, anatomy, variety and ordinary reference presentation; keep earlier human sheets too. Dwarves and riverfolk are accepted visual anatomy/design references, not automatically established cultures, alignments, origins or species canon.
