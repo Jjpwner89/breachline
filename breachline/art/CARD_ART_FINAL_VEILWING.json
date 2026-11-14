@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "status": "final_for_card_building",
+  "scope": "Veilwing only; does not declare all of Set 13 final.",
+  "creator_authorization": "that's good and final; please commit that and push",
+  "live_installation": false,
+  "assets": [
+    {
+      "id": "set13-veilwing",
+      "code": "S13-06-L1",
+      "title": "Veilwing",
+      "card_id": "veilwing",
+      "proposal_number": 221,
+      "png": "reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+      "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "reference_png": "reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "reference_sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+      "live_installation": false
+    }
+  ]
+}
