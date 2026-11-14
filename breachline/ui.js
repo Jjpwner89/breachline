@@ -1323,18 +1323,43 @@
   // The phone's menu also holds the rules, which close with a tap.
   $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
   $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (turned && !$('start').hidden) turnStart(turned); } });
 
+  // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
+  // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
+  var turned = null, chooseTimer = null;
   function deckHtml(d, role) {
-    if (d.id === 'random') return '<button type="button" class="deck N random" data-role="opp" data-deck="random" aria-pressed="' + (picks.opp === 'random') + '"><span class="pic"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
-      '<span class="nm">Random deck</span><span class="ty">Any alignment</span><span class="ds">A different starter, theme or saved deck each game.</span></button>';
-    var short = role === 'mine' && !d.open ? Progress.missing(d.list) : 0, problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
-    var art = d.starter ? (noArt[DECK_ART[d.id]] ? null : artSrc(DECK_ART[d.id])) : Screens.coverArt(d.list);
-    return '<button type="button" class="deck ' + main + '" data-role="' + role + '" data-deck="' + esc(d.id) + '" aria-pressed="' + on + '"' + (problems.length ? ' disabled' : '') + '>' +
-      '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
-      '<span class="nm">' + esc(d.name) + '</span>' +
-      '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (d.open && role === 'mine' ? '<span class="ds">Open to everyone. Playing it doesn\'t add its cards to your collection.</span>' : '') + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
+    var key = role + ':' + d.id, open = turned === key, on = picks[role] === d.id, front, plan, problems = [];
+    if (d.id === 'random') {
+      front = '<span class="frame N"><span class="inner"><span class="bar-top">Random deck</span><span class="art"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
+        '<span class="band"><span class="type">Any alignment</span></span><span class="ctext"><span class="csyms"></span><span>A surprise</span></span></span></span>';
+      plan = 'A different starter, theme or saved deck each game.';
+    } else {
+      var short = role === 'mine' && !d.open ? Progress.missing(d.list) : 0;
+      problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []);
+      front = Screens.deckFace(d, problems[0] || E.deckSize(d.list) + ' cards');
+      plan = Help.deck(d);
+    }
+    var note = d.open && role === 'mine' ? '<p class="dnote">Open to everyone. Playing it doesn\'t add its cards to your collection.</p>' : '';
+    var choose = problems.length ? '' : '<div class="dtools"><button type="button" class="btn" data-choose="' + role + '" data-deck="' + esc(d.id) + '"' + (on ? ' disabled' : '') + '>' + (on ? 'Chosen' : 'Choose') + '</button></div>';
+    return '<div class="dcard' + (problems.length ? ' locked' : '') + (on ? ' on' : '') + (open ? ' flipped' : '') + '" data-turn="' + esc(key) + '"><div class="dflip">' +
+      '<button type="button" class="dface dfront" aria-label="' + esc(d.id === 'random' ? 'Random deck' : d.name) + ', turn over"' + (on ? ' aria-current="true"' : '') + (open ? ' inert' : '') + '>' + front + '</button>' +
+      '<div class="dface dback"' + (open ? '' : ' inert') + '><b class="dbname">' + esc(d.id === 'random' ? 'Random deck' : d.name) + '</b><p class="dnote">' + esc(plan) + '</p>' + note +
+      (problems.length ? '<p class="dlock">' + esc(problems[0]) + '</p>' : '') + choose + '</div></div></div>';
+  }
+  function turnStart(key) {
+    var was = turned && $('start').querySelector('.dcard.flipped');
+    if (was) { was.classList.remove('flipped'); was.querySelector('.dfront').inert = false; was.querySelector('.dback').inert = true; }
+    turned = turned === key ? null : key;
+    var el = turned && $('start').querySelector('.dcard[data-turn="' + turned + '"]');
+    if (el) {
+      el.classList.add('flipped');
+      el.querySelector('.dfront').inert = true;
+      el.querySelector('.dback').inert = false;
+      var b = el.querySelector('.dback .btn:not([disabled])');
+      (b || el.querySelector('.dback')).focus({ preventScroll: true });
+    } else if (was) was.querySelector('.dfront').focus({ preventScroll: true });
+    Sfx.play('card-flip', { gap: 0 });
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
@@ -1342,10 +1367,13 @@
   }
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
-    $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
+    // Decks you can play come first; the ones still missing cards follow.
+    var can = function (d) { return playable(d) && (d.open || !Progress.missing(d.list)); };
+    $('myDecks').innerHTML = all.filter(can).concat(all.filter(function (d) { return !can(d); })).map(function (d) { return deckHtml(d, 'mine'); }).join('');
     var mine = Decks.find(picks.mine), main = mine ? (mine.starter ? E.DECKS[mine.id].colours : E.deckColours(mine.list))[0] || 'N' : null;
     $('myNote').innerHTML = main ? sym(main) + '<b>' + ALIGNMENT[main] + '.</b> ' + esc(Help.alignment(main)) : '';
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
+    fitCards([$('myDecks'), $('oppDecks')]);
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
     $('playerNote').textContent = hosted ? (sample ? 'Claude opponents make about a dozen requests a game and take a little while to think.' : '') :
@@ -1366,6 +1394,7 @@
     runToken++;
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
+    turned = null;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var yours = function (id) { var d = ready(id) && Decks.find(id); return d && Decks.yours(d) ? id : null; };
     var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
@@ -1414,8 +1443,25 @@
     return d.starter ? id : { name: d.name, list: d.list };
   }
   $('start').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-deck]');
-    if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
+    var pick = e.target.closest('[data-choose]');
+    // A chosen deck says so for a moment, then turns back over at the usual pace before the lists catch up.
+    if (pick) {
+      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = turned;
+      picks[role] = pick.dataset.deck;
+      pick.disabled = true;
+      pick.textContent = 'Chosen';
+      Array.prototype.forEach.call($(role === 'mine' ? 'myDecks' : 'oppDecks').querySelectorAll('.dcard.on'), function (c) { c.classList.remove('on'); });
+      card.classList.add('on');
+      clearTimeout(chooseTimer);
+      chooseTimer = setTimeout(function () {
+        if (turned === key) turnStart(key);
+        chooseTimer = setTimeout(renderStart, 550);
+      }, 450);
+      return;
+    }
+    var card = e.target.closest('.dcard');
+    if (card) return turnStart(card.dataset.turn);
+    if (turned && !e.target.closest('button, input, select, label')) return turnStart(turned);
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
