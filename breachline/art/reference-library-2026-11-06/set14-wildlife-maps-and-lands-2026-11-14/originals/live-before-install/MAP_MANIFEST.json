@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "created": "2026-11-06",
+  "generator": "Built-in image_gen",
+  "status": "proposed; awaiting creator review",
+  "source_brief": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/campaign-a100b8/breachline/art/CAMPAIGN_MAP_BRIEFS.md",
+  "art_direction": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "note": "All regions, landmarks, routes and working titles are proposals, not additions to canon. New images supersede no existing art. Game integration is a separate step.",
+  "format": {
+    "width": 1536,
+    "height": 1024,
+    "aspect_ratio": "3:2",
+    "type": "PNG",
+    "coordinates": "percent from top left"
+  },
+  "integration": {
+    "painted_text": false,
+    "painted_interface": false,
+    "marker_diameter_percent_of_width": 6,
+    "game_code_changed": false,
+    "aspect_ratio_note": "Use the full 3:2 image without cropping; the existing game map is 1000:620, so adopt a 3:2 container before integration.",
+    "road_note": "Each image includes a physical road. Add markers and progress overlays separately."
+  },
+  "brief_overrides": [
+    "Do not use the rejected world atlas or River Road painting as reference; current main-checkout creator feedback overrides those obsolete references in the brief.",
+    "Maintain plausible regional scale without oversized pictorial trees or buildings.",
+    "Omit optional Gnosis Dawnsail to keep the survey route readable.",
+    "Treat Dominion as oppressive, not benign civic order."
+  ],
+  "maps": [
+    {
+      "alignment": "vigil",
+      "title": "The Shrine Road",
+      "file": "map-vigil.png",
+      "status": "proposed",
+      "start": {
+        "x": 4,
+        "y": 95
+      },
+      "stops": [
+        {
+          "number": 1,
+          "id": "ford",
+          "title": "The ford",
+          "x": 16,
+          "y": 74
+        },
+        {
+          "number": 2,
+          "id": "forest",
+          "title": "The closed road",
+          "x": 41,
+          "y": 83
+        },
+        {
+          "number": 3,
+          "id": "pass",
+          "title": "The pass",
+          "x": 56,
+          "y": 53
+        },
+        {
+          "number": 4,
+          "id": "gate",
+          "title": "The lower gate",
+          "x": 31,
+          "y": 34
+        },
+        {
+          "number": 5,
+          "id": "field",
+          "title": "The fallow field",
+          "x": 61,
+          "y": 23
+        },
+        {
+          "number": 6,
+          "id": "shrine",
+          "title": "The shrine steps",
+          "x": 86,
+          "y": 17
+        }
+      ],
+      "generation_mode": "generate",
+      "final_prompt": "Use case: stylized-concept.\nAsset type: illustrated fantasy campaign map background for Breachline. Create one complete full-bleed landscape PNG, exactly 1536 x 1024 pixels, 3:2.\nTraditional oil and acrylic fantasy painting, rich but economical visible brushwork, sophisticated color and atmosphere. VERY HIGH steep three-quarter bird's-eye view of a believable broad stretch of country. No horizon and no sky band. This must read as a navigable regional MAP. Consistent geographic scale throughout: forests are continuous finely textured canopy masses with tiny trees, settlements and buildings occupy credible small footprints. NEVER oversized pictorial tree or building map symbols, no toy diorama. This is a new independent region; do not copy any previous map. Natural terrain rhythm, landforms and waterways make physical sense.\nCOMPOSITION IS FUNCTIONAL: coordinates below are percentages (x across from LEFT, y down from TOP). At each of the six stated stop coordinates reserve subdued midtone low-detail ground about 8% of width by 12% of height for a future UI marker and label. No visible box or artificial clearing outline. Paint each distinctive landmark IMMEDIATELY ABOVE its coordinate, its approach/foot at the point; location tolerance about 3%. Six landmarks need distinct silhouettes and breathing room even at 340-pixel viewing width. The brief's coordinates are layout instructions only and MUST NOT be printed.\nPaint one continuous believable narrow worn physical road/trail from the stated start through all six stop coordinates IN ORDER, conforming to terrain, crossing streams and gorges physically. Route should be easily followable, including in the quiet areas, but should be an ordinary earth/paving road integrated into land, never a highlighted game path or an unrealistically huge highway. No shortcuts bypassing a stop. A few secondary traces can be subordinate. Put detail at the landmarks and simplify terrain between, with a few large coherent value shapes. All architecture, bridges, stairs, sluices must visibly connect, with abutments and roads on BOTH ends. The landscape fills every edge; no parchment, tabletop, frame, or decorative cartography.\nAbsolutely NO text, letters, words, numbers, titles, labels, pins, circles, seals, dots, compass, arrows, dashed lines, glowing/highlighted routes, UI, political borders, emblems, logos or watermarks. No battle, gore, corpses, gold scars/threads, gods, apocalyptic effects. No photograph, satellite imagery, 3D render, vector map, game screenshot, anime. No oversized creatures. Tiny people only when purposeful; do not insert cosmopolitan fantasy crowds.\n\nVIGIL — western river basin ascending to mountain foothills. Clear warm MORNING light; green-gold grassland, ivory rock, cool sky-blue water and shadow. No red cloth. A humble pilgrimage from inhabited country to one almost impossibly modest shrine. Predominantly land; a river descends from top to bottom on the left, mountains rise toward upper right.\nRoad: enter at (4,95), run to (16,74), east-southeast into (41,83), ascend northeast to (56,53), then northwest to (31,34), turn northeast across (61,23), finally east-northeast to (86,17). One continuous winding route; do not substitute a direct road to the shrine.\nSix landmarks, immediately ABOVE each coordinate:\n1 (16,74): broad shallow ford across the left-side river, connected road visibly approaching both banks. A few tiny russet-earth raider tents and picketed pack animals on the near bank. No grand bridge.\n2 (41,83): dark guarded forest canopy, deliberately overgrown old paving and a few felled trunks blocking it; road threads through but remains traceable. Forest is a dense canopy patch of thousands of correctly scaled trees, not a handful of giant tree icons.\n3 (56,53): a narrow traversable pass between TWO distinct rocky shoulders, with a tiny rough cairn and watch fire on the saddle. Path naturally climbs, clears the saddle, and leaves to northwest.\n4 (31,34): a solitary old imperial stone gate standing with NO enclosing walls, weathered, larger than the nearby little tents yet very small relative to this region. Subtle scholar lamps and surveying equipment around its feet, quiet forecourt below for marker.\n5 (61,23): a broad pale fallow meadow on a high shelf, untouched grass with low rounded mounds, no furrows, no bones and no people. Its uncanny stillness comes from an uninterrupted pale shape; route skirts through its lower part.\n6 (86,17): one tiny stone room with a single dark doorway on a bare height, reached by a long narrow worn stair connected to the approaching path. It must be the SMALLEST and most humble building, not a temple, dome, tower or palace. No glow or visible flame. Stair foot at the coordinate and little shrine directly above.\nLandmarks at least 5% from the edges; the shrine sits safely inside the frame. Realistic architectural scale, expansive intervening land, softly sunlit open terrain to support later labels.",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-6ffa721d-83a7-4e1b-8436-aefea00e977c.png",
+      "preview": "previews/map-vigil.png",
+      "sha256": "4e35888e5cf5c87efcd4c36c8308a5bd01ec47831b7172f74ded2d1e501483c6",
+      "bytes": 3544594
+    },
+    {
+      "alignment": "gnosis",
+      "title": "The Long Survey",
+      "file": "map-gnosis.png",
+      "status": "proposed",
+      "start": {
+        "x": 97,
+        "y": 86
+      },
+      "stops": [
+        {
+          "number": 1,
+          "id": "ambrel",
+          "title": "Ambrel",
+          "x": 86,
+          "y": 76
+        },
+        {
+          "number": 2,
+          "id": "waterworks",
+          "title": "The waterworks",
+          "x": 62,
+          "y": 62
+        },
+        {
+          "number": 3,
+          "id": "farms",
+          "title": "The hill farms",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "number": 4,
+          "id": "checkpoint",
+          "title": "The checkpoint",
+          "x": 17,
+          "y": 52
+        },
+        {
+          "number": 5,
+          "id": "canal",
+          "title": "The dry canal",
+          "x": 40,
+          "y": 30
+        },
+        {
+          "number": 6,
+          "id": "observatory",
+          "title": "The silent observatory",
+          "x": 16,
+          "y": 15
+        }
+      ],
+      "generation_mode": "generate",
+      "final_prompt": "Use case: stylized-concept.\nAsset type: illustrated fantasy campaign map background for Breachline. Create one complete full-bleed landscape PNG, exactly 1536 x 1024 pixels, 3:2.\nTraditional oil and acrylic fantasy painting, rich but economical visible brushwork, sophisticated color and atmosphere. VERY HIGH steep three-quarter bird's-eye view of a believable broad stretch of country. No horizon and no sky band. This must read as a navigable regional MAP. Consistent geographic scale throughout: forests are continuous finely textured canopy masses with tiny trees, settlements and buildings occupy credible small footprints. NEVER oversized pictorial tree or building map symbols, no toy diorama. This is a new independent region; do not copy any previous map. Natural terrain rhythm, landforms and waterways make physical sense.\nCOMPOSITION IS FUNCTIONAL: coordinates below are percentages (x across from LEFT, y down from TOP). At each of the six stated stop coordinates reserve subdued midtone low-detail ground about 8% of width by 12% of height for a future UI marker and label. No visible box or artificial clearing outline. Paint each distinctive landmark IMMEDIATELY ABOVE its coordinate, its approach/foot at the point; location tolerance about 3%. Six landmarks need distinct silhouettes and breathing room even at 340-pixel viewing width. The brief's coordinates are layout instructions only and MUST NOT be printed.\nPaint one continuous believable narrow worn physical road/trail from the stated start through all six stop coordinates IN ORDER, conforming to terrain, crossing streams and gorges physically. Route should be easily followable, including in the quiet areas, but should be an ordinary earth/paving road integrated into land, never a highlighted game path or an unrealistically huge highway. No shortcuts bypassing a stop. A few secondary traces can be subordinate. Put detail at the landmarks and simplify terrain between, with a few large coherent value shapes. All architecture, bridges, stairs, sluices must visibly connect, with abutments and roads on BOTH ends. The landscape fills every edge; no parchment, tabletop, frame, or decorative cartography.\nAbsolutely NO text, letters, words, numbers, titles, labels, pins, circles, seals, dots, compass, arrows, dashed lines, glowing/highlighted routes, UI, political borders, emblems, logos or watermarks. No battle, gore, corpses, gold scars/threads, gods, apocalyptic effects. No photograph, satellite imagery, 3D render, vector map, game screenshot, anime. No oversized creatures. Tiny people only when purposeful; do not insert cosmopolitan fantasy crowds.\n\nGNOSIS — eastern coastal region, sea on RIGHT, increasingly old upland country to LEFT. DRY DUSK; deep blue and teal, brass/amber lamps beginning to shine in inhabited areas. Readable rich twilight, no rain, no murky darkness. Theme: practical human invention and its consequences, ending at the remains of an engineering ability no longer understood.\nRoad starts in harbour at right edge (97,86), through (86,76), northwest to (62,62), southwest to (38,74), northwest to (17,52), northeast to (40,30), then northwest to (16,15). Continuous road with physically sensible gradients, spans and intersections.\nSix landmarks immediately ABOVE those marker coordinates:\n1 (86,76): compact slate-roof harbour city cut by a few canals, modest brass-topped lamp tower as its silhouette, connected quays and small boats. Town seen as many tiny roof masses, not a giant city icon. All bridges connect built banks, no stairs ending in water.\n2 (62,62): working sluices and a stepped reservoir that feeds a long, supported aqueduct stretching through part of this landscape; tiny workers and one small brass helper repair a channel. Functional, cared-for construction, not a huge fantasy machine. All water conveyance connections make physical sense.\n3 (38,74): terraced hill farms and scattered houses with small irrigation channels. Tiny carts halted at a junction imply a disagreement. Rural footprint spread across the slopes, visually different from harbour and waterworks.\n4 (17,52): small disciplined pale roadside fort with ivory and restrained gold accents. Its gate controls this road's entry into high country; show the route passing under the gate and continuing behind. Not a large city or castle.\n5 (40,30): massive EMPTY Old Empire canal cut in a straight line through high dry land, broken lock gate, tiny surveyors down in its bed for scale. Large enough to dwarf modern works, but embedded in continuous terrain; road traverses the dry bed by a believable ramp or intact small bridge. No flowing water in this ancient canal.\n6 (16,15): plateau-top old observatory with a great OPEN DOME and one long tilted instrument within, unlit and pointed at nothing visible. Small amber-lamp camp alongside; no beam or mystical effect. The plateau and approach are connected; a clearly navigable path ends at its foot.\nMake the upper-right sea an open quiet teal distance. Omit the optional Dawnsail because this image prioritizes route clarity. No extra creatures. Place architecture just above marker footprints, with muted quiet midtone ground below. Use tiny predominantly human workers only, no mixed-species crowds. The proposed city and all terrain are a fresh design, not a reuse of any earlier Ambrel map or rejected atlas.",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-65132683-bee2-445b-9868-5d3029a75146.png",
+      "preview": "previews/map-gnosis.png",
+      "sha256": "c8c82cae06cf9619b079ddf8fdad27deb4fdea6849ca9357925f4fbe0934bc99",
+      "bytes": 3513922
+    },
+    {
+      "alignment": "dominion",
+      "title": "The Quiet Order",
+      "file": "map-dominion.png",
+      "status": "proposed",
+      "start": {
+        "x": 3,
+        "y": 94
+      },
+      "stops": [
+        {
+          "number": 1,
+          "id": "village",
+          "title": "The tithe village",
+          "x": 12,
+          "y": 80
+        },
+        {
+          "number": 2,
+          "id": "barrows",
+          "title": "The barrows",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "number": 3,
+          "id": "causeway",
+          "title": "The salt causeway",
+          "x": 87,
+          "y": 68
+        },
+        {
+          "number": 4,
+          "id": "orchard",
+          "title": "The bone orchard",
+          "x": 78,
+          "y": 24
+        },
+        {
+          "number": 5,
+          "id": "town",
+          "title": "The silent town",
+          "x": 34,
+          "y": 18
+        },
+        {
+          "number": 6,
+          "id": "court",
+          "title": "The court of still water",
+          "x": 50,
+          "y": 50
+        }
+      ],
+      "generation_prompt": "Use case: stylized-concept.\nAsset type: illustrated fantasy campaign map background for Breachline. Create one complete full-bleed landscape PNG, exactly 1536 x 1024 pixels, 3:2.\nTraditional oil and acrylic fantasy painting, rich but economical visible brushwork, sophisticated color and atmosphere. VERY HIGH steep three-quarter bird's-eye view of a believable broad stretch of country. No horizon and no sky band. This must read as a navigable regional MAP. Consistent geographic scale throughout: forests are continuous finely textured canopy masses with tiny trees, settlements and buildings occupy credible small footprints. NEVER oversized pictorial tree or building map symbols, no toy diorama. This is a new independent region; do not copy any previous map. Natural terrain rhythm, landforms and waterways make physical sense.\nCOMPOSITION IS FUNCTIONAL: coordinates below are percentages (x across from LEFT, y down from TOP). At each of the six stated stop coordinates reserve subdued midtone low-detail ground about 8% of width by 12% of height for a future UI marker and label. No visible box or artificial clearing outline. Paint each distinctive landmark IMMEDIATELY ABOVE its coordinate, its approach/foot at the point; location tolerance about 3%. Six landmarks need distinct silhouettes and breathing room even at 340-pixel viewing width. The brief's coordinates are layout instructions only and MUST NOT be printed.\nPaint one continuous believable narrow worn physical road/trail from the stated start through all six stop coordinates IN ORDER, conforming to terrain, crossing streams and gorges physically. Route should be easily followable, including in the quiet areas, but should be an ordinary earth/paving road integrated into land, never a highlighted game path or an unrealistically huge highway. No shortcuts bypassing a stop. A few secondary traces can be subordinate. Put detail at the landmarks and simplify terrain between, with a few large coherent value shapes. All architecture, bridges, stairs, sluices must visibly connect, with abutments and roads on BOTH ends. The landscape fills every edge; no parchment, tabletop, frame, or decorative cartography.\nAbsolutely NO text, letters, words, numbers, titles, labels, pins, circles, seals, dots, compass, arrows, dashed lines, glowing/highlighted routes, UI, political borders, emblems, logos or watermarks. No battle, gore, corpses, gold scars/threads, gods, apocalyptic effects. No photograph, satellite imagery, 3D render, vector map, game screenshot, anime. No oversized creatures. Tiny people only when purposeful; do not insert cosmopolitan fantasy crowds.\n\nDOMINION — cold northern moorland, ash grey, bone pale stone, tarnished silver, deep violet heather and lichen. Even cold OVERCAST illumination, clear readable values, subtle beautiful color. Oppressive harsh order closing in, tribute and confinement, NOT a benign tidy utopia. No Gothic castles, skull decor, fangs, gore, overt monsters or explosive darkness. Feel uncomfortable through severe controlled enclosure, stripped land and heavy architecture.\nComposition: one CLOCKWISE INWARD SPIRAL ROAD. Start at bottom left (3,94), to (12,80), across lower edge to (50,88), east to (87,68), up right side to (78,24), west across top to (34,18), then turn down and inward to a central black lake and its island court at (50,50). Keep the whole spiral legible; do NOT create a shortcut cutting across the lake. Distinct terrain along each arc.\nSix landmarks immediately above stops:\n1 (12,80): small cramped living tithe village, smoke from a few chimneys, tiny carts compelled into a straight queue beside a severe pale counting house. Humble soot-stained homes, fenced collection yards, no welcoming festival, prosperous sprawl or friendly plaza.\n2 (50,88): wide field of low rounded burial barrows in measured rows. A few tiny hooded figures carrying a covered burden carefully between them, no visible bones or corpses. Barrows above coordinate, quiet low-detail road below. Keep minimum 5% edge clearance.\n3 (87,68): straight raised salt causeway across a broad pale marsh along the eastern outer curve. Evenly spaced small posts, both ends clearly joined to the main road. Muted midtone stop ground, don't put the UI point over glaring white salt.\n4 (78,24): rows of bare pale pruned trees, all actual small trees at consistent landscape scale, one near-invisible gardener. It is subtly uncertain whether they are living trees, but no literal bones. Bleached orchard geometry contrasts with heather outside.\n5 (34,18): a silent severe town, constrained rectilinear streets, shuttered windows, NO chimney smoke and NO visible inhabitants. In contrast to the living village, it is emptied, oppressive and forbidding, not attractive civic benevolence. Small continuous roof blocks, no oversized building symbols.\n6 (50,50): low WIDE severe pale-stone palace on a small island in a perfectly still BLACK LAKE at centre. Heavy horizontal architecture, blank facades and restricted entries, not a fairytale castle. One narrow physically continuous stone bridge reaches from the incoming road on upper-left shore to a quiet forecourt at the marker point; palace immediately ABOVE that forecourt. Lake surrounds the island, bridge visibly touches shore and island with proper abutments; no disconnected segments. Center position is important.\nScale: many acres between stops; structures and trees tiny relative to terrain, architectural clusters differentiated through silhouettes. Terrain around the spiral spare and progressively less inhabited, with no pictorial map symbols.",
+      "final_edit_prompt": "Use case: precise-object-edit. Edit the provided Dominion campaign map, preserving the 1536x1024 full-bleed 3:2 painting and ALL outer terrain, colors, brushwork, village, barrows, causeway, orchard, town and spiral road. Make ONE localized functional correction to the central palace island. Its final game marker will sit at exactly (50% across, 50% down) from top left, with a quiet 8%-wide by 12%-tall ground area around it. Currently that point falls in the lake. Extend the island's southern forecourt toward the viewer to 57% image height, as a believable low broad rock/stone apron, so the entire rectangle x46–54%, y44–56% is quiet matte midtone DRY GROUND. Keep the pale severe low palace directly ABOVE this clearing around x50%, y37–42%; keep its existing oppressive low horizontal architecture. Extend the existing connected narrow bridge approach into the new forecourt so the continuous incoming road physically reaches (50%,50%). Preserve still black lake around the island on ALL sides, island must remain an island, and bridge must keep connected abutments. Make the added forecourt look like part of the actual island, no UI panel or decorative circle. This is land for future marker placement; DO NOT draw a marker, words, labels, circles or any interface. Preserve the rest of this image as exactly as possible. No new buildings, figures, emblems or decoration.",
+      "generation_mode": "generate then targeted edit",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-06641622-8f99-4745-a4c0-e1b4dc6bd568.png",
+      "preview": "previews/map-dominion.png",
+      "sha256": "9b2a8d4ff33ade8d12d5a8880250bafd685bbb53c101ee08730542dd2562307f",
+      "bytes": 3125425
+    },
+    {
+      "alignment": "fervor",
+      "title": "No Throne",
+      "file": "map-fervor.png",
+      "status": "proposed",
+      "start": {
+        "x": 3,
+        "y": 6
+      },
+      "stops": [
+        {
+          "number": 1,
+          "id": "moot",
+          "title": "The moot",
+          "x": 14,
+          "y": 22
+        },
+        {
+          "number": 2,
+          "id": "market",
+          "title": "The moving market",
+          "x": 44,
+          "y": 15
+        },
+        {
+          "number": 3,
+          "id": "salt",
+          "title": "The salt pan",
+          "x": 76,
+          "y": 27
+        },
+        {
+          "number": 4,
+          "id": "gorge",
+          "title": "The red gorge",
+          "x": 52,
+          "y": 50
+        },
+        {
+          "number": 5,
+          "id": "wall",
+          "title": "The toll wall",
+          "x": 22,
+          "y": 62
+        },
+        {
+          "number": 6,
+          "id": "seat",
+          "title": "The high seat",
+          "x": 70,
+          "y": 80
+        }
+      ],
+      "generation_prompt": "Use case: stylized-concept.\nAsset type: illustrated fantasy campaign map background for Breachline. Create one complete full-bleed landscape PNG, exactly 1536 x 1024 pixels, 3:2.\nTraditional oil and acrylic fantasy painting, rich but economical visible brushwork, sophisticated color and atmosphere. VERY HIGH steep three-quarter bird's-eye view of a believable broad stretch of country. No horizon and no sky band. This must read as a navigable regional MAP. Consistent geographic scale throughout: forests are continuous finely textured canopy masses with tiny trees, settlements and buildings occupy credible small footprints. NEVER oversized pictorial tree or building map symbols, no toy diorama. This is a new independent region; do not copy any previous map. Natural terrain rhythm, landforms and waterways make physical sense.\nCOMPOSITION IS FUNCTIONAL: coordinates below are percentages (x across from LEFT, y down from TOP). At each of the six stated stop coordinates reserve subdued midtone low-detail ground about 8% of width by 12% of height for a future UI marker and label. No visible box or artificial clearing outline. Paint each distinctive landmark IMMEDIATELY ABOVE its coordinate, its approach/foot at the point; location tolerance about 3%. Six landmarks need distinct silhouettes and breathing room even at 340-pixel viewing width. The brief's coordinates are layout instructions only and MUST NOT be printed.\nPaint one continuous believable narrow worn physical road/trail from the stated start through all six stop coordinates IN ORDER, conforming to terrain, crossing streams and gorges physically. Route should be easily followable, including in the quiet areas, but should be an ordinary earth/paving road integrated into land, never a highlighted game path or an unrealistically huge highway. No shortcuts bypassing a stop. A few secondary traces can be subordinate. Put detail at the landmarks and simplify terrain between, with a few large coherent value shapes. All architecture, bridges, stairs, sluices must visibly connect, with abutments and roads on BOTH ends. The landscape fills every edge; no parchment, tabletop, frame, or decorative cartography.\nAbsolutely NO text, letters, words, numbers, titles, labels, pins, circles, seals, dots, compass, arrows, dashed lines, glowing/highlighted routes, UI, political borders, emblems, logos or watermarks. No battle, gore, corpses, gold scars/threads, gods, apocalyptic effects. No photograph, satellite imagery, 3D render, vector map, game screenshot, anime. No oversized creatures. Tiny people only when purposeful; do not insert cosmopolitan fantasy crowds.\n\nFERVOR — huge dry southern interior and red foothills, HOT OPEN country in low LATE-AFTERNOON SUN with long shadows. Ember orange, iron, soot, dry ochre; small contained campfires dotted sparingly. No lava, volcano, apocalyptic sky, no sky band. Restless free bands moving toward a newcomer's attempt to establish a throne. The region feels expansive and alive, with scattered small camps, not a wasteland apocalypse.\nContinuous main trail: start upper-left (3,6), descend to (14,22), sweep east-northeast to (44,15), southeast to (76,27), turn southwest to (52,50), then west-southwest to (22,62), finally take a lower sweeping east-southeast arc to (70,80). Do not shortcut the toll station. Road adapts to dry terrain and rock. Minor camp tracks secondary.\nSix landmarks immediately ABOVE coordinate:\n1 (14,22): small ring of russet tents and plain banners surrounding an open gathering ground, tiny local band holding a vote around ONE small fire, no parade or charging army. Spatially compact encampment, not an enormous arena.\n2 (44,15): long line of tiny wagons, pack animals and awnings drawn up on a DRY river crossing, portable market which could leave by morning. Distinguish market's linear silhouette from circular moot. Tiny figures and vehicles naturally scaled.\n3 (76,27): broad bright pale salt pan with a small WORKING camp on its near edge and loaded carts. Brightest landform, but keep the actual stop point and label ground just below it an ordinary subdued earth midtone.\n4 (52,50): deep winding RED ROCK GORGE, a believable narrow rope bridge joins BOTH rims exactly where the trail crosses. Visible anchor points, bridge deck, matching trail approaches, no disconnected bridge. Tiny lone giant carrying a load along the far rim; moderately larger than nearby humanoids, not a monumental colossus. Gargantuan landform makes scale clear.\n5 (22,62): an orderly stone toll station and short wall block a gap in hills. Queue of small carts at its gate. The road visibly enters the gate and continues on the other side, then sweeps toward the final hill, not under mountains.\n6 (70,80): naturally stepped hill with a very small ANCIENT STONE SEAT standing alone at the summit, open to the sky; fresh ring of tents and scaffolding at its base imply someone's claim. This is emphatically NOT a castle, temple, grand palace, giant statue or throne sculpted into a mountain. The road reaches a quiet forecourt at the coordinate and a narrow climbing path/stair leads to the top immediately above.\nConsistent landscape scale, tiny camps and a few purposeful people only. Avoid a demographic or multi-species sampler. Big broad regions of quiet sunlit ground and restrained brushwork between crisp landmark silhouettes.",
+      "final_edit_prompt": "Use case: precise-object-edit. Preserve this 1536x1024 full-bleed 3:2 Fervor campaign painting: color, brushwork, perspective, moot upper left, moving market top, salt pan upper right, red gorge, bridge, toll station and main road. Make ONE localized adjustment to the final hill and camp in the lower right. The game's final stop is at (70% from LEFT,80% from TOP). Shift/recompose the stepped hill and very small ancient stone seat LEFT so the seat is directly above that point, at x70%, y68–70%; the current seat at x79% is too far right. Keep the seat small, alone on the open-air hilltop, with physically connected worn steps descending to its foot. Place the fresh tents and scaffolding around its sides, not on the central approach. At x70%,y80% leave a QUIET MIDTONE EARTH FORECOURT approximately 8% image width and 12% image height for a future marker. The main road from the toll wall must visibly connect to the forecourt and then the hill steps. Keep the hill shape credible and the old seat tiny, not a castle or huge throne. The occupied hill/camp should now be centered roughly at 70% across. Blend the vacated area naturally into dry foothills. All other five landmarks and road sequence stay the same. No text, symbols, numbers, outlines, pins or interface. Do not draw the marker.",
+      "generation_mode": "generate then targeted edit",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-9c6ca224-f5bd-49d1-b5cd-a4cc9af90750.png",
+      "preview": "previews/map-fervor.png",
+      "sha256": "ed68a0cb6cfd197be0d16d77534d0f3baeec05b44b3b0a62933f60b4bc3c77ae",
+      "bytes": 3169667
+    },
+    {
+      "alignment": "genesis",
+      "title": "The Green Return",
+      "file": "map-genesis.png",
+      "status": "proposed",
+      "start": {
+        "x": 97,
+        "y": 6
+      },
+      "stops": [
+        {
+          "number": 1,
+          "id": "grove",
+          "title": "The mother grove",
+          "x": 84,
+          "y": 16
+        },
+        {
+          "number": 2,
+          "id": "reedways",
+          "title": "The reedways",
+          "x": 58,
+          "y": 24
+        },
+        {
+          "number": 3,
+          "id": "crossing",
+          "title": "The herd's crossing",
+          "x": 70,
+          "y": 52
+        },
+        {
+          "number": 4,
+          "id": "cut",
+          "title": "The cut line",
+          "x": 42,
+          "y": 46
+        },
+        {
+          "number": 5,
+          "id": "dam",
+          "title": "The dam",
+          "x": 48,
+          "y": 76
+        },
+        {
+          "number": 6,
+          "id": "city",
+          "title": "The green city",
+          "x": 16,
+          "y": 72
+        }
+      ],
+      "generation_prompt": "Use case: stylized-concept.\nAsset type: illustrated fantasy campaign map background for Breachline. Create one complete full-bleed landscape PNG, exactly 1536 x 1024 pixels, 3:2.\nTraditional oil and acrylic fantasy painting, rich but economical visible brushwork, sophisticated color and atmosphere. VERY HIGH steep three-quarter bird's-eye view of a believable broad stretch of country. No horizon and no sky band. This must read as a navigable regional MAP. Consistent geographic scale throughout: forests are continuous finely textured canopy masses with tiny trees, settlements and buildings occupy credible small footprints. NEVER oversized pictorial tree or building map symbols, no toy diorama. This is a new independent region; do not copy any previous map. Natural terrain rhythm, landforms and waterways make physical sense.\nCOMPOSITION IS FUNCTIONAL: coordinates below are percentages (x across from LEFT, y down from TOP). At each of the six stated stop coordinates reserve subdued midtone low-detail ground about 8% of width by 12% of height for a future UI marker and label. No visible box or artificial clearing outline. Paint each distinctive landmark IMMEDIATELY ABOVE its coordinate, its approach/foot at the point; location tolerance about 3%. Six landmarks need distinct silhouettes and breathing room even at 340-pixel viewing width. The brief's coordinates are layout instructions only and MUST NOT be printed.\nPaint one continuous believable narrow worn physical road/trail from the stated start through all six stop coordinates IN ORDER, conforming to terrain, crossing streams and gorges physically. Route should be easily followable, including in the quiet areas, but should be an ordinary earth/paving road integrated into land, never a highlighted game path or an unrealistically huge highway. No shortcuts bypassing a stop. A few secondary traces can be subordinate. Put detail at the landmarks and simplify terrain between, with a few large coherent value shapes. All architecture, bridges, stairs, sluices must visibly connect, with abutments and roads on BOTH ends. The landscape fills every edge; no parchment, tabletop, frame, or decorative cartography.\nAbsolutely NO text, letters, words, numbers, titles, labels, pins, circles, seals, dots, compass, arrows, dashed lines, glowing/highlighted routes, UI, political borders, emblems, logos or watermarks. No battle, gore, corpses, gold scars/threads, gods, apocalyptic effects. No photograph, satellite imagery, 3D render, vector map, game screenshot, anime. No oversized creatures. Tiny people only when purposeful; do not insert cosmopolitan fantasy crowds.\n\nGENESIS — deep eastern forests following ONE GREAT INLAND RIVER flowing from upper right to lower left, NOT coast or islands. Widely varied deep greens, moss, bark brown and amber, dappled moving-cloud DAYLIGHT, pools of sun across forest. Large natural forest canopy masses at credible scale, not giant pictorial trees. Nature is varied and active, interrupted by recent industry, ending at an Old Empire city reclaimed by vegetation.\nThe main river starts near (95,4), flows past the spring at (84,16), through fen at (58,24), bends southeast toward the herd ford at (70,52), then curves west/south to reservoir and dam near (48,70), continues below dam as a much reduced trickle southwest past the old city at (16,72) and exits bottom left. Make drainage and dam hydraulics physically coherent.\nMain continuous land trail: start top-right (97,6), to (84,16), west to (58,24), southeast to (70,52), northwest to (42,46), south to (48,76), then west to (16,72). It follows riverbanks where natural, with dry-land detours to the logging strip and city. It must connect through all six points; do not turn it into a separate river or a direct shortcut to the city. Provide physical crossings wherever needed. The trail after dam follows the low downstream bank toward the inland ruined city.\nSix landmarks immediately ABOVE coordinates:\n1 (84,16): venerable old grove around a clear small spring, distinguishable through several ancient crowns within the continuous canopy. Actual trees remain naturally scaled, not map symbols. One tiny alderkin living tree person and one tiny person planting together: minor purposeful activity, not a repeated water-infrastructure worker scene.\n2 (58,24): wide fen threaded with connected channels, low reed paths, tiny flat boats and one or two tiny long-bodied reedcrown grazers in shallow water, with branching reedlike back crests. Wetland a contrasting open textured mass among woodland, not an ocean.\n3 (70,52): broad grassy opening with a small herd of large but credible roughly elephant-sized beasts fording the river at shallow water, a few minuscule people watch from the bank. Not colossal creatures. River banks and trail ford visibly connect. No fantasy dinosaur spectacle.\n4 (42,46): hard straight STRIP OF STUMPS through forest, a modest logging camp, stacked timber and new road. The clear straight geometry is the primary visual exception to organic canopy, without making the whole forest into a grid.\n5 (48,76): new brass-and-stone dam situated immediately above marker, physically spans the whole channel between solid banks. Deep still reservoir unmistakably UPSTREAM above the dam; thin stream DOWNSTREAM below it. Connected maintenance path crosses or skirts the dam and leads onto quiet downstream marker ground. The engineering is striking and capable but clearly an intrusive barrier in the woodland, not a magical mega-wall.\n6 (16,72): EXTENSIVE ruined inland Old Empire city spread into the left/lower-left forest, great stone halls split by mature roots, roofless interiors full of green. Broad footprint of many naturally small ruined blocks, not one oversized landmark building. Mixed vegetation: moss, ferns, saplings, canopy trees, grasses, varied growth rather than uniform ivy. Not flooded, not in sea. Main recognizable roofless hall just ABOVE marker; quiet overgrown street court at its foot for the future marker.\nNo Stonehorn, Opaline Kin, giant beasts or crowds. Soft textured forest canopies with selective edges, coherent open river and meadow shapes, no flat green fill, six individually legible landmarks.",
+      "final_edit_prompt": "Use case: precise-object-edit. Preserve the supplied 1536x1024 full-bleed 3:2 Genesis map: bird's-eye view, rich varied forest greens, spring/grove upper right, fen, beasts at ford, logging strip, overgrown imperial city, all regional positions and original painting style. Make ONE localized functional correction to the dam and its downstream approach in the lower middle. The dam is restricting the river: replace the huge cascading spillway flow with mostly DRY dark spillway stone and ONLY ONE VERY THIN TRICKLE of water below. Keep broad still water behind/upstream of the dam. The trickle runs through a narrow channel curving southwest toward the lower-left edge. Expose weathered gravel and pale rock downstream where the river was, so there is a continuous traversable narrow natural trail/stone apron across the downstream approach passing through exactly (48% across from LEFT,76% down from TOP). Provide subdued MIDTONE low-detail dry ground around that point about 8% wide by 12% tall, with the dam structure immediately ABOVE it. Adjust the dam a little upward if needed to make this space. The marker location must be dry ground, not water or structure. The existing route from the logging camp must reach this dry approach, then continue visibly left to the ruined city's entry, so all six stops remain connected. The still reservoir must remain upstream, the tiny flow downstream, and the dam must connect to BOTH solid banks. Do not add a second river or reservoir. Preserve the handsome brass-and-stone engineering, but show that it has severely reduced downstream flow. No text, markers, circles, labels, UI or overlays. No other scene changes.",
+      "generation_mode": "generate then targeted edit",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1b137-08c9-75a1-bc9e-320210cf5aa0/exec-8e2e64d6-e1c0-4d81-b547-3350247ae9f0.png",
+      "preview": "previews/map-genesis.png",
+      "sha256": "0e7e7759863d96b5d444703dc6ca5e675a00e3ec93f9ae9dbbd29d05a7901890",
+      "bytes": 3293984
+    }
+  ],
+  "quality_review": {
+    "image_dimensions": "Verified: all five final PNGs are 1536 x 1024.",
+    "phone_width_pixels": 340,
+    "route_and_landmark_review": "Visually inspected at 340px width; six distinct terrain/landmark areas and followable routes.",
+    "corrections": [
+      "Dominion: enlarged island forecourt beneath the central palace for the final marker.",
+      "Fervor: shifted final hill and seat left to align with the approach at x70%.",
+      "Genesis: reduced dam outflow to a thin trickle and exposed the downstream approach."
+    ],
+    "review_page": "Static local HTML with optional marker overlay and phone-width mode. Browser preview was unavailable because local file URLs are blocked; image QA used direct file viewing."
+  }
+}

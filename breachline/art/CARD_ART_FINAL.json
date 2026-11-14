@@ -809,11 +809,23 @@
         1536,
         1024
       ],
-      "sha256": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
-      "web_sha256": "187e41356d8a28d39f61ce149659806dc5b254fca749409b9e6ed5b2df5d0c75",
+      "sha256": "cfe37385d97b17a0302aa69fa5ebb1fa50ac849ea1efb725700a8106259a3dda",
+      "web_sha256": "fc09081778abf1abfe1571787fed4d05e12e8bf203ffa3ed7898d385f3ffc522",
       "card_ids": [
         "land_w"
-      ]
+      ],
+      "art_history": [
+        {
+          "date": "2026-11-14",
+          "sha256": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+          "web_sha256": "187e41356d8a28d39f61ce149659806dc5b254fca749409b9e6ed5b2df5d0c75",
+          "reason": "Previous land artwork; replaced with creator-finalized set14 wildlife edit."
+        }
+      ],
+      "selection_code": "S14-L1",
+      "art_revision": 2,
+      "finalized_at": "2026-11-14",
+      "selection_record": "reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/prompts-and-manifest.json"
     },
     {
       "id": "cinder-peaks",
@@ -849,11 +861,23 @@
         1536,
         1024
       ],
-      "sha256": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
-      "web_sha256": "89fe873a3a80d857cce4bfc6a325fc4aae988c3709c35c677d55af405d77659d",
+      "sha256": "147dd32bac6eac2769d2a4b02928e7f7cdab484384ad803e1c1521cb593fc19d",
+      "web_sha256": "99e85efcf3cadd9ef5cf0724c01a3656dd7930548d4794cf665f8447ec4d1e71",
       "card_ids": [
         "land_u"
-      ]
+      ],
+      "art_history": [
+        {
+          "date": "2026-11-14",
+          "sha256": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+          "web_sha256": "89fe873a3a80d857cce4bfc6a325fc4aae988c3709c35c677d55af405d77659d",
+          "reason": "Previous land artwork; replaced with creator-finalized set14 wildlife edit."
+        }
+      ],
+      "selection_code": "S14-L3",
+      "art_revision": 2,
+      "finalized_at": "2026-11-14",
+      "selection_record": "reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/prompts-and-manifest.json"
     },
     {
       "id": "militia-spearman",
@@ -1209,11 +1233,23 @@
         1536,
         1024
       ],
-      "sha256": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
-      "web_sha256": "6434025f78d120a36268c27de181e3037102361a494154275e3eeba12351385e",
+      "sha256": "cdfa70c78b529e015b3d08aae75d04a22383190c5c36bc40e8a09c8642f1bea1",
+      "web_sha256": "fbfbc7bcc14d73f419cf063c40613e7f6d175031632364c794d509e5b32c8e38",
       "card_ids": [
         "land_g"
-      ]
+      ],
+      "art_history": [
+        {
+          "date": "2026-11-14",
+          "sha256": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+          "web_sha256": "6434025f78d120a36268c27de181e3037102361a494154275e3eeba12351385e",
+          "reason": "Previous land artwork; replaced with creator-finalized set14 wildlife edit."
+        }
+      ],
+      "selection_code": "S14-L2",
+      "art_revision": 1,
+      "finalized_at": "2026-11-14",
+      "selection_record": "reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/prompts-and-manifest.json"
     },
     {
       "id": "water-carrier",
@@ -3674,5 +3710,7 @@
       "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
       "source_manifest": "CARD_ART_FINAL_SET12.json"
     }
-  ]
+  ],
+  "updated_at": "2026-11-14",
+  "set14_selection": "reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/prompts-and-manifest.json"
 }

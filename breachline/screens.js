@@ -885,7 +885,7 @@ var Screens = (function () {
       '<button type="button" class="btn" ' + act('closeArt') + '>Close</button>';
     v.hidden = false;
     // Finished card art sits in art/, earlier concept paintings in art/concepts/.
-    var img = v.querySelector('img'), name = src.replace('art/web/', '').replace(/\.jpg$/, '.png');
+    var img = v.querySelector('img'), name = src.replace('art/web/', '').replace(/\.jpg(?=\?|$)/, '.png');
     (function tryFull(dirs) {
       if (!dirs.length) return;
       var full = new Image();

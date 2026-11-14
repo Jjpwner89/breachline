@@ -1,0 +1,1170 @@
+{
+  "batch": "set14-wildlife-maps-and-lands-2026-11-14",
+  "date": "2026-11-14",
+  "status": "final_installed",
+  "generator": "built-in image_gen",
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET14.md",
+  "brief_revision": 1,
+  "creator_direction": "Nature and creature oriented; background creatures may remain subtle and need not take the focus of the painting.",
+  "scope": "Finalized local wildlife edits to four campaign maps and three land paintings. Gnosis is final as reviewed with Undertow only; any future Veilwing addition is separate.",
+  "optional_elements": "Omitted Fanback, caravan substitutions, Crested bird and Coppernape to keep additions restrained.",
+  "live_installation": "All seven reviewed images installed in existing PNG and game JPEG locations on 2026-11-14.",
+  "items": [
+    {
+      "code": "S14-M1",
+      "title": "The Green Return",
+      "file": "map-genesis.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-genesis.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-genesis.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/elder-herd-bull.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "cells": [
+        "L15 full reference",
+        "G2-3 top-right only"
+      ],
+      "description": "Elder Herd bulls cross the ford with the existing walkers, and Gravelmouths feed in the marsh shallows. The forest, water and settlements remain the main subjects; this placement does not define a species-wide range.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nReplace ONLY the four elephants at the river ford right of centre (around 72–82% across, 47–50% down) with the same-size small family of Elder Herd bulls from IMAGE 2: massive brown shaggy shoulders, bowed heavy horns sweeping out and upward, broad bovine heads, sturdy four-legged bodies and ordinary brush tails. Preserve the walkers alongside, their positions and scale, and the shallow river. No elephant trunks or ears remain.\nReplace ONLY the two deer-like animals in the upper-middle marsh (around 44–49% across, 21–24% down) with two quiet Gravelmouths. From IMAGE 3 use ONLY TOP-RIGHT cell 3: broad green-olive mottled aquatic plant grazer, rounded blunt head, short steering flippers and muscular tapering rear body. They float/settle partly submerged among the existing reeds, with backs and heads just visible. Do not give them deer legs. Same modest visual footprint as the replaced deer; no zoom. Do not use other animals from the sheet or add other creatures.\nMarker keep-clear positions in % across/down: 84,16; 58,24; 39,41; 48,76; 16,72.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "0e7e7759863d96b5d444703dc6ca5e675a00e3ec93f9ae9dbbd29d05a7901890",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-59426be5-7ff4-4c40-9338-4d844ba2569b.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-genesis.png",
+      "sha256": "037618f2317cb00fd358c232e98af292a70ffb143e9cc80343de265e15754734",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_check": "Inspected full view and enlarged wildlife patches: preserved original global colour, light, detail and landmarks; clean local joins. Verified saved PNG has zero changed RGB pixels outside the finite wildlife masks.",
+      "version": 2,
+      "live_source_unchanged": false,
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-genesis-v1-full-repaint.png",
+          "sha256": "049cceb16319cc85ffbf91c77377bdfda36af6b9c94af6e95c2632d6eac0d568",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-59426be5-7ff4-4c40-9338-4d844ba2569b.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nReplace ONLY the four elephants at the river ford right of centre (around 72–82% across, 47–50% down) with the same-size small family of Elder Herd bulls from IMAGE 2: massive brown shaggy shoulders, bowed heavy horns sweeping out and upward, broad bovine heads, sturdy four-legged bodies and ordinary brush tails. Preserve the walkers alongside, their positions and scale, and the shallow river. No elephant trunks or ears remain.\nReplace ONLY the two deer-like animals in the upper-middle marsh (around 44–49% across, 21–24% down) with two quiet Gravelmouths. From IMAGE 3 use ONLY TOP-RIGHT cell 3: broad green-olive mottled aquatic plant grazer, rounded blunt head, short steering flippers and muscular tapering rear body. They float/settle partly submerged among the existing reeds, with backs and heads just visible. Do not give them deer legs. Same modest visual footprint as the replaced deer; no zoom. Do not use other animals from the sheet or add other creatures.\nMarker keep-clear positions in % across/down: 84,16; 58,24; 39,41; 48,76; 16,72.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-genesis.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/elder-herd-bull.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "review_status": "creator_disliked_colour_and_light_drift",
+          "feedback": "the edits to the lands were good - to the campaign, not so much - they changes the saturation and in some cases the lighting of the overall painting in a way i did not like"
+        }
+      ],
+      "composite_provenance": {
+        "code": "S14-M1",
+        "name": "map-genesis.png",
+        "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+        "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-genesis.png",
+        "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-genesis-v1-full-repaint.png",
+        "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-genesis.png",
+        "patches": [
+          {
+            "points": [
+              [
+                1051,
+                471
+              ],
+              [
+                1081,
+                462
+              ],
+              [
+                1108,
+                438
+              ],
+              [
+                1118,
+                444
+              ],
+              [
+                1112,
+                462
+              ],
+              [
+                1143,
+                478
+              ],
+              [
+                1157,
+                472
+              ],
+              [
+                1170,
+                460
+              ],
+              [
+                1178,
+                463
+              ],
+              [
+                1175,
+                476
+              ],
+              [
+                1193,
+                477
+              ],
+              [
+                1211,
+                457
+              ],
+              [
+                1227,
+                458
+              ],
+              [
+                1249,
+                436
+              ],
+              [
+                1260,
+                441
+              ],
+              [
+                1255,
+                454
+              ],
+              [
+                1286,
+                463
+              ],
+              [
+                1300,
+                490
+              ],
+              [
+                1286,
+                514
+              ],
+              [
+                1240,
+                518
+              ],
+              [
+                1170,
+                528
+              ],
+              [
+                1080,
+                527
+              ],
+              [
+                1054,
+                504
+              ]
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1043,
+              "top": 428,
+              "width": 265,
+              "height": 108
+            },
+            "target_box": {
+              "left": 1043,
+              "top": 428,
+              "width": 265,
+              "height": 108
+            },
+            "pixels_in_support": 15789,
+            "iterations": 166,
+            "boundary_residual": 0.014970779418945312
+          },
+          {
+            "points": [
+              [
+                646,
+                213
+              ],
+              [
+                666,
+                203
+              ],
+              [
+                693,
+                200
+              ],
+              [
+                704,
+                191
+              ],
+              [
+                721,
+                195
+              ],
+              [
+                724,
+                213
+              ],
+              [
+                739,
+                220
+              ],
+              [
+                732,
+                235
+              ],
+              [
+                695,
+                247
+              ],
+              [
+                649,
+                244
+              ]
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 638,
+              "top": 183,
+              "width": 109,
+              "height": 72
+            },
+            "target_box": {
+              "left": 638,
+              "top": 183,
+              "width": 109,
+              "height": 72
+            },
+            "pixels_in_support": 3994,
+            "iterations": 72,
+            "boundary_residual": 0.014867782592773438
+          },
+          {
+            "points": [
+              [
+                706,
+                215
+              ],
+              [
+                723,
+                211
+              ],
+              [
+                741,
+                227
+              ],
+              [
+                775,
+                228
+              ],
+              [
+                818,
+                240
+              ],
+              [
+                833,
+                245
+              ],
+              [
+                822,
+                258
+              ],
+              [
+                777,
+                267
+              ],
+              [
+                721,
+                270
+              ],
+              [
+                699,
+                253
+              ]
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 691,
+              "top": 203,
+              "width": 150,
+              "height": 75
+            },
+            "target_box": {
+              "left": 691,
+              "top": 203,
+              "width": 150,
+              "height": 75
+            },
+            "pixels_in_support": 5246,
+            "iterations": 90,
+            "boundary_residual": 0.01475970447063446
+          }
+        ],
+        "total_pixels": 1572864,
+        "mask_pixels": 24052,
+        "mask_percent": 1.5291849772135417,
+        "changed_pixels": 23623,
+        "outside_mask_changed_pixels": 0,
+        "max_outside_channel_difference": 0,
+        "sha256": "037618f2317cb00fd358c232e98af292a70ffb143e9cc80343de265e15754734",
+        "verification_after_png_save": {
+          "outside_mask_changed_pixels": 0
+        },
+        "script": "composite-work/compose-local-maps.cjs",
+        "mask": "composite-work/corrected/map-genesis-mask.png"
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-genesis.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-genesis.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/maps/map-genesis.jpg",
+        "previous_png_sha256": "0e7e7759863d96b5d444703dc6ca5e675a00e3ec93f9ae9dbbd29d05a7901890",
+        "previous_jpeg_sha256": "92aa8468955aeb2eacb529829c9a7818b70ca13f53f2f28eb6de8deb3d5b7c01",
+        "png_sha256": "037618f2317cb00fd358c232e98af292a70ffb143e9cc80343de265e15754734",
+        "jpeg_sha256": "5e9fca2581afb253ef81aaf7a7c773e19a1ef053b334db81fc101c727fd8c86e",
+        "jpeg_dimensions": [
+          1536,
+          1024
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-M2",
+      "title": "The Long Survey",
+      "file": "map-gnosis.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-gnosis.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-gnosis.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/fr3-undertow.png"
+      ],
+      "cells": [
+        "FR3 preferred revision"
+      ],
+      "description": "A small glimpse of Undertow breaks the open sea north of Ambrel, with a restrained wake. The separate Veilwing survey-flight addition is pending the creator’s set 13 harness selection.",
+      "dependency": "None for this finalized current image. Any future Veilwing addition requires the separate S13-06 harness choice.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nMake ONLY one tiny addition in the open sea near 92% across and 19% down, well offshore and well north of the city. Show Undertow from IMAGE 2 swimming just below the surface: long teal rounded back, rounded blunt front, one continuous modestly projecting fin on each side with flatter edges, and a small rear triangular tail. The animal is largely concealed under the blue-green water; just a back and parts of the side fins break the surface with a soft thin wake. Its entire silhouette plus wake should occupy roughly 5–6% of canvas width and 2–3% of canvas height, seen from the same high viewpoint. Do not show a looming full-body monster, open mouth, huge splash or dramatic spotlight. It should take a second look to notice. No flying creature in this pass.\nMarker keep-clear positions in % across/down: 86,76; 62,62; 38,74; 17,52; 40,30; 15,18.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "c8c82cae06cf9619b079ddf8fdad27deb4fdea6849ca9357925f4fbe0934bc99",
+      "version": 2,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-8ba3d653-3aae-46d3-bae1-fee1f517ce2c.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-gnosis.png",
+      "sha256": "9809ae566bfd4a6008201cbbb727d2e35646a3e4b4b415ea0df46ff7561fabaf",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_check": "Inspected full view and enlarged wildlife patches: preserved original global colour, light, detail and landmarks; clean local joins. Verified saved PNG has zero changed RGB pixels outside the finite wildlife masks.",
+      "live_source_unchanged": false,
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-gnosis-v1-full-repaint.png",
+          "sha256": "d37b4bfed36009b868a075a207ce36e9363e8cd7f41888c09a097b7a9887364e",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-8ba3d653-3aae-46d3-bae1-fee1f517ce2c.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nMake ONLY one tiny addition in the open sea near 92% across and 19% down, well offshore and well north of the city. Show Undertow from IMAGE 2 swimming just below the surface: long teal rounded back, rounded blunt front, one continuous modestly projecting fin on each side with flatter edges, and a small rear triangular tail. The animal is largely concealed under the blue-green water; just a back and parts of the side fins break the surface with a soft thin wake. Its entire silhouette plus wake should occupy roughly 5–6% of canvas width and 2–3% of canvas height, seen from the same high viewpoint. Do not show a looming full-body monster, open mouth, huge splash or dramatic spotlight. It should take a second look to notice. No flying creature in this pass.\nMarker keep-clear positions in % across/down: 86,76; 62,62; 38,74; 17,52; 40,30; 15,18.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-gnosis.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/fr3-undertow.png"
+          ],
+          "review_status": "creator_disliked_colour_and_light_drift",
+          "feedback": "the edits to the lands were good - to the campaign, not so much - they changes the saturation and in some cases the lighting of the overall painting in a way i did not like"
+        }
+      ],
+      "composite_provenance": {
+        "code": "S14-M2",
+        "name": "map-gnosis.png",
+        "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+        "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-gnosis.png",
+        "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-gnosis-v1-full-repaint.png",
+        "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-gnosis.png",
+        "patches": [
+          {
+            "points": [
+              [
+                1323,
+                211
+              ],
+              [
+                1354,
+                205
+              ],
+              [
+                1374,
+                193
+              ],
+              [
+                1422,
+                189
+              ],
+              [
+                1468,
+                174
+              ],
+              [
+                1481,
+                176
+              ],
+              [
+                1473,
+                188
+              ],
+              [
+                1485,
+                192
+              ],
+              [
+                1450,
+                201
+              ],
+              [
+                1434,
+                216
+              ],
+              [
+                1381,
+                230
+              ],
+              [
+                1338,
+                231
+              ],
+              [
+                1318,
+                223
+              ]
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1310,
+              "top": 166,
+              "width": 183,
+              "height": 73
+            },
+            "target_box": {
+              "left": 1310,
+              "top": 166,
+              "width": 183,
+              "height": 73
+            },
+            "pixels_in_support": 4968,
+            "iterations": 85,
+            "boundary_residual": 0.014600753784179688
+          }
+        ],
+        "total_pixels": 1572864,
+        "mask_pixels": 4968,
+        "mask_percent": 0.31585693359375,
+        "changed_pixels": 4665,
+        "outside_mask_changed_pixels": 0,
+        "max_outside_channel_difference": 0,
+        "sha256": "9809ae566bfd4a6008201cbbb727d2e35646a3e4b4b415ea0df46ff7561fabaf",
+        "verification_after_png_save": {
+          "outside_mask_changed_pixels": 0
+        },
+        "script": "composite-work/compose-local-maps.cjs",
+        "mask": "composite-work/corrected/map-gnosis-mask.png"
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-gnosis.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-gnosis.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/maps/map-gnosis.jpg",
+        "previous_png_sha256": "c8c82cae06cf9619b079ddf8fdad27deb4fdea6849ca9357925f4fbe0934bc99",
+        "previous_jpeg_sha256": "c40654950399e571ac8fa6139860668f7b2903ce4f52b4fcefd558f05505c87e",
+        "png_sha256": "9809ae566bfd4a6008201cbbb727d2e35646a3e4b4b415ea0df46ff7561fabaf",
+        "jpeg_sha256": "adfbe9a11c63977afbb37b44a80654332b82896021b4567cea73cfc1fe6be28b",
+        "jpeg_dimensions": [
+          1536,
+          1024
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-M3",
+      "title": "No Throne",
+      "file": "map-fervor.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-fervor.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-fervor.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "cells": [
+        "G2-5 bottom-middle only"
+      ],
+      "description": "A distant group of Salt-flat migrants crosses the far salt flat beyond the workings. Their small silhouettes sit within the existing warm landscape, with the market and caravans preserved.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nAdd a loose quiet group of FIVE Salt-flat migrants crossing the far salt flat at upper right, around 84–94% across and 10–14% down, well beyond and above the salt-pan works. Each animal is only about 12–20 pixels long on this 1536-pixel-wide map, with a tiny shadow in the existing light; the whole herd is a modest scattering, not a large foreground motif. Use ONLY BOTTOM-MIDDLE cell 5 of IMAGE 2: narrow high body, very long jointed legs, low-reaching soft-lipped head, patchy tawny-and-cream hide and short tail. Preserve their unfamiliar leaning proportions; not deer, camels, horses or conventional cattle. Some may have lowered heads. Match the aerial viewpoint and painting; no individually rendered eyes or decorative details. Keep all existing caravans, draft animals, people and roads unchanged. No other new creatures.\nMarker keep-clear positions in % across/down: 14,22; 44,15; 76,27; 47,46; 22,62; 70,80.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "ed68a0cb6cfd197be0d16d77534d0f3baeec05b44b3b0a62933f60b4bc3c77ae",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-10dc4570-7258-466c-ba8c-319caedf481d.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-fervor.png",
+      "sha256": "9135928461cb5ba76390b8c42d0bd28afb819d3c5a765ee83afa39210d80d425",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_check": "Inspected full view and enlarged wildlife patches: preserved original global colour, light, detail and landmarks; clean local joins. Verified saved PNG has zero changed RGB pixels outside the finite wildlife masks.",
+      "version": 2,
+      "live_source_unchanged": false,
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-fervor-v1-full-repaint.png",
+          "sha256": "99b621ef2ba8ba5338ee6010800cf13eb09123125c0cb430d9fbd35e3a16c2e1",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-10dc4570-7258-466c-ba8c-319caedf481d.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nAdd a loose quiet group of FIVE Salt-flat migrants crossing the far salt flat at upper right, around 84–94% across and 10–14% down, well beyond and above the salt-pan works. Each animal is only about 12–20 pixels long on this 1536-pixel-wide map, with a tiny shadow in the existing light; the whole herd is a modest scattering, not a large foreground motif. Use ONLY BOTTOM-MIDDLE cell 5 of IMAGE 2: narrow high body, very long jointed legs, low-reaching soft-lipped head, patchy tawny-and-cream hide and short tail. Preserve their unfamiliar leaning proportions; not deer, camels, horses or conventional cattle. Some may have lowered heads. Match the aerial viewpoint and painting; no individually rendered eyes or decorative details. Keep all existing caravans, draft animals, people and roads unchanged. No other new creatures.\nMarker keep-clear positions in % across/down: 14,22; 44,15; 76,27; 47,46; 22,62; 70,80.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-fervor.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "review_status": "creator_disliked_colour_and_light_drift",
+          "feedback": "the edits to the lands were good - to the campaign, not so much - they changes the saturation and in some cases the lighting of the overall painting in a way i did not like"
+        }
+      ],
+      "composite_provenance": {
+        "code": "S14-M3",
+        "name": "map-fervor.png",
+        "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+        "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-fervor.png",
+        "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-fervor-v1-full-repaint.png",
+        "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-fervor.png",
+        "patches": [
+          {
+            "ellipse": [
+              1320,
+              141,
+              19,
+              14
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1293,
+              "top": 119,
+              "width": 54,
+              "height": 44
+            },
+            "target_box": {
+              "left": 1293,
+              "top": 119,
+              "width": 54,
+              "height": 44
+            },
+            "pixels_in_support": 996,
+            "iterations": 35,
+            "boundary_residual": 0.014637313783168793
+          },
+          {
+            "ellipse": [
+              1366,
+              125,
+              18,
+              13
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1340,
+              "top": 104,
+              "width": 52,
+              "height": 42
+            },
+            "target_box": {
+              "left": 1340,
+              "top": 104,
+              "width": 52,
+              "height": 42
+            },
+            "pixels_in_support": 888,
+            "iterations": 23,
+            "boundary_residual": 0.014091312885284424
+          },
+          {
+            "ellipse": [
+              1400,
+              109,
+              18,
+              12
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1374,
+              "top": 89,
+              "width": 52,
+              "height": 40
+            },
+            "target_box": {
+              "left": 1374,
+              "top": 89,
+              "width": 52,
+              "height": 40
+            },
+            "pixels_in_support": 835,
+            "iterations": 42,
+            "boundary_residual": 0.014941215515136719
+          },
+          {
+            "ellipse": [
+              1430,
+              141,
+              20,
+              14
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1402,
+              "top": 119,
+              "width": 56,
+              "height": 44
+            },
+            "target_box": {
+              "left": 1402,
+              "top": 119,
+              "width": 56,
+              "height": 44
+            },
+            "pixels_in_support": 1048,
+            "iterations": 47,
+            "boundary_residual": 0.01430724747478962
+          },
+          {
+            "ellipse": [
+              1466,
+              125,
+              19,
+              14
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1439,
+              "top": 103,
+              "width": 54,
+              "height": 44
+            },
+            "target_box": {
+              "left": 1439,
+              "top": 103,
+              "width": 54,
+              "height": 44
+            },
+            "pixels_in_support": 996,
+            "iterations": 47,
+            "boundary_residual": 0.014606177806854248
+          }
+        ],
+        "total_pixels": 1572864,
+        "mask_pixels": 4762,
+        "mask_percent": 0.3027598063151042,
+        "changed_pixels": 4449,
+        "outside_mask_changed_pixels": 0,
+        "max_outside_channel_difference": 0,
+        "sha256": "9135928461cb5ba76390b8c42d0bd28afb819d3c5a765ee83afa39210d80d425",
+        "verification_after_png_save": {
+          "outside_mask_changed_pixels": 0
+        },
+        "script": "composite-work/compose-local-maps.cjs",
+        "mask": "composite-work/corrected/map-fervor-mask.png"
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-fervor.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-fervor.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/maps/map-fervor.jpg",
+        "previous_png_sha256": "ed68a0cb6cfd197be0d16d77534d0f3baeec05b44b3b0a62933f60b4bc3c77ae",
+        "previous_jpeg_sha256": "78215ab16b3f1b400f80d377ae4cdcd771519bbd12fd455a2fb292c0d064c35b",
+        "png_sha256": "9135928461cb5ba76390b8c42d0bd28afb819d3c5a765ee83afa39210d80d425",
+        "jpeg_sha256": "9714237afb478a41cd03a3063aee89378ab077cb19cb660afd56594219373532",
+        "jpeg_dimensions": [
+          1536,
+          1024
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-M4",
+      "title": "The Shrine Road",
+      "file": "map-vigil.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+      ],
+      "cells": [
+        "HV7-1 bottom-left full-body",
+        "LG1-4 bottom-left cell 4"
+      ],
+      "description": "A few Purlrunners pick seed in the meadow, while a low Vaultstalker rests against a rocky ridge. Both additions are small discoveries within the shrine-road landscape, and the camp horses remain.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nAdd THREE tiny Purlrunners picking seed in the open meadow around 50–54% across, 32–34% down, away from the trail and markers. Each occupies only about 10–14 pixels in total length, with legs partly hidden in grass, their blue-grey and copper colour muted by distance. Use ONLY the bottom-LEFT full-body Purlrunner, HV7-1, in its sheet, with that same left-column split-lip face: slate-blue scaled arched body, restrained copper-orange short dorsal fringing, TWO hind legs, a thick tapering tail braced behind, long lowered narrow head with small ears. No forelegs, no alternative middle/right heads. Match the selected silhouette at the small pictured scale. This identity is IMAGE 2.\nAdd ONE camouflaged Vaultstalker lying very low against the rocky ridge around 76% across and 57% down, well clear of roads and buildings. Use only BOTTOM-LEFT cell 4 in IMAGE 3: high pale layered-scaled shoulder arch, long low brown furred rear body and shaggy tail, elongated narrow closed muzzle, heavy forefeet. Approximately 20–25 pixels long at this map scale. It is resting parallel to the rock ledge, partially occluded and easy to overlook, with a small plausible contact shadow, not stalking the foreground or glaring at the viewer.\nPreserve the horses at the riverside camp exactly. Marker keep-clear positions in % across/down: 16,75; 40,81; 58.5,54; 30.5,36; 61,26; 85,19.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "4e35888e5cf5c87efcd4c36c8308a5bd01ec47831b7172f74ded2d1e501483c6",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-da24c6b3-cc0a-4c56-a0f3-54a23d55a685.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-vigil.png",
+      "sha256": "01e6927e2afbb66a52df987343574bce148b7cf5e6bfb6017ac35c379728b142",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-vigil-v1.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-bc834b54-f6e3-4d62-a663-b84b121aaf9c.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nAdd THREE tiny Purlrunners picking seed in the open meadow around 50–54% across, 32–34% down, away from the trail and markers. Each occupies only about 10–14 pixels in total length, with legs partly hidden in grass, their blue-grey and copper colour muted by distance. Use ONLY the bottom-LEFT full-body Purlrunner, HV7-1, in its sheet, with that same left-column split-lip face: slate-blue scaled arched body, restrained copper-orange short dorsal fringing, TWO hind legs, a thick tapering tail braced behind, long lowered narrow head with small ears. No forelegs, no alternative middle/right heads. Match the selected silhouette at the small pictured scale. This identity is IMAGE 2.\nAdd ONE camouflaged Vaultstalker lying very low against the rocky ridge around 76% across and 57% down, well clear of roads and buildings. Use only BOTTOM-LEFT cell 4 in IMAGE 3: high pale layered-scaled shoulder arch, long low brown furred rear body and shaggy tail, elongated narrow closed muzzle, heavy forefeet. Approximately 20–25 pixels long at this map scale. It is resting parallel to the rock ledge, partially occluded and easy to overlook, with a small plausible contact shadow, not stalking the foreground or glaring at the viewer.\nPreserve the horses at the riverside camp exactly. Marker keep-clear positions in % across/down: 16,75; 40,81; 58.5,54; 30.5,36; 61,26; 85,19.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+          ],
+          "review_status": "superseded_by_scale_revision",
+          "reason": "Animal prominence reduced in v2 after assistant visual review; not a creator rejection."
+        },
+        {
+          "version": 2,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-vigil-v2-full-repaint.png",
+          "sha256": "f6af76c06aa7534806a9d7f5ded4bf8b2f547a0195cda8794e0ffe818845470c",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-da24c6b3-cc0a-4c56-a0f3-54a23d55a685.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting. This is a campaign map seen from high above: new animals share the tiny scale of existing people, boats and beasts, and must match the map's viewpoint and local light. Keep overlay marker locations and the space around them clear.\nAdd THREE tiny Purlrunners picking seed in the open meadow around 50–54% across, 32–34% down, away from the trail and markers. Each occupies only about 10–14 pixels in total length, with legs partly hidden in grass, their blue-grey and copper colour muted by distance. Use ONLY the bottom-LEFT full-body Purlrunner, HV7-1, in its sheet, with that same left-column split-lip face: slate-blue scaled arched body, restrained copper-orange short dorsal fringing, TWO hind legs, a thick tapering tail braced behind, long lowered narrow head with small ears. No forelegs, no alternative middle/right heads. Match the selected silhouette at the small pictured scale. This identity is IMAGE 2.\nAdd ONE camouflaged Vaultstalker lying very low against the rocky ridge around 76% across and 57% down, well clear of roads and buildings. Use only BOTTOM-LEFT cell 4 in IMAGE 3: high pale layered-scaled shoulder arch, long low brown furred rear body and shaggy tail, elongated narrow closed muzzle, heavy forefeet. Approximately 20–25 pixels long at this map scale. It is resting parallel to the rock ledge, partially occluded and easy to overlook, with a small plausible contact shadow, not stalking the foreground or glaring at the viewer.\nPreserve the horses at the riverside camp exactly. Marker keep-clear positions in % across/down: 16,75; 40,81; 58.5,54; 30.5,36; 61,26; 85,19.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+          ],
+          "revision_prompt": "Precise local scale correction to this existing 1536x1024 campaign-map painting. Keep every landscape detail and all existing features unchanged. Reduce the ONE brown-and-cream crouching Vaultstalker on the rocky ridge at approximately 83% across, 57% down to 40% of its current width and height, retaining its same low pose and creature shape at the same place on the ledge. Restore ordinary rock and grass in the area vacated by the reduction. It should be partly camouflaged at the foot of the stone, like a small distant wildlife detail, not a large focal beast. Also retain ONLY THREE of the five tiny arched seed-pickers in the central upper meadow: remove the two nearest the lower edge of their group and restore matching grass. Keep the other three at their current size and subdued colour. No other changes: preserve all landmarks, roads, river, shrine, camp horses, people, vegetation, exact light and brushwork.",
+          "revision_refs": [
+            "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-bc834b54-f6e3-4d62-a663-b84b121aaf9c.png"
+          ],
+          "review_status": "creator_disliked_colour_and_light_drift",
+          "feedback": "the edits to the lands were good - to the campaign, not so much - they changes the saturation and in some cases the lighting of the overall painting in a way i did not like"
+        }
+      ],
+      "version": 3,
+      "revision_prompt": "Precise local scale correction to this existing 1536x1024 campaign-map painting. Keep every landscape detail and all existing features unchanged. Reduce the ONE brown-and-cream crouching Vaultstalker on the rocky ridge at approximately 83% across, 57% down to 40% of its current width and height, retaining its same low pose and creature shape at the same place on the ledge. Restore ordinary rock and grass in the area vacated by the reduction. It should be partly camouflaged at the foot of the stone, like a small distant wildlife detail, not a large focal beast. Also retain ONLY THREE of the five tiny arched seed-pickers in the central upper meadow: remove the two nearest the lower edge of their group and restore matching grass. Keep the other three at their current size and subdued colour. No other changes: preserve all landmarks, roads, river, shrine, camp horses, people, vegetation, exact light and brushwork.",
+      "revision_refs": [
+        "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-bc834b54-f6e3-4d62-a663-b84b121aaf9c.png"
+      ],
+      "visual_check": "Inspected full view and enlarged wildlife patches: preserved original global colour, light, detail and landmarks; clean local joins. Verified saved PNG has zero changed RGB pixels outside the finite wildlife masks. Seed-pickers moved onto the actual open meadow because the rejected full repaint had shifted terrain beneath their former positions.",
+      "live_source_unchanged": false,
+      "composite_provenance": {
+        "code": "S14-M4",
+        "name": "map-vigil.png",
+        "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+        "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-vigil.png",
+        "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-vigil-v2-full-repaint.png",
+        "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-vigil.png",
+        "patches": [
+          {
+            "ellipse": [
+              905,
+              322,
+              18,
+              10
+            ],
+            "dx": -106,
+            "dy": -104,
+            "source_box": {
+              "left": 879,
+              "top": 304,
+              "width": 52,
+              "height": 36
+            },
+            "target_box": {
+              "left": 773,
+              "top": 200,
+              "width": 52,
+              "height": 36
+            },
+            "pixels_in_support": 706,
+            "iterations": 32,
+            "boundary_residual": 0.014347553253173828
+          },
+          {
+            "ellipse": [
+              971,
+              310,
+              17,
+              10
+            ],
+            "dx": -133,
+            "dy": -106,
+            "source_box": {
+              "left": 946,
+              "top": 292,
+              "width": 50,
+              "height": 36
+            },
+            "target_box": {
+              "left": 813,
+              "top": 186,
+              "width": 50,
+              "height": 36
+            },
+            "pixels_in_support": 672,
+            "iterations": 34,
+            "boundary_residual": 0.013701438903808594
+          },
+          {
+            "ellipse": [
+              1023,
+              326,
+              17,
+              10
+            ],
+            "dx": -172,
+            "dy": -86,
+            "source_box": {
+              "left": 998,
+              "top": 308,
+              "width": 50,
+              "height": 36
+            },
+            "target_box": {
+              "left": 826,
+              "top": 222,
+              "width": 50,
+              "height": 36
+            },
+            "pixels_in_support": 672,
+            "iterations": 36,
+            "boundary_residual": 0.013471126556396484
+          },
+          {
+            "ellipse": [
+              1267,
+              578,
+              33,
+              22
+            ],
+            "dx": 0,
+            "dy": 0,
+            "source_box": {
+              "left": 1226,
+              "top": 548,
+              "width": 82,
+              "height": 60
+            },
+            "target_box": {
+              "left": 1226,
+              "top": 548,
+              "width": 82,
+              "height": 60
+            },
+            "pixels_in_support": 2557,
+            "iterations": 73,
+            "boundary_residual": 0.014641761779785156
+          }
+        ],
+        "total_pixels": 1572864,
+        "mask_pixels": 4607,
+        "mask_percent": 0.29290517171223956,
+        "changed_pixels": 4451,
+        "outside_mask_changed_pixels": 0,
+        "max_outside_channel_difference": 0,
+        "sha256": "01e6927e2afbb66a52df987343574bce148b7cf5e6bfb6017ac35c379728b142",
+        "verification_after_png_save": {
+          "outside_mask_changed_pixels": 0
+        },
+        "script": "composite-work/compose-local-maps.cjs",
+        "mask": "composite-work/corrected/map-vigil-mask.png"
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/map-vigil.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/maps/map-vigil.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/maps/map-vigil.jpg",
+        "previous_png_sha256": "4e35888e5cf5c87efcd4c36c8308a5bd01ec47831b7172f74ded2d1e501483c6",
+        "previous_jpeg_sha256": "941a1bce52e80f24c51c7ca84b794d7ca66302474f902a1f02e6994b9acb8f19",
+        "png_sha256": "01e6927e2afbb66a52df987343574bce148b7cf5e6bfb6017ac35c379728b142",
+        "jpeg_sha256": "b57ecd5747eb71e20bca546b54c2e0d75b31e2334d54da230f64d8ffe2f4a20f",
+        "jpeg_dimensions": [
+          1536,
+          1024
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-L1",
+      "title": "Sunlit plains",
+      "file": "sunlit-plains.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/sunlit-plains.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sunlit-plains.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png"
+      ],
+      "cells": [
+        "HV7-1 bottom-left full-body"
+      ],
+      "description": "Two Purlrunners forage half-hidden in the middle-distance grass beside the road. The golden field, sky and sun-marked stones retain the painting’s focus.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting.\nAdd ONLY TWO Purlrunners in the long grass in the middle distance beside the existing road, around 56% across / 44% down and 61% across / 43% down. Keep them very small, each roughly 25–35 pixels long within the 1536-pixel image, partly obscured by grass, with lowered heads picking seed. They are knee-high animals in the world, not giant grazing beasts. Use ONLY the bottom-LEFT full-body Purlrunner, HV7-1, in its sheet, with that same left-column split-lip face: slate-blue scaled arched body, restrained copper-orange short dorsal fringing, TWO hind legs, a thick tapering tail braced behind, long lowered narrow head with small ears. No forelegs, no alternative middle/right heads. Match the selected silhouette at the small pictured scale. This identity is IMAGE 2. Give their little scales a subdued grey-blue, their short fringe a quiet rusty-gold; match the same warm daylight and loose painted marks as the surrounding grass. No sharp cutout edges, bright eye dots or enhanced contrast. Their small curved silhouettes should be a secondary discovery. Preserve the entire sky, flag, sun-carved foreground stone, road and walls exactly; no other added creatures.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-4f1db310-c2aa-46c6-a601-90cfd1d3ef75.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/sunlit-plains.png",
+      "sha256": "cfe37385d97b17a0302aa69fa5ebb1fa50ac849ea1efb725700a8106259a3dda",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/sunlit-plains-v1.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-fff9a824-e0f8-41fd-aeb8-35c8cf6daab5.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting.\nAdd ONLY TWO Purlrunners in the long grass in the middle distance beside the existing road, around 56% across / 44% down and 61% across / 43% down. Keep them very small, each roughly 25–35 pixels long within the 1536-pixel image, partly obscured by grass, with lowered heads picking seed. They are knee-high animals in the world, not giant grazing beasts. Use ONLY the bottom-LEFT full-body Purlrunner, HV7-1, in its sheet, with that same left-column split-lip face: slate-blue scaled arched body, restrained copper-orange short dorsal fringing, TWO hind legs, a thick tapering tail braced behind, long lowered narrow head with small ears. No forelegs, no alternative middle/right heads. Match the selected silhouette at the small pictured scale. This identity is IMAGE 2. Give their little scales a subdued grey-blue, their short fringe a quiet rusty-gold; match the same warm daylight and loose painted marks as the surrounding grass. No sharp cutout edges, bright eye dots or enhanced contrast. Their small curved silhouettes should be a secondary discovery. Preserve the entire sky, flag, sun-carved foreground stone, road and walls exactly; no other added creatures.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/sunlit-plains.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png"
+          ],
+          "review_status": "superseded_by_scale_revision",
+          "reason": "Animal prominence reduced in v2 after assistant visual review; not a creator rejection."
+        }
+      ],
+      "version": 2,
+      "revision_prompt": "Precise local size correction to this existing painting. Keep the full canvas 1536x1024 and EVERYTHING else unchanged. The two small blue-grey curved animals in the grass beside the road are still too large and obvious. Reduce EACH animal to 40% of its current width and height, retaining the same anatomy, pose and approximate centre position; restore ordinary grass in all the space vacated around them. Hide the lower halves behind the grass and soften their contrast to match the field. They should be barely noticed on a first glance, no more than a few quiet marks, not two highlighted focal objects. Do not add more animals, new lighting, a new crop or texture. The sky, walls, flag, road, foreground sun-carved rock and all vegetation must stay identical.",
+      "revision_refs": [
+        "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-fff9a824-e0f8-41fd-aeb8-35c8cf6daab5.png"
+      ],
+      "visual_check": "Inspected revised image: two small arched Purlrunners half-hidden in middle-distance grass; foreground sun stone, road, flag and light still dominate.",
+      "live_source_unchanged": false,
+      "creator_feedback": {
+        "date": "2026-11-14",
+        "quote": "the edits to the lands were good",
+        "action": "Preserve the current image unchanged; no new lore or live installation inferred."
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/sunlit-plains.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/sunlit-plains.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/sunlit-plains.jpg",
+        "previous_png_sha256": "061e7be44eb8aecc502ef9b25046342fb31089a123fecb39a70201d9a6ca40a6",
+        "previous_jpeg_sha256": "187e41356d8a28d39f61ce149659806dc5b254fca749409b9e6ed5b2df5d0c75",
+        "png_sha256": "cfe37385d97b17a0302aa69fa5ebb1fa50ac849ea1efb725700a8106259a3dda",
+        "jpeg_sha256": "fc09081778abf1abfe1571787fed4d05e12e8bf203ffa3ed7898d385f3ffc522",
+        "jpeg_dimensions": [
+          768,
+          512
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-L2",
+      "title": "Overgrown ruin",
+      "file": "overgrown-ruin.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/overgrown-ruin.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/overgrown-ruin.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "cells": [
+        "NC1-5 bottom-middle cell 5"
+      ],
+      "description": "A palm-sized Spindlebur moves through leaf litter among the left-hand roots. Its warm shell blends into the floor while the arch, sapling and woodland light remain dominant.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting.\nAdd ONLY ONE palm-sized Spindlebur among the leaf litter beside the tree roots in the foreground at left, around 23% across and 81% down. Use only BOTTOM-MIDDLE cell 5 of IMAGE 2: small arched copper-brown segmented scavenger, overlapping shield plates, six fine articulated supporting legs, two short antennae and its mouth tucked beneath the compact head shield. The creature should occupy just about 25–32 pixels of width in the complete image, a little smaller than the nearby fallen leaves, partly nestled in moss and litter. It is a subtle lived-in detail, not a large insect portrait. Preserve believable foot contacts, matte restrained shell colour and the existing dappled light; use a few painted marks, not isolated photographic detail. Keep the arch, all stonework, tree, roots, foreground sapling and light shafts exactly. No other creatures.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-fc26b4e8-814c-4ab4-8689-73efafc9848b.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/overgrown-ruin.png",
+      "sha256": "cdfa70c78b529e015b3d08aae75d04a22383190c5c36bc40e8a09c8642f1bea1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "visual_check": "Inspected image: small shielded Spindlebur with supported legs within left root litter; subordinate to arch and woodland light.",
+      "version": 1,
+      "live_source_unchanged": false,
+      "creator_feedback": {
+        "date": "2026-11-14",
+        "quote": "the edits to the lands were good",
+        "action": "Preserve the current image unchanged; no new lore or live installation inferred."
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/overgrown-ruin.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/overgrown-ruin.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/overgrown-ruin.jpg",
+        "previous_png_sha256": "dfd777bf514684e12bf76cb191b0e0260c49cf759ca020a2b0f543235f7e2488",
+        "previous_jpeg_sha256": "6434025f78d120a36268c27de181e3037102361a494154275e3eeba12351385e",
+        "png_sha256": "cdfa70c78b529e015b3d08aae75d04a22383190c5c36bc40e8a09c8642f1bea1",
+        "jpeg_sha256": "fbfbc7bcc14d73f419cf063c40613e7f6d175031632364c794d509e5b32c8e38",
+        "jpeg_dimensions": [
+          768,
+          512
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    },
+    {
+      "code": "S14-L3",
+      "title": "Lantern quarter",
+      "file": "lantern-quarter.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/lantern-quarter.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/lantern-quarter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png"
+      ],
+      "cells": [
+        "L04 full sheet; folded resting anatomy"
+      ],
+      "description": "A Roof glider shelters on the stone ledge under the arch near the lamplight. Its folded membranes and dark fur stay understated within the rainy street and reflections.",
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting.\nAdd ONLY ONE small Roof glider sheltering from rain on the existing stone parapet cap at the top of the steps, around 56% across and 55% down. Use IMAGE 2 solely for animal identity, especially its small resting view at lower right: dark charcoal-brown fur, short rusty neck ruff, rounded ears, slender mammalian muzzle, grasping feet, long furry tail and thin gliding membranes FOLDED against its sides. Crow-sized in the scene, with a body about 42–50 pixels long and the tucked tail making the complete animal no more than 65 pixels across. It crouches close to the dry side of the stone under the arch, feet in real contact, facing quietly toward the street, not posing toward the viewer. A restrained warm touch from the nearby lantern reaches one fur edge; keep its overall contrast low, no glowing eyes. No spread wings, flying pose, fruit prop or large foreground pet. Preserve every lamp, banner and its existing symbols, books, brass instrument, arch, steps, water and rainy distance exactly. Do not copy text from the reference sheet.",
+      "generation_status": "complete",
+      "review_status": "final",
+      "source_sha256": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-bef77094-354c-4395-8d52-ca22ccc26129.png",
+      "output_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/lantern-quarter.png",
+      "sha256": "147dd32bac6eac2769d2a4b02928e7f7cdab484384ad803e1c1521cb593fc19d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "history": [
+        {
+          "version": 1,
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/lantern-quarter-v1.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-35c6b186-c8d8-4a5d-b559-860d826c55e5.png",
+          "prompt": "Use case: precise-object-edit. Edit IMAGE 1 locally, preserving the entire original composition and every existing object outside the small named animal areas. Output the same 1536x1024 landscape canvas with identical framing. Keep its exact original palette, lighting, painted edges and brushwork, and every landmark, road, building, tree and river in the same position. No relighting, sharpening, new grain, text, labels, borders or watermark. Other attached images are animal ANATOMY references only, never scene or style replacements. The animals are quiet supporting life, easy to miss; do not enlarge or spotlight them. Return ONE full edited painting.\nAdd ONLY ONE small Roof glider sheltering from rain on the existing stone parapet cap at the top of the steps, around 56% across and 55% down. Use IMAGE 2 solely for animal identity, especially its small resting view at lower right: dark charcoal-brown fur, short rusty neck ruff, rounded ears, slender mammalian muzzle, grasping feet, long furry tail and thin gliding membranes FOLDED against its sides. Crow-sized in the scene, with a body about 42–50 pixels long and the tucked tail making the complete animal no more than 65 pixels across. It crouches close to the dry side of the stone under the arch, feet in real contact, facing quietly toward the street, not posing toward the viewer. A restrained warm touch from the nearby lantern reaches one fur edge; keep its overall contrast low, no glowing eyes. No spread wings, flying pose, fruit prop or large foreground pet. Preserve every lamp, banner and its existing symbols, books, brass instrument, arch, steps, water and rainy distance exactly. Do not copy text from the reference sheet.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/lantern-quarter.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png"
+          ],
+          "review_status": "superseded_by_scale_revision",
+          "reason": "Animal prominence reduced in v2 after assistant visual review; not a creator rejection."
+        }
+      ],
+      "version": 2,
+      "revision_prompt": "Precise local size and emphasis correction to this existing painting. Keep the full 1536x1024 canvas and everything else unchanged. The dark Roof glider crouched on the parapet at centre-right is too large and too strongly outlined by warm light. Reduce that single animal to 45% of its current width and height, seated on the same stone cap at the same contact point. Restore the stone and background exposed by reducing it. Preserve its same long furry tail, folded membranes, head, rusty ruff and crouched pose at the new tiny crow-sized scale. Remove the strong golden rim around the back and give it quiet low-contrast dark brown fur blended into the warm grey stone, with only a faint warm accent. It should read as a small animal taking shelter, an easy-to-miss secondary detail. Preserve all lamps, existing banner emblems, rain, water, books, brass instrument, architecture and their painted treatment exactly. No other changes.",
+      "revision_refs": [
+        "/Users/dpuser/.codex/generated_images/01a1dae2-64a3-7a00-9aea-ad8b6065d33a/exec-35c6b186-c8d8-4a5d-b559-860d826c55e5.png"
+      ],
+      "visual_check": "Inspected revised image: small folded-membrane Roof glider resting on parapet with subdued edge light; architecture, lamps, banners and rain retain focus.",
+      "live_source_unchanged": false,
+      "creator_feedback": {
+        "date": "2026-11-14",
+        "quote": "the edits to the lands were good",
+        "action": "Preserve the current image unchanged; no new lore or live installation inferred."
+      },
+      "approval": {
+        "date": "2026-11-14",
+        "quote": "good all final - swap them in",
+        "scope": "Current reviewed image and live installation; no additional species lore or card-rule changes inferred."
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/lantern-quarter.png",
+      "installation": {
+        "date": "2026-11-14",
+        "png": "/Users/dpuser/Documents/Claude/Games/breachline/art/lantern-quarter.png",
+        "jpeg": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/lantern-quarter.jpg",
+        "previous_png_sha256": "aae6ae78dfed6d6f1ecb71ebe624a61b3cda6e4da8606ba9a599268d573afd71",
+        "previous_jpeg_sha256": "89fe873a3a80d857cce4bfc6a325fc4aae988c3709c35c677d55af405d77659d",
+        "png_sha256": "147dd32bac6eac2769d2a4b02928e7f7cdab484384ad803e1c1521cb593fc19d",
+        "jpeg_sha256": "99e85efcf3cadd9ef5cf0724c01a3656dd7930548d4794cf665f8447ec4d1e71",
+        "jpeg_dimensions": [
+          768,
+          512
+        ],
+        "jpeg_quality": 95,
+        "chroma_subsampling": "4:4:4",
+        "cache_version": "set14-20261114"
+      },
+      "live_source_status": "Replaced with this finalized version on 2026-11-14; pre-install originals preserved."
+    }
+  ],
+  "brief_sha256": "7570297b6a0833530ecc4f87e2ebdf5b295f96a6958e92783ff09f48c55286bb",
+  "completed_outputs": 7,
+  "pending_components": [],
+  "review_gallery": "index.html",
+  "quality_note": "Campaign outputs are local composites: 98.47–99.71% of each canvas is exactly the original RGB image, with zero changed pixels outside the documented wildlife masks. Land outputs are unchanged from the versions the creator liked.",
+  "final_prompt_record": "Initial prompt plus revision_prompt where present; exact reference paths and cells retained.",
+  "source_status_updated": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET14.md",
+  "review_url": "http://127.0.0.1:8814/",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_sha256_at_handoff": "0b04ac909f7fbfd3d62d102417fceed1ba6ac0f9bb27e1fc5dcf0df0c397a1b4",
+  "creator_feedback_history": [
+    {
+      "date": "2026-11-14",
+      "scope": "Set 14 land and campaign edits",
+      "quote": "the edits to the lands were good - to the campaign, not so much - they changes the saturation and in some cases the lighting of the overall painting in a way i did not like",
+      "decision": "Keep the three liked land edits unchanged. Correct the four campaign maps using the untouched originals as the base.",
+      "method_authorization": "Creator explicitly chose: Yes, use local compositing (Recommended)."
+    },
+    {
+      "date": "2026-11-14",
+      "quote": "good all final - swap them in",
+      "decision": "All seven current reviewed images finalized and installed; exact versions and target hashes recorded."
+    }
+  ],
+  "method": "Initial artwork: built-in image_gen. Campaign correction: explicitly authorized local compositing onto original pixels, with only small wildlife masks changed.",
+  "campaign_correction_verification": "composite-work/composition-verification.json",
+  "finalized_date": "2026-11-14",
+  "deferred_components": [
+    {
+      "code": "S14-M2",
+      "component": "Veilwing survey flight",
+      "requires": "Creator selection of S13-06 harness",
+      "status": "separate_future_addition_not_required_for_final_installed_image",
+      "note": "The current Undertow-only Gnosis map is finalized and installed as reviewed. A future Veilwing addition still needs the separate S13-06 harness choice."
+    }
+  ],
+  "canonical_folder": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14",
+  "installation_record": "installation-record.json",
+  "art_direction_sha256_at_finalization": "fc6113d0121ea0df817fe1f691b5885bcb441528fd9996d0f0fc6a567610cb09"
+}
