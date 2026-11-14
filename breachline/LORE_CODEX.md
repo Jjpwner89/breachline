@@ -55,7 +55,6 @@ The lore codex is an in-game book of short entries about the world. This file is
 
 **Never in the codex:**
 - the Mountain's Lung
-- Kitefolk, which have been removed from the game
 - game terms such as cards, mana, units or colours
 
 ---

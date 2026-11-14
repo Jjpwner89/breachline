@@ -242,24 +242,7 @@ Art: [Exploration sheet](art/reference-library-2026-11-06/active-scenes-and-peop
 
 ### The new peoples (creator direction, 2026-11-13)
 
-The creator approved this lore on 2026-11-13, building on Codex's lore handoff (`PEOPLES_LORE_HANDOFF.txt`). Each new people is local, like the Riverfolk: they have a home region and appear only in small numbers anywhere else, which keeps most places from being cosmopolitan. Each entry gives alignments, standing, numbers and places, and a **Not** line. Any alignment or job shown on a sample character belongs to that person, not the whole people. Names are working names unless marked otherwise.
-
-### Included people: Kitefolk (final visual design and lore, 2026-11-13)
-
-**Accepted visual design; working name.** KR1 is the creator's final Kitefolk reference. It shows slender, long-limbed people with mottled gliding membranes supported by elongated outer fingers, sharply angular faces and a long pointed nose. The pictured individual's age, clothing and hair are examples, not universal traits.
-
-- **Home:** high mountain villages built at cliff edges, where a launch is a short walk from the door.
-- **Alignments:** mostly Vigil, around high shrines and the old imperial passes, and Fervor, in free mountain bands.
-- **Gliding:** they glide but can't fly. They need height and wind, and they walk back up. Gliding is how they travel, not how they fight.
-- **Work:** courier is one common job; most Kitefolk herd and farm terraces.
-- **Not:** fliers, or a people of messengers.
-- **Village life:** small clan villages where each family keeps its own launch ledge. A child's first long glide marks growing up.
-- **Conflict:** Vigil Kitefolk guard the high shrines while Fervor Kitefolk bands charge tolls on the same passes, so one people stands on both sides of a road.
-- **Magic:** no special gift. Their wind-working is a learned tradition, not biology.
-- **Individuals:** some can't glide well, from injury or build, and live below. Others leave for the lowlands.
-- **Story:** keep them out of the current campaign stories (creator, 2026-11-13).
-
-Art: [Final Kitefolk reference](art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png).
+The creator approved this lore on 2026-11-13, building on Codex's lore handoff. Each new people is local, like the Riverfolk: they have a home region and appear only in small numbers anywhere else, which keeps most places from being cosmopolitan. Each entry gives alignments, standing, numbers and places, and a **Not** line. Any alignment or job shown on a sample character belongs to that person, not the whole people. Names are working names unless marked otherwise.
 
 ### Included people: Glimmerfolk (final visual design and lore, 2026-11-13)
 

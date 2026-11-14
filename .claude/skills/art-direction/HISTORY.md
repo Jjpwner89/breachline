@@ -25,7 +25,7 @@ The creator wants to try some camera blur in the next briefs, with noticeably le
 ## Peoples round 12 follow-up verdicts (2026-11-13)
 
 From the follow-up batch, the creator accepted the Riverfolk and Saltreach images and rejected everything else:
-- the Glimmerfolk and Kitefolk revisions and scenes
+- the Glimmerfolk revisions and scenes
 - the Cairnfold wayhouse scene
 - both made-people tests, the Fourfold warden and the Closed road
 
@@ -43,7 +43,7 @@ The creator expects substantial regeneration after review. This is batch-level f
 
 ## Peoples round 12 final selection (creator, 2026-11-13)
 
-The creator's final instruction is: “accept river folk and saltreach, reject all else.” This supersedes the earlier praise and requested refinements for Glimmerfolk, Kitefolk and Cairnfold. Only Riverfolk and Saltreach are accepted from this people-concept round; Scions, Graftkin and both new made-people studies, Glimmerfolk, Mourncaps, Kitefolk, Lichenkin and Cairnfold are rejected. Do not restore or continue those rejected concepts without a new request. This review concerns round 12, not unrelated previously accepted peoples or the creature round.
+The creator's final instruction is: “accept river folk and saltreach, reject all else.” This supersedes the earlier praise and requested refinements for Glimmerfolk and Cairnfold. Only Riverfolk and Saltreach are accepted from this people-concept round; Scions, Graftkin and both new made-people studies, Glimmerfolk, Mourncaps, Lichenkin and Cairnfold are rejected. Do not restore or continue those rejected concepts without a new request. This review concerns round 12, not unrelated previously accepted peoples or the creature round.
 
 Accepted references: Riverfolk R1v2 Morning shift, R2 The sounding, R3v2 Stilt village, R4 Waiting for hire, R5 Mending the hood, R6 Under the gate, and W5 A Table Above the Water; Saltreach P5v2 weathered reference sheet and W3 The Last Boat Up. R5/R6 remain the strongest Riverfolk references from the earlier review. R1v2's quieter expressions and R3v2's undisturbed water beneath airborne children are approved. Use these revised versions over the older presentations.
 

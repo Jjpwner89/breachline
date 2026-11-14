@@ -8,7 +8,7 @@ Each topic has one home:
 - **Flavour text:** the `flavor-text` skill, with lines in `FLAVOUR.md`
 - **Campaign:** `CAMPAIGN.md`
 - **Progression:** `PROGRESSION.md`, for rarity, packs, the collection, currency and saving
-- **Cards:** `NEW_CARDS.md`, `CARD_AUDIT.md` and `CARD_PROPOSALS.md`
+- **Cards:** `NEW_CARDS.md` and `CARD_PROPOSALS.md`
 
 Keep only current decisions. When one changes, edit or delete the old text instead of adding a correction. Record feedback at the size it was given, so a comment on one card or one batch doesn't become a rule for everything.
 
@@ -81,7 +81,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
   - Summoning a unit onto a tile doesn't trigger it. The unit is affected if it starts its owner's turn there.
   - A snare stops the first enemy to enter it, and it can't move on its next turn. Thorns and snares also block walking through. Fliers ignore both.
   - Spells aimed at a tile hit a Veiled unit standing there, since they target the tile, not the unit.
-  - Art: each effect has a painting for an empty tile, a narrower border round a unit's card, and a counter emblem with the turns left. Briefs are in `art/TILE_ART_BRIEFS.md`; Codex painted them on 2026-11-10 and they're in the game, waiting for the creator's review.
+  - Art: each effect has a painting for an empty tile, a narrower border round a unit's card, and a counter emblem with the turns left. Briefs are in `art/TILE_ART_BRIEFS.md`; Codex painted them on 2026-11-10 and they're in the game.
 - **Spells aimed at a tile:** the creator's idea. Some spells target a tile instead of a unit, with an arrow drawn from the card to the tile.
 - **Conjured cards:** summoned units and added cards vanish instead of going to the discard pile, so they never enter the deck or feed discard-pile effects. Confirmed on 2026-11-09. Summons and added cards copy existing cheap cards wherever possible.
 - **Equipment:** an enchantment that is an object. Equipment can also give its bearer a keyword, as the Redglass falchion gives Hunt. Armed units get +1 / +1 while they carry any equipment. Built on 2026-11-10.
@@ -91,7 +91,7 @@ Decided by the creator on 2026-11-09, to make more of the board. All of these ar
 
 ## Stats
 
-- Small numbers: stats like 5 / 6, and summoner life 15. Each card's numbers came from a card-by-card audit in `CARD_AUDIT.md`.
+- Small numbers: stats like 5 / 6, and summoner life 15.
 - Equal attack and health is fine, because bigger attackers one-shot most units anyway. A unit takes 1.5 to 2.5 hits to kill on average. Strong units can one-shot, and weak spearmen chew each other up quickly.
 - Abilities should play a large role, and they can be passive or active. Most cards should have one, but cards costing 1 or 2 can be plain.
 - Some cards can be weaker, as the goblin is. Sunmane lancer should be a strong unit with good, usable abilities.
@@ -180,7 +180,7 @@ The creator's first full game against it was dynamic, and they said it was clear
 - **Layout:** laptop first. Phones get their own one-screen battle in `phone.css` (2026-11-12, from the mockup canvas the creator picked): upright, the enemy bar, the board, your row (life, mana, phase, End turn) and then your hand at the bottom; sideways, the plates and hand on the left, the board in the middle, and the menu, phase and End turn on the right. The help text under the board is left out on phones. Upright, buttons such as Command units float over the top of the hand so the board never gives up height to them; sideways, the plates sit on the table without boxes. The hand is the same card as on desktop, held as a fan. A tap lifts a card the way hovering does on desktop, a little lower, and lights where it can go; another tap puts it back. Holding anything with a card behind it shows that card large on the left until you let go, which is how you read a card on a phone. A unit's tile on a phone is mostly its art: no name bar, with small attack and health in the bottom corners. Rules and sound move into the phone's menu.
 - **The old layout is gone:** keep new UI in the war table style.
 - **Home, Exhibition and sorting (creator, 2026-11-13, from the mockup canvas):** the home menu lists the battles first, then your cards: Campaign (or Continue run), Exhibition and Multiplayer, a small gap, then Deck builder and Collection. Everything else sits in the top-right corner: sound, Test table, Tutorial and your account, shown as your name on a darkened parchment ribbon (or Sign in) that opens the account page. On a first visit (no tutorial seen and no battles) Tutorial is lit and a parchment note points at it; its × closes the note for good on that browser, and Tutorial stays in the corner either way. Exhibition picks decks with the deck builder's cards: select one to turn it over to its plan and a Choose button, for your deck and the opponent's alike, with no Edit there. Decks you can play come first. Who plays your opponent, there and in the campaign setup, is one ribbon per option; the campaign lists them in one column. The deck builder sorts the pool by Colour (the old order and still the default), Cost, Attack, Health or Name, with a chip that flips the direction. Under Attack a spell that deals damage counts that damage (the first amount its text says it deals, not a ward or a death blast); spells with no damage, and every spell under Health, go after the units, and lands always come last. The cards themselves don't change.
-- **Card frame:** title and cost at the top, as the creator asked. The first frame is in `card.html`.
+- **Card frame:** title and cost at the top, as the creator asked.
 - **Same layout on every card (2026-11-10):** the creator chose this from three mockups. The name is always one line and shrinks to fit, the cost coin sits on the painting's top-left corner, and a band in the alignment colour runs under the art with the type and alignment. On units, Attack and Health sit at the band's ends. Every card has the same art, band and text box sizes.
 
 ### UI refresh
@@ -190,12 +190,12 @@ The creator found the old UI dull: a flat background, and card borders, textures
 - **Table:** a weathered field-oak camp table under one warm light.
 - **Board:** a linen war map, with the grid inked over it in code.
 - **Card frames:** blackened iron with gold trim.
-- **Title bars:** crimson on every card, as in `card.html`. The game still colours them by alignment until the card frame phase.
+- **Title bars:** a crimson lacquer, recoloured for each alignment; Fervor's keeps the crimson.
 - **Buttons:** parchment ribbons with a gilt rim, the main action carrying a red wax seal (the polish pass replaced the first carved-wood buttons, and the creator doesn't want the wood back, 2026-11-13). Where a button's text can wrap to two lines, as in who plays your opponent, the ribbon is sliced so its rim keeps one thickness and the text stays inside it. Every button label is set in Cormorant SC, chosen from eight fonts on 2026-11-09 after the creator disliked the first lettering. Titles, headings, card names, stats and numbers then moved to it too (`--display`, sizes up 12% because it sets small), so the lettering matches throughout; body and rules text stay in Alegreya.
 - **Extras:** a card back, table props and painted attack and health plaques.
 - **Order:** the table, then the home screen, card frames, buttons and panels, then the extras.
 
-Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-11-09 and are in the game, waiting for the creator's review. The home screen drops the old fan of three cards so the scene shows. `card.html` still has the first frame design.
+Asset briefs are in `art/UI_ART_BRIEFS.md`. All 16 paintings were made on 2026-11-09 and are in the game, waiting for the creator's review. The home screen drops the old fan of three cards so the scene shows.
 
 **Polish pass, 2026-11-11.** The second pass (briefs in `art/UI_POLISH_BRIEFS.md`) is in the game. It lives in `polish.css`, `polish.js` and `sfx.js` on top of the earlier layers. The creator's picks:
 - **Buttons:** parchment and wax.
@@ -223,7 +223,7 @@ Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2
 
 ## Balance
 
-Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any card and the card changes reviewed that day (card by card in `BALANCE_AUDIT.md` and `CARD_PROPOSALS.md`). A round robin of all 15 decks, the five starters and ten theme decks, played about 1,000 games per deck (each within about 1.6 points), with the scripted bot on both sides:
+Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any card and the card changes reviewed that day (card by card in `CARD_PROPOSALS.md`). A round robin of all 15 decks, the five starters and ten theme decks, played about 1,000 games per deck (each within about 1.6 points), with the scripted bot on both sides:
 
 | Deck | Kind | Win rate |
 | --- | --- | --- |
@@ -271,7 +271,6 @@ Worth playtesting:
 
 - **Touchstones:** books, films, games or paintings with the feeling you want.
 - **Worn-down defenders:** is the resting-unit fix wanted?
-- **Cards:** the open questions in `NEW_CARDS.md`.
 - **Campaign:** draft lines and assumptions in `CAMPAIGN.md`.
 - **Commit name:** commits show as `DP User`, from the Mac account.
 
