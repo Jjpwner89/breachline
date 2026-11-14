@@ -318,7 +318,7 @@ var Bot = (function () {
         if (key === 'orders') return 15;
         if (key === 'lens') {
           t = unitById(s, m.target);
-          return s.units.some(function (e) { return e.owner === foe && dist(t, e) === 2; }) ? 40 : -1;
+          return s.units.some(function (e) { return e.owner === foe && dist(t, e) === E.range(t) + 1; }) ? 40 : -1;
         }
         if (key === 'push') {
           // Worth more when it shoves the enemy onto fire, thorns or a snare.

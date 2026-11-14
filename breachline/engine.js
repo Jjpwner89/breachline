@@ -59,7 +59,7 @@ var Engine = (function () {
     { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, damage: 1, text: 'Push an enemy unit 1 tile back toward its side, and it takes 1 damage.' },
     unit('youngsummoner', 'Young summoner', 'N', 2, 0, 1, 2, { keywords: ['Errant'], errant: 'follower', text: 'Errant. When summoned: summon a Camp follower on a random tile in your back row.' }),
     { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 2, token: true, text: 'Enchant one of your units: it recovers 2 health at the start of your turn.' },
-    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
+    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally gets +1 range this turn.' }),
     { id: 'across', name: 'Across the silence', type: 'spell', colour: 'N', cost: 4, wants: 0, draw: 2, scry: 2, text: 'Draw two cards. Then look at the top 2 cards of your deck and put each on the top or the bottom.' },
     { id: 'shelter', name: 'Winter shelter', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, shelter: 2, text: 'Enchant one of your units: it takes 2 less damage from attacks.' },
     { id: 'marble', name: 'Through the marble', type: 'enchant', colour: 'G', cost: 4, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, grows: true, growNow: true, text: 'Enchant one of your units: +1 attack and +2 health now, and again at the start of your next two turns.' },
@@ -352,8 +352,10 @@ var Engine = (function () {
   // Longshot fires only from a standstill. Once it has moved on its own turn it fights in melee. A Prism bracer adds a tile to either.
   function range(u) {
     var far = (u.enchants || []).reduce(function (n, e) { return n + (CARDS[e.c].reach || 0); }, 0);
-    if (hasKw(u, 'Longshot')) return (u.walked ? 1 : 3) + far;
-    return (hasKw(u, 'Ranged') || u.tempRange ? 2 : 1) + far;
+    // The Ambrel lampwright's Lens adds 1 for the turn.
+    var lens = u.tempRange ? 1 : 0;
+    if (hasKw(u, 'Longshot')) return (u.walked ? 1 : 3) + far + lens;
+    return (hasKw(u, 'Ranged') ? 2 : 1) + far + lens;
   }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
@@ -864,7 +866,7 @@ var Engine = (function () {
           }
         });
       } else if (ab.key === 'lens') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange && range(a) === 1) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'healall') {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && (a.hp < a.maxHp || devoNear(s, a)); })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'orders') {

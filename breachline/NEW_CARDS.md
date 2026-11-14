@@ -83,7 +83,7 @@ These use paintings from `art/concepts/`, which remain concept pieces and don't 
 | Card | Art | Alignment | Type | Cost | Wants | Stats | Rules |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | The Still Flame | `the-still-flame.png` | Vigil | Enchantment | 2 | 1 | | Enchant one of your units: it recovers 2 health at the start of your turn |
-| Ambrel lampwright | `light-without-an-answer.png` | Gnosis | Unit | 3 | 1 | 2 / 4 | Ability: an adjacent ally can attack up to 2 tiles away this turn |
+| Ambrel lampwright | `light-without-an-answer.png` | Gnosis | Unit | 3 | 1 | 2 / 4 | Ability: an adjacent ally gets +1 range this turn |
 | Across the silence | `across-the-silence.png` | Neutral | Spell | 4 | 0 | | Draw two cards |
 
 ## Second concept art batch

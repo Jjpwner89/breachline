@@ -733,6 +733,15 @@ function randomField(r, ids) {
     check('Longhouse hospitality heals your units and the enemy summoner alike', by(s, hurtOne).hp === Math.min(by(s, hurtOne).maxHp, 1 + gift) && s.players[1].life === theirs + gift);
 
     s = arena();
+    var lamp = put(s, 'lampwright', 0, 3, 2), archer = put(s, 'student', 0, 3, 1), sword = put(s, 'sellsword', 0, 3, 3);
+    s = play(s, { type: 'ability', unit: lamp.uid, target: archer.uid });
+    check('the Ambrel lampwright gives a Ranged ally +1 range', E.range(by(s, archer)) === 3);
+    s = arena();
+    lamp = put(s, 'lampwright', 0, 3, 2); sword = put(s, 'sellsword', 0, 3, 3);
+    s = play(s, { type: 'ability', unit: lamp.uid, target: sword.uid });
+    check('and a melee ally reaches 2 tiles', E.range(by(s, sword)) === 2);
+
+    s = arena();
     var diver = put(s, 'sluicediver', 0, 3, 2), near = put(s, 'sellsword', 0, 3, 3), away = put(s, 'sellsword', 0, 3, 0);
     check('the Sluice diver swaps only with one of your units next to it', !!find(s, { type: 'ability', unit: diver.uid, target: near.uid }) && !find(s, { type: 'ability', unit: diver.uid, target: away.uid }));
 
