@@ -1323,13 +1323,13 @@
   // The phone's menu also holds the rules, which close with a tap.
   $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
   $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (turned && !$('start').hidden) turnStart(turned); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (flippedKey && !$('start').hidden) turnStart(flippedKey); } });
 
   // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
   // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
-  var turned = null, chooseTimer = null;
+  var flippedKey = null, chooseTimer = null;
   function deckHtml(d, role) {
-    var key = role + ':' + d.id, open = turned === key, on = picks[role] === d.id, front, plan, problems = [];
+    var key = role + ':' + d.id, open = flippedKey === key, on = picks[role] === d.id, front, plan, problems = [];
     if (d.id === 'random') {
       front = '<span class="frame N"><span class="inner"><span class="bar-top">Random deck</span><span class="art"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
         '<span class="band"><span class="type">Any alignment</span></span><span class="ctext"><span class="csyms"></span><span>A surprise</span></span></span></span>';
@@ -1348,10 +1348,10 @@
       (problems.length ? '<p class="dlock">' + esc(problems[0]) + '</p>' : '') + choose + '</div></div></div>';
   }
   function turnStart(key) {
-    var was = turned && $('start').querySelector('.dcard.flipped');
+    var was = flippedKey && $('start').querySelector('.dcard.flipped');
     if (was) { was.classList.remove('flipped'); was.querySelector('.dfront').inert = false; was.querySelector('.dback').inert = true; }
-    turned = turned === key ? null : key;
-    var el = turned && $('start').querySelector('.dcard[data-turn="' + turned + '"]');
+    flippedKey = flippedKey === key ? null : key;
+    var el = flippedKey && $('start').querySelector('.dcard[data-turn="' + flippedKey + '"]');
     if (el) {
       el.classList.add('flipped');
       el.querySelector('.dfront').inert = true;
@@ -1394,7 +1394,7 @@
     runToken++;
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
-    turned = null;
+    flippedKey = null;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var yours = function (id) { var d = ready(id) && Decks.find(id); return d && Decks.yours(d) ? id : null; };
     var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
@@ -1446,7 +1446,7 @@
     var pick = e.target.closest('[data-choose]');
     // A chosen deck says so for a moment, then turns back over at the usual pace before the lists catch up.
     if (pick) {
-      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = turned;
+      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = flippedKey;
       picks[role] = pick.dataset.deck;
       pick.disabled = true;
       pick.textContent = 'Chosen';
@@ -1454,14 +1454,14 @@
       card.classList.add('on');
       clearTimeout(chooseTimer);
       chooseTimer = setTimeout(function () {
-        if (turned === key) turnStart(key);
+        if (flippedKey === key) turnStart(key);
         chooseTimer = setTimeout(renderStart, 550);
       }, 450);
       return;
     }
     var card = e.target.closest('.dcard');
     if (card) return turnStart(card.dataset.turn);
-    if (turned && !e.target.closest('button, input, select, label')) return turnStart(turned);
+    if (flippedKey && !e.target.closest('button, input, select, label')) return turnStart(flippedKey);
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
