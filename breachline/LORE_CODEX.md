@@ -285,6 +285,8 @@ The Elder Herd is less a people than a following. Where the great beasts walk, t
 
 They do not name the great beasts, holding that a name is a kind of ownership, and they will not settle land the herd has passed without grazing. They have a saying that the herd is never lost; only the people who leave it are.
 
+### The peoples
+
 #### L25 · Humans
 *Art: to pick (a varied crowd or a working scene)*
 

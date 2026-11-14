@@ -28,6 +28,11 @@ var Screens = (function () {
     root.scrollTop = 0;
     refresh = onRefresh;
     window.scrollTo(0, 0);
+    // The campaign's screens all redraw through setup or campaign, and get the travelling music of the story chosen or
+    // under way.
+    var run = onRefresh === campaign && Campaign.current();
+    if (onRefresh === setup || onRefresh === campaign) Sfx.mood('road', onRefresh === setup ? setupStory : run && run.story);
+    else Sfx.mood('hearth');
   }
 
   // Deck summaries

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-13",
+  "status": "final_for_card_building",
+  "purpose": "Authoritative approved Spark card-art selection; supplements CARD_ART_FINAL.json.",
+  "creator_authorization": "perfect commit that and any outstanding changes",
+  "source_prompts": "reference-library-2026-11-06/spark-2026-11-13/prompts-and-manifest.json",
+  "gallery": "reference-library-2026-11-06/spark-2026-11-13/index.html",
+  "assets": [
+    {
+      "id": "spark-SP1",
+      "card_ids": [
+        "spark"
+      ],
+      "title": "Spark",
+      "status": "final_for_card_building",
+      "colour": "U",
+      "alignment": "Gnosis",
+      "png": "reference-library-2026-11-06/spark-2026-11-13/01-spark.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f1c1f2da0b629c5183d25428c06a248b5c4a02c4c8fb56556f57bc95e5d98700",
+      "live_card_installation": false
+    }
+  ]
+}

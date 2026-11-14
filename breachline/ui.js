@@ -790,12 +790,24 @@
     });
   }
 
+  // The battle's music, the campaign's own where it has some: a story's last chapter, or a summoner down to 5 life, turns
+  // it to the clash, which then lasts the battle out. A win or a loss fades it for its own tune; a draw is fought again, so its music carries on.
+  var clash = false;
+  function musicMood() {
+    if (S.winner !== null && S.winner !== 'draw') return S.winner === HUMAN ? 'won' : 'lost';
+    var run = chapterBattle ? Campaign.current() : null;
+    if (run && run.chapter === Campaign.STORIES[run.story].chapters.length - 1) clash = true;
+    if (!S.tutorial && S.players.some(function (p) { return p.life <= 5; })) clash = true;
+    return clash ? 'clash' : 'battle';
+  }
+
   var handSeen = null;
   function render() {
     if (sandbox) {
       S.players.forEach(function (p) { p.mana = TEST_MANA; });
       if (S.winner === null && !testBot) { HUMAN = actor(); BOT = 1 - HUMAN; }
     }
+    Sfx.mood(musicMood(), chapterBattle && Campaign.current() ? Campaign.current().story : null);
     var moves = humanMoves(), marks = computeMarks(moves);
     $('app').classList.toggle('opening', S.phase === 'opening' && S.winner === null);
     $('cmd').classList.toggle('enemy', S.winner === null && S.phase !== 'opening' && actor() === BOT);
@@ -987,6 +999,7 @@
   function startOnline(match) {
     var st = match.setup;
     S = E.newGame({ seed: st.seed, decks: st.decks, first: st.first });
+    clash = false;
     // Each seat is paid under its own key, so two tabs of one account can play each other.
     S.payKey = 'o.' + st.mid + '.' + match.seat;
     match.log.forEach(function (m) { var prev = S; S = E.applyMove(S, m); tally(prev, m); });
@@ -1407,6 +1420,7 @@
     Screens.hide();
     $('app').hidden = true;
     $('start').hidden = false;
+    Sfx.mood('hearth');
     renderStart();
     $('begin').focus();
   }
@@ -1506,6 +1520,7 @@
     $('turnBanner').innerHTML = '';
     $('debugBtn').hidden = !(debugOn && modelOn());
     S = state || E.newGame({ seed: Math.floor(Math.random() * 2147483647), decks: decks || [forGame(picks.mine), forGame(picks.opp)], first: Math.random() < 0.5 ? 0 : 1, units: chapterBattle ? garrison : null });
+    clash = false;
     if (!S.tutorial) Tutorial.stop();
     S.players.forEach(function (p) { p.hand.concat(p.deck).forEach(function (k) { warmArt(k.c); }); });
     var opening = S.players[HUMAN].hand[0];

@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "collection": "great-animals-and-ecology-refinements-2026-11-13",
+  "date": "2026-11-13",
+  "status": "reviewed_followup_in_progress",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "code": "ER1",
+      "title": "Burrower · clear back",
+      "source": "E1-B",
+      "sourceFile": "e1-b-freeform.png",
+      "description": "The selected plated burrower keeps its divided digging muzzle, heavy forelimbs and shaggy coat. This revision removes the entire dorsal sack and restores a continuous back in every view.",
+      "detail": "Precisely edit the selected E1-B burrower. Remove the large leaflike dorsal sack, its lid, contents, seams and supporting rim from BOTH adult views. Reconstruct a natural continuous shoulder/back silhouette using the animal's existing layered dark scales and shaggy coat; no hump, cavity, container, backpack or new pouch anywhere. Keep its strange divided blunt digging muzzle, copper crest, broad scaled forearms and four-limbed anatomy exactly. Keep the main digging pose, small digging study and burrow juvenile, simplifying stored material if needed so it reads as a natural small burrower, not a transport gadget.",
+      "file": "er1.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nPrecisely edit the selected E1-B burrower. Remove the large leaflike dorsal sack, its lid, contents, seams and supporting rim from BOTH adult views. Reconstruct a natural continuous shoulder/back silhouette using the animal's existing layered dark scales and shaggy coat; no hump, cavity, container, backpack or new pouch anywhere. Keep its strange divided blunt digging muzzle, copper crest, broad scaled forearms and four-limbed anatomy exactly. Keep the main digging pose, small digging study and burrow juvenile, simplifying stored material if needed so it reads as a natural small burrower, not a transport gadget.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e1-b-freeform.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e1-b-freeform.png",
+          "role": "selected identity/edit source",
+          "sha256": "d2d0fe0c6f61682733003dd271992db8531c299f08f5f88c7c59046513cd475d"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7485eb62-8fb4-43d2-902c-3b944e79cb6b.png",
+      "visual_check": "Dorsal sack removed in both adult views; continuous scaled back and selected divided muzzle retained.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7d4c1e6ad7dffcd55d0f70383ed53d5b1235d4b7112aa69438b980d78af31780",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER2",
+      "title": "Gall glider · membranes in use",
+      "source": "E3-B",
+      "sourceFile": "e3-b-freeform.png",
+      "description": "The strongly liked furred plant-nursery animal retains its fine muzzle, mottled coat and small back membranes. A gliding view tests how those membranes open and carry its weight between branches.",
+      "detail": "Develop the SAME E3-B tiny furred gall-nursery animal, preserving the slim piercing muzzle, large ears, eye shape, rust-and-cream mottled fur, four legs and long furred tail. It glides using the small membrane surfaces already folded on its back. One dominant complete three-quarter resting view with those same folded membranes; one smaller complete airborne gliding view where those membranes open laterally from their existing anatomical supports into a credible light gliding surface. No additional pair of giant bat wings, no feather wings, no squirrel substitution. Keep four walking limbs distinct from the existing membrane supports. A tiny third study may keep the gall with curled juvenile. The gliding animal is the same small species, not a mature transformation or a large flyer.",
+      "file": "er2.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nDevelop the SAME E3-B tiny furred gall-nursery animal, preserving the slim piercing muzzle, large ears, eye shape, rust-and-cream mottled fur, four legs and long furred tail. It glides using the small membrane surfaces already folded on its back. One dominant complete three-quarter resting view with those same folded membranes; one smaller complete airborne gliding view where those membranes open laterally from their existing anatomical supports into a credible light gliding surface. No additional pair of giant bat wings, no feather wings, no squirrel substitution. Keep four walking limbs distinct from the existing membrane supports. A tiny third study may keep the gall with curled juvenile. The gliding animal is the same small species, not a mature transformation or a large flyer.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e3-b-freeform.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e3-b-freeform.png",
+          "role": "selected identity/edit source",
+          "sha256": "e8a9f58e3751466841f9545b89c75649ffa10b4bc5c56bb96e96c75d74e601be"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-a40a4a68-88b8-427f-92d4-10aa76bf88b2.png",
+      "visual_check": "Resting and gliding views share muzzle, coat and existing membranes; nursery juvenile retained.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5e0e41fa15362db9ee75b286544455828acb0d16b84c68d7944b93c4ea2eb064",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER3",
+      "title": "Cradle thief · distinct coat",
+      "source": "E4-A",
+      "sourceFile": "e4-a-proposed.png",
+      "description": "Cradle thief keeps its selected climbing body, face and flattened juvenile. A quieter coat with a dark dorsal stripe replaces the pale mottling so it reads separately from the gall glider.",
+      "detail": "Make a precise coat-pattern edit of E4-A. Keep the exact adult head, proportions, ears, muzzle, tail, hands/feet, branch pose and juvenile body. Change ONLY its coat markings slightly: remove the conspicuous pale scattered dorsal spots; keep warm brown fur but give it one soft dark umber stripe along spine and tail, quieter solid sides and a pale throat/belly. Natural subtle colour transitions, not a costume or zebra stripes. Apply the same changed coat to both small juvenile studies while keeping the flat juvenile back and host-nursery context. Do not redesign the creature, add membranes or change the host chicks.",
+      "file": "er3.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nMake a precise coat-pattern edit of E4-A. Keep the exact adult head, proportions, ears, muzzle, tail, hands/feet, branch pose and juvenile body. Change ONLY its coat markings slightly: remove the conspicuous pale scattered dorsal spots; keep warm brown fur but give it one soft dark umber stripe along spine and tail, quieter solid sides and a pale throat/belly. Natural subtle colour transitions, not a costume or zebra stripes. Apply the same changed coat to both small juvenile studies while keeping the flat juvenile back and host-nursery context. Do not redesign the creature, add membranes or change the host chicks.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e4-a-proposed.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e4-a-proposed.png",
+          "role": "selected identity/edit source",
+          "sha256": "5388aa2a78b36315c01a19a7adb57a5b66631f7ab9d8bf4b3857dbc3085ce97b"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-688e78d5-9c73-493b-a113-c018ba068577.png",
+      "visual_check": "Pale dorsal mottling replaced by a quiet dark stripe while body, face and juvenile identity remain.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "884ad8f629664707bbc838c2c5d06aef76febb74b03a0e17bbe16f4d19c9bd94",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER4",
+      "title": "Crested bird · ordinary life",
+      "source": "E4-B",
+      "sourceFile": "e4-b-freeform.png",
+      "description": "The selected long-legged bird keeps its swept crest, curved bill and patterned feathering. It is an independent ordinary bird; the revised plate removes egg theft and host-brood imagery.",
+      "detail": "Preserve the strongly liked E4-B bird exactly: long scaled legs, swept narrow crest feathers, curved dark bill, rust/cream/slate feather markings, compact wing mass and long divided sweeping tail. It is a NORMAL bird species, NOT a brood parasite or cradle thief. Remove the egg from the main bill; bill rests naturally almost closed. Replace the upper-right egg-stealing vignette with the same adult walking/foraging on bare ground with no egg. Replace the lower-right mixed-species nest with a smaller clean side view of the same adult stretching one wing, showing coherent feathers. No eggs, nests, host young, parasitism, stolen items or reproductive deception anywhere. Do not normalize the unusual bird into a chicken or pheasant.",
+      "file": "er4.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nPreserve the strongly liked E4-B bird exactly: long scaled legs, swept narrow crest feathers, curved dark bill, rust/cream/slate feather markings, compact wing mass and long divided sweeping tail. It is a NORMAL bird species, NOT a brood parasite or cradle thief. Remove the egg from the main bill; bill rests naturally almost closed. Replace the upper-right egg-stealing vignette with the same adult walking/foraging on bare ground with no egg. Replace the lower-right mixed-species nest with a smaller clean side view of the same adult stretching one wing, showing coherent feathers. No eggs, nests, host young, parasitism, stolen items or reproductive deception anywhere. Do not normalize the unusual bird into a chicken or pheasant.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e4-b-freeform.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e4-b-freeform.png",
+          "role": "selected identity/edit source",
+          "sha256": "a9c1a0aafd20d439396c4c726141e57bd68cd44b16b411925e9a9bf668467e3e"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3764a9e5-45b3-4cfa-a363-d73d3e09b0b3.png",
+      "visual_check": "Egg and brood-deception scenes removed; selected crest, bill, feet, feather pattern and tail preserved.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6ad9ea24b80dc80c089b904aff84067fde268dab429a9422322563cfb69a4359",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER5",
+      "title": "Ford-thread · rounded face",
+      "source": "E5-A",
+      "sourceFile": "e5-a-proposed.png",
+      "description": "Ford-thread retains the large translucent flattened body and coloured internal core. Its leading end now uses the smaller swimming form’s rounded face; it remains an aquatic animal, with diet and life cycle open.",
+      "detail": "The creator explicitly chooses the LARGE upper animal's broad flattened translucent body, but wants a face like the SMALL lower-left swimmer. Preserve the large soft body silhouette, faint flowing tissue structure and dark red internal core. Replace the large animal's anonymous ridged sucker-like leading end with a SMALL ROUNDED integrated head matching the lower-left swimmer's rounded snout, modest side eyes and gentle forehead curve. The head must grow naturally from the leading body taper, not be pasted onto a flat sheet. Keep the mouth small; no comb, sucker fringe or whisker beard. It remains a complete living aquatic animal swimming just above a faint streambed, not meat or a cloak. Add one small side-swimming view of the SAME revised large-bodied form; retain a small juvenile swimmer if helpful. Remove the shore bird/prey scene so no host or parasite role is implied by this revision.",
+      "file": "er5.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nThe creator explicitly chooses the LARGE upper animal's broad flattened translucent body, but wants a face like the SMALL lower-left swimmer. Preserve the large soft body silhouette, faint flowing tissue structure and dark red internal core. Replace the large animal's anonymous ridged sucker-like leading end with a SMALL ROUNDED integrated head matching the lower-left swimmer's rounded snout, modest side eyes and gentle forehead curve. The head must grow naturally from the leading body taper, not be pasted onto a flat sheet. Keep the mouth small; no comb, sucker fringe or whisker beard. It remains a complete living aquatic animal swimming just above a faint streambed, not meat or a cloak. Add one small side-swimming view of the SAME revised large-bodied form; retain a small juvenile swimmer if helpful. Remove the shore bird/prey scene so no host or parasite role is implied by this revision.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e5-a-proposed.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e5-a-proposed.png",
+          "role": "selected identity/edit source",
+          "sha256": "99a5c91a0c50a40dfc72ee90c28a31eb3744c183e573019fe815dcabfe5bc27e"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-22adbf3a-2bbc-4c3f-be88-ed79cc82deb3.png",
+      "visual_check": "Large flattened translucent body retained; compact round face now links it visually to the smaller swimmer.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "08ead837edc1c4a71a2823588f3bea52e2e11eedc6d5297063b2a60895fbb7ed",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER6",
+      "title": "Shore hunter · separate species",
+      "source": "E5-B-hunter",
+      "sourceFile": "e5-b-freeform.png",
+      "description": "This isolates the fish-eating shore hunter from E5-B as its own animal, keeping the pointed muzzle, scale-backed body, soft neck and paddle tail. It is separate from the translucent parasite, with no transformation between them.",
+      "detail": "Extract and develop ONLY the small fish-eating SHORE HUNTER in the lower-right vignette. The translucent creature above and lower-left is a completely separate parasite and must NOT appear or contribute any anatomy. The hunter NEVER grows from or transforms into the parasite. Enlarge the existing hunter faithfully: four lean jointed legs with clawed spread toes, low long torso, narrow pointed muzzle, rust-brown soft neck/underside, dark layered back scales/feather-like plates and flattened fan/paddle tail. Preserve the selected head and neck, not a crocodile or dog replacement. Main complete full-body three-quarter view on a simple wet ground strip, mouth relaxed. Two smaller matched studies: side view with tail visible and original fishing posture holding a small plain fish. No parasitic bubbles, cysts, eggs, translucent body parts or life-cycle diagram. Natural long-legged shoreline predator, medium ordinary animal scale. Its final name is open.",
+      "file": "er6.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nExtract and develop ONLY the small fish-eating SHORE HUNTER in the lower-right vignette. The translucent creature above and lower-left is a completely separate parasite and must NOT appear or contribute any anatomy. The hunter NEVER grows from or transforms into the parasite. Enlarge the existing hunter faithfully: four lean jointed legs with clawed spread toes, low long torso, narrow pointed muzzle, rust-brown soft neck/underside, dark layered back scales/feather-like plates and flattened fan/paddle tail. Preserve the selected head and neck, not a crocodile or dog replacement. Main complete full-body three-quarter view on a simple wet ground strip, mouth relaxed. Two smaller matched studies: side view with tail visible and original fishing posture holding a small plain fish. No parasitic bubbles, cysts, eggs, translucent body parts or life-cycle diagram. Natural long-legged shoreline predator, medium ordinary animal scale. Its final name is open.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e5-b-freeform.png"
+      ],
+      "review_status": "accepted_visual",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e5-b-freeform.png",
+          "role": "selected identity/edit source",
+          "sha256": "bb7812a2de7f91d162352ecfb79d81b9e3530467d273f683ffb0871e561798fa"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-dffa615a-99cc-40a2-b9f1-f790e0282b48.png",
+      "visual_check": "Shore hunter isolated as a separate four-legged animal; no parasite anatomy or transformation shown.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "30cb5d6204c16fbee5f7fedf1e23871cef842ef3124d906b373e0c1e98d10f24",
+      "generation_status": "generated"
+    },
+    {
+      "code": "ER7",
+      "title": "Small herd · pouch comparison",
+      "source": "E6-B",
+      "sourceFile": "e6-b-freeform.png",
+      "description": "The selected heavy forager and watchful companion become members of a small herd with different responsibilities. Two versions compare a reachable chest pouch with no pouch; both remove the dorsal container and hive nest.",
+      "detail": "Create a two-option comparison of the selected E6-B animal, arranged LEFT half and RIGHT half, no printed labels. Keep its existing feather/scale-and-fur material transitions, heavy digging forequarters, four legs, long curved bill and compact flexible food-gathering mouthparts. Both options are small HERD animals, NOT eusocial hive insects: individuals share a body plan, with some feeding and some keeping watch, no fixed worker/soldier castes. Remove the dorsal basket/sack entirely in ALL views; natural continuous scales/fur along the back. Remove the woven communal hive/store structure completely. LEFT: one big full-body forager with a small integrated UNDERSLUNG food pouch high beneath the chest, its opening facing forward between the forelegs, visibly reachable by the animal's flexible mouthparts. Show one mouthpart placing a single seed at that opening, physical contact clear. Pouch not a large hanging bag and not on belly near hindlegs. Tiny matching lookout behind/above it. RIGHT: the SAME full-body forager with NO POUCH anywhere, carrying one food sprig naturally in its mouth; tiny matching lookout. Keep the variation limited to pouch and immediate feeding gesture. Each half contains one primary animal and one much smaller companion. No piles of seeds on the back, no literal saddlebag, no new insect anatomy.",
+      "file": "er7.png",
+      "kind": "refinement",
+      "prompt": "Use case: identity-preserve. Breachline creature reference refinement, landscape 1536 x 1024. The attached image is the selected animal's identity reference, not a loose mood board. Preserve the accepted face, skeletal logic, coat/material transitions and body proportions except for the changes explicitly requested. Measured traditional oil/acrylic painting, broad coherent forms, matte natural surfaces, neutral soft light and pale warm plain background. Anatomically connected limbs and readable weight; no human accessories, no new ornamental throat combs, no text, letters, arrows, labels, watermarks or borders. All small views must match the same animal identity.\n\nCreate a two-option comparison of the selected E6-B animal, arranged LEFT half and RIGHT half, no printed labels. Keep its existing feather/scale-and-fur material transitions, heavy digging forequarters, four legs, long curved bill and compact flexible food-gathering mouthparts. Both options are small HERD animals, NOT eusocial hive insects: individuals share a body plan, with some feeding and some keeping watch, no fixed worker/soldier castes. Remove the dorsal basket/sack entirely in ALL views; natural continuous scales/fur along the back. Remove the woven communal hive/store structure completely. LEFT: one big full-body forager with a small integrated UNDERSLUNG food pouch high beneath the chest, its opening facing forward between the forelegs, visibly reachable by the animal's flexible mouthparts. Show one mouthpart placing a single seed at that opening, physical contact clear. Pouch not a large hanging bag and not on belly near hindlegs. Tiny matching lookout behind/above it. RIGHT: the SAME full-body forager with NO POUCH anywhere, carrying one food sprig naturally in its mouth; tiny matching lookout. Keep the variation limited to pouch and immediate feeding gesture. Each half contains one primary animal and one much smaller companion. No piles of seeds on the back, no literal saddlebag, no new insect anatomy.",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e6-b-freeform.png"
+      ],
+      "review_status": "left_pouch_option_selected",
+      "canonical": false,
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e6-b-freeform.png",
+          "role": "selected identity/edit source",
+          "sha256": "f598b0700f215751c700960f04284990cca38d6b0855c519d272cbca5e28ea22"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-391ddf8c-eda7-4126-bf61-0816e23b038b.png",
+      "visual_check": "Dorsal pouch and hive removed. Left opening reachable by mouthpart; right option pouch-free. Both retain related lookout companion for herd behaviour.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "05aa35131849a191d20b808223370dfee4928444c13a81e6900a58327701ad6b",
+      "generation_status": "generated",
+      "selected_take": "ER7-1",
+      "selected_rect": [
+        0,
+        0,
+        0.5,
+        1
+      ]
+    },
+    {
+      "code": "G1",
+      "title": "Large animals",
+      "band": "Large",
+      "summary": "Bear-to-horse-scale bodies, plus one broad-winged glider. Strong movement and unfamiliar anatomy at a size that can still be everyday wildlife.",
+      "takes": [
+        {
+          "code": "G1-1",
+          "name": "Cragwool",
+          "size": "Large · mountain browser",
+          "approach": "guided",
+          "brief": "A sure-footed upland browser with tall muscular forequarters, a low sloping rump, four broad split gripping feet and a short wedge-shaped mammalian muzzle tucked close to the chest. Warm ivory clipped wool meets smooth charcoal callus plates on shins and lower sides; a short thick tail, no horns. It leans uphill with front feet higher than rear, clearly bearing weight.",
+          "description": "Cragwool tests a steep-ground browser with weight carried forward over broad gripping feet. Its compact muzzle and clipped wool contrast with the dark callused lower body; the grazing role and exact size remain proposals.",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "2.6 m long · mountain browser",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Liked Cragwool; make face modestly more predatory and less stub-nosed. Preserve body/coat."
+          },
+          "review_status": "selected_revision_requested",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G1-2",
+          "name": "Reedstrider",
+          "size": "Large · floodplain shoot eater",
+          "approach": "guided",
+          "brief": "An upright bipedal browser with two strong hind legs, two much smaller flexible feeding forelimbs, a heavy counterbalancing tail and a deep low pelvis. The compact head has soft mammalian lips and small upright ears, no beak or dinosaur snout. Smooth muted moss-green leathery body with a narrow cinnamon-fibre ridge along the shoulders; no pouch. Moving through knee-deep reeds with realistic forward momentum.",
+          "description": "Reedstrider proposes a tall floodplain browser whose tail balances a low pelvis and strong hind legs. A compact soft-lipped face and small feeding forelimbs give it a distinct rhythm of movement.",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "2.8 m tall · floodplain shoot eater",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Liked Reedstrider; spread the copper mohawk-like fibre covering over the body, not only the back ridge."
+          },
+          "review_status": "selected_revision_requested",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G1-3",
+          "name": "Shellshoulder",
+          "size": "Large · freshwater shell-crusher",
+          "approach": "guided",
+          "brief": "A long low four-legged amphibious mollusc hunter; powerful forelimbs brace a narrow torso while rear feet paddle and a short muscular oar tail drives water. Broad smooth head with two rounded crushing cheek bulges, small eyes set high, an ordinary closed mouth, no external gills. Dense blue-green pebbled skin transitions to ochre scutes over the shoulder joint only. No fur or feather mantle.",
+          "description": "Shellshoulder tests a heavy river-edge hunter built to brace and crush hard-shelled prey. Its dense skin, rounded cheeks and shoulder scutes create a different surface and silhouette from the furred animals.",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "3 m long · freshwater shell-crusher",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Cut by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G1-4",
+          "name": "Mast forager",
+          "size": "Large · fruit and seed dispersal",
+          "approach": "role-led",
+          "brief": "Invent freely a new large forest-floor fruit and nut eater that moves between seasonal feeding grounds and spreads large seeds. About pony mass, not a pouch carrier or conscious gardener. Choose its whole body, head, coverings and palette; make its locomotion distinctive and mechanically credible, unlike the other five animals.",
+          "description": "A heavy forest forager combines a short flexible trunk, dense fur and broad digging feet. It proposes a fruit-and-nut eater that moves between seasonal feeding grounds and disperses large seeds.",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "About pony mass · fruit and seed dispersal",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Cut by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G1-5",
+          "name": "Burrow listener",
+          "size": "Large · concealed-prey hunter",
+          "approach": "role-led",
+          "brief": "Invent freely a new large solitary predator that locates and extracts burrowing prey in dry open country. The niche must shape its whole body rather than merely add claws to a bear; choose an unfamiliar but coherent skull, body, covering and digging strategy. No dangling sensory tentacles, giant ears as the only novelty, or repeated reptile head.",
+          "description": "A low striped hunter has a long armoured muzzle and powerful forelimbs that can open buried runs. Its proposed niche connects concealed-prey detection, excavation and a body braced close to the ground.",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "About large-bear mass · concealed-prey hunter",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Cut by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G1-6",
+          "name": "Cliff scavenger",
+          "size": "Large · cliff-roosting glider",
+          "approach": "role-led",
+          "brief": "Invent freely the ONLY flying animal on this sheet: a large cliff-roosting carrion glider, 7-metre wingspan with a relatively compact light body. Choose a coherent wing skeleton and landing anatomy, an unusual integrated head and purposeful coverings. Not a dragon, griffin or ordinary vulture with a crest; no backpack. Show a clear banking glide with complete wing tips.",
+          "description": "Broad feathered wings, a compact trunk and small tucked landing limbs define this cliff scavenger. It tests a substantial soaring animal whose unusual wing surfaces still carry a readable flight skeleton.",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "7 m wingspan · 1.6 m body",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Cut by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        }
+      ],
+      "file": "g1.png",
+      "kind": "lineup",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Large animals. Bear-to-horse-scale bodies, plus one broad-winged glider. Strong movement and unfamiliar anatomy at a size that can still be everyday wildlife.\n\n1. Cragwool — 2.6 m long · mountain browser. A sure-footed upland browser with tall muscular forequarters, a low sloping rump, four broad split gripping feet and a short wedge-shaped mammalian muzzle tucked close to the chest. Warm ivory clipped wool meets smooth charcoal callus plates on shins and lower sides; a short thick tail, no horns. It leans uphill with front feet higher than rear, clearly bearing weight.\n\n2. Reedstrider — 2.8 m tall · floodplain shoot eater. An upright bipedal browser with two strong hind legs, two much smaller flexible feeding forelimbs, a heavy counterbalancing tail and a deep low pelvis. The compact head has soft mammalian lips and small upright ears, no beak or dinosaur snout. Smooth muted moss-green leathery body with a narrow cinnamon-fibre ridge along the shoulders; no pouch. Moving through knee-deep reeds with realistic forward momentum.\n\n3. Shellshoulder — 3 m long · freshwater shell-crusher. A long low four-legged amphibious mollusc hunter; powerful forelimbs brace a narrow torso while rear feet paddle and a short muscular oar tail drives water. Broad smooth head with two rounded crushing cheek bulges, small eyes set high, an ordinary closed mouth, no external gills. Dense blue-green pebbled skin transitions to ochre scutes over the shoulder joint only. No fur or feather mantle.\n\n4. Mast forager — About pony mass · fruit and seed dispersal. Invent freely a new large forest-floor fruit and nut eater that moves between seasonal feeding grounds and spreads large seeds. About pony mass, not a pouch carrier or conscious gardener. Choose its whole body, head, coverings and palette; make its locomotion distinctive and mechanically credible, unlike the other five animals.\n\n5. Burrow listener — About large-bear mass · concealed-prey hunter. Invent freely a new large solitary predator that locates and extracts burrowing prey in dry open country. The niche must shape its whole body rather than merely add claws to a bear; choose an unfamiliar but coherent skull, body, covering and digging strategy. No dangling sensory tentacles, giant ears as the only novelty, or repeated reptile head.\n\n6. Cliff scavenger — 7 m wingspan · 1.6 m body. Invent freely the ONLY flying animal on this sheet: a large cliff-roosting carrion glider, 7-metre wingspan with a relatively compact light body. Choose a coherent wing skeleton and landing anatomy, an unusual integrated head and purposeful coverings. Not a dragon, griffin or ordinary vulture with a crest; no backpack. Show a clear banking glide with complete wing tips.",
+      "generation_history": [
+        {
+          "stage": "initial",
+          "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Large animals. Bear-to-horse-scale bodies, plus one broad-winged glider. Strong movement and unfamiliar anatomy at a size that can still be everyday wildlife.\n\n1. Cragwool — 2.6 m long · mountain browser. A sure-footed upland browser with tall muscular forequarters, a low sloping rump, four broad split gripping feet and a short wedge-shaped mammalian muzzle tucked close to the chest. Warm ivory clipped wool meets smooth charcoal callus plates on shins and lower sides; a short thick tail, no horns. It leans uphill with front feet higher than rear, clearly bearing weight.\n\n2. Reedstrider — 2.8 m tall · floodplain shoot eater. An upright bipedal browser with two strong hind legs, two much smaller flexible feeding forelimbs, a heavy counterbalancing tail and a deep low pelvis. The compact head has soft mammalian lips and small upright ears, no beak or dinosaur snout. Smooth muted moss-green leathery body with a narrow cinnamon-fibre ridge along the shoulders; no pouch. Moving through knee-deep reeds with realistic forward momentum.\n\n3. Shellshoulder — 3 m long · freshwater shell-crusher. A long low four-legged amphibious mollusc hunter; powerful forelimbs brace a narrow torso while rear feet paddle and a short muscular oar tail drives water. Broad smooth head with two rounded crushing cheek bulges, small eyes set high, an ordinary closed mouth, no external gills. Dense blue-green pebbled skin transitions to ochre scutes over the shoulder joint only. No fur or feather mantle.\n\n4. Mast forager — About pony mass · fruit and seed dispersal. Invent freely a new large forest-floor fruit and nut eater that moves between seasonal feeding grounds and spreads large seeds. About pony mass, not a pouch carrier or conscious gardener. Choose its whole body, head, coverings and palette; make its locomotion distinctive and mechanically credible, unlike the other five animals.\n\n5. Burrow listener — About large-bear mass · concealed-prey hunter. Invent freely a new large solitary predator that locates and extracts burrowing prey in dry open country. The niche must shape its whole body rather than merely add claws to a bear; choose an unfamiliar but coherent skull, body, covering and digging strategy. No dangling sensory tentacles, giant ears as the only novelty, or repeated reptile head.\n\n6. Cliff scavenger — 7 m wingspan · 1.6 m body. Invent freely the ONLY flying animal on this sheet: a large cliff-roosting carrion glider, 7-metre wingspan with a relatively compact light body. Choose a coherent wing skeleton and landing anatomy, an unusual integrated head and purposeful coverings. Not a dragon, griffin or ordinary vulture with a crest; no backpack. Show a clear banking glide with complete wing tips.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6f8a9e29-7a1d-48a3-8923-ee0c88d10681.png"
+        },
+        {
+          "stage": "refinement",
+          "prompt": "Use case: precise-object-edit. Correct ONLY the human scale comparisons and necessary spacing in this six-animal lineup. The animal designs, individual anatomy, coat, colours, poses, relative proportions and 3-column/2-row order are to remain unchanged. They are NOT all colossal. The tiny grey people in the source are much too small and falsely imply huge animals. Replace each with a plain neutral adult 1.75-metre human silhouette at exactly the SAME DEPTH and ground baseline as its animal, never distant forced perspective. No text/numbers/labels. Keep neutral background and measured oil/acrylic painting. You may scale an animal and its whole ground patch uniformly within its own cell to leave space for the appropriately sized human, but do not distort the animal or crop any parts. Human remains a simple flat grey scale figure, no detailed face or clothing. Preserve all six cell boundaries and animal identities.\nThis is the LARGE band, bear/pony size, emphatically NOT giants. Make the people MUCH LARGER relative to the animals: top-left animal is 2.6 metres nose-to-rump, its person should be about 2/3 of that nose-to-rump length in height; top-centre animal is 2.8 metres tall, its person reaches roughly 62% of its total height; top-right animal is 3 metres nose-to-tail and low-slung, so the person is about 58% of its entire length in height and taller than its back. Bottom-left animal is pony sized: person stands slightly higher than its back. Bottom-centre animal is large-bear sized: person stands slightly higher than its back. Bottom-right wingspan is seven metres: person height is exactly one quarter of the full wing-tip-to-wing-tip span. These human comparisons are vital. Fit them comfortably beside the animals, not under their feet. The very large change in human size is intentional.",
+          "reference": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6f8a9e29-7a1d-48a3-8923-ee0c88d10681.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-125fc784-0aac-4217-92ec-21d8082d5d9f.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-125fc784-0aac-4217-92ec-21d8082d5d9f.png",
+      "visual_check": "Six distinct complete animals in the intended 3×2 order. Human comparison silhouettes enlarged to distinguish this size band; measurements remain design targets rather than engineering scale.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b9c6a886636b48468ffcbd7cdccc1d33899135a2bf471c938271ea7d3b6acfbb",
+      "generation_status": "generated",
+      "scale_note": "Human silhouettes communicate broad size bands; exact dimensions are unresolved. Initial prompt sizes are design targets."
+    },
+    {
+      "code": "G2",
+      "title": "Extra-large animals",
+      "band": "Extra-large",
+      "summary": "Rhinoceros-to-elephant weight, with longer aquatic forms. Bodies should show how they support, feed and turn at this scale.",
+      "takes": [
+        {
+          "code": "G2-1",
+          "name": "Bankheaver",
+          "size": "Extra-large · river-bank excavator",
+          "approach": "guided",
+          "brief": "A broad but muscular river-bank browser with SIX stout legs in three clear paired girdles along a long low body, no insect waist. Front pair loosens wet roots, rear two pairs support and propel. Blunt rectangular soft-lipped face on a short thick mobile neck, ash-grey matte hide, a small warm-brown wool patch around neck only, no dorsal armour or pouch. Flattened muscular tail and wide feet. Body reads living and purposeful, not fat or comic.",
+          "description": "Bankheaver uses three pairs of stout legs to separate digging effort from body support. It proposes a large river-bank browser that opens feeding edges and leaves wet hollows behind.",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "6.5 m long · river-bank excavator",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G2-2",
+          "name": "Crownreach",
+          "size": "Extra-large · canopy browser",
+          "approach": "guided",
+          "brief": "A tall browsing quadruped with two enormously long upright load-bearing forelimbs and two shorter powerful rear limbs, a descending back and a long but NOT giraffe-shaped mobile neck. Small blunt almond-shaped face, forward soft feeding lips, no horns or antlers. Fine slate-blue scale texture on neck, short pale tawny coat over body; each foot is one broad splayed pad. Reaches sideways for foliage, still anchored by all four feet, no high-wire pose.",
+          "description": "Crownreach tests a canopy browser whose long forelimbs do much of the lifting normally assigned to a neck. Its descending back and planted broad feet make the extra-large scale physically readable.",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "7 m standing height · canopy browser",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G2-3",
+          "name": "Gravelmouth",
+          "size": "Extra-large · shallow-lake plant grazer",
+          "approach": "guided",
+          "brief": "A very broad aquatic swimmer with a tapered soft-bodied trunk and four short downward-facing steering flippers, a compact ROUND mammal-like forehead and a wide blunt horizontal grazing mouth. Dense tiny overlapping dull olive scales over the back, smooth pale flexible underside; no fish tail fin, instead the back third of the body undulates gently like one muscular paddle. Low-set small eyes; no whiskers or throat fringe. Show submerged body just above sparse water plants.",
+          "description": "Gravelmouth is a broad lake swimmer with short steering flippers and a muscular tapering rear body. Its rounded head and blunt mouth test a heavy aquatic plant grazer without external filtering ornaments.",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "8 m long · shallow-lake plant grazer",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Liked unchanged. Preserve selected original visual."
+          },
+          "review_status": "accepted_visual",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G2-4",
+          "name": "Woodland breaker",
+          "size": "Extra-large · deadwood habitat opener",
+          "approach": "role-led",
+          "brief": "Invent freely a new elephant-mass forest animal that breaks fallen rotten trunks to reach buried food, leaving cavities other animals later occupy. Choose the anatomy, skull, textures and feeding method; avoid an elephant with altered tusks, a plated dinosaur, antler decoration or a portable garden. Show physical contact with one small broken log fragment.",
+          "description": "A deep-chested forest animal braces a fallen trunk with massive claws beneath a blunt beaked head. Its feeding could leave cavities for smaller lives, without making it a deliberate habitat builder.",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "Elephant mass · deadwood habitat opener",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Liked unchanged. Preserve selected original visual."
+          },
+          "review_status": "accepted_visual",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G2-5",
+          "name": "Salt-flat migrant",
+          "size": "Extra-large · mineral-seeking grazer",
+          "approach": "role-led",
+          "brief": "Invent freely a new extra-large migratory salt-flat grazer with a distinctive efficient walking body and adaptations to long dry crossings. Choose face and coverings; no reptile-head default, giant camel, dinosaur, sack, decorative sails or horns. Convey resilient movement and heat management through integrated anatomy, not glowing magic.",
+          "description": "Long jointed legs carry a narrow body and a low-reaching soft-lipped head across open ground. This proposes a migratory grazer shaped by dry crossings and scattered feeding sites.",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "5 m long · mineral-seeking grazer",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Liked unchanged. Preserve selected original visual."
+          },
+          "review_status": "accepted_visual",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G2-6",
+          "name": "Estuary pursuer",
+          "size": "Extra-large · tidal-channel predator",
+          "approach": "role-led",
+          "brief": "Invent freely a new streamlined but unusual aquatic predator of broad tidal channels, approximately nine metres long. A complete connected body with clear propulsion, turning and jaws; choose its skeleton, integument, palette and fin/limb plan. Do not make a shark with extra fins, a crocodile, eel or sea dragon; no external jaw combs.",
+          "description": "A streamlined channel hunter combines powerful paired paddles with a deep-jawed toothed head. Its broad turning surfaces suggest tidal pursuit, while prey and reproductive biology remain open.",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "9 m long · tidal-channel predator",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator; excluded from further references."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        }
+      ],
+      "file": "g2.png",
+      "kind": "lineup",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Extra-large animals. Rhinoceros-to-elephant weight, with longer aquatic forms. Bodies should show how they support, feed and turn at this scale.\n\n1. Bankheaver — 6.5 m long · river-bank excavator. A broad but muscular river-bank browser with SIX stout legs in three clear paired girdles along a long low body, no insect waist. Front pair loosens wet roots, rear two pairs support and propel. Blunt rectangular soft-lipped face on a short thick mobile neck, ash-grey matte hide, a small warm-brown wool patch around neck only, no dorsal armour or pouch. Flattened muscular tail and wide feet. Body reads living and purposeful, not fat or comic.\n\n2. Crownreach — 7 m standing height · canopy browser. A tall browsing quadruped with two enormously long upright load-bearing forelimbs and two shorter powerful rear limbs, a descending back and a long but NOT giraffe-shaped mobile neck. Small blunt almond-shaped face, forward soft feeding lips, no horns or antlers. Fine slate-blue scale texture on neck, short pale tawny coat over body; each foot is one broad splayed pad. Reaches sideways for foliage, still anchored by all four feet, no high-wire pose.\n\n3. Gravelmouth — 8 m long · shallow-lake plant grazer. A very broad aquatic swimmer with a tapered soft-bodied trunk and four short downward-facing steering flippers, a compact ROUND mammal-like forehead and a wide blunt horizontal grazing mouth. Dense tiny overlapping dull olive scales over the back, smooth pale flexible underside; no fish tail fin, instead the back third of the body undulates gently like one muscular paddle. Low-set small eyes; no whiskers or throat fringe. Show submerged body just above sparse water plants.\n\n4. Woodland breaker — Elephant mass · deadwood habitat opener. Invent freely a new elephant-mass forest animal that breaks fallen rotten trunks to reach buried food, leaving cavities other animals later occupy. Choose the anatomy, skull, textures and feeding method; avoid an elephant with altered tusks, a plated dinosaur, antler decoration or a portable garden. Show physical contact with one small broken log fragment.\n\n5. Salt-flat migrant — 5 m long · mineral-seeking grazer. Invent freely a new extra-large migratory salt-flat grazer with a distinctive efficient walking body and adaptations to long dry crossings. Choose face and coverings; no reptile-head default, giant camel, dinosaur, sack, decorative sails or horns. Convey resilient movement and heat management through integrated anatomy, not glowing magic.\n\n6. Estuary pursuer — 9 m long · tidal-channel predator. Invent freely a new streamlined but unusual aquatic predator of broad tidal channels, approximately nine metres long. A complete connected body with clear propulsion, turning and jaws; choose its skeleton, integument, palette and fin/limb plan. Do not make a shark with extra fins, a crocodile, eel or sea dragon; no external jaw combs.",
+      "generation_history": [
+        {
+          "stage": "initial",
+          "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Extra-large animals. Rhinoceros-to-elephant weight, with longer aquatic forms. Bodies should show how they support, feed and turn at this scale.\n\n1. Bankheaver — 6.5 m long · river-bank excavator. A broad but muscular river-bank browser with SIX stout legs in three clear paired girdles along a long low body, no insect waist. Front pair loosens wet roots, rear two pairs support and propel. Blunt rectangular soft-lipped face on a short thick mobile neck, ash-grey matte hide, a small warm-brown wool patch around neck only, no dorsal armour or pouch. Flattened muscular tail and wide feet. Body reads living and purposeful, not fat or comic.\n\n2. Crownreach — 7 m standing height · canopy browser. A tall browsing quadruped with two enormously long upright load-bearing forelimbs and two shorter powerful rear limbs, a descending back and a long but NOT giraffe-shaped mobile neck. Small blunt almond-shaped face, forward soft feeding lips, no horns or antlers. Fine slate-blue scale texture on neck, short pale tawny coat over body; each foot is one broad splayed pad. Reaches sideways for foliage, still anchored by all four feet, no high-wire pose.\n\n3. Gravelmouth — 8 m long · shallow-lake plant grazer. A very broad aquatic swimmer with a tapered soft-bodied trunk and four short downward-facing steering flippers, a compact ROUND mammal-like forehead and a wide blunt horizontal grazing mouth. Dense tiny overlapping dull olive scales over the back, smooth pale flexible underside; no fish tail fin, instead the back third of the body undulates gently like one muscular paddle. Low-set small eyes; no whiskers or throat fringe. Show submerged body just above sparse water plants.\n\n4. Woodland breaker — Elephant mass · deadwood habitat opener. Invent freely a new elephant-mass forest animal that breaks fallen rotten trunks to reach buried food, leaving cavities other animals later occupy. Choose the anatomy, skull, textures and feeding method; avoid an elephant with altered tusks, a plated dinosaur, antler decoration or a portable garden. Show physical contact with one small broken log fragment.\n\n5. Salt-flat migrant — 5 m long · mineral-seeking grazer. Invent freely a new extra-large migratory salt-flat grazer with a distinctive efficient walking body and adaptations to long dry crossings. Choose face and coverings; no reptile-head default, giant camel, dinosaur, sack, decorative sails or horns. Convey resilient movement and heat management through integrated anatomy, not glowing magic.\n\n6. Estuary pursuer — 9 m long · tidal-channel predator. Invent freely a new streamlined but unusual aquatic predator of broad tidal channels, approximately nine metres long. A complete connected body with clear propulsion, turning and jaws; choose its skeleton, integument, palette and fin/limb plan. Do not make a shark with extra fins, a crocodile, eel or sea dragon; no external jaw combs.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0537a577-d123-4019-8ef2-a6eaca40baef.png"
+        },
+        {
+          "stage": "refinement",
+          "prompt": "Use case: precise-object-edit. Correct ONLY the human scale comparisons and necessary spacing in this six-animal lineup. The animal designs, individual anatomy, coat, colours, poses, relative proportions and 3-column/2-row order are to remain unchanged. They are NOT all colossal. The tiny grey people in the source are much too small and falsely imply huge animals. Replace each with a plain neutral adult 1.75-metre human silhouette at exactly the SAME DEPTH and ground baseline as its animal, never distant forced perspective. No text/numbers/labels. Keep neutral background and measured oil/acrylic painting. You may scale an animal and its whole ground patch uniformly within its own cell to leave space for the appropriately sized human, but do not distort the animal or crop any parts. Human remains a simple flat grey scale figure, no detailed face or clothing. Preserve all six cell boundaries and animal identities.\nThis is the EXTRA-LARGE band, roughly elephant mass on land. Correct the people to these proportions: top-left animal 6.5 metres nose-to-tail, person height 27% of its full length; top-centre animal seven metres from feet to crown, person height exactly one quarter of that height; top-right aquatic animal eight metres long, person height 22% of its full length. Bottom-left woodland breaker has elephant-scale back height about 3.5 metres: person height about half of that height, not one-sixth. Bottom-centre salt-flat animal five metres nose-to-rump: person height 35% of that horizontal length. Bottom-right aquatic predator nine metres long: person height about 20% of its full nose-to-tail length. Increase the silhouettes appropriately; do not leave them as tiny people near the ankles. Keep water animals' comparison people as plain upright scale silhouettes alongside the cell, not swimming characters.",
+          "reference": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0537a577-d123-4019-8ef2-a6eaca40baef.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4b3c94b9-06ac-4e74-abb2-0a59223c25d1.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4b3c94b9-06ac-4e74-abb2-0a59223c25d1.png",
+      "visual_check": "Six distinct complete animals in the intended 3×2 order. Human comparison silhouettes enlarged to distinguish this size band; measurements remain design targets rather than engineering scale.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271",
+      "generation_status": "generated",
+      "scale_note": "Human silhouettes communicate broad size bands; exact dimensions are unresolved. Initial prompt sizes are design targets."
+    },
+    {
+      "code": "G3",
+      "title": "Massive animals",
+      "band": "Massive",
+      "summary": "Rare giants: immense land animals and huge coastal swimmers. Six competing possibilities, not a claim that every region is full of colossi.",
+      "takes": [
+        {
+          "code": "G3-1",
+          "name": "Longvault",
+          "size": "Massive · Longvault",
+          "approach": "guided",
+          "brief": "An immense elongated land browser on SIX straight substantial weight-bearing legs in three clearly paired girdles. The body has a high barrel-like ribcage and a long horizontal neck ending in a small rounded split-upper-lip mammalian head; no trunk, horns or reptilian snout. Dark indigo-grey leathery skin with sparse warm silver bristles concentrated on upper shoulders; unarmoured back, short thick tail. One slow deliberate walking step, most feet still weight-bearing, flattened toes and deep footprints. Not a sauropod or elephant mashup; change trunk proportions and neck articulation coherently.",
+          "description": "Longvault proposes a rare six-legged browser with weight distributed along an immense ribcage. Its slow stride and horizontal feeding neck should make the scale feel consequential rather than merely enlarged.",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "16 m long · 5 m at shoulder · open-woodland browser",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G3-2",
+          "name": "Undertow",
+          "size": "Massive · coastal-bottom feeder",
+          "approach": "guided",
+          "brief": "A massive elongated soft-bodied coastal animal with a blunt rounded head, a long muscular tapered trunk, and two broad paired lateral fin folds supported along much of the body. The four fin surfaces are structural swimming surfaces, not ribbons; no decorative frill around the mouth. Smooth dark teal back, muted ivory underside, small moss-coloured rough patches on leading fins. Small downturned compact mouth takes bottom-dwelling prey. Show complete animal cruising obliquely near a few tiny normal fish and a modest rocky seabed fragment; not a whale, ray or monster squid.",
+          "description": "Undertow has a continuous flattened soft body with broad lateral fin lobes and a compact rounded head. It proposes a slow coastal-bottom feeder whose body moves through long muscular waves.",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "24 m long · coastal-bottom feeder",
+          "creator_review": {
+            "decision": "like",
+            "notes": "Keep Undertow direction. Combine two middle fins on each side into one broader continuous fin, projecting a little less and with flatter edges; preserve small rear triangle."
+          },
+          "review_status": "selected_revision_requested",
+          "excluded_from_references": false
+        },
+        {
+          "code": "G3-3",
+          "name": "Stoneheel",
+          "size": "Massive · high-country grazer",
+          "approach": "guided",
+          "brief": "A monumental tall land grazer with FOUR pillar-like but jointed legs, huge padded round feet, a deep narrow torso and a thick short neck that slopes DOWN to a wide soft-lipped face. Short charcoal velvet fur, smooth pale ochre hide across the massive shoulders and face; no horn, tusk, shell, trunk or dorsal sail. Back slopes subtly upward to powerful hips, long plain tapering tail. Calm severe presence, browsing low alpine scrub, no decorative ecosystem on its back. Anatomy should feel unfamiliar in proportions without resembling a giant bear or rhinoceros.",
+          "description": "Stoneheel proposes a rare high-country grazer supported by broad padded feet and enormous jointed limbs. A low feeding head beneath tall shoulders tests a giant silhouette distinct from long-necked browsers.",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "12 m long · 6 m tall · high-country grazer",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G3-4",
+          "name": "Tidal gardener",
+          "size": "Massive · coastal vegetation grazer",
+          "approach": "role-led initial; guided silhouette refinement",
+          "brief": "Invent freely a rare massive shallow-coast herbivore whose feeding opens paths through submerged vegetation. About twenty metres long, coherent flotation and propulsion, an unexpected but legible head and body covering. It simply eats, does not farm. Not a familiar whale, turtle, manatee or plant-animal hybrid; no jaw comb or carried garden.",
+          "description": "A low armoured giant walks the seabed on short oar-like limbs beneath overlapping dorsal plates. Its grazing could open routes through coastal vegetation without conscious gardening.",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "20 m long · coastal vegetation grazer",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G3-5",
+          "name": "Ashland migrant",
+          "size": "Massive · fire-following terrestrial grazer",
+          "approach": "role-led initial; guided silhouette refinement",
+          "brief": "Invent freely a rare massive terrestrial grazer that follows fresh regrowth across landscapes recently burned by natural fire. About fourteen metres long, enormous living weight supported by credible limbs and broad feet, adaptive hide/coat suited to exposed country. No fire magic, lava skin, walking hill, vegetation growing on its body, insect swarm or dinosaur default. Gentle feeding life with an awe-inspiring unfamiliar shape.",
+          "description": "A deep narrow torso stands high on four long padded legs, with a low feeding head and sparse bristles. This proposes a rare migrant following post-fire regrowth rather than a fire-themed monster.",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "14 m long · fire-following terrestrial grazer",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        },
+        {
+          "code": "G3-6",
+          "name": "Shelf wanderer",
+          "size": "Massive · cold continental-shelf swimmer",
+          "approach": "role-led initial; guided silhouette refinement",
+          "brief": "Invent freely a very rare huge cold-water swimmer that migrates over a continental shelf and feeds on seasonal shoals of small animals. Thirty metres long, full silhouette readable, choose an original buoyancy/propulsion/body plan and compact feeding anatomy. No copied whale, serpent, giant fish, jaw curtain, external throat-comb, drifting island or decorative tentacle forest. Real animal logic, subtle beauty and enormous mass.",
+          "description": "A softly segmented trunk carries three pairs of broad paddles and ends in a plain tapering tail. This rare shelf swimmer follows seasonal prey shoals with a body plan distinct from the other aquatic giants.",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "initial_size_target": "30 m long · cold continental-shelf swimmer",
+          "creator_review": {
+            "decision": "reject",
+            "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+          },
+          "review_status": "rejected",
+          "excluded_from_references": true
+        }
+      ],
+      "file": "g3.png",
+      "kind": "lineup",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Massive animals. Rare giants: immense land animals and huge coastal swimmers. Six competing possibilities, not a claim that every region is full of colossi.\n\n1. Longvault — 16 m long · 5 m at shoulder · open-woodland browser. An immense elongated land browser on SIX straight substantial weight-bearing legs in three clearly paired girdles. The body has a high barrel-like ribcage and a long horizontal neck ending in a small rounded split-upper-lip mammalian head; no trunk, horns or reptilian snout. Dark indigo-grey leathery skin with sparse warm silver bristles concentrated on upper shoulders; unarmoured back, short thick tail. One slow deliberate walking step, most feet still weight-bearing, flattened toes and deep footprints. Not a sauropod or elephant mashup; change trunk proportions and neck articulation coherently.\n\n2. Undertow — 24 m long · coastal-bottom feeder. A massive elongated soft-bodied coastal animal with a blunt rounded head, a long muscular tapered trunk, and two broad paired lateral fin folds supported along much of the body. The four fin surfaces are structural swimming surfaces, not ribbons; no decorative frill around the mouth. Smooth dark teal back, muted ivory underside, small moss-coloured rough patches on leading fins. Small downturned compact mouth takes bottom-dwelling prey. Show complete animal cruising obliquely near a few tiny normal fish and a modest rocky seabed fragment; not a whale, ray or monster squid.\n\n3. Stoneheel — 12 m long · 6 m tall · high-country grazer. A monumental tall land grazer with FOUR pillar-like but jointed legs, huge padded round feet, a deep narrow torso and a thick short neck that slopes DOWN to a wide soft-lipped face. Short charcoal velvet fur, smooth pale ochre hide across the massive shoulders and face; no horn, tusk, shell, trunk or dorsal sail. Back slopes subtly upward to powerful hips, long plain tapering tail. Calm severe presence, browsing low alpine scrub, no decorative ecosystem on its back. Anatomy should feel unfamiliar in proportions without resembling a giant bear or rhinoceros.\n\n4. Tidal gardener — 20 m long · coastal vegetation grazer. Invent freely a rare massive shallow-coast herbivore whose feeding opens paths through submerged vegetation. About twenty metres long, coherent flotation and propulsion, an unexpected but legible head and body covering. It simply eats, does not farm. Not a familiar whale, turtle, manatee or plant-animal hybrid; no jaw comb or carried garden.\n\n5. Ashland migrant — 14 m long · fire-following terrestrial grazer. Invent freely a rare massive terrestrial grazer that follows fresh regrowth across landscapes recently burned by natural fire. About fourteen metres long, enormous living weight supported by credible limbs and broad feet, adaptive hide/coat suited to exposed country. No fire magic, lava skin, walking hill, vegetation growing on its body, insect swarm or dinosaur default. Gentle feeding life with an awe-inspiring unfamiliar shape.\n\n6. Shelf wanderer — 30 m long · cold continental-shelf swimmer. Invent freely a very rare huge cold-water swimmer that migrates over a continental shelf and feeds on seasonal shoals of small animals. Thirty metres long, full silhouette readable, choose an original buoyancy/propulsion/body plan and compact feeding anatomy. No copied whale, serpent, giant fish, jaw curtain, external throat-comb, drifting island or decorative tentacle forest. Real animal logic, subtle beauty and enormous mass.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-a4880583-e878-4b0f-adfd-124a69a94bd1.png",
+      "visual_check": "Six complete giant proposals in 3×2 order; three aquatic silhouettes now distinct. Land and water anatomy inspected. Scale figures convey broad scale only; numerical dimensions remain open.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a19b7ffd1586c3ead355b40b61bc1a0be06cb6e1dfcb03fac279326d23d047b5",
+      "generation_status": "generated",
+      "scale_note": "Human silhouettes communicate broad size bands; exact dimensions are unresolved. Initial prompt sizes are design targets.",
+      "generation_history": [
+        {
+          "stage": "initial",
+          "prompt": "Use case: stylized-concept. Create an ORIGINAL Breachline creature LINEUP plate, landscape 1536 x 1024, exactly SIX different whole animals in a clean THREE-COLUMN by TWO-ROW layout. Reading order: top-left 1, top-centre 2, top-right 3, bottom-left 4, bottom-centre 5, bottom-right 6. NO printed numbers, names, letters, panel borders, arrows, logo or signature. Each animal entirely inside its own sixth, no crossing cells, generous warm-grey neutral negative space; one primary animal per cell, NOT multiple reference views. Tiny ground/water fragments allowed for mechanics, no full landscapes.\nART DIRECTION: original high-fantasy wildlife with meaningful niches and unfamiliar but coherent whole-body anatomy. Connected skull/neck/limbs, functional mixed coverings, credible weight and locomotion. Recognisable biological logic plus one or two clear unusual changes; not familiar Earth animals with extra accessories. Vary heads beyond lizard faces, body plans, coat/skin/feathers/scales, silhouettes, facing and palette. Don't spread a single new motif to all six. No backpacks, dorsal sacks, gratuitous fringe, throat combs, human gear, decorative fungus, copied franchise creature or portable ecosystems. Animals have their own lives.\nPAINT: measured traditional oil/acrylic fantasy concept painting, selective broad brushwork, clear masses, varied edge precision, matte living materials and restrained natural colour. No glossy 3D, photo, mascot, toy, cartoon or uniform pore noise. Soft neutral light but not six identical brown palettes.\nSCALE: each cell includes exactly ONE TINY plain grey human silhouette at the same depth and ground/water baseline as its animal, solely to establish the specified size. Use true relative height; do not make humans detailed characters. On an aquatic cell a tiny upright scale silhouette sits unobtrusively at the side. All six animals are separate species proposals, not growth stages. Give the largest appropriate mass and support, not arbitrary spikes or roar. The lineups are alternatives for review, not finished scenes or established canon.\n\nTHIS SHEET: Massive animals. Rare giants: immense land animals and huge coastal swimmers. Six competing possibilities, not a claim that every region is full of colossi.\n\n1. Longvault — 16 m long · 5 m at shoulder · open-woodland browser. An immense elongated land browser on SIX straight substantial weight-bearing legs in three clearly paired girdles. The body has a high barrel-like ribcage and a long horizontal neck ending in a small rounded split-upper-lip mammalian head; no trunk, horns or reptilian snout. Dark indigo-grey leathery skin with sparse warm silver bristles concentrated on upper shoulders; unarmoured back, short thick tail. One slow deliberate walking step, most feet still weight-bearing, flattened toes and deep footprints. Not a sauropod or elephant mashup; change trunk proportions and neck articulation coherently.\n\n2. Undertow — 24 m long · coastal-bottom feeder. A massive elongated soft-bodied coastal animal with a blunt rounded head, a long muscular tapered trunk, and two broad paired lateral fin folds supported along much of the body. The four fin surfaces are structural swimming surfaces, not ribbons; no decorative frill around the mouth. Smooth dark teal back, muted ivory underside, small moss-coloured rough patches on leading fins. Small downturned compact mouth takes bottom-dwelling prey. Show complete animal cruising obliquely near a few tiny normal fish and a modest rocky seabed fragment; not a whale, ray or monster squid.\n\n3. Stoneheel — 12 m long · 6 m tall · high-country grazer. A monumental tall land grazer with FOUR pillar-like but jointed legs, huge padded round feet, a deep narrow torso and a thick short neck that slopes DOWN to a wide soft-lipped face. Short charcoal velvet fur, smooth pale ochre hide across the massive shoulders and face; no horn, tusk, shell, trunk or dorsal sail. Back slopes subtly upward to powerful hips, long plain tapering tail. Calm severe presence, browsing low alpine scrub, no decorative ecosystem on its back. Anatomy should feel unfamiliar in proportions without resembling a giant bear or rhinoceros.\n\n4. Tidal gardener — 20 m long · coastal vegetation grazer. Invent freely a rare massive shallow-coast herbivore whose feeding opens paths through submerged vegetation. About twenty metres long, coherent flotation and propulsion, an unexpected but legible head and body covering. It simply eats, does not farm. Not a familiar whale, turtle, manatee or plant-animal hybrid; no jaw comb or carried garden.\n\n5. Ashland migrant — 14 m long · fire-following terrestrial grazer. Invent freely a rare massive terrestrial grazer that follows fresh regrowth across landscapes recently burned by natural fire. About fourteen metres long, enormous living weight supported by credible limbs and broad feet, adaptive hide/coat suited to exposed country. No fire magic, lava skin, walking hill, vegetation growing on its body, insect swarm or dinosaur default. Gentle feeding life with an awe-inspiring unfamiliar shape.\n\n6. Shelf wanderer — 30 m long · cold continental-shelf swimmer. Invent freely a very rare huge cold-water swimmer that migrates over a continental shelf and feeds on seasonal shoals of small animals. Thirty metres long, full silhouette readable, choose an original buoyancy/propulsion/body plan and compact feeding anatomy. No copied whale, serpent, giant fish, jaw curtain, external throat-comb, drifting island or decorative tentacle forest. Real animal logic, subtle beauty and enormous mass.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-70c37b11-6bbe-4d37-b072-b8bee5bb8797.png"
+        },
+        {
+          "stage": "refinement",
+          "prompt": "Use case: precise-object-edit. Revise this ORIGINAL six-creature exploration lineup, 1536 x 1024 landscape, retaining the exact three-column/two-row arrangement with ONE WHOLE animal per cell and no text or borders. Preserve the top-left six-legged land browser and top-right tall low-headed woolly grazer; preserve their faces, coat transitions and anatomical identities. Keep measured broad oil/acrylic brushwork, neutral background and coherent body support.\nThe aquatic animals currently repeat a whale body too much. REPLACE cells 2, 4 and 6 with three sharply distinct coherent bodies:\nTOP CENTRE (2), Undertow: a 24-metre-long flattened soft-bodied marine animal, like an immensely broad swimming velvet slug, continuous fleshy tapering body with TWO PAIRS of wide lateral fin lobes. A small ROUND snub feeding head is continuous with the front of the mantle. No vertebrate torso, whale fluke, dolphin face or fish tail. Rich muted deep teal dorsum and pale salmon underside, matte folds; compact mouth beneath the leading end, no fringe, teeth curtain or tentacles. This is a whole bilaterally symmetrical animal with distinct front and rear.\nBOTTOM LEFT (4), Tidal gardener: a 20-metre-long, very broad armoured shallow-coast grazer; EIGHT short jointed oar-like walking limbs along a low oval body, SIX large dull olive/ochre overlapping dorsal plates, and a short blunt soft head tucked naturally beneath the forward rim. Wide oval footprint, low profile, no pincers, giant insect waist or whale fins. It plods along the seabed and takes aquatic vegetation with a small ventral mouth. This is an original huge animal, no trees growing on it.\nBOTTOM RIGHT (6), Shelf wanderer: a 30-metre-long elongated cold-water swimmer with THREE PAIRS of broad horizontal paddles attached beneath a tapering softly segmented trunk, a broad blunt compact front bearing paired lateral eyes, and small ventral grasping jaws. The back third narrows to a soft pointed tail WITHOUT a whale fluke or vertical fish fin. Deep muted oxblood and indigo-grey covering with a pale underside. Clear smooth muscular body mass, not a dragon, not spiny and not a literal fossil animal. The three paired paddles give an unmistakably different swimming silhouette.\nBOTTOM CENTRE (5), Ashland migrant: replace the humped bear-like body with a 14-metre-long tall open-country walker on FOUR long widely spaced jointed legs with heavy broad padded feet. A deep but narrow torso hangs above the legs; long downward-curving neck ends in a broad rounded mammalian soft-lipped head. Smooth pale grey ash-resistant hide, sparse short black bristles along shoulders and belly, plain long tail. It grazes low new shoots while standing high, not a giant giraffe or horse. No antlers, horns, dorsal ornaments, fire magic or plant growth.\nScale figures must be accurate, not arbitrarily tiny: one flat grey 1.75-metre adult at SAME depth as each animal. Top-left shoulder height FIVE metres, person is 35% of shoulder height. Top-right SIX metres at shoulder, person about 29% of shoulder height. Bottom-centre back height FIVE metres, person 35% of back height. Water animals: person height is 7.3% of top-centre animal's full 24m length, 8.75% of bottom-left animal's 20m length, and 5.8% of bottom-right animal's 30m length. Keep figures alongside, not distant perspective. Fit all bodies completely within their cells, tiny optional water/ground context only. No text, labels, measurements, numbers, signatures or borders.",
+          "reference": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-70c37b11-6bbe-4d37-b072-b8bee5bb8797.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-a4880583-e878-4b0f-adfd-124a69a94bd1.png"
+        }
+      ]
+    }
+  ],
+  "art_direction_sha256": "202a733d58d6b3d6e8320e84822bccac368e38de7fffe9ec8efe35ed36ee6327",
+  "scope": "Seven selected-creature refinement plates plus three six-animal size lineups, eighteen new animal proposals.",
+  "carried_forward": [
+    {
+      "code": "E3-A",
+      "title": "Graftmidge",
+      "file": "retained-e3-a.png",
+      "sourceFile": "e3-a-proposed.png",
+      "description": "The plant-nursery insect is kept as selected. The adult, gall-dwelling juvenile and reused plant chamber remain together in this original plate."
+    },
+    {
+      "code": "E5-B",
+      "title": "Translucent parasite",
+      "file": "retained-e5-b.png",
+      "sourceFile": "e5-b-freeform.png",
+      "description": "The translucent parasite is kept as selected. The fish-eating hunter in its context vignette is a separate animal, now developed in ER6; no transformation connects the two."
+    },
+    {
+      "code": "E6-A",
+      "title": "Siltwrights",
+      "file": "retained-e6-a.png",
+      "sourceFile": "e6-a-proposed.png",
+      "description": "The ant-like colony, warrior form and visible internal nut storage are kept as selected. This remains distinct from the small-herd proposal in ER7."
+    }
+  ],
+  "review_url": "http://127.0.0.1:8780/",
+  "validation": {
+    "generated_plates": 10,
+    "new_creature_candidates": 18,
+    "refinement_candidates": 8,
+    "originals_carried_forward": 3,
+    "all_png_dimensions": [
+      1536,
+      1024
+    ],
+    "visual_inspection": "completed",
+    "scale": "broad bands only; exact dimensions open",
+    "gallery": {
+      "url": "http://127.0.0.1:8780/",
+      "result": "passed",
+      "cards": 29,
+      "reviewable_options": 26,
+      "all_card_images_loaded": true,
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "complete_sheet_modal": "opened and visually checked",
+      "card_layout": "visually checked",
+      "feedback_endpoint": "GET returned 200",
+      "linked_galleries": "8776–8780 each returned 200",
+      "browser_tab": "opened and retained for creator review"
+    }
+  },
+  "latest_review": {
+    "date": "2026-11-13",
+    "decisions": {
+      "G1-1": {
+        "decision": "like",
+        "notes": "Liked Cragwool; make face modestly more predatory and less stub-nosed. Preserve body/coat."
+      },
+      "G1-2": {
+        "decision": "like",
+        "notes": "Liked Reedstrider; spread the copper mohawk-like fibre covering over the body, not only the back ridge."
+      },
+      "G1-3": {
+        "decision": "reject",
+        "notes": "Cut by creator; excluded from further references."
+      },
+      "G1-4": {
+        "decision": "reject",
+        "notes": "Cut by creator; excluded from further references."
+      },
+      "G1-5": {
+        "decision": "reject",
+        "notes": "Cut by creator; excluded from further references."
+      },
+      "G1-6": {
+        "decision": "reject",
+        "notes": "Cut by creator; excluded from further references."
+      },
+      "G2-3": {
+        "decision": "like",
+        "notes": "Liked unchanged. Preserve selected original visual."
+      },
+      "G2-4": {
+        "decision": "like",
+        "notes": "Liked unchanged. Preserve selected original visual."
+      },
+      "G2-5": {
+        "decision": "like",
+        "notes": "Liked unchanged. Preserve selected original visual."
+      },
+      "G2-1": {
+        "decision": "reject",
+        "notes": "Rejected by creator; excluded from further references."
+      },
+      "G2-2": {
+        "decision": "reject",
+        "notes": "Rejected by creator; excluded from further references."
+      },
+      "G2-6": {
+        "decision": "reject",
+        "notes": "Rejected by creator; excluded from further references."
+      },
+      "G3-2": {
+        "decision": "like",
+        "notes": "Keep Undertow direction. Combine two middle fins on each side into one broader continuous fin, projecting a little less and with flatter edges; preserve small rear triangle."
+      },
+      "G3-1": {
+        "decision": "reject",
+        "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+      },
+      "G3-3": {
+        "decision": "reject",
+        "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+      },
+      "G3-4": {
+        "decision": "reject",
+        "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+      },
+      "G3-5": {
+        "decision": "reject",
+        "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+      },
+      "G3-6": {
+        "decision": "reject",
+        "notes": "Rejected by creator. New massive options should be more imaginative in whole-body architecture."
+      },
+      "ER1": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER2": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER3": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER4": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER5": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER6": {
+        "decision": "like",
+        "notes": "Refinement approved by creator."
+      },
+      "ER7-1": {
+        "decision": "like",
+        "notes": "The accessible underslung pouch is specifically selected."
+      },
+      "ER7-2": {
+        "decision": "undecided",
+        "notes": "No-pouch alternative not selected; ER7-1 pouch option chosen. Not explicitly rejected."
+      }
+    },
+    "requested_followup": "FR1 Cragwool face, FR2 Reedstrider full-body fibres, FR3 Undertow continuous shorter fins; one new large animal and six fresh massive possibilities.",
+    "next_phase": "After this design pass, group the animal collection by ecological habitats and roles. New artwork remains pending creator review.",
+    "preservation": "Keep source sheets intact. Rejected cells receive X overlays and are excluded from references; this follows the creator's standing review request."
+  }
+}

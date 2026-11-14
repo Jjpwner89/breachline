@@ -1,5 +1,11 @@
 # Card proposals
 
+## Animal references for future cards (creator, 2026-11-13)
+
+Before proposing a new animal card, especially Genesis, consult the [animal handoff](ANIMAL_REFERENCE_HANDOFF.txt), [selected ecology gallery](art/accepted-animals-2026-11-13/ecologies.html) and [exact reference index](art/accepted-animals-2026-11-13/animal-reference-index.json). These selected animals are inhabitants of the world; prefer a fitting existing design where one serves the concept, and carry its code and source into the brief. They also belong in background wildlife and scenes of everyday life. New species remain welcome when needed.
+
+Crested bird ER4 is a mobile predator. This reference approval does not assign card statistics, costs or abilities; develop those through the ordinary card process. Explicitly unknown biology remains open. Wildlife is not exclusive to Genesis.
+
 Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.

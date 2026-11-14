@@ -22,7 +22,7 @@ How players collect cards and move through the game. Built on 2026-11-10 in `rar
 - **Collection milestones:** completing a faction's set earns a card back or a title.
 - **Exhibition:** your decks are built from cards you own. The opponent can use any deck, or a random one.
 - **Prestige difficulty (built 2026-11-13):** harder replays of a campaign you've cleared. A replay doesn't have to be prestige: the player chooses normal or prestige each time. Stronger enemy decks, enemy units already on the field from chapter 4, double gold and a badge for a prestige clear. Details in `CAMPAIGN.md`.
-- **Lore codex:** wanted. The creator builds it in the setting thread, not the dev thread (2026-11-13).
+- **Lore codex:** wanted. The creator builds it in the setting thread, not the dev thread (2026-11-13). The book's look, motion and sound are proposed in `CODEX_BOOK.md`.
 - **Sealed mode:** wanted later.
 - **Save file:** you can save your whole progress to a file and load it back.
 - **Unlock everything:** a password sets an "everything unlocked" flag rather than adding cards, so it can be switched off without touching your real counts. The creator knows the password; the code stores only its SHA-256 hash, `ddacf85d8604913b6b0fed3a41a18bb2a84858b58c9a0c2b1b7295692a9e6408`.

@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-13",
+  "revision": 1,
+  "scope": "Creator review of Set 12; three revisions before finalization",
+  "liked_codes": [
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    201,
+    202,
+    203,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    215
+  ],
+  "revision_codes": [
+    200,
+    204,
+    205
+  ],
+  "standout_code": 206,
+  "style_feedback": "The creator strongly likes the new art direction across this batch, calling the paintings really awesome; 206 Sallow Bridge mason was especially praised. Preserve the current approach.",
+  "finalization": "Explicitly deferred until the three revised paintings are reviewed.",
+  "changes": [
+    {
+      "code": 200,
+      "filename": "200-husk-v2.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk.png"
+      ],
+      "caption": "The more present Ashborn now supports the husk’s right arm from underneath with his left hand, and the husk’s head tips slightly down. Their identities and the barracks scene remain intact; this revision awaits your review.",
+      "prompt": "Use case: precise-object-edit. Edit the attached Breachline painting locally. Preserve the two men's established identities, faces, clothes, armour, positions, scale, barracks background, cold light and oil/acrylic painted treatment. Landscape 1536x1024, no text or frame.\nMake ONLY these two corrections:\n1. The more present stockier man on SCREEN LEFT uses his ANATOMICAL LEFT ARM (the arm nearer the middle) to support the thin husk on SCREEN RIGHT. Replace the erroneous top/side grip. His left forearm bends naturally inward from his left elbow, and his LEFT HAND turns PALM UP UNDER the husk's ANATOMICAL RIGHT UPPER ARM near its elbow. Show a clear simple cradle from underneath: supporting palm beneath the arm, four fingers curling gently along its underside and outer side, thumb naturally separated. The supporting wrist must connect anatomically to the left man's forearm without twisting, with no duplicate hand or backwards thumb. The husk's RIGHT arm (on the viewer's left side of his torso, BETWEEN the men) stays hanging down, his own hand still visible below. The left man's anatomical RIGHT arm at the outer SCREEN LEFT stays down and unchanged. Do not swap arms or move the support to the husk's other arm.\n2. Tilt only the thin husk's head modestly DOWN, lowering his chin about 10–15 degrees and directing his depleted gaze slightly downward. Keep his same face, hair, hollow planes and vacant expression. The other man's head remains looking toward him.\nKeep all else as close to the source as possible. Natural matte skin, coherent fingers and contact, no new elements.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-616e560a-5008-4cbb-8aab-290eef2c224a.png",
+      "sha256": "b1b7fa513621cdb600ad8e6d6fde47a2a4575047f1a392ad0d8329d4972805b7",
+      "reference_selection": "Original 200-husk.png for exact local corrections.",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Companion's left forearm connects to an upturned supporting hand beneath the husk's right arm.",
+          "Husk's chin and gaze angle downward.",
+          "Faces, clothing and barracks composition retained."
+        ]
+      },
+      "status": "revised_pending_creator_review",
+      "creator_approved": false
+    },
+    {
+      "code": 204,
+      "filename": "204-caravanhead-v2.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "caption": "A male Banded folk leader walks alongside his moving caravan on a mountain road in daylight. The salt-flat migrant design is established; its use as a caravan animal and this journey remain proposals for review.",
+      "prompt": "Use case: stylized-concept. Re-stage Breachline's Caravan head as a MALE Banded folk leader walking ALONGSIDE a caravan already MOVING through moderately MOUNTAINOUS country, in daylight. One finished oil/acrylic fantasy painting, 1536x1024 landscape, no text, numbers, frames, logos or watermarks.\nImage 1 is the required species anatomy reference. Use the TOP MIDDLE adult male salt variant as the basis: sturdy strong male build, clearly masculine broad face and jaw, shared layered brow and cheek structure, copper-ochre skin with pale bands. No human substitution. His identity is new; give him a thoughtful assured expression, looking ahead down the route, not dismissive or theatrical. He wears a practical personally repaired rust-red travelling coat, off-white shirt, dark trousers and boots, simple belt, no crown or uniform.\nMedium-wide three-quarter side view: the male leader walks on the OUTSIDE EDGE of the road in the LEFT foreground, beside the lead wagon's side rather than in front of it or sitting in it. A natural forward stride, both feet correctly connected, one hand resting lightly on the moving wagon's side rail and the other low, directing a companion onward with a small purposeful gesture. The broad cart wheel rolls beside him farther into the frame. Cart, leader and visible draught animal all travel in the SAME clear direction along one continuous mountain road. The train rounds a bend through a rocky green valley with layered slopes, a few scrub trees and higher grey peaks, no salt flats and no loading stop. Two Banded kin are secondary travelling companions, not lifting crates.\nImage 2 supplies ONLY the BOTTOM-MIDDLE animal, G2-5 salt-flat migrant, for the animal pulling the lead wagon. Ignore all other animals on this sheet. Preserve that narrow long-legged four-footed grazer's long low-reaching soft-lipped head, jointed legs, broad padded toes and shaggy rust-and-cream mantle. It is large enough to pull a wagon, and its scale agrees with the reference human silhouette. Keep it secondary and farther away along the road, attached with a believable padded breast harness and taut traces to the cart. Don't hide the connection or put the beast behind the cart.\nCoherent clear daylight with mountain shadows, warm russet against limestone grey and deep olive green. Preserve the successful batch's measured visible brushwork, matte skin/cloth, selectively sharp face/hands, quiet economical background marks and readable midtones. Lively but grounded, no glossy CGI, photographic detail or invented spell effects.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-81052987-96e0-418d-89dd-dbbef2e98e8d.png",
+      "sha256": "fa725410442db7dcfebf66f8950a797653272e61361d2555aabbd23c19f59d1b",
+      "reference_selection": "Banded sheet TOP-MIDDLE adult male salt variant; g2.png BOTTOM-MIDDLE cell 5, G2-5 Salt-flat migrant ONLY; other cells excluded. Normalized rectangle [1/3, 0.5, 1/3, 0.5].",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Male salt-variant Banded leader strides beside the wagon with a hand on its side.",
+          "Mountain road, peaks and moving caravan replace the loading scene.",
+          "G2-5 animal design is visibly connected to the lead cart."
+        ]
+      },
+      "status": "revised_pending_creator_review",
+      "creator_approved": false
+    },
+    {
+      "code": 205,
+      "filename": "205-caravanguard-v2.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "caption": "Rusk’s rainy-road scene now includes a salt-flat migrant visibly harnessed ahead of the covered cart. The guard and accepted animal anatomy are preserved; this individual animal’s caravan role is proposed and awaits review.",
+      "prompt": "Use case: compositing. Edit image 1, the Breachline Caravan guard painting. Preserve Rusk in the foreground EXACTLY: face, copper skin and bands, blue-grey eyes, red quilted vest, single shoulder plate, cloak, sword, walking pose, hands, boots and size. Preserve the rainy wooded mountain road, cool daylight, canvas cart, driver, colour relationships and measured oil/acrylic brushwork. Landscape 1536x1024, no text or frame.\nAdd ONE clearly VISIBLE draught animal in the middle ground pulling the existing covered cart. Image 2 is the accepted animal reference: use ONLY G2-5, BOTTOM-MIDDLE CELL, the SALT-FLAT MIGRANT. Ignore all five other animals. Preserve its narrow body, high rounded hindquarters under a shaggy rust-and-cream mantle, four long jointed legs with broad padded toes, long low-reaching neck and soft-lipped blunt head, no horns. Do not turn it into a horse, camel, bull or a new species. The animal is extra-large in its reference, so it can credibly pull the cart; place it farther away than Rusk at a consistent perspective scale, rather than shrinking its anatomy.\nThe animal must stand/walk IN FRONT OF the wagon on its route toward the foreground, behind Rusk but offset to his SCREEN RIGHT so its head, body, feet and harness can be seen. If necessary, move the background wagon a little farther up and to the right along the same road to create room. Do not move or cover Rusk. Head/neck reach downward and forward naturally; four leg connections and visible planted feet follow the muddy road.\nFit a simple well-constructed padded breast harness around the animal's upper chest/shoulders, not a tight throat noose. Two taut leather traces connect it to the wagon's drawbar, with wooden shafts visible beside the body where appropriate; the load path from animal to cart must make sense. Keep the current driver visible on the seat. A driver-to-bridle rein can be restrained and secondary. Match the rainy diffused light, wet surfaces, muted colour and less-detailed background; the animal should belong in the painting without becoming sharper than Rusk. No extra animals or new main figures.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-af629059-63e2-426f-b758-6d0af271d3b3.png",
+      "sha256": "cbb292d7fe1a34bb10f851bc55ecba00d33babd8d2444903cbc198a09896c198",
+      "reference_selection": "Original 205-caravanguard.png for Rusk identity and composition; g2.png BOTTOM-MIDDLE cell 5, G2-5 Salt-flat migrant ONLY; other cells excluded. Normalized rectangle [1/3, 0.5, 1/3, 0.5].",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Rusk's established identity, red vest, single shoulder plate and rainy-road composition retained.",
+          "G2-5 animal stands visibly ahead of the covered wagon.",
+          "Harness and cart shafts are visible with plausible feet on the road."
+        ]
+      },
+      "status": "revised_pending_creator_review",
+      "creator_approved": false
+    }
+  ],
+  "animal_selection": {
+    "code": "G2-5",
+    "name": "Salt-flat migrant",
+    "cell": "Bottom-middle (5)",
+    "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+    "reason": "Large migratory grazer with coherent weight-bearing feet and a body capable of pulling a wagon. Exact domestic/cart role remains a scene proposal."
+  },
+  "verbatim_requested_changes": {
+    "200": "Turn the more present man's left hand underneath the husk's right arm; tilt the husk's head slightly down.",
+    "204": "Make the caravan head a man, walking beside a caravan in motion through more mountainous terrain.",
+    "205": "Keep the liked guard and add an existing reference animal that can plausibly pull the cart."
+  },
+  "gallery": "revisions.html",
+  "outputs_checked": true,
+  "finalized": false,
+  "lore_approval": "No new lore or species-wide draught custom inferred.",
+  "live_card_installation": false
+}

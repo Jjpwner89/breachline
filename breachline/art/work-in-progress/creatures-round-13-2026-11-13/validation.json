@@ -1,0 +1,220 @@
+{
+  "artwork_count": 20,
+  "all_png_dimensions_correct": true,
+  "prompt_and_reference_records_complete": true,
+  "all_descriptions_and_anatomy_questions_present": true,
+  "durable_feedback_test": "passed with isolated temporary state",
+  "duplicate_request_test": "passed",
+  "invalid_and_foreign_requests": "rejected",
+  "test_votes_in_real_feedback": false,
+  "images": [
+    {
+      "code": "CR1",
+      "file": "01-hivebloom.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "214793435e579dd60eb50104aa22ed7d16d7b75cecde62ffab2033e0696c1aee",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR2",
+      "file": "02-seedhunters.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ff798e1281c9222802094290fbc411f5f49cc7aba60e6585a01017af5da4808b",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR3",
+      "file": "03-the-cleaning.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d65ec06abfae73ca23c17a449741289879ed8c199cc671ceb8a514de13206528",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR4",
+      "file": "04-the-lure-field.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f48eac483b5e8dd9a08c78f8c3e9a45c4a15e2252841334ecf1c043a40e54c4b",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR5",
+      "file": "05-moltwalker.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "58b3a1f6062e31dd98cb8c09b487b8e64c1edeef111698d83ce8332833021d94",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR6",
+      "file": "06-wanderroots.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fcf9f7770be5ea97953bed8c3d9047fcb43e65c75f355f7e9d974eeecb5c8030",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR7",
+      "file": "07-bloomfall.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6a6cc0488cbaa7822cd110335ed47df4ab59720dc8c59c06ee925a811ea05be1",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR8",
+      "file": "08-screeswimmer.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "aa4ff28a71d74bb16a3d00a74b490cc0f792193af6cdd91b335abc04fd65721d",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR9",
+      "file": "09-tetherhunter.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1c87450b29e9017fece664ebda92edaddbdfc99a4acf072e0bde280547e873b9",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR10",
+      "file": "10-galeskater.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cc41859085860630481c7c3b532adb9380cf51e9bfd1a5f8516739045e0892f2",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR11",
+      "file": "11-stormfeeder.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "28f372b641c698ff4f6da53fae84354da5a23b7212dfc6b3e2d7dd864fa38189",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR12",
+      "file": "12-breakrider.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0bd0b783dc2332a321d81ba67147f3dd14d88b9dd375a59bf77a4cbb3f3c8f82",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR13",
+      "file": "13-lampkeepers.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b30a43397e84885f205b6d82bcfc0ae806aa36817878db1e4ed419e118ad20c7",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR14",
+      "file": "14-mendergrubs.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "37facdeeba2c40e63bf302e3aa8081c0cf230b31f9385539e3e31086bacc2c26",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR15",
+      "file": "15-breath-sacs.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bd67d99bf3cfd440de6fcd2e0645dc6c079e2c24c660b5b94b91d48865b997c3",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR16",
+      "file": "16-silkspinners.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a459e3d59c59786e0d24b6ef91ae0e2467d67fbf0605f1e99fc107757fdcf743",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR17",
+      "file": "17-skyreef.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3104048d2ffcc22dce145df0140e7d034b7f424a69db4aa5774bc5af74edce92",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR18",
+      "file": "18-the-breathing-hill.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ebd481c9e99454c48f0e758239eb0b5cbd7b84bd5678c93cafead06861c865f5",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR19",
+      "file": "19-soulgleaners.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "94d4d10061a0da477e3fe7161364a4561bd8c497dbca1973c3105801856b7583",
+      "review_status": "pending_creator_review"
+    },
+    {
+      "code": "CR20",
+      "file": "20-ashlicks.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e8e65b016b1885209a1db3c30b357b38732a5a471346dd934fa05c7c06eef8ed",
+      "review_status": "pending_creator_review"
+    }
+  ],
+  "browser_checks": {
+    "navigation": true,
+    "approve_and_note": true,
+    "survives_refresh": true,
+    "reject_and_filter": true,
+    "console_errors": 0,
+    "test_state": "isolated and removed"
+  }
+}

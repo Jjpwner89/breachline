@@ -1,0 +1,40 @@
+"use strict";
+const items=window.CREATURES, $=s=>document.querySelector(s), key="breachline-creatures-round13-review-v1";
+let records={}, pending=[], current=0, showOverview=false, online=false, sending=false, debounce;
+try{const saved=JSON.parse(localStorage.getItem(key)||"{}");records=saved.records||{};pending=saved.pending||[];}catch{}
+const stateFor=code=>records[code]||{decision:"pending",note:""};
+function localSave(){try{localStorage.setItem(key,JSON.stringify({records,pending}));}catch{status("Browser storage unavailable — keep this page open and export feedback.",true);}}
+function status(message,error=false){$("#save-status").textContent=message;$("#save-status").classList.toggle("error",error);$("#retry").hidden=!error||!pending.length;}
+function apply(e){records[e.code]={...stateFor(e.code),...e.changes};}
+function eventId(){return globalThis.crypto?.randomUUID?.()||Date.now()+"-"+Math.random().toString(16).slice(2);}
+function change(changes){const code=items[current].code;const last=pending[pending.length-1];
+if(last&&last.code===code&&!(sending&&pending.length===1)){Object.assign(last.changes,changes);}
+else pending.push({id:eventId(),code,changes});
+records[code]={...stateFor(code),...changes};localSave();renderSummary();renderDecision();$("#note-length").textContent=stateFor(code).note.length+" characters";
+status("Saving…");clearTimeout(debounce);debounce=setTimeout(flush,350);}
+async function flush(){if(sending||!pending.length)return;sending=true;
+try{while(pending.length){const e=pending[0], payload=JSON.stringify(e);const res=await fetch("/api/review",{method:"POST",headers:{"Content-Type":"application/json"},body:payload});if(!res.ok)throw Error("Save unavailable");const body=await res.json();online=true;
+records[e.code]={...stateFor(e.code),...body.record};pending.shift();for(const p of pending)apply(p);localSave();}status("Saved to project");}
+catch{online=false;status("Saved in this browser · project save pending",true);}
+finally{sending=false;renderSummary();renderDecision();}}
+function filtered(){const v=$("#filter").value;return items.map((x,i)=>i).filter(i=>v==="all"||(v==="noted"?!!stateFor(items[i].code).note:stateFor(items[i].code).decision===v));}
+function renderDecision(){const decision=stateFor(items[current].code).decision;document.querySelectorAll("[data-decision]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.decision===decision)));$("#reset").disabled=decision==="pending";}
+function renderSummary(){const count={pending:0,approved:0,rejected:0};items.forEach(x=>count[stateFor(x.code).decision]++);$("#counts").innerHTML='<span><b>'+count.approved+'</b> approved</span><span><b>'+count.rejected+'</b> rejected</span><span><b>'+count.pending+'</b> undecided</span>';
+$("#rail").replaceChildren(...items.map((x,i)=>{const b=document.createElement("button");b.textContent=x.code;b.title=x.title;b.className=(i===current?"active ":"")+stateFor(x.code).decision;b.setAttribute("aria-current",i===current?"true":"false");b.onclick=()=>select(i);return b;}));
+if(showOverview)renderOverview();}
+function renderOverview(){const ids=filtered();$("#overview").replaceChildren(...ids.map(i=>{const x=items[i],s=stateFor(x.code),b=document.createElement("button"),img=document.createElement("img"),copy=document.createElement("div"),code=document.createElement("strong"),title=document.createTextNode(x.title),meta=document.createElement("small");img.src=x.file;img.alt=x.title;img.loading="lazy";copy.className="tile-copy";code.textContent=x.code;meta.textContent=(s.decision==="pending"?"Undecided":s.decision[0].toUpperCase()+s.decision.slice(1))+(s.note?" · Has notes":"");copy.append(code,title,meta);b.append(img,copy);b.onclick=()=>{showOverview=false;select(i);};return b;}));$("#empty").hidden=ids.length!==0;}
+function select(i){current=i;const x=items[i];$("#code").textContent=x.code;$("#title").textContent=x.title;$("#artwork").src=x.file;$("#artwork").alt=x.description;$("#description").textContent=x.description;$("#anatomy-question").textContent=x.anatomyQuestion;$("#original").href=x.file;$("#notes").value=stateFor(x.code).note;$("#note-length").textContent=stateFor(x.code).note.length+" characters";const ids=filtered();$("#position").textContent=(i+1)+" / "+items.length;$("#previous").disabled=ids.length<2;$("#next").disabled=ids.length<2;$("#overview-button").textContent=showOverview?"Single painting":"Overview";$("#overview-button").setAttribute("aria-pressed",String(showOverview));$("#review-main").hidden=showOverview;$("#overview").hidden=!showOverview;$("#empty").hidden=true;renderDecision();renderSummary();history.replaceState(null,"","#"+x.code);}
+function step(delta){const ids=filtered();if(!ids.length)return;const pos=ids.indexOf(current);select(ids[(Math.max(0,pos)+delta+ids.length)%ids.length]);}
+function exportFeedback(){const data={round:"creatures-round-13-2026-11-13",exportedAt:new Date().toISOString(),projectSavePending:pending.length>0,records:items.map(x=>({code:x.code,title:x.title,file:x.file,...stateFor(x.code)}))};const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:"application/json"}));a.download="creatures-round-13-feedback.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+document.querySelectorAll("[data-decision]").forEach(b=>b.onclick=()=>change({decision:b.dataset.decision}));
+$("#reset").onclick=()=>change({decision:"pending"});$("#notes").addEventListener("input",()=>change({note:$("#notes").value}));
+$("#previous").onclick=()=>step(-1);$("#next").onclick=()=>step(1);$("#retry").onclick=flush;$("#export").onclick=exportFeedback;
+$("#next-pending").onclick=()=>{for(let n=1;n<=items.length;n++){const i=(current+n)%items.length;if(stateFor(items[i].code).decision==="pending"){$("#filter").value="all";showOverview=false;select(i);return;}}status("All 20 paintings have a decision.");};
+$("#filter").onchange=()=>{const ids=filtered();if(ids.length)select(ids.includes(current)?current:ids[0]);else{$("#review-main").hidden=true;$("#overview").hidden=true;$("#empty").hidden=false;}};
+$("#overview-button").onclick=()=>{showOverview=!showOverview;select(current);};
+$("#enlarge").onclick=()=>{$("#large-image").src=items[current].file;$("#large-image").alt=items[current].description;$("#large-title").textContent=items[current].code+" · "+items[current].title;$("#lightbox").showModal();};$("#close-lightbox").onclick=()=>$("#lightbox").close();$("#lightbox").addEventListener("click",e=>{if(e.target===$("#lightbox"))$("#lightbox").close();});
+document.addEventListener("keydown",e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||$("#lightbox").open||e.metaKey||e.ctrlKey||e.altKey)return;const k=e.key.toLowerCase();if(e.key==="ArrowLeft"){e.preventDefault();step(-1);}if(e.key==="ArrowRight"){e.preventDefault();step(1);}if(k==="a")change({decision:"approved"});if(k==="r")change({decision:"rejected"});if(k==="u")change({decision:"pending"});if(k==="n"){e.preventDefault();$("#notes").focus();}});
+window.addEventListener("online",flush);window.addEventListener("pagehide",()=>{localSave();if(pending.length&&navigator.sendBeacon){for(const e of pending)navigator.sendBeacon("/api/review",new Blob([JSON.stringify(e)],{type:"application/json"}));}});
+const initial=items.findIndex(x=>"#"+x.code===location.hash);select(initial<0?0:initial);
+(async()=>{try{const res=await fetch("/api/state",{cache:"no-store"});if(!res.ok)throw Error();const remote=await res.json();records=remote.records||{};for(const e of pending)apply(e);online=true;localSave();select(current);status(pending.length?"Saving…":"Saved to project");await flush();}catch{status("Browser-only mode · use Export feedback",true);}})();
+setInterval(()=>{if(pending.length&&!sending)flush();},15000);

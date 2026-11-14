@@ -1,0 +1,843 @@
+{
+  "date": "2026-11-13",
+  "scope": "20 exploratory Breachline creature concept paintings",
+  "status": "20 first-pass paintings complete; awaiting individual creator review. Batch-level design correction received: broader anatomy exploration and lightly recognizable biological grounding are needed.",
+  "source_briefs": "BRIEFS.md",
+  "art_direction": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "shared_painting_direction_source": "../../ART_BRIEFS_SET11.md",
+  "reference_selection_guide": "../../art-review/selection-guide.json",
+  "images": [
+    {
+      "n": 1,
+      "slug": "hivebloom",
+      "title": "Hivebloom",
+      "review_code": "CR1",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A predator made of many small lives.",
+      "brief": "01-hivebloom\n**Appeal:** a predator made of many small lives.\n- Hundreds of small fliers, each like a winged seed, flock into one large hunting shape.\n- Show the moment it forms around prey, or bursts apart like blown seed heads when struck.\n- The individual fliers are simple. The shape they make together is the creature.\n- Open grassland or a forest edge, wind visible in the grass.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A predator made of many small lives.\nSCENE AND ANATOMY: Late afternoon wind at the edge of dun grassland. Hundreds of thumb-sized winged seeds wheel together into a hollow asymmetric hooked hunting crescent, about three metres across, flowing low around a fleeing small invented prey creature. The many separate simple ivory-and-russet bodies, each a short seed kernel with two translucent membrane lobes, remain visibly distinct against a dark forest edge. Their collective shape is the predator: no giant head, no eyes or teeth drawn in the swarm, no solid dragon or bird outline. A few fliers peel off at the near edge so scale and construction are clear. The prey is a compact vertical spool of muscle on three splayed springing feet with a folding oral disk, not a hare. Capture the enclosing movement and wind bent grass. Broad earth colors, bright pale seed edges, an oblique sweeping composition with space ahead of the prey. Ecological predation with no gore.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "01-hivebloom.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-45d48ead-dbe8-42a1-974d-29357bf3da53.png",
+      "assistant_review": "Swarm reads as separate winged seed organisms forming a curved hunting body. The smaller prey has a running, leaf-armored silhouette; primary concept and wind-driven motion are clear.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A hunting colony of tiny winged organisms closes around a fleeing grazer. The predator is the coordinated swarm, rather than one large animal.",
+      "anatomy_question": "Should the individual fliers have more recognizable insect-like bodies, or does the seed-shaped form still feel alive enough?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "214793435e579dd60eb50104aa22ed7d16d7b75cecde62ffab2033e0696c1aee",
+      "bytes": 2898273
+    },
+    {
+      "n": 2,
+      "slug": "seedhunters",
+      "title": "Seedhunters",
+      "review_code": "CR2",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "One life cycle in one image.",
+      "brief": "02-seedhunters\n**Appeal:** one life cycle in one image.\n- A rooted plant-creature fires seed pods into the air.\n- In the air, the pods unfold into small fliers that hunt insects.\n- Nearby, a few have landed and are taking root.\n- Read left to right or near to far so the cycle is clear without text.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: One life cycle in one image.\nSCENE AND ANATOMY: A low viewpoint across a sunlit ochre riverbank after rain. At left a knee-high rooted organism, a muscular fluted cup with three compressed launching chambers, releases several seed pods upward. Through the middle air, show three clear stages naturally spaced: sealed dark pod; splitting seam; a small pale pod with two unfolding leaf-thin wings and a simple petal-like feeding opening taking a gnat. At lower right one spent flier has landed, its wings folding into two first leaves and fine pale rootlets gripping moist soil. A single continuous landscape, not panels, repeated diagram, arrows or labels. The body plans visually share the same lobed seed core at all stages. Beautiful amber transmitted light at the focal opening pod, darker umber bank and subdued new green rootlets. Fewer clear stages are preferable to crowded tiny specimens; suggest the larger swarming ecology in loose distance.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "02-seedhunters.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-7b7fea56-3de8-46d3-a6a5-a7e2c46147ee.png",
+      "assistant_review": "Rooted launcher, closed pod, opening pod, flying hunter and newly rooted stage are legible in one connected landscape. No diagram labels.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Rooted organisms launch pods that unfold into insect-catching fliers, then land and take root. This first attempt makes that cycle clear, but the airborne form reads too much like a winged bulb.",
+      "anatomy_question": "What familiar animal cues would help the flying stage feel like wildlife while keeping its link to the rooted stage?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ff798e1281c9222802094290fbc411f5f49cc7aba60e6585a01017af5da4808b",
+      "bytes": 2767693
+    },
+    {
+      "n": 3,
+      "slug": "the-cleaning",
+      "title": "The Cleaning",
+      "review_code": "CR3",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A quiet scene with a secret.",
+      "brief": "03-the-cleaning\n**Appeal:** a quiet scene with a secret.\n- A large plated grazer lies still in shallow water, eyes half closed.\n- Long-fingered little creatures move over it, cleaning between its plates.\n- Look closely and one of them is cutting a strip of flesh away while the grazer doesn't notice.\n- The grazer's body is invented, not a hippo or rhino with plates.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A quiet scene with a secret.\nSCENE AND ANATOMY: An intimate wide oblique view of clear shallow water under soft grey morning light. A large invented grazer lies resting diagonally, its low body a bowed chain of five offset saddle-shaped mineral-grey keratin plates on a broad muscular sole. The blunt sensory fold at one end has two small half closed eyes and a soft comb-like grazing rim; no mammal head, horns, tusks or rhino body. Three pairs of short paddle supports are folded naturally under its body, only the two near pairs partly visible above clear water. Hand-sized ochre cleaners, each a compact bean-shaped trunk on four long delicate jointed grasping digits, pick between the plates. Three cleaners clearly placed. The nearest cleaner quietly shears a very small muted pink strip at a plate seam while the rest remove algae, barely a sinister detail, no open gore. The grazer seems content. Ripples, submerged reeds and dull shell reflections establish weight and scale. Creature plate seams and the secret action crisp, surroundings painted simply.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "03-the-cleaning.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-9673b163-a447-4b04-ba98-013ceeaa63ca.png",
+      "assistant_review": "Broad invented plated grazer rests convincingly in shallow water. Three cleaners contact its plates; the nearest removes a tiny strip while others clean.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A plated grazer rests in shallow water while small long-fingered cleaners work between its plates. One cleaner quietly takes a small piece of tissue instead of just removing debris.",
+      "anatomy_question": "Does the grazer need a clearer head and leg structure, or does its low segmented body feel convincing?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d65ec06abfae73ca23c17a449741289879ed8c199cc671ceb8a514de13206528",
+      "bytes": 2677625
+    },
+    {
+      "n": 4,
+      "slug": "the-lure-field",
+      "title": "The Lure Field",
+      "review_code": "CR4",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Beauty that is a trap.",
+      "brief": "04-the-lure-field\n**Appeal:** beauty that is a trap.\n- A flowering meadow where some of the \"flowers\" are lures on long tongues from something buried beneath.\n- An unfamiliar grazing animal steps in, just as the ground begins to lift and split around it.\n- Catch the instant before the strike. The buried creature is only partly seen.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Beauty that is a trap.\nSCENE AND ANATOMY: At meadow height, a wind-stirred field of ivory and coral flowers appears lovely in bright overcast light. In the foreground several beautiful flower cups are attached to long wet muscular tongues emerging through soil cracks. A small unfamiliar grazer enters from left: a low arched collar of folded plates held by four angled pedestal limbs, with a feeding veil beneath rather than a mammal face. At right the turf heaves and splits around one buried crescent jaw; roots tear and clods lift. Show only a partial body edge and one muscular tongue connection so the hidden predator remains mysterious. The decisive instant before the strike: one grazer foot pauses above the grass, tongue blossoms subtly turn toward it. No attack already completed, no blood. Let first-read floral beauty become danger on closer examination. Warm offwhite petals against cool turf and deep brown soil; clear asymmetrical diagonal movement, no mandible-covered stock monster.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "04-the-lure-field.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-0a9dbcbb-d91e-4d4f-966d-53bc7ff21af9.png",
+      "assistant_review": "Muscular flower tongues emerge from opened turf, with only part of the buried jaw exposed. Raised grazer foot and lifted soil establish the instant before attack.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Some meadow flowers are feeding lures growing from a buried predator. The turf begins to open just as an unfamiliar grazer steps within reach.",
+      "anatomy_question": "Should the lures look more like adapted sensory organs, or is their flower-like disguise believable?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f48eac483b5e8dd9a08c78f8c3e9a45c4a15e2252841334ecf1c043a40e54c4b",
+      "bytes": 2989856
+    },
+    {
+      "n": 5,
+      "slug": "moltwalker",
+      "title": "Moltwalker",
+      "review_code": "CR5",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A body leaving itself behind.",
+      "brief": "05-moltwalker\n**Appeal:** a body leaving itself behind.\n- A creature climbing out of its old body, soft and pale, with the new shell not yet hard.\n- The empty husk still takes a few more steps on its own.\n- Wet, raw and a little unsettling, but more wondrous than gross.\n- A rocky place or a dim forest floor.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A body leaving itself behind.\nSCENE AND ANATOMY: A dim sandstone cleft after rain, warm shaft of daylight across wet stone. A creature the length of a forearm crawls forward out of the split dorsal seam of its old amber shell. Its new body is pale apricot and softly folded, a blunt tapering mantle with two pairs of broad elastic locomotor lobes and a single trailing anchor lobe. The old shell behind retains the same five-lobed plan, hollow and visibly split along the back, its empty front pair taking one last mechanical step. The living body and discarded shell must be separate readable silhouettes connected only at the last slipping rear fold; no duplicate animal glued to the torso. Fresh skin has a little natural moisture and fine pleating, no gore, exposed organs or horror. Flakes of shed mineral rind, quiet rock shadows and small fern give modest scale. Wondrous, slightly unsettling physiological transformation, no insect head, pincers, mammal face or human anatomy.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "05-moltwalker.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-391491b7-a125-4623-90b1-f5ee4d505aad.png",
+      "assistant_review": "Soft new body and split empty shell read separately, linked by the final shedding membrane; five-lobed locomotion is supported on wet rock. The old husk remains lifted on its residual supports.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A soft new animal crawls free of its old shell while the empty husk remains raised on its supports. The pale folded body shows the vulnerability of moulting.",
+      "anatomy_question": "What would make the new body read as a moving animal rather than a folded sheet—clearer feet, a head, or a different structure?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "58b3a1f6062e31dd98cb8c09b487b8e64c1edeef111698d83ce8332833021d94",
+      "bytes": 2595965
+    },
+    {
+      "n": 6,
+      "slug": "wanderroots",
+      "title": "Wanderroots",
+      "review_code": "CR6",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A slow migration under the moon.",
+      "brief": "06-wanderroots\n**Appeal:** a slow migration under the moon.\n- Tree-like organisms have pulled up their roots and are walking to new ground, a slow column crossing a valley at night.\n- Roots used as legs, soil falling from them.\n- One village light in the distance gives scale.\n- Not alderkin: these aren't people, and they don't have faces.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A slow migration under the moon.\nSCENE AND ANATOMY: Wide valley under blue-grey moonlight, a slow staggered column of tree-like organisms crossing from the near left into the far right distance. Each has an unfaced hollow twisted trunk, wind-pruned branches and a modest uneven crown, lifted on four to six thick branching roots that alternately plant, pull and rise; fibrous rootlets trail with clumps of soil falling. No humanoid torso, arms, eyes or facial features, no walking people made of bark. Foreground organism no taller than an ordinary orchard tree, with two planted support roots bending under its weight and one step visibly lifted. One amber village window far in the valley gives scale and distance. Silver moon on torn root fibers, earthy violet shadows, no luminous foliage. A real migration through a habitat, not trees arranged as a posed lineup. Quiet immense sky and connected ground planes.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "06-wanderroots.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-a7f65b69-1c33-4707-a786-64ea9fa09562.png",
+      "assistant_review": "Faceless tree organisms cross a connected valley plane; load-bearing roots, lifted roots and falling soil make the migration legible. Village light provides a restrained scale cue.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Faceless tree-like organisms migrate across a moonlit valley on branching roots, shedding soil as they walk. A distant village light places them at ordinary tree scale.",
+      "anatomy_question": "Do the load-bearing roots feel capable of walking, or should the body use a less tree-like structure?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fcf9f7770be5ea97953bed8c3d9047fcb43e65c75f355f7e9d974eeecb5c8030",
+      "bytes": 2625518
+    },
+    {
+      "n": 7,
+      "slug": "bloomfall",
+      "title": "Bloomfall",
+      "review_code": "CR7",
+      "kind": "Creature concept painting",
+      "alignment": "Genesis-leaning",
+      "intent": "Death becoming life, fast.",
+      "brief": "07-bloomfall\n**Appeal:** death becoming life, fast.\n- A large creature has died and is becoming a garden.\n- Scavengers feed on it while sprouts, fungus and fruiting growths take it over.\n- Show succession in one frame: fresher at one end, overgrown at the other.\n- Beautiful rather than gory. This matches Genesis's belief that death should reclaim the body.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Death becoming life, fast.\nSCENE AND ANATOMY: A beautiful diagonal fallen body in cool autumn woodland, no larger than a wagon. It belongs to a strange low creature with a series of nested crescent plates and a fringed grazing mantle, no recognisable mammal skull or deer antlers. At near left its recently dead ash-blue plates and collapsed soft folds remain identifiable and intact, without blood or exposed viscera. Farther right the same continuous carcass is successively threaded by fine white fungal fans, young red stems, then ochre fruiting shelves and green sprouts, a garden overtaking the old form. Two small original scavengers with simple three-footed bodies and hinged scoop mouths feed at a loosened plate edge. Pale ambient light with one rich patch of copper fallen leaves. Show an ecological succession through connected anatomy and texture, not an infographic or separate stages in boxes. Focal living growth precise, surrounding forest broad and restrained.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "07-bloomfall.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-5291ccfc-9dfe-4c15-b3f4-f68dcd3f520f.png",
+      "assistant_review": "Intact plated remains transition into fungal fans and leafy growth along one continuous body; two small scavengers feed without graphic gore.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A dead plated creature becomes a nursery for fungi and plants while small scavengers feed around it. Growth progresses along the body from relatively intact remains to an established garden.",
+      "anatomy_question": "Should the underlying animal be easier to recognize beneath the growth, and what body plan should it have?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6a6cc0488cbaa7822cd110335ed47df4ab59720dc8c59c06ee925a811ea05be1",
+      "bytes": 2898836
+    },
+    {
+      "n": 8,
+      "slug": "screeswimmer",
+      "title": "Screeswimmer",
+      "review_code": "CR8",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Solid ground behaving like water.",
+      "brief": "08-screeswimmer\n**Appeal:** solid ground behaving like water.\n- A predator moving through a loose rock slide as if swimming.\n- Only its fins and the line of its back break the surface, with stones flowing around it.\n- A mountain slope in hard light. A person or pack animal on the path above for scale and tension.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Solid ground behaving like water.\nSCENE AND ANATOMY: A steep mountain scree slope in hard white noon sun, composed as a strong downward diagonal. Beneath moving loose stone a predator about three metres long sweeps from high right to low left as though swimming. Only a low segmented ridge of flexible slate-colored dorsal shields and two short swept triangular fin edges break the flowing gravel; no full exposed body, legs, fish face or shark shape. Rocks heap ahead and stream behind in a coherent wake, larger rocks tumble at the near edge with a shadow anchoring the animal inside the slope. A single tiny ordinary adult traveller with a pack stands arrested on the firm narrow path above, feet grounded; the animal is clearly only several human lengths, not mountain sized. Warm bone scree, blue slate shadows, distant desaturated ridgeline. Dynamic and physically weighty, crisp fin-stone contacts with broad simpler landscape.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "08-screeswimmer.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-b3ac6763-ae6f-4d6b-927a-5b0c6b0b9fad.png",
+      "assistant_review": "Only dorsal plates and fin edges break the scree; the coherent downhill wake carries the motion. Traveller and path establish moderate predator scale.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A predator moves beneath loose mountain scree, leaving only fins and back plates above the flowing stone. A traveller on the path above provides scale and tension.",
+      "anatomy_question": "Do the exposed fins suggest a believable burrowing body, or should different digging or swimming structures break the surface?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "aa4ff28a71d74bb16a3d00a74b490cc0f792193af6cdd91b335abc04fd65721d",
+      "bytes": 3026041
+    },
+    {
+      "n": 9,
+      "slug": "tetherhunter",
+      "title": "Tetherhunter",
+      "review_code": "CR9",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A swing through open air.",
+      "brief": "09-tetherhunter\n**Appeal:** a swing through open air.\n- A cliff creature has shot a sticky line and is mid-swing out from the rock face to take prey off a ledge.\n- A dynamic arc and a big drop below.\n- The line is organic, like silk or a tongue, and not glowing.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A swing through open air.\nSCENE AND ANATOMY: A compact cliff animal about the size of a large dog swings out from a near sandstone overhang toward small unfamiliar prey on the opposite ledge. Its body is a folded muscular triangular pouch with three hooked anchoring limbs, two opened for capture and one tucked back, a fanlike balancing tail, and a blunt sensory seam instead of a stock reptile head. Exactly one taut matte cream organic cord issues from a clearly visible gland at its front chest and attaches high at the left rock lip, bearing its weight along a believable pendulum arc. Side view with the hunter fully separated from rock against open blue-grey air, the deep canyon falling far below; no Spider-Man pose, mechanical rope or glow. Rust rock, muted teal shadows and pale late-day sky. Prey is secondary and not yet caught. Express stretched weight and momentum, not a creature floating without a tether.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "09-tetherhunter.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-80c01ff0-1eb3-48c4-8165-656b69edc3ec.png",
+      "assistant_review": "One organic tether joins the chest gland to rock and supports a three-limbed hunter mid-swing. Reach, balancing fan and distant canyon are coherent.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A cliff hunter swings toward prey on an organic tether anchored to the overhang. Its reaching limbs and balancing tail make the leap readable.",
+      "anatomy_question": "Does the chest-mounted tether and three-limbed body feel functional, or would a different attachment and limb arrangement work better?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1c87450b29e9017fece664ebda92edaddbdfc99a4acf072e0bde280547e873b9",
+      "bytes": 2288114
+    },
+    {
+      "n": 10,
+      "slug": "galeskater",
+      "title": "Galeskater",
+      "review_code": "CR10",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Speed on ice.",
+      "brief": "10-galeskater\n**Appeal:** speed on ice.\n- A flat, diamond-shaped creature skating across a frozen lake, a sail membrane raised to catch the wind.\n- Low winter sun through the sail. Ice spray off its edges.\n- Several in the distance, maybe racing.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Speed on ice.\nSCENE AND ANATOMY: A low fast tracking viewpoint over a frozen lake at low winter sunset. The main creature is a flat asymmetric diamond body about one metre wide, with four firm skating tips continuous with its corners, and a single amber translucent dorsal sail raised on two flexible organic struts. Its anterior is a short sensory slit and folded fringe, no fish, ray face, turtle or reptile head. It skids hard from right to left, nearer two skating tips carve narrow lines and throw fine ice spray, the other tips balance the turn. Low sun shines through the sail, visible branching membrane fibers and cool shadow within folds. Two smaller skaters far back share the same anatomy. Blue ice, apricot sail and tiny silver spray; spacious winter distance. Ground contact and cast shadow coherent; membrane is thin living tissue rather than glass or cloth rigging.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "10-galeskater.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-caba54fc-7865-41c9-8c2e-24295cdbf89d.png",
+      "assistant_review": "Diamond body has distinct load-bearing skating tips, visible ice contact and carved spray trails. Organic sail is attached and transmits low winter light.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A low diamond-shaped animal skates over ice with a raised sail catching the wind. Its corner tips cut tracks as smaller animals follow behind.",
+      "anatomy_question": "Does the sail-and-skating anatomy feel like an animal, or should it have a clearer head, flexible joints, or different contact points?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cc41859085860630481c7c3b532adb9380cf51e9bfd1a5f8516739045e0892f2",
+      "bytes": 2523740
+    },
+    {
+      "n": 11,
+      "slug": "stormfeeder",
+      "title": "Stormfeeder",
+      "review_code": "CR11",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Something living inside a storm.",
+      "brief": "11-stormfeeder\n**Appeal:** something living inside a storm.\n- A filter-feeder that lives inside thunderheads, dropping through the cloud base as lightning cracks.\n- Its body crackles faintly.\n- Huge dark sky and rain curtains. A small hill or tower below for scale.\n- The creature is large but not colossal.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Something living inside a storm.\nSCENE AND ANATOMY: A wide view of a vast charcoal thunderhead and rain curtains, with a large but non-colossal filter-feeder dropping halfway out of the cloud base at upper left. Its body about eight metres across resembles an asymmetric nested crown of hollow cartilage hoops carrying broad pleated filtering membranes, an open central water-dark throat, three short balancing lobes. No whale, ray, dragon, jellyfish bell or tentacle cluster. Vapor streams through the folds and small rain droplets trail; only a few faint pinpoint static sparks along the outer lip. A single lightning crack elsewhere illuminates the thin membranes momentarily. A low stone hill tower is clearly separated below and provides scale, with the creature about twice the tower width, not filling the whole sky. Muted violet grey, warm pale lightning and cold blue rain, beautifully painted power and weather; no huge electrical explosion.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "11-stormfeeder.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-20f2f7cb-e943-4e2d-9554-795cae4f0917.png",
+      "assistant_review": "Open cartilage hoops and filtering membranes form a coherent original body emerging from the cloud base. Tower separates creature scale from the wider storm.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A filter-feeder emerges beneath a thundercloud, its open membranes catching rain and passing air through the body. Lightning briefly reveals its structure above a small tower.",
+      "anatomy_question": "How much recognizable animal structure should sit inside the open filter body—a central trunk, a mouth, or something else?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "28f372b641c698ff4f6da53fae84354da5a23b7212dfc6b3e2d7dd864fa38189",
+      "bytes": 2526508
+    },
+    {
+      "n": 12,
+      "slug": "breakrider",
+      "title": "Breakrider",
+      "review_code": "CR12",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Launching off a wave.",
+      "brief": "12-breakrider\n**Appeal:** launching off a wave.\n- A long, finned creature rides a breaking wave and launches into the air off the crest.\n- Spray, green water lit from behind, a rocky coast.\n- Its fins are spread wide in the air.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nEDIT TARGET: the supplied Breakrider draft. Preserve the rocky coast, luminous breaking green wave, spray, sky, 3:2 framing, oil-paint language and the direction and position of the airborne leap. Replace the ENTIRE existing pale ribbon creature, including every fin, head and tail, with an original aquatic organism. Do not retain its ribbon spine, leaf-vane rows, pointed lizard-like head, white color or needle tail.\nNEW CREATURE ANATOMY: a long muscular dark oxblood and pewter body, about 3.5 metres from front to tail, distinctly thick through its middle. Its length is about four times its trunk width. The front is a blunt oval feeding collar whose small nested folds close around a dark central opening; two small flattened amber sensory patches sit on opposite sides. No projecting jaw, beak, snout, whiskers or familiar vertebrate face. The trunk consists of six broad overlapping flexible saddle segments, carried into a short split propulsion tail. Exactly TWO PAIRS of very broad lateral fins, four fins total: one large forward pair spread out sideways across the air and one smaller rear pair, all with thin smoky amber membranes and strong fleshy roots. Fins attach to the left and right sides of the body, not as a comb of dorsal leaves. Show a three-quarter view so near and far fins separate cleanly. Body twists slightly in an active launch, with its tail just clearing spray at the wave crest. It is not a ray, whale, fish, reptile or a flying version of the reference. Its opaque muscular trunk should contrast beautifully with its translucent lateral fins and green water. Keep the painting graceful, dynamic and physically coherent. Scale stays two adult human lengths. No text, frame, signature, neon or added people. Single landscape PNG exactly 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-f34015f8-a3bb-49a3-9b7f-4b19f8de34eb.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-f34015f8-a3bb-49a3-9b7f-4b19f8de34eb.png",
+          "role": "Edit target; preserve marine scene and launch position, entirely replace creature anatomy"
+        }
+      ],
+      "file": "12-breakrider.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generation_history": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Launching off a wave.\nSCENE AND ANATOMY: A long unfamiliar sea creature roughly two adult human lengths launches leftward off the crest of a breaking green wave on a rocky coast. Its supple body is a flattened tapering central keel, four paired fins attached successively along it like overlapping flexible louvers, and a short blunt split feeding rosette at the front rather than a dolphin beak or dragon head. All eight fins spread into a coherent airborne plan, largest front pair and diminishing rear pairs; a continuous simple tail keel balances the launch. Body arcs with momentum, rear fin tips still throw spray from the crest, shadow and backlit green water connect the leap to the wave. Pearl underside and deep russet dorsal plates against emerald water, bright marine afternoon and soft distant cliffs. Paint the fin membranes and water with distinct materials, no uniformly glossy 3D finish.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png"
+          ],
+          "reference_roles": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/white-flier.png",
+              "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-f34015f8-a3bb-49a3-9b7f-4b19f8de34eb.png",
+          "status": "assistant_superseded",
+          "reason": "Marine launch and light are good; creature body is too close to the Ribbonvane reference. Redesign organism while preserving the surf composition."
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-320f8b69-125d-490c-9893-d13df51e7ad4.png",
+      "assistant_review": "Revised organism has a thick segmented trunk, blunt feeding collar, four coherent lateral fins and split tail. Wave launch and painted water remain intact; Ribbonvane-like anatomy replaced.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A thick-bodied marine animal launches from a breaking wave with four broad lateral fins. Its revised design replaces the first attempt's Ribbonvane-like spine with a segmented trunk and blunt feeding collar.",
+      "anatomy_question": "Do the feeding collar and fin joints feel coherent, or should the head and swimming anatomy take another direction?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0bd0b783dc2332a321d81ba67147f3dd14d88b9dd375a59bf77a4cbb3f3c8f82",
+      "bytes": 2742548
+    },
+    {
+      "n": 13,
+      "slug": "lampkeepers",
+      "title": "Lampkeepers",
+      "review_code": "CR13",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Living light in an ordinary city night.",
+      "brief": "13-lampkeepers\n**Appeal:** living light in an ordinary city night.\n- Small creatures glow when fed, kept in net cages hung along an Ambrel canal at night.\n- A keeper feeds one, and it brightens.\n- Warm, everyday and a little strange. Ambrel references:\n  - `../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/08-ambrel-stair-market.png`\n  - `../../reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png`\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Living light in an ordinary city night.\nSCENE AND ANATOMY: An ordinary Ambrel canal at blue dusk, human-height view along a worn stone quay. A middle-aged working keeper with an ordinary long nose and weathered brow feeds a small living lamp through the opening of a fine knotted net basket hung at shoulder height. The creature is fist-sized, an amber translucent folded pouch with three internal leafy lobes and four short gripping roots attached to the basket, no insect face or bulb hardware. Its warm body brightens as the food reaches a small central feeding fold, casting soft light on the keeper fingertips and cheek. Two dimmer cages recede along the canal on simple brackets, reflections tremble in water; an occupied archway and stairs connect plausibly behind. Humble wool coat and rolled linen cuffs, no mage attire, no casting effects or luxurious enchanted gear. Warm intimate strange husbandry against cool deep water. The lamp creature and feeding hand are focal, face and masonry simpler.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/08-ambrel-stair-market.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/08-ambrel-stair-market.png",
+          "role": "Accepted place and material/craft context; new scene"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "13-lampkeepers.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-3c6e539b-3d62-426f-a722-35517b534f16.png",
+      "assistant_review": "Keeper's two hands have clear roles: food at the feeding fold and a held bowl. Small living lamp grips its net; warm creature light and cool canal context are coherent.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "An Ambrel keeper feeds a small glowing creature held in a net cage along the canal. Its body brightens and lights the keeper's hands and face.",
+      "anatomy_question": "Should the creature have clearer eyes and limbs, or does its folded glowing body already read as a living animal?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b30a43397e84885f205b6d82bcfc0ae806aa36817878db1e4ed419e118ad20c7",
+      "bytes": 2978190
+    },
+    {
+      "n": 14,
+      "slug": "mendergrubs",
+      "title": "Mendergrubs",
+      "review_code": "CR14",
+      "kind": "Creature concept painting",
+      "alignment": "Vigil-leaning",
+      "intent": "Healing that makes you flinch.",
+      "brief": "14-mendergrubs\n**Appeal:** healing that makes you flinch.\n- A healer lays a pale, many-legged creature on a wound, and its legs draw the edges of the cut together.\n- The patient looks away.\n- Clean, careful and candlelit: a real treatment, not horror. Vigil-leaning.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Mendergrubs, a living creature helping a healer in a careful candlelit sickroom. An ordinary adult craft worker has a tiny nearly healed accidental scrape on the OUTER UPPER ARM from work. A calm middle-aged female healer places a small soft ivory many-legged organism across the skin while the adult patient looks away with a mild anticipatory flinch. Make this a benign, gentle fantasy medical-care scene with NO blood, no open injury, no exposed tissue, no sharp tools, no distress or force. The scrape is only a one-centimetre faint pale-pink CLOSED seam, mostly obscured by the little creature. The focus is the beautiful creature's anatomy and gentle caregiving, not an injury.\nCREATURE: a thumb-length flattened segmented ivory body with six tiny matched pairs of soft flexible legs. The pairs rest on intact skin at either side of the almost invisible seam and gently bring the surrounding skin together; a natural living aid, not a machine. The healer's one hand lightly lowers it, her other hand supports the patient's upper arm from below. Exactly two healer hands with simple anatomically coherent fingers; connected elbows and shoulders. Patient sits comfortably with arm supported on a clean folded linen pad. Warm cream candlelight, pale blue linen sleeve rolled safely above the area, muted umber shadows, no magical light rays or threads. Restrained caring expressions. An intimate landscape composition, creature and careful fingers crisp while the two ordinary adult faces and room remain softly described by connected paint shapes, not photographic blur. Use the attached ordinary human sheet only for varied believable adult face proportions. Completely fresh scene; not a reference sheet. This is a normal non-graphic healthcare illustration. No lettering, framing, signature or watermark. Exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary varied adult face proportions and painted treatment; new healer and patient"
+        }
+      ],
+      "file": "14-mendergrubs.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generation_history": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Healing that makes you flinch.\nSCENE AND ANATOMY: An intimate candlelit treatment scene in a modest Vigil sickroom. A healer carefully sets a pale many-legged mender creature across a shallow clean cut on an adult patient's supported forearm on linen. The mender is only thumb-length, a soft flat ivory segmented ribbon with six matched pairs of tiny flexible hooked legs; each near/far leg pair gently grips opposite wound edges and draws them together like living sutures. The little creature remains the crisp focal point; minimal muted red line, no pooled blood, exposed flesh or horror. The healer has one clearly connected hand placing the creature and the other steadying the patient's wrist; only these functional hands near the treatment. Patient's ordinary adult face at the far edge turns away with a restrained flinch. Ivory linen, dull brass candleholder and warm brown shadows, a hint of pale blue cloth. Caring, careful and unsettling. No glowing magic threads, surgical machine or photoreal macro shot.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+          ],
+          "reference_roles": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+              "role": "Ordinary human proportions and varied faces; new individuals"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+              "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+            }
+          ],
+          "status": "generation_blocked",
+          "reason": "Image service rejected the output under self-harm/violence categories. No generated asset returned. Retry reduces visible injury to a closed superficial seam in a benign treatment scene."
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-40bebd62-fbf1-419d-bbee-d22cca4d2629.png",
+      "assistant_review": "Non-graphic care scene with small ivory mender on the outer upper arm. Healer's two hands connect coherently and have distinct placing/supporting roles; skin and limb contacts are readable.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A healer places a small many-legged organism over a nearly healed scrape while the patient flinches. Its paired feet gently hold the surrounding skin together.",
+      "anatomy_question": "Should the mender's feet visibly oppose each other like tiny graspers, or would another closing mechanism feel more convincing?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "37facdeeba2c40e63bf302e3aa8081c0cf230b31f9385539e3e31086bacc2c26",
+      "bytes": 2780035
+    },
+    {
+      "n": 15,
+      "slug": "breath-sacs",
+      "title": "Breath-sacs",
+      "review_code": "CR15",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A tool that is alive.",
+      "brief": "15-breath-sacs\n**Appeal:** a tool that is alive.\n- Underwater, a riverfolk diver breathes from a living, translucent bladder strapped to the chest, attached to a canal wall at work.\n- Riverfolk anatomy: `../../reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png`.\n- Riverfolk dive to maintain canals, never for mana-stones.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A tool that is alive.\nSCENE AND ANATOMY: Fully underwater in a working Ambrel canal, green-blue daylight filtering down with suspended silt. One adult riverfolk diver in practical short woven work clothes is held beside a stone canal wall by a simple waist line looped to an iron ring. Preserve accepted riverfolk anatomy from the supplied sheet: webbed long hands and feet, fin-like ears, gill folds along the neck, muted olive-brown skin with patches of scales, natural human-proportioned dark eyes and a broad straight nose, short dark hair, humanoid proportions, no mermaid tail. A living translucent oval bladder about head size is secured across the upper chest by two simple broad textile straps. Its amber-grey thin membrane gently flexes; a short soft organic breathing neck reaches the diver's mouth, several small folded gill-like breathing slits visible on the sac, no metal tank. One hand grips the wall rung, the other scrapes debris from an ordinary submerged sluice fitting; feet braced on masonry. The creature and its breath connection remain fully readable, only tiny exhaled bubbles. Purposeful canal maintenance, never mining or gathering stones. No luminous mana, glowing cables or scuba technology.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+          "role": "Accepted riverfolk visual anatomy; new diver individual"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
+          "role": "Accepted place and material/craft context; new scene"
+        }
+      ],
+      "file": "15-breath-sacs.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-d2e752f8-7690-4c1e-8a6f-073a77a1a363.png",
+      "assistant_review": "Riverfolk anatomy follows the accepted sheet. Both arms trace to shoulders, one foot braces against the canal wall, waist tether and chest straps are coherent, and the organic breathing neck reaches the mouth.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A Riverfolk diver clears a canal fitting while breathing through a living sac strapped to the chest. The translucent body and soft breathing neck distinguish the organism from a manufactured air tank.",
+      "anatomy_question": "Does the sac need clearer living organs or attachment behavior, and is the breathing connection convincing?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bd67d99bf3cfd440de6fcd2e0645dc6c079e2c24c660b5b94b91d48865b997c3",
+      "bytes": 2535197
+    },
+    {
+      "n": 16,
+      "slug": "silkspinners",
+      "title": "Silkspinners",
+      "review_code": "CR16",
+      "kind": "Creature concept painting",
+      "alignment": "Genesis-leaning",
+      "intent": "A harvest from a burrow.",
+      "brief": "16-silkspinners\n**Appeal:** a harvest from a burrow.\n- At a Genesis village edge, people harvest sheets of cloth-like silk that a burrowing creature spins across its tunnel mouths.\n- The creature peeks out, watchful.\n- Morning light through the silk sheets. Village references, for society and craft only:\n  - `../../world-concepts-2026-11-08-set-02/01-houses-above-the-ferns-brushwork-v2.png`\n  - `../../reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png`\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A harvest from a burrow.\nSCENE AND ANATOMY: At the edge of a lived-in Genesis woodland village, a sloping ochre bank holds two low tunnel mouths covered by draped sheets of natural pale cream silk. Morning sun shines through the broad clothlike sheet an ordinary adult worker carefully peels from one rim while another winds the freed edge onto a simple wooden bar. Honest working clothes with simple seams, no ornamental druid uniforms; their faces secondary and distinct. From the other tunnel a watchful creature peeks out: a handspan-wide flattened folding rosette body, three unequal overlapping mantle flaps, two tiny inset eyes beneath a protected rim and comb-shaped spinning folds underneath, no spider or silkworm head and no insect mandibles. The bright silk weave and curved shadow in the occupied tunnel are focal. A few restrained stilted timber homes, handrails and baskets suggest a working society. Soft green-grey shade against sunlit flax and warm earth. Gentle natural husbandry rather than an enchanted loom.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/world-edges-round-10-2026-11-10/03-the-rootbound-quarter.png",
+          "role": "Accepted place and material/craft context; new scene"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "16-silkspinners.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-4c42fa8d-1852-4b4c-b1c0-6a7f3e79b620.png",
+      "assistant_review": "Two workers handle one continuous silk sheet, with clear grips and winding-bar contact. The small rosette organism remains visible in the neighboring tunnel, with legible village scale.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Workers peel broad silk sheets from burrow mouths and wind the material onto a wooden bar. A watchful spinner remains inside the neighboring tunnel.",
+      "anatomy_question": "Would a more recognizable burrowing body improve the spinner, and where should its silk-producing structures be visible?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a459e3d59c59786e0d24b6ef91ae0e2467d67fbf0605f1e99fc107757fdcf743",
+      "bytes": 3354529
+    },
+    {
+      "n": 17,
+      "slug": "skyreef",
+      "title": "Skyreef",
+      "review_code": "CR17",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "A reef in the sky.",
+      "brief": "17-skyreef\n**Appeal:** a reef in the sky.\n- A coral-like colony drifting high in the air, with small fliers darting in and out of it.\n- Seen from a mountain pass, where a traveller has stopped to stare.\n- Light through the reef's thin branches. Rare and wondrous.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: A reef in the sky.\nSCENE AND ANATOMY: A rare enormous airborne colonial reef drifts beyond a rugged mountain pass in clear pale dawn. A single traveller has stopped on the foreground path, leaning slightly back with one grounded foot and a walking staff, plainly looking up in astonishment. The colony is a sweeping asymmetrical open lattice of branching coral-like living struts and thin translucent web fans, enormous but with airy negative spaces; its underside carries several broad buoyant folded lobes, not a rock island, a ship, a whale or roots shaped into humanoid legs. Dozens of tiny fliers dart in and out of cavities, individually secondary. Warm low light passes through peach, ivory and faint coral branches, cool lilac mountains beyond. The silhouette should feel like an ecology, with varied growth ages and a few broken older branch ends. Great distance, scale and atmosphere, not a centered design sheet or busy fractal noise. No buildings growing on it or neon glow.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "17-skyreef.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-2bbd1f51-90e0-4d48-871f-14636b64a272.png",
+      "assistant_review": "Airborne branching colony and translucent membranes form an open structure. Traveller stands on the pass and looks up, making this an exceptional large encounter.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A huge floating colony crosses a mountain pass with smaller fliers moving among its branching structures. A traveller stops beneath it, showing the rarity and scale of the encounter.",
+      "anatomy_question": "Should the reef have a stronger central living body or remain a colony, and what would make its buoyancy feel believable?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3104048d2ffcc22dce145df0140e7d034b7f424a69db4aa5774bc5af74edce92",
+      "bytes": 2789682
+    },
+    {
+      "n": 18,
+      "slug": "the-breathing-hill",
+      "title": "The Breathing Hill",
+      "review_code": "CR18",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "The ordinary next to the impossible.",
+      "brief": "18-the-breathing-hill\n**Appeal:** the ordinary next to the impossible.\n- A grassy hill beside a small village rises and falls slowly, once an hour.\n- People go about their day: washing, herding, a child running up its slope. Everyone knows it's alive.\n- Catch a tell: the grass shifting, a seam opening on its side.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: The ordinary next to the impossible.\nSCENE AND ANATOMY: A small weathered rural village beside a living grassy hill in hazy late summer noon. Wide oblique view puts the round turf-covered organism across the right two thirds, no larger than a local knoll but truly vast next to houses. Its slow breath has just opened a long curved seam low on its side, exposing soft pleated dull mauve-grey tissue between layers of root-bound turf. Grass along the seam visibly tilts and soil gently lifts, just one quiet tell that the hill is alive. No giant eye, mouth with teeth, turtle shell, recognizable animal head or dramatic monster attack. At left an adult washes cloth at a simple outdoor basin, farther back a herder walks two small ordinary goats; a small fully clothed child runs up the safe sunlit slope, drawn simply. Locals are used to it and continue their day. Ochre roofs, dry grass, quiet blue haze; believable human-to-building scale and calm daily rhythm against an impossible organism.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/dawnsail-passage.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "18-the-breathing-hill.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-442ecd3f-e142-4d62-b8f1-7ae832ba4c83.png",
+      "assistant_review": "Pleated seam beneath grass is the sole creature reveal. Laundry, herder, goats and child maintain human village scale and familiar daily life.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "A grassy hill reveals a breathing seam while nearby villagers carry on with washing and herding. The exposed pleated tissue is the only clear sign that the landscape is alive.",
+      "anatomy_question": "Is that single breathing seam enough, or would a subtle additional anatomical cue make the hill more convincing?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ebd481c9e99454c48f0e758239eb0b5cbd7b84bd5678c93cafead06861c865f5",
+      "bytes": 3214918
+    },
+    {
+      "n": 19,
+      "slug": "soulgleaners",
+      "title": "Soulgleaners",
+      "review_code": "CR19",
+      "kind": "Creature concept painting",
+      "alignment": "Dominion-leaning",
+      "intent": "Grief and hunger in the same place.",
+      "brief": "19-soulgleaners\n**Appeal:** grief and hunger in the same place.\n- Faint, translucent creatures gather around someone who has just died, feeding on the soul as it leaks away.\n- In this setting a soul drains from the body after death. The setting does not say what that looks like, so keep it subtle and don't diagram it.\n- Mourners may or may not see the creatures. Dominion-leaning.\n- Cold light, quiet.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Grief and hunger in the same place.\nSCENE AND ANATOMY: A cold window-lit humble Dominion room after a recent death. An intact adult human lies still on a low bed, clothed and covered to the chest by plain grey linen, no visible injury. Two mourning adults sit quietly at the margins; one holds the still person's hand. Between window light and deep room shadow a few hand-sized almost translucent creatures hover close to the dead person's shoulder and chest: faint folded crescent bodies with paired open feeding fans and three hair-fine anchoring tendrils, exquisitely subtle amber-grey refraction, no skeletal faces, ghosts or butterflies. One creature's fan is fractionally clearer where it feeds. Suggest soul loss only through a nearly imperceptible thinning of reflected light near the body; no diagram, luminous soul ribbon, visible escaping human ghost, beam or glowing energy stream. The mourners may not see them. Austere ash, bone and muted blue-violet, grief conveyed in small gestures, creatures carry quiet hunger. Respectful, unsettling and beautifully restrained.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/08-humans-additional-faces.png",
+          "role": "Ordinary human proportions and varied faces; new individuals"
+        }
+      ],
+      "file": "19-soulgleaners.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-d003d7e8-4fcc-4672-817f-725cae65c1ed.png",
+      "assistant_review": "Three faint crescent organisms gather over the deceased; no explicit soul diagram. Mourners' contact and bed support are coherent. Forms remain an exploratory interpretation.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Faint translucent organisms gather around someone who has just died, while mourners sit nearby. Their feeding suggests soul loss without giving it a fixed visible form.",
+      "anatomy_question": "Do the crescent bodies feel too abstract, and what restrained anatomical cue would make them read as creatures?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "94d4d10061a0da477e3fe7161364a4561bd8c497dbca1973c3105801856b7583",
+      "bytes": 2512187
+    },
+    {
+      "n": 20,
+      "slug": "ashlicks",
+      "title": "Ashlicks",
+      "review_code": "CR20",
+      "kind": "Creature concept painting",
+      "alignment": "Unassigned",
+      "intent": "Scavengers at the end of an industry.",
+      "brief": "20-ashlicks\n**Appeal:** scavengers at the end of an industry.\n- Scavengers crawl over a heap of burned-out mana-stones dumped near a great works, licking up the last traces.\n- The Mountain's Lung burns stored mana from stones, and they're left permanently spent. These creatures live on whatever's left.\n- Smoky, industrial light. A worker in the distance. Reference: `../../reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png`.\n",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No card frame, lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nSPECIFIC VISUAL AIM: Scavengers at the end of an industry.\nSCENE AND ANATOMY: Low close view across a spoil heap of permanently burned-out mana stones outside the Mountain's Lung works. The spent stones are dull fractured charcoal-grey and chalky beige, no luminous cores or recharging. Three small scavengers, each about boot length, crawl across the ash: an asymmetric low body of three soft muscular arches protected by overlapping soot-dark plates, exactly six short blunt gripping feet in three pairs, a broad pale licking pad extending from an underside mouth fold. The nearest animal presses its pad against mineral residue in a crack; another lifts a plate edge to expose a faint warm internal membrane, an organic feature rather than magic glow. They take traces of residue, not restore stones. Industrial dusk is smoky bronze with cool ash shadows. A distant ordinary worker with a shovel gives scale and the dim silhouette of a great grounded foundry/engine shed suggests the works. Creature feeding and material contact crisp; architecture broadly painted, no apocalyptic ruin or futuristic factory.\n\nREFERENCE ROLES: Attached accepted Breachline paintings guide painted finish, anatomical coherence, believable weight, transmitted light where relevant and invention quality only. This is an entirely NEW creature and scene; do not copy reference creatures, poses or compositions. Attached human sheets, where present, guide ordinary varied face proportions only. Specific setting and riverfolk references supply context/anatomy where named. New painting, no reference-sheet layout. Capture the specified ecological behavior, not a posed museum specimen. Do not default to known Earth animals with extra features. No dragons or drakes, animal-folk, lettering, watermark, frames, photo or 3D render. Keep one cohesive oil/acrylic painting with connected forms, selective detail and matte non-reflective surfaces where appropriate. Deliver exactly 1536 x 1024 landscape PNG.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/11-the-mountains-lung.png",
+          "role": "Accepted place and material/craft context; new scene"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/concepts/slateprowler-on-the-descent.png",
+          "role": "Painted quality, coherent invented anatomy, movement and transmitted light where applicable; do not copy design or composition"
+        }
+      ],
+      "file": "20-ashlicks.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "generation_mode": "Built-in image_gen",
+      "active_reference": false,
+      "reference_candidate": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d58d-1d5b-79a2-84db-6044239875c3/exec-07a5db58-10d0-434c-826d-1beeb8ee057a.png",
+      "assistant_review": "Three low plated scavengers contact dull spent stones with feeding pads. Closest animal shows three near-side feet with body support; worker and foundry establish small scavenger scale.",
+      "assistant_visual_check": "anatomy_contact_and_scale_reviewed",
+      "description": "Small plated scavengers lick mineral residue from discarded mana-stones near the Mountain's Lung. The stones remain permanently spent; the animals are feeding on what is left.",
+      "anatomy_question": "Should the ashlicks keep their six-legged plated build, or would a different mouth and body plan feel less familiar and more distinct?",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e8e65b016b1885209a1db3c30b357b38732a5a471346dd934fa05c7c06eef8ed",
+      "bytes": 2733357
+    }
+  ],
+  "creator_batch_feedback": {
+    "date": "2026-11-13",
+    "source": "Creator in this chat",
+    "quote": "these concepts lean a little too hard on the two inspirations i gave so we will likely need to regen them a lot. like too many ribbonvane looking creatures and not enough exploration of new designs and anatomies, also needs to have a light assocotion with the world the viewer knows. like a flying piece of garlic looks a little out there",
+    "interpretation": "Borrow movement, painting quality and ecological imagination from references without repeating their body plans. Explore more distinct anatomies while preserving enough familiar biological cues to feel understandable as wildlife. Avoid literal food/plant objects with wings. This is batch-level correction, not twenty individual rejection votes.",
+    "followup": "Recognizable biology with varied body plans, anatomy and life cycles. Scavengers Reign supplied the brief inspiration, not designs to copy. Finish this set; regenerate later."
+  }
+}

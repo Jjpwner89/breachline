@@ -184,6 +184,15 @@ Vampires exist, but they are a subtle, rare part of the world and stay in the sh
 
 ## Peoples, creatures and constructs
 
+### Established animal reference collection (creator, 2026-11-13)
+
+The [selected animal collection](art/accepted-animals-2026-11-13/review.html) belongs in the world. Its [ecology groupings](art/accepted-animals-2026-11-13/ecologies.html) are approved for use in future cards, concept art and background life. Consult this collection first when a scene needs an animal, especially for new Genesis cards, a grazer in a field, wildlife around a farmer, or creatures inhabiting waterways and settlements. Wildlife is not restricted to Genesis, and appearing near a farmer does not itself establish domestication.
+
+The collection contains 56 selected animal references plus four separately indexed magical or made companions. Preserve the selected anatomy and characteristic coverings. The [animal handoff](ANIMAL_REFERENCE_HANDOFF.txt) explains use and continuity; the [reference index](art/accepted-animals-2026-11-13/animal-reference-index.json) joins every animal to its exact source image, selected crop and ecological notes. Explicitly unknown diets, ranges, hosts and biological mechanisms remain open. Historical rejects, set-aside giant experiments and unreviewed proposals are outside this approval.
+
+**Crested bird (ER4)** is a mobile predator, independent of Cradle thief and not a brood parasite. Its home habitat, exact prey and card movement values remain open. **Fanback (MG6 / MN2–1)** is the selected massive animal; habitat and fan function remain open. **Undertow** uses the preferred FR3 revision with continuous shorter side fins. Huge animals remain rare; the latest giant round was too scary, so further development should retain imaginative scale without making every giant threatening.
+
+
 This catalogue brings the selected visual concepts into the setting notes at the creator's request on 2026-11-05. It records what each inhabitant looks like and how it might belong in the world. Working names can still change.
 
 **Status:** existing inhabitants come from the established setting or current cards. **Included concept** means the creator requested that the concept be carried into these notes; detailed biology and culture remain open where noted. **Developing** entries need further design work. **Proposed** entries are new explorations awaiting review. An image's profession or alignment does not define an entire people. None of these entries settles the cause of the Cataclysm.
