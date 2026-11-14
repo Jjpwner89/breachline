@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-13",
+  "scope": "Final accepted Riverfolk and Saltreach visual references from peoples round 12",
+  "status": "Final creator selection",
+  "tool": "built-in image_gen",
+  "images": [
+    {
+      "code": "R1v2",
+      "file": "01-r1-morning-shift-v2.png",
+      "title": "Morning shift · quieter",
+      "type": "Revision",
+      "source": "11-morning-shift.png",
+      "intent": "Bring the canal workers back to an ordinary morning.",
+      "writeup": "Riverfolk maintain Ambrel's locks and canals while the scholars pass above them. This revision keeps the class contrast but gives the divers the tired, practical attention of people finishing a shift, rather than heroic expressions.",
+      "prompt": "Use case: identity-preserve. Edit the supplied Morning shift painting. Preserve the two Riverfolk individuals, fin ears, neck gills, work clothing, maintenance tools, lock, connected bridge and smaller scholars crossing above. Make the workers substantially LESS DRAMATIC: replace both lifted, yearning heroic gazes and parted lips with relaxed closed mouths, lowered brows and task-directed looks. The foreground older worker looks down at the step and places a hand naturally to climb out; the younger worker looks down at the tool satchel she is lifting. Keep simple connected hands and readable grips. Reduce the hot orange cinematic rim light and overwhelming sunrise toward a softer, ordinary cool-peach dawn, while retaining convincing wet water reflections. A medium-close occupational scene, modest fatigue, no theatrical emotional performance. Don't change them into other people or redesign their species. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/11-morning-shift.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-00adc734-b497-49ba-b747-150353e66081.png",
+      "assistant_review": "Lowered task-directed gazes and relaxed mouths, softer dawn, coherent satchel/rake grips and body support. Scene and Riverfolk anatomy retained; background detail reduced.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "43b8bb8451c661d0082b4dc73fa9c5123ca70a4c496e3eb25dbeff2e52e4d9e6",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/01-r1-morning-shift-v2.png"
+    },
+    {
+      "n": 12,
+      "slug": "the-sounding",
+      "title": "The sounding",
+      "kind": "Concept painting",
+      "alignment": "Gnosis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+          "role": "Riverfolk anatomy and matte painted treatment; not scene or clothing"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/02-human-faces-cloud-silk-and-new-neighbors.png",
+          "role": "Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast"
+        }
+      ],
+      "intent": "Absorbed, skilled work.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nREFERENCE ROLES:\nImage 1: Riverfolk anatomy and matte painted treatment; not scene or clothing.\nImage 2: Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast.\n\nRIVERFOLK CONTINUITY: Use the accepted Riverfolk image for anatomy: human proportions, fin-like ears, neck gill folds, patches of subdued scales, no tail. Vary face, age, build and clothing. Matte dry skin; wet skin can catch light but no glittering scales. Generally less privileged, in small villages or city margins, never a Riverfolk city or large town. Gnosis waterworks/hydrology or Genesis marsh life as brief states. No mana-stone diving: only practical waterworks maintenance. No routine magic, scuba equipment or modern machinery.\n\nVISUAL APPEAL: Absorbed, skilled work.\nSUBJECT BRIEF:\n**Appeal:** absorbed, skilled work.\n- A Riverfolk hydrologist on a flat boat on a wide grey river or estuary, dropping a weighted sounding line.\n- A chart pinned under one knee, instruments simple and practical.\n- Calm, specific concentration. Room for the water and sky.\n\nSTAGING AND CLARITY: Adult Riverfolk woman with broad ordinary face, on a low flat wooden boat seen slightly from above and behind her shoulder. One hand gently feeds a weighted sounding line over gunwale, other keeps a loose coil separate; weight already underwater. Chart with faint nonlettered marks pinned under one bent knee. Wide pearl-grey river, ochre reeds and vast sky, calm concentration. Human-scale instruments and coherent hull.\nCreate only this single image, without contact sheet of different scenes. For a sheet follow its specified turnaround layout.",
+      "file": "12-the-sounding.png",
+      "review_code": "R2",
+      "status": "accepted_visual_reference",
+      "active_reference": true,
+      "reference_candidate": false,
+      "generation_mode": "built-in image_gen",
+      "assistant_review": "Clear sounding-line path and separate coil; two connected hands, stable seated boat posture, practical instruments and unobstructed water space. Riverfolk anatomy retained.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-6e9b9304-010d-4605-b45a-f5a636350ce7.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e95c870b65706dfa275b8b600ed64d02b37e156339113204513136505cdebb74",
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_status": "accepted",
+      "review_date": "2026-11-13",
+      "active_reference_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/12-the-sounding.png",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "Accepted visual reference",
+          "review_status": "accepted visual reference",
+          "creator_review_note": "Liked with the Riverfolk set."
+        }
+      ],
+      "creator_review_status": "accepted",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/12-the-sounding.png",
+      "code": "R2",
+      "writeup": "A Riverfolk hydrologist measures the depth of a broad grey river from a low wooden boat. Her weighted line, simple instruments and calm concentration present waterwork as skilled ordinary labor.",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/12-the-sounding.png"
+    },
+    {
+      "code": "R3v2",
+      "file": "02-r3-stilt-village-v2.png",
+      "title": "Stilt village · before the splash",
+      "type": "Revision",
+      "source": "13-stilt-village.png",
+      "intent": "Make the instant before the children reach the water physically consistent.",
+      "writeup": "A small Riverfolk household calls the children in as evening settles over the marsh. The children are still airborne, so the water below them remains undisturbed apart from ordinary low ripples; the village keeps its intimate scale and warm domestic mood.",
+      "prompt": "Use case: precise-object-edit. Edit the supplied Riverfolk stilt-village scene. Keep both children in EXACTLY their existing airborne poses and positions, keep the adult calling, fin ears/gills/scales, clothing, five-or-fewer stilt houses, netting, walkways and sunset. REMOVE the TWO PREMATURE IMPACT SPLASHES under the airborne children: no white upward plumes, no flying impact droplets, no expanding impact rings or foam under them. Neither child has touched water yet. Replace only those impact regions with continuous gently rippled sunset-reflecting marsh water. Preserve the level of the water and all structures; ordinary small ambient ripples are fine. Moderately simplify small far-house, distant reeds and sky details while preserving their shapes. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/13-stilt-village.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-1f1ca01a-ba9d-4b6c-b6b9-c7096e7c95dd.png",
+      "assistant_review": "Premature splash plumes, droplets and impact rings removed beneath both airborne children. Poses and connected settlement preserved; distant forms simplified.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "16c8101e76bd550f9200d7d4d0d2f738938822034968e0ea032d1dee19e8cfdf",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/02-r3-stilt-village-v2.png",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/02-r3-stilt-village-v2.png"
+    },
+    {
+      "n": 14,
+      "slug": "waiting-for-hire",
+      "title": "Waiting for hire",
+      "kind": "Concept painting",
+      "alignment": "Gnosis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+          "role": "Riverfolk anatomy and matte painted treatment; not scene or clothing"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/concept-round-08-2026-11-09/09-third-arch-of-ambrel.png",
+          "role": "Ambrel stone architecture, waterworks and scale only; not street plan"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
+          "role": "Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast"
+        }
+      ],
+      "intent": "An ordinary, unfair morning.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nREFERENCE ROLES:\nImage 1: Riverfolk anatomy and matte painted treatment; not scene or clothing.\nImage 2: Ambrel stone architecture, waterworks and scale only; not street plan.\nImage 3: Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast.\n\nRIVERFOLK CONTINUITY: Use the accepted Riverfolk image for anatomy: human proportions, fin-like ears, neck gill folds, patches of subdued scales, no tail. Vary face, age, build and clothing. Matte dry skin; wet skin can catch light but no glittering scales. Generally less privileged, in small villages or city margins, never a Riverfolk city or large town. Gnosis waterworks/hydrology or Genesis marsh life as brief states. No mana-stone diving: only practical waterworks maintenance. No routine magic, scuba equipment or modern machinery.\n\nVISUAL APPEAL: An ordinary, unfair morning.\nSUBJECT BRIEF:\n**Appeal:** an ordinary, unfair morning.\n- A row of Riverfolk shacks on the edge of a city by an outflow.\n- A work crew waits on the bank for a foreman to call names, while the city rises beyond.\n- Hardship without melodrama: people talking, someone eating, someone checking a diving hood.\n\nSTAGING AND CLARITY: Street-level lateral composition at warm overcast morning. A modest crew of six adult Riverfolk waits along an outflow bank near patched timber shacks. Two converse, one eats bread, a woman checks a waxed-cloth hood. Their fin ears and gills clearly identify them. Small human foreman approaches with unlettered tally board. Rich city in quiet distant silhouette higher beyond. Dusty ochre, maroon cloth and muddy water, hardship without spectacle.\nCreate only this single image, without contact sheet of different scenes. For a sheet follow its specified turnaround layout.",
+      "file": "14-waiting-for-hire.png",
+      "review_code": "R4",
+      "status": "accepted_visual_reference",
+      "active_reference": true,
+      "reference_candidate": false,
+      "generation_mode": "built-in image_gen",
+      "assistant_review": "Six Riverfolk workers and secondary human foreman, coherent seated/standing postures and occupational gestures. City/margin scale contrast and dry matte skin checked.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-59267947-350c-47be-8fea-93fcbd1863a0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "43037b2ecce79331b180c9e5baa873700c6afd88fb055ab72ae8785d48aac12c",
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_status": "accepted",
+      "review_date": "2026-11-13",
+      "active_reference_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/14-waiting-for-hire.png",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "Accepted visual reference",
+          "review_status": "accepted visual reference",
+          "creator_review_note": "Liked with the Riverfolk set."
+        }
+      ],
+      "creator_review_status": "accepted",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/14-waiting-for-hire.png",
+      "code": "R4",
+      "writeup": "Riverfolk workers wait for a foreman beside patched shacks on the city's outflow bank. Conversation, bread and a checked diving hood convey an unequal working day without theatrical hardship.",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/14-waiting-for-hire.png"
+    },
+    {
+      "n": 15,
+      "slug": "mending-the-hood",
+      "title": "Mending the hood",
+      "kind": "Concept painting",
+      "alignment": "Gnosis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+          "role": "Riverfolk anatomy and matte painted treatment; not scene or clothing"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/01-human-faces-songweaver-and-new-neighbors.png",
+          "role": "Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast"
+        }
+      ],
+      "intent": "A face that has worked.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nREFERENCE ROLES:\nImage 1: Riverfolk anatomy and matte painted treatment; not scene or clothing.\nImage 2: Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast.\n\nRIVERFOLK CONTINUITY: Use the accepted Riverfolk image for anatomy: human proportions, fin-like ears, neck gill folds, patches of subdued scales, no tail. Vary face, age, build and clothing. Matte dry skin; wet skin can catch light but no glittering scales. Generally less privileged, in small villages or city margins, never a Riverfolk city or large town. Gnosis waterworks/hydrology or Genesis marsh life as brief states. No mana-stone diving: only practical waterworks maintenance. No routine magic, scuba equipment or modern machinery.\n\nVISUAL APPEAL: A face that has worked.\nSUBJECT BRIEF:\n**Appeal:** a face that has worked.\n- An older Riverfolk woman repairing a leather or waxed-cloth diving hood by window light.\n- Gill folds and fin ears clearly visible.\n- A specific, characterful face drawn from the face sheets, not a model face.\n\nSTAGING AND CLARITY: Close half-length older Riverfolk woman by side window, inspired by the ordinary older woman in lower-left of human face sheet but inventing a distinct Riverfolk face: long curved nose, thin mouth, unequal brows, warm medium skin. Fin ears and neck gills unobstructed. She repairs a brown waxed-cloth diving hood on her lap: left hand holds a folded seam, right hand pulls a simple thread. Exactly two connected hands, cloth separate from fingertips. Muted yellow wall, deep red sleeve, broad diffuse light, quiet focused expression.\nCreate only this single image, without contact sheet of different scenes. For a sheet follow its specified turnaround layout.",
+      "file": "15-mending-the-hood.png",
+      "review_code": "R5",
+      "status": "accepted_visual_reference",
+      "active_reference": true,
+      "reference_candidate": false,
+      "generation_mode": "built-in image_gen",
+      "assistant_review": "Two coherent hands manipulate one hood seam and thread; ordinary older face, clear fin ear and gill folds, diffuse window lighting checked.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-eabbfaf9-1e25-4dd6-a16d-8dbd85c1f750.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2d1cce9c181dab59b8c13093f274f5f8fcf171782b0771a77a429a5441febe7b",
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_status": "accepted",
+      "review_date": "2026-11-13",
+      "active_reference_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/15-mending-the-hood.png",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "Accepted visual reference",
+          "review_status": "accepted visual reference",
+          "creator_review_note": "One of the two strongest Riverfolk images."
+        }
+      ],
+      "creator_review_status": "accepted",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/15-mending-the-hood.png",
+      "code": "R5",
+      "writeup": "An older Riverfolk woman repairs a waxed-cloth diving hood by the window. Her characterful face, fin ears and neck gills make this a strong reference for ordinary Riverfolk life and anatomy.",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/15-mending-the-hood.png"
+    },
+    {
+      "n": 16,
+      "slug": "under-the-gate",
+      "title": "Under the gate",
+      "kind": "Concept painting",
+      "alignment": "Gnosis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
+          "role": "Riverfolk anatomy and matte painted treatment; not scene or clothing"
+        }
+      ],
+      "intent": "Light through murky water.",
+      "prompt": "Use case: stylized-concept.\nCreate one original Breachline fantasy CONCEPT PAINTING ONLY, no card, landscape PNG 1536 x 1024, 3:2. No lettering, border, logo, watermark or signature.\n\nPURPOSE: make a beautiful, distinctive image the creator will love and that belongs in this world. Choose the composition for its visual appeal: silhouette, light, material, colour relationships, atmosphere, character and imaginative detail. The image must work without a card title or rules text. A compelling presence, an enigmatic portrait, an animal in its habitat or a beautiful object can carry the whole painting. A small story or action is welcome when it improves the image; it is not compulsory.\n\nMEDIUM: traditional oil and acrylic fantasy painting. Varied, visibly deliberate brushwork; coherent large light and shadow shapes; selective crisp accents and quieter lost edges. Believable weight and materials. Let paint describe forms instead of coating smooth 3D forms with a texture. Faces, hands, clothes and surroundings share a coherent painted language with varied local definition: focused features may be precise, while secondary forms use fewer quieter marks. Match brush scale to detail without camera blur. Give each material appropriate reflectance; avoid waxy skin and recurring rosy cheeks. Avoid glossy animation staging, rounded toy-like forms, exaggerated theatrical expressions, uncanny skin detail and uniform surface noise. Use ordinary reference-led proportions and varied faces, with occasional exceptional beauty rather than model casting throughout.\n\nCOMPOSITION: use the specific visual aim below. Allow quiet, eerie, austere, lyrical, humorous or forceful images as appropriate; appeal does not require spectacle or constant action. Use supporting elements only when they improve the composition. Imply most settings through a few well-chosen shapes; give a landscape breathing room when it is part of the appeal. Natural connected anatomy, simple coherent hands, readable object contacts and consistent scale. Leave space around important silhouettes.\n\nMAGIC: subject-specific and visually interesting, often understated and assumed in the world. It can reside in a person, creature, material or object. Do not inflate a small, intriguing magical idea into an explosion or a diagram of its consequences. Do not default to luminous threads or ribbons; specific accepted uses remain valid.\n\nCONTINUITY: where accepted references are attached, they establish identity, anatomy and signature equipment. Preserve their appealing design, proportions and material character while composing a finished painting. For new characters, consult ordinary face and species sheets for varied proportions, then invent beyond them; exact reuse is welcome when requested, not a closed cast.\n\nSETTING: high fantasy about 150 years after the Old Empire collapsed and the gods fell silent. New kingdoms and ordinary lives persist through hard times, with real but hard-won hope. Communities have their own local populations. Orcs are never Vigil, and lion folk keep to themselves. Gnosis explores scholarly magic and ingenious craft. Dominion life is harsh and oppressive. Fervor values passion and freedom, with fire and storm magic. Genesis includes societies as well as wilderness. Proposed scenes do not establish new lore.\n\nREFERENCE ROLES:\nImage 1: Riverfolk anatomy and matte painted treatment; not scene or clothing.\n\nRIVERFOLK CONTINUITY: Use the accepted Riverfolk image for anatomy: human proportions, fin-like ears, neck gill folds, patches of subdued scales, no tail. Vary face, age, build and clothing. Matte dry skin; wet skin can catch light but no glittering scales. Generally less privileged, in small villages or city margins, never a Riverfolk city or large town. Gnosis waterworks/hydrology or Genesis marsh life as brief states. No mana-stone diving: only practical waterworks maintenance. No routine magic, scuba equipment or modern machinery.\n\nVISUAL APPEAL: Light through murky water.\nSUBJECT BRIEF:\n**Appeal:** light through murky water.\n- Seen from underwater: a Riverfolk diver clearing silt from a stone sluice gate.\n- Daylight falls in shafts through green-brown water. Silt drifts, a rope runs up to the surface.\n- Painted, not photographic. Keep the figure and gate clear at small size.\n\n---\n\nSTAGING AND CLARITY: Landscape underwater view of one adult Riverfolk diver at a large ordinary stone sluice gate. Side-on connected body, knees flexed and bare feet braced against a ledge, one hand on stone frame, other scraping packed silt with a short iron tool. Guide rope runs continuously up to surface. Green-brown water, ochre shafts of sun, silt plume behind the tool leaves face, fin ears, gills and gate legible. Simple fitted work tunic and shorts, no breathing machinery, no gems. Bold painted value shapes, not photographic underwater image.\nCreate only this single image, without contact sheet of different scenes. For a sheet follow its specified turnaround layout.",
+      "file": "16-under-the-gate.png",
+      "review_code": "R6",
+      "status": "accepted_visual_reference",
+      "active_reference": true,
+      "reference_candidate": false,
+      "generation_mode": "built-in image_gen",
+      "assistant_review": "Connected crouched underwater body, two arms/two legs, hand on gate and hand on scraper, feet braced on ledge. Rope reaches surface; silt stays secondary and gate reads clearly.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-df656ebe-a41e-4887-9819-01844a7ea058.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5233eb6ce39b032c65eb8078ad01ea51fef30a7f007a719bed58f56bf23edd63",
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_status": "accepted",
+      "review_date": "2026-11-13",
+      "active_reference_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/16-under-the-gate.png",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "Accepted visual reference",
+          "review_status": "accepted visual reference",
+          "creator_review_note": "One of the two strongest Riverfolk images."
+        }
+      ],
+      "creator_review_status": "accepted",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/16-under-the-gate.png",
+      "code": "R6",
+      "writeup": "A Riverfolk diver clears silt from a stone sluice gate, braced against a submerged ledge with a guide rope running to the surface. The scene establishes the practical waterworks context of this accepted image, with painted shafts of light through murky water.",
+      "people": "Riverfolk",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/16-under-the-gate.png"
+    },
+    {
+      "code": "W5",
+      "file": "10-riverfolk-a-table-above-the-water.png",
+      "title": "A Table Above the Water",
+      "type": "New in-world scene",
+      "people": "Riverfolk",
+      "alignment": "Genesis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/15-mending-the-hood.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/16-under-the-gate.png"
+      ],
+      "reference_roles": [
+        "Strongly liked Riverfolk older face, gill folds, fin ears, matte painted finish; invent a different family and domestic scene.",
+        "Strongly liked Riverfolk connected anatomy, restrained painted light and coherent material treatment only; do not import underwater setting."
+      ],
+      "intent": "Home life beyond the waterworks.",
+      "writeup": "A Riverfolk family shares a late meal on a narrow platform above the marsh, with drying work clothes and a patched awning close at hand. The scene extends the liked small-settlement life without making the household prosperous, establishing a new town, or turning ordinary family activity into a display of magic.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCES: Riverfolk anatomy and the admired quiet painted finish of R5/R6 only. NEW SCENE: Three Riverfolk family members at a small meal on a narrow timber platform just above dark marsh water, under a patched russet cloth awning at blue hour. Main middle-aged adult man at left ladles plain stew into a bowl held securely by his elderly mother at right; a school-age child sits between them on the far side of the simple table, eating with a wooden spoon. Three distinct faces, obvious fin-like ears, neck gill folds and muted scale patches, human proportions, matte dry skin. Each hand has its own arm and clear contact with ladle, bowl or spoon; bowls supported, table and stools on connected platform. Practical faded yellow/grey work linen, a single low oil lamp. One small dwelling behind and another barely suggested across water, never a town. A tired warm conversation in gaze, not uplifted heroic expression; belongings repaired and modest. Soft amber focal faces against large quiet blue-purple water shapes; architecture remains readable but intentionally less detailed. No gems, machinery or spell effects.",
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-a4900fb5-8e60-407c-88d0-d52af7e26266.png",
+      "assistant_review": "Three Riverfolk with readable ear fins/gills, connected arms, supported bowls and coherent ladle/spoon grips. Quiet domestic light and simpler far settlement.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5efb8f07f5d336eb49c9b92cec1d21090eb362a4071f9658937e148608fd5eb6",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/10-riverfolk-a-table-above-the-water.png",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/10-riverfolk-a-table-above-the-water.png"
+    },
+    {
+      "code": "P5v2",
+      "file": "05-p5-saltreach-v2.png",
+      "title": "Saltreach · weathered coast",
+      "type": "Reference revision",
+      "source": "21-saltreach.png",
+      "intent": "Rugged people visibly weathered by coastal life.",
+      "writeup": "Saltreach is a human coastal culture, distinguished by oiled wool, practical sea gear, and bone or shell ornaments. Their faces are now rougher and slightly sunburnt, with uneven pigmentation, chapped lips, and weathering expressed in broad painted forms rather than glossy or hyperdetailed skin.",
+      "prompt": "Use case: identity-preserve. Edit the Saltreach HUMAN coastal-culture reference sheet. Preserve the representative adult woman in matching front/side/back views and the FOUR distinct adult portrait identities, age/gender diversity, body builds, indigo oiled wool, wraps, boots, bone/shell ornaments and ivory layout. Make them a little more RUGGED and slightly SUNBURNT: mild localized warm redness across bridge of nose and exposed upper cheeks/forearms, uneven sun pigmentation, sun freckles, a few small healed marks, slightly chapped lips and less polished skin. Keep natural appeal and individual character; no disease, severe burns, sores, gore or caricature. This is a specific requested coastal-weathering exception, not a universal rosy-cheek rule. Paint mild dry roughness through broad matte colour shapes and selective edges, never pore-level noise or wax sheen. Keep ordinary human anatomy and plausible hands. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/21-saltreach.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-2787ad3f-047d-4e8c-86af-01a746ac184c.png",
+      "assistant_review": "Localized mild sunburn and more uneven weathered skin visible across all faces. Human identity, clothing and anatomy retained; skin stays matte.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b8fd47f9962fa5a8de3b16c05222434e80d2136386439b360d8b83b40f780d52",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/05-p5-saltreach-v2.png",
+      "people": "Saltreach",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/05-p5-saltreach-v2.png"
+    },
+    {
+      "code": "W3",
+      "file": "08-saltreach-the-last-boat-up.png",
+      "title": "The Last Boat Up",
+      "type": "New in-world scene",
+      "people": "Saltreach",
+      "alignment": "Undecided human culture",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/05-p5-saltreach-v2.png"
+      ],
+      "reference_roles": [
+        "Revised rugged human coastal faces, mild sunburn, dry weathered skin, oiled wool and practical sea gear. Invent distinct individuals rather than copying portrait identities."
+      ],
+      "intent": "Weather, weight and shared effort at the edge of the sea.",
+      "writeup": "Saltreach fishers haul a small boat above the tide with a wooden roller and a taut rope. Their mildly sunburnt faces, rough skin, oiled wool, and modest shell ornaments carry the culture; the scene proposes a coastal livelihood rather than assigning every Saltreach person the same role or alignment.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE: rugged Saltreach human coastal culture. SCENE: On a steep shingle beach under hard cool late-morning light after a storm, three HUMAN adults bring a small wooden fishing boat above the tide using a practical wooden roller and taut hauling rope. Primary older woman near image-right in side three-quarter view leans back against rope tension, both hands in a clear spaced grip, boots planted and knees bent. Narrower weathered middle-aged man and a stockier adult woman work behind, subordinate and simpler. Mild SUNBURN on nose/cheeks/forearms, uneven pigment, small old marks, chapped lips and rough matte painted skin, not sores or microdetail. Indigo and grey oiled wool, practical rolled sleeves, modest bone/shell ornaments and repaired sea boots. Green-grey surf behind, ochre boat wood and a small faded red sail accent. Coherent load direction and rope leading directly to bow. NOT heroic posing. No fantasy anatomical traits. Distant headland and houses are broad low-contrast masses with significantly fewer little marks than foreground.",
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-f27f33b5-29df-4305-9624-7e226b826bd0.png",
+      "assistant_review": "Two foreground hands grip one continuous taut rope to boat; legs planted, boat supported on roller. Three human workers have weathered matte skin and coherent scale.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9afe56fdb276d2ff282f46ce8b113bc8d3a2cc7336f79938d8e708cc84c82ae0",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/08-saltreach-the-last-boat-up.png",
+      "source_working_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/08-saltreach-the-last-boat-up.png"
+    }
+  ],
+  "accepted_image_ids": [
+    "R1v2",
+    "R2",
+    "R3v2",
+    "R4",
+    "R5",
+    "R6",
+    "W5",
+    "P5v2",
+    "W3"
+  ],
+  "gallery": "review.html",
+  "handoff": "CLAUDE_HANDOFF.txt",
+  "review_decisions": "final-selections-2026-11-13.json",
+  "approval_boundary": "The five selected Riverfolk and Saltreach images are accepted visual references. All other follow-up concepts are rejected. This review selects no cards and does not automatically settle biology, universal occupations or mechanics."
+}

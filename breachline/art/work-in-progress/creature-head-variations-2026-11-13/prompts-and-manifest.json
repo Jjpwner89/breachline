@@ -1,0 +1,881 @@
+{
+  "title": "Creature head variations",
+  "date": "2026-11-13",
+  "status": "reviewed_selection_recorded",
+  "generation_mode": "built-in image_gen",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "selection_guide_revision": 182,
+  "creator_feedback": {
+    "date": "2026-11-13",
+    "source": "creator feedback in chat",
+    "scope": "Body Plans BP1–BP3; selected designs receive head variations",
+    "general": [
+      "The body-plan exploration is closer, but not finished.",
+      "The heads lean too heavily on lizard shapes. Add mammalian and other skull, jaw, nose and ear structures while retaining some lizard/snake options.",
+      "Needlehip's lizard-like face, fur and whip tail illustrate an interesting combination, not a universal template.",
+      "Preserve the selected body plans and coverings while exploring restrained head variation."
+    ],
+    "selected": [
+      {
+        "id": "BP1-1",
+        "name": "Foldstride",
+        "response": "liked",
+        "next": "HV1 head options"
+      },
+      {
+        "id": "BP1-2",
+        "name": "Loomstep",
+        "response": "strongly_liked",
+        "next": "HV2 head options"
+      },
+      {
+        "id": "BP1-3",
+        "name": "Shelfback",
+        "response": "liked",
+        "next": "HV3 head options"
+      },
+      {
+        "id": "BP1-5",
+        "name": "Needlehip",
+        "response": "liked",
+        "next": "HV4 head options"
+      },
+      {
+        "id": "BP2-4",
+        "name": "Ribhide",
+        "response": "liked",
+        "next": "HV5 head options"
+      },
+      {
+        "id": "BP2-5",
+        "name": "Scaleskein",
+        "response": "interesting",
+        "next": "HV6 head options"
+      },
+      {
+        "id": "BP3-3",
+        "name": "Purlrunner",
+        "response": "tentatively_liked",
+        "next": "HV7 head options"
+      },
+      {
+        "id": "BP3-4",
+        "name": "Gullied swimmer",
+        "response": "liked",
+        "next": "HV8 head options"
+      }
+    ],
+    "rejected": [
+      {
+        "id": "BP1-4",
+        "name": "Siltdrum",
+        "reason": "Creator dislikes its fat, ugly appearance; do not use this take as a reference."
+      }
+    ],
+    "not_selected_this_round": [
+      "BP2-1",
+      "BP2-2",
+      "BP2-3",
+      "BP2-6"
+    ],
+    "unmentioned": [
+      "BP1-6",
+      "BP3-1",
+      "BP3-2",
+      "BP3-5",
+      "BP3-6"
+    ],
+    "preserved_prior_references": [
+      "RF1",
+      "RF2",
+      "RF3",
+      "RF4"
+    ],
+    "mixed_sheet_policy": "No sheet is accepted or rejected wholesale. Keep the composite source sheets because they contain liked takes; the disliked BP1-4 has no separate image file to delete. Reference only the explicitly selected cells.",
+    "canonical": false
+  },
+  "requested_dimensions": [
+    1536,
+    1024
+  ],
+  "review_url": "http://127.0.0.1:8774/",
+  "workflow": "Three proposed head options per selected creature, each shown as portrait and corresponding full-body view. Body plans and coverings retained; head picks precede final references or scenes.",
+  "sheets": [
+    {
+      "code": "HV1",
+      "name": "Foldstride",
+      "source": "BP1-1",
+      "ref": "BP1",
+      "position": "UPPER LEFT",
+      "file": "01-foldstride-head-variations.png",
+      "body": "Four-legged grazer with low feeding front, very high folded hindquarters, olive-grey skin and heavy hanging cream crimped fur. Preserve the unusual steeply sloping silhouette, limb lengths, four legs, feet, body mass and fur arrangement.",
+      "status": "liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP1-1",
+          "position": "UPPER LEFT",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Broad browsing muzzle",
+          "line": "A broad soft muzzle, split upper lip and low folded ears.",
+          "description": "A broad soft muzzle, split upper lip and low folded ears. This is a proposed head option on the selected Foldstride body; neither the head nor its implied biology is final.",
+          "detail": "Mammalian broad SHALLOW muzzle with a gently split prehensile upper lip, wide matte dark nose pad, solid modest cheekbones, two small cupped ears laid sideways. Short velvet on face blending into olive skin and cream flank fibres. Eyes smaller and less circular than source; mature grazer, no horns.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Tall narrow face",
+          "line": "A taller skull and flexible upper lip give the same grazer a different profile.",
+          "description": "A taller skull and flexible upper lip give the same grazer a different profile. This is a proposed head option on the selected Foldstride body; neither the head nor its implied biology is final.",
+          "detail": "Mammalian TALL NARROW skull with a short convex nasal bridge, narrow flexible fleshy nose tip, deep vertical cheek, small backward-folded ears. Closed mouth and short strong lower jaw. Face has sparse coarse hair and bare lip; no trunk, antlers or familiar horse/deer proportions.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Tapered scaled face",
+          "line": "A restrained reptilian option keeps the long feeding profile.",
+          "description": "A restrained reptilian option keeps the long feeding profile. This is a proposed head option on the selected Foldstride body; neither the head nor its implied biology is final.",
+          "detail": "Retain a reptilian tapering head, but use a longer downcurved upper jaw, narrow almond eyes high on the skull, broad fleshy closed lower lip, tiny fine scales on brow grading into short cheek fur. No external ears. Natural modest head size.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-1, Foldstride, the UPPER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Four-legged grazer with low feeding front, very high folded hindquarters, olive-grey skin and heavy hanging cream crimped fur. Preserve the unusual steeply sloping silhouette, limb lengths, four legs, feet, body mass and fur arrangement.\nThe three heads, left to right:\n1. Broad browsing muzzle: Mammalian broad SHALLOW muzzle with a gently split prehensile upper lip, wide matte dark nose pad, solid modest cheekbones, two small cupped ears laid sideways. Short velvet on face blending into olive skin and cream flank fibres. Eyes smaller and less circular than source; mature grazer, no horns.\n2. Tall narrow face: Mammalian TALL NARROW skull with a short convex nasal bridge, narrow flexible fleshy nose tip, deep vertical cheek, small backward-folded ears. Closed mouth and short strong lower jaw. Face has sparse coarse hair and bare lip; no trunk, antlers or familiar horse/deer proportions.\n3. Tapered scaled face: Retain a reptilian tapering head, but use a longer downcurved upper jaw, narrow almond eyes high on the skull, broad fleshy closed lower lip, tiny fine scales on brow grading into short cheek fur. No external ears. Natural modest head size.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-dafd6159-bfef-4f46-9c2d-62c23665ae93.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three clearly different heads: broad mammalian, tall narrow mammalian, and tapering scaled. Each matches its body study. Sloping four-leg body, cream hanging fibres and olive skin remain recognisable; third head has a more pronounced keratin-like tip than the brief.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-1, Foldstride, the UPPER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Four-legged grazer with low feeding front, very high folded hindquarters, olive-grey skin and heavy hanging cream crimped fur. Preserve the unusual steeply sloping silhouette, limb lengths, four legs, feet, body mass and fur arrangement.\nThe three heads, left to right:\n1. Broad browsing muzzle: Mammalian broad SHALLOW muzzle with a gently split prehensile upper lip, wide matte dark nose pad, solid modest cheekbones, two small cupped ears laid sideways. Short velvet on face blending into olive skin and cream flank fibres. Eyes smaller and less circular than source; mature grazer, no horns.\n2. Tall narrow face: Mammalian TALL NARROW skull with a short convex nasal bridge, narrow flexible fleshy nose tip, deep vertical cheek, small backward-folded ears. Closed mouth and short strong lower jaw. Face has sparse coarse hair and bare lip; no trunk, antlers or familiar horse/deer proportions.\n3. Tapered scaled face: Retain a reptilian tapering head, but use a longer downcurved upper jaw, narrow almond eyes high on the skull, broad fleshy closed lower lip, tiny fine scales on brow grading into short cheek fur. No external ears. Natural modest head size.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-dafd6159-bfef-4f46-9c2d-62c23665ae93.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "7174b337874eef0f40789b6e0ed15bf087dd88ed03e79f0d9ea536b04f383488",
+      "bytes": 2807474,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP1–1 · liked. The low feeding front, high folded hindquarters and hanging cream fibres carry through all three options.",
+      "selected_design": "BP1-1"
+    },
+    {
+      "code": "HV2",
+      "name": "Loomstep",
+      "source": "BP1-2",
+      "ref": "BP1",
+      "position": "UPPER CENTRE",
+      "file": "02-loomstep-head-variations.png",
+      "body": "The strongly liked two-legged hunter: long horizontal rust-red feathered trunk carried ahead of tall bent legs, charcoal feathered rear fan, no forelimbs and no wings. Keep exactly TWO legs, the original forward-balanced low body, feather mantle, foot shapes and rust/charcoal palette.",
+      "status": "strongly_liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP1-2",
+          "position": "UPPER CENTRE",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Short mammalian muzzle",
+          "line": "A deep skull and short whiskered muzzle sit within the feather mantle.",
+          "description": "A deep skull and short whiskered muzzle sit within the feather mantle. This is a proposed head option on the selected Loomstep body; neither the head nor its implied biology is final.",
+          "detail": "Compact DEEP mammalian skull, short square fleshy muzzle, small matte dark nose pad, understated whisker follicles, warm amber ALMOND eyes and small rounded ears mostly buried low in feathering. Short rust velvet at cheek transitions into existing contour feathers. Alert mature predator; no cat/dog head pasted on, no cute proportions.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Cutting lip",
+          "line": "A narrow head ends in a small keratin cutting edge above a fleshy lower jaw.",
+          "description": "A narrow head ends in a small keratin cutting edge above a fleshy lower jaw. This is a proposed head option on the selected Loomstep body; neither the head nor its implied biology is final.",
+          "detail": "Long NARROW wedge skull, low brow and fine amber eyes, very short dark keratin cutting cap only on upper lip, fleshy strong lower jaw. Tiny contour feathers sweep backward from cheek. No big hooked eagle beak, no external ears, no crest. Functional unusual animal head, same head volume as source.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Reptilian continuity",
+          "line": "A close relative of the liked head keeps its amber eye and low profile.",
+          "description": "A close relative of the liked head keeps its amber eye and low profile. This is a proposed head option on the selected Loomstep body; neither the head nor its implied biology is final.",
+          "detail": "Keep the liked low reptilian face as a continuity option: short triangular head, amber eyes with slightly stronger brow, fine matte rust scales around cheek, smooth closed mouth and small nostrils. Only a modestly deeper rear jaw and slightly narrower snout. Feathers merge at back of skull; no horns.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-2, Loomstep, the UPPER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: The strongly liked two-legged hunter: long horizontal rust-red feathered trunk carried ahead of tall bent legs, charcoal feathered rear fan, no forelimbs and no wings. Keep exactly TWO legs, the original forward-balanced low body, feather mantle, foot shapes and rust/charcoal palette.\nThe three heads, left to right:\n1. Short mammalian muzzle: Compact DEEP mammalian skull, short square fleshy muzzle, small matte dark nose pad, understated whisker follicles, warm amber ALMOND eyes and small rounded ears mostly buried low in feathering. Short rust velvet at cheek transitions into existing contour feathers. Alert mature predator; no cat/dog head pasted on, no cute proportions.\n2. Cutting lip: Long NARROW wedge skull, low brow and fine amber eyes, very short dark keratin cutting cap only on upper lip, fleshy strong lower jaw. Tiny contour feathers sweep backward from cheek. No big hooked eagle beak, no external ears, no crest. Functional unusual animal head, same head volume as source.\n3. Reptilian continuity: Keep the liked low reptilian face as a continuity option: short triangular head, amber eyes with slightly stronger brow, fine matte rust scales around cheek, smooth closed mouth and small nostrils. Only a modestly deeper rear jaw and slightly narrower snout. Feathers merge at back of skull; no horns.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5286c416-05a9-4ffc-9bd6-0bee88f358ac.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three options read distinctly as short mammalian muzzle, small cutting beak/lip, and close reptilian continuity. All three preserve the two-legged low feathered body and rust/charcoal mantle; no forelimbs or wings added.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-2, Loomstep, the UPPER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: The strongly liked two-legged hunter: long horizontal rust-red feathered trunk carried ahead of tall bent legs, charcoal feathered rear fan, no forelimbs and no wings. Keep exactly TWO legs, the original forward-balanced low body, feather mantle, foot shapes and rust/charcoal palette.\nThe three heads, left to right:\n1. Short mammalian muzzle: Compact DEEP mammalian skull, short square fleshy muzzle, small matte dark nose pad, understated whisker follicles, warm amber ALMOND eyes and small rounded ears mostly buried low in feathering. Short rust velvet at cheek transitions into existing contour feathers. Alert mature predator; no cat/dog head pasted on, no cute proportions.\n2. Cutting lip: Long NARROW wedge skull, low brow and fine amber eyes, very short dark keratin cutting cap only on upper lip, fleshy strong lower jaw. Tiny contour feathers sweep backward from cheek. No big hooked eagle beak, no external ears, no crest. Functional unusual animal head, same head volume as source.\n3. Reptilian continuity: Keep the liked low reptilian face as a continuity option: short triangular head, amber eyes with slightly stronger brow, fine matte rust scales around cheek, smooth closed mouth and small nostrils. Only a modestly deeper rear jaw and slightly narrower snout. Feathers merge at back of skull; no horns.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5286c416-05a9-4ffc-9bd6-0bee88f358ac.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "42b9aa40a1059528ac12ede82c288de79d5d4aad3d45ccb21902108b8749aee4",
+      "bytes": 2669223,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP1–2 · strongly liked. The forward-balanced feathered body and two-legged stance carry through all three options; option 3 stays close to the liked face.",
+      "selected_design": "BP1-2"
+    },
+    {
+      "code": "HV3",
+      "name": "Shelfback",
+      "source": "BP1-3",
+      "ref": "BP1",
+      "position": "UPPER RIGHT",
+      "file": "03-shelfback-head-variations.png",
+      "body": "Broad flat blue-grey scaled scavenger with low shelf-like trunk, exactly SIX short muscular legs in three pairs, overlapping flexible lateral scale shingles and original ordinary tapering tail. Preserve the low weight, blue-grey palette, all limb attachments and entire body covering.",
+      "status": "liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP1-3",
+          "position": "UPPER RIGHT",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Broad chewing jaw",
+          "line": "A broad nose pad and deep chewing cheeks contrast with the scaled body.",
+          "description": "A broad nose pad and deep chewing cheeks contrast with the scaled body. This is a proposed head option on the selected Shelfback body; neither the head nor its implied biology is final.",
+          "detail": "Broad low mammalian skull with DEEP chewing cheeks, blunt flexible muzzle, matte oval nose pad, short soft upper lip and tiny close-fitting ear flaps. Sparse grey velvet across muzzle grades coherently into cheek scales. No horns or tusks, no dog face.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Soft probing snout",
+          "line": "A narrow fleshy snout projects from a small domed skull.",
+          "description": "A narrow fleshy snout projects from a small domed skull. This is a proposed head option on the selected Shelfback body; neither the head nor its implied biology is final.",
+          "detail": "Small rounded mammalian braincase with a narrow tapering flexible fleshy muzzle, two nostrils at blunt tip, fine short whiskers, close-set modest eyes and very small slit-like ears. No trunk or tendrils. Jaw is visibly hinged; nose extends only a little beyond lower jaw.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Low grinding mouth",
+          "line": "A wide underslung mouth and high eyes keep the head close to the ground.",
+          "description": "A wide underslung mouth and high eyes keep the head close to the ground. This is a proposed head option on the selected Shelfback body; neither the head nor its implied biology is final.",
+          "detail": "Very low broad skull with raised widely spaced oval eyes, short broad nasal shield and an underslung fleshy grinding mouth, no external ears. Matte bare grey lip against small overlapping brow scales. Fish/amphibian-informed mouth mechanics but robust terrestrial neck; not a lizard mask.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-3, Shelfback, the UPPER RIGHT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Broad flat blue-grey scaled scavenger with low shelf-like trunk, exactly SIX short muscular legs in three pairs, overlapping flexible lateral scale shingles and original ordinary tapering tail. Preserve the low weight, blue-grey palette, all limb attachments and entire body covering.\nThe three heads, left to right:\n1. Broad chewing jaw: Broad low mammalian skull with DEEP chewing cheeks, blunt flexible muzzle, matte oval nose pad, short soft upper lip and tiny close-fitting ear flaps. Sparse grey velvet across muzzle grades coherently into cheek scales. No horns or tusks, no dog face.\n2. Soft probing snout: Small rounded mammalian braincase with a narrow tapering flexible fleshy muzzle, two nostrils at blunt tip, fine short whiskers, close-set modest eyes and very small slit-like ears. No trunk or tendrils. Jaw is visibly hinged; nose extends only a little beyond lower jaw.\n3. Low grinding mouth: Very low broad skull with raised widely spaced oval eyes, short broad nasal shield and an underslung fleshy grinding mouth, no external ears. Matte bare grey lip against small overlapping brow scales. Fish/amphibian-informed mouth mechanics but robust terrestrial neck; not a lizard mask.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-88a40b33-1983-40ff-8320-d5cf866e0a79.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three heads vary muzzle width, whiskers and lips while retaining the low broad blue-scaled six-leg body. Portrait and body agree. The right option has a broad amphibian-like mouth and enlarged eyes.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-3, Shelfback, the UPPER RIGHT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Broad flat blue-grey scaled scavenger with low shelf-like trunk, exactly SIX short muscular legs in three pairs, overlapping flexible lateral scale shingles and original ordinary tapering tail. Preserve the low weight, blue-grey palette, all limb attachments and entire body covering.\nThe three heads, left to right:\n1. Broad chewing jaw: Broad low mammalian skull with DEEP chewing cheeks, blunt flexible muzzle, matte oval nose pad, short soft upper lip and tiny close-fitting ear flaps. Sparse grey velvet across muzzle grades coherently into cheek scales. No horns or tusks, no dog face.\n2. Soft probing snout: Small rounded mammalian braincase with a narrow tapering flexible fleshy muzzle, two nostrils at blunt tip, fine short whiskers, close-set modest eyes and very small slit-like ears. No trunk or tendrils. Jaw is visibly hinged; nose extends only a little beyond lower jaw.\n3. Low grinding mouth: Very low broad skull with raised widely spaced oval eyes, short broad nasal shield and an underslung fleshy grinding mouth, no external ears. Matte bare grey lip against small overlapping brow scales. Fish/amphibian-informed mouth mechanics but robust terrestrial neck; not a lizard mask.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-88a40b33-1983-40ff-8320-d5cf866e0a79.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "97e67a64e382598e70c6d6a1cab7bf4a5291ffd6dbe17e8383bb332cc05f4797",
+      "bytes": 2852800,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP1–3 · liked. All three options keep the broad, low body, six legs and blue-grey scale shingles.",
+      "selected_design": "BP1-3"
+    },
+    {
+      "code": "HV4",
+      "name": "Needlehip",
+      "source": "BP1-5",
+      "ref": "BP1",
+      "position": "LOWER CENTRE",
+      "file": "04-needlehip-head-variations.png",
+      "body": "Preserve this particularly liked combination: low broad forebody, narrow high spring-loaded hindquarters, FOUR legs, silver-grey directional coarse FUR and bristles, matte folded throat skin, and the long thin bare WHIP TAIL. Keep stance, proportions and tail exactly; do not turn it into a normal mammal or alter coat.",
+      "status": "liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP1-5",
+          "position": "LOWER CENTRE",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Liked reptilian face",
+          "line": "The flat lizard-like face stays close to the liked original.",
+          "description": "Keep the flat lizard-like face, fur and whip-tail combination close to the original. This is a proposed head option on the selected Needlehip body; neither the head nor its implied biology is final.",
+          "detail": "Very close to the selected original: low blunt reptilian face, amber eyes, fine matte scales on muzzle, closed curved mouth line and no external ears. Preserve recognisable identity, only clarify brow and jaw connection. This option deliberately retains the lizard-fur-whip-tail combination the creator liked.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Long sensitive muzzle",
+          "line": "A longer mammalian muzzle adds a nose pad and small folded ears.",
+          "description": "A longer mammalian muzzle adds a nose pad and small folded ears. This is a proposed head option on the selected Needlehip body; neither the head nor its implied biology is final.",
+          "detail": "Long narrow mammalian muzzle with a matte triangular nose pad, subtle whisker pads, small folded rounded ears, shallow sloping brow and amber almond eyes. Grey short facial fur merges into existing long body fur, bare throat folds preserved. No canid nose bridge or familiar fox silhouette.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Deep blunt jaw",
+          "line": "A shorter, deeper skull gives it a compact bite without enlarging the head.",
+          "description": "A shorter, deeper skull gives it a compact bite without enlarging the head. This is a proposed head option on the selected Needlehip body; neither the head nor its implied biology is final.",
+          "detail": "Short DEEP mammalian skull, broad blunt lip-covered muzzle, strong cheek muscles, paired small low slit ears and narrow forward-looking eyes. Matte small nose pad; restrained sparse whiskers, no exposed fangs. Compact serious predator, not a flat-faced pet. Same head mass as original, fuller jaw not bigger skull.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-5, Needlehip, the LOWER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Preserve this particularly liked combination: low broad forebody, narrow high spring-loaded hindquarters, FOUR legs, silver-grey directional coarse FUR and bristles, matte folded throat skin, and the long thin bare WHIP TAIL. Keep stance, proportions and tail exactly; do not turn it into a normal mammal or alter coat.\nThe three heads, left to right:\n1. Liked reptilian face: Very close to the selected original: low blunt reptilian face, amber eyes, fine matte scales on muzzle, closed curved mouth line and no external ears. Preserve recognisable identity, only clarify brow and jaw connection. This option deliberately retains the lizard-fur-whip-tail combination the creator liked.\n2. Long sensitive muzzle: Long narrow mammalian muzzle with a matte triangular nose pad, subtle whisker pads, small folded rounded ears, shallow sloping brow and amber almond eyes. Grey short facial fur merges into existing long body fur, bare throat folds preserved. No canid nose bridge or familiar fox silhouette.\n3. Deep blunt jaw: Short DEEP mammalian skull, broad blunt lip-covered muzzle, strong cheek muscles, paired small low slit ears and narrow forward-looking eyes. Matte small nose pad; restrained sparse whiskers, no exposed fangs. Compact serious predator, not a flat-faced pet. Same head mass as original, fuller jaw not bigger skull.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-542db940-fdf8-45fa-b4c8-1626ba1fb74c.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Liked reptilian face is retained as option 1, alongside narrow and deep mammalian muzzles. All three preserve coarse silver fur, folded throat, four-leg crouch, high narrow hips and thin whip tail.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP1-5, Needlehip, the LOWER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Preserve this particularly liked combination: low broad forebody, narrow high spring-loaded hindquarters, FOUR legs, silver-grey directional coarse FUR and bristles, matte folded throat skin, and the long thin bare WHIP TAIL. Keep stance, proportions and tail exactly; do not turn it into a normal mammal or alter coat.\nThe three heads, left to right:\n1. Liked reptilian face: Very close to the selected original: low blunt reptilian face, amber eyes, fine matte scales on muzzle, closed curved mouth line and no external ears. Preserve recognisable identity, only clarify brow and jaw connection. This option deliberately retains the lizard-fur-whip-tail combination the creator liked.\n2. Long sensitive muzzle: Long narrow mammalian muzzle with a matte triangular nose pad, subtle whisker pads, small folded rounded ears, shallow sloping brow and amber almond eyes. Grey short facial fur merges into existing long body fur, bare throat folds preserved. No canid nose bridge or familiar fox silhouette.\n3. Deep blunt jaw: Short DEEP mammalian skull, broad blunt lip-covered muzzle, strong cheek muscles, paired small low slit ears and narrow forward-looking eyes. Matte small nose pad; restrained sparse whiskers, no exposed fangs. Compact serious predator, not a flat-faced pet. Same head mass as original, fuller jaw not bigger skull.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-542db940-fdf8-45fa-b4c8-1626ba1fb74c.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "2a448eacb38a28819080a5bac143ef4d4b128d57887fc2fe9b0dc5a67b43b7b4",
+      "bytes": 2938181,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP1–5 · liked. The silver fur, low forebody, raised hips and whip tail remain. Option 1 keeps the reptilian combination you liked.",
+      "selected_design": "BP1-5"
+    },
+    {
+      "code": "HV5",
+      "name": "Ribhide",
+      "source": "BP2-4",
+      "ref": "BP2",
+      "position": "LOWER LEFT",
+      "file": "05-ribhide-head-variations.png",
+      "body": "Pig-sized ochre digger with massive shoulder block, much smaller rear body, four limbs with huge digging forefeet, tiny ordinary tail, accordion-like deeply folded MATTE SKIN. Preserve the folds, original powerful body proportions and four connected limbs. It is muscular under loose skin.",
+      "status": "liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP2-4",
+          "position": "LOWER LEFT",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Broad root muzzle",
+          "line": "A mobile mammalian nose and lip fit beneath the heavy shoulders.",
+          "description": "A mobile mammalian nose and lip fit beneath the heavy shoulders. This is a proposed head option on the selected Ribhide body; neither the head nor its implied biology is final.",
+          "detail": "Broad low mammalian face, leathery slightly squared mobile nose pad, short prehensile upper lip, tiny soft ear folds protected beneath shoulder skin and small dark eyes. Ochre skin remains bare with a few stiff tactile hairs; no pig disk, tusks or horn.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Narrow digging wedge",
+          "line": "A narrow bony nasal wedge and deeper lower jaw cut a sharper profile.",
+          "description": "A narrow bony nasal wedge and deeper lower jaw cut a sharper profile. This is a proposed head option on the selected Ribhide body; neither the head nor its implied biology is final.",
+          "detail": "Deep narrow wedge-shaped skull with a modest blunt keratin nasal edge, strong fleshy lower lip and small lateral eyes beneath heavy brow. No external ears. Skull narrows toward a chisel-like snout without becoming a beak or trunk. Matte ochre pebbled skin.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Soft blunt face",
+          "line": "A tall blunt muzzle changes the expression while keeping the skin folds.",
+          "description": "A tall blunt muzzle changes the expression while keeping the skin folds. This is a proposed head option on the selected Ribhide body; neither the head nor its implied biology is final.",
+          "detail": "Mammalian rounded high nasal bridge over a SHORT blunt muzzle, wide paired nostrils, heavy fleshy lips and small downward ear flaps. Vertical cheek planes and deep jaw rather than a wide smiling lizard mouth. Same modest skull size and continuous ochre skin, no fur mane.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP2-4, Ribhide, the LOWER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Pig-sized ochre digger with massive shoulder block, much smaller rear body, four limbs with huge digging forefeet, tiny ordinary tail, accordion-like deeply folded MATTE SKIN. Preserve the folds, original powerful body proportions and four connected limbs. It is muscular under loose skin.\nThe three heads, left to right:\n1. Broad root muzzle: Broad low mammalian face, leathery slightly squared mobile nose pad, short prehensile upper lip, tiny soft ear folds protected beneath shoulder skin and small dark eyes. Ochre skin remains bare with a few stiff tactile hairs; no pig disk, tusks or horn.\n2. Narrow digging wedge: Deep narrow wedge-shaped skull with a modest blunt keratin nasal edge, strong fleshy lower lip and small lateral eyes beneath heavy brow. No external ears. Skull narrows toward a chisel-like snout without becoming a beak or trunk. Matte ochre pebbled skin.\n3. Soft blunt face: Mammalian rounded high nasal bridge over a SHORT blunt muzzle, wide paired nostrils, heavy fleshy lips and small downward ear flaps. Vertical cheek planes and deep jaw rather than a wide smiling lizard mouth. Same modest skull size and continuous ochre skin, no fur mane.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png": "7c97ca790b1d8277587cf67f5488710d21919a05ce44cccae9328d68b8f13495"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-e1c1c146-42a7-4eda-bab9-aec15645ed6d.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three distinct heads on the preserved ochre folded digger: broad lip, narrow keratin-tipped wedge and blunt mammalian nose. Four connected limbs, huge digging forefeet and shoulder mass remain consistent; all heads match their full-body studies.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP2-4, Ribhide, the LOWER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Pig-sized ochre digger with massive shoulder block, much smaller rear body, four limbs with huge digging forefeet, tiny ordinary tail, accordion-like deeply folded MATTE SKIN. Preserve the folds, original powerful body proportions and four connected limbs. It is muscular under loose skin.\nThe three heads, left to right:\n1. Broad root muzzle: Broad low mammalian face, leathery slightly squared mobile nose pad, short prehensile upper lip, tiny soft ear folds protected beneath shoulder skin and small dark eyes. Ochre skin remains bare with a few stiff tactile hairs; no pig disk, tusks or horn.\n2. Narrow digging wedge: Deep narrow wedge-shaped skull with a modest blunt keratin nasal edge, strong fleshy lower lip and small lateral eyes beneath heavy brow. No external ears. Skull narrows toward a chisel-like snout without becoming a beak or trunk. Matte ochre pebbled skin.\n3. Soft blunt face: Mammalian rounded high nasal bridge over a SHORT blunt muzzle, wide paired nostrils, heavy fleshy lips and small downward ear flaps. Vertical cheek planes and deep jaw rather than a wide smiling lizard mouth. Same modest skull size and continuous ochre skin, no fur mane.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-e1c1c146-42a7-4eda-bab9-aec15645ed6d.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "2a2f24e187efcc430392806efc40c88642d6e4babe3f882c00de40b3b1c0222c",
+      "bytes": 2823409,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP2–4 · liked. All three options keep the heavy shoulders, ochre skin folds and broad digging forefeet.",
+      "selected_design": "BP2-4"
+    },
+    {
+      "code": "HV6",
+      "name": "Scaleskein",
+      "source": "BP2-5",
+      "ref": "BP2",
+      "position": "LOWER CENTRE",
+      "file": "06-scaleskein-head-variations.png",
+      "body": "Arm-length thin deep-bodied hunter, very high flexible arched torso between FOUR distant slim supports, long narrow matte emerald scales overlapping in opposing rows, long tapering tail. Keep four legs, curved back, lean profile, emerald scale cloak and foot anatomy unchanged.",
+      "status": "interesting",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP2-5",
+          "position": "LOWER CENTRE",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Small mammalian wedge",
+          "line": "A fine muzzle and upright ear folds contrast with the scale cloak.",
+          "description": "A fine muzzle and upright ear folds contrast with the scale cloak. This is a proposed head option on the selected Scaleskein body; neither the head nor its implied biology is final.",
+          "detail": "Very small narrow mammalian wedge head, short sensitive muzzle ending in dark nose pad, two modest upright triangular EAR FOLDS and narrow amber eyes. Short dull green-grey velvet on cheek, smoothly meeting existing scales. No fox face or long canine muzzle; serious compact animal.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Deep oval jaw",
+          "line": "An earless oval skull and fleshy lower jaw change the head’s balance.",
+          "description": "An earless oval skull and fleshy lower jaw change the head’s balance. This is a proposed head option on the selected Scaleskein body; neither the head nor its implied biology is final.",
+          "detail": "Vertically deep OVAL skull with blunt short upper snout, small high-set eyes, broad closed fleshy lower lip and no external ears. Smooth green skin on cheeks with narrow scales only at crown. No broad horizontal lizard smile, no bulbous cartoon eyes.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Slim reptilian profile",
+          "line": "A slender scaled head stays close to the original with a cleaner jaw.",
+          "description": "A slender scaled head stays close to the original with a cleaner jaw. This is a proposed head option on the selected Scaleskein body; neither the head nor its implied biology is final.",
+          "detail": "Slender reptilian head with elongated gently convex nasal ridge, small rear-set eyes, tight closed mouth and a deeper narrow lower jaw. Fine green scales, no ears or crest. Preserve modest head size; this is a restrained reptilian option alongside contrasting skull shapes.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP2-5, Scaleskein, the LOWER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Arm-length thin deep-bodied hunter, very high flexible arched torso between FOUR distant slim supports, long narrow matte emerald scales overlapping in opposing rows, long tapering tail. Keep four legs, curved back, lean profile, emerald scale cloak and foot anatomy unchanged.\nThe three heads, left to right:\n1. Small mammalian wedge: Very small narrow mammalian wedge head, short sensitive muzzle ending in dark nose pad, two modest upright triangular EAR FOLDS and narrow amber eyes. Short dull green-grey velvet on cheek, smoothly meeting existing scales. No fox face or long canine muzzle; serious compact animal.\n2. Deep oval jaw: Vertically deep OVAL skull with blunt short upper snout, small high-set eyes, broad closed fleshy lower lip and no external ears. Smooth green skin on cheeks with narrow scales only at crown. No broad horizontal lizard smile, no bulbous cartoon eyes.\n3. Slim reptilian profile: Slender reptilian head with elongated gently convex nasal ridge, small rear-set eyes, tight closed mouth and a deeper narrow lower jaw. Fine green scales, no ears or crest. Preserve modest head size; this is a restrained reptilian option alongside contrasting skull shapes.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png": "7c97ca790b1d8277587cf67f5488710d21919a05ce44cccae9328d68b8f13495"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0b37708f-6bf9-4037-8266-19671c58715c.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three different profiles: a small furred mammalian head with ears, a deep oval earless jaw, and a slim reptilian continuity option. All retain the arched emerald-scaled body, four limbs and long tail. The middle head is bulkier than the original and remains a proposal.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP2-5, Scaleskein, the LOWER CENTRE creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Arm-length thin deep-bodied hunter, very high flexible arched torso between FOUR distant slim supports, long narrow matte emerald scales overlapping in opposing rows, long tapering tail. Keep four legs, curved back, lean profile, emerald scale cloak and foot anatomy unchanged.\nThe three heads, left to right:\n1. Small mammalian wedge: Very small narrow mammalian wedge head, short sensitive muzzle ending in dark nose pad, two modest upright triangular EAR FOLDS and narrow amber eyes. Short dull green-grey velvet on cheek, smoothly meeting existing scales. No fox face or long canine muzzle; serious compact animal.\n2. Deep oval jaw: Vertically deep OVAL skull with blunt short upper snout, small high-set eyes, broad closed fleshy lower lip and no external ears. Smooth green skin on cheeks with narrow scales only at crown. No broad horizontal lizard smile, no bulbous cartoon eyes.\n3. Slim reptilian profile: Slender reptilian head with elongated gently convex nasal ridge, small rear-set eyes, tight closed mouth and a deeper narrow lower jaw. Fine green scales, no ears or crest. Preserve modest head size; this is a restrained reptilian option alongside contrasting skull shapes.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0b37708f-6bf9-4037-8266-19671c58715c.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "fd93f229ccfc1fbaf9dfb89352fa278519c707a52e46659a9f2f03dd702588b9",
+      "bytes": 2707578,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP2–5 · interesting. The lean arched body, long tail and emerald scales carry through all three head shapes.",
+      "selected_design": "BP2-5"
+    },
+    {
+      "code": "HV7",
+      "name": "Purlrunner",
+      "source": "BP3-3",
+      "ref": "BP3",
+      "position": "UPPER RIGHT",
+      "file": "07-purlrunner-head-variations.png",
+      "body": "Knee-high seed forager with narrow arched blue-grey ribbed torso, sparse coarse ORANGE FUR following ridges, exactly TWO tall legs and a single thick continuous muscular TAIL bracing as third ground contact. No forelimbs. Preserve this unusual three-point stance, limb angles, head's down-reaching neck and sparse orange bristles.",
+      "status": "tentatively_liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP3-3",
+          "position": "UPPER RIGHT",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Split browsing lip",
+          "line": "A small mammalian nose and divided lip suit close ground feeding.",
+          "description": "A small mammalian nose and divided lip suit close ground feeding. This is a proposed head option on the selected Purlrunner body; neither the head nor its implied biology is final.",
+          "detail": "Small mammalian head with short tapered muzzle, modest dark nose pad, divided flexible upper lip, small rounded ears turned backward and fine narrow eyes. Sparse orange cheek hair over blue-grey skin connects to existing neck ridges. No long rodent incisors or rabbit ears.",
+          "selection_status": "selected"
+        },
+        {
+          "position": 2,
+          "name": "Compact seed jaw",
+          "line": "A deep cheek and short keratin lip offer a different feeding mechanism.",
+          "description": "A deep cheek and short keratin lip offer a different feeding mechanism. This is a proposed head option on the selected Purlrunner body; neither the head nor its implied biology is final.",
+          "detail": "Compact deep skull, broad jaw hinge, very short dark keratin upper cutting lip, fleshy lower jaw and no external ears. Cheek partly covered by sparse orange fibres, blue-grey skin around mouth. Short sturdy head not a bird beak pasted on; eyes modest.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Long soft nose",
+          "line": "A fine, slightly downcurved mammalian muzzle reaches between seeds.",
+          "description": "A fine, slightly downcurved mammalian muzzle reaches between seeds. This is a proposed head option on the selected Purlrunner body; neither the head nor its implied biology is final.",
+          "detail": "Long fine mammalian muzzle with a short soft downturned nose tip, slit nostrils, tiny flattened ear flaps and narrow amber eyes. Short sparse orange face fur and matte blue-grey lips. No trunk, beak, antlers, tusks or exaggerated nose length.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP3-3, Purlrunner, the UPPER RIGHT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Knee-high seed forager with narrow arched blue-grey ribbed torso, sparse coarse ORANGE FUR following ridges, exactly TWO tall legs and a single thick continuous muscular TAIL bracing as third ground contact. No forelimbs. Preserve this unusual three-point stance, limb angles, head's down-reaching neck and sparse orange bristles.\nThe three heads, left to right:\n1. Split browsing lip: Small mammalian head with short tapered muzzle, modest dark nose pad, divided flexible upper lip, small rounded ears turned backward and fine narrow eyes. Sparse orange cheek hair over blue-grey skin connects to existing neck ridges. No long rodent incisors or rabbit ears.\n2. Compact seed jaw: Compact deep skull, broad jaw hinge, very short dark keratin upper cutting lip, fleshy lower jaw and no external ears. Cheek partly covered by sparse orange fibres, blue-grey skin around mouth. Short sturdy head not a bird beak pasted on; eyes modest.\n3. Long soft nose: Long fine mammalian muzzle with a short soft downturned nose tip, slit nostrils, tiny flattened ear flaps and narrow amber eyes. Short sparse orange face fur and matte blue-grey lips. No trunk, beak, antlers, tusks or exaggerated nose length.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png": "753f43b277230b95ef1c147e0860d7e5f23a8eed25a5ca691a330b57911897ac"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-49246d11-b7da-49b4-b49e-77dc5c51a105.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Three matching head/body pairs retain the two legs, tail brace, orange ridges and blue-grey body. Options vary split lip, short seed-cutting jaw and long soft nose. The first split lip is more pronounced than requested; keep it provisional rather than a settled feeding mechanism.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP3-3, Purlrunner, the UPPER RIGHT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Knee-high seed forager with narrow arched blue-grey ribbed torso, sparse coarse ORANGE FUR following ridges, exactly TWO tall legs and a single thick continuous muscular TAIL bracing as third ground contact. No forelimbs. Preserve this unusual three-point stance, limb angles, head's down-reaching neck and sparse orange bristles.\nThe three heads, left to right:\n1. Split browsing lip: Small mammalian head with short tapered muzzle, modest dark nose pad, divided flexible upper lip, small rounded ears turned backward and fine narrow eyes. Sparse orange cheek hair over blue-grey skin connects to existing neck ridges. No long rodent incisors or rabbit ears.\n2. Compact seed jaw: Compact deep skull, broad jaw hinge, very short dark keratin upper cutting lip, fleshy lower jaw and no external ears. Cheek partly covered by sparse orange fibres, blue-grey skin around mouth. Short sturdy head not a bird beak pasted on; eyes modest.\n3. Long soft nose: Long fine mammalian muzzle with a short soft downturned nose tip, slit nostrils, tiny flattened ear flaps and narrow amber eyes. Short sparse orange face fur and matte blue-grey lips. No trunk, beak, antlers, tusks or exaggerated nose length.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-49246d11-b7da-49b4-b49e-77dc5c51a105.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "bdc32c10004f0001f86b677ec1ae326e248deaf59aa296de69ee012906134c12",
+      "bytes": 2530745,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP3–3 · tentatively liked. All three options keep the two tall legs, tail brace and orange fibres over blue-grey skin.",
+      "selected_design": "HV7-1"
+    },
+    {
+      "code": "HV8",
+      "name": "Gullied swimmer",
+      "source": "BP3-4",
+      "ref": "BP3",
+      "position": "LOWER LEFT",
+      "file": "08-gullied-swimmer-head-variations.png",
+      "body": "Arm-length aquatic animal: ONE broad body has TWO raised muscular side keels separated by a deep groove, fine blue-green scales, one head at FRONT joining both sides, TWO rear steering paddles. Preserve the distinctive twin-keel one-body silhouette, paddles, scales, no walking legs and no added fur coat.",
+      "status": "liked",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png"
+      ],
+      "reference_roles": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+          "role": "selected body and covering anatomy only",
+          "target": "BP3-4",
+          "position": "LOWER LEFT",
+          "exclude": "All other five animals in the composite reference are out of scope; copy none of them."
+        }
+      ],
+      "takes": [
+        {
+          "position": 1,
+          "name": "Whiskered aquatic muzzle",
+          "line": "A smooth mammalian muzzle adds tactile whiskers while the body stays scaled.",
+          "description": "A smooth mammalian muzzle adds tactile whiskers while the body stays scaled. This is a proposed head option on the selected Gullied swimmer body; neither the head nor its implied biology is final.",
+          "detail": "Low smooth mammalian aquatic head with small rounded muzzle, broad matte nasal pad with closable paired nostrils, sparse short tactile whiskers and modest side eyes. No external ears. Pale blue-grey smooth skin transitions into existing blue scales behind cheeks. Neither seal head nor otter head copied; coherent flattened attachment to both keels.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 2,
+          "name": "Broad fleshy mouth",
+          "line": "A short broad face uses lip shape and eye spacing for a different identity.",
+          "description": "A short broad face uses lip shape and eye spacing for a different identity. This is a proposed head option on the selected Gullied swimmer body; neither the head nor its implied biology is final.",
+          "detail": "Very broad low skull with short rounded snout, wide firm fleshy lips, dorsally placed small oval eyes and a subtle central nasal ridge. Smooth grey-blue skin, no whiskers or ears. Keep one continuous head attached to the paired body keels. Natural aquatic animal, no smile.",
+          "selection_status": "not_selected"
+        },
+        {
+          "position": 3,
+          "name": "Tapered sensing snout",
+          "line": "A slim tapered snout offers a more pointed profile.",
+          "description": "A slim fishlike snout gives a pointed alternative without a lizard face. This is a proposed head option on the selected Gullied swimmer body; neither the head nor its implied biology is final.",
+          "detail": "Narrow elongated fish-informed head with a blunt tapering snout, tiny paired nostrils, closed underslung mouth and small lateral eyes. Fine blue scales and a short pale fleshy lower lip, no gill fans, tusks or extra appendages. Maintain a head smoothly integrated with both body keels.",
+          "selection_status": "not_selected"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP3-4, Gullied swimmer, the LOWER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Arm-length aquatic animal: ONE broad body has TWO raised muscular side keels separated by a deep groove, fine blue-green scales, one head at FRONT joining both sides, TWO rear steering paddles. Preserve the distinctive twin-keel one-body silhouette, paddles, scales, no walking legs and no added fur coat.\nThe three heads, left to right:\n1. Whiskered aquatic muzzle: Low smooth mammalian aquatic head with small rounded muzzle, broad matte nasal pad with closable paired nostrils, sparse short tactile whiskers and modest side eyes. No external ears. Pale blue-grey smooth skin transitions into existing blue scales behind cheeks. Neither seal head nor otter head copied; coherent flattened attachment to both keels.\n2. Broad fleshy mouth: Very broad low skull with short rounded snout, wide firm fleshy lips, dorsally placed small oval eyes and a subtle central nasal ridge. Smooth grey-blue skin, no whiskers or ears. Keep one continuous head attached to the paired body keels. Natural aquatic animal, no smile.\n3. Tapered sensing snout: Narrow elongated fish-informed head with a blunt tapering snout, tiny paired nostrils, closed underslung mouth and small lateral eyes. Fine blue scales and a short pale fleshy lower lip, no gill fans, tusks or extra appendages. Maintain a head smoothly integrated with both body keels.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "reference_checksums": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png": "753f43b277230b95ef1c147e0860d7e5f23a8eed25a5ca691a330b57911897ac"
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-9ec50cc8-5904-4cae-9981-ffa4546e995a.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "All three preserve the one-body twin-keel form, two rear paddles and scaled covering. Whiskered mammalian, broad fleshy-lipped and tapering heads are distinct and correctly match their body studies. The first reads seal-like and the third retains some reptilian familiarity; neither is a final species definition.",
+        "head_options": 3,
+        "matching_full_body_views": 3
+      },
+      "generation_history": [
+        {
+          "stage": "head_variation_sheet",
+          "prompt": "Use case: precise-object-edit.\nAsset type: creature head-variation study for Breachline, 1536 x 1024 landscape.\nUse the attached image as an ANATOMY REFERENCE for exactly one selected creature. Build a new sheet featuring ONLY that creature. This is controlled head exploration, not a new body design.\nLAYOUT: exactly THREE equal columns, read left to right. In the TOP roughly 60 percent of each column show one large head-and-neck three-quarter portrait ending naturally at the shoulder. In the BOTTOM of the same column show one smaller COMPLETE full-body side/three-quarter view with that EXACT SAME head option. Thus three head options, each with its own full-body context, six depictions total. Clear empty space between columns and between portrait and body; no borders, numbers, text, arrows, labels, human scale silhouettes or extra animals. Heads normal animal size in full-body views.\nSTYLE: traditional oil/acrylic fantasy creature concept painting, measured visible brushwork, appealing coherent animal anatomy, matte biological surfaces, natural subdued colour, soft neutral daylight, plain warm off-white background. Head shape must vary through skull, jaw, nasal profile, eyes and ears, not merely hairstyles or different coats. Each skull must connect plausibly into the unchanged original neck. Restrained mature animals; no pet expressions, mascot designs, huge cute eyes, humanoid heads, horns or gratuitous extra features. Preserve the liked species identity and body.\nSELECTED REFERENCE TARGET: BP3-4, Gullied swimmer, the LOWER LEFT creature in the two-row, three-column attached source. Ignore every other animal.\nBODY INVARIANTS in ALL THREE full-body views: Arm-length aquatic animal: ONE broad body has TWO raised muscular side keels separated by a deep groove, fine blue-green scales, one head at FRONT joining both sides, TWO rear steering paddles. Preserve the distinctive twin-keel one-body silhouette, paddles, scales, no walking legs and no added fur coat.\nThe three heads, left to right:\n1. Whiskered aquatic muzzle: Low smooth mammalian aquatic head with small rounded muzzle, broad matte nasal pad with closable paired nostrils, sparse short tactile whiskers and modest side eyes. No external ears. Pale blue-grey smooth skin transitions into existing blue scales behind cheeks. Neither seal head nor otter head copied; coherent flattened attachment to both keels.\n2. Broad fleshy mouth: Very broad low skull with short rounded snout, wide firm fleshy lips, dorsally placed small oval eyes and a subtle central nasal ridge. Smooth grey-blue skin, no whiskers or ears. Keep one continuous head attached to the paired body keels. Natural aquatic animal, no smile.\n3. Tapered sensing snout: Narrow elongated fish-informed head with a blunt tapering snout, tiny paired nostrils, closed underslung mouth and small lateral eyes. Fine blue scales and a short pale fleshy lower lip, no gill fans, tusks or extra appendages. Maintain a head smoothly integrated with both body keels.\nDo not replace the whole creature with any familiar Earth animal. Do not copy the source six-animal arrangement. Do not put all three heads on one body. Make the three options clearly readable and keep each portrait consistent with the smaller body below it.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-9ec50cc8-5904-4cae-9981-ffa4546e995a.png",
+          "reference_images": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png"
+          ],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "a16bc483821e951d04d9ebc64073f64f9edb91d26af8db40cbc2b7846ab11d9b",
+      "bytes": 2376754,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "review_description": "From BP3–4 · liked. All three options keep the twin body ridges, blue-green scales and paired rear paddles.",
+      "selected_design": "BP3-4"
+    }
+  ],
+  "art_direction_sha256": "c20c0c8e21988163496a54640fa7d9feac776a64b9b5ff8f8d0ca10617958fb6",
+  "validation": {
+    "sheet_count": 8,
+    "head_option_count": 24,
+    "matching_full_body_views": 24,
+    "all_sheets_visually_inspected": true,
+    "source_images_preserved": true,
+    "source_targets": [
+      "BP1-1",
+      "BP1-2",
+      "BP1-3",
+      "BP1-5",
+      "BP2-4",
+      "BP2-5",
+      "BP3-3",
+      "BP3-4"
+    ],
+    "selected_bodies": "Major silhouette, limb arrangement, covering and tail invariants visually retained; these are new painted studies, not pixel-identical edits.",
+    "gallery": {
+      "all_eight_images_loaded": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "displayed_options": 24,
+      "visual_layout_checked_on": "HV2 Loomstep",
+      "review_url": "http://127.0.0.1:8774/#HV2"
+    },
+    "original_reference_checksums_unchanged": true
+  },
+  "creator_final_selections": [
+    {
+      "head_sheet": "HV1",
+      "name": "Foldstride",
+      "selected": "BP1-1",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER LEFT",
+      "canonical": false,
+      "source_sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/01-body-plans-weight-and-motion.png"
+    },
+    {
+      "head_sheet": "HV2",
+      "name": "Loomstep",
+      "selected": "BP1-2",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER CENTRE",
+      "canonical": false,
+      "source_sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/01-body-plans-weight-and-motion.png"
+    },
+    {
+      "head_sheet": "HV3",
+      "name": "Shelfback",
+      "selected": "BP1-3",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER RIGHT",
+      "canonical": false,
+      "source_sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/01-body-plans-weight-and-motion.png"
+    },
+    {
+      "head_sheet": "HV4",
+      "name": "Needlehip",
+      "selected": "BP1-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false,
+      "source_sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/01-body-plans-weight-and-motion.png"
+    },
+    {
+      "head_sheet": "HV5",
+      "name": "Ribhide",
+      "selected": "BP2-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false,
+      "source_sha256": "7c97ca790b1d8277587cf67f5488710d21919a05ce44cccae9328d68b8f13495",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/02-body-plans-coverings.png"
+    },
+    {
+      "head_sheet": "HV6",
+      "name": "Scaleskein",
+      "selected": "BP2-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false,
+      "source_sha256": "7c97ca790b1d8277587cf67f5488710d21919a05ce44cccae9328d68b8f13495",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/02-body-plans-coverings.png"
+    },
+    {
+      "head_sheet": "HV7",
+      "name": "Purlrunner",
+      "selected": "HV7-1",
+      "selection_type": "head_variant",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+      "source_region": "Left column: portrait and matching full-body view",
+      "canonical": false,
+      "source_sha256": "bdc32c10004f0001f86b677ec1ae326e248deaf59aa296de69ee012906134c12",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/07-purlrunner-head-variations.png"
+    },
+    {
+      "head_sheet": "HV8",
+      "name": "Gullied swimmer",
+      "selected": "BP3-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false,
+      "source_sha256": "753f43b277230b95ef1c147e0860d7e5f23a8eed25a5ca691a330b57911897ac",
+      "library_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-selections-2026-11-13/source-sheets/03-body-plans-niches.png"
+    }
+  ]
+}

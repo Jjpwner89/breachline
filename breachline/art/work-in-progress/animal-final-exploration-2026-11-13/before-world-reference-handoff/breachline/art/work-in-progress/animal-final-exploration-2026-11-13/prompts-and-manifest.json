@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "collection": "animal-final-exploration-2026-11-13",
+  "date": "2026-11-13",
+  "status": "complete_pending_creator_review",
+  "generator": "built-in image_gen",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_sha256": "bbde389a9aa0b8c0ea77bda86e451b49c5920245d29cd54214c976f0f1616bb3",
+  "review_url": "http://127.0.0.1:8781/",
+  "sheets": [
+    {
+      "code": "FR1",
+      "title": "Cragwool · sharper muzzle",
+      "file": "fr1-cragwool.png",
+      "kind": "edit",
+      "source": "G1-1",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g1.png"
+      ],
+      "description": "The chosen Cragwool keeps its ivory coat, dark limb plates and heavy forward stance. The face becomes slightly more predatory through a modestly longer muzzle; diet is still open.",
+      "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP LEFT animal (Cragwool) from this six-animal sheet. The other five animals are irrelevant and must not appear or inform this edit.\nCreate a dedicated single-animal reference plate, retaining the selected animal's exact identity, body proportions, four legs, bowed shoulders, cream pointed wool locks, charcoal scales on forelimbs and hindquarters, short tail, climbing step and rock contact. Reproduce the chosen pose as faithfully as possible, larger on the new canvas.\nONLY ANATOMICAL CHANGE: make its face a little more predatory, less stub-nosed. Lengthen the muzzle modestly, around 15–20 percent; give the closed jaw a slightly firmer cutting profile and subtly more focused eyes. Keep a calm wild-animal expression, small ears, existing cranial proportions and muted colours. No snarling, giant teeth, saber fangs, new horns, wolf mask or entirely different head. It must clearly be the same animal with a restrained muzzle adjustment. Preserve all body coverings and stance unchanged.\nOne large full-body three-quarter study, and one small side-profile head detail of the SAME revised face. Retain one modest neutral human scale silhouette beside the main animal, about half its shoulder height, on the same ground plane. No other animal.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+      "review_status": "pending_creator_review",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g1.png",
+          "sha256": "b9c6a886636b48468ffcbd7cdccc1d33899135a2bf471c938271ea7d3b6acfbb",
+          "role": "edit target; selected cell only"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3df19cc2-d527-4ab7-981b-c01d96e4e343.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2b04168b663d12debc826708dbe0ba0c45bbe71c08b42991361c8c985751b04d",
+      "visual_check": "Main identity, four legs, ivory coat and dark limb plates preserved; muzzle modestly lengthened and firmed.",
+      "generation_status": "complete",
+      "canonical": false
+    },
+    {
+      "code": "FR2",
+      "title": "Reedstrider · full-body fibres",
+      "file": "fr2-reedstrider.png",
+      "kind": "edit",
+      "source": "G1-2",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g1.png"
+      ],
+      "description": "Reedstrider retains its upright body, face, feeding arms and balancing tail. The copper fibres from its back ridge now spread over the body and limbs, with shorter fibres where the joints bend.",
+      "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP MIDDLE animal (Reedstrider) from this six-animal sheet. Ignore and omit every other animal.\nCreate a dedicated reference plate of exactly this selected creature, faithfully preserving the face, ears, long neck, body proportions, low pelvis, two large hind legs, two small feeding arms, hands holding reeds, and long balancing tail. Same three-quarter standing pose and olive/copper colour family.\nONLY CHANGE THE COVERING: the narrow copper/russet mohawk-like ridge of pointed fibrous tufts on its back is the material the creator likes. Extend THIS SAME feather-fur fibre texture over the whole animal: neck, shoulders, chest, belly, flanks, hips, upper and lower limbs, and tail. Make a flowing continuous directional pelt of narrow tapered copper-gold fibres, denser on torso and top of neck, shorter around joints and on the tail. Let subdued olive skin remain visible on the original face, palms and toes; keep those mechanically usable. This is not just a larger mohawk, not porcupine spikes, and not rounded ordinary mammal fur. Preserve slim body definition and movement under the pelt. Do not change its head, grow wings, enlarge the belly or add a pouch.\nOne large full-body view in the original pose, plus one small side-view walking study showing the SAME animal and full-body covering. Single neutral human scale silhouette next to the main view; creature total height about 1.6 human heights. Quiet reed/ground fragment only.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+      "review_status": "pending_creator_review",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g1.png",
+          "sha256": "b9c6a886636b48468ffcbd7cdccc1d33899135a2bf471c938271ea7d3b6acfbb",
+          "role": "edit target; selected cell only"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-e15a6609-8956-4233-9ad6-1fcdd3ffbf6d.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b196d1380638bfec8614b752c43f8c7f75da8d5c718bdcbfa9eca18e9a3d29c4",
+      "visual_check": "Covering extends around neck, torso, limbs and tail. Original face and bipedal/feeding-arm body plan remain.",
+      "generation_status": "complete",
+      "canonical": false
+    },
+    {
+      "code": "FR3",
+      "title": "Undertow · continuous side fins",
+      "file": "fr3-undertow.png",
+      "kind": "edit",
+      "source": "G3-2",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g3.png"
+      ],
+      "description": "Undertow retains its teal soft body, rounded face and small rear triangle. Each side now has one continuous, shorter-projecting fin with a flatter outer edge, replacing the split middle lobes.",
+      "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP MIDDLE aquatic creature (Undertow). Ignore all five other designs, which are rejected. Isolate and faithfully preserve this selected creature's rounded head, tiny eyes, soft teal body, salmon underside and salmon fin rims, tapering rear body, and small triangular REAR tail element.\nPRECISE FIN CHANGE: on EACH SIDE combine the two separate middle wing/fin lobes into ONE continuous broad side fin. Fill the notch between the old anterior and posterior lobes. The new fin root spans their combined front-to-back length, but its outward projection is about 30% SHORTER. Its outer edge is flatter and smoother, gently straightened with rounded corners, not scalloped, not clipped and not two peaks with a notch. Exactly ONE continuous elongated side fin on the near side and ONE matching fin on the far side. Keep the SMALL distinct triangular tail feature at the very back; that rear triangle is liked. The organism should swim with broad gentle muscular waves rather than look like a winged aircraft.\nDedicated landscape reference plate: one large full animal three-quarter view underwater, plus a small dorsal/top view clearly showing the continuous fins and separate little tail triangle. Very sparse underwater colour wash. A tiny neutral human scale silhouette off to one side, about 1/12 of the animal length, communicates massive size; no actual human interaction.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+      "review_status": "pending_creator_review",
+      "reference_provenance": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/g3.png",
+          "sha256": "a19b7ffd1586c3ead355b40b61bc1a0be06cb6e1dfcb03fac279326d23d047b5",
+          "role": "edit target; selected cell only"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-561cbbf2-268b-4a54-aeea-5acae930aa93.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5ca435bee677e75f49ed03590d14884c53bb21b7810684aecb9b84971face5c6",
+      "visual_check": "One uninterrupted lateral fin per side; shorter projection and flatter continuous outline; small rear triangle retained.",
+      "generation_status": "complete",
+      "canonical": false
+    },
+    {
+      "code": "LN1",
+      "title": "Latchrunner",
+      "file": "ln1-latchrunner.png",
+      "kind": "new",
+      "description": "A long, low marsh predator separates four springy running legs from a smaller grasping pair beneath the neck. Teal scale-grain and soot-grey fibres follow the body’s different surfaces; the six-limbed hunting strategy is a new proposal.",
+      "prompt": "Use case: stylized-concept.\nInvent ONE new LARGE animal for Breachline with the following distinct whole-body plan. Landscape 1536 x 1024 concept reference.\nThe creature is a marsh-edge pursuit predator, about 3.8 metres long and 1.4 metres high at the back: larger than a person, horse-mass range, not elephant scale. Its long supple low torso bends subtly through the waist, with the greatest mass over the middle of its body. It has EXACTLY SIX limbs in three coherent paired girdles: FOUR long jointed walking/running legs under the torso, plus TWO smaller grasping forelimbs rooted in the front chest just behind the head. The four locomotor legs are substantial, bent and springy rather than insect-thin or elephant-pillared. The extra front pair can fold close beneath the neck and open to pin prey. Show one reaching slightly forward while the matching near-side one stays bent, both visibly connected; all four running feet support the living body. It must not look like a human centaur, a mantis with a mammal head, or a normal quadruped with pasted-on arms.\nHead is an integrated low compact wedge carried straight forward: modest blunt mammalian nose, broad cheek muscles and a closed strong jaw that widens behind the muzzle, two small deep-set eyes, no beak and no reptilian snout. A smooth muscular neck joins skull and front thorax. No ears as the main novelty, no horns or tusks. A thick tapered low balancing tail.\nCovering: fine matte muted teal scale-grain over upper body blending into very short soot-grey velvety fibres on sides and underside, with a warm copper bare patch around the face. Quiet colour transitions that explain different skin use; NO feather mane, NO shaggy shoulder mantle, no plate shell, no dorsal backpack or decorative appendages. No throat combs, no jaw fringes, no sensory tendrils.\nOne large full-body three-quarter view stepping across a low mud bank, head alert and both small graspers visible; a much smaller SIDE VIEW of the same six-limbed animal moving, to clarify attachments. Exactly one simple grey human scale silhouette at the left, approximately 1.8 metres tall and sharing the same ground line. The creature's torso back should be a little LOWER than the human head; its length supplies its mass. Animal calm and purposeful, no roaring, gore or depicted prey. Sparse reeds and one muddy foot contact are enough. Everything fully in frame.\nPaint as traditional oil/acrylic fantasy concept art with measured visible brushwork, strong connected forms, matte surfaces, varied edges and restrained fine detail. Warm pale neutral background. Never photo, 3D, toy-like or anime. No labels, writing, numbering, arrows, panel borders, logos or watermarks.",
+      "review_status": "pending_creator_review",
+      "reference_provenance": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-641fcda0-80a9-4a8c-b1c6-2b8684067a5a.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5214cae29683e540f19eb7abc87f0734c2347844ac49e40d446b86e6f326133f",
+      "visual_check": "Main view has four connected walking limbs and two smaller grasping forelimbs after extra-limb correction. Distinct from the discarded beaked candidate.",
+      "generation_status": "complete",
+      "generation_history": [
+        {
+          "stage": "initial freeform candidate",
+          "prompt": "Use case: stylized-concept.\nInvent ONE entirely new large wild animal for Breachline, around a horse's mass, visibly much larger than a human but not a giant. We are near the end of a varied wildlife exploration and need one compelling fresh possibility. Design its whole body, head, coverings and locomotion together; give it its own plausible feeding role. The important quality is an intriguing, anatomically convincing combination and body silhouette that does not immediately identify a known Earth animal. Choose an original distribution of mass and limb proportions, coherent joints and one or two purposeful biological departures. Do not merely recolour a bear, badger, anteater, tapir, dinosaur, deer or big bird; do not make another generic plated quadruped or long-legged grazer. Do not assemble a collage of recognisable animal parts. This should feel alive, strange and appealing, with a weight-bearing stance and an integrated expressive face. Vary coverings through structural transitions between skin, fibres, feathers or scales as the biology requires, not arbitrary ornament. No generic lizard-head default. A quiet ecological gesture should imply its feeding method without requiring labels. Beauty with a little unease is welcome.\nShow ONE large primary full-body three-quarter view, one much smaller side study of the SAME animal taking a step or feeding, and one neutral human scale figure on the same ground plane. Do not show multiple different proposals. Sparse contact with a modest habitat fragment only. Keep the body mostly clear of environment.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7a4efb6c-6288-4e59-905b-75dd4474ba28.png",
+          "disposition": "Not handed off; overlaps Woodland breaker."
+        },
+        {
+          "stage": "replacement body architecture",
+          "prompt": "Use case: stylized-concept.\nInvent ONE new LARGE animal for Breachline with the following distinct whole-body plan. Landscape 1536 x 1024 concept reference.\nThe creature is a marsh-edge pursuit predator, about 3.8 metres long and 1.4 metres high at the back: larger than a person, horse-mass range, not elephant scale. Its long supple low torso bends subtly through the waist, with the greatest mass over the middle of its body. It has EXACTLY SIX limbs in three coherent paired girdles: FOUR long jointed walking/running legs under the torso, plus TWO smaller grasping forelimbs rooted in the front chest just behind the head. The four locomotor legs are substantial, bent and springy rather than insect-thin or elephant-pillared. The extra front pair can fold close beneath the neck and open to pin prey. Show one reaching slightly forward while the matching near-side one stays bent, both visibly connected; all four running feet support the living body. It must not look like a human centaur, a mantis with a mammal head, or a normal quadruped with pasted-on arms.\nHead is an integrated low compact wedge carried straight forward: modest blunt mammalian nose, broad cheek muscles and a closed strong jaw that widens behind the muzzle, two small deep-set eyes, no beak and no reptilian snout. A smooth muscular neck joins skull and front thorax. No ears as the main novelty, no horns or tusks. A thick tapered low balancing tail.\nCovering: fine matte muted teal scale-grain over upper body blending into very short soot-grey velvety fibres on sides and underside, with a warm copper bare patch around the face. Quiet colour transitions that explain different skin use; NO feather mane, NO shaggy shoulder mantle, no plate shell, no dorsal backpack or decorative appendages. No throat combs, no jaw fringes, no sensory tendrils.\nOne large full-body three-quarter view stepping across a low mud bank, head alert and both small graspers visible; a much smaller SIDE VIEW of the same six-limbed animal moving, to clarify attachments. Exactly one simple grey human scale silhouette at the left, approximately 1.8 metres tall and sharing the same ground line. The creature's torso back should be a little LOWER than the human head; its length supplies its mass. Animal calm and purposeful, no roaring, gore or depicted prey. Sparse reeds and one muddy foot contact are enough. Everything fully in frame.\nPaint as traditional oil/acrylic fantasy concept art with measured visible brushwork, strong connected forms, matte surfaces, varied edges and restrained fine detail. Warm pale neutral background. Never photo, 3D, toy-like or anime. No labels, writing, numbering, arrows, panel borders, logos or watermarks.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6b8ef67a-e664-4797-a0b3-f65b2bf92069.png",
+          "disposition": "Extra central walking limb corrected."
+        },
+        {
+          "stage": "targeted anatomy correction",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6b8ef67a-e664-4797-a0b3-f65b2bf92069.png",
+          "prompt": "Use case: precise-object-edit.\nMake ONE small anatomy correction to the LARGE MAIN animal in this reference sheet. It currently has an extra walking leg directly under the middle of the belly.\nRemove ONLY the supernumerary central walking leg and its foot: the extra foot at approximately x=790,y=565 in the 1536x1024 canvas, between the large foreground front foot (around x=600,y=600) and the far rear foot (around x=960,y=550). Remove that extra limb continuously back to its erroneous attachment under the belly and naturally repaint the belly edge and background behind it.\nAfter this correction the MAIN animal must have EXACTLY FOUR weight-bearing walking feet: near x=285,y=640; x=600,y=600; x=960,y=550; and x=1380,y=565. PLUS retain BOTH small grasping forelimbs hanging beneath the neck, so there are six limbs in total. Do not delete or alter either small grasping arm. Do not add any new appendage.\nKeep the entire rest of the picture exactly unchanged: face, expression, head shape, scales, short fur, teal/copper palette, body proportions, tail, four retained walking legs, human scale silhouette, main pose, background and the small side-view study. The SMALL bottom study already has the intended four running legs and two smaller graspers; leave it unchanged. No redesign, no text, no labels, no cropping. Preserve the painted texture and 1536x1024 canvas.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-641fcda0-80a9-4a8c-b1c6-2b8684067a5a.png"
+        }
+      ],
+      "canonical": false
+    },
+    {
+      "code": "MN1",
+      "title": "Massive · new body plans",
+      "file": "mn1-massive.png",
+      "kind": "lineup",
+      "description": "Six new massive animals explore more unfamiliar body plans. These are competing proposals; their niches, scale and names are provisional.",
+      "prompt": "Use case: stylized-concept.\nCreate ONE landscape six-creature exploration lineup for Breachline: EXACTLY SIX radically distinct NEW massive living animals, arranged 3 columns by 2 rows, each fully isolated in its own equal cell with generous pale space. Treat this as six whole-animal inventions, not variants. No existing reference image or previous creature anatomy to copy.\nTHE CORE DIRECTION: the last giant round was too safe and too similar to large Earth mammals with modified faces. Make much more imaginative whole-body plans. Change how mass is distributed, where the feeding end sits, the relation of torso to support structures, how the body turns and how it moves. Each should remain legible as a real organism with a coherent niche, continuous anatomy and plausible support or buoyancy. Explore vertebrate-like and soft-bodied/invertebrate-like constructions without literally enlarging elephants, dinosaurs, giraffes, whales, slugs, crabs, jellyfish or squid. Keep one or two biological organising ideas per animal, not a pile of appendages. Different skull and feeding structures as suited to each body; no repeated mammalian blunt head or lizard face.\nSIX INDEPENDENT ECOLOGICAL INVITATIONS, row-major:\nTOP LEFT: a rare enormous land browser that feeds low, with a new locomotor plan and mass support distinct from a four-legged mammal. Explore a credible THREE-support gait: two substantial paired forward limbs and a single broad muscular rear support, visibly organic and articulated. Low integrated feeding head; no trunk, long giraffe neck, shell or stone material.\nTOP MIDDLE: a giant intertidal soft-bodied vegetation eater whose broad body spreads its weight through TWO parallel muscular ventral foot surfaces. No external legs, heavy shell or familiar slug head. Show how an anterior feeding region and body waves carry it over wet ground. Tactile warm skin and short directional surface fibres may meet in an unexpected way.\nTOP RIGHT: invent freely a rare immense LAND animal following seasonal food across broken uplands. Solve a different whole-body architecture from the first two, with a convincing walking action. Avoid a horizontal barrel on elephant legs, a long-necked quadruped or a giant kangaroo. Choose its feeding head, support anatomy and covering freely.\nBOTTOM LEFT: invent freely a massive open-water animal with an unfamiliar VERTICAL or oblique swimming posture, rather than a horizontal whale/shark silhouette. Clear propulsion, control and feeding region. Use the water's support intelligently. No long decorative tentacle forest, no normal jellyfish enlarged, no giant manta ray.\nBOTTOM MIDDLE: invent freely an enormous terrestrial hunter or scavenger moving patiently through dry woodland. Emphasise a surprising connected body plan and usable feeding anatomy, not a giant bear/dog/anteater or reptile. It should have a compelling wild-animal presence without roaring or gore. A different stance and centre of mass from all other cells.\nBOTTOM RIGHT: invent freely a rare giant shelf-edge animal that travels between rocky tidal ground and shallow water. Give it a distinct anatomical solution for both support and swimming, unlike a seal, a crocodile, plated turtle or many-flippered whale. Its living surfaces and movement should be intriguing, not a mechanical vehicle or walking landscape.\nAcross the sheet alternate compact and elongated bodies, height and breadth, skin/fibre/feather/scale treatments and palettes. No repeated shell row, frill, fin, neck, sac or hairy shoulder mantle. Do not fill the sheet with the same animal skeleton under different coverings. Four land/intertidal animals, two predominantly aquatic ones. No flyers in this sheet. All six are massive, several times a human in height or much longer in body; truly enormous animals are rare in the setting, not commonplace megafauna. Small neutral human silhouettes in each cell communicate a consistent size comparison (roughly 1.8m person versus 8–15m-tall land body or 18–30m aquatic length), same ground plane; use silhouette icons only for aquatic comparisons. Do not accidentally make humans ant-sized. Quiet local ground/water fragments, no full landscapes and no borrowed fauna.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+      "review_status": "pending_creator_review",
+      "reference_provenance": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-51372675-fdca-4c93-aa07-e956a0604037.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3620bb5fced0cbdfb650ce50871ef020ae40927434dd2becfafbac519b0981ed",
+      "visual_check": "Six distinct cells. Earlier experimental set retained as optional comparison; follow-up MN2 answers the latest freer-giant instruction.",
+      "generation_status": "complete",
+      "generation_history": [
+        {
+          "stage": "initial lineage",
+          "prompt": "Use case: stylized-concept.\nCreate ONE landscape six-creature exploration lineup for Breachline: EXACTLY SIX radically distinct NEW massive living animals, arranged 3 columns by 2 rows, each fully isolated in its own equal cell with generous pale space. Treat this as six whole-animal inventions, not variants. No existing reference image or previous creature anatomy to copy.\nTHE CORE DIRECTION: the last giant round was too safe and too similar to large Earth mammals with modified faces. Make much more imaginative whole-body plans. Change how mass is distributed, where the feeding end sits, the relation of torso to support structures, how the body turns and how it moves. Each should remain legible as a real organism with a coherent niche, continuous anatomy and plausible support or buoyancy. Explore vertebrate-like and soft-bodied/invertebrate-like constructions without literally enlarging elephants, dinosaurs, giraffes, whales, slugs, crabs, jellyfish or squid. Keep one or two biological organising ideas per animal, not a pile of appendages. Different skull and feeding structures as suited to each body; no repeated mammalian blunt head or lizard face.\nSIX INDEPENDENT ECOLOGICAL INVITATIONS, row-major:\nTOP LEFT: a rare enormous land browser that feeds low, with a new locomotor plan and mass support distinct from a four-legged mammal. Explore a credible THREE-support gait: two substantial paired forward limbs and a single broad muscular rear support, visibly organic and articulated. Low integrated feeding head; no trunk, long giraffe neck, shell or stone material.\nTOP MIDDLE: a giant intertidal soft-bodied vegetation eater whose broad body spreads its weight through TWO parallel muscular ventral foot surfaces. No external legs, heavy shell or familiar slug head. Show how an anterior feeding region and body waves carry it over wet ground. Tactile warm skin and short directional surface fibres may meet in an unexpected way.\nTOP RIGHT: invent freely a rare immense LAND animal following seasonal food across broken uplands. Solve a different whole-body architecture from the first two, with a convincing walking action. Avoid a horizontal barrel on elephant legs, a long-necked quadruped or a giant kangaroo. Choose its feeding head, support anatomy and covering freely.\nBOTTOM LEFT: invent freely a massive open-water animal with an unfamiliar VERTICAL or oblique swimming posture, rather than a horizontal whale/shark silhouette. Clear propulsion, control and feeding region. Use the water's support intelligently. No long decorative tentacle forest, no normal jellyfish enlarged, no giant manta ray.\nBOTTOM MIDDLE: invent freely an enormous terrestrial hunter or scavenger moving patiently through dry woodland. Emphasise a surprising connected body plan and usable feeding anatomy, not a giant bear/dog/anteater or reptile. It should have a compelling wild-animal presence without roaring or gore. A different stance and centre of mass from all other cells.\nBOTTOM RIGHT: invent freely a rare giant shelf-edge animal that travels between rocky tidal ground and shallow water. Give it a distinct anatomical solution for both support and swimming, unlike a seal, a crocodile, plated turtle or many-flippered whale. Its living surfaces and movement should be intriguing, not a mechanical vehicle or walking landscape.\nAcross the sheet alternate compact and elongated bodies, height and breadth, skin/fibre/feather/scale treatments and palettes. No repeated shell row, frill, fin, neck, sac or hairy shoulder mantle. Do not fill the sheet with the same animal skeleton under different coverings. Four land/intertidal animals, two predominantly aquatic ones. No flyers in this sheet. All six are massive, several times a human in height or much longer in body; truly enormous animals are rare in the setting, not commonplace megafauna. Small neutral human silhouettes in each cell communicate a consistent size comparison (roughly 1.8m person versus 8–15m-tall land body or 18–30m aquatic length), same ground plane; use silhouette icons only for aquatic comparisons. Do not accidentally make humans ant-sized. Quiet local ground/water fragments, no full landscapes and no borrowed fauna.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3082dd86-26dc-4eba-8022-d3f9df6a8032.png"
+        },
+        {
+          "stage": "two aquatic body-plan corrections",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3082dd86-26dc-4eba-8022-d3f9df6a8032.png",
+          "prompt": "Use case: precise-object-edit.\nEdit this six-animal lineup. Preserve TOP LEFT, TOP MIDDLE, TOP RIGHT, and BOTTOM MIDDLE absolutely unchanged, including their scale figures and painting. Only change BOTTOM LEFT and BOTTOM RIGHT. Keep layout, warm pale background, all six complete separate animals, 1536x1024. No text.\n\nBOTTOM LEFT — replace the upright shark-like swimmer with a much more unfamiliar massive pelagic animal. Keep its oblique/vertical swimming posture and size comparison, but give it a DEEP, LATERALLY COMPRESSED OVAL body rather than a long fish torso. Its broad bodily mantle occupies most of its silhouette. The small integrated feeding head sits low on the leading edge, not at the top; a compact soft closed mouth, tiny eyes. Propulsion comes from TWO thick continuous muscular swimming keels running down opposite long edges, flexing in a clear travelling wave. No separate fish tail, shark dorsal fin, whale paddles, familiar fish face or many tentacles. A blunt pointed lower body ending, no spines. Distinguish soft buoyant internal volume, taut matte skin, and translucent thin keel edges. Oxblood/slate body and muted amber margins. It is a coherent deep-bodied swimmer, not a bag or machine. One small grey human scale icon off to the side.\n\nBOTTOM RIGHT — replace this horizontal seal/whale silhouette with a giant amphibious rocky-shore crawler built around a low broad triangular torso and THREE substantial radial load-bearing lobes, each ending in a short flexible flattened WEBBED FOOT. The two front supports brace separately, and the single rear support trails behind the central mass. A low blunt feeding head extends a little from the front of the broad torso, with two dark eyes and a CLOSED muscular pair of lips. No circular tooth fringe, no gills or combs around the jaw, no dangling oral tentacles. No long tail, flipper-whale body, shell, decoration or sail. Each support should visibly join the same central body and bend under weight, feet firmly in contact with wet rock; body squat but muscular, not comically fat. Smooth warm grey leather along sides with short pale golden velvety nap on upper dome, darker flexible webbing on feet. This is soft living tissue, not a tripod robot or giant crab. Its body is several humans across and at least three humans tall at back; small neutral human comparison icon.\n\nImportant: do not change TOP LEFT, TOP MIDDLE, TOP RIGHT or BOTTOM MIDDLE. Their current forms are intentional. Preserve their complete silhouettes, faces, coverings, ground, scale and palette exactly. No labels, borders, diagrams, letters or numbers. Retain the original traditional painted style and tactile material transitions.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-51372675-fdca-4c93-aa07-e956a0604037.png",
+          "disposition": "Earlier study; MN2 follows subsequent creator instruction for freer giants."
+        }
+      ],
+      "takes": [
+        {
+          "code": "MN1-1",
+          "title": "Bowshoulder",
+          "size": "Massive · low-feeding land browser",
+          "description": "Bowshoulder carries a high arched torso over two great forelimbs and a broad rear support. Its low feeding head reaches between the supports; the three-support gait is a new biological proposal.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        },
+        {
+          "code": "MN1-2",
+          "title": "Tidefold",
+          "size": "Massive · intertidal vegetation eater",
+          "description": "Tidefold spreads its soft body over paired muscular underside surfaces. A low feeding front and travelling body waves suggest an intertidal grazer; the exact mouth and locomotion remain open.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        },
+        {
+          "code": "MN1-3",
+          "title": "Ridgefeather",
+          "size": "Massive · upland migrant",
+          "description": "Long, angled limbs lift a narrow torso beneath overlapping feather-like coverings. Ridgefeather tests a tall upland browser with an integrated curved feeding head and a different stride from the heavier giants.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        },
+        {
+          "code": "MN1-4",
+          "title": "Deepkeel",
+          "size": "Massive · open-water swimmer",
+          "description": "A deep, laterally compressed body moves obliquely through water on continuous muscular edge keels. The low feeding region and nearly tailless shape propose a swimming architecture unlike the earlier horizontal giants.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        },
+        {
+          "code": "MN1-5",
+          "title": "Hollowstride",
+          "size": "Massive · woodland hunter / scavenger",
+          "description": "Hollowstride's arched body leaves a conspicuous open space beneath the trunk, while long forelimbs brace hooked feeding claws. It proposes a patient woodland predator or scavenger; prey, gait and diet need review.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        },
+        {
+          "code": "MN1-6",
+          "title": "Shorebrace",
+          "size": "Massive · amphibious rocky-shore animal",
+          "description": "Shorebrace distributes its broad body across three muscular supports ending in webbed feet. This tests an amphibious crawler that can brace on wet rock and push through shallows, with its precise feeding role still open.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": true
+        }
+      ],
+      "presentation": "optional earlier pass; MN2 is the primary giant pass",
+      "canonical": false
+    },
+    {
+      "code": "MN2",
+      "title": "Giants · freer exploration",
+      "file": "mn2-freer-giants.png",
+      "kind": "lineup",
+      "description": "A freer massive-animal exploration responding to the creator's Scavengers Reign and Kenshi reference point. Individual small-creature preferences do not constrain these new body plans.",
+      "prompt": "Use case: stylized-concept.\nMake a bold fantasy wildlife concept sheet: SIX wholly original ENORMOUS ANIMALS, 3 columns by 2 rows on a pale warm neutral background, each completely visible and clearly separated. Landscape 1536x1024. This is an open giant-creature exploration, not a set of edits and not six variants of one skeleton.\n\nCreative direction: invent monumental, unfamiliar wildlife that makes a person stop and reassess the landscape. Strange weight, startling proportion, memorable silhouettes, and the sense that these beings have ordinary lives on their own terms. Some may feel serene, some gawky or unsettling, some quietly dangerous. Give them animal presence and physical character. Biology should have an internal logic, but it need not remain close to known Earth anatomy. Start with the GIANT'S whole design and movement, not with a small familiar creature scaled up. Each animal should be worthy of a scene even without a name or explanation.\n\nYou have genuine freedom over skeleton, number and placement of limbs, head and feeding structures, posture, surface and life strategy. Do not import a fixed fur/feather/scale recipe, a compulsory face family, an exact limb count, or small-animal design constraints. A very strange overall proportion or distribution of mass can be the central appeal. A head may be tiny, substantial, deeply integrated or positioned in an unexpected but usable place. Do not default to a barrel torso on four elephant legs. Do not make all six beaked, long-necked, plated, hairy-shouldered or soft blobs. Anatomy must connect, weight must have support and appendages should have a reason.\n\nSpread the six across very different silhouettes and ways of moving: at least three land giants, with the remaining possibilities free to explore water, shoreline, air or another credible setting role. At most one airborne animal. In the land group allow a startling tall shape, a colossal low or broad shape, and another genuinely different construction; interpret freely. Herbivores, predators, scavengers or unusual ecological relationships are all welcome, without illustrating a list of chores. Create diverse skin and living covering where it serves each individual design. Do not copy a creature from any existing game, film or series.\n\nScale should be emphatically massive: bodies comparable to large buildings, with believable mass, support or buoyancy. Include one tiny plain human silhouette near each creature, sharing the same ground plane or clearly serving as a comparison icon, roughly one-tenth the height of a towering land form or one-twentieth the length of a low/swimming form. Keep silhouette size consistent within each animal's space. Leave generous margins and do not crop any animal. Each cell has only a little ground, water or atmospheric contact to explain how it moves; no scenic story backgrounds, cities, riders or equipment.\n\nPaint in the established Breachline traditional oil/acrylic fantasy language: tactile matte surfaces, measured expressive brushwork, strong colour masses, varied edge precision and selective detail. Purposeful different palette per creature with enough unity for one sheet. Visually compelling, not a photo, 3D render, plastic toy, anime or cartoon mascot. No text, labels, numbers, arrows, borders, signatures or watermarks.",
+      "review_status": "pending_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-1ca0cb2c-136a-4f9b-85b3-94635ca0937d.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206",
+      "generation_status": "complete",
+      "canonical": false,
+      "takes": [
+        {
+          "code": "MN2-1",
+          "title": "Fanback",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A very thin high body bridges long jointed legs beneath a row of translucent fans. This is an edge experiment in enormous scale; the back growths and hanging strands are exploratory, not established symbioses.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN2-2",
+          "title": "Redcap",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A broad low shelled animal carries fungus-like structures on its back. This is an unselected edge experiment, not a restoration of Coilneck’s removed fungus or an accepted walking habitat.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN2-3",
+          "title": "Ridgejaw",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "An upright armoured giant carries a large toothed head and heavy forelimbs. This pass explores monster-like presence more than an ordinary ecological role; it remains unselected.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN2-4",
+          "title": "Longfin",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A long aquatic giant has broad lateral paddles and an open filtering mouth. Its relationship to existing swimmers and its feeding mechanism remain proposals.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN2-5",
+          "title": "Veilwing",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A huge winged animal uses broad translucent sails and a slender trailing body. This is an airborne edge experiment; its flight mechanism, diet and relation to other aerial animals are open.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN2-6",
+          "title": "Glassback",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A high-legged wader supports a translucent dorsal volume above its body. The volume’s function and the attached structures are deliberately unresolved; this is not accepted biology.",
+          "size": "Massive · exploratory",
+          "retained": true
+        }
+      ],
+      "visual_check": "Six complete experimental silhouettes; ornamental/body associations remain edge proposals. Selected only for assistant-curated MG6 presentation, not creator acceptance."
+    },
+    {
+      "code": "MN3",
+      "title": "Immense ordinary lives",
+      "file": "mn3-immense-lives.png",
+      "kind": "lineup",
+      "description": "The current massive-animal pass follows the creator's wider Scavengers Reign / Kenshi inspiration. Extreme proportions and unusual body structures carry the designs; ecology is described provisionally after seeing the artwork.",
+      "prompt": "Use case: stylized-concept.\nAn accomplished speculative-wildlife concept artist invents SIX original enormous animals for a high-fantasy world. Imagine the uncanny monumental wildlife presence of Kenshi, without reproducing any of its species or designs. These are animals going about their lives, strange and potentially dangerous, with readable connected anatomy.\n\nThe creator specifically wants freedom from preferences established for the smaller animals. Let scale produce much stranger proportions, locomotion and body plans. Keep the designs simple and confident at silhouette level, with bold distributions of mass. A small feeding head beneath a huge suspended trunk, an extreme springing stride, a wide low moving mass, or another surprising arrangement may be useful starting points; invent freely, and don't repeat these examples as a formula. Give each of the six a radically different silhouette. We should not immediately identify a familiar Earth species in every cell. Use whatever skin, hair, scales, feathers or other living surfaces belong to each animal. The important invention is the whole organism.\n\nAim for weathered, tactile, biological presence and a little quiet unease. An animal can be awkward, graceful, soft, ponderous, severe or almost absurd in proportion and still feel convincing. Keep feeding structures integrated and supports visibly attached. Four or five should be land animals; the remaining one or two may be aquatic or amphibious. No requirement for a face type, exact limb count, coat texture, symmetry template or ecological job shared with earlier creatures. Convey their movement rather than a static bestiary pose. Avoid a repeated elephant-body foundation.\n\nDo not fill empty design space with ornament. These are not boss monsters, dragons, kaiju villains, fairy creatures, walking gardens or creatures wearing decoration. Keep surfaces relatively quiet so the strange bodies themselves have presence. No buildings, trees or mushrooms growing from backs; no ornamental spikes, oversized fantasy horns or gemstone globes. A striking anatomical structure is welcome when it visibly belongs to the living body. Do not copy characters from existing fiction.\n\nPresentation: a landscape 1536 x 1024 exploration sheet, THREE columns by TWO rows, exactly one complete animal per equal cell. Generous clean margins and space between cells, no touching silhouettes. Neutral pale warm grey background, sparse ground or water contact. Tiny simple human silhouettes in every cell communicate huge scale, about one tenth a tall creature's height or one twentieth a low animal's length, consistently on the same ground plane. The giants are comparable in presence to large buildings. No riders or encounters.\n\nTraditional oil/acrylic fantasy painting with broad, measured visible brushwork, strong colour masses, restrained smaller detail and matte natural surfaces. Vary quiet earth colours with occasional restrained living colour; avoid uniform brown or rainbow glamour. Not photoreal, 3D, plastic, anime or a cartoon mascot. No words, letters, numbers, captions, borders, diagrams, arrows or watermark.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-89e1af57-b331-46a0-867b-c8f41e322217.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "10804ec1b797c8bf738b6a97318e63e4e187318ee828b482ec03c1232cdd69f6",
+      "generation_status": "complete",
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "takes": [
+        {
+          "code": "MN3-1",
+          "title": "Longreach",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "Longreach suspends a broad, uneven body above very tall narrow limbs while its small feeding head hangs close to the ground. The extreme vertical separation of body and feeding end is the central proposal.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN3-2",
+          "title": "Vaultleaper",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "Vaultleaper uses an unusually long springing stride beneath a compact raised feeding head. This explores the momentum and threat of a massive runner; its feeding role remains open.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN3-3",
+          "title": "Lowmantle",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.6666666666666666,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A low many-legged giant spreads its bulk under a broad mantle. Its underside feeding structures and slow ground movement are provisional.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN3-4",
+          "title": "Hookneck",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "Hookneck balances a high curving feeding neck over a lower body and broad feet. The head’s opening and its ecological purpose remain exploratory.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN3-5",
+          "title": "Riftjaw",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.295,
+            0.47,
+            0.35,
+            0.53
+          ],
+          "description": "Riftjaw distributes a tall, open feeding trunk across widely planted supports. This is a stronger body-plan experiment with uncertain feeding and locomotion, not a settled animal.",
+          "size": "Massive · exploratory",
+          "retained": true
+        },
+        {
+          "code": "MN3-6",
+          "title": "Greyfall",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.6666666666666666,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A very broad aquatic body rises into an enormous fringed feeding opening. Its filtering mechanism and scale remain proposals; it is an unselected experiment.",
+          "size": "Massive · exploratory",
+          "retained": true
+        }
+      ],
+      "visual_check": "Six complete loose painted body-plan studies. MG1/MG3/MG5 curated for extreme proportion and movement; feeding structures and biology remain unapproved."
+    }
+  ],
+  "review_policy": "All newly generated revisions and proposals pending creator review. No new accepted anatomy or biology assumed.",
+  "scope": "Primary review: three targeted edits, one new large animal and six curated massive directions. Eighteen giant studies across three sheets remain available for comparison; the six curated views are not additional species.",
+  "latest_steering": "Do not overfocus on notes about smaller creatures when designing bigger creatures; Scavengers Reign and Kenshi giants are current reference points.",
+  "inspiration_research": [
+    {
+      "url": "https://lofigames.com/november-progress/",
+      "note": "Primary developer example of strikingly hybrid and immense wildlife; no images supplied to generator."
+    },
+    {
+      "url": "https://www.cartoonbrew.com/streaming/scavengers-reign-team-talks-through-the-worldbuilding-process-for-their-sci-fi-thriller-series-exclusive-233879.html",
+      "note": "Creator interview on habitats and ecological processes. Informs direction, not copied designs."
+    }
+  ],
+  "primary_review": [
+    {
+      "id": "giants",
+      "title": "Giants · six distinct directions",
+      "intro": "A curated spread from three explorations: extreme height, soft bulk, springing motion, vertical swimming and more unfamiliar feeding structures. These are proposals for your review. MG6 intentionally tests a further edge.",
+      "cards": [
+        {
+          "code": "MG1",
+          "title": "Longreach",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "Longreach suspends a broad, uneven body above very tall narrow limbs while its small feeding head hangs close to the ground. The extreme vertical separation of body and feeding end is the central proposal.",
+          "size": "Massive · new proposal",
+          "retained": false,
+          "sourceCode": "MN3-1",
+          "prompt": "Use case: stylized-concept.\nAn accomplished speculative-wildlife concept artist invents SIX original enormous animals for a high-fantasy world. Imagine the uncanny monumental wildlife presence of Kenshi, without reproducing any of its species or designs. These are animals going about their lives, strange and potentially dangerous, with readable connected anatomy.\n\nThe creator specifically wants freedom from preferences established for the smaller animals. Let scale produce much stranger proportions, locomotion and body plans. Keep the designs simple and confident at silhouette level, with bold distributions of mass. A small feeding head beneath a huge suspended trunk, an extreme springing stride, a wide low moving mass, or another surprising arrangement may be useful starting points; invent freely, and don't repeat these examples as a formula. Give each of the six a radically different silhouette. We should not immediately identify a familiar Earth species in every cell. Use whatever skin, hair, scales, feathers or other living surfaces belong to each animal. The important invention is the whole organism.\n\nAim for weathered, tactile, biological presence and a little quiet unease. An animal can be awkward, graceful, soft, ponderous, severe or almost absurd in proportion and still feel convincing. Keep feeding structures integrated and supports visibly attached. Four or five should be land animals; the remaining one or two may be aquatic or amphibious. No requirement for a face type, exact limb count, coat texture, symmetry template or ecological job shared with earlier creatures. Convey their movement rather than a static bestiary pose. Avoid a repeated elephant-body foundation.\n\nDo not fill empty design space with ornament. These are not boss monsters, dragons, kaiju villains, fairy creatures, walking gardens or creatures wearing decoration. Keep surfaces relatively quiet so the strange bodies themselves have presence. No buildings, trees or mushrooms growing from backs; no ornamental spikes, oversized fantasy horns or gemstone globes. A striking anatomical structure is welcome when it visibly belongs to the living body. Do not copy characters from existing fiction.\n\nPresentation: a landscape 1536 x 1024 exploration sheet, THREE columns by TWO rows, exactly one complete animal per equal cell. Generous clean margins and space between cells, no touching silhouettes. Neutral pale warm grey background, sparse ground or water contact. Tiny simple human silhouettes in every cell communicate huge scale, about one tenth a tall creature's height or one twentieth a low animal's length, consistently on the same ground plane. The giants are comparable in presence to large buildings. No riders or encounters.\n\nTraditional oil/acrylic fantasy painting with broad, measured visible brushwork, strong colour masses, restrained smaller detail and matte natural surfaces. Vary quiet earth colours with occasional restrained living colour; avoid uniform brown or rainbow glamour. Not photoreal, 3D, plastic, anime or a cartoon mascot. No words, letters, numbers, captions, borders, diagrams, arrows or watermark."
+        },
+        {
+          "code": "MG2",
+          "title": "Tidefold",
+          "size": "Massive · new proposal",
+          "description": "Tidefold spreads its soft body over paired muscular underside surfaces. A low feeding front and travelling body waves suggest an intertidal grazer; the exact mouth and locomotion remain open.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0.315,
+            0,
+            0.36,
+            0.5
+          ],
+          "retained": false,
+          "sourceCode": "MN1-2",
+          "prompt": "Use case: stylized-concept.\nCreate ONE landscape six-creature exploration lineup for Breachline: EXACTLY SIX radically distinct NEW massive living animals, arranged 3 columns by 2 rows, each fully isolated in its own equal cell with generous pale space. Treat this as six whole-animal inventions, not variants. No existing reference image or previous creature anatomy to copy.\nTHE CORE DIRECTION: the last giant round was too safe and too similar to large Earth mammals with modified faces. Make much more imaginative whole-body plans. Change how mass is distributed, where the feeding end sits, the relation of torso to support structures, how the body turns and how it moves. Each should remain legible as a real organism with a coherent niche, continuous anatomy and plausible support or buoyancy. Explore vertebrate-like and soft-bodied/invertebrate-like constructions without literally enlarging elephants, dinosaurs, giraffes, whales, slugs, crabs, jellyfish or squid. Keep one or two biological organising ideas per animal, not a pile of appendages. Different skull and feeding structures as suited to each body; no repeated mammalian blunt head or lizard face.\nSIX INDEPENDENT ECOLOGICAL INVITATIONS, row-major:\nTOP LEFT: a rare enormous land browser that feeds low, with a new locomotor plan and mass support distinct from a four-legged mammal. Explore a credible THREE-support gait: two substantial paired forward limbs and a single broad muscular rear support, visibly organic and articulated. Low integrated feeding head; no trunk, long giraffe neck, shell or stone material.\nTOP MIDDLE: a giant intertidal soft-bodied vegetation eater whose broad body spreads its weight through TWO parallel muscular ventral foot surfaces. No external legs, heavy shell or familiar slug head. Show how an anterior feeding region and body waves carry it over wet ground. Tactile warm skin and short directional surface fibres may meet in an unexpected way.\nTOP RIGHT: invent freely a rare immense LAND animal following seasonal food across broken uplands. Solve a different whole-body architecture from the first two, with a convincing walking action. Avoid a horizontal barrel on elephant legs, a long-necked quadruped or a giant kangaroo. Choose its feeding head, support anatomy and covering freely.\nBOTTOM LEFT: invent freely a massive open-water animal with an unfamiliar VERTICAL or oblique swimming posture, rather than a horizontal whale/shark silhouette. Clear propulsion, control and feeding region. Use the water's support intelligently. No long decorative tentacle forest, no normal jellyfish enlarged, no giant manta ray.\nBOTTOM MIDDLE: invent freely an enormous terrestrial hunter or scavenger moving patiently through dry woodland. Emphasise a surprising connected body plan and usable feeding anatomy, not a giant bear/dog/anteater or reptile. It should have a compelling wild-animal presence without roaring or gore. A different stance and centre of mass from all other cells.\nBOTTOM RIGHT: invent freely a rare giant shelf-edge animal that travels between rocky tidal ground and shallow water. Give it a distinct anatomical solution for both support and swimming, unlike a seal, a crocodile, plated turtle or many-flippered whale. Its living surfaces and movement should be intriguing, not a mechanical vehicle or walking landscape.\nAcross the sheet alternate compact and elongated bodies, height and breadth, skin/fibre/feather/scale treatments and palettes. No repeated shell row, frill, fin, neck, sac or hairy shoulder mantle. Do not fill the sheet with the same animal skeleton under different coverings. Four land/intertidal animals, two predominantly aquatic ones. No flyers in this sheet. All six are massive, several times a human in height or much longer in body; truly enormous animals are rare in the setting, not commonplace megafauna. Small neutral human silhouettes in each cell communicate a consistent size comparison (roughly 1.8m person versus 8–15m-tall land body or 18–30m aquatic length), same ground plane; use silhouette icons only for aquatic comparisons. Do not accidentally make humans ant-sized. Quiet local ground/water fragments, no full landscapes and no borrowed fauna.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.\n\nTargeted refinement request:\nUse case: precise-object-edit.\nEdit this six-animal lineup. Preserve TOP LEFT, TOP MIDDLE, TOP RIGHT, and BOTTOM MIDDLE absolutely unchanged, including their scale figures and painting. Only change BOTTOM LEFT and BOTTOM RIGHT. Keep layout, warm pale background, all six complete separate animals, 1536x1024. No text.\n\nBOTTOM LEFT — replace the upright shark-like swimmer with a much more unfamiliar massive pelagic animal. Keep its oblique/vertical swimming posture and size comparison, but give it a DEEP, LATERALLY COMPRESSED OVAL body rather than a long fish torso. Its broad bodily mantle occupies most of its silhouette. The small integrated feeding head sits low on the leading edge, not at the top; a compact soft closed mouth, tiny eyes. Propulsion comes from TWO thick continuous muscular swimming keels running down opposite long edges, flexing in a clear travelling wave. No separate fish tail, shark dorsal fin, whale paddles, familiar fish face or many tentacles. A blunt pointed lower body ending, no spines. Distinguish soft buoyant internal volume, taut matte skin, and translucent thin keel edges. Oxblood/slate body and muted amber margins. It is a coherent deep-bodied swimmer, not a bag or machine. One small grey human scale icon off to the side.\n\nBOTTOM RIGHT — replace this horizontal seal/whale silhouette with a giant amphibious rocky-shore crawler built around a low broad triangular torso and THREE substantial radial load-bearing lobes, each ending in a short flexible flattened WEBBED FOOT. The two front supports brace separately, and the single rear support trails behind the central mass. A low blunt feeding head extends a little from the front of the broad torso, with two dark eyes and a CLOSED muscular pair of lips. No circular tooth fringe, no gills or combs around the jaw, no dangling oral tentacles. No long tail, flipper-whale body, shell, decoration or sail. Each support should visibly join the same central body and bend under weight, feet firmly in contact with wet rock; body squat but muscular, not comically fat. Smooth warm grey leather along sides with short pale golden velvety nap on upper dome, darker flexible webbing on feet. This is soft living tissue, not a tripod robot or giant crab. Its body is several humans across and at least three humans tall at back; small neutral human comparison icon.\n\nImportant: do not change TOP LEFT, TOP MIDDLE, TOP RIGHT or BOTTOM MIDDLE. Their current forms are intentional. Preserve their complete silhouettes, faces, coverings, ground, scale and palette exactly. No labels, borders, diagrams, letters or numbers. Retain the original traditional painted style and tactile material transitions."
+        },
+        {
+          "code": "MG3",
+          "title": "Vaultleaper",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.3333333333333333,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "Vaultleaper uses an unusually long springing stride beneath a compact raised feeding head. This explores the momentum and threat of a massive runner; its feeding role remains open.",
+          "size": "Massive · new proposal",
+          "retained": false,
+          "sourceCode": "MN3-2",
+          "prompt": "Use case: stylized-concept.\nAn accomplished speculative-wildlife concept artist invents SIX original enormous animals for a high-fantasy world. Imagine the uncanny monumental wildlife presence of Kenshi, without reproducing any of its species or designs. These are animals going about their lives, strange and potentially dangerous, with readable connected anatomy.\n\nThe creator specifically wants freedom from preferences established for the smaller animals. Let scale produce much stranger proportions, locomotion and body plans. Keep the designs simple and confident at silhouette level, with bold distributions of mass. A small feeding head beneath a huge suspended trunk, an extreme springing stride, a wide low moving mass, or another surprising arrangement may be useful starting points; invent freely, and don't repeat these examples as a formula. Give each of the six a radically different silhouette. We should not immediately identify a familiar Earth species in every cell. Use whatever skin, hair, scales, feathers or other living surfaces belong to each animal. The important invention is the whole organism.\n\nAim for weathered, tactile, biological presence and a little quiet unease. An animal can be awkward, graceful, soft, ponderous, severe or almost absurd in proportion and still feel convincing. Keep feeding structures integrated and supports visibly attached. Four or five should be land animals; the remaining one or two may be aquatic or amphibious. No requirement for a face type, exact limb count, coat texture, symmetry template or ecological job shared with earlier creatures. Convey their movement rather than a static bestiary pose. Avoid a repeated elephant-body foundation.\n\nDo not fill empty design space with ornament. These are not boss monsters, dragons, kaiju villains, fairy creatures, walking gardens or creatures wearing decoration. Keep surfaces relatively quiet so the strange bodies themselves have presence. No buildings, trees or mushrooms growing from backs; no ornamental spikes, oversized fantasy horns or gemstone globes. A striking anatomical structure is welcome when it visibly belongs to the living body. Do not copy characters from existing fiction.\n\nPresentation: a landscape 1536 x 1024 exploration sheet, THREE columns by TWO rows, exactly one complete animal per equal cell. Generous clean margins and space between cells, no touching silhouettes. Neutral pale warm grey background, sparse ground or water contact. Tiny simple human silhouettes in every cell communicate huge scale, about one tenth a tall creature's height or one twentieth a low animal's length, consistently on the same ground plane. The giants are comparable in presence to large buildings. No riders or encounters.\n\nTraditional oil/acrylic fantasy painting with broad, measured visible brushwork, strong colour masses, restrained smaller detail and matte natural surfaces. Vary quiet earth colours with occasional restrained living colour; avoid uniform brown or rainbow glamour. Not photoreal, 3D, plastic, anime or a cartoon mascot. No words, letters, numbers, captions, borders, diagrams, arrows or watermark."
+        },
+        {
+          "code": "MG4",
+          "title": "Deepkeel",
+          "size": "Massive · new proposal",
+          "description": "A deep, laterally compressed body moves obliquely through water on continuous muscular edge keels. The low feeding region and nearly tailless shape propose a swimming architecture unlike the earlier horizontal giants.",
+          "file": "mn1-massive.png",
+          "rect": [
+            0,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "retained": false,
+          "sourceCode": "MN1-4",
+          "prompt": "Use case: stylized-concept.\nCreate ONE landscape six-creature exploration lineup for Breachline: EXACTLY SIX radically distinct NEW massive living animals, arranged 3 columns by 2 rows, each fully isolated in its own equal cell with generous pale space. Treat this as six whole-animal inventions, not variants. No existing reference image or previous creature anatomy to copy.\nTHE CORE DIRECTION: the last giant round was too safe and too similar to large Earth mammals with modified faces. Make much more imaginative whole-body plans. Change how mass is distributed, where the feeding end sits, the relation of torso to support structures, how the body turns and how it moves. Each should remain legible as a real organism with a coherent niche, continuous anatomy and plausible support or buoyancy. Explore vertebrate-like and soft-bodied/invertebrate-like constructions without literally enlarging elephants, dinosaurs, giraffes, whales, slugs, crabs, jellyfish or squid. Keep one or two biological organising ideas per animal, not a pile of appendages. Different skull and feeding structures as suited to each body; no repeated mammalian blunt head or lizard face.\nSIX INDEPENDENT ECOLOGICAL INVITATIONS, row-major:\nTOP LEFT: a rare enormous land browser that feeds low, with a new locomotor plan and mass support distinct from a four-legged mammal. Explore a credible THREE-support gait: two substantial paired forward limbs and a single broad muscular rear support, visibly organic and articulated. Low integrated feeding head; no trunk, long giraffe neck, shell or stone material.\nTOP MIDDLE: a giant intertidal soft-bodied vegetation eater whose broad body spreads its weight through TWO parallel muscular ventral foot surfaces. No external legs, heavy shell or familiar slug head. Show how an anterior feeding region and body waves carry it over wet ground. Tactile warm skin and short directional surface fibres may meet in an unexpected way.\nTOP RIGHT: invent freely a rare immense LAND animal following seasonal food across broken uplands. Solve a different whole-body architecture from the first two, with a convincing walking action. Avoid a horizontal barrel on elephant legs, a long-necked quadruped or a giant kangaroo. Choose its feeding head, support anatomy and covering freely.\nBOTTOM LEFT: invent freely a massive open-water animal with an unfamiliar VERTICAL or oblique swimming posture, rather than a horizontal whale/shark silhouette. Clear propulsion, control and feeding region. Use the water's support intelligently. No long decorative tentacle forest, no normal jellyfish enlarged, no giant manta ray.\nBOTTOM MIDDLE: invent freely an enormous terrestrial hunter or scavenger moving patiently through dry woodland. Emphasise a surprising connected body plan and usable feeding anatomy, not a giant bear/dog/anteater or reptile. It should have a compelling wild-animal presence without roaring or gore. A different stance and centre of mass from all other cells.\nBOTTOM RIGHT: invent freely a rare giant shelf-edge animal that travels between rocky tidal ground and shallow water. Give it a distinct anatomical solution for both support and swimming, unlike a seal, a crocodile, plated turtle or many-flippered whale. Its living surfaces and movement should be intriguing, not a mechanical vehicle or walking landscape.\nAcross the sheet alternate compact and elongated bodies, height and breadth, skin/fibre/feather/scale treatments and palettes. No repeated shell row, frill, fin, neck, sac or hairy shoulder mantle. Do not fill the sheet with the same animal skeleton under different coverings. Four land/intertidal animals, two predominantly aquatic ones. No flyers in this sheet. All six are massive, several times a human in height or much longer in body; truly enormous animals are rare in the setting, not commonplace megafauna. Small neutral human silhouettes in each cell communicate a consistent size comparison (roughly 1.8m person versus 8–15m-tall land body or 18–30m aquatic length), same ground plane; use silhouette icons only for aquatic comparisons. Do not accidentally make humans ant-sized. Quiet local ground/water fragments, no full landscapes and no borrowed fauna.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales.\n\nTargeted refinement request:\nUse case: precise-object-edit.\nEdit this six-animal lineup. Preserve TOP LEFT, TOP MIDDLE, TOP RIGHT, and BOTTOM MIDDLE absolutely unchanged, including their scale figures and painting. Only change BOTTOM LEFT and BOTTOM RIGHT. Keep layout, warm pale background, all six complete separate animals, 1536x1024. No text.\n\nBOTTOM LEFT — replace the upright shark-like swimmer with a much more unfamiliar massive pelagic animal. Keep its oblique/vertical swimming posture and size comparison, but give it a DEEP, LATERALLY COMPRESSED OVAL body rather than a long fish torso. Its broad bodily mantle occupies most of its silhouette. The small integrated feeding head sits low on the leading edge, not at the top; a compact soft closed mouth, tiny eyes. Propulsion comes from TWO thick continuous muscular swimming keels running down opposite long edges, flexing in a clear travelling wave. No separate fish tail, shark dorsal fin, whale paddles, familiar fish face or many tentacles. A blunt pointed lower body ending, no spines. Distinguish soft buoyant internal volume, taut matte skin, and translucent thin keel edges. Oxblood/slate body and muted amber margins. It is a coherent deep-bodied swimmer, not a bag or machine. One small grey human scale icon off to the side.\n\nBOTTOM RIGHT — replace this horizontal seal/whale silhouette with a giant amphibious rocky-shore crawler built around a low broad triangular torso and THREE substantial radial load-bearing lobes, each ending in a short flexible flattened WEBBED FOOT. The two front supports brace separately, and the single rear support trails behind the central mass. A low blunt feeding head extends a little from the front of the broad torso, with two dark eyes and a CLOSED muscular pair of lips. No circular tooth fringe, no gills or combs around the jaw, no dangling oral tentacles. No long tail, flipper-whale body, shell, decoration or sail. Each support should visibly join the same central body and bend under weight, feet firmly in contact with wet rock; body squat but muscular, not comically fat. Smooth warm grey leather along sides with short pale golden velvety nap on upper dome, darker flexible webbing on feet. This is soft living tissue, not a tripod robot or giant crab. Its body is several humans across and at least three humans tall at back; small neutral human comparison icon.\n\nImportant: do not change TOP LEFT, TOP MIDDLE, TOP RIGHT or BOTTOM MIDDLE. Their current forms are intentional. Preserve their complete silhouettes, faces, coverings, ground, scale and palette exactly. No labels, borders, diagrams, letters or numbers. Retain the original traditional painted style and tactile material transitions."
+        },
+        {
+          "code": "MG5",
+          "title": "Riftjaw",
+          "file": "mn3-immense-lives.png",
+          "rect": [
+            0.295,
+            0.47,
+            0.35,
+            0.53
+          ],
+          "description": "Riftjaw distributes a tall, open feeding trunk across widely planted supports. This is a stronger body-plan experiment with uncertain feeding and locomotion, not a settled animal.",
+          "size": "Massive · new proposal",
+          "retained": false,
+          "sourceCode": "MN3-5",
+          "prompt": "Use case: stylized-concept.\nAn accomplished speculative-wildlife concept artist invents SIX original enormous animals for a high-fantasy world. Imagine the uncanny monumental wildlife presence of Kenshi, without reproducing any of its species or designs. These are animals going about their lives, strange and potentially dangerous, with readable connected anatomy.\n\nThe creator specifically wants freedom from preferences established for the smaller animals. Let scale produce much stranger proportions, locomotion and body plans. Keep the designs simple and confident at silhouette level, with bold distributions of mass. A small feeding head beneath a huge suspended trunk, an extreme springing stride, a wide low moving mass, or another surprising arrangement may be useful starting points; invent freely, and don't repeat these examples as a formula. Give each of the six a radically different silhouette. We should not immediately identify a familiar Earth species in every cell. Use whatever skin, hair, scales, feathers or other living surfaces belong to each animal. The important invention is the whole organism.\n\nAim for weathered, tactile, biological presence and a little quiet unease. An animal can be awkward, graceful, soft, ponderous, severe or almost absurd in proportion and still feel convincing. Keep feeding structures integrated and supports visibly attached. Four or five should be land animals; the remaining one or two may be aquatic or amphibious. No requirement for a face type, exact limb count, coat texture, symmetry template or ecological job shared with earlier creatures. Convey their movement rather than a static bestiary pose. Avoid a repeated elephant-body foundation.\n\nDo not fill empty design space with ornament. These are not boss monsters, dragons, kaiju villains, fairy creatures, walking gardens or creatures wearing decoration. Keep surfaces relatively quiet so the strange bodies themselves have presence. No buildings, trees or mushrooms growing from backs; no ornamental spikes, oversized fantasy horns or gemstone globes. A striking anatomical structure is welcome when it visibly belongs to the living body. Do not copy characters from existing fiction.\n\nPresentation: a landscape 1536 x 1024 exploration sheet, THREE columns by TWO rows, exactly one complete animal per equal cell. Generous clean margins and space between cells, no touching silhouettes. Neutral pale warm grey background, sparse ground or water contact. Tiny simple human silhouettes in every cell communicate huge scale, about one tenth a tall creature's height or one twentieth a low animal's length, consistently on the same ground plane. The giants are comparable in presence to large buildings. No riders or encounters.\n\nTraditional oil/acrylic fantasy painting with broad, measured visible brushwork, strong colour masses, restrained smaller detail and matte natural surfaces. Vary quiet earth colours with occasional restrained living colour; avoid uniform brown or rainbow glamour. Not photoreal, 3D, plastic, anime or a cartoon mascot. No words, letters, numbers, captions, borders, diagrams, arrows or watermark."
+        },
+        {
+          "code": "MG6",
+          "title": "Fanback",
+          "file": "mn2-freer-giants.png",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "description": "A very thin high body bridges long jointed legs beneath a row of translucent fans. This is an edge experiment in enormous scale; the back growths and hanging strands are exploratory, not established symbioses.",
+          "size": "Massive · edge experiment",
+          "retained": false,
+          "sourceCode": "MN2-1",
+          "prompt": "Use case: stylized-concept.\nMake a bold fantasy wildlife concept sheet: SIX wholly original ENORMOUS ANIMALS, 3 columns by 2 rows on a pale warm neutral background, each completely visible and clearly separated. Landscape 1536x1024. This is an open giant-creature exploration, not a set of edits and not six variants of one skeleton.\n\nCreative direction: invent monumental, unfamiliar wildlife that makes a person stop and reassess the landscape. Strange weight, startling proportion, memorable silhouettes, and the sense that these beings have ordinary lives on their own terms. Some may feel serene, some gawky or unsettling, some quietly dangerous. Give them animal presence and physical character. Biology should have an internal logic, but it need not remain close to known Earth anatomy. Start with the GIANT'S whole design and movement, not with a small familiar creature scaled up. Each animal should be worthy of a scene even without a name or explanation.\n\nYou have genuine freedom over skeleton, number and placement of limbs, head and feeding structures, posture, surface and life strategy. Do not import a fixed fur/feather/scale recipe, a compulsory face family, an exact limb count, or small-animal design constraints. A very strange overall proportion or distribution of mass can be the central appeal. A head may be tiny, substantial, deeply integrated or positioned in an unexpected but usable place. Do not default to a barrel torso on four elephant legs. Do not make all six beaked, long-necked, plated, hairy-shouldered or soft blobs. Anatomy must connect, weight must have support and appendages should have a reason.\n\nSpread the six across very different silhouettes and ways of moving: at least three land giants, with the remaining possibilities free to explore water, shoreline, air or another credible setting role. At most one airborne animal. In the land group allow a startling tall shape, a colossal low or broad shape, and another genuinely different construction; interpret freely. Herbivores, predators, scavengers or unusual ecological relationships are all welcome, without illustrating a list of chores. Create diverse skin and living covering where it serves each individual design. Do not copy a creature from any existing game, film or series.\n\nScale should be emphatically massive: bodies comparable to large buildings, with believable mass, support or buoyancy. Include one tiny plain human silhouette near each creature, sharing the same ground plane or clearly serving as a comparison icon, roughly one-tenth the height of a towering land form or one-twentieth the length of a low/swimming form. Keep silhouette size consistent within each animal's space. Leave generous margins and do not crop any animal. Each cell has only a little ground, water or atmospheric contact to explain how it moves; no scenic story backgrounds, cities, riders or equipment.\n\nPaint in the established Breachline traditional oil/acrylic fantasy language: tactile matte surfaces, measured expressive brushwork, strong colour masses, varied edge precision and selective detail. Purposeful different palette per creature with enough unity for one sheet. Visually compelling, not a photo, 3D render, plastic toy, anime or cartoon mascot. No text, labels, numbers, arrows, borders, signatures or watermarks."
+        }
+      ]
+    },
+    {
+      "id": "large",
+      "title": "Large · two edits and one new animal",
+      "intro": "Cragwool gets a restrained muzzle change; Reedstrider’s ridge fibres spread across its body. LN1 is the one additional large-animal proposal.",
+      "cards": [
+        {
+          "code": "FR1",
+          "title": "Cragwool · sharper muzzle",
+          "file": "fr1-cragwool.png",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "description": "The chosen Cragwool keeps its ivory coat, dark limb plates and heavy forward stance. The face becomes slightly more predatory through a modestly longer muzzle; diet is still open.",
+          "size": "Refining G1-1",
+          "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP LEFT animal (Cragwool) from this six-animal sheet. The other five animals are irrelevant and must not appear or inform this edit.\nCreate a dedicated single-animal reference plate, retaining the selected animal's exact identity, body proportions, four legs, bowed shoulders, cream pointed wool locks, charcoal scales on forelimbs and hindquarters, short tail, climbing step and rock contact. Reproduce the chosen pose as faithfully as possible, larger on the new canvas.\nONLY ANATOMICAL CHANGE: make its face a little more predatory, less stub-nosed. Lengthen the muzzle modestly, around 15–20 percent; give the closed jaw a slightly firmer cutting profile and subtly more focused eyes. Keep a calm wild-animal expression, small ears, existing cranial proportions and muted colours. No snarling, giant teeth, saber fangs, new horns, wolf mask or entirely different head. It must clearly be the same animal with a restrained muzzle adjustment. Preserve all body coverings and stance unchanged.\nOne large full-body three-quarter study, and one small side-profile head detail of the SAME revised face. Retain one modest neutral human scale silhouette beside the main animal, about half its shoulder height, on the same ground plane. No other animal.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales."
+        },
+        {
+          "code": "FR2",
+          "title": "Reedstrider · full-body fibres",
+          "file": "fr2-reedstrider.png",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "description": "Reedstrider retains its upright body, face, feeding arms and balancing tail. The copper fibres from its back ridge now spread over the body and limbs, with shorter fibres where the joints bend.",
+          "size": "Refining G1-2",
+          "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP MIDDLE animal (Reedstrider) from this six-animal sheet. Ignore and omit every other animal.\nCreate a dedicated reference plate of exactly this selected creature, faithfully preserving the face, ears, long neck, body proportions, low pelvis, two large hind legs, two small feeding arms, hands holding reeds, and long balancing tail. Same three-quarter standing pose and olive/copper colour family.\nONLY CHANGE THE COVERING: the narrow copper/russet mohawk-like ridge of pointed fibrous tufts on its back is the material the creator likes. Extend THIS SAME feather-fur fibre texture over the whole animal: neck, shoulders, chest, belly, flanks, hips, upper and lower limbs, and tail. Make a flowing continuous directional pelt of narrow tapered copper-gold fibres, denser on torso and top of neck, shorter around joints and on the tail. Let subdued olive skin remain visible on the original face, palms and toes; keep those mechanically usable. This is not just a larger mohawk, not porcupine spikes, and not rounded ordinary mammal fur. Preserve slim body definition and movement under the pelt. Do not change its head, grow wings, enlarge the belly or add a pouch.\nOne large full-body view in the original pose, plus one small side-view walking study showing the SAME animal and full-body covering. Single neutral human scale silhouette next to the main view; creature total height about 1.6 human heights. Quiet reed/ground fragment only.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales."
+        },
+        {
+          "code": "LN1",
+          "title": "Latchrunner",
+          "file": "ln1-latchrunner.png",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "description": "A long, low marsh predator separates four springy running legs from a smaller grasping pair beneath the neck. Teal scale-grain and soot-grey fibres follow the body’s different surfaces; the six-limbed hunting strategy is a new proposal.",
+          "size": "New large proposal",
+          "prompt": "Use case: stylized-concept.\nInvent ONE new LARGE animal for Breachline with the following distinct whole-body plan. Landscape 1536 x 1024 concept reference.\nThe creature is a marsh-edge pursuit predator, about 3.8 metres long and 1.4 metres high at the back: larger than a person, horse-mass range, not elephant scale. Its long supple low torso bends subtly through the waist, with the greatest mass over the middle of its body. It has EXACTLY SIX limbs in three coherent paired girdles: FOUR long jointed walking/running legs under the torso, plus TWO smaller grasping forelimbs rooted in the front chest just behind the head. The four locomotor legs are substantial, bent and springy rather than insect-thin or elephant-pillared. The extra front pair can fold close beneath the neck and open to pin prey. Show one reaching slightly forward while the matching near-side one stays bent, both visibly connected; all four running feet support the living body. It must not look like a human centaur, a mantis with a mammal head, or a normal quadruped with pasted-on arms.\nHead is an integrated low compact wedge carried straight forward: modest blunt mammalian nose, broad cheek muscles and a closed strong jaw that widens behind the muzzle, two small deep-set eyes, no beak and no reptilian snout. A smooth muscular neck joins skull and front thorax. No ears as the main novelty, no horns or tusks. A thick tapered low balancing tail.\nCovering: fine matte muted teal scale-grain over upper body blending into very short soot-grey velvety fibres on sides and underside, with a warm copper bare patch around the face. Quiet colour transitions that explain different skin use; NO feather mane, NO shaggy shoulder mantle, no plate shell, no dorsal backpack or decorative appendages. No throat combs, no jaw fringes, no sensory tendrils.\nOne large full-body three-quarter view stepping across a low mud bank, head alert and both small graspers visible; a much smaller SIDE VIEW of the same six-limbed animal moving, to clarify attachments. Exactly one simple grey human scale silhouette at the left, approximately 1.8 metres tall and sharing the same ground line. The creature's torso back should be a little LOWER than the human head; its length supplies its mass. Animal calm and purposeful, no roaring, gore or depicted prey. Sparse reeds and one muddy foot contact are enough. Everything fully in frame.\nPaint as traditional oil/acrylic fantasy concept art with measured visible brushwork, strong connected forms, matte surfaces, varied edges and restrained fine detail. Warm pale neutral background. Never photo, 3D, toy-like or anime. No labels, writing, numbering, arrows, panel borders, logos or watermarks."
+        }
+      ]
+    },
+    {
+      "id": "undertow",
+      "title": "Undertow · a cleaner swimming outline",
+      "intro": "The two middle lobes on each side become one continuous fin, with shorter outward reach and a flatter edge. The small rear triangle remains.",
+      "cards": [
+        {
+          "code": "FR3",
+          "title": "Undertow · continuous side fins",
+          "file": "fr3-undertow.png",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "description": "Undertow retains its teal soft body, rounded face and small rear triangle. Each side now has one continuous, shorter-projecting fin with a flatter outer edge, replacing the split middle lobes.",
+          "size": "Refining G3-2",
+          "prompt": "Use case: precise-object-edit.\nInput image: edit target. Use ONLY the TOP MIDDLE aquatic creature (Undertow). Ignore all five other designs, which are rejected. Isolate and faithfully preserve this selected creature's rounded head, tiny eyes, soft teal body, salmon underside and salmon fin rims, tapering rear body, and small triangular REAR tail element.\nPRECISE FIN CHANGE: on EACH SIDE combine the two separate middle wing/fin lobes into ONE continuous broad side fin. Fill the notch between the old anterior and posterior lobes. The new fin root spans their combined front-to-back length, but its outward projection is about 30% SHORTER. Its outer edge is flatter and smoother, gently straightened with rounded corners, not scalloped, not clipped and not two peaks with a notch. Exactly ONE continuous elongated side fin on the near side and ONE matching fin on the far side. Keep the SMALL distinct triangular tail feature at the very back; that rear triangle is liked. The organism should swim with broad gentle muscular waves rather than look like a winged aircraft.\nDedicated landscape reference plate: one large full animal three-quarter view underwater, plus a small dorsal/top view clearly showing the continuous fins and separate little tail triangle. Very sparse underwater colour wash. A tiny neutral human scale silhouette off to one side, about 1/12 of the animal length, communicates massive size; no actual human interaction.\nTraditional oil/acrylic fantasy concept painting, measured visible brushwork, varied edges and selective detail, matte tactile animal materials, warm pale neutral background. Landscape 1536 x 1024. Complete uncropped organism, generous margins; no words, letters, numbers, arrows, panel borders, logos or watermark. Coherent joints, connected anatomy, believable support and movement. This is original living wildlife in a high fantasy ecology; not equipment, a monster costume or a cartoon. Do not add throat combs, jaw frills, decorative dangling organs, backpack pouches, fungus or insects under scales."
+        }
+      ]
+    }
+  ],
+  "curation": {
+    "by": "assistant",
+    "not_creator_acceptance": true,
+    "primary_giants": [
+      {
+        "review_code": "MG1",
+        "source_code": "MN3-1",
+        "file": "mn3-immense-lives.png",
+        "rect": [
+          0,
+          0,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "review_code": "MG2",
+        "source_code": "MN1-2",
+        "file": "mn1-massive.png",
+        "rect": [
+          0.315,
+          0,
+          0.36,
+          0.5
+        ]
+      },
+      {
+        "review_code": "MG3",
+        "source_code": "MN3-2",
+        "file": "mn3-immense-lives.png",
+        "rect": [
+          0.3333333333333333,
+          0,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "review_code": "MG4",
+        "source_code": "MN1-4",
+        "file": "mn1-massive.png",
+        "rect": [
+          0,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "review_code": "MG5",
+        "source_code": "MN3-5",
+        "file": "mn3-immense-lives.png",
+        "rect": [
+          0.295,
+          0.47,
+          0.35,
+          0.53
+        ]
+      },
+      {
+        "review_code": "MG6",
+        "source_code": "MN2-1",
+        "file": "mn2-freer-giants.png",
+        "rect": [
+          0,
+          0,
+          0.3333333333333333,
+          0.5
+        ]
+      }
+    ],
+    "full_studies_url": "http://127.0.0.1:8781/all-giant-studies.html"
+  },
+  "ecology_url": "http://127.0.0.1:8776/ecologies.html",
+  "validation": {
+    "result": "passed",
+    "primary_gallery": {
+      "review_options": 10,
+      "all_images_loaded": true,
+      "expanded_crop_checked": "MG5; complete head and supports visible",
+      "feedback_get": "200; ready",
+      "url": "http://127.0.0.1:8781/#giants"
+    },
+    "complete_giant_studies": {
+      "cards": 18,
+      "all_images_loaded": true
+    },
+    "ecology_gallery": {
+      "selected_animals": 54,
+      "pending_options": 10,
+      "study_records": 243,
+      "all_rendered_images_loaded": true,
+      "habitat_filter": "coasts returned two selected designs",
+      "view_switching": "selected, pending and full record views verified"
+    },
+    "prior_round": {
+      "rejected_designs_recorded": 12,
+      "approved_refinements": [
+        "ER1",
+        "ER2",
+        "ER3",
+        "ER4",
+        "ER5",
+        "ER6",
+        "ER7-1"
+      ]
+    },
+    "user_facing_tabs": "Focused giant review and ecological collection retained"
+  }
+}

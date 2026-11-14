@@ -1,0 +1,223 @@
+{
+  "image_count": 10,
+  "images": [
+    {
+      "code": "R1v2",
+      "file": "01-r1-morning-shift-v2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "R3v2",
+      "file": "02-r3-stilt-village-v2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "P1v2",
+      "file": "03-p1-glimmerfolk-v2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "P5v2",
+      "file": "05-p5-saltreach-v2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "W1",
+      "file": "06-glimmerfolk-below-the-old-road.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "W3",
+      "file": "08-saltreach-the-last-boat-up.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "W4",
+      "file": "09-cairnfold-at-the-wayhouse.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "W5",
+      "file": "10-riverfolk-a-table-above-the-water.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "M1",
+      "file": "11-made-people-fourfold-warden.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    },
+    {
+      "code": "M2",
+      "file": "12-made-people-the-closed-road.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hash_matches": true,
+      "png_crc_valid": true,
+      "references_exist": true
+    }
+  ],
+  "galleries": [
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/review.html",
+      "image_count": 12,
+      "links_checked": 22,
+      "broken_links": []
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/review.html",
+      "image_count": 15,
+      "links_checked": 19,
+      "broken_links": []
+    }
+  ],
+  "rejected_images_removed": true,
+  "checked_at": "2026-11-13",
+  "gallery_script_syntax": "Both review gallery scripts compiled successfully.",
+  "browser_preview": "Not performed; source syntax and all local image and navigation targets checked.",
+  "assistant_visual_review": [
+    {
+      "code": "R1v2",
+      "review": "Lowered task-directed gazes and relaxed mouths, softer dawn, coherent satchel/rake grips and body support. Scene and Riverfolk anatomy retained; background detail reduced."
+    },
+    {
+      "code": "R3v2",
+      "review": "Premature splash plumes, droplets and impact rings removed beneath both airborne children. Poses and connected settlement preserved; distant forms simplified."
+    },
+    {
+      "code": "P1v2",
+      "review": "Freckle clusters clearly brighter on faces and exposed arms, with small local glow. No glowing eyes or broad neon skin; identities and sheet layout preserved."
+    },
+    {
+      "code": "P5v2",
+      "review": "Localized mild sunburn and more uneven weathered skin visible across all faces. Human identity, clothing and anatomy retained; skin stays matte."
+    },
+    {
+      "code": "W1",
+      "review": "Two connected figures, practical rope/wall and lantern contacts. Bright freckle clusters remain small and local; distant tunnel uses broader quieter paint."
+    },
+    {
+      "code": "W3",
+      "review": "Two foreground hands grip one continuous taut rope to boat; legs planted, boat supported on roller. Three human workers have weathered matte skin and coherent scale."
+    },
+    {
+      "code": "W4",
+      "review": "Three-eyed Cairnfold faces and soft neck mantle retained; chest/stool and four-digit hand contacts are coherent. Background road is simplified. Relative size in scene remains exploratory rather than fixed species height."
+    },
+    {
+      "code": "W5",
+      "review": "Three Riverfolk with readable ear fins/gills, connected arms, supported bowls and coherent ladle/spoon grips. Quiet domestic light and simpler far settlement."
+    },
+    {
+      "code": "M1",
+      "review": "Exactly four separately rooted arms and two differently built legs. Short lower pair counts coins; larger upper hands remain distinct. Altered silhouette and natural healed joins, no undead cues."
+    },
+    {
+      "code": "M2",
+      "review": "Two mismatched arms and two hoofed legs with coherent contact and ground plane; long arm on bar and shorter arm holding keys. Horn plating integrated; no open wounds or stitches."
+    }
+  ],
+  "approval_boundary": "All 12 follow-up images await creator review. Earlier creator-approved originals and traits are recorded in the adjacent review-decisions file.",
+  "historical_generation_validation": true,
+  "creator_final_review": "Riverfolk and Saltreach accepted; all other round-12 people concepts rejected.",
+  "current_selection_record": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/final-selections-2026-11-13.json",
+  "current_active_reference_codes": [
+    "R1v2",
+    "R2",
+    "R3v2",
+    "R4",
+    "R5",
+    "R6",
+    "W5",
+    "P5v2",
+    "W3"
+  ],
+  "final_selection_validation": {
+    "date": "2026-11-13",
+    "status": "Final selections verified",
+    "accepted_reference_count": 9,
+    "accepted_followup_count": 5,
+    "rejected_followup_count": 5,
+    "accepted_files_match_original_hashes": true,
+    "rejected_image_and_generated_copy_paths_absent": true,
+    "accepted_references_exist": true,
+    "galleries": [
+      {
+        "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/review.html",
+        "accepted_image_count": 9,
+        "local_links": "passed",
+        "script_syntax": "passed before saving; saved source identical"
+      },
+      {
+        "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/review.html",
+        "accepted_image_count": 5,
+        "local_links": "passed",
+        "script_syntax": "passed before saving; saved source identical"
+      },
+      {
+        "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/review.html",
+        "accepted_image_count": 9,
+        "local_links": "passed",
+        "script_syntax": "passed before saving; saved source identical"
+      }
+    ],
+    "browser_preview": "Not performed; local target checks and JavaScript compilation completed.",
+    "new_image_generation": false
+  },
+  "cleanup_note": "Only retained image records are counted. Historical browser checks describe the earlier review; current accepted references are unchanged."
+}

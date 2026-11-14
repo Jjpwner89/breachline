@@ -1,0 +1,95 @@
+BREACHLINE — ART DIRECTION HANDOFF FOR CODEX
+13 November 2026 · after the fresh-peoples review
+
+Purpose
+The creator accepted the current painting approach and asked to update the art-direction skill, make specific local corrections, update the relevant card proposals, and prepare this handoff. This work is saved and uncommitted. No current card art, game code or mechanics have been replaced. Do not interpret style approval as approval to put these images into the live roster.
+
+Start here
+Project: /Users/dpuser/Documents/Claude/Games/breachline
+Current art skill: /Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md
+Current lore: /Users/dpuser/Documents/Claude/Games/breachline/SETTING.md
+Current review: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/review.html
+
+The gallery has 14 scenes, five new alignment-card paintings and three follow-ups. It now shows the selected corrections; earlier versions are available below each revised image and in review-initial.html. Large image codes are the review identifiers. New revisions use new codes so old browser preferences cannot silently approve them.
+
+Accepted painting approach
+Use one coherent lighting idea throughout each painting. Directional light, dynamic colour and drama remain welcome; they should support the subject, not take over. Keep faces, bodies and equipment readable in shadow with plausible reflected light. Do not dim or desaturate every alignment to imitate Dominion.
+
+The creator particularly likes deliberate variation in brushwork, detail and edges. N5's original painting is a strong example, despite its undersized bow. Focal details can be precise; secondary forms and distance should have fewer, broader marks. Matte skin, cloth, wood and stone; convincing reflections for metal, glass and water. Avoid uniformly crisp detail, artificial gloss and noise added to make skin seem painted.
+
+The scene should make sense before its card title or rules are read. Gaze, gesture, work, equipment and location should fit together. A still, compelling person needs no invented task. Spell art can be imaginative without explaining each mechanical effect. Do not turn everyday work into a heroic spectacle.
+
+Read the latest lore for habitat, architecture and context. Check hands, feet, ground support and functional equipment. In local revisions, preserve the liked identity, pose, colour and paint handling. Generated edits may introduce surface drift; their preference still needs review.
+
+Names and habitats — approved lore in SETTING.md
+- Glimmerfolk: developed, decent undercity districts in Ambrel and a few other cities. Not cave dwellers by default. Mostly Gnosis; glimmers vary with mood and flare with casting. G1/G2 are strongly liked; the creator's habitat reminder is specifically for future paintings. Surface visits are individual situations.
+- Moor folk: cold, wet upland moor and heath; mostly Genesis.
+- Ashborn: the made people. Dominion's raised dead, ordinary adult scale, repaired bodies apart from old scars, weak souls rather than no souls. Their memories vary; do not return to stitched constructs, giant bodies or excessive scarring.
+- Banded folk: the salt–silt people are one species with two variants. Salt flats/dry pans and floodplains/deltas respectively; trade and mixed families bring them together. Mostly Fervor, some Genesis. Cooperation in S1/S2 was especially liked.
+- Crest folk: limestone valleys and quarry towns, builders/stoneworkers, Vigil and Gnosis. Warm climate is NOT specified. The creator likes R1/R2 and asked about warmth; those scenes are compatible without declaring a universal hot homeland. Learned stone magic is part of some masons' craft, not exceptional innate species power.
+- Greyhides: formerly Coast folk. Cold NORTHERN coasts and tidal islands, thick insulated bodies, easygoing, Vigil/Genesis. O1/O2 have been revised accordingly.
+
+Approval boundaries
+Glimmerfolk GR1, Moor folk PL7 and Ashborn PL3D visual ranges are final. Banded folk PL8B, Crest CR3 and Greyhide CO1 have approved lore but their developed reference sheets are still under visual review in SETTING.md. Liking their scenes does not silently finalize those sheets. The four final sheets were committed in b02dbd6; the seven-direction reference/lore package in 5a7e61e; later approved lore/names in a47baa7. This painting round was not committed.
+
+Latest scene/card verdicts
+Retain unchanged: K1/K2; G1/G2; D1/D2; S1/S2; R1/R2; N1; N3; N4.
+M1: liked, correct the feet.
+M2: liked, correct his left hand and darken the background a little.
+O1/O2: generally liked, move the setting to cold northern coasts.
+N5: strongly liked, especially light and varied brushwork. Enlarge and improve the bow.
+H1: not wanted for Harmonic Burst. The creator explicitly did not condemn it as a bad painting; preserve as an unselected concept.
+E1/E2: not given a new verdict in this review; remain pending.
+
+Selected new candidates — all still need review
+M1-R2 | m1-through-the-heather-v3.png
+  Corrected footwear/ankles and simple leather boots. M1-R1 was an intermediate with overly modern work boots.
+M2-R1 | m2-a-story-by-the-stove-v2.png
+  Corrected man's raised anatomical left hand at centre, slightly darker rear room, readable faces retained.
+O1-R1 | o1-after-the-tide-v2.png
+  Northern rocky tide pools, cold sea and low islands. Her insulated body, bare working feet and basket action retained.
+O2-R1 | o2-an-argument-at-lunch-v2.png
+  Northern timber/stone harbour, warmer wool and wind shelter; same personalities and meal.
+N2-R1 | n2-fervor-rusk-saltroad-guard-v2.png
+  All toll hardware removed. Free hand rests on raised knee; boot rests on natural rock. Rusk, Saltroad Guard is a proposed title replacing the barrier-related Roadbreaker epithet, not an approved name.
+N5-R2 | n5-genesis-dessa-heathwatch-v3.png
+  Full-sized ash bow, both tips within the frame, string/arrow/contact kept legible. N5-R1's upper tip touched the frame and was superseded.
+H2 | h2-stonewake.png
+  Stonewake: a Crest folk mason-mage heaves a short ridge through an imperial causeway to stop an armed advance. This is a new fictional spell/name and art proposal replacing the bell/force-at-the-archive concepts. No sound-based magic, glowing diagram or new species ability is proposed. The creator has not yet reviewed H2.
+
+Card work
+card-proposals.json in the review folder is the staged card record. It contains all five alignment concepts with updated people names and current images, the proposed Stonewake presentation change, and earlier in-game art preferences. N1/N3/N4 images are liked; their character names, costs, abilities and roster inclusion are not thereby finalized. N2/N5 revised images need review. No new unit statistics or gameplay effects have been invented.
+
+For the existing Harmonic Burst card, preserve the stable id 'harmonic', spell type, blue/Gnosis colour, cost 3, wants 1, and aim {hit:2, splash:1, push:true, foesOnly:true}. Preserve the exact rules text:
+Aim at a tile: 2 damage to an enemy there and 1 to each enemy next to it. Each enemy hit beside it is pushed 1 tile away.
+Only the proposed display name and fictional spell/art presentation change. The complete proposed definition is in card-proposals.json. The current engine and art mapping remain unchanged. No new flavour line is approved.
+
+Earlier in-game comparison decisions still apply
+Use the creator's written/spoken comments, not pairwise ranking losses, as evidence of dislike.
+IG1 Oath Sentinel: undecided.
+IG2 Harmonic Burst: replace the concept; H2 is the newest candidate.
+IG3 Cinder Firebrand: liked light direction, wanted a more readable figure; E1 is the completed brighter candidate, awaiting verdict.
+IG4 Anoint with Embers: original strongly liked; preserve it.
+IG5 Sanctuary Threshold: original preferred; its brightness is liked, revision too crisp/detailed.
+IG6 Hurled Brand: original preferred; revision too dark.
+IG7 Alderkin Elder: newer background with original stonework; E2 is the completed hybrid, awaiting verdict.
+IG8 Emberward: revision preferred; candidate at ../in-game-art-comparison-2026-11-13/revisions/emberward-r1.png. No live replacement or commit performed.
+
+Records in the review folder
+- creator-review-accepted-style.json: latest creator decisions and scope.
+- creator-feedback.json: previous in-game comparison decisions, preserved.
+- prompts-and-manifest.json: original image records, current_images, revision history, hashes and QA.
+- accepted-style-prompts.json: exact seven initial requests and two local finishing corrections.
+- card-proposals.json: staged content/asset choices, not a live roster.
+- CATALOGUE.txt: current readable catalogue; CATALOGUE-initial.txt preserves the first version.
+- validation-accepted-style.json: delivery checks, including comparison against live-game baseline.
+- live-baseline-accepted-style.json: hashes captured before this review pass.
+The main art skill now contains the reusable lighting, paint-handling, habitat and equipment lessons. Round-specific decisions are in its Open work section and HISTORY.md.
+
+Next chat
+Use the updated skill for fresh work, reading the relevant SETTING.md entries before each brief. Do not attach finished paintings merely to imitate style; describe the qualities, and use species/equipment sheets for continuity. The creator wanted to see whether the updated approach transfers to a new chat. A new chat test has not been run here.
+
+Await the creator's verdict on the seven candidates, E1/E2, the proposed Stonewake name/fiction and any future roster additions. Nothing in this handoff authorizes committing or publishing this art. Preserve unrelated work from other chats.
+
+Workspace coordination note
+During this pass an unrelated merge (781e985) advanced the repository and changed engine.js/ui.js. Those files match the merged HEAD; this art task did not edit them. Harmonic Burst's definition, mapping and existing art remain unchanged. All 444 baseline art/final-selection files and all 22 original batch paintings retain their hashes. No commit was created by this art task.

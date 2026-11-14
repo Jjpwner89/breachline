@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "scope": "Peoples in the world catalogue, 7 scenes and 10 card-art proposals",
+  "scope": "Peoples in the world catalogue: 6 retained scenes and 9 retained card-art proposals",
   "creator_message": "can we try to understand why the dominion cards always have the best art? interesetingly i prefer the general art designs you made over the card art, especially in this set.\n\nof the general, my ranking is 4, 2, 3, 5, 7, 6, 1 from favorite to least favorite.\n\ncard art is 5, 6, 7, 9, and a little of 10, but i dont like 10 or the other very much. the dominion ones always look more painted and i kind okf like that the colors aren't overstated. let's see if we can figure it out",
   "explicit_feedback": {
     "scene_order_favourite_to_least": [
@@ -9,8 +9,7 @@
       "S3",
       "S5",
       "S7",
-      "S6",
-      "S1"
+      "S6"
     ],
     "preferred_cards_in_given_order": [
       "C5",
@@ -22,7 +21,6 @@
       "C10"
     ],
     "other_cards_not_liked_much": [
-      "C1",
       "C2",
       "C3",
       "C4",
@@ -32,7 +30,7 @@
     "approval_scope": "Comparative preference and art-direction investigation only. No new final selection, deletion, species rejection, commit or game implementation authorized by this feedback."
   },
   "inspection": {
-    "basis": "All 17 standalone PNGs visually inspected and compared with the exact saved prompts.",
+    "basis": "Original inspection covered the complete historical batch; 15 records remain after cleanup.",
     "observations": [
       {
         "images": [
@@ -96,7 +94,7 @@
         "interpretation": "Magic is carried by the character's state and another person's gesture, preserving a quiet figure painting."
       },
       {
-        "scope": "C1/C2/C4/C10",
+        "scope": "C2/C4/C10",
         "evidence": "Golden storm-break sunlight; a warm golden ward and breaking spray; an enormous stone wedge opening a sunlit path; roots and an open/blocked passage as the main event.",
         "interpretation": "These briefs place strong effects, warm spectacle or a demonstrated action at the center even though literal rules/stat text was excluded."
       }
@@ -115,18 +113,16 @@
     "colour_variant": "Change only the colour/light brief toward quieter related tones and smaller high-saturation accents, preserving the blue glimmers and current composition.",
     "paint_handling_variant": "Retain the current colour families and lighting direction, but use broader matte facial planes, selective edges and highlights, quieter secondary surfaces, and materially distinct skin, wool and stone.",
     "interpretation": "Compare with the existing control before combining changes; generative editing can still introduce incidental differences. Study scene/story changes separately after testing rendering.",
-    "status": "Not executed. The creator next requested the S1/S5/S6 consistent-lighting test, recorded in lighting-prompts-and-manifest.json."
+    "status": "Not executed. The creator next requested the S5/S6 consistent-lighting test, recorded in lighting-prompts-and-manifest.json."
   },
   "preservation": "All existing PNGs, catalogue review controls and final-reference approvals preserved. No commit created.",
   "image_sha256": {
-    "S1": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
     "S2": "f10493419255713e6bf84f3e96672f8835186195fdf73c2e1769613f5d87acf5",
     "S3": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9",
     "S4": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87",
     "S5": "fe6890a8891afd82b2ba242d36eeb5b0fc6b7f6289bde21ac3ce9066809df427",
     "S6": "210ea153448ead9332fcc31941f1529d8b1bc78bc8ab66333956dd7ecb32e570",
     "S7": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab",
-    "C1": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
     "C2": "7761e0aa5f210ed6f2212427d5e9777d2a894caa53042260594ebf056cb56257",
     "C3": "b09d763c022a41b33df87617a9e75d9f415e55f8e6061db23d4e43cf1d969294",
     "C4": "5795783720dadccb0b603e32ce89c8c00dbbeeec44ee93371756633664d2bcad",

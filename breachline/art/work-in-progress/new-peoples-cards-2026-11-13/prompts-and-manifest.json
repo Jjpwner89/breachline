@@ -1,0 +1,1696 @@
+{
+  "batch": "Set 12 — the new peoples",
+  "date": "2026-11-13",
+  "brief_revision": 2,
+  "status": "final",
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET12.md",
+  "scope": "20 newly generated Set 12 paintings, all final. Existing-image reuse proposals for 192,199,213,214 are outside this batch.",
+  "art_direction": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "items": [
+    {
+      "code": 193,
+      "title": "Undercity edge-warden",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/193-edgewarden.png",
+      "people": "Glimmerfolk",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+      ],
+      "reference_selection": "GR1 whole sheet; anatomy, new individual",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult male Glimmerfolk warden at the boundary between a developed undercity district and old unsafe sewers. Waist-up three-quarter portrait on the right looking left into a rough black passage; the last dressed masonry ends beside him. Extremely slender body, long neck, soft broad ear-fans, matte dark brown skin, normal non-glowing eyes. Clearly visible blue luminous freckles across face, dotted arm lines spreading into denser hand clusters. Plain indigo sleeveless padded guard coat, one functional shoulder plate, a resting spear held vertically with a natural low grip. His face is intent and quietly alert, ear-fans toward the darkness, no raised hand or combat. A shaded amber wall lamp behind the masonry provides gentle reflected warmth against cool blue glimmers. Render enough of his shadow side to read the face. Only a few distant door shapes imply an inhabited district. Biological hearing, no sound magic. His equipment and this post are proposals.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult male Glimmerfolk warden at the boundary between a developed undercity district and old unsafe sewers. Waist-up three-quarter portrait on the right looking left into a rough black passage; the last dressed masonry ends beside him. Extremely slender body, long neck, soft broad ear-fans, matte dark brown skin, normal non-glowing eyes. Clearly visible blue luminous freckles across face, dotted arm lines spreading into denser hand clusters. Plain indigo sleeveless padded guard coat, one functional shoulder plate, a resting spear held vertically with a natural low grip. His face is intent and quietly alert, ear-fans toward the darkness, no raised hand or combat. A shaded amber wall lamp behind the masonry provides gentle reflected warmth against cool blue glimmers. Render enough of his shadow side to read the face. Only a few distant door shapes imply an inhabited district. Biological hearing, no sound magic. His equipment and this post are proposals.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-4549a60a-0f71-4351-ad26-b3fa625b5c1f.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/193-edgewarden.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-4549a60a-0f71-4351-ad26-b3fa625b5c1f.png",
+      "caption": "A Glimmerfolk warden listens at the boundary between inhabited undercity streets and the unsafe passages beyond. His anatomy is established; this guard, post and equipment are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "875eefe236c78394bcf95bd032dea83fae6bcb7a7f1381d0faabc7523dc9aa71",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "193-edgewarden.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "193-edgewarden.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/193-edgewarden.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/193-edgewarden.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/193-edgewarden.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 194,
+      "title": "Undercity signaller",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/194-signaller.png",
+      "people": "Glimmerfolk",
+      "alignment": "Gnosis",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+      ],
+      "reference_selection": "GR1 whole sheet; two distinct individuals",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nExactly TWO adult Glimmerfolk signal across a NATURAL CAVE chamber with a shallow dark stream separating ledges. One slender woman occupies the left foreground in three-quarter back view, face seen in profile looking toward the other. Her forearm is raised at chest level to show bright blue dotted skin patterns, palm relaxed. A smaller distant adult on the opposite ledge faces her and answers with their own distinctly arranged glimmers. Preserve GR1 long necks, broad soft ear-fans, extremely slender anatomy, matte brown skin and nonluminous eyes. Simple practical earth-coloured cave clothing exposes their forearms. The blue skin light is biological, readable at card size; no beams, lanterns or spell effects. Faint cool skylight from a high natural fissure makes their bodies and cave floor legible while luminous skin is the focus. Strong triangular placement of near figure, answering figure and water reflection; cave shapes simplified, no city masonry.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nExactly TWO adult Glimmerfolk signal across a NATURAL CAVE chamber with a shallow dark stream separating ledges. One slender woman occupies the left foreground in three-quarter back view, face seen in profile looking toward the other. Her forearm is raised at chest level to show bright blue dotted skin patterns, palm relaxed. A smaller distant adult on the opposite ledge faces her and answers with their own distinctly arranged glimmers. Preserve GR1 long necks, broad soft ear-fans, extremely slender anatomy, matte brown skin and nonluminous eyes. Simple practical earth-coloured cave clothing exposes their forearms. The blue skin light is biological, readable at card size; no beams, lanterns or spell effects. Faint cool skylight from a high natural fissure makes their bodies and cave floor legible while luminous skin is the focus. Strong triangular placement of near figure, answering figure and water reflection; cave shapes simplified, no city masonry.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-5a6704dd-fff7-4aa1-9ff5-cc49f29e36fd.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/194-signaller.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-5a6704dd-fff7-4aa1-9ff5-cc49f29e36fd.png",
+      "caption": "Two Glimmerfolk exchange patterns of blue skin-light across a natural cave chamber. The cave setting follows the revised brief, and the signalling is biological rather than a spell.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8522f75e1d3cd86ddfe47f9388a6e46d19a10c5efccffc151065b72748939f57",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "194-signaller.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "194-signaller.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/194-signaller.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/194-signaller.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/194-signaller.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 195,
+      "title": "Peat-cutter",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/195-peatcutter.png",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+      ],
+      "reference_selection": "PL7.2 top-middle face/build; varied individual",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult Moor folk woman cuts peat on a cold wet upland moor. Use the top-middle reference woman's broad brow and short shoulder ruff as anatomical basis, long forearms and hands, strongly nonhuman facial planes. Three-quarter mid-distance view, tired practical concentration looking DOWN at the cut, bent slightly over a narrow peat spade; both hands coherently grip its single wooden shaft and one boot braces on firm cut ground. Plain russet wool work tunic, rolled sleeves, muddy fitted boots. Fresh dark peat bank and a small stack of turves give convincing ordinary labour. Wide low moor and passing rain are only broad muted blue-green shapes, overcast daylight with a pale break warming her tawny face. Quiet beauty of wet black peat and rust cloth; no heroic pose, magic or flowers. Body weight and tool contact must make sense.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult Moor folk woman cuts peat on a cold wet upland moor. Use the top-middle reference woman's broad brow and short shoulder ruff as anatomical basis, long forearms and hands, strongly nonhuman facial planes. Three-quarter mid-distance view, tired practical concentration looking DOWN at the cut, bent slightly over a narrow peat spade; both hands coherently grip its single wooden shaft and one boot braces on firm cut ground. Plain russet wool work tunic, rolled sleeves, muddy fitted boots. Fresh dark peat bank and a small stack of turves give convincing ordinary labour. Wide low moor and passing rain are only broad muted blue-green shapes, overcast daylight with a pale break warming her tawny face. Quiet beauty of wet black peat and rust cloth; no heroic pose, magic or flowers. Body weight and tool contact must make sense.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-f8dcb90d-a9b0-49c0-afe7-d495481f4af8.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/195-peatcutter.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-f8dcb90d-a9b0-49c0-afe7-d495481f4af8.png",
+      "caption": "A Moor folk worker cuts wet peat with her attention on the spade and the bank beneath her. Peat cutting and the cold upland setting are established; this worker and her kit are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4336427590294bb195af59c3dfc6d01b9add88ce838e65d26f87890c138990fd",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "195-peatcutter.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "195-peatcutter.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/195-peatcutter.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/195-peatcutter.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/195-peatcutter.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 196,
+      "title": "Moor guide",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/196-moorguide.png",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+      ],
+      "reference_selection": "PL7.6 bottom-right young adult, species range",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA young adult Moor guide crosses a treacherous upland bog, leading ONE secondary human lowland traveller who carefully follows the same firm footholds. Base the guide on the bottom-right younger smooth-faced reference with small natural shoulder ruff, long limbs/hands and nonhuman brow/nose. Full figure in left-facing profile stepping from one solid peat hummock to the next, looking toward the safe route, not at viewer; shoulders relaxed with practiced confidence. Ochre sleeveless wool coat over dark trousers, well-fitted boots visibly connected to the shins. Traveller behind in a muted blue travel coat stays smaller and less detailed. Bright olive bog moss, rust sedges, black pools with wind ripples, a cool high sky opening after rain. Low viewpoint gives a clear grounded stride and broad sweep of bog. Real cold moor, beautiful and dangerous, no swamp trees, magical trail or grand gesture.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA young adult Moor guide crosses a treacherous upland bog, leading ONE secondary human lowland traveller who carefully follows the same firm footholds. Base the guide on the bottom-right younger smooth-faced reference with small natural shoulder ruff, long limbs/hands and nonhuman brow/nose. Full figure in left-facing profile stepping from one solid peat hummock to the next, looking toward the safe route, not at viewer; shoulders relaxed with practiced confidence. Ochre sleeveless wool coat over dark trousers, well-fitted boots visibly connected to the shins. Traveller behind in a muted blue travel coat stays smaller and less detailed. Bright olive bog moss, rust sedges, black pools with wind ripples, a cool high sky opening after rain. Low viewpoint gives a clear grounded stride and broad sweep of bog. Real cold moor, beautiful and dangerous, no swamp trees, magical trail or grand gesture.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-abb5743f-01cd-498b-b572-16ad30b5d0b8.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/196-moorguide.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-abb5743f-01cd-498b-b572-16ad30b5d0b8.png",
+      "caption": "A young Moor guide crosses firm hummocks while a human traveller follows cautiously behind. The guide’s local knowledge is established lore; this journey and the two individuals are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "78a47ae50a594b27c39e6d3fd96b4aaef6fcf91bd539eb0bbdabbfcb4c14b1da",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "196-moorguide.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "196-moorguide.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/196-moorguide.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/196-moorguide.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/196-moorguide.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 197,
+      "title": "The moor keeps its own",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/197-moorkeeps.png",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "brief_revision": 2,
+      "references": [],
+      "reference_selection": "No reference attached; landscape, no figure",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA landscape spell painting: the cold upland moor quietly reclaims a newly cut drainage ditch. Wide view low over black water, the rigid man-made ditch running diagonally into peat now folded and closing naturally with living moss; a few leaning survey stakes and one abandoned wooden wheelbarrow sinking halfway into soft peat. No writing on stakes. The main appeal is the contrast of a ruler-straight cut and the patient soft wet moor swallowing it. No person is needed. Late storm light, a single pale gold break under slate clouds touches luminous olive moss and rain on the water, peat umber and deep green. Understated assumed magic: impossible renewal through place and material, no lightning, glowing threads, energy wave or effects diagram. Nobody drowning, no bodies, no combat. Broad atmospheric paint with selective sharp water and peat accents; hills barely implied.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA landscape spell painting: the cold upland moor quietly reclaims a newly cut drainage ditch. Wide view low over black water, the rigid man-made ditch running diagonally into peat now folded and closing naturally with living moss; a few leaning survey stakes and one abandoned wooden wheelbarrow sinking halfway into soft peat. No writing on stakes. The main appeal is the contrast of a ruler-straight cut and the patient soft wet moor swallowing it. No person is needed. Late storm light, a single pale gold break under slate clouds touches luminous olive moss and rain on the water, peat umber and deep green. Understated assumed magic: impossible renewal through place and material, no lightning, glowing threads, energy wave or effects diagram. Nobody drowning, no bodies, no combat. Broad atmospheric paint with selective sharp water and peat accents; hills barely implied.",
+          "references": [],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b1dc0334-becd-4935-b7d2-c270b84f0995.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/197-moorkeeps.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b1dc0334-becd-4935-b7d2-c270b84f0995.png",
+      "caption": "Water and moss reclaim a straight drainage cut, with abandoned tools and leaning stakes marking the failed intrusion. This quiet form of the spell is proposed, grounded in the Moor folk’s established resistance to draining their land.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6d0ee8449734f3820db00ed5546535a4ef2ea0722904072608a5be7abe70d3ce",
+      "reference_sha256": {},
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "197-moorkeeps.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "197-moorkeeps.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/197-moorkeeps.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/197-moorkeeps.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/197-moorkeeps.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 198,
+      "title": "Moot elder",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/198-mootelder.png",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+      ],
+      "reference_selection": "PL7.5 bottom-middle elder; others within whole accepted range",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nClose seated portrait of an aged Moor folk elder at a seasonal outdoor moot in cold uplands. Use bottom-middle old man as anatomical basis: longer neck, strongly shaped nonhuman face, long lightly furred hands, pale-tipped greying natural neck/shoulder ruff. He sits on a weathered stone, leaning forward just enough to listen, both long hands rested together over a knee; no staff or theatrical gesture. Thick charcoal wool wrap and simple pin, aged matte skin and grey fur expressed through form not wrinkle noise. A low peat fire just below frame is the single warm lighting source, soft amber reflected into face; muted dusk behind. Three secondary adult Moor folk from different reference variations listen in a loose partial circle, not a row, no outsiders. The elder's steady eyes and grey ruff dominate; supporting faces and distant steadying roofs are economical quiet paint. Gathering customs and this individual are proposals.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nClose seated portrait of an aged Moor folk elder at a seasonal outdoor moot in cold uplands. Use bottom-middle old man as anatomical basis: longer neck, strongly shaped nonhuman face, long lightly furred hands, pale-tipped greying natural neck/shoulder ruff. He sits on a weathered stone, leaning forward just enough to listen, both long hands rested together over a knee; no staff or theatrical gesture. Thick charcoal wool wrap and simple pin, aged matte skin and grey fur expressed through form not wrinkle noise. A low peat fire just below frame is the single warm lighting source, soft amber reflected into face; muted dusk behind. Three secondary adult Moor folk from different reference variations listen in a loose partial circle, not a row, no outsiders. The elder's steady eyes and grey ruff dominate; supporting faces and distant steadying roofs are economical quiet paint. Gathering customs and this individual are proposals.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-2e02606f-c8ad-4b23-8a32-2cdc233c9d1f.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/198-mootelder.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-2e02606f-c8ad-4b23-8a32-2cdc233c9d1f.png",
+      "caption": "A grey-ruffed elder sits among other Moor folk as dusk and peat-fire warmth settle over the gathering. Seasonal moots are established, while this elder and the gathering’s arrangement are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "bb6ad0d292f4516a5c503f3f50694dd22f301703c7cc31f87ca17e61cf25d16e",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "198-mootelder.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "198-mootelder.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/198-mootelder.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/198-mootelder.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/198-mootelder.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 200,
+      "title": "Husk",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/200-husk-fresh-01.png",
+      "people": "Ashborn",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+      ],
+      "reference_selection": "Approved PL3D full male visual range for Ashborn anatomy only. No discarded card painting attached or used.",
+      "prompt": "Create a completely NEW Breachline card painting from the attached approved ASHBORN ANATOMY SHEET only. The sheet is design reference, not a composition. One landscape 1536 × 1024 oil/acrylic painting, no writing or frame.\n\nA body returned from death while almost none of the person returned: a young adult male Ashborn pauses just outside a cold barracks gate, chin slightly lowered, gaze empty and patient. Beside him a more present older male Ashborn gently guides him into the yard. Ordinary adult size, cold ash-olive pallor, hollow facial planes, whole bodies, restrained healed scars. Use the sheet's male range to invent these two individuals. Plain worn charcoal-blue military tunics and trousers, one modest old iron breastplate on the husk. Their situation is harsh, not a benevolent clinic.\n\nFresh three-quarter view, figures seen from head to boots with space around them; the husk stands a little ahead at centre-right, the companion just behind to his left. Their quiet contact is easy to read: the companion's ANATOMICAL LEFT arm reaches under the husk's ANATOMICAL RIGHT elbow. His relaxed left hand sits on the INNER side of that arm, in the gap between the husk's arm and hip. A straight comfortable wrist, fingers gently contacting cloth; no outward cupped palm. Both shoulders, elbows and wrists connect naturally. The husk's own forearm hangs loosely. The companion looks toward him. A few very small soldiers beyond the gate all walk away in the same direction.\n\nCool morning light crosses simple warm-grey masonry and worn blue cloth; faces and hand contact remain readable. Let broad opaque strokes and quiet colour planes carry the image. Selectively resolve faces and the contact, simplify the rest. Smooth matte skin planes, clean silhouettes and soft lost edges; no grain overlay, stippled surface noise, excessive fabric scratches, pore detail, photographic sharpening or glossy 3D rendering.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nTwo ordinary-sized male Ashborn in a harsh cold barracks yard. The foreground husk resembles the bottom-right thin man: ash-olive pallor, hollow cheeks, dark fingertips, distant diminished gaze, fully repaired whole body with only restrained old scars. He stands patient and almost absent, looking past everything. A more present compact Ashborn companion like top-middle gently but firmly takes his upper arm to guide him, the hand clearly connects to the companion's arm. Tight waist-to-knee two-figure composition, companion looking at the husk rather than viewer. Both wear poor charcoal military wool, husk's worn breastplate hangs from clear working straps. Cold overcast daylight, weathered grey limewash and distant muster silhouettes implied by broad paint, restrained faded rust cloth accent. Oppressive and spent, not a benevolent caregiving institution. No stitches, bolts, rot, gore, huge builds or glowing eyes. Their stillness is compelling without extra action.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-498ae46d-0d65-44ce-9a2f-e4d20e30e73b.png",
+          "selected_for_review": false,
+          "filename": "200-husk.png",
+          "creator_feedback": "Turn the more present man's left hand underneath the husk's right arm; tilt the husk's head slightly down.",
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-13",
+          "prompt": "Use case: precise-object-edit. Edit the attached Breachline painting locally. Preserve the two men's established identities, faces, clothes, armour, positions, scale, barracks background, cold light and oil/acrylic painted treatment. Landscape 1536x1024, no text or frame.\nMake ONLY these two corrections:\n1. The more present stockier man on SCREEN LEFT uses his ANATOMICAL LEFT ARM (the arm nearer the middle) to support the thin husk on SCREEN RIGHT. Replace the erroneous top/side grip. His left forearm bends naturally inward from his left elbow, and his LEFT HAND turns PALM UP UNDER the husk's ANATOMICAL RIGHT UPPER ARM near its elbow. Show a clear simple cradle from underneath: supporting palm beneath the arm, four fingers curling gently along its underside and outer side, thumb naturally separated. The supporting wrist must connect anatomically to the left man's forearm without twisting, with no duplicate hand or backwards thumb. The husk's RIGHT arm (on the viewer's left side of his torso, BETWEEN the men) stays hanging down, his own hand still visible below. The left man's anatomical RIGHT arm at the outer SCREEN LEFT stays down and unchanged. Do not swap arms or move the support to the husk's other arm.\n2. Tilt only the thin husk's head modestly DOWN, lowering his chin about 10–15 degrees and directing his depleted gaze slightly downward. Keep his same face, hair, hollow planes and vacant expression. The other man's head remains looking toward him.\nKeep all else as close to the source as possible. Natural matte skin, coherent fingers and contact, no new elements.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk.png"
+          ],
+          "reference_selection": "Original 200-husk.png for exact local corrections.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-616e560a-5008-4cbb-8aab-290eef2c224a.png",
+          "filename": "200-husk-v2.png",
+          "selected_for_review": false,
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "request": "Turn the more present man's left hand underneath the husk's right arm; tilt the husk's head slightly down.",
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "Companion's left forearm connects to an upturned supporting hand beneath the husk's right arm.",
+              "Husk's chin and gaze angle downward.",
+              "Faces, clothing and barracks composition retained."
+            ]
+          },
+          "creator_feedback": "Creator likes the v2 husk face. The supporting hand is still wrong: it must sit between the husk's right arm and hip, naturally, rather than flipped outward. Turn the distant small figures so they face the same way.",
+          "creator_review": "Further revision requested; selected features retained.",
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 3,
+          "date": "2026-11-13",
+          "prompt": "Use case: precise-object-edit. Make a LOCAL correction to the attached Breachline painting. Preserve BOTH men's faces EXACTLY, especially the thin husk's liked new downturned face, hair, expression and head angle. Preserve clothes, armour, positions, light, canvas framing and measured oil/acrylic brushwork. One 1536x1024 landscape painting, no writing.\nFix the contact between the men. The more alert man on SCREEN LEFT uses his ANATOMICAL LEFT arm, the arm next to the other man. Remove the conspicuous palm-up cupped hand that is currently on the FRONT of the thin man's sleeve. Instead, his forearm passes gently underneath the thin man's ANATOMICAL RIGHT elbow and his left HAND rests naturally IN THE NARROW GAP BETWEEN THE THIN MAN'S RIGHT ARM AND HIS RIGHT HIP. The hand is tucked on the INNER side of that hanging arm, on the screen-right side of the elbow, close to the husk's belt. A neutral untwisted wrist, a relaxed small supporting grip, fingers pointing gently DOWN along the inner elbow, partly occluded by the husk's sleeve. Do not display an open palm to the viewer. Do not make a claw or a bowl of curled fingers. The supporting forearm and hand form one believable continuous limb, with the husk's elbow resting lightly on it; the contact is quiet and physically ordinary. The husk's right forearm and his own hand continue hanging downward. Keep all other limbs unchanged. It is fine if most of the supporting fingers are naturally hidden in that gap: do not invent visible fingers on the outside just to show the grasp.\nAlso change ONLY the tiny distant soldier silhouettes in the background at SCREEN RIGHT: turn them all to face AWAY from us, proceeding together toward the BACK RIGHT along the barracks, backs of heads and shoulders visible. No soldier in that distant group faces toward the foreground or against the group's direction. Keep these figures small, quiet and minimally rendered.\nEverything else, most especially the two foreground faces and the husk's downturned gaze, stays unchanged.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-v2.png"
+          ],
+          "reference_selection": "200-husk-v2.png is the local edit source; preserve its specifically liked downturned face.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-48abc642-90e5-4bc6-90b0-d7d5e1715f06.png",
+          "filename": "200-husk-v3.png",
+          "selected_for_review": false,
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "request": "Creator likes the v2 husk face. The supporting hand is still wrong: it must sit between the husk's right arm and hip, naturally, rather than flipped outward. Turn the distant small figures so they face the same way.",
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "Liked v2 husk face and downturned gaze retained.",
+              "Supporting left forearm passes beneath the husk's right elbow; hand rests in the inner arm-to-hip gap, naturally partly occluded.",
+              "Distant soldiers show their backs and face the same way."
+            ]
+          },
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 4,
+          "restart_iteration": 1,
+          "date": "2026-11-13",
+          "generation_mode": "fresh_from_approved_design_sheet",
+          "prompt": "Create a completely NEW Breachline card painting from the attached approved ASHBORN ANATOMY SHEET only. The sheet is design reference, not a composition. One landscape 1536 × 1024 oil/acrylic painting, no writing or frame.\n\nA body returned from death while almost none of the person returned: a young adult male Ashborn pauses just outside a cold barracks gate, chin slightly lowered, gaze empty and patient. Beside him a more present older male Ashborn gently guides him into the yard. Ordinary adult size, cold ash-olive pallor, hollow facial planes, whole bodies, restrained healed scars. Use the sheet's male range to invent these two individuals. Plain worn charcoal-blue military tunics and trousers, one modest old iron breastplate on the husk. Their situation is harsh, not a benevolent clinic.\n\nFresh three-quarter view, figures seen from head to boots with space around them; the husk stands a little ahead at centre-right, the companion just behind to his left. Their quiet contact is easy to read: the companion's ANATOMICAL LEFT arm reaches under the husk's ANATOMICAL RIGHT elbow. His relaxed left hand sits on the INNER side of that arm, in the gap between the husk's arm and hip. A straight comfortable wrist, fingers gently contacting cloth; no outward cupped palm. Both shoulders, elbows and wrists connect naturally. The husk's own forearm hangs loosely. The companion looks toward him. A few very small soldiers beyond the gate all walk away in the same direction.\n\nCool morning light crosses simple warm-grey masonry and worn blue cloth; faces and hand contact remain readable. Let broad opaque strokes and quiet colour planes carry the image. Selectively resolve faces and the contact, simplify the rest. Smooth matte skin planes, clean silhouettes and soft lost edges; no grain overlay, stippled surface noise, excessive fabric scratches, pore detail, photographic sharpening or glossy 3D rendering.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+          ],
+          "reference_selection": "Approved PL3D full male visual range for Ashborn anatomy only. No discarded card painting attached or used.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-13c82038-b2f8-49fe-8bc3-911e7eee4f75.png",
+          "filename": "200-husk-fresh-01.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "New wider barracks-gate composition and whole figures.",
+              "Companion's guiding grip and all visible limbs inspected; natural hand shape without outward cupped palm.",
+              "Husk looks downward; distant soldiers face away together.",
+              "Broad masonry and matte face/cloth planes replace the noisy edit chain."
+            ]
+          },
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/200-husk-fresh-01.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-13c82038-b2f8-49fe-8bc3-911e7eee4f75.png",
+      "caption": "A nearly empty Ashborn is guided through a barracks gate by a companion who retains more awareness. This new composition uses the approved Ashborn design; the individuals and moment remain proposals.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "New wider barracks-gate composition and whole figures.",
+          "Companion's guiding grip and all visible limbs inspected; natural hand shape without outward cupped palm.",
+          "Husk looks downward; distant soldiers face away together.",
+          "Broad masonry and matte face/cloth planes replace the noisy edit chain."
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5c7162d80eba5bc0eb8262c05753c156c957a028b7433367d32ec91612ae4f24",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920"
+      },
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "200-husk-fresh-01.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "200-husk.png",
+          "verdict": "revision_requested",
+          "note": "Turn the more present man's left hand underneath the husk's right arm; tilt the husk's head slightly down."
+        },
+        {
+          "date": "2026-11-13",
+          "round": 2,
+          "reviewed_filename": "200-husk-v2.png",
+          "verdict": "revision_requested",
+          "note": "Creator likes the v2 husk face. The supporting hand is still wrong: it must sit between the husk's right arm and hip, naturally, rather than flipped outward. Turn the distant small figures so they face the same way."
+        },
+        {
+          "date": "2026-11-13",
+          "round": 3,
+          "verdict": "all_previous_iterations_rejected",
+          "note": "Later versions became noisy; errors compounded. All prior versions of these two paintings are rejected."
+        }
+      ],
+      "previous_images_excluded": true,
+      "generation_mode": "fresh_from_approved_design_sheet",
+      "restart_iteration": 1,
+      "creator_liked": true,
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/200-husk-fresh-01.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/200-husk-fresh-01.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-fresh-01.png",
+      "selected_attempt": 4
+    },
+    {
+      "code": 201,
+      "title": "Tithe-drinker",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/201-tithedrinker.png",
+      "people": "Ashborn",
+      "alignment": "Dominion",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+      ],
+      "reference_selection": "PL3D whole range, female subject related to PL3D.4; new individual",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult Ashborn woman who has risen to rare power sits in a dim Ashen Court chamber while TWO emptier Ashborn attend her. She is more attractive and more alive-looking than the attendants: elegant hollow facial planes, grey-olive pallor eased by a subtle natural warmth around lips and cheeks, lucid watchful eyes, dark hair pinned back, one faint healed scar. Clearly the same returned-from-death people as the reference, ordinary adult scale, no fangs or glowing veins. She wears a simple fitted dark garnet gown with modest open neckline and tarnished silver cuff. One spent pale male attendant carefully fastens the cuff at her resting wrist; another holds a basin lower in shadow, every hand and contact coherent. Her head turns slightly toward the viewer, expression quietly assessing rather than sneering. Soft cool window light from left lights all three, her warmer living colour sets her apart. Dark wood, a heavy chair, folded cloth: few broad background shapes. Oppressive dependency, no draining victim, luxury spectacle or comic villain effects.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult Ashborn woman who has risen to rare power sits in a dim Ashen Court chamber while TWO emptier Ashborn attend her. She is more attractive and more alive-looking than the attendants: elegant hollow facial planes, grey-olive pallor eased by a subtle natural warmth around lips and cheeks, lucid watchful eyes, dark hair pinned back, one faint healed scar. Clearly the same returned-from-death people as the reference, ordinary adult scale, no fangs or glowing veins. She wears a simple fitted dark garnet gown with modest open neckline and tarnished silver cuff. One spent pale male attendant carefully fastens the cuff at her resting wrist; another holds a basin lower in shadow, every hand and contact coherent. Her head turns slightly toward the viewer, expression quietly assessing rather than sneering. Soft cool window light from left lights all three, her warmer living colour sets her apart. Dark wood, a heavy chair, folded cloth: few broad background shapes. Oppressive dependency, no draining victim, luxury spectacle or comic villain effects.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-418c8d63-d458-4700-9e92-e2801cd0e0d4.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/201-tithedrinker.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-418c8d63-d458-4700-9e92-e2801cd0e0d4.png",
+      "caption": "A lucid Ashborn woman receives the attention of spent attendants, with a little warmth returning to her face. Her appearance follows the revised brief; her identity and standing in the Court remain proposals.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a19d96d772b368770e979ce39d35fa6d8e1713176dc02a34f270e8df63e458e7",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "201-tithedrinker.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "201-tithedrinker.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/201-tithedrinker.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/201-tithedrinker.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/201-tithedrinker.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 202,
+      "title": "Salt-road caravaneer",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/202-caravaneer.png",
+      "people": "Banded folk",
+      "alignment": "Fervor",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+      ],
+      "reference_selection": "PL8B top row salt variant; new man, not Rusk",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA strong hardy SALT-variant Banded folk male caravaneer on white salt flats in hard daylight, guarding a halted family salt train. Use top-row salt anatomy: copper ochre skin with pale bands, distinctive layered broad brow and cheek/nose structure, solid build; new individual unlike any earlier guard. Medium close view from slightly below, torso turned left, his gaze outward toward tiny far riders barely implied at horizon. He stands level and braced beside the lead cart, ONE hand rests naturally on the pommel of a SHEATHED short sword at his belt, never brandishing. Other arm relaxed. Personally repaired muted indigo padded vest, iron breastplate and plain trousers, clear straps, no uniform. Canvas cart roof crosses one upper corner, white salt sacks behind remain soft. Bleached salt, cobalt shadow and rusty orange skin; one high hard sun with bright salt bounce keeping eyes visible. Calm readiness and defended ground, not raised-foot rock pose, sunset mountain road or raging warrior.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA strong hardy SALT-variant Banded folk male caravaneer on white salt flats in hard daylight, guarding a halted family salt train. Use top-row salt anatomy: copper ochre skin with pale bands, distinctive layered broad brow and cheek/nose structure, solid build; new individual unlike any earlier guard. Medium close view from slightly below, torso turned left, his gaze outward toward tiny far riders barely implied at horizon. He stands level and braced beside the lead cart, ONE hand rests naturally on the pommel of a SHEATHED short sword at his belt, never brandishing. Other arm relaxed. Personally repaired muted indigo padded vest, iron breastplate and plain trousers, clear straps, no uniform. Canvas cart roof crosses one upper corner, white salt sacks behind remain soft. Bleached salt, cobalt shadow and rusty orange skin; one high hard sun with bright salt bounce keeping eyes visible. Calm readiness and defended ground, not raised-foot rock pose, sunset mountain road or raging warrior.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b16b5799-abe2-4f10-8b06-5aef1a19258f.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/202-caravaneer.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b16b5799-abe2-4f10-8b06-5aef1a19258f.png",
+      "caption": "A salt-variant caravaneer watches the flats with one hand resting on his sheathed sword. His restrained readiness follows the creator’s direction; the guard and family caravan are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6b1dd2cbe9682d03a0cf1783cf69f9b8d16f3b1a9ad2065a14faf6ecdd63955e",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "202-caravaneer.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "202-caravaneer.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/202-caravaneer.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/202-caravaneer.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/202-caravaneer.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 203,
+      "title": "Floodplain farmer",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png",
+      "people": "Banded folk",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-331d407f-589b-40d5-81b2-7736ad535839.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+      ],
+      "reference_selection": "First-pass painting as edit target; PL8B bottom-middle silt woman for darker olive-brown palette and broader face.",
+      "prompt": "Use case: identity-preserve. Edit image 1 only to correct the farmer's Banded folk variant. Image 2 is the approved species lineup: use ONLY the BOTTOM MIDDLE SILT-VARIANT WOMAN for her skin colouring and facial structure. Change her vivid orange-copper salt skin to the noticeably DARKER MUTED OLIVE-BROWN SILT colouring of that bottom-middle woman, including face, neck, both exposed arms and hands. Keep pale markings subdued stone-grey rather than brilliant white, and match that woman's rounder broader brow/cheek/nose anatomy. The correction should plainly distinguish her from the orange salt variant in the TOP row, which must not be used. Preserve exactly the current female farmer's pose, limb connections, clothing, bundle of grain, hand grips, water, rack, framing, scenery and coherent overcast light. Keep naturally matte painted skin, visible selective oil/acrylic brushwork, quiet background, landscape 1536x1024. No text or border. This is a local identity/palette correction, not a restaging.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA sturdy adult SILT-variant Banded folk woman at a flooded grain field in a broad river delta. Bottom-middle reference supplies the related broad brow, cheeks and nose with darker olive-ochre silt colouring and subdued pale bands, powerful ordinary proportions. She is waist-deep near the edge, lifting a bound sheaf of wet cut stalks onto a low wooden bank rack. Both hands actually grasp the same bundle from beneath; gaze on her work, elbows and shoulders bear its weight. Simple faded green work wrap, rolled short sleeves, no armour or caravan weapons. Three-quarter view across water, face and hands the focus, grey-green delta and submerged grain rows broadly implied. Cool weather light from an opening in the clouds, warm cut grain against olive skin and slate water. Work looks tiring and practical, no heroic grin, special effects or decorative glowing plants. Keep lower submerged anatomy plausible through water, no extra limbs.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-331d407f-589b-40d5-81b2-7736ad535839.png",
+          "selected_for_review": false,
+          "filename": "203-floodfarmer.png",
+          "review_note": "Salt-like copper colouring did not preserve the required silt variant."
+        },
+        {
+          "revision": 2,
+          "prompt": "Use case: identity-preserve. Edit image 1 only to correct the farmer's Banded folk variant. Image 2 is the approved species lineup: use ONLY the BOTTOM MIDDLE SILT-VARIANT WOMAN for her skin colouring and facial structure. Change her vivid orange-copper salt skin to the noticeably DARKER MUTED OLIVE-BROWN SILT colouring of that bottom-middle woman, including face, neck, both exposed arms and hands. Keep pale markings subdued stone-grey rather than brilliant white, and match that woman's rounder broader brow/cheek/nose anatomy. The correction should plainly distinguish her from the orange salt variant in the TOP row, which must not be used. Preserve exactly the current female farmer's pose, limb connections, clothing, bundle of grain, hand grips, water, rack, framing, scenery and coherent overcast light. Keep naturally matte painted skin, visible selective oil/acrylic brushwork, quiet background, landscape 1536x1024. No text or border. This is a local identity/palette correction, not a restaging.",
+          "references": [
+            "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-331d407f-589b-40d5-81b2-7736ad535839.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-c4b25bdb-148e-49c9-b34e-0504a0047917.png",
+          "filename": "203-floodfarmer-v2.png",
+          "selected_for_review": false,
+          "review_note": "Silt palette and facial structure corrected; checked visually.",
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-c4b25bdb-148e-49c9-b34e-0504a0047917.png",
+      "caption": "A silt-variant farmer lifts a wet grain sheaf from floodwater onto a low rack. The floodplain home and variant are established; this individual and harvest moment are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60",
+      "reference_sha256": {
+        "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-331d407f-589b-40d5-81b2-7736ad535839.png": "901c177cda8c22b072b4d0cf60599163bf98ef33c1ad1b89a9cf825d23013ba5",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "203-floodfarmer-v2.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "203-floodfarmer-v2.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png",
+      "selected_attempt": 2
+    },
+    {
+      "code": 204,
+      "title": "Caravan head",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png",
+      "people": "Banded folk",
+      "alignment": "Fervor",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "reference_selection": "Approved PL8B male salt variant TOP-MIDDLE for leader; same accepted species range for companions. G2-5 Salt-flat migrant ONLY, bottom-middle cell 5 of g2.png, for animal anatomy. No discarded card painting attached or used.",
+      "prompt": "Create a completely NEW Breachline card painting using only these approved DESIGN SHEETS. Image 1 supplies Banded folk anatomy; image 2 supplies the selected animal. Compose a new scene. Landscape 1536 × 1024, traditional oil/acrylic painting, no writing or frame.\n\nA confident elected caravan head leads his family band along a rocky mountain road in clear daylight, away from the salt plains. He is a strong adult MALE Banded folk of the salt variant: copper-ochre skin with pale bands and the broad integrated brow and cheek anatomy of image 1 TOP MIDDLE. Give this new individual a thoughtful, alert face. Light practical protection: a short quilted leather jack over an off-white shirt, a faded ochre travelling mantle and a sheathed sword at the belt. No full plate or helmet. Brown leather open-toed travelling shoes with broad straps and sturdy soles, both feet visible and naturally grounded.\n\nPlace him at the FRONT of the caravan, near the right third of the painting, moving and looking to SCREEN RIGHT. Leave open road ahead. The caravan follows BEHIND him to the left along the same road, winding down from the left distance. A loaded wooden cart and its draught animal are clearly behind the leader, all moving rightward. Two secondary Banded companions work as they travel: one helps push the rear rail of the cart on the incline; the other walks beside it carrying a bundled canvas roll on a shoulder. Their eyes, hands and balance agree with their tasks.\n\nThe draught animal is ONLY the BOTTOM-MIDDLE creature in image 2, G2-5 Salt-flat migrant. Preserve its narrow body, high shaggy rust-and-cream hindquarters, four long jointed legs and broad padded toes, long low-reaching neck and blunt soft-lipped head. Believable breast harness and shafts connect it to the cart. Ignore all other animals on the sheet.\n\nAn airy mountain passage with a few scrub trees, large limestone slopes and blue distant ridges. Muted ochre, slate blue and olive green; a clear patch of daylight links the leader, workers and cart. Use broad confident paint and simplified masses, precise attention on the leader's face and readable hands. Naturally matte skin and cloth. Quiet economical background, no carpet of flowers, no grain/noise overlay, all-over microtexture, repeated scratch marks, over-sharpening, photographic rendering or glossy animation.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nBy DAY, on a green-brown inland trading road well AWAY from salt plains, a confident older adult Banded folk woman directs her family caravan's departure. Use top-right older salt variant for her face and banded copper skin, independent strong presence. Waist-up leader at left foreground turned toward the rightward onward road, one purposeful open-hand gesture guiding a cart into line, eyes on the way ahead, quietly pleased and ready for the next stage. Her other hand rests on a cart rail as she participates. Rust-red repaired travelling coat, simple belt, no crown or uniform. Two secondary Banded kin, one salt and one silt variant, lift a crate into a cart with coherent effort; all same species anatomy, no crowd of peoples. Wheel tracks, tree-lined road and low distant hill only broad paint. Clear soft midday sunlight, warm sienna and green foliage with blue shadows. Leader respects the work, no dismissive lounge, no salt-flat setting or sunset.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-794a9417-9731-4b0e-bdea-c35c371a9cbb.png",
+          "selected_for_review": false,
+          "filename": "204-caravanhead.png",
+          "creator_feedback": "Make the caravan head a man, walking beside a caravan in motion through more mountainous terrain.",
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-13",
+          "prompt": "Use case: stylized-concept. Re-stage Breachline's Caravan head as a MALE Banded folk leader walking ALONGSIDE a caravan already MOVING through moderately MOUNTAINOUS country, in daylight. One finished oil/acrylic fantasy painting, 1536x1024 landscape, no text, numbers, frames, logos or watermarks.\nImage 1 is the required species anatomy reference. Use the TOP MIDDLE adult male salt variant as the basis: sturdy strong male build, clearly masculine broad face and jaw, shared layered brow and cheek structure, copper-ochre skin with pale bands. No human substitution. His identity is new; give him a thoughtful assured expression, looking ahead down the route, not dismissive or theatrical. He wears a practical personally repaired rust-red travelling coat, off-white shirt, dark trousers and boots, simple belt, no crown or uniform.\nMedium-wide three-quarter side view: the male leader walks on the OUTSIDE EDGE of the road in the LEFT foreground, beside the lead wagon's side rather than in front of it or sitting in it. A natural forward stride, both feet correctly connected, one hand resting lightly on the moving wagon's side rail and the other low, directing a companion onward with a small purposeful gesture. The broad cart wheel rolls beside him farther into the frame. Cart, leader and visible draught animal all travel in the SAME clear direction along one continuous mountain road. The train rounds a bend through a rocky green valley with layered slopes, a few scrub trees and higher grey peaks, no salt flats and no loading stop. Two Banded kin are secondary travelling companions, not lifting crates.\nImage 2 supplies ONLY the BOTTOM-MIDDLE animal, G2-5 salt-flat migrant, for the animal pulling the lead wagon. Ignore all other animals on this sheet. Preserve that narrow long-legged four-footed grazer's long low-reaching soft-lipped head, jointed legs, broad padded toes and shaggy rust-and-cream mantle. It is large enough to pull a wagon, and its scale agrees with the reference human silhouette. Keep it secondary and farther away along the road, attached with a believable padded breast harness and taut traces to the cart. Don't hide the connection or put the beast behind the cart.\nCoherent clear daylight with mountain shadows, warm russet against limestone grey and deep olive green. Preserve the successful batch's measured visible brushwork, matte skin/cloth, selectively sharp face/hands, quiet economical background marks and readable midtones. Lively but grounded, no glossy CGI, photographic detail or invented spell effects.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "reference_selection": "Banded sheet TOP-MIDDLE adult male salt variant; g2.png BOTTOM-MIDDLE cell 5, G2-5 Salt-flat migrant ONLY; other cells excluded. Normalized rectangle [1/3, 0.5, 1/3, 0.5].",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-81052987-96e0-418d-89dd-dbbef2e98e8d.png",
+          "filename": "204-caravanhead-v2.png",
+          "selected_for_review": false,
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "request": "Make the caravan head a man, walking beside a caravan in motion through more mountainous terrain.",
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "Male salt-variant Banded leader strides beside the wagon with a hand on its side.",
+              "Mountain road, peaks and moving caravan replace the loading scene.",
+              "G2-5 animal design is visibly connected to the lead cart."
+            ]
+          },
+          "creator_feedback": "Preserve the liked shoes. Add a weapon and light armour, only mildly militaristic. He is at the front facing right with the caravan following behind, coming the other way from v2. The two background companions must be doing useful labour.",
+          "creator_review": "Further revision requested; selected features retained.",
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 3,
+          "date": "2026-11-13",
+          "prompt": "Use case: composition-edit. Re-stage the attached Breachline Caravan head painting (image 1) to correct the direction of the procession. Preserve THIS SAME MALE Banded folk leader: distinctive copper-ochre banded skin and raised head anatomy, strong masculine face, rust-red repaired travelling coat, pale shirt, brown trousers. In particular PRESERVE HIS LIKED SHOES: practical brown leather open-toe travelling shoes with broad cutout straps, buckles and thick soles. Both shoes remain clearly visible, same distinctive design, attached naturally to his feet. Keep the landscape 1536x1024, painted oil/acrylic appearance, clear warm daylight, mountainous country and palette. No text or frame.\nCHANGE THE BLOCKING so there is no doubt he is at the FRONT. Put him in the RIGHT FOREGROUND, walking toward SCREEN RIGHT, with his head, gaze and body facing screen right in a clear three-quarter profile. He looks ahead along the path. All the wagons, the draught beast and the two other people FOLLOW BEHIND HIM TO THE LEFT. The road approaches from the upper LEFT background, turns into the middle LEFT, and continues past the leader toward the lower RIGHT. It must read as one caravan following one path in one direction, left-to-right, with this man ahead of the lead animal and wagon. No carts or people farther ahead of him on the right, and no opposing line of carts in the right background. Leave a little open path beyond his leading foot at the right edge.\nGive him a modest weapon and LIGHT ARMOUR suitable for a resourceful caravan leader: a short simple brown leather brigandine vest with small rivets beneath his open rust-red coat, and a practical SHEATHED short sword hanging convincingly from a belt at his hip. One relaxed hand can rest near the sword's pommel while he walks, the other swings low naturally. Only mildly armed; no helmet, large pauldrons, plate suit, heroic martial pose or drawn weapon. He remains a working travelling leader, not a uniformed soldier.\nBehind him toward SCREEN LEFT show the rust-and-cream long-necked grazer drawing the loaded wagon, all travelling RIGHT along the same road. The two former idle companions now do clear practical LABOUR BESIDE THE WAGON while moving: one leans forward pushing its rear side rail to help on the incline, hands planted on the rail and body weight working; the other holds a load rope and steadies a basket against the wagon side as it jolts along. Their gaze goes to their tasks, their hand contacts and footing make sense. Both are secondary Banded folk, smaller in perspective and well behind the leader.\nImage 2 is animal continuity only: use ONLY G2-5, the BOTTOM MIDDLE creature (cell 5). Preserve its narrow body, high rounded hindquarters, rust-and-cream shaggy mantle, four long jointed legs, broad padded toes, long low neck and soft-lipped blunt head. Harness this large animal to the cart with sensible shafts and traces. Do not borrow any other animal from the sheet. The animal, wagon and workers all FOLLOW the leader to the right. Keep the mountain vista broadly painted and quiet; selective sharper attention on the leader's face, hands, light kit and liked shoes.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-v2.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "reference_selection": "204-caravanhead-v2.png is the identity, coat, shoes and mountain setting edit source. g2.png BOTTOM-MIDDLE cell 5 (G2-5 Salt-flat migrant) is animal continuity only; every other cell excluded.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-14117e22-8c81-4873-8280-b4522098ed38.png",
+          "filename": "204-caravanhead-v3.png",
+          "selected_for_review": false,
+          "status": "rejected_deleted",
+          "creator_approved": false,
+          "request": "Preserve the liked shoes. Add a weapon and light armour, only mildly militaristic. He is at the front facing right with the caravan following behind, coming the other way from v2. The two background companions must be doing useful labour.",
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "Same male Banded leader, rust coat and liked open travelling shoes retained.",
+              "Leader is in right foreground facing right, ahead of the animal and cart.",
+              "A sheathed sword and light leather armour added.",
+              "Two companions behind him visibly push the cart and steady a basket; gaze and hand contacts follow their work."
+            ]
+          },
+          "deleted": true,
+          "excluded_from_references": true
+        },
+        {
+          "revision": 4,
+          "restart_iteration": 1,
+          "date": "2026-11-13",
+          "generation_mode": "fresh_from_approved_design_sheets",
+          "prompt": "Create a completely NEW Breachline card painting using only these approved DESIGN SHEETS. Image 1 supplies Banded folk anatomy; image 2 supplies the selected animal. Compose a new scene. Landscape 1536 × 1024, traditional oil/acrylic painting, no writing or frame.\n\nA confident elected caravan head leads his family band along a rocky mountain road in clear daylight, away from the salt plains. He is a strong adult MALE Banded folk of the salt variant: copper-ochre skin with pale bands and the broad integrated brow and cheek anatomy of image 1 TOP MIDDLE. Give this new individual a thoughtful, alert face. Light practical protection: a short quilted leather jack over an off-white shirt, a faded ochre travelling mantle and a sheathed sword at the belt. No full plate or helmet. Brown leather open-toed travelling shoes with broad straps and sturdy soles, both feet visible and naturally grounded.\n\nPlace him at the FRONT of the caravan, near the right third of the painting, moving and looking to SCREEN RIGHT. Leave open road ahead. The caravan follows BEHIND him to the left along the same road, winding down from the left distance. A loaded wooden cart and its draught animal are clearly behind the leader, all moving rightward. Two secondary Banded companions work as they travel: one helps push the rear rail of the cart on the incline; the other walks beside it carrying a bundled canvas roll on a shoulder. Their eyes, hands and balance agree with their tasks.\n\nThe draught animal is ONLY the BOTTOM-MIDDLE creature in image 2, G2-5 Salt-flat migrant. Preserve its narrow body, high shaggy rust-and-cream hindquarters, four long jointed legs and broad padded toes, long low-reaching neck and blunt soft-lipped head. Believable breast harness and shafts connect it to the cart. Ignore all other animals on the sheet.\n\nAn airy mountain passage with a few scrub trees, large limestone slopes and blue distant ridges. Muted ochre, slate blue and olive green; a clear patch of daylight links the leader, workers and cart. Use broad confident paint and simplified masses, precise attention on the leader's face and readable hands. Naturally matte skin and cloth. Quiet economical background, no carpet of flowers, no grain/noise overlay, all-over microtexture, repeated scratch marks, over-sharpening, photographic rendering or glossy animation.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "reference_selection": "Approved PL8B male salt variant TOP-MIDDLE for leader; same accepted species range for companions. G2-5 Salt-flat migrant ONLY, bottom-middle cell 5 of g2.png, for animal anatomy. No discarded card painting attached or used.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-7665818a-4b44-49eb-ac43-11ce8f55a6ca.png",
+          "filename": "204-caravanhead-fresh-01.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "New costume, scene and figures built from approved design sheets.",
+              "Male leader at right travels ahead of the cart with sword, light protection and open shoes.",
+              "Two companions work: one pushes the cart, another carries a canvas roll.",
+              "Animal, harness, feet, worker hands and coherent rightward travel inspected.",
+              "Quieter broad landscape paint without the previous repeated surface scratches."
+            ]
+          },
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-7665818a-4b44-49eb-ac43-11ce8f55a6ca.png",
+      "caption": "A lightly armed male caravan head leads his family band toward the right along a mountain road, with workers and the loaded cart following behind. The Banded folk and salt-flat migrant are established designs; this leader, journey and animal’s draught role are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "New costume, scene and figures built from approved design sheets.",
+          "Male leader at right travels ahead of the cart with sword, light protection and open shoes.",
+          "Two companions work: one pushes the cart, another carries a canvas roll.",
+          "Animal, harness, feet, worker hands and coherent rightward travel inspected.",
+          "Quieter broad landscape paint without the previous repeated surface scratches."
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d23a676b33f6353975d964aefdd14c9aeacb3c86729566d710f35eabfa2bae0e",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+      },
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "204-caravanhead-fresh-01.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "204-caravanhead.png",
+          "verdict": "revision_requested",
+          "note": "Make the caravan head a man, walking beside a caravan in motion through more mountainous terrain."
+        },
+        {
+          "date": "2026-11-13",
+          "round": 2,
+          "reviewed_filename": "204-caravanhead-v2.png",
+          "verdict": "revision_requested",
+          "note": "Preserve the liked shoes. Add a weapon and light armour, only mildly militaristic. He is at the front facing right with the caravan following behind, coming the other way from v2. The two background companions must be doing useful labour."
+        },
+        {
+          "date": "2026-11-13",
+          "round": 3,
+          "verdict": "all_previous_iterations_rejected",
+          "note": "Later versions became noisy; errors compounded. All prior versions of these two paintings are rejected."
+        }
+      ],
+      "previous_images_excluded": true,
+      "generation_mode": "fresh_from_approved_design_sheets",
+      "restart_iteration": 1,
+      "creator_liked": true,
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png",
+      "selected_attempt": 4
+    },
+    {
+      "code": 205,
+      "title": "Caravan guard",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/205-caravanguard-v2.png",
+      "people": "Banded folk",
+      "alignment": "Neutral",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "reference_selection": "Original 205-caravanguard.png for Rusk identity and composition; g2.png BOTTOM-MIDDLE cell 5, G2-5 Salt-flat migrant ONLY; other cells excluded. Normalized rectangle [1/3, 0.5, 1/3, 0.5].",
+      "prompt": "Use case: compositing. Edit image 1, the Breachline Caravan guard painting. Preserve Rusk in the foreground EXACTLY: face, copper skin and bands, blue-grey eyes, red quilted vest, single shoulder plate, cloak, sword, walking pose, hands, boots and size. Preserve the rainy wooded mountain road, cool daylight, canvas cart, driver, colour relationships and measured oil/acrylic brushwork. Landscape 1536x1024, no text or frame.\nAdd ONE clearly VISIBLE draught animal in the middle ground pulling the existing covered cart. Image 2 is the accepted animal reference: use ONLY G2-5, BOTTOM-MIDDLE CELL, the SALT-FLAT MIGRANT. Ignore all five other animals. Preserve its narrow body, high rounded hindquarters under a shaggy rust-and-cream mantle, four long jointed legs with broad padded toes, long low-reaching neck and soft-lipped blunt head, no horns. Do not turn it into a horse, camel, bull or a new species. The animal is extra-large in its reference, so it can credibly pull the cart; place it farther away than Rusk at a consistent perspective scale, rather than shrinking its anatomy.\nThe animal must stand/walk IN FRONT OF the wagon on its route toward the foreground, behind Rusk but offset to his SCREEN RIGHT so its head, body, feet and harness can be seen. If necessary, move the background wagon a little farther up and to the right along the same road to create room. Do not move or cover Rusk. Head/neck reach downward and forward naturally; four leg connections and visible planted feet follow the muddy road.\nFit a simple well-constructed padded breast harness around the animal's upper chest/shoulders, not a tight throat noose. Two taut leather traces connect it to the wagon's drawbar, with wooden shafts visible beside the body where appropriate; the load path from animal to cart must make sense. Keep the current driver visible on the seat. A driver-to-bridle rein can be restrained and secondary. Match the rainy diffused light, wet surfaces, muted colour and less-detailed background; the animal should belong in the painting without becoming sharper than Rusk. No extra animals or new main figures.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nRe-stage the SAME RUSK from image 1 in a completely new painting, with species anatomy supported by image 2. Preserve his exact strong copper-salt face, layered brow, blue-grey eyes, pale arm bands, build, red quilted vest, one steel shoulder plate and recognizable working gear. Put him in a substantial weather-darkened charcoal-green CLOAK, hood down so his head remains clear. He WALKS ahead of and GUIDES a caravan through cool rainy wooded high country, not a salt road, and not seated or braced with foot on a rock. Full figure in three-quarter front view, moving toward lower left while looking along the turning path; cloak falls back enough for one banded forearm. His curved sword remains sheathed, hand free and low. One following covered cart visibly fits on the same muddy road; driver distant, no need for visible animals. Cool silvery sky light bounced from wet stone, a warm ochre patch on distant leaves, broad mountain tree silhouettes. Same trusted individual, entirely different cloak, pose, daylight and country; no reuse of image 1 composition.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-paintings-2026-11-13/final/n2-fervor-rusk-saltroad-guard-v2.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-a2b0fc6f-4656-4181-ac8a-653a006ceb2a.png",
+          "selected_for_review": false,
+          "filename": "205-caravanguard.png",
+          "creator_feedback": "Keep the liked guard and add an existing reference animal that can plausibly pull the cart.",
+          "status": "retained_revision_source"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-13",
+          "prompt": "Use case: compositing. Edit image 1, the Breachline Caravan guard painting. Preserve Rusk in the foreground EXACTLY: face, copper skin and bands, blue-grey eyes, red quilted vest, single shoulder plate, cloak, sword, walking pose, hands, boots and size. Preserve the rainy wooded mountain road, cool daylight, canvas cart, driver, colour relationships and measured oil/acrylic brushwork. Landscape 1536x1024, no text or frame.\nAdd ONE clearly VISIBLE draught animal in the middle ground pulling the existing covered cart. Image 2 is the accepted animal reference: use ONLY G2-5, BOTTOM-MIDDLE CELL, the SALT-FLAT MIGRANT. Ignore all five other animals. Preserve its narrow body, high rounded hindquarters under a shaggy rust-and-cream mantle, four long jointed legs with broad padded toes, long low-reaching neck and soft-lipped blunt head, no horns. Do not turn it into a horse, camel, bull or a new species. The animal is extra-large in its reference, so it can credibly pull the cart; place it farther away than Rusk at a consistent perspective scale, rather than shrinking its anatomy.\nThe animal must stand/walk IN FRONT OF the wagon on its route toward the foreground, behind Rusk but offset to his SCREEN RIGHT so its head, body, feet and harness can be seen. If necessary, move the background wagon a little farther up and to the right along the same road to create room. Do not move or cover Rusk. Head/neck reach downward and forward naturally; four leg connections and visible planted feet follow the muddy road.\nFit a simple well-constructed padded breast harness around the animal's upper chest/shoulders, not a tight throat noose. Two taut leather traces connect it to the wagon's drawbar, with wooden shafts visible beside the body where appropriate; the load path from animal to cart must make sense. Keep the current driver visible on the seat. A driver-to-bridle rein can be restrained and secondary. Match the rainy diffused light, wet surfaces, muted colour and less-detailed background; the animal should belong in the painting without becoming sharper than Rusk. No extra animals or new main figures.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+          ],
+          "reference_selection": "Original 205-caravanguard.png for Rusk identity and composition; g2.png BOTTOM-MIDDLE cell 5, G2-5 Salt-flat migrant ONLY; other cells excluded. Normalized rectangle [1/3, 0.5, 1/3, 0.5].",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-af629059-63e2-426f-b758-6d0af271d3b3.png",
+          "filename": "205-caravanguard-v2.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "request": "Keep the liked guard and add an existing reference animal that can plausibly pull the cart.",
+          "visual_review": {
+            "status": "checked_for_creator_review",
+            "checks": [
+              "Rusk's established identity, red vest, single shoulder plate and rainy-road composition retained.",
+              "G2-5 animal stands visibly ahead of the covered wagon.",
+              "Harness and cart shafts are visible with plausible feet on the road."
+            ]
+          },
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/205-caravanguard-v2.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-af629059-63e2-426f-b758-6d0af271d3b3.png",
+      "caption": "Rusk’s rainy-road scene includes a salt-flat migrant visibly harnessed ahead of the covered cart. His identity and the animal design are established; the wider use of this animal for draught work remains proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Rusk's established identity, red vest, single shoulder plate and rainy-road composition retained.",
+          "G2-5 animal stands visibly ahead of the covered wagon.",
+          "Harness and cart shafts are visible with plausible feet on the road."
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cbb292d7fe1a34bb10f851bc55ecba00d33babd8d2444903cbc198a09896c198",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard.png": "591bc47c900c6a08fbceb5f07421cc27dec22e542c13fbef15ace57ef08071a5",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+      },
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "205-caravanguard-v2.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "205-caravanguard.png",
+          "verdict": "revision_requested",
+          "note": "Keep the liked guard and add an existing reference animal that can plausibly pull the cart."
+        }
+      ],
+      "creator_liked": true,
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/205-caravanguard-v2.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/205-caravanguard-v2.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/205-caravanguard-v2.png",
+      "selected_attempt": 2
+    },
+    {
+      "code": 206,
+      "title": "Sallow Bridge mason",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/206-bridgemason.png",
+      "people": "Crest folk",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+      ],
+      "reference_selection": "CR3 whole sheet; female mason with preserved anatomical ridges",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA Crest folk adult woman mason restores an old imperial stone bridge over a river. Preserve chalk-tan skin, swept fluted BONE head crest, integrated small ridges on exposed shoulders/arms and forearms, painted russet guild cheek marks. Low three-quarter view from a sound wooden scaffold with rails, she kneels steadily on the planks fitting a modest new wedge stone into a weathered arch joint. One hand steadies the stone, the other holds a small mallet with a coherent grip; she looks closely at the joint. New pale limestone matches the old masonry's cut exactly. Simple ivory work tunic and dusty leather apron, bare forearms. Bridge arch and river imply the older Empire through ordinary usable infrastructure, no monumental magical machine. Warm morning daylight from the side, softly reflected water under the arch keeps face legible. A carefully painted hand/stone contact and elegant crest carry appeal, surrounding stone and water broad and quiet. No written signs, halos or ritual.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA Crest folk adult woman mason restores an old imperial stone bridge over a river. Preserve chalk-tan skin, swept fluted BONE head crest, integrated small ridges on exposed shoulders/arms and forearms, painted russet guild cheek marks. Low three-quarter view from a sound wooden scaffold with rails, she kneels steadily on the planks fitting a modest new wedge stone into a weathered arch joint. One hand steadies the stone, the other holds a small mallet with a coherent grip; she looks closely at the joint. New pale limestone matches the old masonry's cut exactly. Simple ivory work tunic and dusty leather apron, bare forearms. Bridge arch and river imply the older Empire through ordinary usable infrastructure, no monumental magical machine. Warm morning daylight from the side, softly reflected water under the arch keeps face legible. A carefully painted hand/stone contact and elegant crest carry appeal, surrounding stone and water broad and quiet. No written signs, halos or ritual.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-6c731ada-15e7-47cc-97af-6db1cdcf0d1e.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/206-bridgemason.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-6c731ada-15e7-47cc-97af-6db1cdcf0d1e.png",
+      "caption": "A Crest folk mason carefully fits replacement stone into an old imperial bridge. Faithful restoration is established lore; this mason and the identification of the crossing as Sallow Bridge are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "46e228b4eb8095df100b7286b16b830ce373de4c7e5b6da4cea67c4c215191b7",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "206-bridgemason.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "206-bridgemason.png",
+          "verdict": "strongly_liked",
+          "note": "Especially praised as very good."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/206-bridgemason.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/206-bridgemason.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/206-bridgemason.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 207,
+      "title": "Guild improver",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/207-improver.png",
+      "people": "Crest folk",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+      ],
+      "reference_selection": "CR3 species anatomy; distinct adult male craftsperson",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA younger adult male Crest folk stoneworker in a limestone quarry-town workshop improves an old imperial pier fragment. Species anatomy exactly related to CR3: chalk-tan skin, swept fluted bone crest, integrated arm/shoulder ridges, russet painted cheek marks; invent a slightly leaner face and shorter age-appropriate crest. Waist-up leaning forward over the pier, eyes intent on a brass-bound iron tie seated across a stone joint. One hand holds the fitting steady with natural grip while the other palm lies flat on the stone; practical learned magic quietly settles dust into the seam without visible beams or ribbons. Simple teal-blue sleeveless work coat and leather apron, broad forearms visible. A hand drill and two chisels lie on a work bench, a small grounded steam-driven workshop press only a vague background shape. Strong single tall-window daylight, brass accents and limestone cream against muted blue. Everyday confident craft, not optics, a priest, a luminous technical diagram or heroic pose.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA younger adult male Crest folk stoneworker in a limestone quarry-town workshop improves an old imperial pier fragment. Species anatomy exactly related to CR3: chalk-tan skin, swept fluted bone crest, integrated arm/shoulder ridges, russet painted cheek marks; invent a slightly leaner face and shorter age-appropriate crest. Waist-up leaning forward over the pier, eyes intent on a brass-bound iron tie seated across a stone joint. One hand holds the fitting steady with natural grip while the other palm lies flat on the stone; practical learned magic quietly settles dust into the seam without visible beams or ribbons. Simple teal-blue sleeveless work coat and leather apron, broad forearms visible. A hand drill and two chisels lie on a work bench, a small grounded steam-driven workshop press only a vague background shape. Strong single tall-window daylight, brass accents and limestone cream against muted blue. Everyday confident craft, not optics, a priest, a luminous technical diagram or heroic pose.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-8984b400-f844-41e1-87f0-b529c80502a6.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/207-improver.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-8984b400-f844-41e1-87f0-b529c80502a6.png",
+      "caption": "A Crest folk craftsperson seats a new metal tie into old stone in a quarry-town workshop. Practical stone magic and the wish to improve imperial works are established; this particular method is proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "83c8a467e20852a52eb71a066bede1fe3d83a0de5904879e013056f11bdee407",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "207-improver.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "207-improver.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/207-improver.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/207-improver.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/207-improver.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 208,
+      "title": "Master mason",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png",
+      "people": "Crest folk",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+      ],
+      "reference_selection": "CR3 anatomy aged with fuller head crest; new elder man",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA solid old male Crest folk guild master at a pale limestone quarry, unhurried and formidable through age and craft. Preserve the accepted chalk-tan skin, integrated swept fluted bone crest extending into ridged shoulders/forearms, painted russet cheek marks. His head crest has substantially fuller layered ridges with age, visibly a member of CR3 people and not hair or a headdress. Three-quarter close figure from waist up, head turned left surveying work below, kindly severe weathered face. A heavy wooden mallet rests naturally across one shoulder, his hand grips its shaft close to the shoulder with all fingers coherent. Cream thick work shirt cut to fit the crest and an old ochre leather apron, no armour or robes. Tiny subordinate Crest apprentices at the bottom of the quarry are broad marks. Late afternoon sun bounces from pale stone, a warm luminous face and amber crest against clean cool shadow, very little background detail. Restraint, weight and a veteran craftsman's authority.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA solid old male Crest folk guild master at a pale limestone quarry, unhurried and formidable through age and craft. Preserve the accepted chalk-tan skin, integrated swept fluted bone crest extending into ridged shoulders/forearms, painted russet cheek marks. His head crest has substantially fuller layered ridges with age, visibly a member of CR3 people and not hair or a headdress. Three-quarter close figure from waist up, head turned left surveying work below, kindly severe weathered face. A heavy wooden mallet rests naturally across one shoulder, his hand grips its shaft close to the shoulder with all fingers coherent. Cream thick work shirt cut to fit the crest and an old ochre leather apron, no armour or robes. Tiny subordinate Crest apprentices at the bottom of the quarry are broad marks. Late afternoon sun bounces from pale stone, a warm luminous face and amber crest against clean cool shadow, very little background detail. Restraint, weight and a veteran craftsman's authority.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-8ca90472-9b66-4d99-bfe9-618fbdc00e2c.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-8ca90472-9b66-4d99-bfe9-618fbdc00e2c.png",
+      "caption": "An elder guild master surveys a limestone quarry with a working mallet resting on his shoulder. The fuller crest reflects established ageing; the individual and guild setting are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "208-mastermason.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "208-mastermason.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/208-mastermason.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 209,
+      "title": "Ferry-keeper",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/209-ferrykeeper.png",
+      "people": "Greyhides",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png"
+      ],
+      "reference_selection": "CO1 full anatomy; new adult",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA very strong adult Greyhide ferry-keeper wades chest-deep in a cold NORTHERN tidal channel, hauling a small loaded flat ferry along its rope. Preserve CO1 broad calm nonhuman face, smooth matte grey hide, thick insulated rounded body, fine capable hands, short sturdy legs beneath water, no tail. Wide medium-distance view, keeper at right foreground in profile toward left, shoulders lean into the pull. Both fine hands grip one continuous taut rope at separated points, rope follows a physically clear line to a bow cleat on the ferry behind; no tangled ropes. A few small dry human passengers in oiled wool sit aboard. Greyhide wears a simple rough sleeveless dark work garment partly visible above water. Shingle, low treeless tidal island and dark northern hills under blue-grey weather; one broad cool daylight source with water bounce models the powerful body, ochre boatwood accent. Show stable wading, not diving or swimming underwater. Weight and calm strength, no tropical scenery or comic softness.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA very strong adult Greyhide ferry-keeper wades chest-deep in a cold NORTHERN tidal channel, hauling a small loaded flat ferry along its rope. Preserve CO1 broad calm nonhuman face, smooth matte grey hide, thick insulated rounded body, fine capable hands, short sturdy legs beneath water, no tail. Wide medium-distance view, keeper at right foreground in profile toward left, shoulders lean into the pull. Both fine hands grip one continuous taut rope at separated points, rope follows a physically clear line to a bow cleat on the ferry behind; no tangled ropes. A few small dry human passengers in oiled wool sit aboard. Greyhide wears a simple rough sleeveless dark work garment partly visible above water. Shingle, low treeless tidal island and dark northern hills under blue-grey weather; one broad cool daylight source with water bounce models the powerful body, ochre boatwood accent. Show stable wading, not diving or swimming underwater. Weight and calm strength, no tropical scenery or comic softness.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-0cb7fb3e-4e5c-4bbe-815d-99b04e3dccf4.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/209-ferrykeeper.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-0cb7fb3e-4e5c-4bbe-815d-99b04e3dccf4.png",
+      "caption": "A Greyhide ferry-keeper braces in a cold tidal channel and pulls a loaded ferry by its rope. Wading, strength and ferry work are established; this crossing and keeper are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "912d1a08d8aa82f2483f2e4c2644a334ae6cc83c078905d02771cf3fbd9efb06",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "209-ferrykeeper.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "209-ferrykeeper.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/209-ferrykeeper.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/209-ferrykeeper.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/209-ferrykeeper.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 210,
+      "title": "Longhouse keeper",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png",
+      "people": "Greyhides",
+      "alignment": "Genesis",
+      "brief_revision": 2,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png"
+      ],
+      "reference_selection": "CO1 anatomy; older adult keeper",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA large calm Greyhide simply LOOKS OUT from the doorway of a shared timber longhouse toward a cold northern coast. Three-quarter intimate mid-body portrait from inside near the door, keeper on left, eyes turned out to right over a grey tidal inlet. Preserve CO1 thick rounded but powerful body, broad calm face, fine hands, smooth matte grey hide, short sturdy legs and no tail. One relaxed hand rests on the solid doorpost, the other hangs naturally, no action, threat or guests to explain the scene. Older individual, substantial dark wool tunic with simple ochre mantle across shoulders; no compulsory rosy cheeks. Pale cold morning daylight from the open door organizes face and hand; interior is warm-brown wood by reflected light without a second theatrical source. Far outside: a strip of shingle, tide rocks and a distant snowy headland, very lightly painted. The calm strong presence is enough. Painted natural skin, never cute toy, CGI or wax.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA large calm Greyhide simply LOOKS OUT from the doorway of a shared timber longhouse toward a cold northern coast. Three-quarter intimate mid-body portrait from inside near the door, keeper on left, eyes turned out to right over a grey tidal inlet. Preserve CO1 thick rounded but powerful body, broad calm face, fine hands, smooth matte grey hide, short sturdy legs and no tail. One relaxed hand rests on the solid doorpost, the other hangs naturally, no action, threat or guests to explain the scene. Older individual, substantial dark wool tunic with simple ochre mantle across shoulders; no compulsory rosy cheeks. Pale cold morning daylight from the open door organizes face and hand; interior is warm-brown wood by reflected light without a second theatrical source. Far outside: a strip of shingle, tide rocks and a distant snowy headland, very lightly painted. The calm strong presence is enough. Painted natural skin, never cute toy, CGI or wax.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-3c0e4b24-0a2f-4c8b-9b2c-4c773a87cee8.png",
+          "filename": "210-longhouse.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-3c0e4b24-0a2f-4c8b-9b2c-4c773a87cee8.png",
+      "caption": "A Greyhide looks quietly out from a longhouse doorway over a cold northern inlet. The simple watching pose follows the revised brief; this keeper and home are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "210-longhouse.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "210-longhouse.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/210-longhouse.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 211,
+      "title": "Tide-healer",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/211-tidehealer.png",
+      "people": "Greyhides",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png"
+      ],
+      "reference_selection": "CO1 Greyhide; P5v2 Saltreach bottom-right male face and wool kit",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA large adult Greyhide Still Flame healer in clear PRIESTLY ROBES kneels on cold northern shingle after a storm to tend an exhausted adult human Saltreach sailor. Image 1 defines Greyhide anatomy: smooth grey hide, great insulated rounded body, broad calm face, fine hands and no tail. Image 2 defines a rugged weathered Saltreach sailor, use bottom-right male face with short dark hair and oiled blue wool clothes, not the central woman's exact outfit. Greyhide in plain heavy ivory robes with a muted gold stole; cloth fits substantial kneeling body. His fine hands gently support and warm the sailor's chilled hand and wrist, clear credible contact, eyes attend to patient. Sailor sits supported against a low shore wall, conscious and exhausted, no wounds or death. Soft pale post-storm daylight with a little believable warmth between joined hands, no ribbons, giant aura, censer or floating symbols. Low intimate two-figure composition, distant cold surf painted with few broad shapes. Kindness without infantilizing strength.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nA large adult Greyhide Still Flame healer in clear PRIESTLY ROBES kneels on cold northern shingle after a storm to tend an exhausted adult human Saltreach sailor. Image 1 defines Greyhide anatomy: smooth grey hide, great insulated rounded body, broad calm face, fine hands and no tail. Image 2 defines a rugged weathered Saltreach sailor, use bottom-right male face with short dark hair and oiled blue wool clothes, not the central woman's exact outfit. Greyhide in plain heavy ivory robes with a muted gold stole; cloth fits substantial kneeling body. His fine hands gently support and warm the sailor's chilled hand and wrist, clear credible contact, eyes attend to patient. Sailor sits supported against a low shore wall, conscious and exhausted, no wounds or death. Soft pale post-storm daylight with a little believable warmth between joined hands, no ribbons, giant aura, censer or floating symbols. Low intimate two-figure composition, distant cold surf painted with few broad shapes. Kindness without infantilizing strength.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b39a17d2-d5ba-41b5-be77-62010d7f615e.png",
+          "filename": "211-tidehealer.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/211-tidehealer.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-b39a17d2-d5ba-41b5-be77-62010d7f615e.png",
+      "caption": "A robed Greyhide healer attends a weathered Saltreach sailor after a storm. Priestly robes follow the creator’s requirement, while this healer and rescue are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f7124099d4a92cffd087e85d07455382bc7d1c1c0b0066a3649c5869ef40994d",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png": "b8fd47f9962fa5a8de3b16c05222434e80d2136386439b360d8b83b40f780d52"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "211-tidehealer.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "211-tidehealer.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/211-tidehealer.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/211-tidehealer.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/211-tidehealer.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 212,
+      "title": "Longhouse hospitality",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/212-hospitality.png",
+      "people": "Greyhides",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png"
+      ],
+      "reference_selection": "CO1 varied Greyhide hosts; P5v2 rugged human Saltreach guests",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nInside a great shared Greyhide timber longhouse on a bitter northern night, hospitality is an unglamorous duty and real warmth. Wide composition down a solid physically coherent hall: one long low central hearth, benches safely to either side, smoke rising toward a roof opening. Foreground focal pair: a large Greyhide host bends slightly, handing ONE steaming earthenware bowl to an adult weathered Saltreach guest seated wrapped in a dry wool blanket. Their hands each hold different sides of the same bowl naturally. Host anatomy follows image 1: broad calm face, smooth grey hide, thick powerful rounded body, fine hands, no tail. Saltreach from image 2: rugged adult humans with sun/weathered faces and soaked oiled wool garments, no beauty-model casting. Another Greyhide lays a dry blanket on a bench in middle distance; a few quietly eating guests only broad shapes, no cosmopolitan crowd. One hearth's amber light unifies everyone, dark timber and restrained slate blues, harsh black night at the door. Warm but tired, lived-in and honest, no idyllic banquet or supernatural spectacle.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nInside a great shared Greyhide timber longhouse on a bitter northern night, hospitality is an unglamorous duty and real warmth. Wide composition down a solid physically coherent hall: one long low central hearth, benches safely to either side, smoke rising toward a roof opening. Foreground focal pair: a large Greyhide host bends slightly, handing ONE steaming earthenware bowl to an adult weathered Saltreach guest seated wrapped in a dry wool blanket. Their hands each hold different sides of the same bowl naturally. Host anatomy follows image 1: broad calm face, smooth grey hide, thick powerful rounded body, fine hands, no tail. Saltreach from image 2: rugged adult humans with sun/weathered faces and soaked oiled wool garments, no beauty-model casting. Another Greyhide lays a dry blanket on a bench in middle distance; a few quietly eating guests only broad shapes, no cosmopolitan crowd. One hearth's amber light unifies everyone, dark timber and restrained slate blues, harsh black night at the door. Warm but tired, lived-in and honest, no idyllic banquet or supernatural spectacle.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-a4c27b40-82a6-41c8-9bd5-3d67a752633a.png",
+          "filename": "212-hospitality.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/212-hospitality.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-a4c27b40-82a6-41c8-9bd5-3d67a752633a.png",
+      "caption": "Greyhide hosts offer bowls and dry blankets to Saltreach guests inside a warm shared hall. Hospitality and the peoples’ friendship are established; the pictured evening and its individuals are proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8462a246a31aca1a89513b32b2abe3a72be7d0e83f0693ae4e6492dd7dea8a95",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../peoples-round-12-2026-11-13/05-p5-saltreach-v2.png": "b8fd47f9962fa5a8de3b16c05222434e80d2136386439b360d8b83b40f780d52"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "212-hospitality.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "212-hospitality.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/212-hospitality.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/212-hospitality.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/212-hospitality.png",
+      "selected_attempt": 1
+    },
+    {
+      "code": 215,
+      "title": "Eel-netter",
+      "filename": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
+      "people": "Riverfolk",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png"
+      ],
+      "reference_selection": "Riverfolk whole sheet; older female from bottom third face",
+      "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult older Riverfolk woman patiently sets a woven eel trap in a narrow reed channel near a SMALL stilt village at first light. Use the reference bottom row third face as basis: weathered older woman with grey swept-back hair, clearly fin-like ears, visible gill folds on neck, subdued scale patches on olive-tan matte skin, human proportions. Low water-level view, she kneels in shallow water beside a worn timber landing, half immersed, simple muted blue-green short-sleeved work tunic. One hand steadies the wicker trap at its mouth while the other presses a wooden anchoring stake firmly into the mud; clear practical grips, no floating baskets or incoherent tool contact. Eyes concentrate on the trap. Dawn makes pale gold on wet reed stems and cheek against deep cool water, one gentle source, natural reflections. Two small stilt houses and a physically connected boardwalk remain distant broad painted silhouettes, not a town. Quiet skilled work, no diving equipment, gems, mana-stones or spell effects.",
+      "status": "final",
+      "attempts": [
+        {
+          "revision": 1,
+          "prompt": "Use case: stylized-concept. Create one finished Breachline fantasy card PAINTING, landscape 1536 x 1024, 3:2. Transform the attached character design reference into the requested scene, preserving anatomy; do not reproduce a reference-sheet layout. Traditional oil and acrylic, measured visible brushwork, large coherent light and shadow shapes, lively limited colour, naturally matte skin and cloth. Vary painted attention: precise focal face and hands, broader quieter marks and lost edges in supporting forms, very little background detail. One coherent lighting idea with plausible reflected light keeping faces and hands readable. Paint the forms themselves, no texture over glossy 3D. Anatomically connected limbs, believable grips and footing. Original high fantasy world recovering from an empire's collapse, hardship with hard-won hope. No text, letters, numbers, card borders, logo, signature, watermark, photographic rendering, CGI, cute animation, pore noise, uniform sharpness or gratuitous magical ribbons. Important silhouette stays clear of edges. No camera blur experiment is requested for these briefs; simplify with paint.\n\nAn adult older Riverfolk woman patiently sets a woven eel trap in a narrow reed channel near a SMALL stilt village at first light. Use the reference bottom row third face as basis: weathered older woman with grey swept-back hair, clearly fin-like ears, visible gill folds on neck, subdued scale patches on olive-tan matte skin, human proportions. Low water-level view, she kneels in shallow water beside a worn timber landing, half immersed, simple muted blue-green short-sleeved work tunic. One hand steadies the wicker trap at its mouth while the other presses a wooden anchoring stake firmly into the mud; clear practical grips, no floating baskets or incoherent tool contact. Eyes concentrate on the trap. Dawn makes pale gold on wet reed stems and cheek against deep cool water, one gentle source, natural reflections. Two small stilt houses and a physically connected boardwalk remain distant broad painted silhouettes, not a town. Quiet skilled work, no diving equipment, gems, mana-stones or spell effects.",
+          "references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png"
+          ],
+          "source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-7910c64f-1f8b-4bde-afd9-6c354d65ddc0.png",
+          "filename": "215-eelnetter.png",
+          "selected_for_review": false,
+          "status": "final",
+          "creator_approved": true,
+          "selected_final": true,
+          "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-7910c64f-1f8b-4bde-afd9-6c354d65ddc0.png",
+      "caption": "A Riverfolk netter works at water level, placing a woven trap near a small reed-side village. The anatomy and village context are established; eel-netting as this individual’s trade is proposed.",
+      "creator_approved": true,
+      "live_card_installed": false,
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Identity and setting continuity",
+          "Connected anatomy and visible hand/tool contacts",
+          "Readable coherent light",
+          "Painted materials and selective detail",
+          "No text or card framing"
+        ]
+      },
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/../active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png": "b23cbdc5c8371f4c5a0f5b51416494b0717403960250f03f8a3320b7c38123f3"
+      },
+      "creator_liked": true,
+      "creator_feedback": {
+        "date": "2026-11-13",
+        "verdict": "final_approved",
+        "quote": "much better! these are all final",
+        "reviewed_filename": "215-eelnetter.png"
+      },
+      "creator_feedback_history": [
+        {
+          "date": "2026-11-13",
+          "reviewed_filename": "215-eelnetter.png",
+          "verdict": "liked",
+          "note": "Liked in the creator's full-batch review."
+        }
+      ],
+      "finalized": true,
+      "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
+      "canonical_art_path": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
+      "previous_wip_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/215-eelnetter.png",
+      "selected_attempt": 1
+    }
+  ],
+  "selected_count": 20,
+  "generation_count": 28,
+  "gallery": "../../reference-library-2026-11-06/new-peoples-cards-2026-11-13/index.html",
+  "format": "1536 x 1024 PNG",
+  "creator_approval": "Creator finalized all 20 selected paintings: much better! these are all final",
+  "live_card_installation": "Not part of this art batch",
+  "notes": [
+    "All 20 selected images visually inspected. Card 203 received an identity/colour correction.",
+    "Four proposed existing-image reuses (192,199,213,214) remain separate and were not regenerated.",
+    "Source brief remains in the card-development checkout; outputs are in the main game repository.",
+    "No camera-blur experiment was requested in this batch.",
+    "Creator review on 2026-11-13 liked 17 paintings and requested only 200, 204 and 205 changes. Revisions are checked and await creator review before finalization; originals retained.",
+    "Second creator review: preserve 200 v2 face but correct hand placement into arm-to-hip gap and unify distant soldiers' direction. Preserve 204 v2 shoes; add light armour and weapon, put leader ahead facing right with caravan behind and companions working. New v3 outputs await review. No new verdict on 205.",
+    "Creator rejected every 200/204 iteration 1–3. All six project paintings and six generated sources deleted and verified absent. New restart iteration 1 paintings use only approved peoples/animal design sheets; no rejected card images attached or used. Other 18 cards unchanged.",
+    "Final creator approval applies to all 20 current selections, including fresh Husk/Caravan head and Caravan guard v2. Approved PNGs moved unchanged into the reference library. Earlier 200/204 deletions remain enforced; 203/205 non-selected source images remain historical in WIP."
+  ],
+  "brief_source_sha256": "b45c632ef250869ce800cb96989fdee9cefe9f1c392dbf0d8635ead326943768",
+  "current_brief_matches_snapshot": false,
+  "art_direction_sha256": "c0bd83989d3602bb085dcb5d7a7a9285addc1568ed74169df3435216c21c98e4",
+  "review_record": "creator-final-review-2026-11-13.json",
+  "revision_gallery": "revisions.html",
+  "finalized": true,
+  "review_records": [
+    "creator-review-2026-11-13.json",
+    "creator-review-round2-2026-11-13.json",
+    "restart-and-cleanup-2026-11-13.json",
+    "creator-final-review-2026-11-13.json"
+  ],
+  "latest_revision_codes": [
+    200,
+    204
+  ],
+  "restart_record": "restart-and-cleanup-2026-11-13.json",
+  "finalized_at_utc": "2026-11-14T01:55:59.151292+00:00",
+  "canonical_directory": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13",
+  "final_selection_index": "/Users/dpuser/Documents/Claude/Games/breachline/art/CARD_ART_FINAL_SET12.json",
+  "canonical_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/prompts-and-manifest.json",
+  "final_brief_status_sha256": "c97d3cc5c057a75bcc679499d0de9ff5b6720c96a82454e7786dca906986b8cd",
+  "brief_status_note": "Original revision-2 intake snapshot retained; source brief now records final art status."
+}

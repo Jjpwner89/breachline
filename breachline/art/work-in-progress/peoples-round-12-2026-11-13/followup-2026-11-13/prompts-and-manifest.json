@@ -1,0 +1,435 @@
+{
+  "date": "2026-11-13",
+  "scope": "Peoples round 12 creator review: four retained revisions and six retained in-world studies",
+  "status": "Final creator review complete: five Riverfolk/Saltreach images accepted, five other retained records rejected.",
+  "tool": "built-in image_gen",
+  "images": [
+    {
+      "code": "R1v2",
+      "file": "01-r1-morning-shift-v2.png",
+      "title": "Morning shift · quieter",
+      "type": "Revision",
+      "source": "11-morning-shift.png",
+      "intent": "Bring the canal workers back to an ordinary morning.",
+      "writeup": "Riverfolk maintain Ambrel's locks and canals while the scholars pass above them. This revision keeps the class contrast but gives the divers the tired, practical attention of people finishing a shift, rather than heroic expressions.",
+      "prompt": "Use case: identity-preserve. Edit the supplied Morning shift painting. Preserve the two Riverfolk individuals, fin ears, neck gills, work clothing, maintenance tools, lock, connected bridge and smaller scholars crossing above. Make the workers substantially LESS DRAMATIC: replace both lifted, yearning heroic gazes and parted lips with relaxed closed mouths, lowered brows and task-directed looks. The foreground older worker looks down at the step and places a hand naturally to climb out; the younger worker looks down at the tool satchel she is lifting. Keep simple connected hands and readable grips. Reduce the hot orange cinematic rim light and overwhelming sunrise toward a softer, ordinary cool-peach dawn, while retaining convincing wet water reflections. A medium-close occupational scene, modest fatigue, no theatrical emotional performance. Don't change them into other people or redesign their species. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/11-morning-shift.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-00adc734-b497-49ba-b747-150353e66081.png",
+      "assistant_review": "Lowered task-directed gazes and relaxed mouths, softer dawn, coherent satchel/rake grips and body support. Scene and Riverfolk anatomy retained; background detail reduced.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "43b8bb8451c661d0082b4dc73fa9c5123ca70a4c496e3eb25dbeff2e52e4d9e6",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png"
+    },
+    {
+      "code": "R3v2",
+      "file": "02-r3-stilt-village-v2.png",
+      "title": "Stilt village · before the splash",
+      "type": "Revision",
+      "source": "13-stilt-village.png",
+      "intent": "Make the instant before the children reach the water physically consistent.",
+      "writeup": "A small Riverfolk household calls the children in as evening settles over the marsh. The children are still airborne, so the water below them remains undisturbed apart from ordinary low ripples; the village keeps its intimate scale and warm domestic mood.",
+      "prompt": "Use case: precise-object-edit. Edit the supplied Riverfolk stilt-village scene. Keep both children in EXACTLY their existing airborne poses and positions, keep the adult calling, fin ears/gills/scales, clothing, five-or-fewer stilt houses, netting, walkways and sunset. REMOVE the TWO PREMATURE IMPACT SPLASHES under the airborne children: no white upward plumes, no flying impact droplets, no expanding impact rings or foam under them. Neither child has touched water yet. Replace only those impact regions with continuous gently rippled sunset-reflecting marsh water. Preserve the level of the water and all structures; ordinary small ambient ripples are fine. Moderately simplify small far-house, distant reeds and sky details while preserving their shapes. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/13-stilt-village.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-1f1ca01a-ba9d-4b6c-b6b9-c7096e7c95dd.png",
+      "assistant_review": "Premature splash plumes, droplets and impact rings removed beneath both airborne children. Poses and connected settlement preserved; distant forms simplified.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "16c8101e76bd550f9200d7d4d0d2f738938822034968e0ea032d1dee19e8cfdf",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/02-r3-stilt-village-v2.png"
+    },
+    {
+      "code": "P1v2",
+      "file": "03-p1-glimmerfolk-v2.png",
+      "title": "Glimmerfolk · brighter freckles",
+      "type": "Reference revision",
+      "source": "17-glimmerfolk.png",
+      "intent": "Make the glowing freckles a recognizable trait.",
+      "writeup": "Glimmerfolk are a proposed tunnel-dwelling people with large eyes and clusters of luminous freckles. Their freckles should now read clearly even against an ivory reference background, while remaining small points of light rather than glowing skin or eyes.",
+      "prompt": "Use case: precise-object-edit. Edit this Glimmerfolk reference sheet. Preserve all three matching front/side/back adult body views, all FOUR separate portrait identities, skin tones, large dark eyes, hair, practical tunnel clothes, ivory background, layout, poses and anatomy. Make the luminous freckles MORE PROMINENT and clearly visible: brighten each small cool blue-white point, cluster them naturally across cheekbones, temples and a few along neck/forearms, with only a tiny soft halo immediately around each freckle. The glow must be an obvious defining trait in every portrait and faintly legible at full-body scale. Keep the freckles small and separated, not stars painted across everything, not broad neon patches; no glowing eyes. Do not darken the ivory background or add a new scene. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/17-glimmerfolk.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "rejected",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "rejected",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-3c14c170-376d-4d3b-94c8-5859b7f4e16c.png",
+      "assistant_review": "Freckle clusters clearly brighter on faces and exposed arms, with small local glow. No glowing eyes or broad neon skin; identities and sheet layout preserved.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7bbdc674d46a2e0eb9479b6a16c5ec8e12d86a7f2fa098a7e75a0e12b0f2ad5e",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "rejected",
+      "active_reference": false,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "image_removed": true
+    },
+    {
+      "code": "P5v2",
+      "file": "05-p5-saltreach-v2.png",
+      "title": "Saltreach · weathered coast",
+      "type": "Reference revision",
+      "source": "21-saltreach.png",
+      "intent": "Rugged people visibly weathered by coastal life.",
+      "writeup": "Saltreach is a human coastal culture, distinguished by oiled wool, practical sea gear, and bone or shell ornaments. Their faces are now rougher and slightly sunburnt, with uneven pigmentation, chapped lips, and weathering expressed in broad painted forms rather than glossy or hyperdetailed skin.",
+      "prompt": "Use case: identity-preserve. Edit the Saltreach HUMAN coastal-culture reference sheet. Preserve the representative adult woman in matching front/side/back views and the FOUR distinct adult portrait identities, age/gender diversity, body builds, indigo oiled wool, wraps, boots, bone/shell ornaments and ivory layout. Make them a little more RUGGED and slightly SUNBURNT: mild localized warm redness across bridge of nose and exposed upper cheeks/forearms, uneven sun pigmentation, sun freckles, a few small healed marks, slightly chapped lips and less polished skin. Keep natural appeal and individual character; no disease, severe burns, sores, gore or caricature. This is a specific requested coastal-weathering exception, not a universal rosy-cheek rule. Paint mild dry roughness through broad matte colour shapes and selective edges, never pore-level noise or wax sheen. Keep ordinary human anatomy and plausible hands. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/21-saltreach.png"
+      ],
+      "reference_roles": [
+        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
+      ],
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-2787ad3f-047d-4e8c-86af-01a746ac184c.png",
+      "assistant_review": "Localized mild sunburn and more uneven weathered skin visible across all faces. Human identity, clothing and anatomy retained; skin stays matte.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b8fd47f9962fa5a8de3b16c05222434e80d2136386439b360d8b83b40f780d52",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "revision pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/05-p5-saltreach-v2.png"
+    },
+    {
+      "code": "W1",
+      "file": "06-glimmerfolk-below-the-old-road.png",
+      "title": "Below the Old Road",
+      "type": "New in-world scene",
+      "people": "Glimmerfolk",
+      "alignment": "Gnosis leaning — tentative",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/03-p1-glimmerfolk-v2.png"
+      ],
+      "reference_roles": [
+        "Revised Glimmerfolk anatomy, faces and prominent luminous freckles. Keep biological traits and matte paint, invent a new individual and scene; do not reproduce sheet layout."
+      ],
+      "intent": "A constellation of faces within ordinary forgotten stonework.",
+      "writeup": "Two Glimmerfolk pick their way through an abandoned imperial passage, their bright freckle clusters making faces and bare hands readable against the dark. The scene proposes their familiarity with underground routes; it does not establish that the freckles illuminate whole tunnels or that they control surviving imperial machinery.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE: Image 1 defines the revised Glimmerfolk people and visible freckles, not clothing uniform or layout. SCENE: Low oblique view inside an old ordinary stone road tunnel. One distinct middle-aged Glimmerfolk woman in patched umber work clothes steps across a fallen coping stone at image-left, one hand against wall, the other steadying a simple coiled rope. A younger adult man several paces behind carries one small covered oil lamp. Both have pale skin, larger dark eyes and clear bright COOL BLUE-WHITE FRECKLE CLUSTERS on cheeks, temples, neck and hands. Glow makes little halos immediately at freckles and does not light the room. A distant cold opening illuminates an oblique path and weathered masonry, amber lamp touches stone at their feet. Main woman face turned three-quarter toward the route ahead, nose/jaw ordinary and distinct, practical absorption not amazement. Exactly two arms and legs each; no glowing eyes, technology, gemstones, magical runes or jewelry. Few bold slate-blue and umber value masses; low detail on distant masonry, no tunnel-focus blur.",
+      "status": "rejected",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "rejected",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-d193105a-901b-4927-a877-351ef963f138.png",
+      "assistant_review": "Two connected figures, practical rope/wall and lantern contacts. Bright freckle clusters remain small and local; distant tunnel uses broader quieter paint.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "rejected",
+      "active_reference": false,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "image_removed": true
+    },
+    {
+      "code": "W3",
+      "file": "08-saltreach-the-last-boat-up.png",
+      "title": "The Last Boat Up",
+      "type": "New in-world scene",
+      "people": "Saltreach",
+      "alignment": "Undecided human culture",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/05-p5-saltreach-v2.png"
+      ],
+      "reference_roles": [
+        "Revised rugged human coastal faces, mild sunburn, dry weathered skin, oiled wool and practical sea gear. Invent distinct individuals rather than copying portrait identities."
+      ],
+      "intent": "Weather, weight and shared effort at the edge of the sea.",
+      "writeup": "Saltreach fishers haul a small boat above the tide with a wooden roller and a taut rope. Their mildly sunburnt faces, rough skin, oiled wool, and modest shell ornaments carry the culture; the scene proposes a coastal livelihood rather than assigning every Saltreach person the same role or alignment.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE: rugged Saltreach human coastal culture. SCENE: On a steep shingle beach under hard cool late-morning light after a storm, three HUMAN adults bring a small wooden fishing boat above the tide using a practical wooden roller and taut hauling rope. Primary older woman near image-right in side three-quarter view leans back against rope tension, both hands in a clear spaced grip, boots planted and knees bent. Narrower weathered middle-aged man and a stockier adult woman work behind, subordinate and simpler. Mild SUNBURN on nose/cheeks/forearms, uneven pigment, small old marks, chapped lips and rough matte painted skin, not sores or microdetail. Indigo and grey oiled wool, practical rolled sleeves, modest bone/shell ornaments and repaired sea boots. Green-grey surf behind, ochre boat wood and a small faded red sail accent. Coherent load direction and rope leading directly to bow. NOT heroic posing. No fantasy anatomical traits. Distant headland and houses are broad low-contrast masses with significantly fewer little marks than foreground.",
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-f27f33b5-29df-4305-9624-7e226b826bd0.png",
+      "assistant_review": "Two foreground hands grip one continuous taut rope to boat; legs planted, boat supported on roller. Three human workers have weathered matte skin and coherent scale.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9afe56fdb276d2ff282f46ce8b113bc8d3a2cc7336f79938d8e708cc84c82ae0",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/08-saltreach-the-last-boat-up.png"
+    },
+    {
+      "code": "W4",
+      "file": "09-cairnfold-at-the-wayhouse.png",
+      "title": "At the Wayhouse",
+      "type": "New in-world scene",
+      "people": "Cairnfold",
+      "alignment": "Undecided",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/22-wildcard.png"
+      ],
+      "reference_roles": [
+        "Strongly approved Cairnfold anatomy: three eyes, soft terracotta segmented skin, broad low torso, flexible neck mantle, two arms/two legs, four-digit hands. New scene and clothing variations; not a sheet."
+      ],
+      "intent": "The strangeness of the Cairnfold belongs naturally in ordinary life.",
+      "writeup": "Two Cairnfold traders pause at a roadside wayhouse, one checking a repaired packing chest while the other bargains for a place under the awning. Their three-eyed faces, flexible neck mantles, and soft segmented bodies carry the approved design; trade, travel customs, and alignment remain scene proposals.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE: preserve the approved Cairnfold biological design exactly, especially THREE small dark eyes arranged across a blunt triangular face, soft living matte terracotta skin with flexible folds, broad low torso, long neck curling into an organic mantle, exactly TWO ARMS and TWO plantigrade LEGS, and FOUR digits per hand. They are not stone golems or armored reptiles. SCENE: A rain-washed rural wayhouse, low old stone frontage and deep rust-coloured canvas awning. Foreground Cairnfold adult, about 1.4m tall, sits on a low plain stool at image-left, leaning to inspect a wood packing chest with one four-digit hand on its rim and the other checking a leather closure; organic neck mantle softly folded forward. A second slightly taller darker Cairnfold stands in three-quarter view under the awning at right, conversing with one secondary ordinary human innkeeper. Distinct faces and skin hues within accepted anatomy. Coarse pale woven aprons adapted at sides and simple travel wraps, no medieval plate or equipment uniform. Warm doorway light amid cool blue rain, their skin remains matte and soft. The two Cairnfold own the scene, socially capable and expressive. Background road and hedge quietly simplified, purposeful negative space; convincing stool and chest scale.",
+      "status": "rejected",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "rejected",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-786e35e4-9a6a-47eb-bbc3-c33ce9da1a6d.png",
+      "assistant_review": "Three-eyed Cairnfold faces and soft neck mantle retained; chest/stool and four-digit hand contacts are coherent. Background road is simplified. Relative size in scene remains exploratory rather than fixed species height.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e6daaa582b7b9cc5ea5c715af22a35238f157fb41bdd0d21c1217e46466c0784",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "rejected",
+      "active_reference": false,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "image_removed": true
+    },
+    {
+      "code": "W5",
+      "file": "10-riverfolk-a-table-above-the-water.png",
+      "title": "A Table Above the Water",
+      "type": "New in-world scene",
+      "people": "Riverfolk",
+      "alignment": "Genesis",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/15-mending-the-hood.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/16-under-the-gate.png"
+      ],
+      "reference_roles": [
+        "Strongly liked Riverfolk older face, gill folds, fin ears, matte painted finish; invent a different family and domestic scene.",
+        "Strongly liked Riverfolk connected anatomy, restrained painted light and coherent material treatment only; do not import underwater setting."
+      ],
+      "intent": "Home life beyond the waterworks.",
+      "writeup": "A Riverfolk family shares a late meal on a narrow platform above the marsh, with drying work clothes and a patched awning close at hand. The scene extends the liked small-settlement life without making the household prosperous, establishing a new town, or turning ordinary family activity into a display of magic.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCES: Riverfolk anatomy and the admired quiet painted finish of R5/R6 only. NEW SCENE: Three Riverfolk family members at a small meal on a narrow timber platform just above dark marsh water, under a patched russet cloth awning at blue hour. Main middle-aged adult man at left ladles plain stew into a bowl held securely by his elderly mother at right; a school-age child sits between them on the far side of the simple table, eating with a wooden spoon. Three distinct faces, obvious fin-like ears, neck gill folds and muted scale patches, human proportions, matte dry skin. Each hand has its own arm and clear contact with ladle, bowl or spoon; bowls supported, table and stools on connected platform. Practical faded yellow/grey work linen, a single low oil lamp. One small dwelling behind and another barely suggested across water, never a town. A tired warm conversation in gaze, not uplifted heroic expression; belongings repaired and modest. Soft amber focal faces against large quiet blue-purple water shapes; architecture remains readable but intentionally less detailed. No gems, machinery or spell effects.",
+      "status": "accepted_visual_reference",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "accepted",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-a4900fb5-8e60-407c-88d0-d52af7e26266.png",
+      "assistant_review": "Three Riverfolk with readable ear fins/gills, connected arms, supported bowls and coherent ladle/spoon grips. Quiet domestic light and simpler far settlement.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5efb8f07f5d336eb49c9b92cec1d21090eb362a4071f9658937e148608fd5eb6",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "accepted",
+      "active_reference": true,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "reference_library_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/10-riverfolk-a-table-above-the-water.png"
+    },
+    {
+      "code": "M1",
+      "file": "11-made-people-fourfold-warden.png",
+      "title": "The Fourfold Warden",
+      "type": "New made-people experiment",
+      "people": "Made people — developing",
+      "alignment": "Dominion",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/09-graftkin-elder.png"
+      ],
+      "reference_roles": [
+        "G4 is only a promising, unapproved starting point for four connected arms and differently aged grafts. Redesign silhouette and face to be much less conventionally human; do not treat the whole original as approved."
+      ],
+      "intent": "A visibly constructed living person who enjoys power over others.",
+      "writeup": "This Dominion tollkeeper has a broad double-tiered ribcage, two heavy upper arms, and a smaller working pair below them, making the imperial shaping visible in the whole silhouette. It develops the promising four-arm idea from G4 while keeping the body alive and the joins long healed; the design and occupation remain unapproved experiments.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE ROLE: G4 showed a promising four-arm arrangement, but creator did NOT approve its too-human design. Create a distinctly NEW made-person design whose altered construction is visible in body structure, not just an ordinary human with scars. Whole living body and mind, always cruel Dominion, bred/shaped for war over 150 years ago, generations now living. A broad DOUBLE-TIERED RIBCAGE with separate clear roots for exactly FOUR ARMS: massive upper shoulders supporting two heavy arms and smaller lower shoulder sockets at lower ribs supporting a short delicate pair. Exactly TWO legs, one thick and shorter shin with a compensated boot sole, the other leaner. Neck offset slightly, heavy asymmetrical joined brow and broad mismatched jaw planes, distinct living face and small ordinary dark eyes, visible natural skin-tone transitions across OLD HEALED seams. Not rot, wounds, exposed bone, bolts, thread stitches, green monster skin or lab machinery. Plain dark fitted tunic custom cut with four armholes. SCENE: The male warden occupies a raised stone toll desk. One upper forearm rests on desk, other upper hand holds a short iron baton down beside stool; smaller hands count two or three ordinary coins on tabletop. Only one subordinate human petitioner, very small beyond desk edge. His attentive satisfied expression suggests he enjoys the control. Cold dawn and narrow rust-red cloth accent, no heroic light. Full connected torso and all four arm origins visible, clear negative spaces between arms, four separate five-digit hands, objects at plausible scale. Background gateway is simplified, light/shadows coherent.",
+      "status": "rejected",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "rejected",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-7ad1f397-04a0-4c02-94b5-9fc3fa10bfc0.png",
+      "assistant_review": "Exactly four separately rooted arms and two differently built legs. Short lower pair counts coins; larger upper hands remain distinct. Altered silhouette and natural healed joins, no undead cues.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "89218c804e004da69ff1b2fc722351d8b9646341c38c1b5a1752da3c6c625529",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "rejected",
+      "active_reference": false,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "image_removed": true
+    },
+    {
+      "code": "M2",
+      "file": "12-made-people-the-closed-road.png",
+      "title": "The Closed Road",
+      "type": "New made-people experiment",
+      "people": "Made people — developing",
+      "alignment": "Dominion",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/10-beast-grafted.png"
+      ],
+      "reference_roles": [
+        "G5 is a closer but unapproved direction for integrated beast grafts. Develop a less human whole-body design, not the original individual or uniform."
+      ],
+      "intent": "Imperial grafting changes balance, silhouette and bearing.",
+      "writeup": "A made-person road master blocks a Dominion checkpoint, his unequal arms, two hoofed lower legs, and grown horn plates integrated into a living body. This pushes G5 beyond a mostly human figure with an added hoof, while leaving the final made-people anatomy and name open.",
+      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE ROLE: G5 was closer but NOT accepted, and the creator wants the made people less conventionally human. Develop a new Dominion adult male with a wholly reshaped but coherent living silhouette. Broad overhanging natural horn-plated brow integrated into an asymmetrical expressive face; thick offset neck, angled broad shoulders, one much LONGER and heavier forearm and one shorter strong arm, TWO differently built digitigrade lower legs ending in cloven hooves. Grown keratin shoulder plates flow organically into healed tissue, not bolted armor. Natural warm brown and lighter olive skin regions meet in old smooth scar junctions. Exactly TWO ARMS and TWO LEGS, ordinary intentional dark eyes, alert independent mind, not undead, no corpse pallor, rot, open wounds, exposed bone, green skin, thread stitches, bolts or laboratory clichés. Plain heavy charcoal cloth coat tailored to different shoulder heights, short work trousers free of hocks, no distracting excessive straps. SCENE: At a low wooden checkpoint across a blue-grey upland road, this imposing road master stands sideways with both hoofs planted at different angles naturally. His long near arm presses one large hand onto the horizontal toll bar; shorter far hand holds a few practical iron keys near waist, physically separate. Two small travellers and cart wait behind the bar, subordinate. He looks down the road with unhurried possessive confidence, cruel authority rather than rage. Soft brazier warmth at one side and cold evening sky, matte broad painted forms, simplified distant road and bare slopes. Keep entire feet and crown in frame and match ordinary human scale cues.",
+      "status": "rejected",
+      "generation_mode": "built-in image_gen",
+      "creator_review_status": "rejected",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-cfbe623c-d834-4f59-99d9-6401d600b420.png",
+      "assistant_review": "Two mismatched arms and two hoofed legs with coherent contact and ground plane; long arm on bar and shorter arm holding keys. Horn plating integrated; no open wounds or stitches.",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "85def15d5abe98ebd8da13947fde276e5a8dd44680f88fdd3b7d4b78de92122e",
+      "creator_review_history": [
+        {
+          "date": "2026-11-13",
+          "stage": "before final selection",
+          "status": "ready_for_review",
+          "creator_review_status": "new scene pending review"
+        }
+      ],
+      "review_status": "rejected",
+      "active_reference": false,
+      "reference_candidate": false,
+      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+      "review_date": "2026-11-13",
+      "image_removed": true
+    }
+  ],
+  "gallery": "review.html",
+  "handoff": "CLAUDE_HANDOFF.txt",
+  "review_decisions": "../final-selections-2026-11-13.json",
+  "approval_boundary": "The five selected Riverfolk and Saltreach images are accepted visual references. All other follow-up concepts are rejected. This review selects no cards and does not automatically settle biology, universal occupations or mechanics.",
+  "accepted_image_ids": [
+    "R1v2",
+    "R3v2",
+    "P5v2",
+    "W3",
+    "W5"
+  ],
+  "rejected_image_ids": [
+    "P1v2",
+    "W1",
+    "W4",
+    "M1",
+    "M2"
+  ],
+  "pending_image_ids": []
+}

@@ -1,0 +1,353 @@
+{
+  "title": "New creature combinations",
+  "date": "2026-11-13",
+  "status": "complete_for_creator_review",
+  "generation_mode": "built-in image_gen",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "selection_guide_revision": 183,
+  "creator_feedback": {
+    "date": "2026-11-13",
+    "user_note": "i liked the options i said i did - faces still have to make sense. so og design for hv1, 2, 3, 4 ,, 5, 6. for hv7 use number 1, hv8 - use old. i meant like make some new generations with that note in mind",
+    "correction": "The prior head-swap exercise misinterpreted forward-looking feedback. Keep the existing chosen creatures; apply natural head diversity to NEW creature generations.",
+    "selections": [
+      {
+        "head_sheet": "HV1",
+        "name": "Foldstride",
+        "selected": "BP1-1",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+        "source_region": "UPPER LEFT",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV2",
+        "name": "Loomstep",
+        "selected": "BP1-2",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+        "source_region": "UPPER CENTRE",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV3",
+        "name": "Shelfback",
+        "selected": "BP1-3",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+        "source_region": "UPPER RIGHT",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV4",
+        "name": "Needlehip",
+        "selected": "BP1-5",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+        "source_region": "LOWER CENTRE",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV5",
+        "name": "Ribhide",
+        "selected": "BP2-4",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+        "source_region": "LOWER LEFT",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV6",
+        "name": "Scaleskein",
+        "selected": "BP2-5",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+        "source_region": "LOWER CENTRE",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV7",
+        "name": "Purlrunner",
+        "selected": "HV7-1",
+        "selection_type": "head_variant",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+        "source_region": "Left column: portrait and matching full-body view",
+        "canonical": false
+      },
+      {
+        "head_sheet": "HV8",
+        "name": "Gullied swimmer",
+        "selected": "BP3-4",
+        "selection_type": "original_BP_design",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+        "source_region": "LOWER LEFT",
+        "canonical": false
+      }
+    ],
+    "rules": [
+      "Preserve original BP designs for HV1–HV6 and HV8.",
+      "Use HV7-1 for Purlrunner.",
+      "Heads must make anatomical and functional sense for their creature, rather than look like interchangeable animal masks.",
+      "New exploration varies skulls, mouths, noses and coverings; reptilian faces are allowed but should not dominate.",
+      "No automatic canonization of ecological details."
+    ],
+    "new_work": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13"
+  },
+  "requested_dimensions": [
+    1536,
+    1024
+  ],
+  "review_url": "http://127.0.0.1:8775/",
+  "reference_policy": "No image references attached. Previously chosen BP/HV designs are preserved separately; this batch invents new whole creatures.",
+  "sheets": [
+    {
+      "code": "NC1",
+      "title": "New ground-dwellers",
+      "file": "01-new-ground-dwellers.png",
+      "description": "Six new creatures explore digging, grazing, hunting and scavenging. Their heads and coverings are designed together with the whole animal.",
+      "takes": [
+        {
+          "name": "Keelroot",
+          "core": "Root-digging grazer",
+          "size": "Badger-sized",
+          "surface": "Short umber velvet, leathery muzzle and small flank scales",
+          "line": "A deep, narrow chest hangs between four outward-set legs; a low muscular muzzle works beneath roots.",
+          "detail": "A compact root grazer, body NARROW from side to side but deep vertically like a keel suspended between four short outward-set legs. Straight level back, short blunt tail, broad firm forefeet, rounder hindfeet. Short umber velvet over shoulders becomes small dull bronze scale rows only on lower flanks. Head is integrated low into a stout neck: deep mammalian chewing jaw, broad mobile leathery nose, split upper lip, modest lateral eyes, two tiny protective ear folds. Mouth closed around a fine root, no tusks or horns. Side-left, dry root bank. The shape is not a boar, badger or conventional quadruped silhouette.",
+          "position": 1,
+          "description": "A deep, narrow chest hangs between four outward-set legs; a low muscular muzzle works beneath roots. It proposes a root-digging grazer; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Tasselstride",
+          "core": "Seed-picking biped",
+          "size": "Knee-high",
+          "surface": "Dense cream contour feathers and bare dark lower legs",
+          "line": "A tall oval trunk balances over two broad feet, with a forward-curving neck and small seed-cutting jaw.",
+          "detail": "An upright narrow OVAL trunk balanced directly above TWO short strong bent legs with broad three-toed feet, no forelimbs, no wings, short dense tapered tail behind. Soft cream contour feathers lie in vertical overlapping rows, with a few dark long feather tassels at the hips. The short neck bends forward from HIGH on chest; compact deep skull has a tiny blunt keratin cutting edge, muscular lower jaw and dark small side eyes embedded within feathered cheeks. Feeding apparatus and neck are one continuous feathered structure, no pasted bird head. Picking seeds near low grasses, side-right, whole body. Avoid the horizontal rust-coloured Loomstep silhouette.",
+          "position": 2,
+          "description": "A tall oval trunk balances over two broad feet, with a forward-curving neck and small seed-cutting jaw. It proposes a seed-picking biped; its ecology and detailed biology remain open.",
+          "original_brief_line": "A tall oval trunk balances over two broad feet, with a short forward neck and small seed-cutting jaw.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Accepted by creator on 2026-11-13. Preserve this original design.",
+            "updated_at": "2026-11-13T19:18:46.192021+00:00",
+            "creator_assessment": "accepted_visual"
+          }
+        },
+        {
+          "name": "Cleftpelt",
+          "core": "Ground ambush hunter",
+          "size": "Small-dog length",
+          "surface": "Coarse charcoal fur and short satin-brown facial fur",
+          "line": "A long low torso moves on three pairs of short legs, with a narrow searching muzzle and a flat tail.",
+          "detail": "Six-legged ground predator, a LONG LOW narrow muscular torso on THREE PAIRS of short jointed legs: powerful front pair, compact middle supporting pair, rear pair set wider for turning. ONE continuous spinal trunk, no insect exoskeleton. Flat heavy tapering tail held just above ground. Coarse charcoal fur lies in two lateral ridges with a short brown strip along spine. Integrated mammalian head is small and long, soft blunt nose tip, little whiskers, small folded ear openings and forward-angled modest eyes; jaw muscles continue visibly into the slim furred neck. No familiar cat/dog facial mask, no big canine ears. Crouched tracking scent beside a stone, three-quarter left.",
+          "position": 3,
+          "description": "A long low torso moves on three pairs of short legs, with a narrow searching muzzle and a flat tail. It proposes a ground ambush hunter; its ecology and detailed biology remain open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Accepted by creator on 2026-11-13. Preserve this original design.",
+            "updated_at": "2026-11-13T19:18:46.192021+00:00",
+            "creator_assessment": "accepted_visual"
+          }
+        },
+        {
+          "name": "Stonegullet",
+          "core": "Crevice burrower",
+          "size": "Arm-length",
+          "surface": "Matte grey skin and bands of small hard scales",
+          "line": "Two digging forelimbs pull a long legless rear body through narrow gaps.",
+          "detail": "A long flexible crevice burrower with EXACTLY TWO short robust digging forelimbs beneath the front third and NO HIND LIMBS. Its single legless rear trunk continues into a broad tapering tail with shallow low ridges, body partly curves but does not coil into knots. Matte slate-grey skin with bands of small stone-coloured scales protecting belly and brow. A restrained reptilian head is narrow and low, small lateral eyes, tight lip-covered jaw, two tiny nostrils, strong neck muscles taper continuously into trunk; jaws normal sized, no fangs. Crawling left from a rock fissure, entire rear body visible.",
+          "position": 4,
+          "description": "Two digging forelimbs pull a long legless rear body through narrow gaps. It proposes a crevice burrower; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Spindlebur",
+          "core": "Leaf-litter scavenger",
+          "size": "Palm-length",
+          "surface": "Dull russet chitin and fine tawny sensory fibres",
+          "line": "A small arched scavenger carries its mouth beneath a compact head shield.",
+          "detail": "A palm-length terrestrial INVERTEBRATE, single elongated arched abdomen with low interlocking russet chitin plates, exactly SIX slender jointed walking legs, two short segmented antennae. Compact head shield descends naturally from thorax; two small dark faceted eyes, short paired feeding mandibles tucked underneath. Fine tawny sensory fibres line body margins and joints, no vertebrate fur face or mammal lips. The abdomen has an off-centre-looking low ridge from its quarter view but body anatomy is bilaterally consistent. Walking right over two fallen leaves, entire body and all limb connections legible.",
+          "position": 5,
+          "description": "A small arched scavenger carries its mouth beneath a compact head shield. It proposes a leaf-litter scavenger; its ecology and detailed biology remain open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Accepted by creator on 2026-11-13. Preserve this original design.",
+            "updated_at": "2026-11-13T19:18:46.192021+00:00",
+            "creator_assessment": "accepted_visual"
+          }
+        },
+        {
+          "name": "Quillheel",
+          "core": "Rock-edge browser",
+          "size": "Cat-sized",
+          "surface": "Stiff blue-grey feathers, exposed skin and scaled shins",
+          "line": "A high breast narrows into a low pelvis, with a short downward jaw that clips tough shoots.",
+          "detail": "Four-legged rock browser with a TALL narrow front breast on two straight moderate-length forelegs and a LOW WIDE pelvis on two much shorter outward-folding hindlegs; gently descending back, short wedge tail. Not a high-hindquarter animal. Dense stiff blue-grey feathers lie flush over breast and back, smooth dun skin at neck underside and tiny matte scales on lower limbs. Short downward-pointing head is a functional clipping unit with narrow blunt keratin upper lip, deep fleshy lower jaw, small high lateral eyes, no external ears. Neck springs from front chest and curves only modestly down. Feeding on a tough shoot on a stone ledge, three-quarter right, all four feet have clear support.",
+          "position": 6,
+          "description": "A high breast narrows into a low pelvis, with a short downward jaw that clips tough shoots. It proposes a rock-edge browser; its ecology and detailed biology remain open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Accepted by creator on 2026-11-13. Preserve this original design.",
+            "updated_at": "2026-11-13T19:18:46.192021+00:00",
+            "creator_assessment": "accepted_visual"
+          }
+        }
+      ],
+      "kind": "new_creature_lineup",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [],
+      "reference_policy": "No attached references: these must be new designs, not modifications or reproductions of the selected BP/HV creatures.",
+      "prompt": "Use case: stylized-concept.\nAsset type: NEW Breachline creature exploration lineup, landscape 1536 x 1024.\nPaint EXACTLY SIX entirely new animal designs in a clear 2-row by 3-column layout. Read left to right across top row then bottom row. Each cell contains ONE full-body animal, visibly separated by generous warm off-white negative space. No repeated views, no head variation studies, no text, numbers, borders, labels, logos, human scale silhouettes or symbols. Tiny quiet natural ground/branch/water fragments may clarify support, but no full scene.\nCreative direction: interesting coherent combinations of whole-body anatomy and biological coverings, with varied believable head structures. The head belongs to the animal: skull proportions, jaw hinges, nose, eyes, ears and neck muscles must support how it feeds and moves. Do not paste an Earth animal face onto an unrelated body. No universal lizard face, no universal cute mammal face. Reptilian faces are welcome only where specified. Exactly one head per animal. Natural animal-sized heads and eyes; mature wild animals, not pet expressions, plush mascots, grins or human-like lips. Believable bilateral limb attachment, matched pairs, readable weight and feet. These are ordinary modestly sized wildlife with new anatomies, not monsters or giant champions. No recycled prior creature identities.\nMedium: traditional OIL AND ACRYLIC fantasy concept painting with measured visible brushwork, larger shapes on secondary surfaces, matte biological materials and locally coherent detail. Heads readable but not microscopically over-rendered. Avoid photographic pores, shiny 3D, plastic, anime and toy-like forms. Neutral soft daylight with gentle grounding shadow. Each animal's limited palette differs; retain colour and appeal without neon. Keep the whole body in frame and extremities apart.\nPOSITIONS:\n1. TOP LEFT — Keelroot: A compact root grazer, body NARROW from side to side but deep vertically like a keel suspended between four short outward-set legs. Straight level back, short blunt tail, broad firm forefeet, rounder hindfeet. Short umber velvet over shoulders becomes small dull bronze scale rows only on lower flanks. Head is integrated low into a stout neck: deep mammalian chewing jaw, broad mobile leathery nose, split upper lip, modest lateral eyes, two tiny protective ear folds. Mouth closed around a fine root, no tusks or horns. Side-left, dry root bank. The shape is not a boar, badger or conventional quadruped silhouette.\n2. TOP CENTRE — Tasselstride: An upright narrow OVAL trunk balanced directly above TWO short strong bent legs with broad three-toed feet, no forelimbs, no wings, short dense tapered tail behind. Soft cream contour feathers lie in vertical overlapping rows, with a few dark long feather tassels at the hips. The short neck bends forward from HIGH on chest; compact deep skull has a tiny blunt keratin cutting edge, muscular lower jaw and dark small side eyes embedded within feathered cheeks. Feeding apparatus and neck are one continuous feathered structure, no pasted bird head. Picking seeds near low grasses, side-right, whole body. Avoid the horizontal rust-coloured Loomstep silhouette.\n3. TOP RIGHT — Cleftpelt: Six-legged ground predator, a LONG LOW narrow muscular torso on THREE PAIRS of short jointed legs: powerful front pair, compact middle supporting pair, rear pair set wider for turning. ONE continuous spinal trunk, no insect exoskeleton. Flat heavy tapering tail held just above ground. Coarse charcoal fur lies in two lateral ridges with a short brown strip along spine. Integrated mammalian head is small and long, soft blunt nose tip, little whiskers, small folded ear openings and forward-angled modest eyes; jaw muscles continue visibly into the slim furred neck. No familiar cat/dog facial mask, no big canine ears. Crouched tracking scent beside a stone, three-quarter left.\n4. BOTTOM LEFT — Stonegullet: A long flexible crevice burrower with EXACTLY TWO short robust digging forelimbs beneath the front third and NO HIND LIMBS. Its single legless rear trunk continues into a broad tapering tail with shallow low ridges, body partly curves but does not coil into knots. Matte slate-grey skin with bands of small stone-coloured scales protecting belly and brow. A restrained reptilian head is narrow and low, small lateral eyes, tight lip-covered jaw, two tiny nostrils, strong neck muscles taper continuously into trunk; jaws normal sized, no fangs. Crawling left from a rock fissure, entire rear body visible.\n5. BOTTOM CENTRE — Spindlebur: A palm-length terrestrial INVERTEBRATE, single elongated arched abdomen with low interlocking russet chitin plates, exactly SIX slender jointed walking legs, two short segmented antennae. Compact head shield descends naturally from thorax; two small dark faceted eyes, short paired feeding mandibles tucked underneath. Fine tawny sensory fibres line body margins and joints, no vertebrate fur face or mammal lips. The abdomen has an off-centre-looking low ridge from its quarter view but body anatomy is bilaterally consistent. Walking right over two fallen leaves, entire body and all limb connections legible.\n6. BOTTOM RIGHT — Quillheel: Four-legged rock browser with a TALL narrow front breast on two straight moderate-length forelegs and a LOW WIDE pelvis on two much shorter outward-folding hindlegs; gently descending back, short wedge tail. Not a high-hindquarter animal. Dense stiff blue-grey feathers lie flush over breast and back, smooth dun skin at neck underside and tiny matte scales on lower limbs. Short downward-pointing head is a functional clipping unit with narrow blunt keratin upper lip, deep fleshy lower jaw, small high lateral eyes, no external ears. Neck springs from front chest and curves only modestly down. Feeding on a tough shoot on a stone ledge, three-quarter right, all four feet have clear support.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-55d85697-e5d3-4653-a3b1-22ad388a7a44.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Six new whole-creature designs reviewed. Heads connect into neck/shoulder anatomy and differ across mammalian, birdlike, reptilian and invertebrate forms. Cleftpelt shows the intended three leg pairs; Tasselstride has two legs; Quillheel four. Tasselstride has a longer bent neck than briefed, and Stonegullet's rear body is partly occluded by its fissure. These remain exploratory designs, not settled biological specifications.",
+        "creatures": 6
+      },
+      "generation_history": [
+        {
+          "stage": "new_creature_lineup",
+          "prompt": "Use case: stylized-concept.\nAsset type: NEW Breachline creature exploration lineup, landscape 1536 x 1024.\nPaint EXACTLY SIX entirely new animal designs in a clear 2-row by 3-column layout. Read left to right across top row then bottom row. Each cell contains ONE full-body animal, visibly separated by generous warm off-white negative space. No repeated views, no head variation studies, no text, numbers, borders, labels, logos, human scale silhouettes or symbols. Tiny quiet natural ground/branch/water fragments may clarify support, but no full scene.\nCreative direction: interesting coherent combinations of whole-body anatomy and biological coverings, with varied believable head structures. The head belongs to the animal: skull proportions, jaw hinges, nose, eyes, ears and neck muscles must support how it feeds and moves. Do not paste an Earth animal face onto an unrelated body. No universal lizard face, no universal cute mammal face. Reptilian faces are welcome only where specified. Exactly one head per animal. Natural animal-sized heads and eyes; mature wild animals, not pet expressions, plush mascots, grins or human-like lips. Believable bilateral limb attachment, matched pairs, readable weight and feet. These are ordinary modestly sized wildlife with new anatomies, not monsters or giant champions. No recycled prior creature identities.\nMedium: traditional OIL AND ACRYLIC fantasy concept painting with measured visible brushwork, larger shapes on secondary surfaces, matte biological materials and locally coherent detail. Heads readable but not microscopically over-rendered. Avoid photographic pores, shiny 3D, plastic, anime and toy-like forms. Neutral soft daylight with gentle grounding shadow. Each animal's limited palette differs; retain colour and appeal without neon. Keep the whole body in frame and extremities apart.\nPOSITIONS:\n1. TOP LEFT — Keelroot: A compact root grazer, body NARROW from side to side but deep vertically like a keel suspended between four short outward-set legs. Straight level back, short blunt tail, broad firm forefeet, rounder hindfeet. Short umber velvet over shoulders becomes small dull bronze scale rows only on lower flanks. Head is integrated low into a stout neck: deep mammalian chewing jaw, broad mobile leathery nose, split upper lip, modest lateral eyes, two tiny protective ear folds. Mouth closed around a fine root, no tusks or horns. Side-left, dry root bank. The shape is not a boar, badger or conventional quadruped silhouette.\n2. TOP CENTRE — Tasselstride: An upright narrow OVAL trunk balanced directly above TWO short strong bent legs with broad three-toed feet, no forelimbs, no wings, short dense tapered tail behind. Soft cream contour feathers lie in vertical overlapping rows, with a few dark long feather tassels at the hips. The short neck bends forward from HIGH on chest; compact deep skull has a tiny blunt keratin cutting edge, muscular lower jaw and dark small side eyes embedded within feathered cheeks. Feeding apparatus and neck are one continuous feathered structure, no pasted bird head. Picking seeds near low grasses, side-right, whole body. Avoid the horizontal rust-coloured Loomstep silhouette.\n3. TOP RIGHT — Cleftpelt: Six-legged ground predator, a LONG LOW narrow muscular torso on THREE PAIRS of short jointed legs: powerful front pair, compact middle supporting pair, rear pair set wider for turning. ONE continuous spinal trunk, no insect exoskeleton. Flat heavy tapering tail held just above ground. Coarse charcoal fur lies in two lateral ridges with a short brown strip along spine. Integrated mammalian head is small and long, soft blunt nose tip, little whiskers, small folded ear openings and forward-angled modest eyes; jaw muscles continue visibly into the slim furred neck. No familiar cat/dog facial mask, no big canine ears. Crouched tracking scent beside a stone, three-quarter left.\n4. BOTTOM LEFT — Stonegullet: A long flexible crevice burrower with EXACTLY TWO short robust digging forelimbs beneath the front third and NO HIND LIMBS. Its single legless rear trunk continues into a broad tapering tail with shallow low ridges, body partly curves but does not coil into knots. Matte slate-grey skin with bands of small stone-coloured scales protecting belly and brow. A restrained reptilian head is narrow and low, small lateral eyes, tight lip-covered jaw, two tiny nostrils, strong neck muscles taper continuously into trunk; jaws normal sized, no fangs. Crawling left from a rock fissure, entire rear body visible.\n5. BOTTOM CENTRE — Spindlebur: A palm-length terrestrial INVERTEBRATE, single elongated arched abdomen with low interlocking russet chitin plates, exactly SIX slender jointed walking legs, two short segmented antennae. Compact head shield descends naturally from thorax; two small dark faceted eyes, short paired feeding mandibles tucked underneath. Fine tawny sensory fibres line body margins and joints, no vertebrate fur face or mammal lips. The abdomen has an off-centre-looking low ridge from its quarter view but body anatomy is bilaterally consistent. Walking right over two fallen leaves, entire body and all limb connections legible.\n6. BOTTOM RIGHT — Quillheel: Four-legged rock browser with a TALL narrow front breast on two straight moderate-length forelegs and a LOW WIDE pelvis on two much shorter outward-folding hindlegs; gently descending back, short wedge tail. Not a high-hindquarter animal. Dense stiff blue-grey feathers lie flush over breast and back, smooth dun skin at neck underside and tiny matte scales on lower limbs. Short downward-pointing head is a functional clipping unit with narrow blunt keratin upper lip, deep fleshy lower jaw, small high lateral eyes, no external ears. Neck springs from front chest and curves only modestly down. Feeding on a tough shoot on a stone ledge, three-quarter right, all four feet have clear support.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-55d85697-e5d3-4653-a3b1-22ad388a7a44.png",
+          "reference_images": [],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6",
+      "bytes": 2582985,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "NC2",
+      "title": "Water, branches & cover",
+      "file": "02-water-branches-and-cover.png",
+      "description": "Six further proposals develop faces around swimming, climbing and feeding. They broaden the range while keeping each animal anatomically connected.",
+      "takes": [
+        {
+          "name": "Rillspade",
+          "core": "River-bottom feeder",
+          "size": "Forearm-length",
+          "surface": "Small matte blue-green scales and smooth pale lips",
+          "line": "A flattened feeding head joins a deep-sided body with four short steering fins.",
+          "detail": "A river-bottom swimmer with ONE short deep laterally compressed body, a vertically thin rear tail fan, exactly FOUR short paired steering fins in two pairs. The FRONT skull broadens into a shallow horizontal spade, then narrows smoothly behind eyes into the deep body; robust real connection, not two bodies. Fish-like head, small dorsolateral eyes, two close-set nostrils, a modest underslung fleshy suction mouth for sediment, no mammal nose or reptile grin. Small blue-green scales with pale smooth lip and pale underside. Full three-quarter left view in a shallow clear-water vignette, all fins visible and only a few brushstrokes for water.",
+          "position": 1,
+          "description": "A flattened feeding head joins a deep-sided body with four short steering fins. It proposes a river-bottom feeder; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Threadmuzzle",
+          "core": "Canopy fruit browser",
+          "size": "Forearm-length body",
+          "surface": "Short amber feathers and bare gripping palms",
+          "line": "A narrow curved body hangs beneath a branch between two widely spaced pairs of gripping limbs.",
+          "detail": "A small tree browser with a NARROW elongated trunk curving upward at BOTH ends, four short gripping limbs set in widely spaced front and rear pairs. Body hangs below a horizontal branch like a shallow hammock while all four broad opposed-toe feet grip it. No long tail, just a short blunt taper. Short amber and deep brown feathers follow the trunk; bare muted grey palms. Head projects from front below branch on a short upward-curving neck: long soft MAMMALIAN muzzle, narrow mobile split lip for fruit, small matte nose, small cupped ears tucked back, modest brown eyes. Fine velvet on muzzle gradually transitions into neck feathers; continuous jaw muscles, no detached familiar animal head. Entire creature and enough branch for grip visible, facing right.",
+          "position": 2,
+          "description": "A narrow curved body hangs beneath a branch between two widely spaced pairs of gripping limbs. It proposes a canopy fruit browser; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Siltbutton",
+          "core": "Shoreline worm hunter",
+          "size": "Cat-length",
+          "surface": "Smooth muted olive skin, fine sensory bristles and dark foot pads",
+          "line": "A slender body rests on four broad paddling feet; the short snout probes wet mud.",
+          "detail": "A slender low shoreline creature with a long flat ribcage, FOUR short limbs ending in very broad splayed webbed feet, a short vertically flattened tail, no huge belly. Smooth muted olive leathery skin, sparse fine straw sensory bristles along jaw and forefeet. A small compact MAMMALIAN digging head has a movable oval nose pad, short lower jaw, tiny inset eyes protected by heavy soft lids, minute ear slits. Head and short muscular neck are naturally aligned with forelimb girdle for probing mud; no seal head pasted on. One forefoot lifts while nose probes dark mud, side-left, all limbs visibly attached.",
+          "position": 3,
+          "description": "A slender body rests on four broad paddling feet; the short snout probes wet mud. It proposes a shoreline worm hunter; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Coppernape",
+          "core": "Woody-stem browser",
+          "size": "Small-goat mass",
+          "surface": "Matte chestnut fur, a bare neck and narrow copper scale ridge",
+          "line": "A deep rear torso sits above short hindlegs, while a long bare neck reaches beyond a narrow shoulder girdle.",
+          "detail": "A four-legged browsing animal with a DEEP COMPACT rear torso and SMALL narrow shoulder girdle, two short sturdy hindlegs and two longer thin front legs, back nearly level because rear pelvis is lower. A long low forward neck extends from the small front shoulders, no towering dinosaur stance. Deep chestnut fur covers rear torso, a narrow ridge of small copper scales protects nape, neck underside bare warm grey. Head has a vertically DEEP MAMMALIAN cheek, short square muzzle, flexible divided upper lip, matte nose with two small nostrils and small sideways folded ears; stout chewing muscles explain skull shape, modest side eyes. Browsing a woody twig, three-quarter left. Not a deer, camel or familiar Earth animal silhouette; no antlers.",
+          "position": 4,
+          "description": "A deep rear torso sits above short hindlegs, while a long bare neck reaches beyond a narrow shoulder girdle. It proposes a woody-stem browser; its ecology and detailed biology remain open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Accepted by creator on 2026-11-13. Preserve this original design.",
+            "updated_at": "2026-11-13T19:18:46.192021+00:00",
+            "creator_assessment": "accepted_visual"
+          }
+        },
+        {
+          "name": "Duskflank",
+          "core": "Wet-cover invertebrate hunter",
+          "size": "Hand-length",
+          "surface": "Matte blue bare skin with sparse cream bristles",
+          "line": "A wide shoulder ring narrows into a flexible trunk, with small jaws set beneath high sensory eyes.",
+          "detail": "A hand-length amphibious crawler with broad FLAT shoulder ring, a much narrower flexible rear trunk and long thin tapering tail, exactly FOUR low jointed limbs with broad paired toe pads. Matte deep-blue bare skin with very sparse short cream bristles along the sides, no scale coat. Head fits directly in front of the wide shoulder ring: broad shallow AMPHIBIAN skull, high widely spaced small oval eyes, paired nostril bumps, modest horizontal closed mouth set LOW on skull with muscular corner folds, no fleshy human lips or smile. Head is proportionate, not giant. Stalking right beneath one bent reed, whole animal unobscured.",
+          "position": 5,
+          "description": "A wide shoulder ring narrows into a flexible trunk, with small jaws set beneath high sensory eyes. It proposes a wet-cover invertebrate hunter; its ecology and detailed biology remain open."
+        },
+        {
+          "name": "Cinderfold",
+          "core": "Crepuscular flying insect hunter",
+          "size": "Hand-length body",
+          "surface": "Short dark fur and narrow chestnut flight feathers",
+          "line": "A compact flying hunter has feathered forelimbs, a short sensitive muzzle and broad steering tail.",
+          "detail": "A SMALL flying animal shown at rest with wings PARTLY spread, four limbs total: TWO forelimbs are narrow FEATHERED WINGS, TWO small hindlimbs grip a branch. Compact flattened thorax, short deep pelvis, broad feathered tail for steering, no extra arms, no bird legs grafted elsewhere. Short dark soot FUR covers trunk and head; chestnut flight feathers grow in orderly rows along wings and tail. Its small MAMMALIAN skull is integrated into a short muscular neck, narrow soft muzzle and tiny insect-catching jaw, small almond eyes and modest low ear cups, no bat face stereotype, beak, horns or oversized ears. Both wing shoulders attach to the same chest with believable flight musculature. Three-quarter left, whole silhouette visible against plain background.",
+          "position": 6,
+          "description": "A compact flying hunter has feathered forelimbs, a short sensitive muzzle and broad steering tail. It proposes a crepuscular flying insect hunter; its ecology and detailed biology remain open."
+        }
+      ],
+      "kind": "new_creature_lineup",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [],
+      "reference_policy": "No attached references: these must be new designs, not modifications or reproductions of the selected BP/HV creatures.",
+      "prompt": "Use case: stylized-concept.\nAsset type: NEW Breachline creature exploration lineup, landscape 1536 x 1024.\nPaint EXACTLY SIX entirely new animal designs in a clear 2-row by 3-column layout. Read left to right across top row then bottom row. Each cell contains ONE full-body animal, visibly separated by generous warm off-white negative space. No repeated views, no head variation studies, no text, numbers, borders, labels, logos, human scale silhouettes or symbols. Tiny quiet natural ground/branch/water fragments may clarify support, but no full scene.\nCreative direction: interesting coherent combinations of whole-body anatomy and biological coverings, with varied believable head structures. The head belongs to the animal: skull proportions, jaw hinges, nose, eyes, ears and neck muscles must support how it feeds and moves. Do not paste an Earth animal face onto an unrelated body. No universal lizard face, no universal cute mammal face. Reptilian faces are welcome only where specified. Exactly one head per animal. Natural animal-sized heads and eyes; mature wild animals, not pet expressions, plush mascots, grins or human-like lips. Believable bilateral limb attachment, matched pairs, readable weight and feet. These are ordinary modestly sized wildlife with new anatomies, not monsters or giant champions. No recycled prior creature identities.\nMedium: traditional OIL AND ACRYLIC fantasy concept painting with measured visible brushwork, larger shapes on secondary surfaces, matte biological materials and locally coherent detail. Heads readable but not microscopically over-rendered. Avoid photographic pores, shiny 3D, plastic, anime and toy-like forms. Neutral soft daylight with gentle grounding shadow. Each animal's limited palette differs; retain colour and appeal without neon. Keep the whole body in frame and extremities apart.\nPOSITIONS:\n1. TOP LEFT — Rillspade: A river-bottom swimmer with ONE short deep laterally compressed body, a vertically thin rear tail fan, exactly FOUR short paired steering fins in two pairs. The FRONT skull broadens into a shallow horizontal spade, then narrows smoothly behind eyes into the deep body; robust real connection, not two bodies. Fish-like head, small dorsolateral eyes, two close-set nostrils, a modest underslung fleshy suction mouth for sediment, no mammal nose or reptile grin. Small blue-green scales with pale smooth lip and pale underside. Full three-quarter left view in a shallow clear-water vignette, all fins visible and only a few brushstrokes for water.\n2. TOP CENTRE — Threadmuzzle: A small tree browser with a NARROW elongated trunk curving upward at BOTH ends, four short gripping limbs set in widely spaced front and rear pairs. Body hangs below a horizontal branch like a shallow hammock while all four broad opposed-toe feet grip it. No long tail, just a short blunt taper. Short amber and deep brown feathers follow the trunk; bare muted grey palms. Head projects from front below branch on a short upward-curving neck: long soft MAMMALIAN muzzle, narrow mobile split lip for fruit, small matte nose, small cupped ears tucked back, modest brown eyes. Fine velvet on muzzle gradually transitions into neck feathers; continuous jaw muscles, no detached familiar animal head. Entire creature and enough branch for grip visible, facing right.\n3. TOP RIGHT — Siltbutton: A slender low shoreline creature with a long flat ribcage, FOUR short limbs ending in very broad splayed webbed feet, a short vertically flattened tail, no huge belly. Smooth muted olive leathery skin, sparse fine straw sensory bristles along jaw and forefeet. A small compact MAMMALIAN digging head has a movable oval nose pad, short lower jaw, tiny inset eyes protected by heavy soft lids, minute ear slits. Head and short muscular neck are naturally aligned with forelimb girdle for probing mud; no seal head pasted on. One forefoot lifts while nose probes dark mud, side-left, all limbs visibly attached.\n4. BOTTOM LEFT — Coppernape: A four-legged browsing animal with a DEEP COMPACT rear torso and SMALL narrow shoulder girdle, two short sturdy hindlegs and two longer thin front legs, back nearly level because rear pelvis is lower. A long low forward neck extends from the small front shoulders, no towering dinosaur stance. Deep chestnut fur covers rear torso, a narrow ridge of small copper scales protects nape, neck underside bare warm grey. Head has a vertically DEEP MAMMALIAN cheek, short square muzzle, flexible divided upper lip, matte nose with two small nostrils and small sideways folded ears; stout chewing muscles explain skull shape, modest side eyes. Browsing a woody twig, three-quarter left. Not a deer, camel or familiar Earth animal silhouette; no antlers.\n5. BOTTOM CENTRE — Duskflank: A hand-length amphibious crawler with broad FLAT shoulder ring, a much narrower flexible rear trunk and long thin tapering tail, exactly FOUR low jointed limbs with broad paired toe pads. Matte deep-blue bare skin with very sparse short cream bristles along the sides, no scale coat. Head fits directly in front of the wide shoulder ring: broad shallow AMPHIBIAN skull, high widely spaced small oval eyes, paired nostril bumps, modest horizontal closed mouth set LOW on skull with muscular corner folds, no fleshy human lips or smile. Head is proportionate, not giant. Stalking right beneath one bent reed, whole animal unobscured.\n6. BOTTOM RIGHT — Cinderfold: A SMALL flying animal shown at rest with wings PARTLY spread, four limbs total: TWO forelimbs are narrow FEATHERED WINGS, TWO small hindlimbs grip a branch. Compact flattened thorax, short deep pelvis, broad feathered tail for steering, no extra arms, no bird legs grafted elsewhere. Short dark soot FUR covers trunk and head; chestnut flight feathers grow in orderly rows along wings and tail. Its small MAMMALIAN skull is integrated into a short muscular neck, narrow soft muzzle and tiny insect-catching jaw, small almond eyes and modest low ear cups, no bat face stereotype, beak, horns or oversized ears. Both wing shoulders attach to the same chest with believable flight musculature. Three-quarter left, whole silhouette visible against plain background.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6977ee52-31fa-4538-be5c-692c1717d376.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Six new designs reviewed for distinct silhouettes, integrated heads and limb attachments. Threadmuzzle has four branch grips, Siltbutton four webbed limbs, Coppernape four legs, Duskflank four low limbs, and Cinderfold two wing-forelimbs plus two perching hindlimbs. Rillspade has a single continuous body. The mammalian/feather combinations and amphibian proportions remain proposals for creator judgment.",
+        "creatures": 6
+      },
+      "generation_history": [
+        {
+          "stage": "new_creature_lineup",
+          "prompt": "Use case: stylized-concept.\nAsset type: NEW Breachline creature exploration lineup, landscape 1536 x 1024.\nPaint EXACTLY SIX entirely new animal designs in a clear 2-row by 3-column layout. Read left to right across top row then bottom row. Each cell contains ONE full-body animal, visibly separated by generous warm off-white negative space. No repeated views, no head variation studies, no text, numbers, borders, labels, logos, human scale silhouettes or symbols. Tiny quiet natural ground/branch/water fragments may clarify support, but no full scene.\nCreative direction: interesting coherent combinations of whole-body anatomy and biological coverings, with varied believable head structures. The head belongs to the animal: skull proportions, jaw hinges, nose, eyes, ears and neck muscles must support how it feeds and moves. Do not paste an Earth animal face onto an unrelated body. No universal lizard face, no universal cute mammal face. Reptilian faces are welcome only where specified. Exactly one head per animal. Natural animal-sized heads and eyes; mature wild animals, not pet expressions, plush mascots, grins or human-like lips. Believable bilateral limb attachment, matched pairs, readable weight and feet. These are ordinary modestly sized wildlife with new anatomies, not monsters or giant champions. No recycled prior creature identities.\nMedium: traditional OIL AND ACRYLIC fantasy concept painting with measured visible brushwork, larger shapes on secondary surfaces, matte biological materials and locally coherent detail. Heads readable but not microscopically over-rendered. Avoid photographic pores, shiny 3D, plastic, anime and toy-like forms. Neutral soft daylight with gentle grounding shadow. Each animal's limited palette differs; retain colour and appeal without neon. Keep the whole body in frame and extremities apart.\nPOSITIONS:\n1. TOP LEFT — Rillspade: A river-bottom swimmer with ONE short deep laterally compressed body, a vertically thin rear tail fan, exactly FOUR short paired steering fins in two pairs. The FRONT skull broadens into a shallow horizontal spade, then narrows smoothly behind eyes into the deep body; robust real connection, not two bodies. Fish-like head, small dorsolateral eyes, two close-set nostrils, a modest underslung fleshy suction mouth for sediment, no mammal nose or reptile grin. Small blue-green scales with pale smooth lip and pale underside. Full three-quarter left view in a shallow clear-water vignette, all fins visible and only a few brushstrokes for water.\n2. TOP CENTRE — Threadmuzzle: A small tree browser with a NARROW elongated trunk curving upward at BOTH ends, four short gripping limbs set in widely spaced front and rear pairs. Body hangs below a horizontal branch like a shallow hammock while all four broad opposed-toe feet grip it. No long tail, just a short blunt taper. Short amber and deep brown feathers follow the trunk; bare muted grey palms. Head projects from front below branch on a short upward-curving neck: long soft MAMMALIAN muzzle, narrow mobile split lip for fruit, small matte nose, small cupped ears tucked back, modest brown eyes. Fine velvet on muzzle gradually transitions into neck feathers; continuous jaw muscles, no detached familiar animal head. Entire creature and enough branch for grip visible, facing right.\n3. TOP RIGHT — Siltbutton: A slender low shoreline creature with a long flat ribcage, FOUR short limbs ending in very broad splayed webbed feet, a short vertically flattened tail, no huge belly. Smooth muted olive leathery skin, sparse fine straw sensory bristles along jaw and forefeet. A small compact MAMMALIAN digging head has a movable oval nose pad, short lower jaw, tiny inset eyes protected by heavy soft lids, minute ear slits. Head and short muscular neck are naturally aligned with forelimb girdle for probing mud; no seal head pasted on. One forefoot lifts while nose probes dark mud, side-left, all limbs visibly attached.\n4. BOTTOM LEFT — Coppernape: A four-legged browsing animal with a DEEP COMPACT rear torso and SMALL narrow shoulder girdle, two short sturdy hindlegs and two longer thin front legs, back nearly level because rear pelvis is lower. A long low forward neck extends from the small front shoulders, no towering dinosaur stance. Deep chestnut fur covers rear torso, a narrow ridge of small copper scales protects nape, neck underside bare warm grey. Head has a vertically DEEP MAMMALIAN cheek, short square muzzle, flexible divided upper lip, matte nose with two small nostrils and small sideways folded ears; stout chewing muscles explain skull shape, modest side eyes. Browsing a woody twig, three-quarter left. Not a deer, camel or familiar Earth animal silhouette; no antlers.\n5. BOTTOM CENTRE — Duskflank: A hand-length amphibious crawler with broad FLAT shoulder ring, a much narrower flexible rear trunk and long thin tapering tail, exactly FOUR low jointed limbs with broad paired toe pads. Matte deep-blue bare skin with very sparse short cream bristles along the sides, no scale coat. Head fits directly in front of the wide shoulder ring: broad shallow AMPHIBIAN skull, high widely spaced small oval eyes, paired nostril bumps, modest horizontal closed mouth set LOW on skull with muscular corner folds, no fleshy human lips or smile. Head is proportionate, not giant. Stalking right beneath one bent reed, whole animal unobscured.\n6. BOTTOM RIGHT — Cinderfold: A SMALL flying animal shown at rest with wings PARTLY spread, four limbs total: TWO forelimbs are narrow FEATHERED WINGS, TWO small hindlimbs grip a branch. Compact flattened thorax, short deep pelvis, broad feathered tail for steering, no extra arms, no bird legs grafted elsewhere. Short dark soot FUR covers trunk and head; chestnut flight feathers grow in orderly rows along wings and tail. Its small MAMMALIAN skull is integrated into a short muscular neck, narrow soft muzzle and tiny insect-catching jaw, small almond eyes and modest low ear cups, no bat face stereotype, beak, horns or oversized ears. Both wing shoulders attach to the same chest with believable flight musculature. Three-quarter left, whole silhouette visible against plain background.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6977ee52-31fa-4538-be5c-692c1717d376.png",
+          "reference_images": [],
+          "disposition": "final_for_creator_review"
+        }
+      ],
+      "sha256": "67d48177373fe3f87aaa1e06d0abd5f587edafec6ddb5e22c8f9a75912b2136e",
+      "bytes": 2464514,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    }
+  ],
+  "art_direction_sha256": "4a85a121e11d4d6d5f5231afe62a932493e79841737cf20c7bd3283217f9c278",
+  "validation": {
+    "sheet_count": 2,
+    "creature_count": 12,
+    "all_visually_inspected": true,
+    "no_attached_image_references": true,
+    "earlier_choices_preserved": "Original BP designs for HV1–HV6 and HV8; HV7-1 for Purlrunner.",
+    "gallery": {
+      "images_loaded": 2,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "choices": 12,
+      "visual_layout_verified": true
+    },
+    "chosen_sources_unchanged": true
+  },
+  "latest_accepted_takes": [
+    "NC1-2",
+    "NC1-3",
+    "NC1-5",
+    "NC1-6",
+    "NC2-4"
+  ]
+}

@@ -8,7 +8,7 @@ description: Holds the art direction and accumulated art feedback for Breachline
 These are the current rules, rewritten on 2026-11-13. Every earlier review, card decision and round record is kept word for word in [HISTORY.md](HISTORY.md). Read that file only when you need the details of a particular card, set or round. When the history and this file disagree, this file wins.
 
 **Adding feedback:**
-- Put general feedback from the creator into the right section of the current rules.
+- Put general feedback from the creator into the right section of the current rules. Reusable animal-design lessons belong in [Breachline Animal Art](../breachline-animal-art/SKILL.md); existing animal choices remain in the reference guide/index.
 - Put feedback on a specific card, image or round into the open-work section, or into HISTORY.md once it's settled.
 - Keep a one-off choice one-off. Don't turn it into a general rule unless the creator makes it general.
 
@@ -61,6 +61,7 @@ Read [BRIEF_WORKFLOW.md](BRIEF_WORKFLOW.md) whenever writing briefs or turning t
   - Vary detail on purpose. The focal feature can be precise, while secondary people and distant places get fewer marks, quieter edges and less contrast.
   - Brush size, edge sharpness and detail should agree locally.
   - The fresh peoples round confirmed this direction: visible, clearly varied brushwork and detail are part of the appeal. Keep the focal form readable without making the whole image crisp.
+  - Set 12's card paintings strongly confirmed this approach (creator, 2026-11-13): the new art direction was praised across the batch, with 206 Sallow Bridge mason singled out. Continue the current painted treatment; this is not a requirement to repeat its palette or composition.
   - Don't render everything equally sharp, and don't pair coarse strokes with hairline detail everywhere.
   - Backgrounds are implied with a few large value shapes rather than fully built. A landscape spell can make the place itself the subject.
 - **Materials:**
@@ -151,44 +152,10 @@ To undo it, delete this subsection.
 
 ## Creatures
 
-- **Successful larger animals; avoid repeated throat combs (creator, 2026-11-13):** LG1–4/5/6 work because recognisable honey-badger, anteater/armadillo and kangaroo corollaries have clear unfamiliar anatomical differences. Preserve that balance. Jaw frills and filter-feeder-like throat combs are overused and disliked; stop using them as a recurring novelty. A symbiosis must make sense in the animal's design; the bugs-under-scales idea in LG2–6 failed. This does not ban all symbiosis or all unsettling anatomy.
+Start with [the animal reference guide](../../../breachline/ANIMAL_REFERENCE_HANDOFF.txt) and [exact reference/ecology index](../../../breachline/art/accepted-animals-2026-11-13/animal-reference-index.json). These selected animals are inhabitants of the world. Consult them first for animal cards, especially Genesis, and for wildlife in backgrounds and other concept art. Preserve selected anatomy and explicitly open biological details.
 
-- **Ecological invention renewed (creator, 2026-11-13):** move closer again to the Scavengers Reign inspiration through integrated anatomy, interdependence, life cycles, surprising feeding and habitat relationships, beauty with danger, and tactility. Develop new original creatures; do not copy its designs or name the show in image prompts. The creator welcomes varied, creative experiments around the edges of their suggestions, clearly distinguished from accepted designs. Do not reduce the work to familiar animal faces with changed coats. Next scale exploration is slightly larger wildlife, not a universal jump to giants.
-- **Preserve picks; develop new creatures (creator clarification, 2026-11-13):** broader head variety is a direction for NEW creature generations, not an instruction to replace faces on already liked designs. A face must make sense with its creature's skull, neck, feeding method and covering. Develop the animal as a whole; do not treat faces as interchangeable masks. Keep explicit selections intact unless the creator requests a change.
-- **Head variety without a ban (creator, 2026-11-13):** the BP exploration leans too heavily on lizard-like heads. Vary skull mass, muzzle length, jaw depth, nose, eye placement and ears, including mammalian and other structures. Reptilian and snake-like faces remain welcome among a wider mix. Interesting combinations of body plan, head and covering are the aim; Needlehip's liked lizard face, fur and whip tail are one successful combination, not a template for everything. Keep the changes restrained and anatomically coherent.
-- **Further body-plan and surface variety (creator, 2026-11-13):** recent open exploration was too close to known Earth animals. Vary the whole body plan further, alongside skin texture, fur, feathers and scales. A recognizable ecological role and coherent animal biology are the anchors; the final silhouette need not identify a familiar Earth species. Covering should contribute to anatomy and silhouette, not merely decorate it. RF1–RF4 are liked exceptions to preserve, not templates for every new creature.
-- **Range: recognisable biology with a twist or two around one core.** Start from a familiar kind of animal and its niche, then change up to two things around that core:
-  - its body shape, keeping the same role
-  - its head or mouth
-  - its life cycle
-  - a distinct new feature
-  - a surprising symbiosis
-  - another twist that does something
+For new animal designs, ecological exploration, refinements and creature feedback, also read [Breachline Animal Art](../breachline-animal-art/SKILL.md). It collects the current lessons on body plans, faces, coverings, weight, movement, ecological invention and giant scale. The reference guide remains primary for the existing collection; the dedicated skill supports future creation. Add reusable animal-design feedback there, with local choices in the guide/index and source review records.
 
-  Not a known animal recoloured, and not wholly alien: no flying garlic.
-- **The models:**
-  - The Slateprowler is the model: new anatomy, but recognisably a predator built for its purpose.
-  - Ribbonvane marks the far edge of strangeness, not the centre.
-  - Shieldhound is a good example of a combination: two recognisable animal features joined in a surprising way.
-- **Most animals just live.** Many creatures simply fill an ordinary niche: grazing, hunting, scavenging, burrowing. Some have a surprising use to people, but a use is not required, and making every creature a tool is a misread.
-- **Normal animals are fine too.** Deer, bears, boars and other ordinary animals belong in the world and can appear in art. They just aren't unique to it, so creature *exploration* should mostly look beyond them.
-- **Variety in a batch:**
-  - Limit fliers and plant hybrids.
-  - Don't let one liked creature's body plan, vanes, membranes or shell repeat across a batch.
-- **Scale:**
-  - Truly enormous animals are rare and stop people in awe.
-  - Most wildlife is ordinary or moderately large at believable scale.
-  - Tidevault should be smaller than its first painting.
-  - The giant sea creature is only a rumour far out at sea.
-- **Liked creatures:**
-  - Dawnsail (use the first painting, `breachline/art/concepts/dawnsail-passage.png`, for anatomy)
-  - Coalback
-  - Roof glider
-  - Spindlejack
-  - Slateprowler
-  - Ribbonvane
-  - Ashwing's skeletal familiar
-  - from round 13: Moltwalker (the idea), Lampkeepers, Mendergrubs and Ashlicks
 - **Dragons** are intelligent but primal. Talking with one takes a magical connection and is difficult. Not every drake shares that intelligence.
 - **Constructs:**
   - Follow narrow instructions; adaptability is rare.
@@ -212,6 +179,7 @@ To undo it, delete this subsection.
   - Keep the approved pose and untouched parts.
   - Name each limb by anatomical side and screen position.
   - If the underlying composition is rejected, replace it rather than stacking fixes.
+  - Repeated edits can compound anatomy errors and add unwanted grain/noise. The creator rejected the 200/204 edit chains on 2026-11-13: when directed to start over, discard those paintings as inputs and rebuild from the approved design sheets with fresh staging and clean painted forms.
 
 ## Magic
 
@@ -293,6 +261,13 @@ Every alignment uses the same painting and material rules above. These are estab
 
 ## Open work
 
+**Set 12 paintings finalized (creator, 2026-11-13):**
+- All 20 current paintings are final: 193–198, 200–212 and 215. The creator said “much better! these are all final”.
+- Use the fresh restart paintings for 200 Husk and 204 Caravan head, v2 for 203 Floodplain farmer and 205 Caravan guard, and the reviewed first versions for the other cards.
+- Canonical collection: `breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/index.html`. Exact card-art selections: `breachline/art/CARD_ART_FINAL_SET12.json`.
+- All rejected 200/204 iterations and generated copies remain deleted and excluded. Their text history is retained. The successful fresh rebuild confirms restarting from approved design sheets when an edit chain has accumulated errors and noise.
+- This finalizes artwork; live-card installation, the four separate reuse proposals, and new lore were not part of this acceptance.
+
 **Peoples paintings finalized and cleaned (creator, 2026-11-13; latest):**
 - The current 22 paintings are accepted. Stonewake H2-R1 completes the only requested final change: the caster looks toward the armoured man's face. M1/M2 anatomy, northern O1/O2, barrier-free N2, full-sized N5, and E1/E2 are retained as reviewed.
 - Keep the 13 earlier favourites and useful mixed/open reference studies. The creator's subsequent “all final” finalizes all seven current peoples reference designs, including Banded folk PL8B, Crest folk CR3 and Greyhides CO1. Oath Sentinel's earlier comparison stays archived; no new live variant is selected.
@@ -310,8 +285,9 @@ Every alignment uses the same painting and material rules above. These are estab
 - Make fresh massive proposals with substantially more imaginative whole-body plans. The world can support much less Earth-like distributions of mass and movement; keep coherent anatomy and purposeful coverings. Do not merely enlarge familiar skeletons or switch faces.
 - ER1–ER6 refinements are approved. ER7–1, the reachable underslung pouch, is specifically selected. ER7–2 is unselected, not explicitly rejected.
 - Keep rejected source cells crossed out and excluded from references, preserving composites needed for the liked cells and the creator’s review history.
-- Stage the new FR1–FR3 edits, LN1 large proposal and MN1 six-animal massive lineup in `breachline/art/work-in-progress/animal-final-exploration-2026-11-13/`. All NEW artwork still needs review.
+- Final exploration is staged in `breachline/art/work-in-progress/animal-final-exploration-2026-11-13/`. Closing review selects MG6 Fanback and prefers FR3 Undertow; other giant options are set aside. FR1, FR2 and LN1 have no new individual verdict.
 - After this design pass, organise all created animals by ecology, distinguishing selected animals, open proposals and rejected attempts. Do not turn tentative habitat or diet into settled lore.
+- Closing review is recorded. The selected collection now has 56 animal references plus four separate companions; ecology groupings are approved for world use. Current lookup: [animal handoff](../../../breachline/ANIMAL_REFERENCE_HANDOFF.txt) and [ecology browser](../../../breachline/art/accepted-animals-2026-11-13/ecologies.html). Giant exploration is closed for now; preserve the explicit unknowns recorded in the index.
 
  (2026-11-13)
 

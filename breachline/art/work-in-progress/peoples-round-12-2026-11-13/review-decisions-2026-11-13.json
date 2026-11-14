@@ -1,0 +1,689 @@
+{
+  "date": "2026-11-13",
+  "scope": "Final selection for peoples round 12 and its follow-up only",
+  "source": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
+  "accepted_peoples": [
+    "Riverfolk",
+    "Saltreach"
+  ],
+  "rejected_peoples": [
+    "Scions",
+    "Graftkin and new made-people variants",
+    "Glimmerfolk",
+    "Mourncaps",
+    "Lichenkin",
+    "Cairnfold"
+  ],
+  "accepted_unchanged_reference_codes": [
+    "R2",
+    "R4",
+    "R5",
+    "R6"
+  ],
+  "accepted_followup_codes": [
+    "R1v2",
+    "R3v2",
+    "P5v2",
+    "W3",
+    "W5"
+  ],
+  "active_reference_codes": [
+    "R1v2",
+    "R2",
+    "R3v2",
+    "R4",
+    "R5",
+    "R6",
+    "W5",
+    "P5v2",
+    "W3"
+  ],
+  "rejected_codes": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "P1",
+    "P2",
+    "P4",
+    "P6",
+    "P1v2",
+    "W1",
+    "W4",
+    "M1",
+    "M2"
+  ],
+  "superseded_codes": [
+    "R1",
+    "R3",
+    "P5"
+  ],
+  "pending_codes": [],
+  "approval_boundary": "The five selected Riverfolk and Saltreach images are accepted visual references. All other follow-up concepts are rejected. This review selects no cards and does not automatically settle biology, universal occupations or mechanics.",
+  "records": [
+    {
+      "code": "S1",
+      "file": "01-scion-reference-sheet.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "S2",
+      "file": "02-scion-at-court.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "S3",
+      "file": "03-scion-war-line.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "S4",
+      "file": "04-taught-the-blade.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "S5",
+      "file": "05-the-old-breeding-hall.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "G1",
+      "file": "06-graftkin-reference-sheet.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "G2",
+      "file": "07-graftkin-in-the-yard.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "G3",
+      "file": "08-the-hauling-gang.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "G4",
+      "file": "09-graftkin-elder.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "G5",
+      "file": "10-beast-grafted.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R1",
+      "file": "11-morning-shift.png",
+      "status": "superseded_by_accepted_revision",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13). Use the accepted revision."
+    },
+    {
+      "code": "R2",
+      "file": "12-the-sounding.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R3",
+      "file": "13-stilt-village.png",
+      "status": "superseded_by_accepted_revision",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13). Use the accepted revision."
+    },
+    {
+      "code": "R4",
+      "file": "14-waiting-for-hire.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R5",
+      "file": "15-mending-the-hood.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R6",
+      "file": "16-under-the-gate.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P1",
+      "file": "17-glimmerfolk.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P2",
+      "file": "18-mourncaps.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P4",
+      "file": "20-lichenkin.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P5",
+      "file": "21-saltreach.png",
+      "status": "superseded_by_accepted_revision",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13). Use the accepted revision."
+    },
+    {
+      "code": "P6",
+      "file": "22-wildcard.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R1v2",
+      "file": "followup-2026-11-13/01-r1-morning-shift-v2.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "R3v2",
+      "file": "followup-2026-11-13/02-r3-stilt-village-v2.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P1v2",
+      "file": "followup-2026-11-13/03-p1-glimmerfolk-v2.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "P5v2",
+      "file": "followup-2026-11-13/05-p5-saltreach-v2.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "W1",
+      "file": "followup-2026-11-13/06-glimmerfolk-below-the-old-road.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "W3",
+      "file": "followup-2026-11-13/08-saltreach-the-last-boat-up.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "W4",
+      "file": "followup-2026-11-13/09-cairnfold-at-the-wayhouse.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "W5",
+      "file": "followup-2026-11-13/10-riverfolk-a-table-above-the-water.png",
+      "status": "accepted_visual_reference",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "M1",
+      "file": "followup-2026-11-13/11-made-people-fourfold-warden.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    },
+    {
+      "code": "M2",
+      "file": "followup-2026-11-13/12-made-people-the-closed-road.png",
+      "status": "rejected",
+      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
+    }
+  ],
+  "earlier_review_history": [
+    {
+      "date": "2026-11-13",
+      "scope": "Creator's round 12 feedback",
+      "accepted_unchanged_reference_codes": [
+        "R2",
+        "R4",
+        "R5",
+        "R6",
+        "P6"
+      ],
+      "rejected_concept_codes": [
+        "P2",
+        "P4"
+      ],
+      "unselected_scion_design_codes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "source": "User feedback in Create art from new briefs chat",
+      "scene_lore_status": "New scenes, occupations and institutions are proposals. No new card rules or universal species alignments selected.",
+      "painted_attention": "Moderately less background detail and quieter edges, without photographic blur.",
+      "scion_retention": "The creator distinguished disliked near-human designs from satisfactory art quality. Retain original Scion paintings only as unselected work-in-progress; exclude them as design references and from the current review gallery.",
+      "records": [
+        {
+          "code": "S1",
+          "file": "01-scion-reference-sheet.png",
+          "note": "Scions too human; painting quality was not the problem.",
+          "status": "design not selected; retained WIP only"
+        },
+        {
+          "code": "S2",
+          "file": "02-scion-at-court.png",
+          "note": "Scions too human; painting quality was not the problem.",
+          "status": "design not selected; retained WIP only"
+        },
+        {
+          "code": "S3",
+          "file": "03-scion-war-line.png",
+          "note": "Scions too human; painting quality was not the problem.",
+          "status": "design not selected; retained WIP only"
+        },
+        {
+          "code": "S4",
+          "file": "04-taught-the-blade.png",
+          "note": "Scions too human; painting quality was not the problem.",
+          "status": "design not selected; retained WIP only"
+        },
+        {
+          "code": "S5",
+          "file": "05-the-old-breeding-hall.png",
+          "note": "Scions too human; painting quality was not the problem.",
+          "status": "design not selected; retained WIP only"
+        },
+        {
+          "code": "G1",
+          "file": "06-graftkin-reference-sheet.png",
+          "note": "Not selected in this review.",
+          "status": "unapproved study"
+        },
+        {
+          "code": "G2",
+          "file": "07-graftkin-in-the-yard.png",
+          "note": "Not selected in this review.",
+          "status": "unapproved study"
+        },
+        {
+          "code": "G3",
+          "file": "08-the-hauling-gang.png",
+          "note": "Not selected in this review.",
+          "status": "unapproved study"
+        },
+        {
+          "code": "G4",
+          "file": "09-graftkin-elder.png",
+          "note": "Closer to intended made people, but not great and not approved.",
+          "status": "unapproved study"
+        },
+        {
+          "code": "G5",
+          "file": "10-beast-grafted.png",
+          "note": "Closer to intended made people, but not great and not approved.",
+          "status": "unapproved study"
+        },
+        {
+          "code": "R1",
+          "file": "11-morning-shift.png",
+          "note": "Riverfolk scene liked overall, but least favorite: workers too dramatic. Quieter revision requested.",
+          "status": "liked direction; revision pending"
+        },
+        {
+          "code": "R2",
+          "file": "12-the-sounding.png",
+          "note": "Liked with the Riverfolk set.",
+          "status": "accepted visual reference"
+        },
+        {
+          "code": "R3",
+          "file": "13-stilt-village.png",
+          "note": "Good, but remove premature splashes below airborne children.",
+          "status": "liked direction; revision pending"
+        },
+        {
+          "code": "R4",
+          "file": "14-waiting-for-hire.png",
+          "note": "Liked with the Riverfolk set.",
+          "status": "accepted visual reference"
+        },
+        {
+          "code": "R5",
+          "file": "15-mending-the-hood.png",
+          "note": "One of the two strongest Riverfolk images.",
+          "status": "accepted visual reference"
+        },
+        {
+          "code": "R6",
+          "file": "16-under-the-gate.png",
+          "note": "One of the two strongest Riverfolk images.",
+          "status": "accepted visual reference"
+        },
+        {
+          "code": "P1",
+          "file": "17-glimmerfolk.png",
+          "note": "Develop with more prominent glowing freckles; final revised design pending.",
+          "status": "liked direction; revision pending"
+        },
+        {
+          "code": "P2",
+          "file": "18-mourncaps.png",
+          "note": "Mourncaps rejected.",
+          "status": "rejected concept; remove images"
+        },
+        {
+          "code": "P4",
+          "file": "20-lichenkin.png",
+          "note": "Lichenkin rejected.",
+          "status": "rejected concept; remove images"
+        },
+        {
+          "code": "P5",
+          "file": "21-saltreach.png",
+          "note": "Saltreach liked; more rugged, mildly sunburnt and weathered skin requested.",
+          "status": "liked direction; revision pending"
+        },
+        {
+          "code": "P6",
+          "file": "22-wildcard.png",
+          "note": "Cairnfold strongly liked; preserve accepted anatomy in a new in-world scene.",
+          "status": "accepted visual reference"
+        }
+      ],
+      "removed_files": [
+        {
+          "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-be364621-df42-40ab-9f2b-c76489aa22c8.png",
+          "sha256": "c493b6f18de07075d63feca680af37b1a5effa4ca57b1d58ceb38aad84ccd0b0",
+          "code": "P2"
+        },
+        {
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/18-mourncaps.png",
+          "sha256": "c493b6f18de07075d63feca680af37b1a5effa4ca57b1d58ceb38aad84ccd0b0",
+          "code": "P2"
+        },
+        {
+          "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-3a9889ac-a8df-49b2-ad8e-0079e28c04df.png",
+          "sha256": "f95e268433174cf7ddebf5f767a501d7fa6ac180ff5eb959c97e2cc0850f7ea4",
+          "code": "P4"
+        },
+        {
+          "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-606eef55-439f-4811-b13a-465026d784c1.png",
+          "sha256": "6d66bd6725d7aaeeec26b2d3c061d70fbe397498c99e813a4e15c04dea501e27",
+          "code": "P4"
+        },
+        {
+          "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/20-lichenkin.png",
+          "sha256": "6d66bd6725d7aaeeec26b2d3c061d70fbe397498c99e813a4e15c04dea501e27",
+          "code": "P4"
+        }
+      ]
+    }
+  ],
+  "removed_files": [
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-be364621-df42-40ab-9f2b-c76489aa22c8.png",
+      "sha256": "c493b6f18de07075d63feca680af37b1a5effa4ca57b1d58ceb38aad84ccd0b0",
+      "code": "P2"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/18-mourncaps.png",
+      "sha256": "c493b6f18de07075d63feca680af37b1a5effa4ca57b1d58ceb38aad84ccd0b0",
+      "code": "P2"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-3a9889ac-a8df-49b2-ad8e-0079e28c04df.png",
+      "sha256": "f95e268433174cf7ddebf5f767a501d7fa6ac180ff5eb959c97e2cc0850f7ea4",
+      "code": "P4"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-606eef55-439f-4811-b13a-465026d784c1.png",
+      "sha256": "6d66bd6725d7aaeeec26b2d3c061d70fbe397498c99e813a4e15c04dea501e27",
+      "code": "P4"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/20-lichenkin.png",
+      "sha256": "6d66bd6725d7aaeeec26b2d3c061d70fbe397498c99e813a4e15c04dea501e27",
+      "code": "P4"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/01-scion-reference-sheet.png",
+      "sha256": "db98dff940b92395c3c7634f56d44ebd46fbb2fdea8f10f84bc25e9f4862e74d",
+      "code": "S1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-4254e5a1-2d68-42dd-b322-c779ee277925.png",
+      "sha256": "db98dff940b92395c3c7634f56d44ebd46fbb2fdea8f10f84bc25e9f4862e74d",
+      "code": "S1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/02-scion-at-court.png",
+      "sha256": "6064cd4992f9839d77771ab8da953a7fe68b6385d4f028b5a308ebffdfa11055",
+      "code": "S2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-44635657-71fa-477d-ab9c-fe6bdf3d187c.png",
+      "sha256": "6064cd4992f9839d77771ab8da953a7fe68b6385d4f028b5a308ebffdfa11055",
+      "code": "S2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/03-scion-war-line.png",
+      "sha256": "8d9df9248750bb17974dbe2435e1d0190e3c7a5ee0627b28bb0c21b954c73b01",
+      "code": "S3",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-a9573ae3-e4f9-4714-9591-c9821e6f7b86.png",
+      "sha256": "8d9df9248750bb17974dbe2435e1d0190e3c7a5ee0627b28bb0c21b954c73b01",
+      "code": "S3",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/04-taught-the-blade.png",
+      "sha256": "608b4debc8b45b3a1724c3f1b1d5131d074391d20c2421b1edcaeb86a350f404",
+      "code": "S4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-2102a784-69cd-4cbc-a9b9-c2424188a6a8.png",
+      "sha256": "608b4debc8b45b3a1724c3f1b1d5131d074391d20c2421b1edcaeb86a350f404",
+      "code": "S4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-e02b65a9-fea5-45d9-b776-148a1040d47b.png",
+      "sha256": "9c5fde0e7cca43bbf802d324b834f2f6d17e5aa9fb231d7fc37f2c1e3c034cb2",
+      "code": "S4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/05-the-old-breeding-hall.png",
+      "sha256": "65623cfb70e2494c2bac0dd6499f22d660ddd087c1df299ecbb9cf47510db07c",
+      "code": "S5",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-d53fef86-461b-445e-a659-56a924b84589.png",
+      "sha256": "65623cfb70e2494c2bac0dd6499f22d660ddd087c1df299ecbb9cf47510db07c",
+      "code": "S5",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/06-graftkin-reference-sheet.png",
+      "sha256": "45beffd7fbf7813c44afe485cd54c9fddd6fb62bf617bfbea0274c7b12573e11",
+      "code": "G1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-9b80dddd-5f62-4f12-acf3-3c1cda867eeb.png",
+      "sha256": "45beffd7fbf7813c44afe485cd54c9fddd6fb62bf617bfbea0274c7b12573e11",
+      "code": "G1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/07-graftkin-in-the-yard.png",
+      "sha256": "9d48543c9a83f0fec679e35575a96a9f872b3ebc264ab53437a48c32bcc9f0c3",
+      "code": "G2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-0c49a080-4340-4653-a16e-6dcf71179f75.png",
+      "sha256": "9d48543c9a83f0fec679e35575a96a9f872b3ebc264ab53437a48c32bcc9f0c3",
+      "code": "G2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/08-the-hauling-gang.png",
+      "sha256": "f662e8f9290dadd9a0d88de6b1deddeb26a6e96cf237b790490255b5d35ac853",
+      "code": "G3",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-f3239df0-9631-447f-9e56-b7587cd40d02.png",
+      "sha256": "f662e8f9290dadd9a0d88de6b1deddeb26a6e96cf237b790490255b5d35ac853",
+      "code": "G3",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/09-graftkin-elder.png",
+      "sha256": "72f0f332b89d2fe75f9f76d4d710dac280d5b13bae9f71f17518b4c4dc7a4cbe",
+      "code": "G4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-6779aba0-99fb-4f95-ad1d-3f834b3818fe.png",
+      "sha256": "72f0f332b89d2fe75f9f76d4d710dac280d5b13bae9f71f17518b4c4dc7a4cbe",
+      "code": "G4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/10-beast-grafted.png",
+      "sha256": "b58880ac60b6d2d70fa976ba2ea5defe8aaab3b9a2f65a0182c865294e39669b",
+      "code": "G5",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-4c2cf57e-9f80-451d-844d-203aaf2e1055.png",
+      "sha256": "b58880ac60b6d2d70fa976ba2ea5defe8aaab3b9a2f65a0182c865294e39669b",
+      "code": "G5",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/17-glimmerfolk.png",
+      "sha256": "654d39c1ebefc695756efde6c33a7cd3be88431b80a5775d545a263ad9b67ef5",
+      "code": "P1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-c543cd25-22d8-4e5c-a05b-00f1b641f7ad.png",
+      "sha256": "654d39c1ebefc695756efde6c33a7cd3be88431b80a5775d545a263ad9b67ef5",
+      "code": "P1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/22-wildcard.png",
+      "sha256": "ed4dcd8f0d66198c247773ae5345f8cc7c7f29be24d90df07cf890aeab7c5a94",
+      "code": "P6",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-d0bc0d31-28ac-4e62-92f5-88f64534920e.png",
+      "sha256": "ed4dcd8f0d66198c247773ae5345f8cc7c7f29be24d90df07cf890aeab7c5a94",
+      "code": "P6",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/22-wildcard.png",
+      "sha256": "ed4dcd8f0d66198c247773ae5345f8cc7c7f29be24d90df07cf890aeab7c5a94",
+      "code": "P6",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/03-p1-glimmerfolk-v2.png",
+      "sha256": "7bbdc674d46a2e0eb9479b6a16c5ec8e12d86a7f2fa098a7e75a0e12b0f2ad5e",
+      "code": "P1v2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-3c14c170-376d-4d3b-94c8-5859b7f4e16c.png",
+      "sha256": "7bbdc674d46a2e0eb9479b6a16c5ec8e12d86a7f2fa098a7e75a0e12b0f2ad5e",
+      "code": "P1v2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/06-glimmerfolk-below-the-old-road.png",
+      "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
+      "code": "W1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-d193105a-901b-4927-a877-351ef963f138.png",
+      "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
+      "code": "W1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/09-cairnfold-at-the-wayhouse.png",
+      "sha256": "e6daaa582b7b9cc5ea5c715af22a35238f157fb41bdd0d21c1217e46466c0784",
+      "code": "W4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-786e35e4-9a6a-47eb-bbc3-c33ce9da1a6d.png",
+      "sha256": "e6daaa582b7b9cc5ea5c715af22a35238f157fb41bdd0d21c1217e46466c0784",
+      "code": "W4",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/11-made-people-fourfold-warden.png",
+      "sha256": "89218c804e004da69ff1b2fc722351d8b9646341c38c1b5a1752da3c6c625529",
+      "code": "M1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-7ad1f397-04a0-4c02-94b5-9fc3fa10bfc0.png",
+      "sha256": "89218c804e004da69ff1b2fc722351d8b9646341c38c1b5a1752da3c6c625529",
+      "code": "M1",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/12-made-people-the-closed-road.png",
+      "sha256": "85def15d5abe98ebd8da13947fde276e5a8dd44680f88fdd3b7d4b78de92122e",
+      "code": "M2",
+      "review": "final selection"
+    },
+    {
+      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-cfbe623c-d834-4f59-99d9-6401d600b420.png",
+      "sha256": "85def15d5abe98ebd8da13947fde276e5a8dd44680f88fdd3b7d4b78de92122e",
+      "code": "M2",
+      "review": "final selection"
+    }
+  ],
+  "cleanup_rule": "Art-direction SKILL.md: promote accepted pieces; delete rejected images and corresponding generated-source copies; retain textual decisions.",
+  "retained_superseded_images": [
+    "R1",
+    "R3",
+    "P5"
+  ]
+}

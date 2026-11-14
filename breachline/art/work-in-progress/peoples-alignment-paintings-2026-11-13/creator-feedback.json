@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "request": "Make five new paintings, one per alignment, using some of these characters and trying to improve coherence of lighting, character appeal, drama and scene meaning. Explain how the art direction differs by alignment. Also try rear light through Oren's membranes while keeping his face less illuminated.",
+  "request": "Make five new paintings, one per alignment, using some of these characters and trying to improve coherence of lighting, character appeal, drama and scene meaning. Explain how the art direction differs by alignment.",
   "creator_feedback": [
     {
       "scope": "Lighting",
@@ -12,7 +12,6 @@
       "note": "The softer-light revision is preferred over the original. This is comparative preference, not final publication approval."
     },
     {
-      "scope": "S1 / Oren",
       "note": "The creator is unsure they like the character himself. The opening reference to 'New' is ambiguous, so no wholesale image or species rejection is inferred. Later they specifically suggest light coming from behind through the membranes without over-illuminating the face."
     },
     {
@@ -73,7 +72,7 @@
       }
     ],
     "interpretation": "Palette/light suggestions can bias the briefs toward different lighting and spectacle even when rendering rules are shared. The preceding batch's non-Dominion prompts often reinforced warm rims, effects and dramatic staging. This is a plausible contributor, not an established cause of taste.",
-    "test_limit": "Five new scenes change composition, action and light together. The separate Oren edit preserves composition closely to make its lighting change easier to compare."
+    "test_limit": "Five new scenes change composition, action and light together."
   },
   "delivery": {
     "new_scenes": [
@@ -83,7 +82,6 @@
       "A4",
       "A5"
     ],
-    "targeted_edit": "S1-L2",
     "review": "review.html",
     "status": "pending_creator_review"
   }

@@ -6,7 +6,6 @@
   "user_request": "okay - I am going to be gone for 15-20 minutes. make these updates adn then make some scenes of these characters adn and make some card art with these characters and peoples. so scenes first then card art that could be in the game. that includes things that could be spells featuring these creatures or actual in-game characters. use appropriate equipment and assign them to an alignment, dont neccesarily need a clear factino alignment with that alignment, but can if it makes sense for your proiposed cards. you got this, be creative and make me a catalogue of what you want to bring to life in this game",
   "scope": "All scenes, names, occupations, places, new alignments and card drafts are proposals. Existing final anatomy remains final. Made people remain Dominion. No cards are added to the live game by this catalogue.",
   "anatomy_status": {
-    "Kitefolk": "KR1 final",
     "Glimmerfolk": "GR1 final",
     "Moor folk": "PL7 final",
     "Made people": "PL3D final, restrained scarring",
@@ -20,36 +19,6 @@
     "catalogue assembly and verification"
   ],
   "images": [
-    {
-      "code": "S1",
-      "title": "Oren at the Broken Span",
-      "people": "Kitefolk",
-      "alignment": "Vigil",
-      "faction": "Unaffiliated",
-      "character": "Oren",
-      "ref": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-      "filename": "s1-oren-at-the-broken-span.png",
-      "summary": "A veteran courier waits for the gust that will carry him across a broken mountain bridge. His practical vigilance proposes a place for Kitefolk in dangerous travel without making all of them messengers.",
-      "scene": "Use the exact older male Kitefolk face and anatomy: extremely angular long blade nose, wiry long limbs, greying swept hair and short beard, mottled rust-tan membranes supported by long outer fingers, joining wrist/finger to flanks. TWO arms and TWO legs, no added wings. Medium-wide elevated view from beside him, his face in clear three-quarter profile on the left third, arms opening naturally into a poised GLIDING stance at the end of an old stone bridge broken over a vast gorge. A distant occupied stone waystation is small on the far side. Wind lifts ivory sleeveless wool vest and a short blue waist sash; a single flat sealed leather courier pouch is strapped against his torso without pinning membranes. Fitted knee breeches and soft boots. Warm first sunlight breaks under slate storm clouds, orange membranes catching the light against enormous blue-grey distance. Brave but weathered, not superhero flying; he is about to step into a favorable updraft. The setting is visibly habitable and difficult. No banner, weapons or spell aura.",
-      "kind": "scene",
-      "status": "proposal",
-      "prompt": "Use case: stylized-concept. A finished Breachline high-fantasy scene painting, landscape 1536 x 1024. Traditional oil and acrylic, confident visible brushwork, luminous colour organized in large value shapes, precise focal face and hands with looser quieter background edges. Matte skin, wool, wood and stone; metal may reflect. No photography, CGI, anime, comic ink, shiny toy characters, pore-noise, washed-out sepia, lettering, numbers, borders, card frame or watermark. One coherent landscape scene, NEVER a reference sheet or repeated views. Change the reference's neutral staging into a real inhabited place. Keep the focal anatomy distinctive at small size. Ordinary people stay at ordinary scale. Clear physically connected limbs, sensible garments and load-bearing straps. Background architecture and routes connect plausibly. The supplied sheet is an ANATOMY/IDENTITY reference only; follow the specified take while inventing the appropriate clothes and environment. These are proposed people in the world, not universal cultures.\nUse the exact older male Kitefolk face and anatomy: extremely angular long blade nose, wiry long limbs, greying swept hair and short beard, mottled rust-tan membranes supported by long outer fingers, joining wrist/finger to flanks. TWO arms and TWO legs, no added wings. Medium-wide elevated view from beside him, his face in clear three-quarter profile on the left third, arms opening naturally into a poised GLIDING stance at the end of an old stone bridge broken over a vast gorge. A distant occupied stone waystation is small on the far side. Wind lifts ivory sleeveless wool vest and a short blue waist sash; a single flat sealed leather courier pouch is strapped against his torso without pinning membranes. Fitted knee breeches and soft boots. Warm first sunlight breaks under slate storm clouds, orange membranes catching the light against enormous blue-grey distance. Brave but weathered, not superhero flying; he is about to step into a favorable updraft. The setting is visibly habitable and difficult. No banner, weapons or spell aura.",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png"
-      ],
-      "generated_source": null,
-      "file": null,
-      "visual_qa": "Reviewed for species continuity, coherent hands/equipment, ordinary scale, setting tone and scene composition.",
-      "sha256": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
-      "width": 1536,
-      "height": 1024,
-      "reference_sha256": {
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089"
-      },
-      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-28a1f079-e6cf-4576-b958-9b2b3faf4ff6.png",
-      "deleted_file": "s1-oren-at-the-broken-span.png",
-      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained"
-    },
     {
       "code": "S2",
       "title": "Sera in the Lamplit Court",
@@ -219,49 +188,6 @@
         "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/20-coast-folk-reference-v1.png": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f"
       },
       "former_file": "s7-brann-at-the-low-tide-road.png"
-    },
-    {
-      "code": "C1",
-      "title": "Oren, Spanrunner",
-      "people": "Kitefolk",
-      "alignment": "Vigil",
-      "faction": "Unaffiliated",
-      "character": "Oren",
-      "type": "Unit",
-      "cost": 3,
-      "wants": 1,
-      "attack": 2,
-      "health": 3,
-      "rules": "Flying. When summoned, heal an adjacent ally for 1.",
-      "role": "An evasive early courier who gives a little help on arrival.",
-      "flavour": "Some letters have outlived the roads they were sent along.",
-      "sceneCode": "S1",
-      "ref": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-      "filename": "c1-oren-spanrunner.png",
-      "summary": "Oren turns a perilous journey into a compact, readable unit portrait: an experienced messenger in the instant before landing. His alignment is a personal choice to keep an oath, not a universal Kitefolk allegiance.",
-      "art": "Oren, the same grey-haired angular-nosed male Kitefolk courier, twists into a controlled gliding landing on an old tower parapet. Low camera from the landing place, subject sweeping diagonally from upper right toward lower left, long orange-mottled membranes stretching from elongated outer fingers/wrists to sides; exactly two arms, two legs, no separate wings. His face in sharp three-quarter view, intent and weathered, one soft-booted foot reaching for the parapet. Keep his ivory sleeveless vest, short blue sash and single flat leather courier pouch close to chest, membrane joints free. Powerful but believable wing-membrane silhouette, not giant bat wings or a superhero cape. Golden storm-break sunlight against blue shadow, distant countryside only a few quiet shapes. No sword, glowing spell or manufactured wing harness. Heroic character through expertise, not armor bulk.",
-      "kind": "card",
-      "status": "proposal_not_implemented",
-      "draftBalance": "Illustrative draft only; no simulation or implementation claimed.",
-      "prompt": "Use case: stylized-concept. Finished Breachline game-card ART ONLY, 1536 x 1024 landscape. Traditional oil/acrylic fantasy painting with vibrant organized light, confident visible brushwork, matte faces and cloth, material-appropriate metal highlights. One strong subject/visual event that reads at small card size; face/action stays safely inside the frame, quieter background built from broad shapes. NOT a reference sheet, no repeated views, no card border, typography, symbols, numbers, logo or watermark. No photography, CGI, anime, glossy toy skin, ubiquitous purple or pore noise. Clear limbs, sensible hands and grips, coherent equipment and physical routes. Supplied anatomy sheet preserves species; any supplied scene preserves ONLY the named person's face/clothing continuity, NOT its composition. Invent a clearly different dramatic composition. Magic can be direct and understated or forceful as requested; avoid luminous strings, floating interface diagrams and sci-fi machinery. Do not draw game rules or stats.\nOren, the same grey-haired angular-nosed male Kitefolk courier, twists into a controlled gliding landing on an old tower parapet. Low camera from the landing place, subject sweeping diagonally from upper right toward lower left, long orange-mottled membranes stretching from elongated outer fingers/wrists to sides; exactly two arms, two legs, no separate wings. His face in sharp three-quarter view, intent and weathered, one soft-booted foot reaching for the parapet. Keep his ivory sleeveless vest, short blue sash and single flat leather courier pouch close to chest, membrane joints free. Powerful but believable wing-membrane silhouette, not giant bat wings or a superhero cape. Golden storm-break sunlight against blue shadow, distant countryside only a few quiet shapes. No sword, glowing spell or manufactured wing harness. Heroic character through expertise, not armor bulk.",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png"
-      ],
-      "file": null,
-      "generated_source": null,
-      "generation_mode": "built-in image_gen",
-      "visual_qa": "Inspected for species/character continuity, restrained made-people scarring, coherent anatomy and equipment, and readable card composition.",
-      "sha256": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
-      "width": 1536,
-      "height": 1024,
-      "reference_sha256": {
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1"
-      },
-      "deleted_file": "c1-oren-spanrunner.png",
-      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
-      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-8bc06f82-289a-443c-ae3a-508989bba6ac.png"
     },
     {
       "code": "C2",
@@ -643,49 +569,6 @@
   ],
   "card_drafts": [
     {
-      "code": "C1",
-      "title": "Oren, Spanrunner",
-      "people": "Kitefolk",
-      "alignment": "Vigil",
-      "faction": "Unaffiliated",
-      "character": "Oren",
-      "type": "Unit",
-      "cost": 3,
-      "wants": 1,
-      "attack": 2,
-      "health": 3,
-      "rules": "Flying. When summoned, heal an adjacent ally for 1.",
-      "role": "An evasive early courier who gives a little help on arrival.",
-      "flavour": "Some letters have outlived the roads they were sent along.",
-      "sceneCode": "S1",
-      "ref": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-      "filename": "c1-oren-spanrunner.png",
-      "summary": "Oren turns a perilous journey into a compact, readable unit portrait: an experienced messenger in the instant before landing. His alignment is a personal choice to keep an oath, not a universal Kitefolk allegiance.",
-      "art": "Oren, the same grey-haired angular-nosed male Kitefolk courier, twists into a controlled gliding landing on an old tower parapet. Low camera from the landing place, subject sweeping diagonally from upper right toward lower left, long orange-mottled membranes stretching from elongated outer fingers/wrists to sides; exactly two arms, two legs, no separate wings. His face in sharp three-quarter view, intent and weathered, one soft-booted foot reaching for the parapet. Keep his ivory sleeveless vest, short blue sash and single flat leather courier pouch close to chest, membrane joints free. Powerful but believable wing-membrane silhouette, not giant bat wings or a superhero cape. Golden storm-break sunlight against blue shadow, distant countryside only a few quiet shapes. No sword, glowing spell or manufactured wing harness. Heroic character through expertise, not armor bulk.",
-      "kind": "card",
-      "status": "proposal_not_implemented",
-      "draftBalance": "Illustrative draft only; no simulation or implementation claimed.",
-      "prompt": "Use case: stylized-concept. Finished Breachline game-card ART ONLY, 1536 x 1024 landscape. Traditional oil/acrylic fantasy painting with vibrant organized light, confident visible brushwork, matte faces and cloth, material-appropriate metal highlights. One strong subject/visual event that reads at small card size; face/action stays safely inside the frame, quieter background built from broad shapes. NOT a reference sheet, no repeated views, no card border, typography, symbols, numbers, logo or watermark. No photography, CGI, anime, glossy toy skin, ubiquitous purple or pore noise. Clear limbs, sensible hands and grips, coherent equipment and physical routes. Supplied anatomy sheet preserves species; any supplied scene preserves ONLY the named person's face/clothing continuity, NOT its composition. Invent a clearly different dramatic composition. Magic can be direct and understated or forceful as requested; avoid luminous strings, floating interface diagrams and sci-fi machinery. Do not draw game rules or stats.\nOren, the same grey-haired angular-nosed male Kitefolk courier, twists into a controlled gliding landing on an old tower parapet. Low camera from the landing place, subject sweeping diagonally from upper right toward lower left, long orange-mottled membranes stretching from elongated outer fingers/wrists to sides; exactly two arms, two legs, no separate wings. His face in sharp three-quarter view, intent and weathered, one soft-booted foot reaching for the parapet. Keep his ivory sleeveless vest, short blue sash and single flat leather courier pouch close to chest, membrane joints free. Powerful but believable wing-membrane silhouette, not giant bat wings or a superhero cape. Golden storm-break sunlight against blue shadow, distant countryside only a few quiet shapes. No sword, glowing spell or manufactured wing harness. Heroic character through expertise, not armor bulk.",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png"
-      ],
-      "file": null,
-      "generated_source": null,
-      "generation_mode": "built-in image_gen",
-      "visual_qa": "Inspected for species/character continuity, restrained made-people scarring, coherent anatomy and equipment, and readable card composition.",
-      "sha256": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
-      "width": 1536,
-      "height": 1024,
-      "reference_sha256": {
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1"
-      },
-      "deleted_file": "c1-oren-spanrunner.png",
-      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
-      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-8bc06f82-289a-443c-ae3a-508989bba6ac.png"
-    },
-    {
       "code": "C2",
       "title": "Shelter the Crossing",
       "people": "Coast folk",
@@ -1064,12 +947,12 @@
     }
   ],
   "counts": {
-    "scenes": 7,
-    "card_paintings": 10,
-    "units": 5,
+    "scenes": 6,
+    "card_paintings": 9,
+    "units": 4,
     "spells": 4,
     "instants": 1,
-    "total_paintings": 17
+    "total_paintings": 15
   },
   "review_file": "catalogue.html",
   "text_catalogue": "CATALOGUE.txt",
@@ -1080,14 +963,13 @@
     "/Users/dpuser/.codex/skills/.system/imagegen/SKILL.md"
   ],
   "selection_guide_revision": 185,
-  "visual_qa": "All seventeen selected paintings visually inspected. Card art uses species sheets and scene identity/kit references after the scene pass completed. C8 colour corrected to preserve the silt variant. Card frames and text are HTML only; standalone PNGs contain no rules or labels.",
+  "visual_qa": "Fifteen retained image records keep their earlier visual review. Card art uses species sheets and scene identity/kit references after the scene pass completed. C8 colour corrected to preserve the silt variant. Card frames and text are HTML only; standalone PNGs contain no rules or labels.",
   "art_direction_sha256": "881b664349d3f9f4a13ed10b200540b11ba5208af94b60517a84a2ce2dbab4a3",
   "setting_sha256": "317eeca5300b1c4022f8180349bceda3b7a31833662e045ec6176e63f8e10964",
   "flavor_skill_sha256": "a645d948f2c3983d9bc7b2465e6ce0bfc61483075b12452a50747e411dea11b7",
   "lighting_revision_round1": {
     "status": "pending_creator_review",
     "codes": [
-      "S1-L1",
       "S5-L1",
       "S6-L1"
     ],
@@ -1105,7 +987,6 @@
       "A4",
       "A5"
     ],
-    "targeted_edit": "S1-L2",
     "status": "pending_creator_review"
   }
 }

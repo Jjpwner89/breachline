@@ -1,3 +1,5 @@
+> FINAL REVIEW (2026-11-13): Riverfolk and Saltreach accepted; every other people concept in this brief is rejected. Use the selected revised images and short descriptions in the reference-library peoples-round-12-2026-11-13 folder. These original briefs are historical; final-selections-2026-11-13.json supersedes their generation and pending-review instructions.
+
 # Peoples round 12: briefs (2026-11-13)
 
 22 concept studies of peoples, approved by the creator on 2026-11-13 for generation:
@@ -198,12 +200,6 @@ These test whether a people belongs in the setting at all. Use the sheet format 
 - Gentle and solemn, not horror.
 - Earthy colour with surprising accents.
 - Simple ritual garments instead of ivory cloth.
-
-### P3 · 19-kitefolk (sheet format, experiment)
-- Light-boned highland people with gliding membranes from wrist to hip.
-- Related in spirit to the accepted roof glider: `../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png`.
-- Show the membrane folded in the full-body views and open in one portrait or a fifth small study.
-- The rest of their anatomy is open.
 
 ### P4 · 20-lichenkin (sheet format, experiment)
 - Small people with lichen growing on their skin, living alongside the alderkin.

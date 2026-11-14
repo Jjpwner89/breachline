@@ -15,6 +15,8 @@ def relocated(p):
     except ValueError:return p.resolve()
     return (ART/ALIASES[key]).resolve() if key in ALIASES else p.resolve()
 def excluded(p):
+    # Creator dropped this design; historical prompts must not restore it.
+    if p.name.lower() == '18-black-enamel-field-kit.png':return True
     s=str(p).lower()
     return any(t in s for t in ['/nsfw/','/selected-card-variants-','/art-review/','/originals/','/archive/','/ui/','/fx/','/maps/','before-review'])
 def norm(s):return re.sub(r'[^a-z0-9]','',str(s).lower())

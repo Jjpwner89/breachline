@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-13",
+  "source": "Creator spoken feedback and explicit Ford-thread clarification in chat",
+  "decisions": {
+    "E1-A": {
+      "decision": "undecided",
+      "notes": "E1-B chosen for follow-up; no explicit rejection of E1-A."
+    },
+    "E1-B": {
+      "decision": "like",
+      "notes": "Chosen burrower. Remove the entire dorsal sack/pouch; preserve the strange digging anatomy."
+    },
+    "E2-A": {
+      "decision": "reject",
+      "notes": "Creator does not want either understone grazer."
+    },
+    "E2-B": {
+      "decision": "reject",
+      "notes": "Creator does not want either understone grazer."
+    },
+    "E3-A": {
+      "decision": "like",
+      "notes": "Plant-nursery insect liked; retain."
+    },
+    "E3-B": {
+      "decision": "like",
+      "notes": "Strongly liked plant-nursery climber. Its existing small membranes should allow gliding; preserve its identity."
+    },
+    "E4-A": {
+      "decision": "like",
+      "notes": "Cradle thief design liked. Slightly change fur pattern to distinguish it from E3-B; preserve body and face."
+    },
+    "E4-B": {
+      "decision": "like",
+      "notes": "Bird strongly liked for inclusion in the game, but NOT a brood parasite or cradle thief. Retain visual identity; remove egg theft/brood-deception depiction and role."
+    },
+    "E5-A": {
+      "decision": "like",
+      "notes": "Keep the larger aquatic body; give its face the smaller swimming inset creature’s rounded appearance. Creator explicitly confirmed this interpretation. Aquatic creature; detailed parasite role remains open."
+    },
+    "E5-B": {
+      "decision": "like",
+      "notes": "Translucent parasite body liked. The fish-eating shore hunter in the inset is ALSO wanted as a SEPARATE animal. Parasite never transforms into the hunter; no shared species identity."
+    },
+    "E6-A": {
+      "decision": "like",
+      "notes": "Likes the large ant-like workers, warrior forms and storing nuts in the body. Preserve related colony forms and visible internal food storage."
+    },
+    "E6-B": {
+      "decision": "like",
+      "notes": "Design liked as a SMALL HERD, not a hive/colony. Different responsibilities welcome. Remove inaccessible dorsal pouch; compare a reachable underslung pouch versus no pouch."
+    }
+  },
+  "additional_selection": {
+    "code": "E5-B-hunter",
+    "source": "E5-B lower-right fish-eating shore hunter",
+    "status": "liked; independent animal wanted",
+    "must_not": "Parasite does not become this animal"
+  },
+  "next_scope": "Six large, six extra-large, six massive new animal proposals; selected revisions first. All new views pending review."
+}

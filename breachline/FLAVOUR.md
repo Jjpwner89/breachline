@@ -195,3 +195,22 @@ These are undefined on purpose and can be normalized later. Up to about 4 lines 
 
 - **Places:** Sallow Bridge, Ambrel (a city, used in the name of Ambrel lampwright)
 - **People:** Grusha, Brakka (Clan outrider)
+
+## Peoples catalogue drafts — awaiting a verdict (2026-11-13)
+
+Written for the requested scenes-first/card-art catalogue, using the flavor-text skill. These are proposed lines for new card ideas, not approved additions to `ui.js` or the live roster. C4 and C8 intentionally have no line. The card art and full context are in `art/work-in-progress/peoples-in-the-world-2026-11-13/catalogue.html`.
+
+| Code | Proposed card | Draft line |
+| --- | --- | --- |
+| C1 | Oren, Spanrunner | Some letters have outlived the roads they were sent along. |
+| C2 | Shelter the Crossing | “Behind me. Then keep walking.” |
+| C3 | Sera, Deep-Court Reader | The sealed rooms had been furnished from within. |
+| C4 | Give the Stone a Path | — (left blank) |
+| C5 | Veyr, Twice Mustered | His first death did not discharge him. |
+| C6 | Another Service | The order had no provision for burial. |
+| C7 | Tavra, Salt-Road Duelist | She paid for the blade. The road was free. |
+| C8 | Break the Weather | — (left blank) |
+| C9 | Hessa, Doorwarden | She knew exactly which plank would break beneath a stranger. |
+| C10 | Earth Keeps the Door | Her children were asleep inside. |
+
+Proposed cast names for later normalization: Oren, Sera, Hessa, Veyr, Tavra, Korr, Ilyra and Brann. None is established canon by this catalogue.
