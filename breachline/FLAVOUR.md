@@ -154,12 +154,12 @@ A review of every line on cards replaced eight weak ones; the tables above show 
 ### First drafts that were rejected
 
 - **Ribbonvane:** the creator wants no line on this card.
-- **Most cards below now carry a kept second draft.** Those still without a line: Harmonic burst, Leaden step, Cinderhook axe, Cinder rain, Shatter the chain, Warband drum, Spring melt and Rust-hinged warden.
+- **Most cards below now carry a kept second draft.** Those still without a line: Stonewake, Leaden step, Cinderhook axe, Cinder rain, Shatter the chain, Warband drum, Spring melt and Rust-hinged warden.
 - **Too literal to the image:** Hearth-sworn penitent ("He keeps the fire because he once set one").
 - **Didn't make sense read cold:** Hurled brand ("Every wall has a roof behind it"), Wildfire ("By morning, no one could say whose fields they had been"), Emberward ("She painted her own when her hands were steadier", which read as painting a picture).
 - **Not horrible, but no:** Stand as one ("No one remembers whose hand was whose").
 - **Bad:** Ashen Court bailiff ("He can find the right key in the dark").
-- **No:** Line of dawn, Vowkeeper of the long road, Oath bell, Rimebolt, Conclave rimecaller, Harmonic burst, Leaden step, Field-plate artificer, Hour of collection, Shutter-window assassin, Slagheart hulk, Cinder firebrand, The sky falls in, Scatter the line, Cinderhook axe, Cinder rain, Shatter the chain, Warband drum, Reedbank forager, Overgrowth, Thornwarden pathguard, Sudden canopy, Elderwood stag, Alderkin elder, Shell-mountain tortoise, Spring melt, Buckling recruit, Rust-hinged warden.
+- **No:** Line of dawn, Vowkeeper of the long road, Oath bell, Rimebolt, Conclave rimecaller, Stonewake, Leaden step, Field-plate artificer, Hour of collection, Shutter-window assassin, Slagheart hulk, Cinder firebrand, The sky falls in, Scatter the line, Cinderhook axe, Cinder rain, Shatter the chain, Warband drum, Reedbank forager, Overgrowth, Thornwarden pathguard, Sudden canopy, Elderwood stag, Alderkin elder, Shell-mountain tortoise, Spring melt, Buckling recruit, Rust-hinged warden.
 - **Left blank from the start:** Stormglass glaive, Seedheart vessel, Salamander-hide mantle.
 
 ## General style test

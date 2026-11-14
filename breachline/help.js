@@ -67,6 +67,7 @@ var Help = (function () {
   // Conditions a unit can be under. Keywords are read from the cards' own rules text, so they stay current.
   var STATES = {
     Held: 'Held: it can\'t move until its next turn ends.',
+    Mired: 'Mired: it can\'t move on its next turn.',
     Frozen: 'Frozen: it can\'t move on its next turn.',
     Veiled: 'Veiled: it can\'t be attacked or targeted by enemy cards until it attacks.',
     Lit: 'Lit: fire doesn\'t hurt it, and when it dies it explodes, hurting the units next to it.',

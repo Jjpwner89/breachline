@@ -72,7 +72,7 @@
     marksman: 'focus-rifle-marksman', whitemorning: 'white-morning', hostess: 'hostess-of-the-late-hour', springmelt: 'spring-melt',
     firebrand: 'cinder-firebrand', rimecaller: 'conclave-rimecaller', vow: 'vow-of-keeping', ledger: 'ledger-of-debts', hurledbrand: 'hurled-brand', heldmoments: 'held-between-moments',
     shutterassassin: 'shutter-window-assassin', temptress: 'gilt-hall-temptress', alderelder: 'alderkin-elder', recruit: 'buckling-recruit', ashsweeper: 'still-flame-ash-sweeper', emberward: 'emberward',
-    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'harmonic-burst', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
+    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'stonewake', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
     fieldplate: 'field-plate-artificer', mortuary: 'mortuary-priest', lynx: 'halfshade-lynx', stag: 'elderwood-stag', rusthinged: 'rust-hinged-warden', salmantle: 'salamander-hide-mantle',
     pallofash: 'pall-of-ash', wildfire: 'wildfire', bought: 'bought-allegiance', leaden: 'leaden-step', vowkeeper: 'vowkeeper-of-the-long-road', glimmer: 'glimmer-double',
     gallows: 'lots-for-the-gallows', anoint: 'anoint-with-embers', earthspeaker: 'earthspeaker', tortoise: 'shell-mountain-tortoise', hound: 'copper-hound',
@@ -83,7 +83,9 @@
     prism: 'prism-bracer', courier: 'conclave-courier', unmake: 'unmake-the-pattern', informant: 'court-informant', bailiff: 'ashen-court-bailiff', tender: 'barrow-tender',
     mourningveil: 'mourning-veil', cinderhook: 'cinderhook-axe', clanoutrider: 'clan-outrider', shatter: 'shatter-the-chain', pathguard: 'thornwarden-pathguard',
     canopy: 'sudden-canopy', returnloam: 'return-to-loam',
-    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel'
+    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel',
+    student: 'quiet-unfastening', edgewarden: 'undercity-edge-warden', signaller: 'undercity-signaller', peatcutter: 'peat-cutter', moorguide: 'moor-guide', moorkeeps: 'the-moor-keeps-its-own', mootelder: 'moot-elder', conscript: 'veyr-recalled', husk: 'husk', tithedrinker: 'tithe-drinker', caravaneer: 'salt-road-caravaneer', floodfarmer: 'floodplain-farmer',
+    caravanhead: 'caravan-head', caravanguard: 'caravan-guard', bridgemason: 'sallow-bridge-mason', improver: 'guild-improver', mastermason: 'master-mason', ferrykeeper: 'ferry-keeper', longhouse: 'longhouse-keeper', tidehealer: 'tide-healer', hospitality: 'longhouse-hospitality', sluicediver: 'under-the-gate', chartermaker: 'the-sounding', eelnetter: 'eel-netter'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -262,6 +264,8 @@
     return S.tutorial ? ms.filter(Tutorial.allows) : ms;
   }
   function unitById(uid) { return S.units.filter(function (u) { return u.uid === uid; })[0]; }
+  // Blank: a unit with no ally next to it can't attack.
+  function blankAlone(u) { return !!u && E.hasKw(u, 'Blank') && !E.nextToAlly(S, u); }
   function cardOf(id) {
     var h = S.players[HUMAN].hand.filter(function (i) { return i.id === id; })[0];
     return h ? E.CARDS[h.c] : null;
@@ -359,6 +363,7 @@
       if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
       if (u.stride && u.owner === S.active) notes.push('+' + u.stride + ' move');
       if (u.held >= S.turn) states.push('Held');
+      if (u.mired >= S.turn) states.push('Mired');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
       if (u.watching) states.push('Watching');
@@ -396,8 +401,8 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
-    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching', 'Flare', 'Blank'],
+    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Mired', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
   function shieldKind(t) {
@@ -422,10 +427,10 @@
       return marks;
     }
     selectedMoves(moves).forEach(function (m) {
-      // A summon that hits an enemy takes a tile first, then a target.
+      // A summon with a target takes a tile first, then the enemy it hits or the ally it helps.
       if (m.type === 'summon' && m.target !== undefined && sel.summonAt) {
         marks.tiles[sel.summonAt.r + ',' + sel.summonAt.c] = 't-summon';
-        if (m.r === sel.summonAt.r && m.c === sel.summonAt.c) marks.units[m.target] = 't-attack';
+        if (m.r === sel.summonAt.r && m.c === sel.summonAt.c) marks.units[m.target] = unitById(m.target).owner === actor() ? 't-buff' : 't-attack';
       }
       else if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
@@ -446,7 +451,7 @@
       else if ((m.type === 'cast' || m.type === 'enchant') && m.target) marks.units[m.target] = unitById(m.target).owner === HUMAN ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ['heal', 'farheal', 'orders', 'harvest', 'lens', 'tend', 'swap'].indexOf(ab.key) >= 0 ? 't-buff' : 't-attack';
+        marks.units[m.target] = ['heal', 'farheal', 'orders', 'harvest', 'lens', 'tend', 'swap'].indexOf(ab.key) >= 0 || unitById(m.target).owner === unitById(sel.id).owner ? 't-buff' : 't-attack';
       }
     });
     return marks;
@@ -687,7 +692,7 @@
         var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = instantHint(c, sm);
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
-        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
+        else if (place) hint = sel.summonAt ? (c.boon ? 'Choose one of your units next to it.' : 'Choose an enemy unit for it to hit.') : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c, inst) > you.mana) hint = 'Not enough mana to play this now.';
         else if (c.type === 'relic') hint = 'Put this relic into play beside you.';
@@ -728,6 +733,7 @@
         out.push(btn('Back', { ui: 'noAbility' }));
       } else {
         cmdHint = sm.length ? 'Move to a dashed tile or attack a highlighted target.' : 'This unit has nothing it can do right now.';
+        if (blankAlone(u)) cmdHint = "It can't attack without another of your units next to it." + (sm.some(function (m) { return m.type === 'move'; }) ? ' Move to a dashed tile.' : '');
         var abMoves = sm.filter(function (m) { return m.type === 'ability'; });
         if (abMoves.length && abMoves[0].raise) {
           // One button for each different unit Exhume could return.
@@ -1133,6 +1139,8 @@
     if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && sel && sel.ability && sm.some(function (m) { return m.type === 'ability' && m.r !== undefined && m.target === u.uid; })) { sel.abUnit = u.uid; return render(); }
+    // Trying to attack with a Blank unit that stands alone gets the not-allowed sound, and the unit stays selected.
+    if (u && sel && sel.kind === 'unit' && !sel.ability && unitById(sel.id) && u.owner !== unitById(sel.id).owner && blankAlone(unitById(sel.id))) { Sfx.play('not-allowed', { gap: 120 }); return; }
     if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && (S.phase === 'command' || (S.free && S.phase === 'play'))) { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }
   }
@@ -1320,13 +1328,13 @@
   // The phone's menu also holds the rules, which close with a tap.
   $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
   $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (turned && !$('start').hidden) turnStart(turned); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (flippedKey && !$('start').hidden) turnStart(flippedKey); } });
 
   // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
   // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
-  var turned = null;
+  var flippedKey = null, chooseTimer = null;
   function deckHtml(d, role) {
-    var key = role + ':' + d.id, open = turned === key, on = picks[role] === d.id, front, plan, problems = [];
+    var key = role + ':' + d.id, open = flippedKey === key, on = picks[role] === d.id, front, plan, problems = [];
     if (d.id === 'random') {
       front = '<span class="frame N"><span class="inner"><span class="bar-top">Random deck</span><span class="art"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
         '<span class="band"><span class="type">Any alignment</span></span><span class="ctext"><span class="csyms"></span><span>A surprise</span></span></span></span>';
@@ -1345,10 +1353,10 @@
       (problems.length ? '<p class="dlock">' + esc(problems[0]) + '</p>' : '') + choose + '</div></div></div>';
   }
   function turnStart(key) {
-    var was = turned && $('start').querySelector('.dcard.flipped');
+    var was = flippedKey && $('start').querySelector('.dcard.flipped');
     if (was) { was.classList.remove('flipped'); was.querySelector('.dfront').inert = false; was.querySelector('.dback').inert = true; }
-    turned = turned === key ? null : key;
-    var el = turned && $('start').querySelector('.dcard[data-turn="' + turned + '"]');
+    flippedKey = flippedKey === key ? null : key;
+    var el = flippedKey && $('start').querySelector('.dcard[data-turn="' + flippedKey + '"]');
     if (el) {
       el.classList.add('flipped');
       el.querySelector('.dfront').inert = true;
@@ -1391,7 +1399,7 @@
     runToken++;
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
-    turned = null;
+    flippedKey = null;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var yours = function (id) { var d = ready(id) && Decks.find(id); return d && Decks.yours(d) ? id : null; };
     var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
@@ -1441,10 +1449,24 @@
   }
   $('start').addEventListener('click', function (e) {
     var pick = e.target.closest('[data-choose]');
-    if (pick) { picks[pick.dataset.choose] = pick.dataset.deck; turned = null; Sfx.play('card-flip', { gap: 0 }); return renderStart(); }
+    // A chosen deck says so for a moment, then turns back over at the usual pace before the lists catch up.
+    if (pick) {
+      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = flippedKey;
+      picks[role] = pick.dataset.deck;
+      pick.disabled = true;
+      pick.textContent = 'Chosen';
+      Array.prototype.forEach.call($(role === 'mine' ? 'myDecks' : 'oppDecks').querySelectorAll('.dcard.on'), function (c) { c.classList.remove('on'); });
+      card.classList.add('on');
+      clearTimeout(chooseTimer);
+      chooseTimer = setTimeout(function () {
+        if (flippedKey === key) turnStart(key);
+        chooseTimer = setTimeout(renderStart, 550);
+      }, 450);
+      return;
+    }
     var card = e.target.closest('.dcard');
     if (card) return turnStart(card.dataset.turn);
-    if (turned && !e.target.closest('button, input, select, label')) return turnStart(turned);
+    if (flippedKey && !e.target.closest('button, input, select, label')) return turnStart(flippedKey);
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
