@@ -9,6 +9,9 @@ var Screens = (function () {
   // The filter panel starts folded; whether it and each of its rows is open is remembered on this device.
   var FOLD_KEY = 'breachline.filterFolds', folds = { panel: true };
   try { folds = JSON.parse(localStorage.getItem(FOLD_KEY)) || folds; } catch (e) {}
+  // How the deck builder orders the pool. Colour is the order it always had (creator, 2026-11-13).
+  var SORT_KEY = 'breachline.cardSort', sort = { by: 'colour', down: false };
+  try { sort = JSON.parse(localStorage.getItem(SORT_KEY)) || sort; } catch (e) {}
   // The reserve card picked to swap into a campaign deck.
   var swapIn = null;
 
@@ -91,22 +94,35 @@ var Screens = (function () {
       var st = Campaign.STORIES[id], won = Progress.cleared(id), pres = Progress.prestiged(id), said = pres ? 'beaten on prestige' : won ? 'beaten' : '';
       return '<img src="art/web/ui/emblem-' + st.colour + '.png" alt="' + esc(st.title) + ', ' + (said || 'not beaten yet') + '" title="' + esc(st.title) + (said ? ': ' + said : '') + '"' + (won ? ' class="won' + (pres ? ' prestige' : '') + '"' : '') + '>';
     }).join('') + '</div>';
-    show(HOME + '<button type="button" class="btn snd msnd" data-sound aria-pressed="' + !Sfx.muted() + '" aria-label="Sound"></button><main class="menu"><div class="mcol"><h1>Breachline</h1>' + embs + '<nav class="mlist" aria-label="Main menu">' +
-      (learn ? item('tutorial', 'How to play', 'New here? Tour the table, then win a short battle.', !cont) : '') +
+    // The corner holds what isn't a battle or your cards: sound, the test table, the tutorial and your account (creator, 2026-11-13).
+    // A first visit lights the tutorial and points at it, until it's tried or the note is closed.
+    var who = Accounts.available() && Accounts.name(), tip = learn && !tutTipShut();
+    var corner = '<header class="mcorner"><button type="button" class="btn snd" data-sound aria-pressed="' + !Sfx.muted() + '" aria-label="Sound"></button>' +
+      '<button type="button" class="btn" ' + act('testTable') + ' title="Unlimited mana, and any card for either side. For checking effects.">Test table</button>' +
+      '<span class="mtut"><button type="button" class="btn' + (learn ? ' primary lit' : '') + '" ' + act('tutorial') + ' title="A tour of the table and a short practice battle.">Tutorial</button>' +
+        (tip ? '<span class="mtip" role="note"><button type="button" class="mtipx" ' + act('shutTutTip') + ' aria-label="Close">×</button><b>New here? Start here.</b>Tour the table, then win a short battle.</span>' : '') + '</span>' +
+      (Accounts.available() ? '<button type="button" class="macct" ' + act('account') + ' title="' + (who ? 'Signed in as ' + esc(who) + '. Your progress follows you to other devices.' : 'Keep your progress and decks on every device.') + '">' +
+        (who ? '<span class="minit" aria-hidden="true">' + esc(who.trim().charAt(0).toUpperCase()) + '</span><span class="mname">' + esc(who) + '</span><span class="sr">, your account</span>' : '<span class="mname">Sign in</span>') + '</button>' : '') + '</header>';
+    show(HOME + corner + '<main class="menu"><div class="mcol"><h1>Breachline</h1>' + embs + '<nav class="mlist" aria-label="Main menu">' +
       (cont ? item('resume', 'Continue game', 'Go back to your current battle.', true) : '') +
       (run ? item('campaign', 'Continue run', esc(Campaign.storyOf(run).title) + (run.prestige ? ' on prestige' : '') + ', chapter ' + (run.chapter + 1) + ' of ' + Campaign.storyOf(run).chapters.length + '.', !cont)
-        : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont && !learn)) +
+        : item('campaign', 'Campaign', 'Win battles and choose cards to keep. One loss ends the run.', !cont)) +
       item('exhibition', 'Exhibition', 'Any deck against the scripted bot or Claude.') +
-      item('collection', 'Collection', st.gold + ' gold. Open packs, craft cards and see your record.') +
-      item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Build from the cards you own.') +
-      (learn ? '' : item('tutorial', 'How to play', 'A tour of the table and a short practice battle.')) +
-      item('testTable', 'Test table', 'Unlimited mana, and any card for either side. For checking effects.') +
       item('online', 'Multiplayer', Net.saved() ? 'Your online match is waiting for you.' : 'Play another person online. Each of you brings a deck.') +
-      (Accounts.available() ? item('account', Accounts.name() ? 'Account' : 'Sign in', Accounts.name() ? 'Signed in as ' + esc(Accounts.name()) + '. Your progress follows you to other devices.' : 'Keep your progress and decks on every device.') : '') +
+      '<span class="mgap" aria-hidden="true"></span>' +
+      item('builder', 'Deck builder', (n ? plural(n, 'saved deck') : 'No saved decks yet') + '. Build from the cards you own.') +
+      item('collection', 'Collection', st.gold + ' gold. Open packs, craft cards and see your record.') +
       '</nav>' + (Progress.ready() ? '' : '<p class="hint mload">Checking your ' + (Accounts.available() ? '' : 'Claude ') + 'account for saved progress…</p>') + '</div></main>', menu);
     ash(root.querySelector('.home canvas'));
   }
   actions.menu = menu;
+  var TUT_TIP = 'breachline.tutorialTipShut';
+  function tutTipShut() { try { return localStorage.getItem(TUT_TIP) === '1'; } catch (e) { return false; } }
+  actions.shutTutTip = function () {
+    try { localStorage.setItem(TUT_TIP, '1'); } catch (e) { /* the note just comes back next visit */ }
+    var t = root.querySelector('.mtip');
+    if (t) t.remove();
+  };
   actions.resume = function () { hide(); GameUI.resume(); };
 
   actions.exhibition = function () { GameUI.showStart(); };
@@ -550,6 +566,46 @@ var Screens = (function () {
     var ca = E.CARDS[a], cb = E.CARDS[b];
     return COLOURS.indexOf(ca.colour) - COLOURS.indexOf(cb.colour) || (ca.type === 'land') - (cb.type === 'land') || ca.cost - cb.cost || ca.name.localeCompare(cb.name);
   }
+  // A spell that deals damage counts its damage as attack when sorting: the first amount its text says it deals.
+  // Protection ("ignores the next 6 damage") and a death blast ("explodes for 2 damage") don't count.
+  function spellDamage(c) {
+    var m = /(?:^|[:.,] |takes |deals |dealing )(\d+) damage/.exec(c.text || '');
+    return m ? +m[1] : null;
+  }
+  var SORTS = [['colour', 'Colour'], ['cost', 'Cost'], ['atk', 'Attack'], ['hp', 'Health'], ['name', 'Name']];
+  function sortValue(c) {
+    if (sort.by === 'cost') return c.cost;
+    if (sort.by === 'atk') return c.type === 'unit' ? c.atk : spellDamage(c);
+    if (sort.by === 'hp') return c.type === 'unit' ? c.hp : null;
+    return null;
+  }
+  // Lands always come last, then cards the sort says nothing about (a spell's health); ties fall back to cost, then name.
+  function poolOrder(a, b) {
+    if (sort.by === 'colour') return cardOrder(a, b);
+    var ca = E.CARDS[a], cb = E.CARDS[b], land = (ca.type === 'land') - (cb.type === 'land');
+    if (land) return land;
+    if (sort.by === 'name') return (sort.down ? -1 : 1) * ca.name.localeCompare(cb.name);
+    var va = sortValue(ca), vb = sortValue(cb);
+    if ((va === null) !== (vb === null)) return va === null ? 1 : -1;
+    return (va === null ? 0 : (sort.down ? vb - va : va - vb)) || ca.cost - cb.cost || ca.name.localeCompare(cb.name);
+  }
+  function drawSort() {
+    var el = byId('fsort');
+    if (!el) return;
+    el.innerHTML = '<span class="flabel nofold">Sort</span>' + SORTS.map(function (o) {
+      return '<button type="button" class="chip" aria-pressed="' + (sort.by === o[0]) + '" ' + act('sortBy', o[0]) + '>' + o[1] + '</button>';
+    }).join('') + (sort.by === 'colour' ? '' : '<button type="button" class="chip fdir" ' + act('sortDir', 'flip') + ' aria-label="Order: ' + dirWord() + '. Select to flip it.">' + dirWord() + (sort.down ? ' ↓' : ' ↑') + '</button>');
+  }
+  function dirWord() { return sort.by === 'name' ? (sort.down ? 'Z to A' : 'A to Z') : sort.down ? 'High to low' : 'Low to high'; }
+  function setSort(next) {
+    sort = next;
+    try { localStorage.setItem(SORT_KEY, JSON.stringify(sort)); } catch (e) {}
+    keepFocus(drawSort);
+    drawGrid(true);
+  }
+  // Cost and name start low to high; attack and health start with the biggest.
+  actions.sortBy = function (by) { if (by !== sort.by) setSort({ by: by, down: by === 'atk' || by === 'hp' }); };
+  actions.sortDir = function () { setSort({ by: sort.by, down: !sort.down }); };
   function matches(c) {
     var q = filters.q.trim().toLowerCase();
     if (any(filters.type) && !filters.type[c.type]) return false;
@@ -569,7 +625,7 @@ var Screens = (function () {
         '<div class="filters" id="filters"><div class="fhead"><button type="button" class="ftoggle" id="ftoggle" aria-controls="fchips" ' + act('foldFilter', 'panel') + '>Filters</button>' +
           '<span class="fpicked" id="filterSum"></span>' +
           '<label class="fsearch"><span class="sr">Search</span><input type="search" id="fq" autocomplete="off" placeholder="Search name or rules text" value="' + esc(filters.q) + '"></label>' +
-          '<span class="fcount" id="fcount"></span></div><div class="fbody" id="fchips"></div></div>' +
+          '<span class="fsort" id="fsort" role="group" aria-label="Sort cards"></span><span class="fcount" id="fcount"></span></div><div class="fbody" id="fchips"></div></div>' +
         '<div class="cgrid" id="cgrid"></div></section>' +
       '<aside class="dpanel" id="dpanel" aria-label="Your deck">' +
         '<div class="dtop"><label class="sr" for="dname">Deck name</label><input type="text" id="dname" maxlength="40" value="' + esc(deck.name) + '"><button type="button" class="btn dclose" ' + act('closeDeck') + '>Back to cards</button></div>' +
@@ -577,6 +633,7 @@ var Screens = (function () {
       '<button type="button" class="btn primary dopen" id="dopen" ' + act('openDeck') + '></button>' +
       '</div>' + DeckHelp.panelHtml() + '</div>', function () { drawGrid(true); });
     drawFilters();
+    drawSort();
     drawGrid();
     drawDeck();
     if (!deck.list.length) peek(ed.pool.ids.slice().sort(cardOrder)[0]);
@@ -658,7 +715,7 @@ var Screens = (function () {
     var grid = byId('cgrid'), n = activeFilters();
     var shown = ed.pool.ids.filter(function (id) { return matches(E.CARDS[id]); }).length;
     if (rebuild || !grid.querySelector('.pcard, .none')) {
-      var run = ++gridRun, left = ed.pool.ids.slice().sort(cardOrder);
+      var run = ++gridRun, left = ed.pool.ids.slice().sort(poolOrder);
       grid.innerHTML = '<p class="hint none">No cards match these filters.</p>';
       var more = function () {
         if (run !== gridRun || !grid.isConnected) return;
@@ -962,7 +1019,7 @@ var Screens = (function () {
 
   Progress.onChange(redraw);
   return {
-    menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt, online: online,
+    menu: menu, builder: builder, campaign: actions.campaign, hide: hide, redraw: redraw, coverArt: coverArt, deckFace: deckFace, online: online,
     // For deckhelp.js: the deck being edited and its card pool, or null away from the deck builder.
     editing: function () { return ed && byId('qm') ? ed : null; },
     // For collection.js, whose screens share this page and its click handling.

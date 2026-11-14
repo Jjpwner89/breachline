@@ -35,8 +35,6 @@
 }
 
 /* A deck you can't play yet still shows its plan, with what's missing underneath. */
-.deck[disabled] .ds:not(.miss) { font-weight: 400; }
-.deck .ds.miss { padding-top: 0; font-weight: 700; }
 
 /* The exhibition's line on the chosen deck's alignment. */
 .pick-note { margin: -2px 0 8px; color: var(--muted); font-size: 14px; }
