@@ -71,6 +71,7 @@ Read [BRIEF_WORKFLOW.md](BRIEF_WORKFLOW.md) whenever writing briefs or turning t
   - Don't fix artificial skin with pores, wrinkles or surface noise. Simplify the forms instead.
 - **Colour and light:**
   - Use vibrant colour and light that organises the scene and links its subjects, with one lighting idea and a limited palette per scene.
+  - Choose the palette and light from the subject, place, materials, weather and time of day. An alignment doesn't require a particular colour, accent or light source; the card frame already shows the alignment. Name a colour when it belongs to the subject, such as approved kit, a people's colouring or the fire in a fire spell (creator, 2026-11-14).
   - Dynamic light is welcome when its direction makes sense across the scene and it doesn't overtake the painting. Preserve readable faces, bodies and hands in shadow through plausible reflected light; don't hide the subject to make the light dramatic.
   - Consistency does not mean flattening the contrast or dimming every painting. The creator likes lively colour and some bright scenes; carry the coherent light and selective paint handling across alignments, without imposing Dominion's palette on them all.
   - Pervasive purple, abundant flowers and idyllic storybook brightness should be unusual.
@@ -232,9 +233,9 @@ For new animal designs, ecological exploration, refinements and creature feedbac
 
 ## Alignments
 
-Every alignment uses the same painting and material rules above. These are established palette and lighting options, not uniforms or separate rendering styles.
+Every alignment uses the same painting and material rules above. The palette and light column describes each alignment’s usual feel, not a recipe: a painting takes its colours from its own scene and can depart from them.
 
-| Alignment | Peoples and subjects | Palette and light | Emblem |
+| Alignment | Peoples and subjects | Usual palette and light | Emblem |
 | --- | --- | --- | --- |
 | Vigil (white) | Lion folk, knights, clerics, soldiers | Gold, ivory, sky blue; warm light | Sun |
 | Fervor (red) | Goblins, orcs, giants, dragons, sellswords | Ember orange, iron, soot, blood red; firelight, lightning and storm light | Three spikes |
