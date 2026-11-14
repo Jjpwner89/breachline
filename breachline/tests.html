@@ -729,7 +729,8 @@ function randomField(r, ids) {
     var hurtOne = put(s, 'sellsword', 0, 3, 1), theirs = s.players[1].life;
     hurtOne.hp = 1;
     s = play(s, { type: 'cast', card: give(s, 'hospitality') });
-    check('Longhouse hospitality heals your units 2 and the enemy summoner 2', by(s, hurtOne).hp === 3 && s.players[1].life === theirs + 2);
+    var gift = E.CARDS.hospitality.hospitality;
+    check('Longhouse hospitality heals your units and the enemy summoner alike', by(s, hurtOne).hp === Math.min(by(s, hurtOne).maxHp, 1 + gift) && s.players[1].life === theirs + gift);
 
     s = arena();
     var diver = put(s, 'sluicediver', 0, 3, 2), near = put(s, 'sellsword', 0, 3, 3), away = put(s, 'sellsword', 0, 3, 0);

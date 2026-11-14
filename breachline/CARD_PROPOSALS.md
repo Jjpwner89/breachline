@@ -633,27 +633,29 @@ New rules these cards use:
 | 192 | Conclave student | Glimmerfolk | Lantern Conclave | U | Unit | 2 | 1 | 1 / 3 | Ranged. Flare | Flare |
 | 193 | Undercity edge-warden | Glimmerfolk |  | U | Unit | 4 | 2 | 3 / 4 | Overwatch | None |
 | 194 | Undercity signaller | Glimmerfolk |  | U | Unit | 2 | 1 | 1 / 3 | Ability: an ally within 3 tiles moves 1 tile | Small: Carry at range |
-| 195 | Peat-cutter | Moor folk |  | G | Unit | 2 | 1 | 2 / 3 | None | None |
+| 195 | Peat-cutter | Moor folk |  | G | Unit | 2 | 1 | 2 / 4 | None | None |
 | 196 | Moor guide | Moor folk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: an ally next to it can move 1 extra tile on its next turn | Small |
-| 197 | The moor keeps its own | Moor folk | Thornwardens | G | Spell | 2 | 1 |  | Aim at a 2 × 2 square: enemy units there can't move on their next turn | Small: green lightning effect |
+| 197 | The moor keeps its own | Moor folk | Thornwardens | G | Spell | 1 | 1 |  | Aim at a 2 × 2 square: each enemy there takes 1 damage and can't move on its next turn | Small: green lightning effect |
 | 198 | Moot elder | Moor folk |  | G | Unit | 5 | 2 | 5 / 6 | None; flavour text only | None |
 | 199 | Doomed conscript | Ashborn | Ashen Court | B | Unit | 2 | 1 | 1 / 2 | Ledgered | Ledgered |
 | 200 | Husk | Ashborn | Ashen Court | B | Unit | 3 | 1 | 4 / 4 to start | Blank | Blank, and bot support |
 | 201 | Tithe-drinker | Ashborn | Ashen Court | B | Unit | 4 | 2 | 3 / 5 | Ability: destroy an adjacent ally. This unit permanently gets +2 attack and +2 health | Small: Harvest with health |
-| 202 | Salt-road caravaneer | Banded folk, salt | Cinder Clans | R | Unit | 3 | 1 | 3 / 4 | Steadfast | None |
+| 202 | Salt-road caravaneer | Banded folk, salt | Cinder Clans | R | Unit | 3 | 1 | 3 / 3 | Steadfast | None |
 | 203 | Floodplain farmer | Banded folk, silt |  | G | Unit | 3 | 1 | 2 / 5 | Steadfast | None |
-| 204 | Caravan head | Banded folk | Cinder Clans | R | Unit | 5 | 2 | 5 / 6 | Ability: adjacent allies get +1 attack this turn | None |
+| 204 | Caravan head | Banded folk | Cinder Clans | R | Unit | 5 | 2 | 4 / 4 | Ability: adjacent allies get +1 attack this turn | None |
 | 205 | Caravan guard | Banded folk |  | N | Unit | 3 | 0 | 2 / 5 | Guard | None |
 | 206 | Sallow Bridge mason | Crest folk | Sunmane Oath | W | Unit | 3 | 1 | 2 / 4 | Ability: a tile next to it becomes consecrated ground for 3 turns | Small |
 | 207 | Guild improver | Crest folk | Artificers | U | Unit | 3 | 1 | 1 / 4 | When summoned: an ally next to it permanently gets +2 health | Small |
-| 208 | Master mason | Crest folk | Sunmane Oath | W | Unit | 5 | 2 | 4 / 6 | Guard | None |
-| 209 | Ferry-keeper | Greyhides |  | G | Unit | 4 | 2 | 3 / 5 | Ability: move an ally next to it 1 tile | None: Carry |
-| 210 | Longhouse keeper | Greyhides |  | G | Unit | 5 | 2 | 4 / 7 | None | None |
+| 208 | Master mason | Crest folk | Sunmane Oath | W | Unit | 5 | 2 | 4 / 5 | Guard | None |
+| 209 | Ferry-keeper | Greyhides |  | G | Unit | 4 | 2 | 3 / 4 | Ability: move an ally next to it 1 tile | None: Carry |
+| 210 | Longhouse keeper | Greyhides |  | G | Unit | 5 | 2 | 4 / 6 | None | None |
 | 211 | Tide-healer | Greyhides | Still Flame | W | Unit | 3 | 1 | 2 / 4 | Ability: heal an ally within 2 tiles by 1 | None |
-| 212 | Longhouse hospitality | Greyhides |  | W | Spell | 2 | 1 |  | Heal each of your units 2. The enemy summoner also heals 2 | Small |
-| 213 | Sluice diver | Riverfolk |  | U | Unit | 2 | 1 | 1 / 3 | Ability: swap places with one of your units next to it | Small |
-| 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 1 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
-| 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 2 | Ability: put a snare on an empty tile next to it, for 2 turns | None: snare |
+| 212 | Longhouse hospitality | Greyhides |  | W | Spell | 1 | 1 |  | Heal each of your units 3. The enemy summoner also heals 3 | Small |
+| 213 | Sluice diver | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | Ability: swap places with one of your units next to it | Small |
+| 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
+| 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, for 2 turns | None: snare |
+
+Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder stays a 5/6 and about 1.8 over the common band: 5/5, 4/6 and 4/5 all scored the same, so its stats aren't what drives the result.
 
 Changed alongside them:
 
