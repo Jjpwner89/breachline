@@ -1,6 +1,7 @@
 // Sound. Each moment has one file in sfx/, listed in sfx/CREDITS.md. Sounds load on first use and play through Web Audio,
-// so a sound can be pitched, layered and long files trimmed. Two tavern tunes play quietly underneath. A muted table
-// stays muted between visits. Sounds are .ogg or .wav: the published page can't serve .mp4 audio to other viewers.
+// so a sound can be pitched, layered and long files trimmed. Music plays quietly underneath and follows the mood of the
+// screen. A muted table stays muted between visits. Sounds are .ogg or .wav, and music .mp3 too: the published page can't
+// serve .mp4 audio to other viewers.
 var Sfx = (function () {
   var FILES = {
     'card-draw': 'card-draw.ogg', 'card-hover': 'card-hover.wav', 'card-play': 'card-play.ogg', 'card-flip': 'card-flip.ogg', shuffle: 'shuffle.ogg',
@@ -46,10 +47,49 @@ var Sfx = (function () {
   // strike.
   var LAYERS = { 'spell-fire': ['impact-fire', 0], 'spell-lightning': ['impact-lightning', .25], 'spell-genesis': ['impact-genesis', 0] };
   STAGES.forEach(function (name) { if (!HOW[name]) HOW[name] = { vol: .55 }; });
-  // The two tavern tunes take turns under everything, quietly, from the first click in this page. Some browsers allow
-  // sound before any click, so waiting for one keeps a page left open in the background silent. Only one open copy of
-  // the game plays music: starting it tells the others to stop.
-  var TUNES = ['music-tower-inn', 'music-kings-feast'], MUSIC_VOL = .16, tune = 0, musicSrc = null, musicGain = null, clicked = false;
+  // Music follows the mood of the screen: the tavern tunes at home and over the decks, travelling tunes on the campaign,
+  // battle tunes at the table and a harder one for a story's last chapter or a summoner near the end. A campaign can have
+  // its own road and battle tunes (road-vigil, battle-vigil and so on), used in place of the shared ones. A mood's tunes
+  // take turns while it lasts; a change of mood fades the old tune out and the next one in. A mood with no tunes of its
+  // own leaves the music as it is. Music waits for the first click in the page, as some browsers allow sound before one
+  // and a page left open in the background should stay silent. Only one open copy of the game plays music: starting it
+  // tells the others to stop. vol levels each tune to the tavern tunes, measured on the music board.
+  var TUNES = {
+    'tower-inn': { file: 'music-tower-inn.wav', vol: .92 }, 'kings-feast': { file: 'music-kings-feast.wav', vol: 1.1 },
+    'bards-tale': { file: 'music-bards-tale.mp3', vol: 1.33 }, 'minstrel-dance': { file: 'music-minstrel-dance.mp3', vol: .81 },
+    'market-day': { file: 'music-market-day.mp3', vol: .48 },
+    exploration: { file: 'music-exploration.mp3', vol: 2.48 }, 'harvest-season': { file: 'music-harvest-season.mp3', vol: .62 },
+    battle: { file: 'music-battle.mp3', vol: .8 }, battlegrounds: { file: 'music-battlegrounds.mp3', vol: .575 },
+    'battle-theme': { file: 'music-battle-theme.mp3', vol: .76 }, 'war-theme': { file: 'music-war-theme.ogg', vol: .82 },
+    'victory-theme': { file: 'music-victory-theme.mp3', vol: .63 }, 'defeat-theme': { file: 'music-defeat-theme.mp3', vol: .495 },
+    cathedral: { file: 'music-cathedral.wav', vol: 1.93 }, 'new-town': { file: 'music-new-town.mp3', vol: .92 },
+    'dark-shrine': { file: 'music-dark-shrine.mp3', vol: 1.78 }, 'cathedral-forest': { file: 'music-cathedral-forest.ogg', vol: .81 },
+    foreboding: { file: 'music-foreboding.ogg', vol: 1.51 }, 'enemy-marches': { file: 'music-enemy-marches.ogg', vol: .91 },
+    'viking-march': { file: 'music-viking-march.ogg', vol: 1.82 }, manganda: { file: 'music-manganda.wav', vol: .81 },
+    'beautiful-forest': { file: 'music-beautiful-forest.ogg', vol: .86 }, 'forest-whisper': { file: 'music-forest-whisper.ogg', vol: 4.37 }
+  };
+  // wait holds the new tune back for that many seconds, so the win or lose jingle is heard first; once plays the tunes
+  // through a single time and then leaves the table quiet.
+  var MOODS = {
+    hearth: { tunes: ['tower-inn', 'kings-feast', 'bards-tale', 'minstrel-dance', 'market-day'] },
+    road: { tunes: ['exploration', 'harvest-season'] },
+    battle: { tunes: ['battle', 'battlegrounds'] },
+    clash: { tunes: ['battle-theme', 'war-theme'] },
+    won: { tunes: ['victory-theme'], once: true, wait: 4 },
+    lost: { tunes: ['defeat-theme'], once: true, wait: 5.5 },
+    // The campaigns' own, picked on the campaign music board. The Quiet Order keeps to its own tunes throughout; No Throne
+    // and The Green Return mix one of theirs into the shared battle tunes and keep the shared clash.
+    'road-vigil': { tunes: ['cathedral', 'harvest-season'] },
+    'road-gnosis': { tunes: ['new-town', 'exploration'] },
+    'road-dominion': { tunes: ['dark-shrine', 'cathedral-forest'] },
+    'battle-dominion': { tunes: ['foreboding'] },
+    'clash-dominion': { tunes: ['enemy-marches'] },
+    'road-fervor': { tunes: ['viking-march', 'battle'] },
+    'battle-fervor': { tunes: ['manganda', 'battle', 'battlegrounds'] },
+    'road-genesis': { tunes: ['beautiful-forest', 'harvest-season'] },
+    'battle-genesis': { tunes: ['forest-whisper', 'battle', 'battlegrounds'] }
+  };
+  var MUSIC_VOL = .16, FADE = 2.5, mood = 'hearth', turn = {}, voice = null, hold = 0, clicked = false;
   var tavern = null;
   try { tavern = new BroadcastChannel('breachline-music'); tavern.onmessage = function () { stopMusic(); }; } catch (e) {}
   var KEY = 'breachline.muted', ctx = null, buffers = {}, loading = {}, last = {};
@@ -109,36 +149,58 @@ var Sfx = (function () {
   }
   document.addEventListener('pointerdown', function () { clicked = true; warm(); music(); }, { once: false, passive: true });
 
-  // Each tune plays through once, then the other begins. The first one fades in; muting stops it.
+  // A tune streams from an <audio> element through Web Audio, so a long one starts at once and isn't held in memory
+  // whole. When it ends the mood's next tune begins after a breath; a tune that won't load is skipped from then on.
   function music() {
-    if (muted || musicSrc || !clicked || !context()) return;
-    var c = ctx, name = TUNES[tune % TUNES.length], p = load(name);
-    if (!p) return;
-    musicSrc = 'loading';
-    p.then(function (buf) {
-      if (musicSrc !== 'loading') return;
-      if (!buf || muted) { musicSrc = null; return; }
-      if (c.state === 'suspended') c.resume();
-      if (!musicGain) {
-        musicGain = c.createGain();
-        musicGain.gain.setValueAtTime(0.0001, c.currentTime);
-        musicGain.gain.linearRampToValueAtTime(MUSIC_VOL, c.currentTime + 4);
-        musicGain.connect(c.destination);
-      }
-      var src = c.createBufferSource();
-      src.buffer = buf;
-      src.connect(musicGain);
-      src.onended = function () { if (musicSrc === src) { musicSrc = null; tune++; music(); } };
-      musicSrc = src;
-      src.start();
-      if (tavern) tavern.postMessage('playing');
-    });
+    var m = MOODS[mood], list = m.tunes.filter(function (n) { return !TUNES[n].bad; });
+    if (muted || voice || !clicked || !list.length || Date.now() < hold || !context()) return;
+    var k = turn[mood] || 0;
+    if (m.once && k >= list.length) return;
+    turn[mood] = k + 1;
+    var name = list[k % list.length], c = ctx, el = new Audio('sfx/' + TUNES[name].file), gain = c.createGain(), v = { el: el, gain: gain };
+    gain.gain.setValueAtTime(0.0001, c.currentTime);
+    gain.gain.linearRampToValueAtTime(MUSIC_VOL * (TUNES[name].vol || 1), c.currentTime + FADE);
+    c.createMediaElementSource(el).connect(gain).connect(c.destination);
+    var next = function (bad) {
+      if (voice !== v) return;
+      if (bad) TUNES[name].bad = true;
+      voice = null;
+      fade(v, 0);
+      hold = Date.now() + 1500;
+      setTimeout(music, 1500);
+    };
+    el.onended = function () { next(false); };
+    el.onerror = function () { next(true); };
+    voice = v;
+    if (c.state === 'suspended') c.resume();
+    var go = el.play();
+    if (go && go.catch) go.catch(function () { if (voice === v) { voice = null; fade(v, 0); } });
+    if (tavern) tavern.postMessage('playing');
+  }
+  function fade(v, secs) {
+    if (!v) return;
+    var g = v.gain.gain, t = ctx.currentTime;
+    g.cancelScheduledValues(t);
+    g.setValueAtTime(g.value, t);
+    g.linearRampToValueAtTime(0.0001, t + secs + .02);
+    setTimeout(function () { v.el.pause(); v.el.removeAttribute('src'); v.el.load(); v.gain.disconnect(); }, secs * 1000 + 80);
   }
   function stopMusic() {
-    var src = musicSrc;
-    musicSrc = null;
-    if (src && src.stop) try { src.stop(); } catch (e) {}
-    if (musicGain) { musicGain.disconnect(); musicGain = null; }
+    fade(voice, .3);
+    voice = null;
+  }
+  // Called whenever a screen shows or the battle changes; the same mood again does nothing. Coming back to a mood plays
+  // its next tune, and a once mood starts from its first. story picks that campaign's own tunes for the mood, if it has any.
+  function setMood(name, story) {
+    if (story && MOODS[name + '-' + story]) name += '-' + story;
+    var m = MOODS[name];
+    if (!m || name === mood || !m.tunes.length) return;
+    mood = name;
+    if (m.once) turn[name] = 0;
+    fade(voice, voice ? FADE : 0);
+    voice = null;
+    hold = Date.now() + (m.wait || 0) * 1000;
+    if (m.wait) setTimeout(music, m.wait * 1000 + 20); else music();
   }
 
   // One stage of a thrown spell, layered and overlapping the next: the air drawn in swells to its peak at the launch while
@@ -163,5 +225,5 @@ var Sfx = (function () {
     if (!muted) { warm(); music(); } else stopMusic();
     document.querySelectorAll('[data-sound]').forEach(function (b) { b.setAttribute('aria-pressed', muted ? 'false' : 'true'); b.title = muted ? 'Sound is off' : 'Sound is on'; });
   }
-  return { play: play, spell: spell, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
+  return { play: play, spell: spell, mood: setMood, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
 })();

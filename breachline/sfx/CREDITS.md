@@ -1,6 +1,6 @@
 # Sound credits
 
-Most sounds here are CC0 (public domain): credit isn't required and is given as a courtesy. A few of the spell-stage sounds further down are CC-BY, which costs nothing but asks for the creator to be named, and they are credited there. The first set came from OpenGameArt.org, downloaded on 2026-11-10 and picked on the polish page. The spell, heal, ward and curse sounds were downloaded and picked on 2026-11-11 from the sound board: they come from OpenGameArt.org, lentikula's packs on itch.io and the Versilian Community Sample Library (VCSL, github.com/sgossner/VCSL). Those were trimmed, faded and levelled. Sources in .wav, .flac or .mp3 were converted to AAC (.mp4), and on 2026-11-11 those were converted again to 16-bit WAV (.wav), because the published page can't serve .mp4 audio to anyone but its owner. The two tavern tunes are mono WAV, to keep them small.
+Most sounds here are CC0 (public domain): credit isn't required and is given as a courtesy. A few of the spell-stage sounds and two campaign tunes further down are CC-BY, which costs nothing but asks for the creator to be named, and they are credited there. The first set came from OpenGameArt.org, downloaded on 2026-11-10 and picked on the polish page. The spell, heal, ward and curse sounds were downloaded and picked on 2026-11-11 from the sound board: they come from OpenGameArt.org, lentikula's packs on itch.io and the Versilian Community Sample Library (VCSL, github.com/sgossner/VCSL). Those were trimmed, faded and levelled. Sources in .wav, .flac or .mp3 were converted to AAC (.mp4), and on 2026-11-11 those were converted again to 16-bit WAV (.wav), because the published page can't serve .mp4 audio to anyone but its owner. The two tavern tunes are mono WAV, to keep them small; the music added on 2026-11-13 is listed under Music below.
 
 | File | Pack | Original file |
 |---|---|---|
@@ -79,5 +79,45 @@ These three creators' packs are CC-BY, so they need the credit given here:
 | flight-gnosis | JC Sounds - Fantasy SFX Pack Vol 1 | CC-BY 4.0 | Ice Spell_Hold.wav |
 | flight-dominion | qubodup - Power Drain | CC0 | qubodup-PowerDrain.flac |
 | flight-genesis | qubodup - 20 rustles of dry leaves | CC0 | rustle07.flac |
+
+## Music
+
+On 2026-11-13 the creator picked background music for each mood from the music board. Every track is CC0 from OpenGameArt.org, kept as its maker uploaded it (MP3, or OGG for the war theme), and levelled in `sfx.js` to the tavern tunes. Most are by RandomMind, who made the two tavern tunes.
+
+| File | Track | Maker | Plays |
+|---|---|---|---|
+| music-tower-inn | Medieval: The Old Tower Inn | RandomMind | Home and decks |
+| music-kings-feast | Medieval: King's Feast | RandomMind | Home and decks |
+| music-bards-tale | Medieval: The Bard's Tale (The_Bards_Tale.mp3) | RandomMind | Home and decks |
+| music-minstrel-dance | Medieval: Minstrel Dance (Minstrel_Dance.mp3) | RandomMind | Home and decks |
+| music-market-day | Medieval: Market Day (Loop_Market_Day.mp3) | RandomMind | Home and decks |
+| music-exploration | Medieval: Exploration (Exploration.mp3) | RandomMind | The campaign road |
+| music-harvest-season | Medieval: Harvest Season (harvestseason.mp3) | RandomMind | The campaign road |
+| music-battle | Medieval: Battle (battle.mp3) | RandomMind | Battles |
+| music-battlegrounds | Fantasy - Battlegrounds (battleground_remastered.mp3) | Doge | Battles |
+| music-battle-theme | Battle Theme (Battle.mp3) | Wolfgang_ | Last chapters and close battles |
+| music-war-theme | War Theme (war theme.ogg) | Spring Spring | Last chapters and close battles |
+| music-victory-theme | Medieval: Victory Theme (victory.mp3) | RandomMind | After a win |
+| music-defeat-theme | Medieval: Defeat Theme (defeat.mp3) | RandomMind | After a loss |
+
+### Campaign music
+
+Picked on the campaign music board the same day. A campaign's own road, battle or boss tunes take the place of the shared ones above where it has some. Cathedral and March of Manganda came as WAV and were made mono at 22 kHz to keep them small; the rest are as uploaded. Two are CC-BY and need their makers credited:
+
+- **HitCtrl**, *RPG - Foreboding Ambiance* (OpenGameArt.org), CC-BY 3.0 (creativecommons.org/licenses/by/3.0).
+- **Peter Eastman**, *The Enemy Marches* (OpenGameArt.org), from *The Perilous Journey*, CC-BY 3.0.
+
+| File | Track | Maker | Licence | Plays |
+|---|---|---|---|---|
+| music-cathedral | Cathedral (cathedral.wav) | Umplix | CC0 | The Shrine Road's road |
+| music-new-town | A New Town (025_A_New_Town.mp3) | The Cynic Project (cynicmusic.com) | CC0 | The Long Survey's road |
+| music-dark-shrine | Dark Shrine Loop (qubodup-yd-DarkShrineLoop-OpenGameArt.mp3) | qubodup, from yd's "Shrine" | CC0 | The Quiet Order's road |
+| music-cathedral-forest | Cathedral in the forest (forest_2.ogg) | congusbongus | CC0 | The Quiet Order's road |
+| music-foreboding | RPG - Foreboding Ambiance (foreboding_theme.ogg) | HitCtrl | CC-BY 3.0 | The Quiet Order's battles |
+| music-enemy-marches | The Enemy Marches (March.ogg) | Peter Eastman | CC-BY 3.0 | The Quiet Order's last chapter and close battles |
+| music-viking-march | Viking March (viking-march.ogg) | nightm4re | CC0 | No Throne's road |
+| music-manganda | March of Manganda (march_of_manganda.wav) | Eldritch Grim | CC0 | No Throne's battles |
+| music-beautiful-forest | Beautiful Forest [Orchestra] (beautiful_forest_16bit_44.1khz.ogg) | nene | CC0 | The Green Return's road |
+| music-forest-whisper | Forest Whisper Theme (Forest Whisper.ogg, from forest_whisper_theme.zip) | Cleyton Kauffman | CC0 | The Green Return's battles |
 
 Every moment the game asks for now has a sound. Kenney's packs are by Kenney Vleugels (www.kenney.nl).
