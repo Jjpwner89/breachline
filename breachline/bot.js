@@ -26,6 +26,7 @@ var Bot = (function () {
       if (a.foes && o.owner !== pi) v += hurtScore(o, a.foes);
       if (a.mend && o.owner === pi) v += Math.min(a.mend, o.maxHp - o.hp) * 8;
       if (a.chill && o.owner !== pi) v += 6 + E.attackOf(s, o) * 2;
+      if (a.mire && o.owner !== pi) v += 4 + E.attackOf(s, o) * 2;
       if (a.light && o.owner === pi && !o.lit) v += 12;
       if (a.lots) v += sign(o) * (worth(o) + 30) / inArea.length;
       if (a.embers && !E.hasKw(o, 'Fireproof')) v += sign(o) * hurtScore(o, a.ember) * a.embers / area.length;
@@ -86,6 +87,7 @@ var Bot = (function () {
   }
 
   // Whether amt damage from u finishes t: enough of it, or any at all with Venom.
+  function withoutFlare(m) { var x = {}; for (var k in m) x[k] = m[k]; x.noFlare = true; return x; }
   function fells(u, t, amt) { return amt >= t.hp || (amt > 0 && E.hasKw(u, 'Venom')); }
   function attackScore(s, u, t, extra) {
     var amt = E.hitOn(s, u, t), score = 0;
@@ -137,11 +139,15 @@ var Bot = (function () {
         if (c.lifeCost && p.life <= c.lifeCost * 2) return -100;
         var pull = 0, zap = 0;
         s.units.forEach(function (e) { if (e.owner === foe) pull -= Math.abs(e.c - m.c); });
-        if (m.target) {
+        if (m.target && c.zap) {
           t = unitById(s, m.target);
           zap = c.zap >= t.hp ? worth(t) + 30 : worth(t) * c.zap / t.maxHp;
         }
         if (c.drawOnSummon) zap += 20;
+        if (c.boon && m.target) { t = unitById(s, m.target); zap += 10 + (c.boon.atk || 0) * 8 + (c.boon.hp || 0) * 4 + worth(t) / 10; }
+        if (c.scry) zap += 10;
+        // A Blank unit can attack only with an ally beside it, so a newcomer next to one is worth more.
+        if (s.units.some(function (b) { return b.owner === pi && E.hasKw(b, 'Blank') && dist(b, m) === 1; })) zap += 12;
         (c.summons || []).forEach(function (id) { zap += 30 + E.CARDS[id].cost * 20; });
         if (c.errant) zap += 30 + E.CARDS[c.errant].cost * 20;
         zap += (c.adds || []).length * 15 + (c.curse ? 25 : 0) + (c.tax ? 15 : 0);
@@ -151,6 +157,11 @@ var Bot = (function () {
         return 100 + c.cost * 20 + pull - Math.abs(m.c - (E.COLS - 1) / 2) + zap + ahead - hurt;
       case 'cast':
         c = E.CARDS[handCard(p, m.card).c];
+        // Flare: a spell also strengthens each Glimmerfolk ready to attack this turn. Added to whatever the spell scores.
+        if (c.type === 'spell' && s.phase === 'play' && !m.noFlare) {
+          var flares = s.units.filter(function (a) { return a.owner === pi && E.hasKw(a, 'Flare') && a.summonedTurn !== s.turn && !a.acted; }).length;
+          if (flares) { var base = score(s, withoutFlare(m)); return base > 0 ? base + flares * 6 : base; }
+        }
         // On its own turn the bot casts an instant only for a clear gain, since it could wait for the enemy turn.
         if (c.type === 'instant') return instantScore(s, pi, c, m, null);
         if (c.type === 'relic') return 70 + c.cost * 10;
@@ -228,6 +239,11 @@ var Bot = (function () {
           if (c.knock && bolt < t.hp) burn += tileHarm(s, t, t.r + (t.owner === 0 ? 1 : -1), t.c) * 25;
           if (c.splash) s.units.forEach(function (o) { if (o.owner === foe && o !== t && dist(o, t) === 1) burn += c.splash >= o.hp ? worth(o) + 30 : 5; });
           return burn >= 60 ? 40 + burn : -1;
+        }
+        if (c.hospitality) {
+          var mended = 0;
+          s.units.forEach(function (a) { if (a.owner === pi) mended += Math.min(c.hospitality, a.maxHp - a.hp) * 9 + (a.hp <= 2 && a.maxHp > a.hp ? 10 : 0); });
+          return mended >= 30 ? mended - 5 : -1;
         }
         if (c.fortify) {
           var mine = s.units.filter(function (a) { return a.owner === pi; }).length;
@@ -311,7 +327,14 @@ var Bot = (function () {
           return 22 + tileHarm(s, t, t.r + (t.r - u.r), t.c + (t.c - u.c)) * 25;
         }
         if (key === 'zap') { t = unitById(s, m.target); return ab.amount >= t.hp ? worth(t) + 30 : 12 + worth(t) / 10; }
-        if (key === 'harvest') return worth(unitById(s, m.target)) <= 35 ? 35 : -1;
+        if (key === 'harvest') { t = unitById(s, m.target); return worth(t) <= 35 || (E.hasKw(t, 'Ledgered') && worth(t) <= 50) ? 35 + (ab.hp ? 10 : 0) : -1; }
+        if (key === 'guide') { t = unitById(s, m.target); return E.attackOf(s, t) >= 2 ? 12 + E.attackOf(s, t) * 2 : -1; }
+        if (key === 'hallow') {
+          var on = unitAt(s, m.r, m.c), foesNear = s.units.filter(function (e) { return e.owner === foe && dist(e, m) <= 2; }).length;
+          if (E.tileAt(s, m.r, m.c)) return -1;
+          if (on && on.owner === pi) return 20 + worth(on) / 8 + foesNear * 6;
+          return on ? -1 : foesNear ? 8 + foesNear * 3 : -1;
+        }
         if (key === 'tend') return 45 + worth(unitById(s, m.target)) / 10;
         if (key === 'hold') return 30 + E.attackOf(s, unitById(s, m.target)) * 5;
         if (key === 'rain') {
@@ -378,10 +401,11 @@ var Bot = (function () {
       case 'move':
         u = unitById(s, m.unit);
         var goal = E.backRow(foe), gain = Math.abs(u.r - goal) - Math.abs(m.r - goal), bonus = 0, here = { r: m.r, c: m.c };
+        var blank = E.hasKw(u, 'Blank'), company = s.units.some(function (a) { return a.owner === pi && a !== u && dist(a, here) === 1; });
         s.units.forEach(function (e) {
           if (e.owner !== foe) return;
           var d = dist(here, e);
-          if (d <= E.range(u)) bonus = Math.max(bonus, attackScore(s, u, e) / 2);
+          if (d <= E.range(u) && (!blank || company)) bonus = Math.max(bonus, attackScore(s, u, e) / 2);
           if (d === 1 && fells(e, u, E.hitOn(s, e, u))) bonus -= 8;
         });
         // An enemy on overwatch strikes the first unit to end a move in its reach.
@@ -392,6 +416,13 @@ var Bot = (function () {
           watch = Math.max(watch, fells(e, u, hit) ? worth(u) + 10 : worth(u) * hit / u.maxHp);
         });
         bonus -= watch;
+        if (blank && company) bonus += 10;
+        s.units.forEach(function (b) {
+          if (b === u || b.owner !== pi || !E.hasKw(b, 'Blank') || b.acted || b.summonedTurn === s.turn) return;
+          var alone = !E.nextToAlly(s, b);
+          if (dist(b, here) === 1 && alone) bonus += 18;
+          else if (dist(b, u) === 1 && dist(b, here) > 1 && !s.units.some(function (o) { return o !== u && o.owner === pi && o !== b && dist(o, b) === 1; })) bonus -= 12;
+        });
         // A unit with Overwatch gives up its watch by moving, so it moves only to fight.
         if (E.hasKw(u, 'Overwatch') && bonus <= 0) bonus -= 15;
         // Dropped equipment on the tile is worth walking onto.
@@ -488,6 +519,8 @@ var Bot = (function () {
       if (u.stasisOpen && u.owner !== pi) val -= atk * 2;
       // A unit with Overwatch that stayed still guards the ground in front of it through the enemy's turn.
       if (E.hasKw(u, 'Overwatch') && !u.moved && !u.acted && u.owner === x.active) val += atk * 4;
+      if (E.hasKw(u, 'Blank') && !E.nextToAlly(x, u)) val -= atk * 4;
+      if (u.owner !== pi && u.mired >= x.turn) val -= atk * 2;
       (x.hours || []).forEach(function () { if (u.hp <= 2) val -= worth(u) * 0.7; });
       // A frozen, held or stilled enemy loses its next turn's attack.
       if (u.owner !== pi && (u.frozen >= x.turn || u.held >= x.turn || u.stasis >= x.turn || u.sapped >= x.turn)) val -= atk * 4;

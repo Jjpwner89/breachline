@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-13",
+  "messages": [
+    {
+      "verbatim": "i like the direction of made people, some more visible scaring",
+      "decisions": [
+        {
+          "code": "PL3D",
+          "decision": "liked_direction_refine_scarring",
+          "note": "Preserve the raised-dead direction and ordinary scale; make scarring more visible. No final individual selected."
+        }
+      ]
+    },
+    {
+      "verbatim": "for crest folk - can we get the sweep more inetegrated into the overall design",
+      "decisions": [
+        {
+          "code": "CR1",
+          "decision": "refine_sweep_integration",
+          "note": "Integrate the sweep into the overall design; continue the selected PL9.4 identity."
+        }
+      ]
+    }
+  ],
+  "followups": [
+    "PL3E",
+    "CR2"
+  ],
+  "scope": "Targeted revisions. Neither sheet finalized; the made people’s possible weak or absent soul remains tentative. Other people decisions are unchanged."
+}

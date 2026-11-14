@@ -1,0 +1,168 @@
+{
+  "generation_mode": "built-in image_gen",
+  "images": [
+    {
+      "code": "PL3E",
+      "kind": "lineup",
+      "title": "Made people · more visible scars",
+      "filename": "22-made-people-visible-scars-lineup.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/21-made-people-returned-lineup.png"
+      ],
+      "sourceCodes": [
+        "PL3D"
+      ],
+      "summary": "Retains the liked PL3D direction with clearer healed scars across faces, necks and exposed arms. Ordinary scale, cold pallor and diminished presence remain; no individual or final design has been selected.",
+      "takes": [
+        {
+          "code": "PL3E.1",
+          "position": 1,
+          "title": "Cold return",
+          "text": "A clear diagonal cheek scar and smaller neck mark on the lean, cold-skinned man.",
+          "status": "rejected",
+          "handoff": "A clear diagonal cheek scar and smaller neck mark on the lean, cold-skinned man. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        },
+        {
+          "code": "PL3E.2",
+          "position": 2,
+          "title": "After the wound",
+          "text": "The compact man’s healed throat injury is broader and more readable, with a short brow scar.",
+          "status": "rejected",
+          "handoff": "The compact man’s healed throat injury is broader and more readable, with a short brow scar. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        },
+        {
+          "code": "PL3E.3",
+          "position": 3,
+          "title": "Thin remnant",
+          "text": "The spare older man has a visible temple/scalp scar and old forearm marks.",
+          "status": "rejected",
+          "handoff": "The spare older man has a visible temple/scalp scar and old forearm marks. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        },
+        {
+          "code": "PL3E.4",
+          "position": 4,
+          "title": "Diminished return",
+          "text": "The woman retains her cloudy eye, with clearer brow and collarbone scars.",
+          "status": "rejected",
+          "handoff": "The woman retains her cloudy eye, with clearer brow and collarbone scars. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        },
+        {
+          "code": "PL3E.5",
+          "position": 5,
+          "title": "Restored frame",
+          "text": "The middle-aged man’s existing cheek and upper-chest scars are more pronounced.",
+          "status": "rejected",
+          "handoff": "The middle-aged man’s existing cheek and upper-chest scars are more pronounced. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        },
+        {
+          "code": "PL3E.6",
+          "position": 6,
+          "title": "Late return",
+          "text": "A clear brow-to-cheek scar and healed forearm marks on the thin young man.",
+          "status": "rejected",
+          "handoff": "A clear brow-to-cheek scar and healed forearm marks on the thin young man. The creator likes the raised-dead direction and requested more visible scarring; this revision and the possible weak or absent soul remain open."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset type: Breachline made-people concept lineup revision, 1536 x 1024 landscape PNG.\nInput image 1 is the EDIT TARGET: the current PL3D six-person lineup. The creator likes this direction and asks only for somewhat more visible scarring.\n\nKeep all SIX existing individuals in exactly the same order, with their same faces, ages, body proportions, ordinary adult scale, poses, expressions, hair, garments, matching full-body/portrait pairs, and two-row three-column composition. Preserve the painted warm ivory backdrop, matte oil/acrylic brushwork, muted colours, cold bloodless skin, old lividity, distant gazes and the woman's cloudy eye. Keep the existing scene and framing.\n\nChange only the SCARRING. Increase the size, contrast and readable relief of their old healed scars, and add a few carefully placed scars on currently bare skin. They should be clearly noticeable at the normal sheet viewing size, not only in a close crop. Give each person a distinct history: one or two main scars with a few smaller marks, irregular rather than matching decorative patterns. Pale slightly raised or recessed healed tissue against the ashen skin, a little muted dusky colour at some edges. More evident, but do not cover every inch.\nTop left: an old diagonal scar crossing one cheek and a small neck mark.\nTop middle: emphasize the existing CLOSED throat scar as a broad irregular healed injury, plus a short brow scar.\nTop right: a visibly healed temple/scalp injury and a few old forearm scars.\nBottom left: a healed brow/temple scar near the existing cloudy eye, and clearer collarbone scars.\nBottom middle: make the existing cheek and upper chest scars distinctly broader and more readable.\nBottom right: a clear old brow-to-cheek scar and a few healed marks on the exposed hand/forearm.\nMatch the visible scar placement between each full-body person and their larger portrait. Do not alter identities to accommodate scars. Retain substantial intact bodies and the sense of people returned from death at a cost.\nHealed skin only: no open or bleeding wounds, exposed tissue, stitches, thread, metal staples, bolts, glowing marks, tattoo-like scar patterns or fresh gore. Do not add props, muscles or bulk. No text, numbers, captions, frames, logos or watermark. Preserve everything else from the supplied image.",
+      "status": "rejected",
+      "generated_source": null,
+      "file": null,
+      "review_code": "PL3E",
+      "revision": 2,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/21-made-people-returned-lineup.png"
+      ],
+      "creator_note": "Rejected · stronger scarring went too far; PL3D is final.",
+      "width": 1536,
+      "height": 1024,
+      "correction_prompt": "Use case: identity-preserve. Very small corrective edit to the FIRST attached image (the new scarred six-person lineup), 1536 x 1024 landscape.\nThe SECOND attachment is the original pre-scar lineup and is supplied ONLY to restore one eye colour.\nKeep the entire FIRST image unchanged, including all new visible healed scars, every face and garment, body proportions, pose, placement, ivory background and painted style.\nONLY correction: in the BOTTOM RIGHT cell, the young adult man's large portrait now has an accidentally milky/cloudy eye on the VIEWER'S RIGHT (the man's anatomical left). Restore that eye to its natural non-cloudy iris and pupil, matching the same man's two natural eyes in the SECOND attachment. Keep its current shape, eyelids, expression and gaze direction. His matching small full-body figure must likewise have two natural non-cloudy eyes.\nDo NOT touch the BOTTOM LEFT woman's existing cloudy eye; it is intentional and must stay. Do NOT fade, remove or add scars. Change nothing else.",
+      "intermediate_generated_source": null,
+      "edit_history": [
+        {
+          "prompt": "Use case: identity-preserve.\nAsset type: Breachline made-people concept lineup revision, 1536 x 1024 landscape PNG.\nInput image 1 is the EDIT TARGET: the current PL3D six-person lineup. The creator likes this direction and asks only for somewhat more visible scarring.\n\nKeep all SIX existing individuals in exactly the same order, with their same faces, ages, body proportions, ordinary adult scale, poses, expressions, hair, garments, matching full-body/portrait pairs, and two-row three-column composition. Preserve the painted warm ivory backdrop, matte oil/acrylic brushwork, muted colours, cold bloodless skin, old lividity, distant gazes and the woman's cloudy eye. Keep the existing scene and framing.\n\nChange only the SCARRING. Increase the size, contrast and readable relief of their old healed scars, and add a few carefully placed scars on currently bare skin. They should be clearly noticeable at the normal sheet viewing size, not only in a close crop. Give each person a distinct history: one or two main scars with a few smaller marks, irregular rather than matching decorative patterns. Pale slightly raised or recessed healed tissue against the ashen skin, a little muted dusky colour at some edges. More evident, but do not cover every inch.\nTop left: an old diagonal scar crossing one cheek and a small neck mark.\nTop middle: emphasize the existing CLOSED throat scar as a broad irregular healed injury, plus a short brow scar.\nTop right: a visibly healed temple/scalp injury and a few old forearm scars.\nBottom left: a healed brow/temple scar near the existing cloudy eye, and clearer collarbone scars.\nBottom middle: make the existing cheek and upper chest scars distinctly broader and more readable.\nBottom right: a clear old brow-to-cheek scar and a few healed marks on the exposed hand/forearm.\nMatch the visible scar placement between each full-body person and their larger portrait. Do not alter identities to accommodate scars. Retain substantial intact bodies and the sense of people returned from death at a cost.\nHealed skin only: no open or bleeding wounds, exposed tissue, stitches, thread, metal staples, bolts, glowing marks, tattoo-like scar patterns or fresh gore. Do not add props, muscles or bulk. No text, numbers, captions, frames, logos or watermark. Preserve everything else from the supplied image.",
+          "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/21-made-people-returned-lineup.png",
+          "output": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c21d014f-2931-4032-b833-a166869877cf.png"
+        },
+        {
+          "prompt": "Use case: identity-preserve. Very small corrective edit to the FIRST attached image (the new scarred six-person lineup), 1536 x 1024 landscape.\nThe SECOND attachment is the original pre-scar lineup and is supplied ONLY to restore one eye colour.\nKeep the entire FIRST image unchanged, including all new visible healed scars, every face and garment, body proportions, pose, placement, ivory background and painted style.\nONLY correction: in the BOTTOM RIGHT cell, the young adult man's large portrait now has an accidentally milky/cloudy eye on the VIEWER'S RIGHT (the man's anatomical left). Restore that eye to its natural non-cloudy iris and pupil, matching the same man's two natural eyes in the SECOND attachment. Keep its current shape, eyelids, expression and gaze direction. His matching small full-body figure must likewise have two natural non-cloudy eyes.\nDo NOT touch the BOTTOM LEFT woman's existing cloudy eye; it is intentional and must stay. Do NOT fade, remove or add scars. Change nothing else.",
+          "sources": [
+            "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c21d014f-2931-4032-b833-a166869877cf.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/21-made-people-returned-lineup.png"
+          ],
+          "output": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-de3e17d1-91e2-46d5-a247-ea0204275a1d.png",
+          "purpose": "Restore the bottom-right man’s natural eye after incidental clouding; keep the woman’s intentional cloudy eye."
+        }
+      ],
+      "sha256": "ee1198e07a2ff46d2623ac442caa94be0bebce8926e44089bf3254c67460d87e",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/21-made-people-returned-lineup.png": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920"
+      },
+      "rejected_file": "22-made-people-visible-scars-lineup.png",
+      "rejected_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-de3e17d1-91e2-46d5-a247-ea0204275a1d.png",
+      "rejected_intermediate_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c21d014f-2931-4032-b833-a166869877cf.png",
+      "show_in_review": false,
+      "retired_files": [
+        {
+          "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/22-made-people-visible-scars-lineup.png",
+          "trash": "/Users/dpuser/.Trash/Breachline-peoples-round6-rejected-2026-11-13/22-made-people-visible-scars-lineup.png",
+          "sha256": "ee1198e07a2ff46d2623ac442caa94be0bebce8926e44089bf3254c67460d87e"
+        },
+        {
+          "original": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-de3e17d1-91e2-46d5-a247-ea0204275a1d.png",
+          "trash": "/Users/dpuser/.Trash/Breachline-peoples-round6-rejected-2026-11-13/exec-de3e17d1-91e2-46d5-a247-ea0204275a1d.png",
+          "sha256": "ee1198e07a2ff46d2623ac442caa94be0bebce8926e44089bf3254c67460d87e"
+        },
+        {
+          "original": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c21d014f-2931-4032-b833-a166869877cf.png",
+          "trash": "/Users/dpuser/.Trash/Breachline-peoples-round6-rejected-2026-11-13/exec-c21d014f-2931-4032-b833-a166869877cf.png",
+          "sha256": "f014a4751f2804f595e79d4b1a3e178f3c9544ce06154d2507296d6f85dded62"
+        }
+      ],
+      "reference_moved_to": {
+        "PL3D": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+      }
+    },
+    {
+      "code": "CR2",
+      "kind": "reference",
+      "title": "Crest folk · integrated sweep",
+      "filename": "23-crest-folk-integrated-sweep-reference.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png"
+      ],
+      "sourceCodes": [
+        "CR1",
+        "PL9.4"
+      ],
+      "summary": "The crest grows more continuously through the brow and temples, with its lower sweep tapering into the nape and neck. The selected individual and slender body remain the basis; this integration is a proposal for review.",
+      "takes": [
+        {
+          "code": "CR2",
+          "position": 1,
+          "title": "Integrated sweep",
+          "text": "Continuous brow-to-crest roots and a tapered sweep into the upper neck, keeping the selected face, markings and body.",
+          "status": "proposed",
+          "handoff": "The selected PL9.4/CR1 design is revised so the crest’s sweep belongs to the skull, temples and upper neck, with restrained echoes in the surrounding anatomy. This responds to the creator’s integration request; the new structure and any biological function are not final."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset type: Breachline Crest folk reference-sheet revision, 1536 x 1024 landscape PNG.\nInput image 1 is the EDIT TARGET, CR1. The creator asks: make the sweep more integrated into the overall design.\n\nPreserve this selected adult woman's identity, slender strong body, ordinary scale, russet cheek marks, chalk-tan colour, long hands, barefoot anatomy, short plain grey-brown tunic and wrist cord. Keep the same layout: three complete body views (three-quarter/front, side, rear) on the left, large portrait, profile and hand detail on the right. Preserve the warm ivory empty backdrop, restrained traditional matte oil/acrylic paint, diffuse light and calm character.\n\nREVISE THE CREST AS PART OF ONE COHERENT ANATOMY. Keep the distinctive swept-back fluted crest and its general size and recognisable silhouette, but integrate its sweep into the head, neck and upper-body design. Currently it reads a little like a separate thick layered headdress. Remove that attached-cap impression.\nMake the brow and cheekbone planes flow naturally backward into the crest roots through continuous temple anatomy, without an abrupt rim, seam or separate scalp cap. The ridges should develop gradually out of the skull, be shallow and broad at their roots, then lift into the existing backward sweep. Reduce the stacked shelf effect a little without erasing the fluted character. Let the lower crest taper into the occiput and upper nape, with a clean elegant curve continuing down the neck toward the shoulders. The skull, jaw, neck and shoulder silhouette should feel designed together, with subtle swept planes rather than a human wearing a rigid shell.\nGive the existing cheek markings a subtle backward direction that agrees with the sweep. Echo the same direction very lightly in the broad anatomical planes at collarbone/shoulder and exposed forearm, while keeping the limbs smooth and functional. Do not bolt crests onto other joints, spread folds across the whole body, add armor plates, or turn her into a reptile or sci-fi alien. This is an integrated visual gesture and a believable cranial structure, not a repeated decorative motif.\nShow these same attachments and transitions consistently in EVERY view, especially profile and rear. Keep anatomy readable under the existing garment; do not change or remove clothing, add props or expose new areas. No extra limbs, tail, fins, horns, flowing flesh ribbons, jewelry, text, numbers, frames, logos or watermark. Preserve the rest of the sheet.",
+      "status": "pending_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-bbf60e92-45a0-4bbd-a6aa-17c613ead571.png",
+      "file": "23-crest-folk-integrated-sweep-reference.png",
+      "review_code": "CR2",
+      "revision": 2,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png"
+      ],
+      "creator_note": "Sweep integrated into the anatomy · revision awaiting review",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "84b24d5b068737f02bd34df803d69b04e453764247befbbf03ff8a6a0ac6c218",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/19-crest-folk-reference-v1.png": "fb76c4caeae2c3af801b851248f6fdb3cab44111f5063b6b0a0bb2ce0b954287"
+      }
+    }
+  ]
+}

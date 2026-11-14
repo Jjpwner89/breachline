@@ -1,3 +1,6 @@
+LATEST FINAL PEOPLES REFERENCES — 2026-11-13
+All seven current people designs are final: KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk, PL3D Ashborn (made people), PL8B Banded folk (salt/silt variants), CR3 Crest folk and CO1 Greyhides. Their unchanged PNGs and exact selections are in peoples-final-2026-11-13/prompts-and-manifest.json. PL3D is the original before extra scarring; PL3E is rejected. Current lore is in ../../SETTING.md: the Ashborn are Dominion's raised dead with weak souls. Other depicted clothing, jobs and settings remain examples unless separately established in the lore.
+
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon
 

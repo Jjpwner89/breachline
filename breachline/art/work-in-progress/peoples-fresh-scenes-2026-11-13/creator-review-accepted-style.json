@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-13",
+  "source": "Creator spoken review in this chat",
+  "scope": "Accept the painting direction; make focused edits; update card proposals and art-direction skill; prepare Codex handoff. No live card rollout or commit.",
+  "style": {
+    "status": "accepted for future work",
+    "principles": [
+      "Coherent directional lighting with readable figures; dynamic colour remains welcome.",
+      "Lighting and magic support the painting without taking it over.",
+      "Clearly varied brushwork, detail and edges are liked; avoid uniform crisp rendering.",
+      "Settings, climate, architecture and activity must respect current lore.",
+      "Hands, feet, support and functional equipment need a deliberate anatomy pass."
+    ]
+  },
+  "images": [
+    {
+      "codes": [
+        "K1",
+        "K2"
+      ],
+      "verdict": "liked; retain"
+    },
+    {
+      "codes": [
+        "G1",
+        "G2"
+      ],
+      "verdict": "strongly liked; retain",
+      "note": "Future settings must respect Glimmerfolk lore: developed undercity districts, not generic cave dwellers. Individual surface visits remain possible."
+    },
+    {
+      "codes": [
+        "M1"
+      ],
+      "verdict": "liked with edit",
+      "edit": "Correct strange feet and ankle/boot relationship; preserve scene."
+    },
+    {
+      "codes": [
+        "M2"
+      ],
+      "verdict": "liked with edits",
+      "edit": "Correct his left hand and darken background a little; preserve readable figures.",
+      "interpretation": "Raised conversational hand at image centre is the man's anatomical left hand."
+    },
+    {
+      "codes": [
+        "D1",
+        "D2"
+      ],
+      "verdict": "liked; retain",
+      "note": "Use current species name Ashborn."
+    },
+    {
+      "codes": [
+        "S1",
+        "S2"
+      ],
+      "verdict": "liked; retain",
+      "note": "Creator particularly likes salt and silt variants working together. One species, current name Banded folk."
+    },
+    {
+      "codes": [
+        "R1",
+        "R2"
+      ],
+      "verdict": "liked; retain",
+      "note": "Creator asked whether their homes are warm. SETTING.md specifies limestone valleys and quarry towns but does not specify climate; do not canonize a universal warm habitat."
+    },
+    {
+      "codes": [
+        "O1",
+        "O2"
+      ],
+      "verdict": "generally liked with setting correction",
+      "edit": "Use cold northern coastal settings. Current species name Greyhides."
+    },
+    {
+      "codes": [
+        "N1"
+      ],
+      "verdict": "liked; retain"
+    },
+    {
+      "codes": [
+        "N2"
+      ],
+      "verdict": "liked with edit",
+      "edit": "Remove the toll apparatus, which feels modern and does not fit this scene.",
+      "scope": "This is a local image/prop rejection, not permission to erase tolls from established Kitefolk lore."
+    },
+    {
+      "codes": [
+        "N3"
+      ],
+      "verdict": "strongly liked; retain"
+    },
+    {
+      "codes": [
+        "N4"
+      ],
+      "verdict": "liked; retain"
+    },
+    {
+      "codes": [
+        "N5"
+      ],
+      "verdict": "strongly liked with equipment edit",
+      "edit": "Make the bow bigger and properly functional; preserve light, brushwork, character, pose and setting.",
+      "quote": "I really like how the detail and brushwork varies and is clear."
+    },
+    {
+      "codes": [
+        "H1"
+      ],
+      "verdict": "not selected for Harmonic Burst",
+      "note": "Creator explicitly clarified that the image is not simply bad, but does not want it for this spell. Preserve as an unselected concept; do not use as a style failure or global rejection.",
+      "next": "Develop a new art and fictional spell proposal, preserving existing gameplay."
+    },
+    {
+      "codes": [
+        "E1",
+        "E2"
+      ],
+      "verdict": "not reviewed in this message; pending"
+    }
+  ],
+  "lore": {
+    "source": "breachline/SETTING.md at a47baa7",
+    "names": {
+      "made_people": "Ashborn",
+      "salt_silt": "Banded folk",
+      "coast_folk": "Greyhides"
+    },
+    "glimmerfolk": "Developed and decent undercity districts in Ambrel and a few other cities; not caves by default.",
+    "crest_folk": "Limestone valleys and quarry towns; warmth not specified.",
+    "greyhides": "Cold northern coasts and tidal islands; insulated bodies comfortable in cold water."
+  },
+  "constraints": [
+    "Do not apply new art to live cards or commit this work.",
+    "Liking scenes does not finalize open species reference sheets or new characters/card mechanics.",
+    "Preserve all explicitly liked paintings and older comparison decisions.",
+    "No new flavour text is approved by this review."
+  ],
+  "harmonic_interpretation": "Stage new art and a proposed name/spell fiction. Existing id, cost, colour, wants, targeting and effects remain unchanged. Stonewake is an assistant proposal, not a creator-approved title."
+}

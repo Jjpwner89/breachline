@@ -67,6 +67,7 @@ var Help = (function () {
   // Conditions a unit can be under. Keywords are read from the cards' own rules text, so they stay current.
   var STATES = {
     Held: 'Held: it can\'t move until its next turn ends.',
+    Mired: 'Mired: it can\'t move on its next turn.',
     Frozen: 'Frozen: it can\'t move on its next turn.',
     Veiled: 'Veiled: it can\'t be attacked or targeted by enemy cards until it attacks.',
     Lit: 'Lit: fire doesn\'t hurt it, and when it dies it explodes, hurting the units next to it.',
@@ -219,7 +220,7 @@ var Help = (function () {
     ['.dfront', function () { return 'A deck. Select it to turn it over: its plan, and what you can do with it, are on the back.'; }],
     ['.dback', function () { return 'Select an empty part of the card to turn it back over.'; }],
     ['.pcard .qty', function () { return 'Copies in your deck. A deck holds up to 3 of any card except lands.'; }],
-    ['#start .deck .ty', function (el) { var d = el.closest('.deck'), c = colourOf(d, ['W', 'U', 'B', 'R', 'G', 'N']); return c ? ALIGN[c] + ': ' + alignment(c) : ''; }]
+    ['.dfront .band', function (el) { var c = colourOf(el.closest('.frame'), ['W', 'U', 'B', 'R', 'G']); return c ? ALIGN[c] + ': ' + alignment(c) : ''; }]
   ];
   function tipFor(target) {
     for (var el = target; el && el !== document.body; el = el.parentElement) {

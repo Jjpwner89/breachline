@@ -48,7 +48,12 @@ var Rarity = (function () {
     // N uncommon
     passage: 'u', rusthinged: 'u', waystone: 'u', youngsummoner: 'u',
     // N common
-    across: 'c', follower: 'c', hound: 'c', mountainlung: 'c', recruit: 'c', sellsword: 'c'
+    across: 'c', follower: 'c', hound: 'c', mountainlung: 'c', recruit: 'c', sellsword: 'c',
+    // The new peoples (proposed 2026-11-13).
+    student: 'c', edgewarden: 'u', signaller: 'c', sluicediver: 'c', chartermaker: 'c', improver: 'c',
+    peatcutter: 'c', moorguide: 'c', moorkeeps: 'u', mootelder: 'c', floodfarmer: 'c', ferrykeeper: 'c', longhouse: 'c', eelnetter: 'c',
+    conscript: 'c', husk: 'u', tithedrinker: 'u', caravaneer: 'c', caravanhead: 'u', caravanguard: 'c',
+    bridgemason: 'c', mastermason: 'u', tidehealer: 'c', hospitality: 'u'
   };
   var NAMES = { c: 'Common', u: 'Uncommon', r: 'Rare', l: 'Legendary' };
   function of(id) { return OF[id] || 'c'; }

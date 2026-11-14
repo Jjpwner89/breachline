@@ -2541,7 +2541,7 @@
     {
       "id": "harmonic-burst",
       "title": "Harmonic burst",
-      "status": "final_for_card_building",
+      "status": "superseded",
       "availability": "new_card_art",
       "colour": "U",
       "alignment": "Gnosis / blue",
@@ -2560,7 +2560,33 @@
       "selected_date": "2026-11-10",
       "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-8657-7e52-ad50-a0bd66d8cd61/exec-3153a0c6-604e-47aa-88d0-ef39f12c6dbf.png",
       "source_manifest": "ART_PROMPTS_SET9.json",
-      "selection_note": "Final art approval does not make this a favorite or a preferred Gnosis direction."
+      "selection_note": "Final art approval does not make this a favorite or a preferred Gnosis direction.",
+      "superseded_by": "stonewake",
+      "note": "Replaced on the live card by Stonewake on 2026-11-13 at the creator's request; the freestanding bell did not make contextual sense."
+    },
+    {
+      "id": "stonewake",
+      "title": "Stonewake",
+      "status": "final_for_card_building",
+      "availability": "live_card_art",
+      "colour": "U",
+      "alignment": "Gnosis / blue",
+      "suggested_type": "Spell",
+      "possible_role": "Small area damage and outward displacement",
+      "png": "stonewake.png",
+      "web_jpeg": "web/stonewake.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "329f076a7b50fd32ca440109a75fb1cbad87fcd17b0f89896d6f1630c63029ef",
+      "web_sha256": "b0f040962ddf95424e40855182d9b5945e0523ad6b59cf6c7f7721354efcd72f",
+      "card_ids": [
+        "harmonic"
+      ],
+      "proposal_number": 124,
+      "source": "reference-library-2026-11-06/peoples-paintings-2026-11-13/final/h2-stonewake-final.png",
+      "selected_date": "2026-11-13"
     },
     {
       "id": "line-of-dawn",
@@ -3115,6 +3141,538 @@
       "source": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/01-stormglass-glaive.png in the main checkout",
       "source_manifest": "reference-library-2026-11-06/world-edges-round-10-2026-11-10/review-manifest.json",
       "selection_note": "The creator accepted this round-10 painting and on 2026-11-10 said it can be considered final for card #113."
+    },
+    {
+      "id": "quiet-unfastening",
+      "title": "Conclave student",
+      "status": "final",
+      "availability": "reused_reference",
+      "colour": "U",
+      "png": "quiet-unfastening.png",
+      "web_jpeg": "web/quiet-unfastening.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "af648771255a353a97b768f16b2afccbb7defd43027299b494c6dde59b93782b",
+      "web_sha256": "5907743bab364ff6adcff64eb9e7fa95c5cae774fe02665bd93675fb8ec8e078",
+      "card_ids": [
+        "student"
+      ],
+      "proposal_number": 192,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n3-gnosis-quiet-unfastening.png",
+      "source_manifest": "ART_BRIEFS_SET12.md",
+      "note": "A people reference painting reused as card art, as proposed in ART_BRIEFS_SET12.md; it was outside the 20-painting Set 12 batch."
+    },
+    {
+      "id": "undercity-edge-warden",
+      "title": "Undercity edge-warden",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "undercity-edge-warden.png",
+      "web_jpeg": "web/undercity-edge-warden.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "875eefe236c78394bcf95bd032dea83fae6bcb7a7f1381d0faabc7523dc9aa71",
+      "web_sha256": "29b7673a2b8a279e29514a408169c71f208210764e9f11606bccb11d1b1aff70",
+      "card_ids": [
+        "edgewarden"
+      ],
+      "proposal_number": 193,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/193-edgewarden.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "undercity-signaller",
+      "title": "Undercity signaller",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "undercity-signaller.png",
+      "web_jpeg": "web/undercity-signaller.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8522f75e1d3cd86ddfe47f9388a6e46d19a10c5efccffc151065b72748939f57",
+      "web_sha256": "28718bb153817a9e085fa598862a0102cb58c43eb20d173519a103c9c330b8bc",
+      "card_ids": [
+        "signaller"
+      ],
+      "proposal_number": 194,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/194-signaller.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "peat-cutter",
+      "title": "Peat-cutter",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "peat-cutter.png",
+      "web_jpeg": "web/peat-cutter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4336427590294bb195af59c3dfc6d01b9add88ce838e65d26f87890c138990fd",
+      "web_sha256": "3a17bfeb42b0218ac7640a2bbfd038ad77c599b9a75c44839ef8a9c8cc3a12b3",
+      "card_ids": [
+        "peatcutter"
+      ],
+      "proposal_number": 195,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/195-peatcutter.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "moor-guide",
+      "title": "Moor guide",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "moor-guide.png",
+      "web_jpeg": "web/moor-guide.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "78a47ae50a594b27c39e6d3fd96b4aaef6fcf91bd539eb0bbdabbfcb4c14b1da",
+      "web_sha256": "4f8f679f5bb881a3f00a2bec642587559a6cc4f98beef234ef3409158e522171",
+      "card_ids": [
+        "moorguide"
+      ],
+      "proposal_number": 196,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/196-moorguide.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "the-moor-keeps-its-own",
+      "title": "The moor keeps its own",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "the-moor-keeps-its-own.png",
+      "web_jpeg": "web/the-moor-keeps-its-own.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6d0ee8449734f3820db00ed5546535a4ef2ea0722904072608a5be7abe70d3ce",
+      "web_sha256": "b36e666e1eb2c86c1cc0cc3192ee514c4b16a8fae55e7e8b49dac737dd3b3c88",
+      "card_ids": [
+        "moorkeeps"
+      ],
+      "proposal_number": 197,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/197-moorkeeps.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "moot-elder",
+      "title": "Moot elder",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "moot-elder.png",
+      "web_jpeg": "web/moot-elder.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bb6ad0d292f4516a5c503f3f50694dd22f301703c7cc31f87ca17e61cf25d16e",
+      "web_sha256": "374bdebb5d5e748365477e1adacdfb3cb3b8f51e38030785be8d27160b5b05de",
+      "card_ids": [
+        "mootelder"
+      ],
+      "proposal_number": 198,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/198-mootelder.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "veyr-recalled",
+      "title": "Doomed conscript",
+      "status": "final",
+      "availability": "reused_reference",
+      "colour": "B",
+      "png": "veyr-recalled.png",
+      "web_jpeg": "web/veyr-recalled.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "296674d7b066668cd399ed6253c1d011e7ca874b78957fb2bcca00e3604eb3c1",
+      "web_sha256": "55f65e7d5cc9910337b070c2a515a00c2163680285ee881f416c32b5ad670aed",
+      "card_ids": [
+        "conscript"
+      ],
+      "proposal_number": 199,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n4-dominion-veyr-recalled.png",
+      "source_manifest": "ART_BRIEFS_SET12.md",
+      "note": "A people reference painting reused as card art, as proposed in ART_BRIEFS_SET12.md; it was outside the 20-painting Set 12 batch."
+    },
+    {
+      "id": "husk",
+      "title": "Husk",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "husk.png",
+      "web_jpeg": "web/husk.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5c7162d80eba5bc0eb8262c05753c156c957a028b7433367d32ec91612ae4f24",
+      "web_sha256": "67838fc88b42d6a35b8004c2b90e2c7d6cdf12ea02c41e92ea35369787d1459f",
+      "card_ids": [
+        "husk"
+      ],
+      "proposal_number": 200,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/200-husk-fresh-01.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "tithe-drinker",
+      "title": "Tithe-drinker",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "tithe-drinker.png",
+      "web_jpeg": "web/tithe-drinker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a19d96d772b368770e979ce39d35fa6d8e1713176dc02a34f270e8df63e458e7",
+      "web_sha256": "394c163c08f7efa6042303d7a1394fa9e711eac3cc1b0d71340b0f52da45e1d5",
+      "card_ids": [
+        "tithedrinker"
+      ],
+      "proposal_number": 201,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/201-tithedrinker.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "salt-road-caravaneer",
+      "title": "Salt-road caravaneer",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "R",
+      "png": "salt-road-caravaneer.png",
+      "web_jpeg": "web/salt-road-caravaneer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6b1dd2cbe9682d03a0cf1783cf69f9b8d16f3b1a9ad2065a14faf6ecdd63955e",
+      "web_sha256": "7644ef2b7b9174f024ef5fe520fc2cfe4805ed4ffd3903c40355f42d5c8cc61b",
+      "card_ids": [
+        "caravaneer"
+      ],
+      "proposal_number": 202,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/202-caravaneer.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "floodplain-farmer",
+      "title": "Floodplain farmer",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "floodplain-farmer.png",
+      "web_jpeg": "web/floodplain-farmer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60",
+      "web_sha256": "949898cf15fff2cb3ef1ecd5f127421170a91a990e739458bafefad5df38defc",
+      "card_ids": [
+        "floodfarmer"
+      ],
+      "proposal_number": 203,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/203-floodfarmer-v2.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "caravan-head",
+      "title": "Caravan head",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "R",
+      "png": "caravan-head.png",
+      "web_jpeg": "web/caravan-head.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d23a676b33f6353975d964aefdd14c9aeacb3c86729566d710f35eabfa2bae0e",
+      "web_sha256": "335057fe990efbf69d006f924c8c32cc9017c49ea9a88909e116be443be79b59",
+      "card_ids": [
+        "caravanhead"
+      ],
+      "proposal_number": 204,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/204-caravanhead-fresh-01.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "caravan-guard",
+      "title": "Caravan guard",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "N",
+      "png": "caravan-guard.png",
+      "web_jpeg": "web/caravan-guard.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cbb292d7fe1a34bb10f851bc55ecba00d33babd8d2444903cbc198a09896c198",
+      "web_sha256": "8ea1d7e27714f1780438028158a99c6bfff79f4021269effb445dda7e491af87",
+      "card_ids": [
+        "caravanguard"
+      ],
+      "proposal_number": 205,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/205-caravanguard-v2.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "sallow-bridge-mason",
+      "title": "Sallow Bridge mason",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "sallow-bridge-mason.png",
+      "web_jpeg": "web/sallow-bridge-mason.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "46e228b4eb8095df100b7286b16b830ce373de4c7e5b6da4cea67c4c215191b7",
+      "web_sha256": "0f7e17044bf27532728a4acacc799ab375e8ce4b3d62ba6e0ea800a4252cd16d",
+      "card_ids": [
+        "bridgemason"
+      ],
+      "proposal_number": 206,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/206-bridgemason.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "guild-improver",
+      "title": "Guild improver",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "guild-improver.png",
+      "web_jpeg": "web/guild-improver.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "83c8a467e20852a52eb71a066bede1fe3d83a0de5904879e013056f11bdee407",
+      "web_sha256": "d935077fd3219ec0393436b8a2c6a0b91a52ffae0c1ad130c4a201d530d0cfa7",
+      "card_ids": [
+        "improver"
+      ],
+      "proposal_number": 207,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/207-improver.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "master-mason",
+      "title": "Master mason",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "master-mason.png",
+      "web_jpeg": "web/master-mason.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9",
+      "web_sha256": "f76ba1e0af7df255d6a0e78a54e8565fb5b41299ced39b5f66a0efd4170cf66b",
+      "card_ids": [
+        "mastermason"
+      ],
+      "proposal_number": 208,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "ferry-keeper",
+      "title": "Ferry-keeper",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "ferry-keeper.png",
+      "web_jpeg": "web/ferry-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "912d1a08d8aa82f2483f2e4c2644a334ae6cc83c078905d02771cf3fbd9efb06",
+      "web_sha256": "266d4370397f6bbfbcd6013b6451592f39876af42e2d8637cce40deeeb498274",
+      "card_ids": [
+        "ferrykeeper"
+      ],
+      "proposal_number": 209,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/209-ferrykeeper.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "longhouse-keeper",
+      "title": "Longhouse keeper",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "longhouse-keeper.png",
+      "web_jpeg": "web/longhouse-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a",
+      "web_sha256": "ab90d4168a24f3b1e55e5591e303f163d4e46bbf0b920d79d3c5b7c209878985",
+      "card_ids": [
+        "longhouse"
+      ],
+      "proposal_number": 210,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "tide-healer",
+      "title": "Tide-healer",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "tide-healer.png",
+      "web_jpeg": "web/tide-healer.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f7124099d4a92cffd087e85d07455382bc7d1c1c0b0066a3649c5869ef40994d",
+      "web_sha256": "39c3d618c6c2a9ec227094b42dcca7767643014fe51ad58c968a74869e5410e7",
+      "card_ids": [
+        "tidehealer"
+      ],
+      "proposal_number": 211,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/211-tidehealer.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "longhouse-hospitality",
+      "title": "Longhouse hospitality",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "longhouse-hospitality.png",
+      "web_jpeg": "web/longhouse-hospitality.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8462a246a31aca1a89513b32b2abe3a72be7d0e83f0693ae4e6492dd7dea8a95",
+      "web_sha256": "2b8b35e68096391f88947cfe12bc0cf73a76612abfcbb089fd5154a4446a517a",
+      "card_ids": [
+        "hospitality"
+      ],
+      "proposal_number": 212,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/212-hospitality.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
+    },
+    {
+      "id": "under-the-gate",
+      "title": "Sluice diver",
+      "status": "final",
+      "availability": "reused_reference",
+      "colour": "U",
+      "png": "under-the-gate.png",
+      "web_jpeg": "web/under-the-gate.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5233eb6ce39b032c65eb8078ad01ea51fef30a7f007a719bed58f56bf23edd63",
+      "web_sha256": "9b065a1ef9861a560aa5110839d10384e2301bc7f420c49010ad278d9005c395",
+      "card_ids": [
+        "sluicediver"
+      ],
+      "proposal_number": 213,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/peoples-round-12-2026-11-13/16-under-the-gate.png",
+      "source_manifest": "ART_BRIEFS_SET12.md",
+      "note": "A people reference painting reused as card art, as proposed in ART_BRIEFS_SET12.md; it was outside the 20-painting Set 12 batch."
+    },
+    {
+      "id": "the-sounding",
+      "title": "Charter-maker",
+      "status": "final",
+      "availability": "reused_reference",
+      "colour": "U",
+      "png": "the-sounding.png",
+      "web_jpeg": "web/the-sounding.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e95c870b65706dfa275b8b600ed64d02b37e156339113204513136505cdebb74",
+      "web_sha256": "7546c39ca87f1cd4eb201a571b53febfe12059f8f1b694da5e0a8162e628c394",
+      "card_ids": [
+        "chartermaker"
+      ],
+      "proposal_number": 214,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/peoples-round-12-2026-11-13/12-the-sounding.png",
+      "source_manifest": "ART_BRIEFS_SET12.md",
+      "note": "A people reference painting reused as card art, as proposed in ART_BRIEFS_SET12.md; it was outside the 20-painting Set 12 batch."
+    },
+    {
+      "id": "eel-netter",
+      "title": "Eel-netter",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "eel-netter.png",
+      "web_jpeg": "web/eel-netter.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d",
+      "web_sha256": "b90bf9b1c05a170c6b7e7c29870a0c7d717bc43b0b2f195c755d9ab9a3e4878c",
+      "card_ids": [
+        "eelnetter"
+      ],
+      "proposal_number": 215,
+      "selected_date": "2026-11-13",
+      "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
+      "source_manifest": "CARD_ART_FINAL_SET12.json"
     }
   ]
 }

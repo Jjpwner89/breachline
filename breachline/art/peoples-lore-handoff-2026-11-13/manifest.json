@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-13",
+  "purpose": "Creator-requested reference and lore handoff for Claude",
+  "scope": "Seven final peoples visual references; current approved lore in SETTING.md",
+  "existing_final_commit": "b02dbd6",
+  "images": [
+    {
+      "code": "KR1",
+      "title": "Kitefolk · sharper face",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
+      "handoff": "Final Kitefolk visual design: slender finger-braced gliders with mottled membranes, angular faces and long pointed noses. Their high-village lore and gliding limits are in SETTING.md.",
+      "sha256": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "GR1",
+      "title": "Glimmerfolk · denser light",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png",
+      "handoff": "Final Glimmerfolk visual design: slender bodies, long necks, broad ear-fans and dense blue face/arm glimmers. Their developed undercity, mood signalling and casting flare are established in SETTING.md.",
+      "sha256": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "PL7",
+      "title": "Moor folk · final visual range",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png",
+      "handoff": "Final Moor folk visual range: all six long-limbed, strongly shaped faces with neck/shoulder ruffs retained. Their cold upland homes and community lore are in SETTING.md.",
+      "sha256": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "PL3D",
+      "title": "Ashborn · final visual range",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png",
+      "handoff": "Final Ashborn visual range: ordinary-sized raised dead with cold pallor and restrained old scars. Dominion allegiance, repaired bodies and weak souls are established in SETTING.md.",
+      "sha256": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "PL8B",
+      "title": "Banded folk · final reference",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+      "handoff": "Final Banded folk reference: salt and silt variants share brow, cheek, nose and body structure, with colour, bands and modest build variation. Their regional homes, trade and mixed families are established in SETTING.md.",
+      "sha256": "95e55aaf9bcc10f4d0b744015e48e1c745c5d5e0b6a192a3fc1bcc4d4d8881a8",
+      "source_file": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/18-salt-silt-unified-lineup.png",
+      "source_prompt": "Use case: stylized-concept. Breachline fantasy painted concept/reference sheet, 1536 x 1024 landscape PNG. Warm ivory EMPTY backdrop. Traditional oil and acrylic fantasy painting with measured visible brushwork, matte skin and cloth, coherent diffuse daylight, sharp thoughtful facial detail, simpler secondary marks. Not photography, CGI, animation, cartoon, anime or glossy plastic. Keep exaggerated interesting facial planes and coherent bodies; avoid sci-fi extraterrestrial archetypes and repetitive skin folds. No writing, text, labels, numbers, borders, signatures or watermarks. All people adults, clothed simply and modestly in practical handmade neutral fantasy garments. Complete heads, hands and feet inside the composition.\nExactly SIX invisible cells, TWO ROWS of THREE. Each cell contains one full-body adult standing calmly and one larger matching head-and-shoulders portrait of that individual beside it. All full bodies at common scale. Keep clean breathing room and no drawn grid.\nUse the attached PL8 sheet. The TOP row is the salt direction; the BOTTOM row is silt. The creator now says they are ONE SPECIES with TWO VARIANTS. Pull them slightly toward each other. Neither keep them as unrelated species nor flatten their distinction into simple recolours.\nSHARED ANATOMY in all six: same low swept brow ridge continuing into firm cheekbones, same moderately wide wedge-shaped skull, same low broad nose bridge with a gently projecting blunt tip, similar expressive eyes with visible living irises, strong full mouth and softly angular jaw. Body proportions meet in the middle: moderately deep torso, capable long forearms, medium-length legs and broad three-toed feet. Salt bodies less reed-thin and less long-legged; silt bodies less bulky and less long-armed. Keep ordinary adult size. Shared smooth matte skin and no repetitive trunk folds. Head ridges are a coherent bone silhouette, not fans of folded flesh. The upper row gains a little of the lower row's cheek volume and broad nose; the lower row gains a little of the upper row's swept brow and angular facial length.\nVARIANT DIFFERENCES: salt adults warm ochre/tawny with sparse muted cream stripes; silt adults olive-brown with quieter mottling and faint broken lighter bands suggesting the same pigment system. No new gills, hair, crests, ears or tails. Keep personal faces distinct, not clones. Both sexes and ages appear in BOTH variants.\nTOP LEFT: mature salt woman, slim-average build, soft pale stripes on shoulders and lower legs, simple grey sleeveless tunic.\nTOP MIDDLE: salt man, broader average body, same fundamental head as bottom-middle, sparse broken stripes, plain linen vest and cropped trousers.\nTOP RIGHT: older salt woman, warmer weathered tawny skin, muted bands, shared low swept brow, practical wool tunic.\nBOTTOM LEFT: silt man, average body closer to top-left proportions, olive-brown skin with a few faint broken pale bands, visibly related swept brow, plain wrap vest.\nBOTTOM MIDDLE: silt woman, sturdy but ordinary-size build, the same basic face and foot proportions as salt man above, muted mottled olive skin, short neutral dress.\nBOTTOM RIGHT: lean silt man, slightly longer legs, same underlying head as top-right but younger facial character, quiet mottling and simple linen clothes.\nThe family resemblance should be immediately convincing; these are related variants within one species. Preserve strong fantasy appeal and distinctive faces.",
+      "source_status": "accepted_final_visual_reference",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "CR3",
+      "title": "Crest folk · final reference",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png",
+      "handoff": "Final Crest folk reference: swept head crests integrate with smaller crests on shoulders, chest and arms. Their limestone valleys, quarry towns and learned craft traditions are established in SETTING.md.",
+      "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28",
+      "source_file": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/24-crest-folk-arms-and-body-reference.png",
+      "source_prompt": "Use case: identity-preserve.\nAsset type: Breachline Crest folk anatomy reference, 1536 x 1024 landscape PNG.\nInput image 1 is the EDIT TARGET: CR1, the selected Crest folk woman. The creator clarified that \"integrate the sweep\" meant trying ACTUAL CREST STRUCTURES ON THE ARMS AND BODY, not only changing the head-to-neck attachment.\n\nPreserve this individual's facial identity, original swept fluted head crest, russet cheek marks, chalk-tan skin, slender strong body proportions, ordinary size, hands, feet and simple short grey-brown tunic. Keep the same three full-body front/three-quarter, side and rear views at left, large portrait at upper right, and profile at lower right. Warm ivory empty background, traditional matte oil/acrylic fantasy painting with measured visible brushwork, quiet diffuse light, no printed text.\n\nThe NEW ANATOMY must be clearly visible: carry a smaller restrained version of the head crest's material and backward sweep onto BOTH ARMS and the UPPER TORSO. These are shallow organic bony crests growing smoothly out of the body, in the same pale warm-tan material as the head; not clothing, jewelry, tattoos or a suit of armor.\nARMS: two or three low elongated fluted ridges along the outer upper arm, leading into a small swept crest on the outer/back surface of the forearm. Keep the inner elbow, wrist and fingers free, with believable flexible joints. At least one modest crest should visibly change each arm's silhouette in the full-body views. These growths are much smaller than the head crest, elegant and streamlined, never giant spikes, fins or shoulder pauldrons.\nTORSO: a pair of modest swept crests rooted in the upper back/shoulder-blade region and small related shallow clavicular ridges at the upper chest. Make the torso growths visible ABOVE the tunic neckline/shoulder openings and in the rear and profile body views, anatomically continuous with the shoulder area. Let the plain existing garment sit naturally around the growths with only small practical neckline/armhole adjustments; retain modest coverage and its existing overall cut. Do not turn the shirt itself into a crest.\nKeep the rest of the torso and legs smooth, so the head, shoulder/back and arm crests form one restrained family of shapes. Do not cover her in repeated folds, scales, ribs or jagged plating. Preserve the head crest itself; no need to make it bigger or add a new neck fan. No tail, extra limbs or new species features.\nReplace only the existing isolated hand detail at lower right with a clear enlarged shoulder/upper-arm and forearm anatomy detail, showing how these new crests arise from the skin and leave joints functional. Keep enough hand visible to connect the forearm study. All views must agree about the new crest locations.\nThis is a modest species-design experiment for review, not an armored warrior transformation. Preserve the selected calm fantasy person. No weapons, accessories, sci-fi alien styling, text, numbers, borders, logos or watermark.",
+      "source_status": "accepted_final_visual_reference",
+      "accepted_date": "2026-11-13"
+    },
+    {
+      "code": "CO1",
+      "title": "Greyhides · final reference",
+      "status": "Final visual reference; lore approved in SETTING.md",
+      "file": "../reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+      "handoff": "Final Greyhide reference: rounded grey body, broad calm face, short sturdy legs, fine hands and no tail. Their cold northern coasts and insulated bodies are established in SETTING.md.",
+      "sha256": "53569e269a21b4fa22d1591a11c410fd83661a21076bc117dd35291d8e02c07f",
+      "source_file": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/20-coast-folk-reference-v1.png",
+      "source_prompt": "Use case: stylized-concept. Breachline fantasy painted concept/reference sheet, 1536 x 1024 landscape PNG. Warm ivory EMPTY backdrop. Traditional oil and acrylic fantasy painting with measured visible brushwork, matte skin and cloth, coherent diffuse daylight, sharp thoughtful facial detail, simpler secondary marks. Not photography, CGI, animation, cartoon, anime or glossy plastic. Keep exaggerated interesting facial planes and coherent bodies; avoid sci-fi extraterrestrial archetypes and repetitive skin folds. No writing, text, labels, numbers, borders, signatures or watermarks. All people adults, clothed simply and modestly in practical handmade neutral fantasy garments. Complete heads, hands and feet inside the composition.\nONE SINGLE DESIGN reference sheet, NOT a six-person lineup. Left two-thirds: front three-quarter, side and rear FULL BODY views of exactly the same individual and design at the same scale, head to feet visible. Right third: a large three-quarter head-and-shoulders portrait above a smaller side-profile face and hand/forearm detail. Every view must agree anatomically.\nThe source is a six-cell lineup. Select ONLY TAKE ONE, TOP LEFT. The creator likes PL10.1 and explicitly requests its reference sheet. Ignore all five other takes, especially the nose-scale people.\nPreserve precisely the top-left adult man: rounded deep torso with prominent natural belly, low neck and broad calm intelligent face, smooth matte slate-blue-grey skin, short sturdy legs, broad stable feet with THREE toes, medium-length arms and fine five-fingered capable hands. Keep the broad muzzle/nose planes with large separated nostrils, small calm natural eyes, and tiny low ears. Do not turn him into a thin or muscular figure, a seal animal or a human. Body proportions and head silhouette stay close to the selected source.\nHe has NO TAIL. The rear view must unequivocally demonstrate a natural tail-free pelvis, without a stump or bump. No fins, gills, scales or added anatomy folds. Keep the plain taupe cropped trousers, simple cloth belt and coarse grey-brown short wool shoulder wrap with its small bone fastening from the selected take. Show the wool as matte painted thick locks, not a photo of fur. All three views show the same build, clothing and identity. The hand detail shows the fine functional fingers. No new equipment or scenic backdrop.",
+      "source_status": "accepted_final_visual_reference",
+      "accepted_date": "2026-11-13"
+    }
+  ],
+  "finalized_date": "2026-11-13"
+}

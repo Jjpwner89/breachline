@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-13",
+  "creator_requests": [
+    "For Stonewake she should look at the guy; otherwise these are good.",
+    "Keep finals, reference sheets and paintings I really liked; delete chaff and rejections.",
+    "Then commit, merge, push."
+  ],
+  "interpretation": "Accept current 22 paintings, subject to Stonewake's local gaze fix. Preserve earlier explicit favourites, reference sheets, mixed/open sheets and unresolved Oath Sentinel. Remove superseded images and unselected/rejected studies in this conversation's five batches. Do not change live card mechanics or automatically install the art.",
+  "stonewake": {
+    "code": "H2-R1",
+    "parent": "H2",
+    "title": "Stonewake",
+    "file": "h2-stonewake-final.png",
+    "refs": [
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/h2-stonewake.png"
+    ],
+    "prompt": "Use case: precise local identity-preserving edit. Image 1 is the edit target. Change ONLY the Crest woman's head angle, eyes and minimal connecting neck anatomy so she looks unmistakably UP and RIGHT at the FACE of the closest armoured man she is toppling, in the upper-right of the painting. Her current face looks too horizontally forward. Lift her chin modestly, turn her gaze toward his face rather than toward the stones or the distant companion; her sightline should meet his face. Retain her focused serious expression, age, exact distinctive head crest and cheek marks. Keep BOTH hands in their current places, particularly her anatomical left palm planted on the causeway; keep her kneeling body, clothes and scale unchanged. Preserve the exact man's pose, all other people, wave of paving, architecture, ravine, framing, palette, readable directional light, material handling and varied oil/acrylic brushwork. No new effects, extra details, crop or global repaint. Landscape 1536 x 1024. No text, border or watermark.",
+    "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-e89ad48e-c348-4fed-82ad-0479365bda52.png",
+    "visual_qa": "Chin and eyes turned up toward the closest armoured man's face; planted hand, kneeling pose, paving wave, lighting and scene retained.",
+    "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/final/h2-stonewake-final.png",
+    "sha256": "329f076a7b50fd32ca440109a75fb1cbad87fcd17b0f89896d6f1630c63029ef"
+  },
+  "cleanup_record": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/cleanup-plan.json"
+}

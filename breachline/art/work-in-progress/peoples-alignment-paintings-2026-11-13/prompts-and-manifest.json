@@ -1,0 +1,230 @@
+{
+  "collection": "Five alignments — character, setting and light",
+  "date": "2026-11-13",
+  "generation_mode": "built-in image_gen",
+  "status": "pending_creator_review",
+  "counts": {
+    "new_scenes": 5,
+    "targeted_edits": 1,
+    "total": 6
+  },
+  "scope": "Character situations, new paintings and proposed jobs/alignments remain review proposals. Existing final species references are unchanged. Made people remain Dominion. No game cards are implemented and no new art is committed.",
+  "review_file": "review.html",
+  "creator_feedback_file": "creator-feedback.json",
+  "images": [
+    {
+      "code": "A1",
+      "alignment": "Vigil",
+      "title": "The Last Step",
+      "character": "Brann",
+      "file": null,
+      "source": "s7-brann-at-the-low-tide-road.png",
+      "summary": "Brann steadies a traveller on the wet steps above a ferry. Vigil is expressed through a clear protective act, with the water, stair and effort of the two figures explaining the moment.",
+      "intent": "A readable physical rescue, with one soft daylight source and colour carried by clothing and the boat.",
+      "scene": "Brann is the same broad slate-grey Coast folk ferryman, short sturdy legs, rounded belly, low neck, broad calm blunt face, NO TAIL. Preserve the oiled-wool shoulder wrap with bone clasp, taupe trousers and simple foot wraps. NEW composition, close eye-level side view from the wet stone stair, two figures filling the middle of the frame. Brann crouches securely on an upper step at LEFT, leaning toward a weary adult woman at RIGHT who is stepping up from a small tied ferry. His anatomical RIGHT hand grips her LEFT forearm firmly; her right hand braces on the actual stair. His other hand braces on his own knee. Their faces look toward one another and the difficult step, with visible exertion and steady attention. Her raised foot is visibly on the next stair; this is a simple physically plausible assist. Modest rain-dark blue wool cloak, plain travel bag, no costume finery. A strip of water and the ferry hull immediately below establish where they are; rope visibly ties the boat to a stone ring, an ordinary muted red gunwale offers a small colour accent. Keep the far quay architecture sparse and subordinate. One broad luminous morning sky source from upper right, softly catching wet stone and the back edge of clothing; Brann's face has modest reflected light and stays darker than the open water. Rich slate, worn blue, natural brown and small brick-red notes. No glowing shield, magical effect, huge wave or symbolic posing.",
+      "kind": "new_scene",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png",
+      "prompt": "Use case: stylized-concept.\nMake one NEW finished Breachline fantasy painting, landscape 1536 x 1024.\nThe supplied picture is ONLY the named character's identity/anatomy/clothing reference. Invent the new scene and composition described below; do not reproduce the reference staging.\nShared painting treatment: traditional oil and acrylic with measured visible brushwork and deliberate painted shapes. Give the face specific, believable matte planes, natural expression and selective detail; cloth, skin, wood and stone have different surfaces. Fine modelling at the face and essential gesture, broader marks and quieter edges elsewhere. No thick icing-like skin texture, photoreal finish, CGI, animation-film polish or generic heroic beauty.\nLighting must describe the actual space: one dominant source with a clear direction, related light and shadow colours and believable occlusion. Retain beautiful local colour and a few lively accents. Let faces fall into shadow when the source is behind them. Avoid indiscriminate gold rims, spotlit faces, blue-orange grading, luminous effects used as decoration and uniform desaturation.\nThe scene should read from gaze, bodily effort, contact and location without a title explaining it. Human-scale emotion and physical stakes can be dramatic. Keep ordinary scale, clear anatomy, coherent equipment, real paths and contact. Backgrounds form a few broad legible shapes. All people are adults. No text, letters, numbers, logos, signature, frame, interface, rules or new species traits.\nSCENE: Brann is the same broad slate-grey Coast folk ferryman, short sturdy legs, rounded belly, low neck, broad calm blunt face, NO TAIL. Preserve the oiled-wool shoulder wrap with bone clasp, taupe trousers and simple foot wraps. NEW composition, close eye-level side view from the wet stone stair, two figures filling the middle of the frame. Brann crouches securely on an upper step at LEFT, leaning toward a weary adult woman at RIGHT who is stepping up from a small tied ferry. His anatomical RIGHT hand grips her LEFT forearm firmly; her right hand braces on the actual stair. His other hand braces on his own knee. Their faces look toward one another and the difficult step, with visible exertion and steady attention. Her raised foot is visibly on the next stair; this is a simple physically plausible assist. Modest rain-dark blue wool cloak, plain travel bag, no costume finery. A strip of water and the ferry hull immediately below establish where they are; rope visibly ties the boat to a stone ring, an ordinary muted red gunwale offers a small colour accent. Keep the far quay architecture sparse and subordinate. One broad luminous morning sky source from upper right, softly catching wet stone and the back edge of clothing; Brann's face has modest reflected light and stays darker than the open water. Rich slate, worn blue, natural brown and small brick-red notes. No glowing shield, magical effect, huge wave or symbolic posing.",
+      "status": "proposal_pending_creator_review",
+      "generated_source": null,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8f102d141a58073d8c91a699676af0bd3ceb51c6238deef853d0303d07b9dfd0",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab"
+      },
+      "reference_role": "Identity/anatomy/clothing only; new composition",
+      "deleted_file": "a1-vigil-the-last-step.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-2876c936-fb0c-4deb-a8a3-5dcab9ec5d6a.png"
+    },
+    {
+      "code": "A2",
+      "alignment": "Fervor",
+      "title": "Beside the Cart",
+      "character": "Tavra",
+      "file": null,
+      "source": "s5-a-camp-before-rain-lighting-v2.png",
+      "summary": "Tavra catches an attacker’s spear on her short sword beside her caravan cart. The proposed scene keeps the action close and physical, with tension in balance, contact and expression.",
+      "intent": "Contained action with vivid rust cloth and ochre skin, avoiding a large spell spectacle.",
+      "scene": "Use ONLY Tavra, the salt-variant woman at LEFT in the reference, not her companion. Same swept low brow and sculpted cheek structure, warm ochre skin with modest pale body stripes, long arms and ordinary athletic build; rust-red repaired quilted vest, leather closures, knee trousers, short curved sword with practical knuckle guard. NEW setting and pose: a close three-quarter side view beside the dark wooden wheel of her own caravan cart. Tavra fills CENTER-LEFT in a low balanced defensive stance, her right hand holding the short sword diagonally to catch a wooden spear shaft thrust in from RIGHT. The crossing of blade and shaft is clearly visible just below chest height, with real contact rather than a decorative X. Her left hand presses against the cart rail for balance; her feet have support on compacted dirt. At far right show only part of ONE adult attacker in plain dusty wool with the connected forearm and grip holding the spear; keep that person secondary and mostly cropped. Tavra looks directly at the threat, jaw set, reacting rather than posing for a viewer. The worn cart wheel and fallen small sack identify a caravan under threat; only a few quiet salt-road shapes behind. Late sun enters from upper LEFT through thin cloud, gives restrained warm light to the facing planes, and the cart casts one broad believable shadow. Her ochre skin and rust vest retain colour inside that light; shadows share neutral earth and grey rather than opposing electric blue. Fine small highlight on sword metal, matte skin and cloth, real weight. No fire, lightning, magical aura, flying dust explosion, oversized weapon or superhero lunge.",
+      "kind": "new_scene",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png",
+      "prompt": "Use case: stylized-concept.\nMake one NEW finished Breachline fantasy painting, landscape 1536 x 1024.\nThe supplied picture is ONLY the named character's identity/anatomy/clothing reference. Invent the new scene and composition described below; do not reproduce the reference staging.\nShared painting treatment: traditional oil and acrylic with measured visible brushwork and deliberate painted shapes. Give the face specific, believable matte planes, natural expression and selective detail; cloth, skin, wood and stone have different surfaces. Fine modelling at the face and essential gesture, broader marks and quieter edges elsewhere. No thick icing-like skin texture, photoreal finish, CGI, animation-film polish or generic heroic beauty.\nLighting must describe the actual space: one dominant source with a clear direction, related light and shadow colours and believable occlusion. Retain beautiful local colour and a few lively accents. Let faces fall into shadow when the source is behind them. Avoid indiscriminate gold rims, spotlit faces, blue-orange grading, luminous effects used as decoration and uniform desaturation.\nThe scene should read from gaze, bodily effort, contact and location without a title explaining it. Human-scale emotion and physical stakes can be dramatic. Keep ordinary scale, clear anatomy, coherent equipment, real paths and contact. Backgrounds form a few broad legible shapes. All people are adults. No text, letters, numbers, logos, signature, frame, interface, rules or new species traits.\nSCENE: Use ONLY Tavra, the salt-variant woman at LEFT in the reference, not her companion. Same swept low brow and sculpted cheek structure, warm ochre skin with modest pale body stripes, long arms and ordinary athletic build; rust-red repaired quilted vest, leather closures, knee trousers, short curved sword with practical knuckle guard. NEW setting and pose: a close three-quarter side view beside the dark wooden wheel of her own caravan cart. Tavra fills CENTER-LEFT in a low balanced defensive stance, her right hand holding the short sword diagonally to catch a wooden spear shaft thrust in from RIGHT. The crossing of blade and shaft is clearly visible just below chest height, with real contact rather than a decorative X. Her left hand presses against the cart rail for balance; her feet have support on compacted dirt. At far right show only part of ONE adult attacker in plain dusty wool with the connected forearm and grip holding the spear; keep that person secondary and mostly cropped. Tavra looks directly at the threat, jaw set, reacting rather than posing for a viewer. The worn cart wheel and fallen small sack identify a caravan under threat; only a few quiet salt-road shapes behind. Late sun enters from upper LEFT through thin cloud, gives restrained warm light to the facing planes, and the cart casts one broad believable shadow. Her ochre skin and rust vest retain colour inside that light; shadows share neutral earth and grey rather than opposing electric blue. Fine small highlight on sword metal, matte skin and cloth, real weight. No fire, lightning, magical aura, flying dust explosion, oversized weapon or superhero lunge.",
+      "status": "proposal_pending_creator_review",
+      "generated_source": null,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a47b1502369020e81a449809a77e23f75d0ed1323498c8974463c17ec8022215",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png": "27d7a9d6ec2ea79184d9e4214b57aaa7707b2ce562e0696b79f70e5f98a2cf28"
+      },
+      "reference_role": "Identity/anatomy/clothing only; new composition",
+      "deleted_file": "a2-fervor-beside-the-cart.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-632401c3-d3fa-423f-8d40-83af61433699.png"
+    },
+    {
+      "code": "A3",
+      "alignment": "Gnosis",
+      "title": "The Cut Stone",
+      "character": "Ilyra",
+      "file": null,
+      "source": "s6-ilyra-and-the-unfinished-arch.png",
+      "summary": "Ilyra cuts a precise groove into a stone architectural component, with her tools and gaze meeting at the work. The scene tests a clear act of skilled craft; the workshop and job remain proposals.",
+      "intent": "Replace the ambiguous rock-touching gesture with readable tool contact under a single workshop light.",
+      "scene": "Ilyra is the same adult Crest folk woman in the reference: chalk-tan skin with russet cheek marks, swept head crest, modest integrated shoulder/clavicle and outer upper-arm/forearm crests, slender strong proportions, fitted sleeveless indigo work tunic, linen underlayer, simple belt. NEW painting from slightly above and across the workbench in a shaded stone mason's workshop. Ilyra is on the RIGHT half, bent attentively over a firmly supported limestone block at CENTER-LEFT. Her anatomical LEFT hand firmly holds a short iron stone chisel, its cutting tip actually seated in a partly cut straight groove in the block. Her RIGHT hand holds a small wooden mallet just above the chisel's struck end, in a short controlled working stroke. Both wrists and tool alignment are clear. Her eyes are directed precisely to the chisel tip, brow intent, mouth relaxed with concentration. A few freshly cut chips sit immediately below the groove; the stone is being shaped into an ordinary architectural fitting, with one rough face and one already worked face. A plain apron protects her lap. Tools, fingers and arms are physically connected; exactly two arms and hands. A simple straightedge lies flat, spare stone blocks and a faint arch opening imply the workshop without a clutter of props. A SINGLE broad cool-neutral daylight opening off screen at upper LEFT lights stone dust, the working fingers and planes of her face; the back of her head and right torso are in related gentle shadow. No bright gold contour on every crest. Keep indigo cloth, warm chalk and subtle russet marks as actual local colour. Visible restrained brushwork, materially matte stone/skin. No levitating rock, dramatic spell gesture, magical glow, scientific interface or radiant sunny city panorama. Craft intelligence is evident in the precision of the work.",
+      "kind": "new_scene",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch.png",
+      "prompt": "Use case: stylized-concept.\nMake one NEW finished Breachline fantasy painting, landscape 1536 x 1024.\nThe supplied picture is ONLY the named character's identity/anatomy/clothing reference. Invent the new scene and composition described below; do not reproduce the reference staging.\nShared painting treatment: traditional oil and acrylic with measured visible brushwork and deliberate painted shapes. Give the face specific, believable matte planes, natural expression and selective detail; cloth, skin, wood and stone have different surfaces. Fine modelling at the face and essential gesture, broader marks and quieter edges elsewhere. No thick icing-like skin texture, photoreal finish, CGI, animation-film polish or generic heroic beauty.\nLighting must describe the actual space: one dominant source with a clear direction, related light and shadow colours and believable occlusion. Retain beautiful local colour and a few lively accents. Let faces fall into shadow when the source is behind them. Avoid indiscriminate gold rims, spotlit faces, blue-orange grading, luminous effects used as decoration and uniform desaturation.\nThe scene should read from gaze, bodily effort, contact and location without a title explaining it. Human-scale emotion and physical stakes can be dramatic. Keep ordinary scale, clear anatomy, coherent equipment, real paths and contact. Backgrounds form a few broad legible shapes. All people are adults. No text, letters, numbers, logos, signature, frame, interface, rules or new species traits.\nSCENE: Ilyra is the same adult Crest folk woman in the reference: chalk-tan skin with russet cheek marks, swept head crest, modest integrated shoulder/clavicle and outer upper-arm/forearm crests, slender strong proportions, fitted sleeveless indigo work tunic, linen underlayer, simple belt. NEW painting from slightly above and across the workbench in a shaded stone mason's workshop. Ilyra is on the RIGHT half, bent attentively over a firmly supported limestone block at CENTER-LEFT. Her anatomical LEFT hand firmly holds a short iron stone chisel, its cutting tip actually seated in a partly cut straight groove in the block. Her RIGHT hand holds a small wooden mallet just above the chisel's struck end, in a short controlled working stroke. Both wrists and tool alignment are clear. Her eyes are directed precisely to the chisel tip, brow intent, mouth relaxed with concentration. A few freshly cut chips sit immediately below the groove; the stone is being shaped into an ordinary architectural fitting, with one rough face and one already worked face. A plain apron protects her lap. Tools, fingers and arms are physically connected; exactly two arms and hands. A simple straightedge lies flat, spare stone blocks and a faint arch opening imply the workshop without a clutter of props. A SINGLE broad cool-neutral daylight opening off screen at upper LEFT lights stone dust, the working fingers and planes of her face; the back of her head and right torso are in related gentle shadow. No bright gold contour on every crest. Keep indigo cloth, warm chalk and subtle russet marks as actual local colour. Visible restrained brushwork, materially matte stone/skin. No levitating rock, dramatic spell gesture, magical glow, scientific interface or radiant sunny city panorama. Craft intelligence is evident in the precision of the work.",
+      "status": "proposal_pending_creator_review",
+      "generated_source": null,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2adee113ff084391ac7fef4df38949c6259c32137aa41b459a6ce6318a49967a",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch.png": "210ea153448ead9332fcc31941f1529d8b1bc78bc8ab66333956dd7ecb32e570"
+      },
+      "reference_role": "Identity/anatomy/clothing only; new composition",
+      "deleted_file": "a3-gnosis-the-cut-stone.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-ddf66500-8335-4933-81ee-01b91da9e42b.png"
+    },
+    {
+      "code": "A4",
+      "alignment": "Dominion",
+      "title": "The Watch Continues",
+      "character": "Veyr",
+      "file": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/a4-dominion-the-watch-continues.png",
+      "source": "s4-the-second-muster.png",
+      "summary": "Veyr remains at his post as two living soldiers leave through the gatehouse behind him. His diminished presence and continued service carry the scene; the painting does not settle the state of his soul.",
+      "intent": "A restrained comparison image using the same rendering standard as the other four alignments.",
+      "scene": "Veyr, the made man at center in the reference, with the SAME ordinary compact build, broad hollow face, short dark hair, cold grey pallor, distant natural eyes and only the existing thin healed throat scar. Preserve the worn iron breastplate over dark padded cloth and plain leather closures. NEW eye-level three-quarter painting at a gatehouse at the end of a wet day. Veyr fills the LEFT half, still and upright beside the gatepost, his face in three-quarter view looking out past the entrance with barely any emotional response. One coherent gloved hand holds a plain billhook shaft vertically at his side, blade visible but not a focal threat; the other hand rests naturally on his belt. In the RIGHT rear two ordinary living adult soldiers, loosely painted and much smaller, walk through a real doorway into the barracks, turned away from him. He remains stationed at the threshold while others leave. A low stone bench, wet paving and a discarded folded cloth are enough setting. No quartermaster refitting his armor and no recreation of the reference composition. One soft cold daylight source through the open gate, from upper right, gives a small pale highlight to his face and broken reflections on iron. The receding room stays in quiet brown shadow, no competing orange stage light. Related ash, muted olive, deep brown and iron tones with a faint worn oxblood leather detail. Matte face and cloth, restrained old scars, ordinary scale and dignity under coercion. No glowing eyes, rot, bolts, stitches, skull ornaments, new scars, glamour or heroic stance.",
+      "kind": "new_scene",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png",
+      "prompt": "Use case: stylized-concept.\nMake one NEW finished Breachline fantasy painting, landscape 1536 x 1024.\nThe supplied picture is ONLY the named character's identity/anatomy/clothing reference. Invent the new scene and composition described below; do not reproduce the reference staging.\nShared painting treatment: traditional oil and acrylic with measured visible brushwork and deliberate painted shapes. Give the face specific, believable matte planes, natural expression and selective detail; cloth, skin, wood and stone have different surfaces. Fine modelling at the face and essential gesture, broader marks and quieter edges elsewhere. No thick icing-like skin texture, photoreal finish, CGI, animation-film polish or generic heroic beauty.\nLighting must describe the actual space: one dominant source with a clear direction, related light and shadow colours and believable occlusion. Retain beautiful local colour and a few lively accents. Let faces fall into shadow when the source is behind them. Avoid indiscriminate gold rims, spotlit faces, blue-orange grading, luminous effects used as decoration and uniform desaturation.\nThe scene should read from gaze, bodily effort, contact and location without a title explaining it. Human-scale emotion and physical stakes can be dramatic. Keep ordinary scale, clear anatomy, coherent equipment, real paths and contact. Backgrounds form a few broad legible shapes. All people are adults. No text, letters, numbers, logos, signature, frame, interface, rules or new species traits.\nSCENE: Veyr, the made man at center in the reference, with the SAME ordinary compact build, broad hollow face, short dark hair, cold grey pallor, distant natural eyes and only the existing thin healed throat scar. Preserve the worn iron breastplate over dark padded cloth and plain leather closures. NEW eye-level three-quarter painting at a gatehouse at the end of a wet day. Veyr fills the LEFT half, still and upright beside the gatepost, his face in three-quarter view looking out past the entrance with barely any emotional response. One coherent gloved hand holds a plain billhook shaft vertically at his side, blade visible but not a focal threat; the other hand rests naturally on his belt. In the RIGHT rear two ordinary living adult soldiers, loosely painted and much smaller, walk through a real doorway into the barracks, turned away from him. He remains stationed at the threshold while others leave. A low stone bench, wet paving and a discarded folded cloth are enough setting. No quartermaster refitting his armor and no recreation of the reference composition. One soft cold daylight source through the open gate, from upper right, gives a small pale highlight to his face and broken reflections on iron. The receding room stays in quiet brown shadow, no competing orange stage light. Related ash, muted olive, deep brown and iron tones with a faint worn oxblood leather detail. Matte face and cloth, restrained old scars, ordinary scale and dignity under coercion. No glowing eyes, rot, bolts, stitches, skull ornaments, new scars, glamour or heroic stance.",
+      "status": "proposal_pending_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-593b15f3-781c-480e-b192-5a1f5d44772c.png",
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "659ed5c45107c5b905a826ac8c1ae5cea8948b0fc3f5011bfa9add2227e0a53b",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87"
+      },
+      "reference_role": "Identity/anatomy/clothing only; new composition",
+      "former_file": "a4-dominion-the-watch-continues.png"
+    },
+    {
+      "code": "A5",
+      "alignment": "Genesis",
+      "title": "Before the Gate Closes",
+      "character": "Hessa",
+      "file": null,
+      "source": "s3-hessas-winter-door.png",
+      "summary": "Hessa seats a heavy crossbar across her town’s gate while a neighbour holds the gate leaf shut. The enclosing timber, visible courtyard and coordinated work make her role as a defender part of the place.",
+      "intent": "Ground the drama in protecting a home, with gaze and physical effort directed at a clear task.",
+      "scene": "Hessa, the same lean adult Moor woman from the reference: high cheekbones and narrow projecting nose, tawny-grey cheek fur and continuous shoulder ruff, long hands and limbs, moss wool tunic, simple belt, practical trousers. Add her modest quilted protective vest as in a working town defender; no large armor. NEW medium-close view from WITHIN a small timber gatehouse overlooking a moorland settlement. Hessa fills CENTER-RIGHT, turned toward LEFT and using BOTH long-fingered hands to slide a solid chest-height wooden crossbar through real iron brackets across a nearly shut gate. Show the bar entering the bracket and the gate's hinge/post connections plainly. Her shoulders engage with its weight and her eyes follow the receiving bracket, no distant vacant gaze. At far LEFT one secondary adult Moor neighbor holds the gate leaf closed with shoulder and one visible hand, body partly cropped. One ordinary spear rests securely against the inner wall rather than occupying an extra hand. Through the open SIDE of the gatehouse at the right rear, the connected short timber walkway and a few occupied houses clearly belong inside the enclosure. The place she protects is physically attached to this gate, not a scenic village pasted into the distance. A narrow gap under the gate reveals the outside road; tension is preparation, no attacker needed on screen. One low afternoon daylight source from the outside opening on the LEFT catches the near edges of timber, hands and a few fur locks; Hessa's face receives believable modest reflected light from the pale inner wood, never brighter than the opening. Retain russet fur, dark moss wool, damp grey timber and a little ochre in the walls. Gentle related shadows and rich local colour, not bright amber light over everything. Measured painted forms, quiet background. No giant roots, vines, magic aura, flowers, goddess pose or theatrical sky.",
+      "kind": "new_scene",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png",
+      "prompt": "Use case: stylized-concept.\nMake one NEW finished Breachline fantasy painting, landscape 1536 x 1024.\nThe supplied picture is ONLY the named character's identity/anatomy/clothing reference. Invent the new scene and composition described below; do not reproduce the reference staging.\nShared painting treatment: traditional oil and acrylic with measured visible brushwork and deliberate painted shapes. Give the face specific, believable matte planes, natural expression and selective detail; cloth, skin, wood and stone have different surfaces. Fine modelling at the face and essential gesture, broader marks and quieter edges elsewhere. No thick icing-like skin texture, photoreal finish, CGI, animation-film polish or generic heroic beauty.\nLighting must describe the actual space: one dominant source with a clear direction, related light and shadow colours and believable occlusion. Retain beautiful local colour and a few lively accents. Let faces fall into shadow when the source is behind them. Avoid indiscriminate gold rims, spotlit faces, blue-orange grading, luminous effects used as decoration and uniform desaturation.\nThe scene should read from gaze, bodily effort, contact and location without a title explaining it. Human-scale emotion and physical stakes can be dramatic. Keep ordinary scale, clear anatomy, coherent equipment, real paths and contact. Backgrounds form a few broad legible shapes. All people are adults. No text, letters, numbers, logos, signature, frame, interface, rules or new species traits.\nSCENE: Hessa, the same lean adult Moor woman from the reference: high cheekbones and narrow projecting nose, tawny-grey cheek fur and continuous shoulder ruff, long hands and limbs, moss wool tunic, simple belt, practical trousers. Add her modest quilted protective vest as in a working town defender; no large armor. NEW medium-close view from WITHIN a small timber gatehouse overlooking a moorland settlement. Hessa fills CENTER-RIGHT, turned toward LEFT and using BOTH long-fingered hands to slide a solid chest-height wooden crossbar through real iron brackets across a nearly shut gate. Show the bar entering the bracket and the gate's hinge/post connections plainly. Her shoulders engage with its weight and her eyes follow the receiving bracket, no distant vacant gaze. At far LEFT one secondary adult Moor neighbor holds the gate leaf closed with shoulder and one visible hand, body partly cropped. One ordinary spear rests securely against the inner wall rather than occupying an extra hand. Through the open SIDE of the gatehouse at the right rear, the connected short timber walkway and a few occupied houses clearly belong inside the enclosure. The place she protects is physically attached to this gate, not a scenic village pasted into the distance. A narrow gap under the gate reveals the outside road; tension is preparation, no attacker needed on screen. One low afternoon daylight source from the outside opening on the LEFT catches the near edges of timber, hands and a few fur locks; Hessa's face receives believable modest reflected light from the pale inner wood, never brighter than the opening. Retain russet fur, dark moss wool, damp grey timber and a little ochre in the walls. Gentle related shadows and rich local colour, not bright amber light over everything. Measured painted forms, quiet background. No giant roots, vines, magic aura, flowers, goddess pose or theatrical sky.",
+      "status": "proposal_pending_creator_review",
+      "generated_source": null,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "703f3b53739ae245eb300dc83b130cc91e92ace8bd9827c9218b7f61de890a65",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9"
+      },
+      "reference_role": "Identity/anatomy/clothing only; new composition",
+      "deleted_file": "a5-genesis-before-the-gate-closes.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c53d755a-bd9a-45fe-892a-4a5d2974e9cf.png"
+    },
+    {
+      "code": "S1-L2",
+      "alignment": "Vigil",
+      "title": "Oren — light through the membranes",
+      "character": "Oren",
+      "kind": "targeted_lighting_edit",
+      "source": "s1-oren-at-the-broken-span.png",
+      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png",
+      "file": null,
+      "status": "lighting_test_pending_creator_review",
+      "summary": "A separate correction of the original S1 keeps the composition and restores lively transmitted colour in the membranes, while leaving the face and front of the torso in shadow. This tests the creator’s explicit backlighting idea; it does not finalize Oren’s character design.",
+      "intent": "Directional backlight with warm translucent membranes and a substantially darker face.",
+      "prompt": "Use case: lighting-weather. The supplied picture is the EDIT TARGET: original S1, Oren at the Broken Span. Keep this exact composition, camera, crop, elderly Kitefolk identity and angular nose, expression, stance, limbs, elongated fingers, membrane shapes, hair, clothing, pouch, bridge, distant settlement and gorge.\nChange ONLY the LIGHTING to the creator's specific correction: strong beautiful sunlight comes from BEHIND the figure, high in the rear/right of the picture, and shines THROUGH the thin mottled wing membranes. Their translucent panels hold rich amber/rust colour and visible mottling; opaque supporting fingers and thicker parts cast real small shadows within the membranes.\nCrucial: Oren's FACE and FRONT of torso/arms are on the SHADOW SIDE. Paint his face substantially darker, cooler and less illuminated than the membranes. Keep only faint reflected daylight sufficient to read the expression. A narrow rim on the rear of hair or nose edge can catch the light where physically correct, but NO golden frontal light, no face spotlight and no bright warm shine across his cheek, forehead, chest or forward arm. The face must visibly belong to the side turned away from the sun. The whole gorge and bridge obey that same single light direction. Keep the beautiful original warm/cool colour and a luminous opening behind him, without adding a second front light or universally flattening the painting.\nPreserve traditional oil/acrylic brushwork, anatomy, surfaces, objects and all scene geometry closely. No new design, pose, equipment, people, mist veil, text, labels or border. Same 1536 x 1024 landscape painting. This is a targeted correction of illumination, not a new character.",
+      "generated_source": null,
+      "generation_mode": "built-in image_gen",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1801ee3a1f278b8bd1a8f407f70178bad67b81f5e7ea981a91cba7aa78f42415",
+      "reference_sha256": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1"
+      },
+      "reference_role": "Lighting edit target; preserve original composition and character",
+      "deleted_file": "s1-oren-directional-backlight-v3.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-a89070e1-4754-4b92-a4db-8aea7b35a1ce.png"
+    }
+  ],
+  "visual_qa": {
+    "overall": "All six generated outputs visually inspected for connected anatomy, purposeful gaze/contact, material/light treatment and continuity. All are landscape 1536x1024.",
+    "A1": "Brann's stable crouch, traveller's raised step and supporting forearm grip form a legible assist. The ferry, tied rope and wet stair locate the action.",
+    "A2": "Tavra's sword meets the incoming spear close to the cart; off-hand and cart support her balance. Light and local colour remain contained.",
+    "A3": "Chisel tip, groove, mallet and gaze converge on actual stonework. Head/arm crests and indigo kit retained; foreground has a clear working contact.",
+    "A4": "Veyr retains the restrained old throat scar and ordinary scale; two soldiers leaving provide a quiet contrast with his continued watch. Metal highlights are localized.",
+    "A5": "Hessa grips and seats a crossbar while a neighbor holds the gate, with connected town structures visible. Hand and bar contact reads clearly.",
+    "S1_L2": "Original pose/composition closely preserved. Membranes carry warm transmitted light; face/front of body substantially darker. Character appeal remains for creator judgment."
+  },
+  "skills_used": [
+    ".claude/skills/art-direction/SKILL.md",
+    "/Users/dpuser/.codex/skills/.system/imagegen/SKILL.md"
+  ],
+  "selection_guide_revision": 185,
+  "art_direction_sha256_at_generation": "21e5770f9402bd0351a74855e6396296981b71274dae9f7499803cac631d38a4",
+  "originals_preserved_sha256": {
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s2-sera-in-the-lamplit-court.png": "f10493419255713e6bf84f3e96672f8835186195fdf73c2e1769613f5d87acf5",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain.png": "fe6890a8891afd82b2ba242d36eeb5b0fc6b7f6289bde21ac3ce9066809df427",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch.png": "210ea153448ead9332fcc31941f1529d8b1bc78bc8ab66333956dd7ecb32e570",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c1-oren-spanrunner.png": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c2-shelter-the-crossing.png": "7761e0aa5f210ed6f2212427d5e9777d2a894caa53042260594ebf056cb56257",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c3-sera-deep-court-reader.png": "b09d763c022a41b33df87617a9e75d9f415e55f8e6061db23d4e43cf1d969294",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c4-give-the-stone-a-path.png": "5795783720dadccb0b603e32ce89c8c00dbbeeec44ee93371756633664d2bcad",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c5-veyr-twice-mustered.png": "dd29b19829863d9c8e0ad73819e56ef18a1b74618cadd33759044dce90ced6f4",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c6-another-service.png": "9949ab223e29c3a38a0c26e174954221eaff2b675421d89dacadb77d52d0aa7f",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c7-tavra-salt-road-duelist.png": "8bb638610dcf9ed9287110c80ffe432ce9f55ea1b4bfcd0dbe2b027f1b856ef0",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c8-break-the-weather.png": "9e822cd3ded9f494d3c9d44ba067926da71b808c2cc810ccd7a54129c66a0181",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c9-hessa-doorwarden.png": "5a4cb17231a517acadd5ad53a1f84cd34fcb7cce373a1f15a4087aed8d50e14c",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c10-earth-keeps-the-door.png": "c0143db02b502da6fef0671aa492c814d8d3e09bb00081f49bdace7a0eeddd59",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span-lighting-v2.png": "d0ed3c6e37f8d14250d99e9c2489d409507e4deddaf998086078c8db26ba7ca5",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png": "27d7a9d6ec2ea79184d9e4214b57aaa7707b2ce562e0696b79f70e5f98a2cf28",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch-lighting-v2.png": "e30a7e3e6602712b73db37f874a38bc3336f0b53c14a4af83c441a1ec67d1f43"
+  }
+}

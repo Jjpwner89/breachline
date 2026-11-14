@@ -21,10 +21,6 @@
 .starthead .btn:first-child { justify-self: start; }
 .starthead .btn:last-child { justify-self: end; }
 .start #begin { position: sticky; bottom: 0; flex: none; }
-.deck[disabled] { cursor: not-allowed; }
-.deck[disabled]:hover { transform: none; }
-.deck[disabled] .pic img { filter: grayscale(.8) brightness(.6); }
-.deck[disabled] .ds { font-weight: 700; }
 
 /* Main menu */
 /* Home screen: a quiet battlefield at dusk with the gold strand across the sky. The painting holds still while the light moves: a slow push in, the strand breathing and a glint running along it, thin haze and a little ash. */
@@ -106,6 +102,9 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .dview { max-width: 820px; }
 .dview .hint { display: block; margin-top: 6px; font: 400 15px/1.35 var(--body); }
 .dview .csym { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
+/* Exhibition uses the same deck cards, a little smaller so both rows fit more to a line. */
+#start .dtiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px 12px; }
+#start .dtiles .dcard { max-width: 210px; }
 @media (max-width: 820px) { .dtiles:has(.dcard) { grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 12px 10px; } }
 @media (prefers-reduced-motion: reduce) { .dflip, .dfront { transition: none; } }
 
@@ -151,6 +150,12 @@ button.dtile:hover:not([disabled]) { border-color: var(--gold); }
 .filters.shut .ftoggle::before, .frow.shut .flabel::before { transform: rotate(-45deg); }
 .fpicked { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 13px; color: var(--gold-pale); }
 .fpicked:empty { display: none; }
+/* Sorting the pool: one chip per order, and a chip that flips the direction. */
+.fsort { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.fsort .flabel { flex: none; min-height: 0; margin-right: 2px; cursor: default; }
+.fsort .flabel::before { display: none; }
+.fsort .flabel:hover { color: var(--muted); }
+.fsort .fdir { margin-left: 4px; }
 .fcount { margin-left: auto; font: 13px var(--body); color: var(--muted); font-variant-numeric: tabular-nums; }
 .linkbtn { background: none; border: 0; padding: 0 2px; color: var(--gold-pale); text-decoration: underline; font-size: 13px; }
 .fsearch { display: flex; flex: 1 1 200px; max-width: 340px; }
@@ -255,7 +260,7 @@ button.mnode:not([disabled]):hover .seal { filter: brightness(1.08); }
 /* Prestige: a gold tag on a prestige run's title, and a small gold gem on a campaign beaten on prestige. */
 .pmark { display: inline-block; margin-left: 8px; padding: 1px 9px; vertical-align: 4px; border: 1px solid var(--gold-pale); border-radius: 3px; background: linear-gradient(#6f5518, #3b2c18); color: var(--gold-pale); font: 700 14px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; }
 .pbadge { display: inline-block; width: 8px; height: 8px; margin-left: 5px; transform: rotate(45deg); background: linear-gradient(135deg, #ffe7a0, #c08a2a); border: 1px solid rgba(0, 0, 0, .6); box-shadow: 0 0 4px rgba(255, 210, 120, .8); }
-.cwho { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.cwho { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
 .cleave { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .rdeck { overflow: visible; flex: none; }
 .rdeck .card { flex: none; }

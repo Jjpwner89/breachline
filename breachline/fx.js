@@ -240,7 +240,8 @@ var SpellFX = (function () {
   // repainted along a ramp of colours, darkest first, keeping the sheet's own transparency.
   var TINTS = {
     'gale-storm': ['storm', ['#2a0410', '#9c1230', '#ff3d3a', '#ff9a52', '#fff3e0']],
-    'gale-frost': ['frost', ['#3a1206', '#b8461a', '#ff9a3c', '#ffd27a', '#fffaf0']]
+    'gale-frost': ['frost', ['#3a1206', '#b8461a', '#ff9a3c', '#ffd27a', '#fffaf0']],
+    'wild-storm': ['storm', ['#061a08', '#226b1e', '#5fbf3c', '#bdf08a', '#f4ffe6']]
   };
   function tinted(name) {
     var t = TINTS[name], im = t && sheets[t[0]];
@@ -360,6 +361,8 @@ var SpellFX = (function () {
     blight: { family: 'blight', core: '#e2ccff', glow: '#8a5bb5', deep: '#5a2f80', smoke: '#140a1c', size: 11 },
     holy: { family: 'holy', core: '#fffaf0', glow: '#ffd77a', deep: '#ffb53d', smoke: '#fff0c8', size: 11 },
     // Scatter the line: the storm and frost bursts turned scarlet and amber, with a gust that drives the row back.
+    // The moor keeps its own: the storm's strike in Genesis green.
+    wild: { family: 'wild-storm', core: '#f2ffe2', glow: '#7cd64a', deep: '#3f9a2c', smoke: '#13230e', size: 11 },
     gale: { family: 'gale-storm', also: 'gale-frost', core: '#fff0e0', glow: '#ff5a3c', deep: '#d01e3a', smoke: '#2a0e12', size: 11 },
     // Gnosis has no painted sheet: a cold sea-blue light with a turning sigil, that lands in rings.
     arcane: { core: '#e8ffff', glow: '#3fd6e0', deep: '#1a7fb8', smoke: '#06222c', size: 11 }
@@ -378,7 +381,7 @@ var SpellFX = (function () {
       if (kind === 'burn') {
         spawn({ kind: 'glow', x: x + rnd(-4, 4), y: y + rnd(-4, 4), vx: rnd(-30, 30), vy: rnd(-60, 0), size: rnd(8, 15), col: Math.random() < .5 ? L.glow : L.deep, life: rnd(.25, .45), grav: -120 });
         if (Math.random() < .5) spawn({ kind: 'smoke', x: x, y: y, vx: rnd(-20, 20), vy: rnd(-40, -10), size: rnd(4, 7), col: L.smoke, life: rnd(.5, .8), alpha: .7 });
-      } else if (kind === 'charge') spawn({ kind: 'spark', x: x, y: y, vx: rnd(-160, 160), vy: rnd(-160, 160), size: 1.6, col: Math.random() < .5 ? '#ffffff' : L.glow, life: rnd(.12, .25), drag: 4 });
+      } else if (kind === 'charge' || kind === 'wild') spawn({ kind: 'spark', x: x, y: y, vx: rnd(-160, 160), vy: rnd(-160, 160), size: 1.6, col: Math.random() < .5 ? '#ffffff' : L.glow, life: rnd(.12, .25), drag: 4 });
       else if (kind === 'frost') {
         if (Math.random() < .6) spawn({ kind: 'shard', x: x + rnd(-5, 5), y: y + rnd(-5, 5), vx: rnd(-25, 25), vy: rnd(-10, 30), size: rnd(2.5, 4.5), col: '#dff2ff', life: rnd(.35, .6), grav: 60 });
         spawn({ kind: 'glow', x: x, y: y, vx: 0, vy: 0, size: rnd(6, 10), col: L.glow, life: .3 });
@@ -438,7 +441,7 @@ var SpellFX = (function () {
         if (!this.p) return;
         var s = L.size * sc * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
         glow(x, y, s * 3.4, L.glow, 0.85); glow(x, y, s * 1.7, L.deep, 0.9); glow(x, y, s * (kind === 'thorns' ? 0.7 : 1.05), L.core, 1);
-        if (kind === 'charge' && Math.random() < .6) bolt({ x: x, y: y }, { x: x + rnd(-28, 28), y: y + rnd(-28, 28) }, L.glow, 90, 7);
+        if ((kind === 'charge' || kind === 'wild') && Math.random() < .6) bolt({ x: x, y: y }, { x: x + rnd(-28, 28), y: y + rnd(-28, 28) }, L.glow, 90, 7);
       }, over: function () {
         if (!this.p) return;
         var s = L.size * sc * (1 + 0.55 * this.h / H), x = this.p.x, y = this.p.y;
@@ -574,7 +577,7 @@ var SpellFX = (function () {
   function impact(kind, b) {
     var L = LOOK[kind], x = b.x, y = b.y;
     hitStop(kind === 'holy' ? 40 : 75);
-    shake(kind === 'charge' || kind === 'gale' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
+    shake(kind === 'charge' || kind === 'wild' || kind === 'gale' ? 10 : kind === 'holy' ? 4 : kind === 'blight' ? 6 : 8);
     // With a painted sheet, the code-drawn centrepiece (vines, rot pool, crystals) steps aside; sparks, debris and light stay.
     var painted = paint(L, b);
     if (kind === 'blight') {
@@ -590,7 +593,7 @@ var SpellFX = (function () {
       burst(x, y, 46, [140, 460], function () { return { kind: 'spark', size: rnd(1.4, 2.6), col: Math.random() < .5 ? '#ffd27a' : L.glow, life: rnd(.35, .7), grav: 700, drag: 1.2 }; });
       burst(x, y, 14, [30, 110], function () { return { kind: 'smoke', size: rnd(8, 14), col: L.smoke, life: rnd(.8, 1.3), grav: -40, drag: 2, alpha: .75 }; });
       burst(x, y, 16, [20, 80], function () { return { kind: 'glow', size: rnd(12, 22), col: Math.random() < .5 ? L.glow : L.deep, life: rnd(.4, .7), grav: -90, drag: 2 }; });
-    } else if (kind === 'charge') {
+    } else if (kind === 'charge' || kind === 'wild') {
       for (var i = 0; i < 5; i++) bolt({ x: x + rnd(-b.w * .4, b.w * .4), y: b.t - rnd(30, 120) }, { x: x + rnd(-8, 8), y: y + rnd(-8, 8) }, L.glow, 380, 22);
       burst(x, y, 40, [160, 520], function () { return { kind: 'spark', size: rnd(1.2, 2.2), col: Math.random() < .5 ? '#ffffff' : L.glow, life: rnd(.2, .45), drag: 3 }; });
     } else if (kind === 'frost') {
@@ -624,7 +627,7 @@ var SpellFX = (function () {
   // The spell carries on from where it landed to each other tile it affects.
   function travel(from, to, kind, ms) {
     var L = LOOK[kind];
-    if (kind === 'charge' || kind === 'gale') { bolt(from, to, L.glow, 340, 16); return wait(80); }
+    if (kind === 'charge' || kind === 'wild' || kind === 'gale') { bolt(from, to, L.glow, 340, 16); return wait(80); }
     return new Promise(function (ok) {
       actor({ update: function (dt) {
         this.t += dt * 1000;

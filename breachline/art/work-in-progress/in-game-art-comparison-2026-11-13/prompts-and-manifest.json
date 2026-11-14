@@ -1,0 +1,596 @@
+{
+  "status": "Eight unreviewed revisions; originals retained; no live game replacement",
+  "common_approach": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.",
+  "jobs": [
+    {
+      "code": "IG1",
+      "slug": "oath-sentinel",
+      "title": "Oath sentinel",
+      "alignment": "Vigil",
+      "card_ids": [
+        "sentinel"
+      ],
+      "rank": {
+        "id": "f70e70f2d10507637ffa",
+        "title": "Oath sentinel",
+        "path": "oath-sentinel.png",
+        "rating": 988,
+        "comparisons": 1,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "The Vigil group is broadly liked, but Oath sentinel is the least liked in that group; the reason is not specified. Do not invent a general rule from that preference.",
+          "source": ".claude/skills/art-direction/HISTORY.md:472",
+          "praise": false,
+          "strong": false
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "110a0f0f-ca11-4d54-874b-939250fea0b1",
+          "at": "2026-11-11T04:54:01.118711+00:00",
+          "opponent": "Debt Collector's Blade",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-sentinel.png",
+          "sha256": "0f7d57ec7c076c64859d4a794184e969689fdef1f4159a6db6faec0375c07c2e",
+          "bytes": 2663957
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/oath-sentinel.jpg",
+          "sha256": "88277b44290487bad52285cbad46875020265001e8244bce5a6248b029d5b133",
+          "bytes": 147415
+        }
+      },
+      "category": "Explicit reservation",
+      "selection_note": "Least-liked in its Vigil group; no reason recorded.",
+      "revision_aim": "Keep his calm presence and equipment. Test simpler paint, a clearer light direction and fewer competing highlights.",
+      "original": "../../oath-sentinel.png",
+      "live_snapshot": "../../web/oath-sentinel.jpg",
+      "revised": "revisions/oath-sentinel-r1.png",
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nOATH SENTINEL: Keep exactly this sturdy Black man in his fifties, close grey curls and beard, full-body three-quarter rear view, ivory quilted armour with worn steel plates, sheathed sword, tall ivory shield with its gold sun, square planted shield base, hand resting on shield and calm reassuring glance over his shoulder. Retain the wall, a little autumn foliage upper left, pale blue sky and grassy stone ground. No new bystander, cape or extra weapon. The man is the subject, not an illustration of a task.\nREPAINT: a warm late-afternoon sun comes from upper image-left and behind his shoulder. Let it touch the upward-facing shoulder steel, some shield rim and autumn leaves; leave the face and front of the shield in a connected, soft but readable cooler reflected-light shadow. Natural dark-brown facial colour, not orange gloss. Steel can gleam in two or three small accents, while ivory quilting remains cloth and the shield face remains weathered matte paint. Warm ochre leaves and gold sun emblem retain colour. Simplify the wall into a few broad stone masses, the sky into quiet blue and apricot glazes, ground into a few coherent planes. Remove the myriad sparkly contour highlights and repetitive tiny crack detail. Keep the whole figure, grounded boots and shield in the same frame. Quiet warmth, character and assured physical presence.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-sentinel.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-122577cc-3e7b-4e6a-ab9d-bcb0064e515f.png",
+      "revision_sha256": "25c5ca2507e88551266af2110e586af2eaadd4b2f98453c81b86b3632b09b6b6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "The face, shield and armour now share a larger shadow shape. Light is concentrated on the upper-left shoulder and foliage; the ground and wall carry fewer small highlights.",
+      "tradeoff": "Does his face still hold enough interest at card size, or did the original's brighter finish help?",
+      "former_original": "originals/oath-sentinel.png",
+      "former_live_snapshot": "originals/oath-sentinel-live.jpg"
+    },
+    {
+      "code": "IG2",
+      "slug": "harmonic-burst",
+      "title": "Harmonic burst",
+      "alignment": "Gnosis",
+      "card_ids": [
+        "harmonic"
+      ],
+      "rank": {
+        "id": "7bf47f69c2030cb9b92d",
+        "title": "Harmonic burst",
+        "path": "harmonic-burst.png",
+        "rating": 988,
+        "comparisons": 1,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Final, but explicitly not a favorite. Prefer other mechanisms over sound.",
+          "praise": false,
+          "strong": false,
+          "source": "ART_PROMPTS_SET9.json",
+          "batch": 9
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "c9eb7f25-8529-4505-9c6b-a3ccb1d76e41",
+          "at": "2026-11-11T04:54:41.460502+00:00",
+          "opponent": "Rain gathering",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/harmonic-burst.png",
+          "sha256": "281da990caf3baddb0d3398a7705be4bf7e6adb627fd936dc7fce9fe83c0469a",
+          "bytes": 2840923
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/harmonic-burst.jpg",
+          "sha256": "3e4ba9f0e5a1905e1872b4d395a1f011f889a27923b0cbc8c8d14b66a8479b35",
+          "bytes": 218384
+        }
+      },
+      "category": "Explicit reservation",
+      "selection_note": "Finalized, but explicitly “not a favorite.” You preferred other Gnosis mechanisms to sound.",
+      "revision_aim": "Keep the correctly suspended bell. Test a subtler pressure wave and a clearer strike, with a quieter plaza.",
+      "original": "../../harmonic-burst.png",
+      "live_snapshot": "../../web/harmonic-burst.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nHARMONIC BURST: Retain the blue-coated dark-haired adult male Conclave wardwright at left, bronze bell at center, exact plausible two-post braced oak frame with iron straps supporting bell crown FROM ABOVE; mouth hanging freely well clear of cobbles, modest internal clapper; two small secondary male attackers at far right, Ambrel stone plaza/arcade, leaf and paper debris. No new bell design, no lip support stones, no floating frame, no extra apparatus. The bell remains the main object.\nREPAINT: late-morning daylight from upper left, broad calm honey-coloured sun shapes across bronze and stone with coherent muted blue shadows. Let bronze carry a few broad reflected notes; no white starburst on it. Give the wardwright a natural just-struck posture: the mallet lowered a short distance away from the reachable bell side, wrist and forearm visibly connected; gaze toward the disturbance, firmly planted feet. Replace the huge glowing circular neon ring with a discontinuous low translucent refraction through dust and a few lifting leaves/papers, strongest on the far side near the two attackers. Their weight and simple recoiling steps remain believable, not thrown backward theatrically. Retain energy and a little magic without turning the ground into an effect diagram. Simplify cobbles and distant building detail heavily into painted value masses; keep cobalt cloth, burnished bronze and warm stone distinct, avoid a blue/orange blanket filter. Preserve overall camera, scene arrangement and relative scale.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/harmonic-burst.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "445811b1f7b94ced5f24aec5de291cf67cb53615dbe67ab5b59358ab1b5fff79",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "The white pressure ring is gone; dust, paper and the recoiling figures suggest the disturbance. The bronze bell still hangs from its crown in the two-post frame.",
+      "tradeoff": "The subject and most of the staging remain the same. A rendering improvement may not change your opinion of the bell idea.",
+      "former_original": "originals/harmonic-burst.png",
+      "former_live_snapshot": "originals/harmonic-burst-live.jpg",
+      "deleted_revised": "revisions/harmonic-burst-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-f78937c4-81fc-403f-90bf-34f0f99fc5f6.png"
+    },
+    {
+      "code": "IG3",
+      "slug": "cinder-firebrand",
+      "title": "Cinder firebrand",
+      "alignment": "Fervor",
+      "card_ids": [
+        "firebrand"
+      ],
+      "rank": {
+        "id": "9aae9de1824eafbd2017",
+        "title": "Cinder firebrand",
+        "path": "cinder-firebrand.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "321f1746-575f-48cd-862c-639992a943e3",
+          "at": "2026-11-11T04:49:23.626975+00:00",
+          "opponent": "Cinderfall",
+          "won": false
+        },
+        {
+          "event_id": "74829bbf-1677-4b69-b9d4-64a46069ece6",
+          "at": "2026-11-11T04:51:09.940066+00:00",
+          "opponent": "The Rain That Rises",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-firebrand.png",
+          "sha256": "ebd502f5188b28e62124085e4456a71662de3e9b4d946027844454bbaae7f595",
+          "bytes": 2361133
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/cinder-firebrand.jpg",
+          "sha256": "7684a7ffb632e31c4c7990443076e991cae95af51ed86440e5043ddc50a4105f",
+          "bytes": 145036
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep the confident stride, orange fire and indigo night. Test a unified shadow shape and less surface detail.",
+      "original": "../../cinder-firebrand.png",
+      "live_snapshot": "../../web/cinder-firebrand.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nCINDER FIREBRAND: Keep the broad deep-brown-skinned male fighter around 45, close greying beard, heavy axe balanced across his shoulder and held by one hand, other arm hanging, full-body easy stride at image-left, stitched brown leather jack, short mail panel, faded crimson sash, practical mismatched greaves, low burning grass and enormous deep-indigo night. Exactly the same identity, stature, pose, axe and silhouette; no enemies or new action.\nREPAINT: the strongest firelight comes from a low bank of grass at lower image-left. Warm light reaches boot edges, downward-facing sleeve and axe underside; the face and upper chest stay in a readable shared dark shadow with just a soft restrained reflected ember note on the near cheek. No independent beauty light on the face, no full orange outline around every seam. Preserve vivid orange flames against rich indigo and the small crimson sash. The axe edge may catch a narrow hot reflection, but the whole blade is not molten or burning. Simplify scattered fires into a few legible low bands; dark intervals make their light meaningful. Paint skin, leather and grass with broad matte forms, reducing microdetail and uniform speckles. Keep distinct connected legs and the relaxed weight of the continuous wooden axe haft on the shoulder. Calm self-possession amid real low fire; retain this painting's strong drama.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-firebrand.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "dbbdffa5d8820a03459bd1a15ec9cd55e1e2366ec9d2d270d90167cbe0cfe81e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "The face and chest share a darker mass, with the hottest light low on the left. Indigo sky, red cloth and orange fire remain.",
+      "tradeoff": "This is one of the darker revisions. Compare how readily the face and equipment read in the small preview.",
+      "former_original": "originals/cinder-firebrand.png",
+      "former_live_snapshot": "originals/cinder-firebrand-live.jpg",
+      "deleted_revised": "revisions/cinder-firebrand-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-3c52ab86-d46a-4fd7-8198-947275596044.png"
+    },
+    {
+      "code": "IG4",
+      "slug": "anoint-with-embers",
+      "title": "Anoint with embers",
+      "alignment": "Fervor",
+      "card_ids": [
+        "anoint"
+      ],
+      "rank": {
+        "id": "15f05c9cea48a4afbf45",
+        "title": "Anoint with embers",
+        "path": "anoint-with-embers.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Anoint with Embers is really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET10.json",
+          "batch": 10
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "2c5220df-0baf-4c64-a231-70a8cf883981",
+          "at": "2026-11-11T04:49:34.878319+00:00",
+          "opponent": "Cobalt rapier — equipment card",
+          "won": false
+        },
+        {
+          "event_id": "cde3ebb7-78f0-4bc3-b7d3-b760981480e2",
+          "at": "2026-11-11T04:50:21.590638+00:00",
+          "opponent": "Dawnsail Passage",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/anoint-with-embers.png",
+          "sha256": "6c789125b132e3df108c6e411211f2da8f201e9888f151e43e0d7d4434d2da96",
+          "bytes": 2639160
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/anoint-with-embers.jpg",
+          "sha256": "d8ae787952bed730432fb01d2bcbcd823779994688b13de399e0c09c51318e2e",
+          "bytes": 154250
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier called “really good.”",
+      "revision_aim": "Keep the intimate brow contact. Test matte facial planes, natural fire reflections in the eyes and smaller magical accents.",
+      "original": "../../anoint-with-embers.png",
+      "live_snapshot": "../../web/anoint-with-embers.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nANOINT WITH EMBERS: Preserve the exact close two-person composition: dark-brown-skinned older Cinder woman at image-right in profile with grey curls and rust-red haircloth, young brown-skinned male warrior at left, worn iron shoulder plate and charcoal shirt. Preserve individual faces, near-hand thumb pad touching his forehead, connected wrist/elbow, softly curled other fingers, their attentive quiet expressions. No different gesture, extra hand, extra person or new prop.\nREPAINT: one small fire below frame between them is the main warm light. Let its light fall naturally upward onto the undersides of fingers, cheek and chin and fade across upper brows and hair. Keep faces much more matte, built from a few carefully related ochre, warm brown and cool umber planes, no pore texture and no polished skin. Eyes are natural dark eyes with tiny reflected fire glints, NOT glowing orange irises. The ember-ash at the thumb contact is a tiny warm accent with only two faint cooling lines, not electrical lightning across the forehead. Retain intimacy, red cloth and warm skin colour against deep quiet blue-brown shadow. Reserve the brightest mark for actual thumb contact and a restrained metal reflection; no bright edge around every surface, no uniform orange wash. Existing brush contact and face relationship are already meaningful: protect them.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/anoint-with-embers.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "9258f369c16df72ad21dd74581b07016d08200e06e7258bc732ee70fd9c8b81c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "The faces use simpler matte planes and the eyes have smaller fire reflections. The brow contact, cast and close framing remain.",
+      "tradeoff": "Does the reduced surface detail feel more painted, or has it taken away too much facial character?",
+      "former_original": "originals/anoint-with-embers.png",
+      "former_live_snapshot": "originals/anoint-with-embers-live.jpg",
+      "deleted_revised": "revisions/anoint-with-embers-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-90751897-83b2-4194-a730-7e575a440986.png"
+    },
+    {
+      "code": "IG5",
+      "slug": "sanctuary-threshold",
+      "title": "Sanctuary Threshold",
+      "alignment": "Vigil",
+      "card_ids": [
+        "sanctuary"
+      ],
+      "rank": {
+        "id": "4dbf0132003586450549",
+        "title": "Sanctuary Threshold",
+        "path": "sanctuary-threshold.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "Liked, including the arrows on the ground.",
+          "praise": true,
+          "strong": false,
+          "source": null,
+          "batch": null
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "855b1f3b-28e2-4860-8875-0b431fd48d03",
+          "at": "2026-11-11T04:49:37.038932+00:00",
+          "opponent": "Unmake the Pattern",
+          "won": false
+        },
+        {
+          "event_id": "6f46c4ee-5cdb-4661-a001-deb9f89f9c6b",
+          "at": "2026-11-11T04:50:45.435497+00:00",
+          "opponent": "Copper Street Locksmith",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/sanctuary-threshold.png",
+          "sha256": "75b943775b75eb860054c78d063600956efe1b877ba72e870900fe6c1d0f32bc",
+          "bytes": 2833131
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/sanctuary-threshold.jpg",
+          "sha256": "67f01bb18dacd580b6fe0cd5462e187db0a53cc0a40d8fd2b7f0949102d8b646",
+          "bytes": 147029
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier liked, specifically including its fallen arrows.",
+      "revision_aim": "Keep the refuge, blanket, copper bowl and arrows. Test a localized lantern pool and quieter wet-stone reflections.",
+      "original": "../../sanctuary-threshold.png",
+      "live_snapshot": "../../web/sanctuary-threshold.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nSANCTUARY THRESHOLD: Preserve this exact low viewpoint across a plain stone doorway: THREE fallen arrows outside on wet cobbles, blanket and small copper bowl inside at right, lantern on the stone ledge upper right, traveller's two lower legs stepping away inside at upper left, thin unobtrusive amber protective trace across the threshold. No face, no cathedral, no new person, no extra magic. Arrows are a specifically liked detail and must stay readable and physically intact.\nREPAINT: the lantern is a single modest warm light, strongest close to its glass and the nearby blanket edge, diminishing naturally across the dry interior floor. Cool blue-grey diffuse rainy daylight outside; warm reflections only where the puddle reflects the lantern through the doorway, not sparkling on every wet stone. Strongest local accents are copper rim, lantern glass and a small amber water reflection. Wool is thick matte ivory with muted rust stripes; masonry is matte. Reduce the luminous boundary to a hair-thin nearly transparent trace and a small physical diversion of rain at the sill. Retain warm/cool colour and welcoming refuge without huge orange flooding or harsh separation into two colour filters. Simplify ground into connected wet planes, use just a few ripples and rain strokes. Preserve the original arrangement and all three arrows; let quiet material, light and traces of danger carry the scene.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/sanctuary-threshold.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "f3a90731d2470bcde6d228832fd510ae13830343746f643985af2ea93bb12232",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "Lantern light falls off across the floor; wet-stone reflections are fewer. All three arrows, the blanket, bowl and traveller remain.",
+      "tradeoff": "The quieter light also makes the refuge less radiant. Judge that change separately from material quality.",
+      "former_original": "originals/sanctuary-threshold.png",
+      "former_live_snapshot": "originals/sanctuary-threshold-live.jpg",
+      "deleted_revised": "revisions/sanctuary-threshold-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-0fef2416-9432-46dd-81da-1e49577fd1e7.png"
+    },
+    {
+      "code": "IG6",
+      "slug": "hurled-brand",
+      "title": "Hurled brand",
+      "alignment": "Fervor",
+      "card_ids": [
+        "hurledbrand"
+      ],
+      "rank": {
+        "id": "213ad1baa1c560ec5d55",
+        "title": "Hurled brand",
+        "path": "hurled-brand.png",
+        "rating": 976,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "648b17ad-9ee8-4c20-8857-41865b922a4c",
+          "at": "2026-11-11T04:50:04.372742+00:00",
+          "opponent": "Roof glider",
+          "won": false
+        },
+        {
+          "event_id": "325a16ab-65c3-4e2b-84a4-f5ba6066b59b",
+          "at": "2026-11-11T04:50:43.932610+00:00",
+          "opponent": "Collect the tithe",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/hurled-brand.png",
+          "sha256": "0dbe2bf79054f55f88dd2c30d8bad26ced77fbebc9e453c9c4a05438e0428151",
+          "bytes": 2438545
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/hurled-brand.jpg",
+          "sha256": "455f9cbea6d05cb9142cce291cfe22279271f4c281a3704a6adbbb482da40cab",
+          "bytes": 156279
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep the forceful throw and red dusk. Test a darker figure against the sky and fire limited to the brand.",
+      "original": "../../hurled-brand.png",
+      "live_snapshot": "../../web/hurled-brand.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nHURLED BRAND: Preserve the same full-body side-view adult male Cinder fighter at image-left, weathered olive skin, tied-back dark hair, irregular nose, worn patched leather and iron shoulder, faded red sash. Keep his forceful release toward image-right, one burning wooden brand airborne above the palisade at upper right, opposite arm balancing behind, planted front boot and pivoting rear foot. Keep the continuous two-arm two-leg anatomy, timber palisade and red dusk. Target stays outside frame. No new explosion, combatant or prop.\nREPAINT: place the dusk's red-orange light on the low horizon behind him. Keep the vivid red sky concentrated around that horizon, graduating to quieter deep plum/slate higher up, with broad painted cloud shapes. His near face and torso are primarily in the same cool dusk shadow; only sky-facing planes and a few back edges receive warm light. The airborne brand is small and provides LOCAL light and a short spark trail, not an all-over orange wash on a distant body. Matte olive skin and leather, small steel highlight, darker timber. Retain the energetic throw and clear gap between hand and brand, but bring the entire figure into one coherent shadow mass so the gesture reads against the sky. Simplify the ground and palisade grain; no flattened or grey scene, no extra studio front light.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/hurled-brand.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "ed181e5cc09c87588a3593f879ca9fc3b00706a28aba031d0d2f91707f374835",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "The figure and palisade are darker against a concentrated red sunset. The throw and airborne brand remain clear.",
+      "tradeoff": "The silhouette is stronger, while clothing and facial detail are less visible. Decide which balance you prefer.",
+      "former_original": "originals/hurled-brand.png",
+      "former_live_snapshot": "originals/hurled-brand-live.jpg",
+      "deleted_revised": "revisions/hurled-brand-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-daca3ddd-c081-485d-9a87-03adf1eab00f.png"
+    },
+    {
+      "code": "IG7",
+      "slug": "alderkin-elder",
+      "title": "Alderkin elder",
+      "alignment": "Genesis",
+      "card_ids": [
+        "alderelder"
+      ],
+      "rank": {
+        "id": "c65f201bb328c773c22b",
+        "title": "Alderkin elder",
+        "path": "alderkin-elder.png",
+        "rating": 976.4143005863771,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "The Alderkin Elder is good too.",
+          "praise": true,
+          "strong": false,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "78fefe4e-1a8c-413c-a0d9-89d34a575fa2",
+          "at": "2026-11-11T04:50:09.112781+00:00",
+          "opponent": "Barrow mark",
+          "won": false
+        },
+        {
+          "event_id": "dbe50a0c-0f0e-4057-81d4-05db3640e872",
+          "at": "2026-11-11T04:51:06.147353+00:00",
+          "opponent": "Black enamel field kit",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/alderkin-elder.png",
+          "sha256": "b93634f5cfc423e784ac28917f583c370ba71f721185b24ae753008931a02cd6",
+          "bytes": 2926183
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/alderkin-elder.jpg",
+          "sha256": "e3b308840f84ad538a129eecda1f3884d50df57d4567c9992bac5f912d76cc46",
+          "bytes": 206792
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier called good.",
+      "revision_aim": "Keep the huge elder, aqueduct and nesting birds. Test simpler bark planes and a clearer gaze toward the stone beneath its hand.",
+      "original": "../../alderkin-elder.png",
+      "live_snapshot": "../../web/alderkin-elder.jpg",
+      "revised": null,
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nALDERKIN ELDER: Keep the ancient enormous six-metre living tree-being on the same continuous ruined Old Empire aqueduct, figure on right, rooted feet grounded on broad walkway, long branching hand touching the carved coping at left, opposite arm hanging, asymmetrical intertwined trunks, sparse crown, grey lichen, deep olive moss, compact nest and SMALL real-sized birds. Keep all the living-tree anatomy and its nonhuman knot-like eyes: no human face, mouth, cute expression or glowing eyes. No humans, helping, gardening or new action. This being has its own purpose.\nREPAINT: soft evening sunlight enters from image-left across the aqueduct. Larger warm planes on the coping and left sides of bark meet larger cool grey-green shadow planes across the trunk; let small areas of lichen catch light, not every bark strip. Increase visual coherence by grouping bark into broad interlocking masses, retaining selective intricate marks near the head and hand contact only. Gently orient the existing head and knot-like gaze toward the stone its fingers actually touch, without changing its species anatomy. Pale apricot sky, blue-green distant valley and rich moss keep colour; simplify all distant trees and stonework into a few atmospheric painted planes. Birds stay quieter than the elder. Keep the original scale, diagonal architecture, grounded root feet and wide composition. No invented labour, action spectacle or magical aura.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/alderkin-elder.png"
+      ],
+      "generated_source": null,
+      "revision_sha256": "778b481cbfce548ebc58a0b3e1a08fcf20074456aae4e6d6f1c3a9f83d307662",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "Bark and valley detail have been grouped into larger painted areas. The existing head is turned more clearly toward the hand on the coping.",
+      "tradeoff": "The simpler head is more readable but may lose some of the original's strange, woody ambiguity.",
+      "former_original": "originals/alderkin-elder.png",
+      "former_live_snapshot": "originals/alderkin-elder-live.jpg",
+      "deleted_revised": "revisions/alderkin-elder-r1.png",
+      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
+      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-1939beff-a749-412f-9874-c0fd3b3b8c9b.png"
+    },
+    {
+      "code": "IG8",
+      "slug": "emberward",
+      "title": "Emberward",
+      "alignment": "Fervor",
+      "card_ids": [
+        "emberward"
+      ],
+      "rank": {
+        "id": "3763d14becc274182af8",
+        "title": "Emberward",
+        "path": "emberward.png",
+        "rating": 976.8276146734439,
+        "comparisons": 2,
+        "wins": 0
+      },
+      "evidence": [
+        {
+          "note": "All Fervor cards in Set 8 are really good.",
+          "praise": true,
+          "strong": true,
+          "source": "ART_PROMPTS_SET8.json",
+          "batch": 8
+        }
+      ],
+      "comparisons": [
+        {
+          "event_id": "8a117019-0e9e-49f0-9658-3d2aa0dc244d",
+          "at": "2026-11-11T04:49:44.655758+00:00",
+          "opponent": "Court Informant",
+          "won": false
+        },
+        {
+          "event_id": "0b67c8c2-f3fe-4da6-98cb-3b751f334415",
+          "at": "2026-11-11T04:51:07.853677+00:00",
+          "opponent": "Withering hex",
+          "won": false
+        }
+      ],
+      "files": {
+        "source": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/emberward.png",
+          "sha256": "a5df64288c30e747d7582f8ee47ea50c4b8a68a4daf4a6ed6059009a6df16fa9",
+          "bytes": 2705969
+        },
+        "live": {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/web/emberward.jpg",
+          "sha256": "6bd639e515a204013016705042d36e8853e6e0127bf2b3b9fe37550e35c99ee8",
+          "bytes": 175645
+        }
+      },
+      "category": "Lowest-ranked group",
+      "selection_note": "Two comparison losses; earlier feedback praised all Fervor cards in Set 8.",
+      "revision_aim": "Keep both people, the ward painting and the young man's distant attention. Test coherent firelight and less detailed skin and cloth.",
+      "original": "../../emberward.png",
+      "live_snapshot": "../../web/emberward.jpg",
+      "revised": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/emberward-r1.png",
+      "prompt": "Use case: style-transfer / lighting-weather. Make a new edited version of the supplied Breachline painting, landscape 1536 x 1024. Image 1 is the ORIGINAL EDIT TARGET and authority for subject identity, anatomy, costume, equipment, scene and composition. Preserve those invariants and the original aspect ratio. This is a considered repaint, not a global filter, not a new character design.\nTraditional oil and acrylic fantasy painting: describe forms with selective, measured strokes rather than smooth photographic anatomy with a texture overlay. Group lights and shadows into coherent larger shapes; deliberately lose some edges in secondary areas. Matte skin, wool, bark, leather and stone; reserve small strong reflections for metal, wet surfaces and glass. Faces retain specific age, skin colour and features without etched wrinkles, pores, oversharpening or uniform grain. Preserve lively local colour and meaningful dramatic contrast; do not desaturate everything or make it generically gloomy. Lighting must reach each plane from a credible source, with shadowed faces allowed to remain in shadow. No omnidirectional rim glow, bloom, studio fill, arbitrary spotlights or equally sharp backgrounds. One compelling scene; no compulsory additional action or people. No text, lettering, border, card frame, signature or watermark.\n\nEMBERWARD: Preserve the two exact people and close scene in the hide tent at night: elderly deep-brown-skinned woman left, grey short twists, rough rust-red cloth, focused on the reed brush; young fair freckled adult man right, short sandy curls and rolled ivory sleeves, both forearms resting on his thighs. Her brush hand touches his nearer forearm and her other hand supports its wrist from below, FOUR connected hands total. His face remains turned toward a distant little orange fire visible through the tent flap; this patient distant gaze is intentional, do not force it to the brush. Preserve forearm pigment patterns and existing props.\nREPAINT: the small brazier at lower left provides the main local light, a soft warm pool around hands and nearest cheek planes that falls off across the man's chest and far arm. Cool night at the opening contributes only very faint ambient colour, never a blue face spotlight. Keep his natural fair complexion and freckles as a few broad notes, her specific face and dark-brown complexion intact, both with matte softly modelled paint instead of pore detail or waxy shine. Simplify hair curls, hide seams and ivory sleeve folds; no equally bright edge on every fold. Brush contact and ember-red lines are restrained warm pigment, not an intense glowing point or magic fissures. Keep crimson, ivory and deep blue distinct, with coherent large shadows linking the figures. Distant fire remains small. A believable intimate moment, not a heroic portrait.",
+      "mode": "built-in imagegen edit; original target only",
+      "referenced_image_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/emberward.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-616fbc72-bfbe-4fdf-8d82-0f742bb03400.png",
+      "revision_sha256": "fac942a97546ef75ada506c6ad435c31df3c428a10006d3c77405fa30845bf74",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "observation": "Sleeves, skin and tent folds carry fewer competing accents. The brush contact and four connected hands remain; the man's gaze stays directed outside.",
+      "tradeoff": "The scene remains deliberately still. Judge the warmth and faces as well as the cleaner light.",
+      "former_original": "originals/emberward.png",
+      "former_live_snapshot": "originals/emberward-live.jpg",
+      "former_revised": "revisions/emberward-r1.png"
+    }
+  ]
+}

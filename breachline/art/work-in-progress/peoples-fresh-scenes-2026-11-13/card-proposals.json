@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-13",
+  "status": "Accepted art collection prepared for commit and push; live roster remains unchanged",
+  "source": "Creator's fresh-peoples painting review; see creator-review-accepted-style.json",
+  "new_card_concepts": [
+    {
+      "code": "N1",
+      "image_code": "N1",
+      "proposed_title": "Neris, Roofwatch",
+      "type": "Unit concept",
+      "people": "Kitefolk",
+      "alignment": "Vigil",
+      "art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n1-vigil-neris-roofwatch.png",
+      "description": "Neris watches the approach to a town from a high parapet, her folded membranes accommodated by light protective gear. Her vigilance is a personal alignment choice; neither the name nor a universal Kitefolk occupation is established.",
+      "art_status": "Final painting accepted",
+      "card_status": "Art accepted; card mechanics and live roster inclusion remain proposals",
+      "mechanics": null,
+      "flavour_text": null
+    },
+    {
+      "code": "N2",
+      "image_code": "N2-R1",
+      "proposed_title": "Rusk, Saltroad Guard",
+      "type": "Unit concept",
+      "people": "Banded folk",
+      "alignment": "Fervor",
+      "art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n2-fervor-rusk-saltroad-guard-v2.png",
+      "description": "Rusk is a steady Banded folk guard watching a salt road, with one boot supported on natural rock and his free hand on his knee. The barrier-breaking premise is removed; Saltroad Guard is a proposed replacement epithet.",
+      "art_status": "Final painting accepted",
+      "card_status": "Art accepted; card mechanics and live roster inclusion remain proposals",
+      "mechanics": null,
+      "flavour_text": null
+    },
+    {
+      "code": "N3",
+      "image_code": "N3",
+      "proposed_title": "Quiet Unfastening",
+      "type": "Spell concept",
+      "people": "Glimmerfolk",
+      "alignment": "Gnosis",
+      "art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n3-gnosis-quiet-unfastening.png",
+      "description": "A Glimmerfolk mage quietly works a key in an archive lock. It is learned personal magic in an urban setting; neither spell mechanics nor a universal Glimmerfolk power is established.",
+      "art_status": "Final painting accepted",
+      "card_status": "Art accepted; card mechanics and live roster inclusion remain proposals",
+      "mechanics": null,
+      "flavour_text": null
+    },
+    {
+      "code": "N4",
+      "image_code": "N4",
+      "proposed_title": "Veyr, Recalled",
+      "type": "Unit concept",
+      "people": "Ashborn",
+      "alignment": "Dominion",
+      "art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n4-dominion-veyr-recalled.png",
+      "description": "Veyr is an Ashborn soldier recalled from a familiar doorway to Dominion duty. His private recognition is an individual story proposal; Ashborn's weak souls and Dominion allegiance are already established lore.",
+      "art_status": "Final painting accepted",
+      "card_status": "Art accepted; card mechanics and live roster inclusion remain proposals",
+      "mechanics": null,
+      "flavour_text": null
+    },
+    {
+      "code": "N5",
+      "image_code": "N5-R2",
+      "proposed_title": "Dessa, Heathwatch",
+      "type": "Unit concept",
+      "people": "Moor folk",
+      "alignment": "Genesis",
+      "art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n5-genesis-dessa-heathwatch-v3.png",
+      "description": "Dessa keeps her low position behind a moorland boundary wall, watching the approach with a nocked arrow and partial draw. The practical full-sized bow replaces the undersized original; this individual role and card are proposals.",
+      "art_status": "Final painting accepted",
+      "card_status": "Art accepted; card mechanics and live roster inclusion remain proposals",
+      "mechanics": null,
+      "flavour_text": null
+    }
+  ],
+  "existing_card_presentation_proposals": [
+    {
+      "id": "harmonic",
+      "current_name": "Harmonic burst",
+      "proposed_name": "Stonewake",
+      "image_code": "H2-R1",
+      "proposed_art": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/h2-stonewake-final.png",
+      "scope": "Repository publication authorized. Keep this as an art/name proposal; no live gameplay change or asset installation in this cleanup.",
+      "fiction": "A Crest folk mason-mage sends a short heave through old paving to break an armed advance on a causeway. This is learned stone magic, not an innate species power.",
+      "status": "Painting accepted with requested gaze correction completed; live implementation remains separate",
+      "previous_concept": {
+        "code": "H1",
+        "art": null,
+        "status": "Unselected concept removed in creator-requested cleanup; prompt retained"
+      },
+      "current_definition": {
+        "id": "harmonic",
+        "name": "Harmonic burst",
+        "type": "spell",
+        "colour": "U",
+        "cost": 3,
+        "wants": 1,
+        "aim": {
+          "hit": 2,
+          "splash": 1,
+          "push": true,
+          "foesOnly": true
+        },
+        "text": "Aim at a tile: 2 damage to an enemy there and 1 to each enemy next to it. Each enemy hit beside it is pushed 1 tile away."
+      },
+      "proposed_definition": {
+        "id": "harmonic",
+        "name": "Stonewake",
+        "type": "spell",
+        "colour": "U",
+        "cost": 3,
+        "wants": 1,
+        "aim": {
+          "hit": 2,
+          "splash": 1,
+          "push": true,
+          "foesOnly": true
+        },
+        "text": "Aim at a tile: 2 damage to an enemy there and 1 to each enemy next to it. Each enemy hit beside it is pushed 1 tile away."
+      },
+      "mechanics_changed": false,
+      "current_art_alias": "harmonic-burst",
+      "live_files": [
+        "breachline/engine.js",
+        "breachline/ui.js",
+        "breachline/art/harmonic-burst.png",
+        "breachline/art/web/harmonic-burst.jpg"
+      ],
+      "implementation_note": "Stable id and gameplay preserved. Live game art is not replaced by repository publication of the accepted collection."
+    }
+  ],
+  "prior_existing_card_art_preferences": [
+    {
+      "code": "IG1",
+      "name": "Oath Sentinel",
+      "decision": "Undecided; do not replace"
+    },
+    {
+      "code": "IG3",
+      "name": "Cinder Firebrand",
+      "decision": "Final revised painting accepted; no live installation",
+      "candidate": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/e1-cinder-firebrand-readable-light.png"
+    },
+    {
+      "code": "IG4",
+      "name": "Anoint with Embers",
+      "decision": "Keep original; strongly liked"
+    },
+    {
+      "code": "IG5",
+      "name": "Sanctuary Threshold",
+      "decision": "Keep original"
+    },
+    {
+      "code": "IG6",
+      "name": "Hurled Brand",
+      "decision": "Keep original"
+    },
+    {
+      "code": "IG7",
+      "name": "Alderkin Elder",
+      "decision": "Final revised painting accepted; no live installation",
+      "candidate": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/final/e2-alderkin-elder-stone-and-distance.png"
+    },
+    {
+      "code": "IG8",
+      "name": "Emberward",
+      "decision": "Revision preferred; not applied or committed",
+      "candidate": "../../reference-library-2026-11-06/peoples-paintings-2026-11-13/favourites/emberward-r1.png"
+    }
+  ],
+  "flavour_policy": "No new flavour text is approved or installed.",
+  "live_game_changes": false,
+  "commit_authorized": true,
+  "publication": {
+    "authorization": "Creator explicitly requested commit, merge and push",
+    "scope": "Kept artwork, references, records and art-direction guidance",
+    "live_game_changes": false
+  }
+}

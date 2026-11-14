@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-13",
+  "status": "awaiting creator review",
+  "user_request": "Find least-favorite art currently in the game, present originals, revise with the current approach, compare before later art-direction codification and a new-chat test.",
+  "selection_caveat": "Only IG1 and IG2 have explicit written reservations. IG3–IG8 are lowest-ranked current paintings from sparse pairwise comparisons and have earlier praise.",
+  "method_scope": "This is not an isolated lighting experiment: paint simplification also changes, IG2 reduces the pressure graphic and IG7 adjusts head orientation.",
+  "live_asset_policy": "No replacements or commits. Preserve all historical approvals. No general skill rule added from this experiment.",
+  "review_questions": [
+    "Which complete paintings do you prefer?",
+    "Which rendering changes help, even where the original remains preferable?",
+    "Do the darker edits lose useful colour, character or card-size readability?"
+  ],
+  "observations": [
+    {
+      "code": "IG1",
+      "title": "Oath sentinel",
+      "observation": "The face, shield and armour now share a larger shadow shape. Light is concentrated on the upper-left shoulder and foliage; the ground and wall carry fewer small highlights.",
+      "tradeoff": "Does his face still hold enough interest at card size, or did the original's brighter finish help?"
+    },
+    {
+      "code": "IG2",
+      "title": "Harmonic burst",
+      "observation": "The white pressure ring is gone; dust, paper and the recoiling figures suggest the disturbance. The bronze bell still hangs from its crown in the two-post frame.",
+      "tradeoff": "The subject and most of the staging remain the same. A rendering improvement may not change your opinion of the bell idea."
+    },
+    {
+      "code": "IG3",
+      "title": "Cinder firebrand",
+      "observation": "The face and chest share a darker mass, with the hottest light low on the left. Indigo sky, red cloth and orange fire remain.",
+      "tradeoff": "This is one of the darker revisions. Compare how readily the face and equipment read in the small preview."
+    },
+    {
+      "code": "IG4",
+      "title": "Anoint with embers",
+      "observation": "The faces use simpler matte planes and the eyes have smaller fire reflections. The brow contact, cast and close framing remain.",
+      "tradeoff": "Does the reduced surface detail feel more painted, or has it taken away too much facial character?"
+    },
+    {
+      "code": "IG5",
+      "title": "Sanctuary Threshold",
+      "observation": "Lantern light falls off across the floor; wet-stone reflections are fewer. All three arrows, the blanket, bowl and traveller remain.",
+      "tradeoff": "The quieter light also makes the refuge less radiant. Judge that change separately from material quality."
+    },
+    {
+      "code": "IG6",
+      "title": "Hurled brand",
+      "observation": "The figure and palisade are darker against a concentrated red sunset. The throw and airborne brand remain clear.",
+      "tradeoff": "The silhouette is stronger, while clothing and facial detail are less visible. Decide which balance you prefer."
+    },
+    {
+      "code": "IG7",
+      "title": "Alderkin elder",
+      "observation": "Bark and valley detail have been grouped into larger painted areas. The existing head is turned more clearly toward the hand on the coping.",
+      "tradeoff": "The simpler head is more readable but may lose some of the original's strange, woody ambiguity."
+    },
+    {
+      "code": "IG8",
+      "title": "Emberward",
+      "observation": "Sleeves, skin and tent folds carry fewer competing accents. The brush contact and four connected hands remain; the man's gaze stays directed outside.",
+      "tradeoff": "The scene remains deliberately still. Judge the warmth and faces as well as the cleaner light."
+    }
+  ]
+}

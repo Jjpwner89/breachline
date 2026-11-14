@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-13",
+  "request": "Make five new paintings, one per alignment, using some of these characters and trying to improve coherence of lighting, character appeal, drama and scene meaning. Explain how the art direction differs by alignment. Also try rear light through Oren's membranes while keeping his face less illuminated.",
+  "creator_feedback": [
+    {
+      "scope": "Lighting",
+      "note": "The creator likes the dynamic colours of prior versions and the consistency of the revised lighting. They are torn; a universal flat or desaturated treatment is not established."
+    },
+    {
+      "scope": "S5 / S5-L1",
+      "quote": "S5 is definitely better.",
+      "note": "The softer-light revision is preferred over the original. This is comparative preference, not final publication approval."
+    },
+    {
+      "scope": "S1 / Oren",
+      "note": "The creator is unsure they like the character himself. The opening reference to 'New' is ambiguous, so no wholesale image or species rejection is inferred. Later they specifically suggest light coming from behind through the membranes without over-illuminating the face."
+    },
+    {
+      "scope": "S6 / Ilyra",
+      "note": "Still not liked. Her touch on the stone does not make her activity legible; rebuild the scene around a clear meaningful action."
+    },
+    {
+      "scope": "C8 / Korr",
+      "note": "Face and body do not feel interesting or fitting; the lightning scene is too dramatic in the wrong way. This is not a ban on drama or all silt-variant people."
+    },
+    {
+      "scope": "C10 / Hessa",
+      "note": "The thorn-making scene does not click: distant gaze and village background do not give a convincing relation between character, action and place."
+    },
+    {
+      "scope": "C9 / Hessa",
+      "note": "The background and context make sense: a woman defending her own town. A coherent setting is valuable."
+    },
+    {
+      "scope": "Alignment preference",
+      "note": "Dominion continues to rank highest. Genesis has often been less successful, though the current Moor-folk group did better. The creator asks how alignment-specific direction differs."
+    }
+  ],
+  "decisions": {
+    "new_final_images": [],
+    "species_approvals_changed": false,
+    "files_deleted": [],
+    "new_art_commit_authorized": false
+  },
+  "alignment_audit": {
+    "source": ".claude/skills/art-direction/SKILL.md",
+    "shared": "Oil/acrylic medium; deliberate detail and edge variation; matte skin, cloth, stone and wood; material-specific reflections; purposeful composition; coherent light.",
+    "differences": [
+      {
+        "alignment": "Vigil",
+        "palette_light": "Gold, ivory, sky blue; warm light",
+        "subjects": "Protection, oaths, healing, soldiers"
+      },
+      {
+        "alignment": "Fervor",
+        "palette_light": "Ember orange, iron, soot, red; firelight, lightning or storm",
+        "subjects": "Independent fighters and forceful magic"
+      },
+      {
+        "alignment": "Gnosis",
+        "palette_light": "Deep blue, teal, brass, amber; lamplight",
+        "subjects": "Scholarly magic and skilled craft"
+      },
+      {
+        "alignment": "Dominion",
+        "palette_light": "Ash grey, bone, tarnished silver, deep violet; cold or overcast light",
+        "subjects": "Power, oppressive institutions, undead and made people"
+      },
+      {
+        "alignment": "Genesis",
+        "palette_light": "Moss, bark, deep green, amber; dappled light",
+        "subjects": "Societies, households, forest peoples and nature"
+      }
+    ],
+    "interpretation": "Palette/light suggestions can bias the briefs toward different lighting and spectacle even when rendering rules are shared. The preceding batch's non-Dominion prompts often reinforced warm rims, effects and dramatic staging. This is a plausible contributor, not an established cause of taste.",
+    "test_limit": "Five new scenes change composition, action and light together. The separate Oren edit preserves composition closely to make its lighting change easier to compare."
+  },
+  "delivery": {
+    "new_scenes": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "targeted_edit": "S1-L2",
+    "review": "review.html",
+    "status": "pending_creator_review"
+  }
+}

@@ -72,7 +72,7 @@
     marksman: 'focus-rifle-marksman', whitemorning: 'white-morning', hostess: 'hostess-of-the-late-hour', springmelt: 'spring-melt',
     firebrand: 'cinder-firebrand', rimecaller: 'conclave-rimecaller', vow: 'vow-of-keeping', ledger: 'ledger-of-debts', hurledbrand: 'hurled-brand', heldmoments: 'held-between-moments',
     shutterassassin: 'shutter-window-assassin', temptress: 'gilt-hall-temptress', alderelder: 'alderkin-elder', recruit: 'buckling-recruit', ashsweeper: 'still-flame-ash-sweeper', emberward: 'emberward',
-    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'harmonic-burst', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
+    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'stonewake', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
     fieldplate: 'field-plate-artificer', mortuary: 'mortuary-priest', lynx: 'halfshade-lynx', stag: 'elderwood-stag', rusthinged: 'rust-hinged-warden', salmantle: 'salamander-hide-mantle',
     pallofash: 'pall-of-ash', wildfire: 'wildfire', bought: 'bought-allegiance', leaden: 'leaden-step', vowkeeper: 'vowkeeper-of-the-long-road', glimmer: 'glimmer-double',
     gallows: 'lots-for-the-gallows', anoint: 'anoint-with-embers', earthspeaker: 'earthspeaker', tortoise: 'shell-mountain-tortoise', hound: 'copper-hound',
@@ -83,7 +83,9 @@
     prism: 'prism-bracer', courier: 'conclave-courier', unmake: 'unmake-the-pattern', informant: 'court-informant', bailiff: 'ashen-court-bailiff', tender: 'barrow-tender',
     mourningveil: 'mourning-veil', cinderhook: 'cinderhook-axe', clanoutrider: 'clan-outrider', shatter: 'shatter-the-chain', pathguard: 'thornwarden-pathguard',
     canopy: 'sudden-canopy', returnloam: 'return-to-loam',
-    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel'
+    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel',
+    student: 'quiet-unfastening', edgewarden: 'undercity-edge-warden', signaller: 'undercity-signaller', peatcutter: 'peat-cutter', moorguide: 'moor-guide', moorkeeps: 'the-moor-keeps-its-own', mootelder: 'moot-elder', conscript: 'veyr-recalled', husk: 'husk', tithedrinker: 'tithe-drinker', caravaneer: 'salt-road-caravaneer', floodfarmer: 'floodplain-farmer',
+    caravanhead: 'caravan-head', caravanguard: 'caravan-guard', bridgemason: 'sallow-bridge-mason', improver: 'guild-improver', mastermason: 'master-mason', ferrykeeper: 'ferry-keeper', longhouse: 'longhouse-keeper', tidehealer: 'tide-healer', hospitality: 'longhouse-hospitality', sluicediver: 'under-the-gate', chartermaker: 'the-sounding', eelnetter: 'eel-netter'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -359,6 +361,7 @@
       if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
       if (u.stride && u.owner === S.active) notes.push('+' + u.stride + ' move');
       if (u.held >= S.turn) states.push('Held');
+      if (u.mired >= S.turn) states.push('Mired');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
       if (u.watching) states.push('Watching');
@@ -396,8 +399,8 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
-    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching', 'Flare', 'Blank'],
+    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Mired', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
   function shieldKind(t) {
@@ -687,7 +690,7 @@
         var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = instantHint(c, sm);
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
-        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
+        else if (place) hint = sel.summonAt ? (c.boon ? 'Choose one of your units next to it.' : 'Choose an enemy unit for it to hit.') : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c, inst) > you.mana) hint = 'Not enough mana to play this now.';
         else if (c.type === 'relic') hint = 'Put this relic into play beside you.';
@@ -1320,18 +1323,43 @@
   // The phone's menu also holds the rules, which close with a tap.
   $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
   $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (turned && !$('start').hidden) turnStart(turned); } });
 
+  // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
+  // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
+  var turned = null, chooseTimer = null;
   function deckHtml(d, role) {
-    if (d.id === 'random') return '<button type="button" class="deck N random" data-role="opp" data-deck="random" aria-pressed="' + (picks.opp === 'random') + '"><span class="pic"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
-      '<span class="nm">Random deck</span><span class="ty">Any alignment</span><span class="ds">A different starter, theme or saved deck each game.</span></button>';
-    var short = role === 'mine' && !d.open ? Progress.missing(d.list) : 0, problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []), colours = d.starter ? E.DECKS[d.id].colours : E.deckColours(d.list), main = colours[0] || 'N', on = picks[role] === d.id;
-    var art = d.starter ? (noArt[DECK_ART[d.id]] ? null : artSrc(DECK_ART[d.id])) : Screens.coverArt(d.list);
-    return '<button type="button" class="deck ' + main + '" data-role="' + role + '" data-deck="' + esc(d.id) + '" aria-pressed="' + on + '"' + (problems.length ? ' disabled' : '') + '>' +
-      '<span class="pic">' + (art ? '<img src="' + art + '" alt="" draggable="false">' : '') + '</span>' +
-      '<span class="nm">' + esc(d.name) + '</span>' +
-      '<span class="ty">' + colours.map(sym).join('') + ALIGNMENT[main] + ' · ' + E.deckSize(d.list) + ' cards</span>' +
-      '<span class="ds">' + esc(Help.deck(d)) + '</span>' + (d.open && role === 'mine' ? '<span class="ds">Open to everyone. Playing it doesn\'t add its cards to your collection.</span>' : '') + (problems.length ? '<span class="ds miss">' + esc(problems[0]) + '</span>' : '') + '</button>';
+    var key = role + ':' + d.id, open = turned === key, on = picks[role] === d.id, front, plan, problems = [];
+    if (d.id === 'random') {
+      front = '<span class="frame N"><span class="inner"><span class="bar-top">Random deck</span><span class="art"><img src="art/web/ui/card-back.jpg" alt="" draggable="false"></span>' +
+        '<span class="band"><span class="type">Any alignment</span></span><span class="ctext"><span class="csyms"></span><span>A surprise</span></span></span></span>';
+      plan = 'A different starter, theme or saved deck each game.';
+    } else {
+      var short = role === 'mine' && !d.open ? Progress.missing(d.list) : 0;
+      problems = E.deckProblems(d.list).concat(short ? ['Missing ' + short + ' card' + (short === 1 ? '' : 's') + ' you don\'t own'] : []);
+      front = Screens.deckFace(d, problems[0] || E.deckSize(d.list) + ' cards');
+      plan = Help.deck(d);
+    }
+    var note = d.open && role === 'mine' ? '<p class="dnote">Open to everyone. Playing it doesn\'t add its cards to your collection.</p>' : '';
+    var choose = problems.length ? '' : '<div class="dtools"><button type="button" class="btn" data-choose="' + role + '" data-deck="' + esc(d.id) + '"' + (on ? ' disabled' : '') + '>' + (on ? 'Chosen' : 'Choose') + '</button></div>';
+    return '<div class="dcard' + (problems.length ? ' locked' : '') + (on ? ' on' : '') + (open ? ' flipped' : '') + '" data-turn="' + esc(key) + '"><div class="dflip">' +
+      '<button type="button" class="dface dfront" aria-label="' + esc(d.id === 'random' ? 'Random deck' : d.name) + ', turn over"' + (on ? ' aria-current="true"' : '') + (open ? ' inert' : '') + '>' + front + '</button>' +
+      '<div class="dface dback"' + (open ? '' : ' inert') + '><b class="dbname">' + esc(d.id === 'random' ? 'Random deck' : d.name) + '</b><p class="dnote">' + esc(plan) + '</p>' + note +
+      (problems.length ? '<p class="dlock">' + esc(problems[0]) + '</p>' : '') + choose + '</div></div></div>';
+  }
+  function turnStart(key) {
+    var was = turned && $('start').querySelector('.dcard.flipped');
+    if (was) { was.classList.remove('flipped'); was.querySelector('.dfront').inert = false; was.querySelector('.dback').inert = true; }
+    turned = turned === key ? null : key;
+    var el = turned && $('start').querySelector('.dcard[data-turn="' + turned + '"]');
+    if (el) {
+      el.classList.add('flipped');
+      el.querySelector('.dfront').inert = true;
+      el.querySelector('.dback').inert = false;
+      var b = el.querySelector('.dback .btn:not([disabled])');
+      (b || el.querySelector('.dback')).focus({ preventScroll: true });
+    } else if (was) was.querySelector('.dfront').focus({ preventScroll: true });
+    Sfx.play('card-flip', { gap: 0 });
   }
   function playable(d) { return !E.deckProblems(d.list).length; }
   function playerHtml(key, label, blurb, enabled) {
@@ -1339,10 +1367,13 @@
   }
   function renderStart() {
     var all = Decks.saved().concat(Decks.starters(), Decks.themes());
-    $('myDecks').innerHTML = all.map(function (d) { return deckHtml(d, 'mine'); }).join('');
+    // Decks you can play come first; the ones still missing cards follow.
+    var can = function (d) { return playable(d) && (d.open || !Progress.missing(d.list)); };
+    $('myDecks').innerHTML = all.filter(can).concat(all.filter(function (d) { return !can(d); })).map(function (d) { return deckHtml(d, 'mine'); }).join('');
     var mine = Decks.find(picks.mine), main = mine ? (mine.starter ? E.DECKS[mine.id].colours : E.deckColours(mine.list))[0] || 'N' : null;
     $('myNote').innerHTML = main ? sym(main) + '<b>' + ALIGNMENT[main] + '.</b> ' + esc(Help.alignment(main)) : '';
     $('oppDecks').innerHTML = deckHtml({ id: 'random' }, 'opp') + all.filter(playable).map(function (d) { return deckHtml(d, 'opp'); }).join('');
+    fitCards([$('myDecks'), $('oppDecks')]);
     $('oppPlayer').innerHTML = playerHtml('bot', 'Scripted bot', 'Plays instantly, with fixed habits.', true) +
       ['easy', 'normal', 'hard'].map(function (k) { return playerHtml(k, 'Claude: ' + AI.levels[k].label, AI.levels[k].blurb, !!sample); }).join('');
     $('playerNote').textContent = hosted ? (sample ? 'Claude opponents make about a dozen requests a game and take a little while to think.' : '') :
@@ -1363,6 +1394,7 @@
     runToken++;
     stopThinking();
     if (chapterBattle) oppPlayer = exhibitionPlayer;
+    turned = null;
     var last = Decks.picks(), ready = function (id) { var d = id && Decks.find(id); return d && playable(d) ? id : null; };
     var yours = function (id) { var d = ready(id) && Decks.find(id); return d && Decks.yours(d) ? id : null; };
     var newest = Decks.saved().filter(function (d) { return yours(d.id); })[0];
@@ -1411,8 +1443,25 @@
     return d.starter ? id : { name: d.name, list: d.list };
   }
   $('start').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-deck]');
-    if (b) { picks[b.dataset.role] = b.dataset.deck; return renderStart(); }
+    var pick = e.target.closest('[data-choose]');
+    // A chosen deck says so for a moment, then turns back over at the usual pace before the lists catch up.
+    if (pick) {
+      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = turned;
+      picks[role] = pick.dataset.deck;
+      pick.disabled = true;
+      pick.textContent = 'Chosen';
+      Array.prototype.forEach.call($(role === 'mine' ? 'myDecks' : 'oppDecks').querySelectorAll('.dcard.on'), function (c) { c.classList.remove('on'); });
+      card.classList.add('on');
+      clearTimeout(chooseTimer);
+      chooseTimer = setTimeout(function () {
+        if (turned === key) turnStart(key);
+        chooseTimer = setTimeout(renderStart, 550);
+      }, 450);
+      return;
+    }
+    var card = e.target.closest('.dcard');
+    if (card) return turnStart(card.dataset.turn);
+    if (turned && !e.target.closest('button, input, select, label')) return turnStart(turned);
     var who = e.target.closest('[data-player]');
     if (who) { oppPlayer = who.dataset.player; return renderStart(); }
     if (e.target.id === 'debugToggle') { debugOn = e.target.checked; return; }
