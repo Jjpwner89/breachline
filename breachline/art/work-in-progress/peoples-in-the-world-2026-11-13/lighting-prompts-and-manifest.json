@@ -8,31 +8,6 @@
   "review_file": "lighting-review.html",
   "images": [
     {
-      "code": "S1-L1",
-      "parent": "S1",
-      "title": "Oren at the Broken Span — consistent light",
-      "source": "s1-oren-at-the-broken-span.png",
-      "file": null,
-      "change": "Keep Oren in exactly the same open-armed stance on the broken bridge, his angular aged face, long nose, finger-braced membranes, ivory vest, blue sash, pouch, feet, the huge gorge and distant waystation. Replace the hot orange sunrise edge-light and bright sunset-like opening in the sky with gently luminous daylight diffused by the existing cloud cover. Membranes remain mottled rust-tan but receive soft ordinary light, without appearing internally glowing or strongly backlit. Let skin and cloth sit in the same soft daylight as the bridge and gorge. Keep clear atmospheric distance and the existing cloud shapes, with only their illumination changing; no extra mist or altered weather event.",
-      "prompt": "Use case: lighting-weather.\nInput image 1 is the EDIT TARGET, an existing Breachline fantasy painting. Make a careful lighting-only revision of this exact picture.\nPrimary request: more consistent illumination across the scene, with smaller differences between lit and shadowed planes and a narrower difference in warm/cool light, to test the creator's preference for the restrained, coherent lighting of the Dominion paintings.\nKeep the entire composition, camera, crop, subjects, faces, expressions, anatomy, poses, hands, clothing, objects, architecture and brushwork character as close to the original as possible. Keep all local pigment colours identifiable. Change the light falling on them, not the character or world design.\nLighting treatment: one broad, soft, physically coherent daylight source shared by foreground and background. Soft transitions and readable midtones, subdued highlights, no strong orange rim lighting or competing blue fill. Retain gentle directional modelling and depth. Materials stay matte where appropriate. This must still feel like the same oil/acrylic fantasy painting, with life and colour; avoid uniform grey, fog overlay, a flat exposure adjustment, sepia wash, extra surface texture, photorealism or a new style.\nOutput: single full painting, landscape 1536 x 1024, same framing. No labels, text, numbers, borders, watermarks, additional people or props.\nSpecific change for this target: Keep Oren in exactly the same open-armed stance on the broken bridge, his angular aged face, long nose, finger-braced membranes, ivory vest, blue sash, pouch, feet, the huge gorge and distant waystation. Replace the hot orange sunrise edge-light and bright sunset-like opening in the sky with gently luminous daylight diffused by the existing cloud cover. Membranes remain mottled rust-tan but receive soft ordinary light, without appearing internally glowing or strongly backlit. Let skin and cloth sit in the same soft daylight as the bridge and gorge. Keep clear atmospheric distance and the existing cloud shapes, with only their illumination changing; no extra mist or altered weather event.",
-      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png",
-      "generated_source": null,
-      "status": "lighting_revision_pending_creator_review",
-      "generation_mode": "built-in image_gen",
-      "use_case": "lighting-weather",
-      "width": 1536,
-      "height": 1024,
-      "sha256": "d0ed3c6e37f8d14250d99e9c2489d409507e4deddaf998086078c8db26ba7ca5",
-      "source_sha256": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png"
-      ],
-      "creator_feedback": "Character appeal remains uncertain; creator requests a new directional backlight test on original S1, now S1-L2.",
-      "deleted_file": "s1-oren-at-the-broken-span-lighting-v2.png",
-      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
-      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-f071c3ea-1af6-412c-9475-4eab33517685.png"
-    },
-    {
       "code": "S5-L1",
       "parent": "S5",
       "title": "A Camp before Rain — consistent light",

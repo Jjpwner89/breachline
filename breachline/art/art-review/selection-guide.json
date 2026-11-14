@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T19:18:47.363239Z",
-  "revision": 185,
+  "updatedAt": "2026-11-14T05:02:34.361999+00:00",
+  "revision": 186,
   "instructions": "Consult this file with the art-direction skill before selecting references. Honor excluded=true. References with requiresCreatorConfirmation=true are proposals, not active generation references; favorites or comparison rank do not approve them. Positive votes and favorites guide selection; rankings alone never approve a reference. Alignment overrides are reference-selection labels, not lore changes. Unassigned sheets can serve multiple alignments. Existing source art and historical approvals are unchanged.",
   "references": [
     {
@@ -925,19 +925,6 @@
       "historicalStatus": "Unreviewed",
       "requiresCreatorConfirmation": false,
       "referenceRole": "Unrestrained magical confidence, with wind and weather carrying the energy."
-    },
-    {
-      "id": "75e612dfe70e5ed61bbf",
-      "title": "Black enamel field kit",
-      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "",
-      "historicalStatus": "Accepted",
-      "requiresCreatorConfirmation": false,
-      "referenceRole": "Revisit the black equipment you liked as one officer’s choice, with fewer layers and no claim that all Dominion wears it."
     },
     {
       "id": "bf5677d67e61100aba7b",
@@ -2357,19 +2344,6 @@
       "referenceRole": "Retain the understated cooperation of magic and engineering; correct skin, stone and distant detail."
     },
     {
-      "id": "59d28d3a443d421e9cab",
-      "title": "KR1 · Kitefolk · final visual reference",
-      "path": "reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png",
-      "alignment": "Unassigned",
-      "vote": 0,
-      "excluded": false,
-      "available": true,
-      "note": "Explicitly finalized by the creator on 2026-11-13.",
-      "historicalStatus": "Accepted",
-      "requiresCreatorConfirmation": false,
-      "referenceRole": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules."
-    },
-    {
       "id": "1cc817b6762a19c6f033",
       "title": "GR1 · Glimmerfolk · final visual reference",
       "path": "reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png",
@@ -2712,20 +2686,20 @@
       "wins": 2
     },
     {
-      "id": "3ebdc3ab9c9097c50f2e",
-      "title": "Unmake the Pattern",
-      "path": "unmake-the-pattern.png",
-      "rating": 1023.5856994136229,
-      "comparisons": 2,
-      "wins": 2
-    },
-    {
       "id": "f9e80b6869a97c372757",
       "title": "Withering hex",
       "path": "withering-hex.png",
       "rating": 1023.1723853265561,
       "comparisons": 2,
       "wins": 2
+    },
+    {
+      "id": "3ebdc3ab9c9097c50f2e",
+      "title": "Unmake the Pattern",
+      "path": "unmake-the-pattern.png",
+      "rating": 1012.0,
+      "comparisons": 1,
+      "wins": 1
     },
     {
       "id": "7c20c57d76eec702e3b7",
@@ -3464,14 +3438,6 @@
       "wins": 1
     },
     {
-      "id": "75e612dfe70e5ed61bbf",
-      "title": "Black enamel field kit",
-      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png",
-      "rating": 1000.4143005863771,
-      "comparisons": 2,
-      "wins": 1
-    },
-    {
       "id": "a8a84acad36f6888c7c1",
       "title": "Hostess of the late hour",
       "path": "hostess-of-the-late-hour.png",
@@ -3598,6 +3564,14 @@
       "rating": 999.5856994136229,
       "comparisons": 2,
       "wins": 1
+    },
+    {
+      "id": "c65f201bb328c773c22b",
+      "title": "Alderkin elder",
+      "path": "alderkin-elder.png",
+      "rating": 988.4143005863771,
+      "comparisons": 1,
+      "wins": 0
     },
     {
       "id": "abf313191f71aecd4081",
@@ -4320,14 +4294,6 @@
       "wins": 0
     },
     {
-      "id": "c65f201bb328c773c22b",
-      "title": "Alderkin elder",
-      "path": "alderkin-elder.png",
-      "rating": 976.4143005863771,
-      "comparisons": 2,
-      "wins": 0
-    },
-    {
       "id": "9aae9de1824eafbd2017",
       "title": "Cinder firebrand",
       "path": "cinder-firebrand.png",
@@ -4400,5 +4366,5 @@
       "wins": 0
     }
   ],
-  "comparisons": 133
+  "comparisons": 131
 }

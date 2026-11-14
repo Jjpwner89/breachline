@@ -1,5 +1,5 @@
 {
-  "image_count": 12,
+  "image_count": 10,
   "images": [
     {
       "code": "R1v2",
@@ -35,17 +35,6 @@
       "references_exist": true
     },
     {
-      "code": "P3v2",
-      "file": "04-p3-kitefolk-v2.png",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "hash_matches": true,
-      "png_crc_valid": true,
-      "references_exist": true
-    },
-    {
       "code": "P5v2",
       "file": "05-p5-saltreach-v2.png",
       "dimensions": [
@@ -59,17 +48,6 @@
     {
       "code": "W1",
       "file": "06-glimmerfolk-below-the-old-road.png",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "hash_matches": true,
-      "png_crc_valid": true,
-      "references_exist": true
-    },
-    {
-      "code": "W2",
-      "file": "07-kitefolk-across-the-cut.png",
       "dimensions": [
         1536,
         1024
@@ -166,20 +144,12 @@
       "review": "Freckle clusters clearly brighter on faces and exposed arms, with small local glow. No glowing eyes or broad neon skin; identities and sheet layout preserved."
     },
     {
-      "code": "P3v2",
-      "review": "Builds visibly thinner and faces leaner, noses longer/pointier; body views and open membrane study remain consistent with two arms/two legs."
-    },
-    {
       "code": "P5v2",
       "review": "Localized mild sunburn and more uneven weathered skin visible across all faces. Human identity, clothing and anatomy retained; skin stays matte."
     },
     {
       "code": "W1",
       "review": "Two connected figures, practical rope/wall and lantern contacts. Bright freckle clusters remain small and local; distant tunnel uses broader quieter paint."
-    },
-    {
-      "code": "W2",
-      "review": "Two arms, two trailing legs, legible hands and wrist-to-hip membrane roots. Thin build and angular profile retained; landscape detail quieter than subject."
     },
     {
       "code": "W3",
@@ -222,7 +192,7 @@
     "status": "Final selections verified",
     "accepted_reference_count": 9,
     "accepted_followup_count": 5,
-    "rejected_followup_count": 7,
+    "rejected_followup_count": 5,
     "accepted_files_match_original_hashes": true,
     "rejected_image_and_generated_copy_paths_absent": true,
     "accepted_references_exist": true,
@@ -248,5 +218,6 @@
     ],
     "browser_preview": "Not performed; local target checks and JavaScript compilation completed.",
     "new_image_generation": false
-  }
+  },
+  "cleanup_note": "Only retained image records are counted. Historical browser checks describe the earlier review; current accepted references are unchanged."
 }

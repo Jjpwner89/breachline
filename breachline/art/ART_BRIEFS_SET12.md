@@ -9,7 +9,6 @@ Follow the [brief workflow](../../.claude/skills/art-direction/BRIEF_WORKFLOW.md
 - **Scope:** 20 new paintings, listed under "Briefs". Four more cards could use finished paintings that are already accepted; the creator decides on those first, and they get briefs only if declined.
 - **Proposed WIP folder:** `work-in-progress/new-peoples-cards-2026-11-13/`
 - **Paths:** relative to this file, `breachline/art/`.
-- **Not included:** the Kitefolk, which the creator cut from the game on 2026-11-13. Don't use KR1 or the Kitefolk paintings.
 - **Riverfolk references:** the files in `reference-library-2026-11-06/peoples-round-12-2026-11-13/` are accepted but, on 2026-11-13, still uncommitted in the main folder. Check that they're present before using them.
 
 The batch covers six peoples. Within each people, vary place, weather, time of day, facing and camera distance, as the art direction asks. Several cards in one people shouldn't read as one scene repeated.

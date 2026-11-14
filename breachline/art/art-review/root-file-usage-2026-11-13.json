@@ -1,0 +1,492 @@
+{
+  "audit_date": "2026-11-13",
+  "scope": "Root set-2-to-12 briefs, prompts, revisions, galleries and validation records, plus remaining-prompts record.",
+  "searched": [
+    "Active game code and documents",
+    "breachline/art/build-web.sh",
+    "Active art-direction skill and history",
+    "All other art records, including historical records and private source-identification notes"
+  ],
+  "runtime_consumer": "art-review/build_catalog.py recursively reads eligible JSON manifests, including prompt and revision records.",
+  "build_web_result": "Only image inputs are used; none of these metadata files is directly used by build-web.sh.",
+  "decision": "Keep all 42 candidates. Every file has an inbound reference or an active catalogue-provenance consumer.",
+  "files": [
+    {
+      "file": "ART_BRIEFS_SET10.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET10.json",
+        "breachline/art/SET10_GALLERY.html",
+        "breachline/art/SET10_VALIDATION.json"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET11.md",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/BRIEF_WORKFLOW.md",
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/ART_PROMPTS_SET11.json",
+        "breachline/art/SET11_VALIDATION.json",
+        "breachline/art/SET11_GALLERY.html",
+        "breachline/art/work-in-progress/creatures-round-13-2026-11-13/BRIEFS.md",
+        "breachline/art/work-in-progress/creatures-round-13-2026-11-13/prompts-and-manifest.json",
+        "breachline/art/work-in-progress/peoples-round-12-2026-11-13/BRIEFS.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/breachline/CARD_PROPOSALS.md"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET12.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/CARD_ART_FINAL.json",
+        "breachline/art/reference-library-2026-11-06/new-peoples-cards-2026-11-13/prompts-and-manifest.json",
+        "breachline/art/work-in-progress/new-peoples-cards-2026-11-13/prompts-and-manifest.json"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET2.md",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/archive/campaign-review-2026-11-06/art-direction-before-review.md",
+        "breachline/art/ART_PROMPTS_REMAINING_2026-11-05.json",
+        "breachline/art/ART_BRIEFS.md",
+        "breachline/art/ART_PROMPTS_SET2.json",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET3.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET3.json"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET4.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/SET4_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET4.json",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/breachline/CARD_PROPOSALS.md"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET5.md",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/SET5_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET5.json",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/breachline/CARD_PROPOSALS.md"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET6.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/ART_PROMPTS_SET6.json",
+        "breachline/art/SET6_GALLERY.html",
+        "breachline/art/reference-library-2026-11-06/spark-2026-11-13/01-spark.references.json",
+        "breachline/art/reference-library-2026-11-06/spark-2026-11-13/BRIEFS.md",
+        "breachline/art/nsfw/spark-card-2026-11-13/01-spark.references.json",
+        "breachline/art/nsfw/spark-card-2026-11-13/BRIEFS.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/breachline/CARD_PROPOSALS.md",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_PROMPTS_SET6.before-review.json"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET7.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/CARD_PROPOSALS.md",
+        "breachline/art/SET7_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET7.json",
+        "breachline/art/SET7_VALIDATION.json",
+        "breachline/art/nsfw/court-card-fabric-bikinis-2026-11-11/source-card-identification.json",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/breachline/CARD_PROPOSALS.md"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET8.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET8_VALIDATION.json",
+        "breachline/art/SET8_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET8.json"
+      ]
+    },
+    {
+      "file": "ART_BRIEFS_SET9.md",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET9_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET9.json",
+        "breachline/art/SET9_VALIDATION.json"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_REMAINING_2026-11-05.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET10.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET10_GALLERY.html",
+        "breachline/art/CARD_ART_FINAL.json",
+        "breachline/art/ART_BRIEFS_SET10.md",
+        "breachline/art/SET10_VALIDATION.json",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/prompts-and-manifest.json",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/selection-audit.json",
+        "breachline/art/art-review/evidence.json",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET11.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET11.md",
+        "breachline/art/SET11_VALIDATION.json",
+        "breachline/art/SET11_GALLERY.html",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET2.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET3.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET3.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET4.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_BRIEFS_SET4.md",
+        "breachline/art/SET4_GALLERY.html",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET5.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_BRIEFS_SET5.md",
+        "breachline/art/SET5_GALLERY.html",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET6.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET6_GALLERY.html",
+        "breachline/art/ART_BRIEFS_SET6.md",
+        "breachline/art/ART_PROMPTS_SET9.json",
+        "breachline/art/SET9_VALIDATION.json",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_BRIEFS_SET6.before-review.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET7.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET7_GALLERY.html",
+        "breachline/art/ART_BRIEFS_SET7.md",
+        "breachline/art/SET7_VALIDATION.json",
+        "breachline/art/CARD_ART_FINAL_SET7.json",
+        "breachline/art/nsfw/court-card-fabric-bikinis-2026-11-11/source-card-identification.json",
+        "breachline/art/art-review/evidence.json",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET8.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET8.md",
+        "breachline/art/SET8_VALIDATION.json",
+        "breachline/art/SET8_GALLERY.html",
+        "breachline/art/nsfw/court-card-fabric-bikinis-2026-11-11/source-card-identification.json",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/prompts-and-manifest.json",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/selection-audit.json",
+        "breachline/art/art-review/evidence.json",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_PROMPTS_SET9.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_BRIEFS_SET9.md",
+        "breachline/art/CARD_ART_FINAL.json",
+        "breachline/art/SET9_GALLERY.html",
+        "breachline/art/SET9_VALIDATION.json",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/prompts-and-manifest.json",
+        "breachline/art/work-in-progress/in-game-art-comparison-2026-11-13/selection-audit.json",
+        "breachline/art/art-review/evidence.json",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_REVISIONS_SET3_2026-11-06.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_BRIEFS_SET3.md",
+        "breachline/art/ART_PROMPTS_SET3.json",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_REVISIONS_SET4_2026-11-07.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_PROMPTS_SET4.json",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_REVISIONS_SET4_2026-11-08.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/SET4_VALIDATION.json",
+        "breachline/art/ART_PROMPTS_SET4.json",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "ART_REVISIONS_SET6_2026-11-09.json",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_PROMPTS_SET6.json",
+        "breachline/art/SET6_GALLERY.html",
+        "breachline/art/ART_BRIEFS_SET6.md",
+        "breachline/art/nsfw/skill-backups/art-direction-before-canal-feedback-2026-11-09_21-34-46-131264.md",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_BRIEFS_SET6.before-review.md",
+        "breachline/art/art-review/catalog.js",
+        "breachline/art/art-review/catalog.json",
+        "breachline/art/art-review/build_catalog.py [runtime JSON provenance scan]"
+      ]
+    },
+    {
+      "file": "SET10_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET10.json",
+        "breachline/art/ART_BRIEFS_SET10.md",
+        "breachline/art/SET10_VALIDATION.json"
+      ]
+    },
+    {
+      "file": "SET10_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET10.json",
+        "breachline/art/SET10_GALLERY.html",
+        "breachline/art/ART_BRIEFS_SET10.md"
+      ]
+    },
+    {
+      "file": "SET11_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET11.json",
+        "breachline/art/ART_BRIEFS_SET11.md",
+        "breachline/art/SET11_VALIDATION.json"
+      ]
+    },
+    {
+      "file": "SET11_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET11.json",
+        "breachline/art/ART_BRIEFS_SET11.md",
+        "breachline/art/SET11_GALLERY.html"
+      ]
+    },
+    {
+      "file": "SET4_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET4_VALIDATION.json",
+        "breachline/art/ART_BRIEFS_SET4.md",
+        "breachline/art/ART_PROMPTS_SET4.json"
+      ]
+    },
+    {
+      "file": "SET4_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET4.md",
+        "breachline/art/SET4_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET4.json"
+      ]
+    },
+    {
+      "file": "SET5_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET5.md",
+        "breachline/art/ART_PROMPTS_SET5.json"
+      ]
+    },
+    {
+      "file": "SET5_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET5.md",
+        "breachline/art/SET5_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET5.json"
+      ]
+    },
+    {
+      "file": "SET6_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET6.json",
+        "breachline/art/ART_BRIEFS_SET6.md",
+        "breachline/art/ART_PROMPTS_SET9.json",
+        "breachline/art/SET9_VALIDATION.json",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_PROMPTS_SET6.before-review.json",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_BRIEFS_SET6.before-review.md"
+      ]
+    },
+    {
+      "file": "SET6_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET6.json",
+        "breachline/art/SET6_GALLERY.html",
+        "breachline/art/ART_BRIEFS_SET6.md",
+        "breachline/art/ART_PROMPTS_SET9.json",
+        "breachline/art/SET9_VALIDATION.json",
+        "breachline/art/work-in-progress/set6-review-2026-11-09/originals/ART_PROMPTS_SET6.before-review.json"
+      ]
+    },
+    {
+      "file": "SET7_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_PROMPTS_SET7.json",
+        "breachline/art/ART_BRIEFS_SET7.md",
+        "breachline/art/SET7_VALIDATION.json"
+      ]
+    },
+    {
+      "file": "SET7_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/SET7_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET7.json",
+        "breachline/art/ART_BRIEFS_SET7.md",
+        "breachline/art/CARD_ART_FINAL_SET7.json"
+      ]
+    },
+    {
+      "file": "SET8_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET8.md",
+        "breachline/art/SET8_VALIDATION.json",
+        "breachline/art/ART_PROMPTS_SET8.json"
+      ]
+    },
+    {
+      "file": "SET8_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET8.md",
+        "breachline/art/SET8_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET8.json"
+      ]
+    },
+    {
+      "file": "SET9_GALLERY.html",
+      "decision": "keep",
+      "referenced_by": [
+        ".claude/skills/art-direction/HISTORY.md",
+        "breachline/art/ART_BRIEFS_SET9.md",
+        "breachline/art/SET9_VALIDATION.json",
+        "breachline/art/work-in-progress/animal-final-exploration-2026-11-13/before-world-reference-handoff/.claude/skills/art-direction/HISTORY.md"
+      ]
+    },
+    {
+      "file": "SET9_VALIDATION.json",
+      "decision": "keep",
+      "referenced_by": [
+        "breachline/art/ART_BRIEFS_SET9.md",
+        "breachline/art/SET9_GALLERY.html",
+        "breachline/art/ART_PROMPTS_SET9.json"
+      ]
+    }
+  ]
+}

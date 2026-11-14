@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T14:35:02.052990+00:00",
+  "generatedAt": "2026-11-14T05:02:34.259457+00:00",
   "alignments": [
     "Vigil",
     "Gnosis",
@@ -3127,64 +3127,6 @@
       "uses": 1,
       "thumb": "thumbs/5a946b691f5406433039.jpg",
       "image": "../work-in-progress/alignment-character-studies-2026-11-11/04-before-the-thunder-breaks.png"
-    },
-    {
-      "id": "75e612dfe70e5ed61bbf",
-      "path": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png",
-      "title": "Black enamel field kit",
-      "alignment": "Unassigned",
-      "alignmentBasis": "No recorded alignment",
-      "kind": "Study",
-      "exists": true,
-      "sources": [
-        "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/review-manifest.json",
-        "reference-library-2026-11-06/prompts-and-manifest.json",
-        "work-in-progress/middle-setting-round-07-2026-11-09/review-manifest.json"
-      ],
-      "feedback": [
-        {
-          "text": "Beautiful; materials and reflections particularly successful.",
-          "source": "../../../.claude/skills/art-direction/SKILL.md",
-          "context": "Creator preference"
-        },
-        {
-          "text": "Beautiful and specifically praised for material/light treatment; accepted.",
-          "source": "reference-library-2026-11-06/middle-setting-round-07-2026-11-09/review-manifest.json",
-          "context": "Recorded feedback; may refer to an earlier version"
-        },
-        {
-          "text": "Beautiful and specifically praised for material/light treatment; accepted.",
-          "source": "reference-library-2026-11-06/prompts-and-manifest.json",
-          "context": "Recorded feedback; may refer to an earlier version"
-        },
-        {
-          "text": "Beautiful and specifically praised for material/light treatment; accepted.",
-          "source": "work-in-progress/middle-setting-round-07-2026-11-09/review-manifest.json",
-          "context": "Recorded feedback; may refer to an earlier version"
-        }
-      ],
-      "status": "Accepted",
-      "reference": true,
-      "refs": [],
-      "batch": null,
-      "praise": true,
-      "strong": true,
-      "intent": "Revisit the black equipment you liked as one officer’s choice, with fewer layers and no claim that all Dominion wears it.",
-      "usedBy": [
-        "3476717bb8ccb4813e54"
-      ],
-      "usesByAlignment": {
-        "Vigil": 0,
-        "Gnosis": 1,
-        "Dominion": 0,
-        "Fervor": 0,
-        "Genesis": 0,
-        "Neutral": 0,
-        "Unassigned": 0
-      },
-      "uses": 1,
-      "thumb": "thumbs/75e612dfe70e5ed61bbf.jpg",
-      "image": "../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/18-black-enamel-field-kit.png"
     },
     {
       "id": "bf5677d67e61100aba7b",
@@ -9382,7 +9324,6 @@
       "status": "Accepted",
       "reference": false,
       "refs": [
-        "75e612dfe70e5ed61bbf",
         "93413fb239531a4898c3",
         "ee83028c90b3559a77a5"
       ],

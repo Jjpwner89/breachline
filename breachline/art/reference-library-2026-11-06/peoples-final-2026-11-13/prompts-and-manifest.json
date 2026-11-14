@@ -1,50 +1,8 @@
 {
-  "collection": "Final visual references for all seven new peoples",
+  "collection": "Final visual references for all six retained peoples",
   "accepted_date": "2026-11-13",
-  "scope": "Seven final visual designs; current approved people lore in SETTING.md. Individual scene/card proposals do not establish new mechanics.",
+  "scope": "Six final visual designs; current approved people lore in SETTING.md. Individual scene/card proposals do not establish new mechanics.",
   "images": [
-    {
-      "code": "KR1",
-      "kind": "reference",
-      "title": "Kitefolk · sharper face",
-      "filename": "01-kitefolk-final.png",
-      "sourceCodes": [
-        "PL1.3"
-      ],
-      "summary": "Final Kitefolk visual design: slender finger-braced gliders with mottled membranes, angular faces and long pointed noses. Their high-village lore and gliding limits are in SETTING.md.",
-      "takes": [
-        {
-          "code": "KR1",
-          "title": "Finger-braced Kitefolk",
-          "text": "PL1.3 anatomy, with a much longer, sharper nose and more severe facial planes.",
-          "handoff": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules.",
-          "position": 1,
-          "status": "accepted_final_visual_reference"
-        }
-      ],
-      "prompt": "Use case: stylized-concept. Breachline high-fantasy painted reference art, landscape PNG 1536 x 1024. Warm ivory EMPTY background. Traditional oil/acrylic painting with measured visible brushwork, matte skin and cloth, diffuse neutral daylight. Coherent large light/shadow shapes and precise focal anatomy; no pore-noise, waxy sheen, photography, CGI, anime, glossy animated-film or cute toy treatment. All figures adults, intelligent and clothed in plain practical neutral garments. No printed text, letters, numbers, labels, frames, border, signatures, logos or watermarks. Keep all anatomy inside the page with breathing room; hands and limb connections physically coherent. No scenery or camera blur.\nCreate ONE CHARACTER REFERENCE SHEET of a single consistent design. Left two thirds: three FULL BODY views at the same scale, front three-quarter, side and rear, complete head to feet, standing relaxed. Right third: a large three-quarter head-and-shoulders portrait above a smaller profile head and a close hand/forearm anatomy study. Do not repeat the source's six-cell lineup. Exactly the same anatomy, clothing and individual in every view.\nThe attached sheet is a design reference. Use ONLY TAKE THREE, TOP RIGHT: the older thin olive/tan man with grey swept-back hair, pointed nose, elongated outer fingers and mottled rust-tan gliding membranes. Do not borrow any other cell. The creator chose this take and requests an EVEN MORE EXTREME FACE.\nPreserve his slender wiry body proportions, long limbs, ordinary two legs and exactly two arms, the mottled membranes supported by elongated outer fingers, and plain sleeveless stone-grey vest and knee breeches. The main shape of the membrane runs from wrist/outer finger to flank/hip, folding naturally along his sides; gripping fingers remain free. In the front three-quarter full body, relax both arms slightly away from the torso so the thin membranes and supporting outer finger are clear. In the side and rear views show folded membranes.\nPush his facial BONES decisively beyond an ordinary human: noticeably elongated narrow skull, longer very sharp projecting aquiline nose like a narrow blade, high knife-edged cheekbones, deeply cut planes under cheeks and temples, narrow lower jaw and long pointed chin. Retain calm intelligent older-person character and actual skin, not a skull or mask. The face must read as strikingly nonhuman and severe in ALL views. Grey hair swept back and short grey beard can remain, but simplify them enough that the new jaw is legible. No tusks, horns, huge ears, glowing features, wounds or added accessories. Keep skin matte, parchment-olive and weathered through painted form. Preserve the selected anatomy rather than inventing a new glider.",
-      "status": "accepted_final_visual_reference",
-      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-ecd469b8-d70d-4fb4-81af-5aaf7d0a9e8f.png",
-      "file": "01-kitefolk-final.png",
-      "review_code": "KR1",
-      "revision": 1,
-      "generation_mode": "built-in image_gen",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png"
-      ],
-      "creator_note": "Final visual design · accepted by the creator",
-      "sha256": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
-      "width": 1536,
-      "height": 1024,
-      "reference_sha256": {
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png": "73258a7f879e75499302b3eb5abbcb1a88e78a4bbf7680f65cc73e30ef5232ef"
-      },
-      "accepted_date": "2026-11-13",
-      "handoff": "Final Kitefolk visual design: slender finger-braced gliders with mottled membranes, angular faces and long pointed noses. Their high-village lore and gliding limits are in SETTING.md.",
-      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-lineups-2026-11-13/prompts-and-manifest.json",
-      "source_filename": "05-kitefolk-reference-v1.png",
-      "source_summary": "Final Kitefolk visual design: slender long-limbed people with finger-supported mottled gliding membranes, strongly angular faces and a long pointed nose. This is an accepted anatomy reference; the illustrated clothing, individual age and precise culture are not universal rules."
-    },
     {
       "code": "GR1",
       "kind": "reference",

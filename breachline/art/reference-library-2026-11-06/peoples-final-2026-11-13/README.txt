@@ -1,8 +1,7 @@
 FINAL PEOPLES — 13 NOVEMBER 2026
 
-All seven current people designs are final. The creator finalized PL8B, CR3 and CO1 with “all final”; their existing artwork is unchanged.
+All six current people designs are final. The creator finalized PL8B, CR3 and CO1 with “all final”; their existing artwork is unchanged.
 
-KR1 — Kitefolk · sharper face: 01-kitefolk-final.png
 GR1 — Glimmerfolk · denser light: 02-glimmerfolk-final.png
 PL7 — Moor folk · final visual range: 03-moor-folk-final-lineup.png
 PL3D — Made people · final visual range: 04-made-people-final-lineup.png

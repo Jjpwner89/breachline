@@ -1,8 +1,8 @@
 LATEST FINAL PEOPLES REFERENCES — 2026-11-13
-KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk and PL3D made people are final visual designs. Their unchanged PNGs, exact prompts and handoffs are in peoples-final-2026-11-13/. PL3D is the original before extra scarring; PL3E is rejected. Made people are Dominion; soul state and precise origin remain open. Other depicted clothing, jobs and cultures are examples, not universal rules.
+GR1 Glimmerfolk, PL7 Moor folk and PL3D made people are final visual designs. Their unchanged PNGs, exact prompts and handoffs are in peoples-final-2026-11-13/. PL3D is the original before extra scarring; PL3E is rejected. Made people are Dominion; soul state and precise origin remain open. Other depicted clothing, jobs and cultures are examples, not universal rules.
 
 LATEST SELECTION — PEOPLES ROUND 12 (2026-11-13)
-Nine accepted Riverfolk and Saltreach references are in peoples-round-12-2026-11-13/: R1v2, R2, R3v2, R4, R5, R6, W5, P5v2 and W3. All other round-12 people concepts are rejected, including the previously liked Cairnfold, Glimmerfolk and Kitefolk. R5/R6 remain especially liked. These additions postdate the v13 ZIP listed below; consult the folder's review.html and CLAUDE_HANDOFF.txt for the current selections.
+Nine accepted Riverfolk and Saltreach references are in peoples-round-12-2026-11-13/: R1v2, R2, R3v2, R4, R5, R6, W5, P5v2 and W3. All other round-12 people concepts are rejected, including the previously liked Cairnfold, Glimmerfolk. R5/R6 remain especially liked. These additions postdate the v13 ZIP listed below; consult the folder's review.html and CLAUDE_HANDOFF.txt for the current selections.
 
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon

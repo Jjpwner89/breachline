@@ -5,8 +5,8 @@
   "status": "pending_creator_review",
   "counts": {
     "new_scenes": 5,
-    "targeted_edits": 1,
-    "total": 6
+    "targeted_edits": 0,
+    "total": 5
   },
   "scope": "Character situations, new paintings and proposed jobs/alignments remain review proposals. Existing final species references are unchanged. Made people remain Dominion. No game cards are implemented and no new art is committed.",
   "review_file": "review.html",
@@ -159,45 +159,15 @@
       "deleted_file": "a5-genesis-before-the-gate-closes.png",
       "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
       "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-c53d755a-bd9a-45fe-892a-4a5d2974e9cf.png"
-    },
-    {
-      "code": "S1-L2",
-      "alignment": "Vigil",
-      "title": "Oren — light through the membranes",
-      "character": "Oren",
-      "kind": "targeted_lighting_edit",
-      "source": "s1-oren-at-the-broken-span.png",
-      "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png",
-      "file": null,
-      "status": "lighting_test_pending_creator_review",
-      "summary": "A separate correction of the original S1 keeps the composition and restores lively transmitted colour in the membranes, while leaving the face and front of the torso in shadow. This tests the creator’s explicit backlighting idea; it does not finalize Oren’s character design.",
-      "intent": "Directional backlight with warm translucent membranes and a substantially darker face.",
-      "prompt": "Use case: lighting-weather. The supplied picture is the EDIT TARGET: original S1, Oren at the Broken Span. Keep this exact composition, camera, crop, elderly Kitefolk identity and angular nose, expression, stance, limbs, elongated fingers, membrane shapes, hair, clothing, pouch, bridge, distant settlement and gorge.\nChange ONLY the LIGHTING to the creator's specific correction: strong beautiful sunlight comes from BEHIND the figure, high in the rear/right of the picture, and shines THROUGH the thin mottled wing membranes. Their translucent panels hold rich amber/rust colour and visible mottling; opaque supporting fingers and thicker parts cast real small shadows within the membranes.\nCrucial: Oren's FACE and FRONT of torso/arms are on the SHADOW SIDE. Paint his face substantially darker, cooler and less illuminated than the membranes. Keep only faint reflected daylight sufficient to read the expression. A narrow rim on the rear of hair or nose edge can catch the light where physically correct, but NO golden frontal light, no face spotlight and no bright warm shine across his cheek, forehead, chest or forward arm. The face must visibly belong to the side turned away from the sun. The whole gorge and bridge obey that same single light direction. Keep the beautiful original warm/cool colour and a luminous opening behind him, without adding a second front light or universally flattening the painting.\nPreserve traditional oil/acrylic brushwork, anatomy, surfaces, objects and all scene geometry closely. No new design, pose, equipment, people, mist veil, text, labels or border. Same 1536 x 1024 landscape painting. This is a targeted correction of illumination, not a new character.",
-      "generated_source": null,
-      "generation_mode": "built-in image_gen",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png"
-      ],
-      "width": 1536,
-      "height": 1024,
-      "sha256": "1801ee3a1f278b8bd1a8f407f70178bad67b81f5e7ea981a91cba7aa78f42415",
-      "reference_sha256": {
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1"
-      },
-      "reference_role": "Lighting edit target; preserve original composition and character",
-      "deleted_file": "s1-oren-directional-backlight-v3.png",
-      "cleanup_status": "Image removed by creator-requested cleanup; prompt/history retained",
-      "deleted_generated_source": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-a89070e1-4754-4b92-a4db-8aea7b35a1ce.png"
     }
   ],
   "visual_qa": {
-    "overall": "All six generated outputs visually inspected for connected anatomy, purposeful gaze/contact, material/light treatment and continuity. All are landscape 1536x1024.",
+    "overall": "The five retained alignment scenes keep their earlier visual inspection; all are landscape 1536x1024.",
     "A1": "Brann's stable crouch, traveller's raised step and supporting forearm grip form a legible assist. The ferry, tied rope and wet stair locate the action.",
     "A2": "Tavra's sword meets the incoming spear close to the cart; off-hand and cart support her balance. Light and local colour remain contained.",
     "A3": "Chisel tip, groove, mallet and gaze converge on actual stonework. Head/arm crests and indigo kit retained; foreground has a clear working contact.",
     "A4": "Veyr retains the restrained old throat scar and ordinary scale; two soldiers leaving provide a quiet contrast with his continued watch. Metal highlights are localized.",
-    "A5": "Hessa grips and seats a crossbar while a neighbor holds the gate, with connected town structures visible. Hand and bar contact reads clearly.",
-    "S1_L2": "Original pose/composition closely preserved. Membranes carry warm transmitted light; face/front of body substantially darker. Character appeal remains for creator judgment."
+    "A5": "Hessa grips and seats a crossbar while a neighbor holds the gate, with connected town structures visible. Hand and bar contact reads clearly."
   },
   "skills_used": [
     ".claude/skills/art-direction/SKILL.md",
@@ -206,14 +176,12 @@
   "selection_guide_revision": 185,
   "art_direction_sha256_at_generation": "21e5770f9402bd0351a74855e6396296981b71274dae9f7499803cac631d38a4",
   "originals_preserved_sha256": {
-    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s2-sera-in-the-lamplit-court.png": "f10493419255713e6bf84f3e96672f8835186195fdf73c2e1769613f5d87acf5",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s3-hessas-winter-door.png": "03d6510da25e90ff9630eadf179aa79f97921d4f6b2eb9d440e3ae4d375b8ad9",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s4-the-second-muster.png": "daf52b5a5a029c0bb77eaaf265f0b1507afecada5137dedd8457690fc7c6bd87",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain.png": "fe6890a8891afd82b2ba242d36eeb5b0fc6b7f6289bde21ac3ce9066809df427",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch.png": "210ea153448ead9332fcc31941f1529d8b1bc78bc8ab66333956dd7ecb32e570",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s7-brann-at-the-low-tide-road.png": "9cb34a0b2fd367614f0975c452c0ef24262ee53e162af694563f2e6b8f61bfab",
-    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c1-oren-spanrunner.png": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c2-shelter-the-crossing.png": "7761e0aa5f210ed6f2212427d5e9777d2a894caa53042260594ebf056cb56257",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c3-sera-deep-court-reader.png": "b09d763c022a41b33df87617a9e75d9f415e55f8e6061db23d4e43cf1d969294",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c4-give-the-stone-a-path.png": "5795783720dadccb0b603e32ce89c8c00dbbeeec44ee93371756633664d2bcad",
@@ -223,7 +191,6 @@
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c8-break-the-weather.png": "9e822cd3ded9f494d3c9d44ba067926da71b808c2cc810ccd7a54129c66a0181",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c9-hessa-doorwarden.png": "5a4cb17231a517acadd5ad53a1f84cd34fcb7cce373a1f15a4087aed8d50e14c",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c10-earth-keeps-the-door.png": "c0143db02b502da6fef0671aa492c814d8d3e09bb00081f49bdace7a0eeddd59",
-    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span-lighting-v2.png": "d0ed3c6e37f8d14250d99e9c2489d409507e4deddaf998086078c8db26ba7ca5",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s5-a-camp-before-rain-lighting-v2.png": "27d7a9d6ec2ea79184d9e4214b57aaa7707b2ce562e0696b79f70e5f98a2cf28",
     "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s6-ilyra-and-the-unfinished-arch-lighting-v2.png": "e30a7e3e6602712b73db37f874a38bc3336f0b53c14a4af83c441a1ec67d1f43"
   }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
-  "scope": "Peoples round 12 creator review, five revisions and seven new in-world studies",
-  "status": "Final creator review complete: five Riverfolk/Saltreach images accepted, seven others rejected.",
+  "scope": "Peoples round 12 creator review: four retained revisions and six retained in-world studies",
+  "status": "Final creator review complete: five Riverfolk/Saltreach images accepted, five other retained records rejected.",
   "tool": "built-in image_gen",
   "images": [
     {
@@ -125,46 +125,6 @@
       "image_removed": true
     },
     {
-      "code": "P3v2",
-      "file": "04-p3-kitefolk-v2.png",
-      "title": "Kitefolk · leaner and sharper",
-      "type": "Reference revision",
-      "source": "19-kitefolk.png",
-      "intent": "A lighter build and more angular face.",
-      "writeup": "Kitefolk retain the wrist-to-hip gliding membranes of the liked design, with thinner builds, narrower faces, and more pointed noses. This is a refinement of the same people; their gliding limits, alignment, and wider culture remain open.",
-      "prompt": "Use case: identity-preserve. Refine the supplied Kitefolk sheet while preserving the THREE front/side/back views, FOUR adult portraits, fifth open-membrane study, ivory background, plain clothes, hair and the living wrist-to-hip membranes. Make EVERY adult a bit THINNER and more LIGHTLY BUILT: narrow shoulders and torso modestly, slender limbs with believable healthy musculature, no emaciation. Faces should be noticeably more ANGULAR, elongated and lean, with less cheek fullness, sharper cheekbones, narrower jaw planes and longer POINTIER NOSES. Keep individual face differences and ages; still appealing people, no caricature, no pointy ears, no interchangeable model faces. Carry this proportion change consistently through all views and open-membrane anatomy. Keep exactly two arms/two legs, membranes rooted wrist to flank/hip, fingers separate and clothing clear of the membranes. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/19-kitefolk.png"
-      ],
-      "reference_roles": [
-        "Edit target: preserve identities, composition, anatomy and materials except the specific requested change."
-      ],
-      "status": "rejected",
-      "generation_mode": "built-in image_gen",
-      "creator_review_status": "rejected",
-      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-c17a20ff-b86c-4419-b80e-76b5eb6bc902.png",
-      "assistant_review": "Builds visibly thinner and faces leaner, noses longer/pointier; body views and open membrane study remain consistent with two arms/two legs.",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "sha256": "948f9774154cb05599d2c74b7ce539abc24ca7c4f2b213942309625bf2a667ef",
-      "creator_review_history": [
-        {
-          "date": "2026-11-13",
-          "stage": "before final selection",
-          "status": "ready_for_review",
-          "creator_review_status": "revision pending review"
-        }
-      ],
-      "review_status": "rejected",
-      "active_reference": false,
-      "reference_candidate": false,
-      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
-      "review_date": "2026-11-13",
-      "image_removed": true
-    },
-    {
       "code": "P5v2",
       "file": "05-p5-saltreach-v2.png",
       "title": "Saltreach · weathered coast",
@@ -230,47 +190,6 @@
         1024
       ],
       "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
-      "creator_review_history": [
-        {
-          "date": "2026-11-13",
-          "stage": "before final selection",
-          "status": "ready_for_review",
-          "creator_review_status": "new scene pending review"
-        }
-      ],
-      "review_status": "rejected",
-      "active_reference": false,
-      "reference_candidate": false,
-      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
-      "review_date": "2026-11-13",
-      "image_removed": true
-    },
-    {
-      "code": "W2",
-      "file": "07-kitefolk-across-the-cut.png",
-      "title": "Across the Cut",
-      "type": "New in-world scene",
-      "people": "Kitefolk",
-      "alignment": "Undecided",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/04-p3-kitefolk-v2.png"
-      ],
-      "reference_roles": [
-        "Revised thin/angular Kitefolk anatomy and wrist-to-hip membrane structure. Preserve these traits in one new individual; not sheet pose or exact clothing."
-      ],
-      "intent": "A slender living silhouette held against a large open sky.",
-      "writeup": "A lean, angular-faced Kitefolk traveler glides across a narrow highland ravine toward an old stone landing. This tests a short crossing using wrist-to-hip membranes, without establishing powered flight, maximum range, or a universal Kitefolk profession.",
-      "prompt": "Use case: stylized-concept. Create ONE new original Breachline in-world concept PAINTING, not a reference sheet and not a card. High fantasy about 150 years after the Old Empire fell and gods became silent; stable new societies and ordinary lives persist through hard times. Clothes and construction are practical, communities have specific local populations, and scenes propose possibilities rather than defining universal culture. Compose for a clear visual idea and coherent connected anatomy, credible grips and contact, consistent body and architecture scale. Preserve the traditional oil/acrylic Breachline painted realism and matte skin. Use coherent broad light/shadow shapes and deliberate varied brush sizes, no waxy faces, no added pore noise or scratchy artificial texture. Keep focal faces/hands more defined; secondary background forms should be moderately LESS detailed and lower contrast than the original, simplified through quieter edges and fewer marks, not photographic lens blur, bokeh or a tunnel-focus effect. No text, labels, border, watermark, logo or signature. Output exactly one landscape PNG, 1536 x 1024.\n\nREFERENCE: Revised thin-build angular-faced Kitefolk. SCENE: One adult male Kitefolk in a clean readable side-three-quarter gliding posture crosses a NARROW highland ravine toward a low rocky landing ledge. Healthy slender torso and limbs, narrow angular face, prominent pointier nose seen in three-quarter profile. Exactly TWO ARMS stretched out and slightly forward, fingers separated; two taut living membranes, each spanning its own wrist to same-side hip. Exactly TWO LEGS trailing naturally behind with feet separated. No additional wings, feathers, extra limbs or cloth pretending to be membrane. Short sleeveless slate wool vest, plain cropped trousers and calf wraps clear membrane attachments. A pale storm-cleared sky and warm wind-stripped grass, one distant ordinary stone bridge ruin providing scale. Main figure around half canvas height, legs and both hands fully inside frame, distant cliff painted in simpler broad shapes. Quiet exhilaration in pose, no superhero fists or attacking viewer. All membrane roots, shoulder/elbow/wrist chains and hip/knee/ankle chains coherent.",
-      "status": "rejected",
-      "generation_mode": "built-in image_gen",
-      "creator_review_status": "rejected",
-      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-9944aab8-d27f-4771-90ca-670ed2dfd181.png",
-      "assistant_review": "Two arms, two trailing legs, legible hands and wrist-to-hip membrane roots. Thin build and angular profile retained; landscape detail quieter than subject.",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "sha256": "30ca36a6508881c120aee74e6afc1b599ddd1a8520ad8472dffdc7fb2754089e",
       "creator_review_history": [
         {
           "date": "2026-11-13",
@@ -507,9 +426,7 @@
   ],
   "rejected_image_ids": [
     "P1v2",
-    "P3v2",
     "W1",
-    "W2",
     "W4",
     "M1",
     "M2"

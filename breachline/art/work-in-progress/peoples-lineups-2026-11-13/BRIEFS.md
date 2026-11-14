@@ -1,6 +1,6 @@
 # Peoples lineups (2026-11-13)
 
-This round retries three nonhuman peoples (Kitefolk, Glimmerfolk and the made people) and adds a sheet of brand-new nonhuman peoples. It's the first step of the new workflow: **lineup → reference → scene**.
+This round retries two nonhuman peoples (Glimmerfolk and the made people) and adds a sheet of brand-new nonhuman peoples. It's the first step of the new workflow: **lineup → reference → scene**.
 
 Each brief is one lineup sheet showing six quite different takes on one people. The creator points at the take that works, that one becomes a reference sheet, and only then does it get scenes. Lineups are for range: six takes that are too similar waste the sheet.
 
@@ -43,30 +43,6 @@ Each brief is one lineup sheet showing six quite different takes on one people. 
 8. **The defining trait reads at a glance.** Understatement is for magic, not for what makes a people look like itself. Check hands, limb counts and joins before showing.
 
 ---
-
-## PL1 · 01-kitefolk-lineup
-
-**The people:**
-- Light-boned highland people with gliding membranes from wrist to hip.
-- The creator liked the first design and asked for thinner builds and more angular faces, with pointier noses.
-- Keep that direction in most takes.
-
-**Range across the six:** vary these.
-- **Membrane:** wrist to hip; wrist to ankle; supported by long fingers; split into panels.
-- **Build:** wiry to very slight.
-- **Proportions:** limb length and shoulder structure for gliding.
-- **Skin and colour:** plain, mottled, banded or downy.
-- **Face:** structure within the angular, sharp-nosed direction.
-
-**Fresh departures (takes 5–6):** keep only "people who glide". Rethink everything else about the body:
-- where the gliding surface comes from
-- how the body is built for it
-- how they look at rest
-
-**Display:**
-- Show the membranes folded at rest in the full body.
-- In at least two cells, show them partly open, with the arms raised.
-- They are people, not bats.
 
 ## PL2 · 02-glimmerfolk-lineup
 
@@ -128,7 +104,7 @@ One of them can push well away from human.
 
 **Not:**
 - elves or dwarves
-- any rejected or retried people: Scions, Graftkin, Mourncaps, Lichenkin, Cairnfold, Kitefolk, Glimmerfolk, ravenfolk, badgerfolk, mothfolk, rhinoceros folk, the mineral tripod
+- any rejected or retried people: Scions, Graftkin, Mourncaps, Lichenkin, Cairnfold, Glimmerfolk, ravenfolk, badgerfolk, mothfolk, rhinoceros folk, the mineral tripod
 - the opaline people
 - the existing peoples: lion folk, alderkin, riverfolk, goblins, orcs, giants
 

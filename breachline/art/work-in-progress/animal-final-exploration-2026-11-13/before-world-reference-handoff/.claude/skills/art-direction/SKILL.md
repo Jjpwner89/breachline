@@ -117,13 +117,11 @@ To undo it, delete this subsection.
   - Animal-headed peoples are allowed. Don't mention head type to the image model either way.
   - A profession or alignment shown in one image does not define a whole people.
 - **Accepted peoples:**
-  - **Kitefolk:** KR1 is the final visual design: slender finger-braced gliders with mottled membranes, an extreme angular face and long pointed nose.
   - **Glimmerfolk:** GR1 is the final visual design: long neck, broad ear-fans, blue face glimmers and dotted arm lines spreading toward the hands.
   - **Moor folk:** PL7 is the final visual range: long limbs and hands, furred neck/shoulder ruffs and strongly shaped faces, with all six variations retained. The original sheet is preserved unchanged; no single individual was selected.
   - **Made people:** PL3D is the final visual range, before the stronger-scarring revision. Preserve its cold pallor, ordinary scale, diminished gaze and restrained old scars; Dominion allegiance is already established.
   - The new peoples' homes, alignments and lore are in `breachline/SETTING.md` (2026-11-13). The creator's names: the made people are the **Ashborn**, the salt–silt folk are the **Banded folk**, and the Coast folk (CO1) are the **Greyhides**. Older records keep the old names.
   - Paint to that lore. For example:
-    - Kitefolk glide but don't fly.
     - Glimmerfolk glimmers brighten with mood and flare when they cast, and their undercity is developed and decent, not caves.
     - Greyhides are large, easygoing and insulated for cold northern coasts and tidal islands; show that climate in shore, settlement and clothing.
     - Crest folk live in limestone valleys and quarry towns; the lore does not specify a universal warm climate.
@@ -137,7 +135,6 @@ To undo it, delete this subsection.
   - Scions (too human)
   - Graftkin and both made-people tests
   - Cairnfold
-  - the old round 12 Glimmerfolk and Kitefolk paintings (superseded by final KR1 and GR1 visual references)
   - OG1 ogre study; do not continue its design
   - PL3E made-people scarring revision; too much scarring, superseded by final PL3D
   - PL11 and PL12 new-people explorations
@@ -355,9 +352,7 @@ Every alignment uses the same painting and material rules above. These are estab
 **Coilneck working name (2026-11-13; latest):** the creator requested a new name for Sporewarden after removing the fungus. Use **Coilneck** provisionally for LG2–5 / LR6, referring to its flexible looping neck. This replacement was proposed by the assistant and is not a final creator-approved name. Preserve Sporewarden as the historical alias and keep the original prompt/image filenames for provenance.
 
 
-**Five-alignment scene follow-up and Oren backlight (creator, 2026-11-13; latest):**
 - The creator likes dynamic colour as well as consistent light. **S5-L1 is definitely preferred over original S5**; S6 still fails, partly because touching the stone does not communicate a meaningful action. Neither blanket desaturation nor soft overcast light is established as a general solution.
-- Oren's individual appeal is uncertain. For original S1, try light coming from behind and transmitting through the membranes while the face stays in shadow. This is a lighting correction, not a reversal of final KR1 species approval.
 - **C8:** Korr's face/body do not feel interesting or fitting, and the lightning spectacle is dramatic in the wrong way. Drama remains welcome. **C10:** the thorn action, distant gaze and village do not form a convincing scene. **C9:** a woman defending her own town makes sense; the setting supports the moment.
 - The creator requests **one new painting per alignment**, using some existing characters, and asks how their art direction differs. All five share the painting/material rules; the palette and light table supplies options, which earlier prompts sometimes amplified too strongly.
 - Completed proposals: **A1 Vigil / Brann — The Last Step; A2 Fervor / Tavra — Beside the Cart; A3 Gnosis / Ilyra — The Cut Stone; A4 Dominion / Veyr — The Watch Continues; A5 Genesis / Hessa — Before the Gate Closes.** A separate **S1-L2** tests the requested directional backlight.
@@ -395,7 +390,7 @@ Every alignment uses the same painting and material rules above. These are estab
 **Peoples scenes and card catalogue commissioned (creator, 2026-11-13):**
 - The creator requested scenes first, then card art using the current peoples and characters, with appropriate equipment, proposed alignments and optional faction ties. This authorizes scene and card exploration from the current designs without making pending references final.
 - Completed catalogue: seven scenes S1–S7, followed by ten card paintings C1–C10: five units, four spells and one instant, two card ideas per alignment.
-- Final anatomy stays KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk and PL3D made people. Salt–silt PL8B, Crest folk CR3 and Coast folk CO1 remain visual proposals. Made people use the original restrained scarring and remain Dominion.
+- Final anatomy stays GR1 Glimmerfolk, PL7 Moor folk and PL3D made people. Salt–silt PL8B, Crest folk CR3 and Coast folk CO1 remain visual proposals. Made people use the original restrained scarring and remain Dominion.
 - New cast names, jobs, places, individual alignments, faction associations and all card mechanics are proposals; no live-game cards or final-art selections are changed. The catalogue does not establish a weak or absent soul for the made people.
 - Catalogue, exact prompts, source hashes and review controls: `breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/catalogue.html`.
 
@@ -420,7 +415,7 @@ Every alignment uses the same painting and material rules above. These are estab
 - Latest feedback: `breachline/art/work-in-progress/peoples-lineups-2026-11-13/creator-feedback-round5-2026-11-13.json`.
 
 **Earlier peoples selection and revival direction (historical; latest decisions above):**
-- **Moor folk:** PL7 is final. Preserve the existing six-variation sheet unchanged as the accepted visual reference; no individual take was singled out. It joins final KR1 Kitefolk and GR1 Glimmerfolk in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`.
+- **Moor folk:** PL7 is final. Preserve the existing six-variation sheet unchanged as the accepted visual reference; no individual take was singled out. It joins final GR1 Glimmerfolk in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`.
 - **Salt and silt folk:** one species with two variants, not two separate species. Pull their designs slightly toward each other and review the new PL8B lineup. The relationship is selected; revised anatomy and names remain open.
 - **PL9.4:** selected for development as a species, continued in CR1. Cut PL9.1, PL9.2, PL9.3, PL9.5 and PL9.6 from further exploration. The original mixed sheet is retained only as source provenance for PL9.4, outside the active review; its other takes must not be reused.
 - **PL10.1:** liked; CO1 develops its reference sheet. Preserve its rounded proportions and tail-free design. Other PL10 takes receive no new decision.
@@ -439,7 +434,7 @@ Every alignment uses the same painting and material rules above. These are estab
 - Make NEW creature lineups with varied but integrated heads, body plans and coverings. Mammalian and other faces belong in the range; reptilian/snake-like faces are still allowed. Stage new work in `breachline/art/work-in-progress/creature-new-combinations-2026-11-13/`.
 
 **Earlier peoples final selections and exploration (historical; latest selection above supersedes it):**
-- **Final visual designs:** KR1 Kitefolk and GR1 Glimmerfolk are final and strongly liked. Preserve their accepted anatomy and faces; do not regenerate them as part of further exploration. Final reference files and handoffs are in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`.
+- **Final visual designs:** GR1 Glimmerfolk are final and strongly liked. Preserve their accepted anatomy and faces; do not regenerate them as part of further exploration. Final reference files and handoffs are in `breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/`.
 - **Ogre:** OG1 is rejected. Do not continue the ogre direction from PL3.6 without a new request.
 - **Made people:** PL3B went too big and bulky. Continue at ordinary adult scale with lean or average builds and a restrained undead-like appearance, while remaining whole and alive. The made-people look is still open.
 - **PL5.4:** closer to the setting; develop a focused lineup of related variations.
@@ -472,7 +467,6 @@ Every alignment uses the same painting and material rules above. These are estab
 - Next exploration staging: `breachline/art/work-in-progress/creature-body-plans-2026-11-13/`.
 
 **Earlier Peoples follow-up (historical context; final selections above supersede it):**
-- Kitefolk: PL1.3 is the best take. Keep its body and finger-supported membranes; make the face more extreme in the next reference sheet.
 - Glimmerfolk: PL2.6 is the best take. Keep its proportions, broad ear-fans and dotted lines along the arms; add denser glimmers like PL2.4. Preserve the lines up the arm, spreading into broader clusters toward the lower forearms, wrists and hands.
 - Ogre exploration: PL3.6 can start an ogre. Make it less human while keeping the body proportions. This is an exploratory ogre direction, not a made-person selection or established allegiance.
 - Made people: none of PL3 fits. The creator asks for a slightly undead-looking appearance. They remain whole and living under the established setting; their next lineup may use pallor, hollow facial planes and a deathly quality without rot, stitches or laboratory clichés.
@@ -491,11 +485,11 @@ Every alignment uses the same painting and material rules above. These are estab
 - Follow-up staging: `breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/`.
 
 **Lineup briefs written (2026-11-13):** these are the first step for the items below.
-- `breachline/art/work-in-progress/peoples-lineups-2026-11-13/BRIEFS.md`: Kitefolk, Glimmerfolk, the made people, and a sheet of six brand-new peoples.
+- `breachline/art/work-in-progress/peoples-lineups-2026-11-13/BRIEFS.md`: Glimmerfolk, the made people, and a sheet of six brand-new peoples.
 - `breachline/art/work-in-progress/creature-lineups-2026-11-13/BRIEFS.md`: the five approved creatures, an open exploration sheet, and six round 13 rejects rebuilt under the new rules.
 - The creator asked for new variety alongside the retries. Each retry sheet keeps four takes close to what was liked and makes two fresh departures.
 
-The earlier round-12 retries have now led to final KR1 Kitefolk and GR1 Glimmerfolk reference sheets.
+The earlier round-12 retries have now led to final GR1 Glimmerfolk reference sheets.
 
 **Creature regen, next round.** Use the creature rules above and lineup sheets first. Approved ideas:
 1. **Moltwalker, cleaner:** a crab-like creature, with the new soft one beside its old shell. Villagers collect the shells.

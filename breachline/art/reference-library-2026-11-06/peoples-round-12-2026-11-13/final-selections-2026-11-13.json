@@ -11,7 +11,6 @@
     "Graftkin and new made-people variants",
     "Glimmerfolk",
     "Mourncaps",
-    "Kitefolk",
     "Lichenkin",
     "Cairnfold"
   ],
@@ -52,13 +51,10 @@
     "G5",
     "P1",
     "P2",
-    "P3",
     "P4",
     "P6",
     "P1v2",
-    "P3v2",
     "W1",
-    "W2",
     "W4",
     "M1",
     "M2"
@@ -180,12 +176,6 @@
       "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
     },
     {
-      "code": "P3",
-      "file": "19-kitefolk.png",
-      "status": "rejected",
-      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
-    },
-    {
       "code": "P4",
       "file": "20-lichenkin.png",
       "status": "rejected",
@@ -222,12 +212,6 @@
       "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
     },
     {
-      "code": "P3v2",
-      "file": "followup-2026-11-13/04-p3-kitefolk-v2.png",
-      "status": "rejected",
-      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
-    },
-    {
       "code": "P5v2",
       "file": "followup-2026-11-13/05-p5-saltreach-v2.png",
       "status": "accepted_visual_reference",
@@ -236,12 +220,6 @@
     {
       "code": "W1",
       "file": "followup-2026-11-13/06-glimmerfolk-below-the-old-road.png",
-      "status": "rejected",
-      "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
-    },
-    {
-      "code": "W2",
-      "file": "followup-2026-11-13/07-kitefolk-across-the-cut.png",
       "status": "rejected",
       "note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13)."
     },
@@ -410,12 +388,6 @@
           "file": "18-mourncaps.png",
           "note": "Mourncaps rejected.",
           "status": "rejected concept; remove images"
-        },
-        {
-          "code": "P3",
-          "file": "19-kitefolk.png",
-          "note": "Kitefolk liked; thinner builds and more angular faces with pointier noses requested.",
-          "status": "liked direction; revision pending"
         },
         {
           "code": "P4",
@@ -630,18 +602,6 @@
       "review": "final selection"
     },
     {
-      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/19-kitefolk.png",
-      "sha256": "9c3a7a58c7015174d557d95466633f6139812197176e96148ce8e3f3d011dda4",
-      "code": "P3",
-      "review": "final selection"
-    },
-    {
-      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-5b582e6e-5f27-469b-99f6-e3febc5a60a7.png",
-      "sha256": "9c3a7a58c7015174d557d95466633f6139812197176e96148ce8e3f3d011dda4",
-      "code": "P3",
-      "review": "final selection"
-    },
-    {
       "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/22-wildcard.png",
       "sha256": "ed4dcd8f0d66198c247773ae5345f8cc7c7f29be24d90df07cf890aeab7c5a94",
       "code": "P6",
@@ -672,18 +632,6 @@
       "review": "final selection"
     },
     {
-      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/04-p3-kitefolk-v2.png",
-      "sha256": "948f9774154cb05599d2c74b7ce539abc24ca7c4f2b213942309625bf2a667ef",
-      "code": "P3v2",
-      "review": "final selection"
-    },
-    {
-      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-c17a20ff-b86c-4419-b80e-76b5eb6bc902.png",
-      "sha256": "948f9774154cb05599d2c74b7ce539abc24ca7c4f2b213942309625bf2a667ef",
-      "code": "P3v2",
-      "review": "final selection"
-    },
-    {
       "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/06-glimmerfolk-below-the-old-road.png",
       "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
       "code": "W1",
@@ -693,18 +641,6 @@
       "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-d193105a-901b-4927-a877-351ef963f138.png",
       "sha256": "d2c44d1520c0c7ff558b7563cf1bd8afe807d400ef91683966b9be64c7e9a801",
       "code": "W1",
-      "review": "final selection"
-    },
-    {
-      "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-round-12-2026-11-13/followup-2026-11-13/07-kitefolk-across-the-cut.png",
-      "sha256": "30ca36a6508881c120aee74e6afc1b599ddd1a8520ad8472dffdc7fb2754089e",
-      "code": "W2",
-      "review": "final selection"
-    },
-    {
-      "file": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-9944aab8-d27f-4771-90ca-670ed2dfd181.png",
-      "sha256": "30ca36a6508881c120aee74e6afc1b599ddd1a8520ad8472dffdc7fb2754089e",
-      "code": "W2",
       "review": "final selection"
     },
     {

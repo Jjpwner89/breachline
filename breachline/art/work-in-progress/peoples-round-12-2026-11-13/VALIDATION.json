@@ -1,10 +1,10 @@
 {
   "date": "2026-11-13",
   "status": "Historical generation validation, superseded by creator review",
-  "count": 22,
-  "total_bytes": 56555550,
+  "count": 21,
+  "total_bytes": 54437552,
   "all_unique": true,
-  "gallery_cards": 22,
+  "gallery_cards": 21,
   "gallery_local_links_valid": true,
   "gallery_javascript_syntax": "validated with node:vm.Script",
   "gallery_browser_preview": "Not performed: browser security policy disallows file URLs. No alternate browser path used.",
@@ -245,19 +245,6 @@
       "references_exist": true
     },
     {
-      "code": "P3",
-      "file": "19-kitefolk.png",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "bytes": 2117998,
-      "sha256": "9c3a7a58c7015174d557d95466633f6139812197176e96148ce8e3f3d011dda4",
-      "png_chunks_valid": true,
-      "matches_generated_source": true,
-      "references_exist": true
-    },
-    {
       "code": "P4",
       "file": "20-lichenkin.png",
       "dimensions": [
@@ -317,7 +304,7 @@
     "status": "Final selections verified",
     "accepted_reference_count": 9,
     "accepted_followup_count": 5,
-    "rejected_followup_count": 7,
+    "rejected_followup_count": 5,
     "accepted_files_match_original_hashes": true,
     "rejected_image_and_generated_copy_paths_absent": true,
     "accepted_references_exist": true,
@@ -343,5 +330,6 @@
     ],
     "browser_preview": "Not performed; local target checks and JavaScript compilation completed.",
     "new_image_generation": false
-  }
+  },
+  "cleanup_note": "Only retained image records are counted. Historical browser checks describe the earlier review; current accepted references are unchanged."
 }

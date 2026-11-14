@@ -201,12 +201,6 @@ These test whether a people belongs in the setting at all. Use the sheet format 
 - Earthy colour with surprising accents.
 - Simple ritual garments instead of ivory cloth.
 
-### P3 · 19-kitefolk (sheet format, experiment)
-- Light-boned highland people with gliding membranes from wrist to hip.
-- Related in spirit to the accepted roof glider: `../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png`.
-- Show the membrane folded in the full-body views and open in one portrait or a fifth small study.
-- The rest of their anatomy is open.
-
 ### P4 · 20-lichenkin (sheet format, experiment)
 - Small people with lichen growing on their skin, living alongside the alderkin.
 - Moss-green and grey-gold.

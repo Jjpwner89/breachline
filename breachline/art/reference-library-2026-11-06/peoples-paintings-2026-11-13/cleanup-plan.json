@@ -82,30 +82,12 @@
       "reason": "Accepted by latest creator review"
     },
     {
-      "source": "breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/k1-above-the-washing-lines.png",
-      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/final/k1-above-the-washing-lines.png",
-      "sha256": "8c9fe45fd885fa5f85d8824601486992c2a9c673ac97684a402450780a68e063",
-      "group": "final",
-      "code": "K1",
-      "title": "Above the Washing Lines",
-      "reason": "Accepted by latest creator review"
-    },
-    {
       "source": "breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/n4-dominion-veyr-recalled.png",
       "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n4-dominion-veyr-recalled.png",
       "sha256": "296674d7b066668cd399ed6253c1d011e7ca874b78957fb2bcca00e3604eb3c1",
       "group": "final",
       "code": "N4",
       "title": "Veyr, Recalled",
-      "reason": "Accepted by latest creator review"
-    },
-    {
-      "source": "breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/k2-the-high-room.png",
-      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/final/k2-the-high-room.png",
-      "sha256": "38723c57df392cc181df8a2f782c8b1735c13ea1fb2d08ae615a38e780a197b9",
-      "group": "final",
-      "code": "K2",
-      "title": "The High Room",
       "reason": "Accepted by latest creator review"
     },
     {
@@ -169,15 +151,6 @@
       "group": "final",
       "code": "E2",
       "title": "Alderkin Elder — original stone, revised distance",
-      "reason": "Accepted by latest creator review"
-    },
-    {
-      "source": "breachline/art/work-in-progress/peoples-fresh-scenes-2026-11-13/n1-vigil-neris-roofwatch.png",
-      "destination": "breachline/art/reference-library-2026-11-06/peoples-paintings-2026-11-13/final/n1-vigil-neris-roofwatch.png",
-      "sha256": "3ccf0a926970fd9175d935166734513d5b3a19a077d50b6f5915e36601672d4d",
-      "group": "final",
-      "code": "N1",
-      "title": "Neris, Roofwatch",
       "reason": "Accepted by latest creator review"
     },
     {
@@ -422,34 +395,10 @@
       "kind": "rejected_or_superseded"
     },
     {
-      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c1-oren-spanrunner.png",
-      "repo_path": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c1-oren-spanrunner.png",
-      "sha256": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
-      "bytes": 2722601,
-      "reason": "Disliked old card/scene or failed lighting experiment; newer accepted work retained",
-      "kind": "rejected_or_superseded"
-    },
-    {
-      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span-lighting-v2.png",
-      "repo_path": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span-lighting-v2.png",
-      "sha256": "d0ed3c6e37f8d14250d99e9c2489d409507e4deddaf998086078c8db26ba7ca5",
-      "bytes": 2683678,
-      "reason": "Disliked old card/scene or failed lighting experiment; newer accepted work retained",
-      "kind": "rejected_or_superseded"
-    },
-    {
       "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c10-earth-keeps-the-door.png",
       "repo_path": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/c10-earth-keeps-the-door.png",
       "sha256": "c0143db02b502da6fef0671aa492c814d8d3e09bb00081f49bdace7a0eeddd59",
       "bytes": 3214276,
-      "reason": "Disliked old card/scene or failed lighting experiment; newer accepted work retained",
-      "kind": "rejected_or_superseded"
-    },
-    {
-      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png",
-      "repo_path": "breachline/art/work-in-progress/peoples-in-the-world-2026-11-13/s1-oren-at-the-broken-span.png",
-      "sha256": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
-      "bytes": 2836158,
       "reason": "Disliked old card/scene or failed lighting experiment; newer accepted work retained",
       "kind": "rejected_or_superseded"
     },
@@ -498,14 +447,6 @@
       "repo_path": "breachline/art/work-in-progress/peoples-alignment-paintings-2026-11-13/a1-vigil-the-last-step.png",
       "sha256": "8f102d141a58073d8c91a699676af0bd3ceb51c6238deef853d0303d07b9dfd0",
       "bytes": 2957798,
-      "reason": "Superseded exploration; creator retained Dominion man and said other individuals need not be kept",
-      "kind": "rejected_or_superseded"
-    },
-    {
-      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/peoples-alignment-paintings-2026-11-13/s1-oren-directional-backlight-v3.png",
-      "repo_path": "breachline/art/work-in-progress/peoples-alignment-paintings-2026-11-13/s1-oren-directional-backlight-v3.png",
-      "sha256": "1801ee3a1f278b8bd1a8f407f70178bad67b81f5e7ea981a91cba7aa78f42415",
-      "bytes": 2548032,
       "reason": "Superseded exploration; creator retained Dominion man and said other individuals need not be kept",
       "kind": "rejected_or_superseded"
     },
@@ -773,11 +714,6 @@
       "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
     },
     {
-      "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/01-kitefolk-lineup.png",
-      "sha256": "73258a7f879e75499302b3eb5abbcb1a88e78a4bbf7680f65cc73e30ef5232ef",
-      "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
-    },
-    {
       "path": "breachline/art/work-in-progress/peoples-lineups-2026-11-13/24-crest-folk-arms-and-body-reference.png",
       "sha256": "8e71a97115d816b44cc67fe332645f05eff9fd7ff3eee7f8affccb307a12ac28",
       "reason": "Reference sheet or mixed/open lineup containing selected or unresolved designs"
@@ -835,12 +771,6 @@
       "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-d49869f0-d5e3-4f0c-9f4f-3d6a3cbe7178.png",
       "sha256": "5265016bfc9d4e10a83bafde88ff5aebc4a8085b8c7ea9225da34271f68e2d14",
       "bytes": 2710405,
-      "reason": "Matching generated-source copy of a deleted rejected/superseded image"
-    },
-    {
-      "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-a89070e1-4754-4b92-a4db-8aea7b35a1ce.png",
-      "sha256": "1801ee3a1f278b8bd1a8f407f70178bad67b81f5e7ea981a91cba7aa78f42415",
-      "bytes": 2548032,
       "reason": "Matching generated-source copy of a deleted rejected/superseded image"
     },
     {
@@ -904,12 +834,6 @@
       "reason": "Matching generated-source copy of a deleted rejected/superseded image"
     },
     {
-      "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-8bc06f82-289a-443c-ae3a-508989bba6ac.png",
-      "sha256": "6bfa17b4b00f4fd43bba0d70650e3739fd0a1feba55e3c49dfcc66a45e93e8a9",
-      "bytes": 2722601,
-      "reason": "Matching generated-source copy of a deleted rejected/superseded image"
-    },
-    {
       "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-e59209c7-f241-4313-bd23-58f4d10699a6.png",
       "sha256": "e30a7e3e6602712b73db37f874a38bc3336f0b53c14a4af83c441a1ec67d1f43",
       "bytes": 2812244,
@@ -931,12 +855,6 @@
       "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-75c22fc2-04a8-4c17-a806-b51e09d2ea48.png",
       "sha256": "4ff188da7afd9abc97d60c2f7dace096942ad9ac26899f9ae266d551ae61c91a",
       "bytes": 2944701,
-      "reason": "Matching generated-source copy of a deleted rejected/superseded image"
-    },
-    {
-      "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-28a1f079-e6cf-4576-b958-9b2b3faf4ff6.png",
-      "sha256": "e7726a98cdda5ba79ae75d80220811ea050828a8f78f5429243c2d2f0f3a0cc1",
-      "bytes": 2836158,
       "reason": "Matching generated-source copy of a deleted rejected/superseded image"
     },
     {
@@ -979,12 +897,6 @@
       "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-07c6052b-1171-4d0f-8b9d-efac387e817c.png",
       "sha256": "8d4c351360c62d1a2fdfa419f7a4c75b0687538385c0ebd880797a3f5eb34245",
       "bytes": 2564872,
-      "reason": "Matching generated-source copy of a deleted rejected/superseded image"
-    },
-    {
-      "path": "/Users/dpuser/.codex/generated_images/01a1d5cf-7c78-7e60-9cd1-0a65ffa6ecb7/exec-f071c3ea-1af6-412c-9475-4eab33517685.png",
-      "sha256": "d0ed3c6e37f8d14250d99e9c2489d409507e4deddaf998086078c8db26ba7ca5",
-      "bytes": 2683678,
       "reason": "Matching generated-source copy of a deleted rejected/superseded image"
     },
     {
@@ -1527,7 +1439,6 @@
     "breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png": "9520115d8d49f69d35feb4b4b99bc14c40db8d987c2ce393d80fac57297d7920",
     "breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/03-moor-folk-final-lineup.png": "9020b64bbceeb4e0b93e9da2ff5fea96a1b02c6bd91e1b448905b41e56e3a159",
     "breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png": "594395b1fc32608f624cf173e53f3eebbaea6afa73445cb81dcacda3bb1518ea",
-    "breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/01-kitefolk-final.png": "78a0b0ae2434a79690ad944ff0a1e816f01b6b467fc661f2b1d3ec3ba167f089",
     "breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/07-boilerhouse-thaumaturge.png": "9eb5199526673fa3bf6390637189b57d70f92cbcf0af445b35bde232290f538e",
     "breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/01-graveside-listener.png": "4087553a3f73b923b73867025650570bccecc66526dd9d2a1bc0a7450d327eb6",
     "breachline/art/reference-library-2026-11-06/design-directions-round-06-2026-11-08/08-lockyard-tug.png": "cfcfc62b519bc41f7ed2c693af893463ca2689c00e7b070ef4b6482ed93950df",

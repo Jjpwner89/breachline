@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "scope": "Peoples round 12 — 22 approved briefs",
+  "scope": "Peoples round 12 — 21 retained brief/image records",
   "status": "Final creator review applied: Riverfolk and Saltreach accepted; all other round-12 people concepts rejected.",
   "source_feedback": "BRIEFS.md; current art-direction SKILL.md; SETTING.md; accepted-reference guide and selection-guide.json consulted 2026-11-13.",
   "tool": "Built-in image_gen",
@@ -918,61 +918,6 @@
       "image_removed": true
     },
     {
-      "n": 19,
-      "slug": "kitefolk",
-      "title": "Kitefolk",
-      "kind": "People reference sheet",
-      "alignment": "Exploratory",
-      "references": [
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png",
-        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png"
-      ],
-      "reference_roles": [
-        {
-          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/12-riverfolk-exploration.png",
-          "role": "Reference-sheet layout and matte painted treatment only; not Riverfolk anatomy"
-        },
-        {
-          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png",
-          "role": "Living folding membrane design inspiration only"
-        },
-        {
-          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/active-scenes-and-people-2026-11-11/03-human-faces-white-men.png",
-          "role": "Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast"
-        }
-      ],
-      "intent": "Coherent folded gliding anatomy.",
-      "prompt": "Use case: stylized-concept. Create ONE original Breachline painted people reference sheet, landscape PNG 1536 x 1024, 3:2. Warm ivory empty background. Top two thirds: exactly THREE separate full-body views of ONE representative adult (front, side, back), head to feet visible and matching anatomy and clothes. Lower third: exactly FOUR larger head-and-shoulder portraits of different adults of this people, varied in age, face, gender and features. Follow reference image 1 for layout, spacing, matte painted treatment ONLY, not Riverfolk anatomy unless specifically requested. No labels, text, lettering, borders, frame, logos or watermark. Traditional oil and acrylic, coherent broad diffuse light and shadow shapes, moderate visible brushwork, fine focal features with simpler supporting forms. Not plastic, waxy, wet-shiny, photoreal, 3D, animation or scratchy texture. Clear connected limbs, coherent hands, consistent scale. Simple practical neutral cloth unless brief says otherwise.\n\nREFERENCE ROLES:\nImage 1: Reference-sheet layout and matte painted treatment only; not Riverfolk anatomy.\nImage 2: Living folding membrane design inspiration only.\nImage 3: Adult face variety, anatomy and diffuse painted surface; new individuals, not a closed cast.\n\nExploratory new people or culture; no canon established.\n\nVISUAL APPEAL: Coherent folded gliding anatomy.\nSUBJECT BRIEF:\n- Light-boned highland people with gliding membranes from wrist to hip.\n- Related in spirit to the accepted roof glider: `../../reference-library-2026-11-06/middle-setting-round-07-2026-11-09/11-roof-glider.png`.\n- Show the membrane folded in the full-body views and open in one portrait or a fifth small study.\n- The rest of their anatomy is open.\n\nSTAGING AND CLARITY: Light-boned highland adults with short dense dusk-grey hair, lean warm brown faces, long flexible fingers. Continuous living gliding membrane connects each wrist down its own flank to hip, softly folded at sides in three full-body views. Simple short sleeveless wool vest and calf wraps allow membranes to open, no arbitrary clothing cuts through flesh. Add one small FIFTH study at far lower-right showing an adult spreading both arms and the two membranes, apart from four normal portraits. Roof-glider reference is only the plausible folding membrane relationship, not its literal animal anatomy. No extra limbs.\nCreate only this single image, without contact sheet of different scenes. For a sheet follow its specified turnaround layout.",
-      "file": "19-kitefolk.png",
-      "review_code": "P3",
-      "status": "rejected",
-      "active_reference": false,
-      "reference_candidate": false,
-      "generation_mode": "built-in image_gen",
-      "assistant_review": "Three matching turnarounds plus four adult portraits and an additional open-membrane study. Membranes join wrist to hip, hands remain separate and no extra limbs are visible.",
-      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d57d-d125-7c53-bdeb-b85291bd8965/exec-5b582e6e-5f27-469b-99f6-e3febc5a60a7.png",
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "sha256": "9c3a7a58c7015174d557d95466633f6139812197176e96148ce8e3f3d011dda4",
-      "creator_review_note": "Creator final selection: \"accept river folk and saltreach, reject all else\" (2026-11-13).",
-      "review_status": "rejected",
-      "review_date": "2026-11-13",
-      "creator_review_history": [
-        {
-          "date": "2026-11-13",
-          "stage": "before final selection",
-          "status": "liked direction; revision pending",
-          "review_status": "liked direction; revision pending",
-          "creator_review_note": "Kitefolk liked; thinner builds and more angular faces with pointier noses requested."
-        }
-      ],
-      "creator_review_status": "rejected",
-      "image_removed": true
-    },
-    {
       "n": 20,
       "slug": "lichenkin",
       "title": "Lichenkin",
@@ -1156,7 +1101,6 @@
     "G5",
     "P1",
     "P2",
-    "P3",
     "P4",
     "P6"
   ],

@@ -15,10 +15,9 @@ The index supplies exact image paths and crops, including older selections.
 Other giant studies are set aside; explicitly unknown biology stays open.
 
 LATEST FINAL PEOPLES REFERENCES — 2026-11-13
-All seven current people designs are final: KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk, PL3D Ashborn (made people), PL8B Banded folk (salt/silt variants), CR3 Crest folk and CO1 Greyhides. Their unchanged PNGs and exact selections are in peoples-final-2026-11-13/prompts-and-manifest.json. PL3D is the original before extra scarring; PL3E is rejected. Current lore is in ../../SETTING.md: the Ashborn are Dominion's raised dead with weak souls. Other depicted clothing, jobs and settings remain examples unless separately established in the lore.
 
 LATEST SELECTION — PEOPLES ROUND 12 (2026-11-13)
-Nine accepted Riverfolk and Saltreach references are in peoples-round-12-2026-11-13/: R1v2, R2, R3v2, R4, R5, R6, W5, P5v2 and W3. All other round-12 people concepts are rejected, including the previously liked Cairnfold, Glimmerfolk and Kitefolk. R5/R6 remain especially liked. These additions postdate the v13 ZIP listed below; consult the folder's review.html and CLAUDE_HANDOFF.txt for the current selections.
+Nine accepted Riverfolk and Saltreach references are in peoples-round-12-2026-11-13/: R1v2, R2, R3v2, R4, R5, R6, W5, P5v2 and W3. All other round-12 people concepts are rejected, including the previously liked Cairnfold, Glimmerfolk. R5/R6 remain especially liked. These additions postdate the v13 ZIP listed below; consult the folder's review.html and CLAUDE_HANDOFF.txt for the current selections.
 
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon

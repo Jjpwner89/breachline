@@ -4,7 +4,7 @@ Open review.html.
 CR3: actual smaller crests on arms, shoulders and upper chest; proposal for review.
 PL8B and CO1 remain open.
 
-FINAL: PL3D made people, PL7 Moor folk, KR1 Kitefolk and GR1 Glimmerfolk.
+FINAL: PL3D made people, PL7 Moor folk, GR1 Glimmerfolk.
 PL3D is preserved unchanged before the stronger scars; no individual selected.
 Final images and handoffs are in ../../reference-library-2026-11-06/peoples-final-2026-11-13/.
 
@@ -16,4 +16,4 @@ Complete prompts and decisions: prompts-and-manifest.json
 All images are 1536 × 1024 PNGs.
 
 SCENES AND CARD CATALOGUE
-../peoples-in-the-world-2026-11-13/catalogue.html — seven scenes, ten card ideas; all proposals.
+../peoples-in-the-world-2026-11-13/catalogue.html — six scenes, nine card ideas; all proposals.
