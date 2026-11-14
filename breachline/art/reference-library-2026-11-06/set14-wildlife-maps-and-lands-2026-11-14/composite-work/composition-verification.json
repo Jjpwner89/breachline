@@ -1,0 +1,607 @@
+[
+  {
+    "code": "S14-M1",
+    "name": "map-genesis.png",
+    "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+    "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-genesis.png",
+    "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-genesis-v1-full-repaint.png",
+    "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/composite-work/corrected/map-genesis.png",
+    "patches": [
+      {
+        "points": [
+          [
+            1051,
+            471
+          ],
+          [
+            1081,
+            462
+          ],
+          [
+            1108,
+            438
+          ],
+          [
+            1118,
+            444
+          ],
+          [
+            1112,
+            462
+          ],
+          [
+            1143,
+            478
+          ],
+          [
+            1157,
+            472
+          ],
+          [
+            1170,
+            460
+          ],
+          [
+            1178,
+            463
+          ],
+          [
+            1175,
+            476
+          ],
+          [
+            1193,
+            477
+          ],
+          [
+            1211,
+            457
+          ],
+          [
+            1227,
+            458
+          ],
+          [
+            1249,
+            436
+          ],
+          [
+            1260,
+            441
+          ],
+          [
+            1255,
+            454
+          ],
+          [
+            1286,
+            463
+          ],
+          [
+            1300,
+            490
+          ],
+          [
+            1286,
+            514
+          ],
+          [
+            1240,
+            518
+          ],
+          [
+            1170,
+            528
+          ],
+          [
+            1080,
+            527
+          ],
+          [
+            1054,
+            504
+          ]
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1043,
+          "top": 428,
+          "width": 265,
+          "height": 108
+        },
+        "target_box": {
+          "left": 1043,
+          "top": 428,
+          "width": 265,
+          "height": 108
+        },
+        "pixels_in_support": 15789,
+        "iterations": 166,
+        "boundary_residual": 0.014970779418945312
+      },
+      {
+        "points": [
+          [
+            646,
+            213
+          ],
+          [
+            666,
+            203
+          ],
+          [
+            693,
+            200
+          ],
+          [
+            704,
+            191
+          ],
+          [
+            721,
+            195
+          ],
+          [
+            724,
+            213
+          ],
+          [
+            739,
+            220
+          ],
+          [
+            732,
+            235
+          ],
+          [
+            695,
+            247
+          ],
+          [
+            649,
+            244
+          ]
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 638,
+          "top": 183,
+          "width": 109,
+          "height": 72
+        },
+        "target_box": {
+          "left": 638,
+          "top": 183,
+          "width": 109,
+          "height": 72
+        },
+        "pixels_in_support": 3994,
+        "iterations": 72,
+        "boundary_residual": 0.014867782592773438
+      },
+      {
+        "points": [
+          [
+            706,
+            215
+          ],
+          [
+            723,
+            211
+          ],
+          [
+            741,
+            227
+          ],
+          [
+            775,
+            228
+          ],
+          [
+            818,
+            240
+          ],
+          [
+            833,
+            245
+          ],
+          [
+            822,
+            258
+          ],
+          [
+            777,
+            267
+          ],
+          [
+            721,
+            270
+          ],
+          [
+            699,
+            253
+          ]
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 691,
+          "top": 203,
+          "width": 150,
+          "height": 75
+        },
+        "target_box": {
+          "left": 691,
+          "top": 203,
+          "width": 150,
+          "height": 75
+        },
+        "pixels_in_support": 5246,
+        "iterations": 90,
+        "boundary_residual": 0.01475970447063446
+      }
+    ],
+    "total_pixels": 1572864,
+    "mask_pixels": 24052,
+    "mask_percent": 1.5291849772135417,
+    "changed_pixels": 23623,
+    "outside_mask_changed_pixels": 0,
+    "max_outside_channel_difference": 0,
+    "sha256": "037618f2317cb00fd358c232e98af292a70ffb143e9cc80343de265e15754734",
+    "saved_gallery_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-genesis.png"
+  },
+  {
+    "code": "S14-M2",
+    "name": "map-gnosis.png",
+    "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+    "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-gnosis.png",
+    "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-gnosis-v1-full-repaint.png",
+    "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/composite-work/corrected/map-gnosis.png",
+    "patches": [
+      {
+        "points": [
+          [
+            1323,
+            211
+          ],
+          [
+            1354,
+            205
+          ],
+          [
+            1374,
+            193
+          ],
+          [
+            1422,
+            189
+          ],
+          [
+            1468,
+            174
+          ],
+          [
+            1481,
+            176
+          ],
+          [
+            1473,
+            188
+          ],
+          [
+            1485,
+            192
+          ],
+          [
+            1450,
+            201
+          ],
+          [
+            1434,
+            216
+          ],
+          [
+            1381,
+            230
+          ],
+          [
+            1338,
+            231
+          ],
+          [
+            1318,
+            223
+          ]
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1310,
+          "top": 166,
+          "width": 183,
+          "height": 73
+        },
+        "target_box": {
+          "left": 1310,
+          "top": 166,
+          "width": 183,
+          "height": 73
+        },
+        "pixels_in_support": 4968,
+        "iterations": 85,
+        "boundary_residual": 0.014600753784179688
+      }
+    ],
+    "total_pixels": 1572864,
+    "mask_pixels": 4968,
+    "mask_percent": 0.31585693359375,
+    "changed_pixels": 4665,
+    "outside_mask_changed_pixels": 0,
+    "max_outside_channel_difference": 0,
+    "sha256": "9809ae566bfd4a6008201cbbb727d2e35646a3e4b4b415ea0df46ff7561fabaf",
+    "saved_gallery_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-gnosis.png"
+  },
+  {
+    "code": "S14-M3",
+    "name": "map-fervor.png",
+    "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+    "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-fervor.png",
+    "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-fervor-v1-full-repaint.png",
+    "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/composite-work/corrected/map-fervor.png",
+    "patches": [
+      {
+        "ellipse": [
+          1320,
+          141,
+          19,
+          14
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1293,
+          "top": 119,
+          "width": 54,
+          "height": 44
+        },
+        "target_box": {
+          "left": 1293,
+          "top": 119,
+          "width": 54,
+          "height": 44
+        },
+        "pixels_in_support": 996,
+        "iterations": 35,
+        "boundary_residual": 0.014637313783168793
+      },
+      {
+        "ellipse": [
+          1366,
+          125,
+          18,
+          13
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1340,
+          "top": 104,
+          "width": 52,
+          "height": 42
+        },
+        "target_box": {
+          "left": 1340,
+          "top": 104,
+          "width": 52,
+          "height": 42
+        },
+        "pixels_in_support": 888,
+        "iterations": 23,
+        "boundary_residual": 0.014091312885284424
+      },
+      {
+        "ellipse": [
+          1400,
+          109,
+          18,
+          12
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1374,
+          "top": 89,
+          "width": 52,
+          "height": 40
+        },
+        "target_box": {
+          "left": 1374,
+          "top": 89,
+          "width": 52,
+          "height": 40
+        },
+        "pixels_in_support": 835,
+        "iterations": 42,
+        "boundary_residual": 0.014941215515136719
+      },
+      {
+        "ellipse": [
+          1430,
+          141,
+          20,
+          14
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1402,
+          "top": 119,
+          "width": 56,
+          "height": 44
+        },
+        "target_box": {
+          "left": 1402,
+          "top": 119,
+          "width": 56,
+          "height": 44
+        },
+        "pixels_in_support": 1048,
+        "iterations": 47,
+        "boundary_residual": 0.01430724747478962
+      },
+      {
+        "ellipse": [
+          1466,
+          125,
+          19,
+          14
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1439,
+          "top": 103,
+          "width": 54,
+          "height": 44
+        },
+        "target_box": {
+          "left": 1439,
+          "top": 103,
+          "width": 54,
+          "height": 44
+        },
+        "pixels_in_support": 996,
+        "iterations": 47,
+        "boundary_residual": 0.014606177806854248
+      }
+    ],
+    "total_pixels": 1572864,
+    "mask_pixels": 4762,
+    "mask_percent": 0.3027598063151042,
+    "changed_pixels": 4449,
+    "outside_mask_changed_pixels": 0,
+    "max_outside_channel_difference": 0,
+    "sha256": "9135928461cb5ba76390b8c42d0bd28afb819d3c5a765ee83afa39210d80d425",
+    "saved_gallery_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-fervor.png"
+  },
+  {
+    "code": "S14-M4",
+    "name": "map-vigil.png",
+    "method": "Original RGB pixels plus narrowly masked wildlife patches; harmonic local boundary colour matching; no full-canvas adjustment.",
+    "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/originals/map-vigil.png",
+    "donor": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/history/map-vigil-v2-full-repaint.png",
+    "output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/composite-work/corrected/map-vigil.png",
+    "patches": [
+      {
+        "ellipse": [
+          905,
+          322,
+          18,
+          10
+        ],
+        "dx": -106,
+        "dy": -104,
+        "source_box": {
+          "left": 879,
+          "top": 304,
+          "width": 52,
+          "height": 36
+        },
+        "target_box": {
+          "left": 773,
+          "top": 200,
+          "width": 52,
+          "height": 36
+        },
+        "pixels_in_support": 706,
+        "iterations": 32,
+        "boundary_residual": 0.014347553253173828
+      },
+      {
+        "ellipse": [
+          971,
+          310,
+          17,
+          10
+        ],
+        "dx": -133,
+        "dy": -106,
+        "source_box": {
+          "left": 946,
+          "top": 292,
+          "width": 50,
+          "height": 36
+        },
+        "target_box": {
+          "left": 813,
+          "top": 186,
+          "width": 50,
+          "height": 36
+        },
+        "pixels_in_support": 672,
+        "iterations": 34,
+        "boundary_residual": 0.013701438903808594
+      },
+      {
+        "ellipse": [
+          1023,
+          326,
+          17,
+          10
+        ],
+        "dx": -172,
+        "dy": -86,
+        "source_box": {
+          "left": 998,
+          "top": 308,
+          "width": 50,
+          "height": 36
+        },
+        "target_box": {
+          "left": 826,
+          "top": 222,
+          "width": 50,
+          "height": 36
+        },
+        "pixels_in_support": 672,
+        "iterations": 36,
+        "boundary_residual": 0.013471126556396484
+      },
+      {
+        "ellipse": [
+          1267,
+          578,
+          33,
+          22
+        ],
+        "dx": 0,
+        "dy": 0,
+        "source_box": {
+          "left": 1226,
+          "top": 548,
+          "width": 82,
+          "height": 60
+        },
+        "target_box": {
+          "left": 1226,
+          "top": 548,
+          "width": 82,
+          "height": 60
+        },
+        "pixels_in_support": 2557,
+        "iterations": 73,
+        "boundary_residual": 0.014641761779785156
+      }
+    ],
+    "total_pixels": 1572864,
+    "mask_pixels": 4607,
+    "mask_percent": 0.29290517171223956,
+    "changed_pixels": 4451,
+    "outside_mask_changed_pixels": 0,
+    "max_outside_channel_difference": 0,
+    "sha256": "01e6927e2afbb66a52df987343574bce148b7cf5e6bfb6017ac35c379728b142",
+    "saved_gallery_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/map-vigil.png"
+  }
+]

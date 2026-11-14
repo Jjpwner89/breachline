@@ -198,7 +198,8 @@
     tortoise: { line: 'The village moved twice last year. Nobody packed.' },
     recruit: { line: 'He has already written the letter home, in case.' }
   };
-  function artSrc(id) { return 'art/web/' + ART[id] + '.jpg'; }
+  var ART_VERSION = { land_w: 'set14-20261114', land_u: 'set14-20261114', land_g: 'set14-20261114' };
+  function artSrc(id) { return 'art/web/' + ART[id] + '.jpg' + (ART_VERSION[id] ? '?v=' + ART_VERSION[id] : ''); }
   // The board rebuilds on every render, so a battle holds both decks' paintings decoded from its start to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
   // The other paintings trickle in a few at a time after the first screen, so a first visit isn't held up by every painting in the game.

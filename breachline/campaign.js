@@ -15,7 +15,7 @@ var Campaign = (function () {
   var ORDER = ['vigil', 'gnosis', 'dominion', 'fervor', 'genesis'];
   var STORIES = {
     vigil: {
-      id: 'vigil', colour: 'W', title: 'The Shrine Road', starter: 'white', map: 'art/web/maps/map-vigil.jpg',
+      id: 'vigil', colour: 'W', title: 'The Shrine Road', starter: 'white', map: 'art/web/maps/map-vigil.jpg?v=set14-20261114',
       road: [[0, 99], [3.9, 96], [6.5, 88], [11, 81], [13.3, 77], [16, 75], [21.5, 74.7], [24, 77], [28.6, 80], [34.5, 83], [40, 81], [43, 77], [45.6, 71.3], [50, 62.5], [54, 58.5], [58.5, 54], [59.2, 51.8], [57.3, 50.3], [54, 49.3], [50, 47.5], [46, 45.2], [40, 41.5], [30.5, 36], [34.5, 33.7], [38.4, 32.2], [41.7, 29.3], [47, 27.3], [54, 26.9], [61, 26], [64, 24], [69, 23.2], [75, 22.6], [79, 20.5], [85, 19]],
       premise: 'A shepherd came down from the high country with a story. At the old shrine, after a hundred and fifty years, something answered her. The Oath has heard stories before. It sends you anyway.',
       ending: 'The shrine is one small room with a cold lamp. You light it and wait. Near dawn, with no wind, the flame leans toward you. It might be nothing. You send word anyway.',
@@ -54,7 +54,7 @@ var Campaign = (function () {
       ]
     },
     gnosis: {
-      id: 'gnosis', colour: 'U', title: 'The Long Survey', starter: 'blue', map: 'art/web/maps/map-gnosis.jpg',
+      id: 'gnosis', colour: 'U', title: 'The Long Survey', starter: 'blue', map: 'art/web/maps/map-gnosis.jpg?v=set14-20261114',
       road: [[100, 85.9], [96.4, 84.2], [91.1, 80.1], [86, 76], [78.1, 72.8], [71.6, 70.5], [66.4, 66.4], [62, 62], [56, 63.5], [51.4, 64.5], [45.6, 70.3], [41.7, 75.2], [38, 74], [30.6, 74.2], [26, 70.3], [21.5, 62.5], [18.6, 56.2], [17, 52], [19.5, 46.9], [24.7, 43.5], [29.3, 39.1], [33.9, 33.7], [40, 30], [33.9, 29.3], [28.6, 26.4], [24.7, 22.5], [19.5, 19.5], [15, 18]],
       premise: "The Conclave has found an Old Empire survey that ends at an observatory nobody has opened in a hundred and fifty years. They want to know what it was measuring. You're the one they can spare.",
       ending: 'The great lens still points at the same empty patch of sky. You take the measurements anyway. They make no sense yet. They will.',
@@ -132,7 +132,7 @@ var Campaign = (function () {
       ]
     },
     fervor: {
-      id: 'fervor', colour: 'R', title: 'No Throne', starter: 'red', map: 'art/web/maps/map-fervor.jpg',
+      id: 'fervor', colour: 'R', title: 'No Throne', starter: 'red', map: 'art/web/maps/map-fervor.jpg?v=set14-20261114',
       road: [[0, 2.9], [3.9, 5.9], [7.8, 10.7], [10.4, 16.6], [14, 22], [21.5, 20.5], [28.6, 18.6], [36.5, 16.1], [44, 15], [54.7, 15.6], [60.5, 17.6], [65.8, 21.5], [71, 24.9], [76, 27], [76.2, 29.3], [71.6, 34.2], [65.8, 37.6], [60.5, 40], [58.4, 40.2], [52.6, 43], [47, 46], [43, 46.7], [39.3, 47.6], [35, 50.1], [31.7, 53.8], [27.5, 57.6], [22, 62], [27.3, 66.4], [33.9, 72.3], [41.7, 78.1], [52.1, 83], [59.9, 84], [70, 80]],
       premise: 'Someone is rebuilding the high seat. The moot voted, and it was close, but nobody wants a king.',
       ending: "You take the seat apart stone by stone, and every band carries one home. Next year someone will try again. Next year you'll vote again.",
@@ -171,7 +171,7 @@ var Campaign = (function () {
       ]
     },
     genesis: {
-      id: 'genesis', colour: 'G', title: 'The Green Return', starter: 'green', map: 'art/web/maps/map-genesis.jpg',
+      id: 'genesis', colour: 'G', title: 'The Green Return', starter: 'green', map: 'art/web/maps/map-genesis.jpg?v=set14-20261114',
       road: [[100, 5.9], [96.4, 8.8], [91.1, 13.7], [84, 16], [78.1, 19.5], [71.6, 20.5], [67.1, 21], [62.5, 22.7], [58, 24], [60.5, 29.3], [63.8, 37.1], [67.1, 43], [70, 52], [65, 47.6], [54.2, 41.9], [45.8, 40.2], [39.2, 41.3], [37.1, 45], [38.3, 55.1], [40, 65], [43.4, 72.6], [48, 76], [39.1, 77.6], [32.6, 75.7], [26, 75.7], [20.8, 75.2], [16, 72]],
       premise: 'Something upstream has slowed the river. The fish are late, the reeds are dying, and the herd has started walking.',
       ending: "The dam gave way slowly, then all at once. By summer the river runs through the old city's halls, and the first families are planting in them.",

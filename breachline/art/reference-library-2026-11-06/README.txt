@@ -392,3 +392,8 @@ batches retain their prior statuses. No cards were chosen in this review.
 Lessons of Brass is cut as a painting; Ambrel teaching magic as a practical trade
 is retained as setting direction. Rare enduring enchantments remain possible
 despite rejection of the river-orchard painting.
+
+SET 14 WILDLIFE — FINAL AND INSTALLED — 2026-11-14
+Four campaign maps and three basic lands are final and installed in the game.
+Gallery and exact selections: set14-wildlife-maps-and-lands-2026-11-14/index.html
+Originals, local-composite verification and installation hashes are retained in that folder.
