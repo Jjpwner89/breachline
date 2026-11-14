@@ -440,7 +440,12 @@ var CODEX_ENTRIES = {
        "p": "They do not name the great beasts, holding that a name is a kind of ownership, and they will not settle land the herd has passed without grazing. They have a saying that the herd is never lost; only the people who leave it are."
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "title": "The peoples",
+   "entries": [
     {
      "id": "L25",
      "title": "Humans",
