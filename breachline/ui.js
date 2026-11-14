@@ -1324,7 +1324,7 @@
 
   // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
   // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
-  var turned = null;
+  var turned = null, chooseTimer = null;
   function deckHtml(d, role) {
     var key = role + ':' + d.id, open = turned === key, on = picks[role] === d.id, front, plan, problems = [];
     if (d.id === 'random') {
@@ -1441,7 +1441,21 @@
   }
   $('start').addEventListener('click', function (e) {
     var pick = e.target.closest('[data-choose]');
-    if (pick) { picks[pick.dataset.choose] = pick.dataset.deck; turned = null; Sfx.play('card-flip', { gap: 0 }); return renderStart(); }
+    // A chosen deck says so for a moment, then turns back over at the usual pace before the lists catch up.
+    if (pick) {
+      var role = pick.dataset.choose, card = pick.closest('.dcard'), key = turned;
+      picks[role] = pick.dataset.deck;
+      pick.disabled = true;
+      pick.textContent = 'Chosen';
+      Array.prototype.forEach.call($(role === 'mine' ? 'myDecks' : 'oppDecks').querySelectorAll('.dcard.on'), function (c) { c.classList.remove('on'); });
+      card.classList.add('on');
+      clearTimeout(chooseTimer);
+      chooseTimer = setTimeout(function () {
+        if (turned === key) turnStart(key);
+        chooseTimer = setTimeout(renderStart, 550);
+      }, 450);
+      return;
+    }
     var card = e.target.closest('.dcard');
     if (card) return turnStart(card.dataset.turn);
     if (turned && !e.target.closest('button, input, select, label')) return turnStart(turned);
