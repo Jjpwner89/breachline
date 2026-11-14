@@ -36,7 +36,7 @@ var Engine = (function () {
     unit('maren', 'Saint Maren of the Long Watch', 'W', 6, 3, 4, 12, { sub: 'Velunn', ability: { key: 'healall', label: 'Heal all', amount: 2 }, text: 'Ability: heal all adjacent allies 2.' }),
     unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 2, 2, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
     unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack on its first attack.' }),
-    unit('captain', 'Mercenary captain', 'R', 4, 2, 3, 4, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
+    unit('captain', 'Mercenary captain', 'R', 4, 2, 3, 4, { ability: { key: 'orders', label: 'Orders' }, text: "Ability: an adjacent ally that hasn't moved yet can move 1 extra tile this turn." }),
     unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying', 'Fireproof'], deathBurn: 'self', text: "Flying: moves 2 tiles, over other units. Fireproof: burning tiles don't hurt it. When it dies: its tile burns for 2 turns." }),
     { id: 'decoy', name: 'Illusory decoy', type: 'enchant', colour: 'U', cost: 1, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, mirage: true, keywords: [], text: 'Enchant one of your units: the next attack on it misses.' },
     unit('decoyunit', 'Illusory decoy', 'U', 1, 1, 0, 1, { keywords: ['Decoy'], token: true, text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
@@ -59,7 +59,7 @@ var Engine = (function () {
     { id: 'shifting', name: 'Shifting forest', type: 'instant', colour: 'G', cost: 1, wants: 1, shove: true, damage: 1, text: 'Push an enemy unit 1 tile back toward its side, and it takes 1 damage.' },
     unit('youngsummoner', 'Young summoner', 'N', 2, 0, 1, 2, { keywords: ['Errant'], errant: 'follower', text: 'Errant. When summoned: summon a Camp follower on a random tile in your back row.' }),
     { id: 'stillflame', name: 'The Still Flame', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, regrow: 2, token: true, text: 'Enchant one of your units: it recovers 2 health at the start of your turn.' },
-    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally can attack up to 2 tiles away this turn.' }),
+    unit('lampwright', 'Ambrel lampwright', 'U', 3, 1, 2, 4, { ability: { key: 'lens', label: 'Lens' }, text: 'Ability: an adjacent ally gets +1 range this turn.' }),
     { id: 'across', name: 'Across the silence', type: 'spell', colour: 'N', cost: 4, wants: 0, draw: 2, scry: 2, text: 'Draw two cards. Then look at the top 2 cards of your deck and put each on the top or the bottom.' },
     { id: 'shelter', name: 'Winter shelter', type: 'enchant', colour: 'W', cost: 2, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, shelter: 2, text: 'Enchant one of your units: it takes 2 less damage from attacks.' },
     { id: 'marble', name: 'Through the marble', type: 'enchant', colour: 'G', cost: 4, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, grows: true, growNow: true, text: 'Enchant one of your units: +1 attack and +2 health now, and again at the start of your next two turns.' },
@@ -352,8 +352,10 @@ var Engine = (function () {
   // Longshot fires only from a standstill. Once it has moved on its own turn it fights in melee. A Prism bracer adds a tile to either.
   function range(u) {
     var far = (u.enchants || []).reduce(function (n, e) { return n + (CARDS[e.c].reach || 0); }, 0);
-    if (hasKw(u, 'Longshot')) return (u.walked ? 1 : 3) + far;
-    return (hasKw(u, 'Ranged') || u.tempRange ? 2 : 1) + far;
+    // The Ambrel lampwright's Lens adds 1 for the turn.
+    var lens = u.tempRange ? 1 : 0;
+    if (hasKw(u, 'Longshot')) return (u.walked ? 1 : 3) + far + lens;
+    return (hasKw(u, 'Ranged') ? 2 : 1) + far + lens;
   }
   function dist(a, b) { return Math.abs(a.r - b.r) + Math.abs(a.c - b.c); }
 
@@ -864,11 +866,11 @@ var Engine = (function () {
           }
         });
       } else if (ab.key === 'lens') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange && range(a) === 1) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.acted && !a.tempRange) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'healall') {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && (a.hp < a.maxHp || devoNear(s, a)); })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'orders') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && a.moved && !a.acted && reachable(s, a).length) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.moved && !a.acted && a.ordered !== s.turn && reachable(s, a).length) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'study' || ab.key === 'sift' || ab.key === 'forage') {
         if (!u.moved) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'push') {
@@ -1774,8 +1776,8 @@ var Engine = (function () {
           say(s, CARDS[u.cardId].name + ' heals nearby allies.');
         } else if (ab.key === 'orders') {
           var ally = unitById(s, m.target);
-          ally.moved = false;
-          say(s, CARDS[u.cardId].name + ' orders ' + CARDS[ally.cardId].name + ' to move again.');
+          ally.stride = (ally.stride || 0) + 1; ally.ordered = s.turn;
+          say(s, CARDS[u.cardId].name + ' orders ' + CARDS[ally.cardId].name + ' 1 tile further.');
         } else if (ab.key === 'study') {
           u.moved = true;
           draw(s, pi);
