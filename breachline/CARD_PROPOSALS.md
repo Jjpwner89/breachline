@@ -636,7 +636,7 @@ New rules these cards use:
 | 195 | Peat-cutter | Moor folk |  | G | Unit | 2 | 1 | 2 / 4 | None | None |
 | 196 | Moor guide | Moor folk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: an ally next to it can move 1 extra tile on its next turn | Small |
 | 197 | The moor keeps its own | Moor folk | Thornwardens | G | Spell | 1 | 1 |  | Aim at a 2 × 2 square: each enemy there takes 1 damage and can't move on its next turn | Small: green lightning effect |
-| 198 | Moot elder | Moor folk |  | G | Unit | 5 | 2 | 5 / 6 | None; flavour text only | None |
+| 198 | Moot elder | Moor folk |  | G | Unit | 6 | 2 | 5 / 6 | None; flavour text only | None |
 | 199 | Doomed conscript | Ashborn | Ashen Court | B | Unit | 2 | 1 | 1 / 2 | Ledgered | Ledgered |
 | 200 | Husk | Ashborn | Ashen Court | B | Unit | 3 | 1 | 4 / 4 to start | Blank | Blank, and bot support |
 | 201 | Tithe-drinker | Ashborn | Ashen Court | B | Unit | 4 | 2 | 3 / 5 | Ability: destroy an adjacent ally. This unit permanently gets +2 attack and +2 health | Small: Harvest with health |
@@ -655,7 +655,7 @@ New rules these cards use:
 | 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
 | 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, for 2 turns | None: snare |
 
-Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder stays a 5/6 and about 1.8 over the common band: 5/5, 4/6 and 4/5 all scored the same, so its stats aren't what drives the result.
+Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder scored about 1.8 over the common band at cost 5 whether it was 5/6, 5/5, 4/6 or 4/5, so the creator raised its cost to 6, which brings it into band (lift +0.2).
 
 Changed alongside them:
 

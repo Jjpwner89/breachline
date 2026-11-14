@@ -255,7 +255,7 @@ var Engine = (function () {
     unit('peatcutter', 'Peat-cutter', 'G', 2, 1, 2, 4, { sub: 'Moor folk' }),
     unit('moorguide', 'Moor guide', 'G', 2, 1, 2, 3, { sub: 'Moor folk', ability: { key: 'guide', label: 'Guide' }, text: 'Ability: an ally next to it can move 1 extra tile on its next turn.' }),
     { id: 'moorkeeps', name: 'The moor keeps its own', type: 'spell', colour: 'G', cost: 1, wants: 1, aim: { block: true, mire: true, foes: 1, fx: 'wild' }, text: "Aim at a 2 × 2 square of tiles: each enemy there takes 1 damage and can't move on its next turn." },
-    unit('mootelder', 'Moot elder', 'G', 5, 2, 5, 6, { sub: 'Moor folk' }),
+    unit('mootelder', 'Moot elder', 'G', 6, 2, 5, 6, { sub: 'Moor folk' }),
     unit('conscript', 'Doomed conscript', 'B', 2, 1, 1, 2, { sub: 'Ashborn', keywords: ['Ledgered'], text: 'Ledgered: when it dies, you draw a card.' }),
     unit('husk', 'Husk', 'B', 3, 1, 4, 4, { sub: 'Ashborn', keywords: ['Blank'], text: "Blank: it can't attack unless another of your units is next to it." }),
     unit('tithedrinker', 'Tithe-drinker', 'B', 4, 2, 3, 5, { sub: 'Ashborn', ability: { key: 'harvest', label: 'Drink', amount: 2, hp: 2 }, text: 'Ability: destroy an adjacent ally. This unit permanently gets +2 attack and +2 health.' }),
