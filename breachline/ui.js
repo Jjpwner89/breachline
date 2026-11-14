@@ -264,6 +264,8 @@
     return S.tutorial ? ms.filter(Tutorial.allows) : ms;
   }
   function unitById(uid) { return S.units.filter(function (u) { return u.uid === uid; })[0]; }
+  // Blank: a unit with no ally next to it can't attack.
+  function blankAlone(u) { return !!u && E.hasKw(u, 'Blank') && !E.nextToAlly(S, u); }
   function cardOf(id) {
     var h = S.players[HUMAN].hand.filter(function (i) { return i.id === id; })[0];
     return h ? E.CARDS[h.c] : null;
@@ -731,6 +733,7 @@
         out.push(btn('Back', { ui: 'noAbility' }));
       } else {
         cmdHint = sm.length ? 'Move to a dashed tile or attack a highlighted target.' : 'This unit has nothing it can do right now.';
+        if (blankAlone(u)) cmdHint = "It can't attack without another of your units next to it." + (sm.some(function (m) { return m.type === 'move'; }) ? ' Move to a dashed tile.' : '');
         var abMoves = sm.filter(function (m) { return m.type === 'ability'; });
         if (abMoves.length && abMoves[0].raise) {
           // One button for each different unit Exhume could return.
@@ -1136,6 +1139,8 @@
     if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && sel && sel.ability && sm.some(function (m) { return m.type === 'ability' && m.r !== undefined && m.target === u.uid; })) { sel.abUnit = u.uid; return render(); }
+    // Trying to attack with a Blank unit that stands alone gets the not-allowed sound, and the unit stays selected.
+    if (u && sel && sel.kind === 'unit' && !sel.ability && unitById(sel.id) && u.owner !== unitById(sel.id).owner && blankAlone(unitById(sel.id))) { Sfx.play('not-allowed', { gap: 120 }); return; }
     if (u && u.owner === HUMAN && !S.pending && S.active === HUMAN && (S.phase === 'command' || (S.free && S.phase === 'play'))) { sel = { kind: 'unit', id: u.uid }; return render(); }
     if (sel) { sel = null; render(); }
   }
