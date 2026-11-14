@@ -1,0 +1,37 @@
+{
+  "id": "SP1",
+  "card_id": "spark",
+  "title": "Spark",
+  "date": "2026-11-13",
+  "folder": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/spark-2026-11-13",
+  "filename": "01-spark.png",
+  "prompt": "Use case: illustration-story.\nAsset: one finished Breachline fantasy spell-card painting, landscape 1536 x 1024, edge-to-edge illustration without typography or a card frame.\n\nAn intimate, striking close-up of a small act of learned magic. An adult human mage's RIGHT HAND extends diagonally from a worn indigo linen sleeve in the lower left. The palm faces partly toward us. The thumb and index finger form a loose open pinch, several centimetres apart; the other three fingers curl naturally toward the palm. In the clear space BETWEEN thumb and forefinger, a tiny fierce BLUE-WHITE SPARK has just snapped into being. It has a brilliant irregular white core, a short jagged fork of electric blue and a few warm copper flecks breaking away. The spark is the painting's focal point: small, lively, precise, with a sense of energy held at the brink of release. It is not an orb, a floating crystal, a flame creature or a large explosion.\n\nThe hand is large enough to read at card size, beautifully and accurately observed, five distinct fingers, convincing thumb joint and wrist. Warm natural matte skin, slightly ink-stained fingertips and a simple stitched cuff; no jewellery or ornate armour. The spark casts a small coherent cool reflection onto the nearby finger pads, while warm oblique window daylight reveals the hand's broad planes.\n\nBehind it, a quiet shadowed teaching room in an old stone city, suggested with only a few broad painted shapes: a worn wooden tabletop, an indistinct closed book low in the frame, muted plaster and blue-grey shadow. No other hands or people, no visible face. These secondary forms should stay very quiet and unimportant. Keep the full hand, fingertips and spark comfortably inside the frame with breathing room around the focal area.\n\nTraditional oil-and-acrylic fantasy painting, confident visible brushwork, clean broad forms, selective crispness on the fingertips and spark, softer lost edges in the sleeve and background. Restrained deep indigo, warm umber and luminous electric blue, with believable shared illumination. A small spell made compelling through paint, gesture and light. Natural matte materials; avoid glossy CGI, cartoon or toy forms, photographic skin pores, grain overlays, all-over scratches, stippling, uniform sharpness, giant beams, magic circles, glyph diagrams, text, lettering, borders, logos, watermarks and signatures.",
+  "references": [],
+  "status": "final_for_card_building",
+  "caption": "A tiny blue-white spark snaps into being between a mage’s thumb and forefinger, its light catching the ink-stained fingertips. This close-up proposes a quiet moment of learned magic for Spark, with the spell itself as the focal point.",
+  "creator_approved": true,
+  "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-988e493d-bc22-4c34-b4e0-563dfd68b578.png",
+  "saved_image": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/spark-2026-11-13/01-spark.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "f1c1f2da0b629c5183d25428c06a248b5c4a02c4c8fb56556f57bc95e5d98700",
+  "method": "built-in image_gen",
+  "visual_review": {
+    "reviewer": "assistant",
+    "assessment": "provisional_keep",
+    "checks": [
+      "One coherent hand with thumb/index pinch and three naturally curled fingers.",
+      "Small bright spark and reflected light read clearly at card scale.",
+      "Painted material response, broad quiet background and safe focal margins.",
+      "No text, border or unwanted additional characters."
+    ],
+    "notes": [
+      "Creator accepted the image unchanged. Scene-specific art approval does not establish new lore or install it into the game."
+    ]
+  },
+  "creator_authorization": "perfect commit that and any outstanding changes. you have a lot pending, ignore nsfw obvisouly",
+  "finalized_at_utc": "2026-11-14T03:52:50.486699+00:00",
+  "scope": "Approved Spark spell-card artwork and generation records; no live-card installation or personal-art material included."
+}

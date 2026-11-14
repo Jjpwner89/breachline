@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-13",
+  "selected_originals": [
+    {
+      "code": "E3-A",
+      "name": "Graftmidge",
+      "file": "e3-a-proposed.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e3-a-proposed.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e3-a-proposed.png",
+      "status": "selected_original_visual",
+      "description": "Liked plant-nursery insect; adult, larva and gall retained.",
+      "sha256": "cc5afad0bbfa58ed4aaef000cce6f4d796df667b3f32f435007209080614cebc",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "E3-B",
+      "name": "Gall glider",
+      "file": "e3-b-freeform.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e3-b-freeform.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e3-b-freeform.png",
+      "status": "selected_original_visual",
+      "description": "Strongly liked furred plant-nursery animal. Gliding is requested; ER2 tests the opened membranes without replacing this selected source identity.",
+      "sha256": "e8a9f58e3751466841f9545b89c75649ffa10b4bc5c56bb96e96c75d74e601be",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "E5-B",
+      "name": "Translucent parasite",
+      "file": "e5-b-freeform.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e5-b-freeform.png",
+      "status": "selected_original_visual",
+      "description": "Translucent parasite liked. The fish-eating hunter shown in context is a separate animal, never a later form; ER6 develops the hunter.",
+      "sha256": "bb7812a2de7f91d162352ecfb79d81b9e3530467d273f683ffb0871e561798fa",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "E6-A",
+      "name": "Siltwrights",
+      "file": "e6-a-proposed.png",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e6-a-proposed.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/ecological-niche-pairs-2026-11-13/e6-a-proposed.png",
+      "status": "selected_original_visual",
+      "description": "Ant-like worker and warrior forms liked, including nuts stored visibly inside the body.",
+      "sha256": "0366d62e55ae9047e948fb9b5d980fdba100d86870cb226616b772c690f5443f",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "all_source_decisions": {
+    "E1-A": {
+      "decision": "undecided",
+      "notes": "E1-B chosen for follow-up; no explicit rejection of E1-A."
+    },
+    "E1-B": {
+      "decision": "like",
+      "notes": "Chosen burrower. Remove the entire dorsal sack/pouch; preserve the strange digging anatomy."
+    },
+    "E2-A": {
+      "decision": "reject",
+      "notes": "Creator does not want either understone grazer."
+    },
+    "E2-B": {
+      "decision": "reject",
+      "notes": "Creator does not want either understone grazer."
+    },
+    "E3-A": {
+      "decision": "like",
+      "notes": "Plant-nursery insect liked; retain."
+    },
+    "E3-B": {
+      "decision": "like",
+      "notes": "Strongly liked plant-nursery climber. Its existing small membranes should allow gliding; preserve its identity."
+    },
+    "E4-A": {
+      "decision": "like",
+      "notes": "Cradle thief design liked. Slightly change fur pattern to distinguish it from E3-B; preserve body and face."
+    },
+    "E4-B": {
+      "decision": "like",
+      "notes": "Bird strongly liked for inclusion in the game, but NOT a brood parasite or cradle thief. Retain visual identity; remove egg theft/brood-deception depiction and role."
+    },
+    "E5-A": {
+      "decision": "like",
+      "notes": "Keep the larger aquatic body; give its face the smaller swimming inset creature’s rounded appearance. Creator explicitly confirmed this interpretation. Aquatic creature; detailed parasite role remains open."
+    },
+    "E5-B": {
+      "decision": "like",
+      "notes": "Translucent parasite body liked. The fish-eating shore hunter in the inset is ALSO wanted as a SEPARATE animal. Parasite never transforms into the hunter; no shared species identity."
+    },
+    "E6-A": {
+      "decision": "like",
+      "notes": "Likes the large ant-like workers, warrior forms and storing nuts in the body. Preserve related colony forms and visible internal food storage."
+    },
+    "E6-B": {
+      "decision": "like",
+      "notes": "Design liked as a SMALL HERD, not a hive/colony. Different responsibilities welcome. Remove inaccessible dorsal pouch; compare a reachable underslung pouch versus no pouch."
+    }
+  },
+  "excluded": [
+    "E2-A",
+    "E2-B"
+  ],
+  "selected_with_revision": [
+    "E1-B",
+    "E4-A",
+    "E4-B",
+    "E5-A",
+    "E6-B"
+  ],
+  "additional_animal": "E5-B shore hunter, separate species; new reference ER6 pending review",
+  "new_views_pending": [],
+  "review_url": "http://127.0.0.1:8780/",
+  "canon_note": "Specific creator directions and selected visual traits retained. New revisions, names, precise sizes, mechanics and unapproved biology remain proposals.",
+  "approved_followup": {
+    "codes": [
+      "ER1",
+      "ER2",
+      "ER3",
+      "ER4",
+      "ER5",
+      "ER6",
+      "ER7-1"
+    ],
+    "reference_index": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/selected-creatures.json"
+  },
+  "unselected_followup": [
+    "ER7-2"
+  ],
+  "status": "selected_requested_refinements_now_approved"
+}

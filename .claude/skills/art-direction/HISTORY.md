@@ -653,6 +653,86 @@ All seventeen revised paintings, including the cedar variant, are approved and n
 
 The creator reviewed the six interface alignment emblems and said: “dominion seal is the worst, all other are really good.” Preserve the original Vigil, Gnosis, Fervor, Genesis and Neutral artwork in breachline/art/ui/ui-alignment-emblems.png unchanged. The original Dominion crescent-and-shackle design is rejected. After seeing three replacement proposals, the creator explicitly selected “Iron crown (left)” in breachline/art/ui/ui-alignment-dominion-options.png. Use its leftmost crown for Dominion; the binding hand and closed gate are unselected alternatives. Exact crop mappings are in breachline/art/ui/UI_POLISH_SELECTIONS.json. This is an interface-emblem decision, not a new faction lore requirement or a preference for reusing these motifs in card scenes. All control options were requested for implementation and testing; that request does not choose a button material or other control option.
 
+## Accepted animal collection and larger wildlife studies (2026-11-13)
+
+Creator accepted NC1–2 Tasselstride, NC1–3 Cleftpelt, NC1–5 Spindlebur, NC1–6 Quillheel and NC2–4 Coppernape. Other NC cells were not newly rejected. Their exact source cells and unchanged sheets are indexed in creature-selections-2026-11-13.
+
+The creator requested a combined accepted-animal gallery, Xs over rejected designs for review, slightly larger wildlife, and an ecological audit of all previous animal work. They asked to move closer again to Scavengers Reign inspiration and invited varied, creative exploration near the edges of their suggestions while away for 15–20 minutes. This authorizes new proposals, not replacement of accepted animals or automatic canon.
+
+Completed:
+- art/accepted-animals-2026-11-13/review.html: 36 accepted animal designs and four companions/constructs, with original images unchanged. Source-sheet overlays cover rejected and unselected cells and distinguish those states. The original BP choices remain; only Purlrunner uses HV7–1. Earlier Storm-touched bull and Brazen gatebeast approvals are included.
+- art/work-in-progress/larger-creatures-2026-11-13/: LG1 and LG2, twelve NEW pending proposals around deer/pony/ox scale, generated with built-in imagegen. LG1–6 brood anatomy received a targeted correction; exact original and edit prompts and source paths are retained. These are not accepted references.
+- art/accepted-animals-2026-11-13/ecology.html and ecology-audit.json: 177 indexed study/reference records, including alternatives, rejected attempts and earlier animals; this is NOT a species count. Six proposed next niches: dung/seed burial, understone biofilm grazing, plant galls as nurseries, brood parasitism, multi-host life cycles, and differentiated colony castes/nest economies. All relationships and names remain proposals. The audit explicitly records that scavenging, filtering, cleaners, brood care, plant/fungal partners and living habitats have already been touched.
+- Local review addresses: accepted gallery 8776, larger studies 8777. Servers bind only to 127.0.0.1.
+
+## Larger creature review and selected reference development (2026-11-13)
+
+**Larger creature selections and refinements (creator, 2026-11-13; latest):**
+- LG1–4 Vaultstalker is strongly liked: a larger honey-badger impression with scales. Preserve its original face, body and coverings.
+- LG1–5 Pithbreaker and LG1–6 Mantlebrood are liked. Pithbreaker's size should clearly read a little larger than a small armadillo; exact dimensions remain open. The earlier black-bear-mass brief is not a fixed size. Preserve Mantlebrood's corrected small furred pouch.
+- LG1 overall is decent, but LG1–1/2/3 were not individually selected. Throat combs/jaw frills are specifically disliked as an overused feature; this is not an explicit rejection of every animal that has one.
+- LG2–4 Barkdrummer is liked for the head plate and feather-scale combination, with a noted overlap with number 5 (likely Pithbreaker; comparison not explicitly named). Keep identities separate.
+- LG2–1 Pollenferry's transition from thick leathery skin into feather/fur is liked; preserve that material relationship. A clean-jaw reference tests the broader no-repeated-combs note.
+- LG2–6 Scalelease is rejected: bugs beneath its scales do not make sense to the creator. Exclude that cell as a reference; the composite must remain because it contains liked designs.
+- LG2–5 Sporewarden's animal is liked despite some grossness; test it without fungus. The fungal growth and symbiosis are not accepted. Keep the body/face, remove fungus and its growth beds; final revised design and name remain open.
+- LR1–LR6 in `breachline/art/work-in-progress/larger-creature-references-2026-11-13/` develop these picks. All newly generated views and corrections still need review; original accepted cells remain intact.
+
+LG source decisions are recorded in art/work-in-progress/larger-creatures-2026-11-13/creator-feedback-round2-2026-11-13.json. Shared source composites are retained for liked cells; Scalelease is crossed out, not used as a reference. Five source cells join the accepted gallery, which now has 41 animal designs and four separate companions. LR1–LR6 remain new pending studies.
+
+## Sporewarden name change requested (2026-11-13)
+
+Creator: “sporewarden will need a new name.” Assistant proposed Coilneck as the working name for LG2–5 / LR6, based on its looping neck. Current review labels updated; artwork and exact generation prompts unchanged. Final name remains open.
+
+
+## Paired ecological niche exploration (2026-11-13)
+
+Creator requested two independent requests for each of the six ecological gaps: one using the proposed design, one using only the niche and current instructions/goals. Completed twelve E1–A/B through E6–A/B plates in art/work-in-progress/ecological-niche-pairs-2026-11-13/. All remain proposals pending review.
+
+The six roles are dung/seed burial, understone biofilm grazing, plant-grown gall nurseries, brood parasitism, multi-host aquatic/land parasites, and differentiated colony castes with flood-surviving food stores. No A names, anatomy, palette, reference or outputs entered the B initial requests. E2–B and E5–B received quality edits based only on their own independent outputs; exact prompts and provenance are recorded. Twelve inventory records added to ecology-audit.json. Accepted designs and earlier feedback unchanged.
+
+Review: http://127.0.0.1:8779/
+
+
+## Ecological pair selections and great animals (2026-11-13)
+
+**Ecological selections and larger size exploration (creator, 2026-11-13; latest):**
+- E1–B is the chosen burrower, with the dorsal sack removed. E1–A was not selected, not explicitly rejected.
+- E2–A and E2–B are rejected. Keep them crossed out in the requested review gallery and excluded from future references; the creator's earlier request to preserve review visibility with X overlays takes precedence over deleting the source files.
+- E3–A and E3–B are both liked. E3–B should glide on its existing small membranes; preserve the strongly liked face/body and nursery relationship.
+- E4–A Cradle thief is liked; make only a slight coat-pattern change to distinguish it from E3–B. E4–B is strongly liked and wanted as a normal bird, NOT a cradle thief/brood parasite; remove the stolen egg/host-brood staging and role.
+- E5–A: keep the larger aquatic body and make its face rounded like the smaller swimming inset. This interpretation was explicitly confirmed. Aquatic life is wanted; the previous parasite role is not automatically settled.
+- E5–B's translucent parasite is liked. Its fish-eating shore hunter is ALSO selected as a separate animal. Never make the parasite grow or transform into the hunter; the animal identities remain separate.
+- E6–A: the ant-like workers, warrior forms and nuts stored inside the body are liked. E6–B becomes a small herd with varied responsibilities, NOT a hive. The dorsal pouch is disliked and inaccessible; compare an accessible underslung pouch and no pouch.
+- Next exploration explicitly spans LARGE, EXTRA-LARGE and MASSIVE creatures. This replaces the earlier “slightly larger only” limit for this batch, while truly enormous wildlife remains rare in the world. Prepare six new options per band, with coherent weight, movement, anatomy and varied ecological roles; no copying accepted creatures at a larger size.
+- New revisions and size studies remain pending review before the animal set is finalized. Stage: `breachline/art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/`.
+
+
+
+## Great animals and ecological refinements completed (2026-11-13)
+
+Completed G1–G3: eighteen new proposals, six each in large, extra-large and massive bands. Seven ER reference plates implement the creator’s E-series directions, including an accessible underslung pouch/no-pouch comparison. Exact initial and refinement requests, reference hashes, sources and visual checks are recorded in art/work-in-progress/great-animals-and-ecology-refinements-2026-11-13/prompts-and-manifest.json. Built-in image generation used. Human figures communicate broad bands; exact scale remains open.
+
+Four unchanged selected source visuals (E3–A/B, E5–B and E6–A) are preserved in the reference library and accepted gallery, now 45 animal visuals plus four companions. E2–A/B are crossed out and excluded. The shore hunter is separately selected; ER6 develops its isolated view, pending review. The bird is ordinary, the E6–B group is a small herd, and Ford-thread’s rounded-face interpretation was explicitly confirmed. New ER views and all G animals remain pending; the animal set is not finalized. Ecology inventory now has 221 records, not distinct species.
+
+Review: http://127.0.0.1:8780/
+
+
+## Great-animal review and closing exploration (2026-11-13)
+
+**Great-animal selections and final exploration (creator, 2026-11-13; latest):**
+- G1–1 Cragwool is liked with a slightly more predatory, less stub-nosed face. Keep the body, plates and wool; no exaggerated aggression.
+- G1–2 Reedstrider is liked. Extend its copper mohawk-like fibrous covering across the body, not just the back ridge. This is a local covering edit, not a new motif for every animal.
+- Cut G1–3 Shellshoulder, G1–4 Mast forager, G1–5 Burrow listener and G1–6 Cliff scavenger. Make only ONE additional new large-animal proposal.
+- G2–3 Gravelmouth, G2–4 Woodland breaker and G2–5 Salt-flat migrant are liked unchanged. Reject G2–1 Bankheaver, G2–2 Crownreach and G2–6 Estuary pursuer.
+- G3–2 Undertow may continue: combine its two middle lobes on each side into one broader continuous fin with less outward projection and flatter outer edges. Preserve the small rear triangular feature. Reject G3–1 Longvault and G3–3/4/5/6.
+- Make fresh massive proposals with substantially more imaginative whole-body plans. The world can support much less Earth-like distributions of mass and movement; keep coherent anatomy and purposeful coverings. Do not merely enlarge familiar skeletons or switch faces.
+- ER1–ER6 refinements are approved. ER7–1, the reachable underslung pouch, is specifically selected. ER7–2 is unselected, not explicitly rejected.
+- Keep rejected source cells crossed out and excluded from references, preserving composites needed for the liked cells and the creator’s review history.
+- Stage the new FR1–FR3 edits, LN1 large proposal and MN1 six-animal massive lineup in `breachline/art/work-in-progress/animal-final-exploration-2026-11-13/`. All NEW artwork still needs review.
+- After this design pass, organise all created animals by ecology, distinguishing selected animals, open proposals and rejected attempts. Do not turn tentative habitat or diet into settled lore.
+
+
+
 ## Fresh peoples painting style accepted and local corrections (creator, 2026-11-13)
 
 - K1/K2, G1/G2, D1/D2, S1/S2, R1/R2 and N1/N3/N4 are liked; preserve them. The Banded folk working together is particularly liked. Use the current names Ashborn, Banded folk and Greyhides.
@@ -666,6 +746,28 @@ The creator reviewed the six interface alignment emblems and said: “dominion s
 
 
 The creator described the lighting as dynamic without overtaking the painting and particularly liked N5's variation in brushwork and detail. This accepts the shared painting approach, not a general dark/grey treatment. Glimmerfolk settings must follow current lore; Crest warmth was a question, not a declared habitat. See the structured creator-review-accepted-style.json in the linked work folder for each verdict. No live card updates or commits were requested in this review.
+
+
+## Giant exploration scope clarified (2026-11-13)
+
+- **Giant-specific freedom (creator, 2026-11-13; latest):** do not over-apply notes on smaller creatures to large and massive wildlife. The creator is thinking of the big creatures in Scavengers Reign and Kenshi. For these new giants, allow much more unusual overall proportions, distributions of mass, movement, head placement and body architecture. Small-creature preferences and the earlier one-or-two-twists heuristic are not rigid limits on this giant pass. Preserve coherent living anatomy, imaginative ecological presence and the established painting language; avoid copied franchise designs. Individual edits such as Cragwool’s muzzle, Reedstrider’s covering and Undertow’s fins stay local to those animals.
+
+
+## Closing animal exploration and ecology grouping prepared (2026-11-13)
+
+- Completed closing exploration: FR1–FR3 targeted edits, LN1 new large animal, and three giant experiment sheets. The focused review curates MG1–MG6 from those sheets; this is assistant presentation curation, NOT creator acceptance. Review http://127.0.0.1:8781/. Accepted collection now has 54 animal designs plus four separate companions; ER1–ER6 and ER7–1 are preserved. Working ecology grouping: http://127.0.0.1:8776/ecologies.html. New giant names, anatomy and ecology remain proposals.
+
+MG mappings: MG1 = MN3-1, MG2 = MN1-2, MG3 = MN3-2, MG4 = MN1-4, MG5 = MN3-5, MG6 = MN2-1. Eighteen source studies, not eighteen accepted species. Initial beaked LN1 candidate was set aside as too similar to Woodland breaker; the six-limbed replacement received an extra-limb correction. Exact records are retained.
+
+
+## Animal collection adopted for world use — creator, 2026-11-13
+
+Fanback MG6 / MN2–1 is good for massive; Undertow FR3 is better and is the preferred revision. The giant round became too scary. Deepkeel looked weird; the rest of the giant experiments are set aside, not explicitly rejected, and no additional exploration is requested.
+
+The creator likes the ecology selections: “Crested bird is predatory and can be movable. The rest, all good.” Selected animals are now part of the world and should be considered first for future animals, Genesis cards, background wildlife, farming scenes and other art/concept art. Consult the selected collection for a fitting inhabitant before inventing a replacement. This establishes the selected ecology groupings and roles, while the explicitly unknown details remain open; it does not revive rejected or unreviewed designs.
+
+Current handoff: breachline/ANIMAL_REFERENCE_HANDOFF.txt. Exact references, source crops and ecology: breachline/art/accepted-animals-2026-11-13/animal-reference-index.json. Fanback and Undertow originals are preserved unchanged in reference-library-2026-11-06/final-animal-selections-2026-11-13/. There are 56 selected animal references plus four separately indexed companions.
+
 
 ## Peoples paintings final acceptance, Stonewake gaze and cleanup (2026-11-13)
 
@@ -684,6 +786,78 @@ The creator subsequently asked whether Claude's briefs should be pared down. The
 
 The creator said “all final” after reviewing the kept collection. This finalizes Banded folk PL8B, Crest folk CR3 and Greyhides CO1 unchanged, joining KR1, GR1, PL7 and PL3D. All seven current peoples visual designs are final. The 22 paintings and 13 earlier favourites remain kept; earlier exploratory cells are not restored, and no new live card mechanics or asset replacement is inferred. The three sheets were moved unchanged into the final-peoples reference library; lore, galleries and handoffs now agree.
 
+
+## Animal guidance consolidated into a dedicated skill — 2026-11-13
+
+The creator requested an animal art-direction skill for future creation, secondary to the established reference guide. Current reusable guidance now lives in ../breachline-animal-art/SKILL.md, with a scoped feedback map. The previous general Creatures section is preserved below as historical wording; its older limits are not new instructions.
+
+## Creatures
+
+- **Use the established animal collection first (creator, 2026-11-13):** the selected animals are part of the world and active references for future animal cards, especially Genesis, and for wildlife in other art and concept scenes. Consult [the animal handoff](../../../breachline/ANIMAL_REFERENCE_HANDOFF.txt), [the ecology browser](../../../breachline/art/accepted-animals-2026-11-13/ecologies.html) and [the joined reference index](../../../breachline/art/accepted-animals-2026-11-13/animal-reference-index.json) before inventing another animal. Look for the right habitat, scale and role: a grazer in a field, wildlife around a farmer, or residents of a canal, woodland or settlement. Use the exact selected image/crop and preserve its anatomy while varying the scene. This is a first lookup, not a closed catalogue or a requirement to put animals in every picture. Genesis is not an exclusive alignment for all wildlife; presence near people does not automatically establish domestication.
+- **Ecology accepted for world use (creator, 2026-11-13):** the selected collection's ecological groupings and roles are approved. Crested bird ER4 is a mobile predator, not a brood parasite; home habitat, prey and exact game movement remain open. The current collection contains 56 animal references and four separate companions. Preserve explicitly unknown details; this approval does not include rejected, set-aside or unreviewed studies.
+- **Closing giant review (creator, 2026-11-13):** preserve Fanback MG6 (MN2–1) and the preferred FR3 Undertow revision. This giant batch became too scary; if revisited, retain imaginative scale and body architecture with less horror emphasis. Deepkeel was called weird-looking; it and the other giant experiments are set aside, not explicitly rejected. No more giant generation is requested.
+
+- **Giant-specific freedom (creator, 2026-11-13; latest):** do not over-apply notes on smaller creatures to large and massive wildlife. The creator is thinking of the big creatures in Scavengers Reign and Kenshi. For these new giants, allow much more unusual overall proportions, distributions of mass, movement, head placement and body architecture. Small-creature preferences and the earlier one-or-two-twists heuristic are not rigid limits on this giant pass. Preserve coherent living anatomy, imaginative ecological presence and the established painting language; avoid copied franchise designs. Individual edits such as Cragwool’s muzzle, Reedstrider’s covering and Undertow’s fins stay local to those animals.
+
+- **Successful larger animals; avoid repeated throat combs (creator, 2026-11-13):** LG1–4/5/6 work because recognisable honey-badger, anteater/armadillo and kangaroo corollaries have clear unfamiliar anatomical differences. Preserve that balance. Jaw frills and filter-feeder-like throat combs are overused and disliked; stop using them as a recurring novelty. A symbiosis must make sense in the animal's design; the bugs-under-scales idea in LG2–6 failed. This does not ban all symbiosis or all unsettling anatomy.
+
+- **Ecological invention renewed (creator, 2026-11-13):** move closer again to the Scavengers Reign inspiration through integrated anatomy, interdependence, life cycles, surprising feeding and habitat relationships, beauty with danger, and tactility. Develop new original creatures; do not copy its designs or name the show in image prompts. The creator welcomes varied, creative experiments around the edges of their suggestions, clearly distinguished from accepted designs. Do not reduce the work to familiar animal faces with changed coats. Next scale exploration is slightly larger wildlife, not a universal jump to giants.
+- **Preserve picks; develop new creatures (creator clarification, 2026-11-13):** broader head variety is a direction for NEW creature generations, not an instruction to replace faces on already liked designs. A face must make sense with its creature's skull, neck, feeding method and covering. Develop the animal as a whole; do not treat faces as interchangeable masks. Keep explicit selections intact unless the creator requests a change.
+- **Head variety without a ban (creator, 2026-11-13):** the BP exploration leans too heavily on lizard-like heads. Vary skull mass, muzzle length, jaw depth, nose, eye placement and ears, including mammalian and other structures. Reptilian and snake-like faces remain welcome among a wider mix. Interesting combinations of body plan, head and covering are the aim; Needlehip's liked lizard face, fur and whip tail are one successful combination, not a template for everything. Keep the changes restrained and anatomically coherent.
+- **Further body-plan and surface variety (creator, 2026-11-13):** recent open exploration was too close to known Earth animals. Vary the whole body plan further, alongside skin texture, fur, feathers and scales. A recognizable ecological role and coherent animal biology are the anchors; the final silhouette need not identify a familiar Earth species. Covering should contribute to anatomy and silhouette, not merely decorate it. RF1–RF4 are liked exceptions to preserve, not templates for every new creature.
+- **Range: recognisable biology with a twist or two around one core.** Start from a familiar kind of animal and its niche, then change up to two things around that core:
+  - its body shape, keeping the same role
+  - its head or mouth
+  - its life cycle
+  - a distinct new feature
+  - a surprising symbiosis
+  - another twist that does something
+
+  Not a known animal recoloured, and not wholly alien: no flying garlic.
+- **The models:**
+  - The Slateprowler is the model: new anatomy, but recognisably a predator built for its purpose.
+  - Ribbonvane marks the far edge of strangeness, not the centre.
+  - Shieldhound is a good example of a combination: two recognisable animal features joined in a surprising way.
+- **Most animals just live.** Many creatures simply fill an ordinary niche: grazing, hunting, scavenging, burrowing. Some have a surprising use to people, but a use is not required, and making every creature a tool is a misread.
+- **Normal animals are fine too.** Deer, bears, boars and other ordinary animals belong in the world and can appear in art. They just aren't unique to it, so creature *exploration* should mostly look beyond them.
+- **Variety in a batch:**
+  - Limit fliers and plant hybrids.
+  - Don't let one liked creature's body plan, vanes, membranes or shell repeat across a batch.
+- **Scale:**
+  - Truly enormous animals are rare and stop people in awe.
+  - Most wildlife is ordinary or moderately large at believable scale.
+  - Tidevault should be smaller than its first painting.
+  - The giant sea creature is only a rumour far out at sea.
+- **Liked creatures:**
+  - Dawnsail (use the first painting, `breachline/art/concepts/dawnsail-passage.png`, for anatomy)
+  - Coalback
+  - Roof glider
+  - Spindlejack
+  - Slateprowler
+  - Ribbonvane
+  - Ashwing's skeletal familiar
+  - from round 13: Moltwalker (the idea), Lampkeepers, Mendergrubs and Ashlicks
+- **Dragons** are intelligent but primal. Talking with one takes a magical connection and is difficult. Not every drake shares that intelligence.
+- **Constructs:**
+  - Follow narrow instructions; adaptability is rare.
+  - Can have personality without consciousness.
+  - Their anatomy can be abstract, asymmetric and functional rather than an armoured human knight.
+  - Heads should look like worked metal, not futuristic.
+
 ## Shared brief-writing and art-agent workflow — 2026-11-13
 
 The creator explicitly asked to normalize how Claude writes future art briefs and how Codex responds, with the incoming additions as the next test. BRIEF_WORKFLOW.md now holds the compact format and paired responsibilities, linked from project CLAUDE.md, AGENTS.md and the current art-direction skill. Briefs keep subject, lore, intent and essential constraints; mechanics are separate context. The art agent owns composition/light and must not add compulsory spectacle or literal ability diagrams. Current rules and exact accepted selections take precedence over copied historical boilerplate. The prior handoff recommendation is now an active instruction, not merely a suggestion. This changes future workflow without rewriting finalized old briefs or installing new live card art.
+
+
+## Set 12 final review — 2026-11-13
+
+Creator: “much better! these are all final”. All 20 selected paintings finalized; canonical selection record is breachline/art/CARD_ART_FINAL_SET12.json.
+
+Prior open-work entry, preserved as history:
+
+**Set 12 card review (creator, 2026-11-13; latest restart):**
+- Liked 193–198, 201–203, 206–212 and 215; 206 Sallow Bridge mason was especially praised. These other paintings are untouched.
+- All iterations 1–3 of 200 Husk and 204 Caravan head are rejected. The creator explicitly requested deleting all their project and generated-source images and starting fresh; the late edits accumulated noise and compounded errors. Do not restore or use these paintings as visual inspiration.
+- Fresh restart iteration 1 paintings are now ready for review, generated only from approved peoples and, where needed, animal design sheets. Retain the requested ideas without preserving the discarded exact faces, poses or costumes: 200 has a downward-looking husk, natural support within the arm/hip gap and coherently facing distant soldiers; 204 is a mildly armed male leader with light armour and practical open shoes, travelling at the front toward the right in mountain country, caravan behind and two companions doing useful labour.
+- 205 Caravan guard remains unchanged at its animal-added revision, with no new verdict. Finalization remains pending.
+- Deletion evidence and latest review: `breachline/art/work-in-progress/new-peoples-cards-2026-11-13/restart-and-cleanup-2026-11-13.json`. Text prompts and earlier decisions remain as history; their deleted image paths are not active references.

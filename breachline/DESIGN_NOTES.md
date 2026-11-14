@@ -4,6 +4,7 @@ The one home for Breachline's rules, design decisions and ways of working. "The 
 
 Each topic has one home:
 - **The world:** `SETTING.md`
+- **Animals and their use in cards/art:** [Animal reference handoff](ANIMAL_REFERENCE_HANDOFF.txt), with the selected ecology gallery and exact image index. Consult these first for animal/Genesis cards and background wildlife. For new creature design, use the supporting [animal art skill](../.claude/skills/breachline-animal-art/SKILL.md).
 - **Art:** the `art-direction` skill in `.claude/skills/`
 - **Flavour text:** the `flavor-text` skill, with lines in `FLAVOUR.md`
 - **Campaign:** `CAMPAIGN.md`

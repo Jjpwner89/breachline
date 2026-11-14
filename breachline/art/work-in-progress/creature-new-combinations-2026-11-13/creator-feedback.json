@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-13",
+  "user_note": "i liked the options i said i did - faces still have to make sense. so og design for hv1, 2, 3, 4 ,, 5, 6. for hv7 use number 1, hv8 - use old. i meant like make some new generations with that note in mind",
+  "correction": "The prior head-swap exercise misinterpreted forward-looking feedback. Keep the existing chosen creatures; apply natural head diversity to NEW creature generations.",
+  "selections": [
+    {
+      "head_sheet": "HV1",
+      "name": "Foldstride",
+      "selected": "BP1-1",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER LEFT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV2",
+      "name": "Loomstep",
+      "selected": "BP1-2",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV3",
+      "name": "Shelfback",
+      "selected": "BP1-3",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER RIGHT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV4",
+      "name": "Needlehip",
+      "selected": "BP1-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV5",
+      "name": "Ribhide",
+      "selected": "BP2-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV6",
+      "name": "Scaleskein",
+      "selected": "BP2-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV7",
+      "name": "Purlrunner",
+      "selected": "HV7-1",
+      "selection_type": "head_variant",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+      "source_region": "Left column: portrait and matching full-body view",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV8",
+      "name": "Gullied swimmer",
+      "selected": "BP3-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false
+    }
+  ],
+  "rules": [
+    "Preserve original BP designs for HV1–HV6 and HV8.",
+    "Use HV7-1 for Purlrunner.",
+    "Heads must make anatomical and functional sense for their creature, rather than look like interchangeable animal masks.",
+    "New exploration varies skulls, mouths, noses and coverings; reptilian faces are allowed but should not dominate.",
+    "No automatic canonization of ecological details."
+  ],
+  "new_work": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13"
+}

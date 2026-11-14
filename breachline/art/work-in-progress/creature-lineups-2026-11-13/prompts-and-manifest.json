@@ -1,0 +1,649 @@
+{
+  "title": "Creature lineups — 13 November 2026",
+  "generation_mode": "Built-in image_gen",
+  "status": "complete_for_creator_review",
+  "brief": "BRIEFS.md",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_revision": "Current rules rewritten 2026-11-13",
+  "setting_path": "/Users/dpuser/Documents/Claude/Games/breachline/SETTING.md",
+  "selection_guide_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/selection-guide.json",
+  "reference_policy": "No attached images, as required by the latest briefs.",
+  "workflow": "lineup -> creator selection -> reference sheet -> scene",
+  "requested_dimensions": [
+    1536,
+    1024
+  ],
+  "notes": [
+    "All studies are exploratory proposals, not canon.",
+    "Review positions 1–6 run left-to-right across the top row, then the bottom row.",
+    "In CL1–CL5 positions 1–4 develop approved concepts; positions 5–6 are departures.",
+    "Painted scale keys are approximate; intended sizes are recorded in take prompts."
+  ],
+  "sheets": [
+    {
+      "code": "CL1",
+      "slug": "01-moltwalker-lineup",
+      "title": "Moltwalker",
+      "description": "Six clean moulting designs explore the accepted crab-like animal and its discarded shell. Positions 1–4 develop that idea; positions 5–6 propose different body plans while keeping whole-shell shedding. Sizes, shell forms and exact biology remain proposals.",
+      "takes": [
+        {
+          "name": "Smooth shore-crab",
+          "core": "Crab-like scavenger",
+          "twists": [
+            "Dry pale post-moult body beside a whole discarded shell"
+          ],
+          "line": "Cat-sized, broad smooth shell; the old carapace opens along the back.",
+          "detail": "Cat-sized broad shore-crab form, low horizontal oval body, two compact pincers and four pairs of walking legs. Pale clean new cream cuticle beside its empty rust-brown whole exuvia, with back seam visibly split. Slightly oblique side view facing left, a few pebbles.",
+          "intended_size": "Cat-sized"
+        },
+        {
+          "name": "Ridged walker",
+          "core": "Crab-like scavenger",
+          "twists": [
+            "Raised ridges support an elevated land-walking body",
+            "Whole-shell shedding"
+          ],
+          "line": "Goat-sized, high-legged and ridged; its shell splits at the front.",
+          "detail": "Goat-sized taller long-legged land crab facing right; narrow ridged arched carapace, two modest pincers and four pairs of walking legs. Dry pale apricot new animal stepping beside empty olive-brown matching shell with the front lip opened like a hatch. Stone patch.",
+          "intended_size": "Goat-sized"
+        },
+        {
+          "name": "Spur-backed crawler",
+          "core": "Crab-like scavenger",
+          "twists": [
+            "Short defensive shell spurs",
+            "Whole-shell shedding"
+          ],
+          "line": "Dog-sized, squat and spurred; the old shell has separated into two halves.",
+          "detail": "Dog-sized compact squat rock crab facing right, broad blunt head, two short strong pincers, four pairs of widely planted short walking legs. Newly moulted matte chalk-yellow with short soft blunt spurs along shell sides. Empty ochre spurred exuvia beside it opened into two matching lateral halves, clearly hollow. Dry leaf litter.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Domed marsh crab",
+          "core": "Crab-like scavenger",
+          "twists": [
+            "High domed shell",
+            "Whole-shell shedding"
+          ],
+          "line": "Pony-sized, domed and heavy; a dorsal split opens the old shell.",
+          "detail": "Pony-sized deep domed marsh crab facing left, a high rounded body on sturdy low walking legs, two small feeding claws tucked forward. Pale clean pearl new cuticle, no slime. Matching empty slate-brown high dome shell beside it, dorsal seam open and legs visibly hollow. Mud patch.",
+          "intended_size": "Pony-sized"
+        },
+        {
+          "name": "Slab isopod",
+          "core": "Terrestrial isopod detritivore",
+          "twists": [
+            "Sheds its entire plated shell in one hollow articulated piece"
+          ],
+          "line": "A long dog-sized isopod with a hollow, segmented cast shell.",
+          "detail": "Fresh departure: long flat dog-sized terrestrial isopod, no pincers, seven pairs of short jointed walking legs, small forward head and two short antennae. Broad dry pale overlapping transverse plates, supple low body walking left. Empty terracotta matching segmented husk next to it remains joined as one hollow articulated structure split lengthwise. Bark and leaf-litter patch.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Coiled hermit",
+          "core": "Hermit-like crustacean scavenger",
+          "twists": [
+            "Grows its own asymmetric coiled dorsal shell and sheds it whole"
+          ],
+          "line": "A cat-sized hermit form that grows and sheds its own offset coil.",
+          "detail": "Fresh departure: cat-sized hermit-like crustacean facing right, compact strong forebody with two unequal feeding claws and three visible pairs of functional walking legs; rounded abdomen tucked beneath an asymmetric low coiled OWN shell, not a borrowed snail shell. New dry ivory soft shell and pale legs. Its empty matching amber coiled exuvia rests beside it with a clean front opening. Sandy gravel. The body is coherent and self-supporting, not a snail with crab parts stuck on.",
+          "intended_size": "Cat-sized"
+        }
+      ],
+      "file": "01-moltwalker-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Moltwalker. Upper row positions 1, 2, 3; lower row positions 4, 5, 6. For this sheet positions 1–4 develop the approved core; positions 5–6 are deliberate departures.\nPOSITION 1 (upper left): Cat-sized broad shore-crab form, low horizontal oval body, two compact pincers and four pairs of walking legs. Pale clean new cream cuticle beside its empty rust-brown whole exuvia, with back seam visibly split. Slightly oblique side view facing left, a few pebbles.\nPOSITION 2 (upper centre): Goat-sized taller long-legged land crab facing right; narrow ridged arched carapace, two modest pincers and four pairs of walking legs. Dry pale apricot new animal stepping beside empty olive-brown matching shell with the front lip opened like a hatch. Stone patch.\nPOSITION 3 (upper right): Dog-sized compact squat rock crab facing right, broad blunt head, two short strong pincers, four pairs of widely planted short walking legs. Newly moulted matte chalk-yellow with short soft blunt spurs along shell sides. Empty ochre spurred exuvia beside it opened into two matching lateral halves, clearly hollow. Dry leaf litter.\nPOSITION 4 (lower left): Pony-sized deep domed marsh crab facing left, a high rounded body on sturdy low walking legs, two small feeding claws tucked forward. Pale clean pearl new cuticle, no slime. Matching empty slate-brown high dome shell beside it, dorsal seam open and legs visibly hollow. Mud patch.\nPOSITION 5 (lower centre): Fresh departure: long flat dog-sized terrestrial isopod, no pincers, seven pairs of short jointed walking legs, small forward head and two short antennae. Broad dry pale overlapping transverse plates, supple low body walking left. Empty terracotta matching segmented husk next to it remains joined as one hollow articulated structure split lengthwise. Bark and leaf-litter patch.\nPOSITION 6 (lower right): Fresh departure: cat-sized hermit-like crustacean facing right, compact strong forebody with two unequal feeding claws and three visible pairs of functional walking legs; rounded abdomen tucked beneath an asymmetric low coiled OWN shell, not a borrowed snail shell. New dry ivory soft shell and pale legs. Its empty matching amber coiled exuvia rests beside it with a clean front opening. Sandy gravel. The body is coherent and self-supporting, not a snail with crab parts stuck on.\nEvery cell must clearly contain exactly ONE living new pale animal beside its EMPTY old shell of matching anatomy. Clean and dry, no raw flesh, wet flesh, slime, blood, exposed tissue or horror.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-c0297ea5-0ce6-4a72-8908-d24f7399d188.png",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six designs with distinct body silhouettes and empty matching exuviae. New bodies are clean, but the paint reads as pale firm cuticle rather than very soft skin; an accepted design should refine this in its reference sheet. Some far-side crustacean legs are occluded; visible limb attachments and ground contact are coherent. Scale keys are approximate."
+      },
+      "sha256": "0eac5f98d9ab620035c1f696cb8fa18cbfb8baab7fe3cc8942a6453ed68dc0b8",
+      "bytes": 2465759,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL2",
+      "slug": "02-lampkeepers-lineup",
+      "title": "Lampkeepers",
+      "description": "These six glowing larval proposals belong to Genesis forest and tree-village life. The first four vary familiar grub and caterpillar forms; the last two rethink the light-bearing larva as a limpet-shaped crawler and a segmented ribbon. Only the glowing-larva idea and Genesis context are accepted.",
+      "takes": [
+        {
+          "name": "Honey-belly grub",
+          "core": "Beetle grub eating decaying wood",
+          "twists": [
+            "Warm light through belly organs"
+          ],
+          "line": "A finger-length curled grub with a soft amber belly glow.",
+          "detail": "Finger-length 7 cm C-curved plump beetle grub, matte cream skin, small tan head, precisely three pairs of short thoracic legs clustered near head, no legs on abdomen. Warm honey light confined to underside. On one little fallen leaf, facing left.",
+          "intended_size": "7 cm"
+        },
+        {
+          "name": "Dotted caterpillar",
+          "core": "Leaf-feeding caterpillar",
+          "twists": [
+            "Cool luminous dorsal spots"
+          ],
+          "line": "A hand-length moss-green caterpillar with blue-green back lights.",
+          "detail": "Hand-length 15 cm sturdy moss-green caterpillar side-on right, three pairs of small true front legs and five pairs of soft abdominal prolegs, rounded back bearing a single row of separated subtle blue-green light spots. One chewed leaf on twig, no elaborate scene.",
+          "intended_size": "15 cm"
+        },
+        {
+          "name": "Tail-lantern",
+          "core": "Glow-worm larva",
+          "twists": [
+            "Broad translucent tail lantern"
+          ],
+          "line": "A slender charcoal larva with one warm light at its broad tail tip.",
+          "detail": "Finger-length 8 cm slender charcoal and bronze segmented glow-worm larva facing right, small head, six short legs near front, tapered flexible abdomen ending in one broad softly amber luminous oval plate. A small dark bark chip; glow is luminous paint, no bloom.",
+          "intended_size": "8 cm"
+        },
+        {
+          "name": "Ivory side-lights",
+          "core": "Flattened beetle larva",
+          "twists": [
+            "Paired cool light organs along flanks"
+          ],
+          "line": "A forearm-length flattened larva with cool flank lights and one small adult study.",
+          "detail": "Forearm-length 28 cm flattened ivory beetle larva facing left, angular soft overlapping segments and small ochre head, exactly three pairs of short thoracic legs. A row of small pale-cyan light windows down each side. Damp bark patch. Include ONE much smaller adult beetle beside this larva only: a squat wing-covered ochre adult with no flight pose, six legs, hint of matching cyan abdomen. This is a life-stage inset, not a seventh design.",
+          "intended_size": "28 cm; adult smaller"
+        },
+        {
+          "name": "Leaf-limpet larva",
+          "core": "Slug-caterpillar larva",
+          "twists": [
+            "Broad limpet-like larval body",
+            "Warm central light organ under dorsal skin"
+          ],
+          "line": "A low, oval larva with a continuous crawling underside and an amber centre.",
+          "detail": "Fresh departure: hand-length 12 cm broad low oval slug-caterpillar larva, recognizable small dark head peeking from front, scalloped fleshy edge, continuous muscular crawling underside without exposed jointed legs. Matte sage skin with a single diffuse amber oval light organ under its raised middle, not a glowing stone. On leaf litter facing left.",
+          "intended_size": "12 cm"
+        },
+        {
+          "name": "Lantern ribbon",
+          "core": "Segmented worm larva",
+          "twists": [
+            "Ribbon-flat body with two luminous edge organs"
+          ],
+          "line": "A narrow forearm-length larva with cool light along its two edges.",
+          "detail": "Fresh departure: 25 cm ribbon-flat segmented soft wormlike larva curving naturally in a shallow S on a damp root, no wings or frills or fins. Recognizable tiny blunt head and tapering tail, short paired fleshy locomotor pads under segments, two interrupted cool turquoise light lines contained in its flanks. Restrained slate-green body, side view facing right. This is a ground crawler, not an alien flying ribbon.",
+          "intended_size": "25 cm"
+        }
+      ],
+      "file": "02-lampkeepers-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Lampkeepers. Upper row positions 1, 2, 3; lower row positions 4, 5, 6. For this sheet positions 1–4 develop the approved core; positions 5–6 are deliberate departures.\nPOSITION 1 (upper left): Finger-length 7 cm C-curved plump beetle grub, matte cream skin, small tan head, precisely three pairs of short thoracic legs clustered near head, no legs on abdomen. Warm honey light confined to underside. On one little fallen leaf, facing left.\nPOSITION 2 (upper centre): Hand-length 15 cm sturdy moss-green caterpillar side-on right, three pairs of small true front legs and five pairs of soft abdominal prolegs, rounded back bearing a single row of separated subtle blue-green light spots. One chewed leaf on twig, no elaborate scene.\nPOSITION 3 (upper right): Finger-length 8 cm slender charcoal and bronze segmented glow-worm larva facing right, small head, six short legs near front, tapered flexible abdomen ending in one broad softly amber luminous oval plate. A small dark bark chip; glow is luminous paint, no bloom.\nPOSITION 4 (lower left): Forearm-length 28 cm flattened ivory beetle larva facing left, angular soft overlapping segments and small ochre head, exactly three pairs of short thoracic legs. A row of small pale-cyan light windows down each side. Damp bark patch. Include ONE much smaller adult beetle beside this larva only: a squat wing-covered ochre adult with no flight pose, six legs, hint of matching cyan abdomen. This is a life-stage inset, not a seventh design.\nPOSITION 5 (lower centre): Fresh departure: hand-length 12 cm broad low oval slug-caterpillar larva, recognizable small dark head peeking from front, scalloped fleshy edge, continuous muscular crawling underside without exposed jointed legs. Matte sage skin with a single diffuse amber oval light organ under its raised middle, not a glowing stone. On leaf litter facing left.\nPOSITION 6 (lower right): Fresh departure: 25 cm ribbon-flat segmented soft wormlike larva curving naturally in a shallow S on a damp root, no wings or frills or fins. Recognizable tiny blunt head and tapering tail, short paired fleshy locomotor pads under segments, two interrupted cool turquoise light lines contained in its flanks. Restrained slate-green body, side view facing right. This is a ground crawler, not an alien flying ribbon.\nForest wildlife, Genesis context; no urban canals, city lamps, cages or human tools. Each specimen should be visibly a small larva, never a giant. Colored light remains restrained and readable in diffuse daylight.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ece5b7be-e083-4206-9853-efc1e18221a4.png",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six distinct larval silhouettes and four different light placements; one small adult in position 4. Light remains localized. Legs cluster at the thorax where appropriate; caterpillar prolegs and ribbon pads read separately. Scale icons overstate some larval lengths; intended lengths in descriptions remain authoritative."
+      },
+      "sha256": "506294bb31aeb665b24c1d224e0b7f43d3195152c4647a3ae3689e0ebe6459f4",
+      "bytes": 2265144,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL3",
+      "slug": "03-ploughback-lineup",
+      "title": "Ploughback",
+      "description": "Six pig-sized rooting animals develop the accepted spade-shaped snout, with no tail limb or farming role. The first four vary the pig-like body, forelegs and hide; the last two propose a mole-like digger and a low reptilian rooter. All remain ordinary wild foragers, with detailed biology still open.",
+      "takes": [
+        {
+          "name": "Broad-spade rooter",
+          "core": "Wild pig rooter",
+          "twists": [
+            "Broad shovel-shaped snout"
+          ],
+          "line": "Bristled pig build, broad spade snout and powerful digging forefeet.",
+          "detail": "Pig-sized sturdy wild rooter, coarse dark chestnut bristles, recognizable pig body, small ears, exactly four short legs and one ordinary short tail. Broad flattened bone-supported spade snout with nostrils at upper rear, no tusks. Heavy forefeet with three strong digging claws; snout lifting a small crumb of soil, side view left. Natural mud patch.",
+          "intended_size": "Pig-sized"
+        },
+        {
+          "name": "Trowelrunner",
+          "core": "Wild pig rooter",
+          "twists": [
+            "Pointed trowel-shaped muzzle",
+            "Long low body adapted for pushing into soil"
+          ],
+          "line": "Low, long and smooth-skinned, with a narrow trowel snout and slim legs.",
+          "detail": "Pig-sized but low long-backed wild pig relative, matte slate-grey smooth hide, small ear flaps, narrow pointed trowel muzzle made of keratin, exactly four relatively slim hooved legs because the snout does the work, one simple short tail. Side view right with head down toward disturbed leaf litter.",
+          "intended_size": "Pig-sized"
+        },
+        {
+          "name": "Ridge-shovel",
+          "core": "Armoured pig rooter",
+          "twists": [
+            "Flat shovel snout with raised central ridge",
+            "Overlapping protective shoulder hide plates"
+          ],
+          "line": "Round-bodied and plated at the shoulders, with a ridged flat shovel.",
+          "detail": "Pig-sized round barrel-bodied pig-like forager, rusty ochre overlapping shoulder and upper-back keratin plates growing from hide, otherwise matte sparse fur, broad flat shovel snout with one central reinforcing ridge. Four strong short legs with split hooves, ordinary short tail. Standing left on dry loam. No horn, no shell, no additional limbs.",
+          "intended_size": "Pig-sized"
+        },
+        {
+          "name": "Mud-bellied ploughback",
+          "core": "Wild pig rooter",
+          "twists": [
+            "Wide upturned shovel muzzle"
+          ],
+          "line": "Deep-bodied, mud-caked and almost hairless, pushing with an upturned snout.",
+          "detail": "Pig-sized deep-bellied short-legged wild pig animal, mud-caked warm grey hide, blunt small ears, enormous broad upturned shovel muzzle that joins its skull as one coherent snout. Four squat legs and broad small-clawed feet, one ordinary thin tail. Right-facing natural braced digging pose on a little bank.",
+          "intended_size": "Pig-sized"
+        },
+        {
+          "name": "Blindbank digger",
+          "core": "Mole-like root forager",
+          "twists": [
+            "Pig-sized enlarged mole body",
+            "Broad spade nose reinforced for rooting"
+          ],
+          "line": "A mole-like departure: nearly neckless, with a wide digging nose and forepaws.",
+          "detail": "Fresh departure: pig-sized low nearly neckless mole-like mammal, velvet brown fur and tiny eyes, broad bone-supported spade nose protruding from small conical head. Exactly four legs, forepaws rotated out for digging, small hindfeet, one vestigial ordinary tail. Whole body visible on a little excavated bank facing left, not buried or emerging head-only.",
+          "intended_size": "Pig-sized"
+        },
+        {
+          "name": "Shovelskink",
+          "core": "Ground-rooting lizard",
+          "twists": [
+            "Pig-sized heavy skink build",
+            "Blunt shovel muzzle for digging edible tubers"
+          ],
+          "line": "A heavy skink-like departure with a shovel muzzle and ordinary tapering tail.",
+          "detail": "Fresh departure: pig-sized low heavy skink-like quadruped, recognizable reptilian skull adapted into a wide blunt shovel muzzle, matte sand-coloured pebbled scales, four splayed sturdy legs with five short toes, one thick tapering NORMAL non-prehensile tail trailing on soil. Side view right, nose testing loose earth. No fins, no frills, no dorsal spikes.",
+          "intended_size": "Pig-sized"
+        }
+      ],
+      "file": "03-ploughback-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Ploughback. Positions 1–4 develop the accepted core. Positions 5–6 deliberately rethink the body around that core.\nPOSITION 1 (upper left): Pig-sized sturdy wild rooter, coarse dark chestnut bristles, recognizable pig body, small ears, exactly four short legs and one ordinary short tail. Broad flattened bone-supported spade snout with nostrils at upper rear, no tusks. Heavy forefeet with three strong digging claws; snout lifting a small crumb of soil, side view left. Natural mud patch.\nPOSITION 2 (upper centre): Pig-sized but low long-backed wild pig relative, matte slate-grey smooth hide, small ear flaps, narrow pointed trowel muzzle made of keratin, exactly four relatively slim hooved legs because the snout does the work, one simple short tail. Side view right with head down toward disturbed leaf litter.\nPOSITION 3 (upper right): Pig-sized round barrel-bodied pig-like forager, rusty ochre overlapping shoulder and upper-back keratin plates growing from hide, otherwise matte sparse fur, broad flat shovel snout with one central reinforcing ridge. Four strong short legs with split hooves, ordinary short tail. Standing left on dry loam. No horn, no shell, no additional limbs.\nPOSITION 4 (lower left): Pig-sized deep-bellied short-legged wild pig animal, mud-caked warm grey hide, blunt small ears, enormous broad upturned shovel muzzle that joins its skull as one coherent snout. Four squat legs and broad small-clawed feet, one ordinary thin tail. Right-facing natural braced digging pose on a little bank.\nPOSITION 5 (lower centre): Fresh departure: pig-sized low nearly neckless mole-like mammal, velvet brown fur and tiny eyes, broad bone-supported spade nose protruding from small conical head. Exactly four legs, forepaws rotated out for digging, small hindfeet, one vestigial ordinary tail. Whole body visible on a little excavated bank facing left, not buried or emerging head-only.\nPOSITION 6 (lower right): Fresh departure: pig-sized low heavy skink-like quadruped, recognizable reptilian skull adapted into a wide blunt shovel muzzle, matte sand-coloured pebbled scales, four splayed sturdy legs with five short toes, one thick tapering NORMAL non-prehensile tail trailing on soil. Side view right, nose testing loose earth. No fins, no frills, no dorsal spikes.\nCRITICAL: all animals pig-sized and wild. Exactly four limbs, no tail limb, no hand-like tail, no farmer or farming gear.",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six recognizable diggers, four pig-based and two deliberate departures. Full bodies and spade snouts read clearly; four-legged bodies, ordinary tails and plausible ground contact. No tail limb, handlers or farming gear. Plated take 3 should keep the collar-free shell-free shoulder adaptation in future reference work."
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6b5349de-3660-4ddc-84ef-25ff966492c5.png",
+      "sha256": "b0c928a9e56c5e70295f069da4a13568fa674f7e351c17e34f6de070bd56167b",
+      "bytes": 2520150,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL4",
+      "slug": "04-hooktail-lineup",
+      "title": "Hooktail",
+      "description": "These studies explore the accepted canal animal that catches fish and anchors itself with a grasping tail. Four takes develop otter, beaver and weasel proportions, while two depart toward a low river-monitor and a shrew-like swimmer. The tail shapes, coat patterns and alternative body plans are proposals.",
+      "takes": [
+        {
+          "name": "River-hook otter",
+          "core": "Otter-like fisher",
+          "twists": [
+            "Single terminal tail hook"
+          ],
+          "line": "A sleek brown otter shape with a muscular tail ending in one hook.",
+          "detail": "Otter-sized sleek chocolate-brown mustelid, cream throat, short blunt whiskered head, exactly four webbed feet and one muscular tapering tail whose last third forms a clear stout flexible hook. Side view left mid-step on pebbled water edge, hook separated from hindlegs and fully visible.",
+          "intended_size": "Otter-sized"
+        },
+        {
+          "name": "Canal coil",
+          "core": "Beaver-like fisher",
+          "twists": [
+            "Long grasping coiling tail replaces paddle tail"
+          ],
+          "line": "Chunkier and beaver-like, with a thick tail that curls into a grip.",
+          "detail": "Chunky beaver-sized aquatic mammal, chestnut matte coat, broad rounded muzzle without giant teeth, four squat webbed feet, one thick muscular round-section tail curling into an open C rather than a flat paddle. Standing right on small muddy bank. No extra tail or limb.",
+          "intended_size": "Beaver-sized"
+        },
+        {
+          "name": "Fork-tip hunter",
+          "core": "Long weasel-like fisher",
+          "twists": [
+            "Two-pronged grasping tail tip"
+          ],
+          "line": "A long pale-bellied weasel shape with two opposed fingers at the tail tip.",
+          "detail": "Long slim otter-length weasel-like swimmer, dark charcoal back and pale buff underside, pointed narrow head, exactly four short webbed-footed legs. ONE long tail ends in just two short thick opposing fleshy prongs like a simple pincer, anatomically continuous with tail, not two tails or a hand. Side view left, dry canal stone patch.",
+          "intended_size": "Otter-length"
+        },
+        {
+          "name": "Reed-anchor otter",
+          "core": "Otter-like fisher",
+          "twists": [
+            "Prehensile tail with gripping pad"
+          ],
+          "line": "A broad-headed spotted otter anchoring its tail around a low branch.",
+          "detail": "Broad-headed sandy mottled otter with small ears and four sturdy webbed feet. Its one tail has a flattened grippy underside and wraps once securely around a low horizontal fallen branch rooted to a little bank. Four feet remain separate and support the body while it leans toward water facing right. No collar or ring, no human props.",
+          "intended_size": "Otter-sized"
+        },
+        {
+          "name": "River-hook monitor",
+          "core": "Aquatic monitor-lizard fisher",
+          "twists": [
+            "Grasping hook at tail end"
+          ],
+          "line": "A matte-scaled river monitor with a flexible hook-shaped tail.",
+          "detail": "Fresh departure: otter-sized semi-aquatic monitor lizard, long low olive-scaled body, unmistakable narrow lizard head, exactly four strong splayed legs with clawed toes. A single thick tail narrows into a flexible terminal hook curving around itself in open air, no sail or fins. Whole body on little bank side-on left.",
+          "intended_size": "Otter-sized"
+        },
+        {
+          "name": "Needle-muzzle hooktail",
+          "core": "Water-shrew-like fisher",
+          "twists": [
+            "Otter-sized streamlined body",
+            "Long prehensile gripping tail"
+          ],
+          "line": "A shrew-like swimmer with a needle muzzle, broad hindfeet and coiling tail.",
+          "detail": "Fresh departure: compact otter-sized water-shrew-inspired mammal, very long sensitive tapered muzzle and tiny ears, matte silver-grey dense fur, narrow shoulders, strong hips, four limbs with especially broad webbed hindfeet. ONE long slender muscular tail coils once like an anchor at tip. Natural walking side view right on smooth river stones. Not a rodent with an extra arm.",
+          "intended_size": "Otter-sized"
+        }
+      ],
+      "file": "04-hooktail-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Hooktail. Positions 1–4 develop the accepted core. Positions 5–6 deliberately rethink the body around that core.\nPOSITION 1 (upper left): Otter-sized sleek chocolate-brown mustelid, cream throat, short blunt whiskered head, exactly four webbed feet and one muscular tapering tail whose last third forms a clear stout flexible hook. Side view left mid-step on pebbled water edge, hook separated from hindlegs and fully visible.\nPOSITION 2 (upper centre): Chunky beaver-sized aquatic mammal, chestnut matte coat, broad rounded muzzle without giant teeth, four squat webbed feet, one thick muscular round-section tail curling into an open C rather than a flat paddle. Standing right on small muddy bank. No extra tail or limb.\nPOSITION 3 (upper right): Long slim otter-length weasel-like swimmer, dark charcoal back and pale buff underside, pointed narrow head, exactly four short webbed-footed legs. ONE long tail ends in just two short thick opposing fleshy prongs like a simple pincer, anatomically continuous with tail, not two tails or a hand. Side view left, dry canal stone patch.\nPOSITION 4 (lower left): Broad-headed sandy mottled otter with small ears and four sturdy webbed feet. Its one tail has a flattened grippy underside and wraps once securely around a low horizontal fallen branch rooted to a little bank. Four feet remain separate and support the body while it leans toward water facing right. No collar or ring, no human props.\nPOSITION 5 (lower centre): Fresh departure: otter-sized semi-aquatic monitor lizard, long low olive-scaled body, unmistakable narrow lizard head, exactly four strong splayed legs with clawed toes. A single thick tail narrows into a flexible terminal hook curving around itself in open air, no sail or fins. Whole body on little bank side-on left.\nPOSITION 6 (lower right): Fresh departure: compact otter-sized water-shrew-inspired mammal, very long sensitive tapered muzzle and tiny ears, matte silver-grey dense fur, narrow shoulders, strong hips, four limbs with especially broad webbed hindfeet. ONE long slender muscular tail coils once like an anchor at tip. Natural walking side view right on smooth river stones. Not a rodent with an extra arm.\nCRITICAL: each animal has exactly four legs and ONE anatomically connected special tail. Tail is visible without merging into feet or background.",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six four-legged canal animals with distinct single connected grasping tails. The lower-left animal visibly loops its tail over a branch; the upper-right tail ends in two opposed prongs. Reptile and shrew departures differ substantially from the four mustelid-based studies. Far-side feet are naturally occluded in places."
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2a97c308-aa12-40b6-8320-dbeb9f341e42.png",
+      "sha256": "a36a958fcb7c5920d507ce9874bac2ffa0d700f8c83bb7e6d8f4de71de982045",
+      "bytes": 2468752,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL5",
+      "slug": "05-shieldhound-lineup",
+      "title": "Shieldhound",
+      "description": "The accepted idea is a dog-sized animal that raises a bony neck collar when threatened. These six takes combine recognisable body plans with distinct natural collar structures; positions 1–3 show raised shields and 4–6 show lowered shields. The combinations propose biology, rather than armour or domesticated roles.",
+      "takes": [
+        {
+          "name": "Frill hound — raised",
+          "core": "Lean hound",
+          "twists": [
+            "Bony-ribbed frill-lizard neck collar"
+          ],
+          "line": "A lean hound with a raised fan of bone-supported skin around the neck.",
+          "detail": "Dog-sized lean tawny hound, long head, four normal canine legs, one ordinary tail, neck surrounded by RAISED frill-lizard-like circular collar with visible natural ivory bony ribs and muted ochre matte skin between. Three-quarter SIDE view facing left so head projects in front of collar, legs all joined normally. Threat-alert but not snarling. Dusty soil.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Shell fox — raised",
+          "core": "Fox-like canid",
+          "twists": [
+            "Hinged tortoise-like neck scutes"
+          ],
+          "line": "A fox-like animal with a raised collar of broad tortoise-like scutes.",
+          "detail": "Dog-sized rangy russet fox-like body, long muzzle and bushy tail, exactly four canine legs. Broad natural tortoise-shell-like keratin scutes on neck unfold into a RAISED protective shield behind head, living bony base, dull umber and ivory seams. Side-on right, silhouette entirely visible, ears clear of collar. Leaf patch. Not wearing human armour.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Scale wolf — raised",
+          "core": "Lean wolf",
+          "twists": [
+            "Pangolin-like overlapping bony neck plates"
+          ],
+          "line": "A lean grey wolf shape with a raised mantle of overlapping scales.",
+          "detail": "Dog-sized lean grey wolf-shaped animal, four legs and one low bushy tail. Stiff overlapping pangolin-like ivory-brown neck plates hinge upward as a RAISED defensive fan behind narrow wolf head; three-quarter side view left to make the raised profile legible. Matte and biological, no buckles. Stone patch.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Muntjac hound — lowered",
+          "core": "Compact hound",
+          "twists": [
+            "Segmented bony neck ruff shaped like branching antler plates"
+          ],
+          "line": "A compact short-muzzled hound with branching neck plates folded flat.",
+          "detail": "Dog-sized stocky short-muzzled brindled hound, small folded ears, four ordinary canine legs, single short normal tail. Collar consists of several flattened branching antler-bone plates growing around neck, now LOWERED and folded close along neck and shoulders, not horns growing from skull and not spikes all over body. Side view right, quiet stride over mossless soil.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Badger shield — lowered",
+          "core": "Badger-like ground forager",
+          "twists": [
+            "Dog-sized badger build",
+            "Overlapping armadillo-like collar plates hinged at neck"
+          ],
+          "line": "A low badger-like departure with a folded armadillo-style neck shield.",
+          "detail": "Fresh departure: dog-sized low wide badger-like animal, recognisable wedge muzzle, short coarse black-and-buff coat, exactly four low powerful digging legs and short tail. Broad overlapping armadillo-like natural neck plates form a collar now LOWERED flush around nape and upper shoulders, chest and belly still furred. Side view left on disturbed leaf litter. No full shell or body armour.",
+          "intended_size": "Dog-sized"
+        },
+        {
+          "name": "Spring-neck browser — lowered",
+          "core": "Small goat-like browser",
+          "twists": [
+            "Bony scalloped collar replacing horns"
+          ],
+          "line": "A goat-like departure with a lowered scalloped collar and no horns.",
+          "detail": "Fresh departure: dog-sized small hornless goat-like browsing animal, narrow caprine muzzle and horizontal pupils, four slender cloven-hoofed legs, short upright tail. A living bony scalloped fan collar folded LOWERED along back of neck and shoulders, natural matte ivory plates with short fur at base; no horns and no manufactured armour. Side-on right casually stepping on dry grass patch. The plate structure could raise behind the head defensively.",
+          "intended_size": "Dog-sized"
+        }
+      ],
+      "file": "05-shieldhound-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Shieldhound. Positions 1–4 develop the accepted core. Positions 5–6 deliberately rethink the body around that core.\nPOSITION 1 (upper left): Dog-sized lean tawny hound, long head, four normal canine legs, one ordinary tail, neck surrounded by RAISED frill-lizard-like circular collar with visible natural ivory bony ribs and muted ochre matte skin between. Three-quarter SIDE view facing left so head projects in front of collar, legs all joined normally. Threat-alert but not snarling. Dusty soil.\nPOSITION 2 (upper centre): Dog-sized rangy russet fox-like body, long muzzle and bushy tail, exactly four canine legs. Broad natural tortoise-shell-like keratin scutes on neck unfold into a RAISED protective shield behind head, living bony base, dull umber and ivory seams. Side-on right, silhouette entirely visible, ears clear of collar. Leaf patch. Not wearing human armour.\nPOSITION 3 (upper right): Dog-sized lean grey wolf-shaped animal, four legs and one low bushy tail. Stiff overlapping pangolin-like ivory-brown neck plates hinge upward as a RAISED defensive fan behind narrow wolf head; three-quarter side view left to make the raised profile legible. Matte and biological, no buckles. Stone patch.\nPOSITION 4 (lower left): Dog-sized stocky short-muzzled brindled hound, small folded ears, four ordinary canine legs, single short normal tail. Collar consists of several flattened branching antler-bone plates growing around neck, now LOWERED and folded close along neck and shoulders, not horns growing from skull and not spikes all over body. Side view right, quiet stride over mossless soil.\nPOSITION 5 (lower centre): Fresh departure: dog-sized low wide badger-like animal, recognisable wedge muzzle, short coarse black-and-buff coat, exactly four low powerful digging legs and short tail. Broad overlapping armadillo-like natural neck plates form a collar now LOWERED flush around nape and upper shoulders, chest and belly still furred. Side view left on disturbed leaf litter. No full shell or body armour.\nPOSITION 6 (lower right): Fresh departure: dog-sized small hornless goat-like browsing animal, narrow caprine muzzle and horizontal pupils, four slender cloven-hoofed legs, short upright tail. A living bony scalloped fan collar folded LOWERED along back of neck and shoulders, natural matte ivory plates with short fur at base; no horns and no manufactured armour. Side-on right casually stepping on dry grass patch. The plate structure could raise behind the head defensively.\nCRITICAL: collars are living bony anatomy, not manufactured equipment. Cells 1,2,3 collars RAISED. Cells 4,5,6 collars LOWERED. Dog-sized, never gigantic. Clear 4-legged anatomy.",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Three raised and three lowered collars as requested. Hound, fox and wolf first-row silhouettes remain distinct, with badger and goat departures below. Four-legged anatomy and weight are coherent. Lowered collars read like natural plates, though a selected design should further clarify how the plates attach and hinge."
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-62218803-2939-47fe-b285-20d0282981c9.png",
+      "sha256": "96c0ff65a2ca9ee40ccdf5103a3229f87a680ef6445a413ebacedbe26c8fea7f",
+      "bytes": 2594481,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL6",
+      "slug": "06-open-lineup",
+      "title": "Open exploration",
+      "description": "Six new wildlife proposals fill different ordinary niches: grazing, hunting, scavenging, burrowing, wading and climbing. Each starts from a familiar animal core and changes one or two functional features. None is established as canon or assigned a human use.",
+      "takes": [
+        {
+          "name": "Sieve-muzzle grazer",
+          "core": "Small antelope grazer",
+          "twists": [
+            "Broad paired comb-edged lips sift wiry marsh grasses"
+          ],
+          "line": "A hornless antelope with a broad comb-edged grazing muzzle.",
+          "detail": "Small deer-sized hornless antelope grazer, four slender cloven-hoofed legs and ordinary short tail, matte warm buff fur. One unfamiliar feature: broad paired comb-edged keratin upper lips forming a flexible grazing rake, continuous with recognisable mammalian muzzle, mouth closed enough to be appealing. Side view left nibbling sparse grass on a small marsh patch. No frill, armour, shell or flowers.",
+          "intended_size": "Small deer-sized"
+        },
+        {
+          "name": "Split-jaw stoat",
+          "core": "Small mustelid predator",
+          "twists": [
+            "Long low skull with independently mobile paired lower-jaw tips for extracting prey"
+          ],
+          "line": "A cat-sized predator with paired short jaw tips that prise prey from crevices.",
+          "detail": "Cat-sized long low mustelid predator, sleek charcoal-brown matte fur, four small clawed paws, long normal balancing tail. Broad flattened recognizable carnivore skull ends in a short divided lower lip/jaw with two tiny articulated gripping tips, not tusks or insect mandibles; closed in a natural hunting pose peering into a rock crack. Side view right, body fully visible. Only this one unusual head adaptation.",
+          "intended_size": "Cat-sized"
+        },
+        {
+          "name": "Spoon-tongue scavenger",
+          "core": "Hedgehog-like ground scavenger",
+          "twists": [
+            "Broad flexible spoon-ended tongue gathers soft remains"
+          ],
+          "line": "A squat spiny scavenger with a spoon-shaped feeding tongue.",
+          "detail": "Rabbit-sized squat hedgehog-like scavenger, short bristly russet spines across back, grey face, exactly four short legs and normal tiny tail. An unusually wide fleshy spoon-shaped tongue extends a short distance to collect soft fallen fruit from leaf litter; recognizable hedgehog muzzle and body, no armour plates. Side view left, modest natural behavior.",
+          "intended_size": "Rabbit-sized"
+        },
+        {
+          "name": "Wedge-ear burrower",
+          "core": "Rabbit-like burrower",
+          "twists": [
+            "Two short rigid shovel-shaped ear flaps brace against tunnel roofs"
+          ],
+          "line": "A compact rabbit-like burrower with broad wedge-shaped ears.",
+          "detail": "Rabbit-sized digging mammal with recognisable rabbit powerful hips, four legs, small tail and soft matte ochre coat. Ears are short broad rigid wedge-shaped fleshy structures that can press flat against head to brace tunnel roofs, not horns or leaf appendages. Whole animal side-on right beside a shallow earth depression, slightly braced stance, ordinary clawed feet.",
+          "intended_size": "Rabbit-sized"
+        },
+        {
+          "name": "Silt-sifter",
+          "core": "Heron-like wading bird",
+          "twists": [
+            "Two broad lateral bill lobes filter mud"
+          ],
+          "line": "A slender wading bird with a spatulate, split-lobed bill.",
+          "detail": "Knee-high heron-like wader standing on TWO long legs and three forward toes, two ordinary feathered wings FOLDED naturally against body, long S-curved neck. Slate-blue and cream feathers, bill ends in two broad shallow scoop lobes joined at base, functional silt-sifting beak not tentacles. Side view left in a very small shallow water patch, no flight or wing display.",
+          "intended_size": "Knee-high"
+        },
+        {
+          "name": "Branch-lock climber",
+          "core": "Small arboreal squirrel",
+          "twists": [
+            "Paired broad heel pads interlock to grip a branch without using the forefeet"
+          ],
+          "line": "A squirrel-like tree dweller whose broad hindfoot pads lock around a branch.",
+          "detail": "Forearm-length arboreal squirrel-like animal with matte cinnamon fur, ordinary balancing bushy tail and exactly four limbs. Two hindfeet have broad flexible opposing heel pads that meet under a branch to lock its grip, while forepaws hold a small seed. Side view right on one short low branch over leaf litter. No membranes, wings, plants growing from body or extra legs.",
+          "intended_size": "Forearm-length"
+        }
+      ],
+      "file": "06-open-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Open exploration. Six DIFFERENT new animal cores and niches. At most one plant hybrid; this particular plate uses none. No fliers or gliders.\nPOSITION 1 (upper left): Small deer-sized hornless antelope grazer, four slender cloven-hoofed legs and ordinary short tail, matte warm buff fur. One unfamiliar feature: broad paired comb-edged keratin upper lips forming a flexible grazing rake, continuous with recognisable mammalian muzzle, mouth closed enough to be appealing. Side view left nibbling sparse grass on a small marsh patch. No frill, armour, shell or flowers.\nPOSITION 2 (upper centre): Cat-sized long low mustelid predator, sleek charcoal-brown matte fur, four small clawed paws, long normal balancing tail. Broad flattened recognizable carnivore skull ends in a short divided lower lip/jaw with two tiny articulated gripping tips, not tusks or insect mandibles; closed in a natural hunting pose peering into a rock crack. Side view right, body fully visible. Only this one unusual head adaptation.\nPOSITION 3 (upper right): Rabbit-sized squat hedgehog-like scavenger, short bristly russet spines across back, grey face, exactly four short legs and normal tiny tail. An unusually wide fleshy spoon-shaped tongue extends a short distance to collect soft fallen fruit from leaf litter; recognizable hedgehog muzzle and body, no armour plates. Side view left, modest natural behavior.\nPOSITION 4 (lower left): Rabbit-sized digging mammal with recognisable rabbit powerful hips, four legs, small tail and soft matte ochre coat. Ears are short broad rigid wedge-shaped fleshy structures that can press flat against head to brace tunnel roofs, not horns or leaf appendages. Whole animal side-on right beside a shallow earth depression, slightly braced stance, ordinary clawed feet.\nPOSITION 5 (lower centre): Knee-high heron-like wader standing on TWO long legs and three forward toes, two ordinary feathered wings FOLDED naturally against body, long S-curved neck. Slate-blue and cream feathers, bill ends in two broad shallow scoop lobes joined at base, functional silt-sifting beak not tentacles. Side view left in a very small shallow water patch, no flight or wing display.\nPOSITION 6 (lower right): Forearm-length arboreal squirrel-like animal with matte cinnamon fur, ordinary balancing bushy tail and exactly four limbs. Two hindfeet have broad flexible opposing heel pads that meet under a branch to lock its grip, while forepaws hold a small seed. Side view right on one short low branch over leaf litter. No membranes, wings, plants growing from body or extra legs.",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-14e61fed-b5d0-4333-b132-7c23e5089288.png",
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six distinct animal cores and niches; visible grazer mouth, scavenger tongue, wader bill and climber heel adaptations. Four legs on mammals and two legs plus folded wings on the bird; contact with earth, water and branch is readable. The stoat jaw and rabbit ear changes are subtler than the other designs and should be amplified if selected. The climber's long opposing heel structures are intentionally exploratory and need joint diagrams before scene work."
+      },
+      "sha256": "83d7c92991d2b18c56e76eb2955ea491c852b60a3276b140498d6f12640b79c3",
+      "bytes": 2640596,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "CL7",
+      "slug": "07-round-13-retries-lineup",
+      "title": "Round 13 — rebuilt",
+      "description": "Six earlier ideas are rebuilt around recognisable animal bodies: a lizard, a chameleon, a seal, a grazer, a dolphin and an amphibian ambush hunter. Each keeps its ecological premise while limiting the new anatomy to one or two twists. These are new proposals for review, not restored approvals of the rejected paintings.",
+      "takes": [
+        {
+          "name": "Screeswimmer",
+          "core": "Burrowing lizard",
+          "twists": [
+            "Broad shovel skull and flattened torso",
+            "Armoured scales adapted to moving through loose scree"
+          ],
+          "line": "A flattened shovel-headed lizard, fully readable above loose scree.",
+          "detail": "Dog-length burrowing lizard, four short strong clawed legs and ordinary tapering tail, broad flat shovel head continuous with flattened torso, compact overlapping protective sand-grey scales. Whole silhouette and all major body segments visible, lower belly alone half-settled into loose scree. Side view left; a few stones slide past the legs. Not a hidden ridge or alien fin.",
+          "intended_size": "Dog-length"
+        },
+        {
+          "name": "Tetherhunter",
+          "core": "Chameleon-like cliff hunter",
+          "twists": [
+            "Long sticky tongue strong enough to anchor between rock ledges"
+          ],
+          "line": "A cliff chameleon gripping rock with its tongue stretched to a nearby ledge.",
+          "detail": "Forearm-length chameleon-like lizard, recognizable turret eyes and grasping two-to-three toe groups, exactly four legs, ordinary curled tail. Side view right supported on a small rock ledge, long non-glowing sticky tongue extends in a taut single organic line to adjacent lower rock outcrop within same cell. Attached at open mouth, no second tongue, no web. Matte muted green scales. No flying pose.",
+          "intended_size": "Forearm-length"
+        },
+        {
+          "name": "Galeskater",
+          "core": "Seal-like ice animal",
+          "twists": [
+            "Raised dorsal fin-sail catches wind"
+          ],
+          "line": "A low seal-like animal with a triangular dorsal sail on ice.",
+          "detail": "Small seal-sized recognisable seal with rounded whiskered head, streamlined matte grey-blue body, two front flippers and two rear flippers, one tall triangular natural dorsal fin-sail on back catching the breeze. Sail is one continuous skin structure with subtle supporting ribs, not extra wings. Entire body rests low on a small ice patch facing left, slight skid streak under body. No manta-ray or diamond body.",
+          "intended_size": "Small seal-sized"
+        },
+        {
+          "name": "The cleaning",
+          "core": "Hippo-like wallowing grazer",
+          "twists": [
+            "Symbiosis with small long-fingered mammalian cleaners, one also taking tiny bites"
+          ],
+          "line": "A heavy grazer carrying three long-fingered cleaners; one takes a quiet bite.",
+          "detail": "Moderate hippo-sized heavy recognizable hippo-like grazer, four stout legs, small tail, broad blunt head and matte slate-brown hide. Standing side-on right in an ankle-deep small water patch, full trunk and feet visible. Exactly THREE distinct little long-fingered monkey-like cleaner animals on its back, each four limbs and a tail, one hand-sized, anatomy clear. Two pick at skin, one bends mouth to take a tiny subtle nip with no visible blood, wounds or gore. This symbiosis is the only twist.",
+          "intended_size": "Moderate hippo-sized"
+        },
+        {
+          "name": "Breakrider",
+          "core": "Dolphin-like coastal swimmer",
+          "twists": [
+            "Long wing-like pectoral fins allow short wave-launched glides"
+          ],
+          "line": "A dolphin-like swimmer with long paired gliding fins above one low wave.",
+          "detail": "Small dolphin-sized recognizably dolphin-like animal side-on left just above a very low small breaking-wave patch. Exactly TWO elongated wing-like pectoral fins attached behind head, one visible near fin stretched down and forward, far fin separate and foreshortened; one ordinary small dorsal fin and ONE horizontal two-fluked tail. Smooth matte blue-grey skin with appropriate small wet reflections. No feathers, no membranes attached to tail, no aerial giant. Entire animal and long fins fit comfortably inside cell.",
+          "intended_size": "Small dolphin-sized"
+        },
+        {
+          "name": "The lure field",
+          "core": "Toad-like terrestrial ambush predator",
+          "twists": [
+            "Two flexible dorsal stalks end in fleshy flower-like prey lures"
+          ],
+          "line": "A broad toad-like hunter with two flower-shaped lures, its body dug clear.",
+          "detail": "Dog-sized broad toad-like ambush predator, recognisable squat amphibian head and wide closed mouth, exactly FOUR compact legs, no tail. Matte mottled clay-brown skin, TWO slender flexible stalks grow from shoulders and end in pale fleshy flower-like lure structures, anatomical organs rather than actual rooted plants. Whole body is dug clear and shown in side view right on a shallow soil cutaway patch with a little earth at lower belly only. All head, torso and limbs readable, no prey or gore.",
+          "intended_size": "Dog-sized"
+        }
+      ],
+      "file": "07-round-13-retries-lineup.png",
+      "prompt": "Use case: stylized-concept. Asset: original Breachline creature exploration lineup, a painted natural-history plate, not a scene or card. Output one landscape PNG exactly 1536 x 1024 (3:2).\nLAYOUT: warm ivory empty background, exactly SIX distinct designs arranged in two rows of three evenly spaced invisible cells, read upper left to upper right, then lower left to lower right. Generous clear gutters, nothing crossing a cell, full bodies and important extremities comfortably inside canvas. No visible panel lines, frames, text, letters, numbers, labels, logos, watermarks or signature. Each animal is mostly side-on, naturally standing or moving, on its own small softly edged patch of appropriate ground. Vary facing and gesture. Include a small plain grey human silhouette as an unframed SCALE KEY near the edge of EACH cell, accompanied by a tiny matching animal silhouette at true relative scale; the main detailed study is enlarged for viewing. The scale keys are diagrams, not humans interacting with the animals.\nPAINTING: beautiful traditional oil/acrylic fantasy natural-history study, matte materials, measured visible brushwork, diffuse neutral daylight. Accurate connected functional anatomy, believable body weight and ground contact; restrained precise details at head and defining anatomical feature, broader quieter paint on other surfaces. No photography, no 3D render, no glossy animation, no cute toy shapes, no camera blur. Rich but natural restrained colour, no uniform noise.\nDESIGN RULE: recognizable animal biology and ecological niche, with at most TWO meaningful twists around one core, no alien abstract bodies. The six silhouettes must differ substantially, not six recolours. No equipment, armour made by humans, clothing, magic effects or invented extra appendages unless specifically called for below. The concepts are proposals, not established lore. No image references are attached; invent from words.\n\nSHEET: Round 13 — rebuilt. Six DIFFERENT rebuilt earlier ideas, each wholly readable. Only the dolphin has glide fins; do not spread sails, vanes or plant lures to other cells.\nPOSITION 1 (upper left): Dog-length burrowing lizard, four short strong clawed legs and ordinary tapering tail, broad flat shovel head continuous with flattened torso, compact overlapping protective sand-grey scales. Whole silhouette and all major body segments visible, lower belly alone half-settled into loose scree. Side view left; a few stones slide past the legs. Not a hidden ridge or alien fin.\nPOSITION 2 (upper centre): Forearm-length chameleon-like lizard, recognizable turret eyes and grasping two-to-three toe groups, exactly four legs, ordinary curled tail. Side view right supported on a small rock ledge, long non-glowing sticky tongue extends in a taut single organic line to adjacent lower rock outcrop within same cell. Attached at open mouth, no second tongue, no web. Matte muted green scales. No flying pose.\nPOSITION 3 (upper right): Small seal-sized recognisable seal with rounded whiskered head, streamlined matte grey-blue body, two front flippers and two rear flippers, one tall triangular natural dorsal fin-sail on back catching the breeze. Sail is one continuous skin structure with subtle supporting ribs, not extra wings. Entire body rests low on a small ice patch facing left, slight skid streak under body. No manta-ray or diamond body.\nPOSITION 4 (lower left): Moderate hippo-sized heavy recognizable hippo-like grazer, four stout legs, small tail, broad blunt head and matte slate-brown hide. Standing side-on right in an ankle-deep small water patch, full trunk and feet visible. Exactly THREE distinct little long-fingered monkey-like cleaner animals on its back, each four limbs and a tail, one hand-sized, anatomy clear. Two pick at skin, one bends mouth to take a tiny subtle nip with no visible blood, wounds or gore. This symbiosis is the only twist.\nPOSITION 5 (lower centre): Small dolphin-sized recognizably dolphin-like animal side-on left just above a very low small breaking-wave patch. Exactly TWO elongated wing-like pectoral fins attached behind head, one visible near fin stretched down and forward, far fin separate and foreshortened; one ordinary small dorsal fin and ONE horizontal two-fluked tail. Smooth matte blue-grey skin with appropriate small wet reflections. No feathers, no membranes attached to tail, no aerial giant. Entire animal and long fins fit comfortably inside cell.\nPOSITION 6 (lower right): Dog-sized broad toad-like ambush predator, recognisable squat amphibian head and wide closed mouth, exactly FOUR compact legs, no tail. Matte mottled clay-brown skin, TWO slender flexible stalks grow from shoulders and end in pale fleshy flower-like lure structures, anatomical organs rather than actual rooted plants. Whole body is dug clear and shown in side view right on a shallow soil cutaway patch with a little earth at lower belly only. All head, torso and limbs readable, no prey or gore.",
+      "generation_status": "generated",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-1c664d1c-5bef-4b11-89ae-db28d4c17a09.png",
+      "qa": {
+        "status": "reviewable_first_pass",
+        "notes": "Six rebuilt concepts use recognizable animal cores. Lizard, chameleon and toad silhouettes are fully visible; the seal's sail and dolphin's paired pectoral glide fins are distinct. Three cleaner animals visibly contact the grazer, one mouth-down. Functional tongue attachment, bony feet and ground/water/ice contact are readable. The dolphin tail is shown at an oblique angle and should be resolved explicitly as horizontal flukes in any selected reference sheet. Small cleaner finger anatomy needs a larger reference study."
+      },
+      "sha256": "45ff4d87f0f86f2351befe7f769c494efe86cf8374486efc68870eb6826a0c3b",
+      "bytes": 2180611,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "validation": {
+    "sheet_count": 7,
+    "take_count": 42,
+    "image_references_attached": 0,
+    "visual_review": "All seven sheets inspected for layout, visible anatomy, scale, contact and defining features; first-pass limits are recorded per sheet.",
+    "gallery": "review.html",
+    "feedback": "feedback.json",
+    "review_url": "http://127.0.0.1:8771"
+  },
+  "art_direction_sha256": "6792f516a1f293a8236fc33ce1212d6ee290aac388563c2b85418ada4c062ead",
+  "setting_sha256": "0987b26c778f8c9825a0a39f5b2d689872719f67ffbff693c29e56c38fa3ddfb",
+  "selection_guide_sha256": "63a683d670fd56cd52c7609347d8fd0dcc30ca3927f20b409ec78166537d2deb"
+}

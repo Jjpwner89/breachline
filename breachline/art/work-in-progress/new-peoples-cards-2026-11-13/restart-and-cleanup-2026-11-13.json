@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-13",
+  "review_round": 3,
+  "request": "Delete every Husk and Caravan head iteration and regenerate from scratch without using them as inspiration.",
+  "creator_feedback": "Later versions became noisy; errors compounded. All prior versions of these two paintings are rejected.",
+  "codes": [
+    200,
+    204
+  ],
+  "deleted_files": [
+    {
+      "code": 200,
+      "revision": 1,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk.png",
+      "sha256": "abe500d6a3ca492ece880cc746f7b3ef333837506db60d9a880514ed1f06ef6f"
+    },
+    {
+      "code": 200,
+      "revision": 1,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-498ae46d-0d65-44ce-9a2f-e4d20e30e73b.png",
+      "sha256": "abe500d6a3ca492ece880cc746f7b3ef333837506db60d9a880514ed1f06ef6f"
+    },
+    {
+      "code": 200,
+      "revision": 2,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-v2.png",
+      "sha256": "b1b7fa513621cdb600ad8e6d6fde47a2a4575047f1a392ad0d8329d4972805b7"
+    },
+    {
+      "code": 200,
+      "revision": 2,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-616e560a-5008-4cbb-8aab-290eef2c224a.png",
+      "sha256": "b1b7fa513621cdb600ad8e6d6fde47a2a4575047f1a392ad0d8329d4972805b7"
+    },
+    {
+      "code": 200,
+      "revision": 3,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-v3.png",
+      "sha256": "7cd0927cc05882c8082f7b7c8abca960ae4e46c85477055622269228f9de96d0"
+    },
+    {
+      "code": 200,
+      "revision": 3,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-48abc642-90e5-4bc6-90b0-d7d5e1715f06.png",
+      "sha256": "7cd0927cc05882c8082f7b7c8abca960ae4e46c85477055622269228f9de96d0"
+    },
+    {
+      "code": 204,
+      "revision": 1,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead.png",
+      "sha256": "3ec6de095f405643ef68c5c1ba13b2c38c52f3062fd2e94fdaec30f79477a8fe"
+    },
+    {
+      "code": 204,
+      "revision": 1,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-794a9417-9731-4b0e-bdea-c35c371a9cbb.png",
+      "sha256": "3ec6de095f405643ef68c5c1ba13b2c38c52f3062fd2e94fdaec30f79477a8fe"
+    },
+    {
+      "code": 204,
+      "revision": 2,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-v2.png",
+      "sha256": "fa725410442db7dcfebf66f8950a797653272e61361d2555aabbd23c19f59d1b"
+    },
+    {
+      "code": 204,
+      "revision": 2,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-81052987-96e0-418d-89dd-dbbef2e98e8d.png",
+      "sha256": "fa725410442db7dcfebf66f8950a797653272e61361d2555aabbd23c19f59d1b"
+    },
+    {
+      "code": 204,
+      "revision": 3,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-v3.png",
+      "sha256": "b16058c2847cea6081155c2bd31ea84e71c6089596f68e2e232b60b2ab68234d"
+    },
+    {
+      "code": 204,
+      "revision": 3,
+      "path": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-14117e22-8c81-4873-8280-b4522098ed38.png",
+      "sha256": "b16058c2847cea6081155c2bd31ea84e71c6089596f68e2e232b60b2ab68234d"
+    }
+  ],
+  "preserved": "All other paintings, approved people/animal reference sheets, and text prompt/decision history.",
+  "regeneration": "Only current approved design reference sheets; no prior 200/204 image inputs.",
+  "status": "deleted_verified_and_fresh_rebuilds_ready",
+  "deleted_count": 12,
+  "fresh_outputs": [
+    {
+      "code": 200,
+      "revision": 4,
+      "filename": "200-husk-fresh-01.png",
+      "generation_mode": "fresh_from_approved_design_sheet",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+      ],
+      "reference_selection": "Approved PL3D full male visual range for Ashborn anatomy only. No discarded card painting attached or used.",
+      "caption": "A nearly empty Ashborn is guided through a barracks gate by a companion who retains more awareness. This new composition uses the approved Ashborn design; the individuals and moment remain proposals.",
+      "prompt": "Create a completely NEW Breachline card painting from the attached approved ASHBORN ANATOMY SHEET only. The sheet is design reference, not a composition. One landscape 1536 × 1024 oil/acrylic painting, no writing or frame.\n\nA body returned from death while almost none of the person returned: a young adult male Ashborn pauses just outside a cold barracks gate, chin slightly lowered, gaze empty and patient. Beside him a more present older male Ashborn gently guides him into the yard. Ordinary adult size, cold ash-olive pallor, hollow facial planes, whole bodies, restrained healed scars. Use the sheet's male range to invent these two individuals. Plain worn charcoal-blue military tunics and trousers, one modest old iron breastplate on the husk. Their situation is harsh, not a benevolent clinic.\n\nFresh three-quarter view, figures seen from head to boots with space around them; the husk stands a little ahead at centre-right, the companion just behind to his left. Their quiet contact is easy to read: the companion's ANATOMICAL LEFT arm reaches under the husk's ANATOMICAL RIGHT elbow. His relaxed left hand sits on the INNER side of that arm, in the gap between the husk's arm and hip. A straight comfortable wrist, fingers gently contacting cloth; no outward cupped palm. Both shoulders, elbows and wrists connect naturally. The husk's own forearm hangs loosely. The companion looks toward him. A few very small soldiers beyond the gate all walk away in the same direction.\n\nCool morning light crosses simple warm-grey masonry and worn blue cloth; faces and hand contact remain readable. Let broad opaque strokes and quiet colour planes carry the image. Selectively resolve faces and the contact, simplify the rest. Smooth matte skin planes, clean silhouettes and soft lost edges; no grain overlay, stippled surface noise, excessive fabric scratches, pore detail, photographic sharpening or glossy 3D rendering.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-13c82038-b2f8-49fe-8bc3-911e7eee4f75.png",
+      "sha256": "5c7162d80eba5bc0eb8262c05753c156c957a028b7433367d32ec91612ae4f24",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "New wider barracks-gate composition and whole figures.",
+          "Companion's guiding grip and all visible limbs inspected; natural hand shape without outward cupped palm.",
+          "Husk looks downward; distant soldiers face away together.",
+          "Broad masonry and matte face/cloth planes replace the noisy edit chain."
+        ]
+      },
+      "status": "fresh_generated_pending_creator_review"
+    },
+    {
+      "code": 204,
+      "revision": 4,
+      "filename": "204-caravanhead-fresh-01.png",
+      "generation_mode": "fresh_from_approved_design_sheets",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "reference_selection": "Approved PL8B male salt variant TOP-MIDDLE for leader; same accepted species range for companions. G2-5 Salt-flat migrant ONLY, bottom-middle cell 5 of g2.png, for animal anatomy. No discarded card painting attached or used.",
+      "caption": "A lightly armed male caravan head leads his family band toward the right along a mountain road, with workers and the loaded cart following behind. The Banded folk and salt-flat migrant are established designs; this leader, journey and animal’s draught role are proposed.",
+      "prompt": "Create a completely NEW Breachline card painting using only these approved DESIGN SHEETS. Image 1 supplies Banded folk anatomy; image 2 supplies the selected animal. Compose a new scene. Landscape 1536 × 1024, traditional oil/acrylic painting, no writing or frame.\n\nA confident elected caravan head leads his family band along a rocky mountain road in clear daylight, away from the salt plains. He is a strong adult MALE Banded folk of the salt variant: copper-ochre skin with pale bands and the broad integrated brow and cheek anatomy of image 1 TOP MIDDLE. Give this new individual a thoughtful, alert face. Light practical protection: a short quilted leather jack over an off-white shirt, a faded ochre travelling mantle and a sheathed sword at the belt. No full plate or helmet. Brown leather open-toed travelling shoes with broad straps and sturdy soles, both feet visible and naturally grounded.\n\nPlace him at the FRONT of the caravan, near the right third of the painting, moving and looking to SCREEN RIGHT. Leave open road ahead. The caravan follows BEHIND him to the left along the same road, winding down from the left distance. A loaded wooden cart and its draught animal are clearly behind the leader, all moving rightward. Two secondary Banded companions work as they travel: one helps push the rear rail of the cart on the incline; the other walks beside it carrying a bundled canvas roll on a shoulder. Their eyes, hands and balance agree with their tasks.\n\nThe draught animal is ONLY the BOTTOM-MIDDLE creature in image 2, G2-5 Salt-flat migrant. Preserve its narrow body, high shaggy rust-and-cream hindquarters, four long jointed legs and broad padded toes, long low-reaching neck and blunt soft-lipped head. Believable breast harness and shafts connect it to the cart. Ignore all other animals on the sheet.\n\nAn airy mountain passage with a few scrub trees, large limestone slopes and blue distant ridges. Muted ochre, slate blue and olive green; a clear patch of daylight links the leader, workers and cart. Use broad confident paint and simplified masses, precise attention on the leader's face and readable hands. Naturally matte skin and cloth. Quiet economical background, no carpet of flowers, no grain/noise overlay, all-over microtexture, repeated scratch marks, over-sharpening, photographic rendering or glossy animation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-7665818a-4b44-49eb-ac43-11ce8f55a6ca.png",
+      "sha256": "d23a676b33f6353975d964aefdd14c9aeacb3c86729566d710f35eabfa2bae0e",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "New costume, scene and figures built from approved design sheets.",
+          "Male leader at right travels ahead of the cart with sword, light protection and open shoes.",
+          "Two companions work: one pushes the cart, another carries a canvas roll.",
+          "Animal, harness, feet, worker hands and coherent rightward travel inspected.",
+          "Quieter broad landscape paint without the previous repeated surface scratches."
+        ]
+      },
+      "status": "fresh_generated_pending_creator_review"
+    }
+  ],
+  "gallery": "revisions.html",
+  "creator_approval": "Pending",
+  "finalized": false
+}

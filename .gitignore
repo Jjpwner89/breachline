@@ -8,3 +8,6 @@
 /.venv-fal/
 /breachline/art/nsfw/
 **/__pycache__/
+
+# Temporary local art-gallery server output
+/breachline/art/**/review-server.log

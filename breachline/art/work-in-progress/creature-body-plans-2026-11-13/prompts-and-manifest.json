@@ -1,0 +1,672 @@
+{
+  "title": "Creature body plans and coverings — 13 November 2026",
+  "status": "complete_for_creator_review",
+  "generation_mode": "Built-in image_gen",
+  "creator_feedback": {
+    "date": "2026-11-13",
+    "source": "Direct creator feedback; RF1–RF4 identity confirmed",
+    "liked_reference_sheets": [
+      "RF1",
+      "RF2",
+      "RF3",
+      "RF4"
+    ],
+    "feedback": "The new exploration is too close to familiar Earth animals. Vary body plans further and vary skin texture, fur, feathers and scales.",
+    "scope": "Further creature exploration; retain the liked RF1–RF4 designs.",
+    "reference_status": "RF1–RF4 accepted as visual reference directions, without automatic approval of all biological or lore proposals.",
+    "new_batch": "Three sheets of six fresh body plans and coverings; no reference-image attachments."
+  },
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_revision": "Latest creature body-plan and covering feedback incorporated 2026-11-13.",
+  "reference_policy": "No image attachments. Liked RF1–RF4 preserved separately as selected visual references; not used as templates for these new animals.",
+  "retained_reference_library": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/creature-references-2026-11-13",
+  "requested_dimensions": [
+    1536,
+    1024
+  ],
+  "review_url": "http://127.0.0.1:8773",
+  "workflow": "New lineup -> creator selection -> reference sheet -> scene.",
+  "sheets": [
+    {
+      "code": "BP1",
+      "slug": "01-body-plans-weight-and-motion",
+      "title": "Weight & movement",
+      "description": "Six new animals use contrasting centres of mass, limb arrangements and body profiles. Coverings follow those structures, from hanging fibres to layered feathers and flexible scales. These are exploratory anatomies rather than new canonical species.",
+      "takes": [
+        {
+          "name": "Foldstride",
+          "core": "Terrestrial root grazer",
+          "twists": [
+            "Deep suspended forebody with low forelimbs and high folding hindlimbs",
+            "Heavy crimped fur hangs only from load-bearing flank folds"
+          ],
+          "surface": "Crimped fur, short velvet and exposed folded skin",
+          "size": "Pony-length, low at the head",
+          "line": "A low feeding front and high folded rear give this grazer a steeply sloping silhouette.",
+          "detail": "A pony-length terrestrial root grazer with a DEEP laterally compressed forebody hanging low between two short columnar forelegs, and a high narrow pelvis carried by two long double-folding hindlegs. Exactly FOUR legs, no hooves: broad three-lobed pads. Small head emerges low and forward from a short flexible neck, wide soft grinding lips, two inset side eyes, no external ears or horns. Short matte grey-green velvet over torso; coarse cream crimped fibres hang in separate curtains from flank folds, leaving joints visible. A short thick balancing tail. Side left feeding low among sparse roots; not an ordinary hoofed animal.",
+          "description": "A low feeding front and high folded rear give this grazer a steeply sloping silhouette. It proposes deep suspended forebody with low forelimbs and high folding hindlimbs and heavy crimped fur hangs only from load-bearing flank folds; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP1-1"
+          }
+        },
+        {
+          "name": "Loomstep",
+          "core": "Ground insect hunter",
+          "twists": [
+            "Tall two-legged gait with a long horizontal chest and no forelimbs",
+            "Layered feathers soften a blunt lip-jawed head rather than a beak"
+          ],
+          "surface": "Short contour feathers and coarse feather fans",
+          "size": "Human waist-high",
+          "line": "A tall two-legged hunter carries its long feathered chest ahead of the hips.",
+          "detail": "Waist-high ground insect hunter, exactly TWO long backward-folded legs with wide four-toed feet supporting a long HORIZONTAL torpedo-like chest ahead of a high pelvis. No wings or forearms. Thick short horizontal tail counterbalances it. Head is a blunt flattened mobile wedge on a very short neck, with a SMALL horizontal flesh-lipped mouth and two forward amber eyes, not a beak or mammal muzzle. Dense overlapping rust-red contour FEATHERS over chest and hips; darker broad feather fans trail along tail sides, no fluffy down ball. Side right, one foot testing leaf litter, strong unfamiliar balanced silhouette.",
+          "description": "A tall two-legged hunter carries its long feathered chest ahead of the hips. It proposes tall two-legged gait with a long horizontal chest and no forelimbs and layered feathers soften a blunt lip-jawed head rather than a beak; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP1-2"
+          }
+        },
+        {
+          "name": "Shelfback",
+          "core": "Rock-crevice scavenger",
+          "twists": [
+            "Broad flattened trunk carried by three different-height leg pairs",
+            "Flexible lateral scale shingles fold with the body"
+          ],
+          "surface": "Matte overlapping scales and soft joint skin",
+          "size": "Dog-length",
+          "line": "A broad flat scavenger steps across rock on six legs of graduated length.",
+          "detail": "Dog-length low broad scavenger, broad flattened oval trunk, tiny triangular skull drawn almost flush into front edge with paired alert eyes and a short ventral mouth. Exactly SIX legs in three bilateral pairs: short front pair under chin, middle pair longer and laterally bracing, powerful rear pair supporting tapered hips. Legs have continuous vertebrate-like joints and wide claw-tipped pads, not crab or insect legs. Small matte slate-blue scale shingles form flexible side pleats; dorsal scales fine, no giant armour shell. One short flat tail. Side-left three-quarter over angular rock, animal weight believable.",
+          "description": "A broad flat scavenger steps across rock on six legs of graduated length. It proposes broad flattened trunk carried by three different-height leg pairs and flexible lateral scale shingles fold with the body; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP1-3"
+          }
+        },
+        {
+          "name": "Siltdrum",
+          "core": "Shallow-water filter feeder",
+          "twists": [
+            "Pear-shaped body with foreflippers and a broad single muscular ventral keel for propulsion",
+            "Loose ribbed skin expands during filtering"
+          ],
+          "surface": "Deeply ribbed matte skin",
+          "size": "Large-dog mass",
+          "line": "A pear-shaped filter feeder pushes along mud using its muscular underside.",
+          "detail": "Large-dog-mass amphibious filter feeder, compact pear-shaped trunk deepest at rear, tapered neckless front with two small lateral eyes and a narrow horizontal filtering mouth beneath blunt snout. Exactly TWO short strong foreflippers brace at front; rear body ends in a broad continuous muscular ventral keel used to push on mud, NOT a third leg or a tail fin. Whole underside connected, no hidden extra legs. Dull ochre-grey deeply ribbed skin, darker velvety ridge along back. Low side-right on silt with a little water. Biological shoulders and muscle folds, not a sack or a seal with a gimmick.",
+          "description": "A pear-shaped filter feeder pushes along mud using its muscular underside. It proposes pear-shaped body with foreflippers and a broad single muscular ventral keel for propulsion and loose ribbed skin expands during filtering; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "reject",
+            "notes": "Disliked as fat and ugly. Excluded as a reference; other liked cells in the shared image must be retained.",
+            "creator_assessment": "rejected",
+            "excluded": true
+          }
+        },
+        {
+          "name": "Needlehip",
+          "core": "Underbrush pursuit predator",
+          "twists": [
+            "Very narrow high hindquarters power a broad low gripping forebody",
+            "Directional bristled coat makes body planes legible"
+          ],
+          "surface": "Flat directional bristles and bare matte neck folds",
+          "size": "Dog-sized",
+          "line": "A broad low front and narrow spring-loaded hips make a strikingly uneven predator.",
+          "detail": "Dog-sized pursuit predator with broad low shoulder mass and a flattened trapezoid head hanging between two widely placed heavy forelimbs. Narrow tall pelvis and TWO tightly folded springing hindlimbs tucked near body midline: exactly FOUR limbs, four distinct three-digit gripping feet. Smooth short face with a small undercut jaw, two close-set gold eyes, no canine ears, long muzzle or nose pad. Long thin muscular balancing tail tapering without tuft. Dense flat silver-grey bristles follow sweeping muscle planes, sparse longer dark bristles only over hips, naked folded neck skin. Cautious side-left step through a little underbrush.",
+          "description": "A broad low front and narrow spring-loaded hips make a strikingly uneven predator. It proposes very narrow high hindquarters power a broad low gripping forebody and directional bristled coat makes body planes legible; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP1-5"
+          }
+        },
+        {
+          "name": "Spiralgrip",
+          "core": "Branch-foraging climber",
+          "twists": [
+            "Deep compact central torso rotates independently between two widely spaced limb girdles",
+            "Flexible scale-to-feather transition protects exposed back"
+          ],
+          "surface": "Fine flexible scales with short stiff feathers along the back",
+          "size": "Forearm-length body",
+          "line": "A compact tree climber twists its two limb girdles around a branch.",
+          "detail": "Forearm-bodied arboreal forager with a deep compact middle torso, small oblong head set directly at front, two large side eyes and short paired lips. Exactly FOUR long limbs in widely separated shoulder and pelvic girdles; torso turns so forefeet grip top of branch while hindfeet grip its underside. Each foot has three thick opposing digits, no giant hands. Long muscular ordinary tapering tail. Fine matte teal scales on belly and limbs transition gradually to SHORT STIFF copper feathers lying along back and nape, no wings or membranes. Side-right on a single diagonal branch, all limbs connected and distinctive twisted posture physically possible.",
+          "description": "A compact tree climber twists its two limb girdles around a branch. It proposes deep compact central torso rotates independently between two widely spaced limb girdles and flexible scale-to-feather transition protects exposed back; its detailed biology remains open."
+        }
+      ],
+      "kind": "lineup",
+      "file": "01-body-plans-weight-and-motion.png",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "generation_mode": "Built-in image_gen",
+      "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Weight & movement. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Terrestrial root grazer. A pony-length terrestrial root grazer with a DEEP laterally compressed forebody hanging low between two short columnar forelegs, and a high narrow pelvis carried by two long double-folding hindlegs. Exactly FOUR legs, no hooves: broad three-lobed pads. Small head emerges low and forward from a short flexible neck, wide soft grinding lips, two inset side eyes, no external ears or horns. Short matte grey-green velvet over torso; coarse cream crimped fibres hang in separate curtains from flank folds, leaving joints visible. A short thick balancing tail. Side left feeding low among sparse roots; not an ordinary hoofed animal.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Ground insect hunter. Waist-high ground insect hunter, exactly TWO long backward-folded legs with wide four-toed feet supporting a long HORIZONTAL torpedo-like chest ahead of a high pelvis. No wings or forearms. Thick short horizontal tail counterbalances it. Head is a blunt flattened mobile wedge on a very short neck, with a SMALL horizontal flesh-lipped mouth and two forward amber eyes, not a beak or mammal muzzle. Dense overlapping rust-red contour FEATHERS over chest and hips; darker broad feather fans trail along tail sides, no fluffy down ball. Side right, one foot testing leaf litter, strong unfamiliar balanced silhouette.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Rock-crevice scavenger. Dog-length low broad scavenger, broad flattened oval trunk, tiny triangular skull drawn almost flush into front edge with paired alert eyes and a short ventral mouth. Exactly SIX legs in three bilateral pairs: short front pair under chin, middle pair longer and laterally bracing, powerful rear pair supporting tapered hips. Legs have continuous vertebrate-like joints and wide claw-tipped pads, not crab or insect legs. Small matte slate-blue scale shingles form flexible side pleats; dorsal scales fine, no giant armour shell. One short flat tail. Side-left three-quarter over angular rock, animal weight believable.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Shallow-water filter feeder. Large-dog-mass amphibious filter feeder, compact pear-shaped trunk deepest at rear, tapered neckless front with two small lateral eyes and a narrow horizontal filtering mouth beneath blunt snout. Exactly TWO short strong foreflippers brace at front; rear body ends in a broad continuous muscular ventral keel used to push on mud, NOT a third leg or a tail fin. Whole underside connected, no hidden extra legs. Dull ochre-grey deeply ribbed skin, darker velvety ridge along back. Low side-right on silt with a little water. Biological shoulders and muscle folds, not a sack or a seal with a gimmick.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Underbrush pursuit predator. Dog-sized pursuit predator with broad low shoulder mass and a flattened trapezoid head hanging between two widely placed heavy forelimbs. Narrow tall pelvis and TWO tightly folded springing hindlimbs tucked near body midline: exactly FOUR limbs, four distinct three-digit gripping feet. Smooth short face with a small undercut jaw, two close-set gold eyes, no canine ears, long muzzle or nose pad. Long thin muscular balancing tail tapering without tuft. Dense flat silver-grey bristles follow sweeping muscle planes, sparse longer dark bristles only over hips, naked folded neck skin. Cautious side-left step through a little underbrush.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Branch-foraging climber. Forearm-bodied arboreal forager with a deep compact middle torso, small oblong head set directly at front, two large side eyes and short paired lips. Exactly FOUR long limbs in widely separated shoulder and pelvic girdles; torso turns so forefeet grip top of branch while hindfeet grip its underside. Each foot has three thick opposing digits, no giant hands. Long muscular ordinary tapering tail. Fine matte teal scales on belly and limbs transition gradually to SHORT STIFF copper feathers lying along back and nape, no wings or membranes. Side-right on a single diagonal branch, all limbs connected and distinctive twisted posture physically possible.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8ed6c038-f3d0-4842-be6e-dd75cdd48688.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Six whole-body designs reviewed for separated silhouettes, connected limbs, ground contact and covering variety. BP1-6 remains the most reptile-like; detailed joints and biology are still proposals for selected reference-sheet development."
+      },
+      "generation_history": [
+        {
+          "stage": "initial_lineup",
+          "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Weight & movement. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Terrestrial root grazer. A pony-length terrestrial root grazer with a DEEP laterally compressed forebody hanging low between two short columnar forelegs, and a high narrow pelvis carried by two long double-folding hindlegs. Exactly FOUR legs, no hooves: broad three-lobed pads. Small head emerges low and forward from a short flexible neck, wide soft grinding lips, two inset side eyes, no external ears or horns. Short matte grey-green velvet over torso; coarse cream crimped fibres hang in separate curtains from flank folds, leaving joints visible. A short thick balancing tail. Side left feeding low among sparse roots; not an ordinary hoofed animal.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Ground insect hunter. Waist-high ground insect hunter, exactly TWO long backward-folded legs with wide four-toed feet supporting a long HORIZONTAL torpedo-like chest ahead of a high pelvis. No wings or forearms. Thick short horizontal tail counterbalances it. Head is a blunt flattened mobile wedge on a very short neck, with a SMALL horizontal flesh-lipped mouth and two forward amber eyes, not a beak or mammal muzzle. Dense overlapping rust-red contour FEATHERS over chest and hips; darker broad feather fans trail along tail sides, no fluffy down ball. Side right, one foot testing leaf litter, strong unfamiliar balanced silhouette.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Rock-crevice scavenger. Dog-length low broad scavenger, broad flattened oval trunk, tiny triangular skull drawn almost flush into front edge with paired alert eyes and a short ventral mouth. Exactly SIX legs in three bilateral pairs: short front pair under chin, middle pair longer and laterally bracing, powerful rear pair supporting tapered hips. Legs have continuous vertebrate-like joints and wide claw-tipped pads, not crab or insect legs. Small matte slate-blue scale shingles form flexible side pleats; dorsal scales fine, no giant armour shell. One short flat tail. Side-left three-quarter over angular rock, animal weight believable.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Shallow-water filter feeder. Large-dog-mass amphibious filter feeder, compact pear-shaped trunk deepest at rear, tapered neckless front with two small lateral eyes and a narrow horizontal filtering mouth beneath blunt snout. Exactly TWO short strong foreflippers brace at front; rear body ends in a broad continuous muscular ventral keel used to push on mud, NOT a third leg or a tail fin. Whole underside connected, no hidden extra legs. Dull ochre-grey deeply ribbed skin, darker velvety ridge along back. Low side-right on silt with a little water. Biological shoulders and muscle folds, not a sack or a seal with a gimmick.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Underbrush pursuit predator. Dog-sized pursuit predator with broad low shoulder mass and a flattened trapezoid head hanging between two widely placed heavy forelimbs. Narrow tall pelvis and TWO tightly folded springing hindlimbs tucked near body midline: exactly FOUR limbs, four distinct three-digit gripping feet. Smooth short face with a small undercut jaw, two close-set gold eyes, no canine ears, long muzzle or nose pad. Long thin muscular balancing tail tapering without tuft. Dense flat silver-grey bristles follow sweeping muscle planes, sparse longer dark bristles only over hips, naked folded neck skin. Cautious side-left step through a little underbrush.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Branch-foraging climber. Forearm-bodied arboreal forager with a deep compact middle torso, small oblong head set directly at front, two large side eyes and short paired lips. Exactly FOUR long limbs in widely separated shoulder and pelvic girdles; torso turns so forefeet grip top of branch while hindfeet grip its underside. Each foot has three thick opposing digits, no giant hands. Long muscular ordinary tapering tail. Fine matte teal scales on belly and limbs transition gradually to SHORT STIFF copper feathers lying along back and nape, no wings or membranes. Side-right on a single diagonal branch, all limbs connected and distinctive twisted posture physically possible.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8ed6c038-f3d0-4842-be6e-dd75cdd48688.png",
+          "reference_images": [],
+          "disposition": "final_for_review"
+        }
+      ],
+      "sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
+      "bytes": 2859095,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "BP2",
+      "slug": "02-body-plans-coverings",
+      "title": "Coats, skin & scales",
+      "description": "Here the body covering changes the animal's silhouette and movement rather than simply its colour. Six different structures test long fibres, compact feathers, thick skin and flexible scales across ordinary niches. Their functions and detailed biology remain proposals.",
+      "takes": [
+        {
+          "name": "Drapecrest",
+          "core": "Low browsing herbivore",
+          "twists": [
+            "Long deep torso carried close to ground by four short outward-set limbs",
+            "Coarse flattened fur strips shield a flexible exposed neck"
+          ],
+          "surface": "Flat ribbon-like guard hairs over dense underfur",
+          "size": "Dog-length",
+          "line": "A long, deep browser wears broad flattened guard hairs that lift over its neck.",
+          "detail": "Dog-length low browsing animal, elongated deep ribcage carried just above ground on exactly FOUR short outward-set limbs with three broad padded toes. Narrow head extends on a long FLEXIBLE unarmoured neck from beneath chest front, blunt paired grazing lips and two small side eyes, no ears or hoofed face. Tail absent. Body covered in coarse flattened blue-black GUARD HAIRS in long overlapping locks over warm grey underfur; hairs are individual flattened strands, not feathers, shell plates, ribbons or leaves. Neck extension lifts the fur at shoulders into a functional weather collar but no bony shield. Side left in a patch of scrub.",
+          "description": "A long, deep browser wears broad flattened guard hairs that lift over its neck. It proposes long deep torso carried close to ground by four short outward-set limbs and coarse flattened fur strips shield a flexible exposed neck; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "undecided",
+            "notes": "Not interesting to the creator; not selected for this follow-up.",
+            "creator_assessment": "not_selected_this_round"
+          }
+        },
+        {
+          "name": "Velvetwheel",
+          "core": "Burrowing invertebrate detritivore",
+          "twists": [
+            "Arched body curls sideways to turn within narrow burrows",
+            "Dense directional velvet covers a soft continuous trunk"
+          ],
+          "surface": "Dense copper velvet with bare pale foot edges",
+          "size": "Hand-length",
+          "line": "A compact burrower curls sideways, moving on six short muscular feet.",
+          "detail": "Hand-length terrestrial invertebrate with a compact strongly arched soft body that can curl sideways like a comma, no shell or hard segments. Small clearly defined blunt head at narrow end, two small dark eyes and a tiny paired mouth. Exactly SIX short broad muscular feet in three pairs, smooth foot margins; no antenna forest or mandibles. Dense very short copper-red velvet fibres over whole dorsal surface, pale bare matte skin on underside and feet. Main animal moving in a C-shaped curve on leaf mould, side three-quarter right, clearly an animal rather than a fuzzy object. No luminescence, no limb duplicates.",
+          "description": "A compact burrower curls sideways, moving on six short muscular feet. It proposes arched body curls sideways to turn within narrow burrows and dense directional velvet covers a soft continuous trunk; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "undecided",
+            "notes": "Not interesting to the creator; not selected for this follow-up.",
+            "creator_assessment": "not_selected_this_round"
+          }
+        },
+        {
+          "name": "Sablemantle",
+          "core": "Cold-ground stalker",
+          "twists": [
+            "Wide wedge-shaped chest tapers into very narrow hips",
+            "Long layered feathers fold flush as it crouches"
+          ],
+          "surface": "Layered charcoal flightless feathers with pale shaft accents",
+          "size": "Dog-sized",
+          "line": "A four-legged stalker folds a heavy feather mantle over its broad chest.",
+          "detail": "Dog-sized FOUR-LEGGED cold-ground stalker, very broad wedge-shaped chest tapering into narrow flexible hips, short muscular legs with three long gripping digits, short heavy tapering tail. Head is a broad flat shield-shaped skull on a deep neck, mouth a narrow closed curve low on face, two forward pale eyes, no beak, ear flaps, mane or familiar canine muzzle. Body covered in layered charcoal-black FEATHERS with pale shafts, long broad mantle feathers fold flush over shoulders and upper forelimbs when crouching; belly short grey down. No wings and no armor. Side-left low attentive pose on cold gravel, feather overlap and limb roots readable.",
+          "description": "A four-legged stalker folds a heavy feather mantle over its broad chest. It proposes wide wedge-shaped chest tapers into very narrow hips and long layered feathers fold flush as it crouches; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "undecided",
+            "notes": "Not interesting to the creator; not selected for this follow-up.",
+            "creator_assessment": "not_selected_this_round"
+          }
+        },
+        {
+          "name": "Ribhide",
+          "core": "Dry-ground burrowing forager",
+          "twists": [
+            "Large shoulder block with much smaller rear body",
+            "Accordion skin channels loose soil past the chest"
+          ],
+          "surface": "Matte deeply folded ochre skin with tiny pebbling at joints",
+          "size": "Pig-sized",
+          "line": "A massive front body tapers sharply into compact hindquarters and a small tail.",
+          "detail": "Pig-sized dry-ground forager, massively broad deep front shoulder block narrowing into SMALL compact hindquarters, head a shallow low flattened wedge emerging from beneath shoulders, two small inset eyes and a transverse mouth with thick lips. Exactly FOUR stout limbs, very long elbow levers on front pair and small tucked rear pair, broad blunt digging digits. Short conical tail. All covering is matte mustard-ochre SKIN with large organized accordion folds running diagonally around chest; tiny pebbled joint skin, no fur or scales. Side-right pushing loose earth with shoulder, full body visible, no rhinoceros head or tusks.",
+          "description": "A massive front body tapers sharply into compact hindquarters and a small tail. It proposes large shoulder block with much smaller rear body and accordion skin channels loose soil past the chest; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP2-4"
+          }
+        },
+        {
+          "name": "Scaleskein",
+          "core": "Long-bodied crevice hunter",
+          "twists": [
+            "Flexible ribbon-deep torso bends vertically between four distant supports",
+            "Long narrow scales overlap in opposing rows"
+          ],
+          "surface": "Long narrow dull emerald scales",
+          "size": "Arm-length",
+          "line": "A thin deep-bodied hunter bends up and down through rock gaps.",
+          "detail": "Arm-length crevice predator whose torso is unusually TALL AND VERY THIN from side to side, long flexible body forming one shallow vertical arch. Exactly FOUR slender jointed limbs at widely separated girdles, toes hook onto stone; short narrow head with paired eyes and small mouth, no ordinary lizard neck. Long thin tapering tail. Long narrow DULL EMERALD SCALES overlap in opposing chevrons along flanks, microscopic flexible seams at bending zones, darker soft belly. Side-left between two small rocks with full animal visible; no sail fin or membrane, body itself is deep and blade-thin.",
+          "description": "A thin deep-bodied hunter bends up and down through rock gaps. It proposes flexible ribbon-deep torso bends vertically between four distant supports and long narrow scales overlap in opposing rows; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP2-5"
+          }
+        },
+        {
+          "name": "Fleecepool",
+          "core": "Water-edge herbivore",
+          "twists": [
+            "Broad flat forebody with rear limbs tucked under a domed pelvis",
+            "Dense felted coat traps a modest insulating air layer"
+          ],
+          "surface": "Felted wool in irregular raised pads over smooth skin",
+          "size": "Small-dog mass",
+          "line": "A broad low grazer has dense felted pads along its back and smooth submerged limbs.",
+          "detail": "Small-dog-mass water-edge browser, flat broad front half ending in a small low angular head with paired side eyes and short flexible lips; rear body rises into a rounded compact pelvis. Exactly FOUR limbs: long broadly spread front supports with webbed digits and two shorter muscular hindlegs tucked beneath pelvis, no fins or shell. A very short smooth tail. Dense matte cream and green-grey FELTED WOOL forms irregular raised contiguous pads along back and shoulders, separated by natural fur creases, not plates or moss; limbs and lower face smooth grey skin. Side-right crouching at a tiny shallow-water edge.",
+          "description": "A broad low grazer has dense felted pads along its back and smooth submerged limbs. It proposes broad flat forebody with rear limbs tucked under a domed pelvis and dense felted coat traps a modest insulating air layer; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "undecided",
+            "notes": "Not interesting to the creator; not selected for this follow-up.",
+            "creator_assessment": "not_selected_this_round"
+          }
+        }
+      ],
+      "kind": "lineup",
+      "file": "02-body-plans-coverings.png",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "generation_mode": "Built-in image_gen",
+      "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Coats, skin & scales. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Low browsing herbivore. Dog-length low browsing animal, elongated deep ribcage carried just above ground on exactly FOUR short outward-set limbs with three broad padded toes. Narrow head extends on a long FLEXIBLE unarmoured neck from beneath chest front, blunt paired grazing lips and two small side eyes, no ears or hoofed face. Tail absent. Body covered in coarse flattened blue-black GUARD HAIRS in long overlapping locks over warm grey underfur; hairs are individual flattened strands, not feathers, shell plates, ribbons or leaves. Neck extension lifts the fur at shoulders into a functional weather collar but no bony shield. Side left in a patch of scrub.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Burrowing invertebrate detritivore. Hand-length terrestrial invertebrate with a compact strongly arched soft body that can curl sideways like a comma, no shell or hard segments. Small clearly defined blunt head at narrow end, two small dark eyes and a tiny paired mouth. Exactly SIX short broad muscular feet in three pairs, smooth foot margins; no antenna forest or mandibles. Dense very short copper-red velvet fibres over whole dorsal surface, pale bare matte skin on underside and feet. Main animal moving in a C-shaped curve on leaf mould, side three-quarter right, clearly an animal rather than a fuzzy object. No luminescence, no limb duplicates.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Cold-ground stalker. Dog-sized FOUR-LEGGED cold-ground stalker, very broad wedge-shaped chest tapering into narrow flexible hips, short muscular legs with three long gripping digits, short heavy tapering tail. Head is a broad flat shield-shaped skull on a deep neck, mouth a narrow closed curve low on face, two forward pale eyes, no beak, ear flaps, mane or familiar canine muzzle. Body covered in layered charcoal-black FEATHERS with pale shafts, long broad mantle feathers fold flush over shoulders and upper forelimbs when crouching; belly short grey down. No wings and no armor. Side-left low attentive pose on cold gravel, feather overlap and limb roots readable.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Dry-ground burrowing forager. Pig-sized dry-ground forager, massively broad deep front shoulder block narrowing into SMALL compact hindquarters, head a shallow low flattened wedge emerging from beneath shoulders, two small inset eyes and a transverse mouth with thick lips. Exactly FOUR stout limbs, very long elbow levers on front pair and small tucked rear pair, broad blunt digging digits. Short conical tail. All covering is matte mustard-ochre SKIN with large organized accordion folds running diagonally around chest; tiny pebbled joint skin, no fur or scales. Side-right pushing loose earth with shoulder, full body visible, no rhinoceros head or tusks.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Long-bodied crevice hunter. Arm-length crevice predator whose torso is unusually TALL AND VERY THIN from side to side, long flexible body forming one shallow vertical arch. Exactly FOUR slender jointed limbs at widely separated girdles, toes hook onto stone; short narrow head with paired eyes and small mouth, no ordinary lizard neck. Long thin tapering tail. Long narrow DULL EMERALD SCALES overlap in opposing chevrons along flanks, microscopic flexible seams at bending zones, darker soft belly. Side-left between two small rocks with full animal visible; no sail fin or membrane, body itself is deep and blade-thin.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Water-edge herbivore. Small-dog-mass water-edge browser, flat broad front half ending in a small low angular head with paired side eyes and short flexible lips; rear body rises into a rounded compact pelvis. Exactly FOUR limbs: long broadly spread front supports with webbed digits and two shorter muscular hindlegs tucked beneath pelvis, no fins or shell. A very short smooth tail. Dense matte cream and green-grey FELTED WOOL forms irregular raised contiguous pads along back and shoulders, separated by natural fur creases, not plates or moss; limbs and lower face smooth grey skin. Side-right crouching at a tiny shallow-water edge.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-86c23352-3295-45d9-a0f4-bd273f87a3d6.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Six whole-body designs reviewed for silhouette and material variety. Drapecrest's flattened guard hairs visually approach feather-like locks; Scaleskein retains some reptilian familiarity. Both remain creator-review proposals."
+      },
+      "generation_history": [
+        {
+          "stage": "initial_lineup",
+          "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Coats, skin & scales. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Low browsing herbivore. Dog-length low browsing animal, elongated deep ribcage carried just above ground on exactly FOUR short outward-set limbs with three broad padded toes. Narrow head extends on a long FLEXIBLE unarmoured neck from beneath chest front, blunt paired grazing lips and two small side eyes, no ears or hoofed face. Tail absent. Body covered in coarse flattened blue-black GUARD HAIRS in long overlapping locks over warm grey underfur; hairs are individual flattened strands, not feathers, shell plates, ribbons or leaves. Neck extension lifts the fur at shoulders into a functional weather collar but no bony shield. Side left in a patch of scrub.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Burrowing invertebrate detritivore. Hand-length terrestrial invertebrate with a compact strongly arched soft body that can curl sideways like a comma, no shell or hard segments. Small clearly defined blunt head at narrow end, two small dark eyes and a tiny paired mouth. Exactly SIX short broad muscular feet in three pairs, smooth foot margins; no antenna forest or mandibles. Dense very short copper-red velvet fibres over whole dorsal surface, pale bare matte skin on underside and feet. Main animal moving in a C-shaped curve on leaf mould, side three-quarter right, clearly an animal rather than a fuzzy object. No luminescence, no limb duplicates.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Cold-ground stalker. Dog-sized FOUR-LEGGED cold-ground stalker, very broad wedge-shaped chest tapering into narrow flexible hips, short muscular legs with three long gripping digits, short heavy tapering tail. Head is a broad flat shield-shaped skull on a deep neck, mouth a narrow closed curve low on face, two forward pale eyes, no beak, ear flaps, mane or familiar canine muzzle. Body covered in layered charcoal-black FEATHERS with pale shafts, long broad mantle feathers fold flush over shoulders and upper forelimbs when crouching; belly short grey down. No wings and no armor. Side-left low attentive pose on cold gravel, feather overlap and limb roots readable.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Dry-ground burrowing forager. Pig-sized dry-ground forager, massively broad deep front shoulder block narrowing into SMALL compact hindquarters, head a shallow low flattened wedge emerging from beneath shoulders, two small inset eyes and a transverse mouth with thick lips. Exactly FOUR stout limbs, very long elbow levers on front pair and small tucked rear pair, broad blunt digging digits. Short conical tail. All covering is matte mustard-ochre SKIN with large organized accordion folds running diagonally around chest; tiny pebbled joint skin, no fur or scales. Side-right pushing loose earth with shoulder, full body visible, no rhinoceros head or tusks.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Long-bodied crevice hunter. Arm-length crevice predator whose torso is unusually TALL AND VERY THIN from side to side, long flexible body forming one shallow vertical arch. Exactly FOUR slender jointed limbs at widely separated girdles, toes hook onto stone; short narrow head with paired eyes and small mouth, no ordinary lizard neck. Long thin tapering tail. Long narrow DULL EMERALD SCALES overlap in opposing chevrons along flanks, microscopic flexible seams at bending zones, darker soft belly. Side-left between two small rocks with full animal visible; no sail fin or membrane, body itself is deep and blade-thin.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Water-edge herbivore. Small-dog-mass water-edge browser, flat broad front half ending in a small low angular head with paired side eyes and short flexible lips; rear body rises into a rounded compact pelvis. Exactly FOUR limbs: long broadly spread front supports with webbed digits and two shorter muscular hindlegs tucked beneath pelvis, no fins or shell. A very short smooth tail. Dense matte cream and green-grey FELTED WOOL forms irregular raised contiguous pads along back and shoulders, separated by natural fur creases, not plates or moss; limbs and lower face smooth grey skin. Side-right crouching at a tiny shallow-water edge.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-86c23352-3295-45d9-a0f4-bd273f87a3d6.png",
+          "reference_images": [],
+          "disposition": "final_for_review"
+        }
+      ],
+      "sha256": "7c97ca790b1d8277587cf67f5488710d21919a05ce44cccae9328d68b8f13495",
+      "bytes": 3132811,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "BP3",
+      "slug": "03-body-plans-niches",
+      "title": "Unfamiliar lives",
+      "description": "Six further proposals explore feeding, climbing and moving through water or confined ground. Head and trunk structures change alongside their coverings, while each creature still has a clear way to live. These are independent designs with no implied role as tools for people.",
+      "takes": [
+        {
+          "name": "Reedstilt",
+          "core": "Shallow-water small-prey hunter",
+          "twists": [
+            "Short suspended trunk between four extremely long folding limbs",
+            "Fine feather coat gives way to smooth wet limbs"
+          ],
+          "surface": "Compact chestnut feathering and smooth grey skin",
+          "size": "Waist-high on long legs",
+          "line": "A small suspended body hunts between four tall, folding supports.",
+          "detail": "Waist-high wading predator with a SMALL elongated horizontal trunk suspended midway between exactly FOUR extremely long thin double-folding limbs, splayed in a stable rectangle; each foot has three narrow long toes. Head is a small blunt muscular lobe on a long downward-curving neck, with paired alert eyes and short clasping flesh lips, no bill or earth-bird head. No tail or wings. Compact smooth chestnut FEATHER coat lies close over torso and upper neck, transitioning naturally to matte grey SKIN over lower neck and lower limbs. Side-left touching one forefoot to water, elegant functional anatomy.",
+          "description": "A small suspended body hunts between four tall, folding supports. It proposes short suspended trunk between four extremely long folding limbs and fine feather coat gives way to smooth wet limbs; its detailed biology remains open."
+        },
+        {
+          "name": "Undertuck",
+          "core": "Ground insect forager",
+          "twists": [
+            "Mouth-bearing head retracts under a raised chest",
+            "Six muscular legs alternate to carry a long low body"
+          ],
+          "surface": "Soft matte indigo skin with pale granular belly",
+          "size": "Cat-length",
+          "line": "A long six-legged forager bends its head down from a raised forebody to inspect the litter.",
+          "detail": "Cat-length terrestrial forager with a long LOW supple body and raised forward chest arch, head on a short flexible neck able to tuck beneath that arch. Head clearly visible at front underside with two small bronze eyes and paired probing lip lobes, no tentacles or beak. Exactly SIX short muscular jointed legs in three pairs attached beneath body, broad toe pads, not insect exoskeletal limbs. Long flexible tapering tail. Smooth matte indigo SKIN with shallow lateral breathing folds and pale finely granular belly. Side-right on leaf litter with head reaching beneath a small stone, full body visible.",
+          "description": "A long six-legged forager bends its head down from a raised forebody to inspect the litter. It proposes a ground insect forager; head retraction and detailed gait remain open for a selected reference sheet.",
+          "original_brief_line": "A long six-legged forager tucks its small feeding head beneath a raised chest."
+        },
+        {
+          "name": "Purlrunner",
+          "core": "Dune-surface seed forager",
+          "twists": [
+            "Compact chest balanced between two tall rear legs and a single continuous muscular tail",
+            "Coarse sparse fur follows deep body ridges"
+          ],
+          "surface": "Sparse coarse orange fur over blue-grey folded skin",
+          "size": "Knee-high",
+          "line": "A narrow seed forager balances on two long legs while a muscular tail braces behind.",
+          "detail": "Knee-high ground forager, vertically narrow ribcage above TWO long rear legs with wide spread three-toed feet. No forelegs. One thick muscular tail makes a THIRD GROUND CONTACT but is plainly a continuous tail, not a jointed limb; the animal leans forward from hips. Small elongated downturned skull with paired dark eyes and small horizontal grazing lips, no external ears, beak or rodent face. Sparse coarse rust-orange FUR runs along three longitudinal dorsal muscle ridges, gaps reveal matte blue-grey wrinkled skin. Side-left picking seeds from sparse sand grass, elegant odd silhouette.",
+          "description": "A narrow seed forager balances on two long legs while a muscular tail braces behind. It proposes compact chest balanced between two tall rear legs and a single continuous muscular tail and coarse sparse fur follows deep body ridges; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "undecided",
+            "notes": "Keep the Purlrunner body with the selected HV7–1 head.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "HV7-1"
+          }
+        },
+        {
+          "name": "Gullied swimmer",
+          "core": "Shallow-channel swimmer",
+          "twists": [
+            "Broad anterior trunk divided into two muscular side keels",
+            "Two flat rear paddles steer a short tail-free body"
+          ],
+          "surface": "Small satin-matte scales and naked flexible keel grooves",
+          "size": "Arm-length",
+          "line": "A broad swimmer’s paired body keels narrow into two rear steering paddles.",
+          "detail": "Arm-length aquatic animal with a broad flattened front trunk containing two low muscular lateral keels, a narrow dorsal groove between them, small central skull projecting just forward with two paired eyes and short ventral mouth. Entire trunk narrows backward into exactly TWO broad rear paddles on flexible joints; no forelimbs, extra fins or separate tail. Fine matte petrol-blue SCALES over keel tops transition to smooth pale flexible skin in groove and paddle undersides. Three-quarter side-right supported in a tiny shallow clear-water patch, animal coherent rather than rays or ornamental fish.",
+          "description": "A broad swimmer’s paired body keels narrow into two rear steering paddles. It proposes broad anterior trunk divided into two muscular side keels and two flat rear paddles steer a short tail-free body; its detailed biology remains open.",
+          "creator_feedback": {
+            "decision": "like",
+            "notes": "Original design selected; keep its original face and body.",
+            "creator_assessment": "selected_visual_design",
+            "selected_for_head_variations": true,
+            "updated_at": "2026-11-13T18:48:23.094645+00:00",
+            "selected_design": "BP3-4"
+          }
+        },
+        {
+          "name": "Napeclasp",
+          "core": "Trunk-climbing browser",
+          "twists": [
+            "Very high shoulder girdle and low pelvis wrap the body around trunks",
+            "Scale-grained skin transitions into stiff dorsal fibres"
+          ],
+          "surface": "Fine pebbled scales and short stiff ivory fibres",
+          "size": "Dog-length",
+          "line": "A high-shouldered climber braces against trunks with four opposed gripping feet.",
+          "detail": "Dog-length climbing herbivore with EXTREMELY high narrow shoulder girdle and low tucked pelvis, deep flexible torso bowed around a short tree trunk. Exactly FOUR limb roots well apart along torso; forelimbs reach over trunk, shorter hindlimbs grip below, each foot has two opposing thick blunt gripping lobes. Small head lies low between shoulders with paired side eyes and broad short grazing lips, no familiar primate or reptile face. Short broad tail pressed for balance. Warm grey finely PEBBLED SCALES on skin transition to short stiff IVORY FIBRES along spine and shoulder ridge, no complete fur coat or wings. Side-left, all anatomy readable.",
+          "description": "A high-shouldered climber braces against trunks with four opposed gripping feet. It proposes very high shoulder girdle and low pelvis wrap the body around trunks and scale-grained skin transitions into stiff dorsal fibres; its detailed biology remains open."
+        },
+        {
+          "name": "Rufflejaw",
+          "core": "Leaf-litter scavenger",
+          "twists": [
+            "Deep front jaw cradle and narrow rear torso",
+            "Dense small feathers form an expanding sensory fringe along jaw"
+          ],
+          "surface": "Tiny layered olive feathers, coarse rump fur and bare skin at joints",
+          "size": "Cat-sized",
+          "line": "A compact scavenger feels through litter with a short feathered jaw fringe.",
+          "detail": "Cat-sized low scavenger with a broad deep front jaw cradle, muscular neck and much narrower rear torso, exactly FOUR short widely set legs with three blunt toes, one small ordinary tail. Skull short and flattened with two small forward eyes above a closed soft mouth, no canine nose, beak, horns or mandibles. Tiny layered OLIVE FEATHERS follow underside of broad jaw and chest as a SHORT tactile fringe, lie sleek on upper trunk; rump has dense coarse dark fur, joints bare matte skin with gradual natural transitions. Side-right nosing leaf litter, unfamiliar overall proportions, appealing alert animal not a costume chimera.",
+          "description": "A compact scavenger feels through litter with a short feathered jaw fringe. It proposes deep front jaw cradle and narrow rear torso and dense small feathers form an expanding sensory fringe along jaw; its detailed biology remains open."
+        }
+      ],
+      "kind": "lineup",
+      "file": "03-body-plans-niches.png",
+      "references": [],
+      "reference_roles": [],
+      "review_status": "pending_creator_review",
+      "canonical": false,
+      "generation_mode": "Built-in image_gen",
+      "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Unfamiliar lives. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Shallow-water small-prey hunter. Waist-high wading predator with a SMALL elongated horizontal trunk suspended midway between exactly FOUR extremely long thin double-folding limbs, splayed in a stable rectangle; each foot has three narrow long toes. Head is a small blunt muscular lobe on a long downward-curving neck, with paired alert eyes and short clasping flesh lips, no bill or earth-bird head. No tail or wings. Compact smooth chestnut FEATHER coat lies close over torso and upper neck, transitioning naturally to matte grey SKIN over lower neck and lower limbs. Side-left touching one forefoot to water, elegant functional anatomy.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Ground insect forager. Cat-length terrestrial forager with a long LOW supple body and raised forward chest arch, head on a short flexible neck able to tuck beneath that arch. Head clearly visible at front underside with two small bronze eyes and paired probing lip lobes, no tentacles or beak. Exactly SIX short muscular jointed legs in three pairs attached beneath body, broad toe pads, not insect exoskeletal limbs. Long flexible tapering tail. Smooth matte indigo SKIN with shallow lateral breathing folds and pale finely granular belly. Side-right on leaf litter with head reaching beneath a small stone, full body visible.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Dune-surface seed forager. Knee-high ground forager, vertically narrow ribcage above TWO long rear legs with wide spread three-toed feet. No forelegs. One thick muscular tail makes a THIRD GROUND CONTACT but is plainly a continuous tail, not a jointed limb; the animal leans forward from hips. Small elongated downturned skull with paired dark eyes and small horizontal grazing lips, no external ears, beak or rodent face. Sparse coarse rust-orange FUR runs along three longitudinal dorsal muscle ridges, gaps reveal matte blue-grey wrinkled skin. Side-left picking seeds from sparse sand grass, elegant odd silhouette.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Shallow-channel swimmer. Arm-length aquatic animal with a broad flattened front trunk containing two low muscular lateral keels, a narrow dorsal groove between them, small central skull projecting just forward with two paired eyes and short ventral mouth. Entire trunk narrows backward into exactly TWO broad rear paddles on flexible joints; no forelimbs, extra fins or separate tail. Fine matte petrol-blue SCALES over keel tops transition to smooth pale flexible skin in groove and paddle undersides. Three-quarter side-right supported in a tiny shallow clear-water patch, animal coherent rather than rays or ornamental fish.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Trunk-climbing browser. Dog-length climbing herbivore with EXTREMELY high narrow shoulder girdle and low tucked pelvis, deep flexible torso bowed around a short tree trunk. Exactly FOUR limb roots well apart along torso; forelimbs reach over trunk, shorter hindlimbs grip below, each foot has two opposing thick blunt gripping lobes. Small head lies low between shoulders with paired side eyes and broad short grazing lips, no familiar primate or reptile face. Short broad tail pressed for balance. Warm grey finely PEBBLED SCALES on skin transition to short stiff IVORY FIBRES along spine and shoulder ridge, no complete fur coat or wings. Side-left, all anatomy readable.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Leaf-litter scavenger. Cat-sized low scavenger with a broad deep front jaw cradle, muscular neck and much narrower rear torso, exactly FOUR short widely set legs with three blunt toes, one small ordinary tail. Skull short and flattened with two small forward eyes above a closed soft mouth, no canine nose, beak, horns or mandibles. Tiny layered OLIVE FEATHERS follow underside of broad jaw and chest as a SHORT tactile fringe, lie sleek on upper trunk; rump has dense coarse dark fur, joints bare matte skin with gradual natural transitions. Side-right nosing leaf litter, unfamiliar overall proportions, appealing alert animal not a costume chimera.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5ea21937-e027-47c9-abd2-b8d7eaf7c7e5.png",
+      "visual_check": {
+        "inspected": true,
+        "result": "ready_for_creator_review",
+        "notes": "Six distinct whole-body proposals inspected. The initial Undertuck had two heads; the edit resolves it to a single head. The edit retained the larger downward-curving head rather than the requested lower head, so the exact under-chest retraction mechanism remains an unapproved proposal. Other five cells retain their designs."
+      },
+      "generation_history": [
+        {
+          "stage": "initial_lineup",
+          "prompt": "Use case: stylized-concept. Original Breachline creature exploration: invent complete animal anatomies from the functional briefs below. The previous exploration was TOO CLOSE TO FAMILIAR EARTH SPECIES. This pass must make body structure and surface covering unfamiliar together. Do not start with a familiar species silhouette and attach an ornament. Do not use the four accepted reference animals as templates.\nPRESENTATION: one landscape PNG exactly 1536 x 1024, warm ivory background, six clear independent proposals arranged TWO ROWS OF THREE. Each cell contains one complete animal, mostly side-on or in a clear three-quarter natural moving pose, on one small softly edged patch of habitat. Generous gaps, full extremities visible. A small simple human silhouette paired with a tiny matching animal silhouette at each cell edge gives approximate scale; the detailed studies are enlarged. No text, labels, numerals, frames, watermark or signature.\nPAINT: traditional oil/acrylic fantasy natural-history plate, beautiful measured visible brushwork, neutral diffuse daylight and matte biological surfaces. Shape and material through broad paint with selective precise accents. No photograph, 3D rendering, glossy animation, toy forms, camera blur or uniform surface noise. Natural rich colour, avoid monotonous brown. Fur must have distinct lay and weight; feathers must have recognizable barbs and overlap; scales must grow with joint direction; skin may be folded, pebbled, velvet-like or ribbed.\nDESIGN: every animal has a coherent body, believable weight, functional mouth and paired sensory organs, connected joints and a way to move and feed. New proportions and structures, but animal rather than abstract alien object. At most two coordinated functional changes around an ecological core; body architecture is a major change, not an excuse for random appendages. No sewn-together chimera parts. No human equipment, magic effects, flowers, extra heads or gore. No images are attached. All ideas are proposals.\n\nSHEET: Unfamiliar lives. Six DIFFERENT animals, no repeating one silhouette in different coats.\nPOSITION 1 (upper left). FUNCTIONAL CORE: Shallow-water small-prey hunter. Waist-high wading predator with a SMALL elongated horizontal trunk suspended midway between exactly FOUR extremely long thin double-folding limbs, splayed in a stable rectangle; each foot has three narrow long toes. Head is a small blunt muscular lobe on a long downward-curving neck, with paired alert eyes and short clasping flesh lips, no bill or earth-bird head. No tail or wings. Compact smooth chestnut FEATHER coat lies close over torso and upper neck, transitioning naturally to matte grey SKIN over lower neck and lower limbs. Side-left touching one forefoot to water, elegant functional anatomy.\nPOSITION 2 (upper centre). FUNCTIONAL CORE: Ground insect forager. Cat-length terrestrial forager with a long LOW supple body and raised forward chest arch, head on a short flexible neck able to tuck beneath that arch. Head clearly visible at front underside with two small bronze eyes and paired probing lip lobes, no tentacles or beak. Exactly SIX short muscular jointed legs in three pairs attached beneath body, broad toe pads, not insect exoskeletal limbs. Long flexible tapering tail. Smooth matte indigo SKIN with shallow lateral breathing folds and pale finely granular belly. Side-right on leaf litter with head reaching beneath a small stone, full body visible.\nPOSITION 3 (upper right). FUNCTIONAL CORE: Dune-surface seed forager. Knee-high ground forager, vertically narrow ribcage above TWO long rear legs with wide spread three-toed feet. No forelegs. One thick muscular tail makes a THIRD GROUND CONTACT but is plainly a continuous tail, not a jointed limb; the animal leans forward from hips. Small elongated downturned skull with paired dark eyes and small horizontal grazing lips, no external ears, beak or rodent face. Sparse coarse rust-orange FUR runs along three longitudinal dorsal muscle ridges, gaps reveal matte blue-grey wrinkled skin. Side-left picking seeds from sparse sand grass, elegant odd silhouette.\nPOSITION 4 (lower left). FUNCTIONAL CORE: Shallow-channel swimmer. Arm-length aquatic animal with a broad flattened front trunk containing two low muscular lateral keels, a narrow dorsal groove between them, small central skull projecting just forward with two paired eyes and short ventral mouth. Entire trunk narrows backward into exactly TWO broad rear paddles on flexible joints; no forelimbs, extra fins or separate tail. Fine matte petrol-blue SCALES over keel tops transition to smooth pale flexible skin in groove and paddle undersides. Three-quarter side-right supported in a tiny shallow clear-water patch, animal coherent rather than rays or ornamental fish.\nPOSITION 5 (lower centre). FUNCTIONAL CORE: Trunk-climbing browser. Dog-length climbing herbivore with EXTREMELY high narrow shoulder girdle and low tucked pelvis, deep flexible torso bowed around a short tree trunk. Exactly FOUR limb roots well apart along torso; forelimbs reach over trunk, shorter hindlimbs grip below, each foot has two opposing thick blunt gripping lobes. Small head lies low between shoulders with paired side eyes and broad short grazing lips, no familiar primate or reptile face. Short broad tail pressed for balance. Warm grey finely PEBBLED SCALES on skin transition to short stiff IVORY FIBRES along spine and shoulder ridge, no complete fur coat or wings. Side-left, all anatomy readable.\nPOSITION 6 (lower right). FUNCTIONAL CORE: Leaf-litter scavenger. Cat-sized low scavenger with a broad deep front jaw cradle, muscular neck and much narrower rear torso, exactly FOUR short widely set legs with three blunt toes, one small ordinary tail. Skull short and flattened with two small forward eyes above a closed soft mouth, no canine nose, beak, horns or mandibles. Tiny layered OLIVE FEATHERS follow underside of broad jaw and chest as a SHORT tactile fringe, lie sleek on upper trunk; rump has dense coarse dark fur, joints bare matte skin with gradual natural transitions. Side-right nosing leaf litter, unfamiliar overall proportions, appealing alert animal not a costume chimera.\nFINAL CHECK: exactly six whole animals, distinct proportions and silhouettes. All specified limbs connect; no hidden duplicate limbs. All four material families across the batch are real biological coverings, not painted-on texture changes.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-df2ef6c1-7baf-46bb-b111-242b55782a78.png",
+          "reference_images": [],
+          "disposition": "superseded_due_to_duplicate_head"
+        },
+        {
+          "stage": "anatomy_correction",
+          "prompt": "Use case: precise-object-edit. Fix ONE anatomical error in this six-creature natural-history lineup. Keep the 1536 x 1024 dimensions and the other five cells completely unchanged.\nEDIT TARGET: the UPPER CENTRE animal, the indigo six-legged forager leaning under a rock. It incorrectly has two heads: an upper head at the end of its raised curved chest and a second small lower head tucked beneath.\nREQUIRED FIX: retain the SMALL LOWER HEAD as its ONE AND ONLY HEAD, including its existing eye and tiny mouth near the rock. The upper eye, upper mouth and all upper head facial anatomy must disappear. Reshape the former upper head into a continuous rounded blunt CHEST SHOULDER ARCH, ending smoothly above and behind the lower head with ordinary folded blue skin, no eye, nostril or mouth. The raised arch is a chest structure, not a head, snout or second neck. Let the lower head's short neck visibly connect back into the underside of this chest.\nThe final upper-centre creature has one head, one continuous indigo trunk, exactly SIX legs (three pairs), one tapering tail, and the same overall low stance. No duplicate faces. Preserve surrounding rock, scale silhouettes, background, layout, pose, materials and colours. No labels, text, arrows or extra animals. Do not alter any of the other five creatures.",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5ea21937-e027-47c9-abd2-b8d7eaf7c7e5.png",
+          "reference_images": [
+            "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-df2ef6c1-7baf-46bb-b111-242b55782a78.png"
+          ],
+          "disposition": "final_for_review"
+        }
+      ],
+      "sha256": "753f43b277230b95ef1c147e0860d7e5f23a8eed25a5ca691a330b57911897ac",
+      "bytes": 2643690,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    }
+  ],
+  "validation": {
+    "sheet_count": 3,
+    "proposal_count": 18,
+    "visual_review_completed": true,
+    "anatomical_correction": "BP3-2 duplicate head resolved to a single head",
+    "approved_references_unchanged": [
+      "RF1",
+      "RF2",
+      "RF3",
+      "RF4"
+    ],
+    "gallery_images_loaded": [
+      {
+        "code": "BP1",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "code": "BP2",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "code": "BP3",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  "art_direction_sha256": "1320c59a54d5645ce8470b97fe733cfd8c03198821c34a1a3405398cf18779ae",
+  "head_variation_followup": {
+    "date": "2026-11-13",
+    "source": "creator feedback in chat",
+    "scope": "Body Plans BP1–BP3; selected designs receive head variations",
+    "general": [
+      "The body-plan exploration is closer, but not finished.",
+      "The heads lean too heavily on lizard shapes. Add mammalian and other skull, jaw, nose and ear structures while retaining some lizard/snake options.",
+      "Needlehip's lizard-like face, fur and whip tail illustrate an interesting combination, not a universal template.",
+      "Preserve the selected body plans and coverings while exploring restrained head variation."
+    ],
+    "selected": [
+      {
+        "id": "BP1-1",
+        "name": "Foldstride",
+        "response": "liked",
+        "next": "HV1 head options"
+      },
+      {
+        "id": "BP1-2",
+        "name": "Loomstep",
+        "response": "strongly_liked",
+        "next": "HV2 head options"
+      },
+      {
+        "id": "BP1-3",
+        "name": "Shelfback",
+        "response": "liked",
+        "next": "HV3 head options"
+      },
+      {
+        "id": "BP1-5",
+        "name": "Needlehip",
+        "response": "liked",
+        "next": "HV4 head options"
+      },
+      {
+        "id": "BP2-4",
+        "name": "Ribhide",
+        "response": "liked",
+        "next": "HV5 head options"
+      },
+      {
+        "id": "BP2-5",
+        "name": "Scaleskein",
+        "response": "interesting",
+        "next": "HV6 head options"
+      },
+      {
+        "id": "BP3-3",
+        "name": "Purlrunner",
+        "response": "tentatively_liked",
+        "next": "HV7 head options"
+      },
+      {
+        "id": "BP3-4",
+        "name": "Gullied swimmer",
+        "response": "liked",
+        "next": "HV8 head options"
+      }
+    ],
+    "rejected": [
+      {
+        "id": "BP1-4",
+        "name": "Siltdrum",
+        "reason": "Creator dislikes its fat, ugly appearance; do not use this take as a reference."
+      }
+    ],
+    "not_selected_this_round": [
+      "BP2-1",
+      "BP2-2",
+      "BP2-3",
+      "BP2-6"
+    ],
+    "unmentioned": [
+      "BP1-6",
+      "BP3-1",
+      "BP3-2",
+      "BP3-5",
+      "BP3-6"
+    ],
+    "preserved_prior_references": [
+      "RF1",
+      "RF2",
+      "RF3",
+      "RF4"
+    ],
+    "mixed_sheet_policy": "No sheet is accepted or rejected wholesale. Keep the composite source sheets because they contain liked takes; the disliked BP1-4 has no separate image file to delete. Reference only the explicitly selected cells.",
+    "canonical": false
+  },
+  "selected_designs_after_head_review": [
+    {
+      "head_sheet": "HV1",
+      "name": "Foldstride",
+      "selected": "BP1-1",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER LEFT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV2",
+      "name": "Loomstep",
+      "selected": "BP1-2",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV3",
+      "name": "Shelfback",
+      "selected": "BP1-3",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "UPPER RIGHT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV4",
+      "name": "Needlehip",
+      "selected": "BP1-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV5",
+      "name": "Ribhide",
+      "selected": "BP2-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV6",
+      "name": "Scaleskein",
+      "selected": "BP2-5",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/02-body-plans-coverings.png",
+      "source_region": "LOWER CENTRE",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV7",
+      "name": "Purlrunner",
+      "selected": "HV7-1",
+      "selection_type": "head_variant",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-head-variations-2026-11-13/07-purlrunner-head-variations.png",
+      "source_region": "Left column: portrait and matching full-body view",
+      "canonical": false
+    },
+    {
+      "head_sheet": "HV8",
+      "name": "Gullied swimmer",
+      "selected": "BP3-4",
+      "selection_type": "original_BP_design",
+      "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/03-body-plans-niches.png",
+      "source_region": "LOWER LEFT",
+      "canonical": false
+    }
+  ]
+}

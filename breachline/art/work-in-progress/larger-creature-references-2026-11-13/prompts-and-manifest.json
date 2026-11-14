@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "collection": "larger-creature-references-2026-11-13",
+  "created_at": "2026-11-13T21:05:38.491Z",
+  "status": "ready_for_creator_review",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "generation_mode": "built-in imagegen",
+  "selection_guide_revision": 185,
+  "sheets": [
+    {
+      "code": "LR1",
+      "title": "Vaultstalker",
+      "selected": "LG1-4",
+      "file": "01-vaultstalker-reference.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+      "region": "LOWER LEFT, fourth animal",
+      "status": "Selected design · new reference pending",
+      "description": "The strongly liked scaled honey-badger impression is preserved in the original long-forelimbed body and compact face. New views clarify the shoulder arch, low hindquarters and scaled forelegs; movement and predator ecology remain proposals.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER LEFT fourth animal, the silver-and-brown furred long-forelimbed animal with scaled front shins and small mustelid head. Preserve EXACT head shape, nose, eye placement and ears from this source. Large honey-badger impression, not literal black-and-white honey badger markings. FOUR limbs, very high strong shoulder arch above low pelvis, long forearms and short muscular rear legs, broad long low balancing tail; dense brown fur and ragged pale silver mantle over back, close overlapping matte brown scales on forearms with clear joint flexion. Individual paws with short blunt claws. Main pose low alert standing, all feet supporting weight; side view makes the shoulder-to-pelvis slope unmistakable. Keep narrow face, whole muzzle and closed mouth, no fangs or added horns. About 2 metres nose to rump as the existing proposal, moderate large wild animal, no giant exaggeration. Detail view exposes the actual shoulder fur to forearm scale transition.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "role": "exact selected cell anatomy",
+          "region": "LOWER LEFT, fourth animal",
+          "source_sha256": "42be68fc5316600a3dd92714d054b98119acbd25e39f80e8884b909c3a1f4e6d"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4c38dc10-3ee5-4c99-b0fd-9f054ab02491.png",
+      "visual_check": "Four consistent reference views inspected. Selected face/body and covering maintained; no jaw frill repetition.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER LEFT fourth animal, the silver-and-brown furred long-forelimbed animal with scaled front shins and small mustelid head. Preserve EXACT head shape, nose, eye placement and ears from this source. Large honey-badger impression, not literal black-and-white honey badger markings. FOUR limbs, very high strong shoulder arch above low pelvis, long forearms and short muscular rear legs, broad long low balancing tail; dense brown fur and ragged pale silver mantle over back, close overlapping matte brown scales on forearms with clear joint flexion. Individual paws with short blunt claws. Main pose low alert standing, all feet supporting weight; side view makes the shoulder-to-pelvis slope unmistakable. Keep narrow face, whole muzzle and closed mouth, no fangs or added horns. About 2 metres nose to rump as the existing proposal, moderate large wild animal, no giant exaggeration. Detail view exposes the actual shoulder fur to forearm scale transition.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "region": "LOWER LEFT, fourth animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4c38dc10-3ee5-4c99-b0fd-9f054ab02491.png"
+        }
+      ],
+      "sha256": "311478fa4084ad044abb0956b58601d387d7b5506ff6bc48fab3688df1f2d0f0",
+      "bytes": 2630456,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "LR2",
+      "title": "Pithbreaker · clearer scale",
+      "selected": "LG1-5",
+      "file": "02-pithbreaker-scale-reference.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+      "region": "LOWER MIDDLE, fifth animal",
+      "status": "Selected design · scale clarification pending",
+      "description": "The blue back plates, cinnamon fur, narrow muzzle and digging forelimbs remain the selected animal. A small scale comparison proposes an animal modestly larger than a small armadillo; exact measurements and its insect diet remain open.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER MIDDLE fifth animal, cinnamon-furred plated burrower with short narrow anteater/armadillo-like face. Preserve this EXACT skull, muzzle, small ears, paws, arched plated trunk and coat pattern. FOUR limbs, broad muscular forearms with large curved digging claws, shorter robust hindlegs, short flattened tail. Dull slate-blue longitudinal overlapping back plates, copper-cinnamon fur under and between plate margins, no new armour devices. Main three-quarter standing low on all four feet with claws resting naturally, not a bear rearing upright. Side view shows the forearm leverage and belly clearance. Head detail may show short slender tongue but no jaw fringe. SIZE CLARIFICATION: modestly larger than a small common armadillo: provisional body length about 85 cm excluding short tail, shoulder roughly 40 cm, NOT a tiny hand pet. Add ONE very small isolated muted-grey comparison group in the LOWER CENTER gutter: plain upright adult human silhouette, simple familiar small armadillo silhouette, and miniature matching Pithbreaker, all on SAME baseline and consistent scale; Pithbreaker body roughly twice the small armadillo body length and shoulder below human knee. No numbers or text. This scale group is the sole exception to the four anatomical views.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "role": "exact selected cell anatomy",
+          "region": "LOWER MIDDLE, fifth animal",
+          "source_sha256": "42be68fc5316600a3dd92714d054b98119acbd25e39f80e8884b909c3a1f4e6d"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-49869a72-3f3e-4c31-8553-e17d0eea00b1.png",
+      "visual_check": "Original selected Pithbreaker identity preserved. Small human/armadillo/animal comparison corrected: both animals reduced relative to human; Pithbreaker remains visibly larger than small armadillo. Numeric size is provisional.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER MIDDLE fifth animal, cinnamon-furred plated burrower with short narrow anteater/armadillo-like face. Preserve this EXACT skull, muzzle, small ears, paws, arched plated trunk and coat pattern. FOUR limbs, broad muscular forearms with large curved digging claws, shorter robust hindlegs, short flattened tail. Dull slate-blue longitudinal overlapping back plates, copper-cinnamon fur under and between plate margins, no new armour devices. Main three-quarter standing low on all four feet with claws resting naturally, not a bear rearing upright. Side view shows the forearm leverage and belly clearance. Head detail may show short slender tongue but no jaw fringe. SIZE CLARIFICATION: modestly larger than a small common armadillo: provisional body length about 85 cm excluding short tail, shoulder roughly 40 cm, NOT a tiny hand pet. Add ONE very small isolated muted-grey comparison group in the LOWER CENTER gutter: plain upright adult human silhouette, simple familiar small armadillo silhouette, and miniature matching Pithbreaker, all on SAME baseline and consistent scale; Pithbreaker body roughly twice the small armadillo body length and shoulder below human knee. No numbers or text. This scale group is the sole exception to the four anatomical views.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "region": "LOWER MIDDLE, fifth animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-70e5a71d-1087-4913-aa89-019605be37b1.png",
+          "disposition": "superseded_scale_diagram"
+        },
+        {
+          "mode": "edit",
+          "prompt": "Use case: precise-object-edit. Correct ONLY the tiny scale comparison in the lower centre of this Pithbreaker reference sheet. Preserve every large animal view, its exact anatomy, face, blue plates, copper fur, claws and poses, and the entire painted background exactly unchanged.\nThe small comparison currently contains a standing human at left, an ordinary armadillo in the middle, and a miniature Pithbreaker at right. Keep the human silhouette exactly its existing size and position. Make BOTH animal silhouettes approximately 60 percent of their CURRENT width and height, preserving their relative size difference and keeping their feet on the same existing baseline. The miniature Pithbreaker should now reach roughly the lower shin of the human, about a quarter of the human's height, and still be visibly larger than the small armadillo. Leave comfortable spaces between silhouettes. No labels, numbers, extra drawings, or changes anywhere else. Maintain landscape 1536x1024.",
+          "reference": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-70e5a71d-1087-4913-aa89-019605be37b1.png",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-49869a72-3f3e-4c31-8553-e17d0eea00b1.png",
+          "disposition": "review_candidate"
+        }
+      ],
+      "sha256": "d52f48080c513ee922a6a384302d659fb9bb31db42dc9fc943771ae4f864ddd5",
+      "bytes": 2201367,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "LR3",
+      "title": "Mantlebrood",
+      "selected": "LG1-6",
+      "file": "03-mantlebrood-reference.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+      "region": "LOWER RIGHT, sixth animal",
+      "status": "Selected design · new reference pending",
+      "description": "The liked browser keeps its original face, slender quadruped body and small lateral brood pocket. Matching views clarify how the shallow furred fold sits against the flank; reproduction and precise size remain proposals.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER RIGHT sixth animal, warm-brown slim browsing quadruped with a tiny young peeking from a SMALL furred flank slit. Preserve EXACT original mammalian face, short ears, long neck, torso, limb proportions and short tail. FOUR moderate-length legs, broad slightly split padded toes, horizontal torso and rounded low rump, cocoa short coat with deeper mane/upper-back hairs, matte grey lower legs. The distinctive pouch is a shallow horizontal pocket along LOWER SIDE of torso, flush with normal belly. It must never become an udder, large hanging sac, oversized naked patch or exposed organ. A single tiny matching juvenile head and two forepaws can peek from the visible near pocket in the main view; other views may have pocket closed. One adult head, four adult legs. Side-view face looking forward, rear view explains continuous skin fold, detail of head/shoulder keeps existing gentle but animal expression. Roughly small-pony scale, no kangaroo biped conversion.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "role": "exact selected cell anatomy",
+          "region": "LOWER RIGHT, sixth animal",
+          "source_sha256": "42be68fc5316600a3dd92714d054b98119acbd25e39f80e8884b909c3a1f4e6d"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-c9bdda38-e99f-4b19-b6ac-28d86b631b15.png",
+      "visual_check": "Four consistent reference views inspected. Selected face/body and covering maintained; no jaw frill repetition.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER RIGHT sixth animal, warm-brown slim browsing quadruped with a tiny young peeking from a SMALL furred flank slit. Preserve EXACT original mammalian face, short ears, long neck, torso, limb proportions and short tail. FOUR moderate-length legs, broad slightly split padded toes, horizontal torso and rounded low rump, cocoa short coat with deeper mane/upper-back hairs, matte grey lower legs. The distinctive pouch is a shallow horizontal pocket along LOWER SIDE of torso, flush with normal belly. It must never become an udder, large hanging sac, oversized naked patch or exposed organ. A single tiny matching juvenile head and two forepaws can peek from the visible near pocket in the main view; other views may have pocket closed. One adult head, four adult legs. Side-view face looking forward, rear view explains continuous skin fold, detail of head/shoulder keeps existing gentle but animal expression. Roughly small-pony scale, no kangaroo biped conversion.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "region": "LOWER RIGHT, sixth animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-c9bdda38-e99f-4b19-b6ac-28d86b631b15.png"
+        }
+      ],
+      "sha256": "c7cfd72ee8ae59b501f62400d035e9e67adda2332376daff54b9288476b77867",
+      "bytes": 2251342,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "LR4",
+      "title": "Barkdrummer",
+      "selected": "LG2-4",
+      "file": "04-barkdrummer-reference.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+      "region": "LOWER LEFT, fourth animal",
+      "status": "Liked design · new reference pending",
+      "description": "This develops the liked blunt head plate and charcoal feather-to-copper-scale transition without changing the chosen face. Its trunk-working posture is distinct from Pithbreaker’s low digging build; any ecological separation is still a proposal.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER LEFT fourth animal, charcoal-feathered long-forearmed animal bracing against wood, with a smooth oval tan keratin striking plate along its forehead/nose. Ignore the long-necked creature next to it and the rejected scale-shelter animal at lower right. Keep EXACT head plate shape and integration into the forehead/skull, small dark eyes, narrow understated mouth, thick short reinforced neck. No giant beak, no detachable helmet, no horns. FOUR limbs: two strong long forearms with large grasping claws, two compact grounded hindlegs; broad tapering feathered tail stabilizes body. Body has layered charcoal feathers that become copper overlapping wrist/forearm scales, crisp material boundary with natural joint clearances. Main view standing in a low quadrupedal stance; side view raises forebody moderately with forearms flexed to show reach, no prop needed. Retain original low rear mass, subtly upright forebody and feather silhouette, not a plated armadillo or an identical Pithbreaker. Detail enlarges head plate and scale-feather meeting, mouth closed with no brush. About 1.6 metres as previous tentative proposal.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "role": "exact selected cell anatomy",
+          "region": "LOWER LEFT, fourth animal",
+          "source_sha256": "ac37be89dea6c04a786421583c584bf5d66bda14b8c277a2433201d790d37ec0"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-abeea85c-1df1-428e-9def-0d52d58c0088.png",
+      "visual_check": "Four consistent reference views inspected. Selected face/body and covering maintained; no jaw frill repetition.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER LEFT fourth animal, charcoal-feathered long-forearmed animal bracing against wood, with a smooth oval tan keratin striking plate along its forehead/nose. Ignore the long-necked creature next to it and the rejected scale-shelter animal at lower right. Keep EXACT head plate shape and integration into the forehead/skull, small dark eyes, narrow understated mouth, thick short reinforced neck. No giant beak, no detachable helmet, no horns. FOUR limbs: two strong long forearms with large grasping claws, two compact grounded hindlegs; broad tapering feathered tail stabilizes body. Body has layered charcoal feathers that become copper overlapping wrist/forearm scales, crisp material boundary with natural joint clearances. Main view standing in a low quadrupedal stance; side view raises forebody moderately with forearms flexed to show reach, no prop needed. Retain original low rear mass, subtly upright forebody and feather silhouette, not a plated armadillo or an identical Pithbreaker. Detail enlarges head plate and scale-feather meeting, mouth closed with no brush. About 1.6 metres as previous tentative proposal.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "region": "LOWER LEFT, fourth animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-abeea85c-1df1-428e-9def-0d52d58c0088.png"
+        }
+      ],
+      "sha256": "1560182598cf8215296165a1807da2a7c4ac203e2a346e2d6e41a3dc1f4c3061",
+      "bytes": 2694682,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "LR5",
+      "title": "Pollenferry · clean jaw",
+      "selected": "LG2-1",
+      "file": "05-pollenferry-reference.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+      "region": "UPPER LEFT, first animal",
+      "status": "Liked surface transition · refinement pending",
+      "description": "The liked ochre soft coat meeting thick teal-grey leathery legs is preserved with the original long low neck and small face. This reference tests a clean jaw without the repeated throat-brush motif; feeding and pollination are left open.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: UPPER LEFT first animal, ochre-furred low quadruped with thick blue-grey leather lower limbs and long smoothly down-curving neck. Preserve original EXACT head, eye placement, nose, small ear, neck curvature, body and limb proportions. FOUR compact muscular legs and broad padded feet, small heavy tail, low long trunk; warm tawny feather-like guard hairs form a softly directional coat on upper body and neck, transitioning organically into thick matte pebbled teal-grey leather on lower legs and exposed lower flanks. This MATERIAL TRANSITION is the creator's liked feature: show its thickness and connection in the detail, do not replace fur with a formal bird wing or artificial scales. Main face in downward browsing pose; second view slight relaxed neck lift without changing neck length. REMOVE the pale projecting pollen brush / jaw-frill effect from under chin: clean lower jaw with short ordinary coat and intact lips. No flowers or attached plant parts. Do not invent a new mouth apparatus to explain diet. About 1.4m body length as prior tentative proposal.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "role": "exact selected cell anatomy",
+          "region": "UPPER LEFT, first animal",
+          "source_sha256": "ac37be89dea6c04a786421583c584bf5d66bda14b8c277a2433201d790d37ec0"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d688a5b-0864-4263-9876-808abd3fed13.png",
+      "visual_check": "Four consistent reference views inspected. Selected face/body and covering maintained; no jaw frill repetition.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: UPPER LEFT first animal, ochre-furred low quadruped with thick blue-grey leather lower limbs and long smoothly down-curving neck. Preserve original EXACT head, eye placement, nose, small ear, neck curvature, body and limb proportions. FOUR compact muscular legs and broad padded feet, small heavy tail, low long trunk; warm tawny feather-like guard hairs form a softly directional coat on upper body and neck, transitioning organically into thick matte pebbled teal-grey leather on lower legs and exposed lower flanks. This MATERIAL TRANSITION is the creator's liked feature: show its thickness and connection in the detail, do not replace fur with a formal bird wing or artificial scales. Main face in downward browsing pose; second view slight relaxed neck lift without changing neck length. REMOVE the pale projecting pollen brush / jaw-frill effect from under chin: clean lower jaw with short ordinary coat and intact lips. No flowers or attached plant parts. Do not invent a new mouth apparatus to explain diet. About 1.4m body length as prior tentative proposal.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "region": "UPPER LEFT, first animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d688a5b-0864-4263-9876-808abd3fed13.png"
+        }
+      ],
+      "sha256": "aebc901b66b861aa7d32a833b5d89055182051b947a7ab88c3d6428459b6ef54",
+      "bytes": 2568105,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated"
+    },
+    {
+      "code": "LR6",
+      "title": "Coilneck",
+      "selected": "LG2-5",
+      "file": "06-sporewarden-without-fungus.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+      "region": "LOWER MIDDLE, fifth animal",
+      "status": "Working name · fungus-free reference pending review",
+      "description": "The liked six-legged, long-necked animal keeps its original face and narrow rust-furred body. This version removes all fungus and the associated porous growth beds, replacing them with normal continuous hide and coat; Coilneck is a working name, and diet and final design remain open.",
+      "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER MIDDLE fifth animal, the rust-furred narrow deep body with SIX short legs and a long flexible neck turning back toward flank. Preserve its EXACT original small mammalian face, eyes, ears, nose, six-legged proportions, smooth dark lower legs, rust-brown upper fur, long looping neck and short tail. CHANGE ONLY fungal features: remove EVERY pale nodule, mushroom, spore growth, round pit, pore bed, wound-like patch and cultivated-looking opening from both flanks. Replace these areas with intact CONTINUOUS matte rust fur blending into the existing smooth dark brown lower skin; no bare scar, holes or new decorative patches. Retain appealing oddness of SIX limbs in THREE pairs, clearly trace all six to torso; unusual long flexible neck and small coherent head. Main view matches the source's turn-back neck pose but now merely grooming ordinary fur with closed lips; side view shows neck extended naturally forward, rear view confirms six legs and smooth flank. No fungus anywhere, no alternative symbiont, bugs, jaw fringes, or organs. Keep ordinary intact animal anatomy, not a deer conversion. About sheep to small-deer mass remains tentative; don't make it giant.",
+      "kind": "single_species_reference",
+      "canonical": false,
+      "review_status": "pending_creator_review",
+      "references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "role": "exact selected cell anatomy",
+          "region": "LOWER MIDDLE, fifth animal",
+          "source_sha256": "ac37be89dea6c04a786421583c584bf5d66bda14b8c277a2433201d790d37ec0"
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-dc1ee35c-84f8-4262-a0d0-0ba2e84f94a9.png",
+      "visual_check": "Fungus, porous growth beds and nodules removed. Upper-left view corrected to exactly six legs. Original long flexible neck, small face, rust coat and dark lower limbs retained; other angles support identity.",
+      "generation_history": [
+        {
+          "mode": "generate_from_selected_cell",
+          "prompt": "Use case: stylized-concept.\nAsset type: ORIGINAL Breachline single-species production REFERENCE SHEET, landscape 1536 x 1024.\nInput image: the attached sheet is a SOURCE OF ANATOMICAL IDENTITY for ONLY the named target cell. Ignore every other animal completely. This is not a six-creature lineup and not a head redesign.\nLayout: one large complete three-quarter body at upper left, one complete true side body at upper right, one smaller rear three-quarter at lower left, one enlarged head-and-shoulder detail at lower right. All are the SAME species and SAME individual, same proportions, coat/scale pattern and limbs. Generous gutters; no overlap or cropped extremities.\nPresentation: plain warm ivory paper, soft neutral diffuse light, minimal contact shadow, no scenery or furnishings, no labels/numbers/lettering/borders/diagrams/watermark. Traditional oil/acrylic painted realism, confident connected brush planes and selectively precise anatomy. Matte skin and keratin, coherent material transitions, no 3D, photo, cartoon, mascot or hyperreal pore noise. Heads remain anatomically integrated and match the chosen face.\nCreator's direction: recognisable animal biology with clear unfamiliar differences. Preserve the selected design; use new views to explain it, not to replace it with a known Earth animal. NO invented jaw frills, throat combs or hanging gill brushes, no repeated ornaments.\nSPECIES AND INVARIANTS:\nTARGET: LOWER MIDDLE fifth animal, the rust-furred narrow deep body with SIX short legs and a long flexible neck turning back toward flank. Preserve its EXACT original small mammalian face, eyes, ears, nose, six-legged proportions, smooth dark lower legs, rust-brown upper fur, long looping neck and short tail. CHANGE ONLY fungal features: remove EVERY pale nodule, mushroom, spore growth, round pit, pore bed, wound-like patch and cultivated-looking opening from both flanks. Replace these areas with intact CONTINUOUS matte rust fur blending into the existing smooth dark brown lower skin; no bare scar, holes or new decorative patches. Retain appealing oddness of SIX limbs in THREE pairs, clearly trace all six to torso; unusual long flexible neck and small coherent head. Main view matches the source's turn-back neck pose but now merely grooming ordinary fur with closed lips; side view shows neck extended naturally forward, rear view confirms six legs and smooth flank. No fungus anywhere, no alternative symbiont, bugs, jaw fringes, or organs. Keep ordinary intact animal anatomy, not a deer conversion. About sheep to small-deer mass remains tentative; don't make it giant.",
+          "reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/02-larger-ecological-experiments.png",
+          "region": "LOWER MIDDLE, fifth animal",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-93915bb9-0181-4374-a636-07a6a86c51f8.png",
+          "disposition": "superseded_extra_leg"
+        },
+        {
+          "mode": "edit",
+          "prompt": "Use case: precise-object-edit.\nThis reference sheet shows one species with exactly SIX legs. Correct ONLY the UPPER-LEFT full-body animal, which currently has SEVEN visible feet. Preserve the other three views and all faces, fur, colours, poses, dimensions, background and anatomy everywhere else exactly.\nIn the UPPER-LEFT animal, remove the EXTRA oblique leg whose paw is at approximately x=447, y=481 in the 1536x1024 canvas: it is the dark diagonal leg immediately behind the thick near-side middle leg. Remove that whole extra leg and its paw, healing only the adjacent belly fur and background. After removal the upper-left animal must have EXACTLY SIX complete connected legs and feet, organized as THREE left/right pairs: two front feet around x=132 and x=195, two middle feet around x=274 and x=357, two hind feet around x=555 and x=650. Preserve those six surviving limbs at their current positions and preserve their body attachments. Do NOT add any new leg, foot, toe group or limb behind them.\nThe animal remains the SAME long flexible-necked rust-furred six-legged species, grooming an ordinary intact flank. There must be NO fungus, porous growth beds, scars, holes, parasites, spores or new decorations. No text or labels. Landscape1536x1024. Nothing else changes.",
+          "reference": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-93915bb9-0181-4374-a636-07a6a86c51f8.png",
+          "source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-dc1ee35c-84f8-4262-a0d0-0ba2e84f94a9.png",
+          "disposition": "review_candidate"
+        }
+      ],
+      "sha256": "82060130c6816c2401b9d7840f9298301b76d6859a9cb6ad979bb7d5d52a0781",
+      "bytes": 2297510,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "generated",
+      "working_name": "Coilneck",
+      "previous_names": [
+        "Sporewarden"
+      ],
+      "name_status": "assistant_proposed_working_name",
+      "naming_note": "Creator requested a new name after fungus removal. Coilneck was proposed for the flexible looping neck; no final creator approval of the name is inferred."
+    }
+  ],
+  "art_direction_sha256": "b2fbe9ef7e07e9b18ee807f2728d638bd765c9c68f34f62e9708ce36dda665db",
+  "validation": {
+    "reference_sheets": 6,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "visual_inspection": "All six sheets inspected. LR2 scale silhouettes corrected. LR6 extra leg removed in upper-left view; six connected legs remain and both flank growth beds are absent. Existing chosen face/body identities retained as reference anchors. New views remain proposals.",
+    "unchanged_source_sheets": true,
+    "no_new_creator_approvals_inferred": true
+  }
+}

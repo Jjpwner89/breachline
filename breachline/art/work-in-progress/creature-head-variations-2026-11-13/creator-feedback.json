@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-13",
+  "source": "creator feedback in chat",
+  "scope": "Body Plans BP1–BP3; selected designs receive head variations",
+  "general": [
+    "The body-plan exploration is closer, but not finished.",
+    "The heads lean too heavily on lizard shapes. Add mammalian and other skull, jaw, nose and ear structures while retaining some lizard/snake options.",
+    "Needlehip's lizard-like face, fur and whip tail illustrate an interesting combination, not a universal template.",
+    "Preserve the selected body plans and coverings while exploring restrained head variation."
+  ],
+  "selected": [
+    {
+      "id": "BP1-1",
+      "name": "Foldstride",
+      "response": "liked",
+      "next": "HV1 head options"
+    },
+    {
+      "id": "BP1-2",
+      "name": "Loomstep",
+      "response": "strongly_liked",
+      "next": "HV2 head options"
+    },
+    {
+      "id": "BP1-3",
+      "name": "Shelfback",
+      "response": "liked",
+      "next": "HV3 head options"
+    },
+    {
+      "id": "BP1-5",
+      "name": "Needlehip",
+      "response": "liked",
+      "next": "HV4 head options"
+    },
+    {
+      "id": "BP2-4",
+      "name": "Ribhide",
+      "response": "liked",
+      "next": "HV5 head options"
+    },
+    {
+      "id": "BP2-5",
+      "name": "Scaleskein",
+      "response": "interesting",
+      "next": "HV6 head options"
+    },
+    {
+      "id": "BP3-3",
+      "name": "Purlrunner",
+      "response": "tentatively_liked",
+      "next": "HV7 head options"
+    },
+    {
+      "id": "BP3-4",
+      "name": "Gullied swimmer",
+      "response": "liked",
+      "next": "HV8 head options"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "BP1-4",
+      "name": "Siltdrum",
+      "reason": "Creator dislikes its fat, ugly appearance; do not use this take as a reference."
+    }
+  ],
+  "not_selected_this_round": [
+    "BP2-1",
+    "BP2-2",
+    "BP2-3",
+    "BP2-6"
+  ],
+  "unmentioned": [
+    "BP1-6",
+    "BP3-1",
+    "BP3-2",
+    "BP3-5",
+    "BP3-6"
+  ],
+  "preserved_prior_references": [
+    "RF1",
+    "RF2",
+    "RF3",
+    "RF4"
+  ],
+  "mixed_sheet_policy": "No sheet is accepted or rejected wholesale. Keep the composite source sheets because they contain liked takes; the disliked BP1-4 has no separate image file to delete. Reference only the explicitly selected cells.",
+  "canonical": false
+}

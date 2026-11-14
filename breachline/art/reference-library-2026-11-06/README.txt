@@ -1,5 +1,24 @@
+LATEST FINAL SPELL ART — SPARK, 2026-11-13
+SP1 is approved unchanged in spark-2026-11-13/. Open index.html for the painting; ../CARD_ART_FINAL_SPARK.json records its exact file and hash. This accepts artwork for card building; it does not install it into the live card.
+
+LATEST FINAL CARD PAINTINGS — SET 12, 2026-11-13
+20 accepted paintings are in new-peoples-cards-2026-11-13/. Open index.html for the final gallery; ../CARD_ART_FINAL_SET12.json records the exact selected versions and hashes. Husk and Caravan head use their approved fresh rebuilds.
+
+LATEST ANIMAL WORLD REFERENCES — 2026-11-13
+Consult ANIMAL_REFERENCE_HANDOFF.txt in the project root and
+art/accepted-animals-2026-11-13/animal-reference-index.json first for animal
+cards, especially Genesis, and wildlife in scenes. The 56 selected animals
+and their ecology groupings are approved for world use; four companions
+remain separate. Crested bird is a mobile predator. Fanback MG6 / MN2–1 and
+the preferred FR3 Undertow are preserved in final-animal-selections-2026-11-13/.
+The index supplies exact image paths and crops, including older selections.
+Other giant studies are set aside; explicitly unknown biology stays open.
+
 LATEST FINAL PEOPLES REFERENCES — 2026-11-13
 All seven current people designs are final: KR1 Kitefolk, GR1 Glimmerfolk, PL7 Moor folk, PL3D Ashborn (made people), PL8B Banded folk (salt/silt variants), CR3 Crest folk and CO1 Greyhides. Their unchanged PNGs and exact selections are in peoples-final-2026-11-13/prompts-and-manifest.json. PL3D is the original before extra scarring; PL3E is rejected. Current lore is in ../../SETTING.md: the Ashborn are Dominion's raised dead with weak souls. Other depicted clothing, jobs and settings remain examples unless separately established in the lore.
+
+LATEST SELECTION — PEOPLES ROUND 12 (2026-11-13)
+Nine accepted Riverfolk and Saltreach references are in peoples-round-12-2026-11-13/: R1v2, R2, R3v2, R4, R5, R6, W5, P5v2 and W3. All other round-12 people concepts are rejected, including the previously liked Cairnfold, Glimmerfolk and Kitefolk. R5/R6 remain especially liked. These additions postdate the v13 ZIP listed below; consult the folder's review.html and CLAUDE_HANDOFF.txt for the current selections.
 
 BREACHLINE - NEUTRAL REFERENCE LIBRARY
 2026-11-06 | Built-in image generation | Prototypes for review, not automatic canon

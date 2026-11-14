@@ -1,3 +1,5 @@
+> FINAL REVIEW (2026-11-13): Riverfolk and Saltreach accepted; every other people concept in this brief is rejected. Use the selected revised images and short descriptions in the reference-library peoples-round-12-2026-11-13 folder. These original briefs are historical; final-selections-2026-11-13.json supersedes their generation and pending-review instructions.
+
 # Peoples round 12: briefs (2026-11-13)
 
 22 concept studies of peoples, approved by the creator on 2026-11-13 for generation:

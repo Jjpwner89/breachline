@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-13",
+  "review_round": 2,
+  "scope": "Further revisions to 200 and 204 only, following creator review of image revision 2.",
+  "changes": [
+    {
+      "code": 200,
+      "revision": 3,
+      "filename": "200-husk-v3.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-v2.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/200-husk-v2.png"
+      ],
+      "feedback": "Creator likes the v2 husk face. The supporting hand is still wrong: it must sit between the husk's right arm and hip, naturally, rather than flipped outward. Turn the distant small figures so they face the same way.",
+      "caption": "The companion’s supporting hand is tucked into the gap between the husk’s right arm and hip, with the lowered face preserved. The distant soldiers now face away together; this revision awaits review.",
+      "prompt": "Use case: precise-object-edit. Make a LOCAL correction to the attached Breachline painting. Preserve BOTH men's faces EXACTLY, especially the thin husk's liked new downturned face, hair, expression and head angle. Preserve clothes, armour, positions, light, canvas framing and measured oil/acrylic brushwork. One 1536x1024 landscape painting, no writing.\nFix the contact between the men. The more alert man on SCREEN LEFT uses his ANATOMICAL LEFT arm, the arm next to the other man. Remove the conspicuous palm-up cupped hand that is currently on the FRONT of the thin man's sleeve. Instead, his forearm passes gently underneath the thin man's ANATOMICAL RIGHT elbow and his left HAND rests naturally IN THE NARROW GAP BETWEEN THE THIN MAN'S RIGHT ARM AND HIS RIGHT HIP. The hand is tucked on the INNER side of that hanging arm, on the screen-right side of the elbow, close to the husk's belt. A neutral untwisted wrist, a relaxed small supporting grip, fingers pointing gently DOWN along the inner elbow, partly occluded by the husk's sleeve. Do not display an open palm to the viewer. Do not make a claw or a bowl of curled fingers. The supporting forearm and hand form one believable continuous limb, with the husk's elbow resting lightly on it; the contact is quiet and physically ordinary. The husk's right forearm and his own hand continue hanging downward. Keep all other limbs unchanged. It is fine if most of the supporting fingers are naturally hidden in that gap: do not invent visible fingers on the outside just to show the grasp.\nAlso change ONLY the tiny distant soldier silhouettes in the background at SCREEN RIGHT: turn them all to face AWAY from us, proceeding together toward the BACK RIGHT along the barracks, backs of heads and shoulders visible. No soldier in that distant group faces toward the foreground or against the group's direction. Keep these figures small, quiet and minimally rendered.\nEverything else, most especially the two foreground faces and the husk's downturned gaze, stays unchanged.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-48abc642-90e5-4bc6-90b0-d7d5e1715f06.png",
+      "sha256": "7cd0927cc05882c8082f7b7c8abca960ae4e46c85477055622269228f9de96d0",
+      "reference_selection": "200-husk-v2.png is the local edit source; preserve its specifically liked downturned face.",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Liked v2 husk face and downturned gaze retained.",
+          "Supporting left forearm passes beneath the husk's right elbow; hand rests in the inner arm-to-hip gap, naturally partly occluded.",
+          "Distant soldiers show their backs and face the same way."
+        ]
+      },
+      "status": "revised_pending_creator_review",
+      "creator_approved": false
+    },
+    {
+      "code": 204,
+      "revision": 3,
+      "filename": "204-caravanhead-v3.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-v2.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/new-peoples-cards-2026-11-13/204-caravanhead-v2.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "feedback": "Preserve the liked shoes. Add a weapon and light armour, only mildly militaristic. He is at the front facing right with the caravan following behind, coming the other way from v2. The two background companions must be doing useful labour.",
+      "caption": "The caravan head keeps his open travelling shoes and now carries a sheathed sword with light armour. He leads toward the right as the caravan follows behind him, while two companions help the loaded wagon along the mountain road.",
+      "prompt": "Use case: composition-edit. Re-stage the attached Breachline Caravan head painting (image 1) to correct the direction of the procession. Preserve THIS SAME MALE Banded folk leader: distinctive copper-ochre banded skin and raised head anatomy, strong masculine face, rust-red repaired travelling coat, pale shirt, brown trousers. In particular PRESERVE HIS LIKED SHOES: practical brown leather open-toe travelling shoes with broad cutout straps, buckles and thick soles. Both shoes remain clearly visible, same distinctive design, attached naturally to his feet. Keep the landscape 1536x1024, painted oil/acrylic appearance, clear warm daylight, mountainous country and palette. No text or frame.\nCHANGE THE BLOCKING so there is no doubt he is at the FRONT. Put him in the RIGHT FOREGROUND, walking toward SCREEN RIGHT, with his head, gaze and body facing screen right in a clear three-quarter profile. He looks ahead along the path. All the wagons, the draught beast and the two other people FOLLOW BEHIND HIM TO THE LEFT. The road approaches from the upper LEFT background, turns into the middle LEFT, and continues past the leader toward the lower RIGHT. It must read as one caravan following one path in one direction, left-to-right, with this man ahead of the lead animal and wagon. No carts or people farther ahead of him on the right, and no opposing line of carts in the right background. Leave a little open path beyond his leading foot at the right edge.\nGive him a modest weapon and LIGHT ARMOUR suitable for a resourceful caravan leader: a short simple brown leather brigandine vest with small rivets beneath his open rust-red coat, and a practical SHEATHED short sword hanging convincingly from a belt at his hip. One relaxed hand can rest near the sword's pommel while he walks, the other swings low naturally. Only mildly armed; no helmet, large pauldrons, plate suit, heroic martial pose or drawn weapon. He remains a working travelling leader, not a uniformed soldier.\nBehind him toward SCREEN LEFT show the rust-and-cream long-necked grazer drawing the loaded wagon, all travelling RIGHT along the same road. The two former idle companions now do clear practical LABOUR BESIDE THE WAGON while moving: one leans forward pushing its rear side rail to help on the incline, hands planted on the rail and body weight working; the other holds a load rope and steadies a basket against the wagon side as it jolts along. Their gaze goes to their tasks, their hand contacts and footing make sense. Both are secondary Banded folk, smaller in perspective and well behind the leader.\nImage 2 is animal continuity only: use ONLY G2-5, the BOTTOM MIDDLE creature (cell 5). Preserve its narrow body, high rounded hindquarters, rust-and-cream shaggy mantle, four long jointed legs, broad padded toes, long low neck and soft-lipped blunt head. Harness this large animal to the cart with sensible shafts and traces. Do not borrow any other animal from the sheet. The animal, wagon and workers all FOLLOW the leader to the right. Keep the mountain vista broadly painted and quiet; selective sharper attention on the leader's face, hands, light kit and liked shoes.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d767-2ab9-74a1-8ac2-b1147c6f414a/exec-14117e22-8c81-4873-8280-b4522098ed38.png",
+      "sha256": "b16058c2847cea6081155c2bd31ea84e71c6089596f68e2e232b60b2ab68234d",
+      "reference_selection": "204-caravanhead-v2.png is the identity, coat, shoes and mountain setting edit source. g2.png BOTTOM-MIDDLE cell 5 (G2-5 Salt-flat migrant) is animal continuity only; every other cell excluded.",
+      "visual_review": {
+        "status": "checked_for_creator_review",
+        "checks": [
+          "Same male Banded leader, rust coat and liked open travelling shoes retained.",
+          "Leader is in right foreground facing right, ahead of the animal and cart.",
+          "A sheathed sword and light leather armour added.",
+          "Two companions behind him visibly push the cart and steady a basket; gaze and hand contacts follow their work."
+        ]
+      },
+      "status": "revised_pending_creator_review",
+      "creator_approved": false
+    }
+  ],
+  "unchanged_pending_review": [
+    205
+  ],
+  "previous_liked_codes": [
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    201,
+    202,
+    203,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    215
+  ],
+  "preserve_liked_features": {
+    "200": "v2 husk face and downward head angle",
+    "204": "v2 travelling shoes"
+  },
+  "finalized": false,
+  "lore_approval": "No new lore inferred.",
+  "live_card_installation": false,
+  "gallery": "revisions.html"
+}
