@@ -425,10 +425,10 @@
       return marks;
     }
     selectedMoves(moves).forEach(function (m) {
-      // A summon that hits an enemy takes a tile first, then a target.
+      // A summon with a target takes a tile first, then the enemy it hits or the ally it helps.
       if (m.type === 'summon' && m.target !== undefined && sel.summonAt) {
         marks.tiles[sel.summonAt.r + ',' + sel.summonAt.c] = 't-summon';
-        if (m.r === sel.summonAt.r && m.c === sel.summonAt.c) marks.units[m.target] = 't-attack';
+        if (m.r === sel.summonAt.r && m.c === sel.summonAt.c) marks.units[m.target] = unitById(m.target).owner === actor() ? 't-buff' : 't-attack';
       }
       else if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
       else if (m.type === 'move' && !sel.ability) marks.tiles[m.r + ',' + m.c] = 't-move';
@@ -449,7 +449,7 @@
       else if ((m.type === 'cast' || m.type === 'enchant') && m.target) marks.units[m.target] = unitById(m.target).owner === HUMAN ? 't-buff' : 't-attack';
       else if (m.type === 'ability' && sel.ability && m.target) {
         var ab = E.CARDS[unitById(sel.id).cardId].ability;
-        marks.units[m.target] = ['heal', 'farheal', 'orders', 'harvest', 'lens', 'tend', 'swap'].indexOf(ab.key) >= 0 ? 't-buff' : 't-attack';
+        marks.units[m.target] = ['heal', 'farheal', 'orders', 'harvest', 'lens', 'tend', 'swap'].indexOf(ab.key) >= 0 || unitById(m.target).owner === unitById(sel.id).owner ? 't-buff' : 't-attack';
       }
     });
     return marks;
