@@ -742,6 +742,14 @@ function randomField(r, ids) {
     check('and a melee ally reaches 2 tiles', E.range(by(s, sword)) === 2);
 
     s = arena();
+    var cap = put(s, 'captain', 0, 3, 2), runner = put(s, 'sellsword', 0, 3, 1);
+    s = play(s, { type: 'ability', unit: cap.uid, target: runner.uid });
+    check('Mercenary captain: Orders gives an ally that hasn\'t moved 1 extra tile', E.speed(by(s, runner)) === E.speed(runner) + 1 && !find(s, { type: 'ability', unit: cap.uid, target: runner.uid }));
+    s = arena();
+    cap = put(s, 'captain', 0, 3, 2); runner = put(s, 'sellsword', 0, 3, 1); runner.moved = true;
+    check('but not one that already moved', !find(s, { type: 'ability', unit: cap.uid, target: runner.uid }));
+
+    s = arena();
     var diver = put(s, 'sluicediver', 0, 3, 2), near = put(s, 'sellsword', 0, 3, 3), away = put(s, 'sellsword', 0, 3, 0);
     check('the Sluice diver swaps only with one of your units next to it', !!find(s, { type: 'ability', unit: diver.uid, target: near.uid }) && !find(s, { type: 'ability', unit: diver.uid, target: away.uid }));
 

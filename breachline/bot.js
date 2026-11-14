@@ -315,7 +315,13 @@ var Bot = (function () {
         if (key === 'study') return 70;
         if (key === 'sift') return 55;
         if (key === 'forage') return 50;
-        if (key === 'orders') return 15;
+        if (key === 'orders') {
+          // Worth it when the extra tile brings an enemy, or the enemy back row, within reach this turn.
+          t = unitById(s, m.target);
+          var step = E.speed(t), gap = function (d) { return d > step && d <= step + 1; };
+          var near = s.units.some(function (e) { return e.owner === foe && gap(dist(t, e) - E.range(t)); }) || gap(Math.abs(t.r - E.backRow(foe)));
+          return near && E.attackOf(s, t) > 0 ? 30 + E.attackOf(s, t) * 3 : -1;
+        }
         if (key === 'lens') {
           t = unitById(s, m.target);
           return s.units.some(function (e) { return e.owner === foe && dist(t, e) === E.range(t) + 1; }) ? 40 : -1;

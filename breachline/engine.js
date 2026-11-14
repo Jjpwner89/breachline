@@ -36,7 +36,7 @@ var Engine = (function () {
     unit('maren', 'Saint Maren of the Long Watch', 'W', 6, 3, 4, 12, { sub: 'Velunn', ability: { key: 'healall', label: 'Heal all', amount: 2 }, text: 'Ability: heal all adjacent allies 2.' }),
     unit('clanraiders', 'Cinder Clan raiders', 'R', 2, 1, 2, 2, { keywords: ['Swift'], text: 'Swift: moves 2 tiles.' }),
     unit('berserker', 'Cinder berserker', 'R', 3, 1, 4, 3, { keywords: ['Frenzy'], text: 'Frenzy: +2 attack on its first attack.' }),
-    unit('captain', 'Mercenary captain', 'R', 4, 2, 3, 4, { ability: { key: 'orders', label: 'Orders' }, text: 'Ability: an adjacent ally that already moved can move again.' }),
+    unit('captain', 'Mercenary captain', 'R', 4, 2, 3, 4, { ability: { key: 'orders', label: 'Orders' }, text: "Ability: an adjacent ally that hasn't moved yet can move 1 extra tile this turn." }),
     unit('drake', 'Ember drake', 'R', 4, 2, 4, 3, { keywords: ['Flying', 'Fireproof'], deathBurn: 'self', text: "Flying: moves 2 tiles, over other units. Fireproof: burning tiles don't hurt it. When it dies: its tile burns for 2 turns." }),
     { id: 'decoy', name: 'Illusory decoy', type: 'enchant', colour: 'U', cost: 1, wants: 1, atkBonus: 0, hpBonus: 0, allyOnly: true, mirage: true, keywords: [], text: 'Enchant one of your units: the next attack on it misses.' },
     unit('decoyunit', 'Illusory decoy', 'U', 1, 1, 0, 1, { keywords: ['Decoy'], token: true, text: 'Decoy: adjacent enemies must attack this first. Removed after one hit.' }),
@@ -870,7 +870,7 @@ var Engine = (function () {
       } else if (ab.key === 'healall') {
         if (s.units.some(function (a) { return a.owner === pi && a !== u && dist(u, a) === 1 && (a.hp < a.maxHp || devoNear(s, a)); })) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'orders') {
-        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && a.moved && !a.acted && reachable(s, a).length) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
+        s.units.forEach(function (a) { if (a.owner === pi && a !== u && dist(u, a) === 1 && !a.moved && !a.acted && a.ordered !== s.turn && reachable(s, a).length) out.push({ type: 'ability', unit: u.uid, target: a.uid }); });
       } else if (ab.key === 'study' || ab.key === 'sift' || ab.key === 'forage') {
         if (!u.moved) out.push({ type: 'ability', unit: u.uid });
       } else if (ab.key === 'push') {
@@ -1776,8 +1776,8 @@ var Engine = (function () {
           say(s, CARDS[u.cardId].name + ' heals nearby allies.');
         } else if (ab.key === 'orders') {
           var ally = unitById(s, m.target);
-          ally.moved = false;
-          say(s, CARDS[u.cardId].name + ' orders ' + CARDS[ally.cardId].name + ' to move again.');
+          ally.stride = (ally.stride || 0) + 1; ally.ordered = s.turn;
+          say(s, CARDS[u.cardId].name + ' orders ' + CARDS[ally.cardId].name + ' 1 tile further.');
         } else if (ab.key === 'study') {
           u.moved = true;
           draw(s, pi);
