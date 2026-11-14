@@ -2,7 +2,7 @@
 
 All of these cards are in the prototype as of 2026-11-05, and the numbers will change after playtesting. Each deck now has 24 cards, 8 of them lands. Lines are the ones saved in `FLAVOUR.md`, and they are on the cards as of 2026-11-05.
 
-Stats are attack / health, after the small-number audit in `CARD_AUDIT.md`. "Wants" is how many lands of the card's colour it wants; each missing land adds 1 to the cost.
+Stats are attack / health. "Wants" is how many lands of the card's colour it wants; each missing land adds 1 to the cost.
 
 Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually cross over anything. The Elder dragon no longer needs Swift as a result.
 
@@ -56,7 +56,7 @@ Flying now also means moving 2 tiles, because a 1-tile flier couldn't actually c
 | Bone harvester | Unit | 2 | 1 | 2 / 3 | Ability: destroy an adjacent ally; this unit gets +3 attack | |
 | Ashen Court noble | Unit | 3 | 1 | 3 / 4 | Drain | She has never raised her voice. No one has needed her to. |
 | Vashkar, Who Counts the Dead | Unit, Velunn | 6 | 3 | 7 / 9 | Drain. When summoned, you lose 2 life | |
-| Raise the dead | Spell (new type) | 3 | 1 | | Return a unit costing 3 or less from your discard pile to your back row. It lands on the free tile nearest the centre and waits a turn | Get up. You're still useful. |
+| Raise the dead | Spell | 3 | 1 | | Return a unit costing 3 or less from your discard pile to your back row. It lands on the free tile nearest the centre and waits a turn | Get up. You're still useful. |
 | Death warrant | Enchantment | 5 | 2 | | Enchant an enemy unit: destroy it at the end of your next turn | |
 
 ## Genesis (green)
@@ -115,7 +115,3 @@ Left out on purpose: `opaline-window-mender.png` (the Opaline Kin are excluded f
 | --- | --- | --- |
 | Ashen barrows | Dominion | |
 | Overgrown ruin | Genesis | Something green is growing through the throne room floor. |
-
-## Open questions
-
-1. Is a new play-phase spell type acceptable for Raise the dead, or should it be redesigned as a unit ability?

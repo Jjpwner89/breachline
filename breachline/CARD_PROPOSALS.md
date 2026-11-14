@@ -6,7 +6,7 @@ Before proposing a new animal card, especially Genesis, consult the [animal hand
 
 Crested bird ER4 is a mobile predator. This reference approval does not assign card statistics, costs or abilities; develop those through the ordinary card process. Explicitly unknown biology remains open. Wildlife is not exclusive to Genesis.
 
-Cards 1 to 30 were drafted on 2026-11-06 to fill the gaps in `CARD_AUDIT.md`. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
+Cards 1 to 30 were drafted on 2026-11-06 to fill gaps in the card pool. The creator approved all 30 as written on 2026-11-08, and they're in the game, tested only by bot simulations so far.
 
 Cards 31 to 42, from the reference library, were made final on 2026-11-09 and are in the game, tested only by bot simulations so far. Cards 43 to 91 were built on 2026-11-09, and cards 92 to 103 on 2026-11-10. Both batches were tested by bot simulations and a check in the browser. Numbers that were cut in discussion are skipped: 45, 50, 57, 72, 74 and 76 to 81. The mechanics they use are described in `DESIGN_NOTES.md`. Numbers are small-scale and will move in playtesting.
 
@@ -181,7 +181,7 @@ Choices made in discussion:
 
 ## Tile effects
 
-Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen after the focus audit in `CARD_AUDIT.md`. The rules for tile effects are in `DESIGN_NOTES.md`. Numbers 45 and 50 were cut in discussion, so they're skipped here. Art briefs are in `art/ART_BRIEFS_SET6.md`.
+Added on 2026-11-09. This is the first batch for the tile-effects focus, chosen after a focus audit. The rules for tile effects are in `DESIGN_NOTES.md`. Numbers 45 and 50 were cut in discussion, so they're skipped here. Art briefs are in `art/ART_BRIEFS_SET6.md`.
 
 | # | Card | Colour | Type | Cost | Wants | Stats | Rules | New code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -625,7 +625,7 @@ Why each card is the way it is:
 
 ## Cards for the new peoples, 2026-11-13
 
-Proposed and reviewed with the creator on 2026-11-13, not built yet. They bring the new peoples from `SETTING.md` into the game. The Kitefolk were cut from the game the same day, so none of these use them. A card's people shows on its type line, as "Unit, Alderkin" does now, so most names leave the people out. Art briefs are in `art/ART_BRIEFS_SET12.md`. Before the balance checks the creator lowered several costs and adjusted the cards most likely to be out of line (2026-11-13): the conscript, Tithe-drinker, Caravan head, Guild improver, Tide-healer, signaller, Moor guide, the moor spell and Charter-maker. The Sluice diver swaps only with your own units, and the Tide-healer heals less, so it isn't simply a better Still Flame chaplain.
+Proposed and reviewed with the creator on 2026-11-13, not built yet. They bring the new peoples from `SETTING.md` into the game. A card's people shows on its type line, as "Unit, Alderkin" does now, so most names leave the people out. Art briefs are in `art/ART_BRIEFS_SET12.md`. Before the balance checks the creator lowered several costs and adjusted the cards most likely to be out of line (2026-11-13): the conscript, Tithe-drinker, Caravan head, Guild improver, Tide-healer, signaller, Moor guide, the moor spell and Charter-maker. The Sluice diver swaps only with your own units, and the Tide-healer heals less, so it isn't simply a better Still Flame chaplain.
 
 New rules these cards use:
 
@@ -661,10 +661,26 @@ New rules these cards use:
 | 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
 | 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, for 2 turns | None: snare |
 
+### Creature cards, proposed 2026-11-14
+
+The creator picked these animals from the accepted collection on 2026-11-14. Paintings are briefed in [ART_BRIEFS_SET13.md](art/ART_BRIEFS_SET13.md). Stats are starting points for the usual paired balance check; none is in the game yet. The Ashborn kennel-hand, with Copper hounds, waits on who makes the hounds.
+
+| # | Card | Animal | Faction | Colour | Type | Cost | Wants | Stats | Rules | New code |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 216 | Vaultstalker | LG1-4 |  | G | Unit, uncommon | 3 | 1 | 3 / 3 | Ambush | None |
+| 217 | Needlehip | BP1-5 |  | G | Unit, common | 2 | 1 | 2 / 2 | Hunt | None |
+| 218 | Siltwright warriors | E6-A |  | G | Unit, common | 1 | 1 | 1 / 1 | Stand together | None |
+| 219 | Woodland breaker | G2-4 |  | G | Unit, rare | 5 | 2 | 4 / 6 | Overrun | None |
+| 220 | Fanback | MG6 |  | G | Unit, legendary | 6 | 2 | 4 / 7 | When summoned: put a land from your deck into your hand | Small: deck search |
+| 221 | Veilwing | MN2-5 | Lantern Conclave | U | Unit, rare | 5 | 2 | 3 / 5 | Flying. Harnessed for survey flights (creator, 2026-11-14) | None |
+| 222 | Host-bound | E5-B |  | B | Enchantment on an enemy unit, uncommon | 2 | 1 |  | That unit takes 1 damage at the start of each of its owner's turns | Small, if no enemy-enchant upkeep damage exists |
+| 223 | Gall season | ER2, E3-A |  | G | Enchantment, common | 2 | 1 |  | Your unit gains Grows | None |
+| 224 | Riverfolk specimen-keeper | ER5 | Lantern Conclave | U | Unit, common | 2 | 1 | 1 / 3 | Study | None |
+
 Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder scored about 1.8 over the common band at cost 5 whether it was 5/6, 5/5, 4/6 or 4/5, so the creator raised its cost to 6, which brings it into band (lift +0.2).
 
 Changed alongside them:
 
 - **Grove tender:** its pay-1 ability, usable every turn, becomes "When summoned: an ally next to it permanently gets +1 attack and +1 health", and it costs 3 instead of 4 with a 1/2 body. The creator found the repeat too strong, since it can grow one unit every turn. In the balance check (2026-11-13), +2/+2 stayed about 4 points over the uncommon band whatever its body, so the creator chose +1/+1 on a 1/2 (lift +0.8). The Guild improver likewise became a 1/4 giving +2 health (lift −0.5), down from a 2/4 giving +3.
 
-Left out on purpose: the Kitefolk, which were cut; Stonehorn, the least-liked design; Tidevault, which needs a smaller design first; and Spindlejack and Dawnsail, which stay out of combat. The Roof glider has no card yet, and its rules are still open.
+Left out on purpose: Stonehorn, the least-liked design; Tidevault, which needs a smaller design first; and Spindlejack and Dawnsail, which stay out of combat. The Roof glider has no card yet, and its rules are still open.
