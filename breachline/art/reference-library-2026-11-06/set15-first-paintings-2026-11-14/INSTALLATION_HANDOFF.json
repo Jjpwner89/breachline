@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-14",
+  "owner": "Claude",
+  "status": "art_final_installation_not_performed",
+  "selection_manifest": "breachline/art/CARD_ART_FINAL_SET15.json",
+  "instructions": [
+    "Install only these selected images using the existing game image pipeline.",
+    "Keep the original Goblin Cutter unchanged.",
+    "N1-C v3 is the crossed-arms, wall-leaning Ambrel chorister.",
+    "No game code, live PNG or game JPEG was changed by this art task."
+  ],
+  "cards": [
+    {
+      "code": "R1",
+      "card_id": "spearman",
+      "title": "Militia spearman",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/militia-spearman.png",
+      "sha256": "ec075175f6af4dbb31a7d31a7389fd94578fe01fcb5bfbddcf6c49bdb4906a03",
+      "current_live_png": "breachline/art/militia-spearman.png",
+      "selected_version": 4
+    },
+    {
+      "code": "R2",
+      "card_id": "knight",
+      "title": "Oath knight",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/oath-knight.png",
+      "sha256": "e5f6eb361dd2da6aa41af73ec19e74a74c451abebce942aa0128b4840b7d85f2",
+      "current_live_png": "breachline/art/oath-knight.png",
+      "selected_version": 5
+    },
+    {
+      "code": "R3",
+      "card_id": "cub",
+      "title": "Pride cub",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/pride-cub.png",
+      "sha256": "151c6754cbcfae089f0f286530ed13e029bdd94979a2ef17eb62fc005137affa",
+      "current_live_png": "breachline/art/pride-cub.png",
+      "selected_version": 1
+    },
+    {
+      "code": "R4",
+      "card_id": "banner",
+      "title": "Blessed banner",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/blessed-banner.png",
+      "sha256": "eaa0a0fca367df1f40cdba2ec0ba18329be51e8163f4afd0a28786c69d738269",
+      "current_live_png": "breachline/art/blessed-banner.png",
+      "selected_version": 1
+    },
+    {
+      "code": "R5",
+      "card_id": "shield",
+      "title": "Shield of dawn",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/shield-of-dawn.png",
+      "sha256": "d30f17b62672670a058b8c7ecb02242937d1717f15873c793ac33e9ff2d24719",
+      "current_live_png": "breachline/art/shield-of-dawn.png",
+      "selected_version": 1
+    },
+    {
+      "code": "R6",
+      "card_id": "captain",
+      "title": "Mercenary captain",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/mercenary-captain.png",
+      "sha256": "f1e4db0abe3fdef58599a045cdc8aa744bfa9e4fb2d3f11743cf43aabad3f68c",
+      "current_live_png": "breachline/art/mercenary-captain.png",
+      "selected_version": 1
+    },
+    {
+      "code": "R7",
+      "card_id": "land_r",
+      "title": "Cinder peaks",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-peaks.png",
+      "sha256": "a564096f52e17d3de0407dd83c452583d810028415c3fac7eaee6c2bc28091d3",
+      "current_live_png": "breachline/art/cinder-peaks.png",
+      "selected_version": 1
+    },
+    {
+      "code": "R8",
+      "card_id": "firebolt",
+      "title": "Firebolt",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/firebolt.png",
+      "sha256": "9e213e422ec588e7e9817957bc3ed1cb89a5ecc4180430acfb495fdd78e9a906",
+      "current_live_png": "breachline/art/firebolt.png",
+      "selected_version": 2
+    },
+    {
+      "code": "R9",
+      "card_id": "saboteur",
+      "title": "Thornwarden saboteur",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/thornwarden-saboteur.png",
+      "sha256": "67ca43777ec05aa8ee93788d772f36618431b73591f7736595506c73d28b76e9",
+      "current_live_png": "breachline/art/thornwarden-saboteur.png",
+      "selected_version": 2
+    },
+    {
+      "code": "R10",
+      "card_id": "sellsword",
+      "title": "Sellsword",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/sellsword.png",
+      "sha256": "a402c560f5427bab05d82087cc09a9d935e67cb82322f988469b89cda260ab37",
+      "current_live_png": "breachline/art/sellsword.png",
+      "selected_version": 1
+    },
+    {
+      "code": "N1-C",
+      "card_id": "chorister",
+      "title": "Brass chorister",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/brass-chorister.png",
+      "sha256": "81bed29d90fa857246e588723137a4bcfa1a577992e1f9015a73f363663fac77",
+      "current_live_png": "breachline/art/brass-chorister.png",
+      "selected_version": 3
+    },
+    {
+      "code": "N2",
+      "card_id": "clanraiders",
+      "title": "Cinder Clan raiders",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-clan-raiders.png",
+      "sha256": "3acd586901d400e937380b2d22a849e8a3cd1a7bb0025c39d091d4f8441204b2",
+      "current_live_png": "breachline/art/cinder-clan-raiders.png",
+      "selected_version": 2
+    },
+    {
+      "code": "N3",
+      "card_id": "goblin",
+      "title": "Goblin cutter",
+      "action": "keep_existing",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/goblin-cutter.png",
+      "sha256": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+      "current_live_png": "breachline/art/goblin-cutter.png",
+      "selected_version": "original"
+    },
+    {
+      "code": "N4",
+      "card_id": "raider",
+      "title": "Orc raider",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-raider.png",
+      "sha256": "f1ed8891c1e9c3e2b5eba47eff2ee984ef0e6f9251f8c840ca5296b44ebdf965",
+      "current_live_png": "breachline/art/orc-raider.png",
+      "selected_version": 4
+    },
+    {
+      "code": "N5",
+      "card_id": "warchief",
+      "title": "Orc warchief",
+      "action": "install_final_art",
+      "canonical_png": "breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-warchief.png",
+      "sha256": "03f64742784bfe62bab548725652a43bdc117d68c22141dcedf7aad58abba3fa",
+      "current_live_png": "breachline/art/orc-warchief.png",
+      "selected_version": 4
+    }
+  ]
+}

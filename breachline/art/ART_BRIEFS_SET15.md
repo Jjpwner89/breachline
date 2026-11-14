@@ -2,13 +2,23 @@
 
 Workflow: [briefs to paintings](../../.claude/skills/art-direction/BRIEF_WORKFLOW.md). Art direction: [art direction](../../.claude/skills/art-direction/SKILL.md).
 
-- **Date and revision:** 2026-11-14, revision 1.
+- **Date and revision:** 2026-11-14, revision 7 (final selection and handoff; original revision 1 preserved in the batch folder).
 - **Source:** the creator reviewed the 61 card paintings unchanged since the first art batch (5 November) against the current art direction, in the [first paintings review](https://claude.ai/artifact/4CeQEHyMzrMBeT3vXMMyhc). They kept 46, marked 10 to revise and 5 to replace. The notes below are the creator's spoken notes from that review, 2026-11-14.
 - **Scope:** 10 edits of approved paintings (R1–R10) and 5 new paintings to try against the current ones (N1–N5). The creator isn't sure every replacement will be used; the current painting stays in the game until one is picked.
 - **Output stage:** finished card paintings at 1536 × 1024. Edits keep the original filename, with the previous version kept as history. Replacements are new files in the WIP folder until chosen.
 - **WIP folder:** `art/work-in-progress/set15-first-paintings-review-2026-11-14/`.
 - **Paths:** relative to `breachline/`. The paintings are `art/<file>.png`; card rules are in `engine.js`.
-- **Status:** all items ready, none generated.
+- **Status:** all 15 card selections FINAL. Final chorister is N1-C v3; original Goblin Cutter retained. [Final selection record](CARD_ART_FINAL_SET15.json) · [Accepted gallery](reference-library-2026-11-06/set15-first-paintings-2026-11-14/index.html) · [Handoff for Claude](reference-library-2026-11-06/set15-first-paintings-2026-11-14/INSTALLATION_HANDOFF.txt). Claude handles card installation.
+
+## Final creator selections — 2026-11-14, review 7
+
+- **All 15 cards final:** R1 v4, R2 v5, R3 v1, R4 v1, R5 v1, R6 v1, R7 v1, R8 v2, R9 v2, R10 v1, N1-C v3, N2 v2, ORIGINAL N3 Goblin Cutter, N4 v4 and N5 v4.
+- **Final chorister:** blank-faced hammered-brass construct outside an Ambrel public hall; arms crossed over chest, leaning back slightly against the stone, legs uncrossed, subtly watchful, with faint recessed blue stone light. Creator: “That's it. That's final. That's the brass corester.”
+- **Unselected alternatives:** N1-A/B, earlier N1-C versions and the new Goblin Cutter trial remain comparison history.
+- **Publishing:** creator requested commit and push. Claude will put the new art into cards. No game installation is performed by this art task.
+- Exact canonical paths, versions and hashes are in CARD_ART_FINAL_SET15.json. The specific public hall is a painting proposal, not new named lore.
+
+The original briefs below remain historical context where not superseded.
 
 ## Applies to the whole batch
 
