@@ -1,0 +1,12 @@
+Use case: stylized-concept.
+Asset type: CB5, six transparent book ornaments on one 1536 x 1024 sprite sheet for Breachline.
+Exactly six SEPARATE pieces in two rows of three, one centred within each invisible 512 x 512 cell. Plenty of empty alpha-transparent space around every piece, no pieces touch cell or canvas edges. No dividing lines or labels. Paint ONLY the ornaments, not their paper or background.
+Use the attached emblem for exact identity: its almond/eye outline and central round pupil, surrounded by a circular ring with eight small radial ticks. This is the current Conclave insignia despite the historical 'lantern star' name. Do not invent a literal star replacing it.
+TOP LEFT: small printer's device, the referenced insignia drawn as fine dark-sepia engraved ink within a simple small leafy wreath or roundel. About 300 pixels wide.
+TOP MIDDLE: a restrained narrow horizontal fine-scrollwork headpiece, about 400 x 90 pixels, balanced and elegant.
+TOP RIGHT: a compact elegant closing tailpiece, about 220 x 100 pixels, little engraved flourishes.
+BOTTOM LEFT: an upright rectangular plate frame, about 370 x 360 pixels, two thin ruled outlines with one small elegant corner flourish at each corner. Its entire centre is empty transparent space, no paper or fill.
+BOTTOM MIDDLE: a small square drop-capital frame, about 230 x 230 pixels, delicate vines and tiny points around the perimeter with an entirely EMPTY transparent centre. No letter, initial or symbol in the centre.
+BOTTOM RIGHT: one deep blue-teal wax seal, about 225 pixels across, irregular pressed-wax edge and the referenced insignia embossed in the same blue wax. This sixth piece alone is painted in colour, quiet material detail, soft even neutral illumination. No external shadow.
+Pieces 1 through 5 use exactly ONE dark sepia ink colour, #513b2a, with only edge transparency for antialiasing; no gold, white or cream highlight, no paper texture and no coloured fill. The engraving hand may feel drawn by a careful old press, crisp but not mechanically sterile. Piece 6 uses the same traditional oil/acrylic fantasy hand as the game's matte materials.
+Real RGBA transparency, including the open spaces between engraved marks and both frame centres. No backdrop, background haze, checkerboard, glow, cast shadow, text, letters, numbers, labels, watermark or signature. Elegant and restrained, not ornate.

@@ -80,4 +80,18 @@ These three creators' packs are CC-BY, so they need the credit given here:
 | flight-dominion | qubodup - Power Drain | CC0 | qubodup-PowerDrain.flac |
 | flight-genesis | qubodup - 20 rustles of dry leaves | CC0 | rustle07.flac |
 
+## Lore codex
+
+The book's sounds, picked on the codex sound board on 2026-11-13 from Freesound and Kenney, all CC0. The Freesound files are the site's high-quality previews. Each was trimmed to one take, faded and levelled, and converted to mono 16-bit WAV. Three are from Joao_Janz's *Book Foley Pack #1*, the same huge hardback opened, turned and closed.
+
+| File | Pack | Licence | Original file |
+|---|---|---|---|
+| codex-whoosh | Kenney - RPG Audio | CC0 | cloth1.ogg |
+| codex-drop | Valerie-Vivegnis (Freesound 836521) | CC0 | Book dropped on table |
+| codex-open | Joao_Janz - Book Foley Pack #1 (Freesound 553000) | CC0 | Huge_Thick_Hard_01_Open_02.wav |
+| codex-cover-land | Valenspire - Book & Paper Sounds (Freesound 699311) | CC0 | Book_Misc_06 |
+| codex-page | Joao_Janz - Book Foley Pack #1 (Freesound 552992) | CC0 | Huge_Thick_Hard_01_Turn_01.wav |
+| codex-flutter | jackthemurray (Freesound 429403) | CC0 | Flipping through a book |
+| codex-close | Joao_Janz - Book Foley Pack #1 (Freesound 552996) | CC0 | Huge_Thick_Hard_01_Close_02.wav |
+
 Every moment the game asks for now has a sound. Kenney's packs are by Kenney Vleugels (www.kenney.nl).

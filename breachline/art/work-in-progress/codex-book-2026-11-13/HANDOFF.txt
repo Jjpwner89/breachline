@@ -1,0 +1,41 @@
+BREACHLINE — CODEX BOOK ART, 2026-11-13
+Status: all CB1–CB6 generated and visually/technically checked. Creator approval pending.
+Review: index.html
+Use the six PNGs in ready/ for integration. All are RGBA with actual alpha.
+Generated originals remain at this folder's top level. Exact initial/edit prompts,
+sources, export transforms and hashes are in prompts-and-manifest.json.
+
+CB1 codex-cover.png, CB2 codex-cover-inside.png, CB3 codex-page.png:
+1024 x 1536. Shared rectangular texture region x=2,y=88,w=1020,h=1360
+(exact 3:4), with transparent padding. Crop that region when using the face
+on a 3:4 CSS plane. CB1 hinge left; CB2 hinge right; CB3 binding shade left.
+CB1 title panel approx x=.177,y=.168,w=.65,h=.16 within the face.
+CB2 bookplate approx x=.216,y=.181,w=.546,h=.183 within the face.
+All lettering is intentionally absent.
+
+CB4 codex-strips.png: 1536 x 1024.
+Suggested crop regions in source sheet (x,y,w,h):
+page block [88,190,1360,145], board edge [79,495,1378,85],
+amber ribbon [81,750,1376,66]. Retain alpha in cropped strip edges.
+Straight left ribbon cut; frayed V at right.
+
+CB5 codex-ornaments.png: 1536 x 1024, regular 3 x 2 cells of 512.
+Reading order: printer device, headpiece, tailpiece, plate frame,
+drop-cap frame, blue wax seal. Frame centres are transparent.
+For uniform recolouring of the first five, use each sprite's alpha as a mask.
+
+CB6 fx-book-dust.png: 1536 x 1024, regular 3 x 2 cells of 512.
+Read left to right, top then bottom. Source edge is near the foot of each
+cell. Dust billows then fades; frame 6 is almost empty. The gallery includes
+a cross-faded playback preview. No significant dust touches cell borders.
+
+EMBLEM RESOLUTION:
+The brief calls it a lantern star, but the required current emblem-U.png is
+an eye-and-ring with radial ticks. The exact supplied current design is used
+on the cover, printer device and wax seal; no new faction insignia invented.
+
+SCOPE:
+First-pass art only. No accepted-art promotion, lore changes, live UI
+installation, web-size build, sound work, commit, merge or push performed.
+The brief came from the ui-redesign-3f7efc worktree; a delivery copy is
+placed in that worktree's matching WIP folder for the book assembly work.

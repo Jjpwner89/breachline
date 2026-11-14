@@ -1,0 +1,164 @@
+{
+  "batch": "codex-book-2026-11-13",
+  "date": "2026-11-13",
+  "brief_revision": 1,
+  "generation_tool": "built-in image_gen",
+  "source_brief": ".claude/worktrees/ui-redesign-3f7efc/breachline/art/CODEX_BOOK_BRIEFS.md",
+  "output_folder": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/codex-book-2026-11-13",
+  "reference_decision": "The required emblem-U.png depicts an eye and ring with radial ticks. Used the exact supplied current insignia rather than inventing the lantern star mentioned in prose.",
+  "items": [
+    {
+      "code": "CB1",
+      "title": "Front cover",
+      "filename": "codex-cover.png",
+      "description": "A worn blue-teal leather cover with brass corners, restrained gold tooling, and a blank recessed title panel. Its central mark follows the supplied current Conclave emblem; the cover design is a first-pass proposal.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB1, a transparent hand-painted front-cover texture for the Breachline lore codex interface.\nCreate ONE front cover, directly overhead in an exact orthographic plan view. Portrait PNG canvas 1024 x 1536. The flat rectangular cover has a precise 3:4 width-to-height proportion, approximately 1020 x 1360 pixels, centred on the canvas, with transparent space mainly above and below and a tiny antialiased safety margin at left and right. All four sides straight and parallel to the image borders. Show only the flat exterior front face, not a perspective book or a page block.\nA fine scholar's book carried for years by a historian of the Lantern Conclave in Ambrel: deep blue-teal leather over boards, matte worn smooth, slightly darker at handholds and rubbed paler along edges and corners. Visible but quiet oil/acrylic brushwork, carefully painted believable material, precise rather than noisy detail. Heavy and loved, restrained and usable.\nA blind-tooled double border with a thin worn gold line just inside; four simple small worn brass corner caps; shallow straight hinge groove down the LEFT edge. Upper middle has a modest recessed rectangular title panel of paler desaturated teal leather, entirely blank and smooth.\nRequired emblem reference: attached image is the actual current Gnosis/Conclave insignia. Preserve its exact eye-shaped central mark with round pupil, circular ring and short radial ticks, translating the silver design into understated old gold tooling. Place one medium-sized insignia in the cover centre below the blank title panel. Use the insignia design, not a freestanding metal badge, and invent no replacement star or extra symbols.\nSoft even neutral illumination across the plane. No directional lighting, no cast shadows, no glow, no vignetting on the transparent surround. Real alpha transparency outside the cover, including antialiased edges; do not paint checkerboard, paper, table or any backdrop.\nNo title, text, letters, numbers, runes, signature, watermark, clasp, hands, scenery, pages or extra objects. Not a photo, 3D render, vector icon, cartoon, carved relic or ornate magic tome. The game will add all lettering, perspective, shadows and lighting.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-899b4751-1310-4ec3-bc64-9d7f6ed558f4.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/ui/emblem-U.png"
+      ],
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/codex-cover.png",
+      "target_size": [
+        1024,
+        1536
+      ],
+      "source_crop": [
+        38,
+        74,
+        1010,
+        1299
+      ],
+      "destination_rect": [
+        2,
+        88,
+        1020,
+        1360
+      ],
+      "source_sha256": "0092af2aedf2a858e0757616cef5c0ff41ec58a7784faf7b35069cd75ec329c4",
+      "export_sha256": "c90e54ed56212147315457e59333c33f57130469adb4ecf8e6d5ab8e30aaa243"
+    },
+    {
+      "code": "CB2",
+      "title": "Inside cover",
+      "filename": "codex-cover-inside.png",
+      "description": "Low-contrast teal, amber and cream marbling sits within matching worn leather. The blank bookplate leaves the library line to the interface.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB2, transparent INSIDE front-cover texture for Breachline's lore codex.\nThe attached CB1 is the material, wear, size and outline master. Paint the reverse/inside face of that same board. Preserve its exact flat rectangular 3:4 cover proportions, outline, deep blue-teal leather colour and worn old-gold finish. Straight overhead orthographic view, no tilt, side faces, perspective or cast shadow. Requested portrait canvas 1024 x 1536 with cover filling width and centred transparent space above and below.\nThe hinge is on the RIGHT edge now. Leather folds over all four edges as a narrow border about one twentieth of the cover width, lightly rubbed and edged with a fine gold line. Fill the inset with beautiful low-contrast hand-marbled endpaper in quiet teal, amber and cream. Delicate flowing marbling, not loud high-contrast swirls. The inside does not show the exterior's brass corner caps or big gold emblem.\nIn the upper middle place a small warm-ivory pasted rectangular bookplate with a restrained engraved sepia border and a COMPLETELY BLANK smooth centre. Approximate bookplate width half the board width, height one sixth the board height. No words, no fictitious writing, no emblem in the bookplate.\nTraditional oil and acrylic fantasy paint, quiet brushwork, matte paper and leather, carefully selected detail. Even neutral light, no directional lamp shading. Real alpha transparency outside the board, clean antialiased boundary, no background/checkerboard/table/scene. No text, letters, numbers, runes, labels, signature, watermark, hands, loose pages, clasp or additional objects. This is one stationary interface piece, not an open book.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-e215aec2-dfe7-4d9d-8493-ad900e4fb0ce.png",
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-899b4751-1310-4ec3-bc64-9d7f6ed558f4.png"
+      ],
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/codex-cover-inside.png",
+      "target_size": [
+        1024,
+        1536
+      ],
+      "source_crop": [
+        37,
+        73,
+        1013,
+        1302
+      ],
+      "destination_rect": [
+        2,
+        88,
+        1020,
+        1360
+      ],
+      "source_sha256": "78ad2f6ed7c84842318ba99b02b5dde23bdaa3d982148b249acacaf5636d72e8",
+      "export_sha256": "3a132f6d66a7de9a92898b61d3e2fa264f8f21d6672659fed2e5059ddfe1b14b"
+    },
+    {
+      "code": "CB3",
+      "title": "Blank page",
+      "filename": "codex-page.png",
+      "description": "Warm ivory paper keeps the reading area quiet, with faint handling at the outer edge and a little binding shade on the left. The lettering remains live text in the game.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB3, one blank right-hand page texture for Breachline's lore codex, genuine transparent cutout.\nOne single flat sheet of good laid paper viewed straight from above, exactly orthographic, no tilt or perspective. Requested canvas 1024 x 1536 portrait. The sheet itself is a clean upright 3:4 rectangle, filling nearly the full canvas width with transparent breathing room above and below. Four straight parallel sides and clean fine edges, neither torn nor rolled.\nWarm light ivory paper, subtle handmade laid texture with only extremely faint close-spaced fibres, not ruled writing lines. The middle 80 percent is smooth and even in tone, quiet enough for readable typeset text anywhere. Barely visible foxing and handling at the OUTER RIGHT edge. Very soft narrow darkening at the LEFT binding edge, suggesting a slight turn into a binding without showing a book, fold, crease, page stack, spine or hard shadow. The page remains overwhelmingly light ivory.\nPaint with quiet traditional oil/acrylic fantasy brushwork and believable matte paper. This is a cared-for scholar's book in Ambrel, not dirty brown parchment or a distressed texture filter.\nSoft even neutral illumination; absolutely no external cast shadow, glow, drop shadow, background, table or scenery. True alpha transparency outside the page with antialiased edges. Completely blank: no text, numbers, letters, ruled lines, border, ornaments, watermark, labels, signatures, fingers or extra objects.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-ce19f01c-d84a-45ed-a2a4-af59ed293b78.png",
+      "references": [],
+      "revision_prompt": "Edit only the attached page asset. Keep its quiet warm ivory paper colour, completely blank smooth centre, subtle fibres and faint foxing.\nRemove ALL backdrop outside the physical single sheet, including the beige surround, vignette and shadow: the entire area outside the paper must be genuine zero-alpha transparency. Do not replace it with a checkerboard or white background. No cast shadow or dark halo.\nMake the physical sheet a clean exact 3:4 rectangular shape, 1020 pixels wide by 1360 pixels tall, centred at x=512,y=768 on a 1024 x 1536 portrait transparent canvas, so the page top is approximately y=88 and bottom approximately y=1448. Only the single sheet exists. It is completely flat orthographic overhead; no curled edges, no page stack, no frame, no bevel. Preserve a very soft narrow binding shade only INSIDE its left edge; even light ivory everywhere else. No text, ornaments, letters or extra objects. Genuine RGBA cutout, no scenery.",
+      "previous_source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-8edb494b-52b7-4881-acfa-5779deef9924.png",
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/codex-page.png",
+      "target_size": [
+        1024,
+        1536
+      ],
+      "source_crop": [
+        13,
+        105,
+        998,
+        1326
+      ],
+      "destination_rect": [
+        2,
+        88,
+        1020,
+        1360
+      ],
+      "source_sha256": "a3dabb4ec57245af65f7260965b855a6f1e5ed1ba92650e89d38c580038bf46e",
+      "export_sha256": "8e68e96174491175d9cdb2d382f67f3481ac14bc2e7fb7490e7f6cc90ead9e76"
+    },
+    {
+      "code": "CB4",
+      "title": "Edges and ribbon",
+      "filename": "codex-strips.png",
+      "description": "Three separate strips provide layered page edges, a matching leather board edge, and an amber ribbon with a frayed V end. They are designed to form the moving book\u2019s thickness and bookmark.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB4, a three-piece transparent sprite sheet of book edges and a ribbon for the Breachline lore codex.\nUse the attached CB1 only as the colour/material master for the leather and wear. Do NOT draw another cover or its emblem.\nLandscape canvas 1536 x 1024. Exactly THREE long, perfectly straight horizontal isolated pieces, centred in three evenly spaced rows. Each extends approximately x=90 to x=1446. Top row centre y=190, middle centre y=500, bottom centre y=810. Generous genuine transparent gaps around every piece, no dividing lines. All strips are evenly broad along their lengths and can be stretched horizontally by the interface.\nTOP: the side face of a book's page block, a long narrow rectangular strip about 120 px tall, hundreds of fine horizontal cream paper layers, subtly irregular but restrained and a little darkened by handling. Front-on orthographic view of the strip's face only, no top or perspective, no wedge.\nMIDDLE: the side face of its blue-teal leather-covered board, same length, about 62 px tall. Leather wraps evenly around the edge and is rubbed paler along the length. Match the reference's deep matte blue-teal and worn finish; no corner caps or emblem.\nBOTTOM: a long narrow deep-amber silk ribbon about 48 px wide, lying perfectly straight and horizontal. Straight-cut LEFT end and a small frayed V-notch at the RIGHT end. Subtle painted silk fibres, restrained sheen, no curls or waves.\nQuiet traditional oil/acrylic fantasy painting, believable materials and measured brushwork, not photorealism or a render. Flat even neutral lighting. Actual transparent RGBA background, no matte colour, checkerboard or external cast shadows. No table, book, text, letters, numbers, borders, logos or watermark. Every piece entirely within canvas.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-8d7e11d6-ee6c-4ba0-b14c-a949f82e77d0.png",
+      "references": [
+        "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-899b4751-1310-4ec3-bc64-9d7f6ed558f4.png"
+      ],
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/codex-strips.png",
+      "target_size": [
+        1536,
+        1024
+      ],
+      "source_sha256": "b6243410f4720a5a8cadde2819c8ef548cdadada54f83753ffa2c0afd00aba3c",
+      "export_sha256": "b6243410f4720a5a8cadde2819c8ef548cdadada54f83753ffa2c0afd00aba3c"
+    },
+    {
+      "code": "CB5",
+      "title": "Printer\u2019s ornaments",
+      "filename": "codex-ornaments.png",
+      "description": "Five sepia printer\u2019s ornaments accompany a blue wax seal: a device, headpiece, tailpiece, plate frame and drop-cap frame. The frames remain empty for the book\u2019s text and illustrations.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB5, six transparent book ornaments on one 1536 x 1024 sprite sheet for Breachline.\nExactly six SEPARATE pieces in two rows of three, one centred within each invisible 512 x 512 cell. Plenty of empty alpha-transparent space around every piece, no pieces touch cell or canvas edges. No dividing lines or labels. Paint ONLY the ornaments, not their paper or background.\nUse the attached emblem for exact identity: its almond/eye outline and central round pupil, surrounded by a circular ring with eight small radial ticks. This is the current Conclave insignia despite the historical 'lantern star' name. Do not invent a literal star replacing it.\nTOP LEFT: small printer's device, the referenced insignia drawn as fine dark-sepia engraved ink within a simple small leafy wreath or roundel. About 300 pixels wide.\nTOP MIDDLE: a restrained narrow horizontal fine-scrollwork headpiece, about 400 x 90 pixels, balanced and elegant.\nTOP RIGHT: a compact elegant closing tailpiece, about 220 x 100 pixels, little engraved flourishes.\nBOTTOM LEFT: an upright rectangular plate frame, about 370 x 360 pixels, two thin ruled outlines with one small elegant corner flourish at each corner. Its entire centre is empty transparent space, no paper or fill.\nBOTTOM MIDDLE: a small square drop-capital frame, about 230 x 230 pixels, delicate vines and tiny points around the perimeter with an entirely EMPTY transparent centre. No letter, initial or symbol in the centre.\nBOTTOM RIGHT: one deep blue-teal wax seal, about 225 pixels across, irregular pressed-wax edge and the referenced insignia embossed in the same blue wax. This sixth piece alone is painted in colour, quiet material detail, soft even neutral illumination. No external shadow.\nPieces 1 through 5 use exactly ONE dark sepia ink colour, #513b2a, with only edge transparency for antialiasing; no gold, white or cream highlight, no paper texture and no coloured fill. The engraving hand may feel drawn by a careful old press, crisp but not mechanically sterile. Piece 6 uses the same traditional oil/acrylic fantasy hand as the game's matte materials.\nReal RGBA transparency, including the open spaces between engraved marks and both frame centres. No backdrop, background haze, checkerboard, glow, cast shadow, text, letters, numbers, labels, watermark or signature. Elegant and restrained, not ornate.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-07d2ca7b-085b-4d0a-81c7-bf04306ec694.png",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/web/ui/emblem-U.png"
+      ],
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/codex-ornaments.png",
+      "target_size": [
+        1536,
+        1024
+      ],
+      "source_sha256": "5cfe7ad53cf5c62749007dfbafd30f5c54bf508a335332fc900f773b221f87d1",
+      "export_sha256": "5cfe7ad53cf5c62749007dfbafd30f5c54bf508a335332fc900f773b221f87d1"
+    },
+    {
+      "code": "CB6",
+      "title": "Landing dust",
+      "filename": "fx-book-dust.png",
+      "description": "Six stages follow dust escaping beneath the book, billowing, then thinning to almost nothing. This is an effect proposal for the landing and close; the game controls playback.",
+      "prompt": "Use case: stylized-concept.\nAsset type: CB6, transparent six-frame animated dust-puff sprite sheet for Breachline's heavy lore book landing.\nCreate a 1536 x 1024 RGBA image. EXACT invisible regular grid: three 512 x 512 frames across, two down. Each frame is independent and must fit entirely inside its own 512-square, with at least 25px transparent safety margin on all four sides. NO grid lines, labels or numbers.\nThis is an orthographic TOP-DOWN effect, NOT smoke viewed from the side. Imagine an unpainted straight book edge at local y=470 in each square: a fine horizontal baseline nearly along the bottom. Dust is pushed AWAY from that edge toward the TOP of each cell and sideways. Keep exactly that same source line and direction in all six frames. Do not draw the book, baseline, table, floor or shadow.\nFrame order left-to-right on upper row, then lower row:\n1 top-left: a very thin pale warm line of dust just escaping, around local x=160..350,y=440..470; tiny scattered ash flecks.\n2 top-middle: a compact shallow fan of dust lifting away from the same baseline toward y=340, widening modestly; air and gaps visible.\n3 top-right: peak billow, a broad delicate fan reaching y=220 and x=60..450, connected to the same bottom source; soft wisps and a few tiny ash particles.\n4 bottom-left: a wider thinner dispersed veil reaching y=140, no fresh dense emission; barely a trace left at the bottom source.\n5 bottom-middle: sparse drifting pale wisps and a few flecks across the upper-middle of the square, noticeably fading, much less opacity than frame 4.\n6 bottom-right: almost entirely EMPTY TRANSPARENT frame; only two or three extremely faint tiny motes high in the cell, nearly invisible.\nPale ivory/ochre dust caught in warm lamplight, quiet painterly texture with fine soft translucent edges and genuine varying alpha, never solid beige or dark smoke. No opaque cloud, flames, glitter, magic, explosion or luminous outline. Each stage is recognizably the same puff expanding and fading.\nOutside every wisp is completely zero-alpha transparent. No background haze filling the sheet, no cast shadow, checkerboard, paper, object, text or watermark. Animate the air, not a scenery painting.",
+      "source": "/Users/dpuser/.codex/generated_images/01a1d7d5-0528-7162-bf8a-a40b9a6198fb/exec-a412e047-97a7-49ae-9b22-6f41a88b9fe7.png",
+      "references": [],
+      "status": "generated; technical and visual review passed; creator approval pending",
+      "export_filename": "ready/fx-book-dust.png",
+      "target_size": [
+        1536,
+        1024
+      ],
+      "source_sha256": "91dd06f111b65ca66a50823abebb0428275774c610bb761b273f81dcb25e5635",
+      "export_sha256": "91dd06f111b65ca66a50823abebb0428275774c610bb761b273f81dcb25e5635"
+    }
+  ],
+  "review_status": "first pass complete; creator approval pending",
+  "gallery": "index.html",
+  "handoff": "HANDOFF.txt",
+  "validation": "validation.json",
+  "export_note": "CB1\u2013CB3: mechanical crop, resample and transparent canvas export align a common exact 3:4 face on a 1024x1536 canvas; source artwork preserved. CB4\u2013CB6 are byte-identical copies at the requested size. No new painted content created during export."
+}

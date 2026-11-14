@@ -14,7 +14,9 @@ var Sfx = (function () {
     'impact-fire': 'impact-fire.wav', 'impact-lightning': 'impact-lightning.wav', 'impact-genesis': 'impact-genesis.wav',
     enchant: 'enchant.wav', equip: 'equip.wav', curse: 'curse.wav', heal: 'heal.wav', 'hit-unit': 'hit-unit.wav', ward: 'ward.wav',
     'unit-move': 'unit-move.wav', 'end-turn': 'end-turn.wav', 'not-allowed': 'not-allowed.ogg',
-    'music-tower-inn': 'music-tower-inn.wav', 'music-kings-feast': 'music-kings-feast.wav'
+    'music-tower-inn': 'music-tower-inn.wav', 'music-kings-feast': 'music-kings-feast.wav',
+    'codex-whoosh': 'codex-whoosh.wav', 'codex-drop': 'codex-drop.wav', 'codex-open': 'codex-open.wav', 'codex-cover-land': 'codex-cover-land.wav',
+    'codex-page': 'codex-page.wav', 'codex-flutter': 'codex-flutter.wav', 'codex-close': 'codex-close.wav'
   };
   // A thrown spell's three stages each have an air layer every spell shares and, for most elements, a sound of its own.
   var ELEMENTS = ['fire', 'ice', 'lightning', 'vigil', 'gnosis', 'dominion', 'genesis'], STAGES = [];
@@ -40,7 +42,10 @@ var Sfx = (function () {
     // The spell stages were levelled alike on the sound board and sit at the impact's volume; the rushing air of a
     // flight stays under the element.
     'flight-air': { vol: .38 },
-    'impact-fire': { vol: .55 }, 'impact-lightning': { vol: .5 }, 'impact-genesis': { vol: .55 }
+    'impact-fire': { vol: .55 }, 'impact-lightning': { vol: .5 }, 'impact-genesis': { vol: .55 },
+    // The lore codex book. The files are levelled alike; these are starting points to tune by ear (CODEX_BOOK.md).
+    'codex-whoosh': { vol: .25 }, 'codex-drop': { vol: .75 }, 'codex-open': { vol: .6 }, 'codex-cover-land': { vol: .4 },
+    'codex-page': { vol: .5 }, 'codex-flutter': { vol: .5 }, 'codex-close': { vol: .7 }
   };
   // Fire, lightning and Genesis land with a blow under the spell's own sound; lightning's crackle comes just after the
   // strike.
@@ -71,34 +76,54 @@ var Sfx = (function () {
     return loading[name];
   }
   // A sound asked for again within gap ms is dropped, so a sweep across the hand doesn't stutter. o.fadeIn swells it in over
-  // that many seconds; o.fromEnd plays only the file's last seconds, so a sound that builds peaks when it stops.
+  // that many seconds; o.fromEnd plays only the file's last seconds, so a sound that builds peaks when it stops; o.from
+  // starts that many seconds in. It returns a voice whose fade(secs) quietens it to nothing, even before it has loaded.
+  var SILENT = { fade: function () {} };
   function play(name, o) {
     o = o || {};
-    if (muted || !FILES[name]) return;
+    if (muted || !FILES[name]) return SILENT;
     var now = Date.now(), gap = o.gap === undefined ? 40 : o.gap;
-    if (last[name] && now - last[name] < gap) return;
+    if (last[name] && now - last[name] < gap) return SILENT;
     last[name] = now;
     var c = context();
-    if (!c) return;
+    if (!c) return SILENT;
     if (c.state === 'suspended') c.resume();
+    var voice = { gain: null, src: null, gone: false, fade: function (secs) {
+      voice.gone = true;
+      if (!voice.gain) return;
+      var t = c.currentTime;
+      voice.gain.gain.cancelScheduledValues(t); voice.gain.gain.setValueAtTime(voice.gain.gain.value, t);
+      voice.gain.gain.linearRampToValueAtTime(0.0001, t + (secs || .08)); voice.src.stop(t + (secs || .08) + .02);
+    } };
     var go = function (buf) {
-      if (!buf || muted) return;
+      if (!buf || muted || voice.gone) return;
       var how = HOW[name] || {}, src = c.createBufferSource(), gain = c.createGain(), t = c.currentTime + (o.delay || 0);
       var vol = (how.vol || 1) * (o.vol === undefined ? 1 : o.vol), len = o.len || how.len;
       src.buffer = buf;
       src.playbackRate.value = (how.rate || 1) * (o.rate || 1);
-      var from = o.fromEnd ? Math.max(0, buf.duration - o.fromEnd) : 0;
+      var from = o.fromEnd ? Math.max(0, buf.duration - o.fromEnd) : Math.min(o.from || 0, buf.duration);
       if (o.fadeIn) { gain.gain.setValueAtTime(0.0001, t); gain.gain.linearRampToValueAtTime(vol, t + o.fadeIn); }
       else gain.gain.setValueAtTime(vol, t);
       if (len) { gain.gain.setValueAtTime(vol, t + len * .7); gain.gain.linearRampToValueAtTime(0.0001, t + len); }
       src.connect(gain).connect(c.destination);
       src.start(t, from);
       if (len) src.stop(t + len + .02);
+      voice.gain = gain; voice.src = src;
     };
     if (buffers[name]) go(buffers[name]);
     else { var p = load(name); if (p) p.then(go); }
     var layer = LAYERS[name];
     if (layer) play(layer[0], { delay: (o.delay || 0) + layer[1], vol: o.vol, gap: 0 });
+    return voice;
+  }
+  // Fetches sounds ahead of a moment that needs them on time, such as the codex book opening.
+  function preload(names) { if (!muted && context()) names.forEach(load); }
+  // Quietens the tavern music while something wants the room, such as reading the codex, and brings it back after.
+  function duck(on) {
+    if (!musicGain || !ctx) return;
+    var t = ctx.currentTime;
+    musicGain.gain.cancelScheduledValues(t); musicGain.gain.setValueAtTime(musicGain.gain.value, t);
+    musicGain.gain.linearRampToValueAtTime(on ? MUSIC_VOL * .5 : MUSIC_VOL, t + .8);
   }
   // Browsers only allow sound after a click, so the common sounds are fetched then.
   var warmed = false;
@@ -163,5 +188,5 @@ var Sfx = (function () {
     if (!muted) { warm(); music(); } else stopMusic();
     document.querySelectorAll('[data-sound]').forEach(function (b) { b.setAttribute('aria-pressed', muted ? 'false' : 'true'); b.title = muted ? 'Sound is off' : 'Sound is on'; });
   }
-  return { play: play, spell: spell, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
+  return { play: play, preload: preload, duck: duck, spell: spell, muted: function () { return muted; }, setMuted: setMuted, toggle: function () { setMuted(!muted); } };
 })();

@@ -1,0 +1,13 @@
+Use case: stylized-concept.
+Asset type: CB6, transparent six-frame animated dust-puff sprite sheet for Breachline's heavy lore book landing.
+Create a 1536 x 1024 RGBA image. EXACT invisible regular grid: three 512 x 512 frames across, two down. Each frame is independent and must fit entirely inside its own 512-square, with at least 25px transparent safety margin on all four sides. NO grid lines, labels or numbers.
+This is an orthographic TOP-DOWN effect, NOT smoke viewed from the side. Imagine an unpainted straight book edge at local y=470 in each square: a fine horizontal baseline nearly along the bottom. Dust is pushed AWAY from that edge toward the TOP of each cell and sideways. Keep exactly that same source line and direction in all six frames. Do not draw the book, baseline, table, floor or shadow.
+Frame order left-to-right on upper row, then lower row:
+1 top-left: a very thin pale warm line of dust just escaping, around local x=160..350,y=440..470; tiny scattered ash flecks.
+2 top-middle: a compact shallow fan of dust lifting away from the same baseline toward y=340, widening modestly; air and gaps visible.
+3 top-right: peak billow, a broad delicate fan reaching y=220 and x=60..450, connected to the same bottom source; soft wisps and a few tiny ash particles.
+4 bottom-left: a wider thinner dispersed veil reaching y=140, no fresh dense emission; barely a trace left at the bottom source.
+5 bottom-middle: sparse drifting pale wisps and a few flecks across the upper-middle of the square, noticeably fading, much less opacity than frame 4.
+6 bottom-right: almost entirely EMPTY TRANSPARENT frame; only two or three extremely faint tiny motes high in the cell, nearly invisible.
+Pale ivory/ochre dust caught in warm lamplight, quiet painterly texture with fine soft translucent edges and genuine varying alpha, never solid beige or dark smoke. No opaque cloud, flames, glitter, magic, explosion or luminous outline. Each stage is recognizably the same puff expanding and fading.
+Outside every wisp is completely zero-alpha transparent. No background haze filling the sheet, no cast shadow, checkerboard, paper, object, text or watermark. Animate the air, not a scenery painting.
