@@ -6,7 +6,10 @@ var CODEX_ENTRIES = {
   "art": null,
   "blocks": [
    {
-    "p": "I've tried to set down the world as it stands, a hundred and fifty years after the Cataclysm. Where people disagree, I've let them speak for themselves. Where I disagree, I've tried to say so plainly. I'm a scholar of the Lantern Conclave, and you should read accordingly."
+    "p": "This book is an attempt to set down the world as it stands, a hundred and fifty years after the Cataclysm, for readers who have not had the leisure to walk it. It is not complete. No book of its kind ever is, and the ones that claim to be are the least reliable on the shelf."
+   },
+   {
+    "p": "Where people disagree, and they generally do, I have let them speak for themselves. Where I disagree with them, I have tried to say so plainly. The reader should know that I am a scholar of the Lantern Conclave, and that the Conclave has opinions about almost everything. I have tried to keep mine in the margins. I have not always succeeded."
    },
    {
     "p": "— Edra Moyle, reader in histories, Ambrel"
@@ -23,10 +26,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "Every temple tells it the same way. The gods walked among us and built the world, and when the work was done they broke their own bodies to become its foundation. A few lesser gods stayed on."
+       "p": "Every temple in the world disagrees about the gods, except on how the world began. The gods walked among mortals, the story goes, raising the mountains and setting the rivers in their courses. When the work was finished they broke their own bodies to become its foundation, so that everything we stand on is, in some sense, a god. A few lesser gods chose to stay behind."
       },
       {
-       "p": "I can't confirm a word of it. But I've noticed that labourers in this city still stop and mutter something when their spades hit bedrock."
+       "p": "Scholars have no way to test the story, and most of us have stopped trying. It has left its mark on ordinary life all the same. In the lower wards of Ambrel, a labourer whose spade strikes bedrock will stop and say a word before he goes on, and a mason laying a foundation stone pours a cup of water over it first, the way you would offer a traveller a drink."
       },
       {
        "q": "\"Mind where you dig. That's somebody.\"",
@@ -40,10 +43,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "The Empire is the reason we have roads, and the reason for half the arguments we have on them. It was older than its own records. It took its orders from the gods, and by its own account it was kind. Its own account is most of what we have."
+       "p": "The Old Empire built the roads we still travel, the walls we still shelter behind, and a good many of the arguments we still have. It was older than its own records. Its rulers took their orders from the gods directly, and with the gods behind it there was very little it could not do. By its own account it was a gentle master. Its own account is most of what survives."
       },
       {
-       "p": "It needed the gods more than it knew. When they went quiet, it fell."
+       "p": "It is hard now to understand how completely it leaned on the gods. Imperial harvests were sown on a priest's word, imperial cities were sited by vision, and imperial law, as far as we can tell, was whatever the gods said it was that year. When they fell silent, it had nothing else to stand on."
       },
       {
        "q": "\"They had an answer for everything. They never wrote down the questions.\"",
@@ -57,10 +60,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "The decline took longer than anyone's life, so nobody saw it whole. What survives is complaints: late harvests, orders from the capital that contradicted last season's, priests who stopped agreeing with each other. Factions grew up around what the Empire ought to become."
+       "p": "The Empire did not fall all at once. It declined for longer than anyone lived, so no one ever saw the whole of it, and what survives is mostly complaint: harvests that came in late, orders from the capital that contradicted the last ones, temple dues that rose while the temples argued among themselves. Historians call this the Degeneration. The people who lived through it mostly called it the way things were."
       },
       {
-       "p": "You can hear the same arguments in any tavern in Ambrel today. They're only louder."
+       "p": "Factions grew up in those centuries around what the Empire ought to become, some wanting it purer, some freer and some gone. Every one of them is still with us. The arguments have hardly changed since. Only the people making them have."
       }
      ]
     },
@@ -70,14 +73,14 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "Everyone who wrote about it afterwards reached for the same picture: a rope pulled tight for an age, suddenly running out through the hands. Something let go. The gods stopped speaking, and the Empire came down almost at once."
+       "p": "No event in history is better known or less understood. Every account written in the years after it reaches for the same picture: a rope that had been pulled taut for an age, suddenly running out through the hands. Something let go. The gods stopped speaking, and within a season the Empire was gone."
       },
       {
-       "p": "Nobody knows why. The Vigil will tell you, politely, that it was us. We'll tell you, just as politely, that they have no evidence."
+       "p": "Nobody knows why, though there is no shortage of people willing to tell you. Every faith has its explanation, and every explanation has its villain, who is generally someone else."
       },
       {
        "q": "\"It didn't break. It pulled away. Nobody wants to hear the difference.\"",
-       "by": "a summoner of the hill country, who wouldn't give her name"
+       "by": "a summoner of the hill country, who would not give her name"
       }
      ]
     },
@@ -87,10 +90,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "The years after were short and bad. The roads went quiet, the granaries ran out, and towns that had never needed walls learned why other towns had them."
+       "p": "The years after the Cataclysm were short and terrible. The Empire had lived on the gods' word, and without it the granaries emptied, the roads went quiet and the great cities began to drain away. Towns that had never needed walls learned very quickly why other towns had them."
       },
       {
-       "p": "We call it the Silence because that's what people remember. They prayed, the way they always had, and nothing answered."
+       "p": "It is called the Silence because that is what people remembered. They went on praying, as they always had, and for the first time in memory nothing answered. Much of what we know of those years comes from temple daybooks, in which the priests set down each morning's prayers and each morning's silence, sometimes for decades, until the books simply stop."
       }
      ]
     },
@@ -100,10 +103,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "It has been about a hundred and fifty years. The new kingdoms mostly hold, and every one of them has a crack you could put your hand in. Nobody has decided who should rule or what the world is for, and everyone is sure someone else is about to."
+       "p": "A hundred and fifty years on, the world has largely recovered, and nobody is satisfied with the result. The new kingdoms hold, after a fashion. Each has a crack running through it that you could put your hand in, and each is quite sure the others are about to fall in theirs."
       },
       {
-       "p": "Most places keep to themselves. Walk two valleys over and the bread is different, the oaths are different, and someone will ask where you're from before they ask your name. Ambrel is the exception, and we are insufferable about it."
+       "p": "Most places keep to themselves. Walk two valleys over and the bread is different, the oaths are different, and someone will ask where you're from before they ask your name. Even the calendar will not agree. Ambrel counts its years from the founding of the university, the Vigil count them from the last year the gods spoke, and much of the countryside does not count them at all. Ambrel is the great exception to all of this, and we are insufferable about it."
       },
       {
        "q": "\"Hard times. Not the end of the world. Not yet.\"",
@@ -124,7 +127,7 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "Ask four people why the gods went quiet and you'll get five answers. These are the common ones."
+       "p": "Ask four people why the gods went quiet and you will get five answers. The common ones are these."
       },
       {
        "p": "<b>They're dead.</b> <i>\"We're only catching up.\"</i> — a barrow priest of the Gravebound"
@@ -139,7 +142,7 @@ var CODEX_ENTRIES = {
        "p": "<b>They're silent for our own good.</b> <i>\"If they spoke now, we'd only ask them for things.\"</i> — a pilgrim on the shrine road"
       },
       {
-       "p": "Some say the Velunn prove the gods were real. Others say the Velunn are just an old race with good stories about themselves."
+       "p": "Some say the Velunn prove the gods were real. Others say the Velunn are only an old race with a high opinion of themselves. The Velunn, for their part, have declined to settle the matter."
       }
      ]
     },
@@ -151,7 +154,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "Saints and devils, not gods. Most people will never meet one, and most who have would rather not again. Those who dislike them call them the Veli, or the Vels, and not quietly. The best known: - <b>Saint Maren of the Long Watch,</b> who heals, and who sits at doors she thinks should stay shut. - <b>Vashkar, Who Counts the Dead.</b> They say he's already counted you. - <b>Ilvane, Who Asks Twice.</b> Answer carefully the first time. - <b>Orrowen, Who Was Here First,</b> and never lets you forget it."
+       "p": "The Velunn are the lesser gods who stayed behind when the rest gave up their bodies, or so the temples teach. They are saints and devils rather than gods. Most people go their whole lives without meeting one, and most of those who have met one would call that a mercy. Those who dislike them call them the Veli, or the Vels, and do not trouble to lower their voices."
+      },
+      {
+       "p": "Each is known by name, and each name is a warning of a kind. - <b>Saint Maren of the Long Watch,</b> who heals, and who sits at doors she thinks should stay shut. - <b>Vashkar, Who Counts the Dead.</b> They say he's already counted you. - <b>Ilvane, Who Asks Twice.</b> Answer carefully the first time. - <b>Orrowen, Who Was Here First,</b> and never lets you forget it."
       },
       {
        "q": "\"She looked at me like she'd known my grandmother. She probably had.\"",
@@ -165,10 +171,10 @@ var CODEX_ENTRIES = {
      "art": null,
      "blocks": [
       {
-       "p": "Some people are born with a golden mark like an old scar: the goldmark, or the gilt scar, depending on where you grew up. They can't tell you why they have it, only that they're different. When a summoner calls, things answer that shouldn't, and come to fight at their side."
+       "p": "Since the Cataclysm, a few children in every generation have been born with a mark of gold on the skin, like an old scar that catches the light. In the south it is called the goldmark, and in the hill country the gilt scar. In some villages it is not called anything at all, and the child is simply watched. It runs in no particular family and favours no particular people."
       },
       {
-       "p": "Some wear the mark where you can see it. Most don't."
+       "p": "Those who carry it can call, and things answer: things that ought not to be there, which come and fight at the summoner's side and are gone afterwards. Ask a summoner how it is done and they will tell you, quite honestly, that they have no idea."
       },
       {
        "q": "\"It's like someone very far away is holding the other end.\"",
@@ -189,10 +195,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Vigil are earnest. They want the Empire back, gods and all, and they'll explain why over a very long dinner. Their healers are the best in the world, their knights keep oaths nobody else remembers, and their priests sit up every night with the lamps lit in case an answer comes. They're at home in old towns under old banners, and they like a world held together by promises."
+       "p": "The Vigil are the faithful of the old order, and they have kept faith for a hundred and fifty years without a word in reply. They want the Empire restored and the gods back in it. Their healers are the best in the world and their knights keep oaths everyone else has forgotten. Their children still learn their letters from imperial primers, so that a Vigil farm girl can recite the titles of emperors whose cities are now sheep pasture."
       },
       {
-       "p": "They've never quite forgiven us for the fall. We've never quite had the heart to tell them nobody's coming."
+       "p": "They are at home in old towns under old banners, and they are, almost without exception, kind. They have never quite forgiven the Conclave for the fall. We have never quite had the heart to tell them that nobody is coming."
       },
       {
        "q": "\"Set another place. Just in case.\"",
@@ -208,10 +214,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "That's us. I'll try to be fair. We think the world is something you can learn, and that the Empire stopped learning long before it fell. We'd rather build something new than dig up something old. We live in the cities, Ambrel above all, we argue all night, and we're usually right, eventually."
+       "p": "That is us, and I will try to be fair. The Gnosis hold that the world can be learned, as a language or a trade is learned, and that the Empire stopped learning long before it fell. We would rather build something new than dig up something old. We are a people of cities, Ambrel above all. We argue through the night, and we are usually right, eventually."
       },
       {
-       "p": "The others think we're reckless. Some of us are."
+       "p": "The others think us reckless. Some of us are. In the university's oldest hall the Conclave keeps a list of every scholar killed by their own work, and it is the custom for new students to read it aloud on their first day. It takes most of the morning."
       },
       {
        "q": "\"Ask the question. Then ask who told you not to.\"",
@@ -245,7 +251,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Fervor got their freedom out of the wreck of the Empire, and they're not giving it back. They live in bands, not kingdoms. They vote around fires, and they'll pull down any throne they find, including their own. They're loud, brave and impossible to govern, and good company until suddenly they aren't."
+       "p": "The Fervor found something worth keeping in the wreck of the Empire, and what they found was freedom. They mean to keep it. They live in bands and hosts rather than kingdoms, answer to no one they did not choose, and will pull down any throne they come across, including, on occasion, their own."
+      },
+      {
+       "p": "They are loud, brave, generous and impossible to govern, and the best company in the world until, quite suddenly, they are not. When a Fervor band takes a town, the first thing it burns is the tax roll. The second is usually the gallows."
       },
       {
        "q": "\"Sit anywhere. This table hasn't got a head.\"",
@@ -261,10 +270,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Genesis want the wild to grow back over the Empire, and over the rest of us if we're careless. They live in forest villages and in the trees, in small bands that move when the land tells them to. They think we'd strip the hills for brass, the Fervor would burn them, and the Vigil are praying to an empty room."
+       "p": "The Genesis want the wild to grow back over the Empire, and over the rest of us if we are careless. They live in forest villages and in the trees themselves, in small bands that move on when the land seems to ask it. They hold that the Conclave would strip the hills for brass, that the Fervor would burn them, and that the Vigil are praying to an empty room. On a bad day I find two of the three hard to argue with."
       },
       {
-       "p": "Most of them are good neighbours. A few are the reason my colleagues no longer survey the forest roads."
+       "p": "They plant a tree over each of their dead, so a Genesis village is easiest to find by its grove, which is always older and larger than the village. Most of them are good neighbours. A few are the reason my colleagues no longer survey the forest roads."
       },
       {
        "q": "\"Let the ground have him. It's owed.\"",
@@ -285,10 +294,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "If you've seen a lion folk in armour, you've seen the Oath at its best, and they'd like you to remember it. The Oath fights to bring back the Empire and keeps every oath the Empire ever swore, on behalf of people a hundred and fifty years dead. Most of its spears are carried by human militia from the old border towns."
+       "p": "If you have ever seen a lion folk knight in full armour, you have seen the Sunmane Oath at its best, and the Oath would very much like you to remember it. It fights to restore the Empire, and in the meantime it keeps every oath the Empire ever swore, on behalf of people a hundred and fifty years dead. Most of its spears, it should be said, are carried by human militia from the old border towns, who keep the oaths just as faithfully and get rather less of the credit."
       },
       {
-       "p": "Ask any of them about Sallow Bridge. Don't ask if you have somewhere to be."
+       "p": "Ask any of them about Sallow Bridge. Do not ask if you have somewhere to be."
       }
      ]
     },
@@ -300,7 +309,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Still Flame are the priests and healers who still pray to the silent gods and keep a lamp burning at every shrine. They'll heal anyone brought to them, and ask about your soul afterwards. Their pilgrims walk from shrine to shrine, and most villages feed them, half out of kindness and half to be safe."
+       "p": "The Still Flame are the priests and healers of the Vigil. They have prayed for a hundred and fifty years to gods who do not answer, and they show no sign of stopping. Every shrine they keep has a lamp burning in it. They will heal anyone who is brought to them, friend or enemy, and ask after the state of your soul only once you are well enough to answer."
+      },
+      {
+       "p": "Their pilgrims walk the shrine roads from the spring thaw to the first frost, and most villages along the way will feed them, half out of kindness and half to be safe."
       },
       {
        "q": "\"I have closed nine thousand wounds and heard no voice. I will close another tomorrow.\"",
@@ -316,7 +328,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "My own house. The Conclave are the scholars of magic, and Ambrel's university, which outlived the Empire, is our home. We send surveyors after anything the Empire left half-measured, and our examiners decide who gets to study, which makes us exactly as popular as you'd expect."
+       "p": "The Lantern Conclave is my own house, and the reader may discount what follows as they see fit. The Conclave are the scholars of magic, and their home is the university at Ambrel, the only great school of the Empire to survive its fall. Its examiners decide who may study there, which makes them exactly as popular as one would expect. Its surveyors go out after anything the Empire left half-measured, and as a rule they come back with more questions than they took."
+      },
+      {
+       "p": "Not all its students are scholars. Half the lamplighters in Ambrel learned their trade in its lower lecture halls. But its library holds more of the Empire than anywhere else in the world. A good deal of it has not been read since the Cataclysm, and some of it, the archivists suspect, has never been read at all."
       }
      ]
     },
@@ -352,7 +367,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Gravebound tend the barrows and want the long fall finished. Their villages keep the graves better than the houses. Mostly, they are very patient."
+       "p": "The Gravebound tend the barrows and want the long fall finished. They do not hurry it. They are the most patient people in this book, and they seem to regard the rest of us as people who have not yet understood how the story ends."
+      },
+      {
+       "p": "In Gravebound country the barrows are kept better than the houses. Every child is taught the way to the family mound before they are taught the way home, and at the end the old are walked there, to spare their families the trouble of carrying them."
       },
       {
        "q": "\"Lie down. It's easier.\"",
@@ -383,7 +401,10 @@ var CODEX_ENTRIES = {
      },
      "blocks": [
       {
-       "p": "The Cinder Clans choose their leaders at the fire and unchoose them at the next. Small bands, hot tempers, long memories. They hire out and they raid, and they vote on both."
+       "p": "The Cinder Clans are the free hosts of the Fervor: bands of a few hundred, each led by a chief it chose at the fire and can unchoose at the next. A chief of the Clans holds office exactly as long as the band agrees to follow, and a wise one eats last."
+      },
+      {
+       "p": "They hire out their swords to anyone who pays and raid anyone who doesn't, and they keep careful count of which is which. Each band keeps a knotted cord of its debts, one colour for what it owes and another for what it is owed. A Cinder band will forgive a debt of coin. It has never been known to forgive one of blood."
       }
      ]
     },
