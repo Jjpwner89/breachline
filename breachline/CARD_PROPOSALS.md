@@ -661,6 +661,22 @@ New rules these cards use:
 | 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
 | 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, for 2 turns | None: snare |
 
+### Creature cards, proposed 2026-11-14
+
+The creator picked these animals from the accepted collection on 2026-11-14. Paintings are briefed in [ART_BRIEFS_SET13.md](art/ART_BRIEFS_SET13.md). Stats are starting points for the usual paired balance check; none is in the game yet. The Ashborn kennel-hand, with Copper hounds, waits on who makes the hounds.
+
+| # | Card | Animal | Faction | Colour | Type | Cost | Wants | Stats | Rules | New code |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 216 | Vaultstalker | LG1-4 |  | G | Unit, uncommon | 3 | 1 | 3 / 3 | Ambush | None |
+| 217 | Needlehip | BP1-5 |  | G | Unit, common | 2 | 1 | 2 / 2 | Hunt | None |
+| 218 | Siltwright warriors | E6-A |  | G | Unit, common | 1 | 1 | 1 / 1 | Stand together | None |
+| 219 | Woodland breaker | G2-4 |  | G | Unit, rare | 5 | 2 | 4 / 6 | Overrun | None |
+| 220 | Fanback | MG6 |  | G | Unit, legendary | 6 | 2 | 4 / 7 | When summoned: put a land from your deck into your hand | Small: deck search |
+| 221 | Veilwing | MN2-5 | Lantern Conclave | U | Unit, rare | 5 | 2 | 3 / 5 | Flying. Harnessed for survey flights (creator, 2026-11-14) | None |
+| 222 | Host-bound | E5-B |  | B | Enchantment on an enemy unit, uncommon | 2 | 1 |  | That unit takes 1 damage at the start of each of its owner's turns | Small, if no enemy-enchant upkeep damage exists |
+| 223 | Gall season | ER2, E3-A |  | G | Enchantment, common | 2 | 1 |  | Your unit gains Grows | None |
+| 224 | Riverfolk specimen-keeper | ER5 | Lantern Conclave | U | Unit, common | 2 | 1 | 1 / 3 | Study | None |
+
 Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder scored about 1.8 over the common band at cost 5 whether it was 5/6, 5/5, 4/6 or 4/5, so the creator raised its cost to 6, which brings it into band (lift +0.2).
 
 Changed alongside them:
