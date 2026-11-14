@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-13",
+  "reviewer": "Codex",
+  "creator_approval": "pending",
+  "checks": {
+    "six_assets_present": true,
+    "requested_export_dimensions": true,
+    "RGBA_transparency": true,
+    "cover_inside_page_common_cutout": [
+      2,
+      88,
+      1020,
+      1360
+    ],
+    "flat_overhead_materials": true,
+    "blank_text_areas": true,
+    "reference_emblem_continuity": true,
+    "sprite_count_and_separation": true,
+    "dust_sequence_fades": true
+  },
+  "dust_frames": [
+    {
+      "frame": 1,
+      "visible_bounds": [
+        147,
+        459,
+        358,
+        489
+      ],
+      "alpha_mass": 1144
+    },
+    {
+      "frame": 2,
+      "visible_bounds": [
+        76,
+        347,
+        423,
+        490
+      ],
+      "alpha_mass": 11505
+    },
+    {
+      "frame": 3,
+      "visible_bounds": [
+        25,
+        211,
+        458,
+        490
+      ],
+      "alpha_mass": 42641
+    },
+    {
+      "frame": 4,
+      "visible_bounds": [
+        37,
+        150,
+        483,
+        456
+      ],
+      "alpha_mass": 11118
+    },
+    {
+      "frame": 5,
+      "visible_bounds": [
+        50,
+        157,
+        470,
+        448
+      ],
+      "alpha_mass": 787
+    },
+    {
+      "frame": 6,
+      "visible_bounds": [
+        370,
+        192,
+        383,
+        204
+      ],
+      "alpha_mass": 67
+    }
+  ],
+  "dust_measurement_note": "Bounds are cell-local x0,y0,x1,y1 at alpha > 8; all six have zero such pixels in their eight-pixel border. Very low alpha residuals are present in source transparency and are visually negligible.",
+  "visual_review": "Actual alpha composited onto light paper and dark ground. Verified quiet page, empty frame centres, consistent materials, readable sepia ornaments and contained dust frames. Reviewed normalized six-piece contact sheet."
+}

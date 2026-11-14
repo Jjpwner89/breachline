@@ -55,6 +55,7 @@ var Collection = (function () {
     var st = P.state(), tabs = [['cards', 'Cards'], ['packs', 'Packs'], ['record', 'Record'], ['save', 'Save and unlock']];
     var owned = P.allCards().filter(function (id) { return P.count(id) > 0; }).length;
     return '<header class="shead"><button type="button" class="btn" ' + act('menu') + '>Main menu</button><h1>Collection</h1>' +
+      '<button type="button" class="btn" ' + act('codex') + '>Lore codex</button>' +
       '<span class="wallet push">' + gold(st.gold) + shards(st.shards) + '</span></header>' +
       '<p class="hint">' + owned + ' of ' + P.allCards().length + ' cards owned' + (st.unlocked ? '. Everything is unlocked by password, so every deck can use any card.' : '.') + '</p>' +
       '<nav class="tabs" role="tablist">' + tabs.map(function (t) {
@@ -67,6 +68,8 @@ var Collection = (function () {
     if (tab === 'cards') GameUI.fitCards(K.root);
   }
   K.actions.collection = function (t) { if (t) tab = t; note = ''; focus = null; page(); };
+  // The lore codex is a book over the table (codex.js), with the collection waiting underneath.
+  K.actions.codex = function () { Codex.open(); };
 
   // Cards: every card, greyed where you have none, with crafting in the close-up.
 

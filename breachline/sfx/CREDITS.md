@@ -120,4 +120,18 @@ Picked on the campaign music board the same day. A campaign's own road, battle o
 | music-beautiful-forest | Beautiful Forest [Orchestra] (beautiful_forest_16bit_44.1khz.ogg) | nene | CC0 | The Green Return's road |
 | music-forest-whisper | Forest Whisper Theme (Forest Whisper.ogg, from forest_whisper_theme.zip) | Cleyton Kauffman | CC0 | The Green Return's battles |
 
+## Lore codex
+
+The book's sounds, picked on the codex sound board on 2026-11-13 from Freesound and Kenney, all CC0. The Freesound files are the site's high-quality previews. Each was trimmed to one take, faded and levelled, and converted to mono 16-bit WAV. Three are from Joao_Janz's *Book Foley Pack #1*, the same huge hardback opened, turned and closed.
+
+| File | Pack | Licence | Original file |
+|---|---|---|---|
+| codex-whoosh | Kenney - RPG Audio | CC0 | cloth1.ogg |
+| codex-drop | Valerie-Vivegnis (Freesound 836521) | CC0 | Book dropped on table |
+| codex-open | Joao_Janz - Book Foley Pack #1 (Freesound 553000) | CC0 | Huge_Thick_Hard_01_Open_02.wav |
+| codex-cover-land | Valenspire - Book & Paper Sounds (Freesound 699311) | CC0 | Book_Misc_06 |
+| codex-page | Joao_Janz - Book Foley Pack #1 (Freesound 552992) | CC0 | Huge_Thick_Hard_01_Turn_01.wav |
+| codex-flutter | jackthemurray (Freesound 429403) | CC0 | Flipping through a book |
+| codex-close | Joao_Janz - Book Foley Pack #1 (Freesound 552996) | CC0 | Huge_Thick_Hard_01_Close_02.wav |
+
 Every moment the game asks for now has a sound. Kenney's packs are by Kenney Vleugels (www.kenney.nl).
