@@ -38,7 +38,7 @@ Changes you asked for after that run, 2026-11-10:
 
 Sound should account for **at most one in eight Gnosis cards, preferably fewer**. Prefer other, more varied magical mechanisms. **Do not create additional sound-focused Gnosis cards until the total card roster reaches 250 cards across all alignments.** At 250, this temporary blocker expires: remove it from active planning restrictions, while retaining the one-in-eight ceiling and preference for fewer. Count distinct cards in the roster, not image files, variants or the highest proposal number. This concerns sound as a theme or magical mechanism; a rules keyword or name alone does not make a card sound-focused.
 
-Harmonic burst (#124) keeps its finalized suspended-bell painting. It is explicitly not a favorite or a model for further Gnosis cards. The temporary block does not revoke already accepted cards. See the [art direction](../.claude/skills/art-direction/SKILL.md#gnosis-sound-limit-and-harmonic-burst-final-creator-direction-2026-11-10).
+Stonewake (#124, first called Harmonic burst) uses the H2-R1 Stonewake painting since 2026-11-13: a Crest folk mason-mage heaving a short wave through a causeway's paving. The creator replaced the suspended-bell painting, whose freestanding bell didn't make sense, and the name changed with it. The rules didn't change.
 
 ## Rules decided while building
 
@@ -447,7 +447,7 @@ Proposed on 2026-11-10 from your notes, and approved the same day with the chang
 | 121 | Collect the tithe | Ashen Court | Spell | 6 | 2 | 3 damage to a unit or to the enemy summoner. If it hits the summoner, you gain 3 life |  | Small, after 118 |
 | 122 | Scatter the line | Cinder Clans | Instant | 3 | 1 | Aim at a row: each enemy in it takes 1 damage and is pushed 1 tile back toward its side | [Card art](art/scatter-the-line.png) | New: rows |
 | 123 | Pall of ash | Gravebound | Spell | 4 | 2 | Aim at a tile: 1 damage to every unit in the square around it, yours included, and those tiles are blighted for 2 turns. Square | | New: squares |
-| 124 | Harmonic burst | Lantern Conclave | Spell | 3 | 1 | Aim at a tile: 1 damage to every unit there and next to it, and each enemy hit is pushed 1 tile away from the centre. Cross | | Small |
+| 124 | Stonewake | Lantern Conclave | Spell | 3 | 1 | Aim at a tile: 1 damage to every unit there and next to it, and each enemy hit is pushed 1 tile away from the centre. Cross | | Small |
 | 125 | Line of dawn | Still Flame | Spell | 3 | 1 | Aim at a column: each enemy in it takes 1 damage, and each of your units in it recovers 2 health. Column | | Small |
 | 126 | Wildfire | Cinder Clans | Spell | 6 | 2 | Sweeper: 2 damage to every unit, yours included. Fireproof and Lit units are unhurt | | Small |
 | 127 | Hour of collection | Ashen Court | Spell | 5 | 2 | Sweeper: destroy every enemy unit with 3 or less health | [Card art](art/hour-of-collection.png) | Small |
@@ -464,7 +464,7 @@ Why each card is the way it is:
 - **Siphon vigor and Collect the tithe:** black's version, draining life from the summoner, as you suggested. At 4 and 6 mana they deal 0.5 damage per mana, below red's, since the life gain is worth something. Siphon vigor uses the finished painting with that name, whose suggested role was draining strength.
 - **Scatter the line:** a row of enemies knocked back, using the finished painting of that name. It answers a wide line of weak units without wiping it out.
 - **Pall of ash:** Dominion's square, hurting its own units too, as Dominion pays with its own side.
-- **Harmonic burst:** Gnosis's cross, pushing enemies apart. It's damage and disruption in one.
+- **Stonewake:** Gnosis's cross, pushing enemies apart. It's damage and disruption in one.
 - **Line of dawn:** white's column, which heals more than it harms, to suit Vigil's low damage.
 - **Wildfire:** a true sweeper. A fire deck whose units are Lit or Fireproof can cast it and keep its own board.
 - **Hour of collection:** a sweeper that clears every small enemy unit at once. It's the natural counter to flooding the board, and does nothing against tough units.
@@ -616,3 +616,47 @@ Why each card is the way it is:
 - **Emberward and the Salamander-hide mantle:** Fireproof from an enchantment and from equipment, alongside lighting spells and innate Fireproof. Both are cheap, so a fire deck pays a card and a little mana to keep a unit safe from its own all-units fire.
 - **Neutral constructs (178–180) and the Ossuary engine:** the construct batch, mostly neutral as you said, with one Dominion construct.
 - **Buckling recruit:** a neutral Armed unit, painted mid-buckle.
+
+## Cards for the new peoples, 2026-11-13
+
+Proposed and reviewed with the creator on 2026-11-13, not built yet. They bring the new peoples from `SETTING.md` into the game. The Kitefolk were cut from the game the same day, so none of these use them. A card's people shows on its type line, as "Unit, Alderkin" does now, so most names leave the people out. Art briefs are in `art/ART_BRIEFS_SET12.md`. Before the balance checks the creator lowered several costs and adjusted the cards most likely to be out of line (2026-11-13): the conscript, Tithe-drinker, Caravan head, Guild improver, Tide-healer, signaller, Moor guide, the moor spell and Charter-maker. The Sluice diver swaps only with your own units, and the Tide-healer heals less, so it isn't simply a better Still Flame chaplain.
+
+New rules these cards use:
+
+- **Flare** (Glimmerfolk): +1 attack this turn whenever you cast a spell. Their glimmers flare when they cast.
+- **Ledgered:** when it dies, you draw a card. Only the lesser Ashborn get it for now. The creator wants to keep it in mind for later Dominion cards.
+- **Blank:** it can't attack unless another of your units is next to it. The creator likes keeping a unit beside the Ambrel lampwright, and wants this tested. It probably needs strong stats, and the bot will need teaching to keep a unit next to it.
+- **The moor keeps its own** uses the lightning strike's animation coloured green, over the same square highlight as Thornbrake, without the thorn shot.
+
+| # | Card | People | Faction | Colour | Type | Cost | Wants | Stats | Rules | New code |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 192 | Conclave student | Glimmerfolk | Lantern Conclave | U | Unit | 2 | 1 | 1 / 3 | Ranged. Flare | Flare |
+| 193 | Undercity edge-warden | Glimmerfolk |  | U | Unit | 4 | 2 | 3 / 4 | Overwatch | None |
+| 194 | Undercity signaller | Glimmerfolk |  | U | Unit | 2 | 1 | 1 / 3 | Ability: an ally within 3 tiles moves 1 tile | Small: Carry at range |
+| 195 | Peat-cutter | Moor folk |  | G | Unit | 2 | 1 | 2 / 3 | None | None |
+| 196 | Moor guide | Moor folk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: an ally next to it can move 1 extra tile on its next turn | Small |
+| 197 | The moor keeps its own | Moor folk | Thornwardens | G | Spell | 2 | 1 |  | Aim at a 2 × 2 square: enemy units there can't move on their next turn | Small: green lightning effect |
+| 198 | Moot elder | Moor folk |  | G | Unit | 5 | 2 | 5 / 6 | None; flavour text only | None |
+| 199 | Doomed conscript | Ashborn | Ashen Court | B | Unit | 2 | 1 | 1 / 2 | Ledgered | Ledgered |
+| 200 | Husk | Ashborn | Ashen Court | B | Unit | 3 | 1 | 4 / 4 to start | Blank | Blank, and bot support |
+| 201 | Tithe-drinker | Ashborn | Ashen Court | B | Unit | 4 | 2 | 3 / 5 | Ability: destroy an adjacent ally. This unit permanently gets +2 attack and +2 health | Small: Harvest with health |
+| 202 | Salt-road caravaneer | Banded folk, salt | Cinder Clans | R | Unit | 3 | 1 | 3 / 4 | Steadfast | None |
+| 203 | Floodplain farmer | Banded folk, silt |  | G | Unit | 3 | 1 | 2 / 5 | Steadfast | None |
+| 204 | Caravan head | Banded folk | Cinder Clans | R | Unit | 5 | 2 | 5 / 6 | Ability: adjacent allies get +1 attack this turn | None |
+| 205 | Caravan guard | Banded folk |  | N | Unit | 3 | 0 | 2 / 5 | Guard | None |
+| 206 | Sallow Bridge mason | Crest folk | Sunmane Oath | W | Unit | 3 | 1 | 2 / 4 | Ability: a tile next to it becomes consecrated ground for 3 turns | Small |
+| 207 | Guild improver | Crest folk | Artificers | U | Unit | 3 | 1 | 1 / 4 | When summoned: an ally next to it permanently gets +2 health | Small |
+| 208 | Master mason | Crest folk | Sunmane Oath | W | Unit | 5 | 2 | 4 / 6 | Guard | None |
+| 209 | Ferry-keeper | Greyhides |  | G | Unit | 4 | 2 | 3 / 5 | Ability: move an ally next to it 1 tile | None: Carry |
+| 210 | Longhouse keeper | Greyhides |  | G | Unit | 5 | 2 | 4 / 7 | None | None |
+| 211 | Tide-healer | Greyhides | Still Flame | W | Unit | 3 | 1 | 2 / 4 | Ability: heal an ally within 2 tiles by 1 | None |
+| 212 | Longhouse hospitality | Greyhides |  | W | Spell | 2 | 1 |  | Heal each of your units 2. The enemy summoner also heals 2 | Small |
+| 213 | Sluice diver | Riverfolk |  | U | Unit | 2 | 1 | 1 / 3 | Ability: swap places with one of your units next to it | Small |
+| 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 1 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
+| 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 2 | Ability: put a snare on an empty tile next to it, for 2 turns | None: snare |
+
+Changed alongside them:
+
+- **Grove tender:** its pay-1 ability, usable every turn, becomes "When summoned: an ally next to it permanently gets +1 attack and +1 health", and it costs 3 instead of 4 with a 1/2 body. The creator found the repeat too strong, since it can grow one unit every turn. In the balance check (2026-11-13), +2/+2 stayed about 4 points over the uncommon band whatever its body, so the creator chose +1/+1 on a 1/2 (lift +0.8). The Guild improver likewise became a 1/4 giving +2 health (lift −0.5), down from a 2/4 giving +3.
+
+Left out on purpose: the Kitefolk, which were cut; Stonehorn, the least-liked design; Tidevault, which needs a smaller design first; and Spindlejack and Dawnsail, which stay out of combat. The Roof glider has no card yet, and its rules are still open.

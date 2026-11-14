@@ -13,7 +13,8 @@ When an idea is built, delete it from this list.
 - **Cycling.** Pay 1 and discard the card to draw a new one. It smooths out 40-card decks and is cheap to build.
 - **Face-down units, like Morph.** Summon a unit as a hidden 2 / 2 and flip it later for its cost. Bluffing suits play against a person; the bot would need teaching.
 - **Venom on more cards.** Venom is in the game on the Court assassin. On a cheap common it tested far too strong (+4.9 on a 1-mana Barrow rats), so further Venom cards should be uncommon or above, or have low health.
-- **Overwatch on more cards.** It's in the game on the Focus-rifle marksman, Thornwarden goblin scout and Shutter-window assassin. The creator ruled it out for the Militia spearman.
+- **Overwatch on more cards.** It's in the game on the Focus-rifle marksman, Thornwarden goblin scout and Shutter-window assassin. The creator ruled it out for the Militia spearman. The Undercity edge-warden (#193) is proposed as its fourth card.
+- **Ledgered on more Dominion cards.** When the unit dies, you draw a card. It's proposed on the Doomed conscript (#199), a lesser Ashborn. The creator wants it kept in mind for later Dominion cards, but the current set doesn't need more.
 
 ## Board and gameplay
 

@@ -72,7 +72,7 @@
     marksman: 'focus-rifle-marksman', whitemorning: 'white-morning', hostess: 'hostess-of-the-late-hour', springmelt: 'spring-melt',
     firebrand: 'cinder-firebrand', rimecaller: 'conclave-rimecaller', vow: 'vow-of-keeping', ledger: 'ledger-of-debts', hurledbrand: 'hurled-brand', heldmoments: 'held-between-moments',
     shutterassassin: 'shutter-window-assassin', temptress: 'gilt-hall-temptress', alderelder: 'alderkin-elder', recruit: 'buckling-recruit', ashsweeper: 'still-flame-ash-sweeper', emberward: 'emberward',
-    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'harmonic-burst', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
+    firecaller: 'untaught-firecaller', skyfalls: 'the-sky-falls-in', tithe: 'collect-the-tithe', harmonic: 'stonewake', lineofdawn: 'line-of-dawn', penitent: 'hearth-sworn-penitent',
     fieldplate: 'field-plate-artificer', mortuary: 'mortuary-priest', lynx: 'halfshade-lynx', stag: 'elderwood-stag', rusthinged: 'rust-hinged-warden', salmantle: 'salamander-hide-mantle',
     pallofash: 'pall-of-ash', wildfire: 'wildfire', bought: 'bought-allegiance', leaden: 'leaden-step', vowkeeper: 'vowkeeper-of-the-long-road', glimmer: 'glimmer-double',
     gallows: 'lots-for-the-gallows', anoint: 'anoint-with-embers', earthspeaker: 'earthspeaker', tortoise: 'shell-mountain-tortoise', hound: 'copper-hound',
@@ -83,7 +83,9 @@
     prism: 'prism-bracer', courier: 'conclave-courier', unmake: 'unmake-the-pattern', informant: 'court-informant', bailiff: 'ashen-court-bailiff', tender: 'barrow-tender',
     mourningveil: 'mourning-veil', cinderhook: 'cinderhook-axe', clanoutrider: 'clan-outrider', shatter: 'shatter-the-chain', pathguard: 'thornwarden-pathguard',
     canopy: 'sudden-canopy', returnloam: 'return-to-loam',
-    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel'
+    oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel',
+    student: 'quiet-unfastening', edgewarden: 'undercity-edge-warden', signaller: 'undercity-signaller', peatcutter: 'peat-cutter', moorguide: 'moor-guide', moorkeeps: 'the-moor-keeps-its-own', mootelder: 'moot-elder', conscript: 'veyr-recalled', husk: 'husk', tithedrinker: 'tithe-drinker', caravaneer: 'salt-road-caravaneer', floodfarmer: 'floodplain-farmer',
+    caravanhead: 'caravan-head', caravanguard: 'caravan-guard', bridgemason: 'sallow-bridge-mason', improver: 'guild-improver', mastermason: 'master-mason', ferrykeeper: 'ferry-keeper', longhouse: 'longhouse-keeper', tidehealer: 'tide-healer', hospitality: 'longhouse-hospitality', sluicediver: 'under-the-gate', chartermaker: 'the-sounding', eelnetter: 'eel-netter'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -359,6 +361,7 @@
       if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
       if (u.stride && u.owner === S.active) notes.push('+' + u.stride + ' move');
       if (u.held >= S.turn) states.push('Held');
+      if (u.mired >= S.turn) states.push('Mired');
       if (u.frozen >= S.turn) states.push('Frozen');
       if (u.veiled) states.push('Veiled');
       if (u.watching) states.push('Watching');
@@ -396,8 +399,8 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching'],
-    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Restrained', 'Between moments'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching', 'Flare', 'Blank'],
+    u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Mired', 'Restrained', 'Between moments'],
     g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
   };
   function shieldKind(t) {
@@ -687,7 +690,7 @@
         var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
         if (c.type === 'instant') hint = instantHint(c, sm);
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
-        else if (place) hint = sel.summonAt ? 'Choose an enemy unit for it to hit.' : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
+        else if (place) hint = sel.summonAt ? (c.boon ? 'Choose one of your units next to it.' : 'Choose an enemy unit for it to hit.') : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c, inst) > you.mana) hint = 'Not enough mana to play this now.';
         else if (c.type === 'relic') hint = 'Put this relic into play beside you.';

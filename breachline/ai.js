@@ -67,6 +67,8 @@ var AI = (function () {
     else if (u.owner === v.active && u.moved) bits.push('has moved');
     if (u.held >= v.turn) bits.push("held: can't move or attack " + (u.held === v.turn ? 'this turn' : 'on its next turn'));
     if (u.frozen >= v.turn) bits.push("frozen: can't move " + (u.frozen === v.turn ? 'this turn' : 'on its next turn'));
+    if (u.mired >= v.turn) bits.push("mired: can't move " + (u.mired === v.turn ? 'this turn' : 'on its next turn') + ', but can attack');
+    if (u.guided > v.turn) bits.push('can move 1 extra tile on its next turn');
     if (u.veiled) bits.push("veiled: enemies can't attack or target it until it attacks");
     if (u.watching) bits.push('watching: strikes the first enemy to end a move within its reach this turn');
     if (u.carrion) bits.push('Carrion: +' + u.carrion + ' attack so far');
