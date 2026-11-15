@@ -64,6 +64,8 @@ With the rats, spearman and trapper back to normal and the Court assassin at 2 /
 
 Older theme decks that use the changed cards, from 1,400 games each: Long sights 49%, The Thornwardens 47%, and The court's favour 49% once the Shutter-window assassin became 3 mana and 3 / 3 (44% before that).
 
+The Thornwardens took two Vaultstalkers in place of two Thornwarden goblin scouts on 2026-11-14: 47% to 53% over 1,400 games. The Fanback was tried in Rootfed herd too, but took it from 52% to 57%, so it stayed out.
+
 ## Where they stood before the picks
 
 All six are now between 48% and 54%. Over the wall ended up mono red, and Funeral procession mono black. Both lost their second colour to the mana cost, and their themes come from the red fliers and the black dying-pays-off units.

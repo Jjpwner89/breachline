@@ -1,8 +1,9 @@
 // Merges quickcheck.js results and prints the report. Run by tools/check.sh after engine.js and rarity.js;
 // the result files are the script's arguments.
 // The bands are where most cards of each rarity land, refitted on the 40-card audit of 2026-11-11 (150,000 games).
-// They are provisional: the creator is still deciding how much better each rarity should be.
-var BANDS = { c: [-1.5, 0.5], u: [-1, 1], r: [-0.5, 2], l: [1, 3.5] };
+// They are provisional: the creator is still deciding how much better each rarity should be. On 2026-11-15 the creator
+// raised the legendary band from +1 to +3.5 to +2 to +5, so legendaries clearly beat rares.
+var BANDS = { c: [-1.5, 0.5], u: [-1, 1], r: [-0.5, 2], l: [2, 5] };
 // Paired games read larger than the audit's lift, because nothing else differs between the two decks. Calibrated on
 // seven cards from the Elder dragon to Illusory decoy at 40 cards (2026-11-11); lifts print on the audit's scale.
 var SCALE = 0.65;

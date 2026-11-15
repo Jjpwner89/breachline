@@ -10,6 +10,22 @@ var Bot = (function () {
     return 25 * s.units.filter(function (o) { return o.owner === t.owner && (o === t || dist(o, t) === 1) && E.hasKw(o, 'Devotion') && (o.devotion || 0) < 3; }).length;
   }
   function unitAt(s, r, c) { return s.units.filter(function (u) { return u.r === r && u.c === c; })[0] || null; }
+  // Own units that can attack this turn and would reach a fight or the enemy back row only with one extra tile.
+  function strideGain(s, pi) {
+    var foe = 1 - pi, n = 0;
+    s.units.forEach(function (a) {
+      if (a.owner !== pi || a.summonedTurn === s.turn || a.acted || a.moved || a.noAttack) return;
+      var sp = E.speed(a), rg = E.range(a), near = 99;
+      s.units.forEach(function (e) { if (e.owner === foe) near = Math.min(near, dist(a, e) - rg); });
+      near = Math.min(near, Math.abs(a.r - E.backRow(foe)));
+      if (near > sp && near <= sp + 1) n++;
+    });
+    return n;
+  }
+  // Own units able to attack t this turn.
+  function attackersOn(s, pi, t) {
+    return s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.acted && !a.noAttack && dist(a, t) <= E.range(a) + (a.moved ? 0 : E.speed(a)); });
+  }
   function hurtScore(t, amt) { return amt >= t.hp ? worth(t) + 30 : worth(t) * amt / t.maxHp; }
 
   // What a spell aimed at a tile is worth: damage to enemies, minus damage to its own side, plus the effect left behind.
@@ -114,8 +130,41 @@ var Bot = (function () {
     return score + 10;
   }
 
+  // Arrival effects worth replaying when a unit is recalled.
+  function arrival(c) { return c.drawOnSummon || c.adds || c.scry || c.zap || c.boon || c.summons || c.fetchLand || c.ransack || c.reap ? 1 : 0; }
+  function mechanicScore(s, m, pi, p, foe) {
+    var c = E.CARDS[handCard(p, m.card).c], v, k;
+    if (c.type === 'stratagem' && m.type === 'cast') { var fx = c.stratagem.fx; return 45 + (fx.hit || 0) * 12 + (fx.freeze ? 25 : 0) + (fx.draw || 0) * 22 + (fx.mend || 0) * 8; }
+    var bare = {}; for (k in m) if (['empower', 'surge', 'offer'].indexOf(k) < 0) bare[k] = m[k];
+    if (c.recall && m.type === 'cast') {
+      var t = unitById(s, m.target), ups = (t.boost || 0) + (t.growth || 0) + (t.carrion || 0) + (t.seasoned || 0) + t.enchants.length * 2 + (t.maxHp - E.CARDS[t.cardId].hp > 0 ? 1 : 0);
+      if (t.owner === foe) return worth(t) * 0.45 + ups * 15 + (doomed(s, t) ? -20 : 0) >= 45 ? worth(t) * 0.45 + ups * 15 : -1;
+      return doomed(s, t) && worth(t) >= 65 ? worth(t) / 2 + arrival(E.CARDS[t.cardId]) * 25 : -1;
+    }
+    if (m.empower || m.surge !== undefined) {
+      var keep = E.CARDS[c.id]; if (c.type !== 'unit') E.CARDS[c.id] = E.effCard(c, m);
+      try { v = score(s, bare); } finally { E.CARDS[c.id] = keep; }
+      if (v <= 0) return v;
+      if (m.empower) v += c.type === 'unit' ? ((c.empower.fx.atk || c.atk) - c.atk + (c.empower.fx.hp || c.hp) - c.hp) * 12 - c.empower.extra * 4 : 15 - c.empower.extra * 4;
+      if (m.surge !== undefined) v += c.type === 'unit' ? (((c.surge.per || {}).atk || 0) + ((c.surge.per || {}).hp || 0)) * m.surge * 9 - m.surge * 4 : -m.surge * 5;
+      return v;
+    }
+    if (c.regrow && !m.noRegrow) {
+      // Returning cards from the discard pile: worth about half of the best ones it would bring back.
+      var rg = c.regrow, gain = p.discard.filter(function (d) { var dt = E.CARDS[d.c].type; return dt !== 'land' && (!rg.type || dt === rg.type); })
+        .map(function (d) { return cardValue(s, p, d.c); }).sort(function (a, b) { return b - a; }).slice(0, rg.n || 1).reduce(function (n, x) { return n + x; }, 0) / 2;
+      if (m.type === 'cast') return gain > 0 ? 20 + gain : -1;
+      bare.noRegrow = true; v = score(s, bare);
+      return v <= 0 ? v : v + gain;
+    }
+    v = score(s, bare);
+    if (v <= 0) return v;
+    if (m.offer !== undefined) { var o = unitById(s, m.offer); v += -worth(o) - 10 + Math.min(E.CARDS[o.cardId].cost, c.cost - 1) * 12 + (doomed(s, o) ? worth(o) / 2 : 0); }
+    return v;
+  }
   function score(s, m) {
     var pi = s.pending ? s.pending.responder : s.active, p = s.players[pi], foe = 1 - pi, c, u, t;
+    if (m.card !== undefined && (m.empower || m.surge !== undefined || m.offer !== undefined || (!m.noRegrow && (m.type === 'summon' || m.type === 'cast') && E.CARDS[handCard(p, m.card).c].regrow) || (m.type === 'cast' && (E.CARDS[handCard(p, m.card).c].type === 'stratagem' || E.CARDS[handCard(p, m.card).c].recall)))) return mechanicScore(s, m, pi, p, foe);
     switch (m.type) {
       case 'pass': case 'endTurn': return 0;
       case 'toCommand': return 1;
@@ -123,7 +172,8 @@ var Bot = (function () {
       case 'redraw': return 0;
       case 'keepHand':
         var landCount = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
-        return landCount === 0 || landCount === p.hand.length ? -1 : 1;
+        // Redraw a hand with one land or none, as the creator does; after the last redraw keeping is the only move.
+        return landCount <= 1 || landCount === p.hand.length ? -1 : 1;
       case 'bottomCard':
         c = E.CARDS[handCard(p, m.card).c];
         var lands = p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length;
@@ -161,6 +211,11 @@ var Bot = (function () {
         if (c.type === 'spell' && s.phase === 'play' && !m.noFlare) {
           var flares = s.units.filter(function (a) { return a.owner === pi && E.hasKw(a, 'Flare') && a.summonedTurn !== s.turn && !a.acted; }).length;
           if (flares) { var base = score(s, withoutFlare(m)); return base > 0 ? base + flares * 6 : base; }
+        }
+        if (c.type === 'spell' && s.phase === 'play' && !m.noCad && !(s.castTurn && s.castTurn[pi] === s.turn)) {
+          var left = p.mana - E.costOf(s, pi, c, handCard(p, m.card));
+          var cad = p.hand.some(function (h) { var hc = E.CARDS[h.c]; return h.id !== m.card && hc.cadence && E.costOf(s, pi, hc, h) > left && E.costOf(s, pi, hc, h) - hc.cadence <= left; });
+          if (cad) { var cb = {}; for (var ck in m) cb[ck] = m[ck]; cb.noCad = true; var cv = score(s, cb); return cv > 0 ? cv + 35 : cv; }
         }
         // On its own turn the bot casts an instant only for a clear gain, since it could wait for the enemy turn.
         if (c.type === 'instant') return instantScore(s, pi, c, m, null);
@@ -204,11 +259,15 @@ var Bot = (function () {
           t = unitById(s, m.target);
           return s.units.some(function (e) { return e.owner === foe && dist(e, t) <= 2; }) ? 30 + worth(t) / 10 + ((c.lightAtk || 0) + (c.lightHp || 0)) * 12 : -1;
         }
+        // Return to loam with nothing to destroy is a land-finding draw.
+        if (c.loam && !m.target) return p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length < 2 && p.lands.length < 7 ? 25 : -1;
         if (c.unchain || c.loam) {
           t = unitById(s, m.target);
           var piece = t.enchants.length ? E.CARDS[t.enchants[t.enchants.length - 1].c] : null;
           if (c.loam) for (var g = t.enchants.length - 1; g >= 0; g--) if (E.CARDS[t.enchants[g].c].equipment) { piece = E.CARDS[t.enchants[g].c]; break; }
           var harmful = piece && (piece.enemyOnly || piece.atkBonus < 0);
+          var landNow = c.loam && p.hand.filter(function (i) { return E.CARDS[i.c].type === 'land'; }).length < 2 && p.lands.length < 7 ? 20 : 0;
+          if (landNow && !(t.owner === pi && !harmful)) return (t.owner === pi ? 40 + worth(t) / 5 : 30 + worth(t) / 5) + landNow;
           if (t.owner === pi) return harmful ? 40 + worth(t) / 5 : -100;
           if (c.unchainAny && t.hp <= c.unchain) return worth(t) + 30;
           // With nothing to remove, an always-playable Shatter is a small burn spell.
@@ -243,6 +302,9 @@ var Bot = (function () {
         if (c.hospitality) {
           var mended = 0;
           s.units.forEach(function (a) { if (a.owner === pi) mended += Math.min(c.hospitality, a.maxHp - a.hp) * 9 + (a.hp <= 2 && a.maxHp > a.hp ? 10 : 0); });
+          s.units.forEach(function (a) { if (a.owner === pi && a.hp < a.maxHp && doomed(s, a)) mended += 20; });
+          mended -= (c.guest != null ? c.guest : c.hospitality) * 6;
+          mended += Math.min(c.hostLife || 0, 15 - p.life) * 6;
           return mended >= 30 ? mended - 5 : -1;
         }
         if (c.fortify) {
@@ -261,6 +323,7 @@ var Bot = (function () {
           p.hand.forEach(function (h) { var hc = E.CARDS[h.c], hcost = E.costOf(s, pi, hc); if (hc.type !== 'land' && hcost > p.lands.length + 1 && hcost <= next) big = Math.max(big, hcost); });
           return big ? 70 + big * 15 : -1;
         }
+        if (c.stride) { var sg = strideGain(s, pi); return sg >= 2 ? 30 + sg * 25 : -1; }
         if (c.stride) {
           var ready = s.units.filter(function (a) { return a.owner === pi && a.summonedTurn !== s.turn && !a.moved; }).length;
           return ready >= 3 ? 20 + ready * 12 : -1;
@@ -290,7 +353,18 @@ var Bot = (function () {
       case 'enchant':
         c = E.CARDS[handCard(p, m.card).c]; t = unitById(s, m.target);
         if (c.allyOnly) return 40 + worth(t) / 5 + (c.castDraw ? 20 : 0);
+        if (c.hunted) {
+          if (t.owner !== foe) return -100;
+          var hs = attackersOn(s, pi, t), sum = hs.reduce(function (n, a) { return n + E.attackOf(s, a); }, 0);
+          if (hs.length && sum < t.hp && sum + hs.length >= t.hp) return worth(t) + 30;
+          return hs.length >= 2 && worth(t) >= 65 ? 30 + worth(t) / 5 : -100;
+        }
         if (c.hunted) return t.owner === foe && worth(t) >= 65 ? 30 + worth(t) / 5 : -100;
+        // Host-bound pays off over turns, so it goes on a sturdy enemy that will be around, or finishes one about to fall.
+        if (c.parasite) {
+          if (t.owner !== foe) return -100;
+          return t.hp <= c.parasite ? worth(t) + 20 : 25 + worth(t) / 5 + Math.min(t.hp, 5) * 3;
+        }
         if (c.warrant) return t.owner === foe && worth(t) >= 50 ? 40 + worth(t) + E.attackOf(s, t) * 5 : -100;
         if (c.atkBonus < 0 && t.owner === foe) {
           var saves = threat(s, pi, t, -c.atkBonus);
@@ -394,7 +468,7 @@ var Bot = (function () {
         }
         if (key === 'charm') return 40 + worth(unitById(s, m.target));
         if (key === 'sap') { t = unitById(s, m.target); return E.attackOf(s, t) >= 3 ? 15 + E.attackOf(s, t) * 4 : -1; }
-        if (key === 'reed') return p.hand.some(function (h) { return E.CARDS[h.c].type === 'land'; }) && p.lands.length < 7 ? 45 : -1;
+        if (key === 'reed') return p.hand.filter(function (h) { return E.CARDS[h.c].type === 'land'; }).length < 2 && p.lands.length < 8 ? 45 : -1;
         if (key === 'swap') {
           // Swap a strong ally forward when that brings it closer to the enemy back row.
           t = unitById(s, m.target);
@@ -444,6 +518,7 @@ var Bot = (function () {
         if (rk === 'bellgrow') { t = unitById(s, m.target); return 35 + E.attackOf(s, t) * 2 + worth(t) / 10 + (t.summonedTurn !== s.turn && !t.acted ? 10 : 0); }
         if (rk === 'pick') return 50;
         if (rk === 'scry') return 40;
+        if (rk === 'drum') { var dg = strideGain(s, pi); return (s.phase === 'command' || s.free) && dg >= 1 ? 25 + dg * 20 : -1; }
         if (rk === 'drum') return (s.phase === 'command' || s.free) && fresh.filter(function (a) { return !a.moved; }).length >= 3 ? 25 : -1;
         if (rk === 'tide') return s.phase === 'play' && p.hand.some(function (h) { var hc = E.CARDS[h.c], cost = E.costOf(s, pi, hc, h); return hc.type !== 'land' && cost > p.mana && cost <= p.mana + rel.store; }) ? 80 : -1;
         if (rk === 'seed') return rel.store >= 2 ? 30 + rel.store * 10 + worth(unitById(s, m.target)) / 10 : -1;
@@ -517,7 +592,7 @@ var Bot = (function () {
       // A curse on a unit counts against its owner, and a blessing for them.
       u.enchants.forEach(function (e) {
         var c = E.CARDS[e.c];
-        if (c.enemyOnly) { val -= 8 + (c.leaden ? atk * 3 : 0); return; }
+        if (c.enemyOnly) { val -= 8 + (c.leaden ? atk * 3 : 0) + (c.parasite ? Math.min(u.hp, 5) * c.parasite * 3 : 0); return; }
         val += 8;
         if (c.vow) val += worth(u) * 0.4;
         if (c.sanctuary) val += worth(u) * 0.25;
@@ -530,6 +605,8 @@ var Bot = (function () {
       (x.hours || []).forEach(function () { if (u.hp <= 2) val -= worth(u) * 0.7; });
       // A frozen, held or stilled enemy loses its next turn's attack.
       if (u.owner !== pi && (u.frozen >= x.turn || u.held >= x.turn || u.stasis >= x.turn || u.sapped >= x.turn)) val -= atk * 4;
+      // Value a live Momentum streak.
+      if (E.hasKw(u, 'Momentum')) val += (u.momentum || 0) * 3;
       v += sign * val;
     });
     v += x.players[pi].hand.length * LOOK.hand + x.players[pi].relics.length * 25 + (x.players[pi].bonusMana || 0) * 10

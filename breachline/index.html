@@ -335,6 +335,58 @@ h1, h2 { margin: 0; font-family: var(--display); }
 .plaque p { margin: 0 0 6px; }
 .plaque .btns { justify-content: center; }
 .plaque .btn:not(.primary) { color: var(--ink); }
+/* Choices over the board (ui.js, choiceOf): Surge's wheel, Empower, an Offering, and cards to pick from the discard pile,
+   a pick relic or a scry. It sits on the half of the board away from the tile being played on, and the board stays in view. */
+#choice:empty { display: none; }
+#choice { position: absolute; z-index: 15; left: 50%; bottom: 10px; translate: -50% 0; width: max-content; max-width: calc(100% - 20px); max-height: calc(100% - 20px); display: flex; pointer-events: none; }
+#choice.top { bottom: auto; top: 10px; }
+#choice.mid { bottom: auto; top: 50%; translate: -50% -50%; }
+.chpanel { pointer-events: auto; min-width: 0; max-width: 100%; max-height: 100%; overflow-y: auto; display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 28px 18px; text-align: center; color: var(--card-ink); border: 1px solid transparent; border-image: url("art/web/ui/panel.png") 60 fill / 22px / 0 stretch; filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .8)); }
+.chpanel h3 { margin: 0; font: 700 23px/1.05 var(--display); }
+.chpanel p { margin: 0; max-width: 440px; font-size: 15px; line-height: 1.25; }
+.chpanel .btns { justify-content: center; }
+.chpanel .btn:not(.primary) { color: var(--ink); }
+.chcards { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: min(720px, 100%); }
+.chcard { flex: none; display: block; width: 112px; padding: 0; border: 0; background: none; border-radius: 6px; container-type: inline-size; color: inherit; text-align: left; }
+button.chcard { cursor: pointer; transition: transform .12s ease-out; }
+button.chcard:hover, button.chcard:focus-visible { transform: translateY(-4px); outline: 2px solid var(--gold); outline-offset: 2px; }
+.chpanel.scry .chcard { width: 132px; }
+/* Surge's wheel: numbers on a drum that turns under a lens, with the effect and total cost beside it. */
+.chwheel { display: flex; align-items: center; gap: 16px; }
+.wheel { position: relative; width: 84px; }
+.wtrack { --row: 30px; height: calc(var(--row) * 5); overflow-y: scroll; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; touch-action: pan-y; perspective: 260px; cursor: grab; border-radius: 8px; background: linear-gradient(#2a1d10, #3b2a17 50%, #2a1d10); box-shadow: inset 0 0 0 1px var(--edge), inset 0 8px 12px rgba(0, 0, 0, .55), inset 0 -8px 12px rgba(0, 0, 0, .55); -webkit-mask: linear-gradient(transparent, #000 28%, #000 72%, transparent); mask: linear-gradient(transparent, #000 28%, #000 72%, transparent); }
+.wtrack::-webkit-scrollbar { display: none; }
+.wtrack.drag { scroll-snap-type: none; cursor: grabbing; }
+.wtrack:focus-visible { outline: 2px solid var(--gold-pale); outline-offset: 2px; }
+.wpad, .wopt { display: block; height: var(--row); }
+.wopt { scroll-snap-align: center; display: flex; align-items: center; justify-content: center; font: 700 22px/1 var(--display); font-variant-numeric: lining-nums tabular-nums; color: var(--muted); user-select: none; -webkit-user-select: none; }
+.wopt.on { color: var(--gold-pale); }
+.wlens { position: absolute; left: -4px; right: -4px; top: calc(50% - 16px); height: 32px; pointer-events: none; border-radius: 6px; border: 1px solid var(--gold); box-shadow: 0 0 10px rgba(240, 214, 140, .35), inset 0 0 8px rgba(240, 214, 140, .2); }
+.wlens i { position: absolute; left: 7px; top: 50%; translate: 0 -50%; font: italic 600 15px/1 var(--serif); color: var(--gold); }
+.wout { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 150px; text-align: left; }
+.wout b { font: 700 22px/1.1 var(--display); }
+.wout small { font-size: 14px; color: var(--card-soft); }
+.tile.t-offer { z-index: 2; border-color: var(--danger); box-shadow: 0 0 0 2px var(--danger), 0 0 16px var(--danger); cursor: pointer; }
+.tile.t-offer::after { content: "Offer"; position: absolute; left: 50%; top: 47%; transform: translate(-50%, -50%); padding: 2px 7px; border-radius: 3px; background: rgba(14, 9, 4, .82); font: 700 14px/1.2 var(--display); color: #ffb3a1; }
+/* Cards turned up where the board can't show them: Ransack's discards and stratagems (ui.js, reveal). A tap puts them away. */
+#reveal { position: absolute; z-index: 14; left: 50%; top: 10px; translate: -50% 0; max-width: calc(100% - 20px); display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 18px; padding: 10px 16px 12px; border-radius: 8px; background: rgba(14, 9, 4, .84); box-shadow: inset 0 0 0 1px rgba(214, 178, 106, .45), 0 10px 24px rgba(0, 0, 0, .7); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity .25s, transform .25s, visibility 0s .25s; cursor: pointer; }
+#reveal.on { opacity: 1; visibility: visible; transform: none; transition: opacity .25s, transform .25s; }
+.rvgroup { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.rvgroup p { margin: 0; font: 700 17px/1.1 var(--display); color: var(--gold-pale); text-shadow: 0 1px 2px #000; }
+.rvcards { display: flex; gap: 6px; }
+.rvcard { display: block; width: 104px; container-type: inline-size; }
+.rvcard.back { aspect-ratio: 5 / 7.1; border-radius: 5px; background: url("art/web/ui/card-back.jpg") center / cover, #2a1d10; box-shadow: inset 0 0 0 2px rgba(208, 164, 72, .55); }
+/* Stratagems beside the summoner: yours by name, the enemy's as face-down cards. */
+.strat { display: inline-flex; align-items: center; gap: 3px; padding: 1px 6px 1px 3px; border-radius: 3px; background: rgba(14, 9, 4, .7); border: 1px dashed rgba(214, 178, 106, .55); font-size: 12px; line-height: 17px; white-space: nowrap; cursor: help; }
+.strat svg { width: 13px; height: 13px; }
+.strat.hidden { gap: 2px; padding-left: 2px; }
+.strat.hidden i { width: 11px; height: 15px; border-radius: 2px; background: url("art/web/ui/card-back.jpg") center / cover; box-shadow: 0 0 0 1px rgba(208, 164, 72, .6); }
+/* A card without its painting yet: the alignment's emblem on the plain coloured panel. */
+.frame .art.noart, .tile .tart.noart { display: flex; align-items: center; justify-content: center; }
+.frame .art.noart svg { width: 34%; height: auto; aspect-ratio: 1; opacity: .4; }
+.tile .tart.noart { position: absolute; inset: 0; z-index: -2; padding-top: 6%; }
+.tile .tart.noart svg { width: 42%; height: auto; aspect-ratio: 1; opacity: .3; }
+.frame .coin.under { filter: drop-shadow(0 0.5cqw 0.6cqw rgba(0, 0, 0, .55)) hue-rotate(60deg) saturate(1.4); }
 /* The battle summary lands with some weight: the plaque drops onto the table, each line is set down in turn, and the gold rolls up. */
 .plaque.summary { gap: 6px; padding: 26px 46px 24px; min-width: min(420px, calc(100vw - 32px)); max-height: calc(100dvh - 24px); overflow-y: auto; }
 .summary .seyebrow { margin: 0; font: 600 15px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--card-soft); }
@@ -546,6 +598,8 @@ dialog .btns { justify-content: flex-start; }
       <div class="tcards" id="testCards"></div>
     </aside>
     <div id="turnBanner" aria-hidden="true"></div>
+    <div id="choice"></div>
+    <div id="reveal" aria-live="polite"></div>
     <div id="result"></div>
   </section>
   <div class="cmd" id="cmd">

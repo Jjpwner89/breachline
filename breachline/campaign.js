@@ -156,7 +156,7 @@ var Campaign = (function () {
         {
           id: 'gorge', title: 'The red gorge', x: 47, y: 46,
           text: "The herd crosses the gorge every autumn. It doesn't stop for bridges, or for you.",
-          enemy: { name: 'The Elder Herd', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['owl', 3], ['wayfinder', 2], ['saboteur', 3], ['goblinscout', 3], ['springmelt', 3], ['reedbank', 3], ['mosshorn', 3], ['stag', 1], ['reedcrown', 1]] }
+          enemy: { name: 'The Elder Herd', colours: ['G'], list: [['land_g', 15], ['sapling', 3], ['owl', 3], ['wayfinder', 2], ['saboteur', 3], ['needlehip', 3], ['springmelt', 3], ['reedbank', 3], ['mosshorn', 3], ['stag', 1], ['reedcrown', 1]] }
         },
         {
           id: 'toll', title: 'The toll wall', x: 22, y: 62,
@@ -245,7 +245,7 @@ var Campaign = (function () {
       { swap: [['youngsummoner', 'raider', 3], ['goblin', 'berserker', 3], ['coalback', 'packhunter', 3]] },
       { swap: [['decoy', 'rimebolt', 2], ['sifting', 'brightlance', 2]] },
       { swap: [['rats', 'shutterassassin', 3], ['gravesoil', 'siphon', 2], ['informant', 'envoy', 1], ['thrall', 'envoy', 2], ['noble', 'hostess', 2]] },
-      { swap: [['sapling', 'mossback', 3], ['goblinscout', 'alderkin', 3]], units: ['goblinscout'] },
+      { swap: [['sapling', 'mossback', 3], ['needlehip', 'alderkin', 3]], units: ['goblinscout'] },
       { swap: [['spearman', 'outrider', 3]], units: ['spearman'] },
       { swap: [], units: ['carrier', 'cub'] }
     ],

@@ -226,6 +226,17 @@ Sounds are in `sfx/`, credited in `sfx/CREDITS.md`. There is a mute toggle. On 2
 
 ## Balance
 
+Decisions from the voting page, 2026-11-15 (creator):
+
+- **Bands.** A card's lift should fall in its rarity's band: common −1.5 to +0.5, uncommon −1 to +1, rare −0.5 to +2, legendary +2 to +5. The legendary band was +1 to +3.5 until this date; it was raised so legendaries clearly beat rares. Nerf a legendary only above +5. The Elder dragon (+6.2) and Vashkar (+5.9) stay as they are by choice, and the Veilwing is back to 6 mana.
+- **Make cards stronger, not weaker.** When a card misses, a buff is the first proposal and a nerf the option. Lift is a good guide, but a card that makes its theme deck strong is strong even with a modest lift: the Ambrel lampwright went to 2 / 3 for that reason. The bot misplays some cards; Rimebolt is better than its score, since 2 damage and the freeze let a weaker unit win the next fight.
+- **Sun and cinder is meant to be the strongest theme deck.**
+- **Blue starter, 2026-11-15:** two Second working replaced the two Riverfolk specimen-keepers, which had replaced the Conclave phantasm and Displacement earlier that day. The deck rose from 43.3% to 46.2% (± 2.7) against the other 21 decks, after playtesters found its 2-damage units couldn't finish sturdy enemies. Exhumation went from 3 mana to 2.
+- **Playtest feedback, 2026-11-15 (creator).** Land screw and flood are how the game plays; no land-for-card trade. A unit on your back row is answered by summoning a unit to kill it, so that isn't a gap. Some decks may lack an answer to one huge unit; worth a look, not urgent. The Hired shieldman looks too strong. Claude playtests are the best test the game has: every card gets a verdict on strength and fun, with a fix where it's neither (`PLAYTESTS.md`).
+- **The bot redraws like the creator (2026-11-15):** a first or second opening hand with one land or none goes back; the third is kept. Before this it kept one-land hands, which explained most of its stalls in playtests. Bot-vs-bot numbers from before this date are on the old rule.
+- **Enablers and fodder are judged by their deck, not their lift.** Many out-of-band cards only work through a mechanic, so they add value to a theme deck rather than on their own. Some aren't meant to be a body at all, just a means to an end for another card: black decks, for example, want a horrible cheap card they can sacrifice easily. A low random-deck lift on such a card isn't a flaw. Don't fix it by giving it a body; check the theme deck's win rate with and without it.
+- **New mechanics in the game:** Seasoned, Momentum, Stratagem, Cadence, Recall, Ransack, Offering, Reap, Surge, Empower, Hired and Deep roots, on the 22 Set 16 cards (#225–246) plus two cards that return cards from the discard pile. Flanking is removed from every card.
+
 Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any card and the card changes reviewed that day (card by card in `CARD_PROPOSALS.md`). A round robin of all 15 decks, the five starters and ten theme decks, played about 1,000 games per deck (each within about 1.6 points), with the scripted bot on both sides:
 
 | Deck | Kind | Win rate |
@@ -252,6 +263,18 @@ Latest numbers, 2026-11-11, after the move to 40-card decks with 3 copies of any
 - **Greedy decks** (15 lands and every rare and legendary at 3 copies) win about 61%. The creator judged that acceptable, so expensive decks are left to limit themselves through mana.
 - **Devotion** counts any heal, even at full health (creator, 2026-11-10). **Frost and White morning** deal damage as they freeze (creator, 2026-11-10).
 - Campaign numbers are in `CAMPAIGN.md`.
+- **Card audit review (creator, 2026-11-15):** after the full card audit (PLAYTESTS.md), the creator settled these rules.
+  - **Drain** heals only on the unit's own attacks, once the strike-back is done, so it recovers what it lost. It no longer heals on a strike-back.
+  - **Guard stacks:** each Guard next to a unit takes 1 off the damage it takes.
+  - **Ranged strike-backs stay:** a target strikes back whenever the attacker is within its own range.
+  - **There's no one-summon-per-turn rule.** A tester thought there was; the engine never had one.
+  - **Only Grave soil raises thralls.** Pall of ash and the Ash-sower blight tiles for -1 attack only.
+  - **Thorns** hurt a unit that enters or ends its turn on them, and the cards now say so.
+  - **Mourning veil** drops when its wearer attacks and comes back at the start of its owner's next turn.
+  - **Oath bell** costs 2 a ring, with no cap, so ringing it is a real choice.
+  - **Foraging:** green's extra-land cards now dig for lands instead. Reedbank forager draws 2 and keeps only the lands; Wayfinder druid and Return to loam draw 1 and keep it only if it's a land. None of them gives an extra land drop. Return to loam can be cast with nothing to destroy. The forager proved strong at 2 mana, so it's now an uncommon costing 3.
+  - **Pride matriarch** is a 5-mana 5/6: more attack and less health instead of a higher cost.
+  - **Too-weak cards are fine as situational cards.** Not every card has to be good; the creator left most of the audit's weak list alone.
 
 - **Spell-heavy first drafts lose badly:** 6% to 19% for winter, burn, fire and Devotion with 6 to 8 units. Every theme deck now plays 11 to 15 units.
 
@@ -283,6 +306,7 @@ Card features, keywords and gameplay ideas waiting for a future expansion are in
 
 ## Tried and set aside
 
+- Flanking (removed from every card on 2026-11-15; it triggered on about 5% of attacks), Grace, Raid, Spearhead, Bequest, Dormant, Spotter, Skirmish, Shieldwall, Learned, Last stand and other comeback rules, Masked units, Bounty and Blood price (creator's mechanic votes, 2026-11-14 and 15). Eager, Trade in and Overreach are parked.
 - A party of three heroes on four lanes, with cards locked to a living hero. The creator chose an unseen summoner.
 - Permanent terrain on the grid, and relics. Temporary tile effects are now wanted, and equipment is a label for enchantments that are objects.
 - Charge, damage from pushing a unit into another, and bonuses for standing in a particular row, all set aside on 2026-11-09.

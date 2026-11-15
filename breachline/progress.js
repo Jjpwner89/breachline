@@ -67,6 +67,13 @@ var Progress = (function () {
   }
   function known(id) { return Object.prototype.hasOwnProperty.call(E.CARDS, id); }
   function add(cards, id, n) { if (known(id)) cards[id] = (cards[id] || 0) + n; }
+  // Cards a starter deck has since swapped out. Anyone granted that starter keeps them, so changing a starter never
+  // takes cards out of a collection.
+  var FORMER = {
+    green: [['boar', 2], ['tortoise', 1]],
+    // Swapped out on 2026-11-15.
+    red: [['martyr', 1], ['skirmisher', 1]], blue: [['phantasm', 1], ['displacement', 1]], black: [['calleddebt', 2], ['noble', 1], ['raise', 1]]
+  };
 
   // Works the whole state out from the ledger. Unknown card ids are kept in the ledger but don't count until the card exists.
   function fold(list) {
@@ -78,7 +85,7 @@ var Progress = (function () {
         var deck = E.DECKS[e.deck];
         if (deck && st.starters.indexOf(e.deck) < 0) {
           st.starters.push(e.deck);
-          deck.list.forEach(function (x) { if (E.CARDS[x[0]] && E.CARDS[x[0]].type !== 'land') add(st.cards, x[0], x[1]); });
+          deck.list.concat(FORMER[e.deck] || []).forEach(function (x) { if (E.CARDS[x[0]] && E.CARDS[x[0]].type !== 'land') add(st.cards, x[0], x[1]); });
         }
         if (e.t === 'start' && !st.starter) st.starter = e.deck;
       }

@@ -40,9 +40,9 @@ var Rarity = (function () {
     // G rare
     bull: 'r', earthspeaker: 'r', herdmother: 'r', ironbark: 'r', marble: 'r', seedheart: 'r', stag: 'r',
     // G uncommon
-    alderkin: 'u', channel: 'u', grovetender: 'u', mossback: 'u', mosshorn: 'u', overgrowth: 'u', pathguard: 'u', returnloam: 'u', sapling: 'u', seedfall: 'u', thornbrake: 'u', tortoise: 'r', wayfinder: 'u',
+    alderkin: 'u', channel: 'u', grovetender: 'u', mossback: 'u', mosshorn: 'u', overgrowth: 'u', pathguard: 'u', reedbank: 'u', returnloam: 'u', sapling: 'u', seedfall: 'u', thornbrake: 'u', tortoise: 'r', wayfinder: 'u',
     // G common
-    boar: 'c', canopy: 'c', goblinscout: 'c', owl: 'c', raincup: 'c', reedbank: 'c', reedcrown: 'c', ridgewolves: 'c', saboteur: 'c', shifting: 'c', springmelt: 'c', stoneopens: 'c', trapper: 'c',
+    boar: 'c', canopy: 'c', goblinscout: 'c', owl: 'c', raincup: 'c', reedcrown: 'c', ridgewolves: 'c', saboteur: 'c', shifting: 'c', springmelt: 'c', stoneopens: 'c', trapper: 'c',
     // N rare
     scarred: 'r', stoneward: 'r',
     // N uncommon
@@ -53,7 +53,13 @@ var Rarity = (function () {
     student: 'c', edgewarden: 'u', signaller: 'c', sluicediver: 'c', chartermaker: 'c', improver: 'c',
     peatcutter: 'c', moorguide: 'c', moorkeeps: 'u', mootelder: 'c', floodfarmer: 'c', ferrykeeper: 'c', longhouse: 'c', eelnetter: 'c',
     conscript: 'c', husk: 'u', tithedrinker: 'u', caravaneer: 'c', caravanhead: 'u', caravanguard: 'c',
-    bridgemason: 'c', mastermason: 'u', tidehealer: 'c', hospitality: 'u'
+    bridgemason: 'c', mastermason: 'u', tidehealer: 'c', hospitality: 'u',
+    // Creature cards (proposed 2026-11-14).
+    vaultstalker: 'u', needlehip: 'c', woodbreaker: 'r', fanback: 'l', hostbound: 'u', gallseason: 'c', specimenkeeper: 'c', veilwing: 'l',
+    // Cards for the new mechanics (Set 16, approved 2026-11-15).
+    oathveteran: 'c', flameduelist: 'u', heldspears: 'c', secondworking: 'u', senthome: 'c', frostlatch: 'u', countedwords: 'c',
+    writseizure: 'u', confiscator: 'r', gatheredhost: 'r', ashborngleaner: 'r', pitdigger: 'u', exhumation: 'u', bonepicker: 'c', waitingnoose: 'u',
+    risingsquall: 'u', thrownboulder: 'u', streakraider: 'r', hiredshield: 'r', hiredcompany: 'r', ploughback: 'c', foldstride: 'c', saltmigrant: 'u', gravelmouth: 'r'
   };
   var NAMES = { c: 'Common', u: 'Uncommon', r: 'Rare', l: 'Legendary' };
   function of(id) { return OF[id] || 'c'; }

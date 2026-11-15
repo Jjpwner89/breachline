@@ -25,6 +25,7 @@
     ['enchant', 'Enchantments', function (c) { return c.type === 'enchant' && !c.equipment; }],
     ['equipment', 'Equipment', function (c) { return !!c.equipment; }],
     ['relic', 'Relics', function (c) { return c.type === 'relic'; }],
+    ['stratagem', 'Stratagems', function (c) { return c.type === 'stratagem'; }],
     ['land', 'Lands', function (c) { return c.type === 'land'; }]
   ];
   var $ = function (id) { return document.getElementById(id); };
@@ -34,7 +35,7 @@
   var DECK_ART = { white: 'lancer', red: 'warchief', blue: 'conjurer', black: 'harvester', green: 'land_g' };
   // On wide screens the close-up has its own column, and elsewhere it floats over the map. Same query as the CSS.
   var DOCKED = window.matchMedia('(min-width: 1280px) and (min-aspect-ratio: 3/2)');
-  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell', relic: 'Relic' };
+  var TYPES = { land: 'Land', unit: 'Unit', instant: 'Instant', enchant: 'Enchantment', spell: 'Spell', relic: 'Relic', stratagem: 'Stratagem' };
   var ART = {
     land_w: 'sunlit-plains', land_r: 'cinder-peaks', land_u: 'lantern-quarter',
     spearman: 'militia-spearman', cleric: 'temple-cleric', knight: 'oath-knight', lancer: 'sunmane-lancer', warden: 'pride-warden',
@@ -85,7 +86,8 @@
     canopy: 'sudden-canopy', returnloam: 'return-to-loam',
     oathbell: 'oath-bell', reliquary: 'pilgrim-reliquary', tideglass: 'tideglass-engine', observatory: 'folded-observatory', scale: 'sepulchral-scale', warbanddrum: 'warband-drum', seedheart: 'seedheart-vessel',
     student: 'quiet-unfastening', edgewarden: 'undercity-edge-warden', signaller: 'undercity-signaller', peatcutter: 'peat-cutter', moorguide: 'moor-guide', moorkeeps: 'the-moor-keeps-its-own', mootelder: 'moot-elder', conscript: 'veyr-recalled', husk: 'husk', tithedrinker: 'tithe-drinker', caravaneer: 'salt-road-caravaneer', floodfarmer: 'floodplain-farmer',
-    caravanhead: 'caravan-head', caravanguard: 'caravan-guard', bridgemason: 'sallow-bridge-mason', improver: 'guild-improver', mastermason: 'master-mason', ferrykeeper: 'ferry-keeper', longhouse: 'longhouse-keeper', tidehealer: 'tide-healer', hospitality: 'longhouse-hospitality', sluicediver: 'under-the-gate', chartermaker: 'the-sounding', eelnetter: 'eel-netter'
+    caravanhead: 'caravan-head', caravanguard: 'caravan-guard', bridgemason: 'sallow-bridge-mason', improver: 'guild-improver', mastermason: 'master-mason', ferrykeeper: 'ferry-keeper', longhouse: 'longhouse-keeper', tidehealer: 'tide-healer', hospitality: 'longhouse-hospitality', sluicediver: 'under-the-gate', chartermaker: 'the-sounding', eelnetter: 'eel-netter', veilwing: 'veilwing',
+    vaultstalker: 'vaultstalker', needlehip: 'needlehip', woodbreaker: 'woodland-breaker', fanback: 'fanback', hostbound: 'host-bound', gallseason: 'gall-season', specimenkeeper: 'riverfolk-specimen-keeper'
   };
   var TILE_NAMES = { burn: 'Burning', thorns: 'Thorns', frost: 'Frozen', snare: 'Snare', blight: 'Blighted', holy: 'Consecrated', charge: 'Charged' };
   // Lines live in FLAVOUR.md and NEW_CARDS.md. A card with no entry has no flavour text.
@@ -198,8 +200,13 @@
     tortoise: { line: 'The village moved twice last year. Nobody packed.' },
     recruit: { line: 'He has already written the letter home, in case.' }
   };
-  var ART_VERSION = { land_w: 'set14-20261114', land_u: 'set14-20261114', land_g: 'set14-20261114' };
+  var ART_VERSION = { land_w: 'set14-20261114', land_u: 'set14-20261114', land_g: 'set14-20261114',
+    veilwing: 'set13-20261114', eelnetter: 'set13-20261114', mastermason: 'set13-20261114', longhouse: 'set13-20261114',
+    spearman: 'set15-20261114', knight: 'set15-20261114', cub: 'set15-20261114', banner: 'set15-20261114', shield: 'set15-20261114', captain: 'set15-20261114', land_r: 'set15-20261114', firebolt: 'set15-20261114', saboteur: 'set15-20261114', sellsword: 'set15-20261114', chorister: 'set15-20261114', clanraiders: 'set15-20261114', raider: 'set15-20261114', warchief: 'set15-20261114' };
   function artSrc(id) { return 'art/web/' + ART[id] + '.jpg' + (ART_VERSION[id] ? '?v=' + ART_VERSION[id] : ''); }
+  // A card with no painting listed, or one that failed to load, shows its alignment's emblem on a plain panel.
+  function hasArt(id) { return !!ART[id] && !noArt[id]; }
+  function noArtHtml(cls, colour) { return '<span class="' + cls + ' noart" aria-hidden="true">' + sym(colour) + '</span>'; }
   // The board rebuilds on every render, so a battle holds both decks' paintings decoded from its start to stop tiles flickering.
   // Cards whose painting isn't finished yet show a plain coloured panel instead of a broken image.
   // The other paintings trickle in a few at a time after the first screen, so a first visit isn't held up by every painting in the game.
@@ -324,9 +331,15 @@
       if (rc.relic === 'stars' && you && p.deck.length >= 2) top = ': next ' + p.deck.slice(-2).reverse().map(function (i) { return E.CARDS[i.c].name; }).join(', then ');
       return '<span class="relic ' + rc.colour + '" data-peek="' + r.c + '">' + sym(rc.colour) + esc(rc.name) + (r.store ? ' <b>' + r.store + '</b>' : '') + esc(top) + '</span>';
     }).join('');
+    // Set stratagems sit with the relics. Their owner sees which they are; the other side sees only face-down cards.
+    var strats = p.stratagems || [], open = you || bothHands();
+    relics += !strats.length ? '' : open ? strats.map(function (st) {
+      var sc = E.CARDS[st.c];
+      return '<span class="strat ' + sc.colour + '" data-peek="' + st.c + '" data-note="Your stratagem, set face down">' + sym(sc.colour) + 'Set: ' + esc(sc.name) + '</span>';
+    }).join('') : '<span class="strat hidden" title="' + (strats.length === 1 ? 'A stratagem' : strats.length + ' stratagems') + ' set face down" aria-label="' + strats.length + ' face-down stratagem' + (strats.length === 1 ? '' : 's') + '">' + strats.map(function () { return '<i></i>'; }).join('') + 'Set</span>';
     return '<' + tag + ' class="plate ' + (you ? 'you' : 'them') + (active ? ' active' : '') + (targetable ? ' target' : '') + (threat ? ' threat' : '') + '" id="summoner' + pi + '"' +
       (targetable ? ' aria-label="Attack the enemy summoner, life ' + p.life + '"' : '') + '>' +
-      '<span class="crest ' + main + (you ? ' you' : ' foe') + '">' + (noArt[PORTRAIT[main]] ? '' : '<img src="' + artSrc(PORTRAIT[main]) + '" alt="" draggable="false">') + '<span class="emb">' + sym(main) + '</span></span>' +
+      '<span class="crest ' + main + (you ? ' you' : ' foe') + '">' + (!hasArt(PORTRAIT[main]) ? '' : '<img src="' + artSrc(PORTRAIT[main]) + '" alt="" draggable="false">') + '<span class="emb">' + sym(main) + '</span></span>' +
       '<span class="who"><b>' + (you ? 'You' : esc(p.name)) + '</b><small>' + (you ? esc(p.name) : ALIGNMENT[main] + (modelOn() ? ' · Claude, ' + AI.levels[oppPlayer].label : online ? ' · Online' : '')) + '</small></span>' +
       lifeHtml(pi, p) +
       '<span class="manarow"><span class="mana">' + p.mana + ' <small>/ ' + p.lands.length + ' mana</small></span>' + gems + '</span>' +
@@ -359,7 +372,13 @@
       if (fanAt === u.uid) cls.push('fanned');
       if (marks.units[u.uid]) cls.push(marks.units[u.uid]);
       // Conditions come first. Every label shows, kept small; the close-up note and the tile's label repeat them.
-      var states = [], notes = d.keywords.slice();
+      // Momentum and Seasoned show what they have built up so far.
+      // Veiled shows only while the unit is hidden, since attacking drops it.
+      var states = [], notes = d.keywords.filter(function (k) { return k !== 'Veiled'; }).map(function (k) {
+        if (k === 'Momentum' && u.momentum) return k + ' +' + u.momentum;
+        if (k === 'Seasoned' && u.seasoned) return k + ' +' + u.seasoned;
+        return k;
+      });
       u.enchants.forEach(function (e) { notes.push(E.CARDS[e.c].name + (e.left ? ' ' + e.left : '')); });
       if (u.tempAtk) notes.push('+' + u.tempAtk + ' this turn');
       if (u.stride && u.owner === S.active) notes.push('+' + u.stride + ' move');
@@ -377,6 +396,9 @@
       if (u.rootfed) notes.push('Rootfed +' + u.rootfed);
       if (u.carrion) notes.push('Carrion +' + u.carrion);
       if (u.devotion) notes.push('Devotion +' + u.devotion);
+      // Hired shows its upkeep; Deep roots counts lands until it takes root.
+      if (d.hired) notes.push('Hired ' + d.hired);
+      if (d.roots) notes.push(u.rooted ? 'Deep roots' : 'Deep roots ' + Math.min(S.players[u.owner].lands.length, d.roots.lands) + '/' + d.roots.lands);
       if (waiting) states.push('Waiting');
       else if (u.owner === S.active && u.acted) states.push('Done');
       // Each label is a small enamel shield with its first letter, stacked in a corner and fanned out on hover; the tile's
@@ -388,13 +410,14 @@
       });
       if (shown.length > 6) chips.push('<i class="shd n more" style="--i:5" data-t="' + shown.slice(5).join(', ') + '">+' + (shown.length - 5) + '</i>');
       var atk = E.attackOf(S, u);
-      inner += (noArt[d.id] ? '' : '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">') +
+      inner += (hasArt(d.id) ? '<img class="tart" src="' + artSrc(d.id) + '" alt="" decoding="sync" draggable="false">' : noArtHtml('tart', d.colour)) +
         '<span class="nm">' + sym(d.colour) + '<span>' + d.name + '</span></span>' +
         (chips.length ? '<span class="chips' + (chips.length > 1 ? ' stack' : '') + '" style="--n:' + chips.length + '" title="' + all.join(', ') + '">' + chips.join('') + '</span>' : '') +
         '<span class="st"><span class="badge atk' + (atk > d.atk ? ' up' : atk < d.atk ? ' down' : '') + '">' + atk + '</span>' +
-        '<span class="badge hp' + (u.hp < u.maxHp ? ' hurt' : '') + '">' + u.hp + '</span></span>';
+        // Health is red while hurt, and green like a raised attack once its maximum is above the printed health.
+        '<span class="badge hp' + (u.hp < u.maxHp ? ' hurt' : u.maxHp > d.hp ? ' up' : '') + '">' + u.hp + '</span></span>';
       label = (u.owner === HUMAN ? 'Your ' : 'Enemy ') + d.name + ', attack ' + E.attackOf(S, u) + ', health ' + u.hp + (all.length ? ', ' + all.join(', ') : '');
-      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + (all.length ? '. ' + all.join(', ') : '') + '"';
+      attrs += ' data-peek="' + d.id + '" data-note="' + (u.owner === HUMAN ? 'Your unit' : 'Enemy unit') + ', now ' + E.attackOf(S, u) + ' / ' + u.hp + (u.maxHp !== d.hp ? ' of ' + u.maxHp + ' health' : '') + (all.length ? '. ' + all.join(', ') : '') + '"';
     } else label = 'Empty tile, row ' + (r + 1) + ', column ' + (c + 1);
     if (fxText) label += ', ' + fxText.toLowerCase();
     return '<button type="button" class="' + cls.join(' ') + '" ' + attrs + ' aria-label="' + label + '">' + inner + '</button>';
@@ -402,9 +425,9 @@
 
   // Shield colours: red for attack, blue for movement and reach, green for growth and healing, gold for everything else.
   var SHIELD = {
-    r: ['Hunt', 'Frenzy', 'Overrun', 'Flanking', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching', 'Flare', 'Blank'],
+    r: ['Hunt', 'Frenzy', 'Overrun', 'Armed', 'Stomp', 'Drain', 'Warband', 'Lit', 'Resonance', 'Charmed', 'Borrowed', 'Venom', 'Overwatch', 'Watching', 'Flare', 'Blank', 'Momentum'],
     u: ['Swift', 'Flying', 'Ranged', 'Longshot', 'Ambush', 'Errant', 'Veiled', 'Decoy', 'Frozen', 'Held', 'Mired', 'Restrained', 'Between moments'],
-    g: ['Grows', 'Rootfed', 'Carrion', 'Devotion']
+    g: ['Grows', 'Rootfed', 'Carrion', 'Devotion', 'Seasoned', 'Deep roots']
   };
   function shieldKind(t) {
     if (/this turn$/.test(t)) return 'r';
@@ -421,6 +444,16 @@
       marks.units[fight.attacker] = 't-threat';
       if (fight.summoner !== undefined) marks.threat = true;
       else marks.units[fight.targetUid] = 't-threat';
+    }
+    // While a version is being chosen, its tile or target stays marked, and so does each unit that could be offered.
+    if (sel && sel.choice) {
+      sel.choice.forEach(function (m) {
+        if (m.type === 'summon') marks.tiles[m.r + ',' + m.c] = 't-summon';
+        else if (m.target !== undefined && unitById(m.target)) marks.units[m.target] = unitById(m.target).owner === actor() ? 't-buff' : 't-attack';
+        else if (m.summoner !== undefined) marks.summoner = true;
+        if (m.offer !== undefined) marks.units[m.offer] = 't-offer';
+      });
+      return marks;
     }
     var stage = pickStage(selectedMoves(moves));
     if (stage) {
@@ -465,7 +498,7 @@
     for (var n = 0; n < c.wants; n++) syms += '<svg class="sym' + (n < have ? '' : ' miss') + '" aria-hidden="true"><use href="#sym-' + c.colour + '"/></svg>';
     var wantsText = c.wants ? 'Wants ' + c.wants + ' ' + COLOUR[c.colour] + ' land' + (c.wants === 1 ? '' : 's') : 'Any lands';
     var costHtml = isLand ? '' : '<span class="cost" title="' + wantsText + '" aria-label="Costs ' + cost + ', ' + wantsText.toLowerCase() + '">' +
-      '<span class="coin' + (cost > c.cost ? ' over' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
+      '<span class="coin' + (cost > c.cost ? ' over' : cost < c.cost ? ' under' : '') + '">' + cost + '</span>' + (syms ? '<span class="wants">' + syms + '</span>' : '') + '</span>';
     var body = c.text || (isLand ? 'Adds 1 mana each turn.' : '');
     var rar = isLand || c.token ? '' : '<i class="rar ' + Rarity.of(c.id) + '" title="' + Rarity.name(c.id) + '"><span class="sr">, ' + Rarity.name(c.id).toLowerCase() + '</span></i>';
     var type = '<span class="type">' + (c.equipment ? 'Equipment' : TYPES[c.type]) + (c.sub ? ', ' + c.sub : '') + ' · ' + ALIGNMENT[c.colour] + rar + '</span>';
@@ -476,7 +509,7 @@
     if (fl) body += '<span class="flavour">' + fl.line + (fl.credit ? '<span class="credit">' + fl.credit + '</span>' : '') + '</span>';
     return '<span class="frame ' + c.colour + (isLand ? ' land' : '') + (o.big ? ' big' : '') + '"><span class="inner">' + costHtml +
       '<span class="bar-top">' + c.name + '</span>' +
-      '<span class="art">' + (noArt[c.id] ? '' : '<img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false">') + '</span>' +
+      (hasArt(c.id) ? '<span class="art"><img src="' + artSrc(c.id) + '" alt="" decoding="sync" draggable="false"></span>' : noArtHtml('art', c.colour)) +
       '<span class="band">' + band + '</span><span class="ctext">' + body + '</span></span></span>';
   }
 
@@ -658,6 +691,9 @@
       return promptHtml(S.pending ? 'The opponent is deciding on a response.' : S.phase === 'opening' ? 'The opponent is choosing their opening hand.' : 'The opponent is taking their turn.');
     }
     if (you.toBottom) return promptHtml('Click ' + (you.toBottom > 1 ? you.toBottom + ' cards' : 'a card') + ' to put on the bottom of your deck.');
+    // The cards to choose from, and the scry's buttons, are over the board (choiceOf).
+    if (you.picking) return promptHtml(pickText(you.picking));
+    if (you.scrying) return promptHtml(scryText(you.scrying));
     if (S.phase === 'opening') {
       var redraw = moves.some(function (m) { return m.type === 'redraw'; });
       var costNote = you.redraws ? ' Keeping this hand means putting ' + (you.redraws > 1 ? you.redraws + ' cards' : '1 card') + ' on the bottom of your deck.' : '';
@@ -691,23 +727,30 @@
       }
       if (sel && sel.kind === 'card') {
         var c = cardOf(sel.id), inst = you.hand.filter(function (i) { return i.id === sel.id; })[0], place = sm.some(function (m) { return m.type === 'summon'; }), ench = sm.some(function (m) { return m.type === 'enchant'; });
-        if (c.type === 'instant') hint = instantHint(c, sm);
+        if (sel.choice) hint = surgeXs(sel.choice).length ? 'Turn the wheel to choose X, then confirm.' : sel.choice.some(function (m) { return m.offer !== undefined; }) ? 'Choose a unit to offer, or summon it without one.' : 'Choose whether to Empower it.';
+        else if (c.type === 'instant') hint = instantHint(c, sm);
         else if (pickStage(sm)) hint = 'Choose a back-row tile for each unit it summons.';
         else if (place) hint = sel.summonAt ? (c.boon ? 'Choose one of your units next to it.' : 'Choose an enemy unit for it to hit.') : 'Choose a highlighted tile' + (sm.some(function (m) { return m.type === 'summon' && m.r !== E.backRow(HUMAN); }) ? ': your back row, or beside or behind one of your units.' : ' in your back row.');
         else if (ench) hint = 'Choose a unit to enchant.';
         else if (c.type !== 'land' && E.costOf(S, HUMAN, c, inst) > you.mana) hint = 'Not enough mana to play this now.';
+        else if (c.type === 'stratagem') hint = sm.length ? 'Set it face down. It springs by itself ' + STRAT_WHEN[c.stratagem.when] + '. The enemy sees only that a card is set.' : (you.stratagems || []).length >= 2 ? 'You already have 2 stratagems set.' : "You can't set this right now.";
         else if (c.type === 'relic') hint = 'Put this relic into play beside you.';
-        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.cleanse || c.unchain || c.loam ? 'Choose a unit with enchantments' + (c.unrelic ? ', or break a relic.' : '.') : c.mend ? 'Choose one of your units.' : c.bolt ? 'Choose an enemy unit or the enemy summoner.' : c.blast || c.borrow || c.stasis || c.buy ? 'Choose an enemy unit.' : c.place ? 'Choose an empty tile in the middle rows.' : c.aim ? 'Choose a tile to aim at' + (c.unrelic ? ', or break a relic.' : '.') : c.chant || c.light ? 'Choose one of your units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') : 'Cast this spell.';
+        else if (c.type === 'spell') hint = !sm.length ? "You can't cast this right now." : c.raise ? 'Choose a unit to return.' : c.recall ? "Choose a unit, yours or the enemy's, to return to its owner's hand." : c.cleanse || c.unchain || c.loam ? 'Choose a unit with enchantments' + (c.unrelic ? ', or break a relic.' : '.') : c.mend ? 'Choose one of your units.' : c.bolt ? 'Choose an enemy unit or the enemy summoner.' : c.blast || c.borrow || c.stasis || c.buy ? 'Choose an enemy unit.' : c.place ? 'Choose an empty tile in the middle rows.' : c.aim ? 'Choose a tile to aim at' + (c.unrelic ? ', or break a relic.' : '.') : c.chant || c.light ? 'Choose one of your units.' : c.passage ? (sel.castUnit ? 'Choose a free tile.' : 'Choose one of your units to move.') :
+          c.ransack ? 'Cast it: the enemy discards ' + (c.ransack === 1 ? 'a random card' : c.ransack + ' random cards') + ', shown to you both.' :
+          c.regrow ? 'Cast it, then choose ' + (c.regrow.n > 1 ? 'up to ' + c.regrow.n + ' ' : 'a ') + (c.regrow.type ? c.regrow.type + ' card' : 'card') + (c.regrow.n > 1 ? 's' : '') + ' to return from your discard pile.' : 'Cast this spell.';
         else if (c.type === 'unit') hint = 'Your back row is full, so there is nowhere to summon this.';
         else if (c.type === 'enchant') hint = 'There is no unit this can enchant right now.';
         else hint = sm.length ? 'Play this land.' : 'You already played a land this turn.';
+        // Versions of one cast (Empower, Surge) share a button that opens the choice.
+        var plain = sm.filter(isPlainCast), atFoe = sm.filter(function (m) { return m.type === 'cast' && m.summoner !== undefined; }), shown = false;
         sm.forEach(function (m) {
           if (m.type === 'playLand') out.push(btn('Play land', { move: m }, true));
           if (m.type === 'cast' && m.relic !== undefined) out.push(btn('Break ' + relicName(m.relic), { move: m }));
-          else if (m.type === 'cast' && m.summoner !== undefined) out.push(btn('Hit the enemy summoner', { move: m }));
-          else if (m.type === 'cast' && !m.target && m.r === undefined && !(m.at && m.at.length)) {
+          else if (m.type === 'cast' && m.summoner !== undefined) { if (m === atFoe[0]) out.push(btn('Hit the enemy summoner', needsChoice(atFoe) ? { ui: 'choose', what: 'summoner' } : { move: m })); }
+          else if (isPlainCast(m) && !sel.choice) {
+            if (needsChoice(plain)) { if (!shown) out.push(btn('Cast', { ui: 'choose', what: 'plain' }, true)); shown = true; return; }
             var back = you.discard.filter(function (d) { return d.id === m.raise; })[0];
-            out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : c.type === 'relic' ? 'Play relic' : 'Cast', { move: m }, true));
+            out.push(btn(back ? 'Return ' + E.CARDS[back.c].name : c.type === 'relic' ? 'Play relic' : c.type === 'stratagem' ? 'Set stratagem' : 'Cast', { move: m }, true));
           }
         });
         out.push(btn('Cancel', { ui: 'clear' }));
@@ -753,6 +796,7 @@
     return promptHtml(cmdHint) + '<span class="btns">' + out.join('') + '</span>' + pressHtml({ move: { type: 'endTurn' } }, !sel && moves.every(function (m) { return m.type === 'endTurn'; }));
   }
 
+  var STRAT_WHEN = { enemyAttack: 'when an enemy attacks', enemySummon: 'when the enemy summons a unit', enemyCast: 'when the enemy casts a spell or enchantment', enemySpell: 'when the enemy casts a spell' };
   // Instants such as Scatter the line, aimed at a tile on either turn, or Firebolt picking a unit on your own turn.
   function aimable(moves, id) {
     return moves.some(function (m) { return m.card === id && (m.type === 'cast' || (m.type === 'respond' && m.r !== undefined && m.target === undefined)); });
@@ -779,8 +823,240 @@
     return out;
   }
 
+  // Versions of one play: Empower, Surge's X and Offering each copy the plain move with one more field (engine.js, 2026-11-15).
+  // A click that matches several versions opens a choice over the board instead of playing the first.
+  function isVariant(m) { return !!m.empower || m.surge !== undefined || m.offer !== undefined; }
+  function needsChoice(ms) { return ms.some(function (m) { return m.offer !== undefined; }) || (ms.length > 1 && ms.some(isVariant)); }
+  function surgeXs(ms) { return ms.filter(function (m) { return m.surge !== undefined; }).map(function (m) { return m.surge; }).sort(function (a, b) { return a - b; }); }
+  function isPlainCast(m) { return m.type === 'cast' && !m.target && m.r === undefined && m.summoner === undefined && m.relic === undefined && !(m.at && m.at.length); }
+  function go(ms) {
+    if (!ms.length) return;
+    if (!needsChoice(ms)) return apply(ms[0]);
+    var xs = surgeXs(ms);
+    sel.choice = ms;
+    sel.surgeX = xs.length ? xs[xs.length - 1] : null;
+    render();
+  }
+  // What one version costs and does. An offering takes the offered unit's cost off before anything is added.
+  function versionOf(c, inst, m) {
+    var base = E.costOf(S, HUMAN, c, inst), cost = base, fx = '';
+    if (m.offer !== undefined && unitById(m.offer)) cost = Math.max(1, base - E.CARDS[unitById(m.offer).cardId].cost);
+    if (m.empower && c.empower) cost += c.empower.extra;
+    if (m.surge !== undefined) cost += m.surge;
+    if (c.type === 'unit') {
+      var a = c.atk, h = c.hp, per = (c.surge && c.surge.per) || {};
+      if (m.empower && c.empower) { a = c.empower.fx.atk || a; h = c.empower.fx.hp || h; }
+      if (m.surge) { a += (per.atk || 0) * m.surge; h += (per.hp || 0) * m.surge; }
+      if (c.empower || c.surge) fx = 'a ' + a + ' / ' + h;
+    } else {
+      var e = E.effCard(c, m);
+      if (e.blast) fx = e.blast + ' damage';
+    }
+    return { cost: cost, fx: fx };
+  }
+  function handInst(id) { return S.players[HUMAN].hand.filter(function (i) { return i.id === id; })[0]; }
+
+  // A choice the board can't show by itself: Surge's X, Empower, an Offering, a card back from the discard pile, a pick relic's
+  // card, or a scry. It sits over the board, so it works the same on phones, where the prompt is hidden. It redraws only when
+  // the choice itself changes, so the wheel isn't reset under a finger.
+  var choiceKey = null, wheelX = function () { return null; };
+  function choiceOf() {
+    if (!S || S.winner !== null || actor() !== HUMAN || casting) return null;
+    var you = S.players[HUMAN];
+    var cardBtn = function (i, note) {
+      return '<button type="button" class="chcard" data-do=\'' + JSON.stringify({ move: { type: 'pick', card: i.id } }) + '\' data-peek="' + i.c + '" data-note="' + note + '" aria-label="' + esc(E.CARDS[i.c].name) + '">' + frameHtml(E.CARDS[i.c]) + '</button>';
+    };
+    if (you.picking) {
+      var pk = you.picking, back = pk.from === 'discard';
+      return { key: 'pick:' + pk.cards.map(function (i) { return i.id; }).join(',') + ':' + pk.left, html: '<div class="chpanel pick"><h3>' + (back ? 'Your discard pile' : 'The top of your deck') + '</h3><p>' + pickText(pk) + '</p>' +
+        '<div class="chcards">' + pk.cards.map(function (i) { return cardBtn(i, back ? 'In your discard pile' : 'On top of your deck'); }).join('') + '</div></div>' };
+    }
+    if (you.scrying) {
+      var sc = you.scrying, top = sc.cards[0];
+      return { key: 'scry:' + sc.cards.map(function (i) { return i.id; }).join(',') + ':' + sc.kept.length, html: '<div class="chpanel scry"><h3>The top of your deck</h3><p>' + scryText(sc) + '</p>' +
+        '<div class="chcards"><span class="chcard" data-peek="' + top.c + '" data-note="On top of your deck">' + frameHtml(E.CARDS[top.c]) + '</span></div>' +
+        '<span class="btns">' + btn('Put on the bottom', { move: { type: 'scry', bottom: true } }) + btn('Keep on top', { move: { type: 'scry', bottom: false } }, true) + '</span></div>' };
+    }
+    if (!sel || sel.kind !== 'card' || !sel.choice) return null;
+    var ms = sel.choice, inst = handInst(sel.id), c = inst && E.CARDS[inst.c];
+    if (!c) return null;
+    var verb = c.type === 'unit' ? 'Summon' : 'Cast', key = 'var:' + sel.id + ':' + JSON.stringify(ms);
+    var head = '<div class="chpanel"><h3>' + esc(c.name) + '</h3>', cancel = btn('Cancel', { ui: 'unchoose' });
+    if (surgeXs(ms).length) {
+      var xs = surgeXs(ms);
+      return { key: key, wheel: true, html: head + '<p>Surge: pay any X more as you ' + verb.toLowerCase() + ' it. Turn the wheel to choose X.</p>' +
+        '<div class="chwheel"><div class="wheel"><div class="wtrack" tabindex="0" role="spinbutton" aria-label="X, the extra mana to pay" aria-valuemin="' + xs[0] + '" aria-valuemax="' + xs[xs.length - 1] + '">' +
+        '<span class="wpad"></span><span class="wpad"></span>' + xs.map(function (x) { return '<span class="wopt" data-x="' + x + '">' + x + '</span>'; }).join('') + '<span class="wpad"></span><span class="wpad"></span>' +
+        '</div><span class="wlens" aria-hidden="true"><i>X</i></span></div><div class="wout"><b class="wfx"></b><small class="wcost"></small></div></div>' +
+        '<span class="btns">' + cancel + '<button type="button" class="btn primary wgo" data-do=\'{"ui":"surge"}\'>' + verb + '</button></span></div>' };
+    }
+    var seen = {}, opts = ms.filter(function (m) {
+      var k = (m.empower ? 'e' : '') + (m.offer !== undefined ? 'o' + m.offer : '');
+      if (seen[k]) return false;
+      seen[k] = true;
+      return true;
+    });
+    var offers = opts.some(function (m) { return m.offer !== undefined; });
+    var ask = offers ? 'Offer one of your units as it arrives? The offered unit is destroyed, and ' + esc(c.name) + ' costs that unit\'s cost less (at least 1). You can also pick a marked unit on the board.'
+      : 'Pay ' + c.empower.extra + ' more mana to Empower it?';
+    var named = {};
+    opts.forEach(function (m) { if (m.offer !== undefined) { var n = E.CARDS[unitById(m.offer).cardId].name; named[n] = (named[n] || 0) + 1; } });
+    var buttons = opts.map(function (m, k) {
+      var v = versionOf(c, inst, m), label;
+      if (m.offer !== undefined) {
+        var o = unitById(m.offer), n = E.CARDS[o.cardId].name;
+        label = 'Offer ' + esc(n) + (named[n] > 1 ? ', column ' + (o.c + 1) : '') + ' (' + v.cost + ' mana)';
+        return '<button type="button" class="btn" data-offer="' + m.offer + '" data-do=\'' + JSON.stringify({ move: m }) + '\'>' + label + '</button>';
+      }
+      label = m.empower ? 'Empower (+' + c.empower.extra + ' mana)' : offers ? verb + ' without an offering (' + v.cost + ' mana)' : verb + ' (' + v.cost + ' mana)';
+      return btn(label + (v.fx ? ': ' + v.fx : ''), { move: m }, !m.empower && !offers);
+    });
+    return { key: key, html: head + '<p>' + ask + '</p><span class="btns">' + buttons.join('') + cancel + '</span></div>' };
+  }
+  function pickText(pk) {
+    if (pk.from !== 'discard') return 'Choose a card to take into your hand. The rest go to the bottom of your deck.';
+    return pk.left > 1 ? 'Choose ' + pk.left + ' cards to return from your discard pile, one at a time.' : 'Choose a card to return from your discard pile.';
+  }
+  function scryText(sc) {
+    return 'Keep this card on top of your deck, or put it on the bottom?' + (sc.cards.length > 1 ? ' ' + (sc.cards.length - 1) + ' more to look at after this one.' : '');
+  }
+  function drawChoice() {
+    var ch = choiceOf(), el = $('choice');
+    if (!ch) { if (choiceKey !== null) { el.innerHTML = ''; choiceKey = null; } return; }
+    // Picks sit in the middle; a version's choice goes on the half of the board away from where it's played.
+    var m = sel && sel.choice && sel.choice[0], t = m && m.target !== undefined ? unitById(m.target) : null, row = m && m.type === 'summon' ? m.r : t ? t.r : null;
+    if (row !== null && turned()) row = E.ROWS - 1 - row;
+    el.className = !m ? 'mid' : row !== null && row >= E.ROWS / 2 ? 'top' : '';
+    if (ch.key === choiceKey) return;
+    choiceKey = ch.key;
+    el.innerHTML = ch.html;
+    fitCards(el);
+    if (ch.wheel) wheel(el.querySelector('.wtrack'));
+  }
+  // Surge's wheel, like a phone's alarm setter: scroll it, drag it, use the mouse wheel or the arrow keys, or tap a number.
+  // Each step of the mouse wheel moves one number. The middle number is X, and the effect and total cost follow it.
+  function wheel(track) {
+    var opts = Array.prototype.slice.call(track.querySelectorAll('.wopt')), xs = opts.map(function (o) { return +o.dataset.x; });
+    var row = opts[0].getBoundingClientRect().height || 30, drag = null, spin = 0, frame = null, aim = null;
+    var at = function () { return Math.max(0, Math.min(xs.length - 1, Math.round(track.scrollTop / row))); };
+    // Steps count from where the wheel is heading, so quick turns add up while it's still moving.
+    var next = function (d) { return (aim === null ? at() : aim) + d; };
+    var to = function (k, now) { aim = k = Math.max(0, Math.min(xs.length - 1, k)); track.scrollTo({ top: k * row, behavior: now || !Polish.enabled() ? 'auto' : 'smooth' }); };
+    function paint() {
+      frame = null;
+      if (!sel || !sel.choice) return;
+      var pos = track.scrollTop / row;
+      if (aim !== null && Math.abs(pos - aim) < 0.05) aim = null;
+      opts.forEach(function (o, k) {
+        var d = k - pos, a = Math.min(Math.abs(d), 2.5);
+        o.style.transform = 'rotateX(' + (-d * 24).toFixed(1) + 'deg) scale(' + (1 - a * 0.1).toFixed(3) + ')';
+        o.style.opacity = (1 - a * 0.32).toFixed(2);
+        o.classList.toggle('on', k === at());
+      });
+      if (xs[at()] !== sel.surgeX) { sel.surgeX = xs[at()]; Sfx.play('card-hover', { gap: 40 }); }
+      surgeShown();
+    }
+    track.addEventListener('scroll', function () { if (!frame) frame = requestAnimationFrame(paint); });
+    // Confirming reads the wheel itself, in case it moved since the last frame was drawn.
+    wheelX = function () { return track.isConnected ? xs[aim === null ? at() : aim] : null; };
+    track.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      spin += e.deltaMode ? e.deltaY * 30 : e.deltaY;
+      if (Math.abs(spin) < 24) return;
+      to(next(spin > 0 ? 1 : -1));
+      spin = 0;
+    }, { passive: false });
+    // A mouse drags the wheel; a finger scrolls it natively.
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button) return;
+      drag = { y: e.clientY, top: track.scrollTop, moved: false, opt: e.target.closest('.wopt') };
+      aim = null;
+      track.setPointerCapture(e.pointerId);
+      track.classList.add('drag');
+      e.preventDefault();
+      track.focus({ preventScroll: true });
+    });
+    track.addEventListener('pointermove', function (e) {
+      if (!drag) return;
+      if (Math.abs(e.clientY - drag.y) > 3) drag.moved = true;
+      track.scrollTop = drag.top - (e.clientY - drag.y);
+    });
+    var release = function () {
+      if (!drag) return;
+      var d = drag;
+      drag = null;
+      track.classList.remove('drag');
+      to(!d.moved && d.opt ? opts.indexOf(d.opt) : at());
+    };
+    track.addEventListener('pointerup', release);
+    track.addEventListener('pointercancel', release);
+    track.addEventListener('click', function (e) { var o = e.target.closest('.wopt'); if (o) to(opts.indexOf(o)); });
+    track.addEventListener('keydown', function (e) {
+      var k = { ArrowUp: -1, ArrowDown: 1, ArrowLeft: -1, ArrowRight: 1 }[e.key];
+      if (k) { e.preventDefault(); to(next(k)); }
+      else if (e.key === 'Home' || e.key === 'End') { e.preventDefault(); to(e.key === 'Home' ? 0 : xs.length - 1); }
+      else if (e.key === 'Enter') { e.preventDefault(); doAction({ ui: 'surge' }); }
+    });
+    to(Math.max(0, xs.indexOf(sel.surgeX)), true);
+    paint();
+  }
+  function surgeShown() {
+    var el = $('choice'), inst = sel && handInst(sel.id), c = inst && E.CARDS[inst.c];
+    var m = c && sel.choice.filter(function (x) { return x.surge === sel.surgeX; })[0];
+    if (!m) return;
+    var v = versionOf(c, inst, m), verb = c.type === 'unit' ? 'Summon' : 'Cast';
+    el.querySelector('.wfx').textContent = 'X = ' + m.surge + (v.fx ? ': ' + v.fx : '');
+    el.querySelector('.wcost').textContent = v.cost + ' of your ' + S.players[HUMAN].mana + ' mana';
+    el.querySelector('.wgo').textContent = verb + ' for ' + v.cost + ' mana';
+    el.querySelector('.wtrack').setAttribute('aria-valuenow', m.surge);
+    el.querySelector('.wtrack').setAttribute('aria-valuetext', 'X ' + m.surge + (v.fx ? ', ' + v.fx : '') + ', ' + v.cost + ' mana');
+  }
+  // Pointing at an offer button marks the unit it would destroy.
+  $('choice').addEventListener('mouseover', function (e) {
+    var b = e.target.closest('[data-offer]'), u = b && unitById(+b.dataset.offer);
+    Array.prototype.forEach.call(document.querySelectorAll('#grid .t-offer'), function (t) { t.classList.remove('t-offer'); });
+    if (u && tileEl(u.r, u.c)) tileEl(u.r, u.c).classList.add('t-offer');
+  });
+
+  // Cards that change hands where the board can't show it: a Ransack's discards, shown to both players, and stratagems, set
+  // face down and turned up when they spring. Each shows for a few seconds over the board; a tap puts it away sooner.
+  var revealTimer = null, NAMED = null;
+  function side(pi) { return bothHands() ? (pi === 0 ? 'Bottom' : 'Top') : pi === HUMAN ? 'You' : 'The enemy'; }
+  function says(pi, verb) { return side(pi) + ' ' + (side(pi) === 'You' ? verb : verb + 's'); }
+  function revealsOf(prev, next) {
+    var out = [], lost = {};
+    if (!NAMED) { NAMED = {}; Object.keys(E.CARDS).forEach(function (id) { NAMED[E.CARDS[id].name] = id; }); }
+    (next.fx || []).forEach(function (f) { if (f.ransack && NAMED[f.text]) (lost[f.summoner] = lost[f.summoner] || []).push(NAMED[f.text]); });
+    Object.keys(lost).forEach(function (pi) { out.push({ text: says(+pi, 'discard') + ' ' + (lost[pi].length === 1 ? 'a card' : lost[pi].length + ' cards') + ' at random', cards: lost[pi] }); });
+    [0, 1].forEach(function (pi) {
+      var was = prev.players[pi].stratagems || [], now = next.players[pi].stratagems || [];
+      var has = function (list, st) { return list.some(function (x) { return x.id === st.id; }); };
+      var sprung = was.filter(function (st) { return !has(now, st); }), set = now.filter(function (st) { return !has(was, st); });
+      if (sprung.length) out.push({ text: (side(pi) === 'You' ? 'Your' : side(pi) === 'The enemy' ? 'The enemy\'s' : side(pi) + '\'s') + ' stratagem springs', cards: sprung.map(function (st) { return st.c; }) });
+      if (set.length && pi !== HUMAN && !bothHands()) out.push({ text: 'The enemy sets a stratagem face down', cards: set.map(function () { return null; }) });
+    });
+    return out;
+  }
+  function reveal(groups) {
+    if (!groups.length) return;
+    var el = $('reveal'), n = 0;
+    el.innerHTML = groups.map(function (g) {
+      n += g.cards.length;
+      return '<div class="rvgroup"><p>' + esc(g.text) + '</p><div class="rvcards">' + g.cards.map(function (id) {
+        return id ? '<span class="rvcard" data-peek="' + id + '" data-note="' + esc(g.text) + '">' + frameHtml(E.CARDS[id]) + '</span>' : '<span class="rvcard back" aria-label="A face-down card"></span>';
+      }).join('') + '</div></div>';
+    }).join('');
+    el.classList.add('on');
+    fitCards(el);
+    clearTimeout(revealTimer);
+    revealTimer = setTimeout(function () { el.classList.remove('on'); }, 2600 + 600 * n);
+  }
+  $('reveal').addEventListener('click', function () { clearTimeout(revealTimer); $('reveal').classList.remove('on'); });
+
   function floats() {
     (S.fx || []).forEach(function (f) {
+      // Ransack's discards are shown as cards instead (reveal).
+      if (f.ransack) return;
       var host = f.summoner !== undefined ? $('summoner' + f.summoner) : document.querySelector('.tile[data-r="' + f.r + '"][data-c="' + f.c + '"]');
       if (!host) return;
       var s = document.createElement('span');
@@ -842,6 +1118,7 @@
     log.innerHTML = recent.map(function (l) { return '<div>T' + l.turn + ': ' + esc(l.text) + '</div>'; }).join('');
     log.scrollTop = log.scrollHeight;
     floats();
+    drawChoice();
     if (S.tutorial) Tutorial.sync();
   }
 
@@ -878,6 +1155,7 @@
       sel = null;
       SpellFX.unaim(true);
       showReach();
+      drawChoice();
       if (from && from.classList.contains('card')) from.classList.add('casting');
       Sfx.play('card-play');
       SpellFX.cast({
@@ -907,7 +1185,8 @@
   function announce(m) {
     if (m.card && actor() === BOT && m.type !== 'playLand' && m.type !== 'bottomCard') {
       var played = S.players[BOT].hand.filter(function (i) { return i.id === m.card; })[0];
-      if (played) {
+      // A stratagem is set face down, so the close-up doesn't show it (reveal shows the face-down card).
+      if (played && E.CARDS[played.c].type !== 'stratagem') {
         $('inspect').classList.remove('left');
         showCard(played.c, 'The enemy played this');
         revealPeek(2200);
@@ -959,6 +1238,7 @@
     if (m.type === 'move' && S.units.some(function (u) { return u.uid === m.unit; }) && E.legalMoves(S).some(function (x) { return x.unit === m.unit; })) sel = { kind: 'unit', id: m.unit };
     else sel = null;
     render();
+    reveal(revealsOf(prev, S));
     Polish.moved(prev, S, m, HUMAN);
     schedule();
   }
@@ -1123,6 +1403,12 @@
   function clickTile(el) {
     var r = +el.dataset.r, c = +el.dataset.c, moves = humanMoves();
     var u = S.units.filter(function (x) { return x.r === r && x.c === c; })[0], sm = selectedMoves(moves);
+    // A marked unit chooses that offering; anywhere else drops the choice, so another tile or target can be picked.
+    if (sel && sel.choice) {
+      var offer = u && sel.choice.filter(function (m) { return m.offer === u.uid; })[0];
+      if (offer) return apply(offer);
+      delete sel.choice;
+    }
     var stage = pickStage(sm);
     if (stage) {
       if (!stage.open[r + ',' + c]) { sel = null; return render(); }
@@ -1149,7 +1435,7 @@
       return m.type === 'ability' && sel.ability;
     });
     if (sel && sel.ability) hit = hit.filter(function (m) { return m.type === 'ability'; });
-    if (hit.length) return apply(hit[0]);
+    if (hit.length) return go(hit);
     if (!u && sel && sel.kind === 'card' && sm.some(function (m) { return m.type === 'summon' && m.target !== undefined && m.r === r && m.c === c; })) { sel.summonAt = { r: r, c: c }; return render(); }
     if (u && sel && sel.kind === 'card' && sm.some(function (m) { return m.r !== undefined && m.type === 'cast' && m.target === u.uid; })) { sel.castUnit = u.uid; return render(); }
     if (u && sel && sel.ability && sm.some(function (m) { return m.type === 'ability' && m.r !== undefined && m.target === u.uid; })) { sel.abUnit = u.uid; return render(); }
@@ -1199,7 +1485,7 @@
   });
   $('hand').addEventListener('click', function (e) {
     var t = e.target.closest('.card');
-    if (!t || casting || S.winner !== null || actor() !== HUMAN) return;
+    if (!t || casting || S.winner !== null || actor() !== HUMAN || S.players[HUMAN].picking || S.players[HUMAN].scrying) return;
     var id = +t.dataset.card;
     // During a response window, or in the command phase, only a card with somewhere to aim can be picked up.
     if (S.pending || S.phase === 'command') {
@@ -1218,8 +1504,8 @@
   });
   $('themStrip').addEventListener('click', function (e) {
     if (!e.target.closest('[data-summoner]')) return;
-    var m = selectedMoves(humanMoves()).filter(function (x) { return x.type === 'attackSummoner' || (x.type === 'cast' && x.summoner !== undefined); })[0];
-    if (m) apply(m);
+    var ms = selectedMoves(humanMoves()).filter(function (x) { return x.type === 'attackSummoner' || (x.type === 'cast' && x.summoner !== undefined); });
+    if (ms.length) go(ms);
   });
   document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-do]');
@@ -1245,6 +1531,13 @@
     if (d.ui === 'packs') { toMenu(); return Collection.page('packs'); }
     if (d.ui === 'stopModel') { if (thinking) thinking.abort(); return; }
     if (d.ui === 'clear') sel = null;
+    if (d.ui === 'unchoose' && sel) delete sel.choice;
+    if (d.ui === 'choose' && sel) return go(selectedMoves(humanMoves()).filter(d.what === 'summoner' ? function (m) { return m.type === 'cast' && m.summoner !== undefined; } : isPlainCast));
+    if (d.ui === 'surge' && sel && sel.choice) {
+      if (wheelX() !== null) sel.surgeX = wheelX();
+      var sm = sel.choice.filter(function (m) { return m.surge === sel.surgeX; })[0];
+      if (sm) return apply(sm);
+    }
     if (d.ui === 'ability') sel.ability = true;
     if (d.ui === 'noAbility') { sel.ability = false; sel.abUnit = null; }
     if (d.ui === 'relic') sel = { kind: 'relic', id: d.id };
@@ -1342,7 +1635,7 @@
   // The phone's menu also holds the rules, which close with a tap.
   $('menuRules').addEventListener('click', function () { $('menu').close(); setDrawer('rulesPanel'); });
   $('rulesPanel').addEventListener('click', function () { if (PHONE.matches) setDrawer(null); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (flippedKey && !$('start').hidden) turnStart(flippedKey); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closePeek(); setDrawer(null); if (S && sel && sel.choice) { delete sel.choice; render(); } if (flippedKey && !$('start').hidden) turnStart(flippedKey); } });
 
   // Each deck is the deck builder's card: its painting and name on the front. Selecting it turns it over to show its plan and
   // a Choose button (creator, 2026-11-13). Only one deck shows its back at a time.
@@ -1635,8 +1928,8 @@
   }
   window.GameUI = {
     frameHtml: frameHtml, fitCards: fitCards, ALIGNMENT: ALIGNMENT, TYPES: TYPES,
-    deckArt: function (k) { return noArt[DECK_ART[k]] ? null : artSrc(DECK_ART[k]); }, deckNote: function (k) { return Help.deck({ id: k }); },
-    artUrl: function (id) { return ART[id] && !noArt[id] ? artSrc(id) : null; },
+    deckArt: function (k) { return hasArt(DECK_ART[k]) ? artSrc(DECK_ART[k]) : null; }, deckNote: function (k) { return Help.deck({ id: k }); },
+    artUrl: function (id) { return hasArt(id) ? artSrc(id) : null; },
     warmAllArt: function () { trickle(6); },
     showStart: showStart, playChapter: playChapter, online: startOnline, inOnline: function () { return !!online && !!S && S.winner === null; }, sandbox: startSandbox, tutorial: startTutorial,
     modelReady: function () { return !!sample; },

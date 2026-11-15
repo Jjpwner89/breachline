@@ -152,6 +152,10 @@ The 2026-11-13 check followed free-order turns, the end-of-turn tile damage and 
 - **Gnosis 2, The Thornwardens:** two pathguards, a Thornbrake and a trapper in place of three Reedcrown grazers, and one land fewer.
 - **Vigil 3, The Warhorde:** three Orc raiders in place of the Clan outriders it got when the hex left red.
 
+The creature cards changed two decks on 2026-11-14, checked the same way with 400 games a chapter, before → after:
+- **The Elder Herd starter:** two Needlehips in place of the two Thicket boars, and the Fanback in place of the Shell-mountain tortoise. Genesis got about 3 points easier in every chapter: 79, 71, 63, 69, 66, 59 → 82, 76, 66, 73, 68, 62. Against the other starters and themes it went from 51% to 55%.
+- **Fervor 4, The red gorge:** three Needlehips in place of the three Thornwarden goblin scouts, which fit a herd better. The chapter moved from 64% to 66% over 800 games, inside the noise. Its prestige swap now turns the Needlehips into alderkin.
+
 - **The one-try clear** is every chapter won in a row with no retries, so it understates a real run. Before the retune it ran from under 1% (Genesis) to 13% (Vigil).
 - **Dominion's third chapter** (the salt causeway) is 8 points under its target and a little harder than its fourth.
 - **A person beats the bot by a wide margin.** The creator cleared Fervor on the old 30-card setup without the enemy ever damaging their summoner. The scripted bot trades on the board and rarely pushes through to the summoner, so these numbers compare chapters and campaigns rather than predict a person's results. It also rarely uses sacrifices well.

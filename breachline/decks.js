@@ -154,7 +154,7 @@ var Decks = (function () {
     { id: 'theme-armed', name: 'The armed road', note: 'Equipment, and Armed units that hit harder while they carry it.',
       list: [['land_w', 13], ['recruit', 3], ['glaive', 1], ['roadshield', 3], ['roadsquire', 3], ['spearman', 3], ['knight', 2], ['lioness', 1], ['sentinel', 3], ['muster', 2], ['oathbell', 1], ['shield', 3], ['sergeant', 1], ['cub', 1]] },
     { id: 'theme-lit', name: 'Cinder and slag', note: 'Lit units that explode when they die, burning ground and heavy hitters.',
-      list: [['land_r', 13], ['anoint', 3], ['slagheart', 2], ['firebrand', 3], ['kindle', 2], ['firecaller', 3], ['cinderhook', 3], ['raider', 2], ['berserker', 3], ['warchief', 2], ['giant', 1], ['captain', 1], ['martyr', 1], ['scorch', 1]] },
+      list: [['land_r', 13], ['anoint', 3], ['slagheart', 3], ['firebrand', 3], ['firecaller', 3], ['cinderhook', 3], ['raider', 3], ['berserker', 3], ['warchief', 2], ['giant', 1], ['captain', 1], ['martyr', 1], ['scorch', 1]] },
     { id: 'theme-burn', name: 'The long throw', note: 'Fast units, and spells that hit the enemy summoner directly.',
       list: [['land_r', 13], ['hurledbrand', 2], ['skyfalls', 2], ['clanoutrider', 2], ['raider', 3], ['berserker', 3], ['clanraiders', 3], ['warchief', 2], ['firebolt', 3], ['goblin', 3], ['firepot', 2], ['cinderfall', 2]] },
     { id: 'theme-winter', name: 'Winter glyphs', note: 'Freezing, snares and ranged attackers that hold the enemy in place.',
@@ -162,13 +162,13 @@ var Decks = (function () {
     { id: 'theme-longshot', name: 'Long sights', note: 'Longshot attackers and Artificers\' gear that strike from the back.',
       list: [['land_u', 13], ['marksman', 3], ['siegewalker', 2], ['ilvane', 1], ['fieldplate', 3], ['prism', 2], ['recruit', 2], ['chorister', 2], ['lampwright', 3], ['arcanist', 2], ['journeyman', 3], ['tideglass', 2], ['corewright', 2]] },
     { id: 'theme-carrion', name: 'The barrow feast', note: 'Sacrifice, and Carrion units that grow each time a unit dies.',
-      list: [['land_b', 13], ['mortuary', 3], ['ossuary', 2], ['hostess', 2], ['tender', 3], ['retainer', 2], ['colossus', 2], ['thrall', 3], ['harvester', 3], ['gravecaller', 2], ['rats', 2], ['raise', 2], ['barrowpriest', 1]] },
+      list: [['land_b', 13], ['mortuary', 3], ['ossuary', 3], ['hostess', 3], ['tender', 3], ['retainer', 2], ['colossus', 2], ['thrall', 3], ['harvester', 3], ['gravecaller', 2], ['exhumation', 2], ['barrowpriest', 1]] },
     { id: 'theme-charm', name: "The court's favour", note: 'Charming and buying enemy units, Veiled killers and Drain.',
       list: [['land_b', 13], ['temptress', 2], ['bought', 1], ['bailiff', 3], ['informant', 3], ['shutterassassin', 2], ['lynx', 3], ['noble', 3], ['envoy', 3], ['vashkar', 1], ['mourningveil', 3], ['squire', 3]] },
     { id: 'theme-rootfed', name: 'Rootfed herd', note: 'Extra lands, and Rootfed beasts that grow with every Overgrown ruin.',
       list: [['land_g', 15], ['mosshorn', 3], ['earthspeaker', 2], ['stag', 2], ['reedbank', 3], ['seedheart', 2], ['alderelder', 1], ['tortoise', 1], ['mossback', 2], ['herdmother', 1], ['wayfinder', 1], ['boar', 3], ['alderkin', 1], ['owl', 3]] },
     { id: 'theme-thorns', name: 'The Thornwardens', note: 'Thorns, Holding ground and ambushers that control where enemies can go.',
-      list: [['land_g', 13], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 3], ['thornbrake', 3], ['saboteur', 3], ['sapling', 2], ['ironbark', 2], ['grovetender', 2], ['alderkin', 2], ['seedfall', 1], ['goblinscout', 2]] },
+      list: [['land_g', 13], ['trapper', 3], ['pathguard', 3], ['overgrowth', 1], ['canopy', 3], ['thornbrake', 3], ['saboteur', 3], ['sapling', 2], ['ironbark', 2], ['grovetender', 2], ['alderkin', 2], ['seedfall', 1], ['vaultstalker', 2]] },
     // Six more from 2026-11-12, built around a theme first and then tuned to win 48% to 55% against the starters and themes
     // above. NEW_DECKS.md has how each one started and what changed.
     { id: 'theme-giants', name: "Giants' road", note: 'Green and red. Extra lands into hill giants, chieftains and the Elder dragon.',
@@ -182,7 +182,7 @@ var Decks = (function () {
     { id: 'theme-overwall', name: 'Over the wall', note: 'Fliers and fast raiders that go over the front line and straight for the summoner.',
       list: [['land_r', 13], ['clanraiders', 3], ['torchrunner', 3], ['lanner', 3], ['captain', 2], ['drake', 3], ['dragon', 1], ['raider', 3], ['goblin', 3], ['clanoutrider', 3], ['drummer', 3]] },
     { id: 'theme-intofire', name: 'Into the fire', note: 'Red and blue. Set the ground burning, then push enemies into it with Brightlance and the choristers.',
-      list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 3], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 2], ['wildfire', 2]] },
+      list: [['land_r', 8], ['land_u', 5], ['chorister', 3], ['brightlance', 3], ['harmonic', 2], ['scorch', 3], ['torchrunner', 3], ['firebrand', 1], ['salamander', 3], ['cinderwake', 1], ['cinderfall', 2], ['slagheart', 3], ['wildfire', 3]] },
     // Built 2026-11-12 for the creator's brother to play against them online: strong and simple first, then fun aimed spells.
     // It's open: anyone can play it in Exhibition and Multiplayer without owning its cards, which it doesn't give them.
     { id: 'theme-suncinder', open: true, name: 'Sun and cinder', note: 'White and red. A sturdy front line holds while aimed fire and light clear the way.',

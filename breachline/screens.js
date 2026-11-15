@@ -1,7 +1,7 @@
 // Main menu, deck builder and campaign map. Storage and the card pool come from Decks, runs from Campaign, card frames and game start from GameUI.
 var Screens = (function () {
   var E = Engine, root = document.getElementById('screen'), refresh = null, actions = {};
-  var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], TYPES = ['unit', 'instant', 'enchant', 'spell', 'relic', 'land'];
+  var COLOURS = ['W', 'U', 'B', 'R', 'G', 'N'], TYPES = ['unit', 'instant', 'enchant', 'spell', 'relic', 'stratagem', 'land'];
   var COLOUR_WORD = { W: 'white', U: 'blue', B: 'black', R: 'red', G: 'green', N: 'neutral' };
   var LAND_SHARE = 0.35;
   // Editor state. Filters survive leaving the editor, so they stay put when moving between decks.
@@ -821,7 +821,7 @@ var Screens = (function () {
     byId('dsum').innerHTML =
       '<div class="dcount"><b>' + size + '</b><span> of ' + (E.DECK_MIN === E.DECK_MAX ? E.DECK_MAX : E.DECK_MIN + '–' + E.DECK_MAX) + ' cards</span><span class="dready' + (problems.length ? '' : ' ok') + '">' + (problems.length ? esc(problems[0]) : 'Ready to play') + '</span></div>' +
       '<div class="dprog"><i style="width:' + Math.min(100, Math.round(size / E.DECK_MIN * 100)) + '%"></i></div>' +
-      '<p class="dline">Lands ' + st.lands + (size ? ' (' + Math.round(st.lands / size * 100) + '%)' : '') + TYPES.slice(0, 5).map(function (t) { return st.types[t] ? ' · ' + GameUI.TYPES[t] + 's ' + st.types[t] : ''; }).join('') + '</p>' +
+      '<p class="dline">Lands ' + st.lands + (size ? ' (' + Math.round(st.lands / size * 100) + '%)' : '') + TYPES.filter(function (t) { return t !== 'land'; }).map(function (t) { return st.types[t] ? ' · ' + GameUI.TYPES[t] + 's ' + st.types[t] : ''; }).join('') + '</p>' +
       curveHtml(st.curve) +
       missingHtml(list) +
       advice.map(function (a) { return '<p class="advice">' + a + '</p>'; }).join('') +

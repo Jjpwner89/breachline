@@ -5,7 +5,7 @@ var AI = (function () {
   var G = typeof Guides !== 'undefined' ? Guides : require('./guides.js');
   var MAX_PLAN = 40, MAX_SAY = 140, MAX_WHY = 900;
   var COMMAND = { move: 1, attack: 1, attackSummoner: 1, ability: 1 };
-  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise', 'relic', 'summoner'];
+  var FIELDS = ['card', 'unit', 'target', 'r', 'c', 'raise', 'relic', 'summoner', 'surge', 'empower', 'offer'];
   // One call per turn takes longer than a choice made while the player waits on a response, so those use the fast model.
   var CALLS = { turn: { modelTier: 'default', effort: 'low' }, decision: { modelTier: 'quick' } };
   // These won't clear up by asking again, so the scripted bot finishes the game.
@@ -216,6 +216,7 @@ var AI = (function () {
     var cast = E.legalMoves(v).filter(function (m) { return m.type === 'enchant' || m.type === 'cast'; });
     var passage = {};
     cast.forEach(function (m) {
+      if (m.empower || m.offer !== undefined || m.surge > 0) return;
       var c = card(p.hand.filter(function (i) { return i.id === m.card; })[0].c), extra;
       if (m.type === 'cast' && m.r !== undefined && !m.target) {
         if (passage[m.card]) return;
@@ -244,6 +245,16 @@ var AI = (function () {
       else if (m.raise) extra = 'returning ' + card(p.discard.filter(function (d) { return d.id === m.raise; })[0].c).name + ' {"type":"cast","card":' + m.card + ',"raise":' + m.raise + '}';
       else extra = '{"type":"cast","card":' + m.card + '}';
       lines.push('Cast ' + c.name + ' ' + extra);
+    });
+    // Empower, Surge and Offering are an extra field on a card's summon or cast.
+    var all = E.legalMoves(v);
+    p.hand.forEach(function (i) {
+      var c = card(i.c), ms = all.filter(function (m) { return m.card === i.id; }), off = {}, top = -1;
+      ms.forEach(function (m) { if (m.offer !== undefined) off[m.offer] = 1; if (m.surge > top) top = m.surge; });
+      if (ms.some(function (m) { return m.empower; })) lines.push(c.name + ': add "empower":1 to its move to pay ' + c.empower.extra + ' more mana for the empowered version. ' + c.text);
+      if (top > 0) lines.push(c.name + ': add "surge":X to its move, the extra mana to pay, from 0 to ' + top + '. ' + c.text);
+      var units = Object.keys(off).map(function (uid) { return named(v, unitBy(v, +uid)) + ' (' + uid + ')'; });
+      if (units.length) lines.push(c.name + ': you may add "offer":UNIT to its move to destroy one of your units and pay that unit\'s cost less. You could offer: ' + units.join(', ') + '.');
     });
     E.legalMoves(v).filter(function (m) { return m.type === 'relic'; }).forEach(function (m) {
       var r = p.relics.filter(function (x) { return x.id === m.relic; })[0];
@@ -325,7 +336,7 @@ var AI = (function () {
   function tiles(at) { return at ? at.map(function (t) { return t.join(','); }).sort().join(' ') : ''; }
   function matchMove(moves, m) {
     return moves.filter(function (x) {
-      return x.type === m.type && FIELDS.every(function (f) { return x[f] === undefined || x[f] === m[f]; }) && (!x.at || tiles(x.at) === tiles(m.at));
+      return x.type === m.type && FIELDS.every(function (f) { return x[f] === undefined || x[f] === m[f] || (f === 'surge' && x[f] === 0 && m[f] === undefined); }) && (!x.at || tiles(x.at) === tiles(m.at));
     })[0] || null;
   }
 
@@ -340,6 +351,9 @@ var AI = (function () {
 
   // A move in plain words, for the debug panel.
   function describe(v, m) {
+    return plainMove(v, m) + (m.empower ? ', empowered' : '') + (m.surge ? ', with X = ' + m.surge : '') + (m.offer !== undefined ? ', offering ' + named(v, unitBy(v, m.offer)) : '');
+  }
+  function plainMove(v, m) {
     var p = v.players[v.viewer], inHand = p.hand.filter(function (i) { return i.id === m.card; })[0];
     var u = unitBy(v, m.unit), t = unitBy(v, m.target), name = inHand ? card(inHand.c).name : 'card ' + m.card;
     var who = u ? named(v, u) : 'unit ' + m.unit, at = 'row ' + m.r + ', column ' + m.c;

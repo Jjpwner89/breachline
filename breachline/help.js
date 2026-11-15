@@ -10,7 +10,7 @@ var Help = (function () {
     white: 'Advance as one line: your lion folk and knights hit harder and take less damage beside each other, and clerics keep them standing.',
     red: 'Strike first and fast: cheap raiders charge in, fire spells clear the way, and giants and a dragon finish the job before your fragile army wears down.',
     blue: 'Fight from a distance: hold the enemy back with decoys and frost while Ranged and Longshot units shoot from where melee units can\'t strike back.',
-    black: 'Win the long trade: Drain heals your nobles as they fight, Carrion units grow as anything dies, and some cards cost your own life for an early edge.',
+    black: 'Win the long trade: Drain heals your nobles as they attack, Carrion units grow as anything dies, and some cards cost your own life for an early edge.',
     green: 'Play extra lands and growing units early, then win with beasts bigger than anything the enemy can match.',
     'theme-devotion': 'Keep healing: every heal makes your Devotion units permanently stronger, so a cleric beside them turns a slow army into a hard one.',
     'theme-armed': 'Equip your soldiers early: equipment makes its bearer stronger, and Armed units get another +1 / +1 while they carry it.',
@@ -61,7 +61,8 @@ var Help = (function () {
     spell: Engine.CONFIG.freeTurn ? 'Spell: cast it on your turn, then it\'s gone.' : 'Spell: cast in your play step, then it\'s gone.',
     instant: 'Instant: cast it any time, even on the enemy\'s turn, if you kept the mana.',
     enchant: 'Enchantment: attaches to a unit on either side, and goes when that unit dies. Equipment is the kind that\'s an object.',
-    relic: 'Relic: stays beside your summoner, off the grid, with a lasting effect.'
+    relic: 'Relic: stays beside your summoner, off the grid, with a lasting effect.',
+    stratagem: 'Stratagem: set it face down on your turn. It springs by itself when the enemy does what it names, then goes to the discard pile. You can have 2 set at once.'
   };
 
   // Conditions a unit can be under. Keywords are read from the cards' own rules text, so they stay current.
@@ -85,7 +86,20 @@ var Help = (function () {
     Loyal: 'Loyal: +1 attack and +1 health while you have another unit of its faction on the board.',
     Grows: 'Grows: gains attack and health at the start of your turn, a few times.',
     Charge: 'Charge: moves 1 extra tile on its first move.',
-    Errant: 'Errant: the units it summons land on a random tile of your back row.'
+    Errant: 'Errant: the units it summons land on a random tile of your back row.',
+    // Mechanics added 2026-11-15. A card's own text wins where it has one, as it carries that card's numbers.
+    Seasoned: 'Seasoned: each time it destroys a unit, it permanently gets +1 attack and +1 health, up to +3.',
+    Momentum: 'Momentum: +1 attack for each of your turns in a row it has attacked, up to +2. A turn without attacking resets it.',
+    Stratagem: 'Stratagem: set it face down. It springs by itself when the enemy does what it names. The enemy sees only that a card is set.',
+    Surge: 'Surge: pay any X more as you play it, for a bigger effect. You choose X on a wheel after picking where it goes.',
+    Empower: 'Empower: you may pay the extra mana it names for a stronger version.',
+    Recall: 'Recall: a unit goes back to its owner\'s hand. Its enchantments go to the discard pile.',
+    Ransack: 'Ransack: the enemy discards random cards, shown to both players. Lands go only if nothing else is left.',
+    Reap: 'Reap: removes unit cards from your discard pile for good, and grows for each one.',
+    Offering: 'Offering: as you summon it, you may destroy one of your units; it costs that unit\'s cost less (at least 1).',
+    Hired: 'Hired: at the start of each of your turns you automatically pay its upkeep in mana. If you can\'t, it leaves.',
+    'Deep roots': 'Deep roots: once you have enough lands, it permanently grows.',
+    Cadence: 'Cadence: costs less if you have already cast a spell this turn.'
   };
   var TILES = {
     burn: 'Burning ground: 1 damage to a unit that ends a move here or ends its turn here, unless it\'s Fireproof.',
@@ -181,6 +195,9 @@ var Help = (function () {
       return 'The discard pile: spent spells and fallen units. When the deck runs out, these are shuffled back in.';
     }],
     ['.plate .relic', function () { return 'A relic: it stays beside its summoner, off the grid, with a lasting effect.'; }],
+    ['.plate .strat', function (el) { return el.classList.contains('hidden') ? 'The enemy\'s stratagems, set face down. Each springs by itself on one of your moves: an attack, a summon or a spell.' : 'Your stratagem, set face down. It springs by itself when the enemy does what it names. The enemy sees only that a card is set.'; }],
+    ['#choice .wtrack', function () { return 'Surge: turn the wheel to choose X, the extra mana you pay. The effect and total cost follow it.'; }],
+    ['#reveal', function () { return 'Cards just turned up: a Ransack\'s discards, or a stratagem. Tap to put them away.'; }],
     ['.plate .strike', function () { return 'Your selected unit is on the enemy back row, so it can strike the summoner.'; }],
     ['.plate', function (el) { return you(el) ? 'You, the summoner. An enemy unit on your back row can strike you.' : 'The enemy summoner, unseen across the table. Only a unit on their back row, the top row, can strike them.'; }],
     ['#phases .step', function (el) {

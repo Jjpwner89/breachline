@@ -73,7 +73,8 @@ var Polish = (function () {
   // Equipment has its own; an enchantment chimes on your own unit and turns cold on an enemy's.
   var ICE = ['frost', 'rimebolt', 'frostbreak', 'whitemorning'], LIGHTNING = ['stormstrike', 'brightlance', 'harmonic'];
   function castOf(card, onEnemy) {
-    if (card.type === 'land' || card.type === 'unit') return null;
+    // A stratagem is set face down, so it makes only the card sound.
+    if (card.type === 'land' || card.type === 'unit' || card.type === 'stratagem') return null;
     if (card.equipment) return 'equip';
     if (card.type === 'enchant') return card.enemyOnly || onEnemy ? 'curse' : 'enchant';
     var el = element(card);

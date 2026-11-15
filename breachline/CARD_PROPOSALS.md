@@ -661,26 +661,66 @@ New rules these cards use:
 | 214 | Charter-maker | Riverfolk |  | U | Unit | 2 | 1 | 2 / 3 | When summoned: look at the top 3 cards of your deck and put each on the top or the bottom | Small |
 | 215 | Eel-netter | Riverfolk |  | G | Unit | 2 | 1 | 2 / 3 | Ability: put a snare on an empty tile within 2 tiles, for 2 turns | None: snare |
 
-### Creature cards, proposed 2026-11-14
-
-The creator picked these animals from the accepted collection on 2026-11-14. Paintings are briefed in [ART_BRIEFS_SET13.md](art/ART_BRIEFS_SET13.md). Stats are starting points for the usual paired balance check; none is in the game yet. The Ashborn kennel-hand, with Copper hounds, waits on who makes the hounds.
-
-| # | Card | Animal | Faction | Colour | Type | Cost | Wants | Stats | Rules | New code |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 216 | Vaultstalker | LG1-4 |  | G | Unit, uncommon | 3 | 1 | 3 / 3 | Ambush | None |
-| 217 | Needlehip | BP1-5 |  | G | Unit, common | 2 | 1 | 2 / 2 | Hunt | None |
-| 218 | Siltwright warriors | E6-A |  | G | Unit, common | 1 | 1 | 1 / 1 | Stand together | None |
-| 219 | Woodland breaker | G2-4 |  | G | Unit, rare | 5 | 2 | 4 / 6 | Overrun | None |
-| 220 | Fanback | MG6 |  | G | Unit, legendary | 6 | 2 | 4 / 7 | When summoned: put a land from your deck into your hand | Small: deck search |
-| 221 | Veilwing | MN2-5 | Lantern Conclave | U | Unit, rare | 5 | 2 | 3 / 5 | Flying. Harnessed for survey flights (creator, 2026-11-14) | None |
-| 222 | Host-bound | E5-B |  | B | Enchantment on an enemy unit, uncommon | 2 | 1 |  | That unit takes 1 damage at the start of each of its owner's turns | Small, if no enemy-enchant upkeep damage exists |
-| 223 | Gall season | ER2, E3-A |  | G | Enchantment, common | 2 | 1 |  | Your unit gains Grows | None |
-| 224 | Riverfolk specimen-keeper | ER5 | Lantern Conclave | U | Unit, common | 2 | 1 | 1 / 3 | Study | None |
-
 Balance checks, 2026-11-13. The cards went live first and were then checked at 2000 games each (lift ± about 1.9). These changed: the peat-cutter, Salt-road caravaneer, Sluice diver and Charter-maker landed in band; the moor spell dropped to cost 1 and gained 1 damage; Caravan head became a 4/4; the Master mason, Ferry-keeper and Longhouse keeper each lost 1 health and sit at their band's top edge, within the run's noise; the Eel-netter gained 1 health and reach; and Longhouse hospitality dropped to cost 1 and heals 3. The moor spell and hospitality still sit about 0.5 under the uncommon band. The Moot elder scored about 1.8 over the common band at cost 5 whether it was 5/6, 5/5, 4/6 or 4/5, so the creator raised its cost to 6, which brings it into band (lift +0.2).
 
 Changed alongside them:
 
 - **Grove tender:** its pay-1 ability, usable every turn, becomes "When summoned: an ally next to it permanently gets +1 attack and +1 health", and it costs 3 instead of 4 with a 1/2 body. The creator found the repeat too strong, since it can grow one unit every turn. In the balance check (2026-11-13), +2/+2 stayed about 4 points over the uncommon band whatever its body, so the creator chose +1/+1 on a 1/2 (lift +0.8). The Guild improver likewise became a 1/4 giving +2 health (lift −0.5), down from a 2/4 giving +3.
 
+### Creature cards, proposed 2026-11-14
+
+The creator picked these animals from the accepted collection on 2026-11-14. Paintings are briefed in [ART_BRIEFS_SET13.md](art/ART_BRIEFS_SET13.md). Seven went into the game on 2026-11-14 as below, live first and balanced after. The Siltwright warriors wait for new art. The Veilwing went live with its painting on 2026-11-14 at 7 mana (+2.5), when the legendary band was +1.0 to +3.5. Once the creator raised the band to +2 to +5, it went back to 6 mana: its lift there is +5.1, at the top of the band and within the noise. Trimming it to 3 / 6 or 4 / 5 at 6 mana measured about +4.3. The Ashborn kennel-hand, with Copper hounds, waits on who makes the hounds.
+
+| # | Card | Animal | Faction | Colour | Type | Cost | Wants | Stats | Rules | New code |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 216 | Vaultstalker | LG1-4 |  | G | Unit, uncommon | 3 | 1 | 3 / 4 | Ambush | None |
+| 217 | Needlehip | BP1-5 |  | G | Unit, common | 2 | 1 | 2 / 3 | Hunt | None |
+| 218 | Siltwright warriors | E6-A |  | G | Unit, common | 1 | 1 | 1 / 1 | Stand together | None |
+| 219 | Woodland breaker | G2-4 |  | G | Unit, rare | 5 | 2 | 5 / 6 | Overrun | None |
+| 220 | Fanback | MG6 |  | G | Unit, legendary | 5 | 2 | 5 / 7 | When summoned: put a land from your deck into your hand | Small: deck search |
+| 221 | Veilwing | MN2-5 | Lantern Conclave | U | Unit, legendary | 6 | 2 | 4 / 6 | Flying. When summoned: look at the top 3 cards of your deck and put each on the top or the bottom, then draw a card. Harnessed for survey flights; the creator wants it legendary (2026-11-14) | None: Flying and the Charter-maker's look |
+| 222 | Host-bound | E5-B |  | B | Enchantment on an enemy unit, uncommon | 1 | 1 |  | That unit takes 1 damage at the start of each of its owner's turns | Small: upkeep damage |
+| 223 | Gall season | ER2, E3-A |  | G | Enchantment, common | 2 | 1 |  | Your unit gets +1 attack and +1 health at the start of your turn, up to twice. Full Grows (+1 / +2, three times) looked too strong for 2 mana | Small: a slower Grows |
+| 224 | Riverfolk specimen-keeper | ER5 |  | U | Unit, common | 2 | 1 | 1 / 3 | When summoned: draw a card. Ability: Sift, as the Reedcrown grazer | None |
+
+Balance checks, 2026-11-14, at 2000 games each (lift ± about 1.9). Every card but Gall season first came in under its band, and was raised:
+- **Needlehip:** 2 / 2 to 2 / 3, from −2.5 to −0.9.
+- **Vaultstalker:** 3 / 3 to 3 / 4, from −1.4 to +1.2, just over the uncommon top and well inside the noise.
+- **Woodland breaker:** 4 / 6 to 5 / 6, from −0.8 to −0.2.
+- **Fanback:** 6 mana 4 / 7 to 5 mana 5 / 7, from −0.7 to +2.1.
+- **Host-bound:** cost 2 to 1, from −1.6 to +0.2.
+- **Riverfolk specimen-keeper:** Sift alone measured −4.7, and −4.3 as a 1 / 4. Study instead measured +7.7. Drawing a card when summoned, as well as Sift, measured −0.6.
+- **Gall season:** −0.6 as built, in band.
+
 Left out on purpose: Stonehorn, the least-liked design; Tidevault, which needs a smaller design first; and Spindlejack and Dawnsail, which stay out of combat. The Roof glider has no card yet, and its rules are still open.
+
+### Cards for the new mechanics, proposed 2026-11-14
+
+Each card uses a mechanic the creator liked on 2026-11-14, on a statline that passed a paired balance check (1000 games with the card and 1000 without, lookahead bot; lift ± about 2). Sonnet playtesters played the mechanics in ten games. Paintings are briefed in [ART_BRIEFS_SET16.md](art/ART_BRIEFS_SET16.md). The creator voted on 2026-11-15, and the approved cards are in the game; #247 and #248 were added that day as the two cards that pull from the discard pile, and have no paintings briefed yet. Parked mechanics: Eager, Striker, Trade in and Overreach.
+
+| # | Brief | Card | Alignment | Faction | Type | Cost | Stats | Rules | Mechanic | Lift |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 225 | M1 | Oath veteran | Vigil | Sunmane Oath | Unit, common | 3 | 2 / 4 | Seasoned: each time it destroys a unit, it permanently gets +1 attack and +1 health, up to +3. | Seasoned | -1.1 |
+| 226 | M2 | Still Flame duelist | Vigil | Still Flame | Unit, uncommon | 3 | 2 / 4 | Drain: heals for the damage it deals. (Grace removed and health raised on 2026-11-15.) | Drain | +0.8 before the change |
+| 227 | M3 | Held spears | Vigil | Sunmane Oath | Stratagem, common | 2 |  | Stratagem (set face down; the enemy sees that one is set): when an enemy attacks one of your units or your summoner, the attacker takes 3 damage first. | Stratagem | +0.2 |
+| 228 | M4 | Second working | Gnosis | Lantern Conclave | Spell, uncommon | 2 |  | 3 damage to an enemy unit. Cadence: costs 1 less if you have already cast a spell this turn. | Cadence | +0.4 |
+| 229 | M5 | Sent home | Gnosis | Lantern Conclave | Spell, common | 1 |  | Recall: return a unit to its owner's hand. Its enchantments go to the discard pile. | Recall | -1.2 |
+| 230 | M6 | Frost latch | Gnosis | Lantern Conclave | Stratagem, uncommon | 2 |  | Stratagem: when an enemy summons a unit, it takes 3 damage and is frozen through its next turn. | Stratagem | -0.9 |
+| 231 | M7 | Counted words | Gnosis | Lantern Conclave | Stratagem, common | 1 |  | Stratagem: when the enemy casts a spell or enchantment, draw 2 cards. | Stratagem | -0.7 |
+| 232 | M8 | Writ of seizure | Dominion | Ashen Court | Spell, uncommon | 3 |  | Ransack 2: the enemy discards 2 random cards (lands only if they hold nothing else). | Ransack | +0.5 |
+| 233 | M9 | Ashen Court confiscator | Dominion | Ashen Court | Unit, rare | 3 | 1 / 2 | Ransack: when summoned, the enemy discards a random card (a land only if they hold nothing else). | Ransack | +1.8 |
+| 234 | M10 | Gathered host | Dominion | Gravebound | Unit, rare | 6 | 4 / 5 | Offering: as you summon it, you may destroy one of your units; it costs that unit's cost less (at least 1). | Offering | +1.8 |
+| 235 | M11 | Ashborn gleaner | Dominion | Ashen Court | Unit, rare | 4 | 2 / 3 | Reap 3: when summoned, remove up to 3 unit cards from your discard pile for good; it gets +1 attack and +1 health for each. | Reap | +1.8 |
+| 236 | M12 | Pit digger | Dominion | Gravebound | Unit, uncommon | 2 | 2 / 2 | When summoned: return a card of your choice from your discard pile to your hand. (Changed on 2026-11-15 from milling 2.) | Discard pull | +1.2 before the change |
+| 237 | M13 | Waiting noose | Dominion | Ashen Court | Stratagem, uncommon | 2 |  | Stratagem: when an enemy summons a unit, it takes 3 damage. | Stratagem | +0.5 |
+| 238 | M14 | Rising squall | Fervor | Cinder Clans | Spell, uncommon | 1 |  | Surge: pay X more as you cast it. 1 damage to an enemy unit, plus 1 for each X. | Surge | +0.7 |
+| 239 | M15 | Thrown boulder | Fervor | Warhorde | Spell, uncommon | 1 |  | 2 damage to an enemy unit. Empower 3: you may pay 3 more for 4 damage instead. | Empower | +0.9 |
+| 240 | M16 | Streak raider | Fervor | Warhorde | Unit, rare | 2 | 2 / 3 | Momentum: +1 attack for each of your turns in a row it has attacked, up to +2. A turn without attacking resets it. | Momentum | +1.5 |
+| 241 | M17 | Hired shieldman | Neutral |  | Unit, rare | 3 | 4 / 4 | Hired 1: at the start of each of your turns you automatically pay 1 mana for it; if you cannot, it leaves. | Hired | +1.4 |
+| 242 | M18 | Hired company | Neutral |  | Unit, rare | 4 | 5 / 5 | Hired 2: at the start of each of your turns you automatically pay 2 mana for it; if you cannot, it leaves. | Hired | +1.5 |
+| 243 | M19 | Ploughback | Genesis | Elder Herd | Unit, common | 2 | 2 / 2 | Deep roots: once you have 5 lands, it permanently gets +2 attack and +2 health. | Deep roots | -1.0 |
+| 244 | M20 | Foldstride | Genesis | Elder Herd | Unit, common | 3 | 2 / 3 | Deep roots: once you have 6 lands, it permanently gets +3 attack and +3 health. | Deep roots | -0.5 |
+| 245 | M21 | Salt-flat migrant | Genesis | Elder Herd | Unit, uncommon | 3 | 3 / 3 | Empower 3: you may pay 3 more as you summon it; it is a 6/6 instead. | Empower | +0.0 |
+| 246 | M22 | Gravelmouth | Genesis | Elder Herd | Unit, rare | 3 | 2 / 2 | Surge: pay X more as you summon it; it gets +1 attack and +1 health for each X. | Surge | +0.7 |
+| 247 |  | Exhumation (working name) | Dominion | Gravebound | Spell, uncommon | 2 |  | Return up to 2 unit cards of your choice from your discard pile to your hand. | Discard pull | In the game. Cut from 3 mana to 2 on 2026-11-15 (lift −1.4 at 3, −1.1 ± 2.0 at 2). An enabler, so judge it by its deck: two copies in place of Barrow rats lift The barrow feast from 43.1% to 44.8% (± 2.7), added to that list the same day. |
+| 248 |  | Gravebound bone-picker (working name) | Dominion | Gravebound | Unit, common | 3 | 2 / 3 | When summoned: return a spell of your choice from your discard pile to your hand. | Discard pull | being checked |
