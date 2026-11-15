@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "animals": 57,
+  "animals": 60,
   "companions": 4,
   "cards": [
     {
@@ -1226,6 +1226,27 @@
       ]
     },
     {
+      "code": "OX1",
+      "name": "Broadneck",
+      "file": "assets/set13-broadneck.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "Selected ox-like working animal with heavy shoulders, a compact body, mixed bristled and leathery covering, spreading feet and a practical fitted harness. Broadneck is a working name.",
+      "size": "Large working animal",
+      "source": "OX1",
+      "group": "Recent picks",
+      "status": "Accepted reference",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b"
+    },
+    {
       "code": "MN2-5",
       "name": "Veilwing",
       "file": "assets/set13-veilwing-approved.png",
@@ -1245,23 +1266,6 @@
       "group": "Recent picks",
       "status": "Approved creature reference; S13-06-L1 final card art",
       "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
-      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
-      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-veilwing-approved.png",
-      "source_kind": "full",
-      "selected_cells": [
-        1
-      ],
-      "ecology": {
-        "zone": "aerial",
-        "role": "Diet open",
-        "tag": "Giant flier",
-        "note": "Enormous graceful magically attuned Gnosis beast. Nature-minded practitioners can form a respectful voluntary connection with it; this individual willingly works with them. Specific powers, diet, range and flight mechanics remain open.",
-        "basis": "Creator visual selection and explicit Gnosis relationship direction, 2026-11-14",
-        "approved_grouping": true
-      },
-      "world_status": "established_animal_reference",
-      "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
-      "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
       "anatomy_decision": {
         "date": "2026-11-14",
         "source": "S13-06-VA4, explicitly approved as the reference",
@@ -1279,13 +1283,44 @@
         "supersedes": "Earlier one-dorsal arrangements, three/four-tail rules and VA1-VA3 short-body proportion targets.",
         "supporting_studies": "VA5 and VA6 support the exact approved VA4 reference; their projections do not redefine it."
       },
-      "pending_revisions": [],
-      "pending_flight_studies": [],
       "visual_direction_reference": {
         "code": "S13-06-VA4",
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
         "scope": "Creator-approved identity, anatomy, proportions, colour and harness."
       },
+      "historical_flight_references": [
+        {
+          "code": "S13-06-F1",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-cycle-f1.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        },
+        {
+          "code": "S13-06-F2",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-maneuvers-f2.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        }
+      ],
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-veilwing-approved.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "ecology": {
+        "zone": "aerial",
+        "role": "Diet open",
+        "tag": "Giant flier",
+        "note": "Enormous graceful magically attuned Gnosis beast. Nature-minded practitioners can form a respectful voluntary connection with it; this individual willingly works with them. Specific powers, diet, range and flight mechanics remain open.",
+        "basis": "Creator visual selection and explicit Gnosis relationship direction, 2026-11-14",
+        "approved_grouping": true
+      },
+      "world_status": "established_animal_reference",
+      "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
+      "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "pending_revisions": [],
+      "pending_flight_studies": [],
       "latest_anatomy_study": {
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/",
         "notes": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/ANATOMY_NOTES.txt",
@@ -1305,6 +1340,48 @@
         "live_installation": false
       },
       "name_status": "Working name; no replacement selected"
+    },
+    {
+      "code": "M20-R1",
+      "name": "Mauldrin",
+      "file": "assets/set16-m20-r1-adult-cub.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A broad, heavy adult rests beside its small cub. Both have a rounded face, enormous clawed paws and a layered russet-and-cream mantle; the cub is clearly the same species.",
+      "size": "Large; adults far heavier than cubs (exact size open)",
+      "source": "M20-R1",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88"
+    },
+    {
+      "code": "M21-23",
+      "name": "Talloch",
+      "file": "assets/set16-m21-23-v5.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A huge feathered heavyweight with a raised neck and crest, a slate, cream and ochre feathered body, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. Use v5; the name is open.",
+      "size": "Huge (exact size open)",
+      "source": "M21-23 v5",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29"
     }
   ],
   "sources": [
@@ -1328,7 +1405,8 @@
       "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
       "kind": "grid6",
       "selected": [
-        1
+        1,
+        5
       ],
       "rejects": [],
       "file": "assets/final-selected-mn2-freer-giants.png",
@@ -1341,7 +1419,6 @@
         "2": "Set aside / not selected",
         "3": "Set aside / not selected",
         "4": "Set aside / not selected",
-        "5": "Set aside / not selected",
         "6": "Set aside / not selected"
       }
     },
@@ -2085,6 +2162,69 @@
       ]
     },
     {
+      "code": "OX1",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/oxlike-working-animal-reference.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set13-broadneck.png",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "S13-06-F1",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-cycle-f1.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/veilwing-flight-cycle-f1.png",
+      "sha256": "bc9769a3dd82fa7945b656c45f72c1e460bcf2485f2431421544ae36531173d6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Historical approval; sail count superseded"
+    },
+    {
+      "code": "S13-06-F2",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-maneuvers-f2.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/veilwing-flight-maneuvers-f2.png",
+      "sha256": "ae52d524962fee60dff3c55ecd22a7daf7a4de9b58bbc5959f630190dad4b9fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Historical approval; sail count superseded"
+    },
+    {
+      "code": "S13-06-P8",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set13-veilwing-liked-p8.png",
+      "sha256": "d253abe8437aa3d4101f27b8454f09c9346c1b5699eeab285c09588b96d6c590",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Liked base; add right shoulder wing and slightly lengthen torso"
+    },
+    {
       "code": "S13-06-VA4",
       "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
       "relative_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
@@ -2100,6 +2240,40 @@
         1024
       ],
       "status": "Creator-approved definitive creature reference"
+    },
+    {
+      "code": "M20-R1",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+      "relative_path": "art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set16-m20-r1-adult-cub.png",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Creator-selected reference, finalized 2026-11-15"
+    },
+    {
+      "code": "M21-23",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png",
+      "relative_path": "art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set16-m21-23-v5.png",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Creator-selected reference (v5), finalized 2026-11-15"
     }
   ],
   "review_policy": "Original images are unchanged. X overlays hide rejected and unselected cells, labelled by their true status.",
@@ -2169,5 +2343,23 @@
     "current_reference_index": "animal-reference-index.json"
   },
   "world_reference_use": "Selected animals are part of the world and active references for future cards, concept art and background wildlife. Consult this collection first, especially for Genesis cards.",
-  "updated_date": "2026-11-14"
+  "updated_date": "2026-11-15",
+  "archived_sources": [
+    {
+      "code": "S13-06-R3",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-anatomy-study-v3.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set13-veilwing-anatomy.png",
+      "sha256": "2833bc5e9c6a16ce6c72a51c09631a1aefdf18f417ba0939ef561a1dbf79bad2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Superseded incomplete anatomy"
+    }
+  ]
 }

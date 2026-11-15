@@ -303,8 +303,8 @@ var Engine = (function () {
     unit('hiredshield', 'Hired shieldman', 'N', 3, 0, 4, 4, { hired: 1, text: 'Hired 1: at the start of each of your turns you automatically pay 1 mana for it. If you cannot, it leaves.' }),
     unit('hiredcompany', 'Hired company', 'N', 4, 0, 5, 5, { hired: 2, text: 'Hired 2: at the start of each of your turns you automatically pay 2 mana for it. If you cannot, it leaves.' }),
     unit('ploughback', 'Ploughback', 'G', 2, 1, 2, 2, { roots: { lands: 5, atk: 2, hp: 2 }, text: 'Deep roots: once you have 5 lands, it permanently gets +2 attack and +2 health.' }),
-    unit('foldstride', 'Foldstride', 'G', 3, 1, 2, 3, { roots: { lands: 6, atk: 3, hp: 3 }, text: 'Deep roots: once you have 6 lands, it permanently gets +3 attack and +3 health.' }),
-    unit('saltmigrant', 'Salt-flat migrant', 'G', 3, 1, 3, 3, { empower: { extra: 3, fx: { atk: 6, hp: 6 } }, text: 'Empower 3: you may pay 3 more as you summon it; it is a 6 / 6 instead.' }),
+    unit('foldstride', 'Mauldrin', 'G', 3, 1, 2, 3, { roots: { lands: 6, atk: 3, hp: 3 }, text: 'Deep roots: once you have 6 lands, it permanently gets +3 attack and +3 health.' }),
+    unit('saltmigrant', 'Talloch', 'G', 3, 1, 3, 3, { empower: { extra: 3, fx: { atk: 6, hp: 6 } }, text: 'Empower 3: you may pay 3 more as you summon it; it is a 6 / 6 instead.' }),
     unit('gravelmouth', 'Gravelmouth', 'G', 3, 1, 2, 2, { surge: { per: { atk: 1, hp: 1 } }, text: 'Surge: pay any X more as you summon it; it gets +1 attack and +1 health for each X.' }),
     // Cards only ever added to a hand by another card. They're conjured, and never go in a deck.
     { id: 'spark', name: 'Spark', type: 'spell', colour: 'U', cost: 1, wants: 0, blast: 1, token: true, text: '1 damage to an enemy unit.' },

@@ -1,0 +1,40 @@
+{
+  "code": "M20-R1",
+  "name_status": "Mauldrin was chosen by the creator on 2026-11-15; Hearthmantle and Brackenmaw were earlier working names.",
+  "date": "2026-11-15",
+  "status": "creator_selected_reference_finalized",
+  "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+  "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+  "original_wip": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-hearthmantle-adult-cub-v1.png",
+  "concept_source": {
+    "code": "M20-5",
+    "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-5-selected-lineup.png",
+    "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-lineup.png",
+    "source_kind": "grid6",
+    "selected_cell": 5,
+    "rect": [
+      0.3333333333333333,
+      0.5,
+      0.3333333333333333,
+      0.5
+    ],
+    "sha256": "a7cc2c861026687670009af7828a43e73221225868cdd0bb5764c586e681f473",
+    "other_cells": "unselected, not rejected"
+  },
+  "description": "A broad, heavy adult rests beside its small cub. Both have a rounded face, enormous clawed paws and a layered russet-and-cream mantle; the cub is clearly the same species.",
+  "keep": "Keep the broad adult, enormous paws, rounded face, layered russet-and-cream mantle and a recognizably same-species cub. Mouth experiments were for new heavyweights, not M20.",
+  "ecology": {
+    "zone": "woodland",
+    "role": "Omnivore",
+    "tag": "Super-bear omnivore",
+    "note": "Omnivorous, with a bear-like life cycle: small cubs grow into far heavier, more powerful adults. Lives mainly in forests and also ranges through hills and plains. Precise size, growth rate, lifespan, breeding, hibernation and mantle biology remain open. Not a literal Earth bear, and not a rooted or sedentary animal.",
+    "basis": "Creator direction and selection of M20-R1 for finalization, 2026-11-15",
+    "approved_grouping": true
+  },
+  "card_assignment": "Card 244 / M20 (id foldstride), Deep roots; card painting not yet generated.",
+  "card_art_status": "not_generated",
+  "creator_selection": "let's send the first design and the other one to claude to finalize — m20-r1 and number 2 with the articulated legs",
+  "handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/HANDOFF.txt",
+  "exact_prompt": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-followup-round2-manifest.json",
+  "name": "Mauldrin"
+}

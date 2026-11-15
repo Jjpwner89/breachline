@@ -1,3 +1,9 @@
+SET 16 SELECTED ANIMALS, 2026-11-15
+M20-R1 Mauldrin and M21-23 v5 Talloch, a feathered heavyweight, are selected world references in set16-selected-2026-11-15/, with m20-r1-selection.json and m21-23-selection.json. Their card paintings are not generated yet.
+
+LATEST FINAL CARD ART — SET 16 M2, 2026-11-15
+Still Flame duelist M2 v7 is approved unchanged in set16-selected-2026-11-15/. Exact selection: ../CARD_ART_FINAL_SET16.json. This approval covers M2 only; the other 21 Set 16 paintings remain pending.
+
 LATEST FINAL SPELL ART — SPARK, 2026-11-13
 SP1 is approved unchanged in spark-2026-11-13/. Open index.html for the painting; ../CARD_ART_FINAL_SPARK.json records its exact file and hash. This accepts artwork for card building; it does not install it into the live card.
 
@@ -397,3 +403,5 @@ SET 14 WILDLIFE — FINAL AND INSTALLED — 2026-11-14
 Four campaign maps and three basic lands are final and installed in the game.
 Gallery and exact selections: set14-wildlife-maps-and-lands-2026-11-14/index.html
 Originals, local-composite verification and installation hashes are retained in that folder.
+
+Set 13 selected animals and card paintings (2026-11-14): set13-selected-2026-11-14/prompts-and-manifest.json. Twelve selected images include Broadneck, the aligned Veilwing anatomy study, seven card paintings and three background-wildlife edits. Final Veilwing card painting remains in WIP for review.

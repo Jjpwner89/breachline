@@ -1,0 +1,35 @@
+{
+  "code": "M21-23",
+  "version": 5,
+  "name_status": "Talloch was chosen by the creator on 2026-11-15.",
+  "date": "2026-11-15",
+  "status": "creator_selected_reference_finalized",
+  "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png",
+  "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+  "original_wip": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v5.png",
+  "supporting_references": [
+    {
+      "code": "M21-23 v2",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v2-leg-support.png",
+      "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+      "purpose": "Supports the articulated-leg build; v5 is the current reference."
+    }
+  ],
+  "description": "A huge feathered heavyweight with a raised neck and crest, a slate, cream and ochre feathered body, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. Use v5; the name is open.",
+  "keep": "Keep the raised neck and crest, slate, cream and ochre feathers, compact closed muzzle, powerful articulated legs and broad furred forepaws with visible stout, gently curved bear-like claws. Not the v3 talons or v4 tiny claw tips; never restore the original dangling mouth.",
+  "ecology": {
+    "zone": "unplaced",
+    "role": "Diet open",
+    "tag": "Feathered heavyweight",
+    "note": "Diet, habitat, exact size and life cycle have not been fixed. Do not carry M20's forest omnivore ecology over to it.",
+    "basis": "Creator selection of M21-23 (number 2, articulated legs) for finalization, 2026-11-15",
+    "approved_grouping": true
+  },
+  "card_assignment": "Card 245 / M21 (id saltmigrant), Empower; card painting not yet generated.",
+  "card_art_status": "not_generated",
+  "not_selected": "Highneck (M21-22) and the mane-backed M21-26 are retained alternatives, not selected or rejected.",
+  "creator_selection": "let's send the first design and the other one to claude to finalize — m20-r1 and number 2 with the articulated legs",
+  "handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/HANDOFF.txt",
+  "exact_prompt": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-bear-claws-round11-manifest.json",
+  "name": "Talloch"
+}

@@ -335,7 +335,7 @@
         "zone": "coast",
         "role": "Animal feeders",
         "tag": "Shore fisher",
-        "note": "Fish-eating shore hunter is selected; coastal versus freshwater shore remains open.",
+        "note": "Fish-eating shore hunter is selected; coastal versus freshwater shore remains open. Creator, 2026-11-14: the cold northern Greyhide ferry coast is too cold for Shore hunter; do not use that setting. Exact wider range remains open.",
         "basis": "Creator-approved ecology grouping, 2026-11-13; explicit unknowns remain open",
         "previous_basis": "Working placement from the existing brief",
         "approved_grouping": true
@@ -2152,6 +2152,37 @@
       "world_status": "established_reference"
     },
     {
+      "code": "OX1",
+      "name": "Broadneck",
+      "file": "assets/set13-broadneck.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "Selected ox-like working animal with heavy shoulders, a compact body, mixed bristled and leathery covering, spreading feet and a practical fitted harness. Broadneck is a working name.",
+      "size": "Large working animal",
+      "source": "OX1",
+      "group": "Recent picks",
+      "status": "Accepted reference",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b",
+      "state": "selected",
+      "ecology": {
+        "zone": "settlement",
+        "role": "Working animal",
+        "tag": "Draft / pack",
+        "note": "For farms and roads beyond the salt plains; exact regional range, husbandry and diet remain open.",
+        "basis": "Creator selected reference and requested working role, 2026-11-14; exact biology and regional range remain open",
+        "approved_grouping": true
+      },
+      "world_status": "established_reference"
+    },
+    {
       "code": "MN2-5",
       "name": "Veilwing",
       "file": "assets/set13-veilwing-approved.png",
@@ -2171,12 +2202,7 @@
       "group": "Recent picks",
       "status": "Approved creature reference; S13-06-L1 final card art",
       "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
-      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
-      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-veilwing-approved.png",
-      "source_kind": "full",
-      "selected_cells": [
-        1
-      ],
+      "state": "selected",
       "ecology": {
         "zone": "aerial",
         "role": "Diet open",
@@ -2186,8 +2212,6 @@
         "approved_grouping": true
       },
       "world_status": "established_reference",
-      "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
-      "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
       "anatomy_decision": {
         "date": "2026-11-14",
         "source": "S13-06-VA4, explicitly approved as the reference",
@@ -2205,13 +2229,35 @@
         "supersedes": "Earlier one-dorsal arrangements, three/four-tail rules and VA1-VA3 short-body proportion targets.",
         "supporting_studies": "VA5 and VA6 support the exact approved VA4 reference; their projections do not redefine it."
       },
-      "pending_revisions": [],
-      "pending_flight_studies": [],
       "visual_direction_reference": {
         "code": "S13-06-VA4",
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
         "scope": "Creator-approved identity, anatomy, proportions, colour and harness."
       },
+      "historical_flight_references": [
+        {
+          "code": "S13-06-F1",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-cycle-f1.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        },
+        {
+          "code": "S13-06-F2",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-maneuvers-f2.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        }
+      ],
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-veilwing-approved.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
+      "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "pending_revisions": [],
+      "pending_flight_studies": [],
       "latest_anatomy_study": {
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/",
         "notes": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/ANATOMY_NOTES.txt",
@@ -2230,8 +2276,69 @@
         "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
         "live_installation": false
       },
-      "name_status": "Working name; no replacement selected",
-      "state": "selected"
+      "name_status": "Working name; no replacement selected"
+    },
+    {
+      "code": "M20-R1",
+      "name": "Mauldrin",
+      "file": "assets/set16-m20-r1-adult-cub.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A broad, heavy adult rests beside its small cub. Both have a rounded face, enormous clawed paws and a layered russet-and-cream mantle; the cub is clearly the same species.",
+      "size": "Large; adults far heavier than cubs (exact size open)",
+      "source": "M20-R1",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "state": "selected",
+      "ecology": {
+        "zone": "woodland",
+        "role": "Omnivore",
+        "tag": "Super-bear omnivore",
+        "note": "Omnivorous, with a bear-like life cycle: small cubs grow into far heavier, more powerful adults. Lives mainly in forests and also ranges through hills and plains. Precise size, growth rate, lifespan, breeding, hibernation and mantle biology remain open. Not a literal Earth bear, and not a rooted or sedentary animal.",
+        "basis": "Creator direction and selection of M20-R1 for finalization, 2026-11-15",
+        "approved_grouping": true
+      },
+      "world_status": "established_reference"
+    },
+    {
+      "code": "M21-23",
+      "name": "Talloch",
+      "file": "assets/set16-m21-23-v5.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A huge feathered heavyweight with a raised neck and crest, a slate, cream and ochre feathered body, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. Use v5; the name is open.",
+      "size": "Huge (exact size open)",
+      "source": "M21-23 v5",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+      "state": "selected",
+      "ecology": {
+        "zone": "unplaced",
+        "role": "Diet open",
+        "tag": "Feathered heavyweight",
+        "note": "Diet, habitat, exact size and life cycle have not been fixed. Do not carry M20's forest omnivore ecology over to it.",
+        "basis": "Creator selection of M21-23 (number 2, articulated legs) for finalization, 2026-11-15",
+        "approved_grouping": true
+      },
+      "world_status": "established_reference"
     }
   ],
   "inventory": [
@@ -6880,6 +6987,84 @@
         "note": "Experimental form; ecology not settled.",
         "basis": "Unresolved"
       }
+    },
+    {
+      "code": "OX1",
+      "name": "Broadneck",
+      "role": "Draft / pack",
+      "description": "Selected ox-like working animal with heavy shoulders, a compact body, mixed bristled and leathery covering, spreading feet and a practical fitted harness. Broadneck is a working name.",
+      "status": "Accepted reference",
+      "category": "Selected working animal",
+      "batch": "set13-creature-cards-2026-11-14",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/prompts-and-manifest.json",
+      "review_url": "http://127.0.0.1:8790/#OX1",
+      "ecology": {
+        "zone": "settlement",
+        "role": "Working animal",
+        "tag": "Draft / pack",
+        "note": "For farms and roads beyond the salt plains; exact regional range, husbandry and diet remain open.",
+        "basis": "Creator selected reference and requested working role, 2026-11-14; exact biology and regional range remain open",
+        "approved_grouping": true
+      }
+    },
+    {
+      "code": "S13-06-R3",
+      "name": "Veilwing",
+      "role": "Giant flier",
+      "description": "Previously liked overhead study; incomplete anatomy superseded by original MN2-5 with distinct dorsal sail.",
+      "status": "Historical approval; anatomy superseded",
+      "category": "Superseded reference study",
+      "batch": "set13-creature-cards-2026-11-14",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/prompts-and-manifest.json",
+      "review_url": "http://127.0.0.1:8790/#S13-06-R3",
+      "ecology": {
+        "zone": "aerial",
+        "role": "Diet open",
+        "tag": "Giant flier",
+        "note": "Home range, diet and flight mechanism remain open. Working use is Gnosis; harness direction is empty leather over the back, no people aboard. Finished card painting remains pending review.",
+        "basis": "Creator selected reference and requested working role, 2026-11-14; exact biology and regional range remain open",
+        "approved_grouping": true
+      }
+    },
+    {
+      "code": "M20-R1",
+      "name": "Mauldrin",
+      "role": "Super-bear omnivore",
+      "description": "A broad, heavy adult rests beside its small cub. Both have a rounded face, enormous clawed paws and a layered russet-and-cream mantle; the cub is clearly the same species.",
+      "status": "Selected world reference",
+      "category": "Selected world animal",
+      "batch": "set16-selected-2026-11-15",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json",
+      "review_url": "../reference-library-2026-11-06/set16-selected-2026-11-15/index.html",
+      "review_alias": "M20-R1",
+      "ecology": {
+        "zone": "woodland",
+        "role": "Omnivore",
+        "tag": "Super-bear omnivore",
+        "note": "Omnivorous, with a bear-like life cycle: small cubs grow into far heavier, more powerful adults. Lives mainly in forests and also ranges through hills and plains. Precise size, growth rate, lifespan, breeding, hibernation and mantle biology remain open. Not a literal Earth bear, and not a rooted or sedentary animal.",
+        "basis": "Creator direction and selection of M20-R1 for finalization, 2026-11-15",
+        "approved_grouping": true
+      }
+    },
+    {
+      "code": "M21-23",
+      "name": "Talloch",
+      "role": "Feathered heavyweight",
+      "description": "A huge feathered heavyweight with a raised neck and crest, a slate, cream and ochre feathered body, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. Use v5; the name is open.",
+      "status": "Selected world reference",
+      "category": "Selected world animal",
+      "batch": "set16-selected-2026-11-15",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json",
+      "review_url": "../reference-library-2026-11-06/set16-selected-2026-11-15/index.html",
+      "review_alias": "M21-23",
+      "ecology": {
+        "zone": "unplaced",
+        "role": "Diet open",
+        "tag": "Feathered heavyweight",
+        "note": "Diet, habitat, exact size and life cycle have not been fixed. Do not carry M20's forest omnivore ecology over to it.",
+        "basis": "Creator selection of M21-23 (number 2, articulated legs) for finalization, 2026-11-15",
+        "approved_grouping": true
+      }
     }
   ],
   "method": "Creator approved the selected ecology groupings on 2026-11-13, with Crested bird clarified as a mobile predator. Listed uncertainties remain unresolved. Historical alternatives and rejected records are not approved by this review.",
@@ -6926,5 +7111,6 @@
     },
     "next_action": "Use the reference collection in ongoing world and card art. No more giant exploration now."
   },
-  "updated_date": "2026-11-14"
+  "updated_date": "2026-11-15",
+  "developing_references": []
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "animals": 57,
+  "animals": 60,
   "companions": 4,
   "first_consult_for": [
     "animal cards",
@@ -49,7 +49,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      "relative_source_path": "art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/fanback-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "FR3",
@@ -170,7 +177,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/woodland-breaker.png",
+          "date": "2026-11-14",
+          "scope": "Image approval; no new anatomy or habitat approval"
+        }
+      ]
     },
     {
       "code": "G2-5",
@@ -289,7 +303,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png"
+      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/gall-season-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "ER3",
@@ -406,7 +427,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png"
+      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/riverfolk-specimen-keeper-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "ER6",
@@ -438,14 +466,15 @@
         "zone": "coast",
         "role": "Animal feeders",
         "tag": "Shore fisher",
-        "note": "Fish-eating shore hunter is selected; coastal versus freshwater shore remains open.",
+        "note": "Fish-eating shore hunter is selected; coastal versus freshwater shore remains open. Creator, 2026-11-14: the cold northern Greyhide ferry coast is too cold for Shore hunter; do not use that setting. Exact wider range remains open.",
         "basis": "Creator-approved ecology grouping, 2026-11-13; explicit unknowns remain open",
         "previous_basis": "Working placement from the existing brief",
         "approved_grouping": true
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png"
+      "relative_source_path": "art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png",
+      "climate_constraint": "Creator, 2026-11-14: the cold northern Greyhide ferry coast is too cold for Shore hunter; do not use that setting. Exact wider range remains open."
     },
     {
       "code": "ER7-1",
@@ -562,7 +591,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png"
+      "relative_source_path": "art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/host-bound.png",
+          "date": "2026-11-14",
+          "scope": "Image approval; no new anatomy or habitat approval"
+        }
+      ]
     },
     {
       "code": "E6-A",
@@ -642,7 +678,14 @@
       },
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
-      "relative_source_path": "art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+      "relative_source_path": "art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/vaultstalker.png",
+          "date": "2026-11-14",
+          "scope": "Image approval; no new anatomy or habitat approval"
+        }
+      ]
     },
     {
       "code": "LG1-5",
@@ -972,7 +1015,14 @@
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
       "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6",
-      "relative_source_path": "art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      "relative_source_path": "art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/master-mason-quillheel-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "NC2-4",
@@ -1179,7 +1229,14 @@
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
       "sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a",
-      "relative_source_path": "art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      "relative_source_path": "art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/needlehip.png",
+          "date": "2026-11-14",
+          "scope": "Image approval; no new anatomy or habitat approval"
+        }
+      ]
     },
     {
       "code": "BP2-4",
@@ -1415,7 +1472,14 @@
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
       "sha256": "5a0d76abd146106382998510f86de76954e0b1be5c4c9f77f68566393e9fe996",
-      "relative_source_path": "art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png"
+      "relative_source_path": "art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/longhouse-keeper-moltwalker-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "RF3",
@@ -1493,7 +1557,14 @@
       "world_status": "established_animal_reference",
       "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Use only the selected crop from a multi-animal sheet.",
       "sha256": "5358a1e745f5f4dfdb63ed4e3d4005bb412e52cb9dcb1a3fd8383ed6135e974a",
-      "relative_source_path": "art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png"
+      "relative_source_path": "art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png",
+      "accepted_scene_references": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/eel-netter-hooktail-v2.png",
+          "date": "2026-11-14",
+          "scope": "Image approved in Set 13 round 2; no wider habitat or lifecycle approval"
+        }
+      ]
     },
     {
       "code": "L01",
@@ -2393,6 +2464,44 @@
       "relative_source_path": "art/reference-library-2026-11-06/magic-studies-round-05-2026-11-08/06-brazen-gatebeast.png"
     },
     {
+      "code": "OX1",
+      "name": "Broadneck",
+      "file": "assets/set13-broadneck.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "Selected ox-like working animal with heavy shoulders, a compact body, mixed bristled and leathery covering, spreading feet and a practical fitted harness. Broadneck is a working name.",
+      "size": "Large working animal",
+      "source": "OX1",
+      "group": "Recent picks",
+      "status": "Accepted reference",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b",
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/oxlike-working-animal-reference.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-broadneck.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "ecology": {
+        "zone": "settlement",
+        "role": "Working animal",
+        "tag": "Draft / pack",
+        "note": "For farms and roads beyond the salt plains; exact regional range, husbandry and diet remain open.",
+        "basis": "Creator selected reference and requested working role, 2026-11-14; exact biology and regional range remain open",
+        "approved_grouping": true
+      },
+      "world_status": "established_animal_reference",
+      "reference_use": "Preserve selected anatomy and covering; use new poses and scenes without redesigning the animal.",
+      "relative_source_path": "art/reference-library-2026-11-06/set13-selected-2026-11-14/oxlike-working-animal-reference.png"
+    },
+    {
       "code": "MN2-5",
       "name": "Veilwing",
       "file": "assets/set13-veilwing-approved.png",
@@ -2429,6 +2538,12 @@
       "world_status": "established_animal_reference",
       "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
       "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "superseded_study": {
+        "code": "S13-06-R3",
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-anatomy-study-v3.png",
+        "note": "R3 omitted the dorsal sail and is superseded. Use F1/F2 structure and recalled R2 visual identity."
+      },
+      "pending_revisions": [],
       "anatomy_decision": {
         "date": "2026-11-14",
         "source": "S13-06-VA4, explicitly approved as the reference",
@@ -2446,13 +2561,70 @@
         "supersedes": "Earlier one-dorsal arrangements, three/four-tail rules and VA1-VA3 short-body proportion targets.",
         "supporting_studies": "VA5 and VA6 support the exact approved VA4 reference; their projections do not redefine it."
       },
-      "pending_revisions": [],
       "pending_flight_studies": [],
       "visual_direction_reference": {
         "code": "S13-06-VA4",
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
         "scope": "Creator-approved identity, anatomy, proportions, colour and harness."
       },
+      "naming_options": [
+        {
+          "name": "Highsail",
+          "recommended": true,
+          "reason": "Graceful, memorable and tied to its silhouette and height."
+        },
+        {
+          "name": "Longwake",
+          "recommended": false,
+          "reason": "More stately; evokes the passage of an immense animal."
+        },
+        {
+          "name": "Sailback",
+          "recommended": false,
+          "reason": "An earthy common name that people in the world might use."
+        },
+        {
+          "name": "Cloudsail",
+          "recommended": false,
+          "reason": "Softer and more lyrical, with an immediate aerial association."
+        },
+        {
+          "name": "Orren",
+          "recommended": false,
+          "reason": "A short species name without describing a power or body part."
+        }
+      ],
+      "name_status": "Working name; no replacement selected",
+      "prior_reference": {
+        "file": "assets/final-selected-mn2-freer-giants.png",
+        "rect": [
+          0.33984375,
+          0.47265625,
+          0.36328125,
+          0.47265625
+        ],
+        "source": "MN2",
+        "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+        "source_kind": "grid6",
+        "selected_cells": [
+          5
+        ],
+        "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+      },
+      "historical_flight_references": [
+        {
+          "code": "S13-06-F1",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-cycle-f1.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        },
+        {
+          "code": "S13-06-F2",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-maneuvers-f2.png",
+          "status": "superseded_anatomy_reference",
+          "purpose": "Historical flight exploration; current anatomy has two back sails plus two front wings."
+        }
+      ],
       "latest_anatomy_study": {
         "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/",
         "notes": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/ANATOMY_NOTES.txt",
@@ -2470,8 +2642,127 @@
         "status": "final_for_card_building",
         "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
         "live_installation": false
+      }
+    },
+    {
+      "code": "M20-R1",
+      "name": "Mauldrin",
+      "file": "assets/set16-m20-r1-adult-cub.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A broad, heavy adult rests beside its small cub. Both have a rounded face, enormous clawed paws and a layered russet-and-cream mantle; the cub is clearly the same species.",
+      "size": "Large; adults far heavier than cubs (exact size open)",
+      "source": "M20-R1",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set16-m20-r1-adult-cub.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "ecology": {
+        "zone": "woodland",
+        "role": "Omnivore",
+        "tag": "Super-bear omnivore",
+        "note": "Omnivorous, with a bear-like life cycle: small cubs grow into far heavier, more powerful adults. Lives mainly in forests and also ranges through hills and plains. Precise size, growth rate, lifespan, breeding, hibernation and mantle biology remain open. Not a literal Earth bear, and not a rooted or sedentary animal.",
+        "basis": "Creator direction and selection of M20-R1 for finalization, 2026-11-15",
+        "approved_grouping": true
       },
-      "name_status": "Working name; no replacement selected"
+      "world_status": "established_animal_reference",
+      "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Keep the broad adult, enormous paws, rounded face, layered russet-and-cream mantle and a recognizably same-species cub. Mouth experiments were for new heavyweights, not M20.",
+      "relative_source_path": "art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/HANDOFF.txt",
+      "name_status": "Mauldrin was chosen by the creator on 2026-11-15; Hearthmantle and Brackenmaw were earlier working names.",
+      "historical_names": [
+        "Hearthmantle",
+        "Brackenmaw"
+      ],
+      "concept_source": {
+        "code": "M20-5",
+        "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-5-selected-lineup.png",
+        "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-lineup.png",
+        "source_kind": "grid6",
+        "selected_cell": 5,
+        "rect": [
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ],
+        "sha256": "a7cc2c861026687670009af7828a43e73221225868cdd0bb5764c586e681f473",
+        "other_cells": "unselected, not rejected"
+      },
+      "card_assignment": "Card 244 / M20 (id foldstride), Deep roots; card painting not yet generated.",
+      "creator_feedback": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round2.json",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round3.json",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round12.json"
+      ],
+      "exact_prompt": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-followup-round2-manifest.json"
+    },
+    {
+      "code": "M21-23",
+      "name": "Talloch",
+      "file": "assets/set16-m21-23-v5.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A huge feathered heavyweight with a raised neck and crest, a slate, cream and ochre feathered body, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. Use v5; the name is open.",
+      "size": "Huge (exact size open)",
+      "source": "M21-23 v5",
+      "group": "Recent picks",
+      "status": "Selected world reference",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set16-m21-23-v5.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "ecology": {
+        "zone": "unplaced",
+        "role": "Diet open",
+        "tag": "Feathered heavyweight",
+        "note": "Diet, habitat, exact size and life cycle have not been fixed. Do not carry M20's forest omnivore ecology over to it.",
+        "basis": "Creator selection of M21-23 (number 2, articulated legs) for finalization, 2026-11-15",
+        "approved_grouping": true
+      },
+      "world_status": "established_animal_reference",
+      "reference_use": "Preserve selected anatomy and covering. Vary individual pose, scene, lighting and composition. Keep the raised neck and crest, slate, cream and ochre feathers, compact closed muzzle, powerful articulated legs and broad furred forepaws with visible stout, gently curved bear-like claws. Not the v3 talons or v4 tiny claw tips; never restore the original dangling mouth.",
+      "relative_source_path": "art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/HANDOFF.txt",
+      "name_status": "Talloch was chosen by the creator on 2026-11-15.",
+      "supporting_references": [
+        {
+          "code": "M21-23 v2",
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v2-leg-support.png",
+          "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+          "purpose": "Supports the articulated-leg build; v5 is the current reference."
+        }
+      ],
+      "card_assignment": "Card 245 / M21 (id saltmigrant), Empower; card painting not yet generated.",
+      "creator_feedback": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round12.json"
+      ],
+      "exact_prompt": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-bear-claws-round11-manifest.json",
+      "not_selected": "Highneck (M21-22) and the mane-backed M21-26 are retained alternatives, not selected or rejected."
     }
   ],
   "not_active": [
@@ -2480,5 +2771,14 @@
     "Unreviewed FR1, FR2 and LN1 revisions/proposal"
   ],
   "handoff_path": "/Users/dpuser/Documents/Claude/Games/breachline/ANIMAL_REFERENCE_HANDOFF.txt",
-  "updated_date": "2026-11-14"
+  "latest_review_record": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-anatomy-study-2026-11-14/prompts-and-manifest.json",
+  "veilwing_current_work": {
+    "status": "final_card_and_approved_reference",
+    "reference": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+    "final_card": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+    "notes": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/ANATOMY_NOTES.txt"
+  },
+  "updated_date": "2026-11-15",
+  "optional_scene_wildlife": "Where it fits naturally, consider including an established world animal as ordinary background life, taken for granted. An animal can draw attention when the scene calls for it, but need not prompt any action or reaction; this is an occasional possibility, never a requirement or quota.",
+  "developing_references": []
 }

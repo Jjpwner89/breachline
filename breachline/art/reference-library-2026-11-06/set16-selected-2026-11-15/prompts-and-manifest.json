@@ -1,0 +1,256 @@
+{
+  "batch": "Set 16 selected final paintings",
+  "status": "accepted_final",
+  "accepted_at": "2026-11-15T05:43:37.400750+00:00",
+  "scope": "M2 v7 only",
+  "generator": "built-in image_gen",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json",
+  "registry": "/Users/dpuser/Documents/Claude/Games/breachline/art/CARD_ART_FINAL_SET16.json",
+  "items": [
+    {
+      "code": "M2",
+      "card_id": "flameduelist",
+      "title": "Still Flame duelist",
+      "file": "flameduelist-v7.png",
+      "status": "final_for_card_building",
+      "review_status": "accepted_final",
+      "prompt": "Create a completely NEW finished fantasy painting, composed from scratch. The subject is a young male Crest folk duelist of high status at ease. IMAGE 1 supplies ONLY this man's facial identity and species silhouette, because the creator wants the same guy. Do not copy its pose, clothes, framing, shield position, courtyard composition or surface texture. IMAGE 2 supplies the accepted Crest folk biological anatomy only; the subject remains the MAN from image 1, not the woman in image 2. Paint clean new forms.\n\nShow his entire standing figure, from complete head crest to both boots and the rapier's point on the paving, with breathing room. Landscape 1536 × 1024, character slightly left of centre, seen at ordinary chest-level from a gentle three-quarter angle. He rests in a quiet limestone loggia, an elegant shaded place with a softly suggested court beyond. A few broad architectural shapes, not an elaborate busy backdrop. The appeal is an assured young swordsman quietly taking his ease.\n\nPOSE: a relaxed weight-shifted stance, one knee easy and one hip settled, shoulders lowered. His anatomical RIGHT hand loosely cups the top of the pommel of a long rapier standing nearly upright beside him at screen left; long narrow exposed blade points DOWN and its fine tip rests clearly on the stone paving. The hilt is around his upper waist. He inclines very slightly toward this hand, lightly resting on the weapon, never dumping his whole weight onto it. Blade stays straight; its point, ground contact, continuous blade, swept guard, grip, pommel and hand contact all read clearly. Both feet remain planted and carry his weight. His other arm hangs comfortably or rests loosely beside the belt. No combat crouch, extended threatening blade, raised shield, rigid parade stance or brooding villain pose.\n\nDRESS: a light, flexible steel mail jacket, small linked rings visibly readable at the throat, short sleeves and lower opening, without rendering every link everywhere. Over the mail, a handsome tailored medieval surcoat: deep blue fine wool with a soft muted lining, narrow tasteful embroidery at the edges, elegant closures, fitted upper body and a divided skirt to just above the knees. Clearly a beautiful cloth coat OVER the mail jacket, not a padded gambeson or metal cuirass. Well made and lightly travelled, showing high status through quality and fit. Dark fitted trousers and practical soft leather boots. No heavy armour, huge pauldrons, helmet or oversized jewelry.\nA compact round shield hangs at his anatomical LEFT hip, secured to the waistband by two short visible buckled leather suspension straps. It hangs freely against the outer thigh: he is NOT holding it, no arm goes through it. Include an empty long rapier scabbard suspended naturally from the belt, a small plain belt pouch and gloves tucked through the belt, sensibly spaced and uncluttered. No additional drawn weapon.\n\nSAME MAN: late twenties, lean masculine body, angular jaw and brow from image 1, chalk-tan matte skin, russet cheek markings, distinctive swept fluted bony head crest and modest integrated shoulder/arm crests from the species sheet. Clothing is cut around his anatomy; visible forearm ridges remain biological, not metal ornaments. A little ruggedness in the face and a faint healed brow nick, but youthful, not heavily scarred or deeply weathered. Calm watchful eyes, relaxed closed mouth, no scowl or sneer. He seems capable and faintly dangerous without making a threat.\n\nFresh traditional oil/acrylic painting with confident varied visible brushwork, readable facial planes and hand contact, broad related colour shapes, much quieter background detail and soft edges. Soft directional daylight with a warm reflected stone bounce lights his face and cloth coherently; restrained steel glints distinguish mail and blade from matte skin and wool. A composed, appealing painting, neither grey and bleak nor sugary and glossy. No photograph, 3D render, repetitive crackle or pore noise, camera blur, text, lettering, labels, border, signature or watermark.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v6.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+      ],
+      "alignment": "Vigil",
+      "brief_revision": 6,
+      "version": 7,
+      "history": [
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist.png",
+          "status": "generated",
+          "review_status": "superseded_casting_change",
+          "prompt": "Create a new finished painting with the first attached sheet as REQUIRED Greyhide anatomy and the BOTTOM ROW of the second sheet as Still Flame equipment construction. A Greyhide Still Flame duelist stands quietly across a cold northern tidal causeway, ready to defend the longhouse settlement behind him. A large rounded insulated body, smooth mottled grey hide, broad calm nonhuman face, short sturdy legs, fine hands, absolutely no tail. Preserve the distinctive head and body from the sheet, but give him a fitted padded winter coat, wool mantle and practical short sword held low in one hand; a round wooden shield on the other arm. The shield arm is convincingly behind its shield. His kind face has settled into grave resolve; no rage, hero pose, glowing eyes or magical bubble. Full body slightly off centre, legs clearly planted on damp stone, horizon and distant dark longhouses low behind. Cool clear coastal morning illuminates face and hands, a muted warm lining inside the mantle providing a small natural contrast. A tide pool reflects the grey sky; icy maritime climate, no tropical vegetation. The fine sword grip and substantial weight matter. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-b094b2d6-a5f2-4f2a-9c43-cb1f9bc6b809.png",
+          "sha256": "661441c9cd3dbc2d0194bbd675138156d45862f9ff5a796ec6b8e4c27b4b48fd",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Greyhide defender stands across a winter tide road with a short sword and round shield. His calm expression and substantial build retain the accepted species design; this individual and Still Flame role remain proposals.",
+          "assistant_review": "Accepted head and body proportions retained; no tail, two grounded legs, clear short-sword grip and shield position. Cold coastline and lighting coherent. Ready for creator review.",
+          "alignment": "Vigil",
+          "brief_revision": 1,
+          "version": 1
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v2.png",
+          "status": "generated",
+          "review_status": "superseded_casting_change",
+          "prompt": "Create a completely fresh Breachline painting of the Still Flame duelist, a large kind Greyhide who has chosen to defend a northern longhouse. First reference is REQUIRED accepted Greyhide anatomy and face: rounded heavily insulated torso, broad calm nonhuman face, smooth grey hide with restrained warm mottling, short sturdy legs and fine dexterous hands, no tail. Preserve that species exactly, including its natural body weight. Second reference's BOTTOM ROW gives Still Flame practical padded clothing and sword/shield construction, not its neutral display pose. Do not reproduce a reference sheet.\n\nA tense, quiet moment at the outer threshold of a coastal longhouse, seen at roughly the character's chest height from a three-quarter side angle. The duelist has stepped into a compact, practiced guard on damp flat paving. Both feet planted apart, front knee slightly bent, weight low and stable, round torso turning over the hips. His near right hand firmly grips a proper short sword with a useful straight steel blade and simple guard; blade extends diagonally forward into clear space at waist height, pointing toward an unseen approaching threat off to the left, never toward the viewer or through the shield. His left forearm naturally supports a plain round wooden shield held closer to the chest. Both arms and grips must connect coherently. His broad gentle face is intent and sober, eyes fixed in the sword's direction, mouth relaxed but resolved. He is visibly a capable duelist, not a roaring berserker.\n\nA fitted dark blue-grey padded coat shaped around his round body, pale wool at its opening, short heavy shoulder mantle pinned out of the sword arm's way, simple winter foot protection. Change the reference clothing for this individual while keeping its practical warmth. A warmly lit longhouse doorway behind him and a cool strip of northern sea and slate sky beyond the timber walkway establish home. Cold air, salt-damp stone, a few traces of old snow; the background is suggested, not an intricate village panorama. Natural low afternoon sunlight from one side lights his face and sword hand, with cool reflected sky in the shadows and a small warm door-light accent. Focus on the face, fine sword grip and poised weight. No flame effects, healing demonstration, aura or ward bubble. One finished landscape card painting, 1536 × 1024. Traditional oil and acrylic fantasy painting with deliberate, visible brushwork, broad connected light and shadow shapes, selective sharp detail around face and hands, and much simpler supporting scenery. Matte skin, wool, wood and stone; restrained metallic reflections. Maintain believable anatomy and physical weight. No text, letters, borders, labels, signature, watermark, photo, 3D-render finish, comic-book outlines, glossy toy-like forms or uniform microdetail.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 1,
+          "version": 2,
+          "followup_brief": "BRIEFS-retry-revision-2.md",
+          "followup_brief_revision": 2,
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-40370f99-ce93-4c86-b3ab-29153a729dc3.png",
+          "sha256": "68ae94c4e66dbc9c62d08fdf35a5004b10d9f5dea2a281a87f6b4be1c1a5f33a",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Greyhide duelist holds a guard at a northern longhouse doorway. This take is superseded by the creator's subsequent request to use a different new people.",
+          "assistant_review": "Anatomy, shield and sword contacts checked; species recast requested after generation."
+        },
+        {
+          "file": "history/flameduelist-v3-before-gaze.png",
+          "version": "3 initial",
+          "prompt": "Create a new Breachline card painting of a CREST FOLK Still Flame duelist. The first attached sheet is the required identity and anatomy reference: preserve the adult woman's distinctive face, slender strong ordinary-sized body, chalk-tan matte skin, swept fluted bony head crest, painted russet cheek marks, and the smaller smoothly integrated swept crests at her shoulders, upper chest, upper arms and outer forearms. These are living anatomy, not armour or decoration. Preserve free functional elbows, wrists and fingers. This is Crest folk, not a Greyhide; no rounded grey body or broad muzzle.\n\nA composed and formidable woman duelist holds a measured guard in a pale limestone courtyard beside a modest Still Flame sanctuary in a quarry town. Three-quarter view from knee height upward, spacious landscape composition. Her body turns across the frame, near shoulder slightly forward, eyes intent toward an unseen approach to the left, expression calm and resolute. In her right hand she carries one useful straight short sword, point held forward and a little upward into open space to the left, blade and hand both fully visible. Her left forearm carries a small plain round shield closer to her opposite hip; shoulder, elbow, forearm and hand positions all physically coherent. Keep the sword separate from the shield. The scene is a poised interval before an encounter, not a wild attack.\n\nUse the second reference's BOTTOM ROW only for Still Flame padded-clothing and weapon construction. Adapt a cream quilted protective vest with shoulder openings and a shallow collar to the body's natural crests; a muted blue wool under-tunic and practical trousers, short soft sleeves leaving the forearm crests clearly visible. No metal pauldrons obscuring the shoulder crests. Practical modest clothing without decorative clutter. Keep her complete head crest comfortably inside the frame and the organic arm crests readable at card size. No helmet, neck fan or added spikes.\n\nA sunlit limestone arch and soft ochre masonry establish a lived-in inland quarry town, with a quieter shadowed doorway behind her. Late morning side light unifies face, arms and pale stone; soft reflected warmth makes the shadowed cheek readable. Suggest the secondary architecture in broad painted shapes. Focus on the expressive face, anatomical crest silhouette and capable sword grip. No frost, northern seacoast, magical bubble, flame effects or healing diagram. This woman's profession and courtyard are proposed scene details; do not make every Crest folk person a fighter.\n\nOne finished landscape painting, 1536 × 1024, traditional oil and acrylic fantasy art with measured visible brushwork. Selective crisp detail at face and hands, connected large light/shadow masses and simplified softer background. Matte skin, wool and limestone; clean restrained reflections on steel. No uniform microtexture, pores, glossy 3D look, photo, comic outlines, writing, labels, borders, signature or watermark.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-1e799f69-e7ab-41f9-89bc-32cdab9a93af.png",
+          "review_status": "assistant_gaze_correction",
+          "assistant_review": "Accepted Crest folk anatomy retained; gaze looks away from the guarded direction. Local head-turn correction requested."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v3.png",
+          "status": "generated",
+          "review_status": "superseded_male_rapier_request",
+          "prompt": "Make one precise local correction to this existing painting. Turn ONLY the woman's head and upper neck toward SCREEN LEFT so that her face and both eyes look along the raised sword, toward the sword tip at the upper-left of the picture. Her gaze must follow the direction she is guarding. Maintain her exact Crest folk identity: same face, natural expression, chalk-tan skin, russet cheek marks and swept fluted bony head crest, rotating the same head and crest naturally together. Keep the body, arms, hands, sword, shield, clothing, every shoulder and arm crest, stance, framing, limestone town, sanctuary, lighting, colours, painted treatment and 1536 × 1024 landscape dimensions unchanged. Do not add objects, emblems, text or other alterations. This is a head-direction correction, not a new painting.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-1e799f69-e7ab-41f9-89bc-32cdab9a93af.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 2,
+          "version": 3,
+          "followup_brief": "BRIEFS-recast-revision-3.md",
+          "followup_brief_revision": 3,
+          "casting": "Crest folk; artist choice following creator instruction to use another new people",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-34bf6e7c-2bc3-4c17-a1a6-5d24c37cb6cc.png",
+          "sha256": "f89a5337a95ab44c7b6248f2ba0d9cf4002c1a1d48f483ba4d260c881b9397d7",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk Still Flame duelist guards a limestone sanctuary courtyard, her gaze aligned with her sword. The new casting preserves the accepted head, shoulder and arm crests; her individual role and setting remain proposals.",
+          "assistant_review": "Checked Crest folk face, skin and swept head/arm anatomy against CR3; sword grip, shield support and connected limbs are coherent. Local head-turn correction now aligns gaze with the guarded direction; clothing, stance, setting and lighting retained."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v4.png",
+          "status": "generated",
+          "review_status": "superseded_longer_rapier_lighter_armor_request",
+          "prompt": "Use case: precise-object-edit.\nEdit the attached Breachline Still Flame duelist painting. Make the duelist an adult Crest folk MAN armed with a RAPIER. Keep this same painting and its setting.\n\nReplace the woman's facial and body characteristics with a clearly masculine, lean and capable adult man: a stronger angular jaw and brow, slightly broader neck and shoulders, a flat male chest under the practical cream quilted vest, and natural strong male arms. Preserve the distinctive Crest folk anatomy: chalk-tan skin, russet cheek paint, swept fluted bony head crest, and smaller organic crests integrated into shoulders and outer arms. These remain living anatomy, not armour. Ordinary slender athletic proportions, not a bodybuilder. His expression stays composed and alert, head and eyes looking screen left along the weapon.\n\nReplace the broad short sword in his anatomical RIGHT hand (extended toward screen left) with ONE recognizable full-length rapier: long, very slender straight steel thrusting blade tapering to a fine sharp point, a modest functional swept steel guard around the hand, dark leather grip and small pommel. The hand closes naturally around the grip behind the guard; blade, hilt and grip share one continuous plausible axis. The blade must read as a rapier rather than a short sword or dagger. Keep the whole tip within the frame. A small adjustment to that arm's elbow and wrist is allowed if needed to fit the longer blade naturally into the same guarded direction. His anatomical LEFT forearm still supports the same round shield at screen right; do not add a second weapon or extra hands.\n\nPreserve the existing framing, poised stance, clothes and their colours, crest design, shield, limestone arch, quarry-town courtyard, sanctuary, sun emblem, blue sky and warm morning light. Maintain the measured visible oil/acrylic brushwork, matte skin and cloth, coherent light, selective facial detail and simplified supporting background. Do not add hair, beard, facial texture noise, magic, new objects or extra figures. No text, border, signature or watermark. Output one 1536 × 1024 landscape painting.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v3.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 3,
+          "version": 4,
+          "followup_brief": "BRIEFS-male-rapier-revision-4.md",
+          "followup_brief_revision": 4,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-cd14db16-752b-47e9-9345-7441b6f0f308.png",
+          "sha256": "8115f1db3b89312b57b5302f155bc4c2b215a85304ff7ea148a2bfcce3f8cd66",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk man holds a rapier guard in a limestone sanctuary courtyard, his gaze following the slender blade. His accepted head and arm crests are retained; the individual Still Flame role and courtyard remain scene proposals.",
+          "assistant_review": "Inspected the generated painting: masculine face and flat-chested lean build, recognizable slender rapier with swept hand guard, coherent closed grip, connected arms and shield support, gaze toward the guarded direction. Crest folk anatomy, clothing, courtyard and warm painted lighting retained. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:21:37.485851+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "da4831147f77617ac170dbc7db1cc6e49ac21364c08c4eae5e8d4f4ed3d93804",
+          "reference_roles": {
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v3.png": "Edit target: existing M2 version 3, preserving Crest folk anatomy and scene"
+          }
+        },
+        {
+          "code": "M2",
+          "version": "5 initial",
+          "file": "history/flameduelist-v5-before-crest-correction.png",
+          "followup_brief": "BRIEFS-lighter-kit-revision-5.md",
+          "followup_brief_revision": 5,
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png"
+          ],
+          "prompt": "Use case: precise-object-edit.\nEdit this existing Breachline painting of the adult male Crest folk Still Flame duelist. The creator wants a LONGER RAPIER and LIGHTER ARMOUR. Make both changes clearly visible while retaining his exact male face, species, scene and painted treatment.\n\nRAPIER: Increase the visible steel blade length by about 65 percent relative to the attached image, maintaining a very slender straight taper to a fine point and the same recognizable swept hand guard. Show the entire long blade within the frame, with minimal foreshortening. To make room, bend his anatomical RIGHT elbow naturally and draw his right hand inward toward the centre of the picture: approximately hand/hilt at x=710, y=500 in a 1536x1024 image, with the blade tip around x=60, y=205. These coordinates are only composition guidance, never marks or text. The new blade should visibly span much more of the painting than the old one, suggesting a full adult dueling rapier with a roughly metre-long blade. Its hilt, grip and blade must align as one straight weapon. Build a believable bent arm from the existing shoulder, with the elbow lower than the hand, a firm natural grip behind the guard and wrist aligned with the thrust. His eyes still follow the blade toward screen left. No extra sword, blade, arm or hand.\n\nLIGHTER ARMOUR: Remove the thick diamond-quilted cream gambeson, its bulky standing collar and long heavy padded skirt panels. Replace it with a slim waist-length sleeveless buff-leather dueling jerkin in a pale natural tan, thin and supple rather than rigid, fitted over the existing muted blue short-sleeve shirt. Simple seams and a few practical fastenings, low unobtrusive neckline, minimal layers, no quilting, no heavy padding or metal plates. Keep the belt and dark trousers. The silhouette must look visibly lighter and more mobile. Let the blue shirt continue naturally a short way below the belt. Keep his shoulder and arm crests exposed and organically part of his body; these are not armour.\n\nPreserve the same masculine facial identity, chalk-tan skin, russet cheek marks, swept head crest, lean capable body, gaze, lower-body stance, round shield supported by his anatomical LEFT arm at screen right, framing, limestone quarry town, arch, sanctuary, sun emblem and morning light. Only the sword arm may change pose to fit the longer weapon. Do not change the head, invent new species traits, add hair or beard, add people or magic, or redesign the environment.\nMaintain clean matte oil/acrylic painted forms with deliberate brushwork and selective detail, readable lighting and softer broad background shapes. Avoid multiplying tiny texture noise through the edit. One 1536 × 1024 landscape painting; no text, labels, borders, signature or watermark.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png",
+          "sha256": "8b30fdc58f836290661c054bbc9a5b6159bcf7ebee8ceefb0baa7bf07084e91f",
+          "review_status": "assistant_anatomy_correction",
+          "assistant_review": "Longer rapier and lighter jerkin achieved; arm crests were lost. Local anatomy correction requested."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v5.png",
+          "status": "generated",
+          "review_status": "superseded_courtly_clothes_request",
+          "prompt": "Make one precise anatomy correction to IMAGE 1, the edited painting of a male Crest folk duelist with a long rapier and light tan jerkin. IMAGE 2 is the earlier version of this same man and is an ANATOMY REFERENCE ONLY for the organic crests on his shoulders and arms.\n\nThe first edit accidentally smoothed away his defining arm crests. Restore the modest living swept bony ridges from image 2 on the EXPOSED parts of BOTH arms in image 1, adapting them to image 1's different right-arm pose. Two or three low elongated fluted tan ridges should arise smoothly from the outer upper-arm surface, with a smaller backward-swept crest on the outer forearm. Keep elbows, wrists and hands fully functional. These are shallow organic structures continuous with his skin, NOT metal armour, separate pauldrons, pasted-on ornaments, muscles or tattoos. They are the same pale warm-tan biological material as his existing head crest. At least one modest arm ridge should break the visible arm silhouette. The shoulder root may be partly covered by the current short shirt sleeve; do not redesign the clothes to expose more body.\n\nStrictly preserve EVERYTHING ELSE from IMAGE 1: the exact male face, head crest, eyes, expression, much longer slender rapier and its entire blade and tip, swept guard, hand grip, bent right arm and hand position, left hand and shield, slim short light unpadded jerkin, shirt, trousers, belt, stance, courtyard, architecture, sun emblem, warm light, framing and current painted brushwork. Do not restore the old short sword, heavy padded coat or outstretched arm from image 2. Do not add extra limbs or fingers, texture noise, text or magic. Output the same 1536 × 1024 painting with only the arm-crest anatomy repaired.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 4,
+          "version": 5,
+          "followup_brief": "BRIEFS-lighter-kit-revision-5.md",
+          "followup_brief_revision": 5,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f6d11c34-2bf9-4f3c-8271-abd04d3b4cd0.png",
+          "sha256": "5962c93878c1c0ddcf0866f5d8a32a0b33d819b38f51ff6b02c804045eb8c978",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk man guards the limestone courtyard with a much longer, slender rapier and a light fitted jerkin over his blue shirt. His male identity and living arm crests are preserved; his Still Flame role and the courtyard remain scene proposals.",
+          "assistant_review": "Inspected the final image: blade is substantially longer and fully within the frame, with a continuous straight axis through hilt and grip; the bent right arm and closed hand are connected. The lighter short jerkin removes the heavy padded coat and skirt. Male face, head crest, shield and courtyard retained; localized follow-up restores the exposed arm crests without changing the long blade or light outfit. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:27:21.360553+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "93fa217e2d259dc162b90bf6bcfc6a0cf23b1a738418ab22af186eb6928868a2",
+          "reference_roles": {
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png": "Edit target: initial version 5 with longer rapier and lighter armor",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png": "Anatomy reference only for living arm crests; do not copy old weapon length or armor"
+          }
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v6.png",
+          "status": "generated",
+          "review_status": "superseded_fresh_composition",
+          "prompt": "Use case: precise-object-edit.\nEdit the attached Breachline painting. This same adult male Crest folk duelist is a MAN OF HIGH STATUS. Redress him in elegant courtly clothing that makes his wealth and standing immediately legible. This is a costume edit, preserving the long rapier and this man's exact identity.\n\nReplace the plain buff jerkin and rough blue shirt with a beautifully tailored, lightly structured deep blue court doublet of fine matte velvet, fitted at the waist with a clean pointed lower front. Narrow restrained gold embroidery follows the neckline, front opening and short hem; small chased gilt buttons, clear functional seams and rich broad cloth folds. Beneath it, crisp ivory linen at the neck and sleeves, with a refined small standing collar and a modest folded edge, not an enormous ruff. Courtly upper sleeves can be gently full and neatly slashed, with short tailored outer openings accommodating his existing organic upper-arm crests; keep his forearm ridges exposed, not covered in bracers. Replace the rough trousers with fitted charcoal-blue fine-wool breeches and the work belt with a slim well-made dark leather belt and a small elegant gilt buckle. A single delicate gold chain at the neckline is enough jewelry. The whole outfit should read as expensive, carefully maintained, graceful nobleman's dueling dress, with no bulky padding, leather combat vest, breastplate or heavy armour. Convey status through cut, good fabric and controlled ornament rather than piles of decoration. Preserve his slim masculine body and ordinary scale.\n\nLOCK THE REST: keep the exact male face, intent expression and gaze, russet cheek marks, chalk-tan skin, large swept head crest AND the living swept crests on his upper arms and forearms. Those ridges remain visible biological anatomy, never gold ornaments or armour. Keep the head, both arms, hand grips, bent right elbow, left arm supporting the same round shield, stance and body position unchanged. The very long slender rapier must retain its exact blade length, angle, tip position, swept steel guard, straight axis and grip. Do not shorten it or change the pose. Keep the existing courtyard, limestone arch, quarry town, sanctuary, sun emblem, framing and warm morning light. No crown, new emblem, new people, magic, hair or beard.\n\nMaintain the traditional oil/acrylic painted character: measured visible brushwork, selective face and hand detail, matte cloth with deep velvet colour, restrained metal highlights, broad quiet background shapes. Keep the new embroidery sparse and painted rather than tracing intricate tiny patterns everywhere. Avoid added grain, surface noise, glossy 3D finishes, writing, borders, signature and watermark. One 1536 × 1024 landscape painting.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v5.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 5,
+          "version": 6,
+          "followup_brief": "BRIEFS-court-dress-revision-6.md",
+          "followup_brief_revision": 6,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-2f960323-5c0c-46b5-896c-aac5fc70eb7a.png",
+          "sha256": "8f8b9f7926ed020931c7faeccef4f0d0815193f1ed100ac58c41ffb9c06df2ed",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "The Crest folk duelist wears a tailored blue court doublet with ivory sleeves, gold edging and a fine chain, retaining his long rapier and composed guard. His high status is established by the creator; the precise costume and courtyard are artistic proposals.",
+          "assistant_review": "Inspected the generated image: courtly tailored velvet doublet, controlled gold ornament, fine shirt and belt clearly communicate high status without heavy armor. Male face, swept head crest and exposed living arm crests retained. Long rapier length and straight axis, grip, arm positions, shield support, gaze, stance, courtyard and coherent morning light preserved. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:32:48.363270+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "2805b50092d39ef25b7dada4b3f2463334b998f5e6b0e98d3ff446be0ea6221d",
+          "reference_roles": {
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v5.png": "Edit target: M2 version 5, preserving male identity, living crests, long rapier, pose and scene"
+          },
+          "creator_established_identity": "Adult male Crest folk duelist of high status, with a long rapier and light courtly clothes."
+        }
+      ],
+      "followup_brief": "BRIEFS-fresh-repose-revision-7.md",
+      "followup_brief_revision": 7,
+      "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d428eb08-8799-47ff-ad00-a7d9246bb305.png",
+      "sha256": "7633ca814923938c0dd283d36144a364fe7e13572376113630d1c5feb380dc2d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A young Crest folk duelist rests lightly on his grounded rapier, wearing fine blue cloth over light mail. His shield hangs from buckled waist straps beside a scabbard, pouch and gloves; his relaxed bearing suggests a capable, high-status swordsman.",
+      "assistant_review": "Inspected the new full-figure composition: rapier point visibly contacts paving, straight blade and continuous hilt under a relaxed hand, both boots grounded, believable weight shift and connected limbs. Light mail is visible at neck, sleeves and coat opening; shield hangs from two buckled belt straps, with the left hand beside it. Youthful male face, head and arm crests, practical accessories, readable lighting and selective painted detail retained. Creator approved this exact generated image as final.",
+      "generated_at": "2026-11-15T05:43:37.400750+00:00",
+      "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+      "art_direction_sha256": "400a4ec75e6a38ad8ff0668d0375e7803deb307a944ee92d47ee8efc09e0b1dc",
+      "reference_roles": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v6.png": "Individual identity only, following explicit same-guy request; old pose, outfit, framing and texture discarded",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png": "Accepted CR3 biological anatomy; male character retained"
+      },
+      "creator_established_identity": "Young male Crest folk duelist of high status: lightly rugged, quietly dangerous, resting on a grounded rapier in light mail and a fine overcoat.",
+      "approach": "fresh composition from creator direction, replacing earlier brief and guard pose",
+      "accepted_at": "2026-11-15T05:43:37.400750+00:00",
+      "creator_authorization": "that's it, final!",
+      "canonical_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png",
+      "installation_status": "not_installed"
+    }
+  ]
+}

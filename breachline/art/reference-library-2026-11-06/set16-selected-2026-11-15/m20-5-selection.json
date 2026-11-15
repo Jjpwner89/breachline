@@ -1,0 +1,51 @@
+{
+  "code": "M20-5",
+  "date": "2026-11-15",
+  "status": "concept_source_finalized_as_M20-R1",
+  "file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-5-selected-lineup.png",
+  "source_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-lineup.png",
+  "source_kind": "grid6",
+  "selected_cell": 5,
+  "rect": [
+    0.3333333333333333,
+    0.5,
+    0.3333333333333333,
+    0.5
+  ],
+  "other_cells": "unselected, not rejected",
+  "sha256": "a7cc2c861026687670009af7828a43e73221225868cdd0bb5764c586e681f473",
+  "description": "A massive russet-and-cream adult rests beside its much smaller cub, with the same layered mantle, rounded face and broad paws. The creator now describes it as an omnivorous “super bear” living mainly in forests and also ranging through hills and plains; precise size, growth timing and mantle biology remain open.",
+  "reference_in_development": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-hearthmantle-adult-cub-v1.png",
+  "reference_status": "finalized 2026-11-15; see m20-r1-selection.json",
+  "ecology": {
+    "status": "creator_directed",
+    "analogy": "super bear",
+    "diet": "omnivorous",
+    "primary_habitat": "forest",
+    "additional_habitats": [
+      "hills",
+      "plains"
+    ],
+    "life_cycle": "Small cubs grow into substantially heavier, more powerful adults.",
+    "open_details": [
+      "precise size",
+      "growth rate",
+      "lifespan",
+      "breeding",
+      "hibernation",
+      "mantle biology"
+    ],
+    "basis": "Creator direction, 2026-11-15; do not convert the analogy into a literal Earth bear or presume a rooted/sedentary life."
+  },
+  "card_art_status": "not_generated",
+  "review_record": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round2.json",
+  "historical_names": [
+    "Hearthmantle",
+    "Brackenmaw"
+  ],
+  "name_status": "Mauldrin was chosen by the creator on 2026-11-15; Hearthmantle and Brackenmaw were earlier working names.",
+  "latest_creator_feedback": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round3.json",
+  "mouth_exploration_status": "Not for M20: creator confirmed new heavyweight animals.",
+  "finalized_reference": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png",
+  "name": "Mauldrin"
+}

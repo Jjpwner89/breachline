@@ -2,14 +2,16 @@
 
 Workflow: [briefs to paintings](../../.claude/skills/art-direction/BRIEF_WORKFLOW.md). Art direction: [art direction](../../.claude/skills/art-direction/SKILL.md).
 
-- **Date and revision:** 2026-11-15, revision 7. The creator voted on the cards and asked for new animals for M20 and M21: "good card - wrong animal, find a different animal", and for M21, "salt flat migrants are not that strong". Both now ask for a lineup of new animal options instead of a painting; the creator picks one, and the card painting follows. Revision 6 replaced M2's brief, and M2 v7 is final. All other briefs are unchanged.
+- **Date and revision:** 2026-11-15, revision 8. The creator chose the new animals for M20 and M21, and Claude finalized them as selected references, so both briefs are now card paintings of those animals. Revision 7 asked for the lineups ("good card - wrong animal, find a different animal"; "salt flat migrants are not that strong"). Revision 6 replaced M2's brief, and M2 v7 is final. All other briefs are unchanged.
 - **Source:** new cards built on the mechanics the creator liked on 2026-11-14 (Seasoned, Grace, Stratagem, Cadence, Recall, Ransack, Offering, Reap, Surge, Empower, Momentum, Hired, Deep roots). Each statline passed a paired balance check with the lookahead bot, and Sonnet playtesters played the mechanics in ten full games. The card table at the end is the design record for these briefs.
-- **Card status:** the creator approved all 22 cards on 2026-11-15. Pit digger's rules changed, but its subject still fits, so M12 is unchanged. Names and subjects remain proposals, and M20 and M21 will take the names of the animals the creator selects.
-- **Scope:** 22 card paintings (M1–M22). Revision 7 adds two new-animal lineups for M20 and M21, which come before their paintings; every other person and animal uses an accepted design.
+- **Card status:** the creator approved all 22 cards on 2026-11-15. Pit digger's rules changed, but its subject still fits, so M12 is unchanged. Names and subjects remain proposals. M20 and M21 take the names of their animals, which the creator chose on 2026-11-15: Mauldrin and Talloch.
+- **Scope:** 22 card paintings (M1–M22). Every person and animal uses an accepted design, including the two new animals selected for M20 and M21.
 - **Output stage:** finished card paintings at 1536 × 1024, landscape.
 - **WIP folder:** `art/work-in-progress/set16-mechanic-cards-2026-11-14/`. Proposed filenames are `<card id>.png`.
 - **Paths:** relative to `breachline/`.
-- **Status:** M2 v7 is final for card building. M20 and M21 are ready for new lineups (revision 7); their revision 1 paintings (`foldstride.png`, `saltmigrant.png`) are superseded for these cards. The Foldstride and Salt-flat migrant stay accepted animals of the world, and their selections are unchanged. The other 19 paintings remain generated and awaiting review. Original batch brief revision 1; M2 revised through revision 6. [Review gallery](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/index.html) · [Prompts and manifest](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json) · [Handoff](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/HANDOFF.txt). Outputs are in the main Games repository, not this source checkout.
+- **Status:** M2 v7 is final for card building. M20 and M21 are ready for card paintings of their selected animals (revision 8); their revision 1 paintings (`foldstride.png`, `saltmigrant.png`) are superseded for these cards. The Foldstride and Salt-flat migrant stay accepted animals of the world, and their selections are unchanged. The other 19 paintings remain generated and awaiting review. Original batch brief revision 1; M2 revised through revision 6. [Review gallery](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/index.html) · [Prompts and manifest](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json) · [Handoff](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/HANDOFF.txt). Outputs are in the main Games repository, not this source checkout.
+
+- **Latest animal follow-up (2026-11-15):** The creator chose M20-R1 (adult/cub) and number 2 / M21-23 with articulated legs for Claude finalization. Current number 2 is v5 with bear-like front claws; v2 is a supporting leg reference. [Exact finalization handoff](/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt) · [Two selected references](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/index.html). Other heavyweight alternatives are retained. Claude finalized both on 2026-11-15: they are selected world references in [set16-selected-2026-11-15](/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/index.html) and the animal index, and M20 and M21 below now brief their card paintings.
 
 ## Applies to the whole batch
 
@@ -268,29 +270,29 @@ References: `art/work-in-progress/creature-reference-and-exploration-2026-11-13/
 
 Design context — not for the image prompt: common 2-mana 2/2 with Deep roots (grows once you have 5 lands).
 
-## M20 / foldstride — a new Deep roots animal (card name to follow the selection)
-Type / alignment / faction: unit / Genesis / Elder Herd. Revision 7. Output: a lineup of six new animal takes, `m20-lineup.png`, then a card painting of the selected take.
+## M20 / foldstride — Mauldrin
+Type / alignment / faction: unit / Genesis / Elder Herd. Revision 8. Output: `foldstride.png` (the card id stays foldstride so saved decks keep working).
 
-Subject and setting: a new Genesis animal that is modest when young or newly arrived and becomes formidable once it settles into a place. Over time it grows heavy, anchored and hard to move. How it settles is open: it might dig in, grow a mantle, thicken with age, bond to a feeding ground or something else entirely. Open country, woodland edge, wetland or upland are all fine.
+Subject and setting: the Mauldrin, a heavy omnivore of the forest, in its own ground. A forest is its main home; a hillside or a plain at the forest's edge also fits.
 
-What makes it worth painting: a believable life cycle you can read in one animal: the sense that this one has been here a long time, or is about to be. Show the lineup animals at rest or feeding, in plain ecological situations.
+What makes it worth painting: an animal that has grown into its size. A huge adult settled in a place it plainly knows, or an adult with its cub, which the creator liked in the reference. It can be foraging, digging, resting or moving through undergrowth. It is a wild animal, not a pet or a beast of burden.
 
-Must keep: original animals that are not the Foldstride or any other selected animal. Follow the animal design guidance: varied whole bodies, integrated heads, coverings and scale; avoid jaw frills, throat combs and a procession of similar faces. Make two of the six freeform: same niche, with anatomy, name and palette left fully open. Give each take a code (M20-1 to M20-6) and a two-to-three-sentence description that names what is proposed.
+Must keep: the selected M20-R1 reference: a broad, heavy body, rounded face, enormous clawed paws and the layered russet-and-cream mantle. A cub, if shown, is clearly the same species. Not an Earth bear: keep the original anatomy. No mouth experiments; its face stays as in the reference.
 
-References: `../.claude/skills/breachline-animal-art/SKILL.md` and `ANIMAL_REFERENCE_HANDOFF.txt` (required: animal design rules and the existing roster, to avoid repeats); `art/accepted-animals-2026-11-13/ecologies.html` (optional: niches already filled).
+References: `art/reference-library-2026-11-06/set16-selected-2026-11-15/m20-r1-adult-cub.png` (required: anatomy, mantle and colour; the reference's pale backdrop is not a setting). Animal record: `art/accepted-animals-2026-11-13/animal-reference-index.json`, code M20-R1.
 
 Design context — not for the image prompt: common 3-mana 2/3 with Deep roots: once you have 6 lands it permanently gets +3 attack and +3 health. A small animal that becomes big; the picture need not show the change.
 
-## M21 / saltmigrant — a new Empower animal (card name to follow the selection)
-Type / alignment / faction: unit / Genesis / Elder Herd. Revision 7. Output: a lineup of six new animal takes, `m21-lineup.png`, then a card painting of the selected take.
+## M21 / saltmigrant — Talloch
+Type / alignment / faction: unit / Genesis / Elder Herd. Revision 8. Output: `saltmigrant.png` (the card id stays saltmigrant so saved decks keep working).
 
-Subject and setting: a new Genesis animal that is genuinely strong: a big, powerful beast that is usually calm but awesome when roused or fully grown. The creator said the Salt-flat migrant is not that strong, so this animal has to read as a credible heavyweight. It can be a grazer, browser or omnivore, and need not be a predator. Its habitat is open.
+Subject and setting: the Talloch, a huge feathered heavyweight, genuinely strong Genesis animal. Its home range isn't set, so choose an open landscape that suits the painting without making it a habitat decision.
 
-What makes it worth painting: contained power. Show its weight, muscle and presence at rest, and leave a sense of what it could do. Awe rather than horror; no threatening mouths as the default.
+What makes it worth painting: contained power. Show its height, weight and presence, calm but able to do a great deal if roused. Awe rather than horror. A clear sense of scale, from a person, a tree or the land around it, helps.
 
-Must keep: original animals that are not the Salt-flat migrant, Fanback or any other selected giant. Follow the scale guidance for large animals: rethink support and body architecture rather than enlarging a small skeleton, and use a clear comparison or environment for size. Make two of the six freeform: same niche, with anatomy, name and palette left fully open. Give each take a code (M21-1 to M21-6) and a two-to-three-sentence description that names what is proposed.
+Must keep: the selected M21-23 v5 reference: raised neck and crest, slate, cream and ochre feathers, a compact closed muzzle, powerful articulated legs and broad furred forepaws with stout, gently curved bear-like claws. No talons, and never the earlier dangling mouth. Not Highneck or the mane-backed alternative.
 
-References: `../.claude/skills/breachline-animal-art/SKILL.md` and `ANIMAL_REFERENCE_HANDOFF.txt` (required: animal design rules and the existing roster); `art/accepted-animals-2026-11-13/ecologies.html` (optional: niches already filled).
+References: `art/reference-library-2026-11-06/set16-selected-2026-11-15/m21-23-v5-feathered-heavyweight.png` (required: anatomy, feathers, claws and colour; the person shows scale only). `m21-23-v2-leg-support.png` in the same folder (optional: leg build). Animal record: `art/accepted-animals-2026-11-13/animal-reference-index.json`, code M21-23.
 
 Design context — not for the image prompt: uncommon 3-mana 3/3, or pay 3 more to summon it as a 6/6 (Empower). The animal should be believable at both sizes of power, but the picture need not show two versions.
 
@@ -334,6 +336,6 @@ All cards are proposals awaiting the creator's review. Lift is the paired lookah
 | 241 | M17 | Hired shieldman | Neutral |  | Unit, rare | 3 | 4 / 4 | Hired 1: at the start of each of your turns you automatically pay 1 mana for it; if you cannot, it leaves. | Hired | +1.4 |
 | 242 | M18 | Hired company | Neutral |  | Unit, rare | 4 | 5 / 5 | Hired 2: at the start of each of your turns you automatically pay 2 mana for it; if you cannot, it leaves. | Hired | +1.5 |
 | 243 | M19 | Ploughback | Genesis | Elder Herd | Unit, common | 2 | 2 / 2 | Deep roots: once you have 5 lands, it permanently gets +2 attack and +2 health. | Deep roots | -1.0 |
-| 244 | M20 | Foldstride | Genesis | Elder Herd | Unit, common | 3 | 2 / 3 | Deep roots: once you have 6 lands, it permanently gets +3 attack and +3 health. | Deep roots | -0.5 |
-| 245 | M21 | Salt-flat migrant | Genesis | Elder Herd | Unit, uncommon | 3 | 3 / 3 | Empower 3: you may pay 3 more as you summon it; it is a 6/6 instead. | Empower | +0.0 |
+| 244 | M20 | Mauldrin | Genesis | Elder Herd | Unit, common | 3 | 2 / 3 | Deep roots: once you have 6 lands, it permanently gets +3 attack and +3 health. | Deep roots | -0.5 |
+| 245 | M21 | Talloch | Genesis | Elder Herd | Unit, uncommon | 3 | 3 / 3 | Empower 3: you may pay 3 more as you summon it; it is a 6/6 instead. | Empower | +0.0 |
 | 246 | M22 | Gravelmouth | Genesis | Elder Herd | Unit, rare | 2 | 2 / 2 | Surge: pay X more as you summon it; it gets +1 attack and +1 health for each X. | Surge | +0.7 |
