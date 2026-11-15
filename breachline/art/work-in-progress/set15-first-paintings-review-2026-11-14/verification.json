@@ -1,0 +1,156 @@
+{
+  "outputs": 17,
+  "checks": [
+    {
+      "code": "R1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R7",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "R10",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N1-A",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N1-B",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N1-C",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    },
+    {
+      "code": "N5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "live_source_unchanged": true
+    }
+  ],
+  "gallery": {
+    "cards": 17,
+    "linked_files": 54,
+    "missing_files": 0,
+    "browser_review": "Final browser gallery verified: all 15 selections final, N1-C v3 crossed-arms leaning pose displayed, prior v2 selectable, original Goblin Cutter selected."
+  },
+  "final_firebolt_sha256_matches": true,
+  "final_selections": {
+    "cards": 15,
+    "hashes_verified": true,
+    "original_goblin_retained": true,
+    "chorister": "N1-C v3",
+    "live_installation": false,
+    "installation_owner": "Claude"
+  }
+}

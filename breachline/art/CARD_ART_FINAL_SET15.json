@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "set": 15,
+  "date": "2026-11-14",
+  "status": "final_for_card_building",
+  "purpose": "Authoritative final selection of all 15 Set 15 cards. Claude handles subsequent live-card installation.",
+  "creator_authorization": "All final; final chorister N1-C v3 confirmed. Commit and push. Claude will put the new art into the cards.",
+  "live_installation": false,
+  "counts": {
+    "final_images": 15,
+    "revised_or_new_selections": 14,
+    "original_retained": 1,
+    "pending_cards": 0
+  },
+  "pending_card_ids": [],
+  "assets": [
+    {
+      "id": "set15-R1",
+      "code": "R1",
+      "title": "Militia spearman",
+      "card_id": "spearman",
+      "version": 4,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/militia-spearman.png",
+      "sha256": "ec075175f6af4dbb31a7d31a7389fd94578fe01fcb5bfbddcf6c49bdb4906a03",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R2",
+      "code": "R2",
+      "title": "Oath knight",
+      "card_id": "knight",
+      "version": 5,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/oath-knight.png",
+      "sha256": "e5f6eb361dd2da6aa41af73ec19e74a74c451abebce942aa0128b4840b7d85f2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R3",
+      "code": "R3",
+      "title": "Pride cub",
+      "card_id": "cub",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/pride-cub.png",
+      "sha256": "151c6754cbcfae089f0f286530ed13e029bdd94979a2ef17eb62fc005137affa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R4",
+      "code": "R4",
+      "title": "Blessed banner",
+      "card_id": "banner",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/blessed-banner.png",
+      "sha256": "eaa0a0fca367df1f40cdba2ec0ba18329be51e8163f4afd0a28786c69d738269",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R5",
+      "code": "R5",
+      "title": "Shield of dawn",
+      "card_id": "shield",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/shield-of-dawn.png",
+      "sha256": "d30f17b62672670a058b8c7ecb02242937d1717f15873c793ac33e9ff2d24719",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R6",
+      "code": "R6",
+      "title": "Mercenary captain",
+      "card_id": "captain",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/mercenary-captain.png",
+      "sha256": "f1e4db0abe3fdef58599a045cdc8aa744bfa9e4fb2d3f11743cf43aabad3f68c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R7",
+      "code": "R7",
+      "title": "Cinder peaks",
+      "card_id": "land_r",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-peaks.png",
+      "sha256": "a564096f52e17d3de0407dd83c452583d810028415c3fac7eaee6c2bc28091d3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R8",
+      "code": "R8",
+      "title": "Firebolt",
+      "card_id": "firebolt",
+      "version": 2,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/firebolt.png",
+      "sha256": "9e213e422ec588e7e9817957bc3ed1cb89a5ecc4180430acfb495fdd78e9a906",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R9",
+      "code": "R9",
+      "title": "Thornwarden saboteur",
+      "card_id": "saboteur",
+      "version": 2,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/thornwarden-saboteur.png",
+      "sha256": "67ca43777ec05aa8ee93788d772f36618431b73591f7736595506c73d28b76e9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-R10",
+      "code": "R10",
+      "title": "Sellsword",
+      "card_id": "sellsword",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/sellsword.png",
+      "sha256": "a402c560f5427bab05d82087cc09a9d935e67cb82322f988469b89cda260ab37",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-N1-C",
+      "code": "N1-C",
+      "title": "Brass chorister",
+      "card_id": "chorister",
+      "version": 3,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/brass-chorister.png",
+      "sha256": "81bed29d90fa857246e588723137a4bcfa1a577992e1f9015a73f363663fac77",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "That's it. That's final. That's the brass corester.",
+      "live_installation": false
+    },
+    {
+      "id": "set15-N2",
+      "code": "N2",
+      "title": "Cinder Clan raiders",
+      "card_id": "clanraiders",
+      "version": 2,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-clan-raiders.png",
+      "sha256": "3acd586901d400e937380b2d22a849e8a3cd1a7bb0025c39d091d4f8441204b2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-N3",
+      "code": "N3",
+      "title": "Goblin cutter",
+      "card_id": "goblin",
+      "version": "original",
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/goblin-cutter.png",
+      "sha256": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-N4",
+      "code": "N4",
+      "title": "Orc raider",
+      "card_id": "raider",
+      "version": 4,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-raider.png",
+      "sha256": "f1ed8891c1e9c3e2b5eba47eff2ee984ef0e6f9251f8c840ca5296b44ebdf965",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    },
+    {
+      "id": "set15-N5",
+      "code": "N5",
+      "title": "Orc warchief",
+      "card_id": "warchief",
+      "version": 4,
+      "png": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-warchief.png",
+      "sha256": "03f64742784bfe62bab548725652a43bdc117d68c22141dcedf7aad58abba3fa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "all are final, other than the chorister",
+      "live_installation": false
+    }
+  ],
+  "source_prompts": "reference-library-2026-11-06/set15-first-paintings-2026-11-14/prompts-and-manifest.json",
+  "review_gallery": "work-in-progress/set15-first-paintings-review-2026-11-14/index.html",
+  "usage": [
+    "Use the exact canonical PNGs and hashes listed here.",
+    "N1-C v3 is the final chorister; A/B and earlier C versions are retained comparison history.",
+    "Keep the ORIGINAL Goblin Cutter; the new trial is not selected.",
+    "Claude owns live-card installation. This commit changes art assets and records only.",
+    "Artwork acceptance does not establish new mechanics or the pictured civic hall as lore."
+  ],
+  "installation_owner": "Claude"
+}

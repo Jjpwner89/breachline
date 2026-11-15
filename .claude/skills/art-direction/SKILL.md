@@ -63,6 +63,7 @@ Read [BRIEF_WORKFLOW.md](BRIEF_WORKFLOW.md) whenever writing briefs or turning t
   - The fresh peoples round confirmed this direction: visible, clearly varied brushwork and detail are part of the appeal. Keep the focal form readable without making the whole image crisp.
   - Set 12's card paintings strongly confirmed this approach (creator, 2026-11-13): the new art direction was praised across the batch, with 206 Sallow Bridge mason singled out. Continue the current painted treatment; this is not a requirement to repeat its palette or composition.
   - Don't render everything equally sharp, and don't pair coarse strokes with hairline detail everywhere.
+  - **Set 15 painted-feel correction (creator, 2026-11-14):** Some new paintings became too highly detailed and lost their painted feel. Keep selective detail and visible paint decisions in revisions too: reconsider which forms need description as if making a new painting, instead of faithfully tracing every old texture. This is not a request to make every focal feature coarse or to flatten the light. The subsequent armour, helmet and shadow corrections belong to the specific Set 15 briefs, especially the Oath Knight.
   - Backgrounds are implied with a few large value shapes rather than fully built. A landscape spell can make the place itself the subject.
 - **Materials:**
   - Skin, wool, wood and stone are naturally matte.
@@ -261,6 +262,10 @@ Every alignment uses the same painting and material rules above. The palette and
 - **Interface art:** follows `breachline/art/UI_ART_BRIEFS.md`, at quieter contrast so cards and text stay clear.
 
 ## Open work
+
+**Veilwing finalized (creator, 2026-11-14):** S13-06-L1 is explicitly final card art; VA4 is the definitive approved creature reference. Preserve its long slender continuous torso, matched front shoulder wings (near-left root between the first two buckles), two separately rooted mobile dorsal sails, selected leather harness and quiet painted colour. The creator explicitly chose VA4’s five-fan tail arrangement over the old four-tail note. VA1–VA3 had useful wings but bodies too short; their ratios and earlier tail counts are superseded. VA5/VA6 are supporting anatomy derivatives, subordinate to the exact approved picture. See [final painting, reference and studies](../../../breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/index.html), its ANATOMY_NOTES.txt and [final asset registry](../../../breachline/art/CARD_ART_FINAL_VEILWING.json). Respectful voluntary Gnosis connection remains established; specific powers, diet, range and flight mechanics remain open. Commit/push authorized; no live-card installation or gameplay rarity change inferred.
+
+**Set 15 finalized (creator, 2026-11-14):** All 15 card selections are final. Use the latest selected paintings, retaining the ORIGINAL Goblin Cutter rather than its liked trial. The final chorister is N1-C v3: blank face, hammered brass, faint recessed blue stone, arms crossed over the chest, slight lean against a public Ambrel building, legs uncrossed and subtly watchful. Exact versions, hashes and paths are in `breachline/art/CARD_ART_FINAL_SET15.json`; accepted art and Claude’s installation handoff are in `breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/`. N1-A/B and earlier C images remain unselected comparison history. Creator authorized commit and push; Claude will install the art into cards. This artwork approval does not establish the proposed public hall as named lore.
 
 **Set 12 paintings finalized (creator, 2026-11-13):**
 - All 20 current paintings are final: 193–198, 200–212 and 215. The creator said “much better! these are all final”.

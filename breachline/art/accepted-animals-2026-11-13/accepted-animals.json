@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "animals": 56,
+  "animals": 57,
   "companions": 4,
   "cards": [
     {
@@ -1224,6 +1224,87 @@
         1536,
         1024
       ]
+    },
+    {
+      "code": "MN2-5",
+      "name": "Veilwing",
+      "file": "assets/set13-veilwing-approved.png",
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "An immense graceful Gnosis flier with a long slender continuous body, two matched shoulder wings, two mobile dorsal sails and five flowing fan-ended tails. Use the exact approved VA4 reference; S13-06-L1 is final card art.",
+      "size": "Huge",
+      "source": "S13-06-VA4",
+      "group": "Recent picks",
+      "status": "Approved creature reference; S13-06-L1 final card art",
+      "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+      "source_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "gallery_asset_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/assets/set13-veilwing-approved.png",
+      "source_kind": "full",
+      "selected_cells": [
+        1
+      ],
+      "ecology": {
+        "zone": "aerial",
+        "role": "Diet open",
+        "tag": "Giant flier",
+        "note": "Enormous graceful magically attuned Gnosis beast. Nature-minded practitioners can form a respectful voluntary connection with it; this individual willingly works with them. Specific powers, diet, range and flight mechanics remain open.",
+        "basis": "Creator visual selection and explicit Gnosis relationship direction, 2026-11-14",
+        "approved_grouping": true
+      },
+      "world_status": "established_animal_reference",
+      "reference_use": "Consult approved-reference.png and ANATOMY_NOTES.txt first. Preserve its proportions, matched shoulder roots, two dorsal sails, five-fan tail arrangement, colour and harness. VA5/VA6 are supporting diagrams, not replacement anatomy.",
+      "relative_source_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "anatomy_decision": {
+        "date": "2026-11-14",
+        "source": "S13-06-VA4, explicitly approved as the reference",
+        "status": "creator_approved_reference",
+        "lateral_wings": 2,
+        "dorsal_sails": 2,
+        "total_main_sails": 4,
+        "body": "One long, slender continuous torso beneath the middle sail to the true tapered rump; no split body or short drake proportions.",
+        "shoulder_roots": "Matched left and right front wings at the same shoulder station. Near-left root between the first two buckles. Matched hooked tips; visibility follows perspective.",
+        "dorsal_mobility": "Two separately rooted dorsal sails may pivot across the back, overlap and brush another wing. Distinguish mobile bases and free edges from the torso.",
+        "tail_count": 5,
+        "tail_confirmation": "Creator explicitly chose Preserve the approved picture when asked about five fans versus the older four-tail note.",
+        "tails": "Preserve the selected five-fan arrangement: substantial feathered bases at the true rump, long fine flowing stems and gently drifting leaflike fans. Exact VA4 proportions take precedence over retired numeric ratios.",
+        "harness_and_colour": "Preserve the selected plain brown leather harness and restrained ivory, ochre and dusty lavender painted appearance.",
+        "supersedes": "Earlier one-dorsal arrangements, three/four-tail rules and VA1-VA3 short-body proportion targets.",
+        "supporting_studies": "VA5 and VA6 support the exact approved VA4 reference; their projections do not redefine it."
+      },
+      "pending_revisions": [],
+      "pending_flight_studies": [],
+      "visual_direction_reference": {
+        "code": "S13-06-VA4",
+        "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+        "scope": "Creator-approved identity, anatomy, proportions, colour and harness."
+      },
+      "latest_anatomy_study": {
+        "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/",
+        "notes": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/ANATOMY_NOTES.txt",
+        "sheets": [
+          "VA5",
+          "VA6"
+        ],
+        "status": "supporting_derivatives",
+        "precedence": "Exact approved VA4 takes priority; no separate technical measurements approved."
+      },
+      "final_card_art": {
+        "code": "S13-06-L1",
+        "path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+        "registry": "art/CARD_ART_FINAL_VEILWING.json",
+        "status": "final_for_card_building",
+        "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
+        "live_installation": false
+      },
+      "name_status": "Working name; no replacement selected"
     }
   ],
   "sources": [
@@ -2002,6 +2083,23 @@
         1536,
         1024
       ]
+    },
+    {
+      "code": "S13-06-VA4",
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "relative_path": "art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "kind": "full",
+      "selected": [
+        1
+      ],
+      "rejects": [],
+      "file": "assets/set13-veilwing-approved.png",
+      "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "Creator-approved definitive creature reference"
     }
   ],
   "review_policy": "Original images are unchanged. X overlays hide rejected and unselected cells, labelled by their true status.",
@@ -2070,5 +2168,6 @@
     },
     "current_reference_index": "animal-reference-index.json"
   },
-  "world_reference_use": "Selected animals are part of the world and active references for future cards, concept art and background wildlife. Consult this collection first, especially for Genesis cards."
+  "world_reference_use": "Selected animals are part of the world and active references for future cards, concept art and background wildlife. Consult this collection first, especially for Genesis cards.",
+  "updated_date": "2026-11-14"
 }

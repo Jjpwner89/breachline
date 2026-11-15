@@ -1,0 +1,1396 @@
+{
+  "batch": "Set 15 — revisiting the first paintings",
+  "date": "2026-11-14",
+  "brief_revision": 7,
+  "status": "final",
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/ART_BRIEFS_SET15.md",
+  "generator": "built-in image_gen",
+  "live_installation": false,
+  "items": [
+    {
+      "code": "R1",
+      "card_id": "spearman",
+      "title": "Militia spearman",
+      "original": "originals/militia-spearman.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/militia-spearman.png",
+      "output": "militia-spearman.png",
+      "mode": "new",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Edit the attached existing Breachline fantasy painting, landscape 1536x1024. Preserve the same young man's identity, curls, anxious expression, exact spear and grips, stance, wheat field, soldiers, stone wall, framing, sunny light and measured painted brushwork. Make ONLY these localized adjustments: render his face in simplified matte painted planes, removing the waxy skin highlights without adding pores or noise; remove the sun symbol from his helmet and any little redundant symbols, keeping exactly two clear suns, one bold sun on the mustard scarf and the existing large sun on the distant flag. Give his clothing and equipment slightly earthier colour and a little dusty wear, a modest gritty adjustment, not appreciably darker. Keep the sky and field bright and preserve the original composition and detail distribution. No text, border or watermark. Do not repaint unrelated scenery.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/militia-spearman.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-1da07454-b687-410d-9b04-70e13e79139a.png",
+          "status": "rejected_by_creator",
+          "image_deleted": true
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: stylized-concept. Create a completely NEW Breachline card painting of a young male MILITIA SPEARMAN, landscape 1536x1024. This is a fresh composition, not an edit of an earlier picture. The attached neutral human sheet guides varied believable human anatomy only; invent this individual. A lean young man with dark unruly hair beneath a dented plain iron kettle helmet, tired attentive eyes and a slightly crooked nose stands at the worn gap of a dry-stone field boundary. A long practical ash-wood spear rises almost vertically beside him, held naturally in his right hand at waist height; his other hand rests on the low stonework as he looks across the stubble fields toward something distant off left. Knee-up to nearly full figure, eye-level, the figure slightly right of centre with breathing room in the direction of his gaze. Behind, a few militia companions and spear shafts are suggested in broad distant shapes along the wheat-field path. Cheap patched quilted linen, worn wool scarf, simple leather belt, dusty boots and hems, no champion armour. Exactly ONE clear faded ochre sun sewn on the breast identifies his Sunmane Oath loyalty, no other emblems. Slightly grittier lived experience: dust, old repairs, physical fatigue, quiet courage; not grimdark or glamour. Weathered sandstone, straw ochres and muted blue-grey late-afternoon clouds, a natural break of side light making his face and spear grip readable. Traditional oil and acrylic fantasy painting: substantial varied brush marks, matte simplified facial planes, restrained hard edges at eyes and hand, broad suggestive field and soldiers. Painted form, not a photograph or polished cinematic render; no pore noise, waxy skin, uniform detail, blanket desaturation or shining hero pose. Coherent ordinary scale. No writing, border or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+              "role": "human anatomy"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-c6be3213-88f5-4db7-b6f5-b3b93b5b9b4e.png",
+          "status": "under_review",
+          "history_file": "history/R1-v2.png"
+        },
+        {
+          "version": 3,
+          "prompt": "Use case: stylized-concept. A fresh Breachline Militia spearman painting, landscape 1536x1024. Young dark-haired human male militia soldier at the edge of a dusty wheat field, worn plain iron kettle helmet closely fitted to his head, simple patched linen gambeson and rough wool scarf, practical long wooden spear held naturally in one hand, two comrades suggested farther back. One clear ochre sun on his breast, no repeated heraldry. A calm attentive moment before a difficult march: he stands three-quarter toward left, spear upright at his shoulder, free hand resting near the belt, his expression alert and inexperienced rather than glamorous. Mid-thigh-up with the figure on the right, open air and a rough field path to the left. Slight grit through faded earth colours, dust and repaired clothes, not darkness or scratches everywhere. Attached human sheet is an anatomy/face reference only; invent his individual face. SPECIFIC PAINTING CORRECTION FOR THIS IMAGE: fewer, cleaner, larger light-and-shadow shapes. Treat the face as a small number of clear matte planes, with unbroken cheek and neck shadow and gently smoothed transitions within each plane. Crisp intentional contours where needed at eye, nose, hand and spear, lost edges elsewhere. Avoid busy broken interior linework, scratchy shadow texture and many tiny competing marks. This is not about making brush strokes huge: calm the value modelling and describe less. Clothes in broad simple folds, no seam-by-seam embroidery or fibre texture. Field and companions largely blocked in. Still a rich traditional oil/acrylic fantasy painting with measured varied brushwork, warm light on straw against a muted blue-grey sky; grounded human weight and a small clear face. No photorealism, waxy sheen, outlines around everything, blanket blur, text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+              "role": "anatomy / required kit"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-8949639d-5895-41be-9ce6-5dbecdddef0d.png",
+          "status": "rejected_by_creator",
+          "image_deleted": true
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: precise-object-edit. Return to THIS attached version of the Breachline young Militia spearman, which has the right equipment and physical painted character. Keep this exact young man, head and fitted kettle helmet, watchful expression, long upright spear, field-boundary composition, golden wheat and grey-blue sky. Improve only these things: his protective quilted gambeson/vest is in BETTER REPAIR, substantial padded linen with clear quilted sections and sound hems, a few sensible repairs rather than ragged shredded edges. Keep the plain brown wool scarf, leather belt and modest single sun on the breast. His brown trousers remain worn, with a couple of visible small holes or darned tears around the knees. Add one MEDIUM-SIZED ROUND WOODEN SHIELD on his free arm at image right: weathered wood facing, a modest iron boss and worn metal rim, old knocks and a few repairs but fully functional. It may rest its lower rim on the low stone wall while his forearm carries it from behind; no hand protrudes through its face. Diameter around his torso width, not a huge shield, no extra sun required. Keep the first spear hand and spear unchanged. Preserve the pleasing physical detail in the equipment. Calm only the fussiest interior shadow flecks and excessive tiny texture, by a SMALL amount. Do not flatten the man into smooth geometric shapes or erase the traditional painted modelling. This should be the attached painting with better-maintained padded armour and a practical shield. Traditional oil/acrylic fantasy painting with selective detail and visible varied brushwork. Clear functional forms at the focus; quieter background expressed with broad shapes, natural matte skin/wood/stone, selective metal reflections. Not photoreal, not a cartoon or polished 3D render. No text, labels, borders or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-c6be3213-88f5-4db7-b6f5-b3b93b5b9b4e.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-109f4479-5fd8-4f6c-9ac5-a83285d44b9b.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 4,
+      "creator_feedback": [
+        {
+          "quote": "i do not like the militia spearman you just made, dont do a revision, entirely new painting in a slighlty more gritty tone",
+          "decision": "Reject edit v1; fresh painting required, not another edit."
+        },
+        {
+          "date": "2026-11-14",
+          "decision": "Try again with the related simplifying treatment: cleaner light/shadow shapes and edges, less fussy internal linework. Earlier better verdict did not finalize it."
+        },
+        {
+          "decision": "Latest v3 over-simplified. Return to v2 equipment: padded vest/gambeson in better repair, trousers still worn/holed, add medium old battered functional shield."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "A young militia soldier watches the field road in a repaired padded gambeson, worn trousers and a plain iron helmet. The latest pass returns to the earlier equipment and adds a battered, serviceable round shield.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "fa815135bc6b9e93f5d380a360399c3f7c008cc53268155b63077fb695b29a98",
+      "output_sha256": "ec075175f6af4dbb31a7d31a7389fd94578fe01fcb5bfbddcf6c49bdb4906a03",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/militia-spearman.png",
+      "final_selection": 4,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/militia-spearman.png"
+    },
+    {
+      "code": "R2",
+      "card_id": "knight",
+      "title": "Oath knight",
+      "original": "originals/oath-knight.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/oath-knight.png",
+      "output": "oath-knight.png",
+      "mode": "new",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. New Breachline fantasy card painting, landscape 1536x1024. A male Sunmane Oath knight holds a narrow old stone bridge over a fast stream. His body mostly faces the viewer, steady and planted, watching an approach just left of camera; not lunging or attacking the viewer. A mature ordinary handsome man with a long broad nose and dark stubble visible within an open helmet. Head to boots fit comfortably within the frame. His stance is modestly wide with one foot a half-step forward: trace two distinct hips, knees, shins and grounded feet coherently. He carries a kite shield on his left forearm, viewer right, with the carrying hand entirely hidden behind the shield. His right hand holds a believable straight sword lowered alongside his right leg, viewer left, blade clear of the body. Attachment 1 TOP ROW is the required kit reference: silver-steel plate cuirass with restrained brass edges, practical open helmet, tapered ivory kite shield and straight sword. One bold sun ONLY on shield; no sun on helmet, chest or clothing. Attachment 2 supplies human anatomy and ordinary face variety, not an exact person. The bridge parapets, masonry and stream join physically in one consistent perspective. The man has weight and a modest battle-worn presence, not an inflated fantasy superhero. A cool clear morning with pale reflected stream light and modest warm light catching metal; face and hands legible, wool matte, metal selectively reflective. Traditional oil/acrylic fantasy painting, measured visible strokes and varying finish, precise face and shield rim, broad quiet valley and water shapes behind. A compelling still presence. No photorealism, glossy animation, ornate oversized pauldrons, text, watermark or frame.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+              "role": "kit / human anatomy"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+              "role": "kit / human anatomy"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-56bb20b8-7c4b-4aed-8cf2-cd9e40107f31.png",
+          "status": "under_review",
+          "history_file": "history/R2-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: stylized-concept. Fresh Breachline Oath knight painting, 1536x1024 landscape. A physically strong mature MALE Sunmane Oath knight stands firmly at a narrow stone crossing. Make him an imposing, capable trained soldier with broad shoulders and a solid athletic torso under well-fitted plate, ordinary human scale rather than a huge hero. He mostly faces us with a steady front-facing body, looking toward the approach just left of camera. One foot slightly ahead, both grounded; clear hips, knees, ankles and feet, no lunge. His open-faced iron HELMET FITS CLOSELY AROUND HIS SKULL: narrow padding clearance, cheek pieces beside his cheeks, helmet crown only slightly above his head, no bulbous oversized shell or tiny face lost inside it. Face broad and resolute, short dark beard, about forty. Attachment TOP ROW supplies Sunmane plate-cuirass, helmet, shield and straight sword construction. Add functional fitted greaves to the strong legs, modest shoulder plates. Only ONE sun, large on the ivory kite shield. Left forearm supports shield with carrying hand completely hidden behind it; right hand firmly grips a straight sword lowered beside him. Full figure fills most of height, breathing space at boots and helmet; bridge and stream recede in broad shapes. SPECIFIC LOCAL FINISH: simplify and slightly smooth the lighting/shadow modelling. Group armour and face into clear, broad light planes and calm contiguous shadow masses; only a few deliberate metal edge glints. No thousands of broken flecks, dark creases or tiny outlines. Selectively crisp silhouette and key joints, soft secondary edges, strong readable figure. Background valley and parapet distant masonry described economically with broad painted shapes, no individually rendered distant rocks or leaves. Gentle directional cloudy daylight, reflected river light keeping his face readable, quiet stone greys and linen ivory with natural green in distance. Traditional oil/acrylic painting with measured visible brushwork; no photorealism, exaggerated giant equipment, pore detail, noisy texture, decorative sun symbols, text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png",
+              "role": "anatomy / required kit"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-3f9fa7b2-11f3-432f-ad59-6a3ba3e3269c.png",
+          "status": "rejected_by_creator",
+          "image_deleted": true
+        },
+        {
+          "version": 3,
+          "prompt": "Use case: stylized-concept. Fresh Breachline OATH KNIGHT, a strong male Sunmane Oath soldier standing his ground at a narrow old stone bridge. The attached Sellsword is an explicitly requested ARMOUR-CONSTRUCTION reference: use the same grounded vocabulary of mail over linen, a plain fitted cuirass or reinforced leather torso, modest reused shoulder plate, believable straps, leather skirt panels and robust boots. Do not copy his face, scene, red cloak or three-spike emblems. This world is NOT high-medieval full-plate fantasy. No complete shining articulated plate harness, no full plate greaves, no angular gold-trim superhero chest. Adapt the practical mixed armour to Sunmane with well-kept pale linen, modest brass fittings and one clear sun on the face of a worn ivory wooden kite shield, nowhere else. A close-fitting plain open iron helmet sits naturally over a broad, ordinary masculine head; no oversized helmet. The man is capable and strong through shoulders, posture and physique, not giant armour. Mostly facing the viewer, face turned a little toward the approach, steady planted feet, coherent hips, knees and boots. Shield on left arm, carrying hand hidden behind; practical straight sword held low in right hand. Medium full-figure view, the bridge parapet close behind and stream with wooded banks receding in a few large shapes. One soft directional daylight idea, readable face and hands, earth and stone colours with subtle warmth on iron. Slightly smoother grouped lighting and shadow than a very detailed illustration: broad calm planes, a few chosen crisp contours, not flat polygonal cartoon forms. Keep the substantial painted form and character of believable used equipment. No decorative symbols elsewhere, no posing heroic lunge. Traditional oil/acrylic fantasy painting with selective detail and visible varied brushwork. Clear functional forms at the focus; quieter background expressed with broad shapes, natural matte skin/wood/stone, selective metal reflections. Not photoreal, not a cartoon or polished 3D render. No text, labels, borders or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png",
+              "role": "creator-requested armour construction"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-da9bed95-f890-4f9f-8f97-e1cbfff68e5e.png",
+          "status": "superseded_retained",
+          "history_file": "history/R2-v3.png"
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: precise-object-edit. Edit the attached Breachline Oath Knight painting. Change ONLY his brown leather chest covering into a LIGHT, practical hammered iron breastplate, fitted close over the existing mail and padding. One plain gently curved torso plate, thin rolled edges at neck and arm openings, ending at his belt, believable brown leather attachment straps. Modest surface wear and a few restrained grey-silver reflections make it unmistakably metal. This is a useful light chest plate, not bulky heavy full plate, no sculpted muscles, gilding or additional armour. Preserve exactly his strong human identity, small fitted helmet, existing shoulder guards, mail sleeves, scarf, brown leather skirt and pouches, trousers, sword, sun shield, pose, hands, full-body proportions, bridge, trees, stream, lighting and composition. Preserve the restrained painted finish, no extra tiny scratches or microtexture. 1536x1024 landscape. No text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/R2-v3.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-5f044246-15c6-47fc-9b30-d690e3475e71.png",
+          "brief_revision": 3,
+          "status": "superseded_retained",
+          "history_file": "history/R2-v4.png"
+        },
+        {
+          "version": 5,
+          "prompt": "Use case: precise-object-edit. Make one very small local edit to the attached Breachline Oath Knight painting: lengthen ONLY the sword blade by about 18 percent, extending the tip farther down and left along its existing straight axis. Keep the blade width, taper, central ridge and iron finish the same. Keep the hand, grip, pommel, crossguard and sword angle exactly unchanged. The new tip remains clearly inside the image and above the ground. Preserve everything else exactly: same man, face, fitted helmet, light metal breastplate, mail, shoulder pieces, shield, stance, clothing, bridge, stream, trees, composition, palette, lighting and painted finish. No added detail or texture, no new emblems, no text. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/R2-v4.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-800489b0-18e0-4c93-adfe-9b3363b52021.png",
+          "brief_revision": 4,
+          "status": "final"
+        }
+      ],
+      "selected_version": 5,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Try again: helmet too large, knight needs convincing strong presence, slightly smoother/simpler lighting and shadow. Scope is mainly this painting, not general art direction."
+        },
+        {
+          "decision": "Latest v2 full fantasy plate out of world. Use Sellsword armour construction (mail, leather, modest reused plate) adapted to Sunmane faction; not high medieval. Latest creator instruction supersedes initial plate-kit brief."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Give the Oath Knight a metal chest plate, but not a very heavy one."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "decision": "Lengthen the sword a little; otherwise almost there."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 5,
+          "quote": "I'm liking all of these changes.",
+          "decision": "Retain latest refinement; no explicit final/install instruction."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "The knight retains his light breastplate and practical Sunmane equipment, with a slightly longer sword blade. His pose and stone-crossing scene are preserved.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated image for requested local change, anatomy, continuity, lighting and painted finish.",
+        "creator_approval": "final"
+      },
+      "original_sha256": "987d3f968aaadbf8c19d636664a7a6a6fc0eec9a33df7c3f70d9750ca5b5b54c",
+      "output_sha256": "e5f6eb361dd2da6aa41af73ec19e74a74c451abebce942aa0128b4840b7d85f2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "default_comparison": "history/R2-v4.png",
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/oath-knight.png",
+      "final_selection": 5,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/oath-knight.png"
+    },
+    {
+      "code": "R3",
+      "card_id": "cub",
+      "title": "Pride cub",
+      "original": "originals/pride-cub.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/pride-cub.png",
+      "output": "pride-cub.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Edit the attached existing Breachline fantasy painting, landscape 1536x1024. Keep this exact roaring young lion person's head, mane, expression, body pose, both hand positions, rocks, vivid blue sky, lighting, brushwork and the cropped adult lion warrior at foreground right entirely unchanged. Change ONLY the young fighter's armour and spear length. Replace ALL of the young fighter's plate armour (chest, shoulders, hip and thigh plates) with a simple worn padded linen and brown leather jerkin with modest leather reinforcement over the existing blue sleeves. He is a young low-ranked fighter with light equipment: no metal plate on him. Lengthen the same straight wooden spear shaft beyond the lower hand toward the bottom right: the butt should project far past his grip and continue naturally out of the lower right/bottom of the frame if necessary. The spearhead and the shaft above his hands stay unchanged. Do not change the adult foreground warrior's armour. Preserve original palette and composition; no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/pride-cub.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-53e496ba-6a99-4e67-bba4-68dce00219ea.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "creator_feedback": [
+        {
+          "quote": "cub update is better",
+          "decision": "New v1 preferred to original; not an explicit final-install approval."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "The young lion fighter keeps his roar and pose, with a longer spear and light padded and leather protection. The adult warrior and open sky remain as before.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "0d844df0c5d83a08b0c6e3a9ee0e71f81e3ebf8a63c21c2af742c7a719f7591b",
+      "output_sha256": "151c6754cbcfae089f0f286530ed13e029bdd94979a2ef17eb62fc005137affa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/pride-cub.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/pride-cub.png"
+    },
+    {
+      "code": "R4",
+      "card_id": "banner",
+      "title": "Blessed banner",
+      "original": "originals/blessed-banner.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/blessed-banner.png",
+      "output": "blessed-banner.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Make an extremely restrained local edit of the attached approved Breachline painting at 1536x1024 landscape. Change ONLY the woman's facial skin treatment to be less waxy: simplified matte painted planes and soft natural skin highlights, no polished skin sheen, no pore noise or extra wrinkles. Preserve her exact identity, age, warm expression, gaze, features and hair. Preserve every other element: both hands, grip, pose, armour, red cloak, flag and sun motif, horses and soldiers, sky, gold daylight, composition, contrast, colour and visible brushwork. This is a face-material correction, not a new face or a global style repaint. No text, watermark or border.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/blessed-banner.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-19898caa-b477-46a8-b2f2-fb43ace8f262.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "description": "The banner bearer keeps her warmth, expression and sunlit scene. Her facial skin is painted in softer matte planes to reduce the waxy shine.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "2785a39b80d6134412219f19c5baaf2c9fcf7160aff94deb8bdf81784a031cdf",
+      "output_sha256": "eaa0a0fca367df1f40cdba2ec0ba18329be51e8163f4afd0a28786c69d738269",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/blessed-banner.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/blessed-banner.png",
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ]
+    },
+    {
+      "code": "R5",
+      "card_id": "shield",
+      "title": "Shield of dawn",
+      "original": "originals/shield-of-dawn.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/shield-of-dawn.png",
+      "output": "shield-of-dawn.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Revise this Breachline painting at 1536x1024 landscape. Give the young adult woman a slightly more ordinary but still pleasant, appealing face: a subtly broader nose, less idealized jaw and natural small asymmetries. A small reduction in glamour, not ugliness, ageing or caricature. Keep her age, dark curls, relieved hopeful expression, upward gaze, pose, lifted forearm, grounded hand, exact clothing, luminous golden barrier, rocks and all scene relationships. Facial skin matte and simplified, no waxy shine. Preserve the source's composition, light direction, overall colour and essential identities, but apply the creator's latest request for a more decisively PAINTED finish as if composing it fresh: broad interlocking colour masses, economical visible brush marks, soft or lost secondary edges, and selective precision only where the subject needs it. Simplify secondary textures and background forms substantially; do not trace every stone, leaf, chain ring or fabric fibre. No photographic microtexture, sharpened surfaces, pores, noise or blanket filter. Do not substitute blur for brushwork. The medium should visibly be traditional oil/acrylic fantasy painting. No text, border or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/shield-of-dawn.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-4fb9f314-4670-4e87-a9af-5d128010431e.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "description": "The defender retains her curls, hopeful expression and luminous barrier, with a slightly more ordinary face. Broader cloth, stone and shadow shapes restore a more selective painted finish.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "ae54b222d0f4857f0c958490d07a1c051b673c438fa3931f53a79f3503469aad",
+      "output_sha256": "d30f17b62672670a058b8c7ecb02242937d1717f15873c793ac33e9ff2d24719",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Current painting looks good; retain."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/shield-of-dawn.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/shield-of-dawn.png"
+    },
+    {
+      "code": "R6",
+      "card_id": "captain",
+      "title": "Mercenary captain",
+      "original": "originals/mercenary-captain.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png",
+      "output": "mercenary-captain.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Edit this approved landscape 1536x1024 Breachline painting. Remove ONLY the red waist sash, its knot, and hanging red ends. Reconstruct the existing cream working tunic and leather armour naturally beneath it, with a single plain brown working belt and the existing pouch. Preserve the belt's plausible load-bearing fit. Keep the captain's exact face, grin, moustache, hair, confident stance, pointing gesture holding the scroll, both hands and all anatomy, sword, boots, wagon, soldiers, distant ruins, sky, composition, lighting, palette and every other detail. Keep the original measured painted brushwork. The small neck cloth is not the sash and can stay. A local costume removal only; no scene redesign, no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/mercenary-captain.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-6e3f78fc-8434-4b2a-bc98-f12deb951658.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "description": "The captain keeps his grin, scroll gesture and wagon-top stance. The red waist sash is replaced by his working belt and the clothing beneath.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
+      "output_sha256": "f1e4db0abe3fdef58599a045cdc8aa744bfa9e4fb2d3f11743cf43aabad3f68c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Current painting looks good; retain."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/mercenary-captain.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/mercenary-captain.png"
+    },
+    {
+      "code": "R7",
+      "card_id": "land_r",
+      "title": "Cinder peaks",
+      "original": "originals/cinder-peaks.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-peaks.png",
+      "output": "cinder-peaks.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Edit this approved landscape 1536x1024 Breachline land painting. Remove the entire foreground red Warhorde flag and its pole, including the metal finial, leather ties and pole base. Continue the EXISTING rocks, mountain slopes and sky smoothly through only the space those objects occupied, matching adjacent broad painted strokes and physical landscape perspective. Preserve all existing peaks, lava rivers, atmospheric mist, rock shapes, grasses, sunset light, composition, exact overall colour and contrast. The mountain country itself becomes the subject. Do not change saturation or lighting, add new features, or repaint unaffected portions. No people, flags, emblems, text, borders or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-peaks.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-a8037d73-b5f7-47ed-b1f1-064bc1195a80.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "description": "The volcanic land stands alone, with the foreground flag and pole removed. The lava, peaks and evening light remain the subject.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "8876fee0a173c8d75682b13a69984e51230cc26d44c85c14c0ace7c88f27f60f",
+      "output_sha256": "a564096f52e17d3de0407dd83c452583d810028415c3fac7eaee6c2bc28091d3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Current painting looks good; retain."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-peaks.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-peaks.png"
+    },
+    {
+      "code": "R8",
+      "card_id": "firebolt",
+      "title": "Firebolt",
+      "original": "originals/firebolt.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/firebolt.png",
+      "output": "firebolt.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Revise this Breachline painting at 1536x1024 landscape. Remove the pale three-spike/flame emblems from BOTH the caster's round medallion and hanging red waist sash. The medallion becomes plain worn unmarked metal/wood, the sash plain cloth. Remove any other repeated three-spike marks; at most one very small faint mark may stay on the distant camp banner. Keep this exact mischievous goblin face and anatomy, staff, garments, pose, hands and their contact, the firebolt direction and natural glow, the camp structures and overall layout. Preserve the source's composition, light direction, overall colour and essential identities, but apply the creator's latest request for a more decisively PAINTED finish as if composing it fresh: broad interlocking colour masses, economical visible brush marks, soft or lost secondary edges, and selective precision only where the subject needs it. Simplify secondary textures and background forms substantially; do not trace every stone, leaf, chain ring or fabric fibre. No photographic microtexture, sharpened surfaces, pores, noise or blanket filter. Do not substitute blur for brushwork. The medium should visibly be traditional oil/acrylic fantasy painting. The fire stays luminous and warm against cool smoke. No text, border or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/firebolt.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-db0cdc4e-66d0-4fe9-b7b5-be687f2d691e.png",
+          "status": "superseded_retained",
+          "history_file": "history/R8-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: precise-object-edit. This is the ORIGINAL grittier Breachline Firebolt painting. Preserve its original rough, weathered appearance: the same wicked goblin face, dusty matte skin, tattered patched robes, frayed edges, worn leather, grey smoky setting, original palette, light and fine-to-broad painted variation. Do not smooth, clean up or simplify the garments and face. Make only two tiny emblem removals: erase the pale flame motif from the round hanging chest medallion, leaving a plain worn brown metal disk; erase the pale flame motif from the red hanging waist sash, leaving the same worn faded red cloth. Keep everything else exactly as shown, including all ordinary stitching, tears, jewellery, skull-topped staff, gaze, two hands and firebolt, stance, rock and background. Do not repaint into large polished geometric blocks. Preserve the earthy gritty original. 1536x1024 landscape, no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/originals/firebolt.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-b1f34a1a-ba79-482e-b97e-43b5300f7d1f.png",
+          "brief_revision": 3,
+          "status": "final"
+        }
+      ],
+      "selected_version": 2,
+      "description": "The gritty Firebolt painting is final. Its weathered character, cloth and original scene are retained, with the two redundant emblems removed.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated image: requested kit, material, proportions, hands, lighting and selective painted finish.",
+        "creator_approval": "final"
+      },
+      "original_sha256": "49c1e0ecba2352548dacca1a911f295590c98b556aa7d7a8f93761fa8ef0c1b5",
+      "output_sha256": "9e213e422ec588e7e9817957bc3ed1cb89a5ecc4180430acfb495fdd78e9a906",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Return to the original grittier look."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "quote": "Firebolt is done.",
+          "decision": "Final artwork; no live installation requested."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/firebolt.png",
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/firebolt.png",
+      "final_selection": 2
+    },
+    {
+      "code": "R9",
+      "card_id": "saboteur",
+      "title": "Thornwarden saboteur",
+      "original": "originals/thornwarden-saboteur.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png",
+      "output": "thornwarden-saboteur.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: identity-preserve. Re-stage this existing Breachline painting to make her SABOTAGE readable, landscape 1536x1024. Preserve the same woman exactly: brown skin, same face, braided dark hair, worn dark brown clothes, green scarf, fingerless working gloves and boots. Keep the lovely warm river light and green-water palette. Pull the viewpoint modestly wider so this is visibly a loggers' sawmill water wheel, not an unidentified wheel. Place the crouching woman upper right of a large upright wooden waterwheel, concentrated gaze following her hands to the thorn growth. The wheel is physically mounted on an axle into an old timber mill at right; a few squared logs and a cut stump establish its logging purpose in broad shapes. Water surges under the arrested paddles. Show ONE clear mechanical obstruction: a thick woody thorn vine rooted around a fixed mill support is drawn tightly through two wheel spokes and around the rim, visibly jamming the rotating wheel against the stationary support. The growth under strain and one slightly sprung timber joint make the harm readable. Her hands guide the vine at the actual binding contact, fingers safely between thorns; no generic vine held aloft. Keep coherent wheel ellipse, radial spokes, support attachment, water course and body posture. The mill and logs remain secondary, not a detailed industrial diagram. Preserve the source's composition, light direction, overall colour and essential identities, but apply the creator's latest request for a more decisively PAINTED finish as if composing it fresh: broad interlocking colour masses, economical visible brush marks, soft or lost secondary edges, and selective precision only where the subject needs it. Simplify secondary textures and background forms substantially; do not trace every stone, leaf, chain ring or fabric fibre. No photographic microtexture, sharpened surfaces, pores, noise or blanket filter. Do not substitute blur for brushwork. The medium should visibly be traditional oil/acrylic fantasy painting. The woman's face, two hands and jammed contact carry the attention. No extra people, decorative glowing threads, labels, text, border or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/thornwarden-saboteur.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-98dafaee-cfe5-40b2-85b5-4cf392b16518.png",
+          "status": "under_review",
+          "history_file": "history/R9-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: precise-object-edit. This existing painting is liked. Make ONLY a tighter crop / modest zoom into the woman and upper-right millwheel contact. Output stays landscape 1536x1024. The desired source framing is approximately the rectangle from x=500,y=0 to x=1536,y=700 in the 1536x1024 source, adjusted only slightly to keep her whole hair silhouette inside the top edge and preserve the 3:2 output. Enlarge that portion to fill the image. Her face, torso, both gloved hands, crouched legs, wheel's upper rim and spokes, and the thorn-vine connection to the fixed timber support at right must all remain. Let most of the lower wheel hub, foreground water and far left landscape fall outside the frame. Retain the small visible hint of logs and mill structure behind her. Preserve EXACTLY the existing woman, pose, expression, anatomy, clothing, thorn arrangement, painting style, brush size relationships, light, colour and contrast. Do not redesign the scene, add detail, sharpen, or add any marks. No red guide lines or text. It should feel like the same approved scene viewed closer.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/thornwarden-saboteur.png",
+              "role": "edit target, liked v1"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-2fe85782-39c0-4ae6-87e3-9b0605432137.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 2,
+      "creator_feedback": [
+        {
+          "quote": "great scene for sabateur, zoom in on her a but though",
+          "decision": "Scene liked; tighter upper-right framing requested using the supplied marked image. Preserve woman and sabotage."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "The Thornwarden binds a sawmill wheel to its fixed support with thorn growth. The closer framing follows your marked crop, keeping her face, hands and the obstruction prominent.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e",
+      "output_sha256": "67ca43777ec05aa8ee93788d772f36618431b73591f7736595506c73d28b76e9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/thornwarden-saboteur.png",
+      "final_selection": 2,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/thornwarden-saboteur.png"
+    },
+    {
+      "code": "R10",
+      "card_id": "sellsword",
+      "title": "Sellsword",
+      "original": "originals/sellsword.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png",
+      "output": "sellsword.png",
+      "mode": "edit",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: precise-object-edit. Revise this Breachline painting at 1536x1024 landscape. The sellsword is now unaffiliated. Remove EVERY three-spike emblem from the large near shoulder plate, cloak, front sash, upper-left tent awning, and distant banners/tent cloth. Leave plausible worn metal or plain cloth beneath each. Recolour ALL red cloak and sash fabric to faded walnut brown and undyed grey-brown wool; recolour the background red banner to plain weathered neutral cloth too. Keep exactly this man's face, hair, beard, expression, body pose, mail, patched leather, reused shoulder plate, belt and coin pouch, both hands and sword, rainy camp, brazier and warm fire reflections. No replacement faction symbols. Preserve the source's composition, light direction, overall colour and essential identities, but apply the creator's latest request for a more decisively PAINTED finish as if composing it fresh: broad interlocking colour masses, economical visible brush marks, soft or lost secondary edges, and selective precision only where the subject needs it. Simplify secondary textures and background forms substantially; do not trace every stone, leaf, chain ring or fabric fibre. No photographic microtexture, sharpened surfaces, pores, noise or blanket filter. Do not substitute blur for brushwork. The medium should visibly be traditional oil/acrylic fantasy painting. No text, border or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/sellsword.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-3e54c149-9071-4c49-9149-520c44494071.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 1,
+      "description": "The sellsword retains his face, mail, reused plate and coin pouch. Plain brown and undyed cloth replace the red, and Warhorde emblems are removed throughout the camp.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
+      "output_sha256": "a402c560f5427bab05d82087cc09a9d935e67cb82322f988469b89cda260ab37",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/sellsword.png",
+      "final_selection": 1,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/sellsword.png",
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ]
+    },
+    {
+      "code": "N1-A",
+      "card_id": "chorister",
+      "title": "Brass chorister · A",
+      "original": "originals/brass-chorister.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/brass-chorister.png",
+      "output": "brass-chorister-replacement-a.png",
+      "mode": "new",
+      "status": "retained_unselected_alternative",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. New Breachline card painting: BRASS CHORISTER, design A. Invent a substantial nonhumanoid Artificer construct, chest-high to a human but with heavy credible mass. Its body is a broad squat cast-brass resonating vessel, part bell and part ribbed working machine, carried on THREE short stout articulated supports with splayed iron shoes. A compact offset folded-metal hood forms a characterful head, a dark slit beneath its brow; no human face or futuristic robot head. One broad jointed bracing arm ends in a thick blunt paddle; a smaller tucked manipulator is optional. Distinct articulated load paths, a few exposed rods and hinges, deliberate open spaces; functional rather than gear-encrusted. It could readily shove a person aside through physical weight, but show no victim or ability demonstration. It pauses in the doorway of an Artificer's stone-and-timber workshop, one shoe raised over the worn sill, its heavy body's slight tilt giving personality. Three-quarter side view, low eye level, prominent silhouette. A large shaded workshop mass behind, copper light reflected from the brass into the floor, cool soft daylight from the doorway organizing the whole scene. Sparse tools are soft shapes. Bare brass and soot-dark iron, minimal enamel and ornament; no repeated emblems. New design proposal, not a biological creature. Traditional oil and acrylic fantasy painting with beautiful economical painted form. Build the picture from broad colour masses and deliberately varied strokes, with a few sharper accents at the focal feature. Background architecture and secondary objects are suggested in a handful of low-contrast shapes. Brush size, edge softness and detail agree locally; do not enumerate bolts, paving stones, fibres or scratches. Matte wood, stone and skin; selectively bright reflections on worked metal. No photorealism, polished 3D appearance, pore noise, uniformly crisp texture, text, letters, logo, border or watermark. Landscape 1536x1024, one coherent light source and readable forms.",
+          "references": [],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-2a838299-9cc5-45f8-b430-79029f861938.png",
+          "status": "rejected_by_creator",
+          "image_deleted": true
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: stylized-concept. Create a fresh Breachline BRASS CHORISTER construct, design A. The attached accepted Dock tally-keeper sheet is a REQUIRED REFERENCE FOR MECHANICAL CONSTRUCTION: hammered worked-brass shells, riveted open ribs, shaped struts, pinned rotating joints, visible negative spaces and a simple articulated worked-metal head. Carry that established material and joint vocabulary into a NEW, MUCH STOCKIER practical construct, not the same tall thin individual. About human height, broad oval ribbed torso with a protected dark translucent core, close overlapping curved brass shoulder covers, two sturdy jointed arms with broad articulated metal hands, two strong shortened legs and wide iron-soled feet. Weight through a low centre of mass, plausible rod and joint attachments; substantial enough to shove a person, but not a giant. A short subtle mouth opening in a small hammered head, no human face and no futuristic helmet. A few small blue enamel inset panels may show ordinary Artificer craft. It pauses beside an Artificer's workbench, turning its head toward its own hand as the hand steadies a heavy wooden sliding workshop door. Give posture attentive purpose without human emotion or spectacle. One hand actually contacts the door edge, the other hangs naturally. Workshop masonry and simple tools behind are quiet shapes. Clear pale daylight from left and warm brass reflections, not all-orange lighting. Do NOT make a walking bell, giant ring, abstract gold sculpture, shovel-armed creature or decorative pile of shapes. No obligatory musical props; Chorister is its name. Construction is fine but readable, details selected rather than densely traced. Traditional oil/acrylic fantasy painting with selective detail and visible varied brushwork. Clear functional forms at the focus; quieter background expressed with broad shapes, natural matte skin/wood/stone, selective metal reflections. Not photoreal, not a cartoon or polished 3D render. No text, labels, borders or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+              "role": "required construct construction and joints"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-c056759a-9e1b-4946-828b-e32c27162689.png",
+          "status": "rejected_removed",
+          "rejection_reason": "Rounded/squat body disliked; humanlike upright anatomy requested.",
+          "image_removed": true
+        },
+        {
+          "version": 3,
+          "prompt": "Create a NEW Breachline Brass Chorister construct painting, not a revision of the squat replacement trials. The attached ORIGINAL chorister is a BODY-PROPORTION and made-metal construction reference only: keep its long humanlike arrangement of two arms, two legs, torso and worked metal head, but redesign the actual build. The creator wants tall, upright, broad-shouldered, lean through the waist and a little imposing, unmistakably made of metal. No rotund chest, barrel belly, short legs, four-legged chassis or toy roundness. No elaborate flared shoulder armour, no oversized curved pauldrons. Its broad shoulders come from the actual structural shoulder span, with compact integral smooth shoulder joints. Legs are long and robust enough to carry the body: humanlike thighs, knees and shins, practical flat articulated metal feet; no pointed high-heeled shoes, insect stilts or exposed pipe-thin calves. Hands have coherent humanlike palm geometry, four articulated fingers and ONE correctly opposed thumb each, the thumbs on the inner side toward the body when palms face forward. Hammered brass with warm varied metal planes and restrained dents, some dark iron visible at functional joints, very sparse blue enamel optional. A small irregular glowing blue stone set in a simple sternum socket supplies a quiet magical focal point, not a huge luminous reactor. No weapon, no text, no repeated star decoration. This is an Artificer-built being in an old-world craft setting, not futuristic robotics or an armoured human. Traditional oil and acrylic fantasy painting, lovely varied visible brushwork, selective edges, broad quiet background masses, readable coherent light, brass reflections described with controlled painterly strokes rather than tiny scratches everywhere. Landscape 1536x1024, all important anatomy inside the frame. No text, border or watermark. OPTION A: a tall, quietly formidable construct standing almost frontally in an Ambrel workshop doorway, one long leg slightly forward, upright and confident rather than hunched. Strong broad rectangular upper chest narrowing into a clearly slimmer waist, formed from a few shallow hammered brass plates over a visible articulated spine; torso depth proportionate to a lean human athlete. A compact elongated oval head with an austere flat worked-metal face, shallow brow and dark inset eye apertures; no helmet crest. Arms relaxed slightly apart from the body, elbows subtly bent, both empty hands naturally open at thigh level and visible. Chest stone no larger than a plum, blue light touching only its socket. Full figure occupies most of image height, seen from subtly below eye level, with ample lateral breathing space. Workshop door behind it suggests scale; to one side a subdued workbench and stone wall, no clutter. Warm slanting daylight from upper left against a cool interior, bringing out hand-hammered metal without glossy gold filigree. The design is an exploration, not an illustration of musical function.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/originals/brass-chorister.png",
+              "role": "required body proportions / made-metal construction"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-3917cce2-9fa4-4f08-a00d-d9c6b5a839b5.png",
+          "brief_revision": 3,
+          "status": "superseded_retained",
+          "history_file": "history/N1-A-v3.png"
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: character-design local edit. Refine the attached Breachline brass construct in place. Keep its tall upright humanlike arrangement, long legs, two arms, broad shoulders, correctly formed hands, hammered-brass material and established old-world craft construction. Make it only a LITTLE less imposing and less like a heavily armoured champion, while still capable and strong. Change its humanlike stern face into a more ABSTRACT worked-metal face: no sculpted human nose, lips, eyebrows or muscular jaw, no angry expression. Keep its head small and proportionate; it is handcrafted metal, not a futuristic robot, skull or cute mascot. Recess the blue power stone DEEP INSIDE the upper torso, behind its structural ribs, instead of a gem mounted on the outside of its chest. The small uneven stone sits back in a dark cavity with some metal crossing in front and partially obscuring it; faint soft blue light leaks from within and touches only adjacent inner brass edges. The external sternum has no jewellery-like blue gem. No large bright reactor, outer aura, beams, luminous eyes or blue light all over the body. Expose a little more of the inner workings through restrained gaps in the chest, upper arms and hip shells: a few clear rods, hinge pivots and connecting spars, not a dense tangle of tiny gears. Preserve the same pose, limb lengths, hand positions, setting, full-figure composition, viewpoint, palette, coherent sunlight and visible painted finish. No changes to the environment. No added microdetail or surface grain, no text or watermark. Landscape 1536x1024. Specifically for this solid-chest option: replace the stern masculine face with a simple softly oval hammered plate, a shallow vertical folded seam and two small dark round apertures spaced widely, all calm and abstract, no mouth. Open the inner portions of the broad chest plates so a modest narrow central cavity and a few ribs reveal the recessed stone and dark supporting frame. The remaining chest plates are plain shallow metal, not sculpted pectoral muscles. Slim the shoulder caps just a little, about ten percent, and remove small portions of the upper arm and hip shells to reveal a few simple mechanisms. Leave enough metal to feel durable; do not make it frail or skeletal. Keep its specific workshop doorway and both relaxed open hands.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-A-v3.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-dedcdf0d-638a-4946-9329-cc436bcaf40d.png",
+          "brief_revision": 4,
+          "status": "preferred_superseded",
+          "history_file": "history/N1-A-v4.png"
+        },
+        {
+          "version": 5,
+          "prompt": "Use case: precise local lighting edit. The creator likes this EXACT blank-faced Breachline brass chorister design. Make only its small blue power stone glow faintly but visibly from inside the upper chest. Keep the stone recessed behind the chest's brass ribs, exactly in its existing place and same small size. A soft muted blue core, a very small halo confined to the dark internal cavity, and faint blue reflected light on the closest INNER rib edges should make it read as gently self-luminous at ordinary viewing size. The stone must not look like an exterior gemstone pinned to armour. No starburst, beams, bright reactor, external magical aura, glowing eyes, or blue spill on the whole body. Keep the abstract blank oval face with two small dark holes EXACTLY unchanged; preserve all anatomy, brass plates, exposed workings, silhouette, hands, stance, proportions, workshop, doorway, warm daylight, palette and painted finish. Nothing else changes. Landscape 1536x1024, no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-A-v4.png",
+              "role": "edit target; preferred blank-faced design"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-91fb9bb6-8228-4267-9717-e7668fb9522a.png",
+          "brief_revision": 5,
+          "status": "under_review"
+        }
+      ],
+      "selected_version": 5,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Rejected: out of place in world, not the intended established construct design language. Rebuild."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Reject the fat/rounded replacements; retain hammered brass but use long upright broad-shouldered humanlike anatomy, better legs and shoulders, correct thumbs, and a small blue magic stone."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "decision": "Make both faces more abstract, recess stones inside with faint emanating light, expose slightly more workings and reduce imposing strength a little while keeping them strong."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 5,
+          "decision": "First blank-faced chorister looks good and may be chosen. Add faint stone glow to A only; also make a more active guardian scene using this design."
+        }
+      ],
+      "description": "The preferred blank-faced chorister keeps its tall brass body and exposed joints. Its recessed stone now gives a faint visible glow inside the chest; this remains the quiet-pose option.",
+      "review_label": "Unselected design option · retained",
+      "qa": {
+        "inspected": true,
+        "method": "Checked preservation of blank face and body, faint recessed blue glow and painting continuity.",
+        "creator_approval": "design_preferred_glow_pending"
+      },
+      "original_sha256": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+      "output_sha256": "3f13d5035e2b26691791616323923e2c3e3ffa7739a0fdd0847db1743436cb0c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "default_comparison": "history/N1-A-v4.png"
+    },
+    {
+      "code": "N1-B",
+      "card_id": "chorister",
+      "title": "Brass chorister · B",
+      "original": "originals/brass-chorister.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/brass-chorister.png",
+      "output": "brass-chorister-replacement-b.png",
+      "mode": "new",
+      "status": "retained_unselected_alternative",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. New Breachline card painting: BRASS CHORISTER, design B. An abstract upright, asymmetric brass Artificer construct in a quiet Ambrel street, tall as a broad human and visibly heavy. Its striking silhouette is a tall open horseshoe of worked brass with a suspended stepped resonator in the negative space; one side of the frame is wider and counterweighted. Two offset, stout bent pillar legs support it on broad articulated iron feet, weight convincingly settling into the nearer foot. A single broad sweeping arm ends in a blunt curved brass paddle, while the other side has a short balancing brace. Its small boxlike folded-metal head sits low to one side beneath an arched brow, looking out obliquely, neither a human face nor science-fiction helmet. Give it reserved stubborn personality through posture alone. No thin humanoid robot, no decorative suit of armour, no giant wheels, no excessive gears. It turns carefully beside the foot of a short stair in a canal-side city street, creating an appealing open silhouette against pale masonry. Strong sideways daylight catches broad uneven brass planes; moss-dark reflected light under the mechanism, simple sky-lit ground. City arches, slates and canal are soft background masses, no detailed city panorama. It has enough presence to bodily move someone but no person is being pushed. Only a tiny distant pedestrian for ordinary scale if needed. Brass, blackened iron, restrained worn details; no mandatory blue, no emblems. New design proposal. Traditional oil and acrylic fantasy painting with beautiful economical painted form. Build the picture from broad colour masses and deliberately varied strokes, with a few sharper accents at the focal feature. Background architecture and secondary objects are suggested in a handful of low-contrast shapes. Brush size, edge softness and detail agree locally; do not enumerate bolts, paving stones, fibres or scratches. Matte wood, stone and skin; selectively bright reflections on worked metal. No photorealism, polished 3D appearance, pore noise, uniformly crisp texture, text, letters, logo, border or watermark. Landscape 1536x1024, one coherent light source and readable forms.",
+          "references": [],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-65903ba7-7e91-4767-b98a-9a229768f792.png",
+          "status": "rejected_by_creator",
+          "image_deleted": true
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: stylized-concept. Create a fresh alternative Breachline BRASS CHORISTER, design B, with a distinct LOW FOUR-LEGGED WORKING MACHINE silhouette. The attached accepted construct sheet is REQUIRED CONSTRUCTION LANGUAGE: forged/hammered brass, riveted ribs, curved shell panels, black iron inner struts, round pinned joints, carefully articulated hands and a small worked-metal head. Do not copy the sheet's humanoid proportions. Invent a broad rectangular-oval chassis roughly chest high to a person, its internal dark core partly visible behind brass ribs, four clearly attached stout articulated walking legs supporting actual weight. A short forward neck carries a modest hammered brass head with a dark recessed opening. Two useful jointed arms emerge from the front shoulder frame, with broad three-digit articulated grasping hands, not paddles. Several restrained weathered deep-blue enamel panels and a few leather joint guards belong to the workshop craft. This should feel built and maintained by the same Artificers as the reference, a tangible walking mechanism with personality through a slight head tilt, not a giant insect, toy or abstract sculpture. It is walking carefully across a worn Ambrel courtyard carrying nothing, one foreleg lifting while the other three feet bear weight, head turned toward the workshop doorway it approaches. Three-quarter side view, full mechanism clear, coherent joints and load paths. Open doorway, stone paving and distant human-scale workshop shapes are economically painted. Cool overcast daylight gives broad brass reflections and warm local colour without a glossy finish. No giant bell, horseshoe ring, chimes, organ pipes, shovel arms or elaborate filigree. Traditional oil/acrylic fantasy painting with selective detail and visible varied brushwork. Clear functional forms at the focus; quieter background expressed with broad shapes, natural matte skin/wood/stone, selective metal reflections. Not photoreal, not a cartoon or polished 3D render. No text, labels, borders or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/middle-setting-round-07-2026-11-09/07-dock-tally-keeper-v2.png",
+              "role": "required construct construction and joints"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-31dd31da-2579-4467-b3b9-d87a34801186.png",
+          "status": "rejected_removed",
+          "rejection_reason": "Rounded/squat body disliked; humanlike upright anatomy requested.",
+          "image_removed": true
+        },
+        {
+          "version": 3,
+          "prompt": "Create a NEW Breachline Brass Chorister construct painting, not a revision of the squat replacement trials. The attached ORIGINAL chorister is a BODY-PROPORTION and made-metal construction reference only: keep its long humanlike arrangement of two arms, two legs, torso and worked metal head, but redesign the actual build. The creator wants tall, upright, broad-shouldered, lean through the waist and a little imposing, unmistakably made of metal. No rotund chest, barrel belly, short legs, four-legged chassis or toy roundness. No elaborate flared shoulder armour, no oversized curved pauldrons. Its broad shoulders come from the actual structural shoulder span, with compact integral smooth shoulder joints. Legs are long and robust enough to carry the body: humanlike thighs, knees and shins, practical flat articulated metal feet; no pointed high-heeled shoes, insect stilts or exposed pipe-thin calves. Hands have coherent humanlike palm geometry, four articulated fingers and ONE correctly opposed thumb each, the thumbs on the inner side toward the body when palms face forward. Hammered brass with warm varied metal planes and restrained dents, some dark iron visible at functional joints, very sparse blue enamel optional. A small irregular glowing blue stone set in a simple sternum socket supplies a quiet magical focal point, not a huge luminous reactor. No weapon, no text, no repeated star decoration. This is an Artificer-built being in an old-world craft setting, not futuristic robotics or an armoured human. Traditional oil and acrylic fantasy painting, lovely varied visible brushwork, selective edges, broad quiet background masses, readable coherent light, brass reflections described with controlled painterly strokes rather than tiny scratches everywhere. Landscape 1536x1024, all important anatomy inside the frame. No text, border or watermark. OPTION B: a different tall broad-shouldered humanoid design with a more OPEN, angular rib-and-plate construction: squared chest arch, three or four long flat brass ribs enclosing a narrow waist, a small natural blue stone held securely in the upper central chest. Broad clavicle span, elongated limbs with substantial upper arm and thigh shells, simple visible hinge joints at elbows/knees. Its compact head is a slightly tapered rectangular hammered-metal mask with a flat brow and two dark narrow eye slots, neck subtly turning toward image left; not a smooth robot face. It stands in a three-quarter view in a worn covered stone passage beside an Artificer workshop, weight balanced on two flat feet, one leg just a little ahead of the other. One forearm loosely bends at waist level with the empty hand relaxed and its palm turned inward; other arm hangs naturally with all five digits correctly attached. Keep the long shoulders-to-feet silhouette imposing and readable, not fussy skeletal machinery. Cool open-sky daylight enters from image right, warm brass against blue-grey masonry; a soft ochre doorway and distant courtyard at left. A fresh composition, no workbench gesture copied from reference. The design is an exploration, no singing, horns, musical notes or sound effects.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/originals/brass-chorister.png",
+              "role": "required body proportions / made-metal construction"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-1e26d14a-465e-492a-a0bf-afa5228efbfe.png",
+          "brief_revision": 3,
+          "status": "superseded_retained",
+          "history_file": "history/N1-B-v3.png"
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: character-design local edit. Refine the attached Breachline brass construct in place. Keep its tall upright humanlike arrangement, long legs, two arms, broad shoulders, correctly formed hands, hammered-brass material and established old-world craft construction. Make it only a LITTLE less imposing and less like a heavily armoured champion, while still capable and strong. Change its humanlike stern face into a more ABSTRACT worked-metal face: no sculpted human nose, lips, eyebrows or muscular jaw, no angry expression. Keep its head small and proportionate; it is handcrafted metal, not a futuristic robot, skull or cute mascot. Recess the blue power stone DEEP INSIDE the upper torso, behind its structural ribs, instead of a gem mounted on the outside of its chest. The small uneven stone sits back in a dark cavity with some metal crossing in front and partially obscuring it; faint soft blue light leaks from within and touches only adjacent inner brass edges. The external sternum has no jewellery-like blue gem. No large bright reactor, outer aura, beams, luminous eyes or blue light all over the body. Expose a little more of the inner workings through restrained gaps in the chest, upper arms and hip shells: a few clear rods, hinge pivots and connecting spars, not a dense tangle of tiny gears. Preserve the same pose, limb lengths, hand positions, setting, full-figure composition, viewpoint, palette, coherent sunlight and visible painted finish. No changes to the environment. No added microdetail or surface grain, no text or watermark. Landscape 1536x1024. Specifically for this open-rib option: replace the angular human face with an elongated simple head made from two slightly overlapping hammered brass plates and one narrow dark horizontal opening across their upper part, a featureless lower face with no nose, mouth or chin; a quiet abstract artisan-made head. Preserve the open ribbed torso and its current waist width. Remove the front-mounted blue jewel and its ornamental mount; reveal the faint stone deeper behind the upper ribs, with the foreground brass clearly unlit except for tiny inner reflected edges. The shoulder caps become slightly smaller and simpler, with a bit more pivot visible. Open narrow sections of the upper arm and thigh shells to show restrained structural rods. Keep the overall figure strong, long and balanced; preserve the bend of the forearm across the waist and the hanging hand, passage, doorway and courtyard.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-B-v3.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-2dcc5bc1-aca9-439a-b7d4-4729a23346b9.png",
+          "brief_revision": 4,
+          "status": "under_review"
+        }
+      ],
+      "selected_version": 4,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Rejected: out of place in world, not the intended established construct design language. Rebuild."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Reject the fat/rounded replacements; retain hammered brass but use long upright broad-shouldered humanlike anatomy, better legs and shoulders, correct thumbs, and a small blue magic stone."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "decision": "Make both faces more abstract, recess stones inside with faint emanating light, expose slightly more workings and reduce imposing strength a little while keeping them strong."
+        }
+      ],
+      "description": "The ribbed construct has a quieter abstract metal face and slightly more visible joints and supports. Its stone is set deeper behind the ribs, with a faint internal glow.",
+      "review_label": "Unselected design option · retained",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated image for requested local change, anatomy, continuity, lighting and painted finish.",
+        "creator_approval": "pending"
+      },
+      "original_sha256": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+      "output_sha256": "c14835c490d9c93ab011010bbb48b1a7893e3fb38f2dfa020f20d5ae3df73860",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "default_comparison": "history/N1-B-v3.png"
+    },
+    {
+      "code": "N1-C",
+      "card_id": "chorister",
+      "title": "Brass chorister · Ambrel watch",
+      "original": "originals/brass-chorister.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/brass-chorister.png",
+      "output": "brass-chorister-guardian.png",
+      "mode": "new_scene",
+      "status": "final_artwork",
+      "selected_version": 3,
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: character-in-new-scene. Paint a NEW guardian scene with the EXACT Breachline brass chorister design in the attached identity reference. The reference is for its body, materials and face, not to copy its pose or composition. Preserve the blank oval hammered-brass face with two small dark round apertures, no mouth or human nose, small head, long humanlike limbs, broad but modest shoulders, gently tapering torso, open joint mechanisms, correct five-digit hands and flat metal feet. Preserve the small BLUE STONE RECESSED inside the upper chest behind metal ribs, faintly glowing with a little blue reflected light confined to the inner cavity. No exterior gemstone, glowing eyes, added armour or weapon. It is sturdy and capable without the bulk of a war machine.\nSCENE: the construct has just stepped sideways across the entrance to an old Ambrel workshop to protect the people behind it. A believable active protective stance: body turned three-quarter toward image left and attention directed toward a possible approach off frame left. One foot planted forward and outward toward the left foreground, the rear foot set apart near the doorway threshold, knees slightly flexed and weight clearly grounded. The arm on image left is extended forward at mid-chest height with a gently bent elbow and its open palm facing outward toward the off-frame approach, a calm physical stop gesture; exactly four fingers and one naturally opposed thumb. The other arm is held closer across the lower torso, forearm angled defensively, hand relaxed, its joints clearly attached. Not punching, crouching like a superhero, roaring, or fighting the viewer. The long upright silhouette remains recognizably the same design. A small adult craftsperson, secondary and simply painted, stands a few steps behind it inside the doorway, safe behind its body rather than aligned in its gesture; their quiet attentive posture makes the protective relation legible. No attackers need be shown.\nFresh landscape composition, low but ordinary eye level, whole construct visible with comfortable margins, figure left of centre facing open space on the left, doorway and protected person to the right, worn stone street extending into a few soft workshop facades. Warm afternoon sunlight grazes the hammered brass and stone; cool reflected shadows keep the open joints readable. One coherent light source, the stone's glow stays faint and local. The setting is grounded old-world masonry, wood and hand-crafted metal, no science-fiction scenery. Traditional oil/acrylic fantasy card painting with varied visible brushwork and larger interlocking colour shapes, selectively clear face, hand and feet; quieter secondary edges and minimal background detail. Do not reproduce microscopic mechanical detail or uniform tiny scratches. No text, letters, border, symbols, watermark or signature. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-A-v5.png",
+              "generated_reference": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-91fb9bb6-8228-4267-9717-e7668fb9522a.png",
+              "role": "required N1-A v5 identity, anatomy, face, materials and recessed stone; new scene and pose"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-eb432cbf-a143-403c-a674-809ed472beee.png",
+          "brief_revision": 5,
+          "status": "superseded_retained",
+          "history_file": "history/N1-C-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: character-in-new-scene. Paint the exact blank-faced Breachline brass chorister from the attached identity reference outside a PUBLIC BUILDING IN AMBREL. Replace the previous active workshop-guardian idea with relaxed repose and subtle watchfulness. Use the attachment ONLY for required character anatomy, face, materials and faint recessed power stone; invent this new setting and pose.\nIDENTITY: same tall upright figure with long humanlike limbs, broad but modest shoulders, slim waist, hammered warm brass shells with a few exposed structural rods and joint pivots, practical flat articulated metal feet. Preserve the simple blank oval metal face with two small dark round apertures and no human nose, mouth, jaw or expression. Correct five-digit mechanical hands. The small blue stone is recessed behind upper-chest ribs and glows faintly from INSIDE, with just a little local blue light on inner metal, never a gem pinned on the surface. No additional armour, weapon, shield or glowing eyes.\nPOSE AND MOOD: a quiet guardian standing to one side of the broad public entrance, leaving visitors a clear way through. Full body in a relaxed natural asymmetrical stance: weight rests mainly on one leg, the other knee soft and foot set half a step aside, both feet planted sensibly; shoulders low and easy, not squared for combat. Both arms rest low and close to the body, hands loosely meeting in front near the belt line, fingers relaxed rather than clenched or rigidly folded. Its head is turned subtly toward the public square as though calmly monitoring people passing off frame, alert without threat. Repose, patience and unobtrusive service. No blocking palm, wide defensive crouch, lunging, aggressive pose or theatrical vigilant soldier stance.\nSETTING: a dignified but lived-in Ambrel public hall, proposed rather than a named canonical landmark. Worn pale masonry, broad shallow stone steps leading physically to a large open arched doorway, restrained square piers, tall windows and an adjoining iron-and-glass arcade hint at a prosperous old university city. A glimpse of taller stone buildings beyond gives urban scale. It must clearly read as a shared civic building, not a private workshop, house, shop or military fortress. Two small, loosely painted ordinary adult visitors pass near the far side of the steps, secondary and untroubled, establishing scale and everyday public use. No close bystander needing protection, no threat or dramatic event. No written signage or lettering; do not overload the setting with emblems, instruments or clutter.\nCOMPOSITION AND PAINT: landscape 1536x1024, the whole construct a little left of centre with head and feet comfortably inside the frame, civic entrance behind and to the right, some open square visible to the left. Ordinary slightly low eye level, relaxed strong silhouette without making it colossal. Warm soft afternoon daylight across brass and pale stone with cool ambient shadows; one coherent light, faint blue core subordinate. Traditional oil/acrylic fantasy painting with appealing colour, visible varied brushwork and broad interlocking value shapes. Selectively clear face and hands; distant architecture and people loosely suggested at lower contrast. Keep the hammered material tactile without cataloguing every dent or mechanism; no polished 3D rendering, photographic detail, uniformly crisp textures or surface noise. No text, border, watermark or signature.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-A-v5.png",
+              "role": "required preferred blank-face identity, anatomy, hammered brass and faint recessed stone"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-6728e8f3-bd33-4ed4-b7a5-9b544b150a26.png",
+          "brief_revision": 6,
+          "status": "superseded_retained",
+          "history_file": "history/N1-C-v2.png"
+        },
+        {
+          "version": 3,
+          "prompt": "Use case: precise pose edit. Preserve this Breachline blank-faced brass chorister and this exact Ambrel public-hall painting. Change ONLY the construct's pose as follows: cross BOTH ARMS naturally across its CHEST, not clasped low near the waist. The forearms overlap comfortably across the lower chest; one hand rests lightly against the opposite upper arm and the other tucks naturally beneath the other upper arm, with physically connected shoulders, elbows, wrists and correctly articulated fingers. A relaxed arms-folded pose, not clenched fists or aggressive folded shoulders. Let its torso lean slightly BACK so its upper back/shoulder rests against the stone pier immediately behind it. The slight lean must show believable contact with the wall and relaxed weight. The LEGS MUST REMAIN UNCROSSED: two separate long legs, feet comfortably apart, both planted flat, one knee softly bent if needed. No crossed ankles, no one leg laid in front of the other. Keep the small recessed blue stone visible above/between the forearms if natural; its glow remains faint and local. Preserve the exact blank oval face, two dark apertures, subtly watchful head direction, height, slim build, hammered brass, exposed mechanisms, and original full-body scale. Preserve every part of the public building, entrance, stairs, people, arcade, street, tree shadows, composition, palette and warm daylight. Keep the existing oil/acrylic painted finish and varied detail. Only pose and its immediate contact shadows change; no new props or decorations. Landscape 1536x1024; no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N1-C-v2.png",
+              "role": "edit target; preserve Ambrel public building and blank-face design"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-857afd64-f168-466f-811e-98e99bfea7b7.png",
+          "brief_revision": 7,
+          "status": "final"
+        }
+      ],
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "review_round": 5,
+          "decision": "Create a separate scene with the preferred new chorister in a more active guarding/protective stance."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister, make that one in front of a public building in ambrel, more relaxed in repose, but subtly watchful",
+          "decision": "Revise the guardian scene to relaxed watch outside a public Ambrel building; retain preferred blank-face design."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 7,
+          "decision": "Arms crossed over chest; slight lean back against wall; legs must remain uncrossed."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 7,
+          "quote": "That's it. That's final. That's the brass corester.",
+          "decision": "N1-C v3 final. Commit and push finalized artwork; Claude will install it in cards."
+        }
+      ],
+      "description": "The final brass chorister rests lightly against an Ambrel public hall, arms crossed over its chest and legs uncrossed. Its blank face remains subtly watchful, with faint blue light recessed inside the torso.",
+      "review_label": "Final · creator approved",
+      "comparison_sources": [
+        {
+          "path": "history/N1-A-v5.png",
+          "label": "Blank-face design · A v5"
+        }
+      ],
+      "default_comparison": "history/N1-C-v2.png",
+      "qa": {
+        "inspected": true,
+        "method": "Checked crossed arms, separate coherent hands, slight lean and wall contact, uncrossed planted legs, face/design continuity and preserved public-hall scene.",
+        "creator_approval": "final"
+      },
+      "original_sha256": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
+      "output_sha256": "81bed29d90fa857246e588723137a4bcfa1a577992e1f9015a73f363663fac77",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "final_selection": 3,
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/brass-chorister.png",
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/brass-chorister.png"
+    },
+    {
+      "code": "N2",
+      "card_id": "clanraiders",
+      "title": "Cinder Clan raiders",
+      "original": "originals/cinder-clan-raiders.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/cinder-clan-raiders.png",
+      "output": "cinder-clan-raiders-replacement.png",
+      "mode": "new",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. New Breachline painting of Cinder Clan raiders moving quickly with purpose, 1536x1024 landscape. Four lean, hard-used human raiders, predominantly men, are crossing a shallow stony stream at dusk toward an unseen raid off frame left. Lead man in left foreground, broad hooked nose, short rough hair, closed mouth, intent eyes; ordinary weathered face, early forties, no model glamour or grin. He steps up onto the low bank, damp boot planting and weight coming forward, hatchet held safely low in one hand, the other balancing. Three companions behind cross in staggered positions, fewer marks and softer faces as they recede, one watching the far bank. Short stitched jackets, plain pouches, light patched gear suited to speed, no oversized packs, no heavy plate. The attached kit sheet CENTRE COLUMN supplies construction vocabulary, not an exact outfit; human sheet guides varied ordinary faces. The Cinder Clans are free raiding bands, no Warhorde three-spike marks or uniform red sashes. A restrained strip of evening sky illuminates wet boots and the lead face while stream and brush become broad cool shapes. Implied urgency and violence only, no victims, no attack aimed at viewer. Cohesive directional movement, anatomy and boot contacts readable. Traditional oil and acrylic fantasy painting with beautiful economical painted form. Build the picture from broad colour masses and deliberately varied strokes, with a few sharper accents at the focal feature. Background architecture and secondary objects are suggested in a handful of low-contrast shapes. Brush size, edge softness and detail agree locally; do not enumerate bolts, paving stones, fibres or scratches. Matte wood, stone and skin; selectively bright reflections on worked metal. No photorealism, polished 3D appearance, pore noise, uniformly crisp texture, text, letters, logo, border or watermark. Landscape 1536x1024, one coherent light source and readable forms.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/14-raiders-and-berserker.png",
+              "role": "kit / anatomy"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/01-humans.png",
+              "role": "kit / anatomy"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-cd9d71e7-6cf3-4a2a-ad0c-25c30a12ac40.png",
+          "status": "under_review",
+          "history_file": "history/N2-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: precise-object-edit. This Breachline Cinder Clan raider painting is liked. Change ONLY the weapons of the THREE PEOPLE BEHIND the leading older man so they are visibly armed. Keep the leader and his existing hatchet unchanged. Give the dark-haired man in the middle-left background a practical short hatchet held low in his free right hand. Give the curly-haired figure at middle-right a short plain blade or hatchet carried low at the side, with a clear believable hand grip. Give the rearmost figure at far right a visible practical hand axe at the belt or held at their side. Preserve their poses as closely as possible, altering only the relevant hands slightly to grip the weapons properly. No raised theatrical weapons or huge blades. Keep every face, expression, posture, clothing, stream, sunset, composition and economical brushwork exactly as in the source. Added weapons must match each person's distance, contrast and level of detail; rear weapons remain simple readable painted silhouettes. Preserve 1536x1024 landscape. No new symbols, text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/cinder-clan-raiders-replacement.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-4156a76c-15e6-4355-942c-de817b9fc5cb.png",
+          "status": "final"
+        }
+      ],
+      "selected_version": 2,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Looks pretty good; arm the men in back."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Current painting looks good; retain."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "A small band crosses a stream with sober purpose, in light, repaired gear. The latest pass arms the three figures behind the leader while preserving the liked scene.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final"
+      },
+      "original_sha256": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
+      "output_sha256": "3acd586901d400e937380b2d22a849e8a3cd1a7bb0025c39d091d4f8441204b2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-clan-raiders.png",
+      "final_selection": 2,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-clan-raiders.png"
+    },
+    {
+      "code": "N3",
+      "card_id": "goblin",
+      "title": "Goblin cutter",
+      "original": "originals/goblin-cutter.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/goblin-cutter.png",
+      "output": "goblin-cutter-replacement.png",
+      "mode": "new",
+      "status": "final_original_selected",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. Paint a NEW Breachline Goblin cutter: an expressive small male goblin launching himself sideways from the tailboard of a battered cart onto a dusty road, eager to catch an adversary just off frame right. He is aggressive and comically pleased with his own daring: wiry body, long ears swept back, hooked nose, a crooked excited grin and sharp focused eyes. Use attachment 1 for required goblin body/face anatomy; invent this individual. Attachment 2 LEFT COLUMN is optional scavenged kit vocabulary. One short heavy cleaver in his right hand held out to the side and back ready for the next movement, the left hand open for balance; no attack toward the viewer. The trailing boot is just leaving the cart board; the leading leg reaches toward a clear landing place on the road. Trace the whole body's weight and motion, two arms, two legs, natural grips. Small mismatched leather pieces, one salvaged shoulder plate, faded olive waistcloth and plain pouch. A SINGLE bold three-spike mark on the visible shoulder plate signals Warhorde loyalty. No other symbols. Side-on three-quarter composition with the goblin's full silhouette clear against an ochre dust shape; cart at left, soft grassy ditch and ordinary timber fence beyond. Bright windy daylight, warm dusty light and cool shadows; no gratuitous flames. Humour is physical cheek and enthusiasm, not a mascot cartoon. Traditional oil-and-acrylic fantasy painting, emphatically painted through larger interlocking colour shapes and varied visible strokes. Selective crispness at face, hands and important contacts; quieter secondary edges, low-detail backgrounds built in broad masses. Skin is matte simplified form, not polished or pore-textured. No uniform high detail, sharp texture everywhere, photoreal rendering, glossy animation, decorative surface noise, text, letters, border or watermark. Keep one coherent lighting idea, appealing colour and legibility. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/03-goblins.png",
+              "role": "required anatomy"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/14-raiders-and-berserker.png",
+              "role": "optional kit, specified column only"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-34ca076c-61bf-4395-8cae-99f4a3cc8d66.png",
+          "status": "under_review"
+        }
+      ],
+      "selected_version": 1,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Creator likes the Goblin cutter. Retain unchanged, not final installed."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Keep the old Goblin Cutter; the new one is also liked."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize original Goblin Cutter as previously selected."
+        }
+      ],
+      "description": "The original Goblin Cutter is the final selected painting. The jumping-cart alternative remains a liked, unselected option for reference.",
+      "review_label": "Final · original selected; alternative retained",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated full image; compare with source and latest creator notes",
+        "creator_approval": "final_original"
+      },
+      "original_sha256": "14be52f3da0b61ec702dc13b5d025cdf08439cb2cf0cf5515eca1c142f3928d5",
+      "output_sha256": "28ee1c5023ee4477cf61bda20c1fff9aa72bf2da10773d2d036c8ed9f7d684b0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "selected_for_use": "original",
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/goblin-cutter.png",
+      "final_selection": "original"
+    },
+    {
+      "code": "N4",
+      "card_id": "raider",
+      "title": "Orc raider",
+      "original": "originals/orc-raider.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-raider.png",
+      "output": "orc-raider-replacement.png",
+      "mode": "new",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. NEW Breachline Orc raider card painting, a male orc charging through the edge of a burning farm, moving across the picture toward an unseen target off left. Use the attached orc anatomy reference: coarse unmistakably nonhuman skull, heavy brow ridge, broad blunt nose, projecting powerful jaw, small deep eyes, irregular asymmetric tusks, broad strong body. Not a green handsome human, not an oversized monster. Invent a distinct younger adult male with cropped coarse dark hair. Determined bared teeth and forward focused gaze, body leaning into a powerful running stride, knees and hips coherent. He carries a practical iron axe in one hand, the other arm counter-swings naturally, no weapon aimed at the viewer. Patched short leather coat, simple belt, small salvaged mail patch, ordinary boots; gear physically fits. At most one small three-spike badge on the belt. A broken farm fence, low ground fire and distant smoky roof create the implied raid without victims or gore. ONE continuous ground plane and a single consistent horizon; fence posts and farm buildings obey the same perspective. Frame the whole stride with margins, medium-distance view from slightly in front and to the side. Warm firelight from behind/right and cool smoke-reflected light from the open foreground keep his face and body legible. Background is abstract and softly painted, with no sharp fence-detail or elaborate scenery. Traditional oil-and-acrylic fantasy painting, emphatically painted through larger interlocking colour shapes and varied visible strokes. Selective crispness at face, hands and important contacts; quieter secondary edges, low-detail backgrounds built in broad masses. Skin is matte simplified form, not polished or pore-textured. No uniform high detail, sharp texture everywhere, photoreal rendering, glossy animation, decorative surface noise, text, letters, border or watermark. Keep one coherent lighting idea, appealing colour and legibility. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png",
+              "role": "required anatomy"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-ceeb65d1-ebd0-47d9-843e-964d56a2dad6.png",
+          "status": "under_review",
+          "history_file": "history/N4-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: precise-object-edit. This Breachline male orc raider painting should gain a SECOND AXE. Keep the existing axe and its hand at image left unchanged. Put a second practical one-handed iron axe in his currently empty trailing hand at image right: naturally curled fingers close around a wooden haft, axe angled diagonally upward and back into the open smoky space at right, fully readable and clear of his body. Make its head similar functional size to the first, with a slightly different worn profile. Preserve the same orc identity, coarse skull and tusks, face, charge, body and leg positions, garments, fire, fences, perspective, light, palette and painted simplification. Only adjust the trailing hand/wrist enough for an anatomically credible grip. Exactly TWO axes total, each in a different hand. No extra limbs, giant weapons, text or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/orc-raider-replacement.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-cebfba23-afbb-4aa7-8a4b-ce156e823281.png",
+          "status": "superseded_retained",
+          "history_file": "history/N4-v2.png"
+        },
+        {
+          "version": 3,
+          "prompt": "Use case: character-equipment-edit. Attachment 1 is the EDIT TARGET, the current male Breachline Orc Raider. Keep his exact coarse male orc identity, heavy brow, blunt projecting jaw, irregular tusks, cropped hair, fierce expression, strong running legs, full-body scale, smoke, burning farm, warm backlight, broad economical painted finish and overall composition. Attachment 2 is ONLY the required equipment reference from the original raider; do not copy that character's face, body type, hair or pose. Replace attachment 1's patchwork coat and shirt with a practical fitted sleeveless battered dark leather armour vest and diagonal strap/buckle like attachment 2, with bare green upper arms, leather forearm wraps, protective leather skirt panels and a faded red waist cloth. Believable personally repaired gear. Replace BOTH one-handed axes with ONE large two-handed battleaxe, its worn iron crescent head and long leather-wrapped wooden haft resembling attachment 2. He grips this single continuous haft in BOTH hands, one hand near each end of its central grip, carrying it diagonally across the front of his torso, axe head out to image left and clear of his face, ready to bring it into action as he runs. Adjust only the arm positions enough for this anatomically natural two-handed carry. Shoulders connect clearly to elbows and hands; correctly opposed thumbs and fingers securely wrap the shaft. Exactly one axe total. Preserve grounded stride and painterly larger forms; no blanket microdetail, text, signature or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N4-v2.png",
+              "role": "edit target"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/originals/orc-raider.png",
+              "role": "equipment reference only"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-9dc277a4-f63f-4053-9976-aac1071bbc7c.png",
+          "brief_revision": 3,
+          "status": "superseded_retained",
+          "history_file": "history/N4-v3.png"
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: anatomical local edit. Keep this Breachline Orc Raider painting, changing ONLY the spacing and depth of the legs slightly. The creator likes the image but the legs look stacked directly behind one another. Keep the leading leg and boot on image left almost unchanged. Offset the TRAILING leg at image right a little outward and farther back in depth: its thigh must clearly originate from the separate far hip, with a small readable gap from the leading thigh; shift the rear knee and boot outward toward image right by about half a boot-width and a little higher on the receding ground plane. Make the two hip-to-knee-to-ankle chains coherent and visibly distinct, with natural running weight, subtle depth foreshortening and believable boot/ground contact. Do not make a huge spread or change the overall stride. Retain exactly the same torso, coarse male orc face, hair, gaze, leather vest, red waistcloth, arms, both correct hand grips, one large two-handed axe, burning farm, fence, light, palette and economical oil/acrylic brushwork. Correct only the lower-body anatomy and nearby ground shadow needed by the slight offset; no new props, text or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N4-v3.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-8f25af9d-3864-4dba-b131-375781f659d5.png",
+          "brief_revision": 4,
+          "status": "final"
+        }
+      ],
+      "selected_version": 4,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Give him two axes."
+        },
+        {
+          "decision": "Two-axe orc looks pretty good."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "Use armour more similar to the original and its big two-handed axe; supersedes two axes."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "decision": "Legs look stacked directly in front of each other; offset them slightly."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 5,
+          "quote": "I'm liking all of these changes.",
+          "decision": "Retain latest refinement; no explicit final/install instruction."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "The charging raider keeps his original-style leather armour and two-handed axe. The trailing leg is offset slightly to give the stride clearer depth and separate hip-to-foot lines.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated image for requested local change, anatomy, continuity, lighting and painted finish.",
+        "creator_approval": "final"
+      },
+      "original_sha256": "09b412a67b3a5b20bf1a07ee9eee7143d49b4d8a9a5dd039efff5d9c647fc8ea",
+      "output_sha256": "f1ed8891c1e9c3e2b5eba47eff2ee984ef0e6f9251f8c840ca5296b44ebdf965",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "default_comparison": "history/N4-v3.png",
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-raider.png",
+      "final_selection": 4,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-raider.png"
+    },
+    {
+      "code": "N5",
+      "card_id": "warchief",
+      "title": "Orc warchief",
+      "original": "originals/orc-warchief.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/orc-warchief.png",
+      "output": "orc-warchief-replacement.png",
+      "mode": "new",
+      "status": "final_artwork",
+      "versions": [
+        {
+          "version": 1,
+          "prompt": "Use case: stylized-concept. NEW Breachline Orc warchief painting. Authority from weight of presence and a long hard life: an older broad male orc stands among his followers at a modest open camp, calm and formidable, head turned slightly toward someone just off frame left. Use attachment 1 as required anatomy: heavy brow, broad blunt nose, strongly projecting jaw and irregular tusks; a visibly nonhuman face with one blunted tusk and a pale old scar, thinning coarse grey hair, deliberate unreadable eyes. This is not a handsome human painted green. Waist-to-knees portrait with the figure slightly left of centre; two followers dissolve into broad subdued camp shapes behind. His salvaged iron cuirass fits his torso, one modest shoulder plate and a repaired leather sleeve on the other side. Attachment 2 LEFT COLUMN informs practical salvaged construction only: radically reduce its shoulder bulk and use a normal-sized iron war hammer, with a head only about the size of his fist and a sturdy waist-high wooden haft. He rests one hand naturally around that haft; the other relaxed beside his belt. One single clear three-spike mark on a small weathered breast cloth identifies the Warhorde; nothing repeated across gear or tents. No grand throne, huge pauldrons, enormous hammer, ornamental skulls or familiar franchise design. Soft late-afternoon side light carves his broad matte face and catches a few worn iron edges, subdued umber camp canvas and moss-grey ground, no required red scheme. His stillness and the attention of the loosely suggested followers carry the power. Traditional oil-and-acrylic fantasy painting, emphatically painted through larger interlocking colour shapes and varied visible strokes. Selective crispness at face, hands and important contacts; quieter secondary edges, low-detail backgrounds built in broad masses. Skin is matte simplified form, not polished or pore-textured. No uniform high detail, sharp texture everywhere, photoreal rendering, glossy animation, decorative surface noise, text, letters, border or watermark. Keep one coherent lighting idea, appealing colour and legibility. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png",
+              "role": "required anatomy"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/15-heavy-fighters-and-hired-blades.png",
+              "role": "optional kit, specified column only"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-cf9c510b-02d2-4029-b20a-6f7494874eb5.png",
+          "status": "under_review",
+          "history_file": "history/N5-v1.png"
+        },
+        {
+          "version": 2,
+          "prompt": "Use case: precise-object-edit. Keep this Breachline orc warchief painting and the same older scarred male orc exactly. Give him a LITTLE HEAVIER ARMOUR: reinforce the existing fitted iron cuirass with a second practical overlapping lower plate, add a modest matching functional shoulder guard over the currently leather-only shoulder, and replace the visible leather forearm protection with simple iron bracers over mail-backed sleeves. The armour should cover more of him and feel sturdier while still salvaged, mismatched and individually repaired. Keep plates close to the body, shoulders normal sized; no giant pauldrons or full plate fantasy suit. Keep the same face, thinning hair, tusks, gaze, calm posture, small practical hammer, single three-spike breast cloth, followers, tents and fire. Preserve composition, light, colours, painted detail and all unchanged features. 1536x1024 landscape, no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/orc-warchief-replacement.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-4f96321d-e8b9-4f45-9d48-c1c9e18c6d5b.png",
+          "status": "superseded_retained",
+          "history_file": "history/N5-v2.png"
+        },
+        {
+          "version": 3,
+          "prompt": "Use case: character-equipment-edit. Attachment 1 is the EDIT TARGET: keep this older male Breachline Orc Warchief's distinctive coarse nonhuman face, scar, irregular tusks, grey thinning hair and commanding mature identity, same three-quarter torso composition and camp with two subdued followers. Attachment 2 is an EQUIPMENT AND PRESENCE reference only, the old exaggerated warchief; do not copy its younger face or enormous gear. Make a confident MIDDLE GROUND between these: stronger and more commanding than attachment 1, less overblown than attachment 2. Give the existing fitted iron cuirass a firmer, sturdy silhouette; broaden the shoulder guards modestly by about a quarter with two simple overlapping plates, not giant bulbous pauldrons. Expose part of his strong upper arms between the plate shoulders and practical iron bracers, retaining some mail at the joins. Add one substantial weathered muted brick-red cloak folded over the far shoulder and falling behind, not wrapping the torso in cloth. Keep just the SINGLE three-spike mark on the chest cloth, no motifs elsewhere. Upgrade the tiny hammer to a credible leader's battlehammer: iron head about two fists wide, still far smaller than the original's giant head, on a sturdy wooden haft. Keep its vertical planted orientation, his hand closing firmly around the upper haft just below the head, with a believable thumb and four fingers. His chin slightly raised and shoulders squared give quiet force; preserve his age, face and calm gaze. More substantial armour and presence, no throne, skull pile, giant weapons or glowing magic. Keep the lovely broad oil/acrylic brushwork, warm camp side light, matte skin, worn iron and quiet background. Do not add fine decorative noise. Landscape 1536x1024, no text or watermark.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N5-v2.png",
+              "role": "edit target"
+            },
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/originals/orc-warchief.png",
+              "role": "equipment reference only"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-e0687c86-8303-4be8-83d7-95a40ab7151a.png",
+          "brief_revision": 3,
+          "status": "superseded_retained",
+          "history_file": "history/N5-v3.png"
+        },
+        {
+          "version": 4,
+          "prompt": "Use case: precise-object-edit. In this liked Breachline Orc Warchief painting, enlarge ONLY the iron battlehammer HEAD by about 20 percent in width and height, preserving its blocky functional profile and worn metal. Keep it centred and securely fitted on the same vertical wooden haft; preserve the existing head-to-haft construction. It should look a little more substantial, still a believable weapon and nowhere near a gigantic fantasy hammer. Keep the shaft, exact hand grip and hand position, older orc's distinctive face, tusks, grey hair, body, armour, red cloak, single emblem, pose, followers, camp, composition, palette, lighting and painted finish all unchanged. No embellishments, spikes, extra details, text or watermark. Landscape 1536x1024.",
+          "references": [
+            {
+              "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set15-first-paintings-review-2026-11-14/history/N5-v3.png",
+              "role": "edit target"
+            }
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-6b695b7d-bb34-4f46-b673-60660cbe5f74.png",
+          "brief_revision": 4,
+          "status": "final"
+        }
+      ],
+      "selected_version": 4,
+      "creator_feedback": [
+        {
+          "date": "2026-11-14",
+          "decision": "Give him a little heavier armour."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 3,
+          "decision": "The current warchief is too understated; find a middle ground between the original and this version."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 4,
+          "decision": "This version is better; make the hammer a little bigger, otherwise good."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 5,
+          "quote": "I'm liking all of these changes.",
+          "decision": "Retain latest refinement; no explicit final/install instruction."
+        },
+        {
+          "date": "2026-11-14",
+          "review_round": 6,
+          "quote": "all are final, other than the chorister",
+          "decision": "Finalize current selected version; no live-art installation requested."
+        }
+      ],
+      "description": "The older warchief keeps the liked armour, cloak and calm commanding presence. His hammer head is a little larger while remaining practical in scale.",
+      "review_label": "Final · creator approved",
+      "qa": {
+        "inspected": true,
+        "method": "Visual inspection of generated image for requested local change, anatomy, continuity, lighting and painted finish.",
+        "creator_approval": "final"
+      },
+      "original_sha256": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
+      "output_sha256": "03f64742784bfe62bab548725652a43bdc117d68c22141dcedf7aad58abba3fa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "default_comparison": "history/N5-v3.png",
+      "canonical_output": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-warchief.png",
+      "final_selection": 4,
+      "review_copy_of": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-warchief.png"
+    }
+  ],
+  "creator_feedback": [
+    {
+      "quote": "spearman and new knight are better! looks too highly detailed imo in some of your latest, losing some of that painted feel. i know revisions are hard, but you can do it, think about what you would do if you were making it a new",
+      "decision": "R1 fresh painting and R2 preferred; strengthen selective painted simplification throughout remaining work, including edits. Preserve composition/light without reproducing excessive detail."
+    }
+  ],
+  "completed_outputs": 17,
+  "review_gallery": "index.html",
+  "gallery_title": "Set 15 — first paintings revisited",
+  "latest_scope_note": "All 15 card selections are final: 14 revised/new paintings including N1-C v3 and the previously selected ORIGINAL Goblin Cutter. N1-A/B and the new Goblin Cutter trial remain unselected alternatives. Claude will install the art into cards. This work only finalizes and publishes the artwork, comparison history and handoff.",
+  "cleanup_records": [
+    {
+      "date": "2026-11-14",
+      "reason": "Rejected N1-A/B v2 replaced at current paths; generated-source copies removed; exact prompts retained.",
+      "removed_generated_sources": [
+        "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-c056759a-9e1b-4946-828b-e32c27162689.png",
+        "/Users/dpuser/.codex/generated_images/01a1dbf7-270f-79f0-838d-73a84a95e8e8/exec-31dd31da-2579-4467-b3b9-d87a34801186.png"
+      ]
+    }
+  ],
+  "final_card_selections": 15,
+  "pending_card_ids": [],
+  "installation_owner": "Claude"
+}
