@@ -2,14 +2,14 @@
 
 Workflow: [briefs to paintings](../../.claude/skills/art-direction/BRIEF_WORKFLOW.md). Art direction: [art direction](../../.claude/skills/art-direction/SKILL.md).
 
-- **Date and revision:** 2026-11-14, revision 1.
+- **Date and revision:** 2026-11-15, revision 7. The creator voted on the cards and asked for new animals for M20 and M21: "good card - wrong animal, find a different animal", and for M21, "salt flat migrants are not that strong". Both now ask for a lineup of new animal options instead of a painting; the creator picks one, and the card painting follows. Revision 6 replaced M2's brief, and M2 v7 is final. All other briefs are unchanged.
 - **Source:** new cards built on the mechanics the creator liked on 2026-11-14 (Seasoned, Grace, Stratagem, Cadence, Recall, Ransack, Offering, Reap, Surge, Empower, Momentum, Hired, Deep roots). Each statline passed a paired balance check with the lookahead bot, and Sonnet playtesters played the mechanics in ten full games. The card table at the end is the design record for these briefs.
-- **Card status:** proposals. The creator has not yet accepted or rejected these cards; names, subjects and the four animals' card roles are proposals too. The creator asked for briefs to be ready so painting can start while they review. A painting for a card the creator later cuts is simply unused.
-- **Scope:** 22 finished card paintings (M1–M22). No lineups are needed: every person and animal here uses an accepted design.
+- **Card status:** the creator approved all 22 cards on 2026-11-15. Pit digger's rules changed, but its subject still fits, so M12 is unchanged. Names and subjects remain proposals, and M20 and M21 will take the names of the animals the creator selects.
+- **Scope:** 22 card paintings (M1–M22). Revision 7 adds two new-animal lineups for M20 and M21, which come before their paintings; every other person and animal uses an accepted design.
 - **Output stage:** finished card paintings at 1536 × 1024, landscape.
 - **WIP folder:** `art/work-in-progress/set16-mechanic-cards-2026-11-14/`. Proposed filenames are `<card id>.png`.
 - **Paths:** relative to `breachline/`.
-- **Status:** ready for painting.
+- **Status:** M2 v7 is final for card building. M20 and M21 are ready for new lineups (revision 7); their revision 1 paintings (`foldstride.png`, `saltmigrant.png`) are superseded for these cards. The Foldstride and Salt-flat migrant stay accepted animals of the world, and their selections are unchanged. The other 19 paintings remain generated and awaiting review. Original batch brief revision 1; M2 revised through revision 6. [Review gallery](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/index.html) · [Prompts and manifest](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json) · [Handoff](/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/HANDOFF.txt). Outputs are in the main Games repository, not this source checkout.
 
 ## Applies to the whole batch
 
@@ -33,17 +33,19 @@ References: `art/reference-library-2026-11-06/equipment/09-vigil-equipment.png`,
 Design context — not for the image prompt: common 3-mana 2/4 with Seasoned, growing each time it destroys a unit. See the card table.
 
 ## M2 / flameduelist — Still Flame duelist
-Type / alignment / faction: unit / Vigil / Still Flame. Output: `flameduelist.png`.
+Type / alignment / faction: unit / Vigil / Still Flame.
 
-Subject and setting: a Greyhide who fights for the Still Flame. Greyhides value healing above every other craft and are rarely angry, so a Greyhide in a fight is unusual and serious. A cold northern coast, a longhouse or a tide road is home ground.
+Source and status: revision 6. Latest creator direction explicitly replaces the prior art brief and guarded composition. M2 v7 was approved unchanged on 2026-11-15: "that's it, final!". Final registry: /Users/dpuser/Documents/Claude/Games/breachline/art/CARD_ART_FINAL_SET16.json.
 
-What makes it worth painting: a large, kind person who has chosen to fight. Calm weight and gentle hands holding a weapon. The Still Flame's warmth can be present in light or a small ritual detail; it needn't glow.
+Subject: the same young male Crest folk duelist of high status. Somewhat rugged, not overly weathered, quietly dangerous without overt threat.
 
-Must keep: the final Greyhide design (rounded body, smooth grey hide, broad calm face, short sturdy legs, fine hands, no tail). Cold-coast clothing.
+Creator-required staging and kit: resting lightly on a long rapier with its point on the ground; a light mail jacket beneath a handsome medieval coat; shield buckled at his waistband; necessary practical accessories. Build a fresh composition rather than editing the previous guard pose. Preserve the same individual and accepted Crest folk anatomy.
 
-References: `art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png` (required: identity). `art/reference-library-2026-11-06/magic-and-craft-2026-11-08/06-still-flame-censer-healer.png` (optional: Still Flame kit and censer).
+Final painting: /Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png. Exact creator direction and prompt history: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/creator-feedback-round-6.json and prompts-and-manifest.json. The selected painting uses a limestone loggia; this location is not newly named lore.
 
-Design context — not for the image prompt: uncommon 3-mana 2/3 with Drain and Grace (healing beyond full health becomes a ward). Don't show a ward bubble or a healing demonstration.
+References: the prior M2 v6 is used ONLY for the man's identity, explicitly requested by the creator, not its pose or costume. Final CR3 anatomy: /Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png.
+
+Design context — not for the image prompt: uncommon 3-mana 2/3 with Drain and Grace; unchanged. Image approval does not install the card or settle its gameplay proposal.
 
 ## M3 / heldspears — Held spears
 Type / alignment / faction: stratagem / Vigil / Sunmane Oath. Output: `heldspears.png`.
@@ -266,31 +268,31 @@ References: `art/work-in-progress/creature-reference-and-exploration-2026-11-13/
 
 Design context — not for the image prompt: common 2-mana 2/2 with Deep roots (grows once you have 5 lands).
 
-## M20 / foldstride — Foldstride
-Type / alignment / faction: unit / Genesis / Elder Herd. Output: `foldstride.png`.
+## M20 / foldstride — a new Deep roots animal (card name to follow the selection)
+Type / alignment / faction: unit / Genesis / Elder Herd. Revision 7. Output: a lineup of six new animal takes, `m20-lineup.png`, then a card painting of the selected take.
 
-Subject and setting: the Foldstride, a root grazer with a low feeding front and a high folded rear.
+Subject and setting: a new Genesis animal that is modest when young or newly arrived and becomes formidable once it settles into a place. Over time it grows heavy, anchored and hard to move. How it settles is open: it might dig in, grow a mantle, thicken with age, bond to a feeding ground or something else entirely. Open country, woodland edge, wetland or upland are all fine.
 
-What makes it worth painting: its steep sloping silhouette against the land, feeding or moving through it. Its biome is open; choose one that suits a root grazer.
+What makes it worth painting: a believable life cycle you can read in one animal: the sense that this one has been here a long time, or is about to be. Show the lineup animals at rest or feeding, in plain ecological situations.
 
-Must keep: the selected Foldstride, cell 1 of the body-plans sheet only.
+Must keep: original animals that are not the Foldstride or any other selected animal. Follow the animal design guidance: varied whole bodies, integrated heads, coverings and scale; avoid jaw frills, throat combs and a procession of similar faces. Make two of the six freeform: same niche, with anatomy, name and palette left fully open. Give each take a code (M20-1 to M20-6) and a two-to-three-sentence description that names what is proposed.
 
-References: `art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png`, cell 1 (required: anatomy).
+References: `../.claude/skills/breachline-animal-art/SKILL.md` and `ANIMAL_REFERENCE_HANDOFF.txt` (required: animal design rules and the existing roster, to avoid repeats); `art/accepted-animals-2026-11-13/ecologies.html` (optional: niches already filled).
 
-Design context — not for the image prompt: common 3-mana 2/3 with Deep roots (grows once you have 6 lands).
+Design context — not for the image prompt: common 3-mana 2/3 with Deep roots: once you have 6 lands it permanently gets +3 attack and +3 health. A small animal that becomes big; the picture need not show the change.
 
-## M21 / saltmigrant — Salt-flat migrant
-Type / alignment / faction: unit / Genesis / Elder Herd. Output: `saltmigrant.png`.
+## M21 / saltmigrant — a new Empower animal (card name to follow the selection)
+Type / alignment / faction: unit / Genesis / Elder Herd. Revision 7. Output: a lineup of six new animal takes, `m21-lineup.png`, then a card painting of the selected take.
 
-Subject and setting: the Salt-flat migrant, an extra-large grazer on long jointed legs, crossing a salt flat or a dry pan between scattered feeding sites.
+Subject and setting: a new Genesis animal that is genuinely strong: a big, powerful beast that is usually calm but awesome when roused or fully grown. The creator said the Salt-flat migrant is not that strong, so this animal has to read as a credible heavyweight. It can be a grazer, browser or omnivore, and need not be a predator. Its habitat is open.
 
-What makes it worth painting: scale and distance: a huge, quiet animal on an enormous open plain, perhaps a few of them in a line. Awe rather than threat.
+What makes it worth painting: contained power. Show its weight, muscle and presence at rest, and leave a sense of what it could do. Awe rather than horror; no threatening mouths as the default.
 
-Must keep: the selected Salt-flat migrant, cell 5 of the G2 sheet only.
+Must keep: original animals that are not the Salt-flat migrant, Fanback or any other selected giant. Follow the scale guidance for large animals: rethink support and body architecture rather than enlarging a small skeleton, and use a clear comparison or environment for size. Make two of the six freeform: same niche, with anatomy, name and palette left fully open. Give each take a code (M21-1 to M21-6) and a two-to-three-sentence description that names what is proposed.
 
-References: `art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png`, cell 5 (required: anatomy).
+References: `../.claude/skills/breachline-animal-art/SKILL.md` and `ANIMAL_REFERENCE_HANDOFF.txt` (required: animal design rules and the existing roster); `art/accepted-animals-2026-11-13/ecologies.html` (optional: niches already filled).
 
-Design context — not for the image prompt: uncommon 3-mana 3/3, or pay 3 more to summon it as a 6/6 (Empower).
+Design context — not for the image prompt: uncommon 3-mana 3/3, or pay 3 more to summon it as a 6/6 (Empower). The animal should be believable at both sizes of power, but the picture need not show two versions.
 
 ## M22 / gravelmouth — Gravelmouth
 Type / alignment / faction: unit / Genesis / Elder Herd. Output: `gravelmouth.png`.
