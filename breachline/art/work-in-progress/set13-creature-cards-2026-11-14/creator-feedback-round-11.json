@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-14",
+  "liked_base": "S13-06-P8",
+  "harness": "Explicitly liked; preserve",
+  "anatomy_decision": {
+    "date": "2026-11-14",
+    "source": "Creator feedback on S13-06-P8",
+    "creator_words": "It looks like it's got kind of a main dorsal wing, and then one, like, further behind it, which I'm actually okay with. So let's keep that ... add a right wing.",
+    "dorsal_sails": 2,
+    "lateral_wings": 2,
+    "total_main_sails": 4,
+    "status": "arrangement_selected_by_creator",
+    "scope": "Keep both existing P8 back sails. Add the missing right front shoulder wing opposite the left; both in downstroke. Slightly lengthen torso. Preserve liked P8 harness. P9 image pending review.",
+    "dorsal_position": "Main back sail plus a second posterior back sail, as seen in P8.",
+    "supersedes": "Earlier one-dorsal/two-side-wing decision and F1/F2 as complete anatomy references."
+  },
+  "requested_changes": "Add right shoulder wing, slightly lengthen torso",
+  "output": "S13-06-P9",
+  "output_status": "pending_creator_review"
+}

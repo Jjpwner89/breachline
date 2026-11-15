@@ -1,0 +1,126 @@
+{
+  "batch": "Set16 preferred heavyweight revisions",
+  "date": "2026-11-15T20:56:45.084054+00:00",
+  "brief_revision": 13,
+  "brief_source": "BRIEFS-heavyweight-preferred-revisions-13.md",
+  "brief_sha256": "bdea0a75d0b94ed8523e23e4f885775d5b54140baf69a7ef61956c2538660578",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "feedback": "animal-feedback-round8.json",
+  "status": "generated_awaiting_creator_review",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "items": [
+    {
+      "code": "M21-22",
+      "version": 2,
+      "file": "m21-22-highneck-v2.png",
+      "cell": "top left",
+      "rect": [
+        0,
+        0,
+        0.3333333333333333,
+        0.5
+      ],
+      "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP LEFT, the enormous reclining russet-and-cream Highneck, with long raised muscular neck, compact head and huge gathered forelimbs. The previous revision is still not predatory enough. Make the face clearly MORE PREDATORY while preserving the liked body and raised-neck resting pose: a stronger biting jaw, focused forward-directed gaze, pronounced carnivorous teeth with a few substantial canines visible in a slightly parted mouth. Teeth should have believable roots and jaw clearance. Give it the contained confidence of a powerful carnivore, not a scream or a grotesque monster. Keep the compact head recognizably related to the source and integrated into its neck; preserve the warm mottled coat, rounded hindbody, large forelimbs and immense settled weight.",
+      "stage": "reference_revision",
+      "status": "generated",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+      ],
+      "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+      "reference_role": "Edit target; selected cell only.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-7bb83677-fe29-4b23-a4e9-e401a7a9ccca.png",
+      "sha256": "cd14c1b4d2a0f512983dac8bdfe3bc91c1ac4a4994a440bf2959578ae8af89fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Highneck · stronger predator",
+      "original_position": 1,
+      "description": "The raised neck and settled heavyweight body now carry a stronger carnivorous jaw with prominent biting teeth and a more intent gaze. This develops the predatory direction you requested while keeping the liked silhouette and mottled covering.",
+      "assistant_review": "Checked stronger jaw and visible teeth, integrated face/neck, retained low resting body and massive forelimbs, coat continuity and complete framing. No dangling mouthparts or obvious anatomy defects.",
+      "review_status": "awaiting_creator_review",
+      "completed_at": "2026-11-15T20:59:42.201939+00:00"
+    },
+    {
+      "code": "M21-23",
+      "version": 2,
+      "file": "m21-23-feathered-heavyweight-v2.png",
+      "cell": "top middle",
+      "rect": [
+        0.3333333333333333,
+        0,
+        0.3333333333333333,
+        0.5
+      ],
+      "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP MIDDLE, the tall four-legged feathered animal with an elevated neck, orange/slate/cream crest and mantle, and a newly corrected short closed muzzle. Revise its LEGS. Explore a more convincing powerful support structure: stronger muscular shoulders and thighs, clearly articulated elbows and hocks, shorter sturdier lower legs and broad compact padded feet with short stout claws. Slightly flexed joints should show how it can stride and bear weight; avoid the old straight thin-looking columns and splayed fingerlike toes. Four coherent legs with readable origins, joints and planted feet, no extra limbs. Keep the high neck and overall tall presence, its solid compact CLOSED face, crest, layered feather covering and colours. Do not restore dangling mouthparts. The leg treatment is the revised design; the rest should remain recognizably the same animal.",
+      "stage": "reference_revision",
+      "status": "generated",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+      ],
+      "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+      "reference_role": "Edit target; selected cell only.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-901d0d82-ab09-4fda-bc5a-3ffab07e8f10.png",
+      "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Feathered heavyweight · revised legs",
+      "original_position": 2,
+      "description": "The feathered animal now stands on more muscular legs, with clearer elbows and hocks, shorter lower limbs and compact feet. Its high neck, crest and corrected closed muzzle remain; this is a proposed interpretation of the revised leg structure.",
+      "assistant_review": "Checked four connected load-bearing legs, bent elbows and hocks, shorter sturdy lower limbs and feet contacting ground. Closed muzzle, high neck, crest and feather colour identity retained; no rejected mouth appendages.",
+      "review_status": "superseded_by_requested_front_claw_revision",
+      "completed_at": "2026-11-15T20:59:42.201939+00:00",
+      "latest_revision_file": "m21-23-feathered-heavyweight-v5.png",
+      "latest_revision_version": 5,
+      "latest_revision_manifest": "heavyweight-bear-claws-round11-manifest.json"
+    },
+    {
+      "code": "M21-26",
+      "version": 2,
+      "file": "m21-26-mane-heavyweight-v2.png",
+      "cell": "bottom middle",
+      "rect": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: BOTTOM MIDDLE, the long-bodied russet/slate/cream animal with a small mammalian face, sturdy walking limbs, thick balancing tail and broad winglike membranes along its flanks. REMOVE the wings completely: remove all membranes, wing spars, projecting wing fingers and pointed batlike side silhouettes. Replace that exact shoulder/upper-flank region with a substantial natural MANE of long layered fur, growing from the neck and shoulders and sweeping back/down over the upper ribs. Make the mane a handsome weighty collar and flank mantle, not a wing shape made of hair. Retain the liked head and muzzle, torso length, belly, tail, underlying four walking legs, colour family and alert pose. Expose enough shoulder/leg separation to understand the anatomy. The output must have ordinary solid furry flanks beneath the mane, with absolutely no wing remnants or gliding membranes.",
+      "stage": "reference_revision",
+      "status": "generated",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+      ],
+      "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+      "reference_role": "Edit target; selected cell only.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f8e1f27f-4074-40fc-856e-11f65ea4ac45.png",
+      "sha256": "bd36cbb67803a198c1badc8c5e59cecafa6af7b45501592d9121f62fa9feeac7",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Mane heavyweight · wings removed",
+      "original_position": 5,
+      "description": "A broad layered mane now sweeps across the neck, shoulders and upper flanks where the wings were. The long body, small mammalian face, thick tail and walking limbs remain, with no wing membranes or spars; its eventual name and ecology are open.",
+      "assistant_review": "Checked complete removal of wing membranes, spars and pointed wing silhouettes. Mane occupies shoulder and upper-flank area, and four walking legs remain coherent, including the raised near forefoot. Head, long body, tail and colour family retained.",
+      "review_status": "awaiting_creator_review",
+      "completed_at": "2026-11-15T20:59:42.201939+00:00"
+    }
+  ],
+  "gallery": "heavyweight-preferred-revisions-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "art_direction_sha256": "1bb1c015b5c3f9799a33bd9f5ee38b0edd8e917ba03097bf696b832249bec2e8",
+  "generation_input_brief_sha256": "9096b315d3c376bd34ab51369bf876a8b92de550faf1325e246bd9e42ad2322e",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T20:59:42.201939+00:00",
+  "gallery_verification": {
+    "verified_at": "2026-11-15T21:00:20.377669+00:00",
+    "result": "Browser-checked revised art, clear original numbers 1/2/5 and stable codes; opened earlier-version comparison successfully. Output and input hashes verified. Gallery retained as deliverable."
+  },
+  "latest_creator_feedback": "animal-feedback-round11.json",
+  "latest_local_revision_manifest": "heavyweight-bear-claws-round11-manifest.json"
+}

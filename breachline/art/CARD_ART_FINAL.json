@@ -13,8 +13,8 @@
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 141,
-    "new_card_art": 56,
+    "final_images": 149,
+    "new_card_art": 64,
     "already_used_by_game": 85,
     "existing_card_ids": 85
   },
@@ -841,11 +841,12 @@
         1536,
         1024
       ],
-      "sha256": "8876fee0a173c8d75682b13a69984e51230cc26d44c85c14c0ace7c88f27f60f",
-      "web_sha256": "57c2024dfe9ee1f7949346f213868bd4df5b18ff9c17ca9c703f4b41018fb9b3",
+      "sha256": "a564096f52e17d3de0407dd83c452583d810028415c3fac7eaee6c2bc28091d3",
+      "web_sha256": "3027ae2859b50553f21b01b5755541a6c9f628bf60a2c2013f90eb2839987643",
       "card_ids": [
         "land_r"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R7 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-peaks.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "lantern-quarter",
@@ -893,11 +894,12 @@
         1536,
         1024
       ],
-      "sha256": "fa815135bc6b9e93f5d380a360399c3f7c008cc53268155b63077fb695b29a98",
-      "web_sha256": "874486631edc467cedcb5a3896648e8f971483afeab67d46e5cfb13bf35bd5da",
+      "sha256": "ec075175f6af4dbb31a7d31a7389fd94578fe01fcb5bfbddcf6c49bdb4906a03",
+      "web_sha256": "01627613495dcaaf8e25a31e6ccca5ffd6419a3e3eb54a03c835503ebe6b3b8e",
       "card_ids": [
         "spearman"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R1 v4, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/militia-spearman.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "temple-cleric",
@@ -933,11 +935,12 @@
         1536,
         1024
       ],
-      "sha256": "987d3f968aaadbf8c19d636664a7a6a6fc0eec9a33df7c3f70d9750ca5b5b54c",
-      "web_sha256": "40f78ff0dedba61b4ad78f1838bda0bf47621f913223efd290a0262b813a0524",
+      "sha256": "e5f6eb361dd2da6aa41af73ec19e74a74c451abebce942aa0128b4840b7d85f2",
+      "web_sha256": "74b199dc6a12a1c807e5b90e2650849b0657e9433e31f746f056fa4495f337f5",
       "card_ids": [
         "knight"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R2 v5, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/oath-knight.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "sunmane-lancer",
@@ -993,11 +996,12 @@
         1536,
         1024
       ],
-      "sha256": "ae54b222d0f4857f0c958490d07a1c051b673c438fa3931f53a79f3503469aad",
-      "web_sha256": "bb42a2affb9769cc01eca85752286f324975f95e944e2fc034503406c9ad83a9",
+      "sha256": "d30f17b62672670a058b8c7ecb02242937d1717f15873c793ac33e9ff2d24719",
+      "web_sha256": "9764e9ef024f4e1ef14fd63a24feae9d83a96e02c27e63d1609fe03dbf68e3b1",
       "card_ids": [
         "shield"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R5 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/shield-of-dawn.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "blessed-banner",
@@ -1013,11 +1017,12 @@
         1536,
         1024
       ],
-      "sha256": "2785a39b80d6134412219f19c5baaf2c9fcf7160aff94deb8bdf81784a031cdf",
-      "web_sha256": "3f5fea5bf0ac5310e056eb6047700d503237d7d9276c401f185061355ad1ead0",
+      "sha256": "eaa0a0fca367df1f40cdba2ec0ba18329be51e8163f4afd0a28786c69d738269",
+      "web_sha256": "3745ae36317dda664c697f33449a45845bf379c14c0e8feaf62b3069c098a1ac",
       "card_ids": [
         "banner"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R4 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/blessed-banner.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "goblin-cutter",
@@ -1053,11 +1058,12 @@
         1536,
         1024
       ],
-      "sha256": "09b412a67b3a5b20bf1a07ee9eee7143d49b4d8a9a5dd039efff5d9c647fc8ea",
-      "web_sha256": "92a6042243ced4b87251fbf1ee184be272f620e65871d0d8e89a7f451a0d80ef",
+      "sha256": "f1ed8891c1e9c3e2b5eba47eff2ee984ef0e6f9251f8c840ca5296b44ebdf965",
+      "web_sha256": "e2b6af61191a2c80f1b198ec9a95167fc60d8455bd999381c83eb18cbb6a2219",
       "card_ids": [
         "raider"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (N4 v4, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-raider.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "street-conjurer",
@@ -1093,11 +1099,12 @@
         1536,
         1024
       ],
-      "sha256": "5231c35fda803e03bfa5ab840d5d64af2c88405eaa690a29bf890a669604617d",
-      "web_sha256": "bcbe605c5304df8f9991e903fabf78231ca23026f3c1346d3e4f51c90e80bb54",
+      "sha256": "a402c560f5427bab05d82087cc09a9d935e67cb82322f988469b89cda260ab37",
+      "web_sha256": "707e63864e68bae0fe7dc61a24309a0a6a8ca8d9406ad1c1596ff083844ff21e",
       "card_ids": [
         "sellsword"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R10 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/sellsword.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "orc-warchief",
@@ -1113,11 +1120,12 @@
         1536,
         1024
       ],
-      "sha256": "363957e4767f2df49aa75c65cd82093b0e1ee8753fe17a63f541c19bc8b0de4f",
-      "web_sha256": "e0b47e5b77fb1a746b4443f055fa6853a88e3c3df7fccb9ec25e26253d1396a0",
+      "sha256": "03f64742784bfe62bab548725652a43bdc117d68c22141dcedf7aad58abba3fa",
+      "web_sha256": "c2117340923382df0ba1ea9cefdc6bd361bddd51ed95fe283df13b96b0f46aa7",
       "card_ids": [
         "warchief"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (N5 v4, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/orc-warchief.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "hill-giant",
@@ -1173,11 +1181,12 @@
         1536,
         1024
       ],
-      "sha256": "49c1e0ecba2352548dacca1a911f295590c98b556aa7d7a8f93761fa8ef0c1b5",
-      "web_sha256": "b4456a0c95af16521d238f502228d5d7ca0d9c50b9842f1c2bf6b504a6fdc80b",
+      "sha256": "9e213e422ec588e7e9817957bc3ed1cb89a5ecc4180430acfb495fdd78e9a906",
+      "web_sha256": "5fb769955113ce5ffa922eed8d4ab8cad22380d62fbdeacd7abd550c6b13169b",
       "card_ids": [
         "firebolt"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R8 v2, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/firebolt.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "withering-hex",
@@ -1285,11 +1294,12 @@
         1536,
         1024
       ],
-      "sha256": "0d844df0c5d83a08b0c6e3a9ee0e71f81e3ebf8a63c21c2af742c7a719f7591b",
-      "web_sha256": "a4c4b90c5a30aa166c8d9694a495d58209b1565c13aaa449b017f5002a401e24",
+      "sha256": "151c6754cbcfae089f0f286530ed13e029bdd94979a2ef17eb62fc005137affa",
+      "web_sha256": "312cd973b9f20e3a3ec6e0ffc7b31a515596589c4b4e06a5d5572b72a35bd683",
       "card_ids": [
         "cub"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R3 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/pride-cub.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "oath-sentinel",
@@ -1345,11 +1355,12 @@
         1536,
         1024
       ],
-      "sha256": "048524486502630a4aeb78a308afb45b31ec921b7fb408512daa9e0358bbcfee",
-      "web_sha256": "49928d03a78fe5d91b7dbcd5e7a441e5e219a8ab42c7fd2630728f2997953ac4",
+      "sha256": "3acd586901d400e937380b2d22a849e8a3cd1a7bb0025c39d091d4f8441204b2",
+      "web_sha256": "15d8915bfabf09666a88ebc504449b05d9162a35bb5afc72c881af686a0bc259",
       "card_ids": [
         "clanraiders"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (N2 v2, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/cinder-clan-raiders.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "cinder-berserker",
@@ -1385,11 +1396,12 @@
         1536,
         1024
       ],
-      "sha256": "8c00929d2d0984da8d02dd50d4c3ee0e374420c5a12685608b78fb473791b068",
-      "web_sha256": "40c2e388ed416499830e9d1aef45092cf0416cbf0a580d1096e5b3bda687687e",
+      "sha256": "f1e4db0abe3fdef58599a045cdc8aa744bfa9e4fb2d3f11743cf43aabad3f68c",
+      "web_sha256": "1931b2c6e195b9226a88a038e6da509ac5986378fe594a9a9160803a9b8bdca2",
       "card_ids": [
         "captain"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R6 v1, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/mercenary-captain.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "ember-drake",
@@ -1485,11 +1497,12 @@
         1536,
         1024
       ],
-      "sha256": "23c74a589d0224e43f7c8022dbfa35a47232d0f432649e0c9df424cd515ae6e3",
-      "web_sha256": "da99ab623df3f60a1e0ecd33d0107d47e4811e0971f958090df00bab29199011",
+      "sha256": "81bed29d90fa857246e588723137a4bcfa1a577992e1f9015a73f363663fac77",
+      "web_sha256": "5eccf3385f174b263c9218eb1b960092cafaacda14ef9f8c33fda0a80580b678",
       "card_ids": [
         "chorister"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (N1-C v3, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/brass-chorister.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "displacement",
@@ -1685,11 +1698,12 @@
         1536,
         1024
       ],
-      "sha256": "6ee57c745c38206ccb88345780d35762a1ab56c1397895145bdbc891aad9460e",
-      "web_sha256": "9380f645ae15d42523386faf0f3002d8865c150c8869073fde7baa1f81e3cdf7",
+      "sha256": "67ca43777ec05aa8ee93788d772f36618431b73591f7736595506c73d28b76e9",
+      "web_sha256": "495e2d30f063c38777b03d8bee3c20e0556b7a1a879acabd818ec1aef51dcb18",
       "card_ids": [
         "saboteur"
-      ]
+      ],
+      "note": "Replaced 2026-11-14 by the Set 15 final (R9 v2, ART_BRIEFS_SET15.md); selected source reference-library-2026-11-06/set15-first-paintings-2026-11-14/thornwarden-saboteur.png. Selection record CARD_ART_FINAL_SET15.json."
     },
     {
       "id": "great-owl",
@@ -3544,15 +3558,16 @@
         1536,
         1024
       ],
-      "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9",
-      "web_sha256": "f76ba1e0af7df255d6a0e78a54e8565fb5b41299ced39b5f66a0efd4170cf66b",
+      "sha256": "f82e88c29d7cd4154512ade3978f5279aa237dbdb19cc55842297cad06729cf5",
+      "web_sha256": "d9190974319b24d72ad20df1c918547dbb7f7913b2f3962ccd9ae0759749ceaa",
       "card_ids": [
         "mastermason"
       ],
       "proposal_number": 208,
       "selected_date": "2026-11-13",
       "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png",
-      "source_manifest": "CARD_ART_FINAL_SET12.json"
+      "source_manifest": "CARD_ART_FINAL_SET12.json",
+      "note": "Edited 2026-11-14 to add wildlife (ART_BRIEFS_SET13.md); selected version reference-library-2026-11-06/set13-selected-2026-11-14/master-mason-quillheel-v2.png. The earlier painting is reference-library-2026-11-06/new-peoples-cards-2026-11-13/208-mastermason.png."
     },
     {
       "id": "ferry-keeper",
@@ -3588,15 +3603,16 @@
         1536,
         1024
       ],
-      "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a",
-      "web_sha256": "ab90d4168a24f3b1e55e5591e303f163d4e46bbf0b920d79d3c5b7c209878985",
+      "sha256": "58fdcfb4f00e76b2eb53b93787cadfc00594932588ba4cbc8e08ea5a54d72e8a",
+      "web_sha256": "668a3b978b53a990ae36b125cc2c00437268a042c642779257842473f4b07b03",
       "card_ids": [
         "longhouse"
       ],
       "proposal_number": 210,
       "selected_date": "2026-11-13",
       "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png",
-      "source_manifest": "CARD_ART_FINAL_SET12.json"
+      "source_manifest": "CARD_ART_FINAL_SET12.json",
+      "note": "Edited 2026-11-14 to add wildlife (ART_BRIEFS_SET13.md); selected version reference-library-2026-11-06/set13-selected-2026-11-14/longhouse-keeper-moltwalker-v2.png. The earlier painting is reference-library-2026-11-06/new-peoples-cards-2026-11-13/210-longhouse.png."
     },
     {
       "id": "tide-healer",
@@ -3700,15 +3716,193 @@
         1536,
         1024
       ],
-      "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d",
-      "web_sha256": "b90bf9b1c05a170c6b7e7c29870a0c7d717bc43b0b2f195c755d9ab9a3e4878c",
+      "sha256": "da4dbcc54cea700b66998a8117384d9ad0703b9c92fe7685ec75df60fa80334c",
+      "web_sha256": "9377d2ad61fd358294306e66b39905cf2b27c45bce3b87d11474c064badb269e",
       "card_ids": [
         "eelnetter"
       ],
       "proposal_number": 215,
       "selected_date": "2026-11-13",
       "source": "reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png",
-      "source_manifest": "CARD_ART_FINAL_SET12.json"
+      "source_manifest": "CARD_ART_FINAL_SET12.json",
+      "note": "Edited 2026-11-14 to add wildlife (ART_BRIEFS_SET13.md); selected version reference-library-2026-11-06/set13-selected-2026-11-14/eel-netter-hooktail-v2.png. The earlier painting is reference-library-2026-11-06/new-peoples-cards-2026-11-13/215-eelnetter.png."
+    },
+    {
+      "id": "vaultstalker",
+      "title": "Vaultstalker",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "vaultstalker.png",
+      "web_jpeg": "web/vaultstalker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "286e4fd869f36d0d3dd32b708443db1a97cdd12fc86cd3346f5b99bd2d4ffe35",
+      "web_sha256": "b5af13ad51e37de32470cd23cb6aa334f30890ab46b3e5d1eabfb3fcf684c67e",
+      "card_ids": [
+        "vaultstalker"
+      ],
+      "proposal_number": 216,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/vaultstalker.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "needlehip",
+      "title": "Needlehip",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "needlehip.png",
+      "web_jpeg": "web/needlehip.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "388672a0cfa89222d77c8b514d139836743f530acbd84df009e4bfd67a83f5a3",
+      "web_sha256": "0752c8bf336fb2fdb1bcb26fa5b1801783de5ba2a80b7e6768e71d7f0cde5c98",
+      "card_ids": [
+        "needlehip"
+      ],
+      "proposal_number": 217,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/needlehip.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "woodland-breaker",
+      "title": "Woodland breaker",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "woodland-breaker.png",
+      "web_jpeg": "web/woodland-breaker.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "a340283f4b28b570b0612c9aa99ad83cdc16b7a120b432cd72cd18a2b6700b01",
+      "web_sha256": "cff6bac3ae0d678f7d531c9ecd45a582f14351597944145ac0161b6b85f6f98d",
+      "card_ids": [
+        "woodbreaker"
+      ],
+      "proposal_number": 219,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/woodland-breaker.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "fanback",
+      "title": "Fanback",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "fanback.png",
+      "web_jpeg": "web/fanback.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fe1419d8ad18ca74ac2ded008be6a3654286217a3b81f6e22e69f055f9c916ea",
+      "web_sha256": "82b47d6f5b80e5d1e0b6e0b6ef593795c02249739fff21c9e02ef5ae7a23ce35",
+      "card_ids": [
+        "fanback"
+      ],
+      "proposal_number": 220,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/fanback-v2.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "host-bound",
+      "title": "Host-bound",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "host-bound.png",
+      "web_jpeg": "web/host-bound.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ad67f6f27cd1308227c776b53286eb96fbe3087274a8c29c40bbab2deee9ecbc",
+      "web_sha256": "2a705bc9bf572dd9567f692177d267c536f64d32340feea33e970ee95d988012",
+      "card_ids": [
+        "hostbound"
+      ],
+      "proposal_number": 222,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/host-bound.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "gall-season",
+      "title": "Gall season",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "gall-season.png",
+      "web_jpeg": "web/gall-season.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b56e7e14d71652d4cc45544528a6a5ecf5785e6b2c5433d333619d3d28183555",
+      "web_sha256": "27abe632f1cd70d6f94090eb77a1536b447b7c58f2556c097d70cc2a2ff6113b",
+      "card_ids": [
+        "gallseason"
+      ],
+      "proposal_number": 223,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/gall-season-v2.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "riverfolk-specimen-keeper",
+      "title": "Riverfolk specimen-keeper",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "riverfolk-specimen-keeper.png",
+      "web_jpeg": "web/riverfolk-specimen-keeper.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7c1b1ecdce7c5500323680a9c12fbe256ce793f4ff324ed34d9b9f18b9aa774e",
+      "web_sha256": "56445de5e7f452bef6ab809ee55249a61df711d54f24ad53bd2378c529525248",
+      "card_ids": [
+        "specimenkeeper"
+      ],
+      "proposal_number": 224,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/set13-selected-2026-11-14/riverfolk-specimen-keeper-v2.png",
+      "source_manifest": "ART_BRIEFS_SET13.md"
+    },
+    {
+      "id": "veilwing",
+      "title": "Veilwing",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "veilwing.png",
+      "web_jpeg": "web/veilwing.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
+      "web_sha256": "fe7c11637a6d9e00db4a76de481ac8b2134a93913a305baad0b5f3853cedaa06",
+      "card_ids": [
+        "veilwing"
+      ],
+      "proposal_number": 221,
+      "selected_date": "2026-11-14",
+      "source": "reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+      "source_manifest": "CARD_ART_FINAL_VEILWING.json",
+      "note": "S13-06-L1, approved as final 2026-11-14; installed live the same day."
     }
   ],
   "updated_at": "2026-11-14",

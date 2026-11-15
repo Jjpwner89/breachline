@@ -8,7 +8,10 @@ Workflow: [briefs to paintings](../../.claude/skills/art-direction/BRIEF_WORKFLO
 - **Output stage:** edited paintings at the original size and filename, with the previous version kept as history.
 - **WIP folder:** `art/work-in-progress/set14-wildlife-maps-and-lands-2026-11-14/`.
 - **Paths:** relative to `breachline/`. A "cell" is a panel of a 3 × 2 sheet, numbered 1–3 across the top row and 4–6 across the bottom.
-- **Status:** all items ready, none generated. S14-M2's Veilwing waits on the harness picked in [set 13](ART_BRIEFS_SET13.md), S13-06.
+- **Status:** all seven reviewed images are final and installed on 2026-11-14, following the creator’s “good all final - swap them in”. S14-M2 is final as reviewed with Undertow only; any later Veilwing addition is separate.
+- **Generation and review:** [final gallery](/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/index.html), [exact prompts, references and versions](/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/prompts-and-manifest.json), [installation record](/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set14-wildlife-maps-and-lands-2026-11-14/installation-record.json). The live source PNGs and game JPEGs now use the final selections; originals and earlier versions remain preserved in the canonical folder.
+
+- **Latest review, 2026-11-14:** “good all final - swap them in”. Final selections: S14-M1 v2, S14-M2 v2, S14-M3 v2, S14-M4 v3, S14-L1 v2, S14-L2 v1 and S14-L3 v2. The liked land edits remain unchanged. Campaign maps use the authorized local composites, preserving every original RGB pixel outside the wildlife masks. All seven are installed.
 
 ## Rules for every item
 

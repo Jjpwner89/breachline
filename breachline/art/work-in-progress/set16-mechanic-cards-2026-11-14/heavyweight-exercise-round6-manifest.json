@@ -1,0 +1,171 @@
+{
+  "batch": "Set16 renewed heavyweight exercise",
+  "date": "2026-11-15T20:48:16.301647+00:00",
+  "brief_revision": 12,
+  "brief_source": "BRIEFS-heavyweight-exercise-revision-12.md",
+  "brief_sha256": "c5e86a55a8ae883efcc39e9da79a92d2102ea9da12bdb15bc8c1c50d970f391b",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "feedback": "animal-feedback-round6.json",
+  "status": "preferred_shortlist_recorded",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "reference_selections": [
+    {
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+      "code": "M21-5",
+      "selected_cell": "bottom middle",
+      "role": "first concept only; body and covering, subtly more predatory face",
+      "sha256": "20a415d8434c6d4b013e903eab6d7c8120a9f8d9fc5540610766c27a018c44e2"
+    },
+    {
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png",
+      "code": "M21-8",
+      "selected_cell": "top middle",
+      "role": "second concept only; body and covering; dangling mouthparts explicitly excluded",
+      "sha256": "ba124925c1e36b295da74f3fc6b0ab640e615578d4b316a66a02d1e38c9e5532"
+    }
+  ],
+  "items": [
+    {
+      "code": "M21-E",
+      "version": 1,
+      "stage": "lineup",
+      "concept_codes": [
+        "M21-22",
+        "M21-23",
+        "M21-24",
+        "M21-25",
+        "M21-26",
+        "M21-27"
+      ],
+      "file": "m21-heavyweight-exercise-e.png",
+      "prompt": "Create a Breachline heavyweight wildlife concept lineup: SIX complete animals, three columns and two rows, landscape 1536 × 1024. Warm ivory ground with minimal natural footing and a small plain adult human well apart for scale in each cell. No text, panel lines or labels. Traditional oil/acrylic fantasy painting, visible selective brushwork, matte organic covering, coherent daylight.\n\nThe creator wants a renewed exercise with FOUR genuinely fresh freeform animals, plus TWO light revisions of earlier starting points. Prioritize compelling whole animals: convincing enormous mass and support, interesting movement, distinct silhouettes and integrated heads. Power and natural presence, not gross mouths.\n\nTOP LEFT only: reference 1 BOTTOM MIDDLE animal, M21-5 / Highneck. Preserve its broad grounded body, enormous gathered forelimbs, raised muscular neck, compact head and cream/russet mottled covering. Make it only SLIGHTLY more predatory: a firmer jaw and more intent eye, a restrained glimpse of small biting teeth in a mostly closed mouth. Keep its appeal and overall body; do not turn it into a snarling monster.\n\nTOP MIDDLE only: reference 2 TOP MIDDLE animal, M21-8. Preserve its tall feathered neck, crest, powerful four-legged body and layered slate/cream/ochre covering. COMPLETELY REPLACE the dangling fleshy mouthparts with a clean compact integrated jaw: a solid short muzzle, paired lips or firm mouth edges, a closed natural mouth line, clear nostrils. Nothing dangling, split open, wormlike or tentacular around its face. This is an actual anatomical correction, not just concealing the appendages. Its exact revised face is yours to invent.\n\nThe other FOUR cells are wholly new heavyweight animals. Invent them freely and independently of both attached designs. Do not recycle their necks, feathers, mottling or skeleton as a formula. Explore different distributions of mass, body proportions, load-bearing arrangements, coverings, faces and ecological character. Let them surprise us as plausible unfamiliar wildlife. Any diet is possible and a few can suggest predatory capacity, but no compulsory grazing, feeding props, roaring or hunting scenes. Faces should be appealing, functional parts of the animal, without hanging fleshy mouth appendages, exposed oral organs, gaping split faces or gore. No equipment or humans riding them. Do not make six dinosaurs, six browsers or six variations of the reference animals.\n\nAll silhouettes and feet entirely visible inside their cells with breathing room. Maintain credible limb attachments, weight and ground contact. Lively but restrained colour and broad quiet paint through secondary forms; avoid glossy toy forms, photoreal surface noise and uniformly tiny detail. Names, exact scale and ecology remain open.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-812a266f-1cd0-4c8a-924c-2a222918c369.png",
+      "sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "generated",
+      "review_status": "preferred_shortlist_recorded",
+      "assistant_review": "Inspected generated sheet. First take retains the Highneck body/neck and adds restrained teeth and intent. Second has a solid compact jaw with no dangling mouthparts. Four other takes use plated, whiskered, membranous and wool/horn anatomy. Complete silhouettes, separate scale figures, readable feet and supports, no gross oral structures. The four fresh proposals still share some reference-palette influence; membrane function and the horned take’s precise anatomy remain questions for selected-reference development, not approved biology.",
+      "completed_at": "2026-11-15T20:50:35.319363+00:00"
+    }
+  ],
+  "gallery": "heavyweight-new-attempts-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "generation_input_brief_sha256": "7171196846450003ea8ce2e6ed569d26971a2de3afc017a17df5c863d447c824",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T20:50:35.319363+00:00",
+  "assistant_review": "Inspected generated sheet. First take retains the Highneck body/neck and adds restrained teeth and intent. Second has a solid compact jaw with no dangling mouthparts. Four other takes use plated, whiskered, membranous and wool/horn anatomy. Complete silhouettes, separate scale figures, readable feet and supports, no gross oral structures. The four fresh proposals still share some reference-palette influence; membrane function and the horned take’s precise anatomy remain questions for selected-reference development, not approved biology.",
+  "concepts": [
+    {
+      "code": "M21-22",
+      "name": "Highneck · slight predator",
+      "basis": "M21-5 revision",
+      "description": "The liked low body and raised neck remain, with a firmer jaw, more intent gaze and a small visible line of biting teeth. This suggests greater predatory capacity without changing the animal into an overtly threatening creature.",
+      "cell": "top left",
+      "rect": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "creator_preferred_v2_generated",
+      "revised_file": "m21-22-highneck-v2.png",
+      "revision_manifest": "heavyweight-preferred-round8-manifest.json"
+    },
+    {
+      "code": "M21-23",
+      "name": "Feathered heavyweight · revised face",
+      "basis": "M21-8 revision",
+      "description": "The tall feathered build now has a compact solid muzzle and closed mouth, with the dangling mouthparts removed. Its feeding role remains open; this pass tests the revised face against the liked body and covering.",
+      "cell": "top middle",
+      "rect": [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "creator_preferred_v2_generated",
+      "revised_file": "m21-23-feathered-heavyweight-v2.png",
+      "revision_manifest": "heavyweight-preferred-round8-manifest.json"
+    },
+    {
+      "code": "M21-24",
+      "name": "Plateback",
+      "basis": "New exploration",
+      "description": "Overlapping dorsal plates shelter a low, deeply built animal with broad shoulders and large digging claws. A powerful burrower or root excavator is one possible role; its diet and the plates’ function are still proposals.",
+      "cell": "top right",
+      "rect": [
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "retained_alternative_not_rejected"
+    },
+    {
+      "code": "M21-25",
+      "name": "Broadwhisker",
+      "basis": "New exploration",
+      "description": "A huge whiskered animal carries a deep chest on broad forefeet, with a rounded head and dense slate-and-cream covering. The wet footing suggests a possible waterside life, while its exact habitat and feeding behaviour remain open.",
+      "cell": "bottom left",
+      "rect": [
+        0.0,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "retained_alternative_not_rejected"
+    },
+    {
+      "code": "M21-26",
+      "name": "Mantlewing",
+      "basis": "New exploration",
+      "description": "A long-bodied heavyweight combines strong walking limbs with broad folded membranes along its flanks and a thick balancing tail. The membranes are exploratory anatomy whose role remains unresolved; this picture does not establish that an animal this heavy can fly.",
+      "cell": "bottom middle",
+      "rect": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "creator_preferred_v2_generated",
+      "revised_file": "m21-26-mane-heavyweight-v2.png",
+      "revision_manifest": "heavyweight-preferred-round8-manifest.json"
+    },
+    {
+      "code": "M21-27",
+      "name": "Crownwool",
+      "basis": "New exploration",
+      "description": "A compact woolly heavyweight stands on broad split feet beneath a massive curled horn crown. This proposes a powerful highland animal, with its social behaviour, diet and exact horn arrangement still open.",
+      "cell": "bottom right",
+      "rect": [
+        0.6666666666666666,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "review_status": "retained_alternative_not_rejected"
+    }
+  ],
+  "gallery_verification": {
+    "verified_at": "2026-11-15T20:51:12.462905+00:00",
+    "result": "Browser-checked labeled overview and visible cell crops; all six image codes readable, artwork loaded, gallery kept open. Output/reference hashes and gallery file links checked."
+  },
+  "preferred_codes": [
+    "M21-22",
+    "M21-23",
+    "M21-26"
+  ],
+  "latest_creator_feedback": "animal-feedback-round8.json",
+  "creator_review": "Positions 1, 2 and 5 preferred equally; final creature choice remains open.",
+  "reviewed_at": "2026-11-15T20:55:27.608849+00:00",
+  "latest_revisions_manifest": "heavyweight-preferred-round8-manifest.json"
+}

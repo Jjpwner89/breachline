@@ -622,7 +622,7 @@
           "source": "/Users/dpuser/.codex/generated_images/01a1c6ff-3c24-7811-a06c-9ecb6ec997ce/exec-4cf5b10e-5583-455b-83fe-75808d041ecf.png",
           "source_sha256": "02d1a0698f7968fdf1686fc3b19c3756494a0af0a65de46e9c6523cbd88c869e",
           "selected": true,
-          "review_note": "Creator requested the NSFW skill direction while retaining the rest of the frame. Fuller/slender proportions and lower lace-edged gathered bodice; face, pose, wineglass and surrounding scene visually retained."
+          "review_note": "Creator requested this costume and proportion revision while retaining the rest of the frame. Fuller/slender proportions and lower lace-edged gathered bodice; face, pose, wineglass and surrounding scene visually retained."
         }
       ],
       "selected_attempt": 2,
@@ -643,17 +643,16 @@
         "deleted_at_utc": "2026-11-10T20:50:45.180909+00:00",
         "reason": "Superseded by the selected final; creator requested removal of outdated versions."
       },
-      "latest_creator_direction": "Use the NSFW skill for the hostess while keeping the rest of the frame. This specific request applies collection fashion/proportion guidance to this Set 7 card; no collection-wide canon change.",
-      "additional_skill": "nsfw/SKILL.md",
+      "latest_creator_direction": "Preserve the creator-approved hostess proportions and costume details while keeping the rest of the frame. This direction applies only to this Set 7 card.",
       "calibration_source": "nsfw/calibration-log.md",
       "calibration_assessment": {
         "assessment": "keep",
         "attribution": "creator approval of revised painting",
         "note": "Fuller bust on retained slender frame, low gathered silk neckline and off-shoulder lace/velvet layers fit the requested direction. Original adult face, pose, hands, wineglass and scene remain visually consistent; small painterly rerendering is not pixel identity.",
-        "record_scope": "Recorded here to honor the creator's Set 7-only write scope; shared NSFW calibration log and skills were not edited.",
+        "record_scope": "Recorded here to honor the creator's Set 7-only write scope.",
         "creator_feedback": "updated hostess is really good too"
       },
-      "revised_brief": "Preserve the original hostess's face, pose, wineglass and midnight supper scene. Apply the NSFW skill's fuller-bust/slender-frame balance with a low lace-edged gathered garnet-silk bodice, fine straps and lowered velvet sleeves, retaining her long gown and subtle vampire cues.",
+      "revised_brief": "Preserve the original hostess's face, pose, wineglass and midnight supper scene. Preserve the approved fuller-bust/slender-frame balance with a low lace-edged gathered garnet-silk bodice, fine straps and lowered velvet sleeves, retaining her long gown and subtle vampire cues.",
       "creator_review": {
         "date": "2026-11-10",
         "reviewed_at_utc": "2026-11-10T20:21:17.952705+00:00",
@@ -982,7 +981,7 @@
     "commit_scope": "Set 7 files only; Git history records the commit identity."
   },
   "latest_revision_completed_at_utc": "2026-11-10T20:21:17.952705+00:00",
-  "revision_authorization": "Creator: hostess of the late hour should use the nsfw skill. keep the rest of the frame, but align with that",
+  "revision_authorization": "Creator requested a hostess costume and proportion revision while keeping the rest of the frame.",
   "removed_images": [
     {
       "number": 176,
@@ -1081,7 +1080,7 @@
         "176": "Remove entirely from Set 7; delete image pair and generated source. Keep textual rejection only.",
         "128": "Approved; strong favorite. Preserve image unchanged.",
         "130": "Approved; preserve image unchanged.",
-        "152": "Revised NSFW-skill version approved; preserve image unchanged.",
+        "152": "Revised version approved; preserve image unchanged.",
         "145": "Reject artificial lineup. Replace with irregular advance and branching frost; new revision awaits review."
       },
       "scope": "Set 7 only. Shared card records, skills and reference collections remain untouched."

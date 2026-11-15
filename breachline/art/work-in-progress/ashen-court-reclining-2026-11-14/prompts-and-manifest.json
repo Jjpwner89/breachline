@@ -1,0 +1,52 @@
+{
+  "code": "AC1",
+  "title": "Ashen Court noblewoman \u2014 reclining salon portrait",
+  "date": "2026-11-14",
+  "revision": 1,
+  "status": "generated_awaiting_creator_review",
+  "request": "can you create a scene of a ashen court noble woman reclining on a couch using this skill. in a lowcut plunging dress around a full chest",
+  "type": "concept painting, not a card",
+  "alignment": "Dominion",
+  "faction": "The Ashen Court",
+  "output_file": "AC1-ashen-court-noblewoman-v1.png",
+  "source_image": "/Users/dpuser/.codex/generated_images/01a1dad5-41e1-7e82-ba0b-e11e3f81f2a6/exec-6c300ecb-0a0c-4a36-9948-436f7a5d3484.png",
+  "method": "built-in image_gen",
+  "transparent_background": false,
+  "attached_reference_paths": [],
+  "inspected_calibration_references": [
+    "breachline/art/gilt-hall-temptress.png",
+    "breachline/art/hostess-of-the-late-hour.png"
+  ],
+  "reference_use": "Courtly allure calibration only; no finished painting was attached or used as an identity to copy.",
+  "prompt": "Use case: stylized-concept.\nCreate ONE original finished Breachline fantasy oil-and-acrylic painting, full-bleed landscape 1536 x 1024, 3:2. A new scene and new individual; no text, border, logo or signature.\n\nSUBJECT AND WORLD: A clearly adult living human noblewoman, about forty years old, of the Ashen Court, reclining at ease on a long upholstered couch in her private stone-walled salon. Breachline is high fantasy about 150 years after an empire's collapse. The Ashen Court belongs to Dominion's cruel, hierarchical dark order; this woman enjoys its privilege. Convey that through costly personal surroundings and cool, unhurried authority, without theatrical villain symbols. She is a living noblewoman, not an undead Ashborn or a vampire.\n\nCHARACTER AND ALLURE: An individual, attractive mature face: long gently aquiline nose, dark expressive eyes under strong brows, firm cheekbones, slightly asymmetric lips, a poised assessing glance just past the viewer. Dark chestnut hair loosely gathered at the nape, a few soft strands at her temples. Warm pale-olive matte skin. A full-busted, softly curving adult figure with believable shoulders, ribcage, waist and hips. Deliberate glamorous Breachline Allure as requested: a very low PLUNGING V neckline elegantly framing her full chest, clear natural cleavage, opaque shaped fabric supporting and covering both breasts. The V descends to a small antique-silver clasp on the lower sternum above the waist, with narrow silver embroidery tracing both edges. Deep peacock-blue silk velvet gown, rich blue-green passages in the lit folds, fitted bodice with subtle seams and plausible support, wide-set fine fabric straps with small silver clasps, softly draped short sleeves around her upper arms. A continuous fitted waist leads into a long generously flowing skirt. The gown feels beautifully constructed and luxurious, not a costume assembled from lingerie. A signet ring, small dark-stone earrings and a silver hair comb; restrained adornment. No sheer bodice, exposed nipples, nudity or exaggerated anatomy.\n\nSCENE AND POSE: Show the entire couch and almost her full reclining figure with comfortable margins. Her head and shoulders are at upper-left, torso elevated naturally against deep cushions; hips near center; her relaxed legs extend along the couch toward image-right under the long pooled skirt, one knee slightly bent. No back arch. Her anatomical right elbow rests securely on the couch's high arm at image-left, its relaxed hand near her temple; her anatomical left arm lies comfortably down the body with the hand resting on a fold of skirt near her knee. Two connected arms, two hands with ordinary fingers, and two coherent legs beneath the fabric. Show convincing body weight compressing cushions. An elegant dark carved wooden couch with subdued warm russet damask upholstery and worn silver fittings; the blue gown cascades over its front edge. A small side table holds one folded wax-sealed letter, with no visible writing. Behind her, a tall leaded window, severe old stonework and a heavy charcoal curtain suggest an inherited aristocratic interior; beyond the window only a few distant slate rooftops. Keep the background economical, not a fully described palace or a clutter of luxury props. Her composure, clothing and inhabiting the room form one scene; not a chest-only crop.\n\nLIGHT AND PAINT: One coherent broad late-afternoon window light from upper-left illuminates her face, neckline and blue fabric, with gentle reflected light keeping shadowed hands and body readable. Luminous pearl-grey light, rich peacock blue, russet upholstery and charcoal shadows; do not drown the image in darkness. Measured, varied visible oil/acrylic brushwork describes real weight and material. The face and a few dress/seam and hand accents are resolved; couch ornament and room recede into larger, quieter painted shapes. Skin, wood and velvet are naturally matte, small reflections reserved for actual metal and glass. No photography, glossy CGI, doll-like face, skin pores, universal sparkle, uniform scratchy texture, hairline detail across all surfaces, or photographic background blur.",
+  "sources": [
+    ".claude/skills/breachline-allure/SKILL.md",
+    ".claude/skills/breachline-allure/references/paintings.md",
+    ".claude/skills/art-direction/SKILL.md",
+    ".claude/skills/art-direction/BRIEF_WORKFLOW.md",
+    "breachline/SETTING.md",
+    "breachline/art/art-review/selection-guide.json"
+  ],
+  "description": "A mature human noblewoman of the Ashen Court reclines on a carved russet-upholstered couch, wearing a peacock-blue velvet gown with a deep silver-trimmed plunge and full, naturally supported bust. Daylight catches her composed face and the costly fabric; a sealed letter and severe stone salon suggest private courtly power. Her identity, costume and particular room are proposals, not new settled lore.",
+  "established_context": "The Ashen Court is a Dominion faction associated with building a dark order. Dominion is hierarchical and oppressive. This new human noblewoman is not an Ashborn or vampire.",
+  "proposed_elements": [
+    "Individual human noblewoman and her appearance",
+    "Peacock-blue gown and silver jewellery",
+    "Private salon, couch and sealed letter"
+  ],
+  "review": {
+    "assistant_inspection": "Pass for presentation. Clearly adult face and mature bearing; full bust and deep plunging neckline visible with opaque coverage and tailored support. Right elbow rests on couch arm with right hand near temple; left arm connects clearly to left hand on draped knee, with five readable fingers. Reclining torso and hips are supported by cushions; legs are concealed by a continuous coherent full skirt. Window light is consistent, face and hands remain readable, blue velvet contrasts with russet upholstery, background stays subordinate. Furniture extends slightly beyond right edge, with no important character feature cut off. Full-resolution generated painting inspected.",
+    "creator_approval": null,
+    "lore_approval": null,
+    "live_card_installation": false
+  },
+  "preservation": "New concept staged in its own WIP folder; no existing card art or unrelated work changed.",
+  "output": {
+    "sha256": "53ccbd51a9abd50cc844ab7a346aad6e6be55ccdd86d8187243842a4b2d1493a",
+    "bytes": 2734294,
+    "dimensions": [
+      1536,
+      1024
+    ]
+  }
+}

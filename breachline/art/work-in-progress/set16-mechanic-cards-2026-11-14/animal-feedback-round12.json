@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15",
+  "recorded_at": "2026-11-15T22:07:24.279248+00:00",
+  "round": 12,
+  "creator_request": "let's send the first design and the other one to claude to finalize.",
+  "creator_clarification": "m20-r1 and number 2 with the articulated legs",
+  "selected_for_finalization": [
+    "M20-R1",
+    "M21-23"
+  ],
+  "current_versions": {
+    "M20-R1": 1,
+    "M21-23": 5
+  },
+  "version_basis": "Number 2 retained its articulated legs through v3–v5; v5 is its latest bear-claw refinement. v2 supplied only as a supporting leg reference.",
+  "not_selected_by_this_handoff": [
+    "M21-22",
+    "M21-26"
+  ],
+  "scope": "Prepare and send these chosen designs to Claude for finalization; no live-game installation or publication requested.",
+  "delivery": "Shared repository handoff prepared; direct Claude UI access was not approved, so no chat message sent."
+}

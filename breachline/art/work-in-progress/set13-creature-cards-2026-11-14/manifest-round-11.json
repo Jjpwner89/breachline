@@ -1,0 +1,1755 @@
+{
+  "batch": "set13-creature-cards-2026-11-14",
+  "date": "2026-11-14",
+  "status": "P8 appearance/harness liked; P9 right-front-wing and torso revision ready for review",
+  "generator": "built-in image_gen",
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET13.md",
+  "brief_revision": 1,
+  "brief_sha256": "6c0459b28bf0f3db1f004d79cdd767b7250a6ff43e1aab906de49ae28dc0af55",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_sha256": "89b66316d23fd6d43233363bde362c8284179fd6a0adacda1f4553cdfe1a98cf",
+  "scope": {
+    "new_paintings": 8,
+    "veilwing_harness_lineup": 1,
+    "wildlife_edits": 6,
+    "direct_user_ox_reference": 1,
+    "veilwing_card_painting": "After creator chooses a harness; not part of the current image pass."
+  },
+  "creator_clarifications": {
+    "ox": "More ox-like working animal for regions outside the salt plains; direct reference sheet requested. Salt-flat migrant suits the salt-plains people.",
+    "ford_thread": "Small juveniles in roomy jars, explicitly confirmed by creator.",
+    "ford_thread_latest": "2026-11-14 gallery review: one vessel should contain the adult; supersedes all-juvenile scene instruction. Keep one juvenile.",
+    "veilwing_latest": "Creator requested different stages of flight to get the anatomy down. F1 tests a wingbeat in four stages; F2 tests banking, underside view and airborne braking. Both use one mid-back dorsal sail plus two shoulder wings and remain pending review. R6 placement sheet is retained.",
+    "background_wildlife_latest": "Ordinary background life, taken for granted. The creator rejected 'discovery' because it implied action relating to the animal; attention or interaction is possible but not the default."
+  },
+  "preservation": "Existing approved card files remain unchanged. New paintings and edits are staged for review. No new card mechanics or installation.",
+  "items": [
+    {
+      "code": "OX1",
+      "title": "Broadneck · ox-like working animal",
+      "file": "oxlike-working-animal-reference.png",
+      "kind": "reference",
+      "description": "A proposed ox-like working animal for farms and roads beyond the salt plains. Its compact mass, spreading feet and broad shoulders support a practical harness; the name and exact regional distribution remain open.",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Create one original Breachline ANIMAL REFERENCE SHEET, landscape 1536x1024, showing the SAME new ox-like working animal in coherent repeated views. Warm pale plain ground, neutral light, traditional oil/acrylic concept painting with deliberate selective brushwork, matte animal materials. No text, numbering, border or watermark.\nThe user wants an everyday sturdy ox-like working animal for farms and roads in regions other than the salt plains. Make a quiet, appealing, patient heavy-bodied living herbivore, around an adult person's shoulder height at its withers, with four powerful legs, a deep broad chest and muscular short neck, a slightly sloping back and compact sturdy hindquarters. Its recognisable ox-like weight and strength are important, but this is original fantasy wildlife, not a normal ox with ornamental accessories. A broad elongated blunt soft-lipped grazing head, calm lateral eyes, small sideways ears; a pair of thick low horn roots sweep outward and slightly down close to the skull. No giant weapon horns or frightening mouth. Broad feet have three short blunt weight-bearing keratin toes set into fleshy pads, able to spread on soft soil. The animal's shoulders and neck have close-set layered coarse chestnut bristles, thinning into warm slate-grey leathery hide across the deep flanks; the transitions follow its muscle masses. A short heavy tail ends in a simple brush. Coherent organic anatomy; no throat combs, dorsal sacks, fungus, extra limbs, plates glued to a cow or random frills.\nLAYOUT: a large unobstructed three-quarter standing view occupying the left half, all four legs and entire head/tail visible; on upper right a clean side profile of the same animal walking without gear; lower right a smaller front-three-quarter working view with a simple padded shoulder collar and two modest balanced woven panniers attached by a practical leather-and-wood pack frame over the ribs, free of the spine and foreleg movement. No cart, reins tied around the throat, decorative tack or excess straps. One small neutral adult human silhouette beside the main view establishes working-animal scale. Show the anatomical body clearly; the harness view is only one practical handling proposal. Compact powerful stance, believable contact and support, friendly sober presence rather than pet cuteness. Keep the same head, toes, covering pattern and proportions in all three views.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2fafe712-fa60-4d37-8b4f-084326d5cafc.png",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [],
+      "creator_review_round_1": {
+        "decision": "undecided",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/oxlike-working-animal-reference.png"
+    },
+    {
+      "code": "S13-01",
+      "title": "Vaultstalker",
+      "file": "vaultstalker.png",
+      "kind": "painting",
+      "card": 216,
+      "description": "Vaultstalker holds its weight low among boulders, watchful and still. The selected shoulder arch, scaled limbs and low rear body remain the animal’s identity.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached sheet is ANATOMY ONLY: use exactly the BOTTOM-LEFT animal, cell 4, Vaultstalker; ignore the other five animals and the sheet layout. Preserve its elongated closed muzzle, small ears, pale layered scales over the high shoulder arch and forelegs, long hanging brown/cream fur at the sides, large gripping forefeet, and low rear body with a long low shaggy tail. Scale about a large deer, roughly two metres long.\nPaint this single Vaultstalker quietly watching from broken rocky ground. A low three-quarter view gives its forequarters solid weight against a pale sloping boulder; the creature faces across the frame toward the left with its full head and forefeet visible. Its rear body crouches in the shelter of warm grey stone and dry grasses. The bent wrists and contact of feet with scree must make sense. Cool distance and late soft sun on its shoulder scales. Powerful living predator, a patient closed mouth, no snarl, fangs, attack, prey, harness or person. An economical natural scene, a few clear rock masses rather than busy repeated texture.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-d838aa6b-2b53-4061-b67c-ea924dc5c500.png",
+      "sha256": "286e4fd869f36d0d3dd32b708443db1a97cdd12fc86cd3346f5b99bd2d4ffe35",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "sha256": "42be68fc5316600a3dd92714d054b98119acbd25e39f80e8884b909c3a1f4e6d"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/vaultstalker.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-02",
+      "title": "Needlehip",
+      "file": "needlehip.png",
+      "kind": "painting",
+      "card": 217,
+      "description": "Needlehip bounds through low woodland growth, its broad front and narrow springing hips shaping the movement. Preserve the reptilian face, furred body and long whip tail.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse the attached sheet ONLY for the BOTTOM-MIDDLE animal, cell 5, Needlehip. Ignore every other cell. Preserve the specific broad low reptilian face with round amber eyes, short soft muzzle and closed mouth, shaggy silver-grey fur along the broad heavy forequarters and narrow spring-loaded rear hips, four grasping clawed feet and long thin mostly bare whip tail. Dog-sized, not a huge beast. Do not replace the face with a wolf, cat or bird.\nA fresh single-animal woodland painting: Needlehip mid-bound through the open space between low fern clumps and fallen branches, travelling to screen right. Its broad chest reaches forward while the compact hindquarters drive the bound; forelegs reach toward the next landing, hindlegs fold naturally from the pelvis, complete connected limb anatomy and a readable tail sweep. A side-three-quarter view keeps the distinctive uneven body clear. Broken canopy daylight touches its silver coat and an amber eye; dark green undergrowth and warm leaf litter are painted in simpler masses. Energetic real movement, not a battle pose, no gore or visible quarry, not a reference sheet.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-d25c583e-ec4d-4d86-ae98-31bed53a2e25.png",
+      "sha256": "388672a0cfa89222d77c8b514d139836743f530acbd84df009e4bfd67a83f5a3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/needlehip.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-03",
+      "title": "Siltwright warriors",
+      "file": "siltwright-warriors.png",
+      "kind": "painting",
+      "card": 218,
+      "description": "Siltwright workers carry seeds at a wetland edge while the broader warriors stand among them. The separate castes and amber storage bodies are preserved without defining a complete nest system.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e6-a-proposed.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached image is the required anatomy reference for Siltwright workers and warriors. Preserve the copper-brown plated ant-like construction, grouped black side eyes, long segmented antennae and six connected jointed legs per animal. Workers have elongated translucent amber abdominal chambers with a few nuts clearly visible WITHIN them; warriors use the lower-left reference's broader head plates, shorter sturdier body and strong curved mandibles. These are living organic parts, no machinery or human kit.\nPaint a close low viewpoint along a small wetland bank: two larger sturdy warriors stand quietly among three or four smaller workers moving seeds across damp soil and a fallen branch above still water. One worker pauses with an intact nut in its jaws, and transmitted warm light reveals the few stored nuts inside a worker abdomen. Modest reed stems and leaf fragments give a small-world scale; keep the number of insects legible rather than a swarm. No cutaway diagram or dissected anatomy, no huge monster ants attacking people, no invented monumental colony structures. Rich rust carapaces, amber translucent volume, cool green water reflections, broad simple shoreline shapes. A little country of purposeful ordinary lives.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8b45b83c-c9ef-47f9-afa8-3015c7a6f635.png",
+      "sha256": "01637d04f4f95f06befe9c1fbcab9f8dab3eed01d0acebf467de75202f6bb3de",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e6-a-proposed.png",
+          "sha256": "0366d62e55ae9047e948fb9b5d980fdba100d86870cb226616b772c690f5443f"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-04",
+      "title": "Woodland breaker",
+      "file": "woodland-breaker.png",
+      "kind": "painting",
+      "card": 219,
+      "description": "The extra-large Woodland breaker braces and opens a fallen trunk in old woodland. Its size, hooked beak and heavy claws carry the scene; its precise food remains unspecified.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached sheet is required ANATOMY ONLY. Use exactly BOTTOM-LEFT cell 4, Woodland breaker; ignore other animals. Preserve the enormous hunched chest and shoulders, compact low rear, shaggy patchy deep-brown and cream coat, elongated rounded beaked muzzle with hooked tan beak, grey scaled forelimbs and huge broad dark digging claws. An extra-large animal with shoulder about twice adult human height, four connected limbs; not a normal bear, sloth, dinosaur or bird.\nPaint a single Woodland breaker opening a decayed fallen trunk in an old temperate forest. A wide three-quarter side view from low ground: one huge forefoot braces the timber while the other draws a section of soft rotten bark outward; the beak is lowered toward the opened wood. Its feet and claw pressure connect clearly to the load, small loose splinters fall naturally. Old standing trees and large trunks make scale tangible, not a person or diagram. Its bulky silhouette fills the middle distance and a bright shaft of daylight crosses the pale exposed inner wood and part of the muzzle. Earthy browns, quiet moss green and creamy wood, muted cool forest beyond. Weight, patient foraging and presence, no roar, aggressive teeth, explicit prey or added biological inventions.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-553fab77-cec9-4602-9ab9-4370fcbf7d2e.png",
+      "sha256": "a340283f4b28b570b0612c9aa99ad83cdc16b7a120b432cd72cd18a2b6700b01",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+          "sha256": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/woodland-breaker.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-05",
+      "title": "Fanback",
+      "file": "fanback.png",
+      "kind": "painting",
+      "card": 220,
+      "description": "Fanback crosses wide country in a slow stride, with light passing through its translucent fans. The rare giant’s habitat and the functions of its fans and hanging growth remain open.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse ONLY the TOP-LEFT animal in the attached reference sheet: MN2–1 Fanback. Ignore the other five animals completely. Preserve its very thin broad horizontal high body carried on four extraordinarily long jointed organic legs, low pointed head at the front edge, uneven layered dorsal surface with green covering and fine hanging strands, and the row of tall pale translucent orange-edged fans rising from the back. Keep the structure and asymmetrical fan sequence recognisable. No added giant jaws, arms, horns, extra legs, shell buildings or machinery. The animal is massive, a small human only around a fraction of a lower leg in height.\nMake a spacious original landscape painting of ONE Fanback taking a slow step across an open high valley. Side-three-quarter silhouette against a luminous spacious sky: pale morning sunlight shines through the fans while their russet edges catch warm accents. The feet bear its weight on grassy ground with scattered dark rock; one hind leg has just begun a measured step. A single tiny traveller well away on the same ground plane and a low distant ridge establish the immense height without turning it into a threat. Muted gold-green ground, cool blue-grey distance, a glowing ivory fan silhouette. Preserve broad painted quiet areas and the awe of unfamiliar living anatomy. No attack, horror, snarling, lightning, added symbiosis story or army; this landscape is one scene, not a biological explanation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-32168978-b5f0-41ee-a204-f6e253b94280.png",
+      "sha256": "ed70013e480293629f815eecf201211064a3710d4858096ddce30b94c23fd843",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "has an extra leg\n"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "has an extra leg\n"
+      }
+    },
+    {
+      "code": "S13-06",
+      "title": "Veilwing · harness exploration",
+      "file": "veilwing-harness-lineup.png",
+      "kind": "lineup",
+      "card": 221,
+      "description": "Six proposed harness arrangements for the newly chosen Veilwing retain its broad translucent sails and slender trailing body. Light survey equipment and tiny observers test how a working relationship could fit; the card painting follows the creator’s harness selection.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE Breachline design lineup sheet, 1536x1024 landscape, warm pale plain background, neutral lighting, traditional oil/acrylic painted reference treatment. Exactly SIX harness concepts in a clear 3-column by 2-row layout, generous separate space; no text, numbers, borders or watermark. Each cell contains the SAME huge animal with a different light survey harness, not different species or head variations.\nReference identity: use ONLY the BOTTOM-MIDDLE animal MN2–5 Veilwing in the attached sheet. Ignore the other five. Preserve its slender elongated central body, narrow pointed head with two fine antenna-like tendrils, huge broad flowing translucent cream/amber/purple-mottled sails on each side and long slender ribbon-like trailing body appendages. These are soft living wings, not solid machinery or a bird with feathered wings. Keep the graceful complete silhouette, all sail tips and tails within each cell. A small adult observer figure on or beside each harness establishes the vast animal scale; the equipment is tiny relative to the creature.\nDesign six anatomically coherent Gnosis survey harnesses that distribute load along the slender central thorax and belly without binding the moving sail roots. Everyday leather, soft padded woven straps, light wood and a little dull brass hardware; no armour, weaponry, cargo heaps or engines. Small chart cases, a simple sighting instrument or an observer seat may give purpose without becoming busy.\nTOP LEFT: two broad soft body bands support a compact open single-observer sling immediately under the centre of balance.\nTOP MIDDLE: low side-by-side paired observer seats on a slender crosspiece tucked below the belly, supported by four short straps from two padded bands.\nTOP RIGHT: one narrow longitudinal open survey cradle below the central body, a slight wooden side rail and a folded chart case; keep it much smaller than the animal.\nBOTTOM LEFT: extremely light nearly frameless woven seat with a tiny companion instrument basket, broad soft girths, a neatly secured short access rope.\nBOTTOM MIDDLE: a low fitted upper-body saddle for a prone observer between the sail roots, distributed over padded body contact, no pressure on wing membranes and no tall tower.\nBOTTOM RIGHT: two tiny fore-and-aft observers in a soft segmented belly cradle, distinct wide contact pads and a simple access ladder shown hanging beneath only this take.\nKeep each arrangement clearly different, physically attached and purposeful; don't run ropes through membranes or fasten gear to the head, antennae, tail ends or sail tips. Gentle neutral hovering/gliding reference poses, not a battle or flight scene. These are exploratory harnesses for awe-inspiring living survey flight, not airships, enclosed cabins or war mounts.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e4e9b99-426a-4381-9148-fc8dd90448ff.png",
+      "sha256": "2340d0c414f0205e237444c5e21a6ca33f376fcda4fb1deb423be0f07b61875c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Re-inspected full resolution: all six complete silhouettes fit the sheet; upper wing tips have a narrow but intact margin. No correction required. Six harness arrangements retained for creator choice.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board"
+      }
+    },
+    {
+      "code": "S13-07",
+      "title": "Host-bound",
+      "file": "host-bound.png",
+      "kind": "painting",
+      "card": 222,
+      "description": "A translucent parasite drifts in dim water, its small internal forms catching light. This view leaves its host and exact life cycle unresolved and keeps it separate from the Shore hunter.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse the attached reference for ONLY the translucent parasite occupying the upper portion and the small swimming insets. Preserve its rounded almost transparent oval body, large small-ringed dark amber eye, warm red internal organs and small amber egg-like cluster visible through the skin, delicate jointed foreappendages and long fine streaming rear filaments. DO NOT depict the separate furred fish-eating Shore hunter in the lower-right, and never imply the parasite grows into it.\nCreate a single finished underwater painting of this living translucent organism drifting obliquely through dim still water. Three-quarter close view, small appendages naturally held forward and the long rear filaments carried softly by the current. Thin light from the surface passes through the body, producing a soft amber glow within and a few restrained silver edges. A darker blue-green depth and a few quiet blurred-by-water reed silhouettes establish the water without a decorative frame. Tiny suspended natural specks only, no all-over grain. One animal is enough. Eerie beauty and mild strangeness, not body horror; no wounds, blood, human host, invasion, cutaway labels, magical chains, gore or visible fish transformation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6b4c7cab-f58c-4863-8497-7d5814053bb4.png",
+      "sha256": "ad67f6f27cd1308227c776b53286eb96fbe3087274a8c29c40bbab2deee9ecbc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png",
+          "sha256": "bb7812a2de7f91d162352ecfb79d81b9e3530467d273f683ffb0871e561798fa"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/host-bound.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-08",
+      "title": "Gall season",
+      "file": "gall-season.png",
+      "kind": "painting",
+      "description": "Gall-gliders leave the plant-grown nurseries among sunlit woodland branches. Their membranes carry a quiet glide; the scene leaves their diet and wider life cycle open.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png"
+      ],
+      "prompt": "One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging. Use the attached sheet only for Gall-glider identity: small warm russet-and-cream furred animal, fine curved pointed mouth, large ears, feather-brush tail, four small clawed limbs and pale amber-veined gliding membranes. Paint a quiet release from living plant-grown galls on a woodland branch: one near focal glider launches with membranes spread, a second peers from an open leafy gall behind; a small third silhouette glides in sunlit depth. Clear organic connection of rounded woody gall to branch, fresh leaves, soft light through membranes. A living woodland moment, neither insect infestation nor spectacle. Spread membranes in a stable glide, not flapping bird wings; keep selected anatomical identity. Close branch diagonal with deep green shaded foliage and warm sunlight, no reference-sheet layout.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-330dd75d-5911-4b1c-8582-773d504e909a.png",
+      "sha256": "57c4638957e57a666782e5124ca508d81085c56beb2fe4ad9bd826e07e3d43e2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png",
+          "sha256": "5e0e41fa15362db9ee75b286544455828acb0d16b84c68d7944b93c4ea2eb064"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "error in the arms"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "error in the arms"
+      }
+    },
+    {
+      "code": "S13-09",
+      "title": "Riverfolk specimen-keeper",
+      "file": "riverfolk-specimen-keeper.png",
+      "kind": "painting",
+      "description": "A Riverfolk hydrologist studies small Ford-thread juveniles in roomy water jars beside Ambrel’s canals. The juveniles retain the selected rounded face and translucent swimming body.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png"
+      ],
+      "prompt": "One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging. First reference is Ford-thread anatomical identity; second and third show Riverfolk appearance only, do not copy their faces or compositions. An adult male Riverfolk specimen-keeper at a simple working bench in the shade of Ambrel's canal waterworks. Human proportions and warm brown skin, subtle small matte scales around temples and neck, fin-like ears, three delicate neck gill slits, dark tied-back hair, worn indigo work robe. His face and his careful observation are the focus; one hand resting beside an open notebook, other steadying a broad jar rim, plausible five fingers. Two large wide-mouthed glass water jars on bench, generously roomy, each with ONE small juvenile Ford-thread swimming freely, body occupying no more than a quarter of jar width. User explicitly requests juveniles, not miniature adults. Preserve rounded softly lipped face and large dark eyes, transparent amber-pink fan-shaped swimming body with fine supporting rays and internal warm red organs from reference. Glass and water have selective reflected light and clear readable animals, not opaque reflections. Pale canal architecture beyond, narrow slice of blue-and-gold civic mosaic, warm reflected light against cool shade. Quiet skilled everyday research, no laboratory machinery, no magical glow, no legible text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-22aef9e2-6af5-4ecd-bbe2-411c9a5ed4e3.png",
+      "sha256": "406e3a184fcf2a571dad9516c1336386e6ac1f1cbdb10a9c289cddd2f4f35a82",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+          "sha256": "08ead837edc1c4a71a2823588f3bea52e2e11eedc6d5297063b2a60895fbb7ed"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png",
+          "sha256": "43b8bb8451c661d0082b4dc73fa9c5123ca70a4c496e3eb25dbeff2e52e4d9e6"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "one should have the adult"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "one should have the adult"
+      }
+    },
+    {
+      "code": "S13-E1",
+      "title": "Eel-netter · Hooktail",
+      "file": "eel-netter-hooktail.png",
+      "kind": "edit",
+      "original": "art/eel-netter.png",
+      "description": "A Hooktail fishes quietly in the reeds beyond the netter. Its spotted fur and fully furred curled tail place an established animal in everyday village life.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png"
+      ],
+      "prompt": "Edit the FIRST attached painting with one small localized addition, preserve its 1536x1024 landscape composition, painterly style and existing details. Add one Hooktail from SECOND identity reference at the far right midground waterline, below the distant stilt houses and well behind the netter's trap. Small but recognizable, crouched on a muddy reed bank looking into water, webbed feet, russet spotted otter-like fur, long FULLY FURRED curled prehensile tail, no scales on tail. Warm sunset rim light matching scene, soft midground edges. Keep the woman, her face, ears, hands, clothing, basket trap, wooden stake, foreground reeds, houses, light and framing unchanged. Wildlife is subordinate, not beside her face or across her trap. No text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ce5cc82b-64b3-45c1-b08c-01c66186c861.png",
+      "sha256": "133b7a79bdd9c4e917374384f261635cd01db09368955c6beffc09146b6b8833",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png",
+          "sha256": "5358a1e745f5f4dfdb63ed4e3d4005bb412e52cb9dcb1a3fd8383ed6135e974a"
+        }
+      ],
+      "original_preview": "originals/eel-netter.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too obvious and changes composition of painting"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too obvious and changes composition of painting"
+      }
+    },
+    {
+      "code": "S13-E2",
+      "title": "Ferry-keeper · Shore hunter",
+      "file": "ferry-keeper-shore-hunter.png",
+      "kind": "edit",
+      "original": "art/ferry-keeper.png",
+      "description": "A Shore hunter watches the water from distant coastal rocks. The keeper, passengers and rope crossing retain the painting’s focus.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ferry-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png"
+      ],
+      "prompt": "Edit FIRST attached painting with one localized background addition, preserve 1536x1024 landscape and all original painting qualities. On far-right shore rocks, behind and to right of keeper's head, add one small Shore hunter using SECOND attachment only for anatomy: low quadruped, long narrow pointed head, russet feather-scale coat, cream underside, long feathered tail, four long-toed legs. Side profile crouched watching water, subordinate but recognizable, about 7 percent of image width; clear space between silhouette and keeper. Match cool northern coastal light and distant edges. Preserve entire Greyhide keeper with face/pose/cloak/hands, rope, boat and all passengers, water, mountains and framing. No extra animal, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-f1351e3d-0e00-49b4-adb0-bb0e08e225a2.png",
+      "sha256": "51b3e4468473f44e9da494451be3583abef2b7b1e1363739f4c46127d1eea2fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ferry-keeper.png",
+          "sha256": "912d1a08d8aa82f2483f2e4c2644a334ae6cc83c078905d02771cf3fbd9efb06"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png",
+          "sha256": "30cb5d6204c16fbee5f7fedf1e23871cef842ef3124d906b373e0c1e98d10f24"
+        }
+      ],
+      "original_preview": "originals/ferry-keeper.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too cold for shore hunter"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too cold for shore hunter"
+      }
+    },
+    {
+      "code": "S13-E3",
+      "title": "Floodplain farmer · Tasselstrides",
+      "file": "floodplain-farmer-tasselstrides.png",
+      "kind": "edit",
+      "original": "art/floodplain-farmer.png",
+      "description": "Three Tasselstrides pick seeds along a dry bank beyond the flooded field. The farmer and harvest remain the main subject.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add three small knee-high Tasselstrides on a narrow drier bank in the upper-left midground beyond the farmer's shoulder, one bending to pick seeds, two loosely spaced. Use ONLY creature 2 TOP MIDDLE of second attachment as identity: pale cream shaggy feather-like covering, curved long neck, small short beaked face, two stout scaly feet, darker hanging wing/tassel tips and modest tail. Keep their biped body plan, do not turn them into chickens or ordinary cranes. Small enough for their distance and subordinate to farmer, visible against grey-blue flooded field. Preserve the farmer's sheaf, both hands, wooden rack and all foreground detail.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-bd513127-795c-41ff-b2ef-e850a4193347.png",
+      "sha256": "bd57acd582e59ec394fa41c70812cd6a8a766eb48b24b6144c2a7415a000f899",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+          "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "original_preview": "originals/floodplain-farmer.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there"
+      }
+    },
+    {
+      "code": "S13-E4",
+      "title": "Master mason · Quillheel",
+      "file": "master-mason-quillheel.png",
+      "kind": "edit",
+      "original": "art/master-mason.png",
+      "description": "A Quillheel browses a sparse plant on an upper quarry ledge. Its feathered back and four-footed stance introduce wildlife without competing with the mason.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add one cat-sized Quillheel high on the right quarry ledge above the distant workers, about 8 percent of picture width. Use ONLY creature 6 BOTTOM RIGHT of second attachment for identity: four-legged animal, upright arched neck and small beaked head, slate-blue overlapping feather-like back covering, tan neck and four scaled legs with broad toes, short tapered tail. Side profile browsing one small scrub plant growing from a stone crack. Match warm quarry sunlight and atmospheric background brushwork. Do not give it wings, two legs or huge predatory claws. Keep mason, huge shoulder hammer, workers and blocks unchanged.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8cafd687-c2cb-414a-a52a-30b160e1262c.png",
+      "sha256": "2315b0dab8064c37c51e0deeac5029548602d835b240bfae0a6e0b5667093a41",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+          "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "original_preview": "originals/master-mason.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much"
+      }
+    },
+    {
+      "code": "S13-E5",
+      "title": "Salt-road caravaneer · Salt-flat migrants",
+      "file": "salt-road-caravaneer-migrants.png",
+      "kind": "edit",
+      "original": "art/salt-road-caravaneer.png",
+      "description": "Salt-flat migrants replace the cattle beside the caravan’s wagons. Their high shaggy rumps, long legs and low heads keep the salt-road draft animals distinct from the new ox-like proposal.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/salt-road-caravaneer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Replace ONLY the two ordinary horned cattle standing just behind the woman and child at right with two Salt-flat migrants. Use creature 5 BOTTOM MIDDLE in second attachment as exact identity: very tall narrow body with high rust-and-cream shaggy hindquarters/rump, four long thin weight-bearing legs and broad padded toes, long downward-reaching neck with small soft-lipped head carried low, no horns. Clear atypical high-backed silhouette, realistic joint/load logic. Light plain fitted draft straps connect at chest/body to wagon traces, unobtrusive. Taller than the humans, but in middle distance; keep woman and child fully visible in front of them. Preserve caravaneer foreground face, armor, hands, sword, wagon/salt sacks/canvas, all family members, small far riders, salt plain, blue sky and sun.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-9e46731b-7f59-482e-8b98-256f148f1e78.png",
+      "sha256": "8026b0565ef6d101e2bc25397b22af4abd6edc32098c03c3feaef4e4b696cd2e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/salt-road-caravaneer.png",
+          "sha256": "6b1dd2cbe9682d03a0cf1783cf69f9b8d16f3b1a9ad2065a14faf6ecdd63955e"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+          "sha256": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+        }
+      ],
+      "original_preview": "originals/salt-road-caravaneer.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-E6",
+      "title": "Longhouse keeper · Moltwalker",
+      "file": "longhouse-keeper-moltwalker.png",
+      "kind": "edit",
+      "original": "art/longhouse-keeper.png",
+      "description": "A Moltwalker searches the stony shore outside the longhouse. Its plated shell and jointed walking legs become a small part of the keeper’s coastal surroundings.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add one small Moltwalker on the exposed stony shore through the right doorway opening, toward lower right beyond the timber post and away from keeper's hand. Second attachment gives identity: amber overlapping leaf-like armored carapace held above ground on eight slender angular walking legs, small crustacean face/antennae and paired little front claws. Search among kelp and pebbles in side three-quarter view, grounded feet, subtle cool coastal light; animal roughly 10 percent picture width, understated but recognizable. No giant monster size, no bright gold glow, no extra shell needed. Preserve the Greyhide keeper, his hands, expression and clothing, heavy timber doorway, warm interior, cold water and snowy mountains.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4f5273df-60cf-468b-86ba-42ce6aa59975.png",
+      "sha256": "0fdc0b91b84b779ea014e070547c2e431b388034b2d40375e372e723b19b469e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+          "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png",
+          "sha256": "5a0d76abd146106382998510f86de76954e0b1be5c4c9f77f68566393e9fe996"
+        }
+      ],
+      "original_preview": "originals/longhouse-keeper.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "dont like the changes to the composition overall, addition here was better"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "dont like the changes to the composition overall, addition here was better"
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "code": "S13-05-R2",
+      "base": "S13-05",
+      "title": "Fanback · four-leg correction",
+      "file": "fanback-v2.png",
+      "kind": "painting",
+      "description": "The liked valley composition, fans and sense of scale are retained. The duplicate middle leg is removed so the body rests on four connected limbs.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/fanback.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the attached painting only to correct its extra leg. The Fanback must have exactly FOUR total legs, two front and two rear. In this image there is an extra central upright leg with a broad foot around x=885,y=801, between the slimmer far foreleg at x=745 and the rear leg at x=1000. Remove that extra central leg entirely, from its underside attachment down to its foot, and reveal the existing distant valley/grass through that gap. Retain the four legs with feet approximately at x=550, x=745, x=1000 and x=1235, their coherent joints and grounded contacts. Preserve every other aspect: exact long body, head/tendrils, all fans, foliage, traveller, valley, framing, lighting, palette and measured painted texture. No new feet, no new limbs, no redesigned creature. 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7d771a4c-3965-4400-9fe1-7d8549573bda.png",
+      "sha256": "fe1419d8ad18ca74ac2ded008be6a3654286217a3b81f6e22e69f055f9c916ea",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Counted four complete legs and removed duplicate center leg; fans, traveller and valley retained.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/fanback.png",
+          "sha256": "ed70013e480293629f815eecf201211064a3710d4858096ddce30b94c23fd843"
+        }
+      ],
+      "previous_file": "fanback.png",
+      "creator_request": "has an extra leg\n",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/fanback-v2.png"
+    },
+    {
+      "code": "S13-08-R2",
+      "base": "S13-08",
+      "title": "Gall season · connected forelimbs",
+      "file": "gall-season-v2.png",
+      "kind": "painting",
+      "description": "The gliding moment and leafy nurseries are preserved. The foreground animal now has one connected pair of membrane-bearing forelimbs and one pair of hind legs.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/gall-season.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png"
+      ],
+      "prompt": "Use case: precise-object-edit. FIRST image is the liked Gall season painting to correct. SECOND image is selected identity only. Fix ONLY the arm anatomy of the large foreground flying Gall-glider, keeping its face, fur, tail, silhouette, wing shape and the whole painting composition. Give this animal exactly four limbs: two hind legs trailing below the rear body and ONE left/right pair of forelimbs that extend outward from the shoulders to support its two gliding membranes. Each forelimb must trace continuously from shoulder through elbow to one wrist/hand at the membrane's outer leading edge. Remove the two duplicate dangling forearms/paws underneath the chest (near image x=1100,y=390 and x=1240,y=460); smoothly restore furry chest and air there. Those cannot coexist with the membrane-bearing forearms as extra arms. No detached hands, merged wrists or extra digits. Keep membranes translucent, selected orange/cream coat and all galls/other animals/branch/light/background exactly as they are. Painted oil/acrylic, 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-58028ca3-d146-46fa-9710-627ab1336da1.png",
+      "sha256": "b56e7e14d71652d4cc45544528a6a5ecf5785e6b2c5433d333619d3d28183555",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Two membrane-bearing forelimbs and two trailing hind legs; duplicate dangling forepaws removed.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/gall-season.png",
+          "sha256": "57c4638957e57a666782e5124ca508d81085c56beb2fe4ad9bd826e07e3d43e2"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png",
+          "sha256": "5e0e41fa15362db9ee75b286544455828acb0d16b84c68d7944b93c4ea2eb064"
+        }
+      ],
+      "previous_file": "gall-season.png",
+      "creator_request": "error in the arms",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/gall-season-v2.png"
+    },
+    {
+      "code": "S13-09-R2",
+      "base": "S13-09",
+      "title": "Specimen-keeper · adult and juvenile",
+      "file": "riverfolk-specimen-keeper-v2.png",
+      "kind": "painting",
+      "description": "The left jar keeps a small juvenile. The larger right-hand vessel now shows a mature Ford-thread, with the broad developed translucent body and rounded face from the selected reference.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/riverfolk-specimen-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png"
+      ],
+      "prompt": "Use case: precise-object-edit. FIRST image is liked painting; SECOND is Ford-thread anatomy reference. Creator's latest correction: one vessel should contain the ADULT. Change only the animal in the larger RIGHT-HAND jar into a mature Ford-thread using the TOP LARGE animal from second reference: broad fully developed pink-amber translucent fan-like body with fine supporting rays, warm internal organ shapes, small rounded face and softly rounded lips. Make it noticeably larger and deeper-bodied than the juvenile at left, occupying about half the usable jar width and kept clearly within its generous water volume, not touching walls. The left jar retains its existing small juvenile unchanged. Preserve exact keeper identity, face, neck gills, ears, pose, hands, clothing, both glass vessels, bench, notebook, waterworks, framing, colour, lighting and painterly detail. The mature animal should read as the selected grown form, not simply another small swimmer. 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2e16f537-7845-4131-bb6b-04cda3038d0a.png",
+      "sha256": "7c1b1ecdce7c5500323680a9c12fbe256ce793f4ff324ed34d9b9f18b9aa774e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Adult broad-bodied form in right jar; small juvenile remains at left. Person and scene retained.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/riverfolk-specimen-keeper.png",
+          "sha256": "406e3a184fcf2a571dad9516c1336386e6ac1f1cbdb10a9c289cddd2f4f35a82"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+          "sha256": "08ead837edc1c4a71a2823588f3bea52e2e11eedc6d5297063b2a60895fbb7ed"
+        }
+      ],
+      "previous_file": "riverfolk-specimen-keeper.png",
+      "creator_request": "one should have the adult",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/riverfolk-specimen-keeper-v2.png"
+    },
+    {
+      "code": "S13-06-R2",
+      "base": "S13-06",
+      "title": "Veilwing · giant with back harness",
+      "file": "veilwing-back-harness-v2.png",
+      "kind": "reference",
+      "description": "A single huge Veilwing carries a plain fitted leather harness over its back. Tiny figures remain on the ground for scale; the animal has no riders, hanging seats or passenger platforms.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create one corrected creature-and-harness reference illustration, 1536x1024 landscape. Required identity is ONLY creature number 5 BOTTOM MIDDLE of attached sheet, the Veilwing: very slender pointed central body, huge cream/amber/lavender translucent broad sails, delicate forked head feelers and long ribbon-like rear streamers. Ignore the other five creatures. Preserve its unusual precise body plan and selected wing shapes. Creator correction: this creature is HUGE, a truly massive aerial animal, not a small mount. One dominant full-body three-quarter view against quiet pale sky and distant low ground; entire wings and streamers fit with margins. Include only two minute 7–9 pixel-tall human silhouettes far beneath it on the ground to communicate enormous scale; none aboard. A simple EMPTY LEATHER HARNESS runs OVER ITS BACK, conforming along the top of the narrow central body with fitted wide leather straps and restrained buckles; straps fasten around robust torso, clear of thin sail membranes and their moving roots. Leather is matte worn brown, tiny fastenings scaled to the giant. No person anywhere on creature, no seats, no basket, no gondola, no platform, no cargo, no instruments, no reins held by people, no decorative cloth or armor. The animal itself dominates; do not shrink it to make its tack read. Painterly oil/acrylic reference, calm neutral light, selective detail, no text or numbers.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-f5503048-1625-4342-bd1b-4ae149632f01.png",
+      "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "selected_visual_direction",
+      "visual_check": "Single huge animal, empty leather back harness, two ground scale figures, no people aboard.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "previous_file": "veilwing-harness-lineup.png",
+      "creator_request": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board",
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "lets do an anatomy study of this guy real quick. the wing facing us has an orientation that doesnt quite make sense. align the wings in study"
+      },
+      "latest_creator_review": {
+        "date": "2026-11-14",
+        "scope": "Return closer to R2 appearance and harness, but correct anatomy and improve huge-scale reading. This reopens the visual direction, not approval of the old perspective error.",
+        "words": "see: S13-06-R2. get closer to that version please, but with corrected anatomy, that harness was also better, but should do better on scale"
+      }
+    },
+    {
+      "code": "S13-E1-R2",
+      "base": "S13-E1",
+      "title": "Eel-netter · quieter Hooktail",
+      "file": "eel-netter-hooktail-v2.png",
+      "kind": "edit",
+      "original": "art/eel-netter.png",
+      "original_preview": "originals/eel-netter.png",
+      "description": "A small Hooktail is mostly hidden by the mid-distance reeds and water. Only its muted head and a little furred tail shape are suggested, keeping the netter and trap dominant.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Add one SMALL SWIMMING Hooktail in the existing right-side reed shallows, in the narrow middle-distance water gap below the houses, well behind the trap. Show only a 25–35-pixel-wide soft brown head above water, with a faint low back shape partly hidden by reeds and a barely suggested furred tail curve; total visible animal footprint no more than 65 pixels wide. Use reference's spotted warm-brown fur, rounded muzzle, and fully FURRED tail. No raised bank or rock; its body is in the existing water. Do not make a full-body animal vignette. Integrate it into the same low-contrast brown-grey marks as the reeds and reflections; easy to miss at first glance, coherent on closer look. Leave all existing original marks elsewhere intact.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0f33bbe9-efc9-41f7-ab46-0726b637bd79.png",
+      "sha256": "da4dbcc54cea700b66998a8117384d9ad0703b9c92fe7685ec75df60fa80334c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small submerged head/back and furred tail suggestion; no added bank. Main composition retained, with minor brushwork drift from image generation.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png",
+          "sha256": "5358a1e745f5f4dfdb63ed4e3d4005bb412e52cb9dcb1a3fd8383ed6135e974a"
+        }
+      ],
+      "previous_file": "eel-netter-hooktail.png",
+      "creator_request": "too obvious and changes composition of painting",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/eel-netter-hooktail-v2.png"
+    },
+    {
+      "code": "S13-E3-R2",
+      "base": "S13-E3",
+      "title": "Floodplain farmer · distant Tasselstrides",
+      "file": "floodplain-farmer-tasselstrides-v2.png",
+      "kind": "edit",
+      "original": "art/floodplain-farmer.png",
+      "original_preview": "originals/floodplain-farmer.png",
+      "description": "Two tiny Tasselstrides are suggested at the existing far field edge, with their feet obscured by vegetation. The flooded foreground remains water, without an invented island or new bank.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Use ONLY animal 2 TOP MIDDLE of second sheet, Tasselstride: shaggy cream feather-like covering, curved neck, small short-beaked head and two stout legs. Place TWO very distant tiny Tasselstride shapes at the EXISTING far field/vegetation boundary on the extreme upper-left horizon, around x=75,y=250 and x=130,y=245. Each whole animal only 12–18 pixels tall in the 1536x1024 painting, with feet hidden in the already present distant vegetation. They are faint grey-cream two-or-three-stroke silhouettes, not sharply rendered miniatures. Do not put them into the near or middle flooded field: there is NO land there. Do not add any island, bank, dyke, ridge, perch or new terrain. Preserve original water area and horizon exactly. Tiny signs of life within the existing landscape, not a cluster that pulls the eye.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8d0fc5e1-12bc-48da-aa86-a0123ca1847d.png",
+      "sha256": "2607f94b366e2fcf856ffe08a512e654b144a44c03ee1a4e10e9801758104138",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Two distant muted forms at existing far vegetation edge; no new foreground or midground bank. Main figure composition retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+          "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "previous_file": "floodplain-farmer-tasselstrides.png",
+      "creator_request": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there",
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-E4-R2",
+      "base": "S13-E4",
+      "title": "Master mason · distant Quillheel",
+      "file": "master-mason-quillheel-v2.png",
+      "kind": "edit",
+      "original": "art/master-mason.png",
+      "original_preview": "originals/master-mason.png",
+      "description": "A small, loosely painted Quillheel blends into the stone colours on an existing upper ledge. It carries far less contrast and detail than the mason.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Use ONLY animal 6 BOTTOM RIGHT of second sheet, Quillheel: small four-footed rock browser, arched neck, short beaked head, slate feather-like back. Add ONE tiny Quillheel on the existing high right ledge at approximately x=1375,y=252. Whole animal no more than 45 pixels wide and 33 pixels high: a few muted grey-ochre brush marks matching the neighboring ledge and haze. Lower its head toward the existing stone crack; feet supported by existing ledge. Do not add any brightly detailed plant or separate grassy patch. Four-leg stance only suggested, never highly outlined. The distant quarry workers should be clearer and more detailed than this animal. Do not change the mason, shoulder hammer, quarry blocks or lighting.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8f5cfc23-7a30-4b59-ba9d-63b1b8116b1c.png",
+      "sha256": "f82e88c29d7cd4154512ade3978f5279aa237dbdb19cc55842297cad06729cf5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small low-detail animal on existing upper ledge; less intrusive than first edit. Figure and quarry composition retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+          "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "previous_file": "master-mason-quillheel.png",
+      "creator_request": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/master-mason-quillheel-v2.png"
+    },
+    {
+      "code": "S13-E6-R2",
+      "base": "S13-E6",
+      "title": "Longhouse keeper · quiet shore Moltwalker",
+      "file": "longhouse-keeper-moltwalker-v2.png",
+      "kind": "edit",
+      "original": "art/longhouse-keeper.png",
+      "original_preview": "originals/longhouse-keeper.png",
+      "description": "A subdued Moltwalker sits among the existing beach stones beyond the doorway. The keeper’s silhouette, timber framing and snowy coast are preserved from the original composition.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Add one small Moltwalker on existing stony beach through the right doorway opening, around x=1350,y=865, no more than 80 pixels wide and 45 high. Identity from second reference: low amber overlapping leaf-like carapace elevated on thin angular walking legs, tiny crustacean face and little front claws. Paint it with only a few broken muted ochre-grey strokes matching surrounding pebbles, soft edges and unobtrusive contrast. Ground its fine legs on those existing stones. No extra shell, no new boulder, no new scenery. Especially preserve original keeper's exact outline, head size and location, both hands, original dark warm room, the vertical timber-post edge at x=1100, the doorway width and original sea/horizon/cold mountain composition. The addition occupies only the little beach patch; nothing else should be redrawn.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8535a2eb-ad39-478d-a3fb-edc7d065364f.png",
+      "sha256": "58fdcfb4f00e76b2eb53b93787cadfc00594932588ba4cbc8e08ea5a54d72e8a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small Moltwalker among existing beach stones; doorway and keeper silhouette retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+          "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png",
+          "sha256": "5a0d76abd146106382998510f86de76954e0b1be5c4c9f77f68566393e9fe996"
+        }
+      ],
+      "previous_file": "longhouse-keeper-moltwalker.png",
+      "creator_request": "dont like the changes to the composition overall, addition here was better",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/longhouse-keeper-moltwalker-v2.png"
+    },
+    {
+      "code": "S13-06-R3",
+      "base": "S13-06",
+      "title": "Veilwing · aligned-wing anatomy study",
+      "file": "veilwing-anatomy-study-v3.png",
+      "kind": "reference",
+      "description": "Earlier liked study, preserved exactly as reviewed. Its one-pair-only anatomy omitted the original dorsal sail and is superseded by the creator's later clarification; do not use it as complete anatomy.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "creator_request": "lets do an anatomy study of this guy real quick. the wing facing us has an orientation that doesnt quite make sense. align the wings in study",
+      "prompt": "Use case: precise-object-edit / creature anatomy reference. Make a clear THREE-VIEW ANATOMY STUDY of the same Veilwing from attached references, 1536x1024 landscape on plain warm ivory. Image 1 preserves creature identity, colour and huge scale, but its near wing is incorrectly oriented: DO NOT repeat that pose. Image 2 supplies ancestral identity ONLY in cell 5 BOTTOM MIDDLE. This is an anatomical clarification, not a new animal or a variant lineup.\nPreserve slender elongated pointed head and torso, delicate paired head feelers, translucent cream/amber/lavender sail surfaces with mottled vein structure, lobed trailing edges and long rear ribbon streamers. ONE bilaterally matched pair of broad sail-wings. Left and right wing roots attach at the SAME longitudinal station on opposite sides of the torso. Both leading edges face toward the head, both lobed trailing edges sweep toward the tail. Both wings have the SAME shape, lobe arrangement and anatomical orientation mirrored left-to-right. They spread into the SAME shallow flight plane. Do not put one wing facing forward or down the body's length while the other faces sideways. Continuous membrane lobes are parts of the same sail, not extra wing pairs.\nLAYOUT: Large true OVERHEAD/DORSAL view across the left two-thirds of the sheet, head pointing toward top of page, tail ribbons toward bottom. No roll or foreshortening: full left and right sails extend symmetrically sideways, visibly mirrored, roots and continuous leading edges easy to trace. Upper right: smaller exact HEAD-ON view, slender head and torso centered between the matched wings, both in equal shallow dihedral, both roots at equal height, showing their shared plane. Lower right: exact SIDE PROFILE of the same anatomy, head pointing left; near and far matched wings overlap in projection rather than becoming different shapes. All three views depict the SAME number of wing elements, same root positions, same body proportions. Keep each whole view inside its own space with clear margins, no overlap.\nOmit leather harness in this anatomy-only sheet so wing/body connections are unobscured; the established harness direction remains leather over the back with no people aboard, but no tack is needed here. Two minute human scale marks below the side study communicate a truly enormous animal, not a small mount. Neutral even light; measured painterly gouache/oil concept handling with clear structural edges, quiet shading and no scenic setting. No bones, no gore, no invented legs, no second head, no redesign into a bird, butterfly or ordinary ray. No text, letters, labels, diagrams, arrows, borders or watermark.",
+      "review_status": "superseded_anatomy_reference",
+      "generation_attempts": [
+        {
+          "prompt": "Use case: precise-object-edit / creature anatomy reference. Make a clear THREE-VIEW ANATOMY STUDY of the same Veilwing from attached references, 1536x1024 landscape on plain warm ivory. Image 1 preserves creature identity, colour and huge scale, but its near wing is incorrectly oriented: DO NOT repeat that pose. Image 2 supplies ancestral identity ONLY in cell 5 BOTTOM MIDDLE. This is an anatomical clarification, not a new animal or a variant lineup.\nPreserve slender elongated pointed head and torso, delicate paired head feelers, translucent cream/amber/lavender sail surfaces with mottled vein structure, lobed trailing edges and long rear ribbon streamers. ONE bilaterally matched pair of broad sail-wings. Left and right wing roots attach at the SAME longitudinal station on opposite sides of the torso. Both leading edges face toward the head, both lobed trailing edges sweep toward the tail. Both wings have the SAME shape, lobe arrangement and anatomical orientation mirrored left-to-right. They spread into the SAME shallow flight plane. Do not put one wing facing forward or down the body's length while the other faces sideways. Continuous membrane lobes are parts of the same sail, not extra wing pairs.\nLAYOUT: Large true OVERHEAD/DORSAL view across the left two-thirds of the sheet, head pointing toward top of page, tail ribbons toward bottom. No roll or foreshortening: full left and right sails extend symmetrically sideways, visibly mirrored, roots and continuous leading edges easy to trace. Upper right: smaller exact HEAD-ON view, slender head and torso centered between the matched wings, both in equal shallow dihedral, both roots at equal height, showing their shared plane. Lower right: exact SIDE PROFILE of the same anatomy, head pointing left; near and far matched wings overlap in projection rather than becoming different shapes. All three views depict the SAME number of wing elements, same root positions, same body proportions. Keep each whole view inside its own space with clear margins, no overlap.\nOmit leather harness in this anatomy-only sheet so wing/body connections are unobscured; the established harness direction remains leather over the back with no people aboard, but no tack is needed here. Two minute human scale marks below the side study communicate a truly enormous animal, not a small mount. Neutral even light; measured painterly gouache/oil concept handling with clear structural edges, quiet shading and no scenic setting. No bones, no gore, no invented legs, no second head, no redesign into a bird, butterfly or ordinary ray. No text, letters, labels, diagrams, arrows, borders or watermark.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png",
+          "file": "veilwing-anatomy-study-v3-draft.png",
+          "assessment": "Large dorsal wing alignment is clear; right-hand views are not true orthographic elevations. Correct those insets before review."
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png",
+      "sha256": "2833bc5e9c6a16ce6c72a51c09631a1aefdf18f417ba0939ef561a1dbf79bad2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "i like the updated veilwing",
+        "basis": "Latest displayed image at message arrival was the first three-view anatomy study; preserve that exact image."
+      },
+      "visual_check": "Large overhead view clearly resolves mirrored wing shape and root position. Smaller views are supporting angle views, not strict orthographic elevations.",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-anatomy-study-v3.png",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+          "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "supersession_note": "Creator clarified the original has a separate dorsal back sail in addition to the side wings. The old one-pair-only assumption is superseded. Do not delete or bind a wing to fit the harness; use MN2-5 as the original identity reference. New R4 anatomy and P4 painting remain pending."
+    },
+    {
+      "code": "S13-06-R3B",
+      "base": "S13-06",
+      "title": "Veilwing · orthographic wing check",
+      "file": "veilwing-anatomy-study-v3b.png",
+      "kind": "reference",
+      "description": "The same aligned overhead anatomy with front and side projections clarified. This supporting projection check was completed after the creator liked the first study and remains separately reviewable.",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png"
+      ],
+      "creator_request": "lets do an anatomy study of this guy real quick. the wing facing us has an orientation that doesnt quite make sense. align the wings in study",
+      "prompt": "Correct ONLY the two SMALL RIGHT-HAND VIEWS of this Veilwing anatomy sheet. Keep the entire large overhead view on the left exactly unchanged: that symmetrical matched pair of sail-wings is correct. The small views must now be genuine orthographic projections of that very same body and the same shallow spread-wing flight pose.\nUPPER RIGHT: replace the existing small full-plan view with a TRUE HEAD-ON elevation. Its pointed nose faces directly at the viewer, show the small paired eyes and actual frontal face rather than a long dorsal neck. Both wing roots are equal in height and both wings extend out horizontally to either side in a very shallow matched dihedral. Because we look along the flight plane the wings are strongly foreshortened, appearing as thin long curved sections with narrow membrane surfaces, NOT as two full face-on sail shapes. The body behind the head and tail streamers are foreshortened/partly hidden. This drawing should explain the matching root heights and shared shallow plane.\nLOWER RIGHT: replace the current broad upright wing silhouette with a TRUE LEFT SIDE elevation of the same wings-spread flight pose. Long pointed head faces left, long body and streamers extend right. Both wings lie in a nearly horizontal plane emerging from the upper sides of the body. From the side they overlap and are EDGE-ON, a thin streamlined strip along the shoulder/back line with subtle membrane thickness. Do NOT raise a huge vertical sail above the spine. No banking, flapping or folding: identical pose to the overhead view, viewed from the side. Use the same anatomy, colours and proportions. Keep the tiny ground human silhouettes, clear spacing, warm ivory background and painted reference treatment. No harness, no labels, no text, no added limbs. 1536x1024.",
+      "review_status": "superseded_anatomy_reference",
+      "generation_attempts": [
+        {
+          "prompt": "Use case: precise-object-edit / creature anatomy reference. Make a clear THREE-VIEW ANATOMY STUDY of the same Veilwing from attached references, 1536x1024 landscape on plain warm ivory. Image 1 preserves creature identity, colour and huge scale, but its near wing is incorrectly oriented: DO NOT repeat that pose. Image 2 supplies ancestral identity ONLY in cell 5 BOTTOM MIDDLE. This is an anatomical clarification, not a new animal or a variant lineup.\nPreserve slender elongated pointed head and torso, delicate paired head feelers, translucent cream/amber/lavender sail surfaces with mottled vein structure, lobed trailing edges and long rear ribbon streamers. ONE bilaterally matched pair of broad sail-wings. Left and right wing roots attach at the SAME longitudinal station on opposite sides of the torso. Both leading edges face toward the head, both lobed trailing edges sweep toward the tail. Both wings have the SAME shape, lobe arrangement and anatomical orientation mirrored left-to-right. They spread into the SAME shallow flight plane. Do not put one wing facing forward or down the body's length while the other faces sideways. Continuous membrane lobes are parts of the same sail, not extra wing pairs.\nLAYOUT: Large true OVERHEAD/DORSAL view across the left two-thirds of the sheet, head pointing toward top of page, tail ribbons toward bottom. No roll or foreshortening: full left and right sails extend symmetrically sideways, visibly mirrored, roots and continuous leading edges easy to trace. Upper right: smaller exact HEAD-ON view, slender head and torso centered between the matched wings, both in equal shallow dihedral, both roots at equal height, showing their shared plane. Lower right: exact SIDE PROFILE of the same anatomy, head pointing left; near and far matched wings overlap in projection rather than becoming different shapes. All three views depict the SAME number of wing elements, same root positions, same body proportions. Keep each whole view inside its own space with clear margins, no overlap.\nOmit leather harness in this anatomy-only sheet so wing/body connections are unobscured; the established harness direction remains leather over the back with no people aboard, but no tack is needed here. Two minute human scale marks below the side study communicate a truly enormous animal, not a small mount. Neutral even light; measured painterly gouache/oil concept handling with clear structural edges, quiet shading and no scenic setting. No bones, no gore, no invented legs, no second head, no redesign into a bird, butterfly or ordinary ray. No text, letters, labels, diagrams, arrows, borders or watermark.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png",
+          "file": "veilwing-anatomy-study-v3-draft.png",
+          "assessment": "Large dorsal wing alignment is clear; right-hand views are not true orthographic elevations. Correct those insets before review."
+        }
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7900529d-efc5-4ed3-81c8-b8085a7a9ea0.png",
+      "sha256": "d5ea3a5ecfa856b8319149c6164b67f9d08a1d6ca042e733bf080159598a75c3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "visual_check": "Overhead wings remain matched; small frontal and side views now show foreshortened, nearly edge-on wings in a common flight plane.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png",
+          "sha256": "2833bc5e9c6a16ce6c72a51c09631a1aefdf18f417ba0939ef561a1dbf79bad2"
+        }
+      ],
+      "supersession_note": "Creator clarified the original has a separate dorsal back sail in addition to the side wings. The old one-pair-only assumption is superseded. Do not delete or bind a wing to fit the harness; use MN2-5 as the original identity reference. New R4 anatomy and P4 painting remain pending."
+    },
+    {
+      "code": "S13-06-P1",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · harnessed flight",
+      "file": "veilwing.png",
+      "kind": "painting",
+      "description": "The huge Veilwing glides above a river crossing with an empty leather harness following its back. The aligned sails retain the selected anatomy; the distant waterworks provide a scene and scale cue, without assigning its wider range.",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png"
+      ],
+      "prompt": "One finished original Breachline fantasy oil/acrylic card painting, 1536x1024 landscape, full bleed, no text or border. Use the LARGE OVERHEAD VIEW on the LEFT of the attached approved anatomy sheet for this creature's exact anatomy. Keep its one matching bilateral pair of vast translucent cream/amber/lavender lobed sail-wings, their matched attachment stations, both leading edges toward the head and both trailing edges swept toward the tail. Keep the slender pointed head/torso, delicate head feelers and three long rear leaf-tipped ribbons. Same wing plane on both sides, no wrongly rotated near wing, no extra wings or limbs.\nPaint a quiet awe-inspiring huge Veilwing in flight high above a broad winding river and a small distant stone crossing near Ambrel's outer waterworks. View obliquely from ABOVE, enough to read both wings' matched planar spread and the long back; its body runs diagonally from head in upper-left toward trailing ribbons lower-right. Entire animal with breathing room, main sails dominate, the ground is very far below. Tiny bridges, a handful of indistinct human marks on the towpath and small waterside buildings establish enormous scale without becoming detailed secondary subjects. This is a rare enormous animal, graceful rather than menacing.\nA simple fitted EMPTY matte brown LEATHER HARNESS lies along and OVER ITS BACK, secured by a few coherent girths around the robust narrow torso, leaving wing roots and membranes free. No person aboard, no passenger seats, basket, suspended frame, gondola, cargo or instruments. No armor. It is recognizably harnessed, but the great animal and its wing geometry carry the painting.\nWarm late-afternoon light passes through translucent sails above cool blue-green river water and hazy ochre stone. Measured varied oil/acrylic brushwork, selective membrane accents, broad quiet ground shapes, coherent light and readable shadows. Matte hide and leather; water reflections restrained. Clear connected anatomy, strong graceful silhouette, tactile surfaces; no uniform grain, CGI gloss, hard miniature scenery, magical glow or spectacle.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4510ee08-c8cb-442d-a5a1-8064372242f5.png",
+      "sha256": "7eb28b2f02800d05e58f991f1fdc5b37a66436e36e8be7de176e6a7155dde6c5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "superseded_revision",
+      "visual_check": "Inspected: matching wing orientation and common plane, coherent back leather, no people aboard, entire creature in frame with distant human/building scale. Final painting pending creator review.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e178131-ce4c-48e7-9f50-3c6a9e87c99a.png",
+          "sha256": "2833bc5e9c6a16ce6c72a51c09631a1aefdf18f417ba0939ef561a1dbf79bad2"
+        }
+      ],
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "For the veilwing, let's keep that sideways / three quarter view, i like having it over a setting on the ground though really high up, that is interesting",
+        "scope": "Viewpoint revision; ground setting retained."
+      }
+    },
+    {
+      "code": "S13-06-P2",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · high above the river",
+      "file": "veilwing-v2.png",
+      "kind": "painting",
+      "description": "The Veilwing crosses high above the river valley in a sideways three-quarter view, with the ground receding far below. Its aligned sails and empty leather back harness preserve the selected animal; the waterworks remain a scene choice, not its settled range.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-anatomy-study-v3.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing.png"
+      ],
+      "creator_request": "Keep the sideways / three-quarter view; keep the ground setting very far below.",
+      "prompt": "Use case: precise-object-edit. Revise the Veilwing card painting in IMAGE 2, changing the creature's camera angle to a SIDEWAYS THREE-QUARTER VIEW while retaining its great height above the ground and the river-valley setting. IMAGE 1 is the approved anatomy reference: the LOWER-RIGHT side/three-quarter view is the visual direction for the new pose; the LARGE LEFT dorsal view establishes the matched anatomy of the single paired wings. Output one finished 1536x1024 landscape oil/acrylic fantasy painting, no text or borders.\n\nThe creature flies horizontally across the picture, pointed head toward the left, long slender body and trailing ribbons to the right. See the SIDE of its face with the eye visible, the flank, and the empty leather harness along its back. Place the viewer beside the animal and slightly above its body, looking across it at a shallow oblique angle, NOT down onto a flat open-wing plan view. Use convincing foreshortening and overlap: a graceful three-quarter silhouette like image 1's lower-right view, now over a real landscape. The paired broad sails remain anatomically matched and move together in one coherent shallow bank; both attach at the same torso station, their leading edges face the head, and the lobed trailing edges sweep back. Do not rotate the near sail independently or add another pair of wings. Preserve the cream/amber/lavender translucent membranes, narrow tapered body, head feelers and three long leaf-tipped trailing ribbons. All tips and ribbons stay inside frame with breathing room.\n\nKeep the sense that this HUGE Veilwing is flying REALLY HIGH over the setting: a winding river, stone crossing and modest waterworks, small fields and woods lie far beneath through layers of atmospheric haze. The distant buildings and trees should be minute, gently suggested with broad brushwork rather than detailed miniatures. A little pale distant sky at the horizon is welcome, but the ground far below remains visible and gives the flight its depth. A calm expansive moment, no threat or spectacle.\n\nPreserve the simple empty matte brown leather harness fitted OVER the narrow back, with a few coherent girths clear of the sail roots. No people aboard, no seats, cargo, gondolas or suspended equipment. Warm sunlight passing through the membranes, cool hazy ground shadows, tactile matte leather and hide. Measured varied painted strokes, selective detail around head and harness, quieter softer ground marks. Keep the established animal's design; this is a viewpoint revision, not a redesign.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8142655c-4f3c-464a-8b28-3aa7cb0175f0.png",
+      "review_status": "rejected_image",
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "that harness doesnt make sense",
+        "scope": "Harness attachment; sideways view and distant ground remain the requested direction."
+      },
+      "sha256": "47dd884bc6e423ab7acceb5a61ab89bbd3e18b0553d3dec86d7045dae186b5be",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-anatomy-study-v3.png",
+          "sha256": "2833bc5e9c6a16ce6c72a51c09631a1aefdf18f417ba0939ef561a1dbf79bad2"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing.png",
+          "sha256": "7eb28b2f02800d05e58f991f1fdc5b37a66436e36e8be7de176e6a7155dde6c5"
+        }
+      ]
+    },
+    {
+      "code": "S13-06-P3",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · high above the river",
+      "file": "veilwing-v3.png",
+      "kind": "painting",
+      "description": "The huge Veilwing flies in a sideways three-quarter view with the river valley far below. Two fitted leather torso bands join along the back, leaving its sails free; the harness is empty.",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8142655c-4f3c-464a-8b28-3aa7cb0175f0.png"
+      ],
+      "creator_request": "Keep the sideways / three-quarter view and ground far below; correct the harness so its straps actually connect around the torso and avoid the wing surfaces.",
+      "prompt": "Precise local edit of the attached Veilwing painting. Change ONLY THE LEATHER HARNESS; preserve the animal, side/three-quarter pose, matching sails, face, long streamers, the high altitude river landscape, lighting, colour, brushwork and composition.\n\nThe existing harness is anatomically wrong: disconnected straps and buckles ride across the wing membrane. Remove ALL those old leather marks and restore the underlying sail/body surfaces. Replace them with one SIMPLE COHERENT EMPTY HARNESS fitted to the actual slender BODY, with no leather resting on the wing sails.\n\nUse exactly TWO broad padded brown-leather girths:\n1. A front girth wraps all the way around the upper chest immediately BEFORE the wing-root station, behind the long head/neck. Show its near-side run following the rounded chest down and under the belly, with one small functional buckle on that visible body side. This is a chest band, not a throat collar.\n2. A rear girth wraps all the way around the exposed narrow ABDOMEN immediately BEHIND the wing-root area, before the body branches into the rear ribbons. Show its near-side run curving down around the actual underside of the abdomen, clear of membrane. A small near-side fastening belongs on body leather.\n\nJoin these two girths with ONE flat longitudinal leather strip lying snugly along the dorsal centreline, fitted against the back BETWEEN the two sail roots. Parts hidden by the near wing should be naturally occluded: do not paint them on top of the wing to keep them visible. The strip's ends must visibly join the two body girths; it should not float, form a long diagonal across the membrane, or terminate on a wing. Keep the tack restrained and functional, empty, matte dark brown, with no seats, cargo, people, metal frame, dangling reins or straps. Wing roots have complete freedom. Do not change the anatomy to accommodate the tack. Believable contact, continuous straps and simple clear leather construction are the entire correction.\n\nRetain the exact successful high-altitude side view, complete silhouette, oil/acrylic painted finish and soft distant ground. 1536x1024 landscape. No labels, text or border.",
+      "review_status": "rejected_image",
+      "previous_file": "veilwing-v2.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-53c0ca3a-3e18-493f-bcac-d95c40c1db6f.png",
+      "visual_check": "Inspected image: two curved torso girths connect along the back; obsolete sail-surface straps are removed. Side-facing eye and horizontal body, paired overlapping sails, three streamers, no riders, and distant river setting remain. Pending creator review.",
+      "sha256": "a0e3f7423ac974d8eacaed71c203f09b8bc1e87e2c750caeacf0abc3f2f01a27",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8142655c-4f3c-464a-8b28-3aa7cb0175f0.png",
+          "sha256": "47dd884bc6e423ab7acceb5a61ab89bbd3e18b0553d3dec86d7045dae186b5be"
+        }
+      ],
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "the wing would be under the harness there was also a dorsal (back wing in the original). so basically youre starting to miss a little here on the anatomy, i get this one is hard, but it looks so cool, we have to get it right",
+        "scope": "Wing trapped by harness and missing dorsal wing; anatomy correction requested."
+      }
+    },
+    {
+      "code": "S13-06-R4",
+      "base": "S13-06",
+      "title": "Veilwing · restored dorsal sail",
+      "file": "veilwing-anatomy-v4.png",
+      "kind": "reference",
+      "description": "A new anatomy check restores the original upright dorsal sail in addition to the two side wings. The bare body and head-on view expose the wing attachments so the harness can be fitted without binding a membrane; this sheet is pending review.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "creator_request": "The wing would be under the harness, and the original had a dorsal back wing; restore the anatomy.",
+      "prompt": "Create a faithful TWO-VIEW ANATOMY REFERENCE of the Veilwing from ONLY the BOTTOM-MIDDLE creature (number 5) in the attached six-creature sheet. Ignore all five other animals. 1536x1024 landscape, plain ivory background, neutral light, measured painted gouache/oil concept treatment. No text or labels. Preserve the original fantastical design rather than normalizing it into a bird, butterfly or manta.\n\nCritical clarification from its creator: the high sail on its BACK is a DISTINCT DORSAL WING. It is NOT one of a simple left/right pair. This animal has THREE main sail surfaces: ONE tall unpaired dorsal sail growing upward along the spinal midline; plus TWO matched lateral wings emerging from opposite SIDE surfaces of its slender trunk below the dorsal root. In frontal cross-section, their arrangement is like a Y: dorsal sail rising up, lateral wings spreading left and right with a gentle downward slope. Keep the original soft amber/ivory/lavender mottling, translucency, tapered head, paired delicate head feelers, narrow tapered torso and three long leaf-tipped rear streamers. No legs. No additional sail pairs.\n\nMAIN VIEW, large, left three-quarters of page: the ORIGINAL side/three-quarter pose, head toward left, full body contained with generous margins, all ribbons and sail tips visible. Reinstate the same striking original silhouette: a tall broad backward-swept translucent dorsal sail rising from the BACK, a broad near-side wing emerging from the SIDE below it and extending outward toward the viewer and downward in perspective, and the matching far-side wing extending away with appropriate foreshortening. Preserve the dorsal sail's ORIGINAL broad rounded swept leading edge and irregular lobed trailing edge, not a thin shark fin or decorative crest. Preserve the side sails as substantial wings. The dorsal sail root and near lateral wing root must be visibly SEPARATE with a narrow actual strip of flank between them; avoid an ambiguous pile of merged membranes. Do not sacrifice the dorsal sail to make the pair symmetrical.\n\nSMALL VIEW, lower right quarter: true HEAD-ON view of this SAME anatomy, with one upright dorsal sail above the head/body, and two mirrored lateral wings spreading to either side and slightly downward. Clearly show three distinct root positions on one central body and the different planes of the three sail surfaces. Side wings are strongly foreshortened in this view; dorsal sail seen edge-on is a narrow upright surface. The rest of the right-hand space remains quiet ivory. Two very tiny human scale marks beneath this small view establish that the animal is enormous.\n\nNO HARNESS anywhere on this anatomy sheet: fully reveal the back, sides, belly and wing-root contacts. Do not turn the original into a chubby creature or thicken the torso to fit equipment. This is a clarification of the selected design, not a new species.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8799b38d-33b2-4209-b170-d275c85d7408.png",
+      "review_status": "superseded_study",
+      "visual_check": "Main view restores tall dorsal sail, near side wing and separate far wing; front view distinguishes upright dorsal root from paired lateral roots. Bare anatomy is visible. No harness, no claimed creator approval.",
+      "sha256": "5ffaae4a4ddf999fc11b91f1670374ab539a7c81652cfd528f05daa00b687126",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "supersession_note": "R5 studies the explicitly chosen one dorsal/two side-wing structure with clearer low lateral planes; R4 was never approved."
+    },
+    {
+      "code": "S13-06-P4",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · dorsal sail restored",
+      "file": "veilwing-v4.png",
+      "kind": "painting",
+      "description": "Closer, but the creator identified a perspective error at the near-wing root and a far wing that reads as a second dorsal sail. Keep the high-altitude setting and sideways view as context; this painting still needs correction.",
+      "creator_request": "Restore the original dorsal back wing and the wing hidden by the harness. Keep the sideways / three-quarter view above a setting far below.",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8799b38d-33b2-4209-b170-d275c85d7408.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Paint the Veilwing in a finished Breachline card illustration, 1536x1024 landscape. Required identity: IMAGE 1 large side/three-quarter anatomy view; IMAGE 2 only BOTTOM-MIDDLE creature number 5 confirms the original silhouette. Keep the restored THREE main sails: one tall unpaired DORSAL sail rising from the spinal midline, and two matching lateral wings attached to the sides BELOW that dorsal root. They are distinct planes and attachment surfaces, not a flat pair of wings.\n\nKeep precisely the ORIGINAL side/three-quarter silhouette: slender pointed head faces left with eye visible, great dorsal sail rises above and sweeps back, broad near lateral wing extends toward viewer and downward, matching far lateral wing sweeps away behind. Restore the full near wing; NEVER erase or shorten it for a strap. Preserve mottled translucent ivory/amber/lavender membranes, their rounded sweeping leading edges and lobed trailing edges, narrow tapered body, fine head feelers and three long leaf-tipped rear ribbons. Full silhouette and tips inside frame with margins.\n\nThe enormous animal flies REALLY HIGH above a winding river valley with a tiny old stone crossing and modest waterworks, distant woods and fields. The viewer is alongside it at a shallow three-quarter angle with the landscape far below, aerial haze and quiet tiny buildings establishing immense height. Calm grace, warm sunlight through membranes, cool blue hazy earth. One finished scene, not a reference sheet or view collage.\n\nHARNESS CORRECTION IS CRITICAL. Fit a restrained empty brown-leather harness to the BODY AROUND the actual wing roots. The dorsal sail must grow freely through an OPEN CENTRAL CHANNEL: no strap crosses over it or its root. Two slim leather back straps run lengthwise on the narrow body strips to either SIDE of that dorsal root, between dorsal and lateral attachments. The nearer strip may be partly occluded by the near wing. Join them to a padded front girth encircling the bare upper chest BEFORE ANY of the three wing roots, and a rear girth encircling the narrow exposed body AFTER ALL the wing roots, just before the ribbons divide. The rear band must be behind the rear end of membrane attachment, not around the middle of a wing. Show both side wings growing out freely, with their membranes passing OUTSIDE the harness, not underneath a belt. Any leather hidden by a wing stays hidden; do not draw it on the membrane. Fit the harness to existing narrow anatomy, never thicken the body, shift the roots or remove a wing to make room. Simple tiny buckles, natural snug leather contact; no people aboard, seats, cargo, dangling straps, frames or machinery. Harness visually secondary to the beautiful original animal.\n\nTraditional oil/acrylic painting with measured varied strokes, selective detail, naturally matte leather, lucid coherent light and a soft broadly painted landscape. No CGI shine or uniform sharpened texture. No text, borders, labels or inset diagrams.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-e7a7b17f-2501-47b3-9df9-c5e07be7d420.png",
+      "review_status": "revision_requested",
+      "visual_check": "Inspected: tall dorsal sail distinct from near and far side wings; near wing fully present; front girth before the roots, rear girth on exposed body behind near membrane, leather side strips flank the dorsal root. Full side/three-quarter silhouette, distant ground, no riders. Pending creator anatomy and harness review.",
+      "sha256": "52f4ea266361b473b61337b215d944a6316808c21039974fe5983a65d4691020",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8799b38d-33b2-4209-b170-d275c85d7408.png",
+          "sha256": "5ffaae4a4ddf999fc11b91f1670374ab539a7c81652cfd528f05daa00b687126"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "closer, but perspective error here, also arrow is pointing at implied second dorsal sail, which im not opposed to, but must be decided.",
+        "annotation": "Red circle around near-wing root; arrow points to far-side membrane reading as second dorsal sail.",
+        "subsequent_anatomy_choice": {
+          "date": "2026-11-14",
+          "source": "Explicit creator reply to anatomy-choice question",
+          "creator_words": "One dorsal sail + two side wings (Recommended)",
+          "dorsal_sails": 1,
+          "lateral_wings": 2,
+          "total_main_sails": 3,
+          "status": "locked_by_creator",
+          "scope": "Wing arrangement only. New structural sheet and harness/painting perspective still require review."
+        }
+      }
+    },
+    {
+      "code": "S13-06-R5",
+      "base": "S13-06",
+      "title": "Veilwing · locked three-sail structure",
+      "file": "veilwing-structure-v5.png",
+      "kind": "reference",
+      "description": "The creator has locked one dorsal sail plus two side wings. This structural study tests their perspective and attachment planes without a harness or landscape; it is a proposed correction, not an approved new reference.",
+      "creator_request": "Fix the circled near-wing root perspective; the arrowed far wing must not imply another dorsal sail. Confirmed: one dorsal sail + two side wings.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept / anatomical construction study. Create a PLAIN TWO-VIEW STRUCTURAL STUDY of the selected Veilwing, 1536x1024 landscape on ivory paper. Use only BOTTOM-MIDDLE creature number 5 of the attached sheet for identity, head, slender body, characteristic sail outlines and trailing ribbons. Its old perspective is ambiguous and MUST be corrected, not copied. No scenic painting, no tack, no leather, no riders.\n\nLOCKED ANATOMY, chosen by the creator: exactly ONE upright dorsal sail along the midline of the back, and exactly TWO bilaterally matched SIDE WINGS. Three major sail surfaces in total. The side wings share one shallow, nearly horizontal flight plane, with a small equal downward slope on both sides. Only the dorsal sail stands upright. Both lateral roots are at the same fore-aft station and same body height, on opposite FLANKS below the dorsal root. A narrow strip of actual torso separates the dorsal and lateral attachments. Do not draw a second fin, a second dorsal lobe with its own base, or an additional wing pair.\n\nMAIN STUDY occupies upper/left three-quarters: a gently elevated sideways three-quarter view of the whole animal in straight level flight, pointed head left, trailing body right, slightly see the face from the front. Camera only 15 degrees above the body's horizontal flight plane. Let the two side wings project correctly from that plane:\n- NEAR WING grows smoothly out of the near flank BEHIND the long neck. Show its leading structural edge continuing sideways away from the shoulder, and its membrane sweeping back. Its surface is foreshortened into a LOW OBLIQUE plane, not a huge vertical hanging curtain. At its root there is no C-shaped fold, no loop under the neck, no abrupt twist or triangular patch pasted onto the front of the chest. Make the connection continuous and anatomically legible.\n- FAR WING is attached to the OPPOSITE SIDE at the matched station. The body and dorsal sail occlude its inner portion. Its visible outer portion is a narrow foreshortened lateral projection extending away at the SAME low flight plane as the near wing. It is NOT a second broad upright sail behind the first. Do not show both broad membrane faces front-on when they face opposite directions. Let occlusion be real; do not swivel the far wing toward the viewer merely to display its pattern.\n- The SINGLE DORSAL sail rises high above the body in the vertical sagittal plane. It keeps the original tall swept ivory/amber/lavender sail shape, with rounded sweeping leading edge and lobed trailing edge. Its base follows the spine and is visibly separate from the flank wing roots.\n\nSMALL STUDY at lower right: true HEAD-ON projection of the SAME body and SAME straight level flight pose. Dorsal sail seen edge-on rises as one thin upright blade above the head. Two lateral wings extend symmetrically outward to either side with equally shallow downward slopes, seen strongly foreshortened along their flight plane. This must match the main view's root heights and planes, not become a different pose. Keep it separate from the main tail ribbons.\n\nUse quiet pale translucent amber membrane washes with sparse mauve structural veins, clear pencil/brush contour and simple directional shading to show which way each surface faces. Reduce decorative mottling specifically for this construction check; do not replace the animal's identity or turn it into a machine. Retain pointed head, fine paired head feelers, slender trunk and three rear leaf-tipped streamers, all contained inside margins. No extra legs or horns. No text, labels, arrows or borders.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3a95f19a-4a04-4e33-bb4f-d389919faca1.png",
+      "review_status": "superseded_study",
+      "visual_check": "Inspected: one upright dorsal sail; near lateral wing has a lower foreshortened surface and a continuous flank attachment, while the far wing is partly occluded. Frontal study separates one vertical dorsal from two low side wings. Structural interpretation remains pending review; no claim of final perspective approval.",
+      "sha256": "74246dfc6add982c9990377b170c0a24fe7423f5f0a66b873b48ffb01c2fa732",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "further back like middle of the back",
+        "interpretation": "Move dorsal sail root rearward to mid-back."
+      }
+    },
+    {
+      "code": "S13-06-R6",
+      "base": "S13-06",
+      "title": "Veilwing · dorsal sail at mid-back",
+      "file": "veilwing-structure-v6.png",
+      "kind": "reference",
+      "description": "The dorsal sail is moved rearward so its attachment begins around the middle of the back, distinctly behind the shoulder wing roots. The arrangement remains one dorsal sail and two side wings; this placement revision is pending review.",
+      "creator_request": "further back like middle of the back",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-structure-v5.png"
+      ],
+      "prompt": "Precise local edit of this Veilwing anatomy sheet. In the LARGE SIDE/THREE-QUARTER VIEW, move the ONE upright dorsal sail farther BACK along the spine, so its attachment begins around the MIDDLE OF THE BACK, distinctly behind the shoulder roots of the two side wings.\n\nMove the ENTIRE dorsal sail including its leading-edge base and attachment line rearward, not just its tip. Reveal a clear length of bare upper back from the shoulder area toward mid-back before the sail rises. Its new root sits over the middle-to-rear torso, ahead of the tail-streamer origins. Preserve the sail's height, swept rounded outline, lobed trailing edge, translucent pale amber washes and veins. Fit it within the sheet margins. Restore the exposed old root area to normal slender back anatomy.\n\nKeep BOTH side wings and their shoulder attachments exactly where they are. Keep the head, neck, torso proportions, side-wing flight plane, three tail streamers, overall pose, composition, paper background, colours and structural drawing style unchanged. Exactly one dorsal sail plus two lateral wings; do not leave a duplicate fin at the old location. No harness.\n\nKeep the smaller HEAD-ON orthographic view unchanged: a rearward translation along the spine does not change this projection's lateral root spacing or single upright dorsal outline. No new views, labels, arrows or text. 1536x1024 landscape.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-369b1000-e5e3-4431-9d0d-3256f2bf781c.png",
+      "review_status": "pending_creator_review",
+      "visual_check": "Inspected: dorsal base shifted rearward to mid-back, leaving visible bare back behind the shoulder roots. Two side wings retain their earlier positions; one dorsal remains. Pending creator review.",
+      "sha256": "22302f9b6051efaa61da3a4da6b255b9fcf117d34e1aafb309a735e69180b037",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-structure-v5.png",
+          "sha256": "74246dfc6add982c9990377b170c0a24fe7423f5f0a66b873b48ffb01c2fa732"
+        }
+      ]
+    },
+    {
+      "code": "S13-06-F1",
+      "base": "S13-06",
+      "title": "Veilwing · wingbeat cycle",
+      "file": "veilwing-flight-cycle-f1.png",
+      "kind": "reference",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-structure-v6.png"
+      ],
+      "creator_request": "different stages of flight to get that anatomy down",
+      "description": "Previously approved flight study, retained as history. Its one-dorsal count is superseded by the creator’s latest choice of two back sails plus two front shoulder wings.",
+      "stages": [
+        {
+          "cell": 1,
+          "code": "F1-1",
+          "name": "Level glide",
+          "position": "Top left"
+        },
+        {
+          "cell": 2,
+          "code": "F1-2",
+          "name": "Raised recovery",
+          "position": "Top right"
+        },
+        {
+          "cell": 3,
+          "code": "F1-3",
+          "name": "Mid-downstroke",
+          "position": "Bottom left"
+        },
+        {
+          "cell": 4,
+          "code": "F1-4",
+          "name": "Low stroke",
+          "position": "Bottom right"
+        }
+      ],
+      "prompt": "1536x1024 landscape. A clean Breachline FLIGHT-ANATOMY contact sheet on plain warm ivory paper. Exactly FOUR separate full-body drawings of the SAME individual Veilwing in a spacious 2-column by 2-row layout. Each whole animal, feelers, sail tips and all three streamers stays inside its quadrant with margins, no overlap between quadrants. No text, labels, arrows, numbers, borders or scenery. Measured pencil/brush contour, pale amber translucent membrane washes, sparse mauve veins and quiet anatomical shading, matching the attached structural reference. Use the source's LARGE side view as identity; do not copy its extra small inset into any panel.\n\nINVARIANTS IN ALL FOUR PANELS: exactly ONE unpaired dorsal sail attached on the spinal midline at MID-BACK, distinctly behind the shoulder station; exactly TWO side wings attached at the same fore-aft station on opposing SHOULDER FLANKS. Exactly three main sail surfaces. The side-wing ROOTS stay at the shoulders during every stroke: only rotation and elastic bending change. The dorsal ROOT stays at mid-back during every pose, separated from the shoulder roots by exposed back. Its sail can flex slightly with airflow but does not migrate forward, duplicate, become a second pair or substitute for an occluded side wing. Retain the same long pointed head, paired fine head feelers, slender torso length, relative sail sizes, lobed membrane outlines and exactly three long leaf-tipped tail ribbons. No legs, claws, hands, bird elbows or added skeletal appendages. Do not thicken the body into a bird. No harness or passengers; expose the anatomy. Foreshorten and occlude surfaces honestly. Dorsal and lateral roots must remain distinguishable even when their tips overlap. These are exploratory motion poses, not new species or redesigns.\n\nThis sheet tests the WINGBEAT. Use the SAME shallow side/front three-quarter camera in every cell, the same left-facing head, same level horizontal torso attitude and same scale. The neck/torso/root stations should line up conceptually across the four images. The front pair of side wings move together through the cycle while the single aft dorsal sail stays upright relative to the spine. Keep its height and profile consistent so it serves as a stable reference.\n\nTOP LEFT: LEVEL GLIDE. Both side wings spread laterally in a shallow nearly horizontal flight plane. Near wing projects toward viewer; far wing correctly foreshortened behind the body. One tall dorsal sail rises from mid-back, aft of the wing roots.\nTOP RIGHT: RAISED RECOVERY. Both SHOULDER wings raised about 50 degrees above their level-glide position in a matched upstroke. Roots remain at the shoulders. The side wings are forward of the dorsal, which remains on MID-BACK. Show all three attachment locations through clear offset silhouettes and honest overlap. The outer membranes bow softly and trail; no new dorsal surfaces.\nBOTTOM LEFT: MID-DOWNSTROKE. Shoulder wings sweep downward through the horizontal, broad membranes slightly cupped and tension carried along their leading edges. Show a different shape from the flat glide, with a small elastic lag of the trailing edges. Torso and aft dorsal remain steady; no shifted joints.\nBOTTOM RIGHT: LOW STROKE. Both shoulder wings extend downward about 45 degrees below horizontal with tips trailing gently back. Root heights remain matched. Show near wing down toward viewer and far wing down away, both clearly emerging from the SAME shoulder station, not attached to the tail. Mid-back dorsal remains tall above the torso.\n\nKeep the differences between the four stages large enough to read immediately. Do not simply repeat the glide four times. Do not flatten the dorsal during the downstroke or move it onto a lateral wing. Maintain the graceful original animal throughout.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3534da71-e500-4978-a773-e9a5757989d1.png",
+      "review_status": "superseded_anatomy_reference",
+      "visual_check": "Four distinct wingbeat stages inspected. One aft dorsal and two shoulder wings shown; difficult foreshortening and motion remain for creator review, not final flight mechanics.",
+      "sha256": "bc9769a3dd82fa7945b656c45f72c1e460bcf2485f2431421544ae36531173d6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-structure-v6.png",
+          "sha256": "22302f9b6051efaa61da3a4da6b255b9fcf117d34e1aafb309a735e69180b037"
+        }
+      ],
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-cycle-f1.png",
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "There you go. You have figured it out.",
+        "scope": "Acceptance of the latest flight-anatomy studies; detailed magical flight mechanism remains open."
+      },
+      "supersession_note": "P8 feedback deliberately retains both back sails and adds a missing right front wing. Do not use this three-sail sheet as complete current anatomy."
+    },
+    {
+      "code": "S13-06-F2",
+      "base": "S13-06",
+      "title": "Veilwing · turns, underside and braking",
+      "file": "veilwing-flight-maneuvers-f2.png",
+      "kind": "reference",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ee42d0e1-c51b-4188-bf03-ddae35a1c712.png"
+      ],
+      "creator_request": "different stages of flight to get that anatomy down",
+      "description": "Previously approved flight study, retained as history. Its one-dorsal count is superseded by the creator’s latest choice of two back sails plus two front shoulder wings.",
+      "stages": [
+        {
+          "cell": 1,
+          "code": "F2-1",
+          "name": "Bank toward viewer",
+          "position": "Top left"
+        },
+        {
+          "cell": 2,
+          "code": "F2-2",
+          "name": "Bank away",
+          "position": "Top right"
+        },
+        {
+          "cell": 3,
+          "code": "F2-3",
+          "name": "Underside glide",
+          "position": "Bottom left"
+        },
+        {
+          "cell": 4,
+          "code": "F2-4",
+          "name": "Airborne braking flare",
+          "position": "Bottom right"
+        }
+      ],
+      "prompt": "Edit ONLY the BOTTOM-RIGHT animal in this four-pose flight study. Preserve the other THREE quadrants exactly, and preserve the layout, ivory background and drawing style.\n\nThe bottom-right braking animal incorrectly has FOUR sail surfaces. Remove the EXTRA small aft-right membrane that grows from the rear torso behind the dorsal sail, stretching toward the right edge above the tail ribbons (approximately x=1200–1400, y=680–780 in the 1536x1024 sheet). Remove that whole extra membrane and its false root, restoring ivory paper outside the actual slender body. Do not move, erase or redraw the tail ribbons.\n\nKeep exactly these THREE legitimate surfaces on that animal:\n1. the tall single dorsal sail growing UP from MID-BACK, above and behind the shoulder station;\n2. the large NEAR SHOULDER wing spreading downward and toward the viewer, in the lower-left part of this quadrant;\n3. the FAR SHOULDER wing partly seen beyond the neck/shoulder toward the LEFT, attached on the opposite flank at the SAME fore-aft station as the near wing.\n\nThere must be NO wing or fin attached to the rear torso behind the dorsal root. Leave a clean slender torso and three trailing ribbons there. Do not add any new sail or duplicate a remaining one. Preserve this animal's head, pitched-up braking attitude, genuine three wing roots, membrane outlines, and all other details. No text, arrows, labels or borders.",
+      "generation_attempts": [
+        {
+          "prompt": "1536x1024 landscape. A clean Breachline FLIGHT-ANATOMY contact sheet on plain warm ivory paper. Exactly FOUR separate full-body drawings of the SAME individual Veilwing in a spacious 2-column by 2-row layout. Each whole animal, feelers, sail tips and all three streamers stays inside its quadrant with margins, no overlap between quadrants. No text, labels, arrows, numbers, borders or scenery. Measured pencil/brush contour, pale amber translucent membrane washes, sparse mauve veins and quiet anatomical shading, matching the attached structural reference. Use the source's LARGE side view as identity; do not copy its extra small inset into any panel.\n\nINVARIANTS IN ALL FOUR PANELS: exactly ONE unpaired dorsal sail attached on the spinal midline at MID-BACK, distinctly behind the shoulder station; exactly TWO side wings attached at the same fore-aft station on opposing SHOULDER FLANKS. Exactly three main sail surfaces. The side-wing ROOTS stay at the shoulders during every stroke: only rotation and elastic bending change. The dorsal ROOT stays at mid-back during every pose, separated from the shoulder roots by exposed back. Its sail can flex slightly with airflow but does not migrate forward, duplicate, become a second pair or substitute for an occluded side wing. Retain the same long pointed head, paired fine head feelers, slender torso length, relative sail sizes, lobed membrane outlines and exactly three long leaf-tipped tail ribbons. No legs, claws, hands, bird elbows or added skeletal appendages. Do not thicken the body into a bird. No harness or passengers; expose the anatomy. Foreshorten and occlude surfaces honestly. Dorsal and lateral roots must remain distinguishable even when their tips overlap. These are exploratory motion poses, not new species or redesigns.\n\nThis sheet tests MANEUVERS AND VIEWPOINTS of the same anatomy, with poses clearly different from one another. The dorsal sail remains rooted at MID-BACK behind both shoulder wings, and it rotates with the body's axes during banking. It must never stay vertically aligned with the page while the body rolls beneath it. Tail ribbons respond with gentle lag; keep exactly three.\n\nTOP LEFT: BANK TOWARD VIEWER. Side/front three-quarter view, head toward left; whole animal rolls about 30 degrees toward the viewer, lowering the near shoulder wing and raising the far shoulder wing. Dorsal leans with the tilted torso, anchored aft. All three roots keep their original relative positions. Show true roll rather than an independently reversed near wing.\nTOP RIGHT: BANK AWAY. Similar camera and left-facing head, opposite 30-degree roll: near shoulder wing raised, far shoulder wing lowered and more occluded. Dorsal leans with the body in the opposite direction. Keep exactly one dorsal on mid-back, with shoulder wings clearly anterior to it.\nBOTTOM LEFT: UNDERSIDE GLIDE. Look from below and a little ahead, so the belly is visible and the two side wings spread to either side. Their underside root connections must be continuous with the shoulder flanks. The tall dorsal is behind/above the torso and appropriately hidden at its base; show only the part that would actually project beyond the body. Do not move the dorsal onto the belly to make it visible. No feet or new appendages.\nBOTTOM RIGHT: AIRBORNE BRAKING FLARE. Side/front three-quarter view with nose pitched upward about 20 degrees and side wings broadly spread and slightly cupped back to slow the animal, tails trailing down/back. The dorsal remains on mid-back and tips with the raised torso. It has not landed; no feet, ground, perch, harness or invented landing organs. Show a convincing change of whole-body attitude, not a different body plan.\n\nUse clear structural drawing and restrained translucent shading to explain surfaces. Preserve the animal's identity from the attached reference, and allow realistic occlusion instead of turning every sail face toward the viewer.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-structure-v6.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ee42d0e1-c51b-4188-bf03-ddae35a1c712.png",
+          "file": "veilwing-flight-maneuvers-f2-draft.png",
+          "assessment": "Bottom-right braking pose has an extra aft-right membrane, a fourth sail. Correct only that region before review.",
+          "sha256": "65c47e0c7ad14b46ea5e7a82365674246e2fcaaf51d9c139044c031c57b7d810",
+          "status": "superseded_generation_defect_not_creator_rejection"
+        }
+      ],
+      "brief_prompt": "1536x1024 landscape. A clean Breachline FLIGHT-ANATOMY contact sheet on plain warm ivory paper. Exactly FOUR separate full-body drawings of the SAME individual Veilwing in a spacious 2-column by 2-row layout. Each whole animal, feelers, sail tips and all three streamers stays inside its quadrant with margins, no overlap between quadrants. No text, labels, arrows, numbers, borders or scenery. Measured pencil/brush contour, pale amber translucent membrane washes, sparse mauve veins and quiet anatomical shading, matching the attached structural reference. Use the source's LARGE side view as identity; do not copy its extra small inset into any panel.\n\nINVARIANTS IN ALL FOUR PANELS: exactly ONE unpaired dorsal sail attached on the spinal midline at MID-BACK, distinctly behind the shoulder station; exactly TWO side wings attached at the same fore-aft station on opposing SHOULDER FLANKS. Exactly three main sail surfaces. The side-wing ROOTS stay at the shoulders during every stroke: only rotation and elastic bending change. The dorsal ROOT stays at mid-back during every pose, separated from the shoulder roots by exposed back. Its sail can flex slightly with airflow but does not migrate forward, duplicate, become a second pair or substitute for an occluded side wing. Retain the same long pointed head, paired fine head feelers, slender torso length, relative sail sizes, lobed membrane outlines and exactly three long leaf-tipped tail ribbons. No legs, claws, hands, bird elbows or added skeletal appendages. Do not thicken the body into a bird. No harness or passengers; expose the anatomy. Foreshorten and occlude surfaces honestly. Dorsal and lateral roots must remain distinguishable even when their tips overlap. These are exploratory motion poses, not new species or redesigns.\n\nThis sheet tests MANEUVERS AND VIEWPOINTS of the same anatomy, with poses clearly different from one another. The dorsal sail remains rooted at MID-BACK behind both shoulder wings, and it rotates with the body's axes during banking. It must never stay vertically aligned with the page while the body rolls beneath it. Tail ribbons respond with gentle lag; keep exactly three.\n\nTOP LEFT: BANK TOWARD VIEWER. Side/front three-quarter view, head toward left; whole animal rolls about 30 degrees toward the viewer, lowering the near shoulder wing and raising the far shoulder wing. Dorsal leans with the tilted torso, anchored aft. All three roots keep their original relative positions. Show true roll rather than an independently reversed near wing.\nTOP RIGHT: BANK AWAY. Similar camera and left-facing head, opposite 30-degree roll: near shoulder wing raised, far shoulder wing lowered and more occluded. Dorsal leans with the body in the opposite direction. Keep exactly one dorsal on mid-back, with shoulder wings clearly anterior to it.\nBOTTOM LEFT: UNDERSIDE GLIDE. Look from below and a little ahead, so the belly is visible and the two side wings spread to either side. Their underside root connections must be continuous with the shoulder flanks. The tall dorsal is behind/above the torso and appropriately hidden at its base; show only the part that would actually project beyond the body. Do not move the dorsal onto the belly to make it visible. No feet or new appendages.\nBOTTOM RIGHT: AIRBORNE BRAKING FLARE. Side/front three-quarter view with nose pitched upward about 20 degrees and side wings broadly spread and slightly cupped back to slow the animal, tails trailing down/back. The dorsal remains on mid-back and tips with the raised torso. It has not landed; no feet, ground, perch, harness or invented landing organs. Show a convincing change of whole-body attitude, not a different body plan.\n\nUse clear structural drawing and restrained translucent shading to explain surfaces. Preserve the animal's identity from the attached reference, and allow realistic occlusion instead of turning every sail face toward the viewer.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-45ecabca-b649-4011-98d7-109c7f4a5c7a.png",
+      "review_status": "superseded_anatomy_reference",
+      "visual_check": "Inspected all four poses. Removed an extra aft-right membrane from the braking pose; final sheet shows three main sail surfaces per pose with appropriate occlusion. Turning/foreshortening and flight mechanics remain proposals for creator review.",
+      "sha256": "ae52d524962fee60dff3c55ecd22a7daf7a4de9b58bbc5959f630190dad4b9fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ee42d0e1-c51b-4188-bf03-ddae35a1c712.png",
+          "sha256": "65c47e0c7ad14b46ea5e7a82365674246e2fcaaf51d9c139044c031c57b7d810"
+        }
+      ],
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-flight-maneuvers-f2.png",
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "There you go. You have figured it out.",
+        "scope": "Acceptance of the latest flight-anatomy studies; detailed magical flight mechanism remains open."
+      },
+      "supersession_note": "P8 feedback deliberately retains both back sails and adds a missing right front wing. Do not use this three-sail sheet as complete current anatomy."
+    },
+    {
+      "code": "S13-06-P5",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · a willing Gnosis partner",
+      "file": "veilwing-gnosis-partner-v5.png",
+      "kind": "painting",
+      "description": "The huge, magically attuned animal glides high above a settled river valley, wearing a soft fitted band, a short woven panel and small crafted fittings. The equipment proposes a familiar, respectful partnership with nature-minded Gnosis practitioners; the name and this outfitting are still for review.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-cycle-f1.png"
+      ],
+      "creator_request": "Use the resolved flight anatomy; a graceful magically attuned Gnosis beast that willingly works with people through a respectful magical connection. Equipment should show that relationship and human scale, with ground far below.",
+      "prompt": "Create ONE finished Breachline fantasy oil/acrylic card painting, 1536x1024 landscape, full bleed, no text or border. Required animal anatomy and pose are the TOP-LEFT LEVEL GLIDE in the attached approved four-stage flight sheet. Only that one animal, not the sheet layout. Preserve its complete slender original body plan; make this a painted scene of that exact design.\n\nEXACT ANATOMY: ONE tall upright dorsal sail rooted at MID-BACK, clearly behind the shoulders; TWO lateral wings rooted on opposing SHOULDER FLANKS at the same fore-aft station. The dorsal does not start at the neck. Preserve the bare stretch of back between shoulders and dorsal base, and the fixed root relationships of the selected top-left pose. Keep the graceful left-facing pointed head, fine paired head feelers, narrow long torso, translucent broad lobed sails, and exactly three slender leaf-tipped trailing ribbons. Both lateral wings remain in their coherent shallow glide plane with honest overlap and foreshortening. The dorsal alone rises upright in this pose. No fourth membrane. Do not borrow the upstroke or downstroke animals. Restore rich but natural cream/amber/lavender mottling within the membranes from this creature's established identity, with softly passing light.\n\nLORE AND PRESENCE: a rare, enormous, graceful animal with innate magical attunement. It willingly works with nature-minded Gnosis practitioners through a quiet respectful magical relationship. Give it a calm, alert, dignified presence, like encountering a great long-lived animal. The connection is assumed in the world; it does not need a visible effect or another figure. Preserve the slender reference anatomy rather than turning it into a whale.\n\nCOMPOSITION: a SIDEWAYS THREE-QUARTER view, head left and long trailing body right, shallow elevated angle. The whole creature and all sail/ribbon tips fit with breathing room. It is flying VERY HIGH above a winding river, a small stone bridge and waterworks, distant fields, woods and a modest settled town. Ground detail is tiny, soft and hazy, clearly far below. A sliver of sky and distant hills can give atmospheric depth. The animal dominates without feeling menacing. Warm late-afternoon light through the living sails, cooler river valley beneath, one coherent light source.\n\nEQUIPMENT PROPOSAL: fitted care and human craftsmanship, visually modest against the enormous animal. A soft padded woven band with small matte brown leather closures fits over the clear BASE OF THE NECK/upper chest immediately IN FRONT of the shoulder wing roots; its upper portion lies over that short bare stretch of upper neck/back, its underside follows the chest. It stays safely clear of the throat and every membrane. Keep the head and root junctions visible. A single SHORT rectangular woven side-panel lies close against the near chest, with quiet geometric stitching and one small flat worked-bronze clasp/token. A few realistic keeper loops and modest fastening details imply equipment made and maintained by people. These fittings are recognizably human-scale and small against this huge animal, helping the distant landscape establish size. It is not a shiny ceremonial costume; use naturally worn fabric and leather, well cared for and practical. The gentle fitting makes its ongoing relationship with civilization apparent.\n\nDo not wrap any belt across a side-wing membrane or dorsal root. No long back straps running through the sails, saddle, cage, platform, gondola, reins, bit, chain, cargo pile or machinery. No people aboard. Do not invent glowing runes, luminous connection threads, crystal engines or a magic aura; attunement does not require spectacle. Do not impose an alignment colour or blanket uniform. The animal's anatomy and peaceful grandeur remain the focus.\n\nMeasured varied oil/acrylic brushwork, selective detail at face and crafted fitting, broad quieter atmospheric land shapes, tactile matte surfaces and restrained water reflections. No CGI gloss, uniform sharp detail, added animals or explanatory symbols.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7b07d11e-dec0-4021-8a0f-e0f3498c1c72.png",
+      "sha256": "7f13f4f4d4c85edc441930dfd08d54abfb15d347ea7a67466a5ba5f1c57cf306",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "generator": "built-in image_gen",
+      "review_status": "revision_requested",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-cycle-f1.png",
+          "sha256": "bc9769a3dd82fa7945b656c45f72c1e460bcf2485f2431421544ae36531173d6"
+        }
+      ],
+      "visual_check": "Original gentle glide; user requests bank and much smaller equipment."
+    },
+    {
+      "code": "S13-06-P6",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · ascending bank",
+      "file": "veilwing-gnosis-partner-v6.png",
+      "kind": "painting",
+      "description": "An ascending bank reveals the underbelly, with the body rolling toward the animal’s own right. Fine fitted equipment and the distant settled valley are intended to restore its enormous scale; the Gnosis relationship is established, while this painting and the new name remain for review.",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7b07d11e-dec0-4021-8a0f-e0f3498c1c72.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-maneuvers-f2.png"
+      ],
+      "creator_request": "Bank upward and to its own right, revealing some underbelly. The previous harness makes it look too small: this animal is huge.",
+      "prompt": "Use case: identity-preserve. Create one revised finished Breachline card painting, 1536x1024 landscape. Image 1 is the previous painting to revise; image 2 is the approved anatomy/maneuver sheet. Change the animal's pose and equipment scale as specified. Preserve its exact species, graceful mood, warm cream/amber/lavender mottled translucent sails, long slender body, head and feelers, three leaf-tipped tail ribbons, and high-altitude settled-river-valley setting. This is ONE animal in a scene, never a sheet.\n\nPOSE: a graceful ascending bank to the ANIMAL'S OWN RIGHT. Its head rises toward the upper left of the composition, its long body and trailing ribbons descend diagonally toward the lower right. Camera sees it in a SIDE THREE-QUARTER view from slightly below its left flank, revealing a clear strip of pale underbelly and the undersides of the lateral wings. Pitch upward and roll toward its right: its own right wing is lower, its own left wing higher. Turn the whole body as a coherent volume. Use the lower-left underside view of image 2 to understand the belly and opposed shoulder attachment surfaces, and the bank views to understand rotation. Keep the profile elegant and readable, not front-on.\n\nANATOMY INVARIANTS: exactly TWO opposed lateral wings at the shoulder flanks, and exactly ONE dorsal sail rooted at MID-BACK distinctly behind the shoulders. These are three separate attached surfaces. The dorsal sail tilts with the banking torso; it is not another side wing. Honest foreshortening and partial occlusion are welcome. Do not shift the dorsal to the neck, add a fourth membrane or detach/duplicate a root. The far wing may be partly hidden. Do not force every sail into the same plane. Keep exactly three long leaf-tipped tail ribbons.\n\nSCALE AND OUTFITTING: this is an ENORMOUS majestic animal, comparable in presence to a flying whale, with a torso on the scale of a long building and a tremendous wingspan. These are visual scale cues, not permission to redesign its slender anatomy as a whale. The previous broad collar, huge clasp and pouch made it read as a small saddled creature. Remove the pouch and all oversized buckles. Replace that gear with a single much slimmer soft woven fitting seated neatly around the bare base-of-neck/upper chest IN FRONT of the wing roots. It looks very fine and modest on this huge body. Several tiny human-made joined sections, minute keeper loops and a very small flat bronze token suggest familiar craft at a much smaller scale than the animal. No giant hand-sized-looking buckle scaled up to match its head. No conspicuous bag or panel. Leave almost all of the underbelly bare and visible. Do not run anything across a membrane, dorsal root or wing joint. The fitting is carefully made and maintained, indicating voluntary, respectful companionship with nature-minded Gnosis practitioners, not restraint. The quiet magical attunement needs no visible special effect.\n\nMaintain the sensation of VERY HIGH flight: far beneath, a broad winding river, minute roofs, field patches, woods and a small stone crossing disappear into atmospheric haze. These land features are tiny compared with the creature. Keep the creature clearly distinct from and far above the distant ground plane. Its entire wing and tail silhouette fits with breathing room. A warm high sky and softly lit valley, cohesive late-afternoon light, beautiful translucency and readable cool reflected light underneath the body.\n\nTraditional oil/acrylic fantasy painting, visible varied brushwork, selective attention at head and wing roots, broad atmospheric background shapes, matte biological surfaces. No text, arrows, borders, extra animals, people aboard, saddle, platform, gondola, reins, bit, chains, machinery, glowing runes or magical aura. No alignment-prescribed palette. The painting should feel graceful, immense and unhurried.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4bc9e930-cc9b-4868-8287-ab8912f09bbf.png",
+      "sha256": "0796bf6921c2e69dcdf13c3d30c99566b70977d24f909dd64240075a96a469bf",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "generator": "built-in image_gen",
+      "review_status": "revision_requested",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7b07d11e-dec0-4021-8a0f-e0f3498c1c72.png",
+          "sha256": "7f13f4f4d4c85edc441930dfd08d54abfb15d347ea7a67466a5ba5f1c57cf306"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-maneuvers-f2.png",
+          "sha256": "ae52d524962fee60dff3c55ecd22a7daf7a4de9b58bbc5959f630190dad4b9fb"
+        }
+      ],
+      "visual_check": "Ascending bank shows belly, tiny fitting and three sails; user requests larger side wings."
+    },
+    {
+      "code": "S13-06-P7",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · broader main wings",
+      "file": "veilwing-gnosis-partner-v7.png",
+      "kind": "painting",
+      "description": "The ascending bank keeps the pale underbelly visible, with both shoulder wings enlarged for a broader, more expansive silhouette. The single mid-back dorsal sail, slender body and discreet equipment remain unchanged in direction; the revised painting is for review.",
+      "creator_request": "make the two main wings larger",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-639faefa-8383-4b34-a048-f7931a69617e.png",
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4bc9e930-cc9b-4868-8287-ab8912f09bbf.png"
+      ],
+      "prompt": "Make a very local correction to IMAGE 1. Keep BOTH enlarged SHOULDER wings exactly as in image 1, including the large wing extending down-left and the broad near shoulder wing spreading across the middle toward the right. Keep the head, underbelly, torso, equipment, all three tail ribbons, setting, light and paint handling unchanged. ONLY restore the TOPMOST AFT DORSAL SAIL to its previous smaller size and silhouette in IMAGE 2. In image 1, that one dorsal wrongly grew up to the top canvas border and right edge. Its correct contour is the single tall sail in image 2, crest around x=1330,y=30 and root at mid-back behind the shoulder wings. Restore its original shape, scale and root attachment from image 2, leaving a visible strip of sky above the complete tip. Do not shrink either lateral shoulder wing back to image 2. The point is larger main side wings with the ORIGINAL smaller mid-back dorsal. Exactly three sails; do not create an extra aft triangle, fourth wing or detached membrane. Let the restored dorsal be partly hidden by the enlarged near side wing with a clean coherent overlap. No other changes. Full bleed 1536x1024, no text.",
+      "generation_attempts": [
+        {
+          "code": "S13-06-P7",
+          "base": "S13-06",
+          "card": 221,
+          "title": "Veilwing · broader main wings",
+          "file": "veilwing-gnosis-partner-v7.png",
+          "kind": "painting",
+          "description": "The ascending bank keeps the pale underbelly visible, with both shoulder wings enlarged for a broader, more expansive silhouette. The single mid-back dorsal sail, slender body and discreet equipment remain unchanged in direction; the revised painting is for review.",
+          "creator_request": "make the two main wings larger",
+          "refs": [
+            "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4bc9e930-cc9b-4868-8287-ab8912f09bbf.png"
+          ],
+          "prompt": "Edit this painting locally: enlarge BOTH main lateral SHOULDER WINGS by roughly a third in span and membrane area so their scale is more expansive and majestic. These are the two opposed front wings attached at the same shoulder station: the raised nearer wing sweeping from the shoulder through the center toward the upper right, and its partner extending from the far shoulder down toward the lower left. Keep their actual attachment roots in exactly the same place and increase the wing surfaces outward from those roots, preserving the existing lobed shapes, translucent amber/lavender markings, perspective and banking angles. Do NOT enlarge the single tall aft DORSAL sail rising from MID-BACK behind the side wings: its current size and root position remain unchanged. Exactly three sails total, no extra wings. Preserve the head, long slender neck and torso, visible pale underbelly, tiny fitted band and token, all three leaf-tipped tail ribbons, the upward bank to the animal's own right, lighting and painterly handling. Preserve the distant settled river valley and high altitude. Keep the entire enlarged silhouette inside the 1536x1024 canvas with comfortable margins; widen framing only minimally if needed, never cut off a tip. The two main side wings should be visibly larger than the previous version while the body and dorsal sail stay the same. No other redesign, no added figures, props, effects, text or labels.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-639faefa-8383-4b34-a048-f7931a69617e.png",
+          "status": "superseded_generation_defect_not_creator_rejection",
+          "assessment": "Side wings enlarged, but the topmost dorsal silhouette also enlarged and reached the upper edge. Restore the prior dorsal only."
+        }
+      ],
+      "brief_prompt": "Edit this painting locally: enlarge BOTH main lateral SHOULDER WINGS by roughly a third in span and membrane area so their scale is more expansive and majestic. These are the two opposed front wings attached at the same shoulder station: the raised nearer wing sweeping from the shoulder through the center toward the upper right, and its partner extending from the far shoulder down toward the lower left. Keep their actual attachment roots in exactly the same place and increase the wing surfaces outward from those roots, preserving the existing lobed shapes, translucent amber/lavender markings, perspective and banking angles. Do NOT enlarge the single tall aft DORSAL sail rising from MID-BACK behind the side wings: its current size and root position remain unchanged. Exactly three sails total, no extra wings. Preserve the head, long slender neck and torso, visible pale underbelly, tiny fitted band and token, all three leaf-tipped tail ribbons, the upward bank to the animal's own right, lighting and painterly handling. Preserve the distant settled river valley and high altitude. Keep the entire enlarged silhouette inside the 1536x1024 canvas with comfortable margins; widen framing only minimally if needed, never cut off a tip. The two main side wings should be visibly larger than the previous version while the body and dorsal sail stay the same. No other redesign, no added figures, props, effects, text or labels.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-3f61ae7c-ec61-4a3e-921e-99328c4d7f37.png",
+      "sha256": "a4f3776d894e54aa206603a8af9312438fee552131c7d2d168791df4dcfd4b23",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "generator": "built-in image_gen",
+      "review_status": "revision_requested",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-639faefa-8383-4b34-a048-f7931a69617e.png",
+          "sha256": "93aee325ac9398929d3af609ccc485eabe4897f1a2ee3fd14caff0231aa72423"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4bc9e930-cc9b-4868-8287-ab8912f09bbf.png",
+          "sha256": "0796bf6921c2e69dcdf13c3d30c99566b70977d24f909dd64240075a96a469bf"
+        }
+      ],
+      "visual_check": "Both shoulder wings enlarged; corrected unintended dorsal enlargement. Inspected intact three-sail anatomy, visible belly and retained small fitting. Creator approval pending."
+    },
+    {
+      "code": "S13-06-P8",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · return to R2",
+      "file": "veilwing-gnosis-partner-v8.png",
+      "kind": "painting",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-maneuvers-f2.png"
+      ],
+      "creator_request": "see: S13-06-R2. get closer to that version please, but with corrected anatomy, that harness was also better, but should do better on scale",
+      "description": "Liked base painting and explicitly accepted leather harness. Creator keeps both visible back sails, requests a missing right shoulder wing and slightly longer torso; P9 is the local revision.",
+      "prompt": "Create a revised Breachline fantasy painting, 1536x1024 landscape. IMAGE 1 (S13-06-R2) is the PRIMARY design and equipment reference. Return closely to THAT animal's visual character: relatively compact fuller central body, short integrated neck, flattened pointed head, dense overlapping leaflike biological covering, broad extravagant ivory/amber/lavender mottled sails, and flowing ribbons that broaden into feather-leaf tips. Its rich varied mottling and draping biological forms are essential. Do not turn it into a smooth long-necked snake or bird. IMAGE 2 is ONLY the approved structural guide for sail attachment and perspective, not a reason to replace image 1's body, skin, colour or silhouette.\n\nCORRECT ANATOMY: exactly TWO huge opposing SHOULDER wings at the same fore-aft station and exactly ONE dorsal sail rooted farther back at MID-BACK. The two main lateral wings are expansively large, as newly requested. Keep one mid-back dorsal at its established scale; never add a second dorsal or fourth membrane. Resolve the near-wing root which was ambiguous in image 1. Let both side wings visibly connect continuously to their own flanks and foreshorten honestly. The dorsal can overlap them but must emerge from a separate spinal root well behind the shoulders. Keep image 1's beautiful leaflike body surfaces, paired delicate head feelers and exactly three long leaf-tipped rear ribbons.\n\nPOSE AND SETTING: retain a largely sideways three-quarter view similar in appeal to image 1, with a GENTLE ASCENDING BANK TO THE ANIMAL'S OWN RIGHT so a little of its underside is visible. The animal's right wing is somewhat lower, left wing higher; rotate torso and dorsal coherently. Head toward upper left, tail flowing lower right. Do not stretch its neck to obtain the upward pose. Entire silhouette fits with breathing room. Fly VERY HIGH above a settled river landscape; tiny roofs, fields, woods and a stone crossing are far below through atmospheric haze. Warm, natural, luminous daylight through the sails, quieter soft land forms. The beast is graceful and immense, not menacing.\n\nHARNESS: return to image 1's plain functional matte brown LEATHER BACK HARNESS with slim longitudinal leather connections and simple fitted body bands. This is not the recent woven collar/pendant; no scarf, patterned neckwear, satchel, badge or decorative panel. Refine the R2 fit around the CORRECT intact anatomy: a band on the bare upper chest just ahead of the shoulder roots, a second band around the robust torso behind the shoulder station but BEFORE the mid-back dorsal starts. A short upper connecting strap follows the bare spinal surface between these bands, passing above and between the two shoulder roots without touching their membranes. The fitting stays entirely forward of the dorsal base; no strap crosses the dorsal or binds a side wing. Trace the real body's contours. Do not add a new strap over a sail to complete the old image's belt layout.\n\nEXTREME SCALE: the animal is huge, comparable in presence to a flying whale; its body is on the scale of a long building. This is an image scale cue, not new species dimensions. The R2 harness looked attractive but its buckles were much too large. Make the straps visually slender relative to the body and the fastenings TINY, with minute repeated stitching/joins indicating human craftsmanship. Avoid giant easy-to-read single buckles: hardware should look small enough for a person to handle against a vast expanse of animal. The harness's visual weight must stay modest. No riders, seats, platforms, gondolas, reins, bits, cargo or people aboard. This individual willingly works with nature-minded Gnosis practitioners through a respectful magical connection; equipment shows familiar care, no visible magical spectacle required.\n\nTraditional oil/acrylic fantasy painting with selective visible brushwork, matte hide and leather, softly translucent mottled membranes, one coherent light source, much less detail in the distant ground. Preserve image 1's appealing original identity while correcting roots and perspective. No text, labels, arrows, borders, added animals, glow effects or extra appendages.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4caf56e1-52ad-4211-bfd5-c470574c2d46.png",
+      "sha256": "d253abe8437aa3d4101f27b8454f09c9346c1b5699eeab285c09588b96d6c590",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "generator": "built-in image_gen",
+      "review_status": "accepted_revision_base",
+      "visual_check": "Inspected R2 identity return, fuller short-necked body, two side surfaces plus dorsal, leather fitting without enlarged buckles, three tail ribbons and distant ground. Final anatomy, harness scale and painting remain for creator review.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+          "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-flight-maneuvers-f2.png",
+          "sha256": "ae52d524962fee60dff3c55ecd22a7daf7a4de9b58bbc5959f630190dad4b9fb"
+        }
+      ],
+      "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+      "original_preview": "veilwing-back-harness-v2.png",
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+      "creator_live_review": {
+        "date": "2026-11-14",
+        "words": "this is really good ... I like the harness in this one. That's good.",
+        "scope": "Appearance, harness and two existing back sails retained. Add right front wing and slightly lengthen torso; exact revised image still requires review."
+      }
+    },
+    {
+      "code": "S13-06-P9",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Veilwing · paired front wings, two back sails",
+      "file": "veilwing-gnosis-partner-v9.png",
+      "kind": "painting",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-gnosis-partner-v8.png"
+      ],
+      "creator_request": "P8 is really good; keep its harness and both back sails, add the missing front right wing opposite the downstroking left wing, and lengthen the body slightly.",
+      "description": "Preserves the liked P8 body, mottling, leather harness and two back sails, adding the far-side right shoulder wing to complete the front pair. The torso is slightly longer; this revised four-surface arrangement follows the latest direction and supersedes the earlier one-dorsal interpretation.",
+      "prompt": "Use case: precise-object-edit. Make a CLOSE LOCAL EDIT of this painting, 1536x1024. The creator likes this exact version and its leather harness. Preserve its visual character and composition. There are ONLY TWO REQUESTED CHANGES:\n1. ADD THE MISSING FRONT RIGHT WING.\n2. LENGTHEN THE TORSO A LITTLE.\n\nNEW CREATOR-CHOSEN ANATOMY: keep EVERY existing large sail visible in the supplied image. The large high sail above the middle of the back is the MAIN DORSAL SAIL. The sail visible farther back toward the right edge is a SECOND POSTERIOR BACK SAIL. BOTH are now wanted and must stay. The existing broad wing sweeping DOWN to the lower left is the animal's LEFT FRONT SHOULDER WING. Add its missing RIGHT FRONT SHOULDER WING on the far side of the body. The final animal has FOUR main surfaces: TWO opposed FRONT SHOULDER WINGS plus TWO consecutive BACK SAILS. Do not reinterpret or relocate either existing back sail as the missing right wing. This replaces the earlier three-sail concept.\n\nThe NEW right wing grows from the opposite flank at the SAME fore-aft shoulder station as the existing left wing, immediately behind the neck. It is the same biological design and real size as the left shoulder wing, but properly foreshortened by the current side/three-quarter camera. BOTH front wings are in the same downstroke phase. Make a substantial visible part of the new far shoulder wing emerge from BEHIND the front thorax and sweep away/down, with a traceable leading edge and distinct free tip. Its root may be partly occluded by the neck/body, but it must clearly belong to the shoulder region, not to the rear torso or to the sky. Preserve the existing near left wing's size, downstroke, orientation and shape. Natural occlusion is welcome; do not force the two wings into a flat front-facing display. Do not add legs or a fifth surface. Match the new wing's ivory/amber/lavender mottling, leaflike overlapping texture, translucent light and painterly edges to the existing wing.\n\nIncrease only the main torso's length modestly, around 10 percent, between the shoulders and the tail base. Preserve its depth and fuller compact character. Do not stretch the neck, enlarge the head or make a long snake body. The two back sails remain attached in sequence along that slightly longer back. Keep the tail's three leaf-tipped ribbons and their flowing directions; make only small positional adjustments required by the slight lengthening.\n\nPRESERVE THE LIKED HARNESS: same plain slim brown leather body bands and back connection, same tiny fastening scale, fitted to actual solid torso. The added right wing grows freely beside it; no band crosses the new membrane or binds a shoulder. Do not replace it with a collar, pendant, cloth, saddle or platform. No people aboard.\n\nKeep the whole head, paired head feelers, visible belly, original soft warm light, pale open sky, far-below river valley and settlement, huge scale and graceful presence. Maintain the original broad mottled sails and body covering, not a smooth reptile redesign. All extremities fit within the image. Painted oil/acrylic handling and background remain as close to the source as possible. No new text, arrows, labels, borders, symbols or magical effects.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0ea53ae6-5ad3-4dd1-81bf-7efbcdb809bc.png",
+      "sha256": "95813f2f46dc864a8f183306731012995b5c9aca5127159e6543f3b53a19937d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "generator": "built-in image_gen",
+      "review_status": "pending_creator_review",
+      "visual_check": "Inspected four distinct main surfaces: added far right shoulder wing behind the front thorax; near left wing still in downstroke; both original back sails retained. Torso modestly longer; liked harness, three ribbons and distant landscape retained. Creator review pending.",
+      "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-gnosis-partner-v8.png",
+      "original_preview": "veilwing-gnosis-partner-v8.png",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-gnosis-partner-v8.png",
+          "sha256": "d253abe8437aa3d4101f27b8454f09c9346c1b5699eeab285c09588b96d6c590"
+        }
+      ]
+    }
+  ],
+  "round_2_scope": {
+    "revisions": 8,
+    "accepted_unchanged": [
+      "S13-01",
+      "S13-02",
+      "S13-04",
+      "S13-07"
+    ],
+    "rejected_without_retry": [
+      "S13-03",
+      "S13-E2",
+      "S13-E5"
+    ],
+    "ox": "Undecided, unchanged",
+    "live_card_installation": false
+  },
+  "soft_wildlife_direction": "Where it fits naturally, consider including an established world animal as ordinary background life, taken for granted. An animal can draw attention when the scene calls for it, but need not prompt any action or reaction; this is an occasional possibility, never a requirement or quota.",
+  "round_3_scope": {
+    "accepted_total": 12,
+    "new_anatomy_study": "S13-06-R3 accepted in chat",
+    "supporting_projection_check": "S13-06-R3B separately reviewable",
+    "final_veilwing_painting": "S13-06-P1 ready for review",
+    "farmer_revision": "S13-E3-R2 rejected, no further retry",
+    "live_installation": false
+  },
+  "round_4_scope": {
+    "viewpoint_revision": "S13-06-P2 harness rejected in chat",
+    "harness_correction": "S13-06-P3 pending creator review",
+    "accepted_images_unchanged": 12,
+    "optional_wildlife": "Ordinary background life taken for granted; attention is optional.",
+    "live_installation": false
+  },
+  "round_5_scope": {
+    "anatomy": "S13-06-R4 pending",
+    "painting": "S13-06-P4 pending",
+    "rejected": "S13-06-P3 anatomy/harness",
+    "prior_study": "R3 historical approval preserved, incomplete anatomy superseded",
+    "authoritative_original": "MN2-5 with creator dorsal-wing clarification",
+    "live_installation": false
+  },
+  "anatomy_decision": {
+    "date": "2026-11-14",
+    "source": "Creator feedback on S13-06-P8",
+    "creator_words": "It looks like it's got kind of a main dorsal wing, and then one, like, further behind it, which I'm actually okay with. So let's keep that ... add a right wing.",
+    "dorsal_sails": 2,
+    "lateral_wings": 2,
+    "total_main_sails": 4,
+    "status": "arrangement_selected_by_creator",
+    "scope": "Keep both existing P8 back sails. Add the missing right front shoulder wing opposite the left; both in downstroke. Slightly lengthen torso. Preserve liked P8 harness. P9 image pending review.",
+    "dorsal_position": "Main back sail plus a second posterior back sail, as seen in P8.",
+    "supersedes": "Earlier one-dorsal/two-side-wing decision and F1/F2 as complete anatomy references."
+  },
+  "round_6_scope": {
+    "anatomy_choice": {
+      "date": "2026-11-14",
+      "source": "Explicit creator reply to anatomy-choice question",
+      "creator_words": "One dorsal sail + two side wings (Recommended)",
+      "dorsal_sails": 1,
+      "lateral_wings": 2,
+      "total_main_sails": 3,
+      "status": "locked_by_creator",
+      "scope": "Wing arrangement only. New structural sheet and harness/painting perspective still require review."
+    },
+    "new": "S13-06-R5 structural study pending review",
+    "painting": "S13-06-P4 perspective correction requested; not rejected wholesale",
+    "image_approval": false,
+    "live_installation": false
+  },
+  "round_7_scope": {
+    "new": "S13-06-R6 mid-back dorsal placement",
+    "supersedes": "S13-06-R5 placement",
+    "approved_geometry": false,
+    "live_installation": false
+  },
+  "flight_mechanics_status": "Wing count changed by creator to four surfaces. Downstroking front pair shown in P9; detailed flight mechanics remain open.",
+  "round_8_scope": {
+    "new": [
+      "S13-06-F1",
+      "S13-06-F2"
+    ],
+    "poses": 8,
+    "source": "S13-06-R6",
+    "new_design_approval": false,
+    "live_installation": false,
+    "qa": "Removed an extra fourth membrane in the first F2 braking attempt."
+  },
+  "creator_relationship_direction": {
+    "status": "creator_established",
+    "date": "2026-11-14",
+    "description": "Huge, graceful magically attuned beast aligned with Gnosis. Nature-minded Gnosis practitioners can form a respectful magical connection with it; this individual willingly works with them. Discreet equipment shows that relationship and human scale, without requiring overt magic effects.",
+    "open": "Specific abilities, intelligence, diet, range and species-wide domestication remain open."
+  },
+  "naming_options": [
+    {
+      "name": "Highsail",
+      "recommended": true,
+      "reason": "Graceful, memorable and tied to its silhouette and height."
+    },
+    {
+      "name": "Longwake",
+      "recommended": false,
+      "reason": "More stately; evokes the passage of an immense animal."
+    },
+    {
+      "name": "Sailback",
+      "recommended": false,
+      "reason": "An earthy common name that people in the world might use."
+    },
+    {
+      "name": "Cloudsail",
+      "recommended": false,
+      "reason": "Softer and more lyrical, with an immediate aerial association."
+    },
+    {
+      "name": "Orren",
+      "recommended": false,
+      "reason": "A short species name without describing a power or body part."
+    }
+  ],
+  "name_status": "Veilwing remains working name; no replacement selected",
+  "round_9_scope": "Accept F1/F2; record Gnosis partnership and name options; P5 revised to ascending right bank P6; P7 enlarges the two shoulder wings while retaining dorsal size. P7 pending.",
+  "round_10_scope": "Creator redirects appearance and leather harness to S13-06-R2, retaining corrected anatomy and improving scale. P8 generated for review.",
+  "reference_priority": {
+    "appearance_and_equipment": "S13-06-P8: liked painting and harness; preserve both existing back sails.",
+    "structure": "Two front shoulder wings plus two consecutive back sails, four main surfaces. Earlier one-dorsal rule is explicitly superseded.",
+    "latest_painting": "S13-06-P9 pending; only add missing right shoulder wing and slightly lengthen torso."
+  },
+  "anatomy_decision_history": [
+    {
+      "date": "2026-11-14",
+      "source": "Explicit creator reply to anatomy-choice question",
+      "creator_words": "One dorsal sail + two side wings (Recommended)",
+      "dorsal_sails": 1,
+      "lateral_wings": 2,
+      "total_main_sails": 3,
+      "status": "superseded_by_creator",
+      "scope": "One mid-back dorsal plus two shoulder wings. F1/F2 flight anatomy accepted; larger side-wing proportions requested in subsequent scene. Painting/equipment pending.",
+      "dorsal_position": "Root begins around mid-back, distinctly behind the side-wing shoulder roots.",
+      "position_creator_words": "further back like middle of the back"
+    }
+  ],
+  "round_11_scope": "P8 is really good; keep its harness and both back sails, add the missing front right wing opposite the downstroking left wing, and lengthen the body slightly."
+}

@@ -1,0 +1,51 @@
+{
+  "batch": "Set16 feathered heavyweight front-claw revision",
+  "date": "2026-11-15T21:09:41.863666+00:00",
+  "brief_revision": 14,
+  "brief_source": "BRIEFS-heavyweight-front-claws-revision-14.md",
+  "brief_sha256": "b824119f5e92ba18638d1c92883f3cf4ee879c22a70bca6c61f658b06d9115f2",
+  "feedback": "animal-feedback-round9.json",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "status": "superseded_talons_excessive",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "items": [
+    {
+      "code": "M21-23",
+      "original_position": 2,
+      "version": 3,
+      "stage": "reference_revision",
+      "file": "m21-23-feathered-heavyweight-v3.png",
+      "prompt": "Edit the attached Breachline feathered heavyweight reference. Change ONLY BOTH FRONT FEET / CLAWED FOREHANDS at lower left and lower centre: give them a clearly more claw-like, raptorial structure, with distinct powerful articulated digits and substantially longer, sharply curved keratin talons. The claws should read as functional grasping/raking weapons, organically rooted in the toes, with robust bases and tapering hooked tips. Keep their scale proportionate to this enormous animal, maintain believable wrist-to-digit connections and weight-bearing ground contact. Do not just lengthen rounded toenails; make the forefeet's overall shape more clearly a powerful claw. The two rear feet on the right remain unchanged. Preserve the revised muscular forelegs above the wrists, all four leg positions, body, feather mantle, crest, closed muzzle, neck, tail, pose, scale figure, ground, colours, light, framing and painted treatment. No extra digits or limbs, no mouth change, no dangling mouthparts. Same landscape 3:2 format, no text or labels.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+      ],
+      "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+      "reference_role": "Entire M21-23 v2 as edit target; only front feet change.",
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-11454990-ad5f-4e25-8e5b-3b1098f41b54.png",
+      "sha256": "f6a679a3bd2501f6bbd5ef541f7080d1552f2612b6e72395b9f33d66584aeb5e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Feathered heavyweight · front claws",
+      "description": "Both front feet now form pronounced grasping claws, with distinct jointed digits and long hooked talons. The revised muscular legs, feathered body and closed muzzle remain, while the rear feet retain their earlier shape.",
+      "assistant_review": "Visually compared with v2: both front feet now have elongated articulated digits and markedly longer curved talons. The wrists connect coherently, claw bases and tips are readable, and the feet remain grounded. Rear feet, four-legged support, muscular upper forelegs, face, feather mantle, crest, scale figure, pose and composition remain recognizable and unchanged in design. No gross mouthparts or extra limbs.",
+      "completed_at": "2026-11-15T21:11:15.007292+00:00",
+      "latest_revision_file": "m21-23-feathered-heavyweight-v4.png",
+      "latest_revision_version": 4,
+      "latest_revision_manifest": "heavyweight-front-paws-round10-manifest.json"
+    }
+  ],
+  "gallery": "heavyweight-preferred-revisions-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "generation_input_brief_sha256": "05e1911b6c1a9cb64c74caa5683700a4924dc5e2f7db2e6cec06edddd83914d4",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T21:11:15.007292+00:00",
+  "latest_creator_feedback": "animal-feedback-round10.json",
+  "latest_local_revision_manifest": "heavyweight-front-paws-round10-manifest.json",
+  "creator_feedback": "Too much claw; paws intended. See v4."
+}

@@ -39,7 +39,13 @@ Allow quiet, awkward, beautiful, eerie, forceful and occasionally mildly gross a
 
 **Purposeful structures.** Shields, pouches, membranes and feeding organs must attach and function plausibly. An animal must be able to load or use its own food storage. A shield should grow into the anatomy; a growth or symbiont needs an intelligible relationship. Do not use jaw frills or filter-like throat combs as the recurring novelty: the creator found them overused. This is not a ban on every fringe, filter feeder or symbiosis.
 
+**Unclear overlaps and equipment.** When a perspective view hides anatomy, inspect the original and clarify the separate attachment surfaces before fitting equipment. Do not reduce an unfamiliar animal to a familiar bilateral plan or remove a body structure to make room for straps. Tack must fit the intact animal. The Veilwing dorsal-sail correction is recorded in the reference index.
+
 **Variety across a group.** Change more than colour and faces. Compare mass, stance, coverings, head type, feeding role, scale and mood across the lineup. Avoid a procession of lizard faces, dorsal sacks, plant hybrids, fliers or one liked animal's signature feature. Include restrained takes and some experiments around the edges of the request when exploring. No fixed quota or mandatory novelty applies to every batch.
+
+**Freeform and mouth variety (creator, 2026-11-15):** In the Set 16 animal round, the freeform takes were preferred to the anatomy-prescribed ones. Give new explorations room to invent whole animals instead of specifying every body plan. Vary feeding roles, skulls and mouth structures together: the first M21 sheet leaned too heavily on browsers with similar blunt faces. Experimental mouths are welcome, while function and attachment still need to make sense; this does not require every animal to be grotesque or threatening. M21-2 also repeated Woodland breaker too closely. Apply this to new explorations and preserve selected identities. The current follow-up is six all-freeform heavyweights; this is not a permanent quota.
+
+**Experimental predatory mouths (creator, 2026-11-15):** New heavyweight animals may explore folding outer jaws and an inner oral jaw. The first version overcorrected toward soft plant-feeding mouths; the latest creator correction explicitly allows more aggressive and predatory anatomy. Strong bite mechanics, sharp gripping teeth and a controlled predatory gape are welcome for this exploration. Preserve original animal anatomy and coherent attachments; do not turn “less scary” into a requirement for harmless or cute creatures. This is specifically for new heavyweight animals, not M20, and is not a general requirement for every animal.
 
 ## Scale has its own design space
 
@@ -57,6 +63,14 @@ The successful paired-niche round used two genuinely independent approaches. Whe
 - Keep presentation comparable and preserve exact prompts. Do not turn this successful experiment into a compulsory format for every future request.
 
 Keep animal identities distinct. Similar jobs need not mean the same species; an animal pictured alongside a parasite is not automatically its later life stage. A small herd with different responsibilities is not necessarily a hive. New mechanisms and species relationships remain proposals until chosen.
+
+## Wildlife inside existing paintings
+
+Where it fits naturally, consider including an established world animal as ordinary background life, taken for granted. An animal can draw attention when the scene calls for it, but need not prompt any action or reaction; this is an occasional possibility, never a requirement or quota.
+
+Creator review, 2026-11-14: the first Set 13 incorporations were intrusive. Background animals should share the nearby background's brush size, soft edges, muted contrast and limited detail; showing every identifying feature is less important than belonging in the scene. Partial views and occlusion are useful. Preserve the approved composition, people, land/water geometry and lighting. Do not invent a bank, perch or other terrain merely to accommodate an animal. Check climate as well as a broad ecology category: the Greyhide ferry coast was explicitly too cold for Shore hunter.
+
+Return to the approved original for a local retry when an earlier edit changed the composition. Review side by side; an instruction to preserve the image is not evidence that the generated output did so. Keep the user's verdict and a new revision's pending status distinct.
 
 ## Make the next review useful
 

@@ -1,0 +1,136 @@
+{
+  "code": "47-A2",
+  "title": "Frost \u2014 plunging neckline revision",
+  "date": "2026-11-14",
+  "revision": 2,
+  "status": "generated_awaiting_creator_review",
+  "request": "that's good, can the neckline be plunging?",
+  "scope": "Deepen the liked version 1 neckline to a plunging V while retaining existing proportions, identity, pose and setting.",
+  "output_file": "47-frost-allure-v2.png",
+  "source_image": "/Users/dpuser/.codex/generated_images/01a1dad5-41e1-7e82-ba0b-e11e3f81f2a6/exec-28c0afe2-d9e4-4c6a-ac32-6b2d7b215423.png",
+  "target_image": "breachline/art/work-in-progress/frost-allure-2026-11-14/47-frost-allure-v1.png",
+  "attached_reference_paths": [
+    "/Users/dpuser/.codex/generated_images/01a1dad5-41e1-7e82-ba0b-e11e3f81f2a6/exec-9b5d575c-5342-48e3-ba18-23c76476b9b8.png"
+  ],
+  "inspected_calibration_references": [
+    "breachline/art/reference-library-2026-11-06/allure-2026-11-14/street-conjurer-blue-dress.png",
+    "breachline/art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png"
+  ],
+  "reference_use": "Only liked version 1 was attached as the local neckline edit target.",
+  "sources": [
+    ".claude/skills/breachline-allure/SKILL.md",
+    ".claude/skills/breachline-allure/references/paintings.md",
+    ".claude/skills/art-direction/BRIEF_WORKFLOW.md",
+    ".claude/skills/art-direction/SKILL.md",
+    "breachline/SETTING.md",
+    "breachline/art/art-review/selection-guide.json",
+    "breachline/art/ART_PROMPTS_SET6.json",
+    "breachline/engine.js:118"
+  ],
+  "method": "built-in image_gen",
+  "transparent_background": false,
+  "prompt": "Use case: precise-object-edit.\nEdit ONLY THE NECKLINE of the single attached painting, Frost allure version 1. The creator likes this revision and now requests a plunging neckline. Keep the same clearly adult mage and all other parts of this painting.\n\nChange the low squared neckline of her fitted blue bodice to an unmistakably deeper PLUNGING V neckline: two smooth, elegantly curved blue fabric edges descend beside the inner bust and converge at a small brass join on the lower sternum, several inches above the waist belt. Carry a narrow cream linen trim and restrained worn gold embroidery down both edges of the V. The opening should be substantially deeper than the input, exposing a natural central line of cleavage and upper sternum; opaque supportive fabric fully covers both breasts. Tailor the blue bodice convincingly with shaped seams, subtle cloth tension and a continuous fitted waist. Keep her present bust size and natural support, without further enlargement. Keep the winter cloak clasp where it is, the shoulder coverage and rolled cream sleeves. This is an elegant plunging neckline within her existing mage outfit, with no sheer panels or nudity.\n\nPreserve precisely: distinctive adult face, age, expression, eyes looking down-left, updo and loose curls, body proportions, waist and belt; pose and every hand and limb; anatomical right arm at image-left casting down toward ice, anatomical left arm at image-right holding the amber lantern; leading right boot on solid ice and rear left boot on the stone step; all lower clothing, boots, long blue-and-gold cloak, lantern, spell frost, canal, open water, reflections, boat, snowy stone, ivy, banner, distant arcade, windows and upper-right wall lamp. No added elements, no changed framing, no crop or zoom. Preserve the current matte oil/acrylic painted finish, selective detail, blue winter light and amber lantern light. Do not alter her face or add grain or gloss. Return one full-bleed landscape image at 1536 x 1024, with no text, frame, watermark or signature.",
+  "review": {
+    "assistant_inspection": "Pass for presentation. Neckline is visibly deeper, an opaque blue plunging V with cream trim, gold embroidery and brass join above the belt. Natural covered support, continuous waist and recognizable adult identity. Casting right hand at image-left and lantern-carrying left hand at image-right retained, with two coherent arms and legs and feet on ice/step. Face, hairstyle, cloak, clothing, environment, lighting and framing remain materially consistent. Small painted details show ordinary generative variation.",
+    "creator_approval": null,
+    "lore_approval": null,
+    "live_card_installation": false
+  },
+  "description": "The adult Frost mage wears a plunging V-neck bodice in her existing blue, cream and gold palette, with shaped opaque fabric and a small brass join. Her absorbed casting gesture, step onto new ice, lantern and winter canal scene remain; this is the requested neckline refinement of the liked first version.",
+  "preservation": "Original card assets and liked version 1 retained unchanged. Version 2 staged for creator review.",
+  "output": {
+    "sha256": "8abeb89a5e17ca90d3b72e704fbbddc7e7fffcc09e2d510cbcaa7473e1fac0c7",
+    "bytes": 2183270,
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "target_at_generation": {
+    "sha256": "93626d43ef4df7fef06bdaa9dfb03df7fe483dde3dfa14430f910fbe5ab8ad45",
+    "bytes": 2390236,
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "generated_source": {
+    "sha256": "8abeb89a5e17ca90d3b72e704fbbddc7e7fffcc09e2d510cbcaa7473e1fac0c7",
+    "bytes": 2183270,
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "portable_reference_paths": [
+    "breachline/art/work-in-progress/frost-allure-2026-11-14/47-frost-allure-v1.png"
+  ],
+  "history": [
+    {
+      "code": "47-A1",
+      "title": "Frost \u2014 allure outfit revision",
+      "date": "2026-11-14",
+      "revision": 1,
+      "status": "generated_awaiting_creator_review",
+      "request": "use the allure skill to update teh outfit in the frost spell",
+      "scope": "Local outfit and necessary bodice shaping edit to existing Frost painting.",
+      "output_file": "47-frost-allure-v1.png",
+      "source_image": "/Users/dpuser/.codex/generated_images/01a1dad5-41e1-7e82-ba0b-e11e3f81f2a6/exec-9b5d575c-5342-48e3-ba18-23c76476b9b8.png",
+      "target_image": "breachline/art/frost.png",
+      "attached_reference_paths": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/frost.png"
+      ],
+      "inspected_calibration_references": [
+        "breachline/art/reference-library-2026-11-06/allure-2026-11-14/street-conjurer-blue-dress.png",
+        "breachline/art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png"
+      ],
+      "reference_use": "Only Frost was attached as edit target. The two allure paintings were visually inspected for neckline, support and integrated mage presentation; neither was attached.",
+      "sources": [
+        ".claude/skills/breachline-allure/SKILL.md",
+        ".claude/skills/breachline-allure/references/paintings.md",
+        ".claude/skills/art-direction/BRIEF_WORKFLOW.md",
+        ".claude/skills/art-direction/SKILL.md",
+        "breachline/SETTING.md",
+        "breachline/art/art-review/selection-guide.json",
+        "breachline/art/ART_PROMPTS_SET6.json",
+        "breachline/engine.js:118"
+      ],
+      "method": "built-in image_gen",
+      "transparent_background": false,
+      "prompt": "Use case: identity-preserve.\nAsset: Frost, Breachline spell-card painting. Edit the single attached TARGET painting locally; do not recompose it. Output one full-bleed landscape painting at 1536 x 1024, 3:2.\n\nPRIMARY EDIT \u2014 Apply understated Breachline Allure to this clearly adult mage through the upper outfit and necessary local bodice shaping only. Replace the high buttoned cream shirt opening and high-cut blue waistcoat front with a low, softly squared neckline with gently curved corners, a narrow cream gathered linen edge, and a fitted opaque deep-blue bodice with restrained worn gold embroidery. Show her collarbones and natural visible cleavage, with a modest but clearly readable increase in bust fullness, naturally supported by credible tailored seams, cloth tension and a continuous fitted waist. The neckline must visibly read lower at card size, not merely as one undone shirt button. Keep her existing overall frame and waist, sleeves rolled to the elbows, broad brown leather belt and little brass fastenings. Retain the blue-and-gold winter cloak covering the shoulders and back with its round clasp at the collarbone; the warm cloak and long practical layers should continue to make sense in this winter scene. The result is an attractive working mage in an elegantly fitted version of her own clothes. No sheer material or nudity; no unrelated evening dress.\n\nSTRICT INVARIANTS \u2014 Preserve her distinctive adult face, age, serious absorbed expression, dark loose updo, downward gaze, head angle, build outside the small local bodice change, posture and all limbs. Anatomical RIGHT arm at image LEFT remains extended down-left with palm down casting the frost. Anatomical LEFT arm at image RIGHT remains lowered holding the single amber lantern by its handle. Exactly two arms with the same hands and gestures. Keep the anatomical right boot at image-left planted on the new ice and the left boot on the low stone step at image-right. Keep trousers, layered long skirts/coat tails, boots, belt, cloak length, composition and framing. Preserve the branching ice route, canal, open water reflections, boat at left, distant arcade and warm windows, snowy stone steps, ivy, banner and wall lantern at upper right. Do not move or add anything outside the neckline and necessary local tailoring.\n\nPAINT \u2014 Match this target painting's existing oil/acrylic handling, blue winter light and warm amber lantern light; matte skin and cloth, selective painted detail and quieter background. Give the revised cloth and skin the same painted resolution and lighting as adjacent areas. Do not beautify or replace her face, smooth her into a doll, add glossy skin, sharpen the whole scene or add grain. No text, labels, frame, watermark or signature.",
+      "review": {
+        "assistant_inspection": "Pass for presentation. Clearly lower softly squared cream-trimmed neckline and modestly fuller supported bodice, blue-and-gold palette and continuous waist. Adult face, hair, downward gaze and posture remain recognizable. Anatomical right arm at image-left casts; anatomical left arm at image-right carries the lantern. Two coherent legs, front boot supported on ice, rear boot on stone. Cloak, belt, sleeves, lower layers, ice path, boat, architecture and blue/amber light retained. Some generative softening in small painted detail, with no material staging change.",
+        "creator_approval": "Liked by creator; further neckline revision requested.",
+        "lore_approval": null,
+        "live_card_installation": false,
+        "creator_feedback": "that's good, can the neckline be plunging?"
+      },
+      "description": "The adult Frost mage keeps her careful step onto the ice and absorbed casting gesture, wearing a fitted blue-and-gold bodice with a lower cream-trimmed neckline. This proposes an understated allure revision to her existing working outfit; her cloak, lantern and winter canal setting remain.",
+      "preservation": "Original art/frost.png and art/web/frost.jpg remain unchanged. This revision is staged for creator review.",
+      "output": {
+        "sha256": "93626d43ef4df7fef06bdaa9dfb03df7fe483dde3dfa14430f910fbe5ab8ad45",
+        "bytes": 2390236,
+        "dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "target_at_generation": {
+        "sha256": "a1c10d968f735a551573f08579be691623e8c59f2fe48f13cc286e7f6ea58651",
+        "bytes": 2772302,
+        "dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "generated_source": {
+        "sha256": "93626d43ef4df7fef06bdaa9dfb03df7fe483dde3dfa14430f910fbe5ab8ad45",
+        "bytes": 2390236,
+        "dimensions": [
+          1536,
+          1024
+        ]
+      }
+    }
+  ]
+}

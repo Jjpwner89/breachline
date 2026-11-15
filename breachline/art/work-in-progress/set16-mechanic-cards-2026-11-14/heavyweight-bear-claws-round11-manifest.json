@@ -1,0 +1,45 @@
+{
+  "batch": "Set16 feathered heavyweight bear-claw revision",
+  "date": "2026-11-15T21:23:26.449270+00:00",
+  "brief_revision": 16,
+  "brief_source": "BRIEFS-heavyweight-bear-claws-revision-16.md",
+  "brief_sha256": "d7399f5dcb7fa62afac02b4c7add0f5b2c54be10be26cb7eeae268c5d35c086c",
+  "feedback": "animal-feedback-round11.json",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "status": "generated_awaiting_creator_review",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "items": [
+    {
+      "code": "M21-23",
+      "original_position": 2,
+      "version": 5,
+      "stage": "reference_revision",
+      "file": "m21-23-feathered-heavyweight-v5.png",
+      "prompt": "Make a small local edit to this animal painting: give BOTH FRONT PAWS believable BEAR CLAWS. Retain the broad, heavy, furred paw structure, but replace the tiny catlike claw tips with a clearly visible row of stout non-retractile claws like a brown bear's forepaws. Each claw has a thick base, moderate forward length and a gentle downward curve, naturally growing from a short thick toe. They should look powerful for digging and traction, proportional to the paw. Keep the toes compact and joined into a broad padded paw; no long separated bird fingers, no dramatically hooked raptor talons, and no oversized sickle claws. Preserve the front legs above the paws, all leg positions, both rear feet, head, closed muzzle, neck, crest, feather mantle, body, tail, colours, human scale figure, ground, lighting and framing. Only refine the two front paws and claws. Retain the painted fantasy finish, 3:2 landscape format, with no text.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v4.png"
+      ],
+      "reference_sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+      "reference_role": "Entire v4 as edit target; front bear claws only.",
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f2d9adfe-9794-4f77-b800-f616d9f97d08.png",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Feathered heavyweight · bear claws",
+      "description": "The broad furred front paws now carry stout, visible bear-like claws with moderate projection and a gentle curve. The compact toes, sturdy legs, feathered body, closed muzzle and rear feet retain their earlier design.",
+      "assistant_review": "Visually compared with v4: front claws are clearly larger and stouter than the small tips, yet stay proportionate and gently curved. Broad compact furred paws remain grounded; no raptor fingers or sickle talons. Upper legs, rear feet, body, face, feather silhouette, scale figure, pose and composition retain their design. No obvious generation defect requiring another pass.",
+      "completed_at": "2026-11-15T21:45:02.905330+00:00"
+    }
+  ],
+  "gallery": "heavyweight-preferred-revisions-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "generation_input_brief_sha256": "294c49de8cbd15a43adcce2f9bd2f55f9ecdd14afca917b8a540e7649c0b74a4",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T21:45:02.905330+00:00"
+}

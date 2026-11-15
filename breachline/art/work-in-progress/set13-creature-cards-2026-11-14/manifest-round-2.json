@@ -1,0 +1,963 @@
+{
+  "batch": "set13-creature-cards-2026-11-14",
+  "date": "2026-11-14",
+  "status": "selected_collection_preserved_final_veilwing_painting_pending",
+  "generator": "built-in image_gen",
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET13.md",
+  "brief_revision": 1,
+  "brief_sha256": "6c0459b28bf0f3db1f004d79cdd767b7250a6ff43e1aab906de49ae28dc0af55",
+  "art_direction_path": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_sha256": "3f8f032da7d52589c893a274537658dcc890a8971f9d2d1c34f7cdfe8849b907",
+  "scope": {
+    "new_paintings": 8,
+    "veilwing_harness_lineup": 1,
+    "wildlife_edits": 6,
+    "direct_user_ox_reference": 1,
+    "veilwing_card_painting": "After creator chooses a harness; not part of the current image pass."
+  },
+  "creator_clarifications": {
+    "ox": "More ox-like working animal for regions outside the salt plains; direct reference sheet requested. Salt-flat migrant suits the salt-plains people.",
+    "ford_thread": "Small juveniles in roomy jars, explicitly confirmed by creator.",
+    "ford_thread_latest": "2026-11-14 gallery review: one vessel should contain the adult; supersedes all-juvenile scene instruction. Keep one juvenile.",
+    "veilwing_latest": "2026-11-14 round 2: anatomy study requested; align the wings, especially the incorrectly oriented near wing. Huge scale, leather over back and no people aboard still apply."
+  },
+  "preservation": "Existing approved card files remain unchanged. New paintings and edits are staged for review. No new card mechanics or installation.",
+  "items": [
+    {
+      "code": "OX1",
+      "title": "Broadneck \u00b7 ox-like working animal",
+      "file": "oxlike-working-animal-reference.png",
+      "kind": "reference",
+      "description": "A proposed ox-like working animal for farms and roads beyond the salt plains. Its compact mass, spreading feet and broad shoulders support a practical harness; the name and exact regional distribution remain open.",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Create one original Breachline ANIMAL REFERENCE SHEET, landscape 1536x1024, showing the SAME new ox-like working animal in coherent repeated views. Warm pale plain ground, neutral light, traditional oil/acrylic concept painting with deliberate selective brushwork, matte animal materials. No text, numbering, border or watermark.\nThe user wants an everyday sturdy ox-like working animal for farms and roads in regions other than the salt plains. Make a quiet, appealing, patient heavy-bodied living herbivore, around an adult person's shoulder height at its withers, with four powerful legs, a deep broad chest and muscular short neck, a slightly sloping back and compact sturdy hindquarters. Its recognisable ox-like weight and strength are important, but this is original fantasy wildlife, not a normal ox with ornamental accessories. A broad elongated blunt soft-lipped grazing head, calm lateral eyes, small sideways ears; a pair of thick low horn roots sweep outward and slightly down close to the skull. No giant weapon horns or frightening mouth. Broad feet have three short blunt weight-bearing keratin toes set into fleshy pads, able to spread on soft soil. The animal's shoulders and neck have close-set layered coarse chestnut bristles, thinning into warm slate-grey leathery hide across the deep flanks; the transitions follow its muscle masses. A short heavy tail ends in a simple brush. Coherent organic anatomy; no throat combs, dorsal sacks, fungus, extra limbs, plates glued to a cow or random frills.\nLAYOUT: a large unobstructed three-quarter standing view occupying the left half, all four legs and entire head/tail visible; on upper right a clean side profile of the same animal walking without gear; lower right a smaller front-three-quarter working view with a simple padded shoulder collar and two modest balanced woven panniers attached by a practical leather-and-wood pack frame over the ribs, free of the spine and foreleg movement. No cart, reins tied around the throat, decorative tack or excess straps. One small neutral adult human silhouette beside the main view establishes working-animal scale. Show the anatomical body clearly; the harness view is only one practical handling proposal. Compact powerful stance, believable contact and support, friendly sober presence rather than pet cuteness. Keep the same head, toes, covering pattern and proportions in all three views.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2fafe712-fa60-4d37-8b4f-084326d5cafc.png",
+      "sha256": "87ec192a34b441c4bad47a20ed28e05c333f386bce4b3fc7cd2e02c38c92891b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [],
+      "creator_review_round_1": {
+        "decision": "undecided",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/oxlike-working-animal-reference.png"
+    },
+    {
+      "code": "S13-01",
+      "title": "Vaultstalker",
+      "file": "vaultstalker.png",
+      "kind": "painting",
+      "card": 216,
+      "description": "Vaultstalker holds its weight low among boulders, watchful and still. The selected shoulder arch, scaled limbs and low rear body remain the animal\u2019s identity.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached sheet is ANATOMY ONLY: use exactly the BOTTOM-LEFT animal, cell 4, Vaultstalker; ignore the other five animals and the sheet layout. Preserve its elongated closed muzzle, small ears, pale layered scales over the high shoulder arch and forelegs, long hanging brown/cream fur at the sides, large gripping forefeet, and low rear body with a long low shaggy tail. Scale about a large deer, roughly two metres long.\nPaint this single Vaultstalker quietly watching from broken rocky ground. A low three-quarter view gives its forequarters solid weight against a pale sloping boulder; the creature faces across the frame toward the left with its full head and forefeet visible. Its rear body crouches in the shelter of warm grey stone and dry grasses. The bent wrists and contact of feet with scree must make sense. Cool distance and late soft sun on its shoulder scales. Powerful living predator, a patient closed mouth, no snarl, fangs, attack, prey, harness or person. An economical natural scene, a few clear rock masses rather than busy repeated texture.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-d838aa6b-2b53-4061-b67c-ea924dc5c500.png",
+      "sha256": "286e4fd869f36d0d3dd32b708443db1a97cdd12fc86cd3346f5b99bd2d4ffe35",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/larger-creatures-2026-11-13/01-larger-wildlife.png",
+          "sha256": "42be68fc5316600a3dd92714d054b98119acbd25e39f80e8884b909c3a1f4e6d"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/vaultstalker.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-02",
+      "title": "Needlehip",
+      "file": "needlehip.png",
+      "kind": "painting",
+      "card": 217,
+      "description": "Needlehip bounds through low woodland growth, its broad front and narrow springing hips shaping the movement. Preserve the reptilian face, furred body and long whip tail.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse the attached sheet ONLY for the BOTTOM-MIDDLE animal, cell 5, Needlehip. Ignore every other cell. Preserve the specific broad low reptilian face with round amber eyes, short soft muzzle and closed mouth, shaggy silver-grey fur along the broad heavy forequarters and narrow spring-loaded rear hips, four grasping clawed feet and long thin mostly bare whip tail. Dog-sized, not a huge beast. Do not replace the face with a wolf, cat or bird.\nA fresh single-animal woodland painting: Needlehip mid-bound through the open space between low fern clumps and fallen branches, travelling to screen right. Its broad chest reaches forward while the compact hindquarters drive the bound; forelegs reach toward the next landing, hindlegs fold naturally from the pelvis, complete connected limb anatomy and a readable tail sweep. A side-three-quarter view keeps the distinctive uneven body clear. Broken canopy daylight touches its silver coat and an amber eye; dark green undergrowth and warm leaf litter are painted in simpler masses. Energetic real movement, not a battle pose, no gore or visible quarry, not a reference sheet.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-d25c583e-ec4d-4d86-ae98-31bed53a2e25.png",
+      "sha256": "388672a0cfa89222d77c8b514d139836743f530acbd84df009e4bfd67a83f5a3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+          "sha256": "053135af0b085c01f9515087b9cafc461a4c5c49bdfe0a36f0c6c8f660c9176a"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/needlehip.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-03",
+      "title": "Siltwright warriors",
+      "file": "siltwright-warriors.png",
+      "kind": "painting",
+      "card": 218,
+      "description": "Siltwright workers carry seeds at a wetland edge while the broader warriors stand among them. The separate castes and amber storage bodies are preserved without defining a complete nest system.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e6-a-proposed.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached image is the required anatomy reference for Siltwright workers and warriors. Preserve the copper-brown plated ant-like construction, grouped black side eyes, long segmented antennae and six connected jointed legs per animal. Workers have elongated translucent amber abdominal chambers with a few nuts clearly visible WITHIN them; warriors use the lower-left reference's broader head plates, shorter sturdier body and strong curved mandibles. These are living organic parts, no machinery or human kit.\nPaint a close low viewpoint along a small wetland bank: two larger sturdy warriors stand quietly among three or four smaller workers moving seeds across damp soil and a fallen branch above still water. One worker pauses with an intact nut in its jaws, and transmitted warm light reveals the few stored nuts inside a worker abdomen. Modest reed stems and leaf fragments give a small-world scale; keep the number of insects legible rather than a swarm. No cutaway diagram or dissected anatomy, no huge monster ants attacking people, no invented monumental colony structures. Rich rust carapaces, amber translucent volume, cool green water reflections, broad simple shoreline shapes. A little country of purposeful ordinary lives.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8b45b83c-c9ef-47f9-afa8-3015c7a6f635.png",
+      "sha256": "01637d04f4f95f06befe9c1fbcab9f8dab3eed01d0acebf467de75202f6bb3de",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: selected identity and requested scene retained, connected anatomy and readable paint; OX1 is a new proposed design.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e6-a-proposed.png",
+          "sha256": "0366d62e55ae9047e948fb9b5d980fdba100d86870cb226616b772c690f5443f"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-04",
+      "title": "Woodland breaker",
+      "file": "woodland-breaker.png",
+      "kind": "painting",
+      "card": 219,
+      "description": "The extra-large Woodland breaker braces and opens a fallen trunk in old woodland. Its size, hooked beak and heavy claws carry the scene; its precise food remains unspecified.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nThe attached sheet is required ANATOMY ONLY. Use exactly BOTTOM-LEFT cell 4, Woodland breaker; ignore other animals. Preserve the enormous hunched chest and shoulders, compact low rear, shaggy patchy deep-brown and cream coat, elongated rounded beaked muzzle with hooked tan beak, grey scaled forelimbs and huge broad dark digging claws. An extra-large animal with shoulder about twice adult human height, four connected limbs; not a normal bear, sloth, dinosaur or bird.\nPaint a single Woodland breaker opening a decayed fallen trunk in an old temperate forest. A wide three-quarter side view from low ground: one huge forefoot braces the timber while the other draws a section of soft rotten bark outward; the beak is lowered toward the opened wood. Its feet and claw pressure connect clearly to the load, small loose splinters fall naturally. Old standing trees and large trunks make scale tangible, not a person or diagram. Its bulky silhouette fills the middle distance and a bright shaft of daylight crosses the pale exposed inner wood and part of the muzzle. Earthy browns, quiet moss green and creamy wood, muted cool forest beyond. Weight, patient foraging and presence, no roar, aggressive teeth, explicit prey or added biological inventions.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-553fab77-cec9-4602-9ab9-4370fcbf7d2e.png",
+      "sha256": "a340283f4b28b570b0612c9aa99ad83cdc16b7a120b432cd72cd18a2b6700b01",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+          "sha256": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/woodland-breaker.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-05",
+      "title": "Fanback",
+      "file": "fanback.png",
+      "kind": "painting",
+      "card": 220,
+      "description": "Fanback crosses wide country in a slow stride, with light passing through its translucent fans. The rare giant\u2019s habitat and the functions of its fans and hanging growth remain open.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse ONLY the TOP-LEFT animal in the attached reference sheet: MN2\u20131 Fanback. Ignore the other five animals completely. Preserve its very thin broad horizontal high body carried on four extraordinarily long jointed organic legs, low pointed head at the front edge, uneven layered dorsal surface with green covering and fine hanging strands, and the row of tall pale translucent orange-edged fans rising from the back. Keep the structure and asymmetrical fan sequence recognisable. No added giant jaws, arms, horns, extra legs, shell buildings or machinery. The animal is massive, a small human only around a fraction of a lower leg in height.\nMake a spacious original landscape painting of ONE Fanback taking a slow step across an open high valley. Side-three-quarter silhouette against a luminous spacious sky: pale morning sunlight shines through the fans while their russet edges catch warm accents. The feet bear its weight on grassy ground with scattered dark rock; one hind leg has just begun a measured step. A single tiny traveller well away on the same ground plane and a low distant ridge establish the immense height without turning it into a threat. Muted gold-green ground, cool blue-grey distance, a glowing ivory fan silhouette. Preserve broad painted quiet areas and the awe of unfamiliar living anatomy. No attack, horror, snarling, lightning, added symbiosis story or army; this landscape is one scene, not a biological explanation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-32168978-b5f0-41ee-a204-f6e253b94280.png",
+      "sha256": "ed70013e480293629f815eecf201211064a3710d4858096ddce30b94c23fd843",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "has an extra leg\n"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "has an extra leg\n"
+      }
+    },
+    {
+      "code": "S13-06",
+      "title": "Veilwing \u00b7 harness exploration",
+      "file": "veilwing-harness-lineup.png",
+      "kind": "lineup",
+      "card": 221,
+      "description": "Six proposed harness arrangements for the newly chosen Veilwing retain its broad translucent sails and slender trailing body. Light survey equipment and tiny observers test how a working relationship could fit; the card painting follows the creator\u2019s harness selection.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE Breachline design lineup sheet, 1536x1024 landscape, warm pale plain background, neutral lighting, traditional oil/acrylic painted reference treatment. Exactly SIX harness concepts in a clear 3-column by 2-row layout, generous separate space; no text, numbers, borders or watermark. Each cell contains the SAME huge animal with a different light survey harness, not different species or head variations.\nReference identity: use ONLY the BOTTOM-MIDDLE animal MN2\u20135 Veilwing in the attached sheet. Ignore the other five. Preserve its slender elongated central body, narrow pointed head with two fine antenna-like tendrils, huge broad flowing translucent cream/amber/purple-mottled sails on each side and long slender ribbon-like trailing body appendages. These are soft living wings, not solid machinery or a bird with feathered wings. Keep the graceful complete silhouette, all sail tips and tails within each cell. A small adult observer figure on or beside each harness establishes the vast animal scale; the equipment is tiny relative to the creature.\nDesign six anatomically coherent Gnosis survey harnesses that distribute load along the slender central thorax and belly without binding the moving sail roots. Everyday leather, soft padded woven straps, light wood and a little dull brass hardware; no armour, weaponry, cargo heaps or engines. Small chart cases, a simple sighting instrument or an observer seat may give purpose without becoming busy.\nTOP LEFT: two broad soft body bands support a compact open single-observer sling immediately under the centre of balance.\nTOP MIDDLE: low side-by-side paired observer seats on a slender crosspiece tucked below the belly, supported by four short straps from two padded bands.\nTOP RIGHT: one narrow longitudinal open survey cradle below the central body, a slight wooden side rail and a folded chart case; keep it much smaller than the animal.\nBOTTOM LEFT: extremely light nearly frameless woven seat with a tiny companion instrument basket, broad soft girths, a neatly secured short access rope.\nBOTTOM MIDDLE: a low fitted upper-body saddle for a prone observer between the sail roots, distributed over padded body contact, no pressure on wing membranes and no tall tower.\nBOTTOM RIGHT: two tiny fore-and-aft observers in a soft segmented belly cradle, distinct wide contact pads and a simple access ladder shown hanging beneath only this take.\nKeep each arrangement clearly different, physically attached and purposeful; don't run ropes through membranes or fasten gear to the head, antennae, tail ends or sail tips. Gentle neutral hovering/gliding reference poses, not a battle or flight scene. These are exploratory harnesses for awe-inspiring living survey flight, not airships, enclosed cabins or war mounts.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0e4e9b99-426a-4381-9148-fc8dd90448ff.png",
+      "sha256": "2340d0c414f0205e237444c5e21a6ca33f376fcda4fb1deb423be0f07b61875c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Re-inspected full resolution: all six complete silhouettes fit the sheet; upper wing tips have a narrow but intact margin. No correction required. Six harness arrangements retained for creator choice.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board"
+      }
+    },
+    {
+      "code": "S13-07",
+      "title": "Host-bound",
+      "file": "host-bound.png",
+      "kind": "painting",
+      "card": 222,
+      "description": "A translucent parasite drifts in dim water, its small internal forms catching light. This view leaves its host and exact life cycle unresolved and keeps it separate from the Shore hunter.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png"
+      ],
+      "prompt": "Use case: stylized-concept. One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging.\nUse the attached reference for ONLY the translucent parasite occupying the upper portion and the small swimming insets. Preserve its rounded almost transparent oval body, large small-ringed dark amber eye, warm red internal organs and small amber egg-like cluster visible through the skin, delicate jointed foreappendages and long fine streaming rear filaments. DO NOT depict the separate furred fish-eating Shore hunter in the lower-right, and never imply the parasite grows into it.\nCreate a single finished underwater painting of this living translucent organism drifting obliquely through dim still water. Three-quarter close view, small appendages naturally held forward and the long rear filaments carried softly by the current. Thin light from the surface passes through the body, producing a soft amber glow within and a few restrained silver edges. A darker blue-green depth and a few quiet blurred-by-water reed silhouettes establish the water without a decorative frame. Tiny suspended natural specks only, no all-over grain. One animal is enough. Eerie beauty and mild strangeness, not body horror; no wounds, blood, human host, invasion, cutaway labels, magical chains, gore or visible fish transformation.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6b4c7cab-f58c-4863-8497-7d5814053bb4.png",
+      "sha256": "ad67f6f27cd1308227c776b53286eb96fbe3087274a8c29c40bbab2deee9ecbc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Inspected generated image: selected anatomy, composition, material and lighting read clearly.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/ecological-selections-2026-11-13/e5-b-freeform.png",
+          "sha256": "bb7812a2de7f91d162352ecfb79d81b9e3530467d273f683ffb0871e561798fa"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/host-bound.png",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-08",
+      "title": "Gall season",
+      "file": "gall-season.png",
+      "kind": "painting",
+      "description": "Gall-gliders leave the plant-grown nurseries among sunlit woodland branches. Their membranes carry a quiet glide; the scene leaves their diet and wider life cycle open.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png"
+      ],
+      "prompt": "One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging. Use the attached sheet only for Gall-glider identity: small warm russet-and-cream furred animal, fine curved pointed mouth, large ears, feather-brush tail, four small clawed limbs and pale amber-veined gliding membranes. Paint a quiet release from living plant-grown galls on a woodland branch: one near focal glider launches with membranes spread, a second peers from an open leafy gall behind; a small third silhouette glides in sunlit depth. Clear organic connection of rounded woody gall to branch, fresh leaves, soft light through membranes. A living woodland moment, neither insect infestation nor spectacle. Spread membranes in a stable glide, not flapping bird wings; keep selected anatomical identity. Close branch diagonal with deep green shaded foliage and warm sunlight, no reference-sheet layout.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-330dd75d-5911-4b1c-8582-773d504e909a.png",
+      "sha256": "57c4638957e57a666782e5124ca508d81085c56beb2fe4ad9bd826e07e3d43e2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png",
+          "sha256": "5e0e41fa15362db9ee75b286544455828acb0d16b84c68d7944b93c4ea2eb064"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "error in the arms"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "error in the arms"
+      }
+    },
+    {
+      "code": "S13-09",
+      "title": "Riverfolk specimen-keeper",
+      "file": "riverfolk-specimen-keeper.png",
+      "kind": "painting",
+      "description": "A Riverfolk hydrologist studies small Ford-thread juveniles in roomy water jars beside Ambrel\u2019s canals. The juveniles retain the selected rounded face and translucent swimming body.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png"
+      ],
+      "prompt": "One finished original Breachline fantasy oil/acrylic painting, landscape 1536x1024, full bleed, no text, letters, numbers, borders, logo or watermark. Measured visible brushwork shapes weight and material. Resolve the focal animal with selective precise accents; surroundings and distance use broad quiet shapes and varied edges. Matte skin, fur, wood and rock, plausible selective water highlights. One coherent lighting idea, lively but grounded colour and readable shadow forms. No all-over grain, scratched noise, uniform microdetail, glossy CGI, photographic rendering or cartoon staging. First reference is Ford-thread anatomical identity; second and third show Riverfolk appearance only, do not copy their faces or compositions. An adult male Riverfolk specimen-keeper at a simple working bench in the shade of Ambrel's canal waterworks. Human proportions and warm brown skin, subtle small matte scales around temples and neck, fin-like ears, three delicate neck gill slits, dark tied-back hair, worn indigo work robe. His face and his careful observation are the focus; one hand resting beside an open notebook, other steadying a broad jar rim, plausible five fingers. Two large wide-mouthed glass water jars on bench, generously roomy, each with ONE small juvenile Ford-thread swimming freely, body occupying no more than a quarter of jar width. User explicitly requests juveniles, not miniature adults. Preserve rounded softly lipped face and large dark eyes, transparent amber-pink fan-shaped swimming body with fine supporting rays and internal warm red organs from reference. Glass and water have selective reflected light and clear readable animals, not opaque reflections. Pale canal architecture beyond, narrow slice of blue-and-gold civic mosaic, warm reflected light against cool shade. Quiet skilled everyday research, no laboratory machinery, no magical glow, no legible text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-22aef9e2-6af5-4ecd-bbe2-411c9a5ed4e3.png",
+      "sha256": "406e3a184fcf2a571dad9516c1336386e6ac1f1cbdb10a9c289cddd2f4f35a82",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "liked_changes_requested",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+          "sha256": "08ead837edc1c4a71a2823588f3bea52e2e11eedc6d5297063b2a60895fbb7ed"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-round-12-2026-11-13/01-r1-morning-shift-v2.png",
+          "sha256": "43b8bb8451c661d0082b4dc73fa9c5123ca70a4c496e3eb25dbeff2e52e4d9e6"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        }
+      ],
+      "creator_review_round_1": {
+        "decision": "like",
+        "notes": "one should have the adult"
+      },
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": "one should have the adult"
+      }
+    },
+    {
+      "code": "S13-E1",
+      "title": "Eel-netter \u00b7 Hooktail",
+      "file": "eel-netter-hooktail.png",
+      "kind": "edit",
+      "original": "art/eel-netter.png",
+      "description": "A Hooktail fishes quietly in the reeds beyond the netter. Its spotted fur and fully furred curled tail place an established animal in everyday village life.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png"
+      ],
+      "prompt": "Edit the FIRST attached painting with one small localized addition, preserve its 1536x1024 landscape composition, painterly style and existing details. Add one Hooktail from SECOND identity reference at the far right midground waterline, below the distant stilt houses and well behind the netter's trap. Small but recognizable, crouched on a muddy reed bank looking into water, webbed feet, russet spotted otter-like fur, long FULLY FURRED curled prehensile tail, no scales on tail. Warm sunset rim light matching scene, soft midground edges. Keep the woman, her face, ears, hands, clothing, basket trap, wooden stake, foreground reeds, houses, light and framing unchanged. Wildlife is subordinate, not beside her face or across her trap. No text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ce5cc82b-64b3-45c1-b08c-01c66186c861.png",
+      "sha256": "133b7a79bdd9c4e917374384f261635cd01db09368955c6beffc09146b6b8833",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png",
+          "sha256": "5358a1e745f5f4dfdb63ed4e3d4005bb412e52cb9dcb1a3fd8383ed6135e974a"
+        }
+      ],
+      "original_preview": "originals/eel-netter.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too obvious and changes composition of painting"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too obvious and changes composition of painting"
+      }
+    },
+    {
+      "code": "S13-E2",
+      "title": "Ferry-keeper \u00b7 Shore hunter",
+      "file": "ferry-keeper-shore-hunter.png",
+      "kind": "edit",
+      "original": "art/ferry-keeper.png",
+      "description": "A Shore hunter watches the water from distant coastal rocks. The keeper, passengers and rope crossing retain the painting\u2019s focus.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/ferry-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png"
+      ],
+      "prompt": "Edit FIRST attached painting with one localized background addition, preserve 1536x1024 landscape and all original painting qualities. On far-right shore rocks, behind and to right of keeper's head, add one small Shore hunter using SECOND attachment only for anatomy: low quadruped, long narrow pointed head, russet feather-scale coat, cream underside, long feathered tail, four long-toed legs. Side profile crouched watching water, subordinate but recognizable, about 7 percent of image width; clear space between silhouette and keeper. Match cool northern coastal light and distant edges. Preserve entire Greyhide keeper with face/pose/cloak/hands, rope, boat and all passengers, water, mountains and framing. No extra animal, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-f1351e3d-0e00-49b4-adb0-bb0e08e225a2.png",
+      "sha256": "51b3e4468473f44e9da494451be3583abef2b7b1e1363739f4c46127d1eea2fb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected generated image: requested animals present, selected identity recognizable, composition and lighting coherent; no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/ferry-keeper.png",
+          "sha256": "912d1a08d8aa82f2483f2e4c2644a334ae6cc83c078905d02771cf3fbd9efb06"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er6.png",
+          "sha256": "30cb5d6204c16fbee5f7fedf1e23871cef842ef3124d906b373e0c1e98d10f24"
+        }
+      ],
+      "original_preview": "originals/ferry-keeper.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too cold for shore hunter"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too cold for shore hunter"
+      }
+    },
+    {
+      "code": "S13-E3",
+      "title": "Floodplain farmer \u00b7 Tasselstrides",
+      "file": "floodplain-farmer-tasselstrides.png",
+      "kind": "edit",
+      "original": "art/floodplain-farmer.png",
+      "description": "Three Tasselstrides pick seeds along a dry bank beyond the flooded field. The farmer and harvest remain the main subject.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add three small knee-high Tasselstrides on a narrow drier bank in the upper-left midground beyond the farmer's shoulder, one bending to pick seeds, two loosely spaced. Use ONLY creature 2 TOP MIDDLE of second attachment as identity: pale cream shaggy feather-like covering, curved long neck, small short beaked face, two stout scaly feet, darker hanging wing/tassel tips and modest tail. Keep their biped body plan, do not turn them into chickens or ordinary cranes. Small enough for their distance and subordinate to farmer, visible against grey-blue flooded field. Preserve the farmer's sheaf, both hands, wooden rack and all foreground detail.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-bd513127-795c-41ff-b2ef-e850a4193347.png",
+      "sha256": "bd57acd582e59ec394fa41c70812cd6a8a766eb48b24b6144c2a7415a000f899",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+          "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "original_preview": "originals/floodplain-farmer.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there"
+      }
+    },
+    {
+      "code": "S13-E4",
+      "title": "Master mason \u00b7 Quillheel",
+      "file": "master-mason-quillheel.png",
+      "kind": "edit",
+      "original": "art/master-mason.png",
+      "description": "A Quillheel browses a sparse plant on an upper quarry ledge. Its feathered back and four-footed stance introduce wildlife without competing with the mason.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add one cat-sized Quillheel high on the right quarry ledge above the distant workers, about 8 percent of picture width. Use ONLY creature 6 BOTTOM RIGHT of second attachment for identity: four-legged animal, upright arched neck and small beaked head, slate-blue overlapping feather-like back covering, tan neck and four scaled legs with broad toes, short tapered tail. Side profile browsing one small scrub plant growing from a stone crack. Match warm quarry sunlight and atmospheric background brushwork. Do not give it wings, two legs or huge predatory claws. Keep mason, huge shoulder hammer, workers and blocks unchanged.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8cafd687-c2cb-414a-a52a-30b160e1262c.png",
+      "sha256": "2315b0dab8064c37c51e0deeac5029548602d835b240bfae0a6e0b5667093a41",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+          "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "original_preview": "originals/master-mason.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much"
+      }
+    },
+    {
+      "code": "S13-E5",
+      "title": "Salt-road caravaneer \u00b7 Salt-flat migrants",
+      "file": "salt-road-caravaneer-migrants.png",
+      "kind": "edit",
+      "original": "art/salt-road-caravaneer.png",
+      "description": "Salt-flat migrants replace the cattle beside the caravan\u2019s wagons. Their high shaggy rumps, long legs and low heads keep the salt-road draft animals distinct from the new ox-like proposal.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/salt-road-caravaneer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Replace ONLY the two ordinary horned cattle standing just behind the woman and child at right with two Salt-flat migrants. Use creature 5 BOTTOM MIDDLE in second attachment as exact identity: very tall narrow body with high rust-and-cream shaggy hindquarters/rump, four long thin weight-bearing legs and broad padded toes, long downward-reaching neck with small soft-lipped head carried low, no horns. Clear atypical high-backed silhouette, realistic joint/load logic. Light plain fitted draft straps connect at chest/body to wagon traces, unobtrusive. Taller than the humans, but in middle distance; keep woman and child fully visible in front of them. Preserve caravaneer foreground face, armor, hands, sword, wagon/salt sacks/canvas, all family members, small far riders, salt plain, blue sky and sun.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-9e46731b-7f59-482e-8b98-256f148f1e78.png",
+      "sha256": "8026b0565ef6d101e2bc25397b22af4abd6edc32098c03c3feaef4e4b696cd2e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/salt-road-caravaneer.png",
+          "sha256": "6b1dd2cbe9682d03a0cf1783cf69f9b8d16f3b1a9ad2065a14faf6ecdd63955e"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+          "sha256": "c1ce74473e1cbb95bd88775367b8064b717fc2bd6b101bcf2e74c21674b5c271"
+        }
+      ],
+      "original_preview": "originals/salt-road-caravaneer.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": ""
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-E6",
+      "title": "Longhouse keeper \u00b7 Moltwalker",
+      "file": "longhouse-keeper-moltwalker.png",
+      "kind": "edit",
+      "original": "art/longhouse-keeper.png",
+      "description": "A Moltwalker searches the stony shore outside the longhouse. Its plated shell and jointed walking legs become a small part of the keeper\u2019s coastal surroundings.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png"
+      ],
+      "prompt": "Edit the FIRST attached finished painting, landscape 1536x1024. Preserve its original composition, character, face, pose, hands, costume, lighting, painterly brushwork, environment and framing. Make only the requested wildlife change with physically coherent scale and matching depth/edges. No text.  Add one small Moltwalker on the exposed stony shore through the right doorway opening, toward lower right beyond the timber post and away from keeper's hand. Second attachment gives identity: amber overlapping leaf-like armored carapace held above ground on eight slender angular walking legs, small crustacean face/antennae and paired little front claws. Search among kelp and pebbles in side three-quarter view, grounded feet, subtle cool coastal light; animal roughly 10 percent picture width, understated but recognizable. No giant monster size, no bright gold glow, no extra shell needed. Preserve the Greyhide keeper, his hands, expression and clothing, heavy timber doorway, warm interior, cold water and snowy mountains.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4f5273df-60cf-468b-86ba-42ce6aa59975.png",
+      "sha256": "0fdc0b91b84b779ea014e070547c2e431b388034b2d40375e372e723b19b469e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Inspected against original and animal reference: focal person/environment retained, requested animal identity and position read clearly, no blocking defect.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+          "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png",
+          "sha256": "5a0d76abd146106382998510f86de76954e0b1be5c4c9f77f68566393e9fe996"
+        }
+      ],
+      "original_preview": "originals/longhouse-keeper.png",
+      "creator_review_round_1": {
+        "decision": "reject",
+        "notes": "dont like the changes to the composition overall, addition here was better"
+      },
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "dont like the changes to the composition overall, addition here was better"
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "code": "S13-05-R2",
+      "base": "S13-05",
+      "title": "Fanback \u00b7 four-leg correction",
+      "file": "fanback-v2.png",
+      "kind": "painting",
+      "description": "The liked valley composition, fans and sense of scale are retained. The duplicate middle leg is removed so the body rests on four connected limbs.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/fanback.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the attached painting only to correct its extra leg. The Fanback must have exactly FOUR total legs, two front and two rear. In this image there is an extra central upright leg with a broad foot around x=885,y=801, between the slimmer far foreleg at x=745 and the rear leg at x=1000. Remove that extra central leg entirely, from its underside attachment down to its foot, and reveal the existing distant valley/grass through that gap. Retain the four legs with feet approximately at x=550, x=745, x=1000 and x=1235, their coherent joints and grounded contacts. Preserve every other aspect: exact long body, head/tendrils, all fans, foliage, traveller, valley, framing, lighting, palette and measured painted texture. No new feet, no new limbs, no redesigned creature. 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-7d771a4c-3965-4400-9fe1-7d8549573bda.png",
+      "sha256": "fe1419d8ad18ca74ac2ded008be6a3654286217a3b81f6e22e69f055f9c916ea",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Counted four complete legs and removed duplicate center leg; fans, traveller and valley retained.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/fanback.png",
+          "sha256": "ed70013e480293629f815eecf201211064a3710d4858096ddce30b94c23fd843"
+        }
+      ],
+      "previous_file": "fanback.png",
+      "creator_request": "has an extra leg\n",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/fanback-v2.png"
+    },
+    {
+      "code": "S13-08-R2",
+      "base": "S13-08",
+      "title": "Gall season \u00b7 connected forelimbs",
+      "file": "gall-season-v2.png",
+      "kind": "painting",
+      "description": "The gliding moment and leafy nurseries are preserved. The foreground animal now has one connected pair of membrane-bearing forelimbs and one pair of hind legs.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/gall-season.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png"
+      ],
+      "prompt": "Use case: precise-object-edit. FIRST image is the liked Gall season painting to correct. SECOND image is selected identity only. Fix ONLY the arm anatomy of the large foreground flying Gall-glider, keeping its face, fur, tail, silhouette, wing shape and the whole painting composition. Give this animal exactly four limbs: two hind legs trailing below the rear body and ONE left/right pair of forelimbs that extend outward from the shoulders to support its two gliding membranes. Each forelimb must trace continuously from shoulder through elbow to one wrist/hand at the membrane's outer leading edge. Remove the two duplicate dangling forearms/paws underneath the chest (near image x=1100,y=390 and x=1240,y=460); smoothly restore furry chest and air there. Those cannot coexist with the membrane-bearing forearms as extra arms. No detached hands, merged wrists or extra digits. Keep membranes translucent, selected orange/cream coat and all galls/other animals/branch/light/background exactly as they are. Painted oil/acrylic, 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-58028ca3-d146-46fa-9710-627ab1336da1.png",
+      "sha256": "b56e7e14d71652d4cc45544528a6a5ecf5785e6b2c5433d333619d3d28183555",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Two membrane-bearing forelimbs and two trailing hind legs; duplicate dangling forepaws removed.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/gall-season.png",
+          "sha256": "57c4638957e57a666782e5124ca508d81085c56beb2fe4ad9bd826e07e3d43e2"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er2.png",
+          "sha256": "5e0e41fa15362db9ee75b286544455828acb0d16b84c68d7944b93c4ea2eb064"
+        }
+      ],
+      "previous_file": "gall-season.png",
+      "creator_request": "error in the arms",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/gall-season-v2.png"
+    },
+    {
+      "code": "S13-09-R2",
+      "base": "S13-09",
+      "title": "Specimen-keeper \u00b7 adult and juvenile",
+      "file": "riverfolk-specimen-keeper-v2.png",
+      "kind": "painting",
+      "description": "The left jar keeps a small juvenile. The larger right-hand vessel now shows a mature Ford-thread, with the broad developed translucent body and rounded face from the selected reference.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/riverfolk-specimen-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png"
+      ],
+      "prompt": "Use case: precise-object-edit. FIRST image is liked painting; SECOND is Ford-thread anatomy reference. Creator's latest correction: one vessel should contain the ADULT. Change only the animal in the larger RIGHT-HAND jar into a mature Ford-thread using the TOP LARGE animal from second reference: broad fully developed pink-amber translucent fan-like body with fine supporting rays, warm internal organ shapes, small rounded face and softly rounded lips. Make it noticeably larger and deeper-bodied than the juvenile at left, occupying about half the usable jar width and kept clearly within its generous water volume, not touching walls. The left jar retains its existing small juvenile unchanged. Preserve exact keeper identity, face, neck gills, ears, pose, hands, clothing, both glass vessels, bench, notebook, waterworks, framing, colour, lighting and painterly detail. The mature animal should read as the selected grown form, not simply another small swimmer. 1536x1024, no text.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2e16f537-7845-4131-bb6b-04cda3038d0a.png",
+      "sha256": "7c1b1ecdce7c5500323680a9c12fbe256ce793f4ff324ed34d9b9f18b9aa774e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Adult broad-bodied form in right jar; small juvenile remains at left. Person and scene retained.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/riverfolk-specimen-keeper.png",
+          "sha256": "406e3a184fcf2a571dad9516c1336386e6ac1f1cbdb10a9c289cddd2f4f35a82"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/er5.png",
+          "sha256": "08ead837edc1c4a71a2823588f3bea52e2e11eedc6d5297063b2a60895fbb7ed"
+        }
+      ],
+      "previous_file": "riverfolk-specimen-keeper.png",
+      "creator_request": "one should have the adult",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/riverfolk-specimen-keeper-v2.png"
+    },
+    {
+      "code": "S13-06-R2",
+      "base": "S13-06",
+      "title": "Veilwing \u00b7 giant with back harness",
+      "file": "veilwing-back-harness-v2.png",
+      "kind": "reference",
+      "description": "A single huge Veilwing carries a plain fitted leather harness over its back. Tiny figures remain on the ground for scale; the animal has no riders, hanging seats or passenger platforms.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create one corrected creature-and-harness reference illustration, 1536x1024 landscape. Required identity is ONLY creature number 5 BOTTOM MIDDLE of attached sheet, the Veilwing: very slender pointed central body, huge cream/amber/lavender translucent broad sails, delicate forked head feelers and long ribbon-like rear streamers. Ignore the other five creatures. Preserve its unusual precise body plan and selected wing shapes. Creator correction: this creature is HUGE, a truly massive aerial animal, not a small mount. One dominant full-body three-quarter view against quiet pale sky and distant low ground; entire wings and streamers fit with margins. Include only two minute 7\u20139 pixel-tall human silhouettes far beneath it on the ground to communicate enormous scale; none aboard. A simple EMPTY LEATHER HARNESS runs OVER ITS BACK, conforming along the top of the narrow central body with fitted wide leather straps and restrained buckles; straps fasten around robust torso, clear of thin sail membranes and their moving roots. Leather is matte worn brown, tiny fastenings scaled to the giant. No person anywhere on creature, no seats, no basket, no gondola, no platform, no cargo, no instruments, no reins held by people, no decorative cloth or armor. The animal itself dominates; do not shrink it to make its tack read. Painterly oil/acrylic reference, calm neutral light, selective detail, no text or numbers.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-f5503048-1625-4342-bd1b-4ae149632f01.png",
+      "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Single huge animal, empty leather back harness, two ground scale figures, no people aboard.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/final-animal-selections-2026-11-13/mn2-freer-giants.png",
+          "sha256": "99bee5e10f33ed65caafb7a6f331b2e3332e0937f3e17cc187ea72d79d31b206"
+        }
+      ],
+      "previous_file": "veilwing-harness-lineup.png",
+      "creator_request": "got the scale wrong, this thing is huge. harness should ne leather over the back. no people on board",
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": "lets do an anatomy study of this guy real quick. the wing facing us has an orientation that doesnt quite make sense. align the wings in study"
+      }
+    },
+    {
+      "code": "S13-E1-R2",
+      "base": "S13-E1",
+      "title": "Eel-netter \u00b7 quieter Hooktail",
+      "file": "eel-netter-hooktail-v2.png",
+      "kind": "edit",
+      "original": "art/eel-netter.png",
+      "original_preview": "originals/eel-netter.png",
+      "description": "A small Hooktail is mostly hidden by the mid-distance reeds and water. Only its muted head and a little furred tail shape are suggested, keeping the netter and trap dominant.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Add one SMALL SWIMMING Hooktail in the existing right-side reed shallows, in the narrow middle-distance water gap below the houses, well behind the trap. Show only a 25\u201335-pixel-wide soft brown head above water, with a faint low back shape partly hidden by reeds and a barely suggested furred tail curve; total visible animal footprint no more than 65 pixels wide. Use reference's spotted warm-brown fur, rounded muzzle, and fully FURRED tail. No raised bank or rock; its body is in the existing water. Do not make a full-body animal vignette. Integrate it into the same low-contrast brown-grey marks as the reeds and reflections; easy to miss at first glance, coherent on closer look. Leave all existing original marks elsewhere intact.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0f33bbe9-efc9-41f7-ab46-0726b637bd79.png",
+      "sha256": "da4dbcc54cea700b66998a8117384d9ad0703b9c92fe7685ec75df60fa80334c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small submerged head/back and furred tail suggestion; no added bank. Main composition retained, with minor brushwork drift from image generation.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/eel-netter.png",
+          "sha256": "ba8c79f099b9c8644afc0c5861d900952b357703cb7df6d58303ea9c0d9e871d"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/04-hooktail-reference.png",
+          "sha256": "5358a1e745f5f4dfdb63ed4e3d4005bb412e52cb9dcb1a3fd8383ed6135e974a"
+        }
+      ],
+      "previous_file": "eel-netter-hooktail.png",
+      "creator_request": "too obvious and changes composition of painting",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/eel-netter-hooktail-v2.png"
+    },
+    {
+      "code": "S13-E3-R2",
+      "base": "S13-E3",
+      "title": "Floodplain farmer \u00b7 distant Tasselstrides",
+      "file": "floodplain-farmer-tasselstrides-v2.png",
+      "kind": "edit",
+      "original": "art/floodplain-farmer.png",
+      "original_preview": "originals/floodplain-farmer.png",
+      "description": "Two tiny Tasselstrides are suggested at the existing far field edge, with their feet obscured by vegetation. The flooded foreground remains water, without an invented island or new bank.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Use ONLY animal 2 TOP MIDDLE of second sheet, Tasselstride: shaggy cream feather-like covering, curved neck, small short-beaked head and two stout legs. Place TWO very distant tiny Tasselstride shapes at the EXISTING far field/vegetation boundary on the extreme upper-left horizon, around x=75,y=250 and x=130,y=245. Each whole animal only 12\u201318 pixels tall in the 1536x1024 painting, with feet hidden in the already present distant vegetation. They are faint grey-cream two-or-three-stroke silhouettes, not sharply rendered miniatures. Do not put them into the near or middle flooded field: there is NO land there. Do not add any island, bank, dyke, ridge, perch or new terrain. Preserve original water area and horizon exactly. Tiny signs of life within the existing landscape, not a cluster that pulls the eye.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8d0fc5e1-12bc-48da-aa86-a0123ca1847d.png",
+      "sha256": "2607f94b366e2fcf856ffe08a512e654b144a44c03ee1a4e10e9801758104138",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "rejected_image",
+      "visual_check": "Two distant muted forms at existing far vegetation edge; no new foreground or midground bank. Main figure composition retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/floodplain-farmer.png",
+          "sha256": "56fad31e5c1562dcdf5d893eb5790d4e54bb3c3a7b6befa32b8bd979ad3d9d60"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "previous_file": "floodplain-farmer-tasselstrides.png",
+      "creator_request": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much - also there isnt land there",
+      "creator_review_round_2": {
+        "decision": "reject",
+        "notes": ""
+      }
+    },
+    {
+      "code": "S13-E4-R2",
+      "base": "S13-E4",
+      "title": "Master mason \u00b7 distant Quillheel",
+      "file": "master-mason-quillheel-v2.png",
+      "kind": "edit",
+      "original": "art/master-mason.png",
+      "original_preview": "originals/master-mason.png",
+      "description": "A small, loosely painted Quillheel blends into the stone colours on an existing upper ledge. It carries far less contrast and detail than the mason.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Use ONLY animal 6 BOTTOM RIGHT of second sheet, Quillheel: small four-footed rock browser, arched neck, short beaked head, slate feather-like back. Add ONE tiny Quillheel on the existing high right ledge at approximately x=1375,y=252. Whole animal no more than 45 pixels wide and 33 pixels high: a few muted grey-ochre brush marks matching the neighboring ledge and haze. Lower its head toward the existing stone crack; feet supported by existing ledge. Do not add any brightly detailed plant or separate grassy patch. Four-leg stance only suggested, never highly outlined. The distant quarry workers should be clearer and more detailed than this animal. Do not change the mason, shoulder hammer, quarry blocks or lighting.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8f5cfc23-7a30-4b59-ba9d-63b1b8116b1c.png",
+      "sha256": "f82e88c29d7cd4154512ade3978f5279aa237dbdb19cc55842297cad06729cf5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small low-detail animal on existing upper ledge; less intrusive than first edit. Figure and quarry composition retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/master-mason.png",
+          "sha256": "0e7f0f7d3bd8728e4cf9c2fb308e12a51118fbd664ece103fa75f7bc75156ee9"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-new-combinations-2026-11-13/01-new-ground-dwellers.png",
+          "sha256": "e933803c4a94967d8912c1efe3b6529dada2daa2826d0b1e4671e0aec01765e6"
+        }
+      ],
+      "previous_file": "master-mason-quillheel.png",
+      "creator_request": "too intrusive. try adding it as a less detailed version so it doesnt stick out so much",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/master-mason-quillheel-v2.png"
+    },
+    {
+      "code": "S13-E6-R2",
+      "base": "S13-E6",
+      "title": "Longhouse keeper \u00b7 quiet shore Moltwalker",
+      "file": "longhouse-keeper-moltwalker-v2.png",
+      "kind": "edit",
+      "original": "art/longhouse-keeper.png",
+      "original_preview": "originals/longhouse-keeper.png",
+      "description": "A subdued Moltwalker sits among the existing beach stones beyond the doorway. The keeper\u2019s silhouette, timber framing and snowy coast are preserved from the original composition.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png"
+      ],
+      "prompt": "Use case: compositing. FIRST attachment is the original approved painting and exact edit target. SECOND attachment provides animal identity only, never its reference-sheet level of detail. Make an extremely small local wildlife addition. The creator rejected earlier attempts because animals stood out and the painting changed. Preserve ALL original composition and drawing, facial features, head/hand positions, body contours, clothes, framing, colour, broad brushwork and environment. No global repaint, changed crop, moved person, added land or reshaped scenery. The new animal must use the SAME large soft brush marks, muted values and low detail as the nearby background, without crisp eyes, feather hairs, bright rims or dark outlines. 1536x1024, no text.  Add one small Moltwalker on existing stony beach through the right doorway opening, around x=1350,y=865, no more than 80 pixels wide and 45 high. Identity from second reference: low amber overlapping leaf-like carapace elevated on thin angular walking legs, tiny crustacean face and little front claws. Paint it with only a few broken muted ochre-grey strokes matching surrounding pebbles, soft edges and unobtrusive contrast. Ground its fine legs on those existing stones. No extra shell, no new boulder, no new scenery. Especially preserve original keeper's exact outline, head size and location, both hands, original dark warm room, the vertical timber-post edge at x=1100, the doorway width and original sea/horizon/cold mountain composition. The addition occupies only the little beach patch; nothing else should be redrawn.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-8535a2eb-ad39-478d-a3fb-edc7d065364f.png",
+      "sha256": "58fdcfb4f00e76b2eb53b93787cadfc00594932588ba4cbc8e08ea5a54d72e8a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generation_status": "complete",
+      "review_status": "accepted_image",
+      "visual_check": "Small Moltwalker among existing beach stones; doorway and keeper silhouette retained, with minor brushwork drift.",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/longhouse-keeper.png",
+          "sha256": "aa10c8dae3bac35281717ab4fb81651dca776496c36070b35698b8c4435f331a"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/02-moltwalker-reference.png",
+          "sha256": "5a0d76abd146106382998510f86de76954e0b1be5c4c9f77f68566393e9fe996"
+        }
+      ],
+      "previous_file": "longhouse-keeper-moltwalker.png",
+      "creator_request": "dont like the changes to the composition overall, addition here was better",
+      "creator_review_round_2": {
+        "decision": "like",
+        "notes": ""
+      },
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/longhouse-keeper-moltwalker-v2.png"
+    }
+  ],
+  "round_2_scope": {
+    "revisions": 8,
+    "accepted_unchanged": [
+      "S13-01",
+      "S13-02",
+      "S13-04",
+      "S13-07"
+    ],
+    "rejected_without_retry": [
+      "S13-03",
+      "S13-E2",
+      "S13-E5"
+    ],
+    "ox": "Undecided, unchanged",
+    "live_card_installation": false
+  },
+  "soft_wildlife_direction": "When a scene naturally suggests it, consider an animal from the established world as a small, fitting discovery. Let the composition and setting lead; this is an occasional possibility, never a requirement or a quota.",
+  "round_3_scope": {
+    "accepted_total": 12,
+    "new_anatomy_study": "S13-06-R3 accepted in chat",
+    "supporting_projection_check": "S13-06-R3B separately reviewable",
+    "final_veilwing_painting": "S13-06-P1 ready for review",
+    "farmer_revision": "S13-E3-R2 rejected, no further retry",
+    "live_installation": false
+  }
+}

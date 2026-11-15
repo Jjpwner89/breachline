@@ -1,0 +1,77 @@
+{
+  "batch": "Set 16 gentler mouth exploration",
+  "date": "2026-11-15",
+  "brief_revision": 9,
+  "brief_source": "BRIEFS-animal-mouths-revision-9.md",
+  "brief_sha256": "93bacdb45c2b07844f333b19490a626695d303b8b9ffc1207d4b68be30a3daa2",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "feedback": "animal-feedback-round3.json",
+  "generator": "built-in image_gen",
+  "status": "superseded_by_predatory_revision_v2",
+  "claimed_by": "this chat",
+  "scope_assumption": "Superseded: creator explicitly confirmed New heavyweight animals.",
+  "items": [
+    {
+      "code": "M21-C",
+      "concept_codes": [
+        "M21-13",
+        "M21-14",
+        "M21-15"
+      ],
+      "stage": "lineup_mouth_function_study",
+      "file": "m21-mouth-exploration-c.png",
+      "prompt": "Use case: stylized-concept. Original Breachline wildlife mouth exploration. One landscape 3:2 traditional painted reference plate, arranged in THREE equal COLUMNS and TWO equal ROWS. Exactly THREE new powerful heavyweight animals, with two views of each animal in its own column: TOP ROW the complete animal at ease with mouth closed; BOTTOM ROW a larger head-and-neck view of that SAME animal quietly feeding, so its unusual mouth function is clear. Keep each view comfortably inside its cell. No printed text, numbers, panel lines or border.\nThe aim is alien but appealing biological inventiveness, LESS FRIGHTENING than horror creatures. Intelligent-looking natural eyes, relaxed posture, matte organic materials, no threat display or grin, no biomechanical tubes or skeletal carapace, no slime, no gore. Each new species has its own compelling whole-body architecture, covering and distribution of mass. These are animals living normally, not monsters posing. Invent the bodies, palettes, skulls, habitats and details freely; do not make three recoloured versions of the same beast. Keep plausible support, attached feeding structures and clear ground contact.\nLEFT COLUMN: explore a mouth with four short rounded outer jaw-lobes that lie folded together as a compact muzzle at rest. In the lower feeding view they open laterally to steady an ordinary piece of fruit while a smaller central mouth feeds. The outer parts are supple muscular animal tissue with modest keratin contact pads rather than spiky claws; keep the feeding face appealing and recognisably the same head as above. Invent the rest of the animal freely.\nMIDDLE COLUMN: explore a second small oral gripping structure that sits safely inside the normal mouth and can advance a SHORT distance to bring food inward. Top view looks like a calm unfamiliar animal with an ordinary closed-mouth silhouette. Lower view makes the short inner grip visible collecting a fallen nut or small food piece, with rounded crushing contacts rather than long needle teeth; no long projectile jaw and no mechanical telescoping tube. Invent a wholly different animal around this function.\nRIGHT COLUMN: a genuinely FREEFORM third answer to this same brief. Invent an integrated feeding mouth that folds, grips or works in more than one stage, with its own distinct anatomy rather than repeating either left or middle. Show closed/resting above and use below. Body, palette and ecological niche remain entirely your choice. It must feel like wildlife and less alarming than a horror film creature.\nTop full-body views include a small unarmed adult human standing safely apart on the same ground plane as a clear size reference. Bottom views are close enough to understand the mouths, not anatomical cutaways. A warm ivory background with minimal hints of ground. Traditional oil/acrylic fantasy painting, varied visible brushwork, selectively precise mouths and eyes, broader softer secondary shapes, coherent gentle daylight. Different organic coverings across the three; not glossy 3D or cute toy art. No familiar franchise creature, no armour, weapons, saddles, humanlike bodies, captions, watermark or signatures.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-73b36850-2d7c-456d-b13b-df53d3ea7241.png",
+      "sha256": "d94b3f32f99066378077e558ae28ffaa5783fcd61f389e9e760009c22fceb975",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "concepts": [
+        {
+          "code": "M21-13",
+          "name": "Fruitclasp",
+          "cell": 1,
+          "description": "Four rounded mouth lobes fold into a compact muzzle, then spread to steady a piece of fruit around a smaller central mouth. This tests an outer-jaw arrangement through calm feeding; the animal\u2019s wider diet and habitat remain proposals."
+        },
+        {
+          "code": "M21-14",
+          "name": "Nutgrip",
+          "cell": 2,
+          "description": "At rest, this broad animal has a simple closed muzzle; while feeding, a short fleshy inner grip reaches forward around a nut. The proposal keeps the second-mouth idea compact and useful, with exact jaw mechanics still open."
+        },
+        {
+          "code": "M21-15",
+          "name": "Splitbill",
+          "cell": 3,
+          "description": "A feathered animal opens its divided beak around berries, exposing a soft segmented feeding surface inside. This freeform take explores a mouth that works in stages, with its diet, body scale and ecological role still open."
+        }
+      ],
+      "status": "generated",
+      "review_status": "awaiting_creator_selection",
+      "assistant_review": "Inspected paired views for same-animal continuity, connected mouths, food contact, relaxed expressions and unaltered M20. Left shows four outer lobes holding fruit; middle shows a short internal grip around a nut; right has an opened beak and segmented inner feeding surface. Body mass is most substantial in the middle concept; the right is a lighter-built large animal. These are mouth exploration proposals, not finalized anatomy or card selections."
+    }
+  ],
+  "gallery": "animal-mouths-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T18:31:37.383231+00:00",
+  "scope_confirmation": "New heavyweight animals; M20 unchanged.",
+  "brief_status_update_sha256": "cd5b260fda82ae81b25f425cd67d5181b8659557cb51b8f5e5a70cece3144397",
+  "gallery_status": "visually_verified_ready_for_creator_review",
+  "gallery_review": {
+    "date": "2026-11-15",
+    "checks": [
+      "Three stable column codes M21-13\u201315 render clearly.",
+      "Closed mouth and feeding views are visible for all three animals.",
+      "Individual concept descriptions and earlier-gallery links are present.",
+      "M20 original image hash remains unchanged."
+    ],
+    "url": "http://127.0.0.1:8796/animal-mouths-review.html"
+  },
+  "latest_creator_feedback": "animal-feedback-round4.json",
+  "superseded_by": "animal-mouths-round4-manifest.json",
+  "historical_gallery": "animal-mouths-v1-review.html"
+}

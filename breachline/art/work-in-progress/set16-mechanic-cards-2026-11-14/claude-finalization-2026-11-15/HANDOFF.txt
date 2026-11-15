@@ -1,0 +1,73 @@
+SET 16 ANIMALS — CREATOR HANDOFF TO CLAUDE FOR FINALIZATION
+15 November 2026
+
+Creator request: "let's send the first design and the other one to claude to finalize."
+Exact clarification: "m20-r1 and number 2 with the articulated legs"
+
+THE TWO CHOSEN DESIGNS
+1. M20-R1, the adult and cub; source M20-5. Current image version 1.
+2. M21-23, number 2 in the latest heavyweight shortlist; feathered animal with articulated legs.
+   Current image version 5 includes the creator's subsequent bear-claw refinement.
+   The original articulated-leg v2 is included as support, not as a competing current choice.
+This handoff does NOT select Highneck / M21-22 or the mane-backed M21-26.
+
+REQUEST TO CLAUDE
+Please take these two chosen animal designs through finalization using the current
+shared art workflow. Preserve their visual identities and the latest local corrections.
+Reconcile the chosen references with the animal guide/index, ecology and relevant
+card/design records, retaining genuinely unresolved details as open rather than
+inventing creator approval. Treat working names as proposals unless separately settled.
+These are reference paintings; no finished card scene or live installation is claimed.
+Installation and publishing remain separate from this finalization handoff.
+
+READ FIRST
+/Users/dpuser/Documents/Claude/Games/AGENTS.md
+/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/BRIEF_WORKFLOW.md
+/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md
+/Users/dpuser/Documents/Claude/Games/breachline/SETTING.md
+/Users/dpuser/Documents/Claude/Games/breachline/ANIMAL_REFERENCE_HANDOFF.txt
+/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET16.md
+/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/CARD_PROPOSALS.md
+
+M20-R1 — ADULT AND CUB
+Chosen image: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/m20-hearthmantle-adult-cub-v1.png
+Original WIP: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-hearthmantle-adult-cub-v1.png
+SHA-256: b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88
+Exact prompt and original reference: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-followup-round2-manifest.json
+Card: 244 / M20 / foldstride, Genesis / Elder Herd; replacement animal name to follow finalization.
+Creator-established ecology: omnivorous "super bear" life cycle; mostly forest,
+also hills and plains; a small cub grows into a much heavier adult.
+Keep the broad adult, enormous paws, rounded face, layered russet/cream mantle
+and recognizably same-species cub. The creator specifically kept mouth experiments
+separate from M20.
+Brackenmaw is the assistant-proposed replacement for Hearthmantle; name not confirmed.
+Exact size, growth rate, lifespan, breeding, hibernation and mantle biology remain open.
+
+M21-23 — NUMBER 2, FEATHERED HEAVYWEIGHT
+Chosen current image: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/m21-23-feathered-heavyweight-v5.png
+Original WIP: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v5.png
+SHA-256: 1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29
+Exact current edit prompt and input: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-bear-claws-round11-manifest.json
+Supporting articulated-leg v2: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/m21-23-feathered-heavyweight-v2.png
+Three preferred-body revision prompts: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-preferred-round8-manifest.json
+Card: 245 / M21 / saltmigrant, Genesis / Elder Herd; final new animal name remains open.
+Keep the elevated neck and crest, slate/cream/ochre feathered body, compact closed
+muzzle, powerful articulated legs and broad furred forepaws with visible stout,
+gently curved bear-like claws. The v3 talons were too much; v4's tiny claw tips
+were refined toward bear claws in v5. Do not restore the original dangling mouth.
+Diet, habitat, exact size and life cycle have not been fixed.
+Do not transfer M20's established omnivorous forest ecology onto this animal.
+
+REVIEW AND PROVENANCE
+Combined two-image review: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/index.html
+Heavyweight history: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-preferred-revisions-review.html
+Adult and cub review: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-followup-review.html
+Exact creator selection: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-feedback-round12.json
+Package manifest: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/manifest.json
+Generation history and other card states: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json
+
+DELIVERY
+This handoff and byte-identical images are saved in the shared main Games repository.
+A copy of this handoff is also in the originating card checkout's breachline/art folder.
+Direct Claude UI access was not approved; no Claude chat message has been sent.
+Preserve unrelated concurrent changes. M2 remains final. Periodic checking stays off.

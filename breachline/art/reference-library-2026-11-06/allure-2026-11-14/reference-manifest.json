@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-14",
+  "purpose": "Exact painting references for Breachline Allure",
+  "path_base": "repository root",
+  "selection_scope": "Character-presentation references. Existing image, lore and live-card statuses otherwise remain unchanged.",
+  "new_generation_performed": false,
+  "references": [
+    {
+      "title": "Street Conjurer — blue-dress variant",
+      "path": "breachline/art/reference-library-2026-11-06/allure-2026-11-14/street-conjurer-blue-dress.png",
+      "sha256": "d7753b55c0454b77df98ef0846cc3da4a6d16f6de4a5e5302965187d2310d4a1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_role": "Relaxed daylight glamour, draped neckline, ring-fastened straps and casual spellcasting",
+      "selected_for": "Breachline Allure skill",
+      "visual_inspection_date": "2026-11-14",
+      "source_file": "/Users/dpuser/Downloads/ChatGPT Image Nov 14, 2026, 11_09_39 AM.png",
+      "copy_verified_identical": true,
+      "creator_confirmation": "this one",
+      "generation_prompt": null,
+      "generation_prompt_status": "User-supplied image; original prompt not provided",
+      "live_card_replacement": false,
+      "lore_approval": "Not established by reference selection"
+    },
+    {
+      "title": "Gilt-hall Temptress",
+      "path": "breachline/art/gilt-hall-temptress.png",
+      "sha256": "467b2f5ef4f95414e64d0657ed81e8ddb80b29c7464de11d111d1129b46c2b44",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_role": "Stronger courtly glamour and fitted gathered gown",
+      "selected_for": "Breachline Allure skill",
+      "visual_inspection_date": "2026-11-14"
+    },
+    {
+      "title": "A Door into Snow — first selected character variant",
+      "path": "breachline/art/reference-library-2026-11-06/selected-card-variants-2026-11-10/door-into-snow-character.png",
+      "sha256": "ecd4f85188942a459e4075734642a3af10bee9fa8e07d809cf3b8b28172571ef",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_role": "Fuller proportions and a lower neckline integrated with a mage and setting",
+      "selected_for": "Breachline Allure skill",
+      "visual_inspection_date": "2026-11-14"
+    },
+    {
+      "title": "Hostess of the Late Hour — accepted revision",
+      "path": "breachline/art/hostess-of-the-late-hour.png",
+      "sha256": "02d1a0698f7968fdf1686fc3b19c3756494a0af0a65de46e9c6523cbd88c869e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "reference_role": "Mature composed glamour and preservation of identity during local costume edits",
+      "selected_for": "Breachline Allure skill",
+      "visual_inspection_date": "2026-11-14"
+    }
+  ]
+}

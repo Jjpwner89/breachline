@@ -1,0 +1,81 @@
+{
+  "batch": "Set 16 predatory mouth revision",
+  "date": "2026-11-15",
+  "brief_revision": 10,
+  "brief_source": "BRIEFS-animal-mouths-revision-10.md",
+  "brief_sha256": "519f676d7bd9dd1afbdcde293970987d0dbd39ec8aa76c58d965f5605e918f49",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "feedback": "animal-feedback-round4.json",
+  "status": "generated_awaiting_creator_selection",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "items": [
+    {
+      "code": "M21-C",
+      "version": 2,
+      "concept_codes": [
+        "M21-13",
+        "M21-14",
+        "M21-15"
+      ],
+      "stage": "lineup_mouth_function_study",
+      "file": "m21-mouth-exploration-c-v2.png",
+      "prompt": "Use case: identity-preserve. Revise the attached Breachline animal mouth-study sheet. Keep its THREE COLUMNS, each containing the same animal's full body above and enlarged head below. Landscape 3:2, about 1536 by 1024. Preserve each column's overall animal identity, body architecture, covering and colour: russet feather-mantled quadruped at left, broad slate-and-cream furred heavyweight in the middle, and long-necked copper-and-cream feathered animal at right. Keep whole upper animals within the frame, connected limbs, grounded feet and small human scale comparisons safely separate.\nTHE IMPORTANT CHANGE: make the mouth anatomy substantially MORE AGGRESSIVE AND PREDATORY. The previous sheet was too soft, cute and herbivorous. These animals should have the concentrated intent and dangerous jaws of credible predators. Allow a forceful gape, sharp teeth, strong hinges and visible jaw muscles. Keep alert natural animal eyes and an organic fantasy-wildlife identity. Repaint the mouths and surrounding facial support rather than putting teeth onto the old soft food-handling fingers.\nLEFT COLUMN: retain the idea of four separate outer jaws folding into a compact muzzle when closed. Replace pillowy lip lobes with firm muscular mandibles, each terminating in a curved keratin hook and a small inner gripping tooth ridge. Lower close-up: four jaws spread with purposeful tension around an open central toothed mouth, clearly able to seize and hold prey. Show rooted joints and continuous skin. Upper resting view has the same mandibles folded and their hooked tips subtly visible.\nMIDDLE COLUMN: keep the broad heavy skull, but give the ordinary outer mouth a powerful bite with a few prominent pointed canine teeth. Lower close-up reveals a genuine smaller INNER JAW extending forward from inside that mouth: two opposed short jaws with interlocking backward-curved teeth, carried on a short muscular throat attachment. It must unmistakably be a second biting jaw, not a tongue, human fingers or a hand holding food. The inner jaw reaches just beyond the outer tooth line, with credible attachment and space to retract. Upper body view shows the same animal with its inner jaw retracted.\nRIGHT COLUMN: preserve the unusual split-beak approach but turn it into a strong hooked predatory beak with hard cutting edges and small backward-directed gripping points inside. In the lower close-up it opens wide enough to show a deeper paired internal grasping structure, integrated into the skull. Keep a natural muscular face and the existing feather transition; avoid the previous soft berry-plucking fingers.\nIn all three lower views, show the head in a controlled hunting gape, poised to bite. Remove the fruit, nuts, berries and feeding branches. No victim or blood is needed; the anatomy and expression carry the predation. Keep the closed/resting upper views useful for comparison, without comic grins. Original animal anatomy, not copied film characters or mechanical jaws.\nWarm ivory reference background, coherent readable daylight, matte coverings, traditional oil and acrylic fantasy paint with visible varied brushwork, precise mouth contacts and broader secondary shapes. Preserve a painted feel, not a glossy render or uniformly crisp fur. No text, numbers, labels, borders, watermark or signatures. Do not include or redesign M20 or its cub.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-mouth-exploration-c.png"
+      ],
+      "reference_role": "Entire prior sheet is the edit target; preserve animal identity and paired layout.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-064c94d6-f70d-47f7-9a5d-ba4242c4330f.png",
+      "sha256": "6897d109b57aacd060d23543887b5a4b4d3f6bef3f2a1d696c0e1ef9af026078",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "concepts": [
+        {
+          "code": "M21-13",
+          "version": 2,
+          "name": "Latchmaw",
+          "previous_name": "Fruitclasp",
+          "column": 1,
+          "description": "Four muscular outer jaws end in hooked tips around a separate toothed central mouth. This revision proposes a predator that seizes and holds prey with its mandibles before biting, while retaining the russet animal\u2019s body and mantle."
+        },
+        {
+          "code": "M21-14",
+          "version": 2,
+          "name": "Innerfang",
+          "previous_name": "Nutgrip",
+          "column": 2,
+          "description": "The broad animal now has prominent outer canines and a smaller pair of toothed jaws extending from within its mouth. This proposes a second bite that grips prey and draws it inward; the exact reach and internal mechanics remain open."
+        },
+        {
+          "code": "M21-15",
+          "version": 2,
+          "name": "Splitbill",
+          "column": 3,
+          "description": "The divided beak now has a strong hook, hard cutting edges and an inner toothed grip. This version explores a more predatory feeding structure while preserving the animal\u2019s long neck and copper-and-cream feathering."
+        }
+      ],
+      "status": "generated",
+      "review_status": "awaiting_creator_selection",
+      "assistant_review": "Compared with the edit source. Upper silhouettes, covering, colour and paired identity are retained. Lower mouth anatomy now includes four hooked outer mandibles, a visibly paired toothed inner jaw, and a hooked split beak with inner gripping teeth. No remaining fruit/nuts/berries or finger-like oral grips. Jaw support and tissue connections read coherently at reference scale; exact internal biology remains a proposal. No M20 artwork change."
+    }
+  ],
+  "gallery": "animal-mouths-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T20:16:57.687526+00:00",
+  "gallery_status": "visually_verified_ready_for_creator_review",
+  "brief_status_update_sha256": "d90032ad2cc7775defe2383946999a2407352f73db3d2f97a4e16a2218cdd457",
+  "gallery_review": {
+    "date": "2026-11-15",
+    "url": "http://127.0.0.1:8796/animal-mouths-review.html",
+    "checks": [
+      "All three v2 codes and mouth revisions render clearly.",
+      "Prior-version comparison link retained.",
+      "Local image and reference links resolve.",
+      "M20 image verified unchanged."
+    ]
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "batch": "Set 16 — cards for the new mechanics",
+  "brief_revision": 7,
+  "generated_at": "2026-11-15T03:51:38.502338+00:00",
+  "creator_review_status": "M2_final_M20_reference_pending_M21_selection_pending_other_19_pending",
+  "items": [
+    {
+      "code": "M1",
+      "title": "Oath veteran",
+      "file": "oathveteran.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Face, hands at buckle, helmet, sword and single shield sun are readable; coherent shelter light and restrained distant soldiers. Ready for creator review."
+    },
+    {
+      "code": "M2",
+      "title": "Still Flame duelist",
+      "file": "approved/flameduelist-v7.png",
+      "version": 7,
+      "review_status": "accepted_final",
+      "assistant_review": "Inspected the new full-figure composition: rapier point visibly contacts paving, straight blade and continuous hilt under a relaxed hand, both boots grounded, believable weight shift and connected limbs. Light mail is visible at neck, sleeves and coat opening; shield hangs from two buckled belt straps, with the left hand beside it. Youthful male face, head and arm crests, practical accessories, readable lighting and selective painted detail retained. Creator approved this exact generated image as final.",
+      "creator_authorization": "that's it, final!",
+      "accepted_at": "2026-11-15T05:43:37.400750+00:00",
+      "canonical_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png"
+    },
+    {
+      "code": "M3",
+      "title": "Held spears",
+      "file": "heldspears.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Continuous spear shafts, coherent grips and open signalling hand, plausible crouching and consistent light. Background soldiers less detailed. Ready for creator review."
+    },
+    {
+      "code": "M4",
+      "title": "Second working",
+      "file": "secondworking.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Long neck, ear-fan and dense hand glimmers retained; eyes natural, two coherent arms and readable gestures. Built undercity and coherent side lighting. Ready for review."
+    },
+    {
+      "code": "M5",
+      "title": "Sent home",
+      "file": "senthome.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Clear mage gesture and gaze, controlled scale and dissolution, no doorway or gore. Forms and setting read without the title. Ready for review."
+    },
+    {
+      "code": "M6",
+      "title": "Frost latch",
+      "file": "frostlatch.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Gate, hinges and stair geometry coherent; focal frost is distinct with dry stone nearby. No text or figures triggering the trap. Ready for review."
+    },
+    {
+      "code": "M7",
+      "title": "Counted words",
+      "file": "countedwords.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Distinct adult face, coherent hands and note grip, off-frame gaze and light consistent. Background detail subordinated to portrait. Ready for review."
+    },
+    {
+      "code": "M8",
+      "title": "Writ of seizure",
+      "file": "writseizure.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Carrying grips and load read correctly; family and official retain distinct roles, ordinary scale and connected anatomy. Readable cloudy doorway light; no gore or readable text."
+    },
+    {
+      "code": "M9",
+      "title": "Ashen Court confiscator",
+      "file": "confiscator.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Connected hands and believable brooch pinch; distinct face, readable glance, coat construction and localized silver reflection. No legible ledger lettering."
+    },
+    {
+      "code": "M10",
+      "title": "Gathered host",
+      "file": "gatheredhost.png",
+      "version": 2,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Version 2 removes unintended Christian crosses from the original. Checked the collective silhouette, constituent bodies, grounded feet, arch clearance and preserved blue-hour lighting."
+    },
+    {
+      "code": "M11",
+      "title": "Ashborn gleaner",
+      "file": "ashborngleaner.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked repaired Ashborn identity, hands gripping rope, covered body, cart contact and coherent overcast field light."
+    },
+    {
+      "code": "M12",
+      "title": "Pit digger",
+      "file": "pitdigger.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked spade grip and boot contact, body posture, rectangular excavation, daylight and background restraint."
+    },
+    {
+      "code": "M13",
+      "title": "Waiting noose",
+      "file": "waitingnoose.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked grounded rope path, keeper anatomy, coherent ferry setting and light; the trap is deliberately unobtrusive rather than a diagram."
+    },
+    {
+      "code": "M14",
+      "title": "Rising squall",
+      "file": "risingsquall.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked selected salt-variant head and bands, gesture, salt terrain, small caravan scale and coherent storm lighting."
+    },
+    {
+      "code": "M15",
+      "title": "Thrown boulder",
+      "file": "thrownboulder.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked accepted giant anatomy, two secure hand contacts on the stone, braced feet, human-scale comparison and light."
+    },
+    {
+      "code": "M16",
+      "title": "Streak raider",
+      "file": "streakraider-v2.png",
+      "version": 2,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked accepted orc anatomy, two legs and arms, planted foot and folded rear leg, cleaver grip and clearance, gaze and coherent side light."
+    },
+    {
+      "code": "M17",
+      "title": "Hired shieldman",
+      "file": "hiredshield.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked human anatomy, coin pinch, grounded shield and boots, practical hired kit and readable amused expression."
+    },
+    {
+      "code": "M18",
+      "title": "Hired company",
+      "file": "hiredcompany.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked five coherent human figures, captain/paymaster eye contact, hands and quill, practical kit and camp staging."
+    },
+    {
+      "code": "M19",
+      "title": "Ploughback",
+      "file": "ploughback.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked accepted long low body, four legs, ordinary tail, trowel snout contact, scale coverage and wild context."
+    },
+    {
+      "code": "M20",
+      "title": "Brackenmaw adult and cub — proposed name",
+      "file": "m20-hearthmantle-adult-cub-v1.png",
+      "version": 3,
+      "review_status": "selected_for_claude_finalization",
+      "assistant_review": "Inspected against M20-5: adult silhouette, face, russet/cream layered mantle and large grounded forepaws retained. Cub is visibly same species, separate and smaller on same ground; youthful anatomy and shorter mantle read clearly. New reference pending creator review.",
+      "stage": "selected_reference",
+      "history": [
+        {
+          "code": "M20",
+          "title": "New settling animal",
+          "file": "m20-lineup.png",
+          "version": 2,
+          "review_status": "awaiting_creator_selection",
+          "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage. The freeform Hearthmantle retains small growths in its mantle; their biology is explicitly open. M20-5 uses a cleaned muzzle from its independent study.",
+          "stage": "lineup"
+        }
+      ],
+      "brief_revision": 8,
+      "selected_concept": "M20-5",
+      "reference_code": "M20-R1",
+      "name_status": "assistant proposal",
+      "ecology": {
+        "status": "creator_directed",
+        "analogy": "super bear",
+        "diet": "omnivorous",
+        "primary_habitat": "forest",
+        "additional_habitats": [
+          "hills",
+          "plains"
+        ],
+        "life_cycle": "Small cubs grow into substantially heavier, more powerful adults.",
+        "open_details": [
+          "precise size",
+          "growth rate",
+          "lifespan",
+          "breeding",
+          "hibernation",
+          "mantle biology"
+        ],
+        "basis": "Creator direction, 2026-11-15; do not convert the analogy into a literal Earth bear or presume a rooted/sedentary life."
+      },
+      "description": "A massive russet-and-cream adult rests beside its much smaller cub, with the same layered mantle, rounded face and broad paws. The creator now describes it as an omnivorous “super bear” living mainly in forests and also ranging through hills and plains; precise size, growth timing and mantle biology remain open.",
+      "latest_creator_feedback": "animal-feedback-round12.json",
+      "creator_feedback": "Strongly liked; preserve current reference. New mouth experiment remains a separate proposal.",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+      "finalization_reference": "M20-R1",
+      "finalization_version": 1
+    },
+    {
+      "code": "M21",
+      "title": "New heavyweight attempts",
+      "file": "m21-heavyweight-exercise-e.png",
+      "version": 5,
+      "review_status": "selected_for_claude_finalization",
+      "assistant_review": "Inspected generated sheet. First take retains the Highneck body/neck and adds restrained teeth and intent. Second has a solid compact jaw with no dangling mouthparts. Four other takes use plated, whiskered, membranous and wool/horn anatomy. Complete silhouettes, separate scale figures, readable feet and supports, no gross oral structures. The four fresh proposals still share some reference-palette influence; membrane function and the horned take’s precise anatomy remain questions for selected-reference development, not approved biology.",
+      "stage": "lineup",
+      "history": [
+        {
+          "code": "M21",
+          "title": "New heavyweight animal",
+          "file": "m21-lineup.png",
+          "version": 2,
+          "review_status": "awaiting_creator_selection",
+          "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage.",
+          "stage": "lineup"
+        },
+        {
+          "code": "M21",
+          "title": "Additional freeform heavyweights",
+          "file": "m21-freeform-lineup-b.png",
+          "version": 3,
+          "review_status": "awaiting_creator_selection",
+          "assistant_review": "Inspected six complete cells, separate scale figures, contact/support, feeding contacts and mouth variety. Range includes strut-supported mouth, flexible lips, opposed pincers, piscivorous jaws, slender feeding tube and probing mouthparts. Cells 2 and 6 share flexible mouth structures but differ in body plan and apparent feeding use; both remain freeform proposals, not approved anatomy.",
+          "stage": "lineup",
+          "brief_revision": 8,
+          "latest_creator_feedback": "animal-feedback-round3.json",
+          "creator_feedback": "Strongly positive batch response; individual choice remains open.",
+          "latest_mouth_study": {
+            "file": "m21-mouth-exploration-c-v2.png",
+            "version": 2,
+            "codes": [
+              "M21-13",
+              "M21-14",
+              "M21-15"
+            ],
+            "status": "awaiting_creator_selection",
+            "manifest": "animal-mouths-round4-manifest.json"
+          }
+        },
+        {
+          "code": "M21",
+          "title": "Highneck and Foldlip heavyweight riffs",
+          "file": "m21-highneck-foldlip-riffs.png",
+          "version": 4,
+          "review_status": "awaiting_creator_selection",
+          "assistant_review": "Inspected the generated six-cell sheet: complete silhouettes, readable load-bearing limbs and ground contacts, separate scale figures, integrated flexible mouthparts, coherent daylight and matte painted coverings. Left column retains Highneck identity; middle develops heavier Foldlip; right explores two resting syntheses. The two synthesis takes are close relatives rather than independent species. Mouth mechanics and hidden limb attachments remain reference-stage questions, with no obvious generation defect requiring correction in this exploratory sheet.",
+          "stage": "lineup",
+          "brief_revision": 11,
+          "latest_creator_feedback": "animal-feedback-round5.json",
+          "creator_feedback": "Prior mouth studies positively received. M21-5 and M21-8 chosen as starting points for riffs, not final species or card-art approval.",
+          "latest_mouth_study": {
+            "file": "m21-mouth-exploration-c-v2.png",
+            "version": 2,
+            "codes": [
+              "M21-13",
+              "M21-14",
+              "M21-15"
+            ],
+            "status": "awaiting_creator_selection",
+            "manifest": "animal-mouths-round4-manifest.json"
+          },
+          "latest_exploration": {
+            "manifest": "heavyweight-riffs-round5-manifest.json",
+            "file": "m21-highneck-foldlip-riffs.png",
+            "codes": [
+              "M21-16",
+              "M21-17",
+              "M21-18",
+              "M21-19",
+              "M21-20",
+              "M21-21"
+            ],
+            "status": "awaiting_creator_selection"
+          }
+        }
+      ],
+      "brief_revision": 12,
+      "latest_creator_feedback": "animal-feedback-round12.json",
+      "creator_feedback": "Number 2 front paws should have bear-like claws. M21-23 v5 generated with stout visible gently curved claws; other features and other two animals unchanged.",
+      "latest_mouth_study": {
+        "file": "m21-mouth-exploration-c-v2.png",
+        "version": 2,
+        "codes": [
+          "M21-13",
+          "M21-14",
+          "M21-15"
+        ],
+        "status": "awaiting_creator_selection",
+        "manifest": "animal-mouths-round4-manifest.json"
+      },
+      "latest_exploration": {
+        "manifest": "heavyweight-bear-claws-round11-manifest.json",
+        "files": [
+          "m21-22-highneck-v2.png",
+          "m21-23-feathered-heavyweight-v5.png",
+          "m21-26-mane-heavyweight-v2.png"
+        ],
+        "codes": [
+          "M21-22",
+          "M21-23",
+          "M21-26"
+        ],
+        "version": 2,
+        "status": "awaiting_creator_review",
+        "versions": {
+          "M21-22": 2,
+          "M21-23": 5,
+          "M21-26": 2
+        }
+      },
+      "preferred_codes": [
+        "M21-22",
+        "M21-23",
+        "M21-26"
+      ],
+      "selected_reference_revisions": [
+        {
+          "code": "M21-22",
+          "version": 2,
+          "file": "m21-22-highneck-v2.png",
+          "cell": "top left",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP LEFT, the enormous reclining russet-and-cream Highneck, with long raised muscular neck, compact head and huge gathered forelimbs. The previous revision is still not predatory enough. Make the face clearly MORE PREDATORY while preserving the liked body and raised-neck resting pose: a stronger biting jaw, focused forward-directed gaze, pronounced carnivorous teeth with a few substantial canines visible in a slightly parted mouth. Teeth should have believable roots and jaw clearance. Give it the contained confidence of a powerful carnivore, not a scream or a grotesque monster. Keep the compact head recognizably related to the source and integrated into its neck; preserve the warm mottled coat, rounded hindbody, large forelimbs and immense settled weight.",
+          "stage": "reference_revision",
+          "status": "generated",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+          ],
+          "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+          "reference_role": "Edit target; selected cell only.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-7bb83677-fe29-4b23-a4e9-e401a7a9ccca.png",
+          "sha256": "cd14c1b4d2a0f512983dac8bdfe3bc91c1ac4a4994a440bf2959578ae8af89fb",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Highneck · stronger predator",
+          "original_position": 1,
+          "description": "The raised neck and settled heavyweight body now carry a stronger carnivorous jaw with prominent biting teeth and a more intent gaze. This develops the predatory direction you requested while keeping the liked silhouette and mottled covering.",
+          "assistant_review": "Checked stronger jaw and visible teeth, integrated face/neck, retained low resting body and massive forelimbs, coat continuity and complete framing. No dangling mouthparts or obvious anatomy defects.",
+          "review_status": "awaiting_creator_review",
+          "completed_at": "2026-11-15T20:59:42.201939+00:00"
+        },
+        {
+          "code": "M21-23",
+          "original_position": 2,
+          "version": 5,
+          "stage": "reference_revision",
+          "file": "m21-23-feathered-heavyweight-v5.png",
+          "prompt": "Make a small local edit to this animal painting: give BOTH FRONT PAWS believable BEAR CLAWS. Retain the broad, heavy, furred paw structure, but replace the tiny catlike claw tips with a clearly visible row of stout non-retractile claws like a brown bear's forepaws. Each claw has a thick base, moderate forward length and a gentle downward curve, naturally growing from a short thick toe. They should look powerful for digging and traction, proportional to the paw. Keep the toes compact and joined into a broad padded paw; no long separated bird fingers, no dramatically hooked raptor talons, and no oversized sickle claws. Preserve the front legs above the paws, all leg positions, both rear feet, head, closed muzzle, neck, crest, feather mantle, body, tail, colours, human scale figure, ground, lighting and framing. Only refine the two front paws and claws. Retain the painted fantasy finish, 3:2 landscape format, with no text.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v4.png"
+          ],
+          "reference_sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+          "reference_role": "Entire v4 as edit target; front bear claws only.",
+          "status": "generated",
+          "review_status": "awaiting_creator_review",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f2d9adfe-9794-4f77-b800-f616d9f97d08.png",
+          "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Feathered heavyweight · bear claws",
+          "description": "The broad furred front paws now carry stout, visible bear-like claws with moderate projection and a gentle curve. The compact toes, sturdy legs, feathered body, closed muzzle and rear feet retain their earlier design.",
+          "assistant_review": "Visually compared with v4: front claws are clearly larger and stouter than the small tips, yet stay proportionate and gently curved. Broad compact furred paws remain grounded; no raptor fingers or sickle talons. Upper legs, rear feet, body, face, feather silhouette, scale figure, pose and composition retain their design. No obvious generation defect requiring another pass.",
+          "completed_at": "2026-11-15T21:45:02.905330+00:00",
+          "history": [
+            {
+              "code": "M21-23",
+              "original_position": 2,
+              "version": 4,
+              "stage": "reference_revision",
+              "file": "m21-23-feathered-heavyweight-v4.png",
+              "prompt": "Edit this Breachline animal reference with one local correction: BOTH FRONT FEET become broad, substantial mammalian PAWS. Think of the grounded weight of large feline or bear forepaws: a compact padded mass, four rounded toes grouped closely together, a softly furred top blending into the wrist, and only tiny short claw tips. The paws should feel powerful and able to support this heavyweight. They are not bird talons, grasping hands, elongated fingers or splayed reptile toes. Keep the paws planted naturally; do not show their undersides to the viewer. Preserve the muscular front legs above the wrists and the two rear feet exactly in design. Preserve the entire remaining animal—closed muzzle, head, crest, high neck, feathered body, colouring, leg positions and tail—as well as pose, human scale figure, ground, lighting, composition and painted treatment. No other redesign. Same landscape 3:2 format. No text or labels.",
+              "attached_references": [
+                "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+              ],
+              "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+              "reference_role": "Entire v2 as edit target, before the excessive talon pass; only front feet change.",
+              "status": "generated",
+              "review_status": "awaiting_creator_review",
+              "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-0ea8524d-90ea-415f-b024-e201018ff449.png",
+              "sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+              "dimensions": [
+                1536,
+                1024
+              ],
+              "title": "Feathered heavyweight · front paws",
+              "description": "Both front feet are now broad, compact paws with rounded toes, furred tops and only short claw tips. The sturdy legs, feathered body, closed muzzle, pose and rear feet retain their established design.",
+              "assistant_review": "Compared with v2 edit source and v3 feedback: both front feet now read clearly as padded mammalian paws, with rounded grouped toes and short claw tips. Forelegs blend into furred wrists; feet are grounded and coherent. Head, crest, feather mantle, torso, rear feet, four-limb arrangement, scale figure, lighting and composition retained. No long grasping digits or hooked talons remain at the front.",
+              "completed_at": "2026-11-15T21:18:19.649856+00:00",
+              "history": [
+                {
+                  "code": "M21-23",
+                  "original_position": 2,
+                  "version": 3,
+                  "stage": "reference_revision",
+                  "file": "m21-23-feathered-heavyweight-v3.png",
+                  "prompt": "Edit the attached Breachline feathered heavyweight reference. Change ONLY BOTH FRONT FEET / CLAWED FOREHANDS at lower left and lower centre: give them a clearly more claw-like, raptorial structure, with distinct powerful articulated digits and substantially longer, sharply curved keratin talons. The claws should read as functional grasping/raking weapons, organically rooted in the toes, with robust bases and tapering hooked tips. Keep their scale proportionate to this enormous animal, maintain believable wrist-to-digit connections and weight-bearing ground contact. Do not just lengthen rounded toenails; make the forefeet's overall shape more clearly a powerful claw. The two rear feet on the right remain unchanged. Preserve the revised muscular forelegs above the wrists, all four leg positions, body, feather mantle, crest, closed muzzle, neck, tail, pose, scale figure, ground, colours, light, framing and painted treatment. No extra digits or limbs, no mouth change, no dangling mouthparts. Same landscape 3:2 format, no text or labels.",
+                  "attached_references": [
+                    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+                  ],
+                  "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+                  "reference_role": "Entire M21-23 v2 as edit target; only front feet change.",
+                  "status": "generated",
+                  "review_status": "awaiting_creator_review",
+                  "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-11454990-ad5f-4e25-8e5b-3b1098f41b54.png",
+                  "sha256": "f6a679a3bd2501f6bbd5ef541f7080d1552f2612b6e72395b9f33d66584aeb5e",
+                  "dimensions": [
+                    1536,
+                    1024
+                  ],
+                  "title": "Feathered heavyweight · front claws",
+                  "description": "Both front feet now form pronounced grasping claws, with distinct jointed digits and long hooked talons. The revised muscular legs, feathered body and closed muzzle remain, while the rear feet retain their earlier shape.",
+                  "assistant_review": "Visually compared with v2: both front feet now have elongated articulated digits and markedly longer curved talons. The wrists connect coherently, claw bases and tips are readable, and the feet remain grounded. Rear feet, four-legged support, muscular upper forelegs, face, feather mantle, crest, scale figure, pose and composition remain recognizable and unchanged in design. No gross mouthparts or extra limbs.",
+                  "completed_at": "2026-11-15T21:11:15.007292+00:00",
+                  "history": [
+                    {
+                      "code": "M21-23",
+                      "version": 2,
+                      "file": "m21-23-feathered-heavyweight-v2.png",
+                      "cell": "top middle",
+                      "rect": [
+                        0.3333333333333333,
+                        0,
+                        0.3333333333333333,
+                        0.5
+                      ],
+                      "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP MIDDLE, the tall four-legged feathered animal with an elevated neck, orange/slate/cream crest and mantle, and a newly corrected short closed muzzle. Revise its LEGS. Explore a more convincing powerful support structure: stronger muscular shoulders and thighs, clearly articulated elbows and hocks, shorter sturdier lower legs and broad compact padded feet with short stout claws. Slightly flexed joints should show how it can stride and bear weight; avoid the old straight thin-looking columns and splayed fingerlike toes. Four coherent legs with readable origins, joints and planted feet, no extra limbs. Keep the high neck and overall tall presence, its solid compact CLOSED face, crest, layered feather covering and colours. Do not restore dangling mouthparts. The leg treatment is the revised design; the rest should remain recognizably the same animal.",
+                      "stage": "reference_revision",
+                      "status": "generated",
+                      "attached_references": [
+                        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+                      ],
+                      "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+                      "reference_role": "Edit target; selected cell only.",
+                      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-901d0d82-ab09-4fda-bc5a-3ffab07e8f10.png",
+                      "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+                      "dimensions": [
+                        1536,
+                        1024
+                      ],
+                      "title": "Feathered heavyweight · revised legs",
+                      "original_position": 2,
+                      "description": "The feathered animal now stands on more muscular legs, with clearer elbows and hocks, shorter lower limbs and compact feet. Its high neck, crest and corrected closed muzzle remain; this is a proposed interpretation of the revised leg structure.",
+                      "assistant_review": "Checked four connected load-bearing legs, bent elbows and hocks, shorter sturdy lower limbs and feet contacting ground. Closed muzzle, high neck, crest and feather colour identity retained; no rejected mouth appendages.",
+                      "review_status": "awaiting_creator_review",
+                      "completed_at": "2026-11-15T20:59:42.201939+00:00"
+                    }
+                  ],
+                  "manifest": "heavyweight-front-claws-round9-manifest.json"
+                }
+              ],
+              "manifest": "heavyweight-front-paws-round10-manifest.json"
+            }
+          ],
+          "manifest": "heavyweight-bear-claws-round11-manifest.json"
+        },
+        {
+          "code": "M21-26",
+          "version": 2,
+          "file": "m21-26-mane-heavyweight-v2.png",
+          "cell": "bottom middle",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: BOTTOM MIDDLE, the long-bodied russet/slate/cream animal with a small mammalian face, sturdy walking limbs, thick balancing tail and broad winglike membranes along its flanks. REMOVE the wings completely: remove all membranes, wing spars, projecting wing fingers and pointed batlike side silhouettes. Replace that exact shoulder/upper-flank region with a substantial natural MANE of long layered fur, growing from the neck and shoulders and sweeping back/down over the upper ribs. Make the mane a handsome weighty collar and flank mantle, not a wing shape made of hair. Retain the liked head and muzzle, torso length, belly, tail, underlying four walking legs, colour family and alert pose. Expose enough shoulder/leg separation to understand the anatomy. The output must have ordinary solid furry flanks beneath the mane, with absolutely no wing remnants or gliding membranes.",
+          "stage": "reference_revision",
+          "status": "generated",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+          ],
+          "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+          "reference_role": "Edit target; selected cell only.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f8e1f27f-4074-40fc-856e-11f65ea4ac45.png",
+          "sha256": "bd36cbb67803a198c1badc8c5e59cecafa6af7b45501592d9121f62fa9feeac7",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Mane heavyweight · wings removed",
+          "original_position": 5,
+          "description": "A broad layered mane now sweeps across the neck, shoulders and upper flanks where the wings were. The long body, small mammalian face, thick tail and walking limbs remain, with no wing membranes or spars; its eventual name and ecology are open.",
+          "assistant_review": "Checked complete removal of wing membranes, spars and pointed wing silhouettes. Mane occupies shoulder and upper-flank area, and four walking legs remain coherent, including the raised near forefoot. Head, long body, tail and colour family retained.",
+          "review_status": "awaiting_creator_review",
+          "completed_at": "2026-11-15T20:59:42.201939+00:00"
+        }
+      ],
+      "latest_revision_manifest": "heavyweight-bear-claws-round11-manifest.json",
+      "latest_revision_gallery": "heavyweight-preferred-revisions-review.html",
+      "latest_revision_brief": 16,
+      "current_output_files": [
+        "m21-22-highneck-v2.png",
+        "m21-23-feathered-heavyweight-v5.png",
+        "m21-26-mane-heavyweight-v2.png"
+      ],
+      "current_stage": "reference_revisions",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+      "finalization_reference": "M21-23",
+      "finalization_version": 5,
+      "chosen_for_finalization_codes": [
+        "M21-23"
+      ]
+    },
+    {
+      "code": "M22",
+      "title": "Gravelmouth",
+      "file": "gravelmouth.png",
+      "version": 1,
+      "review_status": "pending_creator_review",
+      "assistant_review": "Checked selected G2 cell 3 blunt head, broad body, short flippers, tapered rear and tail, mouth-weed contact, waterline and absence of filtering ornaments."
+    }
+  ],
+  "notes": [
+    "M10 version 2 removes unintended Christian crosses; original preserved as history.",
+    "M2 v7 is explicitly final; M20/M21 await animal selection and the other 19 paintings remain pending. No game installation or publishing performed.",
+    "Creator strongly praised the batch and requested retries of M2/M16. M2 is now Crest folk following the explicit non-Greyhide correction. Other images retain their prior selection status. Watcher paused by request.",
+    "M2 version 4 follows the creator request for a man with a rapier; prior Crest folk version 3 retained as comparison history.",
+    "M2 v5 lengthens the rapier and replaces heavy padded armor with a light jerkin; restored arm crests after the first edit. Prior v4 remains as comparison history.",
+    "M2 v6 follows explicit courtly dress and high-status direction. The character's high status is established; exact costume and painting still await review. Prior v5 retained.",
+    "M2 v7 is a fresh resting composition from direct creator direction, approved unchanged. Saved in the final reference library; WIP approved/ is a link to that canonical folder.",
+    "Revision 7 changes only the animal subjects for M20/M21. Their earlier paintings are superseded card assignments; Foldstride and Salt-flat migrant remain accepted world animals."
+  ],
+  "latest_creator_feedback": "animal-feedback-round12.json",
+  "updated_at": "2026-11-15T22:07:24.279248+00:00",
+  "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt"
+}

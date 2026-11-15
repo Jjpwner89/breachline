@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "rejected": "S13-06-P10",
+  "reasons": [
+    "Markup contours copied too literally",
+    "Tail length and delicacy lost",
+    "Added wing anatomy not equivalent",
+    "Body lighting changed; preferred tucked-under original"
+  ],
+  "creator_priority": "Legendary card; must look excellent",
+  "followup": "Creator flagged five-surface drafts. Each corrected final inspected for two front wings plus two back sails.",
+  "outputs": [
+    {
+      "code": "S13-06-P11A",
+      "file": "veilwing-legendary-a.png",
+      "status": "pending_creator_review"
+    },
+    {
+      "code": "S13-06-P11B",
+      "file": "veilwing-legendary-b.png",
+      "status": "pending_creator_review"
+    },
+    {
+      "code": "S13-06-P11C",
+      "file": "veilwing-legendary-c.png",
+      "status": "pending_creator_review"
+    }
+  ]
+}

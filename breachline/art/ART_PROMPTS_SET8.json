@@ -794,10 +794,6 @@
         "nsfw/new-motifs-and-soft-fabrics-2026-11-10/03-a-bouquet-with-opinions.png",
         "nsfw/clothing-library-2026-11-10/03-pearl-thread-halter.png"
       ],
-      "additional_guidance": [
-        "nsfw/SKILL.md",
-        "nsfw/calibration-log.md"
-      ],
       "additional_reference_consulted": [
         "nsfw/silk-mothlight-and-small-magic-2026-11-10/01-a-secret-kept-in-silk.png"
       ],
@@ -1557,7 +1553,7 @@
   "validation": "SET8_VALIDATION.json",
   "generation_authorization": {
     "scope": "All 12 headings; user confirmed 12 instead of original 11. Set 8 files only, no commits.",
-    "followup": "Gilt-hall temptress uses art/nsfw/SKILL.md design guidance."
+    "followup": "Gilt-hall temptress uses the creator-approved costume and proportions recorded in its prompt."
   },
   "completed": 12,
   "updated_at_utc": "2026-11-10T20:49:43.347944+00:00",
@@ -1569,7 +1565,7 @@
   "lore_status": "All 12 Set 8 paintings are creator-approved final artwork. Artwork approval does not change game rules or establish additional lore.",
   "production_notes": [
     "User confirmed all 12 card headings, superseding the original count of 11.",
-    "Gilt-hall temptress follows the explicitly requested nsfw/SKILL.md design guidance.",
+    "Gilt-hall temptress follows the creator-approved costume and proportions recorded in its prompt.",
     "Selected source PNGs are preserved byte-for-byte; game JPEGs use quality 90 at 768 x 512.",
     "Held between moments is finalized as a human raider. The assassin is finalized with its supporting hand completely hidden below the sill.",
     "All 12 current paintings were explicitly approved as final on 2026-11-10, with a Set 8-only commit authorized.",

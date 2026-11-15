@@ -1,0 +1,217 @@
+{
+  "batch": "Set 16 M20 and M21 new-animal lineups",
+  "date": "2026-11-15",
+  "brief_revision": 7,
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET16.md",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "brief_sha256": "6c6a8ac8aaf080d33654f16916763f19b6fb426f4471c0bc7c6210b94fa71c48",
+  "status": "reviewed_followup_round2_generated",
+  "claimed_by": "01a1dc91-7812-7d53-b177-75dcb182f4e9",
+  "generator": "built-in image_gen",
+  "scope": "Two six-animal lineups only; selected reference and card paintings follow creator choice.",
+  "freeform_method": "Generate two freeform studies independently of the four specified designs, then preserve those two designs in the final lineup.",
+  "freeform_jobs": [
+    {
+      "code": "M20-free",
+      "version": 2,
+      "file": "m20-freeform-exploration-v2.png",
+      "prompt": "Make a NEW animal-design exploration, unrelated to any earlier images. TWO whole animals side by side on warm ivory, no writing. 1536 \u00d7 1024 landscape, traditional painted fantasy natural-history studies with controlled visible brushwork and coherent daylight. One entire animal in each half, all supports and extremities visible, plain small patches of habitat below. At rest or feeding.\n\nThis is genuinely freeform animal invention: choose body architecture, anatomy, head, skin/covering, palette and ecological adaptation yourself, independently for each animal. Make two unmistakably different species from the whole silhouette outward. Functional living wildlife with believable mass, joints, movement and feeding, not robots, elementals, familiar Earth species in fancy coats or horror monsters. Modest appealing eyes and calm closed mouths.\n\nThe previous generation's clich\u00e9s are specifically excluded: NO four squat elephant-like legs under an arched hump, no shaggy bear/hippopotamus/anteater forms, no leaf-shaped coats, fungal shelves, frills, dorsal sacs, whisker tubes, hanging mouth tendrils, throat combs, tusks or horns. Choose different coherent anatomical solutions instead. No thin stilt-legged fanback, no steeply folded rear with lowered front, no narrow migratory grazer, no giant turtle. No weapons or magic. Leave generous space between the two animals, with restrained local scenery only.\nNiche: an animal that starts modest and mobile but becomes formidable, heavy and firmly settled as it matures in one territory. Its eventual stability may arise through age, support, feeding habits or another natural process. Invent these without a predetermined anatomy or colour. Show one mature adult for each of the two different approaches, in a quiet terrestrial or wetland feeding place. Ecological originality and settled weight, rather than aggression.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-990c5b01-accb-49e7-b986-ac1dbb0d48f3.png",
+      "review_note": "Right selected for further lineup; left excluded because plated plant-covered body repeats existing giant motifs.",
+      "sha256": "7a155485376d24c8d94cee75fd8aafd93b53fcd0b357a320fdd83bf79bea3817"
+    },
+    {
+      "code": "M21-free",
+      "version": 2,
+      "file": "m21-freeform-exploration-v2.png",
+      "prompt": "Make a NEW animal-design exploration, unrelated to any earlier images. TWO whole animals side by side on warm ivory, no writing. 1536 \u00d7 1024 landscape, traditional painted fantasy natural-history studies with controlled visible brushwork and coherent daylight. One entire animal in each half, all supports and extremities visible, plain small patches of habitat below. At rest or feeding.\n\nThis is genuinely freeform animal invention: choose body architecture, anatomy, head, skin/covering, palette and ecological adaptation yourself, independently for each animal. Make two unmistakably different species from the whole silhouette outward. Functional living wildlife with believable mass, joints, movement and feeding, not robots, elementals, familiar Earth species in fancy coats or horror monsters. Modest appealing eyes and calm closed mouths.\n\nThe previous generation's clich\u00e9s are specifically excluded: NO four squat elephant-like legs under an arched hump, no shaggy bear/hippopotamus/anteater forms, no leaf-shaped coats, fungal shelves, frills, dorsal sacs, whisker tubes, hanging mouth tendrils, throat combs, tusks or horns. Choose different coherent anatomical solutions instead. No thin stilt-legged fanback, no steeply folded rear with lowered front, no narrow migratory grazer, no giant turtle. No weapons or magic. Leave generous space between the two animals, with restrained local scenery only.\nNiche: two great land or wetland beasts with real physical power, normally calm, potentially awe-inspiring when grown or roused. They may graze, browse or eat mixed food. Reconsider the whole weight-bearing architecture for this size, rather than enlarging an ordinary small-animal skeleton. Anatomy and colour are fully your choice within the exclusions. Include one small ordinary human on the same ground plane in each half to establish substantial size, safely separate, no confrontation. Strength and unusual mass distribution must be clear in the resting silhouettes; do not make horror or a threat display.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ac1750b2-acac-4eea-bf8b-63756ee54799.png",
+      "review_note": "Both retained for lineup as freeform proposals, no creator selection yet.",
+      "sha256": "11dd481721a5e393cbb01d22ed503ba775be701dd7633567440c208fb354d390"
+    }
+  ],
+  "items": [
+    {
+      "code": "M20",
+      "file": "m20-lineup.png",
+      "version": 2,
+      "stage": "lineup",
+      "attached_references": [
+        "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-27000fa5-dd62-4d20-84a7-17fbf4738986.png",
+        "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-990c5b01-accb-49e7-b986-ac1dbb0d48f3.png"
+      ],
+      "prompt": "Create a finished Breachline animal LINEUP sheet, 1536 \u00d7 1024 landscape. Exactly SIX distinct whole animals in an even THREE-COLUMN, TWO-ROW arrangement, reading left to right, top then bottom. Each animal stays inside its own 512 \u00d7 512 region with breathing room; all feet, heads and tails inside the cell. No drawn grid, text, labels, numbers, border, signature or watermark. Warm ivory empty background with one small plain ecological ground patch per animal. Quiet resting or feeding moments. The attached references are used ONLY for the last two cells as specified below; do not borrow their body plans or faces for the other four.\nUse traditional oil/acrylic fantasy paint with visible, varied brushwork, selective anatomical detail, naturally matte coverings, coherent soft daylight and believable ground shadows. Connected limbs and feeding structures, clear weight and usable joints. Entirely new natural species, no magic, tack, weapons or humanlike bodies. Heads must belong to their bodies. Avoid jaw frills, hanging mouth tendrils, throat combs, decorative dorsal sacks, plant-animal hybrids, horror mouths and copies of known Earth animals. Do not turn all six into the same furry quadruped.\nTHEME: natural animals that become heavy and difficult to move after maturing and settling into a feeding territory. Each cell shows one mature animal only, no transformation diagrams.\n\nTOP LEFT \u2014 specified take 1: A broad low six-legged ground grazer. Two wide, shallow longitudinal ridges run along its heavy upper body, with flexible copper-grey leathery skin between them; this is a strong living torso, not a single shell. Six short powerful legs spread into wide soft toe pads. A compact blunt-lipped head reaches down on a short muscular neck to crop tough shoots; small natural eyes, no trunk or tusks. Older individuals accrete subtle layers on their low paired dorsal ridges. Wide settled stance on sparse dry grass, very short tail. Avoid armadillo, turtle and the Foldstride's sloping rear.\n\nTOP MIDDLE \u2014 specified take 2: A broad upright pear-shaped torso balanced on THREE visibly separate thick limbs: a forward left-right pair and one powerful central rear support, all ending in flared lobed feet. The rear limb is a real leg emerging from the lower pelvis, not a tail. A small broad cheeked mammalian head on a short neck looks calmly sideways. Smooth muted brown-olive hide, a sparse dark ruff only at the nape, no horns or plates. The heavy lower body expands with maturity. Resting on muddy meadow ground, all three load-bearing feet identifiable.\n\nTOP RIGHT \u2014 specified take 3: A low elongated wet-ground herbivore with one broad muscular creeping underside and FOUR short gripping arms around the front third, two on each side; the rear two-thirds moves on the continuous ventral pad. A short neck carries a small rounded two-eyed head with a plain horizontal grazing mouth; no eyestalks, tentacles or beak. Smooth charcoal blue leathery upper skin and a pale firm underside, no shell, glow or frills. It braces the four small arms to pull a clump of sedge toward its mouth. Show the body from an oblique side view so the creeping foot and front attachments make sense.\n\nBOTTOM LEFT \u2014 specified take 4: An elongated stout ground browser resting in a loose partial coil, broad rounded head on a short thick neck at one end, tapering blunt tail at the other. Three pairs of small strong walking legs emerge along the lower flanks, with their feet resting on the stony ground outside the coil; no snake head or threatening mouth. The heavy flexible body wears small smooth dark umber and muted teal scales with a few pale growth bands, not an insect carapace or armoured tank. Its long muscular mass and widening adult body let it settle firmly into a sheltered stony feeding place.\n\nBOTTOM MIDDLE \u2014 freeform take 5: Preserve ONLY the LEFT animal of REFERENCE IMAGE 1: the very broad settled russet-and-cream animal with layered shaggy/feathery covering, huge low paws and a compact rounded calm face. Retain its whole-body design and settled character. Make the muzzle clean: omit hanging beard whiskers or facial tassels. The overlapping coat is natural covering; omit the mushroom shelves and flowers, leaving incidental bits of dry leaf litter caught in its old coat rather than growing plants. This is the independently invented freeform option, not a template for the other cells.\n\nBOTTOM RIGHT \u2014 freeform take 6: Preserve ONLY the RIGHT animal of REFERENCE IMAGE 2: the blue-grey and cream spotted, long-necked feathered quadruped with four webbed feet and a flat tapered feather tail, feeding at shallow wetland plants. Retain its distinctive curved neck, weight distribution, head, covering and webbed support. Ignore the plated plant-covered animal on the LEFT of that reference completely.\nAll six must remain clearly separate original alternatives. No invented printed names.",
+      "status": "generated",
+      "review_status": "M20-5_selected_for_reference_development",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d3378127-6801-48d6-a258-32db488fab1b.png",
+      "sha256": "a7cc2c861026687670009af7828a43e73221225868cdd0bb5764c586e681f473",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "completed_at": "2026-11-15T05:58:50.991810+00:00",
+      "brief_revision": 7,
+      "source_brief_sha256": "6c6a8ac8aaf080d33654f16916763f19b6fb426f4471c0bc7c6210b94fa71c48",
+      "concepts": [
+        {
+          "code": "M20-1",
+          "name": "Sodbrace",
+          "cell": 1,
+          "origin": "specified",
+          "description": "A broad grazer spreads its weight across six low legs beneath two layered back ridges. The proposal is that those ridges thicken with age, making established adults increasingly difficult to displace."
+        },
+        {
+          "code": "M20-2",
+          "name": "Threestead",
+          "cell": 2,
+          "origin": "specified",
+          "description": "A deep, pear-shaped body rests on two forelegs and one central rear leg. Its lower body could become heavier as it matures in a rich meadow territory; the three-legged support is an anatomical proposal."
+        },
+        {
+          "code": "M20-3",
+          "name": "Sillgrazer",
+          "cell": 3,
+          "origin": "specified",
+          "description": "Four short forelimbs brace a long body that rests on a broad creeping underside. This wet-ground grazer could become progressively wider and more sedentary as its feeding patch develops."
+        },
+        {
+          "code": "M20-4",
+          "name": "Gravelcoil",
+          "cell": 4,
+          "origin": "specified",
+          "description": "A heavy, flexible browser settles into a loose coil, with small supporting legs along its flanks. The proposed mature animal occupies sheltered stony feeding sites, using its growing body mass to hold its ground."
+        },
+        {
+          "code": "M20-5",
+          "name": "Hearthmantle",
+          "cell": 5,
+          "origin": "freeform",
+          "description": "A low, broad animal rests beneath a deep russet-and-cream mantle, with debris and small growths caught in its covering. This open-ended proposal explores a creature whose long residence changes its coat; the nature of those growths remains undecided."
+        },
+        {
+          "code": "M20-6",
+          "name": "Reedsettler",
+          "cell": 6,
+          "origin": "freeform",
+          "description": "A feathered quadruped feeds in shallow water on four spreading webbed feet. The proposal is a wetland resident that grows denser and more settled with maturity, retaining its long flexible feeding neck."
+        }
+      ],
+      "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage. The freeform Hearthmantle retains small growths in its mantle; their biology is explicitly open. M20-5 uses a cleaned muzzle from its independent study.",
+      "selected_concept": "M20-5"
+    },
+    {
+      "code": "M21",
+      "file": "m21-lineup.png",
+      "version": 2,
+      "stage": "lineup",
+      "attached_references": [
+        "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ac1750b2-acac-4eea-bf8b-63756ee54799.png"
+      ],
+      "prompt": "Create a finished Breachline animal LINEUP sheet, 1536 \u00d7 1024 landscape. Exactly SIX distinct whole animals in an even THREE-COLUMN, TWO-ROW arrangement, reading left to right, top then bottom. Each animal stays inside its own 512 \u00d7 512 region with breathing room; all feet, heads and tails inside the cell. No drawn grid, text, labels, numbers, border, signature or watermark. Warm ivory empty background with one small plain ecological ground patch per animal. Quiet resting or feeding moments. The attached references are used ONLY for the last two cells as specified below; do not borrow their body plans or faces for the other four.\nUse traditional oil/acrylic fantasy paint with visible, varied brushwork, selective anatomical detail, naturally matte coverings, coherent soft daylight and believable ground shadows. Connected limbs and feeding structures, clear weight and usable joints. Entirely new natural species, no magic, tack, weapons or humanlike bodies. Heads must belong to their bodies. Avoid jaw frills, hanging mouth tendrils, throat combs, decorative dorsal sacks, plant-animal hybrids, horror mouths and copies of known Earth animals. Do not turn all six into the same furry quadruped.\nTHEME: powerful heavyweight animals, normally calm, impressive and potentially formidable through body mass and support rather than aggression. Include one small ordinary adult human, standing safely apart on the SAME GROUND PLANE as the animal in EACH cell, as a discreet scale comparison. No fear, combat or threat. These are large land or wetland beasts, not aerial beings. Do not use Fanback, Salt-flat migrant, a standard bull or a turtle.\n\nTOP LEFT \u2014 specified take 1: A long level muscular torso carried on SIX stout columnar legs set fairly close beneath it, not splayed spider legs. The fore-chest is deep and the middle of the trunk has a slight underside arch between the limb girdles. A low projecting broad head has a short supple upper lip and flat plant-chewing jaws, with a narrow neck set low into the chest. Smooth warm-grey thick skin, sparse black bristles along the shoulders, a long low tapering tail. A single darker rust band down the flanks. Calmly cropping a tough shrub in open country. Build the body as an integrated six-legged powerhouse, not an elephant with spare legs.\n\nTOP MIDDLE \u2014 specified take 2: A tall deep-bodied BIPED with immense haunches, two broad four-toed feet, a thick low balancing tail and TWO short strong forearms holding a branch near its chest. Its head is short and broad, with a blunt integrated browsing beak, small alert eyes and no bird crest. Dense dark soot-brown fur along the body with shorter chestnut fur at the chest, the lower legs and feet in supple dark hide. Calm and anchored, chest carried above hips and the tail's base helping counterweight it. A heavy upright browser, not a kangaroo, bear or long-legged bird. No wings.\n\nTOP RIGHT \u2014 specified take 3: An exceptionally broad, low, level-bodied animal supported by EIGHT short but massive legs, four per side, its body almost rectangular in plan with smoothly rounded corners. Fine pale-grey fur grows close to deep tough skin; charcoal lower legs and a dark blunt mammalian head protruding only a little from the front edge. A broad ordinary chewing jaw, low nostrils, small calm ears, no trunk. No shell, dorsal slab, armour, fans or dangling facial structures. The wide load distribution makes this enormous animal credible on wet ground. Oblique side view that makes the four near legs and separate far-side supports readable.\n\nBOTTOM LEFT \u2014 specified take 4: A massive animal with TWO very large pillar forelegs supporting a high barrel chest and FOUR shorter muscular rear legs driving a lower, long pelvis. Rounded narrow hindquarters and a modest tapering tail; a thick short neck meets a broad flat-topped head with a deep blunt muzzle and a clearly herbivorous closed mouth, no horns or tusks. Coarse ochre-red fur over the chest transitions naturally into dark grey pebbled hide over lower limbs and rear body. The forward power and lower four-legged rear carriage must read as one evolved living body, not animals joined together. Calmly resting its muzzle against a low shrub at a woodland edge.\n\nBOTTOM MIDDLE \u2014 freeform take 5: Preserve the LEFT animal of the attached independent freeform sheet, including its upright long-necked resting posture, heavy forelimbs, broad low rear torso, compact calm head and warm mottled covering. Retain its exact overall anatomy and unusually gathered mass. Use the reference human for comparable relative scale.\n\nBOTTOM RIGHT \u2014 freeform take 6: Preserve the RIGHT animal of the attached independent freeform sheet: the enormous blue-grey and cream mottled deep-bodied four-legged grazer, long low-reaching neck, blunt face and broad stable feet at shallow water. Retain its body, colouring and calm feeding. Distinguish it from the long-legged narrow Salt-flat migrant by its much wider, lower, load-bearing body and sturdy legs.\nNo printed names. Six strongly different silhouettes with natural contained strength.",
+      "status": "generated",
+      "review_status": "additional_freeform_choices_requested",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-405465d0-c50e-4ecd-bb19-661480bb3bb9.png",
+      "sha256": "20a415d8434c6d4b013e903eab6d7c8120a9f8d9fc5540610766c27a018c44e2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "completed_at": "2026-11-15T05:58:50.991810+00:00",
+      "brief_revision": 7,
+      "source_brief_sha256": "6c6a8ac8aaf080d33654f16916763f19b6fb426f4471c0bc7c6210b94fa71c48",
+      "concepts": [
+        {
+          "code": "M21-1",
+          "name": "Bridgeback",
+          "cell": 1,
+          "origin": "specified",
+          "description": "Six stout legs support a long, deep-bodied browser with a low-reaching head. Its level trunk and distributed support propose a calm heavyweight built for moving substantial mass across open ground."
+        },
+        {
+          "code": "M21-2",
+          "name": "Gatebreast",
+          "cell": 2,
+          "origin": "specified",
+          "description": "An upright browser holds a branch in short forelimbs above immense haunches and a heavy balancing tail. Its compact beak and dense coat frame a powerful but unhurried animal; habitat and exact size remain proposals."
+        },
+        {
+          "code": "M21-3",
+          "name": "Mirestead",
+          "cell": 3,
+          "origin": "specified",
+          "description": "A very broad pale animal carries its weight on eight short legs. This proposes a heavyweight suited to soft ground, with a wide support base and an ordinary, calm grazing head."
+        },
+        {
+          "code": "M21-4",
+          "name": "Redshoulder",
+          "cell": 4,
+          "origin": "specified",
+          "description": "Two enormous forelegs carry a high chest while four shorter rear legs support the lower hindquarters. The fur-to-hide transition and forward concentration of strength propose a formidable woodland-edge browser."
+        },
+        {
+          "code": "M21-5",
+          "name": "Highneck",
+          "cell": 5,
+          "origin": "freeform",
+          "description": "A massive animal rests with its long neck raised above gathered forelimbs and a broad low body. This independent proposal explores contained strength through a seated silhouette rather than a threat display."
+        },
+        {
+          "code": "M21-6",
+          "name": "Bankward",
+          "cell": 6,
+          "origin": "freeform",
+          "description": "A deep-bodied blue-and-cream grazer lowers its long neck toward wetland plants. Its broad feet and substantial torso propose a much heavier animal than the Salt-flat migrant; its ecology and precise scale remain open."
+        }
+      ],
+      "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage."
+    }
+  ],
+  "created_at": "2026-11-15T05:49:45.691813+00:00",
+  "freeform_history": [
+    {
+      "code": "M20-free",
+      "file": "history/m20-freeform-exploration.png",
+      "prompt": "Create an original Breachline painted animal concept sheet, 1536 \u00d7 1024 landscape. Exactly TWO distinct new animal designs, side by side in two equal invisible vertical panels. One whole adult animal in each panel, complete head, body and feet visible, a small plain patch of its natural habitat beneath it and mostly warm ivory empty space around it. No text, names, letters, numbers, borders or dividing line. Each creature is at rest or calmly feeding. Traditional oil/acrylic fantasy painting, visible varied brushwork, selective detail at head and useful anatomy, broad quieter surroundings, coherent natural daylight, matte believable coverings and physical weight. Never a photo, CGI, cartoon or grotesque monster sheet.\nBoth designs are FREEFORM: invent their anatomy, head, covering, colours and character yourself, independently of one another, from the ecological brief below. Do not use familiar Earth animals with a new coat or interchangeable alien heads; devise integrated living bodies with intelligible support, movement and feeding. Do not repeat jaw frills, throat combs, dorsal storage sacks or plant-animal hybrids. No magic, armour, tack or jewelry. Keep mouths relaxed rather than threatening. These are original proposals for natural wildlife, with intriguing ecological presence.\nAvoid reproducing existing animals: no long-legged narrow migratory grazer; no tall thin body strung under dorsal fans; no steeply folded rear with a lowered grazing front; no enormous turtle shell, no standard horned bull.\nECOLOGICAL BRIEF: modest and mobile earlier in life, this animal becomes heavy, anchored and difficult to displace as it matures and settles in one feeding territory. Show the mature state, not a before/after sequence. Its settlement may involve anatomy, changes in covering, age, feeding habits or something entirely different. Habitat, name, exact anatomy and palette are fully open. The two designs must differ strongly in silhouette, body architecture and covering, while both convey an animal that has occupied its spot a long time. These are terrestrial or wetland-edge animals, not flyers. At rest or feeding, with no action spectacle.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-27000fa5-dd62-4d20-84a7-17fbf4738986.png",
+      "review_status": "assistant_revision_needed",
+      "review_note": "LEFT design reused for M20-5 with clean muzzle and covering cleanup; RIGHT remains excluded as Foldstride-adjacent.",
+      "sha256": "9e57be9e8afbc2f8e0f75100e58a02a9e705012a41ae093384819667650cc805"
+    },
+    {
+      "code": "M21-free",
+      "file": "history/m21-freeform-exploration.png",
+      "prompt": "Create an original Breachline painted animal concept sheet, 1536 \u00d7 1024 landscape. Exactly TWO distinct new animal designs, side by side in two equal invisible vertical panels. One whole adult animal in each panel, complete head, body and feet visible, a small plain patch of its natural habitat beneath it and mostly warm ivory empty space around it. No text, names, letters, numbers, borders or dividing line. Each creature is at rest or calmly feeding. Traditional oil/acrylic fantasy painting, visible varied brushwork, selective detail at head and useful anatomy, broad quieter surroundings, coherent natural daylight, matte believable coverings and physical weight. Never a photo, CGI, cartoon or grotesque monster sheet.\nBoth designs are FREEFORM: invent their anatomy, head, covering, colours and character yourself, independently of one another, from the ecological brief below. Do not use familiar Earth animals with a new coat or interchangeable alien heads; devise integrated living bodies with intelligible support, movement and feeding. Do not repeat jaw frills, throat combs, dorsal storage sacks or plant-animal hybrids. No magic, armour, tack or jewelry. Keep mouths relaxed rather than threatening. These are original proposals for natural wildlife, with intriguing ecological presence.\nAvoid reproducing existing animals: no long-legged narrow migratory grazer; no tall thin body strung under dorsal fans; no steeply folded rear with a lowered grazing front; no enormous turtle shell, no standard horned bull.\nECOLOGICAL BRIEF: a genuinely powerful heavyweight animal, normally calm but awesome when fully grown or roused. It may be a grazer, browser or omnivore; no requirement to be a predator. Show substantial mass and believable support through the design of the whole body, not just inflated muscles on a familiar little skeleton. Habitat, name, exact body plan and palette are fully open. The two designs should be very different from one another; convey awe and contained strength, not horror. Include a small distant ordinary adult human standing on the SAME GROUND PLANE in each panel solely as an unobtrusive scale comparison; clearly smaller than the beast, never endangered, no confrontation. Great land or amphibious beasts, not aerial animals or whales.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-5025be7d-6e55-439e-ba3d-935dd6a5bfab.png",
+      "review_status": "assistant_revision_needed",
+      "review_note": "Repeated bulky quadrupeds and hanging mouth appendages; M20 right also too close to Foldstride. Excluded from final lineup.",
+      "sha256": "0c9e9e0b618af9a058090c3a5aee622505b7be2f6151f1f3f202653a9e8b6b2c"
+    }
+  ],
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T05:58:50.991810+00:00",
+  "gallery": "animal-lineups-review.html",
+  "concept_count": 12,
+  "creator_approval": "pending",
+  "next_stage": "Creator selects one take per lineup, then selected reference sheet, then card painting.",
+  "consulted_sources": [
+    "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+    "/Users/dpuser/Documents/Claude/Games/.claude/skills/breachline-animal-art/SKILL.md",
+    "/Users/dpuser/Documents/Claude/Games/breachline/SETTING.md",
+    "/Users/dpuser/Documents/Claude/Games/breachline/ANIMAL_REFERENCE_HANDOFF.txt",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/accepted-animals-2026-11-13/animal-reference-index.json",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/art-review/selection-guide.json"
+  ],
+  "brief_status_update_sha256": "e9d34b4538674d360346a1f5be13ebd5cdde78584b522eb9d9602ddc80f2bf1a",
+  "gallery_status": "visually_verified_ready_for_creator_selection",
+  "gallery_review": {
+    "date": "2026-11-15",
+    "checks": [
+      "Both lineup images render with the correct stable codes.",
+      "Individual creature crops and two-sentence descriptions checked.",
+      "All local gallery links resolve."
+    ],
+    "url": "http://127.0.0.1:8796/animal-lineups-review.html"
+  },
+  "latest_creator_feedback": "animal-feedback-round2.json",
+  "followup_manifest": "animal-followup-round2-manifest.json"
+}

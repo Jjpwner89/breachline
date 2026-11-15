@@ -1,0 +1,32 @@
+BREACHLINE — SET 13 + OX-LIKE WORKING ANIMAL
+2026-11-14 | Generated; awaiting creator review
+
+Scope completed
+OX1: one direct-request working-animal reference sheet (working name Broadneck).
+S13-01–05, S13-07–09: eight new card paintings.
+S13-06: six-option Veilwing harness lineup, as required before its final painting.
+S13-E1–E6: six wildlife edits of existing paintings; original/revision comparisons included.
+
+Creator clarification
+S13-09 uses SMALL JUVENILE Ford-threads in ROOMY JARS, explicitly confirmed by the creator. Preserve selected rounded face and translucent body. The scene does not redefine adult size.
+
+Review
+Open index.html through review-server.py (localhost URL recorded in server-info.json).
+Large codes identify each image. Veilwing options run S13-06-1 through S13-06-6, left to right, top to bottom. Like/Pass/Undecided and notes save to feedback.json; Pass overlays an X without removing the original.
+Gallery choices are review evidence, not automatic installation or lore changes.
+
+Sources
+Claude brief revision 1: /Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/BRIEFS-source-revision-1.md
+Authoritative source at generation: /Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET13.md
+SHA256: 6c0459b28bf0f3db1f004d79cdd767b7250a6ff43e1aab906de49ae28dc0af55
+Current shared art direction and animal-reference guide governed the batch. The worktree brief and card mechanics were not modified. Exact prompts, reference paths, selected cells in prompts, reference hashes, source images, output hashes and review status are in prompts-and-manifest.json.
+
+Preservation / pending work
+Live card art was not replaced. The six originals are also copied unchanged into originals/.
+OX1 anatomy, working name, domestic practices and regional distribution are proposals pending creator review. The selected Salt-flat migrant remains the salt-road draft animal.
+Veilwing itself was reopened by the latest Claude brief; the six harness proposals remain undecided. Generate the final S13-06 card painting only after the creator selects or revises the harness.
+Existing accepted animals remain the first reference for future animal cards and background wildlife. No broader habitat, diet, lifecycle or culture is canonized by these paintings.
+No card mechanics, deployment, commit or merge was performed.
+
+Generation and checks
+All images were made using built-in image_gen. Each of the 16 deliverables was visually inspected against the relevant identity references; existing painting edits were checked against their original. Veilwing's full silhouettes fit the sheet; the upper wing tips have a narrow intact margin.

@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "preferred": "S13-06-P11C",
+  "status": "selected_for_refinement_not_final",
+  "anatomy": {
+    "date": "2026-11-14",
+    "source": "Creator feedback on S13-06-P8",
+    "creator_words": "It looks like it's got kind of a main dorsal wing, and then one, like, further behind it, which I'm actually okay with. So let's keep that ... add a right wing.",
+    "dorsal_sails": 2,
+    "lateral_wings": 2,
+    "total_main_sails": 4,
+    "status": "arrangement_selected_by_creator",
+    "scope": "Exactly four named surfaces: left front wing, right front wing, front dorsal sail, back dorsal sail. Dorsal sails can pivot/lean across the back and overlap/contact each other; keep their roots and free edges distinct from the torso. C selected for refinement, P12 pending.",
+    "dorsal_position": "Main back sail plus a second posterior back sail, as seen in P8.",
+    "supersedes": "Earlier one-dorsal/two-side-wing decision and F1/F2 as complete anatomy references.",
+    "latest_markup": {
+      "source": "Creator annotated P9 in chat",
+      "wing": "Remove old wing in front-left sky, replace behind near wing in downward outlined position",
+      "body": "Extend rear torso under back sails to marked junction",
+      "tails": "All long tails originate at the actual posterior body end, not under mid-body"
+    },
+    "dorsal_mobility": {
+      "status": "creator_direction",
+      "description": "Two sail-like dorsal surfaces can pivot sideways/over the body, partly cover one another and brush against another wing. Front sail may hide the start of the back sail; do not fuse their free edges into the rump.",
+      "visual_treatment": "Subtle root/fold/occlusion clarity, not a redesigned animal or exposed mechanical hinges."
+    },
+    "tail_length": "Three long spindly leaf-tipped tails, each at least snout-to-rump length and preferably clearly longer; widen framing to fit rather than shorten.",
+    "front_right_direction": "Slightly more forward and more extended than P11C's triangular form, anatomically equivalent to left front wing."
+  },
+  "output": "S13-06-P12",
+  "output_status": "pending_creator_review",
+  "generation_check": "First draft added extra underbody membrane; final removes only that fifth surface."
+}

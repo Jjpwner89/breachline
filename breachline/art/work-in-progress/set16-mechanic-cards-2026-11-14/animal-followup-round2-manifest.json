@@ -1,0 +1,135 @@
+{
+  "batch": "Set 16 animal follow-up round 2",
+  "date": "2026-11-15",
+  "brief_revision": 8,
+  "base_brief_revision": 7,
+  "brief_source": "BRIEFS-animal-followup-revision-8.md",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "status": "generated_awaiting_creator_review",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "feedback": {
+    "date": "2026-11-15",
+    "source": "Creator feedback in this chat",
+    "brief_base_revision": 7,
+    "local_revision": 8,
+    "interpretation": "M25 is understood as the spoken M20-5, explicitly repeated by the creator. No second image selection inferred.",
+    "selection": {
+      "code": "M20-5",
+      "decision": "selected_for_reference_development",
+      "request": "A cub of the same animal beside the adult.",
+      "name_status": "Hearthmantle remains a working name"
+    },
+    "additional_exploration": {
+      "scope": "Six additional M21 choices; all freeform, with two experimental mouth structures.",
+      "feedback": [
+        "The freeform results were preferred to the anatomy-prescribed ones.",
+        "The M21 faces were too similar and too focused on browsers.",
+        "M21-2 Gatebreast resembles the existing Woodland breaker.",
+        "Explore more mouth shapes and broader whole-animal variety."
+      ],
+      "existing_choices": "Retained as earlier options; not explicitly rejected."
+    },
+    "approval_scope": "Selection for reference development only; new reference and added lineups await review. No card-art approval, installation, publishing or automation restart."
+  },
+  "items": [
+    {
+      "code": "M20-R1",
+      "file": "m20-hearthmantle-adult-cub-v1.png",
+      "stage": "selected_reference",
+      "references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-lineup.png"
+      ],
+      "selected_cell": "bottom middle, M20-5 only",
+      "prompt": "Use case: identity-preserve. A selected animal reference painting for Breachline, landscape 3:2.\nThe attached image is an anatomy and identity reference ONLY for its BOTTOM MIDDLE animal, M20-5. Develop exactly that creature as one adult with a cub of its own species beside it. Do not use any other cell.\nPreserve the adult's very broad low resting body, enormous grounded forepaws, small rounded ear, calmly alert rounded muzzle and small dark eyes, thick overlapping russet, ochre and cream mantle sweeping backward from the head and over shoulders and body. Preserve the distinctive mix of soft layered covering and matte robust paw skin. The adult rests with its forepaws forward, relaxed and substantial, with its body complete in frame. Keep the scattered small growths/debris already embedded in its mantle modest, without adding a garden or new adornments.\nBeside the adult, fully visible and separated from the adult's outline, put one much smaller, youthful cub, perhaps around one quarter of the adult's body length. The cub is recognizably this same species, with the same muzzle, ears, paw structure and russet/cream mantle starting to develop: softer shorter covering, younger proportions and a lighter build that can visibly grow into the adult. It stands or sits naturally next to the resting adult on the same ground plane, with a quiet familial presence. No human scale figure, no other animals.\nA simple warm ivory reference background with minimal earth marks and grounded contact shadows. Coherent soft neutral daylight. Traditional oil and acrylic fantasy painting with visible varied brushwork, selective detail around faces and near paws, broader quieter strokes through the mantle and ground. Convincing anatomy and weight, matte organic surfaces, appealing natural animals rather than toys. No captions, lettering, frame, watermark or decorative border. The names, ecological mechanism and exact size remain open.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ccb6c334-74b1-4813-955d-dda864bfdcd2.png",
+      "description": "The selected M20-5 adult rests beside a much smaller cub with the same russet-and-cream mantle, rounded face and broad paws. The young animal has a lighter build and shorter covering, showing room to grow; its exact size, habitat and mantle biology remain open.",
+      "assistant_review": "Inspected against M20-5: adult silhouette, face, russet/cream layered mantle and large grounded forepaws retained. Cub is visibly same species, separate and smaller on same ground; youthful anatomy and shorter mantle read clearly. New reference pending creator review.",
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "version": 1,
+      "brief_revision": 8
+    },
+    {
+      "code": "M21-B",
+      "file": "m21-freeform-lineup-b.png",
+      "stage": "lineup",
+      "references": [],
+      "prompt": "Use case: stylized-concept. Breachline wildlife exploration, one landscape 3:2 painted lineup with exactly SIX completely new heavyweight animals. Arrange three equal columns and two equal rows on warm ivory, one complete animal per cell. Leave space around each silhouette and at each cell's top left for later review labels. No text in the image.\nAll six are FREEFORM inventions: invent each body, anatomy, palette, covering and ecological life yourself. The shared goal is a genuinely strong wild animal, with convincing mass, support, locomotion and a fascinating natural presence. Do not merely enlarge Earth animals, repeat a skeleton with another face, or make six members of one family.\nThe creator wants substantially more variety than a line of thick-necked, blunt-muzzled browsing mammals. Give the six genuinely different integrated faces and ways of feeding, as well as different distributions of body mass, limb arrangements and coverings. Let ecological inventiveness drive the designs; feeding roles are open and should not all be browsing or grazing. At least two takes should explore a particularly unfamiliar but physically intelligible mouth structure, visible clearly enough to evaluate. Its mouth can be at ease or quietly being used; experimentation does not require a threat display. Avoid making jaw frills or throat combs the recurring novelty.\nDo not repeat an upright furred beaked animal with huge foreclaws and a deep chest: that animal already exists. Nor repeat a multi-legged blunt-faced bulky grazer across several cells. Invent six separate answers, not incremental variants. Some may be quietly beautiful, awkward, eerie or powerful; originality need not be ugly or horrific.\nEach cell shows a small plain adult human for scale safely separate from the animal, on the same ground plane. Clear silhouettes, believable limb roots and contacts, whole bodies within their cells, modest patches of ecological ground rather than full scenes. Traditional oil/acrylic fantasy painting, visible varied brushwork, selective detail on the mouth and near anatomy with simpler secondary strokes, matte tactile surfaces, coherent readable daylight. No glossy 3D, cartoon or diagram aesthetic, no lettering, borders, numbers, watermark or signatures.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-6ae62d67-084f-446a-9455-db617c1f5a3c.png",
+      "concepts": [
+        {
+          "code": "M21-7",
+          "name": "Sievejaw",
+          "cell": 1,
+          "description": "A broad wetland heavyweight holds vegetation inside a mouth spanned by long curved struts. This proposes an unusual straining or sorting structure; its exact food and the nature of those struts remain open."
+        },
+        {
+          "code": "M21-8",
+          "name": "Foldlip",
+          "cell": 2,
+          "description": "A tall, feathered animal gathers a branch with flexible lobes surrounding its mouth. The proposal explores a muscular feeding surface integrated into a narrow head, with a body distinct from the earlier blunt-faced browsers."
+        },
+        {
+          "code": "M21-9",
+          "name": "Cragclasp",
+          "cell": 3,
+          "description": "A low armoured heavyweight loosens the ground with immense paired mouth pincers. This proposes a powerful digging or crushing feeder; whether it seeks buried animals, roots or something else remains undecided."
+        },
+        {
+          "code": "M21-10",
+          "name": "Poolmaw",
+          "cell": 4,
+          "description": "A deep-bodied waterside hunter lifts a fish in its long, widely opening jaws. It explores a predatory heavyweight whose broad forequarters and spreading feet support its weight at the water's edge."
+        },
+        {
+          "code": "M21-11",
+          "name": "Bloomdrinker",
+          "cell": 5,
+          "description": "A heavy, furred insect-like animal lowers a slender feeding tube into a large flower. This proposal combines nectar feeding with substantial ground-supported mass; its wider diet and any use of the layered back structures remain open."
+        },
+        {
+          "code": "M21-12",
+          "name": "Rakeface",
+          "cell": 6,
+          "description": "A long-bodied animal probes between stones with flexible mouthparts while bracing on powerful limbs. This explores a ground-searching feeder with a low head and high finned back, without settling exactly what it eats."
+        }
+      ],
+      "assistant_review": "Inspected six complete cells, separate scale figures, contact/support, feeding contacts and mouth variety. Range includes strut-supported mouth, flexible lips, opposed pincers, piscivorous jaws, slender feeding tube and probing mouthparts. Cells 2 and 6 share flexible mouth structures but differ in body plan and apparent feeding use; both remain freeform proposals, not approved anatomy.",
+      "status": "generated",
+      "review_status": "awaiting_creator_selection",
+      "sha256": "ba124925c1e36b295da74f3fc6b0ab640e615578d4b316a66a02d1e38c9e5532",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "version": 1,
+      "brief_revision": 8
+    }
+  ],
+  "creator_approval": "pending for new outputs",
+  "installation_status": "not_authorized",
+  "gallery": "animal-followup-review.html",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T16:12:17.617423+00:00",
+  "gallery_status": "visually_verified_ready_for_creator_review",
+  "brief_sha256": "1662caa7a7594972293589c2e2792a9d7e7b66265921116d6fab6ed64a8699ce",
+  "gallery_review": {
+    "date": "2026-11-15",
+    "checks": [
+      "Adult and cub image renders with M20-R1 heading.",
+      "New lineup labels M21-7 through M21-12 are clear and match row-major order.",
+      "Individual image crops and descriptions present.",
+      "All gallery local file links resolve."
+    ],
+    "url": "http://127.0.0.1:8796/animal-followup-review.html"
+  },
+  "brief_status_update_sha256": "8d96f6c37e0cb92886651e2d464a25e34ab8659565c9d496cedb355c00ab4b06",
+  "latest_creator_feedback": "animal-feedback-round3.json",
+  "review_note": "Strongly liked by creator. M20 ecological direction now recorded; M21 individual choice remains open."
+}

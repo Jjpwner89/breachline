@@ -1,0 +1,172 @@
+{
+  "batch": "Set 16 heavyweight riffs",
+  "date": "2026-11-15",
+  "brief_revision": 11,
+  "brief_source": "BRIEFS-heavyweight-riffs-revision-11.md",
+  "brief_sha256": "32f585a1b704f208a09807e6118930490e0af3debdfec2f0ce44751bd3ba27a6",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "feedback": "animal-feedback-round5.json",
+  "status": "superseded_by_creator_correction",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "reference_selections": [
+    {
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+      "code": "M21-5",
+      "selected_cell": "bottom middle",
+      "rect": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "sha256": "20a415d8434c6d4b013e903eab6d7c8120a9f8d9fc5540610766c27a018c44e2"
+    },
+    {
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png",
+      "code": "M21-8",
+      "selected_cell": "top middle",
+      "rect": [
+        0.3333333333333333,
+        0,
+        0.3333333333333333,
+        0.5
+      ],
+      "sha256": "ba124925c1e36b295da74f3fc6b0ab640e615578d4b316a66a02d1e38c9e5532"
+    }
+  ],
+  "items": [
+    {
+      "code": "M21-D",
+      "version": 1,
+      "concept_codes": [
+        "M21-16",
+        "M21-17",
+        "M21-18",
+        "M21-19",
+        "M21-20",
+        "M21-21"
+      ],
+      "stage": "lineup",
+      "file": "m21-highneck-foldlip-riffs.png",
+      "prompt": "Use case: stylized-concept. Create a fresh Breachline HEAVYWEIGHT ANIMAL RIFF LINEUP, landscape 3:2, about 1536 x 1024. Exactly SIX complete animals in a clean THREE-COLUMN, TWO-ROW arrangement. One distinct take per cell, comfortably inside that cell with breathing room and all feet/tails visible. Warm ivory ground, minimal ecological footing and one small plain adult human safely apart for scale in each cell. No text, labels, drawn panel lines, borders, watermark or signature.\nTwo attached sheets provide ONLY TWO specific design seeds. Ignore every other creature on both sheets:\nREFERENCE 1: ONLY BOTTOM MIDDLE, M21-5. The enormous resting animal with a broad low hindbody, huge folded forelimbs, elevated long muscular neck, compact rounded head, and warm cream/ochre/russet mottled natural covering. This seed's appeal is massive settled weight with a neck lifting above it.\nREFERENCE 2: ONLY TOP MIDDLE, M21-8. The tall feathered heavyweight with a high neck and crest, long flexible grasping mouth-lobes around a small central mouth, broad muscular torso and powerful four-legged support. Its slate, cream and warm ochre covering integrates feathers and matte limb skin. Preserve the idea that the mouthparts genuinely belong to its face.\nExplore, do not simply copy the reference poses. Keep the visual relationship to these seeds clear while allowing original anatomy and unexpected solutions. Invent the detailed variants yourself; anatomy, precise palette and ecology are open within these directions. The creator prefers this freeform approach over six fully prescribed designs.\n\nLEFT COLUMN, upper and lower cells: two different riffs led by M21-5. Retain massive low body volume, a strong elevated neck and formidable forequarters, but explore different stance, neck carriage and distribution of weight. They need not acquire the other seed's mouth. The two should look meaningfully different as whole animals, not the same animal recoloured.\nMIDDLE COLUMN, upper and lower cells: two different riffs led by M21-8. Retain an integrated flexible grasping mouth and a strongly feathered character, but explore heavier support and contrasting silhouettes or neck proportions. Keep genuine heavyweight strength: big animals with substantial torso and limbs, rather than delicate tall birds.\nRIGHT COLUMN, upper and lower cells: two freer SYNTHESIS takes, combining M21-5's massive grounded presence with M21-8's intriguing mouth/feather anatomy. Invent their proportions, posture, coverings and mouth use as integrated new biology. Do not just paste a head onto the other body.\n\nAcross all six, vary silhouette, posture, neck/head proportion, coat transitions and facial character. Faces should show different functional interpretations rather than six copies of a blunt browsing muzzle. Predatory capability and sharper gripping structures are welcome where they fit a take, but do not force every animal to roar or convert every mouth into the same fanged gape. Some mouths can fold at rest and others work or open enough to read. No ubiquitous leafy branches or compulsory plant-eating. Maintain credible limb origins, load-bearing feet, muscular neck support and usable mouth attachments. This is exploration of powerful wildlife, not a transformation sequence or literal game-mechanic diagram.\nTraditional oil and acrylic fantasy painting, visibly varied brushwork and selective detail, precise focal mouths/eyes with broader, quieter marks through secondary covering and ground. Matte organic surfaces, coherent readable daylight, lively restrained colour. No photorealistic rendering, glossy toy forms, armour, equipment, spectacle, victim scene or gore. The exact size, diet, habitat and names remain proposals.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png"
+      ],
+      "reference_role": "Selected cells only, design seeds for variation and synthesis.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-3ac88344-c50e-492c-8806-9c0f487d0d5f.png",
+      "sha256": "5f004b292edaad40ef5b664cfe6558a2e67e3ccbec5c3bd71978799d0026f000",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "assistant_review": "Inspected the generated six-cell sheet: complete silhouettes, readable load-bearing limbs and ground contacts, separate scale figures, integrated flexible mouthparts, coherent daylight and matte painted coverings. Left column retains Highneck identity; middle develops heavier Foldlip; right explores two resting syntheses. The two synthesis takes are close relatives rather than independent species. Mouth mechanics and hidden limb attachments remain reference-stage questions, with no obvious generation defect requiring correction in this exploratory sheet.",
+      "status": "generated",
+      "review_status": "awaiting_creator_selection",
+      "completed_at": "2026-11-15T20:43:47.608902+00:00"
+    }
+  ],
+  "gallery": "heavyweight-riffs-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "generation_input_brief_sha256": "25f4b89e9bb49786d7ba520d3628a8ef97527567ab6980b9846ae1ede38f0aaf",
+  "completed_at": "2026-11-15T20:43:47.608902+00:00",
+  "claim_status": "released_generation_complete",
+  "concepts": [
+    {
+      "code": "M21-16",
+      "name": "Highneck \u00b7 towering",
+      "seed": "M21-5",
+      "description": "A compact, rounded head rises above a deep chest and enormous planted forelimbs, with warm mottling running through the neck and body. This take proposes a more upright, watchful form of Highneck; its diet and habitat remain open.",
+      "cell": "top left",
+      "rect": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ]
+    },
+    {
+      "code": "M21-17",
+      "name": "Foldlip \u00b7 heavy mantle",
+      "seed": "M21-8",
+      "description": "A tall feathered animal carries flexible mouthparts above a barrel-shaped torso and thick, weight-bearing legs. This take explores a substantially heavier Foldlip, with the layered mantle defining its silhouette.",
+      "cell": "top middle",
+      "rect": [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ]
+    },
+    {
+      "code": "M21-18",
+      "name": "Synthesis \u00b7 low repose",
+      "seed": "M21-5 + M21-8",
+      "description": "A long feathered neck and grasping mouth rise from a broad, reclining body with huge forelimbs stretched forward. It combines Highneck\u2019s settled mass with Foldlip\u2019s face and covering; the mouth\u2019s feeding role remains a proposal.",
+      "cell": "top right",
+      "rect": [
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ]
+    },
+    {
+      "code": "M21-19",
+      "name": "Highneck \u00b7 ground reach",
+      "seed": "M21-5",
+      "description": "The lowered neck sweeps down from a high shoulder mass while long forelimbs carry the body above the ground. This explores a more forward-reaching Highneck, pictured investigating low vegetation rather than establishing an exclusively browsing diet.",
+      "cell": "bottom left",
+      "rect": [
+        0.0,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ]
+    },
+    {
+      "code": "M21-20",
+      "name": "Foldlip \u00b7 root grip",
+      "seed": "M21-8",
+      "description": "A shorter-necked, heavily feathered animal braces over a root cluster held by its flexible mouthparts. The proposed feeding action tests whether Foldlip\u2019s unusual face still reads clearly on a lower, more powerful body.",
+      "cell": "bottom middle",
+      "rect": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ]
+    },
+    {
+      "code": "M21-21",
+      "name": "Synthesis \u00b7 raised chest",
+      "seed": "M21-5 + M21-8",
+      "description": "A massive seated animal holds its chest and neck high, with a curled tail and outward-reaching mouthparts. This offers a more upright resting counterpart to M21-18, retaining a bulky mottled body beneath a feathered neck.",
+      "cell": "bottom right",
+      "rect": [
+        0.6666666666666666,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ]
+    }
+  ],
+  "gallery_verification": {
+    "verified_at": "2026-11-15T20:44:47.867584+00:00",
+    "result": "Browser-checked overview and individual cell views at the available narrow viewport. Large stable codes, complete artwork and readable descriptions visible; gallery marked as deliverable. Output/reference hashes and linked local files verified."
+  },
+  "latest_creator_feedback": "animal-feedback-round6.json",
+  "feature_rejection": {
+    "feature": "dangling fleshy mouthparts",
+    "codes": [
+      "M21-17",
+      "M21-18",
+      "M21-20",
+      "M21-21"
+    ],
+    "scope": "mouth feature rejected; whole-body designs not individually rejected",
+    "replacement_manifest": "heavyweight-exercise-round6-manifest.json"
+  }
+}

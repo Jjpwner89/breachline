@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "set": 16,
+  "date": "2026-11-15",
+  "status": "partially_final_for_card_building",
+  "purpose": "Authoritative final selection of M2 v7 only. Other Set 16 paintings remain pending.",
+  "creator_authorization": "that's it, final! — refers to the fresh M2 resting portrait",
+  "live_installation": false,
+  "counts": {
+    "final_images": 1,
+    "pending_cards": 21
+  },
+  "pending_card_ids": [
+    "oathveteran",
+    "heldspears",
+    "secondworking",
+    "senthome",
+    "frostlatch",
+    "countedwords",
+    "writseizure",
+    "confiscator",
+    "gatheredhost",
+    "ashborngleaner",
+    "pitdigger",
+    "waitingnoose",
+    "risingsquall",
+    "thrownboulder",
+    "streakraider",
+    "hiredshield",
+    "hiredcompany",
+    "ploughback",
+    "foldstride",
+    "saltmigrant",
+    "gravelmouth"
+  ],
+  "assets": [
+    {
+      "id": "set16-M2",
+      "code": "M2",
+      "title": "Still Flame duelist",
+      "card_id": "flameduelist",
+      "version": 7,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png",
+      "sha256": "7633ca814923938c0dd283d36144a364fe7e13572376113630d1c5feb380dc2d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "that's it, final!",
+      "live_installation": false,
+      "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json",
+      "description": "A young Crest folk duelist rests lightly on his grounded rapier, wearing fine blue cloth over light mail. His shield hangs from buckled waist straps beside a scabbard, pouch and gloves; his relaxed bearing suggests a capable, high-status swordsman."
+    }
+  ]
+}

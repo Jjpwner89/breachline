@@ -1,0 +1,1428 @@
+{
+  "batch": "Set 16 — cards for the new mechanics",
+  "date": "2026-11-14",
+  "brief_revision": 7,
+  "brief_source": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/ART_BRIEFS_SET16.md",
+  "brief_sha256": "e9d34b4538674d360346a1f5be13ebd5cdde78584b522eb9d9602ddc80f2bf1a",
+  "status": "M2_final_M20_reference_review_M21_selection_other_19_review",
+  "claimed_by": "01a1dc91-7812-7d53-b177-75dcb182f4e9",
+  "generator": "built-in image_gen",
+  "art_direction": "/Users/dpuser/Documents/Claude/Games/.claude/skills/art-direction/SKILL.md",
+  "art_direction_sha256": "074b14044b2386c00ba615f8a92e4517435db04edeb63b9d65c1feeb3401adf8",
+  "scope": "22 original card paintings. Card roles and scene details remain proposals. Creator review required; no installation or publishing.",
+  "items": [
+    {
+      "code": "M1",
+      "card_id": "oathveteran",
+      "title": "Oath veteran",
+      "file": "oathveteran.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a finished painting using the attached reference sheet for the TOP ROW Sunmane Oath equipment only; do not reproduce the sheet layout. An older human male Oath veteran, about sixty-five, narrow long face, hooked nose and silver close-cropped hair, pauses beneath an ordinary roadside shelter before a march. Three-quarter view from waist upward, calmly checking the leather buckle of his fitted, repeatedly repaired plate cuirass. His helmet sits on the bench at his hip, his sheathed straight sword is worn naturally, and his shield leans beside his knee with ONE weathered sun emblem. The main interest is the calm lived-in face and capable hands, not ornament. Younger soldiers are just a couple of loosely painted shapes further down the dry road. Warm late-afternoon light enters from the open side, catching worn steel edges and the ochre shelter timber; the face remains readable. Practical field-worn kit with convincing repairs, age painted through form rather than detailed wrinkles. Hands connect correctly to the single strap; no extra fingers or duplicate weapons. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d27ef2e0-1d58-4939-997f-a8845d348913.png",
+      "sha256": "7248383258621216526216ee86b2bc08828d2c7d4b031b13fe412a4514db993e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "An older Oath soldier checks a familiar buckle before the march, with his worn shield and helmet beside him. This proposes a new veteran and a roadside pause; the Sunmane equipment follows the accepted reference.",
+      "assistant_review": "Face, hands at buckle, helmet, sword and single shield sun are readable; coherent shelter light and restrained distant soldiers. Ready for creator review.",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M2",
+      "card_id": "flameduelist",
+      "title": "Still Flame duelist",
+      "file": "approved/flameduelist-v7.png",
+      "status": "final_for_card_building",
+      "review_status": "accepted_final",
+      "prompt": "Create a completely NEW finished fantasy painting, composed from scratch. The subject is a young male Crest folk duelist of high status at ease. IMAGE 1 supplies ONLY this man's facial identity and species silhouette, because the creator wants the same guy. Do not copy its pose, clothes, framing, shield position, courtyard composition or surface texture. IMAGE 2 supplies the accepted Crest folk biological anatomy only; the subject remains the MAN from image 1, not the woman in image 2. Paint clean new forms.\n\nShow his entire standing figure, from complete head crest to both boots and the rapier's point on the paving, with breathing room. Landscape 1536 × 1024, character slightly left of centre, seen at ordinary chest-level from a gentle three-quarter angle. He rests in a quiet limestone loggia, an elegant shaded place with a softly suggested court beyond. A few broad architectural shapes, not an elaborate busy backdrop. The appeal is an assured young swordsman quietly taking his ease.\n\nPOSE: a relaxed weight-shifted stance, one knee easy and one hip settled, shoulders lowered. His anatomical RIGHT hand loosely cups the top of the pommel of a long rapier standing nearly upright beside him at screen left; long narrow exposed blade points DOWN and its fine tip rests clearly on the stone paving. The hilt is around his upper waist. He inclines very slightly toward this hand, lightly resting on the weapon, never dumping his whole weight onto it. Blade stays straight; its point, ground contact, continuous blade, swept guard, grip, pommel and hand contact all read clearly. Both feet remain planted and carry his weight. His other arm hangs comfortably or rests loosely beside the belt. No combat crouch, extended threatening blade, raised shield, rigid parade stance or brooding villain pose.\n\nDRESS: a light, flexible steel mail jacket, small linked rings visibly readable at the throat, short sleeves and lower opening, without rendering every link everywhere. Over the mail, a handsome tailored medieval surcoat: deep blue fine wool with a soft muted lining, narrow tasteful embroidery at the edges, elegant closures, fitted upper body and a divided skirt to just above the knees. Clearly a beautiful cloth coat OVER the mail jacket, not a padded gambeson or metal cuirass. Well made and lightly travelled, showing high status through quality and fit. Dark fitted trousers and practical soft leather boots. No heavy armour, huge pauldrons, helmet or oversized jewelry.\nA compact round shield hangs at his anatomical LEFT hip, secured to the waistband by two short visible buckled leather suspension straps. It hangs freely against the outer thigh: he is NOT holding it, no arm goes through it. Include an empty long rapier scabbard suspended naturally from the belt, a small plain belt pouch and gloves tucked through the belt, sensibly spaced and uncluttered. No additional drawn weapon.\n\nSAME MAN: late twenties, lean masculine body, angular jaw and brow from image 1, chalk-tan matte skin, russet cheek markings, distinctive swept fluted bony head crest and modest integrated shoulder/arm crests from the species sheet. Clothing is cut around his anatomy; visible forearm ridges remain biological, not metal ornaments. A little ruggedness in the face and a faint healed brow nick, but youthful, not heavily scarred or deeply weathered. Calm watchful eyes, relaxed closed mouth, no scowl or sneer. He seems capable and faintly dangerous without making a threat.\n\nFresh traditional oil/acrylic painting with confident varied visible brushwork, readable facial planes and hand contact, broad related colour shapes, much quieter background detail and soft edges. Soft directional daylight with a warm reflected stone bounce lights his face and cloth coherently; restrained steel glints distinguish mail and blade from matte skin and wool. A composed, appealing painting, neither grey and bleak nor sugary and glossy. No photograph, 3D render, repetitive crackle or pore noise, camera blur, text, lettering, labels, border, signature or watermark.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v6.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png"
+      ],
+      "alignment": "Vigil",
+      "brief_revision": 6,
+      "version": 7,
+      "history": [
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist.png",
+          "status": "generated",
+          "review_status": "superseded_casting_change",
+          "prompt": "Create a new finished painting with the first attached sheet as REQUIRED Greyhide anatomy and the BOTTOM ROW of the second sheet as Still Flame equipment construction. A Greyhide Still Flame duelist stands quietly across a cold northern tidal causeway, ready to defend the longhouse settlement behind him. A large rounded insulated body, smooth mottled grey hide, broad calm nonhuman face, short sturdy legs, fine hands, absolutely no tail. Preserve the distinctive head and body from the sheet, but give him a fitted padded winter coat, wool mantle and practical short sword held low in one hand; a round wooden shield on the other arm. The shield arm is convincingly behind its shield. His kind face has settled into grave resolve; no rage, hero pose, glowing eyes or magical bubble. Full body slightly off centre, legs clearly planted on damp stone, horizon and distant dark longhouses low behind. Cool clear coastal morning illuminates face and hands, a muted warm lining inside the mantle providing a small natural contrast. A tide pool reflects the grey sky; icy maritime climate, no tropical vegetation. The fine sword grip and substantial weight matter. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-b094b2d6-a5f2-4f2a-9c43-cb1f9bc6b809.png",
+          "sha256": "661441c9cd3dbc2d0194bbd675138156d45862f9ff5a796ec6b8e4c27b4b48fd",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Greyhide defender stands across a winter tide road with a short sword and round shield. His calm expression and substantial build retain the accepted species design; this individual and Still Flame role remain proposals.",
+          "assistant_review": "Accepted head and body proportions retained; no tail, two grounded legs, clear short-sword grip and shield position. Cold coastline and lighting coherent. Ready for creator review.",
+          "alignment": "Vigil",
+          "brief_revision": 1,
+          "version": 1
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v2.png",
+          "status": "generated",
+          "review_status": "superseded_casting_change",
+          "prompt": "Create a completely fresh Breachline painting of the Still Flame duelist, a large kind Greyhide who has chosen to defend a northern longhouse. First reference is REQUIRED accepted Greyhide anatomy and face: rounded heavily insulated torso, broad calm nonhuman face, smooth grey hide with restrained warm mottling, short sturdy legs and fine dexterous hands, no tail. Preserve that species exactly, including its natural body weight. Second reference's BOTTOM ROW gives Still Flame practical padded clothing and sword/shield construction, not its neutral display pose. Do not reproduce a reference sheet.\n\nA tense, quiet moment at the outer threshold of a coastal longhouse, seen at roughly the character's chest height from a three-quarter side angle. The duelist has stepped into a compact, practiced guard on damp flat paving. Both feet planted apart, front knee slightly bent, weight low and stable, round torso turning over the hips. His near right hand firmly grips a proper short sword with a useful straight steel blade and simple guard; blade extends diagonally forward into clear space at waist height, pointing toward an unseen approaching threat off to the left, never toward the viewer or through the shield. His left forearm naturally supports a plain round wooden shield held closer to the chest. Both arms and grips must connect coherently. His broad gentle face is intent and sober, eyes fixed in the sword's direction, mouth relaxed but resolved. He is visibly a capable duelist, not a roaring berserker.\n\nA fitted dark blue-grey padded coat shaped around his round body, pale wool at its opening, short heavy shoulder mantle pinned out of the sword arm's way, simple winter foot protection. Change the reference clothing for this individual while keeping its practical warmth. A warmly lit longhouse doorway behind him and a cool strip of northern sea and slate sky beyond the timber walkway establish home. Cold air, salt-damp stone, a few traces of old snow; the background is suggested, not an intricate village panorama. Natural low afternoon sunlight from one side lights his face and sword hand, with cool reflected sky in the shadows and a small warm door-light accent. Focus on the face, fine sword grip and poised weight. No flame effects, healing demonstration, aura or ward bubble. One finished landscape card painting, 1536 × 1024. Traditional oil and acrylic fantasy painting with deliberate, visible brushwork, broad connected light and shadow shapes, selective sharp detail around face and hands, and much simpler supporting scenery. Matte skin, wool, wood and stone; restrained metallic reflections. Maintain believable anatomy and physical weight. No text, letters, borders, labels, signature, watermark, photo, 3D-render finish, comic-book outlines, glossy toy-like forms or uniform microdetail.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/07-greyhides-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 1,
+          "version": 2,
+          "followup_brief": "BRIEFS-retry-revision-2.md",
+          "followup_brief_revision": 2,
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-40370f99-ce93-4c86-b3ab-29153a729dc3.png",
+          "sha256": "68ae94c4e66dbc9c62d08fdf35a5004b10d9f5dea2a281a87f6b4be1c1a5f33a",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Greyhide duelist holds a guard at a northern longhouse doorway. This take is superseded by the creator's subsequent request to use a different new people.",
+          "assistant_review": "Anatomy, shield and sword contacts checked; species recast requested after generation."
+        },
+        {
+          "file": "history/flameduelist-v3-before-gaze.png",
+          "version": "3 initial",
+          "prompt": "Create a new Breachline card painting of a CREST FOLK Still Flame duelist. The first attached sheet is the required identity and anatomy reference: preserve the adult woman's distinctive face, slender strong ordinary-sized body, chalk-tan matte skin, swept fluted bony head crest, painted russet cheek marks, and the smaller smoothly integrated swept crests at her shoulders, upper chest, upper arms and outer forearms. These are living anatomy, not armour or decoration. Preserve free functional elbows, wrists and fingers. This is Crest folk, not a Greyhide; no rounded grey body or broad muzzle.\n\nA composed and formidable woman duelist holds a measured guard in a pale limestone courtyard beside a modest Still Flame sanctuary in a quarry town. Three-quarter view from knee height upward, spacious landscape composition. Her body turns across the frame, near shoulder slightly forward, eyes intent toward an unseen approach to the left, expression calm and resolute. In her right hand she carries one useful straight short sword, point held forward and a little upward into open space to the left, blade and hand both fully visible. Her left forearm carries a small plain round shield closer to her opposite hip; shoulder, elbow, forearm and hand positions all physically coherent. Keep the sword separate from the shield. The scene is a poised interval before an encounter, not a wild attack.\n\nUse the second reference's BOTTOM ROW only for Still Flame padded-clothing and weapon construction. Adapt a cream quilted protective vest with shoulder openings and a shallow collar to the body's natural crests; a muted blue wool under-tunic and practical trousers, short soft sleeves leaving the forearm crests clearly visible. No metal pauldrons obscuring the shoulder crests. Practical modest clothing without decorative clutter. Keep her complete head crest comfortably inside the frame and the organic arm crests readable at card size. No helmet, neck fan or added spikes.\n\nA sunlit limestone arch and soft ochre masonry establish a lived-in inland quarry town, with a quieter shadowed doorway behind her. Late morning side light unifies face, arms and pale stone; soft reflected warmth makes the shadowed cheek readable. Suggest the secondary architecture in broad painted shapes. Focus on the expressive face, anatomical crest silhouette and capable sword grip. No frost, northern seacoast, magical bubble, flame effects or healing diagram. This woman's profession and courtyard are proposed scene details; do not make every Crest folk person a fighter.\n\nOne finished landscape painting, 1536 × 1024, traditional oil and acrylic fantasy art with measured visible brushwork. Selective crisp detail at face and hands, connected large light/shadow masses and simplified softer background. Matte skin, wool and limestone; clean restrained reflections on steel. No uniform microtexture, pores, glossy 3D look, photo, comic outlines, writing, labels, borders, signature or watermark.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-1e799f69-e7ab-41f9-89bc-32cdab9a93af.png",
+          "review_status": "assistant_gaze_correction",
+          "assistant_review": "Accepted Crest folk anatomy retained; gaze looks away from the guarded direction. Local head-turn correction requested."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v3.png",
+          "status": "generated",
+          "review_status": "superseded_male_rapier_request",
+          "prompt": "Make one precise local correction to this existing painting. Turn ONLY the woman's head and upper neck toward SCREEN LEFT so that her face and both eyes look along the raised sword, toward the sword tip at the upper-left of the picture. Her gaze must follow the direction she is guarding. Maintain her exact Crest folk identity: same face, natural expression, chalk-tan skin, russet cheek marks and swept fluted bony head crest, rotating the same head and crest naturally together. Keep the body, arms, hands, sword, shield, clothing, every shoulder and arm crest, stance, framing, limestone town, sanctuary, lighting, colours, painted treatment and 1536 × 1024 landscape dimensions unchanged. Do not add objects, emblems, text or other alterations. This is a head-direction correction, not a new painting.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-1e799f69-e7ab-41f9-89bc-32cdab9a93af.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 2,
+          "version": 3,
+          "followup_brief": "BRIEFS-recast-revision-3.md",
+          "followup_brief_revision": 3,
+          "casting": "Crest folk; artist choice following creator instruction to use another new people",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-34bf6e7c-2bc3-4c17-a1a6-5d24c37cb6cc.png",
+          "sha256": "f89a5337a95ab44c7b6248f2ba0d9cf4002c1a1d48f483ba4d260c881b9397d7",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk Still Flame duelist guards a limestone sanctuary courtyard, her gaze aligned with her sword. The new casting preserves the accepted head, shoulder and arm crests; her individual role and setting remain proposals.",
+          "assistant_review": "Checked Crest folk face, skin and swept head/arm anatomy against CR3; sword grip, shield support and connected limbs are coherent. Local head-turn correction now aligns gaze with the guarded direction; clothing, stance, setting and lighting retained."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v4.png",
+          "status": "generated",
+          "review_status": "superseded_longer_rapier_lighter_armor_request",
+          "prompt": "Use case: precise-object-edit.\nEdit the attached Breachline Still Flame duelist painting. Make the duelist an adult Crest folk MAN armed with a RAPIER. Keep this same painting and its setting.\n\nReplace the woman's facial and body characteristics with a clearly masculine, lean and capable adult man: a stronger angular jaw and brow, slightly broader neck and shoulders, a flat male chest under the practical cream quilted vest, and natural strong male arms. Preserve the distinctive Crest folk anatomy: chalk-tan skin, russet cheek paint, swept fluted bony head crest, and smaller organic crests integrated into shoulders and outer arms. These remain living anatomy, not armour. Ordinary slender athletic proportions, not a bodybuilder. His expression stays composed and alert, head and eyes looking screen left along the weapon.\n\nReplace the broad short sword in his anatomical RIGHT hand (extended toward screen left) with ONE recognizable full-length rapier: long, very slender straight steel thrusting blade tapering to a fine sharp point, a modest functional swept steel guard around the hand, dark leather grip and small pommel. The hand closes naturally around the grip behind the guard; blade, hilt and grip share one continuous plausible axis. The blade must read as a rapier rather than a short sword or dagger. Keep the whole tip within the frame. A small adjustment to that arm's elbow and wrist is allowed if needed to fit the longer blade naturally into the same guarded direction. His anatomical LEFT forearm still supports the same round shield at screen right; do not add a second weapon or extra hands.\n\nPreserve the existing framing, poised stance, clothes and their colours, crest design, shield, limestone arch, quarry-town courtyard, sanctuary, sun emblem, blue sky and warm morning light. Maintain the measured visible oil/acrylic brushwork, matte skin and cloth, coherent light, selective facial detail and simplified supporting background. Do not add hair, beard, facial texture noise, magic, new objects or extra figures. No text, border, signature or watermark. Output one 1536 × 1024 landscape painting.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v3.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 3,
+          "version": 4,
+          "followup_brief": "BRIEFS-male-rapier-revision-4.md",
+          "followup_brief_revision": 4,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-cd14db16-752b-47e9-9345-7441b6f0f308.png",
+          "sha256": "8115f1db3b89312b57b5302f155bc4c2b215a85304ff7ea148a2bfcce3f8cd66",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk man holds a rapier guard in a limestone sanctuary courtyard, his gaze following the slender blade. His accepted head and arm crests are retained; the individual Still Flame role and courtyard remain scene proposals.",
+          "assistant_review": "Inspected the generated painting: masculine face and flat-chested lean build, recognizable slender rapier with swept hand guard, coherent closed grip, connected arms and shield support, gaze toward the guarded direction. Crest folk anatomy, clothing, courtyard and warm painted lighting retained. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:21:37.485851+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "da4831147f77617ac170dbc7db1cc6e49ac21364c08c4eae5e8d4f4ed3d93804",
+          "reference_roles": {
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v3.png": "Edit target: existing M2 version 3, preserving Crest folk anatomy and scene"
+          }
+        },
+        {
+          "code": "M2",
+          "version": "5 initial",
+          "file": "history/flameduelist-v5-before-crest-correction.png",
+          "followup_brief": "BRIEFS-lighter-kit-revision-5.md",
+          "followup_brief_revision": 5,
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png"
+          ],
+          "prompt": "Use case: precise-object-edit.\nEdit this existing Breachline painting of the adult male Crest folk Still Flame duelist. The creator wants a LONGER RAPIER and LIGHTER ARMOUR. Make both changes clearly visible while retaining his exact male face, species, scene and painted treatment.\n\nRAPIER: Increase the visible steel blade length by about 65 percent relative to the attached image, maintaining a very slender straight taper to a fine point and the same recognizable swept hand guard. Show the entire long blade within the frame, with minimal foreshortening. To make room, bend his anatomical RIGHT elbow naturally and draw his right hand inward toward the centre of the picture: approximately hand/hilt at x=710, y=500 in a 1536x1024 image, with the blade tip around x=60, y=205. These coordinates are only composition guidance, never marks or text. The new blade should visibly span much more of the painting than the old one, suggesting a full adult dueling rapier with a roughly metre-long blade. Its hilt, grip and blade must align as one straight weapon. Build a believable bent arm from the existing shoulder, with the elbow lower than the hand, a firm natural grip behind the guard and wrist aligned with the thrust. His eyes still follow the blade toward screen left. No extra sword, blade, arm or hand.\n\nLIGHTER ARMOUR: Remove the thick diamond-quilted cream gambeson, its bulky standing collar and long heavy padded skirt panels. Replace it with a slim waist-length sleeveless buff-leather dueling jerkin in a pale natural tan, thin and supple rather than rigid, fitted over the existing muted blue short-sleeve shirt. Simple seams and a few practical fastenings, low unobtrusive neckline, minimal layers, no quilting, no heavy padding or metal plates. Keep the belt and dark trousers. The silhouette must look visibly lighter and more mobile. Let the blue shirt continue naturally a short way below the belt. Keep his shoulder and arm crests exposed and organically part of his body; these are not armour.\n\nPreserve the same masculine facial identity, chalk-tan skin, russet cheek marks, swept head crest, lean capable body, gaze, lower-body stance, round shield supported by his anatomical LEFT arm at screen right, framing, limestone quarry town, arch, sanctuary, sun emblem and morning light. Only the sword arm may change pose to fit the longer weapon. Do not change the head, invent new species traits, add hair or beard, add people or magic, or redesign the environment.\nMaintain clean matte oil/acrylic painted forms with deliberate brushwork and selective detail, readable lighting and softer broad background shapes. Avoid multiplying tiny texture noise through the edit. One 1536 × 1024 landscape painting; no text, labels, borders, signature or watermark.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png",
+          "sha256": "8b30fdc58f836290661c054bbc9a5b6159bcf7ebee8ceefb0baa7bf07084e91f",
+          "review_status": "assistant_anatomy_correction",
+          "assistant_review": "Longer rapier and lighter jerkin achieved; arm crests were lost. Local anatomy correction requested."
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v5.png",
+          "status": "generated",
+          "review_status": "superseded_courtly_clothes_request",
+          "prompt": "Make one precise anatomy correction to IMAGE 1, the edited painting of a male Crest folk duelist with a long rapier and light tan jerkin. IMAGE 2 is the earlier version of this same man and is an ANATOMY REFERENCE ONLY for the organic crests on his shoulders and arms.\n\nThe first edit accidentally smoothed away his defining arm crests. Restore the modest living swept bony ridges from image 2 on the EXPOSED parts of BOTH arms in image 1, adapting them to image 1's different right-arm pose. Two or three low elongated fluted tan ridges should arise smoothly from the outer upper-arm surface, with a smaller backward-swept crest on the outer forearm. Keep elbows, wrists and hands fully functional. These are shallow organic structures continuous with his skin, NOT metal armour, separate pauldrons, pasted-on ornaments, muscles or tattoos. They are the same pale warm-tan biological material as his existing head crest. At least one modest arm ridge should break the visible arm silhouette. The shoulder root may be partly covered by the current short shirt sleeve; do not redesign the clothes to expose more body.\n\nStrictly preserve EVERYTHING ELSE from IMAGE 1: the exact male face, head crest, eyes, expression, much longer slender rapier and its entire blade and tip, swept guard, hand grip, bent right arm and hand position, left hand and shield, slim short light unpadded jerkin, shirt, trousers, belt, stance, courtyard, architecture, sun emblem, warm light, framing and current painted brushwork. Do not restore the old short sword, heavy padded coat or outstretched arm from image 2. Do not add extra limbs or fingers, texture noise, text or magic. Output the same 1536 × 1024 painting with only the arm-crest anatomy repaired.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 4,
+          "version": 5,
+          "followup_brief": "BRIEFS-lighter-kit-revision-5.md",
+          "followup_brief_revision": 5,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f6d11c34-2bf9-4f3c-8271-abd04d3b4cd0.png",
+          "sha256": "5962c93878c1c0ddcf0866f5d8a32a0b33d819b38f51ff6b02c804045eb8c978",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Crest folk man guards the limestone courtyard with a much longer, slender rapier and a light fitted jerkin over his blue shirt. His male identity and living arm crests are preserved; his Still Flame role and the courtyard remain scene proposals.",
+          "assistant_review": "Inspected the final image: blade is substantially longer and fully within the frame, with a continuous straight axis through hilt and grip; the bent right arm and closed hand are connected. The lighter short jerkin removes the heavy padded coat and skirt. Male face, head crest, shield and courtyard retained; localized follow-up restores the exposed arm crests without changing the long blade or light outfit. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:27:21.360553+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "93fa217e2d259dc162b90bf6bcfc6a0cf23b1a738418ab22af186eb6928868a2",
+          "reference_roles": {
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-39c52cca-eb80-4d26-81d0-e29b2eba76d3.png": "Edit target: initial version 5 with longer rapier and lighter armor",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v4.png": "Anatomy reference only for living arm crests; do not copy old weapon length or armor"
+          }
+        },
+        {
+          "code": "M2",
+          "card_id": "flameduelist",
+          "title": "Still Flame duelist",
+          "file": "flameduelist-v6.png",
+          "status": "generated",
+          "review_status": "superseded_fresh_composition",
+          "prompt": "Use case: precise-object-edit.\nEdit the attached Breachline painting. This same adult male Crest folk duelist is a MAN OF HIGH STATUS. Redress him in elegant courtly clothing that makes his wealth and standing immediately legible. This is a costume edit, preserving the long rapier and this man's exact identity.\n\nReplace the plain buff jerkin and rough blue shirt with a beautifully tailored, lightly structured deep blue court doublet of fine matte velvet, fitted at the waist with a clean pointed lower front. Narrow restrained gold embroidery follows the neckline, front opening and short hem; small chased gilt buttons, clear functional seams and rich broad cloth folds. Beneath it, crisp ivory linen at the neck and sleeves, with a refined small standing collar and a modest folded edge, not an enormous ruff. Courtly upper sleeves can be gently full and neatly slashed, with short tailored outer openings accommodating his existing organic upper-arm crests; keep his forearm ridges exposed, not covered in bracers. Replace the rough trousers with fitted charcoal-blue fine-wool breeches and the work belt with a slim well-made dark leather belt and a small elegant gilt buckle. A single delicate gold chain at the neckline is enough jewelry. The whole outfit should read as expensive, carefully maintained, graceful nobleman's dueling dress, with no bulky padding, leather combat vest, breastplate or heavy armour. Convey status through cut, good fabric and controlled ornament rather than piles of decoration. Preserve his slim masculine body and ordinary scale.\n\nLOCK THE REST: keep the exact male face, intent expression and gaze, russet cheek marks, chalk-tan skin, large swept head crest AND the living swept crests on his upper arms and forearms. Those ridges remain visible biological anatomy, never gold ornaments or armour. Keep the head, both arms, hand grips, bent right elbow, left arm supporting the same round shield, stance and body position unchanged. The very long slender rapier must retain its exact blade length, angle, tip position, swept steel guard, straight axis and grip. Do not shorten it or change the pose. Keep the existing courtyard, limestone arch, quarry town, sanctuary, sun emblem, framing and warm morning light. No crown, new emblem, new people, magic, hair or beard.\n\nMaintain the traditional oil/acrylic painted character: measured visible brushwork, selective face and hand detail, matte cloth with deep velvet colour, restrained metal highlights, broad quiet background shapes. Keep the new embroidery sparse and painted rather than tracing intricate tiny patterns everywhere. Avoid added grain, surface noise, glossy 3D finishes, writing, borders, signature and watermark. One 1536 × 1024 landscape painting.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v5.png"
+          ],
+          "alignment": "Vigil",
+          "brief_revision": 5,
+          "version": 6,
+          "followup_brief": "BRIEFS-court-dress-revision-6.md",
+          "followup_brief_revision": 6,
+          "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-2f960323-5c0c-46b5-896c-aac5fc70eb7a.png",
+          "sha256": "8f8b9f7926ed020931c7faeccef4f0d0815193f1ed100ac58c41ffb9c06df2ed",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "The Crest folk duelist wears a tailored blue court doublet with ivory sleeves, gold edging and a fine chain, retaining his long rapier and composed guard. His high status is established by the creator; the precise costume and courtyard are artistic proposals.",
+          "assistant_review": "Inspected the generated image: courtly tailored velvet doublet, controlled gold ornament, fine shirt and belt clearly communicate high status without heavy armor. Male face, swept head crest and exposed living arm crests retained. Long rapier length and straight axis, grip, arm positions, shield support, gaze, stance, courtyard and coherent morning light preserved. Awaiting creator review.",
+          "generated_at": "2026-11-15T05:32:48.363270+00:00",
+          "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+          "art_direction_sha256": "2805b50092d39ef25b7dada4b3f2463334b998f5e6b0e98d3ff446be0ea6221d",
+          "reference_roles": {
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v5.png": "Edit target: M2 version 5, preserving male identity, living crests, long rapier, pose and scene"
+          },
+          "creator_established_identity": "Adult male Crest folk duelist of high status, with a long rapier and light courtly clothes."
+        }
+      ],
+      "followup_brief": "BRIEFS-fresh-repose-revision-7.md",
+      "followup_brief_revision": 7,
+      "casting": "Adult Crest folk man; male casting and rapier explicitly requested by creator",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d428eb08-8799-47ff-ad00-a7d9246bb305.png",
+      "sha256": "7633ca814923938c0dd283d36144a364fe7e13572376113630d1c5feb380dc2d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A young Crest folk duelist rests lightly on his grounded rapier, wearing fine blue cloth over light mail. His shield hangs from buckled waist straps beside a scabbard, pouch and gloves; his relaxed bearing suggests a capable, high-status swordsman.",
+      "assistant_review": "Inspected the new full-figure composition: rapier point visibly contacts paving, straight blade and continuous hilt under a relaxed hand, both boots grounded, believable weight shift and connected limbs. Light mail is visible at neck, sleeves and coat opening; shield hangs from two buckled belt straps, with the left hand beside it. Youthful male face, head and arm crests, practical accessories, readable lighting and selective painted detail retained. Creator approved this exact generated image as final.",
+      "generated_at": "2026-11-15T05:43:37.400750+00:00",
+      "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+      "art_direction_sha256": "400a4ec75e6a38ad8ff0668d0375e7803deb307a944ee92d47ee8efc09e0b1dc",
+      "reference_roles": {
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/flameduelist-v6.png": "Individual identity only, following explicit same-guy request; old pose, outfit, framing and texture discarded",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/06-crest-folk-final.png": "Accepted CR3 biological anatomy; male character retained"
+      },
+      "creator_established_identity": "Young male Crest folk duelist of high status: lightly rugged, quietly dangerous, resting on a grounded rapier in light mail and a fine overcoat.",
+      "approach": "fresh composition from creator direction, replacing earlier brief and guard pose",
+      "accepted_at": "2026-11-15T05:43:37.400750+00:00",
+      "creator_authorization": "that's it, final!",
+      "canonical_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png",
+      "installation_status": "not_installed"
+    },
+    {
+      "code": "M3",
+      "card_id": "heldspears",
+      "title": "Held spears",
+      "file": "heldspears.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint a quiet Sunmane Oath ambush using the TOP ROW of the attached sheet for worn field kit, not for composition. View from low within dry meadow grass across a shallow sunken lane: three ordinary adult human male spearmen wait below its earthen lip. The nearest experienced soldier, angular face and stubble, sits braced on a heel with a spear low and parallel to the lane, eyes tracking the empty bend; behind him two less detailed men hold still. A slight raised open palm signals patience. All spear shafts connect continuously to correctly placed hands and lead into free space; none pierces an ally. Their modest plate cuirasses and helmets are dusty and maintained, no champion ornament. One small sun on a scuffed shield propped in the grass is the only allegiance emblem. The main subject is held breath and attentive faces. Dusk sunlight skims seedheads above their heads while soft sky bounce keeps the sheltered figures legible. Rich dried-grass ochres, muted earth and natural steel. Preserve quiet space around the lane, no enemy, impact or battle explosion. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/09-vigil-equipment.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d34bf46f-333b-4b9a-bb19-a7d836874306.png",
+      "sha256": "e7f8cb85d281efea3a924e476e4eae491c7ba775f847ebd5e521f9283e544785",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "Three Sunmane spearmen wait in a sunken lane while their leader signals stillness. The scene proposes an ambush before the encounter, with low spears and ordinary field-worn kit.",
+      "assistant_review": "Continuous spear shafts, coherent grips and open signalling hand, plausible crouching and consistent light. Background soldiers less detailed. Ready for creator review.",
+      "alignment": "Vigil",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M4",
+      "card_id": "secondworking",
+      "title": "Second working",
+      "file": "secondworking.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Make a new finished scene from the attached Glimmerfolk anatomy reference; preserve the slender body, very long neck, broad fleshy ear-fans and small blue luminous freckles on matte dark skin. An adult Glimmerfolk Conclave mage stands in a developed undercity workshop in Ambrel, turning from one fading working to the next. Three-quarter mid-distance view, face in profile looking at their near hand; both arms clearly connect to shoulders, the fingers gesture naturally rather than clawing. Dotted blue arm lines grow densely luminous toward wrists and hands; a pale fading geometric sliver above the far palm contrasts with a small fresh fold of light forming above the near palm. These are learned workings, precise and contained, no giant beam or flying symbols. Eyes are natural and do not glow. A tailored russet scholarly coat with open forearms, practical clasp and plain trousers, not the reference sheet clothing. Quiet brick arches, orderly shelves and a window shaft make a decent inhabited old city, not a cavern. Soft side daylight falling through a high opening is the main illumination; blue glimmers are localized accents, skin remains matte. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/02-glimmerfolk-final.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-dae9f637-6dd3-4df4-95a7-5e6ddceb0dfe.png",
+      "sha256": "d2c2c258101e8710d3ca655b0abfacebf244c9042fb2e28ecf322aac1131cca9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Glimmerfolk mage begins a fresh working as the previous one fades in an inhabited undercity workshop. The luminous markings follow the accepted design; the individual, workshop and spells are proposals.",
+      "assistant_review": "Long neck, ear-fan and dense hand glimmers retained; eyes natural, two coherent arms and readable gestures. Built undercity and coherent side lighting. Ready for review.",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M5",
+      "card_id": "senthome",
+      "title": "Sent home",
+      "file": "senthome.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint an original high fantasy scene in an ordinary pale-stone scholarly courtyard in Ambrel. A composed adult human woman Conclave mage with dark braided hair, a broad straight nose and a fitted plum wool travelling coat closes a conjuration with a precise inward hand gesture. Near her, a large already conjured warrior is quietly coming undone: an empty smoke-and-silver silhouette of a helmeted fighter, upper body still recognizable while the lower half folds into a few translucent receding planes and disperses. It is an ephemeral summoned figure, not a new biological species and not a robot. Show the remarkable imbalance of scale and careful human control; the warrior is perhaps twice human height, no colossal spectacle. Her gaze follows the dissolving figure. No portal, door of light, floating runes, destruction, victims, sound imagery or glowing machinery. Mid-distance side view with open courtyard paving between mage and figure; cool morning light reflects gently from white masonry into faces and surfaces. Warm clay roof glimpsed in a few broad background strokes. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-e8709946-ecd5-4ddc-b78e-507fd7f5c2e2.png",
+      "sha256": "2cedd08c7a7a6125c207c9f30fff3120b7edbf974619e656ed706be57d781662",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Conclave mage quietly dismisses a towering conjured warrior in a stone courtyard. The dissolving form proposes one appearance of an unmaking, without establishing a portal or a new people.",
+      "assistant_review": "Clear mage gesture and gaze, controlled scale and dissolution, no doorway or gore. Forms and setting read without the title. Ready for review.",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M6",
+      "card_id": "frostlatch",
+      "title": "Frost latch",
+      "file": "frostlatch.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a landscape fantasy painting whose subject is an empty threshold secretly prepared with frost. In an old scholarly quarter of Ambrel, shallow stone stairs rise to a shut heavy timber gate with a substantial black iron latch and small brass fittings. A delicate, visibly unnatural band of pale crystalline frost has gathered around the latch, down the ironwork and across the lowest step, although the adjacent stone is dry. The trap waits in silence; no one enters and nothing explodes. View from the base of the steps at a slight angle: gate and icy latch in the left-middle, an open slice of quiet street and taller inhabited buildings at right. Early morning winter light slides across the frost; gentle warm reflected light from a plaster wall makes stone and metal tactile. Frost is described with selective sharp touches near the latch, broader paint elsewhere, not uniformly microscopic snowflakes. Physically connected stairs, gate hinges and walls. No symbols, written notices, machinery in the air or magical doorway. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-41a2164f-2527-4238-97b9-2d3a3c6d019b.png",
+      "sha256": "b1a840027d871edffcaad1d7975b8ecea214240186c5d9af253aad763347a7d8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "Frost gathers unnaturally around an iron latch and across the steps below it. The empty threshold proposes a waiting trap within an ordinary inhabited city.",
+      "assistant_review": "Gate, hinges and stair geometry coherent; focal frost is distinct with dry stone nearby. No text or figures triggering the trap. Ready for review.",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M7",
+      "card_id": "countedwords",
+      "title": "Counted words",
+      "file": "countedwords.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create an original fantasy painting of patient intelligent observation. An adult human woman Conclave scholar, about fifty, olive skin, square jaw, silver-streaked dark hair in a loose knot and a slightly crooked nose, sits sideways in the stone window seat of an upper debating hall in Ambrel. She holds a small folded page loosely in one hand; no legible writing. Her other hand rests on the sill. A restrained knowing half-smile and attentive gaze toward someone below and outside the frame carry the scene. The shoulder and gaze angle feel natural, no staring at the viewer. Comfortable moss-green wool scholarly dress with a practical dark sleeveless overcoat and one modest brass fastening, no ornamental crown or repeated emblems. Soft daylight from the window illuminates face and knuckles; the room falls into quiet warm brown shadow. Through the window a sunlit stone square, a bridge and distant buildings are only broad painted forms. Medium close view with clear face and ordinary hands. No sound magic, scroll pile, levitating apparatus or overt magical effect. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ef9f6a6e-1d48-4447-83c1-5812c4b0521a.png",
+      "sha256": "39ac158eca8293a9b0805e4523cfc1eff3e0955a32b9e4a42a7df8be915d2cb1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A scholar watches from an upper window, a folded note resting in her hand. Her expression suggests preparation and private understanding; the person and encounter remain proposals.",
+      "assistant_review": "Distinct adult face, coherent hands and note grip, off-frame gaze and light consistent. Background detail subordinated to portrait. Ready for review.",
+      "alignment": "Gnosis",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M8",
+      "card_id": "writseizure",
+      "title": "Writ of seizure",
+      "file": "writseizure.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a finished original scene of ordinary cruelty in a poor Dominion household. The attached sheet is a clothing-construction reference only, particularly the CENTRAL plain bailiff coat, not a cast or uniform. Inside a small worn plaster-and-timber dwelling, a lean human Ashen Court officer stands at the doorway reading a sealed writ; the paper faces him, without visible writing. In the middle distance two men carry a modest wooden household chest together, each lifting one end with believable grips and weight. At the near side a tired mother clutches a folded family blanket while her adolescent daughter stands close behind. No one is attacked, no theatrical pleading: the official treats the family as an inconvenience. A dull red wax seal is the small focus joining paper to consequence. View from inside toward flat cloudy daylight at the door; soft reflected light keeps all faces understandable. Poor local human family, plain patched clothing, ordinary proportions. Avoid luxury, grand hall, heroic officer or benevolent mood. Group the figures clearly with coherent arms, carrying contacts and a free path through the door. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d0d1a3b5-dcd4-4a0b-9655-9b29f97769bc.png",
+      "sha256": "b68f963e3de54cad1f44bddace905188d21b6ee060f3c2b3778060a73f5027ad",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "An Ashen Court officer reads a writ while two men remove a household chest and the family watches. The small sealed paper governs the room; this is a proposed scene of Dominion coercion.",
+      "assistant_review": "Carrying grips and load read correctly; family and official retain distinct roles, ordinary scale and connected anatomy. Readable cloudy doorway light; no gore or readable text.",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M9",
+      "card_id": "confiscator",
+      "title": "Ashen Court confiscator",
+      "file": "confiscator.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint a close, character-led fantasy scene of petty power. A plain human Ashen Court confiscator, a middle-aged heavyset woman with a broad blunt face, thin mouth and tightly pinned greying hair, stands at a side counter in a confiscated-goods room. The attached central bailiff working coat and key ring are construction references; adapt them into simple practical charcoal-brown clothing, not court finery. An open ledger lies on the counter, only indistinct strokes with no legible letters. Her left hand weighs a small silver brooch against the pad of a thumb while her eyes flick sideways toward the door; her right hand rests beside the ledger. A ring of ordinary iron keys hangs from a sensible belt. The implication is that she will keep the brooch. Her expression is assessing and self-satisfied, not a caricature. Muted afternoon light from a narrow window illuminates the face and stolen silver; wood and wool stay matte, the room behind is spare broad brown-grey strokes. No crown, armour, glowing magic, fancy emblem or compassionate framing. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/17-dominion-personal-kits.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-28d3c2fc-dcdf-4d82-853f-83cc97867d8d.png",
+      "sha256": "2f443fd62d693880cba257bff7c2eb2577085a2c56f9966f24d4f99477fc2509",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A confiscator appraises a small brooch above an open ledger. Keys and plain working clothes establish her function; the sidelong glance proposes private theft within official power.",
+      "assistant_review": "Connected hands and believable brooch pinch; distinct face, readable glance, coat construction and localized silver reflection. No legible ledger lettering.",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M10",
+      "card_id": "gatheredhost",
+      "title": "Gathered host",
+      "file": "gatheredhost.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Make a minimal correction to this existing painting. Remove every Christian cross shape or cross carving in the cemetery architecture: the cross-shaped finial on the mausoleum roof at upper left must become a plain short unadorned stone finial; all cross carvings or cross-shaped gravestones on the right must become simple unmarked rounded or rectangular stones. Preserve the entire gathered host creature exactly, all constituent bodies, its pose, anatomy, size and silhouette, the mortuary arch and other masonry, camera, composition, blue-hour lighting, colours, painterly brushwork and the landscape 1536 by 1024 format. No other changes and no new symbols, writing or decoration.",
+      "attached_references": [
+        "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-c6ee592f-840b-4a2a-b83d-3977fdc881a4.png"
+      ],
+      "history": [
+        {
+          "file": "history/gatheredhost-v1.png",
+          "prompt": "Create a disturbing but non-graphic original dark fantasy painting: a huge Gravebound raised thing made of many dead bound into one body, seen crossing an abandoned mortuary courtyard at blue hour. It has a tall narrow leaning silhouette rather than a hulking earth giant: a column of whole shrouded human torsos and clothed limbs folded and interlocked into one collective body, two heavy composite supporting legs and long gathered arms. At first it reads as one walking shape; closer attention reveals the many still faces and hands embedded in the shrouds. All constituent people remain human-sized; no enormous individual skulls, dismemberment, exposed wounds, gore or viscera. Old grey burial cloth and dry intact bone glimpses, no fresh flesh. Two distant hooded Gravebound attendants and an ordinary handcart beside a low doorway establish a height around five metres. The creature passes in profile, bowing to clear an arch whose stones and scale make sense. A single cool evening sky provides coherent readable light with a small remnant of warm light on the courtyard wall, not glowing eyes or evil beams. Keep the silhouette unnervingly unified and weight-bearing. No mound of soil, embedded spears, giant helmet or raised tiny object; this must differ from an earth-and-bone colossus. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [],
+          "review": "Clear unwanted Christian crosses in cemetery architecture; correction requested."
+        }
+      ],
+      "version": 2,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-98e6827b-2e5b-47c9-9488-cc1c7d5de82f.png",
+      "sha256": "868262ee9ca7a282a5883d88a557e9bf77bb7dd336e1ac2e1386f18c0557fa57",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Gravebound host bends through a mortuary arch, its huge body assembled from many shrouded dead. This proposes a distinct collective form for the card; the scene and construction await review.",
+      "assistant_review": "Version 2 removes unintended Christian crosses from the original. Checked the collective silhouette, constituent bodies, grounded feet, arch clearance and preserved blue-hour lighting.",
+      "alignment": "Dominion",
+      "brief_revision": 1
+    },
+    {
+      "code": "M11",
+      "card_id": "ashborngleaner",
+      "title": "Ashborn gleaner",
+      "file": "ashborngleaner.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a finished scene based on the attached FINAL Ashborn visual range: an ordinary-scale adult woman, lean body, fully intact cold pale skin, hollow facial planes, diminished distant gaze and one restrained old healed scar. No stitches, rot, bolts, open wounds or laboratory imagery. She works for the Ashen Court collecting the dead after a battlefield, kneeling beside an ordinary wooden handcart and carefully securing a plain linen shroud around an already covered body. Both her hands and the rope contact must read clearly; no exposed corpse detail. She wears a faded simple work coat with a tiny worn coloured fabric patch at one cuff, suggesting a remnant of an earlier life, no letters or name. The gesture is practiced but her gaze has briefly drifted beyond the work. Medium-wide composition, her face and working hands foremost; distant abandoned shields are only a few softened marks across a quiet field. Pale overcast morning, muted clay soil and wet grass, fully readable matte face and clothes, no theatrical spotlight. The feeling is coerced work and personal loss, never a heroic necromancer. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/04-made-people-final-lineup.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-fae2bb44-f03d-491e-9663-3d98520fbdde.png",
+      "sha256": "75bb113ec9ebbd06f752df85536c77a54104d24d6f242cebd9aa416a4749b131",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "An Ashborn gleaner secures a shrouded body to a handcart after battle. Her faded cuff preserves a small trace of her former life; the scene is a proposed portrayal of this worker.",
+      "assistant_review": "Checked repaired Ashborn identity, hands gripping rope, covered body, cart contact and coherent overcast field light.",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M12",
+      "card_id": "pitdigger",
+      "title": "Pit digger",
+      "file": "pitdigger.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint a plain, serious fantasy labour scene. A human Gravebound pit digger, a middle-aged man with a receding hairline, crooked nose and compact weathered build, works in a long rectangular burial pit at a town's edge. View from the rim looking diagonally down; one boot presses the shoulder of a real iron spade, one hand on the end grip and the other lower on the straight shaft. His bent back and grounded legs show the physical load convincingly; he is taking another cut into heavy soil, not posing. Patched linen shirt, plain trousers and old boots, ordinary worker with no armour or dramatic costume. The pit's fresh cut earth, spoil heap and exposed roots carry the image. In the far background a couple of indistinct covered forms wait by an unmarked cart, no exposed bodies. Flat afternoon daylight, muted green field and ochre-brown earth, no stage-like spotlight. Gravebound burial work, but no religious crosses, real-world symbols, written headstones, gore, skull decoration or heroic expression. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-b64bb2a9-26d0-40b6-90db-5a00f81e9484.png",
+      "sha256": "d1b3c0994c3682a83501bfbf412110485c9eda9e113346ce79bf4b4aab7f8998",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A pit digger puts his weight onto a spade in a freshly cut grave. The plain labour and heavy earth make the setting unsettling without spectacle.",
+      "assistant_review": "Checked spade grip and boot contact, body posture, rectangular excavation, daylight and background restraint.",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M13",
+      "card_id": "waitingnoose",
+      "title": "Waiting noose",
+      "file": "waitingnoose.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a quietly menacing fantasy painting of an ordinary landing at the entrance to a poor Dominion town. An empty ferry has just pulled away from rough stone steps; across the narrow approach path a coarse rope loop lies partly concealed in dry straw beside a low post, its cord running visibly to the hand of a seated keeper under a timber lean-to. It is a waiting capture snare on the ground, not an execution gallows. The keeper is an ordinary broad-shouldered human man in a worn brown coat, sitting still with his face readable in shade and watching the empty approach. No captive, no person caught in the loop, no hanging body. Wide composition: foreground rope and landing lead the eye toward the keeper, town gate and low dark houses behind. Thin late-afternoon light across river mud and dull water, a little faded rust cloth on the lean-to. The place feels used and poor, not gothic theatre. Rope path and post attachment physically continuous, practical architecture, believable scale. No visible writing, modern gear or religious crosses. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ffdda093-3cef-44d5-8796-751f39beef70.png",
+      "sha256": "4c9a5df4a387c06f51c2d2ae559d008e0b59bb92a4e0ffad10c3e699630b61f5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A keeper waits beside an apparently ordinary ferry landing, with a rope loop partly hidden in straw. The late light and quiet river give this proposed ambush a deceptively peaceful setting.",
+      "assistant_review": "Checked grounded rope path, keeper anatomy, coherent ferry setting and light; the trap is deliberately unobtrusive rather than a diagram.",
+      "alignment": "Dominion",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M14",
+      "card_id": "risingsquall",
+      "title": "Rising squall",
+      "file": "risingsquall.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a wide landscape fantasy painting using only the TOP ROW SALT VARIANT of the attached Banded folk reference for the caster's anatomy: ochre-orange skin with pale natural bands, integrated swept brow and cheek structures, hardy slender limbs, no human ears or hair. An adult female caravan weather-caster stands steady on a white salt pan, her body small enough that the immense approaching squall is the major presence but her distinctive head and banded forearms still read. Her three-quarter profile looks toward the storm. One open hand makes a simple controlled turning gesture, the other holds her repaired wool travelling wrap against the rising wind. Practical sand-coloured caravan clothes and boots, no staff required, no decorative crown. Behind her two stationary covered wagons are distant loose shapes, animals obscured by the wagons rather than invented. A wall of indigo-grey cloud rolls across pale salt under a slanting band of clear afternoon light; dark storm and bright plain organize the whole painting. No lightning beam from the hands, no rage, no airborne machinery. Keep elegant weight-bearing anatomy and the accepted head, bands and colouring. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/peoples-final-2026-11-13/05-banded-folk-final.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-9a4644d7-6ba8-4ce1-acc3-eb86b21b02f1.png",
+      "sha256": "308fe5f5654eb715f06b89eae4273c2ffcb2963ef720d22dee6c15cd3886d175",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Banded folk caster stands on a salt road as a squall gathers over a distant wagon. This proposed scene puts the weather’s scale ahead of magical display.",
+      "assistant_review": "Checked selected salt-variant head and bands, gesture, salt terrain, small caravan scale and coherent storm lighting.",
+      "alignment": "Fervor",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M15",
+      "card_id": "thrownboulder",
+      "title": "Thrown boulder",
+      "file": "thrownboulder.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint a Breachline Warhorde giant loading his weight for a boulder throw during a rough skirmish. Use the attached giant reference only for accepted anatomy: exceptionally tall but recognizably humanlike, broad powerful frame, large hands and feet, heavy nose and jaw; never an ogre or rocky creature. A mature male giant in a patched ochre tunic, leather harness and a few battered armour pieces braces his planted feet apart on a stony rise, knees flexed, torso twisted, both broad hands gripping underneath and around ONE irregular heavy boulder beside his upper chest. His face and posture show physical strain; believable weight and secure contact, no floating stone. The boulder is chest-sized relative to him. Below on the same ground plane are two distant human-sized skirmishers, a normal wooden cart and a broken fence, establishing that he towers above humans without comic exaggeration. Subtle woodsmoke and a rough encampment beyond, no mass of weapon effects. Early morning light touches his shoulder and the stone; muted violet shadows and ochre grass. Dynamic diagonal pose, full main figure with clear feet, plenty of open landscape, foreground shapes broad and painterly. No words, symbols or invented uniform. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/05-giants.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-eebd807a-46f1-4cc4-8de4-56ff539060f9.png",
+      "sha256": "3191010d976a37b80c18a3da3a3b0ca30e7145fb88bb732c6d491167c02190c4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Warhorde giant braces under a boulder before throwing it into a skirmish. Nearby people and a cart establish his scale, with the emphasis on weight and effort.",
+      "assistant_review": "Checked accepted giant anatomy, two secure hand contacts on the stone, braced feet, human-scale comparison and light.",
+      "alignment": "Fervor",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M16",
+      "card_id": "streakraider",
+      "title": "Streak raider",
+      "file": "streakraider-v2.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Create a completely fresh Breachline Streak raider painting. Reference one establishes coarse, strongly nonhuman ORC anatomy: heavy projecting brow, broad blunt nose, projecting jaw, irregular lower tusks and sturdy broad build. Invent an individual male with close-cropped dark hair, one broken tusk and an intent, hard-used face; not a green human, not a giant or comic caricature. Reference two provides practical individually repaired Warhorde kit construction only. No uniform or decorative spikes.\n\nAn orc raider running low and fast through the bend of a narrow, dusty lane during a raid. Medium-wide view from beside the lane at an ordinary standing person's height, three-quarter side view, figure turned toward the left and entirely visible with breathing room around head and feet. Catch the planted phase of a realistic running stride: one foot bears weight beneath the hip, knee bent, while the other leg folds behind ready to swing through. Torso leans into the turn, head stays focused on the route ahead. Both feet have ordinary-sized worn boots; believable joints, no wide airborne split leap or giant boot aimed at the camera. His near hand carries one short broad practical cleaver low beside and behind his hip with the blade safely outside the leg; other arm swings for balance. Clear hand-to-handle contact, two arms and two legs, no spare weapons floating behind him.\n\nHe wears a plain shortened brown leather coat over dull ochre wool, a repaired iron shoulder plate strapped securely, rough trousers and tied shin wraps. Sparse personal repairs, not hundreds of tiny patches. Dust lifts from the pushing foot and smoke drifts along a low broken timber fence behind him. A couple of far distant raiders are only broad shadow shapes at the lane's bend, enough to place him in a raid; no elaborate burning village panorama. Dry grass and a grey cloud bank. Strong late daylight from the side catches the brow, cheek and shoulder; grounded earth colours with a small faded cloth accent, cool smoke behind, no compulsory red glow. The picture's energy should come from the body's weight travelling through real space and the controlled direction of his gaze. Use spacious natural perspective rather than heroic extreme foreshortening. One finished landscape card painting, 1536 × 1024. Traditional oil and acrylic fantasy painting with deliberate, visible brushwork, broad connected light and shadow shapes, selective sharp detail around face and hands, and much simpler supporting scenery. Matte skin, wool, wood and stone; restrained metallic reflections. Maintain believable anatomy and physical weight. No text, letters, borders, labels, signature, watermark, photo, 3D-render finish, comic-book outlines, glossy toy-like forms or uniform microdetail.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/14-raiders-and-berserker.png"
+      ],
+      "alignment": "Fervor",
+      "brief_revision": 1,
+      "version": 2,
+      "history": [
+        {
+          "code": "M16",
+          "card_id": "streakraider",
+          "title": "Streak raider",
+          "file": "streakraider.png",
+          "status": "generated",
+          "review_status": "retry_requested_original_retained",
+          "prompt": "An original Breachline painting of a male Warhorde orc raider running hard through a smoke-streaked rural raid. The attached sheet determines orc anatomy only: heavy brow, broad blunt nose, projecting jaw and irregular tusks, coarse earthy olive-brown skin, robust nonhuman face and build, not a handsome green human. Low three-quarter side view with the whole running body clear: torso pitched forward, one boot has just driven off the packed earth while the opposite knee rises; coherent real running gait, two arms and two legs. He keeps a single practical short axe in his lowered outer hand angled away from his legs, his other arm driving forward. Personally repaired equipment: rust-red quilted coat, mismatched short mail sleeve, one used iron shoulder plate, strapped leather shin protection, patched dark trousers. No horns, no spiked costume. An intent fierce face, mouth slightly open for breath. Dust curls behind his boot; smoke from an outlying timber store drifts across distant low roofs. Late afternoon sunlight cuts obliquely through the smoke, a lively red-brown figure against a softer blue-grey distance, the silhouette reads without motion blur or glowing speed trails. The setting and movement are a proposed scene, not a species-wide culture. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/people/04-orcs.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-b84fca54-e860-43ef-8730-e450fc6a14a4.png",
+          "sha256": "c82dc34512762a2c331e172065878b6ee41d982ce0d6436cc7570d389ab9d130",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "An orc raider drives forward through dust and smoke in personally repaired gear. The proposed scene conveys his momentum through his stride and body weight.",
+          "assistant_review": "Checked coarse orc facial anatomy, two arms and legs, coherent running pose, axe grip and blade clearance, practical repaired clothing.",
+          "alignment": "Fervor",
+          "brief_revision": 1,
+          "version": 1
+        }
+      ],
+      "followup_brief": "BRIEFS-retry-revision-2.md",
+      "followup_brief_revision": 2,
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-b20cae84-ac31-41fd-b0f8-ce2c202d3312.png",
+      "sha256": "f20ae764c3728e533ba4a0a6935815a991d8b0750da1060cae07ce829b9982e0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "An orc raider runs low through a bend in the lane, his cleaver held clear of his legs. This new take uses a planted stride and closer surroundings to convey speed and weight.",
+      "assistant_review": "Checked accepted orc anatomy, two legs and arms, planted foot and folded rear leg, cleaver grip and clearance, gaze and coherent side light."
+    },
+    {
+      "code": "M17",
+      "card_id": "hiredshield",
+      "title": "Hired shieldman",
+      "file": "hiredshield.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "An original Breachline painting of a hired human shieldman calmly checking his pay. Use the centre and right figures of the attached equipment sheet for practical hired-blade kit only: repaired mail or half-cuirass, plain linen and wool, useful belt, sheathed broad sword, small purse; do not copy the orc warchief on the left. A stocky middle-aged human man with a crooked nose, sun-browned face, short sandy hair and a worn moustache sits sideways on a low stone well rim in a bright village yard. His battered medium wooden shield stands upright on the ground against his left shin; the whole shield is visible and has no emblem. He has set three small coins on the flat stone beside him and holds one between thumb and fingertip, tilting it to the light, glancing dryly upward toward an unseen employer. The tiny raised eyebrow and waiting posture supply quiet humour, not caricature. Sensible half-cuirass over faded teal wool, repaired dark hose, sheathed sword supported from his belt, no fantasy spikes. Hands and coin contacts clear and plausible. One companion is only a soft seated background shape by a tethered pack mule. Dappled noon light, warm stone and blue-green fabric, believable iron highlights, no treasure pile. Compose at comfortable human distance with visible grounded boots. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/15-heavy-fighters-and-hired-blades.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-139a7d4c-3472-4124-bfbd-c43bac65eb57.png",
+      "sha256": "113503301defea806bd46471bd178d91ddb853cc7aaaa326c03457e5ff5c8e03",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A hired shieldman holds a coin to the light while keeping a dry eye on his employer. His battered equipment and comfortable pause suggest someone competent who expects to be paid.",
+      "assistant_review": "Checked human anatomy, coin pinch, grounded shield and boots, practical hired kit and readable amused expression.",
+      "alignment": "Neutral",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M18",
+      "card_id": "hiredcompany",
+      "title": "Hired company",
+      "file": "hiredcompany.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Breachline card painting: a small local human mercenary company settling a contract at their roadside camp. The attached sheet is a construction reference for hired-blade equipment, use its centre and right kits only, not the orc on the left. Five distinct adult human people, all belonging plausibly to the same local travelling company, no assortment of fantasy species. The focus is a broad-faced weathered male captain with receding dark hair, a small scar at his chin, faded blue coat over mail, speaking with matter-of-fact patience to a seated male paymaster. The captain rests one hand on a rolled bedding pack, the other hand open as if stating the price. The paymaster, balding and narrow-faced in ochre wool, has an open ledger on a rough camp table and pauses with his quill, looking directly at the captain. Two men in different repaired half-armour lean or sit behind the captain, one watching, one mending a strap, while a sturdy short-haired human woman checks a saddle near the pack animals, all varied personalities and ages. Repaired iron, mail, wool, plain sheathed swords and practical straps, not a uniform. No posed team portrait, no heraldry, no readable lettering on ledger. A river road and low green hills beyond; broken afternoon cloud gives clear gentle illumination, muted blue wool and russet tents. Keep the four supporting people softly painted, captain and negotiation the focal interaction. Credible hands and tool contact, open readable grouping. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/equipment/15-heavy-fighters-and-hired-blades.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-32d97e92-2166-4c5b-aec2-a5a09e35d30e.png",
+      "sha256": "dddbb7c40d3b783dced61ec6e4673148aba8febf4a4733bc8d47f5676a1aac50",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A mercenary captain settles terms with a paymaster while his company tends its equipment. The proposed roadside camp gives the group distinct personalities through small, ordinary actions.",
+      "assistant_review": "Checked five coherent human figures, captain/paymaster eye contact, hands and quill, practical kit and camp staging.",
+      "alignment": "Neutral",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M19",
+      "card_id": "ploughback",
+      "title": "Ploughback",
+      "file": "ploughback.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "Paint a wild Ploughback rooting at the edge of a Breachline woodland clearing. The attached approved reference sheet determines this animal's exact anatomy and covering; generate one animal in a living scene, not a new design or reference plate. Preserve the wild pig-sized long low body, four short sturdy legs with blunt cloven-like toes, tapering flat trowel snout, small lateral ears, dark leathery skin and overlapping warm copper-brown scales over neck, shoulders and back, ordinary thin tail. Three-quarter side view, low viewpoint: it braces its front feet and prises a clod up with the underside of its trowel-shaped snout, small roots still hanging from the clod. Head, neck and forelegs attach coherently, all four limbs grounded or naturally occluded, scale plates allow the joints to move. It is a wild feeding animal, no harness or agricultural tool. Damp dark earth, exposed pale roots and early autumn leaf litter, sun falling into a gap in the woods, cooler subdued trunks behind. Several green bramble leaves are painted broadly at the edge, give natural scale, no extra creatures needed. Concentrate definition at the snout-soil contact and face; merge far scales and background foliage into larger painted shapes. Curious and vigorous, not aggressive. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-reference-and-exploration-2026-11-13/03-ploughback-reference.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-a0892351-ddd6-44f0-bff5-abde5d91793b.png",
+      "sha256": "1d0c90a39acb4d366e6dc2a08a5942faace9b86e11d0faaf57cd5ef277cac00d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A wild Ploughback turns a rooted clod at a woodland edge. Its trowel snout and overlapping scales follow the selected reference in a new feeding scene.",
+      "assistant_review": "Checked accepted long low body, four legs, ordinary tail, trowel snout contact, scale coverage and wild context.",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "version": 1
+    },
+    {
+      "code": "M20",
+      "card_id": "foldstride",
+      "title": "Brackenmaw adult and cub — proposed name",
+      "file": "m20-hearthmantle-adult-cub-v1.png",
+      "status": "generated",
+      "review_status": "selected_for_claude_finalization",
+      "prompt": "Use case: identity-preserve. A selected animal reference painting for Breachline, landscape 3:2.\nThe attached image is an anatomy and identity reference ONLY for its BOTTOM MIDDLE animal, M20-5. Develop exactly that creature as one adult with a cub of its own species beside it. Do not use any other cell.\nPreserve the adult's very broad low resting body, enormous grounded forepaws, small rounded ear, calmly alert rounded muzzle and small dark eyes, thick overlapping russet, ochre and cream mantle sweeping backward from the head and over shoulders and body. Preserve the distinctive mix of soft layered covering and matte robust paw skin. The adult rests with its forepaws forward, relaxed and substantial, with its body complete in frame. Keep the scattered small growths/debris already embedded in its mantle modest, without adding a garden or new adornments.\nBeside the adult, fully visible and separated from the adult's outline, put one much smaller, youthful cub, perhaps around one quarter of the adult's body length. The cub is recognizably this same species, with the same muzzle, ears, paw structure and russet/cream mantle starting to develop: softer shorter covering, younger proportions and a lighter build that can visibly grow into the adult. It stands or sits naturally next to the resting adult on the same ground plane, with a quiet familial presence. No human scale figure, no other animals.\nA simple warm ivory reference background with minimal earth marks and grounded contact shadows. Coherent soft neutral daylight. Traditional oil and acrylic fantasy painting with visible varied brushwork, selective detail around faces and near paws, broader quieter strokes through the mantle and ground. Convincing anatomy and weight, matte organic surfaces, appealing natural animals rather than toys. No captions, lettering, frame, watermark or decorative border. The names, ecological mechanism and exact size remain open.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-lineup.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ccb6c334-74b1-4813-955d-dda864bfdcd2.png",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A massive russet-and-cream adult rests beside its much smaller cub, with the same layered mantle, rounded face and broad paws. The creator now describes it as an omnivorous “super bear” living mainly in forests and also ranging through hills and plains; precise size, growth timing and mantle biology remain open.",
+      "assistant_review": "Inspected against M20-5: adult silhouette, face, russet/cream layered mantle and large grounded forepaws retained. Cub is visibly same species, separate and smaller on same ground; youthful anatomy and shorter mantle read clearly. New reference pending creator review.",
+      "alignment": "Genesis",
+      "brief_revision": 8,
+      "version": 3,
+      "history": [
+        {
+          "code": "M20",
+          "card_id": "foldstride",
+          "title": "Foldstride",
+          "file": "foldstride.png",
+          "status": "generated",
+          "review_status": "superseded_subject_for_card",
+          "prompt": "Paint one established Breachline Foldstride feeding in open upland grassland after rain. Attached is ONLY the approved cell 1 animal from the body-plans sheet; use it as strict anatomy and covering reference, not a style reference or a new design. Preserve its odd pony-length, steeply sloping body: very low feeding head and front, high folded rear, short weight-bearing forelegs, much longer folded hind legs, four limbs total, blunt padded toes, olive leathery skin, dark mossy fur over the arching back with long pale cream rope-like hanging fur along the flanks, and short furry tail. The head is the selected smooth tapered broad-muzzled head with large dark eye, not a horse or deer. Three-quarter side view at animal height: its low head noses among exposed roots in a patch of freshly softened soil while the tall rear limbs shift a careful half-step, keeping the high rump and low shoulders unmistakable. Keep the torso, limb attachments and whole silhouette visible; no new horns, pouches, wing structures or extra limbs. Fresh green tussocks, small stones, a long subdued hill and clearing rain cloud; soft cool daylight with a narrow patch of warm light across the animal's upper back. No human silhouette in the scene, no reference-grid layout. The grazing landscape is a proposed habitat interpretation, not a claim about exclusive range. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/foldstride-bp1-cell1.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-daae29dc-847f-4cc2-b00f-45b5385e6130.png",
+          "sha256": "e9b0c1bbd9ebc591d539bddf132eec06e0246211836794b622766bdca24c81aa",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Foldstride feeds among exposed roots on rain-soaked upland ground. Its low head, high folded rear and hanging pale coat preserve the selected design; this setting remains a proposed habitat portrayal.",
+          "assistant_review": "Checked selected BP1 cell 1 identity, four limbs and attachments, steep silhouette, padded toes and root-feeding contact.",
+          "alignment": "Genesis",
+          "brief_revision": 1,
+          "version": 1,
+          "superseded_by": "revision 7 new-animal lineup"
+        },
+        {
+          "code": "M20",
+          "card_id": "foldstride",
+          "title": "New settling animal",
+          "file": "m20-lineup.png",
+          "status": "generated",
+          "review_status": "awaiting_creator_selection",
+          "prompt": "Create a finished Breachline animal LINEUP sheet, 1536 × 1024 landscape. Exactly SIX distinct whole animals in an even THREE-COLUMN, TWO-ROW arrangement, reading left to right, top then bottom. Each animal stays inside its own 512 × 512 region with breathing room; all feet, heads and tails inside the cell. No drawn grid, text, labels, numbers, border, signature or watermark. Warm ivory empty background with one small plain ecological ground patch per animal. Quiet resting or feeding moments. The attached references are used ONLY for the last two cells as specified below; do not borrow their body plans or faces for the other four.\nUse traditional oil/acrylic fantasy paint with visible, varied brushwork, selective anatomical detail, naturally matte coverings, coherent soft daylight and believable ground shadows. Connected limbs and feeding structures, clear weight and usable joints. Entirely new natural species, no magic, tack, weapons or humanlike bodies. Heads must belong to their bodies. Avoid jaw frills, hanging mouth tendrils, throat combs, decorative dorsal sacks, plant-animal hybrids, horror mouths and copies of known Earth animals. Do not turn all six into the same furry quadruped.\nTHEME: natural animals that become heavy and difficult to move after maturing and settling into a feeding territory. Each cell shows one mature animal only, no transformation diagrams.\n\nTOP LEFT — specified take 1: A broad low six-legged ground grazer. Two wide, shallow longitudinal ridges run along its heavy upper body, with flexible copper-grey leathery skin between them; this is a strong living torso, not a single shell. Six short powerful legs spread into wide soft toe pads. A compact blunt-lipped head reaches down on a short muscular neck to crop tough shoots; small natural eyes, no trunk or tusks. Older individuals accrete subtle layers on their low paired dorsal ridges. Wide settled stance on sparse dry grass, very short tail. Avoid armadillo, turtle and the Foldstride's sloping rear.\n\nTOP MIDDLE — specified take 2: A broad upright pear-shaped torso balanced on THREE visibly separate thick limbs: a forward left-right pair and one powerful central rear support, all ending in flared lobed feet. The rear limb is a real leg emerging from the lower pelvis, not a tail. A small broad cheeked mammalian head on a short neck looks calmly sideways. Smooth muted brown-olive hide, a sparse dark ruff only at the nape, no horns or plates. The heavy lower body expands with maturity. Resting on muddy meadow ground, all three load-bearing feet identifiable.\n\nTOP RIGHT — specified take 3: A low elongated wet-ground herbivore with one broad muscular creeping underside and FOUR short gripping arms around the front third, two on each side; the rear two-thirds moves on the continuous ventral pad. A short neck carries a small rounded two-eyed head with a plain horizontal grazing mouth; no eyestalks, tentacles or beak. Smooth charcoal blue leathery upper skin and a pale firm underside, no shell, glow or frills. It braces the four small arms to pull a clump of sedge toward its mouth. Show the body from an oblique side view so the creeping foot and front attachments make sense.\n\nBOTTOM LEFT — specified take 4: An elongated stout ground browser resting in a loose partial coil, broad rounded head on a short thick neck at one end, tapering blunt tail at the other. Three pairs of small strong walking legs emerge along the lower flanks, with their feet resting on the stony ground outside the coil; no snake head or threatening mouth. The heavy flexible body wears small smooth dark umber and muted teal scales with a few pale growth bands, not an insect carapace or armoured tank. Its long muscular mass and widening adult body let it settle firmly into a sheltered stony feeding place.\n\nBOTTOM MIDDLE — freeform take 5: Preserve ONLY the LEFT animal of REFERENCE IMAGE 1: the very broad settled russet-and-cream animal with layered shaggy/feathery covering, huge low paws and a compact rounded calm face. Retain its whole-body design and settled character. Make the muzzle clean: omit hanging beard whiskers or facial tassels. The overlapping coat is natural covering; omit the mushroom shelves and flowers, leaving incidental bits of dry leaf litter caught in its old coat rather than growing plants. This is the independently invented freeform option, not a template for the other cells.\n\nBOTTOM RIGHT — freeform take 6: Preserve ONLY the RIGHT animal of REFERENCE IMAGE 2: the blue-grey and cream spotted, long-necked feathered quadruped with four webbed feet and a flat tapered feather tail, feeding at shallow wetland plants. Retain its distinctive curved neck, weight distribution, head, covering and webbed support. Ignore the plated plant-covered animal on the LEFT of that reference completely.\nAll six must remain clearly separate original alternatives. No invented printed names.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-27000fa5-dd62-4d20-84a7-17fbf4738986.png",
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-990c5b01-accb-49e7-b986-ac1dbb0d48f3.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-d3378127-6801-48d6-a258-32db488fab1b.png",
+          "sha256": "a7cc2c861026687670009af7828a43e73221225868cdd0bb5764c586e681f473",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "Six new animal proposals; choose M20-1 through M20-6. Two takes originated as independent freeform studies.",
+          "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage. The freeform Hearthmantle retains small growths in its mantle; their biology is explicitly open. M20-5 uses a cleaned muzzle from its independent study.",
+          "alignment": "Genesis",
+          "brief_revision": 7,
+          "version": 2,
+          "original_title": "Foldstride",
+          "stage": "lineup",
+          "completed_at": "2026-11-15T05:58:50.991810+00:00",
+          "source_brief_sha256": "6c6a8ac8aaf080d33654f16916763f19b6fb426f4471c0bc7c6210b94fa71c48",
+          "lineup_manifest": "animal-lineups-manifest.json",
+          "concept_codes": [
+            "M20-1",
+            "M20-2",
+            "M20-3",
+            "M20-4",
+            "M20-5",
+            "M20-6"
+          ]
+        }
+      ],
+      "original_title": "Foldstride",
+      "stage": "selected_reference",
+      "completed_at": "2026-11-15T05:58:50.991810+00:00",
+      "source_brief_sha256": "1662caa7a7594972293589c2e2792a9d7e7b66265921116d6fab6ed64a8699ce",
+      "lineup_manifest": "animal-lineups-manifest.json",
+      "concept_codes": [
+        "M20-1",
+        "M20-2",
+        "M20-3",
+        "M20-4",
+        "M20-5",
+        "M20-6"
+      ],
+      "source_brief": "BRIEFS-animal-followup-revision-8.md",
+      "followup_manifest": "animal-followup-round2-manifest.json",
+      "selected_concept": "M20-5",
+      "reference_code": "M20-R1",
+      "name_status": "assistant proposal",
+      "ecology": {
+        "status": "creator_directed",
+        "analogy": "super bear",
+        "diet": "omnivorous",
+        "primary_habitat": "forest",
+        "additional_habitats": [
+          "hills",
+          "plains"
+        ],
+        "life_cycle": "Small cubs grow into substantially heavier, more powerful adults.",
+        "open_details": [
+          "precise size",
+          "growth rate",
+          "lifespan",
+          "breeding",
+          "hibernation",
+          "mantle biology"
+        ],
+        "basis": "Creator direction, 2026-11-15; do not convert the analogy into a literal Earth bear or presume a rooted/sedentary life."
+      },
+      "latest_creator_feedback": "animal-feedback-round12.json",
+      "creator_feedback": "Strongly liked; preserve current reference. New mouth experiment remains a separate proposal.",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+      "finalization_reference": "M20-R1",
+      "finalization_version": 1
+    },
+    {
+      "code": "M21",
+      "card_id": "saltmigrant",
+      "title": "New heavyweight attempts",
+      "file": "m21-heavyweight-exercise-e.png",
+      "status": "generated",
+      "review_status": "selected_for_claude_finalization",
+      "prompt": "Create a Breachline heavyweight wildlife concept lineup: SIX complete animals, three columns and two rows, landscape 1536 × 1024. Warm ivory ground with minimal natural footing and a small plain adult human well apart for scale in each cell. No text, panel lines or labels. Traditional oil/acrylic fantasy painting, visible selective brushwork, matte organic covering, coherent daylight.\n\nThe creator wants a renewed exercise with FOUR genuinely fresh freeform animals, plus TWO light revisions of earlier starting points. Prioritize compelling whole animals: convincing enormous mass and support, interesting movement, distinct silhouettes and integrated heads. Power and natural presence, not gross mouths.\n\nTOP LEFT only: reference 1 BOTTOM MIDDLE animal, M21-5 / Highneck. Preserve its broad grounded body, enormous gathered forelimbs, raised muscular neck, compact head and cream/russet mottled covering. Make it only SLIGHTLY more predatory: a firmer jaw and more intent eye, a restrained glimpse of small biting teeth in a mostly closed mouth. Keep its appeal and overall body; do not turn it into a snarling monster.\n\nTOP MIDDLE only: reference 2 TOP MIDDLE animal, M21-8. Preserve its tall feathered neck, crest, powerful four-legged body and layered slate/cream/ochre covering. COMPLETELY REPLACE the dangling fleshy mouthparts with a clean compact integrated jaw: a solid short muzzle, paired lips or firm mouth edges, a closed natural mouth line, clear nostrils. Nothing dangling, split open, wormlike or tentacular around its face. This is an actual anatomical correction, not just concealing the appendages. Its exact revised face is yours to invent.\n\nThe other FOUR cells are wholly new heavyweight animals. Invent them freely and independently of both attached designs. Do not recycle their necks, feathers, mottling or skeleton as a formula. Explore different distributions of mass, body proportions, load-bearing arrangements, coverings, faces and ecological character. Let them surprise us as plausible unfamiliar wildlife. Any diet is possible and a few can suggest predatory capacity, but no compulsory grazing, feeding props, roaring or hunting scenes. Faces should be appealing, functional parts of the animal, without hanging fleshy mouth appendages, exposed oral organs, gaping split faces or gore. No equipment or humans riding them. Do not make six dinosaurs, six browsers or six variations of the reference animals.\n\nAll silhouettes and feet entirely visible inside their cells with breathing room. Maintain credible limb attachments, weight and ground contact. Lively but restrained colour and broad quiet paint through secondary forms; avoid glossy toy forms, photoreal surface noise and uniformly tiny detail. Names, exact scale and ecology remain open.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-812a266f-1cd0-4c8a-924c-2a222918c369.png",
+      "sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "M21-22–27: two revised starting points and four new proposals.",
+      "assistant_review": "Inspected generated sheet. First take retains the Highneck body/neck and adds restrained teeth and intent. Second has a solid compact jaw with no dangling mouthparts. Four other takes use plated, whiskered, membranous and wool/horn anatomy. Complete silhouettes, separate scale figures, readable feet and supports, no gross oral structures. The four fresh proposals still share some reference-palette influence; membrane function and the horned take’s precise anatomy remain questions for selected-reference development, not approved biology.",
+      "alignment": "Genesis",
+      "brief_revision": 12,
+      "version": 5,
+      "history": [
+        {
+          "code": "M21",
+          "card_id": "saltmigrant",
+          "title": "Salt-flat migrant",
+          "file": "saltmigrant.png",
+          "status": "generated",
+          "review_status": "superseded_subject_for_card",
+          "prompt": "Breachline landscape painting of the established Salt-flat migrant crossing a dry salt pan, awe through quiet scale and distance. Attached is ONLY approved G2 cell 5: preserve this animal's anatomy and coverings exactly rather than redesigning it. Extra-large grazer with four long jointed legs, narrow torso, high shaggy rust-and-cream hindquarters, sloping forequarters into a low-reaching neck and elongated softly lipped head, thick blunt padded toes and ordinary short tail. Not a horse, giraffe or elephant; no horns or decorative growths. Main animal in three-quarter profile walking slowly across pale cracked mineral ground, one forefoot lifting just off the surface with its joint bent plausibly, other three carry its weight; neck low but relaxed, no roaring. It crosses between scattered low feeding shrubs at the margin; two very distant soft silhouettes of its own species follow far behind without overlapping the main legs. Broad luminous sky, hazy mauve hills, a low bleached stone route marker near the distant path gives context but no diagrammatic human scale icon. Avoid exaggerating into a mountain-sized monster; use the large-animal proportions and relative reference scale without inventing exact height. Late slanting afternoon sun, long gentle shadows and restrained copper fur against pale lilac-white earth. The entire main animal fits comfortably inside the landscape, open space in the direction of travel, the distant animals are softly suggested. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/salt-flat-migrant-g2-cell5.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-bdf7d597-eec6-49f5-9541-2c41503bdce1.png",
+          "sha256": "29895863edf4306bf690a2274be5764ac83a4ee2a58dff36eddeb95246acffa7",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "A Salt-flat migrant crosses a bright pan with two distant animals behind it. The quiet procession preserves the selected anatomy and suggests great scale without assigning an exact height.",
+          "assistant_review": "Checked selected G2 cell 5 anatomy, four long jointed legs, lifted forefoot and support, soft-lipped head, rust-and-cream covering and dry-pan context.",
+          "alignment": "Genesis",
+          "brief_revision": 1,
+          "version": 1,
+          "superseded_by": "revision 7 new-animal lineup"
+        },
+        {
+          "code": "M21",
+          "card_id": "saltmigrant",
+          "title": "New heavyweight animal",
+          "file": "m21-lineup.png",
+          "status": "generated",
+          "review_status": "awaiting_creator_selection",
+          "prompt": "Create a finished Breachline animal LINEUP sheet, 1536 × 1024 landscape. Exactly SIX distinct whole animals in an even THREE-COLUMN, TWO-ROW arrangement, reading left to right, top then bottom. Each animal stays inside its own 512 × 512 region with breathing room; all feet, heads and tails inside the cell. No drawn grid, text, labels, numbers, border, signature or watermark. Warm ivory empty background with one small plain ecological ground patch per animal. Quiet resting or feeding moments. The attached references are used ONLY for the last two cells as specified below; do not borrow their body plans or faces for the other four.\nUse traditional oil/acrylic fantasy paint with visible, varied brushwork, selective anatomical detail, naturally matte coverings, coherent soft daylight and believable ground shadows. Connected limbs and feeding structures, clear weight and usable joints. Entirely new natural species, no magic, tack, weapons or humanlike bodies. Heads must belong to their bodies. Avoid jaw frills, hanging mouth tendrils, throat combs, decorative dorsal sacks, plant-animal hybrids, horror mouths and copies of known Earth animals. Do not turn all six into the same furry quadruped.\nTHEME: powerful heavyweight animals, normally calm, impressive and potentially formidable through body mass and support rather than aggression. Include one small ordinary adult human, standing safely apart on the SAME GROUND PLANE as the animal in EACH cell, as a discreet scale comparison. No fear, combat or threat. These are large land or wetland beasts, not aerial beings. Do not use Fanback, Salt-flat migrant, a standard bull or a turtle.\n\nTOP LEFT — specified take 1: A long level muscular torso carried on SIX stout columnar legs set fairly close beneath it, not splayed spider legs. The fore-chest is deep and the middle of the trunk has a slight underside arch between the limb girdles. A low projecting broad head has a short supple upper lip and flat plant-chewing jaws, with a narrow neck set low into the chest. Smooth warm-grey thick skin, sparse black bristles along the shoulders, a long low tapering tail. A single darker rust band down the flanks. Calmly cropping a tough shrub in open country. Build the body as an integrated six-legged powerhouse, not an elephant with spare legs.\n\nTOP MIDDLE — specified take 2: A tall deep-bodied BIPED with immense haunches, two broad four-toed feet, a thick low balancing tail and TWO short strong forearms holding a branch near its chest. Its head is short and broad, with a blunt integrated browsing beak, small alert eyes and no bird crest. Dense dark soot-brown fur along the body with shorter chestnut fur at the chest, the lower legs and feet in supple dark hide. Calm and anchored, chest carried above hips and the tail's base helping counterweight it. A heavy upright browser, not a kangaroo, bear or long-legged bird. No wings.\n\nTOP RIGHT — specified take 3: An exceptionally broad, low, level-bodied animal supported by EIGHT short but massive legs, four per side, its body almost rectangular in plan with smoothly rounded corners. Fine pale-grey fur grows close to deep tough skin; charcoal lower legs and a dark blunt mammalian head protruding only a little from the front edge. A broad ordinary chewing jaw, low nostrils, small calm ears, no trunk. No shell, dorsal slab, armour, fans or dangling facial structures. The wide load distribution makes this enormous animal credible on wet ground. Oblique side view that makes the four near legs and separate far-side supports readable.\n\nBOTTOM LEFT — specified take 4: A massive animal with TWO very large pillar forelegs supporting a high barrel chest and FOUR shorter muscular rear legs driving a lower, long pelvis. Rounded narrow hindquarters and a modest tapering tail; a thick short neck meets a broad flat-topped head with a deep blunt muzzle and a clearly herbivorous closed mouth, no horns or tusks. Coarse ochre-red fur over the chest transitions naturally into dark grey pebbled hide over lower limbs and rear body. The forward power and lower four-legged rear carriage must read as one evolved living body, not animals joined together. Calmly resting its muzzle against a low shrub at a woodland edge.\n\nBOTTOM MIDDLE — freeform take 5: Preserve the LEFT animal of the attached independent freeform sheet, including its upright long-necked resting posture, heavy forelimbs, broad low rear torso, compact calm head and warm mottled covering. Retain its exact overall anatomy and unusually gathered mass. Use the reference human for comparable relative scale.\n\nBOTTOM RIGHT — freeform take 6: Preserve the RIGHT animal of the attached independent freeform sheet: the enormous blue-grey and cream mottled deep-bodied four-legged grazer, long low-reaching neck, blunt face and broad stable feet at shallow water. Retain its body, colouring and calm feeding. Distinguish it from the long-legged narrow Salt-flat migrant by its much wider, lower, load-bearing body and sturdy legs.\nNo printed names. Six strongly different silhouettes with natural contained strength.",
+          "attached_references": [
+            "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-ac1750b2-acac-4eea-bf8b-63756ee54799.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-405465d0-c50e-4ecd-bb19-661480bb3bb9.png",
+          "sha256": "20a415d8434c6d4b013e903eab6d7c8120a9f8d9fc5540610766c27a018c44e2",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "Six new animal proposals; choose M21-1 through M21-6. Two takes originated as independent freeform studies.",
+          "assistant_review": "Inspected all six cells for full silhouettes, grounded supports, connected anatomy, distinct body plans, relaxed feeding/resting and absence of repeated jaw frills. Scale comparisons present in each M21 cell. Lineup concepts only: hidden limb attachments and life-cycle hypotheses will be resolved in the selected reference stage.",
+          "alignment": "Genesis",
+          "brief_revision": 7,
+          "version": 2,
+          "original_title": "Salt-flat migrant",
+          "stage": "lineup",
+          "completed_at": "2026-11-15T05:58:50.991810+00:00",
+          "source_brief_sha256": "6c6a8ac8aaf080d33654f16916763f19b6fb426f4471c0bc7c6210b94fa71c48",
+          "lineup_manifest": "animal-lineups-manifest.json",
+          "concept_codes": [
+            "M21-1",
+            "M21-2",
+            "M21-3",
+            "M21-4",
+            "M21-5",
+            "M21-6"
+          ]
+        },
+        {
+          "code": "M21",
+          "card_id": "saltmigrant",
+          "title": "Additional freeform heavyweights",
+          "file": "m21-freeform-lineup-b.png",
+          "status": "generated",
+          "review_status": "awaiting_creator_selection",
+          "prompt": "Use case: stylized-concept. Breachline wildlife exploration, one landscape 3:2 painted lineup with exactly SIX completely new heavyweight animals. Arrange three equal columns and two equal rows on warm ivory, one complete animal per cell. Leave space around each silhouette and at each cell's top left for later review labels. No text in the image.\nAll six are FREEFORM inventions: invent each body, anatomy, palette, covering and ecological life yourself. The shared goal is a genuinely strong wild animal, with convincing mass, support, locomotion and a fascinating natural presence. Do not merely enlarge Earth animals, repeat a skeleton with another face, or make six members of one family.\nThe creator wants substantially more variety than a line of thick-necked, blunt-muzzled browsing mammals. Give the six genuinely different integrated faces and ways of feeding, as well as different distributions of body mass, limb arrangements and coverings. Let ecological inventiveness drive the designs; feeding roles are open and should not all be browsing or grazing. At least two takes should explore a particularly unfamiliar but physically intelligible mouth structure, visible clearly enough to evaluate. Its mouth can be at ease or quietly being used; experimentation does not require a threat display. Avoid making jaw frills or throat combs the recurring novelty.\nDo not repeat an upright furred beaked animal with huge foreclaws and a deep chest: that animal already exists. Nor repeat a multi-legged blunt-faced bulky grazer across several cells. Invent six separate answers, not incremental variants. Some may be quietly beautiful, awkward, eerie or powerful; originality need not be ugly or horrific.\nEach cell shows a small plain adult human for scale safely separate from the animal, on the same ground plane. Clear silhouettes, believable limb roots and contacts, whole bodies within their cells, modest patches of ecological ground rather than full scenes. Traditional oil/acrylic fantasy painting, visible varied brushwork, selective detail on the mouth and near anatomy with simpler secondary strokes, matte tactile surfaces, coherent readable daylight. No glossy 3D, cartoon or diagram aesthetic, no lettering, borders, numbers, watermark or signatures.",
+          "attached_references": [],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-6ae62d67-084f-446a-9455-db617c1f5a3c.png",
+          "sha256": "ba124925c1e36b295da74f3fc6b0ab640e615578d4b316a66a02d1e38c9e5532",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "Six additional freeform heavyweight proposals, M21-7 through M21-12, with varied feeding roles and experimental mouths.",
+          "assistant_review": "Inspected six complete cells, separate scale figures, contact/support, feeding contacts and mouth variety. Range includes strut-supported mouth, flexible lips, opposed pincers, piscivorous jaws, slender feeding tube and probing mouthparts. Cells 2 and 6 share flexible mouth structures but differ in body plan and apparent feeding use; both remain freeform proposals, not approved anatomy.",
+          "alignment": "Genesis",
+          "brief_revision": 8,
+          "version": 3,
+          "original_title": "Salt-flat migrant",
+          "stage": "lineup",
+          "completed_at": "2026-11-15T05:58:50.991810+00:00",
+          "source_brief_sha256": "1662caa7a7594972293589c2e2792a9d7e7b66265921116d6fab6ed64a8699ce",
+          "lineup_manifest": "animal-lineups-manifest.json",
+          "concept_codes": [
+            "M21-7",
+            "M21-8",
+            "M21-9",
+            "M21-10",
+            "M21-11",
+            "M21-12"
+          ],
+          "source_brief": "BRIEFS-animal-followup-revision-8.md",
+          "followup_manifest": "animal-followup-round2-manifest.json",
+          "latest_creator_feedback": "animal-feedback-round4.json",
+          "creator_feedback": "Mouths can be more aggressive and predatory. M21-13–15 v2 generated; selection remains open."
+        },
+        {
+          "code": "M21",
+          "card_id": "saltmigrant",
+          "title": "Highneck and Foldlip heavyweight riffs",
+          "file": "m21-highneck-foldlip-riffs.png",
+          "status": "generated",
+          "review_status": "awaiting_creator_selection",
+          "prompt": "Use case: stylized-concept. Create a fresh Breachline HEAVYWEIGHT ANIMAL RIFF LINEUP, landscape 3:2, about 1536 x 1024. Exactly SIX complete animals in a clean THREE-COLUMN, TWO-ROW arrangement. One distinct take per cell, comfortably inside that cell with breathing room and all feet/tails visible. Warm ivory ground, minimal ecological footing and one small plain adult human safely apart for scale in each cell. No text, labels, drawn panel lines, borders, watermark or signature.\nTwo attached sheets provide ONLY TWO specific design seeds. Ignore every other creature on both sheets:\nREFERENCE 1: ONLY BOTTOM MIDDLE, M21-5. The enormous resting animal with a broad low hindbody, huge folded forelimbs, elevated long muscular neck, compact rounded head, and warm cream/ochre/russet mottled natural covering. This seed's appeal is massive settled weight with a neck lifting above it.\nREFERENCE 2: ONLY TOP MIDDLE, M21-8. The tall feathered heavyweight with a high neck and crest, long flexible grasping mouth-lobes around a small central mouth, broad muscular torso and powerful four-legged support. Its slate, cream and warm ochre covering integrates feathers and matte limb skin. Preserve the idea that the mouthparts genuinely belong to its face.\nExplore, do not simply copy the reference poses. Keep the visual relationship to these seeds clear while allowing original anatomy and unexpected solutions. Invent the detailed variants yourself; anatomy, precise palette and ecology are open within these directions. The creator prefers this freeform approach over six fully prescribed designs.\n\nLEFT COLUMN, upper and lower cells: two different riffs led by M21-5. Retain massive low body volume, a strong elevated neck and formidable forequarters, but explore different stance, neck carriage and distribution of weight. They need not acquire the other seed's mouth. The two should look meaningfully different as whole animals, not the same animal recoloured.\nMIDDLE COLUMN, upper and lower cells: two different riffs led by M21-8. Retain an integrated flexible grasping mouth and a strongly feathered character, but explore heavier support and contrasting silhouettes or neck proportions. Keep genuine heavyweight strength: big animals with substantial torso and limbs, rather than delicate tall birds.\nRIGHT COLUMN, upper and lower cells: two freer SYNTHESIS takes, combining M21-5's massive grounded presence with M21-8's intriguing mouth/feather anatomy. Invent their proportions, posture, coverings and mouth use as integrated new biology. Do not just paste a head onto the other body.\n\nAcross all six, vary silhouette, posture, neck/head proportion, coat transitions and facial character. Faces should show different functional interpretations rather than six copies of a blunt browsing muzzle. Predatory capability and sharper gripping structures are welcome where they fit a take, but do not force every animal to roar or convert every mouth into the same fanged gape. Some mouths can fold at rest and others work or open enough to read. No ubiquitous leafy branches or compulsory plant-eating. Maintain credible limb origins, load-bearing feet, muscular neck support and usable mouth attachments. This is exploration of powerful wildlife, not a transformation sequence or literal game-mechanic diagram.\nTraditional oil and acrylic fantasy painting, visibly varied brushwork and selective detail, precise focal mouths/eyes with broader, quieter marks through secondary covering and ground. Matte organic surfaces, coherent readable daylight, lively restrained colour. No photorealistic rendering, glossy toy forms, armour, equipment, spectacle, victim scene or gore. The exact size, diet, habitat and names remain proposals.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-lineup.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-freeform-lineup-b.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-3ac88344-c50e-492c-8806-9c0f487d0d5f.png",
+          "sha256": "5f004b292edaad40ef5b664cfe6558a2e67e3ccbec5c3bd71978799d0026f000",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "description": "Six new riffs on M21-5 and M21-8, codes M21-16–21; awaiting selection.",
+          "assistant_review": "Inspected the generated six-cell sheet: complete silhouettes, readable load-bearing limbs and ground contacts, separate scale figures, integrated flexible mouthparts, coherent daylight and matte painted coverings. Left column retains Highneck identity; middle develops heavier Foldlip; right explores two resting syntheses. The two synthesis takes are close relatives rather than independent species. Mouth mechanics and hidden limb attachments remain reference-stage questions, with no obvious generation defect requiring correction in this exploratory sheet.",
+          "alignment": "Genesis",
+          "brief_revision": 11,
+          "version": 4,
+          "original_title": "Salt-flat migrant",
+          "stage": "lineup",
+          "completed_at": "2026-11-15T20:43:47.608902+00:00",
+          "source_brief_sha256": "32f585a1b704f208a09807e6118930490e0af3debdfec2f0ce44751bd3ba27a6",
+          "lineup_manifest": "heavyweight-riffs-round5-manifest.json",
+          "concept_codes": [
+            "M21-16",
+            "M21-17",
+            "M21-18",
+            "M21-19",
+            "M21-20",
+            "M21-21"
+          ],
+          "source_brief": "BRIEFS-heavyweight-riffs-revision-11.md",
+          "followup_manifest": "heavyweight-riffs-round5-manifest.json",
+          "latest_creator_feedback": "animal-feedback-round5.json",
+          "creator_feedback": "Prior mouth studies positively received. M21-5 and M21-8 chosen as starting points for riffs, not final species or card-art approval."
+        }
+      ],
+      "original_title": "Salt-flat migrant",
+      "stage": "lineup",
+      "completed_at": "2026-11-15T20:50:35.319363+00:00",
+      "source_brief_sha256": "c5e86a55a8ae883efcc39e9da79a92d2102ea9da12bdb15bc8c1c50d970f391b",
+      "lineup_manifest": "heavyweight-exercise-round6-manifest.json",
+      "concept_codes": [
+        "M21-22",
+        "M21-23",
+        "M21-24",
+        "M21-25",
+        "M21-26",
+        "M21-27"
+      ],
+      "source_brief": "BRIEFS-heavyweight-exercise-revision-12.md",
+      "followup_manifest": "heavyweight-exercise-round6-manifest.json",
+      "latest_creator_feedback": "animal-feedback-round12.json",
+      "creator_feedback": "Number 2 front paws should have bear-like claws. M21-23 v5 generated with stout visible gently curved claws; other features and other two animals unchanged.",
+      "additional_explorations": [
+        {
+          "manifest": "animal-mouths-round3-manifest.json",
+          "file": "m21-mouth-exploration-c.png",
+          "codes": [
+            "M21-13",
+            "M21-14",
+            "M21-15"
+          ],
+          "status": "awaiting_creator_selection",
+          "brief_revision": 9
+        },
+        {
+          "manifest": "animal-mouths-round4-manifest.json",
+          "file": "m21-mouth-exploration-c-v2.png",
+          "codes": [
+            "M21-13",
+            "M21-14",
+            "M21-15"
+          ],
+          "version": 2,
+          "status": "awaiting_creator_selection",
+          "brief_revision": 10
+        },
+        {
+          "manifest": "heavyweight-riffs-round5-manifest.json",
+          "file": "m21-highneck-foldlip-riffs.png",
+          "codes": [
+            "M21-16",
+            "M21-17",
+            "M21-18",
+            "M21-19",
+            "M21-20",
+            "M21-21"
+          ],
+          "version": 1,
+          "status": "superseded_by_creator_correction",
+          "brief_revision": 11,
+          "mouth_feature": "rejected"
+        },
+        {
+          "manifest": "heavyweight-exercise-round6-manifest.json",
+          "file": "m21-heavyweight-exercise-e.png",
+          "codes": [
+            "M21-22",
+            "M21-23",
+            "M21-24",
+            "M21-25",
+            "M21-26",
+            "M21-27"
+          ],
+          "status": "preferred_shortlist_recorded",
+          "brief_revision": 12,
+          "preferred_codes": [
+            "M21-22",
+            "M21-23",
+            "M21-26"
+          ]
+        },
+        {
+          "manifest": "heavyweight-preferred-round8-manifest.json",
+          "files": [
+            "m21-22-highneck-v2.png",
+            "m21-23-feathered-heavyweight-v2.png",
+            "m21-26-mane-heavyweight-v2.png"
+          ],
+          "codes": [
+            "M21-22",
+            "M21-23",
+            "M21-26"
+          ],
+          "version": 2,
+          "status": "awaiting_creator_review",
+          "brief_revision": 13
+        },
+        {
+          "manifest": "heavyweight-front-claws-round9-manifest.json",
+          "file": "m21-23-feathered-heavyweight-v3.png",
+          "codes": [
+            "M21-23"
+          ],
+          "version": 3,
+          "status": "superseded_talons_excessive",
+          "brief_revision": 14
+        },
+        {
+          "manifest": "heavyweight-front-paws-round10-manifest.json",
+          "file": "m21-23-feathered-heavyweight-v4.png",
+          "codes": [
+            "M21-23"
+          ],
+          "version": 4,
+          "status": "refined_by_v5_bear_claws",
+          "brief_revision": 15
+        },
+        {
+          "manifest": "heavyweight-bear-claws-round11-manifest.json",
+          "file": "m21-23-feathered-heavyweight-v5.png",
+          "codes": [
+            "M21-23"
+          ],
+          "version": 5,
+          "status": "awaiting_creator_review",
+          "brief_revision": 16
+        }
+      ],
+      "preferred_codes": [
+        "M21-22",
+        "M21-23",
+        "M21-26"
+      ],
+      "selected_reference_revisions": [
+        {
+          "code": "M21-22",
+          "version": 2,
+          "file": "m21-22-highneck-v2.png",
+          "cell": "top left",
+          "rect": [
+            0,
+            0,
+            0.3333333333333333,
+            0.5
+          ],
+          "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP LEFT, the enormous reclining russet-and-cream Highneck, with long raised muscular neck, compact head and huge gathered forelimbs. The previous revision is still not predatory enough. Make the face clearly MORE PREDATORY while preserving the liked body and raised-neck resting pose: a stronger biting jaw, focused forward-directed gaze, pronounced carnivorous teeth with a few substantial canines visible in a slightly parted mouth. Teeth should have believable roots and jaw clearance. Give it the contained confidence of a powerful carnivore, not a scream or a grotesque monster. Keep the compact head recognizably related to the source and integrated into its neck; preserve the warm mottled coat, rounded hindbody, large forelimbs and immense settled weight.",
+          "stage": "reference_revision",
+          "status": "generated",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+          ],
+          "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+          "reference_role": "Edit target; selected cell only.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-7bb83677-fe29-4b23-a4e9-e401a7a9ccca.png",
+          "sha256": "cd14c1b4d2a0f512983dac8bdfe3bc91c1ac4a4994a440bf2959578ae8af89fb",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Highneck · stronger predator",
+          "original_position": 1,
+          "description": "The raised neck and settled heavyweight body now carry a stronger carnivorous jaw with prominent biting teeth and a more intent gaze. This develops the predatory direction you requested while keeping the liked silhouette and mottled covering.",
+          "assistant_review": "Checked stronger jaw and visible teeth, integrated face/neck, retained low resting body and massive forelimbs, coat continuity and complete framing. No dangling mouthparts or obvious anatomy defects.",
+          "review_status": "awaiting_creator_review",
+          "completed_at": "2026-11-15T20:59:42.201939+00:00"
+        },
+        {
+          "code": "M21-23",
+          "original_position": 2,
+          "version": 5,
+          "stage": "reference_revision",
+          "file": "m21-23-feathered-heavyweight-v5.png",
+          "prompt": "Make a small local edit to this animal painting: give BOTH FRONT PAWS believable BEAR CLAWS. Retain the broad, heavy, furred paw structure, but replace the tiny catlike claw tips with a clearly visible row of stout non-retractile claws like a brown bear's forepaws. Each claw has a thick base, moderate forward length and a gentle downward curve, naturally growing from a short thick toe. They should look powerful for digging and traction, proportional to the paw. Keep the toes compact and joined into a broad padded paw; no long separated bird fingers, no dramatically hooked raptor talons, and no oversized sickle claws. Preserve the front legs above the paws, all leg positions, both rear feet, head, closed muzzle, neck, crest, feather mantle, body, tail, colours, human scale figure, ground, lighting and framing. Only refine the two front paws and claws. Retain the painted fantasy finish, 3:2 landscape format, with no text.",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v4.png"
+          ],
+          "reference_sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+          "reference_role": "Entire v4 as edit target; front bear claws only.",
+          "status": "generated",
+          "review_status": "awaiting_creator_review",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f2d9adfe-9794-4f77-b800-f616d9f97d08.png",
+          "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Feathered heavyweight · bear claws",
+          "description": "The broad furred front paws now carry stout, visible bear-like claws with moderate projection and a gentle curve. The compact toes, sturdy legs, feathered body, closed muzzle and rear feet retain their earlier design.",
+          "assistant_review": "Visually compared with v4: front claws are clearly larger and stouter than the small tips, yet stay proportionate and gently curved. Broad compact furred paws remain grounded; no raptor fingers or sickle talons. Upper legs, rear feet, body, face, feather silhouette, scale figure, pose and composition retain their design. No obvious generation defect requiring another pass.",
+          "completed_at": "2026-11-15T21:45:02.905330+00:00",
+          "history": [
+            {
+              "code": "M21-23",
+              "original_position": 2,
+              "version": 4,
+              "stage": "reference_revision",
+              "file": "m21-23-feathered-heavyweight-v4.png",
+              "prompt": "Edit this Breachline animal reference with one local correction: BOTH FRONT FEET become broad, substantial mammalian PAWS. Think of the grounded weight of large feline or bear forepaws: a compact padded mass, four rounded toes grouped closely together, a softly furred top blending into the wrist, and only tiny short claw tips. The paws should feel powerful and able to support this heavyweight. They are not bird talons, grasping hands, elongated fingers or splayed reptile toes. Keep the paws planted naturally; do not show their undersides to the viewer. Preserve the muscular front legs above the wrists and the two rear feet exactly in design. Preserve the entire remaining animal—closed muzzle, head, crest, high neck, feathered body, colouring, leg positions and tail—as well as pose, human scale figure, ground, lighting, composition and painted treatment. No other redesign. Same landscape 3:2 format. No text or labels.",
+              "attached_references": [
+                "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+              ],
+              "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+              "reference_role": "Entire v2 as edit target, before the excessive talon pass; only front feet change.",
+              "status": "generated",
+              "review_status": "awaiting_creator_review",
+              "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-0ea8524d-90ea-415f-b024-e201018ff449.png",
+              "sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+              "dimensions": [
+                1536,
+                1024
+              ],
+              "title": "Feathered heavyweight · front paws",
+              "description": "Both front feet are now broad, compact paws with rounded toes, furred tops and only short claw tips. The sturdy legs, feathered body, closed muzzle, pose and rear feet retain their established design.",
+              "assistant_review": "Compared with v2 edit source and v3 feedback: both front feet now read clearly as padded mammalian paws, with rounded grouped toes and short claw tips. Forelegs blend into furred wrists; feet are grounded and coherent. Head, crest, feather mantle, torso, rear feet, four-limb arrangement, scale figure, lighting and composition retained. No long grasping digits or hooked talons remain at the front.",
+              "completed_at": "2026-11-15T21:18:19.649856+00:00",
+              "history": [
+                {
+                  "code": "M21-23",
+                  "original_position": 2,
+                  "version": 3,
+                  "stage": "reference_revision",
+                  "file": "m21-23-feathered-heavyweight-v3.png",
+                  "prompt": "Edit the attached Breachline feathered heavyweight reference. Change ONLY BOTH FRONT FEET / CLAWED FOREHANDS at lower left and lower centre: give them a clearly more claw-like, raptorial structure, with distinct powerful articulated digits and substantially longer, sharply curved keratin talons. The claws should read as functional grasping/raking weapons, organically rooted in the toes, with robust bases and tapering hooked tips. Keep their scale proportionate to this enormous animal, maintain believable wrist-to-digit connections and weight-bearing ground contact. Do not just lengthen rounded toenails; make the forefeet's overall shape more clearly a powerful claw. The two rear feet on the right remain unchanged. Preserve the revised muscular forelegs above the wrists, all four leg positions, body, feather mantle, crest, closed muzzle, neck, tail, pose, scale figure, ground, colours, light, framing and painted treatment. No extra digits or limbs, no mouth change, no dangling mouthparts. Same landscape 3:2 format, no text or labels.",
+                  "attached_references": [
+                    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+                  ],
+                  "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+                  "reference_role": "Entire M21-23 v2 as edit target; only front feet change.",
+                  "status": "generated",
+                  "review_status": "awaiting_creator_review",
+                  "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-11454990-ad5f-4e25-8e5b-3b1098f41b54.png",
+                  "sha256": "f6a679a3bd2501f6bbd5ef541f7080d1552f2612b6e72395b9f33d66584aeb5e",
+                  "dimensions": [
+                    1536,
+                    1024
+                  ],
+                  "title": "Feathered heavyweight · front claws",
+                  "description": "Both front feet now form pronounced grasping claws, with distinct jointed digits and long hooked talons. The revised muscular legs, feathered body and closed muzzle remain, while the rear feet retain their earlier shape.",
+                  "assistant_review": "Visually compared with v2: both front feet now have elongated articulated digits and markedly longer curved talons. The wrists connect coherently, claw bases and tips are readable, and the feet remain grounded. Rear feet, four-legged support, muscular upper forelegs, face, feather mantle, crest, scale figure, pose and composition remain recognizable and unchanged in design. No gross mouthparts or extra limbs.",
+                  "completed_at": "2026-11-15T21:11:15.007292+00:00",
+                  "history": [
+                    {
+                      "code": "M21-23",
+                      "version": 2,
+                      "file": "m21-23-feathered-heavyweight-v2.png",
+                      "cell": "top middle",
+                      "rect": [
+                        0.3333333333333333,
+                        0,
+                        0.3333333333333333,
+                        0.5
+                      ],
+                      "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: TOP MIDDLE, the tall four-legged feathered animal with an elevated neck, orange/slate/cream crest and mantle, and a newly corrected short closed muzzle. Revise its LEGS. Explore a more convincing powerful support structure: stronger muscular shoulders and thighs, clearly articulated elbows and hocks, shorter sturdier lower legs and broad compact padded feet with short stout claws. Slightly flexed joints should show how it can stride and bear weight; avoid the old straight thin-looking columns and splayed fingerlike toes. Four coherent legs with readable origins, joints and planted feet, no extra limbs. Keep the high neck and overall tall presence, its solid compact CLOSED face, crest, layered feather covering and colours. Do not restore dangling mouthparts. The leg treatment is the revised design; the rest should remain recognizably the same animal.",
+                      "stage": "reference_revision",
+                      "status": "generated",
+                      "attached_references": [
+                        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+                      ],
+                      "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+                      "reference_role": "Edit target; selected cell only.",
+                      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-901d0d82-ab09-4fda-bc5a-3ffab07e8f10.png",
+                      "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+                      "dimensions": [
+                        1536,
+                        1024
+                      ],
+                      "title": "Feathered heavyweight · revised legs",
+                      "original_position": 2,
+                      "description": "The feathered animal now stands on more muscular legs, with clearer elbows and hocks, shorter lower limbs and compact feet. Its high neck, crest and corrected closed muzzle remain; this is a proposed interpretation of the revised leg structure.",
+                      "assistant_review": "Checked four connected load-bearing legs, bent elbows and hocks, shorter sturdy lower limbs and feet contacting ground. Closed muzzle, high neck, crest and feather colour identity retained; no rejected mouth appendages.",
+                      "review_status": "awaiting_creator_review",
+                      "completed_at": "2026-11-15T20:59:42.201939+00:00"
+                    }
+                  ],
+                  "manifest": "heavyweight-front-claws-round9-manifest.json"
+                }
+              ],
+              "manifest": "heavyweight-front-paws-round10-manifest.json"
+            }
+          ],
+          "manifest": "heavyweight-bear-claws-round11-manifest.json"
+        },
+        {
+          "code": "M21-26",
+          "version": 2,
+          "file": "m21-26-mane-heavyweight-v2.png",
+          "cell": "bottom middle",
+          "rect": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5
+          ],
+          "prompt": "Create a single full-body revised Breachline animal reference painting, landscape 3:2, 1536 × 1024, on warm ivory with a little natural ground and one small plain adult human at a safe distance for scale. Use ONLY the specified cell of the attached six-animal sheet as the edit target; isolate that animal into this standalone painting and ignore all other cells. Preserve its recognizable identity, proportions, covering, colours, pose and scale except for the requested change. All feet and tail entirely visible with generous breathing room. Traditional oil/acrylic fantasy art, selective visible brushwork, matte materials, coherent readable daylight; no photoreal texture noise, uniform microdetail or glossy toy finish. No labels, text, framing, equipment, combat, gore or new mouth appendages.\nTARGET: BOTTOM MIDDLE, the long-bodied russet/slate/cream animal with a small mammalian face, sturdy walking limbs, thick balancing tail and broad winglike membranes along its flanks. REMOVE the wings completely: remove all membranes, wing spars, projecting wing fingers and pointed batlike side silhouettes. Replace that exact shoulder/upper-flank region with a substantial natural MANE of long layered fur, growing from the neck and shoulders and sweeping back/down over the upper ribs. Make the mane a handsome weighty collar and flank mantle, not a wing shape made of hair. Retain the liked head and muzzle, torso length, belly, tail, underlying four walking legs, colour family and alert pose. Expose enough shoulder/leg separation to understand the anatomy. The output must have ordinary solid furry flanks beneath the mane, with absolutely no wing remnants or gliding membranes.",
+          "stage": "reference_revision",
+          "status": "generated",
+          "attached_references": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-heavyweight-exercise-e.png"
+          ],
+          "reference_sha256": "91d882991431c79f2518586979b913159deb685a1cdac6414f54ad1393fa89d4",
+          "reference_role": "Edit target; selected cell only.",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-f8e1f27f-4074-40fc-856e-11f65ea4ac45.png",
+          "sha256": "bd36cbb67803a198c1badc8c5e59cecafa6af7b45501592d9121f62fa9feeac7",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "title": "Mane heavyweight · wings removed",
+          "original_position": 5,
+          "description": "A broad layered mane now sweeps across the neck, shoulders and upper flanks where the wings were. The long body, small mammalian face, thick tail and walking limbs remain, with no wing membranes or spars; its eventual name and ecology are open.",
+          "assistant_review": "Checked complete removal of wing membranes, spars and pointed wing silhouettes. Mane occupies shoulder and upper-flank area, and four walking legs remain coherent, including the raised near forefoot. Head, long body, tail and colour family retained.",
+          "review_status": "awaiting_creator_review",
+          "completed_at": "2026-11-15T20:59:42.201939+00:00"
+        }
+      ],
+      "latest_revision_manifest": "heavyweight-bear-claws-round11-manifest.json",
+      "latest_revision_gallery": "heavyweight-preferred-revisions-review.html",
+      "latest_revision_brief": 16,
+      "current_output_files": [
+        "m21-22-highneck-v2.png",
+        "m21-23-feathered-heavyweight-v5.png",
+        "m21-26-mane-heavyweight-v2.png"
+      ],
+      "current_stage": "reference_revisions",
+      "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+      "finalization_reference": "M21-23",
+      "finalization_version": 5,
+      "chosen_for_finalization_codes": [
+        "M21-23"
+      ]
+    },
+    {
+      "code": "M22",
+      "card_id": "gravelmouth",
+      "title": "Gravelmouth",
+      "file": "gravelmouth.png",
+      "status": "generated",
+      "review_status": "pending_creator_review",
+      "prompt": "An original Breachline painting of the established Gravelmouth grazing aquatic plants in the clear shallow margin of a broad lake. The attached selected G2 cell 3 is the strict anatomy and covering reference. Preserve this extra-large, heavy broad swimmer: rounded smooth blunt head with soft broad lips, small dark eyes, mottled olive-gold overlapping scales over the wide body, short steering flippers, muscular tapering rear body continuing to a modest horizontal tail fin. No whisker curtain, filtering ornaments, tusks, frills or predatory teeth. Show ONE animal diagonally across the painting from its visible head in the left foreground to its tapering rear at upper right, viewed from the shore at a slightly raised angle through clear calm shallow water. It glides slowly, head submerged just enough to gather a stem of waterweed in its blunt mouth; a few trailing strands, closed peaceful mouth, unforced natural feeding. The rounded upper back barely breaks the surface; short flippers remain visible through the water in coherent positions, the powerful tail curves gently without becoming snake-like. Clear contact between animal and water, small displaced ripples, submerged plants rooted in the silty bed, distant reeds and a low shore. Bright but soft morning daylight, warm gold-green scales beneath cool blue-green water with broad broken reflections. Treat its mass with grace rather than horror, no human diagrams and no boats required. Landscape 1536 × 1024, one finished original fantasy card painting, no text, lettering, labels, borders, signature or watermark. Traditional oil and acrylic painting with measured visible brushwork and selective detail. Readable focal forms, naturally matte skin, wool and stone; restrained convincing metal reflections. Secondary figures and backgrounds suggested through broad value shapes and softer edges, never uniformly crisp. One coherent lighting idea with plausible reflected light in shadows. No photo, 3D render, glossy cartoon, pores or decorative surface noise.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/gravelmouth-g2-cell3.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-a8b85318-b1bb-4657-8f14-0782f348be3a.png",
+      "sha256": "237736e451540755c77ff790a88953a31ec4f2e14de81d3b968108dca4672bd5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "A Gravelmouth grazes waterweed in a clear lake margin. Light through the shallows makes its heavy body and short steering flippers visible while it moves gently through the water.",
+      "assistant_review": "Checked selected G2 cell 3 blunt head, broad body, short flippers, tapered rear and tail, mouth-weed contact, waterline and absence of filtering ornaments.",
+      "alignment": "Genesis",
+      "brief_revision": 1,
+      "version": 1
+    }
+  ],
+  "reference_crops": [
+    {
+      "file": "foldstride-bp1-cell1.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/creature-body-plans-2026-11-13/01-body-plans-weight-and-motion.png",
+      "x": 1,
+      "y": 1,
+      "cell": 1,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/foldstride-bp1-cell1.png",
+      "width": 511,
+      "height": 511
+    },
+    {
+      "file": "salt-flat-migrant-g2-cell5.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+      "x": 512,
+      "y": 530,
+      "cell": 5,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/salt-flat-migrant-g2-cell5.png",
+      "width": 456,
+      "height": 420
+    },
+    {
+      "file": "gravelmouth-g2-cell3.png",
+      "source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/great-animal-selections-2026-11-13/g2.png",
+      "x": 992,
+      "y": 210,
+      "cell": 3,
+      "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/references/gravelmouth-g2-cell3.png",
+      "width": 544,
+      "height": 300
+    }
+  ],
+  "completed_at": "2026-11-15T03:51:38.502338+00:00",
+  "claim_status": "released_generation_complete",
+  "gallery": "index.html",
+  "creator_approval": "M2 v7 final; other 21 pending",
+  "lore_approval": "M2 individual identity and requested presentation established; no new species-wide lore or named location",
+  "installation_status": "not_installed",
+  "publishing_status": "not_published",
+  "review_record": "review-record.json",
+  "brief_status_update_sha256": "e9d34b4538674d360346a1f5be13ebd5cdde78584b522eb9d9602ddc80f2bf1a",
+  "brief_status_update_note": "M20/M21 six-option animal lineups generated for revision 7; awaiting selections.",
+  "latest_creator_feedback": "animal-feedback-round12.json",
+  "watcher_status": "paused_by_creator",
+  "review_revision": 15,
+  "source_history": [
+    {
+      "revision": 1,
+      "sha256": "85f1dc93b09608d9aa377da22a57adcd8fa525c602c6f37e2f4163a603bd9e5b",
+      "snapshot": "BRIEFS-source-revision-1.md"
+    },
+    {
+      "revision": 2,
+      "sha256": "ceff2aaa87b1be888e3c6fd3ad449baa2a752ea3b9f2e2e800d06aa4591de2db",
+      "snapshot": "BRIEFS-source-revision-2.md"
+    },
+    {
+      "revision": 3,
+      "sha256": "df714d7b01af734f391ad12cc985f0b093aca8bab28022cc4a7308d36ac4be34",
+      "snapshot": "BRIEFS-source-revision-3.md"
+    },
+    {
+      "revision": 4,
+      "sha256": "17cc3b4b712dc1eb46e2ba192be87e54a855cd7a2b08743e64a91c5b49ccc575",
+      "snapshot": "BRIEFS-source-revision-4.md"
+    },
+    {
+      "revision": 5,
+      "sha256": "cd4b2eee1f8ea4d8ec84a1105869a49b06c46ae0838ba8e7d0bcfe2ea3dc6177",
+      "snapshot": "BRIEFS-source-revision-5.md"
+    },
+    {
+      "revision": 6,
+      "sha256": "0c7f12ee89b7587f8a55bfb40100ca897850a7e31348b8a452be2d544b8b8eb7",
+      "snapshot": "BRIEFS-source-revision-6.md"
+    }
+  ],
+  "latest_retries_completed_at": "2026-11-15T05:58:50.991810+00:00",
+  "retry_gallery": "retry-review.html",
+  "active_lineup_manifest": "heavyweight-exercise-round6-manifest.json",
+  "animal_lineup_gallery": "heavyweight-new-attempts-review.html",
+  "mouth_exploration_manifest": "animal-mouths-round4-manifest.json",
+  "latest_animal_gallery": "heavyweight-preferred-revisions-review.html",
+  "latest_animal_completed_at": "2026-11-15T21:45:02.905330+00:00",
+  "updated_at": "2026-11-15T22:07:24.279248+00:00",
+  "active_reference_manifest": "heavyweight-bear-claws-round11-manifest.json",
+  "finalization_handoff": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt"
+}

@@ -122,7 +122,7 @@ A soldier marches away across a misty barrow field at evening, unaware of a sigi
 
 At the head of a long table after midnight, a striking Ashen Court noblewoman sits with a wine glass, the other chairs empty and the candles low. She is glamorous and confident. Small signs are all that tell what she is: the candlelight doesn't warm her skin, and the dark window behind her shows no reflection. No fangs, no blood. Vampires are rare and subtle in this world.
 
-**Approved revision:** Preserve the original hostess's face, pose, wineglass and midnight supper scene. Apply the NSFW skill's fuller-bust/slender-frame balance with a low lace-edged gathered garnet-silk bodice, fine straps and lowered velvet sleeves, retaining her long gown and subtle vampire cues. The creator approved this updated painting on 2026-11-10.
+**Approved revision:** Preserve the original hostess's face, pose, wineglass and midnight supper scene. Preserve the approved fuller-bust/slender-frame balance with a low lace-edged gathered garnet-silk bodice, fine straps and lowered velvet sleeves, retaining her long gown and subtle vampire cues. The creator approved this updated painting on 2026-11-10.
 
 ## Fervor
 

@@ -1,0 +1,338 @@
+{
+  "date": "2026-11-14",
+  "scope": "Fresh detailed Veilwing anatomy study requested after repeated scene revisions drifted.",
+  "status": "VA4 definitive reference and S13-06-L1 card painting approved; supporting studies retained.",
+  "identity_references": [
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+    "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+  ],
+  "latest_decisions": {
+    "surfaces": 4,
+    "body": "Long slender uninterrupted harness-bearing torso to one true rump; VA4 exact proportions authoritative.",
+    "front_wings": "Near left root between first two buckles; far right opposite at same shoulder station. Matched huge wings and hooks.",
+    "dorsal_sails": "Two separately rooted mobile broad sails, not fused torso or extra side wings.",
+    "terminal_fans": 5,
+    "tail_confirmation": "Creator explicitly chose to preserve approved picture instead of old four-tail note.",
+    "colour": "VA4 exact quiet original R2-derived colouring and painted handling."
+  },
+  "proportion_status": "Follow approved VA4 exact visual proportions; compact-body and old ratio targets superseded.",
+  "items": [
+    {
+      "code": "VA1",
+      "file": "veilwing-top-attachment-study.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d404781-b4cf-4778-94c1-158fdc27027c.png"
+      ],
+      "prompt": "Precise local cleanup of this top-view anatomy sheet only. The FOUR correct tails are the four long stems connected to the rump, each ending in a tuft and labeled T1, T2, T3, T4. Keep all four complete tails and all four labels unchanged. Remove ONLY the two extra short bare whiskerlike filaments dangling between those correct stems just below the rump: one fades to a bare end near x680,y690, and the other fades to a bare end near x850,y690. These two short bare lines are unwanted extra tails. Replace them with the plain paper background. Do not touch any of the four long tufted streamers. Preserve every other part: full symmetrical wings and both hooked tips, shared shoulder line, body, D1/D2 edge-on root indications, harness, colours, layout and all labels. No extra changes.",
+      "draft_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d404781-b4cf-4778-94c1-158fdc27027c.png",
+      "original_prompt": "Create a fresh painted anatomical reference of the exact Veilwing in the two original reference paintings. Use those originals for head, leaf-feather covering, hooked wing shape, muted warm ivory/ochre/dusty lavender colours and plain brown leather equipment. Reset to their restrained saturation and oil/acrylic handling. Do not copy unclear original wing attachments. Pale warm-grey paper, soft neutral light, no landscape, no drama. One large view only, not a crowded multi-panel sheet. The anatomy is substantial, graceful and huge: a full gently elongated torso with a short integrated neck, not a skinny snake. Body from snout to rump is SHORTER than one fully extended shoulder wing. Each of the FOUR tail streamers is LONGER than the snout-to-rump body. Short body, enormous matched shoulder wings, very long fine tails are the visual proportion relationships; do not shrink the appendages to fit. Exactly two lateral shoulder wings, two separately rooted back sails, and four tufted tails. Do not add legs or extra fins. The paired shoulder wings share the same transverse root station at the front third of the body. Each is a mirror counterpart with the same broad membrane, scalloped trailing edge and hooked terminal point. Back sail D1 is rooted at mid-back, behind the shoulders; D2 has its own more posterior root before the rump. Both can lean sideways, with free edges not fused to torso. Harness lightly indicated over solid torso only, no strap through a moving root. Every tail is a slender continuous stem from the rump with one small leaflike terminal tuft, and there are EXACTLY FOUR, never five. No bare extra filament.\nTRUE ORTHOGRAPHIC TOP VIEW, head at top center, rump below it, four tails trailing downward. The body occupies only about ONE THIRD of the sheet HEIGHT. Its two huge fully spread shoulder wings reach far to the left and right in a matched symmetrical pair, each root-to-hook visibly longer than the body. Both wing roots must sit on the SAME horizontal shoulder line. Show BOTH complete hooks; no cropping. In this view the two vertical dorsal sails are seen EDGE-ON as two distinct narrow root ridges arranged front-to-back along the spine; do not spread them into an extra wing pair. Mark these root locations D1 and D2. Draw the four tails extending much farther below the rump than the body's own length, fanned just enough to distinguish four fine stems and four modest tufts. Four tails labeled T1, T2, T3, T4 at their terminal tufts, no fifth. Keep adequate empty margins; scale the WHOLE creature down uniformly if needed, not the wings or tails. A thin transverse guide joins the opposing shoulder roots, with small dots on the roots; label 'SHARED SHOULDER LINE'. A thin body axis helps distinguish spine, sail bases and rump. Concise outside labels only: 'VA1 • TOP / ROOT MAP', 'LEFT', 'RIGHT', 'D1', 'D2', 'TAIL ROOTS', 'T1', 'T2', 'T3', 'T4'. No numerical ratio chart. The labels must point to correct anatomical sides: in top view with head up, the animal's left is page-left. Painted body and wings, delicate technical leaders, clear readable anatomy.",
+      "original_refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-6eae9266-5eaf-4fc2-ade8-bbcd25924e7a.png",
+      "generation_attempts": [
+        {
+          "prompt": "Create a fresh painted anatomical reference of the exact Veilwing in the two original reference paintings. Use those originals for head, leaf-feather covering, hooked wing shape, muted warm ivory/ochre/dusty lavender colours and plain brown leather equipment. Reset to their restrained saturation and oil/acrylic handling. Do not copy unclear original wing attachments. Pale warm-grey paper, soft neutral light, no landscape, no drama. One large view only, not a crowded multi-panel sheet. The anatomy is substantial, graceful and huge: a full gently elongated torso with a short integrated neck, not a skinny snake. Body from snout to rump is SHORTER than one fully extended shoulder wing. Each of the FOUR tail streamers is LONGER than the snout-to-rump body. Short body, enormous matched shoulder wings, very long fine tails are the visual proportion relationships; do not shrink the appendages to fit. Exactly two lateral shoulder wings, two separately rooted back sails, and four tufted tails. Do not add legs or extra fins. The paired shoulder wings share the same transverse root station at the front third of the body. Each is a mirror counterpart with the same broad membrane, scalloped trailing edge and hooked terminal point. Back sail D1 is rooted at mid-back, behind the shoulders; D2 has its own more posterior root before the rump. Both can lean sideways, with free edges not fused to torso. Harness lightly indicated over solid torso only, no strap through a moving root. Every tail is a slender continuous stem from the rump with one small leaflike terminal tuft, and there are EXACTLY FOUR, never five. No bare extra filament.\nTRUE ORTHOGRAPHIC TOP VIEW, head at top center, rump below it, four tails trailing downward. The body occupies only about ONE THIRD of the sheet HEIGHT. Its two huge fully spread shoulder wings reach far to the left and right in a matched symmetrical pair, each root-to-hook visibly longer than the body. Both wing roots must sit on the SAME horizontal shoulder line. Show BOTH complete hooks; no cropping. In this view the two vertical dorsal sails are seen EDGE-ON as two distinct narrow root ridges arranged front-to-back along the spine; do not spread them into an extra wing pair. Mark these root locations D1 and D2. Draw the four tails extending much farther below the rump than the body's own length, fanned just enough to distinguish four fine stems and four modest tufts. Four tails labeled T1, T2, T3, T4 at their terminal tufts, no fifth. Keep adequate empty margins; scale the WHOLE creature down uniformly if needed, not the wings or tails. A thin transverse guide joins the opposing shoulder roots, with small dots on the roots; label 'SHARED SHOULDER LINE'. A thin body axis helps distinguish spine, sail bases and rump. Concise outside labels only: 'VA1 • TOP / ROOT MAP', 'LEFT', 'RIGHT', 'D1', 'D2', 'TAIL ROOTS', 'T1', 'T2', 'T3', 'T4'. No numerical ratio chart. The labels must point to correct anatomical sides: in top view with head up, the animal's left is page-left. Painted body and wings, delicate technical leaders, clear readable anatomy.",
+          "refs": [
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+            "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d404781-b4cf-4778-94c1-158fdc27027c.png",
+          "file": "history/top-extra-filaments.png",
+          "status": "superseded_generation_defect",
+          "reason": "Four tufted tails plus two stray bare filaments; removed locally.",
+          "sha256": "698df9c08e30580dc986ac70543744e1b62fe965372d004e72b110fb3119cec7"
+        }
+      ],
+      "title": "Top view — roots and matched wings",
+      "description": "Top view of the shared shoulder line, matched main wings and separate D1/D2 positions along the spine. Both hooks and four complete tail streamers are visible; the back sails are intentionally edge-on.",
+      "sha256": "433e8b3685f8fb7a0271740472f366709581e46b86370fbf7b74865d7f8fee81",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "review_status": "wings_liked_body_revision_requested",
+      "generator": "built-in image_gen",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-2d404781-b4cf-4778-94c1-158fdc27027c.png",
+          "sha256": "698df9c08e30580dc986ac70543744e1b62fe965372d004e72b110fb3119cec7"
+        }
+      ],
+      "creator_feedback": "Wings good; body too snubby/short. Do not use as the current body reference."
+    },
+    {
+      "code": "VA2",
+      "file": "veilwing-side-body-study.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+      ],
+      "prompt": "Create a fresh painted anatomical reference of the exact Veilwing in the two original reference paintings. Use those originals for head, leaf-feather covering, hooked wing shape, muted warm ivory/ochre/dusty lavender colours and plain brown leather equipment. Reset to their restrained saturation and oil/acrylic handling. Do not copy unclear original wing attachments. Pale warm-grey paper, soft neutral light, no landscape, no drama. One large view only, not a crowded multi-panel sheet. The anatomy is substantial, graceful and huge: a full gently elongated torso with a short integrated neck, not a skinny snake. Body from snout to rump is SHORTER than one fully extended shoulder wing. Each of the FOUR tail streamers is LONGER than the snout-to-rump body. Short body, enormous matched shoulder wings, very long fine tails are the visual proportion relationships; do not shrink the appendages to fit. Exactly two lateral shoulder wings, two separately rooted back sails, and four tufted tails. Do not add legs or extra fins. The paired shoulder wings share the same transverse root station at the front third of the body. Each is a mirror counterpart with the same broad membrane, scalloped trailing edge and hooked terminal point. Back sail D1 is rooted at mid-back, behind the shoulders; D2 has its own more posterior root before the rump. Both can lean sideways, with free edges not fused to torso. Harness lightly indicated over solid torso only, no strap through a moving root. Every tail is a slender continuous stem from the rump with one small leaflike terminal tuft, and there are EXACTLY FOUR, never five. No bare extra filament.\nTRUE SIDE PROFILE facing left. One large complete creature on the sheet. The snout-to-rump body spans roughly the left-center THIRD of the canvas width; the FOUR long fine tails occupy the right half and each is longer than that complete body. The torso is deep enough to look weighty, about a quarter of snout-to-rump length, with a gentle belly and a clear tapered rump; not an extended needle. Show the near shoulder wing in a downstroke as a lightly painted TRANSPARENT anatomical overlay, so its actual broad root at the front shoulder, full continuous body beneath, and real wing hook are traceable. The wing from shoulder to hook is longer than the body and extends far down, fully within the sheet. The far shoulder wing lies exactly opposite it and is mostly occluded in pure side projection: indicate its shared root with a small labeled point rather than adding a rear-origin wing. Opaque D1 and D2 stand separately above the body with broad swept membranes in the original design's proportions; two different attachment bases on the spine, mid-back and rear-back, with a readable small gap/free edge between sail and rump. Preserve their beautiful full membranous shapes, not little shark fins. Show a curved thin arrow by each sail base to suggest sideways pivot, without changing the anatomy or adding hardware. All FOUR tails originate at the rump and end in four distinct little tufts; count T1,T2,T3,T4 from top to bottom. Original brown leather harness in thin outline, routed clear of roots. Pale neutral background, no shadows on distant terrain. Small concise labels outside body only: 'VA2 • SIDE / BODY & SAILS', 'SHARED SHOULDER ROOTS', 'D1', 'D2', 'FREE EDGE', 'RUMP', 'T1', 'T2', 'T3', 'T4', 'SIDE WING • TRANSPARENT OVERLAY'. No ratio table, no duplicate body or exploded parts. Prioritize full wing/tail length and a coherent robust torso.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-bcf1534b-ccfe-4fbc-beb2-a3953568a496.png",
+      "title": "Side view — body, sails and harness",
+      "description": "Side view of the longer torso, separate dorsal-sail bases and free edges. A transparent wing overlay exposes the body and tack beneath it; the four tails remain continuous from the rump.",
+      "sha256": "25ebc65445a4055002a117b4e9b08e8d533f4dbc66552625830f57aeb2f3bf24",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "review_status": "wings_liked_body_revision_requested",
+      "generator": "built-in image_gen",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+          "sha256": "d253abe8437aa3d4101f27b8454f09c9346c1b5699eeab285c09588b96d6c590"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+          "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282"
+        }
+      ],
+      "creator_feedback": "Wings good; body too snubby/short. Do not use as the current body reference."
+    },
+    {
+      "code": "VA3",
+      "file": "veilwing-angled-flight-study.png",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-bcf1534b-ccfe-4fbc-beb2-a3953568a496.png"
+      ],
+      "prompt": "Create a NEW single-view anatomy study, not another edit of the progressively oversaturated scene paintings. Images 1 and 2 are the original liked creature appearance/colour/harness. Image 3 is the corrected side-body and sail study: keep its substantial longer body and FOUR tufted tails. Use quiet muted ochre, warm ivory and dusty lavender with soft neutral lighting and original painterly oil/acrylic handling. Pale warm-grey paper, no landscape. One large clear figure, plenty of margin for wings and long tails.\nShow this exact creature from a FRONT-LEFT THREE-QUARTER angle, slightly BELOW the shoulder plane, during a broad downstroke. Choose a sufficiently frontal angle that BOTH front shoulder wing roots and BOTH hooked tips can be inspected. The right/far wing is behind the left/near wing in depth but its full terminal hook MUST BE VISIBLE, separated in projection by this camera angle. It is NOT shorter or a differently shaped fin. Left and right front wings are anatomical mirror counterparts of the same enormous broad tapered planform, scalloped trailing edge and curved terminal hook. Each actual shoulder-to-tip length is roughly the snout-to-rump body length or a little greater. Both attach at the SAME transverse station on opposite sides of the FRONT shoulder, not one at the shoulder and the other under the rump. A thin dashed guide can join the two roots through the shoulder volume. Do not invent a wing under the jaw, on top of the neck or at midbody.\nKeep the longer full torso, short integrated neck, continuous gently shaded belly and tapering rump; body is tucked under the sails but its outline is independently readable. EXACTLY TWO dorsal sails are rooted in sequence on the upper back: D1 rooted around mid-back behind the shoulder pair, D2 rooted farther aft before the rump. Both are the original large broad swept leaflike membranes, D1 larger and D2 smaller. For this inspection pose, cant D1 a little to one side so its base and the separate base of D2 can be followed; give them readable free edges over the body without inventing hinges, fins or extra membranes. They may overlap, but do not fuse their edges into the rump. Four flight surfaces total, no fifth.\nEXACTLY FOUR long thin tail streamers emerge from the true rump, each continuously attached, each longer than snout-to-rump, ending in one modest leaflike tuft. Fan them just enough to count four and fit all tips. No extra bare tail or giant decorative tuft. Head and feelers exactly match the original species. Small original brown leather harness follows solid body corridors and stays clear of moving wing and sail roots, with no riders or cargo.\nUse concise margin labels with careful thin leaders: 'VA3 • ANGLED FLIGHT / BOTH TIPS VISIBLE', 'LEFT FRONT', 'RIGHT FRONT', 'SHARED SHOULDER', 'D1', 'D2', 'FOUR TAILS'. One small leader near each wing's terminal hook shows that it has a matched curved tip. Do not label a dorsal sail as RIGHT FRONT. No additional small diagrams, no extra views, no ratios printed, no shadows or scenery. This is an inspectable structural reference for future paintings, not a dramatic scene.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-448990ee-627d-432f-ae50-c52134c19b04.png",
+      "title": "Angled flight — both hooked tips",
+      "description": "An angled downstroke chosen to expose both shoulder-wing tips. The near and far wings are counterparts at the same shoulder station, with two dorsal sails and four tails visible.",
+      "sha256": "9be6cba068f4408a8e228dbd7ae540c374ad6cb5d3cb9e9da1138d19f63199d0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "review_status": "wings_liked_body_revision_requested",
+      "generator": "built-in image_gen",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+          "sha256": "d253abe8437aa3d4101f27b8454f09c9346c1b5699eeab285c09588b96d6c590"
+        },
+        {
+          "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png",
+          "sha256": "da6c4296e1d1e8e17d93aeee06b52c8884e7f81d57c6c451c7a95bd1cf130282"
+        },
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-bcf1534b-ccfe-4fbc-beb2-a3953568a496.png",
+          "sha256": "25ebc65445a4055002a117b4e9b08e8d533f4dbc66552625830f57aeb2f3bf24"
+        }
+      ],
+      "creator_feedback": "Wings good; body too snubby/short. Do not use as the current body reference."
+    },
+    {
+      "code": "VA4",
+      "canonical_code": "S13-06-VA4",
+      "base": "S13-06",
+      "card": 221,
+      "title": "Approved reference — long slender body",
+      "file": "veilwing-r2-long-body-reference.png",
+      "kind": "reference",
+      "description": "The creator’s definitive selected reference: one long slender body, a complete matched shoulder-wing pair, two dorsal sails, the liked harness and five flowing terminal fans. Preserve this exact image as the authority for future depictions.",
+      "prompt": "Edit this ORIGINAL R2 painting into a corrected creature reference. This exact image is the authority for the long slender character, colours, head, harness, tail texture and quiet painted atmosphere. Do not substitute the short thick drake-like body of the later studies. Preserve the original muted warm ivory, dusty lavender and ochre, soft coherent light and oil/acrylic paint handling. Ancient strength and mystery: a slender, long, immense creature with enormous wings and gently flowing tails.\n\nCORRECT THE CONTINUOUS BODY FIRST. In the original, the slender torso carrying the harness seems to continue right beneath the middle sail, while a different branch below it carries the tails too early. These must be ONE body, not a fork. Follow the beautiful long slender contour of the harness-bearing torso. Extend that single continuous body beneath the big middle/front dorsal sail toward its lower trailing pointed tip, ending just BEFORE that tip, not past it. In the original coordinates, the real rump should end near x900,y490, approaching but staying short of the middle sail's lower point near x970,y530. This is a broad spatial guide, not a contour to trace. Keep the body elegant and slim with an uninterrupted subtle shaded underside; do not make a fat belly or a long thin neck. No second torso hanging below it. The sail stays a distinct mobile membrane above that body with its own free edge and root.\n\nTAILS: remove the premature tail-bearing branch beneath midbody. All FOUR tails now grow naturally from the single true posterior end of the lengthened torso. Preserve what is beautiful in R2: each tail begins with a substantial softly feathered taper, becomes a very long thin supple stem, and opens into a modest leaflike terminal fan. Four complete tails, four fans, no additional bare filaments. They drift in graceful different curves as if in a gentle breeze, not straight wires or identical ribbons. Make them a little longer than R2's tails; their total curving length is at least comparable to the NEW long snout-to-rump body. Never shorten them to fit the page. Pull back the framing uniformly enough to fit every tip with breathing room while preserving the longer body and enormous wing scale.\n\nADD THE MISSING NEAR LEFT SHOULDER WING. We are viewing the left side. The visible shoulder between the FIRST TWO leather buckles nearest the head is currently bare. A huge LEFT front wing must grow from that gap, from the lateral shoulder beneath the top leather connector. Keep the original existing downstroking RIGHT/front wing on the far side; the creator likes it. The new left wing attaches directly opposite that existing right wing at the SAME shoulder cross-section, not from the middle or rear of the body. It is the same actual anatomical wing type: very large broad leaf-feather membrane, curved leading edge, scalloped trailing edge and long slender hooked terminal point. Let the near left wing descend into the lower foreground, partly overlapping the existing far/right wing naturally, while keeping BOTH hooked tips visibly separated. Preserve the original right wing's shape; do not replace it with a short triangle. Keep the harness clear of the moving root; no strap through the membrane.\n\nPreserve BOTH original dorsal sails, their broad swept shapes and their separate mobile back attachments. This completes exactly FOUR flight surfaces: left front, right front, front dorsal sail, rear dorsal sail. No fifth membrane, neck flap or belly fin. Keep the original face, feelers, plain leather equipment and natural soft colour. Retain the simple original distant ground/sky only as a quiet backdrop, with no huge shadow or new buildings. No annotations, text or labels. This is the single long-bodied anatomical reference from R2, not a compact new species.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+      ],
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png",
+      "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+      "review_status": "accepted_reference_image",
+      "creator_approval": "Yes. Finally. This is the reference. This is how it is supposed to look.",
+      "tail_confirmation": "Preserve the approved picture",
+      "terminal_fan_count": 5,
+      "generator": "built-in image_gen",
+      "live_card_installed": false
+    },
+    {
+      "code": "VA5",
+      "title": "Approved body — attachment and continuity study",
+      "file": "veilwing-approved-anatomy-study.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png"
+      ],
+      "prompt": "Edit TEXT ONLY in this reference sheet. Replace the existing two-line label 'D2 BACK ATTACHMENT' at middle-right with the two-line label 'D2 FREE LOWER EDGE'. Keep the existing leader and dot. The dot is on the sail's free edge, not on its hidden root. Do not add any additional explanatory note or text anywhere. Preserve ALL five tail fans and every continuous stem exactly, without cutting, erasing, interrupting or relocating any line. Preserve the rest of the entire image and all other labels unchanged. Only replace those three words with the correct four words in the same label area.",
+      "draft_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png",
+      "brief_prompt": "Make a careful anatomy REFERENCE SHEET directly from the supplied approved painting, preserving its exact creature silhouette and proportions. The supplied painting is the CREATOR-APPROVED anatomical source of truth. Match this exact long slender animal, not the short thick earlier study. Preserve its long continuous tapering torso from the shoulder harness to the true rump, four flight surfaces (two matched huge front shoulder wings and two distinct broad dorsal sails), face, feelers, muted ivory/ochre/dusty-lavender feather-scale covering, fitted plain brown leather harness, and FIVE flowing fanned tail streamers. The creator explicitly selected this picture's tail arrangement over the old four-tail instruction. Keep the tails' thicker feathered bases tapering into delicate supple stems and fans, gently drifting. Both front wings have matched curved hooks and attach opposite one another at the same front shoulder station; the visible near-left root is BETWEEN the first two buckles. The torso stays long and slender underneath the middle sail almost to its trailing lower tip, with no split body or premature tail-bearing branch. Original quiet painted oil/acrylic colour and neutral-warm light, no saturation increase.\nUse the SAME three-quarter side pose and the SAME full animal, with both wing hooks and all five terminal fans visible. Replace only the environment with pale warm-grey paper and add restrained, legible anatomical annotations in the margins. Do not redesign, shorten, thicken or restage the animal. Keep the image generous and wide enough for its entire long body, enormous wings and flowing tail arrangement; no clipped tips.\nThin precise leader lines identify: the near LEFT front wing root BETWEEN the first two buckles; the far RIGHT root directly opposite at the same shoulder station; the large front dorsal sail D1 and smaller posterior dorsal D2, each with its own back attachment and free edge; the single continuous torso under the sails; the true rump where the tail bases originate. A subtle dashed BODY AXIS traces head through the harness-bearing torso to the real rump, clarifying that it does not split into two bodies. Dashed lines are annotations, not extra anatomy. Do not expose bones or invent hinges. Keep the harness design intact and show its clearance from the moving roots.\nUse concise readable text only: 'VA5 • APPROVED BODY / ANATOMY', 'LEFT FRONT • BETWEEN BUCKLES', 'RIGHT FRONT • SAME SHOULDER', 'D1', 'D2', 'CONTINUOUS SLENDER TORSO', 'RUMP / TAIL BASES', 'FIVE FLOWING FANS'. No numerical proportion formula, no speculative new structure, no little alternative creature. Priority is faithful anatomy of this selected long elegant animal, ancient strength and mystery.",
+      "brief_refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png"
+      ],
+      "label_correction_attempt": {
+        "prompt": "Correct only an anatomical LABEL on this existing reference sheet. The callout at middle-right reading 'D2 BACK ATTACHMENT' incorrectly points to the exposed lower free edge of the rear sail. Replace those words with 'D2 FREE LOWER EDGE', keeping that same leader and dot on the same free edge. Add one small unobtrusive note in nearby blank margin: 'D2 ROOT HIDDEN BEHIND D1'. Do not draw a new root or move any anatomy to make it visible. The top projection sheet handles the hidden root location.\nPreserve ALL other words, every leader, the exact creature pixels/design, colours, slender body length, wings, harness, all five fan-ended tails and flowing strands, paper texture and framing. This is ONLY correction of a misleading callout, not a regenerated anatomical interpretation.",
+        "refs": [
+          "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png"
+        ],
+        "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4f541355-def9-4548-8402-d46e5eedc43c.png",
+        "reason": "Added explanatory note interrupted the upper tail stem; restart from original labelled sheet for text-only correction."
+      },
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-0dec36c0-091e-4e51-859c-8a94217c991e.png",
+      "generation_attempts": [
+        {
+          "file": "history/va5-original-label.png",
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png",
+          "prompt": "Make a careful anatomy REFERENCE SHEET directly from the supplied approved painting, preserving its exact creature silhouette and proportions. The supplied painting is the CREATOR-APPROVED anatomical source of truth. Match this exact long slender animal, not the short thick earlier study. Preserve its long continuous tapering torso from the shoulder harness to the true rump, four flight surfaces (two matched huge front shoulder wings and two distinct broad dorsal sails), face, feelers, muted ivory/ochre/dusty-lavender feather-scale covering, fitted plain brown leather harness, and FIVE flowing fanned tail streamers. The creator explicitly selected this picture's tail arrangement over the old four-tail instruction. Keep the tails' thicker feathered bases tapering into delicate supple stems and fans, gently drifting. Both front wings have matched curved hooks and attach opposite one another at the same front shoulder station; the visible near-left root is BETWEEN the first two buckles. The torso stays long and slender underneath the middle sail almost to its trailing lower tip, with no split body or premature tail-bearing branch. Original quiet painted oil/acrylic colour and neutral-warm light, no saturation increase.\nUse the SAME three-quarter side pose and the SAME full animal, with both wing hooks and all five terminal fans visible. Replace only the environment with pale warm-grey paper and add restrained, legible anatomical annotations in the margins. Do not redesign, shorten, thicken or restage the animal. Keep the image generous and wide enough for its entire long body, enormous wings and flowing tail arrangement; no clipped tips.\nThin precise leader lines identify: the near LEFT front wing root BETWEEN the first two buckles; the far RIGHT root directly opposite at the same shoulder station; the large front dorsal sail D1 and smaller posterior dorsal D2, each with its own back attachment and free edge; the single continuous torso under the sails; the true rump where the tail bases originate. A subtle dashed BODY AXIS traces head through the harness-bearing torso to the real rump, clarifying that it does not split into two bodies. Dashed lines are annotations, not extra anatomy. Do not expose bones or invent hinges. Keep the harness design intact and show its clearance from the moving roots.\nUse concise readable text only: 'VA5 • APPROVED BODY / ANATOMY', 'LEFT FRONT • BETWEEN BUCKLES', 'RIGHT FRONT • SAME SHOULDER', 'D1', 'D2', 'CONTINUOUS SLENDER TORSO', 'RUMP / TAIL BASES', 'FIVE FLOWING FANS'. No numerical proportion formula, no speculative new structure, no little alternative creature. Priority is faithful anatomy of this selected long elegant animal, ancient strength and mystery.",
+          "refs": [
+            "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png"
+          ],
+          "status": "superseded_annotation_error",
+          "reason": "D2 free lower edge labelled as attachment; text corrected.",
+          "sha256": "dde1f334881e23eb91647c84a8c3579aac88ca61984348ebaa636610023084c0"
+        },
+        {
+          "prompt": "Correct only an anatomical LABEL on this existing reference sheet. The callout at middle-right reading 'D2 BACK ATTACHMENT' incorrectly points to the exposed lower free edge of the rear sail. Replace those words with 'D2 FREE LOWER EDGE', keeping that same leader and dot on the same free edge. Add one small unobtrusive note in nearby blank margin: 'D2 ROOT HIDDEN BEHIND D1'. Do not draw a new root or move any anatomy to make it visible. The top projection sheet handles the hidden root location.\nPreserve ALL other words, every leader, the exact creature pixels/design, colours, slender body length, wings, harness, all five fan-ended tails and flowing strands, paper texture and framing. This is ONLY correction of a misleading callout, not a regenerated anatomical interpretation.",
+          "refs": [
+            "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png"
+          ],
+          "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-4f541355-def9-4548-8402-d46e5eedc43c.png",
+          "reason": "Added explanatory note interrupted the upper tail stem; restart from original labelled sheet for text-only correction.",
+          "file": "history/va5-note-cut-tail.png",
+          "status": "superseded_generation_defect",
+          "sha256": "097f4e0480744ab5683dbe632faff40c2df8cd3afda31a4b6ff6e557fbf5e6d8"
+        }
+      ],
+      "sha256": "72637976d1a00733941b9f0b3d53ce96f52a45a7589f81139581566b98550f0a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "review_status": "pending_creator_review",
+      "generator": "built-in image_gen",
+      "description": "An annotated view of the approved reference, identifying the near left root between the buckles, the continuous slender body, sail edges and true rump. The rear sail’s attachment is partly hidden; the exposed lower edge is labelled as an edge, not a root.",
+      "approved_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5dfda1e4-e053-40d5-8d16-415ea6cfa752.png",
+          "sha256": "dde1f334881e23eb91647c84a8c3579aac88ca61984348ebaa636610023084c0"
+        }
+      ]
+    },
+    {
+      "code": "VA6",
+      "title": "Long-body plan — shoulder symmetry and tail origins",
+      "file": "veilwing-approved-top-study.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png"
+      ],
+      "prompt": "Create ONE new top-projection anatomy study of the supplied CREATOR-APPROVED creature. The supplied painting is the CREATOR-APPROVED anatomical source of truth. Match this exact long slender animal, not the short thick earlier study. Preserve its long continuous tapering torso from the shoulder harness to the true rump, four flight surfaces (two matched huge front shoulder wings and two distinct broad dorsal sails), face, feelers, muted ivory/ochre/dusty-lavender feather-scale covering, fitted plain brown leather harness, and FIVE flowing fanned tail streamers. The creator explicitly selected this picture's tail arrangement over the old four-tail instruction. Keep the tails' thicker feathered bases tapering into delicate supple stems and fans, gently drifting. Both front wings have matched curved hooks and attach opposite one another at the same front shoulder station; the visible near-left root is BETWEEN the first two buckles. The torso stays long and slender underneath the middle sail almost to its trailing lower tip, with no split body or premature tail-bearing branch. Original quiet painted oil/acrylic colour and neutral-warm light, no saturation increase.\nUse a PORTRAIT reference canvas so the long body and tails are not shortened to fit a landscape box. Head points UP, the long slender torso continues downward, five flowing tail fans below the true rump. Show the huge front wings spread symmetrically LEFT and RIGHT from the SAME shoulder cross-section. Both complete curved hooked tips must be in frame. These are the source image's two front wings, not new wing shapes. Preserve the approved relationship: the body is substantially longer than the visible root-to-tip length of an individual downstroking wing; do NOT create a small stubby central body surrounded by outsized wings. The long slim torso should clearly continue behind the shoulders to a gently tapered posterior end, with relatively narrow depth/width and no swollen chest or snubby rump. Do not turn this into a conventional bird or drake.\nThe two dorsal sails are seen edge-on as two distinct narrow root ridges on the midline, D1 behind the shoulder station and D2 farther posterior before the rump. They must not become extra side wings. The harness follows the same solid-body corridors of the approved source. Exactly FIVE long flowing fan-ended tails emerge at the one real posterior end, with thicker feathered bases thinning into fine graceful stems. Preserve the source's different windblown curves and fans; all five complete, countable, no extra tuft or disconnected strand. Fine head feelers remain on the head only.\nNeutral warm-grey paper, subdued original colours and painted details. Sparse margin labels 'VA6 • LONG-BODY TOP STUDY', 'LEFT', 'RIGHT', 'SHARED SHOULDER', 'D1', 'D2', 'RUMP', and 'FIVE TAIL FANS'. No scenery, no numerical ratio table, no transparent extra wings, no shortened body/tails. This is a proposed projection of the selected source, not a replacement identity.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-366f24c3-0021-415b-959b-cf08a87aaae1.png",
+      "sha256": "3cd996763f2c255650c25a3ddeb259e5796f7b63d4685a2cdda64a40f8d6bf11",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "review_status": "pending_creator_review",
+      "generator": "built-in image_gen",
+      "description": "A proposed top projection of the long-bodied reference, with the shoulder pair on one transverse station and five tail fans. The original VA4 remains authoritative wherever this diagram differs.",
+      "approved_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png",
+          "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37"
+        }
+      ]
+    },
+    {
+      "code": "VS1",
+      "title": "Village pass — quiet scene finish",
+      "file": "veilwing-village-reference-scene.png",
+      "refs": [
+        "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png"
+      ],
+      "prompt": "Edit ONLY THE BACKGROUND of the supplied approved Veilwing painting into a slightly more finished and gently active scene. The supplied painting is the CREATOR-APPROVED anatomical source of truth. Match this exact long slender animal, not the short thick earlier study. Preserve its long continuous tapering torso from the shoulder harness to the true rump, four flight surfaces (two matched huge front shoulder wings and two distinct broad dorsal sails), face, feelers, muted ivory/ochre/dusty-lavender feather-scale covering, fitted plain brown leather harness, and FIVE flowing fanned tail streamers. The creator explicitly selected this picture's tail arrangement over the old four-tail instruction. Keep the tails' thicker feathered bases tapering into delicate supple stems and fans, gently drifting. Both front wings have matched curved hooks and attach opposite one another at the same front shoulder station; the visible near-left root is BETWEEN the first two buckles. The torso stays long and slender underneath the middle sail almost to its trailing lower tip, with no split body or premature tail-bearing branch. Original quiet painted oil/acrylic colour and neutral-warm light, no saturation increase.\nThe entire creature is LOCKED: retain its exact pose, long slender torso, body continuity, four wing/sail silhouettes, both front hooks, harness placement, all existing flowing tail stems/fans, colouring, texture and lighting. Do not correct, replace or reinterpret any anatomy. Do not crop or enlarge the creature, and do not increase saturation or add glowing effects.\nMake a modest change to the existing distant ground strip: a small inhabited village with a handful of stone-and-timber houses, a winding track, a few fields and quiet trees in the valley below. Two or three tiny distant people going about ordinary work and a simple small cart on the track can provide subtle activity and human scale. Keep buildings and figures very small against the enormous ancient flier; no riders on it, no crowds staring upward, no spectacle. Preserve the original soft sky and warm neutral light. Let the place feel inhabited and real, but keep it subordinate and softly painted with broad quiet shapes. No giant cast shadow, tower beside the animal, dramatic relighting or new action pose. The result is only a little more scene-like and finished than the source, preserving ancient strength, elegance and mystery. No text or annotations.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-eaf7e77f-9ca3-4b68-bbeb-a0cf92f50607.png",
+      "sha256": "026dec887090478df09e736f1679e7b957845ead54b64723dec92f87d9cbc905",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "review_status": "pending_creator_review",
+      "generator": "built-in image_gen",
+      "description": "The selected creature above a modest village, with small houses, a track and quiet everyday activity below. This is a gentle background finish; the approved creature design remains the source.",
+      "approved_source": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+      "reference_hashes": [
+        {
+          "path": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png",
+          "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37"
+        }
+      ]
+    },
+    {
+      "code": "S13-06-L1",
+      "title": "Veilwing — ancient passage",
+      "file": "veilwing-legendary-card-v1.png",
+      "refs": [
+        "approved-reference.png"
+      ],
+      "prompt": "Paint a NEW finished legendary fantasy card illustration of the exact CREATOR-APPROVED creature in the attached anatomical reference. Landscape 3:2, 1536x1024, no card frame, no text. The reference is binding for its identity, body proportions, covering, harness and appendage arrangement. Make a fresh scene with expressive painted atmosphere while retaining that animal faithfully.\n\nA vast, ancient, graceful Veilwing moves above an inhabited river valley. Its long slender body carries quiet strength and mystery, like the serene passage of an immense living being that belongs to this world. It is Gnosis-aligned and voluntarily familiar with civilization; the modest original leather equipment is enough to suggest that relationship. No riders, passenger platforms, cargo, overt magic effects or new ornaments.\n\nKeep its elegantly LONG, SLENDER, CONTINUOUS torso: from the original pointed head and short integrated neck, through the harness-bearing body under the middle sail, to the true tapered rump almost beneath that sail's trailing end. Never substitute a compact, thick drake or bird body; do not fork into two body branches. Keep original quiet feather-scale textures and the fitted plain brown leather harness.\nExactly FOUR flight surfaces. The two very large front wings form a matched pair at the SAME shoulder station; the visible near LEFT wing grows BETWEEN the first two buckles and the far RIGHT wing grows opposite it. Both have the approved broad membrane, curved structural leading edge, scalloped margin and long slender terminal hook. Let both hooked tips read with natural overlap, not by moving a root rearward. Exactly TWO separate dorsal sails, the large front/middle sail and the posterior sail, keep the broad swept shapes of the selected reference. Their distinct mobile bases and free edges do not become the torso or extra lateral wings. Keep the source's FIVE flowing fanned tails, with feathered substantial bases at the real rump, very fine curving stems and gently drifting leaflike terminal fans. Preserve their long elegant gesture and count; do not shorten them to fit the frame.\n\nCompose from a slightly elevated side/three-quarter view that retains the animal's full length, rather than foreshortening it into a stubby shape. A slow powerful downstroke and a subtle bank are enough movement. The entire creature fits generously: head, both hooks, both sails and all five fans inside the image. The full long silhouette is the dominant image; do not obscure the key shoulder roots with tack or scenery.\n\nBelow and behind it, a temperate valley opens around a winding river, woods, fields and a small believable village of stone-and-timber houses. Stage a wooded slope and a few recognizable roofs at readable depth, near enough in the background to compare scale, with more distant farmland fading into haze. Tiny people or a cart quietly going about their lives supply understated activity. No crowd reacting, no dramatic attack, no impossible enormous shadow painted across miles of land. The creature is colossal through coherent spatial comparison, not a miniature bird placed over a distant strip.\n\nTraditional oil/acrylic fantasy painting, selective visible brushwork, gentle edge variation and a well-organized focal hierarchy. Preserve the reference's restrained warm ivory, ochre/amber and dusty lavender, without creeping red/orange saturation or glossy rendering. Choose soft late-afternoon light with warm sail translucency and a cooler readable shaded body, coherent across animal and landscape. Paint inhabited ground with fewer marks and softer edges than the creature. Beautiful, dignified, expansive, quietly awe-inspiring. The new scene must not redesign the approved anatomy.",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-5e36ba63-dc83-454a-a516-525a02d68e8d.png",
+      "review_status": "final_for_card_building",
+      "card_id": "veilwing",
+      "proposal_number": 221,
+      "creator_approval": "that's good and final",
+      "creator_commit_authorization": "please commit that and push",
+      "sha256": "720cc9bcabd064c35978be3b7dc91975c6168da352351aaba5adf0cd83193e52",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "generator": "built-in image_gen",
+      "live_installation": false,
+      "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+      "original": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/approved-reference.png",
+      "original_preview": "veilwing-r2-long-body-reference.png"
+    }
+  ],
+  "discarded": [
+    {
+      "file": "history/discarded-combined-atlas.png",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-e7eab1e1-91c1-4b62-8294-4b69783c52d1.png",
+      "prompt": "Create a NEW landscape anatomy reference sheet of this exact creature, using two source images as identity/colour/harness references. Use the attached original paintings only for this exact creature's head, leaf/featherlike covering, elegant wing planform, slender leaf-tipped feelers and understated brown leather harness. Recover their quieter dusty lavender, warm ivory and muted ochre/amber colours, soft coherent light and visible oil/acrylic paint handling. Do not increase orange/red saturation or glossy detail. Do not copy their missing/ambiguous wing count or short obscured torso; the corrected anatomical specification below supersedes those aspects. Neutral pale warm-grey background; a purposeful professional creature anatomy study, not a cinematic painting.\nOne consistent animal model. Define L as snout to rump, excluding tails. Substantial gently elongated torso, short integrated neck, long continuous taper to rump; torso depth roughly one quarter L. Exactly FOUR flight surfaces: L and R are a matched bilateral pair of huge front shoulder wings; D1 is a large front dorsal sail; D2 is a separate somewhat smaller posterior dorsal sail. L/R attach opposite one another at ONE shoulder station approximately one-third along the snout-to-rump axis. Neither side wing originates from the belly, middle back or rump. Each shoulder wing has the same broad curved leading edge, layered scalloped trailing edge and slender curved terminal HOOK; root-to-hook length approximately 1.1L. Both complete wings must be the same actual size. D1 attaches to the dorsal midline around the middle of the back, behind the shoulders. D2 attaches separately farther back, before the rump. Each has a limited flexible base and a free trailing/lower edge distinguishable from the torso; they can pivot/lean across the back and overlap. They are not extra side wings, fins glued to the rump or the back itself. D1 rises about 0.45L and D2 about 0.3L from their bases; preserve the broad swept sail character of the originals. Exactly FOUR long fine separate tail streamers emerge from the actual rump, each about 1.25–1.5L long, each ending in one modest leaflike tuft; no extra bare filaments. Keep the original graceful pointed flattened head and fine head feelers. No legs, no birdlike feet, no extra fins. Harness is the original small plain brown leather torso equipment, routed only over solid body corridors, clear of all four moving roots. No riders or cargo. These ratios are proposed study proportions, not newly fixed real-world measurements.\nLAYOUT: two large, clearly separated technical-painted views on one sheet, with concise readable labels and thin unobtrusive leader lines.\nTOP HALF: TRUE SIDE PROFILE, head at left, entire longer torso and all FOUR long tails fitting with generous margins. Show the large front side wing as a faint transparent contour in a downstroke so the uninterrupted shaded BODY under it is visible; show the opposite root at precisely the SAME shoulder station, not farther back. Show D1 and D2 as distinct complete upright sails in sequence along the back; their bases and FREE edges are easy to trace. Use delicate outlined ghosting only for the front side wings, not a fifth physical membrane. The leather harness is lightly indicated and cannot cross the wing bases. Mark the actual shoulder station with one thin vertical guide through both lateral roots, the two separate dorsal attachment sites, the rump/tail origins and a snout-to-rump L dimension. A subtle diagram cue may show the front side wing lifted out of the way, but do not detach it or draw exploded extra appendages.\nBOTTOM HALF: TRUE TOP PLAN, body horizontal head at left, front wings fully spread equally to either side of the SAME shoulder line. Fit both complete large wings and matching hooked tips. The two dorsal sails are seen edge-on along the centerline, so indicate them as narrow root strips D1 and D2 in sequence, not an invented extra lateral pair. Exactly four fine tails trail from the rump to the right, naturally separated and complete. The transparent/lightly outlined back-sail projection must not look like more wings.\nUse only concise labels: 'VA1 • ATTACHMENT STUDY', 'SIDE', 'TOP', 'L', 'R', 'D1', 'D2', 'SHOULDER LINE', 'FREE EDGE', 'TAIL ROOTS', 'L = SNOUT TO RUMP', and 'PROPOSED PROPORTIONS'. Place labels in clear margins. Make clear body mass, actual attachments and matching wings the priorities; anatomically consistent between the two views. The subject is a huge graceful living creature, not an insect diagram, dragon, bird or machine. No scenery, no giant shadow, no dramatic lighting.",
+      "refs": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-gnosis-partner-v8.png",
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+      ],
+      "status": "failed_quality_check",
+      "reason": "Five tails, stretched torso, short wings/tails and inaccurate dimension text; not usable as a reference.",
+      "sha256": "920cdf12189ee6d49606e730d8502fe6f822eafc81abdff8765cde558acbaba2"
+    }
+  ],
+  "notes": "ANATOMY_NOTES.txt",
+  "live_card_installed": false,
+  "superseded": "Earlier single-dorsal and three-tail rules; latest tip-visibility request takes priority over earlier pose-specific hiding.",
+  "approved_reference": {
+    "code": "VA4",
+    "canonical_code": "S13-06-VA4",
+    "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+    "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37"
+  },
+  "creator_reviews": [
+    {
+      "source": "Chat",
+      "feedback": "VA1–VA3 bodies too short/snubby; wings good. R2 long slender character wanted, with continuous torso and near left wing between buckles."
+    },
+    {
+      "source": "Chat",
+      "feedback": "Yes. Finally. This is the reference. This is how it is supposed to look."
+    },
+    {
+      "source": "Async clarification",
+      "question": "Preserve approved picture’s five fanned tails or use four?",
+      "answer": "Preserve the approved picture"
+    }
+  ],
+  "final_card_art": {
+    "code": "S13-06-L1",
+    "path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
+    "status": "final_for_card_building"
+  }
+}

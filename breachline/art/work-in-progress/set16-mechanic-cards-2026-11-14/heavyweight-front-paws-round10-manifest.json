@@ -1,0 +1,50 @@
+{
+  "batch": "Set16 feathered heavyweight front-paw revision",
+  "date": "2026-11-15T21:16:45.240751+00:00",
+  "brief_revision": 15,
+  "brief_source": "BRIEFS-heavyweight-front-paws-revision-15.md",
+  "brief_sha256": "a39c8506025dcc788f680a1a28f097b4e7b70f8ea892a1145062009d94919c6c",
+  "feedback": "animal-feedback-round10.json",
+  "source_checkout": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817",
+  "status": "refined_by_v5_bear_claws",
+  "claimed_by": "this chat",
+  "generator": "built-in image_gen",
+  "items": [
+    {
+      "code": "M21-23",
+      "original_position": 2,
+      "version": 4,
+      "stage": "reference_revision",
+      "file": "m21-23-feathered-heavyweight-v4.png",
+      "prompt": "Edit this Breachline animal reference with one local correction: BOTH FRONT FEET become broad, substantial mammalian PAWS. Think of the grounded weight of large feline or bear forepaws: a compact padded mass, four rounded toes grouped closely together, a softly furred top blending into the wrist, and only tiny short claw tips. The paws should feel powerful and able to support this heavyweight. They are not bird talons, grasping hands, elongated fingers or splayed reptile toes. Keep the paws planted naturally; do not show their undersides to the viewer. Preserve the muscular front legs above the wrists and the two rear feet exactly in design. Preserve the entire remaining animal—closed muzzle, head, crest, high neck, feathered body, colouring, leg positions and tail—as well as pose, human scale figure, ground, lighting, composition and painted treatment. No other redesign. Same landscape 3:2 format. No text or labels.",
+      "attached_references": [
+        "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v2.png"
+      ],
+      "reference_sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c",
+      "reference_role": "Entire v2 as edit target, before the excessive talon pass; only front feet change.",
+      "status": "generated",
+      "review_status": "awaiting_creator_review",
+      "generated_source": "/Users/dpuser/.codex/generated_images/01a1dc91-7812-7d53-b177-75dcb182f4e9/exec-0ea8524d-90ea-415f-b024-e201018ff449.png",
+      "sha256": "97d697ea9a00c3300d861518206919db480f36306144c0f096029e624d3538d5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "title": "Feathered heavyweight · front paws",
+      "description": "Both front feet are now broad, compact paws with rounded toes, furred tops and only short claw tips. The sturdy legs, feathered body, closed muzzle, pose and rear feet retain their established design.",
+      "assistant_review": "Compared with v2 edit source and v3 feedback: both front feet now read clearly as padded mammalian paws, with rounded grouped toes and short claw tips. Forelegs blend into furred wrists; feet are grounded and coherent. Head, crest, feather mantle, torso, rear feet, four-limb arrangement, scale figure, lighting and composition retained. No long grasping digits or hooked talons remain at the front.",
+      "completed_at": "2026-11-15T21:18:19.649856+00:00",
+      "latest_revision_file": "m21-23-feathered-heavyweight-v5.png",
+      "latest_revision_version": 5,
+      "latest_revision_manifest": "heavyweight-bear-claws-round11-manifest.json"
+    }
+  ],
+  "gallery": "heavyweight-preferred-revisions-review.html",
+  "creator_approval": "pending",
+  "installation_status": "not_authorized",
+  "generation_input_brief_sha256": "61e1c9a4cf6de47cc9cb4481c236ef876a432f659bcc9a68137a75e875531c5e",
+  "claim_status": "released_generation_complete",
+  "completed_at": "2026-11-15T21:18:19.649856+00:00",
+  "latest_creator_feedback": "animal-feedback-round11.json",
+  "latest_local_revision_manifest": "heavyweight-bear-claws-round11-manifest.json"
+}

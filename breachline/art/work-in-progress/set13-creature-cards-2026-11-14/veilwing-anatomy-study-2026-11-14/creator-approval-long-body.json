@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-14",
+  "approved_reference": {
+    "code": "VA4",
+    "canonical_code": "S13-06-VA4",
+    "base": "S13-06",
+    "card": 221,
+    "title": "Approved reference — long slender body",
+    "file": "veilwing-r2-long-body-reference.png",
+    "kind": "reference",
+    "description": "The creator’s definitive selected reference: one long slender body, a complete matched shoulder-wing pair, two dorsal sails, the liked harness and five flowing terminal fans. Preserve this exact image as the authority for future depictions.",
+    "prompt": "Edit this ORIGINAL R2 painting into a corrected creature reference. This exact image is the authority for the long slender character, colours, head, harness, tail texture and quiet painted atmosphere. Do not substitute the short thick drake-like body of the later studies. Preserve the original muted warm ivory, dusty lavender and ochre, soft coherent light and oil/acrylic paint handling. Ancient strength and mystery: a slender, long, immense creature with enormous wings and gently flowing tails.\n\nCORRECT THE CONTINUOUS BODY FIRST. In the original, the slender torso carrying the harness seems to continue right beneath the middle sail, while a different branch below it carries the tails too early. These must be ONE body, not a fork. Follow the beautiful long slender contour of the harness-bearing torso. Extend that single continuous body beneath the big middle/front dorsal sail toward its lower trailing pointed tip, ending just BEFORE that tip, not past it. In the original coordinates, the real rump should end near x900,y490, approaching but staying short of the middle sail's lower point near x970,y530. This is a broad spatial guide, not a contour to trace. Keep the body elegant and slim with an uninterrupted subtle shaded underside; do not make a fat belly or a long thin neck. No second torso hanging below it. The sail stays a distinct mobile membrane above that body with its own free edge and root.\n\nTAILS: remove the premature tail-bearing branch beneath midbody. All FOUR tails now grow naturally from the single true posterior end of the lengthened torso. Preserve what is beautiful in R2: each tail begins with a substantial softly feathered taper, becomes a very long thin supple stem, and opens into a modest leaflike terminal fan. Four complete tails, four fans, no additional bare filaments. They drift in graceful different curves as if in a gentle breeze, not straight wires or identical ribbons. Make them a little longer than R2's tails; their total curving length is at least comparable to the NEW long snout-to-rump body. Never shorten them to fit the page. Pull back the framing uniformly enough to fit every tip with breathing room while preserving the longer body and enormous wing scale.\n\nADD THE MISSING NEAR LEFT SHOULDER WING. We are viewing the left side. The visible shoulder between the FIRST TWO leather buckles nearest the head is currently bare. A huge LEFT front wing must grow from that gap, from the lateral shoulder beneath the top leather connector. Keep the original existing downstroking RIGHT/front wing on the far side; the creator likes it. The new left wing attaches directly opposite that existing right wing at the SAME shoulder cross-section, not from the middle or rear of the body. It is the same actual anatomical wing type: very large broad leaf-feather membrane, curved leading edge, scalloped trailing edge and long slender hooked terminal point. Let the near left wing descend into the lower foreground, partly overlapping the existing far/right wing naturally, while keeping BOTH hooked tips visibly separated. Preserve the original right wing's shape; do not replace it with a short triangle. Keep the harness clear of the moving root; no strap through the membrane.\n\nPreserve BOTH original dorsal sails, their broad swept shapes and their separate mobile back attachments. This completes exactly FOUR flight surfaces: left front, right front, front dorsal sail, rear dorsal sail. No fifth membrane, neck flap or belly fin. Keep the original face, feelers, plain leather equipment and natural soft colour. Retain the simple original distant ground/sky only as a quiet backdrop, with no huge shadow or new buildings. No annotations, text or labels. This is the single long-bodied anatomical reference from R2, not a compact new species.",
+    "refs": [
+      "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set13-creature-cards-2026-11-14/veilwing-back-harness-v2.png"
+    ],
+    "generated_source": "/Users/dpuser/.codex/generated_images/01a1d5d0-0d63-78a3-812a-449c0b9c1169/exec-ae236f1f-9e92-4008-a78a-1e982aa1a4da.png",
+    "sha256": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "canonical_path": "/Users/dpuser/Documents/Claude/Games/breachline/art/reference-library-2026-11-06/set13-selected-2026-11-14/veilwing-r2-long-body-reference.png",
+    "review_status": "accepted_reference_image",
+    "creator_approval": "Yes. Finally. This is the reference. This is how it is supposed to look.",
+    "tail_confirmation": "Preserve the approved picture",
+    "terminal_fan_count": 5,
+    "generator": "built-in image_gen",
+    "live_card_installed": false
+  },
+  "derived_pending": [
+    "VA5",
+    "VA6",
+    "VS1"
+  ],
+  "tail_confirmation": "Preserve the approved picture",
+  "supersedes": "Three/four-tail directions and compact-body study proportions.",
+  "live_card_installed": false
+}

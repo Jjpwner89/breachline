@@ -1,0 +1,33 @@
+{
+  "approved_source_hash": "8f851266e8a0b2a905b61d441929125fd8d9e73770676170e820d8d29030ef37",
+  "canonical_exact_copy": true,
+  "derived": [
+    {
+      "code": "VA5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "72637976d1a00733941b9f0b3d53ce96f52a45a7589f81139581566b98550f0a"
+    },
+    {
+      "code": "VA6",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "3cd996763f2c255650c25a3ddeb259e5796f7b63d4685a2cdda64a40f8d6bf11"
+    },
+    {
+      "code": "VS1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "026dec887090478df09e736f1679e7b957845ead54b64723dec92f87d9cbc905"
+    }
+  ],
+  "five_terminal_fans_confirmed_by_creator": true,
+  "approved_original_preserved": true,
+  "new_views_and_scene_pending": true
+}

@@ -1,0 +1,37 @@
+{
+  "checked": "Visual anatomy review before saving",
+  "items": [
+    {
+      "code": "VA1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "433e8b3685f8fb7a0271740472f366709581e46b86370fbf7b74865d7f8fee81",
+      "source_copy_matches": true
+    },
+    {
+      "code": "VA2",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "25ebc65445a4055002a117b4e9b08e8d533f4dbc66552625830f57aeb2f3bf24",
+      "source_copy_matches": true
+    },
+    {
+      "code": "VA3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9be6cba068f4408a8e228dbd7ae540c374ad6cb5d3cb9e9da1138d19f63199d0",
+      "source_copy_matches": true
+    }
+  ],
+  "four_tufted_tails_per_final_sheet": true,
+  "both_hooked_tips_in_top_and_angled_views": true,
+  "side_overlay_is_diagram_convention": true,
+  "status": "pending_creator_review",
+  "limitation": "Painted views are not a certified exact dimensional turnaround; review provisional ratios and tack clearance."
+}

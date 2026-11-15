@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-15",
+  "created_at": "2026-11-15T22:07:24.279248+00:00",
+  "status": "selected_for_claude_finalization",
+  "creator_request": "let's send the first design and the other one to claude to finalize.",
+  "creator_clarification": "m20-r1 and number 2 with the articulated legs",
+  "choices": [
+    {
+      "card_code": "M20",
+      "image_code": "M20-R1",
+      "version": 1,
+      "file": "m20-hearthmantle-adult-cub-v1.png",
+      "manifest": "animal-followup-round2-manifest.json",
+      "working_name": "Brackenmaw (proposed; formerly Hearthmantle)",
+      "card_id": "foldstride",
+      "card_number": 244,
+      "selection": "Adult and cub reference explicitly identified by creator.",
+      "must_keep": "Broad grounded adult, rounded face, huge paws and layered russet/cream mantle; same-species young cub beside it. Omnivorous super-bear life cycle; primarily forest, also hills and plains. Mouth experiments do not apply to M20.",
+      "open": "Final name, exact size, growth timing, lifespan, reproduction, hibernation, mantle biology.",
+      "source_image": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m20-hearthmantle-adult-cub-v1.png",
+      "handoff_image": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/m20-hearthmantle-adult-cub-v1.png",
+      "sha256": "b03fbf06d3d7b27faa4c6b446c3d3503f71d86225bac09b782683182d8f4ca88",
+      "prompt_record": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/animal-followup-round2-manifest.json"
+    },
+    {
+      "card_code": "M21",
+      "image_code": "M21-23",
+      "version": 5,
+      "original_choice_number": 2,
+      "file": "m21-23-feathered-heavyweight-v5.png",
+      "manifest": "heavyweight-bear-claws-round11-manifest.json",
+      "working_name": "Feathered heavyweight (name open)",
+      "card_id": "saltmigrant",
+      "card_number": 245,
+      "selection": "Number 2 with articulated legs, using its latest bear-claw refinement.",
+      "must_keep": "High neck, crest, layered slate/cream/ochre feathered body, compact closed muzzle, strong articulated legs and broad furred front paws with stout moderately curved bear-like claws. Preserve the latest design; do not restore dangling mouthparts, the v3 raptor talons, or the v4 tiny claw tips.",
+      "open": "Final name, diet, habitat, life cycle and exact size.",
+      "source_image": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/m21-23-feathered-heavyweight-v5.png",
+      "handoff_image": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/claude-finalization-2026-11-15/m21-23-feathered-heavyweight-v5.png",
+      "sha256": "1ef303ab0286e802b2cf0fc108abee8df8dc257195836e6559e7ee39e8f1bb29",
+      "prompt_record": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/heavyweight-bear-claws-round11-manifest.json"
+    }
+  ],
+  "supporting_reference": {
+    "file": "m21-23-feathered-heavyweight-v2.png",
+    "role": "Earlier articulated-leg reference only; current chosen number 2 is v5.",
+    "sha256": "6b88ce1c6b9257445d101bdb332115ce126f7ca84ae5ac1774c2150346fee73c"
+  },
+  "handoff_file": "/Users/dpuser/Documents/Claude/Games/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+  "origin_checkout_handoff": "/Users/dpuser/Documents/Claude/Games/.claude/worktrees/card-variety-balance-949817/breachline/art/SET16_ANIMAL_FINALIZATION_FOR_CLAUDE.txt",
+  "delivery_status": "prepared_in_shared_repository_no_chat_message_sent",
+  "direct_delivery_blocker": "Computer Use was not approved to use Claude",
+  "image_approval": "chosen for finalization; no final card-scene approval or installation inferred",
+  "installation_status": "not_authorized",
+  "publishing_status": "not_authorized"
+}
