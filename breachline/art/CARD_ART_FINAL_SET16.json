@@ -2,36 +2,17 @@
   "schema_version": 1,
   "set": 16,
   "date": "2026-11-15",
-  "status": "partially_final_for_card_building",
-  "purpose": "Authoritative final selection of M2 v7 only. Other Set 16 paintings remain pending.",
+  "status": "final_except_M20_M21",
+  "purpose": "Authoritative final selection of Set 16 card art. M2 v7 approved 2026-11-15; the other 19 approved together 2026-11-17 (M16 uses v2). M20 and M21 need new paintings of the selected Mauldrin and Talloch.",
   "creator_authorization": "that's it, final! — refers to the fresh M2 resting portrait",
-  "live_installation": false,
+  "live_installation": "All 20 approved paintings installed live 2026-11-17",
   "counts": {
-    "final_images": 1,
-    "pending_cards": 21
+    "final_images": 20,
+    "pending_cards": 2
   },
   "pending_card_ids": [
-    "oathveteran",
-    "heldspears",
-    "secondworking",
-    "senthome",
-    "frostlatch",
-    "countedwords",
-    "writseizure",
-    "confiscator",
-    "gatheredhost",
-    "ashborngleaner",
-    "pitdigger",
-    "waitingnoose",
-    "risingsquall",
-    "thrownboulder",
-    "streakraider",
-    "hiredshield",
-    "hiredcompany",
-    "ploughback",
     "foldstride",
-    "saltmigrant",
-    "gravelmouth"
+    "saltmigrant"
   ],
   "assets": [
     {
@@ -48,9 +29,313 @@
       ],
       "status": "final_for_card_building",
       "creator_authorization": "that's it, final!",
-      "live_installation": false,
+      "live_installation": true,
       "source_manifest": "/Users/dpuser/Documents/Claude/Games/breachline/art/work-in-progress/set16-mechanic-cards-2026-11-14/prompts-and-manifest.json",
       "description": "A young Crest folk duelist rests lightly on his grounded rapier, wearing fine blue cloth over light mail. His shield hangs from buckled waist straps beside a scabbard, pouch and gloves; his relaxed bearing suggests a capable, high-status swordsman."
+    },
+    {
+      "id": "set16-M1",
+      "code": "M1",
+      "title": "Oath veteran",
+      "card_id": "oathveteran",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/oathveteran.png",
+      "sha256": "7248383258621216526216ee86b2bc08828d2c7d4b031b13fe412a4514db993e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M3",
+      "code": "M3",
+      "title": "Held spears",
+      "card_id": "heldspears",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/heldspears.png",
+      "sha256": "e7f8cb85d281efea3a924e476e4eae491c7ba775f847ebd5e521f9283e544785",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M4",
+      "code": "M4",
+      "title": "Second working",
+      "card_id": "secondworking",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/secondworking.png",
+      "sha256": "d2c2c258101e8710d3ca655b0abfacebf244c9042fb2e28ecf322aac1131cca9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M5",
+      "code": "M5",
+      "title": "Sent home",
+      "card_id": "senthome",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/senthome.png",
+      "sha256": "2cedd08c7a7a6125c207c9f30fff3120b7edbf974619e656ed706be57d781662",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M6",
+      "code": "M6",
+      "title": "Frost latch",
+      "card_id": "frostlatch",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/frostlatch.png",
+      "sha256": "b1a840027d871edffcaad1d7975b8ecea214240186c5d9af253aad763347a7d8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M7",
+      "code": "M7",
+      "title": "Counted words",
+      "card_id": "countedwords",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/countedwords.png",
+      "sha256": "39ac158eca8293a9b0805e4523cfc1eff3e0955a32b9e4a42a7df8be915d2cb1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M8",
+      "code": "M8",
+      "title": "Writ of seizure",
+      "card_id": "writseizure",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/writseizure.png",
+      "sha256": "b68f963e3de54cad1f44bddace905188d21b6ee060f3c2b3778060a73f5027ad",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M9",
+      "code": "M9",
+      "title": "Ashen Court confiscator",
+      "card_id": "confiscator",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/confiscator.png",
+      "sha256": "2f443fd62d693880cba257bff7c2eb2577085a2c56f9966f24d4f99477fc2509",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M10",
+      "code": "M10",
+      "title": "Gathered host",
+      "card_id": "gatheredhost",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/gatheredhost.png",
+      "sha256": "868262ee9ca7a282a5883d88a557e9bf77bb7dd336e1ac2e1386f18c0557fa57",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M11",
+      "code": "M11",
+      "title": "Ashborn gleaner",
+      "card_id": "ashborngleaner",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/ashborngleaner.png",
+      "sha256": "75bb113ec9ebbd06f752df85536c77a54104d24d6f242cebd9aa416a4749b131",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M12",
+      "code": "M12",
+      "title": "Pit digger",
+      "card_id": "pitdigger",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/pitdigger.png",
+      "sha256": "d1b3c0994c3682a83501bfbf412110485c9eda9e113346ce79bf4b4aab7f8998",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M13",
+      "code": "M13",
+      "title": "Waiting noose",
+      "card_id": "waitingnoose",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/waitingnoose.png",
+      "sha256": "4c9a5df4a387c06f51c2d2ae559d008e0b59bb92a4e0ffad10c3e699630b61f5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M14",
+      "code": "M14",
+      "title": "Rising squall",
+      "card_id": "risingsquall",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/risingsquall.png",
+      "sha256": "308fe5f5654eb715f06b89eae4273c2ffcb2963ef720d22dee6c15cd3886d175",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M15",
+      "code": "M15",
+      "title": "Thrown boulder",
+      "card_id": "thrownboulder",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/thrownboulder.png",
+      "sha256": "3191010d976a37b80c18a3da3a3b0ca30e7145fb88bb732c6d491167c02190c4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M16",
+      "code": "M16",
+      "title": "Streak raider",
+      "card_id": "streakraider",
+      "version": 2,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/streakraider-v2.png",
+      "sha256": "f20ae764c3728e533ba4a0a6935815a991d8b0750da1060cae07ce829b9982e0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M17",
+      "code": "M17",
+      "title": "Hired shieldman",
+      "card_id": "hiredshield",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/hiredshield.png",
+      "sha256": "113503301defea806bd46471bd178d91ddb853cc7aaaa326c03457e5ff5c8e03",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M18",
+      "code": "M18",
+      "title": "Hired company",
+      "card_id": "hiredcompany",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/hiredcompany.png",
+      "sha256": "dddbb7c40d3b783dced61ec6e4673148aba8febf4a4733bc8d47f5676a1aac50",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M19",
+      "code": "M19",
+      "title": "Ploughback",
+      "card_id": "ploughback",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/ploughback.png",
+      "sha256": "1d0c90a39acb4d366e6dc2a08a5942faace9b86e11d0faaf57cd5ef277cac00d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
+    },
+    {
+      "id": "set16-M22",
+      "code": "M22",
+      "title": "Gravelmouth",
+      "card_id": "gravelmouth",
+      "version": 1,
+      "png": "reference-library-2026-11-06/set16-selected-2026-11-15/gravelmouth.png",
+      "sha256": "237736e451540755c77ff790a88953a31ec4f2e14de81d3b968108dca4672bd5",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "final_for_card_building",
+      "creator_authorization": "aprove all bruh",
+      "live_installation": true
     }
   ]
 }

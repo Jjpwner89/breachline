@@ -13,8 +13,8 @@
     "Artwork finalization does not add new lore canon or change game rules."
   ],
   "counts": {
-    "final_images": 149,
-    "new_card_art": 64,
+    "final_images": 169,
+    "new_card_art": 84,
     "already_used_by_game": 85,
     "existing_card_ids": 85
   },
@@ -3903,6 +3903,446 @@
       "source": "reference-library-2026-11-06/veilwing-final-2026-11-14/veilwing.png",
       "source_manifest": "CARD_ART_FINAL_VEILWING.json",
       "note": "S13-06-L1, approved as final 2026-11-14; installed live the same day."
+    },
+    {
+      "id": "flameduelist",
+      "title": "Still Flame duelist",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "flameduelist.png",
+      "web_jpeg": "web/flameduelist.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7633ca814923938c0dd283d36144a364fe7e13572376113630d1c5feb380dc2d",
+      "web_sha256": "b0cc63b1ee0450ad173b1c62f03b892b7cbe7ae80c6ebbfbc5ea6e29fc57a3c0",
+      "card_ids": [
+        "flameduelist"
+      ],
+      "selected_date": "2026-11-15",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/flameduelist-v7.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M2 v7, approved as final 2026-11-15 (\"that's it, final!\"); installed live 2026-11-17."
+    },
+    {
+      "id": "oath-veteran",
+      "title": "Oath veteran",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "oath-veteran.png",
+      "web_jpeg": "web/oath-veteran.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7248383258621216526216ee86b2bc08828d2c7d4b031b13fe412a4514db993e",
+      "web_sha256": "d7e55746f5ebd42470102b752c9956f3998ef5e47e79dbfb80e6f54a495dab93",
+      "card_ids": [
+        "oathveteran"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/oathveteran.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M1. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "held-spears",
+      "title": "Held spears",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "W",
+      "png": "held-spears.png",
+      "web_jpeg": "web/held-spears.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e7f8cb85d281efea3a924e476e4eae491c7ba775f847ebd5e521f9283e544785",
+      "web_sha256": "cd6f820ba4aebba01d3fc5a5398d36924b93b0db33358f09c87f5acd630821ee",
+      "card_ids": [
+        "heldspears"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/heldspears.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M3. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "second-working",
+      "title": "Second working",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "second-working.png",
+      "web_jpeg": "web/second-working.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d2c2c258101e8710d3ca655b0abfacebf244c9042fb2e28ecf322aac1131cca9",
+      "web_sha256": "d0cc6c7442079ea57054ddadc4488e52f4d64c76567e244e8d108a04272eb22e",
+      "card_ids": [
+        "secondworking"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/secondworking.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M4. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "sent-home",
+      "title": "Sent home",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "sent-home.png",
+      "web_jpeg": "web/sent-home.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2cedd08c7a7a6125c207c9f30fff3120b7edbf974619e656ed706be57d781662",
+      "web_sha256": "7fd7acfbdc885cdcfa2e6e743bb40f0c5b22ee621000e799552f5dad370e44e9",
+      "card_ids": [
+        "senthome"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/senthome.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M5. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "frost-latch",
+      "title": "Frost latch",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "frost-latch.png",
+      "web_jpeg": "web/frost-latch.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b1a840027d871edffcaad1d7975b8ecea214240186c5d9af253aad763347a7d8",
+      "web_sha256": "bd68284ece355a6bf92b09e5e06ba2d70af5516a4ac45b47f5ba5dcd2ff51d38",
+      "card_ids": [
+        "frostlatch"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/frostlatch.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M6. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "counted-words",
+      "title": "Counted words",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "U",
+      "png": "counted-words.png",
+      "web_jpeg": "web/counted-words.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "39ac158eca8293a9b0805e4523cfc1eff3e0955a32b9e4a42a7df8be915d2cb1",
+      "web_sha256": "6d63f7db5235ed04d4b1fd88795dd263847fd40e51c80df4d05be5791804cf65",
+      "card_ids": [
+        "countedwords"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/countedwords.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M7. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "writ-of-seizure",
+      "title": "Writ of seizure",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "writ-of-seizure.png",
+      "web_jpeg": "web/writ-of-seizure.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b68f963e3de54cad1f44bddace905188d21b6ee060f3c2b3778060a73f5027ad",
+      "web_sha256": "cbe7f89e3e0bb47f01f3b54e7a6302f3ba70b4011b855bf403aad8c27764369a",
+      "card_ids": [
+        "writseizure"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/writseizure.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M8. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "ashen-court-confiscator",
+      "title": "Ashen Court confiscator",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "ashen-court-confiscator.png",
+      "web_jpeg": "web/ashen-court-confiscator.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2f443fd62d693880cba257bff7c2eb2577085a2c56f9966f24d4f99477fc2509",
+      "web_sha256": "c044ead5095e6118739f11d308cadc7c1fba6266a98f2ac4d9a12f28c5027f88",
+      "card_ids": [
+        "confiscator"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/confiscator.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M9. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "gathered-host",
+      "title": "Gathered host",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "gathered-host.png",
+      "web_jpeg": "web/gathered-host.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "868262ee9ca7a282a5883d88a557e9bf77bb7dd336e1ac2e1386f18c0557fa57",
+      "web_sha256": "6c528544a115f72ddd73804a862dd688b5c83cf7e47f3eb27854c12dfa22c904",
+      "card_ids": [
+        "gatheredhost"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/gatheredhost.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M10. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "ashborn-gleaner",
+      "title": "Ashborn gleaner",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "ashborn-gleaner.png",
+      "web_jpeg": "web/ashborn-gleaner.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "75bb113ec9ebbd06f752df85536c77a54104d24d6f242cebd9aa416a4749b131",
+      "web_sha256": "19cfeb8e9ccd1aac431a2ee5e864e5db191a7b633d2090a4df79f1192febe4df",
+      "card_ids": [
+        "ashborngleaner"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/ashborngleaner.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M11. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "pit-digger",
+      "title": "Pit digger",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "pit-digger.png",
+      "web_jpeg": "web/pit-digger.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d1b3c0994c3682a83501bfbf412110485c9eda9e113346ce79bf4b4aab7f8998",
+      "web_sha256": "ec9f5dcbaf7845c9aaf2b9e349b2b19b5c4d7be2cddd429766afdb6db743082c",
+      "card_ids": [
+        "pitdigger"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/pitdigger.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M12. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "waiting-noose",
+      "title": "Waiting noose",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "B",
+      "png": "waiting-noose.png",
+      "web_jpeg": "web/waiting-noose.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4c9a5df4a387c06f51c2d2ae559d008e0b59bb92a4e0ffad10c3e699630b61f5",
+      "web_sha256": "666f0d35b55faaf7085af6df2bd67f902910ec0374bf2c850cc3e1b9ebbe278f",
+      "card_ids": [
+        "waitingnoose"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/waitingnoose.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M13. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "rising-squall",
+      "title": "Rising squall",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "R",
+      "png": "rising-squall.png",
+      "web_jpeg": "web/rising-squall.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "308fe5f5654eb715f06b89eae4273c2ffcb2963ef720d22dee6c15cd3886d175",
+      "web_sha256": "55cd2b91bcff0521a068dc08870cf7d2e26725b00a58283ecbea1daf4a9e0af6",
+      "card_ids": [
+        "risingsquall"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/risingsquall.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M14. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "thrown-boulder",
+      "title": "Thrown boulder",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "R",
+      "png": "thrown-boulder.png",
+      "web_jpeg": "web/thrown-boulder.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3191010d976a37b80c18a3da3a3b0ca30e7145fb88bb732c6d491167c02190c4",
+      "web_sha256": "482351d91ecd6d3fc3235a422dc81321046de358955e25efc97469381bbb88cb",
+      "card_ids": [
+        "thrownboulder"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/thrownboulder.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M15. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "streak-raider",
+      "title": "Streak raider",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "R",
+      "png": "streak-raider.png",
+      "web_jpeg": "web/streak-raider.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f20ae764c3728e533ba4a0a6935815a991d8b0750da1060cae07ce829b9982e0",
+      "web_sha256": "98e68a3c4d27979262a8bcbbc85568bb1cd76a6251b97379f9067c596a143e68",
+      "card_ids": [
+        "streakraider"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/streakraider-v2.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M16 v2. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "hired-shieldman",
+      "title": "Hired shieldman",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "N",
+      "png": "hired-shieldman.png",
+      "web_jpeg": "web/hired-shieldman.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "113503301defea806bd46471bd178d91ddb853cc7aaaa326c03457e5ff5c8e03",
+      "web_sha256": "ca135373ecf522a76e420aa243c9f71f909fe6e056089490a38934a5b7d5aed1",
+      "card_ids": [
+        "hiredshield"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/hiredshield.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M17. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "hired-company",
+      "title": "Hired company",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "N",
+      "png": "hired-company.png",
+      "web_jpeg": "web/hired-company.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dddbb7c40d3b783dced61ec6e4673148aba8febf4a4733bc8d47f5676a1aac50",
+      "web_sha256": "1ce92adeb547e028813ef2ff7399df3acb8c379a9e85da125c11ab4c141c38fe",
+      "card_ids": [
+        "hiredcompany"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/hiredcompany.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M18. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "ploughback",
+      "title": "Ploughback",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "ploughback.png",
+      "web_jpeg": "web/ploughback.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "1d0c90a39acb4d366e6dc2a08a5942faace9b86e11d0faaf57cd5ef277cac00d",
+      "web_sha256": "e9bc79d32a6f89d97662d829a7506a7e0b8703f6829914d192affbf00f620af1",
+      "card_ids": [
+        "ploughback"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/ploughback.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M19. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
+    },
+    {
+      "id": "gravelmouth",
+      "title": "Gravelmouth",
+      "status": "final",
+      "availability": "new_card_art",
+      "colour": "G",
+      "png": "gravelmouth.png",
+      "web_jpeg": "web/gravelmouth.jpg",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "237736e451540755c77ff790a88953a31ec4f2e14de81d3b968108dca4672bd5",
+      "web_sha256": "2439fd0cd1b97e993f44b23abfc7799437ec2d8fa83c252fb53b3a473f2d127c",
+      "card_ids": [
+        "gravelmouth"
+      ],
+      "selected_date": "2026-11-17",
+      "source": "reference-library-2026-11-06/set16-selected-2026-11-15/gravelmouth.png",
+      "source_manifest": "CARD_ART_FINAL_SET16.json",
+      "note": "Set 16 M22. Approved with the whole pending Set 16 batch on 2026-11-17 (\"aprove all\"); installed live the same day."
     }
   ],
   "updated_at": "2026-11-14",
