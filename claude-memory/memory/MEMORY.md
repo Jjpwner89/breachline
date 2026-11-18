@@ -19,3 +19,4 @@
 - [Prefer buffs](prefer-buffs.md) — make cards stronger rather than weaker; judge theme-deck pull too; Sun and cinder meant to be strong
 - [Claude playtests](claude-playtests-for-spells.md) — test cards swapped into starters at the same cost, redraw under 2 lands, ask about deck, out-of-band cards and frustrations; record in PLAYTESTS.md
 - [Memory backup in the repo](memory-backup-in-repo.md) — claude-memory/ holds this memory and the restore guide; run its sync.sh after memory changes
+- [RTS project](rts-project.md) — the RTS lives in Games/RTS as its own repo (github RTS); read its DESIGN_NOTES.md first
