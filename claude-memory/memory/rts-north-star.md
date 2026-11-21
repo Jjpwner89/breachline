@@ -20,6 +20,9 @@ The vision, in their words and gist:
 
 - **Scale goal** (creator, 2026-11-21): battles of 1200+ men at the count and duke stages, with army sizes growing toward that. Battles and fidelity are benching 300/600/1200 men, aiming for 30 fps on Medium. The creator flagged it as a side note: keep pushing everything else forward, since they like the recent changes.
 
+- **Floor of the climb** (creator, 2026-11-21): the game starts you as a village's lord; there is no opening before the village.
+- **Downloads** (creator, 2026-11-21): sessions may download free (CC0 or equally free) assets themselves, including from itch and Freesound pages. They must read each licence first, and never pay or create an account.
+
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
 **How to apply:** anything goes — add features, cut what isn't working, even new setting elements (magic was their example of how free, not a directive). Go wide (10+ sessions). No sacred guardrails were set, but the build process still holds (verify before calling done; see [[rts-build-process]]). Log reasoning for big calls so the creator can follow in the morning. Related: [[rts-orchestrator]], [[rts-project]].

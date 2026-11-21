@@ -13,3 +13,5 @@ Several RTS sessions run `python3 -m http.server` on nearby ports (8811, 8813 an
 **Why:** a vassals session loaded another session's 8813 page twice and flipped its mute before noticing its own server had failed with "Address already in use".
 
 **How to apply:** before serving, pick a port `lsof -nP -iTCP:<port> -sTCP:LISTEN` shows free; after starting, confirm the listener's cwd is your own clone; never kill a server you didn't start. Mute and save rules still apply: [[rts-project]], [[browser-checks-silent]].
+
+The fps profiler (RTS tools/perf/runprof.sh) takes the same care: since b1facb2 it refuses a port served from another folder or a results sink of another session, and `PERF_PORT=8744` (any free base; sinks on base−1 and base−2) runs it apart.
