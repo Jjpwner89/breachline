@@ -22,4 +22,8 @@
 - [RTS project](rts-project.md) — the RTS lives in Games/RTS as its own repo (github RTS); read its DESIGN_NOTES.md first
 - [RTS art preferences](rts-art-preferences.md) — complete finished models over kits; Quaternius Fantasy RTS liked; scan broad first
 - [RTS art picks](rts-building-picks.md) — soldiers = Quaternius people + fitted armour; Fantasy RTS buildings; town centre and Wonder castles separate; economy RTS + Village; random house style
-- [RTS questions thread](rts-questions-thread.md) — log fun-either-way tradeoffs to the creator's questions thread, keep building
+- [RTS roles](rts-questions-thread.md) — question thread is now the orchestrator (vision, final check, creator); this session runs dev and hands batches to rts-qc; log tradeoffs there, keep building
+- [RTS build process](rts-build-process.md) — done = played by hand everywhere, one code path, no silent failures, checks(), QC session; verify before relaying
+- [RTS orchestrator](rts-orchestrator.md) — question thread now owns RTS vision, quality and the creator's picture; the Manager session runs dev work (2026-11-20)
+- [RTS north star](rts-north-star.md) — M&B/Pendor climb from very low to very high, clear UI enabling depth; full freedom to add or cut (2026-11-21)
+- [RTS test ports](rts-test-ports.md) — other sessions serve on nearby ports; check a port is free and yours before loading it

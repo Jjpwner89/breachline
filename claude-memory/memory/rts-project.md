@@ -13,7 +13,8 @@ Started 2026-11-18. The RTS is a separate git repo at `/Users/dpuser/Documents/C
 **Why:** the user wants their own game in the Total War / Crusader Kings / Stellaris vein (real time, rising from lord to emperor, combat at every scale) kept apart from Breachline. A simpler War of Dots–style strategy game is a parallel side project; the deeper game takes precedence.
 
 **How to apply:**
-- Worktree sessions of the Breachline repo can't write into `Games/RTS` (a hook blocks the main checkout). Either work in a nested clone inside the worktree, then `git -C Games/RTS pull <that clone> main`, or start the session with `Games/RTS` as its folder.
+- Worktree sessions of the Breachline repo can't write into `Games/RTS` (a hook blocks the main checkout). Work in a nested clone inside the worktree and push to GitHub from it (rebase on origin/main first).
+- Never pull, merge or commit in `Games/RTS` itself (creator's rule, 2026-11-20): it diverged from GitHub with Codex's unpushed animation commits and uncommitted art files from Codex working there.
 - Python can't serve files from Documents (macOS privacy), so preview from an rsync copy in the scratchpad, like Breachline.
-- The saved GitHub token covers the RTS repo (granted 2026-11-18): push with `GIT_TERMINAL_PROMPT=0 git -C /Users/dpuser/Documents/Claude/Games/RTS push`.
+- The saved GitHub token covers the RTS repo (granted 2026-11-18): push from your own clone with `GIT_TERMINAL_PROMPT=0 git push origin HEAD:main`.
 - The setting may become Breachline's world; the user will decide later. See [[breachline-project]].
