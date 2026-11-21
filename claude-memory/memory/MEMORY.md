@@ -26,3 +26,5 @@
 - [RTS build process](rts-build-process.md) — done = played by hand everywhere, one code path, no silent failures, checks(), QC session; verify before relaying
 - [RTS orchestrator](rts-orchestrator.md) — question thread now owns RTS vision, quality and the creator's picture; the Manager session runs dev work (2026-11-20)
 - [RTS north star](rts-north-star.md) — M&B/Pendor climb from very low to very high, clear UI enabling depth; full freedom to add or cut (2026-11-21)
+- [RTS test ports](rts-test-ports.md) — other sessions serve on nearby ports; check a port is free and yours before loading it
+- [RTS token economy](rts-token-economy.md) — Pro plan: Sonnet for routine sessions, restart bloated ones fresh, message at batch end; orchestrator handoff path inside

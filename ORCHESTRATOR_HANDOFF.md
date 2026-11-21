@@ -1,0 +1,61 @@
+# RTS orchestrator handoff (2026-11-21, about 07:00 UTC)
+
+This session (the question thread) is the RTS **orchestrator**. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy first.
+
+## Mandate
+The creator's overnight mandate: make "the best damn strategy game from this skeleton", like Mount & Blade and Prophesy of Pendor.
+- The climb runs from very low to very high, and improving that journey is the key.
+- Look and feel are key: interface, fidelity, animation.
+- Free to add or cut.
+- Free assets are encouraged, and paid assets are never allowed. Codex does 2D only (it checks assets/art/BRIEFS.md every 20 minutes). 3D and animation are ours to find or make.
+- All sessions run in auto mode. Credits are on, but watch the token economy.
+
+## How the work flows
+A session builds a batch, then the **Manager** (local_ae8b4fa1-9cc7-44ca-873c-4367b6fa3dc5) reviews it, then **rts-qc** plays it, then I do a hand look plus checks(), and only then does the creator hear about it.
+
+Verify by unpacking main with `git -C ~/Documents/Claude/Games/RTS fetch && git archive origin/main | tar -x -C <scratchpad>/rts-serve`, then serve with preview "rts-latest" (port 8792). Never commit in Games/RTS. Mute (localStorage rts.audio master 0), restore the sound after, and close the tab.
+
+## Sessions
+- **Opus:** Manager, rts-climb (local_4bc7ecb5), rts-fidelity (local_32e12038), Art (local_a8838fef), animations (local_fe2ccecc), Battles (local_67778a96).
+- **Sonnet:** rts-qc (local_65c8956f), playtester (local_4874314d), rts-assets (local_13b8a5ef), rts-feel (local_d928e5db), rts-ui (local_fe70d310), rts-places (local_b9cb3a6b), militia (local_256ff60d), vassals (local_a9ad58fa), audio (local_2b001e78).
+- If a Sonnet session keeps failing, flip it back to Opus.
+- I started rts-qc, rts-places, the playtester, rts-ui, rts-fidelity, rts-feel, rts-assets and rts-climb, so I can clear them and change their model.
+
+## Pending as of the handoff
+- **Fresh starts:** QC, the Manager and fidelity were asked to write handoffs (qc-handoff.md and manager-handoff.md in their shared notes folders, fidelity-handoff.md in fidelity's scratchpad) and then clear themselves. Message each one "resume from your handoff note" once it's idle and cleared.
+- **Audio:** its new brief may not have been delivered. Resend: give sound to the new features (feel, UI, militia, vassals, the climb), CC0 only.
+- **Playtester:** round 2 has started. Its round 1 priorities are with the Manager (chapel freeze, Space after a speed button, food warnings, silent placement, tab jumps, starving at dead mines, call-banners, sack/occupy/spare).
+- **Chapel freeze:** guarded in places.js (af9699a). The vassals session's source fix and save migration are still due.
+- **Pace B (walk, run on order):** Art sets the speeds, Battles adds the Run order, and the Manager retunes the economy. QC measures foot slide afterwards.
+- **Weapon fixes, with animations:**
+  - the bow is reversed
+  - the spear goes through the shield
+  - the crossbow span looks like an aim pose
+  - the javelin crown
+  - the villager's sledgehammer
+  - shooters glide when ordered off mid-reload
+- **Battles:**
+  - Coldden inner-wall stall (15eb6ec)
+  - ram stall
+  - the 1-in-8 step stop from the slot rule
+  - the schiltron sliding sideways
+  - the Swimming card state
+- **Places:** awaiting the Manager's review, then QC: Normoor, re-laying old memories, the burgh, and abbeys and mines on the map (7f0d6bf, 78868a4).
+- **Viewer batch 2** (the Places tab) has QC next.
+
+## Rulings in force (also in DESIGN_NOTES)
+- Rivers: the 70 m swim rule.
+- Pace B.
+- Titles at a sharper price.
+- Muster costs kept, with clearer warnings.
+- Call the banners never strips your armies.
+- Sack, Occupy or Spare after a storm.
+- Old place memories are re-laid.
+
+## Things I've verified by hand
+- the templates batch
+- places (Kingsbridge and Ashley)
+- the Realm and vassals batch
+
+## Open for the creator
+Nothing is blocking. Prepare a morning report: what changed, what I played, screenshots, and the questions I decided.
