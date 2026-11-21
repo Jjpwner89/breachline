@@ -15,7 +15,7 @@ The vision, in their words and gist:
 - Depth should run from as low as possible to as high as possible; **improving that journey is the key**.
 - Visual fidelity and a clear, easy interface that *enables* depth rather than suffering from it.
 - Priority is even across all areas: fix whatever is weakest. **Looking and feeling really good is key too**: interface, graphical fidelity and animation (creator, 2026-11-21).
-- Finding more free assets ourselves is encouraged (still never paid). Codex checks for art briefs every 20 minutes overnight, so briefs for what can't be found free get picked up quickly.
+- Finding more free assets ourselves is encouraged (still never paid). Codex checks for art briefs every 20 minutes overnight, so briefs for what can't be found free get picked up quickly. **Don't rely on Codex for 3D assets or animation** (creator, 2026-11-21): find free 3D models and clips, or build them ourselves (rig tools, bakes, code); Codex is for 2D pictures and icons.
 - All RTS sessions run in auto mode; keep them running overnight.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
