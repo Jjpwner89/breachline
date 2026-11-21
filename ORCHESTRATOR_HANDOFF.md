@@ -19,6 +19,7 @@
    (3) Battles goes on to field AI step 2 (reserves), then ambushes through woods.
    (4) A creative pass on lord tempers: each house gets a battle habit the player learns, e.g. Varn always holds a hill, Wyndham's horse always swings wide, so beating a lord feels like reading him.
    Memory: rts-keep-it-simple-and-tense (basics copy existing patterns; never loosen the pace).
+10. **08:48 check-in:** the Manager had the four jobs ready but its outgoing messages were paused (the 10-in-a-row rule), so nothing had gone out. I sent them directly: vassals local_a9ad58fa-90f9-404f-aade-b0b4752ab291 (Priority, then leather), Battles local_67778a96-e806-4fe3-98b4-61ec0de996b9 (field AI), rts-ui (icons). I told the Manager not to re-send. Note: SendMessage needs the full session ids for the Manager's sessions. Nothing new on main since 40c05c4, and no QC passes to hand-look at.
 7. State at the clear (about 08:10): every linked session is idle except the asset scout. Climb's queue is empty (both its batches are waiting for QC). Fidelity's bench is done: about 50 fps on Medium at 2400 men. Nothing is broken. The morning report is not written yet; it's the first job.
 
 ## Original handoff (2026-11-21, about 07:00 UTC)
