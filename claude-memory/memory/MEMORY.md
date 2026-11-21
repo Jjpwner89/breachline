@@ -24,3 +24,4 @@
 - [RTS art picks](rts-building-picks.md) — soldiers = Quaternius people + fitted armour; Fantasy RTS buildings; town centre and Wonder castles separate; economy RTS + Village; random house style
 - [RTS questions thread](rts-questions-thread.md) — log fun-either-way tradeoffs to the creator's questions thread, keep building
 - [RTS build process](rts-build-process.md) — done = played by hand everywhere, one code path, no silent failures, checks(), QC session; verify before relaying
+- [RTS orchestrator](rts-orchestrator.md) — question thread now owns RTS vision, quality and the creator's picture; the Manager session runs dev work (2026-11-20)
