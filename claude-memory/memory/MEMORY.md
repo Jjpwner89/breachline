@@ -28,3 +28,4 @@
 - [RTS north star](rts-north-star.md) — M&B/Pendor climb from very low to very high, clear UI enabling depth; full freedom to add or cut (2026-11-21)
 - [RTS test ports](rts-test-ports.md) — other sessions serve on nearby ports; check a port is free and yours before loading it
 - [RTS token economy](rts-token-economy.md) — Pro plan: Sonnet for routine sessions, restart bloated ones fresh, message at batch end; orchestrator handoff path inside
+- [No Codex for RTS 3D](rts-no-codex-3d.md) — 3D models and clips come from CC0 assets or our own bakes and code; Codex is 2D only (2026-11-21)

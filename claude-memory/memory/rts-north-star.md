@@ -18,6 +18,8 @@ The vision, in their words and gist:
 - Finding more free assets ourselves is encouraged (still never paid). Codex checks for art briefs every 20 minutes overnight, so briefs for what can't be found free get picked up quickly. **Don't rely on Codex for 3D assets or animation** (creator, 2026-11-21): find free 3D models and clips, or build them ourselves (rig tools, bakes, code); Codex is for 2D pictures and icons.
 - All RTS sessions run in auto mode; keep them running overnight.
 
+- **Scale goal** (creator, 2026-11-21): battles of 1200+ men at the count and duke stages, with army sizes growing toward that. Battles and fidelity are benching 300/600/1200 men, aiming for 30 fps on Medium. The creator flagged it as a side note: keep pushing everything else forward, since they like the recent changes.
+
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
 **How to apply:** anything goes — add features, cut what isn't working, even new setting elements (magic was their example of how free, not a directive). Go wide (10+ sessions). No sacred guardrails were set, but the build process still holds (verify before calling done; see [[rts-build-process]]). Log reasoning for big calls so the creator can follow in the morning. Related: [[rts-orchestrator]], [[rts-project]].
