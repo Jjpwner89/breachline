@@ -14,7 +14,9 @@ The vision, in their words and gist:
 - Like Mount & Blade and its best mods (Prophesy of Pendor): you start low and climb very high, gaining new mechanics as you rise and escaping loops that plagued you earlier. PoP was more brutal early and more exciting at the end.
 - Depth should run from as low as possible to as high as possible; **improving that journey is the key**.
 - Visual fidelity and a clear, easy interface that *enables* depth rather than suffering from it.
-- Priority is even across all areas: fix whatever is weakest.
+- Priority is even across all areas: fix whatever is weakest. **Looking and feeling really good is key too**: interface, graphical fidelity and animation (creator, 2026-11-21).
+- Finding more free assets ourselves is encouraged (still never paid). Codex checks for art briefs every 20 minutes overnight, so briefs for what can't be found free get picked up quickly.
+- All RTS sessions run in auto mode; keep them running overnight.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
