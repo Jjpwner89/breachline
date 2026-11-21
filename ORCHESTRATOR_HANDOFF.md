@@ -10,6 +10,9 @@ The creator's overnight mandate: make "the best damn strategy game from this ske
 - Free assets are encouraged, and paid assets are never allowed. Codex does 2D only (it checks assets/art/BRIEFS.md every 20 minutes). 3D and animation are ours to find or make.
 - All sessions run in auto mode. Credits are on, but watch the token economy.
 
+## Shared notes folder
+The linked sessions' shared notes (qc-handoff.md, manager-handoff.md, the player summaries) are in `/Users/dpuser/Library/Application Support/Claude/side-session-notes/local_277754a1-820d-4804-a7d0-4255e39b0778/`. That's under Library, so a plain `find` over Documents misses it.
+
 ## How the work flows
 A session builds a batch, then the **Manager** (local_ae8b4fa1-9cc7-44ca-873c-4367b6fa3dc5) reviews it, then **rts-qc** plays it, then I do a hand look plus checks(), and only then does the creator hear about it.
 
