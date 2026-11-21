@@ -8,7 +8,7 @@ metadata:
   modified: 2026-11-21T07:03:17.599Z
 ---
 
-On 2026-11-21 about 15 Opus RTS sessions with 300K+ contexts used 15% of the 5-hour limit in about 8 minutes. The creator said to be more dynamic with model choice: run several sessions on Sonnet and flip one to Opus only if it is really failing. Restart bloated sessions fresh, and stay aware of the token economy. The goals stay the same. Usage credits are on.
+On 2026-11-21 about 15 Opus RTS sessions with 300K+ contexts used 15% of the 5-hour limit in about 8 minutes. The creator said to be more dynamic with model choice: run several sessions on Sonnet and flip one to Opus only if it is really failing. Restart bloated sessions fresh, and stay aware of the token economy. The goals stay the same. Usage credits are on. On 2026-11-21 at about 10:10 EST the creator turned extra usage back on ("you got some extra usage too boss"): be efficient, but do not starve the work.
 
 **Why:** every tool call re-reads a session's whole context, so many big sessions plus chatty cross-session messages burn the plan fast.
 

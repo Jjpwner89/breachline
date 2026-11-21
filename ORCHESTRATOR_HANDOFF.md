@@ -1,6 +1,22 @@
 # RTS orchestrator handoff
 
-## If you are a fresh orchestrator, start here (written 07:55 EST, 2026-11-21)
+## FRESH START (written about 10:15 EST, 2026-11-21): read this first
+1. Read the memory notes rts-orchestrator, rts-north-star (it now includes "rivals play by the player's rules, no AI-only caps"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense.
+2. Run CronList. If no check-in job exists, recreate it (CronCreate "13,43 * * * *") with the check-in prompt: list linked sessions and nudge stalled ones; check RTS origin/main; hand-look at QC passes in a NEW tab (port 8792 serves e0882468…/rts-serve, which the creator plays from, along with their own save, so use ?test= saves only, mute and restore rts.audio exactly, close the tab); keep this file current and commit it.
+3. **Usage:** the creator turned extra usage ON ("you got some extra usage too boss"; $37 of $200 spent at 10:10). The 5-hour window resets at 11:50 EST. Be efficient but don't starve the work.
+4. **The morning report is dropped.** The creator is active and gets updates in chat.
+5. **In flight (creator jobs):**
+   - climb (local_4bc7ecb5): rivals choose economy or war by the player's rules (soldiers from workers, real kit chain, upkeep, a readable stance); a difficulty ramp where falling too far behind is fatal; a passive bot must lose by about minute 110 while an engaged bot climbs; remove 22c8712's AI-only limits (two wars, 75 s raids, a 10-man minimum); free villages keep growing instead of freezing at their caps. The muster bug itself is fixed (22c8712).
+   - fidelity (local_32e12038): a clearly visible night (dark blue, lit windows, dusk and dawn, a sun/moon dial). The creator never saw the old faint night. Ask them about day length once they've seen it.
+   - Battles (local_67778a96-e806-4fe3-98b4-61ec0de996b9): on even odds the temper picks the plan (re-sent and queued at about 10:12; check that it started).
+   - animations (local_fe2ccecc-ce46-4541-a5a5-041e3740eaab): wire the KayKit work clips, the Ankers siege engines and the CMU falls.
+   - audio (local_2b001e78-19b8-4f39-a537-81b6d3e59d4f): wire the 22 Freesound sounds plus night ambience.
+   - QC (local_65c8956f): Priority, leather armour and stuck icons PASSED by hand; still to do are the field AI by hand (is it beatable?) and a live campaign battle, then the Manager's items 4–8.
+6. **Done and passed:** 816063a (Priority, leather armour like shields), ed3b69e (Priority wording), 967cee0 (stuck icons and strip), ad8c049 (field AI, partial), b4cdaa2 (UI wording).
+7. **Next when they land:** playtester round 4 for FUN (Lord to Duke, headless Chrome cdp.py) on the new rivals build; lords with learnable habits; Battles' reserves and woods ambushes.
+8. The Manager (local_ae8b4fa1…) gets an FYI whenever I dispatch to its sessions directly. Its outgoing messages pause after 10 in a row without a user message, so check its transcript if something is quiet. SendMessage to the Manager's sessions needs the full session ids.
+
+## Earlier start-here (07:55, mostly done)
 1. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy, then this whole file.
 2. Recreate the check-in cron (CronCreate "13,43 * * * *"), using the check-in prompt: list stalled or failed RTS sessions and nudge them (the Manager's go through the Manager); hand off and clear any over 250K; hand look at batches that passed QC (use a NEW browser tab, never the seed tab, because the creator plays there); keep this file current and commit it.
 3. **First job: the morning report** the creator was promised for 08:47. Build it from "For the morning report" below plus RTS main's git log since about 02:00, as an Artifact (load artifact-design first). It should cover what changed, what was checked, my rulings (marriage bind, giving way, the arrière-ban, early pacing to vassals, seasons next for fidelity), what's open, the 1200-man numbers, the manual downloads, and the creator questions (an opening before the village? the rulings to confirm; sound needs their ear).
