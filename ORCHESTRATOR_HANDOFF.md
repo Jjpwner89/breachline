@@ -19,6 +19,7 @@
 9. **Night landed: c79c14e** (fidelity). Dark moonlit blue, lit windows and fires, torches at dusk, a torch on every regiment, the sun/moon dial; shots are in look-shots/night-*. Fidelity is running checks() at noon and at night. QC has it queued. The creator wants to see it: refresh port 8792's folder (e0882468…/rts-serve) from origin/main so their reload picks it up, then ask about day length once they've seen a night.
 10. The creator asked how Sonnet is doing. Answer: no switches; Sonnet is fine for scoped build, check and fix work; keep the split.
 11. **The creator OK'd clearing this chat at about 10:20.** If the 13,43 cron didn't survive, recreate it.
+12. **Fresh chat at about 10:15 ("continue grinder" = keep grinding).** The cron was recreated (job 47a38f58, :13/:43). Port 8792's folder was refreshed to main 2794432 (night plus a dial fix), and the creator was told to reload. The 5-hour window is at 99% and resets at 11:50 EST; extra usage is carrying the work. At this check: climb, animations, audio and Battles were running, fidelity was idle and done (checks() 0 fails at noon and night on world, village, town and battle; the dial fits 527 px), and QC had the night look check queued behind its played battles. Nothing new on main since 2794432.
 
 ## Earlier start-here (07:55, mostly done)
 1. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy, then this whole file.
