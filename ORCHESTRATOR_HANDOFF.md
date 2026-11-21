@@ -22,10 +22,12 @@ Verify by unpacking main with `git -C ~/Documents/Claude/Games/RTS fetch && git 
 - I started rts-qc, rts-places, the playtester, rts-ui, rts-fidelity, rts-feel, rts-assets and rts-climb, so I can clear them and change their model.
 
 ## Pending as of the handoff
-- **Fresh starts:** QC, the Manager and fidelity were asked to write handoffs (qc-handoff.md and manager-handoff.md in their shared notes folders, fidelity-handoff.md in fidelity's scratchpad) and then clear themselves. Message each one "resume from your handoff note" once it's idle and cleared.
-- **Audio:** its new brief may not have been delivered. Resend: give sound to the new features (feel, UI, militia, vassals, the climb), CC0 only.
+- **Fresh starts (07:10 UTC):** QC and fidelity cleared and were told to resume (fidelity's note: its old scratchpad 450cb6dc…/fidelity-handoff.md). The Manager hadn't cleared yet (135K, fine). The creator confirmed: keep clearing bloated sessions with handoff notes. When telling a cleared session to resume, give the note's full path, since it can't remember where it put it.
+- **Audio:** briefed again at 07:12 UTC: real CC0 sounds for 'charge', 'order' and 'stage' first (1b8be55 added stand-ins), then sound for the new features, then a handoff note and a clear (it was at 275K).
 - **Playtester:** round 2 has started. Its round 1 priorities are with the Manager (chapel freeze, Space after a speed button, food warnings, silent placement, tab jumps, starving at dead mines, call-banners, sack/occupy/spare).
-- **Chapel freeze:** guarded in places.js (af9699a). The vassals session's source fix and save migration are still due.
+- **Chapel freeze:** fixed. It's guarded in places.js (af9699a), and the vassals session fixed the source and added save repair plus a checks() row (50f186c). QC and my own look still need to confirm it: grant a build petition, then save and reload.
+- **New on main by 07:12 UTC:** the look batch 1 (21415cf), Pace B walk and run (fea68d3), the shared picture setting (8d924d6, dc8a23c), the ram-loss storm fix (7058c38), world-map panels (e0f6c73), UI sounds (9533255) and animation libraries (2a0afb6). None of it is checked by hand yet; the browser pane was hidden.
+- **Since the handoff:** rts-feel pushed dcc5229 and fd749e3, and checks() fails until Audio adds 3 sound names; Audio has been briefed. rts-places pushed war camps and mountain gates (4fa91d6).
 - **Pace B (walk, run on order):** Art sets the speeds, Battles adds the Run order, and the Manager retunes the economy. QC measures foot slide afterwards.
 - **Weapon fixes, with animations:**
   - the bow is reversed

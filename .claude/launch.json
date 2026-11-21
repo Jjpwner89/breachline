@@ -64,6 +64,15 @@
         "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games/98895e85-5fc5-47e2-a64c-538a6d570f7e/scratchpad/site && exec python3 -m http.server 8787 --bind 127.0.0.1"
       ],
       "port": 8787
+    },
+    {
+      "name": "rts-latest",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-502/-Users-dpuser-Documents-Claude-Games--claude-worktrees-question-thread-4a510c/e0882468-9d16-4826-bd80-48ead598ac62/scratchpad/rts-serve && exec python3 -m http.server 8792 --bind 127.0.0.1"
+      ],
+      "port": 8792
     }
   ]
 }
