@@ -74,3 +74,4 @@ Nothing is blocking. Prepare a morning report: what changed, what I played, scre
 - Playtest round 2: the palisade hand-storm is a meat grinder (the worst item); loot payoffs are the best part.
 - Fidelity fps: battle 22 on Medium, 16 on High. Told to reach Medium 30+ before vegetation.
 - The network dropped around 07:40 UTC; all sessions were restarted.
+- Playtest round 3 interim (state checks only): the worked-out workers fix (aacbeb7) is confirmed. The ram-loss storm fix (7058c38) is NOT fixed: a new mine is always being dug, so the axes never come out. That's with Battles via the Manager. The playtester was offered headless Chrome over CDP, since the pane stays hidden overnight.
