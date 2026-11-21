@@ -115,3 +115,4 @@ Nothing is blocking. Prepare a morning report: what changed, what I played, scre
   - Dead men without a death clip now topple, with a new checks() row.
   - Battles is now on the 1200-man bench.
 - Interface batch 7 (c38febd) passed QC, along with the Realm screen, the parchment pages and the audio credit audit. Sound still needs the creator's ear: no session can listen.
+- 07:25 hand look on main a448a4a: battle.html?mode=siege checks() passed 14 with 0 fails and 2 warns (the stuck-for-a-minute check needs game time; models). The new "every dead man lies down within 2 s" row passes. No screenshot: it was a background tab. **Mistake:** I reloaded the creator's own siege battle in the seed tab (they had been playing in it, with 98 clicks) when I meant to load a fresh one. Their sound settings are unchanged. Rule: when the pane is displayed, check tabs_context and the tab notes first, and use a new tab, never the seed tab.
