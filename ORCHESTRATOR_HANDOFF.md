@@ -16,6 +16,10 @@
 7. **Next when they land:** playtester round 4 for FUN (Lord to Duke, headless Chrome cdp.py) on the new rivals build; lords with learnable habits; Battles' reserves and woods ambushes.
 8. The Manager (local_ae8b4fa1…) gets an FYI whenever I dispatch to its sessions directly. Its outgoing messages pause after 10 in a row without a user message, so check its transcript if something is quiet. SendMessage to the Manager's sessions needs the full session ids.
 
+9. **Night landed: c79c14e** (fidelity). Dark moonlit blue, lit windows and fires, torches at dusk, a torch on every regiment, the sun/moon dial; shots are in look-shots/night-*. Fidelity is running checks() at noon and at night. QC has it queued. The creator wants to see it: refresh port 8792's folder (e0882468…/rts-serve) from origin/main so their reload picks it up, then ask about day length once they've seen a night.
+10. The creator asked how Sonnet is doing. Answer: no switches; Sonnet is fine for scoped build, check and fix work; keep the split.
+11. **The creator OK'd clearing this chat at about 10:20.** If the 13,43 cron didn't survive, recreate it.
+
 ## Earlier start-here (07:55, mostly done)
 1. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy, then this whole file.
 2. Recreate the check-in cron (CronCreate "13,43 * * * *"), using the check-in prompt: list stalled or failed RTS sessions and nudge them (the Manager's go through the Manager); hand off and clear any over 250K; hand look at batches that passed QC (use a NEW browser tab, never the seed tab, because the creator plays there); keep this file current and commit it.
