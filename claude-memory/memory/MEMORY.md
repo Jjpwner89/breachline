@@ -7,7 +7,7 @@
 - [Quick balance check](quick-balance-check.md) — every new card or deck gets a quick paired check; big audits for rebalances only
 - [Deck goals](breachline-deck-goals.md) — decks follow their own plan with some simple commons; starters clear their campaign and show off the colour; Claude carries balance and deck changes through the whole game
 - [Deck rules](breachline-deck-rules.md) — 40-card decks, flat 3 copies of any card (2026-11-11); too-strong legendaries get a higher cost; legendary band +2 to +5 (2026-11-14)
-- [Silent browser checks](browser-checks-silent.md) — mute Breachline before clicking in the built-in browser, close the tab after
+- [Silent browser checks](browser-checks-silent.md) — mute first, use a fresh tab never the creator's, close it after
 - [Mobile layout plan](mobile-layout-plan.md) — upright = A, sideways = B, aligned; built in phone.css (2026-11-12)
 - [Future features tracker](future-features-tracker.md) — parked keywords and gameplay ideas in breachline/FUTURE_FEATURES.md; suggest, never build without approval
 - [Real players](breachline-real-players.md) — the creator's two siblings play the live game; progression was the big hit, so guard their saves
