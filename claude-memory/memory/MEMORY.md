@@ -20,3 +20,7 @@
 - [Claude playtests](claude-playtests-for-spells.md) — test cards swapped into starters at the same cost, redraw under 2 lands, ask about deck, out-of-band cards and frustrations; record in PLAYTESTS.md
 - [Memory backup in the repo](memory-backup-in-repo.md) — claude-memory/ holds this memory and the restore guide; run its sync.sh after memory changes
 - [RTS project](rts-project.md) — the RTS lives in Games/RTS as its own repo (github RTS); read its DESIGN_NOTES.md first
+- [RTS art preferences](rts-art-preferences.md) — complete finished models over kits; Quaternius Fantasy RTS liked; scan broad first
+- [RTS art picks](rts-building-picks.md) — soldiers = Quaternius people + fitted armour; Fantasy RTS buildings; town centre and Wonder castles separate; economy RTS + Village; random house style
+- [RTS questions thread](rts-questions-thread.md) — log fun-either-way tradeoffs to the creator's questions thread, keep building
+- [RTS build process](rts-build-process.md) — done = played by hand everywhere, one code path, no silent failures, checks(), QC session; verify before relaying
