@@ -25,6 +25,8 @@ The vision, in their words and gist:
 
 - **Rivals play by the player's rules** (creator, 2026-11-21): NPC houses choose between economy and war the same way the player does. A soldier is a worker taken from work, kit comes from the same production chain, and armies cost upkeep. No abstract pools that let the AI skip the trade-off, and no AI-only caps or throttles either: if it swings too hard, fix the economics.
 
+- **The first conquest is home-grown** (creator, 2026-11-21): no hired shortcut before Lord. The household guard unlocks at Lord, costs more plus a running wage, and can't be disbanded into villagers (like mercenaries), so bought soldiers drain the economy and never turn into free people.
+
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
 **How to apply:** anything goes — add features, cut what isn't working, even new setting elements (magic was their example of how free, not a directive). Go wide (10+ sessions). No sacred guardrails were set, but the build process still holds (verify before calling done; see [[rts-build-process]]). Log reasoning for big calls so the creator can follow in the morning. Related: [[rts-orchestrator]], [[rts-project]].
