@@ -23,7 +23,7 @@ The vision, in their words and gist:
 - **Floor of the climb** (creator, 2026-11-21): the game starts you as a village's lord; there is no opening before the village.
 - **Downloads** (creator, 2026-11-21): sessions may download free (CC0 or equally free) assets themselves, including from itch and Freesound pages. They must read each licence first, and never pay or create an account.
 
-- **Rivals play by the player's rules** (creator, 2026-11-21): NPC houses choose between economy and war the same way the player does. A soldier is a worker taken from work, kit comes from the same production chain, and armies cost upkeep. No abstract pools that let the AI skip the trade-off.
+- **Rivals play by the player's rules** (creator, 2026-11-21): NPC houses choose between economy and war the same way the player does. A soldier is a worker taken from work, kit comes from the same production chain, and armies cost upkeep. No abstract pools that let the AI skip the trade-off, and no AI-only caps or throttles either: if it swings too hard, fix the economics.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
