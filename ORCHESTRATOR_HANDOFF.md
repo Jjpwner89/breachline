@@ -107,3 +107,11 @@ Nothing is blocking. Prepare a morning report: what changed, what I played, scre
 - Playtest round 3b (main 2e81eaa, seed 91, 19 game minutes): the early-game fixes work. Wood stays at 50–130 all game, houses get built, cards show food and room, ruins clear in about 3 minutes, and the outlaw warnings read well. Still open: soldiers go out only 90 s into a raid, an unanswered raid costs 161 food and 116 gold, and the carpenter site waited 6 minutes with no builders because every villager had a job. Notes: player-round3b-economy-check.md.
 - QC checked militia, raid speed, climb round 4 and interface batches 4 and 5: nothing broke, with four small findings (GENRE_BASICS ac678b2). Still unchecked: tribute, the spy label, the weak captain, the Pace B leftovers and war camps.
 - UI finished its queue items 1–4: the Goals panel, news strips and march notice (75a6693), battle cards (ea308c3), the Realm frame (baea265), parchment menus, credits and muster (e7e955a), and why() on the wagon and Gather buttons (d5fa14a). Next: hand play at the Duke and Lord ranks at 1024 px. The checks() fail on ?test=duke and the villager idle in the hall are with the Manager.
+- **Battles round 4 (2871574, 2e81eaa) answers the creator's storm items; on main, with QC for hand play:**
+  - The Brackdale hand-storm now loses 22–28 of 107 men (it was 76), against auto-resolve's 24.
+  - Half the villagers survive a capture (it was 6 of 36).
+  - The AI's storm draws off when the gate won't fall.
+  - Breaches open along the whole broken stretch, and men re-route to the nearest one.
+  - Dead men without a death clip now topple, with a new checks() row.
+  - Battles is now on the 1200-man bench.
+- Interface batch 7 (c38febd) passed QC, along with the Realm screen, the parchment pages and the audio credit audit. Sound still needs the creator's ear: no session can listen.
