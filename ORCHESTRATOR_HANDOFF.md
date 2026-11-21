@@ -1,4 +1,13 @@
-# RTS orchestrator handoff (2026-11-21, about 07:00 UTC)
+# RTS orchestrator handoff
+
+## If you are a fresh orchestrator, start here (written 07:55 EST, 2026-11-21)
+1. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy, then this whole file.
+2. Recreate the check-in cron (CronCreate "13,43 * * * *"), using the check-in prompt: list stalled or failed RTS sessions and nudge them (the Manager's go through the Manager); hand off and clear any over 250K; hand look at batches that passed QC (use a NEW browser tab, never the seed tab, because the creator plays there); keep this file current and commit it.
+3. **First job: the morning report** the creator was promised for 08:47. Build it from "For the morning report" below plus RTS main's git log since about 02:00, as an Artifact (load artifact-design first). It should cover what changed, what was checked, my rulings (marriage bind, giving way, the arrière-ban, early pacing to vassals, seasons next for fidelity), what's open, the 1200-man numbers, the manual downloads, and the creator questions (an opening before the village? the rulings to confirm; sound needs their ear).
+4. QC (local_65c8956f) is waiting to be cleared; the creator has it open, and my clear was blocked. Once cleared, resume it from shared notes/qc-handoff.md.
+5. Usage: the window was at 64% at 07:53, resetting at 11:50 EST, with extra usage off.
+
+## Original handoff (2026-11-21, about 07:00 UTC)
 
 This session (the question thread) is the RTS **orchestrator**. Read the memory notes rts-orchestrator, rts-north-star, rts-build-process and rts-token-economy first.
 
