@@ -6,6 +6,12 @@
 3. **First job: the morning report** the creator was promised for 08:47. Build it from "For the morning report" below plus RTS main's git log since about 02:00, as an Artifact (load artifact-design first). It should cover what changed, what was checked, my rulings (marriage bind, giving way, the arrière-ban, early pacing to vassals, seasons next for fidelity), what's open, the 1200-man numbers, the manual downloads, and the creator questions (an opening before the village? the rulings to confirm; sound needs their ear).
 4. QC (local_65c8956f) is waiting to be cleared; the creator has it open, and my clear was blocked. Once cleared, resume it from shared notes/qc-handoff.md.
 5. Usage: the window was at 64% at 07:53, resetting at 11:50 EST, with extra usage off.
+6. **The creator's answers (about 08:10 EST, 2026-11-21):**
+   - **Downloads: permission given.** The asset scout (local_13b8a5ef) was sent to fetch Ankers Low Poly Medieval Weapons and the KayKit Character Animations zip, and to do the licence reads (the Freesound candidates, Devil's Work.shop snowy trees, CMU mocap falls). Free and CC0 only: no paying and no accounts. Check its result and report it to the creator.
+   - **No opening before the village.** The village start is the floor, so drop that question.
+   - **Day length:** the creator hasn't seen a night yet while playing, so it's undecided. Ask again after they've played one.
+   - Still unanswered: my rulings (the marriage bind, the cost of giving way, the arrière-ban, early pacing given to vassals), and the sounds by ear.
+7. State at the clear (about 08:10): every linked session is idle except the asset scout. Climb's queue is empty (both its batches are waiting for QC). Fidelity's bench is done: about 50 fps on Medium at 2400 men. Nothing is broken. The morning report is not written yet; it's the first job.
 
 ## Original handoff (2026-11-21, about 07:00 UTC)
 
