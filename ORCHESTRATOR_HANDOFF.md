@@ -61,3 +61,16 @@ Verify by unpacking main with `git -C ~/Documents/Claude/Games/RTS fetch && git 
 
 ## Open for the creator
 Nothing is blocking. Prepare a morning report: what changed, what I played, screenshots, and the questions I decided.
+
+## Overnight (the creator went to bed about 02:55 local, 2026-11-21)
+- The creator said keep working at full speed: credits are fine and the fleet runs on.
+- This session runs a check-in cron at :13 and :43, and a one-shot morning report at 08:47 local. Both are session-only, so if this chat is cleared, set them up again.
+- New creator goal: 1200+ man battles at the count and duke stages. The Manager is having Battles and fidelity bench 300/600/1200 men, aiming for 30 fps on Medium. It's in memory under rts-north-star.
+- Creator bugs from a fort storm played by hand: men can't path through broken walls, and some dead men stay standing. Both are with the Manager.
+
+## For the morning report
+- The graphics batch (light, sky, textures, water, trees, picture setting), Pace B walk and run, war camps and mountain gates, and greyed buttons that say why.
+- QC batch: new campaign fine to 17 min, Coldden inner gate fixed. Broken: the village orders bar overflows, the silent "Waiting at Coldden", a stuck Dunmore spearmen check, a notice over Begin battle, crossbow and catch-up foot slide.
+- Playtest round 2: the palisade hand-storm is a meat grinder (the worst item); loot payoffs are the best part.
+- Fidelity fps: battle 22 on Medium, 16 on High. Told to reach Medium 30+ before vegetation.
+- The network dropped around 07:40 UTC; all sessions were restarted.
