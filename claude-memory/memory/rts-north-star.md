@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-22T14:06:52.108Z
+  modified: 2026-11-22T16:11:40.539Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -18,7 +18,7 @@ The vision, in their words and gist:
 - Finding more free assets ourselves is encouraged (still never paid). Codex checks for art briefs every 20 minutes overnight, so briefs for what can't be found free get picked up quickly. **Don't rely on Codex for 3D assets or animation** (creator, 2026-11-21): find free 3D models and clips, or build them ourselves (rig tools, bakes, code); Codex is for 2D pictures and icons.
 - All RTS sessions run in auto mode; keep them running overnight.
 
-- **Scale goal** (creator, 2026-11-21): battles of 1200+ men at the count and duke stages, with army sizes growing toward that. Battles and fidelity are benching 300/600/1200 men, aiming for 30 fps on Medium. The creator flagged it as a side note: keep pushing everything else forward, since they like the recent changes.
+- **Scale goal** (creator, 2026-11-21): battles of 1200+ men at the count and duke stages, with army sizes growing toward that. **Performance is settled** (creator, 2026-11-22): spend no time on optimisation; the work is the mechanics that grow armies for rivals, the player and the player's vassals alike.
 
 - **Floor of the climb** (creator, 2026-11-21): the game starts you as a village's lord; there is no opening before the village.
 - **Downloads** (creator, 2026-11-21): sessions may download free (CC0 or equally free) assets themselves, including from itch and Freesound pages. They must read each licence first, and never pay or create an account.
