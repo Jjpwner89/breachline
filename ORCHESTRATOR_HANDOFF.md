@@ -69,6 +69,13 @@
 112. **Phase 2 started (battles): rules 1 (house arrière-ban) and 4 (surplus gold hires companies)** in arriere.js, rivals.js and companies.js, which don't clash with climb's world.js and militia.js work. Rules 2 and 5 wait for climb's floor and walls-between-houses to land (they touch world.js).
 113. **Climb 44d082e (no invented people on capture) and b58269d (walls ×1.4 between houses) ACCEPTED**; checks 0 fails on all five saves. The war sims are still running, with the numbers coming as a DESIGN_NOTES commit. Battles told rules 2 and 5 and the two checks can follow rules 1 and 4. QC queued. Climb is IDLE after the sims.
 114. **Climb fa5323b (wars-to-120 sim notes) ACCEPTED.** Results:
+115. **Siege trains are paid on ONE path, against every target, the player included** (my ruling). Until now houses got free rams and ladders against the player, plus mangonels after minute 25 and trebuchets after 40.
+    - Houses build a siege workshop at their staging place, pay the engine costs in goods from that place's stores, and draw crew from its people.
+    - The ×1.4 for walls drops only once the train is paid for.
+    - Engines unlock for houses the way they do for the player.
+    - Climb keeps its change in runPlan to one siegeReady helper and coordinates with Battles directly, since Battles' rules 1 and 4 are in the muster phase.
+    - FAIL if houses stop sieging the player; any fix goes through their economy, never a discount.
+    - Tell the creator: house sieges on their walls now cost the house real goods.
     - Wars 46→50.
     - Assaults on walled places 28→18.
     - Walled places taken 14→7.
@@ -83,7 +90,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–114 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–115 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
