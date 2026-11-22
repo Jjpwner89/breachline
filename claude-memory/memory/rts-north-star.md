@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-22T06:03:27.449Z
+  modified: 2026-11-22T14:06:52.108Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -29,6 +29,8 @@ The vision, in their words and gist:
 
 - **What lands, protect it** (creator playtest, 2026-11-21): "i really liked becoming a lord and placing a lot of town templates and starting to accelerate my growth as i expanded ashford" (160 people against 300 homes in about 80 minutes). The field AI's house habits and orderly withdrawal also landed ("battles feel pretty good"). Balance work must not slow the Lord step, town templates or that growth acceleration. Also landing: paying off a threatening house; the early raids ("satisfying"); getting the barracks up just in time for the second raid; and the economy see-saw ("go too hard in crafting, then focus food, then weapons, then you realise you're missing some component so you monitor that for a bit, then your econ is good, then attack a weak nearby village"). Keep that see-saw: shortages should be readable and fixable, never removed.
 - **Taxes come from development, CK2-style** (creator, 2026-11-22): early gold was too lucrative (the starter village made 24 a minute and nearly paid a household guard). A bare place pays little, built-up places pay well, and markets pay more through actual trade, not passively.
+- **Gold now right; the midgame lands** (creator, 2026-11-22): after the CK2 tax, "if you want to support mercenaries and a large army you need to build up that portion of your economy". Minutes 15–45 are "really fun", not a drag. They reached Count at about minute 90 (one big town first). The orchestrator's pace target: Lord 25–40, Count 60–90 by style, Duke 2–3 hours.
+- **Day and night** (creator, 2026-11-22): a longer day, with night, dusk and dawn kept the same length.
 - **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
