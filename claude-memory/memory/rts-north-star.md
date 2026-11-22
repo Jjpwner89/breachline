@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-22T05:50:54.424Z
+  modified: 2026-11-22T05:56:42.013Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -27,9 +27,7 @@ The vision, in their words and gist:
 
 - **The first conquest is home-grown** (creator, 2026-11-21): no hired shortcut before Lord. The household guard unlocks at Lord, costs more plus a running wage, and can't be disbanded into villagers (like mercenaries), so bought soldiers drain the economy and never turn into free people.
 
-- **What landed in play** (creator, 2026-11-21, ~80 min session): becoming a Lord, placing lots of town templates, and growth speeding up as the home village expanded (Ashford reached 160 people of 300 max). Protect that mid-game acceleration through balance work.
-
-- **What lands, protect it** (creator playtest, 2026-11-21): "i really liked becoming a lord and placing a lot of town templates and starting to accelerate my growth as i expanded ashford" (160 people against 300 homes in about 80 minutes). The field AI's house habits and orderly withdrawal also landed ("battles feel pretty good"). Balance work must not slow the Lord step, town templates or that growth acceleration.
+- **What lands, protect it** (creator playtest, 2026-11-21): "i really liked becoming a lord and placing a lot of town templates and starting to accelerate my growth as i expanded ashford" (160 people against 300 homes in about 80 minutes). The field AI's house habits and orderly withdrawal also landed ("battles feel pretty good"). Balance work must not slow the Lord step, town templates or that growth acceleration. Also landing: paying off a threatening house; the early raids ("satisfying"); getting the barracks up just in time for the second raid; and the economy see-saw ("go too hard in crafting, then focus food, then weapons, then you realise you're missing some component so you monitor that for a bit, then your econ is good, then attack a weak nearby village"). Keep that see-saw: shortages should be readable and fixable, never removed.
 - **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
