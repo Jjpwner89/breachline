@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-21T06:09:12.872Z
+  modified: 2026-11-22T05:50:54.424Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -26,6 +26,11 @@ The vision, in their words and gist:
 - **Rivals play by the player's rules** (creator, 2026-11-21): NPC houses choose between economy and war the same way the player does. A soldier is a worker taken from work, kit comes from the same production chain, and armies cost upkeep. No abstract pools that let the AI skip the trade-off, and no AI-only caps or throttles either: if it swings too hard, fix the economics.
 
 - **The first conquest is home-grown** (creator, 2026-11-21): no hired shortcut before Lord. The household guard unlocks at Lord, costs more plus a running wage, and can't be disbanded into villagers (like mercenaries), so bought soldiers drain the economy and never turn into free people.
+
+- **What landed in play** (creator, 2026-11-21, ~80 min session): becoming a Lord, placing lots of town templates, and growth speeding up as the home village expanded (Ashford reached 160 people of 300 max). Protect that mid-game acceleration through balance work.
+
+- **What lands, protect it** (creator playtest, 2026-11-21): "i really liked becoming a lord and placing a lot of town templates and starting to accelerate my growth as i expanded ashford" (160 people against 300 homes in about 80 minutes). The field AI's house habits and orderly withdrawal also landed ("battles feel pretty good"). Balance work must not slow the Lord step, town templates or that growth acceleration.
+- **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
 
