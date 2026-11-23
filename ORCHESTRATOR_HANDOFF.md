@@ -359,6 +359,12 @@
     - Orchestrator verified Duke at 203/0 on :8872 with the pane visible; it takes about 75 s to load.
     - Sims: Lord 29–39 (about +1 min), with no Count by 100 before or after. A passive player still holds their seat at 62–65.
     **CREATOR: 'just push everything, i wont play until that's in'.** Refresh :8792 only once the merc ladder (climb) and the seasons parts (Places, UI, Battles, Feel winter food) have landed and been checked, then tell the creator.
+172. **UI e9b1dc8 (seasons part 4: ring and heralds) ACCEPTED.**
+    - The ring is in ui/seasonring.js: map and village, not field battles.
+    - Heralds go out through world.js seasonStep. The first season and a loaded save aren't announced, since seasonSeen is saved.
+    - Winter in Part 1 has a new line: 'Snow on the roads: armies march slower. Keep the larder full until spring.' In Part 2, the north's herald stands alone.
+    - Checks are 0 fails on all test worlds, and it was played by hand at 1280 and 527.
+    Seasons left: (1) Places, (3) Battles, (2) Feel winter food. UI is idle; give it nothing new until the creator's playtest feedback.
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
@@ -366,7 +372,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–171 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–172 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
