@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-22T16:11:40.539Z
+  modified: 2026-11-23T05:27:53.930Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -31,6 +31,7 @@ The vision, in their words and gist:
 - **Taxes come from development, CK2-style** (creator, 2026-11-22): early gold was too lucrative (the starter village made 24 a minute and nearly paid a household guard). A bare place pays little, built-up places pay well, and markets pay more through actual trade, not passively.
 - **Gold now right; the midgame lands** (creator, 2026-11-22): after the CK2 tax, "if you want to support mercenaries and a large army you need to build up that portion of your economy". Minutes 15–45 are "really fun", not a drag. They reached Count at about minute 90 (one big town first). The orchestrator's pace target: Lord 25–40, Count 60–90 by style, Duke 2–3 hours.
 - **Day and night** (creator, 2026-11-22): a longer day, with night, dusk and dawn kept the same length.
+- **Plane playtest lands** (creator, 2026-11-22): the arrière-ban answer to a raid ("oh shit → I have a response → we won → now I can get them back… incredible loop"); leaving a battle to the captain; Norhold reinforcing a camp with 1,331 men so they had to run ("very Pendor-esque… scale getting injected"). Mercenary-bought snowballing "felt like I cheated" until Norhold answered it. Combat wish: slower, more spread, units locked in, tanky elites. They want sandbox battles to compare settings before picking.
 - **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
