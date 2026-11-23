@@ -74,6 +74,15 @@
 117. **Creator's rulings on the plane notes, and routing:**
 118. **Battles d87b560 (auto-resolve: the winner loses what the loser could kill) and d8c0304 (rules 1 and 4) ACCEPTED.**
 119. **Creator, 2026-11-22 evening:**
+120. **Places bca30f7 (the plane economy batch, items 1–7) ACCEPTED.**
+    - Food reaching the stores +58% on a keep-haulers-only town; seconds hungry 90→30.
+    - Storehouse carts carry 40 and are 15% quicker.
+    - Plank and wood hold-backs deleted.
+    - Militia called within CALL_RANGE 80 m.
+    - Undrafted villagers run back.
+    - Market buys at about 2.7× the sale price.
+    Not seen by hand; goes to the end-of-night QC. Places now has Norhold-yields-less and the arm-the-ban PLAN, moved from climb; climb is siege train then mercs only.
+    **END-OF-NIGHT QC LIST** (one pass; add as commits land): everything since 84c56b5 on main, especially 84c56b5, 959ffae, 51ee31a, 43dbd5e, 57341b4, 4bb3054, 7dc1ef6, 187f659, 99bc184, 8c9e6c8, d0d75c0 (fps), 05e2291 (old saves), 44d082e, b58269d, d8c0304, d87b560, bca30f7 (the hauling feel, carts visible, honest hunger alert, militia call distance, the market buy UI, old saves), and the Walls-tab row on town.html (it fails on old code too: a hidden-pane artifact?).
     - (a) MERCENARIES BREAK THE CLIMB, my miss: they were Duke at minute 61 against a 2–3 h target, and held half the map 20 min after the first ban win. Companies cost about 3.6 gold a man up front for mail-armoured troops, the wage is under a man-at-arms', and all six can be hired at once. Climb's top priority after the siege train is a merc rebalance plus a merc-rush sim profile: Duke no sooner than about 2 h. Then Norhold, then the arm-the-ban plan.
     - (b) A passive player losing at about 62–65 min is FINE; battles told not to tune for it.
     - (c) Movement oddities first, then the sandbox settings; feel told.
@@ -126,7 +135,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–119 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–120 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
