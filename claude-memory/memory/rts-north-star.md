@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ef6fad51-ab65-46d9-9d31-d37b489e718c
-  modified: 2026-11-23T05:27:53.930Z
+  modified: 2026-11-23T05:42:59.597Z
 ---
 
 On 2026-11-21 the creator gave the orchestrator a standing mandate to "create the best damn strategy game from this skeleton", running overnight with wide autonomy.
@@ -32,6 +32,7 @@ The vision, in their words and gist:
 - **Gold now right; the midgame lands** (creator, 2026-11-22): after the CK2 tax, "if you want to support mercenaries and a large army you need to build up that portion of your economy". Minutes 15–45 are "really fun", not a drag. They reached Count at about minute 90 (one big town first). The orchestrator's pace target: Lord 25–40, Count 60–90 by style, Duke 2–3 hours.
 - **Day and night** (creator, 2026-11-22): a longer day, with night, dusk and dawn kept the same length.
 - **Plane playtest lands** (creator, 2026-11-22): the arrière-ban answer to a raid ("oh shit → I have a response → we won → now I can get them back… incredible loop"); leaving a battle to the captain; Norhold reinforcing a camp with 1,331 men so they had to run ("very Pendor-esque… scale getting injected"). Mercenary-bought snowballing "felt like I cheated" until Norhold answered it. Combat wish: slower, more spread, units locked in, tanky elites. They want sandbox battles to compare settings before picking.
+- **Right trade-offs must pay off** (creator, 2026-11-22): the fun is a continuous run of economy trade-offs (wood vs farms vs houses, when to go to mines and quarries, foundation vs expansion). A player who made the right call must get the boon. Food starving at the farms while 500 meals sit in yards is the wrong kind of friction; too few storehouses biting is the right kind. Haul order: building sites (the player's own action), then food, then workshops, then the barracks. **The player manages their own goods**: no hidden reserves like "saving planks for building" ("If I run out of planks, I run out of planks"). Show rival strength in words ("slightly stronger", "badly outmatched"), not numbers.
 - **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.

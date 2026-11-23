@@ -71,6 +71,24 @@
 114. **Climb fa5323b (wars-to-120 sim notes) ACCEPTED.** Results:
 115. **Siege trains are paid on ONE path, against every target, the player included** (my ruling). Until now houses got free rams and ladders against the player, plus mangonels after minute 25 and trebuchets after 40.
 116. **Creator's plane playtest** (84c56b5): Duke at minute 61 with 820+ men, through mercenaries. Notes and screenshots are in the shared notes, creator-plane-playtest-2026-11-22.md and plane-4…9.
+117. **Creator's rulings on the plane notes, and routing:**
+    - Haul order: sites, food, workshops, barracks.
+    - Plank reserve removed outright (my call: the wood hold-back goes too).
+    - Storehouse haulers get carts: more per trip and a bit faster. Keep haulers stay as they are. No chained hauls.
+    - Market buys, at a worse price than selling.
+    - Tribute strength shown in words.
+    - Militia called only within a set distance of the village, with an alert on entry; undrafted villagers jog back to work.
+    - Combat sandbox before any pace change.
+    - Arm-the-ban design approved.
+    Routed:
+    - places: the economy batch, items 1–7.
+    - feel: the sandbox, then converging units, the gap, breach and pathing.
+    - ui: tribute words, ceremonies at 1×, granting sworn houses.
+    - battles: the auto-resolve loss floor, next.
+    - climb (after the siege train): Norhold yields less, then a plan for arming the ban.
+    - fidelity: the torch look and house upgrades L2/L3.
+    - animations: the victory march.
+    - MINE: a houses-as-vassals fusion proposal for the creator.
     - LOVED: the arrière-ban raid loop at minute 41, captain view, the Norhold 1,331 reinforcements, the econ grind.
     - BUGS: auto-resolve 12% loss floor; food piling at farms (yard-clearing ranked last); plank reserve hides why; Wyndham can't be granted land; palisade breach behaviour; coronation too fast.
     - NOODLE ONLY, no build: haul carts and chains, market buying, tribute strength, house upgrades, armed arrière-ban, Norhold surrenders less, houses-as-vassals fusion, combat pace with sandbox battles.
@@ -96,7 +114,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–116 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–117 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
