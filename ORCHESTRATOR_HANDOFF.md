@@ -96,6 +96,14 @@
 139. **Battles 75447df (MEET_AT 1.0) ACCEPTED.**
 140. **Feel 9245d47: settings F and G in the sandbox** (the sandbox is refreshed).
 141. **The sandbox moved to http://localhost:8872/sandbox.html.** It's served by scratchpad/nocache_server.py with no-store, because :8871's cached ES modules hid F and G even after a hard reload.
+142. **QC end-of-night report** (code at 4dd97ca + 822b147).
+    - checks(): the only fail on all five saves is the ceremony row, now fixed by 5cbd59d.
+    - PASS: army growth, meets, arm the ban, granting, torches, march, Norhold and all earlier work.
+    - PARTIAL: bca30f7 (buying, carts, the 80 m call and running villagers not seen), house levels side by side.
+    - NOT SEEN: the movement and sally commits (the siege page is too slow in software GL), 75447df, real fps.
+    - QC: no blocker for :8792.
+    - Small finds: the sworn box at 527 and the lighting row timing (sent to UI). A sworn house's army isn't in the banners call: design.
+    **:8792 prepared** at 5cbd59d in scratchpad/rts-serve with nocache_server.py (launch.json rts-latest). Not started; waiting on the creator.
     **Climb 361294b (mercs):** price 85 or 65 a man, wage 1.75, cap by rank (L1, C2, D3, K4), back on the market after 20 min.
     - Merc rush: Count/Duke never, against 66–85/108–132 before. LIKELY OVERCORRECTED: a company is about 4,700 gold.
     - Asked for income numbers and a 30–40 middle price. Aim: the merc rush reaches Count at 70–90 and Duke at about 2 h or later.
@@ -227,7 +235,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–141 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–142 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
