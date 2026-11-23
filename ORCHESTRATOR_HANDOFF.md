@@ -84,6 +84,13 @@
 127. **Feel 0fc75fd ACCEPTED** (live).
 128. **Feel 582c493 ACCEPTED.** The live cap is now 3 men on one foe; at 4 it didn't bind. 120 against 30: at most 88 engaged and the crowd stays at least 10 m wide. The swarm checks ask for 50% and 60%. Under E the band still closes round them (83 of 120 engaged), only slower through damage. The sandbox is refreshed.
 129. **UI 5e40a0a ACCEPTED:** the ceremony-speed fail was a check flake; the check ran inside the 8 s 1× hold. Asked: make 'never returns to 4×' a FAIL, not a warn.
+130. **Places 0dbb080 (arm the ban) ACCEPTED.**
+    - ban.js keeps a p.ban roster.
+    - The barracks has an 'Arm the ban' block: kind × armour, 10 at a time.
+    - A call takes the roster first. XP returns on expiry; the conqueror inherits.
+    - aiArm runs for houses and vassals with barracks.
+    - Hand-played on the Count test: arm, call, fight, return, capture, save.
+    Battles told to rebase its rules 2/5 patch and include aiArm in its sims. End-of-night QC: the Arm-the-ban UI by hand. Places is IDLE.
     - The anchor keeps up with the fighting front (lag under 1 m).
     - At most 4 men on one foe (120 against 30: at most 88 engaged, still a swarm).
     - Wood takes 60%, so a gate falls at about 32 s.
@@ -170,7 +177,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–129 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–130 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
