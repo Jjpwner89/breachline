@@ -10,7 +10,7 @@ metadata:
 
 The creator's plan, 2026-11-22:
 
-- **V1, the current work:** finish the game we have to "pretty complete". Think Age of Empires plus Total War plus Crusader Kings, as far as it goes. Then ship it online so the creator's sister can play. **The game is named "Hearth and Host"** (creator, 2026-11-23). Code, storage keys and the repo keep "RTS". The sister plays on a laptop (mouse or trackpad), so touch controls are out of scope for V1 (creator, 2026-11-23). Publishing to Pages waits on the creator's go at "V1 done".
+- **V1, the current work:** finish the game we have to "pretty complete". Think Age of Empires plus Total War plus Crusader Kings, as far as it goes. Then ship it online so the creator's sister can play. **The game is named "Hearth and Host"** (creator, 2026-11-23). Code, storage keys and the repo keep "RTS". The sister plays on a laptop (mouse or trackpad), so touch controls are out of scope for V1 (creator, 2026-11-23). Publishing to Pages waits on the creator's go at "V1 done". Credits name third-party assets only; no note about how the painted art was made ("i dont want a disclaimer on the page, that's weird", 2026-11-23).
 - **V2, subtitle "Heroes":** the same game, but your character is a real unit on the map, CK2/Bannerlord-style. It's more personal and relationship-heavy: the house relationships grow into you and other characters.
   - Personal units are stronger, with keybound abilities (rally, inspire, strike fear). This fits the slower, more tactical combat.
   - First magic: wizards as a character type with mana abilities (fireballs, big flashy damage).
