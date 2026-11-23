@@ -92,6 +92,11 @@
 135. **Battles 822b147 (host meets host) ACCEPTED.**
 136. **Feel af4a481 (the sally: the front waits outside the gap for its men and re-forms, up to 12 s, unless the foe is within 30 m) ACCEPTED.** New sandbox fight, 'Sally from a walled place'. The sandbox is refreshed. The ceremony row fails in hidden panes only (needs frames).
 137. **The creator picked sandbox setting E.** Before finalizing, they want formation kept in contact. Feel is building setting F (E plus front ranks fighting, the rest pressing close in their files and filling gaps, flanks wrapping at overlap, the swarm on small bands kept), plus an archer check (are arrows cut by E's −50%?). Next: hand F to the creator, then the chosen setting goes live in one commit.
+138. **QC report on the older list: PASS by hand** for 0172c8f, 05e2291, 84c56b5, 959ffae (partly), 51ee31a, 43dbd5e, 57341b4, 4bb3054, 8c9e6c8, 44d082e, b58269d and d87b560. d0d75c0 misses 0.3% (was 78%). The swarm and chase harness passes.
+    - Not seen: militia by hand, a 1,276-man battle's feel, real-GPU fps.
+    - The Walls-tab and ceremony rows false-fail in hidden or slow tabs: UI is making them robust.
+    - A sworn HOUSE is not part of the banners call: fold this into the houses-as-vassals design.
+    QC is now told to finish tonight's commits as the single pass, one look each; its report decides :8792.
     - Field clashes 29/27/30 vs 22/13/12 without, but small: the biggest is 224+45. House peaks are LOWER (meets bleed them).
     - The engaged bot is slower: Lord with 2–3 places at minute 180.
     - Ruled: (b) MEET_AT 1.0; (c) refused (same rules).
@@ -205,7 +210,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–137 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–138 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
