@@ -386,6 +386,17 @@
     - UI rewords the spring, summer and autumn heralds so none promises musters.
     Seasons are now the harvest yield modifier (mild default, ?winter=hard fallow), the heralds and ring, winter army food, and snow. :8792 waits only on Places' rework plus house foresight, and climb's merc ladder.
 177. **PARKED FEATURES LOG created:** RTS/PARKED_FEATURES.md (ac31061, committed by plumbing, so the shared RTS checkout wasn't touched; it has someone's uncommitted art changes). It holds: the campaigning season, fallow winter as default, chained hauls, touch controls, a Claude director. The creator reviews it after the playtest. Memory: rts-parked-features.
+178. **ACCEPTED:**
+    - **Climb 21ffd82, merc ladder** (merc-ladder-2026-11-23.md): bandits 12/0.75, sellswords 19/1, crossbows 24/1.25, free companions 38/1.75, lances 80/4.5. 8 companies, with the dear ones rarely on offer, and houses on the same ladder.
+    - **UI c5776ec:** heralds with no musters.
+    - **Places 56fe59f + d957671, house winter foresight.** Houses' hunger is 57 (seed 7, was 137) and 109 (seed 91, was 99). Houses are maybe healthier than before; the knobs are stewardSpare, no-newcomers and buying.
+    - **Battles 4f1071b + 77ae486:** threat awareness and relief guarding the real target.
+    **Watch in the playtest:**
+    - On seed 7 with the ladder, house wars started at minute 32 (was 83). It could be early cheap bands or RNG.
+    - Still no Count by 150 for any bot.
+    **Still before the :8792 update:**
+    - Places' no-fallow rework (mild default, ?winter=hard).
+    - UI's season-ring check fix: it flakes in hidden panes.
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
@@ -393,7 +404,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–177 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–178 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
