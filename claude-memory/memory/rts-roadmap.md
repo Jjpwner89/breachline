@@ -1,6 +1,6 @@
 ---
 name: rts-roadmap
-description: "RTS version plan (creator, 2026-11-22) — V1 ships online for family; V2 \"Heroes\" puts your character on the map; V3 \"Heroes and Magic\" adds a late-game university and mages; the game still needs a name"
+description: "RTS version plan (creator, 2026-11-22) — V1 ships online for family; V2 \"Heroes\" puts your character on the map; V3 \"Heroes and Magic\" adds a late-game university and mages; the game is named Hearth and Host"
 metadata:
   node_type: memory
   type: project
@@ -10,7 +10,7 @@ metadata:
 
 The creator's plan, 2026-11-22:
 
-- **V1, the current work:** finish the game we have to "pretty complete". Think Age of Empires plus Total War plus Crusader Kings, as far as it goes. Then ship it online so the creator's sister can play. **The game needs a name** before then.
+- **V1, the current work:** finish the game we have to "pretty complete". Think Age of Empires plus Total War plus Crusader Kings, as far as it goes. Then ship it online so the creator's sister can play. **The game is named "Hearth and Host"** (creator, 2026-11-23). Code, storage keys and the repo keep "RTS".
 - **V2, subtitle "Heroes":** the same game, but your character is a real unit on the map, CK2/Bannerlord-style. It's more personal and relationship-heavy: the house relationships grow into you and other characters.
   - Personal units are stronger, with keybound abilities (rally, inspire, strike fear). This fits the slower, more tactical combat.
   - First magic: wizards as a character type with mana abilities (fireballs, big flashy damage).

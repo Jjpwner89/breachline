@@ -30,4 +30,4 @@
 - [RTS token economy](rts-token-economy.md) — Pro plan: Sonnet for routine sessions, restart bloated ones fresh, message at batch end; orchestrator handoff path inside
 - [No Codex for RTS 3D](rts-no-codex-3d.md) — 3D models and clips come from CC0 assets or our own bakes and code; Codex is 2D only (2026-11-21)
 - [RTS simple and tense](rts-keep-it-simple-and-tense.md) — new controls dead simple (Priority = one toggle); the economy's balancing act is good tension, never loosen it (2026-11-21)
-- [RTS roadmap](rts-roadmap.md) — V1 ships for family, V2 "Heroes" (your character on the map), V3 "Heroes and Magic" (university, mages); needs a name
+- [RTS roadmap](rts-roadmap.md) — V1 ships for family, V2 "Heroes" (your character on the map), V3 "Heroes and Magic" (university, mages); named Hearth and Host
