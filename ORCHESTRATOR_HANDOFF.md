@@ -73,6 +73,13 @@
 116. **Creator's plane playtest** (84c56b5): Duke at minute 61 with 820+ men, through mercenaries. Notes and screenshots are in the shared notes, creator-plane-playtest-2026-11-22.md and plane-4…9.
 117. **Creator's rulings on the plane notes, and routing:**
 118. **Battles d87b560 (auto-resolve: the winner loses what the loser could kill) and d8c0304 (rules 1 and 4) ACCEPTED.**
+119. **Creator, 2026-11-22 evening:**
+    - (a) MERCENARIES BREAK THE CLIMB, my miss: they were Duke at minute 61 against a 2–3 h target, and held half the map 20 min after the first ban win. Companies cost about 3.6 gold a man up front for mail-armoured troops, the wage is under a man-at-arms', and all six can be hired at once. Climb's top priority after the siege train is a merc rebalance plus a merc-rush sim profile: Duke no sooner than about 2 h. Then Norhold, then the arm-the-ban plan.
+    - (b) A passive player losing at about 62–65 min is FINE; battles told not to tune for it.
+    - (c) Movement oddities first, then the sandbox settings; feel told.
+    - (d) QC cadence: ONE pass at the end of the night's builds; QC on hold until my go.
+    - (e) Great-house vassals: when you call the levies they send part of their troops to you, but keep their own great host, which they command. From a war room you can order it to meet and follow your army, for influence or gold. Fold this into the houses-as-vassals design.
+    - (f) Roadmap: V1 = this game, finished and shipped online for family, and it needs a NAME. V2 'Heroes' puts your character on the map with abilities and the first wizards. V3 'Heroes and Magic' adds a late university with mages and Norhold giants. Memory: rts-roadmap.
     - Auto-resolve: 800v30 costs 97→4; even fights are unchanged.
     - Rules 1 and 4: hosts at Count are about 450, at Duke 470 (target 1,050). Typical houses are 100–200.
     - The passive player lost at minutes 65–92 (target: in danger by about 110). Waiting on the pre-change baseline; prefer making hosts visible over shrinking them.
@@ -119,7 +126,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–118 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–119 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
