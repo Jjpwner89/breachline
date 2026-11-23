@@ -80,6 +80,12 @@
 123. **Feel 9517a92 (combat sandbox) ACCEPTED.** Seen at 1440×900: it runs with no console errors.
 124. **Fidelity bb9d11e ACCEPTED** (from shot house-levels-lineup-2.jpg): level 3 is bigger, with a stone ground storey and a second chimney; grownLevels upgrades houses (Elmmere has 13 houses at level 2). Add to the end-of-night QC. Fidelity is IDLE.
 125. **Places 360e1b5 ACCEPTED** (Norhold GRIT 0.4: camps ask for terms at about 20% left instead of about 55%, and starving takes 375 s). **Arm-the-ban plan APPROVED** (notes arm-the-ban-plan-2026-11-22.md):
+126. **Feel 123b786 (the breach: the anchor comes to the men when the wall falls; men let go of foes behind a wall) ACCEPTED.**
+    - The sandbox is refreshed to f898d9d at :8871.
+    - Setting E is now −50% damage: contact to end for line against line is 24 s against 9 s, and for 300 a side 36 s against 14 s.
+    - C and D barely change anything (damage works in whole blows).
+    - 'Converge and pop out' comes from the swarm rule; E limits it. Caution: it must not bring back the trickle (187f659).
+    - Pathing out of a settlement was NOT reproduced: ask the creator which place and what looked wrong.
     - Q1: the conqueror INHERITS the roster, per the creator's 'tied to the land'. Men out serving go home to the new lord at expiry, with a chronicle line.
     - Q2: plain without a barracks; vassals arm by the AI rule.
     - Q3: no half cap; per-rank `per` is the cap.
@@ -153,7 +159,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–125 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–126 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
