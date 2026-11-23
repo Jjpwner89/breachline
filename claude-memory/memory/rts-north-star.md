@@ -35,7 +35,7 @@ The vision, in their words and gist:
 - **March pace: setting C plus a 30 s raid break-off** (creator, 2026-11-23). Slower marches between villages, with an army going at its slowest unit's pace: foot about 83 s a place, horse 33 s, engines 125 s. Cavalry is the rapid-response force. Raiders get real time to plunder before foot relief arrives ("this way raiders would have some time to plunder").
 - **Right trade-offs must pay off** (creator, 2026-11-22): the fun is a continuous run of economy trade-offs (wood vs farms vs houses, when to go to mines and quarries, foundation vs expansion). A player who made the right call must get the boon. Food starving at the farms while 500 meals sit in yards is the wrong kind of friction; too few storehouses biting is the right kind. Haul order: building sites (the player's own action), then food, then workshops, then the barracks. **The player manages their own goods**: no hidden reserves like "saving planks for building" ("If I run out of planks, I run out of planks"). Show rival strength in words ("slightly stronger", "badly outmatched"), not numbers.
 - **Seasons approved** (creator, 2026-11-23: "i like seasons - put em in"), as in the seasons plan:
-  - the harvest rhythm: fields busy in summer and autumn, fallow in winter, a gentle first winter, the year's food unchanged;
+  - the harvest rhythm: **no fallow winter**. The season is just a modifier on farm yield (roughly spring 0.9, summer 1.1, autumn 1.3, winter 0.5), and the AI prepares for winter (creator, 2026-11-23: "basically the season is just a modifier on farm yield");
   - houses campaign in spring and summer, Norhold raids in winter;
   - heralds and a season ring;
   - armies abroad eat ×1.5 in winter;
