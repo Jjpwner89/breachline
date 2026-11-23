@@ -308,6 +308,7 @@
     - a Safari read-through of the code;
     - a credits audit.
     **Pages is NOT enabled.** Publishing waits on the creator's go at V1 done.
+161. **UI cefe894 (the Hearth and Host name) ACCEPTED.** It covers titles, front page, Start here, help, credits, menu build line, error report and README; checks are at 0 fails. The creator was given a decision walkthrough. Open with them: update :8792 after both the crash fix and march C, or after the crash fix only. Seasons and pace are not urgent.
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
@@ -315,7 +316,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–160 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–161 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
