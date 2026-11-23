@@ -36,7 +36,7 @@ The vision, in their words and gist:
 - **Right trade-offs must pay off** (creator, 2026-11-22): the fun is a continuous run of economy trade-offs (wood vs farms vs houses, when to go to mines and quarries, foundation vs expansion). A player who made the right call must get the boon. Food starving at the farms while 500 meals sit in yards is the wrong kind of friction; too few storehouses biting is the right kind. Haul order: building sites (the player's own action), then food, then workshops, then the barracks. **The player manages their own goods**: no hidden reserves like "saving planks for building" ("If I run out of planks, I run out of planks"). Show rival strength in words ("slightly stronger", "badly outmatched"), not numbers.
 - **Seasons approved** (creator, 2026-11-23: "i like seasons - put em in"), as in the seasons plan:
   - the harvest rhythm: **no fallow winter**. The season is just a modifier on farm yield (roughly spring 0.9, summer 1.1, autumn 1.3, winter 0.5), and the AI prepares for winter (creator, 2026-11-23: "basically the season is just a modifier on farm yield");
-  - houses campaign in spring and summer, Norhold raids in winter;
+  - **the houses' campaigning season is PARKED** (creator, 2026-11-23: "i don't really like campaigning season at the moment, let's park that in favor of the simplified seasons"): no season term in the AI's war choices, and Norhold's winterRaids is unchanged;
   - heralds and a season ring;
   - armies abroad eat ×1.5 in winter;
   - snow.
