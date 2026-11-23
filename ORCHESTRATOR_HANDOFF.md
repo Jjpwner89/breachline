@@ -102,6 +102,14 @@
 145. **Creator:** marches slower between villages, compared in a sandbox like the battle one; cavalry marches faster ('rapid response force'); likes seasons; 'that's good' to the ideas.
 146. **Feel 9710c34: F is LIVE** (Battle.tuning defaults to F; A is kept in the sandbox as 'Before F'). checks() has 0 fails everywhere; one row was rewritten to the new rule, not loosened.
 147. **Seasons plan in** (notes seasons-plan-2026-11-23.md). It keeps the 20-min year and adds:
+148. **Places e7ee585 (raiders weigh the danger) ACCEPTED.**
+    - relief.js: a band breaks off at 1.5× relief, seen or marching within 90 s.
+    - Plunder rides on the band and army (a.loot), and is taken back if they're beaten.
+    - The player's party gets a 'stay or pull back' warning.
+    - A stronger host chases a pulled-back player home over roads of 600 or less.
+    - Checked headless; the popup was not hand-played (QC).
+    - Battles told to widen friend() in relief.js for coalitions and to consider autoRaid.
+    - Places is IDLE, next: the seasons harvest IF the creator says go.
     - fields by season: spring 0.6, summer 1.0, autumn 1.6, winter fallow; base ×1.25; the first winter at 0.5; a larder forecast;
     - winter armies abroad eat ×1.5;
     - the AI's season in stanceScore (summer +, winter −; Norhold reversed);
@@ -263,7 +271,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–147 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–148 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
