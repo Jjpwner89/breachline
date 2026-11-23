@@ -103,6 +103,8 @@
 146. **Feel 9710c34: F is LIVE** (Battle.tuning defaults to F; A is kept in the sandbox as 'Before F'). checks() has 0 fails everywhere; one row was rewritten to the new rule, not loosened.
 147. **Seasons plan in** (notes seasons-plan-2026-11-23.md). It keeps the 20-min year and adds:
 148. **Places e7ee585 (raiders weigh the danger) ACCEPTED.**
+149. **Climb 0bc2b5a (merc price 35 a man for sellswords, 27 for crossbows) ACCEPTED.** A company is about 1,600: 10–18 min of a new Lord's income. The merc rush still never reaches Count (the Lord cap of 1 binds), and the engaged bot never reaches Count by minute 150 on current main: a PACE CONCERN, to take up after the siege train.
+    **OPEN: a 'World.loot camp-stock crash' on main.** Climb was asked for the error, trigger and commit before the siege train. :8792 is NOT refreshed with 0bc2b5a until the crash is understood.
     - relief.js: a band breaks off at 1.5× relief, seen or marching within 90 s.
     - Plunder rides on the band and army (a.loot), and is taken back if they're beaten.
     - The player's party gets a 'stay or pull back' warning.
@@ -271,7 +273,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–148 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–149 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
