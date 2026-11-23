@@ -269,6 +269,9 @@
 150. **UI 0971128 (scout reports in words) and Places 7938040 (the relieve hook) ACCEPTED. Feel afba9ee and a8b4842 add the march sandbox, /march.html, settings A to C, with A live.** :8872 is refreshed to a8b4842. The creator is to pick a march setting.
     UI's ship plan (notes/v1-ship-prep-plan.md) puts saves first. **UI is building saves now:** the overwrite guard, 3 backups, no silent fall-through on load, export and import, persist(), the save tag. Then the front page. Hosting waits on the creator's answer: the sister's device, mouse or iPad. For wip, lean to a filtered Actions deploy.
     **Duke checks fail on main:** villager 87 stuck inside Brackholm's woodcutter. Routed to Places (bca30f7 hauling).
+151. **Feel's march finding:** RELIEF.eta 90 s (relief.js) makes raiders turn back on sight under A, B and C alike, so slower marches alone give no plunder time. With a 30 s rule, foot relief from two places away leaves the raiders 23, 49 or 79 s (A, B or C). Horse in B and C beats the raiders to the village, which is the rapid-response force.
+    **Orchestrator lean: B plus a 30 s break-off.** Waiting on the creator's pick. Feel will then make it live in one commit, with HOST_GATHER, WING_REACH, the meeting-host 600 s, ARRIERE.serve and supply's 4 min food brought into line.
+    Feel edited Places' relief.js hostsFor (pace-aware ETA), and Places has been told.
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
@@ -276,7 +279,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–150 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–151 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
