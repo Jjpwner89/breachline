@@ -32,3 +32,4 @@
 - [RTS simple and tense](rts-keep-it-simple-and-tense.md) — new controls dead simple (Priority = one toggle); the economy's balancing act is good tension, never loosen it (2026-11-21)
 - [RTS roadmap](rts-roadmap.md) — V1 ships for family, V2 "Heroes" (your character on the map), V3 "Heroes and Magic" (university, mages); named Hearth and Host
 - [Saves may break until V1](rts-saves-may-break-until-v1.md) — RTS save formats may change freely until V1 is declared done; no migrations needed yet (2026-11-23)
+- [RTS parked features](rts-parked-features.md) — set-aside ideas go in RTS/PARKED_FEATURES.md for review after playtests; never build without the go
