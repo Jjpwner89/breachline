@@ -86,6 +86,12 @@
 129. **UI 5e40a0a ACCEPTED:** the ceremony-speed fail was a check flake; the check ran inside the 8 s 1× hold. Asked: make 'never returns to 4×' a FAIL, not a warn.
 130. **Places 0dbb080 (arm the ban) ACCEPTED.**
 131. **Animations 4dd97ca (victory march) ACCEPTED** from shots (notes in the Manager's folder, parade/).
+132. **Morning, 2026-11-23, 05:30: the app or machine restarted overnight.** /private/tmp was cleared, so the rts-serve folder for :8792 and the sandbox folder are gone, and both servers were down.
+    - The sandbox was rebuilt at 4dd97ca and is back on :8871.
+    - :8792 is NOT restored: ask the creator 84c56b5 or latest. The save lives in localhost:8792 localStorage, so the same port keeps it.
+    - Climb died mid siege train; its WIP is safe on the local RTS branch `climb-siege-wip` (3366ab6). Re-ordered: mercs first from fresh main, then the siege train.
+    - Battles' sims finished unreported; asked for a report.
+    - The end-of-night QC was NOT run.
     - Columns with banners march onto their ground, then cheer rank by rank facing the keep (new CheerWalk and Ride_Cheer clips), with a fanfare. About 14 s, capped at 15 s; any order ends it.
     - Changed from 'column up the road, cheer at the gate' because the regiments' ground sits 50–90 m off the road.
     - UI 8b5abe8 makes the ceremony check a hard fail.
@@ -183,7 +189,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–131 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–132 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
