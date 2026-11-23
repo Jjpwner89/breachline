@@ -341,7 +341,7 @@
     - Orchestrator call: exclude the unused vegetation/dead and vegetation/snow from build-site.sh and drop their rows. Assets makes the one-line change.
     - A painted-art paragraph ('AI image generator (OpenAI Codex) from the game's own briefs') is in credits.html, pending the creator's OK before going public.
 167. **CREATOR: no AI-art note on the credits page** ('i dont want a disclaimer on the page, that's weird'). Assets is removing the 'Paintings and interface' paragraph. Credits name third-party assets only. Recorded in memory (rts-roadmap).
-    The creator also wants Credits as a small, light text link at the very bottom of the front page (and a quiet line in the game menu). Sent to UI.
+    The creator also wants Credits as a quiet but readable text link at the very bottom of the FRONT PAGE ONLY. There's no Credits inside the game ('not a part of the game and dont want to take players out'). Sent to UI. Assets pushed 6d3d72b (paintings paragraph removed) and c4250be (vegetation excluded).
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
