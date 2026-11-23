@@ -377,6 +377,7 @@
     - the fallow state goes; the forecast and alerts stay;
     - house foresight still gets built, then houses' hunger is re-measured.
     Memory updated (rts-north-star).
+    The creator is interested in the fallow idea and wants to see in the playtest whether winter is too easy without it. Places keeps both presets: 'mild' as the default and 'hard' (fallow) via ?winter=hard, saved with the campaign. Give the creator the exact URL.
    - rts-ui: 0172c8f, the empty Walls tab (re-entering a village threw away the Defences panel); 0c90ec0, the menu row in a 0px window; e936127, the day dial says 240 s; 4bb3054, vassal houses (sight, look round, the offer arms for 0.8 s, a plain herald).
    - Climb: 05e2291, the banners never levy men-at-arms or knights, done before the flee-to-kin rework.
    - Battles: 57341b4, arriving armies form up beside their road with no overlap (cause: addTroops sent all to one stand point); a checks() row; my look at the shot: tidy lines.
