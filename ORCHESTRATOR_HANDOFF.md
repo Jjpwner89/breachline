@@ -70,6 +70,12 @@
 113. **Climb 44d082e (no invented people on capture) and b58269d (walls ×1.4 between houses) ACCEPTED**; checks 0 fails on all five saves. The war sims are still running, with the numbers coming as a DESIGN_NOTES commit. Battles told rules 2 and 5 and the two checks can follow rules 1 and 4. QC queued. Climb is IDLE after the sims.
 114. **Climb fa5323b (wars-to-120 sim notes) ACCEPTED.** Results:
 115. **Siege trains are paid on ONE path, against every target, the player included** (my ruling). Until now houses got free rams and ladders against the player, plus mangonels after minute 25 and trebuchets after 40.
+116. **Creator's plane playtest** (84c56b5): Duke at minute 61 with 820+ men, through mercenaries. Notes and screenshots are in the shared notes, creator-plane-playtest-2026-11-22.md and plane-4…9.
+    - LOVED: the arrière-ban raid loop at minute 41, captain view, the Norhold 1,331 reinforcements, the econ grind.
+    - BUGS: auto-resolve 12% loss floor; food piling at farms (yard-clearing ranked last); plank reserve hides why; Wyndham can't be granted land; palisade breach behaviour; coronation too fast.
+    - NOODLE ONLY, no build: haul carts and chains, market buying, tribute strength, house upgrades, armed arrière-ban, Norhold surrenders less, houses-as-vassals fusion, combat pace with sandbox battles.
+    - Creator said do NOT implement until we pick a path.
+    - Battles landed d8c0304 (rules 1 and 4), not yet reviewed.
     - Houses build a siege workshop at their staging place, pay the engine costs in goods from that place's stores, and draw crew from its people.
     - The ×1.4 for walls drops only once the train is paid for.
     - Engines unlock for houses the way they do for the player.
@@ -90,7 +96,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–115 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–116 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
