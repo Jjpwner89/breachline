@@ -98,6 +98,14 @@
 141. **The sandbox moved to http://localhost:8872/sandbox.html.** It's served by scratchpad/nocache_server.py with no-store, because :8871's cached ES modules hid F and G even after a hard reload.
 142. **QC end-of-night report** (code at 4dd97ca + 822b147).
 143. **The creator picked F** (arrows full) and likes the merc company cap.
+144. **Threat awareness APPROVED** ('get going on all of those').
+    - Places: raid bands (the player's too) break off and run home with their plunder when a clearly stronger relief comes. The player gets a warning, not a takeover. Pursuit home.
+    - Battles, after coalitions:
+      - banner, host and arrière-ban calls are level-1 news to neighbours, foes and the player, and the houses hear the player's calls;
+      - an AI that reckons itself the target calls and gathers in answer;
+      - houses relieve raided places and punish repeat raiders.
+    - Battlefield spoils already exist (world.js loot: half the armour and shields of the fallen go to the winner).
+    - Pitched to the creator: V1 ship prep, scout reports in words, seasons, and my houses-as-vassals design.
     - Feel is making F live in one commit: checks rewritten to the new pace, hand-checked on a raid, a storm and a field battle, watching for archers over-performing.
     - UI 08508d7 fixed the sworn box at phone width and the lighting lag (real).
     - QC told to stand down fully, with no idle timers.
@@ -240,7 +248,7 @@
 # RTS orchestrator handoff
 
 ## FRESH START (written 12:20 Central, 2026-11-21; machine time is Central): read this first
-1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–143 below (the newest are at the end of this list).
+1. Read the memory notes rts-orchestrator, rts-north-star (now with "the first conquest is home-grown"), rts-build-process, rts-token-economy and rts-keep-it-simple-and-tense. Then items 12–144 below (the newest are at the end of this list).
 2. Run CronList. If there's no check-in job, recreate it with CronCreate "13,43 * * * *" and the check-in prompt (list sessions and nudge stalled ones; fetch RTS main; hand-look in a NEW tab, ?test= only, mute and restore rts.audio exactly, which is currently {"master":0.8,"music":0.55,"sfx":0.8,"muted":false}, close the tab; keep this file current and commit it).
 3. **Usage:** 5-hour window at 45%, resetting 15:50 Central; extra usage $74 of $200. Limits stopped the fleet twice today, and the creator added usage ("you got more usage bruh"). After a stop, restart the sessions from their notes.
 4. **The creator** is playing their own campaign on port 8792 (folder e0882468…/rts-serve, now at 84c56b5). They said "change whatever you want", so refresh it from origin/main whenever something good lands. They get batched updates in chat. **Open creator question:** is a 150 s day too short? (Round 4 found it hard to plan around.) Sound needs their ear (audio 4537d74's list).
