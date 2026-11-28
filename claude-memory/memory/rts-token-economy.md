@@ -21,3 +21,5 @@ On 2026-11-21 about 15 Opus RTS sessions with 300K+ contexts used 15% of the 5-h
 - Check usage with get_usage.
 
 Current orchestrator state: `/Users/dpuser/Documents/Claude/Games/.claude/worktrees/question-thread-4a510c/ORCHESTRATOR_HANDOFF.md`. Related: [[rts-orchestrator]], [[rts-north-star]].
+
+**Fable push (creator, 2026-11-28):** the creator switched the RTS orchestrator to Fable for a big push, ideation then implementation, to spend their Fable allowance: "however much it wants to do is fine w/ me so long as it is fable using most of my usage". During this push, run RTS sessions on Fable rather than Sonnet. The brief is FABLE_BRIEF.md in the question-thread worktree. After the push, go back to the Sonnet-first rule above unless the creator says otherwise.
