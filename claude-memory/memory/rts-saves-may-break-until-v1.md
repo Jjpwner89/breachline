@@ -18,3 +18,5 @@ The creator, 2026-11-23: "its okay for saves to die while we're developing. unti
 - Refreshing the creator's port 8792 doesn't need to wait on save compatibility. Still say so when a refresh will end their campaign.
 - Still never touch the creator's live save by hand, and use ?test= saves for checks.
 - Once V1 is declared done this flips: migrations and the old-save checks become required. See [[rts-roadmap]] and [[rts-build-process]].
+
+**Confirmed 2026-11-28:** "destroying my save is not a problem". After the big playtest the creator plans a new playthrough on the changed game, so their current campaign doesn't need to survive the Fable push.

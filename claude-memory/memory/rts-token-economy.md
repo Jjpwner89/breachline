@@ -24,3 +24,4 @@ Current orchestrator state: `/Users/dpuser/Documents/Claude/Games/.claude/worktr
 
 
 **Fable push (creator, 2026-11-28):** the creator switched the RTS orchestrator seat to Fable, for ideation and then implementation, so Fable does the heavy thinking and uses most of their usage. Sonnet for routine sessions still stands: "sonnet for routine sessions is fine! i just don't want like 50 opus sessions to eat all my usage." Never fan out a swarm of big-model sessions. The brief is FABLE_BRIEF.md in the question-thread worktree.
+The creator added the same day: "you can use opus devs too if you need, but pref sonnet so that we are economical with usage." So Sonnet is the default for build and scout sessions, and Opus is for a build that really needs it.
