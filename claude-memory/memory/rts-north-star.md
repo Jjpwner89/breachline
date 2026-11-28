@@ -41,6 +41,8 @@ The vision, in their words and gist:
   - armies abroad eat ×1.5 in winter;
   - snow.
   The creator feels "we are getting there on pacing".
+  - **After the playtest (2026-11-28) the creator leans to the fallow winter as the default**: the mild winter "affected me early on, but eventually i built a good reserve of food then it wasn't an issue"; "im leaning towards fallow winters bc that way i would feel it even if i was prepared". Fallow becomes the default in the next build, with mild behind a switch.
+- **Vassals come in at about five places** (creator, 2026-11-28): they ran five places by hand, Varn's submission took them to about ten, and "i was at the point where i would start needing vassals". The game's own weight pushes delegation at Count; no hard limit on ruling by hand is needed yet.
 - **War by the odds** (creator, 2026-11-21): houses declare when they expect to win or the odds are about even; aggressive tempers sometimes go in at worse odds; rarely suicidal; a cornered house may make a desperate war and call for allies.
 
 **Why:** the creator trusts that the orchestrator gets the core appeal and wants it to act like an owner, not a ticket-taker.
