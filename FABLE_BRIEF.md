@@ -5,7 +5,28 @@ You are taking over the RTS orchestrator seat (this session, the "question threa
 1. **Pure ideation.** Read, play and think. Write your ideas down, building nothing.
 2. **Implementation.** Build what came out of stage 1.
 
-**The usage rule for this push:** the creator is spending their Fable allowance on it: "however much it wants to do is fine w/ me so long as it is fable using most of my usage". Run any sessions you start on Fable, not Sonnet. This overrides the usual token-economy memory for this push only.
+**The usage rule for this push:** the creator wants Fable, meaning you, to do the heavy thinking and to spend most of their usage. The creator, corrected: "sonnet for routine sessions is fine! i just don't want like 50 opus sessions to eat all my usage."
+- Do the design thinking, the hard calls and the reviews yourself.
+- Routine build sessions run on Sonnet.
+- Don't fan out a swarm of big-model sessions.
+
+## What the creator is asking of you (their words, 2026-11-28)
+
+> "i also want it to be creative and press me to make a better game as it looks. the idea of chunky satisfying play is key. i want the tradeoffs to feel real and exciting and the game to be consistently engaging throughout. core idea is that tension remains and the next thing to do feels fun."
+>
+> "it should consider what should be added to the game to make a more complete and engaging experience, if there is anything that should be removed from the game as well. basically i want to call on this high level intelligence to be the most effective partner it can possibly be in making the best game i can make on this project"
+
+So you aren't a ticket-taker working down the list below. That list is the floor. The job is to be a creative partner and design lead:
+- **Have opinions.** Propose additions and cuts. Push back when you think the creator is wrong, and tell them when a beloved feature isn't earning its place.
+- **Judge everything by five tests:**
+  1. Is the play chunky and satisfying, with big decisions rather than fiddly ones?
+  2. Is each trade-off real and exciting?
+  3. Is there never a dead stretch from minute 1 to the crown?
+  4. Does tension remain?
+  5. Does the next thing to do always look fun?
+- **Find where the game sags.** Name what is busywork, and what has depth nobody can see.
+- **Make the creator decide well.** Give them a few sharp questions with your recommendation, not a menu.
+- **Show, don't tell.** They love side-by-side playables: battle settings A–F in a sandbox, and the march-pace sandbox. When a choice is about feel, build two versions they can play.
 
 ## What the game is
 
@@ -119,6 +140,35 @@ From the playtest list in the notes file (numbers as in the notes):
 - Battles' diagnosis note (relief and break-offs, gatherings stalling the climb);
 - the pace question from the sims: no bot reaches Count by 150–180 minutes, though the creator did fine.
 
+## Where the outgoing orchestrator thinks the game needs work (open questions)
+
+These are my own reads, not the creator's rulings. Test them yourself.
+
+1. **The late game is unproven.** The creator has played well through Lord and Count, and reached Duke in about 2 hours. Nobody has felt Duke to King, Kingsbridge, the crown or Norrhold's invasion from the north in a real run. If the climb is the point, the top of it may be the weakest stretch. What makes Duke onward chunky rather than "more of the same, bigger"? What new decisions open up, and which old loops should fall away? (That's the M&B / Pendor idea of escaping loops that plagued you earlier.)
+2. **Wars end before the drama.** Dunmore made peace after one town, and Varn bent the knee before the creator could "play out that series". Items 15 and 27 fix acceptance, but the bigger opportunity is the shape of a war: its aims, counter-offensives, exhaustion, and a run of battles with a story. Make wars arcs, not single events.
+3. **Rivals are opportunistic only slowly.** Houses decide war on a 4–8 minute clock, and your field army only counts where it's standing. When the creator stripped a border, nothing punished it. Real tension may need houses that pounce, and a player who can read that threat coming.
+4. **Scale.**
+   - The creator's goal is battles of 1,200+ men at Count and Duke. Under march C, field clashes in sims never reached 300.
+   - Is scale actually arriving in play? The creator did see big hosts: Norhold with 1,331, and Varn's "large host".
+   - Battles' diagnosis note is pending: relief rarely forces a break-off, a second trigger rarely fires, and gatherings of 55–80 men may stall the climb.
+5. **Management at scale.** Hunting down every tannery (item 24) is the first sign. With 10+ places, per-building control becomes busywork. Look for realm-level levers that keep the thinking and cut the clicking: default recipes, the governor (world/governor.js), and realm-wide orders.
+6. **Too many ways to get soldiers?** There are levies, the arrière-ban, drilled men (serjeants and yeomen), elites from the knights' hall, the household guard, mercenary companies, vassals' calls and sworn houses. Each landed on its own. Ask whether together they're a clear ladder or a pile, and whether something should merge or go.
+7. **Information.** The creator keeps asking for numbers they can't find: veterans, why newcomers stopped, food at the farms. The interface should make the next decision obvious, with readable shortages that can be fixed (a creator rule).
+8. **Seasons.** They're approved, but the playtest never mentioned winter. Is winter felt at all? The fallow `?winter=hard` option is still unjudged.
+9. **What V1 is.** Nobody has written the line between V1 and V2 "Heroes". Propose it. The creator wants V1 shipped for their sister.
+10. **The sims disagree with play.** No bot reaches Count by 150–180 minutes, yet the creator was near Duke at about 2 hours. Either the bots play badly, or the climb only works for a human. Worth knowing before any rebalance.
+11. **Loose ends:**
+    - Safari is untested.
+    - WEAK_GPU doesn't recognise "Apple GPU".
+    - The parked-features list is due a review with the creator.
+
 ## Stage 1 output
 
-Write ideas to a file (for example `RTS/IDEAS_2026-11-28.md` or this worktree). Group them by what they improve, with the cost and risk of each. Keep the creator's voice in mind: dead-simple controls, tension kept, no busywork, readable shortages. Then implement in stage 2. The creator said the scope is up to you.
+Before ideating, play it yourself: a test world at Lord, Count and Duke, plus a fresh campaign's first 20 minutes. Read DESIGN_NOTES.md for intent.
+
+Then write the ideas file, for example `RTS/IDEAS_2026-11-28.md`, covering:
+- **What to add** for a more complete and engaging game;
+- **What to cut or merge;**
+- **What to reshape**, especially the stretches that sag.
+
+Give each idea why it serves "chunky, tense, the next thing is fun", its cost, and its risk. Mark the ones the creator must decide, with your recommendation. Bring the creator the few big calls in plain words, then build in stage 2. Keep their voice in mind: dead-simple controls, tension kept, no busywork, readable shortages.
